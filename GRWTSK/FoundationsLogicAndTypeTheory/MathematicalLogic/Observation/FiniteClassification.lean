@@ -21,8 +21,9 @@ claim identities, schema validation, byte bindings, and correspondence with an
 external implementation remain separate obligations. Repeated rows do not add
 information to this existence-based classifier.
 
-Source status at introduction: SOURCE_ONLY / NOT_ELABORATED. The proof terms
-below are proposed source, pending separately authorized pinned validation.
+Source status at introduction: SOURCE_ONLY / NOT_ELABORATED. Source-bound
+execution and acceptance evidence is retained externally; this mathematical
+source is not an execution receipt.
 -/
 
 set_option autoImplicit false
@@ -253,10 +254,11 @@ variable (admissible : Trace → Prop) (observe : Trace → View)
 variable [DecidablePred admissible] [DecidablePred claim] [DecidableEq View]
 
 /-- Two finite existence checks over the supplied list. The admissibility and
-claim deciders are inputs; their source meaning is not established by scanning. -/
+claim deciders are inputs; their source meaning is not established by scanning.
+The conjunction defining `Compatible` is explicit for decidability synthesis. -/
 def scan : Flags where
-  positive := inventory.any (fun trace => decide (Compatible admissible observe seen trace ∧ claim trace))
-  negative := inventory.any (fun trace => decide (Compatible admissible observe seen trace ∧ ¬ claim trace))
+  positive := inventory.any (fun trace => decide ((admissible trace ∧ observe trace = seen) ∧ claim trace))
+  negative := inventory.any (fun trace => decide ((admissible trace ∧ observe trace = seen) ∧ ¬ claim trace))
 
 def classify : Outcome :=
   (scan admissible observe claim seen inventory).classify
@@ -268,12 +270,14 @@ theorem scan_positive_iff :
   · intro result
     obtain ⟨trace, member, decided⟩ :=
       (any_true_iff inventory
-        (fun trace => decide (Compatible admissible observe seen trace ∧ claim trace))).mp result
-    exact ⟨trace, member, of_decide_eq_true decided⟩
+        (fun trace => decide ((admissible trace ∧ observe trace = seen) ∧ claim trace))).mp result
+    have decoded : (admissible trace ∧ observe trace = seen) ∧ claim trace :=
+      of_decide_eq_true decided
+    exact ⟨trace, member, decoded⟩
   · intro witness
     obtain ⟨trace, member, compatible, holds⟩ := witness
     exact (any_true_iff inventory
-      (fun trace => decide (Compatible admissible observe seen trace ∧ claim trace))).mpr
+      (fun trace => decide ((admissible trace ∧ observe trace = seen) ∧ claim trace))).mpr
       ⟨trace, member, decide_eq_true ⟨compatible, holds⟩⟩
 
 theorem scan_negative_iff :
@@ -283,12 +287,14 @@ theorem scan_negative_iff :
   · intro result
     obtain ⟨trace, member, decided⟩ :=
       (any_true_iff inventory
-        (fun trace => decide (Compatible admissible observe seen trace ∧ ¬ claim trace))).mp result
-    exact ⟨trace, member, of_decide_eq_true decided⟩
+        (fun trace => decide ((admissible trace ∧ observe trace = seen) ∧ ¬ claim trace))).mp result
+    have decoded : (admissible trace ∧ observe trace = seen) ∧ ¬ claim trace :=
+      of_decide_eq_true decided
+    exact ⟨trace, member, decoded⟩
   · intro witness
     obtain ⟨trace, member, compatible, fails⟩ := witness
     exact (any_true_iff inventory
-      (fun trace => decide (Compatible admissible observe seen trace ∧ ¬ claim trace))).mpr
+      (fun trace => decide ((admissible trace ∧ observe trace = seen) ∧ ¬ claim trace))).mpr
       ⟨trace, member, decide_eq_true ⟨compatible, fails⟩⟩
 
 theorem scan_positive_false_iff :
@@ -467,6 +473,7 @@ theorem classified_support_sound
 theorem empty_inventory_model_mismatch :
     classify admissible observe claim seen ([] : List Trace) = .model_mismatch := rfl
 
+omit [DecidablePred admissible] [DecidablePred claim] [DecidableEq View] in
 /-- Empty input cannot acquire either nonvacuous certainty in the listed model. -/
 theorem empty_inventory_no_certainty :
     ¬ Supports (ListedAdmissible admissible []) observe claim seen ∧
@@ -549,11 +556,11 @@ theorem classifyRows_supported_iff (rows : List Row) (seen : String) :
 
 namespace Fixtures
 
-def admitted (_ : Bool) : Prop := True
+abbrev admitted (_ : Bool) : Prop := True
 
 def lostReceipt (_ : Bool) : Bool := false
 
-def occurred (trace : Bool) : Prop := trace = true
+abbrev occurred (trace : Bool) : Prop := trace = true
 
 def completeInventory : List Bool := [false, true]
 
