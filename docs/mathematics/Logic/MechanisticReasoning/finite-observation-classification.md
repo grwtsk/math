@@ -2,7 +2,7 @@
 
 Conceptual direction and authorship: grwtsk contributors. Mathematical formulation and source development with AI assistance.
 
-**Candidate status: source-only / not elaborated.** This exposition and its new Lean companion are a proposed finite specialization of [SupportedClaims](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/SupportedClaims.lean). No native verification of the new module is recorded here.
+This exposition and its Lean companion give a finite specialization of [SupportedClaims](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/SupportedClaims.lean). Verification is source-bound and recorded externally; [PR #313](https://github.com/grwtsk/math/pull/313) links the selected candidate and its current evidence. This mathematical document is not an execution receipt.
 
 The governing rule is precise: **a finite result has the scope of the supplied finite model until an explicit coverage argument justifies a larger scope.** This gives an executable step in the broader [mechanistic reasoning exposition](ethics-capsules.md).
 
@@ -63,7 +63,7 @@ By definition, \(F_L(v)\subseteq F(v)\). Coverage provides the reverse inclusion
 \Longrightarrow F_L(v)=F(v).
 \]
 
-The proposed Lean bridge theorems use this premise explicitly:
+The Lean bridge theorems use this premise explicitly:
 
 - `classify_supported_iff` connects listed support to ambient `Supports`.
 - `classify_refuted_iff` connects listed refutation to ambient `Refutes`.
@@ -174,10 +174,12 @@ A general correspondence argument must connect validated bytes to `Row`, exact s
 
 ## 8. Source and acceptance status
 
-The [new Lean source](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/FiniteClassification.lean) contains executable definitions, proposed theorem proofs and finite controls. Its only direct import is `SupportedClaims`, which imports `Init`.
+The [Lean source](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/FiniteClassification.lean) contains executable definitions, theorem proofs and finite controls. Its only direct import is `SupportedClaims`, which imports `Init`.
 
-The [static target](../../../../verification/finite-observation-support-v0.1.toml) identifies selected declarations, source/import obligations, exact type inspection and a strict future axiom policy. It records no successful execution and grants no execution authority.
+The [static target](../../../../verification/finite-observation-support-v0.1.toml) identifies selected declarations, source/import obligations, exact type inspection and a strict empty-axiom acceptance policy. It specifies required checks; observed results and their source, toolchain, command and output identities belong to the external execution evidence. The target grants no execution authority.
 
-The new module remains **source-only / not elaborated**. Text checks can reconcile names, counts, declared imports and fixture syntax. They cannot establish Lean elaboration, exact kernel types, transitive axiom dependencies or Python/Lean refinement. Historical verification of other declarations establishes none of these facts for the new module.
+Text checks can reconcile names, counts, declared imports and fixture syntax. They cannot establish Lean elaboration, exact kernel types, transitive axiom dependencies or Python/Lean refinement. Each native check must identify the exact source bytes it inspected. Historical verification of other declarations establishes none of these facts for this module.
 
-The remaining acceptance steps are separately permitted native elaboration and trust inspection, an implementation-correspondence argument, and application review of coverage, observations, disclosures and consequences. Successful finite computation cannot discharge these obligations by changing a status label.
+Local compilation, observed declaration types, and transitive axiom inspection are distinct from comparison against an independently selected exact-type expectation and from acceptance by an external replay system. The target's complete source, dependency, type and trust requirements remain explicit even when a subset has been checked locally.
+
+An implementation-correspondence argument and application review of coverage, observations, disclosures and consequences are separate obligations. Successful finite computation cannot discharge them by changing a status label.
