@@ -11,7 +11,7 @@ open scoped BigOperators
 /-!
 # Quadratic Gram models as complete pair-coordinate residuals
 
-A real finite Gram is linear only after retaining all ordered pair coordinates.
+This profile retains all ordered pair coordinates of a real finite Gram.
 This module derives that lift, its positive quadratic readout, and the complete
 injection produced by an affine feature update. Both mixed terms are retained.
 A weighted column bound r on the feature transition gives r*r on the lifted
