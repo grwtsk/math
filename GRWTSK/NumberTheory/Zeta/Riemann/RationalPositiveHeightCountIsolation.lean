@@ -105,14 +105,14 @@ theorem nat_eq_of_contains_of_isolates
 /-- If the successor is retained, the interval cannot isolate the lower count. -/
 theorem not_isolates_of_successor_le_upper
     (interval : RationalCountInterval) (count : ℕ)
-    (successorMem : (count + 1 : ℕ) ≤ interval.upper) :
+    (successorMem : (((count + 1 : ℕ) : ℚ)) ≤ interval.upper) :
     ¬ interval.Isolates count := by
   intro isolated
   have hupper := isolated.2.2.2
-  have hcast : ((count + 1 : ℕ) : ℚ) ≤ interval.upper := by
-    exact_mod_cast successorMem
-  norm_num at hcast
-  linarith
+  have hcast : (((count + 1 : ℕ) : ℚ)) = (count : ℚ) + 1 := by
+    norm_num
+  rw [← hcast] at hupper
+  exact (not_lt_of_ge successorMem) hupper
 
 /-- If the predecessor is retained, the interval cannot isolate a positive count. -/
 theorem not_isolates_of_lower_le_predecessor
@@ -120,11 +120,12 @@ theorem not_isolates_of_lower_le_predecessor
     (predecessorMem : interval.lower ≤ ((count - 1 : ℕ) : ℚ)) :
     ¬ interval.Isolates count := by
   intro isolated
-  have hlower := isolated.1
-  have hcast : ((count : ℚ) - 1) = ((count - 1 : ℕ) : ℚ) := by
-    exact_mod_cast Nat.sub_add_cancel (Nat.one_le_iff_ne_zero.mpr positive.ne')
-  rw [hcast] at hlower
-  linarith
+  cases count with
+  | zero => simp at positive
+  | succ count =>
+      have hlower := isolated.1
+      norm_num at hlower predecessorMem
+      linarith
 
 end RationalCountInterval
 
