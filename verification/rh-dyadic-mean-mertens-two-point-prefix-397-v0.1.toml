@@ -1,0 +1,232 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-mean-mertens-two-point-prefix-397-v0.1"
+owner_repository = "grwtsk/math"
+issue = 397
+parent_issue = 391
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 393
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicMeanMertensTwoPointPrefix"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicMeanMertensTwoPointPrefix"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "aed288f38334932cd4fc6a4d1370bdb0278fbf5a"
+stacked_parent_tree = "8a50baed0eb5440625bbd9d0aed6694399ad9ca4"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean"
+new_module_git_blob = "4775fc209bf8d01b238b193605bd0005929ed02d"
+new_module_sha256 = "bc058a3cec70fa0b99eb1a4432026d65cbb44a1cb7fb4f683e7df16cd879fd05"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-mean-mertens-two-point-prefix.md"
+mathematical_note_git_blob = "97c3c05476d003abbf9e0e6cf5c060640111818b"
+mathematical_note_sha256 = "775c22251d9604ff69b59a39d0010409ad6e036a08493499b44edb41da7f52f0"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+publication_status = "PUBLISHED_SOURCE_DRAFT"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicMeanMertensTwoPointPrefix"
+authored_declaration_count = 12
+definition_count = 3
+theorem_script_count = 9
+private_helper_count = 3
+
+[[inherited_targets]]
+path = "verification/rh-dyadic-uniform-mertens-two-point-prefix-391-v0.1.toml"
+git_blob = "c4824e6cd54e1385a1cc618eee1933752d2049f6"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean"
+git_blob = "fb9e3b7ec0cc6b4c5493e1c6954f625c82459d45"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicChowlaShiftPacket.lean"
+git_blob = "83ea01b7ee12f0a70f837b4b5c38fb113b1f14b8"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[diagnostics]
+engine = "python-fractions-exact"
+check_count = 614914
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 8
+exhaustive_stream_count = 6561
+generic_scales = [1, 2, 4]
+actual_moebius_cutoff = 512
+actual_dyadic_scale_max = 256
+normal_mode_status = "PASS"
+optimized_mode_status = "PASS"
+reports_byte_identical = true
+report_sha256 = "44784ecbafbda75aed9f7132696977bd50d77988d5e4fb6a3deb25e4a7059f83"
+current_prefix_mutation_rejected_cases = 17259
+missing_factor_two_mutation_rejected_cases = 11360
+unsigned_packet_mutation_rejected_cases = 8720
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+all_positive_shifts_required = true
+all_admissible_prefix_lengths_required = true
+shiftwise_envelopes_nonnegative = true
+normalized_mean_uses_full_growing_range = true
+previous_prefix_index_required = true
+ordered_pair_factor_two_required = true
+abel_terminal_term_required = true
+signed_packet_retained = true
+uniform_supplier_only_one_way = true
+mean_supplier_not_equivalent_to_signed_packet = true
+finite_tables_not_universal = true
+lower_bound_not_substitute_for_upper_bound = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+mean_envelope_estimate_proved = false
+converse_from_packet = false
+converse_from_rh = false
+
+[[declarations]]
+source_name = "MertensTwoPointShiftEnvelope"
+visibility = "public"
+kind = "def"
+source_signature = """def MertensTwoPointShiftEnvelope (j h : ℕ) (U : ℝ) : Prop"""
+source_signature_sha256 = "77ad762e46d30cf6988ee707d08eec83c90770b12ff6b9245cd8b9d427eaee0e"
+
+[[declarations]]
+source_name = "DyadicMertensTwoPointMeanEnvelope"
+visibility = "public"
+kind = "def"
+source_signature = """def DyadicMertensTwoPointMeanEnvelope (j : ℕ) (B : ℝ) : Prop"""
+source_signature_sha256 = "e9b7eb555d00dd8b1c348b1a110d55d8b954ae7a7b8065b72a305c8e2e0adc28"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicMeanMertensTwoPointPrefix"
+visibility = "public"
+kind = "def"
+source_signature = """def SubpolynomialDyadicMeanMertensTwoPointPrefix : Prop"""
+source_signature_sha256 = "74ea3e2827214c79257a5c236ed780ddf8b42b309298d52817512106c3cc4272"
+
+[[declarations]]
+source_name = "dyadicMertensTwoPointMeanEnvelope_of_uniform"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensTwoPointMeanEnvelope_of_uniform
+    {j : ℕ} {U : ℝ}
+    (henv : DyadicMertensTwoPointEnvelope j U) :
+    DyadicMertensTwoPointMeanEnvelope j U"""
+source_signature_sha256 = "00afcf70af3ca4e074d132d25b2b6e3150bf3afddf7264c093187c7848ecb73c"
+
+[[declarations]]
+source_name = "finite_abel_prefix_mean"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem finite_abel_prefix_mean
+    (x q : ℕ → ℝ) (N : ℕ) :
+    (∑ k ∈ Finset.range N, x k * q k) =
+      (∑ t ∈ Finset.range N,
+        (∑ k ∈ Finset.range (t + 1), x k) *
+          (q t - q (t + 1))) +
+        (∑ k ∈ Finset.range N, x k) * q N"""
+source_signature_sha256 = "c4c4ba755b6f3e0dd20fafdc9a6994a058af610fe1e051db7ec6e2731c43f142"
+
+[[declarations]]
+source_name = "finite_weight_drop_telescope_mean"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem finite_weight_drop_telescope_mean
+    (q : ℕ → ℝ) (N : ℕ) :
+    (∑ t ∈ Finset.range N, q t - q (t + 1)) =
+      q 0 - q N"""
+source_signature_sha256 = "799e44d04b7e7062a292cff5f29527152687290dc10be847fb8e883d503b9eb0"
+
+[[declarations]]
+source_name = "abs_weighted_sum_le_of_shift_prefix_bound"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem abs_weighted_sum_le_of_shift_prefix_bound
+    (x q : ℕ → ℝ) (N : ℕ) {U : ℝ}
+    (hU : 0 ≤ U)
+    (hprefix : ∀ n : ℕ, n ≤ N →
+      |∑ k ∈ Finset.range n, x k| ≤ U)
+    (hdrop : ∀ t : ℕ, t < N → 0 ≤ q t - q (t + 1))
+    (hterminal : q N = 0) :
+    |∑ k ∈ Finset.range N, x k * q k| ≤ U * q 0"""
+source_signature_sha256 = "621d145e0efab5581c62e43c5c1d7a1fec2a3f18bf1f61215a6be1e4ebba0105"
+
+[[declarations]]
+source_name = "abs_weightedMertensDyadicShiftContribution_le_of_shiftEnvelope"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem abs_weightedMertensDyadicShiftContribution_le_of_shiftEnvelope
+    {j h : ℕ} {U : ℝ}
+    (hh : 1 ≤ h) (hhY : h < 2 ^ (j + 1))
+    (henv : MertensTwoPointShiftEnvelope j h U) :
+    |weightedMertensDyadicShiftContribution j h| ≤
+      2 * U * (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹"""
+source_signature_sha256 = "8164ed74e7af36827eb8fa9739d632848ea5aa30b31fb7016d400f29a49a44da"
+
+[[declarations]]
+source_name = "abs_weightedMertensDyadicShiftPacket_le_of_meanEnvelope"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem abs_weightedMertensDyadicShiftPacket_le_of_meanEnvelope
+    {j : ℕ} {B : ℝ}
+    (henv : DyadicMertensTwoPointMeanEnvelope j B) :
+    |weightedMertensDyadicShiftPacket j| ≤ 2 * B"""
+source_signature_sha256 = "5ab2479095639044ee887a882bdac55011165bbe9e0a05b46e930cabd326aa0c"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMeanMertensTwoPointPrefix_of_uniform"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMeanMertensTwoPointPrefix_of_uniform
+    (huniform : SubpolynomialDyadicUniformMertensTwoPointPrefix) :
+    SubpolynomialDyadicMeanMertensTwoPointPrefix"""
+source_signature_sha256 = "b0d1970de13e8c86098c75015947d65291e28cf80f459052262528c4c091924d"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_of_meanTwoPointPrefix"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_of_meanTwoPointPrefix
+    (hmean : SubpolynomialDyadicMeanMertensTwoPointPrefix) :
+    SubpolynomialDyadicMertensShiftPacket"""
+source_signature_sha256 = "4db020c82925664dc8878d009692997e4b459b8295769d0e0d554bb953a17392"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicMeanMertensTwoPointPrefix"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem riemannHypothesis_of_subpolynomialDyadicMeanMertensTwoPointPrefix
+    (hmean : SubpolynomialDyadicMeanMertensTwoPointPrefix) :
+    _root_.RiemannHypothesis"""
+source_signature_sha256 = "52d7454e6bf612a67829a5514aa47c838c04d6844c5c8e2c622f7227be7fdf2"
