@@ -1,0 +1,317 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-cofinal-energy-335-v0.1"
+owner_repository = "grwtsk/math"
+issue = 335
+meta_issue = 334
+route_id = "RH-E02"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CofinalEnergyDamping"
+build_target = "GRWTSK.NumberTheory.Moebius.CofinalEnergyDamping"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_base_revision = "b16c33abddc0a5a81f0e42c4f54f0ff3fba1d539"
+review_base_tree = "226446c1e2b030b9e34611d2824466c8bb9ccb9c"
+new_module_path = "GRWTSK/NumberTheory/Moebius/CofinalEnergyDamping.lean"
+new_module_git_blob = "413f3e31870158078d380c5323f3c013efcdf00b"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.CofinalEnergyDamping"
+authored_declaration_count = 25
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean"
+git_blob = "f5ed8915ec03933a15b0b3685294942d4959a24a"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean"
+git_blob = "25ffd87663d78d6246549ba875c26b30c8c906b8"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping"
+kind = "def"
+source_signature = '''
+def reciprocalDamping (n : ℕ) : ℝ
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping_pos"
+kind = "theorem"
+source_signature = '''
+theorem reciprocalDamping_pos (n : ℕ) : 0 < reciprocalDamping n
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping_zero"
+kind = "theorem"
+source_signature = '''
+theorem reciprocalDamping_zero : reciprocalDamping 0 = 2
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping_antitone"
+kind = "theorem"
+source_signature = '''
+theorem reciprocalDamping_antitone : Antitone reciprocalDamping
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping_cofinal"
+kind = "theorem"
+source_signature = '''
+theorem reciprocalDamping_cofinal {σ : ℝ} (hσ : 0 < σ) :
+    ∃ n : ℕ, reciprocalDamping n < σ
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping_tail_cofinal"
+kind = "theorem"
+source_signature = '''
+theorem reciprocalDamping_tail_cofinal (N : ℕ) {σ : ℝ} (hσ : 0 < σ) :
+    ∃ n : ℕ, N ≤ n ∧ reciprocalDamping n ≤ σ
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.weightedEnergyAll_of_cofinal_membership"
+kind = "theorem"
+source_signature = '''
+theorem weightedEnergyAll_of_cofinal_membership
+    (d : ℕ → ℝ)
+    (hcofinal : ∀ σ : ℝ, 0 < σ → ∃ n : ℕ, d n ≤ σ)
+    (hpaid : ∀ n : ℕ, d n ∈ pickupEnergyConvergenceSet) :
+    PickupWeightedEnergyAll
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.weightedEnergyAll_iff_cofinal_membership"
+kind = "theorem"
+source_signature = '''
+theorem weightedEnergyAll_iff_cofinal_membership
+    (d : ℕ → ℝ) (hpos : ∀ n : ℕ, 0 < d n)
+    (hcofinal : ∀ σ : ℝ, 0 < σ → ∃ n : ℕ, d n ≤ σ) :
+    PickupWeightedEnergyAll ↔ ∀ n : ℕ, d n ∈ pickupEnergyConvergenceSet
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.weightedEnergyAll_iff_reciprocal_tail"
+kind = "theorem"
+source_signature = '''
+theorem weightedEnergyAll_iff_reciprocal_tail (N : ℕ) :
+    PickupWeightedEnergyAll ↔
+      ∀ n : ℕ, N ≤ n → reciprocalDamping n ∈ pickupEnergyConvergenceSet
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.weightedEnergyAll_iff_reciprocal"
+kind = "theorem"
+source_signature = '''
+theorem weightedEnergyAll_iff_reciprocal :
+    PickupWeightedEnergyAll ↔
+      ∀ n : ℕ, reciprocalDamping n ∈ pickupEnergyConvergenceSet
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.abscissa_zero_iff_reciprocal"
+kind = "theorem"
+source_signature = '''
+theorem abscissa_zero_iff_reciprocal :
+    pickupEnergyAbscissa = 0 ↔
+      ∀ n : ℕ, reciprocalDamping n ∈ pickupEnergyConvergenceSet
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.riemannHypothesis_of_reciprocal"
+kind = "theorem"
+source_signature = '''
+theorem riemannHypothesis_of_reciprocal
+    (hp : ∀ n : ℕ, reciprocalDamping n ∈ pickupEnergyConvergenceSet) :
+    _root_.RiemannHypothesis
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.riemannHypothesis_of_reciprocal_tail"
+kind = "theorem"
+source_signature = '''
+theorem riemannHypothesis_of_reciprocal_tail {N : ℕ}
+    (hp : ∀ n : ℕ, N ≤ n → reciprocalDamping n ∈ pickupEnergyConvergenceSet) :
+    _root_.RiemannHypothesis
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.abscissa_le_of_paid_stage"
+kind = "theorem"
+source_signature = '''
+theorem abscissa_le_of_paid_stage {n : ℕ}
+    (hp : reciprocalDamping n ∈ pickupEnergyConvergenceSet) :
+    pickupEnergyAbscissa ≤ reciprocalDamping n
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.energy_le_of_paid_stage"
+kind = "theorem"
+source_signature = '''
+theorem energy_le_of_paid_stage {n : ℕ}
+    (hp : reciprocalDamping n ∈ pickupEnergyConvergenceSet) {T : ℝ} (hT : 0 ≤ T) :
+    pickupEnergy T ≤
+      (∫ u in Ici (0 : ℝ), Real.exp (-(reciprocalDamping n) * u) * wholePickup u ^ 2) *
+        Real.exp (reciprocalDamping n * T)
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.initial_stage_paid"
+kind = "theorem"
+source_signature = '''
+theorem initial_stage_paid : reciprocalDamping 0 ∈ pickupEnergyConvergenceSet
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.reciprocalDamping_drop"
+kind = "theorem"
+source_signature = '''
+theorem reciprocalDamping_drop (n : ℕ) :
+    reciprocalDamping n - reciprocalDamping (n + 1) =
+      2 / (((n : ℝ) + 1) * ((n : ℝ) + 2))
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.successor_density_identity"
+kind = "theorem"
+source_signature = '''
+theorem successor_density_identity (n : ℕ) (u : ℝ) :
+    Real.exp (-(reciprocalDamping (n + 1)) * u) * wholePickup u ^ 2 =
+      Real.exp ((reciprocalDamping n - reciprocalDamping (n + 1)) * u) *
+        (Real.exp (-(reciprocalDamping n) * u) * wholePickup u ^ 2)
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.successor_membership_iff_extra_moment"
+kind = "theorem"
+source_signature = '''
+theorem successor_membership_iff_extra_moment (n : ℕ) :
+    reciprocalDamping (n + 1) ∈ pickupEnergyConvergenceSet ↔
+      IntegrableOn (fun u : ℝ ↦
+        Real.exp ((reciprocalDamping n - reciprocalDamping (n + 1)) * u) *
+          (Real.exp (-(reciprocalDamping n) * u) * wholePickup u ^ 2)) (Ici 0)
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.ReciprocalDescent"
+kind = "def"
+source_signature = '''
+def ReciprocalDescent : Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.paid_stages_of_descent"
+kind = "theorem"
+source_signature = '''
+theorem paid_stages_of_descent (hstep : ReciprocalDescent) :
+    ∀ n : ℕ, reciprocalDamping n ∈ pickupEnergyConvergenceSet
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.riemannHypothesis_of_reciprocalDescent"
+kind = "theorem"
+source_signature = '''
+theorem riemannHypothesis_of_reciprocalDescent (hstep : ReciprocalDescent) :
+    _root_.RiemannHypothesis
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.positive_floor_not_cofinal"
+kind = "theorem"
+source_signature = '''
+theorem positive_floor_not_cofinal (d : ℕ → ℝ) {a : ℝ} (ha : 0 < a)
+    (hfloor : ∀ n : ℕ, a ≤ d n) :
+    ¬ (∀ σ : ℝ, 0 < σ → ∃ n : ℕ, d n ≤ σ)
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.finite_prefix_not_cofinal"
+kind = "theorem"
+source_signature = '''
+theorem finite_prefix_not_cofinal (N : ℕ) :
+    ¬ (∀ σ : ℝ, 0 < σ →
+      ∃ n : ℕ, n ≤ N ∧ reciprocalDamping n ≤ σ)
+'''
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.one_paid_rate_not_all"
+kind = "theorem"
+source_signature = '''
+theorem one_paid_rate_not_all :
+    ∃ f : ℝ → ℝ, Continuous f ∧
+      IntegrableOn (fun u : ℝ ↦ Real.exp (-2 * u) * f u ^ 2) (Ici 0) ∧
+      ¬ (∀ σ : ℝ, 0 < σ →
+        IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * f u ^ 2) (Ici 0))
+'''
+
+[[hostile_controls]]
+id = "positive-floor"
+declaration = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.positive_floor_not_cofinal"
+description = "Infinitely many rates with a positive floor do not cover all positive dampings."
+status = "SOURCE_ONLY_NOT_EXECUTED"
+
+[[hostile_controls]]
+id = "finite-prefix"
+declaration = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.finite_prefix_not_cofinal"
+description = "A finite prefix cannot substitute for the all-stage or all-tail quantifier."
+status = "SOURCE_ONLY_NOT_EXECUTED"
+
+[[hostile_controls]]
+id = "one-rate"
+declaration = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.one_paid_rate_not_all"
+description = "Synthetic continuous waveform pays rate two but not every positive rate; it is not the arithmetic pickup."
+status = "SOURCE_ONLY_NOT_EXECUTED"
+
+[[hostile_controls]]
+id = "successor-cost"
+declaration = "GRWTSK.RiemannHypothesis.CCC.CofinalDamping.successor_membership_iff_extra_moment"
+description = "Smaller damping requires the displayed positive exponential moment of the same source."
+status = "SOURCE_ONLY_NOT_EXECUTED"
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_elaborated_type_reconciliation = true
+requires_source_signature_schema_review = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_exact_candidate_revision_tree_and_target_blob = true
+requires_conditional_premises_preserved = true
+
+[nonclaims]
+claims = [
+  "a new arithmetic pickup integrability estimate",
+  "an inhabitant of ReciprocalDescent",
+  "zero energy abscissa without its supplier",
+  "a converse from RH to the energy premise",
+  "a uniform bound on all tilted integrals",
+  "integrability at damping zero",
+  "unconditional Riemann hypothesis",
+  "fresh Lean elaboration or transitive axiom audit",
+  "execution or merge authority"
+]
