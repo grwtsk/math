@@ -32,6 +32,16 @@ comparator = "lean/ComparatorChallenges/QuasiRiemannHypothesis.json"
 permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 local_adapter = "PENDING"
 
+
+[[result]]
+family = 32
+name = "tensor scalar descent core used by the CM Hodge bridge"
+evidence = "EXTERNAL_FORMAL_SOURCE"
+source = "lean/OAI/LinearAlgebra/TensorProduct/ScalarDescent.lean"
+candidate = "OAI.RationalHodgeCM.Partial.finite_galois_scalar_descent"
+local_adapter = "GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.finiteGalois_scalarDescent"
+local_source_status = "SOURCE_DRAFT_NOT_RUN"
+
 [[result]]
 family = 32
 name = "rational Hodge conjecture for CM abelian varieties"
@@ -68,3 +78,16 @@ hodge_type_to_lfunction = false
 four_balance_to_algebraicity = false
 external_formal_source_to_local_theorem = false
 zero_free_to_rh = false
+
+
+[[local_target]]
+name = "finite Galois scalar descent"
+path = "GRWTSK/LinearAlgebra/TensorProduct/RationalScalarDescent.lean"
+declaration = "GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.finiteGalois_scalarDescent"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "CM four-label holomorphic count"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourBalance.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_holomorphicCount"
+status = "SOURCE_DRAFT_NOT_RUN"
