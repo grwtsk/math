@@ -1,0 +1,87 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "height-fifteen-positive-cell-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.HeightFifteenPositiveCellCore"
+build_target = "GRWTSK.Interfaces.HeightFifteenPositiveCellCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "e6b9e16da8679ebea7e49dd5b4fdd7965ca387e0"
+parent_tree = "7bc6b5f02b631057fb7994af5bd04fe7d417a2d1"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/height-fifteen-direct-sixteenths-v0.1.toml"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Unique positive polygon increment localized to cell 275; no Lean acceptance or analytic count receipt."
+receipt_policy = "Source text and finite diagnostics are not proof receipts."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.HeightFifteenPositiveCellCore"
+path = "GRWTSK/Interfaces/HeightFifteenPositiveCellCore.lean"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenPositiveCell"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenPositiveCell.lean"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell.cell272", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell.cell273", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell.cell274", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell.cell275", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell.positive_four", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell.cell275_term"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenPositiveCellControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenPositiveCellControls.lean"
+required_declarations = []
+
+[[controls]]
+id = "four-cells"
+requirement = "Elaborate all four one-cell decisions separately."
+status = "NOT_RUN"
+
+[[controls]]
+id = "positive-cell"
+requirement = "Retain only cell 275 as signed +1."
+status = "NOT_RUN"
+
+[[controls]]
+id = "direct-predicate"
+requirement = "Use unchanged directTest and directTerm."
+status = "NOT_RUN"
+
+[[controls]]
+id = "cursor-composition"
+requirement = "Reconstruct pairs and the four-cell piece at exact shared cursors."
+status = "NOT_RUN"
+
+[[controls]]
+id = "branch-not-zero"
+requirement = "Do not interpret polygon cell 275 as a zeta-zero location."
+status = "NOT_RUN"
+
+[[controls]]
+id = "old-success"
+requirement = "Use the unchanged inherited full-contour Success proposition."
+status = "NOT_RUN"
+
+[[controls]]
+id = "transitive-trust"
+requirement = "Audit exact types, imports, axioms, native dependencies, and analytic chain."
+status = "NOT_RUN"
+
+[[controls]]
+id = "external-boundary"
+requirement = "Do not treat model reports as Lean proof."
+status = "NOT_RUN"
