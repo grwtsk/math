@@ -82,77 +82,77 @@ source_name = "dyadicBlockGeometricRatio"
 visibility = "public"
 kind = "def"
 source_signature = "def dyadicBlockGeometricRatio (δ : ℝ) : ℝ"
-source_signature_sha256 = "e6330b3cd60218731c18eedf48597cb07d8ad61241b4ca86375c2d569057c0b0"
+source_signature_sha256 = "420c6c3466abd24be7459d176a5406bdfc0097d5202d3844da59da5998f6e803"
 
 [[declarations]]
 source_name = "dyadicBlockGeometricConstant"
 visibility = "public"
 kind = "def"
 source_signature = "def dyadicBlockGeometricConstant (δ D : ℝ) : ℝ"
-source_signature_sha256 = "e7b9bf057fba97709d84f95318baaa6b10ac85c20648b5689fa501d807e0f6bc"
+source_signature_sha256 = "2442739964080d43c2e760d58ddc42757d818dafbebcbfbb4a21ce5d35ff4e1d"
 
 [[declarations]]
 source_name = "dyadicBlockGeometricRatio_gt_one"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem dyadicBlockGeometricRatio_gt_one {δ : ℝ} (hδ : 0 < δ) :\n    1 < dyadicBlockGeometricRatio δ"
-source_signature_sha256 = "4e93580666f61902d9bc2611a7e6a845aa4f1da8f352a942463b403bfed09c43"
+source_signature_sha256 = "581ebe1ed99629fbf43473db28c3ef0cda2a725f3b1be54849c60f5983d38abb"
 
 [[declarations]]
 source_name = "dyadicBlockGeometricConstant_nonneg"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem dyadicBlockGeometricConstant_nonneg\n    {δ D : ℝ} (hδ : 0 < δ) (hD : 0 ≤ D) :\n    0 ≤ dyadicBlockGeometricConstant δ D"
-source_signature_sha256 = "5852a970568478e7ca0feaffac4e5fc6a1ae6f1be56c12406fbf6442de2314b0"
+source_signature_sha256 = "67d36a4f295fa2731d8f033d4e675232f1e3c87ae8b1c2c2b902fa8b617d19a3"
 
 [[declarations]]
 source_name = "dyadicBlockGeometricConstant_add"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem dyadicBlockGeometricConstant_add\n    {δ D : ℝ} (hδ : 0 < δ) :\n    dyadicBlockGeometricConstant δ D + D =\n      dyadicBlockGeometricConstant δ D *\n        dyadicBlockGeometricRatio δ"
-source_signature_sha256 = "9c541a19d6f03a50a7fc962ed3c3e6d8f49d4e2340f335d02f645ae48c7c17bd"
+source_signature_sha256 = "05202bb2aba64c3e37b6fdf1b66ac441675b744a1c81bfaf09dc8eb034d56166"
 
 [[declarations]]
 source_name = "weightedMertensDyadicPrefix_le_of_block_bound"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem weightedMertensDyadicPrefix_le_of_block_bound\n    {δ D : ℝ} (hδ : 0 < δ) (hD : 0 ≤ D)\n    (hblock : ∀ j : ℕ,\n      weightedMertensDyadicBlock j ≤\n        D * (((2 ^ j : ℕ) : ℝ) ^ δ)) :\n    ∀ J : ℕ,\n      weightedMertensDyadicPrefix J ≤\n        dyadicBlockGeometricConstant δ D *\n          (((2 ^ J : ℕ) : ℝ) ^ δ)"
-source_signature_sha256 = "df1b369737b5a19137359229a70d8f326f9b3972e9830a8b9639781e9593a94d"
+source_signature_sha256 = "5b97ae9ef76cc099cfa7e3d5bc76010ea53b870c32501e4dbd6e2fb8694c9c25"
 
 [[declarations]]
 source_name = "subpolynomialDyadicPrefix_of_block"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem subpolynomialDyadicPrefix_of_block\n    (hblock : SubpolynomialDyadicBlockWeightedMertensSquare) :\n    SubpolynomialDyadicPrefixWeightedMertensSquare"
-source_signature_sha256 = "a8f32c57d50811d866ece62df20001eb5af5ac114aa12e890760a16ded98ee3d"
+source_signature_sha256 = "28474f36922f0766fb8af79134507a30b76f63ea49a87d3ff67158d3d94cce4d"
 
 [[declarations]]
 source_name = "subpolynomialDyadicBlock_iff_prefix"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem subpolynomialDyadicBlock_iff_prefix :\n    SubpolynomialDyadicBlockWeightedMertensSquare ↔\n      SubpolynomialDyadicPrefixWeightedMertensSquare"
-source_signature_sha256 = "052b90ba099eb7a7d0c56e67f86487c73d5facba6a814f29bc9a6a014bc31328"
+source_signature_sha256 = "704db0c2ef2f958e5714f90e5f784a0593f5109cb093958caa6fc8d61fb212f3"
 
 [[declarations]]
 source_name = "subpolynomialDyadicBlock_iff_cumulative"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem subpolynomialDyadicBlock_iff_cumulative :\n    SubpolynomialDyadicBlockWeightedMertensSquare ↔\n      SubpolynomialCumulativeWeightedMertensSquare"
-source_signature_sha256 = "05e87a0db4df783d05957f841e1ad0268289a75e1e4a26ae832de4787a28e813"
+source_signature_sha256 = "f81ca75d7402c68a457231f539eb4722651d82584c76a3db0edd8ecfc641330f"
 
 [[declarations]]
 source_name = "subpolynomialDyadicBlock_iff_allPositiveWeightedMertensSquare"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem subpolynomialDyadicBlock_iff_allPositiveWeightedMertensSquare :\n    SubpolynomialDyadicBlockWeightedMertensSquare ↔\n      AllPositiveWeightedMertensSquare"
-source_signature_sha256 = "dc277791550139f84572d276d94284b979f4938a7cb8e3eb870524eb3acc6ce3"
+source_signature_sha256 = "9fdca7f85db96adaa2547ab8fbae7c5d55b635ab9c2473489d05ea3cea444d49"
 
 [[declarations]]
 source_name = "riemannHypothesis_of_subpolynomialDyadicBlockWeightedMertensSquare"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem riemannHypothesis_of_subpolynomialDyadicBlockWeightedMertensSquare\n    (hblock : SubpolynomialDyadicBlockWeightedMertensSquare) :\n    _root_.RiemannHypothesis"
-source_signature_sha256 = "1fbf6dfb26abb566db79ff9a1007513470084bccbb3d658292967416723beebf"
+source_signature_sha256 = "9d6364a91d06191c89d5828da570faa28f6d2b5c10b0591610b7717daf332d21"
 
 [diagnostics]
 runner = "authoring_assistant_python"
