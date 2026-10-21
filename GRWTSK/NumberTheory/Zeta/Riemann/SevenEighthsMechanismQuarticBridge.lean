@@ -21,8 +21,9 @@ that admission step.
 A stronger claim that two proof mechanisms are equivalent, or that positivity
 can be transported reversibly, belongs on proof-relevant witness carriers.  The
 carrier map must preserve the declared linear/topological structure, the two
-commuting involutions, and the compared real bilinear forms.  It may be an
-equivalence, a faithful embedding, or a quotient/specialization.
+commuting continuous linear involutions, and the compared continuous real
+bilinear forms.  It may be an equivalence, a faithful embedding, or a
+quotient/specialization.
 
 The terminal extraction interface is the repository's existing signed quartic
 criterion.  A prime-derived nonnegative sequence with positive limiting weight
@@ -303,10 +304,13 @@ def WitnessCarrierBridge.toFun
   | .embedding data => fun x => data.linearMap x
   | .quotient data => fun x => data.linearMap x
 
-/-- Two commuting involutions on one witness carrier. -/
-structure CommutingInvolutionPair (X : Type*) where
-  first : X → X
-  second : X → X
+/-- Two commuting continuous linear involutions on one witness carrier. -/
+structure CommutingInvolutionPair
+    (X : Type*) [AddCommGroup X] [Module ℝ X] [TopologicalSpace X] where
+  first : X →ₗ[ℝ] X
+  second : X →ₗ[ℝ] X
+  first_continuous : Continuous (fun x => first x)
+  second_continuous : Continuous (fun x => second x)
   first_involutive : Function.Involutive first
   second_involutive : Function.Involutive second
   commute : Function.Commute first second
@@ -329,6 +333,10 @@ structure RealBilinearMechanismBridge
       targetInvolutions.second (carrier.toFun x)
   sourceForm : Source →ₗ[ℝ] (Source →ₗ[ℝ] ℝ)
   targetForm : Target →ₗ[ℝ] (Target →ₗ[ℝ] ℝ)
+  sourceForm_continuous :
+    Continuous (fun xy : Source × Source => sourceForm xy.1 xy.2)
+  targetForm_continuous :
+    Continuous (fun xy : Target × Target => targetForm xy.1 xy.2)
   scale : ℝ
   scale_pos : 0 < scale
   error : Source → Source → ℝ
@@ -340,11 +348,12 @@ structure RealBilinearMechanismBridge
 
 /-! ## PNT-independent quartic extraction -/
 
-/-- A theorem-level dependency audit.  `closure` is required to be exactly the
-reflexive-transitive dependency closure of `root`; every declaration in it is
-certified not to be a PNT result or an equivalent/stronger circular zero-free
-supplier. -/
-structure PNTIndependentDependencyAudit where
+/-- A theorem-level dependency audit bound to the exact theorem term being
+audited.  `closure` is required to be exactly the reflexive-transitive
+dependency closure of `root`; every declaration in it is certified not to be a
+PNT result or an equivalent/stronger circular zero-free supplier. -/
+structure PNTIndependentDependencyAudit (Claim : Prop) where
+  theoremTerm : Claim
   Declaration : Type
   root : Declaration
   directDependency : Declaration → Declaration → Prop
@@ -373,12 +382,14 @@ structure QuarticExtractionAtZero (s : ℂ) where
   weight_tendsto : Tendsto weight atTop (𝓝 limitWeight)
   error_tendsto : Tendsto error atTop (𝓝 0)
 
+/-- The exact all-zero extraction claim audited by a prime-derived supplier. -/
+def PrimeQuarticClaim : Prop :=
+  ∀ s : ℂ, NontrivialZetaZero s → QuarticExtractionAtZero s
+
 /-- Prime-derived nonnegative quartic extraction for every actual nontrivial
-zero, together with its transitive PNT/circularity audit. -/
+zero.  The dependency audit carries the exact theorem term it certifies. -/
 structure PrimeQuarticExtraction where
-  pntIndependent : PNTIndependentDependencyAudit
-  atZero :
-    ∀ s : ℂ, NontrivialZetaZero s → QuarticExtractionAtZero s
+  pntIndependent : PNTIndependentDependencyAudit PrimeQuarticClaim
 
 /-- The exact repository extraction criterion consumes the typed prime
 extraction without any additional logical reformulation. -/
@@ -388,7 +399,7 @@ theorem riemannHypothesis_of_primeQuarticExtraction
   apply
     GRWTSK.NumberTheory.Zeta.Riemann.riemannHypothesis_of_trace_extraction
   intro s hs
-  let data := extraction.atZero s hs
+  let data := extraction.pntIndependent.theoremTerm s hs
   exact
     ⟨data.W, data.weight, data.error, data.limitWeight,
       data.limitWeight_pos, data.identity, data.nonnegative,
@@ -473,15 +484,23 @@ theorem ReflectedRegionalZeroBound.centered_abs_le_threeEighths
   rw [abs_le]
   constructor <;> linarith
 
+/-- The exact theorem type carried by one audited threshold descent. -/
+def RawDescentClaim (τ σ : ℝ) : Prop :=
+  RiemannZetaZeroFreeRightHalfPlane σ →
+    RiemannZetaZeroFreeRightHalfPlane τ
+
 /-- One audited descent step from a regional threshold `σ` to a stronger
-threshold `τ`. -/
+threshold `τ`.  The dependency audit carries the actual descent theorem term. -/
 structure PrimeQuarticStep (τ σ : ℝ) where
   half_le : (1 / 2 : ℝ) ≤ τ
   strict : τ < σ
-  pntIndependent : PNTIndependentDependencyAudit
-  descend :
-    RiemannZetaZeroFreeRightHalfPlane σ →
-      RiemannZetaZeroFreeRightHalfPlane τ
+  pntIndependent : PNTIndependentDependencyAudit (RawDescentClaim τ σ)
+
+/-- The descent theorem term certified by this step's dependency audit. -/
+def PrimeQuarticStep.descend
+    {τ σ : ℝ} (step : PrimeQuarticStep τ σ) :
+    RawDescentClaim τ σ :=
+  step.pntIndependent.theoremTerm
 
 /-- A complete cofinal threshold-descent tower.  Cofinality is explicit so the
 tower cannot converge to a boundary strictly larger than one half. -/
