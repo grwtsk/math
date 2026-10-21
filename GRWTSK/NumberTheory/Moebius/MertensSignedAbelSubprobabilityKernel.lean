@@ -128,8 +128,7 @@ theorem weightedMertensDyadicSignedAbelDepthSlice_eq_kernelAutocorrelation
               normalizedSignedAbelShiftKernel j t h *
                 moebiusReal (a + 1 + h)) := by
   rw [weightedMertensDyadicSignedAbelDepthSlice_eq_normalizedCorrelation]
-  apply congrArg
-  intro
+  congr 1
   apply Finset.sum_congr rfl
   intro a _ha
   rw [normalizedSignedAbelDepthShiftResponse_eq_kernelSum]
