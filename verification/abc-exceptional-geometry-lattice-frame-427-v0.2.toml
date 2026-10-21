@@ -21,7 +21,7 @@ finite_lattice_theorem = "OPEN"
 [[source]]
 module = "GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame"
 path = "GRWTSK/GeometryOfNumbers/PrimitiveLinearUnimodularFrame.lean"
-blob = "27704ec151455dde8c30cbbdc8eaaa5ff424ed0f"
+blob = "338c69726ee5ac4157c4d378aab2e2964fe3e78f"
 
 [[source]]
 module = "GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea"

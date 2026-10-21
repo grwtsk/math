@@ -149,7 +149,7 @@ theorem normal_dot_secondKernelVector (data : Data) :
     (data.reducedA : ℤ) * (data.pairGcd : ℤ) *
           ((data.c : ℤ) * Nat.gcdA data.reducedA data.reducedB) +
         (data.reducedB : ℤ) * (data.pairGcd : ℤ) *
-          ((data.c : ℤ) * Nat.gcdB data.reducedA data.reducedB) -
+          ((data.c : ℤ) * Nat.gcdB data.reducedA data.reducedB) +
         -(data.c : ℤ) * (data.pairGcd : ℤ) =
       (data.c : ℤ) * (data.pairGcd : ℤ) *
         ((data.reducedA : ℤ) * Nat.gcdA data.reducedA data.reducedB +
@@ -185,12 +185,24 @@ theorem first_cross_second (data : Data) :
     firstKernelVector data ⨯₃ secondKernelVector data =
       -normalVector data := by
   rw [Matrix.cross_apply]
-  apply Matrix.vec3_eq <;>
-    simp [firstKernelVector, secondKernelVector, normalVector,
-      data.cast_a_eq_reduced_mul_gcd,
-      data.cast_b_eq_reduced_mul_gcd,
-      data.reduced_bezout_identity] <;>
+  apply Matrix.vec3_eq
+  · dsimp [firstKernelVector, secondKernelVector, normalVector]
+    rw [← data.cast_a_eq_reduced_mul_gcd]
     ring
+  · dsimp [firstKernelVector, secondKernelVector, normalVector]
+    rw [← data.cast_b_eq_reduced_mul_gcd]
+    ring
+  · dsimp [firstKernelVector, secondKernelVector, normalVector]
+    calc
+      (data.reducedB : ℤ) *
+            ((data.c : ℤ) * Nat.gcdB data.reducedA data.reducedB) -
+          -(data.reducedA : ℤ) *
+            ((data.c : ℤ) * Nat.gcdA data.reducedA data.reducedB) =
+        (data.c : ℤ) *
+          ((data.reducedA : ℤ) * Nat.gcdA data.reducedA data.reducedB +
+            (data.reducedB : ℤ) * Nat.gcdB data.reducedA data.reducedB) := by
+          ring
+      _ = (data.c : ℤ) := by rw [data.reduced_bezout_identity]; ring
 
 /-- Matrix whose rows are the two kernel vectors and the complementary
 Bezout vector. -/
