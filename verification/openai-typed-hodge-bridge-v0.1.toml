@@ -91,3 +91,16 @@ name = "CM four-label holomorphic count"
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourBalance.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_holomorphicCount"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "degree-one pure-slope Hodge endpoint"
+path = "GRWTSK/AlgebraicGeometry/Hodge/DegreeOneSlope.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope.pureType_of_zero_or_one_slope"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "filtration-preserving projector",
+  "Frobenius commutation",
+  "weak-admissibility Hodge/Newton equality",
+  "pure slope zero or one"
+]
