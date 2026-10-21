@@ -70,7 +70,7 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan"
 path = "GRWTSK/NumberTheory/Primes/GoldbachCompositeRamanujan.lean"
-source_blob = "3f5b7b9cf17622b01215eec1fb656dc16f182505"
+source_blob = "309cd33f3fe4cb77354511e5f59685975e582494"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
