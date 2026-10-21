@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-signed-abel-normalized-response-499-v0.1"
+owner_repository = "grwtsk/math"
+issue = 499
+parent_issue = 492
+parent_pr = 494
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNormalizedResponse"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelNormalizedResponse"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_revision = "746c9700cf364434e29d9483db1ef1db1f116440"
+candidate_branch = "research/rh-signed-abel-normalized-response-499-20261021"
+theorem_source_commit = "b50ff9acec1f7ff8c76a57429fb5c8dc257a1d7a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelNormalizedResponse.lean"
+theorem_source_git_blob = "57f3000e2af6a0c3a2732ef0f2cf10737a3d23ff"
+
+[selected_increment]
+mass_identity = "signedAbelDepthShiftWeightMass_eq_initialWeight"
+response_bound = "abs_signedAbelDepthShiftResponse_le_two_mul_right_inv"
+normalized_response = "normalizedSignedAbelDepthShiftResponse"
+one_bound = "abs_normalizedSignedAbelDepthShiftResponse_le_one"
+slice_rewrite = "weightedMertensDyadicSignedAbelDepthSlice_eq_normalizedCorrelation"
+proof_classification = "EXACT_FINITE_TELESCOPING_AND_NORMALIZATION"
+next_obstruction = "uniform cancellation against the growing normalized response family"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+normalized_response_cancellation_proved = false
+chowla_adapter_constructed = false
+elliott_adapter_constructed = false
+sarnak_adapter_constructed = false
+gowers_estimate_proved = false
+riemann_hypothesis_proved = false
