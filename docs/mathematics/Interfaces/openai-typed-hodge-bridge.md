@@ -46,6 +46,7 @@ At the pinned external revision:
 | --- | --- |
 | 245, weak normalization implies strong normalization for pure type systems | EXTERNAL_FORMAL_SOURCE |
 | 003, zeta/Dirichlet/Hecke zero-free half-plane Re(s)>7/8 | EXTERNAL_FORMAL_SOURCE |
+| scalar descent core, `lean/OAI/LinearAlgebra/TensorProduct/ScalarDescent.lean` | EXTERNAL_FORMAL_SOURCE |
 | 032, rational Hodge conjecture for CM abelian varieties | EXTERNAL_MANUSCRIPT |
 | 001, Milne rationality | EXTERNAL_MANUSCRIPT |
 | 043, P=W for fixed determinant | EXTERNAL_MANUSCRIPT |
@@ -142,7 +143,12 @@ Define an all-conjugates predicate
   \quad \sigma(t)\in P .
 \]
 
-The external CM-Hodge manuscript contains the scalar-descent statement:
+OpenAI also supplies a Lean scalar-descent source at
+`lean/OAI/LinearAlgebra/TensorProduct/ScalarDescent.lean`. The local module
+`GRWTSK/LinearAlgebra/TensorProduct/RationalScalarDescent.lean` adapts its
+finite-Galois trace-dual core. Current local status is SOURCE_DRAFT / NOT_RUN.
+
+The mathematical statement is:
 
 ### Theorem target D — scalar descent
 
@@ -217,7 +223,12 @@ The intended implication graph is
 where the final arrow uses the separately admitted CM rational-Hodge theorem.
 No earlier node implies a later node without its own theorem.
 
-This is the source-level interface to issues #176, #178, #180, #181, and #183.
+The local finite sign-count theorem is now present as
+`GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_holomorphicCount`.
+It proves only the two-holomorphic-index count from balance plus oddness; the
+identification with actual Hodge lines, rational descent, and algebraicity
+remain separate. This is the source-level interface to issues #176, #178,
+#180, #181, and #183.
 
 ## 5. Frobenius slope to Hodge type
 
