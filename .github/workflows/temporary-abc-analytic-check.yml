@@ -15,123 +15,157 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-      - name: Apply one-shot quantitative compatibility repairs
+      - name: Patch remaining quantitative proof blocks
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
 
           path = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean")
-          text = path.read_text()
+          lines = path.read_text().splitlines()
 
-          text = text.replace('''  have hpos : 1 ≤ n.factorization p := by
-              rw [← hp.dvd_iff_one_le_factorization]
-              · exact hpn
-              · omega''', '''  have hpos : 1 ≤ n.factorization p := by
-              rw [← hp.dvd_iff_one_le_factorization]
-              · exact hpn
-              · exact Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n)''', 1)
+          def find_exact(value: str, start: int = 0) -> int:
+              for index in range(start, len(lines)):
+                  if lines[index] == value:
+                      return index
+              raise RuntimeError(f"missing line after {start}: {value!r}")
 
-          text = text.replace('''  · intro i _ j _ hij
-              apply Nat.Coprime.isRelPrime
-              apply Nat.Coprime.pow_right
-              apply Nat.Coprime.pow_left
-              exact hy_cop i j hij''', '''  · intro i _ j _ hij
-              change IsRelPrime (y i ^ i) (y j ^ j)
-              rw [← Nat.coprime_iff_isRelPrime]
-              apply Nat.Coprime.pow_right
-              apply Nat.Coprime.pow_left
-              exact hy_cop i j hij''', 1)
+          def find_contains(value: str, start: int = 0) -> int:
+              for index in range(start, len(lines)):
+                  if value in lines[index]:
+                      return index
+              raise RuntimeError(f"missing text after {start}: {value!r}")
 
-          text = text.replace('''    apply (nat_eq_fin_iff _).symm
-              omega''', '''    apply (nat_eq_fin_iff _).symm
-              have hk := hKd
-              omega''', 1)
+          # The positive factorization exponent uses n != 0, not arithmetic automation.
+          start = find_contains("have hpos : 1 ≤ n.factorization p")
+          end = find_exact("  tauto", start)
+          lines[start:end + 1] = [
+              "  have hpos : 1 ≤ n.factorization p := by",
+              "    rw [← hp.dvd_iff_one_le_factorization]",
+              "    · exact hpn",
+              "    · exact Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n)",
+              "  tauto",
+          ]
 
-          text = text.replace('''      apply Finset.prod_le_prod_of_subset_of_one_le
-              · simp
-              simp only [Finset.mem_union, Finset.mem_Icc]''', '''      apply Finset.prod_le_prod_of_subset_of_one_le
-              · exact Finset.subset_union_right
-              simp only [Finset.mem_union, Finset.mem_Icc]''', 1)
+          # Current Mathlib exposes the radical-product side condition as IsRelPrime.
+          theorem_start = find_contains("private theorem prod_y_eq_radical_n")
+          start = find_exact("  · intro i _ j _ hij", theorem_start)
+          end = find_exact("", start)
+          lines[start:end] = [
+              "  · intro i _ j _ hij",
+              "    change IsRelPrime (y i ^ i) (y j ^ j)",
+              "    rw [← Nat.coprime_iff_isRelPrime]",
+              "    apply Nat.Coprime.pow_right",
+              "    apply Nat.Coprime.pow_left",
+              "    exact hy_cop i j hij",
+          ]
 
-          text = text.replace('''    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by
-              gcongr
+          # Make the K < d witness available to the finite-index conversion.
+          theorem_start = find_contains("private theorem aux")
+          apply_index = find_contains("apply (nat_eq_fin_iff _).symm", theorem_start)
+          if lines[apply_index + 1].strip() == "omega":
+              lines[apply_index + 1:apply_index + 2] = [
+                  "    have hk := hKd",
+                  "    omega",
+              ]
 
-          private theorem c_le_X_pow''', '''    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by
-              gcongr
-              exact_mod_cast hnX
+          # Large-layer product: explicit subset and the n <= X comparison.
+          theorem_start = find_contains("private theorem prod_y_large_le_X_pow")
+          subset_apply = find_contains("apply Finset.prod_le_prod_of_subset_of_one_le", theorem_start)
+          if lines[subset_apply + 1].strip() == "· simp":
+              lines[subset_apply + 1] = "      · exact Finset.subset_union_right"
+          final_step = find_exact("    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by", theorem_start)
+          next_theorem = find_contains("private theorem c_le_X_pow", final_step)
+          lines[final_step:next_theorem] = [
+              "    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by",
+              "      gcongr",
+              "      exact_mod_cast hnX",
+              "",
+          ]
 
-          private theorem c_le_X_pow''', 1)
+          # Exponent monotonicity uses 1 <= X explicitly.
+          theorem_start = find_contains("private theorem c_le_X_pow")
+          final_step = find_exact("    _ ≤ (X : ℝ) ^ ε := by", theorem_start)
+          next_decl = find_contains("/-- The distinguished index", final_step)
+          lines[final_step:next_decl] = [
+              "    _ ≤ (X : ℝ) ^ ε := by",
+              "      exact Real.rpow_le_rpow_of_exponent_le",
+              "        (by exact_mod_cast h1n.trans hnX) hK_div_d",
+              "",
+          ]
 
-          text = text.replace('''    _ ≤ (X : ℝ) ^ ε := by
-              gcongr
-              · norm_cast
-                omega
-              · exact hK_div_d
+          # The same two explicit comparisons close the selected K-layer bound.
+          theorem_start = find_contains("theorem x_K_le_X_pow")
+          first_step = find_exact("    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by", theorem_start)
+          second_step = find_exact("    _ ≤ (X : ℝ) ^ ε := by", first_step)
+          lines[first_step:second_step] = [
+              "    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by",
+              "      gcongr",
+              "      exact_mod_cast hnX",
+          ]
+          next_decl = find_contains("private theorem X_pow_mul_prod_le_radical", second_step)
+          lines[second_step:next_decl] = [
+              "    _ ≤ (X : ℝ) ^ ε := by",
+              "      exact Real.rpow_le_rpow_of_exponent_le",
+              "        (by exact_mod_cast h1n.trans hnX) K_inv_le_eps",
+              "",
+          ]
 
-          /-- The distinguished index''', '''    _ ≤ (X : ℝ) ^ ε := by
-              exact Real.rpow_le_rpow_of_exponent_le
-                (by exact_mod_cast h1n.trans hnX) hK_div_d
+          # Repair indentation and use hKd explicitly in the KIndex identification.
+          theorem_start = find_contains("private theorem X_pow_mul_prod_le_radical")
+          block_start = find_contains("have hKIndex (j : Fin d)", theorem_start)
+          norm_cast_index = find_exact("      norm_cast", block_start)
+          lines[block_start:norm_cast_index] = [
+              "      have hKIndex (j : Fin d) : j.val = K - 1 ↔ j = KIndex := by",
+              "        have hlt : K - 1 < d := by",
+              "          have hk := hKd",
+              "          omega",
+              "        constructor",
+              "        · intro hj",
+              "          ext",
+              "          simpa [KIndex, Fin.ofNat, Nat.mod_eq_of_lt hlt] using hj",
+              "        · intro hj",
+              "          rw [hj]",
+              "          simp [KIndex, Fin.ofNat, Nat.mod_eq_of_lt hlt]",
+          ]
 
-          /-- The distinguished index''', 1)
+          # Product inclusion over reals requires the explicit nonnegativity premise.
+          first_start = find_exact("    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by", theorem_start)
+          first_end = find_exact("    _ = ∏ m ∈ Finset.Icc 1 d, y m := by", first_start)
+          lines[first_start:first_end] = [
+              "    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by",
+              "      apply Finset.prod_le_prod_of_subset_of_one_le₀",
+              "      · exact Finset.filter_subset _ _",
+              "      · intro i hi",
+              "        positivity",
+              "      · intro i hi hnot",
+              "        have h_one : 1 ≤ y (i + 1) := Nat.succ_le_iff.mpr (hy_pos _)",
+              "        exact_mod_cast h_one",
+          ]
 
-          text = text.replace('''    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
-              gcongr
-            _ ≤ (X : ℝ) ^ ε := by
-              gcongr
-              · norm_cast
-                omega
-              · exact K_inv_le_eps''', '''    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
-              gcongr
-              exact_mod_cast hnX
-            _ ≤ (X : ℝ) ^ ε := by
-              exact Real.rpow_le_rpow_of_exponent_le
-                (by exact_mod_cast h1n.trans hnX) K_inv_le_eps''', 1)
+          second_start = find_exact(
+              "    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by", first_end
+          )
+          second_end = find_exact("    _ = (radical n : ℕ) := by", second_start)
+          lines[second_start:second_end] = [
+              "    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by",
+              "      apply Finset.prod_le_prod_of_subset_of_one_le₀",
+              "      · exact Finset.subset_union_left",
+              "      · intro i hi",
+              "        positivity",
+              "      · intro i hi hnot",
+              "        have h_one : 1 ≤ y i := Nat.succ_le_iff.mpr (hy_pos _)",
+              "        exact_mod_cast h_one",
+          ]
 
-          text = text.replace('''        have hlt : K - 1 < d := by
-            have hk := hKd
-            omega
-            constructor''', '''        have hlt : K - 1 < d := by
-              have hk := hKd
-              omega
-            constructor''', 1)
-
-          text = text.replace('''    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
-              norm_cast
-              apply Finset.prod_le_prod_of_subset_of_one_le
-              · exact Finset.filter_subset _ _
-              · intro i hi hnot
-                exact (hy_pos _)''', '''    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
-              apply Finset.prod_le_prod_of_subset_of_one_le₀
-              · exact Finset.filter_subset _ _
-              · intro i hi
-                positivity
-              · intro i hi hnot
-                have h_one : 1 ≤ y (i + 1) := Nat.succ_le_iff.mpr (hy_pos _)
-                exact_mod_cast h_one''', 1)
-
-          text = text.replace('''    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
-              norm_cast
-              apply Finset.prod_le_prod_of_subset_of_one_le
-              · simp
-              · intro i hi hnot
-                exact (hy_pos _)''', '''    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
-              apply Finset.prod_le_prod_of_subset_of_one_le₀
-              · exact Finset.subset_union_left
-              · intro i hi
-                positivity
-              · intro i hi hnot
-                have h_one : 1 ≤ y i := Nat.succ_le_iff.mpr (hy_pos _)
-                exact_mod_cast h_one''', 1)
-
-          path.write_text(text)
+          path.write_text("\n".join(lines) + "\n")
           PY
           git diff --check
           if ! git diff --quiet -- GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean
-            git commit -m "Finish the quantitative abc Lean compatibility repair (#401)"
+            git commit -m "Patch the remaining quantitative abc proof blocks (#401)"
             git push
           fi
       - name: Set up Lean and Mathlib cache
