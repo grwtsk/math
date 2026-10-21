@@ -3,19 +3,23 @@
 Issue: #417. Stacked parent: draft PR #416 at
 `30de583ca78cc19d42137e23d8589d1e4def36b2`.
 
-Status: **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / LATTICE_ESTIMATE_OPEN**.
+Status: **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+LATTICE_ESTIMATE_OPEN**.
 
-## Source
+## Mathematical source and attribution
 
-This adapter follows the opening algebraic step in Proposition 4.1 of
-Christian Bernert, Tim Browning, Jared Duker Lichtman, and Joni Teräväinen,
-*Bounds on the exceptional set in the abc conjecture*, arXiv:2410.12234v2
-(2026).
+This adapter follows the opening algebraic and arithmetic steps in Proposition
+4.1 of Christian Bernert, Tim Browning, Jared Duker Lichtman, and Joni
+Teräväinen, *Bounds on the exceptional set in the abc conjecture*,
+arXiv:2410.12234v2 (2026).
 
-The existing anatomic-box architecture and its attribution are inherited
-unchanged from PR #413 and the proposition statement layer in PR #416.
+The paper acknowledges Bhavik Mehta for assistance using Lean to verify parts
+of an earlier version. The finite anatomic-box architecture reused here is
+adapted from the Apache-2.0 Lean work of Bhavik Mehta and Arend Mellendijk, as
+recorded in PR #413 and its source headers. Those implementation credits are
+kept distinct from authorship of the 2026 proposition.
 
-## Existing box equation
+## Existing box equation and primitive source
 
 For parameters
 
@@ -37,15 +41,24 @@ totalB = b₀ ∏ᵢ bᵢ^(i+1),
 totalC = c₀ ∏ᵢ cᵢ^(i+1).
 ```
 
-Lean coordinates are zero-based, so `i.val+1` is the source-paper index.
+It also stores pairwise coprimality of the three unweighted support carriers
+
+```text
+a₀ ∏ᵢ aᵢ,
+b₀ ∏ᵢ bᵢ,
+c₀ ∏ᵢ cᵢ.
+```
+
+Lean coordinates are zero-based, so `i.val+1` is the source-paper index and
+the exponent printed as `i` in the paper.
 
 ## Selected and complementary monomials
 
 For a selected finite set `I : Finset (Fin d)`, define
 
 ```text
-selected(I,x)   = ∏_(i∈I)  xᵢ^(i+1),
-complement(I,x) = ∏_(i∈Iᶜ) xᵢ^(i+1).
+selected(I,x)   = ∏_(i∈I)  xᵢ^(i.val+1),
+complement(I,x) = ∏_(i∈Iᶜ) xᵢ^(i.val+1).
 ```
 
 The complement is literal inside the finite type `Fin d`. Mathlib's finite
@@ -57,7 +70,7 @@ complement(I,x) * selected(I,x) = monomial(x).
 
 No division, truncation, or asymptotic argument is used.
 
-## Proposition 4.1 variables
+## Proposition 4.1 factors and equation
 
 For selected sets `I,I',I''`, the source defines
 
@@ -85,45 +98,113 @@ This theorem is proved first for `q ∈ boxFinset p` and then inherited by the
 strict `paperBoxFinset` from PR #416 using its subset theorem. No alternative
 additive-triple or box source is introduced.
 
-## What remains open
+## Positivity
 
-The paper next uses additional facts not supplied by this increment:
+Strict source-paper dyadic membership is
 
-1. positivity of all selected variables and coefficients in the exact form
-   needed by the lattice theorem;
-2. `gcd(a',b',c')=1` and `gcd(x,y,z)=1`;
-3. the Heath--Brown primitive lattice-point estimate
+```text
+A < x ≤ 2A.
+```
+
+It directly implies `0 < x`, including when the dyadic scale itself is zero.
+Finite products of positive coordinates are positive. Together with residual
+positivity already present in `PaperAdmissible`, this proves
+
+```text
+0 < a', 0 < x,
+0 < b', 0 < y,
+0 < c', 0 < z.
+```
+
+`PositiveGeometryLinearization` packages these six facts with the exact linear
+equation. Positivity is not used as a substitute for coprimality.
+
+## Primitivity
+
+The inherited `SupportPrimitive` premise is stronger than the two
+three-variable gcd statements printed in Proposition 4.1.
+
+First, replacing each positive paper exponent by an arbitrary positive power
+does not change prime support. Therefore pairwise coprimality of the three
+unweighted support carriers implies pairwise coprimality of
+`totalA,totalB,totalC`.
+
+Second, each coefficient and selected variable divides its corresponding
+total by the exact reconstruction identities. Coprimality descends along
+divisors, giving pairwise coprimality of
+
+```text
+(a',b',c')
+```
+
+and separately of
+
+```text
+(x,y,z).
+```
+
+The source paper only asks for the weaker exact predicates
+
+```text
+gcd(gcd(a',b'),c') = 1,
+gcd(gcd(x,y),z) = 1.
+```
+
+`GeometryPaperPrimitivity` records exactly these two statements, while
+`GeometryPairwisePrimitivity` retains the stronger inherited information for
+reuse. A hostile fixture records that three-variable gcd one does not imply
+pairwise coprimality in general.
+
+`PrimitivePositiveGeometryLinearization` now packages:
+
+1. positivity of all six factors;
+2. stronger pairwise primitivity, hence the exact paper gcd predicates;
+3. the equation `a'x+b'y=c'z`.
+
+Thus every algebraic and primitivity input explicitly stated before the
+Heath--Brown estimate has a source-level proof script.
+
+## Remaining open proof boundary
+
+The paper next invokes additional mathematics not supplied by this increment:
+
+1. the Heath--Brown primitive lattice-point estimate
 
    ```text
    O(1 + XYZ / max(|a'|X, |b'|Y, |c'|Z));
    ```
 
-4. divisor-fibre lifting from one `(x,y,z)` to the selected monomial
+2. divisor-fibre lifting from one `(x,y,z)` to the selected monomial
    coordinates;
-5. summation over complementary coordinates and exponent bookkeeping;
-6. the complete Proposition 4.1 bound.
+3. summation over complementary coordinates;
+4. replacement of dyadic products by the Proposition 2.1 parameter bounds;
+5. the complete Proposition 4.1 supplier from PR #416.
 
-The linear equation is therefore an input to the geometry-of-numbers proof,
-not the proof itself.
+The positive primitive equation is therefore the input to the
+geometry-of-numbers proof, not the estimate itself.
 
 ## Hostile boundaries
 
 The following mutations are rejected:
 
-- treating Lean index `i.val` as the paper exponent instead of using
-  `i.val+1` in the monomial;
+- treating Lean index `i.val` as the paper monomial exponent instead of using
+  `i.val+1`;
 - using a non-complementary or overlapping coordinate partition;
 - introducing a second additive equation rather than reusing `boxFinset`;
-- claiming primitivity from the equation alone;
+- claiming positivity from a closed dyadic interval without the stored total
+  positivity or the strict paper interval;
+- claiming primitivity from positivity or from the equation alone;
+- conflating pairwise coprimality with the weaker three-variable gcd predicate;
 - calling the algebraic reconstruction a lattice-point estimate;
 - inferring Proposition 4.1, the exceptional-set theorem, or abc from this
-  finite identity.
+  finite adapter.
 
 ## Verification boundary
 
 The source contains closed proof scripts for the finite product partition,
-three coordinate reconstructions, and two linear-equation adapters. They have
-not been parsed or elaborated at the exact head. No Lean/Lake/native run,
+three coordinate reconstructions, positivity of all six factors, pairwise and
+source-exact primitivity, and the combined positive primitive equation. They
+have not been parsed or elaborated at the exact head. No Lean/Lake/native run,
 kernel acceptance, generated-declaration reconciliation, transitive axiom or
 native audit, repository test, or independent mathematical review has
 occurred.
