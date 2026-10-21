@@ -7,6 +7,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridg
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeGramQuarticExtractionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ThreePointVolumeQuarticExtractionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialThreePointVolumePackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialPackingRecurrenceControls
 
 set_option autoImplicit false
 
