@@ -1,0 +1,164 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-finite-fourier-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachFourierCore"
+build_target = "GRWTSK.Interfaces.GoldbachFourierCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "4fcf2096545f473987c0375ef093cbfe5b02bea4"
+base_tree = "96d16edcf08ddfac79376b925d1a7eef44da8f26"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_arithmetic_target = "INHERITED_GOLDBACH_COUNT"
+weighted_positivity_bridge = "NEW_SOURCE_DRAFT"
+finite_additive_projector = "NEW_SOURCE_DRAFT"
+modular_to_natural_lift = "EXPLICIT_NO_WRAP_REQUIRED"
+continuous_circle_integral = "NOT_SUPPLIED"
+major_minor_arc_decomposition = "NOT_SUPPLIED"
+signed_every_even_residual_bound = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachFourierCore"
+path = "GRWTSK/Interfaces/GoldbachFourierCore.lean"
+source_blob = "2041505505bddb6ee5fdb6b88ee17b04a4a80a63"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachWeighted"
+path = "GRWTSK/NumberTheory/Primes/GoldbachWeighted.lean"
+source_blob = "e76129ebfd7b62f6ecb72f3d229adb382af22598"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier"
+path = "GRWTSK/NumberTheory/Primes/GoldbachFiniteFourier.lean"
+source_blob = "c3dd0a54db1aec6bb43213320cd30079af55a829"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachFourierControls.lean"
+source_blob = "1f5884f75f58b0ba3c6982f0613d68f873234c51"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector"
+path = "GRWTSK/Analysis/Fourier/FiniteAdditiveProjector.lean"
+source_blob = "1240c817d6340d73cd292de809d923eafbfd2520"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-finite-fourier.md"
+source_blob = "4ed7ede365d226fddb064c079b0803825ce895d8"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_names = [
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachBox",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.mem_goldbachBox",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.primeLogWeight",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.primeLogWeight_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.primeLogWeight_pos_iff",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogTerm",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogTerm_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogTerm_pos_iff",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogMass",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogMass_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogMass_pos_iff",
+  "GRWTSK.NumberTheory.Primes.GoldbachWeighted.goldbachLogMass_pos_iff_count_pos",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier.goldbachProjectorMass",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier.goldbachProjectorMass_eq_fullFrequency",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier.goldbachProjectorMass_eq_logMass",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls.four_mass_positive",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls.eleven_mass_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls.composite_weight_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls.four_projector_exact",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls.modular_wrap_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls.wrong_additive_target_control",
+]
+
+[[acceptance_obligations]]
+id = "G01"
+requirement = "Elaborate all four new Lean modules at the exact head; source presence and lexical checks do not pass."
+
+[[acceptance_obligations]]
+id = "G02"
+requirement = "Reconcile exact public types and the full transitive import/axiom/native closure, including the inherited projector and count modules."
+
+[[acceptance_obligations]]
+id = "G03"
+requirement = "Retain actual Nat.Prime support, ordered pairs, inclusive finite bounds and literal natural equality p+q=N."
+
+[[acceptance_obligations]]
+id = "G04"
+requirement = "Prove strict logarithmic weight positivity only from actual primality; a nonzero sieve or prime-power weight must not pass."
+
+[[acceptance_obligations]]
+id = "G05"
+requirement = "Retain the explicit no-wrap condition 2*N<q before replacing modular equality by natural equality."
+
+[[acceptance_obligations]]
+id = "G06"
+requirement = "The full-frequency theorem must use every character in ZMod q with the exact normalization q^-1."
+
+[[acceptance_obligations]]
+id = "G07"
+requirement = "Preserve the modular-wrap hostile control; removing no-wrap must not produce an integer-equality theorem."
+
+[[acceptance_obligations]]
+id = "G08"
+requirement = "Do not promote the finite projector identity to the continuous circle integral, a major/minor-arc estimate or an every-even residual bound."
+
+[[acceptance_obligations]]
+id = "G09"
+requirement = "Do not infer strong Goldbach from bounded examples, positive weighted identities, or static finite diagnostics."
+
+[[acceptance_obligations]]
+id = "G10"
+requirement = "Keep this integration root isolated from GRWTSK.lean until exact-source replay and trust review are accepted."
+
+[nonclaims]
+claims = [
+  "a proof of strong Goldbach",
+  "a new prime-distribution estimate",
+  "the continuous circle-method integral identity",
+  "a major/minor-arc decomposition or singular-series theorem",
+  "a minor-arc bound for every sufficiently large even integer",
+  "complete finite exception coverage",
+  "Lean elaboration, transitive axiom audit or external replay acceptance",
+  "merge, deployment or execution authority",
+]
