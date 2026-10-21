@@ -190,8 +190,20 @@ theorem wrong_prime_sign_defect (n : ℕ) (hn : 2 ≤ n) :
       (canonicalLedger n hn).tail =
         2 * (squareTentMangoldt n : ℂ) := by
   have h := (canonicalLedger n hn).balance
-  simp only [canonicalLedger_primePower] at h
-  linarith
+  calc
+    _ =
+        ((canonicalLedger n hn).primePower +
+          (canonicalLedger n hn).archimedean +
+          (canonicalLedger n hn).pole +
+          (canonicalLedger n hn).trivialZero +
+          (canonicalLedger n hn).nontrivialZero +
+          (canonicalLedger n hn).endpoint +
+          (canonicalLedger n hn).tail) +
+          2 * (squareTentMangoldt n : ℂ) := by
+            simp only [canonicalLedger_primePower]
+            ring
+    _ = 0 + 2 * (squareTentMangoldt n : ℂ) := by rw [h]
+    _ = _ := by ring
 
 /-- The exact next adapter: a finite source-faithful atom stage whose linear
 readout is the canonical square-tent arithmetic observable. This record does
