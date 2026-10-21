@@ -274,6 +274,13 @@ Filtration preservation is essential. A Frobenius eigenspace that is not
 preserved by the Hodge filtration is a hostile control and may not instantiate
 H1.
 
+The finite-dimensional last mile is now present as source in
+`GRWTSK/AlgebraicGeometry/Hodge/DegreeOneSlope.lean`. Its theorem
+`pureType_of_zero_or_one_slope` starts only after the upstream arithmetic
+argument has supplied the Hodge/Newton dimension equality. It remains
+SOURCE_DRAFT / NOT_RUN and therefore supplies no filtered-Frobenius theorem by
+itself.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
