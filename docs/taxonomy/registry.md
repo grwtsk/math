@@ -9,7 +9,7 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | Label / canonical page | Persistent identifier |
 | --- | --- |
 | [Algebra](subjects/algebra/index.md) | `urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a` |
-| [Algebraic topology](subjects/topology/algebraic-topology/index.md) | `urn:uuid:488ac86e-75aa-43d6-8801-85f7981233ff` |
+| [Algebraic topology](subjects/topology/algebraic-topology/index.md) | `urn:uuid:488ac86e-75aa-43d0-a98d-17f305f6cad9` |
 | [Analysis](subjects/analysis/index.md) | `urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9` |
 | [Chromatic polynomial theory (finite simple graphs)](subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/chromatic-polynomials/index.md) | `urn:uuid:1f0d03cb-9777-4213-ac8c-b5d04a6d46ee` |
 | [Combinatorics](subjects/combinatorics/index.md) | `urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b` |
