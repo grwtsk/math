@@ -1,0 +1,42 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-signed-abel-subprobability-kernel-503-v0.1"
+owner_repository = "grwtsk/math"
+issue = 503
+parent_issue = 499
+parent_pr = 501
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelSubprobabilityKernel"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelSubprobabilityKernel"
+
+[source_binding]
+stacked_parent_revision = "0f0a0012e15dac1b81dbda4cd4e57d218ba0243e"
+candidate_branch = "research/rh-signed-abel-subprobability-503-20261021"
+theorem_source_commit = "0995a42ca9dae42370dc3db3b03ddc25ee68085c"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelSubprobabilityKernel.lean"
+theorem_source_git_blob = "055e215cc65b3c78fccf702fe6cb9733334fcd97"
+
+[selected_increment]
+kernel = "normalizedSignedAbelShiftKernel"
+kernel_mass = "normalizedSignedAbelShiftKernelMass"
+mass_identity = "normalizedSignedAbelShiftKernelMass_eq_scaledWeightMass"
+subprobability = "normalizedSignedAbelShiftKernelMass_le_one"
+convolution = "normalizedSignedAbelDepthShiftResponse_eq_kernelSum"
+autocorrelation = "weightedMertensDyadicSignedAbelDepthSlice_eq_kernelAutocorrelation"
+proof_classification = "EXACT_FINITE_POSITIVE_KERNEL_IDENTIFICATION"
+next_obstruction = "weighted autocorrelation estimate or exact Fourier/dispersion comparison"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+weighted_autocorrelation_estimate_proved = false
+mixing_proved = false
+independence_proved = false
+spectral_gap_proved = false
+chowla_proved = false
+riemann_hypothesis_proved = false
