@@ -13,8 +13,11 @@ Formalization assistance: OpenAI.
 -/
 import GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount
 import GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel
+import GRWTSK.GeometryOfNumbers.PrimitiveLinearUnimodularFrame
+import GRWTSK.GeometryOfNumbers.PrimitiveLinearScaledArea
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput
 import GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls
+import GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearFrameControls
 
 set_option autoImplicit false
 
@@ -22,12 +25,19 @@ set_option autoImplicit false
 # Isolated primitive linear-lattice foundation
 
 This source-only root exposes the exact finite primitive count, anisotropic
-normalization, primitive coefficient kernel, and the adapter from the abc
-geometry linearization.  It is intentionally not imported by `GRWTSK.lean`.
+normalization, primitive coefficient kernel, explicit unimodular integer
+frame, exact box-scaled cross product and area formula, and the adapter from
+the abc geometry linearization.  It is intentionally not imported by
+`GRWTSK.lean`.
 
-The absolute-constant Heath--Brown finite lattice-point inequality, its
-covolume estimate, reduced-basis argument, primitive-ray payment, divisor-fibre
-lifting, and Proposition 4.1 remain open.
+The frame now supplies determinant `-1` and the exact lower normalization
+
+`max(aX,bY,cZ)/(XYZ) ≤ scaledArea`.
+
+The absolute-constant Heath--Brown finite lattice-point inequality, the
+identification with Mathlib's `ZLattice.covolume`, reduced-basis or
+successive-minima argument, primitive-ray payment, divisor-fibre lifting,
+and Proposition 4.1 remain open.
 
 SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 FINITE_LATTICE_THEOREM_OPEN.
