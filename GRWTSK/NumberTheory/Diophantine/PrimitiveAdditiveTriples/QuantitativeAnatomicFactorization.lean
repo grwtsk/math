@@ -17,6 +17,7 @@ compression of the high-valuation layers.
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExactAnatomicFactorization
 import Mathlib.Analysis.SpecialFunctions.Log.Base
 import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
+import Mathlib.Algebra.Order.Floor.Semifield
 import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
 import Mathlib.Order.CompletePartialOrder
@@ -157,8 +158,8 @@ private theorem hK_pos : 0 < K := by
   exact inv_pos.mpr hε_pos
 
 private theorem two_lt_K : 2 < K := by
-  rw [K, Nat.lt_ceil]
-  simp [two_lt_eps_inv]
+  change 2 < ⌈ε⁻¹⌉₊
+  exact (Nat.lt_ceil).2 two_lt_eps_inv
 
 private theorem K_inv_le_eps : (K : ℝ)⁻¹ ≤ ε := by
   rw [inv_le_iff_one_le_mul₀]
@@ -316,7 +317,7 @@ private theorem prod_y_large_le_X_pow :
         (∏ m ∈ Finset.Ioc d n, y m ^ m : ℝ) ^ (d⁻¹ : ℝ) := by
       rw [← Real.finsetProd_rpow]
       · push_cast
-        apply Finset.prod_le_prod₀
+        apply Finset.prod_le_prod
         · intro i hi
           positivity
         · simp only [Finset.mem_Ioc, and_imp]
@@ -337,10 +338,12 @@ private theorem prod_y_large_le_X_pow :
       conv_rhs => rw [← prod_y_pow_eq_n]
       apply Finset.prod_le_prod_of_subset_of_one_le
       · exact Finset.subset_union_right
-      simp only [Finset.mem_union, Finset.mem_Icc]
-      intro i hi _
-      apply Nat.one_le_pow
-      exact (hy_pos _)
+      · intro i hi
+        positivity
+      · simp only [Finset.mem_union, Finset.mem_Icc]
+        intro i hi _
+        apply Nat.one_le_pow
+        exact (hy_pos _)
     _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by
       gcongr
       exact_mod_cast hnX
@@ -350,7 +353,7 @@ private theorem c_le_X_pow : c ≤ (X : ℝ) ^ ε := by
     (c : ℝ) ≤ ∏ m ∈ Finset.Ioc d n, (y m : ℝ) ^ K := by
       simp_rw [c]
       push_cast
-      apply Finset.prod_le_prod₀
+      apply Finset.prod_le_prod
       · intro i hi
         positivity
       · simp only [Finset.mem_Ioc, and_imp]
@@ -435,7 +438,8 @@ theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by
         gcongr with i hi
         rw [← Real.rpow_natCast_mul, ← Real.rpow_natCast]
         · gcongr
-          · exact_mod_cast (hy_pos _).le
+          · simp only [Nat.one_le_cast]
+            exact Nat.succ_le_iff.mpr (hy_pos i)
           · rw [← Nat.floor_div_eq_div (K := ℝ), div_eq_mul_inv]
             apply Nat.floor_le
             positivity
@@ -448,20 +452,22 @@ theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by
         · simp
         · positivity
       · simp only [disjoint_singleton_left, mem_Ioc, not_and, not_le]
-        intro h
-        linarith
+        intro hdK
+        exact ((not_lt_of_ge hKd.le) hdK).elim
     _ ≤ (∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m ^ m) ^
         (K⁻¹ : ℝ) := by
       gcongr
-      · intro i hi
-        positivity
+      · intros
+        apply Nat.add_one_le_of_lt
+        simp [hy_pos]
       · intro i
-        simp +contextual [hKd.le, hK_pos]
+        simp +contextual [hKd.le, Nat.add_one_le_iff.eq ▸ hK_pos]
     _ = (n : ℝ) ^ (K⁻¹ : ℝ) := by
       congr
       rw [prod_y_pow_eq_n]
     _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
       gcongr
+      exact_mod_cast hnX
     _ ≤ (X : ℝ) ^ ε := by
       exact Real.rpow_le_rpow_of_exponent_le
         (by exact_mod_cast h1n.trans hnX) K_inv_le_eps
@@ -529,7 +535,7 @@ private theorem X_pow_mul_prod_le_radical :
         Fin.prod_univ_eq_prod_range
           (fun j ↦ if j + 1 ≠ K then y (j + 1) else 1) d]
     _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
-      apply Finset.prod_le_prod_of_subset_of_one_le₀
+      apply Finset.prod_le_prod_of_subset_of_one_le
       · exact Finset.filter_subset _ _
       · intro i hi
         positivity
@@ -546,7 +552,7 @@ private theorem X_pow_mul_prod_le_radical :
         simp [h1d]
       simp [← hmap, Finset.prod_map]
     _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
-      apply Finset.prod_le_prod_of_subset_of_one_le₀
+      apply Finset.prod_le_prod_of_subset_of_one_le
       · exact Finset.subset_union_left
       · intro i hi
         positivity
