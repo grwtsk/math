@@ -11,31 +11,22 @@ set_option autoImplicit false
 /-!
 # Finite local removal for the canonical zeta rectangle
 
-The maintained argument-principle path has one qualitative analytic obligation:
-extend
+This file reduces the remaining global regularization obligation to one local
+analytic germ at each member of the finite `singularHead N`.
+
+The raw remainder
 
   logDeriv riemannZeta - rectanglePrincipalPart N
 
-through the finite set `singularHead N`. This file separates the genuinely local
-work from the finite gluing work.
+is proved analytic at every closed-rectangle point outside the complete source
+singularity head. The generic finite-patching theorem then turns punctured local
+germs at the singular points into one `RectangleRegularExtension`; boundary
+compatibility is automatic because every germ agrees with the same raw source.
 
-First, the raw remainder is proved analytic at every point of the closed
-rectangle outside `singularHead N`. This uses the exact zero/pole inventory of
-the admissible rectangle; no sampled nonvanishing assertion is introduced.
-Second, the generic finite-patching theorem turns one analytic punctured germ at
-each member of `singularHead N` into a single `RectangleRegularExtension`.
-Hence no compatibility conditions between distinct local choices are needed:
-finiteness provides disjoint neighborhoods, and every germ agrees with the same
-raw source away from its center.
-
-The file also derives the missing simple-trivial-zero logarithmic principal part
-and records that every singular point already has a source-determined local
-coefficient: canonical multiplicity, one, or minus one. What remains is the
-finite algebra showing that, after the matching term is removed from the fixed
-complete principal part, the selected local germ is the raw rectangle remainder.
-
-No local-removal family, rational count enclosure, numerical source acceptance,
-RH result, or prime theorem is constructed here.
+The missing simple-trivial-zero logarithmic principal part is also derived from
+the actual zeta derivative and analytic order. No local-removal family, rational
+count enclosure, numerical source acceptance, RH result, or prime theorem is
+assumed or constructed here.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 
@@ -73,8 +64,7 @@ theorem mem_closedRectangle_iff (N : ℕ) (s : ℂ) :
   simp [closedRectangle, uIcc_of_le hleft, uIcc_of_le hheight,
     and_assoc]
 
-/-- Every point of the closed rectangle lies either in its strict interior or
-on the maintained boundary. -/
+/-- Every closed-rectangle point is either strict interior or boundary. -/
 theorem mem_interior_or_boundary_of_mem_closedRectangle
     (N : ℕ) {s : ℂ} (hs : s ∈ closedRectangle N) :
     s ∈ interior N ∨ s ∈ boundary N := by
@@ -84,18 +74,15 @@ theorem mem_interior_or_boundary_of_mem_closedRectangle
   · by_cases hRi : s.re < 2
     · by_cases hHi : |s.im| < contourHeight N
       · exact Or.inl ⟨hLi, hRi, hHi⟩
-      · right
-        exact ⟨hL, hR, hAbs, Or.inr (Or.inr
+      · exact Or.inr ⟨hL, hR, hAbs, Or.inr (Or.inr
           (le_antisymm hAbs (le_of_not_gt hHi)))⟩
-    · right
-      exact ⟨hL, hR, hAbs, Or.inr (Or.inl
+    · exact Or.inr ⟨hL, hR, hAbs, Or.inr (Or.inl
         (le_antisymm (le_of_not_gt hRi) hR))⟩
-  · right
-    exact ⟨hL, hR, hAbs, Or.inl
+  · exact Or.inr ⟨hL, hR, hAbs, Or.inl
       (le_antisymm hL (le_of_not_gt hLi))⟩
 
-/-- Any actual zero or the pole in the closed rectangle belongs to the complete
-finite singular head. -/
+/-- Any zero or the pole in the closed rectangle belongs to the complete finite
+singularity head. -/
 theorem mem_singularHead_of_mem_closedRectangle_of_zero_or_pole
     (N : ℕ) {s : ℂ} (hs : s ∈ closedRectangle N)
     (singular : s = 1 ∨ riemannZeta s = 0) :
@@ -122,7 +109,7 @@ theorem ne_one_of_not_mem_singularHead
   exact hnot (Finset.mem_insert_self _ _)
 
 /-- The nontrivial-zero principal-part sum is analytic away from the complete
-singular head. -/
+singularity head. -/
 theorem nontrivialPrincipalPart_analyticAt_of_not_mem
     (N : ℕ) {s : ℂ} (hnot : s ∉ singularHead N) :
     AnalyticAt ℂ (nontrivialPrincipalPart N) s := by
@@ -140,7 +127,7 @@ theorem nontrivialPrincipalPart_analyticAt_of_not_mem
     (sub_ne_zero.mpr hne)
 
 /-- The finite trivial-zero principal-part sum is analytic away from the complete
-singular head. -/
+singularity head. -/
 theorem trivialPrincipalPart_analyticAt_of_not_mem
     (N : ℕ) {s : ℂ} (hnot : s ∉ singularHead N) :
     AnalyticAt ℂ (trivialPrincipalPart N) s := by
@@ -163,9 +150,10 @@ theorem polePrincipalPart_analyticAt_of_not_mem
     (N : ℕ) {s : ℂ} (hnot : s ∉ singularHead N) :
     AnalyticAt ℂ polePrincipalPart s := by
   have hne := ne_one_of_not_mem_singularHead N hnot
-  have h := analyticAt_const.div (analyticAt_id.sub analyticAt_const)
-    (sub_ne_zero.mpr hne)
-  simpa [polePrincipalPart, neg_div, one_div] using h.neg
+  have h : AnalyticAt ℂ (fun w : ℂ => (-1 : ℂ) / (w - 1)) s :=
+    analyticAt_const.div (analyticAt_id.sub analyticAt_const)
+      (sub_ne_zero.mpr hne)
+  simpa [polePrincipalPart, neg_div, one_div] using h
 
 /-- The complete fixed principal part is analytic at every nonsingular point. -/
 theorem rectanglePrincipalPart_analyticAt_of_not_mem
@@ -192,12 +180,12 @@ theorem rawRectangleRegularPart_analyticAt_of_not_mem
   unfold rawRectangleRegularPart
   exact hlog.sub (rectanglePrincipalPart_analyticAt_of_not_mem N hnot)
 
-/-- At a simple negative-even zero, the logarithmic derivative has the expected
-unit principal part and an analytic regular germ. -/
+/-- At a simple negative-even zero, the logarithmic derivative has a unit
+principal part and an analytic regular germ. -/
 theorem trivial_zero_principal_part (k : ℕ) :
     ∃ A : ℂ → ℂ, AnalyticAt ℂ A (trivialPoint k) ∧
-      logDeriv riemannZeta =ᶠ[𝓝[≠] (trivialPoint k)]
-        fun s => 1 / (s - trivialPoint k) + A s := by
+      (logDeriv riemannZeta =ᶠ[𝓝[≠] (trivialPoint k)]
+        fun s => 1 / (s - trivialPoint k) + A s) := by
   have hne : trivialPoint k ≠ 1 := by
     intro same
     have hn := trivialPoint_re_neg k
@@ -218,34 +206,7 @@ theorem trivial_zero_principal_part (k : ℕ) :
     hg hg0 hfactor'
   exact ⟨logDeriv g, hp.1, by simpa using hp.2⟩
 
-/-- Every member of the finite singular head has a source-derived local
-logarithmic coefficient and analytic regular germ. The three alternatives retain
-the exact source identity of the point. -/
-theorem singular_point_principal_part (N : ℕ) (a : ℂ)
-    (ha : a ∈ singularHead N) :
-    ∃ c : ℂ, ∃ A : ℂ → ℂ, AnalyticAt ℂ A a ∧
-      logDeriv riemannZeta =ᶠ[𝓝[≠] a]
-        fun s => c / (s - a) + A s ∧
-      ((a = 1 ∧ c = -1) ∨
-        (∃ z : ZeroPoint, z ∈ heightHead (contourHeight N) ∧
-          a = z.1 ∧ c = (multiplicity z : ℂ)) ∨
-        (∃ k ∈ Finset.range N, a = trivialPoint k ∧ c = 1)) := by
-  classical
-  rcases Finset.mem_insert.mp ha with rfl | ha
-  · obtain ⟨hA, hpart⟩ := zeta_pole_principal_part
-    exact ⟨-1, logDeriv riemannZeta₁, hA, hpart,
-      Or.inl ⟨rfl, rfl⟩⟩
-  rcases Finset.mem_union.mp ha with ha | ha
-  · obtain ⟨z, hz, rfl⟩ := Finset.mem_image.mp ha
-    obtain ⟨A, hA, hpart⟩ := canonical_zero_principal_part z
-    exact ⟨multiplicity z, A, hA, hpart,
-      Or.inr (Or.inl ⟨z, hz, rfl, rfl⟩)⟩
-  · obtain ⟨k, hk, rfl⟩ := Finset.mem_image.mp ha
-    obtain ⟨A, hA, hpart⟩ := trivial_zero_principal_part k
-    exact ⟨1, A, hA, hpart,
-      Or.inr (Or.inr ⟨k, hk, rfl, rfl⟩)⟩
-
-/-- The exact remaining local data: one analytic germ of the RAW remainder at
+/-- The exact remaining local input: one analytic germ of the RAW remainder at
 each member of the finite singular head. -/
 abbrev RectangleLocalRemovalData (N : ℕ) :=
   LocalRemovalData (rawRectangleRegularPart N) (singularHead N)
@@ -258,11 +219,9 @@ theorem openRectangle_subset_closedRectangle (N : ℕ) :
   intro s hs
   rcases (CanonicalRectanglePrincipalPartWinding.mem_openRectangle_iff N s).mp hs with
     ⟨hL, hR, hB, hT⟩
-  apply (mem_closedRectangle_iff N s).mpr
-  exact ⟨hL.le, hR.le, hB.le, hT.le⟩
+  exact (mem_closedRectangle_iff N s).mpr ⟨hL.le, hR.le, hB.le, hT.le⟩
 
-/-- Finite local removable germs construct the previously required global
-regular rectangle extension. -/
+/-- Finite local removable germs construct the global regular rectangle extension. -/
 noncomputable def toRegularExtension {N : ℕ}
     (data : RectangleLocalRemovalData N) :
     RectangleRegularExtension N where
@@ -273,21 +232,19 @@ noncomputable def toRegularExtension {N : ℕ}
     (fun z hz hnot => rawRectangleRegularPart_analyticAt_of_not_mem N
       (openRectangle_subset_closedRectangle N hz) hnot)
   punctured_agreement := by
-    intro s hs hnot
+    intro s _ hnot
     rw [data.filled_eq_raw hnot]
     unfold rawRectangleRegularPart
     ring
 
-/-- The global normalized argument-principle identity now consumes only finite
-local removable germs; no separate compatibility or boundary equation remains. -/
+/-- The normalized argument-principle identity consumes only finite local germs. -/
 theorem normalizedRectangleIndex_eq_expected {N : ℕ}
     (data : RectangleLocalRemovalData N) :
     normalizedRectangleIndex N = (expectedRectangleIndex N : ℂ) :=
   CanonicalRectangleArgumentPrinciple.normalizedRectangleIndex_eq_expected
     data.toRegularExtension
 
-/-- A source-correct rational interval may be attached immediately after the
-finite local removals are supplied. -/
+/-- Attach a source-correct rational interval after local removals are supplied. -/
 noncomputable def toCanonicalRectangleIndexEnclosure {N : ℕ}
     (data : RectangleLocalRemovalData N)
     (interval : RationalPositiveHeightCountIsolation.RationalCountInterval)
@@ -297,11 +254,6 @@ noncomputable def toCanonicalRectangleIndexEnclosure {N : ℕ}
     data.toRegularExtension interval containsExpected
 
 end RectangleLocalRemovalData
-
-/-- Local logarithmic coefficients alone are not yet the raw remainder germs:
-the matching term must also be removed from the COMPLETE fixed principal part. -/
-theorem local_coefficient_not_global_removal_fixture (c p A : ℂ) :
-    (c + A) - (c + p) = A - p := by ring
 
 end
 
