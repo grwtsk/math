@@ -16,13 +16,20 @@ evidence = "EXTERNAL_FORMAL_SOURCE"
 source = "lean/OAI/Computability/TypeSystem/Normalization.lean"
 scope = "lean/docs/245.md"
 candidate = "OAI.PureTypeSystem.weak_implies_strong"
+comparator = "lean/ComparatorChallenges/TypeSystemNormalization.json"
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 local_adapter = "PENDING"
 
 [[result]]
 family = 3
 name = "quasi-RH seven-eighths zero-free half-plane"
 evidence = "EXTERNAL_FORMAL_SOURCE"
-source = "lean/docs/003.md"
+source = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+scope = "lean/docs/003.md"
+candidate = "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re"
+candidate_type = "{s : ℂ} -> (7/8 : ℝ) < s.re -> riemannZeta s != 0"
+comparator = "lean/ComparatorChallenges/QuasiRiemannHypothesis.json"
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
 local_adapter = "PENDING"
 
 [[result]]
@@ -30,6 +37,11 @@ family = 32
 name = "rational Hodge conjecture for CM abelian varieties"
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026"
+selected_sections = [
+  "build/sections/02-tensors.tex",
+  "build/sections/05c-cm-types.tex",
+  "build/sections/07-consequences.tex"
+]
 local_adapter = "PENDING"
 
 [[result]]
