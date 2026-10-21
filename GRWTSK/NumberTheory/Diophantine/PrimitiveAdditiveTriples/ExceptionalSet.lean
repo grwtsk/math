@@ -12,6 +12,19 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
 def exceptionalSet (ε : ℝ) : Set PrimitiveAdditiveTriple :=
   {t | Real.rpow (t.radical : ℝ) (1 + ε) < (t.c : ℝ)}
 
+/-- For positive `ε`, the coefficient-one exceptional set is exactly the
+paper-normalized exponent-exceptional set at `λ = (1 + ε)⁻¹`. -/
+theorem exceptionalSet_eq_exponentExceptionalSet (ε : ℝ) (hε : 0 < ε) :
+    exceptionalSet ε = exponentExceptionalSet ((1 + ε)⁻¹) := by
+  ext t
+  have hλ : 0 < (1 + ε)⁻¹ := inv_pos.mpr (by linarith)
+  change
+    Real.rpow (t.radical : ℝ) (1 + ε) < (t.c : ℝ) ↔
+      (t.radical : ℝ) < Real.rpow (t.c : ℝ) ((1 + ε)⁻¹)
+  rw [t.power_lt_height_iff_quality ε,
+    t.radical_lt_height_rpow_iff_quality ((1 + ε)⁻¹) hλ,
+    inv_inv]
+
 /-- The coefficient-one bound has only finitely many exceptions for every
 positive epsilon. The quantifier over epsilon is indispensable. -/
 def ABCFiniteExceptions : Prop :=
