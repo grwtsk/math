@@ -1,7 +1,6 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.NumberTheory.Zeta.Riemann.OpenAISevenEighthsPort
 import Mathlib.Algebra.FreeAbelianGroup.Finsupp
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Data.Nat.Prime.Basic
@@ -12,29 +11,22 @@ set_option autoImplicit false
 noncomputable section
 
 /-!
-# Arithmetic scale bijection and zero-free-half-plane witnesses
+# PNT-free arithmetic logarithmic and p-adic scale coordinates
 
-The common arithmetic carrier of logarithmic and `p`-adic scaling is the free
-abelian group of prime labels.  Its canonical coordinate realization is the
-finitely supported family of integer prime exponents.  The Archimedean
-realization sends the `p`-coordinate `n` to `n * log p`; its local realization
-reads the `p`-coordinate in `ℤ`.
+The common arithmetic carrier is the free abelian group on prime labels.  Its
+canonical coordinate realization is the finitely supported family of integer
+prime exponents.  A selected `p`-coordinate is a split projection; the complete
+all-prime family is the additive equivalence.
 
-The complete family of local coordinates is additively equivalent to the
-arithmetic logarithmic scale.  A single local coordinate is only a split
-projection, not a bijection.
+This module contains only the arithmetic coordinate layer.  It is deliberately
+independent of external-theorem admission, zeta nonvanishing, detector
+certificates, Weil forms, and quartic extraction.  In particular, its
+bijectivity is not a theorem-acceptance criterion.
 
-The second half of the module pairs this exact scale equivalence with the
-already isolated zeta half-plane consumers.  The scale equivalence and the
-analytic theorem fields remain logically independent.  In particular, neither
-this bijection nor an accepted theorem at `7/8` moves the threshold to `1/2`.
-A separately proved tightening supplier is required.
+The Archimedean realization is the finite sum `Σ_p n_p log p`.  No
+prime-counting asymptotic or prime-number-theorem result is used.
 
-This construction uses finite support and exact additive algebra.  It uses no
-prime-counting asymptotic and no prime number theorem.
-
-SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXTERNAL_PORT_BLOCKED /
-WEIL_TIGHTENING_NOT_CONSTRUCTED.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
 
 namespace GRWTSK.ArithmeticScale
@@ -51,12 +43,12 @@ abbrev ArithmeticLogScale := FreeAbelianGroup PrimeIndex
 /-- The complete finitely supported family of local `p`-adic scale exponents. -/
 abbrev PAdicScaleFamily := PrimeExponentLattice
 
-/-- The canonical all-prime additive equivalence.  This is the bijective
-witness; one selected coordinate is only a projection. -/
+/-- The canonical all-prime additive equivalence. -/
 def logarithmicToPAdicFamily : ArithmeticLogScale ≃+ PAdicScaleFamily :=
   FreeAbelianGroup.equivFinsupp PrimeIndex
 
-/-- The all-prime scale map is bijective. -/
+/-- The all-prime scale map is bijective.  This is an arithmetic coordinate
+theorem, not an external-proof admission rule. -/
 theorem logarithmicToPAdicFamily_bijective :
     Function.Bijective
       (logarithmicToPAdicFamily : ArithmeticLogScale → PAdicScaleFamily) :=
@@ -143,8 +135,7 @@ def archimedeanBasisHom (p : PrimeIndex) : ℤ →+ ℝ where
     simp [add_mul]
 
 /-- Finite Archimedean realization `Σ_p n_p log p` of the common exponent
-lattice.  Injectivity of this real-valued map is deliberately not used by the
-zero-free witnesses below. -/
+lattice.  Injectivity of this real-valued map is deliberately not used. -/
 def archimedeanLogRealization : ArithmeticLogScale →+ ℝ :=
   (Finsupp.liftAddHom fun p => archimedeanBasisHom p).comp
     logarithmicToPAdicFamily.toAddMonoidHom
@@ -171,94 +162,3 @@ theorem archimedeanLogRealization_pPrimaryEmbedding
   rfl
 
 end GRWTSK.ArithmeticScale
-
-namespace GRWTSK.RiemannHypothesis
-
-open GRWTSK.ArithmeticScale
-
-/-- A typed pair of independent equivalences:
-
-* the all-prime arithmetic scale equivalence; and
-* an exact equivalence between a raw zero-free half-plane consumer and its
-  stated conclusion.
-
-The first field cannot construct the second. -/
-structure ScaleIndexedIffWitness (σ : ℝ) (Conclusion : Prop) where
-  scaleEquiv : ArithmeticLogScale ≃+ PAdicScaleFamily
-  consumerIff : RiemannZetaZeroFreeRightHalfPlane σ ↔ Conclusion
-
-/-- At the critical threshold, the existing raw nonvanishing consumer is
-exactly canonical RH, paired with the independent arithmetic scale bijection. -/
-def rawHalfPlaneRHBijectiveWitness :
-    ScaleIndexedIffWitness (1 / 2 : ℝ) _root_.RiemannHypothesis where
-  scaleEquiv := logarithmicToPAdicFamily
-  consumerIff :=
-    riemannZetaZeroFreeRightHalfPlane_half_iff_riemannHypothesis
-
-/-- Projection of the critical witness to its arithmetic bijection. -/
-theorem rawHalfPlaneRHBijectiveWitness_scale_bijective :
-    Function.Bijective
-      (rawHalfPlaneRHBijectiveWitness.scaleEquiv :
-        ArithmeticLogScale → PAdicScaleFamily) :=
-  rawHalfPlaneRHBijectiveWitness.scaleEquiv.bijective
-
-/-- Projection of the critical witness to its analytic equivalence. -/
-theorem rawHalfPlaneRHBijectiveWitness_consumer :
-    RiemannZetaZeroFreeRightHalfPlane (1 / 2 : ℝ) ↔
-      _root_.RiemannHypothesis :=
-  rawHalfPlaneRHBijectiveWitness.consumerIff
-
-/-- A regional theorem paired with the same arithmetic scale equivalence and an
-explicit proof that its threshold lies strictly right of the critical line. -/
-structure ScaleIndexedRegionalWitness (σ : ℝ) where
-  scaleEquiv : ArithmeticLogScale ≃+ PAdicScaleFamily
-  zeroFree : RiemannZetaZeroFreeRightHalfPlane σ
-  strictRightOfCritical : (1 / 2 : ℝ) < σ
-
-namespace AcceptedExternalRawHalfPlanePort
-
-/-- A future fully admitted seven-eighths port produces only a regional
-scale-indexed witness.  The current pinned review does not produce such a port. -/
-def toSevenEighthsScaleIndexedRegionalWitness
-    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
-    ScaleIndexedRegionalWitness ((7 : ℝ) / 8) where
-  scaleEquiv := logarithmicToPAdicFamily
-  zeroFree := port.theorem
-  strictRightOfCritical := half_lt_sevenEighths
-
-end AcceptedExternalRawHalfPlanePort
-
-/-- The exact additional supplier required to tighten a regional zero-free
-statement to the RH-equivalent critical consumer.
-
-This structure does not assert its positivity proposition and does not build
-the implication.  Those are the substantive obligations of a future Weil
-positive-screw construction and its source/trust audit. -/
-structure WeilPositiveScrewTightening (σ : ℝ) where
-  positiveScrewStatement : Prop
-  regionalToCritical :
-    positiveScrewStatement →
-      RiemannZetaZeroFreeRightHalfPlane σ →
-        RiemannZetaZeroFreeRightHalfPlane (1 / 2 : ℝ)
-
-/-- A regional witness reaches the raw critical consumer only after both an
-actual tightening supplier and its positivity premise are supplied. -/
-theorem ScaleIndexedRegionalWitness.toCriticalRaw
-    {σ : ℝ} (regional : ScaleIndexedRegionalWitness σ)
-    (tightening : WeilPositiveScrewTightening σ)
-    (hpositive : tightening.positiveScrewStatement) :
-    RiemannZetaZeroFreeRightHalfPlane (1 / 2 : ℝ) :=
-  tightening.regionalToCritical hpositive regional.zeroFree
-
-/-- Conditional terminal composition: regional theorem plus a proved Weil
-positive-screw tightening implication yields canonical RH through the already
-isolated critical consumer. -/
-theorem ScaleIndexedRegionalWitness.toRiemannHypothesis
-    {σ : ℝ} (regional : ScaleIndexedRegionalWitness σ)
-    (tightening : WeilPositiveScrewTightening σ)
-    (hpositive : tightening.positiveScrewStatement) :
-    _root_.RiemannHypothesis :=
-  riemannZetaZeroFreeRightHalfPlane_half_iff_riemannHypothesis.mp
-    (regional.toCriticalRaw tightening hpositive)
-
-end GRWTSK.RiemannHypothesis
