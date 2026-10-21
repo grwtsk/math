@@ -168,13 +168,8 @@ This finite control does not assert the existence of any zeta packet. -/
 theorem duplicate_signed_label_not_equiv_fixture :
     ¬ Function.Bijective (fun _i : Fin 2 => (Sum.inl (0 : Fin 1) : Sum (Fin 1) (Fin 1))) := by
   intro h
-  have surj := h.2 (Sum.inr (0 : Fin 1))
-  rcases surj with ⟨i, hi⟩
-  cases i using Fin.cases with
-  | zero => simp at hi
-  | succ i =>
-      fin_cases i
-      simp at hi
+  obtain ⟨i, hi⟩ := h.2 (Sum.inr (0 : Fin 1))
+  cases hi
 
 end
 
