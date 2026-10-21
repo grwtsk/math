@@ -185,9 +185,7 @@ private theorem explicitAdmissible_of_factorizations
   have hXc : X ≤ 2 * t.c := hmem.2.1
   have hrad_lt : (t.radical : ℝ) < (t.c : ℝ) ^ λ := hmem.2.2.1
   have hpow_le_rad : (t.c : ℝ) ^ λ ≤ 2 * (t.radical : ℝ) := hmem.2.2.2
-  have hXtwo : 2 ≤ X := t.two_le_c.trans htcX
   have hX_pos : 0 < X := by omega
-  have hX_one : (1 : ℝ) ≤ X := by exact_mod_cast (show 1 ≤ X by omega)
   have hscale_support :
       scaleProduct p ≤
         supportProduct xa * supportProduct xb * supportProduct xc := by
@@ -244,7 +242,8 @@ private theorem explicitAdmissible_of_factorizations
         push_cast
         ring
   have hhalf_c : (X : ℝ) / 2 ≤ t.c := by
-    exact_mod_cast (show X ≤ 2 * t.c from hXc)
+    have hXc_real : (X : ℝ) ≤ 2 * (t.c : ℝ) := by
+      exact_mod_cast hXc
     linarith
   have hpow_half : ((X : ℝ) / 2) ^ λ ≤ (t.c : ℝ) ^ λ := by
     exact Real.rpow_le_rpow (by positivity) hhalf_c hλ
@@ -384,8 +383,11 @@ theorem nStarTriples_subset_admissible_cover
           (htotalC ▸ carrierC_dvd_totalC p xc)
   have hq : q ∈ boxFinset p := by
     rw [mem_boxFinset]
-    exact ⟨hda, hdb, hdc, htotalA ▸ t.a_pos, htotalB ▸ t.b_pos,
-      htotalC ▸ t.c_pos, by simpa [htotalA, htotalB, htotalC] using t.sum_eq,
+    exact ⟨hda, hdb, hdc,
+      by simpa [htotalA] using t.a_pos,
+      by simpa [htotalB] using t.b_pos,
+      by simpa [htotalC] using t.c_pos,
+      by simpa [htotalA, htotalB, htotalC] using t.sum_eq,
       hprimitive⟩
   have hadmissible : ExplicitAdmissible λ ε X p := by
     apply explicitAdmissible_of_factorizations hλ ht p xa xb xc hda hdb hdc
