@@ -9,6 +9,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ThreePointVolumeQuarticExtraction
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialThreePointVolumePackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialPackingRecurrenceControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MechanismPackingRecurrenceRuleControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerArithmeticPackingCoordinateControls
 
 set_option autoImplicit false
 
