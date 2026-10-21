@@ -26,9 +26,10 @@ part, and proves that the sum of its coefficients is exactly
 It also splits the remaining global argument-principle task into two explicit
 interfaces:
 
-1. a regularization certificate, which extends the pole-subtracted remainder
-   through all interior singularities and decomposes the boundary integral;
-2. a purely geometric winding certificate for the finite principal part.
+1. a regularization certificate, whose regular function agrees with
+   `logDeriv zeta - principalPart` at every nonsingular rectangle point and
+   carries the resulting four-edge decomposition;
+2. a purely geometric winding certificate for the fixed finite principal part.
 
 Cauchy-Goursat then removes the regular remainder and yields the exact rectangle
 index. Neither interface is constructed here; no contour theorem, numerical
@@ -121,13 +122,16 @@ theorem rectangleResidueMass_eq_expected (N : ℕ) :
 
 /-- Global analytic regularization obligation.
 
-`boundary_decomposition` must be proved from an actual extension of
-`logDeriv zeta - rectanglePrincipalPart` through every singularity. It is not
-a numerical equality and it does not contain a zero count as metadata. -/
+The punctured agreement prevents an arbitrary analytic function or an asserted
+count equality from being used as the remainder. `boundary_decomposition` is the
+remaining finite interval-integral algebra needed to pass that pointwise source
+identity to the committed four-edge functional. -/
 structure RectangleRegularizationCertificate (N : ℕ) where
   regular : ℂ → ℂ
   continuous : ContinuousOn regular (closedRectangle N)
   differentiable : DifferentiableOn ℂ regular (openRectangle N)
+  punctured_agreement : ∀ s ∈ closedRectangle N, s ∉ singularHead N →
+    logDeriv riemannZeta s = regular s + rectanglePrincipalPart N s
   boundary_decomposition :
     rectangleLogDerivativeIntegral N =
       rectangleBoundaryIntegral N regular +
