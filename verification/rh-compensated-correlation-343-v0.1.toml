@@ -16,9 +16,9 @@ lake_manifest_file = "lake-manifest.json"
 review_base_revision = "b93701ff07aca26a23b1bda3b663170bd60d5a6e"
 review_base_tree = "c6cafddd7f0c3e85ee2d3ad08c89177616cbe512"
 new_module_path = "GRWTSK/NumberTheory/Moebius/CompensatedCorrelationCriterion.lean"
-new_module_git_blob = "e5ae6ce99794ec52e0c7bff60a1b7df085bc4e33"
+new_module_git_blob = "d3f5a5a0dfedd6b35f021ee150b4042f66808f9b"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/compensated-correlation-criterion.md"
-mathematical_note_git_blob = "ba77ad2a737bebe1d155fd6461054ec66a701f42"
+mathematical_note_git_blob = "c4016fe16791e3137c1f1ed507157059db030b6b"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
 candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
 
@@ -49,9 +49,9 @@ reject_missing_generated_declarations = true
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Moebius.CompensatedCorrelationCriterion"
-authored_declaration_count = 24
+authored_declaration_count = 25
 definition_count = 6
-theorem_script_count = 18
+theorem_script_count = 19
 private_helper_count = 0
 
 [[inherited_targets]]
@@ -158,133 +158,140 @@ source_name = "sampleDiagonalBudget"
 visibility = "public"
 kind = "def"
 source_signature = "def sampleDiagonalBudget (σ : ℝ) : ℝ"
-source_signature_sha256 = "141187ac9f09ce313bd9188ae83b1c118273770639c6dadfa9355e13bb2554b3"
+source_signature_sha256 = "af7aad480b1122715dae00fe48ba27a3e3df834da1460c6134cc725d1b830055"
 
 [[declarations]]
 source_name = "CompensatedCorrelationBound"
 visibility = "public"
 kind = "def"
 source_signature = "def CompensatedCorrelationBound (σ : ℝ) : Prop"
-source_signature_sha256 = "d4dba4d8abb7bd46197d8ff1d8c2357412e28b6da539233c724026e2ec5b27b4"
+source_signature_sha256 = "ab1a0440f8bc21c8b0286f63452c33a52c677201d4d3dae0d148a0c3af0c9c93"
 
 [[declarations]]
 source_name = "ReciprocalCompensatedCorrelation"
 visibility = "public"
 kind = "def"
 source_signature = "def ReciprocalCompensatedCorrelation : Prop"
-source_signature_sha256 = "0bc4e0e00ef8d3ba7cf885c664b19b016f903a9264cd3fbd31fbc2e038a709c8"
+source_signature_sha256 = "4bca0f5a7a1dac7dc62cbc83b46c88dde7737b19948bcc4f01f948d774b1082d"
 
 [[declarations]]
 source_name = "sampleWeightedDiagonal_nonneg"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleWeightedDiagonal_nonneg (σ : ℝ) (N : ℕ) :\n    0 ≤ sampleWeightedDiagonal σ N"
-source_signature_sha256 = "e1f13f53908c812a376e61583b6b64550787d2a4f88777c55d087cbb3deabf1e"
+source_signature_sha256 = "4ea278ce8b0beb87b26a713b202eb862e1f2afa766b2ce4def0794957db4a259"
 
 [[declarations]]
 source_name = "sampleDiagonalMajorant_nonneg"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleDiagonalMajorant_nonneg (σ : ℝ) (k : ℕ) :\n    0 ≤ sampleDiagonalMajorant σ k"
-source_signature_sha256 = "bc99f71b0a312be836e12d431987e74f554b51b58ca8a8506242683513d6af22"
+source_signature_sha256 = "80252e69644d7d4332f93416d805488483ec1b77675fb13406859bc525df026a"
 
 [[declarations]]
 source_name = "sampleDiagonalMajorant_eq_rpow"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleDiagonalMajorant_eq_rpow (σ : ℝ) (k : ℕ) :\n    sampleDiagonalMajorant σ k =\n      (1 / 4 : ℝ) * (((k : ℝ) + 2) ^ (-(σ + 1)))"
-source_signature_sha256 = "bb263ecbb8d5e1e0c2ad14602c47572f13e7e6754f4f088993cd97f3597320f8"
+source_signature_sha256 = "a4b0b6be54721a9abb8db1e7917af72cdab31431b1332af9dc959234d08da553"
 
 [[declarations]]
 source_name = "summable_sampleDiagonalMajorant"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem summable_sampleDiagonalMajorant {σ : ℝ} (hσ : 0 < σ) :\n    Summable (sampleDiagonalMajorant σ)"
-source_signature_sha256 = "3f199a0b4f6ed21e95e26501f4db75523bbce79f897d3261a791ec3c442892c4"
+source_signature_sha256 = "2eab5ffb69ad2bf6513bcdd3456d4db96e6eec1b4abd308f69bf748a3bbfad7f"
 
 [[declarations]]
 source_name = "sampleDiagonalBudget_nonneg"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleDiagonalBudget_nonneg (σ : ℝ) :\n    0 ≤ sampleDiagonalBudget σ"
-source_signature_sha256 = "5da319934192232863993f0f86e65fd4b2bca31f33e6274c8d497006f5a4f986"
+source_signature_sha256 = "8c90c8ed372a25845da7cb3bb0e869878e5aa96b173fffa4b1085647561a3272"
 
 [[declarations]]
 source_name = "sampleWeightedDiagonal_le_budget"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleWeightedDiagonal_le_budget {σ : ℝ} (hσ : 0 < σ) (N : ℕ) :\n    sampleWeightedDiagonal σ N ≤ sampleDiagonalBudget σ"
-source_signature_sha256 = "b4c6797334f9fcc853a8bed28ab4215dc909076210b55b20d4f58ae29ed0d78f"
+source_signature_sha256 = "ec9d312d04ace19de4a957a5d931d447dfd9c3a47657504249ac8bf42b75d737"
 
 [[declarations]]
 source_name = "sampleCellMass_partial_sum_eq_compensated_add_diagonal"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleCellMass_partial_sum_eq_compensated_add_diagonal\n    {σ : ℝ} (hσ : σ ≠ 0) (N : ℕ) :\n    (∑ k ∈ Finset.range N, sampleCellMass σ k) =\n      (4 / σ) *\n        (sampleCompensatedCorrelation σ N +\n          sampleWeightedDiagonal σ N)"
-source_signature_sha256 = "3129bbc4bc33fcb79974191334e5a2cb4364eefecfb67bd913eab1a46c2cc29e"
+source_signature_sha256 = "035607d22c8e3cb3430b38900484c4f5e216be1e28535e5a4be5992d8b6ea9df"
 
 [[declarations]]
 source_name = "summable_cellMass_iff_compensatedCorrelationBound"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem summable_cellMass_iff_compensatedCorrelationBound\n    {σ : ℝ} (hσ : 0 < σ) :\n    Summable (sampleCellMass σ) ↔ CompensatedCorrelationBound σ"
-source_signature_sha256 = "9035aa16e0e7063f313cb9c4f90d42acddc95a4b053774db65eebf71a3dd6ef1"
+source_signature_sha256 = "31c62c27e915d0e007f749e3adc89b8e9c3d993e44218a71220edb870206e236"
 
 [[declarations]]
 source_name = "sampleCellMass_tsum_le_of_compensatedCorrelation"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleCellMass_tsum_le_of_compensatedCorrelation\n    {σ C : ℝ} (hσ : 0 < σ) (hC : 0 ≤ C)\n    (hbound : ∀ N : ℕ, sampleCompensatedCorrelation σ N ≤ C) :\n    (∑' k : ℕ, sampleCellMass σ k) ≤\n      (4 / σ) * (C + sampleDiagonalBudget σ)"
-source_signature_sha256 = "fffa6ae5de1afefb44d313d708fc03b97d9ae7e2645bd307a4bebee42c4675d9"
+source_signature_sha256 = "1f525ba4703d53d85241bbedb043d1e3ccbab9f19feb6426817c10e417770af1"
 
 [[declarations]]
 source_name = "actual_energy_le_of_compensatedCorrelation"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem actual_energy_le_of_compensatedCorrelation\n    {σ C : ℝ} (hσ : 0 < σ) (hC : 0 ≤ C)\n    (hbound : ∀ N : ℕ, sampleCompensatedCorrelation σ N ≤ C) :\n    (∫ u in Ici (0 : ℝ),\n      Real.exp (-σ * u) * wholePickup u ^ 2) ≤\n      (8 / σ) * (C + sampleDiagonalBudget σ) +\n        2 / (σ + 1)"
-source_signature_sha256 = "dd4a528e68dcf13c64f30628b46ad3be5906e2732bfb9746a02056958a72c1ed"
+source_signature_sha256 = "93b6ce40d70faaf976e15d670910adb5002ea1d9aa1bf592da85107278997dd4"
 
 [[declarations]]
 source_name = "abscissa_zero_iff_reciprocal_compensatedCorrelation"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem abscissa_zero_iff_reciprocal_compensatedCorrelation :\n    pickupEnergyAbscissa = 0 ↔\n      ReciprocalCompensatedCorrelation"
-source_signature_sha256 = "51235e88115e707d5588f74a8c6466e36b364e2cfe922b1e1e751326c29dff0e"
+source_signature_sha256 = "355d277cab642e6b54cefad092269436bd8911611b87be59c3bb427732e197e9"
 
 [[declarations]]
 source_name = "riemannHypothesis_of_reciprocal_compensatedCorrelation"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem riemannHypothesis_of_reciprocal_compensatedCorrelation\n    (hcorr : ReciprocalCompensatedCorrelation) :\n    _root_.RiemannHypothesis"
-source_signature_sha256 = "09bd661b9eb02a119d64c5848cf8c30f8ca8dcdd836f17c93e0cb44d3928cb08"
+source_signature_sha256 = "53b44a220d762260c53a246df18c368bf5dfc813ac3f35f795a09fd05d8b76e0"
 
 [[declarations]]
 source_name = "sampleResidue_eq_criticalEndpointDefect"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleResidue_eq_criticalEndpointDefect {n : ℕ} (hn : 1 ≤ n) :\n    sampleResidue n = criticalEndpointDefect n"
-source_signature_sha256 = "d359f0ace6a56b83ae4f8625cccf807d20f02ccb5552287ab5fb37a9a94b1b2f"
+source_signature_sha256 = "8a210e9ad57107c6dfb6da14b57e6c38abbfe9fa07785148fbb29624ab76b102"
 
 [[declarations]]
 source_name = "sampleCellMass_one_eq_endpointDefectEnergy"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem sampleCellMass_one_eq_endpointDefectEnergy (k : ℕ) :\n    sampleCellMass 1 k =\n      4 * criticalEndpointDefectEnergy (k + 1)"
-source_signature_sha256 = "df43ffb3e4911254b7b82e4f8ec90f617bb3a4d2ce19480d6a75e41b5d0e427b"
+source_signature_sha256 = "0daaa11a0bb066953343d115eff933a6e63dd62bedd360843042c5f0dd49abae"
 
 [[declarations]]
 source_name = "summable_sampleCellMass_one_iff_endpointDefectSummable"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem summable_sampleCellMass_one_iff_endpointDefectSummable :\n    Summable (sampleCellMass 1) ↔\n      CriticalEndpointDefectSummable"
-source_signature_sha256 = "6976870892659b31c9c5a68bc6d39a55f5f80f6763af6a0e819909a06d357be6"
+source_signature_sha256 = "8c98aa39313b9575049f0bda7b1bc2b08d1fc86fdf2f1ca6a4e8065b9f40b637"
 
 [[declarations]]
 source_name = "compensatedCorrelationBound_one_iff_criticalBoundary"
 visibility = "public"
 kind = "theorem"
 source_signature = "theorem compensatedCorrelationBound_one_iff_criticalBoundary :\n    CompensatedCorrelationBound 1 ↔\n      CriticalBoundaryVerticalLineUniform"
-source_signature_sha256 = "402713273a772216285affc1550c3c26a47d47a7d19f03bd23edb71f926e68fd"
+source_signature_sha256 = "c617b6d896d0983d8ff96e23f9b92e54fa8837983759fccc27ddba756adda37c"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_one_iff_mertensTransformSummable"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_one_iff_mertensTransformSummable :\n    CompensatedCorrelationBound 1 ↔\n      CriticalMertensTransformSummable"
+source_signature_sha256 = "c93b067f198e19ac5ac88f802dd146cdea6e542d353d1f5c27f02b1bc80f6da7"
 
 [[declarations]]
 source_name = "compensatedCorrelationBound_one_of_incrementMeanSquare"
