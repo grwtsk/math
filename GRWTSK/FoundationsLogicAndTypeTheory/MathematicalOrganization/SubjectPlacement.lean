@@ -127,12 +127,25 @@ structure PlacementPlan where
   conservativeRelations : MachineRelationsConservative decisions
   moveReady : ∀ d ∈ decisions, d.disposition = .move →
     MoveReady minimumScorePermille minimumMarginPermille d
+  /-- Repository-owned admissibility predicate for physical targets. It may encode
+  immutable archives, ignored prefixes, portability, or other placement policy. -/
+  targetAllowed : String → Prop
+  moveTargetsAllowed : ∀ d ∈ decisions, d.disposition = .move →
+    ∀ target, d.target = some target → targetAllowed target
   importRewriteSources : List SourceFileIdentity
   importRewriteCoversMoves : ∀ d ∈ decisions, d.disposition = .move →
     d.source ∈ importRewriteSources
   rollbackSources : List SourceFileIdentity
   rollbackCoversMoves : ∀ d ∈ decisions, d.disposition = .move →
     d.source ∈ rollbackSources
+
+/-- An accepted effect receipt requires a complete library-validation pass even
+when the plan contains no moves. The evidence itself remains external. -/
+structure PlacementReceipt where
+  plan : PlacementPlan
+  checkedRevision : String
+  validationPassed : Bool
+  validationEvidence : validationPassed = true
 
 /-- A classifier is productive only if at least one input can receive a move. -/
 def ClassifierProductive {α : Type} (classify : α → Disposition) : Prop :=
@@ -153,6 +166,13 @@ theorem PlacementPlan.hasNoDuplicateTargets (plan : PlacementPlan) :
     UniqueTargets plan.decisions :=
   plan.uniqueTargets
 
+/-- Every accepted move has a repository-admissible target. -/
+theorem PlacementPlan.allowsMoveTarget (plan : PlacementPlan)
+    (d : PlacementDecision) (hd : d ∈ plan.decisions)
+    (hmove : d.disposition = .move) (target : String)
+    (htarget : d.target = some target) : plan.targetAllowed target :=
+  plan.moveTargetsAllowed d hd hmove target htarget
+
 /-- No accepted machine plan can reinterpret relevance as implication. -/
 theorem PlacementPlan.noMachineImplication (plan : PlacementPlan)
     (d : PlacementDecision) (hd : d ∈ plan.decisions) : d.relation ≠ .implies := by
@@ -160,5 +180,10 @@ theorem PlacementPlan.noMachineImplication (plan : PlacementPlan)
   intro himplies
   rw [himplies] at h
   exact machineAssignable_not_implies h
+
+/-- A successful receipt cannot omit validation merely because no move occurred. -/
+theorem PlacementReceipt.requiresLibraryValidation (receipt : PlacementReceipt) :
+    receipt.validationPassed = true :=
+  receipt.validationEvidence
 
 end GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.SubjectPlacement
