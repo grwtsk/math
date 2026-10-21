@@ -16,8 +16,9 @@ compression of the high-valuation layers.
 -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExactAnatomicFactorization
 import Mathlib.Analysis.SpecialFunctions.Log.Base
+import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
+import Mathlib.Algebra.Order.Star.Real
 import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-import Mathlib.Data.Real.StarOrdered
 import Mathlib.Order.CompletePartialOrder
 import Mathlib.Tactic
 
@@ -88,7 +89,8 @@ private theorem prod_y_pow_eq_n_subset {s : Finset ℕ}
     ∏ m ∈ s, y m ^ m = n := by
   simp_rw [y, ExactAnatomicFactorization.multiplicityLayer]
   conv_rhs =>
-    rw [← Nat.prod_factorization_pow_eq_self (show n ≠ 0 by omega)]
+    rw [← Nat.prod_factorization_pow_eq_self
+    (Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n))]
   simp_rw [← Finset.prod_pow]
   rw [Nat.prod_factorization_eq_prod_primeFactors]
   convert Finset.prod_fiberwise_of_maps_to
@@ -150,8 +152,8 @@ private theorem two_lt_eps_inv : 2 < ε⁻¹ := by
   linarith only [hε]
 
 private theorem hK_pos : 0 < K := by
-  rw [K, Nat.ceil_pos]
-  simp [hε_pos]
+  rw [show K = ⌈ε⁻¹⌉₊ by rfl, Nat.ceil_pos]
+  exact inv_pos.mpr hε_pos
 
 private theorem two_lt_K : 2 < K := by
   rw [K, Nat.lt_ceil]
@@ -261,7 +263,8 @@ private theorem c_pos : 0 < c := by
   apply Finset.prod_pos
   simp only [Finset.mem_Ioc, and_imp]
   intro i _ _
-  exact pow_pos (hy_pos _)
+  apply pow_pos
+  exact hy_pos _
 
 private theorem nat_eq_fin_iff {n a : ℕ} {b : Fin n} [NeZero n] (ha : a < n) :
     Fin.ofNat n a = b ↔ a = b.val := by
@@ -372,8 +375,11 @@ noncomputable def KIndex : Fin d := Fin.ofNat d (K - 1)
 
 @[simp]
 private theorem KIndex_val_add_one : KIndex.val + 1 = K := by
-  have hlt : K - 1 < d := by omega
+  have hlt : K - 1 < d := by
+    have hk := hKd
+    omega
   simp [KIndex, Fin.ofNat, Nat.mod_eq_of_lt hlt]
+  have hk := hK_pos
   omega
 
 private theorem radical_le_X_pow_mul_prod :
@@ -410,9 +416,7 @@ private theorem radical_le_X_pow_mul_prod :
         · apply radical_dvd_self
 
 theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by
-  rw [x, ite_eq_left ?side]
-  case side =>
-    simp
+  rw [x, if_pos KIndex_val_add_one]
   simp only [KIndex_val_add_one, Nat.cast_mul, Nat.cast_prod,
     Nat.cast_pow, ge_iff_le]
   exact_mod_cast calc
@@ -473,7 +477,7 @@ private theorem X_pow_mul_prod_le_radical :
       · positivity
       · positivity
       · calc
-          (∏ j : Fin d, x j : ℝ) ≤
+          ((∏ j : Fin d, x j : ℕ) : ℝ) ≤
               (x KIndex : ℝ) *
                 ∏ j : Fin d, if j ≠ KIndex then x j else 1 := by
             norm_cast
@@ -487,7 +491,9 @@ private theorem X_pow_mul_prod_le_radical :
     _ = ∏ j : Fin d,
         if j.val ≠ K - 1 then y (j.val + 1) else 1 := by
       have hKIndex (j : Fin d) : j.val = K - 1 ↔ j = KIndex := by
-        have hlt : K - 1 < d := by omega
+        have hlt : K - 1 < d := by
+        have hk := hKd
+        omega
         constructor
         · intro hj
           ext
