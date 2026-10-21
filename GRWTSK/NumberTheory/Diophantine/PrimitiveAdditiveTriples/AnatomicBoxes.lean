@@ -109,8 +109,9 @@ def SupportPrimitive {d : ℕ} (p : Parameters d) (q : Point d) : Prop :=
 
 /-- The finite set counted by `B_d(a₀,b₀,c₀,A,B,C)`. Positivity is retained
 inside the filter so the projection to `PrimitiveAdditiveTriple` is total. -/
-noncomputable def boxFinset {d : ℕ} (p : Parameters d) : Finset (Point d) :=
-  ((dyadicTuples p.A) ×ˢ (dyadicTuples p.B) ×ˢ (dyadicTuples p.C)).filter
+noncomputable def boxFinset {d : ℕ} (p : Parameters d) : Finset (Point d) := by
+  classical
+  exact ((dyadicTuples p.A) ×ˢ (dyadicTuples p.B) ×ˢ (dyadicTuples p.C)).filter
     fun q ↦
       0 < p.totalA q.1 ∧
       0 < p.totalB q.2.1 ∧
@@ -176,7 +177,10 @@ theorem card_coveredTriples_le_sum_boxCard {d : ℕ}
     _ ≤ ∑ p ∈ s, boxCard p := by
       apply Finset.sum_le_sum
       intro p hp
-      exact (Finset.card_image_le.trans_eq (Finset.card_attach _)).trans_eq rfl
+      calc
+        ((boxFinset p).attach.image (boxToTriple p)).card ≤
+            (boxFinset p).attach.card := Finset.card_image_le
+        _ = boxCard p := by simp [boxCard]
 
 private theorem sum_le_card_mul_sup {ι : Type*} [DecidableEq ι]
     (f : ι → ℕ) (s : Finset ι) :
