@@ -9,7 +9,7 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | Label / canonical page | Persistent identifier |
 | --- | --- |
 | [Algebra](subjects/algebra/index.md) | `urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a` |
-| [Algebraic topology](subjects/topology/algebraic-topology/index.md) | `urn:uuid:488ac86e-75aa-43d0-a98d-17f305f6cad9` |
+| [Algebraic topology](subjects/topology/algebraic-topology/index.md) | `urn:uuid:488ac86e-75aa-43d6-8801-85f7981233ff` |
 | [Analysis](subjects/analysis/index.md) | `urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9` |
 | [Chromatic polynomial theory (finite simple graphs)](subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/chromatic-polynomials/index.md) | `urn:uuid:1f0d03cb-9777-4213-ac8c-b5d04a6d46ee` |
 | [Combinatorics](subjects/combinatorics/index.md) | `urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b` |
@@ -63,6 +63,7 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [History and education addition](proposals/new-concepts/history-education.md) | `urn:uuid:89c7adb8-6d37-40b8-8686-1e692b0960a0` |
 | [Logic, algebra and discrete additions](proposals/new-concepts/logic-algebra-discrete.md) | `urn:uuid:4411692c-0d6e-47b0-a68b-67fffcca577d` |
 | [Geometry and topology additions](proposals/new-concepts/geometry-topology.md) | `urn:uuid:d53e7304-a343-4241-be9f-9de4b2ad913c` |
+| [Typed critical-strip witness classification proposal](proposals/typed-critical-strip-witness-classification.md) | `urn:uuid:4be88bee-cf4e-4ec3-a4a9-bd85e16ab45f` |
 
 The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.4-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused. Candidate `0.2-pilot` remains pinned at math `47b87581675315cd4cecfec5602df0c7db9b0c61`.
 
