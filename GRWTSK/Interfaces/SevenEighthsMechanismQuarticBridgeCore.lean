@@ -5,6 +5,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge
 import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismTrace
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridgeControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeGramQuarticExtractionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ThreePointVolumeQuarticExtractionControls
 
 set_option autoImplicit false
 
@@ -16,7 +17,7 @@ This source-only root keeps four layers separate:
 * PNT-free arithmetic scale coordinates;
 * one-way theorem admission;
 * a source-bound complete detector/moment/probe trace and its local witness map;
-* prime quartic extraction plus direct/cofinal threshold closure.
+* three-point volume/Gram extraction, then prime quartic extraction and direct/cofinal threshold closure.
 
 It is intentionally not imported by `GRWTSK.lean` or the public zeta aggregate.
 
