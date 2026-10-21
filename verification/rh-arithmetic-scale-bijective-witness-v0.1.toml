@@ -1,0 +1,242 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-arithmetic-scale-bijective-witness-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+parent_issue = 448
+half_plane_issue = 434
+external_result_issue = 187
+program_issue = 15
+route_ledger_issue = 334
+weil_positive_limit_issue = 215
+weil_criterion_issue = 219
+root_module = "GRWTSK.Interfaces.ArithmeticScaleBijectiveWitnessCore"
+build_target = "GRWTSK.Interfaces.ArithmeticScaleBijectiveWitnessCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "pnt-free-arithmetic-scale-equivalence-and-zero-free-threshold-interface"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+requires_hostile_control_replay = true
+operational_receipt_is_external = true
+public_root_imported = false
+
+[source_binding]
+base_revision = "e66c2091e8109d183184c43361f61dbcd3480ec9"
+base_tree = "c3fbba19fc38f78ced397bbfee73c5283be2f027"
+stacked_pr = 450
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+local_dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+local_lean_toolchain = "leanprover/lean4:v4.33.0"
+local_lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXTERNAL_PORT_BLOCKED / WEIL_TIGHTENING_NOT_CONSTRUCTED"
+inherited_target = "verification/rh-openai-seven-eighths-port-v0.1.toml"
+inherited_target_blob = "cd14f4e9f5006aba5f05292277a6a83c479fcf47"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static coordinate diagnostics and source inspection are not Lean elaboration, trust review, external admission or analytic theorem evidence."
+
+[mathlib_source]
+coordinate_equivalence_declaration = "FreeAbelianGroup.equivFinsupp"
+coordinate_equivalence_path = "Mathlib/Algebra/FreeAbelianGroup/Finsupp.lean"
+coordinate_equivalence_blob = "b0dd2e43443b6d82441b0bde78aed0793e5d0685"
+coordinate_equivalence_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+role = "canonical additive equivalence between a free abelian group and finitely supported integer coordinates"
+
+[mathematical_scope]
+prime_index = "{p : Nat // Nat.Prime p}"
+arithmetic_log_scale = "FreeAbelianGroup PrimeIndex"
+p_adic_scale_family = "PrimeIndex ->₀ Int"
+all_prime_equivalence = "ArithmeticLogScale ≃+ PAdicScaleFamily"
+local_coordinate = "ArithmeticLogScale ->+ Int"
+primary_embedding = "Int ->+ ArithmeticLogScale"
+archimedean_realization = "ArithmeticLogScale ->+ Real"
+archimedean_formula = "finite sum over p of n_p * Real.log p"
+critical_consumer = "RiemannZetaZeroFreeRightHalfPlane (1 / 2 : Real) <-> RiemannHypothesis"
+regional_consumer = "AcceptedExternalRawHalfPlanePort (7 / 8) -> ScaleIndexedRegionalWitness (7 / 8)"
+tightening_consumer = "positiveScrewStatement -> ZF(sigma) -> ZF(1 / 2)"
+scale_equivalence_is_analytic_supplier = false
+prime_number_theorem_argument_used = false
+
+[terminal_consumers]
+critical_witness = "GRWTSK.RiemannHypothesis.rawHalfPlaneRHBijectiveWitness"
+critical_arithmetic_projection = "GRWTSK.RiemannHypothesis.rawHalfPlaneRHBijectiveWitness_scale_bijective"
+critical_analytic_projection = "GRWTSK.RiemannHypothesis.rawHalfPlaneRHBijectiveWitness_consumer"
+regional_witness_constructor = "GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort.toSevenEighthsScaleIndexedRegionalWitness"
+conditional_tightening = "GRWTSK.RiemannHypothesis.ScaleIndexedRegionalWitness.toCriticalRaw"
+conditional_rh_composition = "GRWTSK.RiemannHypothesis.ScaleIndexedRegionalWitness.toRiemannHypothesis"
+classification = "EXACT_SCALE_EQUIVALENCE_PLUS_CONDITIONAL_ANALYTIC_INTERFACE"
+rh_consequence = "Only conditional on an independently admitted regional theorem, a concrete tightening interface and a proof of its positivity premise."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unsafe_selected_declarations = true
+
+[formalization_boundary]
+free_abelian_prime_scale = "DEFINED"
+all_prime_coordinate_equivalence = "DEFINED"
+all_prime_bijectivity = "PROVED_IN_SOURCE_DRAFT"
+local_coordinate_homomorphism = "DEFINED"
+primary_split_identity = "PROVED_IN_SOURCE_DRAFT"
+off_prime_annihilation = "PROVED_IN_SOURCE_DRAFT"
+finite_archimedean_log_realization = "DEFINED"
+positive_rational_factorization_bridge = "NOT_IMPLEMENTED"
+literal_identification_with_log_positive_rationals = "NOT_IMPLEMENTED"
+real_realization_injectivity = "NOT_PROVED_OR_USED"
+rational_product_formula = "NOT_IMPLEMENTED"
+no_nonzero_additive_map_real_to_int = "NOT_FORMALIZED"
+prime_number_theorem_declaration_directly_used = false
+critical_half_plane_iff_rh = "INHERITED_SOURCE_DRAFT"
+external_seven_eighths_port = "NOT_CONSTRUCTED"
+regional_seven_eighths_scope = "TYPE_CHECKED_ONLY_AFTER_FUTURE_PORT"
+weil_positive_screw_tightening = "TYPE_ONLY / NOT_CONSTRUCTED"
+riemann_hypothesis = "NOT_CLAIMED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticScaleBijectiveWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ArithmeticScaleBijectiveWitness.lean"
+blob = "dfaa7abef4ac5c6cd95e42cc9d5ccf0338bbce28"
+role = "free-abelian logarithmic scale, finitely supported p-adic coordinates, Archimedean realization, critical Iff witness, regional witness and conditional tightening interface"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ArithmeticScaleBijectiveWitnessControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ArithmeticScaleBijectiveWitnessControls.lean"
+blob = "29c1053e5ecd7700cb731d88d637e59bf76b31d3"
+role = "coordinate split, off-prime, threshold direction, external-admission and two-input tightening controls"
+
+[[modules]]
+name = "GRWTSK.Interfaces.ArithmeticScaleBijectiveWitnessCore"
+path = "GRWTSK/Interfaces/ArithmeticScaleBijectiveWitnessCore.lean"
+blob = "a1dc00275eaa3340ca290593521a7ba048ac62e3"
+role = "isolated stacked integration root"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/arithmetic-scale-bijective-witness.md"
+blob = "4a192d628bb2cba891f8a3c088994fcf850a3b2b"
+status = "mathematical exposition and dependency boundary; not theorem, replay or trust evidence"
+
+[declaration_inventory]
+count = 40
+names = [
+  "GRWTSK.ArithmeticScale.PrimeIndex",
+  "GRWTSK.ArithmeticScale.PrimeExponentLattice",
+  "GRWTSK.ArithmeticScale.ArithmeticLogScale",
+  "GRWTSK.ArithmeticScale.PAdicScaleFamily",
+  "GRWTSK.ArithmeticScale.logarithmicToPAdicFamily",
+  "GRWTSK.ArithmeticScale.logarithmicToPAdicFamily_bijective",
+  "GRWTSK.ArithmeticScale.pAdicExponent",
+  "GRWTSK.ArithmeticScale.pPrimaryEmbedding",
+  "GRWTSK.ArithmeticScale.logarithmicToPAdicFamily_pPrimaryEmbedding",
+  "GRWTSK.ArithmeticScale.pAdicExponent_pPrimaryEmbedding",
+  "GRWTSK.ArithmeticScale.pAdicExponent_comp_pPrimaryEmbedding",
+  "GRWTSK.ArithmeticScale.pPrimaryEmbedding_injective",
+  "GRWTSK.ArithmeticScale.pAdicExponent_pPrimaryEmbedding_of_ne",
+  "GRWTSK.ArithmeticScale.logarithmicToPAdicFamily_apply",
+  "GRWTSK.ArithmeticScale.ext_of_pAdicExponent_eq",
+  "GRWTSK.ArithmeticScale.archimedeanBasisHom",
+  "GRWTSK.ArithmeticScale.archimedeanLogRealization",
+  "GRWTSK.ArithmeticScale.archimedeanLogRealization_apply",
+  "GRWTSK.ArithmeticScale.archimedeanLogRealization_pPrimaryEmbedding",
+  "GRWTSK.RiemannHypothesis.ScaleIndexedIffWitness",
+  "GRWTSK.RiemannHypothesis.rawHalfPlaneRHBijectiveWitness",
+  "GRWTSK.RiemannHypothesis.rawHalfPlaneRHBijectiveWitness_scale_bijective",
+  "GRWTSK.RiemannHypothesis.rawHalfPlaneRHBijectiveWitness_consumer",
+  "GRWTSK.RiemannHypothesis.ScaleIndexedRegionalWitness",
+  "GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort.toSevenEighthsScaleIndexedRegionalWitness",
+  "GRWTSK.RiemannHypothesis.WeilPositiveScrewTightening",
+  "GRWTSK.RiemannHypothesis.ScaleIndexedRegionalWitness.toCriticalRaw",
+  "GRWTSK.RiemannHypothesis.ScaleIndexedRegionalWitness.toRiemannHypothesis",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.primeTwo",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.primeThree",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.two_coordinate_recovers_two_primary",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.two_coordinate_annihilates_three_primary",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.all_prime_scale_map_is_bijective",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.ToyZeroSet",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.ToyZeroFreeRightHalfPlane",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.toy_sevenEighths_zeroFree",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.toy_half_not_zeroFree",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.pinned_sevenEighths_review_remains_blocked",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.tightening_consumes_both_inputs",
+  "GRWTSK.RiemannHypothesis.Checks.ArithmeticScaleBijectiveWitnessControls.admitted_sevenEighths_port_stays_regional"
+]
+
+[hostile_controls]
+required = [
+  "a selected p-coordinate recovers its own primary exponent",
+  "a selected p-coordinate annihilates a different prime basis vector",
+  "the all-prime coordinate family, not one coordinate, is bijective",
+  "a toy zero at three-fifths is excluded right of seven-eighths but not right of one-half",
+  "the pinned seven-eighths review remains non-admission-ready",
+  "a tightening interface consumes both its positivity premise and its regional theorem argument",
+  "a hypothetical accepted seven-eighths port retains an explicit strict threshold gap"
+]
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+EXTERNAL_SEVEN_EIGHTHS_PORT_ACCEPTED = false
+WEIL_TIGHTENING_CONSTRUCTED = false
+ANALYTIC_PREMISES_DISCHARGED = false
+
+[static_checks]
+toml_parse = "PASSED_BEFORE_COMMIT"
+source_inventory = "PASSED_BEFORE_COMMIT"
+internal_import_boundary = "PASSED_BEFORE_COMMIT"
+comment_aware_forbidden_token_scan = "PASSED_BEFORE_COMMIT"
+direct_prime_number_theorem_use_scan = "PASSED_BEFORE_COMMIT"
+forbidden_tokens = ["sorry", "admit", "axiom", "unsafe", "native_decide", "#eval"]
+lean_elaboration = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+hostile_lean_replay = "NOT_RUN"
+external_acceptance = "NOT_RUN"
+
+[finite_diagnostics]
+status = "PASSED"
+models = 2401
+assertions = 13403
+coverage = [
+  "all coefficient tuples in [-3,3]^4 for the prime labels two, three, five and seven",
+  "all-prime coordinate recovery",
+  "same-prime recovery and off-prime annihilation for every tested exponent",
+  "256 deterministic additive pairs and a formal weighted Archimedean-sum analogue",
+  "exact rational order one-half < three-fifths < seven-eighths < eleven-twelfths"
+]
+qualification = "Finite integer-coordinate and exact-rational checks only; no Lean parsing, elaboration, kernel checking, transitive trust audit, external theorem admission, Weil positivity theorem or zeta nonvanishing theorem."
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and source repair if needed",
+  "exact elaborated declaration types for all selected declarations",
+  "complete transitive import and axiom audit",
+  "hostile Lean replay and immutable local acceptance",
+  "independent clean replay, dependency review, trust audit and local adaptation of the pinned external seven-eighths declaration",
+  "construction of a concrete WeilPositiveScrewTightening instance from an independently defined positive-screw statement",
+  "proof of the selected positive-screw premise",
+  "source-preserving analytic justification that the tightening implication reaches raw nonvanishing at one-half"
+]
+
+[next_obstruction]
+statement = "Construct and audit an actual regional-to-critical implication; the arithmetic scale equivalence and any future accepted seven-eighths theorem supply neither that implication nor its positivity premise."
+scope = "Until this supplier exists, the seven-eighths port remains a strictly weaker regional theorem and the canonical RH consumer remains uninhabited."
+
+[nonclaims]
+items = [
+  "no prime number theorem result or prime-counting asymptotic",
+  "no literal identification with log of the positive rationals",
+  "no injectivity theorem for the real Archimedean realization",
+  "no rational product formula",
+  "no theorem about all additive maps from the reals to the integers",
+  "no accepted external seven-eighths theorem",
+  "no cross-version proof transport or trust closure",
+  "no concrete Weil positive-screw theorem",
+  "no raw zeta nonvanishing theorem at one-half",
+  "no Riemann hypothesis proof",
+  "no public aggregate import, merge, deployment or execution authority"
+]
