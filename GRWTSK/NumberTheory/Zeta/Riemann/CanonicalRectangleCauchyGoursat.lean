@@ -58,7 +58,8 @@ theorem rectangleLogDerivativeIntegral_eq_boundaryIntegral (N : ℕ) :
     rectangleLogDerivativeIntegral N =
       rectangleBoundaryIntegral N (logDeriv riemannZeta) := by
   unfold rectangleLogDerivativeIntegral rectangleBoundaryIntegral
-  rw [intervalIntegral.integral_symm, intervalIntegral.integral_symm]
+  rw [intervalIntegral.integral_symm (leftEdge N) 2,
+    intervalIntegral.integral_symm (-contourHeight N) (contourHeight N)]
   simp_rw [intervalIntegral.integral_mul_const]
   ring
 
