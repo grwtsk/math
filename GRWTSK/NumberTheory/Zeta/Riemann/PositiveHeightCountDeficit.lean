@@ -59,10 +59,16 @@ def positiveHeightCount (T : ℝ) : ℕ :=
 @[simp] theorem mem_positiveHeightHead (T : ℝ) (z : ZeroPoint) :
     z ∈ positiveHeightHead T ↔ 0 < z.1.im ∧ z.1.im ≤ T := by
   classical
-  simp only [positiveHeightHead, Finset.mem_filter, mem_heightHead, height,
-    and_iff_right_iff_imp]
-  intro positive
-  rw [abs_of_pos positive]
+  constructor
+  · intro hz
+    rcases Finset.mem_filter.mp hz with ⟨headMember, positive⟩
+    have heightBound := (mem_heightHead T z).mp headMember
+    exact ⟨positive, by
+      simpa only [height, abs_of_pos positive] using heightBound⟩
+  · rintro ⟨positive, upper⟩
+    apply Finset.mem_filter.mpr
+    refine ⟨(mem_heightHead T z).mpr ?_, positive⟩
+    simpa only [height, abs_of_pos positive] using upper
 
 /-- This is a projection of the existing complete head, not a competing divisor. -/
 theorem positiveHeightHead_subset_heightHead (T : ℝ) :
@@ -135,15 +141,23 @@ def conjugated (z : ZeroPoint) : ZeroPoint :=
 @[simp] theorem conjugated_im (z : ZeroPoint) : (conjugated z).1.im = -z.1.im := by
   simp [conjugated, zeroConjugate]
 
+@[simp] theorem conjugated_involutive (z : ZeroPoint) : conjugated (conjugated z) = z := by
+  apply Subtype.ext
+  simp [conjugated, zeroConjugate]
+
+/-- Conjugation is injective because it is an involution on the canonical source points. -/
+theorem conjugated_injective : Function.Injective conjugated :=
+  conjugated_involutive.injective
+
 /-- A negative-height source point through T transports into the positive-height head at T. -/
 theorem conjugated_mem_positiveHeightHead {T : ℝ} (z : ZeroPoint)
     (negative : z.1.im < 0) (heightBound : height z ≤ T) :
     conjugated z ∈ positiveHeightHead T := by
   apply (mem_positiveHeightHead T (conjugated z)).mpr
   constructor
-  · simp [conjugated_im, negative]
+  · simpa only [conjugated_im] using (neg_pos.mpr negative)
   · have habs : |z.1.im| = -z.1.im := abs_of_neg negative
-    simpa [conjugated_im, habs] using heightBound
+    simpa only [height, conjugated_im, habs] using heightBound
 
 /-- Standard positive-height counts imply the repository's absolute-height conclusion.
 Height zero is excluded by the sourced Mellin theorem; negative height is transported by conjugation. -/
@@ -167,15 +181,15 @@ theorem rhThrough_of_positive_credit (N : ℕ)
       constructor
       · exact positive
       · have absEq : |s.im| = s.im := abs_of_pos positive
-        simpa [absEq] using heightBound
+        simpa only [absEq] using heightBound
     exact positiveOnLine z member
-  · have negative : s.im < 0 := lt_of_le_of_ne (le_of_not_gt positive) (Ne.symm zeroHeight)
+  · have negative : s.im < 0 := lt_of_le_of_ne (le_of_not_gt positive) zeroHeight
     let z : ZeroPoint := ⟨s, zero⟩
     have member : conjugated z ∈ positiveHeightHead (N : ℝ) := by
       apply conjugated_mem_positiveHeightHead z negative
       exact heightBound
     have line := positiveOnLine (conjugated z) member
-    simpa [conjugated_re] using line
+    simpa only [conjugated_re] using line
 
 /-- Per-root lower multiplicity credits specialize the same criterion. -/
 theorem rhThrough_of_positive_weighted_inventory (N : ℕ)
