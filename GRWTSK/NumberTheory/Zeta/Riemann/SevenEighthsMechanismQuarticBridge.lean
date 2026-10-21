@@ -10,6 +10,7 @@ import Mathlib.Tactic
 set_option autoImplicit false
 
 noncomputable section
+open scoped BigOperators
 
 /-!
 # One-way theorem ports and proof-relevant seven-eighths mechanism bridges
@@ -27,7 +28,7 @@ quotient/specialization.
 
 The terminal extraction interface is the repository's existing signed quartic
 criterion.  A prime-derived nonnegative sequence with positive limiting weight
-and vanishing complete error supplies the exact hypotheses of
+and a complete named residual tending to zero supplies the exact hypotheses of
 `riemannHypothesis_of_trace_extraction`.
 
 SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
@@ -367,20 +368,45 @@ structure PNTIndependentDependencyAudit (Claim : Prop) where
   revision : String
   closureDigest : String
 
+/-- Every active numerical residual in the prime-to-quartic comparison.  Missing
+logical premises remain outside this numeric enumeration. -/
+inductive PrimeQuarticResidualKey where
+  | primePower
+  | archimedeanGamma
+  | pole
+  | trivialZero
+  | endpoint
+  | zeroMultiplicity
+  | omittedTail
+  | detectorTransport
+  | involutionTransport
+  | formComparison
+  | quadrature
+  | rounding
+  deriving DecidableEq, Fintype, Repr
+
+/-- Complete finite residual ledger.  The total is definitionally tied by a
+proof to the sum over every named key and is the exact error sequence required
+to tend to zero. -/
+structure PrimeQuarticResidualLedger where
+  component : PrimeQuarticResidualKey → ℕ → ℝ
+  total : ℕ → ℝ
+  total_eq : ∀ n, total n = ∑ key, component key n
+  total_tendsto : Tendsto total atTop (𝓝 0)
+
 /-- Extraction data for one actual nontrivial zeta zero. -/
 structure QuarticExtractionAtZero (s : ℂ) where
   W : ℕ → ℝ
   weight : ℕ → ℝ
-  error : ℕ → ℝ
+  residual : PrimeQuarticResidualLedger
   limitWeight : ℝ
   limitWeight_pos : 0 < limitWeight
   identity :
     ∀ n,
       W n =
-        weight n * witnessTrace (s.re - 1 / 2) s.im + error n
+        weight n * witnessTrace (s.re - 1 / 2) s.im + residual.total n
   nonnegative : ∀ n, 0 ≤ W n
   weight_tendsto : Tendsto weight atTop (𝓝 limitWeight)
-  error_tendsto : Tendsto error atTop (𝓝 0)
 
 /-- The exact all-zero extraction claim audited by a prime-derived supplier. -/
 def PrimeQuarticClaim : Prop :=
@@ -389,6 +415,8 @@ def PrimeQuarticClaim : Prop :=
 /-- Prime-derived nonnegative quartic extraction for every actual nontrivial
 zero.  The dependency audit carries the exact theorem term it certifies. -/
 structure PrimeQuarticExtraction where
+  sourceIdentity : String
+  normalization : String
   pntIndependent : PNTIndependentDependencyAudit PrimeQuarticClaim
 
 /-- The exact repository extraction criterion consumes the typed prime
@@ -401,9 +429,9 @@ theorem riemannHypothesis_of_primeQuarticExtraction
   intro s hs
   let data := extraction.pntIndependent.theoremTerm s hs
   exact
-    ⟨data.W, data.weight, data.error, data.limitWeight,
+    ⟨data.W, data.weight, data.residual.total, data.limitWeight,
       data.limitWeight_pos, data.identity, data.nonnegative,
-      data.weight_tendsto, data.error_tendsto⟩
+      data.weight_tendsto, data.residual.total_tendsto⟩
 
 /-- Proof-relevant transport from the detector witness carrier into a local
 carrier.  This gate does not yet construct quartic extraction data. -/

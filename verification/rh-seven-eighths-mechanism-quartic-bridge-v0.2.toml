@@ -25,8 +25,8 @@ operational_receipt_is_external = true
 public_root_imported = false
 
 [source_binding]
-base_revision = "ebf24fbf248f7eeaafd512f61f2cef70bdb82b14"
-base_tree = "61372fe973909d6f5a951551016e0432167c7974"
+base_revision = "c882a45879973dace024d7deeb1de07e9d620897"
+base_tree = "688b8a291ce442f356cb35a4cc08f8e961685c74"
 stacked_pr = 464
 stacked_base_pr = 450
 local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
@@ -87,7 +87,7 @@ prime_number_theorem_argument_used = false
 [acceptance_gates]
 PORT_ACCEPTED = "AcceptedExternalRawHalfPlanePort (7 / 8), constructible from complete review plus OneWayRawHalfPlaneTransport; no bijection field"
 MECHANISM_BRIDGE_ACCEPTED = "AcceptedSevenEighthsMechanismPort plus DetectorToLocalWitnessBridge with continuous linear/topological/form/symmetry transport"
-QUADRATIC_EXTRACTION_ACCEPTED = "PrimeQuarticExtraction for every nontrivial zero plus exact theorem-bound PNTIndependentDependencyAudit"
+QUADRATIC_EXTRACTION_ACCEPTED = "PrimeQuarticExtraction for every nontrivial zero plus exact theorem-bound PNTIndependentDependencyAudit and complete named residual ledger"
 THRESHOLD_CLOSURE_ACCEPTED = "direct extraction or complete cofinal PrimeQuarticStep tower reaching the strict one-half consumer"
 only_terminal_gate_to_rh = "GRWTSK.RiemannHypothesis.ThresholdClosureAccepted.toRiemannHypothesis"
 
@@ -113,6 +113,13 @@ requires_quantified_form_defect = true
 arbitrary_bijection_sufficient = false
 terminal_proposition_recovers_internal_witness = false
 family_to_zeta_requires_inverse = false
+
+[residual_ledger]
+record = "GRWTSK.RiemannHypothesis.PrimeQuarticResidualLedger"
+keys = ["primePower", "archimedeanGamma", "pole", "trivialZero", "endpoint", "zeroMultiplicity", "omittedTail", "detectorTransport", "involutionTransport", "formComparison", "quadrature", "rounding"]
+requires_exact_total_sum = true
+requires_total_tendsto_zero = true
+logical_blockers_are_numeric_components = false
 
 [pnt_independence]
 record = "GRWTSK.RiemannHypothesis.PNTIndependentDependencyAudit"
@@ -147,6 +154,7 @@ quotient_specialization_profile = "DEFINED"
 commuting_continuous_linear_involution_intertwining = "DEFINED"
 continuous_real_bilinear_form_comparison = "DEFINED"
 arithmetic_scale_equivalence = "DEFINED_SEPARATELY"
+prime_quartic_residual_ledger = "DEFINED_WITH_EXACT_NAMED_TOTAL"
 prime_quartic_extraction = "TYPE_AND_CONDITIONAL_CONSUMER_ONLY"
 pnt_dependency_audit = "TYPE_BOUND_TO_EXACT_CLAIM_AND_THEOREM_TERM"
 direct_threshold_closure = "CONDITIONAL_THEOREM"
@@ -163,8 +171,8 @@ role = "independent PNT-free free-abelian logarithmic scale, p-adic coordinates 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/SevenEighthsMechanismQuarticBridge.lean"
-blob = "9e382afb22b1cada8acb565f58930472cdae5dfb"
-role = "one-way terminal transport, external mechanism source/review, continuous linear-topological-form-symmetry bridge, theorem-bound PNT audit, quartic extraction and direct/cofinal closure"
+blob = "04723813d4042f937dbe733172a12143bc909935"
+role = "one-way terminal transport, external mechanism source/review, continuous linear-topological-form-symmetry bridge, theorem-bound PNT audit, named residual ledger, quartic extraction and direct/cofinal closure"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridgeControls"
@@ -184,7 +192,7 @@ blob = "f150b48049f4ecc2cdb55a5c0f375fafaca85404"
 status = "mathematical exposition and source-bound mechanism audit; not theorem, replay or trust evidence"
 
 [declaration_inventory]
-count = 84
+count = 86
 names = [
   "GRWTSK.ArithmeticScale.PrimeIndex",
   "GRWTSK.ArithmeticScale.PrimeExponentLattice",
@@ -231,6 +239,8 @@ names = [
   "GRWTSK.RiemannHypothesis.CommutingInvolutionPair",
   "GRWTSK.RiemannHypothesis.RealBilinearMechanismBridge",
   "GRWTSK.RiemannHypothesis.PNTIndependentDependencyAudit",
+  "GRWTSK.RiemannHypothesis.PrimeQuarticResidualKey",
+  "GRWTSK.RiemannHypothesis.PrimeQuarticResidualLedger",
   "GRWTSK.RiemannHypothesis.QuarticExtractionAtZero",
   "GRWTSK.RiemannHypothesis.PrimeQuarticClaim",
   "GRWTSK.RiemannHypothesis.PrimeQuarticExtraction",
@@ -284,6 +294,7 @@ required = [
   "a toy zero at three-fifths is excluded right of seven-eighths but not right of one-half",
   "the signed quartic is strictly negative off the centered line",
   "mechanism transport and local quartic extraction are separate gates",
+  "every numeric residual key is retained in the exact total error sequence",
   "PNT independence requires the exact transitive dependency closure bound to the audited theorem term",
   "regional seven-eighths plus reflection supplies only the compact bound three-eighths",
   "stepwise descent requires explicit cofinality at one-half",
@@ -342,14 +353,14 @@ items = [
   "clean replay and exact type alignment for DetectorCertifiedBands, FineMomentInput, ChosenMomentInput, UniformCommonProbe and family specialization",
   "construction of a source-preserving continuous linear equivalence, faithful embedding or quotient onto the declared local witness carrier",
   "proof that both continuous linear involutions and the selected continuous bilinear or Hermitian form comparison are preserved",
-  "construction of the prime-derived nonnegative form with every gamma, pole, trivial-zero, endpoint, multiplicity and tail term",
+  "construction of the prime-derived nonnegative form with every named gamma, pole, trivial-zero, endpoint, multiplicity, tail, mechanism, involution, form, quadrature and rounding residual",
   "exact theorem-bound PNTIndependentDependencyAudit over the transitive declaration closure",
-  "positive limiting quartic coefficient and complete error tending to zero for every nontrivial zero",
+  "positive limiting quartic coefficient and complete named error tending to zero for every nontrivial zero",
   "either direct all-zero extraction or a valid cofinal threshold-descent tower reaching one-half"
 ]
 
 [next_obstruction]
-statement = "Construct an accepted DetectorCertifiedBands-to-local-witness mechanism bridge and a separate theorem-bound, PNT-audited LocalPrimeQuarticExtractor producing PrimeQuarticExtraction."
+statement = "Construct an accepted DetectorCertifiedBands-to-local-witness mechanism bridge and a separate theorem-bound, PNT-audited LocalPrimeQuarticExtractor producing a PrimeQuarticExtraction with the complete named residual ledger."
 scope = "The one-way seven-eighths terminal port begins the route but does not recover the detector/moment witness, build a positive prime form, tighten the threshold or prove RH."
 
 [nonclaims]
@@ -364,7 +375,7 @@ items = [
   "no accepted continuous involution or form intertwining",
   "no prime-derived nonnegative quartic extraction",
   "no theorem-bound transitive PNT-independence receipt",
-  "no complete explicit-formula or Weil-form comparison",
+  "no complete named explicit-formula or Weil-form residual proof",
   "no threshold descent or cofinal closure",
   "no raw zeta nonvanishing theorem at one-half",
   "no Riemann hypothesis proof",
