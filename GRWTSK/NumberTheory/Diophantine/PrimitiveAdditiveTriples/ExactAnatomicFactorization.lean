@@ -97,33 +97,18 @@ theorem multiplicityLayer_coprime (n i j : ℕ) (hij : i ≠ j) :
   have hj := prime_dvd_multiplicityLayer_imp (n := n) (i := j) hp hpj
   exact hij (hi.symm.trans hj)
 
-private theorem squarefree_finset_prod {ι : Type*} (f : ι → ℕ) {s : Finset ι}
-    (hf : ∀ i ∈ s, Squarefree (f i))
-    (h : Set.Pairwise s.toSet (Function.onFun Nat.Coprime f)) :
-    Squarefree (∏ i ∈ s, f i) := by
-  induction s using Finset.cons_induction with
-  | empty => simp
-  | cons i s his ih =>
-      simp only [Finset.prod_cons]
-      simp only [Finset.mem_cons, forall_eq_or_imp] at hf
-      rw [Finset.coe_cons,
-        Set.pairwise_insert_of_symmetric_of_notMem _ (by simpa using his)] at h
-      swap
-      · exact Nat.Coprime.symmetric.comap _
-      rw [Nat.squarefree_mul]
-      · exact ⟨hf.1, ih hf.2 h.1⟩
-      apply Nat.Coprime.prod_right
-      intro j hj
-      exact h.2 j hj
-
 /-- Each multiplicity layer is squarefree: every selected prime occurs once. -/
 theorem multiplicityLayer_squarefree (n i : ℕ) :
     Squarefree (multiplicityLayer n i) := by
   rw [multiplicityLayer]
-  apply squarefree_finset_prod
-  · simp +contextual [Finset.mem_filter, Nat.mem_primeFactors,
-      Nat.Prime.prime, Prime.squarefree]
-  · simp +contextual [Nat.coprime_primes, Function.onFun, Set.Pairwise]
+  apply Finset.squarefree_prod_of_pairwise_isCoprime
+  · intro p hp q hq hpq
+    rw [← Nat.coprime_iff_isRelPrime]
+    exact (Nat.coprime_primes
+      (Nat.prime_of_mem_primeFactors (Finset.mem_filter.mp hp).1)
+      (Nat.prime_of_mem_primeFactors (Finset.mem_filter.mp hq).1)).mpr hpq
+  · intro p hp
+    exact (Nat.prime_of_mem_primeFactors (Finset.mem_filter.mp hp).1).squarefree
 
 /-- Exact radical reconstruction: forgetting all multiplicities in the
 factorization of `n` is the same as multiplying the valuation layers once. -/
@@ -142,7 +127,7 @@ theorem prod_multiplicityLayer_eq_radical {n : ℕ} (hn : 0 < n) :
       (multiplicityLayer_pos n i).ne'
     exact associated_iff_eq.mp h.symm
   · intro i _ j _ hij
-    apply Nat.Coprime.isRelPrime
+    rw [← Nat.coprime_iff_isRelPrime]
     apply Nat.Coprime.pow_right
     apply Nat.Coprime.pow_left
     exact multiplicityLayer_coprime n i j hij
