@@ -171,17 +171,6 @@ theorem prime_in_square_of_direct_natural_log_margin
     N correctionBits correctionFloor correctionClaimed correctionAccepted
     marginAccepted
 
-/-- Boolean margin acceptance alone says nothing about the zero and correction
-endpoints. The pure rational check can pass for synthetic inputs; source-bound
-endpoint acceptance remains a separate theorem premise above. -/
-theorem rational_margin_does_not_supply_endpoints_fixture :
-    RationalCanonicalPrimeMargin.accepts 2
-      (directHeightLog 2 (by norm_num) 1)
-      (directStageLog 2 1)
-      (directCutoffLog 2 (by norm_num) 1)
-      (-1000000) 0 = true := by
-  native_decide
-
 end
 
 end GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringRationalMargin
