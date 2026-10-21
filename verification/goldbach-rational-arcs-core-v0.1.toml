@@ -232,7 +232,7 @@ description = "A count conclusion still requires a major lower bound, complete s
 
 [[acceptance_obligations]]
 id = "R01"
-requirement = "Elaborate all five new Lean modules at the exact head and repair only against immutable source; source presence and lexical checks do not pass."
+requirement = "Elaborate all four new Lean modules at the exact head and repair only against immutable source; source presence and lexical checks do not pass."
 
 [[acceptance_obligations]]
 id = "R02"
