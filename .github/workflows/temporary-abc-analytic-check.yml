@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   lean-check:
@@ -14,9 +15,39 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-      - name: Build ABC analytic modules
+      - name: Set up Lean and Mathlib cache
         uses: leanprover/lean-action@c544e89643240c6b398f14a431bcdc6309e36b3e
         with:
-          build-args: >-
-            GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticBounds
-            GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetCounting
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: true
+      - name: Build ABC analytic modules
+        id: build
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          lake build \
+            GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticBounds \
+            GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetCounting \
+            2>&1 | tee /tmp/abc-analytic-build.log
+      - name: Publish failure diagnostics to issue 414
+        if: steps.build.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          {
+            printf 'Temporary Lean check failed at `%s`.\n\n```text\n' "$RUN_URL"
+            tail -c 55000 /tmp/abc-analytic-build.log
+            printf '\n```\n'
+          } > /tmp/comment.txt
+          jq -Rs '{body: .}' /tmp/comment.txt > /tmp/comment.json
+          gh api "repos/${REPOSITORY}/issues/414/comments" --method POST --input /tmp/comment.json
+      - name: Propagate build failure
+        if: steps.build.outcome == 'failure'
+        run: exit 1
