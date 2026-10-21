@@ -1,0 +1,331 @@
+schema = "grwtsk.reflection-multiplicity-budget.v0.1"
+id = "reflection-multiplicity-budget-core-v0.1"
+owner_issue = 330
+related_issues = [307, 139, 135, 100]
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+root = "GRWTSK.Interfaces.ReflectionMultiplicityBudgetCore"
+public_root_imported = false
+passive_specification_only = true
+
+[source]
+repository = "grwtsk/math"
+base_commit = "b61ef23c3fe0897edeb2ec425bb225b6e7051706"
+base_tree = "439875a1acea0d739c2e969f19606c259827d749"
+toolchain = "leanprover/lean4:v4.33.0"
+toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+acceptance_binding = "Bind the eventual exact candidate commit, tree and this target blob externally; do not accept the base commit or an earlier receipt as the candidate."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry = true
+reject_unreported_native_or_unsafe = true
+missing_audit_is_pass = false
+transitive_audit_status = "NOT_RUN"
+independently_authored_complete_type_expectations = "PENDING"
+full_dependency_inventory = "PENDING; immediate pins below are not the transitive closure"
+choice_free_dependency_claim = false
+
+[acceptance]
+requirements = [
+  "Elaborate all new owner modules and the isolated root at exact source and toolchain pins.",
+  "Independently author and compare complete public types, including binders, universes, hypotheses, definitions and generated declarations.",
+  "Audit the full inherited import and declaration dependency closure; an empty report is not an empty axiom list.",
+  "Check all declared controls; do not treat their source presence or Python agreement as Lean execution.",
+  "Verify the canonical divisor and analytic multiplicity definitions are unchanged and actually used.",
+  "Keep both source membership proofs, two lower bounds, same-region upper bound and strict threshold in every consumer.",
+  "Retain the explicit multiplicity-preservation premise when reusing only one lower certificate.",
+  "Keep finite-height coverage quantified over every actual zero; no all-height promotion.",
+  "Bind any later receipt under #100/#136-#138 without changing current execution holds."
+]
+nonclaims = [
+  "No root, multiplicity certificate, useful regional count, numerical SourceAcceptance or full cover is constructed.",
+  "No simplicity assumption is needed, but no actual multiple zeta zero is asserted.",
+  "No analytic-order symmetry is silently inferred from zero-existence symmetry.",
+  "No RH, accepted kernel result, native execution, choice-free closure or merge is claimed."
+]
+
+[[new_sources]]
+path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+git_blob = "4e98356bfed74cd101c4a7f288005a0feba63ccd"
+sha256 = "5159d446ce20dba347ab2c44e0756c38cd9b25fd8e1c67aa0e9b9f8a4b1b7975"
+lines = 128
+imports = ["Mathlib.Algebra.Order.BigOperators.Group.Finset", "Mathlib.Tactic.NormNum"]
+
+[[new_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+git_blob = "c4ff58960037754cb2a65d19669b67175c0206e6"
+sha256 = "44c43e3d4519ab683fd9ea389467212e8b8426e3475018180074727e6dbd7191"
+lines = 175
+imports = ["GRWTSK.Combinatorics.WeightedPairBudget", "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor", "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion", "Mathlib.Tactic.Linarith"]
+
+[[new_sources]]
+path = "GRWTSK/Interfaces/ReflectionMultiplicityBudgetCore.lean"
+git_blob = "5127c14b5c13e535555096565f726a80d640b6bc"
+sha256 = "b9623b97bc8e544918f7d4d7efa0f911740b31b12034fec4844ae2a324bc4037"
+lines = 2
+imports = ["GRWTSK.Combinatorics.WeightedPairBudget", "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget"]
+
+[[new_sources]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/reflection-multiplicity-budget.md"
+git_blob = "aa9051534c1fa9bf3f0c61c6ede650bf94ad2452"
+sha256 = "d70f10ca933d5e5e7c289678be9d66a02f7fc5dc4e61f66ea97d246ae428f18a"
+lines = 82
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.mass"
+kind = "def"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.pair_le_mass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.eq_of_upper_lt_lower_sum"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.eq_of_upper_lt_twice_lower"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.zero_lower_cannot_pass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.nonstrict_pair_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.double_weight_singleton_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.repeated_identity_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.omitted_partner_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.unequal_weights_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.modelReflection"
+kind = "def"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.modelReflection_involutive"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.odd_mass_with_nonfixed_pair_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedPairBudget.selected_weight_only_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedPairBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.reflected"
+kind = "def"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.height_reflected"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.on_line_of_eq_reflected"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.distinct_of_off_line"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.critical_line_of_finite_pair_bounds"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.regionHead"
+kind = "def"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.mem_regionHead"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.regionCount"
+kind = "def"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.regionHead_univ"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.regionCount_univ"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.regionCount_le_heightCount"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.reflected_mem_regionHead"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.critical_line_of_region_pair_bounds"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.critical_line_of_region_common_lower"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.critical_line_of_region_preserved_multiplicity"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.off_line_pair_mass_le_regionCount"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReflectionMultiplicityBudget.rhThrough_of_region_pair_cover"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ReflectionMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+status = "SOURCE_INSPECTED; full inherited acceptance pending"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/BoundedHeightCriterion.lean"
+git_blob = "942a901d5bfd6a4d34125e6e1b7fac951eb2dd01"
+status = "SOURCE_INSPECTED; full inherited acceptance pending"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean"
+git_blob = "5f465139ee895a99b79af84ee0866aa5f637bdfa"
+status = "SOURCE_INSPECTED; full inherited acceptance pending"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+git_blob = "3768bab2649a6ae19e4973bf2ee2dfe41bfe3fe9"
+status = "SOURCE_INSPECTED; full inherited acceptance pending"
+
+[[inherited_sources]]
+path = "GRWTSK/Analysis/Complex/CriticalReflection.lean"
+git_blob = "12fefa13c8e031e119b25db0564f61faa017f72c"
+status = "SOURCE_INSPECTED; full inherited acceptance pending"
+
+[[controls]]
+id = "strict_threshold"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.nonstrict_pair_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "repeated_root_profile"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.double_weight_singleton_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "duplicate_identity"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.repeated_identity_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "missing_reflected_member"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.omitted_partner_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "unequal_lower_bounds"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.unequal_weights_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "odd_mass_not_global"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.odd_mass_with_nonfixed_pair_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "selected_root_only"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.selected_weight_only_fixture"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "zero_lower"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.zero_lower_cannot_pass"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[controls]]
+id = "genuine_synthetic_involution"
+declaration = "GRWTSK.Combinatorics.WeightedPairBudget.modelReflection_involutive"
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+
