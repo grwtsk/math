@@ -3,6 +3,7 @@ Human mathematical direction: R.A. Jacob Martone. Formalization assistance: Open
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.ContourCountDeficit
 import GRWTSK.NumberTheory.Zeta.Riemann.QuartetBandDeficit
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin
 
 set_option autoImplicit false
 
@@ -22,9 +23,11 @@ its reflected partner consume at least two positive multiplicity units. A known 
 with lower credit C and an independently proved complete positive-height upper count U therefore
 exclude every off-line positive-height zero when U < C + 2.
 
-To recover the repository's absolute-height RHThrough conclusion, negative-height zeros are
-transported by the existing conjugation theorem, while height-zero zeros remain an explicit
-baseline obligation. No equality of multiplicities under conjugation or reflection is assumed.
+The existing source-derived Mellin theorem excludes nontrivial zeros on the real axis. Negative-
+height zeros are transported by exact conjugation to the positive side, preserving the real
+coordinate. Thus the positive-height criterion yields the repository's absolute-height RHThrough
+conclusion without a separate height-zero premise. No equality of multiplicities under conjugation
+or reflection is assumed.
 
 This is an interface for an eventual Turing/argument-principle supplier such as issue #135.
 It does not provide that analytic supplier, a SourceAcceptance proof, an exact count, or RH.
@@ -113,6 +116,15 @@ theorem all_on_line_of_positive_credit (T : ℝ) (known : Finset ZeroPoint)
     (distinct_of_off_line z offLine) credit 1 1 upper
     creditLower leftLower rightLower countUpper (by omega)
 
+/-- The sourced Mellin argument already discharges the height-zero base case. -/
+theorem rhThrough_zero : RHThrough 0 := by
+  intro s zero heightBound
+  have habs : |s.im| = 0 :=
+    le_antisymm (by simpa using heightBound) (abs_nonneg s.im)
+  have him : s.im = 0 := abs_eq_zero.mp habs
+  exact False.elim
+    (CriticalStripHeightDescent.nontrivialZetaZero_im_ne_zero zero him)
+
 /-- Canonical conjugation moves a negative-height zero to positive height without changing real part. -/
 def conjugated (z : ZeroPoint) : ZeroPoint :=
   ⟨zeroConjugate z.1, z.2.conjugate⟩
@@ -133,10 +145,9 @@ theorem conjugated_mem_positiveHeightHead {T : ℝ} (z : ZeroPoint)
   · have habs : |z.1.im| = -z.1.im := abs_of_neg negative
     simpa [conjugated_im, habs] using heightBound
 
-/-- Standard positive-height counts imply the repository's absolute-height conclusion once
-height-zero zeros have been handled independently. -/
+/-- Standard positive-height counts imply the repository's absolute-height conclusion.
+Height zero is excluded by the sourced Mellin theorem; negative height is transported by conjugation. -/
 theorem rhThrough_of_positive_credit (N : ℕ)
-    (baseline : RHThrough 0)
     (known : Finset ZeroPoint) (credit upper : ℕ)
     (knownSubset : known ⊆ positiveHeightHead (N : ℝ))
     (knownOnLine : ∀ z ∈ known, z.1.re = 1 / 2)
@@ -147,8 +158,8 @@ theorem rhThrough_of_positive_credit (N : ℕ)
     knownSubset knownOnLine creditLower countUpper strict
   intro s zero heightBound
   by_cases zeroHeight : s.im = 0
-  · apply baseline s zero
-    simp [zeroHeight]
+  · exact False.elim
+      (CriticalStripHeightDescent.nontrivialZetaZero_im_ne_zero zero zeroHeight)
   by_cases positive : 0 < s.im
   · let z : ZeroPoint := ⟨s, zero⟩
     have member : z ∈ positiveHeightHead (N : ℝ) := by
@@ -168,21 +179,19 @@ theorem rhThrough_of_positive_credit (N : ℕ)
 
 /-- Per-root lower multiplicity credits specialize the same criterion. -/
 theorem rhThrough_of_positive_weighted_inventory (N : ℕ)
-    (baseline : RHThrough 0)
     (known : Finset ZeroPoint) (lower : ZeroPoint → ℕ) (upper : ℕ)
     (knownSubset : known ⊆ positiveHeightHead (N : ℝ))
     (knownOnLine : ∀ z ∈ known, z.1.re = 1 / 2)
     (lowerBound : ∀ z ∈ known, lower z ≤ multiplicity z)
     (countUpper : positiveHeightCount (N : ℝ) ≤ upper)
     (strict : upper < (∑ z ∈ known, lower z) + 2) : RHThrough N := by
-  apply rhThrough_of_positive_credit N baseline known (∑ z ∈ known, lower z) upper
+  apply rhThrough_of_positive_credit N known (∑ z ∈ known, lower z) upper
     knownSubset knownOnLine ?_ countUpper strict
   exact Finset.sum_le_sum (fun z hz => lowerBound z hz)
 
 /-- An all-height positive-count supplier would imply RH, but no supplier is constructed here.
 Existentials are eliminated separately at each N; no global root inventory is selected. -/
 theorem riemannHypothesis_of_positive_count_credits
-    (baseline : RHThrough 0)
     (supplier : ∀ N : ℕ, ∃ (known : Finset ZeroPoint) (credit upper : ℕ),
       known ⊆ positiveHeightHead (N : ℝ) ∧
       (∀ z ∈ known, z.1.re = 1 / 2) ∧
@@ -192,10 +201,10 @@ theorem riemannHypothesis_of_positive_count_credits
   apply riemannHypothesis_iff_all_heights.mpr
   intro N
   obtain ⟨known, credit, upper, subset, onLine, creditLower, countUpper, strict⟩ := supplier N
-  exact rhThrough_of_positive_credit N baseline known credit upper
+  exact rhThrough_of_positive_credit N known credit upper
     subset onLine creditLower countUpper strict
 
-/-- Positive-height counting does not cover the real axis by definition. -/
+/-- Positive-height counting does not include the real axis by definition. -/
 theorem zero_height_not_mem_positive_fixture (T : ℝ) (nonnegative : 0 ≤ T) :
     ¬ ((0 : ℂ).im > 0 ∧ (0 : ℂ).im ≤ T) := by simp
 
