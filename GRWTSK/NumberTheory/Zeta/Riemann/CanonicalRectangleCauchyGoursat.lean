@@ -69,7 +69,7 @@ theorem rectangleBoundaryIntegral_eq_zero
     (continuous : ContinuousOn f (closedRectangle N))
     (differentiable : DifferentiableOn ℂ f (openRectangle N)) :
     rectangleBoundaryIntegral N f = 0 := by
-  have h := Complex.integral_boundary_rect_eq_zero_of_differentiable_on
+  have h := Complex.integral_boundary_rect_eq_zero_of_differentiableOn
     f (bottomPoint N (leftEdge N)) (topPoint N 2)
     (by
       simpa [closedRectangle] using continuous)
