@@ -1,0 +1,313 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-cumulative-mertens-square-350-v0.1"
+owner_repository = "grwtsk/math"
+issue = 350
+parent_issue = 347
+criterion_issue = 343
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 349
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CumulativeWeightedMertensSquare"
+build_target = "GRWTSK.NumberTheory.Moebius.CumulativeWeightedMertensSquare"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "62653bf7a2763315b2e4f4ec5bff6cdb78af63e5"
+stacked_parent_tree = "14d87b941c630aea4671d4615672e2673d848dd7"
+new_module_path = "GRWTSK/NumberTheory/Moebius/CumulativeWeightedMertensSquare.lean"
+new_module_git_blob = "8e49bbe86c216b82fac5ecbdc23adfeea292f6b8"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/cumulative-weighted-mertens-square.md"
+mathematical_note_git_blob = "b6205362a0d912770691ebb2152f3e4bffb42ec6"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+rh_proved = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unsafe_or_partial_without_report = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.CumulativeWeightedMertensSquare"
+authored_declaration_count = 17
+definition_count = 3
+theorem_script_count = 14
+private_helper_count = 0
+
+[[inherited_targets]]
+path = "verification/rh-all-damping-mean-square-347-v0.1.toml"
+git_blob = "c4494dddd9ffecd54bb77c3a51c3db90b3f0ecc7"
+status = "STACKED_SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/AllDampingMertensMeanSquare.lean"
+git_blob = "9e56686dcc4fa0c0aa220b7e242a81d5b3ff4e8e"
+status = "STACKED_SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Topology/Algebra/InfiniteSum/Real.lean"
+git_blob = "32b87fa4ac3121786c310fa7b31ef263de567d13"
+selected_declarations = ["summable_of_sum_range_le", "Real.tsum_le_of_sum_range_le"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/PSeries.lean"
+git_blob = "6499506f39f848904fbf7c0aca08bc303c19dca4"
+selected_declarations = ["Real.summable_nat_rpow"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[mathematical_scope]
+actual_source = "pickupMertensPrefix"
+base_term = "M_n^2 * n^(-1) * (n+1)^(-1)"
+cumulative_term = "sum_(n<N) base_term"
+forward_direction = "every-positive weighted summability implies every-positive subpolynomial cumulative growth"
+reverse_direction = "finite Abel identity plus delta=epsilon/2 and a shifted p-series"
+terminal_term_retained = true
+strict_exponent_gap_required = true
+dyadic_equivalence_status = "WRITTEN_ONLY"
+arithmetic_bound_status = "OPEN"
+
+[diagnostics]
+mode = "authoring_assistant_finite_checks"
+explicit_check_count = 785353
+report_sha256 = "8add41680a71c777c05fe3ec398032fb8e06ab65eec3c795d41855bd04177e39"
+mobius_reconciliation_limit = 4096
+finite_abel_identity = "PASS_AT_TESTED_FINITE_SCOPE"
+forward_weighted_prefix_bound = "PASS_AT_TESTED_FINITE_SCOPE"
+reverse_abel_majorant = "PASS_AT_TESTED_FINITE_SCOPE"
+unit_interval_power_drop = "PASS_AT_TESTED_FINITE_SCOPE"
+deleted_terminal_mutation = "REJECTED"
+diagnostics_are_not_proof = true
+
+[[hostile_controls]]
+id = "HC01"
+description = "A single cumulative exponent cannot substitute for every positive exponent."
+expected = "REJECT"
+
+[[hostile_controls]]
+id = "HC02"
+description = "The finite Abel terminal term cannot be deleted."
+expected = "REJECT"
+
+[[hostile_controls]]
+id = "HC03"
+description = "Choosing delta equal to epsilon leaves a harmonic comparison and cannot prove summability."
+expected = "REJECT"
+
+[[hostile_controls]]
+id = "HC04"
+description = "A finite numerical prefix cannot witness the universal subpolynomial cumulative proposition."
+expected = "REJECT"
+
+[[hostile_controls]]
+id = "HC05"
+description = "Pointwise Mertens power saving is not inferred from the cumulative averaged condition."
+expected = "REJECT"
+
+[[hostile_controls]]
+id = "HC06"
+description = "The conditional RH theorem cannot be reported without the cumulative supplier."
+expected = "REJECT"
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+independent_review = false
+infinite_arithmetic_estimate = false
+public_root_admission = false
+merge_authorization = false
+execution_hold_release = false
+unconditional_riemann_hypothesis = false
+
+[[declarations]]
+source_name = "weightedMertensBaseTerm"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensBaseTerm (n : ℕ) : ℝ"""
+source_signature_sha256 = "7662a61cb7933f2023fe3bf4c55cbf4e73d8fef21ffc7fecb7613ba388bef4eb"
+
+[[declarations]]
+source_name = "weightedMertensCumulative"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensCumulative (N : ℕ) : ℝ"""
+source_signature_sha256 = "d1de6b3811837d7c6fdeb515a46aabbd438fd1e722ada7705b179adc40c99573"
+
+[[declarations]]
+source_name = "SubpolynomialCumulativeWeightedMertensSquare"
+visibility = "public"
+kind = "def"
+source_signature = """def SubpolynomialCumulativeWeightedMertensSquare : Prop"""
+source_signature_sha256 = "df7f481b3c07349ec5473b610e56aeb27cc5c6386e201d4ee2aecdeb00a15cab"
+
+[[declarations]]
+source_name = "weightedMertensBaseTerm_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensBaseTerm_nonneg (n : ℕ) :
+    0 ≤ weightedMertensBaseTerm n"""
+source_signature_sha256 = "d2bae453e598b49dcd7d71132e73d3c584f28dbdab381842de3e42d2fd980be0"
+
+[[declarations]]
+source_name = "weightedMertensCumulative_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensCumulative_nonneg (N : ℕ) :
+    0 ≤ weightedMertensCumulative N"""
+source_signature_sha256 = "3a9f26d5d2436e7d714c5e32d587a9dec387a019c67295aaa7f3155c4f0a5bcc"
+
+[[declarations]]
+source_name = "weightedMertensCumulative_zero"
+visibility = "public"
+kind = "theorem"
+source_signature = """@[simp] theorem weightedMertensCumulative_zero :
+    weightedMertensCumulative 0 = 0"""
+source_signature_sha256 = "70707b3101197a4256916775bcb7dc124e969a8b02be4ee898afe7671826967c"
+
+[[declarations]]
+source_name = "weightedMertensCumulative_succ"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensCumulative_succ (N : ℕ) :
+    weightedMertensCumulative (N + 1) =
+      weightedMertensCumulative N + weightedMertensBaseTerm N"""
+source_signature_sha256 = "dfb88b05dfa0a66989b54ff04afea94d84732a04717944d7e07b64e86b7b446d"
+
+[[declarations]]
+source_name = "weightedMertensSquareTerm_eq_base"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensSquareTerm_eq_base (ε : ℝ) (n : ℕ) :
+    pickupMertensPrefix n ^ 2 * (n : ℝ) ^ (-(1 : ℝ)) *
+        ((n + 1 : ℕ) : ℝ) ^ (-(1 + ε)) =
+      weightedMertensBaseTerm n *
+        ((n + 1 : ℕ) : ℝ) ^ (-ε)"""
+source_signature_sha256 = "b258e4acbd58be078e7bd1bed43da69bb316fad6890ea635836e5a94d1621ef5"
+
+[[declarations]]
+source_name = "criticalWeightedMertensSquareSummable_iff_base"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem criticalWeightedMertensSquareSummable_iff_base (ε : ℝ) :
+    CriticalWeightedMertensSquareSummable ε ↔
+      Summable (fun n : ℕ =>
+        weightedMertensBaseTerm n *
+          ((n + 1 : ℕ) : ℝ) ^ (-ε))"""
+source_signature_sha256 = "305bef6310a31f8a2bf7fa8acdc1fe1a5423bee3af5ec8c22f37e163907c5ac5"
+
+[[declarations]]
+source_name = "finite_abel_sum"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem finite_abel_sum (b w : ℕ → ℝ) (N : ℕ) :
+    (∑ n ∈ Finset.range (N + 1), b n * w n) =
+      (∑ n ∈ Finset.range (N + 1), b n) * w N +
+        ∑ n ∈ Finset.range N,
+          (∑ k ∈ Finset.range (n + 1), b k) *
+            (w n - w (n + 1))"""
+source_signature_sha256 = "f263feb811ca2e6abed42c75c7eac4d92217161883ae50572cbb0d986cbad508"
+
+[[declarations]]
+source_name = "weightedMertens_partial_sum_abel"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertens_partial_sum_abel (ε : ℝ) (N : ℕ) :
+    (∑ n ∈ Finset.range (N + 1),
+      weightedMertensBaseTerm n *
+        ((n + 1 : ℕ) : ℝ) ^ (-ε)) =
+      weightedMertensCumulative (N + 1) *
+        ((N + 1 : ℕ) : ℝ) ^ (-ε) +
+      ∑ n ∈ Finset.range N,
+        weightedMertensCumulative (n + 1) *
+          (((n + 1 : ℕ) : ℝ) ^ (-ε) -
+            ((n + 2 : ℕ) : ℝ) ^ (-ε))"""
+source_signature_sha256 = "32c37b8acc411e2d97d1c68ed2cc3aaee313a46484d0bf01dea3cf990727449b"
+
+[[declarations]]
+source_name = "cumulative_bound_of_weightedSummable"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem cumulative_bound_of_weightedSummable
+    {δ : ℝ} (hδ : 0 < δ)
+    (hs : Summable (fun n : ℕ =>
+      weightedMertensBaseTerm n *
+        ((n + 1 : ℕ) : ℝ) ^ (-δ))) :
+    ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N →
+      weightedMertensCumulative N ≤ C * (N : ℝ) ^ δ"""
+source_signature_sha256 = "fb01c1ffaf0c7f10ed7c02f0882f6029dad2268cb3a362c7c26824cdef56c36e"
+
+[[declarations]]
+source_name = "subpolynomialCumulative_of_allPositive"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialCumulative_of_allPositive
+    (hs : AllPositiveWeightedMertensSquare) :
+    SubpolynomialCumulativeWeightedMertensSquare"""
+source_signature_sha256 = "649ea9a74df1fb33db267d45905814b1caa4bdb6379d1b822f2e3a4c0c9fdd7f"
+
+[[declarations]]
+source_name = "weighted_partial_sum_bound_of_subpolynomial"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weighted_partial_sum_bound_of_subpolynomial
+    (hsub : SubpolynomialCumulativeWeightedMertensSquare)
+    {ε : ℝ} (hε : 0 < ε) :
+    ∃ K : ℝ, 0 ≤ K ∧ ∀ N : ℕ,
+      (∑ n ∈ Finset.range N,
+        weightedMertensBaseTerm n *
+          ((n + 1 : ℕ) : ℝ) ^ (-ε)) ≤ K"""
+source_signature_sha256 = "efa2095683067429697cbabfe427990679aba19b18959b49a396ed0039176c39"
+
+[[declarations]]
+source_name = "allPositive_of_subpolynomialCumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem allPositive_of_subpolynomialCumulative
+    (hsub : SubpolynomialCumulativeWeightedMertensSquare) :
+    AllPositiveWeightedMertensSquare"""
+source_signature_sha256 = "7cc60f3f1b3977e07e6613b463e588494d90d225e7dc99ce25bc5f431804ccc9"
+
+[[declarations]]
+source_name = "allPositiveWeightedMertensSquare_iff_subpolynomialCumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem allPositiveWeightedMertensSquare_iff_subpolynomialCumulative :
+    AllPositiveWeightedMertensSquare ↔
+      SubpolynomialCumulativeWeightedMertensSquare"""
+source_signature_sha256 = "5a5b8a3f664c71124f5dad221a986d9e870e2dffbc7c5bbe8fe7eb619069453e"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialCumulativeWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem riemannHypothesis_of_subpolynomialCumulativeWeightedMertensSquare
+    (hsub : SubpolynomialCumulativeWeightedMertensSquare) :
+    _root_.RiemannHypothesis"""
+source_signature_sha256 = "03a78fe3599599c2f9147f9122b28722973e60c1a3b3d7c422d67fe4beeae061"
