@@ -15,193 +15,123 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-      - name: Apply one-shot stacked compatibility repairs
+      - name: Apply one-shot quantitative compatibility repairs
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
 
-          optimization = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean")
-          text = optimization.read_text()
-          doc = '''/-- **Bernert--Browning--Lichtman--Teräväinen, Proposition 6.1.**
-          Every feasible exponent is at most `3/5`.
+          path = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean")
+          text = path.read_text()
 
-          Unlike the source appendix's optimization run, this proof has no trusted
-          floating-point or external-solver step: each leaf is discharged by exact
-          linear arithmetic in Lean's kernel. -/
-          set_option maxHeartbeats 10000000 in
-          theorem exponent_le_three_fifths'''
-          replacement = '''set_option maxHeartbeats 10000000
-
-          /-- **Bernert--Browning--Lichtman--Teräväinen, Proposition 6.1.**
-          Every feasible exponent is at most `3/5`.
-
-          Unlike the source appendix's optimization run, this proof has no trusted
-          floating-point or external-solver step: each leaf is discharged by exact
-          linear arithmetic in Lean's kernel. -/
-          theorem exponent_le_three_fifths'''
-          text = text.replace(doc, replacement, 1)
-          old_simp = '''  simp only [Data.p, Data.total] at
-              h61 h65 h66_a h66_b h66_c h67_ab h67_bc h67_ca h68_a h68_b h68_c h69_a h69_b h69_c h610'''
-          new_simp = '''  simp only [Data.p, Data.total] at h61 h65 h66_a h66_b h66_c h67_ab h67_bc h67_ca h68_a h68_b h68_c h69_a h69_b h69_c h610'''
-          text = text.replace(old_simp, new_simp, 1)
-          optimization.write_text(text)
-
-          boxes = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AnatomicBoxes.lean")
-          text = boxes.read_text()
-          text = text.replace('''    SupportPrimitive p q := by
-            simp [boxFinset]''', '''    SupportPrimitive p q := by
-            simpa [boxFinset, and_assoc]''', 1)
-          boxes.write_text(text)
-
-          exact = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean")
-          text = exact.read_text()
-          text = text.replace('''  · intro p hp q hq hpq
-            rw [← Nat.coprime_iff_isRelPrime]''', '''  · intro p hp q hq hpq
-            change IsRelPrime p q
-            rw [← Nat.coprime_iff_isRelPrime]''', 1)
-          text = text.replace('''  · intro i _ j _ hij
-            rw [← Nat.coprime_iff_isRelPrime]''', '''  · intro i _ j _ hij
-            change IsRelPrime (multiplicityLayer n i ^ i)
-              (multiplicityLayer n j ^ j)
-            rw [← Nat.coprime_iff_isRelPrime]''', 1)
-          exact.write_text(text)
-
-          quantitative = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean")
-          text = quantitative.read_text()
-          text = text.replace('''import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-          import Mathlib.Data.Real.StarOrdered
-          import Mathlib.Order.CompletePartialOrder''', '''import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
-          import Mathlib.Algebra.Order.Star.Real
-          import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
-          import Mathlib.Order.CompletePartialOrder''', 1)
-          text = text.replace('''rw [← Nat.prod_factorization_pow_eq_self (show n ≠ 0 by omega)]''', '''rw [← Nat.prod_factorization_pow_eq_self
-              (Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n))]''', 1)
           text = text.replace('''  have hpos : 1 ≤ n.factorization p := by
-            rw [← hp.dvd_iff_one_le_factorization]
-            · exact hpn
-            · omega''', '''  have hpos : 1 ≤ n.factorization p := by
-            rw [← hp.dvd_iff_one_le_factorization]
-            · exact hpn
-            · exact Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n)''', 1)
+              rw [← hp.dvd_iff_one_le_factorization]
+              · exact hpn
+              · omega''', '''  have hpos : 1 ≤ n.factorization p := by
+              rw [← hp.dvd_iff_one_le_factorization]
+              · exact hpn
+              · exact Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n)''', 1)
+
           text = text.replace('''  · intro i _ j _ hij
-            apply Nat.Coprime.isRelPrime
-            apply Nat.Coprime.pow_right
-            apply Nat.Coprime.pow_left
-            exact hy_cop i j hij''', '''  · intro i _ j _ hij
-            change IsRelPrime (y i ^ i) (y j ^ j)
-            rw [← Nat.coprime_iff_isRelPrime]
-            apply Nat.Coprime.pow_right
-            apply Nat.Coprime.pow_left
-            exact hy_cop i j hij''', 1)
-          text = text.replace('''private theorem hK_pos : 0 < K := by
-            rw [K, Nat.ceil_pos]
-            simp [hε_pos]''', '''private theorem hK_pos : 0 < K := by
-            rw [show K = ⌈ε⁻¹⌉₊ by rfl, Nat.ceil_pos]
-            exact inv_pos.mpr hε_pos''', 1)
-          text = text.replace('''  intro i _ _
-            exact pow_pos (hy_pos _)''', '''  intro i _ _
-            apply pow_pos
-            exact hy_pos _''', 1)
+              apply Nat.Coprime.isRelPrime
+              apply Nat.Coprime.pow_right
+              apply Nat.Coprime.pow_left
+              exact hy_cop i j hij''', '''  · intro i _ j _ hij
+              change IsRelPrime (y i ^ i) (y j ^ j)
+              rw [← Nat.coprime_iff_isRelPrime]
+              apply Nat.Coprime.pow_right
+              apply Nat.Coprime.pow_left
+              exact hy_cop i j hij''', 1)
+
           text = text.replace('''    apply (nat_eq_fin_iff _).symm
-            omega''', '''    apply (nat_eq_fin_iff _).symm
-            have hk := hKd
-            omega''', 1)
+              omega''', '''    apply (nat_eq_fin_iff _).symm
+              have hk := hKd
+              omega''', 1)
+
           text = text.replace('''      apply Finset.prod_le_prod_of_subset_of_one_le
-            · simp
-            simp only [Finset.mem_union, Finset.mem_Icc]''', '''      apply Finset.prod_le_prod_of_subset_of_one_le
-            · exact Finset.subset_union_right
-            simp only [Finset.mem_union, Finset.mem_Icc]''', 1)
+              · simp
+              simp only [Finset.mem_union, Finset.mem_Icc]''', '''      apply Finset.prod_le_prod_of_subset_of_one_le
+              · exact Finset.subset_union_right
+              simp only [Finset.mem_union, Finset.mem_Icc]''', 1)
+
           text = text.replace('''    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by
-            gcongr
+              gcongr
 
           private theorem c_le_X_pow''', '''    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by
-            gcongr
-            exact_mod_cast hnX
+              gcongr
+              exact_mod_cast hnX
 
           private theorem c_le_X_pow''', 1)
+
           text = text.replace('''    _ ≤ (X : ℝ) ^ ε := by
-            gcongr
-            · norm_cast
-              omega
-            · exact hK_div_d''', '''    _ ≤ (X : ℝ) ^ ε := by
-            exact Real.rpow_le_rpow_of_exponent_le
-              (by exact_mod_cast h1n.trans hnX) hK_div_d''', 1)
-          text = text.replace('''private theorem KIndex_val_add_one : KIndex.val + 1 = K := by
-            have hlt : K - 1 < d := by omega
-            simp [KIndex, Fin.ofNat, Nat.mod_eq_of_lt hlt]
-            omega''', '''private theorem KIndex_val_add_one : KIndex.val + 1 = K := by
-            have hlt : K - 1 < d := by
+              gcongr
+              · norm_cast
+                omega
+              · exact hK_div_d
+
+          /-- The distinguished index''', '''    _ ≤ (X : ℝ) ^ ε := by
+              exact Real.rpow_le_rpow_of_exponent_le
+                (by exact_mod_cast h1n.trans hnX) hK_div_d
+
+          /-- The distinguished index''', 1)
+
+          text = text.replace('''    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
+              gcongr
+            _ ≤ (X : ℝ) ^ ε := by
+              gcongr
+              · norm_cast
+                omega
+              · exact K_inv_le_eps''', '''    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
+              gcongr
+              exact_mod_cast hnX
+            _ ≤ (X : ℝ) ^ ε := by
+              exact Real.rpow_le_rpow_of_exponent_le
+                (by exact_mod_cast h1n.trans hnX) K_inv_le_eps''', 1)
+
+          text = text.replace('''        have hlt : K - 1 < d := by
+            have hk := hKd
+            omega
+            constructor''', '''        have hlt : K - 1 < d := by
               have hk := hKd
               omega
-            simp [KIndex, Fin.ofNat, Nat.mod_eq_of_lt hlt]
-            have hk := hK_pos
-            omega''', 1)
-          text = text.replace('''theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by
-            rw [x, ite_eq_left ?side]
-            case side =>
-              simp
-            simp only''', '''theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by
-            rw [x, if_pos KIndex_val_add_one]
-            simp only''', 1)
-          text = text.replace('''    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
-            gcongr
-            _ ≤ (X : ℝ) ^ ε := by
-            gcongr
-            · norm_cast
-              omega
-            · exact K_inv_le_eps''', '''    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
-            gcongr
-            exact_mod_cast hnX
-            _ ≤ (X : ℝ) ^ ε := by
-            exact Real.rpow_le_rpow_of_exponent_le
-              (by exact_mod_cast h1n.trans hnX) K_inv_le_eps''', 1)
-          text = text.replace('''          (∏ j : Fin d, x j : ℝ) ≤''', '''          ((∏ j : Fin d, x j : ℕ) : ℝ) ≤''', 1)
-          text = text.replace('''        have hlt : K - 1 < d := by omega''', '''        have hlt : K - 1 < d := by
-                  have hk := hKd
-                  omega''', 1)
+            constructor''', 1)
+
           text = text.replace('''    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
-            norm_cast
-            apply Finset.prod_le_prod_of_subset_of_one_le
-            · exact Finset.filter_subset _ _
-            · intro i hi hnot
-              exact (hy_pos _)''', '''    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
-            apply Finset.prod_le_prod_of_subset_of_one_le₀
-            · exact Finset.filter_subset _ _
-            · intro i hi
-              positivity
-            · intro i hi hnot
-              have h_one : 1 ≤ y (i + 1) := Nat.succ_le_iff.mpr (hy_pos _)
-              exact_mod_cast h_one''', 1)
+              norm_cast
+              apply Finset.prod_le_prod_of_subset_of_one_le
+              · exact Finset.filter_subset _ _
+              · intro i hi hnot
+                exact (hy_pos _)''', '''    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
+              apply Finset.prod_le_prod_of_subset_of_one_le₀
+              · exact Finset.filter_subset _ _
+              · intro i hi
+                positivity
+              · intro i hi hnot
+                have h_one : 1 ≤ y (i + 1) := Nat.succ_le_iff.mpr (hy_pos _)
+                exact_mod_cast h_one''', 1)
+
           text = text.replace('''    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
-            norm_cast
-            apply Finset.prod_le_prod_of_subset_of_one_le
-            · simp
-            · intro i hi hnot
-              exact (hy_pos _)''', '''    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
-            apply Finset.prod_le_prod_of_subset_of_one_le₀
-            · exact Finset.subset_union_left
-            · intro i hi
-              positivity
-            · intro i hi hnot
-              have h_one : 1 ≤ y i := Nat.succ_le_iff.mpr (hy_pos _)
-              exact_mod_cast h_one''', 1)
-          quantitative.write_text(text)
+              norm_cast
+              apply Finset.prod_le_prod_of_subset_of_one_le
+              · simp
+              · intro i hi hnot
+                exact (hy_pos _)''', '''    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
+              apply Finset.prod_le_prod_of_subset_of_one_le₀
+              · exact Finset.subset_union_left
+              · intro i hi
+                positivity
+              · intro i hi hnot
+                have h_one : 1 ≤ y i := Nat.succ_le_iff.mpr (hy_pos _)
+                exact_mod_cast h_one''', 1)
+
+          path.write_text(text)
           PY
           git diff --check
-          if ! git diff --quiet -- \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AnatomicBoxes.lean \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean; then
+          if ! git diff --quiet -- GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AnatomicBoxes.lean \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean \
-              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean
-            git commit -m "Repair the quantitative abc anatomy against Lean 4.33 (#401)"
+            git add GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean
+            git commit -m "Finish the quantitative abc Lean compatibility repair (#401)"
             git push
           fi
       - name: Set up Lean and Mathlib cache
