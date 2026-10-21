@@ -177,8 +177,7 @@ theorem summable_cellMass_iff_compensatedCorrelationBound
           (σ / 4) *
             (∑ k ∈ Finset.range N, sampleCellMass σ k) := by
       rw [heq]
-      field_simp [hσ.ne']
-      ring
+      field_simp [hσ.ne'] <;> ring
     calc
       sampleCompensatedCorrelation σ N ≤
           sampleCompensatedCorrelation σ N +
@@ -316,6 +315,14 @@ theorem compensatedCorrelationBound_one_iff_criticalBoundary :
       (by norm_num : (0 : ℝ) < 1)).symm.trans
     (summable_sampleCellMass_one_iff_endpointDefectSummable.trans
       criticalBoundary_iff_endpointDefectSummable.symm)
+
+/-- The same damping-one condition is also the existing smoothed Mertens
+transform square-summability criterion. -/
+theorem compensatedCorrelationBound_one_iff_mertensTransformSummable :
+    CompensatedCorrelationBound 1 ↔
+      CriticalMertensTransformSummable :=
+  compensatedCorrelationBound_one_iff_criticalBoundary.trans
+    criticalBoundary_iff_mertensTransformSummable
 
 /-- Existing increment mean-square suppliers can therefore be read directly
 as suppliers of the compensated correlation at damping one. -/
