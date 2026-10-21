@@ -143,13 +143,14 @@ structure Feasible (x : Data) : Prop where
     Data.envelope x.a_part + Data.envelope x.b_part + Data.envelope x.c_part ≤
       4 * x.total - 6 * x.exponent
 
+set_option maxHeartbeats 10000000
+
 /-- **Bernert--Browning--Lichtman--Teräväinen, Proposition 6.1.**
 Every feasible exponent is at most `3/5`.
 
 Unlike the source appendix's optimization run, this proof has no trusted
 floating-point or external-solver step: each leaf is discharged by exact
 linear arithmetic in Lean's kernel. -/
-set_option maxHeartbeats 10000000 in
 theorem exponent_le_three_fifths (x : Data) (h : Feasible x) :
     x.exponent ≤ (3 : ℝ) / 5 := by
   have ha0 : 0 ≤ x.a_part 0 := h.nonneg_a 0
@@ -196,8 +197,7 @@ theorem exponent_le_three_fifths (x : Data) (h : Feasible x) :
   have h69_b := h.h69_b
   have h69_c := h.h69_c
   have h610 := h.h610
-  simp only [Data.p, Data.total] at
-    h61 h65 h66_a h66_b h66_c h67_ab h67_bc h67_ca h68_a h68_b h68_c h69_a h69_b h69_c h610
+  simp only [Data.p, Data.total] at h61 h65 h66_a h66_b h66_c h67_ab h67_bc h67_ca h68_a h68_b h68_c h69_a h69_b h69_c h610
   have h64ab : x.exponent ≤ x.a_total + x.b_total :=
     (le_min_iff.mp h64).1
   have h64ac : x.exponent ≤ x.a_total + x.c_total :=
