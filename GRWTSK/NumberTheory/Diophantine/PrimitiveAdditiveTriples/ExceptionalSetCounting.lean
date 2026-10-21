@@ -9,6 +9,7 @@ Proposition 6.1 optimization certificate. It does not supply the paper's
 anatomic decomposition, Fourier estimate, or geometry-of-numbers estimate;
 those remain explicit obligations of `ExceptionalSetAnalyticSupplier`. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExactAnatomicFactorization
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.MomentReindexing
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetOptimization
 import Mathlib.Tactic
