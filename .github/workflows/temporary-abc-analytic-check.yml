@@ -15,14 +15,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-      - name: Apply one-shot optimization parser repair
+      - name: Apply one-shot stacked compatibility repairs
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
 
-          path = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean")
-          text = path.read_text()
+          optimization = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean")
+          text = optimization.read_text()
           doc = '''/-- **Bernert--Browning--Lichtman--Teräväinen, Proposition 6.1.**
           Every feasible exponent is at most `3/5`.
 
@@ -40,21 +40,45 @@ jobs:
           floating-point or external-solver step: each leaf is discharged by exact
           linear arithmetic in Lean's kernel. -/
           theorem exponent_le_three_fifths'''
-          if doc in text:
-              text = text.replace(doc, replacement, 1)
+          text = text.replace(doc, replacement, 1)
           old_simp = '''  simp only [Data.p, Data.total] at
               h61 h65 h66_a h66_b h66_c h67_ab h67_bc h67_ca h68_a h68_b h68_c h69_a h69_b h69_c h610'''
           new_simp = '''  simp only [Data.p, Data.total] at h61 h65 h66_a h66_b h66_c h67_ab h67_bc h67_ca h68_a h68_b h68_c h69_a h69_b h69_c h610'''
-          if old_simp in text:
-              text = text.replace(old_simp, new_simp, 1)
-          path.write_text(text)
+          text = text.replace(old_simp, new_simp, 1)
+          optimization.write_text(text)
+
+          boxes = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AnatomicBoxes.lean")
+          text = boxes.read_text()
+          text = text.replace('''    SupportPrimitive p q := by
+            simp [boxFinset]''', '''    SupportPrimitive p q := by
+            simpa [boxFinset, and_assoc]''', 1)
+          boxes.write_text(text)
+
+          exact = Path("GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean")
+          text = exact.read_text()
+          text = text.replace('''  · intro p hp q hq hpq
+            rw [← Nat.coprime_iff_isRelPrime]''', '''  · intro p hp q hq hpq
+            change IsRelPrime p q
+            rw [← Nat.coprime_iff_isRelPrime]''', 1)
+          text = text.replace('''  · intro i _ j _ hij
+            rw [← Nat.coprime_iff_isRelPrime]''', '''  · intro i _ j _ hij
+            change IsRelPrime (multiplicityLayer n i ^ i)
+              (multiplicityLayer n j ^ j)
+            rw [← Nat.coprime_iff_isRelPrime]''', 1)
+          exact.write_text(text)
           PY
           git diff --check
-          if ! git diff --quiet -- GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean; then
+          if ! git diff --quiet -- \
+              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean \
+              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AnatomicBoxes.lean \
+              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean
-            git commit -m "Repair the exact abc optimization parser (#376)"
+            git add \
+              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetOptimization.lean \
+              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AnatomicBoxes.lean \
+              GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExactAnatomicFactorization.lean
+            git commit -m "Repair the stacked abc Lean compatibility seams (#376 #394 #402)"
             git push
           fi
       - name: Set up Lean and Mathlib cache
