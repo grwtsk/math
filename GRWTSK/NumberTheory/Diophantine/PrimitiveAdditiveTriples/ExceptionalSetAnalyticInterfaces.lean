@@ -40,7 +40,8 @@ def paperIndex {d : ℕ} (i : Fin d) : ℕ := i.val + 1
 
 @[simp] theorem paperIndex_le {d : ℕ} (i : Fin d) :
     paperIndex i ≤ d := by
-  exact i.isLt
+  unfold paperIndex
+  omega
 
 /-- A dyadic scale in the source-paper sense: a positive power of two lying in
 `[1,X]`.  Strict versus closed ownership belongs to box points, not the scale. -/
@@ -167,21 +168,17 @@ def Proposition31BoundAt {d : ℕ} (λ ε₀ : ℝ) (X : ℕ)
     K * Real.rpow (X : ℝ) (2 * λ / 3 + 3 * ε₀) /
       proposition31Denominator p j k ℓ
 
-/-- Uniform sufficiently-large-`X` supplier for Proposition 3.1.  No analytic
-proof is hidden by this structure: the constant, threshold, and every bound are
-explicit fields. -/
-structure Proposition31FourierSupplier (λ ε₀ : ℝ) (d : ℕ) : Prop where
-  constant : ℝ
-  constant_nonneg : 0 ≤ constant
-  threshold : ℕ
-  bound :
-    ∀ X : ℕ, threshold ≤ X →
+/-- Uniform sufficiently-large-`X` supplier for Proposition 3.1.  The implicit
+constant and threshold are existential and remain visible in the proposition. -/
+def Proposition31FourierSupplier (λ ε₀ : ℝ) (d : ℕ) : Prop :=
+  ∃ K : ℝ, 0 ≤ K ∧ ∃ X₀ : ℕ,
+    ∀ X : ℕ, X₀ ≤ X →
     ∀ p : Parameters d, PaperAdmissible λ ε₀ X p →
     ∀ j k ℓ : ℕ,
       2 ≤ j → j ≤ d →
       2 ≤ k → k ≤ d →
       2 ≤ ℓ → ℓ ≤ d →
-      Proposition31BoundAt λ ε₀ X p j k ℓ constant
+      Proposition31BoundAt λ ε₀ X p j k ℓ K
 
 /-- The first denominator in Proposition 4.1. -/
 def proposition41SelectedScaleProduct {d : ℕ} (p : Parameters d)
@@ -209,30 +206,25 @@ def Proposition41BoundAt {d : ℕ} (λ ε₀ : ℝ) (X : ℕ)
           (proposition41SelectedWeightedProduct p I I' I'' : ℝ))
 
 /-- Uniform sufficiently-large-`X` supplier for Proposition 4.1. -/
-structure Proposition41GeometrySupplier (λ ε₀ : ℝ) (d : ℕ) : Prop where
-  constant : ℝ
-  constant_nonneg : 0 ≤ constant
-  threshold : ℕ
-  bound :
-    ∀ X : ℕ, threshold ≤ X →
+def Proposition41GeometrySupplier (λ ε₀ : ℝ) (d : ℕ) : Prop :=
+  ∃ K : ℝ, 0 ≤ K ∧ ∃ X₀ : ℕ,
+    ∀ X : ℕ, X₀ ≤ X →
     ∀ p : Parameters d, PaperAdmissible λ ε₀ X p →
     ∀ I I' I'' : Finset (Fin d),
-      Proposition41BoundAt λ ε₀ X p I I' I'' constant
+      Proposition41BoundAt λ ε₀ X p I I' I'' K
 
 /-- The all-small-`ε₀`, all-finite-d version of the Fourier proposition.
 Constants and thresholds may depend on `ε₀` and `d`, as in the source. -/
-structure Proposition31FourierFamily (λ : ℝ) : Prop where
-  estimate :
-    ∀ ε₀ : ℝ, 0 < ε₀ →
-    ∀ d : ℕ, 0 < d →
-      Proposition31FourierSupplier λ ε₀ d
+def Proposition31FourierFamily (λ : ℝ) : Prop :=
+  ∀ ε₀ : ℝ, 0 < ε₀ →
+  ∀ d : ℕ, 0 < d →
+    Proposition31FourierSupplier λ ε₀ d
 
 /-- The all-small-`ε₀`, all-finite-d version of the geometry proposition. -/
-structure Proposition41GeometryFamily (λ : ℝ) : Prop where
-  estimate :
-    ∀ ε₀ : ℝ, 0 < ε₀ →
-    ∀ d : ℕ, 0 < d →
-      Proposition41GeometrySupplier λ ε₀ d
+def Proposition41GeometryFamily (λ : ℝ) : Prop :=
+  ∀ ε₀ : ℝ, 0 < ε₀ →
+  ∀ d : ℕ, 0 < d →
+    Proposition41GeometrySupplier λ ε₀ d
 
 /-- The remaining extraction task: combine the two proposition families and
 the parameter/exponent bookkeeping into a feasible Proposition 6.1 point. -/
