@@ -114,7 +114,7 @@ private theorem prod_y_pow_eq_n :
   have hpos : 1 ≤ n.factorization p := by
     rw [← hp.dvd_iff_one_le_factorization]
     · exact hpn
-    · omega
+    · exact Nat.ne_of_gt (lt_of_lt_of_le Nat.zero_lt_one h1n)
   tauto
 
 private theorem hy_cop (i j : ℕ) (hij : i ≠ j) : Nat.Coprime (y i) (y j) :=
@@ -137,7 +137,8 @@ private theorem prod_y_eq_radical_n :
       have h := radical_associated (y_squarefree (i := i)).isRadical (hy_pos _).ne'
       exact associated_iff_eq.mp h.symm
   · intro i _ j _ hij
-    apply Nat.Coprime.isRelPrime
+    change IsRelPrime (y i ^ i) (y j ^ j)
+    rw [← Nat.coprime_iff_isRelPrime]
     apply Nat.Coprime.pow_right
     apply Nat.Coprime.pow_left
     exact hy_cop i j hij
@@ -283,6 +284,7 @@ private theorem aux (f : ℕ → ℕ) :
     rw [eq_comm]
     conv_rhs => rw [eq_comm]
     apply (nat_eq_fin_iff _).symm
+    have hk := hKd
     omega
   simp [hfilter]
 
