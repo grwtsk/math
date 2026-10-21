@@ -1,0 +1,261 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-abel-mass-quadratic-489-v0.1"
+owner_repository = "grwtsk/math"
+issue = 489
+parent_issue = 482
+parent_pr = 485
+generic_dispersion_issue = 476
+generic_dispersion_pr = 481
+depth_packet_issue = 473
+depth_packet_pr = 475
+signed_abel_issue = 468
+signed_abel_pr = 470
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_WEIGHTED_QUADRATIC_ENERGY_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SignedAbelMassQuadraticEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.SignedAbelMassQuadraticEnergy"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-signed-abel-weighted-dispersion-482-20261021"
+stacked_parent_revision = "2e09c78468034572ae88d63ac88d53cc463440d7"
+stacked_parent_tree = "4d0838bc65e695774f2a9b476c4f60e27959703f"
+candidate_branch = "research/rh-abel-mass-quadratic-489-20261021"
+theorem_source_commit = "aa9c3f36b7318fd94c3fa6914ab4b3a4933c3ec8"
+theorem_source_tree = "9ecb388868bebf4225c1cc2e37224c4786ba3d55"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SignedAbelMassQuadraticEnergy.lean"
+theorem_source_git_blob = "224462b26a6cfd8f926f636e12061e692cf1268c"
+mathematical_note_commit = "fcaf6d1715173ddfbca7b161c5129aa1a7073b2d"
+mathematical_note_tree = "5c17bcde1085435cb37969a310a64fa7eab682f8"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/signed-abel-mass-quadratic-energy.md"
+mathematical_note_git_blob = "ef8d9354a17501244c998f2580967d99a0240606"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[terminal_consumer]
+source_premise = "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy"
+dispersion_premise = "SubpolynomialDyadicSignedAbelWeightedDispersion"
+depth_premise = "SubpolynomialDyadicSignedAbelDepthPacket"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicSignedAbelDepthPacket"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[selected_increment]
+telescoped_mass = "weightedMertensSignedAbelDepthTelescopedMass"
+drop_range_helper = "weightedMertensSignedAbelDepthMass_eq_dropRange"
+exact_mass_theorem = "weightedMertensSignedAbelDepthMass_eq_telescoped"
+mass_bound = "weightedMertensSignedAbelDepthMass_le_right_inv"
+global_quadratic_energy = "weightedMertensSignedAbelGlobalQuadraticEnergy"
+radius_square_bound = "weightedMertensSignedAbelDepthDispersionRadius_sq_le"
+majorant_square_bound = "weightedMertensDyadicSignedAbelDispersionMajorant_sq_le_globalQuadratic"
+sqrt_bound = "weightedMertensDyadicSignedAbelDispersionMajorant_le_sqrtGlobalQuadratic"
+all_scale_supplier = "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy"
+supplier_transport = "subpolynomialDyadicSignedAbelWeightedDispersion_of_globalQuadratic"
+conditional_rh = "riemannHypothesis_of_subpolynomialDyadicSignedAbelGlobalQuadraticEnergy"
+proof_classification = "FINITE_SHIFT_TELESCOPE_PLUS_SECOND_FINITE_CAUCHY"
+next_obstruction = "prove or obstruct the global Abel-weighted quadratic energy estimate"
+
+[abel_mass]
+dyadic_endpoint = "Y=2^(j+1)"
+weight = "signedAbelDepthWeight j t h"
+support = "1<=h<Y and t<Y-h-1"
+mass = "sum_(1<=h<Y) W(j,t,h)"
+exact_formula = "if t+2<=Y then dyadicMertensShiftWeight j (t+2) else 0"
+terminal_weight = "dyadicMertensShiftWeight j Y = 0"
+upper_bound = "Mass(j,t) <= 1/Y"
+lower_bound = "0 <= Mass(j,t)"
+mass_is_arithmetic_estimate = false
+mass_is_finite_kernel_identity = true
+
+[global_quadratic_energy]
+name = "weightedMertensSignedAbelGlobalQuadraticEnergy"
+depth_energy = "weightedMertensSignedAbelDepthQuadraticEnergy"
+formula = "sum_(t<Y) sum_(1<=h<Y) (2*mertensTwoPointPrefix h (t+1))^2 * W(j,t,h)"
+equivalent_informal_formula = "4*sum_(t,h) C_h(t+1)^2*W(j,t,h)"
+uses_maximum_over_windows = false
+uses_termwise_absolute_value_sum = false
+signed_source_reconstructed_before_square = true
+triangular_support_retained = true
+abel_weights_retained_exactly = true
+
+[second_cauchy]
+depth_count = "Y"
+radius = "sqrt(DepthQuadraticEnergy(j,t)*Mass(j,t))"
+per_depth_square_bound = "Radius(j,t)^2 <= DepthQuadraticEnergy(j,t)/Y"
+finite_cauchy = "DispersionMajorant(j)^2 <= Y*sum_t Radius(j,t)^2"
+endpoint_cancellation = "Y*(1/Y)=1"
+result = "DispersionMajorant(j)^2 <= GlobalQuadraticEnergy(j)"
+sqrt_result = "DispersionMajorant(j) <= sqrt(GlobalQuadraticEnergy(j))"
+probability_used = false
+asymptotics_used = false
+
+[all_scale_supplier]
+name = "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy"
+formula = "forall delta>0 exists C>=0 forall j, GlobalQuadraticEnergy(j) <= (C*(2^j)^delta)^2"
+supplier_constructed = false
+arithmetic_estimate_proved = false
+conditional_chain = [
+  "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy",
+  "SubpolynomialDyadicSignedAbelWeightedDispersion",
+  "SubpolynomialDyadicSignedAbelDepthPacket",
+  "RiemannHypothesis"
+]
+
+[comparison]
+earlier_carleson_observable = "max over block positions at each aligned scale, squared and summed over shifts/scales"
+current_observable = "actual Abel-weighted squared two-point prefix correlations"
+current_has_window_maximum = false
+current_has_exact_kernel_differences = true
+current_pays_shift_mass_exactly = true
+current_is_proved_small = false
+current_is_rh_equivalent = false
+
+[positivity]
+abel_drop_nonnegative = true
+depth_mass_nonnegative = true
+depth_quadratic_energy_nonnegative = true
+global_quadratic_energy_nonnegative = true
+dispersion_radius_nonnegative = true
+signed_depth_slice_positive_claimed = false
+signed_packet_positive_claimed = false
+positive_kernel_claimed = false
+positive_measure_claimed = false
+trace_state_positivity_claimed = false
+weil_positivity_claimed = false
+global_rh_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+weighted_quadratic_energy_estimate_proved = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_private_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_source_text_as_kernel_evidence = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SignedAbelMassQuadraticEnergy"
+authored_declaration_count = 12
+definition_count = 3
+theorem_script_count = 9
+private_helper_count = 1
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthWeightedDispersion.lean"
+git_blob = "628cf95ac1c145d9a8a52a1a81e85a3db29e712a"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_485"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthDispersion.lean"
+git_blob = "f5cf7fa855bbebbbdc7411add123116963693f80"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_481"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelDepthPacket.lean"
+git_blob = "ef7b3e9ce1c185093809e01ef5682b7ffdea438d"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_475"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelShiftPacket.lean"
+git_blob = "6c953dad99f2e410f47ee8350a6f19b729ff8df9"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_470"
+
+[[dependencies]]
+source = "Mathlib"
+uses = [
+  "Finset.sum_Ico_eq_sum_range",
+  "sq_sum_le_card_mul_sum_sq",
+  "Real.sq_sqrt",
+  "Real.le_sqrt_of_sq_le",
+  "sq_le_sq₀",
+  "omega",
+  "field_simp"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[statement_controls]
+positive_shift_range_exact = true
+depth_range_exact = true
+triangular_support_exact = true
+zero_extension_literal = true
+abel_drop_orientation_preserved = true
+right_endpoint_weight_zero_used = true
+shift_mass_telescoped_exactly = true
+reciprocal_endpoint_bound_retained = true
+second_cauchy_depth_count_exact = true
+signed_source_reconstructed_upstream_before_quadratic_majorization = true
+no_window_maximum_introduced = true
+
+[hostile_controls]
+sum_h_abs_cell_replacement_rejected = true
+triangular_support_loss_rejected = true
+arbitrary_weight_replacement_rejected = true
+factor_four_loss_rejected = true
+mass_nonnegativity_not_promoted_to_cancellation = true
+fixed_shift_chowla_not_promoted_to_global_energy = true
+carleson_bound_not_imported_without_theorem = true
+source_elaboration_not_promoted_to_arithmetic_estimate = true
+conditional_rh_endpoint_not_promoted_to_rh_proof = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_private_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+global_weighted_quadratic_energy_estimate = true
+source_comparison_to_dispersion_large_sieve_or_higher_order_results = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+weighted_quadratic_energy_bound_proved = false
+large_sieve_estimate_proved = false
+dispersion_estimate_proved = false
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "weightedMertensSignedAbelDepthTelescopedMass",
+  "weightedMertensSignedAbelDepthMass_eq_dropRange",
+  "weightedMertensSignedAbelDepthMass_eq_telescoped",
+  "weightedMertensSignedAbelDepthMass_le_right_inv",
+  "weightedMertensSignedAbelGlobalQuadraticEnergy",
+  "weightedMertensSignedAbelGlobalQuadraticEnergy_nonneg",
+  "weightedMertensSignedAbelDepthDispersionRadius_sq_le",
+  "weightedMertensDyadicSignedAbelDispersionMajorant_sq_le_globalQuadratic",
+  "weightedMertensDyadicSignedAbelDispersionMajorant_le_sqrtGlobalQuadratic",
+  "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy",
+  "subpolynomialDyadicSignedAbelWeightedDispersion_of_globalQuadratic",
+  "riemannHypothesis_of_subpolynomialDyadicSignedAbelGlobalQuadraticEnergy"
+]
