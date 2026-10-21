@@ -1,0 +1,45 @@
+schema = "grwtsk.lean-subject-seams/0.1"
+id = "lean-subject-seams-v0.1"
+owner_issue = 403
+module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan"
+source_path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean"
+status = "SOURCE_ONLY_NOT_RUN_NOT_KERNEL_AUDITED"
+public_root_required = false
+
+required_declarations = [
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.ByteSpan",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.CoversFrom",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.CommandIdentity",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.DeclarationFingerprint",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.DeclarationOrigin",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.ContextState",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.CommandUnit",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.DependencyEdge",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.ConceptualSlice",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.reconstructsExactBytes",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.coversExactSourceRange",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.keepsHardDependenciesTogether",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.preservesPublicSignatures",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.preservesNotices",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.ordersEveryResultDependency",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan.noMachineImplication",
+]
+
+required_checks = [
+  "direct module elaboration",
+  "exact declaration/type inventory",
+  "positive exact-span coverage fixture",
+  "overlap rejection fixture",
+  "duplicate-command rejection fixture",
+  "machine-implication rejection fixture",
+  "transitive axiom and unsafe/native audit",
+]
+
+nonclaims = [
+  "No Lean frontend extraction has run.",
+  "No source file has been split or moved.",
+  "No learned seam is claimed canonical.",
+  "No attribution or originality disposition is supplied.",
+  "No successful process or kernel audit is represented by this manifest.",
+]
