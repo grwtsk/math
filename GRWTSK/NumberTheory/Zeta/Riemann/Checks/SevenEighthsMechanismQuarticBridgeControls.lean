@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI ChatGPT. -/
-import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge
+import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismTrace
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -12,7 +12,8 @@ The controls reject the conflation of:
 
 * the all-prime arithmetic scale equivalence;
 * a one-way external theorem port;
-* a proof-relevant mechanism bridge;
+* a terminal theorem with its internal detector trace;
+* a source-bound proof-relevant mechanism bridge;
 * a prime-derived quartic extraction; and
 * a direct or cofinal threshold closure.
 
@@ -58,6 +59,15 @@ theorem one_way_transport_requires_no_bijection :
     RiemannZetaZeroFreeRightHalfPlane 1 :=
   standardOneWayTransport.localTheorem
 
+/-- Even a valid terminal zero-free theorem cannot uniformly reconstruct an
+arbitrary missing internal proposition.  Additional mechanism data are a real
+input, not a projection of the terminal theorem. -/
+theorem terminal_endpoint_does_not_recover_arbitrary_internal_evidence :
+    ¬ (∀ Internal : Prop,
+      RiemannZetaZeroFreeRightHalfPlane 1 → Internal) := by
+  intro hrecover
+  exact hrecover False riemannZetaZeroFreeRightHalfPlane_one
+
 /-- The pinned terminal theorem review remains non-admission-ready. -/
 theorem pinned_terminal_review_remains_blocked :
     ¬ openAISevenEighthsReview.AdmissionReady :=
@@ -74,6 +84,30 @@ theorem mechanism_chain_uses_specialization
     (chain : SevenEighthsMechanismChain) :
     RiemannZetaZeroFreeRightHalfPlane ((7 : ℝ) / 8) :=
   chain.toZeta
+
+/-- A source-bound accepted mechanism is pinned to the exact OpenAI mechanism
+record rather than an arbitrary review object. -/
+theorem source_bound_mechanism_uses_pinned_record
+    (accepted : SourceBoundAcceptedSevenEighthsMechanismPort) :
+    accepted.accepted.review.source = openAISevenEighthsMechanismSource :=
+  accepted.alignment.mechanismSource
+
+/-- The complete retained trace terminates at the same theorem term as the
+accepted terminal port. -/
+theorem source_bound_trace_terminal_agreement
+    (accepted : SourceBoundAcceptedSevenEighthsMechanismPort) :
+    accepted.trace.zeta = accepted.accepted.terminal.port.theorem :=
+  accepted.trace_zeta_eq_terminal
+
+/-- The strengthened bridge consumes the complete stage trace before producing
+a local witness. -/
+def source_bound_trace_bridge_consumes_complete_trace
+    {Source Local : Type*}
+    [AddCommGroup Source] [AddCommGroup Local]
+    [Module ℝ Source] [Module ℝ Local]
+    [TopologicalSpace Source] [TopologicalSpace Local]
+    (accepted : SourceBoundMechanismBridgeAccepted Source Local) : Local :=
+  accepted.bridge.localWitness
 
 /-- Toy real zero set used only to test threshold direction. -/
 def ToyZeroSet : Set ℝ := {((3 : ℝ) / 5)}

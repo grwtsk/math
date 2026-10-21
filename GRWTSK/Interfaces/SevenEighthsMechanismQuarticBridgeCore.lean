@@ -2,6 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI ChatGPT. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticScaleBijectiveWitness
 import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge
+import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismTrace
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridgeControls
 
 set_option autoImplicit false
@@ -9,14 +10,15 @@ set_option autoImplicit false
 /-!
 # Isolated arithmetic-scale and proof-relevant seven-eighths bridge root
 
-This source-only root keeps three layers separate:
+This source-only root keeps four layers separate:
 
 * PNT-free arithmetic scale coordinates;
-* one-way theorem admission and proof-relevant mechanism transport; and
+* one-way theorem admission;
+* a source-bound complete detector/moment/probe trace and its local witness map;
 * prime quartic extraction plus direct/cofinal threshold closure.
 
 It is intentionally not imported by `GRWTSK.lean` or the public zeta aggregate.
 
-No external theorem, mechanism bridge, prime extraction, Weil positivity theorem,
-or RH conclusion is supplied.
+No external theorem, accepted detector trace, concrete mechanism bridge, prime
+extraction, Weil positivity theorem, or RH conclusion is supplied.
 -/
