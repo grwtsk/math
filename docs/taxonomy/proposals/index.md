@@ -13,3 +13,5 @@ The [history and education addition](new-concepts/history-education.md) proposes
 The [logic, algebra and discrete batch](new-concepts/logic-algebra-discrete.md) adds fifteen established-subject records and preserves all earlier collision and attribution questions.
 
 The [geometry and topology addition](new-concepts/geometry-topology.md) records twelve further subjects and the restricted computational-homology polyhierarchy, with coefficient and implementation boundaries.
+
+The [typed critical-strip witness classification](typed-critical-strip-witness-classification.md) proposes a statement-level relation profile for analytic zero witnesses, group-valued binary squares, path-groupoid transport and null-loop obstructions. It adds no subject concept, Number Theory parent or mathematical implication from navigation.
