@@ -1,0 +1,184 @@
+version = "0.1"
+title = "Riemann-hypothesis witness registry"
+issue = 451
+parent_pr = 447
+parent_commit = "cebfa82e0fc74c2ad099c82ecc87846e771baf42"
+branch = "research/451-rh-witness-registry-20261021"
+status = "SOURCE_DRAFT"
+
+established_evidence = ["SOURCE_DRAFT"]
+missing_evidence = [
+  "LITERATURE_REVIEWED_AT_REGISTRY_SCOPE",
+  "ELABORATED",
+  "KERNEL_CHECKED",
+  "TRUST_AUDITED",
+  "EXTERNALLY_REPLAYED",
+  "ANALYTIC_PREMISES_DISCHARGED",
+]
+
+[[files]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RiemannWitnessRegistryCore.lean"
+blob = "2c96c8d38866de759e3021a8b1dd198c80ac26cb"
+role = "typed metadata and proof-authority gates"
+
+[[files]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RiemannWitnessRegistryEntries.lean"
+blob = "fea125cf832dcb17ef0d6463080ec32416b2d930"
+role = "source-bound nodes, typed edges and hostile controls"
+
+[[files]]
+path = "docs/mathematics/NumberTheory/Zeta/riemann-witness-registry.md"
+blob = "5b7846e5363c949eae7af020a0cebe17481ee602"
+role = "source ledger, graph, scope corrections and reconciliation obligations"
+
+[[node]]
+id = "canonicalRectangleEdge"
+availability = "LOCAL_IMPORT"
+source_pr = 345
+source_commit = "9356655ba5ce3a8473b718b41a525d19bdaf21bb"
+source_path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalRectangleEdgeObstructionWitness.lean"
+declaration = "CanonicalRectangleEdgeWitness"
+
+[[node]]
+id = "rectangleConjectureJunction"
+availability = "LOCAL_IMPORT"
+source_pr = 447
+source_commit = "cebfa82e0fc74c2ad099c82ecc87846e771baf42"
+source_path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalRectangleConjectureConnections.lean"
+declaration = "AllRouteConnections"
+
+[[node]]
+id = "mobiusTerminalEndpointLoss"
+availability = "EXTERNAL_BRANCH"
+source_pr = 432
+source_commit = "30acfd2babb7443461b8d4bb57f23982c50cbe08"
+source_path = "GRWTSK/NumberTheory/Moebius/TerminalMertensTwoPointPrefixObstruction.lean"
+declaration = "not_terminalMultiplierRecovery"
+
+[[node]]
+id = "mobiusEndpointConnectionAtlas"
+availability = "EXTERNAL_BRANCH"
+source_pr = 446
+source_commit = "4af9bb2ba38318e9fe9be838e11cef06425e59bf"
+source_path = "GRWTSK/NumberTheory/Moebius/EndpointInformationLossConnections.lean"
+declaration = "endpointInformationLossWitness"
+
+[[node]]
+id = "typedCriticalStripTransport"
+availability = "PROSE_ONLY"
+source_pr = 440
+source_commit = "2903d3392feba8facb75261ac7c4ed91b9b903bc"
+source_path = "docs/mathematics/NumberTheory/LSeries/typed-critical-strip-witnesses.md"
+declaration = "NONE"
+
+[[node]]
+id = "fixedNegativeBudget"
+availability = "EXTERNAL_BRANCH"
+source_pr = 308
+source_commit = "6c9ca58645612d3e245fa9269eefd5d7010f2321"
+source_path = "GRWTSK/Analysis/ErrorBounds/FixedWitnessBudget.lean"
+declaration = "witness_forces_budget"
+
+[[node]]
+id = "finiteGramWindow"
+availability = "EXTERNAL_BRANCH"
+source_pr = 308
+source_commit = "6c9ca58645612d3e245fa9269eefd5d7010f2321"
+source_path = "GRWTSK/Analysis/ErrorBounds/FiniteGramWitnessWindow.lean"
+declaration = "complex_gram_window_comparison"
+
+[[node]]
+id = "criticalReflectionCover"
+availability = "EXTERNAL_BRANCH"
+source_pr = 308
+source_commit = "6c9ca58645612d3e245fa9269eefd5d7010f2321"
+source_path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicReflectionSupplier.lean"
+declaration = "rhThrough_of_cubic_slope_cover"
+
+[[node]]
+id = "dyadicTreeMaximalComparison"
+availability = "EXTERNAL_BRANCH"
+source_pr = 449
+source_commit = "1157501e4b52ec388bbcff8baed6563534c40c0b"
+source_path = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
+declaration = "dyadicPrefixMaximum_sq_le_dyadicTreeSquareEnergy"
+
+[[node]]
+id = "quinticWitnessLabel"
+availability = "UNRESOLVED_LABEL"
+source_pr = 0
+source_commit = ""
+source_path = ""
+declaration = "NONE"
+
+[[node]]
+id = "boundaryLayerWitnessLabel"
+availability = "UNRESOLVED_LABEL"
+source_pr = 0
+source_commit = ""
+source_path = ""
+declaration = "NONE"
+
+[[node]]
+id = "finiteScaleFilterWitnessLabel"
+availability = "UNRESOLVED_LABEL"
+source_pr = 0
+source_commit = ""
+source_path = ""
+declaration = "NONE"
+
+[[control]]
+id = "C01"
+description = "A source URL, issue, PR, branch, commit or path is not a local theorem."
+
+[[control]]
+id = "C02"
+description = "FORMALIZES, MOTIVATES, RELEVANT_ONLY, COMPARES_TO and REFUTES_AT_SCOPE are non-implicational."
+
+[[control]]
+id = "C03"
+description = "An EXTERNAL_SOURCE_BOUND edge is not locally proof-bearing."
+
+[[control]]
+id = "C04"
+description = "A PROSE_ONLY classification cannot be traversed as a Lean proof edge."
+
+[[control]]
+id = "C05"
+description = "The quintic witness label has no source reference and no proof-bearing outgoing edge."
+
+[[control]]
+id = "C06"
+description = "The boundary-layer witness label has no source reference and no proof-bearing outgoing edge."
+
+[[control]]
+id = "C07"
+description = "The finite-scale-filter witness label has no source reference and no proof-bearing outgoing edge."
+
+[[control]]
+id = "C08"
+description = "The Möbius endpoint witness refutes only terminal-only recovery at its exact finite scope."
+
+[[control]]
+id = "C09"
+description = "Critical-strip transport does not imply critical-line location or the rectangle-edge witness."
+
+[[control]]
+id = "C10"
+description = "Fixed and finite Gram budgets do not become arithmetic or Weil-positivity suppliers."
+
+[[control]]
+id = "C11"
+description = "The critical-reflection bypass remains nonlocal and retains complete-cover and semantic-source premises."
+
+[[control]]
+id = "C12"
+description = "No divergent branch is cherry-picked or silently imported by this registry."
+
+[nonclaims]
+proves_any_witness = false
+constructs_any_witness = false
+reconciles_divergent_branches = false
+identifies_unresolved_labels = false
+proves_finite_height_rh = false
+proves_global_rh = false
