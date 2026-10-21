@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
-      - name: Apply final declaration-anchored repairs
+      - name: Close remaining quantitative cast obligations
         shell: bash
         run: |
           python3 - <<'PY'
@@ -36,92 +36,71 @@ jobs:
                       return i
               raise RuntimeError(f"missing text: {value!r}")
 
-          import_anchor = find_exact("import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset")
-          if "import Mathlib.Algebra.Order.Floor.Semifield" not in lines:
-              lines.insert(import_anchor + 1, "import Mathlib.Algebra.Order.Floor.Semifield")
-
-          start = find_exact("private theorem two_lt_K : 2 < K := by")
-          end = find_exact("private theorem K_inv_le_eps : (K : ℝ)⁻¹ ≤ ε := by", start)
-          lines[start:end] = [
-              "private theorem two_lt_K : 2 < K := by",
-              "  change 2 < ⌈ε⁻¹⌉₊",
-              "  exact (Nat.lt_ceil).2 two_lt_eps_inv",
-              "",
+          # Unfold the local definition through `change`, since `rw [K]` no longer
+          # recognizes this section-local noncomputable definition in Lean 4.33.
+          theorem_start = find_exact("private theorem K_inv_le_eps : (K : ℝ)⁻¹ ≤ ε := by")
+          rw_k = find_exact("        rw [K]", theorem_start)
+          apply_ceil = find_exact("        apply Nat.le_ceil", rw_k)
+          lines[rw_k:apply_ceil + 1] = [
+              "        change ε⁻¹ ≤ (⌈ε⁻¹⌉₊ : ℝ)",
+              "        exact Nat.le_ceil",
           ]
 
-          lines = [
-              line.replace("Finset.prod_le_prod₀", "Finset.prod_le_prod")
-                  .replace("Finset.prod_le_prod_of_subset_of_one_le₀",
-                           "Finset.prod_le_prod_of_subset_of_one_le")
-              for line in lines
-          ]
-
+          # rpow monotonicity needs base >= 1, not merely nonnegative.
           theorem_start = find_exact("private theorem prod_y_large_le_X_pow :")
-          apply_start = find_exact(
-              "      apply Finset.prod_le_prod_of_subset_of_one_le", theorem_start
-          )
-          calc_end = find_exact("    _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by", apply_start)
-          lines[apply_start:calc_end] = [
-              "      apply Finset.prod_le_prod_of_subset_of_one_le",
-              "      · exact Finset.subset_union_right",
-              "      · intro i hi",
-              "        positivity",
-              "      · simp only [Finset.mem_union, Finset.mem_Icc]",
-              "        intro i hi _",
-              "        apply Nat.one_le_pow",
-              "        exact (hy_pos _)",
-          ]
-
-          theorem_start = find_exact("theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by")
-          rw_index = find_exact(
-              "        rw [← Real.rpow_natCast_mul, ← Real.rpow_natCast]", theorem_start
-          )
-          second_branch = find_exact("        · simp", rw_index + 1)
-          lines[rw_index + 1:second_branch] = [
-              "        · gcongr",
+          first = find_exact("          · norm_cast", theorem_start)
+          first_end = find_exact("          · rw [le_mul_inv_iff₀]", first)
+          lines[first:first_end] = [
               "          · simp only [Nat.one_le_cast]",
               "            exact Nat.succ_le_iff.mpr (hy_pos i)",
-              "          · rw [← Nat.floor_div_eq_div (K := ℝ), div_eq_mul_inv]",
-              "            apply Nat.floor_le",
-              "            positivity",
+          ]
+          hdi_line = find_exact("            · exact_mod_cast hdi", first_end)
+          lines[hdi_line] = "            · exact_mod_cast hdi.le"
+
+          theorem_start = find_exact("private theorem c_le_X_pow : c ≤ (X : ℝ) ^ ε := by")
+          base_line = find_exact("        · exact_mod_cast (hy_pos _).le", theorem_start)
+          lines[base_line:base_line + 1] = [
+              "        · simp only [Nat.one_le_cast]",
+              "          exact Nat.succ_le_iff.mpr (hy_pos i)",
           ]
 
-          disjoint = find_exact(
-              "      · simp only [disjoint_singleton_left, mem_Ioc, not_and, not_le]",
-              theorem_start,
+          # The displayed inequalities are casts of natural-product inequalities.
+          # Move to Nat first, then apply the generic subset-product theorem.
+          theorem_start = find_exact("private theorem X_pow_mul_prod_le_radical :")
+          first_calc = find_exact(
+              "    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by", theorem_start
           )
-          after_disjoint = find_exact(
-              "    _ ≤ (∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m ^ m) ^",
-              disjoint,
+          first_apply = find_exact(
+              "      apply Finset.prod_le_prod_of_subset_of_one_le", first_calc
           )
-          lines[disjoint:after_disjoint] = [
-              "      · simp only [disjoint_singleton_left, mem_Ioc, not_and, not_le]",
-              "        intro hdK",
-              "        exact ((not_lt_of_ge hKd.le) hdK).elim",
+          first_end = find_exact(
+              "    _ = ∏ m ∈ Finset.Icc 1 d, y m := by", first_apply
+          )
+          lines[first_calc:first_end] = [
+              "    _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by",
+              "      norm_cast",
+              "      apply Finset.prod_le_prod_of_subset_of_one_le",
+              "      · exact Finset.filter_subset _ _",
+              "      · intro i hi",
+              "        exact Nat.zero_le _",
+              "      · intro i hi hnot",
+              "        exact Nat.succ_le_iff.mpr (hy_pos _)",
           ]
 
-          union_start = find_exact(
-              "    _ ≤ (∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m ^ m) ^",
-              theorem_start,
+          second_calc = find_exact(
+              "    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by",
+              first_end,
           )
-          n_eq = find_exact("    _ = (n : ℝ) ^ (K⁻¹ : ℝ) := by", union_start)
-          lines[union_start:n_eq] = [
-              "    _ ≤ (∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m ^ m) ^",
-              "        (K⁻¹ : ℝ) := by",
-              "      gcongr",
-              "      · intros",
-              "        apply Nat.add_one_le_of_lt",
-              "        simp [hy_pos]",
-              "      · intro i",
-              "        simp +contextual [hKd.le, Nat.add_one_le_iff.eq ▸ hK_pos]",
-          ]
-
-          x_step = find_exact("    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by", n_eq)
-          eps_step = find_exact("    _ ≤ (X : ℝ) ^ ε := by", x_step)
-          lines[x_step:eps_step] = [
-              "    _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by",
-              "      gcongr",
-              "      exact_mod_cast hnX",
+          second_end = find_exact("    _ = (radical n : ℕ) := by", second_calc)
+          lines[second_calc:second_end] = [
+              "    _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by",
+              "      norm_cast",
+              "      apply Finset.prod_le_prod_of_subset_of_one_le",
+              "      · exact Finset.subset_union_left",
+              "      · intro i hi",
+              "        exact Nat.zero_le _",
+              "      · intro i hi hnot",
+              "        exact Nat.succ_le_iff.mpr (hy_pos _)",
           ]
 
           path.write_text("\n".join(lines) + "\n")
@@ -131,7 +110,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/QuantitativeAnatomicFactorization.lean
-            git commit -m "Apply final quantitative abc repairs (#401)"
+            git commit -m "Close the remaining quantitative abc cast obligations (#401)"
             git push
           fi
       - name: Set up Lean and Mathlib cache
