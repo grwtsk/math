@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Real.RationalTentCorrectionPrefixExact
-import GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringUpperTent
+import GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringCorrectionMargin
 
 set_option autoImplicit false
 
@@ -32,11 +32,13 @@ open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
 open GRWTSK.Analysis.Complex.RationalTentAccumulation
 open GRWTSK.Analysis.Real.RationalTentCorrectionPrefixExact
+open GRWTSK.Analysis.Real.TentRationalCorrection
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRationalTentEvaluation
 open CanonicalPositiveTuringPairedTent
 open CanonicalPositiveTuringUpperTent
-open SignedTentCorrection CanonicalTentPrimeCriterion
+open CanonicalPositiveTuringCorrectionMargin
+open TentSource SignedTentCorrection CanonicalTentPrimeCriterion
 
 noncomputable section
 
