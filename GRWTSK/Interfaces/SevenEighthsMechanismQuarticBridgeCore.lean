@@ -4,6 +4,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticScaleBijectiveWitness
 import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge
 import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismTrace
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridgeControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeGramQuarticExtractionControls
 
 set_option autoImplicit false
 
