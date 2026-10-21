@@ -23,6 +23,24 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
 def exponentExceptionalSet (λ : ℝ) : Set PrimitiveAdditiveTriple :=
   {t | (t.radical : ℝ) < Real.rpow (t.c : ℝ) λ}
 
+namespace PrimitiveAdditiveTriple
+
+variable (t : PrimitiveAdditiveTriple)
+
+/-- For positive `λ`, the paper's exponent-exception condition is exactly the
+quality threshold `λ⁻¹ < quality`. -/
+theorem radical_lt_height_rpow_iff_quality (λ : ℝ) (hλ : 0 < λ) :
+    (t.radical : ℝ) < Real.rpow (t.c : ℝ) λ ↔
+      λ⁻¹ < t.quality := by
+  simp only [Real.rpow_eq_pow]
+  rw [← Real.log_lt_log_iff t.real_radical_pos
+      (Real.rpow_pos_of_pos t.real_c_pos _),
+    Real.log_rpow t.real_c_pos, quality,
+    lt_div_iff₀ t.logRadical_pos, inv_mul_lt_iff₀ hλ]
+  rfl
+
+end PrimitiveAdditiveTriple
+
 /-- Exceptional primitive additive triples with third coordinate at most `N`.
 Finiteness comes only from the existing bounded-height API. -/
 noncomputable def boundedExponentExceptionalTriples (λ : ℝ) (N : ℕ) :
