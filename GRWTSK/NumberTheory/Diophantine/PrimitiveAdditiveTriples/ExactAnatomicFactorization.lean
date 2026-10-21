@@ -103,6 +103,7 @@ theorem multiplicityLayer_squarefree (n i : ℕ) :
   rw [multiplicityLayer]
   apply Finset.squarefree_prod_of_pairwise_isCoprime
   · intro p hp q hq hpq
+    change IsRelPrime p q
     rw [← Nat.coprime_iff_isRelPrime]
     exact (Nat.coprime_primes
       (Nat.prime_of_mem_primeFactors (Finset.mem_filter.mp hp).1)
@@ -127,6 +128,8 @@ theorem prod_multiplicityLayer_eq_radical {n : ℕ} (hn : 0 < n) :
       (multiplicityLayer_pos n i).ne'
     exact associated_iff_eq.mp h.symm
   · intro i _ j _ hij
+    change IsRelPrime (multiplicityLayer n i ^ i)
+      (multiplicityLayer n j ^ j)
     rw [← Nat.coprime_iff_isRelPrime]
     apply Nat.Coprime.pow_right
     apply Nat.Coprime.pow_left
