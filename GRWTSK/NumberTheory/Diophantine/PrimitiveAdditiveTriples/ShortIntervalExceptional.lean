@@ -10,7 +10,7 @@ The source paper credits Bhavik Mehta for Lean assistance on an earlier
 version. The finite dyadic-box infrastructure imported below retains the
 Bhavik Mehta--Arend Mellendijk attribution of the earlier formalization.
 -/
-import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DyadicAnatomicCover
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.DyadicAnatomicPublic
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.Tactic
