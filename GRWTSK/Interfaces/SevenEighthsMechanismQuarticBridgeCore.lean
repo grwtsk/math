@@ -12,6 +12,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MechanismPackingRecurrenceRuleCon
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerArithmeticPackingCoordinateControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerCoefficientRecoveryControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtCoefficientSourceControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPrimePowerSelectorControls
 
 set_option autoImplicit false
 
