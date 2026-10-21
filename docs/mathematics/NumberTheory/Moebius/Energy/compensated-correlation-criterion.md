@@ -304,6 +304,14 @@ This is a compatibility theorem, not a new boundary estimate and not RH. The
 critical boundary is one fixed damping; RH-E02 requires cofinally small
 positive dampings.
 
+The source also composes (7) with the existing recurrence theorem to obtain
+
+\[
+\operatorname{CorrBound}(1)
+\quad\Longleftrightarrow\quad
+\texttt{CriticalMertensTransformSummable}.
+\]
+
 The existing conditional suppliers now feed the same object:
 
 - `CriticalMertensIncrementMeanSquare ε` with \(0<\varepsilon<1\);
@@ -338,8 +346,8 @@ majorant does not close the route.
 
 ## Verification boundary
 
-The source module contains 24 authored declarations: six definitions and
-eighteen theorem proof scripts. The branch adds only pure mathematical source,
+The source module contains 25 authored declarations: six definitions and
+nineteen theorem proof scripts. The branch adds only pure mathematical source,
 this note, and a passive verification target. No existing source, public-root
 import, dependency pin, workflow, executor, or held branch is changed.
 
