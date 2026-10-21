@@ -1,0 +1,247 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-point-conjecture-junction-453-v0.1"
+owner_repository = "grwtsk/math"
+issue = 453
+parent_issue = 437
+parent_pr = 449
+upstream_maximal_issue = 410
+upstream_maximal_pr = 411
+witness_issue = 430
+witness_pr = 432
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.TwoPointConjectureJunction"
+build_target = "GRWTSK.NumberTheory.Moebius.TwoPointConjectureJunction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+stacked_parent_branch = "research/rh-dyadic-block-maximal-437-20261021"
+stacked_parent_revision = "1157501e4b52ec388bbcff8baed6563534c40c0b"
+stacked_parent_tree = "31fb25be3979e6391909d82a397e29b031753a21"
+candidate_branch = "research/rh-two-point-junction-453-20261021"
+theorem_source_commit = "0878211cbff2df283fd984e894e79fbb4cd3f0a1"
+theorem_source_tree = "adf6bcd168abc6951fde97e8ffe948bf314bc69c"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean"
+theorem_source_git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+mathematical_note_commit = "a00b025369182a9acddcfc309ae7806814821d98"
+mathematical_note_tree = "a35b1eb7973cc60ecb6d7e647d5140eb21aeff98"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-conjecture-junction.md"
+mathematical_note_git_blob = "3e0d4bb125aa94a9671a05f493ef9ec25d793d63"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+module_git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+hypothesis = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[generic_parent]
+module = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+module_git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.dyadicPrefixMaximum_sq_le_dyadicTreeSquareEnergy"
+statement = "dyadicPrefixMaximum m a ^ 2 <= ((m:Real)+1) * dyadicTreeSquareEnergy m a"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[connection_levels]
+fixed_terminal = "FixedShiftTerminalCancellation"
+growing_terminal = "GrowingShiftDyadicTerminalCancellation"
+tree_energy = "SubpolynomialDyadicTwoPointTreeEnergyWithDepthCost"
+moebius_tree_energy = "SubpolynomialDyadicMertensTwoPointTreeEnergyWithDepthCost"
+maximal_prefix = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+terminal_to_tree_theorem_present = false
+growing_terminal_to_tree_theorem_present = false
+tree_to_maximal_theorem_present = true
+maximal_to_rh_theorem_inherited = true
+
+[selected_increment]
+shiftwise_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointPrefixMax_sq_le_twoPointTreeEnergy"
+shift_summed_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointMaximalQuadraticEnergy_le_treeEnergySum"
+supplier_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.subpolynomialDyadicMaximalMertensTwoPointEnergy_of_treeEnergy"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensTwoPointTreeEnergy"
+adapter_rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_adapter"
+shiftwise_statement = "mertensTwoPointPrefixMax j h ^ 2 <= ((j:Real)+2) * twoPointTreeEnergy moebiusReal moebiusReal j h"
+shift_summed_statement = "mertensTwoPointMaximalQuadraticEnergy j <= ((j:Real)+2) * twoPointTreeEnergySum moebiusReal moebiusReal j"
+proof_classification = "EXACT_FINITE_ZERO_PADDING_AND_MAXIMAL_COMPARISON"
+rh_consequence = "CONDITIONAL_REDUCTION_ONLY"
+next_obstruction = "construct the actual all-scale depth-weighted Moebius two-point tree-energy supplier"
+
+[canonical_observable]
+two_point_sequence = "f(n+1)*g(n+1+h)"
+cutoff = "2^(j+1)-h-1"
+padding = "zero after cutoff"
+tree_depth = "j+1"
+shift_range = "1 <= h < 2^(j+1)"
+block_sign = "signed sum before squaring"
+absolute_value_location = "prefix maximum only after signed prefix summation"
+depth_cost = "j+2"
+depth_cost_silently_absorbed = false
+
+[adapter_boundary]
+record = "ToMertensTreeEnergyAdapter"
+record_field = "source -> SubpolynomialDyadicMertensTwoPointTreeEnergyWithDepthCost"
+higher_order_chowla_alias = "HigherOrderChowlaAdapter"
+corrected_elliott_alias = "CorrectedElliottAdapter"
+sarnak_alias = "SarnakDisjointnessAdapter"
+weak_mertens_alias = "WeakMertensAdapter"
+gonek_hejhal_alias = "GonekHejhalAdapter"
+constructed_named_adapter_count = 0
+adapter_type_is_not_existence_evidence = true
+
+[literature]
+openai_math_revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+openai_math_scope_path = "lean/docs/007.md"
+openai_math_scope_git_blob = "dad638d19609ebbddc93a5594dfc2ecd2a26a7a6"
+matomaki_radziwill_tao = "arXiv:1503.05121"
+tao_chowla_sarnak = "arXiv:1605.04628"
+tao_teravainen_logarithmic = "arXiv:1708.02610"
+tao_teravainen_almost_all_scales = "arXiv:1809.02518"
+ng_mertens_distribution = "arXiv:math/0310381"
+bui_florea_milinovich_negative_moments_doi = "10.1112/blms.13092"
+gonek_negative_moments_doi = "10.1112/S0025579300013589"
+literature_imported_as_lean_proof = false
+literature_status_used_as_kernel_evidence = false
+
+[positivity]
+tree_energy_property = "NONNEGATIVE_FINITE_SUM_OF_SQUARES"
+prefix_max_property = "NONNEGATIVE_FINITE_ABSOLUTE_MAXIMUM"
+depth_factor_property = "STRICTLY_POSITIVE"
+positive_semidefinite_analytic_form_claimed = false
+kernel_positivity_claimed = false
+measure_positivity_claimed = false
+trace_or_state_positivity_claimed = false
+averaged_arithmetic_positivity_claimed = false
+finite_height_weil_positivity_claimed = false
+global_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_structure_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+external_repository_code_imported = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.TwoPointConjectureJunction"
+source_line_count = 318
+authored_declaration_count = 27
+public_def_count = 11
+public_structure_count = 1
+public_abbrev_count = 5
+public_theorem_script_count = 10
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
+git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicMaximalMertensTwoPointEnergy.lean"
+git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[statement_controls]
+fixed_shift_has_no_uniform_shift_constant = true
+fixed_shift_has_no_prefix_maximum = true
+growing_terminal_observes_only_terminal_cutoff = true
+zero_padding_is_exact = true
+all_positive_shifts_are_retained = true
+all_admissible_prefixes_are_retained_by_generic_maximum = true
+signed_block_sum_precedes_square = true
+depth_factor_is_visible = true
+terminal_interfaces_are_not_tree_energy_suppliers = true
+adapter_requires_proof_field = true
+named_adapter_aliases_have_no_instances = true
+
+[hostile_controls]
+fixed_form_result_not_promoted_to_growing_shift = true
+logarithmic_average_not_promoted_to_ordinary_average = true
+almost_all_scales_not_promoted_to_every_scale = true
+terminal_endpoint_not_promoted_to_prefix_maximum = true
+higher_order_not_specialized_without_indexing_theorem = true
+sarnak_not_used_without_arithmetic_dynamical_adapter = true
+weak_mertens_not_used_without_explicit_formula_bridge = true
+gonek_hejhal_not_used_without_spectral_arithmetic_bridge = true
+literature_claim_not_promoted_to_repository_proof = true
+adapter_type_not_promoted_to_adapter_instance = true
+conditional_rh_not_promoted_to_unconditional_rh = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+fixed_shift_terminal_cancellation_proved = false
+growing_shift_terminal_cancellation_proved = false
+higher_order_chowla_proved = false
+corrected_elliott_proved = false
+sarnak_disjointness_proved = false
+weak_mertens_proved = false
+gonek_hejhal_proved = false
+named_adapter_constructed = false
+moebius_tree_energy_supplier_proved = false
+new_pickup_damping_paid = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "twoPointSequence",
+  "twoPointPrefix",
+  "dyadicTwoPointCutoff",
+  "paddedTwoPointSequence",
+  "twoPointTreeEnergy",
+  "twoPointTreeEnergySum",
+  "twoPointDyadicPrefixMaximum",
+  "FixedShiftTerminalCancellation",
+  "GrowingShiftDyadicTerminalCancellation",
+  "SubpolynomialDyadicTwoPointTreeEnergyWithDepthCost",
+  "SubpolynomialDyadicMertensTwoPointTreeEnergyWithDepthCost",
+  "ToMertensTreeEnergyAdapter",
+  "HigherOrderChowlaAdapter",
+  "CorrectedElliottAdapter",
+  "SarnakDisjointnessAdapter",
+  "WeakMertensAdapter",
+  "GonekHejhalAdapter",
+  "twoPointPrefix_moebius",
+  "finitePrefixSum_padded_eq_twoPointPrefix",
+  "finitePrefixSum_padded_moebius_eq_mertens",
+  "twoPointDyadicPrefixMaximum_nonneg",
+  "mertensTwoPointPrefixMax_le_twoPointDyadicPrefixMaximum",
+  "mertensTwoPointPrefixMax_sq_le_twoPointTreeEnergy",
+  "mertensTwoPointMaximalQuadraticEnergy_le_treeEnergySum",
+  "subpolynomialDyadicMaximalMertensTwoPointEnergy_of_treeEnergy",
+  "riemannHypothesis_of_mertensTwoPointTreeEnergy",
+  "riemannHypothesis_of_adapter"
+]
