@@ -1,0 +1,58 @@
+schema = "grwtsk.external-interface-review/1"
+issue = 500
+status = "SOURCE_DRAFT"
+local_execution = "NOT_RUN"
+kernel_audit = "NOT_RUN"
+trust_audit = "NOT_RUN"
+
+[external]
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+
+[[result]]
+family = 245
+name = "pure-type-system weak-to-strong normalization"
+evidence = "EXTERNAL_FORMAL_SOURCE"
+source = "lean/OAI/Computability/TypeSystem/Normalization.lean"
+scope = "lean/docs/245.md"
+candidate = "OAI.PureTypeSystem.weak_implies_strong"
+local_adapter = "PENDING"
+
+[[result]]
+family = 3
+name = "quasi-RH seven-eighths zero-free half-plane"
+evidence = "EXTERNAL_FORMAL_SOURCE"
+source = "lean/docs/003.md"
+local_adapter = "PENDING"
+
+[[result]]
+family = 32
+name = "rational Hodge conjecture for CM abelian varieties"
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026"
+local_adapter = "PENDING"
+
+[[result]]
+family = 1
+name = "Milne rationality"
+evidence = "EXTERNAL_MANUSCRIPT"
+local_adapter = "PENDING"
+
+[[result]]
+family = 43
+name = "P=W for fixed determinant"
+evidence = "EXTERNAL_MANUSCRIPT"
+local_adapter = "PENDING"
+
+[[result]]
+family = 10
+name = "Fontaine-Mazur/pro-modularity at 2"
+evidence = "EXTERNAL_MANUSCRIPT"
+local_adapter = "PENDING"
+
+[guards]
+direct_pts_to_hodge = false
+hodge_type_to_lfunction = false
+four_balance_to_algebraicity = false
+external_formal_source_to_local_theorem = false
+zero_free_to_rh = false
