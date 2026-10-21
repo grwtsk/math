@@ -159,8 +159,8 @@ runner = "authoring_assistant_python"
 normal_mode_status = "PASS"
 optimized_mode_status = "PASS"
 normal_optimized_reports_identical = true
-explicit_check_count_per_mode = 7421925
-report_sha256 = "f2f526dda754a5748033680d4c0f215692b1b8938220a8a9f45011128b0ada57"
+explicit_check_count_per_mode = 7421931
+report_sha256 = "a88cfb0c6dca84a0715eca9c523856b70dd4c9a681228156118f9d570a43eab2"
 finite_diagnostics_are_not_lean_acceptance = true
 finite_diagnostics_are_not_infinite_arithmetic_proof = true
 
