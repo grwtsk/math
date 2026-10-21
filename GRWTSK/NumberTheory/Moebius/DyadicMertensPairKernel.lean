@@ -15,8 +15,8 @@ The final finite-scale supplier from the preceding RH-E02 reductions is
 `B_j = sum_(2^j <= n < 2^(j+1)) M(n)^2 / (n(n+1))`.
 
 This module expands that positive square into the literal signed Möbius pair
-kernel.  The diagonal is paid by `|mu(n)| <= 1`; the complete ordered signed
-off-diagonal remains.  No absolute-value replacement of that correlation is
+kernel. The diagonal is paid by `|mu(n)| <= 1`; the complete ordered signed
+off-diagonal remains. No absolute-value replacement of that correlation is
 made.
 
 The kernel retains the half-open dyadic cell and has the exact reciprocal
@@ -24,7 +24,7 @@ closed form
 
 `1 / max(2^j,a,b) - 1 / 2^(j+1)`
 
-when the pair is born before the right endpoint, and zero otherwise.  The
+when the pair is born before the right endpoint, and zero otherwise. The
 resulting pair-correlation proposition is equivalent to the existing dyadic
 block proposition and therefore conditionally feeds the existing RH endpoint.
 No pair-correlation estimate is proved here.
@@ -52,7 +52,8 @@ step weight. -/
 theorem weightedMertensBaseTerm_eq_weight (n : ℕ) :
     weightedMertensBaseTerm n =
       pickupMertensPrefix n ^ 2 * weightedMertensDyadicWeight n := by
-  rfl
+  unfold weightedMertensBaseTerm weightedMertensDyadicWeight
+  ring
 
 theorem weightedMertensDyadicWeight_nonneg (n : ℕ) :
     0 ≤ weightedMertensDyadicWeight n := by
@@ -91,7 +92,7 @@ theorem sum_weightedMertensDyadicWeight_Ico
         subst L
         simp
 
-/-- Exact finite pair kernel.  Pair `(a,b)` contributes only after both
+/-- Exact finite pair kernel. Pair `(a,b)` contributes only after both
 coefficients have entered the closed Mertens inventory. -/
 def weightedMertensPairKernel (j a b : ℕ) : ℝ :=
   ∑ n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
@@ -121,7 +122,7 @@ theorem weightedMertensPairKernel_eq_sum_Ico_lower (j a b : ℕ) :
     tauto
   rw [hset]
 
-/-- Closed form of the exact pair kernel.  The right endpoint is excluded. -/
+/-- Closed form of the exact pair kernel. The right endpoint is excluded. -/
 theorem weightedMertensPairKernel_closed (j a b : ℕ) :
     weightedMertensPairKernel j a b =
       if max a b < 2 ^ (j + 1) then
@@ -131,16 +132,20 @@ theorem weightedMertensPairKernel_closed (j a b : ℕ) :
   rw [weightedMertensPairKernel_eq_sum_Ico_lower]
   by_cases h : max a b < 2 ^ (j + 1)
   · rw [if_pos h]
-    apply sum_weightedMertensDyadicWeight_Ico
-    · exact (by positivity : 1 ≤ 2 ^ j).trans
-        (Nat.le_max_left _ _)
-    · unfold weightedMertensPairLower
-      exact (max_lt (by positivity : 2 ^ j < 2 ^ (j + 1)) h).le
+    have hN : 2 ^ j < 2 ^ (j + 1) :=
+      Nat.pow_lt_pow_right (by norm_num) (Nat.lt_succ_self j)
+    have hL : 1 ≤ weightedMertensPairLower j a b := by
+      unfold weightedMertensPairLower
+      positivity
+    have hLU : weightedMertensPairLower j a b ≤ 2 ^ (j + 1) := by
+      unfold weightedMertensPairLower
+      omega
+    exact sum_weightedMertensDyadicWeight_Ico hL hLU
   · rw [if_neg h]
     have hU : 2 ^ (j + 1) ≤ weightedMertensPairLower j a b := by
       unfold weightedMertensPairLower
       exact (not_lt.mp h).trans (Nat.le_max_right _ _)
-    rw [Finset.Ico_eq_empty hU, Finset.sum_empty]
+    rw [Finset.Ico_eq_empty_of_le hU, Finset.sum_empty]
 
 /-- Kernel positivity is elementary and carries no cancellation information. -/
 theorem weightedMertensPairKernel_nonneg (j a b : ℕ) :
@@ -170,7 +175,8 @@ theorem weightedMertensPairKernel_le_inv_left (j a b : ℕ) :
     _ = (((2 ^ j : ℕ) : ℝ))⁻¹ -
           (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ := by
       exact sum_weightedMertensDyadicWeight_Ico
-        (by positivity) (Nat.pow_le_pow_right (by norm_num) (Nat.le_succ j))
+        (by positivity)
+        (Nat.pow_le_pow_right (by norm_num : 0 < 2) (Nat.le_succ j))
     _ ≤ (((2 ^ j : ℕ) : ℝ))⁻¹ :=
       sub_le_self _ (inv_nonneg.mpr (Nat.cast_nonneg _))
 
@@ -276,7 +282,7 @@ def weightedMertensDyadicPairDiagonal (j : ℕ) : ℝ :=
   ∑ a ∈ Finset.Icc 1 (2 ^ (j + 1)),
     moebiusReal a ^ 2 * weightedMertensPairKernel j a a
 
-/-- Complete ordered signed off-diagonal part.  No absolute values occur. -/
+/-- Complete ordered signed off-diagonal part. No absolute values occur. -/
 def weightedMertensDyadicPairOffDiagonal (j : ℕ) : ℝ :=
   ∑ a ∈ Finset.Icc 1 (2 ^ (j + 1)),
     ∑ b ∈ Finset.Icc 1 (2 ^ (j + 1)),
@@ -363,7 +369,7 @@ theorem weightedMertensDyadicPairDiagonal_nonneg (j : ℕ) :
   exact Finset.sum_nonneg fun a ha =>
     mul_nonneg (sq_nonneg _) (weightedMertensPairKernel_nonneg j a a)
 
-/-- The complete diagonal has a uniform elementary budget.  This uses no
+/-- The complete diagonal has a uniform elementary budget. This uses no
 Möbius cancellation. -/
 theorem weightedMertensDyadicPairDiagonal_le_two (j : ℕ) :
     weightedMertensDyadicPairDiagonal j ≤ 2 := by
@@ -374,10 +380,15 @@ theorem weightedMertensDyadicPairDiagonal_le_two (j : ℕ) :
       unfold weightedMertensDyadicPairDiagonal
       apply Finset.sum_le_sum
       intro a ha
-      exact mul_le_mul (moebiusReal_sq_le_one a)
-        (weightedMertensPairKernel_le_inv_left j a a)
-        (weightedMertensPairKernel_nonneg j a a)
-        (inv_nonneg.mpr (Nat.cast_nonneg _))
+      calc
+        moebiusReal a ^ 2 * weightedMertensPairKernel j a a ≤
+            1 * weightedMertensPairKernel j a a :=
+          mul_le_mul_of_nonneg_right (moebiusReal_sq_le_one a)
+            (weightedMertensPairKernel_nonneg j a a)
+        _ ≤ 1 * (((2 ^ j : ℕ) : ℝ))⁻¹ :=
+          mul_le_mul_of_nonneg_left
+            (weightedMertensPairKernel_le_inv_left j a a) (by norm_num)
+        _ = (((2 ^ j : ℕ) : ℝ))⁻¹ := one_mul _
     _ = (((2 ^ (j + 1) : ℕ) : ℝ)) *
           (((2 ^ j : ℕ) : ℝ))⁻¹ := by
       simp [Finset.card_Icc]
@@ -417,8 +428,10 @@ theorem dyadicBlock_of_pairCorrelation
   obtain ⟨C, hC, hbound⟩ := hpair δ hδ
   refine ⟨C + 2, add_nonneg hC (by norm_num), ?_⟩
   intro j
+  have hbase : (1 : ℝ) ≤ ((2 ^ j : ℕ) : ℝ) := by
+    exact_mod_cast (show 1 ≤ 2 ^ j from Nat.one_le_two_pow)
   have hpow : 1 ≤ (((2 ^ j : ℕ) : ℝ) ^ δ) :=
-    Real.one_le_rpow (by positivity) hδ.le
+    Real.one_le_rpow hbase hδ.le
   rw [weightedMertensDyadicBlock_eq_pairDiagonal_add_offDiagonal]
   calc
     weightedMertensDyadicPairDiagonal j +
@@ -436,7 +449,7 @@ theorem subpolynomialDyadicMertensPairCorrelation_iff_block :
   ⟨dyadicBlock_of_pairCorrelation,
     pairCorrelation_of_dyadicBlock⟩
 
-/-- Conditional terminal return through the existing RH-E02 chain.  The
+/-- Conditional terminal return through the existing RH-E02 chain. The
 universal signed pair-correlation estimate remains open. -/
 theorem riemannHypothesis_of_subpolynomialDyadicMertensPairCorrelation
     (hpair : SubpolynomialDyadicMertensPairCorrelation) :
