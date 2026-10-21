@@ -168,8 +168,8 @@ private theorem K_inv_le_eps : (K : ℝ)⁻¹ ≤ ε := by
         field_simp [hε_pos.ne.symm]
       _ ≤ ε * K := by
         gcongr
-        rw [K]
-        apply Nat.le_ceil
+        change ε⁻¹ ≤ (⌈ε⁻¹⌉₊ : ℝ)
+        exact Nat.le_ceil
   · simp [hK_pos]
 
 private theorem hd_pos : 0 < d := by
@@ -325,10 +325,10 @@ private theorem prod_y_large_le_X_pow :
           conv_lhs => rw [← Real.rpow_one (y i : ℝ)]
           rw [← Real.rpow_natCast_mul (by simp)]
           gcongr
-          · norm_cast
-            exact (hy_pos _).le
+          · simp only [Nat.one_le_cast]
+            exact Nat.succ_le_iff.mpr (hy_pos i)
           · rw [le_mul_inv_iff₀]
-            · exact_mod_cast hdi
+            · exact_mod_cast hdi.le
             · exact_mod_cast hd_pos
       · intro i hi
         positivity
@@ -359,7 +359,8 @@ private theorem c_le_X_pow : c ≤ (X : ℝ) ^ ε := by
       · simp only [Finset.mem_Ioc, and_imp]
         intro i hdi hin
         gcongr
-        · exact_mod_cast (hy_pos _).le
+        · simp only [Nat.one_le_cast]
+          exact Nat.succ_le_iff.mpr (hy_pos i)
         · exact (Nat.mod_lt i hK_pos).le
     _ ≤ ((X : ℝ) ^ (d⁻¹ : ℝ)) ^ (K : ℝ) := by
       simp only [Real.rpow_natCast]
@@ -535,13 +536,13 @@ private theorem X_pow_mul_prod_le_radical :
         Fin.prod_univ_eq_prod_range
           (fun j ↦ if j + 1 ≠ K then y (j + 1) else 1) d]
     _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
+      norm_cast
       apply Finset.prod_le_prod_of_subset_of_one_le
       · exact Finset.filter_subset _ _
       · intro i hi
-        positivity
+        exact Nat.zero_le _
       · intro i hi hnot
-        have h_one : 1 ≤ y (i + 1) := Nat.succ_le_iff.mpr (hy_pos _)
-        exact_mod_cast h_one
+        exact Nat.succ_le_iff.mpr (hy_pos _)
     _ = ∏ m ∈ Finset.Icc 1 d, y m := by
       norm_cast
       have hmap :
@@ -552,13 +553,13 @@ private theorem X_pow_mul_prod_le_radical :
         simp [h1d]
       simp [← hmap, Finset.prod_map]
     _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
+      norm_cast
       apply Finset.prod_le_prod_of_subset_of_one_le
       · exact Finset.subset_union_left
       · intro i hi
-        positivity
+        exact Nat.zero_le _
       · intro i hi hnot
-        have h_one : 1 ≤ y i := Nat.succ_le_iff.mpr (hy_pos _)
-        exact_mod_cast h_one
+        exact Nat.succ_le_iff.mpr (hy_pos _)
     _ = (radical n : ℕ) := by
       exact_mod_cast prod_y_eq_radical_n
 
