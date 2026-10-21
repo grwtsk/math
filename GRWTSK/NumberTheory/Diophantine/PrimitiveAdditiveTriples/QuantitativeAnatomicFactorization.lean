@@ -336,13 +336,14 @@ private theorem prod_y_large_le_X_pow :
       norm_cast
       conv_rhs => rw [← prod_y_pow_eq_n]
       apply Finset.prod_le_prod_of_subset_of_one_le
-      · simp
+      · exact Finset.subset_union_right
       simp only [Finset.mem_union, Finset.mem_Icc]
       intro i hi _
       apply Nat.one_le_pow
       exact (hy_pos _)
     _ ≤ (X : ℝ) ^ (d⁻¹ : ℝ) := by
       gcongr
+      exact_mod_cast hnX
 
 private theorem c_le_X_pow : c ≤ (X : ℝ) ^ ε := by
   calc
@@ -367,10 +368,8 @@ private theorem c_le_X_pow : c ≤ (X : ℝ) ^ ε := by
       · ring_nf
       · positivity
     _ ≤ (X : ℝ) ^ ε := by
-      gcongr
-      · norm_cast
-        omega
-      · exact hK_div_d
+      exact Real.rpow_le_rpow_of_exponent_le
+        (by exact_mod_cast h1n.trans hnX) hK_div_d
 
 /-- The distinguished index `K - 1`, viewed in `Fin d`. -/
 noncomputable def KIndex : Fin d := Fin.ofNat d (K - 1)
@@ -464,10 +463,8 @@ theorem x_K_le_X_pow : x KIndex ≤ (X : ℝ) ^ ε := by
     _ ≤ (X : ℝ) ^ (K⁻¹ : ℝ) := by
       gcongr
     _ ≤ (X : ℝ) ^ ε := by
-      gcongr
-      · norm_cast
-        omega
-      · exact K_inv_le_eps
+      exact Real.rpow_le_rpow_of_exponent_le
+        (by exact_mod_cast h1n.trans hnX) K_inv_le_eps
 
 private theorem X_pow_mul_prod_le_radical :
     (X : ℝ) ^ (-ε) * ∏ j, x j ≤ (radical n : ℕ) := by
@@ -494,8 +491,8 @@ private theorem X_pow_mul_prod_le_radical :
         if j.val ≠ K - 1 then y (j.val + 1) else 1 := by
       have hKIndex (j : Fin d) : j.val = K - 1 ↔ j = KIndex := by
         have hlt : K - 1 < d := by
-        have hk := hKd
-        omega
+          have hk := hKd
+          omega
         constructor
         · intro hj
           ext
@@ -532,11 +529,13 @@ private theorem X_pow_mul_prod_le_radical :
         Fin.prod_univ_eq_prod_range
           (fun j ↦ if j + 1 ≠ K then y (j + 1) else 1) d]
     _ ≤ ∏ m ∈ Finset.range d, y (m + 1) := by
-      norm_cast
-      apply Finset.prod_le_prod_of_subset_of_one_le
+      apply Finset.prod_le_prod_of_subset_of_one_le₀
       · exact Finset.filter_subset _ _
+      · intro i hi
+        positivity
       · intro i hi hnot
-        exact (hy_pos _)
+        have h_one : 1 ≤ y (i + 1) := Nat.succ_le_iff.mpr (hy_pos _)
+        exact_mod_cast h_one
     _ = ∏ m ∈ Finset.Icc 1 d, y m := by
       norm_cast
       have hmap :
@@ -547,11 +546,13 @@ private theorem X_pow_mul_prod_le_radical :
         simp [h1d]
       simp [← hmap, Finset.prod_map]
     _ ≤ ∏ m ∈ Finset.Icc 1 d ∪ Finset.Ioc d n, y m := by
-      norm_cast
-      apply Finset.prod_le_prod_of_subset_of_one_le
-      · simp
+      apply Finset.prod_le_prod_of_subset_of_one_le₀
+      · exact Finset.subset_union_left
+      · intro i hi
+        positivity
       · intro i hi hnot
-        exact (hy_pos _)
+        have h_one : 1 ≤ y i := Nat.succ_le_iff.mpr (hy_pos _)
+        exact_mod_cast h_one
     _ = (radical n : ℕ) := by
       exact_mod_cast prod_y_eq_radical_n
 
