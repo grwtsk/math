@@ -36,6 +36,8 @@ open CanonicalHighCounting
 open PositiveHeightCountDeficit
 open CanonicalLocalZeroContour
 open ContourCountDeficit
+open GRWTSK.Combinatorics.WeightedPairBudget
+open GRWTSK.NumberTheory.Zeta.Riemann
 
 noncomputable section
 
