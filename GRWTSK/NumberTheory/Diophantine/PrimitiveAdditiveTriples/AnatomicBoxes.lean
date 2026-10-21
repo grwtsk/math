@@ -130,7 +130,7 @@ theorem mem_boxFinset {d : ℕ} {p : Parameters d} {q : Point d} :
       0 < p.totalC q.2.2 ∧
       p.totalA q.1 + p.totalB q.2.1 = p.totalC q.2.2 ∧
       SupportPrimitive p q := by
-  simp [boxFinset]
+  simpa [boxFinset, and_assoc]
 
 /-- The finite box count `B_d`. -/
 noncomputable def boxCard {d : ℕ} (p : Parameters d) : ℕ :=
