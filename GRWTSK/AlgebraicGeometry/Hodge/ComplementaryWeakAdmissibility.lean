@@ -7,6 +7,7 @@ The rational Hodge conjecture for CM abelian varieties,
 build/sections/05c-cm-types.tex.
 This file formalizes only the complementary-projector numerical argument. -/
 import GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope
+import GRWTSK.LinearAlgebra.FilteredProjectorSplit
 
 set_option autoImplicit false
 
@@ -25,6 +26,33 @@ structure ComplementaryNumerics where
   newton_add : newtonLeft + newtonRight = newtonTotal
   total_eq : hodgeTotal = newtonTotal
 
+open GRWTSK.LinearAlgebra.FilteredProjectorSplit
+
+/-- Build the Hodge side of the complementary numerics directly from an
+idempotent projector preserving the selected filtration. Thus Hodge additivity
+is no longer an external premise. -/
+def ofFilteredProjector
+    {K D : Type*} [Field K] [AddCommGroup D] [Module K D]
+    [FiniteDimensional K D]
+    (S : FilteredIdempotent (K := K) (D := D))
+    (newtonLeft newtonRight newtonTotal : ℕ)
+    (hleft : Module.finrank K S.left ≤ newtonLeft)
+    (hright : Module.finrank K S.right ≤ newtonRight)
+    (hnewton : newtonLeft + newtonRight = newtonTotal)
+    (htotal : Module.finrank K S.F1 = newtonTotal) :
+    ComplementaryNumerics where
+  hodgeLeft := Module.finrank K S.left
+  hodgeRight := Module.finrank K S.right
+  hodgeTotal := Module.finrank K S.F1
+  newtonLeft := newtonLeft
+  newtonRight := newtonRight
+  newtonTotal := newtonTotal
+  hodgeLeft_le_newtonLeft := hleft
+  hodgeRight_le_newtonRight := hright
+  hodge_add := S.finrank_left_add_right
+  newton_add := hnewton
+  total_eq := htotal
+
 theorem component_equalities (P : ComplementaryNumerics) :
     P.hodgeLeft = P.newtonLeft ∧ P.hodgeRight = P.newtonRight := by
   omega
@@ -36,6 +64,24 @@ theorem left_eq (P : ComplementaryNumerics) :
 theorem right_eq (P : ComplementaryNumerics) :
     P.hodgeRight = P.newtonRight :=
   (component_equalities P).2
+
+
+/-- Component Hodge/Newton equality with Hodge additivity discharged by the
+filtered idempotent splitting theorem. -/
+theorem component_equalities_of_filteredProjector
+    {K D : Type*} [Field K] [AddCommGroup D] [Module K D]
+    [FiniteDimensional K D]
+    (S : FilteredIdempotent (K := K) (D := D))
+    (newtonLeft newtonRight newtonTotal : ℕ)
+    (hleft : Module.finrank K S.left ≤ newtonLeft)
+    (hright : Module.finrank K S.right ≤ newtonRight)
+    (hnewton : newtonLeft + newtonRight = newtonTotal)
+    (htotal : Module.finrank K S.F1 = newtonTotal) :
+    Module.finrank K S.left = newtonLeft ∧
+      Module.finrank K S.right = newtonRight := by
+  exact component_equalities
+    (ofFilteredProjector S newtonLeft newtonRight newtonTotal
+      hleft hright hnewton htotal)
 
 theorem pureType_of_complementary_projector
     {K D : Type*} [Field K] [AddCommGroup D] [Module K D]
