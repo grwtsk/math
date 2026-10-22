@@ -127,9 +127,13 @@ independently source-constructed ShortComplex.moduleCatMk d₂ d₁.
 No substitute object or independent differential is introduced. -/
 def degreeOneShortComplexIso (k : ℕ) :
     (sourcedChainComplex k).sc 1 ≅ sourcedShortComplex k := by
+  let K := sourcedChainComplex k
+  have hprev : (ComplexShape.down ℕ).prev 1 = 2 := by simp
+  have hnext : (ComplexShape.down ℕ).next 1 = 0 := by simp
+  refine K.isoSc' 2 1 0 hprev hnext ≪≫ ?_
   refine ShortComplex.isoMk (Iso.refl _) (Iso.refl _) (Iso.refl _) ?_ ?_
-  · simp [sourcedChainComplex, sourcedShortComplex]
-  · simp [sourcedChainComplex, sourcedShortComplex]
+  · simp [K, sourcedChainComplex, sourcedShortComplex]
+  · simp [K, sourcedChainComplex, sourcedShortComplex]
 
 /-- The exact range of Mathlib's categorical "map to cycles" is the
 existing boundary submodule INSIDE the existing cycle submodule.
