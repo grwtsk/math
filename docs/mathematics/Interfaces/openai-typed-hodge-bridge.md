@@ -1170,6 +1170,43 @@ This matters epistemically: unchanged rows do not consume the independent four-f
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4u. Atomic transition split into switched core and unchanged identities
+
+The generic atomic-switch supplier is now decomposed explicitly in `CMFourFactorSwitchGeometry.lean`.
+
+The source introduces:
+
+~~~text
+FourFactorSwitchCoreWitness
+FourFactorSwitchCoreSupplier
+AtomicTransitionAssemblySupplier
+atomicSwitchTransitionSupplierOfCore
+~~~
+
+The dependency is now:
+
+[
+	ext{four-factor switched core}
++
+	ext{unchanged-row two-factor identities}
++
+	ext{slotwise product assembly}
+Longrightarrow
+	ext{full atomic transition}.
+]
+
+The first term is the genuinely independent theorem. It concerns only the old/new factors for the two rows changed by the atomic switch.
+
+The second term is the separate diagonal/identity-line geometry for rows proved combinatorially unchanged.
+
+The third term is routine geometric bookkeeping: pull all classes to distinct slots and multiply.
+
+Therefore the exact switch-specific external algebraicity boundary is now `FourFactorSwitchCoreSupplier`. Neither the finite switch combinatorics, all-conjugate type balance, rational descent, nor the unchanged-row identity tensors can discharge it.
+
+This source edit also repairs the declaration order so `IdentityTransitionSupplier` is declared before the helper that constructs it.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
