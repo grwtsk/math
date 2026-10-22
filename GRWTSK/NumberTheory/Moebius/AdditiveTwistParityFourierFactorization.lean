@@ -372,12 +372,12 @@ exact additive-Fourier residue repair. -/
 def parityFourierEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
-    letI : NeZero d := ⟨by
-      have hd := (Finset.mem_filter.mp ‹d ∈ effectiveEndpointSquareModulusSet b›).1
-      exact ne_of_gt (Finset.mem_Ico.mp hd).1⟩
-    (((d * d : ℕ) : ℝ))⁻¹ *
-      ∑ k : ZMod (d * d),
-        parityFourierQuadraticMajorant b d k
+    if hd : 0 < d then
+      letI : NeZero d := ⟨ne_of_gt hd⟩
+      (((d * d : ℕ) : ℝ))⁻¹ *
+        ∑ k : ZMod (d * d),
+          parityFourierQuadraticMajorant b d k
+    else 0
 
 /-- Analytic supplier at the natural endpoint scale, now expressed entirely in
 one-point Möbius Fourier sums and explicit diagonal corrections. -/
@@ -408,9 +408,10 @@ theorem naturalScaleSquareModulusCongruenceL1_of_parityFourierQuadraticBudget
         intro d hd
         have hdpos :
             0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
+        simp only [dif_pos hdpos]
         letI : NeZero d := ⟨ne_of_gt hdpos⟩
-        rw [← complexMertensEndpointCrossCongruenceFibre_eq_cast,
-          complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier]
+        change ‖(mertensEndpointCrossCongruenceFibre b d : ℂ)‖ ≤ _
+        rw [complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier]
         unfold additiveFourierEndpointCrossCongruenceFibre
         have hqpos : 0 < ((d * d : ℕ) : ℝ) := by positivity
         calc
