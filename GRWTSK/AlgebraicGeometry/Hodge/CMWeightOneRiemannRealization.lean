@@ -339,6 +339,17 @@ theorem WeightOneCMRealization.canonicalTensorToActual_tmul
   simp [WeightOneCMRealization.canonicalTensorToActual,
     WeightOneCMRealization.tensorBilinearToActual]
 
+/-- Bilinear coordinate formula that a tensor-to-H1 comparison is expected
+to preserve on pure tensors. -/
+def WeightOneCMRealization.pureTensorCoordinate
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (a x : E)
+    (σ : E ≃ₐ[ℚ] E) : ℂ :=
+  CMArchimedeanPositivity.baseComplexEmbedding E a *
+    CMArchimedeanPositivity.fieldCoordinates E x σ
+
 /-- The canonical tensor map satisfies the exact pure-tensor coordinate formula
 required by PureTensorActualH1Comparison. -/
 theorem WeightOneCMRealization.canonicalTensorToActual_coordinates_tmul
@@ -353,17 +364,6 @@ theorem WeightOneCMRealization.canonicalTensorToActual_coordinates_tmul
   rw [R.canonicalTensorToActual_tmul]
   simp [WeightOneCMRealization.pureTensorCoordinate,
     R.h1ToComplex_coordinates, CMArchimedeanPositivity.fieldCoordinates]
-
-/-- Bilinear coordinate formula that a tensor-to-H1 comparison is expected
-to preserve on pure tensors. -/
-def WeightOneCMRealization.pureTensorCoordinate
-    {v : OddSignRow E}
-    {X : SignControlledXi E v}
-    (R : WeightOneCMRealization E v X)
-    (a x : E)
-    (σ : E ≃ₐ[ℚ] E) : ℂ :=
-  CMArchimedeanPositivity.baseComplexEmbedding E a *
-    CMArchimedeanPositivity.fieldCoordinates E x σ
 
 /-- Pure-tensor compatibility version of the canonical tensor to actual H1
 comparison.
@@ -437,6 +437,16 @@ def PureTensorActualH1Comparison.toCanonicalComparison
     CanonicalTensorActualH1Comparison E R where
   toActual := C.toActual
   coordinate_compatibility := C.coordinate_compatibility
+
+
+/-- A supplied weight-one realization now canonically constructs the complete
+canonical-tensor to actual-H1 comparison from its rational inclusion data. -/
+def WeightOneCMRealization.canonicalTensorActualH1Comparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    CanonicalTensorActualH1Comparison E R :=
+  R.pureTensorActualH1Comparison.toCanonicalComparison
 
 /-- A positive-sign canonical embedding-line vector maps into actual H^(1,0). -/
 theorem CanonicalTensorActualH1Comparison.isOfType_holomorphic
