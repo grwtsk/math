@@ -1,3 +1,6 @@
+# Historical original target Git blob: fa3cbd7c37868c11eaf5c6067597ed80f3896c01.
+# Historical original parent: ef00d2505cf775470e570d7093a47438abda6ac5; tree dfdd6bf613c9c12222f127aecbd66f0743706042.
+# Publication identities are historical; repaired source/note/dependency bindings require containing revisions in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-dyadic-signed-abel-shift-packet-468-v0.1"
 owner_repository = "grwtsk/math"
@@ -15,21 +18,37 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
-inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
-stacked_parent_branch = "research/rh-scale-max-carleson-461-20261021"
-stacked_parent_revision = "ef00d2505cf775470e570d7093a47438abda6ac5"
-stacked_parent_tree = "dfdd6bf613c9c12222f127aecbd66f0743706042"
-candidate_branch = "research/rh-signed-abel-packet-468-20261021"
-theorem_source_commit = "e03145c9c54f59fffa277de35e4db2942cc04d2c"
-theorem_source_tree = "e2d5ae6067d2ded5b497407c760ba8fa97695a6d"
+historical_inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+historical_inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+historical_stacked_parent_branch = "research/rh-scale-max-carleson-461-20261021"
+stacked_parent_revision = "e120fc1950600cf773d60ea90078ccfc66a0fec8"
+stacked_parent_tree = "c1ba14ff050d09d33ad79086f540e9be3725382a"
+historical_candidate_branch = "research/rh-signed-abel-packet-468-20261021"
+historical_theorem_source_commit = "e03145c9c54f59fffa277de35e4db2942cc04d2c"
+historical_theorem_source_tree = "e2d5ae6067d2ded5b497407c760ba8fa97695a6d"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelShiftPacket.lean"
-theorem_source_git_blob = "6c953dad99f2e410f47ee8350a6f19b729ff8df9"
-mathematical_note_commit = "95fe8b5e67717b799c0d9f091765f121fa5b0341"
-mathematical_note_tree = "4084ec0430a070e509bcd270a892c1241ba50638"
+historical_theorem_source_git_blob = "6c953dad99f2e410f47ee8350a6f19b729ff8df9"
+theorem_source_git_blob = "986cc5698ebe60e5fc169f64738c40717a10b1f8"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_mathematical_note_commit = "95fe8b5e67717b799c0d9f091765f121fa5b0341"
+historical_mathematical_note_tree = "4084ec0430a070e509bcd270a892c1241ba50638"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-signed-abel-shift-packet.md"
-mathematical_note_git_blob = "a56afb6dd2134ea034bd88a37a1c707f94f8b4a1"
+historical_mathematical_note_git_blob = "a56afb6dd2134ea034bd88a37a1c707f94f8b4a1"
+mathematical_note_git_blob = "62b688e4b33b3f566ad605e0dd25aee28c5c4b79"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[historical_invalid_public_header]
+declaration = "finiteWeightDropTelescope"
+source_header = "theorem finiteWeightDropTelescope\n    (q : ℕ → ℝ) (N : ℕ) :\n    (∑ t ∈ Finset.range N, q t - q (t + 1)) =\n      q 0 - q N "
+source_header_sha256 = "210e6210c10f692294a658b33d47f86551dd03cf448635d594de1a105a3d3405"
+
+[repaired_public_header_acceptance]
+intended_source_header_sha256 = "8c5637246bdc2ce419627a2fe194a57268581fd4882d1d5a6de8143848f6ef6c"
+sum_binder_contains_complete_forward_difference = true
+full_type_excludes_free_index_parameter = true
+terminal_abel_term_and_prefix_indices_retained = true
+requires_independent_full_expected_type_check = true
 
 [terminal_consumer]
 module = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
@@ -98,7 +117,7 @@ supplier_constructed = false
 [candidate_comparison]
 selected = "EXACT_SIGNED_ABEL_PACKET"
 candidate_1 = "exact signed Abel packet; selected; equal to terminal consumer source"
-candidate_2 = "max-per-scale positive squares; valid sufficient majorant but stronger and cancellation-losing"
+candidate_2 = "max-per-scale positive squares; valid sufficient majorant and cancellation-losing; no converse proved"
 candidate_3 = "normalized square or variation source; deferred pending exact comparison theorem"
 
 [positivity]
@@ -174,17 +193,17 @@ private_helper_count = 0
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonEnergy.lean"
-git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+git_blob = "2620ec072954a660bd0788fcad9288bc4c20e759"
 status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean"
-git_blob = "4775fc209bf8d01b238b193605bd0005929ed02d"
+git_blob = "2a84e63d5ae76a2d2a37cc9bd45818f32af997f7"
 status = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean"
-git_blob = "fb9e3b7ec0cc6b4c5493e1c6954f625c82459d45"
+git_blob = "3415d1549ac3bd37f83e91f199cb073c102788f3"
 status = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
 
 [open_obligations]
