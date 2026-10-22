@@ -1183,3 +1183,46 @@ energy supplier, GUE universality, or RH.
 
 **Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 EXTERNAL_FIXED_FORM_SOURCE_OPEN / HIGHER_ORDER_CHOWLA_OPEN.
+
+## 18. Exact external Result 007 source-import precondition
+
+**2026-10-22.** Before attempting to instantiate the local
+`FixedNonproportionalAffineLogSaving` proposition from
+`openai/math`, a bounded source review identified an actual
+import-provenance gap in the external solution chain:
+
+```text
+OAI.TwoPointCorrelations.FinalMain
+  -> OAI.TwoPoint.Main
+  -> OAI.TwoPoint.MainWithMRTInputs
+  -> OAI.TwoPoint.PartiallyDischargedMain
+  -> OAI.TwoPoint.Bounds.PrimeReciprocalTheorem
+     -> PrimeNumberTheoremAnd.Erdos970.MertensClassical
+        [source path absent from nominal pinned package]
+```
+
+The pinned PNT dependency DOES have a mathematical
+Mertens-second-theorem candidate at
+`PrimeNumberTheoremAnd.IEANTN.Mertens`,
+with `Mertens.sum_prime_div_eq_log_log`.
+A three-line exact-scope external patch proposal
+has been stored **without applying it** at
+`verification/openai-result007-prime-reciprocal-import-630-v0.1.patch`.
+
+The source evidence, SHA-pinned candidate and
+qualification gates are in
+`docs/reviews/chowla-sofic-openai-fixed-form-prime-import-630.md`.
+The existing passive three-module arithmetic target now rejects
+promotion unless the pinned external import path is resolved,
+the candidate is elaborated under a proper provider environment,
+and its theorem's full transitive axioms and eventual local
+cross-version import are checked.
+
+This is an **obstruction and possible source correction**, NOT
+a Lean compiler or kernel failure receipt. No external module,
+analytic estimate, or third-party source was changed. The
+generic Walsh probability target remains unchanged.
+
+**Evidence:** SOURCE_REVIEWED / PINNED_IMPORT_UNRESOLVED /
+INERT_REPAIR_PROPOSED / NOT_RUN / NOT_KERNEL_AUDITED /
+ALL_ORDER_CHOWLA_OPEN.
