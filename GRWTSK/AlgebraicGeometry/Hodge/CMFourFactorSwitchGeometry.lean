@@ -285,6 +285,53 @@ theorem MiddlePairingNonvanishingData.pairing_ne_zero
   exact D.pairingData.pairing_scaled_conjugate_ne_zero
     D.beta_ne_zero D.scale_ne_zero
 
+/-- Geometric data already available before invoking Hodge--Riemann positivity.
+
+This record isolates the cup/integration pairing, the selected middle vectors,
+and the already-local scalar-proportionality input.  It does not assume
+positivity. -/
+structure GeometricMiddlePairingData where
+  pairing : V → V → ℂ
+  conjugatePartner : V → V
+  beta : V
+  beta_ne_zero : beta ≠ 0
+  gamma : V
+  scale : ℂ
+  scale_ne_zero : scale ≠ 0
+  gamma_eq :
+    gamma = scale • conjugatePartner beta
+  q : ℂ
+  q_eq :
+    q = pairing beta gamma
+  pairing_smul_right :
+    ∀ v c w, pairing v (c • w) = c * pairing v w
+
+/-- Exact remaining Hodge--Riemann supplier for one middle factor.
+
+It supplies only a positive real energy whose complexification equals the
+ample-class pairing with the conjugate partner.  No algebraicity conclusion is
+included. -/
+structure AmpleClassHodgeRiemannSupplier
+    (D : GeometricMiddlePairingData V) where
+  energy : V → ℝ
+  pairing_conjugate :
+    ∀ v, D.pairing v (D.conjugatePartner v) = (energy v : ℂ)
+  energy_pos :
+    ∀ {v}, v ≠ 0 → 0 < energy v
+
+/-- An ample-class Hodge--Riemann supplier canonically gives the abstract
+positive-pairing package used by the local nonvanishing lemmas. -/
+def AmpleClassHodgeRiemannSupplier.toPositiveConjugatePairing
+    (D : GeometricMiddlePairingData V)
+    (S : AmpleClassHodgeRiemannSupplier D) :
+    PositiveConjugatePairing V where
+  pairing := D.pairing
+  conjugatePartner := D.conjugatePartner
+  energy := S.energy
+  pairing_conjugate := S.pairing_conjugate
+  pairing_smul_right := D.pairing_smul_right
+  energy_pos := S.energy_pos
+
 /-- Exact comparison data for the geometric ample-class middle pairing.
 
 The external geometry supplies the identification of the integral/cup-product
@@ -304,6 +351,22 @@ structure AmpleClassMiddlePairingComparison where
   q_eq :
     q = pairingData.pairing beta gamma
 
+/-- The exact Hodge--Riemann supplier constructs the previously-declared
+ample-class comparison package. -/
+def AmpleClassHodgeRiemannSupplier.toComparison
+    (D : GeometricMiddlePairingData V)
+    (S : AmpleClassHodgeRiemannSupplier D) :
+    AmpleClassMiddlePairingComparison V where
+  pairingData := S.toPositiveConjugatePairing D
+  beta := D.beta
+  beta_ne_zero := D.beta_ne_zero
+  gamma := D.gamma
+  scale := D.scale
+  scale_ne_zero := D.scale_ne_zero
+  gamma_eq := D.gamma_eq
+  q := D.q
+  q_eq := D.q_eq
+
 /-- Once the ample-class pairing has been identified with the positive
 conjugate pairing, the manuscript scalar q_i is nonzero locally. -/
 theorem AmpleClassMiddlePairingComparison.q_ne_zero
@@ -312,6 +375,14 @@ theorem AmpleClassMiddlePairingComparison.q_ne_zero
   rw [D.q_eq, D.gamma_eq]
   exact D.pairingData.pairing_scaled_conjugate_ne_zero
     D.beta_ne_zero D.scale_ne_zero
+
+/-- Therefore the Hodge--Riemann supplier is exactly sufficient to prove
+the geometric middle scalar nonzero. -/
+theorem AmpleClassHodgeRiemannSupplier.q_ne_zero
+    (D : GeometricMiddlePairingData V)
+    (S : AmpleClassHodgeRiemannSupplier D) :
+    D.q ≠ 0 :=
+  (S.toComparison D).q_ne_zero
 
 /-- A finite product of nonzero middle pairing scalars is nonzero. -/
 theorem product_middlePairing_ne_zero
