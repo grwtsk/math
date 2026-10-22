@@ -24,9 +24,8 @@ over m=0,...,M (this repository's dyadic representation) and
 m=1,...,M (the external Result 007 comparator's Icc convention).
 The m=0 terms are NOT discarded or silently absorbed into a theorem.
 
-This source imports NO external analytic result. The inspected public
-OpenAI ComparatorChallenges/OrdinaryTwoPointCorrelations.lean contains
-sorry proof placeholders and is NOT a locally kernel-verified supplier.
+This source imports NO external analytic result. The inspected public OpenAI ComparatorChallenges comparator has
+unfinished proof placeholders and is NOT a locally kernel-verified supplier.
 No fixed-form rate, growing-shift uniformity, higher-order Chowla
 estimate, or RH consequence is claimed.
 
@@ -234,6 +233,55 @@ theorem evenShift_affine_determinants (j : ℕ) (hj : 0 < j) :
   constructor
   · ring
   constructor <;> omega
+
+/-- The exact odd-shift positive-index affine triangle. The two
+m=0 corrections remain EXPLICIT rather than being hidden inside
+a fixed-form asymptotic constant. -/
+theorem oddShift_Icc_triangle (j M : ℕ) :
+    |∑ n ∈ Finset.range (2 * (M + 1)),
+       fixedShiftTerm (2 * j + 1) n| ≤
+      |oddAffineLeftTerm j 0| + |oddAffineRightTerm j 0| +
+        |∑ m ∈ Finset.Icc 1 M, oddAffineLeftTerm j m| +
+        |∑ m ∈ Finset.Icc 1 M, oddAffineRightTerm j m| := by
+  rw [oddShift_Icc_comparator, abs_neg]
+  calc
+    _ = |(oddAffineLeftTerm j 0 + oddAffineRightTerm j 0) +
+          ((∑ m ∈ Finset.Icc 1 M, oddAffineLeftTerm j m) +
+           (∑ m ∈ Finset.Icc 1 M, oddAffineRightTerm j m))| := by
+      congr 1
+      ring
+    _ ≤ |oddAffineLeftTerm j 0 + oddAffineRightTerm j 0| +
+          |(∑ m ∈ Finset.Icc 1 M, oddAffineLeftTerm j m) +
+           (∑ m ∈ Finset.Icc 1 M, oddAffineRightTerm j m)| := abs_add_le _ _
+    _ ≤ (|oddAffineLeftTerm j 0| + |oddAffineRightTerm j 0|) +
+          (|∑ m ∈ Finset.Icc 1 M, oddAffineLeftTerm j m| +
+           |∑ m ∈ Finset.Icc 1 M, oddAffineRightTerm j m|) :=
+      add_le_add (abs_add_le _ _) (abs_add_le _ _)
+    _ = _ := by ring
+
+/-- The analogous positive-index triangle for even shifts.
+Both fixed affine pairs are nonproportional only when j>0. -/
+theorem evenShift_Icc_triangle (j M : ℕ) :
+    |∑ n ∈ Finset.range (2 * (M + 1)),
+       fixedShiftTerm (2 * j) n| ≤
+      |evenAffineLeftTerm j 0| + |evenAffineRightTerm j 0| +
+        |∑ m ∈ Finset.Icc 1 M, evenAffineLeftTerm j m| +
+        |∑ m ∈ Finset.Icc 1 M, evenAffineRightTerm j m| := by
+  rw [evenShift_Icc_comparator]
+  calc
+    _ = |(evenAffineLeftTerm j 0 + evenAffineRightTerm j 0) +
+          ((∑ m ∈ Finset.Icc 1 M, evenAffineLeftTerm j m) +
+           (∑ m ∈ Finset.Icc 1 M, evenAffineRightTerm j m))| := by
+      congr 1
+      ring
+    _ ≤ |evenAffineLeftTerm j 0 + evenAffineRightTerm j 0| +
+          |(∑ m ∈ Finset.Icc 1 M, evenAffineLeftTerm j m) +
+           (∑ m ∈ Finset.Icc 1 M, evenAffineRightTerm j m)| := abs_add_le _ _
+    _ ≤ (|evenAffineLeftTerm j 0| + |evenAffineRightTerm j 0|) +
+          (|∑ m ∈ Finset.Icc 1 M, evenAffineLeftTerm j m| +
+           |∑ m ∈ Finset.Icc 1 M, evenAffineRightTerm j m|) :=
+      add_le_add (abs_add_le _ _) (abs_add_le _ _)
+    _ = _ := by ring
 
 /-- Exact extra terminal sample at an ODD cutoff; the source here
 does not replace this with a uniform analytic error claim. -/
