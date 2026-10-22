@@ -1515,6 +1515,39 @@ theorem CMFiniteNestedLinearAssembly.toFiniteAssembly_smul_first
   simpa [CMFiniteNestedLinearAssembly.toFiniteAssembly] using
     M.smul_first q a b c d
 
+/-- A nested rational-linear fourfold assembly automatically satisfies the
+complete slotwise multilinearity certificate for its finite presentation.
+The proof is finite case analysis on the four slots; scalar Galois
+compatibility remains the independent hypothesis of the nested assembly. -/
+def CMFiniteNestedLinearAssembly.toMultilinearity
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors) :
+    CMFiniteAssemblyMultilinearity M.toFiniteAssembly where
+  add_slot := by
+    intro i x y f
+    fin_cases i <;>
+      simp [CMFiniteNestedLinearAssembly.toFiniteAssembly,
+        Function.update, map_add, LinearMap.add_apply]
+  smul_slot := by
+    intro i q x f
+    fin_cases i <;>
+      simp [CMFiniteNestedLinearAssembly.toFiniteAssembly,
+        Function.update, map_smul, LinearMap.smul_apply]
+
+/-- In particular, the finite assembly from nested-linear data vanishes
+whenever any one of its four slots is replaced by zero. -/
+theorem CMFiniteNestedLinearAssembly.toFiniteAssembly_zero_at
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (i : Fin 4)
+    (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier) :
+    M.toFiniteAssembly.assemble (Function.update f i 0) = 0 :=
+  M.toMultilinearity.zero_at i f
+
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
