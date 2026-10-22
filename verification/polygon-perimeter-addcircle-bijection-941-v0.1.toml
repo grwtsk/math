@@ -1,0 +1,502 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "polygon-perimeter-addcircle-bijection-941-v0.1"
+owner_repository = "grwtsk/math"
+issue = 941
+related_issues = [889,868,859,845,834,823,803,795,774,758,745,734,722,704,653,198,205,545,121,168,516,159,100,15]
+route_id = "GENUS_G_UNPAIRED_PERIMETER_ADDCIRCLE_BIJECTION_HOMEOMORPHISM"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/perimeter-addcircle-angle-889-20261022"
+review_parent_revision = "e08b2826f99c21c62b51b07a8b383109f424cd60"
+review_parent_angle_module_git_blob = "62fc928913b455d2c4839d1b5748607618b9a5ac"
+review_parent_perimeter_module_git_blob = "89e89609b8dabbf9117a61eb65362f34830916cf"
+review_source_commit = "411cba8e44b2a4a53f9b3e0fc9279ade7a601d52"
+review_note_commit = "ebdecff05a0b1708ef010855a87be93fb3389386"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCircleEquivalence.lean"
+new_module_git_blob = "ad92d48b7eb6eb7135fb84c124e11aa3ccdd17cc"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-perimeter-circle-equivalence.md"
+mathematical_note_git_blob = "fd23e4da1a164dc137bc4193d30c63a883566d3f"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+circle_fundamental_domain_equiv = "AddCircle.equivIco"
+circle_fundamental_domain_representative = "AddCircle.eq_coe_Ico"
+circle_fundamental_domain_injectivity = "AddCircle.coe_eq_coe_iff_of_mem_Ico"
+circle_period_equality = "AddCircle.coe_period"
+circle_rescaling_homeomorphism = "AddCircle.homeomorphAddCircle"
+floor_nonnegative = "Int.floor_nonneg"
+floor_lower_bound = "Int.floor_le"
+fractional_part_nonnegative = "Int.fract_nonneg"
+fractional_part_lt_one = "Int.fract_lt_one"
+fractional_part_floor_sum = "Int.fract_add_floor"
+unit_interval_fractional_membership = "unitInterval.fract_mem"
+compact_to_Hausdorff_homeomorphism = "Continuous.homeoOfEquivCompactToT2"
+perimeter_projection_continuity = "perimeterProjection_continuous"
+parent_angle_continuity = "perimeterAngle_continuous"
+reuse_status = "PINNED_DECLARATIONS_SOURCE_INSPECTED_NOT_ELABORATED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_unsafe_declaration_audit = true
+requires_full_transitive_import_and_native_review = true
+requires_hostile_fixture_replay = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+parent_sources_modified = false
+exact_source_handle_and_side_identity_preserved = true
+directed_side_count_equals_4g = true
+unoriented_generator_count_not_substituted = true
+explicit_handle_ordinal_inverse_candidate = true
+explicit_directed_side_ordinal_inverse_candidate = true
+right_endpoint_normalization_candidate = true
+all_four_authentic_seams_consumed = true
+half_open_fundamental_domain_candidate = true
+source_interval_uniqueness_candidate = true
+floor_fractional_surjectivity_candidate = true
+perimeter_angle_injectivity_candidate = true
+perimeter_angle_surjectivity_candidate = true
+perimeter_angle_bijectivity_candidate = true
+unpaired_perimeter_compactness_candidate = true
+actual_period_circle_homeomorphism_candidate = true
+actual_unit_circle_homeomorphism_candidate = true
+genus_two_period_eight_fixture = true
+genus_three_period_twelve_fixture = true
+closed_disk_homeomorphism_proved = false
+cone_to_closed_disk_homeomorphism_proved = false
+joint_radial_continuity_proved = false
+authentic_standard_disk_boundary_attaching_map_proved = false
+CW_pushout_and_surface_manifold_proved = false
+cellular_singular_chain_comparison_proved = false
+surface_pi1_van_kampen_Hurewicz_proved = false
+hyperbolic_geodesic_length_proved = false
+Selberg_WeilPetersson_GUE_sofic_proved = false
+Chowla_Mobius_growing_shift_or_zeta_RH_proved = false
+mathematical_statement = "The canonical angular map from the exact unpaired genus-g polygon perimeter to AddCircle(4g) is a source-level bijection candidate; compactness and the imported compact-to-Hausdorff theorem package it as a homeomorphism, then imported period rescaling identifies it with UnitAddCircle."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_admit = true
+reject_unreported_native_dependencies = true
+reject_unreported_unsafe_declarations = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+authored_declaration_count = 31
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = [
+  "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress",
+  "Mathlib.Algebra.Order.Floor.Ring",
+  "Mathlib.Topology.Homeomorph.Lemmas",
+  "Mathlib.Tactic"
+]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+source_construct = "local cornerDiscreteTopology and cornerDiscrete instances"
+expected_generated_status = "PRIVATE_OR_GENERATED_NAMES_NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+source_construct = "dependent Fin subtype proof terms in handleOfOrdinal, cornerOfOrdinal, and nextDirectedCorner"
+expected_generated_status = "PROOF_TERMS_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+source_construct = "Equiv.ofBijective and Continuous.homeoOfEquivCompactToT2 packaging"
+expected_generated_status = "GENERATED_PROJECTIONS_NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.handleOrdinal_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.directedSideOrdinal_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.handleOfOrdinal"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.handleOrdinal_handleOfOrdinal"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.cornerOfOrdinal"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.directedSideOrdinal_cornerOfOrdinal"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.sourceRealAngularAddress"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.sourceAngularAddress_eq_coe_real"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.nextDirectedCorner"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterProjection_one_eq_nextDirectedCorner"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.canonicalBoundaryPoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.canonicalBoundaryPoint_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.canonicalBoundaryPoint_parameter_lt_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.sourceAngularAddress_canonical"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.canonicalRealAngularAddress_mem_Ico"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.boundaryPoint_eq_of_realAngularAddress_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.exists_boundaryPoint_realAngularAddress_eq_of_mem_Ico"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterAngle_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterAngle_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterAngle_bijective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterAngle_eq_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterProjection_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.unpairedPerimeter_isCompact"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.unpairedPerimeterCompactSpace"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterCircleHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterCircleHomeomorph_apply"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterUnitCircleHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterUnitCircleHomeomorph_apply"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.perimeterUnitAngle_bijective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.genusTwoPerimeterCircleHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence.genusThreePerimeterCircleHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent-head"
+requirement = "The candidate is a direct child of exact PR #901 head e08b2826f99c21c62b51b07a8b383109f424cd60 and does not edit parent files."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "new-file-only"
+requirement = "The increment adds one Lean module, one mathematical note, and one passive verification manifest; no existing file is modified or deleted."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "unpaired-source-exact"
+requirement = "The domain is exactly UnpairedPerimeter k, not PolygonBoundaryOneSkeleton k, FilledPolygonQuotient k, or an unrelated finite quotient."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "directed-count"
+requirement = "The period is 4*(k+2), counting directed source intervals rather than 2*(k+2) unoriented generators."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "base-extra-handle-identity"
+requirement = "handleOfOrdinal preserves the original Sum (Fin 2) (Fin k) distinction between base and extra handles."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "handle-ordinal-injective"
+requirement = "Distinct original handles cannot share a handleOrdinal."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "directed-ordinal-injective"
+requirement = "Distinct exact PolygonCorner source identifiers cannot share a directedSideOrdinal."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "ordinal-inverse-bound"
+requirement = "cornerOfOrdinal is defined only for Fin (4*(k+2)), with quotient-by-four handle index provably below k+2."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "ordinal-inverse-remainder"
+requirement = "cornerOfOrdinal uses remainder modulo four for the exact local directed side."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "ordinal-right-inverse"
+requirement = "directedSideOrdinal (cornerOfOrdinal n) equals n.val, not merely an equicardinality statement."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "real-source-address"
+requirement = "sourceRealAngularAddress is exactly directedSideOrdinal plus the real unit-interval coordinate."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "circle-coercion-address"
+requirement = "sourceAngularAddress is proved definitionally equal to coercion of the real source address into AddCircle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "next-local-side-01"
+requirement = "nextDirectedCorner sends local side zero to local side one on the same handle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "next-local-side-12"
+requirement = "nextDirectedCorner sends local side one to local side two on the same handle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "next-local-side-23"
+requirement = "nextDirectedCorner sends local side two to local side three on the same handle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "next-handle-side3"
+requirement = "nextDirectedCorner sends local side three to side zero of the inherited nextHandle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "final-cyclic-wrap"
+requirement = "The side-three successor includes the final last-handle-to-first-handle wrap."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "seam-source-01"
+requirement = "Endpoint normalization for side zero is justified by perimeter_seam_01."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "seam-source-12"
+requirement = "Endpoint normalization for side one is justified by perimeter_seam_12."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "seam-source-23"
+requirement = "Endpoint normalization for side two is justified by perimeter_seam_23."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "seam-source-next"
+requirement = "Endpoint normalization for side three is justified by perimeter_seam_next."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "closed-to-half-open"
+requirement = "Only source points with parameter exactly one are moved; every other source point is retained."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "canonical-projection"
+requirement = "canonicalBoundaryPoint preserves the actual perimeterProjection quotient class."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "canonical-parameter"
+requirement = "Every canonical representative has parameter strictly below one."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "canonical-angle"
+requirement = "Canonical normalization preserves the parent sourceAngularAddress."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "canonical-lower-bound"
+requirement = "Every canonical real address is nonnegative."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "canonical-upper-bound"
+requirement = "Every canonical real address is strictly below angularPeriod k."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "period-positive"
+requirement = "The fundamental-domain argument consumes angularPeriod_pos and never treats the real period as zero."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "mathlib-Ico-injectivity"
+requirement = "Circle equality is converted to real equality only after both representatives are proved in the same Ico fundamental domain."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "half-open-unique-ordinal"
+requirement = "Equal real addresses with parameters in [0,1) force equal directed-side ordinals."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "half-open-unique-parameter"
+requirement = "After ordinal equality, equal real addresses force equal unit-interval parameters."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "exact-source-recovery"
+requirement = "Ordinal injectivity recovers the exact original PolygonCorner, not an anonymous replacement index."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "quotient-injectivity"
+requirement = "perimeterAngle_injective concludes equality in UnpairedPerimeter through canonical projection equalities."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "Ico-representative"
+requirement = "Surjectivity starts from AddCircle.eq_coe_Ico, not from an assumed inverse to perimeterAngle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "floor-nonnegative"
+requirement = "For x in [0,N), floor x is proved nonnegative before conversion to Nat."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "floor-period-bound"
+requirement = "For x in [0,N), floor x is proved strictly below 4*(k+2)."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "fractional-unit-interval"
+requirement = "Int.fract x is packaged in Mathlib unitInterval using imported bounds."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "fractional-half-open"
+requirement = "The selected fractional parameter is strictly below one."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "floor-fract-identity"
+requirement = "The source address equality consumes Int.fract_add_floor."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "surjectivity-source"
+requirement = "The preimage constructed for a circle point is an actual original BoundaryPoint k projected to UnpairedPerimeter k."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "bijectivity-composition"
+requirement = "perimeterAngle_bijective is exactly the conjunction of separately proved injectivity and surjectivity."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "quotient-projection-surjective"
+requirement = "Compactness does not assume the quotient inhabited abstractly; perimeterProjection is explicitly proved surjective."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "finite-source-topology"
+requirement = "Only PolygonCorner k is assigned the discrete topology; unitInterval retains its real subspace topology."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "source-compactness"
+requirement = "BoundaryPoint k compactness comes from the finite directed-side carrier times the compact unit interval."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "quotient-compactness"
+requirement = "UnpairedPerimeter k compactness is proved as the continuous image of the source under perimeterProjection."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "homeomorphism-not-continuity-alone"
+requirement = "The final homeomorphism consumes continuity, proved bijectivity, compact source, and Hausdorff target."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "forward-map-exact"
+requirement = "The forward function of perimeterCircleHomeomorph is definitionally the already-authenticated perimeterAngle."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "unit-rescaling-imported"
+requirement = "The unit-circle homeomorphism is obtained by composition with periodCircleHomeomorph, not by a second arbitrary map."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "unit-coordinate-bijective"
+requirement = "perimeterUnitAngle_bijective is derived from the actual unit-circle homeomorphism."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "genus-two-period"
+requirement = "The genus-two fixture specializes the period to eight."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "genus-three-period"
+requirement = "The genus-three fixture specializes the period to twelve."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-paired-collapse"
+requirement = "No proof step substitutes the paired one-skeleton or its one-vertex corner collapse for the unpaired perimeter."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-interior-collapse"
+requirement = "Strict interior points can coincide only through equality of their exact ordinal and parameter."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-false-real-seam"
+requirement = "The final seam is never represented by a false real equality N=0."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-disk-claim"
+requirement = "The source does not claim a standard closed disk or cone-to-disk homeomorphism."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-CW-manifold-claim"
+requirement = "The source does not claim a CW pushout, surface manifold, or oriented manifold."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-chain-comparison-claim"
+requirement = "The source does not claim a cellular/singular homology comparison."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-pi1-claim"
+requirement = "The source does not claim van Kampen, fundamental group, or Hurewicz."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-hyperbolic-trace-claim"
+requirement = "The source does not claim hyperbolic lengths, Selberg, or Weil-Petersson results."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-GUE-sofic-Chowla-claim"
+requirement = "The source does not claim GUE, sofic, Chowla, or growing-shift arithmetic consequences."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-zeta-RH-claim"
+requirement = "The source does not claim a zeta divisor, zero-free region, or Riemann Hypothesis consequence."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-toolchain-mutation"
+requirement = "The increment does not modify lean-toolchain, lake-manifest.json, dependencies, workflows, caches, executors, or native settings."
+status = "NOT_RUN"
+[[hostile_controls]]
+id = "no-kernel-claim"
+requirement = "All new declarations remain SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED until exact-head replay."
+status = "NOT_RUN"
