@@ -508,6 +508,31 @@ if the ambient filtration itself is Frobenius-stable. That stronger hypothesis
 is not required by the filtered-\(\varphi\)-module argument and is not assumed
 by the bridge.
 
+## 5c. CM sign-to-slope arithmetic
+
+The manuscript's equation \`eq:cm-sign-to-hodge-type\` contains the numerical
+relations
+
+\[
+\nu_\iota(\sigma e)=-\frac32v(g),
+\qquad
+t=\frac12-\frac13\nu_\iota(\sigma e).
+\]
+
+The local module
+\`GRWTSK/AlgebraicGeometry/Hodge/CMTypeSlope.lean\`
+now proves the arithmetic consequence
+
+\[
+t=\frac{1+v(g)}2,
+\]
+
+hence \(t=1\) for positive sign and \(t=0\) for negative sign.
+
+This discharges only the rational arithmetic. The valuation identity itself,
+the active Hecke character, and the Frobenius-slope theorem remain exact
+external premises.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
