@@ -1,0 +1,94 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-transverse-frequency-split-fourier-915-v0.1"
+owner_repository = "grwtsk/math"
+issue = 915
+parent_issue = 904
+parent_pr = 908
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseFrequencySplitFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseFrequencySplitFourier"
+
+[source_binding]
+stacked_parent_revision = "0a9c48648261477ab9d25cac4565a4424b8183d1"
+candidate_branch = "research/rh-endpoint-transverse-split-915"
+theorem_source_commit = "0d1ab7ab8572726fdd0dd1bc28abb8953edfdc53"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointTransverseFrequencySplitFourier.lean"
+theorem_source_git_blob = "777aedcd97142bde197f9aa9a860b434ad83cdff"
+
+[selected_increment]
+transverse_circular_distance = "coreGrowingShiftEndpointTransverseCircularDistance"
+distance_zero_iff = "coreGrowingShiftEndpointTransverseCircularDistance_eq_zero_iff"
+distance_negation = "coreGrowingShiftEndpointTransverseCircularDistance_neg"
+distance_half_modulus = "coreGrowingShiftEndpointTransverseCircularDistance_two_mul_le"
+distance_window_bound = "coreGrowingShiftEndpointTransverseCircularDistance_le_window"
+transverse_multiplier = "coreGrowingShiftEndpointTransverseMultiplier"
+multiplier_zero_iff = "coreGrowingShiftEndpointTransverseMultiplier_eq_zero_iff"
+multiplier_nonzero = "coreGrowingShiftEndpointTransverseMultiplier_ne_zero"
+multiplier_sine_geometry = "coreGrowingShiftEndpointTransverseMultiplier_norm_eq_sineDistance"
+inverse_multiplier_exact_norm = "coreGrowingShiftEndpointTransverseMultiplier_inv_norm_eq"
+zero_frequency_set = "coreGrowingShiftEndpointTransverseZeroFrequencySet"
+low_frequency_set = "coreGrowingShiftEndpointTransverseLowFrequencySet"
+regular_frequency_set = "coreGrowingShiftEndpointTransverseRegularFrequencySet"
+frequency_partition = "coreGrowingShiftEndpointTransverseFrequency_univ_eq_partition"
+frequency_sum_partition = "coreGrowingShiftEndpointTransverse_sum_eq_zero_add_low_add_regular"
+transverse_reindexed_clipping_packet = "coreGrowingShiftSignedEndpointTransverseReindexedClippingFourierPacketComplex"
+transverse_reindexing_identity = "coreGrowingShiftSignedEndpointTransverseReindexedClippingFourierPacketComplex_eq_parent"
+nonzero_resolved_clipping_dft = "coreGrowingShiftEndpointDoubledShearedPrefixClippingResolvedDFT2"
+nonzero_resolvent_identity = "coreGrowingShiftEndpointDoubledShearedPrefixClippingResolvedDFT2_eq_kernel"
+direct_zero_clipping_packet = "coreGrowingShiftSignedEndpointTransverseZeroClippingFourierPacketComplex"
+low_clipping_packet = "coreGrowingShiftSignedEndpointTransverseLowClippingFourierPacketComplex"
+regular_clipping_packet = "coreGrowingShiftSignedEndpointTransverseRegularClippingFourierPacketComplex"
+clipping_mode_decomposition = "coreGrowingShiftSignedEndpointTransverseReindexedClippingFourierPacketComplex_eq_zero_add_low_add_regular"
+zero_mode_joint_packet = "coreGrowingShiftSignedEndpointTransverseZeroModeJointFourierPacketComplex"
+zero_mode_joint_identity = "coreGrowingShiftSignedEndpointTransverseZeroModeJointFourierPacketComplex_eq_bulk_sub_zeroClip"
+cutoff_packet = "coreGrowingShiftSignedEndpointTransverseFrequencySplitAtCutoffFourierPacketComplex"
+cutoff_packet_identity = "coreGrowingShiftSignedEndpointTransverseFrequencySplitAtCutoffFourierPacketComplex_eq_parent"
+canonical_cutoff = "coreGrowingShiftEndpointCanonicalTransverseFrequencyCutoff"
+complete_complex_packet = "coreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacketComplex"
+complete_complex_packet_identity = "coreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacketComplex_eq_parent"
+complete_real_packet = "coreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacket"
+complete_real_packet_identity = "coreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacket_eq_parent"
+packet_return = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointTransverseFrequencySplitFourier"
+signed_source = "SubpolynomialCoreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacket_iff_parent"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointTransverseFrequencySplitFourierPacket"
+proof_classification = "EXACT_TRANSVERSE_CIRCULAR_DISTANCE_MODE_PARTITION_AND_NONZERO_RESOLVENT"
+next_obstruction = "prove elementary regular-mode multiplier lower bounds and low-mode cardinality bounds while preserving the direct zero mode, right-window atom, and joint signed packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+multiplier_lower_bound_proved = false
+inverse_multiplier_upper_bound_proved = false
+small_divisor_sum_estimate_proved = false
+low_mode_cardinality_bound_used_analytically = false
+low_mode_estimate_proved = false
+regular_mode_estimate_proved = false
+right_boundary_estimate_proved = false
+transverse_zero_mode_estimate_proved = false
+joint_signed_estimate_proved = false
+zero_mode_inverted = false
+zero_mode_discarded = false
+right_boundary_discarded = false
+low_modes_replaced_by_regular_bound = false
+bulk_clip_triangle_inequality_used = false
+bulk_multiplier_replaced_by_absolute_value = false
+parseval_bound_used = false
+cauchy_schwarz_used = false
+hilbert_schmidt_bound_used = false
+operator_norm_bound_used = false
+support_enlargement_used = false
+diagonal_reinserted = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+gowers_adapter_constructed = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false
