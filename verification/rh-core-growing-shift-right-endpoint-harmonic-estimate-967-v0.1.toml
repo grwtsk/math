@@ -1,0 +1,91 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-right-endpoint-harmonic-estimate-967-v0.1"
+owner_repository = "grwtsk/math"
+issue = 967
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_OFF_FIBER_ESTIMATE_AUTHORED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointRightEndpointHarmonicEstimate"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointRightEndpointHarmonicEstimate"
+
+[source_binding]
+stacked_parent_revision = "0366138f0afd762c35a7afe56b617d969b1dbc15"
+theorem_source_commit = "ac935a51a07fda7ea2c9c18b2c8e06f9dc470678"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointRightEndpointHarmonicEstimate.lean"
+theorem_source_git_blob = "f73c560555eec838076bc8e045344bd635939307"
+mathematical_note_commit = "af1eba83c8746760a5f130d4de34cb2832639a32"
+
+[selected_increment]
+y_lower = "coreGrowingShiftEndpointRightEndpointHarmonicYLower"
+y_upper = "coreGrowingShiftEndpointRightEndpointHarmonicYUpper"
+fiber_set = "coreGrowingShiftEndpointRightEndpointHarmonicFiberSet"
+fiber_character_sum = "coreGrowingShiftEndpointRightEndpointHarmonicFiberCharacterSum"
+sheared_model = "coreGrowingShiftEndpointRightEndpointHarmonicShearedDFT2"
+harmonic_mass = "coreGrowingShiftEndpointRightEndpointHarmonicMass"
+tail_lower_normalization = "coreGrowingShiftEndpointTransverseInteriorTailLower_eq_rightEndpoint"
+interior_upper_normalization = "coreGrowingShiftEndpointTransverseInteriorPrefixUpper_eq_rightEndpoint"
+nh_support = "coreGrowingShiftEndpointRightEndpointNHSupport"
+yh_support = "coreGrowingShiftEndpointRightEndpointYHSupport"
+support_shear = "mem_coreGrowingShiftEndpointRightEndpointYHSupport_shear_iff"
+character_shear = "coreGrowingShiftEndpointRightEndpoint_character_shear"
+pair_model = "coreGrowingShiftEndpointRightEndpointHarmonicPairDFT2"
+parent_to_pair = "coreGrowingShiftEndpointTransverseInteriorRightEndpointHarmonicDFT2_eq_pair"
+pair_to_sheared = "coreGrowingShiftEndpointRightEndpointHarmonicPairDFT2_eq_sheared"
+exact_parent_identity = "coreGrowingShiftEndpointTransverseInteriorRightEndpointHarmonicDFT2_eq_sheared"
+geometric_identity = "finite_transverseNatCharacter_Ico_multiplier_identity"
+geometric_norm_bound = "finite_transverseNatCharacter_Ico_norm_le_two_mul_invMultiplier"
+fiber_norm_bound = "coreGrowingShiftEndpointRightEndpointHarmonicFiberCharacterSum_norm_le"
+harmonic_mass_bound = "coreGrowingShiftEndpointRightEndpointHarmonicMass_le_one"
+off_fiber_bound = "coreGrowingShiftEndpointTransverseInteriorRightEndpointHarmonicDFT2_norm_le_offFiber"
+circular_distance_bound = "coreGrowingShiftEndpointTransverseInteriorRightEndpointHarmonicDFT2_norm_le_distance"
+regular_cutoff_bound = "coreGrowingShiftEndpointTransverseInteriorRightEndpointHarmonicDFT2_norm_le_regularCutoff"
+diagonal_identity = "coreGrowingShiftEndpointRightEndpointHarmonicFiberCharacterSum_zero"
+adversarial_weight = "coreGrowingShiftEndpointRightEndpointAdversarialFiberWeight"
+adversarial_weight_norm = "coreGrowingShiftEndpointRightEndpointAdversarialFiberWeight_norm"
+weighted_norm_only_obstruction = "coreGrowingShiftEndpointRightEndpoint_weightedFiber_obstruction"
+source_profile = "SignedEndpointRightEndpointHarmonicEstimateSource"
+proof_classification = "ACTUAL_OFF_FIBER_GEOMETRIC_CHARACTER_BOUND_WITH_DIAGONAL_AND_NORM_ONLY_OBSTRUCTIONS"
+next_obstruction = "aggregate the off-fiber pointwise estimate against the two Mobius DFT factors while preserving the direct zero-mode joint packet, capped correction, and singular numerator; any centered-fiber or squarefree-gcd adapter must supply an exact identity plus variation, square-sum, or energy control"
+
+[primary_sources]
+hilbert_inequality = "Montgomery-Vaughan-1974-DOI-10.1112/jlms/s2-8.1.73"
+large_sieve = "Montgomery-Vaughan-1973-DOI-10.1112/S0025579300004708"
+primary_source_theorem_instantiated = false
+
+[neighboring_lines]
+centered_fiber_exact_identity_only = true
+centered_fiber_subpolynomial_bound_available = false
+squarefree_gcd_exact_identity_only = true
+squarefree_gcd_weighted_cancellation_available = false
+nonunit_gcd_obstruction_retained = true
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+axiom_audited = false
+externally_replayed = false
+exact_endpoint_shear_authored = true
+off_fiber_geometric_estimate_authored = true
+circular_distance_estimate_authored = true
+diagonal_obstruction_authored = true
+weighted_norm_only_obstruction_authored = true
+full_packet_estimate_proved = false
+
+[nonclaims]
+direct_zero_mode_estimate_proved = false
+capped_shift_estimate_proved = false
+singular_numerator_estimate_proved = false
+low_mode_packet_estimate_proved = false
+regular_mode_packet_estimate_proved = false
+centered_fiber_subpolynomial_estimate_proved = false
+squarefree_gcd_cancellation_proved = false
+hilbert_inequality_applied = false
+large_sieve_applied = false
+parseval_bound_used = false
+cauchy_schwarz_used = false
+zero_mode_inverted = false
+zero_mode_discarded = false
+capped_correction_discarded = false
+singular_numerator_discarded = false
+riemann_hypothesis_proved = false
+chowla_proved = false
+goldbach_proved = false
