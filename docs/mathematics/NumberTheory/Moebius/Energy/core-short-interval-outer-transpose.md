@@ -1,0 +1,1 @@
+Issue #583. Source draft only. The incompatible dyadic packet is reindexed exactly by retained length using finite Fubini. The source constructs the transpose adapter and leaves only the aggregated coefficient-mass estimate open. No build, replay, merge, or RH claim.
