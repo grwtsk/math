@@ -375,6 +375,38 @@ at the chosen coefficient field. The remaining Hodge supplier is to attach
 the prescribed (1,0)/(0,1) types and identify the rational source with
 U(v)=H^1(B(v),Q), including scalar-conjugation transport.
 
+## 4b. Canonical Galois embedding eigenlines
+
+The local CM supplier stack now reaches further than an opaque line witness.
+
+For a finite Galois extension \(E/k\), the source constructs the evaluation
+equivalence
+
+\[
+E\otimes_k E
+\simeq
+E^{\operatorname{Gal}(E/k)}
+\]
+
+and the regular \(E\)-action on the second tensor factor. The new module
+\`CMGaloisEigenlines.lean\` proves that the eigenspace for a selected
+automorphism \(\sigma\) is exactly the preimage of one coordinate axis under
+this equivalence. Hence each canonical embedding eigenspace is nonzero and
+one-dimensional.
+
+Together with \`CMEmbeddingTransport.lean\`, scalar conjugation transports
+these canonical eigenspaces to the expected composed embedding. Therefore the
+remaining weight-one CM supplier is no longer "construct an embedding line."
+It is now specifically:
+
+1. assign the correct Hodge type \((1,0)\) or \((0,1)\) to the already
+   constructed canonical eigenspace from the sign row;
+2. package the family as the selected complete Hodge decomposition;
+3. prove polarizability and realize it as \(H^1(B(v),\mathbf Q)\).
+
+The local definition \`canonicalEigenlineRealization\` packages the proved
+linear eigenspaces once the sign-compatible Hodge-type assignment is supplied.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
