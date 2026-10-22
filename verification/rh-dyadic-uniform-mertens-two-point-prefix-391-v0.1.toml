@@ -1,3 +1,7 @@
+# Historical original target Git blob: c4824e6cd54e1385a1cc618eee1933752d2049f6.
+# Historical original parent: d47fe2d6a70e3c8d4f7cfe2933371743a8c2d5e4; tree 9cc235b91f72393c7b2fbfb35434d254bba2f043.
+# Historical original mathematical note Git blob: 626e6c0f86961b015e3c85659e3e1383ef19d660.
+# Current source binds both telescope difference terms within the finite sum; authored names are not kernel types.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-dyadic-uniform-mertens-two-point-prefix-391-v0.1"
 owner_repository = "grwtsk/math"
@@ -15,14 +19,14 @@ lean_toolchain_file = "lean-toolchain"
 lake_manifest_file = "lake-manifest.json"
 
 [source_binding]
-stacked_parent_revision = "d47fe2d6a70e3c8d4f7cfe2933371743a8c2d5e4"
-stacked_parent_tree = "9cc235b91f72393c7b2fbfb35434d254bba2f043"
+stacked_parent_revision = "733555712f39845f2ccdcf1f25452c3bc95afa38"
+stacked_parent_tree = "5f16a6f67fb581a2ae265803a0d7e546ddccb867"
 new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean"
-new_module_git_blob = "fb9e3b7ec0cc6b4c5493e1c6954f625c82459d45"
-new_module_sha256 = "59ef8f98db1e05049202cefe3233e8b8efe6d8c212508d19c4eddfcba3738509"
+new_module_git_blob = "3415d1549ac3bd37f83e91f199cb073c102788f3"
+new_module_sha256 = "a276546894dd1c0f319dadf742fac6ac3d211ea9ab09defc997ed7af541075d8"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-uniform-mertens-two-point-prefix.md"
-mathematical_note_git_blob = "626e6c0f86961b015e3c85659e3e1383ef19d660"
-mathematical_note_sha256 = "1e8e0fd959a8024f6e0ccf7bb145922c777fb4fbafe34b74bc26583c113aba55"
+mathematical_note_git_blob = "ca1b1ed0c5ab22b0781a8d250499b379676be7d7"
+mathematical_note_sha256 = "fecde6689645e2da2a9cd4cd8b72b64a3e9d4244251a1e8981852614040a1cf1"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
 publication_status = "PUBLISHED_SOURCE_DRAFT"
 
@@ -54,12 +58,12 @@ private_helper_count = 3
 
 [[inherited_targets]]
 path = "verification/rh-dyadic-chowla-shift-packet-388-v0.1.toml"
-git_blob = "59465987df5db01f73ddb1117cd9e2f1b5fb0e6e"
+git_blob = "609908a4f77315465545c0a3950f0b87698106a7"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicChowlaShiftPacket.lean"
-git_blob = "83ea01b7ee12f0a70f837b4b5c38fb113b1f14b8"
+git_blob = "54d657770bb2285faf4c9599763018a21e86f5a8"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [diagnostics]

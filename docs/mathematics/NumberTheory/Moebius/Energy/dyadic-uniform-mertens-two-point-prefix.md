@@ -13,8 +13,8 @@ ARITHMETIC_SUPPLIER_OPEN.**
 This note records the stronger finite correlation supplier implemented in
 `GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean`.
 The exact signed shift packet from #388 remains the criterion. The present
-condition takes absolute values and a uniform maximum, so it is sufficient but
-not equivalent.
+condition takes absolute values and a uniform maximum. It is a sufficient
+supplier; no equivalence is proved.
 
 ## 1. Exact shift source
 
@@ -188,8 +188,8 @@ Thus the source proves
 \]
 
 The exact packet can be much smaller than this estimate because (9) discards
-cross-shift cancellation. Consequently this supplier is not equivalent to the
-packet criterion.
+cross-shift cancellation. This argument therefore proves only sufficiency
+for the packet criterion.
 
 ## 6. All-scale supplier
 
@@ -229,9 +229,9 @@ The source therefore proves the conditional chain
 \tag{10}
 \]
 
-The first arrow is strict as a methodological matter: the exact packet may
-benefit from cancellation across shifts that the uniform envelope ignores.
-No converse is asserted from RH, energy-abscissa zero, or the shift packet.
+The exact packet may benefit from cancellation across shifts that the uniform
+envelope ignores. No converse is proved from RH, energy-abscissa zero, or the
+shift packet.
 
 ## 7. Relation to Chowla-type estimates
 
