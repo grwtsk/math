@@ -1,0 +1,224 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-parity-midpoint-factorization-607-v0.1"
+owner_repository = "grwtsk/math"
+issue = 607
+parent_issue = 598
+parent_pr = 602
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_PARITY_FOURIER_FACTORIZATION_SOURCE_DRAFT_ONE_POINT_FOURIER_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.AdditiveTwistParityFourierFactorization"
+companion_module = "GRWTSK.NumberTheory.Moebius.AdditiveTwistConnectionAtlas"
+build_target = "GRWTSK.NumberTheory.Moebius.AdditiveTwistParityFourierFactorization"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-additive-character-repair-598-20261021"
+stacked_parent_revision = "7e96cdce562cbd82c9d10b3c2ddfeb81a3c19ee5"
+stacked_parent_tree = "bf7ec7427d25782ae756c411132590f751c17216"
+candidate_branch = "research/rh-parity-midpoint-factorization-607-20261021"
+factorization_source_path = "GRWTSK/NumberTheory/Moebius/AdditiveTwistParityFourierFactorization.lean"
+factorization_source_git_blob = "9633aeec04aa09b1bb685450589212e32de6334b"
+connection_atlas_source_path = "GRWTSK/NumberTheory/Moebius/AdditiveTwistConnectionAtlas.lean"
+connection_atlas_source_git_blob = "36b166d6741e84e44f52fc3ada365cbdfed71c3d"
+mathematical_note_commit = "f6e69ab168e4a186818a83967db17be51e91527e"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/additive-twist-parity-fourier-connection-atlas.md"
+
+[factorization]
+triangular_source = "additiveTwistedEndpointCrossCorrelation"
+pair_target = "endpointPairAdditiveTwist"
+pair_reindex_theorem = "additiveTwistedEndpointCrossCorrelation_eq_endpointPairs"
+support = "1<=u<v<=b and u%2=v%2"
+midpoint_identity = "midpoint_eq_halves_add_parity"
+phase_factorization = "midpointAdditivePhase_eq_parityProduct"
+one_point_sum = "parityOnePointMobiusFourierSum"
+diagonal = "parityOnePointMobiusFourierDiagonal"
+pair_sum = "parityOnePointMobiusFourierPairSum"
+parity_factorization = "two_mul_parityMidpointPairTwist_eq_square_sub_diagonal"
+full_factorization = "two_mul_additiveTwistedEndpointCrossCorrelation_eq_parityFourier"
+pointwise_majorant = "parityFourierQuadraticMajorant"
+endpoint_majorant = "parityFourierEndpointMajorant"
+all_scale_budget = "DyadicNaturalScaleParityFourierQuadraticBudget"
+natural_scale_transport = "naturalScaleSquareModulusCongruenceL1_of_parityFourierQuadraticBudget"
+absolute_values_before_exact_factorization = false
+
+[connection_atlas]
+generic_adapter = "AdditiveTwistConnectionAtlas.ToParityFourierQuadraticBudgetAdapter"
+generic_natural_scale_transport = "AdditiveTwistConnectionAtlas.naturalScaleL1_of_parityFourierAdapter"
+generic_weighted_transport = "AdditiveTwistConnectionAtlas.weightedCongruenceL1_of_parityFourierAdapter"
+generic_signed_transport = "AdditiveTwistConnectionAtlas.signedCrossCollision_of_parityFourierAdapter"
+
+[[connection_families]]
+name = "ONE_POINT_MOBIUS_FOURIER"
+data = "AdditiveTwistConnectionAtlas.OnePointMobiusFourierData"
+status = "ADAPTER_OPEN"
+
+[[connection_families]]
+name = "LOCAL_FOURIER_GOWERS"
+data = "AdditiveTwistConnectionAtlas.LocalFourierGowersData"
+status = "ADAPTER_OPEN"
+
+[[connection_families]]
+name = "MOBIUS_NILSEQUENCE"
+data = "AdditiveTwistConnectionAtlas.MobiusNilsequenceData"
+status = "ADAPTER_OPEN"
+
+[[connection_families]]
+name = "FIXED_FORM_BINARY_CHOWLA"
+data = "AdditiveTwistConnectionAtlas.FixedFormChowlaParityFourierData"
+status = "RECENTLY_CLOSED_FIXED_SCOPE_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "CORRECTED_ELLIOTT"
+data = "AdditiveTwistConnectionAtlas.CorrectedElliottParityFourierData"
+status = "RECENTLY_CLOSED_FIXED_SCOPE_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "LOG_AVERAGED_BINARY_CHOWLA"
+data = "AdditiveTwistConnectionAtlas.LogAveragedBinaryChowlaData"
+status = "CLOSED_LOG_AVERAGED_FIXED_SCOPE_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "BOMBIERI_VINOGRADOV_MULTIPLICATIVE"
+data = "AdditiveTwistConnectionAtlas.BombieriVinogradovMultiplicativeData"
+status = "AGGREGATE_MODULUS_RELEVANT_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "FUNCTION_FIELD_CHOWLA_AP"
+data = "AdditiveTwistConnectionAtlas.FunctionFieldChowlaAPData"
+status = "FUNCTION_FIELD_ANALOGUE_INTEGER_TRANSPORT_OPEN"
+
+[[connection_families]]
+name = "L_FUNCTION_ANALYTIC_RESTRICTION"
+data = "AdditiveTwistConnectionAtlas.LFunctionRestrictionParityFourierData"
+status = "RECENT_UNIFORM_ANALYTIC_RESTRICTION_CORRELATION_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "SQUAREFREE_DIAGONAL_FOURIER"
+data = "AdditiveTwistConnectionAtlas.SquarefreeDiagonalFourierData"
+status = "DIAGONAL_ESTIMATE_OPEN"
+
+[[connection_families]]
+name = "EXACT_RESIDUE_FOURIER_ARCHITECTURE"
+data = "AdditiveTwistConnectionAtlas.ExactResidueFourierArchitecture"
+status = "REPRESENTATION_ANALOGY_ONLY"
+
+[external_sources.result_007]
+title = "Ordinary two-point correlations and the corrected Elliott conjecture"
+url = "https://math20.org/f/007/"
+date = "2026-09-24"
+classification = "RECENTLY_CLOSED_FIXED_SCOPE_ADAPTER_OPEN"
+ordinary_two_point_fixed_forms = true
+corrected_elliott = true
+growing_frequency_modulus_uniformity_supplied = false
+
+[external_sources.result_003]
+title = "The quasi-Riemann hypothesis"
+url = "https://math20.org/f/003/"
+date = "2026-09-30"
+classification = "UNIFORM_L_FUNCTION_ANALYTIC_RESTRICTION_ONLY"
+dirichlet_zero_free_half_plane = "Re(s)>7/8"
+correlation_transport_constructed = false
+
+[external_sources.local_fourier_gowers]
+authors = "Kaisa Matomaki; Maksym Radziwill; Terence Tao; Joni Teravainen; Tamar Ziegler"
+title = "Higher uniformity of bounded multiplicative functions in short intervals on average"
+url = "https://annals.math.princeton.edu/2023/197-2/p03"
+classification = "AVERAGED_LOCAL_FOURIER_GOWERS_RELEVANT_ADAPTER_OPEN"
+
+[external_sources.green_tao_nilsequence]
+authors = "Ben Green; Terence Tao"
+title = "The Mobius function is strongly orthogonal to nilsequences"
+url = "https://annals.math.princeton.edu/2012/175-2/p03"
+classification = "CLOSED_ONE_POINT_STRUCTURED_PHASE_ADAPTER_OPEN"
+
+[external_sources.log_chowla]
+authors = "Terence Tao"
+title = "The logarithmically averaged Chowla and Elliott conjectures for two-point correlations"
+url = "https://arxiv.org/abs/1509.05422"
+classification = "CLOSED_LOG_AVERAGED_FIXED_SCOPE_ADAPTER_OPEN"
+
+[external_sources.bombieri_vinogradov]
+authors = "Andrew Granville; Xuancheng Shao"
+title = "Bombieri-Vinogradov for multiplicative functions, and beyond the x^(1/2)-barrier"
+url = "https://www.sciencedirect.com/science/article/pii/S0001870819302245"
+classification = "ONE_POINT_MODULUS_AGGREGATION_RELEVANT_ADAPTER_OPEN"
+
+[external_sources.function_field]
+authors = "Will Sawin; Mark Shusterman"
+title = "On the Chowla and twin primes conjectures over F_q[T]"
+url = "https://annals.math.princeton.edu/2022/196-2/p01"
+classification = "FUNCTION_FIELD_ANALOGUE_INTEGER_TRANSPORT_OPEN"
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+parity_fourier_factorization_source_draft = true
+connection_atlas_source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+named_literature_adapter_constructed = false
+one_point_fourier_estimate_proved = false
+squarefree_diagonal_estimate_proved = false
+parity_fourier_quadratic_budget_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.AdditiveTwistParityFourierFactorization"
+authored_declaration_count = 23
+definition_count = 12
+theorem_script_count = 11
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.AdditiveTwistConnectionAtlas"
+authored_declaration_count = 31
+definition_count = 10
+theorem_script_count = 3
+structure_count = 18
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/AdditiveCharacterSquareModulusRepair.lean"
+git_blob = "6e0a81df2fe6da3b3b91ce130b159a8f16cc29af"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_602"
+
+[hostile_controls]
+exact_pair_support_preserved = true
+diagonal_separated = true
+both_parities_preserved = true
+midpoint_phase_preserved = true
+analytic_cancellation_not_inferred_from_factorization = true
+fixed_to_growing_not_implicit = true
+average_to_every_endpoint_not_implicit = true
+one_point_to_quadratic_not_implicit = true
+function_field_to_integer_not_implicit = true
+l_function_restriction_to_correlation_not_implicit = true
+literature_url_not_theorem = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_one_point_mobius_fourier_aggregate = true
+prove_squarefree_diagonal_fourier_aggregate = true
+construct_named_literature_adapter = true
+prove_parity_fourier_quadratic_budget = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+parity_fourier_quadratic_budget_proved = false
+result_007_directly_supplies_target = false
+result_003_directly_supplies_target = false
+local_gowers_directly_supplies_target = false
+nilsequence_directly_supplies_target = false
+bombieri_vinogradov_directly_supplies_target = false
+function_field_directly_supplies_target = false
+riemann_hypothesis_proved = false
