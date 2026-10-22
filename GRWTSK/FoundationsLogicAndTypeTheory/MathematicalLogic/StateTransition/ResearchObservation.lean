@@ -52,11 +52,11 @@ It has no JSON objects, escapes, floating point numbers, or duplicate keys. -/
 inductive NatTree where
   | atom (value : Nat)
   | array (values : List NatTree)
-  deriving Repr
 
 mutual
-  /-- Total equality for the nested wire language, suitable for kernel reduction. -/
-  def NatTree.decEq : (left right : NatTree) → Decidable (left = right)
+  /-- Total kernel equality for the nested wire language. The explicit
+  `noncomputable` modifier suppresses compiled partial-recursion helpers. -/
+  noncomputable def NatTree.decEq : (left right : NatTree) → Decidable (left = right)
     | .atom left, .atom right =>
         match (inferInstance : Decidable (left = right)) with
         | .isTrue equal => .isTrue (congrArg NatTree.atom equal)
@@ -70,7 +70,7 @@ mutual
   termination_by left right => sizeOf left + sizeOf right
 
   /-- The accompanying structural list equality has no external computation. -/
-  def NatTree.listDecEq : (left right : List NatTree) → Decidable (left = right)
+  noncomputable def NatTree.listDecEq : (left right : List NatTree) → Decidable (left = right)
     | [], [] => .isTrue rfl
     | [], _ :: _ => .isFalse (by intro equal; cases equal)
     | _ :: _, [] => .isFalse (by intro equal; cases equal)
@@ -84,11 +84,11 @@ mutual
   termination_by left right => sizeOf left + sizeOf right
 end
 
-instance : DecidableEq NatTree := NatTree.decEq
+noncomputable instance : DecidableEq NatTree := NatTree.decEq
 
 /-- The canonical ASCII spelling of a natural-array tree. This pure printer
 does not assert that any external JSON decoder agrees with it. -/
-def NatTree.render : NatTree → String
+noncomputable def NatTree.render : NatTree → String
   | .atom value => toString value
   | .array values => "[" ++ String.intercalate "," (values.map NatTree.render) ++ "]"
 
