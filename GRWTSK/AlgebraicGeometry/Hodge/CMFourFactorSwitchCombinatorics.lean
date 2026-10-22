@@ -59,17 +59,22 @@ theorem sub_eq_two_mul_mismatchIndicator
   rcases hy i with hyi | hyi <;>
   simp [mismatchIndicator, hxi, hyi]
 
+/-- Finite counts of the two mismatch orientations. -/
+def posNegCount (x y : I → ℤ) : ℕ :=
+  ((Finset.univ.filter fun i => x i = 1 ∧ y i = -1)).card
+
+def negPosCount (x y : I → ℤ) : ℕ :=
+  ((Finset.univ.filter fun i => x i = -1 ∧ y i = 1)).card
+
 /-- Summing the signed mismatch indicator counts positive-to-negative
 mismatches minus negative-to-positive mismatches. -/
-theorem sum_mismatchIndicator_eq_card_sub_card
+theorem sum_mismatchIndicator_eq_count_sub_count
     (x y : I → ℤ) :
     ∑ i, mismatchIndicator x y i =
-      (Fintype.card (PosNegMismatch x y) : ℤ) -
-        (Fintype.card (NegPosMismatch x y) : ℤ) := by
+      (posNegCount x y : ℤ) - (negPosCount x y : ℤ) := by
   classical
-  simp [mismatchIndicator, PosNegMismatch, NegPosMismatch,
-    Fintype.card_subtype_iff, Finset.sum_ite_irrel]
-
+  unfold mismatchIndicator posNegCount negPosCount
+  simp [Finset.card_eq_sum_ones, Finset.sum_filter]
 /-- Equal sums of two sign-valued columns force the two mismatch orientations
 to occur equally often. This is the exact pairing lemma used in one column of
 the manuscript's switch reduction. -/
@@ -78,8 +83,7 @@ theorem mismatch_card_eq_of_sum_eq
     (hx : ∀ i, IsSign (x i))
     (hy : ∀ i, IsSign (y i))
     (hsum : ∑ i, x i = ∑ i, y i) :
-    Fintype.card (PosNegMismatch x y) =
-      Fintype.card (NegPosMismatch x y) := by
+    posNegCount x y = negPosCount x y := by
   have hdiff : ∑ i, (x i - y i) = 0 := by
     rw [Finset.sum_sub_distrib, hsum, sub_self]
   have hind :
@@ -95,8 +99,20 @@ theorem mismatch_card_eq_of_sum_eq
       _ = 0 := hdiff
   have hzero : ∑ i, mismatchIndicator x y i = 0 := by
     exact (mul_eq_zero.mp hind).resolve_left (by norm_num)
-  rw [sum_mismatchIndicator_eq_card_sub_card x y] at hzero
+  rw [sum_mismatchIndicator_eq_count_sub_count x y] at hzero
   exact_mod_cast sub_eq_zero.mp hzero
+
+/-- Therefore the two mismatch sets admit a pairing. -/
+theorem mismatch_fintype_card_eq_of_sum_eq
+    (x y : I → ℤ)
+    (hx : ∀ i, IsSign (x i))
+    (hy : ∀ i, IsSign (y i))
+    (hsum : ∑ i, x i = ∑ i, y i) :
+    Fintype.card (PosNegMismatch x y) =
+      Fintype.card (NegPosMismatch x y) := by
+  have h := mismatch_card_eq_of_sum_eq x y hx hy hsum
+  simpa [PosNegMismatch, NegPosMismatch, posNegCount, negPosCount,
+    Fintype.card_subtype] using h
 
 /-- Therefore the two mismatch sets admit a pairing. -/
 noncomputable def mismatchPairing
@@ -105,7 +121,8 @@ noncomputable def mismatchPairing
     (hy : ∀ i, IsSign (y i))
     (hsum : ∑ i, x i = ∑ i, y i) :
     PosNegMismatch x y ≃ NegPosMismatch x y :=
-  Fintype.equivOfCardEq (mismatch_card_eq_of_sum_eq x y hx hy hsum)
+  Fintype.equivOfCardEq
+    (mismatch_fintype_card_eq_of_sum_eq x y hx hy hsum)
 
 /-- Atomic two-row switch at one column: swap the two row values. -/
 def switchPair
@@ -117,12 +134,18 @@ theorem sum_switchPair
     (x : I → ℤ) (i j : I) :
     ∑ k, switchPair x i j k = ∑ k, x k := by
   classical
-  by_cases hij : i = j
-  · subst j
-    simp [switchPair]
-  · rw [← Finset.sum_erase_add _ _ (Finset.mem_univ i)]
-    rw [← Finset.sum_erase_add _ _ (Finset.mem_univ j)]
-    simp [switchPair, hij, Ne.symm hij, add_comm, add_left_comm, add_assoc]
+  have hfun :
+      switchPair x i j = fun k => x (Equiv.swap i j k) := by
+    funext k
+    by_cases hki : k = i
+    · subst k
+      simp [switchPair]
+    · by_cases hkj : k = j
+      · subst k
+        simp [switchPair, hki]
+      · simp [switchPair, hki, hkj, Equiv.swap_apply_def]
+  rw [hfun]
+  exact Equiv.sum_comp (Equiv.swap i j) x
 
 /-- Switching a paired (+,-) and (-,+) mismatch replaces the current values by
 their target values at those two rows. -/
