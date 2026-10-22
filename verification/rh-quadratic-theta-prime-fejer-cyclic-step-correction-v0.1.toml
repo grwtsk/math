@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-step-correction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "13f964a5e3021f3d686b0879df5a5d84f2807e91"
+parent_tree = "6382dcda4cf3edcd56c857d003787d9bc73db91f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CYCLIC_FACTOR_FOUR_CORRECTION_TYPED / HARMONIC_SCALING_PRESERVED / ARITHMETIC_FACTOR_FOUR_ADAPTER_SOURCE_WRITTEN / CYCLIC_TRANSLATION_CONTRACTION_OPEN"
+
+[correction]
+positive_distance_factor = 4
+boundary_crossing_factor = 2
+signed_displacement_factor = 2
+power_exponent_changed = false
+
+[closed]
+factor_four_arithmetic_adapter = true
+harmonic_shape_preserved = true
+
+[frontier]
+remaining = "NonAliasingFejerCyclicTranslationContractionClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CYCLIC_FACTOR_FOUR_CORRECTION_TYPED = true
+HARMONIC_SCALING_PRESERVED = true
+ARITHMETIC_FACTOR_FOUR_ADAPTER_SOURCE_WRITTEN = true
+CYCLIC_TRANSLATION_CONTRACTION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
