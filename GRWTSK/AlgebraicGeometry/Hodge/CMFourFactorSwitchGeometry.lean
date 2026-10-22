@@ -1284,6 +1284,27 @@ def canonicalFinitePureAssembly
   (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
     (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
 
+/-- The proposed pure-factor rule is additive in its first coefficient
+entry. This is a local consistency check for extending the rule through
+the first rational tensor-product universal property. -/
+theorem canonicalFinitePureAssembly_add_first
+    (E : CMGaloisIntermediateField)
+    (a b x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E (a + b) x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      canonicalFinitePureAssembly E a x₁ a₂ x₂ a₃ x₃ a₄ x₄ +
+      canonicalFinitePureAssembly E b x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [canonicalFinitePureAssembly, add_mul, TensorProduct.add_tmul]
+
+/-- The same pure-factor rule is additive in the first vector entry. -/
+theorem canonicalFinitePureAssembly_add_first_vector
+    (E : CMGaloisIntermediateField)
+    (a₁ x y a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E a₁ (x + y) a₂ x₂ a₃ x₃ a₄ x₄ =
+      canonicalFinitePureAssembly E a₁ x a₂ x₂ a₃ x₃ a₄ x₄ +
+      canonicalFinitePureAssembly E a₁ y a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
+    TensorProduct.tmul_add]
+
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
