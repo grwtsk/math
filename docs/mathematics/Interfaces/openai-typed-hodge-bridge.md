@@ -1523,6 +1523,55 @@ identifying each transported formal monomial line with an actual ((2,2)) Hodge l
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4af. Hodge-line inclusion is reduced to one transported generator
+
+The second linewise frontier has now been sharpened.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+TransportedMonomialGeneratorHodgeData
+TransportedMonomialGeneratorHodgeData.transportedLine_le
+FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineDataOfGenerator
+~~~
+
+For each scalar automorphism (sigma), the transported monomial line is already defined as
+
+[
+L_sigma
+=
+operatorname{span}_{mathbf C}
+left{
+operatorname{assemble}
+(sigma v_1,sigma v_2,sigma v_3,sigma v_4)
+ight}.
+]
+
+Therefore the geometric inclusion
+
+[
+L_sigmasubseteq H^{2,2}
+]
+
+no longer needs to be supplied as a subspace theorem. It is enough to prove the single generator statement
+
+[
+operatorname{assemble}
+(sigma v_1,sigma v_2,sigma v_3,sigma v_4)
+in H^{2,2}.
+]
+
+The whole-line inclusion then follows locally by closure of a submodule under spans.
+
+Thus the two remaining geometric statements are now pointwise and exact:
+
+1. scalar conjugation commutes with fourfold assembly;
+2. the assembled transported monomial generator has actual Hodge type ((2,2)).
+
+Everything after those two statements is local.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
