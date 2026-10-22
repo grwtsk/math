@@ -1,0 +1,45 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-nonboundary-signed-mertens-cells-682-v0.1"
+owner_repository = "grwtsk/math"
+issue = 682
+parent_issue = 678
+parent_pr = 679
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreNonboundarySignedMertensCells"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreNonboundarySignedMertensCells"
+
+[source_binding]
+stacked_parent_revision = "d33beeafc138e92816744d8af048a5f1b4792dc8"
+candidate_branch = "research/rh-mertens-cells-682"
+theorem_source_commit = "b9fb8d11afab79e58e356576449408c95cc753f6"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreNonboundarySignedMertensCells.lean"
+theorem_source_git_blob = "8f8b34f088007b8d8c6f959372b51eeba2bebc92"
+
+[selected_increment]
+mertens_increment = "coreNonboundaryMertensIncrement"
+short_sum_identity = "harmonicShortMobiusSum_eq_mertensIncrement"
+signed_cell = "coreNonboundarySignedMertensCell"
+fixed_length_expansion = "coreNonboundarySignedLengthSlice_eq_mertensCells"
+cell_packet = "coreNonboundarySignedMertensCellPacket"
+packet_identity = "coreNonboundarySignedLengthPacket_eq_mertensCellPacket"
+cell_supplier = "SubpolynomialCoreNonboundarySignedMertensCellPacket"
+supplier_equivalence = "subpolynomialCoreNonboundarySignedMertensCellPacket_iff_lengthPacket"
+conditional_endpoint = "riemannHypothesis_of_classicalWeakMertensStep_and_signedMertensCells"
+adapter = "ToSignedMertensCellPacketAdapter"
+hostile_witness = "signedMertensCellCancellation_hostileWitness"
+proof_classification = "EXACT_MERTENS_PREFIX_DIFFERENCE_AND_FINITE_FUBINI"
+next_obstruction = "prove the complete signed Mertens-cell estimate or telescope to exact growing-shift weights"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+signed_cell_supplier_proved = false
+short_interval_theorem_applied = false
+weak_mertens_proved = false
+riemann_hypothesis_proved = false
