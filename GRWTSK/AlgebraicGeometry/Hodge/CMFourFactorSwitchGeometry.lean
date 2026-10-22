@@ -3,6 +3,7 @@ Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics
+import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport
 
 /-!
 # Geometric supplier boundary for finite four-factor switch chains
@@ -113,6 +114,42 @@ theorem NonzeroScalarCompositionData.endpoint_mem
   rwa [← D.formula]
 
 end NonzeroScalarRecovery
+
+section CanonicalTransportedMiddleLine
+
+open scoped TensorProduct
+open CMRegularBaseChange
+open CMEmbeddingTransport
+
+variable {k E : Type*} [Field k] [Field E] [Algebra k E]
+  [FiniteDimensional k E] [IsGalois k E]
+
+/-- Canonical tensor-model data for one transported middle embedding line. -/
+structure CanonicalTransportedMiddleLineData
+    (σ τ : E ≃ₐ[k] E) where
+  beta : E ⊗[k] E
+  gamma : E ⊗[k] E
+  beta_mem :
+    beta ∈ embeddingEigenspace (k := k) τ.toAlgHom
+  gamma_mem :
+    gamma ∈ embeddingEigenspace (k := k) (σ * τ).toAlgHom
+  beta_ne_zero : beta ≠ 0
+  gamma_ne_zero : gamma ≠ 0
+
+/-- In the canonical tensor model, gamma is automatically a nonzero scalar
+multiple of the scalar-conjugated beta.  No Hodge-Riemann input is used. -/
+theorem CanonicalTransportedMiddleLineData.exists_scale
+    {σ τ : E ≃ₐ[k] E}
+    (D : CanonicalTransportedMiddleLineData σ τ) :
+    ∃ c : E, c ≠ 0 ∧
+      D.gamma = c •
+        GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          σ D.beta := by
+  exact CMEmbeddingTransport.exists_ne_zero_smul_scalarConjugate_eq
+    (k := k) (E := E) σ τ
+    D.beta_mem D.gamma_mem D.beta_ne_zero D.gamma_ne_zero
+
+end CanonicalTransportedMiddleLine
 
 section PositiveMiddlePairing
 
