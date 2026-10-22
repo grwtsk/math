@@ -127,6 +127,35 @@ provider_axiom_audit_not_performed = true
 require_explicit_port_and_kernel_receipt = true
 no_complex_statement_from_publication_is_assumed = true
 
+[external_prime_import_obstruction]
+status = "PINNED_NOMINAL_MODULE_NOT_FOUND / SOURCE_ONLY"
+provider_file = "lean/OAI/NumberTheory/TwoPoint/Bounds/PrimeReciprocalTheorem.lean"
+provider_file_blob = "5dacdbe763e4aac5f1ac8e48f63bc0d55e6f1f42"
+provider_parent = "lean/OAI/NumberTheory/TwoPoint/PartiallyDischargedMain.lean"
+provider_parent_blob = "fa2db4b20ce8ea287323c2bdadddc82182a846f5"
+provider_required_old_import = "PrimeNumberTheoremAnd.Erdos970.MertensClassical"
+provider_required_old_theorem = "Erdos970.Mertens.sum_prime_div_eq_log_log"
+nominal_dependency_repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+nominal_dependency_rev = "c39a751132c88b6e8080b74c74023fd95b3d8be0"
+nominal_old_source_path = "PrimeNumberTheoremAnd/Erdos970/MertensClassical.lean"
+nominal_old_source_found_at_pin = false
+candidate_source_path = "PrimeNumberTheoremAnd/IEANTN/Mertens.lean"
+candidate_source_blob = "1c45fc368e4fc7c3ff7876be4f8e67c3d6f2a6be"
+candidate_source_theorem = "Mertens.sum_prime_div_eq_log_log"
+candidate_statement_compatibility = "SOURCE_TEXT_ONLY_NOT_ELABORATED"
+candidate_proposed_patch = "verification/openai-result007-prime-reciprocal-import-630-v0.1.patch"
+candidate_patch_blob = "ceaec6a0f3e6fb568abf51848e09ea7ca0d04ebf"
+candidate_patch_line_replacements = 3
+candidate_patch_applied = false
+candidate_patch_replayed = false
+provider_patch_file_blob = "924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc"
+provider_patch_file_empty = true
+nominal_dependency_toolchain = "leanprover/lean4:v4.34.0"
+nominal_dependency_mathlib_rev = "5ed2965256430c3649e86755f9576b54eca72435"
+review_note = "docs/reviews/chowla-sofic-openai-fixed-form-prime-import-630.md"
+exact_import_resolution_in_clean_environment = "NOT_RUN"
+source_only_observation_is_not_a_compile_failure_receipt = true
+
 [[hostile_controls]]
 id = "direct-fixed-affine-not-dyadic"
 must_preserve = "The pair (m,m+h) already has slopes (1,1), intercepts (0,h), determinant h. Its complex affine Icc sum equals the integer n+1 shifted prefix with NO dyadic boundary penalty."
@@ -152,6 +181,18 @@ id = "floor-real-scope"
 must_preserve = "The conditional imported theorem uses every real X>=3, real floor_nat cutoff, a positive uniform exponent c and a per-form positive constant C, without changing Real.rpow or logs."
 
 [[hostile_controls]]
+id = "pinned-external-Mertens-import"
+must_preserve = "The solution import chain reaches PrimeReciprocalTheorem.lean with PrimeNumberTheoremAnd.Erdos970.MertensClassical; that path was absent from the nominal pinned package. A proposed mapping to PrimeNumberTheoremAnd.IEANTN.Mertens cannot be called verified before external elaboration."
+
+[[hostile_controls]]
+id = "inert-provider-patch"
+must_preserve = "The three-line candidate patch is stored as inert data only; do not claim it was applied, compiled, kernel checked, accepted by OpenAI, or imported into grwtsk/math."
+
+[[hostile_controls]]
+id = "Mertens-statement-vs-qualification"
+must_preserve = "The alternate theorem has the expected finite prime reciprocal bounded-error source statement. Its exact type compatibility and the full prime library dependency/toolchain reconciliation remain open."
+
+[[hostile_controls]]
 id = "external-source-unproven"
 must_preserve = "FixedNonproportionalAffineLogSaving is a Prop, NOT an axiom, never given an inhabitant in this package. External solution's transitive trust and the cross-version import are NOT audited."
 
@@ -173,6 +214,10 @@ requires_all_theorem_type_printouts = true
 requires_exact_decl_inventory = true
 requires_transitive_axiom_and_kernel_receipts = true
 requires_real_provider_port_for_any_analytic_application = true
+requires_external_import_resolved_on_pinned_checkout = true
+requires_candidate_patch_clean_replay_before_any_acceptance = true
+requires_vendor_PrimeNumberTheoremAnd_source_identity = true
+reject_missing_or_ambiguous_import_resolution = true
 requires_independent_replay = true
 do_not_merge_from_static_checks = true
 
@@ -182,6 +227,8 @@ local_compiler = "NOT_RUN"
 local_kernel = "NOT_KERNEL_AUDITED"
 provider_import = "NOT_PERFORMED"
 external_transitive_axioms = "NOT_AUDITED"
+external_Mertens_import = "PINNED_NOMINAL_SOURCE_NOT_FOUND"
+external_Mertens_repair = "INERT_SOURCE_PROPOSAL_ONLY"
 calculus_cancellation_estimate = "CONDITIONAL_ONLY"
 no_root_import_or_merge = true
 
