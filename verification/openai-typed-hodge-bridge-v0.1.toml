@@ -2028,3 +2028,43 @@ nonclaims = [
   "generator identification only",
   "scalar-conjugation naturality remains separate"
 ]
+
+
+[[local_target]]
+name = "algebraic fourfold assembly before complex coefficient inclusion"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "assembly remains at AlgebraicNumbers coefficients",
+  "does not assert Galois equivariance",
+  "does not assert algebraicity of a cycle"
+]
+
+[[local_target]]
+name = "algebraic assembly equivariance converts to complexified monomial assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyData.toMonomialAssemblyData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "algebraic-level fourfold assembly",
+  "Galois equivariance of assembly"
+]
+nonclaims = [
+  "factorwise scalar transport is already local",
+  "complex coefficient inclusion is formal"
+]
+
+[[external_premise]]
+id = "cm-fourfold-algebraic-assembly-equivariance"
+result_family = 32
+evidence = "EXTERNAL_MULTILINEAR_NATURALITY"
+source = "fourfold switched tensor assembly over algebraic-number coefficients"
+labels = []
+statement_role = "prove scalar conjugation of the algebraically assembled switched tensor equals assembly of the four factorwise scalar-conjugated canonical embedding vectors"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyEquivariance.equivariant"
+status = "OPEN"
+nonclaims = [
+  "factor transport itself is local",
+  "no Hodge or algebraicity conclusion"
+]
