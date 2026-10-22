@@ -1,0 +1,373 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-candidate-h1-803-v0.1"
+owner_repository = "grwtsk/math"
+issue = 803
+related_issues = [795, 774, 758, 745, 734, 722, 704, 653, 198, 205, 545, 121, 168, 516, 159, 100, 15]
+route_id = "ORIENTED_POLYGON_CYCLES_MOD_BOUNDARIES_QUOTIENT_H1"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/polygon-free-abelian-795-20261022"
+review_parent_revision = "1115b50e2c207e1a9b8498b2af03567401ffc3f9"
+review_parent_module_git_blob = "d48167d875334b295b141c5ff51f1a99413b5933"
+review_parent_cell_boundary_git_blob = "d21accee39c38ce4341527465021decc173ded8e"
+review_parent_abelianization_git_blob = "5c1259b1c94c3596b7b38f7ce3eef2b409e9e0bf"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCandidateH1.lean"
+new_module_git_blob = "68c24f405e8f829866e66f33e482a227b429f54b"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-candidate-h1.md"
+mathematical_note_git_blob = "2c93d01aa6b72c55d420e5deb99f05e309f3fa03"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+actual_kernel_of_parent_d1_consumed = true
+actual_range_of_parent_d2_consumed = true
+chain_condition_used_to_include_boundaries_in_cycles = true
+actual_submodule_quotient_of_cycles_by_boundaries = true
+quotient_zero_boundary_isomorphism_candidate = true
+same_original_one_cell_source_carrier = true
+same_original_freeabelian_and_canonical_abelianization_source = true
+all_word_commuting_diagram_source_candidate = true
+missing_inverse_edge_nonzero_in_actual_quotient = true
+complete_handle_zero_in_h1_but_nonidentity_in_FreeGroup = true
+categorical_homological_complex_instantiated = false
+actual_topological_CW_surface_constructed = false
+cellular_van_kampen_and_hurewicz_formalized = false
+authentic_surface_homology_comparison_proved = false
+hyperbolic_metric_or_geodesic_length_proved = false
+selberg_weil_petersson_trace_formalized = false
+sofic_GUE_adapter_closed = false
+growing_shift_chowla_supplier_closed = false
+zeta_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "Construct actual module quotient ker(d1) / (im(d2) in ker(d1)) from the original source-indexed integer differentials; prove equivalence to the one-chain module and exact commuting comparison with the canonical free-group abelianization, with strict negative and Heisenberg hostile fixtures."
+
+[imported_theorem_binding]
+quotient_equiv_path = "Mathlib/LinearAlgebra/Quotient/Basic.lean"
+quotient_equiv_name = "Submodule.quotEquivOfEqBot"
+source_cycle_definition = "LinearMap.ker"
+source_boundary_definition = "LinearMap.range"
+source_inclusion_tool = "Submodule.comap"
+source_quotient_projection = "Submodule.mkQ"
+reuse_status = "MATHLIB_DEFINITIONS_REUSED_NOT_QUALIFIED_AT_CHILD_HEAD"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1"
+authored_declaration_count = 23
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates", "Mathlib.LinearAlgebra.Quotient.Basic", "Mathlib.Algebra.Module.Submodule.Ker"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.OneCycleSubmodule"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.OneBoundarySubmodule"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.oneBoundary_le_oneCycle"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.OneBoundariesInCycles"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.CandidateFirstHomology"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.oneCycleSubmodule_eq_top"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.oneBoundarySubmodule_eq_bot"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.oneBoundariesInCycles_eq_bot"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.oneCyclesEquivOneChains"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.candidateH1EquivCycles"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.candidateH1EquivOneChains"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.cycleClass"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.candidateH1EquivOneChains_cycleClass"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.cycleClass_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.candidateH1EquivFreeAbelian"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.abelianizationEquivCandidateH1"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.signedWordH1Class"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.abelianizationEquivCandidateH1_signedWord"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.polygonBoundaryH1Class_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.missingInverseEdgeH1Class_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.firstHandle_nontrivial_but_H1_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.genus_two_oneCellCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1.genus_three_oneCellCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-revision-pinned"
+requirement = "Consume PR #797 at its exact head 1115b50e2c207e1a9b8498b2af03567401ffc3f9; no parent branch drift or substitutions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genuine-kernel"
+requirement = "OneCycleSubmodule is literally LinearMap.ker of #758 differentialOne, not a freely declared top submodule."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genuine-range"
+requirement = "OneBoundarySubmodule is literally LinearMap.range of #758 sourced differentialTwo, not a freely declared bottom submodule."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "chain-condition-inclusion"
+requirement = "OneBoundarySubmodule≤OneCycleSubmodule uses the exact previously proved d1.comp d2=0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundaries-inside-cycles"
+requirement = "The quotient's denominator is comap of the ACTUAL d2 range through ker(d1).subtype."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-module-quotient"
+requirement = "CandidateFirstHomology is a real Mathlib module quotient of cycles by boundaries, not a name alias of OneCellChains or a Set of representatives."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "one-vertex-conditional"
+requirement = "Only this declared one-vertex candidate profile has d1=0; do not infer every cellular one-differential vanishes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "polygon-incidence-sourced"
+requirement = "d2=0 is consumed from the exact oriented polygon incidence proof #758, not asserted by a new zero map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cycle-submodule-top"
+requirement = "Every original one-chain is a cycle by the actual d1=0, with no missing generator source IDs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-submodule-bot"
+requirement = "The d2 range is exactly bottom, not an unexamined or arbitrarily set boundary predicate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pulled-back-range-bot"
+requirement = "The boundary submodule INSIDE cycles is bottom because the ambient range is bottom, with subtype injectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cycle-to-chain-bijective"
+requirement = "The canonical subtype map from actual cycles to original one-chains is proved bijective, not treated as definitional equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-by-bot-source"
+requirement = "Reuse pinned Mathlib Submodule.quotEquivOfEqBot, not a fabricated inverse of a general module quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "homology-linear-equivalence"
+requirement = "CandidateFirstHomology≃ₗ[ℤ]OneCellChains k is a literal compositional linear equivalence on the genuine quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-cycle-class-map"
+requirement = "cycleClass is the true Submodule.mkQ from the actual cycles and remains surjective."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-quotient-injectivity-general"
+requirement = "cycleClass need not be injective for general complexes; use it here only after the explicit bottom boundary proof."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-abelian-comparison"
+requirement = "Compose #795's pre-existing full free-abelian coordinates with the actual quotient equivalence and preserve GenusLetter k source identities."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-canonical-quotient"
+requirement = "Abelianization(FreeGroup A) is the actual Mathlib canonical group quotient, not a different finite character quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-signed-word-commuting"
+requirement = "For EVERY original signed edge list, the quotient homology class matches the image of Abelianization.of of that literal word under the actual composed group equivalence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "polygon-face-class-zero"
+requirement = "The complete original polygon boundary maps to zero in H1 only via its literal parent signed-incidence calculation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "missing-inverse-edge-nonzero"
+requirement = "A missing inverse b-edge must remain NONZERO in the actual module quotient; zero-boundary checker must not pass."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-handle-freegroup-nontrivial"
+requirement = "The complete first-handle commutator is nonidentity in the original FreeGroup by its exact Heisenberg image."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-handle-h1-zero"
+requirement = "The very same first-handle word represents zero in the actual quotient despite being nonidentity in FreeGroup."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-false-freegroup-identity"
+requirement = "Vanishing in candidate H1 cannot be used to infer a noncommutative group word is identity or not a proper power."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-nonvacuous"
+requirement = "k=0 retains four independent named one-cell source generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-nonvacuous"
+requirement = "k=1 retains six independent named one-cell source generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-k-family"
+requirement = "The quotient and identifications apply for every k≥0, not just a finite set of tested genera."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "categorical-homology-not-claimed"
+requirement = "No HomologicalComplex/ChainComplex.homology instance is authored here; this is an explicit algebraic module quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-topological-H1"
+requirement = "No actual CW genus-g surface, cellular/singular H1 theorem, Hurewicz isomorphism, or topological π1 presentation follows from this module quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-van-kampen-marked-surface"
+requirement = "No polygon attaching map, genuine van Kampen equivalence, marked hyperbolic metric or geodesic length is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-modular-to-Haar"
+requirement = "This algebraic quotient does not control finite q-character modular aliasing or continuous Haar averaging."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Torelli-Hodge"
+requirement = "No Torelli/Johnson action, Cech/Hodge #198 or signed Weil/Hodge #205/#545 operator is formalized."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-sofic-GUE"
+requirement = "No labeled sofic operator convergence, Selberg/Weil-Petersson trace, microscopic GUE law or spectral zeta-zero identity is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Chowla-RH"
+requirement = "No ordinary growing-shift Möbius/Chowla theorem, zeta divisor, or Riemann hypothesis implication is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-qualification-boundary"
+requirement = "No Lean/Lake, native/VM/F06, workflow, CI, cache, executor, root import, toolchain or dependency mutation is permitted by this passive manifest."
+status = "NOT_RUN"
+
