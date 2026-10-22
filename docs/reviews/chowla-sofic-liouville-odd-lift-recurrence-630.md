@@ -291,3 +291,40 @@ still demonstrates noncontraction.
 **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 CANONICAL_SOURCE_TRANSPORT_DRAFTED /
 ODD_RESIDUAL_CANCELLATION_OPEN.**
+
+## 7. Exact signed dyadic covariance rather than unsigned convexity alone
+
+A new, independent downstream source
+`LiouvilleDyadicSignedPairing.lean`
+(blob `c7b4feffad2c7f7fdfc06ba79e0f9295ad831d90`)
+retains all Walsh subset indices and the
+original dyadic parity `(-1)^|S|`. It source-drafts
+
+```text
+4 E_lifted =
+    E_source + E_oddResidual
+      + 2 sum_(nonempty S⊆H) (-1)^|S| C_S R_S.
+```
+
+This is an exact refinement of the one-sided
+convexity bound from section 3. At `M=2,H={1}`
+the two component energies equal one and their
+signed pairing equals minus one, making the
+lifted energy zero. At `M=1,H={0}`
+the signed pairing is plus one and the
+lifted energy equals one.
+
+The mixed pairing may be negative; it is not
+an independently nonnegative energy. Its
+conditional budget must be separately proved.
+An exact antipodal-pattern collision formula
+is explained in the new mathematical note at
+`docs/reviews/chowla-sofic-dyadic-signed-pairing-630.md`
+but remains PAPER ONLY, not a Lean theorem.
+
+The separate passive thirteen-module target
+has 108 theorem and 46 definition declarations,
+all awaiting clean source/kernel replay.
+
+**STATUS:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+SIGNED_MIXED_ESTIMATE_OPEN / NO_ARITHMETIC_CANCELLATION.
