@@ -141,6 +141,7 @@ theorem parityOddHalfShiftSignedResidueFourier_eq_sum_affineTwists
 projector from PR #742. -/
 theorem parityEvenHalfShiftSignedResidueFourier_eq_projector
     (b d r : ℕ) [NeZero d]
+    (hr : r < 2)
     (k : ZMod (d * d)) :
     parityEvenHalfShiftSignedResidueFourier b d r k =
       twoKernelEvenShiftProjectorAggregate b d r k := by
@@ -150,17 +151,13 @@ theorem parityEvenHalfShiftSignedResidueFourier_eq_projector
   intro h _hh
   exact
     parityGrowingShiftAffineChowlaTwist_eq_halfIndex
-      b d r h
-      (by
-        by_cases hr : r < 2
-        · exact hr
-        · omega)
-      k
+      b d r h hr k
 
 /-- The odd refined Fourier transform is exactly the normalized odd-shift
 projector from PR #742. -/
 theorem parityOddHalfShiftSignedResidueFourier_eq_projector
     (b d r : ℕ) [NeZero d]
+    (hr : r < 2)
     (k : ZMod (d * d)) :
     parityOddHalfShiftSignedResidueFourier b d r k =
       twoKernelOddShiftProjectorAggregate b d r k := by
@@ -170,12 +167,7 @@ theorem parityOddHalfShiftSignedResidueFourier_eq_projector
   intro h _hh
   exact
     parityGrowingShiftAffineChowlaTwist_eq_halfIndex
-      b d r h
-      (by
-        by_cases hr : r < 2
-        · exact hr
-        · omega)
-      k
+      b d r h hr k
 
 /-- Canonical regular-orbit majorant rewritten directly in the two refined
 signed-residue Fourier transforms for each endpoint parity. -/
@@ -196,10 +188,10 @@ theorem twoNonunitCanonicalRegularOrbitMajorant_eq_shiftParityResidueFourier
       twoNonunitRegularShiftParityResidueFourierMajorant b d k := by
   unfold twoNonunitCanonicalRegularOrbitMajorant
     twoNonunitRegularShiftParityResidueFourierMajorant
-  rw [parityEvenHalfShiftSignedResidueFourier_eq_projector,
-      parityOddHalfShiftSignedResidueFourier_eq_projector,
-      parityEvenHalfShiftSignedResidueFourier_eq_projector,
-      parityOddHalfShiftSignedResidueFourier_eq_projector]
+  rw [parityEvenHalfShiftSignedResidueFourier_eq_projector b d 0 (by norm_num) k,
+      parityOddHalfShiftSignedResidueFourier_eq_projector b d 0 (by norm_num) k,
+      parityEvenHalfShiftSignedResidueFourier_eq_projector b d 1 (by norm_num) k,
+      parityOddHalfShiftSignedResidueFourier_eq_projector b d 1 (by norm_num) k]
 
 /-- Endpoint aggregate in the refined signed-residue Fourier coordinates. -/
 def twoNonunitRegularShiftParityResidueEndpointMajorant
