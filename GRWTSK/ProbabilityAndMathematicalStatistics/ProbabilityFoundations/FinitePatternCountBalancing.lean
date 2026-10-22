@@ -132,4 +132,21 @@ theorem finite_count_square_parseval_floor
   nlinarith [hfloor, hdivZ, hsubZ]
 
 
+
+/-- The Parseval-ready integer discrepancy floor, transported to
+rational numbers. This isolates the ring cast from empirical
+pattern counting and the analytic-free Walsh energy identity. -/
+theorem finite_count_square_rational_floor
+    {α : Type*} [DecidableEq α]
+    (s : Finset α) (counts : α → ℕ) (N : ℕ)
+    (hq : 0 < s.card)
+    (htotal : (∑ i ∈ s, counts i) = N) :
+    ((N % s.card : ℕ) : ℚ) *
+      ((s.card - N % s.card : ℕ) : ℚ) ≤
+      (s.card : ℚ) * (∑ i ∈ s, ((counts i : ℚ) ^ 2)) -
+        (N : ℚ) ^ 2 := by
+  have hz := finite_count_square_parseval_floor s counts N hq htotal
+  exact_mod_cast hz
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
