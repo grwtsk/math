@@ -1782,3 +1782,45 @@ name = "actual Weil operator has minus-i action on H01"
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.actualWeil_H01"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "canonical tensor eigenspace support transfers to actual H1 Hodge type"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.CanonicalTensorActualH1Comparison.isOfType_typeOfSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "coordinate-preserving comparison from E tensor_Q E to actual complexified H1",
+  "canonical embedding-eigenspace membership"
+]
+nonclaims = [
+  "comparison supplier remains external",
+  "actual Hodge type follows locally once coordinate compatibility is supplied",
+  "does not prove four-factor algebraicity"
+]
+
+[[local_target]]
+name = "canonical tensor eigenspace has off-diagonal complex coordinate support"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.canonicalTensorComplexCoordinate_eq_zero_of_ne"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "canonical Galois evaluation eigenspace theorem"
+]
+nonclaims = [
+  "pure local linear algebra"
+]
+
+[[external_premise]]
+id = "cm-canonical-tensor-to-actual-h1-coordinate-comparison"
+result_family = 32
+evidence = "EXTERNAL_CLASSICAL_OR_REALIZATION"
+source = "weight-one CM realization comparison"
+labels = []
+statement_role = "supply a map from the canonical tensor model E tensor_Q E to the actual complexified H1 realization preserving the canonical Galois complex coordinates"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.CanonicalTensorActualH1Comparison"
+status = "OPEN"
+nonclaims = [
+  "no Hodge-type theorem is postulated beyond coordinate compatibility",
+  "formal sign-to-actual-Hodge typing is local downstream"
+]
