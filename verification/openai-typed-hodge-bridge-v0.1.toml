@@ -2417,3 +2417,35 @@ nonclaims = [
   "comparison to the finite assembled generator remains separate",
   "no algebraicity conclusion"
 ]
+
+
+[[local_target]]
+name = "fixed-CM transported comparison witness gives generator Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteTransportedGeneratorWitness.generator_mem_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite-CM actual typing for transported factors",
+  "finite switch alignment",
+  "standard fourfold Hodge tensor rule",
+  "complex-linear actual-to-descent comparison",
+  "H22 maps into descent Hodge subspace",
+  "assembled generator identification"
+]
+nonclaims = [
+  "finite Galois CM field remains fixed",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "fixed-field witness family supplies finite-CM transported Hodge data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteTransportedGeneratorHodgeData.ofWitnesses"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one CMFiniteTransportedGeneratorWitness for each absolute scalar automorphism"
+]
+nonclaims = [
+  "field does not vary with scalar automorphism",
+  "orbit-span containment follows downstream locally"
+]
