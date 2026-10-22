@@ -270,8 +270,10 @@ local chain is now
 \text{realized }(2,2)\text{ bidegree}.
 \]
 
-The file does not construct the CM abelian variety, prove scalar descent, or
-prove algebraicity. It remains SOURCE_DRAFT / NOT_RUN.
+The file does not construct the actual embedding decomposition of `U(v)`, the
+CM abelian variety `B(v)`, scalar descent, or algebraicity. Those remain bound
+to the proposition-level premises `eq:cm-types` and
+`eq:cm-label-conjugation`. It remains SOURCE_DRAFT / NOT_RUN.
 
 ## 5. Frobenius slope to Hodge type
 
