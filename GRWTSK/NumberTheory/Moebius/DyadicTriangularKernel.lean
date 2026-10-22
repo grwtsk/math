@@ -78,7 +78,7 @@ private theorem finite_tail_abel
         A (X + N - 1) * w (X + N) := by
   induction N with
   | zero =>
-      simp [hX]
+      simp
   | succ N ih =>
       simp only [Finset.sum_range_succ]
       rw [ih]
@@ -113,6 +113,7 @@ theorem dyadic_reciprocal_cell {n : ℕ} (hn : 1 ≤ n) :
   rw [Real.rpow_neg_one, Real.rpow_neg_one]
   field_simp [show (n : ℝ) ≠ 0 by positivity,
     show (((n + 1 : ℕ) : ℝ)) ≠ 0 by positivity]
+  push_cast
   ring
 
 /-- One triangular increment is exactly twice the signed previous-prefix atom. -/
@@ -141,6 +142,9 @@ theorem weightedMertensDyadicTriangularCorrelation_eq_range (j : ℕ) :
     rw [Nat.pow_succ]
     omega
   rw [hlen]
+  apply Finset.sum_congr rfl
+  intro k _
+  ring
 
 /-- Reindex the local kernel by the same exact dyadic length. -/
 theorem weightedMertensDyadicTriangularLocal_eq_range (j : ℕ) :
@@ -162,7 +166,6 @@ theorem dyadic_left_inv_eq_two_mul_right_inv (j : ℕ) :
       2 * (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ := by
   rw [Nat.pow_succ, Nat.cast_mul, Nat.cast_ofNat]
   field_simp [show (((2 ^ j : ℕ) : ℝ)) ≠ 0 by positivity]
-  ring
 
 /-- Finite telescoping of the triangular increments across a consecutive
 range. -/
@@ -173,7 +176,7 @@ private theorem two_mul_sum_atom_range_eq_triangular_sub
         mertensPrefixTriangularCorrelation (X - 1) := by
   induction N with
   | zero =>
-      simp [hX]
+      simp
   | succ N ih =>
       rw [Finset.sum_range_succ, mul_add, ih]
       have hn : 1 ≤ X + N := by omega
@@ -188,9 +191,7 @@ theorem weightedMertensDyadicTriangularCorrelation_eq_kernel (j : ℕ) :
     weightedMertensDyadicTriangularCorrelation j =
       weightedMertensDyadicTriangularKernel j := by
   let X : ℕ := 2 ^ j
-  have hX : 1 ≤ X := by
-    dsimp [X]
-    positivity
+  have hX : 1 ≤ X := Nat.one_le_pow j 2 (by norm_num)
   rw [weightedMertensDyadicTriangularCorrelation_eq_range]
   have habel := finite_tail_abel
     mertensPrefixTriangularCorrelation
@@ -226,9 +227,9 @@ theorem weightedMertensDyadicTriangularCorrelation_eq_kernel (j : ℕ) :
           (show 1 ≤ X + k by omega)]
       _ = _ := by rw [Finset.mul_sum]; ring
   rw [hinc]
-  rw [weightedMertensDyadicTriangularLocal_eq_range]
   unfold weightedMertensDyadicTriangularKernel
     weightedMertensDyadicTriangularBoundary
+  rw [weightedMertensDyadicTriangularLocal_eq_range]
   have hsum := two_mul_sum_atom_range_eq_triangular_sub hX X
   have hinv := dyadic_left_inv_eq_two_mul_right_inv j
   have hlocal := two_mul_sum_mul_sub_const
@@ -238,6 +239,10 @@ theorem weightedMertensDyadicTriangularCorrelation_eq_kernel (j : ℕ) :
   rw [hlocal]
   dsimp [X] at hsum hinv ⊢
   rw [hinv, hsum]
+  have hright : 2 ^ j + 2 ^ j = 2 ^ (j + 1) := by
+    rw [Nat.pow_succ]
+    omega
+  rw [hright]
   ring
 
 /-- The boundary retains the exact coefficient-square subtraction. -/
