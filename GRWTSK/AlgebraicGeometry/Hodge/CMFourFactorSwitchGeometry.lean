@@ -1548,6 +1548,56 @@ theorem CMFiniteNestedLinearAssembly.toFiniteAssembly_zero_at
     M.toFiniteAssembly.assemble (Function.update f i 0) = 0 :=
   M.toMultilinearity.zero_at i f
 
+/-- A rational fourfold nested-linear finite-CM assembly is determined
+by its values on four pure coefficient/vector tensors. This eliminates
+a separate equality-of-assemblies obligation once a common pure-factor
+formula is verified. No geometric pure-factor formula is asserted here. -/
+theorem CMFiniteNestedLinearAssembly.map_eq_of_pure_eq
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M N : CMFiniteNestedLinearAssembly factors)
+    (hpure : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      M.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄) =
+      N.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄))
+    (t₁ t₂ t₃ t₄ : E.carrier ⊗[ℚ] E.carrier) :
+    M.map t₁ t₂ t₃ t₄ = N.map t₁ t₂ t₃ t₄ := by
+  induction t₁ with
+  | tmul a₁ x₁ =>
+      induction t₂ with
+      | tmul a₂ x₂ =>
+          induction t₃ with
+          | tmul a₃ x₃ =>
+              induction t₄ with
+              | tmul a₄ x₄ =>
+                  exact hpure a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+              | add x y hx hy =>
+                  simp [map_add, hx, hy]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- The finite assembly functions coincide when their nested-linear
+presentations satisfy the same pure-factor formula. -/
+theorem CMFiniteNestedLinearAssembly.assemble_eq_of_pure_eq
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M N : CMFiniteNestedLinearAssembly factors)
+    (hpure : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      M.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄) =
+      N.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄))
+    (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier) :
+    M.toFiniteAssembly.assemble f = N.toFiniteAssembly.assemble f := by
+  exact M.map_eq_of_pure_eq N hpure (f 0) (f 1) (f 2) (f 3)
+
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
