@@ -980,3 +980,70 @@ external theorem with) an all-order ordinary Chowla estimate whose
 constants are uniform across the selected growing shift sets, while
 respecting the finite-sample feasibility boundary. Until then, no
 new unconditional distribution theorem follows from this adapter.
+
+## 15. Independent arithmetic leaf: genuine Liouville dyadic affine reindexing
+
+**Date:** 2026-10-22. **Direct parent head:**
+`8e5293cde7d1ff8bc0f588a31ba600b6b81b1691`.
+
+The eight generic finite Walsh modules remain source-drafts and retain
+their source blobs unchanged. A separate subject-owned arithmetic source
+leaf has now been added:
+
+- `GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleDyadicAffineBridge.lean`;
+- standalone review note
+  `docs/reviews/chowla-sofic-liouville-dyadic-affine-630.md`;
+- standalone passive target
+  `verification/liouville-dyadic-affine-630-v0.1.toml`.
+
+The source uses the **actual pinned Mathlib Liouville function**, not an
+arbitrary Boolean label or a hypothetical analytic axiom. Its two finite
+mathematical endpoints are:
+
+```text
+for all n>0: lambda(n) * lambda(2*n) = -1;
+for all M>0:
+  (1/M) sum_(n=0)^(M-1) lambda(n+1) lambda(2n+2) = -1.
+```
+
+This refutes the false "all affine pairs" version of Chowla and proves
+the indispensable nonproportionality restriction at a concrete arithmetic
+source. Mathlib defines `lambda(0)=0`, so the positivity guard remains
+explicit.
+
+The **positive** reindexing is the exact even-cutoff binary additive
+identity
+
+```text
+sum_(n=0)^(2M-1) lambda(n+1)lambda(n+2)
+  = -sum_(m=0)^(M-1) lambda(m+1)lambda(2m+1)
+    -sum_(m=0)^(M-1) lambda(m+1)lambda(2m+3).
+```
+
+The two right-hand pairs are **fixed nonproportional affine forms**
+with coefficient determinants `-1` and `+1`. Hence externally
+supplied, properly scoped bounds for each fixed pair can return an
+estimate for the adjacent additive binary correlation. The published
+OpenAI Result 007 from September 24, 2026 reports exactly this fixed
+nonproportional ordinary scope, but this repository increment does
+**not import or prove its cancellation theorem**.
+
+The 14 arithmetic theorem declarations and five definitions have their
+own isolated review target, keeping uncompiled arithmetic and
+uncompiled generic-probability modules independent. The original
+eight-module target remains at 56 theorem heads and 24 definitions;
+do not silently add the arithmetic leaf to its transitive source list.
+
+The new leaf does not prove all-order Chowla, uniformity over a
+growing family of offsets, a sum of squares over all shifts, the
+RH-E02 dyadic/maximal supplier or RH. It *does* identify a precise
+binary arithmetic reuse seam and one provable source-specific
+obstruction to incorrect affine generalization.
+
+For full statements, evidence boundaries, external scope and a
+separate transitive trust/verification target, read the standalone
+review note linked above.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+ARITHMETIC_BINARY_ADAPTER_OPEN /
+ALL_ORDER_GROWING_SHIFT_CHOWLA_OPEN.
