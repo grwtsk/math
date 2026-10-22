@@ -1057,6 +1057,42 @@ nonzero-scalar cancellation are all local source consequences.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4q. Formal closure of the middle-pairing scalar obstruction
+
+The q_i-nonvanishing chain is now closed formally once the geometric ample-class comparison is supplied.
+
+The source introduces:
+
+~~~text
+AmpleClassMiddlePairingComparison
+~~~
+
+This records a positive conjugate pairing, a nonzero beta, a nonzero scalar relation gamma = c * conjugate(beta), and identification of the geometric middle scalar q with that pairing.
+
+From this package,
+
+~~~text
+AmpleClassMiddlePairingComparison.q_ne_zero
+~~~
+
+proves q != 0.
+
+The source also proves
+
+~~~text
+transitionCompositionScalar_ne_zero
+~~~
+
+for the signed product scalar in the transition formula. Hence pointwise q_i != 0 implies the full signed product scalar is nonzero.
+
+Combined with the previously local nonzero-scalar recovery theorem, every formal step after the geometric Hodge-Riemann comparison is now local.
+
+The remaining q_i-specific premise is exactly one geometric construction: produce an AmpleClassMiddlePairingComparison from the actual cup-product/integration pairing and an ample class on B(b_i).
+
+No claim is made that the earlier CM trace polarization is already that cohomological ample-class pairing.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
