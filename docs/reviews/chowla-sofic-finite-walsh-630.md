@@ -1369,3 +1369,84 @@ Mertens import-source preflight remains independently open.
 **Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 ARITHMETIC_SOURCE_IDENTITY_ONLY / ALL_ORDER_CHOWLA_OPEN /
 GUE_RH_NONCLAIM.
+
+## 21. Dyadic odd-lifted Liouville recurrence with residual energy
+
+**Research date:** 2026-10-22. **Exact direct parent head:**
+`e85c3fe10cac688f782ff52a95fe9f67d5870687`.
+
+The first exact source-driven arithmetic recurrence is now
+source-drafted over **all orders** without hiding the
+odd-root correlation supplier:
+
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleOddLiftDyadicRecurrence.lean`
+(blob `0c8813fd24fb5be3bcc0ea0ded8ab79d231505c2`).
+
+For every original finite shift set H and subset S⊆H,
+lift each shift to `2h+1` and sample the actual
+positive-index Liouville function. The first half of
+roots is exactly reducible by complete multiplicativity:
+
+```text
+lambda(2m+2h+2) = -lambda(m+h+1).
+```
+
+The other half contributes the distinct, UNESTIMATED
+odd-affine product `lambda(2m+2h+3)`. Therefore
+
+```text
+C_lifted(2M,2S+1)
+  = ( (-1)^|S| C_ordinary(M,S)
+       + C_oddResidual(M,S) ) / 2
+```
+
+for M>0, preserving the exact factor `1/2` and
+the full selected-subset cardinality.
+
+A sharp finite convexity argument, summed over every
+nonempty shift subset, yields
+
+```text
+E_lifted(M,H)
+ <= (E_ordinary(M,H)+E_oddResidual(M,H))/2.
+```
+
+There is NO unconditional decay: for `M=1,H={0}`
+the source mean is `lambda(1)=1`, the odd residual
+is `lambda(3)=-1`, the lifted mean is `-1`,
+and both sides of the energy inequality equal one.
+Even if the smaller-scale source energy were small,
+the odd-residual energy remains an independent arithmetic
+supplier. Multiplicativity cannot discard it.
+
+The new module has eight definitions and ten theorem
+heads, including a conditional bound consuming TWO
+separately provided energy estimates. A new isolated
+11-module passive verification target
+`verification/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`
+selects all 90 theorem and 41 definition heads,
+retaining the earlier ten-module source target unchanged.
+The detailed math, sharpness, and remaining obligation
+are in
+`docs/reviews/chowla-sofic-liouville-odd-lift-recurrence-630.md`.
+
+One *separate finite transport* is still needed to
+identify energy indexed by the original subtype H
+with the canonical `liouvilleAllOrderEnergy(2M,H')`
+where `H'={2h+1|h∈H}`. No automatic subtype/image
+identity is asserted. The substantive analytic
+obligation is a small odd-residual higher-order
+ordinary correlation energy under the requested
+growing-window quantifiers.
+
+Independent finite integer checks: 768 H/M cases,
+5,824 subset correlation identities and 768 complete
+nonempty energy comparisons with zero discrepancies,
+including many NONZERO odd residuals. None establishes
+Lean/Lake compilation, kernel trust, external replay,
+higher-order Chowla, sofic/GUE, or RH.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+ODD_RESIDUAL_ESTIMATE_OPEN /
+CANONICAL_ODD_LIFT_IMAGE_ADAPTER_OPEN /
+NO_ARITHMETIC_CANCELLATION_OR_RH_RESULT.
