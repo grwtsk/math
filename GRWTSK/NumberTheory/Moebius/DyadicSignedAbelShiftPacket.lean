@@ -73,14 +73,14 @@ theorem finiteAbelPrefixIdentity
   induction N with
   | zero => simp
   | succ N ih =>
+      rw [Finset.sum_range_succ, ih]
       simp only [Finset.sum_range_succ]
-      rw [ih]
       ring
 
 /-- Finite forward differences telescope exactly. -/
 theorem finiteWeightDropTelescope
     (q : ℕ → ℝ) (N : ℕ) :
-    (∑ t ∈ Finset.range N, q t - q (t + 1)) =
+    (∑ t ∈ Finset.range N, (q t - q (t + 1))) =
       q 0 - q N := by
   induction N with
   | zero => simp
@@ -127,14 +127,13 @@ theorem sum_dyadicMertensShiftWeightDrop
   calc
     (∑ t ∈ Finset.range N,
       dyadicMertensShiftWeightDrop j h t) =
-        ∑ t ∈ Finset.range N, q t - q (t + 1) := by
+        ∑ t ∈ Finset.range N, (q t - q (t + 1)) := by
       apply Finset.sum_congr rfl
       intro t _ht
-      simp [dyadicMertensShiftWeightDrop, q, Nat.add_assoc]
+      rfl
     _ = q 0 - q N := htel
     _ = dyadicMertensShiftWeight j (1 + h) := by
       rw [hterminal, sub_zero]
-      simp [q, Nat.add_comm]
 
 /-- The initial weight is nonnegative on every admissible positive shift. -/
 theorem dyadicMertensShiftInitialWeight_nonneg
@@ -188,16 +187,6 @@ theorem weightedMertensDyadicShiftContribution_eq_abel
           dyadicMertensShiftWeightDrop j h t
   rw [habel, hterminal, mul_zero, add_zero]
   congr 1
-  apply Finset.sum_congr rfl
-  intro t _ht
-  have hpref :
-      (∑ k ∈ Finset.range (t + 1), x k) =
-        mertensTwoPointPrefix h (t + 1) := by
-    simp [x, mertensTwoPointPrefix]
-  have hdrop :
-      q t - q (t + 1) = dyadicMertensShiftWeightDrop j h t := by
-    simp [q, dyadicMertensShiftWeightDrop, Nat.add_assoc]
-  rw [hpref, hdrop]
 
 /-- The complete exact signed packet is the sum of the signed Abel
 contributions.  Cancellation between shifts remains available. -/
