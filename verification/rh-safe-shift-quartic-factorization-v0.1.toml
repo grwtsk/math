@@ -1,0 +1,81 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-safe-shift-quartic-factorization-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "016115658d4da215bcc29e0fc29d6eef524fed51"
+parent_tree = "229ac94882c9677a1fe1e48ce9f2d423579df25d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXACT_QUARTIC_FACTORS_EXPOSED / COEFFICIENT_ALIGNMENT_OPEN"
+
+[exact_factorization]
+a = "zeroDefect(s)=Re(s)-1/2"
+t = "Im(s)"
+axial_vertical_factor = "a^2"
+transverse_vertical_factor = "a*t"
+axial_oriented_factor = "a^2"
+transverse_oriented_factor = "a*t"
+axial_gram_factor = "a^4"
+transverse_gram_factor = "a^2*t^2"
+axial_coefficient_nonnegative = true
+transverse_coefficient_nonnegative = true
+structured_identity = "Q_n = a^4*A_n + 3*a^2*t^2*T_n"
+
+[target_alignment]
+target_identity = "-witnessTrace(a,t)/4 = a^4 + 3*a^2*t^2"
+stage_exact_if_coefficients_equal = true
+coefficient_alignment_proved = false
+common_positive_limit_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftQuarticFactorization"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SafeShiftQuarticFactorization.lean"
+blob = "14f845923160dc1514e71cc63f8e68552751b89e"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticFactorizationControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SafeShiftQuarticFactorizationControls.lean"
+blob = "8e797b8fb35dacf6683ad69e38fcd04ebbdf9707"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "8338c250c11ca22da3ec0840ba438fa7ab91ef03"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/safe-shift-quartic-factorization.md"
+blob = "6c080c8920f88ccaa44e514de6cf9fae8905cdfb"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXACT_QUARTIC_FACTORS_EXPOSED = true
+AXIAL_COEFFICIENT_NONNEGATIVE = true
+TRANSVERSE_COEFFICIENT_NONNEGATIVE = true
+COEFFICIENT_ALIGNMENT_PROVED = false
+GLOBAL_EXPLICIT_FORMULA_ASSEMBLY_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "derive explicit safe-term formulas or source estimates for normalized axial coefficient A_n",
+  "derive explicit safe-term formulas or source estimates for normalized transverse coefficient T_n",
+  "prove A_n and T_n converge to the same positive limit, or absorb their difference into a complete decaying residual",
+  "incorporate gamma/pole/trivial-zero/nontrivial-zero channels",
+  "finish theorem-bound noncircularity and trust audit"
+]
+
+[nonclaims]
+items = [
+  "exact monomial factorization does not imply coefficient alignment",
+  "A_n and T_n are not yet shown equal or asymptotically equal",
+  "no global explicit formula",
+  "no residual-decay theorem",
+  "no unconditional RH proof"
+]
