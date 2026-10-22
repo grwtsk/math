@@ -197,7 +197,7 @@ theorem quartic_coefficients_of_factorization
   simp [quarticFromVieta, Polynomial.coeff_add, Polynomial.coeff_sub,
     Polynomial.coeff_X_pow] at h0 h1 h2 h3
   constructor
-  · exact (neg_inj.mp (show -A = eOne a b c d from by linear_combination -h3)).symm
+  · linear_combination -h3
   constructor
   · linear_combination -h2
   constructor
