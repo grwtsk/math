@@ -2186,6 +2186,63 @@ This is a materially smaller frontier than the previous per-conjugate finite-fie
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4aw. One common finite Galois CM carrier now controls all four factors and all scalar transports
+
+The CM-support frontier has been made more precise.
+
+`CMFourFactorSwitchGeometry.lean` now defines:
+
+~~~text
+CMGaloisIntermediateField
+CMGaloisIntermediateField.factorTensorInclusion
+CMGaloisIntermediateField.factorTensorInclusion_scalarConjugate
+CMFourFactorSupport
+CMFourFactorSupport.scalarTransportLocal
+CMFourFactorSupport.scalarTransportLocal_inclusion
+~~~
+
+A `CMFourFactorSupport` packages one finite Galois CM intermediate field
+
+[
+Esubsetoverline{mathbf Q},
+]
+
+four local vectors in
+
+[
+Eotimes_{mathbf Q}E,
+]
+
+their local embedding characters and eigenspace proofs, and comparison equations identifying their inclusions with the four global canonical factors over (overline{mathbf Q}).
+
+The global characters are required to restrict to the local characters.
+
+Once this support is supplied, every absolute scalar automorphism (sigma) restricts to (E), and local source proves
+
+[
+iota_Eigl(sigma|_Ecdot v_rigr)
+=
+sigmacdotiota_E(v_r)
+]
+
+for each of the four factors.
+
+Thus the same finite Galois CM field can control the entire scalar-Galois orbit of the supported four-factor configuration. A fresh finite CM field is not needed for each scalar conjugate.
+
+The open CM-specific condition is therefore no longer “turn an arbitrary finite Galois tensor carrier into a CM field.” That implication is false in general and is not used. The exact remaining support theorem is instead:
+
+[
+oxed{
+	ext{the four canonical switched factors admit one common finite Galois CM support}
+}
+]
+
+inside (overline{mathbf Q}).
+
+After such support is supplied, factorwise scalar transport stays uniformly inside that CM field; the remaining work is to instantiate the weight-one realizations/comparison there and connect them to the existing transported-generator family.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
