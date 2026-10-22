@@ -131,7 +131,8 @@ theorem gram_polarization (family : PositiveGramFamily space H)
   · intro c x y
     simp only [gram, map_smul, inner_smul_right]
   · intro x
-    simpa only [diagonal, gram] using
+    simpa only [diagonal, gram, RCLike.re_to_complex,
+      RCLike.ofReal_eq_complex_ofReal] using
       (inner_self_ofReal_re (𝕜 := ℂ) (family.map n x))
 
 end PositiveGramFamily
