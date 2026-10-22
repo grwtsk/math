@@ -847,6 +847,51 @@ opaque until an appropriate geometric API or imported theorem is available.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4m. Nonzero scalar recovery in transition composition
+
+The manuscript composition formula has now been split into its geometric and
+linear-algebraic parts.
+
+Abstractly, suppose \(Z\subseteq T\) is the subspace of algebraic classes and
+the geometric composition produces
+
+\[
+u=\lambda\,t_{ae}\in Z,
+\qquad
+\lambda\neq0.
+\]
+
+Then \(t_{ae}\in Z\) follows purely by multiplying by \(\lambda^{-1}\).  This
+elementary step is now local as
+
+~~~text
+mem_of_nonzero_smul_mem
+NonzeroScalarCompositionData.endpoint_mem
+~~~
+
+in \`CMFourFactorSwitchGeometry.lean\`.
+
+Accordingly, the external content of
+\`eq:transition-composition\` is narrowed to two independent facts:
+
+1. the pullback/cup-product/pushforward construction really produces the stated
+   scalar multiple of the endpoint tensor;
+2. the scalar
+   \[
+   \lambda=(-1)^{p(p-1)/2}\prod_i q_i
+   \]
+   is nonzero, equivalently each \(q_i\neq0\).
+
+The manuscript proves the second point by identifying the two middle embedding
+lines by complex conjugation and invoking Hodge--Riemann positivity for an
+ample class.  That geometric positivity statement is not yet local at this
+scope.
+
+Thus nonzero-scalar cancellation is no longer part of the external
+composition premise.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
