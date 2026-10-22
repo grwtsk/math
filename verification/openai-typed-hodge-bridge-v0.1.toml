@@ -213,7 +213,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["thm:switch", "eq:switch-line", "eq:switch-conjugate-balance"]
-statement_role = "algebraic-cycle realization of the rationally descended balanced four-factor Hodge witness; the local source owns the numerical (2,2) certificate and generic scalar descent but not the switch/cycle theorem"
+statement_role = "geometric realization of atomic four-factor switches and composition of transition tensors; local source now owns finite switch connectivity and formal composition once these suppliers are admitted"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
 status = "OPEN"
 nonclaims = ["four-label balance alone is not algebraicity", "all-conjugate (2,2) type alone is not rational descent", "generic scalar descent alone is not an algebraic-cycle theorem"]
@@ -1009,4 +1009,35 @@ status = "SOURCE_DRAFT_NOT_RUN"
 nonclaims = [
   "well-founded combinatorial measure only",
   "no geometric consequence"
+]
+
+
+[[local_target]]
+name = "global algebraic transition from finite switch reachability"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfReach"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "IdentityTransitionSupplier",
+  "AtomicSwitchTransitionSupplier",
+  "TransitionCompositionSupplier",
+  "finite PairedMatrixReach chain"
+]
+nonclaims = [
+  "formal composition theorem only",
+  "does not construct any geometric supplier"
+]
+
+[[local_target]]
+name = "conditional transition from equal column sums"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfEqualColumnSums"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source and target matrices with equal column sums",
+  "SwitchGeometrySupplier"
+]
+nonclaims = [
+  "uses local finite switch connectivity",
+  "all geometric algebraicity input remains external"
 ]
