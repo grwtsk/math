@@ -1408,7 +1408,7 @@ theorem CMFiniteNestedLinearAssembly.add_first
     (b c d : E.carrier ⊗[ℚ] E.carrier) :
     M.map (x + y) b c d =
       M.map x b c d + M.map y b c d := by
-  exact (M.map.map_add x y).congrFun b |>.congrFun c |>.congrFun d
+  simp only [map_add, LinearMap.add_apply]
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
