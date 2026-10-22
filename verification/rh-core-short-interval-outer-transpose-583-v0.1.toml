@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-outer-transpose-583-v0.1"
+owner_repository = "grwtsk/math"
+issue = 583
+parent_issue = 581
+parent_pr = 582
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalOuterTranspose"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalOuterTranspose"
+
+[source_binding]
+stacked_parent_revision = "670524ca83c26b4ac0c24cecfea305c5ec5d9c2b"
+candidate_branch = "research/rh-outer-transpose-583"
+theorem_source_commit = "288b565eacc8fb029b1cf4269dfb7b075f6e9560"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalOuterTranspose.lean"
+theorem_source_git_blob = "da4efed5b7413fdf93385ae8cad0599a9e3f8507"
+
+[selected_increment]
+block_sum_identity = "sum_incompatibleBlockLengthL1_eq_incompatibleDyadicStartBlockL1"
+length_mass_form = "transposedIncompatibleDyadicL1Packet_eq_lengthMass"
+outer_fubini = "coreLongIncompatibleDyadicL1Packet_eq_transposed"
+adapter_value = "incompatibleDepthTransposeAdapter"
+exact_return = "subpolynomialIncompatibleDyadicPacket_of_transposed_exact"
+proof_classification = "EXACT_FINITE_OUTER_FUBINI"
+next_obstruction = "bound coreLengthCoefficientMass and transposed fixed-length packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+transposed_supplier_proved = false
+riemann_hypothesis_proved = false
