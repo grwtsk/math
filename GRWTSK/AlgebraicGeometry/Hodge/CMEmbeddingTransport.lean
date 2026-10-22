@@ -50,6 +50,28 @@ theorem scalarConjugate_regularAction
   exact LinearMap.rTensor_baseChange σ.toAlgHom t
     ((Algebra.lsmul k k E) a)
 
+/-- Scalar conjugation is inverted by the inverse field automorphism. -/
+theorem scalarConjugate_symm_apply
+    (σ : E ≃ₐ[k] E)
+    (t : E ⊗[k] E) :
+    scalarConjugate σ.symm (scalarConjugate σ t) = t := by
+  induction t with
+  | tmul a v =>
+      simp [scalarConjugate_tmul]
+  | add x y hx hy =>
+      simp [hx, hy]
+
+/-- Scalar conjugation preserves nonzero tensors. -/
+theorem scalarConjugate_ne_zero
+    (σ : E ≃ₐ[k] E)
+    {t : E ⊗[k] E}
+    (ht : t ≠ 0) :
+    scalarConjugate σ t ≠ 0 := by
+  intro hzero
+  apply ht
+  have h := congrArg (scalarConjugate σ.symm) hzero
+  simpa [scalarConjugate_symm_apply] using h
+
 /-- The canonical embedding eigenspace is transported from lambda to
 sigma composed with lambda. -/
 theorem scalarConjugate_mem_embeddingEigenspace
