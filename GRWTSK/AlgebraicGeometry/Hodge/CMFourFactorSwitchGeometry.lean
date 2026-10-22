@@ -565,6 +565,29 @@ def FourfoldMonomialAssemblyData.transportedLine
     Submodule ℂ (ℂ ⊗[ℚ] V) :=
   Submodule.span ℂ {D.assemble ((factors.scalarTransport σ).vector)}
 
+/-- Once scalar conjugation commutes with fourfold assembly, the conjugated
+actual tensor belongs to the transported monomial line by construction. -/
+theorem FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldMonomialAssemblyData factors tensor)
+    (σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
+      (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+        σ tensor) ∈ D.transportedLine σ := by
+  rw [D.scalar_conjugate_eq σ]
+  exact Submodule.subset_span (Set.mem_singleton _)
+
 /-- For a presented canonical fourfold multilinear assembly, every scalar
 conjugate of the assembled tensor belongs to the corresponding transported
 monomial line with no additional naturality premise. -/
@@ -590,28 +613,6 @@ theorem FourfoldMultilinearAlgebraicAssembly.scalarConjugate_mem_transportedLine
       (M.toMonomialAssemblyData factors).transportedLine σ := by
   exact (M.toMonomialAssemblyData factors).scalarConjugate_mem_transportedLine σ
 
-/-- Once scalar conjugation commutes with fourfold assembly, the conjugated
-actual tensor belongs to the transported monomial line by construction. -/
-theorem FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine
-    {V : Type*} [AddCommGroup V] [Module ℚ V]
-    {factors :
-      CMEmbeddingTransport.FourEmbeddingLineVectors
-        (k := ℚ)
-        (E :=
-          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
-    {tensor :
-      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
-        ⊗[ℚ] V}
-    (D : FourfoldMonomialAssemblyData factors tensor)
-    (σ :
-      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
-        ≃ₐ[ℚ]
-      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
-    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
-      (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
-        σ tensor) ∈ D.transportedLine σ := by
-  rw [D.scalar_conjugate_eq σ]
-  exact Submodule.subset_span (Set.mem_singleton _)
 
 section ActualWeightOneFactorTyping
 
