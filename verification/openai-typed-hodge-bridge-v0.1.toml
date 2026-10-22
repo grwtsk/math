@@ -104,3 +104,32 @@ upstream_obligations = [
   "weak-admissibility Hodge/Newton equality",
   "pure slope zero or one"
 ]
+
+
+[[local_target]]
+name = "witness syntax strong-normalization reflection"
+path = "GRWTSK/Logic/TypeTheory/WitnessSyntaxNormalization.lean"
+declaration = "GRWTSK.Logic.TypeTheory.WitnessSyntax.ReductionSimulation.stronglyNormalizing_of_encode"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "exact local-to-PTS encoding",
+  "one-step reduction simulation",
+  "target strong normalization from an admitted theorem"
+]
+
+[[local_target]]
+name = "witness syntax semantic invariance on finite reduction paths"
+path = "GRWTSK/Logic/TypeTheory/WitnessSyntaxNormalization.lean"
+declaration = "GRWTSK.Logic.TypeTheory.WitnessSyntax.SemanticReductionBridge.reflTransGen_semantic"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "seven-eighths symmetric nontrivial-zero band"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ExternalSevenEighthsBand.lean"
+declaration = "GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_closed_seven_eighths_band"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "SevenEighthsZeroFree premise",
+  "external 7/8 theorem exact-type/dependency review",
+  "local adapter/replay before external theorem admission"
+]
