@@ -140,7 +140,7 @@ theorem PositiveConjugatePairing.pairing_conjugate_ne_zero
     {v : V} (hv : v ≠ 0) :
     P.pairing v (P.conjugatePartner v) ≠ 0 := by
   rw [P.pairing_conjugate v]
-  exact_mod_cast (P.energy_pos hv).ne'
+  exact Complex.ofReal_ne_zero.mpr (P.energy_pos hv).ne'
 
 /-- If the second middle factor is a nonzero scalar multiple of the conjugate
 partner of the first, then the transition scalar q is nonzero.
