@@ -2832,4 +2832,72 @@ def CMFiniteBalancedTensorImageTest.toComparison
     · intro a y hy
       exact hodgeSubspace.smul_mem a hy
 
+/-- Pointwise Hodge image compatibility may be checked directly on four
+actual weight-one inputs with a balanced list of types.  This avoids
+requiring callers to manipulate the existentially defined generating set. -/
+def CMFiniteBalancedTensorImageTest.ofPureTensorRule
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (compare : FourfoldActualTensor D.toActualTyping →ₗ[ℂ]
+      (ℂ ⊗[ℚ] V))
+    (pure_mem :
+      ∀ (a : D.first.realization.H1C)
+        (b : D.second.realization.H1C)
+        (c : D.third.realization.H1C)
+        (d : D.fourth.realization.H1C)
+        (τ₁ τ₂ τ₃ τ₄ : CMEmbeddingLines.WeightOneHodgeType),
+        D.first.realization.IsOfType a τ₁ →
+        D.second.realization.IsOfType b τ₂ →
+        D.third.realization.IsOfType c τ₃ →
+        D.fourth.realization.IsOfType d τ₄ →
+        CMEmbeddingLines.pIndex τ₁ + CMEmbeddingLines.pIndex τ₂ +
+          CMEmbeddingLines.pIndex τ₃ + CMEmbeddingLines.pIndex τ₄ = 2 →
+        CMEmbeddingLines.qIndex τ₁ + CMEmbeddingLines.qIndex τ₂ +
+          CMEmbeddingLines.qIndex τ₃ + CMEmbeddingLines.qIndex τ₄ = 2 →
+        compare (fourfoldActualPureTensor D.toActualTyping a b c d) ∈
+          hodgeSubspace) :
+    CMFiniteBalancedTensorImageTest D hodgeSubspace where
+  compare := compare
+  balanced_mem := by
+    rintro z ⟨a, b, c, d, τ₁, τ₂, τ₃, τ₄,
+      ha, hb, hc, hd, hp, hq, rfl⟩
+    exact pure_mem a b c d τ₁ τ₂ τ₃ τ₄ ha hb hc hd hp hq
+
+/-- Pure-tensor image compatibility together with the separate balanced
+spanning certificate suffices for the comparison required by descent. -/
+def CMFiniteActualToDescentComparison.ofPureTensorRule
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄)
+    (R : FourfoldActualHodgeTensorRule D.toActualTyping)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (S : CMFiniteBalancedPureTensorSpanning D R)
+    (compare : FourfoldActualTensor D.toActualTyping →ₗ[ℂ]
+      (ℂ ⊗[ℚ] V))
+    (pure_mem :
+      ∀ (a : D.first.realization.H1C)
+        (b : D.second.realization.H1C)
+        (c : D.third.realization.H1C)
+        (d : D.fourth.realization.H1C)
+        (τ₁ τ₂ τ₃ τ₄ : CMEmbeddingLines.WeightOneHodgeType),
+        D.first.realization.IsOfType a τ₁ →
+        D.second.realization.IsOfType b τ₂ →
+        D.third.realization.IsOfType c τ₃ →
+        D.fourth.realization.IsOfType d τ₄ →
+        CMEmbeddingLines.pIndex τ₁ + CMEmbeddingLines.pIndex τ₂ +
+          CMEmbeddingLines.pIndex τ₃ + CMEmbeddingLines.pIndex τ₄ = 2 →
+        CMEmbeddingLines.qIndex τ₁ + CMEmbeddingLines.qIndex τ₂ +
+          CMEmbeddingLines.qIndex τ₃ + CMEmbeddingLines.qIndex τ₄ = 2 →
+        compare (fourfoldActualPureTensor D.toActualTyping a b c d) ∈
+          hodgeSubspace) :
+    CMFiniteActualToDescentComparison D R hodgeSubspace :=
+  (CMFiniteBalancedTensorImageTest.ofPureTensorRule
+    D hodgeSubspace compare pure_mem).toComparison S
+
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
