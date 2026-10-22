@@ -1,0 +1,268 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "chowla-sofic-bernoulli-tv-675-v0.1"
+owner_repository = "grwtsk/math"
+issue = 675
+parent_issue = 667
+related_issues = [630, 654, 658, 628, 635, 121, 168, 441, 453, 516, 100, 15]
+route_id = "FINITE_WALSH_CORRELATION_ENERGY_TO_ALL_EVENT_BERNOULLI_TV"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBernoulliTV"
+build_target = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBernoulliTV"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "cfc194e5d8f4401bd2fdc82dab39c4d959f989fb"
+review_parent_tree = "9b3d652a1d216ae186ad81907da4349ff4b787da"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+pinned_lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+new_module_path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBernoulliTV.lean"
+new_module_git_blob = "2ebb845a9c71ef949d12f23fabdd0d8e5e44e8bd"
+new_module_namespace = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV"
+mathematical_note_path = "docs/reviews/chowla-sofic-bernoulli-tv-675.md"
+mathematical_note_git_blob = "a7a3958d03edeceb4749fbe3501433f1377d97f2"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+parent_walsh_energy_kernel_audited = false
+parent_cyclic_seam_kernel_audited = false
+all_event_bernoulli_TV_kernel_accepted = false
+finite_cyclic_to_uniform_triangle_formalized = false
+liouville_correlation_decay_proved = false
+mobius_adapter_imported = false
+all_orders_fixed_window_chowla_proved = false
+growing_shift_all_depth_uniform_energy_proved = false
+sofic_ergodicity_bernoulli_limit_proved = false
+microscopic_GUE_or_RH_proved = false
+root_nonempty = "roots.card > 0 for probabilities"
+source_coordinates = "complete finite type ι; all subsets and all Boolean patterns"
+event_family = "all Boolean predicates on the complete finite pattern alphabet"
+event_discrepancy = "sum over pattern alphabet of 1_event*(empiricalPattern - 1/2^k)"
+total_variation = "maximum of absolute all-event empirical-versus-uniform discrepancies"
+source_moment_averaging = "ordinary equal-weight finite Cesaro"
+empty_subset_moment_before_centering = "1"
+empty_subset_coefficient_after_centering = "0"
+finite_Walsh_energy_identity = "sum_a (2^k*P_R(a)-1)^2 = 2^k*E_R"
+finite_TV_target = "TV(P_R,Uniform_2^k) <= Real.sqrt(E_R)/2"
+proof_method = "mean-zero centered Boolean event weights + finite Cauchy-Schwarz"
+real_rational_cast_verification_required = true
+diagnostic_kind = "non-authoritative rational finite enumeration for k=0..3 and N=1..3"
+diagnostic_lean_evidence = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBernoulliTV"
+authored_declaration_count = 16
+authored_definition_count = 5
+authored_theorem_count = 11
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshEnergy", "Mathlib"]
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshEnergy.lean"
+git_blob = "a2124e2efafc96320404421bc9c875f83bf8d16b"
+status = "STACKED_PARENT_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/CyclicWindowSeam.lean"
+git_blob = "b94fc48280da575c9f0466cd64a3e1a1c38bb2f7"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FinitePatternBoundaryTV.lean"
+git_blob = "8087556eaff5a988caba7a2ec89b5f4607daa8ca"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+git_blob = "afa3ef31687182ebccf1877aeddb1e3647c7b935"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_targets]]
+path = "verification/chowla-sofic-walsh-energy-667-v0.1.toml"
+git_blob = "de6b215638b3982bf11b831d747eb44e18fd1c1b"
+status = "PARENT_PASSIVE_TARGET_NOT_VERIFICATION_RECEIPT"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.eventHalfWeight"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.eventSignedSum"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.eventHalfWeight_sq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.eventHalfWeight_pairing"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.eventHalfWeight_sq_sum"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.double_eventSignedSum_sq_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.abs_eventSignedSum_div_card_le_sqrt_energy"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.sourceScaledDefectReal"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.scaledEmpiricalDefect_sum_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.sourceScaledDefectReal_sum_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.sourceScaledDefectReal_sq_energy"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.sourceMomentEnergy_nonneg"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.uniformPatternEventDeviation"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.uniformPatternEventDeviation_eq_scaled"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.empiricalVsUniformTV"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.BernoulliTV.empiricalVsUniformTV_le_sqrt_momentEnergy"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-coordinate-alphabet"
+requirement = "I may be empty; its pattern alphabet is singleton, the centered discrepancy vanishes and TV=0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-roots-only"
+requirement = "The empirical probability and source moment require roots.card > 0; reject division by empty roots as probability."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-Walsh-coefficient"
+requirement = "C_R(empty)=1 before centering. Remove only the exact empty coefficient; never drop nonempty correlations."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-characters-all-orders"
+requirement = "Complete nonempty correlation energy includes all subset orders, not only one- and two-point moments."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-mean-derived"
+requirement = "Derive the complete scaled pattern discrepancy sum zero from exact Walsh orthogonality; never posit it for unrelated labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "complete-event-family"
+requirement = "The TV definition must take the maximum over ALL Boolean events of the finite alphabet, not a chosen singleton pattern."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sharp-half-factor"
+requirement = "The +1/-1 event pairing carries an exact factor 2; reject losing the final 1/2 in the TV bound."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "count-two-to-power-k"
+requirement = "The complete pattern cardinal is 2^(card ι), and every cast and denominator must retain this power."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-rational-normalization"
+requirement = "The exact rational Walsh energy must be cast to the real square-root bound without changing source signs or sample normalization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-half-L1-assumption"
+requirement = "The source uses centered-event Cauchy-Schwarz; no unproved half-L1 equality may be introduced as a theorem edge."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonnegative-energy"
+requirement = "Energy nonnegativity follows from the real cast of the complete sum of rational squared correlations."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hidden-Bernoulli-sample"
+requirement = "Uniform 2^(-k) law is a distribution, not a fabricated empirical labeling on a finite root set."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam-triangle-not-yet-formalized"
+requirement = "The cyclic r/N estimate from #658 requires exact matched event and source identities before any triangle theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fixed-vs-growing-window"
+requirement = "Fixed-window finite energy does not imply quantitative growing-shift/all-depth estimates or any cancellation rate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "liouville-vs-mobius"
+requirement = "No arithmetic Liouville source binder or zero-valued Mobius-to-binary adapter is imported by this generic finite module."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-promotion"
+requirement = "No Bernoulli measure limit, ergodicity, microscopic GUE, zeta-divisor identification or RH is implied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-source-as-kernel-proof"
+requirement = "Static file review, standalone finite diagnostics and passive manifest are not an accepted Lean proof or Noeaaeue replay."
+status = "NOT_RUN"
