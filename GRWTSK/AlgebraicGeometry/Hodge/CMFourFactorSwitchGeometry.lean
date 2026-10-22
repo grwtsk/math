@@ -212,6 +212,79 @@ theorem scalarConjugate_mem_orbitSpan
   apply Submodule.subset_span
   exact Set.mem_range_self σ
 
+/-- Fourfold switched assembly before coefficient inclusion into C.
+
+Keeping the assembly over AlgebraicNumbers puts coefficient conjugation and
+factor transport in the same category. -/
+structure FourfoldAlgebraicAssemblyData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers))
+    (tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V) where
+  assemble :
+    (Fin 4 →
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V
+  original_eq :
+    tensor = assemble factors.vector
+
+/-- Exact remaining Galois-equivariance statement for algebraic fourfold
+assembly.
+
+Factor transport itself is already local. This interface asks only that
+assembling after factorwise scalar transport equals scalar conjugation of the
+assembled tensor. -/
+structure FourfoldAlgebraicAssemblyEquivariance
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldAlgebraicAssemblyData factors tensor) where
+  equivariant :
+    ∀ σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers,
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ tensor =
+        D.assemble ((factors.scalarTransport σ).vector)
+
+/-- Algebraic-level assembly and equivariance produce the previous
+complexified monomial-assembly package after coefficient inclusion. -/
+def FourfoldAlgebraicAssemblyData.toMonomialAssemblyData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldAlgebraicAssemblyData factors tensor)
+    (N : FourfoldAlgebraicAssemblyEquivariance D) :
+    FourfoldMonomialAssemblyData factors tensor where
+  assemble := fun v =>
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
+      (D.assemble v)
+  original_eq := by
+    rw [D.original_eq]
+  scalar_conjugate_eq := fun σ => by
+    rw [N.equivariant σ]
+
 /-- Abstract fourfold monomial assembly from four canonical embedding-line
 factors into the actual complexified cohomological tensor space.
 
