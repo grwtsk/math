@@ -79,7 +79,7 @@ transport is the same one consumed by the cone-to-disk theorem. -/
 theorem transportBoundaryMap_apply {Y : Type*}
     (f : UnitAddCircle → Y) (x : UnitAddCircle) :
     transportBoundaryMap f (additiveBoundaryHomeomorph x) = f x := by
-  simp [transportBoundaryMap]
+  simp only [transportBoundaryMap, Function.comp_apply, Homeomorph.symm_apply_apply]
 
 /-- Transport does not alter the kernel of the original boundary map. -/
 theorem transportBoundaryMap_kernel {Y : Type*}
@@ -87,7 +87,7 @@ theorem transportBoundaryMap_kernel {Y : Type*}
     transportBoundaryMap f (additiveBoundaryHomeomorph x) =
         transportBoundaryMap f (additiveBoundaryHomeomorph y) ↔
       f x = f y := by
-  simp [transportBoundaryMap]
+  simp only [transportBoundaryMap_apply]
 
 /-- Surjectivity of an actual attaching map is preserved by the
 fixed boundary reparameterization. -/
@@ -96,7 +96,6 @@ theorem transportBoundaryMap_surjective {Y : Type*}
     Function.Surjective (transportBoundaryMap f) := by
   intro y
   obtain ⟨x, hx⟩ := hf y
-  exact ⟨additiveBoundaryHomeomorph x, by
-    simpa [transportBoundaryMap] using hx⟩
+  exact ⟨additiveBoundaryHomeomorph x, (transportBoundaryMap_apply f x).trans hx⟩
 
 end GRWTSK.Topology.AlgebraicTopology.AdditiveDiskBoundary
