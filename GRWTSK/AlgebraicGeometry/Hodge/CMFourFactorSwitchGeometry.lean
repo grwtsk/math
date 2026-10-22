@@ -377,24 +377,6 @@ def FourfoldMultilinearAlgebraicAssembly.toAlgebraicAssemblyData
   assemble := fun v => M.assemble (v 0) (v 1) (v 2) (v 3)
   original_eq := rfl
 
-/-- The same multilinear assembly supplies the previously isolated Galois
-equivariance interface without any further mathematical premise. -/
-def FourfoldMultilinearAlgebraicAssembly.toAssemblyEquivariance
-    (M : FourfoldMultilinearAlgebraicAssembly)
-    (factors :
-      CMEmbeddingTransport.FourEmbeddingLineVectors
-        (k := ℚ)
-        (E :=
-          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)) :
-    FourfoldAlgebraicAssemblyEquivariance
-      (M.toAlgebraicAssemblyData factors) where
-  equivariant := fun σ => by
-    exact M.equivariant σ
-      (factors.vector 0)
-      (factors.vector 1)
-      (factors.vector 2)
-      (factors.vector 3)
-
 /-- Exact remaining Galois-equivariance statement for algebraic fourfold
 assembly.
 
@@ -420,6 +402,26 @@ structure FourfoldAlgebraicAssemblyEquivariance
       GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
           σ tensor =
         D.assemble ((factors.scalarTransport σ).vector)
+
+
+/-- The same multilinear assembly supplies the previously isolated Galois
+equivariance interface without any further mathematical premise. -/
+def FourfoldMultilinearAlgebraicAssembly.toAssemblyEquivariance
+    (M : FourfoldMultilinearAlgebraicAssembly)
+    (factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)) :
+    FourfoldAlgebraicAssemblyEquivariance
+      (M.toAlgebraicAssemblyData factors) where
+  equivariant := fun σ => by
+    simpa [FourfoldMultilinearAlgebraicAssembly.toAlgebraicAssemblyData] using
+      M.equivariant σ
+        (factors.vector 0)
+        (factors.vector 1)
+        (factors.vector 2)
+        (factors.vector 3)
 
 /-- Abstract fourfold monomial assembly from four canonical embedding-line
 factors into the actual complexified cohomological tensor space.
