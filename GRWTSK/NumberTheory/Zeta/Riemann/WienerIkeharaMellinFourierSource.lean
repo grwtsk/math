@@ -1,6 +1,8 @@
 /-
 Copyright (c) 2026 R. A. Jacob Martone. All rights reserved.
-Original contributions: MIT (repository LICENSE). Analytic source ideas and\nselected proof structure adapted from Apache-2.0 PrimeNumberTheoremAnd;\nupstream copyright and license remain with their original authors.
+Original contributions: MIT (repository LICENSE). Analytic source ideas and
+selected proof structure adapted from Apache-2.0 PrimeNumberTheoremAnd;
+upstream copyright and license remain with their original authors.
 Source-level adaptation and mathematical attribution:
   Alex Kontorovich, Terry Tao, and PrimeNumberTheoremAnd contributors,
   PrimeNumberTheoremAnd/Wiener.lean, maintained commit
