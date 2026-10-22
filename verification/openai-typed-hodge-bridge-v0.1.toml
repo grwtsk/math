@@ -1968,3 +1968,63 @@ nonclaims = [
   "H22 membership only",
   "does not prove algebraicity"
 ]
+
+
+[[local_target]]
+name = "actual H22 comparison implies descent-side Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldToMonomialComparison.mem_hodge_of_mem_H22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "complex-linear comparison from explicit actual fourfold H1 tensor target to descent-side complexification",
+  "image of actual H22 lies in the descent Hodge subspace"
+]
+nonclaims = [
+  "comparison theorem only",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "identified actual fourfold pure tensor gives monomial-generator Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldMonomialGeneratorIdentification.assembled_mem_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "switch-character alignment",
+  "standard actual fourfold Hodge tensor rule",
+  "actual-to-descent comparison",
+  "assembled monomial generator identification"
+]
+nonclaims = [
+  "all Hodge membership after the comparison/identification inputs is local",
+  "does not assert scalar-conjugation naturality",
+  "does not assert algebraicity"
+]
+
+[[external_premise]]
+id = "cm-actual-fourfold-to-descent-hodge-comparison"
+result_family = 32
+evidence = "EXTERNAL_REALIZATION_COMPARISON"
+source = "comparison between actual fourfold cohomology tensor realization and descent-side complexified tensor model"
+labels = []
+statement_role = "supply a complex-linear comparison from the explicit nested actual H1 tensor product to the descent-side complexification and prove the actual H^(2,2) subspace maps into the descent Hodge subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldToMonomialComparison"
+status = "OPEN"
+nonclaims = [
+  "coefficient/change-of-realization bridge only",
+  "no algebraicity conclusion"
+]
+
+[[external_premise]]
+id = "cm-actual-fourfold-monomial-generator-identification"
+result_family = 32
+evidence = "EXTERNAL_REALIZATION_COMPARISON"
+source = "identification of switched monomial assembly with the explicit actual fourfold pure tensor"
+labels = []
+statement_role = "identify the descent-side assembled switched monomial generator with the image of the explicit actual fourfold pure tensor under the comparison map"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldMonomialGeneratorIdentification"
+status = "OPEN"
+nonclaims = [
+  "generator identification only",
+  "scalar-conjugation naturality remains separate"
+]
