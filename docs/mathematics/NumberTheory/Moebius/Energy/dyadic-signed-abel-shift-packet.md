@@ -82,8 +82,9 @@ It does not prove the bound.
 The complete all-position tree energy was disposed by #460/#462 because its
 singleton layer already has quadratic mass. PR #465 corrected that deterministic
 failure by retaining only one maximum per scale. It proves a valid finite
-majorant, but the resulting positive square source remains much stronger than
-the signed packet and discards cancellation between shifts and prefix depths.
+majorant. The resulting positive square source supplies a sufficient bound for
+the signed packet and discards cancellation between shifts and prefix depths;
+no converse from the signed-packet criterion is proved.
 
 The selected increment therefore exposes the exact Abel form **before** the two
 triangle inequalities used by the envelope route:
@@ -103,7 +104,7 @@ Three candidates were compared.
 | Candidate | Exact consumer | Strength | Formal distance | Disposition |
 |---|---|---|---:|---|
 | Exact signed Abel packet | inherited signed packet and RH consumer | exact equivalent representation | finite summation and endpoint identity only | selected |
-| Max-per-scale positive squares | canonical maximal-prefix supplier | stronger sufficient majorant; loses cross-shift signs | already implemented in PR #465 | retained as optional majorant |
+| Max-per-scale positive squares | canonical maximal-prefix supplier | sufficient majorant; loses cross-shift signs | already implemented in PR #465 | retained as optional majorant |
 | Normalized square or variation observable | would require a proved comparison into the signed packet | potentially random-model compatible | weights, normalization, and comparison theorem not yet fixed | deferred |
 
 The selected theorem is nearest to the terminal consumer and introduces no new
