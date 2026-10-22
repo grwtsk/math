@@ -1,0 +1,235 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-affine-chowla-629-v0.1"
+owner_repository = "grwtsk/math"
+issue = 629
+parent_issue = 625
+parent_pr = 626
+obstruction_issue = 623
+obstruction_pr = 624
+fixed_scope_issue = 571
+fixed_scope_pr = 573
+quantifier_witness_issue = 576
+quantifier_witness_pr = 578
+cross_shift_issue = 476
+normalized_response_issue = 499
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_SHIFT_AFFINE_REINDEX_SOURCE_DRAFT_GROWING_SHIFT_AFFINE_CHOWLA_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SignedResidueConvolutionShiftAffine"
+companion_module = "GRWTSK.NumberTheory.Moebius.SignedAffineChowlaConnections"
+build_target = "GRWTSK.NumberTheory.Moebius.SignedResidueConvolutionShiftAffine"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-signed-residue-convolution-625-20261021"
+stacked_parent_revision = "6f91233ddc4397f87eeef1e94e248e31c67e9929"
+stacked_parent_tree = "8717751b72239baff2fb782350493a2b110e477c"
+candidate_branch = "research/rh-signed-affine-chowla-629-20261021"
+shift_affine_source_commit = "d4623eda79d6e3a62aab5e3807949acf04f6b044"
+shift_affine_source_tree = "8394e610dbfb91fdfb2a40aa705b6a2d0e841f82"
+shift_affine_source_path = "GRWTSK/NumberTheory/Moebius/SignedResidueConvolutionShiftAffine.lean"
+shift_affine_source_git_blob = "1b34328f97cc3d099439909566fbf9f86a051af8"
+connection_source_commit = "b1a9f0405de681b1a67e360717c1d15bb7393c65"
+connection_source_tree = "80c59e6eccf09a2202413726657a2b46e2cf0922"
+connection_source_path = "GRWTSK/NumberTheory/Moebius/SignedAffineChowlaConnections.lean"
+connection_source_git_blob = "a9b3061d0134a844745cb87b5812b86c3a568f0c"
+mathematical_note_commit = "e474f4941f6b4c6fdd57b699821804933ad200d8"
+mathematical_note_tree = "e8603fcad86500e87bab0f121639a82c86420e11"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/signed-residue-convolution-shift-affine.md"
+mathematical_note_git_blob = "8b22c3683aaf55480d2ce0b2c264baddf4e2f821"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[shift_affine_reindex]
+positive_shift_set = "positiveEndpointShiftSet"
+base_support = "parityAffineShiftBaseSet"
+fixed_shift_pair_set = "endpointParityFixedShiftPairSet"
+pair_shift_spec = "endpointParityStrictPair_shift_spec"
+pair_shift_membership = "endpointParityStrictPair_shift_mem"
+half_shift_identity = "half_add_two_mul"
+residue_shift_identity = "parityResidueCoordinate_add_two_shift"
+affine_residue_coordinate = "parityAffineShiftResidueCoordinate"
+pair_to_affine_coordinate = "pairResidueCoordinate_eq_affineShift"
+pair_shift_correlation = "parityPairShiftResidueCorrelation"
+affine_shift_correlation = "parityAffineShiftResidueCorrelation"
+pair_affine_bijection = "parityPairShiftResidueCorrelation_eq_affine"
+bucket_pair_shift_decomposition = "paritySignedResidueConvolutionBucket_eq_sum_pairShifts"
+bucket_affine_shift_decomposition = "paritySignedResidueConvolutionBucket_eq_sum_affineShifts"
+proof_classification = "EXACT_FINITE_STRICT_PAIR_TO_POSITIVE_SHIFT_REINDEX"
+
+[affine_chowla_family]
+twist = "parityGrowingShiftAffineChowlaTwist"
+forms = ["u", "u+2h"]
+residue_phase = "2*floor(u/2)+h mod d^2"
+shift_positive = true
+square_modulus = true
+nonzero_frequency_aggregate = true
+parity_restriction = true
+endpoint_support = "u+2h<=b"
+orientation_factor = 2
+absolute_value_inside_correlation = false
+shift_residue_fourier_identity = "sum_shiftResidueCorrelation_mul_char"
+full_fourier_identity = "paritySignedResidueConvolutionFourier_eq_sum_affineChowlaTwists"
+
+[consumer_surfaces]
+frequency_majorant = "parityGrowingShiftAffineChowlaFrequencyMajorant"
+frequency_equality = "parityGrowingShiftAffineChowlaFrequencyMajorant_eq_signed"
+modulus_majorant = "parityGrowingShiftAffineChowlaNonzeroModulusMajorant"
+modulus_equality = "parityGrowingShiftAffineChowlaNonzeroModulusMajorant_eq_signed"
+endpoint_majorant = "parityGrowingShiftAffineChowlaEndpointMajorant"
+endpoint_equality = "parityGrowingShiftAffineChowlaEndpointMajorant_eq_signed"
+all_scale_supplier = "DyadicNaturalScaleGrowingShiftAffineChowlaBudget"
+supplier_equivalence = "dyadicNaturalScaleGrowingShiftAffineChowlaBudget_iff_signedResidueConvolution"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_growingShiftAffineChowla"
+source_identical_to_signed_residue_supplier = true
+analytic_supplier_constructed = false
+
+[connection_atlas]
+generic_adapter = "SignedAffineChowlaConnections.ToGrowingShiftAffineChowlaBudgetAdapter"
+generic_signed_lift = "SignedAffineChowlaConnections.liftSignedSquareDiagonalAdapter"
+generic_downstream = "SignedAffineChowlaConnections.naturalScaleCongruenceL1_of_affineAdapter"
+existing_square_modulus_large_sieve_lift = "SignedAffineChowlaConnections.liftSquareModulusLargeSieveSignedAdapter"
+existing_bdh_lift = "SignedAffineChowlaConnections.liftBarbanDavenportHalberstamSignedAdapter"
+existing_bv_eh_lift = "SignedAffineChowlaConnections.liftBombieriVinogradovElliottHalberstamSignedAdapter"
+existing_squarefree_ap_lift = "SignedAffineChowlaConnections.liftSquarefreeArithmeticProgressionSignedAdapter"
+existing_local_fourier_lift = "SignedAffineChowlaConnections.liftLocalFourierGowersSignedAdapter"
+existing_l_function_lift = "SignedAffineChowlaConnections.liftLFunctionSignedDispersionAdapter"
+existing_function_field_lift = "SignedAffineChowlaConnections.liftFunctionFieldSignedDispersionAdapter"
+
+[[connection_families]]
+name = "FIXED_FORM_BINARY_CHOWLA"
+data = "SignedAffineChowlaConnections.FixedFormBinaryChowlaGrowingAffineData"
+source = "SignedAffineChowlaConnections.FixedFormBinaryChowlaGrowingAffineSource"
+adapter = "SignedAffineChowlaConnections.FixedFormBinaryChowlaGrowingAffineAdapter"
+status = "RECENTLY_CLOSED_FIXED_SCOPE_GROWING_FAMILY_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "CORRECTED_ELLIOTT"
+data = "SignedAffineChowlaConnections.CorrectedElliottGrowingAffineData"
+source = "SignedAffineChowlaConnections.CorrectedElliottGrowingAffineSource"
+adapter = "SignedAffineChowlaConnections.CorrectedElliottGrowingAffineAdapter"
+status = "RECENTLY_CLOSED_FIXED_SCOPE_GROWING_FAMILY_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "LOG_AVERAGED_BINARY_CHOWLA"
+data = "SignedAffineChowlaConnections.LogAveragedBinaryChowlaGrowingAffineData"
+source = "SignedAffineChowlaConnections.LogAveragedBinaryChowlaGrowingAffineSource"
+adapter = "SignedAffineChowlaConnections.LogAveragedBinaryChowlaGrowingAffineAdapter"
+status = "CLOSED_LOG_AVERAGED_FIXED_SCOPE_ORDINARY_GROWING_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "MOBIUS_NILSEQUENCE_SARNAK"
+data = "SignedAffineChowlaConnections.MobiusNilsequenceGrowingAffineData"
+source = "SignedAffineChowlaConnections.MobiusNilsequenceGrowingAffineSource"
+adapter = "SignedAffineChowlaConnections.MobiusNilsequenceGrowingAffineAdapter"
+status = "CLOSED_ONE_POINT_STRUCTURED_PHASE_BINARY_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "REPOSITORY_CROSS_SHIFT_DISPERSION_476"
+data = "SignedAffineChowlaConnections.RepositoryCrossShiftDispersionData"
+source = "SignedAffineChowlaConnections.RepositoryCrossShiftDispersionSource"
+adapter = "SignedAffineChowlaConnections.RepositoryCrossShiftDispersionAdapter"
+status = "SOURCE_DRAFT_SOURCE_IDENTIFICATION_AND_NORMALIZATION_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "REPOSITORY_NORMALIZED_ABEL_RESPONSE_499"
+data = "SignedAffineChowlaConnections.RepositoryNormalizedAbelResponseData"
+source = "SignedAffineChowlaConnections.RepositoryNormalizedAbelResponseSource"
+adapter = "SignedAffineChowlaConnections.RepositoryNormalizedAbelResponseAdapter"
+status = "SOURCE_DRAFT_ONE_BOUNDEDNESS_NOT_CANCELLATION"
+
+[hostile_boundaries]
+fixed_to_growing = "SignedAffineChowlaConnections.FixedFormToGrowingAffineAdapter"
+logarithmic_to_ordinary = "SignedAffineChowlaConnections.LogarithmicToOrdinaryAffineAdapter"
+one_point_to_signed_binary = "SignedAffineChowlaConnections.OnePointToSignedBinaryAffineAdapter"
+averaged_to_exact_endpoint = "SignedAffineChowlaConnections.AveragedToExactAffineEndpointAdapter"
+abel_response_to_affine = "SignedAffineChowlaConnections.AbelResponseToAffineChowlaAdapter"
+
+[scope_controls]
+strict_pairs_preserved = true
+positive_shift_preserved = true
+both_parities_preserved = true
+endpoint_support_preserved = true
+square_modulus_preserved = true
+nonzero_frequency_range_preserved = true
+orientation_factor_preserved = true
+absolute_value_inside_shift_correlation_rejected = true
+fixed_constants_not_promoted_to_growing_family = true
+log_average_not_promoted_to_ordinary = true
+one_point_not_promoted_to_binary = true
+average_not_promoted_to_exact_endpoint = true
+one_boundedness_not_promoted_to_cancellation = true
+
+[evidence_states]
+source_draft = true
+shift_affine_reindex_source_draft = true
+exact_pair_to_shift_support_scripted = true
+exact_affine_residue_coordinate_scripted = true
+exact_signed_bucket_shift_decomposition_scripted = true
+exact_affine_chowla_fourier_identity_scripted = true
+exact_consumer_surface_equivalence_scripted = true
+connection_atlas_source_draft = true
+growing_shift_affine_chowla_estimate_proved = false
+pointwise_mertens_envelope_proved = false
+named_adapter_constructed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SignedResidueConvolutionShiftAffine"
+definition_count = 11
+theorem_script_count = 15
+authored_declaration_count = 26
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SignedAffineChowlaConnections"
+structure_count = 12
+definition_and_lift_count = 20
+theorem_script_count = 1
+authored_declaration_count = 33
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ParitySignedResidueConvolution.lean"
+git_blob = "e7c8d45eec00682311d43c66b99e32f6e4943bf8"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_626"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ParityResidueVarianceObstructionConnections.lean"
+git_blob = "64c5fb2fb9a9fde9d4281b1b493829120ae3213c"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_624"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SquareModulusAPConjectureJunction.lean"
+git_blob = "a5028ac5f7fc38f6330a0c26d63f38dcc0e73b93"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_573"
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_growing_shift_affine_chowla_budget = true
+prove_pointwise_mertens_envelope = true
+construct_fixed_form_to_growing_adapter = true
+construct_corrected_elliott_adapter = true
+construct_logarithmic_to_ordinary_adapter = true
+construct_one_point_to_signed_binary_adapter = true
+construct_repository_cross_shift_adapter = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+growing_shift_affine_chowla_bound_proved = false
+fixed_form_chowla_adapter_proved = false
+corrected_elliott_adapter_proved = false
+log_chowla_adapter_proved = false
+nilsequence_adapter_proved = false
+large_sieve_adapter_proved = false
+l_function_adapter_proved = false
+pointwise_mertens_envelope_proved = false
+riemann_hypothesis_proved = false
