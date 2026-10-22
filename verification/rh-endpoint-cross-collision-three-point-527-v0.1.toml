@@ -1,0 +1,186 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-endpoint-cross-collision-three-point-527-v0.1"
+owner_repository = "grwtsk/math"
+issue = 527
+parent_issue = 522
+parent_pr = 524
+collision_issue = 512
+collision_pr = 515
+endpoint_fibre_issue = 505
+endpoint_fibre_pr = 510
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_THREE_POINT_CROSS_COLLISION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionThreePointProgression"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionThreePointProgression"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-diagonal-cancellation-witness-522-20261021"
+stacked_parent_revision = "32b3cd741855928c410065686a18f2de20ecb87e"
+stacked_parent_tree = "bd50545929590c79db0ffca1e78d241de4f95361"
+candidate_branch = "research/rh-three-point-cross-collision-527-20261021"
+theorem_source_commit = "60ea3fd81219848bfc1611ed3946fb742caf70dc"
+theorem_source_tree = "f53df3a21d6fdaaad9a7fb1aaa3f127ccb5f2a7d"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionThreePointProgression.lean"
+theorem_source_git_blob = "081b77c12e49151668386e7364e9df745d6a5838"
+mathematical_note_commit = "29195c49ae0b7c4f52ce88c772404b50ec59af96"
+mathematical_note_tree = "673d80a4e8f7f16f2fdff4044cda0d23a435e313"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/endpoint-cross-collision-three-point-progression.md"
+mathematical_note_git_blob = "a38274fff8473d61d07bd59debdfc96ad8fa4138"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+progression_term = "mertensThreePointProgressionTerm"
+base_set = "mertensEndpointCrossCollisionBaseSet"
+forward_reindex = "sum_mertensEndpointForwardCross_eq_progression"
+backward_reindex = "sum_mertensEndpointBackwardCross_eq_progression"
+endpoint_progression_energy = "mertensEndpointCrossCollisionProgressionEnergy"
+endpoint_identity = "mertensEndpointFibreCrossCollisionEnergy_eq_progression"
+weighted_progression_energy = "weightedMertensEndpointCrossCollisionProgressionEnergy"
+weighted_identity = "weightedMertensEndpointCrossCollisionEnergy_eq_progression"
+all_scale_adapter_surface = "SubpolynomialWeightedMertensEndpointCrossCollisionProgression"
+proof_classification = "EXACT_FINITE_COLLISION_REINDEXING"
+next_obstruction = "estimate or further sieve the squarefree-midpoint three-point progression family"
+
+[progression_geometry]
+endpoint = "b"
+prefix_length = "n"
+shift = "h=b-n"
+positive_shift = "n<b"
+forward_collision = "c=a+h"
+backward_collision = "a=c+h"
+common_term = "mu(a+1)*mu(a+1+h)^2*mu(a+1+h+h)"
+base_support = "a<n-h"
+base_finset = "range(n-(b-n))"
+orientations = 2
+factor_two_preserved = true
+
+[interpretation]
+x_coordinate = "x=a+1"
+term = "mu(x)*mu(x+h)^2*mu(x+2h)"
+midpoint_square_retained = true
+midpoint_interpretation = "squarefree indicator at mathematical scope"
+generic_four_distinct = false
+binary_chowla_directly = false
+three_affine_function_family = true
+signed = true
+
+[weighted_observable]
+name = "weightedMertensEndpointCrossCollisionProgressionEnergy"
+outer_endpoint_range = "Finset.Ico (2^j) (2^(j+1))"
+outer_weight = "4*(1/b-1/(b+1))"
+endpoint_inner_factor = "2"
+exactly_equal_to_parent_cross_collision = true
+estimate_proved = false
+
+[adapter_surface]
+name = "SubpolynomialWeightedMertensEndpointCrossCollisionProgression"
+formula = "forall delta>0 exists C>=0 forall j, weightedCrossProgression(j) <= C*(2^j)^delta"
+inhabited = false
+sufficient_for_full_endpoint_supplier_alone = false
+requires_diagonal_and_four_distinct_control_for_full_route = true
+
+[possible_future_adapters]
+family_uniform_corrected_elliott = "mu, mu^2, mu on x,x+h,x+2h"
+squarefree_sieved_binary_correlation = true
+midpoint_divisor_expansion = "mu(m)^2 = sum_(d^2|m) mu(d)"
+dispersion_fourier = true
+constructed = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+three_point_cross_collision_estimate_proved = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_source_text_as_kernel_evidence = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionThreePointProgression"
+authored_declaration_count = 9
+definition_count = 5
+theorem_script_count = 4
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointFibreDiagonalCancellationWitness.lean"
+git_blob = "51148b7b4b771118a69ae457186326455d27aca0"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_524"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointFibreFourMobiusCollisions.lean"
+git_blob = "d00548509820a19147fe00b9a8fe514daaffc275"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_515"
+
+[statement_controls]
+both_orientations_retained = true
+factor_two_retained = true
+midpoint_square_retained = true
+sign_retained = true
+finite_support_exact = true
+positive_shift_exact = true
+four_distinct_not_merged = true
+absolute_value_not_inserted = true
+
+[hostile_controls]
+midpoint_square_not_dropped = true
+midpoint_density_not_substituted = true
+forward_orientation_not_dropped = true
+backward_orientation_not_dropped = true
+absolute_value_not_inserted = true
+multiplicativity_not_promoted_to_cancellation = true
+fixed_shift_result_not_promoted_to_growing_family = true
+source_elaboration_not_promoted_to_arithmetic_estimate = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+three_point_progression_estimate = true
+squarefree_midpoint_sieve_adapter = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+independent_review = false
+cross_collision_bound_proved = false
+four_distinct_bound_proved = false
+endpoint_fibre_supplier_proved = false
+chowla_proved = false
+elliott_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "mertensThreePointProgressionTerm",
+  "mertensEndpointCrossCollisionBaseSet",
+  "sum_mertensEndpointForwardCross_eq_progression",
+  "sum_mertensEndpointBackwardCross_eq_progression",
+  "mertensEndpointCrossCollisionProgressionEnergy",
+  "mertensEndpointFibreCrossCollisionEnergy_eq_progression",
+  "weightedMertensEndpointCrossCollisionProgressionEnergy",
+  "weightedMertensEndpointCrossCollisionEnergy_eq_progression",
+  "SubpolynomialWeightedMertensEndpointCrossCollisionProgression"
+]
