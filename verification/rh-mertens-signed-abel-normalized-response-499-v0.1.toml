@@ -1,3 +1,6 @@
+# Historical original target Git blob: 4c57c46e7486a319c63a2e41872367d0034487fd.
+# Historical original parent: 746c9700cf364434e29d9483db1ef1db1f116440; tree 787dd927550299866c3e8b0da42bf95bbd44ec0d.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-mertens-signed-abel-normalized-response-499-v0.1"
 owner_repository = "grwtsk/math"
@@ -11,11 +14,57 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-stacked_parent_revision = "746c9700cf364434e29d9483db1ef1db1f116440"
-candidate_branch = "research/rh-signed-abel-normalized-response-499-20261021"
-theorem_source_commit = "b50ff9acec1f7ff8c76a57429fb5c8dc257a1d7a"
+stacked_parent_revision = "386562f0a08711ad75ca423e1605f276b9512200"
+stacked_parent_tree = "3c3888d2abce5db24cd8c888421e4621059a290c"
+historical_candidate_branch = "research/rh-signed-abel-normalized-response-499-20261021"
+historical_theorem_source_commit = "b50ff9acec1f7ff8c76a57429fb5c8dc257a1d7a"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelNormalizedResponse.lean"
-theorem_source_git_blob = "57f3000e2af6a0c3a2732ef0f2cf10737a3d23ff"
+historical_theorem_source_git_blob = "57f3000e2af6a0c3a2732ef0f2cf10737a3d23ff"
+theorem_source_git_blob = "ca3ab1eaf3a3a2b4806bd86eda07c503546571cc"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "1b0b156c1dd2252899dbad38b66df4f785e0891c"
+historical_mathematical_note_commit = "fe1bdd797fb6d4128c7e0a205f6e8ef2e4b9b64b"
+historical_mathematical_note_tree = "fef2e26c60d3a0964e224ca7b78c66f65f29fc22"
+historical_mathematical_note_git_blob = "d2997b8505920a42216b530a4221cff34569a6fa"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mertens-signed-abel-normalized-response.md"
+mathematical_note_git_blob = "7b390e80f59efd8298d747ba37384e8d9a132c01"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBilinear.lean"
+git_blob = "023199f49360f4c65d05cdd05ff10d90cb8ff914"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
+
+[declaration_inventory]
+names = [
+  "signedAbelDepthShiftWeightMass",
+  "signedAbelDepthShiftWeightMass_eq_initialWeight",
+  "signedAbelDepthShiftWeightMass_le_right_inv",
+  "signedAbelDepthShiftResponse_eq_range",
+  "abs_signedAbelDepthShiftResponse_le_two_mul_right_inv",
+  "normalizedSignedAbelDepthShiftResponse",
+  "abs_normalizedSignedAbelDepthShiftResponse_le_one",
+  "signedAbelDepthShiftResponse_eq_normalized",
+  "weightedMertensDyadicSignedAbelDepthSlice_eq_normalizedCorrelation"
+]
 
 [selected_increment]
 mass_identity = "signedAbelDepthShiftWeightMass_eq_initialWeight"
