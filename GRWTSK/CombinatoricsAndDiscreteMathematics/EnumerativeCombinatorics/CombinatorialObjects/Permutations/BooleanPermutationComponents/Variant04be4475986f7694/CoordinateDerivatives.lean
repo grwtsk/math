@@ -94,7 +94,11 @@ theorem hammingWeight_coordinatePermutation {n : Nat}
   unfold hammingWeight
   apply Finset.card_equiv π.symm
   intro j
-  simp
+  constructor
+  · intro h
+    exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, (Finset.mem_filter.mp h).2⟩
+  · intro h
+    exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, (Finset.mem_filter.mp h).2⟩
 
 /-- A coordinate permutation has the deterministic derivative `π(δ)`. -/
 theorem coordinatePermutation_derivative {n : Nat}
