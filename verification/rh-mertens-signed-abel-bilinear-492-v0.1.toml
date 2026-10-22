@@ -1,3 +1,6 @@
+# Historical original target Git blob: 71c659dc6422d71b245ac8ad4393e4be26989e6c.
+# Historical original parent: 2b1c075808b2365ede62f909014b5b83b30ddabf; tree bd50bbdb612b6abc1d7acc45007803f5422d1cf7.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-mertens-signed-abel-bilinear-492-v0.1"
 owner_repository = "grwtsk/math"
@@ -11,11 +14,56 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-stacked_parent_revision = "2b1c075808b2365ede62f909014b5b83b30ddabf"
-candidate_branch = "research/rh-signed-abel-bilinear-492-20261021"
-theorem_source_commit = "cc2607a4e5e9862bccd746d80fa3b53530720b29"
+stacked_parent_revision = "b76846024d25b3fdd0cbb6096c6099b888d8184d"
+stacked_parent_tree = "abd3be4daf6a97569685be90c86dfa05296fd7de"
+historical_candidate_branch = "research/rh-signed-abel-bilinear-492-20261021"
+historical_theorem_source_commit = "cc2607a4e5e9862bccd746d80fa3b53530720b29"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBilinear.lean"
-theorem_source_git_blob = "061d38a9ae640e3f69ac5dd630c3c10cfaad0c5b"
+historical_theorem_source_git_blob = "061d38a9ae640e3f69ac5dd630c3c10cfaad0c5b"
+theorem_source_git_blob = "023199f49360f4c65d05cdd05ff10d90cb8ff914"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "f248951b3587253bc922f8cfdf1aad0aef7a8339"
+historical_mathematical_note_commit = "a115e9b9ff9622883c7bbc676df9fcf879e404bc"
+historical_mathematical_note_tree = "17db7e14ebb9055cfadfb46820dea3ec33fdfcd4"
+historical_mathematical_note_git_blob = "21b2f91e2afa4976773457b030215a600a2dfa94"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mertens-signed-abel-bilinear.md"
+mathematical_note_git_blob = "a8ec0875ca2223b7044240af65840d87bc57f0e6"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthDispersion.lean"
+git_blob = "f5cf7fa855bbebbbdc7411add123116963693f80"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
+
+[declaration_inventory]
+names = [
+  "signedAbelDepthShiftResponse",
+  "mertensTwoPointPrefix_eq_baseSum",
+  "weightedMertensDyadicSignedAbelDepthSlice_eq_baseBilinear",
+  "mertensSignedAbelDepthBilinearModel",
+  "mertensSignedAbelDepthBilinearModel_structuredPacket_eq_depthPacket",
+  "SubpolynomialMertensSignedAbelBilinearEstimate",
+  "subpolynomialDyadicSignedAbelDepthPacket_of_mertensBilinear",
+  "riemannHypothesis_of_mertensSignedAbelBilinearEstimate"
+]
 
 [selected_increment]
 response = "signedAbelDepthShiftResponse"
