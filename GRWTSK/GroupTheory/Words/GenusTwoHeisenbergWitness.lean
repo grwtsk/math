@@ -67,7 +67,7 @@ hypothesis required by the PresentedGroup universal property; it is
 not inferred from an unverified name or numerical trace. -/
 theorem heisenbergLetter_respects_relator :
     (FreeGroup.lift heisenbergLetter) genusTwoRelator = 1 := by
-  dsimp [genusTwoRelator]
+  unfold genusTwoRelator
   rw [map_mul, map_wordCommutator, map_wordCommutator]
   simp only [FreeGroup.lift_apply_of]
   simpa [heisenbergLetter] using
