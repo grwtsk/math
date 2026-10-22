@@ -985,6 +985,27 @@ theorem CMGaloisIntermediateField.factorTensorInclusion_tmul
       (a.1 : AlgebraicNumbers) ⊗ₜ[ℚ] (x.1 : AlgebraicNumbers) := by
   simp [CMGaloisIntermediateField.factorTensorInclusion]
 
+/-- Inclusion of a finite Galois CM factor tensor commutes with absolute
+scalar conjugation. -/
+theorem CMGaloisIntermediateField.factorTensorInclusion_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers)
+    (t : E.carrier ⊗[ℚ] E.carrier) :
+    E.factorTensorInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          (σ.restrictNormal E.carrier) t) =
+      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ (E.factorTensorInclusion t) := by
+  induction t with
+  | tmul a x =>
+      simp [
+        CMGaloisIntermediateField.factorTensorInclusion,
+        GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul,
+        AlgEquiv.restrictNormal_commutes
+      ]
+  | add x y hx hy =>
+      simp [hx, hy]
+
 /-- Four canonical embedding-line factors supported on one finite Galois CM
 intermediate field. -/
 structure CMFourFactorSupport
@@ -1016,6 +1037,22 @@ def CMFourFactorSupport.scalarTransportLocal
   fun r =>
     GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
       (σ.restrictNormal S.E.carrier) (S.localVector r)
+
+/-- Global scalar transport of each supported factor is the inclusion of
+the corresponding local scalar transport in the same CM carrier. -/
+theorem CMFourFactorSupport.scalarTransportLocal_inclusion
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ) (E := AlgebraicNumbers)}
+    (S : CMFourFactorSupport factors)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers)
+    (r : Fin 4) :
+    S.E.factorTensorInclusion (S.scalarTransportLocal σ r) =
+      (factors.scalarTransport σ).vector r := by
+  rw [CMFourFactorSupport.scalarTransportLocal,
+    S.E.factorTensorInclusion_scalarConjugate,
+    S.vector_inclusion]
+  rfl
 
 /-- A switched tensor supported on one finite Galois CM intermediate field. -/
 structure CMFiniteGaloisTensorCarrier
