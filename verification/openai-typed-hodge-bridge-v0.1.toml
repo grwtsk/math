@@ -1812,13 +1812,13 @@ nonclaims = [
 ]
 
 [[external_premise]]
-id = "cm-canonical-tensor-to-actual-h1-coordinate-comparison"
+id = "cm-weight-one-realization-rational-inclusion-compatibility"
 result_family = 32
 evidence = "EXTERNAL_CLASSICAL_OR_REALIZATION"
 source = "weight-one CM realization comparison"
 labels = []
-statement_role = "supply a Q-linear map from E tensor_Q E to actual complexified H1 whose coordinates satisfy the explicit pure-tensor formula baseEmbedding(a) * fieldCoordinates(x); full tensor compatibility then follows locally by tensor induction"
-local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.CanonicalTensorActualH1Comparison"
+statement_role = "as part of WeightOneCMRealization, supply the rational inclusion H1 -> H1_C and prove its coordinates agree with the h1Equiv field coordinates; the tensor-level comparison is then constructed locally by the tensor universal property"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.h1ToComplex_coordinates"
 status = "OPEN"
 nonclaims = [
   "no Hodge-type theorem is postulated beyond coordinate compatibility",
@@ -1845,3 +1845,29 @@ name = "pure-tensor comparison supplies canonical tensor to actual H1 comparison
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.PureTensorActualH1Comparison.toCanonicalComparison"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "weight-one realization canonically builds tensor-to-H1 comparison"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.canonicalTensorActualH1Comparison"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "rational H1 equivalence with E",
+  "rational inclusion H1 -> H1_C",
+  "coordinate compatibility of that rational inclusion"
+]
+nonclaims = [
+  "comparison is local once WeightOneCMRealization exists",
+  "RiemannExistenceSupplier remains external",
+  "no four-factor algebraicity conclusion"
+]
+
+[[local_target]]
+name = "canonical tensor map constructed by tensor universal property"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.canonicalTensorToActual"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "standard scalar-extension construction only"
+]
