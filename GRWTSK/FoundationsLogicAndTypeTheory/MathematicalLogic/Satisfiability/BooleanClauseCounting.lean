@@ -2,7 +2,6 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI ChatGPT.
 Mathlib results retain upstream authorship and Apache-2.0 license. -/
 import Mathlib.Data.Fintype.Card
-import Mathlib.Data.Fintype.Function
 import Mathlib.Tactic
 
 set_option autoImplicit false
