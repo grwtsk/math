@@ -3,7 +3,7 @@ Uses Mathlib finite sets, logarithms and real powers (Apache-2.0).
 OpenAI Codex formalization assistance. Finite exceptional sets at every
 positive epsilon are equivalent to the frozen target; no finiteness is asserted. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms
-import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetOptimization
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetCounting
 import Mathlib.Algebra.Order.Archimedean.Real.Basic
 
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
@@ -11,6 +11,19 @@ namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
 /-- Exceptional triples for the coefficient-one bound at the specified epsilon. -/
 def exceptionalSet (ε : ℝ) : Set PrimitiveAdditiveTriple :=
   {t | Real.rpow (t.radical : ℝ) (1 + ε) < (t.c : ℝ)}
+
+/-- For positive `ε`, the coefficient-one exceptional set is exactly the
+paper-normalized exponent-exceptional set at `lam = (1 + ε)⁻¹`. -/
+theorem exceptionalSet_eq_exponentExceptionalSet (ε : ℝ) (hε : 0 < ε) :
+    exceptionalSet ε = exponentExceptionalSet ((1 + ε)⁻¹) := by
+  ext t
+  have hlam : 0 < (1 + ε)⁻¹ := inv_pos.mpr (by linarith)
+  change
+    Real.rpow (t.radical : ℝ) (1 + ε) < (t.c : ℝ) ↔
+      (t.radical : ℝ) < Real.rpow (t.c : ℝ) ((1 + ε)⁻¹)
+  rw [t.power_lt_height_iff_quality ε,
+    t.radical_lt_height_rpow_iff_quality ((1 + ε)⁻¹) hlam,
+    inv_inv]
 
 /-- The coefficient-one bound has only finitely many exceptions for every
 positive epsilon. The quantifier over epsilon is indispensable. -/
