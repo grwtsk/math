@@ -64,8 +64,8 @@ theorem weightedMertensDyadicSignedAbelDepthSlice_eq_baseBilinear
       have hhY := (Finset.mem_Ico.mp hh).2
       rw [mertensTwoPointPrefix_eq_baseSum]
       by_cases ht : t < 2 ^ (j + 1) - h - 1
-      · simp [hh1, hhY, ht, Finset.sum_mul]
-        rw [Finset.mul_sum]
+      · simp [hh1, hhY, ht]
+        rw [Finset.mul_sum, Finset.sum_mul]
         apply Finset.sum_congr rfl
         intro a _ha
         ring
@@ -82,8 +82,7 @@ theorem weightedMertensDyadicSignedAbelDepthSlice_eq_baseBilinear
         moebiusReal (a + 1) * signedAbelDepthShiftResponse j t a := by
       apply Finset.sum_congr rfl
       intro a _ha
-      rw [Finset.mul_sum]
-      rfl
+      simp only [signedAbelDepthShiftResponse, Finset.mul_sum]
 
 /-- The exact source-specific bilinear model.  The residual is identically zero
 because the factorization is an equality. -/
