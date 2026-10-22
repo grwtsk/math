@@ -194,3 +194,56 @@ upstream_obligations = [
   "identification of Newton number with slope times dimension",
   "slope zero or one"
 ]
+
+
+[[external_premise]]
+id = "cm-weight-one-realization"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types", "eq:cm-label-conjugation"]
+statement_role = "construct U(v), polarize it, realize U(v)=H^1(B(v),Q), and track scalar conjugation of embedding-line labels"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.EmbeddingLineRealization"
+status = "OPEN"
+nonclaims = ["local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
+
+[[external_premise]]
+id = "cm-four-factor-switch-algebraicity"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["thm:switch", "eq:switch-line", "eq:switch-conjugate-balance"]
+statement_role = "algebraicity of the balanced four-factor line"
+local_consumer = "grwtsk/math#176/#178/#183"
+status = "OPEN"
+nonclaims = ["four-label balance alone is not algebraicity"]
+
+[[external_premise]]
+id = "filtered-hecke-summands"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+labels = ["lem:filtered-hecke-summands"]
+statement_role = "filtration-preserving Frobenius-commuting projector and complement inherit Hodge/Newton equality from weak admissibility"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities"
+status = "OPEN"
+
+[[external_premise]]
+id = "active-hodge-types"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+labels = ["prop:active-hodge-types", "eq:active-hodge-slope"]
+statement_role = "pure slope zero or one on the generalized Hecke summand gives pure degree-one Hodge type"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope.pureType_of_zero_or_one_slope"
+status = "OPEN"
+
+[[external_premise]]
+id = "cm-sign-to-hodge-type"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+labels = ["eq:cm-sign-to-hodge-type"]
+statement_role = "identify scalar-conjugate active Hecke-space Hodge type with the prescribed odd CM sign"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines"
+status = "OPEN"
