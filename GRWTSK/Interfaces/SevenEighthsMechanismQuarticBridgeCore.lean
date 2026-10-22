@@ -22,6 +22,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftedVonMangoldtPackingCont
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftSymmetricPackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticChannelPackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticFactorizationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftCoefficientDecayControls
 
 set_option autoImplicit false
 
