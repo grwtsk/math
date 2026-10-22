@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-unit-support-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "92eb271918e0c8f225c36d8dbda688cd699e8e1f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / UNIT_CHANGE_SUPPORT_DEFINED / UNIT_L1_EQUALS_SUPPORT_CARD_SOURCE_WRITTEN / UNIT_BOUND_REDUCED_TO_CARD_LE_TWO / TWO_BOUNDARY_SUPPORT_CARD_OPEN"
+
+[closed]
+unit_change_support_defined = true
+unit_L1_equals_support_cardinality = true
+unit_bound_reduced_to_card_two = true
+translation_cardinality_from_card_two = true
+
+[frontier]
+remaining = "CyclicSharpUnitBoundarySupportCardClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+UNIT_L1_EQUALS_SUPPORT_CARD_SOURCE_WRITTEN = true
+TWO_BOUNDARY_SUPPORT_CARD_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
