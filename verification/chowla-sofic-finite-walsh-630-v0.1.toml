@@ -9,9 +9,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lake_manifest_file = "lake-manifest.json"
 
 [scope]
-kind = "isolated-six-module-target"
-module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle"
-source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean"
+kind = "isolated-seven-module-target"
+module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary"
+source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean"
 required_modules = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
@@ -19,6 +19,7 @@ required_modules = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshTotalVariation",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary",
 ]
 required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
@@ -27,8 +28,9 @@ required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshTotalVariation.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean",
 ]
-require_exact_six_module_dependency = true
+require_exact_seven_module_dependency = true
 allow_only_selected_module_build = true
 mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
 requires_clean_checkout = true
@@ -68,6 +70,10 @@ expected = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariationFromUniform",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalTotalVariation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicMaxOffset",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinaryShiftWord",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicShiftWord",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar",
 ]
 
 [theorems]
@@ -117,8 +123,14 @@ required = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_change",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.uniformTV_le_boundaryTV_add_sourceTV",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.finiteWalshBoundary_return",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.offset_le_cyclicMaxOffset",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar_subset_range",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar_card",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinary_eq_cyclic_off_collar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empty_offsets_zero_collar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWalshTV_bound",
 ]
-exact_count = 45
+exact_count = 51
 requires_exact_types = true
 requires_full_axiom_inspection = true
 
@@ -213,8 +225,32 @@ id = "triangle-is-not-sofic-limit"
 must_preserve = "Finite triangle and labeled boundary bounds do not construct a cyclic sample or sofic limit. The r/N specialization requires a separate index/boundary theorem."
 
 [[hostile_controls]]
+id = "modulo-zero-rejected-by-consumer"
+must_preserve = "The finite cyclic return requires r<N, hence N>0; the standalone modular window definition must not be claimed a probability law at N=0."
+
+[[hostile_controls]]
+id = "exact-last-r-roots"
+must_preserve = "The exceptional collar is Ico (N-r) N, not an arbitrary boundary label; its exact cardinal is r only under r<=N."
+
+[[hostile_controls]]
+id = "no-wrap-for-every-coordinate"
+must_preserve = "For each good root n<N-r and every h in the finite offset set, n+h<N and modulo N is the identity. All Boolean source labels, not just averages, agree."
+
+[[hostile_controls]]
+id = "empty-offset-cycle"
+must_preserve = "The empty offset finset has supremum zero and an empty collar; a zero-dimensional Boolean word does not incur a fabricated wrap error."
+
+[[hostile_controls]]
+id = "shift-identity-and-duplicates"
+must_preserve = "The finite set of offsets is the coordinate type. Duplicate input shifts are collapsed by Finset; a multiset or indexed family with repeats needs another adapter."
+
+[[hostile_controls]]
+id = "cyclic-source-not-arithmetic-cancellation"
+must_preserve = "The cyclic model theorem transports ONLY the finite source energy and r/N error; it supplies neither higher-order Chowla estimates nor an infinite sofic action."
+
+[[hostile_controls]]
 id = "no-probabilistic-upgrade"
-must_preserve = "The exact chi-square, rational squared-TV, real sqrt-TV, categorical boundary-TV and composite TV triangle are SOURCE_DRAFT only, not elaborated or kernel-audited. Shannon entropy, cyclic-source indexing, and any arithmetic cancellation supplier remain open."
+must_preserve = "All seven finite module layers including the exact cyclic root-collar r/N specialization are SOURCE_DRAFT only, not elaborated or kernel-audited. Shannon entropy, arbitrary-index finite-subtype transport, and any arithmetic cancellation supplier remain open."
 [[hostile_controls]]
 id = "no-spectral-upgrade"
 must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
@@ -241,7 +277,7 @@ claims = [
   "Liouville distribution limits",
   "growing-window uniform correlation energy",
   "sofic action existence or spectral convergence",
-  "cyclic r/N boundary specialization already formalized",
+  "cyclic r/N boundary specialization already kernel checked",
   "Parseval or chi-square identity already kernel-checked in Lean",
   "total-variation bounds already kernel-audited or externally replayed",
   "Shannon entropy inequality already proved in Lean",
