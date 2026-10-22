@@ -70,6 +70,32 @@ structure CharacterEigenlineRealization
   typeAt : G → WeightOneHodgeType
   typeAt_eq : ∀ g, typeAt g = typeOfSign (v.value g)
 
+/-- A complete internal decomposition by the selected character eigenspaces.
+
+This is the precise linear-algebra shape of the manuscript's embedding-line
+decomposition after scalar extension. It still does not construct the algebra
+action from a CM field or prove scalar-conjugation transport. -/
+structure CharacterEigenspaceDecomposition
+    (A C V G : Type*)
+    [CommRing A] [Field C] [AddCommGroup V] [Module C V]
+    [FiniteDimensional C V]
+    (conj : G → G)
+    (v : OddSignRow G conj)
+    extends CharacterEigenlineRealization A C V G conj v where
+  decomposition :
+    DirectSum.IsInternal
+      (fun g => characterEigenspace action (character g))
+
+/-- Forget completeness and retain the selected eigenline family. -/
+def CharacterEigenspaceDecomposition.toEigenlineRealization
+    {A C V G : Type*}
+    [CommRing A] [Field C] [AddCommGroup V] [Module C V]
+    [FiniteDimensional C V]
+    {conj : G → G} {v : OddSignRow G conj}
+    (R : CharacterEigenspaceDecomposition A C V G conj v) :
+    CharacterEigenlineRealization A C V G conj v :=
+  R.toCharacterEigenlineRealization
+
 /-- Forget the algebra action but retain the genuine one-dimensional linear
 eigenspaces and their type labels. -/
 def CharacterEigenlineRealization.toLinearEmbeddingLineRealization
@@ -128,6 +154,57 @@ theorem characterEigenlines_fourFactor_bidegree_two_two
     R₂.toLinearEmbeddingLineRealization
     R₃.toLinearEmbeddingLineRealization
     R₄.toLinearEmbeddingLineRealization
+    hbal
+
+
+/-- Complete eigenspace decompositions retain the same four-factor bidegree
+conclusion after forgetting only the global decomposition certificate. -/
+theorem characterEigenspaceDecompositions_fourFactor_bidegree_two_two
+    {A₁ A₂ A₃ A₄ C V₁ V₂ V₃ V₄ G : Type*}
+    [CommRing A₁] [CommRing A₂] [CommRing A₃] [CommRing A₄]
+    [Field C]
+    [AddCommGroup V₁] [Module C V₁] [FiniteDimensional C V₁]
+    [AddCommGroup V₂] [Module C V₂] [FiniteDimensional C V₂]
+    [AddCommGroup V₃] [Module C V₃] [FiniteDimensional C V₃]
+    [AddCommGroup V₄] [Module C V₄] [FiniteDimensional C V₄]
+    {conj : G → G}
+    (v₁ v₂ v₃ v₄ : OddSignRow G conj)
+    (R₁ : CharacterEigenspaceDecomposition A₁ C V₁ G conj v₁)
+    (R₂ : CharacterEigenspaceDecomposition A₂ C V₂ G conj v₂)
+    (R₃ : CharacterEigenspaceDecomposition A₃ C V₃ G conj v₃)
+    (R₄ : CharacterEigenspaceDecomposition A₄ C V₄ G conj v₄)
+    (hbal : FourBalance v₁ v₂ v₃ v₄) :
+    ∀ g,
+      (pIndex
+          ((R₁.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt g) +
+        pIndex
+          ((R₂.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt g) +
+        pIndex
+          ((R₃.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt (conj g)) +
+        pIndex
+          ((R₄.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt (conj g)) = 2) ∧
+      (qIndex
+          ((R₁.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt g) +
+        qIndex
+          ((R₂.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt g) +
+        qIndex
+          ((R₃.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt (conj g)) +
+        qIndex
+          ((R₄.toEigenlineRealization.toLinearEmbeddingLineRealization
+            .toEmbeddingLineRealization).typeAt (conj g)) = 2) :=
+  characterEigenlines_fourFactor_bidegree_two_two
+    v₁ v₂ v₃ v₄
+    R₁.toEigenlineRealization
+    R₂.toEigenlineRealization
+    R₃.toEigenlineRealization
+    R₄.toEigenlineRealization
     hbal
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces
