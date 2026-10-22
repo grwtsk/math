@@ -73,6 +73,15 @@ theorem SignControlledXi.coeff_pos
     0 < X.coeff σ :=
   X.coefficient_pos σ
 
+/-- The sign-profile condition in particular forces xi to be nonzero. -/
+theorem SignControlledXi.xi_ne_zero
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v) :
+    X.xi ≠ 0 := by
+  intro h
+  have hp := X.coefficient_pos (1 : E ≃ₐ[ℚ] E)
+  simp [h, imagAt, complexEmbeddingAt] at hp
+
 /-- A sign-controlled xi supplies the algebraic trace-polarization data. -/
 def SignControlledXi.toTracePolarizationData
     {v : CMNumberFieldIndex.OddSignRow E}
@@ -125,15 +134,6 @@ theorem SignControlledXi.energy_eq_zero_iff
     exact (ne_of_gt (X.energy_pos hz)) h
   · rintro rfl
     simp [SignControlledXi.energy]
-
-/-- The sign-profile condition in particular forces xi to be nonzero. -/
-theorem SignControlledXi.xi_ne_zero
-    {v : CMNumberFieldIndex.OddSignRow E}
-    (X : SignControlledXi E v) :
-    X.xi ≠ 0 := by
-  intro h
-  have hp := X.coefficient_pos (1 : E ≃ₐ[ℚ] E)
-  simp [h, imagAt, complexEmbeddingAt] at hp
 
 end
 
