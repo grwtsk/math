@@ -56,11 +56,11 @@ def generator (i : Fin 4) : GenusTwoPresentedGroup :=
 /-- Concrete generator assignment into the integral Heisenberg group.
 The second commutator is deliberately the inverse of the first. -/
 def heisenbergLetter (i : Fin 4) :
-    IntegralHeisenberg.IntegralHeisenberg :=
-  if i = 0 then IntegralHeisenberg.IntegralHeisenberg.X
-  else if i = 1 then IntegralHeisenberg.IntegralHeisenberg.Y
-  else if i = 2 then IntegralHeisenberg.IntegralHeisenberg.X
-  else IntegralHeisenberg.IntegralHeisenberg.Y⁻¹
+    IntegralHeisenberg :=
+  if i = 0 then IntegralHeisenberg.X
+  else if i = 1 then IntegralHeisenberg.Y
+  else if i = 2 then IntegralHeisenberg.X
+  else IntegralHeisenberg.Y⁻¹
 
 /-- The exact one relator evaluates to 1 in Heisenberg. This is the
 hypothesis required by the PresentedGroup universal property; it is
@@ -71,12 +71,12 @@ theorem heisenbergLetter_respects_relator :
   rw [map_mul, map_wordCommutator, map_wordCommutator]
   simp only [FreeGroup.lift_apply_of]
   simpa [heisenbergLetter] using
-    IntegralHeisenberg.IntegralHeisenberg.genusTwo_relation
+    IntegralHeisenberg.genusTwo_relation
 
 /-- The universal property builds a genuine group homomorphism FROM
 THE QUOTIENT, because the relator was proved to map to identity. -/
 def toHeisenberg :
-    GenusTwoPresentedGroup →* IntegralHeisenberg.IntegralHeisenberg :=
+    GenusTwoPresentedGroup →* IntegralHeisenberg :=
   PresentedGroup.toGroup (f := heisenbergLetter)
     (rels := ({genusTwoRelator} : Set (FreeGroup (Fin 4)))) (by
       intro r hr
@@ -96,11 +96,11 @@ def separatingCommutator : GenusTwoPresentedGroup :=
 /-- The actual source commutator maps to the central unit Z. -/
 theorem toHeisenberg_separatingCommutator :
     toHeisenberg separatingCommutator =
-      IntegralHeisenberg.IntegralHeisenberg.Z := by
+      IntegralHeisenberg.Z := by
   rw [separatingCommutator, map_wordCommutator]
   simp only [toHeisenberg_generator]
   simpa [heisenbergLetter] using
-    IntegralHeisenberg.IntegralHeisenberg.comm_X_Y
+    IntegralHeisenberg.comm_X_Y
 
 /-- Nonidentity/non-proper-power status follows by transporting the
 explicit Heisenberg obstruction across the real presented-group map. -/
