@@ -95,4 +95,58 @@ theorem FilteredIdempotent.finrank_left_add_right
   rw [P.left_sup_right, P.left_right_disjoint.eq_bot, finrank_bot, add_zero] at h
   exact h
 
+
+/-- A filtered idempotent equipped with one linear Frobenius operator and an
+exact pointwise commutation law. This is finite linear algebra only; no
+semilinearity, isocrystal, or weak-admissibility claim is encoded here. -/
+structure FilteredFrobeniusProjector extends FilteredIdempotent (K := K) (D := D) where
+  phi : D →ₗ[K] D
+  commutes : ∀ x, p (phi x) = phi (p x)
+
+/-- The complementary projector automatically commutes with the same Frobenius
+operator. -/
+theorem FilteredFrobeniusProjector.q_commutes
+    (P : FilteredFrobeniusProjector (K := K) (D := D))
+    (x : D) :
+    P.toFilteredIdempotent.q (P.phi x) =
+      P.phi (P.toFilteredIdempotent.q x) := by
+  simp only [FilteredIdempotent.q, LinearMap.sub_apply, LinearMap.id_apply,
+    map_sub, P.commutes]
+
+/-- The image of the selected projector is Frobenius-stable. -/
+theorem FilteredFrobeniusProjector.phi_mem_range_p
+    (P : FilteredFrobeniusProjector (K := K) (D := D))
+    {x : D} (hx : x ∈ LinearMap.range P.p) :
+    P.phi x ∈ LinearMap.range P.p := by
+  rcases hx with ⟨y, rfl⟩
+  refine ⟨P.phi y, ?_⟩
+  exact (P.commutes y).symm
+
+/-- The image of the complementary projector is Frobenius-stable. -/
+theorem FilteredFrobeniusProjector.phi_mem_range_q
+    (P : FilteredFrobeniusProjector (K := K) (D := D))
+    {x : D} (hx : x ∈ LinearMap.range P.toFilteredIdempotent.q) :
+    P.phi x ∈ LinearMap.range P.toFilteredIdempotent.q := by
+  rcases hx with ⟨y, rfl⟩
+  refine ⟨P.phi y, ?_⟩
+  exact (P.q_commutes y).symm
+
+/-- The left filtered summand is Frobenius-stable once the ambient filtration
+itself is stable. -/
+theorem FilteredFrobeniusProjector.phi_mem_left
+    (P : FilteredFrobeniusProjector (K := K) (D := D))
+    (filtrationStable : ∀ x, x ∈ P.F1 → P.phi x ∈ P.F1)
+    {x : D} (hx : x ∈ P.toFilteredIdempotent.left) :
+    P.phi x ∈ P.toFilteredIdempotent.left := by
+  exact ⟨filtrationStable x hx.1, P.phi_mem_range_p hx.2⟩
+
+/-- The complementary filtered summand is Frobenius-stable under the same
+ambient filtration-stability hypothesis. -/
+theorem FilteredFrobeniusProjector.phi_mem_right
+    (P : FilteredFrobeniusProjector (K := K) (D := D))
+    (filtrationStable : ∀ x, x ∈ P.F1 → P.phi x ∈ P.F1)
+    {x : D} (hx : x ∈ P.toFilteredIdempotent.right) :
+    P.phi x ∈ P.toFilteredIdempotent.right := by
+  exact ⟨filtrationStable x hx.1, P.phi_mem_range_q hx.2⟩
+
 end GRWTSK.LinearAlgebra.FilteredProjectorSplit
