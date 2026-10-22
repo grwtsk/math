@@ -2,6 +2,7 @@
 Finite character-count proof draft assistance: OpenAI.
 Mathlib upstream definitions retain their respective licenses. -/
 import GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleDyadicSignedPairing
+import GRWTSK.NumberTheory.ArithmeticFunctions.FiniteAntipodalWalshExpansion
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -86,6 +87,13 @@ theorem dyadicSignedMixedEnergy_eq_antipodal_count
         ((M : ℚ) ^ 2)) - 1 := by
   classical
   have hM0 : (M : ℚ) ≠ 0 := by exact_mod_cast Nat.ne_of_gt hM
+  -- The generic finite Walsh expansion is available as a separate
+  -- proof-draft supplier; the remaining obligation is to commute the
+  -- normalized double sum with the complete character sum.
+  have hWalsh (f : ℕ → ℚ) :
+      (∏ h ∈ H, (1 - f h)) =
+        ∑ S ∈ H.powerset, (-1 : ℚ) ^ S.card * ∏ h ∈ S, f h :=
+    GRWTSK.NumberTheory.FiniteAntipodalWalshExpansion.product_one_sub_eq_powerset_sum H f
   -- Reassociate the two finite root sums and expand the full powerset
   -- via the finite product-of-sums identity. The nonempty sum is the
   -- complete expansion minus its empty-character contribution.
