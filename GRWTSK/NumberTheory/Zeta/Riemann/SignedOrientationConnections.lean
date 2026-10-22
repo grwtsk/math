@@ -130,6 +130,51 @@ def recentHodgeSignFailureProfile : ConnectionProfile where
   evidence := .sourceReviewRequired
   nonclaim := "does not assert or replay an external paper result"
 
+/-- Data point for the current zero-parameterized quartic probe. -/
+structure QuarticProbeDatum where
+  α : ℝ
+  γ : ℝ
+  stage : ℕ
+
+/-- The existing screw-quartic penalty is an exact negative-orientation
+certificate for witnessTrace. -/
+noncomputable def screwQuarticPenaltyCertificate :
+    OrientationCertificate (ℝ × ℝ) where
+  sign := -1
+  sign_sq := by norm_num
+  positiveSource := fun x => quarticPenalty x.1 x.2
+  signedConsumer := fun x =>
+    GRWTSK.Polynomial.ConjugateQuartic.witnessTrace x.1 x.2
+  positive_nonneg := fun x => quarticPenalty_nonnegative x.1 x.2
+  identity := by
+    intro x
+    change -GRWTSK.Polynomial.ConjugateQuartic.witnessTrace x.1 x.2 =
+      quarticPenalty x.1 x.2
+    rfl
+
+/-- The current canonical prime-power probe inhabits the SAME abstract
+negative-orientation type, but with its own arithmetic source factor. This
+does not identify it with the Hodge or screw constructions. -/
+noncomputable def quarticProbeOrientationCertificate :
+    OrientationCertificate QuarticProbeDatum where
+  sign := -1
+  sign_sq := by norm_num
+  positiveSource := fun x =>
+    GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy
+      (GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStage x.stage)
+      (quarticProbe x.α x.γ x.stage)
+  signedConsumer := fun x =>
+    GRWTSK.Polynomial.ConjugateQuartic.witnessTrace x.α x.γ *
+      radiusNormalizedCorrection x.stage
+  positive_nonneg := fun x =>
+    GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy_nonneg
+      (GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStage x.stage)
+      (quarticProbe x.α x.γ x.stage)
+  identity := by
+    intro x
+    rw [stageEnergy_quarticProbe_eq]
+    ring
+
 /-- Generic Hodge-sector connection: a pure negative sector carries positive
 metric energy only after the required sign twist. -/
 theorem hodge_negative_sector_requires_sign_twist
