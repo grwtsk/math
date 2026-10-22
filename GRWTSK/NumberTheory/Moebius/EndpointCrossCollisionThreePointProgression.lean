@@ -75,7 +75,7 @@ theorem sum_mertensEndpointForwardCross_eq_progression
     have hpair := (Finset.mem_filter.mp hp).1
     have hc_lt :
         c < n := by
-      exact (Finset.mem_product.mp hpair).2 |> Finset.mem_range.mp
+      exact Finset.mem_range.mp (Finset.mem_product.mp hpair).2
     unfold mertensEndpointCrossCollisionBaseSet
     apply Finset.mem_range.mpr
     omega
@@ -150,7 +150,7 @@ theorem sum_mertensEndpointBackwardCross_eq_progression
     have hpair := (Finset.mem_filter.mp hp).1
     have ha_lt :
         a < n := by
-      exact (Finset.mem_product.mp hpair).1 |> Finset.mem_range.mp
+      exact Finset.mem_range.mp (Finset.mem_product.mp hpair).1
     unfold mertensEndpointCrossCollisionBaseSet
     apply Finset.mem_range.mpr
     omega
@@ -233,8 +233,7 @@ theorem mertensEndpointFibreCrossCollisionEnergy_eq_progression
     _ = 2 * ∑ n ∈ Finset.Ico 1 b,
         ∑ a ∈ mertensEndpointCrossCollisionBaseSet b n,
           mertensThreePointProgressionTerm (b - n) a := by
-      rw [← Finset.mul_sum]
-      apply congrArg (fun x : ℝ => 2 * x)
+      rw [Finset.mul_sum]
       apply Finset.sum_congr rfl
       intro n _hn
       ring
