@@ -249,6 +249,13 @@ is empty, but the two real initial handles remain. -/
     extraRelatorList 0 = [] := by
   simp [extraRelatorList]
 
+/-- One additional handle is genuinely present in the syntactic
+relator list when k=1. Its Heisenberg image is one, but its
+source word is not silently deleted from the presented group. -/
+@[simp] theorem extraRelatorList_one :
+    extraRelatorList 1 = [extraHandleRelator 1 0] := by
+  simp [extraRelatorList]
+
 /-- Hostile base-case guard: g=2 is actually in the family. -/
 theorem genus_two_case :
     IsPrimitiveConjugacy (firstHandleCommutator 0) ∧
