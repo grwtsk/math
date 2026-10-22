@@ -2368,6 +2368,55 @@ using the actual weight-one realizations over the same finite Galois CM field.
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4az. Finite-level switch factors now reach actual H^(2,2) directly
+
+The corrected finite-level architecture is now connected to the actual weight-one realization machinery.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+CMFiniteFourFactorActualTyping
+CMFiniteFourFactorSwitchAlignment
+CMFiniteFourFactorActualTyping.toActualTyping
+CMFiniteFourFactorSwitchAlignment.toActualAlignment
+CMFiniteFourFactorSwitchAlignment.canonicalPureTensor_mem_H22
+~~~
+
+All four factors remain over the same finite Galois CM field (E).
+
+A finite actual-typing package attaches one strengthened `WeightOneCMRealization` to each of the four finite embedding-line vectors. The character and vector equalities identify those realization factors with the four entries of `CMFiniteFourEmbeddingLineVectors`.
+
+The finite switch alignment then imposes the exact pattern
+
+[
+g,quad g,quad c(g),quad c(g)
+]
+
+on those finite-level characters and carries the existing `FourBalance` premise.
+
+The adapters reuse the already-local actual-Hodge machinery, so the canonical pure tensor of the four realized finite factors lies in the actual (H^{2,2}) subspace once the standard fourfold Hodge tensor rule is supplied.
+
+Therefore the corrected finite-level path has now discharged:
+
+- individual actual (H^{1,0}/H^{0,1}) typing;
+- switch-character alignment;
+- the (p=2,q=2) count;
+- actual fourfold (H^{2,2}) membership.
+
+The remaining Hodge bridge is now only a realization comparison:
+
+[
+oxed{
+	ext{actual fourfold }H^1	ext{ tensor}
+longrightarrow
+mathbf Cotimes_{mathbf Q}V
+}
+]
+
+that identifies the canonical actual pure tensor with the coefficient-included finite-CM assembled generator and carries actual (H^{2,2}) into the descent-side Hodge subspace.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
