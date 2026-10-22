@@ -1,3 +1,6 @@
+# Historical original target Git blob: ab0a6e530d4156926b14db487c4745a1237416e7.
+# Historical original parent: ccc10c51d39bc153f8d177eba661d95afe8abddb; tree 4356392a285f821057d14dcad5fdac587c3f29db.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-signed-abel-depth-dispersion-476-v0.1"
 owner_repository = "grwtsk/math"
@@ -11,11 +14,61 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-stacked_parent_revision = "ccc10c51d39bc153f8d177eba661d95afe8abddb"
-candidate_branch = "research/rh-signed-abel-dispersion-476-20261021"
-theorem_source_commit = "be3832de4ae33ed207d8c9e49f353dee37bc17c3"
+stacked_parent_revision = "e3051585ca47f14e25be8de4c136f45f7563f913"
+stacked_parent_tree = "dc33dd253de867e7ffeaf0a1d65b7878e31ab9f2"
+historical_candidate_branch = "research/rh-signed-abel-dispersion-476-20261021"
+historical_theorem_source_commit = "be3832de4ae33ed207d8c9e49f353dee37bc17c3"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthDispersion.lean"
+historical_theorem_source_git_blob = "f5cf7fa855bbebbbdc7411add123116963693f80"
 theorem_source_git_blob = "f5cf7fa855bbebbbdc7411add123116963693f80"
+source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "e2deaa26d4ef74180d1f6cc10f90cc9b84b4de98"
+historical_mathematical_note_commit = "576d455ce063842bfc8a52a30b7c35485e900314"
+historical_mathematical_note_tree = "0bd7949647b3f8817690206871205b88124e4e1a"
+historical_mathematical_note_git_blob = "7e5920e35aca6f9c42bdc36129d5f889978d4bc1"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/signed-abel-depth-dispersion.md"
+mathematical_note_git_blob = "efdcb4166fbc592e324b968fed25f5f3763f7b6c"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelDepthPacket.lean"
+git_blob = "ef7b3e9ce1c185093809e01ef5682b7ffdea438d"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
+
+[declaration_inventory]
+names = [
+  "SignedAbelDepthBilinearModel",
+  "SignedAbelDepthBilinearModel.structuredSlice",
+  "SignedAbelDepthBilinearModel.structuredPacket",
+  "SignedAbelDepthBilinearModel.residualPacket",
+  "SignedAbelDepthBilinearModel.depthSlice_eq_structured_add_residual",
+  "SignedAbelDepthBilinearModel.depthPacket_eq_structured_add_residual",
+  "SubpolynomialSignedAbelDepthBilinearEstimate",
+  "subpolynomialDyadicSignedAbelDepthPacket_of_bilinearEstimate",
+  "riemannHypothesis_of_signedAbelDepthBilinearEstimate",
+  "SignedAbelDepthSplitBudget",
+  "signedAbelDepthBilinearEstimate_of_splitBudget",
+  "PositiveNormToSignedDepthAdapter",
+  "riemannHypothesis_of_positiveNormAdapter"
+]
 
 [selected_increment]
 model = "SignedAbelDepthBilinearModel"

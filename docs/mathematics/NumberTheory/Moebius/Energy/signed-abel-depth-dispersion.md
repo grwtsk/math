@@ -8,9 +8,9 @@ Evidence state: **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / DISPERSION_ESTIM
 
 The parent witness exposes the exact signed depth slice
 
-[
-D_{j,t}=sum_h operatorname{Cell}_{j,h,t}.
-]
+\[
+D_{j,t}=\sum_{1\le h<2^{j+1}}\operatorname{Cell}_{j,h,t}.
+\]
 
 This increment introduces one finite bilinear/dispersion interface that is required to reconstruct that exact signed slice before any estimate can be consumed.
 
@@ -27,27 +27,23 @@ No positivity, orthogonality, norm estimate, Fourier transform, or probabilistic
 
 The exact identity is
 
-[
-D_{j,t}
-=
-sum_{uin U_{j,t}}alpha_{j,t,u}eta_{j,t,u}
-+
-R_{j,t}.
-]
+\[
+D_{j,t}=\sum_{u\in U_{j,t}}\alpha_{j,t,u}\beta_{j,t,u}+R_{j,t}.
+\]
 
 Summing over the inherited depth range yields
 
-[
+\[
 D_j=S_j+R_j.
-]
+\]
 
 ## Estimate interface
 
 `SubpolynomialSignedAbelDepthBilinearEstimate d` asks for the signed total
 
-[
+\[
 S_j+R_j
-]
+\]
 
 to satisfy the same subpolynomial budget as the inherited signed depth packet.
 
@@ -59,7 +55,10 @@ bilinear estimate
   -> conditional RH endpoint.
 ```
 
-No model or estimate is constructed.
+No model or estimate is constructed. The reconstruction interface permits a trivial
+model with the entire slice placed in the residual; reconstruction alone gives
+no quantitative bound. A useful model must come with an estimate of the signed
+structured-plus-residual packet.
 
 ## Split budget
 
