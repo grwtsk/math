@@ -17,17 +17,17 @@ candidate branch:
   research/rh-exceptional-character-chi4-691-20261022
 
 source commit:
-  611706356a608b87b89d723030e4251c105b7d05
+  db22183c2f09ab3fb7fe2e83b56cbebfd753c68e
 
 source tree:
-  24db528cbad3d18fb09e3daef69afe262c364daf
+  4257bfa8bce07c4b61fddba71c9448ecb73e6af3
 
 source:
   GRWTSK/NumberTheory/Moebius/
     ExceptionalKernelCharacterChiFour.lean
 
 source blob:
-  d4e2a81279f668fb656e02458c79d97d58c8976e
+  8f346435e49801dd7f0a23e16375768f66f21381
 ```
 
 ## Order-two character identification
