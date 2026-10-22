@@ -1,0 +1,316 @@
+# Historical original target Git blob: 23a538ae26922b8d8bfbd6d0457465a7a525adc3.
+# Historical original parent: b07485444e97f63886a3bb0d5a4955b40e939e5c; tree 4bd5b31f6975da0a57de98f393325f3dd46cedc6.
+# Original source/note publication identities are historical; repaired containing revisions must be bound externally.
+schema = "grwtsk-math-replay-target-v1"
+id = "mobius-endpoint-connection-atlas-439-v0.1"
+owner_repository = "grwtsk/math"
+issue = 439
+parent_issue = 430
+parent_pr = 432
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointInformationLossConnections"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointInformationLossConnections"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_pr = 436
+historical_stacked_parent_branch = "research/rh-dyadic-prefix-maximal-comparison-433-20261021"
+stacked_parent_revision = "ff9c34fab34c243d6e4740864d98dee2d6b26ec2"
+stacked_parent_tree = "f179e0eaacdcdfa7f5b9103a6511d65333ea12ff"
+historical_candidate_branch = "research/mobius-endpoint-connection-atlas-439-20261021"
+historical_theorem_source_commit = "19be48184ee919fcf958b156f8335564ce08d2a2"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointInformationLossConnections.lean"
+historical_theorem_source_git_blob = "b644fc804e2e10604d2800f48d9e24ff554bb084"
+theorem_source_git_blob = "4fcc68a8ae4792c35b22adda8aeb12e43aed51a0"
+historical_mathematical_note_commit = "7b5c0d24a06183c3aca4625682b81eef1cdd639b"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/endpoint-information-loss-connections.md"
+historical_mathematical_note_git_blob = "9040e6e415fca0165b0b7e3889a05968e58145f7"
+mathematical_note_git_blob = "82d6b5275d52fb88892f21fc3a740fb0a5f560f6"
+source_and_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+namespace = "GRWTSK.RiemannHypothesis.CCC.EndpointConnections"
+
+[selected_increment]
+classification = "TYPED_CONNECTION_ATLAS_WITH_ONE_EXACT_TRANSPORT_AND_SCOPED_OBSTRUCTIONS"
+exact_positive_transport = "all-horizon bound with monotone majorant iff fixed-data prefix-max bound"
+exact_negative_witness = "actual two-point Moebius terminal prefix at h=1,T=2 vanishes while the earlier prefix is nonzero"
+rh_consequence = "SOURCE_ORGANIZATION_AND_REUSABLE_COMPARISON_ONLY"
+next_obstruction = "construct or refute each named uniformity, coverage, higher-order, and arithmetic-to-dynamical bridge"
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+external_sources_are_not_local_theorem_authority = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_relevance_as_implication = true
+reject_open_requirement_as_implication = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointInformationLossConnections"
+authored_declaration_count = 74
+definition_structure_inductive_count = 58
+theorem_script_count = 16
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicPrefixMaximalComparison.lean"
+git_blob = "73abf5c16de78cbc760ba9bc6cd8fad941fcefee"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TerminalMertensTwoPointPrefixObstruction.lean"
+git_blob = "fa194aacf13917733f4eddaffc37954b09f96ac6"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[child_issues]]
+number = 441
+name = "MOBIUS_CHOWLA_BRIDGE"
+open_obligation = "fixed-data to growing-shift uniformity, summed energy, and higher order"
+
+[[child_issues]]
+number = 442
+name = "MOBIUS_ELLIOTT_BRIDGE"
+open_obligation = "corrected binary fixed-data to family-uniform, maximal, and higher-order control"
+
+[[child_issues]]
+number = 443
+name = "MOBIUS_SHORT_INTERVAL_BRIDGE"
+open_obligation = "averaged or almost-all intervals to every interval and every subprefix"
+
+[[child_issues]]
+number = 444
+name = "MOBIUS_SARNAK_BRIDGE"
+open_obligation = "exact arithmetic-to-dynamical adapter"
+
+[[literature_sources]]
+id = "OPENAI_RESULT_007"
+kind = "EXTERNAL_REPOSITORY_SCOPE_NOTE"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+path = "lean/docs/007.md"
+git_blob = "dad638d19609ebbddc93a5594dfc2ecd2a26a7a6"
+url = "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/docs/007.md"
+# Historical original recorded_scope: ordinary binary fixed-affine-form cancellation and corrected binary Elliott under uniform nonpretentiousness.
+recorded_scope = "ordinary binary fixed-affine-form Liouville cancellation and corrected binary Elliott under uniform nonpretentiousness"
+not_imported_as = "growing-shift maximal higher-order or summed-energy theorem"
+
+[[literature_sources]]
+id = "TAO_LOG_CHOWLA_ELLIOTT_2015"
+kind = "ARXIV_PREPRINT"
+identifier = "arXiv:1509.05422"
+url = "https://arxiv.org/abs/1509.05422"
+recorded_scope = "logarithmically averaged two-point Chowla and Elliott"
+not_imported_as = "ordinary or higher-order theorem"
+
+[[literature_sources]]
+id = "TAO_TERAVAINEN_ALMOST_ALL_SCALES_2018"
+kind = "ARXIV_PREPRINT"
+identifier = "arXiv:1809.02518"
+url = "https://arxiv.org/abs/1809.02518"
+recorded_scope = "higher-order correlation structure and ordinary special cases at almost all scales"
+not_imported_as = "all-scales uniform theorem"
+
+[[literature_sources]]
+id = "MRT_AVERAGED_CHOWLA_2015"
+kind = "ARXIV_PREPRINT"
+identifier = "arXiv:1503.05121"
+url = "https://arxiv.org/abs/1503.05121"
+recorded_scope = "averaged shift-family Chowla and corrected Elliott forms"
+not_imported_as = "pointwise every-shift theorem"
+
+[[literature_sources]]
+id = "MR_SHORT_INTERVALS_2015"
+kind = "ARXIV_PREPRINT"
+identifier = "arXiv:1501.04585"
+url = "https://arxiv.org/abs/1501.04585"
+recorded_scope = "multiplicative functions and Moebius cancellation in almost all short intervals"
+not_imported_as = "every-interval or every-subprefix theorem"
+
+[[literature_sources]]
+id = "SARNAK_MOBIUS_RANDOMNESS_DYNAMICS"
+kind = "IAS_LECTURE_NOTES"
+url = "https://publications.ias.edu/node/512"
+recorded_scope = "Mobius disjointness proposal and dynamical formulation"
+not_imported_as = "arithmetic-to-dynamical adapter proof"
+
+[[literature_sources]]
+id = "FRANTZIKINAKIS_HOST_LOG_SARNAK_2018"
+kind = "JOURNAL_ARTICLE"
+doi = "10.4007/annals.2018.187.3.6"
+identifier = "arXiv:1708.00677"
+url = "https://annals.math.princeton.edu/2018/187-3/p06"
+recorded_scope = "logarithmically averaged Sarnak theorem for the stated system class"
+not_imported_as = "ordinary Cesaro theorem for every zero-entropy system"
+
+[relation_semantics]
+implies_projects_to_proof = true
+equivalent_projects_forward_to_proof = true
+supplies_premise_projects_after_complete_composition = true
+requires_projects_to_proof = false
+refutes_at_scope_projects_to_positive_proof = false
+relevant_only_projects_to_proof = false
+
+[proved_relations]
+actual_witness_refutes_terminal_recovery_at_scope = true
+universal_one_horizon_terminal_recovery_is_false = true
+fixed_data_all_horizon_monotone_implies_prefix_max = true
+fixed_data_prefix_max_implies_all_horizon = true
+every_subprefix_interval_control_implies_terminal_interval_control = true
+arithmetic_premise_plus_declared_adapter_implies_selected_sarnak_conclusion = true
+
+[open_bridges]
+growing_shift_endpoint_to_maximal = true
+fixed_data_to_growing_shift_uniformity = true
+growing_shift_to_summed_energy = true
+binary_to_higher_order_chowla = true
+corrected_binary_to_uniform_elliott_family = true
+elliott_family_terminal_to_maximal = true
+binary_to_higher_order_elliott = true
+averaged_to_every_interval = true
+almost_all_to_every_interval = true
+global_prefix_to_translated_intervals = true
+arithmetic_to_dynamical_sarnak = true
+
+[hostile_controls]
+witness_must_not_refute_chowla = true
+witness_must_not_refute_elliott = true
+witness_must_not_refute_sarnak = true
+relevant_only_must_not_be_traversed = true
+open_requirement_must_not_be_traversed = true
+fixed_shift_must_not_become_growing_shift = true
+binary_must_not_become_higher_order = true
+ordinary_average_must_not_become_logarithmic_or_conversely = true
+almost_all_scales_must_not_become_all_scales = true
+averaged_intervals_must_not_become_every_interval = true
+almost_all_intervals_must_not_become_every_interval = true
+terminal_interval_must_not_become_every_subprefix = true
+source_url_must_not_become_theorem_premise = true
+external_source_presence_must_not_become_local_acceptance = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+external_theorem_admission = false
+growing_shift_uniformity_proved = false
+higher_order_chowla_proved = false
+elliott_conjecture_proved = false
+every_short_interval_control_proved = false
+sarnak_disjointness_proved = false
+arithmetic_to_dynamical_adapter_constructed = false
+summed_shift_energy_estimate_proved = false
+maximal_energy_estimate_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "finitePrefix",
+  "finitePrefixMax",
+  "finitePrefix_zero",
+  "abs_finitePrefix_le_max",
+  "finitePrefixMax_nonneg",
+  "TerminalRecoveryAt",
+  "not_terminalRecoveryAt_of_terminal_eq_zero",
+  "twoPointMobiusSequence",
+  "finitePrefix_twoPointMobiusSequence_eq",
+  "EndpointInformationLossWitness",
+  "endpointInformationLossWitness",
+  "UniversalOneHorizonTerminalRecovery",
+  "not_universalOneHorizonTerminalRecovery",
+  "AllHorizonBound",
+  "PrefixMaxBound",
+  "prefixMaxBound_of_allHorizonBound",
+  "allHorizonBound_of_prefixMaxBound",
+  "prefixMaxBound_iff_allHorizonBound_of_monotone",
+  "translatedPrefix",
+  "translatedPrefixMax",
+  "TerminalIntervalRecoveryAt",
+  "EveryTerminalIntervalBound",
+  "EverySubprefixIntervalBound",
+  "everyTerminalIntervalBound_of_everySubprefix",
+  "EndpointIntervalInformationLossWitness",
+  "endpointIntervalInformationLossWitness",
+  "TypedConnection",
+  "TypedConnection.toImplication?",
+  "TypedConnection.relevantOnly_has_no_implication",
+  "TypedConnection.requires_has_no_implication",
+  "TypedConnection.refutation_has_no_positive_implication",
+  "fixedDataAllHorizonImpliesMaximal",
+  "endpointWitnessRefutesTerminalRecovery",
+  "higherOrderMobiusTerm",
+  "HigherOrderChowlaBound",
+  "GrowingShiftTwoPointTerminalBound",
+  "GrowingShiftTwoPointMaximalBound",
+  "GrowingShiftUniformityBridge",
+  "SummedShiftMaximalEnergyBound",
+  "ChowlaConnectionProfile",
+  "ChowlaFixedToGrowingBridge",
+  "ChowlaGrowingToSummedBridge",
+  "ChowlaHigherOrderBridge",
+  "chowlaFixedToGrowingRequiresBridge",
+  "chowlaGrowingToSummedRequiresBridge",
+  "chowlaBinaryToHigherOrderRequiresBridge",
+  "endpointWitnessRelevantToHigherOrderChowla",
+  "CorrectedElliottData",
+  "correctedElliottSequence",
+  "CorrectedElliottFixedDataBound",
+  "ElliottConnectionProfile",
+  "ElliottFamilyUniformityBridge",
+  "ElliottFamilyMaximalBridge",
+  "ElliottHigherOrderBridge",
+  "elliottFixedToUniformRequiresBridge",
+  "elliottUniformToMaximalRequiresBridge",
+  "elliottBinaryToHigherOrderRequiresBridge",
+  "endpointWitnessRelevantToElliott",
+  "ShortIntervalConnectionProfile",
+  "AverageToEveryIntervalBridge",
+  "AlmostAllToEveryIntervalBridge",
+  "GlobalToTranslatedIntervalBridge",
+  "averageToEveryIntervalRequiresBridge",
+  "almostAllToEveryIntervalRequiresBridge",
+  "globalToTranslatedIntervalRequiresBridge",
+  "endpointWitnessRelevantToShortIntervals",
+  "endpointIntervalWitnessRefutesTerminalRecovery",
+  "DynamicalDisjointnessConsumer",
+  "SarnakConnectionProfile",
+  "ArithmeticToDynamicalAdapter",
+  "sarnakRequiresArithmeticToDynamicalAdapter",
+  "sarnakConclusion_of_arithmetic_and_adapter",
+  "endpointWitnessRelevantToSarnak",
+  "EndpointConnectionAtlas"
+]
+
+[compatibility_repair]
+declaration = "GRWTSK.RiemannHypothesis.CCC.EndpointConnections.TypedConnection.toImplication?"
+historical_invalid_header = "def toImplication?\n    {source target : Prop} :\n    TypedConnection source target \u2192 Option (source \u2192 target)"
+historical_invalid_header_sha256 = "ba3bf61754409d02977c93ae1f2579746ce453db31de7783371dc99d704eaa7a"
+repaired_declared_header = "def toImplication?\n    {source target : Prop} :\n    TypedConnection source target \u2192 Option (PLift (source \u2192 target))"
+repaired_declared_header_sha256 = "f8dcfb0c815d64fbd158df2cd48fbb82183206713058ade6de38081e431b08c2"
+requires_independent_complete_return_type_check = true
+requires_plift_payload_and_all_constructor_controls = true
+abstract_profiles_are_not_cited_conjecture_instances = true
+requires_exact_external_arithmetic_source_identity = true
