@@ -1,0 +1,45 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-dyadic-blocks-565-v0.1"
+owner_repository = "grwtsk/math"
+issue = 565
+parent_issue = 563
+parent_pr = 564
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalDyadicBlocks"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalDyadicBlocks"
+
+[source_binding]
+stacked_parent_revision = "55a4b8b2ab3bd66f76e03d208f7a20f4dd187f2a"
+candidate_branch = "research/rh-dyadic-start-blocks-565"
+theorem_source_commit = "92c6dbf64702bc1db7b4766321c03037ee87cba9"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalDyadicBlocks.lean"
+theorem_source_git_blob = "7b64980b74901af644513e5570f72d637b483e18"
+
+[selected_increment]
+dyadic_block = "dyadicStartBlock"
+block_l1 = "dyadicStartBlockShortIntervalL1"
+endpoint_correction = "ambientEndpointStartCorrection"
+aggregate = "dyadicStartBlockAggregateL1"
+prefix_sum_decomposition = "sum_prefix_eq_sum_dyadicStartBlocks"
+ambient_identity = "harmonicAmbientShortIntervalL1_eq_dyadicAggregate"
+endpoint_bound = "ambientEndpointStartCorrection_le_two_mul_length"
+packet = "coreLongDyadicBlockShortIntervalL1Packet"
+packet_identity = "coreLongAmbientShortIntervalL1Packet_eq_dyadicBlocks"
+supplier = "SubpolynomialCoreLongDyadicBlockShortIntervalL1Packet"
+supplier_equivalence = "subpolynomialCoreLongDyadicBlockShortIntervalL1Packet_iff_ambient"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreLongDyadicBlockShortIntervalL1Packet"
+adapter = "DyadicBlockShortIntervalToCoreAdapter"
+proof_classification = "EXACT_DYADIC_START_BLOCK_DECOMPOSITION"
+next_obstruction = "instantiate dyadic-block first-moment theorem with exact interval-length uniformity and endpoint payment"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+dyadic_block_supplier_proved = false
+literature_adapter_constructed = false
+riemann_hypothesis_proved = false
