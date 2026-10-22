@@ -1418,6 +1418,47 @@ Once that inclusion is supplied, `toTensorData` recovers the pointwise stability
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4ac. Orbit-span containment splits into monomial transport and Hodge inclusion
+
+The scalar-orbit frontier has now been decomposed one step further.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+ScalarConjugateMonomialLineData
+ScalarConjugateMonomialLineData.orbitSpan_le_hodge
+AtomicSwitchMonomialTransportData
+AtomicSwitchMonomialTransportData.toOrbitHodgeData
+~~~
+
+For each scalar automorphism (sigma), introduce the transported four-factor monomial line (L_sigma).
+
+The local theorem proves
+
+[
+left(
+sigma(t)in L_sigma orallsigma
+ight)
+land
+left(
+L_sigmasubseteq P orallsigma
+ight)
+Longrightarrow
+O(t)subseteq P,
+]
+
+where (O(t)) is the scalar-Galois orbit span and (P) is the actual complex ((2,2)) Hodge subspace.
+
+This exposes two distinct remaining bridges.
+
+First, a multilinear transport theorem must upgrade the already-local factorwise embedding-line transport to the actual four-factor monomial tensor.
+
+Second, the transported formal ((2,2)) monomial line must be identified with an actual Hodge line inside the cohomological realization.
+
+Everything after those two linewise statements—orbit-span containment, pointwise scalar stability, rational descent, and invocation of the independent four-factor algebraicity supplier—is now local.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
