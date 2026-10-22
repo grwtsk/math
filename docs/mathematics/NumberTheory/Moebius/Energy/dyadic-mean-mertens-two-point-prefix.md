@@ -257,7 +257,7 @@ No reverse implication is asserted.
 The normalized \(L^1\) condition is a natural first averaged-shift interface:
 
 \[
-\frac1Y\sum_{h<Y}
+\frac1Y\sum_{1\le h<Y}
 \max_{N\le Y-h-1}|C_h(N)|
 \ll_\delta X^\delta.
 \]

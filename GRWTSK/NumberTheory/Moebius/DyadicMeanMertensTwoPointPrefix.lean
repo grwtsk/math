@@ -61,19 +61,17 @@ theorem dyadicMertensTwoPointMeanEnvelope_of_uniform
     (henv : DyadicMertensTwoPointEnvelope j U) :
     DyadicMertensTwoPointMeanEnvelope j U := by
   let Y : ℕ := 2 ^ (j + 1)
-  have hY : 1 ≤ Y := by
-    dsimp [Y]
-    positivity
+  have hY : 1 ≤ Y := Nat.one_le_pow (j + 1) 2 (by norm_num)
   refine ⟨henv.1, fun _ => U, ?_, ?_⟩
   · intro h hh hhY
     exact ⟨henv.1, fun N hN => henv.2 h N hh hhY hN⟩
   · have hcard : (Finset.Ico 1 Y).card = Y - 1 := by
-      rw [Finset.card_Ico]
+      rw [Nat.card_Ico]
     rw [show 2 ^ (j + 1) = Y by rfl]
     calc
       (∑ _h ∈ Finset.Ico 1 Y, U) =
           (((Finset.Ico 1 Y).card : ℕ) : ℝ) * U := by
-        simp only [Finset.sum_const, nsmul_eq_mul, Nat.cast_ofNat]
+        simp only [Finset.sum_const, nsmul_eq_mul]
       _ = (((Y - 1 : ℕ) : ℝ)) * U := by rw [hcard]
       _ ≤ (Y : ℝ) * U := by
         apply mul_le_mul_of_nonneg_right
@@ -92,13 +90,13 @@ private theorem finite_abel_prefix_mean
   induction N with
   | zero => simp
   | succ N ih =>
+      rw [Finset.sum_range_succ, ih]
       simp only [Finset.sum_range_succ]
-      rw [ih]
       ring
 
 private theorem finite_weight_drop_telescope_mean
     (q : ℕ → ℝ) (N : ℕ) :
-    (∑ t ∈ Finset.range N, q t - q (t + 1)) =
+    (∑ t ∈ Finset.range N, (q t - q (t + 1))) =
       q 0 - q N := by
   induction N with
   | zero => simp
@@ -135,9 +133,9 @@ private theorem abs_weighted_sum_le_of_shift_prefix_bound
       apply Finset.sum_le_sum
       intro t ht
       exact mul_le_mul_of_nonneg_right
-        (hprefix (t + 1) (by omega))
+        (hprefix (t + 1) (Nat.succ_le_iff.mpr (Finset.mem_range.mp ht)))
         (hdrop t (Finset.mem_range.mp ht))
-    _ = U * (∑ t ∈ Finset.range N, q t - q (t + 1)) := by
+    _ = U * (∑ t ∈ Finset.range N, (q t - q (t + 1))) := by
       rw [← Finset.mul_sum]
     _ = U * (q 0 - q N) := by
       rw [finite_weight_drop_telescope_mean]
@@ -165,7 +163,7 @@ theorem abs_weightedMertensDyadicShiftContribution_le_of_shiftEnvelope
     dsimp [q]
     have hs := dyadicMertensShiftWeight_step_antitone
       (j := j) (b := t + 1 + h)
-    linarith
+    simpa only [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm] using sub_nonneg.mpr hs
   have hterminal : q N = 0 := by
     have hindex : N + 1 + h = Y := by
       dsimp [N, Y]
@@ -176,7 +174,6 @@ theorem abs_weightedMertensDyadicShiftContribution_le_of_shiftEnvelope
   have hq0 : q 0 ≤ (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ := by
     dsimp [q]
     apply dyadicMertensShiftWeight_le_right_inv
-    dsimp [Y] at hhY ⊢
     omega
   have hab := abs_weighted_sum_le_of_shift_prefix_bound
     x q N henv.1 hprefix hdrop hterminal
@@ -201,9 +198,7 @@ theorem abs_weightedMertensDyadicShiftPacket_le_of_meanEnvelope
     |weightedMertensDyadicShiftPacket j| ≤ 2 * B := by
   let Y : ℕ := 2 ^ (j + 1)
   obtain ⟨hB, U, hshift, hmean⟩ := henv
-  have hY : 1 ≤ Y := by
-    dsimp [Y]
-    positivity
+  have hY : 1 ≤ Y := Nat.one_le_pow (j + 1) 2 (by norm_num)
   unfold weightedMertensDyadicShiftPacket
   rw [show 2 ^ (j + 1) = Y by rfl]
   calc
@@ -227,7 +222,6 @@ theorem abs_weightedMertensDyadicShiftPacket_le_of_meanEnvelope
       · exact inv_nonneg.mpr (Nat.cast_nonneg Y)
     _ = 2 * B := by
       field_simp [show (Y : ℝ) ≠ 0 by positivity]
-      ring
 
 /-- The preceding uniform supplier is a special case of the mean supplier. -/
 theorem subpolynomialDyadicMeanMertensTwoPointPrefix_of_uniform
