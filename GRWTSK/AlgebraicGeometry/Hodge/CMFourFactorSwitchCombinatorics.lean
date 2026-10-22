@@ -346,6 +346,110 @@ theorem columnMismatchCount_switchConjugatePair_eq_of_ne
   intro r _
   rw [switchConjugatePair_eq_of_ne conj x g h i j hhg hhcg]
 
+/-- If two sign-valued columns have equal sums and are not equal, then there
+is a pair of opposite mismatches available for one atomic switch. -/
+theorem exists_opposite_mismatch_pair
+    (x y : I → ℤ)
+    (hx : ∀ r, IsSign (x r))
+    (hy : ∀ r, IsSign (y r))
+    (hsum : ∑ r, x r = ∑ r, y r)
+    (hne : x ≠ y) :
+    Nonempty (PosNegMismatch x y × NegPosMismatch x y) := by
+  obtain ⟨r, hr⟩ := Function.ne_iff.mp hne
+  have hcards :=
+    mismatch_fintype_card_eq_of_sum_eq x y hx hy hsum
+  rcases hx r with hxp | hxn <;>
+  rcases hy r with hyp | hyn
+  · exact False.elim (hr (by rw [hxp, hyp]))
+  ·
+    let i : PosNegMismatch x y := ⟨r, hxp, hyn⟩
+    have hpos : 0 < Fintype.card (PosNegMismatch x y) :=
+      Fintype.card_pos_iff.mpr ⟨i⟩
+    have hneg : 0 < Fintype.card (NegPosMismatch x y) := by
+      rwa [← hcards]
+    obtain ⟨j⟩ := Fintype.card_pos_iff.mp hneg
+    exact ⟨⟨i, j⟩⟩
+  ·
+    let j : NegPosMismatch x y := ⟨r, hxn, hyp⟩
+    have hneg : 0 < Fintype.card (NegPosMismatch x y) :=
+      Fintype.card_pos_iff.mpr ⟨j⟩
+    have hpos : 0 < Fintype.card (PosNegMismatch x y) := by
+      rwa [hcards]
+    obtain ⟨i⟩ := Fintype.card_pos_iff.mp hpos
+    exact ⟨⟨i, j⟩⟩
+  · exact False.elim (hr (by rw [hxn, hyn]))
+
+/-- Reachability by finitely many conjugate-paired switches at one fixed
+column pair. Every nontrivial constructor records the exact mismatch pair used
+at the current state. -/
+inductive PairedColumnReach
+    (conj : G → G) (g : G) (y : I → G → ℤ) :
+    (I → G → ℤ) → (I → G → ℤ) → Prop
+  | refl (x) : PairedColumnReach conj g y x x
+  | step {x z}
+      (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+      (j : NegPosMismatch (fun r => x r g) (fun r => y r g))
+      (hrest :
+        PairedColumnReach conj g y
+          (switchConjugatePair conj x g i.1 j.1) z) :
+      PairedColumnReach conj g y x z
+
+/-- A selected column can be completely corrected by finitely many paired
+switches. The proof is well-founded on the mismatch count. -/
+theorem exists_pairedColumnReach_corrects
+    (x y : I → G → ℤ)
+    (hxsign : ∀ r h, IsSign (x r h))
+    (hysign : ∀ r h, IsSign (y r h))
+    (hxodd : IsOddMatrix conj x)
+    (hyodd : IsOddMatrix conj y)
+    (g : G) (hg : g ≠ conj g)
+    (hsum : ∑ r, x r g = ∑ r, y r g) :
+    ∃ z,
+      PairedColumnReach conj g y x z ∧
+      (∀ r, z r g = y r g) ∧
+      (∀ r, z r (conj g) = y r (conj g)) ∧
+      IsOddMatrix conj z ∧
+      (∀ r h, IsSign (z r h)) ∧
+      (∀ h, ∑ r, z r h = ∑ r, x r h) := by
+  let measure : (I → G → ℤ) → ℕ :=
+    fun u => columnMismatchCount (fun r => u r g) (fun r => y r g)
+  induction hm : measure x using Nat.strong_induction_on generalizing x with
+  | h n ih =>
+      by_cases hcol : (fun r => x r g) = fun r => y r g
+      · refine ⟨x, PairedColumnReach.refl x, ?_, ?_, hxodd, hxsign, ?_⟩
+        · intro r
+          exact DFunLike.congr_fun hcol r
+        · intro r
+          rw [hxodd r g, hyodd r g]
+          congr 1
+          exact DFunLike.congr_fun hcol r
+        · intro h
+          rfl
+      ·
+        obtain ⟨⟨i, j⟩⟩ :=
+          exists_opposite_mismatch_pair
+            (fun r => x r g) (fun r => y r g)
+            (fun r => hxsign r g) (fun r => hysign r g)
+            hsum hcol
+        let x' := switchConjugatePair conj x g i.1 j.1
+        have hlt : measure x' < measure x := by
+          exact columnMismatchCount_switchConjugatePair_lt conj x y g i j
+        have hx'odd : IsOddMatrix conj x' :=
+          switchConjugatePair_odd conj hconj x hxodd g hg i.1 j.1
+        have hx'sign : ∀ r h, IsSign (x' r h) :=
+          switchConjugatePair_isSign conj x hxsign g i.1 j.1
+        have hx'sumg : ∑ r, x' r g = ∑ r, y r g := by
+          rw [sum_switchConjugatePair conj x g i.1 j.1 g, hsum]
+        have hlt' : measure x' < n := by
+          simpa [hm] using hlt
+        obtain ⟨z, hreach, hzg, hzgc, hzodd, hzsign, hzsum⟩ :=
+          ih (measure x') hlt' x' rfl hx'sign hxodd
+            hyodd hx'sumg
+        refine ⟨z, PairedColumnReach.step i j hreach,
+          hzg, hzgc, hzodd, hzsign, ?_⟩
+        intro h
+        rw [hzsum h, sum_switchConjugatePair conj x g i.1 j.1 h]
+
 /-- A paired opposite mismatch at the selected column is corrected by the
 conjugate-paired switch. -/
 theorem switchConjugatePair_corrects_selected
