@@ -1,0 +1,50 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-centered-collision-733-v0.1"
+owner_repository = "grwtsk/math"
+issue = 733
+parent_issue = 727
+parent_pr = 729
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftCenteredCollision"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftCenteredCollision"
+
+[source_binding]
+stacked_parent_revision = "e61ccef5a2cd0cc0dd4ab00d3eefa62bc4afde65"
+candidate_branch = "research/rh-centered-collision-733"
+theorem_source_commit = "3a1d6230a173eec0a384c5a54d9e224ab6617f55"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftCenteredCollision.lean"
+theorem_source_git_blob = "56287771ef85f91d19fec02dc0a32025b7de2fdc"
+
+[selected_increment]
+left_progression = "mertensTwoPointQuarticCollisionProgression"
+upper_to_progression = "mertensTwoPointQuarticCollisionUpper_eq_progression"
+centered_cell = "mertensTwoPointQuarticCenteredCollisionCell"
+centered_progression = "mertensTwoPointQuarticCenteredCollision"
+progression_to_centered = "mertensTwoPointQuarticCollisionProgression_eq_centered"
+centered_squarefree_cell = "mertensTwoPointQuarticCenteredSquarefreeCell"
+centered_squarefree_packet = "mertensTwoPointQuarticCenteredSquarefreeCollision"
+centered_squarefree_identity = "mertensTwoPointQuarticCenteredCollision_eq_squarefree"
+active_centered_energy = "coreGrowingShiftQuarticCenteredSquarefreeCollisionEnergy"
+active_packet_identity = "coreGrowingShiftQuarticCollisionEnergy_eq_centeredSquarefree"
+centered_compensation = "SubpolynomialCoreGrowingShiftQuarticCenteredSquarefreeCollisionLineCompensation"
+compensation_equivalence = "subpolynomialCoreGrowingShiftQuarticCenteredSquarefreeCollisionLineCompensation_iff"
+conditional_endpoint = "riemannHypothesis_of_centeredSquarefreeCollision_and_collisionFree"
+source_profile = "CenteredSquarefreeCollisionSource"
+adapter = "ToCenteredSquarefreeCollisionLineCompensation"
+hostile_zero_shift = "zeroShift_quarticCollisionSupport_hostileWitness"
+proof_classification = "EXACT_POSITIVE_SHIFT_COLLISION_BIJECTION_AND_CENTERED_SQUAREFREE_REWRITE"
+next_obstruction = "prove centered squarefree binary cancellation with active growing radii and depth multiplicities"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+centered_squarefree_estimate_proved = false
+divisor_square_adapter_constructed = false
+collision_free_budget_proved = false
+riemann_hypothesis_proved = false

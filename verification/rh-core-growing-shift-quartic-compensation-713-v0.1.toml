@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-compensation-713-v0.1"
+owner_repository = "grwtsk/math"
+issue = 713
+parent_issue = 707
+parent_pr = 709
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticCompensation"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticCompensation"
+
+[source_binding]
+stacked_parent_revision = "84bbedccdb6d370bbcb7ac20f10b5b9264f821ce"
+candidate_branch = "research/rh-quartic-compensation-713"
+theorem_source_commit = "c2d1687c31c2865ccdf14c733db2ec937dbdf9a1"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticCompensation.lean"
+theorem_source_git_blob = "7c45ee292120ced9f9b5a3556cbffa350727a6fd"
+
+[selected_increment]
+quartic_cell = "mertensTwoPointQuarticCell"
+quartic_rectangle = "mertensTwoPointQuarticRectangle"
+prefix_square_identity = "mertensTwoPointPrefix_sq_eq_quarticRectangle"
+quartic_diagonal = "mertensTwoPointQuarticDiagonal"
+quartic_off_diagonal = "mertensTwoPointQuarticOffDiagonal"
+active_rectangle = "coreGrowingShiftQuarticRectangleEnergy"
+active_diagonal = "coreGrowingShiftQuarticDiagonalEnergy"
+active_off_diagonal = "coreGrowingShiftQuarticOffDiagonalEnergy"
+packet_decomposition = "coreGrowingShiftBinaryPrefixSquareEnergy_eq_diagonal_add_offDiagonal"
+diagonal_bound = "coreGrowingShiftQuarticDiagonalEnergy_le_four_cube"
+compensation_source = "SubpolynomialCoreGrowingShiftQuarticOffDiagonalCompensation"
+compensation_equivalence = "subpolynomialCoreGrowingShiftQuarticOffDiagonalCompensation_iff_prefixSquareEnergy"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftQuarticCompensation"
+external_source = "GrowingShiftFourPointMobiusSource"
+adapter = "ToCoreGrowingShiftQuarticCompensationAdapter"
+hostile_witness = "quarticOffDiagonalCompensation_hostileWitness"
+proof_classification = "EXACT_QUARTIC_EXPANSION_DIAGONAL_BOUND_AND_SIGNED_COMPENSATION_EQUIVALENCE"
+next_obstruction = "prove active off-diagonal four-point cancellation or a direct signed dispersion estimate"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+four_point_chowla_proved = false
+corrected_elliott_adapter_constructed = false
+dispersion_estimate_proved = false
+quartic_compensation_proved = false
+riemann_hypothesis_proved = false

@@ -1,0 +1,244 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-triangular-correlation-369-v0.1"
+owner_repository = "grwtsk/math"
+issue = 369
+parent_issue = 366
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 367
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicTriangularMertensCorrelation"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicTriangularMertensCorrelation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "85b583e91a620836ae807ba07c78614c5f45164c"
+stacked_parent_tree = "fd1b72012f3b3745020caa7684b0b3e5662687d6"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicTriangularMertensCorrelation.lean"
+new_module_git_blob = "c439fdd25f2c29ef21afcbe598aec7a0b2c0bf5a"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-triangular-mertens-correlation.md"
+mathematical_note_git_blob = "4ef52dfe1a6bc8f028988302f9743da9e0dae4ae"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicTriangularMertensCorrelation"
+authored_declaration_count = 16
+definition_count = 3
+theorem_script_count = 13
+private_helper_count = 1
+
+[[inherited_targets]]
+path = "verification/rh-dyadic-ordered-pair-366-v0.1.toml"
+git_blob = "d0a623ae9e738a1f2896273188ed11dce14fc2c0"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicOrderedPairMertensCorrelation.lean"
+git_blob = "03d2207862b570dfc9ff18020475f7c13de6f713"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[upstream_sources]]
+path = "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean"
+git_blob = "57817369f523ecc3a166a8a51810d2af23589399"
+selected_declarations = ["pickupMertensPrefix"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[diagnostics]
+engine = "python-fractions-exact"
+check_count = 771761
+report_sha256 = "71fa3fb8970fc52bfa3795254c3dd6cb51a04ec11fd909d5c9aeec9f9e839553"
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 9
+exhaustive_stream_count = 19683
+actual_moebius_cutoff = 4096
+largest_checked_dyadic_scale = 2048
+normal_mode_status = "PASS"
+optimized_mode_status = "NOT_SEPARATELY_RUN"
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+previous_prefix_required = true
+current_prefix_replacement_rejected = true
+ordered_pair_factor_two_required = true
+single_orientation_rejected = true
+triangular_signs_retained = true
+absolute_value_replacement_rejected = true
+closed_prefix_required = true
+half_open_dyadic_cells_required = true
+finite_block_tables_not_universal = true
+lower_bound_not_substitute_for_upper_bound = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+tail_kernel_formalized = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+
+[[declarations]]
+source_name = "mertensPrefixTriangularCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = """def mertensPrefixTriangularCorrelation (n : ℕ) : ℝ"""
+source_signature_sha256 = "769a45dc7b89785018c496fd7da57d9ad0fe37ce12d3267373406dba86c5d838"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensDyadicTriangularCorrelation (j : ℕ) : ℝ"""
+source_signature_sha256 = "931e0b33fe880e106c7e48932b23754bcf6f3407d295303aa6ecfe1dbac48886"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicTriangularMertensCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = """def SubpolynomialDyadicTriangularMertensCorrelation : Prop"""
+source_signature_sha256 = "ca41792bf7a9d6d1d9f804db866052cd9ff83f71637683c8febad943d08adc4d"
+
+[[declarations]]
+source_name = "closed_prefix_succ"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem closed_prefix_succ (f : ℕ → ℝ) (n : ℕ) :
+    (∑ k ∈ Finset.Icc 1 (n + 1), f k) =
+      (∑ k ∈ Finset.Icc 1 n, f k) + f (n + 1)"""
+source_signature_sha256 = "18e757a11a65c8b69624c70ec1ec8ee29bfb72ab77fdc02cf2b8740f96aa8f49"
+
+[[declarations]]
+source_name = "pickupMertensPrefix_zero_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """@[simp] theorem pickupMertensPrefix_zero_triangular :
+    pickupMertensPrefix 0 = 0"""
+source_signature_sha256 = "fbef513a7514c75a2eb98087b27a366556305adb893ac34dac60fae839e8a072"
+
+[[declarations]]
+source_name = "pickupMertensPrefix_succ_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem pickupMertensPrefix_succ_triangular (n : ℕ) :
+    pickupMertensPrefix (n + 1) =
+      pickupMertensPrefix n + moebiusReal (n + 1)"""
+source_signature_sha256 = "96bca34be01c13401dee3571bdeb21f00d7a1800c28df1a41edaf1b0d54ddac7"
+
+[[declarations]]
+source_name = "mertensPrefixSquareDiagonal_succ_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensPrefixSquareDiagonal_succ_triangular (n : ℕ) :
+    mertensPrefixSquareDiagonal (n + 1) =
+      mertensPrefixSquareDiagonal n + moebiusReal (n + 1) ^ 2"""
+source_signature_sha256 = "9ef27c8c43ceb7f01dedc7e5c6b1d139f308d1d027fee7e7aec079a94828779e"
+
+[[declarations]]
+source_name = "mertensPrefixTriangularCorrelation_succ"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensPrefixTriangularCorrelation_succ (n : ℕ) :
+    mertensPrefixTriangularCorrelation (n + 1) =
+      mertensPrefixTriangularCorrelation n +
+        2 * moebiusReal (n + 1) * pickupMertensPrefix n"""
+source_signature_sha256 = "31bb3893bb00a146db43b53dc51a44be6f67dc7d53029317f60ed980bdb0733b"
+
+[[declarations]]
+source_name = "pickupMertensPrefix_sq_eq_diagonal_add_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem pickupMertensPrefix_sq_eq_diagonal_add_triangular (n : ℕ) :
+    pickupMertensPrefix n ^ 2 =
+      mertensPrefixSquareDiagonal n +
+        mertensPrefixTriangularCorrelation n"""
+source_signature_sha256 = "4dd7f117002399a8d480e6178ec5f7490ead34ecced6b25e4eaff125bf0bf82e"
+
+[[declarations]]
+source_name = "mertensPrefixOrderedPairCorrelation_eq_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensPrefixOrderedPairCorrelation_eq_triangular (n : ℕ) :
+    mertensPrefixOrderedPairCorrelation n =
+      mertensPrefixTriangularCorrelation n"""
+source_signature_sha256 = "0d955b11bedbc40a2a4c6e9c95fbff9295901022ec80589315582b0ea3925e48"
+
+[[declarations]]
+source_name = "weightedMertensDyadicOrderedPairCorrelation_eq_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicOrderedPairCorrelation_eq_triangular (j : ℕ) :
+    weightedMertensDyadicOrderedPairCorrelation j =
+      weightedMertensDyadicTriangularCorrelation j"""
+source_signature_sha256 = "5878ea2281258e87a3f424ce55fdec4a64a4ce47f78bd9865a9cf49b81c7d955"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangular_iff_orderedPair"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicTriangular_iff_orderedPair :
+    SubpolynomialDyadicTriangularMertensCorrelation ↔
+      SubpolynomialDyadicOrderedPairMertensCorrelation"""
+source_signature_sha256 = "4cc589b4ccf446f7b1c28ae38c78d1e2ff6ddd8758450df26f6d3d40ae48d129"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangular_iff_block"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicTriangular_iff_block :
+    SubpolynomialDyadicTriangularMertensCorrelation ↔
+      SubpolynomialDyadicBlockWeightedMertensSquare"""
+source_signature_sha256 = "f7eb05da8fea3f8f2f407bffb519dcc2b85960405e6d351680a00c9c4ca4346e"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangular_iff_cumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicTriangular_iff_cumulative :
+    SubpolynomialDyadicTriangularMertensCorrelation ↔
+      SubpolynomialCumulativeWeightedMertensSquare"""
+source_signature_sha256 = "b9659ffef680c9f224e6f2f866cde59d38f77ee72fcdca604d516c5903bcebe0"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangular_iff_allPositiveWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicTriangular_iff_allPositiveWeightedMertensSquare :
+    SubpolynomialDyadicTriangularMertensCorrelation ↔
+      AllPositiveWeightedMertensSquare"""
+source_signature_sha256 = "18b13548a07ef1b2d218271f2329f67f1a80379e7b265f035a318048afbbef07"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicTriangularMertensCorrelation"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem riemannHypothesis_of_subpolynomialDyadicTriangularMertensCorrelation
+    (htri : SubpolynomialDyadicTriangularMertensCorrelation) :
+    _root_.RiemannHypothesis"""
+source_signature_sha256 = "7c84902be2fc6c035e63704c983a87dc0a64467693404c56f17fe653a2a1bcde"

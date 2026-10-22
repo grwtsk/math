@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-weighted-chowla-packet-507-v0.1"
+owner_repository = "grwtsk/math"
+issue = 507
+parent_issue = 503
+parent_pr = 504
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensWeightedChowlaPacket"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensWeightedChowlaPacket"
+
+[source_binding]
+stacked_parent_revision = "d93ba416de2b2b8a123fb878640c1dfd7d478728"
+candidate_branch = "research/rh-weighted-chowla-507-20261021"
+theorem_source_commit = "17ba7fd09470401fc174c26d60e54c80f2d5133f"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensWeightedChowlaPacket.lean"
+theorem_source_git_blob = "6a34233da9ef4dde8c05996a2abb868ffce0f535"
+
+[selected_increment]
+weighted_average = "weightedMertensTwoPointChowlaAverage"
+slice_identity = "weightedMertensDyadicSignedAbelDepthSlice_eq_weightedChowlaAverage"
+one_sided_transfer = "weightedMertensTwoPointChowlaAverage_le_of_prefix_bound"
+absolute_transfer = "abs_weightedMertensTwoPointChowlaAverage_le_of_abs_prefix_bound"
+packet = "weightedMertensDyadicChowlaPacket"
+packet_identity = "weightedMertensDyadicChowlaPacket_eq_signedAbelDepthPacket"
+supplier = "SubpolynomialDyadicWeightedMertensChowlaPacket"
+supplier_equivalence = "subpolynomialDyadicWeightedMertensChowlaPacket_iff_signedDepth"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialDyadicWeightedMertensChowlaPacket"
+proof_classification = "EXACT_FINITE_WEIGHTED_CHOWLA_REPRESENTATION"
+next_obstruction = "all-scale weighted Chowla estimate"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+weighted_chowla_estimate_proved = false
+unweighted_chowla_estimate_proved = false
+elliott_proved = false
+riemann_hypothesis_proved = false
