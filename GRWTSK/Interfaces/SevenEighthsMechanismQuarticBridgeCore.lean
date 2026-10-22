@@ -95,6 +95,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerPeriodCor
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerFirstMomentCorrectionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerFirstMomentHarmonicControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerDiscreteReproductionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerSampleNonnegativeControls
 
 set_option autoImplicit false
 
