@@ -77,3 +77,43 @@ c2 = c1 + z*d^2.
 Conversely, adding `z*d^2` preserves the square-modulus residue class.
 
 The remaining `CenteredWindingLagSumReindexing` proposition is only the finite-sum bijection/reordering layer. It is not yet proved. No placeholder proof is used.
+
+
+## Exact lag partition closed
+
+The remaining finite partition/reindexing layer is now source-scripted without placeholders.
+
+The canonical lag-coordinate object is
+
+```lean
+parityCenteredIntegerCoordinateLagPartitionCovariance
+```
+
+whose predicate says that there exists
+```text
+1 <= z <= floor(b/d^2)
+```
+with either
+```text
+c2 = c1 + z*d^2
+```
+or
+```text
+c1 = c2 + z*d^2.
+```
+
+The theorem
+
+```lean
+parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_lagPartition
+```
+
+proves this is exactly the unequal-congruent-center predicate. Hence
+
+```lean
+parityCenteredIntegerCoordinateLagPartitionCovariance_eq_wrap
+```
+
+identifies the lag partition directly with the nonzero-winding wrap.
+
+The earlier explicit positive-lag sum remains available as a useful presentation object, but it is no longer required as an unproved dependency. The analytic frontier is now the lag-partition covariance estimate itself.
