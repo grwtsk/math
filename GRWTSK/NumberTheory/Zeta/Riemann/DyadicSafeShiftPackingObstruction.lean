@@ -115,7 +115,7 @@ theorem no_offLineDyadicCommonLowerMassAtZero
 raw-safe geometry. -/
 def OffLineDyadicCommonLowerMassClaim : Prop :=
   ∀ z : ZeroPoint, ∀ ha : zeroDefect z.1 ≠ 0,
-    OffLineDyadicCommonLowerMassAtZero z ha
+    Nonempty (OffLineDyadicCommonLowerMassAtZero z ha)
 
 /-- For this raw safe dyadic geometry the proposed lower-density supplier is
 equivalent to RH: under an off-line witness it is impossible, while under RH
@@ -133,8 +133,8 @@ theorem offLineDyadicCommonLowerMassClaim_iff_rh :
       unfold zeroDefect at hzero
       dsimp [z] at hzero
       linarith
-    exact (no_offLineDyadicCommonLowerMassAtZero z ha)
-      (supplier z ha)
+    obtain ⟨data⟩ := supplier z ha
+    exact (no_offLineDyadicCommonLowerMassAtZero z ha) data
   · intro hrh z ha
     have hline : z.1.re = 1 / 2 :=
       hrh z.1 z.2.1 z.2.2.1 z.2.2.2
