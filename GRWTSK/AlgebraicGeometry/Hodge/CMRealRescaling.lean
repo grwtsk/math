@@ -173,7 +173,11 @@ local notation "E⁺" => NumberField.maximalRealSubfield E
 
 /-- The canonical inclusion of the maximal totally real subfield. -/
 noncomputable def maximalRealSubfieldInclude : E⁺ →ₐ[ℚ] E :=
-  IsScalarTower.toAlgHom ℚ E⁺ E
+  RingHom.toRatAlgHom (algebraMap E⁺ E)
+
+@[simp]
+theorem maximalRealSubfieldInclude_apply (x : E⁺) :
+    maximalRealSubfieldInclude E x = algebraMap E⁺ E x := rfl
 
 /-- The maximal-real-subfield inclusion is fixed by canonical CM conjugation. -/
 theorem maximalRealSubfieldInclude_fixed (x : E⁺) :
@@ -224,7 +228,8 @@ theorem complexEmbeddingAt_representativeOfRealEmbedding
     (τ : E⁺ →ₐ[ℚ] ℂ) :
     complexEmbeddingAt E (representativeOfRealEmbedding E τ) =
       liftedRealEmbedding E τ := by
-  simpa [representativeOfRealEmbedding, complexEmbeddingAt] using
+  simpa [representativeOfRealEmbedding, galoisLiftOfRealEmbedding,
+    complexEmbeddingAt] using
     (Classical.choose_spec (exists_galoisLiftOfRealEmbedding E τ))
 
 /-- The automorphism group over the maximal real subfield has exactly the two
@@ -236,7 +241,7 @@ theorem maximalRealSubfieldAlgEquiv_eq_one_or_complexConj
   · exact Or.inl hτ
   · right
     have hcard : Nat.card (E ≃ₐ[E⁺] E) = 2 :=
-      (Algebra.IsQuadraticExtension.finrank_eq_two E⁺ E) ▸
+      (IsQuadraticExtension.finrank_eq_two E⁺ E) ▸
         IsGalois.card_aut_eq_finrank E⁺ E
     rw [Nat.card_eq_two_iff' 1] at hcard
     exact ExistsUnique.unique hcard hτ
@@ -313,6 +318,12 @@ theorem canonicalRepresentatives_cover
   apply eq_or_eq_conj_of_eq_on_maximalRealSubfield E
   intro x
   apply (baseComplexEmbedding E).injective
+  change
+    complexEmbeddingAt E σ (algebraMap E⁺ E x) =
+      complexEmbeddingAt E
+        (representativeOfRealEmbedding E
+          (canonicalEmbeddingOrder (K := E⁺) i))
+        (algebraMap E⁺ E x)
   have hi : order i = τ := Equiv.apply_symm_apply order τ
   calc
     complexEmbeddingAt E σ (algebraMap E⁺ E x) = τ x := by
@@ -324,11 +335,14 @@ theorem canonicalRepresentatives_cover
       exact liftedRealEmbedding_algebraMap E (order i) x
     _ =
         complexEmbeddingAt E
-          (representativeOfRealEmbedding E (order i))
+          (representativeOfRealEmbedding E
+            (canonicalEmbeddingOrder (K := E⁺) i))
           (algebraMap E⁺ E x) := by
-      rw [complexEmbeddingAt_representativeOfRealEmbedding]
-  all_goals
-    simpa [order] using this
+      simpa [order] using
+        (DFunLike.congr_fun
+          (complexEmbeddingAt_representativeOfRealEmbedding
+            E (order i))
+          (algebraMap E⁺ E x)).symm
 
 /-- Canonical realization of the abstract real-rescaling interface by the
 maximal totally real subfield \`E⁺\`. -/
@@ -361,8 +375,7 @@ noncomputable def canonicalMaximalRealRescalingInterface :
                     E (order i))
                   (maximalRealSubfieldInclude E x)
         _ = order i x := by
-          simpa [maximalRealSubfieldInclude] using
-            liftedRealEmbedding_algebraMap E (order i) x
+          simpa using liftedRealEmbedding_algebraMap E (order i) x
     calc
       (complexEmbeddingAt E
           (representativeOfRealEmbedding E
