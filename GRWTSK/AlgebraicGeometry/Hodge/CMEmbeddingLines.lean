@@ -149,14 +149,17 @@ theorem fourFactor_allCoordinates_bidegree_two_two
 all-coordinate bidegree conclusion after forgetting only the underlying vector
 coordinates. -/
 theorem linearFourFactor_allCoordinates_bidegree_two_two
-    {C V G : Type*} [Field C] [AddCommGroup V] [Module C V]
-    [FiniteDimensional C V]
+    {C V₁ V₂ V₃ V₄ G : Type*} [Field C]
+    [AddCommGroup V₁] [Module C V₁] [FiniteDimensional C V₁]
+    [AddCommGroup V₂] [Module C V₂] [FiniteDimensional C V₂]
+    [AddCommGroup V₃] [Module C V₃] [FiniteDimensional C V₃]
+    [AddCommGroup V₄] [Module C V₄] [FiniteDimensional C V₄]
     {conj : G → G}
     (v₁ v₂ v₃ v₄ : OddSignRow G conj)
-    (R₁ : LinearEmbeddingLineRealization C V G conj v₁)
-    (R₂ : LinearEmbeddingLineRealization C V G conj v₂)
-    (R₃ : LinearEmbeddingLineRealization C V G conj v₃)
-    (R₄ : LinearEmbeddingLineRealization C V G conj v₄)
+    (R₁ : LinearEmbeddingLineRealization C V₁ G conj v₁)
+    (R₂ : LinearEmbeddingLineRealization C V₂ G conj v₂)
+    (R₃ : LinearEmbeddingLineRealization C V₃ G conj v₃)
+    (R₄ : LinearEmbeddingLineRealization C V₄ G conj v₄)
     (hbal : FourBalance v₁ v₂ v₃ v₄) :
     ∀ g,
       (pIndex ((R₁.toEmbeddingLineRealization).typeAt g) +
