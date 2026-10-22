@@ -367,6 +367,34 @@ theorem antipodalPairFrequency_bounds (M : ℕ) (H : Finset ℕ)
   · positivity
   · exact (div_le_iff₀ (sq_pos_of_pos hMpos)).2 (by simpa using hbound)
 
+/-- A purely finite separation of the empty character in a complete
+subtype-indexed character sum. This is the normalization identity
+needed after the powerset/subtype bijection. -/
+theorem subtype_character_sum_empty_split
+    (H : Finset ℕ)
+    (f : Finset {h : ℕ // h ∈ H} → ℚ) :
+    (∑ S : Finset {h : ℕ // h ∈ H}, f S) =
+      f ∅ +
+        ∑ S ∈ (Finset.univ :
+          Finset (Finset {h : ℕ // h ∈ H})).erase ∅, f S := by
+  classical
+  have he : (∅ : Finset {h : ℕ // h ∈ H}) ∈
+      (Finset.univ : Finset (Finset {h : ℕ // h ∈ H})) := Finset.mem_univ _
+  rw [← Finset.sum_erase_add he]
+  ring
+
+/-- The complete empty character contributes exactly one after
+normalizing its M² ordered-root pairs, provided M>0. -/
+theorem empty_character_root_pair_normalization (M : ℕ)
+    (hM : 0 < M) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+        (1 : ℚ)) / (M : ℚ) ^ 2) = 1 := by
+  have hM0 : (M : ℚ) ≠ 0 := by exact_mod_cast Nat.ne_of_gt hM
+  simp only [Finset.sum_const, Finset.card_product, Finset.card_range,
+    nsmul_eq_mul]
+  field_simp [hM0]
+  ring
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
