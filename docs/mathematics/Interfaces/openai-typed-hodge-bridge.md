@@ -598,6 +598,52 @@ The unresolved step is canonical instantiation of that interface with
 the actual Weil-twisted trace pairing, lattice integrality, and the Riemann
 criterion.
 
+## 4g. Atomic switch pairing combinatorics
+
+The finite combinatorial core of the manuscript switch reduction is now
+represented in
+\`GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean\`.
+
+For one column of two sign matrices, let \(x_i,y_i\in\{\pm1\}\). If
+
+\[
+\sum_i x_i=\sum_i y_i,
+\]
+
+then the numbers of mismatches
+
+\[
+(x_i,y_i)=(+1,-1)
+\quad\text{and}\quad
+(x_i,y_i)=(-1,+1)
+\]
+
+are equal. The local source proves that count equality and constructs an
+explicit finite equivalence between the two mismatch sets:
+
+~~~text
+mismatch_card_eq_of_sum_eq
+mismatchPairing
+~~~
+
+It also defines the atomic two-row column switch and proves:
+
+~~~text
+sum_switchPair
+switchPair_corrects_mismatch_pair
+~~~
+
+so one paired opposite mismatch can be corrected without changing the column
+sum.
+
+This is the exact one-column finite lemma used in the manuscript argument that
+successive column corrections connect two balanced lists by elementary
+two-row switches. The local source does not yet package the full multi-column
+finite switch sequence, and it makes no Hodge, scalar-descent, or algebraicity
+claim.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
