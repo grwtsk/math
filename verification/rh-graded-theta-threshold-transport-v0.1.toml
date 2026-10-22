@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-graded-theta-threshold-transport-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "50b4f84b5b916bc577317424fc7362738734bded"
+parent_tree = "756f7678452b43953349b4f523f9508371f8a6c2"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / GRADED_THETA_TO_SAME_ZERO_FREE_THRESHOLD_DEFINED"
+
+[graded_theta]
+premise = "abs(theta(u)-u)+1 <= C*X^(rho+eta/2) on [X,2X]"
+rho_range = "rho>=1/2"
+higher_prime_powers_absorbed = true
+energy_exponent = "-2*(1-rho)+eta"
+zero_free_threshold = "rho"
+threshold_gain = "0"
+
+[structural_result]
+seven_eighths_input_returns = "seven-eighths zero-free"
+linear_bootstrap_to_smaller_threshold = false
+required_new_input = "nonlinear exponent-improving inequality / positivity / moment amplification / density / quartic extraction"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.GradedThetaThresholdTransport"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/GradedThetaThresholdTransport.lean"
+blob = "aa3f3eaf8aaac0912724bc7f7a10c8cfbd4acbc3"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedThetaThresholdTransportControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/GradedThetaThresholdTransportControls.lean"
+blob = "7e7c920e5920eb27988b4cb1276205ce0086e2aa"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "42c745ee87ad062f55134c4c3e6a3a501c8cf15c"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/graded-theta-threshold-transport.md"
+blob = "6d6037f511abb663b45e3ef9d870ee286bfd7dc1"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+GRADED_THETA_TO_SAME_ZERO_FREE_THRESHOLD_DEFINED = true
+SEVEN_EIGHTHS_LINEAR_BOOTSTRAP_GAIN = false
