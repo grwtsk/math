@@ -3,6 +3,7 @@ Human mathematical direction: R.A. Jacob Martone.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm
+import GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling
 
 /-!
 # Conditional weight-one CM Riemann realization interface
