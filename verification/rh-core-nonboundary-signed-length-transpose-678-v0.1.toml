@@ -1,0 +1,46 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-nonboundary-signed-length-transpose-678-v0.1"
+owner_repository = "grwtsk/math"
+issue = 678
+parent_issue = 673
+parent_pr = 676
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreNonboundarySignedLengthTranspose"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreNonboundarySignedLengthTranspose"
+
+[source_binding]
+stacked_parent_revision = "fdb885abbcc648bff0b2531c49038968fdab18a6"
+candidate_branch = "research/rh-signed-length-678"
+theorem_source_commit = "16fb2f693fa42e86fc114be55171e9b6b3a76c0f"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreNonboundarySignedLengthTranspose.lean"
+theorem_source_git_blob = "0c2a59cbcea923b8061c5d3f65d9e571c2df70b7"
+
+[selected_increment]
+signed_terminal = "coreNonboundarySignedTerminalContribution"
+signed_interior = "harmonicSignedLongInteriorContribution"
+depth_decomposition = "coreNonboundarySignedDepthRemainder_eq_terminal_add_interior"
+terminal_selector = "coreNonboundarySignedTerminalContribution_eq_selector"
+interior_selector = "harmonicSignedLongInteriorContribution_eq_selector"
+one_depth_identity = "coreNonboundarySignedDepthRemainder_eq_lengthwise"
+length_slice = "coreNonboundarySignedLengthSlice"
+length_packet = "coreNonboundarySignedLengthPacket"
+outer_fubini = "coreNonboundarySignedRemainderPacket_eq_lengthPacket"
+signed_supplier = "SubpolynomialCoreNonboundarySignedLengthPacket"
+l1_to_signed = "subpolynomialCoreNonboundarySignedLengthPacket_of_reciprocalSquareL1"
+conditional_endpoint = "riemannHypothesis_of_classicalWeakMertensStep_and_signedLength"
+hostile_witness = "signedRetainedLengthCancellation_hostileWitness"
+proof_classification = "EXACT_SIGNED_RETAINED_LENGTH_TRANSPOSE"
+next_obstruction = "prove signed nonboundary length-packet cancellation or construct a bilinear dispersion adapter"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+signed_nonboundary_supplier_proved = false
+short_interval_theorem_applied = false
+weak_mertens_proved = false
+riemann_hypothesis_proved = false
