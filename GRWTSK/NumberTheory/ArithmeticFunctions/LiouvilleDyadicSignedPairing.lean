@@ -11,8 +11,7 @@ set_option autoImplicit false
 # Exact signed source/odd-residual pairing for canonical Liouville energy
 
 Owners: grwtsk/math #630, #441. Draft PR #638, direct parent
-992a4d1f6d4fdb40aa1738ebbfd3be712db9bca6df is NOT a source SHA;
-the actual parent head is 992a4d1f6d4fdb40aaac3387747451d5ae31b8ab.
+992a4d1f6d4fdb40aaac3387747451d5ae31b8ab.
 
 The prior dyadic inequality
   E_lifted <= (E_source + E_oddResidual)/2
