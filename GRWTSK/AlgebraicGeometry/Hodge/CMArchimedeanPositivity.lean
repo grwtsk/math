@@ -157,6 +157,13 @@ def SignControlledXi.coordinateWeilForm
     (complexEmbeddingAt E σ X.xi * weilFactor E v σ) *
       (Complex.normSq (z σ) : ℂ)
 
+/-- Coordinate Hodge energy associated with the sign-controlled xi. -/
+def SignControlledXi.energy
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℝ :=
+  ∑ σ, X.coeff σ * Complex.normSq (z σ)
+
 /-- The coordinate Weil form is exactly the real positive energy, embedded
 in C. -/
 theorem SignControlledXi.coordinateWeilForm_eq_energy
@@ -170,12 +177,6 @@ theorem SignControlledXi.coordinateWeilForm_eq_energy
   intro σ _
   rw [X.embedding_mul_weilFactor]
   simp [SignControlledXi.coeff]
-/-- Coordinate Hodge energy associated with the sign-controlled xi. -/
-def SignControlledXi.energy
-    {v : CMNumberFieldIndex.OddSignRow E}
-    (X : SignControlledXi E v)
-    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℝ :=
-  ∑ σ, X.coeff σ * Complex.normSq (z σ)
 
 theorem SignControlledXi.energy_nonneg
     {v : CMNumberFieldIndex.OddSignRow E}
