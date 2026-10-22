@@ -128,7 +128,7 @@ theorem complexifiedTracePairing_self
     (z : G → ℂ) :
     X.complexifiedTracePairing z z = 0 := by
   have h := complexifiedTracePairing_skew E X z z
-  exact CharZero.eq_neg_self_iff.mp h.symm
+  exact CharZero.eq_neg_self_iff.mp h
 
 /-- The real-valued Riemann form is therefore alternating on the entire
 coordinate space, hence in particular on its real fixed locus. -/
