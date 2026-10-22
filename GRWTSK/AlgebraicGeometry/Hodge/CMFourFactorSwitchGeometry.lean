@@ -1203,6 +1203,54 @@ theorem CMFiniteFourfoldAssembly.globalTensor_scalarConjugate
       E.carrier σ D.tensor]
   rw [D.scalar_transport_eq σ]
 
+/-- Hodge membership for every transported finite-CM assembled generator.
+
+This is the correct pre-descent Hodge interface for the finite-level switch
+construction. -/
+structure CMFiniteTransportedGeneratorHodgeData
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  generator_mem :
+    ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+      coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) ∈
+          hodgeSubspace
+
+/-- Finite-level transported-generator Hodge membership implies Hodge
+membership of every absolute scalar conjugate of the global assembled tensor. -/
+theorem CMFiniteTransportedGeneratorHodgeData.all_scalar_conjugates_mem
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (H : CMFiniteTransportedGeneratorHodgeData D hodgeSubspace)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          σ D.globalTensor) ∈ hodgeSubspace := by
+  rw [D.globalTensor_scalarConjugate σ]
+  exact H.generator_mem σ
+
+/-- The finite-CM transported-generator package directly supplies orbit-span
+containment for the assembled global tensor. -/
+theorem CMFiniteTransportedGeneratorHodgeData.orbitSpan_le_hodge
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (H : CMFiniteTransportedGeneratorHodgeData D hodgeSubspace) :
+    scalarConjugateOrbitSpan D.globalTensor ≤ hodgeSubspace := by
+  rw [scalarConjugateOrbitSpan]
+  apply Submodule.span_le.mpr
+  intro z hz
+  obtain ⟨σ, rfl⟩ := hz
+  exact H.all_scalar_conjugates_mem σ
+
 /-- A switched tensor supported on one finite Galois CM intermediate field. -/
 structure CMFiniteGaloisTensorCarrier
     {V : Type*} [AddCommGroup V] [Module ℚ V]
