@@ -182,6 +182,34 @@ RATIONAL_WITNESS
 
 Syntax normalization does not create any of these stages.
 
+## 3a. Arbitrary Galois and ambient-complex descent
+
+The upstream OpenAI formal source goes beyond finite extensions. It first shows
+that every tensor over an arbitrary Galois extension is defined over a finite
+Galois intermediate field, applies the finite theorem there, and then extends
+coefficients again.
+
+The local source
+\`GRWTSK/LinearAlgebra/TensorProduct/GaloisScalarDescent.lean\` now mirrors
+that architecture with targets
+
+~~~text
+galoisScalarDescent
+scalarDescentAmbient
+traceDescent
+~~~
+
+where \`traceDescent\` is the algebraic-number/complex ambient form used by the
+CM-Hodge argument.
+
+This significantly narrows the Hodge dependency: scalar descent itself has a
+formal upstream source and a local source adaptation. What remains manuscript
+level is proving that the selected complex-linear subspace is the correct
+Hodge-map/Hodge-class subspace and the subsequent algebraicity theorem.
+
+Because the upstream theorem uses Lean 4.34.1/mathlib d13f... while GRWTSK uses
+Lean 4.33.0/mathlib db58..., these local ports remain SOURCE_DRAFT / NOT_RUN.
+
 ## 4. Four-label CM balance
 
 Let \(E/\mathbf Q\) be a finite Galois CM field with central complex
@@ -380,6 +408,33 @@ Thus the complementary weak-admissibility bridge no longer needs Hodge
 additivity as an external premise. What remains external is the actual
 filtered-Frobenius construction, Frobenius commutation, the weak-admissibility
 inequalities, Newton additivity, and total Hodge/Newton equality.
+
+## 5c. Projector commutation automatically passes to the complement
+
+The local filtered-projector source now also carries a linear Frobenius
+operator \(\varphi\) and the single commutation hypothesis
+
+\[
+p\varphi=\varphi p.
+\]
+
+It proves automatically
+
+\[
+(1-p)\varphi=\varphi(1-p),
+\]
+
+and that both \(\operatorname{im}p\) and
+\(\operatorname{im}(1-p)\) are Frobenius-stable.
+
+Therefore the manuscript need only supply the actual projector and the
+commutation of \(p\) with Frobenius. Complement commutation and projected-range
+stability are no longer separate external assumptions.
+
+An additional optional theorem shows stability of the filtered intersections
+if the ambient filtration itself is Frobenius-stable. That stronger hypothesis
+is not required by the filtered-\(\varphi\)-module argument and is not assumed
+by the bridge.
 
 ## 6. Polarization as a source of CM rigidity
 
