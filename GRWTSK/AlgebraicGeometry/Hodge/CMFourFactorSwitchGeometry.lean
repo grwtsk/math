@@ -967,6 +967,56 @@ instance (E : CMGaloisIntermediateField) :
     IsCMField E.carrier :=
   E.isCMField
 
+/-- Include both tensor factors from one finite Galois CM intermediate
+field into AlgebraicNumbers. -/
+def CMGaloisIntermediateField.factorTensorInclusion
+    (E : CMGaloisIntermediateField) :
+    (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (AlgebraicNumbers ⊗[ℚ] AlgebraicNumbers) :=
+  TensorProduct.map
+    E.carrier.val.toLinearMap
+    E.carrier.val.toLinearMap
+
+@[simp]
+theorem CMGaloisIntermediateField.factorTensorInclusion_tmul
+    (E : CMGaloisIntermediateField)
+    (a x : E.carrier) :
+    E.factorTensorInclusion (a ⊗ₜ[ℚ] x) =
+      (a.1 : AlgebraicNumbers) ⊗ₜ[ℚ] (x.1 : AlgebraicNumbers) := by
+  simp [CMGaloisIntermediateField.factorTensorInclusion]
+
+/-- Four canonical embedding-line factors supported on one finite Galois CM
+intermediate field. -/
+structure CMFourFactorSupport
+    (factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ) (E := AlgebraicNumbers)) where
+  E : CMGaloisIntermediateField
+  localVector : Fin 4 → E.carrier ⊗[ℚ] E.carrier
+  localCharacter : Fin 4 → E.carrier ≃ₐ[ℚ] E.carrier
+  local_mem :
+    ∀ r,
+      localVector r ∈
+        CMRegularBaseChange.embeddingEigenspace
+          (k := ℚ) (localCharacter r).toAlgHom
+  vector_inclusion :
+    ∀ r, E.factorTensorInclusion (localVector r) = factors.vector r
+  character_restriction :
+    ∀ r, factors.character r |>.restrictNormal E.carrier = localCharacter r
+
+/-- Scalar transport of a locally supported factor remains inside the same
+finite Galois CM carrier. -/
+def CMFourFactorSupport.scalarTransportLocal
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ) (E := AlgebraicNumbers)}
+    (S : CMFourFactorSupport factors)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    Fin 4 → S.E.carrier ⊗[ℚ] S.E.carrier :=
+  fun r =>
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+      (σ.restrictNormal S.E.carrier) (S.localVector r)
+
 /-- A switched tensor supported on one finite Galois CM intermediate field. -/
 structure CMFiniteGaloisTensorCarrier
     {V : Type*} [AddCommGroup V] [Module ℚ V]
