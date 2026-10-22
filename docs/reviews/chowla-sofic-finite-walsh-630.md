@@ -1047,3 +1047,76 @@ review note linked above.
 **Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 ARITHMETIC_BINARY_ADAPTER_OPEN /
 ALL_ORDER_GROWING_SHIFT_CHOWLA_OPEN.
+
+## 16. Independent arithmetic continuation: every fixed positive additive shift
+
+**Research date:** 2026-10-22. **Direct parent head:**
+`2857898617903e29d46baca3c25016a23acdee13`.
+
+A new arithmetic leaf now extends the preceding adjacent-shift
+identity to **each fixed positive additive shift h**:
+
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedShiftAffine.lean`
+
+For `h=2j+1`, the paired correlation of
+`lambda(n+1)lambda(n+1+h)` is the negative of two
+fixed affine-form correlations with nonproportionality
+determinants `h` and `h`. For `h=2j>0`, it is
+the positive sum of two fixed affine correlations with
+determinants `4j` and `j`. The excluded `h=0` case
+has identically positive correlation, with prefix exactly
+equal to its sample size. Both parity signs are essential.
+
+The endpoint adapter explicitly uses the identity
+
+```text
+sum_(m=0)^M F(m) = F(0) + sum_(m=1)^M F(m).
+```
+
+It thereby supplies the exact `Finset.Icc 1 M`
+index convention of the pinned external OpenAI Result 007
+fixed-form comparator. The two initial affine terms remain
+visible in both the exact source theorem and the absolute
+triangle inequalities; a further odd sample is also
+separately identified.
+
+**External proof provenance correction:** the pinned OpenAI
+`ComparatorChallenges/OrdinaryTwoPointCorrelations.lean`
+contains intentional placeholder proof bodies, but the same
+repository also contains a separate
+`OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean`
+solution entrypoint, importing its own
+`OAI/NumberTheory/TwoPoint/Main.lean`. The directly
+inspected solution files have source theorem bodies.
+Neither their full transitive trust/axiom audit nor
+their independent kernel replay has been performed here.
+In addition, OpenAI's Lean 4.34.1 / Mathlib d13f23...
+must be explicitly transported to grwtsk/math's
+Lean 4.33.0 / Mathlib db584cd... before any local
+import claim.
+
+No external analytic theorem or `ℤ→ℂ` affine-sum
+adapter was constructed in this incremental source
+package. For a fixed `h`, valid independent
+fixed-form saving estimates would imply the
+corresponding ordinary **binary** additive-shift
+saving with constants dependent on `h`; the
+full-order growing-window energy remains open.
+
+**Independent artifacts:**
+
+- `docs/reviews/chowla-sofic-fixed-shift-affine-630.md`:
+  exact identities, external source/version differences,
+  finite checks and negative controls.
+- `verification/liouville-fixed-shift-affine-630-v0.1.toml`:
+  an isolated two-module arithmetic target, listing
+  32 theorem and 10 definition heads, including the
+  14-theorem arithmetic parent.
+- The original eight-module generic Walsh target and
+  the parent-only arithmetic target remain separate.
+
+**Evidence:** `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+OPENAI_SOLUTION_SOURCE_PRESENT / TRANSITIVE_AUDIT_OPEN /
+CROSS_VERSION_PORT_OPEN / HIGHER_ORDER_CHOWLA_OPEN`.
+No public-root import, toolchain change, Lean/Lake build,
+merge, RH theorem, or issue closure.
