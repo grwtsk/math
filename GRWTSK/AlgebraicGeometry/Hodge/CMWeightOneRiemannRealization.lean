@@ -61,6 +61,12 @@ structure WeightOneCMRealization
   [H1_finiteDimensional : FiniteDimensional ℚ H1]
   /-- Rational comparison with the original CM field vector space. -/
   h1Equiv : H1 ≃ₗ[ℚ] E
+  /-- Actual complexified first cohomology carrier. -/
+  H1C : Type*
+  [H1C_addCommGroup : AddCommGroup H1C]
+  [H1C_moduleC : Module ℂ H1C]
+  /-- Comparison from actual complexified H1 to the canonical CM coordinate model. -/
+  h1ComplexCoordinates : H1C ≃ₗ[ℂ] (G → ℂ)
   /-- Complexified coordinate comparison carrying the Hodge decomposition. -/
   complexCoordinates : (G → ℂ) ≃ₗ[ℂ] (G → ℂ)
   /-- The supplied Hodge operator agrees with the locally constructed one
@@ -85,6 +91,92 @@ structure WeightOneCMRealization
   This proposition is intentionally supplied, not proved locally. -/
   isPolarizedProjective : Prop
   polarizedProjective_proof : isPolarizedProjective
+
+/-- Actual H^(1,0) subspace pulled back from the canonical coordinate model. -/
+def WeightOneCMRealization.H10
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    Submodule ℂ R.H1C :=
+  (CMCoordinateHodge.holomorphicPart v).comap
+    R.h1ComplexCoordinates.toLinearMap
+
+/-- Actual H^(0,1) subspace pulled back from the canonical coordinate model. -/
+def WeightOneCMRealization.H01
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    Submodule ℂ R.H1C :=
+  (CMCoordinateHodge.antiholomorphicPart v).comap
+    R.h1ComplexCoordinates.toLinearMap
+
+/-- Actual Weil operator on complexified H1, transported from coordinates. -/
+def WeightOneCMRealization.actualWeil
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    R.H1C →ₗ[ℂ] R.H1C :=
+  R.h1ComplexCoordinates.symm.toLinearMap.comp
+    ((CMCoordinateHodge.weilOperator v).comp
+      R.h1ComplexCoordinates.toLinearMap)
+
+/-- Membership in actual H^(1,0) is exactly coordinate holomorphic membership. -/
+theorem WeightOneCMRealization.mem_H10_iff
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (z : R.H1C) :
+    z ∈ R.H10 ↔
+      R.h1ComplexCoordinates z ∈ CMCoordinateHodge.holomorphicPart v :=
+  Iff.rfl
+
+/-- Membership in actual H^(0,1) is exactly coordinate antiholomorphic membership. -/
+theorem WeightOneCMRealization.mem_H01_iff
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (z : R.H1C) :
+    z ∈ R.H01 ↔
+      R.h1ComplexCoordinates z ∈ CMCoordinateHodge.antiholomorphicPart v :=
+  Iff.rfl
+
+/-- The transported Weil operator acts by +i on actual H^(1,0). -/
+theorem WeightOneCMRealization.actualWeil_H10
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    {z : R.H1C}
+    (hz : z ∈ R.H10) :
+    R.actualWeil z = Complex.I • z := by
+  apply R.h1ComplexCoordinates.injective
+  simp [WeightOneCMRealization.actualWeil]
+  rw [CMCoordinateHodge.weilOperator_holomorphic v]
+  · simp
+  · exact hz
+
+/-- The transported Weil operator acts by -i on actual H^(0,1). -/
+theorem WeightOneCMRealization.actualWeil_H01
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    {z : R.H1C}
+    (hz : z ∈ R.H01) :
+    R.actualWeil z = (-Complex.I) • z := by
+  apply R.h1ComplexCoordinates.injective
+  simp [WeightOneCMRealization.actualWeil]
+  rw [CMCoordinateHodge.weilOperator_antiholomorphic v]
+  · simp
+  · exact hz
+
+/-- The actual Hodge pieces are complementary because the coordinate pieces are. -/
+theorem WeightOneCMRealization.hodgePieces_isCompl
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    IsCompl R.H10 R.H01 := by
+  exact (CMCoordinateHodge.hodgePieces_isCompl v).comap
+    R.h1ComplexCoordinates.toLinearMap
+    R.h1ComplexCoordinates.surjective
 
 /-- Exact external theorem interface still required after the local
 pre-Riemann construction.
