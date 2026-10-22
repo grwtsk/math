@@ -36,7 +36,7 @@ source_file_existence_alone_is_not_acceptance = true
 source_blobs_ordered = [
   "64cc286852eb05408ef337b6e86c3ce6f405d188",
   "5fe1d90d76dd8bcc67b15d6a5520c42688e8be64",
-  "7e2bec5025d39d375c9ff8e9f5a826c8fcf7b8ff",
+  "028a65364fbc3d5365a813eac2212f26739b61fc",
 ]
 local_commit_and_tree_from_external_receipt = true
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
