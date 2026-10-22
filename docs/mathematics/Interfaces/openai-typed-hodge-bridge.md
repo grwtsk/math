@@ -1880,6 +1880,43 @@ The remaining bridge to the earlier scalar-conjugate descent pipeline is no long
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ao. Actual fourfold Hodge tensors now connect to the descent monomial generator
+
+The two tensor models are now related by an explicit comparison boundary instead of an implicit equality.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+ActualFourfoldToMonomialComparison
+ActualFourfoldToMonomialComparison.mem_hodge_of_mem_H22
+ActualFourfoldMonomialGeneratorIdentification
+ActualFourfoldMonomialGeneratorIdentification.assembled_mem_hodge
+~~~
+
+There are genuinely two coefficient models in play:
+
+- the explicit actual fourfold cohomology target
+  [
+  ((H^1_1otimes_{mathbf C}H^1_2)otimes_{mathbf C}H^1_3)
+  otimes_{mathbf C}H^1_4;
+  ]
+- the descent-side complexified tensor space
+  [
+  mathbf Cotimes_{mathbf Q}V.
+  ]
+
+The new comparison interface therefore asks for a complex-linear map from the first space to the second and requires the actual (H^{2,2}) subspace to map into the descent-side Hodge subspace.
+
+A second interface identifies the assembled switched monomial generator with the image of the explicit actual fourfold pure tensor.
+
+Once those two inputs are supplied, the local theorem `assembled_mem_hodge` proves descent-side Hodge membership immediately from the already-local aligned (H^{2,2}) theorem.
+
+This means the Hodge-membership branch is now fully reduced to a coefficient/change-of-realization comparison plus generator identification.
+
+The remaining independent assembly-specific theorem is scalar-conjugation naturality of the monomial assembly. That theorem is still separate and is still needed to recover every scalar conjugate in the corresponding transported monomial line.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
