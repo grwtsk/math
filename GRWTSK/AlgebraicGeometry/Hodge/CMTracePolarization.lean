@@ -54,6 +54,22 @@ structure TracePolarizationData where
   xi_ne_zero : xi ≠ 0
   antiInvariant : galoisComplexConj E xi = -xi
 
+/-- The rationally restricted CM complex conjugation is nontrivial. -/
+theorem galoisComplexConj_ne_one :
+    galoisComplexConj E ≠ (1 : E ≃ₐ[ℚ] E) := by
+  intro h
+  apply IsCMField.complexConj_ne_one E
+  apply AlgEquiv.ext
+  intro x
+  have hx := DFunLike.congr_fun h x
+  simpa [galoisComplexConj] using hx
+
+/-- Every CM field contains an element moved by complex conjugation. -/
+theorem exists_nonfixed :
+    ∃ x : E, x ≠ galoisComplexConj E x := by
+  obtain ⟨x, hx⟩ := DFunLike.ne_iff.mp (galoisComplexConj_ne_one E)
+  refine ⟨x, ?_⟩
+  simpa using hx.symm
 /-- Anti-invariant part of an arbitrary CM-field element. -/
 def antiInvariantPart (x : E) : E :=
   x - galoisComplexConj E x
@@ -79,6 +95,12 @@ def tracePolarizationDataOfNonfixed
   xi := antiInvariantPart E x
   xi_ne_zero := antiInvariantPart_ne_zero E hx
   antiInvariant := antiInvariantPart_conj E x
+/-- A canonical source-level anti-invariant trace-polarization datum, obtained
+by choosing any element moved by complex conjugation. No archimedean sign
+profile is asserted. -/
+noncomputable def someTracePolarizationData : TracePolarizationData E := by
+  choose x hx using exists_nonfixed E
+  exact tracePolarizationDataOfNonfixed E x hx
 /-- The trace pairing is skew-symmetric for an anti-invariant xi. -/
 theorem tracePairing_skew
     (P : TracePolarizationData E) (x y : E) :
