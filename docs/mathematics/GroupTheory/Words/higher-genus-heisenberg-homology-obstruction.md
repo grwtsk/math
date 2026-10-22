@@ -119,7 +119,7 @@ so the sufficient unit-homology primitive certificate of #704 **cannot detect** 
 
 **This proves incompleteness of the homology-only certificate, not its unsoundness.**
 
-The source also names the \(k=0\) (genus two) and \(k=1\) (genus three) cases independently, guarding against an always-empty additional-generator construction.
+The source also names the \(k=0\) (genus two) and \(k=1\) (genus three) cases independently, guarding against an always-empty additional-generator construction. The lemma `extraRelatorList_one` additionally shows the genus-three relator really contains its third-handle commutator word, even though that term maps to identity under the chosen quotient homomorphism.
 
 ## 4. Where geometry genuinely starts
 
