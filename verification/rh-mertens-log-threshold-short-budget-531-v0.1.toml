@@ -1,0 +1,44 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-log-threshold-short-budget-531-v0.1"
+owner_repository = "grwtsk/math"
+issue = 531
+parent_issue = 528
+parent_pr = 529
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensLogThresholdShortBudget"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensLogThresholdShortBudget"
+
+[source_binding]
+stacked_parent_revision = "311aba5e13658c6168559c7d14957c0bbbfc13cb"
+candidate_branch = "research/rh-log-threshold-global-531-20261021"
+theorem_source_commit = "5900ada5fb5383dc868ec88a79ed570f34363188"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensLogThresholdShortBudget.lean"
+theorem_source_git_blob = "31bc7eff27422807366b143f3eb1514752e40c4d"
+
+[selected_increment]
+threshold = "logarithmicShiftThreshold"
+initial_denominator = "harmonicInitialDenominator"
+initial_difference_closed_form = "harmonicShiftFirstDifference_zero_eq_maxDrop"
+normalized_depth_budget = "normalizedShortDepthBudget"
+one_depth_transfer = "normalized_shortContribution_le_budget"
+packet_budget = "normalizedShortPacketBudget"
+finite_depth_obligation = "LogThresholdFiniteDepthBudget"
+conditional_global_bound = "normalizedShortPacketBudget_le_six_logThreshold_of_finiteDepthBudget"
+long_length_condition = "LogThresholdLongLengthCondition"
+proof_classification = "EXACT_THRESHOLD_SELECTION_AND_PACKET_BUDGET_REDUCTION"
+next_obstruction = "prove pure finite reciprocal-depth bound and logarithmic exponent absorption"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+finite_depth_budget_proved = false
+logarithmic_absorption_proved = false
+short_range_globally_discharged = false
+long_short_interval_theorem_applied = false
+riemann_hypothesis_proved = false
