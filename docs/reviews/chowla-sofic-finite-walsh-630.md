@@ -554,10 +554,11 @@ TV(P_model,U) <= TV(P_model,P_source)+TV(P_source,U)
              <= |B|/|R| + 0.5*sqrt(E(R,x)).
 ```
 
-The two positive inequalities have now been separately
-source-drafted in Lean. The explicit Lean triangle theorem,
-cyclic-index root comparison, and arithmetic-specific correlation
-supplier are **NOT** included in this increment. In particular,
+At this fourth-increment checkpoint, the two inequalities were
+separately source-drafted; the explicit triangle was still open.
+The subsequent fifth increment (#12) source-drafts the typed finite
+triangle. Cyclic-index root comparison and the arithmetic-specific
+correlation supplier remain **OPEN**. In particular,
 there is no proof that the full Liouville Chowla correlations tend
 to zero or that the microscopic GUE gap process is determined
 by a labeled sofic limit.
@@ -567,3 +568,114 @@ NO_ANALYTIC_SUPPLIER. The passive target lists each theorem for
 subsequent *actual* clean-checkout elaboration and transitive
 axiom/trust inspection. No public-root import, build, merge,
 or independent replay was performed.
+
+## 12. Source-only fifth increment: typed Walsh/boundary TV triangle
+
+**Date:** 2026-10-22. **Exact parent branch head:**
+`bfcb93241df2d164e62e750637d81bf983808dd5`.
+**Source:** `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean`.
+**Source blob:** `000196df6397930e95b72f792c325a7043c2e1b8`.
+
+This increment supplies a *single finite mathematical comparison* consuming
+the earlier, separately source-drafted total-variation and labeled-boundary
+interfaces. It does not create new randomness, an arithmetic estimate, or an
+infinite sofic system.
+
+### 12.1 The actual typed seam
+
+Let `ι` be a finite coordinate type. Fix one nonempty finite root set
+`R : Finset Nat`, and let `source,model : Nat → ι → Bool` be complete
+labelings on those SAME roots. Let `B⊆R` be a counted exceptional set,
+with `∀n∈R, n∉B → source(n)=model(n)`.
+
+Take `q=|ι→Bool|`, `n=|R|>0` and define
+
+```text
+D_source(a) = q*P_source(a)-1
+D_model(a)  = q*P_model(a)-1
+E_source    = sum_(S⊆ι, S≠∅) m_source(S)^2.
+```
+
+A direct algebraic identity (`scaledDeviation_change`) shows that
+
+```text
+D_model(a) = (q/n)*(count_model(a)-count_source(a))
+             + D_source(a).
+```
+
+This is *exact* for every complete Boolean word `a`. No Liouville
+cancellation or model symmetry enters. Apply `abs_add_le`, sum over
+the full Boolean cube and divide by `2*q>0`:
+
+```text
+TV(model, uniform)
+  <= TV(model, source) + TV(source, uniform).
+```
+
+The theorem `uniformTV_le_boundaryTV_add_sourceTV` uses the exact
+`categoricalTotalVariation` for `TV(model,source)`; the source
+and model categorical counts were already proved equal to the
+corresponding full-cube Walsh pattern counts in the parent module.
+There is no unproved measure-space comparison.
+
+Finally, `finiteWalshBoundary_return` composes this finite triangle with
+
+```text
+TV(model,source) <= |B|/|R|
+TV(source,uniform) <= sqrt(E_source)/2
+```
+
+to obtain
+
+```text
+TV(model,uniform) <= |B|/|R| + sqrt(E_source)/2.
+```
+
+The signed arithmetic energy is always the energy of the SOURCE
+labeling, not the model. Both terms remain visible and nonnegative.
+No inference is made that `E_source` is small.
+
+### 12.2 Declaration inventory and negative controls
+
+**Three new proposed theorem heads:**
+
+- `scaledDeviation_change`
+- `uniformTV_le_boundaryTV_add_sourceTV`
+- `finiteWalshBoundary_return`
+
+No new definitions were introduced. The passive verification target
+now requires six isolated modules with **45 theorem heads and
+18 definitions** across the entire optional source-only packet.
+
+Required rejection cases:
+
+- source and model sampled from *different* root sets;
+- incomplete or coarsened Boolean labels, even if local unlabeled
+  neighborhoods agree;
+- replacing the model-to-source TV term by zero without proving label
+  agreement outside `B`;
+- discarding the `1/2` TV normalization or counting `B` twice;
+- replacing the source energy by the model energy without a comparison;
+- claiming the cyclic `r/N` boundary cost without a constructed
+  root-to-cycle map and exact exceptional-set cardinality theorem;
+- treating finite source equations or numerical checks as
+  Lean kernel-accepted proofs.
+
+### 12.3 Remaining obligations
+
+The immediate next *pure-mathematics* increment is the precise cyclic
+window model: choose `N>0` and a finite set of offsets with maximum
+`r<N`; prove ordinary and cyclic label equality for every
+root `n<N-r`, define the last `r` roots as the exceptional collar,
+prove the count is exactly `r`, and instantiate the new triangle to
+obtain `r/N + sqrt(E_source)/2`.
+
+The above route is not a construction of full Chowla estimates, sofic
+operator convergence, microscopic GUE spacing or RH. A quantitative
+growing-window Chowla theorem remains a separately typed arithmetic
+supplier, with all nonempty subset correlations and shift uniformity
+visible.
+
+**Evidence state:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+No Lean/Lake, native build, CI qualification, transitive axiom audit,
+public-root import, merge or independent replay is represented here.
