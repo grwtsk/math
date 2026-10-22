@@ -300,32 +300,17 @@ def WeightOneCMRealization.pureTensorCoordinate
 /-- Pure-tensor compatibility version of the canonical tensor to actual H1
 comparison.
 
-This is strictly narrower than arbitrary coordinate compatibility: it states
-the concrete bilinear formula on generators. -/
+Only the concrete bilinear coordinate formula on pure tensors is supplied.
+Full tensor compatibility is derived locally by tensor induction. -/
 structure PureTensorActualH1Comparison
     {v : OddSignRow E}
     {X : SignControlledXi E v}
     (R : WeightOneCMRealization E v X) where
-  toActual : E ⊗[ℚ] E → R.H1C
+  toActual : E ⊗[ℚ] E →ₗ[ℚ] R.H1C
   pureTensor_coordinates :
     ∀ a x σ,
       R.h1ComplexCoordinates (toActual (a ⊗ₜ[ℚ] x)) σ =
         R.pureTensorCoordinate a x σ
-  coordinate_compatibility :
-    ∀ t σ,
-      R.h1ComplexCoordinates (toActual t) σ =
-        canonicalTensorComplexCoordinate E t σ
-
-/-- Forget the pure-tensor formula and retain the comparison consumed
-downstream. -/
-def PureTensorActualH1Comparison.toCanonicalComparison
-    {v : OddSignRow E}
-    {X : SignControlledXi E v}
-    {R : WeightOneCMRealization E v X}
-    (C : PureTensorActualH1Comparison E R) :
-    CanonicalTensorActualH1Comparison E R where
-  toActual := C.toActual
-  coordinate_compatibility := C.coordinate_compatibility
 
 /-- Exact comparison between the canonical tensor model and the actual
 complexified H1 realization.
@@ -342,6 +327,36 @@ structure CanonicalTensorActualH1Comparison
     ∀ t σ,
       R.h1ComplexCoordinates (toActual t) σ =
         canonicalTensorComplexCoordinate E t σ
+
+
+/-- Q-linearity plus the pure-tensor coordinate formula imply full canonical
+tensor coordinate compatibility. -/
+theorem PureTensorActualH1Comparison.coordinate_compatibility
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    {R : WeightOneCMRealization E v X}
+    (C : PureTensorActualH1Comparison E R)
+    (t : E ⊗[ℚ] E)
+    (σ : E ≃ₐ[ℚ] E) :
+    R.h1ComplexCoordinates (C.toActual t) σ =
+      canonicalTensorComplexCoordinate E t σ := by
+  induction t with
+  | tmul a x =>
+      rw [C.pureTensor_coordinates]
+      exact (canonicalTensorComplexCoordinate_tmul E a x σ).symm
+  | add x y hx hy =>
+      simp [map_add, hx, hy, canonicalTensorComplexCoordinate]
+
+/-- A Q-linear pure-tensor comparison canonically gives the full comparison
+consumed by downstream Hodge typing. -/
+def PureTensorActualH1Comparison.toCanonicalComparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    {R : WeightOneCMRealization E v X}
+    (C : PureTensorActualH1Comparison E R) :
+    CanonicalTensorActualH1Comparison E R where
+  toActual := C.toActual
+  coordinate_compatibility := C.coordinate_compatibility
 
 /-- A positive-sign canonical embedding-line vector maps into actual H^(1,0). -/
 theorem CanonicalTensorActualH1Comparison.isOfType_holomorphic
