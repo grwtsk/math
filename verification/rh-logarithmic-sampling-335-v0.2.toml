@@ -14,7 +14,7 @@ lake_manifest_file = "lake-manifest.json"
 review_parent_revision = "a5dde3c6e366d323328f7a50ada936995c656282"
 review_parent_tree = "64bad4cf9298cb3e48ad1d9eb982638e4898a6af"
 new_module_path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSampling.lean"
-new_module_git_blob = "1a80d899449bc755d2ca7469e31078479ff3312f"
+new_module_git_blob = "8040c65ade21b244b317ede04131e6ffd8a75655"
 new_module_namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
 candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
 

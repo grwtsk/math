@@ -145,8 +145,8 @@ theorem sampleResidue_increment_sq_le {n : ℕ} (hn : 1 ≤ n) :
     (by positivity : 0 ≤ (Real.sqrt (n + 1 : ℕ))⁻¹ / 2)).mpr
       (sampleResidue_increment_abs_le hn)
   rw [sq_abs, div_pow, inv_pow, Real.sq_sqrt hn1] at hs
-  convert hs using 1 <;> push_cast <;>
-    field_simp [show (n : ℝ) + 1 ≠ 0 by positivity] <;> ring
+  convert hs using 1 <;> (try rfl) <;> push_cast <;>
+    (try field_simp [show (n : ℝ) + 1 ≠ 0 by positivity]) <;> ring
 
 /-- A finite harmonic allowance for the actual diagonal increment sum. -/
 theorem sampleResidue_diagonal_le (N : ℕ) :
@@ -157,8 +157,8 @@ theorem sampleResidue_diagonal_le (N : ℕ) :
   apply Finset.sum_le_sum
   intro k _
   have h := sampleResidue_increment_sq_le (n := k + 1) (by omega)
-  convert h using 1 <;> push_cast <;>
-    field_simp [show (k : ℝ) + 2 ≠ 0 by positivity] <;> ring
+  convert h using 1 <;> (try rfl) <;> push_cast <;>
+    (try field_simp [show (k : ℝ) + 2 ≠ 0 by positivity]) <;> ring
 
 /-- Finite summation by parts retains the terminal subtraction exactly. -/
 theorem sampleResidue_weighted_telescope (w : ℕ → ℝ) (N : ℕ) :
@@ -213,7 +213,7 @@ theorem sampleResidue_weighted_diagonal_le (σ : ℝ) (N : ℕ) :
     (sampleResidue_increment_sq_le (n := k + 1) (by omega))
     (Real.exp_pos (-σ * Real.log (k + 2 : ℕ))).le
   convert h using 1 <;> push_cast <;>
-    field_simp [show (k : ℝ) + 2 ≠ 0 by positivity] <;> ring
+    (try field_simp [show (k : ℝ) + 2 ≠ 0 by positivity]) <;> ring
 
 theorem logarithmicCell_measurable (k : ℕ) : MeasurableSet (logarithmicCell k) :=
   measurableSet_Ico
@@ -245,7 +245,7 @@ theorem iUnion_logarithmicCell : (⋃ k : ℕ, logarithmicCell k) = Ici (0 : ℝ
   constructor
   · intro hu
     obtain ⟨k, hk⟩ := mem_iUnion.mp hu
-    exact (Real.log_nonneg (by have := Nat.cast_nonneg (R := ℝ) k; linarith)).trans hk.1
+    exact (Real.log_nonneg (by have := Nat.cast_nonneg (α := ℝ) k; linarith)).trans hk.1
   · intro hu
     let N : ℕ := ⌊Real.exp u⌋₊
     have hN : 1 ≤ N := floor_exp_ge_one hu
@@ -277,10 +277,11 @@ theorem sampled_integrableOn_logarithmicCell (σ : ℝ) (k : ℕ) :
   have hc : Continuous (fun u : ℝ ↦
       Real.exp (-σ * u) * (2 * sampleResidue (k + 1)) ^ 2) :=
     (Real.continuous_exp.comp (continuous_const.mul continuous_id)).mul continuous_const
-  have hi := (hc.integrableOn_Icc (a := Real.log ((k : ℝ) + 1))
+  have hi := (hc.integrableOn_Icc (μ := volume) (a := Real.log ((k : ℝ) + 1))
     (b := Real.log ((k : ℝ) + 2))).mono_set Ico_subset_Icc_self
   apply hi.congr_fun ?_ measurableSet_Ico
   intro u hu
+  dsimp only
   rw [sampledPickup_eq_on_logarithmicCell hu]
 
 private theorem integral_exp_neg_mul (σ a b : ℝ) (hσ : σ ≠ 0) :
@@ -289,7 +290,9 @@ private theorem integral_exp_neg_mul (σ a b : ℝ) (hσ : σ ≠ 0) :
   have hd (u : ℝ) : HasDerivAt (fun t : ℝ ↦ -Real.exp (-σ * t) / σ)
       (Real.exp (-σ * u)) u := by
     convert (((hasDerivAt_id u).const_mul (-σ)).exp.neg.div_const σ) using 1 <;>
-      field_simp [hσ] <;> ring
+      (try rfl) <;> (try funext x) <;>
+      dsimp only [id_eq, Pi.neg_apply, Pi.smul_apply, smul_eq_mul] <;>
+      (try field_simp [hσ]) <;> ring
   have hi : IntervalIntegrable (fun u : ℝ ↦ Real.exp (-σ * u)) volume a b :=
     (Real.continuous_exp.comp (continuous_const.mul continuous_id)).intervalIntegrable a b
   rw [intervalIntegral.integral_eq_sub_of_hasDerivAt (fun u _ ↦ hd u) hi]
@@ -306,6 +309,7 @@ theorem integral_sampled_logarithmicCell {σ : ℝ} (hσ : σ ≠ 0) (k : ℕ) :
         Real.exp (-σ * u) * (2 * sampleResidue (k + 1)) ^ 2 := by
       apply setIntegral_congr_fun (logarithmicCell_measurable k)
       intro u hu
+      dsimp only
       rw [sampledPickup_eq_on_logarithmicCell hu]
     _ = sampleCellMass σ k := by
       unfold logarithmicCell sampleCellMass

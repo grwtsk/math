@@ -14,7 +14,7 @@ lake_manifest_file = "lake-manifest.json"
 review_parent_revision = "a1857b3ca587a36b575431b5446adf60e9d2af2b"
 review_parent_tree = "9198a6c2d81cba5a2743b4289302203562c9cc1e"
 new_module_path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSeries.lean"
-new_module_git_blob = "5a0c175b8cb045a03cabc6636d50ebb7782a37aa"
+new_module_git_blob = "abb0bba38e30fcdd41c4c0737445b9b9e5d8551d"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
 candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
 
@@ -47,7 +47,7 @@ private_helper_count = 2
 
 [[inherited_targets]]
 path = "verification/rh-logarithmic-sampling-335-v0.2.toml"
-git_blob = "c5631bf55ae01dfbdf9b98cac3376e113b86141c"
+git_blob = "fa7386ef54ca46aa1c3745d564c1b808c6a5cc10"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_targets]]
@@ -57,7 +57,7 @@ status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSampling.lean"
-git_blob = "1a80d899449bc755d2ca7469e31078479ff3312f"
+git_blob = "8040c65ade21b244b317ede04131e6ffd8a75655"
 authored_declaration_count = 23
 
 [[inherited_sources]]
