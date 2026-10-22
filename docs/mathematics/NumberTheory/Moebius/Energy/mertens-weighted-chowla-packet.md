@@ -25,7 +25,7 @@ This is only finite algebra/Fubini. No estimate is introduced.
 
 ## Subprobability transfer
 
-On the actual depth range, `K>=0` and `sum_h K<=1`.
+For `t+2 <= 2^(j+1)`, pointwise `K>=0` and `sum_h K<=1`.
 
 Therefore a uniform one-sided bound
 
@@ -33,7 +33,7 @@ Therefore a uniform one-sided bound
 C_h(t+1) <= U
 ```
 
-for every admissible shift transfers to
+for every shift in the complete range `1 <= h < 2^(j+1)` transfers to
 
 ```text
 WeightedChowlaAverage(j,t) <= U
@@ -41,7 +41,7 @@ WeightedChowlaAverage(j,t) <= U
 
 when `U>=0`.
 
-A separate stronger theorem shows that
+A separate sufficient theorem, also retaining `U>=0`, shows that
 
 ```text
 |C_h(t+1)| <= U
@@ -53,7 +53,7 @@ implies
 |WeightedChowlaAverage(j,t)| <= U.
 ```
 
-The absolute-value theorem is sufficient only; it is not an equivalence.
+The absolute-value theorem is proved sufficient; no converse from the weighted average bound is proved.
 
 ## Complete packet
 
@@ -82,7 +82,7 @@ is exactly equivalent to the inherited signed-depth supplier and therefore condi
 
 ## Mathematical significance
 
-This is the minimal direct junction to a growing-shift weighted Chowla statement. The Abel kernel selects a nonnegative subprobability mixture of ordinary two-point Möbius prefixes.
+This is a direct junction to a growing-shift weighted Chowla statement; no minimality theorem is asserted. The Abel kernel selects a nonnegative subprobability mixture of ordinary two-point Möbius prefixes.
 
 A future arithmetic theorem may target this weighted average directly. It does not need to first control an arbitrary test family or an oversized positive square norm.
 
@@ -92,7 +92,7 @@ A future arithmetic theorem may target this weighted average directly. It does n
 - An unweighted shift average is a different observable.
 - Kernel mass is at most one, not necessarily one.
 - The exact packet remains signed.
-- Absolute-value control is stronger than necessary.
+- Absolute-value control is a sufficient transport; no converse is supplied.
 - No external Chowla or Elliott result is imported.
 - The exact weighted identity is not a cancellation theorem.
 

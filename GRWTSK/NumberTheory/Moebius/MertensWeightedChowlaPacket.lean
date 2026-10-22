@@ -35,12 +35,14 @@ theorem normalizedKernelAutocorrelation_eq_weightedChowlaAverage
             moebiusReal (a + 1 + h))) =
       weightedMertensTwoPointChowlaAverage j t := by
   unfold weightedMertensTwoPointChowlaAverage
+  simp_rw [Finset.mul_sum]
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
-  rw [← Finset.mul_sum]
-  congr 1
-  simp [mertensTwoPointPrefix, mul_assoc, mul_left_comm, mul_comm]
+  simp only [mertensTwoPointPrefix, Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro a _ha
+  ring
 
 /-- Exact weighted-Chowla presentation of one signed depth slice. -/
 theorem weightedMertensDyadicSignedAbelDepthSlice_eq_weightedChowlaAverage
@@ -82,8 +84,8 @@ theorem weightedMertensTwoPointChowlaAverage_le_of_prefix_bound
     _ = U := by ring
 
 /-- A uniform absolute prefix bound yields an absolute bound on the
-kernel-weighted average.  This is a stronger sufficient transport, not an
-equivalence. -/
+kernel-weighted average. This is a sufficient transport; no converse is
+proved here. -/
 theorem abs_weightedMertensTwoPointChowlaAverage_le_of_abs_prefix_bound
     {j t : ℕ} {U : ℝ}
     (htY : t + 2 ≤ 2 ^ (j + 1))
