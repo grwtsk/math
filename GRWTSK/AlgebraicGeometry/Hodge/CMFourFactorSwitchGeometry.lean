@@ -181,6 +181,14 @@ four-row profile and its all-conjugate (2,2) certificate are known locally.
 Only the actual tensor, Hodge subspace, and scalar-conjugate stability remain
 as input here. -/
 structure AtomicSwitchTensorData
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
     (P : AtomicSwitchFourFactorProfile
       conj hconj x target hxsign hxodd g hg i j) where
   V : Type*
@@ -203,6 +211,14 @@ structure AtomicSwitchTensorData
 /-- The canonical (2,2) profile plus raw tensor stability data produces the
 exact descent datum consumed by the local trace-descent theorem. -/
 def AtomicSwitchTensorData.toDescentData
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
     {P : AtomicSwitchFourFactorProfile
       conj hconj x target hxsign hxodd g hg i j}
     (D : AtomicSwitchTensorData P) :
