@@ -88,6 +88,13 @@ The seam fraction is genuinely sublinear:
 r_k/N_k = k/k² = 1/k -> 0.
 ```
 
+The earlier cyclic comparison theorem requires the **strict**
+condition `r_k<N_k`. This holds for every `k≥2`;
+the isolated initial case `k=1` has `r=N=1`
+and is not an admissible cyclic instance. The eventual
+uniformity failure persists on all `k≥2` and is
+therefore not an endpoint loophole.
+
 Hence, in the sense of ordinary finite suprema,
 
 ```text
