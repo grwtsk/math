@@ -1,0 +1,141 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-chi4-mod-four-residues-698-v0.1"
+owner_repository = "grwtsk/math"
+issue = 698
+parent_issue = 691
+parent_pr = 697
+exceptional_factorization_issue = 681
+exceptional_factorization_pr = 684
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CHI_FOUR_RESIDUE_DECOMPOSITION_SOURCE_DRAFT_MOD_FOUR_AP_MERTENS_ENERGY_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ChiFourMertensResidueDecomposition"
+build_target = "GRWTSK.NumberTheory.Moebius.ChiFourMertensResidueDecomposition"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-exceptional-character-chi4-691-20261022"
+stacked_parent_revision = "4e0226093aa9781c374d3577f5ee1a86e0c704e9"
+stacked_parent_tree = "bab2d52d704d40756d0cb0386ab781377569f022"
+candidate_branch = "research/rh-chi4-mod-four-residues-698-20261022"
+theorem_source_commit = "71939e0e72d3f3f1426957da7828d99eec4e01b2"
+theorem_source_tree = "6730dae9e2d6c53e4cd5005b3fc4c43140e288e1"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ChiFourMertensResidueDecomposition.lean"
+theorem_source_git_blob = "bf15e90e7a6b8176caa5c2008892e971838f163c"
+mathematical_note_commit = "928003b77f61703b41add854e9d50fa8d726ca2a"
+mathematical_note_tree = "3f381416a926945da5612cef314697f1887920dc"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/chi-four-mertens-mod-four-residues.md"
+mathematical_note_git_blob = "83444cafc7186e912a86de179b5c0a57490aa3ad"
+
+[finite_decomposition]
+residue_prefix = "modFourMertensPrefix"
+residue_one = "1 mod 4"
+residue_three = "3 mod 4"
+discrepancy = "modFourUnitMertensDiscrepancy"
+pointwise_character_identity = "chiFourMobiusTerm_eq_modFourSigned"
+chi_four_identity = "chiFourTwistedMertensPrefix_eq_modFourDiscrepancy"
+odd_prefix_identity = "parityMertensPrefix_odd_eq_modFour_one_add_three"
+residue_one_reconstruction = "two_mul_modFourMertensPrefix_one"
+residue_three_reconstruction = "two_mul_modFourMertensPrefix_three"
+even_character_values_proved_zero = true
+competing_character_defined = false
+
+[exact_energy]
+chi_four_energy = "DyadicChiFourTwistedMertensSquareRootEnergy"
+discrepancy_energy = "DyadicModFourMertensDiscrepancySquareRootEnergy"
+exact_equivalence = "dyadicChiFourTwistedMertensEnergy_iff_modFourDiscrepancy"
+stronger_two_residue_energy = "DyadicModFourUnitResidueMertensSquareRootEnergy"
+two_residue_to_discrepancy = "modFourDiscrepancyEnergy_of_unitResidues"
+explicit_constant_loss = 4
+reverse_discrepancy_to_individual_residues_proved = false
+
+[downstream]
+chi_four_from_residues = "chiFourEnergy_of_modFourUnitResidues"
+natural_scale_transport = "naturalScaleCongruenceL1_of_pointwise_modFourResidues_twoUnit_regular"
+pointwise_ordinary_mertens_required = true
+two_unit_supplier_required = true
+regular_orbit_supplier_required = true
+mod_four_residue_supplier_constructed = false
+
+[ap_boundary]
+generic_adapter = "ToModFourUnitResidueMertensSquareRootEnergyAdapter"
+source_data = "ModFourAPMertensSourceData"
+source_proposition = "ModFourAPMertensSource"
+adapter_alias = "ModFourAPMertensAdapter"
+residue_one_required = true
+residue_three_required = true
+positive_endpoint_convention_required = true
+square_root_plus_epsilon_scale_required = true
+common_dyadic_constant_required = true
+finite_initial_range_required = true
+named_adapter_value_constructed = false
+
+[evidence_states]
+source_draft = true
+exact_chi_four_residue_discrepancy_scripted = true
+exact_odd_prefix_residue_sum_scripted = true
+integral_linear_reconstruction_scripted = true
+exact_discrepancy_energy_equivalence_scripted = true
+two_residue_to_discrepancy_transport_scripted = true
+conditional_downstream_transport_scripted = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+mod_four_unit_residue_mertens_energy_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ChiFourMertensResidueDecomposition"
+definition_count = 6
+theorem_script_count = 9
+structure_count = 2
+abbreviation_count = 1
+authored_declaration_count = 18
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ExceptionalKernelCharacterChiFour.lean"
+git_blob = "8f346435e49801dd7f0a23e16375768f66f21381"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_697"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.LegendreSymbol.ZModChar"
+declarations = [
+  "ZMod.χ₄",
+  "ZMod.χ₄_nat_eq_if_mod_four",
+  "ZMod.χ₄_nat_one_mod_four",
+  "ZMod.χ₄_nat_three_mod_four"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+positive_endpoint_convention_preserved = true
+even_character_values_not_discarded_by_prose = true
+exact_mathlib_character_reused = true
+individual_residue_bounds_not_inferred_from_discrepancy = true
+result_003_not_promoted_to_square_root_ap_bound = true
+grh_not_claimed = true
+rh_not_claimed = true
+source_elaboration_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_mod_four_ap_mertens_supplier = true
+construct_two_unit_analytic_supplier = true
+construct_regular_orbit_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+mod_four_ap_mertens_estimate_proved = false
+grh_proved = false
+result_003_supplies_ap_square_root_bound = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
