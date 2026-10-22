@@ -1807,6 +1807,37 @@ The remaining Hodge-theoretic assembly frontier is now the standard one: constru
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4am. Four independent actual H1 factors now have an explicit common tensor target
+
+The four weight-one realizations no longer need to be coerced into a fictitious common carrier.
+
+`CMFourFactorSwitchGeometry.lean` now defines:
+
+~~~text
+FourfoldActualTensor
+fourfoldActualPureTensor
+FourfoldActualHodgeTensorRule
+~~~
+
+For four independently realized factors (V_1,V_2,V_3,V_4), the common target is the explicit nested complex tensor product
+
+[
+((V_1otimes_{mathbf C}V_2)otimes_{mathbf C}V_3)
+otimes_{mathbf C}V_4.
+]
+
+The pure fourfold tensor is correspondingly
+
+[
+((aotimes b)otimes c)otimes d.
+]
+
+The remaining structural Hodge input is now stated directly on this concrete target: if the four actual vectors have genuine weight-one Hodge types whose (p)-indices and (q)-indices both sum to two, their pure tensor lies in the declared (H^{2,2}) subspace.
+
+Thus the previous common-carrier abstraction is no longer needed for the CM-number-field path. The remaining work is to align the four switch characters with the local balance theorem, so the existing sign-count result supplies the two bidegree equations consumed by this explicit tensor rule.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
