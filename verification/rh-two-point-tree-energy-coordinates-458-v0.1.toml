@@ -1,3 +1,6 @@
+# Historical original target Git blob: dd28bc571ba8d355b8fc160e79a56768271139ab.
+# Historical original parent: 9753ce756e6c445ba55ad0097fe9e83ae091a224; tree c4b6998fee0782bd0ef0de7f7a74c21ab9b90830.
+# The containing source is unchanged; historical publication fields and current repaired dependency bindings are separate.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-two-point-tree-energy-coordinates-458-v0.1"
 owner_repository = "grwtsk/math"
@@ -17,16 +20,18 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
-inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
-stacked_parent_branch = "research/rh-two-point-junction-453-20261021"
-stacked_parent_revision = "9753ce756e6c445ba55ad0097fe9e83ae091a224"
-stacked_parent_tree = "c4b6998fee0782bd0ef0de7f7a74c21ab9b90830"
-candidate_branch = "research/rh-dyadic-tree-coordinates-458-20261021"
-theorem_source_commit = "821dd19336a0e9138ee3a74482cf5b5d0fc9fd26"
-theorem_source_tree = "62d9be58b0953bf45cea3daee28656a9ac1f0220"
+historical_inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+historical_inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+historical_stacked_parent_branch = "research/rh-two-point-junction-453-20261021"
+stacked_parent_revision = "40636994543ec71cefba4aa76e8004beb50a8b57"
+stacked_parent_tree = "f783767e2728be3aa73072ff559f0469337ed032"
+historical_candidate_branch = "research/rh-dyadic-tree-coordinates-458-20261021"
+historical_theorem_source_commit = "821dd19336a0e9138ee3a74482cf5b5d0fc9fd26"
+historical_theorem_source_tree = "62d9be58b0953bf45cea3daee28656a9ac1f0220"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeEnergyCoordinates.lean"
+historical_theorem_source_git_blob = "ed9c52ed2b1eca1d73fdd87a8494aab0ad34a7b4"
 theorem_source_git_blob = "ed9c52ed2b1eca1d73fdd87a8494aab0ad34a7b4"
+source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
 mathematical_note_commit = "756937c44cac46a134f69d9d560e073042af3e17"
 mathematical_note_tree = "a7afe96f7d5c5fc568fd50041d35ce7e8d4f4b4b"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-tree-energy-coordinates.md"
@@ -145,12 +150,12 @@ private_helper_count = 0
 
 [[dependencies]]
 path = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
-git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+git_blob = "51a1e836e08e2f983c901542806c95bfe5437e86"
 status = "STACKED_SOURCE_DRAFT_FROM_PR_449"
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean"
-git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+git_blob = "4eacfb63dc6f3b1a34eb1427bb84d2b250fb763b"
 status = "STACKED_SOURCE_DRAFT_FROM_PR_455"
 
 [statement_controls]
