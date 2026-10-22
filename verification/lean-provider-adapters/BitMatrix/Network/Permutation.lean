@@ -48,4 +48,14 @@ theorem hammingWeight_coordinatePermutation {n : Nat}
     hammingWeight (coordinatePermutation π x) = hammingWeight x :=
   GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Permutations.BooleanPermutationComponents.Variant04be4475986f7694.BitMatrix.Network.Permutation.hammingWeight_coordinatePermutation π x
 
+theorem coordinatePermutation_sacScore {n : Nat}
+    (π : Equiv.Perm (Fin n)) (hn : 0 < n) :
+    sacScore (coordinatePermutation π) = 0 :=
+  GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Permutations.BooleanPermutationComponents.Variant04be4475986f7694.BitMatrix.Network.Permutation.coordinatePermutation_sacScore π hn
+
+theorem coordinatePermutation_varianceScore {n : Nat}
+    (π : Equiv.Perm (Fin n)) (hn : 0 < n) :
+    varianceScore (coordinatePermutation π) = 0 :=
+  GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Permutations.BooleanPermutationComponents.Variant04be4475986f7694.BitMatrix.Network.Permutation.coordinatePermutation_varianceScore π hn
+
 end BitMatrix.Network.Permutation
