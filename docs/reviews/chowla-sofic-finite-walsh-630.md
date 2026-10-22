@@ -1128,7 +1128,7 @@ merge, RH theorem, or issue closure.
 
 One new independent arithmetic module,
 `GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedFormComplexAdapter.lean`
-(blob `7e2bec5025d39d375c9ff8e9f5a826c8fcf7b8ff`),
+(blob `028a65364fbc3d5365a813eac2212f26739b61fc`),
 shows the **direct** finite comparison for a fixed positive
 additive shift `h`:
 
