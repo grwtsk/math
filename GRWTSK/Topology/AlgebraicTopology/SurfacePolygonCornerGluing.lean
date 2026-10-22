@@ -395,6 +395,21 @@ noncomputable def gluedPolygonCorners_unique (k : ℕ) :
       gluedPolygonCorners_subsingleton k
     exact Subsingleton.elim _ _
 
+/-- The two initial handles are DIFFERENT generator-source blocks
+before applying any gluing quotient, for every k. -/
+theorem first_second_handles_distinct (k : ℕ) :
+    firstHandle k ≠ secondHandle k := by
+  simp [firstHandle, secondHandle]
+
+/-- Essential seam control: the first and second handles are distinct
+source IDs yet the b-pairing identifies their corner-zero vertices.
+A fake gluing relation that only identifies corners WITHIN handles
+cannot satisfy both facts. -/
+theorem essential_b_seam_connects_distinct_handles (k : ℕ) :
+    firstHandle k ≠ secondHandle k ∧
+      CornerConnected k (firstHandle k, 0) (secondHandle k, 0) :=
+  ⟨first_second_handles_distinct k, first_to_second_zero k⟩
+
 /-- Concrete nonvacuous genus-two gluing: the first and second
 handles have distinct source identifiers but their zero corner
 classes become equal under the true side pairings. -/
