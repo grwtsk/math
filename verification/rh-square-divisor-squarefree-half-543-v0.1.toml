@@ -1,0 +1,89 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-square-divisor-squarefree-half-543-v0.1"
+owner_repository = "grwtsk/math"
+issue = 543
+parent_issue = 537
+parent_pr = 539
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_SQUAREFREE_CASE_DISCHARGED_SOURCE_LEVEL_NONSQUAREFREE_CANCELLATION_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SquareDivisorMobiusSquarefreeHalf"
+build_target = "GRWTSK.NumberTheory.Moebius.SquareDivisorMobiusSquarefreeHalf"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_revision = "e0579210da1ffa0185a33fe4556b51cdd19d2b23"
+candidate_branch = "research/rh-square-divisor-squarefree-half-543-20261021"
+theorem_source_commit = "a7cb255bc3b6073d4adcfa10ee2f6e9b4d5d2017"
+theorem_source_tree = "f657636f08e17be245e924cd9118bffa35c79952"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SquareDivisorMobiusSquarefreeHalf.lean"
+theorem_source_git_blob = "421f9da30ce2092bda1c459525c32c68575c4dce"
+
+[selected_increment]
+squarefree_case = "squareDivisorMobiusSum_eq_one_of_squarefree"
+squarefree_indicator_case = "squarefreeIndicatorReal_eq_squareDivisorMobiusSum_of_squarefree"
+remaining_certificate = "NonSquarefreeSquareDivisorMobiusCancellation"
+parent_supplier_constructor = "squarefreeDivisorSquareMobiusIdentity_of_nonsquarefreeCancellation"
+proof_classification = "REPOSITORY_PROVED_SQUAREFREE_CASE_PLUS_CONDITIONAL_NONSQUAREFREE_REDUCTION"
+
+[squarefree_case]
+positive_input = true
+argument = "d*d|m and Squarefree(m) implies IsUnit(d), hence d=1 in Nat"
+surviving_divisor = 1
+surviving_mobius_value = "mu(1)=1"
+factorization_used = false
+density_used = false
+analytic_estimate_used = false
+
+[remaining_obligation]
+name = "NonSquarefreeSquareDivisorMobiusCancellation"
+formula = "forall m>0, not Squarefree(m) -> squareDivisorMobiusSum(m)=0"
+constructed = false
+suggested_method = "prime-square witness plus finite inclusion-exclusion/toggling"
+
+[parent_identity]
+name = "SquarefreeDivisorSquareMobiusIdentity"
+constructed_from_remaining_certificate = true
+unconditional_construction_completed = false
+
+[evidence_states]
+source_draft = true
+squarefree_case_discharged_source_level = true
+nonsquarefree_cancellation_constructed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SquareDivisorMobiusSquarefreeHalf"
+authored_declaration_count = 5
+definition_count = 1
+theorem_script_count = 3
+structure_count = 1
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionDivisorSquareSieve.lean"
+git_blob = "59f7d81a0a056731d8a4ea9dae5fdb49046d5fdc"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_539"
+
+[hostile_controls]
+nonsquarefree_case_not_assumed = true
+prime_factor_heuristic_not_promoted_to_proof = true
+parent_identity_not_claimed_unconditionally = true
+source_text_not_promoted_to_kernel_evidence = true
+analytic_estimate_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+construct_nonsquarefree_cancellation = true
+exact_head_elaboration = true
+transitive_trust_audit = true
+independent_replay = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+full_divisor_square_identity_proved = false
+nonsquarefree_cancellation_proved = false
+cross_collision_bound_proved = false
+riemann_hypothesis_proved = false
