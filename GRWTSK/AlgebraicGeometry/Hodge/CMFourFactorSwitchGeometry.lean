@@ -1269,6 +1269,33 @@ criterion, not an independent geometric construction; proving its two
 fields directly from the desired generator membership would be circular.
 -/
 
+/-- The concrete rational target for the finite canonical fourfold formula.
+Unlike an arbitrary target V, its four vector slots are explicit. -/
+abbrev CMFiniteCanonicalVectorTarget (E : CMGaloisIntermediateField) :=
+  (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
+
+/-- Canonical finite-CM pure-factor formula, prior to extension of
+coefficients into algebraic numbers. The coefficient entries multiply in
+E while the four vector entries remain a rational tensor. -/
+def canonicalFinitePureAssembly
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E :=
+  (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+    (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
+
+/-- The coefficient in the canonical formula scales rationally in the
+first coefficient slot. This is one elementary check on the proposed
+pure-tensor prescription, not an assertion of the full multilinear lift. -/
+theorem canonicalFinitePureAssembly_smul_first
+    (E : CMGaloisIntermediateField)
+    (q : ℚ)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E (q • a₁) x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      q • canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [canonicalFinitePureAssembly, smul_eq_mul, mul_assoc, mul_left_comm,
+    mul_comm, Algebra.smul_def, TensorProduct.smul_tmul']
+
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
