@@ -1,0 +1,38 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-terminal-normalization-639-v0.1"
+owner_repository = "grwtsk/math"
+issue = 639
+parent_issue = 634
+parent_pr = 636
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryTerminalNormalization"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryTerminalNormalization"
+
+[source_binding]
+stacked_parent_revision = "17ac62555404f81434f9d7132fdcd4c3094fadae"
+candidate_branch = "research/rh-terminal-normalization-639"
+theorem_source_commit = "3730cb93826ab046c9818b5a978d5b2de0167b87"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryTerminalNormalization.lean"
+theorem_source_git_blob = "ffd9b9fa003f8c9b0bda1c69f3a41af7caad97dd"
+
+[selected_increment]
+terminal_drop_formula = "boundaryTerminalDrop_eq"
+terminal_drop_bound = "two_mul_boundaryTerminalDrop_sq_le_inv_fourth"
+small_scale_empty = "boundaryCoreDepths_eq_empty_of_lt_two"
+small_scale_tail_zero = "boundaryTailSquareEnergy_eq_zero_of_lt_two"
+localized_to_quadratic = "subpolynomialBoundaryQuadraticEnergyProduct_of_localized"
+normalization_adapter = "boundaryLocalizedEnergyNormalizationAdapter"
+localized_to_signed_boundary = "subpolynomialCoreBoundarySignedPacket_of_localizedMertensEnergy"
+proof_classification = "DETERMINISTIC_TERMINAL_DROP_NORMALIZATION"
+next_obstruction = "construct Weak-Mertens integral/global to discrete localized square-energy adapter"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+weak_mertens_localization_proved = false
+riemann_hypothesis_proved = false
