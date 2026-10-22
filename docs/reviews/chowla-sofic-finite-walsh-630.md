@@ -686,6 +686,7 @@ public-root import, merge or independent replay is represented here.
 
 **New pure-mathematics source:**
 `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean`.
+**Source blob:** `fbbdc11ef2ad8987e3dfd3e25d7e92af1b477e55`.
 
 This supplies the previously missing *finite cyclic-window model* consumed
 by the typed `finiteWalshBoundary_return` theorem. It neither invokes
@@ -794,6 +795,19 @@ supplier with fixed-versus-growing-window uniformity; and
 spectral universality upgrade. A clean external Lean replay
 with an exact axiom/declaration audit must precede promotion
 of any source drafts to verified mathematical declarations.
+
+**Independent finite checks (NOT Lean):** exact integer enumeration
+covered **37,448** cases across all offset subsets and all Boolean
+source words for `N=1,...,5`, plus **2,604** additional deterministic
+pseudorandom cases for `N=6,...,36`; no discrepancies in the collar
+count, full-word no-wrap identity, or squared form of the composite
+TV bound. The exhaustive tests included **1,364 empty-offset** and
+**1,364 singleton zero-shift** cases. A hostile oversized-shift
+fixture `N=4, H={5}` produces only four collar roots despite
+`r=5`, showing why the exact-cardinality lemma requires `r≤N`.
+A sharp finite boundary witness is documented above.
+These checks are evidence about bounded integer cases, never proof-term
+acceptance.
 
 **Evidence:** `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 NOT_TRUST_AUDITED / NO_ARITHMETIC_SUPPLIER`.
