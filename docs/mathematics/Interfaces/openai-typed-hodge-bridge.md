@@ -454,6 +454,15 @@ the source proves:
 The proof of nondegeneracy uses the nondegenerate field trace form and
 bijectivity of CM conjugation.
 
+The same module also constructs an anti-invariant nonzero candidate from any
+element not fixed by CM conjugation:
+\[
+\xi=x-c(x),\qquad c(\xi)=-\xi.
+\]
+This removes anti-invariance itself as a special algebraic construction, but
+does not impose the manuscript's required sign of \(\operatorname{Im}\tau(\xi)\)
+at the archimedean places.
+
 What remains external from the manuscript's polarization paragraph is exactly:
 
 - choose \(\xi\) with the prescribed archimedean sign at each conjugate pair;
