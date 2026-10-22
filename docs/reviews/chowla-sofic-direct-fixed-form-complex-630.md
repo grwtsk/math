@@ -301,3 +301,36 @@ NO_LOCAL_FIXED_FORM_PROOF_TERM`.
 All source-only definitions and conditional theorem declarations
 from earlier sections remain unchanged. Even after resolving this
 dependency, growing-shift all-order Chowla remains independent.
+
+## 8. Fixed-form source acceptance does not imply growing-shift uniformity
+
+A subsequent independent source-only mathematical obstruction
+formalizes the missing quantifier exchange more strongly than a
+full-scale diagonal counterexample.
+
+`GRWTSK/NumberTheory/ArithmeticFunctions/FixedShiftUniformityObstruction.lean`
+(blob `3416af4f7e2e4228e01f9b4b8ee5dd8a50540e45`)
+defines the abstract rational family
+`F(N,h)=1_[N=h²]`. Every fixed h has an all-horizon
+bound `|F(N,h)|≤(h²+1)/(N+1)` with one common power
+exponent, and eventually exact zero. But at `N=k²`,
+a shift `h=k` inside the genuinely sublinear window
+`1≤h≤k` has `F(k²,k)=1` and
+`h/N=1/k→0`. Hence the resulting supremum cannot
+tend to zero from the fixed-h quantifiers alone.
+
+This is NOT an arithmetic counterexample to Liouville:
+the family is abstract. It establishes only that even a
+locally kernel-verified fixed-form saving theorem
+would remain insufficient to discharge a growing-shift
+uniform correlation hypothesis without an additional
+positive theorem controlling its form-dependent constants.
+
+Standalone review:
+`docs/reviews/fixed-shift-uniformity-obstruction-441.md`;
+passive acceptance target:
+`verification/fixed-shift-uniformity-obstruction-441-v0.1.toml`.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+FIXED-TO-GROWING_LOGICAL_IMPLICATION_REFUTED /
+LIouVILLE_ARITHMETIC_OPEN.
