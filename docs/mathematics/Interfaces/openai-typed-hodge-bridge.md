@@ -454,13 +454,20 @@ the source proves:
 The proof of nondegeneracy uses the nondegenerate field trace form and
 bijectivity of CM conjugation.
 
-The same module also constructs an anti-invariant nonzero candidate from any
-element not fixed by CM conjugation:
+Mathlib proves CM complex conjugation is nontrivial, and the local source now
+transports that fact to the rationally restricted Galois conjugation. Hence a
+nonfixed element exists unconditionally in every CM number field, and the
+module constructs a nonzero anti-invariant trace datum without any manuscript
+premise.
+
+The same module constructs the anti-invariant candidate from a nonfixed
+element:
 \[
 \xi=x-c(x),\qquad c(\xi)=-\xi.
 \]
-This removes anti-invariance itself as a special algebraic construction, but
-does not impose the manuscript's required sign of \(\operatorname{Im}\tau(\xi)\)
+This removes both nontriviality and anti-invariance as special external
+constructions, but does not impose the manuscript's simultaneous required sign
+of \(\operatorname{Im}\tau(\xi)\)
 at the archimedean places.
 
 What remains external from the manuscript's polarization paragraph is exactly:
