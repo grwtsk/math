@@ -276,3 +276,64 @@ or issue closure is represented.
 NOT_KERNEL_AUDITED / FULL_ORDER_CHOWLA_OPEN /
 FINITE_ARITHMETIC_IDENTIFICATION_ONLY /
 GUE_RH_NONCLAIM.**
+
+## 7. Exact odd-lifted dyadic recurrence and noncontractive energy budget
+
+**2026-10-22.** The next bounded arithmetic increment reuses this
+actual Liouville source interface to expose exactly which part of
+higher-order correlations complete multiplicativity controls.
+
+New module:
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleOddLiftDyadicRecurrence.lean`
+(blob `0c8813fd24fb5be3bcc0ea0ded8ab79d231505c2`).
+It does not alter any preceding source module.
+
+Given any finite set H and selected subset S⊆H,
+the lifted shifts are `2h+1`, so their source values
+are `lambda(n+2h+2)`. At even root n=2m each factor
+is `-lambda(m+h+1)`; at odd root n=2m+1
+the product is `lambda(2m+2h+3)`, a separate
+UNBOUNDED odd-affine correlation.
+
+Thus, at any M>0, the normalized moment is EXACTLY
+
+```text
+liftedMean(2M,S) =
+  ((-1)^|S| * ordinarySourceMean(M,S)
+    + oddResidualMean(M,S))/2.
+```
+
+Applying the two-square convexity inequality and summing
+over ALL nonempty selected shift subsets yields the
+sharp conditional all-order energy comparison
+
+```text
+E_lifted(M,H)
+ <= (E_source(M,H)+E_oddResidual(M,H))/2.
+```
+
+The coefficient `1/2` is exact, but no unconditional
+contraction or cancellation follows. Example `H={0}`,
+`M=1` has source, residual and lifted energies
+all equal to one, attaining equality. Empty S has
+normalized moment one and never belongs to these energies.
+
+The new module defines eight functions/propositions and
+drafts ten theorem declarations. A new **eleven-module**
+passive target,
+`verification/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`,
+selects all 90 theorem and 41 definition heads, preserving
+the earlier standalone ten-module target. Full review at
+`docs/reviews/chowla-sofic-liouville-odd-lift-recurrence-630.md`.
+
+**Still missing:** an injective shift-image/subtype subset
+reindexing identifying these H-indexed lifted energies
+with the canonical energy on `{2h+1|h∈H}`, and most
+importantly a genuinely arithmetic odd-residual energy
+estimate. The published fixed-binary affine theorem does
+not control all higher orders or a growing shift family.
+
+Independent integer checks (768 configurations, 5,824
+subset coefficients, 768 energy bounds) yielded no
+discrepancies. **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+ODD_RESIDUAL_SUPPLIER_OPEN / NO_GUE_OR_RH_EDGE.**
