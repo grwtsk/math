@@ -1450,3 +1450,96 @@ higher-order Chowla, sofic/GUE, or RH.
 ODD_RESIDUAL_ESTIMATE_OPEN /
 CANONICAL_ODD_LIFT_IMAGE_ADAPTER_OPEN /
 NO_ARITHMETIC_CANCELLATION_OR_RH_RESULT.
+
+
+## 22. Canonical odd-lifted image, all-subset reindexing and arithmetic TV return
+
+**2026-10-22.** Direct parent PR #638 research head:
+`4995e170bcfb0ce989bdcbd2090ac009156b842f`.
+
+The prior all-order dyadic recurrence had an exact
+source-driven moment identity, but indexed odd-lifted
+products using the ORIGINAL finite coordinate subtype
+of H. That prevented an auditable direct comparison
+to the canonical `liouvilleAllOrderEnergy(2M,H')`
+whose subtype is determined by the lifted shift set.
+
+A new separate source
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleOddLiftCanonicalTransport.lean`
+(blob `f0b7812e767098bf99fb9a885da9b5e05933c017`)
+constructs the correct **bijective coordinate and
+powerset transport**, with `H'={2h+1|h∈H}`.
+
+It proves at the SOURCE-DRAFT level that the map is
+injective, `|H'|=|H|`, the subtype equivalence sends
+each old coordinate to precisely `2h+1`, and its
+`Equiv.finsetCongr` maps EVERY selected subset
+bijectively, preserving the empty/nonempty
+character criterion.
+
+The exact raw product identity
+
+```text
+prod_(h∈S) lambda(n+2h+2)
+  = prod_(j∈liftSubset(S)) lambda(n+j+1)
+```
+
+then gives the exact canonical source-energy equation
+
+```text
+oddLiftedAllOrderEnergy(M,H)
+  = liouvilleAllOrderEnergy(2M,H').
+```
+
+The previous sharp convexity estimate now supplies
+
+```text
+M>0:
+E_lambda(2M,H')
+  <= [E_lambda(M,H) + E_oddResidual(M,H)]/2.
+```
+
+The fully canonical cyclic-pattern consumer additionally
+requires `max(H')<2M` and returns
+
+```text
+TV(P_cyclic(lambda(1..2M),H'), uniform_H')
+  <= max(H')/(2M)
+     + 0.5*sqrt(
+         [E_lambda(M,H)+E_oddResidual(M,H)]/2).
+```
+
+The residual is NOT shown small, and M=1,H={0}
+attains equality in the energy bound with all
+three energies equal to one. No contraction,
+fixed-point contradiction, full Chowla or
+RH theorem has been inferred.
+
+**New passive acceptance target**
+`verification/liouville-odd-lift-canonical-transport-630-v0.1.toml`
+includes twelve source-only modules with 101
+theorem heads and 44 definitions. Full detailed
+review:
+`docs/reviews/chowla-sofic-canonical-odd-lift-transport-630.md`.
+The previous eleven-module target and proof-source
+blobs remain preserved.
+
+Independent integer/finite-real checks: twelve
+shift families, 768 H/M configurations,
+5,824 complete subset correspondences,
+768 canonical energy equalities and bounds,
+and 737 canonical cyclic TV cases satisfying
+the lifted strict-collar hypothesis; zero
+discrepancies. These checks are not Lean builds
+or kernel proof-term evidence.
+
+**Next genuine mathematical supplier:** an
+all-order ordinary Liouville estimate for
+the odd-affine residual and the smaller source
+energy, valid at any required growing-shift
+scope. Source-level reindexing has no power
+to create this cancellation.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN /
+NOT_KERNEL_AUDITED / CANONICAL_SUBTYPE_IMAGE_DRAFTED /
+ODD_RESIDUAL_SUPPLIER_OPEN / NO_GUE_OR_RH_EDGE.
