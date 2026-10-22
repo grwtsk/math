@@ -1,3 +1,7 @@
+# Historical original target Git blob: 59465987df5db01f73ddb1117cd9e2f1b5fb0e6e.
+# Historical original parent: 87fed9abf63d100b863701fb1669d8bda6e11c90; tree 23fd7b0031050485f5005e4b58d11f66f1c7e063.
+# Historical original mathematical note Git blob: 0aa4ff49af17803b5e6018713f012b5d7f2a75f8.
+# Parent and containing-source identities below bind repaired sources; source signatures are not kernel types.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-dyadic-chowla-shift-packet-388-v0.1"
 owner_repository = "grwtsk/math"
@@ -13,14 +17,14 @@ root_module = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
 build_target = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
 
 [source_binding]
-stacked_parent_revision = "87fed9abf63d100b863701fb1669d8bda6e11c90"
-stacked_parent_tree = "23fd7b0031050485f5005e4b58d11f66f1c7e063"
+stacked_parent_revision = "a91e7e8b9ab58e6b94ae5090d9025858c82b01d6"
+stacked_parent_tree = "76254d0fa629fdac7e6dfbf50aa97d8db3358802"
 new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicChowlaShiftPacket.lean"
-new_module_git_blob = "83ea01b7ee12f0a70f837b4b5c38fb113b1f14b8"
-new_module_sha256 = "ec283f677f44dd28a651297c05b8db6e6b7c3ed4a87b5cd760ae3bcd423a1f8d"
+new_module_git_blob = "54d657770bb2285faf4c9599763018a21e86f5a8"
+new_module_sha256 = "e31f878ff82edfd7219b694a191143b8aaabff05efcccafa89aca761ffe4aaa0"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-chowla-shift-packet.md"
-mathematical_note_git_blob = "0aa4ff49af17803b5e6018713f012b5d7f2a75f8"
-mathematical_note_sha256 = "0e8040a144438c3b750480a5ddb1c21697fb629c27f259de8202276531511b8f"
+mathematical_note_git_blob = "c45b5e0a4bab1d400cc271aff461f069429b9236"
+mathematical_note_sha256 = "b306c614a5e18d22872eb01d20ae3fe5e7938aaf7db3f24af647f3cff22cacac"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
 publication_status = "PUBLISHED_SOURCE_DRAFT"
 
@@ -52,12 +56,12 @@ private_helper_count = 3
 
 [[inherited_targets]]
 path = "verification/rh-dyadic-triangular-kernel-373-v0.1.toml"
-git_blob = "a9224de3d51e670f1d6144fac32ae5abb3809cc5"
+git_blob = "1ac306a1d776a79194d51a9e3f29d5aca163c8fb"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicTriangularKernel.lean"
-git_blob = "ff68494c3842e3127522cedbfc211452b00c4c45"
+git_blob = "d0cb8164802068241a72038a29a30fced0699c13"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [diagnostics]

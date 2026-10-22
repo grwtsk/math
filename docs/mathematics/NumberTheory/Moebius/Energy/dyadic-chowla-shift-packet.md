@@ -204,10 +204,11 @@ Consequently, if
 \[
 U_X
  =
- \max_{\substack{1\le h<Y\\1\le t<Y-h}}
- |C_h(t)|,
+ \max\left(\{0\}\cup
+ \left\{|C_h(t)|:1\le h<Y,\ 1\le t<Y-h\right\}\right),
 \]
 
+where including zero gives \(U_X=0\) for the empty index set at \(X=1\),
 then every shift obeys
 
 \[
@@ -220,10 +221,12 @@ and the full packet obeys the finite estimate
 \boxed{
 |\mathcal S_j|
  \le \frac{2(Y-1)}Y\,U_X
- <2U_X.
+ \le 2U_X.
 }
 \tag{10}
 \]
+
+The final inequality is strict when \(U_X>0\).
 
 Thus the strong uniform supplier
 

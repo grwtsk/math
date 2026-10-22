@@ -83,7 +83,7 @@ theorem dyadicMertensShiftWeight_eq_max (j b : ℕ) :
   by_cases hb : b < 2 ^ j
   · have hmax : max (2 ^ j) b = 2 ^ j := max_eq_left hb.le
     rw [dyadicMertensShiftWeight, if_pos hb, hmax,
-      dyadic_left_inv_eq_two_mul_right_inv]
+      dyadic_left_inv_eq_two_mul_right_inv j]
     ring
   · have hmax : max (2 ^ j) b = b :=
       max_eq_right (Nat.le_of_not_gt hb)
@@ -116,11 +116,11 @@ theorem weightedMertensDyadicTriangularBoundary_eq_earlyAtomSum (j : ℕ) :
       2 * ∑ b ∈ Finset.Ico 1 (2 ^ j),
         mertensTriangularAtom b *
           (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ := by
-  have hX : 1 ≤ 2 ^ j := by positivity
+  have hX : 1 ≤ 2 ^ j := Nat.one_le_pow j 2 (by norm_num)
   unfold weightedMertensDyadicTriangularBoundary
     mertensPrefixTriangularCorrelation mertensTriangularAtom
-  rw [Icc_one_pred_eq_Ico_one hX, Finset.sum_mul]
-  ring
+  rw [Icc_one_pred_eq_Ico_one hX]
+  simp only [Finset.sum_mul, mul_assoc]
 
 /-- The complete boundary/local kernel is one finite atom sum with the exact
 piecewise (equivalently max) weight. -/
@@ -128,7 +128,7 @@ theorem weightedMertensDyadicTriangularKernel_eq_atomSum (j : ℕ) :
     weightedMertensDyadicTriangularKernel j =
       2 * ∑ b ∈ Finset.Ico 1 (2 ^ (j + 1)),
         mertensTriangularAtom b * dyadicMertensShiftWeight j b := by
-  have h1X : 1 ≤ 2 ^ j := by positivity
+  have h1X : 1 ≤ 2 ^ j := Nat.one_le_pow j 2 (by norm_num)
   have hXY : 2 ^ j ≤ 2 ^ (j + 1) := by
     rw [Nat.pow_succ]
     omega
@@ -143,7 +143,8 @@ theorem weightedMertensDyadicTriangularKernel_eq_atomSum (j : ℕ) :
       rw [weightedMertensDyadicTriangularBoundary_eq_earlyAtomSum]
       unfold weightedMertensDyadicTriangularLocal
       congr 1
-      · apply Finset.sum_congr rfl
+      · congr 1
+        apply Finset.sum_congr rfl
         intro b hb
         rw [dyadicMertensShiftWeight_of_lt (Finset.mem_Ico.mp hb).2]
       · congr 1
@@ -195,8 +196,9 @@ private theorem sum_Ico_strict_eq_sum_lag
     simp only [Finset.mem_Ico] at ha₁ ha₂
     omega
   · intro h hh
+    simp only [Finset.mem_Ico] at hh
     refine ⟨b - h, ?_, ?_⟩
-    · simp only [Finset.mem_Ico] at hh ⊢
+    · simp only [Finset.mem_Ico]
       omega
     · omega
   · intro a ha
@@ -279,10 +281,6 @@ theorem weightedMertensDyadicStrictPairPacket_eq_shiftPacket (j : ℕ) :
     exact hext b hb
   rw [hsumext, ← Finset.mul_sum]
   rw [Finset.sum_comm]
-  rw [Finset.mul_sum]
-  apply Finset.sum_congr rfl
-  intro h _
-  ring
 
 /-- The finite tail kernel and the complete signed shift packet are identical. -/
 theorem weightedMertensDyadicTriangularKernel_eq_shiftPacket (j : ℕ) :
