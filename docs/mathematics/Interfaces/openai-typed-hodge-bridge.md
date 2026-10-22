@@ -1773,6 +1773,40 @@ The external Riemann existence theorem remains responsible for constructing the 
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4al. Canonical embedding factors now acquire actual weight-one Hodge types locally
+
+The strengthened weight-one realization is now connected back to the four-factor switch layer.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+CanonicalEmbeddingFactorActualTyping
+CanonicalEmbeddingFactorActualTyping.actual_type
+FourCanonicalFactorsActualTyping
+FourCanonicalFactorsActualTyping.all_actual_types
+~~~
+
+For one Galois CM sign row (v), a canonical factor package records:
+
+- a sign-controlled polarization parameter;
+- a `WeightOneCMRealization`;
+- one Galois character (	au);
+- one canonical tensor vector in the (	au)-embedding eigenspace.
+
+No Hodge type is supplied as an assumption. The theorem `actual_type` applies the locally constructed canonical-tensor-to-(H^1_{mathbf C}) comparison and proves that the actual vector has exactly the Hodge type determined by
+
+[
+operatorname{typeOfSign}(v(	au)).
+]
+
+The four-factor package keeps the four actual (H^1_{mathbf C}) carriers independent. This is important: four different CM sign rows can produce four different weight-one realizations, so collapsing them into one common carrier would hide a genuine dependent-type distinction.
+
+Thus the sign-label-to-actual-(H^{1,0}/H^{0,1}) bridge is local for every individual factor.
+
+The remaining Hodge-theoretic assembly frontier is now the standard one: construct a common fourfold cohomological tensor target from four independently realized weight-one factors and prove the tensor-product Hodge rule there.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
