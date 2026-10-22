@@ -84,7 +84,7 @@ role = "import-closure"
 [[modules]]
 name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation"
 path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchObservation.lean"
-source_git_blob = "2e199c4edbef36591ed884498f0c3418de86462c"
+source_git_blob = "675272e3b3570b0e2a81acec89ce602367dc5290"
 role = "import-closure"
 
 [[modules]]
@@ -113,6 +113,7 @@ required_new_source_names = [
   "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.decEq",
   "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.listDecEq",
   "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.render",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.renderBytes",
   "GRWTSK.Logic.StateTransition.ResearchObservation.stringWire",
   "GRWTSK.Logic.StateTransition.ResearchObservation.sourceWire",
   "GRWTSK.Logic.StateTransition.ResearchObservation.verificationStatusWire",
