@@ -359,6 +359,42 @@ theorem FourfoldMultilinearAlgebraicAssembly.equivariant
   | add x y hx hy =>
       simp [map_add, hx, hy]
 
+/-- A fourfold multilinear assembly with the canonical pure-factor formula
+supplies the algebraic assembly/equivariance interfaces locally. -/
+def FourfoldMultilinearAlgebraicAssembly.toAlgebraicAssemblyData
+    (M : FourfoldMultilinearAlgebraicAssembly)
+    (factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)) :
+    FourfoldAlgebraicAssemblyData factors
+      (M.assemble
+        (factors.vector 0)
+        (factors.vector 1)
+        (factors.vector 2)
+        (factors.vector 3)) where
+  assemble := fun v => M.assemble (v 0) (v 1) (v 2) (v 3)
+  original_eq := rfl
+
+/-- The same multilinear assembly supplies the previously isolated Galois
+equivariance interface without any further mathematical premise. -/
+def FourfoldMultilinearAlgebraicAssembly.toAssemblyEquivariance
+    (M : FourfoldMultilinearAlgebraicAssembly)
+    (factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)) :
+    FourfoldAlgebraicAssemblyEquivariance
+      (M.toAlgebraicAssemblyData factors) where
+  equivariant := fun σ => by
+    exact M.equivariant σ
+      (factors.vector 0)
+      (factors.vector 1)
+      (factors.vector 2)
+      (factors.vector 3)
+
 /-- Exact remaining Galois-equivariance statement for algebraic fourfold
 assembly.
 
