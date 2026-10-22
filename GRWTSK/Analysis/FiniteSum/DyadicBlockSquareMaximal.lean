@@ -93,7 +93,7 @@ theorem finitePrefixSum_add (a : ℕ → ℝ) (M N : ℕ) :
 @[simp] theorem alignedDyadicBlockSum_zero_index
     (a : ℕ → ℝ) (r : ℕ) :
     alignedDyadicBlockSum a r 0 = finitePrefixSum a (2 ^ r) := by
-  simp [alignedDyadicBlockSum, shiftedSequence]
+  simp [alignedDyadicBlockSum, finitePrefixSum, shiftedSequence]
 
 @[simp] theorem dyadicLevelCount_eq (m : ℕ) :
     dyadicLevelCount m = (m : ℝ) + 1 := by
@@ -114,7 +114,8 @@ theorem dyadicTreeSquareEnergy_nonneg
     0 ≤ dyadicTreeSquareEnergy m a := by
   induction m generalizing a with
   | zero =>
-      simp [dyadicTreeSquareEnergy]
+      simpa [dyadicTreeSquareEnergy, alignedDyadicBlockSum,
+        finitePrefixSum, shiftedSequence] using sq_nonneg (a 0)
   | succ m ih =>
       simp only [dyadicTreeSquareEnergy]
       exact add_nonneg
@@ -163,9 +164,9 @@ private theorem finitePrefixSum_sq_le_dyadicTreeSquareEnergy_aux
         norm_num at hN
         omega
       rcases hcases with rfl | rfl
-      · simp [finitePrefixSum, dyadicLevelCount,
+      · simpa [finitePrefixSum, dyadicLevelCount,
           dyadicTreeSquareEnergy, alignedDyadicBlockSum,
-          shiftedSequence]
+          shiftedSequence] using sq_nonneg (a 0)
       · simp [finitePrefixSum, dyadicLevelCount,
           dyadicTreeSquareEnergy, alignedDyadicBlockSum,
           shiftedSequence]
