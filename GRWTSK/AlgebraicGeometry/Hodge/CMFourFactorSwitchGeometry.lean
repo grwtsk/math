@@ -2590,3 +2590,98 @@ def transitionOfEqualColumnSums
 end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
+
+
+/-- The remaining fixed-field geometric comparison, separated from factor
+realization and switch combinatorics.
+
+This object contains exactly the map from the genuine fourfold H1 tensor to
+the descent coefficient model together with preservation of the declared
+H^(2,2) subspace.  It deliberately does not identify any distinguished
+generator. -/
+structure CMFiniteActualToDescentComparison
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (actualTyping :
+      CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄)
+    (hodgeRule :
+      FourfoldActualHodgeTensorRule actualTyping.toActualTyping)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  compare :
+    FourfoldActualTensor actualTyping.toActualTyping →ₗ[ℂ]
+      (ℂ ⊗[ℚ] V)
+  H22_le :
+    hodgeRule.H22.map compare ≤ hodgeSubspace
+
+/-- The remaining distinguished-generator equation once an actual-to-descent
+comparison has been fixed.
+
+Keeping this equality separate prevents Hodge preservation from being
+conflated with the geometric identification of the canonical pure tensor. -/
+structure CMFiniteActualGeneratorIdentification
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers)
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (actualTyping :
+      CMFiniteFourFactorActualTyping E
+        (factors.scalarTransport σ) v₁ v₂ v₃ v₄)
+    {hodgeRule :
+      FourfoldActualHodgeTensorRule actualTyping.toActualTyping}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (comparison :
+      CMFiniteActualToDescentComparison
+        actualTyping hodgeRule hodgeSubspace) where
+  generator_eq :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) =
+      comparison.compare
+        (fourfoldActualPureTensor actualTyping.toActualTyping
+          (actualTyping.first.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.first.vector)
+          (actualTyping.second.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.second.vector)
+          (actualTyping.third.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.third.vector)
+          (actualTyping.fourth.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.fourth.vector))
+
+/-- Factor realizations and switch alignment plus the two isolated geometric
+obligations reconstruct the complete transported-generator witness.
+
+Consequently the pre-descent frontier has exactly two geometric suppliers:
+the H^(2,2)-preserving comparison and the canonical-generator equation. -/
+def CMFiniteTransportedGeneratorWitness.ofComparison
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (actualTyping :
+      CMFiniteFourFactorActualTyping E
+        (factors.scalarTransport σ) v₁ v₂ v₃ v₄)
+    (alignment : CMFiniteFourFactorSwitchAlignment actualTyping)
+    (hodgeRule : FourfoldActualHodgeTensorRule actualTyping.toActualTyping)
+    (comparison :
+      CMFiniteActualToDescentComparison
+        actualTyping hodgeRule hodgeSubspace)
+    (identification :
+      CMFiniteActualGeneratorIdentification
+        D σ actualTyping comparison) :
+    CMFiniteTransportedGeneratorWitness D hodgeSubspace σ where
+  v₁ := v₁
+  v₂ := v₂
+  v₃ := v₃
+  v₄ := v₄
+  actualTyping := actualTyping
+  alignment := alignment
+  hodgeRule := hodgeRule
+  compare := comparison.compare
+  H22_le := comparison.H22_le
+  generator_eq := identification.generator_eq
