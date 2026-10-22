@@ -103,6 +103,24 @@ theorem antipodal_character_powerset (H : Finset ℕ) (m t : ℕ) :
       ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ) *
         ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))
 
+/-- The rational antipodal detector summed over the ordered root
+pairs is exactly the corresponding finite-filter cardinality. This
+uses no asymptotic cancellation assumption. -/
+theorem antipodal_product_pair_sum (M : ℕ) (H : Finset ℕ) :
+    (∑ p ∈ (Finset.range M).product (Finset.range M),
+      ∏ h ∈ H,
+        ((1 : ℚ) -
+          ((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+            ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) =
+      (2 : ℚ) ^ H.card * (antipodalPairCount M H : ℚ) := by
+  classical
+  simp_rw [antipodal_character_product_rat]
+  unfold antipodalPairCount
+  rw [← Finset.sum_filter]
+  simp only [Finset.sum_ite, Finset.sum_const_zero, add_zero,
+    Finset.sum_const, nsmul_eq_mul]
+  ring
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
