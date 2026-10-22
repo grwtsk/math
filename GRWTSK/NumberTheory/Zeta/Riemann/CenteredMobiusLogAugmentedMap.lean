@@ -92,16 +92,12 @@ theorem augmentedMobiusLogAtom_one (x : AugmentedMobiusLogData) :
 /-- Once anchors agree, equality of one-variable outputs through 2N recovers
 all genuine coefficients through N by the checked triangular reconstruction. -/
 theorem augmentedMobiusLogAtom_twoN_reconstruct
-    {N : ℕ} (x y : AugmentedMobiusLogData)
+    {N : ℕ} (hN : 1 ≤ N) (x y : AugmentedMobiusLogData)
     (hout : ∀ n, 1 ≤ n → n ≤ 2 * N →
       augmentedMobiusLogAtom x n = augmentedMobiusLogAtom y n) :
     x.anchor = y.anchor ∧
       ∀ d, 1 ≤ d → d ≤ N → x.genuine d = y.genuine d := by
-  have hanchor := hout 1 (by omega) (by
-    by_cases hN : N = 0
-    · subst N
-      simp at hout
-    · omega)
+  have hanchor := hout 1 (by omega) (by omega)
   rw [augmentedMobiusLogAtom_one, augmentedMobiusLogAtom_one] at hanchor
   refine ⟨hanchor, ?_⟩
   apply truncatedMobiusLogConvolution_twoN_reconstruct
