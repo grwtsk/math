@@ -86,8 +86,8 @@ theorem signedWordCoefficient_handleBlock (k : ℕ)
     (x a b : GenusLetter k) :
     signedWordCoefficient k x (handleBlock k a b) = 0 := by
   classical
-  simp [signedWordCoefficient, handleBlock, signedSideIncidence]
-  split_ifs <;> omega
+  simp [signedWordCoefficient, handleBlock, signedSideIncidence] <;>
+    split_ifs <;> omega
 
 /-- The two initial handle blocks independently cancel in integral
 incidence, without changing their noncommutative free-group relator. -/
@@ -131,8 +131,8 @@ theorem signedWordCoefficient_polygon_zero (k : ℕ)
     signedWordCoefficient k x (polygonBoundaryWord k) = 0 := by
   unfold polygonBoundaryWord
   rw [signedWordCoefficient_append,
-    signedWordCoefficient_firstTwo, signedWordCoefficient_extra]
-  norm_num
+    signedWordCoefficient_firstTwo, signedWordCoefficient_extra] <;>
+    norm_num
 
 /-- One oriented one-cell per true source generator. -/
 abbrev OneCellChains (k : ℕ) : Type :=
@@ -223,8 +223,8 @@ theorem oneBoundaries_singleton_zero (k : ℕ) :
 g=k+2. This is a finite counting theorem, not yet a CW isomorphism. -/
 theorem oneCellSourceCount (k : ℕ) :
     Fintype.card (GenusLetter k) = 2 * (k + 2) := by
-  simp [GenusLetter, Fintype.card_sum, Fintype.card_prod]
-  omega
+  simp [GenusLetter, Fintype.card_sum, Fintype.card_prod] <;>
+    omega
 
 /-- Formal cell-count Euler ledger 1 - 2g + 1, not yet the Euler
 characteristic of an authenticated topological surface. -/
@@ -235,8 +235,7 @@ theorem formalEulerCount_eq (k : ℕ) :
     formalEulerCount k = 2 - 2 * ((k : ℤ) + 2) := by
   unfold formalEulerCount
   rw [oneCellSourceCount]
-  push_cast
-  ring
+  push_cast <;> ring
 
 /-- A hostile source corruption: dropping the inverse b edge from
 one base handle leaves nonzero signed incidence at b. Thus the
