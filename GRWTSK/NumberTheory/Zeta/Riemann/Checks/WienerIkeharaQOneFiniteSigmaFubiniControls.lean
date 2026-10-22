@@ -49,7 +49,8 @@ summable for the ACTUAL pinned von Mangoldt sequence at sigma>1.
 This is the source theorem that justifies infinite Fubini. -/
 theorem wienerFubini_actual_lambda_norm_domination
     (sigma T : ℝ) (hsigma : 1 < sigma)
-    (psi : ℝ → ℂ) :
+    (psi : ℝ → ℂ) (hpsi : Continuous psi)
+    (hcompact : HasCompactSupport psi) :
     Summable
       (fun n : ℕ =>
         ∫ t : ℝ,
@@ -57,6 +58,7 @@ theorem wienerFubini_actual_lambda_norm_domination
             wienerFubiniLambda sigma T psi n t‖) :=
   wienerFubini_integral_norm_summable
     wienerFubiniLambda sigma T psi
+    (hpsi.integrable_of_hasCompactSupport hcompact)
     (wienerFubiniLambda_LSeriesSummable
       (by simpa using hsigma))
 
