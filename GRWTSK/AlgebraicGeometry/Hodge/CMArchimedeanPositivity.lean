@@ -8,6 +8,7 @@ build/sections/02-tensors.tex.
 This file formalizes only the finite coordinate positivity consequence of the
 prescribed archimedean sign profile. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization
+import GRWTSK.AlgebraicGeometry.Hodge.CMCoordinateHodge
 
 /-!
 # Archimedean CM sign-profile positivity
@@ -362,9 +363,108 @@ theorem SignControlledXi.embedding_mul_weilFactor
   · simp [weilFactor, Complex.mul_re, Complex.mul_im,
       X.embedding_re_zero σ]
 
-/-- Coordinate realization of the Weil-twisted trace coefficient. This is
-still a coordinate formula; equality with the base-changed rational trace
-pairing is a separate theorem boundary. -/
+/-- Coordinates of a rational CM-field vector under the selected Galois
+embedding labels.  These are the concrete coordinates used to compare the
+rational trace pairing with its scalar extension. -/
+def fieldCoordinates (x : E) : (E ≃ₐ[ℚ] E) → ℂ :=
+  fun σ => complexEmbeddingAt E σ x
+
+/-- The coordinate in the conjugate label is the embedding of the canonical
+CM conjugate. -/
+theorem fieldCoordinates_conjLabel
+    (x : E) (σ : E ≃ₐ[ℚ] E) :
+    fieldCoordinates E x ((centralInvolution E).conj σ) =
+      complexEmbeddingAt E σ (galoisComplexConj E x) := by
+  simp [fieldCoordinates, complexEmbeddingAt,
+    centralInvolution_conj_apply, AlgEquiv.mul_apply,
+    galoisComplexConj_commute_apply]
+
+/-- Complex scalar extension of the rational trace pairing in the product
+coordinates indexed by the Galois embeddings.
+
+The conjugate label in the second argument is forced by
+\`psi_xi(x,y) = Tr(xi*x*c(y))\`. -/
+def SignControlledXi.complexifiedTracePairing
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z w : (E ≃ₐ[ℚ] E) → ℂ) : ℂ :=
+  ∑ σ,
+    complexEmbeddingAt E σ X.xi * z σ *
+      w ((centralInvolution E).conj σ)
+
+/-- On coordinates coming from rational CM-field vectors, the coordinate
+pairing is exactly the rational trace pairing after base change to the chosen
+complex embedding.  This is the local scalar-extension comparison, not merely
+a dimension or sign analogy. -/
+theorem SignControlledXi.complexifiedTracePairing_fieldCoordinates
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (x y : E) :
+    X.complexifiedTracePairing (fieldCoordinates E x) (fieldCoordinates E y) =
+      baseComplexEmbedding E
+        (algebraMap ℚ E (CMTracePolarization.tracePairing E X.xi x y)) := by
+  have h :=
+    congrArg (baseComplexEmbedding E)
+      (trace_eq_sum_automorphisms
+        (K := ℚ) (L := E)
+        (X.xi * x * galoisComplexConj E y))
+  rw [map_sum] at h
+  symm
+  simpa [CMTracePolarization.tracePairing,
+    SignControlledXi.complexifiedTracePairing, fieldCoordinates,
+    complexEmbeddingAt, centralInvolution_conj_apply, AlgEquiv.mul_apply,
+    galoisComplexConj_commute_apply, map_mul, mul_assoc] using h
+
+/-- The actual coordinate Hodge real structure fixes vectors coming from the
+rational field.  This is the expected real form inside the complexified
+coordinate model. -/
+theorem fieldCoordinates_realConj
+    (x : E) :
+    CMCoordinateHodge.realConj (centralInvolution E)
+        (fieldCoordinates E x) =
+      fieldCoordinates E x := by
+  funext σ
+  simp [CMCoordinateHodge.realConj, fieldCoordinates_conjLabel,
+    complexEmbeddingAt_galoisComplexConj]
+
+/-- Applying the actual sign-defined weight-one Weil operator to the first
+argument and the actual coordinate real structure to the second converts the
+complexified trace pairing into the previously defined coordinate Weil form. -/
+theorem SignControlledXi.complexifiedTracePairing_weil_realConj
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) :
+    X.complexifiedTracePairing
+        (CMCoordinateHodge.weilOperator v z)
+        (CMCoordinateHodge.realConj (centralInvolution E) z) =
+      X.coordinateWeilForm z := by
+  unfold SignControlledXi.complexifiedTracePairing
+    SignControlledXi.coordinateWeilForm
+  apply Finset.sum_congr rfl
+  intro σ _
+  rw [Complex.normSq_eq_conj_mul_self]
+  simp [CMCoordinateHodge.weilOperator, CMCoordinateHodge.realConj,
+    weilFactor, CentralInvolution.conj_involutive]
+  ring
+
+/-- The coordinate energy is therefore exactly the base-changed trace
+polarization evaluated with the local Hodge Weil operator and real structure.
+Together with \`complexifiedTracePairing_fieldCoordinates\`, this closes the
+coordinate-energy/complexified-trace-pairing identification boundary. -/
+theorem SignControlledXi.complexifiedTracePairing_weil_realConj_eq_energy
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) :
+    X.complexifiedTracePairing
+        (CMCoordinateHodge.weilOperator v z)
+        (CMCoordinateHodge.realConj (centralInvolution E) z) =
+      (X.energy z : ℂ) := by
+  rw [X.complexifiedTracePairing_weil_realConj]
+  exact X.coordinateWeilForm_eq_energy z
+
+/-- Coordinate realization of the Weil-twisted trace coefficient. This coordinate formula is identified below with the base-changed rational
+trace pairing through the actual coordinate Hodge real structure and Weil
+operator. -/
 def SignControlledXi.coordinateWeilForm
     {v : CMNumberFieldIndex.OddSignRow E}
     (X : SignControlledXi E v)
