@@ -1296,3 +1296,46 @@ nonclaims = [
   "combinatorial equality only",
   "does not construct the manuscript identity tensor"
 ]
+
+
+[[local_target]]
+name = "whole-list identity transition from two-factor row identities"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.identityTransitionSupplierOfTwoFactor"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "TwoFactorIdentitySupplier",
+  "IdentityTensorAssemblySupplier"
+]
+nonclaims = [
+  "formal assembly only",
+  "does not construct diagonal cycle classes",
+  "does not use or prove the four-factor switch theorem"
+]
+
+[[external_premise]]
+id = "cm-two-factor-identity-line-algebraicity"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["lem:weight-one-maps", "prop:switch-reduction"]
+statement_role = "for each unchanged row, realize the degree-one identity/diagonal correspondence as a nonzero algebraic two-factor tensor U(v)_1 tensor U(v)_c"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TwoFactorIdentitySupplier"
+status = "OPEN"
+nonclaims = [
+  "separate from the independent four-factor switch theorem"
+]
+
+[[external_premise]]
+id = "cm-two-factor-identity-slot-assembly"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["prop:switch-reduction"]
+statement_role = "pull unchanged-row two-factor classes to their old/new slots and multiply them into the whole-list identity transition"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.IdentityTensorAssemblySupplier"
+status = "OPEN"
+nonclaims = [
+  "routine geometric assembly only",
+  "no four-factor algebraicity content"
+]
