@@ -37,6 +37,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MellinNormalizedDyadicPackingCont
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MellinNormalizedGrowingCellPackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenSourceFrameControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenGramFormControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierFrameControls
 
 set_option autoImplicit false
 
