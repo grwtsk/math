@@ -54,30 +54,10 @@ theorem window_overlap_flow (k N : ℕ) (x : ℕ → Bool)
         (windowInCount k N x v : ℤ) =
       (if windowPrefix k 0 x = v then (1 : ℤ) else 0) -
         (if windowSuffix k (N - 1) x = v then (1 : ℤ) else 0) := by
-  have hshift (t : ℕ) :
-      windowSuffix k t x = windowPrefix k (t + 1) x :=
-    windowSuffix_eq_nextPrefix k t x
-  have hcount :
-      (windowOutCount k N x v : ℤ) =
-        ∑ t ∈ Finset.range N,
-          if windowPrefix k t x = v then (1 : ℤ) else 0 := by
-    simp [windowOutCount, Finset.sum_ite]
-  have hcount' :
-      (windowInCount k N x v : ℤ) =
-        ∑ t ∈ Finset.range N,
-          if windowSuffix k t x = v then (1 : ℤ) else 0 := by
-    simp [windowInCount, Finset.sum_ite]
-  rw [hcount, hcount']
-  simp_rw [hshift]
-  induction N with
-  | zero => omega
-  | succ n ih =>
-      cases n with
-      | zero => simp
-      | succ m =>
-          have hN' : 0 < m + 1 := by omega
-          have hprev := ih hN'
-          simp only [Finset.sum_range_succ]
-          omega
+  classical
+  have hlast : N - 1 + 1 = N := Nat.sub_add_cancel (by omega)
+  simp only [windowOutCount, windowInCount, Finset.natCast_card_filter,
+    windowSuffix_eq_nextPrefix]
+  rw [hlast, ← Finset.sum_sub_distrib, Finset.sum_range_sub']
 
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
