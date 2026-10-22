@@ -359,6 +359,50 @@ theorem FourfoldMultilinearAlgebraicAssembly.equivariant
   | add x y hx hy =>
       simp [map_add, hx, hy]
 
+/-- Two fourfold Q-multilinear assemblies satisfying the same canonical
+pure-factor formula agree on arbitrary factor tensors.
+
+Thus identification of a geometric switched assembly with the canonical model
+is reduced to showing only multilinearity and the pure-factor formula. -/
+theorem FourfoldMultilinearAlgebraicAssembly.assemble_eq
+    (M N : FourfoldMultilinearAlgebraicAssembly)
+    (t₁ t₂ t₃ t₄ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    M.assemble t₁ t₂ t₃ t₄ = N.assemble t₁ t₂ t₃ t₄ := by
+  induction t₁ with
+  | tmul a₁ x₁ =>
+      induction t₂ with
+      | tmul a₂ x₂ =>
+          induction t₃ with
+          | tmul a₃ x₃ =>
+              induction t₄ with
+              | tmul a₄ x₄ =>
+                  rw [M.pure_formula, N.pure_formula]
+              | add x y hx hy =>
+                  simp [map_add, hx, hy]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- Extensional equality of the underlying fourfold assembly functions. -/
+theorem FourfoldMultilinearAlgebraicAssembly.assemble_fun_eq
+    (M N : FourfoldMultilinearAlgebraicAssembly) :
+    M.assemble = N.assemble := by
+  apply LinearMap.ext
+  intro t₁
+  apply LinearMap.ext
+  intro t₂
+  apply LinearMap.ext
+  intro t₃
+  apply LinearMap.ext
+  intro t₄
+  exact M.assemble_eq N t₁ t₂ t₃ t₄
+
 /-- A fourfold multilinear assembly with the canonical pure-factor formula
 supplies the algebraic assembly/equivariance interfaces locally. -/
 def FourfoldMultilinearAlgebraicAssembly.toAlgebraicAssemblyData
