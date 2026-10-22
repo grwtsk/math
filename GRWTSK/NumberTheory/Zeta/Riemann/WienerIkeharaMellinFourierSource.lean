@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 grwtsk contributors. All rights reserved.
-Released under the Apache 2.0 license as described in the repository LICENSE.
+Original contributions: MIT (repository LICENSE). Analytic source ideas and\nselected proof structure adapted from Apache-2.0 PrimeNumberTheoremAnd;\nupstream copyright and license remain with their original authors.
 Source-level adaptation and mathematical attribution:
   Alex Kontorovich, Terry Tao, and PrimeNumberTheoremAnd contributors,
   PrimeNumberTheoremAnd/Wiener.lean, maintained commit
