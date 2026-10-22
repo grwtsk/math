@@ -114,8 +114,9 @@ bound uses the order-two Renyi / Jensen inequality.
 All three are valid finite mathematical deductions. The original source
 increment did not draft their formal proofs. The subsequent source-only
 Parseval increment (#10 below) now drafts the exact chi-square identity,
-while the total-variation and entropy inequalities remain separate
-Lean obligations. No module in this packet has been kernel audited.
+while total-variation and entropy remained separate obligations at that
+stage. The later fourth increment (#11) now source-drafts both TV bounds.
+Shannon entropy remains open, and no module is kernel audited.
 
 For the exception identity, coupling both distributions by choosing
 the SAME uniformly random root gives
@@ -124,9 +125,10 @@ the SAME uniformly random root gives
 TV(P_x,P_y) <= |E|/|R|.
 ```
 
-This finite inequality also remains to be formalized. In particular,
-one must not infer total-variation control merely by looking at a
-single pattern's count without summing the resulting coupling event.
+The fourth increment (#11) now source-drafts this finite inequality
+using a complete categorical mass sum. In particular, a bound on one
+pattern's count alone does not establish total-variation control;
+every category must be included.
 
 ## 5. Cyclic model and distinct-shift hypotheses
 
@@ -189,8 +191,9 @@ cannot be substituted for all-order Walsh cancellation.
 | Boolean indicator -> finite Walsh powerset identity | Any finite roots and coordinates | SOURCE_DRAFT, not compiled |
 | Finite labeled agreement outside E -> exact support identity | All selected coordinates agree | SOURCE_DRAFT, not compiled |
 | Walsh identity + orthogonality -> Parseval / chi-square | Full finite cube; all nonempty coefficients; positive root count | Parseval and chi-square SOURCE_DRAFT; not compiled |
-| Finite energy + Cauchy--Schwarz -> TV, then Jensen -> entropy | Same normalization plus analytic inequalities | Written mathematics; Lean suppliers OPEN |
-| Labeled boundary support + coupling -> TV error <= exception cardinality / root cardinality | Written derivation; Lean supplier OPEN |
+| Finite energy + Cauchy--Schwarz -> TV (squared rational and real square-root forms) | Complete finite cube, positive sample size | SOURCE_DRAFT; NOT_RUN |
+| Labeled boundary support + categorical coupling -> TV error <= exception cardinality / root cardinality | All labels agree off a counted subset of the same roots | SOURCE_DRAFT; NOT_RUN |
+| TV/chi-square to Shannon entropy | Full empirical law and a log/Jensen theorem | OPEN; written derivation only |
 | Fixed-order Chowla -> corresponding fixed-window Bernoulli law | All nonempty subsets, correct averaging | Conditional arithmetic adapter |
 | Full Chowla -> Liouville Bernoulli genericity | Every distinct fixed-shift tuple and all orders | Conditional; not supplied by this PR |
 | Cycle approximation -> zeta GUE microscopic gaps | Requires spectral/arithmetic identification, not local limits alone | NO PROOF EDGE |
@@ -219,10 +222,15 @@ The Parseval / chi-square energy supplier is now additionally
 **source-drafted** in `FiniteWalshParseval.lean` (see #10). It remains
 NOT_RUN / NOT_KERNEL_AUDITED, and is not a compiled theorem.
 
-Next finite Lean increment: derive the total-variation inequality using
-the finite Cauchy--Schwarz bound, and separately formalize the
-label-preserving exception-coupling estimate `TV <= |E| / |R|`.
-Keep all supplier stages separate from arithmetic rates, sofic limits,
+The finite Cauchy--Schwarz TV and exception-coupling bounds are now
+source-drafted in `FiniteWalshTotalVariation.lean` and
+`FiniteLabeledBoundaryTV.lean` (see #11). Neither is elaborated or
+kernel audited.
+
+Next distinct mathematical obligations: a typed triangle inequality
+composing both finite TV estimates, a cyclic-shift model with an exact
+exception-set cardinality bound, and the finite-coordinate subtype
+adapter. Keep these separate from arithmetic rates, sofic limits,
 spectral results and RH.
 
 Reject any proof or summary that (1) omits the empty subset from
@@ -411,3 +419,151 @@ outside exceptional root set `E⊆R` implies
 `TV(P_x,P_y) ≤ |E|/|R|` via common-root coupling.
 Only a subsequently proved quantitative arithmetic estimate can
 drive either error small as windows grow.
+
+## 11. Source-only fourth increment: finite total variation and labeled boundary coupling
+
+**Date:** 2026-10-22. **Direct parent:** PR #638 exact head
+`918154b70139e801161b701ec694a86e7aa9f8a8`.
+
+The increment adds two independent finite probability layers:
+
+- `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshTotalVariation.lean`.
+- `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean`.
+
+Both belong in pure mathematical source. Neither defines or executes a sofic
+action, Lean job, Git mutation, native test, or arithmetic estimate.
+
+### 11.1 Quantitative Walsh-to-Bernoulli estimate
+
+Retain all the exact notation of #10, especially the positive finite
+sample cardinality `n=|R|>0`, complete Boolean cube cardinality
+`q=|ι→Bool|>0`, and the **nonempty** energy `E(R,x)`.
+Set `D(a) = q P(a)-1`. The standard total variation distance is
+
+```text
+TV(P,U) := 1/(2*q) * sum_(a:ι→Bool) |D(a)|.
+```
+
+The source first applies the finite Cauchy--Schwarz inequality
+`sq_sum_le_card_mul_sum_sq`, located at the inspected pinned
+`Mathlib/Algebra/Order/Chebyshev.lean`, to the **nonnegative**
+absolute discrepancies:
+
+```text
+(sum_a |D(a)|)^2 <= q * sum_a D(a)^2
+                 = q^2 * E(R,x).
+```
+
+Dividing by the positive factor `q^2` supplies the rational
+squared-TV statement:
+
+```text
+(2*TV(P,U))^2 <= E(R,x).
+```
+
+An explicitly cast real-valued consequence uses
+`Real.le_sqrt_of_sq_le` from the pinned
+`Mathlib/Analysis/Real/Sqrt.lean`:
+
+```text
+(TV(P,U) : Real) <= sqrt((E(R,x) : Real))/2.
+```
+
+This is a bound for finite patterns only. It does NOT establish
+that `E(R,x)` is small for any Liouville or Möbius sequence.
+Because the Boolean cube is finite and always inhabited, the
+`q>0` denominator needs no assumption that the coordinate type
+itself is inhabited. Conversely `n>0` is mandatory.
+
+**One new definition:** `totalVariationFromUniform`.
+**Six proposed theorem heads:** `boolCube_card_pos`,
+`totalVariationFromUniform_nonneg`,
+`scaledDeviation_l1_sq_le_card_mul_l2`,
+`scaledDeviation_l1_sq_le_energy`,
+`two_mul_totalVariation_sq_le_energy`, and
+`totalVariation_le_half_sqrt_energy`.
+
+### 11.2 Labeled exceptional-root coupling
+
+For a *finite categorical label type* `β` and two labelings
+`x,y : Nat→β` of the SAME selected root set `R`, define
+
+```text
+mass(R,x,a) = sum_(n∈R) 1_[x(n)=a]
+TV_R(x,y) = 1/(2*|R|) * sum_(a:β) |mass(R,x,a)-mass(R,y,a)|.
+```
+
+Assume a genuine `B⊆R` and
+`∀ n∈R, n∉B -> x(n)=y(n)`. Exactly partition the root
+set, then use the nonnegative exceptional category counts:
+
+```text
+mass(R,x,a)-mass(R,y,a)
+  = mass(B,x,a)-mass(B,y,a)
+
+|mass(R,x,a)-mass(R,y,a)|
+  <= mass(B,x,a)+mass(B,y,a).
+```
+
+By summing over **every** category and using
+`sum_a mass(B,x,a)=|B|=sum_a mass(B,y,a)`,
+
+```text
+sum_a |mass(R,x,a)-mass(R,y,a)| <= 2*|B|.
+TV_R(x,y) <= |B|/|R|    (|R|>0).
+```
+
+The bound is sharp: one root and opposite Boolean labels give
+`TV=1`. A separate hostile fixture demonstrates that source-label
+disagreement on the sole *good* root cannot satisfy the required
+off-boundary matching hypothesis with `B=∅`.
+
+The finite Boolean-word adapter is exact: for any complete word
+`b,a : ι→Bool`,
+
+```text
+prod_(i:ι) 1_[b(i)=a(i)] = 1_[b=a].
+```
+
+Consequently, the earlier `patternCountOn` equals the new
+`categoricalPatternCount` when `I=univ`. It is therefore the
+actual full Boolean pattern marginal, not an unlabeled-graph
+surrogate. Restriction from arbitrary ambient `I : Finset ι`
+to the finite subtype remains a distinct adapter.
+
+**Two new definitions:** `categoricalPatternCount`,
+`categoricalTotalVariation`.
+**Fourteen proposed theorem heads:** `categoricalPatternCount_nonneg`,
+`categoricalPatternCount_total`, `categoricalPatternCount_split`,
+`categoricalPatternCount_agree_off`,
+`categoricalPatternDifference_supported`,
+`categoricalPatternDifference_abs_le`,
+`categoricalPatternL1_le_twice_exception`,
+`categoricalTotalVariation_le_exception`,
+`coordinateIndicator_eq_pattern`,
+`fullCubePatternCount_eq_categorical`,
+`fullCubeEmpirical_eq_categorical`, `fullCubeBoundaryTV_le`,
+`missing_label_agreement_fixture`, `one_root_sharp_tv_fixture`.
+
+### 11.3 Composed mathematical theorem and remaining proof boundaries
+
+The **written**, finite triangular composition is
+
+```text
+TV(P_model,U) <= TV(P_model,P_source)+TV(P_source,U)
+             <= |B|/|R| + 0.5*sqrt(E(R,x)).
+```
+
+The two positive inequalities have now been separately
+source-drafted in Lean. The explicit Lean triangle theorem,
+cyclic-index root comparison, and arithmetic-specific correlation
+supplier are **NOT** included in this increment. In particular,
+there is no proof that the full Liouville Chowla correlations tend
+to zero or that the microscopic GUE gap process is determined
+by a labeled sofic limit.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+NO_ANALYTIC_SUPPLIER. The passive target lists each theorem for
+subsequent *actual* clean-checkout elaboration and transitive
+axiom/trust inspection. No public-root import, build, merge,
+or independent replay was performed.
