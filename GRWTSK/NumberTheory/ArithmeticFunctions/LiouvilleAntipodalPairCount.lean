@@ -533,6 +533,30 @@ theorem normalized_nonempty_subtype_characters_eq_mixed
   intro S _
   exact normalized_subtype_character_term M H S hM
 
+/-- The normalized complete subtype-indexed Walsh sum equals one
+plus the signed nonempty mixed energy. The empty contribution is
+exactly one for M>0 and is counted only once. -/
+theorem normalized_full_subtype_characters_eq_one_add_mixed
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) :
+    (∑ S : Finset {h : ℕ // h ∈ H},
+      ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          (-1 : ℚ) ^ (shiftSubsetValues H S).card *
+            ∏ h ∈ shiftSubsetValues H S,
+              (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2)) =
+      1 + dyadicSignedMixedEnergy M H := by
+  rw [subtype_character_sum_empty_split]
+  have hempty :
+      ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          (-1 : ℚ) ^ (shiftSubsetValues H ∅).card *
+            ∏ h ∈ shiftSubsetValues H ∅,
+              (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2) = 1 := by
+    simpa [shiftSubsetValues] using empty_character_root_pair_normalization M hM
+  rw [hempty, normalized_nonempty_subtype_characters_eq_mixed M H hM]
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
