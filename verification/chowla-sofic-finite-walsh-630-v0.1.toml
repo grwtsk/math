@@ -9,15 +9,16 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lake_manifest_file = "lake-manifest.json"
 
 [scope]
-kind = "isolated-five-module-target"
-module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV"
-source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean"
+kind = "isolated-six-module-target"
+module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle"
+source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean"
 required_modules = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshTotalVariation",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle",
 ]
 required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
@@ -25,8 +26,9 @@ required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshParseval.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshTotalVariation.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean",
 ]
-require_exact_five_module_dependency = true
+require_exact_six_module_dependency = true
 allow_only_selected_module_build = true
 mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
 requires_clean_checkout = true
@@ -112,8 +114,11 @@ required = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubeBoundaryTV_le",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.missing_label_agreement_fixture",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.one_root_sharp_tv_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_change",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.uniformTV_le_boundaryTV_add_sourceTV",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.finiteWalshBoundary_return",
 ]
-exact_count = 42
+exact_count = 45
 requires_exact_types = true
 requires_full_axiom_inspection = true
 
@@ -192,8 +197,24 @@ id = "single-root-sharpness"
 must_preserve = "The Boolean fixture with one root and opposite labels has total variation exactly one, while the empty-exception agreement hypothesis is false."
 
 [[hostile_controls]]
+id = "single-root-population"
+must_preserve = "Source, model, categorical discrepancy and uniform-reference TV must all refer to the SAME positive-cardinality finite root set; changing samples requires another theorem."
+
+[[hostile_controls]]
+id = "complete-boolean-label-marginal"
+must_preserve = "The intervening categorical distance compares complete Boolean words and the exact Walsh empirical law, not a coarser or unlabeled partition."
+
+[[hostile_controls]]
+id = "one-sided-source-energy"
+must_preserve = "The composite estimate uses ONLY source nonempty Walsh energy and charges the exceptional set once; no assumption that the model energy is small."
+
+[[hostile_controls]]
+id = "triangle-is-not-sofic-limit"
+must_preserve = "Finite triangle and labeled boundary bounds do not construct a cyclic sample or sofic limit. The r/N specialization requires a separate index/boundary theorem."
+
+[[hostile_controls]]
 id = "no-probabilistic-upgrade"
-must_preserve = "The exact chi-square identity, rational squared-TV inequality, real sqrt-TV bound, and finite categorical boundary-TV inequality are only SOURCE_DRAFT, not elaborated or kernel-audited. Shannon entropy and any arithmetic cancellation supplier remain open."
+must_preserve = "The exact chi-square, rational squared-TV, real sqrt-TV, categorical boundary-TV and composite TV triangle are SOURCE_DRAFT only, not elaborated or kernel-audited. Shannon entropy, cyclic-source indexing, and any arithmetic cancellation supplier remain open."
 [[hostile_controls]]
 id = "no-spectral-upgrade"
 must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
@@ -220,6 +241,7 @@ claims = [
   "Liouville distribution limits",
   "growing-window uniform correlation energy",
   "sofic action existence or spectral convergence",
+  "cyclic r/N boundary specialization already formalized",
   "Parseval or chi-square identity already kernel-checked in Lean",
   "total-variation bounds already kernel-audited or externally replayed",
   "Shannon entropy inequality already proved in Lean",
