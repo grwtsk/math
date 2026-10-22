@@ -2136,3 +2136,32 @@ name = "extensional equality of canonical fourfold assembly maps"
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.assemble_fun_eq"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "presented fourfold multilinear assembly directly yields monomial assembly data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.toMonomialAssemblyData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "fourfold Q-multilinear switched assembly",
+  "canonical pure-factor formula"
+]
+nonclaims = [
+  "algebraic assembly and Galois equivariance are derived locally",
+  "does not supply Hodge comparison or algebraicity"
+]
+
+[[local_target]]
+name = "presented assembly gives scalar-conjugate transported-line membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.scalarConjugate_mem_transportedLine"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "fourfold Q-multilinear switched assembly",
+  "canonical pure-factor formula"
+]
+nonclaims = [
+  "no separate scalar-conjugation naturality premise remains",
+  "Hodge-line inclusion remains a separate comparison branch"
+]
