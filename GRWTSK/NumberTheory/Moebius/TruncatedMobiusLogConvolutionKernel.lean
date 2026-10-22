@@ -45,8 +45,11 @@ theorem truncatedMobiusLogConvolution_moebius_eq_vonMangoldt
   have h :=
     congrArg (fun f : ArithmeticFunction ℝ => f n)
       ArithmeticFunction.moebius_mul_log_eq_vonMangoldt
-  simpa [ArithmeticFunction.mul_apply, ArithmeticFunction.log_apply,
-    ArithmeticFunction.sum_divisorsAntidiagonal] using h
+  simp only [ArithmeticFunction.mul_apply, ArithmeticFunction.log_apply,
+    ArithmeticFunction.intCoe_apply] at h
+  rw [Nat.sum_divisorsAntidiagonal (fun i j =>
+    (ArithmeticFunction.moebius i : ℝ) * Real.log (j : ℝ))] at h
+  exact h
 
 /-- If p is in the strict upper half of [1,N], any n<=N divisible by p is p
 itself. No primality assumption is needed. -/
@@ -56,7 +59,7 @@ theorem eq_of_upperHalf_dvd
     (hnpos : 1 ≤ n)
     (hnN : n ≤ N)
     (hpdvd : p ∣ n)
-    (ppos : 1 ≤ p) :
+    (_ppos : 1 ≤ p) :
     n = p := by
   obtain ⟨k, rfl⟩ := hpdvd
   have hk : 1 ≤ k := by
@@ -75,7 +78,7 @@ the complete truncated output 1..N. -/
 theorem truncatedMobiusLogConvolution_upperHalf_basis_zero
     {N p : ℕ}
     (ppos : 1 ≤ p)
-    (hpN : p ≤ N)
+    (_hpN : p ≤ N)
     (hp : N < 2 * p) :
     ∀ n : ℕ,
       truncatedMobiusLogConvolution N (natBasisPacket p) n = 0 := by
