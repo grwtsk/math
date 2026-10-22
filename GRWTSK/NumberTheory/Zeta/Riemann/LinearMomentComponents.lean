@@ -58,6 +58,7 @@ theorem zetaMoment_lseries_eq_riemannZeta (s : ℂ) (hs : 1 < s.re) :
 theorem mobiusMoment_lseries_eq_inv_riemannZeta (s : ℂ) (hs : 1 < s.re) :
     LSeries (complexify mobiusMoment) s = (riemannZeta s)⁻¹ := by
   rw [complexify_mobiusMoment]
+  change LSeries (fun n => (ArithmeticFunction.moebius n : ℂ)) s = _
   have identity := ArithmeticFunction.LSeries_zeta_mul_Lseries_moebius hs
   rw [ArithmeticFunction.LSeries_zeta_eq_riemannZeta hs] at identity
   exact eq_inv_of_mul_eq_one_left (by simpa only [mul_comm] using identity)

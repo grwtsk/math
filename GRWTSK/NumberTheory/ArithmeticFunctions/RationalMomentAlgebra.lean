@@ -3,6 +3,7 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.NumberTheory.ArithmeticFunction.Moebius
 import Mathlib.Algebra.Module.LinearMap.End
+import Mathlib.Algebra.Algebra.Hom
 
 set_option autoImplicit false
 
@@ -83,29 +84,37 @@ def mobiusOperator (representation : Representation M) : Module.End ℚ M :=
 theorem mobiusOperator_mul_zetaOperator (representation : Representation M) :
     representation.mobiusOperator * representation.zetaOperator = 1 := by
   change representation.action mobiusMoment * representation.action zetaMoment = 1
-  rw [← representation.action.map_mul, mobiusMoment_mul_zetaMoment,
-    representation.action.map_one]
+  calc
+    representation.action mobiusMoment * representation.action zetaMoment =
+        representation.action (mobiusMoment * zetaMoment) :=
+      (map_mul representation.action _ _).symm
+    _ = representation.action 1 := congrArg representation.action mobiusMoment_mul_zetaMoment
+    _ = 1 := map_one representation.action
 
 @[simp]
 theorem zetaOperator_mul_mobiusOperator (representation : Representation M) :
     representation.zetaOperator * representation.mobiusOperator = 1 := by
   change representation.action zetaMoment * representation.action mobiusMoment = 1
-  rw [← representation.action.map_mul, zetaMoment_mul_mobiusMoment,
-    representation.action.map_one]
+  calc
+    representation.action zetaMoment * representation.action mobiusMoment =
+        representation.action (zetaMoment * mobiusMoment) :=
+      (map_mul representation.action _ _).symm
+    _ = representation.action 1 := congrArg representation.action zetaMoment_mul_mobiusMoment
+    _ = 1 := map_one representation.action
 
 @[simp]
 theorem mobius_zeta_apply (representation : Representation M) (x : M) :
     representation.mobiusOperator (representation.zetaOperator x) = x := by
-  have identity := congrArg (fun operator : Module.End ℚ M => operator x)
-    representation.mobiusOperator_mul_zetaOperator
-  simpa [Module.End.mul_apply] using identity
+  change (representation.mobiusOperator * representation.zetaOperator) x = x
+  rw [representation.mobiusOperator_mul_zetaOperator]
+  rfl
 
 @[simp]
 theorem zeta_mobius_apply (representation : Representation M) (x : M) :
     representation.zetaOperator (representation.mobiusOperator x) = x := by
-  have identity := congrArg (fun operator : Module.End ℚ M => operator x)
-    representation.zetaOperator_mul_mobiusOperator
-  simpa [Module.End.mul_apply] using identity
+  change (representation.zetaOperator * representation.mobiusOperator) x = x
+  rw [representation.zetaOperator_mul_mobiusOperator]
+  rfl
 
 end Representation
 

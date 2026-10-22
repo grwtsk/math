@@ -85,7 +85,7 @@ structure TrackedFiniteStateBoundary (V State : Type*) [Fintype State]
     isBoundary vertex → 0 ≤ tracker (height vertex)
 
 /-- Every graph path projects to an allowed path in the finite-state presentation. -/
-theorem TrackedFiniteStateBoundary.path_state_path
+noncomputable def TrackedFiniteStateBoundary.path_state_path
     {V State : Type*} [Fintype State] {edge : EdgeRelation V}
     {tracker : ℝ → ℝ}
     (boundary : TrackedFiniteStateBoundary V State edge tracker)
