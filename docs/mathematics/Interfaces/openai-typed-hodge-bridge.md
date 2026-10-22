@@ -1243,6 +1243,32 @@ Thus the repository has one independent four-factor algebraicity boundary, not t
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4w. One atomic switch canonically yields the four-factor balance relation
+
+The non-algebraicity identification path has advanced one step further.
+
+`CMFourFactorSwitchCombinatorics.lean` now defines
+
+~~~text
+oddSignRowOfMatrix
+switchConjugatePair_selectedRows_balance
+atomicSwitch_fourBalance
+~~~
+
+For one selected opposite-mismatch pair, the two old rows and the corresponding two new rows satisfy the exact pointwise relation
+
+[
+v_1+v_2=v_3+v_4.
+]
+
+Thus an atomic switch now supplies the `FourBalance` input to the existing four-factor Hodge machinery locally.
+
+The remaining `SwitchCoreRationalWitnessAdapter` obligation is therefore narrower: it no longer has to prove the sign relation. It only has to identify the actual switched four-factor tensor/subspace data and provide the rational witness consumed by `FourFactorAlgebraicitySupplier`.
+
+No tensor rationality, descent, or algebraicity is inferred from the balance theorem itself.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
