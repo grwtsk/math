@@ -1,3 +1,6 @@
+# Historical original target Git blob: b5bfacc9f452b08e7ff5a7166fb65d5f87faa32b.
+# Historical original parent: 1157501e4b52ec388bbcff8baed6563534c40c0b; tree 31fb25be3979e6391909d82a397e29b031753a21.
+# Historical publication fields identify the original source; the repaired containing revision must be pinned externally.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-two-point-conjecture-junction-453-v0.1"
 owner_repository = "grwtsk/math"
@@ -15,16 +18,18 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
-inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
-stacked_parent_branch = "research/rh-dyadic-block-maximal-437-20261021"
-stacked_parent_revision = "1157501e4b52ec388bbcff8baed6563534c40c0b"
-stacked_parent_tree = "31fb25be3979e6391909d82a397e29b031753a21"
-candidate_branch = "research/rh-two-point-junction-453-20261021"
-theorem_source_commit = "0878211cbff2df283fd984e894e79fbb4cd3f0a1"
-theorem_source_tree = "adf6bcd168abc6951fde97e8ffe948bf314bc69c"
+historical_inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+historical_inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+historical_stacked_parent_branch = "research/rh-dyadic-block-maximal-437-20261021"
+stacked_parent_revision = "12657b076ce12937786a673e4bd1f98c43a9ef6f"
+stacked_parent_tree = "bbe70a0f7446422fc8447cc4c2e1cba404655061"
+historical_candidate_branch = "research/rh-two-point-junction-453-20261021"
+historical_theorem_source_commit = "0878211cbff2df283fd984e894e79fbb4cd3f0a1"
+historical_theorem_source_tree = "adf6bcd168abc6951fde97e8ffe948bf314bc69c"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean"
-theorem_source_git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+historical_theorem_source_git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+theorem_source_git_blob = "4eacfb63dc6f3b1a34eb1427bb84d2b250fb763b"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
 mathematical_note_commit = "a00b025369182a9acddcfc309ae7806814821d98"
 mathematical_note_tree = "a35b1eb7973cc60ecb6d7e647d5140eb21aeff98"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-conjecture-junction.md"
@@ -42,7 +47,7 @@ analytic_premise_status = "OPEN"
 
 [generic_parent]
 module = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
-module_git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+module_git_blob = "51a1e836e08e2f983c901542806c95bfe5437e86"
 declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.dyadicPrefixMaximum_sq_le_dyadicTreeSquareEnergy"
 statement = "dyadicPrefixMaximum m a ^ 2 <= ((m:Real)+1) * dyadicTreeSquareEnergy m a"
 status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
@@ -149,7 +154,8 @@ reject_missing_generated_declarations = true
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Moebius.TwoPointConjectureJunction"
-source_line_count = 318
+historical_source_line_count = 318
+source_line_count = 319
 authored_declaration_count = 27
 public_def_count = 11
 public_structure_count = 1
@@ -159,7 +165,7 @@ private_helper_count = 0
 
 [[dependencies]]
 path = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
-git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+git_blob = "51a1e836e08e2f983c901542806c95bfe5437e86"
 status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
 
 [[dependencies]]
