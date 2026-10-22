@@ -102,6 +102,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerArithmeti
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerCyclicStepCorrectionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerCyclicConvolutionModelControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerCyclicArithmeticRestrictionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerCyclicKernelDifferenceControls
 
 set_option autoImplicit false
 
