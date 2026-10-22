@@ -141,6 +141,125 @@ theorem CMTracePolarization.TracePolarizationData.embedding_im_ne_zero
     · simpa [him]
   exact P.xi_ne_zero ((complexEmbeddingAt E σ).injective (by simpa using hz))
 
+/-- Sign of a nonzero real coordinate, encoded in the same integer convention
+as the CM sign rows. -/
+def realSign (x : ℝ) : ℤ :=
+  if 0 < x then 1 else -1
+
+theorem realSign_isSign (x : ℝ) : IsSign (realSign x) := by
+  by_cases hx : 0 < x <;> simp [realSign, hx, IsSign]
+
+theorem realSign_neg_of_ne_zero
+    {x : ℝ} (hx : x ≠ 0) :
+    realSign (-x) = - realSign x := by
+  by_cases hp : 0 < x
+  · have hn : ¬ 0 < -x := by linarith
+    simp [realSign, hp, hn]
+  · have hxle : x ≤ 0 := le_of_not_gt hp
+    have hxlt : x < 0 := lt_of_le_of_ne hxle hx
+    have hn : 0 < -x := neg_pos.mpr hxlt
+    simp [realSign, hp, hn]
+
+/-- Imaginary signs of a nonzero anti-invariant seed form an odd CM sign row. -/
+noncomputable def CMTracePolarization.TracePolarizationData.imagSign
+    (P : CMTracePolarization.TracePolarizationData E) :
+    CMNumberFieldIndex.OddSignRow E where
+  value σ := realSign (imagAt E P.xi σ)
+  isSign σ := realSign_isSign _
+  odd σ := by
+    have him :
+        imagAt E P.xi ((CMNumberFieldIndex.centralInvolution E).conj σ) =
+          - imagAt E P.xi σ := by
+      simp [imagAt, complexEmbeddingAt,
+        CMNumberFieldIndex.centralInvolution_conj_apply,
+        AlgEquiv.mul_apply, CMNumberFieldIndex.galoisComplexConj_commute_apply,
+        P.antiInvariant]
+    rw [him]
+    exact realSign_neg_of_ne_zero (P.embedding_im_ne_zero E σ)
+
+/-- The sign required of the real rescaling factor. It is even under CM
+conjugation because both the target CM row and the seed-imaginary row are odd. -/
+noncomputable def requiredRescalingSign
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E) :
+    CMGaloisIndex.CMEvenSignRow
+      (E ≃ₐ[ℚ] E) (CMNumberFieldIndex.centralInvolution E) :=
+  CMGaloisIndex.rescalingSign v (P.imagSign E)
+
+theorem requiredRescalingSign_conj
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (σ : E ≃ₐ[ℚ] E) :
+    (requiredRescalingSign E v P).value
+        ((CMNumberFieldIndex.centralInvolution E).conj σ) =
+      (requiredRescalingSign E v P).value σ :=
+  (requiredRescalingSign E v P).invariant σ
+
+/-- A conjugation-fixed field element realizes the required even sign row
+through its real embedded coordinates. -/
+def FixedElementRealizesRequiredSign
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (f : E) : Prop :=
+  ∀ σ : E ≃ₐ[ℚ] E,
+    ((requiredRescalingSign E v P).value σ = 1 →
+      0 < (complexEmbeddingAt E σ f).re) ∧
+    ((requiredRescalingSign E v P).value σ = -1 →
+      (complexEmbeddingAt E σ f).re < 0)
+
+/-- Realizing the even rescaling-sign row is exactly sufficient for the
+fixed-factor positivity condition. -/
+theorem fixedRescalingSignCondition_of_realizesRequiredSign
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (f : E)
+    (hreal : FixedElementRealizesRequiredSign E v P f) :
+    FixedRescalingSignCondition E v P f := by
+  intro σ
+  have him0 := P.embedding_im_ne_zero E σ
+  rcases v.isSign σ with hv | hv
+  · by_cases hp : 0 < imagAt E P.xi σ
+    · have hs : realSign (imagAt E P.xi σ) = 1 := by
+        simp [realSign, hp]
+      have hreq : (requiredRescalingSign E v P).value σ = -1 := by
+        simp [requiredRescalingSign, CMGaloisIndex.rescalingSign,
+          CMTracePolarization.TracePolarizationData.imagSign, hv, hs]
+      have hfneg := (hreal σ).2 hreq
+      rw [hv]
+      norm_num
+      exact neg_pos.mpr (mul_neg_of_neg_of_pos hfneg hp)
+    · have himneg : imagAt E P.xi σ < 0 :=
+        lt_of_le_of_ne (le_of_not_gt hp) him0
+      have hs : realSign (imagAt E P.xi σ) = -1 := by
+        simp [realSign, hp]
+      have hreq : (requiredRescalingSign E v P).value σ = 1 := by
+        simp [requiredRescalingSign, CMGaloisIndex.rescalingSign,
+          CMTracePolarization.TracePolarizationData.imagSign, hv, hs]
+      have hfpos := (hreal σ).1 hreq
+      rw [hv]
+      norm_num
+      exact neg_pos.mpr (mul_neg_of_pos_of_neg hfpos himneg)
+  · by_cases hp : 0 < imagAt E P.xi σ
+    · have hs : realSign (imagAt E P.xi σ) = 1 := by
+        simp [realSign, hp]
+      have hreq : (requiredRescalingSign E v P).value σ = 1 := by
+        simp [requiredRescalingSign, CMGaloisIndex.rescalingSign,
+          CMTracePolarization.TracePolarizationData.imagSign, hv, hs]
+      have hfpos := (hreal σ).1 hreq
+      rw [hv]
+      norm_num
+      exact mul_pos hfpos hp
+    · have himneg : imagAt E P.xi σ < 0 :=
+        lt_of_le_of_ne (le_of_not_gt hp) him0
+      have hs : realSign (imagAt E P.xi σ) = -1 := by
+        simp [realSign, hp]
+      have hreq : (requiredRescalingSign E v P).value σ = -1 := by
+        simp [requiredRescalingSign, CMGaloisIndex.rescalingSign,
+          CMTracePolarization.TracePolarizationData.imagSign, hv, hs]
+      have hfneg := (hreal σ).2 hreq
+      rw [hv]
+      norm_num
+      exact mul_pos_of_neg_of_neg hfneg himneg
 /-- A conjugation-fixed factor has real value at every complex embedding. -/
 theorem embedding_im_zero_of_conj_fixed
     {f : E} (hf : galoisComplexConj E f = f)
