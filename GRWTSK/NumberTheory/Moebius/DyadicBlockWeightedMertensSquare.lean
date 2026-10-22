@@ -91,9 +91,7 @@ theorem weightedMertensDyadicPrefix_le_of_block_bound
       have hC := dyadicBlockGeometricConstant_nonneg hδ hD
       simpa [weightedMertensDyadicPrefix] using hC
   | succ J ih =>
-      rw [show Nat.succ J = J + 1 by rfl,
-        weightedMertensDyadicPrefix_succ,
-        dyadicEndpoint_succ_rpow]
+      rw [weightedMertensDyadicPrefix_succ, dyadicEndpoint_succ_rpow]
       calc
         weightedMertensDyadicPrefix J +
               weightedMertensDyadicBlock J ≤
