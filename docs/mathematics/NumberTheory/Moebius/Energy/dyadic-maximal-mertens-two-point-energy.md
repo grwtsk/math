@@ -263,7 +263,7 @@ growing-scale sum in (5).
 ## 7. Logical status
 
 The canonical maximal energy is exactly equivalent to the existential
-quadratic envelope. It is not equivalent to the exact signed shift packet.
+quadratic envelope. No converse from the exact signed shift packet is proved.
 The packet may be small through cancellation within a shift or between shifts,
 while (5) squares absolute maxima and discards those cancellations.
 
