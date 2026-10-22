@@ -93,6 +93,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularProp
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeCanonicalFejerPrefixOperatorControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerPeriodCorrectionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerFirstMomentCorrectionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerFirstMomentHarmonicControls
 
 set_option autoImplicit false
 
