@@ -1120,3 +1120,66 @@ OPENAI_SOLUTION_SOURCE_PRESENT / TRANSITIVE_AUDIT_OPEN /
 CROSS_VERSION_PORT_OPEN / HIGHER_ORDER_CHOWLA_OPEN`.
 No public-root import, toolchain change, Lean/Lake build,
 merge, RH theorem, or issue closure.
+
+## 17. Direct complex fixed-form supplier: no dyadic penalty for each fixed shift
+
+**Date:** 2026-10-22. **Exact parent source head:**
+`f1c70d8c4020f7dda97f92bad21bbfbde9d6a277`.
+
+One new independent arithmetic module,
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedFormComplexAdapter.lean`
+(blob `7e2bec5025d39d375c9ff8e9f5a826c8fcf7b8ff`),
+shows the **direct** finite comparison for a fixed positive
+additive shift `h`:
+
+```text
+sum_(n=0)^(N-1) lambda(n+1)*lambda(n+1+h)
+  = sum_(m in Finset.Icc 1 N) lambda(m)*lambda(m+h)
+  = an integer-to-Complex cast of the direct (1,1,0,h) affine sum.
+```
+
+The determinant of the direct pair `(m,m+h)` is `h`,
+so the forms are nonproportional for `h>0`.
+Their positive-index sum requires **no** dyadic parity
+split, extra head/tail term, or factor-of-two normalization.
+The previous dyadic reductions remain optional arithmetic
+identities, but they are NOT a prerequisite for applying a
+properly proved fixed-nonproportional source theorem.
+
+The module defines a proof-relevant
+`FixedNonproportionalAffineLogSaving : Prop` with the
+full public theorem quantifiers: one absolute exponent
+`c>0`, positive affine slopes, nonzero determinant,
+one positive implied constant `C` for each fixed affine
+tuple, all real `X>=3`, `Finset.Icc 1 (floorNat X)`,
+Complex norm and `Real.rpow`. The new
+`fixedShift_liouville_logSaving_of_affine` theorem
+**conditionally** specializes this premise to each fixed
+`h>0`, retaining the original exponent and a
+possibly h-dependent constant. No premise proof is
+constructed or imported.
+
+External `openai/math` source uses Lean 4.34.1 /
+Mathlib d13f23..., while grwtsk/math uses Lean 4.33.0 /
+Mathlib db584cd.... The independent source-typed
+solution and its challenge comparator must not be
+conflated. Neither an external transitive axiom audit
+nor a cross-pin port was performed.
+
+**New acceptance artifact:**
+`verification/liouville-direct-fixed-form-complex-630-v0.1.toml`
+tracks the independent THREE-module arithmetic chain,
+with 40 proposed theorem heads and 13 definitions.
+The complete mathematical, source-provenance and
+negative-control review is at
+`docs/reviews/chowla-sofic-direct-fixed-form-complex-630.md`.
+The eight generic Walsh module source files and their
+passive 56-theorem target remain unchanged.
+
+Even acceptance of a fixed-h ordinary binary estimate
+would **not** give a common constant for growing `h_N`,
+three-point or higher products, the complete Walsh
+energy supplier, GUE universality, or RH.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+EXTERNAL_FIXED_FORM_SOURCE_OPEN / HIGHER_ORDER_CHOWLA_OPEN.
