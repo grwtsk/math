@@ -68,6 +68,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellPrimeEndpointC
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShortIntervalOscillationControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaFourierMaximalBarrierControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaFourierSobolevBarrierControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaFourierLogLossAdapterControls
 
 set_option autoImplicit false
 
