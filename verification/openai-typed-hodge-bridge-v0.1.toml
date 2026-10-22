@@ -786,3 +786,32 @@ nonclaims = [
   "Mathlib currently supplies no downstream Riemann existence theorem",
   "no four-factor algebraicity theorem"
 ]
+
+
+[[local_target]]
+name = "conditional CM weight-one Riemann realization wrapper"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.realizeWeightOneCM"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "RiemannExistenceSupplier"
+]
+nonclaims = [
+  "formal wrapper only",
+  "does not prove or construct the external Riemann existence supplier",
+  "does not prove four-factor algebraicity"
+]
+
+[[local_target]]
+name = "canonical sign-controlled CM weight-one realization conditional on supplier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.realizeWeightOneCM_canonical"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "RiemannExistenceSupplier",
+  "canonical local sign-controlled xi"
+]
+nonclaims = [
+  "conditional composition only",
+  "no local complex-torus or abelian-variety construction"
+]
