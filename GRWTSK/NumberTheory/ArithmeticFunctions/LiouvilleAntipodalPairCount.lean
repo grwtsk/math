@@ -651,4 +651,19 @@ theorem canonicalOddLiftEnergy_antipodal_lower_bound
         (M : ℚ) ^ 2) := by positivity
   linarith
 
+
+/-- Exact necessary-and-sufficient antipodal-count criterion for a
+canonical odd-lifted all-order energy threshold. No arithmetic
+smallness assumption is constructed by this equivalence. -/
+theorem canonicalOddLiftEnergy_le_iff_antipodal_budget
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) (epsilon : ℚ) :
+    liouvilleAllOrderEnergy (2 * M) (oddLiftOffsets H) ≤ epsilon ↔
+      2 * (((2 : ℚ) ^ H.card *
+          (antipodalPairCount M H : ℚ)) / (M : ℚ) ^ 2) ≤
+        2 - liouvilleAllOrderEnergy M H -
+          oddResidualAllOrderEnergy M H + 4 * epsilon := by
+  have h := canonicalOddLiftEnergy_eq_antipodal_count M H hM
+  constructor <;> intro hb <;> linarith
+
+
 end GRWTSK.NumberTheory.LiouvilleWalshSourceBridge
