@@ -191,6 +191,52 @@ theorem positive_energy_does_not_force_signed_positive :
     negativeSectorFixture_signedEnergy]
   norm_num
 
+/-- Abstract proof-bearing sign-orientation certificate. The sign is forced to
+be ±1 by `sign_sq`; no positivity conclusion is available until the sign is
+known. -/
+structure OrientationCertificate (X : Type*) where
+  sign : ℝ
+  sign_sq : sign ^ 2 = 1
+  positiveSource : X → ℝ
+  signedConsumer : X → ℝ
+  positive_nonneg : ∀ x, 0 ≤ positiveSource x
+  identity : ∀ x, sign * signedConsumer x = positiveSource x
+
+namespace OrientationCertificate
+
+theorem signed_nonneg_of_sign_eq_one {X : Type*}
+    (certificate : OrientationCertificate X)
+    (hsign : certificate.sign = 1) (x : X) :
+    0 ≤ certificate.signedConsumer x := by
+  have h := certificate.positive_nonneg x
+  rw [← certificate.identity x, hsign, one_mul] at h
+  exact h
+
+theorem signed_nonpos_of_sign_eq_neg_one {X : Type*}
+    (certificate : OrientationCertificate X)
+    (hsign : certificate.sign = -1) (x : X) :
+    certificate.signedConsumer x ≤ 0 := by
+  have h := certificate.positive_nonneg x
+  rw [← certificate.identity x, hsign, neg_one_mul] at h
+  linarith
+
+end OrientationCertificate
+
+/-- The pure negative Hodge sector is a canonical orientation certificate
+with sign -1. -/
+noncomputable def negativeSectorCertificate [Fintype ι]
+    (mask : ι → Bool) :
+    OrientationCertificate {x : ι → ℝ // InMinusSector mask x} where
+  sign := -1
+  sign_sq := by norm_num
+  positiveSource := fun x => positiveEnergy x.1
+  signedConsumer := fun x => signedEnergy mask x.1
+  positive_nonneg := fun x => positiveEnergy_nonneg x.1
+  identity := by
+    intro x
+    have h := neg_signedEnergy_eq_positiveEnergy_of_minusSector x.2
+    simpa using h
+
 /-- Existing CommonJ sign conjugation is an exact operator-level example of
 orientation reversal. It is not identified with the involutive fundamental
 symmetry above: CommonJ itself squares to -I. -/
