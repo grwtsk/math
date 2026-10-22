@@ -89,7 +89,10 @@ normative byte encoder. It returns the numerical ASCII byte values of decimal
 naturals, comma separators, and brackets, without whitespace. Its primitive
 recursor is evaluated by the kernel when checking concrete equality proofs;
 it introduces no external evaluator or additional axiom. The existing
-`NatTree.render` supplies a string spelling for display.
+`NatTree.render` supplies a string-valued spelling. The retained wire-tree
+equality functions and string renderer are explicitly noncomputable kernel
+definitions, with compiled execution disabled. The wire tree has no `Repr`
+instance. Concrete admission uses wire equality and `renderBytes` equality.
 
 An external admission proof can bind its actual before, observation, and after
 values by proving the corresponding encoder equalities to concrete natural
