@@ -42,6 +42,21 @@ integer Liouville value, which is zero there. -/
 def liouvilleParityBit (m : ℕ) : Bool :=
   decide (Even (ArithmeticFunction.cardFactors m))
 
+/-- The parity bit at zero equals true, but this does not represent
+the arithmetic Liouville value at zero. -/
+@[simp] theorem liouvilleParityBit_zero :
+    liouvilleParityBit 0 = true := by
+  simp [liouvilleParityBit, ArithmeticFunction.cardFactors_zero]
+
+/-- Hostile zero-source fixture: Mathlib's integer Liouville value at zero
+is zero, which cannot equal the two-valued parity sign. -/
+theorem liouville_zero_not_binary :
+    ((ArithmeticFunction.liouville 0 : ℤ) : ℝ) ≠
+      bitSign (liouvilleParityBit 0) := by
+  have hz : (ArithmeticFunction.liouville 0 : ℤ) = 0 := rfl
+  rw [hz, liouvilleParityBit_zero]
+  norm_num [bitSign]
+
 /-- For a nonzero integer argument the parity bit is exactly the real sign
 of Mathlib's integer-valued arithmetic Liouville function. -/
 theorem bitSign_liouvilleParityBit_of_ne_zero
