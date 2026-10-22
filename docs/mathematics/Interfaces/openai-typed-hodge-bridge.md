@@ -1572,6 +1572,34 @@ Everything after those two statements is local.
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ag. Actual H^(2,2) membership now factors through weight-one typing and the tensor-product rule
+
+The transported-generator Hodge frontier is now separated into two standard geometric inputs.
+
+`CMFourFactorSwitchGeometry.lean` introduces:
+
+~~~text
+FourfoldHodgeAssemblyRule
+TransportedFourFactorHodgeTyping
+TransportedFourFactorHodgeTyping.assembled_mem_h22
+FourfoldMonomialAssemblyData.toTransportedGeneratorHodgeData
+~~~
+
+The first interface is the generic tensor-product Hodge rule. It records that assembling four actual weight-one Hodge vectors whose p- and q-indices both sum to two lands in the declared (H^{2,2}) subspace.
+
+The second interface records actual Hodge membership of each transported factor. This is exactly where the repository must identify the existing formal sign-derived labels with genuine (H^{1,0}) or (H^{0,1}) lines in the weight-one cohomological realization.
+
+Once those two inputs are present, the local theorem proves the assembled transported monomial generator lies in (H^{2,2}). Combined with the previous singleton-span theorem, the whole transported monomial line lies in (H^{2,2}).
+
+Therefore the Hodge-realization gap is no longer a four-factor statement. It is reduced to:
+
+1. actual weight-one line typing for the transported factors;
+2. the standard tensor-product rule for Hodge structures.
+
+The existing `WeightOneCMRealization` record still does not expose a complexified (H^1) line decomposition, so the first item remains genuinely external rather than being inferred from its current `complexCoordinates` field.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
