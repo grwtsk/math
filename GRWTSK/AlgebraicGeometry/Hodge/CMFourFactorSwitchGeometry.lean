@@ -1409,6 +1409,74 @@ theorem CMFiniteNestedLinearAssembly.add_first
     M.map (x + y) b c d =
       M.map x b c d + M.map y b c d := by
   simp only [map_add, LinearMap.add_apply]
+
+/-- Additivity in each of the remaining three slots follows from the
+nested-linear representation; no new geometric premise is introduced. -/
+theorem CMFiniteNestedLinearAssembly.add_second
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (a x y c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map a (x + y) c d = M.map a x c d + M.map a y c d := by
+  simp only [map_add, LinearMap.add_apply]
+
+theorem CMFiniteNestedLinearAssembly.add_third
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (a b x y d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map a b (x + y) d = M.map a b x d + M.map a b y d := by
+  simp only [map_add, LinearMap.add_apply]
+
+theorem CMFiniteNestedLinearAssembly.add_fourth
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (a b c x y : E.carrier ⊗[ℚ] E.carrier) :
+    M.map a b c (x + y) = M.map a b c x + M.map a b c y := by
+  exact (M.map a b c).map_add x y
+
+/-- Rational scalar homogeneity of all four slots is also inherited from
+the linear-map types, independently of the unresolved Galois equation. -/
+theorem CMFiniteNestedLinearAssembly.smul_first
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (q : ℚ) (a b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map (q • a) b c d = q • M.map a b c d := by
+  simp only [map_smul, LinearMap.smul_apply]
+
+theorem CMFiniteNestedLinearAssembly.smul_second
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (q : ℚ) (a b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map a (q • b) c d = q • M.map a b c d := by
+  simp only [map_smul, LinearMap.smul_apply]
+
+theorem CMFiniteNestedLinearAssembly.smul_third
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (q : ℚ) (a b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map a b (q • c) d = q • M.map a b c d := by
+  simp only [map_smul, LinearMap.smul_apply]
+
+theorem CMFiniteNestedLinearAssembly.smul_fourth
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (q : ℚ) (a b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map a b c (q • d) = q • M.map a b c d := by
+  exact (M.map a b c).map_smul q d
+
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
