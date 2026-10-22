@@ -25,6 +25,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticFactorizationCont
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftCoefficientDecayControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEndpointControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEnclosureControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftPrimeTermFactorizationControls
 
 set_option autoImplicit false
 
