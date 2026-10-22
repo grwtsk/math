@@ -1603,7 +1603,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-label-conjugation", "eq:switch-line"]
-statement_role = "upgrade the already-local factorwise embedding-line scalar transport to the actual four-factor switched monomial tensor"
+statement_role = "assemble the now-local simultaneous four-factor embedding-line transport into the actual switched monomial tensor, proving the scalar conjugate lies in the transported monomial line"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.conjugate_mem_line"
 status = "OPEN"
 nonclaims = [
@@ -1623,4 +1623,28 @@ status = "OPEN"
 nonclaims = [
   "Hodge-realization comparison only",
   "does not assert algebraicity"
+]
+
+
+[[local_target]]
+name = "simultaneous scalar transport of four canonical embedding-line factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingTransport.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport.FourEmbeddingLineVectors.scalarTransport"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four factorwise canonical embedding-line vectors"
+]
+nonclaims = [
+  "factorwise transport only",
+  "does not form or transport the fourfold monomial tensor"
+]
+
+[[local_target]]
+name = "canonical eigenline proportionality without forward reference"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.exists_ne_zero_smul_eq_of_mem_embeddingEigenspace"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "source-order repair only",
+  "still not kernel audited"
 ]
