@@ -1305,6 +1305,36 @@ theorem canonicalFinitePureAssembly_add_first_vector
   simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
     TensorProduct.tmul_add]
 
+/-- Additivity in finite pure-factor coefficient slot 2. -/
+theorem canonicalFinitePureAssembly_add_coefficient_2
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a3 x3 a4 x4 x2 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 (u + v) x2 a3 x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 u x2 a3 x3 a4 x4 +
+      canonicalFinitePureAssembly E a1 x1 v x2 a3 x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, add_mul, mul_add,
+    TensorProduct.add_tmul]
+
+/-- Additivity in finite pure-factor coefficient slot 3. -/
+theorem canonicalFinitePureAssembly_add_coefficient_3
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 x2 a4 x4 x3 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 (u + v) x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 u x3 a4 x4 +
+      canonicalFinitePureAssembly E a1 x1 a2 x2 v x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, add_mul, mul_add,
+    TensorProduct.add_tmul]
+
+/-- Additivity in finite pure-factor coefficient slot 4. -/
+theorem canonicalFinitePureAssembly_add_coefficient_4
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 x2 a3 x3 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 (u + v) x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 u x4 +
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 v x4 := by
+  simp [canonicalFinitePureAssembly, add_mul, mul_add,
+    TensorProduct.add_tmul]
+
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
