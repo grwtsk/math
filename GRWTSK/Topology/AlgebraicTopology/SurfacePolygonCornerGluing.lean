@@ -390,7 +390,10 @@ in the quotient of polygon corner IDS, for every genus g=k+2≥2. -/
 noncomputable def gluedPolygonCorners_unique (k : ℕ) :
     Unique (GluedPolygonCorners k) where
   default := (gluedPolygonCorners_nonempty k).some
-  uniq _ := (gluedPolygonCorners_subsingleton k).allEq _ _
+  uniq _ := by
+    letI : Subsingleton (GluedPolygonCorners k) :=
+      gluedPolygonCorners_subsingleton k
+    exact Subsingleton.elim _ _
 
 /-- Concrete nonvacuous genus-two gluing: the first and second
 handles have distinct source identifiers but their zero corner
