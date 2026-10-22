@@ -213,10 +213,10 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["thm:switch", "eq:switch-line", "eq:switch-conjugate-balance"]
-statement_role = "algebraicity of the balanced four-factor line"
-local_consumer = "grwtsk/math#176/#178/#183"
+statement_role = "algebraic-cycle realization of the rationally descended balanced four-factor Hodge witness; the local source owns the numerical (2,2) certificate and generic scalar descent but not the switch/cycle theorem"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
 status = "OPEN"
-nonclaims = ["four-label balance alone is not algebraicity"]
+nonclaims = ["four-label balance alone is not algebraicity", "all-conjugate (2,2) type alone is not rational descent", "generic scalar descent alone is not an algebraic-cycle theorem"]
 
 [[external_premise]]
 id = "filtered-hecke-summands"
@@ -814,4 +814,49 @@ upstream_obligations = [
 nonclaims = [
   "conditional composition only",
   "no local complex-torus or abelian-variety construction"
+]
+
+
+[[local_target]]
+name = "balanced four-factor all-conjugate numerical type certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.allConjugatesType22_of_fourBalance"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four odd sign rows",
+  "pointwise four-label balance"
+]
+nonclaims = [
+  "numerical Hodge-type certificate only",
+  "does not imply scalar-conjugate stability, rational descent, or algebraicity"
+]
+
+[[local_target]]
+name = "four-factor rational descent from explicit conjugate-stable tensor data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorTensorDescentData.rational_descent"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual algebraic-number tensor",
+  "complex Hodge subspace P",
+  "membership of every scalar conjugate in P"
+]
+source_dependency = "GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.traceDescent"
+nonclaims = [
+  "does not construct the four-factor tensor from the switch theorem",
+  "does not prove algebraic-cycle realization"
+]
+
+[[local_target]]
+name = "conditional four-factor algebraic-cycle realization"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.realizeAlgebraicCycle_of_descentData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "FourFactorAlgebraicitySupplier",
+  "explicit conjugate-stable four-factor tensor data"
+]
+nonclaims = [
+  "conditional wrapper only",
+  "no local constructor of the manuscript switch/algebraicity supplier"
 ]
