@@ -666,4 +666,51 @@ theorem canonicalOddLiftEnergy_le_iff_antipodal_budget
   constructor <;> intro hb <;> linarith
 
 
+
+/-- The exact collision-count criterion with an explicit, nonnegative
+arithmetic margin. This is a CONDITIONAL supplier interface only:
+it does not prove the pair-count bound or the marginal-energy margin. -/
+theorem canonicalOddLiftEnergy_le_of_antipodal_margin
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M)
+    (epsilon margin : ℚ)
+    (hmargin : liouvilleAllOrderEnergy M H +
+        oddResidualAllOrderEnergy M H ≤ 2 + margin)
+    (hcount : 2 * (((2 : ℚ) ^ H.card *
+        (antipodalPairCount M H : ℚ)) / (M : ℚ) ^ 2) +
+        margin ≤ 4 * epsilon) :
+    liouvilleAllOrderEnergy (2 * M) (oddLiftOffsets H) ≤ epsilon := by
+  apply (canonicalOddLiftEnergy_le_iff_antipodal_budget M H hM epsilon).2
+  linarith
+
+/-- A cyclic TV consequence of independently supplied antipodal-count
+and marginal-energy budgets. The true lifted collar remains strict. -/
+theorem canonicalOddLiftCyclicTV_le_of_antipodal_margin
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M)
+    (epsilon margin : ℚ)
+    (hr : cyclicMaxOffset (oddLiftOffsets H) < 2 * M)
+    (hepsilon : 0 ≤ epsilon)
+    (hmargin : liouvilleAllOrderEnergy M H +
+        oddResidualAllOrderEnergy M H ≤ 2 + margin)
+    (hcount : 2 * (((2 : ℚ) ^ H.card *
+        (antipodalPairCount M H : ℚ)) / (M : ℚ) ^ 2) +
+        margin ≤ 4 * epsilon) :
+    (totalVariationFromUniform (Finset.range (2 * M))
+      (cyclicShiftWord (2 * M) (oddLiftOffsets H)
+        liouvillePositiveBool) : ℝ) ≤
+      ((cyclicMaxOffset (oddLiftOffsets H) : ℚ) /
+        ((2 * M : ℕ) : ℚ) : ℝ) +
+        Real.sqrt (epsilon : ℝ) / 2 := by
+  have hE := canonicalOddLiftEnergy_le_of_antipodal_margin
+    M H hM epsilon margin hmargin hcount
+  have htv := liouvilleCyclicTV_le_energy
+    (2 * M) (oddLiftOffsets H) hr
+  have hEreal :
+      (liouvilleAllOrderEnergy (2 * M) (oddLiftOffsets H) : ℝ) ≤
+        (epsilon : ℝ) := by exact_mod_cast hE
+  have hsqrt := Real.sqrt_le_sqrt hEreal
+  exact htv.trans
+    (add_le_add_left
+      (div_le_div_of_nonneg_right hsqrt (by norm_num)) _)
+
+
 end GRWTSK.NumberTheory.LiouvilleWalshSourceBridge
