@@ -291,7 +291,7 @@ GROWING_SHIFT_ALL_ORDER_SUPPLIER_OPEN`.
 
 A later bounded increment introduces the **simpler direct fixed-h adapter**:
 `GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedFormComplexAdapter.lean`,
-source blob `7e2bec5025d39d375c9ff8e9f5a826c8fcf7b8ff`.
+source blob `028a65364fbc3d5365a813eac2212f26739b61fc`.
 
 For every fixed `h>0`, the original pair
 `lambda(n+1)*lambda(n+1+h)` is already an affine pair
