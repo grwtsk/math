@@ -151,6 +151,254 @@ theorem nonempty_signControlledXi
   obtain ⟨X, _⟩ := exists_signControlledXi E F R v P
   exact ⟨X⟩
 
+
+/-!
+## Canonical maximal-real-subfield instantiation
+
+For a Galois CM number field, Mathlib's maximal real subfield \`E⁺\` is
+quadratic-fixed by the canonical complex conjugation.  We order its rational
+complex embeddings, lift each one to \`E\), and use Galois normality to express
+the lift relative to the fixed base complex embedding.  Two rational
+automorphisms of \`E\` agreeing on \`E⁺\` differ by an \`E⁺\`-automorphism;
+the latter group has exactly two elements, identity and complex conjugation.
+
+This supplies the previously abstract \`RealRescalingInterface\` canonically
+from \`E⁺\`.  No integral lattice, Riemann criterion, or four-factor
+algebraicity theorem is used here.
+-/
+
+section CanonicalMaximalRealSubfield
+
+local notation "E⁺" => NumberField.maximalRealSubfield E
+
+/-- The canonical inclusion of the maximal totally real subfield. -/
+noncomputable def maximalRealSubfieldInclude : E⁺ →ₐ[ℚ] E :=
+  IsScalarTower.toAlgHom ℚ E⁺ E
+
+/-- The maximal-real-subfield inclusion is fixed by canonical CM conjugation. -/
+theorem maximalRealSubfieldInclude_fixed (x : E⁺) :
+    galoisComplexConj E (maximalRealSubfieldInclude E x) =
+      maximalRealSubfieldInclude E x := by
+  change
+    NumberField.IsCMField.complexConj E (algebraMap E⁺ E x) =
+      algebraMap E⁺ E x
+  exact NumberField.IsCMField.complexConj_apply_eq_self E x
+
+/-- Lift one rational embedding of \`E⁺\` to a complex embedding of \`E\`. -/
+noncomputable def liftedRealEmbedding
+    (τ : E⁺ →ₐ[ℚ] ℂ) : E →+* ℂ :=
+  NumberField.ComplexEmbedding.lift E τ.toRingHom
+
+@[simp]
+theorem liftedRealEmbedding_algebraMap
+    (τ : E⁺ →ₐ[ℚ] ℂ) (x : E⁺) :
+    liftedRealEmbedding E τ (algebraMap E⁺ E x) = τ x := by
+  exact NumberField.ComplexEmbedding.lift_algebraMap_apply E τ.toRingHom x
+
+/-- Galois normality expresses every chosen lift through the fixed base
+complex embedding. -/
+theorem exists_galoisLiftOfRealEmbedding
+    (τ : E⁺ →ₐ[ℚ] ℂ) :
+    ∃ σ : E ≃ₐ[ℚ] E,
+      (baseComplexEmbedding E).comp σ.symm.toRingHom =
+        liftedRealEmbedding E τ := by
+  apply NumberField.ComplexEmbedding.exists_comp_symm_eq_of_comp_eq
+      (k := ℚ) (baseComplexEmbedding E) (liftedRealEmbedding E τ)
+  ext q
+  simp [liftedRealEmbedding]
+
+/-- A selected rational Galois automorphism whose base complex embedding
+extends the specified embedding of \`E⁺\`. -/
+noncomputable def galoisLiftOfRealEmbedding
+    (τ : E⁺ →ₐ[ℚ] ℂ) : E ≃ₐ[ℚ] E :=
+  Classical.choose (exists_galoisLiftOfRealEmbedding E τ)
+
+/-- Representative of the CM-conjugate pair lying above one real embedding.
+The symmetry is chosen so that \`baseComplexEmbedding ∘ representative\` is
+the selected lifted complex embedding. -/
+noncomputable def representativeOfRealEmbedding
+    (τ : E⁺ →ₐ[ℚ] ℂ) : E ≃ₐ[ℚ] E :=
+  (galoisLiftOfRealEmbedding E τ).symm
+
+theorem complexEmbeddingAt_representativeOfRealEmbedding
+    (τ : E⁺ →ₐ[ℚ] ℂ) :
+    complexEmbeddingAt E (representativeOfRealEmbedding E τ) =
+      liftedRealEmbedding E τ := by
+  simpa [representativeOfRealEmbedding, complexEmbeddingAt] using
+    (Classical.choose_spec (exists_galoisLiftOfRealEmbedding E τ))
+
+/-- The automorphism group over the maximal real subfield has exactly the two
+expected elements. -/
+theorem maximalRealSubfieldAlgEquiv_eq_one_or_complexConj
+    (τ : E ≃ₐ[E⁺] E) :
+    τ = 1 ∨ τ = NumberField.IsCMField.complexConj E := by
+  by_cases hτ : τ = 1
+  · exact Or.inl hτ
+  · right
+    have hcard : Nat.card (E ≃ₐ[E⁺] E) = 2 :=
+      (Algebra.IsQuadraticExtension.finrank_eq_two E⁺ E) ▸
+        IsGalois.card_aut_eq_finrank E⁺ E
+    rw [Nat.card_eq_two_iff' 1] at hcard
+    exact ExistsUnique.unique hcard hτ
+      (NumberField.IsCMField.complexConj_ne_one E)
+
+/-- If two rational Galois automorphisms agree pointwise on \`E⁺\`, then they
+are equal or differ by canonical CM conjugation. -/
+theorem eq_or_eq_conj_of_eq_on_maximalRealSubfield
+    (σ ρ : E ≃ₐ[ℚ] E)
+    (h :
+      ∀ x : E⁺,
+        σ (algebraMap E⁺ E x) = ρ (algebraMap E⁺ E x)) :
+    σ = ρ ∨ σ = (centralInvolution E).conj ρ := by
+  let δQ : E ≃ₐ[ℚ] E := ρ.symm * σ
+  let δR : E ≃ₐ[E⁺] E :=
+    { δQ.toRingEquiv with
+      commutes' := by
+        intro x
+        change ρ.symm (σ (algebraMap E⁺ E x)) = algebraMap E⁺ E x
+        rw [h x]
+        simp }
+  rcases maximalRealSubfieldAlgEquiv_eq_one_or_complexConj E δR with hδ | hδ
+  · left
+    ext x
+    have hx := DFunLike.congr_fun hδ x
+    have hx' : ρ.symm (σ x) = x := by
+      simpa [δR, δQ] using hx
+    calc
+      σ x = ρ (ρ.symm (σ x)) := by simp
+      _ = ρ x := by rw [hx']
+  · right
+    ext x
+    have hx := DFunLike.congr_fun hδ x
+    have hx' :
+        ρ.symm (σ x) = galoisComplexConj E x := by
+      simpa [δR, δQ, galoisComplexConj] using hx
+    calc
+      σ x = ρ (ρ.symm (σ x)) := by simp
+      _ = ρ (galoisComplexConj E x) := by rw [hx']
+      _ = galoisComplexConj E (ρ x) :=
+        (galoisComplexConj_commute_apply E ρ x).symm
+      _ = ((centralInvolution E).conj ρ) x := rfl
+
+/-- Restrict one Galois-labelled complex embedding to the maximal real
+subfield, retaining its rational-algebra structure. -/
+noncomputable def maximalRealRestriction
+    (σ : E ≃ₐ[ℚ] E) : E⁺ →ₐ[ℚ] ℂ :=
+  RingHom.toRatAlgHom
+    ((complexEmbeddingAt E σ).comp (algebraMap E⁺ E))
+
+@[simp]
+theorem maximalRealRestriction_apply
+    (σ : E ≃ₐ[ℚ] E) (x : E⁺) :
+    maximalRealRestriction E σ x =
+      complexEmbeddingAt E σ (algebraMap E⁺ E x) := rfl
+
+/-- Representatives obtained by lifting the ordered embeddings of \`E⁺\`
+cover every rational Galois label up to CM conjugation. -/
+theorem canonicalRepresentatives_cover
+    (σ : E ≃ₐ[ℚ] E) :
+    ∃ i : Fin (Module.finrank ℚ E⁺),
+      σ =
+          representativeOfRealEmbedding E
+            (canonicalEmbeddingOrder (K := E⁺) i) ∨
+        σ =
+          (centralInvolution E).conj
+            (representativeOfRealEmbedding E
+              (canonicalEmbeddingOrder (K := E⁺) i)) := by
+  let order : EmbeddingOrder E⁺ (Module.finrank ℚ E⁺) :=
+    canonicalEmbeddingOrder (K := E⁺)
+  let τ : E⁺ →ₐ[ℚ] ℂ := maximalRealRestriction E σ
+  let i : Fin (Module.finrank ℚ E⁺) := order.symm τ
+  refine ⟨i, ?_⟩
+  apply eq_or_eq_conj_of_eq_on_maximalRealSubfield E
+  intro x
+  apply (baseComplexEmbedding E).injective
+  have hi : order i = τ := Equiv.apply_symm_apply order τ
+  calc
+    complexEmbeddingAt E σ (algebraMap E⁺ E x) = τ x := by
+      rfl
+    _ = order i x := by
+      exact DFunLike.congr_fun hi.symm x
+    _ = liftedRealEmbedding E (order i) (algebraMap E⁺ E x) := by
+      symm
+      exact liftedRealEmbedding_algebraMap E (order i) x
+    _ =
+        complexEmbeddingAt E
+          (representativeOfRealEmbedding E (order i))
+          (algebraMap E⁺ E x) := by
+      rw [complexEmbeddingAt_representativeOfRealEmbedding]
+  all_goals
+    simpa [order] using this
+
+/-- Canonical realization of the abstract real-rescaling interface by the
+maximal totally real subfield \`E⁺\`. -/
+noncomputable def canonicalMaximalRealRescalingInterface :
+    RealRescalingInterface E E⁺ where
+  include := maximalRealSubfieldInclude E
+  fixed := maximalRealSubfieldInclude_fixed E
+  order := canonicalEmbeddingOrder (K := E⁺)
+  representative i :=
+    representativeOfRealEmbedding E
+      (canonicalEmbeddingOrder (K := E⁺) i)
+  covers := canonicalRepresentatives_cover E
+  real_eval := by
+    intro i x
+    let order : EmbeddingOrder E⁺ (Module.finrank ℚ E⁺) :=
+      canonicalEmbeddingOrder (K := E⁺)
+    have hcomplex :
+        complexEmbeddingAt E
+            (representativeOfRealEmbedding E (order i))
+            (maximalRealSubfieldInclude E x) =
+          order i x := by
+      calc
+        complexEmbeddingAt E
+            (representativeOfRealEmbedding E (order i))
+            (maximalRealSubfieldInclude E x) =
+            liftedRealEmbedding E (order i)
+              (maximalRealSubfieldInclude E x) := by
+                exact DFunLike.congr_fun
+                  (complexEmbeddingAt_representativeOfRealEmbedding
+                    E (order i))
+                  (maximalRealSubfieldInclude E x)
+        _ = order i x := by
+          simpa [maximalRealSubfieldInclude] using
+            liftedRealEmbedding_algebraMap E (order i) x
+    calc
+      (complexEmbeddingAt E
+          (representativeOfRealEmbedding E
+            (canonicalEmbeddingOrder (K := E⁺) i))
+          (maximalRealSubfieldInclude E x)).re =
+          (order i x).re := by
+            simpa [order] using congrArg Complex.re hcomplex
+      _ =
+          orderedRealEmbedding
+            (canonicalEmbeddingOrder (K := E⁺)) i x := by
+        have h :=
+          congrArg Complex.re
+            (orderedRealEmbedding_complex
+              (canonicalEmbeddingOrder (K := E⁺)) i x)
+        simpa using h.symm
+
+/-- Canonical \`E⁺\` instantiation discharges the last sign-selection premise
+for an arbitrary anti-invariant seed. -/
+theorem nonempty_signControlledXi_canonical_of_seed
+    (v : OddSignRow E)
+    (P : TracePolarizationData E) :
+    Nonempty (SignControlledXi E v) :=
+  nonempty_signControlledXi E E⁺
+    (canonicalMaximalRealRescalingInterface E) v P
+
+/-- In particular, every odd CM sign row on a Galois CM number field admits a
+locally constructed sign-controlled anti-invariant \`xi\`.  The seed is the
+local nonzero anti-invariant datum from \`someTracePolarizationData\`. -/
+theorem nonempty_signControlledXi_canonical
+    (v : OddSignRow E) :
+    Nonempty (SignControlledXi E v) :=
+  nonempty_signControlledXi_canonical_of_seed E v
+    (someTracePolarizationData E)
+
+end CanonicalMaximalRealSubfield
+
 end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling
