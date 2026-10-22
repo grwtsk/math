@@ -6,7 +6,7 @@ import Mathlib.Algebra.Order.Floor.Semiring
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Ring
-import Mathlib.Tactic.NormCast
+import Lean.Elab.Tactic.NormCast
 
 /-!
 # Quadratic-interval endpoints for the actual closed-right Chebyshev source
@@ -57,14 +57,19 @@ theorem squareEndpoint_gt_one (n : ℕ) (hn : 1 ≤ n) : 1 < squareEndpoint n :=
 
 /-- Half-integer square endpoints are never natural-number endpoints. -/
 theorem squareEndpoint_ne_natCast (n k : ℕ) : squareEndpoint n ≠ (k : ℝ) := by
-  simpa only [squareEndpoint, Nat.cast_pow] using
-    nat_add_shift_ne_natCast (n ^ 2) k (1 / 2) (by norm_num) (by norm_num)
+  have hpow : ((n ^ 2 : ℕ) : ℝ) = (n : ℝ) ^ 2 := Nat.cast_pow (α := ℝ) n 2
+  change (n : ℝ) ^ 2 + 1 / 2 ≠ (k : ℝ)
+  rw [← hpow]
+  exact nat_add_shift_ne_natCast (n ^ 2) k (1 / 2) (by norm_num) (by norm_num)
 
 /-- Both endpoint counts retain the literal inclusive square cutoff. -/
 theorem chebyshevPrimePower_squareEndpoint (n : ℕ) :
     chebyshevPrimePower (squareEndpoint n) = chebyshevPrimePower ((n : ℝ) ^ 2) := by
-  simpa only [squareEndpoint, Nat.cast_pow] using
-    chebyshevPrimePower_nat_add_shift (n ^ 2) (1 / 2) (by norm_num) (by norm_num)
+  have hpow : ((n ^ 2 : ℕ) : ℝ) = (n : ℝ) ^ 2 := Nat.cast_pow (α := ℝ) n 2
+  change chebyshevPrimePower ((n : ℝ) ^ 2 + 1 / 2) =
+    chebyshevPrimePower ((n : ℝ) ^ 2)
+  rw [← hpow]
+  exact chebyshevPrimePower_nat_add_shift (n ^ 2) (1 / 2) (by norm_num) (by norm_num)
 
 /-- A common endpoint shift does not change the main-term width. -/
 theorem squareEndpoint_width (n : ℕ) :

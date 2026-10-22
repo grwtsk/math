@@ -33,7 +33,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/legendre-log-budget-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "c8d98d6eed627c565e6b26f8d1e03a5cbd1086f7".
-inherited_target_blob = "7ed46408358786a62108a0801bc0bb4b2a3fa927"
+# Pre-quadrature-repair inherited_target_blob = "7ed46408358786a62108a0801bc0bb4b2a3fa927".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "8eaa72f68d61b17b6d60ddcf515ed074b2bbde3e"
 receipt_revision_policy = "Bind the actual new commit, tree and this manifest blob externally. Source manifests and parent evidence do not accept this head."
 inventory_policy = "These are source names and blobs, not elaborated types. Report every declaration in listed modules and the complete transitive import/type/trust closure."
 
@@ -66,7 +68,9 @@ disposition = "INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
 path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervals.lean"
-source_blob = "594ff41e29323206962ef22863c82e3890382282"
+# Original pre-quadrature-repair source_blob = "594ff41e29323206962ef22863c82e3890382282".
+# Current pin binds repaired source; all inherited acceptance obligations remain open.
+source_blob = "29ffefcbeef17d9118f16268a42d5d8e5fd35114"
 origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
 disposition = "INHERITED_SOURCE"
 

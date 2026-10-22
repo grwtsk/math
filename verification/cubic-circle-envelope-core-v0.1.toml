@@ -33,7 +33,9 @@ inherited_target = "verification/anchored-local-jensen-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "62db05a9af8aa18d3c18a83f0b96c40cbf017991".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "d92435d7e5cf07ec7c458b7965f0597c071696a6".
-inherited_target_blob = "1a0966c7a189f909586f76f96909ce8eece28424"
+# Pre-quadrature-repair inherited_target_blob = "1a0966c7a189f909586f76f96909ce8eece28424".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "73b1c315e5456e9f97d1f127f09eae0f78913ddd"
 receipt_policy = "Bind exact new commit/tree externally; no ancestor receipt accepts this source."
 
 [trust]

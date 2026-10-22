@@ -32,7 +32,9 @@ inherited_target = "verification/canonical-zeta-tent-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "f09add4fb871df869de47ef4e8d249d761ac8f08".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "ae2d490cc7884e41f9d5ead10d4378035ba70ef2".
-inherited_target_blob = "3448ba6052c96cf484868cd68feb7499a0bc0e3d"
+# Pre-quadrature-repair inherited_target_blob = "3448ba6052c96cf484868cd68feb7499a0bc0e3d".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "8872bad342bc20918e21ab1f57867a67f08a1aa9"
 receipt_policy = "Bind the actual replayed integration commit/tree/manifest externally; this file and parent receipts are not acceptance."
 inventory_policy = "The list is lexical source inventory. Report every public elaborated type and the complete inherited and transitive trust closure."
 residue_scope = "Punctured principal parts and scaled-limit coefficients only; no global contour, Cauchy residue theorem instance or infinite source identity."
