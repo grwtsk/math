@@ -98,10 +98,10 @@ riemann_hypothesis_proved = false
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Moebius.MertensDyadicGeometricEnvelope"
-definition_count = 4
-theorem_script_count = 10
+definition_count = 3
+theorem_script_count = 9
 structure_count = 1
-authored_declaration_count = 15
+authored_declaration_count = 13
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/ParityMertensDyadicReconstruction.lean"
