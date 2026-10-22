@@ -19,35 +19,33 @@ from PR #470. This increment does not discharge its arithmetic premise.
 
 The exact signed Abel packet was shift-major:
 
-[
-A_j=sum_{1le h<Y}2sum_{t<Y-h-1}C_h(t+1)Delta_{j,h}(t),
-qquad Y=2^{j+1}.
-]
+\[
+A_j=\sum_{1\le h<Y}2\sum_{0\le t<Y-h-1}C_h(t+1)\Delta_{j,h}(t),
+\qquad Y=2^{j+1}.
+\]
 
 To expose cancellation across the complete growing shift family at one prefix depth, introduce the rectangularized signed cell
 
-[
-operatorname{Cell}_{j,h,t}=
-egin{cases}
-2C_h(t+1)Delta_{j,h}(t),&
-1le h<Y, t<Y-h-1,\
-0,&	ext{otherwise}.
-end{cases}
-]
+\[
+\operatorname{Cell}_{j,h,t}=
+\begin{cases}
+2C_h(t+1)\Delta_{j,h}(t),&1\le h<Y,\ 0\le t<Y-h-1,\\
+0,&\text{otherwise}.
+\end{cases}
+\]
 
 Define
 
-[
-D_{j,t}=sum_{1le h<Y}operatorname{Cell}_{j,h,t},
-qquad
-D_j=sum_{0le t<Y}D_{j,t}.
-]
+\[
+D_{j,t}=\sum_{1\le h<Y}\operatorname{Cell}_{j,h,t},
+\qquad D_j=\sum_{0\le t<Y}D_{j,t}.
+\]
 
 The theorem layer proves exactly
 
-[
+\[
 A_j=D_j.
-]
+\]
 
 No absolute value or square is inserted.
 
@@ -83,14 +81,20 @@ The theorem does not permit:
 ## Dependency path
 
 ```text
-weightedMertensDyadicSignedAbelDepthPacket
-  = weightedMertensDyadicSignedAbelPacket
-  = weightedMertensDyadicShiftPacket
-  -> SubpolynomialDyadicMertensShiftPacket
+weightedMertensDyadicSignedAbelDepthPacket j
+  = weightedMertensDyadicSignedAbelPacket j
+  = weightedMertensDyadicShiftPacket j
+```
+
+The corresponding all-scale bound is a separate, unresolved premise:
+
+```text
+SubpolynomialDyadicSignedAbelDepthPacket
+  <-> SubpolynomialDyadicMertensShiftPacket
   -> RiemannHypothesis
 ```
 
-Only the equality edges are advanced here. The subpolynomial arithmetic bound remains open.
+The equality and criterion-equivalence edges are exact finite mathematics. The subpolynomial arithmetic bound remains open.
 
 ## Source binding
 
@@ -121,9 +125,9 @@ The depth-major form may be consumed by a future dispersion, large-sieve, Fourie
 
 Prove an all-scale subpolynomial upper bound for the complete signed depth packet while retaining cancellation across shifts:
 
-[
-oralldelta>0;exists C_deltage0;orall j,qquad
-sum_{t<2^{j+1}}D_{j,t}le C_delta 2^{jdelta}.
-]
+\[
+\forall\delta>0\;\exists C_\delta\ge0\;\forall j,\qquad
+\sum_{0\le t<2^{j+1}}D_{j,t}\le C_\delta 2^{j\delta}.
+\]
 
 A stronger future supplier may estimate the depth slices, but must provide a proved comparison back into this exact signed packet.

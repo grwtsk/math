@@ -1,3 +1,6 @@
+# Historical original target Git blob: 2a3dad4447d4f612cd74d6f0e578776c770e4016.
+# Historical original parent: 75f2ca95aa317d1bdd64025c1c163d0b2e185339; tree 860ff3fae6b83d12b0b94b7bfe9a697288013d07.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-signed-abel-depth-packet-473-v0.1"
 owner_repository = "grwtsk/math"
@@ -11,12 +14,45 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-stacked_parent_branch = "research/rh-signed-abel-packet-468-20261021"
-stacked_parent_revision = "75f2ca95aa317d1bdd64025c1c163d0b2e185339"
-candidate_branch = "research/rh-signed-abel-depth-slices-473-20261021"
-theorem_source_commit = "aa9b524d85df4767d7bd9da3f459eaeca73102d2"
+historical_stacked_parent_branch = "research/rh-signed-abel-packet-468-20261021"
+stacked_parent_revision = "dad470eb4a215959c5115fea8351e6f217956a01"
+stacked_parent_tree = "708145be23fa23588c14844345ce85e93fe08460"
+historical_candidate_branch = "research/rh-signed-abel-depth-slices-473-20261021"
+historical_theorem_source_commit = "aa9b524d85df4767d7bd9da3f459eaeca73102d2"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelDepthPacket.lean"
+historical_theorem_source_git_blob = "ef7b3e9ce1c185093809e01ef5682b7ffdea438d"
 theorem_source_git_blob = "ef7b3e9ce1c185093809e01ef5682b7ffdea438d"
+source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "d1cf98128bf3545e289b76928b46945a5a63e146"
+historical_mathematical_note_commit = "752b801561160f5e1739a40fb99437abeeab01bd"
+historical_mathematical_note_tree = "5faf9c7a97e33dd6f207d7cfefe28f703cf36e13"
+historical_mathematical_note_git_blob = "fffd928740cb4f11d27a0ae21f87babb54adf0f9"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-signed-abel-depth-packet.md"
+mathematical_note_git_blob = "1b5a36fa7e14059bd87344b861772e95f33b5bfa"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelShiftPacket.lean"
+git_blob = "986cc5698ebe60e5fc169f64738c40717a10b1f8"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
 
 [selected_increment]
 primary_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weightedMertensDyadicSignedAbelPacket_eq_depthPacket"
