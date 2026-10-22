@@ -1,6 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT. -/
 import Mathlib.Analysis.PSeries
+import Mathlib.Data.Nat.Factorization.Basic
+import Mathlib.NumberTheory.Divisors
 import Mathlib.NumberTheory.Harmonic.Bounds
 import Mathlib.Tactic
 
