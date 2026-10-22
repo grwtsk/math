@@ -3065,4 +3065,42 @@ def CMFiniteTransportedGeneratorHodgeData.ofCanonicalPointWitnesses
     CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
   generator_mem := fun σ => (W σ).generator_mem_hodge
 
+/-- The balanced-image witness implies the pointwise witness without any
+spanning theorem. This is a forgetful conversion: it does not manufacture
+the actual comparison map or establish a new geometric Hodge fact. -/
+def CMFiniteCanonicalImageWitness.toPointWitness
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers}
+    (W : CMFiniteCanonicalImageWitness D hodgeSubspace σ) :
+    CMFiniteCanonicalPointWitness D hodgeSubspace σ where
+  v₁ := W.v₁
+  v₂ := W.v₂
+  v₃ := W.v₃
+  v₄ := W.v₄
+  actualTyping := W.actualTyping
+  alignment := W.alignment
+  compare := W.imageTest.compare
+  canonical_image_mem :=
+    W.imageTest.balanced_mem _
+      W.alignment.canonicalPureTensor_mem_balanced
+  generator_eq := W.generator_eq
+
+/-- The new pointwise route is logically no stronger than the prior
+balanced-image route: any previous family of witnesses converts directly. -/
+def CMFiniteTransportedGeneratorHodgeData.ofCanonicalImageWitnessesViaPoint
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (W : ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+      CMFiniteCanonicalImageWitness D hodgeSubspace σ) :
+    CMFiniteTransportedGeneratorHodgeData D hodgeSubspace :=
+  CMFiniteTransportedGeneratorHodgeData.ofCanonicalPointWitnesses
+    (fun σ => (W σ).toPointWitness)
+
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
