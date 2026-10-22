@@ -157,7 +157,7 @@ nonclaims = [
 
 
 [[local_target]]
-name = "CM embedding-line realized four-factor bidegree"
+name = "abstract CM line-label four-factor bidegree"
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.fourFactor_allCoordinates_bidegree_two_two"
 status = "SOURCE_DRAFT_NOT_RUN"
@@ -306,3 +306,21 @@ name = "projected-range Frobenius stability"
 path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
 declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredFrobeniusProjector.phi_mem_range_p"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "one-dimensional linear CM line four-factor bidegree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.linearFourFactor_allCoordinates_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual one-dimensional linear subspace selected at every coordinate",
+  "sign-compatible weight-one type assignment"
+]
+nonclaims = [
+  "no proof that the subspace equals the CM-field embedding eigenspace U(v)_lambda",
+  "no proof that the line family is a complete direct-sum decomposition",
+  "no CM abelian variety construction",
+  "no scalar descent",
+  "no algebraicity"
+]
