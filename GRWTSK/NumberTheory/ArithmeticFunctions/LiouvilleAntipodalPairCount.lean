@@ -334,6 +334,39 @@ theorem sum_powerset_eq_subtype_sum
       exact Finset.sum_attach H.powerset (fun T => f T)
     _ = _ := hsum
 
+/-- The antipodal collision count is bounded by the number of
+ordered root pairs. This does not assume cancellation. -/
+theorem antipodalPairCount_le_square (M : ℕ) (H : Finset ℕ) :
+    antipodalPairCount M H ≤ M * M := by
+  classical
+  unfold antipodalPairCount
+  calc
+    (((Finset.range M).product (Finset.range M)).filter
+      (fun p => IsAntipodalPair H p.1 p.2)).card ≤
+        ((Finset.range M).product (Finset.range M)).card :=
+      Finset.card_filter_le _ _
+    _ = M * M := by simp
+
+/-- At an empty root sample there are no antipodal ordered pairs,
+regardless of the finite shift set. -/
+theorem antipodalPairCount_zero (H : Finset ℕ) :
+    antipodalPairCount 0 H = 0 := by
+  classical
+  simp [antipodalPairCount]
+
+/-- Exact normalized bounds for the finite antipodal-pair frequency.
+The M>0 guard prevents treating the zero sample as a probability. -/
+theorem antipodalPairFrequency_bounds (M : ℕ) (H : Finset ℕ)
+    (hM : 0 < M) :
+    (0 : ℚ) ≤ (antipodalPairCount M H : ℚ) / (M : ℚ) ^ 2 ∧
+      (antipodalPairCount M H : ℚ) / (M : ℚ) ^ 2 ≤ 1 := by
+  have hMpos : (0 : ℚ) < (M : ℚ) := by exact_mod_cast hM
+  have hbound : (antipodalPairCount M H : ℚ) ≤ (M : ℚ) ^ 2 := by
+    exact_mod_cast (antipodalPairCount_le_square M H)
+  constructor
+  · positivity
+  · exact (div_le_iff₀ (sq_pos_of_pos hMpos)).2 (by simpa using hbound)
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
