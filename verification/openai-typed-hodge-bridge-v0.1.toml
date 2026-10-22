@@ -133,3 +133,19 @@ upstream_obligations = [
   "external 7/8 theorem exact-type/dependency review",
   "local adapter/replay before external theorem admission"
 ]
+
+
+[[local_target]]
+name = "CM four-label all-coordinate two/two sign profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourBalance.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_twoTwoSignProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd sign rows",
+  "pointwise four-label balance"
+]
+nonclaims = [
+  "no geometric Hodge-line realization",
+  "no rational descent",
+  "no algebraicity"
+]
