@@ -362,7 +362,8 @@ theorem apex_ne_outerVertex (k : ℕ) :
     apexPoint k ≠ outerVertex k := by
   intro h
   have hr := congrArg (radialCoordinate k) h
-  simpa using (show (0 : unitInterval) ≠ 1 from zero_ne_one)
+  have h01 : (0 : unitInterval) = 1 := by simpa using hr
+  exact zero_ne_one h01
 
 /-- A real sector interior point differs from the cone apex. -/
 theorem interior_ne_apex (k : ℕ) :
