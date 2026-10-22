@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-degenerate-weighted-binary-892-v0.1"
+owner_repository = "grwtsk/math"
+issue = 892
+parent_issue = 890
+parent_pr = 891
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_DEGENERATE_WEIGHTED_BINARY_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredDegenerateWeightedBinary"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredDegenerateWeightedBinary"
+
+[source_binding]
+stacked_parent_revision = "a3b342558abfa80e2743a1c54e8d4b0dcbacd7e8"
+candidate_branch = "research/rh-centered-degenerate-weighted-binary-892-20261022"
+theorem_source_commit = "ef3c59e4085559670948d5295e9570bf6a64cf2a"
+mathematical_note_commit = "e05356b9b746a7dc758d53a53ee92ae3edc420d2"
+
+[evidence_states]
+source_draft = true
+three_collision_types_defined = true
+repeated_arguments_identified = true
+squarefree_weight_retained = true
+weighted_binary_strata_defined = true
+positive_shift_exclusivity_scripted = true
+degenerate_partition_scripted = true
+weighted_binary_estimate_proved = false
+four_distinct_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
