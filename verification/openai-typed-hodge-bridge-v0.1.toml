@@ -205,7 +205,7 @@ labels = ["eq:cm-types", "eq:cm-label-conjugation"]
 statement_role = "construct U(v), polarize it, realize U(v)=H^1(B(v),Q), and track scalar conjugation of embedding-line labels"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.EmbeddingLineRealization"
 status = "OPEN"
-nonclaims = ["local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
+nonclaims = ["local record has only opaque nonempty line witnesses plus type labels", "local source does not construct U(v)_lambda as a linear Hodge subspace", "local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
 
 [[external_premise]]
 id = "cm-four-factor-switch-algebraicity"
