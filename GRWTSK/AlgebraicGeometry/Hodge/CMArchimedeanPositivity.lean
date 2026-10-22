@@ -91,6 +91,18 @@ def SignControlledXi.toTracePolarizationData
   xi_ne_zero := X.xi_ne_zero
   antiInvariant := X.antiInvariant
 
+/-- A sign-controlled xi automatically gives an alternating, nondegenerate
+rational trace pairing. -/
+theorem SignControlledXi.tracePairing_alternating_nondegenerate
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v) :
+    (∀ x : E, CMTracePolarization.tracePairing E X.xi x x = 0) ∧
+      (∀ x : E,
+        (∀ y : E, CMTracePolarization.tracePairing E X.xi x y = 0) → x = 0) ∧
+      (∀ y : E,
+        (∀ x : E, CMTracePolarization.tracePairing E X.xi x y = 0) → y = 0) :=
+  CMTracePolarization.tracePairing_alternating_nondegenerate
+    E X.toTracePolarizationData
 /-- Coordinate Hodge energy associated with the sign-controlled xi. -/
 def SignControlledXi.energy
     {v : CMNumberFieldIndex.OddSignRow E}
