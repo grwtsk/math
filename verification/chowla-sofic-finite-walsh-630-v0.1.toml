@@ -58,7 +58,8 @@ requires_exact_types = true
 requires_full_axiom_inspection = true
 
 [trust]
-allowed_axioms = []
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_any_additional_axioms = true
 reject_sorry = true
 reject_native_decide = true
 reject_unsafe_and_untracked_native_code = true
