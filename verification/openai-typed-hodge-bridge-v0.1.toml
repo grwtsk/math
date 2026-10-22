@@ -468,12 +468,12 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "Riemann bilinear criterion and realization by B(v)"
-local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
+statement_role = "classical Riemann existence theorem producing the complex torus / abelian variety and identifying the resulting weight-one Hodge structure with H^1(B(v),Q)"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm"
 status = "OPEN"
 nonclaims = [
-  "alternation, nondegeneracy, coordinate positivity, canonical archimedean sign selection, and the complexified trace-pairing/Hodge-operator comparison are local source targets",
-  "Riemann bilinear criterion and abelian-variety realization remain external"
+  "alternation, nondegeneracy, coordinate positivity, canonical archimedean sign selection, complexified trace comparison, integral lattice scaling, J-invariance and strict Riemann-form positivity are local source targets",
+  "only the actual complex-torus / abelian-variety existence theorem and H^1 realization remain external"
 ]
 
 
@@ -745,5 +745,44 @@ upstream_obligations = [
 nonclaims = [
   "records injective integer coordinates, nonzero scale, integral alternating pairing and exact scaled-pairing identity",
   "no Riemann criterion",
+  "no four-factor algebraicity theorem"
+]
+
+
+[[local_target]]
+name = "global skew and alternating complexified CM trace form"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm.complexifiedTracePairing_skew"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "source-level coordinate theorem only; no compile or kernel receipt",
+  "no complex-torus existence theorem"
+]
+
+[[local_target]]
+name = "CM Riemann-form J-invariance and strict positivity"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm.riemannForm_weil_self_pos"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi",
+  "real fixed-locus coordinate vector"
+]
+nonclaims = [
+  "does not construct a quotient complex torus",
+  "does not prove projectivity or abelian-variety realization"
+]
+
+[[local_target]]
+name = "canonical pre-Riemann bilinear certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm.canonicalPreRiemannBilinearData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "packages real structure, J^2=-1, global alternation, J-invariance, positivity, injective lattice and integral scaled pairing",
+  "Mathlib currently supplies no downstream Riemann existence theorem",
   "no four-factor algebraicity theorem"
 ]
