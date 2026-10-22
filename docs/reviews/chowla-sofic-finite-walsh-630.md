@@ -663,12 +663,11 @@ Required rejection cases:
 
 ### 12.3 Remaining obligations
 
-The immediate next *pure-mathematics* increment is the precise cyclic
-window model: choose `N>0` and a finite set of offsets with maximum
-`r<N`; prove ordinary and cyclic label equality for every
-root `n<N-r`, define the last `r` roots as the exceptional collar,
-prove the count is exactly `r`, and instantiate the new triangle to
-obtain `r/N + sqrt(E_source)/2`.
+The immediate next *pure-mathematics* increment identified at this
+historical checkpoint was the cyclic-window model. This has now been
+source-drafted in #13, retaining exact finite offsets, the last-r
+exceptional collar, and the typed comparison. It still requires
+actual Lean elaboration and kernel/trust audit.
 
 The above route is not a construction of full Chowla estimates, sofic
 operator convergence, microscopic GUE spacing or RH. A quantitative
@@ -679,3 +678,122 @@ visible.
 **Evidence state:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 No Lean/Lake, native build, CI qualification, transitive axiom audit,
 public-root import, merge or independent replay is represented here.
+
+## 13. Source-only sixth increment: arithmetic versus cyclic finite windows
+
+**Date:** 2026-10-22. **Direct exact parent head:**
+`bc40a07d5a15e904e7226694749a60f3622c2d71`.
+
+**New pure-mathematics source:**
+`GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean`.
+
+This supplies the previously missing *finite cyclic-window model* consumed
+by the typed `finiteWalshBoundary_return` theorem. It neither invokes
+a number-theoretic estimate nor constructs an infinite sofic action.
+
+### 13.1 Exact arithmetic labels and cycle labels
+
+Let `H : Finset Nat` be a **finite set of nonnegative offsets**. Define
+
+```text
+r := cyclicMaxOffset(H) := H.sup(id)
+ι := {h : Nat // h ∈ H}.
+ordinaryWord(n)(h) := z(n + h)
+cyclicWord(N,n)(h) := z((n + h) mod N)
+R := Finset.range N = {0,...,N-1}
+B := Finset.Ico (N-r) N = {N-r,...,N-1}.
+```
+
+For the empty offset set, `r=0` and `B=∅`. Repeated offsets do not
+create repeated coordinates: `Finset` represents a set, not a
+multiset. Every `h∈H` satisfies `h≤r` by `Finset.le_sup`.
+
+The **consumer hypothesis** is `r<N`, so in particular `N>0`.
+Modular reduction is only interpreted as a finite cyclic law when
+`N>0`; the stand-alone `Nat.mod` expression does not license
+a probability interpretation for `N=0`.
+
+### 13.2 Exact collar and complete-word agreement
+
+The newly drafted theorem `cyclicWrapCollar_card` proves, from
+`r≤N` (weaker than the consumer's `r<N`),
+
+```text
+|B| = N-(N-r) = r.
+```
+
+The other collar lemma establishes `B⊆R` using the strict
+right endpoint `n<N`. For every root `n∈R\B`,
+`n<N-r`; therefore every coordinate `h∈H` has
+`n+h<N`. The standard `Nat.mod_eq_of_lt` identity
+proves the exact **function equality** of ordinary and cyclic
+complete Boolean words at that root. No unlabeled approximation
+hypothesis is substituted for this label equality.
+
+The prior `finiteWalshBoundary_return` can consequently be
+instantiated on the *same* roots, the *same* finite coordinate
+subtype, the ordinary source and the cyclic model, yielding the
+source-drafted theorem `cyclicWalshTV_bound`:
+
+```text
+TV(P_cyclic, U_H)
+    <= r/N + (1/2)*sqrt(E_ordinary(H,N))
+```
+
+where
+
+```text
+E_ordinary(H,N)
+  = sum_(nonempty S subset H)
+      ((1/N) sum_(n=0)^(N-1) prod_(h in S) sign(z(n+h)))^2.
+```
+
+The energy uses the ordinary arithmetic window `z(n+h)`;
+neither modulo reduction nor the exception set changes the source
+correlations in this definition.
+
+### 13.3 Declaration inventory, scope, and nonclaims
+
+**Four proposed definitions:** `cyclicMaxOffset`,
+`ordinaryShiftWord`, `cyclicShiftWord`, `cyclicWrapCollar`.
+
+**Six proposed theorem heads:** `offset_le_cyclicMaxOffset`,
+`cyclicWrapCollar_subset_range`, `cyclicWrapCollar_card`,
+`ordinary_eq_cyclic_off_collar`,
+`empty_offsets_zero_collar`, `cyclicWalshTV_bound`.
+
+The selected passive target therefore includes **seven isolated
+mathematical modules**, **51 theorem heads**, and **22 definition
+heads**, all remaining pending Lean elaboration and kernel review.
+
+This theorem does **not** say that the boundary loss `r/N`
+vanishes without the additional assumption `r=o(N)`, or that
+the full correlation energy tends to zero. When `r` is comparable
+to `N`, the finite bound can be vacuous. For actual Liouville
+signs, a separately sourced, all-order quantitative Chowla
+supplier would be needed to obtain small energy, especially when
+`H` grows with `N`.
+
+A sharp boundary example exists at `N=4`, `H={1}`, and
+`z(n) := (n≤2)`: the ordinary four sampled signs are
+`(+,+,-,-)`, whereas the cyclic ones are `(+,+,-,+)`.
+Thus `E_ordinary=0`, `TV(P_cyclic,U)=1/4=r/N`.
+This is a *finite mathematical fixture*, not an additional
+Lean declaration in this increment.
+
+The new module is a finite **cycle approximation** only.
+It does not prove a general graph is sofic; identify a
+continuous spectral measure; establish microscopic GUE
+spacing; or imply the Riemann hypothesis.
+
+**Next mathematical interfaces:** (a) arbitrary finite coordinate
+subsets inside an infinite ambient type, retaining exact shift
+identities; (b) a source-appropriate all-order Chowla
+supplier with fixed-versus-growing-window uniformity; and
+(c) optional probability/entropy inequalities without a
+spectral universality upgrade. A clean external Lean replay
+with an exact axiom/declaration audit must precede promotion
+of any source drafts to verified mathematical declarations.
+
+**Evidence:** `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+NOT_TRUST_AUDITED / NO_ARITHMETIC_SUPPLIER`.
