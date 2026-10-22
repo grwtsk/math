@@ -1,0 +1,55 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-endpoint-interval-box-771-v0.1"
+owner_repository = "grwtsk/math"
+issue = 771
+parent_issue = 765
+parent_pr = 769
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointIntervalBox"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointIntervalBox"
+
+[source_binding]
+stacked_parent_revision = "01e0f2bca0f7d3ba1b1a83de68b1c8e67cd7a0cb"
+candidate_branch = "research/rh-endpoint-interval-box-771"
+theorem_source_commit = "11031bb5337d0c4ddc609df27abca7cc0c378b31"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointIntervalBox.lean"
+theorem_source_git_blob = "8ddabf2c3c58843371f2f0a8a13f598dc07d5c40"
+
+[selected_increment]
+active_cell = "CoreGrowingShiftQuarticEndpointActiveCell"
+active_source = "coreGrowingShiftQuarticEndpointActiveCells"
+box_index = "coreGrowingShiftQuarticEndpointActiveCellBoxIndex"
+literal_multiplicity = "coreGrowingShiftQuarticEndpointDepthMultiplicity"
+histogram_identity = "coreGrowingShiftQuarticEndpointPrefixEnergy_eq_multiplicityBox"
+depth_support = "coreGrowingShiftQuarticEndpointDepthSupport"
+explicit_lower = "coreGrowingShiftQuarticEndpointExplicitDepthLower"
+explicit_upper = "coreGrowingShiftQuarticEndpointExplicitDepthUpper"
+support_identity = "coreGrowingShiftQuarticEndpointDepthSupport_eq_explicit"
+fiber_bijection = "coreGrowingShiftQuarticEndpointDepthMultiplicity_eq_supportCard"
+explicit_multiplicity = "coreGrowingShiftQuarticEndpointExplicitDepthMultiplicity"
+multiplicity_formula = "coreGrowingShiftQuarticEndpointDepthMultiplicity_eq_explicit"
+explicit_box = "coreGrowingShiftQuarticEndpointExplicitIntervalWeightedBoxEnergy"
+endpoint_box_identity = "coreGrowingShiftQuarticEndpointPrefixEnergy_eq_explicitIntervalBox"
+explicit_compensation = "SubpolynomialCoreGrowingShiftQuarticEndpointExplicitIntervalCompensation"
+source_equivalence = "subpolynomialCoreGrowingShiftQuarticEndpointExplicitIntervalCompensation_iff_endpointPrefix"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftQuarticEndpointExplicitIntervalCompensation"
+direct_source = "EndpointExplicitIntervalWeightedBoxSource"
+carleson_source = "EndpointExplicitIntervalCarlesonSource"
+proof_classification = "EXACT_FINITE_ENDPOINT_HISTOGRAM_AND_INTERVAL_MULTIPLICITY"
+next_obstruction = "prove signed endpoint interval-weighted box compensation or a sign-preserving Carleson localization"
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+endpoint_prefix_estimate_proved = false
+carleson_estimate_proved = false
+martingale_estimate_proved = false
+chowla_theorem_proved = false
+riemann_hypothesis_proved = false

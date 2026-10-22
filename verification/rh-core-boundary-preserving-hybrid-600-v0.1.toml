@@ -1,0 +1,42 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-preserving-hybrid-600-v0.1"
+owner_repository = "grwtsk/math"
+issue = 600
+parent_issue = 597
+parent_pr = 599
+status = "WITNESS_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryPreservingHybrid"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryPreservingHybrid"
+
+[source_binding]
+stacked_parent_revision = "a3267815052f159121ab7b4a86908905b1f52fe6"
+candidate_branch = "research/rh-hybrid-boundary-600"
+theorem_source_commit = "a5884ed2035da34f9748a8df21a46b36a6192a0d"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryPreservingHybrid.lean"
+theorem_source_git_blob = "83a71d2a0c59a2e14e20213a5c8f5bcacbec1ed3"
+
+[selected_increment]
+boundary_depth = "coreBoundarySignedDepthContribution"
+boundary_packet = "coreBoundarySignedPacket"
+nonboundary_signed = "coreNonboundarySignedRemainderPacket"
+nonboundary_l1 = "coreNonboundaryShortIntervalL1Packet"
+packet_split = "coreLongDeepRemainderPacket_eq_boundary_add_nonboundary"
+nonboundary_bound = "abs_coreNonboundarySignedRemainderPacket_le_l1"
+hybrid_supplier = "HybridBoundaryPreservingCoreSupplier"
+hybrid_to_core = "subpolynomialCoreLongDeepRemainderPacket_of_hybridBoundary"
+conditional_endpoint = "riemannHypothesis_of_hybridBoundaryPreservingCoreSupplier"
+hostile_witness = "signedStartPointCancellation_hostileWitness"
+proof_classification = "BOUNDARY_SIGN_PRESERVATION_AND_NONBOUNDARY_L1_SPLIT"
+
+[evidence_states]
+witness = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+boundary_supplier_proved = false
+nonboundary_l1_supplier_proved = false
+riemann_hypothesis_proved = false

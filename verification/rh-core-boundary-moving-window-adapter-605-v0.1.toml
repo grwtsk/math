@@ -1,0 +1,37 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-moving-window-adapter-605-v0.1"
+owner_repository = "grwtsk/math"
+issue = 605
+parent_issue = 603
+parent_pr = 604
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryMovingWindowAdapter"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryMovingWindowAdapter"
+
+[source_binding]
+stacked_parent_revision = "0b473a595e1c441b151bd60f958789a8e7394b59"
+candidate_branch = "research/rh-boundary-adapter-605"
+theorem_source_commit = "e0749b93a2b6a7e2fc44b30e8e9998ac9345d803"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryMovingWindowAdapter.lean"
+theorem_source_git_blob = "f1fa19de504312a0a9da54af8b3cc2697120b67d"
+
+[selected_increment]
+short_window_reindex = "harmonicShortMobiusSum_eq_boundaryMovingWindow"
+one_depth_reindex = "cumulativeBoundaryCorrelation_eq_reverseWindow"
+zero_padding = "cumulativeBoundaryCorrelation_eq_paddedWindow"
+outer_fubini = "boundaryCumulativeCorrelationPacket_eq_movingWindowBilinear"
+adapter_value = "boundaryMovingWindowBilinearAdapter"
+exact_factor = "coreBoundarySignedPacket_eq_movingWindowBilinear_exact"
+proof_classification = "EXACT_FINITE_MOVING_WINDOW_REINDEXING"
+next_obstruction = "prove signed moving-window bilinear estimate"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+boundary_bilinear_estimate_proved = false
+riemann_hypothesis_proved = false

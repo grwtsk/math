@@ -1,0 +1,54 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-prefix-square-energy-699-v0.1"
+owner_repository = "grwtsk/math"
+issue = 699
+parent_issue = 693
+parent_pr = 695
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftPrefixSquareEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftPrefixSquareEnergy"
+
+[source_binding]
+stacked_parent_revision = "c9b61aeeb161a49e6a17a3d45464dfd0b0980f42"
+candidate_branch = "research/rh-growing-shift-energy-699"
+theorem_source_commit = "fc53b49cd0d50918dfba5cd4e01c29a7523f28aa"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftPrefixSquareEnergy.lean"
+theorem_source_git_blob = "a694f2989558e549f896438f9dcc90bc41ad9064"
+
+[selected_increment]
+unified_weight = "coreGrowingShiftFirstDifferenceWeight"
+weighted_depth = "coreGrowingShiftWeightedPrefixDepth"
+anchor_tail_identity = "coreGrowingShiftWeightedPrefixDepth_eq_anchor_add_tail"
+one_depth_identity = "coreGrowingShiftFirstDifferenceDepth_eq_weightedPrefix"
+prefix_square_depth = "coreGrowingShiftBinaryPrefixSquareDepth"
+weight_square_depth = "coreGrowingShiftFirstDifferenceWeightSquareDepth"
+prefix_square_energy = "coreGrowingShiftBinaryPrefixSquareEnergy"
+weight_nonnegative = "coreGrowingShiftFirstDifferenceWeight_nonneg"
+weight_bound = "coreGrowingShiftFirstDifferenceWeight_le_leftScale_inv_sq"
+one_depth_cauchy = "coreGrowingShiftWeightedPrefixDepth_sq_le"
+packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_weightedPrefix"
+outer_cauchy = "coreGrowingShiftWeightedPrefixPacket_sq_le"
+quadratic_comparison = "coreGrowingShiftFirstDifferencePacket_sq_le_prefixEnergy"
+averaged_source = "SubpolynomialCoreGrowingShiftBinaryPrefixSquareEnergy"
+averaged_to_packet = "subpolynomialCoreGrowingShiftFirstDifferencePacket_of_prefixSquareEnergy"
+uniform_to_averaged = "subpolynomialCoreGrowingShiftBinaryPrefixSquareEnergy_of_uniform"
+adapter = "coreGrowingShiftPrefixSquareEnergyAdapter"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftPrefixSquareEnergy"
+hostile_witness = "growingShiftPrefixSquareEnergy_hostileWitness"
+proof_classification = "EXACT_GROWING_SHIFT_REINDEXING_AND_FINITE_QUADRATIC_DISPERSION_COMPARISON"
+next_obstruction = "prove averaged active binary-prefix square energy or bypass its positive information loss"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+averaged_binary_prefix_square_energy_proved = false
+uniform_two_point_source_proved = false
+fixed_shift_chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+riemann_hypothesis_proved = false

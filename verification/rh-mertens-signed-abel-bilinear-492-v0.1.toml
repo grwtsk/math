@@ -1,0 +1,49 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-signed-abel-bilinear-492-v0.1"
+owner_repository = "grwtsk/math"
+issue = 492
+parent_issue = 476
+parent_pr = 481
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinear"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinear"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_revision = "2b1c075808b2365ede62f909014b5b83b30ddabf"
+candidate_branch = "research/rh-signed-abel-bilinear-492-20261021"
+theorem_source_commit = "cc2607a4e5e9862bccd746d80fa3b53530720b29"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBilinear.lean"
+theorem_source_git_blob = "061d38a9ae640e3f69ac5dd630c3c10cfaad0c5b"
+
+[selected_increment]
+response = "signedAbelDepthShiftResponse"
+factorization = "weightedMertensDyadicSignedAbelDepthSlice_eq_baseBilinear"
+model = "mertensSignedAbelDepthBilinearModel"
+estimate = "SubpolynomialMertensSignedAbelBilinearEstimate"
+conditional_endpoint = "riemannHypothesis_of_mertensSignedAbelBilinearEstimate"
+residual = "IDENTICALLY_ZERO"
+proof_classification = "EXACT_FINITE_PREFIX_EXPANSION_AND_FUBINI"
+
+[bilinear_coordinates]
+left_factor = "moebiusReal (a+1)"
+right_factor = "complete weighted growing-shift response"
+triangular_support_preserved = true
+absolute_value_inserted = false
+square_inserted = false
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+bilinear_estimate_proved = false
+large_sieve_estimate_proved = false
+dispersion_estimate_proved = false
+fourier_estimate_proved = false
+riemann_hypothesis_proved = false
