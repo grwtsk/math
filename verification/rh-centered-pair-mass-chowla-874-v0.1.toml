@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-pair-mass-chowla-874-v0.1"
+owner_repository = "grwtsk/math"
+issue = 874
+parent_issue = 855
+parent_pr = 857
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_PAIR_MASS_CHOWLA_BRIDGE_SOURCE_DRAFT_ZERO_FREQUENCY_AFFINE_CHOWLA_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredPairMassChowlaBridge"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredPairMassChowlaBridge"
+
+[source_binding]
+stacked_parent_revision = "7b2d2c14869efbc02f34c9f63e25fc85a64d92e2"
+candidate_branch = "research/rh-centered-pair-mass-chowla-858-20261022"
+theorem_source_commit = "a4dbb790a5ce9c83868be988d1e09d02510182a9"
+mathematical_note_commit = "e1851340bf0a15a70334d960c900515b2559b1c6"
+
+[evidence_states]
+source_draft = true
+existing_affine_chowla_twists_reused = true
+zero_frequency_aggregate_defined = true
+factor_two_pair_mass_bridge_scripted = true
+four_family_square_mass_identity_scripted = true
+signed_residue_fourier_zero_identity_scripted = true
+pair_mass_square_envelope_adapter_scripted = true
+mean_inflation_composition_scripted = true
+zero_frequency_affine_chowla_estimate_proved = false
+nonzero_frequency_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
