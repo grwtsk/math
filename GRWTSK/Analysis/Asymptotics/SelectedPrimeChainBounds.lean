@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds
 import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 
 /-! Weaker sign-preserving replacement: pay only the transitions on a declared

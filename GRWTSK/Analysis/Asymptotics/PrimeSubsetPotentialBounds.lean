@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds
 
 /-! Universal AS forces polynomial energy for every prime subset whose singleton
 harmonic masses obey the block cap. The proof inserts actual signed prime notes

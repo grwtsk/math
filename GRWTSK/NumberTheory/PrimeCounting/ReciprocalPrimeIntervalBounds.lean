@@ -1,7 +1,7 @@
 import Mathlib.NumberTheory.Chebyshev
 import Mathlib.NumberTheory.Harmonic.Bounds
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
-import GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction
 
 /-!
 # Independent finite prime-harmonic bounds

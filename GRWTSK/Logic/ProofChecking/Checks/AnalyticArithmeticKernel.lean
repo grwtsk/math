@@ -1,7 +1,7 @@
 import GRWTSK.Logic.ProofEvidence.DirichletResponseStatus
 import GRWTSK.Logic.ProofEvidence.MoebiusResponseStatus
 import GRWTSK.Analysis.CausalTranslation.ExponentialResponse
-import GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence
+import GRWTSK.Analysis.AsymptoticAnalysis.MassWeightedRecurrence
 import GRWTSK.Logic.ProofEvidence.MoebiusPrimeShellStatus
 import GRWTSK.Analysis.InnerProductSpace.SignedWindowPacketCertificates
 import Lean.Util.CollectAxioms

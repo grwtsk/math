@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.Moebius.PrimeShellDecomposition
-import GRWTSK.Analysis.Asymptotics.FixedWidthEnergyBoundEquivalence
+import GRWTSK.Analysis.AsymptoticAnalysis.FixedWidthEnergyBoundEquivalence
 
 /-! Literal signed settlement accounting. Both actual source components are
 retained in every packet. No separate polynomial estimate for either sector
