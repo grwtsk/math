@@ -32,7 +32,7 @@ all_dyadic_energy_bound_used = false
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftQuarticFactorization"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftQuarticFactorization.lean"
-blob = "b20072f2c9fec5132367f6de6cb33c78a1c17aaa"
+blob = "98213b8d00e9b9be157a78340a3a15be4f92606d"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftQuarticFactorizationControls"
@@ -49,6 +49,7 @@ path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-safe-shift-quartic-fac
 blob = "bde9a3c905de5e47661ce1b00c6c610f8bd6cc2f"
 
 [evidence_states]
+CLAIM_SORT_REPAIRED = true
 SOURCE_DRAFT = true
 ELABORATED = false
 KERNEL_CHECKED = false
