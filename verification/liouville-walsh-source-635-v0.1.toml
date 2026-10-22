@@ -1,0 +1,178 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "liouville-walsh-source-635-v0.1"
+owner_repository = "grwtsk/math"
+issue = 635
+related_issues = [628, 630, 121, 444, 453, 516, 100, 15]
+route_id = "ARITHMETIC_LIOUVILLE_TO_FINITE_WALSH"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder"
+build_target = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "a58ec67f358b838527ea6220aab8353ba611e823"
+review_parent_tree = "87326e588e30cf4ad75d9de21cf2f2641239bdf4"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_liouville_path = "Mathlib/NumberTheory/ArithmeticFunction/Liouville.lean"
+upstream_liouville_author = "Thomas Browning"
+upstream_liouville_license = "Apache-2.0"
+new_module_path = "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder.lean"
+new_module_git_blob = "bc00fb114c1c6546cefaf732f4318ab0c0061338"
+new_module_namespace = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder"
+mathematical_note_path = "docs/mathematics/NumberTheory/ArithmeticFunctions/liouville-walsh-source.md"
+mathematical_note_git_blob = "25bd252f059d8d209dee2c9a4fdd0405ac2bdff0"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+parent_walsh_elaboration_verified = false
+liouville_arithmetic_correlation_cancelled = false
+chowla_conjecture_proved = false
+bernoulli_limit_proved = false
+sofic_boundary_adapter_closed = false
+mobius_transport_proved = false
+rh_energy_supplier_closed = false
+mathematical_statement = "finite exact Liouville pattern counts reconstructed from pinned real-valued casts of integer Liouville subset moments"
+positive_input_guard = "n + 1 + h != 0"
+sample_horizon_zero_supported = true
+fixed_to_growing_shift_upgrade = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder"
+authored_declaration_count = 11
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Analysis.FiniteSum.WalshCylinder", "Mathlib.NumberTheory.ArithmeticFunction.Liouville"]
+
+[[inherited_sources]]
+path = "GRWTSK/Analysis/FiniteSum/WalshCylinder.lean"
+git_blob = "025b1e07834831decc69261639cbfff7e6f70daa"
+status = "STACKED_PARENT_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_targets]]
+path = "verification/finite-walsh-cylinder-628-v0.1.toml"
+git_blob = "9a08d13005cdf3426e83850aecf7b52d9ede94c7"
+status = "PARENT_PASSIVE_TARGET_NOT_VERIFICATION_RECEIPT"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvilleParityBit"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvilleParityBit_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouville_zero_not_binary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.bitSign_liouvilleParityBit_of_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvilleWindowBit"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.bitSign_liouvilleWindowBit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvilleFiniteMoment"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvillePatternCount"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.finiteMoment_liouvilleWindowBit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvilleFiniteMoment_empty"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshCylinder.liouvillePatternCount_walsh"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-excluded"
+requirement = "At input zero the actual integer Liouville source is 0 and its Boolean parity sign is 1; the sign-equivalence theorem must require a nonzero argument."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-start-offset"
+requirement = "All actual ordinary samples are at n + 1 + h, not n + h or a modularly wrapped index."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "prime-multiplicity"
+requirement = "Use cardFactors (Omega) with repeated prime factors, not cardDistinctFactors (omega)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parity-orientation"
+requirement = "Even Omega corresponds to +1, odd Omega to -1, never the reverse."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-sample"
+requirement = "All identity theorems remain unnormalized and allow N=0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-subset"
+requirement = "The empty Liouville moment is N and the empty pattern matches every sample."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-identity"
+requirement = "Products contain casts of the actual pinned ArithmeticFunction.liouville, never postulated iid signs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cesaro-scope"
+requirement = "Do not infer ordinary/logarithmic Chowla estimates, fixed-to-growing-shift uniformity, maximal-prefix energy or entropy from the finite identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "non-sofic-promotion"
+requirement = "Do not promote finite labeled cylinders to ergodicity, Bernoulli limits, GUE, or RH."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "mobius-ternary"
+requirement = "Do not treat the Möbius function with zeros as a binary Liouville sequence."
+status = "NOT_RUN"
