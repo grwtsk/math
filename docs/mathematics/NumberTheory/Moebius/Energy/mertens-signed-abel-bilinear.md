@@ -8,33 +8,30 @@ Evidence state: **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / BILINEAR_ESTIMAT
 
 For the inherited signed depth slice
 
-[
-D_{j,t}=sum_h 2,C_h(t+1),Delta_{j,h}(t),
-]
+\[
+D_{j,t}=\sum_{1\le h<Y}\mathbf{1}_{t<Y-h-1}\,
+  2C_h(t+1)\Delta_{j,h}(t),\qquad Y=2^{j+1}.
+\]
 
 expand
 
-[
-C_h(t+1)=sum_{a<t+1}mu(a+1)mu(a+1+h).
-]
+\[
+C_h(t+1)=\sum_{0\le a<t+1}\mu(a+1)\mu(a+1+h).
+\]
 
 Finite Fubini gives
 
-[
-D_{j,t}
-=
-sum_{a<t+1}mu(a+1),R_{j,t}(a),
-]
+\[
+D_{j,t}=\sum_{0\le a<t+1}\mu(a+1)R_{j,t}(a).
+\]
 
 where
 
-[
-R_{j,t}(a)
-=
-sum_{1le h<2^{j+1}}
-1_{t<2^{j+1}-h-1},
-2,mu(a+1+h),Delta_{j,h}(t).
-]
+\[
+R_{j,t}(a)=\sum_{1\le h<2^{j+1}}
+  \mathbf{1}_{t<2^{j+1}-h-1}\,
+  2\mu(a+1+h)\Delta_{j,h}(t).
+\]
 
 This is an exact signed identity. No absolute value or square is introduced.
 
@@ -91,9 +88,9 @@ source-specific bilinear estimate
 
 Determine a quantitatively compatible norm or dispersion inequality for
 
-[
-sum_{a<t+1}mu(a+1)R_{j,t}(a)
-]
+\[
+\sum_{0\le a<t+1}\mu(a+1)R_{j,t}(a)
+\]
 
 that can be summed over all depths while preserving the required subpolynomial packet budget.
 
