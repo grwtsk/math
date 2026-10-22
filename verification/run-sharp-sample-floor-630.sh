@@ -37,5 +37,17 @@ import GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleSharpSampleFloor
 #print axioms GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleAllOrderEnergy_sharp_sample_floor
 LEAN
 echo 'Printing exact types and transitive axioms'
-lake env lean "$tmp"
-echo 'ELABORATION COMPLETE; inspect printed axioms and independently replay before acceptance'
+audit_log="$(mktemp "$PWD/.sharp-sample-floor-output-XXXXXX.log")"
+trap 'rm -f "$tmp" "$audit_log"' EXIT
+lake env lean "$tmp" 2>&1 | tee "$audit_log"
+# Lean can elaborate a declaration with sorryAx and still exit successfully.
+# Reject such an output; require manual review for other opaque axioms.
+if grep -Eq 'sorryAx|admitAx|Lean\.ofReduceBool|native_decide' "$audit_log"; then
+  echo 'FAIL: unapproved axiom or proof placeholder in theorem audit' >&2
+  exit 1
+fi
+if [ "$(grep -c '^.* depends on axioms:' "$audit_log" || true)" -ne 4 ]; then
+  echo 'FAIL: expected four transitive axiom reports' >&2
+  exit 1
+fi
+echo 'SELECTED ELABORATION AND BASIC AXIOM SCREEN PASSED; independent replay and full axiom review remain required'
