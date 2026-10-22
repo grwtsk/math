@@ -1,0 +1,604 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-radial-filling-859-v0.1"
+owner_repository = "grwtsk/math"
+issue = 859
+related_issues = [845, 834, 823, 803, 795, 774, 758, 745, 734, 722, 704, 653, 198, 205, 545, 121, 168, 516, 159, 100, 15]
+route_id = "GENUINE_RADIAL_SQUARE_SECTOR_QUOTIENT_BOUNDARY_FACTOR_AND_NONCOLLAPSE"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-boundary-topology-845-20261022"
+review_parent_revision = "5144a80402288e780107e2432748bc4c12744f28"
+review_parent_boundary_module_git_blob = "e563395f94fc594453e48a5b0589d39b28ce42da"
+review_parent_corner_module_git_blob = "ab06170acca456efcba7dc1f444b097a132501a8"
+review_parent_categorical_h1_module_git_blob = "a659f6cc0c7307ad3e5cdadce6426a45424e3e85"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonRadialFilling.lean"
+new_module_git_blob = "4455b74da256ec09efbe664f9fa95a0b48651d4a"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-radial-filling.md"
+mathematical_note_git_blob = "8f75c925a594637f8cda45dc3903a8345bd74528"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+unit_interval_import_path = "Mathlib/Topology/UnitInterval.lean"
+unit_interval_type = "unitInterval"
+interval_reflection = "unitInterval.symm"
+quotient_topology_import_path = "Mathlib/Topology/Constructions.lean"
+quotient_topology = "instTopologicalSpaceQuotient"
+continuous_projection = "continuous_quotient_mk'"
+quotient_map = "isQuotientMap_quotient_mk'"
+quotient_lift_continuity = "Continuous.quotient_lift"
+equivalence_closure = "Relation.EqvGen"
+reuse_status = "IMPORTED_MATHLIB_DECLARATIONS_INSPECTED_NOT_ELABORATED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+true_radial_source_of_topological_unit_squares = true
+seven_exact_generating_gluing_families = true
+all_radius_adjacent_endpoint_seams = true
+radius_zero_all_to_apex = true
+radius_one_opposite_side_reversal_only = true
+true_quotient_coinduced_topology_source_candidate = true
+continuous_quotient_projection_source_candidate = true
+continuous_square_sector_maps_source_candidate = true
+parent_boundary_relation_lift_at_r_one_source_candidate = true
+continuous_parent_boundary_map_to_filling_source_candidate = true
+commuting_source_boundary_square_source_candidate = true
+all_previous_corners_one_outer_vertex_source_candidate = true
+continuous_radial_quotient_invariant_source_candidate = true
+apex_interior_outer_strata_distinct_source_candidate = true
+original_genus_two_three_and_cell_count_preserved = true
+parent_boundary_map_embedding_proved = false
+perimeter_circle_to_disk_homeomorphism_proved = false
+true_S1_to_one_skeleton_attaching_map_constructed = false
+genuine_disk_adjunction_pushout_universal_property_proved = false
+CW_surface_or_manifold_structure_proved = false
+actual_surface_cellular_chain_comparison_proved = false
+topological_singular_homology_proved = false
+surface_pi1_van_kampen_and_Hurewicz_proved = false
+authentic_hyperbolic_metric_or_geodesic_length_proved = false
+Selberg_WeilPetersson_or_GUE_proved = false
+sofic_or_growing_shift_Chowla_supplier_proved = false
+zeta_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "The genuine coinduced topological quotient of radial squares, glued by all-radius polygon seams, one radius-zero apex, and original opposite-side relations only at radius one, receives a continuous source-matched map from the prior boundary quotient and has a continuous radial invariant separating apex, interior and outer boundary."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+authored_declaration_count = 45
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology", "Mathlib.Topology.Constructions", "Mathlib.Topology.UnitInterval"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+source_construct = "local instance cornerDiscreteTopology on PolygonCorner k"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+source_construct = "inductive RadialGluingStep with seven constructors and generated recursor"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling"
+source_construct = "Setoid, Quotient, coinduced topology and implicit Quotient.lift definitions"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.RadialSource"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.apexSource"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.RadialGluingStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.RadialConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialSetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.FilledPolygonQuotient"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialQuotientTopology_is_coinduced"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialProjection_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialProjection_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.sectorMap"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.sectorMap_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialProjection_eq_of_step"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radius_zero_is_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.outerSource"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.outerProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.outerProjection_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.parentBoundaryStep_respected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.parentBoundaryConnected_respected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.boundaryInclusion"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.boundaryInclusion_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.boundaryInclusion_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.all_original_corners_same_outer_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.step_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.connected_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialCoordinate"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialCoordinate_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialCoordinate_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.projection_ne_of_radius_ne"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.apexPoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.outerVertex"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialInteriorPoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialCoordinate_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialCoordinate_outerVertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.radialCoordinate_interior"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.midpoint_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.midpoint_ne_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.apex_ne_outerVertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.interior_ne_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.interior_ne_outerVertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.three_radial_strata_distinct"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.filledPolygon_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.genusTwo_radial_strata"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.genusThree_radial_strata"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling.original_one_cell_source_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "immutable-parent"
+requirement = "Parent PR #852 is the EXACT source head 5144a80402288e780107e2432748bc4c12744f28, with no parents modified."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-side-identities"
+requirement = "RadialSource uses original BoundaryPoint k indexed by exact PolygonCorner k from #834 and #845."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-interval-squares"
+requirement = "Every radial sector consists of two actual topological Mathlib unitInterval factors, not finite positions with discrete topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "discrete-index-only"
+requirement = "Only the finite PolygonCorner index receives ⊥ topology; both interval parameters retain their real subspace topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "tangential-radial-distinguished"
+requirement = "Tangential source t and radial source r must never be silently interchanged."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-7-gluing-families"
+requirement = "RadialGluingStep has exactly seam01, seam12, seam23, seamNext, apex, outerA and outerB; no universal relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam01-all-radii"
+requirement = "The side-0 to side-1 endpoint seam acts at EVERY radius and does not alter r."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam12-all-radii"
+requirement = "The side-1 to side-2 endpoint seam acts at EVERY radius and does not alter r."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam23-all-radii"
+requirement = "The side-2 to side-3 endpoint seam acts at EVERY radius and does not alter r."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-handle-seam-all-radii"
+requirement = "The side-3 to next-handle-side-0 endpoint seam acts at EVERY radius using the precise parent nextHandle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "last-to-first-cyclic-closure"
+requirement = "The final handle's successor wraps to the original first handle; no missing cyclic boundary interval."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-radius-zero-collapsed"
+requirement = "All p at radius zero are identified with the exact declared apex, including points with differing tangential/source positions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "apex-only-at-zero"
+requirement = "The apex generator MUST NOT collapse points with radial parameter nonzero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-a-pair-reversed"
+requirement = "At r=1 the a-forward side is identified with its same-source inverse side after genuine unitInterval.symm reflection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-b-pair-reversed"
+requirement = "At r=1 the b-forward side is identified with its same-source inverse side after genuine unitInterval.symm reflection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-interior-opposite-pairing"
+requirement = "A/B opposite side pairs apply ONLY at r=1, not at arbitrary 0<r<1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "smallest-equivalence-closure"
+requirement = "The full identification relation is Mathlib Relation.EqvGen generated by these exact radial steps."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-Quotient-carrier"
+requirement = "FilledPolygonQuotient is a TRUE Mathlib Quotient with the declared exact Setoid."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "coinduced-topology"
+requirement = "The quotient has the actual coinduced topology of its radial source, not arbitrary codiscrete/discrete topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-filled-projection"
+requirement = "The real source-to-filling projection is continuous by the true quotient topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "isQuotientMap-filled-projection"
+requirement = "The source-to-filling projection is IsQuotientMap, not merely a function with a suggestive name."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-square-sectors"
+requirement = "Each original directed side has a genuine continuous map from unitInterval × unitInterval to the filled quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-source-at-one"
+requirement = "outerSource sends EVERY exact parent BoundaryPoint to radius one without modifying its side or tangential source identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-boundary-source-continuity"
+requirement = "The source outerProjection map is continuous, using the product topology and quotient projection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-parent-six-relations"
+requirement = "Each of the six exact parent BoundaryGluingStep constructors is respected at radius one by the filled generator relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-EqvGen-induction"
+requirement = "Lift the full parent BoundaryConnected reflexive/symmetric/transitive closure, not just a few endpoint fixtures."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-boundary-lift"
+requirement = "The boundaryInclusion map from the parent actual topological quotient is constructed through a genuine Quotient.lift."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-boundary-lift"
+requirement = "The previous quotient's map to filled topology is proved Continuous.quotient_lift, not assumed continuous."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "commuting-source-square"
+requirement = "For every source boundary p, boundaryInclusion(boundaryProjection p)=radialProjection(p,1), preserving exact signed source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-outer-corners-one-vertex"
+requirement = "All original finite polygon corners map to a common outer vertex by consuming the parent one-vertex proof."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radius-each-generator"
+requirement = "Every primitive FilledGluingStep preserves the actual radial coordinate exactly, including apex and outer side pairs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radius-closure-invariant"
+requirement = "The full EqvGen equivalence closure preserves radial equality in reflexive/symmetric/transitive cases."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-radius-descent"
+requirement = "radialCoordinate is a genuine quotient lift of the original radial coordinate, not a newly assigned numeric label."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-radius-descent"
+requirement = "The quotient radialCoordinate map to unitInterval is proved continuous by the actual coinduced quotient universal property."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "different-radii-distinct"
+requirement = "No two quotient points from source points with different radii are identified."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "apex-at-r-zero"
+requirement = "Every radius-zero source point maps to the selected apex class."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-at-r-one"
+requirement = "The chosen outer vertex point has radial coordinate exactly one, distinct from the cone apex at zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-interior-half"
+requirement = "The selected sector midpoint has actual radial parameter one-half and is neither endpoint zero nor one."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "three-strata-not-collapsed"
+requirement = "Apex, interior radial midpoint and outer vertex are pairwise distinct in the actual quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-nonempty"
+requirement = "k=0 supplies two initial handles, nontrivial three-radial-strata and no extra Fin 0 handles."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-extra"
+requirement = "k=1 supplies the genuine extra handle and the same three-radial-strata noncollapse."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "underlying-cell-count"
+requirement = "The original source generator count remains 2*(k+2), not 4g from duplicated oriented sectors."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-map-not-embedding"
+requirement = "An arbitrary continuous map B_k→FilledPolygonQuotient is not automatically injective or an Embedding; no such proof is authored here."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-map-not-attaching-map"
+requirement = "The map B_k→FilledPolygonQuotient is NOT the disk attaching map S1→B_k; never reverse this arrow."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-closed-disk-proved"
+requirement = "The cone of an unpaired perimeter circle has not been shown homeomorphic to a closed two-disk."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-verified-CW-structure"
+requirement = "No CW characteristic-map axioms or 0/1/2-cell boundary and closure laws of a real space are proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold-classification"
+requirement = "No compact connected oriented genus-g manifold structure or geometric classification theorem is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-real-cellular-H1"
+requirement = "The new quotient is not proved to have cellular/singular chains isomorphic to the sourced ModuleCat complex from #823."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-van-kampen-hurewicz"
+requirement = "No genuine π1 of the filled quotient, van Kampen presentation or Hurewicz identification is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-length"
+requirement = "No marked hyperbolic metric, geodesic source, true primitive geodesic length or Selberg trace coefficient is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-Chowla-RH"
+requirement = "No Weil-Petersson/GUE, sofic microstatistics, growing-shift Möbius/Chowla, zeta divisor or RH implication is obtained."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-relation-recursors-unrun"
+requirement = "Inductive RadialGluingStep constructors/recursor and inferred quotient/instance elaboration require exact-head generated declaration and transitive axiom review."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-inventory-not-kernel"
+requirement = "No textual local sorry/admit/axiom does not imply Lean elaboration, qualified theorem types or complete trust audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-unapproved-execution"
+requirement = "The passive target authorizes no Lean/Lake, native/VM/F06, CI/workflow, cache, executor, root or toolchain/dependency mutation."
+status = "NOT_RUN"
+
