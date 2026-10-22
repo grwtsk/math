@@ -55,19 +55,17 @@ theorem dyadicMertensTwoPointQuadraticEnvelope_of_uniform
     (henv : DyadicMertensTwoPointEnvelope j U) :
     DyadicMertensTwoPointQuadraticEnvelope j U := by
   let Y : ℕ := 2 ^ (j + 1)
-  have hY : 1 ≤ Y := by
-    dsimp [Y]
-    positivity
+  have hY : 1 ≤ Y := Nat.one_le_pow (j + 1) 2 (by norm_num)
   refine ⟨henv.1, fun _ => U, ?_, ?_⟩
   · intro h hh hhY
     exact ⟨henv.1, fun N hN => henv.2 h N hh hhY hN⟩
   · have hcard : (Finset.Ico 1 Y).card = Y - 1 := by
-      rw [Finset.card_Ico]
+      rw [Nat.card_Ico]
     rw [show 2 ^ (j + 1) = Y by rfl]
     calc
       (∑ _h ∈ Finset.Ico 1 Y, U ^ 2) =
           (((Finset.Ico 1 Y).card : ℕ) : ℝ) * U ^ 2 := by
-        simp only [Finset.sum_const, nsmul_eq_mul, Nat.cast_ofNat]
+        simp only [Finset.sum_const, nsmul_eq_mul]
       _ = (((Y - 1 : ℕ) : ℝ)) * U ^ 2 := by rw [hcard]
       _ ≤ (Y : ℝ) * U ^ 2 := by
         apply mul_le_mul_of_nonneg_right
@@ -83,11 +81,9 @@ theorem dyadicMertensTwoPointMeanEnvelope_of_quadratic
     DyadicMertensTwoPointMeanEnvelope j B := by
   let Y : ℕ := 2 ^ (j + 1)
   obtain ⟨hB, U, hshift, hquad⟩ := henv
-  have hY : 1 ≤ Y := by
-    dsimp [Y]
-    positivity
+  have hY : 1 ≤ Y := Nat.one_le_pow (j + 1) 2 (by norm_num)
   have hcard : (Finset.Ico 1 Y).card = Y - 1 := by
-    rw [Finset.card_Ico]
+    rw [Nat.card_Ico]
   have hU : ∀ h ∈ Finset.Ico 1 Y, 0 ≤ U h := by
     intro h hh
     exact (hshift h (Finset.mem_Ico.mp hh).1
