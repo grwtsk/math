@@ -87,5 +87,36 @@ theorem adjacencyResolvent_separable (a b c d : F)
   have hsep := (Polynomial.separable_prod_X_sub_C_iff (f := v)).2 hv
   simpa [adjacencyResolventFromRoots, v, Fin.prod_univ_three] using hsep
 
+
+/-- An actual separable quartic enumerated in a splitting extension has
+a separable adjacency resolvent. The separability assumption enters only
+through the injectivity of its four-root enumeration. -/
+theorem adjacencyResolvent_separable_of_quartic_enumeration
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (p : K[X]) (hsep : p.Separable)
+    (e : QuarticRootEnumeration (L := L) p) :
+    (adjacencyResolventFromRoots
+      (e.r 0) (e.r 1) (e.r 2) (e.r 3)).Separable := by
+  have hi := enumeration_injective_of_separable p hsep e
+  apply adjacencyResolvent_separable
+  · exact hi (by decide : (0 : Fin 4) ≠ 1)
+  · exact hi (by decide : (0 : Fin 4) ≠ 2)
+  · exact hi (by decide : (0 : Fin 4) ≠ 3)
+  · exact hi (by decide : (1 : Fin 4) ≠ 2)
+  · exact hi (by decide : (1 : Fin 4) ≠ 3)
+  · exact hi (by decide : (2 : Fin 4) ≠ 3)
+
+/-- Splitting and exact degree provide a genuine root enumeration; a
+separable quartic then produces a separable cubic in the extension. -/
+theorem exists_separable_adjacencyResolvent_of_splitting_quartic
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (p : K[X]) (hs : (p.map (algebraMap K L)).Splits)
+    (hdegree : p.natDegree = 4) (hsep : p.Separable) :
+    ∃ e : QuarticRootEnumeration (L := L) p,
+      (adjacencyResolventFromRoots
+        (e.r 0) (e.r 1) (e.r 2) (e.r 3)).Separable := by
+  obtain ⟨e⟩ := enumeration_of_splitting_degree_four (L := L) p hs hdegree
+  exact ⟨e, adjacencyResolvent_separable_of_quartic_enumeration p hsep e⟩
+
 end
 end GRWTSK.Algebra.PolygonalQuarticSeparable
