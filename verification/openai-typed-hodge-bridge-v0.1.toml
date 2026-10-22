@@ -2056,14 +2056,14 @@ nonclaims = [
 ]
 
 [[external_premise]]
-id = "cm-fourfold-algebraic-assembly-equivariance"
+id = "cm-geometric-switched-assembly-multilinear-presentation"
 result_family = 32
 evidence = "EXTERNAL_MULTILINEAR_NATURALITY"
 source = "fourfold switched tensor assembly over algebraic-number coefficients"
 labels = []
-statement_role = "extend the locally proved pure-factor Galois equivariance of canonicalPureAlgebraicAssembly to arbitrary four canonical factor tensors using the fourfold multilinear/tensor universal property"
-local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyEquivariance.equivariant"
-status = "REDUCED_TO_ASSEMBLY_IDENTIFICATION"
+statement_role = "present the geometric switched monomial assembly as four nested Q-linear maps and prove its value on pure factors is canonicalPureAlgebraicAssembly; extensional identification and Galois equivariance then follow locally"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly"
+status = "OPEN"
 nonclaims = [
   "Galois equivariance is local once the assembly is fourfold Q-linear with the canonical pure-factor formula",
   "the remaining issue is identification of the geometric switched assembly with that canonical multilinear assembly",
@@ -2115,3 +2115,24 @@ nonclaims = [
   "adapter only",
   "does not identify the canonical multilinear assembly with the geometric switched monomial assembly"
 ]
+
+
+[[local_target]]
+name = "canonical pure formula identifies all fourfold multilinear assemblies"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.assemble_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "fourfold Q-multilinearity for both assemblies",
+  "same canonical pure-factor formula"
+]
+nonclaims = [
+  "formal fourfold tensor induction only",
+  "does not construct the geometric switched assembly"
+]
+
+[[local_target]]
+name = "extensional equality of canonical fourfold assembly maps"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.assemble_fun_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
