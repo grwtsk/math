@@ -125,7 +125,8 @@ theorem threeLiteralRecurrence_to_twoLiteral
       (countedSuccessFraction polarity2) := by
   apply clauseIndexedRecurrence_to_previous
     (k := 2) polarity3 polarity2
-  · simp
+  · rw [threeLiteralClauseThreshold]
+    norm_num
   · exact hrecurrence
   · exact htheta
 
@@ -142,7 +143,7 @@ theorem twoLiteralRecurrence_to_oneLiteral
       (countedSuccessFraction polarity1) := by
   apply clauseIndexedRecurrence_to_previous
     (k := 1) polarity2 polarity1
-  · simp
+  · rw [twoLiteralClauseThreshold]
   · exact hrecurrence
   · exact htheta
 
