@@ -1645,6 +1645,49 @@ The Riemann existence supplier remains external, and the repository still does n
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ai. Canonical tensor embedding lines now transfer to actual H1 Hodge type
+
+The weight-one comparison frontier has advanced from an opaque type-identification premise to a coordinate-preserving comparison.
+
+`CMWeightOneRiemannRealization.lean` now defines:
+
+~~~text
+canonicalTensorComplexCoordinate
+canonicalTensorComplexCoordinate_eq_zero_of_ne
+CanonicalTensorActualH1Comparison
+CanonicalTensorActualH1Comparison.isOfType_holomorphic
+CanonicalTensorActualH1Comparison.isOfType_antiholomorphic
+CanonicalTensorActualH1Comparison.isOfType_typeOfSign
+~~~
+
+For (tin Eotimes_{mathbf Q}E), the canonical complex coordinate at a Galois automorphism is obtained by the local Galois evaluation equivalence followed by the fixed complex embedding.
+
+The local source proves that if (t) belongs to the embedding eigenspace indexed by (	au), then every canonical complex coordinate away from (	au) vanishes.
+
+The only comparison datum then requested is a map
+
+[
+Eotimes_{mathbf Q}E
+longrightarrow
+H^1_{mathbf C}
+]
+
+whose actual (H^1_{mathbf C}) coordinates agree with those canonical tensor coordinates.
+
+From that coordinate compatibility, the sign of the selected CM row determines actual Hodge type locally:
+
+[
+v(	au)=+1 Rightarrow H^{1,0},
+qquad
+v(	au)=-1 Rightarrow H^{0,1}.
+]
+
+Equivalently, `isOfType_typeOfSign` converts the repository's formal sign-derived label into genuine actual (H^1_{mathbf C}) Hodge membership.
+
+Thus the remaining weight-one factor-typing bridge is now exactly the canonical-tensor-to-actual-H1 coordinate comparison. No separate Hodge-type assertion needs to be postulated.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
