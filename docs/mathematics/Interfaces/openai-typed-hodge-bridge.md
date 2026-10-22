@@ -474,6 +474,66 @@ What remains external from the manuscript's polarization paragraph is exactly:
 Thus alternating/nondegenerate trace-form algebra is no longer bundled with
 archimedean positivity.
 
+## 4e. Canonical eigenspaces form a complete internal direct sum
+
+The Galois evaluation equivalence also supplies explicit coordinate projectors.
+Transporting the standard coordinate projections back to
+\(E\otimes_k E\), the source proves:
+
+\[
+p_\sigma(U_\sigma)=U_\sigma,
+\qquad
+p_\sigma(U_\tau)=0\quad(\sigma\neq\tau),
+\qquad
+\sum_\sigma p_\sigma=\mathrm{id}.
+\]
+
+Therefore the canonical embedding-character eigenspaces form a genuine
+\`DirectSum.IsInternal\` decomposition.
+
+The declaration
+\`CMGaloisEigenlines.canonicalTypedEigenspaceDecomposition\`
+packages this complete direct sum together with the formal sign-derived
+weight-one type labels.
+
+So completeness of the embedding-line decomposition is no longer an external
+input. The remaining Hodge issue is semantic: prove that this labelled direct
+sum is the intended rational weight-one Hodge structure and then polarize it.
+
+## 4f. Coordinate positivity from a sign-controlled xi
+
+The local file
+\`GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean\`
+packages the exact manuscript sign condition as
+
+\[
+0<-v(\sigma)\operatorname{Im}\sigma(\xi)
+\]
+
+for every Galois embedding label. Under that hypothesis it defines
+
+\[
+Q_\xi(z)=
+\sum_\sigma
+\bigl(-v(\sigma)\operatorname{Im}\sigma(\xi)\bigr)
+|z_\sigma|^2
+\]
+
+and proves
+
+\[
+z\neq0\Longrightarrow Q_\xi(z)>0.
+\]
+
+Thus the finite positive-definiteness calculation is now local. What remains
+external is:
+
+1. construct a single \(\xi\) satisfying the required simultaneous
+   archimedean sign profile;
+2. identify \(Q_\xi\) with the complexified Hodge form
+   \(i\psi_\xi(u,\bar u)\) on the selected \((1,0)\) part;
+3. obtain an integral lattice and apply the Riemann criterion.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
