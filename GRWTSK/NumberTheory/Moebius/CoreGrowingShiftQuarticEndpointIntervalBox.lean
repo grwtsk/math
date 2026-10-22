@@ -96,7 +96,6 @@ theorem coreGrowingShiftQuarticEndpointActiveCellBoxIndex_mem
   have ht' := ht
   simp only [coreLongDeepDepths, Finset.mem_filter,
     Finset.mem_Ico] at ht'
-  have htY : t + 1 ≤ 2 ^ (j + 1) := by omega
   have hbY : b < 2 ^ (j + 1) := by
     have hbT : b < t + 1 := Finset.mem_range.mp hb
     omega
@@ -286,18 +285,18 @@ theorem coreGrowingShiftQuarticEndpointDepthMultiplicity_eq_supportCard
     have hxq := (Finset.mem_filter.mp hx).2
     have hyq := (Finset.mem_filter.mp hy).2
     rcases x with ⟨tx, ⟨kx, bx⟩⟩
-    rcases y with ⟨ty, ⟨ky, by⟩⟩
+    rcases y with ⟨ty, ⟨ky, by0⟩⟩
     change tx = ty at hdepth
     subst ty
     have hindices :
         (harmonicShiftLower j tx + kx, bx) =
-          (harmonicShiftLower j tx + ky, by) := by
+          (harmonicShiftLower j tx + ky, by0) := by
       exact hxq.trans hyq.symm
     simp only [Prod.mk.injEq] at hindices
     rcases hindices with ⟨hhk, hhb⟩
     have hk : kx = ky := by omega
     subst ky
-    subst by
+    subst by0
     rfl
   · intro t ht
     simp only [coreGrowingShiftQuarticEndpointDepthSupport,
