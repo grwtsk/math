@@ -54,7 +54,7 @@ import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserSource
 import GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy
-import GRWTSK.Data.Sampling.Descriptions
+import GRWTSK.Analysis.Sampling.Descriptions
 import GRWTSK.DynamicalSystems.Sequences.ApproximationReturn
 import GRWTSK.LinearAlgebra.CommonJ
 import GRWTSK.LinearAlgebra.CommonJCounterexamples
@@ -68,7 +68,7 @@ import GRWTSK.Analysis.Complex.ReflectionCounterexamples
 import GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
 import GRWTSK.Logic.FiniteCoverage
-import GRWTSK.Logic.FiniteSequences.PrefixCoverage
+import GRWTSK.Analysis.FiniteSequences.PrefixCoverage
 import GRWTSK.Logic.ProofEvidence.DirichletResponseStatus
 import GRWTSK.Logic.ProofEvidence.EnergyInterfaceEquivalence
 import GRWTSK.Logic.ProofEvidence.MoebiusPrimeShellStatus
@@ -93,7 +93,7 @@ import GRWTSK.NumberTheory.Moebius.FiniteResponseSum
 import GRWTSK.NumberTheory.Moebius.FiniteTranslationProduct
 import GRWTSK.NumberTheory.Moebius.GramDiagonalBound
 import GRWTSK.NumberTheory.Moebius.LaplaceHolomorphy
-import GRWTSK.NumberTheory.Moebius.LaplaceTransform
+import GRWTSK.Analysis.Moebius.LaplaceTransform
 import GRWTSK.NumberTheory.Moebius.LogarithmicResponse
 import GRWTSK.NumberTheory.Moebius.MertensPrimitive
 import GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct

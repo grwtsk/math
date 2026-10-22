@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
-import GRWTSK.Algebra.LinearAlgebra.Sturmian
+import GRWTSK.LinearAlgebra.LinearAlgebra.Sturmian
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeIDS
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.DirichletCut
