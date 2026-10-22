@@ -1,3 +1,6 @@
+# Historical original target Git blob: d768a21f48f1f25860412b2f0015cf124f4aa796.
+# Historical original parent: 85b583e91a620836ae807ba07c78614c5f45164c; tree fd1b72012f3b3745020caa7684b0b3e5662687d6.
+# Parent and containing-source identities below bind the repaired sources; source signatures are not kernel types.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-dyadic-triangular-correlation-369-v0.1"
 owner_repository = "grwtsk/math"
@@ -15,10 +18,10 @@ lean_toolchain_file = "lean-toolchain"
 lake_manifest_file = "lake-manifest.json"
 
 [source_binding]
-stacked_parent_revision = "85b583e91a620836ae807ba07c78614c5f45164c"
-stacked_parent_tree = "fd1b72012f3b3745020caa7684b0b3e5662687d6"
+stacked_parent_revision = "c0c2f7b951d0f40f7d7c023927001c1e8f22e1a9"
+stacked_parent_tree = "f7b023ac90d020ca87824b15540187a2d0c6e424"
 new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicTriangularMertensCorrelation.lean"
-new_module_git_blob = "c439fdd25f2c29ef21afcbe598aec7a0b2c0bf5a"
+new_module_git_blob = "907deb526615177fe87eecd2fda72cbcc342be18"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-triangular-mertens-correlation.md"
 mathematical_note_git_blob = "4ef52dfe1a6bc8f028988302f9743da9e0dae4ae"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
@@ -52,12 +55,12 @@ private_helper_count = 1
 
 [[inherited_targets]]
 path = "verification/rh-dyadic-ordered-pair-366-v0.1.toml"
-git_blob = "d0a623ae9e738a1f2896273188ed11dce14fc2c0"
+git_blob = "6253e8c776dc05df4106f9ad4bc71de55460a2c5"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicOrderedPairMertensCorrelation.lean"
-git_blob = "03d2207862b570dfc9ff18020475f7c13de6f713"
+git_blob = "4ebf13f2d10e325668905a904635d326f8d9f6af"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[upstream_sources]]

@@ -66,6 +66,7 @@ private theorem closed_prefix_succ (f : ℕ → ℝ) (n : ℕ) :
     omega
   have hnot : n + 1 ∉ Finset.Icc 1 n := by simp
   rw [hset, Finset.sum_insert hnot]
+  ac_rfl
 
 @[simp] theorem pickupMertensPrefix_zero_triangular :
     pickupMertensPrefix 0 = 0 := by
@@ -108,11 +109,10 @@ theorem pickupMertensPrefix_sq_eq_diagonal_add_triangular (n : ℕ) :
       simp [pickupMertensPrefix, mertensPrefixSquareDiagonal,
         mertensPrefixTriangularCorrelation]
   | succ n ih =>
-      rw [show Nat.succ n = n + 1 by rfl,
-        pickupMertensPrefix_succ_triangular,
+      rw [pickupMertensPrefix_succ_triangular,
         mertensPrefixSquareDiagonal_succ_triangular,
         mertensPrefixTriangularCorrelation_succ,
-        ih]
+        add_sq, ih]
       ring
 
 /-- The complete ordered-pair source is exactly the triangular source.  No
