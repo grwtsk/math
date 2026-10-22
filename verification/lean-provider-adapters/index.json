@@ -1,0 +1,33 @@
+{
+  "schema": "grwtsk.lean-provider-adapters/1",
+  "adapters": [
+    {
+      "module": "BitMatrix.Dynamics.Avalanche",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/3a/3aabaea1e6b94d5b07c708e43795b4c39aa5a298bf88964eeb2f1f83ff5ddf0c.lean",
+        "sha256": "3aabaea1e6b94d5b07c708e43795b4c39aa5a298bf88964eeb2f1f83ff5ddf0c",
+        "byte_count": 38421,
+        "git_blob": "c4c9395286e12721fa79dfc466b943d2ce3354d7"
+      },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/Dynamics/Avalanche.lean",
+        "sha256": "d2ade04a6313fdb6ff04a8cc72ec4a0a1130bb62a84553df03f4fe5d0877360a",
+        "byte_count": 2044,
+        "git_blob": "374a9c29ca9aa15196ae8d8538f382f6298eced3",
+        "mode": "100644"
+      },
+      "repaired_component": {
+        "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/HammingPropagationHistograms.lean",
+        "sha256": "bacbba5d9eb260f0cb7a4ca415c84fc7f09b22157eab66f484b922a5d906b257",
+        "byte_count": 10959,
+        "git_blob": "23f93b93b2708a144790b35a7fe25e13bb3426d6",
+        "theorem": "BitMatrix.Dynamics.Avalanche.propagation_first_moment_count",
+        "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+        "repair": "FINAL_FINITE_SUM_NORMALIZATION_ONLY"
+      },
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"
+    }
+  ]
+}
