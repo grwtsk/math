@@ -1,0 +1,53 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-mobius-log-squarefree-gcd-reduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogSquarefreeGCDReductionCore"
+
+[source_binding]
+parent_revision = "fb59dca733213b33765244b192d42ea74bb1d542"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / MOBIUS_SQUAREFREE_SUPPORT_REDUCTION_SOURCE_PROVED / SQUAREFREE_SHIFT_GCD_STRATIFICATION_SOURCE_PROVED / PRIMITIVE_COPRIME_REDUCED_MODULI_SOURCE_PROVED / SEVEN_EIGHTHS_SQUAREFREE_GCD_STRATIFIED_BOUND_OPEN"
+
+[closed]
+non_squarefree_mobius_terms_vanish = true
+squarefree_active_index_sum_identity = true
+squarefree_active_pair_block_identity = true
+active_modulus_positive = true
+active_modulus_squarefree = true
+pair_gcd_positive = true
+pair_gcd_squarefree = true
+pair_gcd_divides_shift = true
+primitive_reduced_moduli_coprime = true
+primitive_left_squarefree = true
+primitive_right_squarefree = true
+primitive_product_squarefree = true
+gcd_square_removal_factorization = true
+squarefree_shift_divisor_support = true
+gcd_class_fiberwise_identity = true
+squarefree_gcd_shift_identity = true
+squarefree_gcd_aggregate_identity = true
+supplier_forward_adapter = true
+supplier_reverse_adapter = true
+supplier_equivalence = true
+partial_discrepancy_adapter = true
+
+[frontier]
+remaining = "prove the signed X^(3/2) log^4 bound for the Fejer-weighted centered Mobius-log aggregate stratified by squarefree common divisors g|h and primitive coprime reduced moduli"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+MOBIUS_SQUAREFREE_SUPPORT_REDUCTION_SOURCE_PROVED = true
+SQUAREFREE_SHIFT_GCD_STRATIFICATION_SOURCE_PROVED = true
+PRIMITIVE_COPRIME_REDUCED_MODULI_SOURCE_PROVED = true
+SEVEN_EIGHTHS_SQUAREFREE_GCD_STRATIFIED_BOUND_PROVED = false
+SEVEN_EIGHTHS_MOBIUS_LOG_LCM_PROGRESSION_BOUND_PROVED = false
+SEVEN_EIGHTHS_MOBIUS_LOG_CONGRUENCE_BOUND_PROVED = false
+SEVEN_EIGHTHS_VON_MANGOLDT_SHIFT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
