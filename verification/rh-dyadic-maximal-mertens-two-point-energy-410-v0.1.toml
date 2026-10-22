@@ -1,3 +1,7 @@
+# Historical original target Git blob: f08d448933a12b3840ba4f10c25ec31f3f599998.
+# Historical original parent: b149ccd28da3fa6e9e43e1feebf0d56b410b84be; tree 22a77fe6d5e12f058a104ab78d1958942a4abfa7.
+# Historical original mathematical note Git blob: a8f25ff0d93550ce73861829a4d2f9bcf5dd6f56.
+# Exact maximal/quadratic equivalence is retained; the signed-packet direction is only a sufficient implication.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-dyadic-maximal-mertens-two-point-energy-410-v0.1"
 owner_repository = "grwtsk/math"
@@ -15,12 +19,12 @@ lean_toolchain_file = "lean-toolchain"
 lake_manifest_file = "lake-manifest.json"
 
 [source_binding]
-stacked_parent_revision = "b149ccd28da3fa6e9e43e1feebf0d56b410b84be"
-stacked_parent_tree = "22a77fe6d5e12f058a104ab78d1958942a4abfa7"
+stacked_parent_revision = "f445870c058bb13335ff83a2b589645968d70c23"
+stacked_parent_tree = "38acc89f8cb2c476d1fb00c4ce3b35a6b7951e6f"
 new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicMaximalMertensTwoPointEnergy.lean"
 new_module_git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-maximal-mertens-two-point-energy.md"
-mathematical_note_git_blob = "a8f25ff0d93550ce73861829a4d2f9bcf5dd6f56"
+mathematical_note_git_blob = "4e63bdc4119f5985032f1cfdd775d471bab4fade"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
 publication_status = "PUBLISHED_SOURCE_DRAFT"
 candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
@@ -53,17 +57,17 @@ private_helper_count = 0
 
 [[inherited_targets]]
 path = "verification/rh-dyadic-quadratic-mertens-two-point-prefix-405-v0.1.toml"
-git_blob = "bb32f667a2f6f51dd943fc837735ce9de58eb502"
+git_blob = "fa44de18ac4d9992b9e8454bb5b1c8ca56fec116"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicQuadraticMertensTwoPointPrefix.lean"
-git_blob = "b9a4f03a49b9be90ef03aa7ebd968b63b3bb13dd"
+git_blob = "3813cd9634d2f4986c042ab8b52d27ed78092825"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean"
-git_blob = "4775fc209bf8d01b238b193605bd0005929ed02d"
+git_blob = "2a84e63d5ae76a2d2a37cc9bd45818f32af997f7"
 status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[external_dependencies]]
@@ -95,7 +99,7 @@ half_open_shift_endpoint_required = true
 terminal_only_replacement_rejected = true
 fixed_shift_range_rejected = true
 canonical_maximal_energy_exactly_equivalent_to_quadratic_envelope = true
-canonical_maximal_energy_not_equivalent_to_signed_packet = true
+canonical_maximal_energy_only_sufficient_for_signed_packet = true
 previous_prefix_index_required = true
 ordered_pair_factor_two_required = true
 abel_terminal_term_inherited = true
