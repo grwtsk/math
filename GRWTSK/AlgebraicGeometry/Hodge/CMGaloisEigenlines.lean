@@ -186,6 +186,168 @@ theorem embeddingEigenspace_nonzero_aut (σ : E ≃ₐ[k] E) :
   exact embeddingEigenspace_nonzero k E j
 
 
+/-- The finite coordinate projector transported back through the Galois
+evaluation equivalence. -/
+noncomputable def coordinateProjector (j : Fin n) :
+    (E ⊗[k] E) →ₗ[E] (E ⊗[k] E) :=
+  (evaluationEquiv k E).symm.toLinearMap.comp
+    ((LinearMap.single E (fun _ : Fin n => E) j).comp
+      ((LinearMap.proj j).comp (evaluationEquiv k E).toLinearMap))
+
+/-- Evaluation of the transported coordinate projector is the corresponding
+single-coordinate vector. -/
+theorem evaluationEquiv_coordinateProjector
+    (j : Fin n) (t : E ⊗[k] E) :
+    evaluationEquiv k E (coordinateProjector k E j t) =
+      Pi.single j (evaluationEquiv k E t j) := by
+  ext i
+  by_cases hij : i = j
+  · subst i
+    simp [coordinateProjector, Pi.single_apply]
+  · simp [coordinateProjector, Pi.single_apply, hij]
+
+/-- Coordinate projection is scalar multiplication of the canonical
+eigenvector. -/
+theorem coordinateProjector_eq_smul_canonicalEigenvector
+    (j : Fin n) (t : E ⊗[k] E) :
+    coordinateProjector k E j t =
+      (evaluationEquiv k E t j) • canonicalEigenvector k E j := by
+  apply (evaluationEquiv k E).injective
+  rw [evaluationEquiv_coordinateProjector, map_smul,
+    evaluationEquiv_canonicalEigenvector]
+  ext i
+  by_cases hij : i = j
+  · subst i
+    simp
+  · simp [Pi.single_apply, hij]
+
+/-- Every coordinate projector lands in the matching embedding eigenspace. -/
+theorem coordinateProjector_mem
+    (j : Fin n) (t : E ⊗[k] E) :
+    coordinateProjector k E j t ∈
+      embeddingEigenspace (k := k) (embeddingCharacter k E j) := by
+  rw [coordinateProjector_eq_smul_canonicalEigenvector]
+  exact (embeddingEigenspace (k := k) (embeddingCharacter k E j)).smul_mem
+    _ (canonicalEigenvector_mem k E j)
+
+/-- The matching coordinate projector acts as the identity on its eigenspace. -/
+theorem coordinateProjector_same
+    (j : Fin n) {t : E ⊗[k] E}
+    (ht : t ∈ embeddingEigenspace (k := k) (embeddingCharacter k E j)) :
+    coordinateProjector k E j t = t := by
+  rw [embeddingEigenspace_eq_span k E j] at ht
+  obtain ⟨a, rfl⟩ := Submodule.mem_span_singleton.mp ht
+  rw [map_smul]
+  apply congrArg (fun u => a • u)
+  rw [coordinateProjector_eq_smul_canonicalEigenvector]
+  simp
+
+/-- A different coordinate projector vanishes on the selected eigenspace. -/
+theorem coordinateProjector_other
+    (i j : Fin n) (hij : i ≠ j)
+    {t : E ⊗[k] E}
+    (ht : t ∈ embeddingEigenspace (k := k) (embeddingCharacter k E j)) :
+    coordinateProjector k E i t = 0 := by
+  rw [coordinateProjector_eq_smul_canonicalEigenvector,
+    evaluationEquiv_apply, evaluation_offDiagonal_zero k E j i hij ht,
+    zero_smul]
+
+/-- The finite coordinate projectors sum to the identity. -/
+theorem sum_coordinateProjector (t : E ⊗[k] E) :
+    (∑ j : Fin n, coordinateProjector k E j t) = t := by
+  apply (evaluationEquiv k E).injective
+  rw [map_sum]
+  simp_rw [evaluationEquiv_coordinateProjector]
+  exact LinearMap.sum_single_apply (fun _ : Fin n => E) (evaluationEquiv k E t)
+
+/-- Character identity for the coordinate corresponding to one Galois
+automorphism. -/
+theorem embeddingCharacter_symm (σ : E ≃ₐ[k] E) :
+    embeddingCharacter k E ((galIndexEquiv k E).symm σ) = σ.toAlgHom := by
+  apply AlgHom.ext
+  intro a
+  simp [embeddingCharacter]
+
+/-- Coordinate projector indexed directly by the Galois automorphism. -/
+noncomputable def automorphismProjector (σ : E ≃ₐ[k] E) :
+    (E ⊗[k] E) →ₗ[E] (E ⊗[k] E) :=
+  coordinateProjector k E ((galIndexEquiv k E).symm σ)
+
+/-- The automorphism-indexed projector lands in the corresponding literal
+character eigenspace. -/
+theorem automorphismProjector_mem
+    (σ : E ≃ₐ[k] E) (t : E ⊗[k] E) :
+    automorphismProjector k E σ t ∈
+      embeddingEigenspace (k := k) σ.toAlgHom := by
+  rw [← embeddingCharacter_symm k E σ]
+  exact coordinateProjector_mem k E ((galIndexEquiv k E).symm σ) t
+
+/-- Matching automorphism projector is identity on its eigenspace. -/
+theorem automorphismProjector_same
+    (σ : E ≃ₐ[k] E) {t : E ⊗[k] E}
+    (ht : t ∈ embeddingEigenspace (k := k) σ.toAlgHom) :
+    automorphismProjector k E σ t = t := by
+  rw [← embeddingCharacter_symm k E σ] at ht
+  exact coordinateProjector_same k E ((galIndexEquiv k E).symm σ) ht
+
+/-- Distinct automorphism projectors annihilate one another's eigenspaces. -/
+theorem automorphismProjector_other
+    (σ τ : E ≃ₐ[k] E) (hστ : σ ≠ τ)
+    {t : E ⊗[k] E}
+    (ht : t ∈ embeddingEigenspace (k := k) τ.toAlgHom) :
+    automorphismProjector k E σ t = 0 := by
+  rw [← embeddingCharacter_symm k E τ] at ht
+  apply coordinateProjector_other k E
+  · exact fun h => hστ ((galIndexEquiv k E).symm.injective h)
+  · exact ht
+
+/-- The automorphism-indexed projectors sum to the identity. -/
+theorem sum_automorphismProjector (t : E ⊗[k] E) :
+    (∑ σ : E ≃ₐ[k] E, automorphismProjector k E σ t) = t := by
+  have hsum := Fintype.sum_equiv (galIndexEquiv k E)
+    (fun j : Fin n => coordinateProjector k E j t)
+    (fun σ : E ≃ₐ[k] E => automorphismProjector k E σ t)
+    (fun j => by simp [automorphismProjector])
+  rw [← hsum]
+  exact sum_coordinateProjector k E t
+
+/-- The canonical Galois embedding eigenspaces form a complete internal direct
+sum decomposition of the regular scalar extension. -/
+theorem canonicalEigenspaces_isInternal :
+    DirectSum.IsInternal
+      (fun σ : E ≃ₐ[k] E => embeddingEigenspace (k := k) σ.toAlgHom) := by
+  classical
+  apply DirectSum.isInternal_submodule_of_iSupIndep_of_iSup_eq_top
+  · apply (iSupIndep_iff_finsetSum_eq_zero_imp_eq_zero _).mpr
+    intro s v hv hz σ hσ
+    have hp := congrArg (automorphismProjector k E σ) hz
+    rw [map_sum, map_zero, Finset.sum_eq_single_of_mem σ hσ] at hp
+    · simpa only [automorphismProjector_same k E σ (hv σ hσ)] using hp
+    · intro τ hτ hτσ
+      exact automorphismProjector_other k E σ τ (Ne.symm hτσ) (hv τ hτ)
+  · apply top_unique
+    intro t _
+    rw [← sum_automorphismProjector k E t]
+    apply Submodule.sum_mem
+    intro σ _
+    exact (le_iSup
+      (fun τ : E ≃ₐ[k] E => embeddingEigenspace (k := k) τ.toAlgHom) σ)
+      (automorphismProjector_mem k E σ t)
+
+/-- Canonical complete character-eigenspace decomposition with formal
+sign-derived weight-one labels. -/
+noncomputable def canonicalTypedEigenspaceDecomposition
+    {conj : (E ≃ₐ[k] E) → (E ≃ₐ[k] E)}
+    (v : CMFourBalance.OddSignRow (E ≃ₐ[k] E) conj) :
+    CMEmbeddingEigenspaces.CharacterEigenspaceDecomposition
+      E E (E ⊗[k] E) (E ≃ₐ[k] E) conj v where
+  action := regularAction (k := k) (E := E) (C := E)
+  character := fun σ => σ.toAlgHom
+  line_finrank_one := fun σ => embeddingEigenspace_finrank_one_aut k E σ
+  line_nonzero := fun σ => embeddingEigenspace_nonzero_aut k E σ
+  typeAt := fun σ => CMEmbeddingLines.typeOfSign (v.value σ)
+  typeAt_eq := fun _ => rfl
+  decomposition := canonicalEigenspaces_isInternal k E
 /-- Package the canonical Galois embedding eigenspaces into the generic
 character-eigenline interface once a sign-compatible weight-one type
 assignment is supplied. One-dimensionality and nonvanishing are proved here;
