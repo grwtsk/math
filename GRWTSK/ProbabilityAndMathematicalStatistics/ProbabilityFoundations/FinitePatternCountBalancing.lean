@@ -210,4 +210,42 @@ theorem empiricalPattern_square_sum_eq_natCount
   rw [Finset.sum_div]
 
 
+
+/-- The full nonempty Walsh energy equals the empirical squared-count
+defect from the uniform cube law, with exact N² normalization.
+This is a deterministic identity for any nonempty finite sample. -/
+theorem nonemptyCorrelationEnergy_eq_natCount_defect
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool)
+    (hroots : 0 < roots.card) :
+    nonemptyCorrelationEnergy roots x =
+      ((Fintype.card (ι → Bool) : ℚ) *
+          (∑ a : ι → Bool,
+            (fullPatternNatCount roots x a : ℚ) ^ 2) -
+        (roots.card : ℚ) ^ 2) / (roots.card : ℚ) ^ 2 := by
+  classical
+  let q : ℚ := Fintype.card (ι → Bool)
+  have hq : q ≠ 0 := by
+    dsimp [q]
+    exact_mod_cast (Nat.ne_of_gt (Fintype.card_pos (α := ι → Bool)))
+  have hN : (roots.card : ℚ) ≠ 0 := by
+    exact_mod_cast Nat.ne_of_gt hroots
+  have htotal : (∑ a : ι → Bool,
+      (fullPatternNatCount roots x a : ℚ)) = (roots.card : ℚ) := by
+    exact_mod_cast fullPatternNatCount_total roots x
+  have hchi := chiSquareAgainstUniform_eq_energy roots x hroots
+  rw [← hchi]
+  unfold chiSquareAgainstUniform scaledPatternDeviation
+  simp_rw [empiricalPattern_eq_natCount_div]
+  dsimp [q]
+  simp_rw [sub_sq]
+  rw [Finset.sum_add_distrib, Finset.sum_sub_distrib]
+  simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]
+  simp_rw [mul_div_assoc]
+  rw [← Finset.mul_sum]
+  rw [htotal]
+  field_simp [hN, hq]
+  ring
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
