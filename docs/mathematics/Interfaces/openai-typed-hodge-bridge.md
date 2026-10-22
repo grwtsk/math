@@ -326,9 +326,14 @@ COMPLETE_EIGENSPACE_DECOMPOSITION
 ~~~
 
 `GRWTSK/AlgebraicGeometry/Hodge/CMGaloisIndex.lean` replaces the arbitrary
-conjugation map by the exact group-theoretic shape used for a Galois CM
-field: a selected central involution c with c^2=1 and g -> cg = gc.
-Odd sign rows are defined relative to this involution.
+conjugation map by a selected central involution c with c^2=1.
+
+`GRWTSK/AlgebraicGeometry/Hodge/CMNumberFieldIndex.lean` now instantiates
+that abstraction for an actual Galois CM number field using Mathlib's
+`NumberField.IsCMField.complexConj`. After restriction to Q the source proves
+involutivity and centrality against every rational field automorphism by
+testing both composites through a complex embedding. Thus the CM sign-indexing
+map g -> c*g = g*c is no longer a manuscript premise.
 
 `CMEmbeddingEigenspaces.lean` defines character eigenspaces for a
 commutative algebra action and a `CharacterEigenspaceDecomposition`
@@ -340,6 +345,9 @@ When G = Gal(E/k) and E/k is finite Galois, Mathlib's
 `IsGalois.card_aut_eq_finrank` gives
 
   dim_C V = [E:k].
+
+The concrete central-involution supplier is now local as
+`CMNumberFieldIndex.centralInvolution`.
 
 These are local linear/group-theoretic checks. They still do not construct
 the CM-field action on U(v)_Qbar, prove that its characters are exactly the
