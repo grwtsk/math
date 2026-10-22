@@ -230,3 +230,64 @@ import or merge has occurred.
 NO_ODD_RESIDUAL_DECAY / NO_DYADIC_CONTRACTION /
 CANONICAL_SHIFT_IMAGE_TRANSPORT_OPEN / ALL_ORDER_CHOWLA_OPEN /
 GUE_AND_RH_NONCLAIMS.**
+
+
+## 6. Subsequent exact shift-image and full subset transport
+
+**Follow-on source-only increment, 2026-10-22.**
+The finite type/character seam described as OPEN
+in section 4 has now been **source-drafted**, while
+still awaiting actual Lean compilation and trust replay.
+
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleOddLiftCanonicalTransport.lean`
+(blob `f0b7812e767098bf99fb9a885da9b5e05933c017`)
+constructs
+
+```text
+H' = Finset.image (fun h => 2*h+1) H,
+
+{h // h∈H} ≃ {j // j∈H'},
+
+Finset ({h // h∈H}) ≃ Finset ({j // j∈H'}).
+```
+
+The lift is injective, preserves all selected
+subset cardinalities and the empty/nonempty
+Walsh-character distinction, and reindexes
+each signed Liouville source product. It
+source-drafts the exact canonical identity
+
+```text
+oddLiftedAllOrderEnergy(M,H)
+ = liouvilleAllOrderEnergy(2M,H').
+```
+
+It consequently converts the previous inequality
+into the fully canonical arithmetic supplier result
+
+```text
+E_lambda(2M,H')
+ <= [E_lambda(M,H)+E_oddResidual(M,H)]/2
+```
+
+for M>0, with no loss of shift identities,
+sum terms or factors. The canonical cyclic
+TV consumer keeps its strict lifted-collar
+hypothesis `max(H')<2M`.
+
+Its own passive 12-module target,
+`verification/liouville-odd-lift-canonical-transport-630-v0.1.toml`,
+inventories 101 theorem and 44 definition
+heads. Full review:
+`docs/reviews/chowla-sofic-canonical-odd-lift-transport-630.md`.
+
+**Only the FINITE TYPE seam advanced**: the
+genuinely arithmetic higher-order odd-residual
+cancellation supplier is still open.
+No Lean/Lake/kernel/replay was performed;
+the previous sharp M=1,H={0} counterexample
+still demonstrates noncontraction.
+
+**SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+CANONICAL_SOURCE_TRANSPORT_DRAFTED /
+ODD_RESIDUAL_CANCELLATION_OPEN.**
