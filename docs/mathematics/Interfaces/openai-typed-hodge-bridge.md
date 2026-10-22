@@ -728,6 +728,45 @@ over the finite set of conjugate-pair representatives.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4j. Finite normalization of one conjugate column pair
+
+The inner switch recursion is now represented by
+
+~~~text
+PairedColumnReach
+exists_pairedColumnReach_corrects
+~~~
+
+in \`CMFourFactorSwitchCombinatorics.lean\`.
+
+For one selected column \(g\), assuming the current and target matrices are
+odd, \(\pm1\)-valued, and have the same column sum, the source uses strong
+induction on the mismatch count to obtain a finite chain of conjugate-paired
+two-row switches ending at a matrix \(z\) with
+
+\[
+z_i(g)=y_i(g),
+\qquad
+z_i(cg)=y_i(cg)
+\]
+
+for every row \(i\).
+
+The theorem also carries the invariants required by the outer induction:
+
+- \(z\) is still odd;
+- every entry is still \(\pm1\);
+- every column sum is unchanged from the original matrix.
+
+Thus the inner while-loop of the manuscript's column-correction argument has
+been isolated locally.  The remaining finite combinatorial obligation is now
+only the outer traversal over one representative from each conjugate column
+pair.  Since each inner normalization leaves unrelated columns unchanged, that
+outer step is a finite bookkeeping induction rather than a new arithmetic
+argument.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
