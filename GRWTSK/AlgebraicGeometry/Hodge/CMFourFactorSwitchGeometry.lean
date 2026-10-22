@@ -349,6 +349,34 @@ structure AtomicTransitionAssemblySupplier
       (∀ r : I, r ≠ i → r ≠ j → TwoFactorIdentityWitness (x r)) →
       AlgebraicTransitionWitness x (switchConjugatePair conj x g i j)
 
+/-- Invariant-aware atomic switch supplier.
+
+Unlike the older opaque atomic supplier, this interface carries the exact
+source invariants needed to construct the canonical four-row profile:
+sign-valuedness, oddness, and fixed-point-freeness at the selected conjugate
+coordinate. -/
+structure InvariantAtomicSwitchTransitionSupplier
+    (conj : G → G)
+    (target : I → G → ℤ) where
+  realize :
+    ∀ (x : I → G → ℤ)
+      (hxsign : ∀ r h, IsSign (x r h))
+      (hxodd : IsOddMatrix conj x)
+      (g : G)
+      (hg : g ≠ conj g)
+      (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
+      (j : NegPosMismatch (fun r => x r g) (fun r => target r g)),
+      AlgebraicTransitionWitness x
+        (switchConjugatePair conj x g i.1 j.1)
+
+/-- Invariant-aware geometric supplier package. -/
+structure InvariantSwitchGeometrySupplier
+    (conj : G → G)
+    (target : I → G → ℤ) where
+  identity : IdentityTransitionSupplier
+  atomic : InvariantAtomicSwitchTransitionSupplier conj target
+  composition : TransitionCompositionSupplier
+
 /-- One elementary conjugate-paired switch gives an algebraic transition.
 
 This is the exact local geometric content that must be supplied by the
@@ -744,6 +772,56 @@ structure SwitchGeometrySupplier
   identity : IdentityTransitionSupplier
   atomic : AtomicSwitchTransitionSupplier conj target
   composition : TransitionCompositionSupplier
+
+/-- Invariant-aware finite switch-chain assembly.
+
+The sign and oddness invariants are propagated locally through every atomic
+switch.  Fixed-point-freeness of the selected conjugate coordinate is derived
+from oddness plus the selected mismatch row, so no extra global assumption is
+introduced. -/
+def transitionOfReachWithInvariants
+    (conj : G → G)
+    (hconj : Function.Involutive conj)
+    (target : I → G → ℤ)
+    (S : InvariantSwitchGeometrySupplier conj target)
+    {x z : I → G → ℤ}
+    (hxsign : ∀ r h, IsSign (x r h))
+    (hxodd : IsOddMatrix conj x)
+    (h : PairedMatrixReach conj target x z) :
+    AlgebraicTransitionWitness x z := by
+  induction h generalizing x with
+  | refl x =>
+      exact S.identity.realize x
+  | @step x z g i j hrest ih =>
+      have hg : g ≠ conj g :=
+        conj_ne_self_of_row conj x hxsign hxodd i.1 g
+      let x' := switchConjugatePair conj x g i.1 j.1
+      have hx'sign : ∀ r h, IsSign (x' r h) := by
+        simpa [x'] using
+          switchConjugatePair_isSign conj x hxsign g i.1 j.1
+      have hx'odd : IsOddMatrix conj x' := by
+        simpa [x'] using
+          switchConjugatePair_odd conj hconj x hxodd g hg i.1 j.1
+      exact S.composition.compose
+        (S.atomic.realize x hxsign hxodd g hg i j)
+        (ih hx'sign hx'odd)
+
+/-- Equal column sums now feed the invariant-aware geometric path directly,
+with no ad hoc reconstruction of sign/oddness hypotheses at the atomic layer. -/
+def transitionOfEqualColumnSumsWithInvariants
+    (conj : G → G)
+    (hconj : Function.Involutive conj)
+    (x y : I → G → ℤ)
+    (S : InvariantSwitchGeometrySupplier conj y)
+    (hxsign : ∀ r g, IsSign (x r g))
+    (hysign : ∀ r g, IsSign (y r g))
+    (hxodd : IsOddMatrix conj x)
+    (hyodd : IsOddMatrix conj y)
+    (hsum : ∀ g, ∑ r, x r g = ∑ r, y r g) :
+    AlgebraicTransitionWitness x y :=
+  transitionOfReachWithInvariants conj hconj y S hxsign hxodd
+    (pairedMatrixReach_of_equal_column_sums
+      conj hconj x y hxsign hysign hxodd hyodd hsum)
 
 /-- A finite combinatorial switch chain can be assembled into one global
 algebraic transition witness once the geometric identity, atomic-switch, and
