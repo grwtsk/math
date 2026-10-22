@@ -128,8 +128,8 @@ theorem riemannHypothesis
 
 end DiagonalPositiveGramLimit
 
-/-- Pointwise polarized convergence. It is stronger than the diagonal profile and is
-kept distinct from operator-norm, trace-norm, determinant, local, and sofic modes. -/
+/-- Pointwise polarized convergence; the explicit converse is in WeilPolarization.
+It gives no uniform-in-vector, operator-norm, trace-norm, determinant or sofic limit. -/
 structure PolarizedPositiveGramLimit
     {T : Type*} [AddCommGroup T] [Module ℂ T]
     {space : WeilTestSpace T}
@@ -165,7 +165,7 @@ def toDiagonal
     have hre :=
       (Complex.continuous_re.tendsto (form.toFun f f)).comp
         (limit.tendsto_polarized f f)
-    simpa [PositiveGramFamily.diagonal, PositiveGramFamily.gram,
+    simpa only [Function.comp_def, PositiveGramFamily.diagonal, PositiveGramFamily.gram,
       WeilHermitianForm.diagonal] using hre
 
 /-- Polarized positive-Gram convergence has the same conditional RH endpoint. -/
