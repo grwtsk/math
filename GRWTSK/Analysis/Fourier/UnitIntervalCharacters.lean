@@ -47,8 +47,8 @@ theorem unitCharacter_add (m n : ℤ) (x : ℝ) :
 
 @[continuity, fun_prop]
 theorem continuous_unitCharacter (m : ℤ) : Continuous (unitCharacter m) := by
-  simp only [unitCharacter, fourier_coe_apply]
-  fun_prop
+  unfold unitCharacter
+  exact (map_continuous (fourier m)).comp (AddCircle.continuous_mk' (1 : ℝ))
 
 /-- Every integer character is interval integrable on the unit interval. -/
 theorem intervalIntegrable_unitCharacter (m : ℤ) :
@@ -58,7 +58,7 @@ theorem intervalIntegrable_unitCharacter (m : ℤ) :
 /-- The integral is the zero-frequency coordinate of Mathlib's Fourier
 orthonormality theorem. -/
 theorem integral_unitCharacter_eq_single (m : ℤ) :
-    (∫ x : ℝ in 0..1, unitCharacter m x) = Pi.single m 1 0 := by
+    (∫ x : ℝ in 0..1, unitCharacter m x) = (Pi.single m (1 : ℂ) : ℤ → ℂ) 0 := by
   have h := congrFun (fourierCoeff_fourier (T := (1 : ℝ)) m) 0
   rw [fourierCoeff_eq_intervalIntegral
     (fourier (T := (1 : ℝ)) m) 0 0] at h

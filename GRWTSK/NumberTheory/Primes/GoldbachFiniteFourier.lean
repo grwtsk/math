@@ -3,8 +3,8 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Fourier.FiniteAdditiveProjector
 import GRWTSK.NumberTheory.Primes.GoldbachWeighted
-import Mathlib.Basic.Complex.BigOperators
-import Mathlib.Tactic.Omega
+import Mathlib.Data.Complex.BigOperators
+import Mathlib.Tactic
 
 set_option autoImplicit false
 
