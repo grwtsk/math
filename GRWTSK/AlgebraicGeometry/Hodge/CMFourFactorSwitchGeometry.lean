@@ -1102,8 +1102,12 @@ def SupportedCMFourEmbeddingLineVectors.scalarTransport
     vector_inclusion := fun r =>
       D.support.scalarTransportLocal_inclusion σ r
     character_restriction := fun r => by
-      rw [AlgEquiv.restrictNormal_mul]
+      ext x
+      apply Subtype.ext
+      rw [AlgEquiv.restrictNormal_commutes]
+      rw [AlgEquiv.restrictNormal_commutes]
       rw [D.support.character_restriction r]
+      rfl
   }
 
 /-- The transported global vectors remain represented by local vectors in the
