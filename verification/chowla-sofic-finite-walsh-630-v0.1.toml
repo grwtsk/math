@@ -1,0 +1,114 @@
+# Passive, source-bound mathematical verification target.
+# It is NOT a local or Noeaaeue execution receipt.
+schema = "grwtsk-math-replay-target-v1"
+id = "chowla-sofic-finite-walsh-630-v0.1"
+owner_repository = "grwtsk/math"
+issue = 630
+lean_toolchain_file = "lean-toolchain"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "isolated-source-module"
+module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns"
+source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
+requires_clean_checkout = true
+requires_exact_source_content = true
+requires_exact_type_inspection = true
+requires_kernel_checked_proof_terms = true
+requires_axiom_audit = true
+requires_all_listed_declarations = true
+requires_root_import = false
+full_library_build_required = false
+operational_receipts_are_external = true
+
+[source_binding]
+supplied_by = "external review or Noeaaeue replay"
+require_single_repository_revision = true
+require_matching_commit_tree_module_and_target_blobs = true
+require_toolchain_and_manifest_blob_ids = true
+manifest_is_not_self_referential = true
+
+[definitions]
+expected = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalPattern",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityLeft",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityRight",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityThird",
+]
+
+[theorems]
+required = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign_match",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternProduct_eq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.rawWalsh_patternCountOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalPattern_walsh",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_split",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_agree_off",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCount_difference_supported",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parity_pairwise_not_threewise_fixture",
+]
+exact_count = 8
+requires_exact_types = true
+requires_full_axiom_inspection = true
+
+[trust]
+allowed_axioms = []
+reject_sorry = true
+reject_native_decide = true
+reject_unsafe_and_untracked_native_code = true
+reject_unavailable_audit_as_success = true
+require_transitive_import_review = true
+require_all_theorem_proof_terms = true
+
+[[hostile_controls]]
+id = "empty-character"
+must_preserve = "Every subset including empty contributes to the exact Walsh sum; the empty coefficient is sample size."
+[[hostile_controls]]
+id = "pairwise-is-not-full-independence"
+must_preserve = "The 4-sample fixture has all one- and two-point moments zero but nonzero 3-point moment."
+[[hostile_controls]]
+id = "boundary-source-identity"
+must_preserve = "Off-exception matching requires same actual root and every selected Boolean coordinate."
+[[hostile_controls]]
+id = "distinct-arithmetic-shifts"
+must_preserve = "No fixed or growing affine-shift Chowla theorem is constructed or imported by this generic finite module."
+[[hostile_controls]]
+id = "no-probabilistic-upgrade"
+must_preserve = "Chi-square, entropy and TV inequalities remain written derivations, not theorem declarations in this target."
+[[hostile_controls]]
+id = "no-spectral-upgrade"
+must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
+
+[acceptance]
+requires_clean_selected_module_build = true
+requires_zero_errors_or_warnings = true
+requires_exact_declaration_inventory_reconciliation = true
+requires_mathematical_statement_comparison = true
+requires_axiom_trust_report = true
+requires_external_execution_and_audit_receipt = true
+source_file_existence_alone_is_insufficient = true
+
+[evidence]
+authored_status = "SOURCE_DRAFT"
+compiler_status = "NOT_RUN"
+kernel_status = "NOT_KERNEL_AUDITED"
+no_lake_or_lean_invocation_claimed = true
+no_public_root_import_claimed = true
+
+[nonclaims]
+claims = [
+  "all-orders or fixed-order Chowla",
+  "Liouville distribution limits",
+  "growing-window uniform correlation energy",
+  "sofic action existence or spectral convergence",
+  "total-variation or entropy inequalities already proved in Lean",
+  "Montgomery pair correlation or GUE",
+  "Riemann hypothesis",
+  "native Lean, Lake, CI or independent replay success",
+]
