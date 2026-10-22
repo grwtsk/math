@@ -307,6 +307,45 @@ Those statements remain bound to `eq:cm-types` and
 `eq:cm-label-conjugation`. Scalar descent and algebraicity remain separate.
 The local source remains SOURCE_DRAFT / NOT_RUN.
 
+## 4b. CM Galois indexing and complete eigenspace decomposition
+
+The local interface now separates four increasingly strong realization states.
+
+~~~text
+SIGN_PROFILE
+  odd +/-1 rows with four-label balance
+
+LINEAR_LINE_PROFILE
+  actual one-dimensional subspaces with sign-compatible type labels
+
+CHARACTER_EIGENLINE_PROFILE
+  those subspaces are exact eigenspaces for algebra characters
+
+COMPLETE_EIGENSPACE_DECOMPOSITION
+  the character eigenspaces form an internal direct sum of the ambient space
+~~~
+
+`GRWTSK/AlgebraicGeometry/Hodge/CMGaloisIndex.lean` replaces the arbitrary
+conjugation map by the exact group-theoretic shape used for a Galois CM
+field: a selected central involution c with c^2=1 and g -> cg = gc.
+Odd sign rows are defined relative to this involution.
+
+`CMEmbeddingEigenspaces.lean` defines character eigenspaces for a
+commutative algebra action and a `CharacterEigenspaceDecomposition`
+carrying `DirectSum.IsInternal`. For finite labels it proves
+
+  dim_C V = |G|.
+
+When G = Gal(E/k) and E/k is finite Galois, Mathlib's
+`IsGalois.card_aut_eq_finrank` gives
+
+  dim_C V = [E:k].
+
+These are local linear/group-theoretic checks. They still do not construct
+the CM-field action on U(v)_Qbar, prove that its characters are exactly the
+embeddings, or prove scalar-conjugation transport. Those remain external
+realization premises.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
