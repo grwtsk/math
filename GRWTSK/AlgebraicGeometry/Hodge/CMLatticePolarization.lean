@@ -170,7 +170,7 @@ theorem integralPairing_self
     (X : SignControlledXi E v)
     (a : Fin n → ℤ) :
     integralPairing E X a a = 0 := by
-  apply Int.cast_injective
+  apply Int.cast_injective (α := ℚ)
   rw [← scaled_tracePairing_lattice_integral E X]
   rw [tracePairing_self E X.toTracePolarizationData]
   simp
