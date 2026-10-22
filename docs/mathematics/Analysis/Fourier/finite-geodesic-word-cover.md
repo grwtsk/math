@@ -5,7 +5,7 @@
 - Owner: [grwtsk/math#687](https://github.com/grwtsk/math/issues/687).
 - Parent: [draft PR #677](https://github.com/grwtsk/math/pull/677) at exact head f508f376bad1558440c755003ff65e19c5648612.
 - Upstream exact error interface: #674 (three-error finite trace), #665 (Fourier support), #661 (iterate cutoff), #653 (modular alias), #649 (finite character).
-- New module: GRWTSK/Analysis/Fourier/FiniteGeodesicWordCover.lean, initially reviewed source blob cb0bb62a17cdebc30bc5977217b57767b8707acc.
+- New module: GRWTSK/Analysis/Fourier/FiniteGeodesicWordCover.lean, initially reviewed source blob d5cab0de6fceccc806cc3337c5aad1627acecd3a.
 - Optional route gate: #159. Replay/trust: #100. Spectral and arithmetic targets: #121, #168, #516, RH #15.
 
 ## 1. An actual finite search space rather than a free finite set
@@ -101,6 +101,10 @@ E_{\rm alias}^{S_{\rm decoded}}(K,q).
 \]
 
 The source-level theorem \`bounded_word_trace_error_le_alias\` consumes #674's \`finite_full_universe_error_le_alias_of_support\` directly. It **does not discharge** modular aliases and **does not identify** the finite sum with a Selberg trace. Exact equality also needs the independent \`NoAlias\` input already described in #653.
+
+### Finite positive/hostile decoding fixture
+
+The source also supplies a deliberately **non-geometric** example. For its one-element abstract source type `PUnit`, with finite Bool word codes of maximum length \(L=1\), `toyWordGate` decodes *every* word to the same source ID. The codes for the empty word and a nonempty one-letter word are distinct, but their decoded outputs coincide. `toy_distinct_codes_same_output` records this noninjectivity, and `toy_decodedCandidates_eq_univ` checks that the finite candidate image contains that one ID exactly once. This is a real positive test of the correct `image/eraseNone` construction, not a primitive-geodesic example. It must not be used to certify a surface group: the empty word in a genuine torsion-free hyperbolic surface group represents the identity, not a primitive closed geodesic.
 
 ## 4. What a genuine compact-surface supplier must still prove
 
