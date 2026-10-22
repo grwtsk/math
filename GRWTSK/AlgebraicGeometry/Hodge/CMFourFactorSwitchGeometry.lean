@@ -322,7 +322,7 @@ structure AmpleClassHodgeRiemannSupplier
 /-- An ample-class Hodge--Riemann supplier canonically gives the abstract
 positive-pairing package used by the local nonvanishing lemmas. -/
 def AmpleClassHodgeRiemannSupplier.toPositiveConjugatePairing
-    (D : GeometricMiddlePairingData V)
+    {D : GeometricMiddlePairingData V}
     (S : AmpleClassHodgeRiemannSupplier D) :
     PositiveConjugatePairing V where
   pairing := D.pairing
@@ -354,10 +354,10 @@ structure AmpleClassMiddlePairingComparison where
 /-- The exact Hodge--Riemann supplier constructs the previously-declared
 ample-class comparison package. -/
 def AmpleClassHodgeRiemannSupplier.toComparison
-    (D : GeometricMiddlePairingData V)
+    {D : GeometricMiddlePairingData V}
     (S : AmpleClassHodgeRiemannSupplier D) :
     AmpleClassMiddlePairingComparison V where
-  pairingData := S.toPositiveConjugatePairing D
+  pairingData := S.toPositiveConjugatePairing
   beta := D.beta
   beta_ne_zero := D.beta_ne_zero
   gamma := D.gamma
@@ -379,10 +379,10 @@ theorem AmpleClassMiddlePairingComparison.q_ne_zero
 /-- Therefore the Hodge--Riemann supplier is exactly sufficient to prove
 the geometric middle scalar nonzero. -/
 theorem AmpleClassHodgeRiemannSupplier.q_ne_zero
-    (D : GeometricMiddlePairingData V)
+    {D : GeometricMiddlePairingData V}
     (S : AmpleClassHodgeRiemannSupplier D) :
     D.q ≠ 0 :=
-  (S.toComparison D).q_ne_zero
+  S.toComparison.q_ne_zero
 
 /-- A finite product of nonzero middle pairing scalars is nonzero. -/
 theorem product_middlePairing_ne_zero
