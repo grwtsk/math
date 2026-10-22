@@ -449,6 +449,20 @@ theorem normalized_antipodal_character_term
       ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) hM]
   ring
 
+/-- The normalized complete powerset character sum is the sum of
+its separately normalized signed coefficients. The denominator
+M² is distributed only after the finite sum is reindexed. -/
+theorem normalized_powerset_character_sum
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M)
+    (g : Finset ℕ → ℕ → ℕ → ℚ) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+        ∑ S ∈ H.powerset, g S p.1 p.2) / (M : ℚ) ^ 2) =
+      ∑ S ∈ H.powerset,
+        ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          g S p.1 p.2) / (M : ℚ) ^ 2) := by
+  rw [sum_powerset_product_commute]
+  rw [Finset.sum_div]
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
