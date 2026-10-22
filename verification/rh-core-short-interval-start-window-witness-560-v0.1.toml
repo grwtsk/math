@@ -1,0 +1,40 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-start-window-witness-560-v0.1"
+owner_repository = "grwtsk/math"
+issue = 560
+parent_issue = 557
+parent_pr = 558
+status = "LITERATURE_REVIEWED_WITNESS_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalStartWindowWitness"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalStartWindowWitness"
+
+[source_binding]
+stacked_parent_revision = "999f99e05f25aedb48e5b84abd7bec13c1b276e9"
+candidate_branch = "research/rh-start-window-560"
+theorem_source_commit = "3df8433de73670184cf353f13c8a0312a564af4b"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalStartWindowWitness.lean"
+theorem_source_git_blob = "6bbb99187f6777095194efed5c74a9eeb059bd36"
+
+[witness]
+class = "START_WINDOW_LOCALIZATION_MISMATCH"
+direct_current_short_interval_adapter = false
+theorem_level_nonimplication_claimed = false
+
+[selected_increment]
+lower = "harmonicStartWindowLower"
+upper = "harmonicStartWindowUpper"
+start = "harmonicShortIntervalStart"
+window_identity = "harmonicStartWindow_eq_image_range"
+cardinality = "harmonicStartWindow_card"
+scope = "MacroscopicStartWindowShortIntervalScope"
+adapter = "MacroscopicStartWindowToCoreL1Adapter"
+conditional_endpoint = "riemannHypothesis_of_macroscopicStartWindowAdapter"
+
+[evidence_states]
+literature_reviewed = true
+witness = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
