@@ -1917,6 +1917,38 @@ The remaining independent assembly-specific theorem is scalar-conjugation natura
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ap. Scalar-conjugation naturality is moved entirely to algebraic coefficients
+
+The final assembly-naturality boundary has been sharpened again.
+
+`CMFourFactorSwitchGeometry.lean` now introduces:
+
+~~~text
+FourfoldAlgebraicAssemblyData
+FourfoldAlgebraicAssemblyEquivariance
+FourfoldAlgebraicAssemblyData.toMonomialAssemblyData
+~~~
+
+The switched fourfold assembly is now modeled first over `AlgebraicNumbers`, before coefficient inclusion into (mathbf C).
+
+This matters because scalar conjugation and factor transport then live in the same coefficient category. The only remaining naturality statement is the exact equivariance equation
+
+[
+sigmaigl(operatorname{assemble}(v_1,v_2,v_3,v_4)igr)
+=
+operatorname{assemble}(sigma v_1,sigma v_2,sigma v_3,sigma v_4).
+]
+
+Factorwise transport of each (v_i) is already local in `CMEmbeddingTransport`.
+
+Once algebraic-level equivariance is supplied, `toMonomialAssemblyData` applies the existing coefficient-inclusion map and reconstructs the earlier complexified `FourfoldMonomialAssemblyData`, including its full `scalar_conjugate_eq` field.
+
+Thus the previous mixed-coefficient scalar-conjugation premise has been reduced to a single algebraic multilinear naturality theorem.
+
+The Hodge-membership branch remains separate: actual (H^{2,2}) membership maps to the descent Hodge subspace through the explicit comparison/identification interfaces from the previous increment.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
