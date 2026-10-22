@@ -909,6 +909,42 @@ theorem ActualFourfoldMonomialGeneratorIdentification.assembled_mem_hodge
   exact C.mem_hodge_of_mem_H22
     (R.canonicalPureTensor_mem_H22 I.alignment)
 
+/-- One realized Hodge witness for a descent-side monomial generator.
+
+The finite Galois CM field is part of the witness.  This is essential because
+different scalar conjugates of an algebraic-number tensor need not be handled
+inside one fixed finite CM field. -/
+structure RealizedMonomialGeneratorHodgeWitness
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (assembledGenerator : ℂ ⊗[ℚ] V) where
+  E : Type*
+  [E_field : Field E]
+  [E_numberField : NumberField E]
+  [E_isCMField : IsCMField E]
+  [E_isGalois : IsGalois ℚ E]
+  v₁ : CMNumberFieldIndex.OddSignRow E
+  v₂ : CMNumberFieldIndex.OddSignRow E
+  v₃ : CMNumberFieldIndex.OddSignRow E
+  v₄ : CMNumberFieldIndex.OddSignRow E
+  factors : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄
+  hodgeRule : FourfoldActualHodgeTensorRule factors
+  comparison :
+    ActualFourfoldToMonomialComparison hodgeRule hodgeSubspace
+  identification :
+    ActualFourfoldMonomialGeneratorIdentification
+      comparison assembledGenerator
+
+/-- A realized generator witness yields descent-side Hodge membership locally. -/
+theorem RealizedMonomialGeneratorHodgeWitness.assembled_mem_hodge
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {assembledGenerator : ℂ ⊗[ℚ] V}
+    (W : RealizedMonomialGeneratorHodgeWitness
+      hodgeSubspace assembledGenerator) :
+    assembledGenerator ∈ hodgeSubspace :=
+  W.identification.assembled_mem_hodge
+
 /-- Generic fourfold Hodge tensor-product compatibility.
 
 The isOfType predicate records actual weight-one Hodge membership of a
@@ -977,6 +1013,49 @@ theorem TransportedFourFactorHodgeTyping.assembled_mem_h22
   R.assemble_mem_h22
     (transported σ) (T.typeAt σ)
     (T.factor_type σ) (T.p_two σ) (T.q_two σ)
+
+/-- Family of finite-CM realizations for every scalar-conjugated assembled
+generator.
+
+The finite CM field is allowed to vary with the scalar automorphism. -/
+structure TransportedGeneratorRealizationFamily
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldMonomialAssemblyData factors tensor)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  realize :
+    ∀ σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers,
+      RealizedMonomialGeneratorHodgeWitness
+        hodgeSubspace
+        (D.assemble ((factors.scalarTransport σ).vector))
+
+/-- A realization family supplies the exact transported-generator Hodge package
+consumed by the orbit-span/descent pipeline. -/
+def TransportedGeneratorRealizationFamily.toTransportedGeneratorHodgeData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    {D : FourfoldMonomialAssemblyData factors tensor}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (F : TransportedGeneratorRealizationFamily D hodgeSubspace) :
+    TransportedMonomialGeneratorHodgeData D hodgeSubspace where
+  generator_mem := fun σ => (F.realize σ).assembled_mem_hodge
 
 /-- Exact Hodge-realization input for one transported monomial generator.
 
