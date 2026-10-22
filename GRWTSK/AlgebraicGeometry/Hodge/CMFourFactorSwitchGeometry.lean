@@ -369,14 +369,6 @@ structure InvariantAtomicSwitchTransitionSupplier
       AlgebraicTransitionWitness x
         (switchConjugatePair conj x g i.1 j.1)
 
-/-- Invariant-aware geometric supplier package. -/
-structure InvariantSwitchGeometrySupplier
-    (conj : G → G)
-    (target : I → G → ℤ) where
-  identity : IdentityTransitionSupplier
-  atomic : InvariantAtomicSwitchTransitionSupplier conj target
-  composition : TransitionCompositionSupplier
-
 /-- One elementary conjugate-paired switch gives an algebraic transition.
 
 This is the exact local geometric content that must be supplied by the
@@ -763,6 +755,14 @@ structure TransitionCompositionSupplier where
       AlgebraicTransitionWitness x y →
       AlgebraicTransitionWitness y z →
       AlgebraicTransitionWitness x z
+
+/-- Invariant-aware geometric supplier package. -/
+structure InvariantSwitchGeometrySupplier
+    (conj : G → G)
+    (target : I → G → ℤ) where
+  identity : IdentityTransitionSupplier
+  atomic : InvariantAtomicSwitchTransitionSupplier conj target
+  composition : TransitionCompositionSupplier
 
 /-- The exact two geometric suppliers required after finite combinatorial
 connectivity. -/
