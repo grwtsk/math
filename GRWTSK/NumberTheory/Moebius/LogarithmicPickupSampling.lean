@@ -155,7 +155,7 @@ theorem weighted_sampling_error_integrable {σ : ℝ} (hσ : -1 < σ) :
     IntegrableOn (fun u : ℝ ↦
       Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2) (Ici 0) := by
   have he : IntegrableOn (fun u : ℝ ↦ Real.exp (-(σ + 1) * u)) (Ici 0) :=
-    integrableOn_Ici_iff_integrableOn_Ioi.mpr
+    (integrableOn_Ici_iff_integrableOn_Ioi (by finiteness)).mpr
       (integrableOn_exp_mul_Ioi (by linarith) 0)
   apply he.mono' (weighted_sampling_error_measurable σ).aestronglyMeasurable
   filter_upwards [ae_restrict_mem measurableSet_Ici] with u hu
@@ -168,7 +168,7 @@ theorem weighted_sampling_error_integral_le {σ : ℝ} (hσ : -1 < σ) :
     (∫ u in Ici (0 : ℝ),
       Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2) ≤ 1 / (σ + 1) := by
   have he : IntegrableOn (fun u : ℝ ↦ Real.exp (-(σ + 1) * u)) (Ici 0) :=
-    integrableOn_Ici_iff_integrableOn_Ioi.mpr
+    (integrableOn_Ici_iff_integrableOn_Ioi (by finiteness)).mpr
       (integrableOn_exp_mul_Ioi (by linarith) 0)
   calc
     _ ≤ ∫ u in Ici (0 : ℝ), Real.exp (-(σ + 1) * u) := by
@@ -178,7 +178,7 @@ theorem weighted_sampling_error_integral_le {σ : ℝ} (hσ : -1 < σ) :
     _ = 1 / (σ + 1) := by
       rw [integral_Ici_eq_integral_Ioi,
         integral_exp_mul_Ioi (by linarith : -(σ + 1) < 0)]
-      simp
+      simp only [mul_zero, Real.exp_zero, neg_div_neg_eq]
 
 /-- The error is paid, not either complete waveform's undamped energy. -/
 theorem undamped_sampling_error :
@@ -217,6 +217,7 @@ theorem weighted_integrable_iff_sampled {σ : ℝ} (hσ : -1 < σ) :
       ((Real.continuous_exp.comp (continuous_const.mul continuous_id)).measurable.mul
         (sampledPickup_measurable.pow_const 2)).aestronglyMeasurable
     exact ae_of_all _ (fun u ↦ by
+      dsimp only [Function.comp_def, Pi.mul_apply, Pi.add_apply, id_eq]
       rw [Real.norm_eq_abs, abs_of_nonneg
         (mul_nonneg (Real.exp_pos _).le (sq_nonneg _))]
       exact (weighted_square_comparisons σ u).2)
@@ -225,6 +226,7 @@ theorem weighted_integrable_iff_sampled {σ : ℝ} (hσ : -1 < σ) :
       ((Real.continuous_exp.comp (continuous_const.mul continuous_id)).measurable.mul
         (wholePickup_measurable.pow_const 2)).aestronglyMeasurable
     exact ae_of_all _ (fun u ↦ by
+      dsimp only [Function.comp_def, Pi.mul_apply, Pi.add_apply, id_eq]
       rw [Real.norm_eq_abs, abs_of_nonneg
         (mul_nonneg (Real.exp_pos _).le (sq_nonneg _))]
       exact (weighted_square_comparisons σ u).1)
@@ -239,9 +241,14 @@ theorem actual_energy_le_sampled {σ : ℝ} (hσ : -1 < σ)
   have hw := (weighted_integrable_iff_sampled hσ).mpr hs
   have hb := integral_mono_ae hw ((hs.const_mul 2).add (he.const_mul 2))
     (ae_of_all _ (fun u ↦ (weighted_square_comparisons σ u).1))
+  dsimp only [Pi.add_apply] at hb
   rw [integral_add (hs.const_mul 2) (he.const_mul 2), integral_const_mul,
     integral_const_mul] at hb
-  nlinarith [weighted_sampling_error_integral_le hσ]
+  apply hb.trans
+  apply add_le_add le_rfl
+  simpa only [mul_one_div] using
+    (mul_le_mul_of_nonneg_left (weighted_sampling_error_integral_le hσ)
+      (by norm_num : (0 : ℝ) ≤ 2))
 
 /-- The converse keeps the same paid interpolation cost. -/
 theorem sampled_energy_le_actual {σ : ℝ} (hσ : -1 < σ)
@@ -253,9 +260,14 @@ theorem sampled_energy_le_actual {σ : ℝ} (hσ : -1 < σ)
   have hs := (weighted_integrable_iff_sampled hσ).mp hw
   have hb := integral_mono_ae hs ((hw.const_mul 2).add (he.const_mul 2))
     (ae_of_all _ (fun u ↦ (weighted_square_comparisons σ u).2))
+  dsimp only [Pi.add_apply] at hb
   rw [integral_add (hw.const_mul 2) (he.const_mul 2), integral_const_mul,
     integral_const_mul] at hb
-  nlinarith [weighted_sampling_error_integral_le hσ]
+  apply hb.trans
+  apply add_le_add le_rfl
+  simpa only [mul_one_div] using
+    (mul_le_mul_of_nonneg_left (weighted_sampling_error_integral_le hσ)
+      (by norm_num : (0 : ℝ) ≤ 2))
 
 /-- Compact-window sampled energy is finite without an arithmetic supplier. -/
 theorem sampled_weighted_square_integrableOn_Icc {σ : ℝ} (hσ : -1 < σ) (T : ℝ) :
@@ -270,6 +282,7 @@ theorem sampled_weighted_square_integrableOn_Icc {σ : ℝ} (hσ : -1 < σ) (T :
     ((Real.continuous_exp.comp (continuous_const.mul continuous_id)).measurable.mul
       (sampledPickup_measurable.pow_const 2)).aestronglyMeasurable
   exact ae_of_all _ (fun u ↦ by
+    dsimp only [Function.comp_def, Pi.mul_apply, Pi.add_apply, id_eq]
     rw [Real.norm_eq_abs, abs_of_nonneg
       (mul_nonneg (Real.exp_pos _).le (sq_nonneg _))]
     exact (weighted_square_comparisons σ u).2)
@@ -299,14 +312,22 @@ theorem finite_weighted_comparisons {σ : ℝ} (hσ : -1 < σ) (T : ℝ) :
   constructor
   · have hb := integral_mono_ae hw ((hs.const_mul 2).add (he.const_mul 2))
       (ae_of_all _ (fun u ↦ (weighted_square_comparisons σ u).1))
+    dsimp only [Pi.add_apply] at hb
     rw [integral_add (hs.const_mul 2) (he.const_mul 2), integral_const_mul,
       integral_const_mul] at hb
-    nlinarith
+    apply hb.trans
+    apply add_le_add le_rfl
+    simpa only [mul_one_div] using
+      (mul_le_mul_of_nonneg_left herr (by norm_num : (0 : ℝ) ≤ 2))
   · have hb := integral_mono_ae hs ((hw.const_mul 2).add (he.const_mul 2))
       (ae_of_all _ (fun u ↦ (weighted_square_comparisons σ u).2))
+    dsimp only [Pi.add_apply] at hb
     rw [integral_add (hw.const_mul 2) (he.const_mul 2), integral_const_mul,
       integral_const_mul] at hb
-    nlinarith
+    apply hb.trans
+    apply add_le_add le_rfl
+    simpa only [mul_one_div] using
+      (mul_le_mul_of_nonneg_left herr (by norm_num : (0 : ℝ) ≤ 2))
 
 /-- Cofinality remains universal. The arithmetic sampled-energy premise is still open. -/
 theorem abscissa_zero_iff_sampled_reciprocal :
