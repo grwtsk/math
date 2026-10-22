@@ -217,4 +217,81 @@ theorem oddLiftedMean_le_of_two_suppliers
     (div_le_div_of_nonneg_right
       (add_le_add hsource hodd.2) (by norm_num))
 
+/-- All nonempty characters of the ODD-LIFTED source at 2*M roots.
+The coordinate type is still the finite subtype of H. A later
+separate transport lemma is needed to rewrite this as the canonical
+liouvilleAllOrderEnergy on the IMAGE shift set {2*h+1 | h∈H}. -/
+def oddLiftedAllOrderEnergy (M : ℕ) (H : Finset ℕ) : ℚ :=
+  ∑ S ∈ (Finset.univ : Finset (Finset {h : ℕ // h ∈ H})).erase ∅,
+    (oddLiftedMean M H S) ^ 2
+
+/-- Independent residual energy of all ODD-ROOT affine products.
+No smallness is assumed by this definition. -/
+def oddResidualAllOrderEnergy (M : ℕ) (H : Finset ℕ) : ℚ :=
+  ∑ S ∈ (Finset.univ : Finset (Finset {h : ℕ // h ∈ H})).erase ∅,
+    (oddResidualMean M H S) ^ 2
+
+/-- Squared dyadic mean is bounded by the arithmetic mean of its
+source and residual squared means, retaining the exact factor 1/2.
+This is the sharp convexity inequality (a+b)^2/4 ≤ (a²+b²)/2. -/
+theorem oddLiftedMean_sq_le_source_residual_average
+    (M : ℕ) (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) (hM : 0 < M) :
+    (oddLiftedMean M H S) ^ 2 ≤
+      ((liouvilleSubsetMean M H S) ^ 2 +
+        (oddResidualMean M H S) ^ 2) / 2 := by
+  rw [oddLiftedMean_half_source_plus_residual M H S hM]
+  have hsgn : ((-1 : ℚ) ^ S.card) ^ 2 = 1 := by
+    calc
+      _ = (-1 : ℚ) ^ (S.card * 2) :=
+        (pow_mul (-1 : ℚ) S.card 2).symm
+      _ = (-1 : ℚ) ^ (2 * S.card) := by rw [Nat.mul_comm]
+      _ = ((-1 : ℚ) ^ 2) ^ S.card :=
+        pow_mul (-1 : ℚ) 2 S.card
+      _ = 1 := by norm_num
+  have havg (a b : ℚ) :
+      ((a + b) / 2) ^ 2 ≤ (a ^ 2 + b ^ 2) / 2 := by
+    nlinarith [sq_nonneg (a - b)]
+  calc
+    _ ≤ (((-1 : ℚ) ^ S.card * liouvilleSubsetMean M H S) ^ 2 +
+          (oddResidualMean M H S) ^ 2) / 2 := havg _ _
+    _ = _ := by rw [mul_pow, hsgn, one_mul]
+
+/-- The full odd-lifted energy is at most the average of TWO complete
+nonempty-character energies. Multiplicativity alone cannot remove the
+independent ODD-residual energy term. This inequality is sharp. -/
+theorem oddLiftedAllOrderEnergy_le_source_add_residual
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) :
+    oddLiftedAllOrderEnergy M H ≤
+      (liouvilleAllOrderEnergy M H +
+        oddResidualAllOrderEnergy M H) / 2 := by
+  unfold oddLiftedAllOrderEnergy liouvilleAllOrderEnergy
+    oddResidualAllOrderEnergy
+  calc
+    (∑ S ∈ (Finset.univ :
+          Finset (Finset {h : ℕ // h ∈ H})).erase ∅,
+        (oddLiftedMean M H S) ^ 2) ≤
+      ∑ S ∈ (Finset.univ :
+          Finset (Finset {h : ℕ // h ∈ H})).erase ∅,
+        ((liouvilleSubsetMean M H S) ^ 2 +
+          (oddResidualMean M H S) ^ 2) / 2 := by
+      apply Finset.sum_le_sum
+      intro S _
+      exact oddLiftedMean_sq_le_source_residual_average M H S hM
+    _ = _ := by
+      rw [Finset.sum_div, Finset.sum_add_distrib]
+
+/-- An honest TWO-supplier quantitative energy return. Any estimate of
+the smaller ordinary Liouville energy must be accompanied by a SECOND
+estimate of the odd-affine residual energy. Neither is supplied here. -/
+theorem oddLiftedAllOrderEnergy_le_of_two_bounds
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M)
+    (epsilon delta : ℚ)
+    (hsource : liouvilleAllOrderEnergy M H ≤ epsilon)
+    (hresidual : oddResidualAllOrderEnergy M H ≤ delta) :
+    oddLiftedAllOrderEnergy M H ≤ (epsilon + delta) / 2 := by
+  exact (oddLiftedAllOrderEnergy_le_source_add_residual M H hM).trans
+    (div_le_div_of_nonneg_right
+      (add_le_add hsource hresidual) (by norm_num))
+
 end GRWTSK.NumberTheory.LiouvilleWalshSourceBridge
