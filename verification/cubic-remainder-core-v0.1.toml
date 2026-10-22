@@ -33,7 +33,9 @@ inherited_target = "verification/cubic-circle-envelope-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "417c6d8ee7b9f1fa524916de32ed1be9e23c6abd".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "5b4eeacdab8bbf120401ac69b0001544d5e16b8b".
-inherited_target_blob = "cdeedd51fa7107d36313a76159d6a198375710ea"
+# Pre-quadrature-repair inherited_target_blob = "cdeedd51fa7107d36313a76159d6a198375710ea".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "bf3a2d986bc97e006479f103e3232c75ab59dd73"
 receipt_policy = "Bind exact new commit/tree externally; an ancestor receipt does not accept this increment."
 
 [trust]

@@ -32,7 +32,9 @@ inherited_target = "verification/admissible-tent-contour-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "cc40ab2d169347b39cc9ccecc8c2f93812a13926".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "27f1e068cd8f9b9ae9e1925c69df813a67de6ac8".
-inherited_target_blob = "42c92fef9137922802f1a609ea5b23e6dabab2b3"
+# Pre-quadrature-repair inherited_target_blob = "42c92fef9137922802f1a609ea5b23e6dabab2b3".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "b46767a52d94c2cc9151cd17c090d0a3629afae2"
 receipt_policy = "The eventual new commit/tree must be bound externally; ancestor receipts do not accept this target."
 inventory_policy = "Lexical declaration inventory only; all exact elaborated types remain to be reconciled."
 
