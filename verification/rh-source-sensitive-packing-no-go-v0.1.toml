@@ -1,0 +1,78 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-source-sensitive-packing-no-go-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "4a5fb76d51b0d27f062ac3a43f4d282e03fe701b"
+parent_tree = "e309b99904ed8f634fdbd5cad13d3ecd22e0925c"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FIXED_DAMPED_PACKING_CONTROL_ONLY / SOURCE_SENSITIVE_FAMILY_REQUIRED"
+
+[no_go]
+fixed_model_limit = 0
+comparison_shape = "V_n = lambda_n * target + R_n"
+lambda_limit = "L>0"
+residual_limit = 0
+conclusion = "target=0"
+application = "fixed damped comparison at s forces witnessTrace(s)=0 and Re(s)=1/2"
+positivity_needed_for_no_go = false
+
+[corrected_architecture]
+prime_power_schedule = "canonical increasing prime powers"
+point_family = "Parameter -> PrimePowerEvent -> PackingPoint"
+zero_facing_parameter = "parameterOfZero : Complex -> Parameter"
+positivity = "derived after parameter-sensitive points are chosen"
+residual_may_hide_target_information = false
+fixed_s2_packing_role = "control and asymptotic majorant only"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SourceSensitivePackingNoGo"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SourceSensitivePackingNoGo.lean"
+blob = "2042b8bf57a8078fe8da42fdd0041f2cf71c6071"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SourceSensitivePackingNoGoControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SourceSensitivePackingNoGoControls.lean"
+blob = "03cb29a46a516bafe5e934811cb6ddcadbf261b9"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "fe4dba0ab997397861e9dd8c12e95e2e7c2d66f1"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/source-sensitive-packing-no-go.md"
+blob = "8310631a05a44df36c3ccdcf11bfac2a14a48b3b"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FIXED_DAMPED_PACKING_CONTROL_ONLY = true
+SOURCE_SENSITIVE_FAMILY_REQUIRED = true
+SOURCE_SENSITIVE_FAMILY_INSTANTIATED = false
+GLOBAL_EXPLICIT_FORMULA_ASSEMBLY_PROVED = false
+QUARTIC_COMPARISON_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "select a source/test parameter supplied by the explicit-formula transform",
+  "define the corresponding parameter-sensitive prime-power coordinate",
+  "prove its source identity before Gram formation",
+  "derive the global explicit-formula comparison and complete residual decay",
+  "prove the comparison coefficient tends to a positive limit"
+]
+
+[nonclaims]
+items = [
+  "the fixed s=2 damped sequence is not the final zero-facing model",
+  "no source-sensitive transform is yet instantiated",
+  "no global explicit formula",
+  "no quartic comparison theorem",
+  "no unconditional RH proof"
+]
