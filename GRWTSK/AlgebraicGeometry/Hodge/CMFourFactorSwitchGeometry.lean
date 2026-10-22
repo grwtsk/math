@@ -1353,6 +1353,33 @@ theorem CMFiniteCoefficientMultiplication_diagonal_equivariant
   | add x y hx hy =>
       simp [map_add, hx, hy]
 
+/-- The rational tensor target for four coefficient entries, with the
+same parenthesization as the canonical four-vector target. -/
+abbrev CMFiniteFourCoefficientTensor (E : CMGaloisIntermediateField) :=
+  (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
+
+/-- Iterated finite-CM coefficient multiplication. The construction uses
+the existing two-factor multiplication map and rational tensor functoriality,
+without postulating a fourfold multiplication operation. -/
+def CMFiniteFourCoefficientMultiplication
+    (E : CMGaloisIntermediateField) :
+    CMFiniteFourCoefficientTensor E →ₗ[ℚ] E.carrier :=
+  CMFiniteCoefficientMultiplication E ∘ₗ
+    ((CMFiniteCoefficientMultiplication E ∘ₗ
+      (CMFiniteCoefficientMultiplication E).lTensor E.carrier).lTensor
+        E.carrier)
+
+/-- Evaluation on a fourfold pure tensor is ordinary field multiplication. -/
+@[simp]
+theorem CMFiniteFourCoefficientMultiplication_pure
+    (E : CMGaloisIntermediateField)
+    (a b c d : E.carrier) :
+    CMFiniteFourCoefficientMultiplication E
+        (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
+      a * b * c * d := by
+  simp [CMFiniteFourCoefficientMultiplication,
+    CMFiniteCoefficientMultiplication_tmul, mul_assoc]
+
 /-- Canonical finite-CM pure-factor formula, prior to extension of
 coefficients into algebraic numbers. The coefficient entries multiply in
 E while the four vector entries remain a rational tensor. -/
