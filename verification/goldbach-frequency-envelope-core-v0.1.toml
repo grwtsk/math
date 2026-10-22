@@ -1,0 +1,196 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-frequency-envelope-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachFrequencyEnvelopeCore"
+build_target = "GRWTSK.Interfaces.GoldbachFrequencyEnvelopeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "d235062d6a2061c5d170c3acc5651285cd4b9554"
+base_tree = "d60a74667b3a58cd394a15e283b3fc7e1f13cadb"
+stacked_on_pr = 382
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/goldbach-prefix-transfer-core-v0.1.toml"
+inherited_target_blob = "0343bde7191d365e2f5c160a72cce7ee451e7cd7"
+parallel_coefficient_pr = 381
+parallel_coefficient_revision = "497aa56fe7544c710f9f2115d7af5eeabc4214a4"
+parallel_coefficient_dependency = false
+receipt_policy = "Future external replay must bind the exact commit, tree and this manifest blob. This static specification is not an execution receipt or authorization."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+frequency_dependent_prefix_budget = "NEW_SOURCE_DRAFT"
+model_amplitude_residual_bound = "NEW_SOURCE_DRAFT"
+squared_discrepancy_retained = "NEW_SOURCE_DRAFT"
+envelope_continuity_and_integrability = "NEW_SOURCE_DRAFT"
+integrated_clipped_envelope = "NEW_SOURCE_DRAFT"
+domination_by_previous_budget = "NEW_SOURCE_DRAFT"
+conditional_universal_tail_consumer = "NEW_SOURCE_DRAFT"
+general_ramanujan_evaluation = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+geometric_kernel_decay = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+centered_window_change_of_variables = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+closed_integrated_envelope_estimate = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+quadratic_cutoff_sufficient_scale = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+quantitative_prime_prefix_supplier = "NOT_SUPPLIED"
+certified_numerical_integration = "NOT_SUPPLIED"
+model_major_lower_bound = "NOT_SUPPLIED"
+signed_minor_arc_bound = "NOT_SUPPLIED"
+strict_universal_margin = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachFrequencyEnvelopeCore"
+path = "GRWTSK/Interfaces/GoldbachFrequencyEnvelopeCore.lean"
+source_blob = "4625782e7c81dfaaaa60bcc8ca2f10a747e569e3"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachFrequencyEnvelopeControls.lean"
+source_blob = "ed0524d2be7ed0ecd9b695f2d5f31ed6b418420c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget"
+path = "GRWTSK/NumberTheory/Primes/GoldbachFrequencyArcBudget.lean"
+source_blob = "b248b758a0f13615a50c107b4f4780bf5f67d393"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope"
+path = "GRWTSK/NumberTheory/Primes/GoldbachPrefixFrequencyEnvelope.lean"
+source_blob = "f1603c23d8a1cf4ad5b88fcffc625275fb850125"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/Bochner/Basic.lean"
+blob = "5aab70490dd61ebcfaf9c50ef26dcb612c25091b"
+required_declarations = ["MeasureTheory.norm_integral_le_of_norm_le"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/Bochner/Set.lean"
+blob = "338ff3f267c912291cbf581e3cd3f2de78982a82"
+required_declarations = ["MeasureTheory.setIntegral_mono_on", "MeasureTheory.setIntegral_const"]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-frequency-envelope.md"
+source_blob = "027e4e18b898b9a1f212736c54f85785d4d958b6"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_count = 34
+public_names = [
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.chord_loss_at_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.zero_model_requires_quadratic_error",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.zero_model_quadratic_budget",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.envelope_cap_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.wrapped_envelope_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.nonreduced_frequency_budget_at_two",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFrequencyEnvelopeControls.major_only_margin_does_not_pay_minor",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachClippedFrequencyEnvelope",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachFrequencyArcErrorBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachFrequencyMajorErrorBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.continuous_goldbachClippedFrequencyEnvelope",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.integrableOn_goldbachClippedFrequencyEnvelope",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.norm_goldbachProgressionResidual_le_clipped_frequency_envelope",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.norm_goldbachProgressionArcResidual_le_frequency_budget",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachFrequencyArcErrorBudget_le_coarse",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachFrequencyMajorErrorBudget_le_prefix",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachCount_pos_of_frequency_prefix_bounds",
+  "GRWTSK.NumberTheory.Primes.GoldbachFrequencyArcBudget.goldbachCount_pos_above_of_frequency_prefix_supplier",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.goldbachPrefixChordLoss",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.goldbachPrefixFrequencyResidueBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.goldbachPrefixFrequencyError",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.goldbachPrefixFrequencyEnvelope",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.norm_goldbachProgressionExponentialModel_eq_amplitude",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.norm_goldbachCenteredProgressionCircleResidual_le_model",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.norm_goldbachCenteredProgressionCircleResidual_le_model_of_bound",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.norm_goldbachResidueDiscrepancy_le_frequency_budget",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.norm_goldbachProgressionDiscrepancy_le_frequency_error",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.norm_goldbachCenteredResidual_le_frequency_envelope",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.goldbachPrefixChordLoss_add_int",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.goldbachPrefixFrequencyEnvelope_add_int",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.continuous_goldbachPrefixChordLoss",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.continuous_goldbachPrefixFrequencyResidueBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.continuous_goldbachPrefixFrequencyError",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixFrequencyEnvelope.continuous_goldbachPrefixFrequencyEnvelope",
+]
+
+[[acceptance_obligations]]
+id = "F01"
+requirement = "Elaborate new and inherited modules only when separately authorized. Static and numerical diagnostics do not establish Lean acceptance."
+
+[[acceptance_obligations]]
+id = "F02"
+requirement = "Audit exact types and complete transitive import, axiom, generated and native closure, including every unresolved PR #382 and #379 obligation."
+
+[[acceptance_obligations]]
+id = "F03"
+requirement = "Retain actual finite prime-only prefix coefficients, the k+1 baseline, and exact non-reduced prime mass."
+
+[[acceptance_obligations]]
+id = "F04"
+requirement = "Prove the amplitude residual bound from the inherited source reconstruction and retain the squared discrepancy. A zero-model counterexample must reject its omission."
+
+[[acceptance_obligations]]
+id = "F05"
+requirement = "Bind frequency loss to the actual canonical character and model amplitude. Preserve periodicity on wrapped pieces."
+
+[[acceptance_obligations]]
+id = "F06"
+requirement = "Integrate the explicit envelope on the actual clipped set with proved integrability. Do not substitute an unknown residual norm or an unproved centered-window formula."
+
+[[acceptance_obligations]]
+id = "F07"
+requirement = "Reconcile both the per-arc residual bound and domination by the prior budget; verify minimum bounds have separately justified branches."
+
+[[acceptance_obligations]]
+id = "F08"
+requirement = "Keep all even targets above one fixed cutoff, every prefix/modulus/residue quantifier, independent model-major and signed-minor bounds, and strict total margin."
+
+[[acceptance_obligations]]
+id = "F09"
+requirement = "Do not promote exploratory major-only numerical margins to certified quadrature, universal estimates, finite exception coverage, or Goldbach."
+
+[[acceptance_obligations]]
+id = "F10"
+requirement = "Keep written Ramanujan/kernel/window/integral and asymptotic derivations distinct from new Lean declarations. Preserve the independent PR #381 source branch."
+
+[[acceptance_obligations]]
+id = "F11"
+requirement = "Keep the integration root isolated from GRWTSK.lean and inherit all pending trust checks."
+
+[nonclaims]
+claims = [
+  "a quantitative prime-distribution theorem or effective cutoff",
+  "a certified model-major lower bound or numerical integral",
+  "a signed minor-arc estimate or strict universal margin",
+  "complete finite coverage or a Goldbach proof",
+  "Lean execution, kernel acceptance or transitive trust audit",
+  "merge or execution authority",
+]
