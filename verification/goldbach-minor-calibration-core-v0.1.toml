@@ -1,0 +1,161 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-minor-calibration-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachMinorCalibrationCore"
+build_target = "GRWTSK.Interfaces.GoldbachMinorCalibrationCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "0aee3ae2d8337c6a6b3549bc20d9cdc0379a5f0e"
+base_tree = "2baf10135aa4df56ece77e2a8c9634870157b58d"
+stacked_on_pr = 404
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/goldbach-two-arc-theta-core-v0.1.toml"
+inherited_target_blob = "b7910fd6449e070e34925d39a5e382920806b84b"
+parallel_kernel_lower_pr = 406
+parallel_kernel_lower_dependency = false
+receipt_policy = "Any future external replay must bind the exact commit, tree and this manifest blob. This static target is neither an execution receipt nor authorization."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+minor_lower_iff_actual_mass_lower = "NEW_EXACT_SOURCE_DRAFT_NOT_AN_ESTIMATE"
+sharper_rational_budget = "NEW_SOURCE_DRAFT"
+relaxed_minor_allowance = "FIXED_OPEN_ANALYTIC_TARGET_NOT_SUPPLIED"
+quantitative_every_even_consumers = "NEW_CONDITIONAL_SOURCE_DRAFT"
+artificial_weight_countermodel = "NEW_SOURCE_DRAFT_NOT_PRIMELOGWEIGHT"
+finite_actual_prime_kernel_identity = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+finite_actual_prime_interval = "ORDINARY_EXACT_RATIONAL_DIAGNOSTIC_NOT_KERNEL_ACCEPTANCE"
+published_theta_input = "INHERITED_EXTERNAL_MATHEMATICS_NOT_IMPORTED"
+frequency_integral_to_rational_budget = "OPEN_FORMAL_BRIDGE_WITH_INHERITED_WRITTEN_DERIVATION"
+finite_model_lower_bound = "OPEN_FORMAL_BRIDGE_WITH_INHERITED_WRITTEN_DERIVATION"
+complete_signed_minor_lower_bound = "NOT_SUPPLIED"
+strict_accepted_universal_margin = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[analytic_target]
+cutoff = 400000000
+quantifiers = "forall natural N >= cutoff, 2 < N, Even N"
+minor = "Re(goldbachRationalMinorContribution 2 N) >= -(N+1)"
+independence = "Cutoff and allowance fixed independently of the unknown Goldbach mass"
+prefix_rate = "forall k <= N, abs(theta(k)-(k+1)) <= (N+1)/100"
+major_budget = "U(X,X/100) <= 13*X/30 for X >= 6000"
+model_lower = "13*X/9 <= Re(modelMajor)"
+conditional_mass_lower = "G(N) >= (N+1)/90"
+finite_coverage = "SEPARATE_OPEN_OBLIGATION"
+
+[countermodel_scope]
+weight = "c at two; four at n >= five with n mod four = one; zero otherwise"
+parameter = "0 <= c <= 1"
+all_prefix = "abs(sum_0^k w - (k+1)) <= 5"
+residue_three = "Exact discrepancy -(k+1)/2 at modulus four, reduced residue three"
+zero_mass_targets = "every N > 4 divisible by four"
+unbounded = "for every cutoff there is a larger even zero-mass target satisfying the one-percent all-prefix bound"
+not_actual_primes = "w(9)=4; cannot substitute these weights for primeLogWeight"
+
+[finite_test]
+target = 128
+source_weight = "actual log(p), primes only"
+frequency_zero_branch = "6/(N+1)"
+nonzero_kernel = "(sin(4*pi*m/X)+(-1)^m*sin(2*pi*m/X))/(pi*m)"
+minor_enclosure = "-95.10 < Re(I(128)) < -95.09"
+tail_scope = "Below the declared cutoff; does not refute a tail estimate"
+formal_scope = "Written identity plus ordinary rational enclosure; not an accepted Lean theorem"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachMinorCalibrationCore"
+path = "GRWTSK/Interfaces/GoldbachMinorCalibrationCore.lean"
+source_blob = "0078ff14353fb29ef292c4b410bc431c7fda5928"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachMinorCalibrationControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachMinorCalibrationControls.lean"
+source_blob = "f1dc07e620f4192907fa92d1db4d6fdf6d1a3904"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachScalarSupplierCountermodel.lean"
+source_blob = "9bc0deeb1642f0cbbd8606875e7c4c498e805066"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration"
+path = "GRWTSK/NumberTheory/Primes/GoldbachTwoArcMinorCalibration.lean"
+source_blob = "b80ae619716e7e698460121a30735c9332fff7dd"
+disposition = "NEW_SOURCE_DRAFT"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-signed-minor-calibration.md"
+source_blob = "a4de39f9b6928721308dd58a6dacfaf730d47e49"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_count = 32
+public_names = [
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachMinorCalibrationControls.proxy_has_composite_support",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachMinorCalibrationControls.proxy_zero_endpoint_is_not_free",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachMinorCalibrationControls.proxy_mass_at_eight",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachMinorCalibrationControls.full_minor_margin_at_six_thousand",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachMinorCalibrationControls.nonstrict_margin_can_have_zero_mass",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyTotal",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyPrefix",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyMass",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight_nonneg",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight_one",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight_two",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight_even_support",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyWeight_residue_three",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyResidueThreePrefix",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyResidueThreePrefix_eq",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyTotal_eq",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyPrefix_abs_le_five",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxy_one_percent",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxy_reflected_product_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxyMass_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachScalarSupplierCountermodel.modFourProxy_unbounded_zero_mass",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.signed_minor_lower_iff_mass_lower",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.goldbach_signed_minor_lower_iff_logMass_lower",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.twoArcBudget_one_percent_eq",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.twoArcBudget_one_percent_le_thirteen_thirtieths",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.twoArcBudget_full_minor_margin",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.GoldbachTwoArcSignedMinorSupplier",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.goldbachLogMass_ge_one_ninetieth_of_two_arc_bridges",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.goldbachCount_pos_of_relaxed_two_arc_bridges",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcMinorCalibration.goldbachLogMass_lower_above_of_relaxed_two_arc_suppliers",
+]
+
+[hostile_controls]
+required = [
+  "Do not identify artificial weights with the fixed prime-only logarithmic weights",
+  "Do not drop k=0 or the prime-two atom",
+  "Do not infer reflected overlap from scalar and parity control",
+  "Do not infer all large targets from the N=128 finite counterexample",
+  "Do not charge beneficial positive minor mass as adverse error",
+  "Do not replace strict positive margin with equality",
+  "Do not promote a written analytic identity or rational diagnostic to Lean acceptance",
+  "Do not infer finite Goldbach coverage from a tail consumer"
+]
