@@ -76,6 +76,33 @@ theorem antipodal_character_product (H : Finset ℕ) (m t : ℕ) :
         · simp [IsAntipodalPair, Finset.forall_mem_insert, he, hrest]
       · simp [IsAntipodalPair, Finset.forall_mem_insert, he]
 
+/-- Exact pairwise antipodal detector in rational arithmetic, obtained
+by casting the already source-drafted integer product identity. -/
+theorem antipodal_character_product_rat (H : Finset ℕ) (m t : ℕ) :
+    (∏ h ∈ H,
+      ((1 : ℚ) -
+        ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ) *
+          ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))) =
+      if IsAntipodalPair H m t then (2 : ℚ) ^ H.card else 0 := by
+  have hi := antipodal_character_product H m t
+  exact_mod_cast hi
+
+/-- The unnormalized full character expansion at one ordered root pair.
+This is the finite Walsh identity with the exact Liouville inputs. -/
+theorem antipodal_character_powerset (H : Finset ℕ) (m t : ℕ) :
+    (∏ h ∈ H,
+      ((1 : ℚ) -
+        ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ) *
+          ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))) =
+      ∑ S ∈ H.powerset, (-1 : ℚ) ^ S.card *
+        ∏ h ∈ S,
+          (((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ) *
+            ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) := by
+  exact GRWTSK.NumberTheory.FiniteAntipodalWalshExpansion.product_one_sub_eq_powerset_sum
+    H (fun h =>
+      ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ) *
+        ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
