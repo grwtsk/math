@@ -15,8 +15,7 @@ import Mathlib.Data.Nat.Log
 # Dyadic reconstruction of parity-restricted Mertens prefixes
 
 The zero Fourier mode from the parent is expressed through the even and odd
-Mertens prefixes.  These parity prefixes are not independent arithmetic
-objects.
+Mertens prefixes. These parity prefixes are not independent arithmetic objects.
 
 For an integer `m`,
 
@@ -33,7 +32,7 @@ and
 
 Iteration terminates after `Nat.log 2 b + 1` steps and reconstructs the odd
 prefix as a finite sum of ordinary Mertens prefixes at dyadically descending
-arguments.  This module also gives the corresponding conditional analytic
+arguments. This module also gives the corresponding conditional analytic
 reduction from a dyadic ordinary-Mertens-tail supplier to the parity supplier
 required by the zero Fourier mode.
 
@@ -121,12 +120,14 @@ theorem parityMertensPrefix_even_eq_neg_odd_half
           apply Finset.sum_congr rfl
           intro m _hm
           exact moebiusReal_two_mul_eq_parity m
-    _ = -∑ m ∈ Finset.Icc 1 (b / 2),
-        if m % 2 = 1 then moebiusReal m else 0 := by
-          rw [Finset.sum_neg_distrib]
+    _ = ∑ m ∈ Finset.Icc 1 (b / 2),
+        -(if m % 2 = 1 then moebiusReal m else 0) := by
           apply Finset.sum_congr rfl
           intro m _hm
           by_cases h : m % 2 = 1 <;> simp [h]
+    _ = -∑ m ∈ Finset.Icc 1 (b / 2),
+        if m % 2 = 1 then moebiusReal m else 0 := by
+          exact Finset.sum_neg_distrib
     _ = -parityMertensPrefix (b / 2) 1 := by
           unfold parityMertensPrefix endpointParitySet
           rw [Finset.sum_filter]
@@ -245,7 +246,7 @@ theorem abs_parityMertensPrefix_even_le_dyadicTailMass_half
 energy.
 
 Both the endpoint tail and its half-scale tail are budgeted at the ambient
-endpoint scale.  This is an explicit open analytic premise. -/
+endpoint scale. This is an explicit open analytic premise. -/
 def DyadicOrdinaryMertensTailSquareRootEnergy : Prop :=
   ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧
     ∀ j b : ℕ,
