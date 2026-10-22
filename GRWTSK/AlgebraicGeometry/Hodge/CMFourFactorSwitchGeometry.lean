@@ -2,6 +2,7 @@
 Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
+import Mathlib.LinearAlgebra.TensorProduct.Associator
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics
 import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity
@@ -1536,6 +1537,74 @@ theorem CMFiniteSeparatedCanonicalAssembly_on_separatedPure
         (CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
       canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
   exact CMFiniteSeparatedCanonicalAssembly_pure E
+    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Reassociate and exchange the middle two entries of two paired tensors. -/
+noncomputable def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) :=
+  TensorProduct.tensorTensorTensorComm ℚ
+    E.carrier E.carrier E.carrier E.carrier
+
+/-- Extend the two-pair shuffle across a third coefficient/vector pair. -/
+noncomputable def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
+    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
+    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ]
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)) :=
+  (TensorProduct.congr (CMFiniteTwoTensorShuffle E)
+      (LinearEquiv.refl ℚ (E.carrier ⊗[ℚ] E.carrier))).trans
+    (TensorProduct.tensorTensorTensorComm ℚ
+      (E.carrier ⊗[ℚ] E.carrier)
+      (E.carrier ⊗[ℚ] E.carrier) E.carrier E.carrier)
+
+/-- The canonical four-pair tensor shuffle, built from the associator/
+commutator construction provided by Mathlib. -/
+noncomputable def CMFiniteFourTensorShuffle (E : CMGaloisIntermediateField) :
+    CMFiniteFourPairedTensor E ≃ₗ[ℚ]
+      (CMFiniteFourCoefficientTensor E ⊗[ℚ]
+        CMFiniteCanonicalVectorTarget E) :=
+  (TensorProduct.congr (CMFiniteThreeTensorShuffle E)
+      (LinearEquiv.refl ℚ (E.carrier ⊗[ℚ] E.carrier))).trans
+    (TensorProduct.tensorTensorTensorComm ℚ
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
+      E.carrier E.carrier)
+
+/-- The shuffle separates all four coefficient entries from all four
+vector entries on paired pure tensors. -/
+@[simp]
+theorem CMFiniteFourTensorShuffle_pure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourTensorShuffle E
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [CMFiniteFourTensorShuffle, CMFiniteThreeTensorShuffle,
+    CMFiniteTwoTensorShuffle, CMFiniteFourPairedPure,
+    CMFiniteFourSeparatedPure]
+
+/-- Compose the actual tensor shuffle with the already constructed
+separated coefficient-multiplication assembly. -/
+def CMFiniteCanonicalPairedAssembly (E : CMGaloisIntermediateField) :
+    CMFiniteFourPairedTensor E →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E) :=
+  CMFiniteSeparatedCanonicalAssembly E ∘ₗ
+    (CMFiniteFourTensorShuffle E).toLinearMap
+
+@[simp]
+theorem CMFiniteCanonicalPairedAssembly_pure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteCanonicalPairedAssembly E
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  rw [CMFiniteCanonicalPairedAssembly, LinearMap.comp_apply,
+    CMFiniteFourTensorShuffle_pure]
+  exact CMFiniteSeparatedCanonicalAssembly_on_separatedPure E
     a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
 /-- A rational-linear paired-to-separated shuffle is uniquely determined
