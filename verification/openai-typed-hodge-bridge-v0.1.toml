@@ -224,7 +224,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
 labels = ["lem:filtered-hecke-summands"]
-statement_role = "filtration-preserving Frobenius-commuting projector and complement supply weak-admissibility inequalities and Newton data; local source now derives Hodge additivity from the idempotent split"
+statement_role = "manuscript supplies the actual filtered-Frobenius/Hecke projector, its filtration preservation and p-phi commutation, weak-admissibility inequalities, Newton data and total equality; local source derives complement commutation, projected-range Frobenius stability and Hodge additivity"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities"
 status = "OPEN"
 
@@ -274,3 +274,35 @@ upstream_obligations = [
   "Newton additivity",
   "total Hodge = total Newton"
 ]
+
+
+[[local_target]]
+name = "arbitrary Galois scalar descent"
+path = "GRWTSK/LinearAlgebra/TensorProduct/GaloisScalarDescent.lean"
+declaration = "GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.galoisScalarDescent"
+status = "SOURCE_DRAFT_NOT_RUN"
+external_source = "OAI.RationalHodgeCM.Partial.galois_scalar_descent"
+toolchain_blocker = "OpenAI source is Lean 4.34.1/mathlib d13f...; local is Lean 4.33.0/mathlib db58..."
+
+[[local_target]]
+name = "algebraic-number ambient complex trace descent"
+path = "GRWTSK/LinearAlgebra/TensorProduct/GaloisScalarDescent.lean"
+declaration = "GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.traceDescent"
+status = "SOURCE_DRAFT_NOT_RUN"
+external_source = "OAI.RationalHodgeCM.Partial.trace_descent"
+nonclaims = [
+  "does not prove that the ambient subspace is a Hodge subspace",
+  "does not prove algebraicity"
+]
+
+[[local_target]]
+name = "projector complement Frobenius commutation"
+path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
+declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredFrobeniusProjector.q_commutes"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "projected-range Frobenius stability"
+path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
+declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredFrobeniusProjector.phi_mem_range_p"
+status = "SOURCE_DRAFT_NOT_RUN"
