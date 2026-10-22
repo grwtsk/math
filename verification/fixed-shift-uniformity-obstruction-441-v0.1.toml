@@ -67,6 +67,10 @@ id = "genuine-sublinear-window"
 must_preserve = "On N=k*k the growing offset h=k has h/N=1/k tending to zero; the obstruction survives r_N/N→0 and is not limited to h comparable to N."
 
 [[hostile_controls]]
+id = "strict-cyclic-collar-eventual"
+must_preserve = "For the separate cyclic theorem r<N, the square-scale window r=k,N=k*k is admissible only once k>=2. The k=1 initial scale does not satisfy strict inequality, but this does not rescue eventual uniformity."
+
+[[hostile_controls]]
 id = "positive-shift-range"
 must_preserve = "The counterexample to uniformity uses k≥1 and the actual finite shift set Finset.Icc 1 k. h=k is a member; h=0 is not required."
 
