@@ -63,6 +63,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThresholdDescentProgramC
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedPsiThresholdTransportControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ReverseExplicitFormulaPsiGateControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaRecurrenceSupplierControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellCancellationControls
 
 set_option autoImplicit false
 
