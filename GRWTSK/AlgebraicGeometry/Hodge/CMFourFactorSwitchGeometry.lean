@@ -1538,6 +1538,57 @@ theorem CMFiniteSeparatedCanonicalAssembly_on_separatedPure
   exact CMFiniteSeparatedCanonicalAssembly_pure E
     a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
+/-- A rational-linear paired-to-separated shuffle is uniquely determined
+by its action on fourfold paired pure tensors. Existence is not asserted.
+
+This theorem discharges the *uniqueness* half of the tensor-shuffle
+construction and prevents a future geometric comparison from requiring
+an independent equality-of-shuffles premise. -/
+theorem CMFiniteFourTensorShuffle_unique
+    (E : CMGaloisIntermediateField)
+    (F G : CMFiniteFourPairedTensor E →ₗ[ℚ]
+      (CMFiniteFourCoefficientTensor E ⊗[ℚ]
+        CMFiniteCanonicalVectorTarget E))
+    (hF : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      F (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)
+    (hG : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      G (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) :
+    F = G := by
+  apply LinearMap.ext
+  intro t
+  induction t with
+  | tmul t123 t4 =>
+      induction t123 with
+      | tmul t12 t3 =>
+          induction t12 with
+          | tmul t1 t2 =>
+              induction t1 with
+              | tmul a₁ x₁ =>
+                  induction t2 with
+                  | tmul a₂ x₂ =>
+                      induction t3 with
+                      | tmul a₃ x₃ =>
+                          induction t4 with
+                          | tmul a₄ x₄ =>
+                              exact (hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).trans
+                                (hG a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).symm
+                          | add x y hx hy =>
+                              simp [map_add, hx, hy]
+                      | add x y hx hy =>
+                          simp [map_add, hx, hy]
+                  | add x y hx hy =>
+                      simp [map_add, hx, hy]
+              | add x y hx hy =>
+                  simp [map_add, hx, hy]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
 the first rational tensor-product universal property. -/
