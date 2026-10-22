@@ -134,6 +134,7 @@ theorem canonicalProjectedCharacter_eq_exponentCharacter (k : ℕ)
       ((exponentCharacter k x) (FreeGroup.of a)).toAdd
   rw [canonicalAbelianizationCoordinates_generator,
     exponentCharacter_generator]
+  simp [eq_comm]
 
 /-- Pointwise exact equality on ANY original noncommutative word,
 without syntactic normalization or truncation of that word. -/
