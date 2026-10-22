@@ -582,3 +582,64 @@ nonclaims = [
   "coordinate Weil form is not yet proved equal to the base-changed rational trace pairing under Hodge conjugation",
   "no integral lattice or Riemann criterion"
 ]
+
+
+[[local_target]]
+name = "totally real diagonal embedding dense range"
+path = "GRWTSK/NumberTheory/NumberField/TotallyRealSignApproximation.lean"
+declaration = "GRWTSK.NumberTheory.TotallyRealSignApproximation.canonicalRealEmbeddingVector_denseRange"
+status = "SOURCE_DRAFT_NOT_RUN"
+source_pattern = "openai/math lean/OAI/NumberTheory/DukePrimeDegree/Geometry/EmbeddingMatrix.lean"
+nonclaims = [
+  "no CM fixed-field identification",
+  "no Hodge theory"
+]
+
+[[local_target]]
+name = "totally real finite sign approximation"
+path = "GRWTSK/NumberTheory/NumberField/TotallyRealSignApproximation.lean"
+declaration = "GRWTSK.NumberTheory.TotallyRealSignApproximation.exists_canonicalRealEmbeddingVector_realizesSigns"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "totally real number field"
+]
+nonclaims = [
+  "no identification with conjugate-pair labels of a CM extension"
+]
+
+[[local_target]]
+name = "even CM real-rescaling sign row"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisIndex.rescalingSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "anti-invariant seed imaginary sign row"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.TracePolarizationData.imagSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "fixed rescaling sign condition from realized even row"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.fixedRescalingSignCondition_of_realizesRequiredSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "sign-controlled xi from fixed rescaling"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.signControlledXiOfFixedRescaling"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "CM sign-controlled xi from totally-real rescaling interface"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling.nonempty_signControlledXi"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "RealRescalingInterface identifying a totally real fixed-field model with representatives of CM conjugate Galois pairs"
+]
+nonclaims = [
+  "canonical E-plus instantiation not yet proved",
+  "no integral lattice or Riemann criterion"
+]
