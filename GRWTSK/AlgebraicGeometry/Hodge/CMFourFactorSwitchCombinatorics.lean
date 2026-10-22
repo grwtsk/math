@@ -163,6 +163,139 @@ theorem switchPair_corrects_mismatch_pair
   constructor <;>
     simp [switchPair, hij, Ne.symm hij, i.2, j.2]
 
+
+section ConjugatePairedSwitch
+
+variable {G : Type*} [DecidableEq G]
+  (conj : G → G)
+  (hconj : Function.Involutive conj)
+
+/-- A sign matrix is odd columnwise under the selected conjugation. -/
+def IsOddMatrix (x : I → G → ℤ) : Prop :=
+  ∀ i g, x i (conj g) = -x i g
+
+/-- Perform the same two-row swap in one column and its conjugate column.
+
+Using the same row transposition at both columns is exactly the "opposite swap
+at the conjugate coordinate" in sign language, because oddness makes the
+conjugate entries the negatives of the original entries. -/
+def switchConjugatePair
+    (x : I → G → ℤ)
+    (g : G) (i j : I) : I → G → ℤ :=
+  fun r h =>
+    if h = g then switchPair (fun k => x k g) i j r
+    else if h = conj g then switchPair (fun k => x k (conj g)) i j r
+    else x r h
+
+/-- Away from the selected conjugate pair, the matrix is unchanged. -/
+theorem switchConjugatePair_eq_of_ne
+    (x : I → G → ℤ)
+    (g h : G) (i j : I)
+    (hhg : h ≠ g) (hhcg : h ≠ conj g) :
+    switchConjugatePair conj x g i j r h = x r h := by
+  simp [switchConjugatePair, hhg, hhcg]
+
+/-- The paired switch preserves oddness. -/
+theorem switchConjugatePair_odd
+    (x : I → G → ℤ)
+    (hx : IsOddMatrix conj x)
+    (g : G) (hg : g ≠ conj g)
+    (i j : I) :
+    IsOddMatrix conj (switchConjugatePair conj x g i j) := by
+  intro r h
+  by_cases hhg : h = g
+  · subst h
+    have hcg : conj g ≠ g := Ne.symm hg
+    simp [switchConjugatePair, hconj g, hg, hcg, switchPair, hx]
+  · by_cases hhcg : h = conj g
+    · subst h
+      simp [switchConjugatePair, hconj g, hg, hhg, switchPair, hx]
+    · have hch_g : conj h ≠ g := by
+        intro heq
+        have := congrArg conj heq
+        simpa [hconj h] using this
+      have hch_cg : conj h ≠ conj g := by
+        intro heq
+        exact hhg (hconj.injective heq)
+      simp [switchConjugatePair, hhg, hhcg, hch_g, hch_cg, hx]
+
+/-- Every column sum is preserved by the paired switch. -/
+theorem sum_switchConjugatePair
+    (x : I → G → ℤ)
+    (g : G) (i j : I)
+    (h : G) :
+    ∑ r, switchConjugatePair conj x g i j r h =
+      ∑ r, x r h := by
+  by_cases hhg : h = g
+  · subst h
+    simpa [switchConjugatePair] using
+      sum_switchPair (fun r => x r g) i j
+  · by_cases hhcg : h = conj g
+    · subst h
+      simpa [switchConjugatePair, hhg] using
+        sum_switchPair (fun r => x r (conj g)) i j
+    · simp [switchConjugatePair, hhg, hhcg]
+
+/-- Sign-valuedness is preserved because each affected column is only
+permuted in its row index. -/
+theorem switchConjugatePair_isSign
+    (x : I → G → ℤ)
+    (hx : ∀ r h, IsSign (x r h))
+    (g : G) (i j : I) :
+    ∀ r h, IsSign (switchConjugatePair conj x g i j r h) := by
+  intro r h
+  by_cases hhg : h = g
+  · subst h
+    simp only [switchConjugatePair, if_pos]
+    unfold switchPair
+    split_ifs <;> apply hx
+  · by_cases hhcg : h = conj g
+    · simp [switchConjugatePair, hhg, hhcg, switchPair]
+      split_ifs <;> apply hx
+    · simp [switchConjugatePair, hhg, hhcg, hx]
+
+/-- A paired opposite mismatch at the selected column is corrected by the
+conjugate-paired switch. -/
+theorem switchConjugatePair_corrects_selected
+    (x y : I → G → ℤ)
+    (g : G)
+    (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => y r g)) :
+    switchConjugatePair conj x g i.1 j.1 i.1 g = y i.1 g ∧
+      switchConjugatePair conj x g i.1 j.1 j.1 g = y j.1 g := by
+  simpa [switchConjugatePair] using
+    switchPair_corrects_mismatch_pair
+      (fun r => x r g) (fun r => y r g) i j
+
+/-- If both current and target matrices are odd, correcting the selected
+mismatch pair automatically corrects the same two rows at the conjugate
+column. -/
+theorem switchConjugatePair_corrects_conjugate
+    (x y : I → G → ℤ)
+    (hx : IsOddMatrix conj x)
+    (hy : IsOddMatrix conj y)
+    (g : G) (hg : g ≠ conj g)
+    (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => y r g)) :
+    switchConjugatePair conj x g i.1 j.1 i.1 (conj g) = y i.1 (conj g) ∧
+      switchConjugatePair conj x g i.1 j.1 j.1 (conj g) = y j.1 (conj g) := by
+  have hsel := switchConjugatePair_corrects_selected conj x y g i j
+  have hodd :=
+    switchConjugatePair_odd conj hconj x hx g hg i.1 j.1
+  constructor
+  · rw [hodd i.1 g, hy i.1 g, hsel.1]
+  · rw [hodd j.1 g, hy j.1 g, hsel.2]
+
+/-- Unrelated columns remain pointwise unchanged. -/
+theorem switchConjugatePair_preserves_other_column
+    (x : I → G → ℤ)
+    (g h : G) (i j : I)
+    (hhg : h ≠ g) (hhcg : h ≠ conj g) :
+    ∀ r, switchConjugatePair conj x g i j r h = x r h :=
+  fun r => switchConjugatePair_eq_of_ne conj x g h i j hhg hhcg
+
+end ConjugatePairedSwitch
+
 end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics
