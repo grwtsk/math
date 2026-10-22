@@ -1,0 +1,237 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-signed-abel-shift-packet-468-v0.1"
+owner_repository = "grwtsk/math"
+issue = 468
+parent_issue = 461
+parent_pr = 465
+signed_packet_issue = 388
+mean_envelope_issue = 397
+route_owner_issue = 334
+canonical_target_issue = 15
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicSignedAbelShiftPacket"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicSignedAbelShiftPacket"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+stacked_parent_branch = "research/rh-scale-max-carleson-461-20261021"
+stacked_parent_revision = "ef00d2505cf775470e570d7093a47438abda6ac5"
+stacked_parent_tree = "dfdd6bf613c9c12222f127aecbd66f0743706042"
+candidate_branch = "research/rh-signed-abel-packet-468-20261021"
+theorem_source_commit = "e03145c9c54f59fffa277de35e4db2942cc04d2c"
+theorem_source_tree = "e2d5ae6067d2ded5b497407c760ba8fa97695a6d"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelShiftPacket.lean"
+theorem_source_git_blob = "6c953dad99f2e410f47ee8350a6f19b729ff8df9"
+mathematical_note_commit = "95fe8b5e67717b799c0d9f091765f121fa5b0341"
+mathematical_note_tree = "4084ec0430a070e509bcd270a892c1241ba50638"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-signed-abel-shift-packet.md"
+mathematical_note_git_blob = "a56afb6dd2134ea034bd88a37a1c707f94f8b4a1"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMertensShiftPacket"
+hypothesis = "SubpolynomialDyadicMertensShiftPacket"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[selected_increment]
+primary_shift_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weightedMertensDyadicShiftContribution_eq_abel"
+primary_packet_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weightedMertensDyadicShiftPacket_eq_signedAbelPacket"
+criterion_equivalence_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.subpolynomialDyadicSignedAbelShiftPacket_iff_shiftPacket"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicSignedAbelShiftPacket"
+proof_classification = "EXACT_FINITE_SIGNED_ABEL_REPRESENTATION"
+mathematical_conclusion = "the exact signed shift packet equals the finite signed Abel prefix-drop packet"
+rh_consequence = "CONDITIONAL_EQUIVALENT_ARITHMETIC_INTERFACE"
+next_obstruction = "prove an all-scale subpolynomial upper bound for the exact signed Abel packet without taking absolute values shiftwise"
+
+[canonical_observable]
+cutoff = "N(j,h)=2^(j+1)-h-1"
+prefix = "C_h(n)=sum_(0<=a<n) mu(a+1)mu(a+1+h)"
+weight = "w_j(b)=dyadicMertensShiftWeight j b"
+weight_drop = "Delta(j,h,t)=w_j(t+1+h)-w_j(t+2+h)"
+shift_observable = "2*sum_(t<N(j,h)) C_h(t+1)*Delta(j,h,t)"
+packet_observable = "sum_(1<=h<2^(j+1)) shift_observable(j,h)"
+codomain = "real"
+signed_prefixes = true
+signed_shift_sum = true
+absolute_value_inserted = false
+squares_inserted = false
+finite_only = true
+limiting_process = false
+external_certificate = false
+
+[abel_identity]
+generic_declaration = "finiteAbelPrefixIdentity"
+statement = "sum_(k<N) x_k q_k = sum_(t<N) prefix_(t+1)(q_t-q_(t+1)) + prefix_N q_N"
+terminal_term_retained = true
+terminal_term_removed_only_after_endpoint_zero = true
+telescope_declaration = "finiteWeightDropTelescope"
+
+[weight_drop]
+definition = "dyadicMertensShiftWeightDrop"
+nonnegative_declaration = "dyadicMertensShiftWeightDrop_nonneg"
+endpoint_zero_declaration = "dyadicMertensShiftWeight_at_cutoff"
+mass_identity_declaration = "sum_dyadicMertensShiftWeightDrop"
+initial_nonnegative_declaration = "dyadicMertensShiftInitialWeight_nonneg"
+initial_upper_bound_declaration = "dyadicMertensShiftInitialWeight_le_right_inv"
+mass_bounds_declaration = "sum_dyadicMertensShiftWeightDrop_bounds"
+positivity_classification = "NONNEGATIVE_FINITE_COEFFICIENT_FAMILY"
+packet_positivity_claimed = false
+kernel_psd_claimed = false
+measure_positivity_beyond_finite_mass = false
+
+[criterion]
+new_name = "SubpolynomialDyadicSignedAbelShiftPacket"
+existing_name = "SubpolynomialDyadicMertensShiftPacket"
+relation = "EXACT_EQUIVALENCE"
+constants_changed = false
+exponents_changed = false
+shift_range_changed = false
+source_changed = false
+supplier_constructed = false
+
+[candidate_comparison]
+selected = "EXACT_SIGNED_ABEL_PACKET"
+candidate_1 = "exact signed Abel packet; selected; equal to terminal consumer source"
+candidate_2 = "max-per-scale positive squares; valid sufficient majorant but stronger and cancellation-losing"
+candidate_3 = "normalized square or variation source; deferred pending exact comparison theorem"
+
+[positivity]
+weight_drop = "NONNEGATIVE"
+drop_mass = "NONNEGATIVE_AND_AT_MOST_RECIPROCAL_DYADIC_ENDPOINT"
+prefix = "SIGNED"
+shift_contribution = "SIGNED"
+complete_packet = "SIGNED"
+strict_positivity = false
+positive_semidefinite_form = false
+positive_kernel = false
+positive_trace = false
+global_positivity = false
+
+[statement_controls]
+factor_two_preserved = true
+positive_shift_range_complete = true
+shift_range_half_open = true
+previous_prefix_convention_preserved = true
+cutoff_exact = true
+terminal_term_explicit_before_zero_theorem = true
+weight_difference_orientation_preserved = true
+prefix_depth_is_t_plus_one = true
+cross_depth_cancellation_preserved = true
+cross_shift_cancellation_preserved = true
+
+[hostile_controls]
+terminal_term_dropped_without_zero_proof = false
+absolute_value_around_shift_inserted = false
+absolute_value_around_packet_inserted = false
+prefix_replaced_by_terminal_only_value = false
+weight_drop_reversed = false
+positive_shift_omitted = false
+factor_two_omitted = false
+nonnegative_drops_promoted_to_packet_positivity = false
+exact_representation_promoted_to_arithmetic_estimate = false
+source_text_promoted_to_kernel_acceptance = false
+conditional_rh_theorem_reported_as_rh_proof = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicSignedAbelShiftPacket"
+authored_declaration_count = 18
+definition_count = 4
+theorem_script_count = 14
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonEnergy.lean"
+git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean"
+git_blob = "4775fc209bf8d01b238b193605bd0005929ed02d"
+status = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean"
+git_blob = "fb9e3b7ec0cc6b4c5493e1c6954f625c82459d45"
+status = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+all_scale_signed_abel_estimate = true
+source_specific_cancellation_theorem = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_arithmetic_upper_bound = false
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+weak_mertens_proved = false
+gonek_hejhal_proved = false
+new_pickup_damping_paid = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "dyadicMertensShiftWeightDrop",
+  "weightedMertensDyadicShiftAbelContribution",
+  "weightedMertensDyadicSignedAbelPacket",
+  "finiteAbelPrefixIdentity",
+  "finiteWeightDropTelescope",
+  "dyadicMertensShiftWeightDrop_nonneg",
+  "dyadicMertensShiftWeight_at_cutoff",
+  "sum_dyadicMertensShiftWeightDrop",
+  "dyadicMertensShiftInitialWeight_nonneg",
+  "dyadicMertensShiftInitialWeight_le_right_inv",
+  "sum_dyadicMertensShiftWeightDrop_bounds",
+  "weightedMertensDyadicShiftContribution_eq_abel",
+  "weightedMertensDyadicShiftPacket_eq_signedAbelPacket",
+  "SubpolynomialDyadicSignedAbelShiftPacket",
+  "subpolynomialDyadicSignedAbelShiftPacket_iff_shiftPacket",
+  "subpolynomialDyadicMertensShiftPacket_of_signedAbel",
+  "subpolynomialDyadicSignedAbelShiftPacket_of_shiftPacket",
+  "riemannHypothesis_of_subpolynomialDyadicSignedAbelShiftPacket"
+]

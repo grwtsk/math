@@ -1,0 +1,194 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-uniform-mertens-two-point-prefix-391-v0.1"
+owner_repository = "grwtsk/math"
+issue = 391
+parent_issue = 388
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 389
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicUniformMertensTwoPointPrefix"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicUniformMertensTwoPointPrefix"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "d47fe2d6a70e3c8d4f7cfe2933371743a8c2d5e4"
+stacked_parent_tree = "9cc235b91f72393c7b2fbfb35434d254bba2f043"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicUniformMertensTwoPointPrefix.lean"
+new_module_git_blob = "fb9e3b7ec0cc6b4c5493e1c6954f625c82459d45"
+new_module_sha256 = "59ef8f98db1e05049202cefe3233e8b8efe6d8c212508d19c4eddfcba3738509"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-uniform-mertens-two-point-prefix.md"
+mathematical_note_git_blob = "626e6c0f86961b015e3c85659e3e1383ef19d660"
+mathematical_note_sha256 = "1e8e0fd959a8024f6e0ccf7bb145922c777fb4fbafe34b74bc26583c113aba55"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+publication_status = "PUBLISHED_SOURCE_DRAFT"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicUniformMertensTwoPointPrefix"
+authored_declaration_count = 17
+definition_count = 3
+theorem_script_count = 14
+private_helper_count = 3
+
+[[inherited_targets]]
+path = "verification/rh-dyadic-chowla-shift-packet-388-v0.1.toml"
+git_blob = "59465987df5db01f73ddb1117cd9e2f1b5fb0e6e"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicChowlaShiftPacket.lean"
+git_blob = "83ea01b7ee12f0a70f837b4b5c38fb113b1f14b8"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[diagnostics]
+engine = "python-fractions-exact"
+check_count = 459288
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 8
+exhaustive_stream_count = 6561
+checked_dyadic_scales = [1, 2, 4]
+actual_moebius_cutoff = 512
+actual_checked_dyadic_scales = 9
+normal_mode_status = "PASS"
+optimized_mode_status = "PASS"
+normal_and_optimized_reports_identical = true
+report_sha256 = "db79a713e6d28d2f8c317e4a8840f9afb81c4916a7ec38a07ed638df62a9975c"
+current_prefix_mutation_rejected_count = 69234
+missing_factor_two_mutation_rejected_count = 37080
+dropped_terminal_mutation_rejected_count = 30948
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+all_positive_shifts_required = true
+all_available_prefix_lengths_required = true
+uniform_scale_constant_required = true
+fixed_shift_nonuniformity_not_sufficient = true
+abel_terminal_term_required = true
+right_endpoint_weight_zero_required = true
+previous_prefix_index_required = true
+ordered_pair_factor_two_required = true
+exact_signed_packet_remains_primary = true
+uniform_absolute_envelope_only_sufficient = true
+finite_tables_not_universal = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+uniform_two_point_estimate_proved = false
+converse_from_shift_packet = false
+converse_from_riemann_hypothesis = false
+
+[[declarations]]
+source_name = "mertensTwoPointPrefix"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "DyadicMertensTwoPointEnvelope"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicUniformMertensTwoPointPrefix"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "mertensTwoPointPrefix_zero"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "mertensTwoPointPrefix_succ"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_at_right"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_nonneg"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_step_antitone"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_le_right_inv"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "weightedMertensDyadicShiftContribution_eq_range"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "finite_abel_prefix"
+visibility = "private"
+kind = "theorem"
+
+[[declarations]]
+source_name = "finite_weight_drop_telescope"
+visibility = "private"
+kind = "theorem"
+
+[[declarations]]
+source_name = "abs_weighted_sum_le_of_prefix_bound"
+visibility = "private"
+kind = "theorem"
+
+[[declarations]]
+source_name = "abs_weightedMertensDyadicShiftContribution_le"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "abs_weightedMertensDyadicShiftPacket_le"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_of_uniformTwoPointPrefix"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicUniformMertensTwoPointPrefix"
+visibility = "public"
+kind = "theorem"

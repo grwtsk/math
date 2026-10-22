@@ -1,0 +1,206 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-tree-maximal-437-v0.1"
+owner_repository = "grwtsk/math"
+issue = 437
+parent_issue = 410
+parent_pr = 411
+witness_issue = 430
+witness_pr = 432
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+build_target = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+stacked_parent_branch = "research/rh-maximal-chowla-energy-410-20261021"
+stacked_parent_revision = "4628cc379363efeee79f717f11423ba8e036345f"
+stacked_parent_tree = "99830f35f7648c0a5259bcd45d3e97ca7c8f3f48"
+candidate_branch = "research/rh-dyadic-block-maximal-437-20261021"
+theorem_source_commit = "8660fef4f22a3cc192512b04ee7a9869ae2f24f0"
+theorem_source_tree = "2e0979e073c65b557e0deb5d7f04f7581f6755e3"
+theorem_source_path = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
+theorem_source_git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+mathematical_note_commit = "a9d64a5079ba88526db2e3a04fab24ac0ced40d9"
+mathematical_note_tree = "cfb710d379c1546c40621ce85ff0ddab4a4c2ebc"
+mathematical_note_path = "docs/mathematics/Analysis/FiniteSum/aligned-dyadic-tree-maximal.md"
+mathematical_note_git_blob = "1e6ec2098bb765650aaf8bcea2787afb0fc605ce"
+namespace = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+module_git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+hypothesis = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+missing_premise = "all-scale subpolynomial upper bound for canonical maximal two-point Moebius-prefix energy"
+
+[selected_increment]
+pointwise_declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.finitePrefixSum_sq_le_dyadicTreeSquareEnergy"
+maximal_declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.dyadicPrefixMaximum_sq_le_dyadicTreeSquareEnergy"
+pointwise_statement = "N <= 2^m -> finitePrefixSum a N ^ 2 <= ((m:Real)+1) * dyadicTreeSquareEnergy m a"
+maximal_statement = "dyadicPrefixMaximum m a ^ 2 <= ((m:Real)+1) * dyadicTreeSquareEnergy m a"
+proof_classification = "EXACT_DETERMINISTIC_FINITE_ALGEBRA"
+rh_consequence = "SUPPLIES_GENERIC_FINITE_COMPARISON_INTERFACE"
+next_obstruction = "explicit scale-block double-sum identity and zero-padded Moebius two-point adapter"
+
+[canonical_observable]
+prefix_sum = "finitePrefixSum"
+aligned_block_sum = "alignedDyadicBlockSum"
+block_definition = "sum over [q*2^r,(q+1)*2^r)"
+tree_energy = "dyadicTreeSquareEnergy"
+prefix_maximum = "dyadicPrefixMaximum"
+prefix_range = "0 <= N <= 2^m"
+codomain = "real"
+normalization = "recursive root-plus-left-plus-right aligned dyadic tree"
+absolute_value_location = "only in the finite prefix maximum, after each signed prefix sum"
+block_square_location = "after signed summation inside each aligned block"
+
+[positivity]
+energy_property = "NONNEGATIVE_FINITE_SUM_OF_SQUARES"
+prefix_max_property = "NONNEGATIVE_FINITE_ABSOLUTE_MAXIMUM"
+depth_factor_property = "STRICTLY_POSITIVE"
+strict_global_positivity = false
+positive_semidefinite_form_claimed = false
+kernel_positivity_claimed = false
+measure_positivity_claimed = false
+trace_or_state_positivity_claimed = false
+averaged_arithmetic_positivity_claimed = false
+finite_height_weil_positivity_claimed = false
+global_positivity_claimed = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_private_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+arithmetic_adapter_included = false
+explicit_double_sum_equivalence_included = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+authored_declaration_count = 20
+public_definition_count = 6
+public_theorem_script_count = 12
+private_helper_count = 2
+
+[[dependencies]]
+source = "Mathlib"
+uses = [
+  "Finset finite range sums",
+  "partialSups_le_iff",
+  "le_partialSups_of_le",
+  "Real.sqrt",
+  "sq_le_sq₀",
+  "omega",
+  "nlinarith"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[downstream_dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicMaximalMertensTwoPointEnergy.lean"
+git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+status = "STACKED_SOURCE_DRAFT_NOT_IMPORTED_BY_GENERIC_MODULE"
+
+[statement_controls]
+finite_prefix_is_half_open = true
+zero_prefix_is_included = true
+aligned_block_is_half_open = true
+block_length_is_power_of_two = true
+right_subtree_shift_is_exact_power_of_two = true
+root_block_retained_at_every_successor = true
+left_subtree_retained = true
+right_subtree_retained = true
+signed_sum_precedes_square = true
+termwise_absolute_values_not_used_inside_blocks = true
+depth_factor_retained = true
+pointwise_and_maximal_forms_separate = true
+
+[hostile_controls]
+terminal_endpoint_not_substituted_for_prefix_maximum = true
+single_root_block_not_substituted_for_tree_energy = true
+overlapping_arbitrary_intervals_not_claimed = true
+factor_m_plus_one_not_dropped = true
+recursive_energy_not_silently_identified_with_double_sum = true
+finite_comparison_not_promoted_to_arithmetic_estimate = true
+finite_comparison_not_promoted_to_rh = true
+witness_pr_not_treated_as_logical_dependency = true
+quintic_spectral_hodge_topological_k_theory_roles_not_inferred = true
+
+[finite_controls]
+depth_zero_identity = "E_0(a)=a(0)^2"
+depth_one_identity = "E_1(a)=(a(0)+a(1))^2+a(0)^2+a(1)^2"
+top_block_square_is_energy_summand = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+explicit_coordinate_energy_identity_proved = false
+moebius_zero_padding_adapter_proved = false
+shift_summed_block_energy_bound_proved = false
+logarithmic_factor_absorbed = false
+chowla_conjecture_proved = false
+elliott_conjecture_proved = false
+sarnak_conjecture_proved = false
+new_pickup_damping_paid = false
+finite_height_rh_proved = false
+zero_free_region_proved = false
+riemann_hypothesis_proved = false
+
+[public_declaration_inventory]
+names = [
+  "finitePrefixSum",
+  "shiftedSequence",
+  "alignedDyadicBlockSum",
+  "dyadicTreeSquareEnergy",
+  "dyadicLevelCount",
+  "dyadicPrefixMaximum",
+  "finitePrefixSum_zero",
+  "finitePrefixSum_one",
+  "finitePrefixSum_add",
+  "alignedDyadicBlockSum_zero_index",
+  "dyadicLevelCount_eq",
+  "dyadicLevelCount_pos",
+  "dyadicTreeSquareEnergy_nonneg",
+  "alignedTopBlock_sq_le_dyadicTreeSquareEnergy",
+  "finitePrefixSum_sq_le_dyadicTreeSquareEnergy",
+  "dyadicPrefixMaximum_sq_le_dyadicTreeSquareEnergy",
+  "dyadicTreeSquareEnergy_zero",
+  "dyadicTreeSquareEnergy_one"
+]
+
+[private_source_helpers]
+lexical_names = [
+  "add_sq_le_succ_weight",
+  "finitePrefixSum_sq_le_dyadicTreeSquareEnergy_aux"
+]
+exact_elaborated_names_status = "NOT_RUN"
