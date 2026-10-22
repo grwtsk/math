@@ -1,0 +1,52 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-staircase-824-v0.1"
+owner_repository = "grwtsk/math"
+issue = 824
+parent_issue = 816
+parent_pr = 820
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedStaircase"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedStaircase"
+
+[source_binding]
+stacked_parent_revision = "fe225f62f5c46a2ad7fc65c8c1498c5ba3c41140"
+candidate_branch = "research/rh-signed-staircase-824"
+theorem_source_commit = "a5304004a99a804985ea9a95b32ce034c1914f69"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedStaircase.lean"
+theorem_source_git_blob = "7289e49d7bcf3f0a896dd6c22080189c5dda8216"
+
+[selected_increment]
+active_cells = "coreGrowingShiftSignedActiveCells"
+prefix_set = "coreGrowingShiftSignedStaircasePrefixSet"
+shift_set = "coreGrowingShiftSignedStaircaseShiftSet"
+coordinate_map = "coreGrowingShiftSignedActiveCellToStaircase"
+map_membership = "coreGrowingShiftSignedActiveCellToStaircase_mem"
+map_injective = "coreGrowingShiftSignedActiveCellToStaircase_injective"
+map_surjective = "coreGrowingShiftSignedActiveCellToStaircase_surjective"
+active_to_staircase = "coreGrowingShiftSignedActiveCellEnergy_eq_inheritedStaircase"
+clamped_shift = "coreGrowingShiftSignedStaircaseClampedShift"
+explicit_weight = "coreGrowingShiftSignedStaircaseWeight"
+weight_identity = "coreGrowingShiftSignedStaircaseInheritedWeight_eq_explicit"
+signed_packet = "coreGrowingShiftSignedStaircasePacket"
+packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_signedStaircase"
+signed_source = "SubpolynomialCoreGrowingShiftSignedStaircasePacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedStaircasePacket_iff_firstDifference"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedStaircasePacket"
+proof_classification = "EXACT_INJECTIVE_FINITE_REINDEXING_AND_RECIPROCAL_COEFFICIENT_IDENTITY"
+next_obstruction = "prove a signed dispersion estimate on the exact prefix/shift staircase without Cauchy or termwise absolute values"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+signed_dispersion_estimate_proved = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+positive_staircase_rehabilitated = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false
