@@ -1,0 +1,39 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-depth-transpose-579-v0.1"
+owner_repository = "grwtsk/math"
+issue = 579
+parent_issue = 575
+parent_pr = 577
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalDepthTranspose"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalDepthTranspose"
+
+[source_binding]
+stacked_parent_revision = "5c7606863a30b8763a6298bfb797e095130982bd"
+candidate_branch = "research/rh-depth-transpose-579"
+theorem_source_commit = "7842a2ce50f9414cfb6d2cf6dff78888b7569782"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalDepthTranspose.lean"
+theorem_source_git_blob = "3892f478c57eeb1f4327328988fb5515c4deae02"
+
+[selected_increment]
+interior_coefficient = "coreInteriorLengthCoefficient"
+terminal_coefficient = "coreTerminalLengthCoefficient"
+coefficient_mass = "coreLengthCoefficientMass"
+transposed_packet = "transposedIncompatibleDyadicL1Packet"
+transpose_adapter = "IncompatibleDepthTransposeAdapter"
+transposed_supplier = "SubpolynomialTransposedIncompatibleDyadicL1Packet"
+lengthwise_supplier = "IncompatibleLengthwiseSupplier"
+proof_classification = "LENGTHWISE_DEPTH_TRANSPOSITION_INTERFACE"
+next_obstruction = "construct finite transpose comparison and bound aggregated Abel coefficient masses"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+transpose_adapter_constructed = false
+transposed_supplier_proved = false
+riemann_hypothesis_proved = false
