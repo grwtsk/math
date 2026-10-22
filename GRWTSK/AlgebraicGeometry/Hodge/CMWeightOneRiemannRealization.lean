@@ -365,17 +365,6 @@ def WeightOneCMRealization.pureTensorCoordinate
   CMArchimedeanPositivity.baseComplexEmbedding E a *
     CMArchimedeanPositivity.fieldCoordinates E x σ
 
-/-- The realization's rational inclusion data canonically constructs the
-pure-tensor comparison; no additional tensor-level comparison supplier is
-needed. -/
-def WeightOneCMRealization.pureTensorActualH1Comparison
-    {v : OddSignRow E}
-    {X : SignControlledXi E v}
-    (R : WeightOneCMRealization E v X) :
-    PureTensorActualH1Comparison E R where
-  toActual := R.canonicalTensorToActual
-  pureTensor_coordinates := R.canonicalTensorToActual_coordinates_tmul
-
 /-- Pure-tensor compatibility version of the canonical tensor to actual H1
 comparison.
 
@@ -390,6 +379,18 @@ structure PureTensorActualH1Comparison
     ∀ a x σ,
       R.h1ComplexCoordinates (toActual (a ⊗ₜ[ℚ] x)) σ =
         R.pureTensorCoordinate a x σ
+
+/-- The realization's rational inclusion data canonically constructs the
+pure-tensor comparison; no additional tensor-level comparison supplier is
+needed. -/
+def WeightOneCMRealization.pureTensorActualH1Comparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    PureTensorActualH1Comparison E R where
+  toActual := R.canonicalTensorToActual
+  pureTensor_coordinates := R.canonicalTensorToActual_coordinates_tmul
+
 
 /-- Exact comparison between the canonical tensor model and the actual
 complexified H1 realization.
