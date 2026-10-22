@@ -3,6 +3,7 @@ Uses Mathlib finite sets, logarithms and real powers (Apache-2.0).
 OpenAI Codex formalization assistance. Finite exceptional sets at every
 positive epsilon are equivalent to the frozen target; no finiteness is asserted. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetOptimization
 import Mathlib.Algebra.Order.Archimedean.Real.Basic
 
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
