@@ -80,9 +80,9 @@
       },
       "adapter": {
         "path": "verification/lean-provider-adapters/BitMatrix/Network/Permutation.lean",
-        "sha256": "746aa1a5765081488a01f8c5605382af6fad5a576928c1dce60049398b00ff25",
-        "byte_count": 1762,
-        "git_blob": "b20800728554bbefd1c3c375adf64009ce5ed3dd",
+        "sha256": "9370184c4de8ee5efc2237607e5678748ec4cbe3412b78f02de4f04d4835dd87",
+        "byte_count": 4003,
+        "git_blob": "ee116edc52b5e0ad40b3056e618f692107230504",
         "mode": "100644"
       },
       "repaired_components": [
