@@ -948,16 +948,50 @@ theorem FiniteGaloisTensorCarrier.scalarConjugate_restrict
     GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
       C.L σ C.tensor
 
-/-- Extra condition needed to use a finite Galois carrier as an actual CM
-weight-one realization field.
+/-- Finite Galois intermediate field of AlgebraicNumbers carrying a
+CM-field structure.  This is the correct field object for a uniform CM
+realization of one switched tensor. -/
+structure CMGaloisIntermediateField where
+  carrier : FiniteGaloisIntermediateField ℚ AlgebraicNumbers
+  [isCMField : IsCMField carrier]
 
-Finite Galois containment itself is local. The CM property is deliberately
-kept separate. -/
+instance (E : CMGaloisIntermediateField) :
+    FiniteDimensional ℚ E.carrier :=
+  inferInstance
+
+instance (E : CMGaloisIntermediateField) :
+    IsGalois ℚ E.carrier :=
+  inferInstance
+
+instance (E : CMGaloisIntermediateField) :
+    IsCMField E.carrier :=
+  E.isCMField
+
+/-- A switched tensor supported on one finite Galois CM intermediate field. -/
 structure CMFiniteGaloisTensorCarrier
     {V : Type*} [AddCommGroup V] [Module ℚ V]
-    (t : AlgebraicNumbers ⊗[ℚ] V)
-    extends FiniteGaloisTensorCarrier t where
-  [isCMField : IsCMField L]
+    (t : AlgebraicNumbers ⊗[ℚ] V) where
+  E : CMGaloisIntermediateField
+  tensor : E.carrier ⊗[ℚ] V
+  inclusion_eq :
+    coefficientInclusion tensor = t
+
+/-- Absolute scalar conjugation restricts uniformly through a CM-supported
+finite Galois carrier. -/
+theorem CMFiniteGaloisTensorCarrier.scalarConjugate_restrict
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {t : AlgebraicNumbers ⊗[ℚ] V}
+    (C : CMFiniteGaloisTensorCarrier t)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          (σ.restrictNormal C.E.carrier) C.tensor) =
+      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ t := by
+  rw [← C.inclusion_eq]
+  exact
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
+      C.E.carrier σ C.tensor
 
 /-- One realized Hodge witness for a descent-side monomial generator.
 
