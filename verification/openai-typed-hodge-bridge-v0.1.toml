@@ -962,3 +962,23 @@ nonclaims = [
   "outer induction invariant only",
   "no Hodge or algebraicity claim"
 ]
+
+
+[[local_target]]
+name = "finite paired-switch correction of one conjugate column pair"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.exists_pairedColumnReach_corrects"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite row index type",
+  "involutive column conjugation",
+  "odd +/-1-valued current and target matrices",
+  "selected column distinct from its conjugate",
+  "equal selected-column sums"
+]
+nonclaims = [
+  "normalizes one conjugate column pair by a finite reachability chain",
+  "preserves oddness, sign-valuedness and all column sums",
+  "does not yet iterate over all conjugate-pair representatives",
+  "no Hodge or algebraicity conclusion"
+]
