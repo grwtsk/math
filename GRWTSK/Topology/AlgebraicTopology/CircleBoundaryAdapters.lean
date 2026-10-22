@@ -1,9 +1,7 @@
 /-
 Copyright (c) 2026 R.A. Jacob Martone. Released under MIT license.
 Formalization assistance: OpenAI ChatGPT.
-SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
-The independently checked CircleCone.lean is not imported because it has
-not yet been published on this branch.
+The period-one homeomorphism is the concrete pinned Mathlib construction.
 -/
 import Mathlib.Analysis.SpecialFunctions.Complex.Circle
 import Mathlib.Topology.Category.TopCat.Sphere
@@ -14,10 +12,9 @@ import Mathlib.Topology.Category.TopCat.Sphere
 Use the actual pinned Mathlib homeomorphism. No second circle
 equivalence, radial map, or disk model is invented here.
 
-The remaining complex-disk to TopCat.disk 2 adapter requires an
-explicit Euclidean-coordinate isometry and boundary commutative
-square. The staged CircleCone radial theorem remains a separate
-unpublished verified input.
+The companion `ComplexDisk` module identifies the complex disk with
+`TopCat.disk 2` through the explicit Euclidean-coordinate isometry and
+proves its boundary square. This module records the circle parameterization.
 -/
 set_option autoImplicit false
 noncomputable section
@@ -66,6 +63,6 @@ theorem boundaryCompatible_iff
     funext z
     exact h z
   · intro h z
-    simpa only [h, Function.comp_apply]
+    simp only [h, Function.comp_apply]
 
 end GRWTSK.Topology.AlgebraicTopology.CircleBoundaryAdapters
