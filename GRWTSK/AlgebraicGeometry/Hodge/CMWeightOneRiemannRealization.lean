@@ -240,6 +240,21 @@ noncomputable def canonicalTensorComplexCoordinate
     (CMGaloisEvaluation.evaluationEquiv ℚ E t
       ((CMGaloisEmbeddingMatrix.galIndexEquiv ℚ E).symm σ))
 
+/-- Pure-tensor formula for the canonical tensor complex coordinate.
+
+The first tensor factor contributes the chosen complex embedding, while the
+second contributes the Galois-labelled field coordinate. -/
+theorem canonicalTensorComplexCoordinate_tmul
+    (a x : E)
+    (σ : E ≃ₐ[ℚ] E) :
+    canonicalTensorComplexCoordinate E (a ⊗ₜ[ℚ] x) σ =
+      CMArchimedeanPositivity.baseComplexEmbedding E a *
+        CMArchimedeanPositivity.fieldCoordinates E x σ := by
+  simp [canonicalTensorComplexCoordinate,
+    CMGaloisEvaluation.evaluationEquiv_tmul,
+    CMArchimedeanPositivity.fieldCoordinates,
+    CMArchimedeanPositivity.complexEmbeddingAt]
+
 /-- A vector in one canonical embedding eigenspace has zero canonical complex
 coordinate at every different Galois automorphism. -/
 theorem canonicalTensorComplexCoordinate_eq_zero_of_ne
@@ -270,6 +285,47 @@ theorem canonicalTensorComplexCoordinate_eq_zero_of_ne
       ℚ E jτ jσ hji ht
   simp [canonicalTensorComplexCoordinate,
     CMGaloisEvaluation.evaluationEquiv_apply, jσ, hz]
+
+/-- Bilinear coordinate formula that a tensor-to-H1 comparison is expected
+to preserve on pure tensors. -/
+def WeightOneCMRealization.pureTensorCoordinate
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (a x : E)
+    (σ : E ≃ₐ[ℚ] E) : ℂ :=
+  CMArchimedeanPositivity.baseComplexEmbedding E a *
+    CMArchimedeanPositivity.fieldCoordinates E x σ
+
+/-- Pure-tensor compatibility version of the canonical tensor to actual H1
+comparison.
+
+This is strictly narrower than arbitrary coordinate compatibility: it states
+the concrete bilinear formula on generators. -/
+structure PureTensorActualH1Comparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) where
+  toActual : E ⊗[ℚ] E → R.H1C
+  pureTensor_coordinates :
+    ∀ a x σ,
+      R.h1ComplexCoordinates (toActual (a ⊗ₜ[ℚ] x)) σ =
+        R.pureTensorCoordinate a x σ
+  coordinate_compatibility :
+    ∀ t σ,
+      R.h1ComplexCoordinates (toActual t) σ =
+        canonicalTensorComplexCoordinate E t σ
+
+/-- Forget the pure-tensor formula and retain the comparison consumed
+downstream. -/
+def PureTensorActualH1Comparison.toCanonicalComparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    {R : WeightOneCMRealization E v X}
+    (C : PureTensorActualH1Comparison E R) :
+    CanonicalTensorActualH1Comparison E R where
+  toActual := C.toActual
+  coordinate_compatibility := C.coordinate_compatibility
 
 /-- Exact comparison between the canonical tensor model and the actual
 complexified H1 realization.
