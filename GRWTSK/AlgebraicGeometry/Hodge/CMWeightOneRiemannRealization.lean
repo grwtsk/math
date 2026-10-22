@@ -56,9 +56,9 @@ structure WeightOneCMRealization
   geometricCarrier : Type*
   /-- Opaque rational H1 realization. -/
   H1 : Type*
-  H1_addCommGroup : AddCommGroup H1
-  H1_moduleQ : Module ℚ H1
-  H1_finiteDimensional : FiniteDimensional ℚ H1
+  [H1_addCommGroup : AddCommGroup H1]
+  [H1_moduleQ : Module ℚ H1]
+  [H1_finiteDimensional : FiniteDimensional ℚ H1]
   /-- Rational comparison with the original CM field vector space. -/
   h1Equiv : H1 ≃ₗ[ℚ] E
   /-- Complexified coordinate comparison carrying the Hodge decomposition. -/
@@ -74,23 +74,17 @@ structure WeightOneCMRealization
   selected lattice. -/
   polarization_integral :
     ∀ a b : Fin n → ℤ,
-      ∃ m : ℤ,
-        (CMLatticePolarization.latticeScale E X : ℚ) *
-            CMTracePolarization.tracePairing E X.xi
-              (CMLatticePolarization.latticeVector E a)
-              (CMLatticePolarization.latticeVector E b) =
-          (m : ℚ)
+      (CMLatticePolarization.latticeScale E X : ℚ) *
+          CMTracePolarization.tracePairing E X.xi
+            (CMLatticePolarization.latticeVector E a)
+            (CMLatticePolarization.latticeVector E b) =
+        (CMLatticePolarization.integralPairing E X a b : ℚ)
   /-- Marker that the geometric carrier is projective/polarized in the sense
   required by the external classical theorem.
 
   This proposition is intentionally supplied, not proved locally. -/
   isPolarizedProjective : Prop
   polarizedProjective_proof : isPolarizedProjective
-
-attribute [instance]
-  WeightOneCMRealization.H1_addCommGroup
-  WeightOneCMRealization.H1_moduleQ
-  WeightOneCMRealization.H1_finiteDimensional
 
 /-- Exact external theorem interface still required after the local
 pre-Riemann construction.
