@@ -756,6 +756,60 @@ This discharges only the rational arithmetic. The valuation identity itself,
 the active Hecke character, and the Frobenius-slope theorem remain exact
 external premises.
 
+## 5d. Canonical maximal-real-subfield sign selection
+
+The abstract totally-real rescaling boundary is now instantiated locally for
+the canonical maximal real subfield
+
+\[
+E^+=\operatorname{maximalRealSubfield}(E).
+\]
+
+The source module
+\`GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean\`
+uses only local results and pinned Mathlib interfaces:
+
+1. order the rational complex embeddings of the totally real field \(E^+\);
+2. lift each embedding \(E^+\to\mathbf C\) to a complex embedding of \(E\);
+3. use Galois normality of \(E/\mathbf Q\) to write that lift as the fixed base
+   complex embedding composed with a rational Galois automorphism;
+4. prove that two rational automorphisms agreeing on \(E^+\) differ by an
+   \(E^+\)-automorphism;
+5. use
+   \[
+   \#\operatorname{Gal}(E/E^+)=2
+   \]
+   to classify that difference as either the identity or canonical complex
+   conjugation.
+
+This produces the local constructor
+
+~~~text
+CMRealRescaling.canonicalMaximalRealRescalingInterface
+~~~
+
+and therefore discharges the final supplier required by finite totally-real
+sign approximation.  In particular, for every local odd CM sign row \(v\),
+
+~~~text
+CMRealRescaling.nonempty_signControlledXi_canonical
+  : Nonempty (SignControlledXi E v)
+~~~
+
+is now a source-level endpoint.  It starts from the locally constructed
+nonzero anti-invariant trace-polarization seed, chooses a conjugation-fixed
+factor in \(E^+\) with the required simultaneous real signs, and rescales the
+seed to obtain the prescribed signs of all \(\operatorname{Im}\sigma(\xi)\).
+
+This removes **archimedean sign selection** from the external manuscript
+boundary.  It does not identify the positive coordinate energy with the
+complexification of the rational trace pairing under the actual Hodge
+conjugation/Weil operator, construct an integral lattice, apply the Riemann
+criterion, or prove the independent four-factor algebraicity theorem.
+
+Verification status remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+No elaboration or compile receipt is represented by this source increment.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
