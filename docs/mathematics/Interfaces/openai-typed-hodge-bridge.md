@@ -954,6 +954,58 @@ Once those two identifications are supplied, \(q_i\neq0\), the product
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4o. Scalar-conjugated middle lines are locally proportional in the canonical model
+
+The manuscript's statement that the second middle vector is a nonzero scalar
+multiple of the conjugate of the first has a purely one-dimensional
+linear-algebra component.  That component is now local.
+
+\`CMEmbeddingTransport.lean\` proves:
+
+~~~text
+scalarConjugate_symm_apply
+scalarConjugate_ne_zero
+exists_ne_zero_smul_scalarConjugate_eq
+~~~
+
+The first two statements show that scalar conjugation on the canonical tensor
+model is invertible and preserves nonzero vectors.  The final theorem combines
+the local embedding-line transport law with the already-proved
+one-dimensionality of canonical Galois eigenspaces.
+
+Thus, if
+
+\[
+\beta\in L_\tau,\qquad
+\gamma\in L_{\sigma\tau},
+\qquad
+\beta,\gamma\neq0,
+\]
+
+then locally
+
+\[
+\gamma=c\,\sigma(\beta)
+\]
+
+for some nonzero scalar \(c\).
+
+The geometric switch module exposes the same conclusion through
+
+~~~text
+CanonicalTransportedMiddleLineData.exists_scale
+~~~
+
+What remains external is no longer the one-dimensional proportionality
+argument itself.  The remaining comparison is geometric: identify the actual
+cohomological embedding lines in \(H^1(B(v))\) and their scalar conjugation
+with these canonical tensor-model eigenspaces.
+
+After that comparison, the only independent input needed for \(q_i\neq0\) is
+the ample-class Hodge--Riemann positivity identification.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
