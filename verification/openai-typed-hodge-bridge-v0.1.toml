@@ -363,3 +363,11 @@ status = "SOURCE_DRAFT_NOT_RUN"
 upstream_obligations = ["NumberField E", "IsCMField E", "IsGalois Q E"]
 source_dependency = "Mathlib.NumberTheory.NumberField.CMField"
 nonclaims = ["no CM Hodge structure U(v)", "no embedding eigenspace decomposition", "no H^1 realization"]
+
+
+[[local_target]]
+name = "Galois CM specialized odd-sign profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMNumberFieldIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex.fourBalance_twoTwoSignProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["NumberField E", "IsCMField E", "IsGalois Q E", "four odd sign rows", "four-label balance"]
