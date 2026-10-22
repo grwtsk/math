@@ -644,6 +644,53 @@ claim.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4h. Conjugate-paired row switches preserve CM oddness
+
+The one-column pairing lemma now feeds a stronger local operation in
+\`CMFourFactorSwitchCombinatorics.lean\`.
+
+For an odd sign matrix \(x_i(g)\), a selected column \(g\), and rows \(i,j\),
+the source defines a paired switch that swaps rows \(i,j\) at both \(g\) and
+its conjugate \(cg\).
+
+Because
+
+\[
+x_i(cg)=-x_i(g),
+\]
+
+using the same row transposition at both columns is exactly the manuscript's
+"opposite swap at the conjugate coordinate."
+
+The local source proves:
+
+~~~text
+switchConjugatePair_odd
+sum_switchConjugatePair
+switchConjugatePair_isSign
+switchConjugatePair_corrects_selected
+switchConjugatePair_corrects_conjugate
+switchConjugatePair_preserves_other_column
+~~~
+
+Thus one atomic correction now has all invariants required for iteration:
+
+- oddness is preserved;
+- all entries remain \(\pm1\);
+- every column sum is preserved;
+- the selected mismatch pair is corrected at \(g\);
+- its conjugate entries are simultaneously corrected at \(cg\);
+- every unrelated column is pointwise unchanged.
+
+The remaining finite-combinatorial frontier is now only to iterate these
+paired corrections over representatives of conjugate column pairs and prove
+termination at the target matrix.
+
+No Hodge, tensor-descent, or algebraicity statement is inferred from this
+operation.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
