@@ -35,6 +35,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization
 
+open scoped TensorProduct
 open CMNumberFieldIndex
 open CMArchimedeanPositivity
 open CMRiemannForm
