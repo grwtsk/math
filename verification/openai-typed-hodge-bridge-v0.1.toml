@@ -468,12 +468,12 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "existence of xi with the prescribed simultaneous archimedean sign profile beyond generic anti-invariance, identification of the local coordinate Weil form with the base-changed rational trace pairing under the Hodge conjugation/Weil operator, integral lattice scaling, and Riemann realization by B(v)"
+statement_role = "identification of the local coordinate Weil form with the base-changed rational trace pairing under the Hodge conjugation/Weil operator, integral lattice scaling, and Riemann realization by B(v)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
 status = "OPEN"
 nonclaims = [
-  "alternation and nondegeneracy are local source targets",
-  "positivity and Riemann realization remain external"
+  "alternation, nondegeneracy, coordinate positivity, and canonical archimedean sign selection are local source targets",
+  "complexified trace-pairing identification, integral lattice scaling, and Riemann realization remain external"
 ]
 
 
@@ -526,7 +526,7 @@ upstream_obligations = [
   "sign-controlled xi with 0 < -v(sigma)*Im(sigma(xi)) for every Galois embedding label"
 ]
 nonclaims = [
-  "does not construct such xi",
+  "this theorem consumes sign-controlled xi; its canonical constructor is a separate local target in CMRealRescaling",
   "does not identify the coordinate energy with i psi_xi(u,conj u)",
   "does not apply the Riemann criterion"
 ]
@@ -640,6 +640,37 @@ upstream_obligations = [
   "RealRescalingInterface identifying a totally real fixed-field model with representatives of CM conjugate Galois pairs"
 ]
 nonclaims = [
-  "canonical E-plus instantiation not yet proved",
+  "generic interface theorem; canonical E-plus construction is recorded separately",
   "no integral lattice or Riemann criterion"
+]
+
+[[local_target]]
+name = "canonical maximal-real-subfield rescaling interface"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling.canonicalMaximalRealRescalingInterface"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "Mathlib maximal real subfield and quadratic CM conjugation",
+  "Galois extension of real embeddings to E"
+]
+nonclaims = [
+  "source-level canonical E-plus instantiation only; no compile or kernel receipt",
+  "no complexified trace-pairing identification",
+  "no integral lattice, Riemann criterion, or four-factor algebraicity"
+]
+
+[[local_target]]
+name = "canonical archimedean sign-controlled xi existence"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling.nonempty_signControlledXi_canonical"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "odd CM sign row v"
+]
+nonclaims = [
+  "uses the local anti-invariant seed and finite totally-real sign approximation",
+  "no equality yet between coordinate energy and the complexified rational trace pairing",
+  "no integral lattice, Riemann criterion, or four-factor algebraicity theorem"
 ]
