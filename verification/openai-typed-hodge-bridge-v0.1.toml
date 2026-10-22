@@ -468,12 +468,12 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "integral lattice scaling and Riemann realization by B(v)"
+statement_role = "Riemann bilinear criterion and realization by B(v)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
 status = "OPEN"
 nonclaims = [
   "alternation, nondegeneracy, coordinate positivity, canonical archimedean sign selection, and the complexified trace-pairing/Hodge-operator comparison are local source targets",
-  "integral lattice scaling and Riemann realization remain external"
+  "Riemann bilinear criterion and abelian-variety realization remain external"
 ]
 
 
@@ -580,7 +580,7 @@ upstream_obligations = [
 ]
 nonclaims = [
   "coordinate Weil form is not yet proved equal to the base-changed rational trace pairing under Hodge conjugation",
-  "no integral lattice or Riemann criterion"
+  "integral lattice scaling is now a separate local target; no Riemann criterion"
 ]
 
 
@@ -641,7 +641,7 @@ upstream_obligations = [
 ]
 nonclaims = [
   "generic interface theorem; canonical E-plus construction is recorded separately",
-  "no integral lattice or Riemann criterion"
+  "integral lattice scaling is now a separate local target; no Riemann criterion"
 ]
 
 [[local_target]]
@@ -687,7 +687,7 @@ upstream_obligations = [
 ]
 nonclaims = [
   "identifies the coordinate bilinear form with the rational trace pairing only after explicit base change",
-  "no integral lattice or Riemann criterion"
+  "integral lattice scaling is now a separate local target; no Riemann criterion"
 ]
 
 [[local_target]]
@@ -703,4 +703,47 @@ upstream_obligations = [
 nonclaims = [
   "source-level coordinate/base-change identification only; no compile or kernel receipt",
   "no integral lattice, Riemann criterion, or four-factor algebraicity"
+]
+
+
+[[local_target]]
+name = "full integer-coordinate CM lattice"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMLatticePolarization.latticeVector_injective"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite-dimensional rational CM field E"
+]
+nonclaims = [
+  "integer-coordinate presentation in a fixed rational basis",
+  "no topological/discreteness theorem beyond this algebraic full-rank presentation",
+  "no Riemann criterion"
+]
+
+[[local_target]]
+name = "denominator-cleared integral CM trace pairing"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMLatticePolarization.scaled_tracePairing_lattice_integral"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi",
+  "rational trace-pairing matrix"
+]
+nonclaims = [
+  "clears all matrix denominators simultaneously with one positive integer scale",
+  "no Riemann bilinear criterion or abelian-variety realization"
+]
+
+[[local_target]]
+name = "canonical integral lattice polarization certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMLatticePolarization.canonicalIntegralLatticePolarization"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "records injective integer coordinates, nonzero scale, integral alternating pairing and exact scaled-pairing identity",
+  "no Riemann criterion",
+  "no four-factor algebraicity theorem"
 ]
