@@ -557,6 +557,34 @@ theorem normalized_full_subtype_characters_eq_one_add_mixed
     simpa [shiftSubsetValues] using empty_character_root_pair_normalization M hM
   rw [hempty, normalized_nonempty_subtype_characters_eq_mixed M H hM]
 
+/-- The complete normalized natural-number powerset character sum
+equals the corresponding complete subtype-coordinate character sum.
+This is the exact final reindexing, before identifying the detector. -/
+theorem normalized_full_powerset_eq_subtype_characters
+    (M : ℕ) (H : Finset ℕ) :
+    (∑ T ∈ H.powerset,
+      ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          (-1 : ℚ) ^ T.card *
+            ∏ h ∈ T,
+              (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2)) =
+      ∑ S : Finset {h : ℕ // h ∈ H},
+        ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          (-1 : ℚ) ^ (shiftSubsetValues H S).card *
+            ∏ h ∈ shiftSubsetValues H S,
+              (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2) := by
+  exact sum_powerset_eq_subtype_sum H
+    (fun T =>
+      ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          (-1 : ℚ) ^ T.card *
+            ∏ h ∈ T,
+              (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2))
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
