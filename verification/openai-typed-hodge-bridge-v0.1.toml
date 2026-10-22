@@ -468,12 +468,12 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "identification of the local coordinate Weil form with the base-changed rational trace pairing under the Hodge conjugation/Weil operator, integral lattice scaling, and Riemann realization by B(v)"
+statement_role = "integral lattice scaling and Riemann realization by B(v)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
 status = "OPEN"
 nonclaims = [
-  "alternation, nondegeneracy, coordinate positivity, and canonical archimedean sign selection are local source targets",
-  "complexified trace-pairing identification, integral lattice scaling, and Riemann realization remain external"
+  "alternation, nondegeneracy, coordinate positivity, canonical archimedean sign selection, and the complexified trace-pairing/Hodge-operator comparison are local source targets",
+  "integral lattice scaling and Riemann realization remain external"
 ]
 
 
@@ -673,4 +673,34 @@ nonclaims = [
   "uses the local anti-invariant seed and finite totally-real sign approximation",
   "no equality yet between coordinate energy and the complexified rational trace pairing",
   "no integral lattice, Riemann criterion, or four-factor algebraicity theorem"
+]
+
+
+[[local_target]]
+name = "complexified CM trace pairing on embedding coordinates"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.complexifiedTracePairing_fieldCoordinates"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "identifies the coordinate bilinear form with the rational trace pairing only after explicit base change",
+  "no integral lattice or Riemann criterion"
+]
+
+[[local_target]]
+name = "Hodge Weil-real-conjugation trace pairing equals positive energy"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.complexifiedTracePairing_weil_realConj_eq_energy"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi",
+  "coordinate weight-one real structure",
+  "sign-defined Weil operator"
+]
+nonclaims = [
+  "source-level coordinate/base-change identification only; no compile or kernel receipt",
+  "no integral lattice, Riemann criterion, or four-factor algebraicity"
 ]
