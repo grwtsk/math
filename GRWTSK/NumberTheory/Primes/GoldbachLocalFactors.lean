@@ -97,7 +97,7 @@ theorem goldbachPrimeResidueCount_pos_iff {p N : ℕ}
   by_cases hp2 : p = 2
   · subst p
     rw [goldbachPrimeResidueCount_two]
-    simp
+    by_cases hN : Even N <;> simp [hN]
   · have hpgt : 2 < p := lt_of_le_of_ne hp.two_le (Ne.symm hp2)
     rw [goldbachPrimeResidueCount_formula hp]
     by_cases hdiv : p ∣ N <;> simp [hdiv, hp2] <;> omega
@@ -156,12 +156,9 @@ theorem goldbachPrimeLocalFactor_pos_iff {p N : ℕ}
     exact_mod_cast Nat.sub_pos_of_lt hp.one_lt
   have hden : (0 : ℚ) < (((p - 1 : ℕ) : ℚ) ^ 2) :=
     pow_pos hsub 2
-  rw [goldbachPrimeLocalFactor, div_pos_iff]
-  simp only [hden, and_true, not_lt_of_ge hden.le,
-    not_lt_of_ge hpq.le, false_and, or_false,
-    mul_pos_iff, hpq, true_and]
-  norm_cast
-  exact goldbachPrimeResidueCount_pos_iff hp
+  rw [goldbachPrimeLocalFactor, div_pos_iff_of_pos_right hden,
+    mul_pos_iff_of_pos_left hpq]
+  exact_mod_cast (goldbachPrimeResidueCount_pos_iff hp)
 
 /-- At odd primes, the normalized density is the universal factor times the
 standard correction for primes dividing the target. -/

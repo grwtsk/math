@@ -117,7 +117,6 @@ theorem goldbachTruncatedSeries_eq_two_mul {Q N : ℕ}
         goldbachTruncatedDivisorCorrection Q N := by
   rw [goldbachTruncatedSeries_factorization,
     goldbachPrimeLocalFactor_two, if_pos hN]
-  ring
 
 /-- Every finite truncation is positive on an even target. This is local
 admissibility only. -/

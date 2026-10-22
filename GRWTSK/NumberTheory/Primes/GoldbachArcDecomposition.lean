@@ -60,7 +60,7 @@ theorem measurable_goldbachMajorArcSet {major : Set ℝ}
 theorem measurable_goldbachMinorArcSet {major : Set ℝ}
     (hmajor : MeasurableSet major) :
     MeasurableSet (goldbachMinorArcSet major) := by
-  exact measurableSet_Ioc.sdiff hmajor
+  exact measurableSet_Ioc.diff hmajor
 
 /-- The declared major and minor regions partition the unit interval exactly. -/
 theorem goldbachMajorArcSet_union_minor (major : Set ℝ) :
@@ -68,7 +68,6 @@ theorem goldbachMajorArcSet_union_minor (major : Set ℝ) :
       Set.Ioc 0 1 := by
   ext x
   simp [goldbachMajorArcSet, goldbachMinorArcSet]
-  tauto
 
 /-- The declared major and minor regions are disjoint. -/
 theorem goldbachMajorArcSet_disjoint_minor (major : Set ℝ) :

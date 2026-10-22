@@ -69,7 +69,7 @@ theorem goldbachCircleIntegrand_eq_frequencySum (N : ℕ) (x : ℝ) :
     goldbachCircleIntegrand N x = goldbachFrequencySum N x := by
   unfold goldbachCircleIntegrand goldbachExponentialSum goldbachFrequencySum
     goldbachFrequencyTerm
-  simp_rw [Finset.sum_mul, Finset.mul_sum]
+  simp_rw [Finset.sum_mul, Finset.mul_sum, Finset.sum_mul]
   apply Finset.sum_congr rfl
   intro p hp
   apply Finset.sum_congr rfl
@@ -95,8 +95,6 @@ theorem integral_goldbachFrequencyTerm (N p q : ℕ) :
         intro hzero
         exact hsum ((pairFrequency_zero_iff p q N).1 hzero)
       simp [hsum, hfreq]
-  · exact intervalIntegrable_unitCharacter
-      ((p : ℤ) + (q : ℤ) + -(N : ℤ))
 
 /-- The continuous integral reduces to the finite equality indicator, with no
 limit exchange or infinite series. -/
@@ -143,7 +141,7 @@ theorem goldbachIndicatorSum_eq_logMass (N : ℕ) :
       (goldbachLogMass N : ℂ) := by
   unfold goldbachLogMass goldbachBox
   push_cast
-  rw [Finset.sum_product]
+  rw [Finset.product_eq_sprod, Finset.sum_product]
   apply Finset.sum_congr rfl
   intro p hp
   apply Finset.sum_congr rfl

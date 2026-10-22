@@ -27,7 +27,7 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/goldbach-truncation-arcs-core-v0.1.toml"
-inherited_target_blob = "d578a4dd5b7a980d266f6a566a3d8bfe6e729825"
+inherited_target_blob = "50d09b6e91b79775835b208a8e77875ff771d5fc"
 receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
 
 [trust]
@@ -65,7 +65,7 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs"
 path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcs.lean"
-source_blob = "031c970c4ebe31d630ec54bf772cda287ecac825"
+source_blob = "acba3601d465884acea5e23a96fef9bbfdc2786b"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -89,31 +89,31 @@ disposition = "INHERITED_NOT_ACCEPTED"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachArcDecomposition"
 path = "GRWTSK/NumberTheory/Primes/GoldbachArcDecomposition.lean"
-source_blob = "db7e1d4ec323155424e0d8b4a2940e8ee952db0b"
+source_blob = "9b887236c606854e3cd29b13d82ca54162b633d4"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachTruncatedSeries"
 path = "GRWTSK/NumberTheory/Primes/GoldbachTruncatedSeries.lean"
-source_blob = "26f9c970f76ed7ba010a348259f86a8556af5921"
+source_blob = "7662dd5add422b03fe0f7bc453ed43553e9cffec"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachLocalFactors"
 path = "GRWTSK/NumberTheory/Primes/GoldbachLocalFactors.lean"
-source_blob = "506ce1dcb08310a79f8f43ae9c9a393647d9cd08"
+source_blob = "80f60a626a1eb90da917a283a283b72916e234e4"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral"
 path = "GRWTSK/NumberTheory/Primes/GoldbachCircleIntegral.lean"
-source_blob = "d24265d88bdaedef801293fa0d4e118eda362757"
+source_blob = "b098bd650cae9fccf6a37858d4f39cbfacbcd7d3"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachWeighted"
 path = "GRWTSK/NumberTheory/Primes/GoldbachWeighted.lean"
-source_blob = "e76129ebfd7b62f6ecb72f3d229adb382af22598"
+source_blob = "2f4bd5318e8a85bf20cc375b87ebaa635f2524d3"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]

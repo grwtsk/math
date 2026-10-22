@@ -74,7 +74,7 @@ theorem unitCharacter_denominator_at_rational
   have hqC : (q : ℂ) ≠ 0 := by
     exact_mod_cast hq.ne'
   simp only [unitCharacter, fourier_coe_apply,
-    goldbachRationalArcCenter, div_one,
+    goldbachRationalArcCenter, Complex.ofReal_one, Int.cast_natCast, div_one,
     Complex.ofReal_div, Complex.ofReal_natCast]
   rw [show
       2 * (Real.pi : ℂ) * Complex.I * (q : ℂ) *
@@ -82,8 +82,7 @@ theorem unitCharacter_denominator_at_rational
         ((a : ℤ) : ℂ) *
           (2 * (Real.pi : ℂ) * Complex.I) by
       push_cast
-      field_simp [hqC]
-      ring,
+      field_simp [hqC] <;> ring,
     Complex.exp_int_mul_two_pi_mul_I]
 
 /-- The rational-center phase is periodic in the natural frequency with
@@ -198,8 +197,7 @@ theorem goldbachCenteredCircleIntegrand_eq_residueClassKernel
       goldbachResidueClassCircleKernel N a q β := by
   unfold goldbachCenteredCircleIntegrand
     goldbachResidueClassCircleKernel
-  rw [goldbachCenteredExponentialSum_eq_residueClassKernel N a q hq,
-    goldbachCenteredExponentialSum_eq_residueClassKernel N a q hq]
+  rw [goldbachCenteredExponentialSum_eq_residueClassKernel N a q hq]
 
 /-- The residue-class circle model is pointwise equal to the exact Goldbach
 circle integrand. -/
