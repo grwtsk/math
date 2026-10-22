@@ -2725,4 +2725,68 @@ def CMFiniteActualToDescentComparison.ofSpanningFamily
       exact generator_mem x hx)
 
 
+/-- A concrete, Hodge-typed pure-tensor generating set.  The four factor
+types and the two/two weight count are part of membership, rather than
+inferred from a single chosen switched tensor. -/
+def CMFiniteBalancedPureTensorSet
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄) :
+    Set (FourfoldActualTensor D.toActualTyping) :=
+  { z | ∃ (a : D.first.realization.H1C)
+      (b : D.second.realization.H1C)
+      (c : D.third.realization.H1C)
+      (d : D.fourth.realization.H1C)
+      (τ₁ τ₂ τ₃ τ₄ : CMEmbeddingLines.WeightOneHodgeType),
+      D.first.realization.IsOfType a τ₁ ∧
+      D.second.realization.IsOfType b τ₂ ∧
+      D.third.realization.IsOfType c τ₃ ∧
+      D.fourth.realization.IsOfType d τ₄ ∧
+      CMEmbeddingLines.pIndex τ₁ + CMEmbeddingLines.pIndex τ₂ +
+        CMEmbeddingLines.pIndex τ₃ + CMEmbeddingLines.pIndex τ₄ = 2 ∧
+      CMEmbeddingLines.qIndex τ₁ + CMEmbeddingLines.qIndex τ₂ +
+        CMEmbeddingLines.qIndex τ₃ + CMEmbeddingLines.qIndex τ₄ = 2 ∧
+      z = fourfoldActualPureTensor D.toActualTyping a b c d }
+
+/-- Every explicitly balanced typed pure tensor lies in actual H^(2,2).
+This is the direction provided by the existing tensor-product Hodge rule. -/
+theorem CMFiniteBalancedPureTensorSet.subset_H22
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    (R : FourfoldActualHodgeTensorRule D.toActualTyping) :
+    CMFiniteBalancedPureTensorSet D ⊆ R.H22 := by
+  rintro z ⟨a, b, c, d, τ₁, τ₂, τ₃, τ₄,
+    ha, hb, hc, hd, hp, hq, rfl⟩
+  exact R.pureTensor_mem_H22 a b c d τ₁ τ₂ τ₃ τ₄
+    ha hb hc hd hp hq
+
+/-- The missing reverse inclusion is made explicit.  Hodge-type membership
+alone does not prove that balanced pure tensors span all of H^(2,2). -/
+structure CMFiniteBalancedPureTensorSpanning
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄)
+    (R : FourfoldActualHodgeTensorRule D.toActualTyping) where
+  H22_le_span :
+    R.H22 ≤ Submodule.span ℂ (CMFiniteBalancedPureTensorSet D)
+
+/-- Combining the automatic inclusion with the explicit spanning supplier
+gives the generating family needed by the comparison construction. -/
+def CMFiniteBalancedPureTensorSpanning.toSpanningFamily
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    {R : FourfoldActualHodgeTensorRule D.toActualTyping}
+    (S : CMFiniteBalancedPureTensorSpanning D R) :
+    CMFiniteH22SpanningFamily D R where
+  generators := CMFiniteBalancedPureTensorSet D
+  span_eq := le_antisymm
+    (Submodule.span_le.mpr (R.subset_H22))
+    S.H22_le_span
+
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
