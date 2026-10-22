@@ -185,6 +185,25 @@ theorem embeddingEigenspace_nonzero_aut (σ : E ≃ₐ[k] E) :
   rw [← hj]
   exact embeddingEigenspace_nonzero k E j
 
+
+/-- Package the canonical Galois embedding eigenspaces into the generic
+character-eigenline interface once a sign-compatible weight-one type
+assignment is supplied. One-dimensionality and nonvanishing are proved here;
+only the Hodge-type assignment remains external to this construction. -/
+noncomputable def canonicalEigenlineRealization
+    {conj : (E ≃ₐ[k] E) → (E ≃ₐ[k] E)}
+    (v : CMFourBalance.OddSignRow (E ≃ₐ[k] E) conj)
+    (typeAt : (E ≃ₐ[k] E) → CMEmbeddingLines.WeightOneHodgeType)
+    (htype : ∀ σ, typeAt σ = CMEmbeddingLines.typeOfSign (v.value σ)) :
+    CMEmbeddingEigenspaces.CharacterEigenlineRealization
+      E E (E ⊗[k] E) (E ≃ₐ[k] E) conj v :=
+  CMRegularBaseChange.eigenlineRealization
+    v
+    (fun σ => σ.toAlgHom)
+    (fun σ => embeddingEigenspace_finrank_one_aut k E σ)
+    (fun σ => embeddingEigenspace_nonzero_aut k E σ)
+    typeAt
+    htype
 end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines
