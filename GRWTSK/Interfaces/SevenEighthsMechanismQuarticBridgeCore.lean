@@ -56,6 +56,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyNecessaryCancellat
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPsiAbelReconstructionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPsiOctaveEnergySupplierControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThetaOctaveSupplierControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThetaVonKochAdapterControls
 
 set_option autoImplicit false
 
