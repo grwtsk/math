@@ -2105,6 +2105,44 @@ The remaining independent work is on the Hodge comparison side: identify the con
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4au. The Hodge branch is now one scalar-conjugate realization family
+
+The remaining Hodge comparison data has been packaged at the correct level of generality.
+
+A single finite CM field need not contain or be stable under every automorphism of (overline{mathbf Q}). The local source therefore does not impose one fixed finite CM realization for the full scalar-Galois orbit.
+
+`CMFourFactorSwitchGeometry.lean` now defines:
+
+~~~text
+RealizedMonomialGeneratorHodgeWitness
+RealizedMonomialGeneratorHodgeWitness.assembled_mem_hodge
+TransportedGeneratorRealizationFamily
+TransportedGeneratorRealizationFamily.toTransportedGeneratorHodgeData
+FourfoldMultilinearAlgebraicAssembly.toScalarConjugateMonomialLineData
+~~~
+
+For one transported assembled generator, `RealizedMonomialGeneratorHodgeWitness` packages:
+
+- a finite Galois CM field;
+- four actual weight-one realizations;
+- switch-character alignment;
+- the standard fourfold Hodge tensor rule;
+- the actual-to-descent comparison;
+- identification of the transported assembled generator with the image of the actual fourfold pure tensor.
+
+The finite field and realization are allowed to vary with the scalar automorphism.
+
+A `TransportedGeneratorRealizationFamily` supplies one such witness for every scalar conjugate. From that family, local source derives the exact `TransportedMonomialGeneratorHodgeData` needed by the orbit-span pipeline.
+
+Combining this with a single `FourfoldMultilinearAlgebraicAssembly` now yields `ScalarConjugateMonomialLineData` directly. Thus all assembly naturality, transported-line membership, and Hodge-line inclusion are local after two presentation-level inputs:
+
+1. the canonical fourfold multilinear assembly;
+2. a finite-CM realization/comparison witness for each transported generator.
+
+The independent `FourFactorAlgebraicitySupplier` remains untouched.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
