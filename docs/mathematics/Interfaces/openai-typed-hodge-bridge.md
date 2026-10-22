@@ -767,6 +767,40 @@ argument.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4k. Full finite switch connectivity
+
+The finite switch combinatorics are now closed at source level without choosing
+representatives of conjugate column pairs.
+
+Define the global mismatch measure
+
+\[
+M(x,y)=\sum_g \#\{i:x_i(g)\neq y_i(g)\}.
+\]
+
+For odd matrices, mismatch counts at \(g\) and \(cg\) agree. A valid
+conjugate-paired switch strictly decreases the selected-column mismatch count,
+strictly decreases its conjugate counterpart by oddness, and leaves every
+other column unchanged. Hence the global measure strictly decreases.
+
+This yields
+
+~~~text
+matrixMismatchCount_switchConjugatePair_lt
+pairedMatrixReach_of_equal_column_sums
+~~~
+
+The final theorem states that two finite odd \(\pm1\)-valued sign matrices with
+the same sum in every column are connected by a finite sequence of elementary
+conjugate-paired two-row switches.
+
+This closes the purely combinatorial switch-connectivity obligation from the
+manuscript reduction. What remains on the four-factor path is no longer a
+finite sign rearrangement problem: it is the geometric construction of the
+switch-line tensor/correspondence and its algebraic-cycle realization.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
