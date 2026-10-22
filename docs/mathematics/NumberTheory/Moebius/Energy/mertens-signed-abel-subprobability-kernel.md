@@ -26,16 +26,13 @@ The source proves pointwise nonnegativity.
 
 ## Exact mass
 
-On the actual depth range `t+2 <= Y`, the kernel mass is
+On the explicit proved depth range `t+2 <= Y`, the kernel mass is
 
-[
-sum_h K(j,t,h)
-=
-Ysum_h Delta(j,h,t)
-=
-Y,w_j(t+2)
-le 1.
-]
+\[
+\sum_{1\le h<Y}K(j,t,h)
+=Y\sum_{0\le k<Y-t-2}\Delta(j,k+1,t)
+=Yw_j(t+2)\le1.
+\]
 
 Thus the kernel is a finite subprobability coefficient family.
 
@@ -45,22 +42,16 @@ No division by the total mass is performed, so zero-mass cases introduce no hidd
 
 The normalized response from PR #501 is exactly
 
-[
-widetilde R_{j,t}(a)
-=
-sum_h K(j,t,h)mu(a+1+h).
-]
+\[
+\widetilde R_{j,t}(a)=\sum_{1\le h<Y}K(j,t,h)\mu(a+1+h).
+\]
 
 Therefore the signed depth slice has the exact smoothed-autocorrelation form
 
-[
-D_{j,t}
-=
-rac{2}{Y}
-sum_{a<t+1}
-mu(a+1)
-sum_h K(j,t,h)mu(a+1+h).
-]
+\[
+D_{j,t}=\frac{2}{Y}\sum_{0\le a<t+1}\mu(a+1)
+  \sum_{1\le h<Y}K(j,t,h)\mu(a+1+h).
+\]
 
 The kernel is nonnegative; the autocorrelation is signed.
 

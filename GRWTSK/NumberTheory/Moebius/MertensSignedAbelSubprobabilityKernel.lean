@@ -42,6 +42,9 @@ def normalizedSignedAbelShiftKernelMass
   ∑ h ∈ Finset.Ico 1 (2 ^ (j + 1)),
     normalizedSignedAbelShiftKernel j t h
 
+-- This finite support reindexing does not need the published depth premise.
+-- Keep that premise in the API; the following mass bound still requires it.
+set_option linter.unusedVariables false in
 /-- On the actual depth range, the normalized kernel mass is exactly the dyadic
 endpoint times the inherited Abel-drop mass. -/
 theorem normalizedSignedAbelShiftKernelMass_eq_scaledWeightMass
@@ -52,7 +55,7 @@ theorem normalizedSignedAbelShiftKernelMass_eq_scaledWeightMass
   let Y : ℕ := 2 ^ (j + 1)
   have hfilter :
       (Finset.Ico 1 Y).filter
-          (fun h => t < Y - h - 1) =
+          (fun h => 1 ≤ h ∧ h < Y ∧ t < Y - h - 1) =
         Finset.Ico 1 (Y - t - 1) := by
     ext h
     simp only [Finset.mem_filter, Finset.mem_Ico]
@@ -66,15 +69,7 @@ theorem normalizedSignedAbelShiftKernelMass_eq_scaledWeightMass
   rw [hlen, Finset.mul_sum]
   apply Finset.sum_congr rfl
   intro k _hk
-  have hh1 : 1 ≤ 1 + k := by omega
-  have hhY : 1 + k < Y := by
-    have hk := Finset.mem_range.mp _hk
-    omega
-  have ht : t < Y - (1 + k) - 1 := by
-    have hk := Finset.mem_range.mp _hk
-    omega
-  simp [hh1, hhY, ht, Nat.add_assoc, Nat.add_comm,
-    Nat.add_left_comm]
+  rw [Nat.add_comm 1 k]
 
 /-- The normalized kernel mass is a finite subprobability mass. -/
 theorem normalizedSignedAbelShiftKernelMass_le_one
