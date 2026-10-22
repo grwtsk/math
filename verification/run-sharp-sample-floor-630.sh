@@ -46,8 +46,11 @@ if grep -Eq 'sorryAx|admitAx|Lean\.ofReduceBool|native_decide' "$audit_log"; the
   echo 'FAIL: unapproved axiom or proof placeholder in theorem audit' >&2
   exit 1
 fi
-if [ "$(grep -c '^.* depends on axioms:' "$audit_log" || true)" -ne 4 ]; then
-  echo 'FAIL: expected four transitive axiom reports' >&2
+# Lean may report either a nonempty axiom list or that a theorem
+# does not depend on axioms. Both are legitimate audit responses.
+report_count="$(grep -Ec 'depends on axioms:|does not depend on any axioms' "$audit_log" || true)"
+if [ "$report_count" -ne 4 ]; then
+  echo "FAIL: expected four axiom reports, received $report_count" >&2
   exit 1
 fi
 echo 'SELECTED ELABORATION AND BASIC AXIOM SCREEN PASSED; independent replay and full axiom review remain required'
