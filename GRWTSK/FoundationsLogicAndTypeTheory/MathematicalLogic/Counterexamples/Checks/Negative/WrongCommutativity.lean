@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
+import GRWTSK.LinearAlgebra.LinearAlgebra.CommonJCounterexamples
 open GRWTSK.LinearAlgebra.CommonJCounterexamples
 set_option autoImplicit false
 example : Commute hostileUpper hostileLower := by

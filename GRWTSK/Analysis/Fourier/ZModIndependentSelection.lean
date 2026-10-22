@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors; Lean implementation: OpenAI Codex.
 Mathlib authorship and licensing retained. -/
-import GRWTSK.Analysis.Fourier.ZModSubsetSum
+import GRWTSK.Probability.Fourier.ZModSubsetSum
 import GRWTSK.Analysis.Fourier.ZModCharacterEnergy
 
 /-!

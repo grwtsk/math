@@ -3,7 +3,7 @@ MIT. grwtsk contributors direction; OpenAI Codex assistance; historical split un
 Established ordered transfer and exact state propagation mathematics; upstream identities retained.
 -/
 import GRWTSK.Algebra.OrderedProduct
-import GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
+import GRWTSK.LinearAlgebra.LinearAlgebra.JacobiTransfer
 
 namespace GRWTSK.LinearAlgebra.OrderedTransfer
 

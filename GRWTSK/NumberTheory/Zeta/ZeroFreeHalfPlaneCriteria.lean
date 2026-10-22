@@ -1,8 +1,8 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
-import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries
+import GRWTSK.Analysis.Moebius.PolynomialLaplaceHolomorphy
+import GRWTSK.Analysis.Moebius.LaplaceDirichletSeries
 import GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy
 import GRWTSK.NumberTheory.Zeta.PoleRegularization
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry

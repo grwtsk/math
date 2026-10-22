@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
+import GRWTSK.LinearAlgebra.LinearAlgebra.JacobiTransfer
 import Lean
 open Lean Elab Command GRWTSK.LinearAlgebra.JacobiTransfer
 namespace GRWTSK.LinearAlgebra.JacobiTransfer.Checks
