@@ -1701,3 +1701,57 @@ nonclaims = [
   "interface composition only",
   "actual transported generator Hodge membership remains external"
 ]
+
+
+[[local_target]]
+name = "actual factor Hodge typing plus tensor rule yields transported generator H22"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedFourFactorHodgeTyping.assembled_mem_h22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual Hodge type membership of each transported weight-one factor",
+  "fourfold Hodge tensor-product compatibility",
+  "p-index sum equals two",
+  "q-index sum equals two"
+]
+nonclaims = [
+  "does not identify formal sign labels with actual Hodge subspaces",
+  "does not construct the geometric tensor-product Hodge decomposition"
+]
+
+[[local_target]]
+name = "fourfold assembly plus actual factor typing yields generator H22 package"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.toTransportedGeneratorHodgeData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "formal composition only",
+  "actual factor typing and tensor-product Hodge compatibility remain external"
+]
+
+[[external_premise]]
+id = "cm-transported-factor-actual-hodge-typing"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types", "eq:cm-label-conjugation"]
+statement_role = "identify each transported canonical embedding-line factor with its actual H^(1,0) or H^(0,1) line in the weight-one cohomological realization"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedFourFactorHodgeTyping.factor_type"
+status = "OPEN"
+nonclaims = [
+  "formal sign-derived type labels alone do not discharge this premise"
+]
+
+[[external_premise]]
+id = "cm-fourfold-hodge-tensor-product-compatibility"
+result_family = 32
+evidence = "EXTERNAL_CLASSICAL"
+source = "standard tensor-product Hodge decomposition for pure weight-one Hodge structures"
+labels = []
+statement_role = "assembling four actual weight-one Hodge vectors with total bidegree (2,2) lands in the actual H^(2,2) subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldHodgeAssemblyRule.assemble_mem_h22"
+status = "OPEN"
+nonclaims = [
+  "classical structural Hodge theorem only",
+  "no algebraicity conclusion"
+]
