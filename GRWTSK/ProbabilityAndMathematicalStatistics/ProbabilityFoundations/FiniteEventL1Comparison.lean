@@ -75,7 +75,7 @@ theorem finiteEventSign_pairing
       exact hp b
     _ = 2 * (∑ b : β, if event b then δ b else 0) -
         ∑ b : β, δ b := by
-      rw [Finset.sum_sub_distrib, Finset.mul_sum]
+      rw [Finset.sum_sub_distrib, ← Finset.mul_sum]
     _ = 2 * finiteSignedEventMass δ event := by
       simp [finiteSignedEventMass, hzero]
 
@@ -176,7 +176,7 @@ theorem normalizedCategoryDifference_sum_zero
     (roots : Finset ℕ) (x y : ℕ → β) :
     (∑ b : β, normalizedCategoryDifference roots x y b) = 0 := by
   unfold normalizedCategoryDifference
-  rw [← Finset.sum_div, ← Finset.sum_sub_distrib]
+  rw [← Finset.sum_div, Finset.sum_sub_distrib]
   simp [categoricalPatternCount_total]
 
 /-- The all-event categorical TV representation derived from actual
