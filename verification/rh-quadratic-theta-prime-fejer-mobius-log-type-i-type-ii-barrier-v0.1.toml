@@ -1,0 +1,47 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-mobius-log-type-i-type-ii-barrier-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogTypeITypeIIBarrierCore"
+
+[source_binding]
+parent_revision = "55e92b73d7cb10d4a1bfee30f84f511dd53ecc41"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SIGNED_TYPE_I_ABSOLUTE_TYPE_II_SPLIT_SOURCE_PROVED / HIGH_GCD_ANCHOR_EXCLUSION_SOURCE_PROVED / ABSOLUTE_TYPE_I_ANCHOR_AUTOCORRELATION_BARRIER_SOURCE_PROVED / SEVEN_EIGHTHS_TYPE_I_TYPE_II_ESTIMATES_OPEN"
+
+[closed]
+squarefree_gcd_low_high_partition = true
+signed_pair_block_split = true
+signed_shift_split = true
+signed_aggregate_split = true
+anchor_pair_gcd_one = true
+high_gcd_anchor_exclusion = true
+absolute_class_majorant = true
+absolute_high_dominates_signed_high = true
+anchor_anchor_in_low_gcd_one_class = true
+absolute_low_pointwise_anchor_lower_bound = true
+anchor_autocorrelation_dominated_by_absolute_low = true
+absolute_low_implies_anchor_autocorrelation_bound = true
+signed_type_i_absolute_type_ii_bridge = true
+partial_discrepancy_adapter = true
+sibling_signed_kernel_identity_used = false
+sibling_centered_winding_identity_used = false
+
+[frontier]
+remaining = "prove the signed low-g Type I X^(3/2) log^4 bound at g<=sqrt(X), preserving the complete centered anchor/mixed/genuine channels, and prove the absolute high-g Type II X^(3/2) log^4 bound for genuine pairs with squarefree primitive coprime reduced moduli"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SIGNED_TYPE_I_ABSOLUTE_TYPE_II_SPLIT_SOURCE_PROVED = true
+HIGH_GCD_ANCHOR_EXCLUSION_SOURCE_PROVED = true
+ABSOLUTE_TYPE_I_ANCHOR_AUTOCORRELATION_BARRIER_SOURCE_PROVED = true
+SIGNED_LOW_GCD_TYPE_I_BOUND_PROVED = false
+ABSOLUTE_HIGH_GCD_TYPE_II_BOUND_PROVED = false
+SEVEN_EIGHTHS_SQUAREFREE_GCD_STRATIFIED_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
