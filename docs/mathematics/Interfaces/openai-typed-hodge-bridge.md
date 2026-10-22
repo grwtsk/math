@@ -277,9 +277,11 @@ negative sign -> (0,1).
 ~~~
 
 The local source file
-\`GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean\` introduces exactly
-this additional datum as \`EmbeddingLineRealization\`. Under four-label balance
-it proves
+`GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean` now has two levels:
+`EmbeddingLineRealization`, which carries an opaque line witness and type label,
+and `LinearEmbeddingLineRealization`, which carries an actual one-dimensional
+linear subspace in a coefficient-space realization together with the same
+sign-compatible type. Under four-label balance it proves
 
 \[
   \sum p_i=2,\qquad \sum q_i=2
@@ -298,10 +300,12 @@ local chain is now
 \text{realized }(2,2)\text{ bidegree}.
 \]
 
-The file does not construct the actual embedding decomposition of `U(v)`, the
-CM abelian variety `B(v)`, scalar descent, or algebraicity. Those remain bound
-to the proposition-level premises `eq:cm-types` and
-`eq:cm-label-conjugation`. It remains SOURCE_DRAFT / NOT_RUN.
+The stronger local record still does not prove that the one-dimensional
+subspace is the eigenspace `U(v)_lambda` of the CM-field action, that the family
+of lines gives the full embedding decomposition, or that `U(v)=H^1(B(v),Q)`.
+Those statements remain bound to `eq:cm-types` and
+`eq:cm-label-conjugation`. Scalar descent and algebraicity remain separate.
+The local source remains SOURCE_DRAFT / NOT_RUN.
 
 ## 5. Frobenius slope to Hodge type
 
