@@ -14,7 +14,7 @@ sources: [{key: L1, locator: 'Chapters 1-3; representative functional-analytic l
 warrant: {literary: 'Established mathematical disciplinary usage.', user: 'A literature-led entry point independent of repository interests.', organizational: 'A subject home distinct from source namespaces.'}
 status: {editorial: proposed, mathematical_novelty: not_claimed, proof: not_applicable, attribution: local_editorial_text, operational_permission: not_conferred}
 rights: {local_prose: MIT, source_reuse: reference_only}
-revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial draft; broad-field literature review incomplete.'}]
+revision_history: [{version: 0.1, date: '2026-10-19', change: 'Initial draft; broad-field literature review incomplete.'}, {"version": "0.11-pilot", "date": "2026-10-20", "change": "Extend browsing; preserve definition, subject identity and proposed status."}]
 proposal_refs: []
 decision_refs: [D01, D03, D04]
 ---
@@ -28,9 +28,9 @@ The mathematical study of limiting processes and the behavior of functions and r
 
 ## Scope
 
-This broad subject is not exhausted by the pilot's operator branch. Real and complex analysis, integration, differential equations and other analytic areas need separately reviewed coverage. Algebraic manipulation alone does not define an analytic specialization.
+This broad subject is not exhausted by the pilot's operator branch. Real and complex analysis, integration, differential equations and other analytic areas need separately reviewed coverage. The new candidate pages below begin that coverage; none supplies the outstanding independent review. Algebraic manipulation alone does not define an analytic specialization.
 
-Selected child division criterion: analytic subdiscipline. The current child is [functional analysis](functional-analysis/index.md), not an exhaustive partition. Broader mathematical relationships above this draft top-level home are unassessed rather than denied.
+Selected child division criterion: analytic subdiscipline. Browse [real analysis](real/index.md), [complex analysis](complex/index.md), [functional analysis](functional-analysis/index.md) and [harmonic analysis](harmonic/index.md). These overlapping subjects are not an exhaustive partition. Broader mathematical relationships above this draft top-level home are unassessed rather than denied.
 
 ## Sources and review
 

@@ -53,3 +53,45 @@ Separate 0.3 Noe bindings must retain the prior inputs. A source-edition change 
 Candidate 0.4 adds twelve proposed subjects and eleven specialization edges, keeping all preceding concept definitions unchanged. The dual-parent computational simplicial-homology subject fixes finite abstract complexes, exact prime-field coefficients, orientations and unreduced output. Floating-point rank heuristics, integral torsion, persistence, sampled-space reconstruction and software correctness are not equivalent to that contract. This is a local organization proposal, not a theorem or an operational grant.
 
 TIB's MSC2020 SKOS conversion, inspected at `33972ddb6a72c3660a6e499ee5f881b57fa92d41`, is a separately versioned research serialization. Register it as an alternative input candidate S12; do not silently replace S1's published MSC2020 baseline, import an inferred hierarchy as official direct edges, or treat its existence as rights clearance. Full native-code reconciliation remains blocked. Existing external mappings change only local source edition and history; no review is transported automatically.
+
+## D09 Statistics after source integration
+
+Start the successor candidate from main `f3d3f755ac0bb40732f9580a3cb30fecdcd26bcd` rather than mutating the merged #280 branch. Its source-only integration preserves candidate 0.4 and all proposed states; it is not independent semantic acceptance. Add eleven original statistical subject descriptions and eleven proposed specialization edges under the existing schema, with one definition for the two-parent least-squares subject. The [proposal](../proposals/new-concepts/statistics.md) retains alternative classifications and model obligations.
+
+Keep source edition, schema, operational validation and proof status separate. Advance the local vocabulary to 0.5-pilot and explicitly version the three existing mappings' source edition; do not change their external targets or infer review continuity. Retain all 41 preceding concept payloads. Probability, statistical decisions, frequentist coverage and posterior probabilities are not interchangeable labels. Citation-only authoring continues under D02/D06; no native MSC import, permission grant, acceptance or completeness claim is made.
+
+## D10 — Numerical and optimization candidate boundary
+
+Decision status: local authoring decision; not independent semantic acceptance. Recorded 2026-10-20 against math `262daeee89add65f0d7997f338f9ca45bcac718e` and Noe `ba81eef56f4b9c2fb29b9ff2ef838f5f4989e4c7`.
+
+Retain two subject roots and one canonical restricted conjugate-gradient page with Krylov and strictly convex quadratic parents, all proposed. The [addition proposal](../proposals/new-concepts/numerical-optimization.md) records alternatives and review criteria. Advance the unpublished local vocabulary to 0.6-pilot without changing schema versions, prior concept payloads, source-specific notices or external mapping semantics. Preserve older edition bindings and do not transport acceptance. Condition, stability, residual/error, exact arithmetic and implementation evidence remain distinct. This arrangement neither resolves an MSC import right nor grants execution authority or production admission.
+
+## D11 — Number-theory candidate scope
+
+Status: proposed editorial arrangement. [The number-theory proposal](../proposals/new-concepts/number-theory.md) adds twelve established subjects while preserving earlier canonical definitions. One computational algebraic number theory record has two proposed parents and a single home. The multiplicative branch's analytic placement remains reviewable; elementary does not mean easy, and computational does not grant execution permission.
+
+Source versions and the separate AKS errata record remain explicit. No code match, namespace resemblance, probable-prime result, finite example or missing external code establishes novelty, authorship, theorem acceptance or complete coverage. Native MSC registration, rights and independent review remain unresolved. Vocabulary 0.7-pilot is separate from schema versions and repository revisions.
+
+## D12 — Equations, dynamics and mechanics as distinct subjects
+
+Status: proposed editorial arrangement. The [addition proposal](../proposals/new-concepts/equations-dynamics-mechanics.md) adds twelve records with separate disciplinary roots, eleven proposed specialization edges and two shared canonical model-class pages. Independent-variable setting, equation structure, regularity, physical regime and formulation are applied in separate sibling groups. A method's use does not by itself justify subtype parentage.
+
+Keep local versus global flow, homogeneous versus forced equations, and positive-definite undamped oscillator hypotheses explicit. Do not turn a semigroup label into a PDE generator, finite examples into proofs, or a documentation addition into resolution of the source-directory collision. Vocabulary 0.8-pilot does not change schema versions, earlier concept pages, rights, source attributions or operational holds. L33-L37 are bounded references; the PDE manuscript's publication details remain unresolved. Native baseline reconciliation and independent review remain open.
+
+## D13 — Information tasks and finite-code structure
+
+Status: proposed editorial arrangement. [The addition proposal](../proposals/new-concepts/information-coding.md) separates compression, noisy communication and error-correcting code structure. The two roots are navigational entries, not a claim of disjoint disciplines. Block organization and algebraic perspective are kept in separate browsing groups. One finite-field linear-code page has both parents; other overlaps use explicit navigation rather than invented subtype assertions.
+
+Keep exact/almost-lossless, injective/uniquely decodable/prefix-free, field/ring, intrinsic distance/decoder performance, detection/authentication and simple-root/repeated-root boundaries. Do not adopt comma-free as a prefix-free alias from a single source. Vocabulary 0.9-pilot leaves schema versions, earlier concepts, attribution, rights and operational holds unchanged. L38-L43 are bounded warrants, not full-course audits or an external classification import. Independent review and full baseline reconciliation remain open.
+
+## D14 — Algebraic structures and scoped conventions (proposed)
+
+Extend the candidate with [ten established algebra subjects](../proposals/new-concepts/algebra-structures.md). Distinguish arbitrary associative unital rings from the commutative convention of a cited source; retain field nontriviality, module sides and foundational assumptions. Two proposed parentages share each of two canonical records. Keep existing Algebra definition/scope unchanged while expanding its navigation and history. This is proposed editorial organization, not independent acceptance, mathematical proof, source-specific attribution, external-standard approval or execution authority. Use 0.10-pilot rather than implying a completed 1.0 release. Native-source rights and reconciliation remain open.
+
+## D15 — Analytic structures and convergence modes (proposed)
+
+[The addition proposal](../proposals/new-concepts/analysis-measure-fourier.md) records ten analytic subjects and two multiple-parent function-space records. Restrict the Lp Banach-range record to 1 <= p <= infinity; distinguish representatives from almost-everywhere classes, essential from pointwise supremum, and norm from pointwise convergence. Keep separability, inner-product convention and Fourier normalization explicit. Analysis and Functional analysis gain navigation without redefining their subjects. This is proposed editorial organization, not independent mathematical/cataloging review, proof, rights approval or operational authority. The complete external baseline remains unresolved.
+
+## D16 — Probability limits and process families remain distinct (0.12 candidate)
+
+The [probability addition proposal](../proposals/new-concepts/probability-processes.md) introduces ten proposed subjects and eleven proposed specializations. Separate limiting tasks from model classes. Preserve the old discrete-time Markov scope/home and one canonical Brownian record with Gaussian and continuous-time Markov parents. Convergence in law is not pathwise exclusion; marginal normality is not joint Gaussianity; conditional identities require filtrations. This is an author organizational decision, not independent acceptance, a new theorem or a foundation/rights ruling.
