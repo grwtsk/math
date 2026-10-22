@@ -982,3 +982,31 @@ nonclaims = [
   "does not yet iterate over all conjugate-pair representatives",
   "no Hodge or algebraicity conclusion"
 ]
+
+
+[[local_target]]
+name = "global finite connectivity by conjugate-paired switches"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.pairedMatrixReach_of_equal_column_sums"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite row and column index types",
+  "involutive column conjugation",
+  "odd +/-1-valued source and target matrices",
+  "equality of every column sum"
+]
+nonclaims = [
+  "finite combinatorial connectivity only",
+  "does not construct Hodge tensors",
+  "does not prove scalar-conjugate stability or algebraicity"
+]
+
+[[local_target]]
+name = "global switch mismatch measure decreases"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.matrixMismatchCount_switchConjugatePair_lt"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "well-founded combinatorial measure only",
+  "no geometric consequence"
+]
