@@ -129,7 +129,7 @@ theorem goldbachExactResidueArcModel_residual_zero
   unfold goldbachArcModelResidual
     goldbachArcModelContribution
   rw [goldbachSingleRationalArcContribution_eq_exactResidue haq]
-  rfl
+  exact sub_self _
 
 /-- Per-arc norm bounds accumulate into one complete finite residual bound. -/
 theorem goldbachArcModelResidualSum_norm_le

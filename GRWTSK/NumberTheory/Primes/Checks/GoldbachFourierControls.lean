@@ -53,8 +53,7 @@ is zero modulo five although it is not zero as a natural sum. -/
 theorem modular_wrap_control :
     characterProjector 5 2 3 0 = 1 ∧ 2 + 3 ≠ 0 := by
   constructor
-  · rw [characterProjector_eq_modular_indicator]
-    norm_num
+  · rw [characterProjector_eq_modular_indicator, if_pos (by decide)]
   · norm_num
 
 /-- A shift-six prime pair is not silently accepted as a shift-two or

@@ -51,7 +51,7 @@ theorem empty_major_partition (N : ℕ) :
     goldbachMinorArcContribution N ∅ = (goldbachLogMass N : ℂ) := by
   constructor
   · simp [goldbachMajorArcContribution, goldbachMajorArcSet]
-  · have h := goldbachMajor_add_minor_eq_logMass N measurableSet_empty
+  · have h := goldbachMajor_add_minor_eq_logMass N MeasurableSet.empty
     simpa [goldbachMajorArcContribution, goldbachMajorArcSet] using h
 
 /-- Declaring the whole unit interval as major leaves a zero minor

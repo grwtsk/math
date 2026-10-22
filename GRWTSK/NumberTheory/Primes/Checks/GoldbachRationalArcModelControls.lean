@@ -22,6 +22,7 @@ open GRWTSK.Analysis.Fourier.UnitIntervalCharacters
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
+open GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates
 open GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary

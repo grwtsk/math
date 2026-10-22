@@ -29,7 +29,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion
 
 open scoped BigOperators Real
-open Set MeasureTheory
+open Set Function MeasureTheory
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts
 open GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
@@ -71,7 +71,7 @@ theorem goldbachRationalMajorArcSet_eq_biUnion_clipped
 /-- Clipping preserves pairwise disjointness of the raw family. -/
 theorem goldbachClippedRationalArcs_pairwiseDisjoint
     {Q N : ℕ} (hscale : 2 * Q ^ 2 < N + 1) :
-    Set.Pairwise (↑(goldbachRationalArcIndices Q))
+    Set.Pairwise (↑(goldbachRationalArcIndices Q) : Set (ℕ × ℕ))
       (Disjoint on goldbachClippedRationalArc Q N) := by
   intro aq haq bq hbq hne
   refine Set.disjoint_left.2 ?_

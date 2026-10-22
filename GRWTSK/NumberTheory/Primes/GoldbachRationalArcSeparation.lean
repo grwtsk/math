@@ -28,7 +28,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Primes.GoldbachRationalArcSeparation
 
 open scoped Real
-open Set
+open Set Function
 open GRWTSK.NumberTheory.Primes.GoldbachRationalArcs
 
 noncomputable section
@@ -72,17 +72,17 @@ theorem goldbachReducedFraction_eq_of_cross_mul
     apply haq.symm.dvd_of_dvd_mul_left
     refine ⟨b, ?_⟩
     calc
-      q * b = b * q := Nat.mul_comm _ _
-      _ = a * r := hcross.symm
+      a * r = b * q := hcross
+      _ = q * b := Nat.mul_comm _ _
   have hr_dvd_q : r ∣ q := by
     apply hbr.symm.dvd_of_dvd_mul_left
     refine ⟨a, ?_⟩
     calc
-      r * a = a * r := Nat.mul_comm _ _
-      _ = b * q := hcross
+      b * q = a * r := hcross.symm
+      _ = r * a := Nat.mul_comm _ _
   have hqr : q = r := Nat.dvd_antisymm hq_dvd_r hr_dvd_q
   subst r
-  have hab : a = b := Nat.mul_right_cancel hcross
+  have hab : a = b := Nat.mul_right_cancel hq hcross
   exact Prod.ext hab rfl
 
 /-- Equality of lifted centers remembers both the reduced fraction and the
@@ -132,13 +132,13 @@ theorem goldbachLiftedRationalArcCenter_eq_iff
     unfold goldbachRationalArcCenter at hfraction
     field_simp [hq0, hr0] at hfraction
     have hcross : a * r = b * q := by
-      exact_mod_cast hfraction
+      exact_mod_cast (hfraction.trans (mul_comm (q : ℝ) b))
     exact
       ⟨goldbachReducedFraction_eq_of_cross_mul
           hq hr hcoprimeA hcoprimeB hcross,
         hkl⟩
   · rintro ⟨hpair, hkl⟩
-    rcases Prod.mk.inj_iff.mp hpair with ⟨rfl, rfl⟩
+    rcases Prod.mk.inj hpair with ⟨rfl, rfl⟩
     subst l
     rfl
 
@@ -162,8 +162,7 @@ theorem goldbachLiftedRationalArcCenter_sub_eq
     goldbachRationalArcCenter
     goldbachLiftedRationalDeterminant
   push_cast
-  field_simp [hq0, hr0]
-  ring
+  field_simp [hq0, hr0] <;> ring
 
 /-- Distinct reduced fraction/lift data give a nonzero integral determinant. -/
 theorem goldbachLiftedRationalDeterminant_ne_zero
@@ -243,14 +242,12 @@ theorem goldbachRationalArcRadius_add_lt_inverse_mul
           (Q : ℝ) / ((r : ℝ) * ((N + 1 : ℕ) : ℝ)) =
         ((Q : ℝ) * ((q : ℝ) + (r : ℝ))) /
           ((q : ℝ) * (r : ℝ) * ((N + 1 : ℕ) : ℝ)) := by
-            field_simp [hqR.ne', hrR.ne', hNR.ne']
-            ring
+            field_simp [hqR.ne', hrR.ne', hNR.ne'] <;> ring
     _ < ((N + 1 : ℕ) : ℝ) /
           ((q : ℝ) * (r : ℝ) * ((N + 1 : ℕ) : ℝ)) :=
       div_lt_div_of_pos_right hscaleR hden
     _ = 1 / ((q : ℝ) * (r : ℝ)) := by
-      field_simp [hqR.ne', hrR.ne', hNR.ne']
-      ring
+      field_simp [hqR.ne', hrR.ne', hNR.ne'] <;> ring
 
 /-- The global scale condition implies the pair-specific radius inequality for
 all indexed denominators. -/
@@ -356,8 +353,8 @@ theorem goldbachPeriodizedRationalArcs_disjoint
 condition. -/
 theorem goldbachPeriodizedRationalArcs_pairwiseDisjoint
     {Q N : ℕ} (hscale : 2 * Q ^ 2 < N + 1) :
-    Set.Pairwise (↑(goldbachRationalArcIndices Q))
-      (Disjoint on fun aq =>
+    Set.Pairwise (↑(goldbachRationalArcIndices Q) : Set (ℕ × ℕ))
+      (Disjoint on fun (aq : ℕ × ℕ) =>
         goldbachPeriodizedRationalArc Q N aq.1 aq.2) := by
   intro aq haq bq hbq hne
   rcases aq with ⟨a, q⟩

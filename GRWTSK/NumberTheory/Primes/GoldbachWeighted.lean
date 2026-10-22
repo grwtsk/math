@@ -4,7 +4,7 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Primes.ConfigurationCounts
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.Tactic.Omega
+import Mathlib.Tactic
 
 set_option autoImplicit false
 
@@ -30,7 +30,7 @@ def goldbachBox (N : ℕ) : Finset (ℕ × ℕ) :=
 /-- Membership retains both inclusive coordinate bounds. -/
 theorem mem_goldbachBox {N p q : ℕ} :
     (p, q) ∈ goldbachBox N ↔ p ≤ N ∧ q ≤ N := by
-  simp only [goldbachBox, Finset.mem_product, Finset.mem_range, Nat.lt_succ_iff]
+  simp only [goldbachBox, Finset.product_eq_sprod, Finset.mem_product, Finset.mem_range, Nat.lt_succ_iff]
 
 /-- Prime-only logarithmic weight. Composite and boundary values contribute
 zero rather than becoming sieve candidates or prime powers. -/

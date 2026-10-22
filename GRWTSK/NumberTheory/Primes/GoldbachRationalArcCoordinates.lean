@@ -64,7 +64,7 @@ theorem unitCharacter_add_argument
     (m : ℤ) (x y : ℝ) :
     unitCharacter m (x + y) =
       unitCharacter m x * unitCharacter m y := by
-  simp only [unitCharacter, fourier_coe_apply, div_one]
+  simp only [unitCharacter, fourier_coe_apply, Complex.ofReal_one, div_one]
   rw [show
       2 * (Real.pi : ℂ) * Complex.I * (m : ℂ) *
           ((x + y : ℝ) : ℂ) =
@@ -79,7 +79,7 @@ integer character unchanged. -/
 theorem unitCharacter_add_int
     (m k : ℤ) (x : ℝ) :
     unitCharacter m (x + (k : ℝ)) = unitCharacter m x := by
-  simp only [unitCharacter, fourier_coe_apply, div_one]
+  simp only [unitCharacter, fourier_coe_apply, Complex.ofReal_one, div_one]
   rw [show
       2 * (Real.pi : ℂ) * Complex.I * (m : ℂ) *
           ((x + (k : ℝ) : ℝ) : ℂ) =
@@ -107,10 +107,13 @@ theorem unitCharacter_recenter
     unitCharacter m x =
       unitCharacter m (goldbachRationalArcCenter a q) *
         unitCharacter m (goldbachRationalArcOffset a q x) := by
-  rw [← goldbachRationalArcCenter_add_offset a q x]
-  exact unitCharacter_add_argument m
-    (goldbachRationalArcCenter a q)
-    (goldbachRationalArcOffset a q x)
+  calc
+    unitCharacter m x = unitCharacter m
+        (goldbachRationalArcCenter a q + goldbachRationalArcOffset a q x) :=
+      congrArg (unitCharacter m) (goldbachRationalArcCenter_add_offset a q x).symm
+    _ = _ := unitCharacter_add_argument m
+      (goldbachRationalArcCenter a q)
+      (goldbachRationalArcOffset a q x)
 
 /-- The exact prime-log exponential sum is one-periodic. -/
 theorem goldbachExponentialSum_add_int
@@ -129,7 +132,6 @@ theorem goldbachCircleIntegrand_add_int
       goldbachCircleIntegrand N x := by
   unfold goldbachCircleIntegrand
   rw [goldbachExponentialSum_add_int,
-    goldbachExponentialSum_add_int,
     unitCharacter_add_int]
 
 /-- The exact exponential sum expressed in the central local coordinate. -/

@@ -43,7 +43,7 @@ theorem mem_goldbachRationalArcIndices {Q a q : ℕ} :
     (a, q) ∈ goldbachRationalArcIndices Q ↔
       a ≤ Q ∧ q ≤ Q ∧ 0 < q ∧ a < q ∧ Nat.Coprime a q := by
   simp only [goldbachRationalArcIndices, Finset.mem_filter,
-    Finset.mem_product, Finset.mem_range, Nat.lt_succ_iff,
+    Finset.product_eq_sprod, Finset.mem_product, Finset.mem_range, Nat.lt_succ_iff,
     Prod.fst, Prod.snd]
   tauto
 
@@ -53,6 +53,7 @@ theorem goldbachRationalArcIndices_zero :
   ext aq
   rcases aq with ⟨a, q⟩
   simp [mem_goldbachRationalArcIndices]
+  omega
 
 /-- The reduced zero class at denominator one is present once `Q ≥ 1`. -/
 theorem zero_one_mem_goldbachRationalArcIndices {Q : ℕ} (hQ : 1 ≤ Q) :

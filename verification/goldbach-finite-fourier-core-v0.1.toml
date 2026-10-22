@@ -52,19 +52,19 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachWeighted"
 path = "GRWTSK/NumberTheory/Primes/GoldbachWeighted.lean"
-source_blob = "e76129ebfd7b62f6ecb72f3d229adb382af22598"
+source_blob = "2f4bd5318e8a85bf20cc375b87ebaa635f2524d3"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachFiniteFourier"
 path = "GRWTSK/NumberTheory/Primes/GoldbachFiniteFourier.lean"
-source_blob = "c3dd0a54db1aec6bb43213320cd30079af55a829"
+source_blob = "27ad1bc4f5a275d76c87047d536b85f26458fb7c"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachFourierControls"
 path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachFourierControls.lean"
-source_blob = "1f5884f75f58b0ba3c6982f0613d68f873234c51"
+source_blob = "89c0136a34f07a9c3eb430ce28acb3ab2bbbf210"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
