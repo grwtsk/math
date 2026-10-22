@@ -1,0 +1,61 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mellin-normalized-growing-cell-packing-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_issue = 197
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "50369a2b359a72c57b9b1acf4751dd1e5be79144"
+parent_tree = "359c55914119de6f1217893272d898c049e2db1f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / MELLIN_NORMALIZED_GROWING_CELL_STAGE_DEFINED / GLOBAL_COMPARISON_OPEN"
+
+[growing_stage]
+value = "Q_N^A(z)=sum_{j<N} Q_j^A(z)"
+cell_count = "N"
+nonnegative = true
+monotone = true
+bounded_rank_cell_count = false
+exact_factorization = "Q_N^A=a^4*A_N^A+3*a^2*t^2*T_N^A"
+
+[separated_obligations]
+lower_density = "common lower weight dominated by both normalized action Gram channels with divergent partial sums"
+upper_comparison = "independently source-identified finite upper bound for all growing stages"
+one_implies_other = false
+together_force_offline_contradiction = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.MellinNormalizedGrowingCellPacking"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/MellinNormalizedGrowingCellPacking.lean"
+blob = "f0643d15957c6eeedc7890c7a627b5c0f5fe10be"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.MellinNormalizedGrowingCellPackingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/MellinNormalizedGrowingCellPackingControls.lean"
+blob = "09e6332129220bf582c4dbe8e77642b22fad3222"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "433fbe7d92a895351e42c8566627a483617ad349"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/mellin-normalized-growing-cell-packing.md"
+blob = "57c5ca0b28ee39a9dc0ad7f758a2a67d542046ba"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+MELLIN_NORMALIZED_GROWING_CELL_STAGE_DEFINED = true
+LOWER_DENSITY_PROVED = false
+GLOBAL_UPPER_COMPARISON_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "analyze centered discrepancy source for a frame/nondegeneracy lower bound",
+  "connect the growing action stage to a source-identified global analytic functional",
+  "retain issue-197 growing-rank and exact-source restrictions"
+]
