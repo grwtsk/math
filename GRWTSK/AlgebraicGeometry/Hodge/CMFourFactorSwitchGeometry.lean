@@ -1447,6 +1447,35 @@ def canonicalFinitePureAssembly
   (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
     (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
 
+/-- The canonical finite switched pure tensor factors through the
+constructed rational-linear fourfold coefficient multiplication map.
+This is the first explicit link between the coefficient construction and
+the final finite assembly formula, without geometric assumptions. -/
+theorem canonicalFinitePureAssembly_eq_coefficientMultiplication
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      (CMFiniteFourCoefficientMultiplication E
+        (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄)) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simp [canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure]
+
+/-- Coefficient multiplication commutes with diagonal finite Galois
+transport in the canonical pure assembly. The rational vector entries
+are deliberately unchanged by the coefficient-only transport. -/
+theorem canonicalFinitePureAssembly_eq_conjugatedCoefficientProduct
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E
+        (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ =
+      (σ (CMFiniteFourCoefficientMultiplication E
+        (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄))) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simp [canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure, map_mul]
+
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
 the first rational tensor-product universal property. -/
