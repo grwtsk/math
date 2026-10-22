@@ -4,6 +4,7 @@ Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics
 import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport
+import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity
 
 /-!
 # Geometric supplier boundary for finite four-factor switch chains
@@ -113,6 +114,56 @@ structure FourFactorSwitchCoreWitness
   nonzero : Prop
   nonzero_proof : nonzero
 
+/-- Existential package for the rational four-factor Hodge witness attached
+to one switched core.
+
+The package hides the auxiliary rational vector space while retaining the
+actual four sign rows and rational witness consumed by the existing
+FourFactorAlgebraicitySupplier. -/
+structure SwitchCoreRationalWitnessPackage
+    (conj : G → G) where
+  v₁ v₂ v₃ v₄ : OddSignRow G conj
+  V : Type*
+  [V_addCommGroup : AddCommGroup V]
+  [V_moduleQ : Module ℚ V]
+  witness :
+    CMFourFactorAlgebraicity.RationalFourFactorHodgeWitness
+      G conj v₁ v₂ v₃ v₄ V
+
+/-- Pure identification adapter from one atomic switched configuration to the
+rational four-factor Hodge witness already used by the repository's
+algebraicity interface.
+
+This adapter carries no algebraicity theorem. -/
+structure SwitchCoreRationalWitnessAdapter
+    (conj : G → G)
+    (target : I → G → ℤ) where
+  identify :
+    ∀ (x : I → G → ℤ)
+      (g : G)
+      (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
+      (j : NegPosMismatch (fun r => x r g) (fun r => target r g)),
+      SwitchCoreRationalWitnessPackage conj
+
+/-- Geometric packaging of the algebraic-cycle witness produced by the
+existing four-factor algebraicity supplier as the opaque switched-core witness
+consumed by the transition layer.
+
+This is an interface conversion only; the cycle algebraicity is supplied
+upstream by FourFactorAlgebraicitySupplier. -/
+structure AlgebraicCycleToSwitchCoreAdapter
+    (conj : G → G)
+    (target : I → G → ℤ) where
+  package :
+    ∀ (x : I → G → ℤ)
+      (g : G)
+      (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
+      (j : NegPosMismatch (fun r => x r g) (fun r => target r g))
+      (R : SwitchCoreRationalWitnessPackage conj),
+      CMFourFactorAlgebraicity.AlgebraicCycleWitness
+          G conj R.v₁ R.v₂ R.v₃ R.v₄ R.V R.witness →
+        FourFactorSwitchCoreWitness conj x g i.1 j.1
+
 /-- Independent four-factor algebraicity supplier.
 
 This is the precise switch-specific theorem boundary: one elementary switch
@@ -126,6 +177,21 @@ structure FourFactorSwitchCoreSupplier
       (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
       (j : NegPosMismatch (fun r => x r g) (fun r => target r g)),
       FourFactorSwitchCoreWitness conj x g i.1 j.1
+
+/-- The existing repository-wide four-factor algebraicity supplier can be
+used as the sole algebraicity theorem for atomic switched cores.
+
+The remaining inputs are identification/packaging adapters only. -/
+def fourFactorSwitchCoreSupplierOfAlgebraicity
+    (conj : G → G)
+    (target : I → G → ℤ)
+    (R : SwitchCoreRationalWitnessAdapter conj target)
+    (P : AlgebraicCycleToSwitchCoreAdapter conj target)
+    (S : CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier) :
+    FourFactorSwitchCoreSupplier conj target where
+  realize := fun x g i j =>
+    let W := R.identify x g i j
+    P.package x g i j W (S.realize W.witness)
 
 /-- Routine assembly of one four-factor switched core with all unchanged-row
 two-factor identity witnesses.
