@@ -45,15 +45,15 @@ theorem signedAbelDepthShiftWeightMass_eq_initialWeight
   calc
     (∑ k ∈ Finset.range N,
       dyadicMertensShiftWeightDrop j (k + 1) t) =
-        ∑ k ∈ Finset.range N, q k - q (k + 1) := by
+        ∑ k ∈ Finset.range N, (q k - q (k + 1)) := by
       apply Finset.sum_congr rfl
       intro k _hk
-      simp [dyadicMertensShiftWeightDrop, q, Nat.add_assoc,
-        Nat.add_comm, Nat.add_left_comm]
+      dsimp [dyadicMertensShiftWeightDrop, q]
+      congr 2
+      omega
     _ = q 0 - q N := htel
     _ = dyadicMertensShiftWeight j (t + 2) := by
       rw [hterminal, sub_zero]
-      simp [q]
 
 /-- The complete shift-fibre coefficient mass is at most the reciprocal dyadic
 endpoint. -/
@@ -64,6 +64,9 @@ theorem signedAbelDepthShiftWeightMass_le_right_inv
   rw [signedAbelDepthShiftWeightMass_eq_initialWeight htY]
   exact dyadicMertensShiftWeight_le_right_inv htY
 
+-- This finite reindexing is unconditional. Retain the published htY premise
+-- in the public interface; the subsequent size bounds still require it.
+set_option linter.unusedVariables false in
 /-- The complete shift response can be written on the exact compact range
 `h=1,...,Y-t-2`. -/
 theorem signedAbelDepthShiftResponse_eq_range
@@ -88,7 +91,7 @@ theorem signedAbelDepthShiftResponse_eq_range
   apply Finset.sum_congr rfl
   intro k _hk
   have hindex : a + 1 + (1 + k) = a + 2 + k := by omega
-  rw [hindex]
+  rw [hindex, Nat.add_comm 1 k]
 
 /-- The actual weighted growing-shift response is uniformly tiny before any
 arithmetic cancellation is used. -/
@@ -111,11 +114,11 @@ theorem abs_signedAbelDepthShiftResponse_le_two_mul_right_inv
       intro k _hk
       have hdrop :=
         dyadicMertensShiftWeightDrop_nonneg j (k + 1) t
-      simp only [abs_mul, abs_of_nonneg hdrop, abs_ofNat]
-      exact mul_le_mul_of_nonneg_left
-        (mul_le_of_le_one_left (abs_nonneg _)
-          (moebiusReal_abs_le_one (a + 2 + k)))
-        (by norm_num)
+      simp only [abs_mul, abs_of_nonneg hdrop,
+        abs_of_nonneg (by norm_num : (0 : ℝ) ≤ 2)]
+      have hcoeff := mul_le_mul_of_nonneg_right
+        (moebiusReal_abs_le_one (a + 2 + k)) hdrop
+      nlinarith
     _ = 2 * signedAbelDepthShiftWeightMass j t := by
       unfold signedAbelDepthShiftWeightMass
       rw [Finset.mul_sum]
@@ -165,7 +168,6 @@ theorem signedAbelDepthShiftResponse_eq_normalized
   change signedAbelDepthShiftResponse j t a =
     2 * YR⁻¹ * ((YR / 2) * signedAbelDepthShiftResponse j t a)
   field_simp [hY]
-  ring
 
 /-- The exact signed depth slice is a normalized Möbius correlation against a
 one-bounded, scale/depth-dependent response family. -/
