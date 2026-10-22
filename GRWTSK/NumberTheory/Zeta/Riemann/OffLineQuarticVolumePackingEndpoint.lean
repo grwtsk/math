@@ -79,18 +79,20 @@ off-line zero. -/
 def OffLineQuarticVolumePackingScaleClaim : Prop :=
   ∀ z : ZeroPoint,
     zeroDefect z.1 ≠ 0 →
-      QuarticVolumePackingScaleDataAtZero z
+      Nonempty (QuarticVolumePackingScaleDataAtZero z)
 
 /-- Equivalent direct certificate-level formulation. -/
 def OffLineQuarticVolumePackingClaim : Prop :=
   ∀ z : ZeroPoint,
     zeroDefect z.1 ≠ 0 →
-      QuarticVolumePackingCertificateAtZero z
+      Nonempty (QuarticVolumePackingCertificateAtZero z)
 
 theorem offLineQuarticVolumePackingClaim_of_scale
     (scaleData : OffLineQuarticVolumePackingScaleClaim) :
-    OffLineQuarticVolumePackingClaim :=
-  fun z ha => (scaleData z ha).toCertificate
+    OffLineQuarticVolumePackingClaim := by
+  intro z ha
+  obtain ⟨data⟩ := scaleData z ha
+  exact ⟨data.toCertificate⟩
 
 /-- Off-line-only packing certificates suffice for the exact Mathlib RH target. -/
 theorem riemannHypothesis_of_offLineQuarticVolumePacking
@@ -105,7 +107,8 @@ theorem riemannHypothesis_of_offLineQuarticVolumePacking
     unfold zeroDefect at hzero
     dsimp [z] at hzero
     linarith
-  have hforced := (packing z ha).forces_critical_line
+  obtain ⟨certificate⟩ := packing z ha
+  have hforced := certificate.forces_critical_line
   exact hline (by simpa [z] using hforced)
 
 /-- Scale-only version of the corrected endpoint. -/

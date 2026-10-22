@@ -127,12 +127,14 @@ def QuarticVolumePackingScaleDataAtZero.toCertificate
 
 def QuarticVolumePackingScaleClaim : Prop :=
   ∀ z : CanonicalZeroDivisor.ZeroPoint,
-    QuarticVolumePackingScaleDataAtZero z
+    Nonempty (QuarticVolumePackingScaleDataAtZero z)
 
 theorem riemannHypothesis_of_quarticVolumePackingScale
     (scaleData : QuarticVolumePackingScaleClaim) :
-    _root_.RiemannHypothesis :=
-  riemannHypothesis_of_quarticVolumePacking
-    (fun z => (scaleData z).toCertificate)
+    _root_.RiemannHypothesis := by
+  apply riemannHypothesis_of_quarticVolumePacking
+  intro z
+  obtain ⟨data⟩ := scaleData z
+  exact ⟨data.toCertificate⟩
 
 end GRWTSK.RiemannHypothesis

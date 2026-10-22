@@ -260,7 +260,7 @@ theorem OffLineDyadicQuarticScaleDataAtZero.forces_critical_line
 /-- Global corrected dyadic supplier. -/
 def OffLineDyadicQuarticScaleClaim : Prop :=
   ∀ z : ZeroPoint, ∀ ha : zeroDefect z.1 ≠ 0,
-    OffLineDyadicQuarticScaleDataAtZero z ha
+    Nonempty (OffLineDyadicQuarticScaleDataAtZero z ha)
 
 theorem riemannHypothesis_of_offLineDyadicQuarticScale
     (supplier : OffLineDyadicQuarticScaleClaim) :
@@ -274,7 +274,8 @@ theorem riemannHypothesis_of_offLineDyadicQuarticScale
     unfold zeroDefect at hzero
     dsimp [z] at hzero
     linarith
+  obtain ⟨data⟩ := supplier z ha
   exact hline (by
-    simpa [z] using (supplier z ha).forces_critical_line)
+    simpa [z] using data.forces_critical_line)
 
 end GRWTSK.RiemannHypothesis

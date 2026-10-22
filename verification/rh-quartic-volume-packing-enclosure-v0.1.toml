@@ -28,7 +28,7 @@ suffices_for_rh = true
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.QuarticVolumePackingEnclosure"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/QuarticVolumePackingEnclosure.lean"
-blob = "25bde14b07f4552a2945df3da9ecd14cdafb1d82"
+blob = "2df068d09de586543d9ee20b6eb30634a367bb5a"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEnclosureControls"
@@ -45,6 +45,7 @@ path = "docs/mathematics/NumberTheory/Zeta/Riemann/quartic-volume-packing-enclos
 blob = "736cd5f8db289706385d7f5a28b6223849c3a0da"
 
 [evidence_states]
+CLAIM_SORT_REPAIRED = true
 SOURCE_DRAFT = true
 ELABORATED = false
 KERNEL_CHECKED = false

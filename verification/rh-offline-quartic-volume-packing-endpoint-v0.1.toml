@@ -19,7 +19,7 @@ corrected_requirement_suffices_for_rh = true
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.OffLineQuarticVolumePackingEndpoint"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/OffLineQuarticVolumePackingEndpoint.lean"
-blob = "66f166f023bbc07cbb863f700444a80ba8ff2c77"
+blob = "94ed5d5b560d5b7b9fa3ed85328e1dc962d118df"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.OffLineQuarticVolumePackingEndpointControls"
@@ -36,6 +36,7 @@ path = "docs/mathematics/NumberTheory/Zeta/Riemann/offline-quartic-volume-packin
 blob = "a85ee351e9bbbdff7ec9275c177b173acfe388fc"
 
 [evidence_states]
+CLAIM_SORT_REPAIRED = true
 SOURCE_DRAFT = true
 ELABORATED = false
 KERNEL_CHECKED = false

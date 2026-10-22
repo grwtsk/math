@@ -27,7 +27,7 @@ conclusion = "contradiction; hence RH if supplied for every hypothetical off-lin
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicCumulativeQuarticPacking"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicCumulativeQuarticPacking.lean"
-blob = "5357f652fec515cc8d1771d46b78508252b77d70"
+blob = "97657a3b19c9165140ca8b5c12154447aee40269"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicCumulativeQuarticPackingControls"
@@ -44,6 +44,7 @@ path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-cumulative-quartic-pac
 blob = "34fc323de7653f6feae4024a94a351a06280b0aa"
 
 [evidence_states]
+CLAIM_SORT_REPAIRED = true
 SOURCE_DRAFT = true
 ELABORATED = false
 KERNEL_CHECKED = false
