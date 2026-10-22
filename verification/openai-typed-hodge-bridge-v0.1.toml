@@ -1339,3 +1339,48 @@ nonclaims = [
   "routine geometric assembly only",
   "no four-factor algebraicity content"
 ]
+
+
+[[local_target]]
+name = "atomic transition from four-factor core and unchanged-row identities"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.atomicSwitchTransitionSupplierOfCore"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "FourFactorSwitchCoreSupplier",
+  "TwoFactorIdentitySupplier",
+  "AtomicTransitionAssemblySupplier"
+]
+nonclaims = [
+  "formal supplier composition only",
+  "does not prove the four-factor core algebraic",
+  "does not construct the unchanged-row diagonal classes"
+]
+
+[[external_premise]]
+id = "cm-four-factor-switched-core-algebraicity"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["thm:switch", "eq:switch-line"]
+statement_role = "for the two rows changed by one atomic switch, supply a nonzero algebraic four-factor core class"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourFactorSwitchCoreSupplier"
+status = "OPEN"
+nonclaims = [
+  "independent of unchanged-row two-factor identity classes",
+  "not implied by balance, all-conjugate (2,2), descent, or switch combinatorics"
+]
+
+[[external_premise]]
+id = "cm-atomic-transition-slot-assembly"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["prop:switch-reduction"]
+statement_role = "pull one four-factor switched core and all unchanged-row two-factor identity classes to their slots and multiply them into the full atomic transition"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicTransitionAssemblySupplier"
+status = "OPEN"
+nonclaims = [
+  "routine geometric assembly only",
+  "does not supply four-factor algebraicity"
+]
