@@ -145,6 +145,26 @@ theorem realEmbeddingVector_denseRange
   rintro y ⟨q, rfl⟩
   exact ⟨b.equivFun.symm q, rfl⟩
 
+/-- A canonical enumeration of all embeddings, used only to package the
+existence theorem. No mathematical conclusion depends on the chosen ordering. -/
+noncomputable def canonicalEmbeddingOrder :
+    EmbeddingOrder K (Module.finrank ℚ K) := by
+  letI : Algebra.IsAlgebraic ℚ K := NumberField.isAlgebraic K
+  letI : Algebra.IsSeparable ℚ K :=
+    Algebra.IsAlgebraic.isSeparable_of_perfectField
+  exact (Fintype.equivFinOfCardEq (by rw [AlgHom.card])).symm
+
+/-- Canonical diagonal real embedding using the finite-basis cardinality. -/
+def canonicalRealEmbeddingVector (x : K) :
+    Fin (Module.finrank ℚ K) → ℝ :=
+  realEmbeddingVector (canonicalEmbeddingOrder (K := K)) x
+
+/-- Canonical diagonal embedding is dense. -/
+theorem canonicalRealEmbeddingVector_denseRange :
+    DenseRange (canonicalRealEmbeddingVector (K := K)) := by
+  simpa [canonicalRealEmbeddingVector] using
+    realEmbeddingVector_denseRange
+      (Module.finBasis ℚ K) (canonicalEmbeddingOrder (K := K))
 /-- A finite sign pattern. -/
 structure SignPattern (n : ℕ) where
   value : Fin n → ℤ
@@ -183,6 +203,13 @@ theorem exists_realEmbeddingVector_realizesSigns
     norm_num at hi ⊢
     linarith [(abs_lt.mp hi).2]
 
+/-- Parameter-free finite weak approximation for a totally real number field. -/
+theorem exists_canonicalRealEmbeddingVector_realizesSigns
+    (s : SignPattern (Module.finrank ℚ K)) :
+    ∃ x : K, RealizesSigns s (canonicalRealEmbeddingVector (K := K) x) := by
+  simpa [canonicalRealEmbeddingVector] using
+    exists_realEmbeddingVector_realizesSigns
+      (Module.finBasis ℚ K) (canonicalEmbeddingOrder (K := K)) s
 /-- Any sign-realizing element is nonzero as soon as there is at least one
 embedding coordinate. -/
 theorem ne_zero_of_realizesSigns
