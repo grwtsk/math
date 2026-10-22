@@ -43,7 +43,7 @@ unconditional_rh_proved = false
 [[modules]]
 name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability.BooleanClauseCounting"
 path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Satisfiability/BooleanClauseCounting.lean"
-blob = "30483ea8f3b224d46270ce22abf3949a8740ade5"
+blob = "4fd263cf1892d12a1101d56a02f44c8b25e3ed4a"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedDyadicThreshold"
