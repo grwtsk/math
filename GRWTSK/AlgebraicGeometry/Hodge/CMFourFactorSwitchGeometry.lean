@@ -334,8 +334,11 @@ theorem TransportedMonomialGeneratorHodgeData.transportedLine_le
   rw [FourfoldMonomialAssemblyData.transportedLine]
   apply Submodule.span_le.mpr
   intro z hz
-  simpa only [Set.mem_singleton_iff] using
-    hz ▸ H.generator_mem σ
+  have hz' :
+      z = D.assemble ((factors.scalarTransport σ).vector) := by
+    simpa only [Set.mem_singleton_iff] using hz
+  subst z
+  exact H.generator_mem σ
 
 /-- Generator-level Hodge membership is therefore enough to build the complete
 scalar-conjugate monomial-line package. -/
