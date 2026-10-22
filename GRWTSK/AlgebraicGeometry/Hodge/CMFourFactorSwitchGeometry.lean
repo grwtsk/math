@@ -214,6 +214,14 @@ theorem scalarConjugate_mem_orbitSpan
 /-- Sharpened geometric input: the actual Hodge subspace only needs to contain
 the scalar-conjugate orbit span. -/
 structure AtomicSwitchOrbitHodgeData
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
     (P : AtomicSwitchFourFactorProfile
       conj hconj x target hxsign hxodd g hg i j) where
   V : Type*
