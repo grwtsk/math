@@ -193,7 +193,7 @@ theorem negativeWeilWitness_blocks_positiveGramLimit
 energies do not eliminate the signed cross term from the exact source ledger. -/
 theorem signedSettlement_keeps_cross_term
     {b T : ℝ}
-    (hb : EulerP04RH.NativeWindow.PinnedShellWidth b)
+    (hb : HSSCP04.PinnedShellWidth b)
     (hT : b ≤ T) :
     PPNCP04.localEnergy b T =
       HSSCP04.Settlement.matureEnergy b T +
