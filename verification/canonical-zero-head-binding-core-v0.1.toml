@@ -34,7 +34,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-rational-tent-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "78dcc27276eb9489074016e779ca16958e242ae0".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "3ca88d9723fd3d45a4785223cbb7d4a11b85d587"
+# Original pre-repair inherited_target_blob = "3ca88d9723fd3d45a4785223cbb7d4a11b85d587".
+inherited_target_blob = "4cbe62a621c10753702c8400f6c62b0b0a26676e"
 receipt_policy = "Exact commit/tree and operational receipts remain external. This static target represents no run."
 
 [trust]

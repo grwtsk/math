@@ -31,7 +31,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/tent-finite-residue-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "ffcb22da8014d0e1e8a116ebeadc60d2597b4cf7".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "2bfbf31564325da434c7084ae17f0c910d445048"
+# Original pre-repair inherited_target_blob = "2bfbf31564325da434c7084ae17f0c910d445048".
+inherited_target_blob = "7e38c000250d9145b54e3f7bb4b71234b30363e5"
 receipt_policy = "Bind the exact new commit/tree externally. No ancestor receipt accepts this increment."
 inventory_policy = "Lexical names only. Reconcile exact elaborated types and all transitive imports, including tactic imports."
 

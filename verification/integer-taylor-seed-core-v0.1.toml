@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/concrete-newton-second-endpoint-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "56e593392635695b56c2229a2a04d2663cb77dbf".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "8131f6ad92d8ff2bc9948adff23518249d6b96e7"
+# Original pre-repair inherited_target_blob = "8131f6ad92d8ff2bc9948adff23518249d6b96e7".
+inherited_target_blob = "1fb4465593275963c0efe67468943ff205e260c0"
 receipt_policy = "Exact new commit/tree must be bound externally; this static manifest authorizes no execution."
 
 [trust]

@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-tent-absolute-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "7b05afb0403d86674a4cd90b90d0aff873f0330f".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "d7bb038bd2f6ede04a3c9aa8a204b518483b776f"
+# Original pre-repair inherited_target_blob = "d7bb038bd2f6ede04a3c9aa8a204b518483b776f".
+inherited_target_blob = "d8221504ea6408654d916a4eb175332d5754de0a"
 receipt_policy = "Bind exact new commit/tree externally. Static targets and diagnostics are not execution authority or acceptance."
 
 [trust]
@@ -116,7 +117,8 @@ disposition = "INHERITED_NOT_ACCEPTED"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.LandauStatements"
 path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
-source_blob = "41aa479be730fc09defba57576f9af0f09415306"
+# Original pre-repair source_blob = "41aa479be730fc09defba57576f9af0f09415306".
+source_blob = "c6efd023b4ca69c68f0a3b8022c67f656a12d546"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
