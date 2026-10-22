@@ -80,14 +80,15 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
   have hKone : 0 < K + 1 := by linarith
   have hδ : 0 < δ := by
     dsimp [δ]
-    positivity
+    exact div_pos (by norm_num : (0 : ℝ) < 1)
+      (mul_pos (by norm_num) hKone)
   obtain ⟨jsmall, hsmallStages⟩ := hsmall δ hδ
   obtain ⟨jrec, hrecStages⟩ := hrec
   let j₀ : ℕ := max jsmall jrec
   let M : ℝ := E j₀ + 2 * H
   have hM : 0 ≤ M := by
     dsimp [M]
-    positivity
+    nlinarith [hE j₀, hH]
   have hMtwoH : 2 * H ≤ M := by
     dsimp [M]
     linarith [hE j₀]
