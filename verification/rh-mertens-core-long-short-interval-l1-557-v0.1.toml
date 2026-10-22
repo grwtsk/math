@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-core-long-short-interval-l1-557-v0.1"
+owner_repository = "grwtsk/math"
+issue = 557
+parent_issue = 554
+parent_pr = 556
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensCoreLongShortIntervalL1"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensCoreLongShortIntervalL1"
+
+[source_binding]
+stacked_parent_revision = "7207886d40a7cf45f66c4a10e9e327c7a932af27"
+candidate_branch = "research/rh-core-l1-557"
+theorem_source_commit = "45443cca7ee1ff28f2615f61e509172537fbe7be"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensCoreLongShortIntervalL1.lean"
+theorem_source_git_blob = "9bb2f9be288b067daf87e06d55dba68c2cceec76"
+
+[selected_increment]
+packet_l1 = "coreLongShortIntervalL1Packet"
+packet_bound = "abs_coreLongDeepRemainderPacket_le_l1"
+l1_supplier = "SubpolynomialCoreLongShortIntervalL1Packet"
+l1_to_core = "subpolynomialCoreLongDeepRemainderPacket_of_l1"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreLongShortIntervalL1Packet"
+proof_classification = "EXACT_COEFFICIENT_WEIGHTED_SHORT_INTERVAL_L1_MAJORANT"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+l1_supplier_proved = false
+short_interval_theorem_applied = false
+riemann_hypothesis_proved = false

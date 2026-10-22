@@ -1,0 +1,44 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-length-coefficient-mass-585-v0.1"
+owner_repository = "grwtsk/math"
+issue = 585
+parent_issue = 583
+parent_pr = 584
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientMass"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientMass"
+
+[source_binding]
+stacked_parent_revision = "a73b1a1f5a4a22ba57101740cebabe896521fccc"
+candidate_branch = "research/rh-coefficient-mass-585"
+theorem_source_commit = "bacbf321ba5eb2b5c5518d6dc1cc8b67b324a2cd"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreLengthCoefficientMass.lean"
+theorem_source_git_blob = "dce942b385198418613fa7a310dcfe127883656f"
+
+[selected_increment]
+left_lower = "harmonicShiftLower_eq_left"
+left_count = "harmonicShiftCount_eq_leftScale"
+left_reciprocal = "harmonicShiftReciprocal_eq_left"
+right_lower = "harmonicShiftLower_eq_right"
+right_count = "harmonicShiftCount_eq_rightDistance"
+right_reciprocal = "harmonicShiftReciprocal_eq_right"
+full_mass = "fullLengthCoefficientMass"
+core_to_full = "coreLengthCoefficientMass_le_full"
+mass_split = "fullLengthCoefficientMass_eq_left_add_right"
+left_interior = "coreInteriorLengthCoefficient_eq_left"
+right_interior = "coreInteriorLengthCoefficient_eq_right"
+mass_target = "ReciprocalLengthCoefficientMassBound"
+proof_classification = "EXACT_LEFT_RIGHT_COEFFICIENT_GEOMETRY"
+next_obstruction = "telescope right depth mass and sum constant left depth mass"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+reciprocal_mass_bound_proved = false
+transposed_supplier_proved = false
+riemann_hypothesis_proved = false

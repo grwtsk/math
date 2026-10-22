@@ -1,0 +1,44 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-short-long-shift-threshold-528-v0.1"
+owner_repository = "grwtsk/math"
+issue = 528
+parent_issue = 523
+parent_pr = 526
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensShortLongShiftThreshold"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensShortLongShiftThreshold"
+
+[source_binding]
+stacked_parent_revision = "ae9faab62e1f426a7ecc44f92a452ac33e118934"
+candidate_branch = "research/rh-short-long-threshold-528-20261021"
+theorem_source_commit = "255a8def94172c8380afe9695e5f74da62396e91"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensShortLongShiftThreshold.lean"
+theorem_source_git_blob = "b4fe647013b9a3f309c22537df90af5bb419e23a"
+
+[selected_increment]
+trivial_prefix_bound = "abs_mertensTwoPointPrefix_le_length"
+trivial_cumulative_bound = "abs_cumulativeHarmonicShiftCorrelation_le_trivial"
+short_contribution = "harmonicCumulativeShortContribution"
+long_contribution = "harmonicCumulativeLongContribution"
+split_identity = "harmonicCumulativeInterior_eq_short_add_long"
+coefficient_mass_bound = "sum_harmonicShiftSecondDifference_le_first"
+short_bound = "abs_harmonicCumulativeShortContribution_le"
+long_source = "LongShortIntervalMobiusSource"
+long_adapter = "LongShortIntervalToHarmonicAdapter"
+proof_classification = "EXACT_THRESHOLD_SPLIT_PLUS_DETERMINISTIC_SHORT_RANGE_PAYMENT"
+next_obstruction = "choose threshold and prove global short-range budget plus long-range theorem coverage"
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+short_range_globally_negligible = false
+long_short_interval_theorem_applied = false
+adapter_constructed = false
+riemann_hypothesis_proved = false

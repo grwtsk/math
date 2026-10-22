@@ -1,0 +1,67 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-boundary-fourier-848-v0.1"
+owner_repository = "grwtsk/math"
+issue = 848
+parent_issue = 840
+parent_pr = 843
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointBoundaryFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointBoundaryFourier"
+
+[source_binding]
+stacked_parent_revision = "fad6ded9507f15f803b148a5a7ae5c45b12be13e"
+candidate_branch = "research/rh-endpoint-boundary-kernel-848"
+theorem_source_commit = "e78954987e6b85ea991e42cb8de8ec3e72d07779"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointBoundaryFourier.lean"
+theorem_source_git_blob = "d83913d4af59cf1b40dd48a223e740262c0d0b99"
+
+[selected_increment]
+effective_shift = "coreGrowingShiftEndpointAggregateEffectiveShift"
+anchor_denominator = "coreGrowingShiftEndpointAggregateAnchorDenominator"
+tail_start = "coreGrowingShiftEndpointAggregateTailStart"
+denominator_normal_form = "coreGrowingShiftSignedStaircaseDenominator_eq_max"
+normalized_endpoint_drop = "coreGrowingShiftSignedEndpointKernel_eq_normalizedDrop"
+anchor_prefix_set = "coreGrowingShiftEndpointAggregateAnchorPrefixSet"
+tail_prefix_set = "coreGrowingShiftEndpointAggregateTailPrefixSet"
+anchor_tail_union = "coreGrowingShiftEndpointExplicitPrefixSet_eq_anchor_union_tail"
+anchor_tail_disjoint = "coreGrowingShiftEndpointAggregateAnchor_disjoint_tail"
+anchor_drop = "coreGrowingShiftSignedEndpointKernel_eq_anchorDrop"
+tail_drop = "coreGrowingShiftSignedEndpointKernel_eq_tailDrop"
+reciprocal_telescope = "finite_reciprocalDrop_Ico"
+anchor_multiplicity = "coreGrowingShiftEndpointAggregateAnchorMultiplicity"
+anchor_multiplicity_formula = "coreGrowingShiftEndpointAggregateAnchorMultiplicity_eq_sub"
+tail_boundary = "coreGrowingShiftEndpointAggregateTailBoundary"
+anchor_sum = "coreGrowingShiftEndpointAggregateAnchorSum"
+tail_sum = "coreGrowingShiftEndpointAggregateTailSum"
+closed_boundary_kernel = "coreGrowingShiftEndpointAggregateBoundaryKernel"
+closed_kernel_identity = "coreGrowingShiftEndpointAggregateKernel_eq_boundary"
+closed_zero_pad = "coreGrowingShiftEndpointBoundaryKernelZeroPad"
+zero_pad_identity = "coreGrowingShiftEndpointBoundaryKernelZeroPad_eq_aggregate"
+closed_kernel_dft = "coreGrowingShiftEndpointBoundaryKernelDFT2"
+dft_identity = "coreGrowingShiftEndpointBoundaryKernelDFT2_eq_aggregate"
+closed_frequency_packet = "coreGrowingShiftSignedEndpointBoundaryFourierPacket"
+rh_packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointBoundaryFourier"
+source_proposition = "SubpolynomialCoreGrowingShiftSignedEndpointBoundaryFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointBoundaryFourierPacket_iff_aggregate"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointBoundaryFourierPacket"
+proof_classification = "EXACT_FINITE_ANCHOR_TAIL_SPLIT_RECIPROCAL_TELESCOPE_AND_DFT_TRANSPORT"
+next_obstruction = "separate translation-invariant difference dependence from clipped endpoint-boundary corrections in the closed signed kernel"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+boundary_kernel_estimate_proved = false
+signed_frequency_estimate_proved = false
+parseval_bound_proved = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

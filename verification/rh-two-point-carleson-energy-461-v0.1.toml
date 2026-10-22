@@ -1,0 +1,286 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-point-carleson-energy-461-v0.1"
+owner_repository = "grwtsk/math"
+issue = 461
+parent_witness_issue = 460
+parent_witness_pr = 462
+coordinate_issue = 458
+coordinate_pr = 459
+generic_maximal_issue = 437
+generic_maximal_pr = 449
+upstream_maximal_issue = 410
+upstream_maximal_pr = 411
+endpoint_witness_issue = 430
+endpoint_witness_pr = 432
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonEnergy"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+stacked_parent_branch = "research/rh-tree-singleton-mass-witness-460-20261021"
+stacked_parent_revision = "01d47ed94dc9c50ecfbfa028d496647a420049b2"
+stacked_parent_tree = "77357cad7d635a1040d7b25ab65a7909cd6d44d4"
+candidate_branch = "research/rh-scale-max-carleson-461-20261021"
+theorem_source_commit = "c57d47eaee0809d5034281807360ecf1e3e9a4b3"
+theorem_source_tree = "8b6d8af18bfb6f7354fe2966f9f7ddd6c7b10921"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonEnergy.lean"
+theorem_source_git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+mathematical_note_commit = "22eb0931e761106cd26b916eae5c3b6c7303dd18"
+mathematical_note_tree = "b63877693e88a8a468a05dee985d65802b7ec09a"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-carleson-energy.md"
+mathematical_note_git_blob = "39cbad520af9a22522c15bf7b3144933528410bc"
+namespace_generic = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+namespace_arithmetic = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+hypothesis = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[rejected_predecessor]
+issue = 460
+supplier = "SubpolynomialDyadicMertensTwoPointCoordinateEnergyWithDepthCost"
+disposition = "REFUTED_AT_SCOPE"
+reason = "complete unweighted sum over every singleton position has quadratic mass"
+preserved_generic_maximal_comparison = true
+preserved_zero_padding_adapter = true
+preserved_coordinate_identity = true
+preserved_canonical_maximal_consumer = true
+
+[selected_increment]
+pointwise_declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.finitePrefixSum_sq_le_alignedDyadicCarlesonEnergy"
+maximal_declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.dyadicPrefixMaximum_sq_le_alignedDyadicCarlesonEnergy"
+fine_scale_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointCarlesonSingletonSum_le_endpoint"
+shiftwise_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointPrefixMax_sq_le_twoPointCarlesonEnergy"
+shift_summed_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointMaximalQuadraticEnergy_le_carlesonEnergySum"
+supplier_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.subpolynomialDyadicMaximalMertensTwoPointEnergy_of_carleson"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensTwoPointCarlesonEnergy"
+pointwise_statement = "N <= 2^m -> finitePrefixSum a N ^ 2 <= ((m:Real)+1) * alignedDyadicCarlesonEnergy m a"
+maximal_statement = "dyadicPrefixMaximum m a ^ 2 <= ((m:Real)+1) * alignedDyadicCarlesonEnergy m a"
+shiftwise_statement = "mertensTwoPointPrefixMax j h ^ 2 <= ((j:Real)+2) * twoPointCarlesonEnergy moebiusReal moebiusReal j h"
+shift_summed_statement = "mertensTwoPointMaximalQuadraticEnergy j <= ((j:Real)+2) * twoPointCarlesonEnergySum moebiusReal moebiusReal j"
+proof_classification = "EXACT_FINITE_BINARY_DECOMPOSITION_AND_WEIGHTED_CAUCHY"
+rh_consequence = "SUPPLIES_CONDITIONAL_FINITE_COMPARISON_INTERFACE"
+next_obstruction = "prove the actual all-scale depth-weighted two-point Moebius Carleson-energy bound"
+
+[canonical_observable]
+block_sum = "alignedDyadicBlockSum"
+block_interval = "[q*2^r,(q+1)*2^r)"
+scale_maximum = "alignedDyadicScaleMaximum"
+scale_maximum_definition = "sup over q < 2^(m-r) of absolute signed block sums"
+proper_energy = "alignedDyadicProperCarlesonEnergy"
+complete_energy = "alignedDyadicCarlesonEnergy"
+scale_range = "0 <= r <= m"
+block_sign = "SIGNED_SUM_BEFORE_ABSOLUTE_VALUE_AND_SQUARING"
+absolute_value_location = "after each signed aligned block sum"
+uses_all_block_positions_in_energy = false
+uses_one_maximum_per_scale = true
+uses_probability = false
+uses_limits = false
+uses_external_certificate = false
+
+[binary_decomposition]
+proper_prefix_condition = "N < 2^m"
+full_prefix_condition = "N = 2^m"
+left_case = "N < 2^(m-1)"
+midpoint_crossing_case = "2^(m-1) <= N < 2^m"
+at_most_one_selected_block_per_scale = true
+right_half_offset = "2^(m-r)"
+right_half_shift = "2^m"
+weighted_cauchy = "y^2 <= kE and k>=0 implies (x+y)^2 <= (k+1)(x^2+E)"
+zero_weight_case_separate = true
+depth_factor = "m+1"
+
+[fine_scale_control]
+coefficient_declaration = "abs_paddedTwoPointMoebius_le_one"
+scale_zero_maximum_declaration = "mertensTwoPointCarlesonScaleZeroMaximum_le_one"
+scale_zero_sum_declaration = "mertensTwoPointCarlesonSingletonSum_le_endpoint"
+coefficient_bound = "absolute value <= 1"
+per_shift_scale_zero_square_bound = "<= 1"
+all_shift_scale_zero_bound = "<= 2^(j+1)"
+complete_tree_predecessor_scale_zero_growth = "quadratic at positive squarefree density"
+max_per_scale_scale_zero_growth = "linear in dyadic endpoint"
+full_arithmetic_supplier_inferred = false
+
+[all_scale_supplier]
+generic_name = "SubpolynomialDyadicTwoPointCarlesonEnergyWithDepthCost"
+moebius_name = "SubpolynomialDyadicMertensTwoPointCarlesonEnergyWithDepthCost"
+formula = "forall delta>0 exists A>=0 forall j, (j+2)*CarlesonEnergySum(j) <= (A*(2^j)^delta)^2*2^(j+1)"
+depth_cost = "j+2"
+depth_cost_silently_absorbed = false
+supplier_constructed = false
+
+[candidate_comparison]
+selected = "MAX_PER_SCALE_ALIGNED_BLOCK_ENERGY"
+candidate_1 = "max-per-scale aligned block energy; selected; finite and source-facing"
+candidate_2 = "one prefix-dependent selected binary path; exact but less reusable"
+candidate_3 = "weighted Carleson packing or variation norm; more speculative and analytically distant"
+
+[positivity]
+scale_maximum_property = "NONNEGATIVE_FINITE_SUPREMUM_OF_ABSOLUTE_VALUES"
+proper_energy_property = "NONNEGATIVE_FINITE_SUM_OF_SQUARES"
+complete_energy_property = "NONNEGATIVE_FINITE_SUM_OF_SQUARES"
+strict_global_positivity = false
+positive_semidefinite_analytic_form_claimed = false
+kernel_positivity_claimed = false
+measure_positivity_claimed = false
+trace_or_state_positivity_claimed = false
+averaged_arithmetic_positivity_claimed = false
+finite_height_weil_positivity_claimed = false
+global_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_private_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+arithmetic_carleson_estimate_included = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonEnergy"
+authored_declaration_count = 29
+public_definition_count = 8
+public_theorem_script_count = 19
+private_helper_count = 2
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeSingletonMassObstruction.lean"
+git_blob = "935cff049d32632e3aed703e80a6f123e7923a25"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_462"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeEnergyCoordinates.lean"
+git_blob = "ed9c52ed2b1eca1d73fdd87a8494aab0ad34a7b4"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_459"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean"
+git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_455"
+
+[[dependencies]]
+source = "Mathlib"
+uses = [
+  "Finset.sup' and finite range sums",
+  "partialSups_le_iff and le_partialSups_of_le",
+  "Real.sqrt",
+  "sq_le_sq₀",
+  "omega",
+  "nlinarith",
+  "ArithmeticFunction.moebius coefficient bound"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[statement_controls]
+scale_index_range_nonempty = true
+proper_prefix_excludes_top_scale = true
+full_prefix_uses_top_scale = true
+left_half_maxima_embed = true
+right_half_maxima_reindex_exactly = true
+midpoint_decomposition_exact = true
+at_most_one_block_per_scale = true
+signed_sum_precedes_absolute_value = true
+absolute_value_precedes_square = true
+all_positive_shifts_retained = true
+zero_padding_inherited_exactly = true
+depth_factor_retained = true
+fine_scale_linear_bound_present = true
+
+[hostile_controls]
+terminal_endpoint_not_substituted_for_prefix_maximum = true
+complete_all_position_tree_not_reintroduced = true
+more_than_one_selected_block_per_scale_rejected = true
+overlapping_prefix_blocks_rejected = true
+wrong_right_half_offset_rejected = true
+termwise_absolute_values_inside_blocks_rejected = true
+depth_factor_not_dropped = true
+fine_scale_linear_bound_not_promoted_to_full_estimate = true
+finite_comparison_not_promoted_to_arithmetic_cancellation = true
+conditional_supplier_not_promoted_to_rh = true
+chowla_elliott_sarnak_weak_mertens_gonek_hejhal_roles_not_inferred = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+arithmetic_carleson_energy_bound_proved = false
+fixed_shift_chowla_proved = false
+growing_shift_chowla_proved = false
+corrected_elliott_proved = false
+sarnak_disjointness_proved = false
+weak_mertens_proved = false
+gonek_hejhal_proved = false
+new_pickup_damping_paid = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[public_declaration_inventory]
+names = [
+  "alignedDyadicScaleMaximum",
+  "alignedDyadicProperCarlesonEnergy",
+  "alignedDyadicCarlesonEnergy",
+  "abs_alignedDyadicBlockSum_le_scaleMaximum",
+  "alignedDyadicScaleMaximum_nonneg",
+  "alignedDyadicScaleMaximum_le_succ",
+  "alignedDyadicScaleMaximum_shifted_half_le_succ",
+  "alignedDyadicProperCarlesonEnergy_nonneg",
+  "alignedDyadicCarlesonEnergy_nonneg",
+  "alignedDyadicCarlesonEnergy_eq_proper_add_top",
+  "alignedDyadicProperCarlesonEnergy_le_succ",
+  "topBlock_sq_add_shiftedProperEnergy_le_succ",
+  "finitePrefixSum_sq_le_alignedDyadicCarlesonEnergy",
+  "dyadicPrefixMaximum_sq_le_alignedDyadicCarlesonEnergy",
+  "alignedDyadicScaleMaximum_zero_le_of_abs_le",
+  "twoPointCarlesonEnergy",
+  "twoPointCarlesonEnergySum",
+  "mertensTwoPointCarlesonSingletonSum",
+  "abs_paddedTwoPointMoebius_le_one",
+  "mertensTwoPointCarlesonScaleZeroMaximum_le_one",
+  "mertensTwoPointCarlesonSingletonSum_le_endpoint",
+  "mertensTwoPointPrefixMax_sq_le_twoPointCarlesonEnergy",
+  "mertensTwoPointMaximalQuadraticEnergy_le_carlesonEnergySum",
+  "SubpolynomialDyadicTwoPointCarlesonEnergyWithDepthCost",
+  "SubpolynomialDyadicMertensTwoPointCarlesonEnergyWithDepthCost",
+  "subpolynomialDyadicMaximalMertensTwoPointEnergy_of_carleson",
+  "riemannHypothesis_of_mertensTwoPointCarlesonEnergy"
+]
+
+[private_declaration_inventory]
+names = [
+  "add_sq_le_succ_weight",
+  "finitePrefixSum_sq_le_properCarlesonEnergy"
+]

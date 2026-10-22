@@ -1,0 +1,223 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-triangular-kernel-373-v0.1"
+owner_repository = "grwtsk/math"
+issue = 373
+parent_issue = 369
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 370
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicTriangularKernel"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicTriangularKernel"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "5307facff9523318e2c16cbf6916d0ad15a209b4"
+stacked_parent_tree = "9677ab695f3ee6e2d5af176eaf8d203745bb44ae"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicTriangularKernel.lean"
+new_module_git_blob = "ff68494c3842e3127522cedbfc211452b00c4c45"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-triangular-kernel.md"
+mathematical_note_git_blob = "747bcf3037f703c9893d0c356c7b6ad6c5c5c327"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicTriangularKernel"
+authored_declaration_count = 23
+definition_count = 6
+theorem_script_count = 17
+private_helper_count = 3
+
+[[inherited_targets]]
+path = "verification/rh-dyadic-triangular-correlation-369-v0.1.toml"
+git_blob = "d768a21f48f1f25860412b2f0015cf124f4aa796"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicTriangularMertensCorrelation.lean"
+git_blob = "c439fdd25f2c29ef21afcbe598aec7a0b2c0bf5a"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicOrderedPairMertensCorrelation.lean"
+git_blob = "03d2207862b570dfc9ff18020475f7c13de6f713"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[diagnostics]
+engine = "python-fractions-exact"
+check_count = 433026
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 9
+exhaustive_stream_count = 19683
+checked_dyadic_scales = [1, 2, 4]
+normal_mode_status = "PASS"
+optimized_mode_status = "NOT_SEPARATELY_RUN"
+use_current_prefix_mutation_rejected = true
+missing_factor_two_mutation_rejected = true
+dropped_boundary_mutation_rejected = true
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+previous_prefix_index_required = true
+ordered_pair_factor_two_required = true
+abel_terminal_term_required = true
+signed_terms_retained = true
+absolute_value_replacement_rejected = true
+exact_boundary_diagonal_subtraction_required = true
+boundary_only_not_total_supplier = true
+local_only_not_total_supplier = true
+half_open_dyadic_cells_required = true
+finite_block_tables_not_universal = true
+lower_kernel_bound_not_substitute_for_upper_bound = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+kernel_estimate_proved = false
+boundary_and_local_separately_equivalent = false
+unified_max_kernel_formalized = false
+
+[[declarations]]
+source_name = "mertensTriangularAtom"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularBoundary"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularLocal"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularKernel"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "weightedMertensDyadicBoundarySquare"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicTriangularKernel"
+visibility = "public"
+kind = "def"
+
+[[declarations]]
+source_name = "finite_tail_abel"
+visibility = "private"
+kind = "theorem"
+
+[[declarations]]
+source_name = "two_mul_sum_mul_sub_const"
+visibility = "private"
+kind = "theorem"
+
+[[declarations]]
+source_name = "dyadic_reciprocal_cell"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "mertensPrefixTriangularCorrelation_sub_pred"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularCorrelation_eq_range"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularLocal_eq_range"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "dyadic_left_inv_eq_two_mul_right_inv"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "two_mul_sum_atom_range_eq_triangular_sub"
+visibility = "private"
+kind = "theorem"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularCorrelation_eq_kernel"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularBoundary_eq_square_sub_diagonal"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularBoundary_le_boundarySquare"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangularKernel_iff_triangular"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangularKernel_iff_orderedPair"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangularKernel_iff_block"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangularKernel_iff_cumulative"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "subpolynomialDyadicTriangularKernel_iff_allPositiveWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicTriangularKernel"
+visibility = "public"
+kind = "theorem"

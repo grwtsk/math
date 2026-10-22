@@ -1,0 +1,232 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-point-tree-singleton-mass-obstruction-460-v0.1"
+owner_repository = "grwtsk/math"
+issue = 460
+successor_issue = 461
+parent_issue = 458
+parent_pr = 459
+status = "MATHEMATICAL_REFUTATION_DOCUMENTED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.TwoPointTreeSingletonMassObstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.TwoPointTreeSingletonMassObstruction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-dyadic-tree-coordinates-458-20261021"
+stacked_parent_revision = "9d620074415a05694028538a7b2e9d9c10fd0577"
+stacked_parent_tree = "6d8358a7eac355da39e8be429106ba206a245f4c"
+candidate_branch = "research/rh-tree-singleton-mass-witness-460-20261021"
+theorem_source_commit = "b2ef5fab001839498d67f04f2402d9591ab40e7c"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeSingletonMassObstruction.lean"
+theorem_source_git_blob = "935cff049d32632e3aed703e80a6f123e7923a25"
+mathematical_note_commit = "a74d4fee8650f54b27679912de1eee06b39b27ac"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-tree-singleton-mass-obstruction.md"
+mathematical_note_git_blob = "5340af2e39c233a6fabc36e8e9de27d6dd13da56"
+namespace_generic = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+namespace_arithmetic = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+hypothesis = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+consumer_refuted = false
+
+[refuted_supplier]
+name = "SubpolynomialDyadicMertensTwoPointCoordinateEnergyWithDepthCost"
+recursive_equivalent = "SubpolynomialDyadicMertensTwoPointTreeEnergyWithDepthCost"
+classification = "REFUTED_AT_SCOPE"
+refuted_scope = "complete unweighted sum over every aligned block position at every scale for every positive shift"
+refutation_exponent = "1/4"
+refutation_reason = "scale-zero singleton layer has quadratic mass in the dyadic endpoint"
+generic_finite_comparison_preserved = true
+zero_padding_adapter_preserved = true
+coordinate_identity_preserved = true
+canonical_maximal_prefix_consumer_preserved = true
+
+[selected_increment]
+primary_generic_declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.singletonScaleSquareEnergy_le_coordinate"
+primary_arithmetic_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.not_subpolynomialCoordinateEnergy_of_singletonMassCertificate"
+disposition_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.CompleteTreeSupplierRefutedAtScope"
+proof_classification = "EXACT_FINITE_SCALE_ZERO_DOMINATION_PLUS_EXPLICIT_ARITHMETIC_REFUTATION_CERTIFICATE"
+mathematical_conclusion = "complete unweighted coordinate/tree supplier is false"
+lean_conclusion = "refutation follows from MertensSingletonMassRefutationCertificate"
+next_obstruction = "construct max-per-scale or selected-path Carleson observable under issue 461"
+
+[singleton_observable]
+generic_name = "singletonScaleSquareEnergy"
+two_point_name = "twoPointSingletonSquareMass"
+moebius_name = "mertensTwoPointSingletonSquareMass"
+domain = "dyadic scale j, every positive shift h below 2^(j+1), every singleton position q below 2^(j+1)"
+codomain = "real"
+normalization = "sum of squared zero-padded source coefficients"
+positivity_classification = "FINITE_NONNEGATIVE_SUM_OF_REAL_SQUARES"
+coordinate_relation = "scale r=0 is one nonnegative summand of the complete coordinate energy"
+
+[arithmetic_reindexing]
+source_coordinates = "shift h and singleton position q"
+target_coordinates = "1 <= a < b < 2^(j+1)"
+forward_map = "a=q+1, b=q+1+h"
+inverse_map = "q=a-1, h=b-a"
+pair_mass_declaration = "mertensSquarePairMass"
+squarefree_count_declaration = "mertensSquarefreeCountAtScale"
+finite_pair_identity = "SingletonMass(j) = choose(squarefreeCount(j),2)"
+finite_pair_identity_source_state = "CERTIFICATE_FIELD_SOURCE_DRAFT"
+
+[growth_argument]
+nonsquarefree_cover = "multiples of d^2 for d>=2"
+reciprocal_square_bound = "sum_(d>=2) 1/d^2 <= 1/4 + sum_(d>=3) 1/(d*(d-1)) = 3/4"
+squarefree_lower_density = "at least 1/4"
+singleton_growth = "Omega(2^(2j))"
+quarter_power_budget_growth = "O(2^(3j/2)) up to fixed constants"
+mathematical_refutation_documented = true
+lean_density_proof_completed = false
+lean_refutation_requires_certificate = true
+
+[certificate]
+name = "MertensSingletonMassRefutationCertificate"
+fields = [
+  "pair_reindex",
+  "squarefree_pair_count",
+  "quarterPower_escape"
+]
+certificate_constructed = false
+certificate_is_not_external_oracle = true
+certificate_fields_are_explicit_theorem_obligations = true
+
+[corrected_successor]
+issue = 461
+name = "max-per-scale aligned block square function"
+proposed_observable = "sum over scales of the square of the maximum aligned block sum at that scale"
+fine_scale_requirement = "after summing shifts, singleton scale costs O(2^(j+1)), not Theta(2^(2j))"
+current_increment_constructs_successor = false
+
+[evidence_states]
+mathematical_refutation_documented = true
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+arithmetic_certificate_constructed = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.TwoPointTreeSingletonMassObstruction"
+authored_declaration_count = 19
+definition_count = 7
+structure_count = 1
+theorem_script_count = 11
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeEnergyCoordinates.lean"
+git_blob = "ed9c52ed2b1eca1d73fdd87a8494aab0ad34a7b4"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean"
+git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+status = "INHERITED_STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+declaration = "ArithmeticFunction.moebius_ne_zero_iff_squarefree"
+status = "PINNED_PUBLIC_DEPENDENCY_SOURCE_ONLY"
+
+[statement_controls]
+scale_zero_is_literal = true
+singleton_block_is_one_coefficient = true
+complete_coordinate_energy_contains_scale_zero = true
+zero_padding_cutoff_is_preserved = true
+signed_sum_occurs_before_squaring = true
+all_positive_shifts_are_retained = true
+pair_reindexing_is_bijective_target = true
+squarefree_pair_count_is_explicit = true
+quarter_power_exponent_is_positive = true
+complete_tree_supplier_only_is_refuted = true
+conditional_rh_consumer_is_not_refuted = true
+
+[hostile_controls]
+finite_computation_not_used_as_density_proof = true
+source_declaration_not_promoted_to_elaboration = true
+certificate_type_not_promoted_to_certificate_value = true
+positivity_not_assumed_for_rh_consumer = true
+endpoint_witness_not_conflated_with_singleton_obstruction = true
+generic_tree_comparison_not_refuted = true
+coordinate_identity_not_refuted = true
+canonical_maximal_energy_not_refuted = true
+max_per_scale_successor_not_refuted = true
+weighted_or_selected_path_observables_not_refuted = true
+conditional_theorem_with_false_premise_not_reported_as_false_theorem = true
+
+[open_obligations]
+lean_pair_reindexing = true
+lean_squarefree_pair_count_identity = true
+lean_squarefree_positive_density_bound = true
+lean_quarter_power_escape = true
+exact_head_elaboration = true
+transitive_trust_audit = true
+independent_replay = true
+max_per_scale_successor = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+unconditional_lean_refutation = false
+corrected_carleson_supplier_proved = false
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+new_pickup_damping_paid = false
+finite_height_rh_proved = false
+zero_free_region_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "singletonScaleSquareEnergy",
+  "alignedDyadicBlockSum_zero",
+  "alignedDyadicScaleSquareEnergy_zero",
+  "singletonScaleSquareEnergy_nonneg",
+  "singletonScaleSquareEnergy_le_coordinate",
+  "twoPointSingletonSquareMass",
+  "twoPointSingletonSquareMass_nonneg",
+  "twoPointSingletonSquareMass_le_coordinateBlockEnergySum",
+  "mertensTwoPointSingletonSquareMass",
+  "mertensTwoPointSingletonSquareMass_le_coordinateBlockEnergySum",
+  "mertensSquarePairMass",
+  "mertensSquarefreeCountAtScale",
+  "MertensSingletonMassRefutationCertificate",
+  "QuarterPowerMertensCoordinateEnergyBudget",
+  "quarterPowerBudget_of_subpolynomialCoordinateEnergy",
+  "not_quarterPowerBudget_of_singletonMassCertificate",
+  "not_subpolynomialCoordinateEnergy_of_singletonMassCertificate",
+  "CompleteTreeSupplierRefutedAtScope",
+  "completeTreeSupplierRefutedAtScope_of_certificate"
+]
