@@ -22,6 +22,10 @@ labelling of the roots of a polynomial.
 
 namespace GRWTSK.Algebra.PolygonalQuarticDescent
 
+open Polynomial
+
+noncomputable section
+
 variable {R : Type*} [CommRing R]
 
 def eOne (a b c d : R) : R := a + b + c + d
@@ -133,7 +137,7 @@ theorem adjacencyResolvent_vieta (a b c d : R) :
   simp only [adjacencyResolventFromRoots, adjacencyResolventFromVieta,
     adjacencyOne, adjacencyTwo, adjacencyThree, eOne, eTwo, eThree,
     eFour, qOne, qTwo, qThree]
-  simp only [map_add, map_sub, map_mul, map_pow]
+  simp only [map_add, map_sub, map_mul, map_pow, map_ofNat]
   ring
 
 /-- The monic quartic reconstructed from the four Vieta coordinates. -/
@@ -150,7 +154,7 @@ theorem four_linear_factors_vieta (a b c d : R) :
       quarticFromVieta (eOne a b c d) (eTwo a b c d)
         (eThree a b c d) (eFour a b c d) := by
   simp only [quarticFromVieta, eOne, eTwo, eThree, eFour]
-  simp only [map_add, map_sub, map_mul, map_pow]
+  simp only [map_add, map_mul]
   ring
 
 /-- Express the same cubic through the coefficients of a monic quartic
@@ -230,20 +234,36 @@ theorem adjacencyResolvent_permutation (r : Fin 4 → R)
     adjacencyResolventFromRoots (r (σ 0)) (r (σ 1))
       (r (σ 2)) (r (σ 3)) =
     adjacencyResolventFromRoots (r 0) (r 1) (r 2) (r 3) := by
-  repeat rw [adjacencyResolvent_vieta]
-  simp only [adjacencyResolventFromVieta]
-  have h₁ : eOne (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
-      eOne (r 0) (r 1) (r 2) (r 3) := by
-    fin_cases σ <;> simp [eOne] <;> ring
-  have h₂ : eTwo (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
-      eTwo (r 0) (r 1) (r 2) (r 3) := by
-    fin_cases σ <;> simp [eTwo] <;> ring
-  have h₃ : eThree (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
-      eThree (r 0) (r 1) (r 2) (r 3) := by
-    fin_cases σ <;> simp [eThree] <;> ring
-  have h₄ : eFour (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
-      eFour (r 0) (r 1) (r 2) (r 3) := by
-    fin_cases σ <;> simp [eFour] <;> ring
-  rw [h₁, h₂, h₃, h₄]
+  have hprod :
+      (Polynomial.X - Polynomial.C (r (σ 0))) *
+        (Polynomial.X - Polynomial.C (r (σ 1))) *
+        (Polynomial.X - Polynomial.C (r (σ 2))) *
+        (Polynomial.X - Polynomial.C (r (σ 3))) =
+      (Polynomial.X - Polynomial.C (r 0)) *
+        (Polynomial.X - Polynomial.C (r 1)) *
+        (Polynomial.X - Polynomial.C (r 2)) *
+        (Polynomial.X - Polynomial.C (r 3)) := by
+    simpa only [Fin.prod_univ_four] using
+      Equiv.prod_comp σ (fun i : Fin 4 => Polynomial.X - Polynomial.C (r i))
+  have hquartic :
+      quarticFromVieta (eOne (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)))
+        (eTwo (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)))
+        (eThree (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)))
+        (eFour (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3))) =
+      quarticFromVieta (eOne (r 0) (r 1) (r 2) (r 3))
+        (eTwo (r 0) (r 1) (r 2) (r 3))
+        (eThree (r 0) (r 1) (r 2) (r 3))
+        (eFour (r 0) (r 1) (r 2) (r 3)) := by
+    rw [← four_linear_factors_vieta, ← four_linear_factors_vieta]
+    exact hprod
+  have h0 := congrArg (fun p : R[X] => p.coeff 0) hquartic
+  have h1 := congrArg (fun p : R[X] => p.coeff 1) hquartic
+  have h2 := congrArg (fun p : R[X] => p.coeff 2) hquartic
+  have h3 := congrArg (fun p : R[X] => p.coeff 3) hquartic
+  simp [quarticFromVieta, Polynomial.coeff_add, Polynomial.coeff_sub,
+    Polynomial.coeff_X_pow] at h0 h1 h2 h3
+  rw [adjacencyResolvent_vieta, adjacencyResolvent_vieta, h3, h2, h1, h0]
+
+end
 
 end GRWTSK.Algebra.PolygonalQuarticDescent
