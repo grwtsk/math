@@ -72,6 +72,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaFourierLogLossAdapt
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimePartialDiscrepancyControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeDFTSmoothingWindowControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeDFTSmoothingPacketControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularSmoothingCandidateControls
 
 set_option autoImplicit false
 
