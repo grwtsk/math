@@ -221,7 +221,7 @@ theorem halfScaleOddMertensEnergy_of_parity
       have hbI := Finset.mem_Ico.mp hb
       have hbEq : b = 1 := by norm_num at hbI ⊢; omega
       subst b
-      simp [parityMertensPrefix, endpointParitySet]
+      simpa [parityMertensPrefix, endpointParitySet] using hC
   | succ j =>
       have hbHalf :
           b / 2 ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) := by
