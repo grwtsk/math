@@ -1688,6 +1688,44 @@ Thus the remaining weight-one factor-typing bridge is now exactly the canonical-
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4aj. Canonical tensor to actual H1 comparison is reduced to pure tensors
+
+The comparison premise is now strictly smaller.
+
+`CMWeightOneRiemannRealization.lean` adds:
+
+~~~text
+canonicalTensorComplexCoordinate_tmul
+WeightOneCMRealization.pureTensorCoordinate
+PureTensorActualH1Comparison
+PureTensorActualH1Comparison.coordinate_compatibility
+PureTensorActualH1Comparison.toCanonicalComparison
+~~~
+
+The canonical coordinate of a pure tensor is proved locally:
+
+[
+operatorname{coord}_sigma(aotimes x)
+=
+iota(a),sigma(x),
+]
+
+where (iota:Ehookrightarrowmathbf C) is the chosen base complex embedding and (sigma(x)) is the existing field-coordinate function.
+
+A comparison supplier therefore no longer has to prove coordinate compatibility for arbitrary elements of (Eotimes_{mathbf Q}E). It only supplies:
+
+- a (mathbf Q)-linear map
+  [
+  Eotimes_{mathbf Q}E	o H^1_{mathbf C};
+  ]
+- the explicit coordinate formula above on pure tensors.
+
+The theorem `PureTensorActualH1Comparison.coordinate_compatibility` extends that formula to every tensor by tensor induction. The resulting full comparison then feeds the already-local sign-to-actual-Hodge-type theorem.
+
+This leaves a standard scalar-extension/base-change construction as the exact remaining weight-one comparison task, rather than an arbitrary Hodge comparison theorem.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
