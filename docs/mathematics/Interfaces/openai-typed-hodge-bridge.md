@@ -2037,6 +2037,44 @@ After that identification, the existing adapters recover scalar-conjugate stabil
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4as. Assembly identification is reduced to a presentation theorem
+
+The remaining assembly-identification step is now formally closed once the geometric construction is presented in the canonical multilinear interface.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+FourfoldMultilinearAlgebraicAssembly.assemble_eq
+FourfoldMultilinearAlgebraicAssembly.assemble_fun_eq
+~~~
+
+If two fourfold assemblies are (mathbf Q)-linear in each of the four factor slots and both satisfy the same canonical pure-factor formula, four nested tensor inductions prove they agree on arbitrary factor tensors.
+
+Thus a separate theorem of the form
+
+[
+	ext{geometric assembly}
+=
+	ext{canonical assembly}
+]
+
+is no longer needed.
+
+The remaining assembly-side input is strictly a presentation statement:
+
+1. the geometric switched monomial construction is (mathbf Q)-linear in each of its four factor slots;
+2. on pure factors (a_iotimes x_i), it equals
+   [
+   (a_1a_2a_3a_4)otimes
+   (((x_1otimes x_2)otimes x_3)otimes x_4).
+   ]
+
+Once those two facts are supplied, extensional equality with the canonical model follows locally, and the already-local equivariance theorem gives scalar-conjugation naturality automatically.
+
+This leaves no independent arithmetic naturality theorem and no independent assembly-equality theorem.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
