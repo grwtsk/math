@@ -1735,7 +1735,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types", "eq:cm-label-conjugation"]
-statement_role = "identify each transported canonical embedding-line factor with its actual H^(1,0) or H^(0,1) line in the weight-one cohomological realization"
+statement_role = "compare each transported canonical embedding-line vector with the actual complexified H1 realization so its coordinate image lies in the locally-defined H^(1,0) or H^(0,1) subspace"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedFourFactorHodgeTyping.factor_type"
 status = "OPEN"
 nonclaims = [
@@ -1755,3 +1755,30 @@ nonclaims = [
   "classical structural Hodge theorem only",
   "no algebraicity conclusion"
 ]
+
+
+[[local_target]]
+name = "actual complexified H1 Hodge pieces in weight-one realization"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.IsOfType"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "WeightOneCMRealization with actual complexified H1 carrier",
+  "linear equivalence from H1_C to the canonical CM coordinate model"
+]
+nonclaims = [
+  "does not construct the realization supplier",
+  "does not identify canonical tensor-model embedding vectors with actual H1_C vectors"
+]
+
+[[local_target]]
+name = "actual Weil operator has plus-i action on H10"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.actualWeil_H10"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "actual Weil operator has minus-i action on H01"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.actualWeil_H01"
+status = "SOURCE_DRAFT_NOT_RUN"
