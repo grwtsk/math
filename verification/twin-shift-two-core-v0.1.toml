@@ -1,0 +1,215 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "twin-shift-two-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 260
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.TwinShiftTwoCore"
+build_target = "GRWTSK.Interfaces.TwinShiftTwoCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+base_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/landau-prime-counts-v0.1.toml"
+inherited_target_blob = "b3c13441fc6080bac208c5069382daf119cfb227"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_twin_count = "INHERITED_MAIN_SOURCE"
+lambda_dirichlet_identity = "NEW_SOURCE_DRAFT"
+finite_shift_two_divisor_expansion = "NEW_SOURCE_DRAFT"
+gcd_compatibility = "NEW_SOURCE_DRAFT"
+natural_crt_equivalence = "NEW_SOURCE_DRAFT"
+unique_lcm_residue = "NEW_SOURCE_DRAFT"
+exact_residue_count_and_cutoff = "NEW_SOURCE_DRAFT"
+small_divisor_signed_split = "NEW_SOURCE_DRAFT"
+prime_only_weighted_bridge = "NEW_SOURCE_DRAFT"
+complete_prime_power_correction = "NEW_SOURCE_DRAFT"
+terminal_strict_consumers = "NEW_SOURCE_DRAFT"
+signed_residual_bound = "NOT_SUPPLIED"
+prime_power_quantitative_bound = "NOT_SUPPLIED"
+parity_breaking_estimate = "NOT_SUPPLIED"
+unbounded_tail_supplier = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+twin_prime_conjecture = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TwinShiftTwoCore"
+path = "GRWTSK/Interfaces/TwinShiftTwoCore.lean"
+source_blob = "4942dfe943a9ae7b0e12b13d511ee86cd5150b92"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT"
+path = "GRWTSK/NumberTheory/Primes/TwinShiftTwoCRT.lean"
+source_blob = "55c9643b4704fc3101244eb2c7c22a165083edfa"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion"
+path = "GRWTSK/NumberTheory/Primes/TwinMangoldtExpansion.lean"
+source_blob = "fd02b037bd473cdf7e6ea94a5a40565d8ffc9e51"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary"
+path = "GRWTSK/NumberTheory/Primes/TwinPrimePowerBoundary.lean"
+source_blob = "45cfa74be18f1e0ee42079038ad8663d111902a1"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/TwinShiftTwoControls.lean"
+source_blob = "e48d6512d02da7d4041854ab11efb112af70e1d6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Nat/ModEq.lean"
+blob = "1ffd68b0527a5bd6d04b77b323b024bc9c0aba83"
+required_declarations = ["Nat.mod_lcm", "Nat.ModEq.dvd_iff", "Nat.ModEq.add_right_cancel'", "Nat.mod_modEq"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Int/GCD.lean"
+blob = "6cc9051fe51495a25c119f713cd0ec5f65a9ddff"
+required_declarations = ["Nat.gcd_eq_gcd_ab"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Int/CardIntervalMod.lean"
+blob = "40cbdde688afc5654c31b28e12a516563724027e"
+required_declarations = ["Nat.count_modEq_card"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean"
+blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+required_declarations = ["ArithmeticFunction.moebius_mul_log_eq_vonMangoldt", "ArithmeticFunction.vonMangoldt_apply_prime", "ArithmeticFunction.vonMangoldt_nonneg"]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/twin-shift-two-arithmetic.md"
+source_blob = "a95dcfe6f664b2306ccf8859ff2fb230227450d3"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[diagnostics]
+kind = "independent-finite-model-checks"
+assertions = 4642550
+models = 1165214
+coverage = ["gcd compatibility", "unique lcm residue", "exact cutoff formula", "Moebius-log expansion", "shift-two correlation identity", "prime-only positivity", "prime-power correction"]
+parses_or_elaborates_lean = false
+execution_receipt = false
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_names = [
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.TwinShiftTwoNaturalSolution",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.TwinShiftTwoIntegerSolution",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.TwinShiftTwoCompatible",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.naturalSolution_implies_compatible",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.integerSolution_implies_compatible",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.compatible_implies_integerSolution",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.integerSolution_to_naturalSolution",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.naturalSolution_iff_compatible",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.naturalSolutions_modEq_lcm",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.naturalSolution_add_lcm_mul",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoResidue",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoResidue_isSolution",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoResidue_lt_lcm",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.naturalSolution_iff_modEq_residue",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoResidueCount",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoCutoffError",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoResidueCount_formula",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoCutoffError_le_one",
+  "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.twinShiftTwoResidueCount_bounds",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinMoebiusLogExpansion",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinMoebiusLogExpansion_eq_vonMangoldt",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinMangoldtCorrelation",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinDivisorKernelTerm",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinDivisorCorrelation",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinMangoldtCorrelation_eq_divisorCorrelation",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinDivisorPair_compatible",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinCompatibleDivisorCorrelation",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinDivisorCorrelation_eq_compatible",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinSmallDivisorSource",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinSignedDivisorResidual",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinCompatibleDivisorCorrelation_eq_small_add_residual",
+  "GRWTSK.NumberTheory.Primes.TwinMangoldtExpansion.twinMangoldtCorrelation_eq_small_add_residual",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePairLogWeight",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimeLogCorrelation",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePairLogWeight_nonneg",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePairLogWeight_pos",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimeLogCorrelation_pos_iff",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePairLogWeight_le_mangoldt",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePowerCorrectionSource",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePowerCorrection",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePowerCorrection_eq_source",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinPrimePowerCorrection_nonneg",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinMangoldtCorrelation_eq_prime_add_correction",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinCount_pos_of_mangoldt_correction_bounds",
+  "GRWTSK.NumberTheory.Primes.TwinPrimePowerBoundary.twinCount_pos_of_divisor_residual_bounds",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.incompatible_three_six",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.compatible_four_six",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.residue_count_four_six_thirty",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.incompatible_count_three_six_hundred",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.shift_six_not_shift_two",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.nine_has_mangoldt_mass_but_is_not_prime",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.seven_nine_mangoldt_not_twin",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.odd_survivor_can_be_composite",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.one_pair_cannot_fake_infinitude",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.exact_sources_not_twin_witness",
+  "GRWTSK.NumberTheory.Primes.Checks.TwinShiftTwoControls.strict_margin_equality_rejected",
+]
+
+[hostile_controls]
+required = [
+  "incompatible_three_six",
+  "shift_six_not_shift_two",
+  "nine_has_mangoldt_mass_but_is_not_prime",
+  "seven_nine_mangoldt_not_twin",
+  "odd_survivor_can_be_composite",
+  "one_pair_cannot_fake_infinitude",
+  "strict_margin_equality_rejected"
+]
+
+[nonclaims]
+items = [
+  "No Lean or Lake execution occurred.",
+  "No exact-head elaboration or kernel audit occurred.",
+  "No transitive axiom or native-code audit occurred.",
+  "No signed residual estimate is supplied.",
+  "No quantitative proper-prime-power correction bound is supplied.",
+  "No sieve-parity or bilinear breakthrough is supplied.",
+  "No finite-exception coverage or twin-prime theorem is supplied."
+]
