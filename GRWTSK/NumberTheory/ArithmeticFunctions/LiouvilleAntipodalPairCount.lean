@@ -395,6 +395,33 @@ theorem empty_character_root_pair_normalization (M : ℕ)
   field_simp [hM0]
   ring
 
+/-- The exact antipodal product detector, normalized by M²,
+equals the normalized collision count. This isolates the count
+normalization from the remaining Walsh-character expansion. -/
+theorem normalized_antipodal_product_eq_frequency
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+      ∏ h ∈ H,
+        ((1 : ℚ) -
+          ((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+            ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+      (M : ℚ) ^ 2) =
+      ((2 : ℚ) ^ H.card * (antipodalPairCount M H : ℚ)) /
+        (M : ℚ) ^ 2 := by
+  rw [antipodal_product_pair_sum]
+
+/-- The normalized full powerset sum can be exchanged with the
+ordered-root sum, without changing its M² denominator. -/
+theorem normalized_powerset_pair_sum_commute
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M)
+    (g : Finset ℕ → ℕ → ℕ → ℚ) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+       ∑ S ∈ H.powerset, g S p.1 p.2) / (M : ℚ) ^ 2) =
+      ((∑ S ∈ H.powerset,
+        ∑ p ∈ (Finset.range M).product (Finset.range M),
+          g S p.1 p.2) / (M : ℚ) ^ 2) := by
+  rw [sum_powerset_product_commute]
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
