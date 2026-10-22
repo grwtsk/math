@@ -9,7 +9,7 @@ cohomology, or geometric supplier is imported.
 
 namespace GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle
 
-open TensorProduct
+open _root_.TensorProduct
 
 variable (R : Type*) [CommRing R]
 variable (M : Type*) [AddCommGroup M] [Module R M]
@@ -61,6 +61,7 @@ theorem shuffleFour_pairedPure (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : M) :
   simp [shuffleFour, shuffleThree, shuffleTwo,
     pairedPure, separatedPure]
 
+attribute [local ext high] _root_.TensorProduct.ext in
 /-- Pure generators determine the four-pair linear shuffle uniquely. -/
 theorem shuffleFour_unique
     (F : Four R M →ₗ[R] (FourEntries R M ⊗[R] FourEntries R M))
@@ -68,30 +69,9 @@ theorem shuffleFour_unique
       F (pairedPure R M a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
         separatedPure R M a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) :
     F = (shuffleFour R M).toLinearMap := by
-  apply LinearMap.ext
-  intro t
-  induction t with
-  | tmul t123 t4 =>
-      induction t123 with
-      | tmul t12 t3 =>
-          induction t12 with
-          | tmul t1 t2 =>
-              induction t1 with
-              | tmul a₁ x₁ =>
-                  induction t2 with
-                  | tmul a₂ x₂ =>
-                      induction t3 with
-                      | tmul a₃ x₃ =>
-                          induction t4 with
-                          | tmul a₄ x₄ =>
-                              simpa [pairedPure] using
-                                hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-                          | add x y hx hy => simp [map_add, hx, hy]
-                      | add x y hx hy => simp [map_add, hx, hy]
-                  | add x y hx hy => simp [map_add, hx, hy]
-              | add x y hx hy => simp [map_add, hx, hy]
-          | add x y hx hy => simp [map_add, hx, hy]
-      | add x y hx hy => simp [map_add, hx, hy]
-  | add x y hx hy => simp [map_add, hx, hy]
+  ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  simpa [pairedPure] using
+    (hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).trans
+      (shuffleFour_pairedPure R M a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).symm
 
 end GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle
