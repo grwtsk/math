@@ -1380,6 +1380,63 @@ theorem CMFiniteFourCoefficientMultiplication_pure
   simp [CMFiniteFourCoefficientMultiplication,
     CMFiniteCoefficientMultiplication_tmul, mul_assoc]
 
+/-- Diagonal action on a threefold coefficient tensor: conjugate every
+coefficient entry, not merely the outermost tensor factor. -/
+def CMFiniteTripleCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) :=
+  σ.toLinearMap.lTensor (E.carrier ⊗[ℚ] E.carrier) ∘ₗ
+    (CMFiniteDiagonalScalarConjugate E σ).rTensor E.carrier
+
+/-- Diagonal action on all four coefficient factors. -/
+def CMFiniteFourCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    CMFiniteFourCoefficientTensor E →ₗ[ℚ]
+      CMFiniteFourCoefficientTensor E :=
+  σ.toLinearMap.lTensor
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ∘ₗ
+    (CMFiniteTripleCoefficientConjugate E σ).rTensor E.carrier
+
+/-- Explicit evaluation of the diagonal fourfold action on pure tensors. -/
+@[simp]
+theorem CMFiniteFourCoefficientConjugate_pure
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a b c d : E.carrier) :
+    CMFiniteFourCoefficientConjugate E σ
+      (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
+        (((σ a ⊗ₜ[ℚ] σ b) ⊗ₜ[ℚ] σ c) ⊗ₜ[ℚ] σ d) := by
+  simp [CMFiniteFourCoefficientConjugate,
+    CMFiniteTripleCoefficientConjugate,
+    CMFiniteDiagonalScalarConjugate, LinearMap.comp_apply]
+
+/-- Iterated multiplication commutes with diagonal Galois transport of all
+four coefficient entries. -/
+theorem CMFiniteFourCoefficientMultiplication_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : CMFiniteFourCoefficientTensor E) :
+    CMFiniteFourCoefficientMultiplication E
+        (CMFiniteFourCoefficientConjugate E σ t) =
+      σ (CMFiniteFourCoefficientMultiplication E t) := by
+  induction t with
+  | tmul t d =>
+      induction t with
+      | tmul t c =>
+          induction t with
+          | tmul a b =>
+              simp [CMFiniteFourCoefficientConjugate_pure,
+                CMFiniteFourCoefficientMultiplication_pure, map_mul]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
 /-- Canonical finite-CM pure-factor formula, prior to extension of
 coefficients into algebraic numbers. The coefficient entries multiply in
 E while the four vector entries remain a rational tensor. -/
