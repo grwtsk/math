@@ -175,6 +175,44 @@ def canonicalAtomicSwitchFourFactorProfile
         v₁ v₂ v₃ v₄ hbal
   }
 
+/-- Raw tensor-level input still needed after the canonical atomic
+four-row profile and its all-conjugate (2,2) certificate are known locally.
+
+Only the actual tensor, Hodge subspace, and scalar-conjugate stability remain
+as input here. -/
+structure AtomicSwitchTensorData
+    (P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j) where
+  V : Type*
+  [V_addCommGroup : AddCommGroup V]
+  [V_moduleQ : Module ℚ V]
+  hodgeSubspace :
+    Submodule ℂ (ℂ ⊗[ℚ] V)
+  tensor :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ⊗[ℚ] V
+  all_scalar_conjugates_mem :
+    ∀ σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers,
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ tensor) ∈ hodgeSubspace
+
+/-- The canonical (2,2) profile plus raw tensor stability data produces the
+exact descent datum consumed by the local trace-descent theorem. -/
+def AtomicSwitchTensorData.toDescentData
+    {P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j}
+    (D : AtomicSwitchTensorData P) :
+    CMFourFactorAlgebraicity.FourFactorTensorDescentData
+      G conj P.v₁ P.v₂ P.v₃ P.v₄ D.V where
+  type22 := P.type22
+  P := D.hodgeSubspace
+  tensor := D.tensor
+  all_scalar_conjugates_mem := D.all_scalar_conjugates_mem
+
 /-- Existential package for the rational four-factor Hodge witness attached
 to one switched core.
 
