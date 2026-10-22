@@ -1600,6 +1600,51 @@ The existing `WeightOneCMRealization` record still does not expose a complexifie
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ah. Weight-one realization now exposes actual complexified H1 Hodge pieces
+
+The main structural defect in the weight-one realization interface has been repaired at source level.
+
+`CMWeightOneRiemannRealization.lean` now extends `WeightOneCMRealization` with:
+
+~~~text
+H1C
+h1ComplexCoordinates
+H10
+H01
+actualWeil
+IsOfType
+~~~
+
+The actual complexified first cohomology carrier (H^1_{mathbf C}) is now explicit. A complex-linear equivalence identifies it with the already-local CM coordinate model.
+
+The actual Hodge pieces are defined by pullback:
+
+[
+H^{1,0}
+=
+(	ext{coordinate }H^{1,0})^{-1},
+qquad
+H^{0,1}
+=
+(	ext{coordinate }H^{0,1})^{-1}.
+]
+
+The local source also transports the coordinate Weil operator back to (H^1_{mathbf C}) and proves
+
+[
+C|_{H^{1,0}}=+i,
+qquad
+C|_{H^{0,1}}=-i.
+]
+
+Finally, `WeightOneCMRealization.IsOfType` gives the actual weight-one type predicate consumed by downstream Hodge typing.
+
+This narrows the remaining transported-factor typing premise substantially. It no longer needs to supply the actual (H^{1,0}/H^{0,1}) subspaces themselves. It only needs the comparison sending each transported canonical embedding-line vector into the corresponding actual complexified (H^1) vector and showing its coordinate image lies in the appropriate locally-defined coordinate piece.
+
+The Riemann existence supplier remains external, and the repository still does not manufacture the actual comparison from the canonical tensor-model embedding vectors to (H^1_{mathbf C}).
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
