@@ -1931,3 +1931,40 @@ nonclaims = [
   "structural Hodge theorem only",
   "no algebraicity conclusion"
 ]
+
+
+[[local_target]]
+name = "switch-character alignment supplies actual four-factor p-count"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourCanonicalFactorsSwitchAlignment.p_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "CM FourBalance for the four sign rows",
+  "first two actual factor characters equal g",
+  "last two actual factor characters equal the CM-conjugate of g"
+]
+nonclaims = [
+  "finite sign/type count only",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "switch-character alignment supplies actual four-factor q-count"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourCanonicalFactorsSwitchAlignment.q_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "aligned canonical fourfold pure tensor lies in actual H22"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldActualHodgeTensorRule.canonicalPureTensor_mem_H22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four actual weight-one realizations",
+  "switch-character alignment",
+  "standard fourfold actual Hodge tensor rule"
+]
+nonclaims = [
+  "H22 membership only",
+  "does not prove algebraicity"
+]
