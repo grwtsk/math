@@ -157,6 +157,25 @@ theorem characterEigenlines_fourFactor_bidegree_two_two
     hbal
 
 
+/-- A complete internal decomposition by one-dimensional character eigenspaces
+has ambient dimension equal to the number of embedding labels. -/
+theorem CharacterEigenspaceDecomposition.finrank_eq_card
+    {A C V G : Type*}
+    [CommRing A] [Field C] [AddCommGroup V] [Module C V]
+    [FiniteDimensional C V] [Fintype G]
+    {conj : G → G} {v : OddSignRow G conj}
+    (R : CharacterEigenspaceDecomposition A C V G conj v) :
+    Module.finrank C V = Fintype.card G := by
+  classical
+  let e :
+      (⨁ g : G, characterEigenspace R.action (R.character g)) ≃ₗ[C] V :=
+    LinearEquiv.ofBijective
+      (DirectSum.coeLinearMap
+        (fun g : G => characterEigenspace R.action (R.character g)))
+      R.decomposition
+  rw [← e.finrank_eq, Module.finrank_directSum]
+  simp [R.line_finrank_one]
+
 /-- Complete eigenspace decompositions retain the same four-factor bidegree
 conclusion after forgetting only the global decomposition certificate. -/
 theorem characterEigenspaceDecompositions_fourFactor_bidegree_two_two
