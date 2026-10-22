@@ -1118,6 +1118,91 @@ theorem SupportedCMFourEmbeddingLineVectors.scalarTransport_support_field
     (D.scalarTransport σ).support.E = D.support.E :=
   rfl
 
+/-- Four canonical embedding-line factors kept entirely over one finite
+Galois CM field.
+
+This is the correct finite-level object for the switch construction.  No claim
+is made that the individual finite-level eigenvectors embed as eigenvectors for
+the regular action of all AlgebraicNumbers. -/
+structure CMFiniteFourEmbeddingLineVectors
+    (E : CMGaloisIntermediateField) where
+  character : Fin 4 → E.carrier ≃ₐ[ℚ] E.carrier
+  vector : Fin 4 → E.carrier ⊗[ℚ] E.carrier
+  mem :
+    ∀ r,
+      vector r ∈
+        CMRegularBaseChange.embeddingEigenspace
+          (k := ℚ) (character r).toAlgHom
+
+/-- Scalar transport of finite-level CM factors by restriction of an absolute
+automorphism remains finite-level over the same field. -/
+def CMFiniteFourEmbeddingLineVectors.scalarTransport
+    {E : CMGaloisIntermediateField}
+    (D : CMFiniteFourEmbeddingLineVectors E)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    CMFiniteFourEmbeddingLineVectors E where
+  character := fun r => (σ.restrictNormal E.carrier) * D.character r
+  vector := fun r =>
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+      (σ.restrictNormal E.carrier) (D.vector r)
+  mem := fun r => by
+    rw [← CMEmbeddingTransport.transportedCharacter_eq_mul
+      (σ.restrictNormal E.carrier) (D.character r)]
+    exact
+      CMEmbeddingTransport.scalarConjugate_mem_embeddingEigenspace
+        (σ.restrictNormal E.carrier)
+        (D.character r).toAlgHom
+        (D.mem r)
+
+/-- Finite-level fourfold assembly over a fixed finite Galois CM field.
+
+The output keeps one coefficient factor in E and moves the four vector entries
+into an arbitrary rational target V.  Only after this finite-level assembly is
+formed should coefficients be extended to AlgebraicNumbers. -/
+structure CMFiniteFourfoldAssembly
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    {V : Type*} [AddCommGroup V] [Module ℚ V] where
+  assemble :
+    (Fin 4 → E.carrier ⊗[ℚ] E.carrier) →
+      E.carrier ⊗[ℚ] V
+  tensor :
+    E.carrier ⊗[ℚ] V
+  original_eq :
+    tensor = assemble factors.vector
+  scalar_transport_eq :
+    ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          (σ.restrictNormal E.carrier) tensor =
+        assemble ((factors.scalarTransport σ).vector)
+
+/-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
+def CMFiniteFourfoldAssembly.globalTensor
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors) :
+    AlgebraicNumbers ⊗[ℚ] V :=
+  coefficientInclusion D.tensor
+
+/-- Absolute scalar conjugation of the global assembled tensor is computed by
+restriction to the fixed finite Galois CM field. -/
+theorem CMFiniteFourfoldAssembly.globalTensor_scalarConjugate
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ D.globalTensor =
+      coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) := by
+  rw [CMFiniteFourfoldAssembly.globalTensor]
+  rw [←
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
+      E.carrier σ D.tensor]
+  rw [D.scalar_transport_eq σ]
+
 /-- A switched tensor supported on one finite Galois CM intermediate field. -/
 structure CMFiniteGaloisTensorCarrier
     {V : Type*} [AddCommGroup V] [Module ℚ V]
