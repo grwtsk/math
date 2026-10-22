@@ -1317,6 +1317,42 @@ theorem CMFiniteCoefficientMultiplication_one
         ((1 : E.carrier) ⊗ₜ[ℚ] (1 : E.carrier)) = 1 := by
   simp
 
+/-- Diagonal rational-linear action on the finite tensor square: both
+factors are conjugated by the same field automorphism. -/
+def CMFiniteDiagonalScalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) :=
+  σ.toLinearMap.lTensor E.carrier ∘ₗ
+    σ.toLinearMap.rTensor E.carrier
+
+/-- The diagonal action conjugates both entries of a pure tensor. -/
+@[simp]
+theorem CMFiniteDiagonalScalarConjugate_tmul
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a b : E.carrier) :
+    CMFiniteDiagonalScalarConjugate E σ (a ⊗ₜ[ℚ] b) =
+      (σ a) ⊗ₜ[ℚ] (σ b) := by
+  simp [CMFiniteDiagonalScalarConjugate, LinearMap.comp_apply]
+
+/-- Multiplication is equivariant under the diagonal action, not under
+the action on only one tensor factor. -/
+theorem CMFiniteCoefficientMultiplication_diagonal_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : E.carrier ⊗[ℚ] E.carrier) :
+    CMFiniteCoefficientMultiplication E
+        (CMFiniteDiagonalScalarConjugate E σ t) =
+      σ (CMFiniteCoefficientMultiplication E t) := by
+  induction t with
+  | tmul a b =>
+      simp [CMFiniteDiagonalScalarConjugate_tmul,
+        CMFiniteCoefficientMultiplication_tmul, map_mul]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
 /-- Canonical finite-CM pure-factor formula, prior to extension of
 coefficients into algebraic numbers. The coefficient entries multiply in
 E while the four vector entries remain a rational tensor. -/
