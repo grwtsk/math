@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
-import GRWTSK.LinearAlgebra.TensorProduct.ArbitraryScalarDescent
+import GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent
 
 /-!
 # Rational Hodge-subspace descent wrapper
@@ -19,7 +19,7 @@ set_option autoImplicit false
 namespace GRWTSK.AlgebraicGeometry.Hodge.RationalSubspaceDescent
 
 open GRWTSK.LinearAlgebra.TensorProduct
-open ArbitraryScalarDescent
+open GaloisScalarDescent
 open RationalScalarDescent
 
 /-- A source-bound algebraic tensor together with a selected complex-linear
