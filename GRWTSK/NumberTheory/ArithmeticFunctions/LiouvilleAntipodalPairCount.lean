@@ -497,6 +497,24 @@ theorem shiftSubsetValues_residualMean
   exact shiftSubsetValues_prod H S
     (fun h => ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))
 
+/-- The full normalized character contribution indexed by a subtype
+subset agrees exactly with its signed arithmetic mixed coefficient. -/
+theorem normalized_subtype_character_term
+    (M : ℕ) (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) (hM : 0 < M) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+        (-1 : ℚ) ^ (shiftSubsetValues H S).card *
+          ∏ h ∈ shiftSubsetValues H S,
+            (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+              ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+        (M : ℚ) ^ 2) =
+      (-1 : ℚ) ^ S.card *
+        liouvilleSubsetMean M H S * oddResidualMean M H S := by
+  rw [normalized_antipodal_character_term M
+    (shiftSubsetValues H S) hM]
+  rw [shiftSubsetValues_card, shiftSubsetValues_sourceMean,
+    shiftSubsetValues_residualMean]
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
