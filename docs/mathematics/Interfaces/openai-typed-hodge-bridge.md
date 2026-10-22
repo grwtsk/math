@@ -1269,6 +1269,32 @@ No tensor rationality, descent, or algebraicity is inferred from the balance the
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4x. Atomic switch now canonically supplies the all-conjugate (2,2) profile
+
+The atomic-switch identification path now owns all sign and Hodge-count bookkeeping locally.
+
+`CMFourFactorSwitchGeometry.lean` introduces
+
+~~~text
+AtomicSwitchFourFactorProfile
+canonicalAtomicSwitchFourFactorProfile
+~~~
+
+For one opposite-mismatch pair, this package canonically records:
+
+- the two selected old rows;
+- the two corresponding new rows;
+- their exact `FourBalance` relation;
+- the derived `AllConjugatesType22` certificate.
+
+Therefore `SwitchCoreRationalWitnessAdapter` no longer needs to establish either balance or the all-conjugate ((2,2)) count.
+
+Its remaining obligation is purely tensor-level: attach the actual algebraic-number tensor, the complex Hodge subspace, and scalar-conjugate stability needed to form `FourFactorTensorDescentData`, after which rational descent is already local.
+
+No rationality or algebraicity is inferred from the canonical profile itself.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
