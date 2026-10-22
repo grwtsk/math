@@ -121,6 +121,6 @@ theorem matchingActionHom_nontrivial :
   have hfirst := swap_takes_first_to_second
   have hne := reference_matchings_distinct.1
   apply hne
-  exact congrArg Subtype.val hh |>.symm.trans hfirst
+  exact (hfirst.symm.trans (congrArg Subtype.val hh)).symm
 
 end GRWTSK.Algebra.QuarticMatchingAction
