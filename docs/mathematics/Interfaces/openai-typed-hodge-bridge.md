@@ -1093,6 +1093,35 @@ No claim is made that the earlier CM trace polarization is already that cohomolo
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4r. Exact Hodge-Riemann supplier for the middle pairing
+
+The q_i-specific geometric boundary is now isolated as one supplier:
+
+~~~text
+AmpleClassHodgeRiemannSupplier
+~~~
+
+Its input is `GeometricMiddlePairingData`, which already records the cup/integration pairing, the selected beta and gamma vectors, the nonzero scalar relation between gamma and the conjugate partner of beta, and the scalar q defined by that pairing.
+
+The supplier itself contributes only a real energy and the two Hodge-Riemann facts needed locally:
+
+- pairing with the conjugate partner is the complexification of that energy;
+- the energy is strictly positive on nonzero vectors.
+
+From this, the source constructs a `PositiveConjugatePairing`, then an `AmpleClassMiddlePairingComparison`, and finally proves
+
+~~~text
+AmpleClassHodgeRiemannSupplier.q_ne_zero
+~~~
+
+Hence the remaining manuscript input for the middle scalar is no longer "q_i is nonzero." It is exactly the classical Hodge-Riemann positivity statement for the chosen ample class.
+
+After that supplier is available, q_i nonvanishing, finite-product nonvanishing, signed transition-scalar nonvanishing, and recovery of the endpoint tensor from its nonzero scalar multiple are all local consequences.
+
+This supplier makes no algebraicity claim and assumes no compatibility between the ample class and E.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
