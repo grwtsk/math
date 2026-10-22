@@ -184,4 +184,30 @@ theorem patternCountOn_eq_natCount {ι : Type*}
   simp [Finset.sum_ite, Finset.card_filter]
 
 
+
+/-- A full-pattern empirical frequency is exactly the corresponding
+natural-number pattern count divided by the positive root count. -/
+theorem empiricalPattern_eq_natCount_div {ι : Type*}
+    [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool)
+    (a : ι → Bool) :
+    empiricalPattern roots (Finset.univ : Finset ι) x a =
+      (fullPatternNatCount roots x a : ℚ) / (roots.card : ℚ) := by
+  unfold empiricalPattern
+  rw [patternCountOn_eq_natCount]
+
+/-- Exact squared-frequency identity, with no statistical
+approximation or arithmetic cancellation assumption. -/
+theorem empiricalPattern_square_sum_eq_natCount
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool) :
+    (∑ a : ι → Bool,
+      (empiricalPattern roots (Finset.univ : Finset ι) x a) ^ 2) =
+      (∑ a : ι → Bool,
+        ((fullPatternNatCount roots x a : ℚ) ^ 2)) /
+        (roots.card : ℚ) ^ 2 := by
+  simp_rw [empiricalPattern_eq_natCount_div, div_pow]
+  rw [Finset.sum_div]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
