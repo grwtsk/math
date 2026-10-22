@@ -2417,6 +2417,35 @@ that identifies the canonical actual pure tensor with the coefficient-included f
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ba. Final finite-level Hodge comparison is now a fixed-field witness family
+
+The corrected finite-CM route now has a direct comparison interface for each scalar transport, without changing coefficient fields.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+CMFiniteTransportedGeneratorWitness
+CMFiniteTransportedGeneratorWitness.generator_mem_hodge
+CMFiniteTransportedGeneratorHodgeData.ofWitnesses
+~~~
+
+For a fixed finite Galois CM field (E), one transported witness for an absolute automorphism (sigma) packages:
+
+- four actual weight-one realizations of the factors transported by (sigma|_E);
+- finite switch alignment;
+- the standard fourfold Hodge tensor rule;
+- a complex-linear comparison from the actual fourfold (H^1) tensor to (mathbf Cotimes_{mathbf Q}V);
+- inclusion of actual (H^{2,2}) into the descent-side Hodge subspace;
+- equality of the coefficient-included finite assembled generator with the image of the canonical actual pure tensor.
+
+The theorem `generator_mem_hodge` then derives the required descent-side Hodge membership locally.
+
+A family of these witnesses over all absolute automorphisms produces `CMFiniteTransportedGeneratorHodgeData`, which the previous increment already proved implies Hodge membership of every scalar conjugate and hence orbit-span containment.
+
+Thus the finite-level pre-descent chain is now compositionally complete. The remaining geometric input is concentrated in the comparison witness itself, especially the actual-to-descent comparison and generator identification. The field, factor transport, Hodge type count, and scalar-Galois restriction are no longer independent obstacles.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
