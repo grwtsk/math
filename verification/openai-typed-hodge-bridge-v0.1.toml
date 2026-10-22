@@ -468,7 +468,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "existence of xi with the prescribed archimedean sign profile, identification of the locally positive coordinate energy with the complexified trace pairing i psi_xi(u,conj u), integral lattice scaling, and Riemann realization by B(v)"
+statement_role = "existence of xi with the prescribed simultaneous archimedean sign profile beyond generic anti-invariance, identification of the locally positive coordinate energy with the complexified trace pairing i psi_xi(u,conj u), integral lattice scaling, and Riemann realization by B(v)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
 status = "OPEN"
 nonclaims = [
@@ -529,4 +529,42 @@ nonclaims = [
   "does not construct such xi",
   "does not identify the coordinate energy with i psi_xi(u,conj u)",
   "does not apply the Riemann criterion"
+]
+
+
+[[local_target]]
+name = "CM conjugation nonfixed witness"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.exists_nonfixed"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "CM number field"
+]
+nonclaims = [
+  "no prescribed archimedean sign profile"
+]
+
+[[local_target]]
+name = "unconditional anti-invariant trace-polarization datum"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.someTracePolarizationData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "anti-invariance/nonzero are local",
+  "no archimedean positivity profile",
+  "no Riemann realization"
+]
+
+[[local_target]]
+name = "sign-controlled combined trace and coordinate positivity certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.tracePairing_alternating_nondegenerate"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one xi satisfying anti-invariance and the prescribed simultaneous archimedean sign inequalities"
+]
+nonclaims = [
+  "coordinate-energy positivity is a separate local theorem",
+  "no equality yet between coordinate energy and complexified i psi_xi",
+  "no integral lattice/Riemann criterion"
 ]
