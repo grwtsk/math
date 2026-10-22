@@ -1,3 +1,6 @@
+# Historical original target Git blob: 2d71ef80759f3e9acbcb86d3778bdb30374bf89c.
+# Historical original parent: 01d47ed94dc9c50ecfbfa028d496647a420049b2; tree 77357cad7d635a1040d7b25ab65a7909cd6d44d4.
+# Publication identities are historical; repaired source/note/dependency bindings require containing revisions in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-two-point-carleson-energy-461-v0.1"
 owner_repository = "grwtsk/math"
@@ -19,20 +22,24 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 
 [source_binding]
-inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
-inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
-stacked_parent_branch = "research/rh-tree-singleton-mass-witness-460-20261021"
-stacked_parent_revision = "01d47ed94dc9c50ecfbfa028d496647a420049b2"
-stacked_parent_tree = "77357cad7d635a1040d7b25ab65a7909cd6d44d4"
-candidate_branch = "research/rh-scale-max-carleson-461-20261021"
-theorem_source_commit = "c57d47eaee0809d5034281807360ecf1e3e9a4b3"
-theorem_source_tree = "8b6d8af18bfb6f7354fe2966f9f7ddd6c7b10921"
+historical_inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+historical_inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+historical_stacked_parent_branch = "research/rh-tree-singleton-mass-witness-460-20261021"
+stacked_parent_revision = "e6b0fa11ae8f12fed81980c8a6c13c96f15bd585"
+stacked_parent_tree = "1e303a2ec800216d2d36d13f9df2463c210e0db6"
+historical_candidate_branch = "research/rh-scale-max-carleson-461-20261021"
+historical_theorem_source_commit = "c57d47eaee0809d5034281807360ecf1e3e9a4b3"
+historical_theorem_source_tree = "8b6d8af18bfb6f7354fe2966f9f7ddd6c7b10921"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonEnergy.lean"
-theorem_source_git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
-mathematical_note_commit = "22eb0931e761106cd26b916eae5c3b6c7303dd18"
-mathematical_note_tree = "b63877693e88a8a468a05dee985d65802b7ec09a"
+historical_theorem_source_git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+theorem_source_git_blob = "2620ec072954a660bd0788fcad9288bc4c20e759"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_mathematical_note_commit = "22eb0931e761106cd26b916eae5c3b6c7303dd18"
+historical_mathematical_note_tree = "b63877693e88a8a468a05dee985d65802b7ec09a"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-carleson-energy.md"
-mathematical_note_git_blob = "39cbad520af9a22522c15bf7b3144933528410bc"
+historical_mathematical_note_git_blob = "39cbad520af9a22522c15bf7b3144933528410bc"
+mathematical_note_git_blob = "963dc2efc5984cba328eb21d712cde6868e30eb4"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
 namespace_generic = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
 namespace_arithmetic = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction"
 
@@ -174,7 +181,7 @@ private_helper_count = 2
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeSingletonMassObstruction.lean"
-git_blob = "935cff049d32632e3aed703e80a6f123e7923a25"
+git_blob = "a19f5b3565da0278122035297bc09c0d9b7395fd"
 status = "STACKED_SOURCE_DRAFT_FROM_PR_462"
 
 [[dependencies]]
@@ -184,7 +191,7 @@ status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_459"
 
 [[dependencies]]
 path = "GRWTSK/NumberTheory/Moebius/TwoPointConjectureJunction.lean"
-git_blob = "43d4250e4df34e97141399e771462cc3b4149110"
+git_blob = "4eacfb63dc6f3b1a34eb1427bb84d2b250fb763b"
 status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_455"
 
 [[dependencies]]
