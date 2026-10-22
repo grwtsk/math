@@ -1726,6 +1726,53 @@ This leaves a standard scalar-extension/base-change construction as the exact re
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ak. Tensor-to-H1 comparison is no longer an independent premise
+
+The canonical tensor-to-actual-(H^1_{mathbf C}) comparison is now constructed locally from the strengthened weight-one realization.
+
+`WeightOneCMRealization` now carries:
+
+~~~text
+h1ToComplex
+h1ToComplex_coordinates
+~~~
+
+The rational inclusion (H^1	o H^1_{mathbf C}) is required to agree, in actual complex coordinates, with the existing rational equivalence (H^1simeq E).
+
+From that data, the local source constructs:
+
+~~~text
+tensorBilinearToActual
+canonicalTensorToActual
+canonicalTensorToActual_tmul
+canonicalTensorToActual_coordinates_tmul
+pureTensorActualH1Comparison
+canonicalTensorActualH1Comparison
+~~~
+
+The map
+
+[
+Eotimes_{mathbf Q}E	o H^1_{mathbf C}
+]
+
+is built by the tensor-product universal property from
+
+[
+(a,x)longmapsto
+iota(a)cdot
+igl(H^1	o H^1_{mathbf C}igr)
+igl(h1Equiv^{-1}(x)igr).
+]
+
+Its pure-tensor coordinate formula is local, and arbitrary tensor compatibility follows by tensor induction.
+
+Therefore the canonical-tensor-to-actual-H1 comparison is no longer an independent external premise. Its only nonlocal input is now part of the weight-one realization contract itself: the rational inclusion (H^1	o H^1_{mathbf C}) with the expected coordinate compatibility.
+
+The external Riemann existence theorem remains responsible for constructing the strengthened `WeightOneCMRealization`.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
