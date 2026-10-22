@@ -207,7 +207,7 @@ theorem mertensTwoPointPrefixMax_le_twoPointDyadicPrefixMaximum
     simpa [dyadicTwoPointCutoff] using hN
   have hNY : N ≤ 2 ^ (j + 1) := by
     unfold dyadicTwoPointCutoff at hNcut
-    omega
+    exact hNcut.trans ((Nat.sub_le _ _).trans (Nat.sub_le _ _))
   calc
     |mertensTwoPointPrefix h N| =
         |finitePrefixSum
@@ -250,7 +250,8 @@ theorem mertensTwoPointPrefixMax_sq_le_twoPointTreeEnergy
       simpa [twoPointDyadicPrefixMaximum] using htree
     _ = ((j : ℝ) + 2) *
         twoPointTreeEnergy moebiusReal moebiusReal j h := by
-      simp [twoPointTreeEnergy, Nat.cast_add]
+      dsimp [twoPointTreeEnergy]
+      push_cast
       ring
 
 /-- Summing the shift-wise comparison gives the exact finite connection from
