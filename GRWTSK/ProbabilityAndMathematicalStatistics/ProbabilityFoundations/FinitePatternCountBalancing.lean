@@ -149,4 +149,39 @@ theorem finite_count_square_rational_floor
   exact_mod_cast hz
 
 
+
+/-- Exact natural-number count of an entire Boolean word among a finite
+root sample. This is an integer, unlike the existing rational
+patternCountOn representation. -/
+def fullPatternNatCount {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool)
+    (a : ι → Bool) : ℕ :=
+  (roots.filter (fun n => ∀ i : ι, x n i = a i)).card
+
+/-- Every root contributes to exactly one complete Boolean word.
+The finite sample is counted with multiplicity one per root. -/
+theorem fullPatternNatCount_total {ι : Type*}
+    [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool) :
+    (∑ a : ι → Bool, fullPatternNatCount roots x a) =
+      roots.card := by
+  classical
+  unfold fullPatternNatCount
+  simp_rw [Finset.card_filter]
+  rw [Finset.sum_comm]
+  simp
+
+/-- The existing rational full-pattern counter equals the exact
+natural-number cardinality cast to rationals. -/
+theorem patternCountOn_eq_natCount {ι : Type*}
+    [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool) (a : ι → Bool) :
+    patternCountOn roots (Finset.univ : Finset ι) x a =
+      (fullPatternNatCount roots x a : ℚ) := by
+  classical
+  unfold patternCountOn fullPatternNatCount
+  simp_rw [Finset.prod_ite]
+  simp [Finset.sum_ite, Finset.card_filter]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
