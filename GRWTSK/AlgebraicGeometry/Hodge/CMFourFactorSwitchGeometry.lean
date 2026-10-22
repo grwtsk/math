@@ -282,6 +282,83 @@ theorem scalarConjugate_canonicalPureAlgebraicAssembly
     GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_tmul,
     map_mul]
 
+/-- Fourfold assembly presented as four nested Q-linear maps.
+
+The only supplied formula is its value on four pure canonical factor tensors.
+This is enough to derive scalar-conjugation equivariance on arbitrary factors
+by four nested tensor inductions. -/
+structure FourfoldMultilinearAlgebraicAssembly where
+  assemble :
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →ₗ[ℚ]
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →ₗ[ℚ]
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →ₗ[ℚ]
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →ₗ[ℚ]
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] CanonicalFourfoldVectorTarget)
+  pure_formula :
+    ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄,
+      assemble
+          (a₁ ⊗ₜ[ℚ] x₁)
+          (a₂ ⊗ₜ[ℚ] x₂)
+          (a₃ ⊗ₜ[ℚ] x₃)
+          (a₄ ⊗ₜ[ℚ] x₄) =
+        canonicalPureAlgebraicAssembly
+          a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Full Galois equivariance follows formally from Q-multilinearity and the
+pure-factor equivariance theorem. -/
+theorem FourfoldMultilinearAlgebraicAssembly.equivariant
+    (M : FourfoldMultilinearAlgebraicAssembly)
+    (σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)
+    (t₁ t₂ t₃ t₄ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate σ
+        (M.assemble t₁ t₂ t₃ t₄) =
+      M.assemble
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ t₁)
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ t₂)
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ t₃)
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ t₄) := by
+  induction t₁ with
+  | tmul a₁ x₁ =>
+      induction t₂ with
+      | tmul a₂ x₂ =>
+          induction t₃ with
+          | tmul a₃ x₃ =>
+              induction t₄ with
+              | tmul a₄ x₄ =>
+                  simp only [
+                    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_tmul,
+                    M.pure_formula
+                  ]
+                  exact scalarConjugate_canonicalPureAlgebraicAssembly
+                    σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+              | add x y hx hy =>
+                  simp [map_add, hx, hy]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
 /-- Exact remaining Galois-equivariance statement for algebraic fourfold
 assembly.
 
