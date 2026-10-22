@@ -1291,6 +1291,41 @@ structure CMFiniteFourfoldAssembly
           (σ.restrictNormal E.carrier) tensor =
         assemble ((factors.scalarTransport σ).vector)
 
+/-- Explicit rational multilinearity of the finite four-slot assembly.
+This strengthens the function-valued interface without pretending that
+a geometric assembly with these properties has been constructed. -/
+structure CMFiniteAssemblyMultilinearity
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors) where
+  add_slot :
+    ∀ (i : Fin 4) (x y : E.carrier ⊗[ℚ] E.carrier)
+      (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier),
+      D.assemble (Function.update f i (x + y)) =
+        D.assemble (Function.update f i x) +
+          D.assemble (Function.update f i y)
+  smul_slot :
+    ∀ (i : Fin 4) (a : ℚ) (x : E.carrier ⊗[ℚ] E.carrier)
+      (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier),
+      D.assemble (Function.update f i (a • x)) =
+        a • D.assemble (Function.update f i x)
+
+/-- Additivity and rational homogeneity are exposed independently for each
+slot; these equations are the precise new supplier obligations. -/
+theorem CMFiniteAssemblyMultilinearity.add_at
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    (M : CMFiniteAssemblyMultilinearity D)
+    (i : Fin 4) (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier)
+    (x y : E.carrier ⊗[ℚ] E.carrier) :
+    D.assemble (Function.update f i (x + y)) =
+      D.assemble (Function.update f i x) +
+        D.assemble (Function.update f i y) :=
+  M.add_slot i x y f
+
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
