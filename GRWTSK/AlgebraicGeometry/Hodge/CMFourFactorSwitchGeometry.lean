@@ -512,6 +512,80 @@ theorem FourfoldActualHodgeTensorRule.canonicalPureTensor_mem_H22
   · exact A.p_two
   · exact A.q_two
 
+/-- Comparison from the explicit actual fourfold H1 tensor target to the
+descent-side complexified tensor space.
+
+This is the precise coefficient/change-of-realization bridge.  It does not
+assert algebraicity. -/
+structure ActualFourfoldToMonomialComparison
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    (R : FourfoldActualHodgeTensorRule D)
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  compare : FourfoldActualTensor D →ₗ[ℂ] (ℂ ⊗[ℚ] V)
+  H22_le :
+    R.H22.map compare ≤ hodgeSubspace
+
+/-- The comparison carries every actual H^(2,2) class into the descent-side
+Hodge subspace. -/
+theorem ActualFourfoldToMonomialComparison.mem_hodge_of_mem_H22
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    {R : FourfoldActualHodgeTensorRule D}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (C : ActualFourfoldToMonomialComparison R hodgeSubspace)
+    {z : FourfoldActualTensor D}
+    (hz : z ∈ R.H22) :
+    C.compare z ∈ hodgeSubspace := by
+  apply C.H22_le
+  exact Submodule.mem_map.mpr ⟨z, hz, rfl⟩
+
+/-- Identification of one assembled monomial generator with the image of the
+explicit actual fourfold pure tensor. -/
+structure ActualFourfoldMonomialGeneratorIdentification
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    {R : FourfoldActualHodgeTensorRule D}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (C : ActualFourfoldToMonomialComparison R hodgeSubspace)
+    (assembledGenerator : ℂ ⊗[ℚ] V) where
+  alignment : FourCanonicalFactorsSwitchAlignment D
+  assembled_eq :
+    assembledGenerator =
+      C.compare
+        (fourfoldActualPureTensor D
+          (D.first.realization.canonicalTensorActualH1Comparison.toActual
+            D.first.vector)
+          (D.second.realization.canonicalTensorActualH1Comparison.toActual
+            D.second.vector)
+          (D.third.realization.canonicalTensorActualH1Comparison.toActual
+            D.third.vector)
+          (D.fourth.realization.canonicalTensorActualH1Comparison.toActual
+            D.fourth.vector))
+
+/-- Actual H^(2,2) membership plus the comparison/identification bridge gives
+descent-side Hodge membership of the assembled monomial generator locally. -/
+theorem ActualFourfoldMonomialGeneratorIdentification.assembled_mem_hodge
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    {R : FourfoldActualHodgeTensorRule D}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {C : ActualFourfoldToMonomialComparison R hodgeSubspace}
+    {assembledGenerator : ℂ ⊗[ℚ] V}
+    (I : ActualFourfoldMonomialGeneratorIdentification C assembledGenerator) :
+    assembledGenerator ∈ hodgeSubspace := by
+  rw [I.assembled_eq]
+  exact C.mem_hodge_of_mem_H22
+    (R.canonicalPureTensor_mem_H22 I.alignment)
+
 /-- Generic fourfold Hodge tensor-product compatibility.
 
 The isOfType predicate records actual weight-one Hodge membership of a
