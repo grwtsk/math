@@ -294,7 +294,11 @@ theorem angle_eq_iff_perimeterConnected (k : ℕ)
     have hp := perimeterConnected_normalizedSource k p
     have hq := perimeterConnected_normalizedSource k q
     have hnorm := normalizedSource_eq_of_angle_eq k p q h
-    exact hp.trans (by rw [hnorm]; exact Relation.EqvGen.refl _ |>.trans hq.symm)
+    have hmiddle :
+        PerimeterConnected k (normalizedSource k p) (normalizedSource k q) := by
+      rw [hnorm]
+      exact Relation.EqvGen.refl _
+    exact hp.trans (hmiddle.trans hq.symm)
   · intro h
     exact sourceAngularAddress_respects_connected k h
 
@@ -304,11 +308,11 @@ has been proved to be exactly the actual original source EqvGen. -/
 theorem perimeterAngle_injective (k : ℕ) :
     Function.Injective (perimeterAngle k) := by
   intro x y h
-  refine Quotient.inductionOn₂ x y ?_
-  intro p q hpq
+  obtain ⟨p, rfl⟩ := Quotient.exists_rep x
+  obtain ⟨q, rfl⟩ := Quotient.exists_rep y
   have hangle : sourceAngularAddress k p =
       sourceAngularAddress k q := by
-    simpa only [perimeterAngle_projection] using hpq
+    simpa only [perimeterAngle_projection] using h
   exact Quotient.sound ((angle_eq_iff_perimeterConnected k p q).mp hangle)
 
 /-- The genuine compact additive circle supplies a canonical
