@@ -121,6 +121,30 @@ theorem antipodal_product_pair_sum (M : ℕ) (H : Finset ℕ) :
     Finset.sum_const, nsmul_eq_mul]
   ring
 
+/-- Pure finite rearrangement of a complete character sum and an
+ordered pair sum. This isolates the interchange needed by the
+normalized antipodal-count theorem, without any arithmetic premise. -/
+theorem sum_powerset_product_commute
+    (M : ℕ) (H : Finset ℕ)
+    (g : Finset ℕ → ℕ → ℕ → ℚ) :
+    (∑ p ∈ (Finset.range M).product (Finset.range M),
+       ∑ S ∈ H.powerset, g S p.1 p.2) =
+      ∑ S ∈ H.powerset,
+        ∑ p ∈ (Finset.range M).product (Finset.range M),
+          g S p.1 p.2 := by
+  rw [Finset.sum_comm]
+
+/-- The complete finite powerset splits into its empty character and
+all nonempty characters. No factor 2^|H| is lost. -/
+theorem sum_powerset_empty_and_nonempty
+    (H : Finset ℕ) (f : Finset ℕ → ℚ) :
+    (∑ S ∈ H.powerset, f S) =
+      f ∅ + ∑ S ∈ H.powerset.erase ∅, f S := by
+  classical
+  have he : (∅ : Finset ℕ) ∈ H.powerset := Finset.empty_mem_powerset H
+  rw [← Finset.sum_erase_add he]
+  ring
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
