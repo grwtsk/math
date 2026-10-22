@@ -3,9 +3,9 @@
 Status: **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED** (2026-10-22). This is a mathematical explanation and a proposed Lean proof script, **not** a trusted elaboration receipt.
 
 - Owner: [grwtsk/math#665](https://github.com/grwtsk/math/issues/665).
-- Exact parent: [draft PR #664](https://github.com/grwtsk/math/pull/664), head \`8b155e1981a8232a9ba14867b952d5234109fd36\`.
-- Parent producer: \`GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket\`, issue #661, built over #653's source-labeled finite modular-alias theorem.
-- New source: \`GRWTSK/Analysis/Fourier/FiniteTraceFourierSupport.lean\`, initial source blob \`146c0baaaefe5d36e8973d796c1340ec6dfa656a\`.
+- Exact parent: [draft PR #664](https://github.com/grwtsk/math/pull/664), head `8b155e1981a8232a9ba14867b952d5234109fd36`.
+- Parent producer: `GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket`, issue #661, built over #653's source-labeled finite modular-alias theorem.
+- New source: `GRWTSK/Analysis/Fourier/FiniteTraceFourierSupport.lean`, initial source blob `146c0baaaefe5d36e8973d796c1340ec6dfa656a`.
 - Adjacent gates: #159 (optional adapters), #121 (sofic/operator limits), #168 (macro/micro spectral separation), #516 (arithmetic growing-shift obstruction), #100 (external qualification), #15 (RH).
 
 ## 1. Imported analytic context and what is *not* imported
@@ -38,7 +38,7 @@ There \(\gamma\) belongs to a fixed **finite** candidate family, \(K,M\) bound i
 
 ## 2. Selected exact supplier and proof
 
-Fix \`t : TraceShapedInput γ m\` and an explicit \`FiniteFourierSupportCertificate t\` with:
+Fix `t : TraceShapedInput γ m` and an explicit `FiniteFourierSupportCertificate t` with:
 
 \[
 B\ge0,\qquad
@@ -52,7 +52,7 @@ B\ge0,\qquad
 
 The Fourier support statement is **one-sided**, which suffices here because each selected argument \(n\ell_\gamma\) is positive. There is no claim of a smooth Fourier test, negative-frequency support, or a numerical algorithm to discover \(B,\delta\). They are **premises supplied with proof terms**.
 
-For any integer cutoff \(K\ge0\), the named condition \`AdmissibleCutoff t c K\` is
+For any integer cutoff \(K\ge0\), the named condition `AdmissibleCutoff t c K` is
 
 \[
 \boxed{B\le K\delta.}
@@ -70,11 +70,11 @@ B\le K\delta<n\delta\le n\ell_\gamma.
 
 The strict middle inequality follows from \(n>K\) and \(\delta>0\), even when \(B=K\delta\). Hence \(\widehat h(n\ell_\gamma)=0\) and the whole supplied coefficient vanishes. No argument about division by \(\sinh\) is needed here: the already-defined parent weight is zero because its numerator is zero; the parent proves denominator nonvanishing on actual selected candidates.
 
-The new source theorem \`iterate_above_support_radius\` proves (D), then \`fourierTest_zero_after_cutoff\` and \`traceShapeWeight_zero_after_cutoff\` recover the exact zero facts. The source type is still \((\gamma,n)\), and neither homology nor modular residue IDs are used to collapse source terms.
+The new source theorem `iterate_above_support_radius` proves (D), then `fourierTest_zero_after_cutoff` and `traceShapeWeight_zero_after_cutoff` recover the exact zero facts. The source type is still \((\gamma,n)\), and neither homology nor modular residue IDs are used to collapse source terms.
 
 ## 3. Exact consumption of existing #661 interface
 
-The parent has \`omittedSources t K M = S_M\setminus S_K\`, where \(S_K=\{(\gamma,n):\gamma\in\Gamma_{\mathrm{candidate}},1\le n\le K\}\). The new theorem \`omittedSource_has_high_iterate\` proves that every omitted term is a candidate with \(K<n\le M\), preserving the original candidate/iterate source ID.
+The parent has `omittedSources t K M = S_M\setminus S_K`, where \(S_K=\{(\gamma,n):\gamma\in\Gamma_{\mathrm{candidate}},1\le n\le K\}\). The new theorem `omittedSource_has_high_iterate` proves that every omitted term is a candidate with \(K<n\le M\), preserving the original candidate/iterate source ID.
 
 Consequently:
 
@@ -85,7 +85,7 @@ E_{\mathrm{omit}}(K,M)=0
 }
 \]
 
-provided (C) and the explicit support certificate hold. This is \`omittedMass_zero_of_support\`, obtained by consuming the **existing** parent lemma \`omittedMass_zero_of_fourier_zero\`. No new summability or trace-limit theorem enters the proof.
+provided (C) and the explicit support certificate hold. This is `omittedMass_zero_of_support`, obtained by consuming the **existing** parent lemma `omittedMass_zero_of_fourier_zero`. No new summability or trace-limit theorem enters the proof.
 
 For \(M\ge K\), the exact downstream theorem candidate is
 
@@ -97,13 +97,13 @@ For \(M\ge K\), the exact downstream theorem candidate is
 \tag{FINITE-SUPPORT-CONSUMER}
 \]
 
-Its source name is \`finite_trace_cutoff_error_le_alias_of_support\`. The proof consumes \`finite_trace_cutoff_error_of_fourier_zero\` from #661 with the newly established pointwise zero fact. The **finite modular-alias mass remains a real, potentially nonzero budget** and cannot be deleted or replaced by a GUE or zeta-zero claim.
+Its source name is `finite_trace_cutoff_error_le_alias_of_support`. The proof consumes `finite_trace_cutoff_error_of_fourier_zero` from #661 with the newly established pointwise zero fact. The **finite modular-alias mass remains a real, potentially nonzero budget** and cannot be deleted or replaced by a GUE or zeta-zero claim.
 
-The result allows \(K=0\) (then condition (C) forces \(B=0\)), modulus \(q=1\) as long as \`NeZero q\` holds, homology rank \(m=0\), and empty candidate families. It does **not** allow \(q=0\). The cutoff condition is monotone: \`admissibleCutoff_mono\` proves that if \(K\) is admissible then every larger cutoff is admissible, with \(\delta>0\) retained explicitly.
+The result allows \(K=0\) (then condition (C) forces \(B=0\)), modulus \(q=1\) as long as `NeZero q` holds, homology rank \(m=0\), and empty candidate families. It does **not** allow \(q=0\). The cutoff condition is monotone: `admissibleCutoff_mono` proves that if \(K\) is admissible then every larger cutoff is admissible, with \(\delta>0\) retained explicitly.
 
 ## 4. Nonvacuity and hostile failure
 
-The source includes a deliberately **nonsmooth algebraic fixture** \`toyTraceInput\` with one candidate ID, \(\ell=1\), support radius \(B=2\), length floor \(\delta=1\), and
+The source includes a deliberately **nonsmooth algebraic fixture** `toyTraceInput` with one candidate ID, \(\ell=1\), support radius \(B=2\), length floor \(\delta=1\), and
 
 \[
 \widehat h_{\mathrm{toy}}(x)=
@@ -112,10 +112,10 @@ The source includes a deliberately **nonsmooth algebraic fixture** \`toyTraceInp
 
 This is **not** an admissible trace-formula test for the Marklof–Monk theorem and is not claimed to come from a real surface. It checks the finite algebraic certificate itself.
 
-- \`toySupportCertificate\` has an actual witness for the fields, not an always-reject abstract predicate.
-- \`toy_cutoff_two_admissible\` demonstrates \(B\le2\delta\).
-- \`toy_cutoff_one_not_admissible\` demonstrates \(B\nleq1\delta\).
-- \`toy_second_iterate_fourier_nonzero\` gives \(\widehat h_{\mathrm{toy}}(2\ell)=1\ne0\), making the omitted \(n=2\) term at \(K=1\) an actual nonzero Fourier input. A positive but inadequate cutoff is not a valid tail certificate.
+- `toySupportCertificate` has an actual witness for the fields, not an always-reject abstract predicate.
+- `toy_cutoff_two_admissible` demonstrates \(B\le2\delta\).
+- `toy_cutoff_one_not_admissible` demonstrates \(B\nleq1\delta\).
+- `toy_second_iterate_fourier_nonzero` gives \(\widehat h_{\mathrm{toy}}(2\ell)=1\ne0\), making the omitted \(n=2\) term at \(K=1\) an actual nonzero Fourier input. A positive but inadequate cutoff is not a valid tail certificate.
 
 The passive verification target must also reject: an absent support-radius theorem; a nonpositive or merely assumed length floor; a reversal of \(B\le K\delta\); careless equality-boundary handling; a claim of Fourier zero for all \(n>K\) without \(n\ell_\gamma>B\); source-identity changes; silently deleting modular-alias error; treating candidate completeness as proved; and declaring an infinite Selberg tail zero without a complete actual-geodesic source and an independent analytic convergence/vanishing justification.
 
@@ -133,6 +133,6 @@ These geometric and arithmetic steps are not replaced by the optional finite alg
 
 ## 6. Verification boundary
 
-Additive files only: the new Lean source, this note, and one passive \`verification/finite-trace-fourier-support-665-v0.1.toml\` manifest. No root imports, toolchain, Lake manifest, external executor, native/VM run, cache, CI workflows or earlier PRs are changed.
+Additive files only: the new Lean source, this note, and one passive `verification/finite-trace-fourier-support-665-v0.1.toml` manifest. No root imports, toolchain, Lake manifest, external executor, native/VM run, cache, CI workflows or earlier PRs are changed.
 
 Static source review may inventory names and compare blobs to the passive manifest, but successful elaboration, generated declaration coverage, trust/axiom checks and external verification receipts remain **NOT_RUN / NOT_KERNEL_AUDITED**. Issue #665 and its draft PR are not to be closed or merged on the strength of source text alone.
