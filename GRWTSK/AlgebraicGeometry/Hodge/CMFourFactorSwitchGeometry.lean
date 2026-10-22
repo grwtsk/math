@@ -367,6 +367,54 @@ theorem FourCanonicalFactorsActualTyping.all_actual_types
 
 end ActualWeightOneFactorTyping
 
+/-- Explicit common complex tensor target for four independently realized
+weight-one factors. -/
+abbrev FourfoldActualTensor
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    (D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄) :=
+  ((D.first.realization.H1C ⊗[ℂ] D.second.realization.H1C)
+      ⊗[ℂ] D.third.realization.H1C)
+    ⊗[ℂ] D.fourth.realization.H1C
+
+/-- Pure fourfold tensor in the explicit common target. -/
+def fourfoldActualPureTensor
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    (D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄)
+    (a : D.first.realization.H1C)
+    (b : D.second.realization.H1C)
+    (c : D.third.realization.H1C)
+    (d : D.fourth.realization.H1C) :
+    FourfoldActualTensor D :=
+  ((a ⊗ₜ[ℂ] b) ⊗ₜ[ℂ] c) ⊗ₜ[ℂ] d
+
+/-- Standard Hodge tensor-product rule for four independently realized
+weight-one factors.
+
+This is the exact structural theorem needed after the four individual factors
+have acquired genuine Hodge types. -/
+structure FourfoldActualHodgeTensorRule
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    (D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄) where
+  H22 : Submodule ℂ (FourfoldActualTensor D)
+  pureTensor_mem_H22 :
+    ∀ (a : D.first.realization.H1C)
+      (b : D.second.realization.H1C)
+      (c : D.third.realization.H1C)
+      (d : D.fourth.realization.H1C)
+      (τ₁ τ₂ τ₃ τ₄ : CMEmbeddingLines.WeightOneHodgeType),
+      D.first.realization.IsOfType a τ₁ →
+      D.second.realization.IsOfType b τ₂ →
+      D.third.realization.IsOfType c τ₃ →
+      D.fourth.realization.IsOfType d τ₄ →
+      CMEmbeddingLines.pIndex τ₁ + CMEmbeddingLines.pIndex τ₂ +
+          CMEmbeddingLines.pIndex τ₃ + CMEmbeddingLines.pIndex τ₄ = 2 →
+      CMEmbeddingLines.qIndex τ₁ + CMEmbeddingLines.qIndex τ₂ +
+          CMEmbeddingLines.qIndex τ₃ + CMEmbeddingLines.qIndex τ₄ = 2 →
+      fourfoldActualPureTensor D a b c d ∈ H22
+
 /-- Generic fourfold Hodge tensor-product compatibility.
 
 The isOfType predicate records actual weight-one Hodge membership of a
