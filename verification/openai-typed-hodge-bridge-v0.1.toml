@@ -901,3 +901,40 @@ nonclaims = [
   "no complete switch chain yet",
   "no algebraic-cycle realization"
 ]
+
+
+[[local_target]]
+name = "conjugate-paired two-row switch preserves odd sign matrices"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchConjugatePair_odd"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "involutive column conjugation",
+  "selected column distinct from its conjugate",
+  "odd current sign matrix"
+]
+nonclaims = [
+  "one conjugate-pair operation only",
+  "does not construct the full finite switch sequence",
+  "no Hodge or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "conjugate-paired switch preserves all column sums"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.sum_switchConjugatePair"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "conjugate-paired switch corrects selected and conjugate mismatches"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchConjugatePair_corrects_conjugate"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd current and target sign matrices",
+  "paired opposite mismatch at the selected column"
+]
+nonclaims = [
+  "atomic paired correction only",
+  "full multi-column termination/connectivity remains open"
+]
