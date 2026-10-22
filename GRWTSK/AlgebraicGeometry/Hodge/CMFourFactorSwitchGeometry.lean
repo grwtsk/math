@@ -27,6 +27,7 @@ namespace GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
 
 open CMFourBalance
 open CMFourFactorSwitchCombinatorics
+open GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent
 
 noncomputable section
 
@@ -908,6 +909,55 @@ theorem ActualFourfoldMonomialGeneratorIdentification.assembled_mem_hodge
   rw [I.assembled_eq]
   exact C.mem_hodge_of_mem_H22
     (R.canonicalPureTensor_mem_H22 I.alignment)
+
+/-- Finite Galois carrier for one algebraic-number tensor, obtained from
+the already-local arbitrary-Galois descent infrastructure. -/
+structure FiniteGaloisTensorCarrier
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (t : AlgebraicNumbers ⊗[ℚ] V) where
+  L : FiniteGaloisIntermediateField ℚ AlgebraicNumbers
+  tensor : L ⊗[ℚ] V
+  inclusion_eq :
+    coefficientInclusion tensor = t
+
+/-- Every algebraic-number tensor has a finite Galois carrier. -/
+noncomputable def finiteGaloisTensorCarrier
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (t : AlgebraicNumbers ⊗[ℚ] V) :
+    FiniteGaloisTensorCarrier t := by
+  letI : IsAlgClosure ℚ AlgebraicNumbers :=
+    algebraicClosure.isAlgClosure ℚ ℂ
+  obtain ⟨L, u, hu⟩ :=
+    tensor_defined_over_finiteGalois t
+  exact ⟨L, u, hu⟩
+
+/-- Absolute scalar conjugation restricts through the finite Galois carrier
+chosen for a tensor. -/
+theorem FiniteGaloisTensorCarrier.scalarConjugate_restrict
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {t : AlgebraicNumbers ⊗[ℚ] V}
+    (C : FiniteGaloisTensorCarrier t)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          (σ.restrictNormal C.L) C.tensor) =
+      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ t := by
+  rw [← C.inclusion_eq]
+  exact
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
+      C.L σ C.tensor
+
+/-- Extra condition needed to use a finite Galois carrier as an actual CM
+weight-one realization field.
+
+Finite Galois containment itself is local. The CM property is deliberately
+kept separate. -/
+structure CMFiniteGaloisTensorCarrier
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (t : AlgebraicNumbers ⊗[ℚ] V)
+    extends FiniteGaloisTensorCarrier t where
+  [isCMField : IsCMField L]
 
 /-- One realized Hodge witness for a descent-side monomial generator.
 
