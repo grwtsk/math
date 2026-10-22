@@ -2247,16 +2247,55 @@ nonclaims = [
 ]
 
 [[external_premise]]
-id = "cm-finite-galois-carrier-cm-compatibility"
+id = "cm-four-canonical-factors-common-cm-support"
 result_family = 32
 evidence = "EXTERNAL_CM_REALIZATION"
 source = "CM realization field for the finite Galois carrier of the switched tensor"
 labels = []
-statement_role = "show that the finite Galois support field relevant to the switched CM tensor admits the required CM-field realization/identification; finite Galois containment and restriction of absolute conjugation are already local"
-local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteGaloisTensorCarrier"
+statement_role = "exhibit one finite Galois CM intermediate field of AlgebraicNumbers supporting all four canonical switched factor vectors and characters; once supplied, every absolute scalar conjugate is represented by restriction and local scalar transport on that same CM field"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFourFactorSupport"
 status = "OPEN"
 nonclaims = [
-  "does not ask for finite containment",
-  "does not ask for Galois stability",
+  "arbitrary finite tensor support is already local",
+  "the additional requirement is common CM support of the four canonical factors",
   "does not assert algebraicity"
+]
+
+
+[[local_target]]
+name = "four canonical factors supported on one finite Galois CM field"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFourFactorSupport"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one finite Galois CM intermediate field of AlgebraicNumbers",
+  "four local embedding-eigenspace vectors",
+  "inclusion of local vectors equals the global canonical factors",
+  "global characters restrict to the local characters"
+]
+nonclaims = [
+  "does not prove such a common CM support exists for arbitrary factors",
+  "does not construct Hodge realizations"
+]
+
+[[local_target]]
+name = "finite CM factor inclusion commutes with scalar conjugation"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMGaloisIntermediateField.factorTensorInclusion_scalarConjugate"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "pure coefficient/support compatibility",
+  "no Hodge or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "global transported factors are inclusions of local transported factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFourFactorSupport.scalarTransportLocal_inclusion"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "CMFourFactorSupport"
+]
+nonclaims = [
+  "all scalar transports stay on the same finite Galois CM carrier once support is supplied"
 ]
