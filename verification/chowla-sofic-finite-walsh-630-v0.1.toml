@@ -9,9 +9,19 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lake_manifest_file = "lake-manifest.json"
 
 [scope]
-kind = "isolated-source-module"
+kind = "isolated-two-module-target"
 module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns"
 source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+required_modules = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
+]
+required_sources = [
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshOrthogonality.lean",
+]
+require_exact_two_module_dependency = true
+allow_only_selected_module_build = true
 mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
 requires_clean_checkout = true
 requires_exact_source_content = true
@@ -40,6 +50,8 @@ expected = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityLeft",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityRight",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityThird",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.plainMomentOn",
 ]
 
 [theorems]
@@ -52,8 +64,15 @@ required = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_agree_off",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCount_difference_supported",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parity_pairwise_not_threewise_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign_square",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_square",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_diagonal",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonal",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonality",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn_factor",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment_factor",
 ]
-exact_count = 8
+exact_count = 15
 requires_exact_types = true
 requires_full_axiom_inspection = true
 
@@ -80,8 +99,20 @@ must_preserve = "Off-exception matching requires same actual root and every sele
 id = "distinct-arithmetic-shifts"
 must_preserve = "No fixed or growing affine-shift Chowla theorem is constructed or imported by this generic finite module."
 [[hostile_controls]]
+id = "entire-boolean-cube"
+must_preserve = "Orthogonality sums over ALL Boolean assignments, not a proper subset, sample-dependent selection, or sparse orbit."
+
+[[hostile_controls]]
+id = "distinct-characters"
+must_preserve = "The zero result requires S != T; diagonal Gram entries count all assignments, including the empty-coordinate case."
+
+[[hostile_controls]]
+id = "moment-sign-convention"
+must_preserve = "Parent signedMomentOn includes the pattern character. Factoring it must retain the unchanged source moment and correct character."
+
+[[hostile_controls]]
 id = "no-probabilistic-upgrade"
-must_preserve = "Chi-square, entropy and TV inequalities remain written derivations, not theorem declarations in this target."
+must_preserve = "Walsh character orthogonality is source-drafted; chi-square, entropy, Parseval and TV inequalities remain written derivations, not Lean theorem declarations in this target."
 [[hostile_controls]]
 id = "no-spectral-upgrade"
 must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
@@ -108,7 +139,7 @@ claims = [
   "Liouville distribution limits",
   "growing-window uniform correlation energy",
   "sofic action existence or spectral convergence",
-  "total-variation or entropy inequalities already proved in Lean",
+  "Parseval, chi-square, total-variation or entropy inequalities already proved in Lean",
   "Montgomery pair correlation or GUE",
   "Riemann hypothesis",
   "native Lean, Lake, CI or independent replay success",
