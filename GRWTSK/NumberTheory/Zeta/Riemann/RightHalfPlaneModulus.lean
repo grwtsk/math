@@ -53,7 +53,7 @@ theorem norm_tsum_reciprocal_cpow_tail_le (s : ℂ) (hs : 2 ≤ s.re)
       apply Finset.sum_le_sum
       intro k hk
       have ht : (1 : ℝ) ≤ (q : ℝ) + (k : ℝ) := by
-        linarith [Nat.cast_nonneg (R := ℝ) k]
+        linarith [Nat.cast_nonneg (α := ℝ) k]
       simpa only [Complex.ofReal_add, Complex.ofReal_natCast, add_comm] using
         norm_reciprocal_cpow_le_square ((q : ℝ) + (k : ℝ)) ht s hs
     _ ≤ _ := finite_square_tail_le_reciprocal (q : ℝ) (by linarith) N
@@ -65,7 +65,7 @@ theorem zeta_eq_one_add_two_add_tail (s : ℂ) (hs : 1 < s.re) :
   have h1 := (summable_shifted_reciprocal_cpow s hs 1).tsum_eq_zero_add
   have h2 := (summable_shifted_reciprocal_cpow s hs 2).tsum_eq_zero_add
   norm_num only [Nat.cast_one, Nat.cast_zero, Nat.cast_add, Nat.cast_ofNat,
-    zero_add, one_cpow, div_one, add_assoc] at h1 h2
+    zero_add, Complex.one_cpow, div_one, add_assoc] at h1 h2
   rw [zeta_eq_tsum_one_div_nat_add_one_cpow hs, h1, h2]
   ring
 
@@ -73,9 +73,9 @@ theorem zeta_eq_one_add_two_add_tail (s : ℂ) (hs : 1 < s.re) :
 theorem norm_zeta_sub_one_le_three_quarters (s : ℂ) (hs : 2 ≤ s.re) :
     ‖riemannZeta s - 1‖ ≤ (3 / 4 : ℝ) := by
   have hfirst : ‖1 / (2 : ℂ) ^ s‖ ≤ (1 / 4 : ℝ) := by
-    simpa using norm_reciprocal_cpow_le_square 2 (by norm_num) s hs
+    convert norm_reciprocal_cpow_le_square 2 (by norm_num) s hs using 1 <;> norm_num
   have htail : ‖∑' k : ℕ, 1 / ((k : ℂ) + 3) ^ s‖ ≤ (1 / 2 : ℝ) := by
-    simpa using norm_tsum_reciprocal_cpow_tail_le s hs 3 (by norm_num)
+    convert norm_tsum_reciprocal_cpow_tail_le s hs 3 (by norm_num) using 1 <;> norm_num
   have he : riemannZeta s - 1 = 1 / (2 : ℂ) ^ s +
       ∑' k : ℕ, 1 / ((k : ℂ) + 3) ^ s := by
     rw [zeta_eq_one_add_two_add_tail s (by linarith)]
@@ -111,7 +111,7 @@ theorem norm_inv_zeta_le_four (s : ℂ) (hs : 2 ≤ s.re) :
   have hb := div_le_div_of_nonneg_left (by norm_num : (0 : ℝ) ≤ 1)
     (by norm_num : (0 : ℝ) < 1 / 4) (one_quarter_le_norm_zeta s hs)
   norm_num at hb
-  exact hb
+  simpa only [one_div] using hb
 
 end
 end GRWTSK.RiemannHypothesis.RightHalfPlaneModulus

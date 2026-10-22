@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "canonical-tent-rounded-evaluation-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-tent-scaled-evaluation-core-v0.1.toml"
-inherited_target_blob = "a7286722e5039a11f9f4c00555dcba2b529b77af"
+# Original pre-repair inherited_target_blob = "a7286722e5039a11f9f4c00555dcba2b529b77af".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "a3ebd27107000bcf3d272a218dfe969b32fffbb4"
 receipt_policy = "Bind exact new commit and tree externally. This static target represents no execution."
 
 [trust]
@@ -114,7 +119,9 @@ disposition = "INHERITED_NOT_ACCEPTED"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
 path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
-source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]

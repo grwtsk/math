@@ -34,7 +34,7 @@ theorem clearance_pos (K : ℕ) : 0 < clearance K := by
 
 theorem clearance_le_quarter (K : ℕ) : clearance K ≤ 1 / 4 := by
   unfold clearance
-  have hK := Nat.cast_nonneg (R := ℝ) K
+  have hK := Nat.cast_nonneg (α := ℝ) K
   apply (div_le_div_iff₀ (by positivity) (by norm_num)).mpr
   nlinarith
 
@@ -53,7 +53,6 @@ theorem gridPoint_gap (a : ℝ) (K : ℕ) (i j : Fin (K + 1)) (hij : i.val < j.v
     unfold clearance
     have hK : (K : ℝ) + 1 ≠ 0 := by positivity
     field_simp [hK]
-    <;> ring
   rw [heq]
   exact div_le_div_of_nonneg_right (by linarith) (by positivity)
 
@@ -61,7 +60,7 @@ theorem gridPoint_bounds (a : ℝ) (K : ℕ) (j : Fin (K + 1)) :
     a + 2 * clearance K ≤ gridPoint a K j ∧
       gridPoint a K j ≤ a + 1 - 2 * clearance K := by
   have hK : 0 < (K : ℝ) + 1 := by positivity
-  have hj0 := Nat.cast_nonneg (R := ℝ) j.val
+  have hj0 := Nat.cast_nonneg (α := ℝ) j.val
   have hjK : (j.val : ℝ) ≤ (K : ℝ) := by
     exact_mod_cast (Nat.le_of_lt_succ j.isLt)
   constructor
@@ -69,18 +68,18 @@ theorem gridPoint_bounds (a : ℝ) (K : ℕ) (j : Fin (K + 1)) :
       a + 2 * clearance K = a + (1 / 2) / ((K : ℝ) + 1) := by
         unfold clearance
         field_simp [hK.ne']
-        <;> ring
+        ring
       _ ≤ gridPoint a K j := by
         unfold gridPoint
-        exact add_le_add_left (div_le_div_of_nonneg_right (by linarith) hK.le) a
+        exact add_le_add_right (div_le_div_of_nonneg_right (by linarith) hK.le) a
   · calc
       gridPoint a K j ≤ a + ((K : ℝ) + 1 / 2) / ((K : ℝ) + 1) := by
         unfold gridPoint
-        exact add_le_add_left (div_le_div_of_nonneg_right (by linarith) hK.le) a
+        exact add_le_add_right (div_le_div_of_nonneg_right (by linarith) hK.le) a
       _ = a + 1 - 2 * clearance K := by
         unfold clearance
         field_simp [hK.ne']
-        <;> ring
+        ring
 
 /-- A single forbidden value cannot block two candidates. -/
 theorem close_gridPoint_unique (a y : ℝ) (K : ℕ) (i j : Fin (K + 1))
@@ -105,7 +104,7 @@ theorem exists_clear_gridPoint {ι : Type*} [Fintype ι] (a : ℝ) (v : ι → �
       ∀ i : ι, clearance (Fintype.card ι) ≤ |gridPoint a (Fintype.card ι) j - v i| := by
   classical
   by_contra h
-  push_neg at h
+  push Not at h
   choose blocker hblocker using h
   have hinj : Function.Injective blocker := by
     intro i j hij

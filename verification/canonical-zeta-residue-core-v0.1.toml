@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "canonical-zeta-residue-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -26,7 +29,9 @@ lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-zeta-tent-core-v0.1.toml"
-inherited_target_blob = "f09add4fb871df869de47ef4e8d249d761ac8f08"
+# Original pre-repair inherited_target_blob = "f09add4fb871df869de47ef4e8d249d761ac8f08".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "ae2d490cc7884e41f9d5ead10d4378035ba70ef2"
 receipt_policy = "Bind the actual replayed integration commit/tree/manifest externally; this file and parent receipts are not acceptance."
 inventory_policy = "The list is lexical source inventory. Report every public elaborated type and the complete inherited and transitive trust closure."
 residue_scope = "Punctured principal parts and scaled-limit coefficients only; no global contour, Cauchy residue theorem instance or infinite source identity."
@@ -69,8 +74,11 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
-source_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "892f796ab9074813b89f58b2321f2683c80bef7b".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "7dcaef4040533a9b3f76d1cf46b2bba88622fdad"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.Analysis.Complex.TentMellinKernel"
@@ -81,8 +89,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
 path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
-source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.Interfaces.CanonicalZetaTentCore"
