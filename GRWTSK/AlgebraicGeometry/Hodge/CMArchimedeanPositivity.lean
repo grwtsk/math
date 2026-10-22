@@ -103,6 +103,73 @@ theorem SignControlledXi.tracePairing_alternating_nondegenerate
         (∀ x : E, CMTracePolarization.tracePairing E X.xi x y = 0) → y = 0) :=
   CMTracePolarization.tracePairing_alternating_nondegenerate
     E X.toTracePolarizationData
+/-- CM conjugation becomes ordinary complex conjugation under every selected
+complex embedding. -/
+theorem complexEmbeddingAt_galoisComplexConj
+    (σ : E ≃ₐ[ℚ] E) (x : E) :
+    complexEmbeddingAt E σ (galoisComplexConj E x) =
+      conj (complexEmbeddingAt E σ x) := by
+  change (baseComplexEmbedding E).comp σ.toRingHom
+      (IsCMField.complexConj E x) = _
+  exact IsCMField.complexEmbedding_complexConj
+    E ((baseComplexEmbedding E).comp σ.toRingHom) x
+
+/-- Anti-invariance of xi makes every embedded value purely imaginary. -/
+theorem SignControlledXi.embedding_re_zero
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v) (σ : E ≃ₐ[ℚ] E) :
+    (complexEmbeddingAt E σ X.xi).re = 0 := by
+  have h := congrArg Complex.re
+    (show conj (complexEmbeddingAt E σ X.xi) =
+        - complexEmbeddingAt E σ X.xi by
+      rw [← complexEmbeddingAt_galoisComplexConj E σ X.xi, X.antiInvariant, map_neg])
+  simp only [Complex.conj_re, Complex.neg_re] at h
+  linarith
+
+/-- Formal Weil factor attached to a sign label. -/
+def weilFactor
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (σ : E ≃ₐ[ℚ] E) : ℂ :=
+  (v.value σ : ℂ) * Complex.I
+
+/-- Embedded xi times the formal Weil factor is exactly the positive real
+coordinate coefficient. -/
+theorem SignControlledXi.embedding_mul_weilFactor
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v) (σ : E ≃ₐ[ℚ] E) :
+    complexEmbeddingAt E σ X.xi * weilFactor E v σ =
+      (X.coeff σ : ℂ) := by
+  apply Complex.ext
+  · simp [weilFactor, SignControlledXi.coeff, imagAt,
+      Complex.mul_re, Complex.mul_im, X.embedding_re_zero σ]
+    ring
+  · simp [weilFactor, Complex.mul_re, Complex.mul_im,
+      X.embedding_re_zero σ]
+
+/-- Coordinate realization of the Weil-twisted trace coefficient. This is
+still a coordinate formula; equality with the base-changed rational trace
+pairing is a separate theorem boundary. -/
+def SignControlledXi.coordinateWeilForm
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℂ :=
+  ∑ σ,
+    (complexEmbeddingAt E σ X.xi * weilFactor E v σ) *
+      (Complex.normSq (z σ) : ℂ)
+
+/-- The coordinate Weil form is exactly the real positive energy, embedded
+in C. -/
+theorem SignControlledXi.coordinateWeilForm_eq_energy
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) :
+    X.coordinateWeilForm z = (X.energy z : ℂ) := by
+  unfold SignControlledXi.coordinateWeilForm SignControlledXi.energy
+  rw [Complex.ofReal_sum]
+  apply Finset.sum_congr rfl
+  intro σ _
+  rw [X.embedding_mul_weilFactor]
+  simp [SignControlledXi.coeff]
 /-- Coordinate Hodge energy associated with the sign-controlled xi. -/
 def SignControlledXi.energy
     {v : CMNumberFieldIndex.OddSignRow E}
