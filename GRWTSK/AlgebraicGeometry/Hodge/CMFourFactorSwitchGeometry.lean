@@ -2992,4 +2992,77 @@ def CMFiniteTransportedGeneratorHodgeData.ofCanonicalImageWitnesses
     CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
   generator_mem := fun σ => (W σ).generator_mem_hodge
 
+/-- Minimal comparison witness for the one transported canonical tensor:
+only its image and the assembly identification are required. This is
+strictly a dependency interface, not a construction of the geometric map. -/
+structure CMFiniteCanonicalPointWitness
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) where
+  v₁ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₂ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₃ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₄ : CMNumberFieldIndex.OddSignRow E.carrier
+  actualTyping :
+    CMFiniteFourFactorActualTyping E
+      (factors.scalarTransport σ) v₁ v₂ v₃ v₄
+  alignment : CMFiniteFourFactorSwitchAlignment actualTyping
+  compare : FourfoldActualTensor actualTyping.toActualTyping →ₗ[ℂ]
+    (ℂ ⊗[ℚ] V)
+  canonical_image_mem :
+    compare
+      (fourfoldActualPureTensor actualTyping.toActualTyping
+        (actualTyping.first.realization.canonicalTensorActualH1Comparison.toActual
+          actualTyping.first.vector)
+        (actualTyping.second.realization.canonicalTensorActualH1Comparison.toActual
+          actualTyping.second.vector)
+        (actualTyping.third.realization.canonicalTensorActualH1Comparison.toActual
+          actualTyping.third.vector)
+        (actualTyping.fourth.realization.canonicalTensorActualH1Comparison.toActual
+          actualTyping.fourth.vector)) ∈ hodgeSubspace
+  generator_eq :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) =
+      compare
+        (fourfoldActualPureTensor actualTyping.toActualTyping
+          (actualTyping.first.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.first.vector)
+          (actualTyping.second.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.second.vector)
+          (actualTyping.third.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.third.vector)
+          (actualTyping.fourth.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.fourth.vector))
+
+/-- Minimal pointwise geometric input gives transported generator membership. -/
+theorem CMFiniteCanonicalPointWitness.generator_mem_hodge
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers}
+    (W : CMFiniteCanonicalPointWitness D hodgeSubspace σ) :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) ∈
+      hodgeSubspace := by
+  rw [W.generator_eq]
+  exact W.canonical_image_mem
+
+/-- Pointwise geometric data for every scalar conjugate suffices for
+the established orbit-span descent interface. -/
+def CMFiniteTransportedGeneratorHodgeData.ofCanonicalPointWitnesses
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (W : ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+      CMFiniteCanonicalPointWitness D hodgeSubspace σ) :
+    CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
+  generator_mem := fun σ => (W σ).generator_mem_hodge
+
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
