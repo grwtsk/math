@@ -1900,3 +1900,34 @@ nonclaims = [
   "no common tensor target or fourfold assembly is asserted",
   "no algebraicity conclusion"
 ]
+
+
+[[local_target]]
+name = "explicit common tensor target for four actual weight-one realizations"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldActualTensor"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "nested complex tensor product only",
+  "the four H1_C carriers remain distinct"
+]
+
+[[local_target]]
+name = "pure fourfold tensor of independently realized H1 factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.fourfoldActualPureTensor"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[external_premise]]
+id = "cm-fourfold-actual-hodge-pure-tensor-rule"
+result_family = 32
+evidence = "EXTERNAL_CLASSICAL"
+source = "standard tensor-product Hodge decomposition for four pure weight-one Hodge structures"
+labels = []
+statement_role = "for four independently realized actual H1_C factors, a pure tensor of genuine weight-one types whose total bidegree is (2,2) lies in the H^(2,2) subspace of the explicit nested tensor product"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldActualHodgeTensorRule.pureTensor_mem_H22"
+status = "OPEN"
+nonclaims = [
+  "structural Hodge theorem only",
+  "no algebraicity conclusion"
+]
