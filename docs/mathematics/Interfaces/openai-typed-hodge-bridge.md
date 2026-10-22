@@ -1488,6 +1488,41 @@ The independent four-factor algebraicity theorem remains untouched.
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4ae. Multilinear transport is reduced to one fourfold assembly equation
+
+The remaining transport theorem is now isolated precisely.
+
+`CMFourFactorSwitchGeometry.lean` introduces:
+
+~~~text
+FourfoldMonomialAssemblyData
+FourfoldMonomialAssemblyData.transportedLine
+FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine
+FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineData
+~~~
+
+The four canonical embedding-line factors are already transported locally and simultaneously. The new interface asks for an actual fourfold assembly map from those factors into the complexified cohomological tensor space, together with one compatibility equation:
+
+[
+iota(sigma t)
+=
+operatorname{assemble}(sigma v_1,sigma v_2,sigma v_3,sigma v_4).
+]
+
+Once that equation is supplied, the scalar conjugate belongs to the transported monomial line by definition of that line as the span of the assembled transported generator.
+
+Therefore the first linewise obligation from the previous increment is reduced to one exact multilinear naturality statement: scalar conjugation commutes with fourfold monomial assembly.
+
+The only remaining geometric linewise statement after that is
+
+[
+L_sigmasubseteq H^{2,2},
+]
+
+identifying each transported formal monomial line with an actual ((2,2)) Hodge line.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
