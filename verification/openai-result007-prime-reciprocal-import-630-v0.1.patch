@@ -1,0 +1,24 @@
+diff --git a/lean/OAI/NumberTheory/TwoPoint/Bounds/PrimeReciprocalTheorem.lean b/lean/OAI/NumberTheory/TwoPoint/Bounds/PrimeReciprocalTheorem.lean
+--- a/lean/OAI/NumberTheory/TwoPoint/Bounds/PrimeReciprocalTheorem.lean
++++ b/lean/OAI/NumberTheory/TwoPoint/Bounds/PrimeReciprocalTheorem.lean
+@@ -1,10 +1,10 @@
+ import OAI.NumberTheory.TwoPoint.Bounds.MertensScale
+-import PrimeNumberTheoremAnd.Erdos970.MertensClassical
++import PrimeNumberTheoremAnd.IEANTN.Mertens
+ 
+ namespace OAI
+ 
+ /-! Mertens' second theorem in bounded-error form.
+ 
+-The formal proof uses `Erdos970.Mertens.sum_prime_div_eq_log_log`.
++The formal proof uses `Mertens.sum_prime_div_eq_log_log`.
+ Only the convention for the finite prime set differs from
+ `PrimeReciprocalInput`; zero contributes no prime to either convention.
+@@ -27,6 +27,6 @@
+ /-- Mertens' second theorem implies the reciprocal-prime estimate. -/
+ theorem primeReciprocalInput : PrimeReciprocalInput := by
+-  obtain ⟨C, hC⟩ := Erdos970.Mertens.sum_prime_div_eq_log_log
++  obtain ⟨C, hC⟩ := Mertens.sum_prime_div_eq_log_log
+   refine ⟨C, fun x hx => ?_⟩
+   rw [sievePrimesUpTo_eq_Ioc]
+   exact hC x hx
