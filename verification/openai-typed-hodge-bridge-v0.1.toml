@@ -1400,3 +1400,19 @@ nonclaims = [
   "no second independent algebraicity theorem",
   "identification and packaging adapters carry no algebraicity content"
 ]
+
+
+[[local_target]]
+name = "atomic switch canonically supplies four-factor balance"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.atomicSwitch_fourBalance"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source matrix",
+  "fixed-point-free selected conjugate coordinate",
+  "opposite mismatch pair defining one atomic switch"
+]
+nonclaims = [
+  "combinatorial four-label balance only",
+  "does not construct a tensor, rational descent datum, or algebraic cycle"
+]
