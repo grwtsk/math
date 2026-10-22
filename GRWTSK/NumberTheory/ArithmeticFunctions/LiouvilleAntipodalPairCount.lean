@@ -515,6 +515,24 @@ theorem normalized_subtype_character_term
   rw [shiftSubsetValues_card, shiftSubsetValues_sourceMean,
     shiftSubsetValues_residualMean]
 
+/-- All nonempty normalized characters sum to the existing signed
+mixed-energy definition. The empty character is excluded exactly once. -/
+theorem normalized_nonempty_subtype_characters_eq_mixed
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) :
+    (∑ S ∈ (Finset.univ :
+        Finset (Finset {h : ℕ // h ∈ H})).erase ∅,
+      ((∑ p ∈ (Finset.range M).product (Finset.range M),
+          (-1 : ℚ) ^ (shiftSubsetValues H S).card *
+            ∏ h ∈ shiftSubsetValues H S,
+              (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2)) =
+      dyadicSignedMixedEnergy M H := by
+  unfold dyadicSignedMixedEnergy
+  apply Finset.sum_congr rfl
+  intro S _
+  exact normalized_subtype_character_term M H S hM
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
