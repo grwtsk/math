@@ -74,6 +74,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeDFTSmoothingWi
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeDFTSmoothingPacketControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularSmoothingCandidateControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularBoundaryLocalizationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularTailDecompositionControls
 
 set_option autoImplicit false
 
