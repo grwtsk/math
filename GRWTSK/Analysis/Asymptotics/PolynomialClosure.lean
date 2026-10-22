@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human direction: R.A. Jacob Martone; OpenAI Codex formalization assistance.
 Classical implications; imported Mathlib contributions retain their authorship. -/
-import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
+import GRWTSK.Analysis.AsymptoticAnalysis.PolynomialErrorBound
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform

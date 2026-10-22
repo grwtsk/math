@@ -1,7 +1,7 @@
 import Mathlib.Analysis.Fourier.LpSpace
 import GRWTSK.Analysis.Fourier.PrimePhaseMultiplierBounds
-import GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts
-import GRWTSK.MeasureTheory.Function.Lp.CausalRestrictionBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeTranslationBoundContracts
+import GRWTSK.Analysis.MeasureTheory.Function.Lp.CausalRestrictionBounds
 
 /-! Classical L¹∩L² Plancherel bridge for the literal angular-frequency transform.
 The proof identifies the actual Fourier integral with the L² transform through

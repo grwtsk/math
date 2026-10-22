@@ -1,6 +1,6 @@
 import Mathlib.Analysis.Normed.Ring.Basic
 import Mathlib.Tactic.GCongr
-import GRWTSK.Analysis.Asymptotics.SublinearDyadic
+import GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic
 
 /-!
 Research direction: R.A. Jacob Martone.

@@ -1,7 +1,7 @@
 import GRWTSK.LinearAlgebra.Schrodinger.Sampling
 import GRWTSK.Analysis.NormedSpace.QuadraticError
 import GRWTSK.Analysis.Fourier.WindowCertificates
-import GRWTSK.Analysis.Asymptotics.PolynomialClosure
+import GRWTSK.Analysis.AsymptoticAnalysis.PolynomialClosure
 import GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy
 open GRWTSK.Analysis.Waveform
 example (s : ℕ → ℤ) : ContDiff ℝ 1 (coefficientWaveform (carrier s)) := encoded_sequence_contDiff s

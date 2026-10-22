@@ -1,4 +1,4 @@
-import GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy
 
 /-! Exact fixed-width terminal-window accounting for the actual completed
 Möbius pickup. Recurrence is applied only at T≥b. A backward floor telescope

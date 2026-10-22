@@ -5,7 +5,7 @@ import GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
 import GRWTSK.Analysis.Integration.ExponentialInterval
 import GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
-import GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+import GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
 /-!
 # Exact arithmetic blocks on the critical completed vertical line

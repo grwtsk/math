@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.Moebius.MoebiusEulerProduct
-import GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition
+import GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition
 
 /-! Unconditional scalar right-line decay for the exact reciprocal-zeta pickup
 kernel. This estimates no finite-time Bessel or Mellin residual until an exact
