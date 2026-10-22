@@ -50,6 +50,31 @@ path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ProofChecking/Che
 source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
 reason = "mixed whole-library proof audit has no dominant whole-file subject"
 
+[[review_overrides]]
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/Bijections/ExplicitFieldRepresentationTransport/Variant7b67a64e7cab240c/TransportToBits.lean"
+source_sha256 = "7f4683ea975bf7a38dba9566b71a4a61581a0f397386cd64f49d40b170b5e16a"
+reason = "generic transport across a supplied equivalence does not establish field or algebra subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/Geometry/ConvexGeometry/ConvexSets/ConvexHulls/FiniteConvexCombinations/BarycentricCoefficients/FiniteSimplexGammaAndObservation/Variant5cc54b9c520347b4/FiniteRefinementParametersAndPoints.lean"
+source_sha256 = "e8720d893b82d8f6c37c6ae55d0bcd0876ec9c52f9e1ebdecd0da95ca3e03a70"
+reason = "finite simplex weights admit geometric and probabilistic readings, so a whole-file probability placement is not sufficiently justified"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/PrefixCoverage.lean"
+source_sha256 = "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+reason = "finite-sequence recurrences and coverage bounds do not establish an analysis subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/Data/Sampling/Descriptions.lean"
+source_sha256 = "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f"
+reason = "role and metadata records do not establish an analysis subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods/QuantifierElimination/EliminationData/Sampling/Descriptions.lean"
+source_sha256 = "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f"
+reason = "role and metadata records do not establish an analysis subject placement"
+
 [[subject_profiles]]
 key = "algebra"
 directory = "Algebra"
