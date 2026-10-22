@@ -63,21 +63,6 @@ theorem scalarConjugate_mem_embeddingEigenspace
   rw [← scalarConjugate_regularAction σ a t, ht a,
     scalarConjugate_smul, transportedCharacter_apply]
 
-/-- Applying the inverse automorphism gives the reverse inclusion, so scalar
-conjugation identifies the two eigenspaces set-theoretically. -/
-theorem embeddingEigenspace_transport_iff
-    (σ : E ≃ₐ[k] E) (λ : E →ₐ[k] E) (t : E ⊗[k] E) :
-    scalarConjugate σ t ∈
-        embeddingEigenspace (k := k) (transportedCharacter σ λ) ↔
-      t ∈ embeddingEigenspace (k := k) λ := by
-  constructor
-  · intro h
-    have h' := scalarConjugate_mem_embeddingEigenspace
-      (σ := σ.symm)
-      (λ := transportedCharacter σ λ)
-      h
-    simpa [transportedCharacter, scalarConjugate] using h'
-  · exact scalarConjugate_mem_embeddingEigenspace σ λ
 
 end
 
