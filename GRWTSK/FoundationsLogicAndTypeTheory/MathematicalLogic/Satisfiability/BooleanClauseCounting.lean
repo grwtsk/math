@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT.
 Mathlib results retain upstream authorship and Apache-2.0 license. -/
+import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Data.Fintype.Card
 import Mathlib.Tactic
 
@@ -68,7 +69,7 @@ theorem clauseSatisfied_iff_exists_literal
 @[simp]
 theorem card_booleanAssignment (k : ℕ) :
     Fintype.card (BooleanAssignment k) = 2 ^ k := by
-  simp [BooleanAssignment]
+  simp [BooleanAssignment, Fintype.card_fun]
 
 /-- Every polarity profile has exactly one falsifying assignment. -/
 @[simp]
