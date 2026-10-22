@@ -1537,6 +1537,73 @@ structure CMFiniteNestedLinearAssembly
           ((factors.scalarTransport σ).vector 2)
           ((factors.scalarTransport σ).vector 3)
 
+/-- Canonical finite-CM multilinear presentation. The rational map is
+the only construction datum: equivariance is proved from its pure formula,
+rather than postulated at the selected factor tuple. -/
+structure CMFiniteCanonicalNestedLinearMap
+    (E : CMGaloisIntermediateField) where
+  map :
+    (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E)
+  pure_formula :
+    ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄) =
+        canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Canonical pure-factor multiplication forces equivariance on arbitrary
+finite input tensors by four nested tensor inductions. -/
+theorem CMFiniteCanonicalNestedLinearMap.equivariant
+    {E : CMGaloisIntermediateField}
+    (M : CMFiniteCanonicalNestedLinearMap E)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t₁ t₂ t₃ t₄ : E.carrier ⊗[ℚ] E.carrier) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ (M.map t₁ t₂ t₃ t₄) =
+      M.map
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₁)
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₂)
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₃)
+        (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₄) := by
+  induction t₁ with
+  | tmul a₁ x₁ =>
+      induction t₂ with
+      | tmul a₂ x₂ =>
+          induction t₃ with
+          | tmul a₃ x₃ =>
+              induction t₄ with
+              | tmul a₄ x₄ =>
+                  simp only [
+                    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul,
+                    M.pure_formula]
+                  exact canonicalFinitePureAssembly_scalarConjugate
+                    E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+              | add x y hx hy =>
+                  simp [map_add, hx, hy]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- A finite canonical map with the pure formula gives the full original
+nested-linear assembly, including the previously independent Galois
+compatibility at the chosen transported factors. -/
+def CMFiniteCanonicalNestedLinearMap.toNestedAssembly
+    {E : CMGaloisIntermediateField}
+    (M : CMFiniteCanonicalNestedLinearMap E)
+    (factors : CMFiniteFourEmbeddingLineVectors E) :
+    CMFiniteNestedLinearAssembly factors where
+  map := M.map
+  conjugate_at_factors := fun σ =>
+    M.equivariant (σ.restrictNormal E.carrier)
+      (factors.vector 0) (factors.vector 1)
+      (factors.vector 2) (factors.vector 3)
+
 /-- Turn a nested-linear finite assembly into the existing fixed-field
 assembly, with its tensor and Galois-transport equation derived from the
 presentation. No geometric realization is manufactured here. -/
