@@ -463,6 +463,40 @@ theorem normalized_powerset_character_sum
   rw [sum_powerset_product_commute]
   rw [Finset.sum_div]
 
+/-- Transport a normalized ordinary Liouville character coefficient
+from a finite subtype subset to its natural-number shift values. -/
+theorem shiftSubsetValues_sourceMean
+    (M : ℕ) (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) :
+    liouvilleSubsetMean M H S =
+      (∑ m ∈ Finset.range M,
+        ∏ h ∈ shiftSubsetValues H S,
+          ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ)) /
+        (M : ℚ) := by
+  unfold liouvilleSubsetMean
+  congr 1
+  apply Finset.sum_congr rfl
+  intro m _
+  exact shiftSubsetValues_prod H S
+    (fun h => ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ))
+
+/-- The odd-affine residual coefficient has the same exact subtype
+to shift-value transport, without changing its odd affine argument. -/
+theorem shiftSubsetValues_residualMean
+    (M : ℕ) (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) :
+    oddResidualMean M H S =
+      (∑ t ∈ Finset.range M,
+        ∏ h ∈ shiftSubsetValues H S,
+          ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) /
+        (M : ℚ) := by
+  unfold oddResidualMean oddResidualProductTerm
+  congr 1
+  apply Finset.sum_congr rfl
+  intro t _
+  exact shiftSubsetValues_prod H S
+    (fun h => ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
