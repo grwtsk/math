@@ -67,6 +67,55 @@ structure AtomicSwitchTransitionSupplier
       AlgebraicTransitionWitness x
         (switchConjugatePair conj x g i.1 j.1)
 
+section NonzeroScalarRecovery
+
+variable {K T : Type*} [Field K] [AddCommGroup T] [Module K T]
+
+/-- A subspace membership statement can be recovered from any nonzero scalar
+multiple. This is the elementary final step in the manuscript's transition
+composition formula. -/
+theorem mem_of_nonzero_smul_mem
+    (Z : Submodule K T)
+    (a : K) (ha : a ≠ 0)
+    (t : T)
+    (hat : a • t ∈ Z) :
+    t ∈ Z := by
+  have h := Z.smul_mem a⁻¹ hat
+  simpa [smul_smul, ha] using h
+
+/-- Likewise a nonzero scalar multiple of a nonzero endpoint cannot vanish. -/
+theorem smul_ne_zero
+    (a : K) (ha : a ≠ 0)
+    (t : T) (ht : t ≠ 0) :
+    a • t ≠ 0 := by
+  intro h
+  have h' := congrArg (fun u : T => a⁻¹ • u) h
+  simpa [smul_smul, ha, ht] using h'
+
+/-- Abstract form of the manuscript's transition-composition identity:
+a geometrically produced algebraic class is a nonzero scalar multiple of the
+desired endpoint tensor. -/
+structure NonzeroScalarCompositionData
+    (Z : Submodule K T)
+    (endpoint : T) where
+  scalar : K
+  scalar_ne_zero : scalar ≠ 0
+  produced : T
+  produced_mem : produced ∈ Z
+  formula : produced = scalar • endpoint
+
+/-- Once the geometric formula and scalar nonvanishing are supplied, endpoint
+algebraicity is purely local linear algebra. -/
+theorem NonzeroScalarCompositionData.endpoint_mem
+    {Z : Submodule K T}
+    {endpoint : T}
+    (D : NonzeroScalarCompositionData Z endpoint) :
+    endpoint ∈ Z := by
+  apply mem_of_nonzero_smul_mem Z D.scalar D.scalar_ne_zero endpoint
+  rwa [← D.formula]
+
+end NonzeroScalarRecovery
+
 /-- Geometric composition of consecutive algebraic transitions.
 
 This abstracts the manuscript's pullback/cup-product/pushforward construction,
