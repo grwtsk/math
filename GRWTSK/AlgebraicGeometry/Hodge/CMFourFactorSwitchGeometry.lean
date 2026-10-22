@@ -1015,6 +1015,9 @@ structure CMFourFactorSupport
   E : CMGaloisIntermediateField
   localVector : Fin 4 → E.carrier ⊗[ℚ] E.carrier
   localCharacter : Fin 4 → E.carrier ≃ₐ[ℚ] E.carrier
+  globalCharacter : Fin 4 → AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers
+  globalCharacter_toAlgHom :
+    ∀ r, (globalCharacter r).toAlgHom = factors.character r
   local_mem :
     ∀ r,
       localVector r ∈
@@ -1023,7 +1026,7 @@ structure CMFourFactorSupport
   vector_inclusion :
     ∀ r, E.factorTensorInclusion (localVector r) = factors.vector r
   character_restriction :
-    ∀ r, factors.character r |>.restrictNormal E.carrier = localCharacter r
+    ∀ r, (globalCharacter r).restrictNormal E.carrier = localCharacter r
 
 /-- Scalar transport of a locally supported factor remains inside the same
 finite Galois CM carrier. -/
@@ -1081,6 +1084,12 @@ def SupportedCMFourEmbeddingLineVectors.scalarTransport
     localCharacter := fun r =>
       (σ.restrictNormal D.support.E.carrier) *
         D.support.localCharacter r
+    globalCharacter := fun r => σ * D.support.globalCharacter r
+    globalCharacter_toAlgHom := fun r => by
+      rw [CMEmbeddingTransport.FourEmbeddingLineVectors.scalarTransport_character]
+      rw [← D.support.globalCharacter_toAlgHom r]
+      ext x
+      rfl
     local_mem := fun r => by
       rw [← CMEmbeddingTransport.transportedCharacter_eq_mul
         (σ.restrictNormal D.support.E.carrier)
@@ -1093,10 +1102,8 @@ def SupportedCMFourEmbeddingLineVectors.scalarTransport
     vector_inclusion := fun r =>
       D.support.scalarTransportLocal_inclusion σ r
     character_restriction := fun r => by
-      rw [CMEmbeddingTransport.FourEmbeddingLineVectors.scalarTransport_character]
+      rw [AlgEquiv.restrictNormal_mul]
       rw [D.support.character_restriction r]
-      ext x
-      rfl
   }
 
 /-- The transported global vectors remain represented by local vectors in the
