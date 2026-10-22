@@ -42,6 +42,36 @@ structure QuarticRootEnumeration (p : K[X]) where
     (Multiset.cons (r 0) (Multiset.cons (r 1)
       (Multiset.cons (r 2) (Multiset.singleton (r 3)))))
 
+/-- A four-element root multiset can be enumerated by Fin 4. This is
+purely finite, and does not assume that its elements are distinct. -/
+theorem enumeration_of_root_card_four (p : K[X])
+    (hcard : (mappedQuartic p).roots.card = 4) :
+    Nonempty (QuarticRootEnumeration p) := by
+  let s := (mappedQuartic p).roots
+  have hl : s.toList.length = 4 := by
+    simpa [Multiset.length_toList] using hcard
+  cases hlist : s.toList with
+  | nil => simp [hlist] at hl
+  | cons a t =>
+    cases t with
+    | nil => simp [hlist] at hl
+    | cons b t =>
+      cases t with
+      | nil => simp [hlist] at hl
+      | cons c t =>
+        cases t with
+        | nil => simp [hlist] at hl
+        | cons d t =>
+          cases t with
+          | nil => simp [hlist] at hl
+          | cons e t =>
+            simp [hlist] at hl
+          have hs : s = ({a, b, c, d} : Multiset L) := by
+            rw [← Multiset.coe_toList s, hlist]
+            rfl
+          refine ⟨⟨![a, b, c, d], ?_⟩⟩
+          simpa [s, hs, Matrix.cons_val_zero, Matrix.cons_val_one]
+
 /-- Factorization of the actual quartic in the extension, with its leading
 coefficient retained. This does not require separability. -/
 theorem factorization_of_root_enumeration (p : K[X])
