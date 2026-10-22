@@ -74,18 +74,9 @@ The endpoint N is unchanged. -/
 theorem sum_shift_succ_eq_Icc (f : ℕ → ℤ) (N : ℕ) :
     (∑ n ∈ Finset.range N, f (n + 1)) =
       ∑ m ∈ Finset.Icc 1 N, f m := by
-  induction N with
-  | zero => simp
-  | succ N ih =>
-    have hset :
-        Finset.Icc 1 (N + 1) =
-          insert (N + 1) (Finset.Icc 1 N) :=
-      Finset.Icc_succ_right (by omega)
-    have hnot : N + 1 ∉ Finset.Icc 1 N := by
-      simp [Finset.mem_Icc]
-    rw [Finset.sum_range_succ, hset, Finset.sum_insert hnot]
-    rw [ih]
-    abel
+  have h := range_head_add_Icc f N
+  rw [Finset.sum_range_succ'] at h
+  exact add_left_cancel h
 
 /-- The local ordinary fixed positive-shift Liouville correlation is
 the EXACT same integer-valued Icc sum as affine forms (m,m+h). -/
@@ -165,7 +156,8 @@ theorem fixedShift_liouville_logSaving_of_affine
 normalized correlation stays exactly one in absolute value.
 This hostile control cannot be discharged by nonproportionality. -/
 theorem zeroShift_directAffine_obstruction (N : ℕ) (hN : 0 < N) :
-    (∑ n ∈ Finset.range N, fixedShiftTerm 0 n) = (N : ℤ) := by
-  exact zeroShift_prefix N
+    (0 : ℤ) < ∑ n ∈ Finset.range N, fixedShiftTerm 0 n := by
+  rw [zeroShift_prefix]
+  exact_mod_cast hN
 
 end GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge
