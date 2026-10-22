@@ -125,7 +125,7 @@ theorem cast_two_pow_sub_one_ratio (k : ℕ) :
   rw [div_pow]
   norm_num
   have hne : (2 : ℝ) ^ k ≠ 0 := by positivity
-  field_simp [hne]
+  field_simp [hne] <;> ring
 
 /-- The exact uniform success fraction is `1-2^{-k}`, independently of literal
 polarity. -/
