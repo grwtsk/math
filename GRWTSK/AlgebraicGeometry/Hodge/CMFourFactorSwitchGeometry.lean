@@ -1326,6 +1326,34 @@ theorem CMFiniteAssemblyMultilinearity.add_at
         D.assemble (Function.update f i y) :=
   M.add_slot i x y f
 
+/-- Rational homogeneity forces an assembly to vanish whenever an input
+slot vanishes. Unlike a constant-zero example, this applies to every
+proposed assembly satisfying the multilinearity certificate. -/
+theorem CMFiniteAssemblyMultilinearity.zero_at
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    (M : CMFiniteAssemblyMultilinearity D)
+    (i : Fin 4)
+    (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier) :
+    D.assemble (Function.update f i 0) = 0 := by
+  have h := M.smul_slot i (0 : ℚ) (0 : E.carrier ⊗[ℚ] E.carrier) f
+  simpa using h
+
+/-- Rational homogeneity, specialized to arbitrary input replacement. -/
+theorem CMFiniteAssemblyMultilinearity.smul_at
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    (M : CMFiniteAssemblyMultilinearity D)
+    (i : Fin 4) (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier)
+    (q : ℚ) (x : E.carrier ⊗[ℚ] E.carrier) :
+    D.assemble (Function.update f i (q • x)) =
+      q • D.assemble (Function.update f i x) :=
+  M.smul_slot i q x f
+
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
