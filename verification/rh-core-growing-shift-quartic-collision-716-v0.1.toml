@@ -1,0 +1,48 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-collision-716-v0.1"
+owner_repository = "grwtsk/math"
+issue = 716
+parent_issue = 713
+parent_pr = 714
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticCollision"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticCollision"
+
+[source_binding]
+stacked_parent_revision = "4918bbc0b1e7c48f6219b39492efb97687ae7874"
+candidate_branch = "research/rh-quartic-collision-716"
+theorem_source_commit = "02503590bbe02a68450cbfbdf63b1cea7b21017a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticCollision.lean"
+theorem_source_git_blob = "f52590f423f5544b2d9edff961facd21c4e5d832"
+
+[selected_increment]
+upper_triangle = "mertensTwoPointQuarticUpperTriangle"
+off_diagonal_symmetry = "mertensTwoPointQuarticOffDiagonal_eq_two_mul_upperTriangle"
+collision_upper = "mertensTwoPointQuarticCollisionUpper"
+collision_free_upper = "mertensTwoPointQuarticCollisionFreeUpper"
+upper_partition = "mertensTwoPointQuarticUpperTriangle_eq_collision_add_free"
+collision_cell = "mertensTwoPointQuarticCollisionCell"
+collision_degeneracy = "mertensTwoPointQuarticCell_eq_collisionCell"
+collision_middle_witness = "mertensQuarticCollision_not_middleDistinct"
+packet_collision = "coreGrowingShiftQuarticCollisionEnergy"
+packet_collision_free = "coreGrowingShiftQuarticCollisionFreeEnergy"
+packet_split = "coreGrowingShiftQuarticOffDiagonalEnergy_eq_collision_split"
+separated_compensation = "SubpolynomialCoreGrowingShiftQuarticCollisionSeparatedCompensation"
+compensation_equivalence = "subpolynomialCoreGrowingShiftQuarticCollisionSeparatedCompensation_iff_offDiagonal"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftQuarticCollisionSeparatedCompensation"
+adapter = "ToCoreGrowingShiftQuarticCollisionSeparatedAdapter"
+proof_classification = "EXACT_UPPER_TRIANGLE_SYMMETRY_AND_REPEATED_MIDDLE_COLLISION_SPLIT"
+next_obstruction = "prove separate all-scale controls for the collision line and collision-free four-form family"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+collision_line_estimate_proved = false
+collision_free_four_point_estimate_proved = false
+chowla_adapter_constructed = false
+riemann_hypothesis_proved = false
