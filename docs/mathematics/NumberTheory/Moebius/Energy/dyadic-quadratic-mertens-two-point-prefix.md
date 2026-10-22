@@ -182,8 +182,8 @@ Hence
 \]
 
 The exact signed packet may be considerably smaller because of cancellation
-inside and between shifts. The quadratic supplier is sufficient only; it is
-not equivalent to the packet criterion.
+inside and between shifts. The quadratic supplier is proved sufficient only;
+no converse from the packet criterion is proved.
 
 ## 6. All-scale supplier
 
