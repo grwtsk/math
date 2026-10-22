@@ -1,0 +1,35 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-one-depth-transpose-581-v0.1"
+owner_repository = "grwtsk/math"
+issue = 581
+parent_issue = 579
+parent_pr = 580
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalOneDepthTranspose"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalOneDepthTranspose"
+
+[source_binding]
+stacked_parent_revision = "e3e9ab7291624fc85dc1c4c5593dd79dd2a511ab"
+candidate_branch = "research/rh-one-depth-transpose-581"
+theorem_source_commit = "c6a8d1f1bf0e1d86d9efc2226ff83e8e3dc51a4a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalOneDepthTranspose.lean"
+theorem_source_git_blob = "16a58a8f58e791187a549953013fbc0ab3d521a7"
+
+[selected_increment]
+terminal_selector = "incompatibleTerminal_eq_lengthSelectorSum"
+interior_selector = "incompatibleLongInterior_eq_lengthSelectorSum"
+one_depth_identity = "coreLongDepthIncompatibleDyadicL1_eq_lengthwise"
+proof_classification = "EXACT_ONE_DEPTH_FINITE_LENGTH_REINDEXING"
+next_obstruction = "outer depth Fubini and construction of IncompatibleDepthTransposeAdapter"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+outer_depth_transpose_proved = false
+transpose_adapter_constructed = false
+riemann_hypothesis_proved = false
