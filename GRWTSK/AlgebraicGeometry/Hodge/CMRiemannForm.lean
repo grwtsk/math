@@ -70,6 +70,77 @@ theorem weilOperator_sq_neg
     weilOperator v (weilOperator v z) = -z :=
   weilOperator_sq v z
 
+/-- Label conjugation is an involutive equivalence of the finite Galois
+indexing set. -/
+def conjugationEquiv : G ≃ G where
+  toFun := (centralInvolution E).conj
+  invFun := (centralInvolution E).conj
+  left_inv := (centralInvolution E).conj_involutive
+  right_inv := (centralInvolution E).conj_involutive
+
+/-- Anti-invariance of xi becomes a sign change after moving to the conjugate
+embedding label. -/
+theorem embedding_xi_conjLabel
+    {v : OddSignRow E}
+    (X : SignControlledXi E v)
+    (σ : G) :
+    complexEmbeddingAt E ((centralInvolution E).conj σ) X.xi =
+      - complexEmbeddingAt E σ X.xi := by
+  simp [complexEmbeddingAt, centralInvolution_conj_apply,
+    AlgEquiv.mul_apply, galoisComplexConj_commute_apply,
+    X.antiInvariant]
+
+/-- The complexified rational trace pairing is genuinely skew-symmetric on the
+entire coordinate space. -/
+theorem complexifiedTracePairing_skew
+    {v : OddSignRow E}
+    (X : SignControlledXi E v)
+    (z w : G → ℂ) :
+    X.complexifiedTracePairing w z =
+      - X.complexifiedTracePairing z w := by
+  classical
+  unfold SignControlledXi.complexifiedTracePairing
+  let f : G → ℂ := fun σ =>
+    complexEmbeddingAt E σ X.xi * w σ *
+      z ((centralInvolution E).conj σ)
+  calc
+    (∑ σ, f σ) =
+        ∑ σ, f (conjugationEquiv E σ) := by
+          exact (Equiv.sum_comp (conjugationEquiv E) f).symm
+    _ = ∑ σ,
+        -(complexEmbeddingAt E σ X.xi * z σ *
+          w ((centralInvolution E).conj σ)) := by
+      apply Finset.sum_congr rfl
+      intro σ _
+      simp [f, conjugationEquiv, embedding_xi_conjLabel E X,
+        (centralInvolution E).conj_involutive]
+      ring
+    _ = - ∑ σ,
+        complexEmbeddingAt E σ X.xi * z σ *
+          w ((centralInvolution E).conj σ) := by
+      rw [Finset.sum_neg_distrib]
+
+/-- In characteristic zero, skew-symmetry makes the complexified pairing
+alternating globally. -/
+theorem complexifiedTracePairing_self
+    {v : OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : G → ℂ) :
+    X.complexifiedTracePairing z z = 0 := by
+  have h := complexifiedTracePairing_skew E X z z
+  exact CharZero.eq_neg_self_iff.mp h.symm
+
+/-- The real-valued Riemann form is therefore alternating on the entire
+coordinate space, hence in particular on its real fixed locus. -/
+theorem riemannForm_self
+    {v : OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : G → ℂ) :
+    riemannForm E X z z = 0 := by
+  unfold riemannForm
+  rw [complexifiedTracePairing_self E X z]
+  rfl
+
 /-- The complexified trace pairing is invariant when the Weil operator is
 applied to both arguments. -/
 theorem complexifiedTracePairing_weil_invariant
@@ -200,6 +271,7 @@ structure PreRiemannBilinearData
   J_sq : ∀ z, J (J z) = -z
   J_preserves_real : ∀ {z}, real z → real (J z)
   form : (G → ℂ) → (G → ℂ) → ℝ
+  alternating : ∀ z, form z z = 0
   J_invariant : ∀ z w, form (J z) (J w) = form z w
   positive : ∀ {z}, real z → z ≠ 0 → 0 < form (J z) z
   lattice : (Fin n → ℤ) → (G → ℂ)
@@ -224,6 +296,7 @@ noncomputable def canonicalPreRiemannBilinearData
   J_sq := weilOperator_sq_neg E
   J_preserves_real := fun {z} hz => weilOperator_preserves_real E z hz
   form := riemannForm E X
+  alternating := riemannForm_self E X
   J_invariant := riemannForm_weil_invariant E X
   positive := fun {z} hzreal hz =>
     riemannForm_weil_self_pos E X hzreal hz
