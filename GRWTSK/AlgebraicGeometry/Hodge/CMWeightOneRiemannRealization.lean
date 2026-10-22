@@ -70,6 +70,13 @@ structure WeightOneCMRealization
   [H1C_moduleC : Module ℂ H1C]
   /-- Comparison from actual complexified H1 to the canonical CM coordinate model. -/
   h1ComplexCoordinates : H1C ≃ₗ[ℂ] (G → ℂ)
+  /-- Rational H1 includes into actual complexified H1. -/
+  h1ToComplex : H1 →ₗ[ℚ] H1C
+  /-- The rational inclusion agrees with the rational CM-field coordinates. -/
+  h1ToComplex_coordinates :
+    ∀ h σ,
+      h1ComplexCoordinates (h1ToComplex h) σ =
+        CMArchimedeanPositivity.fieldCoordinates E (h1Equiv h) σ
   /-- Complexified coordinate comparison carrying the Hodge decomposition. -/
   complexCoordinates : (G → ℂ) ≃ₗ[ℂ] (G → ℂ)
   /-- The supplied Hodge operator agrees with the locally constructed one
@@ -286,6 +293,67 @@ theorem canonicalTensorComplexCoordinate_eq_zero_of_ne
   simp [canonicalTensorComplexCoordinate,
     CMGaloisEvaluation.evaluationEquiv_apply, jσ, hz]
 
+/-- Bilinear map sending a coefficient a and CM vector x to the actual
+complexified H1 vector obtained by scalar multiplication after identifying x
+with rational H1. -/
+def WeightOneCMRealization.tensorBilinearToActual
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    E →ₗ[ℚ] E →ₗ[ℚ] R.H1C :=
+  LinearMap.mk₂ ℚ
+    (fun a x =>
+      (CMArchimedeanPositivity.baseComplexEmbedding E a) •
+        R.h1ToComplex (R.h1Equiv.symm x))
+    (by
+      intro a b x
+      simp [add_smul])
+    (by
+      intro q a x
+      simp [Algebra.smul_def, mul_smul])
+    (by
+      intro a x y
+      simp [smul_add])
+    (by
+      intro q a x
+      simp [Algebra.smul_def, smul_smul, mul_assoc, mul_comm, mul_left_comm])
+
+/-- Canonical Q-linear map from E tensor_Q E into actual complexified H1,
+constructed by the universal property of the tensor product. -/
+def WeightOneCMRealization.canonicalTensorToActual
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    E ⊗[ℚ] E →ₗ[ℚ] R.H1C :=
+  TensorProduct.lift R.tensorBilinearToActual
+
+@[simp]
+theorem WeightOneCMRealization.canonicalTensorToActual_tmul
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (a x : E) :
+    R.canonicalTensorToActual (a ⊗ₜ[ℚ] x) =
+      (CMArchimedeanPositivity.baseComplexEmbedding E a) •
+        R.h1ToComplex (R.h1Equiv.symm x) := by
+  simp [WeightOneCMRealization.canonicalTensorToActual,
+    WeightOneCMRealization.tensorBilinearToActual]
+
+/-- The canonical tensor map satisfies the exact pure-tensor coordinate formula
+required by PureTensorActualH1Comparison. -/
+theorem WeightOneCMRealization.canonicalTensorToActual_coordinates_tmul
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (a x : E)
+    (σ : E ≃ₐ[ℚ] E) :
+    R.h1ComplexCoordinates
+        (R.canonicalTensorToActual (a ⊗ₜ[ℚ] x)) σ =
+      R.pureTensorCoordinate a x σ := by
+  rw [R.canonicalTensorToActual_tmul]
+  simp [WeightOneCMRealization.pureTensorCoordinate,
+    R.h1ToComplex_coordinates, CMArchimedeanPositivity.fieldCoordinates]
+
 /-- Bilinear coordinate formula that a tensor-to-H1 comparison is expected
 to preserve on pure tensors. -/
 def WeightOneCMRealization.pureTensorCoordinate
@@ -296,6 +364,17 @@ def WeightOneCMRealization.pureTensorCoordinate
     (σ : E ≃ₐ[ℚ] E) : ℂ :=
   CMArchimedeanPositivity.baseComplexEmbedding E a *
     CMArchimedeanPositivity.fieldCoordinates E x σ
+
+/-- The realization's rational inclusion data canonically constructs the
+pure-tensor comparison; no additional tensor-level comparison supplier is
+needed. -/
+def WeightOneCMRealization.pureTensorActualH1Comparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) :
+    PureTensorActualH1Comparison E R where
+  toActual := R.canonicalTensorToActual
+  pureTensor_coordinates := R.canonicalTensorToActual_coordinates_tmul
 
 /-- Pure-tensor compatibility version of the canonical tensor to actual H1
 comparison.
