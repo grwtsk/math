@@ -892,6 +892,68 @@ composition premise.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4n. Middle-pairing nonvanishing after positivity identification
+
+The scalar obstruction in the transition-composition formula is now split one
+step further.
+
+The local source introduces
+
+~~~text
+PositiveConjugatePairing
+MiddlePairingNonvanishingData
+~~~
+
+and proves
+
+~~~text
+PositiveConjugatePairing.pairing_conjugate_ne_zero
+PositiveConjugatePairing.pairing_scaled_conjugate_ne_zero
+MiddlePairingNonvanishingData.pairing_ne_zero
+product_middlePairing_ne_zero
+~~~
+
+The abstract implication is:
+
+\[
+\langle \beta,\overline{\beta}\rangle
+=
+E(\beta)>0,
+\qquad
+\gamma=c\,\overline{\beta},
+\quad c\neq0
+\]
+
+implies
+
+\[
+q=\langle\beta,\gamma\rangle\neq0.
+\]
+
+A finite product of such \(q_i\)'s is then nonzero by ordinary field algebra.
+
+This does **not** identify the manuscript's geometric pairing
+
+\[
+q_i=\int_{B(b_i)}
+\beta_i\wedge\gamma_i\wedge\ell_i^{s-1}
+\]
+
+with the earlier local CM trace polarization.  That would require an actual
+ample-class Hodge--Riemann comparison theorem at the cohomological level, which
+the current repository does not have.
+
+Accordingly, the remaining \(q_i\)-boundary is now only geometric:
+
+1. identify \(\gamma_i\) as a nonzero scalar multiple of the conjugate partner
+   of \(\beta_i\);
+2. identify the ample-class integral pairing with a positive conjugate pairing.
+
+Once those two identifications are supplied, \(q_i\neq0\), the product
+\(\prod_i q_i\neq0\), and the scalar-cancellation endpoint are all local.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
