@@ -490,6 +490,149 @@ theorem switchConjugatePair_preserves_other_column
     ∀ r, switchConjugatePair conj x g i j r h = x r h :=
   fun r => switchConjugatePair_eq_of_ne conj x g h i j hhg hhcg
 
+
+section GlobalSwitchConnectivity
+
+variable {G : Type*} [Fintype G] [DecidableEq G]
+  (conj : G → G)
+  (hconj : Function.Involutive conj)
+
+/-- Oddness makes mismatch counts identical on conjugate columns. -/
+theorem columnMismatchCount_conj_eq
+    (x y : I → G → ℤ)
+    (hx : IsOddMatrix conj x)
+    (hy : IsOddMatrix conj y)
+    (g : G) :
+    columnMismatchCount (fun r => x r (conj g)) (fun r => y r (conj g)) =
+      columnMismatchCount (fun r => x r g) (fun r => y r g) := by
+  unfold columnMismatchCount
+  apply Finset.sum_congr rfl
+  intro r _
+  simp [rowMismatch, hx r g, hy r g]
+
+/-- Total number of incorrect matrix entries. -/
+def matrixMismatchCount
+    (x y : I → G → ℤ) : ℕ :=
+  ∑ g, columnMismatchCount (fun r => x r g) (fun r => y r g)
+
+/-- One valid conjugate-paired switch strictly decreases the global mismatch
+count. This removes any need to choose representatives of conjugate columns. -/
+theorem matrixMismatchCount_switchConjugatePair_lt
+    (x y : I → G → ℤ)
+    (hx : IsOddMatrix conj x)
+    (hy : IsOddMatrix conj y)
+    (g : G) (hg : g ≠ conj g)
+    (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => y r g)) :
+    matrixMismatchCount
+        (switchConjugatePair conj x g i.1 j.1) y <
+      matrixMismatchCount x y := by
+  let x' := switchConjugatePair conj x g i.1 j.1
+  have hx' : IsOddMatrix conj x' :=
+    switchConjugatePair_odd conj hconj x hx g hg i.1 j.1
+  have hsel :
+      columnMismatchCount (fun r => x' r g) (fun r => y r g) <
+        columnMismatchCount (fun r => x r g) (fun r => y r g) :=
+    columnMismatchCount_switchConjugatePair_lt conj x y g i j
+  unfold matrixMismatchCount
+  apply Finset.sum_lt_sum
+  · intro h _
+    by_cases hhg : h = g
+    · subst h
+      exact hsel.le
+    · by_cases hhcg : h = conj g
+      · subst h
+        rw [columnMismatchCount_conj_eq conj hx' hy g,
+          columnMismatchCount_conj_eq conj hx hy g]
+        exact hsel.le
+      ·
+        rw [columnMismatchCount_switchConjugatePair_eq_of_ne
+          conj x y g h i.1 j.1 hhg hhcg]
+  · exact ⟨g, Finset.mem_univ _, hsel⟩
+
+/-- If an odd sign matrix has at least one row, conjugation has no fixed
+column. This is forced by x(cg) = -x(g) and x(g) in {+1,-1}. -/
+theorem conj_ne_self_of_row
+    (x : I → G → ℤ)
+    (hxsign : ∀ r g, IsSign (x r g))
+    (hxodd : IsOddMatrix conj x)
+    (r : I) (g : G) :
+    g ≠ conj g := by
+  intro hfix
+  have ho := hxodd r g
+  have heq : x r g = -x r g := by
+    simpa [← hfix] using ho
+  rcases hxsign r g with hp | hn <;> omega
+
+/-- Reachability by finitely many conjugate-paired switches, allowing the
+selected column to vary from step to step. -/
+inductive PairedMatrixReach
+    (conj : G → G) (y : I → G → ℤ) :
+    (I → G → ℤ) → (I → G → ℤ) → Prop
+  | refl (x) : PairedMatrixReach conj y x x
+  | step {x z}
+      (g : G)
+      (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+      (j : NegPosMismatch (fun r => x r g) (fun r => y r g))
+      (hrest :
+        PairedMatrixReach conj y
+          (switchConjugatePair conj x g i.1 j.1) z) :
+      PairedMatrixReach conj y x z
+
+/-- Full finite switch connectivity.
+
+Two finite odd +/-1 sign matrices with identical column sums are connected by
+a finite sequence of the manuscript's elementary conjugate-paired two-row
+switches. The proof is strong induction on the total number of mismatching
+matrix entries. -/
+theorem pairedMatrixReach_of_equal_column_sums
+    (x y : I → G → ℤ)
+    (hxsign : ∀ r g, IsSign (x r g))
+    (hysign : ∀ r g, IsSign (y r g))
+    (hxodd : IsOddMatrix conj x)
+    (hyodd : IsOddMatrix conj y)
+    (hsum : ∀ g, ∑ r, x r g = ∑ r, y r g) :
+    PairedMatrixReach conj y x y := by
+  let measure : (I → G → ℤ) → ℕ := fun u => matrixMismatchCount u y
+  induction hm : measure x using Nat.strong_induction_on generalizing x with
+  | h n ih =>
+      by_cases hxy : x = y
+      · subst y
+        exact PairedMatrixReach.refl x
+      ·
+        obtain ⟨r, hr⟩ := Function.ne_iff.mp hxy
+        obtain ⟨g, hrg⟩ := Function.ne_iff.mp hr
+        have hcol :
+            (fun q => x q g) ≠ (fun q => y q g) := by
+          intro heq
+          exact hrg (DFunLike.congr_fun heq r)
+        obtain ⟨⟨i, j⟩⟩ :=
+          exists_opposite_mismatch_pair
+            (fun q => x q g) (fun q => y q g)
+            (fun q => hxsign q g) (fun q => hysign q g)
+            (hsum g) hcol
+        have hg : g ≠ conj g :=
+          conj_ne_self_of_row conj x hxsign hxodd r g
+        let x' := switchConjugatePair conj x g i.1 j.1
+        have hx'odd : IsOddMatrix conj x' :=
+          switchConjugatePair_odd conj hconj x hxodd g hg i.1 j.1
+        have hx'sign : ∀ q k, IsSign (x' q k) :=
+          switchConjugatePair_isSign conj x hxsign g i.1 j.1
+        have hx'sum : ∀ k, ∑ q, x' q k = ∑ q, y q k := by
+          intro k
+          rw [sum_switchConjugatePair conj x g i.1 j.1 k, hsum k]
+        have hlt : measure x' < measure x := by
+          exact matrixMismatchCount_switchConjugatePair_lt
+            conj hconj x y hxodd hyodd g hg i j
+        have hlt' : measure x' < n := by
+          simpa [hm] using hlt
+        have hrest :
+            PairedMatrixReach conj y x' y :=
+          ih (measure x') hlt' x' rfl hx'sign hx'odd hx'sum
+        exact PairedMatrixReach.step g i j hrest
+
+end GlobalSwitchConnectivity
+
 end ConjugatePairedSwitch
 
 end
