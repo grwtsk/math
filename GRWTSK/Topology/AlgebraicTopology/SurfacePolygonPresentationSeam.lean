@@ -43,7 +43,6 @@ open GRWTSK.GroupTheory.Words.PrimitiveConjugacy
 open GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive
 open GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
-open GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness
 
 /-- Exact oriented edge source: a fixed generator ID and a Boolean
 sign; true means the forward generator and false its inverse.
@@ -242,7 +241,8 @@ on the ACTUAL FundamentalGroup type, not on the abstract presented
 group, given the exact source-preserving equivalence. -/
 def MarkedFundamentalGroupAdapter.toHomologyInvisibleWitness
     (m : MarkedFundamentalGroupAdapter X x k) :
-    HomologyInvisiblePrimitiveWitness (FundamentalGroup X x) where
+    GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.HomologyInvisiblePrimitiveWitness
+      (FundamentalGroup X x) where
   element := m.orientedFirstHandle
   primitive := m.loop_primitive
   invisible := m.loop_abelianization_eq_one
