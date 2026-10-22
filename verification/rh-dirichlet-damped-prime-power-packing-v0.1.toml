@@ -1,0 +1,86 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dirichlet-damped-prime-power-packing-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+prime_coordinate_issue = 126
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "1bfe9d1ca39f86da6ecad213e0ebe0bf94a98aef"
+parent_tree = "322ede77f44c0ce71faa7f0012f5094885a4a363"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / DIRICHLET_DAMPED_PACKING_DECAY_SOURCE_PROVED"
+
+[raw_provenance]
+coordinate = "(log q, Lambda(q))"
+selector = "canonical increasing natural prime powers"
+coefficient = "pinned von Mangoldt"
+
+[analytic_candidate]
+dirichlet_abscissa = 2
+coordinate = "(log q / q^2, Lambda(q) / q^2)"
+source_reason = "same exact von Mangoldt Dirichlet-series channel at a point inside absolute convergence"
+uses_pnt = false
+uses_prime_gap_theorem = false
+uses_rh = false
+
+[proved_source_chain]
+canonical_values_strict = true
+canonical_values_tend_to_infinity = true
+horizontal_coordinate_tends_to_zero = true
+vertical_coefficient_nonnegative = true
+vertical_coefficient_le_horizontal = true
+vertical_coordinate_tends_to_zero = true
+oriented_volume_tends_to_zero = true
+gram_volume_tends_to_zero = true
+stage_nonnegative = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DirichletDampedPrimePowerPacking"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DirichletDampedPrimePowerPacking.lean"
+blob = "d31c286e7b189095c9f98c5557fa8c12a7fdb163"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DirichletDampedPrimePowerPackingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DirichletDampedPrimePowerPackingControls.lean"
+blob = "930bbce1ad852cb90fa304e4fcd643eb3dd6ab20"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "33ff91e29dd6d6b0c0647537b34ea6afe472024b"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dirichlet-damped-prime-power-packing.md"
+blob = "9df8c44d1dfcdb902131cb59eb75d7b26fc11a99"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+DIRICHLET_DAMPED_PACKING_DECAY_SOURCE_PROVED = true
+GLOBAL_EXPLICIT_FORMULA_ASSEMBLY_PROVED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "derive the global contour/test-function explicit-formula identity",
+  "determine the correct source-preserving test-function generalization of the s=2 damping if needed",
+  "prove the signed-quartic comparison for the damped positive packing",
+  "prove the comparison coefficient tends to a positive limit",
+  "prove the complete named residual tends to zero"
+]
+
+[nonclaims]
+items = [
+  "source-level decay proof is not yet an elaboration/kernel receipt",
+  "s=2 damping alone is not the global explicit formula",
+  "no signed-quartic comparison theorem",
+  "no residual-decay theorem",
+  "no unconditional RH proof"
+]
