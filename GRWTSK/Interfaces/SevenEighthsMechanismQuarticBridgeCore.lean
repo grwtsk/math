@@ -115,6 +115,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerFactorFou
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerCyclicDistanceFibersControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerCyclicDistanceSampleControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeFejerFiniteDistanceRegroupingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaGradedFourierNoDescentControls
 
 set_option autoImplicit false
 
