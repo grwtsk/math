@@ -1,0 +1,119 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-cross-congruence-l1-559-v0.1"
+owner_repository = "grwtsk/math"
+issue = 559
+parent_issue = 553
+parent_pr = 555
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CONGRUENCE_L1_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionCongruenceL1"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionCongruenceL1"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-cross-congruence-fibres-553-20261021"
+stacked_parent_revision = "dbc3b7a29d2549eb027a3acc86f75efe38639271"
+stacked_parent_tree = "88ff9e31287736118ce817839b3f3cfb3e015043"
+candidate_branch = "research/rh-cross-congruence-l1-559-20261021"
+theorem_source_commit = "c31f8ec044c1fe6e3923883b3051501fe0fa06e1"
+theorem_source_tree = "514d2d453b687116e7382808f5cd6dc4cd32b1f6"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionCongruenceL1.lean"
+theorem_source_git_blob = "c3b1fd55819ba95b5bdc65469fb4d3b07ff8525c"
+
+[selected_increment]
+mobius_bound = "abs_moebiusReal_le_one"
+endpoint_l1_mass = "mertensEndpointCrossCongruenceL1Mass"
+endpoint_majorization = "mertensEndpointCrossCollisionCongruenceFibreEnergy_le_l1"
+weight_positivity = "reciprocalEndpointDrop_nonneg"
+weighted_majorant = "weightedMertensEndpointCrossCongruenceL1Majorant"
+weighted_majorization = "weightedMertensEndpointCrossCollisionEnergy_le_congruenceL1Majorant"
+all_scale_supplier = "SubpolynomialWeightedMertensEndpointCrossCongruenceL1"
+supplier_transport = "subpolynomialWeightedMertensEndpointCongruenceCrossCollision_of_l1"
+proof_classification = "FINITE_TRIANGLE_INEQUALITY_AFTER_EXACT_MODULUS_FIBRES"
+
+[absolute_value_boundary]
+inside_each_congruence_fibre = false
+across_modulus_fibres = true
+termwise_absolute_value = false
+preserves_internal_signed_cancellation = true
+preserves_square_modulus = true
+preserves_endpoint_prefix_base_support = true
+
+[majorant]
+endpoint_formula = "2*sum_(1<=d<b)|CrossCongruenceFibre(b,d)|"
+weighted_formula = "8*sum_(2^j<=b<2^(j+1))(1/b-1/(b+1))*L1(b)"
+factor_eight = "4 inherited endpoint factor * 2 collision orientations"
+nonnegative = true
+
+[all_scale_supplier]
+name = "SubpolynomialWeightedMertensEndpointCrossCongruenceL1"
+formula = "forall delta>0 exists C>=0 forall j, CongruenceL1Majorant(j)<=C*(2^j)^delta"
+supplier_constructed = false
+implies_signed_congruence_supplier = true
+implies_squarefree_midpoint_supplier = true
+
+[analytic_frontier]
+target = "weighted L1 sum of exact square-modulus two-point Mobius congruence fibres"
+growing_shift = true
+growing_square_modulus = true
+shift_dependent_residue = true
+absolute_sum_across_moduli = true
+fixed_shift_unrestricted_chowla_sufficient = false
+termwise_absolute_control_required = false
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+congruence_l1_supplier_proved = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionCongruenceL1"
+authored_declaration_count = 11
+definition_count = 3
+theorem_script_count = 8
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionCongruenceFibres.lean"
+git_blob = "0354a5ff6e9d1ac80ccc0f224b91dc268d8c0e0c"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_555"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+declaration = "ArithmeticFunction.abs_moebius_le_one"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Algebra.Order.BigOperators.Group.Finset"
+declaration = "Finset.abs_sum_le_sum_abs"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+absolute_value_inside_fibre_rejected = true
+termwise_absolute_sum_rejected = true
+square_modulus_preserved = true
+mu_d_bound_only_used_after_exact_fibre = true
+reciprocal_weight_sign_proved = true
+fixed_shift_result_not_promoted_to_uniform_family = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+congruence_l1_estimate = true
+comparison_to_fixed_form_and_AP_elliott_chowla = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+congruence_l1_bound_proved = false
+binary_chowla_adapter_proved = false
+elliott_adapter_proved = false
+riemann_hypothesis_proved = false
