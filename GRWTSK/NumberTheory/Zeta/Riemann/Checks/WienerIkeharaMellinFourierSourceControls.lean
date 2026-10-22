@@ -14,7 +14,7 @@ set_option autoImplicit false
 noncomputable section
 
 open Real Filter FourierTransform SchwartzMap
-open scoped FourierTransform
+open scoped FourierTransform Topology ContDiff SchwartzMap
 
 namespace GRWTSK.RiemannHypothesis.Checks
 
@@ -77,7 +77,8 @@ theorem mellinFourier_source_two_pi_frequency
         Real.log (Real.exp (2 * Real.pi)) = 1 := by
     rw [Real.log_exp]
     field_simp [htwoPi]
-  simpa [hangle] using h
+  rw [hangle] at h
+  exact h
 
 /-- The source has no pre-assumed smooth Wiener limit or PNT premise.
 The remaining analytic theorem is a separate Fourier/Schwartz
