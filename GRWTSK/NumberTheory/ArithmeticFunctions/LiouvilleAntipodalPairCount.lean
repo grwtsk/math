@@ -145,6 +145,35 @@ theorem sum_powerset_empty_and_nonempty
   rw [← Finset.sum_erase_add he]
   ring
 
+/-- A finite double sum of separated source/residual functions factors
+into the product of the two individual sums. This is pure finite
+commutative-ring algebra, before any division by the sample size. -/
+theorem sum_root_pair_factor
+    (M : ℕ) (a b : ℕ → ℚ) :
+    (∑ p ∈ (Finset.range M).product (Finset.range M),
+       a p.1 * b p.2) =
+      (∑ m ∈ Finset.range M, a m) *
+        (∑ t ∈ Finset.range M, b t) := by
+  rw [Finset.sum_product]
+  simp_rw [Finset.mul_sum]
+  rw [Finset.sum_mul]
+  apply Finset.sum_congr rfl
+  intro m _
+  rw [Finset.mul_sum]
+
+/-- Normalization of a separated pair mean is the product of the
+two normalized means. The positive-sample hypothesis prevents
+interpreting the zero denominator as a probability. -/
+theorem normalized_root_pair_factor
+    (M : ℕ) (a b : ℕ → ℚ) (hM : 0 < M) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+       a p.1 * b p.2) / (M : ℚ) ^ 2) =
+      ((∑ m ∈ Finset.range M, a m) / (M : ℚ)) *
+        ((∑ t ∈ Finset.range M, b t) / (M : ℚ)) := by
+  rw [sum_root_pair_factor]
+  have hM0 : (M : ℚ) ≠ 0 := by exact_mod_cast Nat.ne_of_gt hM
+  field_simp [hM0]
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
