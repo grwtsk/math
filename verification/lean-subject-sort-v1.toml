@@ -23,6 +23,33 @@ per_file_command = ["lake", "env", "lean", "{path}"]
 command = ["lake", "build", "GRWTSK"]
 timeout_seconds = 7200
 
+# Reviewed source-bound exceptions retain exact maintained occurrences for
+# human review.  Digest drift invalidates the exception before classification.
+[[review_overrides]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/OutputFlipSignCorrelation.lean"
+source_sha256 = "2bcf657ea63d5e20d3f970bae9bee20a18bb8585e984a0e8f3ad535089e17e7c"
+reason = "expectation and probability content is not justified as algebra by a generic import"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
+source_sha256 = "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+reason = "current owner declarations and audits bind this exact module occurrence"
+
+[[review_overrides]]
+path = "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean"
+source_sha256 = "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05"
+reason = "current owner and result contracts bind this exact module occurrence"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
+reason = "mixed whole-library proof audit has no dominant whole-file subject"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
+reason = "mixed whole-library proof audit has no dominant whole-file subject"
+
 [[subject_profiles]]
 key = "algebra"
 directory = "Algebra"
