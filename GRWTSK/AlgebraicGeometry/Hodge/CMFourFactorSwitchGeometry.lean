@@ -87,10 +87,8 @@ theorem mem_of_nonzero_smul_mem
 theorem smul_ne_zero
     (a : K) (ha : a ≠ 0)
     (t : T) (ht : t ≠ 0) :
-    a • t ≠ 0 := by
-  intro h
-  have h' := congrArg (fun u : T => a⁻¹ • u) h
-  simpa [smul_smul, ha, ht] using h'
+    a • t ≠ 0 :=
+  _root_.smul_ne_zero ha ht
 
 /-- Abstract form of the manuscript's transition-composition identity:
 a geometrically produced algebraic class is a nonzero scalar multiple of the
