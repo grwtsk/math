@@ -11,6 +11,7 @@ lake_manifest_file = "lake-manifest.json"
 [scope]
 kind = "isolated-one-module-arithmetic-leaf"
 source = "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleDyadicAffineBridge.lean"
+mathematical_note = "docs/reviews/chowla-sofic-liouville-dyadic-affine-630.md"
 module = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleDyadicAffineBridge"
 requires_clean_checkout = true
 requires_exact_selected_source = true
