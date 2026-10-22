@@ -324,3 +324,32 @@ nonclaims = [
   "no scalar descent",
   "no algebraicity"
 ]
+
+
+[[local_target]]
+name = "CM central-involution sign profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisIndex.cmFourBalance_twoTwoSignProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["group with selected central involution c", "odd sign rows", "four-label balance"]
+
+[[local_target]]
+name = "character-eigenline CM four-factor bidegree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.characterEigenlines_fourFactor_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["commutative algebra actions", "one-dimensional character eigenspaces", "sign-compatible type labels", "four-label balance"]
+nonclaims = ["no complete eigenspace decomposition required by this theorem", "no scalar-conjugation transport", "no H^1 realization", "no algebraicity"]
+
+[[local_target]]
+name = "complete CM character-eigenspace decomposition dimension"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.CharacterEigenspaceDecomposition.finrank_eq_card"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "Galois CM eigenspace dimension equals field degree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.CharacterEigenspaceDecomposition.finrank_eq_fieldDegree"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["finite Galois extension E/k", "complete internal one-dimensional eigenspace decomposition indexed by Gal(E/k)"]
