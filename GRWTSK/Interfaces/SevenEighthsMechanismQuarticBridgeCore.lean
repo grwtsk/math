@@ -19,6 +19,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPackingAndResidueHeadCon
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DirichletDampedPrimePowerPackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SourceSensitivePackingNoGoControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftedVonMangoldtPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftSymmetricPackingControls
 
 set_option autoImplicit false
 
