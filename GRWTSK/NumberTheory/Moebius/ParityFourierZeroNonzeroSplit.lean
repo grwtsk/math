@@ -217,6 +217,32 @@ theorem paritySquarefreeDiagonal_le_endpoint
           _ ≤ b := by
             simp [Finset.card_Icc]
 
+/-- Ordinary real Mertens prefix on positive integers up to the endpoint. -/
+def ordinaryMertensPrefix (b : ℕ) : ℝ :=
+  ∑ u ∈ Finset.Icc 1 b, moebiusReal u
+
+/-- The ordinary Mertens prefix is the sum of the even- and odd-parity
+prefixes. -/
+theorem ordinaryMertensPrefix_eq_even_add_odd
+    (b : ℕ) :
+    ordinaryMertensPrefix b =
+      parityMertensPrefix b 0 + parityMertensPrefix b 1 := by
+  classical
+  unfold ordinaryMertensPrefix parityMertensPrefix endpointParitySet
+  have hcover :
+      (Finset.Icc 1 b).filter (fun u => u % 2 = 0) ∪
+          (Finset.Icc 1 b).filter (fun u => u % 2 = 1) =
+        Finset.Icc 1 b := by
+    ext u
+    simp
+    omega
+  have hdisj :
+      Disjoint
+        ((Finset.Icc 1 b).filter (fun u => u % 2 = 0))
+        ((Finset.Icc 1 b).filter (fun u => u % 2 = 1)) := by
+    simp [Finset.disjoint_left]
+  rw [← Finset.sum_union hdisj, hcover]
+
 /-- RH-scale dyadic square-energy hypothesis for parity-restricted Mertens
 prefixes.  This is a conditional supplier, not an unconditional theorem. -/
 def DyadicParityMertensSquareRootEnergy : Prop :=
@@ -227,6 +253,31 @@ def DyadicParityMertensSquareRootEnergy : Prop :=
       parityMertensPrefix b r ^ 2 ≤
         C * (((2 ^ j : ℕ) : ℝ)) *
           (((2 ^ j : ℕ) : ℝ) ^ δ)
+
+/-- Dyadic square-root-energy form of the ordinary Mertens obstruction. -/
+def DyadicOrdinaryMertensSquareRootEnergy : Prop :=
+  ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧
+    ∀ j b : ℕ,
+      b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) →
+      ordinaryMertensPrefix b ^ 2 ≤
+        C * (((2 ^ j : ℕ) : ℝ)) *
+          (((2 ^ j : ℕ) : ℝ) ^ δ)
+
+/-- Parity square-root control implies ordinary Mertens square-root control.
+
+This is one-way only; no converse is inferred. -/
+theorem ordinaryMertensSquareRootEnergy_of_parity
+    (hParity : DyadicParityMertensSquareRootEnergy) :
+    DyadicOrdinaryMertensSquareRootEnergy := by
+  intro δ hδ
+  obtain ⟨C, hC, hscale⟩ := hParity δ hδ
+  refine ⟨4 * C, mul_nonneg (by norm_num) hC, ?_⟩
+  intro j b hb
+  rw [ordinaryMertensPrefix_eq_even_add_odd]
+  have h0 := hscale j b 0 hb (by norm_num)
+  have h1 := hscale j b 1 hb (by norm_num)
+  nlinarith [sq_nonneg
+    (parityMertensPrefix b 0 - parityMertensPrefix b 1)]
 
 /-- All-scale zero-mode natural-scale budget. -/
 def DyadicNaturalScaleZeroModeParityFourierBudget : Prop :=
