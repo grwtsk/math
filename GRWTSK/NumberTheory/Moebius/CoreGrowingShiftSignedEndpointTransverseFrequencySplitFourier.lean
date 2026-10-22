@@ -9,6 +9,7 @@ Issue: #915. Parent: draft PR #908 at
 `0a9c48648261477ab9d25cac4565a4424b8183d1`.
 -/
 import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointClippingShearFourier
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
 
 set_option autoImplicit false
@@ -17,39 +18,6 @@ open scoped BigOperators
 open AddChar
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
-
-/-- Circular distance of a doubled transverse frequency from zero. -/
-def coreGrowingShiftEndpointTransverseCircularDistance
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j) : ℕ :=
-  min u.val (-u).val
-
-/-- Circular transverse distance vanishes exactly at the zero frequency. -/
-theorem coreGrowingShiftEndpointTransverseCircularDistance_eq_zero_iff
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j) :
-    coreGrowingShiftEndpointTransverseCircularDistance j u = 0 ↔ u = 0 := by
-  constructor
-  · intro h
-    by_cases hu : u = 0
-    · exact hu
-    · have huval : 0 < u.val := by
-        exact Nat.pos_of_ne_zero ((ZMod.val_eq_zero u).not.mpr hu)
-      have hnu : -u ≠ 0 := neg_ne_zero.mpr hu
-      have hnuval : 0 < (-u).val := by
-        exact Nat.pos_of_ne_zero ((ZMod.val_eq_zero (-u)).not.mpr hnu)
-      unfold coreGrowingShiftEndpointTransverseCircularDistance at h
-      omega
-  · rintro rfl
-    simp [coreGrowingShiftEndpointTransverseCircularDistance]
-
-/-- Circular distance is invariant under frequency negation. -/
-theorem coreGrowingShiftEndpointTransverseCircularDistance_neg
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j) :
-    coreGrowingShiftEndpointTransverseCircularDistance j (-u) =
-      coreGrowingShiftEndpointTransverseCircularDistance j u := by
-  simp [coreGrowingShiftEndpointTransverseCircularDistance, min_comm]
 
 /-- Twice the circular distance is at most the doubled modulus. -/
 theorem coreGrowingShiftEndpointTransverseCircularDistance_two_mul_le
@@ -82,35 +50,6 @@ theorem coreGrowingShiftEndpointTransverseCircularDistance_le_window
     coreGrowingShiftEndpointTransverseCircularDistance_two_mul_le j u
   unfold coreGrowingShiftEndpointDoubledFourierModulus at h
   omega
-
-/-- Exact transverse finite-difference multiplier. -/
-def coreGrowingShiftEndpointTransverseMultiplier
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j) : ℂ :=
-  ZMod.stdAddChar u - 1
-
-/-- The transverse multiplier vanishes exactly at frequency zero. -/
-theorem coreGrowingShiftEndpointTransverseMultiplier_eq_zero_iff
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j) :
-    coreGrowingShiftEndpointTransverseMultiplier j u = 0 ↔ u = 0 := by
-  unfold coreGrowingShiftEndpointTransverseMultiplier
-  rw [sub_eq_zero]
-  constructor
-  · intro h
-    apply ZMod.injective_stdAddChar
-    simpa using h
-  · rintro rfl
-    simp
-
-/-- Nonzero transverse frequency has a nonzero finite-difference multiplier. -/
-theorem coreGrowingShiftEndpointTransverseMultiplier_ne_zero
-    {j : ℕ}
-    {u : CoreGrowingShiftEndpointDoubledFourierIndex j}
-    (hu : u ≠ 0) :
-    coreGrowingShiftEndpointTransverseMultiplier j u ≠ 0 := by
-  exact
-    (coreGrowingShiftEndpointTransverseMultiplier_eq_zero_iff j u).not.mpr hu
 
 /-- Negating a finite cyclic frequency does not change the norm of the
 standard-character finite-difference multiplier. -/

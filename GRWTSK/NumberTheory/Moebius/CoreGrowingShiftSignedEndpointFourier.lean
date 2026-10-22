@@ -9,6 +9,7 @@ Issue: #836. Parent: draft PR #833 at
 `24e9b6a530d9a459091296491675cd3c93bd62c6`.
 -/
 import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointBilinear
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 import Mathlib.Analysis.Fourier.ZMod
 
 set_option autoImplicit false
@@ -16,19 +17,6 @@ noncomputable section
 open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
-
-/-- Ambient cyclic modulus used only after the strict endpoint no-wrap theorem
-has embedded every ordinary endpoint into `[0,2^(j+1))`. -/
-def coreGrowingShiftEndpointFourierModulus (j : ℕ) : ℕ :=
-  2 ^ (j + 1)
-
-instance coreGrowingShiftEndpointFourierModulus_neZero (j : ℕ) :
-    NeZero (coreGrowingShiftEndpointFourierModulus j) :=
-  ⟨by unfold coreGrowingShiftEndpointFourierModulus; positivity⟩
-
-/-- Frequency and zero-padded endpoint coordinate at scale `j`. -/
-abbrev CoreGrowingShiftEndpointFourierIndex (j : ℕ) :=
-  ZMod (coreGrowingShiftEndpointFourierModulus j)
 
 /-- The canonical representative equivalence.  It is used to make every
 natural-to-cyclic reindexing auditable rather than relying on an implicit
