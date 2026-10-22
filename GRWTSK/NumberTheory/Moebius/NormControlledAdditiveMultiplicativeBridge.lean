@@ -2,7 +2,7 @@
 Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction: R.A. Jacob Martone.
 Formalization assistance: OpenAI ChatGPT.
-Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+Status: GENERIC_CONDITIONAL_BRIDGE / ARITHMETIC_KERNEL_INSTANTIATION_OPEN.
 Issue: #966.
 -/
 import Mathlib.Analysis.InnerProductSpace.PiL2
@@ -95,11 +95,18 @@ theorem not_hasLowerFrameBound_of_nontrivialKernel
     ∀ A : ℝ, 0 < A → ¬ HasLowerFrameBound T A := by
   intro A hA hframe
   have h := hframe.2 f
-  rw [hker] at h
-  simp [finitePacketEnergy] at h
+  have hzero : finitePacketEnergy (0 : FiniteArithmeticTargetPacket κ) = 0 := by
+    simp [finitePacketEnergy]
+  rw [hker, hzero] at h
   have henergy : 0 < finitePacketEnergy f := by
-    unfold finitePacketEnergy
-    positivity
+    classical
+    have hex : ∃ i, f i ≠ 0 := by
+      by_contra! hzero
+      exact hf (funext hzero)
+    obtain ⟨i, hi⟩ := hex
+    have hle : ‖f i‖ ^ 2 ≤ finitePacketEnergy f := by
+      exact Finset.single_le_sum (fun j _ => sq_nonneg ‖f j‖) (Finset.mem_univ i)
+    exact lt_of_lt_of_le (pow_pos (norm_pos_iff.mpr hi) 2) hle
   nlinarith
 
 /-- The affine background does not repair noninjectivity of the arithmetic
@@ -111,8 +118,11 @@ theorem observed_eq_observed_zero_of_kernel
     (hker : T.linearPart f = 0) :
     T.observed f = T.observed 0 := by
   funext k
-  simp [FiniteArithmeticBridge.observed, hker,
-    FiniteArithmeticBridge.linearPart]
+  have hk := congrFun hker k
+  simp only [Pi.zero_apply] at hk
+  change T.background k - T.linearPart f k = T.background k - T.linearPart 0 k
+  rw [hk]
+  simp [FiniteArithmeticBridge.linearPart]
 
 /-- Mathlib's exact arithmetic coefficient identity retained as a separate
 ingredient; it does not supply injectivity or coercivity of a finite bridge. -/
