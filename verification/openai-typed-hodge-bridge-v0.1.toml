@@ -224,7 +224,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
 labels = ["lem:filtered-hecke-summands"]
-statement_role = "filtration-preserving Frobenius-commuting projector and complement inherit Hodge/Newton equality from weak admissibility"
+statement_role = "filtration-preserving Frobenius-commuting projector and complement supply weak-admissibility inequalities and Newton data; local source now derives Hodge additivity from the idempotent split"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities"
 status = "OPEN"
 
@@ -247,3 +247,30 @@ labels = ["eq:cm-sign-to-hodge-type"]
 statement_role = "identify scalar-conjugate active Hecke-space Hodge type with the prescribed odd CM sign"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines"
 status = "OPEN"
+
+
+[[local_target]]
+name = "filtered idempotent F1 splitting"
+path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
+declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredIdempotent.finrank_left_add_right"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "idempotent linear projector",
+  "projector preserves selected filtration subspace F1"
+]
+nonclaims = [
+  "no Frobenius structure",
+  "no weak admissibility",
+  "no Newton number theorem"
+]
+
+[[local_target]]
+name = "component Hodge/Newton equality with local Hodge additivity"
+path = "GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities_of_filteredProjector"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "component Hodge <= Newton inequalities",
+  "Newton additivity",
+  "total Hodge = total Newton"
+]
