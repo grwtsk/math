@@ -972,6 +972,49 @@ realization and the independent four-factor algebraicity theorem.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 5g. Exact pre-Riemann bilinear certificate
+
+The local source now also assembles the actual Riemann-form hypotheses in
+\`GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean\`.
+
+It proves:
+
+- the scalar-extended trace form is globally skew-symmetric and alternating;
+- the sign-defined Weil operator satisfies \(J^2=-1\);
+- \(J\) preserves the real fixed locus of the coordinate conjugation;
+- the alternating form is \(J\)-invariant;
+- for every nonzero real-fixed vector \(z\),
+  \[
+  E(Jz,z)>0;
+  \]
+- the integer-coordinate lattice is injective in the real fixed locus;
+- one nonzero integer scale makes the form integral on all lattice pairs.
+
+These facts are packaged as
+
+~~~text
+CMRiemannForm.canonicalPreRiemannBilinearData
+~~~
+
+No local theorem is claimed beyond that package.  In particular, current
+Mathlib does not expose a complex-torus/abelian-variety Riemann existence
+theorem that could convert this certificate into an abelian variety.
+
+Accordingly the remaining external weight-one realization boundary is now
+only the classical existence step:
+
+~~~text
+pre-Riemann bilinear data
+  -> complex torus with the prescribed lattice and complex structure
+  -> polarized/projective torus
+  -> abelian variety B(v)
+  -> identification of the rational Hodge structure with H^1(B(v), Q)
+~~~
+
+The independent four-factor algebraicity theorem remains outside this chain.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
