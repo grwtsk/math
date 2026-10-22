@@ -1226,6 +1226,26 @@ def CMFiniteFourFactorSwitchAlignment.toActualAlignment
   fourth_character := by
     rw [D.fourth_character, A.fourth_at_conj]
 
+/-- The canonical pure tensor of four finite-level realized factors lies in
+actual H^(2,2) once the finite switch pattern is aligned. -/
+theorem CMFiniteFourFactorSwitchAlignment.canonicalPureTensor_mem_H22
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    (A : CMFiniteFourFactorSwitchAlignment D)
+    (R : FourfoldActualHodgeTensorRule D.toActualTyping) :
+    fourfoldActualPureTensor D.toActualTyping
+      (D.first.realization.canonicalTensorActualH1Comparison.toActual
+        D.first.vector)
+      (D.second.realization.canonicalTensorActualH1Comparison.toActual
+        D.second.vector)
+      (D.third.realization.canonicalTensorActualH1Comparison.toActual
+        D.third.vector)
+      (D.fourth.realization.canonicalTensorActualH1Comparison.toActual
+        D.fourth.vector) ∈ R.H22 :=
+  R.canonicalPureTensor_mem_H22 A.toActualAlignment
+
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
