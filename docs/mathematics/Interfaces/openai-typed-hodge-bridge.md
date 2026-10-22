@@ -532,13 +532,18 @@ and proves
 z\neq0\Longrightarrow Q_\xi(z)>0.
 \]
 
-Thus the finite positive-definiteness calculation is now local. What remains
-external is:
+The same source also proves that each embedded anti-invariant value is purely
+imaginary and that multiplication by the formal Weil factor
+\(v(\sigma)i\) is exactly the positive real coefficient. Consequently its
+coordinate Weil form is literally the complex embedding of \(Q_\xi\).
+
+Thus the finite positive-definiteness calculation and the internal coordinate
+Weil-factor algebra are now local. What remains external is:
 
 1. construct a single \(\xi\) satisfying the required simultaneous
    archimedean sign profile;
-2. identify \(Q_\xi\) with the complexified Hodge form
-   \(i\psi_\xi(u,\bar u)\) on the selected \((1,0)\) part;
+2. identify the local coordinate Weil form with the base-changed rational
+   trace pairing under the actual Hodge conjugation/Weil operator;
 3. obtain an integral lattice and apply the Riemann criterion.
 
 ## 5. Frobenius slope to Hodge type
