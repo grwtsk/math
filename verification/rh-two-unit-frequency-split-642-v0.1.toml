@@ -1,0 +1,173 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-unit-frequency-split-642-v0.1"
+owner_repository = "grwtsk/math"
+issue = 642
+parent_issue = 633
+parent_pr = 637
+growing_affine_issue = 629
+growing_affine_pr = 631
+signed_convolution_issue = 625
+signed_convolution_pr = 626
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_TWO_UNIT_FREQUENCY_REINDEX_SOURCE_DRAFT_TWO_UNIT_ANALYTIC_SUPPLIER_OPEN_TWO_NONUNIT_ANALYTIC_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoUnitSplit"
+build_target = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoUnitSplit"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-half-index-affine-633-20261021"
+stacked_parent_revision = "b8f4f643424aa25c775fbd246cd368481d1e68de"
+stacked_parent_tree = "c9609b70531bc2a6b921042a7c41da9f8a07e810"
+candidate_branch = "research/rh-two-unit-frequency-split-642-20261021"
+theorem_source_commit = "e80b3cd786f332b6cd49a84ed1173468f37e8ae2"
+theorem_source_tree = "794aac0ede480a7bf8a40a5b28fccfa19fe89b6c"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/HalfIndexAffineChowlaTwoUnitSplit.lean"
+theorem_source_git_blob = "824581b619af9d071db1d74c770ecf151ec5ff09"
+mathematical_note_commit = "346cd96ec2510d5eb2952ef383d6f11528dd8de0"
+mathematical_note_tree = "de6a62e9075a0c8b71cb2d115e22c32a12724739"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/half-index-affine-two-unit-frequency-split.md"
+mathematical_note_git_blob = "33684f371d97f4124297bc45df54e6ef90ca3646"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+branch_predicate = "TwoUnitSquareModulusParameter"
+half_frequency = "halfSquareModulusFrequency"
+two_unit_witness = "two_isUnit_squareModulus"
+doubled_after_half = "doubled_halfSquareModulusFrequency"
+half_after_doubled = "half_doubledSquareModulusFrequency"
+frequency_equivalence = "doubledSquareModulusFrequencyEquiv"
+doubled_nonzero_iff = "doubledSquareModulusFrequency_ne_zero_iff"
+half_nonzero_iff = "halfSquareModulusFrequency_ne_zero_iff"
+two_unit_shift_aggregate = "twoUnitHalfIndexAffineChowlaShiftAggregate"
+two_unit_frequency_majorant = "twoUnitHalfIndexAffineChowlaFrequencyMajorant"
+two_unit_modulus_majorant = "twoUnitHalfIndexAffineChowlaNonzeroModulusMajorant"
+modulus_reindex_theorem = "twoUnitHalfIndexAffineChowlaNonzeroModulusMajorant_eq_halfIndex"
+two_unit_endpoint_majorant = "twoUnitHalfIndexAffineChowlaEndpointMajorant"
+two_nonunit_endpoint_majorant = "twoNonunitHalfIndexAffineChowlaEndpointMajorant"
+endpoint_split_theorem = "halfIndexAffineChowlaEndpointMajorant_eq_twoUnit_add_twoNonunit"
+two_unit_budget = "DyadicNaturalScaleTwoUnitHalfIndexBudget"
+two_nonunit_budget = "DyadicNaturalScaleTwoNonunitHalfIndexBudget"
+branch_recombination = "dyadicNaturalScaleHalfIndexBudget_of_twoUnit_and_twoNonunit"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_twoModulusBranches"
+proof_classification = "EXACT_FINITE_TWO_UNIT_FREQUENCY_EQUIVALENCE_AND_MODULUS_PARTITION"
+
+[two_unit_branch]
+formal_predicate = "Nat.Coprime 2 (d*d)"
+mathematical_interpretation = "odd d"
+doubling_is_equivalence = true
+zero_frequency_preserved = true
+nonzero_frequency_set_reindexed = true
+normalization_preserved = "1/d^2"
+shift_phase_preserved = true
+fixed_form_core_frequency = "ell"
+analytic_supplier_constructed = false
+
+[two_nonunit_branch]
+formal_predicate = "not Nat.Coprime 2 (d*d)"
+mathematical_interpretation = "includes every even d"
+doubling_assumed_invertible = false
+original_half_index_surface_preserved = true
+branch_dropped = false
+conductor_or_two_adic_stratification_open = true
+analytic_supplier_constructed = false
+
+[exact_decomposition]
+formula = "HalfIndexEndpointMajorant = TwoUnitEndpointMajorant + TwoNonunitEndpointMajorant"
+absolute_value_before_branch_sum = false
+endpoint_support_preserved = true
+square_modulus_preserved = true
+both_parities_preserved = true
+nonzero_frequency_range_preserved = true
+
+[connection_boundaries]
+two_unit_generic_adapter = "ToTwoUnitHalfIndexBudgetAdapter"
+two_nonunit_generic_adapter = "ToTwoNonunitHalfIndexBudgetAdapter"
+fixed_form_two_unit_data = "FixedFormTwoUnitHalfIndexData"
+fixed_form_two_unit_source = "FixedFormTwoUnitHalfIndexSource"
+fixed_form_two_unit_adapter = "FixedFormTwoUnitHalfIndexAdapter"
+two_nonunit_residual = "TwoNonunitFrequencyResidualBoundary"
+named_adapter_values_constructed = false
+
+[downstream]
+zero_mode_source = "OrdinaryMertensSquareRootPlusEpsilonEnvelope"
+two_unit_source = "DyadicNaturalScaleTwoUnitHalfIndexBudget"
+two_nonunit_source = "DyadicNaturalScaleTwoNonunitHalfIndexBudget"
+consumer = "DyadicNaturalScaleSquareModulusCongruenceL1"
+pointwise_mertens_proved = false
+two_unit_budget_proved = false
+two_nonunit_budget_proved = false
+
+[evidence_states]
+source_draft = true
+two_unit_frequency_reindex_source_draft = true
+exact_doubling_inverse_scripted = true
+zero_nonzero_preservation_scripted = true
+exact_two_unit_nonzero_sum_reindex_scripted = true
+exact_two_branch_endpoint_decomposition_scripted = true
+conditional_branch_recombination_scripted = true
+two_unit_analytic_supplier_proved = false
+two_nonunit_analytic_supplier_proved = false
+pointwise_mertens_envelope_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoUnitSplit"
+definition_count = 12
+theorem_script_count = 12
+structure_count = 4
+authored_declaration_count = 28
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/GrowingShiftAffineChowlaHalfIndex.lean"
+git_blob = "960b500023bb3684ca18ae2549b98d9107aee7b3"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_637"
+
+[[dependencies]]
+source = "Mathlib.Data.ZMod.Units"
+declarations = [
+  "ZMod.isUnit_iff_coprime",
+  "mul_inv_of_unit",
+  "inv_mul_of_unit"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+two_nonunit_branch_not_dropped = true
+doubling_not_assumed_invertible_on_two_nonunit_branch = true
+zero_mode_not_reintroduced = true
+shift_phase_preserved = true
+square_modulus_preserved = true
+endpoint_support_preserved = true
+parity_classes_preserved = true
+normalization_preserved = true
+fixed_form_not_promoted_without_uniformity = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_two_unit_half_index_budget = true
+stratify_two_nonunit_frequency_image_and_kernel = true
+prove_two_nonunit_half_index_budget = true
+prove_pointwise_mertens_envelope = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+two_unit_analytic_bound_proved = false
+two_nonunit_analytic_bound_proved = false
+fixed_form_adapter_proved = false
+conductor_stratification_proved = false
+pointwise_mertens_envelope_proved = false
+riemann_hypothesis_proved = false
