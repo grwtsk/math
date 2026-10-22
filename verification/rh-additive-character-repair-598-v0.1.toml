@@ -1,0 +1,123 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-additive-character-repair-598-v0.1"
+owner_repository = "grwtsk/math"
+issue = 598
+parent_issue = 592
+parent_pr = 594
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ADDITIVE_CHARACTER_RESIDUE_REPAIR_SOURCE_DRAFT_ADDITIVE_TWIST_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.AdditiveCharacterSquareModulusRepair"
+build_target = "GRWTSK.NumberTheory.Moebius.AdditiveCharacterSquareModulusRepair"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-dirichlet-nonunit-obstruction-592-20261021"
+stacked_parent_revision = "82a0a5fff2690e80647b3b15d5e52ec13eb33e93"
+stacked_parent_tree = "746135a11cb46741ca4c2bdb718bbfe60ebc4d23"
+candidate_branch = "research/rh-additive-character-repair-598-20261021"
+theorem_source_commit = "0ca7f22fb78cd6668c08814fe3c8540b489e8f60"
+theorem_source_tree = "7f211ca927cd6589a8e49e6b2cfe7004e285e5fe"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/AdditiveCharacterSquareModulusRepair.lean"
+theorem_source_git_blob = "6e0a81df2fe6da3b3b91ce130b159a8f16cc29af"
+mathematical_note_commit = "1656f100e094fc4c300830db13121d8e348e1872"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/additive-character-square-modulus-repair.md"
+
+[selected_increment]
+zero_selector = "additiveZeroResidueSelector"
+zero_selector_identity = "additiveZeroResidueSelector_eq_indicator"
+square_divisor_selector = "additiveSquareDivisorSelector"
+square_divisor_selector_identity = "additiveSquareDivisorSelector_eq_indicator"
+complex_fibre = "complexMertensEndpointCrossCongruenceFibre"
+selector_fibre = "additiveSelectorEndpointCrossFibre"
+additive_twist = "additiveTwistedEndpointCrossCorrelation"
+fourier_fibre = "additiveFourierEndpointCrossCongruenceFibre"
+exact_fibre_identity = "complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier"
+repair_type = "AdditiveCharacterResidueRepair"
+repair_value = "additiveCharacterResidueRepair"
+proof_classification = "EXACT_FINITE_ADDITIVE_FOURIER_RESIDUE_REPAIR"
+
+[selector]
+modulus = "d*d"
+domain = "full ZMod(d*d)"
+unit_hypothesis_required = false
+formula = "(1/(d*d))*sum_k stdAddChar(k*m)"
+equals = "indicator(d*d | m)"
+covers_nonunit_residues = true
+
+[fibre_identity]
+formula = "CrossCongruenceFibre(b,d) = (1/d^2)*sum_(k mod d^2) AdditiveTwist(b,d,k)"
+complexification_required = true
+signed_two_point_source_preserved = true
+absolute_values_inserted = false
+square_modulus_preserved = true
+endpoint_prefix_base_support_preserved = true
+
+[analytic_frontier]
+open_object = "additive-character-twisted two-point Mobius correlation"
+twist = "stdAddChar(k*midpoint mod d^2)"
+estimate_proved = false
+dirichlet_l_function_control_claimed = false
+result_003_adapter_constructed = false
+result_007_adapter_constructed = false
+natural_scale_endpoint_l1_supplier_proved = false
+
+[evidence_states]
+source_draft = true
+additive_character_residue_repair_source_draft = true
+additive_twist_estimate_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.AdditiveCharacterSquareModulusRepair"
+authored_declaration_count = 14
+definition_count = 7
+theorem_script_count = 6
+structure_count = 1
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DirichletNonunitResidueObstruction.lean"
+git_blob = "8550083484ee9639a5fb96d9428b118b38c7d4da"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_594"
+
+[[dependencies]]
+source = "Mathlib.Analysis.Fourier.ZMod"
+declarations = [
+  "ZMod.stdAddChar",
+  "ZMod.isPrimitive_stdAddChar",
+  "AddChar.sum_mulShift"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+unit_hypothesis_not_inserted = true
+nonunit_residues_covered = true
+absolute_values_before_fourier_identity_rejected = true
+square_modulus_preserved = true
+finite_support_preserved = true
+additive_twist_estimate_not_claimed = true
+dirichlet_l_function_control_not_claimed = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+estimate_additive_twists = true
+connect_additive_twists_to_l_function_and_fixed_form_inputs = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+additive_twist_bound_proved = false
+l_function_adapter_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
