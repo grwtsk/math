@@ -64,6 +64,67 @@ def wienerPinnedQOneAux (s : ℂ) : ℂ :=
   ArithmeticFunction.vonMangoldt.LFunctionResidueClassAux
     (1 : ZMod 1) s
 
+/-- The actual von Mangoldt function, complexified only at its output.
+The underlying coefficients are those in the Mathlib Chebyshev psi
+and von Mangoldt L-series, not a fitted arithmetic sequence. -/
+def wienerPinnedLambdaComplex (n : ℕ) : ℂ :=
+  ((ArithmeticFunction.vonMangoldt n : ℝ) : ℂ)
+
+/-- At modulus one every natural number belongs to the unique residue
+class. The indicator coefficient is EXACTLY the full von Mangoldt
+coefficient, including n=0 and all prime powers. -/
+theorem wienerPinnedQOne_residueClass_eq_lambda (n : ℕ) :
+    ArithmeticFunction.vonMangoldt.residueClass (1 : ZMod 1) n =
+      (ArithmeticFunction.vonMangoldt n : ℝ) := by
+  have hn : (n : ZMod 1) = (1 : ZMod 1) :=
+    Subsingleton.eq_one _
+  simp [ArithmeticFunction.vonMangoldt.residueClass, hn]
+
+/-- Exact complex L-series source, using the pinned L-series
+congruence theorem and respecting the exceptional zero term. -/
+theorem wienerPinnedQOne_residueLSeries_eq_lambda (s : ℂ) :
+    LSeries
+      (fun n : ℕ =>
+        ((ArithmeticFunction.vonMangoldt.residueClass
+          (1 : ZMod 1) n : ℝ) : ℂ)) s =
+      LSeries wienerPinnedLambdaComplex s := by
+  apply LSeries.LSeries_congr (s := s)
+  intro n _hn
+  simpa [wienerPinnedLambdaComplex] using
+    congrArg (fun r : ℝ => (r : ℂ))
+      (wienerPinnedQOne_residueClass_eq_lambda n)
+
+/-- No new summability premise is introduced: this is the actual
+pinned LSeriesSummable_vonMangoldt theorem on Re(s)>1. -/
+theorem wienerPinnedLambdaComplex_summable
+    {s : ℂ} (hs : 1 < s.re) :
+    LSeriesSummable wienerPinnedLambdaComplex s := by
+  simpa [wienerPinnedLambdaComplex] using
+    (ArithmeticFunction.LSeriesSummable_vonMangoldt hs)
+
+/-- The pinned q=1 auxiliary agrees on Re(s)>1 with the genuine
+von Mangoldt L-series minus a pole of residue EXACTLY 1 at s=1.
+This is distinct from continuity at the closed boundary, proved below.
+-/
+theorem wienerPinnedQOneAux_poleIdentity
+    {s : ℂ} (hs : 1 < s.re) :
+    wienerPinnedQOneAux s =
+      LSeries wienerPinnedLambdaComplex s - 1 / (s - 1) := by
+  have hsource :=
+    (ArithmeticFunction.vonMangoldt.eqOn_LFunctionResidueClassAux
+      (q := 1) (a := (1 : ZMod 1))
+      (isUnit_one : IsUnit (1 : ZMod 1)))
+      (show s ∈ {z : ℂ | 1 < z.re} from hs)
+  have hseries := wienerPinnedQOne_residueLSeries_eq_lambda s
+  change wienerPinnedQOneAux s =
+    LSeries
+      (fun n : ℕ =>
+        ((ArithmeticFunction.vonMangoldt.residueClass
+          (1 : ZMod 1) n : ℝ) : ℂ)) s -
+        (Nat.totient 1 : ℂ)⁻¹ / (s - 1) at hsource
+  rw [hseries] at hsource
+  simpa [Nat.totient_one] using hsource
+
 /-- Reuse the pinned theorem about continuation through Re(s)=1. -/
 theorem wienerPinnedQOneAux_continuousOn :
     ContinuousOn wienerPinnedQOneAux
@@ -312,7 +373,7 @@ theorem wienerPinnedQOne_boundary_integral_from_right
       dsimp [bound]
       fun_prop
     exact hBoundContinuous.integrable_of_hasCompactSupport
-      hcompact.norm.mul_left
+      (hcompact.norm.mul_left)
   · apply Eventually.of_forall
     intro t
     apply Tendsto.mul_const
