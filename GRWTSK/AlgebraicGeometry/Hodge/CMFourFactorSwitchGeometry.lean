@@ -2789,4 +2789,47 @@ def CMFiniteBalancedPureTensorSpanning.toSpanningFamily
     (Submodule.span_le.mpr (R.subset_H22))
     S.H22_le_span
 
+/-- Explicit balanced-pure-tensor image test for a proposed actual-to-descent
+comparison.  It is strictly weaker as an input than a global H22-preservation
+assertion; global preservation is derived after a spanning certificate. -/
+structure CMFiniteBalancedTensorImageTest
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  compare : FourfoldActualTensor D.toActualTyping →ₗ[ℂ]
+    (ℂ ⊗[ℚ] V)
+  balanced_mem :
+    ∀ z ∈ CMFiniteBalancedPureTensorSet D,
+      compare z ∈ hodgeSubspace
+
+/-- Spanning and a pointwise image test together yield the actual-to-descent
+comparison.  The argument uses only the span induction principle, so it
+does not presuppose a tensor comparison theorem from external geometry. -/
+def CMFiniteBalancedTensorImageTest.toComparison
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    {R : FourfoldActualHodgeTensorRule D.toActualTyping}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (T : CMFiniteBalancedTensorImageTest D hodgeSubspace)
+    (S : CMFiniteBalancedPureTensorSpanning D R) :
+    CMFiniteActualToDescentComparison D R hodgeSubspace where
+  compare := T.compare
+  H22_le := by
+    intro z hz
+    obtain ⟨x, hx, rfl⟩ := Submodule.mem_map.mp hz
+    apply Submodule.span_induction (S.H22_le_span hx)
+    · intro y hy
+      exact T.balanced_mem y hy
+    · exact hodgeSubspace.zero_mem
+    · intro y w hy hw
+      exact hodgeSubspace.add_mem hy hw
+    · intro a y hy
+      exact hodgeSubspace.smul_mem a hy
+
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
