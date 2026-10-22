@@ -511,6 +511,37 @@ theorem switchConjugatePair_selectedRows_balance
     · simp [switchConjugatePair, hhg, hhcg, switchPair, hij, Ne.symm hij, add_comm]
     · simp [switchConjugatePair, hhg, hhcg]
 
+/-- The four old/new selected rows of one atomic switch satisfy the exact
+four-label balance relation consumed by the four-factor Hodge machinery. -/
+theorem atomicSwitch_fourBalance
+    (x y : I → G → ℤ)
+    (hxsign : ∀ r h, IsSign (x r h))
+    (hxodd : IsOddMatrix conj x)
+    (g : G) (hg : g ≠ conj g)
+    (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => y r g)) :
+    FourBalance
+      (oddSignRowOfMatrix conj x hxsign hxodd i.1)
+      (oddSignRowOfMatrix conj x hxsign hxodd j.1)
+      (oddSignRowOfMatrix conj
+        (switchConjugatePair conj x g i.1 j.1)
+        (switchConjugatePair_isSign conj x hxsign g i.1 j.1)
+        (switchConjugatePair_odd conj hconj x hxodd g hg i.1 j.1)
+        i.1)
+      (oddSignRowOfMatrix conj
+        (switchConjugatePair conj x g i.1 j.1)
+        (switchConjugatePair_isSign conj x hxsign g i.1 j.1)
+        (switchConjugatePair_odd conj hconj x hxodd g hg i.1 j.1)
+        j.1) := by
+  have hij : i.1 ≠ j.1 := by
+    intro h
+    have hi := i.2.1
+    have hj := j.2.1
+    omega
+  intro h
+  exact switchConjugatePair_selectedRows_balance
+    conj x g i.1 j.1 hij h
+
 /-- Rows outside the selected pair are pointwise unchanged in every column.
 
 This is the exact support statement behind the manuscript decomposition of one
