@@ -1126,3 +1126,42 @@ status = "OPEN"
 nonclaims = [
   "local CM trace-polarization positivity is not identified here with the geometric ample-class Hodge-Riemann pairing"
 ]
+
+
+[[local_target]]
+name = "transported canonical CM eigenline vectors differ by nonzero scalar"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingTransport.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport.exists_ne_zero_smul_scalarConjugate_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite Galois field extension",
+  "nonzero source vector in one canonical embedding eigenspace",
+  "nonzero target vector in the transported embedding eigenspace"
+]
+nonclaims = [
+  "canonical tensor-model statement only",
+  "does not identify these vectors with actual H^1(B(v)) embedding lines"
+]
+
+[[local_target]]
+name = "geometric-layer canonical transported middle-line scale"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CanonicalTransportedMiddleLineData.exists_scale"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "repackages the local tensor-model proportionality",
+  "no ample-class pairing or cohomological comparison"
+]
+
+[[external_premise]]
+id = "cm-cohomology-line-to-canonical-tensor-model"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types", "eq:cm-label-conjugation", "eq:transition-composition"]
+statement_role = "identify the actual cohomological middle embedding lines and scalar conjugation in H^1(B(v)) with the locally constructed canonical Galois tensor-model eigenspaces and transport"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CanonicalTransportedMiddleLineData.exists_scale"
+status = "OPEN"
+nonclaims = [
+  "local source proves the one-dimensional tensor-model proportionality but not the H^1 comparison"
+]
