@@ -99,6 +99,36 @@
       "scope": "VALIDATION_COMPATIBILITY_ONLY",
       "mathematical_acceptance": false,
       "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"
+    },
+    {
+      "module": "BitMatrix.Algebra.Symmetry",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/ec/ec14e8913e14ac2ba9ba288a05b5aa5257a9626896fda1a00d516b9ba292e65d.lean",
+        "sha256": "ec14e8913e14ac2ba9ba288a05b5aa5257a9626896fda1a00d516b9ba292e65d",
+        "byte_count": 18390,
+        "git_blob": "7e2df824c903e7685d8f6df66526da567889a880"
+      },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/Algebra/Symmetry.lean",
+        "sha256": "4c006900255f2fb77ea620bea3abbe8ba63eab775ea5110913ccaf91b6535690",
+        "byte_count": 874,
+        "git_blob": "ff4ec64e0be9d7832546563213b52df2c0e7c7ae",
+        "mode": "100644"
+      },
+      "repaired_components": [
+        {
+          "path": "GRWTSK/Algebra/GroupTheory/BasicGroupTheory/GroupActions/FiniteBooleanStructure/Variantec14e8913e14ac2b/HammingConjugacyAndAvalanche.lean",
+          "sha256": "13c7812f2d44a3d41736d8b7e4e960128699066cb3e423b3a2785da10d319086",
+          "byte_count": 14114,
+          "git_blob": "db5ff732595cf42bdaabb168a96a0539cc57a1bc",
+          "theorem": "BitMatrix.Algebra.Symmetry.coordinatePermutationHom_injective",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "DEPENDENCY_COMPATIBILITY_SURFACE_ONLY"
+        }
+      ],
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"
     }
   ]
 }
