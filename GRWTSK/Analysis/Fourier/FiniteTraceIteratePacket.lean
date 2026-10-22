@@ -104,8 +104,9 @@ theorem traceShape_denominator_ne_zero (t : TraceShapedInput γ m)
     (2 * Real.sinh (((n : ℝ) * t.length a) / 2)) ≠ 0 := by
   have hnreal : (0 : ℝ) < (n : ℝ) := by
     exact_mod_cast (lt_of_lt_of_le (by omega : (0 : ℕ) < 1) hn)
+  have hlen : 0 < t.length a := t.length_pos a ha
   have harg : (0 : ℝ) < ((n : ℝ) * t.length a) / 2 := by
-    positivity
+    exact div_pos (mul_pos hnreal hlen) (by norm_num)
   have hsinh : 0 < Real.sinh (((n : ℝ) * t.length a) / 2) :=
     Real.sinh_pos_iff.mpr harg
   exact ne_of_gt (mul_pos (by norm_num) hsinh)
