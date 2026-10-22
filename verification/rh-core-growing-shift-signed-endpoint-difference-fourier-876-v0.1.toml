@@ -1,0 +1,62 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-difference-fourier-876-v0.1"
+owner_repository = "grwtsk/math"
+issue = 876
+parent_issue = 848
+parent_pr = 850
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceFourier"
+
+[source_binding]
+stacked_parent_revision = "5576c62aa169bf138564cf33fc5bba4f9aeb109e"
+candidate_branch = "research/rh-endpoint-difference-876"
+theorem_source_commit = "aff522d4d3a0c4ffd78c5a8701af7c1350c31cfc"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointDifferenceFourier.lean"
+theorem_source_git_blob = "dbd3cae3f034f0d8f7d3b9131fb17189b5c302c7"
+
+[selected_increment]
+difference_lower = "coreGrowingShiftEndpointDifferencePrefixLower"
+difference_upper = "coreGrowingShiftEndpointDifferencePrefixUpper"
+difference_prefix_set = "coreGrowingShiftEndpointDifferencePrefixSet"
+clipped_prefix_set = "coreGrowingShiftEndpointClippedPrefixSet"
+active_prefix_normalization = "coreGrowingShiftEndpointExplicitPrefixSet_eq_differenceClipped"
+generic_closed_kernel = "coreGrowingShiftEndpointIntervalClosedKernel"
+generic_interval_evaluation = "coreGrowingShiftEndpointIntervalSum_eq_closed"
+difference_bulk = "coreGrowingShiftEndpointDifferenceBulkKernel"
+clipping_kernel = "coreGrowingShiftEndpointPrefixClippingKernel"
+clipping_zero_region = "coreGrowingShiftEndpointPrefixClippingKernel_eq_zero"
+bulk_minus_clip_identity = "coreGrowingShiftEndpointAggregateBoundaryKernel_eq_difference_sub_clip"
+zero_padded_joint_kernel = "coreGrowingShiftEndpointDifferenceMinusClipKernelZeroPad"
+zero_padded_identity = "coreGrowingShiftEndpointDifferenceMinusClipKernelZeroPad_eq_boundary"
+joint_kernel_dft = "coreGrowingShiftEndpointDifferenceMinusClipKernelDFT2"
+joint_dft_identity = "coreGrowingShiftEndpointDifferenceMinusClipKernelDFT2_eq_boundary"
+signed_packet = "coreGrowingShiftSignedEndpointDifferenceMinusClipFourierPacket"
+packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointDifferenceMinusClipFourier"
+signed_source = "SubpolynomialCoreGrowingShiftSignedEndpointDifferenceMinusClipFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointDifferenceMinusClipFourierPacket_iff_boundary"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointDifferenceMinusClipFourierPacket"
+proof_classification = "EXACT_DIFFERENCE_BULK_MINUS_ENDPOINT_CLIPPING_REORGANIZATION"
+next_obstruction = "diagonalize the difference-only bulk on a no-wrap enlarged cyclic modulus while retaining the clipping correction in the same signed packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+bulk_estimate_proved = false
+clipping_estimate_proved = false
+joint_signed_fourier_estimate_proved = false
+parseval_bound_used = false
+cauchy_schwarz_used = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+gowers_adapter_constructed = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false
