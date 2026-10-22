@@ -25,7 +25,7 @@ noncomputable section
 
 namespace GRWTSK.Topology.AlgebraicTopology.TopologicalDiskAdjunction
 
-variable {B : Type*} [TopologicalSpace B]
+variable {B : Type*} [instB : TopologicalSpace B]
 
 abbrev Disk := TopCat.disk.{0} 2
 abbrev DiskBoundary := TopCat.diskBoundary.{0} 2
@@ -50,7 +50,7 @@ def adjunctionSetoid (A : DiskBoundary → B) : Setoid (Source B) where
   iseqv := Relation.EqvGen.is_equivalence _
 
 /-- Genuine quotient, carrying Mathlib's quotient topology. -/
-def AttachedDisk (A : DiskBoundary → B) : Type :=
+abbrev AttachedDisk (A : DiskBoundary → B) : Type _ :=
   Quotient (adjunctionSetoid A)
 
 def projection (A : DiskBoundary → B) : Source B → AttachedDisk A :=
@@ -58,7 +58,7 @@ def projection (A : DiskBoundary → B) : Source B → AttachedDisk A :=
 
 theorem projection_continuous (A : DiskBoundary → B) :
     Continuous (projection A) := by
-  change Continuous (Quotient.mk' : Source B → AttachedDisk A)
+  change Continuous (@Quotient.mk' (Source B) (adjunctionSetoid A))
   exact continuous_quotient_mk'
 
 def baseMap (A : DiskBoundary → B) : B → AttachedDisk A :=
@@ -75,15 +75,18 @@ theorem diskMap_continuous (A : DiskBoundary → B) :
     Continuous (diskMap A) :=
   (projection_continuous A).comp continuous_inr
 
+section
+omit instB
 /-- Exact boundary square on *every* genuine Euclidean boundary point. -/
-theorem attachment_commutes (A : DiskBoundary → B) (x : DiskBoundary) :
+theorem attachment_commutes [TopologicalSpace B]
+    (A : DiskBoundary → B) (x : DiskBoundary) :
     baseMap A (A x) = diskMap A (boundaryInclusion x) :=
   Quotient.sound (Relation.EqvGen.rel _ _
     (Step.attach x))
 
 /-- Relation preservation is proved from the one authentic gluing
 generator, then through reflexivity, symmetry and transitivity. -/
-theorem respects_connected {Y : Type*} (A : DiskBoundary → B)
+theorem respects_connected [TopologicalSpace B] {Y : Type*} (A : DiskBoundary → B)
     (f : B → Y) (g : Disk → Y)
     (h : ∀ x, f (A x) = g (boundaryInclusion x))
     {p q : Source B} (hpq : Connected A p q) :
@@ -95,6 +98,8 @@ theorem respects_connected {Y : Type*} (A : DiskBoundary → B)
   | refl p => rfl
   | symm p q _ ih => exact ih.symm
   | trans p q r _ _ ih1 ih2 => exact ih1.trans ih2
+
+end
 
 /-- The actual universal map out of the quotient, not an asserted
 Pushout predicate. -/
@@ -125,8 +130,6 @@ theorem descend_continuous {Y : Type*} [TopologicalSpace Y]
     Continuous (descend A f g h) := by
   apply Continuous.quotient_lift
     (hf.sumElim hg)
-  intro p q hpq
-  exact respects_connected A f g h hpq
 
 /-- Any map agreeing on both original source summands must equal the
 canonical quotient descent. -/
