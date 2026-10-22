@@ -349,10 +349,31 @@ When G = Gal(E/k) and E/k is finite Galois, Mathlib's
 The concrete central-involution supplier is now local as
 `CMNumberFieldIndex.centralInvolution`.
 
-These are local linear/group-theoretic checks. They still do not construct
-the CM-field action on U(v)_Qbar, prove that its characters are exactly the
-embeddings, or prove scalar-conjugation transport. Those remain external
-realization premises.
+These are local linear/group-theoretic checks. The regular CM-field action
+and literal embedding-character eigenspaces are now constructed separately in
+`CMRegularBaseChange.lean`. What remains is one-dimensionality/completeness of
+those canonical eigenspaces, their Hodge-type assignment, scalar-conjugation
+transport, and geometric realization.
+
+## 4c. Canonical regular base-change action
+
+`GRWTSK/AlgebraicGeometry/Hodge/CMRegularBaseChange.lean` now constructs
+the canonical regular action
+
+  E -> End_C(C tensor_k E)
+
+by base-changing left multiplication on E. For every k-algebra embedding
+lambda : E -> C it defines the literal character eigenspace
+
+  { t | a.t = lambda(a) t for every a in E }.
+
+Thus the CM realization frontier is narrower again. The field action and
+the definition of embedding-character eigenspaces are local. The remaining
+linear-algebra supplier is to prove that these canonical eigenspaces are
+one-dimensional and form the complete internal direct-sum decomposition
+at the chosen coefficient field. The remaining Hodge supplier is to attach
+the prescribed (1,0)/(0,1) types and identify the rational source with
+U(v)=H^1(B(v),Q), including scalar-conjugation transport.
 
 ## 5. Frobenius slope to Hodge type
 
