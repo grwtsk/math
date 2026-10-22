@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
-import GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction
 import GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples
 
 /-!

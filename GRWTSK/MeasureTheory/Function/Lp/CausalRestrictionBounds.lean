@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
-import GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.FinitePrimeTranslationEnergy
 import Mathlib.MeasureTheory.Function.LpSeminorm.Indicator
 import Mathlib.MeasureTheory.Function.LpSeminorm.SMul
 import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality

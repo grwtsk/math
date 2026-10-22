@@ -1,6 +1,6 @@
 import GRWTSK.Analysis.Fourier.ReciprocalZetaQuadraticKernel
 import GRWTSK.Analysis.Fourier.QuadraticKernelTruncation
-import GRWTSK.MeasureTheory.Integral.QuadraticFourierFubini
+import GRWTSK.Analysis.MeasureTheory.Integral.QuadraticFourierFubini
 import GRWTSK.Analysis.Fourier.AngularFrequencyParseval
 import Mathlib.Analysis.Fourier.Inversion
 

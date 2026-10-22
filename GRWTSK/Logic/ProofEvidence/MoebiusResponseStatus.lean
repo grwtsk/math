@@ -1,16 +1,16 @@
-import GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeTranslationBoundContracts
 import GRWTSK.Analysis.Fourier.SignedPrimePhaseExamples
 import GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy
 import GRWTSK.Analysis.Calculus.LogarithmicResponseDerivatives
-import GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.FinitePrimeTranslationEnergy
 import GRWTSK.Analysis.Fourier.FiniteTranslationMultipliers
 import GRWTSK.NumberTheory.Moebius.DiagonalEnergyBound
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeBlockCost
-import GRWTSK.Analysis.Asymptotics.PrimeMassPotentialBounds
-import GRWTSK.MeasureTheory.Function.Lp.CausalRestrictionBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds
+import GRWTSK.Analysis.MeasureTheory.Function.Lp.CausalRestrictionBounds
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
-import GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds
 import GRWTSK.Analysis.Fourier.AngularFrequencyParseval
 import GRWTSK.NumberTheory.Moebius.SubsetPotentialObstruction
 

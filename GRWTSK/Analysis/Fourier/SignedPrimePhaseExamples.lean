@@ -1,5 +1,5 @@
 import Mathlib
-import GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction
 
 /-!
 # Exact finite hostile diagnostics

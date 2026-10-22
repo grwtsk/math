@@ -1,6 +1,6 @@
-import GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts
-import GRWTSK.Analysis.Asymptotics.ExponentialRecurrence
-import GRWTSK.Analysis.Asymptotics.FinitePrimeChainEnergyBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeTranslationBoundContracts
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence
+import GRWTSK.Analysis.AsymptoticAnalysis.FinitePrimeChainEnergyBounds
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
 
 /-!

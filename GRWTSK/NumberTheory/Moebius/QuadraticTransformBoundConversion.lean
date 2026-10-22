@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.Fourier.MoebiusQuadraticReturn
-import GRWTSK.Analysis.Asymptotics.QuadraticKernelEnergyEquivalence
+import GRWTSK.Analysis.AsymptoticAnalysis.QuadraticKernelEnergyEquivalence
 
 /-! The concrete reciprocal-zeta route has unconditional identification and
 right-line truncation. Its only remaining arithmetic input is the joint signed

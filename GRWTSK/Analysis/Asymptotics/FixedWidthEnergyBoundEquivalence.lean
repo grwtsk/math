@@ -1,4 +1,4 @@
-import GRWTSK.MeasureTheory.Integral.FixedWidthEnergyTelescope
+import GRWTSK.Analysis.MeasureTheory.Integral.FixedWidthEnergyTelescope
 import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 
 /-! Exact status of fixed-width high-shell signed settlement.

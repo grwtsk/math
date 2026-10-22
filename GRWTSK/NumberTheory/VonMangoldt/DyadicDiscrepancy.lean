@@ -8,7 +8,7 @@ No claim of an all-scale arithmetic estimate is made by this module.
 -/
 import Mathlib
 import GRWTSK.Analysis.GreenKernel.UnitInterval
-import GRWTSK.MeasureTheory.Integral.Centering
+import GRWTSK.Analysis.MeasureTheory.Integral.Centering
 import GRWTSK.Analysis.Integration.UnitIntervalPrimitives
 
 /-!

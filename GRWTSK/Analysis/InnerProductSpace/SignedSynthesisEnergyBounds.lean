@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition
+import GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition
 import GRWTSK.Analysis.InnerProductSpace.WeightedSchurBounds
 
 /-! BGP plus coefficient and return budgets implies the native signed settlement.

@@ -1,7 +1,7 @@
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
 import GRWTSK.Analysis.Fourier.PrimePhasePacketCertificates
-import GRWTSK.Analysis.Asymptotics.FinitePrimeChainEnergyBounds
-import GRWTSK.Analysis.Asymptotics.ExponentialEnergyObstruction
+import GRWTSK.Analysis.AsymptoticAnalysis.FinitePrimeChainEnergyBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialEnergyObstruction
 
 /-!
 Lean formulation of both research problems, with their literal arithmetic source.

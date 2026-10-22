@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy
-import GRWTSK.Analysis.Asymptotics.ExponentialRecurrence
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
 

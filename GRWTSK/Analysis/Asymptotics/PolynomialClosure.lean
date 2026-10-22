@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Classical implications; imported Mathlib contributions retain their authorship. -/
-import GRWTSK.Analysis.Asymptotics.PolynomialErrorBound
+import GRWTSK.Analysis.AsymptoticAnalysis.PolynomialErrorBound
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Analysis.Waveform

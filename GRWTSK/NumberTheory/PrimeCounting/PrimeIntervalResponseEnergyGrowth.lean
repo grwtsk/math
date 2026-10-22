@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
-import GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.FinitePrimeTranslationEnergy
 
 /-! An unconditional large-prime source-growth fixture for the universal AS interface.
 
