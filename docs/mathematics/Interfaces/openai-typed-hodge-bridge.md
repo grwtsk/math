@@ -1006,6 +1006,57 @@ the ample-class Hodge--Riemann positivity identification.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4p. Exact cohomology-to-canonical line comparison adapter
+
+The remaining comparison between actual cohomological middle lines and the
+canonical tensor model is now represented explicitly by
+
+~~~text
+CohomologyCanonicalLineComparison
+~~~
+
+in \`CMFourFactorSwitchGeometry.lean\`.
+
+It asks for exactly three pieces of geometric comparison data:
+
+1. an \(E\)-linear equivalence from the actual cohomological realization to
+   the canonical tensor model \(E\otimes_k E\);
+2. compatibility of actual scalar conjugation with the local
+   \`scalarConjugate\` operation;
+3. membership of the selected source and target cohomology vectors in the
+   corresponding canonical embedding eigenspaces under that equivalence.
+
+From those premises, the local theorem
+
+~~~text
+CohomologyCanonicalLineComparison.exists_scale
+~~~
+
+pulls back the already-local one-dimensional eigenline theorem and proves
+
+\[
+\gamma=c\,\overline{\beta},
+\qquad c\neq0,
+\]
+
+in the actual cohomological realization.
+
+Thus the scalar-proportionality part of the \(q_i\neq0\) argument no longer
+needs any additional manuscript theorem beyond the comparison adapter itself.
+
+The remaining \(q_i\)-specific geometric input is now only the ample-class
+Hodge--Riemann pairing comparison:
+
+\[
+\int \beta\wedge\gamma\wedge\ell^{s-1}
+\]
+
+must be identified with a positive conjugate pairing.  Once that comparison is
+supplied, the nonvanishing of each \(q_i\), of their product, and the final
+nonzero-scalar cancellation are all local source consequences.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
