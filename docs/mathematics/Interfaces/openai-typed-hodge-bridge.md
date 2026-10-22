@@ -1383,6 +1383,41 @@ Thus the remaining pre-algebraicity switch-specific mathematical bridge is now e
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4ab. Scalar-conjugate stability is reduced to orbit-span containment
+
+The remaining scalar-stability premise has been sharpened again.
+
+`CMFourFactorSwitchGeometry.lean` now defines
+
+~~~text
+scalarConjugateOrbitSpan
+scalarConjugate_mem_orbitSpan
+AtomicSwitchOrbitHodgeData
+AtomicSwitchOrbitHodgeData.toTensorData
+~~~
+
+For an actual switched algebraic-number tensor (t), let (O(t)) be the complex span of all coefficient-field conjugates of (t).
+
+Every scalar conjugate belongs to (O(t)) by construction. Therefore the descent hypothesis
+
+[
+sigma(t)in P quad	ext{for every scalar automorphism }sigma
+]
+
+is now reduced to one subspace inclusion
+
+[
+O(t)subseteq P,
+]
+
+where (P) is the actual complex ((2,2)) Hodge subspace.
+
+Thus the remaining geometric theorem is no longer a pointwise family of scalar-conjugate membership assertions. It is the more structural statement that the scalar-Galois orbit span of the switched monomial tensor lies inside the actual all-conjugate ((2,2)) Hodge subspace.
+
+Once that inclusion is supplied, `toTensorData` recovers the pointwise stability hypothesis automatically, and the previously-local descent/algebraicity composition applies unchanged.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
