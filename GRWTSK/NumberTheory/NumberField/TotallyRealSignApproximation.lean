@@ -197,7 +197,7 @@ theorem exists_realEmbeddingVector_realizesSigns
   · intro hs
     rw [hs] at hi
     norm_num at hi ⊢
-    exact lt_of_lt_of_le (by linarith [(abs_lt.mp hi).1]) le_rfl
+    linarith [(abs_lt.mp hi).1]
   · intro hs
     rw [hs] at hi
     norm_num at hi ⊢
