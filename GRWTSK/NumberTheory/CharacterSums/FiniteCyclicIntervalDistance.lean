@@ -31,8 +31,9 @@ variable {q : ℕ} [NeZero q]
 def finiteCyclicCircularDistance (t : ZMod q) : ℕ :=
   min t.val (-t).val
 
+omit [NeZero q] in
 /-- Circular distance vanishes exactly at zero frequency. -/
-theorem finiteCyclicCircularDistance_eq_zero_iff (t : ZMod q) :
+theorem finiteCyclicCircularDistance_eq_zero_iff [NeZero q] (t : ZMod q) :
     finiteCyclicCircularDistance t = 0 ↔ t = 0 := by
   constructor
   · intro h
@@ -54,7 +55,7 @@ theorem finiteCyclicCircularDistance_two_mul_le (t : ZMod q) :
   by_cases ht : t = 0
   · subst t
     simp [finiteCyclicCircularDistance]
-  · letI : NeZero t := ⟨ht⟩
+  · let : NeZero t := ⟨ht⟩
     rw [finiteCyclicCircularDistance, ZMod.val_neg_of_ne_zero]
     by_cases hside : t.val ≤ q - t.val
     · rw [min_eq_left hside]
@@ -78,8 +79,7 @@ private theorem finiteCyclic_stdAddChar_sub_one_norm_neg (t : ZMod q) :
     ring
   rw [hfactor, norm_mul, norm_neg]
   have hchar : ‖ZMod.stdAddChar (-t)‖ = 1 := by
-    rw [ZMod.stdAddChar_apply]
-    simp
+    exact Circle.norm_coe (ZMod.toCircle (-t))
   rw [hchar, one_mul]
 
 /-- Exact sine formula using the canonical representative. -/
@@ -89,17 +89,15 @@ private theorem finiteCyclic_stdAddChar_sub_one_norm_eq_valSine
       ‖(2 : ℝ) * Real.sin (Real.pi * (t.val : ℝ) / (q : ℝ))‖ := by
   have hqreal : (q : ℝ) ≠ 0 := by
     exact_mod_cast (NeZero.ne q)
-  rw [ZMod.stdAddChar_apply, ZMod.toCircle_apply, Circle.coe_exp]
+  rw [ZMod.stdAddChar_apply, ZMod.toCircle_apply]
   convert
     Complex.norm_exp_I_mul_ofReal_sub_one
       (2 * Real.pi * (t.val : ℝ) / (q : ℝ)) using 1
   · congr 2
     push_cast
     field_simp [hqreal]
-    ring
   · congr 2
     field_simp [hqreal]
-    ring
 
 /-- Exact multiplier norm in terms of circular distance. -/
 theorem norm_stdAddChar_sub_one_eq_sineCircularDistance (t : ZMod q) :
@@ -146,7 +144,6 @@ theorem finiteCyclicJordanLowerScale_le_norm_stdAddChar_sub_one
             gcongr
       _ = Real.pi / 2 := by
         field_simp [ne_of_gt hq]
-        ring
   have hxpi : x ≤ Real.pi := by
     linarith [Real.pi_pos]
   have hsin : 0 ≤ Real.sin x :=
@@ -196,7 +193,6 @@ theorem norm_inv_stdAddChar_sub_one_le_circularDistance
       simpa [one_div] using hrecip
     _ = (q : ℝ) / (4 * (d : ℝ)) := by
       field_simp [ne_of_gt hq, ne_of_gt hd]
-      ring
 
 /-- Actual circular-distance estimate for the negative-phase interval sum. -/
 theorem norm_sum_stdAddChar_neg_Ico_le_circularDistance
@@ -217,8 +213,8 @@ theorem norm_sum_stdAddChar_neg_Ico_le_circularDistance
       norm_sum_stdAddChar_neg_Ico_le t A B hA ht
     _ ≤ 2 * ((q : ℝ) / (4 * (d : ℝ))) := by
       exact mul_le_mul_of_nonneg_left
-        (by simpa [d] using norm_inv_stdAddChar_sub_one_le_circularDistance
-          (q := q) ht)
+        (by simpa [d] using
+          (norm_inv_stdAddChar_sub_one_le_circularDistance (q := q) ht))
         (by norm_num)
     _ = (q : ℝ) / (2 * (d : ℝ)) := by
       field_simp [ne_of_gt hd]
@@ -249,10 +245,10 @@ theorem norm_sum_stdAddChar_neg_Ico_le_regularCutoff
         norm_sum_stdAddChar_neg_Ico_le_circularDistance
           (q := q) t A B hA ht
     _ = (q : ℝ) * (1 / (2 * (d : ℝ))) := by
-      rw [div_eq_mul_inv, one_div]
+      simp only [div_eq_mul_inv, one_mul]
     _ ≤ (q : ℝ) * (1 / (2 * ((L + 1 : ℕ) : ℝ))) := by
       exact mul_le_mul_of_nonneg_left hrecip (by positivity)
     _ = (q : ℝ) / (2 * (((L + 1 : ℕ) : ℝ))) := by
-      rw [div_eq_mul_inv, one_div]
+      simp only [div_eq_mul_inv, one_mul]
 
 end GRWTSK.NumberTheory.CharacterSums

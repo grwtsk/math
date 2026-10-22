@@ -4,14 +4,12 @@ Human mathematical direction: R.A. Jacob Martone.
 Formalization assistance: OpenAI ChatGPT.
 Imported sources retain their original credits/licenses.
 
-Status: SOURCE_DRAFT / CURRENT_MAIN_IMPORT_CLOSURE_BLOCKED / NOT_KERNEL_AUDITED.
-
-The current-main import closure of the legacy endpoint owners has pre-existing
-hard elaboration failures before this file is reached.  This file records the
-exact definitional dictionary only; it does not certify the endpoint stack.
+The original endpoint coordinates are imported through their thin finite owner.
+The identities and unweighted finite estimates below do not import or certify
+the arithmetic endpoint stack or its all-scale cancellation condition.
 -/
 import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointFiniteCyclicCore
-import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseSummationByPartsFourier
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 
 set_option autoImplicit false
 noncomputable section
@@ -58,6 +56,21 @@ theorem coreGrowingShiftEndpointTransverseCircularDistance_eq_finiteCyclic
     coreGrowingShiftEndpointTransverseCircularDistance j t =
       coreGrowingShiftEndpointFiniteCyclicDistance j t := by
   rfl
+
+/-- The original Jordan scale satisfies the actual multiplier lower bound.
+This specialization uses the unique original endpoint coordinate definitions. -/
+theorem coreGrowingShiftEndpointTransverseMultiplier_norm_lowerBound_via_finiteCyclic
+    (j : ℕ)
+    (t : CoreGrowingShiftEndpointDoubledFourierIndex j) :
+    coreGrowingShiftEndpointTransverseJordanLowerScale j t ≤
+      ‖coreGrowingShiftEndpointTransverseMultiplier j t‖ := by
+  simpa [coreGrowingShiftEndpointTransverseJordanLowerScale,
+    coreGrowingShiftEndpointTransverseCircularDistance,
+    coreGrowingShiftEndpointTransverseMultiplier,
+    GRWTSK.NumberTheory.CharacterSums.finiteCyclicJordanLowerScale,
+    GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance] using
+    GRWTSK.NumberTheory.CharacterSums.finiteCyclicJordanLowerScale_le_norm_stdAddChar_sub_one
+      t
 
 /-- Legacy endpoint inverse multiplier is supplied by the isolated
 Mathlib-only finite cyclic theorem. -/

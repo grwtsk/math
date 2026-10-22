@@ -9,6 +9,7 @@ Issue: #884. Parent: draft PR #879 at
 `32a1f8485ae3502f2ca0c95459eb4390a3223a6a`.
 -/
 import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceFourier
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 
 set_option autoImplicit false
 noncomputable section
@@ -16,23 +17,6 @@ open scoped BigOperators
 open AddChar
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
-
-/-- Doubled cyclic modulus.  The endpoint window has length `Y`, while the
-ambient group has length `2Y`, so every ordinary positive difference below
-`Y` has its literal canonical representative. -/
-def coreGrowingShiftEndpointDoubledFourierModulus (j : ℕ) : ℕ :=
-  2 * coreGrowingShiftEndpointFourierModulus j
-
-instance coreGrowingShiftEndpointDoubledFourierModulus_neZero (j : ℕ) :
-    NeZero (coreGrowingShiftEndpointDoubledFourierModulus j) :=
-  ⟨by
-    unfold coreGrowingShiftEndpointDoubledFourierModulus
-      coreGrowingShiftEndpointFourierModulus
-    positivity⟩
-
-/-- Doubled endpoint coordinate and frequency group. -/
-abbrev CoreGrowingShiftEndpointDoubledFourierIndex (j : ℕ) :=
-  ZMod (coreGrowingShiftEndpointDoubledFourierModulus j)
 
 /-- Canonical representatives identify a finite cyclic group with the
 corresponding `Fin`. -/
