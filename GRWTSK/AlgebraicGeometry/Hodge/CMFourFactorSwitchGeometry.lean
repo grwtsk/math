@@ -285,6 +285,34 @@ theorem MiddlePairingNonvanishingData.pairing_ne_zero
   exact D.pairingData.pairing_scaled_conjugate_ne_zero
     D.beta_ne_zero D.scale_ne_zero
 
+/-- Exact comparison data for the geometric ample-class middle pairing.
+
+The external geometry supplies the identification of the integral/cup-product
+pairing with the abstract positive conjugate pairing.  Scalar proportionality
+of gamma with the conjugate partner is recorded separately, so the logical
+dependencies remain auditable. -/
+structure AmpleClassMiddlePairingComparison where
+  pairingData : PositiveConjugatePairing V
+  beta : V
+  beta_ne_zero : beta ≠ 0
+  gamma : V
+  scale : ℂ
+  scale_ne_zero : scale ≠ 0
+  gamma_eq :
+    gamma = scale • pairingData.conjugatePartner beta
+  q : ℂ
+  q_eq :
+    q = pairingData.pairing beta gamma
+
+/-- Once the ample-class pairing has been identified with the positive
+conjugate pairing, the manuscript scalar q_i is nonzero locally. -/
+theorem AmpleClassMiddlePairingComparison.q_ne_zero
+    (D : AmpleClassMiddlePairingComparison V) :
+    D.q ≠ 0 := by
+  rw [D.q_eq, D.gamma_eq]
+  exact D.pairingData.pairing_scaled_conjugate_ne_zero
+    D.beta_ne_zero D.scale_ne_zero
+
 /-- A finite product of nonzero middle pairing scalars is nonzero. -/
 theorem product_middlePairing_ne_zero
     {J : Type*} [Fintype J]
@@ -294,6 +322,25 @@ theorem product_middlePairing_ne_zero
   exact Finset.prod_ne_zero_iff.mpr (by
     intro j _
     exact hq j)
+
+/-- Signed scalar in the manuscript transition-composition formula. -/
+def transitionCompositionScalar
+    {J : Type*} [Fintype J]
+    (parity : ℤ)
+    (q : J → ℂ) : ℂ :=
+  ((-1 : ℂ) ^ parity.natAbs) * ∏ j, q j
+
+/-- The signed transition-composition scalar is nonzero as soon as every
+middle pairing scalar is nonzero. -/
+theorem transitionCompositionScalar_ne_zero
+    {J : Type*} [Fintype J]
+    (parity : ℤ)
+    (q : J → ℂ)
+    (hq : ∀ j, q j ≠ 0) :
+    transitionCompositionScalar parity q ≠ 0 := by
+  unfold transitionCompositionScalar
+  exact mul_ne_zero (pow_ne_zero _ (by norm_num))
+    (product_middlePairing_ne_zero q hq)
 
 end PositiveMiddlePairing
 
