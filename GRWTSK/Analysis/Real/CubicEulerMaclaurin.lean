@@ -3,6 +3,7 @@ Human research direction: R.A. Jacob Martone. Proof drafting assistance: OpenAI 
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Tactic.FunProp
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.LinearCombination
@@ -49,12 +50,12 @@ theorem hasDerivAt_first (u : ℝ) : HasDerivAt first 1 u :=
 
 theorem hasDerivAt_second (u : ℝ) : HasDerivAt second (first u) u := by
   convert ((((hasDerivAt_id u).pow 2).sub (hasDerivAt_id u)).add_const (1 / 6)).div_const 2
-    using 1 <;> simp [second, first] <;> ring
+    using 1 <;> first | rfl | (dsimp [second, first]; ring)
 
 theorem hasDerivAt_third (u : ℝ) : HasDerivAt third (second u) u := by
   convert (((hasDerivAt_id u).mul ((hasDerivAt_id u).sub_const (1 / 2))).mul
     ((hasDerivAt_id u).sub_const 1)).div_const 6 using 1 <;>
-    simp [third, second] <;> ring
+    first | rfl | (dsimp [third, second]; ring)
 
 /-- Uniform on the WHOLE cell, not just at the endpoints or sampled nodes. -/
 theorem abs_third_le (u : ℝ) (hu : u ∈ Icc (0 : ℝ) 1) : |third u| ≤ 1 / 48 := by
@@ -63,7 +64,7 @@ theorem abs_third_le (u : ℝ) (hu : u ∈ Icc (0 : ℝ) 1) : |third u| ≤ 1 / 
   have hm : |u - 1 / 2| ≤ 1 / 2 := abs_le.mpr ⟨by linarith [hu.1], by linarith [hu.2]⟩
   have he : third u = -(u * (1 - u)) * (u - 1 / 2) / 6 := by unfold third; ring
   rw [he, abs_div, abs_mul, abs_neg, abs_of_nonneg hp]
-  norm_num only [abs_ofNat]
+  rw [show |(6 : ℝ)| = 6 by norm_num]
   have hb := mul_le_mul hp' hm (abs_nonneg _) (by norm_num : (0 : ℝ) ≤ 1 / 4)
   linarith
 
@@ -80,7 +81,10 @@ theorem hasDerivAt_combined (f f₁ f₂ : ℝ → ℂ) (u : ℝ) (v₁ v₂ v�
   have hd := (((hasDerivAt_first u).ofReal_comp.mul hf).sub
     ((hasDerivAt_second u).ofReal_comp.mul hf₁)).add
     ((hasDerivAt_third u).ofReal_comp.mul hf₂)
-  convert hd using 1 <;> rw [h₁, h₂] <;> ring
+  apply hd.congr_deriv
+  rw [h₁, h₂]
+  simp only [Complex.ofReal_one]
+  ring
 
 /-- Exact one-cell summation. Continuity of the third derivative is explicit. -/
 theorem one_cell (f f₁ f₂ f₃ : ℝ → ℂ)

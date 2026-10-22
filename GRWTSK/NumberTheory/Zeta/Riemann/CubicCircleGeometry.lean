@@ -36,7 +36,9 @@ theorem disk_geometry (N : ℕ) (hN : 2 ≤ N) (c s : ℂ)
   have hdist : ‖s - c‖ ≤ 3 := by simpa [mem_closedBall, dist_eq_norm] using hs
   have hcr : c.re = 2 := by rcases hc with rfl | rfl <;> simp
   have hci : |c.im| = (N : ℝ) + 3 / 2 := by
-    rcases hc with rfl | rfl <;> simp [abs_of_nonneg (by positivity : (0 : ℝ) ≤ (N : ℝ) + 3 / 2)]
+    rcases hc with rfl | rfl
+    · rw [upperCenter_im, abs_of_nonneg (by positivity)]
+    · rw [lowerCenter_im, abs_neg, abs_of_nonneg (by positivity)]
   have hreal : |s.re - 2| ≤ 3 := by
     simpa only [Complex.sub_re, hcr] using (Complex.abs_re_le_norm (s - c)).trans hdist
   have him : |s.im - c.im| ≤ 3 :=
@@ -49,7 +51,7 @@ theorem disk_geometry (N : ℕ) (hN : 2 ≤ N) (c s : ℂ)
   have hcn : ‖c‖ ≤ (N : ℝ) + 7 / 2 := by
     have hparts := Complex.norm_le_abs_re_add_abs_im c
     rw [hcr, hci] at hparts
-    norm_num only [abs_ofNat] at hparts
+    norm_num at hparts
     linarith
   have hsn : ‖s‖ ≤ (N : ℝ) + 13 / 2 :=
     (norm_le_norm_sub_add s c).trans (by linarith)
@@ -67,7 +69,7 @@ theorem norm_inverse_sub_one_le (s : ℂ) (hs : (1 / 2 : ℝ) ≤ |s.im|) :
   have h := div_le_div_of_nonneg_left (by norm_num : (0 : ℝ) ≤ 1)
     (by norm_num : (0 : ℝ) < 1 / 2) hn
   norm_num at h
-  exact h
+  simpa only [one_div] using h
 
 /-- This scalar estimate is uniform for v>=4, not inferred from finitely many N. -/
 theorem scalar_cubic_budget (v : ℝ) (hv : 4 ≤ v) :
@@ -99,8 +101,8 @@ theorem norm_le_cube_of_cubic_identity (s value R : ℂ) (v : ℝ) (hv : 4 ≤ v
   rw [he]
   have ht := (norm_sub_le ((s - 1)⁻¹ + 1 / 2 + s / 12)
     (s * (s + 1) * (s + 2) * R)).trans
-      (add_le_add_right ((norm_add_le ((s - 1)⁻¹ + 1 / 2) (s / 12)).trans
-        (add_le_add_right (norm_add_le ((s - 1)⁻¹) (1 / 2)) _)) _)
+      (add_le_add_left ((norm_add_le ((s - 1)⁻¹ + 1 / 2) (s / 12)).trans
+        (add_le_add_left (norm_add_le ((s - 1)⁻¹) (1 / 2)) _)) _)
   norm_num only [norm_div, norm_one, Complex.norm_ofNat] at ht
   exact (show ‖(s - 1)⁻¹ + 1 / 2 + s / 12 - s * (s + 1) * (s + 2) * R‖ ≤
     5 / 2 + v / 4 + (9 / 16) * v ^ 3 by linarith).trans (scalar_cubic_budget v hv)

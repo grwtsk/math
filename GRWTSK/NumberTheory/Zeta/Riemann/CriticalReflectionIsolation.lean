@@ -47,13 +47,13 @@ theorem reflection_fixed_iff (s : ℂ) :
     simp [criticalReflection] at realEquality
     linarith
   · intro onLine
-    apply Complex.ext <;> simp [criticalReflection, onLine] <;> norm_num
+    apply Complex.ext <;> norm_num [criticalReflection, onLine]
 
 /-- Reflection is an isometry; its minus sign must not be replaced by averaging. -/
 theorem reflection_norm_sub (s c : ℂ) :
     ‖criticalReflection s - criticalReflection c‖ = ‖s - c‖ := by
   have identity : criticalReflection s - criticalReflection c = -conj (s - c) := by
-    simp [criticalReflection] <;> ring
+    simp [criticalReflection]
   rw [identity, norm_neg, Complex.norm_conj]
 
 /-- Exact centering, not merely intersection with the line, makes this disk invariant. -/

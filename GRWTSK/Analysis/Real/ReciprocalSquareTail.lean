@@ -33,7 +33,7 @@ theorem reciprocal_square_le_difference (u : ℝ) (hu : 1 < u) :
       div_le_div_of_nonneg_left (by norm_num) (mul_pos hum hu0) (by nlinarith)
     _ = 1 / (u - 1) - 1 / u := by
       field_simp [ne_of_gt hu0, ne_of_gt hum]
-      <;> ring
+      ring
 
 /-- Exact telescoping endpoint accounting for any finite number of terms. -/
 theorem finite_square_tail_le (q : ℝ) (hq : 1 < q) (N : ℕ) :
@@ -44,7 +44,7 @@ theorem finite_square_tail_le (q : ℝ) (hq : 1 < q) (N : ℕ) :
   | succ N ih =>
       rw [Finset.sum_range_succ]
       have hstep := reciprocal_square_le_difference (q + (N : ℝ))
-        (by linarith [Nat.cast_nonneg (R := ℝ) N])
+        (by linarith [Nat.cast_nonneg (α := ℝ) N])
       have hsum := add_le_add ih hstep
       calc
         _ ≤ (1 / (q - 1) - 1 / (q + (N : ℝ) - 1)) +
@@ -55,7 +55,7 @@ theorem finite_square_tail_le (q : ℝ) (hq : 1 < q) (N : ℕ) :
 theorem finite_square_tail_le_reciprocal (q : ℝ) (hq : 1 < q) (N : ℕ) :
     (∑ k ∈ Finset.range N, 1 / (q + (k : ℝ)) ^ 2) ≤ 1 / (q - 1) := by
   have hp : 0 ≤ 1 / (q + (N : ℝ) - 1) := by
-    have hn := Nat.cast_nonneg (R := ℝ) N
+    have hn := Nat.cast_nonneg (α := ℝ) N
     apply one_div_nonneg.mpr
     linarith
   linarith [finite_square_tail_le q hq N]

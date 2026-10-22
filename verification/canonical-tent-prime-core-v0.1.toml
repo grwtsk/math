@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "canonical-tent-prime-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-tent-absolute-core-v0.1.toml"
-inherited_target_blob = "7b05afb0403d86674a4cd90b90d0aff873f0330f"
+# Original pre-repair inherited_target_blob = "7b05afb0403d86674a4cd90b90d0aff873f0330f".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "d7bb038bd2f6ede04a3c9aa8a204b518483b776f"
 receipt_policy = "Bind exact new commit/tree externally. Static targets and diagnostics are not execution authority or acceptance."
 
 [trust]
@@ -117,7 +122,9 @@ disposition = "INHERITED_NOT_ACCEPTED"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
-source_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+# Original pre-repair source_blob = "892f796ab9074813b89f58b2321f2683c80bef7b".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "7dcaef4040533a9b3f76d1cf46b2bba88622fdad"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[upstream_sources]]

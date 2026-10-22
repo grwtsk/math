@@ -101,13 +101,13 @@ theorem summable_integral_norm_cells (q : ℝ) (hq : 1 ≤ q) (s : ℂ) (hs : -2
   (summable_cell_majorant q s.re hq hs).of_nonneg_of_le
     (fun k => intervalIntegral.integral_nonneg (by norm_num) (fun u _ => norm_nonneg _))
     (fun k => integral_norm_cell_le (q + (k : ℝ)) s.re
-      (by linarith [Nat.cast_nonneg (R := ℝ) k]) hs s le_rfl)
+      (by linarith [Nat.cast_nonneg (α := ℝ) k]) hs s le_rfl)
 
 theorem summable_norm_cells (q : ℝ) (hq : 1 ≤ q) (s : ℂ) (hs : -2 < s.re) :
     Summable (fun k : ℕ => ‖cellRemainder (q + (k : ℝ)) (-s)‖) :=
   (summable_cell_majorant q s.re hq hs).of_nonneg_of_le (fun _ => norm_nonneg _)
     (fun k => norm_cell_le (q + (k : ℝ)) s.re
-      (by linarith [Nat.cast_nonneg (R := ℝ) k]) hs s le_rfl)
+      (by linarith [Nat.cast_nonneg (α := ℝ) k]) hs s le_rfl)
 
 theorem summable_cells (q : ℝ) (hq : 1 ≤ q) (s : ℂ) (hs : -2 < s.re) :
     Summable (fun k : ℕ => cellRemainder (q + (k : ℝ)) (-s)) :=
@@ -123,14 +123,14 @@ theorem norm_tsum_cells_le (q σ₀ : ℝ) (hq : 1 ≤ q) (hσ : -2 < σ₀)
     _ ≤ ∑' k : ℕ, ‖cellRemainder (q + (k : ℝ)) (-s)‖ :=
       norm_tsum_le_tsum_norm (summable_norm_cells q hq s hss)
     _ ≤ ∑' k : ℕ, powerCell (q + (k : ℝ)) (σ₀ + 2) / 48 :=
-      tsum_le_tsum (fun k => norm_cell_le (q + (k : ℝ)) σ₀
-        (by linarith [Nat.cast_nonneg (R := ℝ) k]) hσ s hs)
-        (summable_norm_cells q hq s hss) (summable_cell_majorant q σ₀ hq hσ)
+      hasSum_le (fun k : ℕ => norm_cell_le (q + (k : ℝ)) σ₀
+        (by linarith [Nat.cast_nonneg (α := ℝ) k]) hσ s hs)
+        (summable_norm_cells q hq s hss).hasSum (summable_cell_majorant q σ₀ hq hσ).hasSum
     _ = (∑' k : ℕ, powerCell (q + (k : ℝ)) (σ₀ + 2)) / 48 := by rw [tsum_div_const]
     _ ≤ (decayPower (σ₀ + 2) q / (σ₀ + 2)) / 48 :=
       div_le_div_of_nonneg_right (tsum_powerCell_le q (σ₀ + 2) (by linarith) (by linarith))
         (by norm_num)
-    _ = _ := by ring
+    _ = _ := by rw [div_div, mul_comm (σ₀ + 2) (48 : ℝ)]
 
 theorem norm_cubicRemainder_le (s : ℂ) (hs : -2 < s.re) :
     ‖cubicRemainder s‖ ≤ 1 / (48 * (s.re + 2)) := by
@@ -154,7 +154,7 @@ theorem norm_cubicRemainder_sub_prefix_le (σ₀ : ℝ) (hσ : -2 < σ₀)
       decayPower (σ₀ + 2) ((N : ℝ) + 1) / (48 * (σ₀ + 2)) := by
   rw [cubicRemainder_eq_prefix_add_tail s (hσ.trans_le hs) N, add_sub_cancel_left]
   exact norm_tsum_cells_le ((N : ℝ) + 1) σ₀
-    (by linarith [Nat.cast_nonneg (R := ℝ) N]) hσ s hs
+    (by linarith [Nat.cast_nonneg (α := ℝ) N]) hσ s hs
 
 /-- On the closed half-plane needed by the Jensen disks, the tail has a rational cutoff factor. -/
 theorem norm_sub_prefix_le_inverse (s : ℂ) (hs : -1 ≤ s.re) (N : ℕ) :
@@ -166,7 +166,7 @@ theorem norm_sub_prefix_le_inverse (s : ℂ) (hs : -1 ≤ s.re) (N : ℕ) :
     simp only [decayPower, neg_one_mul, Real.exp_neg, Real.exp_log hq, one_div]
   norm_num only [show (-1 : ℝ) + 2 = 1 by norm_num, mul_one] at hb
   rw [he] at hb
-  convert hb using 1 <;> ring
+  simpa only [div_div, mul_comm (48 : ℝ)] using hb
 
 /-- The useful disk-domain remainder bound no longer needs a caller-supplied radius. -/
 theorem norm_cubicRemainder_le_one_div_48 (s : ℂ) (hs : -1 ≤ s.re) :

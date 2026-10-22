@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "legendre-enclosed-kernel-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -167,7 +170,9 @@ disposition = "INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
 path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
-source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
 origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
 disposition = "RETAINED_PRODUCER_BLOB"
 

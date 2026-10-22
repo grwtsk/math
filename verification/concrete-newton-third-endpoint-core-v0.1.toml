@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "concrete-newton-third-endpoint-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/integer-taylor-seed-core-v0.1.toml"
-inherited_target_blob = "1f46f53b53a6a71ad579655cd8803fc6b19ac4c4"
+# Original pre-repair inherited_target_blob = "1f46f53b53a6a71ad579655cd8803fc6b19ac4c4".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "b8534110de287a208830fc8781ff26bd30759b93"
 receipt_policy = "Exact new commit/tree must be bound externally; this static target authorizes no execution."
 
 [trust]

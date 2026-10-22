@@ -2,7 +2,7 @@
 Human research direction: R.A. Jacob Martone. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Analysis.Complex.JensenFormula
-import Mathlib.Tactic.NormCast
+import Lean.Elab.Tactic.NormCast
 import Mathlib.Tactic.Positivity
 
 set_option autoImplicit false
@@ -59,7 +59,8 @@ theorem finite_divisor_sum_le_jensen (f : ℂ → ℂ) (c : ℂ) (r R M : ℝ)
     (by simpa [abs_of_pos hR] using hbound)
   have hcast : ((∑ p ∈ S, divisor f (closedBall c r) p : ℤ) : ℝ) ≤
       ((∑ᶠ p, divisor f (closedBall c r) p : ℤ) : ℝ) := by exact_mod_cast hsub
-  exact hcast.trans (by simpa [abs_of_pos hr] using hj)
+  rw [abs_of_pos hr] at hj
+  exact hcast.trans hj
 
 /-- The particular nested disks used for the local three-unit height band. -/
 theorem log_six_fifths_pos : 0 < Real.log (6 / 5 : ℝ) :=
