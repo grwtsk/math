@@ -1350,6 +1350,39 @@ The remaining non-algebraicity frontier is now tensor-level: provide the actual 
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4aa. End-to-end atomic switch composition from raw tensor stability
+
+The invariant-aware atomic switch path is now composed end to end.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+InvariantAtomicTensorDataSupplier
+invariantAtomicSwitchTransitionSupplierOfTensorData
+~~~
+
+For each atomic switch, the only switch-specific tensor input is now:
+
+- the actual algebraic-number tensor;
+- the actual complex Hodge subspace;
+- membership of every scalar conjugate of that tensor in the Hodge subspace.
+
+From that data, local source performs the rest:
+
+1. construct the canonical four old/new sign rows;
+2. prove `FourBalance`;
+3. derive the all-conjugate `AllConjugatesType22` certificate;
+4. build `FourFactorTensorDescentData`;
+5. apply local trace descent to obtain the rational four-factor Hodge witness;
+6. invoke the single independent `FourFactorAlgebraicitySupplier`;
+7. package the algebraic-cycle output as the switched four-factor core;
+8. add unchanged-row two-factor identity classes;
+9. assemble the full atomic transition.
+
+Thus the remaining pre-algebraicity switch-specific mathematical bridge is now exactly scalar-conjugate stability of the actual switched tensor. It is represented by `InvariantAtomicTensorDataSupplier`.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
