@@ -620,4 +620,35 @@ theorem dyadicSignedMixedEnergy_eq_antipodal_count
   rw [hdetector, hsum]
   ring
 
+
+/-- The exact canonical lifted Liouville energy expressed through
+the antipodal root-pair count. This is a finite identity, not an
+asymptotic bound or a proof of Chowla cancellation. -/
+theorem canonicalOddLiftEnergy_eq_antipodal_count
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) :
+    (4 : ℚ) * liouvilleAllOrderEnergy (2 * M) (oddLiftOffsets H) =
+      liouvilleAllOrderEnergy M H +
+        oddResidualAllOrderEnergy M H - 2 +
+          2 * (((2 : ℚ) ^ H.card *
+            (antipodalPairCount M H : ℚ)) / (M : ℚ) ^ 2) := by
+  have henergy := canonicalOddLiftEnergy_signed_identity M H hM
+  have hcount := dyadicSignedMixedEnergy_eq_antipodal_count M H hM
+  rw [hcount] at henergy
+  linear_combination henergy
+
+/-- A lower obstruction from the nonnegative antipodal pair count:
+large marginal energies cannot both disappear from the exact
+identity unless compensated within its fixed constant two. -/
+theorem canonicalOddLiftEnergy_antipodal_lower_bound
+    (M : ℕ) (H : Finset ℕ) (hM : 0 < M) :
+    liouvilleAllOrderEnergy M H +
+      oddResidualAllOrderEnergy M H - 2 ≤
+        (4 : ℚ) *
+          liouvilleAllOrderEnergy (2 * M) (oddLiftOffsets H) := by
+  have h := canonicalOddLiftEnergy_eq_antipodal_count M H hM
+  have hnonneg : (0 : ℚ) ≤
+      (((2 : ℚ) ^ H.card * (antipodalPairCount M H : ℚ)) /
+        (M : ℚ) ^ 2) := by positivity
+  linarith
+
 end GRWTSK.NumberTheory.LiouvilleWalshSourceBridge
