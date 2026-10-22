@@ -67,10 +67,19 @@ theorem walshPolynomial_parseval (K : Finset (Finset ι))
           rw [Finset.sum_comm]
           apply Finset.sum_congr rfl
           intro T _
-          rw [← Finset.mul_sum]
-          apply Finset.sum_congr rfl
-          intro a _
-          ring
+          calc
+            (∑ a : ι → Bool,
+              (c S * walshCharacter S a) * (c T * walshCharacter T a)) =
+                ∑ a : ι → Bool,
+                  (c S * c T) *
+                    (walshCharacter S a * walshCharacter T a) := by
+              apply Finset.sum_congr rfl
+              intro a _
+              ring
+            _ = (c S * c T) *
+                  (∑ a : ι → Bool,
+                    walshCharacter S a * walshCharacter T a) := by
+              rw [Finset.mul_sum]
     _ = (Fintype.card (ι → Bool) : ℚ) * ∑ S ∈ K, (c S) ^ 2 := by
       simp_rw [walshCharacter_orthogonality]
       rw [Finset.mul_sum]
