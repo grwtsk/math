@@ -1226,3 +1226,72 @@ generic Walsh probability target remains unchanged.
 **Evidence:** SOURCE_REVIEWED / PINNED_IMPORT_UNRESOLVED /
 INERT_REPAIR_PROPOSED / NOT_RUN / NOT_KERNEL_AUDITED /
 ALL_ORDER_CHOWLA_OPEN.
+
+## 19. An exact sublinear fixed-to-growing shift quantifier obstruction
+
+**Date:** 2026-10-22. **Direct inspected parent head:**
+`28e070b53d87b73f1d765c97de9061350fba28af`.
+
+A new independently isolated mathematical source file,
+`GRWTSK/NumberTheory/ArithmeticFunctions/FixedShiftUniformityObstruction.lean`
+(blob `3416af4f7e2e4228e01f9b4b8ee5dd8a50540e45`),
+now drafts an exact theorem **refuting the abstract quantifier
+exchange** from fixed-form decay to growing-shift uniform decay.
+
+Define an abstract rational source error
+
+```text
+F(N,h) = if N=h*h then 1 else 0.
+```
+
+For every fixed h, the family is IDENTICALLY zero after
+N>h². More strongly, with a SINGLE power exponent one,
+
+```text
+for all N,h: |F(N,h)| <= (h²+1)/(N+1).
+```
+
+The bound permits an h-dependent constant `C_h=h²+1`,
+analogous to the form-dependent constants in the published
+fixed-form Liouville two-point theorem.
+
+Yet for each k≥1, on the genuine SUBLINEAR window
+
+```text
+N_k = k², H_k = {1,...,k}, r_k=k,
+r_k/N_k = 1/k -> 0,
+
+F(N_k,k)=1.
+```
+
+Thus no eventual bound `epsilon<1` can hold
+simultaneously for all `h∈H_k`, even while the
+finite-sofic seam cost tends to zero. The proposed Lean
+theorem `fixed_power_saving_does_not_imply_sublinear_uniformity`
+states this nonimplication at a fixed threshold 1/2.
+
+**Critical scope:** F is an ABSTRACT counterexample to
+logical implication; it is not presented as any actual
+Liouville/Möbius correlation, and does not refute the
+arithmetic possibility of growing-shift cancellation.
+It proves precisely that a separate positive arithmetic
+supplier is necessary. Two-point fixed-form bounds cannot
+be promoted by quantifier exchange to the all-order
+growing-window Walsh energy interface.
+
+Standalone note:
+`docs/reviews/fixed-shift-uniformity-obstruction-441.md`.
+Standalone passive target:
+`verification/fixed-shift-uniformity-obstruction-441-v0.1.toml`,
+8 proposed theorem heads, 2 definitions, and strict
+source-to-kernel guards.
+
+Independent integer checks covered 62,073 pointwise
+horizon/shift pairs and 320 square-scale growing windows,
+without discrepancies. These are NOT Lean proof checks.
+No new root import, source-theorem promotion, external
+proof adoption, analytic cancellation or RH claim occurred.
+
+**Evidence:** `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+ABSTRACT_FIXED_TO_GROWING_NONIMPLICATION /
+GROWING_SHIFT_ALL_ORDER_CHOWLA_OPEN`.
