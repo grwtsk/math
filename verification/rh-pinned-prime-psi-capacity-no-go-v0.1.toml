@@ -58,7 +58,7 @@ no_claim_other_nonlinear_sources_fail = true
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiCapacityNoGo"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightPsiCapacityNoGo.lean"
-blob = "389076c20a91c575a53ce1e4d74fe9a5baffe857"
+blob = "29ff3383533da9fe7eb4b4f45f2bc612a031dbad"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiCapacityNoGoControls"
