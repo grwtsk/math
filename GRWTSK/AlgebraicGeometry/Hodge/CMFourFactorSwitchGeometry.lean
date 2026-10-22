@@ -114,6 +114,67 @@ structure FourFactorSwitchCoreWitness
   nonzero : Prop
   nonzero_proof : nonzero
 
+/-- Canonical four-row profile attached to one atomic switch.
+
+This packages the two selected old rows and the corresponding two new rows,
+together with the local four-label balance theorem and its all-conjugate
+(2,2) certificate.  It contains no tensor or algebraicity data. -/
+structure AtomicSwitchFourFactorProfile
+    (conj : G → G)
+    (hconj : Function.Involutive conj)
+    (x target : I → G → ℤ)
+    (hxsign : ∀ r h, IsSign (x r h))
+    (hxodd : IsOddMatrix conj x)
+    (g : G) (hg : g ≠ conj g)
+    (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => target r g)) where
+  v₁ : OddSignRow G conj
+  v₂ : OddSignRow G conj
+  v₃ : OddSignRow G conj
+  v₄ : OddSignRow G conj
+  balance : FourBalance v₁ v₂ v₃ v₄
+  type22 :
+    CMFourFactorAlgebraicity.AllConjugatesType22
+      G conj v₁ v₂ v₃ v₄
+
+/-- The canonical atomic-switch profile is completely local: the four rows are
+the two selected rows before and after the switch, balance is the local
+combinatorial theorem, and the (2,2) certificate follows from balance. -/
+def canonicalAtomicSwitchFourFactorProfile
+    (conj : G → G)
+    (hconj : Function.Involutive conj)
+    (x target : I → G → ℤ)
+    (hxsign : ∀ r h, IsSign (x r h))
+    (hxodd : IsOddMatrix conj x)
+    (g : G) (hg : g ≠ conj g)
+    (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => target r g)) :
+    AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j := by
+  let x' := switchConjugatePair conj x g i.1 j.1
+  have hx'sign : ∀ r h, IsSign (x' r h) :=
+    switchConjugatePair_isSign conj x hxsign g i.1 j.1
+  have hx'odd : IsOddMatrix conj x' :=
+    switchConjugatePair_odd conj hconj x hxodd g hg i.1 j.1
+  let v₁ := oddSignRowOfMatrix conj x hxsign hxodd i.1
+  let v₂ := oddSignRowOfMatrix conj x hxsign hxodd j.1
+  let v₃ := oddSignRowOfMatrix conj x' hx'sign hx'odd i.1
+  let v₄ := oddSignRowOfMatrix conj x' hx'sign hx'odd j.1
+  have hbal : FourBalance v₁ v₂ v₃ v₄ := by
+    simpa [v₁, v₂, v₃, v₄, x'] using
+      atomicSwitch_fourBalance
+        conj hconj x target hxsign hxodd g hg i j
+  exact {
+    v₁ := v₁
+    v₂ := v₂
+    v₃ := v₃
+    v₄ := v₄
+    balance := hbal
+    type22 :=
+      CMFourFactorAlgebraicity.allConjugatesType22_of_fourBalance
+        v₁ v₂ v₃ v₄ hbal
+  }
+
 /-- Existential package for the rational four-factor Hodge witness attached
 to one switched core.
 
