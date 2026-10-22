@@ -2384,3 +2384,36 @@ id = "supersede-global-algebraicnumbers-eigenline-support"
 status = "ARCHITECTURE_SUPERSEDED"
 reason = "A finite-field embedding eigenspace condition quantifies over the finite field, while an AlgebraicNumbers embedding eigenspace condition quantifies over all AlgebraicNumbers. Direct inclusion of a finite-level eigenvector therefore does not by itself supply the stronger global eigenvector property."
 replacement = "CMFiniteFourEmbeddingLineVectors + CMFiniteFourfoldAssembly + CMFiniteTransportedGeneratorHodgeData"
+
+
+[[local_target]]
+name = "finite-CM four factors carry actual weight-one realizations"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourFactorActualTyping"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "all factors remain over one finite Galois CM field",
+  "does not compare the actual H1 tensor with the finite assembly target"
+]
+
+[[local_target]]
+name = "finite-CM switch alignment converts to actual H1 alignment"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourFactorSwitchAlignment.toActualAlignment"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "finite-CM switched canonical pure tensor lies in actual H22"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourFactorSwitchAlignment.canonicalPureTensor_mem_H22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four strengthened WeightOneCMRealization instances over the same finite Galois CM field",
+  "finite switch alignment",
+  "standard fourfold actual Hodge tensor rule"
+]
+nonclaims = [
+  "actual H22 membership only",
+  "comparison to the finite assembled generator remains separate",
+  "no algebraicity conclusion"
+]
