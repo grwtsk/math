@@ -1207,6 +1207,42 @@ This source edit also repairs the declaration order so `IdentityTransitionSuppli
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4v. Switched-core algebraicity is unified with the existing four-factor supplier
+
+The atomic switched-core interface no longer introduces a second independent algebraicity theorem.
+
+`CMFourFactorSwitchGeometry.lean` now imports the existing
+`CMFourFactorAlgebraicity` boundary and introduces:
+
+~~~text
+SwitchCoreRationalWitnessPackage
+SwitchCoreRationalWitnessAdapter
+AlgebraicCycleToSwitchCoreAdapter
+fourFactorSwitchCoreSupplierOfAlgebraicity
+~~~
+
+The dependency is now:
+
+[
+	ext{atomic switched configuration}
+	o
+	ext{rational four-factor Hodge witness}
+	o
+	ext{FourFactorAlgebraicitySupplier}
+	o
+	ext{algebraic-cycle witness}
+	o
+	ext{opaque switched-core witness}.
+]
+
+Only `FourFactorAlgebraicitySupplier` carries algebraicity content.
+
+The first adapter identifies the two-row atomic switch with the corresponding rational four-factor Hodge witness. The second only repackages the resulting algebraic-cycle witness into the transition layer's opaque core type.
+
+Thus the repository has one independent four-factor algebraicity boundary, not two.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
