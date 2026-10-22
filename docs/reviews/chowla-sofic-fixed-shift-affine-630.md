@@ -285,3 +285,47 @@ Chowla theorem nor GUE, Montgomery pair correlation, or RH follows.
 OPENAI_SOLUTION_SOURCE_PRESENT / TRANSITIVE_TRUST_NOT_AUDITED /
 CROSS_TOOLCHAIN_PORT_OPEN / FIXED_FORM_ADAPTER_OPEN /
 GROWING_SHIFT_ALL_ORDER_SUPPLIER_OPEN`.
+
+
+## 8. Direct complex source comparison supersedes dyadic specialization as the primary fixed-h route
+
+A later bounded increment introduces the **simpler direct fixed-h adapter**:
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedFormComplexAdapter.lean`,
+source blob `7e2bec5025d39d375c9ff8e9f5a826c8fcf7b8ff`.
+
+For every fixed `h>0`, the original pair
+`lambda(n+1)*lambda(n+1+h)` is already an affine pair
+`(m,m+h)` of determinant `h`, after the exact reindexing
+`m=n+1`. Thus
+
+```text
+sum_(n< N) lambda(n+1)*lambda(n+1+h)
+    = sum_(m in Icc 1 N) lambda(m)*lambda(m+h).
+```
+
+This direct route matches the public OpenAI fixed-affine
+positive-index convention **without any dyadic split or correction**.
+The two-parity identities above remain useful source-specific
+arithmetical identities and hostile sign controls, but they
+are not logically required merely to apply a verified
+fixed-nonproportional affine saving theorem at each fixed h.
+
+The new source reproduces the complex affine sum signature
+locally, proves source-drafted integer-to-complex-cast and
+norm identities, and defines an **uninstantiated**
+`FixedNonproportionalAffineLogSaving : Prop`. Its conditional
+`fixedShift_liouville_logSaving_of_affine` preserves the
+absolute common exponent c, form-dependent constant C_h,
+full real X>=3 hypothesis, floor cutoff, and `Real.rpow`.
+No external theorem was actually imported or kernel checked.
+
+The dedicated note
+`docs/reviews/chowla-sofic-direct-fixed-form-complex-630.md`
+and standalone three-module target
+`verification/liouville-direct-fixed-form-complex-630-v0.1.toml`
+now govern this more economical direct path. The earlier
+two-module arithmetic target remains unchanged and distinct.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+EXTERNAL_PROOF_NOT_IMPORTED / FIXED_FORM_PORT_OPEN /
+GROWING_SHIFT_ALL_ORDER_CHOWLA_OPEN.
