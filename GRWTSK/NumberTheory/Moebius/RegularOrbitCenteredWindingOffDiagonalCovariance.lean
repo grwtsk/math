@@ -172,13 +172,80 @@ theorem centeredWindingLagPartitionStatement :
   exact positiveCongruentCenterDifference_has_windingLag
     b d c₁ c₂ hc₁ hc₂ hlt hmod
 
-/-- The exact lag-sum equality is intentionally exposed as a downstream
-finite-sum reindexing obligation.  The partition theorem above discharges the
-number-theoretic content without using an axiom or placeholder. -/
-def CenteredWindingLagSumReindexing : Prop :=
-  ∀ b d r : ℕ, ∀ _hd : NeZero d, ∀ H : Finset ℕ,
+/-- Canonical winding-lag covariance, retaining the ordered center-pair
+surface but making the positive winding lag existentially explicit.  The
+partition theorem above proves this predicate is exactly the old congruence
+predicate. -/
+def parityCenteredIntegerCoordinateLagPartitionCovariance
+    (b d r : ℕ) [NeZero d]
+    (H : Finset ℕ) : ℝ :=
+  4 * ∑ c₁ ∈ Finset.range (b + 1),
+    ∑ c₂ ∈ Finset.range (b + 1),
+      if (∃ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
+            (c₂ = c₁ + z * (d * d) ∨ c₁ = c₂ + z * (d * d))) then
+        parityCenteredIntegerCoordinateAmplitude b r H c₁ *
+          parityCenteredIntegerCoordinateAmplitude b r H c₂
+      else 0
+
+/-- Exact finite reindexing: unequal congruent center pairs are precisely the
+two orientations of a positive winding lag. -/
+theorem parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_lagPartition
+    (b d r : ℕ) [NeZero d]
+    (H : Finset ℕ) :
     parityCenteredIntegerCoordinateOffDiagonalCovariance b d r H =
-      parityCenteredIntegerCoordinateWindingLagSum b d r H
+      parityCenteredIntegerCoordinateLagPartitionCovariance b d r H := by
+  classical
+  unfold parityCenteredIntegerCoordinateOffDiagonalCovariance
+    parityCenteredIntegerCoordinateLagPartitionCovariance
+  apply congrArg (fun x : ℝ => 4 * x)
+  apply Finset.sum_congr rfl
+  intro c₁ hc₁
+  apply Finset.sum_congr rfl
+  intro c₂ hc₂
+  have hc₁b : c₁ < b + 1 := Finset.mem_range.mp hc₁
+  have hc₂b : c₂ < b + 1 := Finset.mem_range.mp hc₂
+  by_cases hold : c₁ ≡ c₂ [MOD d * d] ∧ c₁ ≠ c₂
+  · have hor : c₁ < c₂ ∨ c₂ < c₁ := by omega
+    have hex :
+        ∃ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
+          (c₂ = c₁ + z * (d * d) ∨ c₁ = c₂ + z * (d * d)) := by
+      rcases hor with hlt | hgt
+      · obtain ⟨z, hz, heq⟩ :=
+          positiveCongruentCenterDifference_has_windingLag
+            b d c₁ c₂ hc₁b hc₂b hlt hold.1
+        exact ⟨z, hz, Or.inl heq⟩
+      · obtain ⟨z, hz, heq⟩ :=
+          positiveCongruentCenterDifference_has_windingLag
+            b d c₂ c₁ hc₂b hc₁b hgt hold.1.symm
+        exact ⟨z, hz, Or.inr heq⟩
+    simp [hold, hex]
+  · have hnex :
+        ¬ ∃ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
+          (c₂ = c₁ + z * (d * d) ∨ c₁ = c₂ + z * (d * d)) := by
+      intro hex
+      obtain ⟨z, hz, heq⟩ := hex
+      have hzpos : 0 < z := (Finset.mem_Icc.mp hz).1
+      apply hold
+      rcases heq with hforward | hbackward
+      · constructor
+        · rw [hforward]
+          exact windingLag_gives_congruentCenters d c₁ z
+        · omega
+      · constructor
+        · rw [hbackward]
+          exact (windingLag_gives_congruentCenters d c₂ z).symm
+        · omega
+    simp [hold, hnex]
+
+/-- The exact lag partition is the wrap surface and therefore the affine-Chowla
+variance defect. -/
+theorem parityCenteredIntegerCoordinateLagPartitionCovariance_eq_wrap
+    (b d r : ℕ) [NeZero d]
+    (H : Finset ℕ) :
+    parityCenteredIntegerCoordinateLagPartitionCovariance b d r H =
+      parityHalfIndexSignedQuarticWrap b d r H := by
+  rw [← parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_lagPartition]
+  exact parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_wrap b d r H
 
 /-- Four-family absolute off-diagonal covariance at one modulus. -/
 def regularCenteredWindingOffDiagonalCovarianceAtModulus
