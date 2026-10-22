@@ -1308,6 +1308,31 @@ theorem CMFiniteCoefficientMultiplication_tmul
     (a b : E.carrier) :
     CMFiniteCoefficientMultiplication E (a ⊗ₜ[ℚ] b) = a * b := rfl
 
+/-- The finite coefficient multiplication map sends the unit pure
+tensor to the unit of the CM field. -/
+@[simp]
+theorem CMFiniteCoefficientMultiplication_one
+    (E : CMGaloisIntermediateField) :
+    CMFiniteCoefficientMultiplication E
+        ((1 : E.carrier) ⊗ₜ[ℚ] (1 : E.carrier)) = 1 := by
+  simp
+
+/-- Finite-field automorphisms commute with the actual rational-linear
+coefficient multiplication supplier. This is verified on tensor generators
+and extended by the tensor induction principle. -/
+theorem CMFiniteCoefficientMultiplication_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : E.carrier ⊗[ℚ] E.carrier) :
+    σ (CMFiniteCoefficientMultiplication E t) =
+      CMFiniteCoefficientMultiplication E
+        ((σ.toLinearMap.rTensor E.carrier) t) := by
+  induction t with
+  | tmul a b =>
+      simp [CMFiniteCoefficientMultiplication_tmul, map_mul]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
 /-- Canonical finite-CM pure-factor formula, prior to extension of
 coefficients into algebraic numbers. The coefficient entries multiply in
 E while the four vector entries remain a rational tensor. -/
