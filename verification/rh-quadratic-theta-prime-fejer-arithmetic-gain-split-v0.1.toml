@@ -1,0 +1,37 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-arithmetic-gain-split-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerArithmeticGainSplitCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerArithmeticGainSplitCore"
+
+[source_binding]
+parent_revision = "7d2e7e9bd52b03597a9982274b609a00e3ef6a91"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / BANDWIDTH_ARITHMETIC_GAIN_SPLIT_SOURCE_PROVED / SEVEN_EIGHTHS_ARITHMETIC_EIGHTH_REQUIRED / SPLIT_SUPPLIER_INTERFACE_TYPED / SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_OPEN"
+
+[closed]
+total_gain_split_formula = true
+bandwidth_neutralized_exponent_formula = true
+residual_arithmetic_gain_equivalence = true
+pure_bandwidth_subunit_obstruction = true
+boundary_minimal_bandwidth_formula = true
+boundary_minimal_total_gain_formula = true
+seven_eighths_bandwidth_eighth = true
+seven_eighths_arithmetic_eighth_requirement = true
+split_supplier_interface = true
+split_to_total_supplier_adapter = true
+
+[frontier]
+remaining = "construct ThresholdGradedPrimeFejerSplitSupplier at rho=7/8 from a noncircular maximal theorem plus an arithmetic eighth-power cancellation theorem"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+BANDWIDTH_ARITHMETIC_GAIN_SPLIT_SOURCE_PROVED = true
+SEVEN_EIGHTHS_ARITHMETIC_EIGHTH_REQUIRED = true
+SPLIT_SUPPLIER_INTERFACE_TYPED = true
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
