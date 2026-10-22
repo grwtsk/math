@@ -205,7 +205,7 @@ labels = ["eq:cm-types", "eq:cm-label-conjugation"]
 statement_role = "prove that the locally constructed canonical eigenline decomposition with sign labels is the intended rational weight-one Hodge structure; supply archimedean polarization positivity, lattice integrality, and realize U(v)=H^1(B(v),Q)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.EmbeddingLineRealization"
 status = "OPEN"
-nonclaims = ["local source supplies the central Galois complex-conjugation involution, canonical regular base-change field action, literal embedding-character eigenspaces, one-dimensionality/nonvanishing, Galois evaluation coordinates, and scalar-conjugation transport", "local source has not yet packaged the canonical eigenspaces as a complete direct-sum Hodge decomposition", "local source has not assigned actual Hodge types to those eigenspaces from v", "local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
+nonclaims = ["local source supplies the central Galois complex-conjugation involution, canonical regular base-change field action, literal embedding-character eigenspaces, one-dimensionality/nonvanishing, Galois evaluation coordinates, scalar-conjugation transport, a complete internal direct-sum decomposition, and definitional sign type labels", "local source has not proved that the sign-labelled direct sum satisfies the semantic polarized rational Hodge-structure axioms", "local source does not construct B(v)", "local source does not prove archimedean positivity/integral Riemann realization"]
 
 [[external_premise]]
 id = "cm-four-factor-switch-algebraicity"
@@ -468,7 +468,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "existence of anti-invariant xi with prescribed archimedean signs, positivity of i psi_v on the (1,0) part, integral lattice scaling, and Riemann realization by B(v)"
+statement_role = "existence of xi with the prescribed archimedean sign profile, identification of the locally positive coordinate energy with the complexified trace pairing i psi_xi(u,conj u), integral lattice scaling, and Riemann realization by B(v)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
 status = "OPEN"
 nonclaims = [
@@ -488,4 +488,45 @@ upstream_obligations = [
 nonclaims = [
   "does not enforce the prescribed archimedean sign profile",
   "does not prove positivity or Riemann realization"
+]
+
+
+[[local_target]]
+name = "canonical complete Galois eigenspace decomposition"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalEigenspaces_isInternal"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite Galois extension E/k"
+]
+nonclaims = [
+  "no semantic Hodge-structure theorem",
+  "no polarization positivity"
+]
+
+[[local_target]]
+name = "canonical typed complete Galois eigenspace decomposition"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalTypedEigenspaceDecomposition"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd sign row on Gal(E/k)"
+]
+nonclaims = [
+  "type labels are definitional profile data",
+  "no proof yet that the labelled decomposition is a rational Hodge structure"
+]
+
+[[local_target]]
+name = "archimedean sign-profile coordinate positivity"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.energy_pos"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled xi with 0 < -v(sigma)*Im(sigma(xi)) for every Galois embedding label"
+]
+nonclaims = [
+  "does not construct such xi",
+  "does not identify the coordinate energy with i psi_xi(u,conj u)",
+  "does not apply the Riemann criterion"
 ]
