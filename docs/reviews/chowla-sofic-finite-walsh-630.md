@@ -1295,3 +1295,77 @@ proof adoption, analytic cancellation or RH claim occurred.
 **Evidence:** `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 ABSTRACT_FIXED_TO_GROWING_NONIMPLICATION /
 GROWING_SHIFT_ALL_ORDER_CHOWLA_OPEN`.
+
+## 20. Actual positive-index Liouville supplied to the finite Walsh interface
+
+**Date:** 2026-10-22. **Direct inspected parent PR head:**
+`72c6d2d9d72c20daa0145ad6bf10e50d1bc7f9a7`.
+
+The finite Walsh/Parseval/cyclic-boundary development now has an
+EXACT arithmetic-source adapter, not just an abstract Boolean
+input. The new subject-owned source is
+
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleWalshSourceBridge.lean`
+(blob `0b2cf1223268ae50399119dda7295d9f16729e6d`).
+
+Using the actual pinned `ArithmeticFunction.liouville`, the
+source encodes `lambda(n+1)` in a Boolean with exact sign
+recovery; the `+1` is mandatory because `lambda(0)=0`.
+
+For each `S⊆H`, without missing or duplicating shifts,
+
+```text
+sourceCorrelation(range N,S,ordinaryShiftWord(H,lambdaBool))
+  = (1/N)*sum_(n<N) prod_(h∈S) lambda(n+h+1).
+```
+
+The equality is algebraic over rationals for every N; the
+empty coefficient equals 1 only for N>0. Summing squares
+over ALL nonempty shift subsets yields exact equality of
+the arithmetic all-order energy with the existing
+`nonemptyCorrelationEnergy`.
+
+Consequently the conditional finite cyclic result now
+specializes to actual arithmetic sign patterns:
+
+```text
+r := max(H), r<N
+
+TV(P_cyclic(lambda(1..N),H), uniform_H)
+  <= r/N + 0.5*sqrt(
+    sum_(nonempty S⊆H)
+      ((1/N)*sum_(n<N) prod_(h∈S) lambda(n+h+1))²
+  ).
+```
+
+A separate source-specific ALL-ORDER ordinary envelope
+proposition is defined and proved equivalent to the
+generic interface. It is a premise, **not a proved
+Liouville cancellation estimate**. Its conditional
+finite TV return retains the full `2^|H|−1` character
+count and one error budget common to all subsets.
+
+The new source adds **10 theorem heads and four definitions**.
+Its separate passive clean-replay target
+`verification/liouville-walsh-arithmetic-source-630-v0.1.toml`
+selects all TEN dependency modules (eight generic finite
+modules, one arithmetic sign parent, and the new arithmetic
+adapter): 80 theorem heads and 33 definitions, source-blob
+bound and NOT kernel audited. The original eight-module
+Walsh verification target is not replaced.
+
+Full mathematical details, finite checks and exact
+nonclaims are recorded in
+`docs/reviews/chowla-sofic-liouville-walsh-source-630.md`.
+
+**Next true supplier:** show that the actual all-nonempty-subset
+Liouville correlation energy tends to zero at the required
+ordinary scale with any relevant growing-window uniformity.
+The fixed-binary OpenAI result and the separate
+fixed-to-growing-quantifier counterexample do not provide
+this analytical theorem. The earlier pinned external
+Mertens import-source preflight remains independently open.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+ARITHMETIC_SOURCE_IDENTITY_ONLY / ALL_ORDER_CHOWLA_OPEN /
+GUE_RH_NONCLAIM.
