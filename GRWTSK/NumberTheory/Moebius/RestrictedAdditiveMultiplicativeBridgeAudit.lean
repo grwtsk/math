@@ -15,7 +15,7 @@ namespace GRWTSK.RiemannHypothesis
 
 /-- The relevant difference space is a constrained subset of source packets,
 not the whole ambient finite vector space. -/
-def RestrictedDifferenceSpace
+abbrev RestrictedDifferenceSpace
     {ι : Type} [Fintype ι] :=
   Set (FiniteCenteredPacket ι)
 
@@ -65,7 +65,7 @@ theorem ambientKernel_requires_admissibility
     (T : FiniteArithmeticBridge ι κ)
     (D : RestrictedDifferenceSpace (ι := ι))
     (f : FiniteCenteredPacket ι)
-    (hker : T.linearPart f = 0)
+    (_hker : T.linearPart f = 0)
     (hfnot : f ∉ D) :
     ¬ (f ∈ D ∧ f ≠ 0 ∧ T.linearPart f = 0) := by
   intro h
