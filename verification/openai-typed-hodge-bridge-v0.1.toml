@@ -205,7 +205,7 @@ labels = ["eq:cm-types", "eq:cm-label-conjugation"]
 statement_role = "construct U(v), polarize it, realize U(v)=H^1(B(v),Q), and track scalar conjugation of embedding-line labels"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.EmbeddingLineRealization"
 status = "OPEN"
-nonclaims = ["local record has only opaque nonempty line witnesses plus type labels", "local source does not construct U(v)_lambda as a linear Hodge subspace", "local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
+nonclaims = ["local source now supplies the actual central Galois complex-conjugation involution", "local records still do not construct the CM-field action or identify character eigenspaces with U(v)_lambda", "local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
 
 [[external_premise]]
 id = "cm-four-factor-switch-algebraicity"
@@ -353,3 +353,13 @@ path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.CharacterEigenspaceDecomposition.finrank_eq_fieldDegree"
 status = "SOURCE_DRAFT_NOT_RUN"
 upstream_obligations = ["finite Galois extension E/k", "complete internal one-dimensional eigenspace decomposition indexed by Gal(E/k)"]
+
+
+[[local_target]]
+name = "Galois CM number-field central involution"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMNumberFieldIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex.centralInvolution"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["NumberField E", "IsCMField E", "IsGalois Q E"]
+source_dependency = "Mathlib.NumberTheory.NumberField.CMField"
+nonclaims = ["no CM Hodge structure U(v)", "no embedding eigenspace decomposition", "no H^1 realization"]
