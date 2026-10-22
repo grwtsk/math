@@ -1607,6 +1607,39 @@ def CMFiniteFourfoldAssembly.globalTensor
     AlgebraicNumbers ⊗[ℚ] V :=
   coefficientInclusion D.tensor
 
+/-- Agreement of nested-linear presentations on all fourfold pure
+finite tensors gives equality of their fixed-field assembled generators.
+This is the precise finite-level equality needed before scalar extension. -/
+theorem CMFiniteNestedLinearAssembly.tensor_eq_of_pure_eq
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M N : CMFiniteNestedLinearAssembly factors)
+    (hpure : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      M.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄) =
+      N.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄)) :
+    M.toFiniteAssembly.tensor = N.toFiniteAssembly.tensor := by
+  exact M.map_eq_of_pure_eq N hpure
+    (factors.vector 0) (factors.vector 1)
+    (factors.vector 2) (factors.vector 3)
+
+/-- Pure-factor agreement also survives coefficient inclusion into
+algebraic numbers. No actual-H1 comparison is used in this result. -/
+theorem CMFiniteNestedLinearAssembly.globalTensor_eq_of_pure_eq
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M N : CMFiniteNestedLinearAssembly factors)
+    (hpure : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      M.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄) =
+      N.map (a₁ ⊗ₜ[ℚ] x₁) (a₂ ⊗ₜ[ℚ] x₂)
+        (a₃ ⊗ₜ[ℚ] x₃) (a₄ ⊗ₜ[ℚ] x₄)) :
+    M.toFiniteAssembly.globalTensor = N.toFiniteAssembly.globalTensor := by
+  exact congrArg coefficientInclusion (M.tensor_eq_of_pure_eq N hpure)
+
 /-- Absolute scalar conjugation of the global assembled tensor is computed by
 restriction to the fixed finite Galois CM field. -/
 theorem CMFiniteFourfoldAssembly.globalTensor_scalarConjugate
