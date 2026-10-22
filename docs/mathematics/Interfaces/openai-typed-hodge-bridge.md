@@ -649,6 +649,64 @@ argument has supplied the Hodge/Newton dimension equality. It remains
 SOURCE_DRAFT / NOT_RUN and therefore supplies no filtered-Frobenius theorem by
 itself.
 
+
+## 4d. Four-factor rational descent versus algebraicity
+
+The independent four-factor frontier is now represented explicitly in
+\`GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean\`.
+
+The source separates four stages that must not be conflated:
+
+~~~text
+FOUR_LABEL_BALANCE
+  -> ALL_CONJUGATES_TYPE_22
+  -> CONJUGATE_STABLE_TENSOR_DATA
+  -> RATIONAL_FOUR_FACTOR_HODGE_WITNESS
+  -> ALGEBRAIC_CYCLE_WITNESS
+~~~
+
+The first arrow is local and finite.  The second is not automatic: a numerical
+\((2,2)\) statement does not construct an algebraic-number tensor or prove that
+all scalar conjugates land in the required complex Hodge subspace.
+
+Once exact tensor-level conjugate stability is supplied, the existing local
+theorem
+
+~~~text
+GaloisScalarDescent.traceDescent
+~~~
+
+proves rational descent.  This is now exposed through
+
+~~~text
+FourFactorTensorDescentData.rational_descent
+~~~
+
+and packaged as \`RationalFourFactorHodgeWitness\`.
+
+The final algebraicity step remains independent and is represented by
+
+~~~text
+FourFactorAlgebraicitySupplier
+~~~
+
+which consumes a rationally descended four-factor Hodge witness and returns an
+opaque algebraic-cycle witness.  No constructor for this supplier exists in the
+local source.
+
+This is the exact boundary corresponding to the external manuscript labels
+
+~~~text
+thm:switch
+eq:switch-line
+eq:switch-conjugate-balance
+~~~
+
+and prevents the already-proved type count or generic scalar descent theorem
+from being promoted to algebraicity.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5a. Complementary-projector equality supplier
 
 The projected slope argument contains one finite numerical step that can be
