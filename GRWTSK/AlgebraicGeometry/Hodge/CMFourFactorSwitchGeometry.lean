@@ -1355,20 +1355,6 @@ theorem CMFiniteTransportedGeneratorWitness.generator_mem_hodge
   apply Submodule.mem_map.mpr
   refine ⟨_, W.alignment.canonicalPureTensor_mem_H22 W.hodgeRule, rfl⟩
 
-/-- A fixed-field transported comparison witness for every absolute
-automorphism supplies the exact finite-CM Hodge package consumed by descent. -/
-def CMFiniteTransportedGeneratorHodgeData.ofWitnesses
-    {E : CMGaloisIntermediateField}
-    {factors : CMFiniteFourEmbeddingLineVectors E}
-    {V : Type*} [AddCommGroup V] [Module ℚ V]
-    {D : CMFiniteFourfoldAssembly factors}
-    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
-    (W :
-      ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
-        CMFiniteTransportedGeneratorWitness D hodgeSubspace σ) :
-    CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
-  generator_mem := fun σ => (W σ).generator_mem_hodge
-
 /-- Hodge membership for every transported finite-CM assembled generator.
 
 This is the correct pre-descent Hodge interface for the finite-level switch
@@ -1384,6 +1370,21 @@ structure CMFiniteTransportedGeneratorHodgeData
       coefficientInclusion
         (D.assemble ((factors.scalarTransport σ).vector)) ∈
           hodgeSubspace
+
+/-- A fixed-field transported comparison witness for every absolute
+automorphism supplies the exact finite-CM Hodge package consumed by descent. -/
+def CMFiniteTransportedGeneratorHodgeData.ofWitnesses
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (W :
+      ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+        CMFiniteTransportedGeneratorWitness D hodgeSubspace σ) :
+    CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
+  generator_mem := fun σ => (W σ).generator_mem_hodge
+
 
 /-- Finite-level transported-generator Hodge membership implies Hodge
 membership of every absolute scalar conjugate of the global assembled tensor. -/
