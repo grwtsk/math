@@ -273,15 +273,16 @@ theorem mertensEndpointFibreDiagonalEnergy_nonneg
   apply Finset.sum_nonneg
   intro n _hn
   apply Finset.sum_nonneg
-  intro p hp
+  rintro ⟨a, c⟩ hp
   have hdiag :
-      mertensEndpointFourMobiusStratum b n p.1 p.2 = .diagonal :=
+      mertensEndpointFourMobiusStratum b n a c = .diagonal :=
     (Finset.mem_filter.mp hp).2
-  have heq :=
+  have heq :
+      a = c :=
     (mertensEndpointFourMobiusStratum_eq_diagonal_iff
-      b n p.1 p.2).mp hdiag
-  subst p.2
-  exact mertensEndpointFourMobiusTerm_diagonal_nonneg b n p.1
+      b n a c).mp hdiag
+  subst c
+  exact mertensEndpointFourMobiusTerm_diagonal_nonneg b n a
 
 /-- Exact decomposition of one endpoint fibre into the unavoidable diagonal,
 the two lower-order cross-collisions, and the genuinely four-distinct
