@@ -84,16 +84,21 @@ support a smaller subset and must reject unsupported values.
 `stringWire_injective`, `sourceWire_injective`, `metadataWire_injective`,
 `eventWire_injective`, `observationWire_injective`, and `stateWire_injective`
 prove that this encoding loses no represented fields. The intervening
-verification encoders are also proved injective. `NatTree.render` gives the
-canonical ASCII array-and-natural spelling, using decimal naturals, commas,
-and brackets without whitespace.
+verification encoders are also proved injective. `NatTree.renderBytes` is the
+normative byte encoder. It returns the numerical ASCII byte values of decimal
+naturals, comma separators, and brackets, without whitespace. Its primitive
+recursor is evaluated by the kernel when checking concrete equality proofs;
+it introduces no external evaluator or additional axiom. The existing
+`NatTree.render` supplies a string spelling for display.
 
 An external admission proof can bind its actual before, observation, and after
 values by proving the corresponding encoder equalities to concrete natural
-arrays, their rendered equality to the actual canonical wire bytes, and
-`Admitted` for those same values. These finite proofs are checked by Lean's
-kernel. No theorem here proves a general JSON decoder, general renderer
-injectivity, source custody, or the provenance of externally supplied bytes.
+arrays, equality of `NatTree.renderBytes` to the actual canonical wire bytes
+represented as a list of natural numbers, and `Admitted` for those same
+values. Rewriting the tree equality first lets the byte proof normalize the
+explicit tree. These finite proofs are checked by Lean's kernel. No theorem
+here proves a general JSON decoder, general renderer injectivity, source
+custody, or the provenance of externally supplied bytes.
 
 ## Ordered mathematical replay
 
