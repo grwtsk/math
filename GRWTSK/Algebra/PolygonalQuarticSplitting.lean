@@ -72,6 +72,16 @@ theorem enumeration_of_root_card_four (p : K[X])
           refine ⟨⟨![a, b, c, d], ?_⟩⟩
           simpa [s, hs, Matrix.cons_val_zero, Matrix.cons_val_one]
 
+/-- Splitting and exact degree four produce an actual four-root enumeration.
+No assumption of distinctness or characteristic is needed. -/
+theorem enumeration_of_splitting_quartic (p : K[X])
+    (hs : (mappedQuartic p).Splits)
+    (hdegree : (mappedQuartic p).natDegree = 4) :
+    Nonempty (QuarticRootEnumeration p) := by
+  apply enumeration_of_root_card_four p
+  rw [← hs.natDegree_eq_card_roots]
+  exact hdegree
+
 /-- Factorization of the actual quartic in the extension, with its leading
 coefficient retained. This does not require separability. -/
 theorem factorization_of_root_enumeration (p : K[X])
