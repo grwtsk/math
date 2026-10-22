@@ -1354,6 +1354,61 @@ theorem CMFiniteAssemblyMultilinearity.smul_at
       q • D.assemble (Function.update f i x) :=
   M.smul_slot i q x f
 
+/-- Four nested rational linear maps give a concrete representation of
+the finite-CM fourfold operation. Unlike an arbitrary function, the
+multilinearity of each slot is encoded directly by the map types.
+
+The remaining equivariance equation is explicitly retained: rational
+multilinearity alone does not imply compatibility with scalar Galois
+conjugation. -/
+structure CMFiniteNestedLinearAssembly
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    {V : Type*} [AddCommGroup V] [Module ℚ V] where
+  map :
+    (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] V)
+  conjugate_at_factors :
+    ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          (σ.restrictNormal E.carrier)
+          (map (factors.vector 0) (factors.vector 1)
+            (factors.vector 2) (factors.vector 3)) =
+        map ((factors.scalarTransport σ).vector 0)
+          ((factors.scalarTransport σ).vector 1)
+          ((factors.scalarTransport σ).vector 2)
+          ((factors.scalarTransport σ).vector 3)
+
+/-- Turn a nested-linear finite assembly into the existing fixed-field
+assembly, with its tensor and Galois-transport equation derived from the
+presentation. No geometric realization is manufactured here. -/
+def CMFiniteNestedLinearAssembly.toFiniteAssembly
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors) :
+    CMFiniteFourfoldAssembly factors where
+  assemble := fun f => M.map (f 0) (f 1) (f 2) (f 3)
+  tensor := M.map (factors.vector 0) (factors.vector 1)
+    (factors.vector 2) (factors.vector 3)
+  original_eq := rfl
+  scalar_transport_eq := M.conjugate_at_factors
+
+/-- The first-slot additivity is an unconditional consequence of the
+nested-linear construction, not a separately hypothesized equation. -/
+theorem CMFiniteNestedLinearAssembly.add_first
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (x y : E.carrier ⊗[ℚ] E.carrier)
+    (b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.map (x + y) b c d =
+      M.map x b c d + M.map y b c d := by
+  exact (M.map.map_add x y).congrFun b |>.congrFun c |>.congrFun d
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
