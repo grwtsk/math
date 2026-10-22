@@ -54,6 +54,31 @@ structure TracePolarizationData where
   xi_ne_zero : xi ≠ 0
   antiInvariant : galoisComplexConj E xi = -xi
 
+/-- Anti-invariant part of an arbitrary CM-field element. -/
+def antiInvariantPart (x : E) : E :=
+  x - galoisComplexConj E x
+
+/-- The anti-invariant part changes sign under CM conjugation. -/
+theorem antiInvariantPart_conj (x : E) :
+    galoisComplexConj E (antiInvariantPart E x) =
+      - antiInvariantPart E x := by
+  simp [antiInvariantPart, map_sub, galoisComplexConj_apply_apply]
+
+/-- A nonfixed element has nonzero anti-invariant part. -/
+theorem antiInvariantPart_ne_zero
+    {x : E} (hx : x ≠ galoisComplexConj E x) :
+    antiInvariantPart E x ≠ 0 := by
+  exact sub_ne_zero.mpr hx
+
+/-- Construct the algebraic trace-polarization data from any element not fixed
+by CM conjugation. This does not address the manuscript's prescribed
+archimedean sign condition. -/
+def tracePolarizationDataOfNonfixed
+    (x : E) (hx : x ≠ galoisComplexConj E x) :
+    TracePolarizationData E where
+  xi := antiInvariantPart E x
+  xi_ne_zero := antiInvariantPart_ne_zero E hx
+  antiInvariant := antiInvariantPart_conj E x
 /-- The trace pairing is skew-symmetric for an anti-invariant xi. -/
 theorem tracePairing_skew
     (P : TracePolarizationData E) (x y : E) :
