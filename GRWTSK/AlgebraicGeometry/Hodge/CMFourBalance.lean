@@ -83,6 +83,29 @@ theorem fourBalance_holomorphicCount
   exact fourSign_balance_holomorphicCount
     (v₁.isSign g) (v₂.isSign g) (v₃.isSign g) (v₄.isSign g) (hbal g)
 
+/-- The all-coordinate two/two sign profile corresponding to the manuscript's
+numerical Hodge-type count. This definition contains no geometric Hodge
+structure and no algebraicity field. -/
+def HasTwoTwoSignProfile
+    {G : Type*} {conj : G → G}
+    (v₁ v₂ v₃ v₄ : OddSignRow G conj) : Prop :=
+  ∀ g,
+    holomorphicIndex (v₁.value g) +
+      holomorphicIndex (v₂.value g) +
+      holomorphicIndex (v₃.value (conj g)) +
+      holomorphicIndex (v₄.value (conj g)) = 2
+
+/-- Pointwise four-label balance implies the all-coordinate two/two sign
+profile. This is the maximal local conclusion before identifying the signs with
+actual embedding Hodge lines. -/
+theorem fourBalance_twoTwoSignProfile
+    {G : Type*} {conj : G → G}
+    (v₁ v₂ v₃ v₄ : OddSignRow G conj)
+    (hbal : FourBalance v₁ v₂ v₃ v₄) :
+    HasTwoTwoSignProfile v₁ v₂ v₃ v₄ := by
+  intro g
+  exact fourBalance_holomorphicCount v₁ v₂ v₃ v₄ hbal g
+
 /-- Balance itself is stable under evaluation at any coordinate, but this
 statement does not claim a group action, a Hodge realization, or algebraicity. -/
 theorem fourBalance_at
