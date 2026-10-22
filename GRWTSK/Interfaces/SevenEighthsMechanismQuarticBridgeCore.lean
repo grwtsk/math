@@ -60,6 +60,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThetaVonKochAdapterControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedDyadicEnergyHalfPlaneControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedThetaThresholdTransportControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThresholdDescentProgramControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedPsiThresholdTransportControls
 
 set_option autoImplicit false
 
