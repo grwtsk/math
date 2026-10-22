@@ -49,6 +49,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenCoordinateNecessaryDec
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerDFTRemainderControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerFourierEnergyControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerFullResidualControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyWitnessComparisonControls
 
 set_option autoImplicit false
 
