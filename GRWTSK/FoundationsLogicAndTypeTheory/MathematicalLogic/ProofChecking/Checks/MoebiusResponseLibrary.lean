@@ -1,1 +1,1 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ProofChecking.Checks.FullAnalyticArithmeticKernel
+import GRWTSK.NumberTheory.MathematicalLogic.ProofChecking.Checks.FullAnalyticArithmeticKernel

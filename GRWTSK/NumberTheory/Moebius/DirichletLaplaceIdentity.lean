@@ -3,7 +3,7 @@ Human mathematical direction: grwtsk contributors. Formalization assistance: Ope
 Mathlib results retain their upstream authorship and Apache-2.0 license.
 Source-specific CCC continuation; local conditional candidate, RH remains open. -/
 import GRWTSK.NumberTheory.Moebius.PrimitiveRegularity
-import GRWTSK.NumberTheory.Moebius.LaplaceTransform
+import GRWTSK.Analysis.Moebius.LaplaceTransform
 import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.NumberTheory.LSeries.SumCoeff
 import Mathlib.MeasureTheory.Integral.IntegralEqImproper

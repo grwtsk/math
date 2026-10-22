@@ -11,7 +11,7 @@ import Mathlib.Tactic.Ring
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.LinearCombination
 import Mathlib.Tactic.IntervalCases
-import GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
+import GRWTSK.LinearAlgebra.LinearAlgebra.SchrodingerTransfer
 
 namespace GRWTSK.LinearAlgebra.JacobiTransfer
 

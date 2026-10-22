@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.CommonJCounterexamples
+import GRWTSK.LinearAlgebra.LinearAlgebra.CommonJCounterexamples
 import Lean
 
 open GRWTSK.LinearAlgebra.CommonJCounterexamples Lean Elab Command

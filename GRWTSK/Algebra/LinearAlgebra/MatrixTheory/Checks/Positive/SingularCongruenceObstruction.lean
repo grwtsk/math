@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
+import GRWTSK.LinearAlgebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
 
 set_option linter.hashCommand false
 

@@ -21,7 +21,7 @@ import Mathlib.MeasureTheory.Constructions.BorelSpace.Basic
 import Mathlib.MeasureTheory.Measure.Dirac
 import Mathlib.Tactic
 
-import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.ProbabilityMeasures.FiniteAtomicPackets.Variante4efdc9c8d172f77.AtomicProbabilityMeasure
+import GRWTSK.MeasureTheory.ProbabilityFoundations.ProbabilitySpaces.ProbabilityMeasures.FiniteAtomicPackets.Variante4efdc9c8d172f77.AtomicProbabilityMeasure
 
 /-!
 # Atomic probability measures for finite spectral packets

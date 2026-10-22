@@ -5,7 +5,7 @@ at the end remains an unproved mathematical proposition, not an imported theorem
 Source: Pham–Sauermann, arXiv:2602.15797v1, Theorem 1.2. -/
 import GRWTSK.Combinatorics.Sequences.PartialSumOrdering
 import GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair
-import GRWTSK.Analysis.Fourier.ZModSubsetSum
+import GRWTSK.Probability.Fourier.ZModSubsetSum
 import Mathlib.Data.List.Permutation
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
 

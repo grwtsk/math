@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
+import GRWTSK.LinearAlgebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
 
 set_option linter.hashCommand false
 

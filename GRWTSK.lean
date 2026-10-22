@@ -65,7 +65,7 @@ import GRWTSK.Analysis.InnerProductSpace.DilationResponseSeparation
 import GRWTSK.Analysis.IntervalReflection
 import GRWTSK.Analysis.LaplaceTransform.Analytic
 import GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse
-import GRWTSK.NumberTheory.Moebius.LaplaceTransform
+import GRWTSK.Analysis.Moebius.LaplaceTransform
 import GRWTSK.NumberTheory.Moebius.PrimitiveRegularity
 import GRWTSK.NumberTheory.Moebius.DirichletLaplaceIdentity
 import GRWTSK.NumberTheory.Moebius.FiniteResponseSum
@@ -89,7 +89,7 @@ import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.Moser
 import GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserCoordinates
 import GRWTSK.Combinatorics.GraphTheory.RelationSandwich
 import GRWTSK.Combinatorics.Sequences.QuotaDiscrepancy
-import GRWTSK.Data.Sampling.Descriptions
+import GRWTSK.Analysis.Sampling.Descriptions
 import GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators
 import GRWTSK.DynamicalSystems.Sequences.ApproximationReturn
 import GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget
@@ -139,7 +139,7 @@ import GRWTSK.Analysis.Complex.ReflectionCounterexamples
 import GRWTSK.LinearAlgebra.Matrix.HermitianCounterexamples
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroExclusions
 import GRWTSK.Logic.FiniteCoverage
-import GRWTSK.Logic.FiniteSequences.PrefixCoverage
+import GRWTSK.Analysis.FiniteSequences.PrefixCoverage
 import GRWTSK.Logic.Inference.FiniteRuleExamples
 import GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization
 import GRWTSK.NumberTheory.FirstPrime
@@ -159,10 +159,10 @@ import GRWTSK.NumberTheory.Moebius.FiniteLaplaceTransform
 import GRWTSK.NumberTheory.Moebius.FiniteEulerProduct
 import GRWTSK.NumberTheory.Moebius.FinitePrimeProductDebt
 import GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth
-import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries
+import GRWTSK.Analysis.Moebius.LaplaceDirichletSeries
 import GRWTSK.NumberTheory.Moebius.MeanSquareGrowth
 import GRWTSK.NumberTheory.Moebius.WeightedIntegralContinuity
-import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
+import GRWTSK.Analysis.Moebius.PolynomialLaplaceHolomorphy
 import GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy
 import GRWTSK.NumberTheory.Moebius.PrimePrefixGrowth
 import GRWTSK.NumberTheory.Moebius.NegativePrimeCorrelation
@@ -414,7 +414,7 @@ import GRWTSK.Combinatorics.Sequences.DisjointTranspositions
 import GRWTSK.Combinatorics.Sequences.ZeroSumIntervalRepair
 import GRWTSK.Combinatorics.Sequences.PartialSumCertificate
 import GRWTSK.DynamicalSystems.TransitionSystems.ModularCheckpoint
-import GRWTSK.Analysis.Fourier.ZModSubsetSum
+import GRWTSK.Probability.Fourier.ZModSubsetSum
 import GRWTSK.Analysis.Fourier.ZModSubsetSumCompletion
 import GRWTSK.Combinatorics.Sequences.PrimeCyclicRearrangement
 import GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeDivisorFilter

@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
+import GRWTSK.LinearAlgebra.LinearAlgebra.SchrodingerTransfer
 import Lean
 open Lean Elab Command GRWTSK.LinearAlgebra.SchrodingerTransfer
 namespace GRWTSK.LinearAlgebra.SchrodingerTransfer.Checks
