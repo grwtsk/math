@@ -1,0 +1,181 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-prefix-transfer-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachPrefixTransferCore"
+build_target = "GRWTSK.Interfaces.GoldbachPrefixTransferCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "62ca45a9a4a34a8941742d71c009cd1253ab01b2"
+base_tree = "c665c0111cbccf8ca3defa210bf80ec2b8d1a4d0"
+stacked_on_pr = 379
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/goldbach-progression-model-core-v0.1.toml"
+inherited_target_blob = "8004f44c06abecaea52e42eae341e5b845800481"
+receipt_policy = "Any future external replay must bind the exact commit, tree and manifest blob. This static target is not execution authority or a receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+coefficient_and_prefix_source_binding = "NEW_SOURCE_DRAFT"
+finite_abel_identity = "NEW_SOURCE_DRAFT"
+conditional_prefix_to_twist_bound = "NEW_SOURCE_DRAFT"
+chord_angle_estimate = "PINNED_UPSTREAM_SOURCE_CONSUMED_NOT_RUN"
+period_lift_reduction = "NEW_SOURCE_DRAFT"
+nonreduced_exact_mass_correction = "NEW_SOURCE_DRAFT"
+prefix_to_existing_arc_budget = "NEW_SOURCE_DRAFT"
+conditional_every_even_tail_wrapper = "NEW_SOURCE_DRAFT"
+weighted_denominator_regrouping = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+nonreduced_logarithmic_aggregate = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+cubic_uniform_budget_estimate = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+finite_model_integral_evaluation = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+quantitative_prime_prefix_supplier = "NOT_SUPPLIED"
+effective_distribution_cutoff = "NOT_SUPPLIED"
+model_major_lower_bound = "NOT_SUPPLIED"
+signed_minor_arc_bound = "NOT_SUPPLIED"
+strict_universal_margin = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachPrefixTransferCore"
+path = "GRWTSK/Interfaces/GoldbachPrefixTransferCore.lean"
+source_blob = "4e9248b86267838f0c7ea9ac681cd585b999b83c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachPrefixControls.lean"
+source_blob = "d7d23df1c509dfa5e5e05a2990a7bf89ab31c7c9"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer"
+path = "GRWTSK/NumberTheory/Primes/GoldbachPrefixArcTransfer.lean"
+source_blob = "750656b1c3935d0c6698eb90f5c9ca48024b3ccc"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy"
+path = "GRWTSK/NumberTheory/Primes/GoldbachPrefixDiscrepancy.lean"
+source_blob = "0b5b774065846117e03f3f4f3200ca2f44cd0241"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Bounds.lean"
+blob = "660b110661726dd7fa50c4b3118bde5e4c71a423"
+required_declarations = ["Real.norm_exp_I_mul_ofReal_sub_one_le"]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-prefix-discrepancy-transfer.md"
+source_blob = "da158b19f208897dd2de368b542054c88afdb840"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_count = 33
+public_names = [
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.denominator_one_initial_prefix",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.denominator_one_prefix_budget_at_least_one",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.terminal_prefix_only_counterexample",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.abel_zero_endpoint",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.nonreduced_budget_at_two",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.nonreduced_zero_budget_rejected",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.wrapped_discrepancy_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachPrefixControls.strict_margin_equality_rejected",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachPrefixArcLoss",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachPrefixArcLoss_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachPrefixResidueBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.GoldbachReducedPrefixSupplier",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.exists_small_goldbachArcOffset",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.norm_goldbachResidueProgressionDiscrepancy_on_arc_of_prefix",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachPrefixResidueBudget_bounds",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachPrefixMajorErrorBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachCount_pos_of_prefix_bounds",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixArcTransfer.goldbachCount_pos_above_of_prefix_supplier",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResidueDiscrepancyCoefficient",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResiduePrefixDiscrepancy",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResidueProgressionDiscrepancy_eq_coefficient_sum",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.unitCharacter_argument_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResiduePrefixDiscrepancy_eq_at_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.finite_abel_identity",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResidueProgressionDiscrepancy_abel",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.norm_unitCharacter_adjacent_difference",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.norm_one_sub_unitCharacter_one_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.norm_goldbachResidueProgressionDiscrepancy_le_of_prefix",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.norm_goldbachResidueProgressionDiscrepancy_le_of_prefix_radius",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResidueProgressionDiscrepancy_add_int",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResiduePrimeLogTotal",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.goldbachResiduePrimeLogTotal_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrefixDiscrepancy.norm_goldbachResidueProgressionDiscrepancy_le_of_not_coprime",
+]
+
+[[acceptance_obligations]]
+id = "P01"
+requirement = "Elaborate all new and inherited modules only when separately authorized; source text and local arithmetic diagnostics do not establish Lean acceptance."
+
+[[acceptance_obligations]]
+id = "P02"
+requirement = "Audit exact types and the complete transitive import, axiom, generated and native closure; inherit every unresolved PR #379 obligation."
+
+[[acceptance_obligations]]
+id = "P03"
+requirement = "Bind prefix coefficients to the actual prime-only discrepancy and retain frequency zero and the k+1 baseline."
+
+[[acceptance_obligations]]
+id = "P04"
+requirement = "Check finite Abel endpoints and all-prefix hypotheses. A terminal-prefix bound alone must fail the signed two-term control."
+
+[[acceptance_obligations]]
+id = "P05"
+requirement = "Reduce wrapped offsets by integer periods before applying the small-angle bound; inspect all three lifts."
+
+[[acceptance_obligations]]
+id = "P06"
+requirement = "Charge non-reduced residue mass directly and retain the log 2 obstruction; do not silently apply a reduced-residue theorem to these residues."
+
+[[acceptance_obligations]]
+id = "P07"
+requirement = "Keep B(N,q,r) an explicit supplied bound. A computed finite maximum or a definition of a supremum is not a quantitative prime-distribution theorem."
+
+[[acceptance_obligations]]
+id = "P08"
+requirement = "Retain every even target above one cutoff, the geometric scale, model-major lower bound, complete signed minor norm, and strict total margin as separate obligations."
+
+[[acceptance_obligations]]
+id = "P09"
+requirement = "Require complete finite coverage below any eventual analytic cutoff. No density-one or bounded-exception replacement is accepted."
+
+[[acceptance_obligations]]
+id = "P10"
+requirement = "Keep the isolated root outside GRWTSK.lean and do not treat the written cubic budget or finite model formula as elaborated Lean declarations."
+
+[nonclaims]
+claims = [
+  "a prime-distribution theorem or effective cutoff",
+  "a model-major lower bound or singular-series estimate",
+  "a signed minor-arc estimate",
+  "a strict universal Goldbach margin or finite coverage",
+  "Lean execution, kernel acceptance or transitive trust audit",
+  "a Goldbach proof, merge or execution authority",
+]
