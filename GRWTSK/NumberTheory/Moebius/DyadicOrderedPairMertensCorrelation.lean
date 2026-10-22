@@ -158,7 +158,7 @@ theorem weightedMertensDiagonal_summand_le_inv_dyadic
         (n : ℝ) ^ (-(1 : ℝ)) *
         ((n + 1 : ℕ) : ℝ) ^ (-(1 : ℝ)) ≤
       (((2 ^ j : ℕ) : ℝ))⁻¹ := by
-  have hX : 1 ≤ 2 ^ j := by positivity
+  have hX : 1 ≤ 2 ^ j := Nat.one_le_pow j 2 (by norm_num)
   have hn1 : 1 ≤ n := hX.trans (Finset.mem_Ico.mp hn).1
   have hdiag := mertensPrefixSquareDiagonal_le_natCast n
   have hninv : 0 ≤ (n : ℝ) ^ (-(1 : ℝ)) :=
@@ -177,9 +177,11 @@ theorem weightedMertensDiagonal_summand_le_inv_dyadic
       rw [Real.rpow_neg_one, Real.rpow_neg_one]
       field_simp [show (n : ℝ) ≠ 0 by positivity]
     _ ≤ (((2 ^ j : ℕ) : ℝ))⁻¹ := by
-      exact one_div_le_one_div_of_le (by positivity)
-        (by exact_mod_cast
-          ((Finset.mem_Ico.mp hn).1.trans (Nat.le_succ n)))
+      have hle : ((2 ^ j : ℕ) : ℝ) ≤ ((n + 1 : ℕ) : ℝ) := by
+        exact_mod_cast ((Finset.mem_Ico.mp hn).1.trans (Nat.le_succ n))
+      simpa only [one_div] using
+        one_div_le_one_div_of_le
+          (by positivity : (0 : ℝ) < ((2 ^ j : ℕ) : ℝ)) hle
 
 /-- The complete Möbius-square diagonal costs at most one on every dyadic
 block. -/
@@ -187,7 +189,7 @@ theorem weightedMertensDyadicDiagonal_le_one (j : ℕ) :
     weightedMertensDyadicDiagonal j ≤ 1 := by
   have hcard :
       (Finset.Ico (2 ^ j) (2 ^ (j + 1))).card = 2 ^ j := by
-    rw [Finset.card_Ico, Nat.pow_succ]
+    rw [Nat.card_Ico, Nat.pow_succ]
     omega
   calc
     weightedMertensDyadicDiagonal j ≤
@@ -199,7 +201,7 @@ theorem weightedMertensDyadicDiagonal_le_one (j : ℕ) :
       exact weightedMertensDiagonal_summand_le_inv_dyadic hn
     _ = (((Finset.Ico (2 ^ j) (2 ^ (j + 1))).card : ℕ) : ℝ) *
           (((2 ^ j : ℕ) : ℝ))⁻¹ := by
-      simp only [Finset.sum_const, nsmul_eq_mul, Nat.cast_ofNat]
+      simp only [Finset.sum_const, nsmul_eq_mul]
     _ = 1 := by
       rw [hcard]
       field_simp [show (((2 ^ j : ℕ) : ℝ)) ≠ 0 by positivity]
@@ -214,7 +216,8 @@ theorem weightedMertensDyadicOrderedPairCorrelation_le_block (j : ℕ) :
 
 theorem one_le_dyadic_rpow {δ : ℝ} (hδ : 0 < δ) (j : ℕ) :
     1 ≤ (((2 ^ j : ℕ) : ℝ) ^ δ) := by
-  have hbase : (1 : ℝ) ≤ ((2 ^ j : ℕ) : ℝ) := by positivity
+  have hbase : (1 : ℝ) ≤ ((2 ^ j : ℕ) : ℝ) := by
+    exact_mod_cast Nat.one_le_pow j 2 (by norm_num)
   simpa only [Real.one_rpow] using
     Real.rpow_le_rpow (by norm_num : (0 : ℝ) ≤ 1) hbase hδ.le
 
@@ -249,7 +252,7 @@ theorem subpolynomialDyadicBlock_of_orderedPair
       weightedMertensDyadicBlock_eq_diagonal_add_orderedPair j
     _ ≤ 1 + C * S :=
       add_le_add (weightedMertensDyadicDiagonal_le_one j) (hbound j)
-    _ ≤ S + C * S := add_le_add_right hS (C * S)
+    _ ≤ S + C * S := add_le_add hS le_rfl
     _ = (C + 1) * S := by ring
 
 /-- The individual positive block criterion and the signed ordered-pair
