@@ -33,6 +33,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftQuarticFactorizati
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicCumulativeQuarticPackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicChebyshevCumulativeBudgetControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftPackingObstructionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MellinNormalizedDyadicPackingControls
 
 set_option autoImplicit false
 
