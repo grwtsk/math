@@ -87,6 +87,46 @@ theorem scalarConjugate_mem_embeddingEigenspace
     scalarConjugate_smul, transportedCharacter_apply]
 
 
+/-- Four canonical embedding-line vectors transported simultaneously.
+
+This package is still factorwise: it does not form their tensor product. -/
+structure FourEmbeddingLineVectors where
+  character : Fin 4 → E →ₐ[k] E
+  vector : Fin 4 → E ⊗[k] E
+  mem : ∀ r, vector r ∈ embeddingEigenspace (k := k) (character r)
+
+/-- Scalar conjugation transports all four embedding-line factors at once. -/
+def FourEmbeddingLineVectors.scalarTransport
+    (D : FourEmbeddingLineVectors (k := k) (E := E))
+    (σ : E ≃ₐ[k] E) :
+    FourEmbeddingLineVectors (k := k) (E := E) where
+  character := fun r => transportedCharacter σ (D.character r)
+  vector := fun r => scalarConjugate σ (D.vector r)
+  mem := fun r =>
+    scalarConjugate_mem_embeddingEigenspace
+      σ (D.character r) (D.mem r)
+
+/-- Pointwise description of the transported four-factor character tuple. -/
+@[simp]
+theorem FourEmbeddingLineVectors.scalarTransport_character
+    (D : FourEmbeddingLineVectors (k := k) (E := E))
+    (σ : E ≃ₐ[k] E)
+    (r : Fin 4) :
+    (D.scalarTransport σ).character r =
+      transportedCharacter σ (D.character r) :=
+  rfl
+
+/-- Pointwise description of the transported four-factor vector tuple. -/
+@[simp]
+theorem FourEmbeddingLineVectors.scalarTransport_vector
+    (D : FourEmbeddingLineVectors (k := k) (E := E))
+    (σ : E ≃ₐ[k] E)
+    (r : Fin 4) :
+    (D.scalarTransport σ).vector r =
+      scalarConjugate σ (D.vector r) :=
+  rfl
+
+
 section GaloisTransportedLine
 
 variable [FiniteDimensional k E] [IsGalois k E]
