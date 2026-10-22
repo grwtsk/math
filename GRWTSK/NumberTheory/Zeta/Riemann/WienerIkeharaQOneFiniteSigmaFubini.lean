@@ -118,7 +118,7 @@ theorem wienerFubiniIntegrand_integrable
       Continuous (fun t : ℝ =>
         𝐞 (-(t * wienerFubiniFrequency n T))) :=
     Real.continuous_fourierChar.comp
-      (continuous_id.mul continuous_const).neg
+      ((continuous_id.mul continuous_const).neg)
   have hcont :
       Continuous (wienerFubiniIntegrand f sigma T psi n) :=
     continuous_const.mul (hphase.smul hpsi)
@@ -138,6 +138,7 @@ Dirichlet series, not a made-up exchange premise. -/
 theorem wienerFubini_integral_norm_summable
     (f : ℕ → ℂ) (sigma T : ℝ)
     (psi : ℝ → ℂ)
+    (hpsiInt : Integrable psi)
     (hL : LSeriesSummable f (sigma : ℂ)) :
     Summable
       (fun n : ℕ =>
@@ -150,6 +151,7 @@ theorem wienerFubini_integral_norm_summable
           (∫ t : ℝ, ‖psi t‖) := by
     simp_rw [wienerFubiniIntegrand_norm]
     rw [integral_const_mul]
+  have hpsiNorm : Integrable (fun t : ℝ => ‖psi t‖) := hpsiInt.norm
   simp_rw [heq]
   exact hL.norm.mul_const _
 
@@ -170,7 +172,7 @@ theorem wienerFubini_integral_tsum
     (fun n => wienerFubiniIntegrand_integrable
       f sigma T psi hpsi hcompact n)
     (wienerFubini_integral_norm_summable
-      f sigma T psi hL)
+      f sigma T psi (hpsi.integrable_of_hasCompactSupport hcompact) hL)
 
 /-- Exact complex-frequency identity for each coefficient. The
 n=0 source term is handled separately, without interpreting log 0
