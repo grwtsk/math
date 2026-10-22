@@ -48,7 +48,7 @@ unconditional_rh_proved = false
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightAmplitudeEnvelope"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightAmplitudeEnvelope.lean"
-blob = "226e7c3d9d282ab659ae54850575c606b51d5d0f"
+blob = "af28c29e2838b65fa722eb52c8f29e3a39cb3300"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeightAmplitude"
