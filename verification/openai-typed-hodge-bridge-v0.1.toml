@@ -205,7 +205,7 @@ labels = ["eq:cm-types", "eq:cm-label-conjugation"]
 statement_role = "construct U(v), polarize it, realize U(v)=H^1(B(v),Q), and track scalar conjugation of embedding-line labels"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.EmbeddingLineRealization"
 status = "OPEN"
-nonclaims = ["local source now supplies the actual central Galois complex-conjugation involution", "local records still do not construct the CM-field action or identify character eigenspaces with U(v)_lambda", "local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
+nonclaims = ["local source supplies the central Galois complex-conjugation involution and canonical regular base-change field action", "local source defines literal embedding-character eigenspaces but has not proved their one-dimensionality/completeness in the canonical realization", "local source has not identified the eigenspaces with Hodge lines of U(v)", "local source does not construct B(v)", "local source does not prove polarization/Riemann criterion"]
 
 [[external_premise]]
 id = "cm-four-factor-switch-algebraicity"
@@ -371,3 +371,18 @@ path = "GRWTSK/AlgebraicGeometry/Hodge/CMNumberFieldIndex.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex.fourBalance_twoTwoSignProfile"
 status = "SOURCE_DRAFT_NOT_RUN"
 upstream_obligations = ["NumberField E", "IsCMField E", "IsGalois Q E", "four odd sign rows", "four-label balance"]
+
+
+[[local_target]]
+name = "canonical regular base-change field action"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRegularBaseChange.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange.regularAction"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["field extension E/k", "coefficient field C over k"]
+
+[[local_target]]
+name = "canonical embedding-character eigenspace"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRegularBaseChange.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange.embeddingEigenspace"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = ["no one-dimensionality theorem", "no completeness theorem", "no Hodge type assignment", "no geometric H^1 realization"]
