@@ -68,4 +68,38 @@ theorem finite_count_square_balancing
   rw [hexpand] at hsum
   linarith
 
+
+/-- Quotient/remainder specialization of the integer balancing
+inequality: if q counts and their total is N, their square sum
+is at least (q-r)*a²+r*(a+1)², where N=a*q+r. -/
+theorem finite_count_square_div_mod_floor
+    {α : Type*} [DecidableEq α]
+    (s : Finset α) (counts : α → ℕ) (N : ℕ)
+    (hq : 0 < s.card)
+    (htotal : (∑ i ∈ s, counts i) = N) :
+    ((s.card - N % s.card : ℕ) : ℤ) *
+        ((N / s.card : ℤ) ^ 2) +
+      (N % s.card : ℤ) *
+        (((N / s.card : ℕ) : ℤ) + 1) ^ 2 ≤
+      ∑ i ∈ s, ((counts i : ℤ) ^ 2) := by
+  have hbase := finite_count_square_balancing s counts (N / s.card)
+  have hdiv : N % s.card + s.card * (N / s.card) = N := by
+    simpa [Nat.mul_comm] using Nat.mod_add_div N s.card
+  have hrem : N % s.card ≤ s.card := Nat.le_of_lt (Nat.mod_lt N hq)
+  have htotalZ :
+      (∑ i ∈ s, (counts i : ℤ)) = (N : ℤ) := by
+    exact_mod_cast htotal
+  rw [htotalZ] at hbase
+  have hdivZ :
+      ((N % s.card : ℕ) : ℤ) +
+        (s.card : ℤ) * ((N / s.card : ℕ) : ℤ) = (N : ℤ) := by
+    exact_mod_cast hdiv
+  have hsubZ :
+      (((s.card - N % s.card : ℕ) : ℤ)) =
+        (s.card : ℤ) - (N % s.card : ℤ) := by
+    exact_mod_cast (Nat.cast_sub hrem : ((s.card - N % s.card : ℕ) : ℤ) =
+      (s.card : ℤ) - (N % s.card : ℤ))
+  nlinarith [hbase, hdivZ, hsubZ]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
