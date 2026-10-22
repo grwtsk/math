@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-endpoint-staircase-793-v0.1"
+owner_repository = "grwtsk/math"
+issue = 793
+parent_issue = 783
+parent_pr = 788
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointStaircase"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointStaircase"
+
+[source_binding]
+stacked_parent_revision = "0a193d650cb412f7b433a0a23552dc09060e9de6"
+candidate_branch = "research/rh-staircase-drop-793"
+theorem_source_commit = "a58a45ee46f87b6d471ce72a2b11043747aad5a7"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointStaircase.lean"
+theorem_source_git_blob = "0e7db1f17a139a44a82d0bc3a3edb2f217c80d8a"
+
+[selected_increment]
+staircase_lower = "coreGrowingShiftQuarticEndpointStaircaseLower"
+staircase_upper = "coreGrowingShiftQuarticEndpointStaircaseUpper"
+staircase_support = "coreGrowingShiftQuarticEndpointStaircaseSupport"
+lower_normalization = "coreGrowingShiftQuarticEndpointExplicitDepthLower_eq_max_staircaseLower"
+drop_indicator = "coreGrowingShiftQuarticEndpointExplicitDepthWeightDrop_eq_indicator"
+drop_boolean = "coreGrowingShiftQuarticEndpointExplicitDepthWeightDrop_eq_zero_or_one"
+drop_upper_bound = "coreGrowingShiftQuarticEndpointExplicitDepthWeightDrop_le_one"
+staircase_energy = "coreGrowingShiftQuarticEndpointStaircaseSquareEnergy"
+stieltjes_to_staircase = "coreGrowingShiftQuarticEndpointStieltjesSquareEnergy_eq_staircase"
+prefix_energy_to_staircase = "coreGrowingShiftBinaryPrefixSquareEnergy_eq_endpointStaircase"
+staircase_source = "SubpolynomialCoreGrowingShiftQuarticEndpointStaircaseSquareEnergy"
+staircase_stieltjes_equivalence = "subpolynomialCoreGrowingShiftQuarticEndpointStaircaseSquareEnergy_iff_stieltjes"
+staircase_prefix_equivalence = "subpolynomialCoreGrowingShiftQuarticEndpointStaircaseSquareEnergy_iff_prefixSquareEnergy"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftQuarticEndpointStaircaseSquareEnergy"
+direct_source_interface = "EndpointStaircasePrefixSquareSource"
+dyadic_localization_interface = "DyadicPrefixSquareToEndpointStaircaseSource"
+proof_classification = "EXACT_BOOLEAN_FIRST_DROP_AND_STAIRCASE_REINDEX"
+next_obstruction = "prove the active staircase binary-prefix mean-square estimate or a source-faithful dyadic localization theorem"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+staircase_mean_square_proved = false
+chowla_proved = false
+corrected_elliott_proved = false
+carleson_localization_proved = false
+riemann_hypothesis_proved = false
