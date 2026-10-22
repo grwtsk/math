@@ -2165,3 +2165,56 @@ nonclaims = [
   "no separate scalar-conjugation naturality premise remains",
   "Hodge-line inclusion remains a separate comparison branch"
 ]
+
+
+[[local_target]]
+name = "finite-CM realization witness gives descent-side Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.RealizedMonomialGeneratorHodgeWitness.assembled_mem_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "finite CM field may vary with the scalar conjugate",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "transported realization family supplies transported-generator Hodge data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedGeneratorRealizationFamily.toTransportedGeneratorHodgeData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one realized finite-CM Hodge witness for each scalar automorphism"
+]
+nonclaims = [
+  "allows the finite CM field and actual realization to vary with sigma"
+]
+
+[[local_target]]
+name = "presented assembly plus realization family yields scalar-conjugate monomial lines"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.toScalarConjugateMonomialLineData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "canonical fourfold multilinear assembly presentation",
+  "finite-CM realization family for every transported generator"
+]
+nonclaims = [
+  "assembly equivariance is local",
+  "Hodge membership is local after the realization family",
+  "four-factor algebraicity remains independent"
+]
+
+[[external_premise]]
+id = "cm-transported-generator-finite-cm-realization-family"
+result_family = 32
+evidence = "EXTERNAL_REALIZATION_COMPARISON"
+source = "finite CM realization/comparison for every scalar-conjugated switched monomial generator"
+labels = []
+statement_role = "for each scalar automorphism of AlgebraicNumbers, choose a finite Galois CM realization, aligned four actual weight-one factors, the standard fourfold Hodge rule, an actual-to-descent comparison, and a generator identification for the transported assembled monomial"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedGeneratorRealizationFamily"
+status = "OPEN"
+nonclaims = [
+  "finite CM field need not be uniform across all scalar automorphisms",
+  "does not assert algebraicity",
+  "does not supply assembly equivariance"
+]
