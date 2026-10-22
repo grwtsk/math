@@ -121,8 +121,7 @@ theorem weightedMertensDyadicPrefix_eq_cumulative_pow (J : ℕ) :
   | zero =>
       simp [weightedMertensDyadicPrefix, weightedMertensCumulative]
   | succ J ih =>
-      rw [show Nat.succ J = J + 1 by rfl,
-        weightedMertensDyadicPrefix_succ, ih,
+      rw [weightedMertensDyadicPrefix_succ, ih,
         weightedMertensDyadicBlock_eq_cumulative_sub]
       ring
 
@@ -136,7 +135,7 @@ theorem subpolynomialDyadicPrefix_of_cumulative
   refine ⟨C, hC, ?_⟩
   intro J
   rw [weightedMertensDyadicPrefix_eq_cumulative_pow]
-  exact hbound (2 ^ J) (by positivity)
+  exact hbound (2 ^ J) (Nat.one_le_pow J 2 (by norm_num))
 
 /-- The logarithmic cover strictly exceeds the supplied horizon. -/
 theorem lt_pow_weightedMertensDyadicCover (N : ℕ) :
