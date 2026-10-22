@@ -102,4 +102,34 @@ theorem finite_count_square_div_mod_floor
   nlinarith [hbase, hdivZ, hsubZ]
 
 
+
+/-- The sharp quadratic integer-count discrepancy bound in its
+Parseval-ready form, without any probabilistic or arithmetic premise.
+The positive number q is the cardinality of the finite index set. -/
+theorem finite_count_square_parseval_floor
+    {α : Type*} [DecidableEq α]
+    (s : Finset α) (counts : α → ℕ) (N : ℕ)
+    (hq : 0 < s.card)
+    (htotal : (∑ i ∈ s, counts i) = N) :
+    ((N % s.card : ℕ) : ℤ) *
+      ((s.card - N % s.card : ℕ) : ℤ) ≤
+      (s.card : ℤ) * (∑ i ∈ s, ((counts i : ℤ) ^ 2)) -
+        (N : ℤ) ^ 2 := by
+  have hfloor := finite_count_square_div_mod_floor s counts N hq htotal
+  have hdiv : N % s.card + s.card * (N / s.card) = N := by
+    simpa [Nat.mul_comm] using Nat.mod_add_div N s.card
+  have hrem : N % s.card ≤ s.card := Nat.le_of_lt (Nat.mod_lt N hq)
+  have hdivZ :
+      (N % s.card : ℤ) +
+        (s.card : ℤ) * (N / s.card : ℤ) = (N : ℤ) := by
+    exact_mod_cast hdiv
+  have hsubZ :
+      ((s.card - N % s.card : ℕ) : ℤ) =
+        (s.card : ℤ) - (N % s.card : ℤ) := by
+    exact_mod_cast (Nat.cast_sub hrem : ((s.card - N % s.card : ℕ) : ℤ) =
+      (s.card : ℤ) - (N % s.card : ℤ))
+  have hqZ : (0 : ℤ) ≤ (s.card : ℤ) := by positivity
+  nlinarith [hfloor, hdivZ, hsubZ]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
