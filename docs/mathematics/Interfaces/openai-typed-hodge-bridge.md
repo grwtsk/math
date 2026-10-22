@@ -810,6 +810,85 @@ criterion, or prove the independent four-factor algebraicity theorem.
 Verification status remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 No elaboration or compile receipt is represented by this source increment.
 
+## 5e. Complexified trace pairing equals the coordinate Hodge energy
+
+The next archimedean comparison is now represented locally in
+\`GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean\`.
+
+For a sign-controlled \(\xi\), define the complexified coordinate pairing
+
+\[
+B_\xi(z,w)
+=
+\sum_\sigma
+\sigma(\xi)\,z_\sigma\,w_{c\sigma}.
+\]
+
+The local source proves two distinct statements.
+
+First, for rational vectors \(x,y\in E\), with embedding-coordinate vector
+
+\[
+z_x(\sigma)=\sigma(x),
+\]
+
+one has
+
+\[
+B_\xi(z_x,z_y)
+=
+\iota_0\!\left(
+\operatorname{Tr}_{E/\mathbf Q}
+(\xi x c(y))
+\right),
+\]
+
+where \(\iota_0:E\hookrightarrow\mathbf C\) is the selected base complex
+embedding applied after the rational trace has been included into \(E\).
+Thus \(B_\xi\) is not an invented coordinate form: it is the explicit scalar
+extension of the rational trace pairing.
+
+Second, use the already-local coordinate Hodge operators
+
+\[
+(\mathcal C z)_\sigma=\overline{z_{c\sigma}},
+\qquad
+(C_v z)_\sigma=v(\sigma)i\,z_\sigma.
+\]
+
+Then the source proves
+
+\[
+B_\xi(C_v z,\mathcal C z)
+=
+\sum_\sigma
+\sigma(\xi)\,v(\sigma)i\,|z_\sigma|^2
+=
+E_\xi(z).
+\]
+
+The corresponding declarations are
+
+~~~text
+SignControlledXi.complexifiedTracePairing_fieldCoordinates
+SignControlledXi.complexifiedTracePairing_weil_realConj
+SignControlledXi.complexifiedTracePairing_weil_realConj_eq_energy
+~~~
+
+This removes the coordinate-energy/complexified-trace-pairing identification
+from the external manuscript boundary at the source level.
+
+The remaining weight-one polarization frontier is therefore:
+
+1. choose a rational/integral lattice on which the alternating form is
+   integral after an admissible scaling;
+2. apply the Riemann bilinear criterion and obtain the abelian-variety
+   realization;
+3. separately prove the independent four-factor algebraicity theorem.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`; no
+elaboration or kernel receipt is claimed.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
