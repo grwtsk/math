@@ -245,6 +245,33 @@ structure SwitchCoreRationalWitnessPackage
     CMFourFactorAlgebraicity.RationalFourFactorHodgeWitness
       G conj v₁ v₂ v₃ v₄ V
 
+/-- Raw atomic tensor data is enough to produce the rational four-factor
+witness package locally: the canonical profile supplies type (2,2), and the
+existing trace-descent theorem supplies rational descent. -/
+def AtomicSwitchTensorData.toRationalPackage
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
+    {P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j}
+    (D : AtomicSwitchTensorData P) :
+    SwitchCoreRationalWitnessPackage conj := by
+  letI : AddCommGroup D.V := D.V_addCommGroup
+  letI : Module ℚ D.V := D.V_moduleQ
+  exact {
+    v₁ := P.v₁
+    v₂ := P.v₂
+    v₃ := P.v₃
+    v₄ := P.v₄
+    V := D.V
+    witness := D.toDescentData.toRationalWitness
+  }
+
 /-- Pure identification adapter from one atomic switched configuration to the
 rational four-factor Hodge witness already used by the repository's
 algebraicity interface.
