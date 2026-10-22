@@ -34,8 +34,8 @@ structure Budget (Patch Contact : Type*) where
 /-- The total budget over the selected patches and contacts. -/
 def Budget.total {Patch Contact : Type*} (budget : Budget Patch Contact)
     (patches : Finset Patch) (contacts : Finset Contact) : ℝ :=
-  budget.source + (∑ patch in patches, budget.patch patch) +
-    (∑ contact in contacts, budget.contact contact) + budget.truncation
+  budget.source + (∑ patch ∈ patches, budget.patch patch) +
+    (∑ contact ∈ contacts, budget.contact contact) + budget.truncation
 
 /-- Every signed reconstruction discrepancy is bounded by the sum of the independently
 certified source, patch, contact, and truncation budgets. -/
@@ -47,8 +47,8 @@ theorem signed_output_error_bound
     (budget : Budget Patch Contact)
     (decomposition :
       actual - reconstructed =
-        sourceError + (∑ patch in patches, patchError patch) +
-          (∑ contact in contacts, contactError contact) + truncationError)
+        sourceError + (∑ patch ∈ patches, patchError patch) +
+          (∑ contact ∈ contacts, contactError contact) + truncationError)
     (sourceBound : |sourceError| ≤ budget.source)
     (patchBound : ∀ patch ∈ patches, |patchError patch| ≤ budget.patch patch)
     (contactBound : ∀ contact ∈ contacts,
@@ -56,42 +56,44 @@ theorem signed_output_error_bound
     (truncationBound : |truncationError| ≤ budget.truncation) :
     |actual - reconstructed| ≤ budget.total patches contacts := by
   have patchTotal :
-      |∑ patch in patches, patchError patch| ≤
-        ∑ patch in patches, budget.patch patch := by
+      |∑ patch ∈ patches, patchError patch| ≤
+        ∑ patch ∈ patches, budget.patch patch := by
     calc
-      |∑ patch in patches, patchError patch| ≤
-          ∑ patch in patches, |patchError patch| :=
+      |∑ patch ∈ patches, patchError patch| ≤
+          ∑ patch ∈ patches, |patchError patch| :=
         Finset.abs_sum_le_sum_abs patchError patches
-      _ ≤ ∑ patch in patches, budget.patch patch :=
+      _ ≤ ∑ patch ∈ patches, budget.patch patch :=
         Finset.sum_le_sum patchBound
   have contactTotal :
-      |∑ contact in contacts, contactError contact| ≤
-        ∑ contact in contacts, budget.contact contact := by
+      |∑ contact ∈ contacts, contactError contact| ≤
+        ∑ contact ∈ contacts, budget.contact contact := by
     calc
-      |∑ contact in contacts, contactError contact| ≤
-          ∑ contact in contacts, |contactError contact| :=
+      |∑ contact ∈ contacts, contactError contact| ≤
+          ∑ contact ∈ contacts, |contactError contact| :=
         Finset.abs_sum_le_sum_abs contactError contacts
-      _ ≤ ∑ contact in contacts, budget.contact contact :=
+      _ ≤ ∑ contact ∈ contacts, budget.contact contact :=
         Finset.sum_le_sum contactBound
   rw [decomposition]
   unfold Budget.total
   calc
-    |sourceError + (∑ patch in patches, patchError patch) +
-        (∑ contact in contacts, contactError contact) + truncationError|
-        ≤ |sourceError + (∑ patch in patches, patchError patch) +
-              (∑ contact in contacts, contactError contact)| +
+    |sourceError + (∑ patch ∈ patches, patchError patch) +
+        (∑ contact ∈ contacts, contactError contact) + truncationError|
+        ≤ |sourceError + (∑ patch ∈ patches, patchError patch) +
+              (∑ contact ∈ contacts, contactError contact)| +
             |truncationError| :=
-      abs_add _ _
-    _ ≤ (|sourceError + (∑ patch in patches, patchError patch)| +
-            |∑ contact in contacts, contactError contact|) +
+      abs_add_le _ _
+    _ ≤ (|sourceError + (∑ patch ∈ patches, patchError patch)| +
+            |∑ contact ∈ contacts, contactError contact|) +
           |truncationError| := by
-      exact add_le_add_right (abs_add _ _) _
-    _ ≤ ((|sourceError| + |∑ patch in patches, patchError patch|) +
-            |∑ contact in contacts, contactError contact|) +
+      gcongr
+      exact abs_add_le _ _
+    _ ≤ ((|sourceError| + |∑ patch ∈ patches, patchError patch|) +
+            |∑ contact ∈ contacts, contactError contact|) +
           |truncationError| := by
-      exact add_le_add_right (add_le_add_right (abs_add _ _) _) _
-    _ ≤ budget.source + (∑ patch in patches, budget.patch patch) +
-          (∑ contact in contacts, budget.contact contact) + budget.truncation := by
+      gcongr
+      exact abs_add_le _ _
+    _ ≤ budget.source + (∑ patch ∈ patches, budget.patch patch) +
+          (∑ contact ∈ contacts, budget.contact contact) + budget.truncation := by
       exact add_le_add
         (add_le_add (add_le_add sourceBound patchTotal) contactTotal)
         truncationBound
