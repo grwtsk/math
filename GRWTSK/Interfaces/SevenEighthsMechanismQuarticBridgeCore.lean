@@ -90,6 +90,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularHalf
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularKernelClosedFormControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularSampledKernelControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularPropagationCorrectionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeCanonicalFejerPrefixOperatorControls
 
 set_option autoImplicit false
 
