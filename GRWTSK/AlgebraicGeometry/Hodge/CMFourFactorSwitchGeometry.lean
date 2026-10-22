@@ -1154,6 +1154,78 @@ def CMFiniteFourEmbeddingLineVectors.scalarTransport
         (D.character r).toAlgHom
         (D.mem r)
 
+/-- Actual weight-one realization data for four finite-level embedding-line
+factors over one fixed finite Galois CM field. -/
+structure CMFiniteFourFactorActualTyping
+    (E : CMGaloisIntermediateField)
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    (v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier) where
+  first :
+    CanonicalEmbeddingFactorActualTyping E.carrier v₁
+  second :
+    CanonicalEmbeddingFactorActualTyping E.carrier v₂
+  third :
+    CanonicalEmbeddingFactorActualTyping E.carrier v₃
+  fourth :
+    CanonicalEmbeddingFactorActualTyping E.carrier v₄
+  first_character : first.character = factors.character 0
+  second_character : second.character = factors.character 1
+  third_character : third.character = factors.character 2
+  fourth_character : fourth.character = factors.character 3
+  first_vector : first.vector = factors.vector 0
+  second_vector : second.vector = factors.vector 1
+  third_vector : third.vector = factors.vector 2
+  fourth_vector : fourth.vector = factors.vector 3
+
+/-- Switch alignment for finite-level factors on one fixed CM field. -/
+structure CMFiniteFourFactorSwitchAlignment
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄) where
+  g : E.carrier ≃ₐ[ℚ] E.carrier
+  balance : CMNumberFieldIndex.FourBalance E.carrier v₁ v₂ v₃ v₄
+  first_at_g : factors.character 0 = g
+  second_at_g : factors.character 1 = g
+  third_at_conj :
+    factors.character 2 =
+      (CMNumberFieldIndex.centralInvolution E.carrier).conj g
+  fourth_at_conj :
+    factors.character 3 =
+      (CMNumberFieldIndex.centralInvolution E.carrier).conj g
+
+/-- Convert the finite-level actual-typing package to the existing four-factor
+actual H1 package. -/
+def CMFiniteFourFactorActualTyping.toActualTyping
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄) :
+    FourCanonicalFactorsActualTyping E.carrier v₁ v₂ v₃ v₄ where
+  first := D.first
+  second := D.second
+  third := D.third
+  fourth := D.fourth
+
+/-- Finite switch alignment converts to the existing actual-H1 alignment. -/
+def CMFiniteFourFactorSwitchAlignment.toActualAlignment
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    (A : CMFiniteFourFactorSwitchAlignment D) :
+    FourCanonicalFactorsSwitchAlignment D.toActualTyping where
+  g := A.g
+  balance := A.balance
+  first_character := by
+    rw [D.first_character, A.first_at_g]
+  second_character := by
+    rw [D.second_character, A.second_at_g]
+  third_character := by
+    rw [D.third_character, A.third_at_conj]
+  fourth_character := by
+    rw [D.fourth_character, A.fourth_at_conj]
+
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
