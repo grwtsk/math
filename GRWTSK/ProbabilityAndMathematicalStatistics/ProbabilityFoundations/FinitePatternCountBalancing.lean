@@ -53,7 +53,6 @@ theorem finite_count_square_balancing
     apply Finset.sum_nonneg
     intro i _
     exact count_relative_consecutive_nonneg (counts i) a
-  simp only [Finset.sum_sub_distrib, Finset.sum_add_distrib] at *
   have hexpand :
       (∑ i ∈ s,
         (((counts i : ℤ) - a) *
@@ -237,7 +236,6 @@ theorem nonemptyCorrelationEnergy_eq_natCount_defect
   rw [← hchi]
   unfold chiSquareAgainstUniform scaledPatternDeviation
   simp_rw [empiricalPattern_eq_natCount_div]
-  dsimp [q]
   simp_rw [sub_sq]
   rw [Finset.sum_add_distrib, Finset.sum_sub_distrib]
   simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]
