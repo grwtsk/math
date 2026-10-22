@@ -1159,9 +1159,26 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types", "eq:cm-label-conjugation", "eq:transition-composition"]
-statement_role = "identify the actual cohomological middle embedding lines and scalar conjugation in H^1(B(v)) with the locally constructed canonical Galois tensor-model eigenspaces and transport"
+statement_role = "supply an E-linear cohomology-to-canonical tensor-model comparison carrying the actual middle embedding lines to the canonical eigenspaces and intertwining scalar conjugation"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CanonicalTransportedMiddleLineData.exists_scale"
 status = "OPEN"
 nonclaims = [
   "local source proves the one-dimensional tensor-model proportionality but not the H^1 comparison"
+]
+
+
+[[local_target]]
+name = "cohomology-to-canonical transported-line proportionality adapter"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CohomologyCanonicalLineComparison.exists_scale"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "E-linear equivalence from actual cohomological realization to canonical tensor model",
+  "compatibility of actual scalar conjugation with canonical scalarConjugate",
+  "source and target actual vectors map into the corresponding canonical embedding eigenspaces"
+]
+nonclaims = [
+  "formal comparison adapter only",
+  "does not construct the H^1 comparison equivalence",
+  "does not identify the ample-class pairing"
 ]
