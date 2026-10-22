@@ -1295,6 +1295,80 @@ theorem CMFiniteFourfoldAssembly.globalTensor_scalarConjugate
       E.carrier σ D.tensor]
   rw [D.scalar_transport_eq σ]
 
+/-- One actual-Hodge comparison witness for a transported finite-CM
+assembled generator, with the finite Galois CM field fixed.
+
+The four actual weight-one realizations may vary with the transported factor
+configuration, but no new coefficient field is chosen. -/
+structure CMFiniteTransportedGeneratorWitness
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) where
+  v₁ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₂ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₃ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₄ : CMNumberFieldIndex.OddSignRow E.carrier
+  actualTyping :
+    CMFiniteFourFactorActualTyping E
+      (factors.scalarTransport σ) v₁ v₂ v₃ v₄
+  alignment :
+    CMFiniteFourFactorSwitchAlignment actualTyping
+  hodgeRule :
+    FourfoldActualHodgeTensorRule actualTyping.toActualTyping
+  compare :
+    FourfoldActualTensor actualTyping.toActualTyping →ₗ[ℂ]
+      (ℂ ⊗[ℚ] V)
+  H22_le :
+    hodgeRule.H22.map compare ≤ hodgeSubspace
+  generator_eq :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) =
+      compare
+        (fourfoldActualPureTensor actualTyping.toActualTyping
+          (actualTyping.first.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.first.vector)
+          (actualTyping.second.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.second.vector)
+          (actualTyping.third.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.third.vector)
+          (actualTyping.fourth.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.fourth.vector))
+
+/-- One finite-CM transported comparison witness proves Hodge membership of
+its coefficient-included assembled generator. -/
+theorem CMFiniteTransportedGeneratorWitness.generator_mem_hodge
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers}
+    (W : CMFiniteTransportedGeneratorWitness D hodgeSubspace σ) :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) ∈
+      hodgeSubspace := by
+  rw [W.generator_eq]
+  apply W.H22_le
+  apply Submodule.mem_map.mpr
+  refine ⟨_, W.alignment.canonicalPureTensor_mem_H22 W.hodgeRule, rfl⟩
+
+/-- A fixed-field transported comparison witness for every absolute
+automorphism supplies the exact finite-CM Hodge package consumed by descent. -/
+def CMFiniteTransportedGeneratorHodgeData.ofWitnesses
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (W :
+      ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+        CMFiniteTransportedGeneratorWitness D hodgeSubspace σ) :
+    CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
+  generator_mem := fun σ => (W σ).generator_mem_hodge
+
 /-- Hodge membership for every transported finite-CM assembled generator.
 
 This is the correct pre-descent Hodge interface for the finite-level switch
