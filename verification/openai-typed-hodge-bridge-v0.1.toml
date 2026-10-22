@@ -1211,3 +1211,32 @@ upstream_obligations = [
 nonclaims = [
   "pure field algebra after q_i nonvanishing"
 ]
+
+
+[[local_target]]
+name = "ample-class middle pairing comparison implies q_i nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassMiddlePairingComparison.q_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "positive conjugate pairing package",
+  "nonzero beta",
+  "nonzero scalar proportionality of gamma to conjugate partner",
+  "identification of geometric q_i with the abstract pairing"
+]
+nonclaims = [
+  "formal implication only",
+  "does not construct the ample-class Hodge-Riemann comparison"
+]
+
+[[local_target]]
+name = "signed transition-composition scalar is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionCompositionScalar_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "pointwise nonvanishing of all middle pairing scalars q_i"
+]
+nonclaims = [
+  "pure field algebra after q_i nonvanishing"
+]
