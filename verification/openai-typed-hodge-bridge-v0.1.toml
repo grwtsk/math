@@ -2247,13 +2247,13 @@ nonclaims = [
 ]
 
 [[external_premise]]
-id = "cm-four-canonical-factors-common-cm-support"
+id = "cm-supported-global-four-factor-construction"
 result_family = 32
 evidence = "EXTERNAL_CM_REALIZATION"
 source = "CM realization field for the finite Galois carrier of the switched tensor"
 labels = []
-statement_role = "exhibit one finite Galois CM intermediate field of AlgebraicNumbers supporting all four canonical switched factor vectors and characters; once supplied, every absolute scalar conjugate is represented by restriction and local scalar transport on that same CM field"
-local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFourFactorSupport"
+statement_role = "construct the global AlgebraicNumbers four-factor package together with its common finite Galois CM support directly from the original finite Galois CM embedding-line data; scalar transport then preserves that same support locally"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors"
 status = "OPEN"
 nonclaims = [
   "arbitrary finite tensor support is already local",
@@ -2299,3 +2299,39 @@ upstream_obligations = [
 nonclaims = [
   "all scalar transports stay on the same finite Galois CM carrier once support is supplied"
 ]
+
+
+[[local_target]]
+name = "global four-factor data carries explicit common CM support"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "global four embedding-line factors over AlgebraicNumbers",
+  "explicit global automorphism lift for each stored AlgHom character",
+  "one common finite Galois CM carrier",
+  "local vectors and characters with inclusion/restriction comparison"
+]
+nonclaims = [
+  "does not construct supported global factors from arbitrary global data",
+  "support is construction data, not inferred afterward"
+]
+
+[[local_target]]
+name = "scalar transport preserves chosen common CM support"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors.scalarTransport"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "SupportedCMFourEmbeddingLineVectors"
+]
+nonclaims = [
+  "same finite Galois CM carrier is retained for all scalar conjugates",
+  "global character restrictions are proved through explicit automorphism lifts"
+]
+
+[[local_target]]
+name = "scalar transport keeps the identical support field"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors.scalarTransport_support_field"
+status = "SOURCE_DRAFT_NOT_RUN"
