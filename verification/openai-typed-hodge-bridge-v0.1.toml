@@ -1271,3 +1271,28 @@ nonclaims = [
   "no compatibility between the ample class and E is assumed",
   "local source consumes positivity but does not prove the geometric theorem"
 ]
+
+
+[[local_target]]
+name = "atomic switch changes only two rows"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchConjugatePair_changedRow_subset"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one conjugate-paired two-row switch"
+]
+nonclaims = [
+  "support decomposition only",
+  "no two-factor algebraicity theorem",
+  "no four-factor algebraicity theorem"
+]
+
+[[local_target]]
+name = "unchanged atomic-switch rows are literally equal"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.unchangedRow_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "combinatorial equality only",
+  "does not construct the manuscript identity tensor"
+]
