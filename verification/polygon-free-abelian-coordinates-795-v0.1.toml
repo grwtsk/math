@@ -1,0 +1,342 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "polygon-free-abelian-coordinates-795-v0.1"
+owner_repository = "grwtsk/math"
+issue = 795
+related_issues = [774, 758, 745, 734, 722, 704, 653, 198, 205, 545, 121, 168, 516, 159, 100, 15]
+route_id = "FINITE_POLYGON_FULL_FREEABELIAN_CANONICAL_COORDINATES"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/polygon-abelianization-774-20261022"
+review_parent_revision = "6530b6815b9ce6f5383b64cd4207892e8c016675"
+review_parent_module_git_blob = "5c1259b1c94c3596b7b38f7ce3eef2b409e9e0bf"
+review_parent_cell_module_git_blob = "d21accee39c38ce4341527465021decc173ded8e"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonFreeAbelianCoordinates.lean"
+new_module_git_blob = "d48167d875334b295b141c5ff51f1a99413b5933"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-free-abelian-coordinates.md"
+mathematical_note_git_blob = "b53933641aecbec7ba1beadc795c2fdef52395fb"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+imported_freeabelian_equiv_path = "Mathlib/Algebra/FreeAbelianGroup/Finsupp.lean"
+imported_freeabelian_equiv_name = "FreeAbelianGroup.equivFinsupp"
+imported_finite_function_equiv_path = "Mathlib/Algebra/Group/Finsupp.lean"
+imported_finite_function_equiv_name = "Finsupp.addEquivFunOnFinite"
+imported_additive_to_multiplicative_equiv_path = "Mathlib/Algebra/Group/Equiv/TypeTags.lean"
+imported_additive_to_multiplicative_equiv_name = "AddEquiv.toMultiplicativeRight"
+reuse_status = "IMPORTED_MATHLIB_THEOREM_SOURCE_IDENTIFIED_NOT_QUALIFIED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+imported_free_abelian_iso_reused = true
+imported_finite_finsupp_iso_reused = true
+actual_full_canonical_mulEquiv_source_candidate = true
+same_one_cell_source_type = true
+all_original_freegroup_character_equalities_source_candidate = true
+all_original_signed_words_vector_agreement_source_candidate = true
+canonical_group_quotient_kernel_iff_characters_source_candidate = true
+full_polygon_face_boundary_eq_canonical_coordinates = true
+hostile_missing_inverse_edge = true
+hostile_nontrivial_heisenberg_kernel = true
+categorical_candidate_chain_homology_instantiated = false
+authentic_topological_CW_surface_proved = false
+surface_van_kampen_and_hurewicz_proved = false
+marked_hyperbolic_geometry_proved = false
+geodesic_length_or_trace_source_proved = false
+modular_to_haar_alias_comparison_proved = false
+sofic_GUE_adapter_proved = false
+growing_shift_chowla_supplier_proved = false
+zeta_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "Exact imported free abelian group equivalence yields a full canonical Abelianization(FreeGroup A) to Multiplicative(A to Z) isomorphism for finite A=GenusLetter k. New source-bound proof scripts identify all preexisting exponent characters and oriented incidence coefficients with its coordinates and prove full canonical quotient kernel detection."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates"
+authored_declaration_count = 18
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison", "Mathlib.Algebra.FreeAbelianGroup.Finsupp", "Mathlib.Algebra.Group.Finsupp", "Mathlib.Algebra.Group.Equiv.TypeTags"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.freeAbelianCoordinates"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalAbelianizationCoordinates"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.freeAbelianCoordinates_of"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalAbelianizationCoordinates_generator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalCoordinates_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalCoordinates_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.coordinateProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalProjectedCharacter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalProjectedCharacter_eq_exponentCharacter"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalCoordinates_eq_exponentCharacter"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.canonicalCoordinates_signedWord"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.polygonFaceBoundaryVector_eq_canonicalCoordinates"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.fullPolygonCoordinates_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.abelianization_eq_one_iff_all_characters_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.missingInverseEdge_coordinates_nonzero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.firstHandleBlock_zero_coordinates_but_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.genus_two_integer_coordinate_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonFreeAbelianCoordinates.genus_three_integer_coordinate_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reuse-upstream-freeabelian"
+requirement = "The FreeAbelianGroup.equivFinsupp theorem belongs to pinned Mathlib; do not reprove, relabel, or omit original attribution."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reuse-upstream-finite-finsupp"
+requirement = "The Finsupp.addEquivFunOnFinite group isomorphism is imported from pinned Mathlib and needs a FINITE generator type."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-canonical-abelianization"
+requirement = "The full domain is Mathlib Abelianization(FreeGroup A), through its definitional Additive FreeAbelianGroup, not an invented quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-generator-exact"
+requirement = "The A source type is EXACT GenusLetter k, with the same four base source IDs and k distinct extra handle pairs as #734."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-one-cell-exact"
+requirement = "The coordinate codomain is the existing OneCellChains k = GenusLetter k -> ℤ from #758."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-isomorphism-not-projection"
+requirement = "The composition is a genuine AddEquiv and transported MulEquiv, not merely an injective pointwise map without surjectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generator-basis-Kronecker"
+requirement = "Every FreeAbelianGroup.of a and Abelianization.of(FreeGroup.of a) maps to the exact indicator vector of that same source generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-group-character"
+requirement = "Source character comparison consumes the exact FreeGroup.lift exponentCharacter from #774, not an arbitrary integer table."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "hom-ext-over-all-words"
+requirement = "Equality of the canonical coordinate projection and exponentCharacter is proved via FreeGroup.ext_hom on ALL original generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-words-no-length-cutoff"
+requirement = "The exact canonical quotient coordinate statement holds for every word in the full FreeGroup, not only finite-length observed words."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "signed-forward-edge"
+requirement = "The positive polygon edge contributes +1 at its actual generator ID and 0 at all other IDs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "signed-inverse-edge"
+requirement = "An inverse polygon edge contributes -1, not +1; this follows from the real group character rather than a free replacement rule."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "literal-polygon-source-list"
+requirement = "The vector-level comparison consumes polygonBoundaryEval k sides and signedWordCoefficient k x sides of the exact same source list."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "complete-relator-same-source"
+requirement = "The full polygon boundary vector equals coordinates of Abelianization.of(higherGenusRelator k), not a different homology label."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-zero-incidence-consumed"
+requirement = "Vanishing of the canonical relator vector uses #758 polygonFaceBoundaryVector_eq_zero, not a newly postulated all-zero check."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "joint-kernel-converse"
+requirement = "Vanishing of ALL integer characters is proved equivalent to canonical abelianization identity using the full MulEquiv injectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-converse-to-FreeGroup-triviality"
+requirement = "Vanishing characters do NOT imply the original noncommutative FreeGroup word is identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "missing-b-inverse-nonzero"
+requirement = "Deleting the inverse b-edge yields a nonzero coordinate vector, not only a textual negative fixture."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "heisenberg-complete-first-handle"
+requirement = "A complete first-handle commutator has zero quotient coordinates but is a nonidentity FreeGroup element by the explicit Heisenberg map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noncommutative-source-retained"
+requirement = "A genuinely noncommutative word can lie in the kernel of the actual canonical abelianization; never equate the full relator to identity in the free group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-not-vacuous"
+requirement = "k=0 has exactly four generator-source IDs and its canonical quotient is nontrivial."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-not-vacuous"
+requirement = "k=1 has exactly six generator-source IDs with one added handle pair retained."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "every-genus-family"
+requirement = "The theorem family applies to all k≥0 rather than selecting a bounded genus window."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-topological-H1-equation"
+requirement = "An equivalence with the finite candidate chain carrier is NOT automatically a cellular or singular H1 isomorphism of an actual surface."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-categorical-chain-quotient"
+requirement = "The finite d1/d2 algebraic model still lacks a categorical homology quotient or an authored exact module quotient theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-van-kampen-CW"
+requirement = "No actual polygon quotient, 2-cell attaching map, van Kampen pi1 or Hurewicz comparison is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-marked-geometric-surface"
+requirement = "No marked compact hyperbolic metric, primitive separating closed geodesic, length or geodesic enumerator is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-torelli-johnson"
+requirement = "No Torelli or Johnson kernel action, mapping-class group adapter, or nilpotent graded Lie comparison is concluded."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-finite-q-alias-resolution"
+requirement = "Actual integral abelianization coordinates do not erase modular congruence aliases or identify finite torsion with Haar."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hodge-chain-pairing"
+requirement = "No Cech/Hodge #198 or signed-form #205/#545 chain-level consumer is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-GUE"
+requirement = "No Selberg trace, Weil-Petersson integration, sofic operator microstatistics, GUE point process or zeta-zero spectrum is inferred."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-or-RH"
+requirement = "No growing-shift Mobius/Chowla theorem, arithmetic zero divisor or Riemann hypothesis implication is obtained."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authored-source-is-not-elaboration"
+requirement = "The source-level authored declaration inventory is not a Lean-generated type or transitive axiom/unsafe audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-native-qualification"
+requirement = "No Lean/Lake, VM/native/F06, CI/workflows, cache, executor, root imports or dependency/toolchain changes are authorized."
+status = "NOT_RUN"
+
