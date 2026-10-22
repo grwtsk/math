@@ -9,6 +9,7 @@ Issue: #943. Parent: draft PR #938 at
 `61ceabc31ef78024c954fd860fbcc5129d7d9d30`.
 -/
 import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseNumeratorFourier
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 
 set_option autoImplicit false
 noncomputable section
@@ -182,28 +183,6 @@ private theorem transverseSummationByParts_sum_zmod_indicator_Ico
         rfl
       · intro n _hn
         rfl
-
-/-- Negative additive character evaluated on an ordinary representative. -/
-def coreGrowingShiftEndpointTransverseNatCharacter
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j)
-    (n : ℕ) : ℂ :=
-  ZMod.stdAddChar
-    (-((n : CoreGrowingShiftEndpointDoubledFourierIndex j) * u))
-
-/-- Successor relation for the negative ordinary character. -/
-theorem coreGrowingShiftEndpointTransverseNatCharacter_succ_mul
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j)
-    (n : ℕ) :
-    coreGrowingShiftEndpointTransverseNatCharacter j u (n + 1) *
-        ZMod.stdAddChar u =
-      coreGrowingShiftEndpointTransverseNatCharacter j u n := by
-  unfold coreGrowingShiftEndpointTransverseNatCharacter
-  rw [← map_add_eq_mul]
-  congr 1
-  push_cast
-  ring
 
 /-- Exact finite summation by parts for a character-weighted affine reciprocal
 first difference. -/

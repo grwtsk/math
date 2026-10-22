@@ -9,6 +9,7 @@ Issue: #927. Parent: draft PR #922 at
 `8ff42f7da358d7bb49567e1fa3d2fd83277332e7`.
 -/
 import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseFrequencySplitFourier
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 
 set_option autoImplicit false
 noncomputable section
@@ -16,14 +17,6 @@ open scoped BigOperators
 open AddChar
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
-
-/-- The elementary Jordan lower scale attached to one transverse frequency. -/
-def coreGrowingShiftEndpointTransverseJordanLowerScale
-    (j : ℕ)
-    (u : CoreGrowingShiftEndpointDoubledFourierIndex j) : ℝ :=
-  4 *
-      (coreGrowingShiftEndpointTransverseCircularDistance j u : ℝ) /
-    (coreGrowingShiftEndpointDoubledFourierModulus j : ℝ)
 
 /-- Jordan's inequality converts the exact sine formula from #915 into an
 explicit lower bound for the transverse finite-difference multiplier. -/

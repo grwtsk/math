@@ -4,12 +4,13 @@ Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI ChatGPT.
 Imported sources retain their original credits/licenses.
 
-Status: SOURCE_DRAFT / MINIMAL_IMPORT_CORE / NOT_YET_LOCALLY_REPLAYED.
+Finite cyclic endpoint supplier with transparent forwarding to its original coordinates.
 
-This module isolates only the finite cyclic data used by the growing-shift
-right-endpoint estimate.  It does not import the endpoint kernel stack.
+The original finite cyclic data are owned by CoreGrowingShiftEndpointCyclicCoordinates.
+This module specializes generic finite estimates through transparent aliases.
 -/
 import GRWTSK.NumberTheory.CharacterSums.FiniteCyclicIntervalDistance
+import GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates
 
 set_option autoImplicit false
 noncomputable section
@@ -20,43 +21,39 @@ namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
 /-- The original endpoint Fourier window length, isolated from its kernel
 owner. -/
-def coreGrowingShiftEndpointFiniteCyclicFourierModulus (j : ℕ) : ℕ :=
-  2 ^ (j + 1)
+abbrev coreGrowingShiftEndpointFiniteCyclicFourierModulus (j : ℕ) : ℕ :=
+  coreGrowingShiftEndpointFourierModulus j
 
 /-- The original doubled endpoint modulus, isolated from the endpoint kernel
 stack. -/
-def coreGrowingShiftEndpointFiniteCyclicDoubledModulus (j : ℕ) : ℕ :=
-  2 * coreGrowingShiftEndpointFiniteCyclicFourierModulus j
+abbrev coreGrowingShiftEndpointFiniteCyclicDoubledModulus (j : ℕ) : ℕ :=
+  coreGrowingShiftEndpointDoubledFourierModulus j
 
 instance coreGrowingShiftEndpointFiniteCyclicDoubledModulus_neZero (j : ℕ) :
     NeZero (coreGrowingShiftEndpointFiniteCyclicDoubledModulus j) :=
-  ⟨by
-    unfold coreGrowingShiftEndpointFiniteCyclicDoubledModulus
-      coreGrowingShiftEndpointFiniteCyclicFourierModulus
-    positivity⟩
+  coreGrowingShiftEndpointDoubledFourierModulus_neZero j
 
 /-- Minimal finite cyclic endpoint coordinate. -/
 abbrev CoreGrowingShiftEndpointFiniteCyclicIndex (j : ℕ) :=
-  ZMod (coreGrowingShiftEndpointFiniteCyclicDoubledModulus j)
+  CoreGrowingShiftEndpointDoubledFourierIndex j
 
 /-- Exact negative phase used by the right-endpoint branch. -/
-def coreGrowingShiftEndpointFiniteCyclicNegativePhase
+abbrev coreGrowingShiftEndpointFiniteCyclicNegativePhase
     (j n : ℕ)
     (t : CoreGrowingShiftEndpointFiniteCyclicIndex j) : ℂ :=
-  ZMod.stdAddChar
-    (-((n : CoreGrowingShiftEndpointFiniteCyclicIndex j) * t))
+  coreGrowingShiftEndpointTransverseNatCharacter j t n
 
 /-- Exact positive-character finite-difference multiplier. -/
-def coreGrowingShiftEndpointFiniteCyclicMultiplier
+abbrev coreGrowingShiftEndpointFiniteCyclicMultiplier
     (j : ℕ)
     (t : CoreGrowingShiftEndpointFiniteCyclicIndex j) : ℂ :=
-  ZMod.stdAddChar t - 1
+  coreGrowingShiftEndpointTransverseMultiplier j t
 
 /-- Exact circular distance used by the endpoint transverse split. -/
-def coreGrowingShiftEndpointFiniteCyclicDistance
+abbrev coreGrowingShiftEndpointFiniteCyclicDistance
     (j : ℕ)
     (t : CoreGrowingShiftEndpointFiniteCyclicIndex j) : ℕ :=
-  GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance t
+  coreGrowingShiftEndpointTransverseCircularDistance j t
 
 /-- Dictionary from the isolated endpoint phase to the generic supplier. -/
 theorem coreGrowingShiftEndpointFiniteCyclicNegativePhase_eq
@@ -89,7 +86,10 @@ theorem coreGrowingShiftEndpointFiniteCyclicMultiplier_inv_norm_le_distance
       (coreGrowingShiftEndpointFiniteCyclicDoubledModulus j : ℝ) /
         (4 * (coreGrowingShiftEndpointFiniteCyclicDistance j t : ℝ)) := by
   simpa [coreGrowingShiftEndpointFiniteCyclicMultiplier,
-    coreGrowingShiftEndpointFiniteCyclicDistance] using
+    coreGrowingShiftEndpointFiniteCyclicDistance,
+    coreGrowingShiftEndpointTransverseMultiplier,
+    coreGrowingShiftEndpointTransverseCircularDistance,
+    GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance] using
     GRWTSK.NumberTheory.CharacterSums.norm_inv_stdAddChar_sub_one_le_circularDistance
       (q := coreGrowingShiftEndpointFiniteCyclicDoubledModulus j) ht
 
@@ -104,7 +104,10 @@ theorem coreGrowingShiftEndpointFiniteCyclicInterval_norm_le_distance
       (coreGrowingShiftEndpointFiniteCyclicDoubledModulus j : ℝ) /
         (2 * (coreGrowingShiftEndpointFiniteCyclicDistance j t : ℝ)) := by
   simpa [coreGrowingShiftEndpointFiniteCyclicNegativePhase,
-    coreGrowingShiftEndpointFiniteCyclicDistance] using
+    coreGrowingShiftEndpointFiniteCyclicDistance,
+    coreGrowingShiftEndpointTransverseNatCharacter,
+    coreGrowingShiftEndpointTransverseCircularDistance,
+    GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance] using
     GRWTSK.NumberTheory.CharacterSums.norm_sum_stdAddChar_neg_Ico_le_circularDistance
       (q := coreGrowingShiftEndpointFiniteCyclicDoubledModulus j)
       t A B hA ht
@@ -121,7 +124,10 @@ theorem coreGrowingShiftEndpointFiniteCyclicInterval_norm_le_regularCutoff
       (coreGrowingShiftEndpointFiniteCyclicDoubledModulus j : ℝ) /
         (2 * (((L + 1 : ℕ) : ℝ))) := by
   simpa [coreGrowingShiftEndpointFiniteCyclicNegativePhase,
-    coreGrowingShiftEndpointFiniteCyclicDistance] using
+    coreGrowingShiftEndpointFiniteCyclicDistance,
+    coreGrowingShiftEndpointTransverseNatCharacter,
+    coreGrowingShiftEndpointTransverseCircularDistance,
+    GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance] using
     GRWTSK.NumberTheory.CharacterSums.norm_sum_stdAddChar_neg_Ico_le_regularCutoff
       (q := coreGrowingShiftEndpointFiniteCyclicDoubledModulus j)
       t A B L hA ht hL
@@ -134,8 +140,7 @@ theorem coreGrowingShiftEndpointFiniteCyclicInterval_zero
       coreGrowingShiftEndpointFiniteCyclicNegativePhase j n
         (0 : CoreGrowingShiftEndpointFiniteCyclicIndex j)) =
       ((Finset.Ico A B).card : ℂ) := by
-  simpa [coreGrowingShiftEndpointFiniteCyclicNegativePhase] using
-    GRWTSK.NumberTheory.CharacterSums.sum_stdAddChar_neg_Ico_zero
+  exact GRWTSK.NumberTheory.CharacterSums.sum_stdAddChar_neg_Ico_zero
       (q := coreGrowingShiftEndpointFiniteCyclicDoubledModulus j) A B
 
 /-- Norm-one phase-matched coefficients destroy the unweighted cancellation.
@@ -153,7 +158,8 @@ theorem coreGrowingShiftEndpointFiniteCyclic_phaseMatchedWeights
             ((n : CoreGrowingShiftEndpointFiniteCyclicIndex j) * t) *
           coreGrowingShiftEndpointFiniteCyclicNegativePhase j n t) =
         (S.card : ℂ) := by
-  simpa [coreGrowingShiftEndpointFiniteCyclicNegativePhase] using
+  simpa [coreGrowingShiftEndpointFiniteCyclicNegativePhase,
+    coreGrowingShiftEndpointTransverseNatCharacter] using
     GRWTSK.NumberTheory.CharacterSums.stdAddChar_phase_matched_weights
       (q := coreGrowingShiftEndpointFiniteCyclicDoubledModulus j) t S
 
