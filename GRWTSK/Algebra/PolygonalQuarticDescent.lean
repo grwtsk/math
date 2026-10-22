@@ -153,30 +153,6 @@ theorem four_linear_factors_vieta (a b c d : R) :
   simp only [map_add, map_sub, map_mul, map_pow]
   ring
 
-/-- The output is a function of the actual quartic coefficients; no
-chosen ordering is included in the output. An explicit factorization
-is the sole input witness. If the quartic is separable over a splitting
-field, such an ordering exists with distinct roots, but the polynomial
-identity itself also holds for repeated roots in every characteristic. -/
-theorem resolvent_of_actual_factored_quartic
-    (p : R[X]) (a b c d A B C D : R)
-    (hp : p = (Polynomial.X - Polynomial.C a) *
-      (Polynomial.X - Polynomial.C b) *
-      (Polynomial.X - Polynomial.C c) *
-      (Polynomial.X - Polynomial.C d))
-    (hcoeff : p = Polynomial.X ^ 4 +
-      Polynomial.C A * Polynomial.X ^ 3 +
-      Polynomial.C B * Polynomial.X ^ 2 +
-      Polynomial.C C * Polynomial.X + Polynomial.C D)
-    (hA : A = -eOne a b c d)
-    (hB : B = eTwo a b c d)
-    (hC : C = -eThree a b c d)
-    (hD : D = eFour a b c d) :
-    adjacencyResolventFromRoots a b c d =
-      adjacencyResolventOfMonicCoefficients A B C D := by
-  rw [hA, hB, hC, hD]
-  exact adjacencyResolvent_coefficient_substitution a b c d
-
 /-- Express the same cubic through the coefficients of a monic quartic
   p = X⁴ + A X³ + B X² + C X + D. -/
 def adjacencyResolventOfMonicCoefficients (A B C D : R) : R[X] :=
@@ -189,5 +165,85 @@ theorem adjacencyResolvent_coefficient_substitution (a b c d : R) :
         (-eThree a b c d) (eFour a b c d) := by
   rw [adjacencyResolvent_vieta]
   simp [adjacencyResolventOfMonicCoefficients]
+
+
+/-- The four coefficient equalities extracted from an equality of actual
+quartic polynomials.  Each extraction uses the corresponding coefficient
+functional; in particular, no Vieta equations are external premises. -/
+theorem quartic_coefficients_of_factorization
+    (p : R[X]) (a b c d A B C D : R)
+    (hp : p = (Polynomial.X - Polynomial.C a) *
+      (Polynomial.X - Polynomial.C b) *
+      (Polynomial.X - Polynomial.C c) *
+      (Polynomial.X - Polynomial.C d))
+    (hcoeff : p = Polynomial.X ^ 4 +
+      Polynomial.C A * Polynomial.X ^ 3 +
+      Polynomial.C B * Polynomial.X ^ 2 +
+      Polynomial.C C * Polynomial.X + Polynomial.C D) :
+    A = -eOne a b c d ∧
+    B = eTwo a b c d ∧
+    C = -eThree a b c d ∧
+    D = eFour a b c d := by
+  have hid : quarticFromVieta (eOne a b c d) (eTwo a b c d)
+      (eThree a b c d) (eFour a b c d) =
+      Polynomial.X ^ 4 + Polynomial.C A * Polynomial.X ^ 3 +
+      Polynomial.C B * Polynomial.X ^ 2 +
+      Polynomial.C C * Polynomial.X + Polynomial.C D :=
+    (four_linear_factors_vieta a b c d).symm.trans (hp.symm.trans hcoeff)
+  have h0 := congrArg (fun q : R[X] => q.coeff 0) hid
+  have h1 := congrArg (fun q : R[X] => q.coeff 1) hid
+  have h2 := congrArg (fun q : R[X] => q.coeff 2) hid
+  have h3 := congrArg (fun q : R[X] => q.coeff 3) hid
+  simp [quarticFromVieta, Polynomial.coeff_add, Polynomial.coeff_sub,
+    Polynomial.coeff_X_pow] at h0 h1 h2 h3
+  constructor
+  · linear_combination -h3
+  constructor
+  · linear_combination -h2
+  constructor
+  · linear_combination -h1
+  · linear_combination -h0
+
+/-- An actual factored monic quartic determines its adjacency cubic solely
+from its polynomial coefficients, without separately postulating Vieta. -/
+theorem resolvent_of_actual_factored_quartic
+    (p : R[X]) (a b c d A B C D : R)
+    (hp : p = (Polynomial.X - Polynomial.C a) *
+      (Polynomial.X - Polynomial.C b) *
+      (Polynomial.X - Polynomial.C c) *
+      (Polynomial.X - Polynomial.C d))
+    (hcoeff : p = Polynomial.X ^ 4 +
+      Polynomial.C A * Polynomial.X ^ 3 +
+      Polynomial.C B * Polynomial.X ^ 2 +
+      Polynomial.C C * Polynomial.X + Polynomial.C D) :
+    adjacencyResolventFromRoots a b c d =
+      adjacencyResolventOfMonicCoefficients A B C D := by
+  obtain ⟨hA, hB, hC, hD⟩ :=
+    quartic_coefficients_of_factorization p a b c d A B C D hp hcoeff
+  rw [hA, hB, hC, hD]
+  exact adjacencyResolvent_coefficient_substitution a b c d
+
+/-- An arbitrary permutation of four labelled roots leaves the cubic
+unchanged: the coefficient expression is independent of the ordering. -/
+theorem adjacencyResolvent_permutation (r : Fin 4 → R)
+    (σ : Equiv.Perm (Fin 4)) :
+    adjacencyResolventFromRoots (r (σ 0)) (r (σ 1))
+      (r (σ 2)) (r (σ 3)) =
+    adjacencyResolventFromRoots (r 0) (r 1) (r 2) (r 3) := by
+  repeat rw [adjacencyResolvent_vieta]
+  simp only [adjacencyResolventFromVieta]
+  have h₁ : eOne (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
+      eOne (r 0) (r 1) (r 2) (r 3) := by
+    fin_cases σ <;> simp [eOne] <;> ring
+  have h₂ : eTwo (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
+      eTwo (r 0) (r 1) (r 2) (r 3) := by
+    fin_cases σ <;> simp [eTwo] <;> ring
+  have h₃ : eThree (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
+      eThree (r 0) (r 1) (r 2) (r 3) := by
+    fin_cases σ <;> simp [eThree] <;> ring
+  have h₄ : eFour (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
+      eFour (r 0) (r 1) (r 2) (r 3) := by
+    fin_cases σ <;> simp [eFour] <;> ring
+  rw [h₁, h₂, h₃, h₄]
 
 end GRWTSK.Algebra.PolygonalQuarticDescent
