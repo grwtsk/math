@@ -51,7 +51,8 @@ theorem pinnedPrimeWeightStageErrorEnvelope_nonnegative
     (j : ℕ) {R ρ η : ℝ} (hR : 0 ≤ R) :
     0 ≤ pinnedPrimeWeightStageErrorEnvelope j R ρ η := by
   unfold pinnedPrimeWeightStageErrorEnvelope
-  exact mul_nonneg hR (Real.rpow_nonneg _ _)
+  exact mul_nonneg hR
+    (Real.rpow_nonneg (Nat.cast_nonneg (dyadicScale j)) _)
 
 /-- For a nonnegative admitted error, the optimized max-deficit bound is
 exactly the corresponding capacity inequality. -/
