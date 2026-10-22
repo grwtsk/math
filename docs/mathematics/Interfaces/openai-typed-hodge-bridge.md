@@ -1994,6 +1994,49 @@ Therefore the remaining `FourfoldAlgebraicAssemblyEquivariance` obligation no lo
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ar. Fourfold multilinearity closes scalar-conjugation equivariance locally
+
+The formal extension from pure factors to arbitrary factor tensors is now source-written.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+FourfoldMultilinearAlgebraicAssembly
+FourfoldMultilinearAlgebraicAssembly.equivariant
+FourfoldMultilinearAlgebraicAssembly.toAlgebraicAssemblyData
+FourfoldMultilinearAlgebraicAssembly.toAssemblyEquivariance
+~~~
+
+A fourfold algebraic assembly is represented as four nested (mathbf Q)-linear maps. Its only defining compatibility is the canonical pure-factor formula proved in the previous increment.
+
+The theorem `equivariant` then performs four nested tensor inductions and extends
+
+[
+sigma(operatorname{assemble}_{mathrm{pure}})
+=
+operatorname{assemble}_{mathrm{pure}}(sigma	ext{-transported factors})
+]
+
+to arbitrary tensors in all four slots.
+
+Therefore Galois equivariance is no longer an independent mathematical premise. Once the switched assembly is identified with a fourfold (mathbf Q)-multilinear map satisfying the canonical pure-factor formula, equivariance follows locally.
+
+The remaining assembly-side bridge is consequently narrower:
+
+[
+oxed{
+	ext{geometric switched monomial assembly}
+=
+	ext{canonical fourfold multilinear assembly}
+}
+]
+
+at the level of the chosen tensor model.
+
+After that identification, the existing adapters recover scalar-conjugate stability and feed the already-local orbit-span, rational descent, and independent four-factor algebraicity pipeline.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
