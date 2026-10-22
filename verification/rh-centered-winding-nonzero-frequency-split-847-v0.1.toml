@@ -1,0 +1,38 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-nonzero-frequency-split-847-v0.1"
+owner_repository = "grwtsk/math"
+issue = 847
+parent_issue = 841
+parent_pr = 844
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_NONZERO_FREQUENCY_SPLIT_SOURCE_DRAFT_CENTERED_WINDING_NONZERO_FREQUENCY_ESTIMATE_OPEN_CENTERED_WINDING_ZERO_MODE_CORRECTION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingNonzeroFrequencySplit"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingNonzeroFrequencySplit"
+
+[source_binding]
+stacked_parent_revision = "3ba9f8bf6a33eea73115389c22db1b75727cbb3d"
+candidate_branch = "research/rh-centered-winding-nonzero-frequency-split-847-20261022"
+theorem_source_commit = "43d7830170b2967cbd47ebc6b1b58b706979725f"
+theorem_source_git_blob = "85f1e46fe22a55953ba959ed0b2134392c40440b"
+mathematical_note_commit = "bbb2bd31d0013d61b4172de9d65d106ef3046ab9"
+mathematical_note_git_blob = "c6e45d55641d10d6b09330010b1582bfbaf4b247"
+
+[evidence_states]
+source_draft = true
+total_signed_centered_pair_mass_defined = true
+centered_residue_fibers_sum_to_pair_mass_scripted = true
+centered_fourier_zero_mode_identified = true
+normalized_zero_mode_energy_defined = true
+normalized_nonzero_frequency_energy_defined = true
+full_frequency_zero_nonzero_split_scripted = true
+zero_mode_correction_defined = true
+wrap_as_nonzero_energy_plus_zero_mode_correction_scripted = true
+even_odd_existing_fourier_specializations_scripted = true
+four_family_modulus_aggregate_defined = true
+effective_modulus_endpoint_aggregate_defined = true
+full_frequency_envelope_equivalence_scripted = true
+residue_envelope_equivalence_scripted = true
+nonzero_frequency_estimate_proved = false
+zero_mode_correction_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
