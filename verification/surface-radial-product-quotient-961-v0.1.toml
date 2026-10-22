@@ -1,0 +1,41 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-radial-product-quotient-961-v0.1"
+owner_repository = "grwtsk/math"
+issue = 961
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialProductQuotient"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialProductQuotient"
+[source_binding]
+parent_pr = 959
+parent_revision = "2cd7e77d11c65ac582e1467f935942655f0d3a32"
+source_commit = "58bf14b73d4b3ca57f28ab8dd2cb7dc39574be0c"
+mathematical_note_commit = "24663bfb8481d974e07221d98e1156b6eeff96fe"
+[imported_theorems]
+compact_hausdorff_quotient = "Topology.IsQuotientMap.of_surjective_continuous"
+hausdorff_injection = "T2Space.of_injective_continuous"
+[scope]
+source_compactness_candidate = true
+target_hausdorffness_candidate = true
+product_projection_surjectivity_candidate = true
+product_quotient_candidate = true
+joint_continuity_candidate = true
+disk_homeomorphism_proved = false
+cw_pushout_proved = false
+lean_elaboration_run = false
+kernel_audited = false
+[trust]
+exact_head_replay_required = true
+generated_declarations_audit_required = true
+full_axiom_and_unsafe_audit_required = true
+[[hostile_controls]]
+id = "compactness-not-finite-boundary"
+requirement = "Do not replace the real unit-interval source by finite boundary points."
+[[hostile_controls]]
+id = "not-arbitrary-product-quotient"
+requirement = "Use actual compact-source and Hausdorff-target hypotheses."
+[[hostile_controls]]
+id = "genuine-perimeter"
+requirement = "Use the original UnpairedPerimeter and perimeterProjection, not paired B_k."
+[[hostile_controls]]
+id = "parent-not-audited"
+requirement = "Source candidates are not kernel theorems until exact-head replay."
