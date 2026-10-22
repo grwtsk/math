@@ -290,6 +290,75 @@ theorem FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine
   rw [D.scalar_conjugate_eq σ]
   exact Submodule.subset_span (Set.mem_singleton _)
 
+/-- Generic fourfold Hodge tensor-product compatibility.
+
+The isOfType predicate records actual weight-one Hodge membership of a
+factor. The only structural assertion is the standard tensor-product rule:
+assembling four factors whose p- and q-indices both total two lands in the
+declared H^(2,2) subspace. -/
+structure FourfoldHodgeAssemblyRule
+    {A W : Type*}
+    [AddCommGroup W] [Module ℂ W]
+    (assemble : (Fin 4 → A) → W) where
+  h22 : Submodule ℂ W
+  isOfType : A → CMEmbeddingLines.WeightOneHodgeType → Prop
+  assemble_mem_h22 :
+    ∀ (v : Fin 4 → A)
+      (typeAt : Fin 4 → CMEmbeddingLines.WeightOneHodgeType),
+      (∀ r, isOfType (v r) (typeAt r)) →
+      (∑ r, CMEmbeddingLines.pIndex (typeAt r)) = 2 →
+      (∑ r, CMEmbeddingLines.qIndex (typeAt r)) = 2 →
+      assemble v ∈ h22
+
+/-- Actual weight-one Hodge typing for every scalar-conjugated four-factor
+tuple.
+
+This interface is precisely where formal sign-derived type labels must be
+identified with actual H^(1,0)/H^(0,1) membership. -/
+structure TransportedFourFactorHodgeTyping
+    {A W : Type*}
+    [AddCommGroup W] [Module ℂ W]
+    {assemble : (Fin 4 → A) → W}
+    (R : FourfoldHodgeAssemblyRule assemble)
+    (transported :
+      (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+       GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →
+      Fin 4 → A) where
+  typeAt :
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ≃ₐ[ℚ]
+     GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →
+    Fin 4 → CMEmbeddingLines.WeightOneHodgeType
+  factor_type :
+    ∀ σ r, R.isOfType (transported σ r) (typeAt σ r)
+  p_two :
+    ∀ σ, (∑ r, CMEmbeddingLines.pIndex (typeAt σ r)) = 2
+  q_two :
+    ∀ σ, (∑ r, CMEmbeddingLines.qIndex (typeAt σ r)) = 2
+
+/-- Actual factor typing plus the generic Hodge tensor-product rule implies
+H^(2,2) membership of every assembled transported generator. -/
+theorem TransportedFourFactorHodgeTyping.assembled_mem_h22
+    {A W : Type*}
+    [AddCommGroup W] [Module ℂ W]
+    {assemble : (Fin 4 → A) → W}
+    {R : FourfoldHodgeAssemblyRule assemble}
+    {transported :
+      (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+       GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →
+      Fin 4 → A}
+    (T : TransportedFourFactorHodgeTyping R transported)
+    (σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    assemble (transported σ) ∈ R.h22 :=
+  R.assemble_mem_h22
+    (transported σ) (T.typeAt σ)
+    (T.factor_type σ) (T.p_two σ) (T.q_two σ)
+
 /-- Exact Hodge-realization input for one transported monomial generator.
 
 Because the transported monomial line is defined as the span of this one
