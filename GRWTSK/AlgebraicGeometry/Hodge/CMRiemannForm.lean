@@ -186,7 +186,7 @@ theorem riemannForm_lattice_self
     (a : Fin n → ℤ) :
     riemannForm E X (latticeCoordinates E a) (latticeCoordinates E a) = 0 := by
   rw [riemannForm_lattice_eq_trace E X]
-  norm_num [tracePairing_self E X.toTracePolarizationData]
+  exact_mod_cast tracePairing_self E X.toTracePolarizationData (latticeVector E a)
 
 /-- Exact local package preceding a classical Riemann existence theorem.
 
@@ -222,10 +222,11 @@ noncomputable def canonicalPreRiemannBilinearData
   real := IsRealCoordinate E
   J := weilOperator v
   J_sq := weilOperator_sq_neg E
-  J_preserves_real := fun {_} => weilOperator_preserves_real E _
+  J_preserves_real := fun {z} hz => weilOperator_preserves_real E z hz
   form := riemannForm E X
   J_invariant := riemannForm_weil_invariant E X
-  positive := fun {_} => riemannForm_weil_self_pos E X
+  positive := fun {z} hzreal hz =>
+    riemannForm_weil_self_pos E X hzreal hz
   lattice := latticeCoordinates E
   lattice_injective := latticeCoordinates_injective E
   lattice_real := latticeCoordinates_real E
