@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-ambient-window-563-v0.1"
+owner_repository = "grwtsk/math"
+issue = 563
+parent_issue = 560
+parent_pr = 561
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalAmbientWindow"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalAmbientWindow"
+
+[source_binding]
+stacked_parent_revision = "a809adaae19fd1ca5b11433c1035981381a4e0e4"
+candidate_branch = "research/rh-ambient-window-563"
+theorem_source_commit = "0fe9056e35cb9caec23390cb745b9c478fcfb089"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalAmbientWindow.lean"
+theorem_source_git_blob = "40ffd3bba4f181cc53f69804546350db87baf576"
+
+[selected_increment]
+ambient_window = "harmonicAmbientStartWindow"
+ambient_short_sum = "ambientMobiusShortIntervalSum"
+ambient_l1 = "harmonicAmbientShortIntervalL1"
+window_subset = "harmonicStartWindow_subset_ambient"
+depth_l1_bound = "harmonicShortIntervalL1_le_ambient"
+ambient_core_packet = "coreLongAmbientShortIntervalL1Packet"
+packet_bound = "coreLongShortIntervalL1Packet_le_ambient"
+ambient_supplier = "SubpolynomialCoreLongAmbientShortIntervalL1Packet"
+ambient_to_exact = "subpolynomialCoreLongShortIntervalL1Packet_of_ambient"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreLongAmbientShortIntervalL1Packet"
+adapter = "AsymptoticBlockToAmbientL1Adapter"
+proof_classification = "NONNEGATIVE_START_WINDOW_ENLARGEMENT"
+next_obstruction = "origin-anchored ambient block versus asymptotic start-block theorem scope"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+ambient_supplier_proved = false
+literature_adapter_constructed = false
+riemann_hypothesis_proved = false
