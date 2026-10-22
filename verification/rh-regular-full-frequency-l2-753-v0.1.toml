@@ -1,0 +1,71 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-regular-full-frequency-l2-753-v0.1"
+owner_repository = "grwtsk/math"
+issue = 753
+parent_issue = 749
+parent_pr = 752
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_FULL_FREQUENCY_L2_REDUCTION_SOURCE_DRAFT_EXACT_STD_ADD_CHAR_PARSEVAL_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitFullFrequencyL2Reduction"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitFullFrequencyL2Reduction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-regular-frequency-l2-749-20261022"
+stacked_parent_revision = "23db7e74f2c51956ecbeac3b4972bb8ac97f777c"
+stacked_parent_tree = "cda6bed810754a190de16e51848c7826d4cc3f6d"
+candidate_branch = "research/rh-regular-full-frequency-l2-753-20261022"
+theorem_source_commit = "a01966a8bc0196081419b871ac8482d9c4c4c72a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitFullFrequencyL2Reduction.lean"
+theorem_source_git_blob = "de2ac7c4f04b8dbb455861dc62d49c9d14669699"
+mathematical_note_commit = "ba3468a5fe2ca0e38e59c49861304619e2429068"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-full-frequency-l2-reduction.md"
+mathematical_note_git_blob = "82e6bca80be9776980d5f88a1cc92e5914b0aec9"
+
+[reduction]
+canonical_energy_le_full = "sum_sq_regularRepresentatives_le_univ"
+canonical_l2_le_full = "sqrt_sum_sq_regularRepresentatives_le_univ"
+full_frequency_majorant = "twoNonunitRegularShiftParityFullFrequencyL2Majorant"
+endpoint_majorant = "twoNonunitRegularShiftParityFullFrequencyL2EndpointMajorant"
+endpoint_comparison = "regularShiftParityFrequencyL2EndpointMajorant_le_fullFrequency"
+budget = "DyadicNaturalScaleRegularShiftParityFullFrequencyL2Budget"
+transport = "regularShiftParityFrequencyL2Budget_of_fullFrequency"
+adapter = "regularFullFrequencyL2ToCanonicalFrequencyL2Adapter"
+
+[parseval_boundary]
+transform = "stdAddCharResidueFourier"
+proposition = "StdAddCharSquareModulusParseval"
+source_data = "StdAddCharSquareModulusParsevalSourceData"
+source = "StdAddCharSquareModulusParsevalSource"
+adapter = "ToStdAddCharSquareModulusParsevalAdapter"
+proved = false
+
+[evidence_states]
+source_draft = true
+canonical_to_full_frequency_l2_scripted = true
+endpoint_full_frequency_comparison_scripted = true
+budget_transport_scripted = true
+exact_std_add_char_parseval_typed = true
+exact_std_add_char_parseval_proved = false
+regular_signed_residue_energy_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+riemann_hypothesis_proved = false
+
+[open_obligations]
+prove_exact_std_add_char_parseval = true
+prove_regular_signed_residue_energy = true
+construct_two_unit_analytic_supplier = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+parseval_identity_proved = false
+regular_signed_residue_energy_proved = false
+large_sieve_adapter_constructed = false
+grh_proved = false
+riemann_hypothesis_proved = false
