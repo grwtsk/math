@@ -18,7 +18,7 @@ Define
 
 NormalizedResponse(j,t,a) = (Y/2) * Response(j,t,a).
 
-Then, on the actual depth range,
+Then, on the explicitly proved range t+2 <= Y,
 
 |NormalizedResponse(j,t,a)| <= 1.
 
@@ -32,7 +32,7 @@ No absolute value is inserted before the response is formed, and no square is us
 
 ## Mathematical interpretation
 
-The remaining cancellation is now a Möbius sum against a one-bounded real test family. The test family depends on scale j, depth t, and the base index a, so fixed-test results do not automatically apply.
+On t+2 <= Y, the remaining cancellation is a Möbius sum against a one-bounded real test family. The exact slice rewrite itself holds for every depth. The test family depends on scale j, depth t, and the base index a, so fixed-test results do not automatically apply.
 
 One-boundedness does not imply:
 - zero entropy;
@@ -44,7 +44,7 @@ One-boundedness does not imply:
 
 ## Why this precedes L2
 
-A direct positive square norm would discard the signed structure before exploiting the exact reciprocal-size Abel coefficient mass. The normalization isolates the strongest unconditional size control currently available on the right factor and provides a better interface for nonpretentious, dispersion, Sarnak/local-Gowers, or Fourier arguments.
+A direct positive square norm would discard the signed structure before exploiting the exact reciprocal-size Abel coefficient mass. The normalization records the proved reciprocal-size bound on the right factor and exposes the precise family that any nonpretentious, dispersion, Sarnak/local-Gowers, or Fourier argument would have to control.
 
 ## Dependency path
 
