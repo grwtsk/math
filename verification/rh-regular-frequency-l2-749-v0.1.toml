@@ -1,0 +1,123 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-regular-frequency-l2-749-v0.1"
+owner_repository = "grwtsk/math"
+issue = 749
+parent_issue = 744
+parent_pr = 747
+regular_orbit_issue = 671
+regular_orbit_pr = 672
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_FREQUENCY_L1_TO_L2_SOURCE_DRAFT_REGULAR_FOURIER_L2_ENERGY_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitFrequencyL2Reduction"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitFrequencyL2Reduction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-regular-residue-refinement-744-20261022"
+stacked_parent_revision = "2ca76f871b22a3022b82205ea99339ef4043fdc5"
+stacked_parent_tree = "427a1d13775a4c334372f861254dd0cb39788174"
+candidate_branch = "research/rh-regular-frequency-l2-749-20261022"
+theorem_source_commit = "1c164aa04b23a5d77ff0ed913b75365fd1fdad07"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitFrequencyL2Reduction.lean"
+theorem_source_git_blob = "ecf822d404a2f45206164f5112a48f38f49b230d"
+mathematical_note_commit = "89ecc6005f3f4558b7c48ed391cf5215350054db"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-frequency-l1-to-l2.md"
+mathematical_note_git_blob = "e54f76d29caf2bdd3999815555fec7c899c99fc5"
+
+[finite_reduction]
+representative_cardinality = "card_twoKernelRegularOrbitRepresentativeSet_le_square"
+generic_l1_l2 = "sum_norm_le_parameter_mul_sqrt_sum_sq"
+mathlib_inequality = "sq_sum_le_card_mul_sum_sq"
+regular_l2_majorant = "twoNonunitRegularShiftParityFrequencyL2Majorant"
+regular_l1_l2_theorem = "sum_regularShiftParityResidueFourierMajorant_le_l2"
+canonical_frequency_restriction_preserved = true
+exceptional_orbit_reintroduced = false
+
+[endpoint_reduction]
+endpoint_l2_majorant = "twoNonunitRegularShiftParityFrequencyL2EndpointMajorant"
+endpoint_comparison = "regularShiftParityResidueEndpointMajorant_le_frequencyL2"
+input_weight = "1/d^2"
+post_cauchy_weight = "1/d"
+effective_modulus_support_reused = true
+both_endpoint_parities_preserved = true
+both_half_shift_parities_preserved = true
+
+[analytic_interface]
+proposition = "DyadicNaturalScaleRegularShiftParityFrequencyL2Budget"
+constructed = false
+transport = "regularShiftParityResidueBudget_of_frequencyL2"
+adapter_value = "regularFrequencyL2ToShiftParityResidueAdapter"
+parseval_source_data = "RegularShiftParityParsevalSourceData"
+parseval_source_proposition = "RegularShiftParityParsevalSource"
+generic_adapter = "ToRegularShiftParityFrequencyL2BudgetAdapter"
+adapter_alias = "RegularShiftParityParsevalAdapter"
+
+[downstream]
+natural_scale = "naturalScaleCongruenceL1_of_two_pointwiseMertens_twoUnit_regularFrequencyL2"
+ordinary_pointwise_required = true
+chi_four_pointwise_required = true
+two_unit_supplier_required = true
+regular_frequency_l2_supplier_required = true
+
+[evidence_states]
+source_draft = true
+canonical_representative_count_scripted = true
+finite_l1_to_l2_scripted = true
+four_family_frequency_l2_majorant_defined = true
+endpoint_l1_to_l2_comparison_scripted = true
+frequency_l2_to_regular_budget_transport_scripted = true
+proof_relevant_adapter_source_constructed = true
+conditional_downstream_transport_scripted = true
+regular_fourier_l2_energy_proved = false
+parseval_identity_proved = false
+large_sieve_estimate_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitShiftParityResidueConvolution.lean"
+git_blob = "3cc386401dbc63f6568878c7200f9b8b552394f2"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_747"
+
+[hostile_controls]
+analytic_l2_estimate_not_claimed = true
+parseval_not_claimed = true
+full_frequency_replacement_not_silent = true
+canonical_frequency_restriction_preserved = true
+exceptional_orbit_kept_separate = true
+named_large_sieve_not_promoted = true
+grh_not_claimed = true
+rh_not_claimed = true
+source_elaboration_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+construct_two_unit_analytic_supplier = true
+prove_regular_frequency_l2_energy = true
+prove_parseval_or_residue_energy_bridge = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+regular_frequency_l2_estimate_proved = false
+parseval_identity_proved = false
+large_sieve_adapter_constructed = false
+pointwise_ordinary_mertens_estimate_proved = false
+pointwise_chi_four_mertens_estimate_proved = false
+two_unit_supplier_proved = false
+grh_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
