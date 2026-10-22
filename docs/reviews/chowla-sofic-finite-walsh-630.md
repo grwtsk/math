@@ -11,7 +11,9 @@ The finite mathematical content is classical Walsh/Fourier analysis on a
 Boolean cube and elementary finite root-set partitioning. It is *not* a new
 proof of a Chowla estimate. The source proof draft uses upstream
 Mathlib's `Finset.prod_one_add`, `Finset.sum_comm`, and finite-sum
-identities.
+identities. The referenced Mathlib powerset proof and this source draft use
+classical decidability; a separate constructive/choice-free reproof would be
+required before advertising an axiom-of-choice-free formalization.
 
 This increment formalizes proposed declarations in:
 
