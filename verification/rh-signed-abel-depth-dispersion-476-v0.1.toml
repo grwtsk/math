@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-abel-depth-dispersion-476-v0.1"
+owner_repository = "grwtsk/math"
+issue = 476
+parent_witness_issue = 473
+parent_pr = 475
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.SignedAbelDepthDispersion"
+build_target = "GRWTSK.NumberTheory.Moebius.SignedAbelDepthDispersion"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_revision = "ccc10c51d39bc153f8d177eba661d95afe8abddb"
+candidate_branch = "research/rh-signed-abel-dispersion-476-20261021"
+theorem_source_commit = "be3832de4ae33ed207d8c9e49f353dee37bc17c3"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthDispersion.lean"
+theorem_source_git_blob = "f5cf7fa855bbebbbdc7411add123116963693f80"
+
+[selected_increment]
+model = "SignedAbelDepthBilinearModel"
+estimate = "SubpolynomialSignedAbelDepthBilinearEstimate"
+packet_identity = "SignedAbelDepthBilinearModel.depthPacket_eq_structured_add_residual"
+target_supplier = "subpolynomialDyadicSignedAbelDepthPacket_of_bilinearEstimate"
+conditional_endpoint = "riemannHypothesis_of_signedAbelDepthBilinearEstimate"
+proof_classification = "FINITE_SIGNED_RECONSTRUCTION_INTERFACE"
+next_obstruction = "construct and estimate a source-specific bilinear model"
+
+[sign_boundary]
+structured_packet_signed = true
+residual_packet_signed = true
+absolute_value_inserted = false
+square_inserted = false
+positive_norm_requires_adapter = true
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+dispersion_estimate_proved = false
+large_sieve_estimate_proved = false
+fourier_estimate_proved = false
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+riemann_hypothesis_proved = false

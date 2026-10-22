@@ -1,0 +1,57 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-multiplicity-box-746-v0.1"
+owner_repository = "grwtsk/math"
+issue = 746
+parent_issue = 739
+parent_pr = 741
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticMultiplicityBox"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticMultiplicityBox"
+
+[source_binding]
+stacked_parent_revision = "d7f4458890483ae15042b520098cea3213e893a5"
+candidate_branch = "research/rh-multiplicity-box-746"
+theorem_source_commit = "e2ce81019bcd115bafc81c17489f0c6e6fe7464e"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticMultiplicityBox.lean"
+theorem_source_git_blob = "6a9b9e96b56d64f39e17ef44536065881bf0ee92"
+
+[selected_increment]
+active_cell_type = "CoreGrowingShiftQuarticActiveCell"
+box_index_type = "CoreGrowingShiftQuarticBoxIndex"
+active_cells = "coreGrowingShiftQuarticActiveCells"
+box_index = "coreGrowingShiftQuarticActiveCellBoxIndex"
+dyadic_box = "coreGrowingShiftQuarticDyadicBox"
+depth_multiplicity = "coreGrowingShiftQuarticDepthMultiplicity"
+active_cell_energy = "coreGrowingShiftQuarticActiveCellEnergy"
+weighted_box_energy = "coreGrowingShiftQuarticMultiplicityWeightedBoxEnergy"
+box_support = "coreGrowingShiftQuarticActiveCellBoxIndex_mem"
+active_cell_identity = "coreGrowingShiftQuarticParallelogramEnergy_eq_activeCells"
+histogram_identity = "coreGrowingShiftQuarticActiveCellEnergy_eq_multiplicityBox"
+packet_box_identity = "coreGrowingShiftQuarticParallelogramEnergy_eq_multiplicityBox"
+multiplicity_depth_bound = "coreGrowingShiftQuarticDepthMultiplicity_le_depthCard"
+multiplicity_scale_bound = "coreGrowingShiftQuarticDepthMultiplicity_le_rightScale"
+box_budget = "SubpolynomialCoreGrowingShiftQuarticMultiplicityWeightedBoxBudget"
+budget_equivalence = "subpolynomialCoreGrowingShiftQuarticMultiplicityWeightedBoxBudget_iff_parallelogram"
+conditional_endpoint = "riemannHypothesis_of_centeredCollision_and_multiplicityBox"
+direct_source = "MultiplicityWeightedParallelogramBoxSource"
+direct_adapter = "ToCoreGrowingShiftQuarticMultiplicityWeightedBoxBudget"
+u2_source = "FullBoxU2MultiplicityLocalizationSource"
+u2_adapter = "ToCoreGrowingShiftQuarticMultiplicityWeightedBoxBudgetFromU2"
+proof_classification = "EXACT_FINITE_FIBERWISE_MULTIPLICITY_TRANSPOSE"
+next_obstruction = "prove the multiplicity-weighted box budget or construct an exact full-box U2 localization adapter"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+four_point_chowla_proved = false
+higher_elliott_proved = false
+u2_estimate_proved = false
+weighted_localization_proved = false
+multiplicity_weighted_box_budget_proved = false
+riemann_hypothesis_proved = false
