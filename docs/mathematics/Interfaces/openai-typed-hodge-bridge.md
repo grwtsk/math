@@ -120,6 +120,14 @@ mathematical obligation carried by a witness, and it does not imply
 confluence. Canonical normal forms additionally require a confluence theorem
 for the selected interface reduction system.
 
+A local generic simulation theorem is now present in
+`GRWTSK/Logic/TypeTheory/WitnessSyntaxNormalization.lean`:
+`ReductionSimulation.stronglyNormalizing_of_encode` reflects strong
+normalization from a target language when every local reduction step is
+preserved by the encoding. The same file separately proves finite-path
+semantic invariance for a declared semantic relation. Both declarations remain
+SOURCE_DRAFT / NOT_RUN.
+
 ## 3. Rational descent as a witness theorem
 
 Let \(T_\mathbf Q\) be a finite-dimensional rational vector space and let
@@ -465,6 +473,13 @@ be restricted to
 \]
 
 Neither restriction supplies critical-line location.
+
+The local premise-preserving reflection adapter is now present in
+`GRWTSK/NumberTheory/Zeta/Riemann/ExternalSevenEighthsBand.lean`. It defines
+`SevenEighthsZeroFree` and proves that every local `NontrivialZetaZero` lies in
+`1/8 <= Re(s) <= 7/8`. This does not import or assert the external theorem; it
+only identifies the exact local consequence once that premise is admitted.
+The file remains SOURCE_DRAFT / NOT_RUN.
 
 There is no Hodge implication here unless a separate arithmetic
 Hodge-to-L-function interface is built.
