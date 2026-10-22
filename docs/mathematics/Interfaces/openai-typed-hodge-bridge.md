@@ -2295,6 +2295,79 @@ rather than proving after the fact that arbitrary global factors happen to admit
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ay. Correction: keep embedding eigenlines finite-level until the fourfold assembly
+
+The previous attempt to construct global (overline{mathbf Q})-embedding eigenlines by directly including finite-CM eigenvectors was too strong.
+
+The reason is structural. For a finite Galois CM field (E), membership in an embedding eigenspace inside
+
+[
+Eotimes_{mathbf Q}E
+]
+
+requires the eigen-relation only for the regular action of elements of (E). Membership in the corresponding eigenspace inside
+
+[
+overline{mathbf Q}otimes_{mathbf Q}overline{mathbf Q}
+]
+
+would require that relation for every element of (overline{mathbf Q}). Direct coefficient inclusion does not supply those additional equations.
+
+The source now uses the correct finite-level architecture:
+
+~~~text
+CMFiniteFourEmbeddingLineVectors
+CMFiniteFourEmbeddingLineVectors.scalarTransport
+CMFiniteFourfoldAssembly
+CMFiniteFourfoldAssembly.globalTensor
+CMFiniteFourfoldAssembly.globalTensor_scalarConjugate
+CMFiniteTransportedGeneratorHodgeData
+CMFiniteTransportedGeneratorHodgeData.all_scalar_conjugates_mem
+CMFiniteTransportedGeneratorHodgeData.orbitSpan_le_hodge
+~~~
+
+The four embedding-line factors stay entirely over one finite Galois CM field (E). Absolute scalar automorphisms act on them only through restriction
+
+[
+sigma|_E.
+]
+
+The four factors are assembled over (E) first. Only the resulting coefficient tensor
+
+[
+t_Ein Eotimes_{mathbf Q}V
+]
+
+is then extended to
+
+[
+tinoverline{mathbf Q}otimes_{mathbf Q}V.
+]
+
+The existing local theorem `scalarConjugate_restrict` gives
+
+[
+sigma(t)
+=
+iota_Eigl((sigma|_E)(t_E)igr).
+]
+
+Therefore Hodge membership of each transported finite-level assembled generator implies Hodge membership of every absolute scalar conjugate of the global assembled tensor. The new theorem `orbitSpan_le_hodge` then feeds this directly into the existing scalar-descent pipeline.
+
+This correction supersedes the global-eigenline-support construction as the preferred path. Those earlier source records remain historical source draft interfaces but are not relied upon by the corrected dependency path.
+
+The new exact frontier is:
+
+[
+oxed{
+	ext{construct the finite-CM fourfold assembly and prove transported assembled-generator Hodge membership}
+}
+]
+
+using the actual weight-one realizations over the same finite Galois CM field.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
