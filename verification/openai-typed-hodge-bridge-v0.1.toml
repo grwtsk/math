@@ -860,3 +860,44 @@ nonclaims = [
   "conditional wrapper only",
   "no local constructor of the manuscript switch/algebraicity supplier"
 ]
+
+
+[[local_target]]
+name = "four-factor switch mismatch counts are balanced"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.mismatch_card_eq_of_sum_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite row index type",
+  "two +/-1-valued columns",
+  "equal column sums"
+]
+nonclaims = [
+  "one-column combinatorial lemma only",
+  "does not construct a full multi-column switch sequence",
+  "no Hodge, tensor, descent, or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "four-factor switch mismatch pairing"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.mismatchPairing"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "equal-sum +/-1 columns"
+]
+nonclaims = [
+  "pairs the two mismatch orientations needed for atomic two-row switches",
+  "does not prove the geometric four-factor switch theorem"
+]
+
+[[local_target]]
+name = "atomic two-row switch preserves sum and corrects paired mismatches"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchPair_corrects_mismatch_pair"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "finite column operation only",
+  "no complete switch chain yet",
+  "no algebraic-cycle realization"
+]
