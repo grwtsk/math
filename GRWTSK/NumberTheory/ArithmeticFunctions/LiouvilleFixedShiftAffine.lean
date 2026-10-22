@@ -178,19 +178,15 @@ inspected external Result 007 comparator, preserving the m=0 term. -/
 theorem range_head_add_Icc (f : ℕ → ℤ) (M : ℕ) :
     (∑ m ∈ Finset.range (M + 1), f m) =
       f 0 + ∑ m ∈ Finset.Icc 1 M, f m := by
-  induction M with
-  | zero => simp
-  | succ M ih =>
-    calc
-      (∑ m ∈ Finset.range (M + 1 + 1), f m) =
-          (∑ m ∈ Finset.range (M + 1), f m) + f (M + 1) := by
-        rw [Finset.sum_range_succ]
-      _ = (f 0 + ∑ m ∈ Finset.Icc 1 M, f m) + f (M + 1) := by
-        rw [ih]
-      _ = f 0 + ∑ m ∈ Finset.Icc 1 (M + 1), f m := by
-        rw [Finset.Icc_succ_right (by omega)]
-        rw [Finset.sum_insert (by simp [Finset.mem_Icc])]
-        ring
+  have hset :
+      (Finset.range (M + 1)).erase 0 = Finset.Icc 1 M := by
+    ext m
+    simp only [Finset.mem_erase, Finset.mem_range, Finset.mem_Icc]
+    omega
+  have hzero : (0 : ℕ) ∈ Finset.range (M + 1) := by simp
+  have hsplit :=
+    Finset.sum_erase_add (Finset.range (M + 1)) f hzero
+  simpa only [hset, add_comm] using hsplit.symm
 
 /-- Exact odd-shift comparison with two Icc 1 M affine sums.
 The TWO initial terms at m=0 are explicitly charged. -/
