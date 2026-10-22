@@ -2685,3 +2685,40 @@ def CMFiniteTransportedGeneratorWitness.ofComparison
   compare := comparison.compare
   H22_le := comparison.H22_le
   generator_eq := identification.generator_eq
+
+
+/-- A generating family for the actual (2,2) component.  This is an explicit
+geometric hypothesis: the existing tensor rule proves membership of certain
+pure tensors, but does not itself prove that they span H22. -/
+structure CMFiniteH22SpanningFamily
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    (actualTyping : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄)
+    (hodgeRule : FourfoldActualHodgeTensorRule actualTyping.toActualTyping) where
+  generators : Set (FourfoldActualTensor actualTyping.toActualTyping)
+  span_eq : Submodule.span ℂ generators = hodgeRule.H22
+
+/-- To verify preservation of the entire actual (2,2) space it is enough to
+check its declared spanning family.  No algebraic-cycle statement is used. -/
+def CMFiniteActualToDescentComparison.ofSpanningFamily
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {actualTyping : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    {hodgeRule : FourfoldActualHodgeTensorRule actualTyping.toActualTyping}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (family : CMFiniteH22SpanningFamily actualTyping hodgeRule)
+    (compare : FourfoldActualTensor actualTyping.toActualTyping →ₗ[ℂ]
+      (ℂ ⊗[ℚ] V))
+    (generator_mem :
+      ∀ x ∈ family.generators, compare x ∈ hodgeSubspace) :
+    CMFiniteActualToDescentComparison actualTyping hodgeRule hodgeSubspace where
+  compare := compare
+  H22_le := by
+    rw [← family.span_eq]
+    rw [Submodule.map_span]
+    exact Submodule.span_le.mpr (by
+      rintro y ⟨x, hx, rfl⟩
+      exact generator_mem x hx)
