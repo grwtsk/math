@@ -1528,3 +1528,46 @@ nonclaims = [
   "does not assert the tensor is algebraic",
   "does not replace the independent FourFactorAlgebraicitySupplier"
 ]
+
+
+[[local_target]]
+name = "scalar-conjugate orbit span membership is automatic"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.scalarConjugate_mem_orbitSpan"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual algebraic-number switched tensor"
+]
+nonclaims = [
+  "pure span-membership theorem",
+  "does not identify the orbit span with a Hodge subspace"
+]
+
+[[local_target]]
+name = "orbit-span Hodge containment supplies scalar-conjugate stability"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchOrbitHodgeData.toTensorData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual switched tensor",
+  "actual complex Hodge subspace",
+  "containment of the scalar-conjugate orbit span in that Hodge subspace"
+]
+nonclaims = [
+  "does not prove orbit-span containment",
+  "does not prove algebraicity"
+]
+
+[[external_premise]]
+id = "cm-atomic-switch-orbit-span-hodge-containment"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-label-conjugation", "eq:switch-conjugate-balance"]
+statement_role = "identify every scalar-Galois conjugate of the switched monomial tensor as lying in the actual all-conjugate (2,2) Hodge subspace; equivalently, show its scalar-conjugate orbit span is contained in that Hodge subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchOrbitHodgeData"
+status = "OPEN"
+nonclaims = [
+  "strictly weaker packaging than directly postulating all_scalar_conjugates_mem",
+  "does not assert algebraicity"
+]
