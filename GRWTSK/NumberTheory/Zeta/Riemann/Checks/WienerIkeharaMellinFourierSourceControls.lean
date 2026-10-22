@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 R. A. Jacob Martone. All rights reserved.
-Released under the Apache 2.0 license as described in the repository LICENSE.
+Original contributions: MIT (repository LICENSE). Analytic source ideas and\nselected proof structure adapted from Apache-2.0 PrimeNumberTheoremAnd;\nupstream copyright and license remain with their original authors.
 Mathematical source: Kontorovich--Tao PrimeNumberTheoremAnd Wiener analysis.
 Formalization assistance: OpenAI ChatGPT.
 -/
