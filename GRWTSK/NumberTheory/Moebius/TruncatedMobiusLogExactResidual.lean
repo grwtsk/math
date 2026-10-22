@@ -32,7 +32,9 @@ theorem mobiusLogDivisorRow_two_mul_decomposition
         a r * Real.log ((2 * d) / r : ℕ)) +
       ∑ r ∈ (2 * d).divisors.filter (fun r => ¬ r < d),
         a r * Real.log ((2 * d) / r : ℕ) := by
-          rw [← Finset.sum_filter_add_sum_filter_neg_eq]
+          exact (Finset.sum_filter_add_sum_filter_not
+            (2 * d).divisors (fun r => r < d)
+            (fun r => a r * Real.log ((2 * d) / r : ℕ))).symm
     _ = (∑ r ∈ (2 * d).divisors.filter (fun r => r < d),
         a r * Real.log ((2 * d) / r : ℕ)) +
       a d * Real.log 2 := by
@@ -51,6 +53,7 @@ theorem mobiusLogDivisorRow_two_mul_decomposition
               divisor_two_mul_lt_of_ne hd hrdvd hr2d hrne
             exact (hrnotlt hrlt).elim
         · intro hdnot
+          exfalso
           apply hdnot
           exact Finset.mem_filter.mpr
             ⟨Nat.mem_divisors.mpr ⟨⟨2, Nat.mul_comm 2 d⟩, by omega⟩,
