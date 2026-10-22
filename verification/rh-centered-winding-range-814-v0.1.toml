@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-range-814-v0.1"
+owner_repository = "grwtsk/math"
+issue = 814
+parent_issue = 810
+parent_pr = 811
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_FINITE_RANGE_SOURCE_DRAFT_CENTERED_WINDING_ANALYTIC_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingRange"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingRange"
+
+[source_binding]
+stacked_parent_revision = "483924a9acf11f5a5630db4050b643b4c98cd599"
+candidate_branch = "research/rh-centered-winding-range-814-20261022"
+theorem_source_commit = "8fc06a1161d90300433536dbfdab4e0b6e4eba8b"
+theorem_source_git_blob = "a1efa212fac67821fb028bfa41841345eed547c5"
+mathematical_note_commit = "3def9ca904ef8e8fcaa718e7ebb0f94f0fc5d003"
+mathematical_note_git_blob = "43b288cdf27ea179aafe8ffe296eb2fd462500cf"
+
+[evidence_states]
+source_draft = true
+center_bounds_scripted = true
+sharp_winding_displacement_bound_scripted = true
+finite_candidate_set_scripted = true
+realized_winding_membership_scripted = true
+winding_cardinal_asymptotic_proved = false
+analytic_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
