@@ -2143,6 +2143,49 @@ The independent `FourFactorAlgebraicitySupplier` remains untouched.
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4av. Finite Galois support is already local; only CM compatibility remains
+
+The transported-realization frontier can be separated further using existing local scalar-descent infrastructure.
+
+`GaloisScalarDescent.lean` already proves that every tensor over an arbitrary Galois extension is defined over a finite Galois intermediate field. The switch geometry file now exposes this explicitly through:
+
+~~~text
+FiniteGaloisTensorCarrier
+finiteGaloisTensorCarrier
+FiniteGaloisTensorCarrier.scalarConjugate_restrict
+CMFiniteGaloisTensorCarrier
+~~~
+
+For any
+
+[
+tinoverline{mathbf Q}otimes_{mathbf Q}V,
+]
+
+local source chooses a finite Galois intermediate field
+
+[
+L/mathbf Q
+]
+
+and a tensor
+
+[
+uin Lotimes_{mathbf Q}V
+]
+
+whose coefficient extension is (t).
+
+Moreover, every absolute scalar automorphism (sigma) restricts to (L), and the local theorem proves that conjugating (u) by this restriction and then extending coefficients agrees with conjugating (t) in (overline{mathbf Q}).
+
+Therefore neither finite support nor Galois stability is part of the remaining geometric obstruction.
+
+The genuinely CM-specific question is now isolated by `CMFiniteGaloisTensorCarrier`: the finite Galois carrier relevant to the switched tensor must support the CM-field structure/realization needed by the weight-one Hodge construction.
+
+This is a materially smaller frontier than the previous per-conjugate finite-field existence package. Absolute conjugation is already controlled uniformly by one finite Galois carrier once the tensor is fixed.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
