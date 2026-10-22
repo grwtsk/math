@@ -427,6 +427,38 @@ theorem fieldCoordinates_realConj
   simp [CMCoordinateHodge.realConj, fieldCoordinates_conjLabel,
     complexEmbeddingAt_galoisComplexConj]
 
+/-- Coordinate realization of the Weil-twisted trace coefficient. This coordinate formula is identified below with the base-changed rational
+trace pairing through the actual coordinate Hodge real structure and Weil
+operator. -/
+def SignControlledXi.coordinateWeilForm
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℂ :=
+  ∑ σ,
+    (complexEmbeddingAt E σ X.xi * weilFactor E v σ) *
+      (Complex.normSq (z σ) : ℂ)
+
+/-- Coordinate Hodge energy associated with the sign-controlled xi. -/
+def SignControlledXi.energy
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℝ :=
+  ∑ σ, X.coeff σ * Complex.normSq (z σ)
+
+/-- The coordinate Weil form is exactly the real positive energy, embedded
+in C. -/
+theorem SignControlledXi.coordinateWeilForm_eq_energy
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v)
+    (z : (E ≃ₐ[ℚ] E) → ℂ) :
+    X.coordinateWeilForm z = (X.energy z : ℂ) := by
+  unfold SignControlledXi.coordinateWeilForm SignControlledXi.energy
+  rw [Complex.ofReal_sum]
+  apply Finset.sum_congr rfl
+  intro σ _
+  rw [X.embedding_mul_weilFactor]
+  simp [SignControlledXi.coeff]
+
 /-- Applying the actual sign-defined weight-one Weil operator to the first
 argument and the actual coordinate real structure to the second converts the
 complexified trace pairing into the previously defined coordinate Weil form. -/
@@ -462,37 +494,6 @@ theorem SignControlledXi.complexifiedTracePairing_weil_realConj_eq_energy
   rw [X.complexifiedTracePairing_weil_realConj]
   exact X.coordinateWeilForm_eq_energy z
 
-/-- Coordinate realization of the Weil-twisted trace coefficient. This coordinate formula is identified below with the base-changed rational
-trace pairing through the actual coordinate Hodge real structure and Weil
-operator. -/
-def SignControlledXi.coordinateWeilForm
-    {v : CMNumberFieldIndex.OddSignRow E}
-    (X : SignControlledXi E v)
-    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℂ :=
-  ∑ σ,
-    (complexEmbeddingAt E σ X.xi * weilFactor E v σ) *
-      (Complex.normSq (z σ) : ℂ)
-
-/-- Coordinate Hodge energy associated with the sign-controlled xi. -/
-def SignControlledXi.energy
-    {v : CMNumberFieldIndex.OddSignRow E}
-    (X : SignControlledXi E v)
-    (z : (E ≃ₐ[ℚ] E) → ℂ) : ℝ :=
-  ∑ σ, X.coeff σ * Complex.normSq (z σ)
-
-/-- The coordinate Weil form is exactly the real positive energy, embedded
-in C. -/
-theorem SignControlledXi.coordinateWeilForm_eq_energy
-    {v : CMNumberFieldIndex.OddSignRow E}
-    (X : SignControlledXi E v)
-    (z : (E ≃ₐ[ℚ] E) → ℂ) :
-    X.coordinateWeilForm z = (X.energy z : ℂ) := by
-  unfold SignControlledXi.coordinateWeilForm SignControlledXi.energy
-  rw [Complex.ofReal_sum]
-  apply Finset.sum_congr rfl
-  intro σ _
-  rw [X.embedding_mul_weilFactor]
-  simp [SignControlledXi.coeff]
 
 theorem SignControlledXi.energy_nonneg
     {v : CMNumberFieldIndex.OddSignRow E}
