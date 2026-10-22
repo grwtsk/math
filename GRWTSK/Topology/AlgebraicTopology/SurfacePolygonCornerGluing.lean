@@ -157,6 +157,20 @@ def sideAt (k : ℕ) (h : Handle k) (i : Fin 4) : SignedSide k :=
     sideAt k h 3 = (handleB k h, false) := by
   simp [sideAt]
 
+/-- The local four corners label EXACTLY the four ordered signed
+sides of the inherited handleBlock and hence of #745's polygon word.
+No extra edge occurrence or sign is introduced by sideAt. -/
+theorem sideAt_list_eq_handleEdges (k : ℕ) (h : Handle k) :
+    [sideAt k h 0, sideAt k h 1,
+      sideAt k h 2, sideAt k h 3] = handleEdges k h := by
+  simp [sideAt, handleEdges, handleBlock]
+
+/-- Two base blocks plus one block for each extra source handle:
+the block-count, not merely the one-vertex result, is source exact. -/
+theorem orderedHandleBlocks_length (k : ℕ) :
+    (orderedHandleBlocks k).length = k + 2 := by
+  simp [orderedHandleBlocks]
+
 /-- Opposite-oriented copy of the SAME source generator. -/
 def oppositeSide (k : ℕ) (s : SignedSide k) : SignedSide k :=
   (s.1, !s.2)
