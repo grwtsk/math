@@ -22,7 +22,7 @@ set_option autoImplicit false
 noncomputable section
 
 open Real Filter Set MeasureTheory FourierTransform SchwartzMap
-open scoped FourierTransform
+open scoped FourierTransform Topology ContDiff SchwartzMap
 
 /-!
 # An actual Mellin--Fourier normalization lemma for smooth Wiener--Ikehara
@@ -86,7 +86,7 @@ the negative logarithmic half-line. -/
 theorem wiener_exp_pullback_vanish_atBot
     {Ψ : ℝ → ℂ} (hplus : WienerPositiveSupport Ψ) :
     ∀ᶠ u : ℝ in atBot, Ψ (Real.exp u) = 0 :=
-  Real.tendsto_exp_atBot (wiener_eventually_zero_near_zero hplus)
+  Real.tendsto_exp_atBot.eventually (wiener_eventually_zero_near_zero hplus)
 
 /-- Compactness of the test function forces its logarithmic pullback
 to vanish on the positive half-line. -/
@@ -123,7 +123,7 @@ theorem wienerMellinLogTest_smooth
   have hexp :
       ContDiff ℝ ∞ (fun u : ℝ => Real.exp (2 * Real.pi * u)) :=
     (contDiff_const.mul contDiff_id).exp
-  exact (contDiff_ofReal.comp hexp).mul (hsmooth.comp hexp)
+  exact (Complex.ofRealCLM.contDiff.comp hexp).mul (hsmooth.comp hexp)
 
 /-- The logarithmic test has COMPACT support on all of ℝ, not just
 one-sided decay: the exact hypothesis required to form a Schwartz
@@ -135,8 +135,13 @@ theorem wienerMellinLogTest_compact
   have htwoPi : (2 * Real.pi : ℝ) ≠ 0 := by
     positivity
   have hExp := wiener_exp_pullback_compact hcompact hplus
-  simpa [wienerMellinLogTest, Function.comp_def, smul_eq_mul] using
-    ((hExp.comp_smul htwoPi).mul_left)
+  have hscaled : HasCompactSupport
+      (fun u : ℝ => Ψ (Real.exp (2 * Real.pi * u))) := by
+    simpa only [Function.comp_def, smul_eq_mul] using hExp.comp_smul htwoPi
+  change HasCompactSupport
+    ((fun u : ℝ => (Real.exp (2 * Real.pi * u) : ℂ)) *
+      (fun u : ℝ => Ψ (Real.exp (2 * Real.pi * u))))
+  exact hscaled.mul_left
 
 /-- A genuine Schwartz function, CONSTRUCTED from pinned
 smoothness/compact-support proofs, not a formal placeholder. -/
@@ -190,9 +195,7 @@ theorem wienerMellin_fourier_witness
       2 * Real.pi * ((1 / (2 * Real.pi)) * Real.log y) =
         Real.log y := by
     field_simp [htwoPi]
-    ring
   rw [hlogArg, Real.exp_log hy]
-  rfl
 
 /-- Source-safe Fourier-weighted coefficient: the zero term is
 defined separately because the logarithm of 0/T is inadmissible. -/
@@ -231,7 +234,6 @@ theorem wienerFourierCoefficient_eq_smoothCoefficient
     rw [hFourier _ hy]
     simp only [Complex.ofReal_div, Complex.ofReal_natCast]
     field_simp [hnC, hTC]
-    ring
 
 /-- The analytic Mellin tail change of variables y=exp(u), with
 the *same* lower endpoint 1/T as in the historical Wiener source.
@@ -258,8 +260,8 @@ theorem wienerMellin_exp_tail_integral
         (Set.Ioi u) u :=
     (Real.hasDerivAt_exp u).hasDerivWithinAt
   have hΨcont :
-      ContinuousOn Ψ (Real.exp '' Set.Ioi (-Real.log T)) := by
-    fun_prop
+      ContinuousOn Ψ (Real.exp '' Set.Ioi (-Real.log T)) :=
+    hsmooth.continuous.continuousOn
   have hΨint :
       IntegrableOn Ψ (Real.exp '' Set.Ici (-Real.log T))
         volume :=
@@ -269,8 +271,9 @@ theorem wienerMellin_exp_tail_integral
       IntegrableOn
         (fun u : ℝ => Real.exp u • (Ψ ∘ Real.exp) u)
         (Set.Ici (-Real.log T)) volume := by
-    refine (Continuous.integrable_of_hasCompactSupport
-      (by fun_prop) ?_).integrableOn
+    refine ((Real.continuous_exp.smul
+      (hsmooth.continuous.comp Real.continuous_exp)).integrable_of_hasCompactSupport
+      ?_).integrableOn
     change HasCompactSupport (Real.exp • (Ψ ∘ Real.exp))
     exact (wiener_exp_pullback_compact hcompact hplus).smul_left
   have h := MeasureTheory.integral_deriv_smul_comp_Ioi
