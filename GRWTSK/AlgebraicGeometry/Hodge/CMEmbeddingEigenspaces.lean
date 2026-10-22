@@ -176,6 +176,24 @@ theorem CharacterEigenspaceDecomposition.finrank_eq_card
   rw [← e.finrank_eq, Module.finrank_directSum]
   simp [R.line_finrank_one]
 
+/-- In the Galois case, the complete one-dimensional eigenspace decomposition
+has ambient dimension equal to the field degree. -/
+theorem CharacterEigenspaceDecomposition.finrank_eq_fieldDegree
+    {k E C V : Type*}
+    [Field k] [Field E] [Algebra k E] [FiniteDimensional k E] [IsGalois k E]
+    [Field C] [AddCommGroup V] [Module C V] [FiniteDimensional C V]
+    {conj : (E ≃ₐ[k] E) → (E ≃ₐ[k] E)}
+    {v : OddSignRow (E ≃ₐ[k] E) conj}
+    (R : CharacterEigenspaceDecomposition
+      E C V (E ≃ₐ[k] E) conj v) :
+    Module.finrank C V = Module.finrank k E := by
+  calc
+    Module.finrank C V =
+        Fintype.card (E ≃ₐ[k] E) := R.finrank_eq_card
+    _ = Module.finrank k E := by
+      simpa only [Nat.card_eq_fintype_card] using
+        IsGalois.card_aut_eq_finrank k E
+
 /-- Complete eigenspace decompositions retain the same four-factor bidegree
 conclusion after forgetting only the global decomposition certificate. -/
 theorem characterEigenspaceDecompositions_fourFactor_bidegree_two_two
