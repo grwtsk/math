@@ -4,6 +4,7 @@ Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm
 import GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling
+import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines
 
 /-!
 # Conditional weight-one CM Riemann realization interface
@@ -152,7 +153,7 @@ theorem WeightOneCMRealization.actualWeil_H10
   simp [WeightOneCMRealization.actualWeil]
   rw [CMCoordinateHodge.weilOperator_holomorphic v]
   · simp
-  · exact hz
+  · exact (R.mem_H10_iff z).mp hz
 
 /-- The transported Weil operator acts by -i on actual H^(0,1). -/
 theorem WeightOneCMRealization.actualWeil_H01
@@ -166,17 +167,66 @@ theorem WeightOneCMRealization.actualWeil_H01
   simp [WeightOneCMRealization.actualWeil]
   rw [CMCoordinateHodge.weilOperator_antiholomorphic v]
   · simp
-  · exact hz
+  · exact (R.mem_H01_iff z).mp hz
 
-/-- The actual Hodge pieces are complementary because the coordinate pieces are. -/
-theorem WeightOneCMRealization.hodgePieces_isCompl
+/-- Actual weight-one Hodge-type subspace attached to one formal type label. -/
+def WeightOneCMRealization.typeSubspace
     {v : OddSignRow E}
     {X : SignControlledXi E v}
     (R : WeightOneCMRealization E v X) :
-    IsCompl R.H10 R.H01 := by
-  exact (CMCoordinateHodge.hodgePieces_isCompl v).comap
-    R.h1ComplexCoordinates.toLinearMap
-    R.h1ComplexCoordinates.surjective
+    CMEmbeddingLines.WeightOneHodgeType → Submodule ℂ R.H1C
+  | .holomorphic => R.H10
+  | .antiholomorphic => R.H01
+
+/-- Predicate that one actual complexified H1 vector has the selected
+weight-one Hodge type. -/
+def WeightOneCMRealization.IsOfType
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (z : R.H1C)
+    (τ : CMEmbeddingLines.WeightOneHodgeType) : Prop :=
+  z ∈ R.typeSubspace τ
+
+@[simp]
+theorem WeightOneCMRealization.isOfType_holomorphic_iff
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (z : R.H1C) :
+    R.IsOfType z .holomorphic ↔ z ∈ R.H10 :=
+  Iff.rfl
+
+@[simp]
+theorem WeightOneCMRealization.isOfType_antiholomorphic_iff
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    (z : R.H1C) :
+    R.IsOfType z .antiholomorphic ↔ z ∈ R.H01 :=
+  Iff.rfl
+
+/-- Coordinate holomorphic membership gives actual holomorphic type. -/
+theorem WeightOneCMRealization.isOfType_holomorphic_of_coordinates
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    {z : R.H1C}
+    (hz :
+      R.h1ComplexCoordinates z ∈ CMCoordinateHodge.holomorphicPart v) :
+    R.IsOfType z .holomorphic :=
+  (R.mem_H10_iff z).mpr hz
+
+/-- Coordinate antiholomorphic membership gives actual antiholomorphic type. -/
+theorem WeightOneCMRealization.isOfType_antiholomorphic_of_coordinates
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X)
+    {z : R.H1C}
+    (hz :
+      R.h1ComplexCoordinates z ∈ CMCoordinateHodge.antiholomorphicPart v) :
+    R.IsOfType z .antiholomorphic :=
+  (R.mem_H01_iff z).mpr hz
 
 /-- Exact external theorem interface still required after the local
 pre-Riemann construction.
