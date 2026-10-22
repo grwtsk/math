@@ -389,6 +389,72 @@ def fourfoldActualPureTensor
     FourfoldActualTensor D :=
   ((a ⊗ₜ[ℂ] b) ⊗ₜ[ℂ] c) ⊗ₜ[ℂ] d
 
+/-- Alignment of four actual factors with the balanced switch pattern:
+the first two characters are evaluated at g and the last two at the conjugate
+character. -/
+structure FourCanonicalFactorsSwitchAlignment
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    (D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄) where
+  g : E ≃ₐ[ℚ] E
+  balance : CMNumberFieldIndex.FourBalance E v₁ v₂ v₃ v₄
+  first_character : D.first.character = g
+  second_character : D.second.character = g
+  third_character :
+    D.third.character = (CMNumberFieldIndex.centralInvolution E).conj g
+  fourth_character :
+    D.fourth.character = (CMNumberFieldIndex.centralInvolution E).conj g
+
+/-- The existing local FourBalance count gives the p-index sum for the actual
+four factor labels after switch-character alignment. -/
+theorem FourCanonicalFactorsSwitchAlignment.p_two
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    (A : FourCanonicalFactorsSwitchAlignment D) :
+    CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₁.value D.first.character)) +
+      CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₂.value D.second.character)) +
+      CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₃.value D.third.character)) +
+      CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₄.value D.fourth.character)) = 2 := by
+  have h :=
+    CMFourBalance.fourBalance_holomorphicCount
+      v₁.toOddSignRow v₂.toOddSignRow v₃.toOddSignRow v₄.toOddSignRow
+      A.balance A.g
+  simpa [A.first_character, A.second_character,
+    A.third_character, A.fourth_character,
+    CMEmbeddingLines.pIndex_typeOfSign] using h
+
+/-- The same aligned labels have q-index sum two. -/
+theorem FourCanonicalFactorsSwitchAlignment.q_two
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    (A : FourCanonicalFactorsSwitchAlignment D) :
+    CMEmbeddingLines.qIndex
+          (CMEmbeddingLines.typeOfSign (v₁.value D.first.character)) +
+      CMEmbeddingLines.qIndex
+          (CMEmbeddingLines.typeOfSign (v₂.value D.second.character)) +
+      CMEmbeddingLines.qIndex
+          (CMEmbeddingLines.typeOfSign (v₃.value D.third.character)) +
+      CMEmbeddingLines.qIndex
+          (CMEmbeddingLines.typeOfSign (v₄.value D.fourth.character)) = 2 := by
+  rw [
+    CMEmbeddingLines.qIndex_typeOfSign_of_isSign
+      _ (v₁.isSign D.first.character),
+    CMEmbeddingLines.qIndex_typeOfSign_of_isSign
+      _ (v₂.isSign D.second.character),
+    CMEmbeddingLines.qIndex_typeOfSign_of_isSign
+      _ (v₃.isSign D.third.character),
+    CMEmbeddingLines.qIndex_typeOfSign_of_isSign
+      _ (v₄.isSign D.fourth.character)
+  ]
+  have hp := A.p_two
+  linarith
+
 /-- Standard Hodge tensor-product rule for four independently realized
 weight-one factors.
 
@@ -414,6 +480,37 @@ structure FourfoldActualHodgeTensorRule
       CMEmbeddingLines.qIndex τ₁ + CMEmbeddingLines.qIndex τ₂ +
           CMEmbeddingLines.qIndex τ₃ + CMEmbeddingLines.qIndex τ₄ = 2 →
       fourfoldActualPureTensor D a b c d ∈ H22
+
+/-- Once the four characters are aligned with the balanced switch pattern,
+the standard actual Hodge tensor rule places the canonical pure tensor in
+H^(2,2) with no further type-count assumptions. -/
+theorem FourfoldActualHodgeTensorRule.canonicalPureTensor_mem_H22
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    (R : FourfoldActualHodgeTensorRule D)
+    (A : FourCanonicalFactorsSwitchAlignment D) :
+    fourfoldActualPureTensor D
+      (D.first.realization.canonicalTensorActualH1Comparison.toActual
+        D.first.vector)
+      (D.second.realization.canonicalTensorActualH1Comparison.toActual
+        D.second.vector)
+      (D.third.realization.canonicalTensorActualH1Comparison.toActual
+        D.third.vector)
+      (D.fourth.realization.canonicalTensorActualH1Comparison.toActual
+        D.fourth.vector) ∈ R.H22 := by
+  apply R.pureTensor_mem_H22
+    _ _ _ _
+    (CMEmbeddingLines.typeOfSign (v₁.value D.first.character))
+    (CMEmbeddingLines.typeOfSign (v₂.value D.second.character))
+    (CMEmbeddingLines.typeOfSign (v₃.value D.third.character))
+    (CMEmbeddingLines.typeOfSign (v₄.value D.fourth.character))
+  · exact D.first.actual_type
+  · exact D.second.actual_type
+  · exact D.third.actual_type
+  · exact D.fourth.actual_type
+  · exact A.p_two
+  · exact A.q_two
 
 /-- Generic fourfold Hodge tensor-product compatibility.
 
