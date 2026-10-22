@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/normalized-disk-log-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "aa68f92ec803328960e040f6e9cd7fd73478b2d7".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "fef3d71a0d4ae423d9eee96ea539ea914e7d482c"
+# Original pre-repair inherited_target_blob = "fef3d71a0d4ae423d9eee96ea539ea914e7d482c".
+inherited_target_blob = "a083710c2be937ec0c93f8f076f4c709edeb3941"
 receipt_policy = "Exact new commit/tree must be bound externally. No execution is represented here."
 
 [trust]

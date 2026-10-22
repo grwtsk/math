@@ -26,7 +26,8 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/landau-prime-counts-v0.1.toml"
-inherited_target_blob = "b3c13441fc6080bac208c5069382daf119cfb227"
+# Original pre-repair inherited_target_blob = "b3c13441fc6080bac208c5069382daf119cfb227".
+inherited_target_blob = "3447f5b77eeee81bf9d5c5c0eb432abaf5da98f3"
 receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
 
 [trust]

@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/integer-taylor-seed-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "1f46f53b53a6a71ad579655cd8803fc6b19ac4c4".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "b8534110de287a208830fc8781ff26bd30759b93"
+# Original pre-repair inherited_target_blob = "b8534110de287a208830fc8781ff26bd30759b93".
+inherited_target_blob = "bd7d7a98179c745e7f2ddb095057b4f1cb84aab4"
 receipt_policy = "Exact new commit/tree must be bound externally; this static target authorizes no execution."
 
 [trust]

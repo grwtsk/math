@@ -88,7 +88,8 @@ disposition = "INHERITED_CONSUMER_OR_SOURCE"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.LandauStatements"
 path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
-source_blob = "41aa479be730fc09defba57576f9af0f09415306"
+# Original pre-repair source_blob = "41aa479be730fc09defba57576f9af0f09415306".
+source_blob = "c6efd023b4ca69c68f0a3b8022c67f656a12d546"
 origin_revision = "fd4e098e1635718de8e4da25c8b18430e0509d32"
 disposition = "INHERITED_CONSUMER_OR_SOURCE"
 

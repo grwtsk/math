@@ -30,7 +30,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-zeta-residue-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "2b2bff9daa3b975e66921307a5bd3d2a766320f4".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "2398304711caab10de68dbc39caf0e22bc3d4d48"
+# Original pre-repair inherited_target_blob = "2398304711caab10de68dbc39caf0e22bc3d4d48".
+inherited_target_blob = "46ca1521f8ee5ca3ffa0cabe9bd49bf495968e2f"
 receipt_policy = "Bind the actual new commit, tree and this manifest externally. Parent acceptance does not accept this increment."
 inventory_policy = "Static source names are not elaborated types. Audit all public declarations and complete inherited import/trust closure."
 

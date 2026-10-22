@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/tent-left-decay-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "dca0faf85cbb429d43c71f541c43e2e3395ba24e".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "9661258ce76a45e89d69e972aa68732326518110"
+# Original pre-repair inherited_target_blob = "9661258ce76a45e89d69e972aa68732326518110".
+inherited_target_blob = "addc06c08f532ff58fd7739322fb3bc477401f03"
 receipt_policy = "Bind the exact new commit and tree externally. Ancestor receipts do not accept this increment."
 inventory_policy = "Lexical names only. Reconcile exact elaborated types, complete import closure and every inherited obligation."
 

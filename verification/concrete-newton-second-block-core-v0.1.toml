@@ -31,7 +31,8 @@ status = "SOURCE_COMMITTED / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/concrete-newton-first-block-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "1412513e3832ab60089d9733b10514452616e195".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "faf088b508df673f96b0f83b86f4caadfde90807"
+# Original pre-repair inherited_target_blob = "faf088b508df673f96b0f83b86f4caadfde90807".
+inherited_target_blob = "85113873369c3e3b99388c71d4902acf408c5449"
 carried_target = "verification/concrete-newton-terminal-core-v0.1.toml"
 carried_target_blob = "2df48bdbdf3a2c1f991941acea1d346b5d401d9f"
 receipt_policy = "No execution authority; evidence and applicable authorization remain external."

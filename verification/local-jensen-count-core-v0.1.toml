@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/tent-horizontal-ray-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "5748617fb1f04b672ea51a026d4f1b56d88d45f7".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "ebc772f97d0f66333f649d13b51e1b82ff12ac14"
+# Original pre-repair inherited_target_blob = "ebc772f97d0f66333f649d13b51e1b82ff12ac14".
+inherited_target_blob = "4e78b22f67c65d7f20468867032ee33ade372baa"
 receipt_policy = "Bind exact new commit and tree externally. Ancestor receipts do not accept this increment."
 inventory_policy = "Lexical names only; exact types, all inherited modules and complete transitive closure require replay."
 

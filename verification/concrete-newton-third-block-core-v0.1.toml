@@ -30,7 +30,8 @@ status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/concrete-newton-second-block-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "3ee0c60b6372a930bda4b3f8307df888e3e1c5b8".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "0097d90373c4201d4e838bfff6326dc1ac7e8f55"
+# Original pre-repair inherited_target_blob = "0097d90373c4201d4e838bfff6326dc1ac7e8f55".
+inherited_target_blob = "394cc7b16196dfbcb75b871ddbff151a91bfe460"
 receipt_policy = "No execution authority; evidence and applicable authorization remain external."
 
 [trust]

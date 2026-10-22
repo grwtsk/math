@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/integer-dyadic-trace-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "92b451e9103cf2b1005e62a14d17c3de6ea5cdb4".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "398fbb3fc2878008af5fb08b99e19d8a472bc7a4"
+# Original pre-repair inherited_target_blob = "398fbb3fc2878008af5fb08b99e19d8a472bc7a4".
+inherited_target_blob = "93ba85699ae9d2e8a09ea0019d6dbc8c43229aff"
 receipt_policy = "Exact commit/tree and execution evidence are external. This static target grants no execution authority."
 
 [trust]

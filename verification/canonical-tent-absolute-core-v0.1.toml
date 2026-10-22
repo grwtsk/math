@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/tent-selected-residue-limit-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "bfb9353227e84ad3756faaa7984e06951131f2ea".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "6741381b90844ebf6c6d2ebff69ad9e8ff6f0d08"
+# Original pre-repair inherited_target_blob = "6741381b90844ebf6c6d2ebff69ad9e8ff6f0d08".
+inherited_target_blob = "9f67eee862efa809e38b412ff2d571e2a0b7fe33"
 receipt_policy = "Bind the exact new commit and tree externally. This static target represents no execution or successful check."
 
 [trust]

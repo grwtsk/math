@@ -29,7 +29,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/legendre-tent-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "2c80dd1d0e963334afe99aae8778cbdaa77af3dd".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "784bd05e21bb951e9efa35e357330836554619ed"
+# Original pre-repair inherited_target_blob = "784bd05e21bb951e9efa35e357330836554619ed".
+inherited_target_blob = "20c6f78192dc9a7903b817d22c113c0d24327d10"
 receipt_policy = "Bind the replayed integration commit/tree/manifest blob externally; no parent receipt accepts this head."
 inventory_policy = "Names are lexical source inventory, not elaborated types. Resolve private declarations to elaborated names and audit their full trust closure too."
 

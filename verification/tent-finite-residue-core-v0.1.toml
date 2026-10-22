@@ -31,7 +31,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/tent-pole-subtraction-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "b57177610ded8a6627350be4daef04466950c03e".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "0c21bb24d0331ca81a47fde4d99dff84f0d9e030"
+# Original pre-repair inherited_target_blob = "0c21bb24d0331ca81a47fde4d99dff84f0d9e030".
+inherited_target_blob = "169ee0ca93758bcf86f1b65a47d7e9f05fb484e1"
 receipt_policy = "Bind the new commit/tree externally; ancestor receipts do not accept this target."
 inventory_policy = "Lexical names only; reconcile all exact elaborated types and transitive imports."
 

@@ -60,8 +60,10 @@ required_declarations = ["GRWTSK.NumberTheory.Primes.ConfigurationCounts.goldbac
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.LandauStatements"
 path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
-git_blob = "41aa479be730fc09defba57576f9af0f09415306"
-sha256 = "819e3f21dbd3491c49b346794460ef6e95d288629c72b737c42019ec38603039"
+# Original pre-repair git_blob = "41aa479be730fc09defba57576f9af0f09415306".
+git_blob = "c6efd023b4ca69c68f0a3b8022c67f656a12d546"
+# Original pre-repair sha256 = "819e3f21dbd3491c49b346794460ef6e95d288629c72b737c42019ec38603039".
+sha256 = "7ad427e342ff280d75023c8da2e4d8417c6c11b31cb8630acf9e7bb277aa9772"
 required_declarations = ["GRWTSK.NumberTheory.Primes.LandauStatements.Goldbach", "GRWTSK.NumberTheory.Primes.LandauStatements.TwinPrimes", "GRWTSK.NumberTheory.Primes.LandauStatements.Legendre", "GRWTSK.NumberTheory.Primes.LandauStatements.QuadraticPrimeValues", "GRWTSK.NumberTheory.Primes.LandauStatements.goldbach_iff_positive_counts", "GRWTSK.NumberTheory.Primes.LandauStatements.twinPrimes_iff_positive_tails", "GRWTSK.NumberTheory.Primes.LandauStatements.legendre_iff_positive_counts", "GRWTSK.NumberTheory.Primes.LandauStatements.quadraticPrimeValues_iff_positive_tails", "GRWTSK.NumberTheory.Primes.LandauStatements.LegendreThrough", "GRWTSK.NumberTheory.Primes.LandauStatements.LegendreBeyond", "GRWTSK.NumberTheory.Primes.LandauStatements.legendre_of_prefix_and_tail", "GRWTSK.NumberTheory.Primes.LandauStatements.legendre_through_of_legendre"]
 
 [[hostile_controls]]

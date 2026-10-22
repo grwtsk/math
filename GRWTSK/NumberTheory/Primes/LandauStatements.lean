@@ -76,11 +76,11 @@ def LegendreBeyond (N : ℕ) : Prop :=
 
 /-- Glue a complete finite prefix to an independently supplied universal tail. -/
 theorem legendre_of_prefix_and_tail (N : ℕ)
-    (prefix : LegendreThrough N) (tail : LegendreBeyond N) : Legendre := by
+    («prefix» : LegendreThrough N) (tail : LegendreBeyond N) : Legendre := by
   apply legendre_iff_positive_counts.mpr
   intro n hn
   by_cases hcut : n ≤ N
-  · exact prefix n hn hcut
+  · exact «prefix» n hn hcut
   · exact tail n (Nat.lt_of_not_ge hcut)
 
 /-- An actual Legendre theorem would supply each finite prefix. -/

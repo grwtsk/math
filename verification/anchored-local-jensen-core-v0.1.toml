@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/local-jensen-count-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "59593cb373fb05a9c98b27991617523bed5b64e8".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "05d0b60c0a5ef6ac7047fed68800c5576b3ee628"
+# Original pre-repair inherited_target_blob = "05d0b60c0a5ef6ac7047fed68800c5576b3ee628".
+inherited_target_blob = "d2801f36f83b9480bc85d8fa45cc4db30cb8452f"
 receipt_policy = "Bind exact new commit and tree externally; no ancestor receipt accepts this increment."
 inventory_policy = "Names are lexical only; every exact type and complete transitive dependency requires replay."
 
