@@ -52,8 +52,8 @@ theorem canonicalThetaGridEnvelope_sublinear_of_PNT
   intro j hj
   let X : ℕ := dyadicScale j
   have hindex : j ≤ X := index_le_dyadicScale j
-  have hBn : nB ≤ j := (le_max_left _ _) |>.trans hj
-  have hEn : nE ≤ j := (le_max_right _ _) |>.trans hj
+  have hBn : nB ≤ j := le_trans (le_max_left _ _) hj
+  have hEn : nE ≤ j := le_trans (le_max_right _ _) hj
   have hXgtB : B < (X : ℝ) := by
     have hcast : (nB : ℝ) ≤ (X : ℝ) := by
       exact_mod_cast hBn.trans hindex
@@ -63,7 +63,9 @@ theorem canonicalThetaGridEnvelope_sublinear_of_PNT
       exact_mod_cast hEn.trans hindex
     exact hnE.trans_le hcast
   have hεX : 4 ≤ ε * (X : ℝ) := by
-    exact le_of_lt ((div_lt_iff₀ hε).mp hXgtFour)
+    have hp : 4 < (X : ℝ) * ε :=
+      (div_lt_iff₀ hε).mp hXgtFour
+    nlinarith [hp]
   have htwocost : (2 : ℝ) ≤ (ε / 2) * (X : ℝ) := by
     nlinarith [hεX]
   apply canonicalThetaGridEnvelope_le_of_grid_bound
