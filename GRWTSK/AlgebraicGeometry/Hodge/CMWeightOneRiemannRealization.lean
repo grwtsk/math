@@ -5,6 +5,7 @@ Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm
 import GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling
 import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines
+import GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines
 
 /-!
 # Conditional weight-one CM Riemann realization interface
@@ -227,6 +228,131 @@ theorem WeightOneCMRealization.isOfType_antiholomorphic_of_coordinates
       R.h1ComplexCoordinates z ∈ CMCoordinateHodge.antiholomorphicPart v) :
     R.IsOfType z .antiholomorphic :=
   (R.mem_H01_iff z).mpr hz
+
+/-- Canonical complex coordinate of a tensor in E tensor_Q E at one Galois
+automorphism, obtained from the local Galois evaluation equivalence and the
+chosen base complex embedding. -/
+noncomputable def canonicalTensorComplexCoordinate
+    (t : E ⊗[ℚ] E)
+    (σ : E ≃ₐ[ℚ] E) : ℂ :=
+  CMArchimedeanPositivity.baseComplexEmbedding E
+    (CMGaloisEvaluation.evaluationEquiv ℚ E t
+      ((CMGaloisEmbeddingMatrix.galIndexEquiv ℚ E).symm σ))
+
+/-- A vector in one canonical embedding eigenspace has zero canonical complex
+coordinate at every different Galois automorphism. -/
+theorem canonicalTensorComplexCoordinate_eq_zero_of_ne
+    (τ σ : E ≃ₐ[ℚ] E)
+    {t : E ⊗[ℚ] E}
+    (ht :
+      t ∈ CMRegularBaseChange.embeddingEigenspace
+        (k := ℚ) τ.toAlgHom)
+    (hστ : σ ≠ τ) :
+    canonicalTensorComplexCoordinate E t σ = 0 := by
+  let jτ : Fin (Module.finrank ℚ E) :=
+    (CMGaloisEmbeddingMatrix.galIndexEquiv ℚ E).symm τ
+  let jσ : Fin (Module.finrank ℚ E) :=
+    (CMGaloisEmbeddingMatrix.galIndexEquiv ℚ E).symm σ
+  have hjτ :
+      CMGaloisEigenlines.embeddingCharacter ℚ E jτ = τ.toAlgHom := by
+    apply AlgHom.ext
+    intro a
+    simp [CMGaloisEigenlines.embeddingCharacter, jτ]
+  have hji : jσ ≠ jτ := by
+    intro h
+    apply hστ
+    exact (CMGaloisEmbeddingMatrix.galIndexEquiv ℚ E).symm.injective h
+  have hz :
+      CMGaloisEvaluation.evaluation ℚ E t jσ = 0 := by
+    rw [← hjτ] at ht
+    exact CMGaloisEigenlines.evaluation_offDiagonal_zero
+      ℚ E jτ jσ hji ht
+  simp [canonicalTensorComplexCoordinate,
+    CMGaloisEvaluation.evaluationEquiv_apply, jσ, hz]
+
+/-- Exact comparison between the canonical tensor model and the actual
+complexified H1 realization.
+
+The comparison is only required to preserve the canonical Galois complex
+coordinates. This is enough to transfer one-dimensional embedding-line support
+to actual Hodge support. -/
+structure CanonicalTensorActualH1Comparison
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    (R : WeightOneCMRealization E v X) where
+  toActual : E ⊗[ℚ] E → R.H1C
+  coordinate_compatibility :
+    ∀ t σ,
+      R.h1ComplexCoordinates (toActual t) σ =
+        canonicalTensorComplexCoordinate E t σ
+
+/-- A positive-sign canonical embedding-line vector maps into actual H^(1,0). -/
+theorem CanonicalTensorActualH1Comparison.isOfType_holomorphic
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    {R : WeightOneCMRealization E v X}
+    (C : CanonicalTensorActualH1Comparison E R)
+    (τ : E ≃ₐ[ℚ] E)
+    {t : E ⊗[ℚ] E}
+    (ht :
+      t ∈ CMRegularBaseChange.embeddingEigenspace
+        (k := ℚ) τ.toAlgHom)
+    (hv : v.value τ = 1) :
+    R.IsOfType (C.toActual t) .holomorphic := by
+  apply R.isOfType_holomorphic_of_coordinates
+  intro σ hσ
+  have hστ : σ ≠ τ := by
+    intro h
+    subst σ
+    omega
+  rw [C.coordinate_compatibility]
+  exact canonicalTensorComplexCoordinate_eq_zero_of_ne
+    E τ σ ht hστ
+
+/-- A negative-sign canonical embedding-line vector maps into actual H^(0,1). -/
+theorem CanonicalTensorActualH1Comparison.isOfType_antiholomorphic
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    {R : WeightOneCMRealization E v X}
+    (C : CanonicalTensorActualH1Comparison E R)
+    (τ : E ≃ₐ[ℚ] E)
+    {t : E ⊗[ℚ] E}
+    (ht :
+      t ∈ CMRegularBaseChange.embeddingEigenspace
+        (k := ℚ) τ.toAlgHom)
+    (hv : v.value τ = -1) :
+    R.IsOfType (C.toActual t) .antiholomorphic := by
+  apply R.isOfType_antiholomorphic_of_coordinates
+  intro σ hσ
+  have hστ : σ ≠ τ := by
+    intro h
+    subst σ
+    omega
+  rw [C.coordinate_compatibility]
+  exact canonicalTensorComplexCoordinate_eq_zero_of_ne
+    E τ σ ht hστ
+
+/-- Canonical sign-derived type labels become actual Hodge types once the
+coordinate-preserving tensor-to-H1 comparison is supplied. -/
+theorem CanonicalTensorActualH1Comparison.isOfType_typeOfSign
+    {v : OddSignRow E}
+    {X : SignControlledXi E v}
+    {R : WeightOneCMRealization E v X}
+    (C : CanonicalTensorActualH1Comparison E R)
+    (τ : E ≃ₐ[ℚ] E)
+    {t : E ⊗[ℚ] E}
+    (ht :
+      t ∈ CMRegularBaseChange.embeddingEigenspace
+        (k := ℚ) τ.toAlgHom) :
+    R.IsOfType (C.toActual t)
+      (CMEmbeddingLines.typeOfSign (v.value τ)) := by
+  rcases v.isSign τ with hv | hv
+  · rw [hv]
+    simpa [CMEmbeddingLines.typeOfSign] using
+      C.isOfType_holomorphic τ ht hv
+  · rw [hv]
+    simpa [CMEmbeddingLines.typeOfSign] using
+      C.isOfType_antiholomorphic τ ht hv
 
 /-- Exact external theorem interface still required after the local
 pre-Riemann construction.
