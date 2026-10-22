@@ -174,6 +174,44 @@ theorem normalized_root_pair_factor
   have hM0 : (M : ℚ) ≠ 0 := by exact_mod_cast Nat.ne_of_gt hM
   field_simp [hM0]
 
+/-- A full powerset character coefficient factors into the
+ordinary source and odd-affine residual products. -/
+theorem antipodal_subset_product_factor
+    (H : Finset ℕ) (S : Finset ℕ) (m t : ℕ) :
+    (∏ h ∈ S,
+      (((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ) *
+        ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))) =
+      (∏ h ∈ S,
+        ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ)) *
+      (∏ h ∈ S,
+        ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) := by
+  exact Finset.prod_mul_distrib
+
+/-- The exact normalized character coefficient of one ordinary
+subset is the product of its two separately averaged means.
+This helper deliberately uses Finset ℕ rather than the subtype
+of H; a later subtype reindexing must bridge those two forms. -/
+theorem antipodal_subset_normalized_factor
+    (M : ℕ) (S : Finset ℕ) (hM : 0 < M) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+       (∏ h ∈ S,
+          ((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ)) *
+       (∏ h ∈ S,
+          ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+       (M : ℚ) ^ 2) =
+      ((∑ m ∈ Finset.range M,
+        ∏ h ∈ S,
+          ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ)) / (M : ℚ)) *
+      ((∑ t ∈ Finset.range M,
+        ∏ h ∈ S,
+          ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) / (M : ℚ)) := by
+  exact normalized_root_pair_factor M
+    (fun m => ∏ h ∈ S,
+      ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ))
+    (fun t => ∏ h ∈ S,
+      ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))
+    hM
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
