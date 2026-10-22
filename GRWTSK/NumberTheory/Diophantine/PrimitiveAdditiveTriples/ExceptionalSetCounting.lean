@@ -6,11 +6,12 @@ assistance using Lean to verify parts of an earlier version.
 
 This module connects finite primitive-additive-triple counts to the exact
 Proposition 6.1 optimization certificate. The exact and quantitative integer
-anatomy of Lemma 2.2 is imported here. The dyadic counting reduction,
-Fourier estimate, and geometry-of-numbers estimate remain explicit
-obligations of `ExceptionalSetAnalyticSupplier`. -/
+anatomy of Lemma 2.2 and the exact finite dyadic reduction of Proposition 2.1
+are imported here. The Fourier estimate and geometry-of-numbers estimate
+remain explicit obligations of `ExceptionalSetAnalyticSupplier`. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AnatomicFactorization
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdmissibleAnatomicReduction
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.MomentReindexing
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetOptimization
 import Mathlib.Tactic
@@ -122,12 +123,13 @@ theorem exponent_le_three_fifths_of_certificate {D : ℝ}
   simpa [hD] using
     ExceptionalSetOptimization.exponent_le_three_fifths x hx
 
-/-- The deliberately explicit boundary for the missing analytic mathematics.
-An implementation must extract a feasible Proposition 6.1 point from a
-persistent lower bound, using the source paper's dyadic anatomic counting
-reduction (Proposition 2.1), Fourier estimate (Proposition 3.1),
-geometry-of-numbers estimate (Proposition 4.1), and parameter bookkeeping.
-No such implementation is asserted in this module. -/
+/-- The deliberately explicit boundary for the remaining analytic
+mathematics. The exact integer anatomy and the finite admissible dyadic cover
+are already imported. An implementation must combine the source paper's
+Fourier estimate (Proposition 3.1), geometry-of-numbers estimate
+(Proposition 4.1), and parameter extraction into (6.1)--(6.10) to obtain a
+feasible Proposition 6.1 point from a persistent lower bound. No such
+implementation is asserted in this module. -/
 structure ExceptionalSetAnalyticSupplier (lam : ℝ) : Prop where
   lambda_pos : 0 < lam
   lambda_lt_one : lam < 1
