@@ -92,6 +92,18 @@ def NatTree.render : NatTree → String
   | .atom value => toString value
   | .array values => "[" ++ String.intercalate "," (values.map NatTree.render) ++ "]"
 
+/-- The normative wire spelling as numerical ASCII byte values. Decimal atom
+digits are separated by comma byte `44` and enclosed by bracket bytes `91, 93`.
+The primitive nested recursor keeps concrete equality proofs independent of
+well-founded implementation proofs and large `String` equality reductions.
+`noncomputable` suppresses unsupported nested-recursor code generation; this
+definition has no external evaluator or additional axiom. -/
+noncomputable def NatTree.renderBytes : NatTree → List Nat :=
+  NatTree.rec (motive_1 := fun _ ↦ List Nat) (motive_2 := fun _ ↦ List (List Nat))
+    (fun value ↦ (toString value).toList.map Char.toNat)
+    (fun _ children ↦ 91 :: (List.flatten (List.intersperse [44] children)) ++ [93])
+    [] (fun _ _ head tail ↦ head :: tail)
+
 /-- Strings are arrays of Unicode scalar values, without JSON escaping. -/
 def stringWire (value : String) : NatTree :=
   .array (value.toList.map (fun character ↦ .atom character.toNat))
