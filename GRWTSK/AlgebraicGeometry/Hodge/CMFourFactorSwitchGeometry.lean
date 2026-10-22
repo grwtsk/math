@@ -1039,24 +1039,6 @@ structure TransportedGeneratorRealizationFamily
         hodgeSubspace
         (D.assemble ((factors.scalarTransport σ).vector))
 
-/-- A realization family supplies the exact transported-generator Hodge package
-consumed by the orbit-span/descent pipeline. -/
-def TransportedGeneratorRealizationFamily.toTransportedGeneratorHodgeData
-    {V : Type*} [AddCommGroup V] [Module ℚ V]
-    {factors :
-      CMEmbeddingTransport.FourEmbeddingLineVectors
-        (k := ℚ)
-        (E :=
-          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
-    {tensor :
-      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
-        ⊗[ℚ] V}
-    {D : FourfoldMonomialAssemblyData factors tensor}
-    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
-    (F : TransportedGeneratorRealizationFamily D hodgeSubspace) :
-    TransportedMonomialGeneratorHodgeData D hodgeSubspace where
-  generator_mem := fun σ => (F.realize σ).assembled_mem_hodge
-
 /-- Exact Hodge-realization input for one transported monomial generator.
 
 Because the transported monomial line is defined as the span of this one
@@ -1077,6 +1059,25 @@ structure TransportedMonomialGeneratorHodgeData
   generator_mem :
     ∀ σ,
       D.assemble ((factors.scalarTransport σ).vector) ∈ hodgeSubspace
+
+/-- A realization family supplies the exact transported-generator Hodge package
+consumed by the orbit-span/descent pipeline. -/
+def TransportedGeneratorRealizationFamily.toTransportedGeneratorHodgeData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    {D : FourfoldMonomialAssemblyData factors tensor}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (F : TransportedGeneratorRealizationFamily D hodgeSubspace) :
+    TransportedMonomialGeneratorHodgeData D hodgeSubspace where
+  generator_mem := fun σ => (F.realize σ).assembled_mem_hodge
+
 
 /-- Membership of each transported monomial generator implies inclusion of the
 whole transported monomial line in the actual Hodge subspace. -/
