@@ -175,6 +175,57 @@ def canonicalAtomicSwitchFourFactorProfile
         v₁ v₂ v₃ v₄ hbal
   }
 
+/-- Complex span of the scalar-Galois orbit of one algebraic-number tensor.
+
+This is the smallest subspace in which scalar-conjugate stability is automatic.
+The geometric content is therefore reduced to proving that this orbit span lies
+inside the actual Hodge subspace. -/
+def scalarConjugateOrbitSpan
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V) :
+    Submodule ℂ (ℂ ⊗[ℚ] V) :=
+  Submodule.span ℂ
+    (Set.range fun σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers =>
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ tensor))
+
+/-- Every scalar conjugate belongs to its orbit span by construction. -/
+theorem scalarConjugate_mem_orbitSpan
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V)
+    (σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
+      (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+        σ tensor) ∈ scalarConjugateOrbitSpan tensor := by
+  apply Submodule.subset_span
+  exact Set.mem_range_self σ
+
+/-- Sharpened geometric input: the actual Hodge subspace only needs to contain
+the scalar-conjugate orbit span. -/
+structure AtomicSwitchOrbitHodgeData
+    (P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j) where
+  V : Type*
+  [V_addCommGroup : AddCommGroup V]
+  [V_moduleQ : Module ℚ V]
+  hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)
+  tensor :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ⊗[ℚ] V
+  orbitSpan_le_hodge :
+    scalarConjugateOrbitSpan tensor ≤ hodgeSubspace
+
 /-- Raw tensor-level input still needed after the canonical atomic
 four-row profile and its all-conjugate (2,2) certificate are known locally.
 
@@ -207,6 +258,27 @@ structure AtomicSwitchTensorData
       GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
         (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
           σ tensor) ∈ hodgeSubspace
+
+/-- Orbit-span containment automatically supplies the raw scalar-conjugate
+stability data needed for descent. -/
+def AtomicSwitchOrbitHodgeData.toTensorData
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
+    {P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j}
+    (D : AtomicSwitchOrbitHodgeData P) :
+    AtomicSwitchTensorData P where
+  V := D.V
+  hodgeSubspace := D.hodgeSubspace
+  tensor := D.tensor
+  all_scalar_conjugates_mem := fun σ =>
+    D.orbitSpan_le_hodge (scalarConjugate_mem_orbitSpan D.tensor σ)
 
 /-- The canonical (2,2) profile plus raw tensor stability data produces the
 exact descent datum consumed by the local trace-descent theorem. -/
