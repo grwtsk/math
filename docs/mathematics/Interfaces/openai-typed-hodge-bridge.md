@@ -1838,6 +1838,48 @@ Thus the previous common-carrier abstraction is no longer needed for the CM-numb
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4an. Switch-character alignment now closes the actual H^(2,2) type count
+
+The explicit fourfold actual tensor target is now aligned with the local switch combinatorics.
+
+`CMFourFactorSwitchGeometry.lean` adds:
+
+~~~text
+FourCanonicalFactorsSwitchAlignment
+FourCanonicalFactorsSwitchAlignment.p_two
+FourCanonicalFactorsSwitchAlignment.q_two
+FourfoldActualHodgeTensorRule.canonicalPureTensor_mem_H22
+~~~
+
+For a balanced CM four-row profile and a selected Galois character (g), the alignment record imposes exactly the manuscript pattern
+
+[
+	au_1=g,qquad
+	au_2=g,qquad
+	au_3=c(g),qquad
+	au_4=c(g).
+]
+
+The existing local `FourBalance` theorem then gives, on the actual factor labels,
+
+[
+sum_{r=1}^4 p(	au_r)=2.
+]
+
+The corresponding (q)-sum is derived locally from the sign-valued weight-one identity (q=1-p), so
+
+[
+sum_{r=1}^4 q(	au_r)=2.
+]
+
+Each factor already has genuine actual (H^{1,0}) or (H^{0,1}) membership from the strengthened weight-one realization. Therefore `canonicalPureTensor_mem_H22` feeds those four actual type proofs and the two local index equations directly into the standard fourfold Hodge tensor rule.
+
+Thus, conditional only on the standard tensor-product Hodge rule, the canonical fourfold pure tensor for an aligned switch lies in the actual (H^{2,2}) subspace.
+
+The remaining bridge to the earlier scalar-conjugate descent pipeline is no longer Hodge typing. It is identification of this explicit actual fourfold tensor with the switched monomial assembly used by `FourfoldMonomialAssemblyData`, together with scalar-conjugation naturality of that assembly.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
