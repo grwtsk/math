@@ -1364,7 +1364,7 @@ evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["thm:switch", "eq:switch-line"]
 statement_role = "for the two rows changed by one atomic switch, supply a nonzero algebraic four-factor core class"
-local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourFactorSwitchCoreSupplier"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
 status = "OPEN"
 nonclaims = [
   "independent of unchanged-row two-factor identity classes",
@@ -1383,4 +1383,20 @@ status = "OPEN"
 nonclaims = [
   "routine geometric assembly only",
   "does not supply four-factor algebraicity"
+]
+
+
+[[local_target]]
+name = "switched core uses repository-wide four-factor algebraicity supplier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.fourFactorSwitchCoreSupplierOfAlgebraicity"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "SwitchCoreRationalWitnessAdapter",
+  "AlgebraicCycleToSwitchCoreAdapter",
+  "CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
+]
+nonclaims = [
+  "no second independent algebraicity theorem",
+  "identification and packaging adapters carry no algebraicity content"
 ]
