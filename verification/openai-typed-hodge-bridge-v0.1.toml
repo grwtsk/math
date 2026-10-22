@@ -2063,9 +2063,10 @@ source = "fourfold switched tensor assembly over algebraic-number coefficients"
 labels = []
 statement_role = "extend the locally proved pure-factor Galois equivariance of canonicalPureAlgebraicAssembly to arbitrary four canonical factor tensors using the fourfold multilinear/tensor universal property"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyEquivariance.equivariant"
-status = "OPEN"
+status = "REDUCED_TO_ASSEMBLY_IDENTIFICATION"
 nonclaims = [
-  "factor transport itself is local",
+  "Galois equivariance is local once the assembly is fourfold Q-linear with the canonical pure-factor formula",
+  "the remaining issue is identification of the geometric switched assembly with that canonical multilinear assembly",
   "no Hodge or algebraicity conclusion"
 ]
 
@@ -2089,3 +2090,28 @@ name = "canonical pure algebraic fourfold assembly"
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.canonicalPureAlgebraicAssembly"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "fourfold multilinearity extends pure assembly equivariance"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.equivariant"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four nested Q-linear assembly maps",
+  "canonical pure-factor formula"
+]
+nonclaims = [
+  "formal tensor-induction theorem",
+  "no remaining arithmetic or Hodge input in equivariance"
+]
+
+[[local_target]]
+name = "multilinear canonical assembly supplies algebraic equivariance interface"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.toAssemblyEquivariance"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "adapter only",
+  "does not identify the canonical multilinear assembly with the geometric switched monomial assembly"
+]
