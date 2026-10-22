@@ -211,6 +211,72 @@ theorem scalarConjugate_mem_orbitSpan
   apply Submodule.subset_span
   exact Set.mem_range_self σ
 
+/-- Linewise transport data for the scalar-Galois orbit of one switched tensor.
+
+For each coefficient-field automorphism, monomialLine sigma is the transported
+four-factor monomial line containing the corresponding scalar conjugate. If
+every such line lies in the actual Hodge subspace, orbit-span containment
+follows formally. -/
+structure ScalarConjugateMonomialLineData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  monomialLine :
+    (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) →
+      Submodule ℂ (ℂ ⊗[ℚ] V)
+  conjugate_mem_line :
+    ∀ σ,
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
+          σ tensor) ∈ monomialLine σ
+  line_le_hodge :
+    ∀ σ, monomialLine σ ≤ hodgeSubspace
+
+/-- Linewise monomial transport and linewise Hodge inclusion imply the single
+orbit-span containment statement. -/
+theorem ScalarConjugateMonomialLineData.orbitSpan_le_hodge
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (D : ScalarConjugateMonomialLineData tensor hodgeSubspace) :
+    scalarConjugateOrbitSpan tensor ≤ hodgeSubspace := by
+  rw [scalarConjugateOrbitSpan]
+  apply Submodule.span_le.mpr
+  intro z hz
+  obtain ⟨σ, rfl⟩ := hz
+  exact D.line_le_hodge σ (D.conjugate_mem_line σ)
+
+/-- Atomic-switch version of the linewise transport package.
+
+This is the natural interface for combining the existing factorwise embedding
+transport results with the actual geometric Hodge realization. -/
+structure AtomicSwitchMonomialTransportData
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
+    (P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j) where
+  V : Type*
+  [V_addCommGroup : AddCommGroup V]
+  [V_moduleQ : Module ℚ V]
+  hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)
+  tensor :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ⊗[ℚ] V
+  transport :
+    ScalarConjugateMonomialLineData tensor hodgeSubspace
+
 /-- Sharpened geometric input: the actual Hodge subspace only needs to contain
 the scalar-conjugate orbit span. -/
 structure AtomicSwitchOrbitHodgeData
@@ -266,6 +332,25 @@ structure AtomicSwitchTensorData
       GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.coefficientInclusion
         (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate
           σ tensor) ∈ hodgeSubspace
+
+/-- Linewise monomial transport yields the orbit-span Hodge package locally. -/
+def AtomicSwitchMonomialTransportData.toOrbitHodgeData
+    {conj : G → G}
+    {hconj : Function.Involutive conj}
+    {x target : I → G → ℤ}
+    {hxsign : ∀ r h, IsSign (x r h)}
+    {hxodd : IsOddMatrix conj x}
+    {g : G} {hg : g ≠ conj g}
+    {i : PosNegMismatch (fun r => x r g) (fun r => target r g)}
+    {j : NegPosMismatch (fun r => x r g) (fun r => target r g)}
+    {P : AtomicSwitchFourFactorProfile
+      conj hconj x target hxsign hxodd g hg i j}
+    (D : AtomicSwitchMonomialTransportData P) :
+    AtomicSwitchOrbitHodgeData P where
+  V := D.V
+  hodgeSubspace := D.hodgeSubspace
+  tensor := D.tensor
+  orbitSpan_le_hodge := D.transport.orbitSpan_le_hodge
 
 /-- Orbit-span containment automatically supplies the raw scalar-conjugate
 stability data needed for descent. -/
