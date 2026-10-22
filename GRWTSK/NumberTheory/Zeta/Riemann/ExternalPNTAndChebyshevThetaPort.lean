@@ -106,7 +106,8 @@ theorem externalPNTAndAsymptotic_to_thetaPNT
       Asymptotics.IsEquivalent Filter.atTop
         (fun x : ℝ => Chebyshev.theta x) (fun x : ℝ => x) := by
     exact hExternal.congr_left
-      (fun x => externalPNTAndPrimeLogSum_eq_theta x)
+      (Filter.Eventually.of_forall
+        (fun x => externalPNTAndPrimeLogSum_eq_theta x))
   have hsmall :
       (fun x : ℝ => Chebyshev.theta x - x) =o[Filter.atTop]
         (fun x : ℝ => x) := by
