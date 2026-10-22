@@ -1,0 +1,27 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-energy-branch-separation-936-v0.1"
+owner_repository = "grwtsk/math"
+issue = 936
+parent_issue = 929
+parent_pr = 930
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_ENERGY_BRANCH_SEPARATION"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredEnergyBranchSeparation"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredEnergyBranchSeparation"
+
+[source_binding]
+stacked_parent_revision = "6b904a4ff0971b0f212e1e17e6dfe64a3cf51a0b"
+candidate_branch = "research/rh-centered-energy-branch-separation-931-20261022"
+theorem_source_commit = "f07c001cc0158827225a56b74dddb7c7997c96b5"
+mathematical_note_commit = "9539cb46b3ff7238b143ebf3a31dbd5067104ae0"
+
+[evidence_states]
+source_draft = true
+centered_fiber_energy_locally_defined = true
+graded_dyadic_target_found_on_ancestry = false
+exact_cross_branch_bridge_bound = false
+rh_strength_transferred = false
+common_branch_comparison_required = true
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
