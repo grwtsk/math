@@ -1,0 +1,313 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-composite-coefficient-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachCompositeCoefficientCore"
+build_target = "GRWTSK.Interfaces.GoldbachCompositeCoefficientCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "d0895acff2e0d1ad4e206d144c6caa75e27aaca6"
+base_tree = "0f7bf68d6fc7bb5c8674042171ab64f12dcfa82a"
+stacked_on_pr = 406
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/goldbach-fejer-core-v0.1.toml"
+inherited_target_blob = "086cf8b99b5cd90b6b5a3c7316d85ae682bfc6a4"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_goldbach_count = "INHERITED_MAIN_SOURCE"
+weighted_positivity_bridge = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+continuous_circle_coefficient_identity = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+finite_rational_arc_geometry = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+canonical_progression_model = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+prime_denominator_coefficient_formula = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+periodized_common_singular_window = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+finite_singular_integral_evaluation = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+fejer_positive_square_and_core_mass = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+general_ramanujan_divisor_formula = "NEW_SOURCE_DRAFT"
+reduced_phase_ramanujan_identification = "NEW_SOURCE_DRAFT"
+composite_denominator_coefficient_formula = "NEW_SOURCE_DRAFT"
+squarefree_support = "NEW_SOURCE_DRAFT"
+coefficient_multiplicativity = "NEW_SOURCE_DRAFT"
+primorial_divisor_expansion = "NEW_SOURCE_DRAFT"
+explicit_finite_denominator_tail = "NEW_SOURCE_DRAFT"
+fejer_negative_coefficient_penalty = "NEW_SOURCE_DRAFT"
+finite_euler_to_fejer_comparison = "NEW_SOURCE_DRAFT"
+euler_tail_terminal_consumer = "NEW_SOURCE_DRAFT"
+uniform_prime_progression_estimate = "NOT_SUPPLIED"
+minor_arc_bound = "NOT_SUPPLIED"
+signed_every_even_residual_bound = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachCompositeCoefficientCore"
+path = "GRWTSK/Interfaces/GoldbachCompositeCoefficientCore.lean"
+source_blob = "5c26f6722c84b9b6d27ac592582347bed7f8dea4"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan"
+path = "GRWTSK/NumberTheory/Primes/GoldbachCompositeRamanujan.lean"
+source_blob = "4cb306df389c8b3150d89a3a1675835ae99f3ab9"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient"
+path = "GRWTSK/NumberTheory/Primes/GoldbachCompositeCoefficient.lean"
+source_blob = "b6b2b2bc492d50b2242a36ed7f4cfcffa27efd3b"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail"
+path = "GRWTSK/NumberTheory/Primes/GoldbachPrimorialEulerTail.lean"
+source_blob = "c6a3bfadd35ecb454ac255f3907344b927afda9c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachCompositeCoefficientControls.lean"
+source_blob = "4b5ac421d79aed8d6eafbf6ed8a137d056ad53c5"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachFejerCore"
+path = "GRWTSK/Interfaces/GoldbachFejerCore.lean"
+source_blob = "bfae2421cfff2a7b82c48d06ff96659250ea9dad"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachFejerBoundary"
+path = "GRWTSK/NumberTheory/Primes/GoldbachFejerBoundary.lean"
+source_blob = "f69ae3558b36bf64a6c3c94859b7755128ed8d0b"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachPrimeCoefficientBridge"
+path = "GRWTSK/NumberTheory/Primes/GoldbachPrimeCoefficientBridge.lean"
+source_blob = "46a4d479e479c018371b96d002c3ec975ba2e775"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/ArithmeticFunction/Moebius.lean"
+blob = "9e6355da4e175f7ff3e135958b96c592633d47bd"
+required_declarations = [
+  "ArithmeticFunction.moebius",
+  "ArithmeticFunction.isMultiplicative_moebius",
+  "ArithmeticFunction.moebius_eq_zero_of_not_squarefree",
+  "ArithmeticFunction.IsMultiplicative.prodPrimeFactors_one_add_of_squarefree"
+]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/ArithmeticFunction/Misc.lean"
+blob = "24db3b4f1f748f3e7144e2eda63cb976f37785c2"
+required_declarations = [
+  "ArithmeticFunction.IsMultiplicative.map_prod_of_subset_primeFactors"
+]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Nat/Totient.lean"
+blob = "59083f41358979b2042f20736a072de5f7bcc87d"
+required_declarations = [
+  "Nat.totient_mul",
+  "Nat.totient_pos"
+]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/Primorial.lean"
+blob = "147e83d499d4d460ddc330bf3966da10a98d7939"
+required_declarations = [
+  "primorial",
+  "primeFactors_primorial",
+  "primorial_dvd_primorial",
+  "squarefree_primorial",
+  "Squarefree.dvd_primorial"
+]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-composite-coefficients.md"
+source_blob = "98da5cae2e8746485c81740d424e5bdcdbb9c8b1"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_names = [
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanDivisorWeight",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanDivisorWeight_apply",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.isMultiplicative_goldbachRamanujanDivisorWeight",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanArithmeticFunction",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanInteger",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.isMultiplicative_goldbachRamanujanArithmeticFunction",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanInteger_eq_sum_divisors",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanInteger_eq_gcd_divisorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanInteger_of_coprime",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanInteger_prime",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachRamanujanInteger_mul_of_coprime",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachDivisorReflection",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachMoebiusCoprimeIndicator",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachMoebiusCoprimeIndicator_eq",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachMultiplePhaseFiber",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachReducedIntegerPhaseSum_eq_moebiusExpansion",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachReducedIntegerPhaseSum_eq_ramanujanInteger",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachReducedIntegerPhaseSum_neg_nat",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachReducedIntegerPhaseSum_neg_target_eq_ramanujanInteger",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeRamanujan.goldbachNormalizedRamanujanCoefficient_of_coprime",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachCompositeCoefficientRational",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_factor",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_formula",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_eq_rational",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_im_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_re",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_eq_zero_of_not_squarefree",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_one",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_formula_prime",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_mul_of_coprime",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachDenominatorCoefficientArithmeticFunction",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachDenominatorCoefficientArithmeticFunction_apply_pos",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.isMultiplicative_goldbachDenominatorCoefficientArithmeticFunction",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.goldbachProgressionDenominatorCoefficient_eq_primeFactorProduct",
+  "GRWTSK.NumberTheory.Primes.GoldbachCompositeCoefficient.norm_goldbachProgressionDenominatorCoefficient_eq_primeFactorProduct",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimeCutoff_eq_primesLE",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachDenominatorCoefficientRangeSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialCoefficientDivisorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialShortDivisors",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialTailDivisors",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialShortCoefficientSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialCoefficientTail",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialCoefficientTailNorm",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFiniteCoefficientEulerProduct_eq_primorialDivisorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialCoefficientDivisorSum_eq_short_add_tail",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialShortDivisors_subset_denominatorRange",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.squarefree_dvd_primorial_of_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialShortCoefficientSum_eq_denominatorRangeSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFiniteCoefficientEulerProduct_eq_range_add_tail",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.norm_goldbachPrimorialCoefficientTail_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachPrimorialCoefficientTailNorm_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerNegativeCoefficientPenalty",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerCoreMain_le_windowUpper",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerNegativeCoefficientPenalty_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerDenominatorLowerTerm_eq_core_sub_penalty",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerDenominatorLowerSum_eq_core_mul_range_sub_penalty",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerEulerTailError",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachFejerEulerTailError_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachCoefficientTruncatedMainScale_sub_fejerEulerTailError_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachPrimorialEulerTail.goldbachCount_pos_of_fejerEulerTail_certificate",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.ramanujan_six_ten_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.ramanujan_six_eighteen_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.coefficient_four_zero_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.coefficient_six_multiplicative_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.coefficient_six_ten_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.coefficient_six_eighteen_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.primorial_three_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.primorial_tail_three_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.euler_range_tail_ten_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.coefficient_tail_three_ten_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.euler_value_three_ten_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.tail_norm_nonnegative_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.fejer_euler_tail_comparison_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.finite_tail_not_automatic_margin_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.composite_coefficients_not_goldbach_witness",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachCompositeCoefficientControls.strict_euler_tail_margin_rejected",
+]
+
+[hostile_controls]
+source = "GRWTSK/NumberTheory/Primes/Checks/GoldbachCompositeCoefficientControls.lean"
+source_blob = "55a1419c8d56e535adbfa005af88d790620ef79d"
+required = [
+  "nonsquarefree denominator four contributes zero",
+  "squarefree denominator six preserves multiplicative sign",
+  "cutoff three omits denominator six in an explicit finite tail",
+  "finite Euler product equals short denominator sum plus tail",
+  "Euler-tail comparison does not automatically satisfy a strict margin",
+  "composite coefficient identities can coexist with zero exact Goldbach count",
+  "equality is rejected at the terminal margin"
+]
+
+[static_checks]
+manifest_parsed = true
+public_declaration_count = 76
+source_blob_count = 7
+source_newline_check = "PASS"
+whitespace_check = "PASS"
+delimiter_balance_check = "PASS"
+comments_and_strings_check = "PASS"
+prohibited_tokens_check = "PASS"
+prohibited_tokens = [
+  "sorry",
+  "sorryAx",
+  "admit",
+  "axiom",
+  "unsafe",
+  "native_decide",
+  "run_tac",
+  "implemented_by",
+  "#eval",
+  "#reduce"
+]
+
+[finite_diagnostics]
+language = "Python exact integer and rational arithmetic with finite complex phase checks"
+assertions = 296623
+coverage = [
+  "reduced-residue phase sums against the divisor Ramanujan formula",
+  "coprime Ramanujan sums against the Moebius function",
+  "squarefree support and nonsquarefree vanishing",
+  "Ramanujan and denominator-coefficient multiplicativity",
+  "prime denominator specialization",
+  "finite Euler product against the primorial divisor sum",
+  "short denominator sum plus explicit primorial tail",
+  "tail norm and sign-aware Fejer penalty",
+  "finite Euler-to-Fejer comparison inequality"
+]
+is_lean_execution = false
+is_kernel_audit = false
+is_acceptance_receipt = false
+
+[nonclaims]
+lean_elaboration = "NOT_RUN"
+exact_declaration_types = "NOT_AUDITED"
+transitive_axiom_audit = "NOT_RUN"
+hostile_lean_replay = "NOT_RUN"
+external_acceptance = "NOT_RECEIVED"
+merge = "NOT_PERFORMED"
+infinite_singular_series = "NOT_SUPPLIED"
+prime_number_theorem_in_progressions = "NOT_SUPPLIED"
+minor_arc_estimate = "NOT_SUPPLIED"
+finite_exception_result = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
