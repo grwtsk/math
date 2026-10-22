@@ -114,17 +114,100 @@ theorem complexEmbeddingAt_galoisComplexConj
   exact IsCMField.complexEmbedding_complexConj
     E ((baseComplexEmbedding E).comp σ.toRingHom) x
 
+/-- Anti-invariant trace-polarization data is purely imaginary at every
+selected complex embedding. -/
+theorem CMTracePolarization.TracePolarizationData.embedding_re_zero
+    (P : CMTracePolarization.TracePolarizationData E)
+    (σ : E ≃ₐ[ℚ] E) :
+    (complexEmbeddingAt E σ P.xi).re = 0 := by
+  have h := congrArg Complex.re
+    (show conj (complexEmbeddingAt E σ P.xi) =
+        - complexEmbeddingAt E σ P.xi by
+      rw [← complexEmbeddingAt_galoisComplexConj E σ P.xi,
+        P.antiInvariant, map_neg])
+  simp only [Complex.conj_re, Complex.neg_re] at h
+  linarith
+
+/-- A nonzero anti-invariant seed has nonzero imaginary part at every
+complex embedding. -/
+theorem CMTracePolarization.TracePolarizationData.embedding_im_ne_zero
+    (P : CMTracePolarization.TracePolarizationData E)
+    (σ : E ≃ₐ[ℚ] E) :
+    (complexEmbeddingAt E σ P.xi).im ≠ 0 := by
+  intro him
+  have hz : complexEmbeddingAt E σ P.xi = 0 := by
+    apply Complex.ext
+    · simpa [P.embedding_re_zero E σ]
+    · simpa [him]
+  exact P.xi_ne_zero ((complexEmbeddingAt E σ).injective (by simpa using hz))
+
+/-- A conjugation-fixed factor has real value at every complex embedding. -/
+theorem embedding_im_zero_of_conj_fixed
+    {f : E} (hf : galoisComplexConj E f = f)
+    (σ : E ≃ₐ[ℚ] E) :
+    (complexEmbeddingAt E σ f).im = 0 := by
+  have h := congrArg Complex.im
+    (show conj (complexEmbeddingAt E σ f) =
+        complexEmbeddingAt E σ f by
+      rw [← complexEmbeddingAt_galoisComplexConj E σ f, hf])
+  simp only [Complex.conj_im] at h
+  linarith
+
+/-- Imaginary coordinates of a fixed-factor rescaling multiply by the real
+embedding of the fixed factor. -/
+theorem imagAt_mul_of_conj_fixed
+    {f x : E} (hf : galoisComplexConj E f = f)
+    (σ : E ≃ₐ[ℚ] E) :
+    imagAt E (f * x) σ =
+      (complexEmbeddingAt E σ f).re * imagAt E x σ := by
+  simp only [imagAt, map_mul, Complex.mul_im,
+    embedding_im_zero_of_conj_fixed E hf σ, zero_mul, add_zero]
+
+/-- Real sign condition required of a conjugation-fixed rescaling factor
+relative to one anti-invariant seed. -/
+def FixedRescalingSignCondition
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (f : E) : Prop :=
+  ∀ σ : E ≃ₐ[ℚ] E,
+    0 < -(v.value σ : ℝ) *
+      (complexEmbeddingAt E σ f).re * imagAt E P.xi σ
+
+/-- A nonzero conjugation-fixed rescaling satisfying the real sign condition
+produces the manuscript's exact sign-controlled anti-invariant xi. -/
+def signControlledXiOfFixedRescaling
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (f : E)
+    (hf : galoisComplexConj E f = f)
+    (hf0 : f ≠ 0)
+    (hsign : FixedRescalingSignCondition E v P f) :
+    SignControlledXi E v where
+  xi := f * P.xi
+  antiInvariant := by
+    rw [map_mul, hf, P.antiInvariant]
+    ring
+  coefficient_pos := by
+    intro σ
+    rw [imagAt_mul_of_conj_fixed E hf σ]
+    simpa [FixedRescalingSignCondition, mul_assoc] using hsign σ
+
+/-- The rescaled xi is nonzero already at the algebraic level. -/
+theorem signControlledXiOfFixedRescaling_xi_ne_zero
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (f : E)
+    (hf : galoisComplexConj E f = f)
+    (hf0 : f ≠ 0)
+    (hsign : FixedRescalingSignCondition E v P f) :
+    (signControlledXiOfFixedRescaling E v P f hf hf0 hsign).xi ≠ 0 := by
+  exact mul_ne_zero hf0 P.xi_ne_zero
 /-- Anti-invariance of xi makes every embedded value purely imaginary. -/
 theorem SignControlledXi.embedding_re_zero
     {v : CMNumberFieldIndex.OddSignRow E}
     (X : SignControlledXi E v) (σ : E ≃ₐ[ℚ] E) :
-    (complexEmbeddingAt E σ X.xi).re = 0 := by
-  have h := congrArg Complex.re
-    (show conj (complexEmbeddingAt E σ X.xi) =
-        - complexEmbeddingAt E σ X.xi by
-      rw [← complexEmbeddingAt_galoisComplexConj E σ X.xi, X.antiInvariant, map_neg])
-  simp only [Complex.conj_re, Complex.neg_re] at h
-  linarith
+    (complexEmbeddingAt E σ X.xi).re = 0 :=
+  X.toTracePolarizationData.embedding_re_zero E σ
 
 /-- Formal Weil factor attached to a sign label. -/
 def weilFactor
