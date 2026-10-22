@@ -1,0 +1,33 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-boundary-localization-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "7c32674ab7fbd66f780c301a69af186885c3c786"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / BOUNDARY_COUNTING_PROVED / TRIANGULAR_LOCALIZATION_OPEN"
+
+[audit]
+old_boundary_claim_vacuous = true
+zero_witness_proved = true
+
+[boundary_counting]
+interval_mass_bound = "sum log p <= H*log(4X)"
+localization_width = "ceil(X/N)"
+arithmetic_budget_closed = true
+
+[frontier]
+claim = "TriangularBoundaryLocalizationClaim"
+kernel_localization = "open"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+BOUNDARY_COUNTING_PROVED = true
+TRIANGULAR_LOCALIZATION_PROVED = false
+THREE_QUARTER_POWER_SAVING_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
