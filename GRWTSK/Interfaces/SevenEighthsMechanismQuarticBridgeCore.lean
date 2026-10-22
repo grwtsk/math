@@ -83,6 +83,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularAuto
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeSymmetricTriangularKernelDomainControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularPairPartitionControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularOrderRegionReindexingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaPrimeTriangularAutocorrelationAssemblyControls
 
 set_option autoImplicit false
 
