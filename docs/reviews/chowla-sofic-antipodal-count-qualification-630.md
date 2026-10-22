@@ -51,3 +51,26 @@ was executed as part of this qualification note.
 The mathematical identity is finite and does not
 imply an asymptotic antipodal collision estimate,
 Chowla cancellation, GUE or RH.
+
+
+## Exact-head qualification check — 2026-10-22
+
+PR #638 head `5d61dd6f4b0b606bdefad2f4476a0c7a77bb1730`
+was inspected for pull-request-triggered workflow runs. The
+GitHub workflow-run query returned **zero matching runs**.
+This is not evidence of compilation failure or success.
+
+The later canonical-energy collision-count theorem additions
+consume `dyadicSignedMixedEnergy_eq_antipodal_count`,
+so their trust remains conditional on elaboration of that
+entire imported proof chain.
+
+Priority remains an authorized, clean pinned Lean replay
+of `FiniteAntipodalWalshExpansion.lean` and
+`LiouvilleAntipodalPairCount.lean`, including exact theorem
+types and transitive axiom inspection. The earlier source-level
+declaration and no-explicit-sorry checks cannot substitute
+for this qualification.
+
+**NO_MATCHING_PR_WORKFLOW_RUN / NOT_COMPILED /
+NOT_KERNEL_AUDITED / NO_MERGE_AUTHORIZATION.**
