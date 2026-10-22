@@ -1543,3 +1543,83 @@ to create this cancellation.
 **Evidence:** SOURCE_DRAFT / NOT_RUN /
 NOT_KERNEL_AUDITED / CANONICAL_SUBTYPE_IMAGE_DRAFTED /
 ODD_RESIDUAL_SUPPLIER_OPEN / NO_GUE_OR_RH_EDGE.
+
+## 23. Exact signed dyadic Liouville interaction and antipodal-pair criterion
+
+**2026-10-22.** The canonical odd-lifted arithmetic
+energy comparison now has a signed exact refinement:
+
+```text
+H'={2h+1 | h∈H}, M>0
+X(M,H) := sum_(nonempty S⊆H) (-1)^|S| C_S(M) R_S(M).
+
+4 E_lambda(2M,H') =
+   E_lambda(M,H) + E_oddResidual(M,H) + 2 X(M,H).
+```
+
+This new source-only arithmetic result lives in
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleDyadicSignedPairing.lean`,
+blob `c7b4feffad2c7f7fdfc06ba79e0f9295ad831d90`,
+adding seven proposed theorem heads and two definitions.
+It preserves the entire finite subtype powerset and
+the exact factor `(-1)^|S|`, one minus sign
+per selected shift.
+
+Unlike the preceding convexity upper bound,
+this identity displays cancellation between
+a smaller-scale source and an odd-affine
+residual. The concrete finite Liouville
+fixture `M=2,H={1},H'={3}` has
+`E_source=E_residual=1`,
+`X=-1`, and `E_lifted=0`.
+At `M=1,H={0}`, the signed interaction is
+positive and all three energies equal one:
+there is no unconditional contraction.
+
+A new UNINHABITED `DyadicSignedMixedBudget`
+requires the exact combination
+`E_source+E_residual+2X≤4 epsilon`.
+Its conditional cyclic-TV consumer retains
+the strict lifted collar `max(H')<2M`
+and outputs `max(H')/(2M)+sqrt(epsilon)/2`.
+This repackages the **same difficult arithmetic
+energy estimate** and does not prove it.
+
+A second mathematical interpretation
+is derived on paper: with `q=2^|H|`, let
+`A` count ordered source/odd-residual
+pairs whose signs are **opposite at every
+coordinate**. Then
+
+```text
+X = q A/M² - 1.
+```
+
+This yields a necessary obstruction
+`E_lifted≥(E_source+E_residual-2)/4`.
+Neither the antipodal count nor this lower
+bound has been declared as a Lean theorem
+in the present increment. They are explicit
+follow-up arithmetic/combinatorial suppliers,
+not evidence of general Chowla cancellation.
+
+Independent passive thirteen-module target:
+`verification/liouville-dyadic-signed-pairing-630-v0.1.toml`
+selects 108 theorem and 46 definition heads.
+Full note:
+`docs/reviews/chowla-sofic-dyadic-signed-pairing-630.md`.
+Bounded exact-integer tests: 768 configurations,
+5,056 nonempty Walsh character identities and
+1,073,280 ordered antipodal pairs, zero
+discrepancies. They cannot replace a kernel audit.
+
+**Remaining genuine arithmetic supplier:**
+small canonical all-order odd-lifted
+Liouville energy at the selected
+growing shift/sampling scope, potentially
+via signed interaction and antipodal collisions,
+not merely finite reindexing.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+SIGNED_MIXED_CANCELLATION_OPEN / ANTIPODAL_COUNT_PAPER_ONLY /
+NO_GUE_OR_RH_EDGE.
