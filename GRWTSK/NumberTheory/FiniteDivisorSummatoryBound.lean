@@ -1,6 +1,8 @@
 /- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI ChatGPT. -/
 import Mathlib.Analysis.PSeries
+import Mathlib.Data.Nat.Factorization.Basic
+import Mathlib.NumberTheory.Divisors
 import Mathlib.NumberTheory.Harmonic.Bounds
 import Mathlib.Tactic
 
