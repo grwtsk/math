@@ -1,3 +1,6 @@
+# Original stacked parent: 62653bf7a2763315b2e4f4ec5bff6cdb78af63e5, tree 14d87b941c630aea4671d4615672e2673d848dd7.
+# Historical PR #352 target Git blob: 1f2283262620b0a5080045cd674a82a02fbce733.
+# Its original inherited PR #349 target blob was c4494dddd9ffecd54bb77c3a51c3db90b3f0ecc7.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-cumulative-mertens-square-350-v0.1"
 owner_repository = "grwtsk/math"
@@ -16,10 +19,10 @@ lean_toolchain_file = "lean-toolchain"
 lake_manifest_file = "lake-manifest.json"
 
 [source_binding]
-stacked_parent_revision = "62653bf7a2763315b2e4f4ec5bff6cdb78af63e5"
-stacked_parent_tree = "14d87b941c630aea4671d4615672e2673d848dd7"
+stacked_parent_revision = "cc0e5d4c4232b6280fd22d6131c0a0eadbc3efb2"
+stacked_parent_tree = "abf2199eb4a41153aa541317671cf41cb485110d"
 new_module_path = "GRWTSK/NumberTheory/Moebius/CumulativeWeightedMertensSquare.lean"
-new_module_git_blob = "8e49bbe86c216b82fac5ecbdc23adfeea292f6b8"
+new_module_git_blob = "304c361d768d22bcdadf9333fa98cc76a075b9f2"
 mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/cumulative-weighted-mertens-square.md"
 mathematical_note_git_blob = "b6205362a0d912770691ebb2152f3e4bffb42ec6"
 namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
@@ -58,12 +61,12 @@ private_helper_count = 0
 
 [[inherited_targets]]
 path = "verification/rh-all-damping-mean-square-347-v0.1.toml"
-git_blob = "c4494dddd9ffecd54bb77c3a51c3db90b3f0ecc7"
+git_blob = "ddd17f5cd31de30d60a2c30b333a182384cb0974"
 status = "STACKED_SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Moebius/AllDampingMertensMeanSquare.lean"
-git_blob = "9e56686dcc4fa0c0aa220b7e242a81d5b3ff4e8e"
+git_blob = "923ed2cb410b9df4eeec45c69530df89a630d3f5"
 status = "STACKED_SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
 
 [[upstream_sources]]

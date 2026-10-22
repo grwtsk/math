@@ -110,8 +110,10 @@ theorem finite_abel_sum (b w : ℕ → ℝ) (N : ℕ) :
   induction N with
   | zero => simp
   | succ N ih =>
-      simp only [Nat.succ_eq_add_one, Finset.sum_range_succ]
-      rw [ih]
+      rw [Finset.sum_range_succ (fun n => b n * w n) (N + 1), ih,
+        Finset.sum_range_succ b (N + 1),
+        Finset.sum_range_succ
+          (fun n => (∑ k ∈ Finset.range (n + 1), b k) * (w n - w (n + 1))) N]
       ring
 
 /-- Abel summation for the actual cumulative Mertens-square density. -/
@@ -125,8 +127,8 @@ theorem weightedMertens_partial_sum_abel (ε : ℝ) (N : ℕ) :
         weightedMertensCumulative (n + 1) *
           (((n + 1 : ℕ) : ℝ) ^ (-ε) -
             ((n + 2 : ℕ) : ℝ) ^ (-ε)) := by
-  simpa only [weightedMertensCumulative, Nat.cast_add, Nat.cast_one]
-    using finite_abel_sum weightedMertensBaseTerm
+  simpa only [weightedMertensCumulative, Nat.cast_add, Nat.cast_one,
+    Nat.cast_ofNat, add_assoc, one_add_one_eq_two] using finite_abel_sum weightedMertensBaseTerm
       (fun n : ℕ => ((n + 1 : ℕ) : ℝ) ^ (-ε)) N
 
 /-- A genuinely summable positive damping bounds every undamped finite prefix
@@ -224,7 +226,7 @@ theorem weighted_partial_sum_bound_of_subpolynomial
   refine ⟨K, hK, ?_⟩
   intro M
   cases M with
-  | zero => simp [K]
+  | zero => simpa only [Finset.range_zero, Finset.sum_empty] using hK
   | succ N =>
       rw [weightedMertens_partial_sum_abel ε N]
       have hterminal :
@@ -243,7 +245,6 @@ theorem weighted_partial_sum_bound_of_subpolynomial
           _ = C * ((N + 1 : ℕ) : ℝ) ^ (δ - ε) := by
             rw [mul_assoc, ← Real.rpow_add (by positivity)]
             congr 2
-            ring
           _ ≤ C * 1 := by
             apply mul_le_mul_of_nonneg_left _ hC
             simpa only [Real.rpow_zero] using
@@ -293,7 +294,7 @@ theorem weighted_partial_sum_bound_of_subpolynomial
                 mul_le_mul_of_nonneg_left hdrop
                   (mul_nonneg hC (Real.rpow_nonneg hx.le _))
               _ = (C * ε) * x ^ (δ - ε - 1) := by
-                rw [← Real.rpow_add hx]
+                rw [show δ - ε - 1 = δ + (-ε - 1) by ring, Real.rpow_add hx]
                 ring
               _ = (C * ε) * p n := by
                 dsimp [p, x]
