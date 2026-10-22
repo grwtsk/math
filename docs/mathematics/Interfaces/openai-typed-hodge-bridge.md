@@ -2075,6 +2075,36 @@ This leaves no independent arithmetic naturality theorem and no independent asse
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4at. The assembly side is now one presentation object
+
+The intermediate assembly interfaces are no longer required at call sites.
+
+`CMFourFactorSwitchGeometry.lean` now adds:
+
+~~~text
+FourfoldMultilinearAlgebraicAssembly.toMonomialAssemblyData
+FourfoldMultilinearAlgebraicAssembly.scalarConjugate_mem_transportedLine
+~~~
+
+A single `FourfoldMultilinearAlgebraicAssembly` contains exactly the remaining presentation data:
+
+1. fourfold (mathbf Q)-multilinearity;
+2. the canonical pure-factor formula.
+
+From that one object, local source now constructs automatically:
+
+- `FourfoldAlgebraicAssemblyData`;
+- `FourfoldAlgebraicAssemblyEquivariance`;
+- coefficient inclusion into (mathbf C);
+- `FourfoldMonomialAssemblyData`;
+- scalar-conjugate membership in the transported monomial line.
+
+Thus the entire scalar-conjugation branch has been collapsed to one presentation interface. No separate assembly-equality theorem and no separate Galois-equivariance theorem remain as mathematical inputs.
+
+The remaining independent work is on the Hodge comparison side: identify the concrete geometric switched construction with this presented multilinear assembly and identify its assembled generator with the image of the actual fourfold (H^{2,2}) tensor under the coefficient/change-of-realization comparison.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
