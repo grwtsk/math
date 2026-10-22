@@ -89,4 +89,56 @@ theorem pairedAssembly_unique
     (hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).trans
       (pairedAssembly_pure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).symm
 
+/-!
+## Adapter for the archived finite-CM assembly source
+
+The source in PR #502 used the same left-associated paired and separated
+tensor carriers, but its iterated coefficient multiplication incorrectly
+applied `lTensor` to a left-associated coefficient tensor. The corrected
+rational-linear operation necessarily uses `rTensor`. The following
+minimal algebraic adapter gives the normalized meaning of that original
+formula without importing its geometric CM carrier or Hodge witnesses.
+-/
+
+/-- The archived CM coefficient multiplication, with its tensor direction
+normalized to the actual left-associated source type. -/
+def originalNormalizedCoefficientMulFour : Coefficients E →ₗ[ℚ] E :=
+  coefficientMul E ∘ₗ
+    ((coefficientMul E ∘ₗ
+      (coefficientMul E).rTensor E).rTensor E)
+
+/-- Exact equality of the normalized original multiplication with the
+independently checked fourfold multiplication supplier. -/
+theorem originalNormalizedCoefficientMulFour_eq :
+    originalNormalizedCoefficientMulFour E = coefficientMulFour E := rfl
+
+/-- Normalized original separated assembly, retaining its original target. -/
+def originalNormalizedSeparatedAssembly : Separated E →ₗ[ℚ] Output E :=
+  (originalNormalizedCoefficientMulFour E).rTensor (Vectors E)
+
+/-- Original finite assembly after correcting tensor direction, and using
+the already checked canonical shuffle for the original paired carrier. -/
+def originalNormalizedPairedAssembly : Paired E →ₗ[ℚ] Output E :=
+  originalNormalizedSeparatedAssembly E ∘ₗ (shuffleFour ℚ E).toLinearMap
+
+/-- The normalized original assembly reproduces the archived finite-CM
+pure coefficient/vector multiplication formula. -/
+theorem originalNormalizedPairedAssembly_pure
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E) :
+    originalNormalizedPairedAssembly E
+        (pairedPure ℚ E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simpa [originalNormalizedPairedAssembly,
+    originalNormalizedSeparatedAssembly,
+    originalNormalizedCoefficientMulFour_eq] using
+    pairedAssembly_pure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Concrete declaration equality: the normalized original finite paired
+assembly is exactly the checked canonical specialization. -/
+theorem originalNormalizedPairedAssembly_eq :
+    originalNormalizedPairedAssembly E = pairedAssembly E := by
+  exact pairedAssembly_unique E (originalNormalizedPairedAssembly E)
+    (originalNormalizedPairedAssembly_pure E)
+
 end GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly
