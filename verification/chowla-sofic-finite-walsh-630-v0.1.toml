@@ -274,6 +274,10 @@ id = "nonnegative-envelope"
 must_preserve = "epsilon >= 0 is part of the envelope; pointwise |correlation| <= epsilon alone must not be silently used for a negative error budget."
 
 [[hostile_controls]]
+id = "finite-sample-support-feasibility"
+must_preserve = "Paper-only obstruction: an N-root empirical law on q=2^k patterns has TV at least max(0, 1-N/q) and chi-square energy at least q/N-1. Any claim of small error with q much larger than N needs rejection; this obstruction is NOT yet a Lean theorem."
+
+[[hostile_controls]]
 id = "no-new-arithmetic-estimate"
 must_preserve = "OrdinaryAllOrderChowlaAtScale is a declared proposition, NOT inhabited by the external 2026 fixed two-point result, and no log/ordinary or all-order transfer is constructed."
 
