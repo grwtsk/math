@@ -41,8 +41,16 @@ theorem qIndex_typeOfSign_of_isSign (z : ℤ) (hz : IsSign z) :
   rcases hz with rfl | rfl <;>
     norm_num [qIndex, typeOfSign, holomorphicIndex]
 
+/-- A typed family of selected embedding-line witnesses.
+
+This record deliberately does not construct the lines as linear subspaces of a
+rational Hodge structure. The opaque line type and its nonemptiness record the
+existence of a selected line witness at each coordinate; the actual
+linear-subspace/Hodge-module realization remains an upstream premise. -/
 structure EmbeddingLineRealization
     (G : Type*) (conj : G → G) (v : OddSignRow G conj) where
+  Line : G → Type*
+  line_nonempty : ∀ g, Nonempty (Line g)
   typeAt : G → WeightOneHodgeType
   typeAt_eq : ∀ g, typeAt g = typeOfSign (v.value g)
 
