@@ -71,4 +71,56 @@ theorem reference_matchings_distinct :
     matching02_13 ≠ matching03_12 := by
   decide
 
+
+/-- The relabeling action preserves the three concrete perfect matchings.
+This is a finite proposition about 24 permutations and three matchings. -/
+theorem threeMatchings_closed :
+    ∀ σ : Equiv.Perm Vertex, ∀ m ∈ threeMatchings,
+      relabel σ m ∈ threeMatchings := by
+  decide
+
+/-- The genuine three-element carrier, without identifying it arbitrarily
+with Fin 3. -/
+def PerfectMatching : Type := {m : Matching // m ∈ threeMatchings}
+
+instance : Fintype PerfectMatching := inferInstance
+instance : DecidableEq PerfectMatching := inferInstance
+
+/-- Every vertex permutation induces a permutation of perfect matchings. -/
+def matchingPerm (σ : Equiv.Perm Vertex) : Equiv.Perm PerfectMatching where
+  toFun m := ⟨relabel σ m.1, threeMatchings_closed σ m.1 m.2⟩
+  invFun m := ⟨relabel σ⁻¹ m.1, threeMatchings_closed σ⁻¹ m.1 m.2⟩
+  left_inv m := by
+    apply Subtype.ext
+    change relabel σ⁻¹ (relabel σ m.1) = m.1
+    rw [← relabel_mul, inv_mul_cancel, relabel_one]
+  right_inv m := by
+    apply Subtype.ext
+    change relabel σ (relabel σ⁻¹ m.1) = m.1
+    rw [← relabel_mul, mul_inv_cancel, relabel_one]
+
+/-- The actual S₄ action on the three matchings as a homomorphism. -/
+def matchingActionHom :
+    Equiv.Perm Vertex →* Equiv.Perm PerfectMatching where
+  toFun := matchingPerm
+  map_one' := by
+    ext m
+    apply Subtype.ext
+    exact relabel_one m.1
+  map_mul' σ τ := by
+    ext m
+    apply Subtype.ext
+    exact relabel_mul σ τ m.1
+
+/-- The induced permutation is not the trivial action. -/
+theorem matchingActionHom_nontrivial :
+    matchingActionHom (Equiv.swap (1 : Vertex) 2) ≠ 1 := by
+  intro h
+  have hh := congrArg (fun f : Equiv.Perm PerfectMatching =>
+    f ⟨matching01_23, by decide⟩) h
+  have hfirst := swap_takes_first_to_second
+  have hne := reference_matchings_distinct.1
+  apply hne
+  exact congrArg Subtype.val hh |>.symm.trans hfirst
+
 end GRWTSK.Algebra.QuarticMatchingAction
