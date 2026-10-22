@@ -154,7 +154,7 @@ The source range equality above identifies this with the ACTUAL
 parent CandidateFirstHomology quotient rather than a new quotient. -/
 def shortConcreteHomologyLinearEquiv (k : ℕ) :
     ((sourcedShortComplex k).moduleCatLeftHomologyData.H :
-      ModuleCat ℤ) ≃ₗ[ℤ] CandidateFirstHomology k := by
+      Type) ≃ₗ[ℤ] CandidateFirstHomology k := by
   change (OneCycleSubmodule k ⧸
       LinearMap.range (sourcedShortComplex k).moduleCatToCycles)
       ≃ₗ[ℤ] CandidateFirstHomology k
