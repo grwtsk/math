@@ -41,7 +41,21 @@ noncomputable def rationalBasis : Module.Basis (Fin n) ℚ E :=
 /-- A lattice vector is a rational vector whose coordinates in the selected
 basis are integers. -/
 def latticeVector (a : Fin n → ℤ) : E :=
-  ∑ i, (a i : ℚ) • rationalBasis E i
+  (rationalBasis E).equivFun.symm (fun i => (a i : ℚ))
+
+theorem latticeVector_eq_sum (a : Fin n → ℤ) :
+    latticeVector E a =
+      ∑ i, (a i : ℚ) • rationalBasis E i := by
+  exact (Basis.equivFun_symm_apply (rationalBasis E) (fun i => (a i : ℚ)))
+
+/-- Integer coordinates embed injectively into the rational vector space. -/
+theorem latticeVector_injective :
+    Function.Injective (latticeVector E) := by
+  intro a b hab
+  apply funext
+  intro i
+  exact_mod_cast DFunLike.congr_fun
+    ((rationalBasis E).equivFun.injective hab) i
 
 /-- Matrix of the rational trace pairing in the selected rational basis. -/
 def pairingMatrix
@@ -132,7 +146,8 @@ theorem tracePairing_latticeVector_eq_coordinate
     (a b : Fin n → ℤ) :
     tracePairing E X.xi (latticeVector E a) (latticeVector E b) =
       rationalCoordinatePairing E X a b := by
-  simp [latticeVector, rationalCoordinatePairing, pairingMatrix,
+  rw [latticeVector_eq_sum E a, latticeVector_eq_sum E b]
+  simp [rationalCoordinatePairing, pairingMatrix,
     tracePairing, Finset.mul_sum, Finset.sum_mul, map_sum, map_smul,
     Algebra.smul_def, mul_assoc, mul_left_comm, mul_comm]
 
@@ -168,6 +183,7 @@ structure IntegralLatticePolarization
   scale : ℕ
   scale_ne_zero : scale ≠ 0
   vector : (Fin n → ℤ) → E
+  vector_injective : Function.Injective vector
   pairing : (Fin n → ℤ) → (Fin n → ℤ) → ℤ
   scaled_pairing :
     ∀ a b,
@@ -183,6 +199,7 @@ noncomputable def canonicalIntegralLatticePolarization
   scale := latticeScale E X
   scale_ne_zero := latticeScale_ne_zero E X
   vector := latticeVector E
+  vector_injective := latticeVector_injective E
   pairing := integralPairing E X
   scaled_pairing := scaled_tracePairing_lattice_integral E X
   alternating := integralPairing_self E X
