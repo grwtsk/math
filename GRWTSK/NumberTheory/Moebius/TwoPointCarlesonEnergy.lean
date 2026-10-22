@@ -90,7 +90,7 @@ theorem alignedDyadicScaleMaximum_le_succ
   unfold alignedDyadicScaleMaximum
   refine Finset.sup'_le _ _ ?_
   intro q hq
-  apply Finset.le_sup'
+  apply Finset.le_sup' (fun t => |alignedDyadicBlockSum a r t|) (b := q)
   apply Finset.mem_range.mpr
   have hq' := Finset.mem_range.mp hq
   have hsub : m + 1 - r = (m - r) + 1 := by omega
@@ -108,7 +108,8 @@ theorem alignedDyadicScaleMaximum_shifted_half_le_succ
   refine Finset.sup'_le _ _ ?_
   intro q hq
   rw [alignedDyadicBlockSum_shifted_half a hr]
-  apply Finset.le_sup'
+  apply Finset.le_sup' (fun t => |alignedDyadicBlockSum a r t|)
+    (b := 2 ^ (m - r) + q)
   apply Finset.mem_range.mpr
   have hq' := Finset.mem_range.mp hq
   have hsub : m + 1 - r = (m - r) + 1 := by omega
@@ -343,7 +344,7 @@ theorem finitePrefixSum_sq_le_alignedDyadicCarlesonEnergy
           alignedDyadicScaleMaximum m m a ^ 2 := htop
       _ ≤ alignedDyadicCarlesonEnergy m a := htopEnergy
       _ ≤ ((m : ℝ) + 1) * alignedDyadicCarlesonEnergy m a := by
-        nlinarith [Nat.cast_nonneg m]
+        nlinarith [show (0 : ℝ) ≤ (m : ℝ) from Nat.cast_nonneg m]
   · have hproper : N < 2 ^ m := lt_of_le_of_ne hN hfull
     have hprefix :=
       finitePrefixSum_sq_le_properCarlesonEnergy m a N hproper
@@ -469,7 +470,7 @@ theorem mertensTwoPointCarlesonSingletonSum_le_endpoint
       alignedDyadicScaleMaximum (j + 1) 0
           (paddedTwoPointSequence moebiusReal moebiusReal j h) ^ 2 ≤ 1 := by
     intro h _hh
-    exact (sq_le_sq₀
+    simpa only [one_pow] using (sq_le_sq₀
       (alignedDyadicScaleMaximum_nonneg (j + 1) 0
         (paddedTwoPointSequence moebiusReal moebiusReal j h))
       zero_le_one).2
@@ -480,7 +481,7 @@ theorem mertensTwoPointCarlesonSingletonSum_le_endpoint
       unfold mertensTwoPointCarlesonSingletonSum
       simpa [Y] using Finset.sum_le_sum hsquare
     _ = (((Finset.Ico 1 Y).card : ℕ) : ℝ) := by simp
-    _ = ((Y - 1 : ℕ) : ℝ) := by rw [Finset.card_Ico]
+    _ = ((Y - 1 : ℕ) : ℝ) := by rw [Nat.card_Ico]
     _ ≤ (Y : ℝ) := by exact_mod_cast Nat.sub_le Y 1
     _ = ((2 ^ (j + 1) : ℕ) : ℝ) := by rfl
 
@@ -513,7 +514,8 @@ theorem mertensTwoPointPrefixMax_sq_le_twoPointCarlesonEnergy
       simpa [twoPointDyadicPrefixMaximum] using hcarleson
     _ = ((j : ℝ) + 2) *
         twoPointCarlesonEnergy moebiusReal moebiusReal j h := by
-      simp [twoPointCarlesonEnergy, Nat.cast_add]
+      dsimp [twoPointCarlesonEnergy]
+      push_cast
       ring
 
 /-- Summing the shift-wise comparison gives the exact finite connection to the

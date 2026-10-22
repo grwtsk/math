@@ -122,9 +122,10 @@ Three finite observables were compared.
 | One selected binary path for each prefix | canonical prefix maximum | each individual prefix is controlled by its own selected block squares | finite but consumer-dependent; does not expose one source-side observable without another supremum | clarifies the decomposition but is less reusable as an arithmetic supplier |
 | Weighted Carleson packing or variation norm | canonical prefix maximum | a weighted packing/variation estimate controls all prefixes | additional weights, stopping rules, or variation theorems required | may be useful if max-per-scale remains arithmetically too strong |
 
-The max-per-scale observable is the weakest of these that is independent of a
+The max-per-scale observable is selected here because it is independent of a
 particular prefix, controls every prefix, and removes the known singleton-mass
-obstruction without importing a probabilistic or asymptotic theorem.
+obstruction without importing a probabilistic or asymptotic theorem. No
+minimality or comparison theorem among these candidate observables is asserted.
 
 No classical Carleson embedding theorem is imported. “Carleson energy” is the
 repository name for this finite max-per-scale square observable.
