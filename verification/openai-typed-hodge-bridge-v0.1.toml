@@ -1084,3 +1084,45 @@ status = "OPEN"
 nonclaims = [
   "no local Hodge-Riemann ample-class pairing theorem at this geometric scope"
 ]
+
+
+[[local_target]]
+name = "positive conjugate middle pairing is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.PositiveConjugatePairing.pairing_scaled_conjugate_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "positive energy on nonzero vectors",
+  "pairing with conjugate partner equals complexified positive energy",
+  "right-linearity of the pairing",
+  "nonzero scalar relating gamma to the conjugate partner"
+]
+nonclaims = [
+  "abstract positivity implication only",
+  "does not identify the manuscript ample-class pairing with this package"
+]
+
+[[local_target]]
+name = "finite product of middle pairing scalars is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.product_middlePairing_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "pointwise q_i nonvanishing"
+]
+nonclaims = [
+  "pure finite product algebra"
+]
+
+[[external_premise]]
+id = "cm-middle-pairing-hodge-riemann-identification"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "identify each middle integral pairing q_i with a positive conjugate-pairing value for the selected ample class and identify gamma_i as a nonzero scalar multiple of the conjugate partner of beta_i"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.MiddlePairingNonvanishingData.pairing_ne_zero"
+status = "OPEN"
+nonclaims = [
+  "local CM trace-polarization positivity is not identified here with the geometric ample-class Hodge-Riemann pairing"
+]
