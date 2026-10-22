@@ -1322,6 +1322,34 @@ A structural interface issue is also exposed: the generic `AtomicSwitchTransitio
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4z. Switch invariants are now carried through the geometric path
+
+The structural interface gap identified in the previous increment is now represented locally.
+
+`CMFourFactorSwitchGeometry.lean` introduces:
+
+~~~text
+InvariantAtomicSwitchTransitionSupplier
+InvariantSwitchGeometrySupplier
+transitionOfReachWithInvariants
+transitionOfEqualColumnSumsWithInvariants
+~~~
+
+The atomic supplier now receives the exact hypotheses needed by the canonical four-row profile:
+
+- sign-valuedness of the current matrix;
+- oddness under the chosen conjugation;
+- the selected conjugate coordinate;
+- a proof that the coordinate is not fixed by conjugation.
+
+The finite reachability assembler propagates sign-valuedness and oddness through every switch using the local preservation theorems. At each nontrivial step, fixed-point-freeness is derived from oddness plus the selected mismatch row via `conj_ne_self_of_row`; it is not added as a new global premise.
+
+Consequently, equal column sums can now feed an invariant-aware geometric supplier directly. The canonical atomic `FourBalance` and all-conjugate ((2,2)) profile can be instantiated at every switch step without reconstructing hidden hypotheses.
+
+The remaining non-algebraicity frontier is now tensor-level: provide the actual switched tensor, Hodge subspace, and scalar-conjugate stability for each invariant-aware atomic step.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
