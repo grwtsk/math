@@ -7,7 +7,7 @@ The rational Hodge conjecture for CM abelian varieties,
 build/sections/02-tensors.tex.
 This file formalizes only the finite coordinate positivity consequence of the
 prescribed archimedean sign profile. -/
-import GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex
+import GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization
 
 /-!
 # Archimedean CM sign-profile positivity
@@ -32,6 +32,7 @@ set_option autoImplicit false
 namespace GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity
 
 open CMNumberFieldIndex
+open CMTracePolarization
 open GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance
 
 noncomputable section
@@ -56,6 +57,7 @@ argument. The inequality form avoids introducing a separate sign function on
 real numbers. -/
 structure SignControlledXi (v : CMNumberFieldIndex.OddSignRow E) where
   xi : E
+  antiInvariant : galoisComplexConj E xi = -xi
   coefficient_pos : ∀ σ : E ≃ₐ[ℚ] E,
     0 < -(v.value σ : ℝ) * imagAt E xi σ
 
@@ -70,6 +72,15 @@ theorem SignControlledXi.coeff_pos
     (X : SignControlledXi E v) (σ : E ≃ₐ[ℚ] E) :
     0 < X.coeff σ :=
   X.coefficient_pos σ
+
+/-- A sign-controlled xi supplies the algebraic trace-polarization data. -/
+def SignControlledXi.toTracePolarizationData
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (X : SignControlledXi E v) :
+    CMTracePolarization.TracePolarizationData E where
+  xi := X.xi
+  xi_ne_zero := X.xi_ne_zero
+  antiInvariant := X.antiInvariant
 
 /-- Coordinate Hodge energy associated with the sign-controlled xi. -/
 def SignControlledXi.energy
