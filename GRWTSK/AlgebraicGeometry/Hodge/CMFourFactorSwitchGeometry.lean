@@ -1477,6 +1477,44 @@ theorem CMFiniteNestedLinearAssembly.smul_fourth
     M.map a b c (q • d) = q • M.map a b c d := by
   exact (M.map a b c).map_smul q d
 
+
+/-- The finite assembly obtained from nested linear maps is additive in its
+first argument. This bridges the nested-linear construction to the
+function-valued finite assembly consumed by scalar descent. -/
+theorem CMFiniteNestedLinearAssembly.toFiniteAssembly_add_first
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (x y b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.toFiniteAssembly.assemble
+        (fun i => if i = 0 then x + y else
+          if i = 1 then b else if i = 2 then c else d) =
+      M.toFiniteAssembly.assemble
+        (fun i => if i = 0 then x else
+          if i = 1 then b else if i = 2 then c else d) +
+      M.toFiniteAssembly.assemble
+        (fun i => if i = 0 then y else
+          if i = 1 then b else if i = 2 then c else d) := by
+  simpa [CMFiniteNestedLinearAssembly.toFiniteAssembly] using
+    M.add_first x y b c d
+
+/-- The same bridge preserves rational homogeneity in the first argument. -/
+theorem CMFiniteNestedLinearAssembly.toFiniteAssembly_smul_first
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (M : CMFiniteNestedLinearAssembly factors)
+    (q : ℚ) (a b c d : E.carrier ⊗[ℚ] E.carrier) :
+    M.toFiniteAssembly.assemble
+        (fun i => if i = 0 then q • a else
+          if i = 1 then b else if i = 2 then c else d) =
+      q • M.toFiniteAssembly.assemble
+        (fun i => if i = 0 then a else
+          if i = 1 then b else if i = 2 then c else d) := by
+  simpa [CMFiniteNestedLinearAssembly.toFiniteAssembly] using
+    M.smul_first q a b c d
+
 /-- Extend only the assembled finite-CM coefficient tensor to AlgebraicNumbers. -/
 def CMFiniteFourfoldAssembly.globalTensor
     {E : CMGaloisIntermediateField}
