@@ -9,9 +9,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lake_manifest_file = "lake-manifest.json"
 
 [scope]
-kind = "isolated-seven-module-target"
-module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary"
-source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean"
+kind = "isolated-eight-module-target"
+module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteChowlaUniformEnvelope"
+source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteChowlaUniformEnvelope.lean"
 required_modules = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
@@ -20,6 +20,7 @@ required_modules = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteChowlaUniformEnvelope",
 ]
 required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
@@ -29,8 +30,9 @@ required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteChowlaUniformEnvelope.lean",
 ]
-require_exact_seven_module_dependency = true
+require_exact_eight_module_dependency = true
 allow_only_selected_module_build = true
 mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
 requires_clean_checkout = true
@@ -74,6 +76,8 @@ expected = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinaryShiftWord",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicShiftWord",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.AllOrderCorrelationEnvelope",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.OrdinaryAllOrderChowlaAtScale",
 ]
 
 [theorems]
@@ -129,8 +133,13 @@ required = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinary_eq_cyclic_off_collar",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empty_offsets_zero_collar",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWalshTV_bound",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCharacterCount",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCharacterCount_rat",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.energy_le_characterCount_mul_envelope_sq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.energy_le_exponential_envelope_sq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicTV_le_allOrderEnvelope",
 ]
-exact_count = 51
+exact_count = 56
 requires_exact_types = true
 requires_full_axiom_inspection = true
 
@@ -249,8 +258,28 @@ id = "cyclic-source-not-arithmetic-cancellation"
 must_preserve = "The cyclic model theorem transports ONLY the finite source energy and r/N error; it supplies neither higher-order Chowla estimates nor an infinite sofic action."
 
 [[hostile_controls]]
+id = "all-nonempty-subsets"
+must_preserve = "The envelope quantifies over every nonempty subset of the complete finite offset-coordinate type; neither binary-only nor any fixed arity is an accepted substitute."
+
+[[hostile_controls]]
+id = "exponential-character-cost"
+must_preserve = "Exactly 2^k-1 distinct nonempty characters contribute. A bound by k*epsilon^2 is false without extra independence or coefficient sparsity hypotheses."
+
+[[hostile_controls]]
+id = "uniformity-per-scale"
+must_preserve = "A single epsilon applies to every subset at the given N and selected shifts; forall fixed shifts exists constant does not provide one epsilon uniformly over a growing shift family."
+
+[[hostile_controls]]
+id = "nonnegative-envelope"
+must_preserve = "epsilon >= 0 is part of the envelope; pointwise |correlation| <= epsilon alone must not be silently used for a negative error budget."
+
+[[hostile_controls]]
+id = "no-new-arithmetic-estimate"
+must_preserve = "OrdinaryAllOrderChowlaAtScale is a declared proposition, NOT inhabited by the external 2026 fixed two-point result, and no log/ordinary or all-order transfer is constructed."
+
+[[hostile_controls]]
 id = "no-probabilistic-upgrade"
-must_preserve = "All seven finite module layers including the exact cyclic root-collar r/N specialization are SOURCE_DRAFT only, not elaborated or kernel-audited. Shannon entropy, arbitrary-index finite-subtype transport, and any arithmetic cancellation supplier remain open."
+must_preserve = "All eight finite module layers, including the conditional all-order envelope with exact exponential cost, are SOURCE_DRAFT only, not elaborated or kernel-audited. Shannon entropy and any actual all-order arithmetic cancellation supplier remain open."
 [[hostile_controls]]
 id = "no-spectral-upgrade"
 must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
@@ -275,7 +304,8 @@ no_public_root_import_claimed = true
 claims = [
   "all-orders or fixed-order Chowla",
   "Liouville distribution limits",
-  "growing-window uniform correlation energy",
+  "growing-window uniform correlation energy established for Liouville or Moebius",
+  "a growing-window uniform epsilon constructed by fixed-form two-point theorems",
   "sofic action existence or spectral convergence",
   "cyclic r/N boundary specialization already kernel checked",
   "Parseval or chi-square identity already kernel-checked in Lean",
