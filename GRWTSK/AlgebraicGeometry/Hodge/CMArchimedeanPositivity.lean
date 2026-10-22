@@ -207,6 +207,38 @@ def FixedElementRealizesRequiredSign
     ((requiredRescalingSign E v P).value σ = -1 →
       (complexEmbeddingAt E σ f).re < 0)
 
+/-- A conjugation-fixed factor has real value at every complex embedding. -/
+theorem embedding_im_zero_of_conj_fixed
+    {f : E} (hf : galoisComplexConj E f = f)
+    (σ : E ≃ₐ[ℚ] E) :
+    (complexEmbeddingAt E σ f).im = 0 := by
+  have h := congrArg Complex.im
+    (show conj (complexEmbeddingAt E σ f) =
+        complexEmbeddingAt E σ f by
+      rw [← complexEmbeddingAt_galoisComplexConj E σ f, hf])
+  simp only [Complex.conj_im] at h
+  linarith
+
+/-- Imaginary coordinates of a fixed-factor rescaling multiply by the real
+embedding of the fixed factor. -/
+theorem imagAt_mul_of_conj_fixed
+    {f x : E} (hf : galoisComplexConj E f = f)
+    (σ : E ≃ₐ[ℚ] E) :
+    imagAt E (f * x) σ =
+      (complexEmbeddingAt E σ f).re * imagAt E x σ := by
+  simp only [imagAt, map_mul, Complex.mul_im,
+    embedding_im_zero_of_conj_fixed E hf σ, zero_mul, add_zero]
+
+/-- Real sign condition required of a conjugation-fixed rescaling factor
+relative to one anti-invariant seed. -/
+def FixedRescalingSignCondition
+    (v : CMNumberFieldIndex.OddSignRow E)
+    (P : CMTracePolarization.TracePolarizationData E)
+    (f : E) : Prop :=
+  ∀ σ : E ≃ₐ[ℚ] E,
+    0 < -(v.value σ : ℝ) *
+      (complexEmbeddingAt E σ f).re * imagAt E P.xi σ
+
 /-- Realizing the even rescaling-sign row is exactly sufficient for the
 fixed-factor positivity condition. -/
 theorem fixedRescalingSignCondition_of_realizesRequiredSign
@@ -260,37 +292,6 @@ theorem fixedRescalingSignCondition_of_realizesRequiredSign
       rw [hv]
       norm_num
       exact mul_pos_of_neg_of_neg hfneg himneg
-/-- A conjugation-fixed factor has real value at every complex embedding. -/
-theorem embedding_im_zero_of_conj_fixed
-    {f : E} (hf : galoisComplexConj E f = f)
-    (σ : E ≃ₐ[ℚ] E) :
-    (complexEmbeddingAt E σ f).im = 0 := by
-  have h := congrArg Complex.im
-    (show conj (complexEmbeddingAt E σ f) =
-        complexEmbeddingAt E σ f by
-      rw [← complexEmbeddingAt_galoisComplexConj E σ f, hf])
-  simp only [Complex.conj_im] at h
-  linarith
-
-/-- Imaginary coordinates of a fixed-factor rescaling multiply by the real
-embedding of the fixed factor. -/
-theorem imagAt_mul_of_conj_fixed
-    {f x : E} (hf : galoisComplexConj E f = f)
-    (σ : E ≃ₐ[ℚ] E) :
-    imagAt E (f * x) σ =
-      (complexEmbeddingAt E σ f).re * imagAt E x σ := by
-  simp only [imagAt, map_mul, Complex.mul_im,
-    embedding_im_zero_of_conj_fixed E hf σ, zero_mul, add_zero]
-
-/-- Real sign condition required of a conjugation-fixed rescaling factor
-relative to one anti-invariant seed. -/
-def FixedRescalingSignCondition
-    (v : CMNumberFieldIndex.OddSignRow E)
-    (P : CMTracePolarization.TracePolarizationData E)
-    (f : E) : Prop :=
-  ∀ σ : E ≃ₐ[ℚ] E,
-    0 < -(v.value σ : ℝ) *
-      (complexEmbeddingAt E σ f).re * imagAt E P.xi σ
 
 /-- A nonzero conjugation-fixed rescaling satisfying the real sign condition
 produces the manuscript's exact sign-controlled anti-invariant xi. -/
