@@ -1,0 +1,468 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "heisenberg-separating-primitive-722-v0.1"
+owner_repository = "grwtsk/math"
+issue = 722
+related_issues = [704, 694, 687, 674, 665, 661, 653, 649, 159, 198, 205, 545, 121, 168, 516, 100, 15]
+route_id = "GENUS_TWO_HEISENBERG_HOMOLOGY_INVISIBLE_PRIMITIVE"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness"
+build_target = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/signed-homology-primitive-704-20261022"
+review_parent_revision = "0678ec3ff744eab8a19f9c7d9efa4dded7ea6836"
+review_parent_generic_git_blob = "ae16aee475fccc5bed0ecc2177508c7a0efb7b44"
+review_parent_consumer_git_blob = "88ad9be72dbf65cae27712ae2b5f6bd94d210dbb"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+generic_module_path = "GRWTSK/GroupTheory/Words/IntegralHeisenbergPrimitive.lean"
+generic_module_git_blob = "81b49f45c831c24b440d008b071aa52a8e928432"
+consumer_module_path = "GRWTSK/GroupTheory/Words/GenusTwoHeisenbergWitness.lean"
+consumer_module_git_blob = "f708b3f3d6d0fb01034b0f691ec18edf3dfa61fc"
+mathematical_note_path = "docs/mathematics/GroupTheory/Words/heisenberg-separating-primitive-obstruction.md"
+mathematical_note_git_blob = "eebcf33751f2c8981bf0c6247badae6040695998"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+actual_integer_heisenberg_group_constructed_at_source_level = true
+actual_genus_two_presented_group_constructed_at_source_level = true
+presented_group_to_heisenberg_hom_proved_at_source_level = true
+commutator_unit_not_proper_power_source_candidate = true
+separating_class_in_abelianization_kernel_source_candidate = true
+integer_unit_witness_incomplete_proved_at_source_level = true
+real_hyperbolic_surface_instantiated = false
+real_geodesic_source_certified = false
+complete_primitive_conjugacy_algorithm = false
+complete_length_bounded_geodesic_enumeration = false
+heisenberg_to_hodge_adapter_closed = false
+heisenberg_to_sofic_adapter_closed = false
+arithmetic_chowla_adapter_closed = false
+selberg_trace_formula_formalized = false
+weil_petersson_integral_formalized = false
+gue_gap_universality_proved = false
+zeta_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "The separating commutator in the exact genus-two one-relator presented group is primitive by a genuine Heisenberg quotient but has trivial Mathlib abelianization and zero image under all integer characters."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive"
+authored_declaration_count = 26
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive", "Mathlib.GroupTheory.Abelianization.Defs", "Mathlib.Tactic"]
+
+[[modules]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness"
+authored_declaration_count = 16
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive", "Mathlib.GroupTheory.PresentedGroup"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive"
+source_construct = "anonymous instance : Group IntegralHeisenberg where"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive"
+source_construct = "structure IntegralHeisenberg deriving DecidableEq, Repr"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.multiply"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.invert"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.mul_x"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.mul_y"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.mul_z"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.one_x"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.one_y"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.one_z"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.X"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Y"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Z"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.wordCommutator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.map_wordCommutator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.comm_X_Y"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.comm_X_Y_inv"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.genusTwo_relation"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Z_ne_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.pow_x"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.pow_y"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.pow_z_of_xy_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Z_not_properPower"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Z_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Z_abelianization_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.IntegralHeisenberg.Z_integerCharacter_eq_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHeisenbergPrimitive.primitive_of_hom_maps_to_Z"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.genusTwoRelator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.GenusTwoPresentedGroup"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.generator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.heisenbergLetter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.heisenbergLetter_respects_relator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.toHeisenberg"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.toHeisenberg_generator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.separatingCommutator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.toHeisenberg_separatingCommutator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.separatingCommutator_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.separatingCommutator_abelianization_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.separatingCommutator_integerCharacter_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.HomologyInvisiblePrimitiveWitness"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.HomologyInvisiblePrimitiveWitness.no_integer_unit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.genusTwoWitness"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness.genusTwo_no_integer_unit_certificate"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-heisenberg-group"
+requirement = "The integral triple group multiplication and inverse must satisfy the exact Group laws, not just a ternary operation named a group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "central-cocycle-sign"
+requirement = "Multiply central coordinates with +a*b' in the selected convention; reversing the cocycle changes the commutator sign."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-commutator-orientation"
+requirement = "The commutator means x*y*x^(-1)*y^(-1), with [X,Y]=Z, not its inverse."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inverse-Y-relation"
+requirement = "[X,Y^(-1)] must equal Z^(-1), yielding an actual genus-two relation under the chosen generator images."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "Z-nonidentity"
+requirement = "The central generator Z=(0,0,1) must be proved different from the group identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "power-first-coordinate"
+requirement = "For all n, the first coordinate of r^n is integer n*r.x; n=0 and n=1 cases must not be confused with proper powers."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "power-second-coordinate"
+requirement = "For all n, the second coordinate of r^n is integer n*r.y."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "central-power-coordinate"
+requirement = "When r.x=r.y=0, central coordinate of r^n equals integer n*r.z, without missing cocycle terms."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-proper-positive-root"
+requirement = "For n≥2, r^n=Z is impossible; no assumption of a bounded set of possible roots."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "proper-power-def-from-parent"
+requirement = "Reuse the exact #694 IsProperPower/IsPrimitiveConjugacy definitions, not a replacement sign, word repetition or abelianization predicate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genuine-homomorphism-transport"
+requirement = "A primitive witness transferred to G must consume actual f:G→*H and proof f(g)=Z, not an arbitrary assigned image."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genuine-heisenberg-abelianization"
+requirement = "Use Mathlib Abelianization.of, not just the observation x=y=0, to prove Z has trivial abelianization image."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-integer-characters-invisible"
+requirement = "Every TRUE IntegerCharacter H→*Multiplicative ℤ must map Z to additive zero even though Z is primitive."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "four-generator-presented-group"
+requirement = "The genus-two group must be literal Mathlib.PresentedGroup of a singleton relator in FreeGroup(Fin4), not a free group without the surface relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "single-relator-verified"
+requirement = "The chosen generator images must be shown to satisfy the exact relator BEFORE constructing PresentedGroup.toGroup."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generator-map-actual-source"
+requirement = "The generated map must send a1,b1,a2,b2 to X,Y,X,Y^(-1), including the sign of b2."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "separating-commutator-exact"
+requirement = "The named first-handle commutator must map exactly to Z under the quotient homomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "separating-nonpower-proof"
+requirement = "The separating commutator in the presented group must be shown nonidentity and not any proper power via the actual Heisenberg map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "separating-abelianization-trivial"
+requirement = "The SAME separating element must map to identity under Abelianization.of of the presented group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "every-integral-character-zero"
+requirement = "All group homomorphisms from genus-two presented group to Multiplicative ℤ must map the separating element to integer zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "homology-unit-witness-fails"
+requirement = "The primitive separating class cannot satisfy the unit-valued integer homology certificate of #704; failure is of that sufficient criterion, NOT of primitivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-every-nullhomologous-element"
+requirement = "The theorem exhibits ONE homology-invisible primitive, not a complete nonabelian certificate for every element in the abelianization kernel."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nilpotent-is-not-all-surface"
+requirement = "This particular integral Heisenberg quotient is not a conjugacy/proper-power decision algorithm for all genus-two surface words."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "surface-presentation-vs-marking"
+requirement = "The abstract group presentation must not be conflated with an authenticated marked compact hyperbolic metric or a certified length-spectrum object."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "separating-geodesic-identification-open"
+requirement = "Identifying the first-handle commutator with a specific real oriented closed geodesic remains an external geometric theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "surface-braid-heisenberg-distinct"
+requirement = "Heisenberg quotients of surface braid/configuration groups must not be used as if identical to this surface fundamental group representation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "torelli-johnson-analogy-only"
+requirement = "No Torelli action, Johnson homomorphism, separating Dehn twist action or marked length spectrum rigidity theorem is formalized by this source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "hodge-sign-not-transported"
+requirement = "No map to the positive/signed Hodge operators in #205/#545 is supplied; a shared kernel obstruction is only a research comparison."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "modular-alias-separate"
+requirement = "The Heisenberg primitive witness does NOT remove q-modular aliases or imply the finite Fourier no-wrap premise under #653."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sofic-spectral-gue-open"
+requirement = "No sofic operator convergence, microscopic GUE spacing, random-matrix variance or Weil-Petersson/Selberg trace theorem is established."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "chowla-arithmetic-open"
+requirement = "No Möbius or Liouville growing-shift harmonic cancellation, Chowla theorem, or arithmetic source adapter is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-zeta-rh-implication"
+requirement = "A primitive surface-group word and its nilpotent quotient do not identify a zeta divisor or establish RH."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-decls-not-invented"
+requirement = "The custom Group instance and structure deriving-generated declarations must be enumerated at exact-head elaboration before accepted coverage."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-unapproved-execution"
+requirement = "Passive source manifest authorizes no Lean/Lake, F06/native VM, CI, cache, workflow, root, pin or external executor action."
+status = "NOT_RUN"
+
