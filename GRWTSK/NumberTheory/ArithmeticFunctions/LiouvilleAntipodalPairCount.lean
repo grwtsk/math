@@ -422,6 +422,33 @@ theorem normalized_powerset_pair_sum_commute
           g S p.1 p.2) / (M : ℚ) ^ 2) := by
   rw [sum_powerset_product_commute]
 
+/-- Characterwise signed factorization, retaining the cardinality
+parity and using the two separately averaged arithmetic words. -/
+theorem normalized_antipodal_character_term
+    (M : ℕ) (S : Finset ℕ) (hM : 0 < M) :
+    ((∑ p ∈ (Finset.range M).product (Finset.range M),
+        (-1 : ℚ) ^ S.card *
+          ∏ h ∈ S,
+            (((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+              ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+        (M : ℚ) ^ 2) =
+      (-1 : ℚ) ^ S.card *
+        ((∑ m ∈ Finset.range M,
+          ∏ h ∈ S,
+            ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ)) / (M : ℚ)) *
+        ((∑ t ∈ Finset.range M,
+          ∏ h ∈ S,
+            ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) / (M : ℚ)) := by
+  classical
+  simp_rw [antipodal_subset_product_factor]
+  rw [← Finset.mul_sum]
+  rw [normalized_root_pair_factor M
+    (fun m => ∏ h ∈ S,
+      ((ArithmeticFunction.liouville (m + h + 1) : ℤ) : ℚ))
+    (fun t => ∏ h ∈ S,
+      ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ)) hM]
+  ring
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
