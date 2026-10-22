@@ -1603,7 +1603,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-label-conjugation", "eq:switch-line"]
-statement_role = "assemble the now-local simultaneous four-factor embedding-line transport into the actual switched monomial tensor, proving the scalar conjugate lies in the transported monomial line"
+statement_role = "supply the actual fourfold assembly map and prove coefficient-field scalar conjugation commutes with that assembly; transported monomial-line membership then follows locally"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.conjugate_mem_line"
 status = "OPEN"
 nonclaims = [
@@ -1647,4 +1647,33 @@ status = "SOURCE_DRAFT_NOT_RUN"
 nonclaims = [
   "source-order repair only",
   "still not kernel audited"
+]
+
+
+[[local_target]]
+name = "fourfold assembly compatibility implies transported monomial-line membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four canonical embedding-line factors",
+  "actual fourfold assembly map",
+  "scalar conjugation commutes with fourfold assembly"
+]
+nonclaims = [
+  "does not prove the assembly map exists geometrically",
+  "does not identify the transported line as an actual Hodge line"
+]
+
+[[local_target]]
+name = "fourfold assembly data supplies monomial-line transport package"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "transported monomial lines lie in the actual Hodge subspace"
+]
+nonclaims = [
+  "monomial-line membership is local",
+  "Hodge-line inclusion remains external"
 ]
