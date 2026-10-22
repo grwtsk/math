@@ -3,6 +3,7 @@ Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange
+import GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines
 import GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent
 
 /-!
@@ -84,6 +85,47 @@ theorem scalarConjugate_mem_embeddingEigenspace
   intro a
   rw [← scalarConjugate_regularAction σ a t, ht a,
     scalarConjugate_smul, transportedCharacter_apply]
+
+
+section GaloisTransportedLine
+
+variable [FiniteDimensional k E] [IsGalois k E]
+
+/-- The transported character is the character of the composite Galois
+automorphism. -/
+theorem transportedCharacter_eq_mul
+    (σ τ : E ≃ₐ[k] E) :
+    transportedCharacter σ τ.toAlgHom = (σ * τ).toAlgHom := by
+  ext a
+  rfl
+
+/-- A nonzero vector in the transported canonical embedding line is a nonzero
+scalar multiple of the scalar-conjugated source vector.
+
+This is precisely the local linear-algebra content of the manuscript's
+statement that gamma is a nonzero scalar multiple of conjugate beta. -/
+theorem exists_ne_zero_smul_scalarConjugate_eq
+    (σ τ : E ≃ₐ[k] E)
+    {beta gamma : E ⊗[k] E}
+    (hbeta_mem :
+      beta ∈ embeddingEigenspace (k := k) τ.toAlgHom)
+    (hgamma_mem :
+      gamma ∈ embeddingEigenspace (k := k) (σ * τ).toAlgHom)
+    (hbeta : beta ≠ 0)
+    (hgamma : gamma ≠ 0) :
+    ∃ c : E, c ≠ 0 ∧ gamma = c • scalarConjugate σ beta := by
+  have htransport :
+      scalarConjugate σ beta ∈
+        embeddingEigenspace (k := k) (σ * τ).toAlgHom := by
+    rw [← transportedCharacter_eq_mul σ τ]
+    exact scalarConjugate_mem_embeddingEigenspace
+      σ τ.toAlgHom hbeta_mem
+  have htransport0 : scalarConjugate σ beta ≠ 0 :=
+    scalarConjugate_ne_zero σ hbeta
+  exact CMGaloisEigenlines.exists_ne_zero_smul_eq_of_mem_embeddingEigenspace
+    k E (σ * τ) htransport hgamma_mem htransport0 hgamma
+
+end GaloisTransportedLine
 
 
 end
