@@ -13,6 +13,7 @@ mathematical idea already source-drafted in issue #441 / PR #454
 (`parameterDependent_doesNotImply_uniform`).
 -/
 import GRWTSK.NumberTheory.Moebius.SquareModulusAPConjectureJunction
+import Mathlib.Tactic.Omega
 
 /-!
 # Fixed-scope constants do not become growing-family constants by logic alone
@@ -103,14 +104,12 @@ structure PointwiseToUniformBoundAdapter
   upgrade :
     PointwiseExistsBound P → UniformExistsBound P
 
-/-- The repository-facing fixed-form/growing-family boundary is retained as two
-separate proposition slots.  No implication field is present. -/
-structure FixedFormVsUniformSquareModulusBoundary
-    (d : FixedFormBinaryChowlaData) : Type where
-  fixedScope :
-    Prop := FixedFormBinaryChowlaSource d
-  uniformSquareModulusScope :
-    Prop := UniformDyadicSquareModulusMertensTwoPointAP
+/-- The repository-facing fixed-form/growing-family boundary is retained as
+two literal proposition slots.  A pair contains no implication field. -/
+def fixedFormVsUniformSquareModulusBoundary
+    (d : FixedFormBinaryChowlaData) : Prop × Prop :=
+  (FixedFormBinaryChowlaSource d,
+    UniformDyadicSquareModulusMertensTwoPointAP)
 
 end SquareModulusAPConjectureJunction
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
