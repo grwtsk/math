@@ -2591,6 +2591,7 @@ end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
 
+namespace GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
 
 /-- The remaining fixed-field geometric comparison, separated from factor
 realization and switch combinatorics.
@@ -2722,3 +2723,6 @@ def CMFiniteActualToDescentComparison.ofSpanningFamily
     exact Submodule.span_le.mpr (by
       rintro y ⟨x, hx, rfl⟩
       exact generator_mem x hx)
+
+
+end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
