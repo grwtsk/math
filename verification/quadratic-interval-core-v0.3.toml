@@ -33,7 +33,9 @@ source_git_blob = "fbfd45fb3e82f019adc243338a9c3c4222e5a704"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
-source_git_blob = "594ff41e29323206962ef22863c82e3890382282"
+# Original pre-quadrature-repair source_git_blob = "594ff41e29323206962ef22863c82e3890382282".
+# Current pin binds repaired source; all inherited acceptance obligations remain open.
+source_git_blob = "29ffefcbeef17d9118f16268a42d5d8e5fd35114"
 
 [[modules]]
 name = "GRWTSK.Interfaces.QuadraticIntervalCore"

@@ -33,7 +33,9 @@ inherited_target = "verification/cubic-zeta-identity-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "5a609505c67ff81b1bdff1b87aa6dfe5c1dfd233".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "9088035ac4d69916523a1ccb27c63ab84d6a0cd7".
-inherited_target_blob = "694023c85407fcf4b59929605f43a699a4dbefa2"
+# Pre-quadrature-repair inherited_target_blob = "694023c85407fcf4b59929605f43a699a4dbefa2".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "fabcce4da97f000fcb5a52ba111ce2f4c7bfc94d"
 receipt_policy = "Bind exact new commit/tree externally; no ancestor or root-only acceptance."
 
 [trust]

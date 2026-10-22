@@ -33,7 +33,9 @@ inherited_target = "verification/canonical-tent-prime-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "5a97835872bf0be81f364b9141144d1c31983641".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "ab6f3023144fa2cc5d463e8fc233f07bc6a91f38".
-inherited_target_blob = "cfa892888f51811f79c4120b321fc8f876b5526b"
+# Pre-quadrature-repair inherited_target_blob = "cfa892888f51811f79c4120b321fc8f876b5526b".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "32e4ce3303e18ed866b2c852bd335f6aea660f24"
 receipt_policy = "Bind the exact new commit/tree externally. No execution or acceptance is represented."
 
 [trust]

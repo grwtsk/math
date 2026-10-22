@@ -60,9 +60,12 @@ disposition = "RETAINED_PRODUCER_BLOB"
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
 path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervals.lean"
-source_blob = "594ff41e29323206962ef22863c82e3890382282"
+# Original pre-quadrature-repair source_blob = "594ff41e29323206962ef22863c82e3890382282".
+# Current pin binds repaired source; all inherited acceptance obligations remain open.
+source_blob = "29ffefcbeef17d9118f16268a42d5d8e5fd35114"
 origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
-disposition = "RETAINED_PRODUCER_BLOB"
+# Original disposition = "RETAINED_PRODUCER_BLOB"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.Analysis.ErrorBounds.FiniteSquareBudget"

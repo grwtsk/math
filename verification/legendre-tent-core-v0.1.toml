@@ -30,7 +30,9 @@ inherited_target = "verification/legendre-enclosed-kernel-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "6f45af8a459eafc7e1fc669cf01c53af40f5373d".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "561dd243e4ebfa2c95b749375e25fb294caf5d58".
-inherited_target_blob = "45e11fd20b892b7a922c84c004ffc0ee17386bbc"
+# Pre-quadrature-repair inherited_target_blob = "45e11fd20b892b7a922c84c004ffc0ee17386bbc".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "49379cfc498b17696aac5d1d8176d562d28f919a"
 receipt_policy = "Require the actual integration commit and tree externally; a parent receipt is not acceptance of this target."
 inventory_policy = "The names below are source inventory only. Report all elaborated types and the complete transitive trust closure."
 literature = "Dudek--Grenie--Molteni, arXiv:1503.05403v2, pp. 2-3. The source here does not import its Perron or complete-zero theorem."

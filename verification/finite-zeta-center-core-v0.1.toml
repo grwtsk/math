@@ -33,7 +33,9 @@ inherited_target = "verification/canonical-newton-witness-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "f998e6132dd216defadea2e2cf79c1b3a45948da".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "1cea51f753134102ff2bfcce04026541c7d15760".
-inherited_target_blob = "efe5fa95d48cfbadfa2b447334fc5a3b60183b7c"
+# Pre-quadrature-repair inherited_target_blob = "efe5fa95d48cfbadfa2b447334fc5a3b60183b7c".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "95b7e1fbb3cfaa8d4adfcaa8a071e1d595cffc74"
 receipt_policy = "Bind the exact new commit/tree externally; this static target is not an execution receipt."
 
 [trust]

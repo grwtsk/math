@@ -32,7 +32,9 @@ inherited_target = "verification/tent-perron-line-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "6d123bde056adad23b28aaf1561704dbf37f31d2".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "6233214cbe35e335ad827c0e6c558cdadab0448d".
-inherited_target_blob = "aa39f778f1dd4736c7cefa108fbed386053b89e0"
+# Pre-quadrature-repair inherited_target_blob = "aa39f778f1dd4736c7cefa108fbed386053b89e0".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "b908dc9cbe1cf93431c43023374656ab7b487627"
 receipt_policy = "Bind the new commit/tree externally; no ancestor receipt accepts this integration."
 inventory_policy = "Lexical names only; reconcile exact elaborated types and private name mangling."
 

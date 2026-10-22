@@ -33,7 +33,9 @@ inherited_target = "verification/tent-selected-residue-limit-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "bfb9353227e84ad3756faaa7984e06951131f2ea".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "6741381b90844ebf6c6d2ebff69ad9e8ff6f0d08".
-inherited_target_blob = "9f67eee862efa809e38b412ff2d571e2a0b7fe33"
+# Pre-quadrature-repair inherited_target_blob = "9f67eee862efa809e38b412ff2d571e2a0b7fe33".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "36d8df6c27844ba9fe50929e787d9da85c2577f0"
 receipt_policy = "Bind the exact new commit and tree externally. This static target represents no execution or successful check."
 
 [trust]

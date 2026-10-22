@@ -33,7 +33,9 @@ inherited_target = "verification/finite-zeta-center-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "c8d58c7500c42ed90ec9014910ea005df88dff2e".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "5b07890b98018a637566a3dc74f4a725eedcc49f".
-inherited_target_blob = "0a6bce4553c0d9bb025716e1fa30c6467b937a1b"
+# Pre-quadrature-repair inherited_target_blob = "0a6bce4553c0d9bb025716e1fa30c6467b937a1b".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "53ee45c34a314c1132288697f016a6ff7f57e76d"
 receipt_policy = "Bind exact new commit/tree externally. This target is not an execution receipt."
 
 [trust]
