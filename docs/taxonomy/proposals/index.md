@@ -13,3 +13,19 @@ The [history and education addition](new-concepts/history-education.md) proposes
 The [logic, algebra and discrete batch](new-concepts/logic-algebra-discrete.md) adds fifteen established-subject records and preserves all earlier collision and attribution questions.
 
 The [geometry and topology addition](new-concepts/geometry-topology.md) records twelve further subjects and the restricted computational-homology polyhierarchy, with coefficient and implementation boundaries.
+
+The [statistics addition](new-concepts/statistics.md) proposes eleven statistical subjects and retains the fixed-design least-squares placement and inferential boundaries.
+
+[Numerical analysis and optimization addition](new-concepts/numerical-optimization.md) proposes nine records and the shared conjugate-gradient subject; all scopes and parentage await independent review.
+
+[Number-theory subject addition](new-concepts/number-theory.md): twelve original records, explicit arithmetic hypotheses and one shared computational/algebraic subject; proposed, not independently reviewed.
+
+[Equation, dynamics and mechanics addition](new-concepts/equations-dynamics-mechanics.md): twelve original records, eleven proposed edges and two canonical shared model classes; no source-namespace collision is resolved.
+
+[Information and coding addition](new-concepts/information-coding.md) proposes ten established subjects and a shared finite-field linear-code record, retaining independent-review and rights gates.
+
+[Algebraic structures](new-concepts/algebra-structures.md) proposes ten established subjects and two shared structural scopes, retaining convention and placement alternatives.
+
+[Analysis, measure and Fourier addition](new-concepts/analysis-measure-fourier.md) proposes ten established subjects, two shared function-space scopes and explicit convergence assumptions.
+
+Candidate 0.12: [probability limits and stochastic processes](new-concepts/probability-processes.md), including explicit convergence modes, two Brownian parents and retained older Markov scope.
