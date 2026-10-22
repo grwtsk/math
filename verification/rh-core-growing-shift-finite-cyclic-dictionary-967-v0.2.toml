@@ -1,0 +1,104 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-finite-cyclic-dictionary-967-v0.2"
+owner_repository = "grwtsk/math"
+issue = 967
+status = "SOURCE_DRAFT_MINIMAL_CORE_AUTHORED_LEGACY_IMPORT_CLOSURE_BLOCKED"
+
+[supplier_binding]
+source_commit = "045f75ea19736b01bb4ba96ea1fc82c529e40fd0"
+source_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicInterval.lean"
+source_git_blob = "bb7d2dd3ef364ec5486a76e423c21e7e99a4b216"
+local_agent_replay_result = "PENDING_OR_NOT_REPORTED"
+
+[distance_binding]
+source_commit = "6a1bcd756ada6644725c1178091684119b761f76"
+source_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicIntervalDistance.lean"
+source_git_blob = "85bbfdeff949d32203b742be31b699b51fcc1245"
+
+[minimal_endpoint_binding]
+source_commit = "17967b13ec88876eb8e50a79b05c76b5c8f20470"
+source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointFiniteCyclicCore.lean"
+source_git_blob = "c6c239a4dc6dc6463556d583e27ec85505964733"
+
+[legacy_dictionary_binding]
+source_commit = "cbb0eaffb5d2d0877c8877b6df9ff58c62b6328b"
+source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointFiniteCyclicDictionary.lean"
+source_git_blob = "66ff6ff2d90191146e4c6d501cb6fb5aa155bf7e"
+legacy_owner_import = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseSummationByPartsFourier"
+
+[selected_increment]
+generic_circular_distance = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance"
+generic_distance_zero_iff = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance_eq_zero_iff"
+generic_half_modulus_bound = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicCircularDistance_two_mul_le"
+generic_sine_identity = "GRWTSK.NumberTheory.CharacterSums.norm_stdAddChar_sub_one_eq_sineCircularDistance"
+generic_jordan_bound = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicJordanLowerScale_le_norm_stdAddChar_sub_one"
+generic_inverse_multiplier_bound = "GRWTSK.NumberTheory.CharacterSums.norm_inv_stdAddChar_sub_one_le_circularDistance"
+generic_interval_distance_bound = "GRWTSK.NumberTheory.CharacterSums.norm_sum_stdAddChar_neg_Ico_le_circularDistance"
+generic_regular_cutoff_bound = "GRWTSK.NumberTheory.CharacterSums.norm_sum_stdAddChar_neg_Ico_le_regularCutoff"
+minimal_endpoint_modulus = "coreGrowingShiftEndpointFiniteCyclicDoubledModulus"
+minimal_endpoint_phase = "coreGrowingShiftEndpointFiniteCyclicNegativePhase"
+minimal_endpoint_multiplier = "coreGrowingShiftEndpointFiniteCyclicMultiplier"
+minimal_endpoint_distance = "coreGrowingShiftEndpointFiniteCyclicDistance"
+minimal_endpoint_interval_bound = "coreGrowingShiftEndpointFiniteCyclicInterval_norm_le_distance"
+minimal_endpoint_regular_bound = "coreGrowingShiftEndpointFiniteCyclicInterval_norm_le_regularCutoff"
+minimal_endpoint_zero_mode = "coreGrowingShiftEndpointFiniteCyclicInterval_zero"
+minimal_endpoint_norm_only_obstruction = "coreGrowingShiftEndpointFiniteCyclic_phaseMatchedWeights"
+legacy_modulus_dictionary = "coreGrowingShiftEndpointDoubledFourierModulus_eq_finiteCyclic"
+legacy_phase_dictionary = "coreGrowingShiftEndpointTransverseNatCharacter_eq_finiteCyclic"
+legacy_multiplier_dictionary = "coreGrowingShiftEndpointTransverseMultiplier_eq_finiteCyclic"
+legacy_distance_dictionary = "coreGrowingShiftEndpointTransverseCircularDistance_eq_finiteCyclic"
+legacy_interval_bound = "coreGrowingShiftEndpointTransverseNatCharacter_Ico_norm_le_distance_via_finiteCyclic"
+legacy_regular_bound = "coreGrowingShiftEndpointTransverseNatCharacter_Ico_norm_le_regularCutoff_via_finiteCyclic"
+proof_classification = "MATHLIB_ONLY_JORDAN_DISTANCE_BOUND_PLUS_EXACT_LEGACY_DICTIONARY"
+
+[current_main_replay_obstruction]
+attempted_leaf_blob = "fa0beb7688de9efdfaea505e34458a0b2774c1bf"
+attempt_kind = "CURRENT_MAIN_CLOSURE_WITH_EXACT_HASH_INVENTORY_NOT_UNCHANGED_PINNED_REPLAY"
+import_closure_grwtsk_modules = 156
+hard_error_file_1 = "GRWTSK/NumberTheory/Moebius/DyadicTriangularKernel.lean"
+hard_error_lines_1 = "112,137,165,193,229"
+hard_error_file_2 = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
+hard_error_lines_2 = "95,116,166"
+wfail_warning_modules = "CofinalEnergyDamping,LogarithmicPickupSampling,LogarithmicPickupSeries,CompensatedCorrelationCriterion,AllDampingMertensMeanSquare"
+dependencies_differing_from_original_pinned_closure = 5
+failure_stage = "BEFORE_ISOLATED_LEAF"
+
+[evidence_states]
+source_draft = true
+finite_cyclic_supplier_published = true
+finite_cyclic_supplier_locally_audited = false
+distance_module_elaborated = false
+minimal_endpoint_module_elaborated = false
+legacy_dictionary_elaborated = false
+kernel_checked = false
+axiom_audited = false
+original_entire_leaf_audited = false
+parent_support_shear_audited = false
+current_main_import_closure_blocked = true
+unrelated_upstream_files_modified_for_replay = false
+
+[preserved_components]
+direct_zero_mode_joint_packet = true
+capped_correction = true
+genuine_right_endpoint_term = true
+singular_numerator = true
+exact_supports = true
+
+[collaboration_boundary]
+centered_fiber = "EXACT_IDENTITIES_AND_PROVED_NORM_OR_ENERGY_BOUNDS_ONLY"
+squarefree_gcd = "EXACT_IDENTITIES_AND_PROVED_NORM_OR_VARIATION_BOUNDS_ONLY"
+coefficientwise_norm_one_sufficient = false
+
+[nonclaims]
+full_packet_estimate_proved = false
+weighted_arithmetic_estimate_proved = false
+centered_fiber_quantitative_bound_proved = false
+squarefree_gcd_cancellation_proved = false
+original_leaf_replayed = false
+support_shear_replayed = false
+riemann_hypothesis_proved = false
+chowla_proved = false
+goldbach_proved = false
+
+[next_obligation]
+statement = "Locally replay and axiom-audit FiniteCyclicInterval.lean, FiniteCyclicIntervalDistance.lean, and CoreGrowingShiftEndpointFiniteCyclicCore.lean under one exact pin. Only after those pass, replay the legacy dictionary once its pre-leaf current-main import closure is repaired independently."
