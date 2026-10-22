@@ -1,0 +1,41 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-length-coefficient-piecewise-597-v0.1"
+owner_repository = "grwtsk/math"
+issue = 597
+parent_issue = 595
+parent_pr = 596
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientPiecewise"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientPiecewise"
+
+[source_binding]
+stacked_parent_revision = "f193a7994ee845ba7e0b8860bcc63af6f19ed9eb"
+candidate_branch = "research/rh-piecewise-mass-597"
+theorem_source_commit = "054445f269281bc04951dc188be2db781c6fa6e6"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreLengthCoefficientPiecewise.lean"
+theorem_source_git_blob = "048bc7fe1352c867a94c7c2d154db366dd7c49b4"
+
+[selected_increment]
+max_length = "harmonicShiftCount_le_leftScale"
+zero_above = "coreLengthCoefficientMass_eq_zero_of_leftScale_lt"
+boundary_right_zero = "rightLengthCoefficientMass_at_leftScale_eq_zero"
+boundary_full = "fullLengthCoefficientMass_at_leftScale"
+piecewise_mass = "piecewiseReciprocalLengthCoefficientMassBound"
+truncation = "transposedIncompatibleDyadicL1Packet_eq_truncated"
+boundary_split = "transposedIncompatibleDyadicL1Packet_eq_nonboundary_add_boundary"
+weighted_supplier = "PiecewiseWeightedIncompatibleL1Supplier"
+supplier_equivalence = "piecewiseWeightedIncompatibleL1Supplier_iff_transposed"
+proof_classification = "PIECEWISE_COEFFICIENT_MASS_CLOSURE_AND_LENGTH_TRUNCATION"
+next_obstruction = "bound weighted incompatible L1 sum, especially boundary length n=2^j"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+weighted_incompatible_l1_supplier_proved = false
+short_interval_theorem_applied = false
+riemann_hypothesis_proved = false
