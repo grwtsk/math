@@ -15,6 +15,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtCoefficientSourc
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPrimePowerSelectorControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPrimePowerPackingControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedZetaExplicitFormulaChannelsControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPackingAndResidueHeadControls
 
 set_option autoImplicit false
 
