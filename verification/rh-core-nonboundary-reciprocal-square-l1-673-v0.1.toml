@@ -1,0 +1,46 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-nonboundary-reciprocal-square-l1-673-v0.1"
+owner_repository = "grwtsk/math"
+issue = 673
+parent_issue = 666
+parent_pr = 668
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreNonboundaryReciprocalSquareL1"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreNonboundaryReciprocalSquareL1"
+
+[source_binding]
+stacked_parent_revision = "f0359b50a4e7534e24b72c96d237230f6d94f397"
+candidate_branch = "research/rh-nonboundary-length-673"
+theorem_source_commit = "ec02f0f8fb10904854ce4369e7c686e92e14a282"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreNonboundaryReciprocalSquareL1.lean"
+theorem_source_git_blob = "36be4c643868a349c3f20a4d2fd7a69a1df461cc"
+
+[selected_increment]
+ambient_terminal = "coreNonboundaryAmbientTerminalL1Majorant"
+ambient_depth = "coreNonboundaryDepthAmbientL1Majorant"
+depth_ambient_bound = "coreNonboundaryDepthShortIntervalL1Majorant_le_ambient"
+terminal_selector = "coreNonboundaryAmbientTerminalL1Majorant_eq_selector"
+interior_selector = "harmonicAmbientLongInteriorL1Majorant_eq_selector"
+one_depth_lengthwise = "coreNonboundaryDepthAmbientL1Majorant_eq_lengthwise"
+length_packet = "coreNonboundaryAmbientLengthPacket"
+outer_fubini = "sum_coreNonboundaryDepthAmbientL1Majorant_eq_lengthPacket"
+original_to_length = "coreNonboundaryShortIntervalL1Packet_le_lengthPacket"
+reciprocal_square_packet = "reciprocalSquareAmbientShortIntervalL1Packet"
+coefficient_bound = "coreNonboundaryAmbientLengthPacket_le_reciprocalSquare"
+nonboundary_supplier = "SubpolynomialReciprocalSquareAmbientShortIntervalL1Packet"
+supplier_to_nonboundary = "subpolynomialCoreNonboundaryShortIntervalL1Packet_of_reciprocalSquare"
+conditional_endpoint = "riemannHypothesis_of_classicalWeakMertensStep_and_reciprocalSquareL1"
+proof_classification = "EXACT_LENGTH_TRANSPOSITION_PLUS_RECIPROCAL_SQUARE_COEFFICIENT_MAJORANT"
+next_obstruction = "prove the reciprocal-square ambient short-interval L1 supplier"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+short_interval_supplier_proved = false
+classical_weak_mertens_proved = false
+riemann_hypothesis_proved = false

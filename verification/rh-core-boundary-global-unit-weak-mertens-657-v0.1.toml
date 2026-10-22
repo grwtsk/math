@@ -1,0 +1,42 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-global-unit-weak-mertens-657-v0.1"
+owner_repository = "grwtsk/math"
+issue = 657
+parent_issue = 651
+parent_pr = 652
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryGlobalUnitWeakMertens"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryGlobalUnitWeakMertens"
+
+[source_binding]
+stacked_parent_revision = "6e1c20699b80749c2f806bfc19a59553d799a8b2"
+candidate_branch = "research/rh-global-unit-657"
+theorem_source_commit = "df50ec92af519029770c9d1bded543f6acfe1b28"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryGlobalUnitWeakMertens.lean"
+theorem_source_git_blob = "63e6b9ab5ea40dfbbe15b8743b7d47753365f10b"
+
+[selected_increment]
+global_unit_energy = "dyadicGlobalUnitWeakMertensEnergy"
+kernel_nonneg = "weakMertensUnitKernel_nonneg"
+upper_family = "boundaryUpperUnitFamily_eq_Ico"
+lower_family = "boundaryLowerUnitFamily_eq_range"
+first_two_partition = "boundaryFirstTwoUnitFamilies_eq_global"
+third_family_bound = "boundaryThirdUnitFamily_le_global"
+multiplicity_two = "boundaryLocalizedUnitWeakMertensEnergy_le_two_global"
+global_source = "DyadicGlobalUnitWeakMertensSource"
+global_to_localized = "boundaryUnitIntervalWeakMertensSource_of_global"
+global_to_boundary = "subpolynomialCoreBoundarySignedPacket_of_globalUnitWeakMertens"
+classical_adapter = "ClassicalWeakMertensToDyadicGlobalUnitAdapter"
+proof_classification = "EXACT_DYADIC_PREFIX_PARTITION_AND_MULTIPLICITY_BOUND"
+next_obstruction = "prove conventional Mertens step-function integral identity and dyadic logarithmic growth"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+classical_weak_mertens_adapter_constructed = false
+riemann_hypothesis_proved = false
