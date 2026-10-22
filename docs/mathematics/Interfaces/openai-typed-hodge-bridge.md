@@ -1949,6 +1949,51 @@ The Hodge-membership branch remains separate: actual (H^{2,2}) membership maps t
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4aq. Pure-factor scalar-conjugation equivariance is now local
+
+The arithmetic content of the final assembly-naturality theorem has been discharged on pure factors.
+
+`CMFourFactorSwitchGeometry.lean` now defines:
+
+~~~text
+CanonicalFourfoldVectorTarget
+canonicalFourfoldVectorPure
+canonicalPureAlgebraicAssembly
+scalarConjugate_canonicalPureAlgebraicAssembly
+~~~
+
+For four pure canonical factors
+
+[
+a_iotimes x_iin
+overline{mathbf Q}otimes_{mathbf Q}overline{mathbf Q},
+]
+
+the canonical algebraic assembly is
+
+[
+(a_1a_2a_3a_4)otimes
+(((x_1otimes x_2)otimes x_3)otimes x_4).
+]
+
+Scalar conjugation acts only on the leading algebraic coefficient, so the local theorem proves
+
+[
+sigma!left(
+operatorname{assemble}
+(a_1otimes x_1,ldots,a_4otimes x_4)
+ight)
+=
+operatorname{assemble}
+(sigma(a_1)otimes x_1,ldots,sigma(a_4)otimes x_4)
+]
+
+directly from multiplicativity of (sigma).
+
+Therefore the remaining `FourfoldAlgebraicAssemblyEquivariance` obligation no longer contains arithmetic or CM geometry. It is the formal extension of this pure-factor identity to arbitrary tensors in each of the four slots by multilinearity / the tensor-product universal property.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
