@@ -6,7 +6,7 @@ import Mathlib.NumberTheory.LSeries.ZetaZeros
 import Mathlib.Analysis.Analytic.Order
 import Mathlib.Data.Finset.Card
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic.NormCast
+import Lean.Elab.Tactic.NormCast
 import Mathlib.Tactic.NormNum
 
 set_option autoImplicit false
@@ -111,7 +111,7 @@ def heightHead (T : ℝ) : Finset ZeroPoint := (height_set_finite T).toFinset
 @[simp] theorem mem_heightHead (T : ℝ) (z : ZeroPoint) :
     z ∈ heightHead T ↔ height z ≤ T := by
   classical
-  simp only [heightHead, Set.Finite.mem_toFinset, Set.mem_setOf_eq]
+  simp only [heightHead, Set.Finite.mem_toFinset, Set.mem_ofPred_eq]
 
 /-- An external finite set can replace the head only after exact membership
 agreement at every actual point; numerical proximity is not this premise. -/

@@ -83,7 +83,7 @@ theorem add {u v : ℕ → ℝ}
   have hnu : Nu ≤ n := le_trans (le_max_left Nu Nv) hn
   have hnv : Nv ≤ n := le_trans (le_max_right Nu Nv) hn
   calc
-    |u n + v n| ≤ |u n| + |v n| := abs_add _ _
+    |u n + v n| ≤ |u n| + |v n| := abs_add_le _ _
     _ ≤ ε / 2 + ε / 2 := add_le_add (hNu n hnu) (hNv n hnv)
     _ = ε := by ring
 

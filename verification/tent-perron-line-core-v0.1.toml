@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "tent-perron-line-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -26,7 +29,9 @@ dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/trivial-zero-tent-series-core-v0.1.toml"
-inherited_target_blob = "a4fe9621053af50928bbfd3afc15c3dc190cc71d"
+# Original pre-repair inherited_target_blob = "a4fe9621053af50928bbfd3afc15c3dc190cc71d".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "b57880e7911062590c1efdbe2a7fc4841065c9a2"
 receipt_policy = "Bind the actual new commit/tree externally; a parent receipt does not accept this integration."
 inventory_policy = "Source names only; require exact elaborated types and complete transitive trust closure."
 
@@ -98,8 +103,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
 path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
-source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[upstream_sources]]
 repository = "leanprover-community/mathlib4"

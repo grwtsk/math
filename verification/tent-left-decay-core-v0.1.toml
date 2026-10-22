@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "tent-left-decay-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -26,7 +29,9 @@ dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/tent-edge-bounds-core-v0.1.toml"
-inherited_target_blob = "b3c5f604019641fe02d0eae22a7ea6c52bec854e"
+# Original pre-repair inherited_target_blob = "b3c5f604019641fe02d0eae22a7ea6c52bec854e".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "689e8cad23908897da81887c2a89da0849c7db7f"
 receipt_policy = "Bind the exact new commit and tree externally. Ancestor receipts do not accept this increment."
 inventory_policy = "Lexical names only. Reconcile exact elaborated types, complete import closure and every inherited obligation."
 

@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "height-indexed-tent-residue-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -26,7 +29,9 @@ dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/separated-tent-contour-core-v0.1.toml"
-inherited_target_blob = "483a1fe4388813a7f3069a042ce9535eddd3f1c3"
+# Original pre-repair inherited_target_blob = "483a1fe4388813a7f3069a042ce9535eddd3f1c3".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "d1a4817540fb240494b2ff0c043326794e0b1ec8"
 receipt_policy = "Bind exact new commit/tree externally. No ancestor receipt accepts this increment."
 inventory_policy = "Lexical names only; reconcile every exact elaborated type and transitive dependency."
 
@@ -92,8 +97,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/SeparatedContourHeights.lean"
-source_blob = "78010070791d193bdaa31717f8afb3bdbed6efa8"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "78010070791d193bdaa31717f8afb3bdbed6efa8".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "d5746cb67d255e2ee125cbfec6542b075993fb8c"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [declaration_inventory]
 public_names = [

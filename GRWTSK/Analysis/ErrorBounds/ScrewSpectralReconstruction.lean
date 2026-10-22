@@ -53,20 +53,11 @@ theorem reconstruction_error_bound
       ‖sourceError + hermiteError + transportError + spectralError + tailError‖ ≤
         ‖sourceError‖ + ‖hermiteError‖ + ‖transportError‖ +
           ‖spectralError‖ + ‖tailError‖ := by
-    calc
-      ‖sourceError + hermiteError + transportError + spectralError + tailError‖
-          ≤ ‖sourceError + hermiteError + transportError + spectralError‖ +
-              ‖tailError‖ := norm_add_le _ _
-      _ ≤ (‖sourceError + hermiteError + transportError‖ + ‖spectralError‖) +
-            ‖tailError‖ := by
-        exact add_le_add_right (norm_add_le _ _) _
-      _ ≤ ((‖sourceError + hermiteError‖ + ‖transportError‖) +
-              ‖spectralError‖) + ‖tailError‖ := by
-        exact add_le_add_right (add_le_add_right (norm_add_le _ _) _) _
-      _ ≤ (((‖sourceError‖ + ‖hermiteError‖) + ‖transportError‖) +
-              ‖spectralError‖) + ‖tailError‖ := by
-        exact add_le_add_right
-          (add_le_add_right (add_le_add_right (norm_add_le _ _) _) _) _
+    have h₁ := norm_add_le sourceError hermiteError
+    have h₂ := norm_add_le (sourceError + hermiteError) transportError
+    have h₃ := norm_add_le (sourceError + hermiteError + transportError) spectralError
+    have h₄ := norm_add_le (sourceError + hermiteError + transportError + spectralError) tailError
+    linarith
   rw [decomposition]
   apply triangle.trans
   unfold Budget.total

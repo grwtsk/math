@@ -78,7 +78,9 @@ theorem hasDerivAt_cell (q : ℝ) (hq : 1 ≤ q) (s₀ : ℂ) :
     have he := ((((hasDerivAt_id s).neg).sub_const 3).mul_const
       (Real.log (q + u) : ℂ)).cexp
     have hh := he.const_mul (third u : ℂ)
-    convert hh using 1 <;> dsimp [F, F', logPower] <;> ring
+    apply hh.congr_deriv
+    dsimp [F, F', logPower]
+    ring
   have hb : ∀ᵐ u ∂volume, u ∈ Ι (0 : ℝ) 1 → ∀ s ∈ U,
       ‖F' s u‖ ≤ (1 / 48 : ℝ) * Real.exp (B * Real.log (q + 1)) * Real.log (q + 1) := by
     exact Eventually.of_forall (fun u hu s hs => by
@@ -109,9 +111,9 @@ theorem differentiableOn_above (σ₀ : ℝ) (hσ : -2 < σ₀) :
   have hu : Summable (fun k : ℕ => powerCell ((k : ℝ) + 1) (σ₀ + 2) / 48) := by
     simpa only [add_comm (1 : ℝ)] using summable_cell_majorant 1 σ₀ (by norm_num) hσ
   exact Complex.differentiableOn_tsum_of_summable_norm (U := {w : ℂ | σ₀ < w.re}) hu
-    (fun k => (differentiable_cell ((k : ℝ) + 1) (by linarith [Nat.cast_nonneg (R := ℝ) k])).differentiableOn)
+    (fun k => (differentiable_cell ((k : ℝ) + 1) (by linarith [Nat.cast_nonneg (α := ℝ) k])).differentiableOn)
     (isOpen_lt continuous_const Complex.continuous_re)
-    (fun k s hs => norm_cell_le ((k : ℝ) + 1) σ₀ (by linarith [Nat.cast_nonneg (R := ℝ) k]) hσ s hs.le)
+    (fun k s hs => norm_cell_le ((k : ℝ) + 1) σ₀ (by linarith [Nat.cast_nonneg (α := ℝ) k]) hσ s hs.le)
 
 /-- Every point strictly to the right of -2 has a smaller half-plane neighborhood. -/
 theorem differentiableAt_cubicRemainder (s : ℂ) (hs : -2 < s.re) :
@@ -136,13 +138,13 @@ theorem hasSum_cellLogMoment (s : ℂ) (hs : -2 < s.re) :
   have hu : Summable (fun k : ℕ => powerCell ((k : ℝ) + 1) (σ₀ + 2) / 48) := by
     simpa only [add_comm (1 : ℝ)] using summable_cell_majorant 1 σ₀ (by norm_num) hσ
   have h := Complex.hasSum_deriv_of_summable_norm (U := {w : ℂ | σ₀ < w.re}) hu
-    (fun k => (differentiable_cell ((k : ℝ) + 1) (by linarith [Nat.cast_nonneg (R := ℝ) k])).differentiableOn)
+    (fun k => (differentiable_cell ((k : ℝ) + 1) (by linarith [Nat.cast_nonneg (α := ℝ) k])).differentiableOn)
     (isOpen_lt continuous_const Complex.continuous_re)
-    (fun k w hw => norm_cell_le ((k : ℝ) + 1) σ₀ (by linarith [Nat.cast_nonneg (R := ℝ) k]) hσ w hw.le)
+    (fun k w hw => norm_cell_le ((k : ℝ) + 1) σ₀ (by linarith [Nat.cast_nonneg (α := ℝ) k]) hσ w hw.le)
     (show s ∈ {w : ℂ | σ₀ < w.re} by dsimp [σ₀]; linarith)
   have hd (k : ℕ) : deriv (fun w : ℂ => cellRemainder ((k : ℝ) + 1) (-w)) s =
-      cellLogMoment ((k : ℝ) + 1) s := (hasDerivAt_cell _ (by linarith [Nat.cast_nonneg (R := ℝ) k]) s).deriv
-  simpa only [hd] using h
+      cellLogMoment ((k : ℝ) + 1) s := (hasDerivAt_cell _ (by linarith [Nat.cast_nonneg (α := ℝ) k]) s).deriv
+  convert h using 1 <;> first | rfl | (simp only [hd])
 
 end
 end GRWTSK.RiemannHypothesis.CubicRemainderHolomorphic

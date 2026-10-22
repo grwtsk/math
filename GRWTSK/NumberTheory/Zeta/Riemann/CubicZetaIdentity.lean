@@ -136,7 +136,10 @@ theorem analyticOnNhd_cubicRegularPart :
 /-- The continuation domain includes one; no punctured-domain connectivity oracle is needed. -/
 theorem cubic_halfPlane_convex : Convex ℝ {s : ℂ | -2 < s.re} := by
   intro x hx y hy a b ha hb hab
-  change -2 < a * x.re + b * y.re
+  change (-2 : ℝ) < x.re at hx
+  change (-2 : ℝ) < y.re at hy
+  change (-2 : ℝ) < (a • x + b • y).re
+  simp only [Complex.add_re, Complex.smul_re, smul_eq_mul]
   by_cases ha0 : a = 0
   · have hb1 : b = 1 := by linarith
     simpa only [ha0, hb1, zero_mul, one_mul, zero_add] using hy
@@ -149,7 +152,7 @@ theorem cubic_halfPlane_convex : Convex ℝ {s : ℂ | -2 < s.re} := by
 theorem riemannZeta₀_eq_cubicRegularPart (s : ℂ) (hs : -2 < s.re) :
     riemannZeta₀ s = cubicRegularPart s := by
   have hz : AnalyticOnNhd ℂ riemannZeta₀ {w : ℂ | -2 < w.re} :=
-    fun _ _ => differentiable_riemannZeta₀.analyticAt
+    fun w _ => differentiable_riemannZeta₀.analyticAt w
   have he : riemannZeta₀ =ᶠ[𝓝 (2 : ℂ)] cubicRegularPart := by
     apply eventuallyEq_of_mem
       ((isOpen_lt continuous_const Complex.continuous_re).mem_nhds
@@ -182,7 +185,8 @@ theorem cubicRemainder_at_one_identity :
     (Real.eulerMascheroniConstant : ℂ) = 7 / 12 - 6 * cubicRemainder 1 := by
   have h := riemannZeta₀_eq_cubicRegularPart 1 (by norm_num)
   rw [riemannZeta₀_one, cubicRegularPart] at h
-  convert h using 1 <;> ring
+  convert h using 1
+  ring
 
 end
 end GRWTSK.RiemannHypothesis.CubicZetaIdentity

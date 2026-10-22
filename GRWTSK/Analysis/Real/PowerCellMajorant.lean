@@ -74,7 +74,8 @@ theorem integral_powerCell (q p : ℝ) (hq : 0 < q) (hp : 0 < p) :
     have ht : 0 < q + u := by linarith [hu'.1]
     have h := (((hasDerivAt_decayPower p (q + u) ht).comp u
       ((hasDerivAt_id u).const_add q)).neg).div_const p
-    convert h using 1 <;> field_simp [ne_of_gt hp] <;> ring
+    apply h.congr_deriv
+    field_simp [ne_of_gt hp]
   have hc : ContinuousOn (fun u : ℝ => Real.exp (-(p + 1) * Real.log (q + u)))
       (Icc (0 : ℝ) 1) := by
     intro u hu

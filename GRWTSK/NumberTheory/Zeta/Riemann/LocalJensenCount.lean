@@ -220,7 +220,7 @@ theorem local_principal_of_mass_bound (N : ℕ) (σ y B : ℝ)
       div_le_div_of_nonneg_right hB (heightClearance_pos N).le
     _ ≤ B / (1 / (4 * (B + 1))) :=
       div_le_div_of_nonneg_left hb hdpos hd
-    _ = _ := by field_simp; ring
+    _ = _ := by field_simp
 
 end
 end GRWTSK.RiemannHypothesis.LocalJensenCount

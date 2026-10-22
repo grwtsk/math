@@ -61,7 +61,7 @@ theorem bandMass_le_of_polynomial_circle_bound (N : ℕ) (hN : 2 ≤ N)
     (bandMass N : ℝ) ≤
       2 * (Real.log (4 * C) + (d : ℝ) * Real.log ((N : ℝ) + 2)) / Real.log (6 / 5 : ℝ) := by
   have hC0 : 0 < C := lt_of_lt_of_le zero_lt_one hC
-  have hbase : (1 : ℝ) ≤ (N : ℝ) + 2 := by linarith [Nat.cast_nonneg (R := ℝ) N]
+  have hbase : (1 : ℝ) ≤ (N : ℝ) + 2 := by linarith [Nat.cast_nonneg (α := ℝ) N]
   have hpow : (1 : ℝ) ≤ ((N : ℝ) + 2) ^ d := one_le_pow₀ hbase
   have hM : (1 : ℝ) ≤ C * ((N : ℝ) + 2) ^ d := by
     simpa only [one_mul] using mul_le_mul hC hpow zero_le_one hC0.le

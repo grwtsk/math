@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "cubic-remainder-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/cubic-circle-envelope-core-v0.1.toml"
-inherited_target_blob = "417c6d8ee7b9f1fa524916de32ed1be9e23c6abd"
+# Original pre-repair inherited_target_blob = "417c6d8ee7b9f1fa524916de32ed1be9e23c6abd".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "5b4eeacdab8bbf120401ac69b0001544d5e16b8b"
 receipt_policy = "Bind exact new commit/tree externally; an ancestor receipt does not accept this increment."
 
 [trust]
@@ -46,7 +51,9 @@ canonical_consumer_premises_changed = false
 [[modules]]
 name = "GRWTSK.Analysis.Real.PowerCellMajorant"
 path = "GRWTSK/Analysis/Real/PowerCellMajorant.lean"
-source_blob = "4db44a7adcae11fdfcecd91d863f5613e5621ba3"
+# Original pre-repair source_blob = "4db44a7adcae11fdfcecd91d863f5613e5621ba3".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "2b95abe2eeae712a78e522a58918f24819a5ccdc"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -64,13 +71,17 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainder"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicRemainder.lean"
-source_blob = "ce3412c0cd75863b474b2ae2357b87b1e7f0b1dc"
+# Original pre-repair source_blob = "ce3412c0cd75863b474b2ae2357b87b1e7f0b1dc".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "9ef1c1752a4f2f1389352f7b82ac4877bd84cfe1"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicRemainderHolomorphic.lean"
-source_blob = "1b38681da0e5d53d09414bc9232fd244c2993711"
+# Original pre-repair source_blob = "1b38681da0e5d53d09414bc9232fd244c2993711".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "7bf8b41ba8b704fee0ee64a53b61d2842e9542da"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -82,8 +93,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicPowerSummation"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicPowerSummation.lean"
-source_blob = "e9beea18bfc091dd2fe3d870a020c15d3a98e6e7"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "e9beea18bfc091dd2fe3d870a020c15d3a98e6e7".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fd25e7f5a1025387a239b418248f0b0344891dfa"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[mathematical_notes]]
 path = "docs/mathematics/NumberTheory/Zeta/Riemann/cubic-remainder-normal-convergence.md"

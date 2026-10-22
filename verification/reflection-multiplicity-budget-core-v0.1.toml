@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk.reflection-multiplicity-budget.v0.1"
 id = "reflection-multiplicity-budget-core-v0.1"
 owner_issue = 330
@@ -261,7 +264,9 @@ type_status = "AUTHORED_SOURCE_ONLY; elaborated comparison pending"
 
 [[inherited_sources]]
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
-git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+# Original pre-repair git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+git_blob = "7dcaef4040533a9b3f76d1cf46b2bba88622fdad"
 status = "SOURCE_INSPECTED; full inherited acceptance pending"
 
 [[inherited_sources]]

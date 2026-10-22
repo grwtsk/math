@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "anchored-local-jensen-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/local-jensen-count-core-v0.1.toml"
-inherited_target_blob = "59593cb373fb05a9c98b27991617523bed5b64e8"
+# Original pre-repair inherited_target_blob = "59593cb373fb05a9c98b27991617523bed5b64e8".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "05d0b60c0a5ef6ac7047fed68800c5576b3ee628"
 receipt_policy = "Bind exact new commit and tree externally; no ancestor receipt accepts this increment."
 inventory_policy = "Names are lexical only; every exact type and complete transitive dependency requires replay."
 
@@ -39,7 +44,9 @@ reject_unreported_native_dependencies = true
 [[modules]]
 name = "GRWTSK.Analysis.Real.ReciprocalSquareTail"
 path = "GRWTSK/Analysis/Real/ReciprocalSquareTail.lean"
-source_blob = "18a393d1388ff3af48efc3bced01589a94794255"
+# Original pre-repair source_blob = "18a393d1388ff3af48efc3bced01589a94794255".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "75b3e9d4c49e2ca01b1eb6900e309a18380586da"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -57,20 +64,27 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensen"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/AnchoredLocalJensen.lean"
-source_blob = "605f68bfc1af8a7e5cc646e33a941c3ef21f9913"
+# Original pre-repair source_blob = "605f68bfc1af8a7e5cc646e33a941c3ef21f9913".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "c75ff632b011100da1dce61eb5df8526926f04e0"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.RightHalfPlaneModulus"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/RightHalfPlaneModulus.lean"
-source_blob = "f120aaf3a7bf91089fff2310b3dc6d423dff5071"
+# Original pre-repair source_blob = "f120aaf3a7bf91089fff2310b3dc6d423dff5071".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "6a6818872730e47da338cb1727de6c8848048142"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalJensenCount"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalJensenCount.lean"
-source_blob = "a06a01f4f3ca5ce145faac20c87e58346b191a0a"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "a06a01f4f3ca5ce145faac20c87e58346b191a0a".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "c4ea53e9e9e9d91659cb6d0aaab71cba9bb2046e"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.Interfaces.LocalJensenCountCore"

@@ -33,8 +33,10 @@ def cellRemainder (q : ℝ) (z : ℂ) : ℂ :=
 theorem shifted_power_deriv (q u : ℝ) (z : ℂ) (hqu : 0 < q + u) :
     HasDerivAt (fun t : ℝ => logPower (q + t) z)
       (z * logPower (q + u) (z - 1)) u := by
-  have hd := (hasDerivAt_logPower hqu z).comp u ((hasDerivAt_id u).const_add q)
-  simpa only [Function.comp_def, mul_one, density, logPower] using hd
+  have inner : HasDerivAt (fun t : ℝ => q + t) 1 u :=
+    (hasDerivAt_id u).const_add q
+  have hd := (hasDerivAt_logPower hqu z).scomp u inner
+  simpa only [Function.comp_def, one_smul, density, logPower] using hd
 
 /-- The complete cell is continuous, including both endpoints. -/
 theorem continuousOn_shifted_power (q : ℝ) (hq : 0 < q) (z : ℂ) :
@@ -71,10 +73,16 @@ theorem one_cell_power (q : ℝ) (hq : 0 < q) (z : ℂ) (hz : z + 1 ≠ 0) :
     shifted_power_deriv q u z (by linarith [hu.1])
   have d₁ (u : ℝ) (hu : u ∈ Icc (0 : ℝ) 1) : HasDerivAt f₁ (f₂ u) u := by
     have hd := (shifted_power_deriv q u (z - 1) (by linarith [hu.1])).const_mul z
-    convert hd using 1 <;> dsimp [f₁, f₂] <;> ring_nf
+    apply hd.congr_deriv
+    dsimp [f₂]
+    rw [show z - 1 - 1 = z - 2 by ring]
+    ring
   have d₂ (u : ℝ) (hu : u ∈ Icc (0 : ℝ) 1) : HasDerivAt f₂ (f₃ u) u := by
     have hd := (shifted_power_deriv q u (z - 2) (by linarith [hu.1])).const_mul (z * (z - 1))
-    convert hd using 1 <;> dsimp [f₂, f₃] <;> ring_nf
+    apply hd.congr_deriv
+    dsimp [f₃]
+    rw [show z - 2 - 1 = z - 3 by ring]
+    ring
   have c₃ : ContinuousOn f₃ (Icc (0 : ℝ) 1) :=
     continuousOn_const.mul (continuousOn_shifted_power q hq (z - 3))
   have hc := one_cell f f₁ f₂ f₃ d₀ d₁ d₂ c₃
