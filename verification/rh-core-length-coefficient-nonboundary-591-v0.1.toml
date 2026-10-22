@@ -1,0 +1,39 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-length-coefficient-nonboundary-591-v0.1"
+owner_repository = "grwtsk/math"
+issue = 591
+parent_issue = 589
+parent_pr = 590
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientNonboundary"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreLengthCoefficientNonboundary"
+
+[source_binding]
+stacked_parent_revision = "1e34c4df8845420832fb0aee9c1e12055320983f"
+candidate_branch = "research/rh-nonboundary-mass-591"
+theorem_source_commit = "e450e4c49873c22ee57d8dd64c8f0062dbc6674a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreLengthCoefficientNonboundary.lean"
+theorem_source_git_blob = "de8590ff2573f2f502605f47d6da2cb0bd688565"
+
+[selected_increment]
+first_difference = "reciprocalFirstDifference"
+second_difference = "reciprocalSecondDifference"
+generic_telescope = "sum_reciprocalSecondDifference_Ico"
+left_exact = "leftLengthCoefficientMass_eq_nonboundary"
+left_bound = "leftLengthCoefficientMass_le_three_inv_sq"
+right_target = "RightLengthCoefficientTelescoping"
+conditional_full_bound = "fullLengthCoefficientMass_le_three_inv_sq_of_rightTelescope"
+proof_classification = "LEFT_MASS_CLOSURE_PLUS_RIGHT_TELESCOPE_ISOLATION"
+next_obstruction = "prove right-regime terminal-plus-interior telescope"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+right_telescope_proved = false
+piecewise_mass_bound_proved = false
+riemann_hypothesis_proved = false
