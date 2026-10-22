@@ -91,7 +91,7 @@ theorem interior_real_angle_mem_Ico (k : ℕ)
   constructor
   · positivity
   · unfold angularPeriod
-    have hstep : directedSideOrdinal k c + 1 ≤ 4 * (k + 2) := hordinal
+    have hstep : directedSideOrdinal k c + 1 ≤ 4 * (k + 2) := by omega
     have hstep' : (directedSideOrdinal k c : ℝ) + 1 ≤
         (4 * (k + 2) : ℕ) := by exact_mod_cast hstep
     linarith
