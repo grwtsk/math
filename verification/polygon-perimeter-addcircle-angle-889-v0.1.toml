@@ -1,0 +1,525 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "polygon-perimeter-addcircle-angle-889-v0.1"
+owner_repository = "grwtsk/math"
+issue = 889
+related_issues = [868,859,845,834,823,803,795,774,758,745,734,722,704,653,198,205,545,121,168,516,159,100,15]
+route_id = "GENUS_G_SOURCE_CYCLIC_PERIMETER_CANONICAL_REAL_ADDCIRCLE_ADDRESS"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-perimeter-attachment-868-20261022"
+review_parent_revision = "ee12e3e28b496d907802515628c84d4de0d37cb2"
+review_parent_perimeter_module_git_blob = "89e89609b8dabbf9117a61eb65362f34830916cf"
+review_parent_radial_module_git_blob = "4455b74da256ec09efbe664f9fa95a0b48651d4a"
+review_parent_boundary_module_git_blob = "e563395f94fc594453e48a5b0589d39b28ce42da"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCircleAddress.lean"
+new_module_git_blob = "62fc928913b455d2c4839d1b5748607618b9a5ac"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-perimeter-circle-address.md"
+mathematical_note_git_blob = "4ce48c656b45e5b8b612b297180891019ded5cb8"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+circle_definitions_path = "Mathlib/Topology/Instances/AddCircle/Defs.lean"
+circle_real_path = "Mathlib/Topology/Instances/AddCircle/Real.lean"
+circle_real_quotient = "AddCircle"
+circle_continuous_quotient = "AddCircle.continuous_mk'"
+circle_period_equality = "AddCircle.coe_period"
+circle_to_standard_homeomorphism = "AddCircle.homeomorphAddCircle"
+circle_fundamental_domain_injectivity = "AddCircle.coe_eq_zero_iff_of_mem_Ico"
+circle_interval_endpoint_homeomorphism = "AddCircle.homeoIccQuot"
+perimeter_equivalence_closure = "Relation.EqvGen"
+perimeter_quotient_continuity = "Continuous.quotient_lift"
+reuse_status = "PINNED_MATHLIB_DECLARATIONS_SOURCE_INSPECTED_NOT_ELABORATED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+exact_source_handle_ordinal_and_directed_side_ordinal = true
+true_additive_circle_period_N_equals_4g = true
+all_four_cyclic_seams_validated = true
+final_seam_uses_real_AddCircle_period_not_false_real_zero = true
+continuous_source_circle_address_candidate = true
+quotient_descended_perimeter_circle_address_candidate = true
+continuous_source_perimeter_to_AddCircle_candidate = true
+source_angle_map_to_actual_UnitAddCircle_candidate = true
+imported_nonzero_period_homeomorphism_consumed = true
+nonconstant_circle_address_hostile_fixture = true
+distinct_original_corner_angles_same_attached_vertex = true
+genus_two_and_three_actual_period_fixtures = true
+source_circle_map_global_injectivity_proved = false
+source_circle_map_global_surjectivity_proved = false
+actual_perimeter_S1_homeomorphism_proved = false
+cone_to_closed_disk_homeomorphism_proved = false
+authentic_disk_boundary_attaching_map_proved = false
+genuine_CW_surface_and_manifold_proved = false
+topological_cellular_singular_H1_comparison_proved = false
+surface_pi1_van_kampen_and_Hurewicz_proved = false
+marked_hyperbolic_geodesic_length_proved = false
+Selberg_WeilPetersson_GUE_sofic_proved = false
+Chowla_Mobius_growing_shift_or_zeta_RH_proved = false
+mathematical_statement = "The exact directed polygon side ordinals induce a continuous quotient-descended angular address from the real unpaired cyclic perimeter to Mathlib AddCircle(4g) and hence UnitAddCircle; the real final seam uses the true period quotient and the map distinguishes two source corners collapsed by the paired attaching map."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress"
+authored_declaration_count = 32
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment", "Mathlib.Topology.Instances.AddCircle.Real", "Mathlib.Tactic"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress"
+source_construct = "local cornerDiscreteTopology/cornerDiscrete instances and inferred Fin/circle coercions"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress"
+source_construct = "Quotient.lift angle descent and AddCircle homeomorph type-tag elaboration"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.handleOrdinal"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.directedSideOrdinal"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.angularPeriod"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.angularPeriod_pos"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.angularPeriod_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.handleOrdinal_next_or_wrap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.directedSideOrdinal_next_or_period"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.directedSideOrdinal_bound"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.sourceAngularAddress"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.sourceAngularAddress_of_next_ordinal"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.localSideOrdinal_seam01"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.localSideOrdinal_seam12"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.localSideOrdinal_seam23"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.sourceAngularAddress_cyclic_seam"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.sourceAngularAddress_respects_step"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.sourceAngularAddress_respects_connected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.sourceAngularAddress_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.perimeterAngle"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.perimeterAngle_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.perimeterAngle_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.perimeterAngle_cyclic_endpoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.periodCircleHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.perimeterUnitAngle"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.perimeterUnitAngle_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.firstCorner_angle_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.nextCorner_angle_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.one_mem_circle_fundamental_domain"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.angle_one_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.distinct_first_corner_angles"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.distinct_angles_same_attached_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.genusTwo_angular_period"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress.genusThree_angular_period"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent-source"
+requirement = "The candidate imports exact PR #872 head ee12e3e28b496d907802515628c84d4de0d37cb2, without parent edits."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-unpaired-perimeter"
+requirement = "The angular map's source is EXACT UnpairedPerimeter k, not the already paired boundary B_k or filled F_k."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-directed-side-topology"
+requirement = "Only PolygonCorner k's finite source index has discrete topology; the genuine t∈unitInterval retains its usual real topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-ordinal-first"
+requirement = "First base Handle(k) maps to ordinal 0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-ordinal-second"
+requirement = "Second base Handle(k) maps to ordinal 1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-ordinal-extra"
+requirement = "Original extra handle j maps to ordinal 2+j, preserving all source IDs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "directed-side-ordinal"
+requirement = "Original side (h,i) has ordinal 4*handleOrdinal h+i.val, in exact inherited block order."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "directed-count-vs-generator-count"
+requirement = "Period N=4*(k+2) counts directed edges; the 2*(k+2) unoriented one-cell generators are distinct data."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "period-strict-positive"
+requirement = "N>0 for every k≥0 and is never zero as a real number."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "period-wrap-not-real-zero"
+requirement = "A last-to-first seam identifies real address N and 0 ONLY in the genuine AddCircle quotient, using AddCircle.coe_period."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-handle-first-second"
+requirement = "The first handle advances to the second, with the expected ordinal+1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-handle-second-noextras"
+requirement = "For k=0, second base handle wraps to first rather than a nonexistent extra handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-handle-second-extra"
+requirement = "For k>0, second base handle advances to actual extra handle zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-handle-extra-increment"
+requirement = "Consecutive extra handle ordinals differ by one with exact Fin k source IDs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-handle-extra-final-wrap"
+requirement = "Last added handle wraps to first handle only after its last directed side."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "ordinal-next-cases"
+requirement = "For every handle, the last edge's endpoint ordinal is the next first ordinal or exactly N before wrap."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "directed-ordinal-bounds"
+requirement = "Every original directed side starts at an ordinal <N, guarding against mismatched period length."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-angle-source-exact"
+requirement = "The source angle equals the real ordinal plus tangential t, coerced into AddCircle(N), not a fabricated indexed class."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "local-seam01-real-equality"
+requirement = "Endpoint of side 0 and start of side 1 have exactly the same real angle address."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "local-seam12-real-equality"
+requirement = "Endpoint of side 1 and start of side 2 have exactly the same real angle address."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "local-seam23-real-equality"
+requirement = "Endpoint of side 2 and start of side 3 have exactly the same real angle address."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cyclic-seam-circle-equality"
+requirement = "Final side endpoint and next handle's first side start have equal authentic additive-circle classes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-false-real-wrap"
+requirement = "The cyclic period seam must not be discharged by asserting the false real equality N=0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "only-four-unpaired-seams"
+requirement = "The angular descent checks the four PerimeterSeamStep constructors and no premature a/a-inverse or b/b-inverse side pairing."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-seam-EqvGen-descent"
+requirement = "Mathlib EqvGen induction proves source angle equality along all old perimeter relations."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-original-source"
+requirement = "The source map BoundaryPoint→AddCircle(N) is actually Continuous using its true discrete/interval product topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-circle-valued-quotient-lift"
+requirement = "The map perimeterAngle is genuinely defined by Quotient.lift on the authentic unpaired perimeter Setoid."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-descended-angle"
+requirement = "The map from the real UnpairedPerimeter topological quotient to AddCircle(N) is proven Continuous.quotient_lift."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "every-source-point-formula"
+requirement = "The source-commuting angular formula holds for every original side point, not merely sampled edges."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-cyclic-endpoints"
+requirement = "Final last-to-next-handle seam has equal angular images for all k."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "mathlib-real-addcircle"
+requirement = "Use actual Mathlib AddCircle(N) and its ℝ quotient, not a new type pretending to be S1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "imported-rescaling-homeomorphism"
+requirement = "Use the pre-existing Mathlib AddCircle.homeomorphAddCircle for the genuine positive period N."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "standard-UnitAddCircle-target"
+requirement = "The rescaled continuous map targets the actual standard UnitAddCircle=ℝ/ℤ."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-false-homeomorphism"
+requirement = "Continuous map P_k→UnitAddCircle is not declared a homeomorphism without source-specific bijectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-corner-zero"
+requirement = "The first original signed source corner has true angular coordinate 0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "next-directed-corner-one"
+requirement = "The original next directed source edge corner has true angular coordinate 1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fundamental-domain-control"
+requirement = "The real representative 1 belongs to [0,N), using the exact bound N≥8."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-two-angles-distinct"
+requirement = "The two first source corners have distinct AddCircle(N) values, proved by Mathlib's fundamental-domain injectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "attaching-collapses-distinct-angles"
+requirement = "The exact two distinct-angular-address source corners have equal images under the existing paired-boundary attaching map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-constant-map"
+requirement = "The angular map is not an always-zero constant witness; its first two source points have distinct values."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-period-eight"
+requirement = "For k=0 the angular period is 8 and original polygon has two full handle blocks."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-period-twelve"
+requirement = "For k=1 the angular period is 12 and original polygon has one extra handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "global-injectivity-open"
+requirement = "No global injectivity of the constructed map on the entire unpaired perimeter is yet proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "global-surjectivity-open"
+requirement = "No global surjectivity of the map onto the full additive circle is yet proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "S1-homeomorphism-open"
+requirement = "No Homeomorph P_k≃ₜS1/UnitAddCircle or continuous inverse is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "standard-circle-mathlib-provenance"
+requirement = "The AddCircle real quotient, fundamental domain and interval-endpoint homeomorphism are Mathlib imported results, not locally discovered theorems."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk-attaching-upgrade"
+requirement = "This angular address is not a standard closed-disk boundary attaching map and does not supply cone-to-D2."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-actual-CW-surface"
+requirement = "No genuine compact oriented genus-g surface, CW characteristic maps or topological chain-complex comparison is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-van-kampen-Hurewicz"
+requirement = "No π1 van Kampen, cellular/singular H1 comparison or Hurewicz isomorphism is established."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-selberg"
+requirement = "No marked hyperbolic metric, true primitive geodesic length, Selberg trace coefficient or Weil-Petersson average is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-GUE-Chowla-RH"
+requirement = "No sofic/GUE microscopic law, growing-shift Möbius/Chowla estimate, zeta divisor or Riemann hypothesis follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-decls-unqualified"
+requirement = "Local topology instances, AddCircle type tags and imported quotient dependencies require exact-head generated declaration and transitive axiom audits."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-F06-Lean-execution"
+requirement = "Passive TOML authorizes no Lean/Lake, native/VM/F06, CI/workflow/cache/executor, root, toolchain or dependency operations."
+status = "NOT_RUN"
+
