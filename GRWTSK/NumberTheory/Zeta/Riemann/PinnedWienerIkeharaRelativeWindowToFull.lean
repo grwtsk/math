@@ -128,7 +128,7 @@ theorem tauberian_relativeWindows_to_fullCumulative
       _ ≤ (2 * H) * (ε / (8 * H)) :=
         mul_le_mul_of_nonneg_left hδcost (by positivity)
       _ = ε / 4 := by
-        field_simp
+        field_simp [ne_of_gt hH]
         ring
   obtain ⟨Nw, hNw⟩ :=
     (Metric.tendsto_atTop.mp
@@ -244,9 +244,9 @@ theorem pinnedVonMangoldtWeakPNT_of_intervalLimits
         (∑ n ∈ Finset.range N, pinnedTauberianLambda n) ≤
           (Real.log 4 + 4) * (N : ℝ) := by
     intro N
-    simpa [pinnedTauberianLambda,
-      ← pinnedVonMangoldtRangeNorm_eq_sum] using
-      pinnedVonMangoldtRangeNorm_le_chebyshev N
+    have h := pinnedVonMangoldtRangeNorm_le_chebyshev N
+    rw [pinnedVonMangoldtRangeNorm_eq_sum] at h
+    simpa [pinnedVonMangoldtRangeSum, pinnedTauberianLambda] using h
   have h :=
     tauberian_relativeWindows_to_fullCumulative
       pinnedTauberianLambda 1 (Real.log 4 + 4)
