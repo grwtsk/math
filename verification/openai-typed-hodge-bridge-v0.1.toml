@@ -244,7 +244,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
 labels = ["eq:cm-sign-to-hodge-type"]
-statement_role = "identify scalar-conjugate active Hecke-space Hodge type with the prescribed odd CM sign"
+statement_role = "supply the valuation identity nu_iota(sigma e)=-(3/2)v(g) and identify scalar-conjugate active Hecke-space Hodge type with the prescribed odd CM sign; local source derives the resulting slope selector arithmetic"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines"
 status = "OPEN"
 
