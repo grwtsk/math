@@ -4,7 +4,7 @@ Model: Band, Beckus and Loewy, arXiv:2402.16703v2, equation (1.1).
 The finite comparison is proved here. FreeIDS proves the actual free count limit;
 the nonzero-coupling infinite-volume IDS remains a separate obligation.
 Mathlib authorship and licenses remain upstream. -/
-import GRWTSK.Algebra.LinearAlgebra.Sturmian
+import GRWTSK.LinearAlgebra.LinearAlgebra.Sturmian
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
 import Mathlib.Topology.Order.OrderClosed

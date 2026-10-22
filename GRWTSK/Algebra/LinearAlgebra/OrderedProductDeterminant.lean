@@ -3,7 +3,7 @@ MIT. R.A. Jacob Martone direction; OpenAI Codex assistance; historical split unk
 Established determinant-one ordered-product mathematics; upstream identities retained.
 -/
 import GRWTSK.Algebra.OrderedProduct
-import GRWTSK.Algebra.LinearAlgebra.JacobiTransfer
+import GRWTSK.LinearAlgebra.LinearAlgebra.JacobiTransfer
 import GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
 
 namespace GRWTSK.LinearAlgebra.OrderedProductDeterminant

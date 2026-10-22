@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Moebius.MeanSquareGrowth
-import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
+import GRWTSK.Analysis.Moebius.PolynomialLaplaceHolomorphy
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
 /-!

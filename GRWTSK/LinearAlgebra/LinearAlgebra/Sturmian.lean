@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Model source: Ram Band, Siegfried Beckus, Raphael Loewy, arXiv:2402.16703v2,
 equation (1.1) and Appendix I. Mathlib authorship and licenses remain upstream. -/
-import GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
+import GRWTSK.LinearAlgebra.LinearAlgebra.SchrodingerTransfer
 import Mathlib.Algebra.Order.Floor.Ring
 import Mathlib.LinearAlgebra.Matrix.Trace
 import Mathlib.Tactic

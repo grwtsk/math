@@ -3,7 +3,7 @@ Human mathematical direction: R.A. Jacob Martone. Formalization assistance: Open
 Mathlib results retain their upstream authorship and Apache-2.0 license.
 Source-specific CCC continuation; local conditional candidate, RH remains open. -/
 import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy
-import GRWTSK.NumberTheory.Moebius.LaplaceTransform
+import GRWTSK.Analysis.Moebius.LaplaceTransform
 import GRWTSK.Analysis.LaplaceTransform.Analytic
 import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 

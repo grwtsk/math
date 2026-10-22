@@ -14,8 +14,8 @@ import GRWTSK.Analysis.InnerProductSpace.CausalResponseGram
 import GRWTSK.NumberTheory.Moebius.WeightedIntegralGrowth
 import GRWTSK.Analysis.LaplaceTransform.CausalExponentialResponse
 import GRWTSK.NumberTheory.Moebius.MeanSquareLaplaceHolomorphy
-import GRWTSK.NumberTheory.Moebius.PolynomialLaplaceHolomorphy
-import GRWTSK.NumberTheory.Moebius.LaplaceDirichletSeries
+import GRWTSK.Analysis.Moebius.PolynomialLaplaceHolomorphy
+import GRWTSK.Analysis.Moebius.LaplaceDirichletSeries
 import GRWTSK.NumberTheory.Moebius.FiniteLaplaceSums
 import GRWTSK.NumberTheory.Zeta.ZeroFreeHalfPlaneCriteria
 import GRWTSK.NumberTheory.Moebius.WeightedSummatoryIntegral

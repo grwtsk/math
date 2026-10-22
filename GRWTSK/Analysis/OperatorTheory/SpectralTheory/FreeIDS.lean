@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Free Dirichlet counting limit and its inverse cuts. Mathlib authorship and
 licenses remain upstream. No Sturmian IDS existence or RH estimate is assumed. -/
-import GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
+import GRWTSK.Spectral.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
 import Mathlib.Analysis.SpecificLimits.Basic
 
 set_option autoImplicit false

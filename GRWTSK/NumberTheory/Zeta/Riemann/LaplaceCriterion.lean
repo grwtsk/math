@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license.
 Source-specific CCC continuation; local conditional candidate, RH remains open. -/
-import GRWTSK.NumberTheory.Moebius.LaplaceTransform
+import GRWTSK.Analysis.Moebius.LaplaceTransform
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry
 import GRWTSK.NumberTheory.Zeta.Riemann.Regularized
 

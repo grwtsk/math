@@ -1,1 +1,1 @@
-import GRWTSK.Logic.ProofChecking.Checks.FullAnalyticArithmeticKernel
+import GRWTSK.NumberTheory.ProofChecking.Checks.FullAnalyticArithmeticKernel

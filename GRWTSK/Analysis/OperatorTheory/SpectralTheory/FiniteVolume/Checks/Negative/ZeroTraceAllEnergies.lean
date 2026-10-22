@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.LinearAlgebra.Sturmian
+import GRWTSK.LinearAlgebra.LinearAlgebra.Sturmian
 open GRWTSK.LinearAlgebra.Sturmian
 
 -- The free transfer at energy three remains outside the bounded-trace interval.
