@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-four-distinct-shift-pair-count-911-v0.1"
+owner_repository = "grwtsk/math"
+issue = 911
+parent_issue = 907
+parent_pr = 910
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_DISTINCT_SHIFT_PAIR_COUNT_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctShiftPairCount"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctShiftPairCount"
+
+[source_binding]
+stacked_parent_revision = "c5b42c8fefa8e817888f33530f9590cb1f050130"
+candidate_branch = "research/rh-four-distinct-shift-pair-count-911-20261022"
+theorem_source_commit = "76fbd7468c31f0fecc6542c982464f1155197a04"
+mathematical_note_commit = "bcfbe27dbcd32191977751a2887e716a008bf013"
+
+[evidence_states]
+source_draft = true
+admissible_shift_subset_center_range_scripted = true
+fiber_cardinality_endpoint_bound_scripted = true
+pair_cardinality_endpoint_square_scripted = true
+distinct_filter_cardinality_bound_scripted = true
+one_lag_endpoint_cube_bound_scripted = true
+analytic_cancellation_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
