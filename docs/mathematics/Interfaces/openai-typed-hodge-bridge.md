@@ -1147,6 +1147,29 @@ No algebraicity statement is inferred from the row-support calculation itself.
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4t. Two-factor identity-line realization is independent of the switch theorem
+
+The unchanged-row geometry has now been split from the four-factor algebraicity theorem in `CMFourFactorSwitchGeometry.lean`.
+
+The source introduces:
+
+~~~text
+TwoFactorIdentityWitness
+TwoFactorIdentitySupplier
+IdentityTensorAssemblySupplier
+identityTransitionSupplierOfTwoFactor
+~~~
+
+For one unchanged row, the intended geometric object is the degree-one identity/diagonal correspondence on the same CM factor. In the manuscript this supplies the nonzero algebraic line (U(v)_1\otimes U(v)_c).
+
+A separate assembly supplier records only the routine operation of pulling those per-row classes to distinct old/new slots and multiplying them.
+
+The local function `identityTransitionSupplierOfTwoFactor` proves that these two ingredients suffice to build the whole-list `IdentityTransitionSupplier`.
+
+This matters epistemically: unchanged rows do not consume the independent four-factor switch theorem. The remaining genuinely four-factor obligation is confined to the two changed rows of an atomic switch.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
