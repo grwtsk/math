@@ -1,0 +1,293 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-finite-singular-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachFiniteSingularCore"
+build_target = "GRWTSK.Interfaces.GoldbachFiniteSingularCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "10319d9b2f2912fc8ad44330be60e1339c2a7c7c"
+base_tree = "e6fe0d0bd63a694650638ab1e4ffc9d8005126f4"
+stacked_on_pr = 387
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/goldbach-common-window-core-v0.1.toml"
+inherited_target_blob = "ce7dff8f0d79fd60909e364ab1904f52fd9ea65b"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_goldbach_count = "INHERITED_MAIN_SOURCE"
+weighted_positivity_bridge = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+continuous_circle_coefficient_identity = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+prime_modulus_local_factors = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+finite_prime_cutoff_product = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+rational_arc_geometry_and_separation = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+canonical_progression_model = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+prime_coefficient_local_factor_bridge = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+periodized_common_singular_window = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+ordered_pair_singular_expansion = "NEW_SOURCE_DRAFT"
+zero_frequency_antidiagonal = "NEW_SOURCE_DRAFT"
+exact_character_window_integral = "NEW_SOURCE_DRAFT"
+finite_sine_quotient_evaluation = "NEW_SOURCE_DRAFT"
+diagonal_plus_oscillatory_decomposition = "NEW_SOURCE_DRAFT"
+diagonal_mass_two_Q_div_q = "NEW_SOURCE_DRAFT"
+complete_finite_oscillatory_budget = "NEW_SOURCE_DRAFT"
+evaluated_progression_major_split = "NEW_SOURCE_DRAFT"
+evaluated_terminal_consumers = "NEW_SOURCE_DRAFT"
+uniform_oscillatory_budget_estimate = "NOT_SUPPLIED"
+composite_denominator_coefficient_formula = "NOT_SUPPLIED"
+finite_denominator_to_local_product_comparison = "NOT_SUPPLIED"
+uniform_prime_progression_estimate = "NOT_SUPPLIED"
+infinite_singular_series = "NOT_SUPPLIED"
+singular_series_convergence_or_tail = "NOT_SUPPLIED"
+minor_arc_bound = "NOT_SUPPLIED"
+signed_every_even_residual_bound = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachFiniteSingularCore"
+path = "GRWTSK/Interfaces/GoldbachFiniteSingularCore.lean"
+source_blob = "cc67c19e434420890db5223319173df09946a970"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion"
+path = "GRWTSK/NumberTheory/Primes/GoldbachFiniteSingularExpansion.lean"
+source_blob = "01778794f3ebc9870e3e4e5fe6bb08882a964c32"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation"
+path = "GRWTSK/NumberTheory/Primes/GoldbachFiniteSingularEvaluation.lean"
+source_blob = "adcf30e2cd3d8619b03a654707f10de226b0f8e4"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary"
+path = "GRWTSK/NumberTheory/Primes/GoldbachFiniteSingularBoundary.lean"
+source_blob = "e76c5b2f3e8b2d15c67f93edffcdf5a9759000f8"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachFiniteSingularControls.lean"
+source_blob = "f24cc6330c2a898d484088f0ab17e41bc360c34b"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachCommonWindowCore"
+path = "GRWTSK/Interfaces/GoldbachCommonWindowCore.lean"
+source_blob = "3bef8958d20bd4974b2dd0aac8551fa808d72d9f"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachPeriodizedSingularWindow"
+path = "GRWTSK/NumberTheory/Primes/GoldbachPeriodizedSingularWindow.lean"
+source_blob = "d9bfe2b9d98d1bf9dd21442c3f1d9f193c4f5713"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachCommonWindowBoundary"
+path = "GRWTSK/NumberTheory/Primes/GoldbachCommonWindowBoundary.lean"
+source_blob = "8c5b5dab4e7b73e81837f6276518eed2378ea962"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachProgressionCoefficientFactorization"
+path = "GRWTSK/NumberTheory/Primes/GoldbachProgressionCoefficientFactorization.lean"
+source_blob = "49ba3a1173e1d21f6da01d2646c0507a7ec085ad"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Fourier/AddCircle.lean"
+blob = "3f5c6ed72797f568db7740186fc4ee2f0cdf0fed"
+required_declarations = ["fourier_coe_apply", "fourier_add"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Finset/NatAntidiagonal.lean"
+blob = "aaca416e0d4605b5a205bbe71d438ac7c002d43d"
+required_declarations = ["Finset.Nat.card_antidiagonal", "Finset.mem_antidiagonal"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean"
+blob = "335df785f4a6b999c0836dc5a67c359f7766d56a"
+required_declarations = ["integral_exp_mul_I_eq_sin"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean"
+blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+required_declarations = ["intervalIntegral.integral_comp_mul_left"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/Bochner/Set.lean"
+blob = "338ff3f267c912291cbf581e3cd3f2de78982a82"
+required_declarations = ["MeasureTheory.integral_Icc_eq_integral_Ioc"]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-finite-singular-evaluation.md"
+source_blob = "4fe78e41a939901ea3134c74c7cdbfdc5786dd3a"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_names = [
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionDiagonalWindowMajorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionExplicitDiagonalMajorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionDiagonalWindowMajorSum_eq_explicit",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionOscillatoryWindowMajorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionOscillatoryWindowBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionSymmetricWindowMajorSum_eq_diagonal_add_oscillatory",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionOscillatoryWindowBudget_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.norm_goldbachProgressionOscillatoryWindowMajorSum_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionSymmetricWindowMajor_re_lower",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionDenominatorMajorBlock_eq_evaluated",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachProgressionDenominatorMajorBlock_eq_explicit",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachCount_pos_of_diagonalWindow_progression_bounds",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularBoundary.goldbachCount_pos_of_diagonalWindow_coefficient_certificate",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.pair_box_zero_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.oscillatory_correction_zero_target",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.oscillatory_budget_zero_target",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.symmetric_integral_zero_target",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.off_diagonal_one_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.oscillatory_correction_one",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.character_window_half_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.diagonal_main_cancellation_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.symmetric_integral_boundary_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.half_period_scale_rejected",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.finite_pair_inventory_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.evaluated_window_not_goldbach_witness",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls.strict_window_margin_rejected",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachCharacterWindowValue",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricCharacterIntegral",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachCharacterWindowValue_of_ne_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachCharacterWindowValue_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachCharacterWindowValue_neg",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricCharacterIntegral_formula",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricRealSingularIntegral_eq_interval",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricRealSingularIntegral_eq_pairEvaluation",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSingularDiagonalMain",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSingularDiagonalMain_eq_two_mul_div",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSingularOscillatoryCorrection",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSingularOscillatoryBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricRealSingularIntegral_eq_main_add_correction",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSingularOscillatoryBudget_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.norm_goldbachSingularOscillatoryCorrection_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricRealSingularIntegral_im",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSingularDiagonalMain_sub_budget_le_re",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularEvaluation.goldbachSymmetricRealSingularIntegral_re_pos_of_budget",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularPairBox",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.mem_goldbachSingularPairBox",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularPairFrequency",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularDiagonalPairs",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularOffDiagonalPairs",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.mem_goldbachSingularDiagonalPairs",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularDiagonalPairs_subset_pairBox",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.mem_goldbachSingularOffDiagonalPairs",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularPairFrequency_eq_zero_iff",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularPairFrequency_ne_zero_of_offDiagonal",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.card_goldbachSingularPairBox",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.card_goldbachSingularDiagonalPairs",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.card_goldbachSingularOffDiagonalPairs",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachFiniteSingularKernel_eq_pairSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularPairBox_eq_diagonal_union_offDiagonal",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularDiagonalPairs_disjoint_offDiagonal",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachSingularDiagonalCharacterSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachFiniteSingularExpansion.goldbachFiniteSingularKernel_eq_diagonal_add_offDiagonal",
+]
+
+[static_checks]
+manifest_toml_parsed = true
+source_blob_identities_matched = true
+public_name_inventory_reconciled = true
+newline_and_whitespace_checks_passed = true
+comments_strings_and_delimiters_balanced = true
+uncommented_forbidden_token_scan_passed = true
+forbidden_tokens = ["sorry", "sorryAx", "admit", "axiom", "unsafe", "native_decide", "run_tac", "implemented_by", "#eval", "#reduce"]
+
+[finite_diagnostics]
+kind = "independent_exact_integer_and_rational_models"
+assertions = 11198888
+models = 225017
+coverage = [
+  "ordered pair-box cardinality",
+  "zero frequency iff natural antidiagonal",
+  "diagonal/off-diagonal partition",
+  "frequency range and symmetry",
+  "triangular frequency multiplicity N+1-|m|",
+  "safe-scale radius below one half",
+  "exact diagonal cancellation 2*rho*(N+1)=2Q/q"
+]
+not_lean_execution = true
+not_analytic_verification = true
+not_execution_receipt = true
+
+[controls]
+source = "GRWTSK.NumberTheory.Primes.Checks.GoldbachFiniteSingularControls"
+required = [
+  "pair_box_zero_control",
+  "oscillatory_correction_zero_target",
+  "oscillatory_budget_zero_target",
+  "symmetric_integral_zero_target",
+  "off_diagonal_one_control",
+  "oscillatory_correction_one",
+  "character_window_half_control",
+  "diagonal_main_cancellation_control",
+  "symmetric_integral_boundary_control",
+  "half_period_scale_rejected",
+  "finite_pair_inventory_control",
+  "evaluated_window_not_goldbach_witness",
+  "strict_window_margin_rejected"
+]
+
+[nonclaims]
+lean_or_lake_executed = false
+kernel_audit_complete = false
+transitive_axiom_audit_complete = false
+hostile_lean_replay_complete = false
+external_acceptance_received = false
+common_window_inherited_accepted = false
+uniform_oscillatory_budget_proved = false
+composite_denominator_multiplicativity_proved = false
+finite_denominator_tail_proved = false
+prime_progression_estimate_proved = false
+minor_arc_estimate_proved = false
+finite_exception_coverage_proved = false
+strong_goldbach_proved = false
