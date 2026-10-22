@@ -9,18 +9,20 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lake_manifest_file = "lake-manifest.json"
 
 [scope]
-kind = "isolated-two-module-target"
-module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns"
-source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+kind = "isolated-three-module-target"
+module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval"
+source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshParseval.lean"
 required_modules = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval",
 ]
 required_sources = [
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
   "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshOrthogonality.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshParseval.lean",
 ]
-require_exact_two_module_dependency = true
+require_exact_three_module_dependency = true
 allow_only_selected_module_build = true
 mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
 requires_clean_checkout = true
@@ -52,6 +54,11 @@ expected = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityThird",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.plainMomentOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshPolynomial",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCorrelationEnergy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.chiSquareAgainstUniform",
 ]
 
 [theorems]
@@ -71,8 +78,15 @@ required = [
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonality",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn_factor",
   "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment_factor",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshPolynomial_parseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation_empty",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation_empty_sample",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.booleanCube_card",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation_walsh",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation_parseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.chiSquareAgainstUniform_eq_energy",
 ]
-exact_count = 15
+exact_count = 22
 requires_exact_types = true
 requires_full_axiom_inspection = true
 
@@ -111,8 +125,24 @@ id = "moment-sign-convention"
 must_preserve = "Parent signedMomentOn includes the pattern character. Factoring it must retain the unchanged source moment and correct character."
 
 [[hostile_controls]]
+id = "positive-root-cardinality"
+must_preserve = "The empirical chi-square equality requires 0 < roots.card. Empty-root sourceCorrelation is zero; treating 0/0 as one is forbidden."
+
+[[hostile_controls]]
+id = "nonempty-correlation-energy"
+must_preserve = "The sum over subset characters excludes exactly the empty subset, whose positive-sample coefficient is one. Full-cube orthogonality must be used."
+
+[[hostile_controls]]
+id = "squared-not-absolute-energy"
+must_preserve = "The correlation energy is the sum of squares of PLAIN source moments divided by roots.card squared, not the sum of raw or pattern-signed moments."
+
+[[hostile_controls]]
+id = "chi-square-denominator"
+must_preserve = "Pearson chi-square relative to U is q^{-1} sum_a(q P(a)-1)^2, q=card(ι→Bool). It is not q times this expression."
+
+[[hostile_controls]]
 id = "no-probabilistic-upgrade"
-must_preserve = "Walsh character orthogonality is source-drafted; chi-square, entropy, Parseval and TV inequalities remain written derivations, not Lean theorem declarations in this target."
+must_preserve = "Walsh Parseval and exact chi-square energy are source-drafted, NOT kernel-audited. Total-variation and Shannon-entropy inequalities remain written derivations, not Lean declarations in this target."
 [[hostile_controls]]
 id = "no-spectral-upgrade"
 must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
@@ -139,7 +169,8 @@ claims = [
   "Liouville distribution limits",
   "growing-window uniform correlation energy",
   "sofic action existence or spectral convergence",
-  "Parseval, chi-square, total-variation or entropy inequalities already proved in Lean",
+  "Parseval or chi-square identity already kernel-checked in Lean",
+  "total-variation or entropy inequalities already proved in Lean",
   "Montgomery pair correlation or GUE",
   "Riemann hypothesis",
   "native Lean, Lake, CI or independent replay success",
