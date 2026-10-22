@@ -27,7 +27,7 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/goldbach-rational-separation-core-v0.1.toml"
-inherited_target_blob = "b951e23076e4e1683b5c5d006ab1fe862baa058c"
+inherited_target_blob = "af973da1076a0f7bd5aa3471eb1bab0dca717fac"
 receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
 
 [trust]
@@ -69,25 +69,25 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates"
 path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcCoordinates.lean"
-source_blob = "39968f13f9e3f7fd2297c70d3d54f91a84bff1e2"
+source_blob = "9af21ef6fb4ab30e9ba469f2e3b4cfafaeecbb9c"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition"
 path = "GRWTSK/NumberTheory/Primes/GoldbachResidueClassDecomposition.lean"
-source_blob = "3c5116d2fbdffaea0cb610f46cdceada66232167"
+source_blob = "3dcc3172ebbd61955f92d62c7f983d62de6b5257"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary"
 path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcModelBoundary.lean"
-source_blob = "3340fb3a2588ac2038cb38ea174dbafff8859585"
+source_blob = "7df80f636eee5865ab187f330702bfde9e63ef9c"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls"
 path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachRationalArcModelControls.lean"
-source_blob = "581386aeb27b59c0b901070675573f8822ee8db0"
+source_blob = "185484dc9a734d4a0fea78b898071900989a1809"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -99,25 +99,25 @@ disposition = "INHERITED_NOT_ACCEPTED"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion"
 path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcExpansion.lean"
-source_blob = "b528993bb0c29c85a8a15a556b2c605c848dc1cd"
+source_blob = "30d5dbfeee795765a7fa37b6ba360244803dedd5"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs"
 path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcs.lean"
-source_blob = "031c970c4ebe31d630ec54bf772cda287ecac825"
+source_blob = "acba3601d465884acea5e23a96fef9bbfdc2786b"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral"
 path = "GRWTSK/NumberTheory/Primes/GoldbachCircleIntegral.lean"
-source_blob = "d24265d88bdaedef801293fa0d4e118eda362757"
+source_blob = "b098bd650cae9fccf6a37858d4f39cbfacbcd7d3"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.GoldbachWeighted"
 path = "GRWTSK/NumberTheory/Primes/GoldbachWeighted.lean"
-source_blob = "e76129ebfd7b62f6ecb72f3d229adb382af22598"
+source_blob = "2f4bd5318e8a85bf20cc375b87ebaa635f2524d3"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]
