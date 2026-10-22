@@ -238,6 +238,41 @@ identification with actual Hodge lines, rational descent, and algebraicity
 remain separate. This is the source-level interface to issues #176, #178,
 #180, #181, and #183.
 
+## 4a. Actual embedding-line realization boundary
+
+The finite sign profile is not yet a Hodge structure. A separate realization
+must assign each sign coordinate an actual pure weight-one line type and prove
+
+~~~text
+positive sign -> (1,0)
+negative sign -> (0,1).
+~~~
+
+The local source file
+\`GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean\` introduces exactly
+this additional datum as \`EmbeddingLineRealization\`. Under four-label balance
+it proves
+
+\[
+  \sum p_i=2,\qquad \sum q_i=2
+\]
+
+for every selected coordinate in the four-factor pattern. Thus the precise
+local chain is now
+
+\[
+\text{four-label balance}
+\to
+\text{two/two sign profile}
++
+\text{embedding-line realization}
+\to
+\text{realized }(2,2)\text{ bidegree}.
+\]
+
+The file does not construct the CM abelian variety, prove scalar descent, or
+prove algebraicity. It remains SOURCE_DRAFT / NOT_RUN.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
@@ -288,6 +323,29 @@ The finite-dimensional last mile is now present as source in
 argument has supplied the Hodge/Newton dimension equality. It remains
 SOURCE_DRAFT / NOT_RUN and therefore supplies no filtered-Frobenius theorem by
 itself.
+
+## 5a. Complementary-projector equality supplier
+
+The projected slope argument contains one finite numerical step that can be
+separated from crystalline geometry. If a projector and its complement satisfy
+
+\[
+t_H(P)\le t_N(P),\qquad
+t_H(P^\perp)\le t_N(P^\perp),
+\]
+
+and both Hodge and Newton numbers are additive while the total Hodge and Newton
+numbers are equal, then both component inequalities are equalities.
+
+The local source
+\`GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean\`
+formalizes that arithmetic implication and composes it with
+\`DegreeOneSlope\`.
+
+The still-open upstream obligations are the actual filtered-Frobenius object,
+projector/complement construction, filtration preservation, Frobenius
+commutation, and the weak-admissibility inequalities. The local finite theorem
+does not manufacture any of those inputs.
 
 ## 6. Polarization as a source of CM rigidity
 
@@ -551,3 +609,25 @@ This document does not prove the OpenAI CM Hodge manuscript, Milne rationality,
 P=W, Fontaine–Mazur, or RH. It does not claim that PTS normalization implies
 Hodge algebraicity, that a Hodge type determines an L-function, or that a
 zero-free half-plane implies the critical-line statement.
+
+
+## Toolchain boundary
+
+The pinned external formal source and the local repository do not currently
+share a toolchain:
+
+~~~text
+openai/math:
+  Lean 4.34.1
+  mathlib d13f23b723b8a846827a245b89c10fc7d3f11612
+
+grwtsk/math:
+  Lean 4.33.0
+  mathlib db584cd6d46c92f209a44c0f1c829460d327499d
+~~~
+
+Therefore source presence is not a replay receipt. External theorem admission
+requires either a local port to the GRWTSK toolchain or an explicitly accepted
+cross-toolchain verification policy. The current bridge uses local restatements
+or premise-preserving adapters where feasible and records all of them as
+NOT_RUN.
