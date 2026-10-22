@@ -1127,6 +1127,32 @@ def FourfoldMonomialAssemblyData.toTransportedGeneratorHodgeData
     TransportedMonomialGeneratorHodgeData D R.h22 where
   generator_mem := fun σ => T.assembled_mem_h22 σ
 
+/-- A presented fourfold multilinear assembly together with finite-CM
+realizations of every transported generator directly yields the complete
+scalar-conjugate monomial-line package. -/
+def FourfoldMultilinearAlgebraicAssembly.toScalarConjugateMonomialLineData
+    (M : FourfoldMultilinearAlgebraicAssembly)
+    (factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers))
+    (hodgeSubspace :
+      Submodule ℂ
+        (ℂ ⊗[ℚ] CanonicalFourfoldVectorTarget))
+    (F :
+      TransportedGeneratorRealizationFamily
+        (M.toMonomialAssemblyData factors) hodgeSubspace) :
+    ScalarConjugateMonomialLineData
+      (M.assemble
+        (factors.vector 0)
+        (factors.vector 1)
+        (factors.vector 2)
+        (factors.vector 3))
+      hodgeSubspace :=
+  (M.toMonomialAssemblyData factors).toScalarConjugateMonomialLineDataOfGenerator
+    hodgeSubspace F.toTransportedGeneratorHodgeData
+
 /-- Generator-level Hodge membership is therefore enough to build the complete
 scalar-conjugate monomial-line package. -/
 def FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineDataOfGenerator
