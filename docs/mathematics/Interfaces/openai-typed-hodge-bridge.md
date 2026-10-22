@@ -1122,6 +1122,31 @@ This supplier makes no algebraicity claim and assumes no compatibility between t
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4s. Exact row support of one atomic switch
+
+One elementary conjugate-paired switch now has an explicit row-support theorem in `CMFourFactorSwitchCombinatorics.lean`.
+
+The source proves:
+
+~~~text
+switchConjugatePair_row_eq_of_ne
+switchConjugatePair_changedRow_subset
+unchangedRow_eq
+~~~
+
+Only the two selected rows can change. Every other row has exactly the same old and new sign function.
+
+This matches the geometric decomposition used in the manuscript. One atomic transition consists of:
+
+- the old and new factors for the two changed rows, giving the genuinely four-factor switched core;
+- one unchanged old/new pair for every other row.
+
+Thus the independent algebraicity obstruction can now be isolated more sharply. The four-factor theorem only needs to supply the changed-row core. The unchanged rows require a separate two-factor identity-line realization, not another four-factor theorem.
+
+No algebraicity statement is inferred from the row-support calculation itself.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
