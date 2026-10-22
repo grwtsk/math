@@ -212,6 +212,49 @@ theorem antipodal_subset_normalized_factor
       ((ArithmeticFunction.liouville (2 * t + 2 * h + 3) : ℤ) : ℚ))
     hM
 
+/-- The subtype coordinates of a finite shift set project bijectively
+onto the original shifts, retaining exact membership. -/
+def shiftSubtypeEquiv (H : Finset ℕ) :
+    {h : ℕ // h ∈ H} ≃ {h : ℕ // h ∈ H} :=
+  Equiv.refl _
+
+/-- Convert a selected subtype-character into its ordinary finite
+set of shift values. This is injective on selected subsets because
+subtype values uniquely determine subtype coordinates. -/
+def shiftSubsetValues (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) : Finset ℕ :=
+  S.image Subtype.val
+
+/-- Every selected shift value belongs to its ambient shift set. -/
+theorem shiftSubsetValues_subset (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) :
+    shiftSubsetValues H S ⊆ H := by
+  intro h hh
+  obtain ⟨x, hx, rfl⟩ := Finset.mem_image.mp hh
+  exact x.property
+
+/-- The original subset is recovered by restricting its values
+back to the ambient finite shift subtype. -/
+theorem shiftSubsetValues_mem_iff (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H})
+    (h : {h : ℕ // h ∈ H}) :
+    h.val ∈ shiftSubsetValues H S ↔ h ∈ S := by
+  constructor
+  · intro hh
+    obtain ⟨x, hx, heq⟩ := Finset.mem_image.mp hh
+    have hident : x = h := Subtype.ext heq
+    simpa [hident] using hx
+  · intro hh
+    exact Finset.mem_image.mpr ⟨h, hh, rfl⟩
+
+/-- Character cardinality is unchanged when passing from subtype
+coordinates to their distinct natural-number shift values. -/
+theorem shiftSubsetValues_card (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) :
+    (shiftSubsetValues H S).card = S.card := by
+  unfold shiftSubsetValues
+  exact Finset.card_image_of_injective S Subtype.val_injective
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
