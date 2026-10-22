@@ -482,6 +482,35 @@ theorem switchConjugatePair_corrects_conjugate
   · rw [hodd i.1 g, hy i.1 g, hsel.1]
   · rw [hodd j.1 g, hy j.1 g, hsel.2]
 
+/-- A matrix row packaged as an odd sign row. -/
+def oddSignRowOfMatrix
+    (x : I → G → ℤ)
+    (hxsign : ∀ r h, IsSign (x r h))
+    (hxodd : IsOddMatrix conj x)
+    (r : I) :
+    OddSignRow G conj where
+  value := x r
+  isSign := hxsign r
+  odd := hxodd r
+
+/-- The two selected rows have the same pointwise sum before and after one paired switch. -/
+theorem switchConjugatePair_selectedRows_balance
+    (x : I → G → ℤ)
+    (g : G)
+    (i j : I)
+    (hij : i ≠ j) :
+    ∀ h,
+      x i h + x j h =
+        switchConjugatePair conj x g i j i h +
+          switchConjugatePair conj x g i j j h := by
+  intro h
+  by_cases hhg : h = g
+  · subst h
+    simp [switchConjugatePair, switchPair, hij, Ne.symm hij, add_comm]
+  · by_cases hhcg : h = conj g
+    · simp [switchConjugatePair, hhg, hhcg, switchPair, hij, Ne.symm hij, add_comm]
+    · simp [switchConjugatePair, hhg, hhcg]
+
 /-- Rows outside the selected pair are pointwise unchanged in every column.
 
 This is the exact support statement behind the manuscript decomposition of one
