@@ -106,6 +106,20 @@ comparator_codomain = "Complex"
 comparator_requires_positive_slopes = true
 comparator_requires_nonproportional_det = true
 comparator_contains_sorry_placeholders = true
+comparator_json_blob = "96dbfcd015da7bb0d32f30e17a3b8a6743bf1fe5"
+solution_entrypoint = "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+solution_entrypoint_blob = "2bd48811e73bbdc80c1f738fa889a14189186408"
+solution_main = "lean/OAI/NumberTheory/TwoPoint/Main.lean"
+solution_main_blob = "5a1a015c0cfe8221af315933c579eb7fb2885d3f"
+solution_mrt_input = "lean/OAI/NumberTheory/TwoPoint/ShortIntervals/MRTInputsTheorem.lean"
+solution_mrt_input_blob = "936159f5177f3b4bc4a1f5815c706ffe042158e2"
+solution_contains_source_theorem_declarations = true
+solution_transitive_trust_audit_not_performed = true
+provider_lean_toolchain = "leanprover/lean4:v4.34.1"
+provider_mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+local_lean_toolchain = "leanprover/lean4:v4.33.0"
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+requires_explicit_cross_version_port_and_axiom_receipt = true
 comparison_is_literature_scope_only = true
 NO_EXTERNAL_RESULT_ADMITTED = true
 NO_LOCAL_COMPLEX_CAST_ADAPTER = true
@@ -142,6 +156,14 @@ must_preserve = "Local exact sums are integer-valued. External comparator uses c
 [[hostile_controls]]
 id = "comparator-is-not-a-proof"
 must_preserve = "Pinned OpenAI ComparatorChallenges theorem liouville_log_saving has a sorry placeholder. Its theorem statement supplies the scope signature only and is NOT imported as a verified theorem."
+
+[[hostile_controls]]
+id = "solution-not-challenge-comparator"
+must_preserve = "The ComparatorChallenges module has three expected sorry placeholders; it is a challenge statement. A separate FinalMain solution file and Main theorem source exist and must be evaluated on their own merits, with a complete transitive axiom audit; do not misrepresent the comparator as the only proof source."
+
+[[hostile_controls]]
+id = "cross-version-proof-import"
+must_preserve = "OpenAI solution uses Lean 4.34.1 / Mathlib d13f23; grwtsk/math is Lean 4.33.0 / Mathlib db584cd. No direct import, elaboration, trust success or source-level transfer is claimed without a separately controlled port."
 
 [[hostile_controls]]
 id = "fixed-shift-not-growing-shift"
