@@ -88,6 +88,23 @@ theorem centralInvolution_conj_apply (σ : E ≃ₐ[ℚ] E) :
     (centralInvolution E).conj σ =
       galoisComplexConj E * σ := rfl
 
+/-- Odd sign rows indexed by the actual rational Galois group and Mathlib's
+CM complex conjugation. -/
+abbrev OddSignRow : Type := 
+  CMOddSignRow (E ≃ₐ[ℚ] E) (centralInvolution E)
+
+/-- Four-label balance for actual Galois-CM-indexed sign rows. -/
+def FourBalance (v₁ v₂ v₃ v₄ : OddSignRow E) : Prop :=
+  CMGaloisIndex.CMFourBalance v₁ v₂ v₃ v₄
+
+/-- The abstract two/two sign profile specializes directly to a Galois CM
+number field with its canonical complex conjugation. -/
+theorem fourBalance_twoTwoSignProfile
+    (v₁ v₂ v₃ v₄ : OddSignRow E)
+    (hbal : FourBalance E v₁ v₂ v₃ v₄) :
+    CMFourBalance.HasTwoTwoSignProfile
+      v₁.toOddSignRow v₂.toOddSignRow v₃.toOddSignRow v₄.toOddSignRow :=
+  CMGaloisIndex.cmFourBalance_twoTwoSignProfile v₁ v₂ v₃ v₄ hbal
 end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex
