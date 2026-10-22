@@ -322,7 +322,8 @@ theorem canonicalEigenspaces_isInternal :
     intro s v hv hz σ hσ
     have hp := congrArg (automorphismProjector k E σ) hz
     rw [map_sum, map_zero, Finset.sum_eq_single_of_mem σ hσ] at hp
-    · simpa only [automorphismProjector_same k E σ (hv σ hσ)] using hp
+    · rw [automorphismProjector_same k E σ (hv σ hσ)] at hp
+      exact hp
     · intro τ hτ hτσ
       exact automorphismProjector_other k E σ τ (Ne.symm hτσ) (hv τ hτ)
   · apply top_unique
