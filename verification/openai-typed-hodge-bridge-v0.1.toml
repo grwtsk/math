@@ -1817,10 +1817,31 @@ result_family = 32
 evidence = "EXTERNAL_CLASSICAL_OR_REALIZATION"
 source = "weight-one CM realization comparison"
 labels = []
-statement_role = "supply a map from the canonical tensor model E tensor_Q E to the actual complexified H1 realization preserving the canonical Galois complex coordinates"
+statement_role = "supply a Q-linear map from E tensor_Q E to actual complexified H1 whose coordinates satisfy the explicit pure-tensor formula baseEmbedding(a) * fieldCoordinates(x); full tensor compatibility then follows locally by tensor induction"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.CanonicalTensorActualH1Comparison"
 status = "OPEN"
 nonclaims = [
   "no Hodge-type theorem is postulated beyond coordinate compatibility",
   "formal sign-to-actual-Hodge typing is local downstream"
 ]
+
+
+[[local_target]]
+name = "pure-tensor coordinate comparison extends to all canonical tensors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.PureTensorActualH1Comparison.coordinate_compatibility"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Q-linear map from E tensor_Q E to actual complexified H1",
+  "explicit coordinate formula on pure tensors"
+]
+nonclaims = [
+  "extension to arbitrary tensors is local tensor induction",
+  "does not construct the base-change map"
+]
+
+[[local_target]]
+name = "pure-tensor comparison supplies canonical tensor to actual H1 comparison"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.PureTensorActualH1Comparison.toCanonicalComparison"
+status = "SOURCE_DRAFT_NOT_RUN"
