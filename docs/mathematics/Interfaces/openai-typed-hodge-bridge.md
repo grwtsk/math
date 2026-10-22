@@ -889,6 +889,89 @@ The remaining weight-one polarization frontier is therefore:
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`; no
 elaboration or kernel receipt is claimed.
 
+## 5f. Integral lattice scaling for the rational trace polarization
+
+The integral-lattice stage is now represented locally in
+\`GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean\`.
+
+Choose the canonical finite rational basis
+
+\[
+b_1,\dots,b_n
+\]
+
+of the finite-dimensional \(\mathbf Q\)-vector space \(E\).  The source uses
+integer coordinate vectors
+
+\[
+a=(a_i)\in\mathbf Z^n
+\]
+
+and the injective map
+
+\[
+a\longmapsto \sum_i a_i b_i\in E
+\]
+
+as a full algebraic \(\mathbf Z\)-lattice presentation.
+
+For a sign-controlled \(\xi\), form the rational alternating matrix
+
+\[
+A_{ij}=\psi_\xi(b_i,b_j).
+\]
+
+Mathlib's rational-matrix denominator
+
+\[
+N=A.\mathrm{den}
+\]
+
+is the least-common-multiple style denominator clearing all entries
+simultaneously.  Its associated integer numerator matrix \(A.\mathrm{num}\)
+satisfies
+
+\[
+N A_{ij}=(A.\mathrm{num})_{ij}\in\mathbf Z.
+\]
+
+The local source then proves, for every \(a,b\in\mathbf Z^n\),
+
+\[
+N\,
+\psi_\xi\!\left(\sum_i a_i b_i,\sum_j b_j b_j\right)
+=
+\sum_{i,j}a_i(A.\mathrm{num})_{ij}b_j
+\in\mathbf Z,
+\]
+
+with the actual Lean declarations using distinct coordinate-variable names to
+avoid the displayed basis/coordinate notation collision.
+
+The compact certificate is
+
+~~~text
+CMLatticePolarization.canonicalIntegralLatticePolarization
+~~~
+
+and records:
+
+~~~text
+nonzero positive-denominator scale
+injective integer-coordinate lattice map
+integer bilinear pairing
+exact scaled rational-trace identity
+alternation
+~~~
+
+Thus the existence of an integral scaling of the alternating rational trace
+form is no longer an external manuscript premise at the source level.
+
+What remains is the actual Riemann bilinear criterion / complex torus
+realization and the independent four-factor algebraicity theorem.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
