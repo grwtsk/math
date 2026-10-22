@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-cumulative-shift-short-interval-523-v0.1"
+owner_repository = "grwtsk/math"
+issue = 523
+parent_issue = 519
+parent_pr = 520
+literature_witness_issue = 516
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensCumulativeShiftShortInterval"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensCumulativeShiftShortInterval"
+
+[source_binding]
+stacked_parent_revision = "5fce6d8d3b5d181011a58d9a0f69a9ae46a3787a"
+candidate_branch = "research/rh-short-interval-523-20261021"
+theorem_source_commit = "03df385ca24a58b3749817f310074274c25ebd11"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensCumulativeShiftShortInterval.lean"
+theorem_source_git_blob = "3d79bc3c5ae6961058faee25003f36d16384d11a"
+
+[selected_increment]
+short_interval_sum = "harmonicShortMobiusSum"
+fubini_identity = "cumulativeHarmonicShiftCorrelation_eq_shortIntervalAverage"
+l1_transfer = "abs_cumulativeHarmonicShiftCorrelation_le_shortIntervalL1"
+finite_bound = "HarmonicShortIntervalL1Bound"
+source_scope = "QuantitativeShortIntervalMobiusSource"
+adapter = "ShortIntervalToHarmonicPacketAdapter"
+conditional_endpoint = "riemannHypothesis_of_shortIntervalAdapter"
+proof_classification = "EXACT_FINITE_FUBINI_PLUS_L1_SUFFICIENT_TRANSFER"
+next_obstruction = "quantitative short-interval coverage of all lengths, windows, depths, and small ranges"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+short_interval_theorem_applied = false
+short_interval_adapter_constructed = false
+cumulative_shift_estimate_proved = false
+chowla_proved = false
+riemann_hypothesis_proved = false
