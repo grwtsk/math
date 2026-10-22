@@ -1495,3 +1495,36 @@ nonclaims = [
   "fixed-point-freeness at each selected coordinate is derived locally from oddness and sign-valuedness",
   "does not supply tensor-level geometric inputs"
 ]
+
+
+[[local_target]]
+name = "invariant atomic transition from raw tensor stability data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.invariantAtomicSwitchTransitionSupplierOfTensorData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "InvariantAtomicTensorDataSupplier",
+  "CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier",
+  "AlgebraicCycleToSwitchCoreAdapter",
+  "TwoFactorIdentitySupplier",
+  "AtomicTransitionAssemblySupplier"
+]
+nonclaims = [
+  "all sign/type bookkeeping and rational descent are local",
+  "raw tensor supplier does not assert algebraicity",
+  "four-factor algebraicity remains independent"
+]
+
+[[external_premise]]
+id = "cm-atomic-switched-tensor-conjugate-stability"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-label-conjugation", "eq:switch-line", "eq:switch-conjugate-balance"]
+statement_role = "for each invariant-aware atomic switch, supply the actual algebraic-number switched tensor, its complex Hodge subspace, and membership of every scalar conjugate in that subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.InvariantAtomicTensorDataSupplier"
+status = "OPEN"
+nonclaims = [
+  "does not assert the tensor is algebraic",
+  "does not replace the independent FourFactorAlgebraicitySupplier"
+]
