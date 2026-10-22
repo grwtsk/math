@@ -74,6 +74,7 @@ theorem dyadicMertensShiftWeight_nonneg {j b : ℕ}
     0 ≤ dyadicMertensShiftWeight j b := by
   rw [dyadicMertensShiftWeight_eq_max]
   apply sub_nonneg.mpr
+  simp only [← one_div]
   apply one_div_le_one_div_of_le
   · positivity
   · have hmax : max (2 ^ j) b ≤ 2 ^ (j + 1) :=
@@ -91,6 +92,7 @@ theorem dyadicMertensShiftWeight_step_antitone {j b : ℕ} :
   rw [dyadicMertensShiftWeight_eq_max,
     dyadicMertensShiftWeight_eq_max]
   apply sub_le_sub_right
+  simp only [← one_div]
   apply one_div_le_one_div_of_le
   · positivity
   · have hmax : max (2 ^ j) b ≤ max (2 ^ j) (b + 1) :=
@@ -106,6 +108,7 @@ theorem dyadicMertensShiftWeight_le_right_inv {j b : ℕ}
   have hinv :
       (((max (2 ^ j) b : ℕ) : ℝ))⁻¹ ≤
         (((2 ^ j : ℕ) : ℝ))⁻¹ := by
+    simp only [← one_div]
     apply one_div_le_one_div_of_le
     · positivity
     · exact_mod_cast (le_max_left (2 ^ j) b)
@@ -149,13 +152,13 @@ private theorem finite_abel_prefix
   induction N with
   | zero => simp
   | succ N ih =>
+      rw [Finset.sum_range_succ, ih]
       simp only [Finset.sum_range_succ]
-      rw [ih]
       ring
 
 private theorem finite_weight_drop_telescope
     (q : ℕ → ℝ) (N : ℕ) :
-    (∑ t ∈ Finset.range N, q t - q (t + 1)) =
+    (∑ t ∈ Finset.range N, (q t - q (t + 1))) =
       q 0 - q N := by
   induction N with
   | zero => simp
@@ -193,9 +196,9 @@ private theorem abs_weighted_sum_le_of_prefix_bound
       apply Finset.sum_le_sum
       intro t ht
       exact mul_le_mul_of_nonneg_right
-        (hprefix (t + 1) (by omega))
+        (hprefix (t + 1) (Nat.succ_le_iff.mpr (Finset.mem_range.mp ht)))
         (hdrop t (Finset.mem_range.mp ht))
-    _ = U * (∑ t ∈ Finset.range N, q t - q (t + 1)) := by
+    _ = U * (∑ t ∈ Finset.range N, (q t - q (t + 1))) := by
       rw [← Finset.mul_sum]
     _ = U * (q 0 - q N) := by
       rw [finite_weight_drop_telescope]
@@ -224,7 +227,7 @@ theorem abs_weightedMertensDyadicShiftContribution_le
     dsimp [q]
     have hs := dyadicMertensShiftWeight_step_antitone
       (j := j) (b := t + 1 + h)
-    linarith
+    simpa only [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm] using sub_nonneg.mpr hs
   have hterminal : q N = 0 := by
     have hindex : N + 1 + h = Y := by
       dsimp [N, Y]
@@ -235,7 +238,6 @@ theorem abs_weightedMertensDyadicShiftContribution_le
   have hq0 : q 0 ≤ (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ := by
     dsimp [q]
     apply dyadicMertensShiftWeight_le_right_inv
-    dsimp [Y] at hhY ⊢
     omega
   have hab := abs_weighted_sum_le_of_prefix_bound
     x q N henv.1 hprefix hdrop hterminal
@@ -259,11 +261,9 @@ theorem abs_weightedMertensDyadicShiftPacket_le
     (henv : DyadicMertensTwoPointEnvelope j U) :
     |weightedMertensDyadicShiftPacket j| ≤ 2 * U := by
   let Y : ℕ := 2 ^ (j + 1)
-  have hY : 1 ≤ Y := by
-    dsimp [Y]
-    positivity
+  have hY : 1 ≤ Y := Nat.one_le_pow (j + 1) 2 (by norm_num)
   have hcard : (Finset.Ico 1 Y).card = Y - 1 := by
-    rw [Finset.card_Ico]
+    rw [Nat.card_Ico]
   unfold weightedMertensDyadicShiftPacket
   rw [show 2 ^ (j + 1) = Y by rfl]
   calc
@@ -280,7 +280,7 @@ theorem abs_weightedMertensDyadicShiftPacket_le
         (Finset.mem_Ico.mp hh).1 (Finset.mem_Ico.mp hh).2 henv
     _ = (((Finset.Ico 1 Y).card : ℕ) : ℝ) *
         (2 * U * (Y : ℝ)⁻¹) := by
-      simp only [Finset.sum_const, nsmul_eq_mul, Nat.cast_ofNat]
+      simp only [Finset.sum_const, nsmul_eq_mul]
     _ = (((Y - 1 : ℕ) : ℝ)) *
         (2 * U * (Y : ℝ)⁻¹) := by rw [hcard]
     _ ≤ (Y : ℝ) * (2 * U * (Y : ℝ)⁻¹) := by
@@ -291,7 +291,6 @@ theorem abs_weightedMertensDyadicShiftPacket_le
           (inv_nonneg.mpr (Nat.cast_nonneg Y))
     _ = 2 * U := by
       field_simp [show (Y : ℝ) ≠ 0 by positivity]
-      ring
 
 /-- The stronger uniform finite Chowla premise supplies the exact packet
 criterion. -/
