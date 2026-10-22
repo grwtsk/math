@@ -1274,6 +1274,40 @@ Unlike an arbitrary target V, its four vector slots are explicit. -/
 abbrev CMFiniteCanonicalVectorTarget (E : CMGaloisIntermediateField) :=
   (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
 
+/-- The first constructed coefficient supplier: multiplication on a
+rational tensor square of the finite CM field. Unlike the later fourfold
+cohomological comparison, this map uses only field multiplication and
+the tensor-product universal property. -/
+def CMFiniteCoefficientMultiplication
+    (E : CMGaloisIntermediateField) :
+    E.carrier ⊗[ℚ] E.carrier →ₗ[ℚ] E.carrier :=
+  TensorProduct.lift {
+    toFun := fun a => {
+      toFun := fun b => a * b
+      map_add' := by
+        intro x y
+        exact mul_add a x y
+      map_smul' := by
+        intro q x
+        simp [smul_eq_mul, mul_assoc, mul_left_comm, mul_comm]
+    }
+    map_add' := by
+      intro a b
+      ext x
+      exact add_mul a b x
+    map_smul' := by
+      intro q a
+      ext x
+      simp [smul_eq_mul, mul_assoc, mul_left_comm, mul_comm]
+  }
+
+/-- The multiplication supplier has the intended pure-tensor formula. -/
+@[simp]
+theorem CMFiniteCoefficientMultiplication_tmul
+    (E : CMGaloisIntermediateField)
+    (a b : E.carrier) :
+    CMFiniteCoefficientMultiplication E (a ⊗ₜ[ℚ] b) = a * b := rfl
+
 /-- Canonical finite-CM pure-factor formula, prior to extension of
 coefficients into algebraic numbers. The coefficient entries multiply in
 E while the four vector entries remain a rational tensor. -/
