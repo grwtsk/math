@@ -1,0 +1,142 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-nonunit-orbit-representatives-671-v0.1"
+owner_repository = "grwtsk/math"
+issue = 671
+parent_issue = 660
+parent_pr = 662
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_EXCEPTIONAL_AND_REGULAR_ORBIT_SUPPLIERS_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoNonunitOrbitRepresentatives"
+build_target = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoNonunitOrbitRepresentatives"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-two-nonunit-kernel-pair-660-20261022"
+stacked_parent_revision = "1c27e2cd64137cb185851563160d7963f2df7b30"
+stacked_parent_tree = "5a3c862ca2b624a0fe65d602caf1baccce16f0a8"
+candidate_branch = "research/rh-two-nonunit-orbit-representatives-671-20261022"
+theorem_source_commit = "05a70a08850a7461f8352ea5a9528c957b4a8cff"
+theorem_source_tree = "9a7e438a03fa545498f0b2a3fde41475ebf05170"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/HalfIndexAffineChowlaTwoNonunitOrbitRepresentatives.lean"
+theorem_source_git_blob = "f92375adf3f6459197ab05c106e31fc01e6a31ed"
+theorem_source_sha256 = "2c239a7aa7e51fd8037c711671a55140a895a5cc8f90dbdc90c47c9f4bc5d72a"
+mathematical_note_commit = "69eaf6002a647ec896e699b1c72212c91fb33687"
+mathematical_note_tree = "ed1acc745cabc4e5c29356fbda68d39995b9912a"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-nonunit-orbit-representatives.md"
+mathematical_note_git_blob = "2f5ef6d648f9ce6dc75fc0b7f4f7e698f9544d29"
+
+[parent_dependency]
+path = "GRWTSK/NumberTheory/Moebius/HalfIndexAffineChowlaTwoNonunitKernelPair.lean"
+git_blob = "d75d91bfe3e3c5f3c1b1ead1ddb4e4135147179f"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_662"
+
+[selected_increment]
+representative_set = "twoKernelRegularOrbitRepresentativeSet"
+partner_fixed_point_refutation = "twoKernelPartner_ne_self"
+partner_injectivity = "twoKernelPartner_injective"
+regular_orientation = "regularFrequency_representative_or_partner"
+nonzero_partition = "nonzeroFrequencySet_eq_exceptional_union_regularOrbits"
+generic_sum_reindex = "sum_nonzeroFrequencies_eq_exceptional_add_regularOrbits"
+exceptional_aggregate = "twoNonunitExceptionalKernelAggregate"
+exceptional_shift_character_identity = "twoNonunitExceptionalKernelAggregate_eq_shiftCharacter"
+regular_orbit_majorant = "twoNonunitRegularOrbitMajorant"
+regular_pair_comparison = "regularOrbit_frequencyPair_le_projectorMajorant"
+modulus_exact_reindex = "twoNonunitOrbitDecomposedModulusMajorant_eq_halfIndex"
+modulus_sufficient_comparison = "halfIndexNonzeroModulusMajorant_le_orbitRepresentative"
+endpoint_comparison = "twoNonunitHalfIndexEndpointMajorant_le_exceptional_add_regular"
+exceptional_budget = "DyadicNaturalScaleTwoNonunitExceptionalKernelBudget"
+regular_budget = "DyadicNaturalScaleTwoNonunitRegularOrbitBudget"
+branch_recombination = "twoNonunitHalfIndexBudget_of_exceptional_and_regular"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_twoUnit_orbitSplit"
+proof_classification = "EXACT_FINITE_ORBIT_PARTITION_PLUS_CONDITIONAL_SUFFICIENT_MAJORANTS"
+
+[exceptional_orbit]
+zero_frequency_excluded = true
+kernel_frequency_retained = true
+orbit = "{0,H}"
+doubled_kernel_frequency = "0"
+core_frequency = "0"
+shift_character_retained = true
+analytic_estimate_proved = false
+
+[regular_orbits]
+canonical_order = "ZMod.val"
+representative_and_partner_nonzero = true
+one_representative_per_orbit = true
+partner_image_disjoint = true
+exceptional_orbit_excluded = true
+pair_projectors_formed_before_norm = true
+complete_orbit_coverage_scripted = true
+analytic_estimate_proved = false
+
+[consumer_preservation]
+square_modulus_preserved = true
+endpoint_support_preserved = true
+both_parities_preserved = true
+nonzero_frequency_scope_preserved = true
+normalization_one_over_d_squared_preserved = true
+positive_shifts_preserved = true
+
+[analytic_frontier]
+exceptional_object = "sum_h eta_d(h) * U_r(h,0)"
+regular_object = "one pair-sum/pair-difference projector family per canonical orbit"
+exceptional_budget_proved = false
+regular_budget_proved = false
+two_unit_budget_proved = false
+pointwise_mertens_envelope_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+
+[evidence_states]
+source_draft = true
+exact_exceptional_orbit_isolation_scripted = true
+canonical_regular_representatives_scripted = true
+exact_nonzero_frequency_partition_scripted = true
+exact_generic_orbit_sum_reindex_scripted = true
+exceptional_shift_character_form_scripted = true
+regular_pair_projector_comparison_scripted = true
+conditional_branch_recombination_scripted = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoNonunitOrbitRepresentatives"
+definition_count = 12
+theorem_script_count = 22
+structure_count = 4
+abbreviation_count = 2
+authored_declaration_count = 40
+
+[hostile_controls]
+exceptional_frequency_not_dropped = true
+partner_not_claimed_equivalence_on_nonzero_set = true
+regular_orbits_not_double_counted = true
+norm_before_projector_rejected = true
+exceptional_and_regular_branches_separate = true
+order_two_character_not_identified_with_sign_without_theorem = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_exceptional_kernel_budget = true
+prove_regular_orbit_budget = true
+prove_two_unit_budget = true
+prove_pointwise_mertens_envelope = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+exceptional_kernel_estimate = false
+regular_orbit_estimate = false
+two_unit_estimate = false
+pointwise_mertens_envelope = false
+natural_scale_endpoint_l1_bound = false
+riemann_hypothesis_proved = false
