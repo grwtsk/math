@@ -1,3 +1,6 @@
+# Historical original target Git blob: 1099a6daf5c080d8142e18875b7cff906ab1576f.
+# Historical original parent: d93ba416de2b2b8a123fb878640c1dfd7d478728; tree e2ede3f240f4ed33a96de6d7751248a16b991eeb.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-mertens-weighted-chowla-packet-507-v0.1"
 owner_repository = "grwtsk/math"
@@ -8,12 +11,64 @@ status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
 root_module = "GRWTSK.NumberTheory.Moebius.MertensWeightedChowlaPacket"
 build_target = "GRWTSK.NumberTheory.Moebius.MertensWeightedChowlaPacket"
 
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_git_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_git_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+
 [source_binding]
-stacked_parent_revision = "d93ba416de2b2b8a123fb878640c1dfd7d478728"
-candidate_branch = "research/rh-weighted-chowla-507-20261021"
-theorem_source_commit = "17ba7fd09470401fc174c26d60e54c80f2d5133f"
+stacked_parent_revision = "cb016e79ec25465ed18072969e8c69d4fa1caa41"
+stacked_parent_tree = "eb9d73c8ec7efde1adeb90c6f7ab606d6e2c06dc"
+historical_candidate_branch = "research/rh-weighted-chowla-507-20261021"
+historical_theorem_source_commit = "17ba7fd09470401fc174c26d60e54c80f2d5133f"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensWeightedChowlaPacket.lean"
-theorem_source_git_blob = "6a34233da9ef4dde8c05996a2abb868ffce0f535"
+historical_theorem_source_git_blob = "6a34233da9ef4dde8c05996a2abb868ffce0f535"
+theorem_source_git_blob = "0582f605e0973ec87c9a7701ee190a3c5993e77b"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "2964b7ad58233fdd02e56a00c877568a536b2102"
+historical_mathematical_note_commit = "ef41208ff1e1b12c71517e95094fe6186c82b7c6"
+historical_mathematical_note_tree = "3ef3ce7fc366c10826b548410406fda1f4d0584e"
+historical_mathematical_note_git_blob = "2e8dd64b1d8cf688666e2dbdf039b3f03e460687"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mertens-weighted-chowla-packet.md"
+mathematical_note_git_blob = "051472e2d615d134d10c31acdbab26c525cc20db"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelSubprobabilityKernel.lean"
+git_blob = "97c6c01f028eebf028458c087ceb270627e60863"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
+
+[declaration_inventory]
+names = [
+  "weightedMertensTwoPointChowlaAverage",
+  "normalizedKernelAutocorrelation_eq_weightedChowlaAverage",
+  "weightedMertensDyadicSignedAbelDepthSlice_eq_weightedChowlaAverage",
+  "weightedMertensTwoPointChowlaAverage_le_of_prefix_bound",
+  "abs_weightedMertensTwoPointChowlaAverage_le_of_abs_prefix_bound",
+  "weightedMertensDyadicChowlaPacket",
+  "weightedMertensDyadicChowlaPacket_eq_signedAbelDepthPacket",
+  "SubpolynomialDyadicWeightedMertensChowlaPacket",
+  "subpolynomialDyadicWeightedMertensChowlaPacket_iff_signedDepth",
+  "riemannHypothesis_of_subpolynomialDyadicWeightedMertensChowlaPacket"
+]
 
 [selected_increment]
 weighted_average = "weightedMertensTwoPointChowlaAverage"
