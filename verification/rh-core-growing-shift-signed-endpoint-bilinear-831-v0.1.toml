@@ -1,0 +1,58 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-bilinear-831-v0.1"
+owner_repository = "grwtsk/math"
+issue = 831
+parent_issue = 824
+parent_pr = 826
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointBilinear"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointBilinear"
+
+[source_binding]
+main_revision_at_audit = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+stacked_parent_revision = "4725f7d9d987621cb8c98496a5e4e6170dbee368"
+candidate_branch = "research/rh-signed-endpoint-bilinear-831"
+theorem_source_commit = "38e20f5419bb28854c3c094fa0c5752234c6e9fc"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointBilinear.lean"
+theorem_source_git_blob = "d1d7cc874b28ee25510667e12edbbe2fbc9a9e04"
+
+[selected_increment]
+source_cells = "coreGrowingShiftSignedEndpointSourceCells"
+endpoint_pair_set = "coreGrowingShiftSignedEndpointPairSet"
+endpoint_indices = "coreGrowingShiftSignedEndpointIndices"
+support_theorem = "coreGrowingShiftSignedEndpointPair_support"
+no_wrap_theorem = "coreGrowingShiftSignedSourceRightEndpoint_lt_rightScale"
+coordinate_map = "coreGrowingShiftSignedEndpointSourceToEndpoint"
+map_membership = "coreGrowingShiftSignedEndpointSourceToEndpoint_mem"
+map_injective = "coreGrowingShiftSignedEndpointSourceToEndpoint_injective"
+map_surjective = "coreGrowingShiftSignedEndpointSourceToEndpoint_surjective"
+source_expansion = "coreGrowingShiftSignedStaircasePacket_eq_endpointSourceEnergy"
+endpoint_reindexing = "coreGrowingShiftSignedEndpointSourceEnergy_eq_bilinear"
+endpoint_kernel = "coreGrowingShiftSignedEndpointKernel"
+endpoint_packet = "coreGrowingShiftSignedEndpointBilinearPacket"
+packet_identity = "coreGrowingShiftSignedStaircasePacket_eq_endpointBilinear"
+rh_packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointBilinear"
+signed_source = "SubpolynomialCoreGrowingShiftSignedEndpointBilinearPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointBilinearPacket_iff_staircase"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointBilinearPacket"
+proof_classification = "EXACT_FINITE_PREFIX_EXPANSION_STRICT_ENDPOINT_BIJECTION_AND_SIGNED_BILINEAR_REINDEXING"
+next_obstruction = "prove an exact zero-padded finite Fourier transform and inversion preserving strict support and the clamped reciprocal kernel, or directly estimate the signed endpoint packet"
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+signed_endpoint_estimate_proved = false
+finite_fourier_transform_proved = false
+fourier_dispersion_estimate_proved = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+positive_square_energy_rehabilitated = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false
