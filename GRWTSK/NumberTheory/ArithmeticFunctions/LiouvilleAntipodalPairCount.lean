@@ -255,6 +255,52 @@ theorem shiftSubsetValues_card (H : Finset ℕ)
   unfold shiftSubsetValues
   exact Finset.card_image_of_injective S Subtype.val_injective
 
+/-- Every ordinary subset of H is represented by the corresponding
+finite subset of the ambient shift subtype. -/
+def shiftSubsetOfValues (H : Finset ℕ) (T : Finset ℕ) :
+    Finset {h : ℕ // h ∈ H} :=
+  (Finset.univ : Finset {h : ℕ // h ∈ H}).filter
+    (fun h => h.val ∈ T)
+
+/-- The two subset transports are inverse on selected subtype sets. -/
+theorem shiftSubsetOfValues_values (H : Finset ℕ)
+    (S : Finset {h : ℕ // h ∈ H}) :
+    shiftSubsetOfValues H (shiftSubsetValues H S) = S := by
+  ext h
+  simp [shiftSubsetOfValues, shiftSubsetValues_mem_iff]
+
+/-- On subsets contained in H, projecting the restricted subtype
+subset back to values returns exactly the original finite subset. -/
+theorem shiftSubsetValues_ofValues (H T : Finset ℕ)
+    (hT : T ⊆ H) :
+    shiftSubsetValues H (shiftSubsetOfValues H T) = T := by
+  ext h
+  constructor
+  · intro hh
+    obtain ⟨x, hx, heq⟩ := Finset.mem_image.mp hh
+    subst h
+    simpa [shiftSubsetOfValues] using hx
+  · intro hh
+    have hH : h ∈ H := hT hh
+    exact Finset.mem_image.mpr
+      ⟨⟨h, hH⟩, by simp [shiftSubsetOfValues, hh], rfl⟩
+
+/-- A genuine equivalence of the full powerset of H with the
+finite subsets of its subtype coordinate type. -/
+def shiftPowersetEquiv (H : Finset ℕ) :
+    Finset {h : ℕ // h ∈ H} ≃ {T : Finset ℕ // T ⊆ H} := by
+  classical
+  refine
+    { toFun := fun S => ⟨shiftSubsetValues H S, shiftSubsetValues_subset H S⟩
+      invFun := fun T => shiftSubsetOfValues H T.val
+      left_inv := ?_
+      right_inv := ?_ }
+  · intro S
+    exact shiftSubsetOfValues_values H S
+  · rintro ⟨T, hT⟩
+    apply Subtype.ext
+    exact shiftSubsetValues_ofValues H T hT
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
