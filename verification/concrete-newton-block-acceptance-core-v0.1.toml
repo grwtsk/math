@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/concrete-newton-packet-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "65309db0598ee254ae091e9a0a9a75823ebcb9b5".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "284fd6c6e3803e6d1444f755249c3e6c9c58b69b"
+# Original pre-repair inherited_target_blob = "284fd6c6e3803e6d1444f755249c3e6c9c58b69b".
+inherited_target_blob = "22dc679599583a91f7da58e34d228719bd1037af"
 receipt_policy = "Bind exact new head/tree externally. This static target grants no execution authority."
 
 [trust]

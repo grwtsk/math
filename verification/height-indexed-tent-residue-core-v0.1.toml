@@ -31,7 +31,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/separated-tent-contour-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "483a1fe4388813a7f3069a042ce9535eddd3f1c3".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "d1a4817540fb240494b2ff0c043326794e0b1ec8"
+# Original pre-repair inherited_target_blob = "d1a4817540fb240494b2ff0c043326794e0b1ec8".
+inherited_target_blob = "cc8486ed4b1c287465e44f2a8799731fdf20469a"
 receipt_policy = "Bind exact new commit/tree externally. No ancestor receipt accepts this increment."
 inventory_policy = "Lexical names only; reconcile every exact elaborated type and transitive dependency."
 

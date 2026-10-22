@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/canonical-tent-record-evaluation-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "93eaab641b0f45deb4c938bf19bba29655bc2230".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "7f47013e798b302577ef8bab2a43e04d8b4c467b"
+# Original pre-repair inherited_target_blob = "7f47013e798b302577ef8bab2a43e04d8b4c467b".
+inherited_target_blob = "c270e6ef0e16a6f762a562de23be3fd13b3d0786"
 receipt_policy = "Bind exact new commit/tree externally. This static target represents no execution."
 
 [trust]

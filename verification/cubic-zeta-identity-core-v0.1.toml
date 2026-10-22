@@ -32,7 +32,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/cubic-remainder-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "a74b7588d69c38d2f5d4cfd5f36f8b7a2ff57672".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "9af290c8b1719de346a2044b7f9df37ec6f1297f"
+# Original pre-repair inherited_target_blob = "9af290c8b1719de346a2044b7f9df37ec6f1297f".
+inherited_target_blob = "c97e6a32b544282936df322d1f589a62f2e767ce"
 receipt_policy = "Bind exact new commit/tree externally; ancestor or root-only evidence is insufficient."
 
 [trust]
