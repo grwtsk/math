@@ -312,7 +312,7 @@ theorem wienerPinnedQOne_boundary_integral_from_right
       dsimp [bound]
       fun_prop
     exact hBoundContinuous.integrable_of_hasCompactSupport
-      hcompact.norm.mul_left
+      (hcompact.norm.mul_left)
   · apply Eventually.of_forall
     intro t
     apply Tendsto.mul_const
