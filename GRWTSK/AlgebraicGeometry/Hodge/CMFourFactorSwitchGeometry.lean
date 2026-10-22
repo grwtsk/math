@@ -1054,6 +1054,56 @@ theorem CMFourFactorSupport.scalarTransportLocal_inclusion
     S.vector_inclusion]
   rfl
 
+/-- Global four-factor embedding-line data together with its chosen common
+finite Galois CM support.
+
+This is the preferred construction boundary: instead of first choosing
+arbitrary global factors over AlgebraicNumbers and later proving that they
+descend to a CM field, the global factors and their common CM support are
+carried together. -/
+structure SupportedCMFourEmbeddingLineVectors where
+  global :
+    CMEmbeddingTransport.FourEmbeddingLineVectors
+      (k := ℚ) (E := AlgebraicNumbers)
+  support : CMFourFactorSupport global
+
+/-- Scalar transport preserves the same chosen common finite Galois CM
+support.  Only the local vectors change by the restricted scalar
+automorphism. -/
+def SupportedCMFourEmbeddingLineVectors.scalarTransport
+    (D : SupportedCMFourEmbeddingLineVectors)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    SupportedCMFourEmbeddingLineVectors where
+  global := D.global.scalarTransport σ
+  support := {
+    E := D.support.E
+    localVector := D.support.scalarTransportLocal σ
+    localCharacter := fun r =>
+      CMEmbeddingTransport.transportedCharacter
+        (σ.restrictNormal D.support.E.carrier)
+        (D.support.localCharacter r).toAlgHom
+    local_mem := fun r =>
+      CMEmbeddingTransport.scalarConjugate_mem_embeddingEigenspace
+        (σ.restrictNormal D.support.E.carrier)
+        (D.support.localCharacter r).toAlgHom
+        (D.support.local_mem r)
+    vector_inclusion := fun r =>
+      D.support.scalarTransportLocal_inclusion σ r
+    character_restriction := fun r => by
+      rw [CMEmbeddingTransport.FourEmbeddingLineVectors.scalarTransport_character]
+      rw [D.support.character_restriction r]
+      ext x
+      rfl
+  }
+
+/-- The transported global vectors remain represented by local vectors in the
+same common finite Galois CM carrier. -/
+theorem SupportedCMFourEmbeddingLineVectors.scalarTransport_support_field
+    (D : SupportedCMFourEmbeddingLineVectors)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    (D.scalarTransport σ).support.E = D.support.E :=
+  rfl
+
 /-- A switched tensor supported on one finite Galois CM intermediate field. -/
 structure CMFiniteGaloisTensorCarrier
     {V : Type*} [AddCommGroup V] [Module ℚ V]
