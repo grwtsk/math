@@ -31,7 +31,7 @@ independent_supplier = false
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftPackingObstruction"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftPackingObstruction.lean"
-blob = "085d9c0ef370b0e552131df37c4c9f895a4a0a35"
+blob = "85f3c39b46f3482d146c7788b4da17d95e5217c5"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftPackingObstructionControls"
@@ -48,6 +48,7 @@ path = "docs/mathematics/NumberTheory/Zeta/Riemann/raw-safe-dyadic-packing-obstr
 blob = "6ad322e6227b099c6235e431056bf4573a27cdaf"
 
 [evidence_states]
+CLAIM_SORT_REPAIRED = true
 SOURCE_DRAFT = true
 ELABORATED = false
 KERNEL_CHECKED = false

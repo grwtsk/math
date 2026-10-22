@@ -31,7 +31,7 @@ proof_mechanism = "vanishing enclosing volume around renormalized occupied quart
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.QuarticVolumePackingEndpoint"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/QuarticVolumePackingEndpoint.lean"
-blob = "84f412f1b98c85553fcf28bf19b62ac42f40ed57"
+blob = "06386bee381dfeb0a11889e900aecb3700fb380a"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEndpointControls"
@@ -48,6 +48,7 @@ path = "docs/mathematics/NumberTheory/Zeta/Riemann/quartic-volume-packing-endpoi
 blob = "47cee31e15922bc67ee216671be12f6e038a9088"
 
 [evidence_states]
+CLAIM_SORT_REPAIRED = true
 SOURCE_DRAFT = true
 ELABORATED = false
 KERNEL_CHECKED = false

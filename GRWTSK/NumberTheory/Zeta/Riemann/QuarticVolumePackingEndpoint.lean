@@ -159,7 +159,7 @@ theorem QuarticVolumePackingCertificateAtZero.forces_critical_line
 
 /-- All-zero source certificate claim. -/
 def QuarticVolumePackingClaim : Prop :=
-  ∀ z : ZeroPoint, QuarticVolumePackingCertificateAtZero z
+  ∀ z : ZeroPoint, Nonempty (QuarticVolumePackingCertificateAtZero z)
 
 /-- The volume-packing endpoint reaches the canonical Mathlib RH proposition
 without a signed positive-weight trace identity. -/
@@ -168,6 +168,7 @@ theorem riemannHypothesis_of_quarticVolumePacking
     _root_.RiemannHypothesis := by
   intro s hs htrivial hpole
   let z : ZeroPoint := ⟨s, hs, htrivial, hpole⟩
-  exact (packing z).forces_critical_line
+  obtain ⟨certificate⟩ := packing z
+  exact certificate.forces_critical_line
 
 end GRWTSK.RiemannHypothesis

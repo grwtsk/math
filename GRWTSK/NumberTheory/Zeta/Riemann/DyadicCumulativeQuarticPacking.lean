@@ -160,7 +160,7 @@ end OffLineDyadicCumulativePackingDataAtZero
 must produce the divergent-positive-packing packet. -/
 def OffLineDyadicCumulativePackingClaim : Prop :=
   ∀ z : ZeroPoint, ∀ ha : zeroDefect z.1 ≠ 0,
-    OffLineDyadicCumulativePackingDataAtZero z ha
+    Nonempty (OffLineDyadicCumulativePackingDataAtZero z ha)
 
 theorem riemannHypothesis_of_offLineDyadicCumulativePacking
     (supplier : OffLineDyadicCumulativePackingClaim) :
@@ -174,6 +174,7 @@ theorem riemannHypothesis_of_offLineDyadicCumulativePacking
     unfold zeroDefect at hzero
     dsimp [z] at hzero
     linarith
-  exact (supplier z ha).false_of_cumulative_packing.elim
+  obtain ⟨data⟩ := supplier z ha
+  exact data.false_of_cumulative_packing.elim
 
 end GRWTSK.RiemannHypothesis
