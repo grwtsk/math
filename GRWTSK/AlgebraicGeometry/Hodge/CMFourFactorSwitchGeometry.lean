@@ -236,6 +236,52 @@ structure FourfoldAlgebraicAssemblyData
   original_eq :
     tensor = assemble factors.vector
 
+/-- Rational fourfold vector target carrying the four second tensor
+components of canonical embedding-line factors. -/
+abbrev CanonicalFourfoldVectorTarget :=
+  (((GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)
+      ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)
+      ⊗[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)
+
+/-- Pure tensor of the four vector entries. -/
+def canonicalFourfoldVectorPure
+    (x₁ x₂ x₃ x₄ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    CanonicalFourfoldVectorTarget :=
+  ((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄
+
+/-- Canonical pure switched assembly: multiply the four algebraic coefficient
+entries and retain the four vector entries in a rational fourfold tensor. -/
+def canonicalPureAlgebraicAssembly
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+      ⊗[ℚ] CanonicalFourfoldVectorTarget :=
+  (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+    canonicalFourfoldVectorPure x₁ x₂ x₃ x₄
+
+/-- On pure canonical factors, scalar conjugation commutes with the fourfold
+assembly by multiplicativity of the coefficient-field automorphism. -/
+theorem scalarConjugate_canonicalPureAlgebraicAssembly
+    (σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate σ
+        (canonicalPureAlgebraicAssembly
+          a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      canonicalPureAlgebraicAssembly
+        (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ := by
+  simp [canonicalPureAlgebraicAssembly,
+    GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_tmul,
+    map_mul]
+
 /-- Exact remaining Galois-equivariance statement for algebraic fourfold
 assembly.
 
