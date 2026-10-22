@@ -2763,6 +2763,33 @@ theorem CMFiniteBalancedPureTensorSet.subset_H22
   exact R.pureTensor_mem_H22 a b c d τ₁ τ₂ τ₃ τ₄
     ha hb hc hd hp hq
 
+/-- The switched canonical actual pure tensor is one of the explicitly
+balanced generators. This supplies generator membership independently of
+the still-missing reverse spanning inclusion. -/
+theorem CMFiniteFourFactorSwitchAlignment.canonicalPureTensor_mem_balanced
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E.carrier}
+    {D : CMFiniteFourFactorActualTyping E factors v₁ v₂ v₃ v₄}
+    (A : CMFiniteFourFactorSwitchAlignment D) :
+    fourfoldActualPureTensor D.toActualTyping
+      (D.first.realization.canonicalTensorActualH1Comparison.toActual
+        D.first.vector)
+      (D.second.realization.canonicalTensorActualH1Comparison.toActual
+        D.second.vector)
+      (D.third.realization.canonicalTensorActualH1Comparison.toActual
+        D.third.vector)
+      (D.fourth.realization.canonicalTensorActualH1Comparison.toActual
+        D.fourth.vector) ∈ CMFiniteBalancedPureTensorSet D := by
+  refine ⟨_, _, _, _,
+    CMEmbeddingLines.typeOfSign (v₁.value D.first.character),
+    CMEmbeddingLines.typeOfSign (v₂.value D.second.character),
+    CMEmbeddingLines.typeOfSign (v₃.value D.third.character),
+    CMEmbeddingLines.typeOfSign (v₄.value D.fourth.character),
+    D.first.actual_type, D.second.actual_type,
+    D.third.actual_type, D.fourth.actual_type,
+    A.p_two, A.q_two, rfl⟩
+
 /-- The missing reverse inclusion is made explicit.  Hodge-type membership
 alone does not prove that balanced pure tensors span all of H^(2,2). -/
 structure CMFiniteBalancedPureTensorSpanning
