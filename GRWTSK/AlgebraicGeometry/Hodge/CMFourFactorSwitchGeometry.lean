@@ -151,6 +151,76 @@ theorem CanonicalTransportedMiddleLineData.exists_scale
 
 end CanonicalTransportedMiddleLine
 
+section CohomologyToCanonicalComparison
+
+open scoped TensorProduct
+open CMRegularBaseChange
+open CMEmbeddingTransport
+
+variable {k E H : Type*} [Field k] [Field E] [Algebra k E]
+  [FiniteDimensional k E] [IsGalois k E]
+  [AddCommGroup H] [Module E H]
+
+/-- Minimal comparison data between an actual cohomological realization and
+the canonical Galois tensor model.
+
+This structure does not assert that such a comparison exists; it records only
+the exact compatibility needed to transport the already-local one-dimensional
+eigenline argument back to cohomology. -/
+structure CohomologyCanonicalLineComparison
+    (σ τ : E ≃ₐ[k] E) where
+  toCanonical : H ≃ₗ[E] (E ⊗[k] E)
+  actualConjugate : H → H
+  conjugation_compatibility :
+    ∀ h,
+      toCanonical (actualConjugate h) =
+        GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+          σ (toCanonical h)
+  beta : H
+  gamma : H
+  beta_ne_zero : beta ≠ 0
+  gamma_ne_zero : gamma ≠ 0
+  beta_line :
+    toCanonical beta ∈ embeddingEigenspace (k := k) τ.toAlgHom
+  gamma_line :
+    toCanonical gamma ∈ embeddingEigenspace (k := k) (σ * τ).toAlgHom
+
+/-- The comparison equivalence preserves nonzero vectors. -/
+theorem CohomologyCanonicalLineComparison.beta_canonical_ne_zero
+    {σ τ : E ≃ₐ[k] E}
+    (D : CohomologyCanonicalLineComparison σ τ) :
+    D.toCanonical D.beta ≠ 0 :=
+  D.toCanonical.injective.ne_iff.mpr D.beta_ne_zero
+
+theorem CohomologyCanonicalLineComparison.gamma_canonical_ne_zero
+    {σ τ : E ≃ₐ[k] E}
+    (D : CohomologyCanonicalLineComparison σ τ) :
+    D.toCanonical D.gamma ≠ 0 :=
+  D.toCanonical.injective.ne_iff.mpr D.gamma_ne_zero
+
+/-- Once the actual cohomological embedding lines are compared with the
+canonical tensor model and scalar conjugation is respected, the manuscript's
+middle-line proportionality follows formally: gamma is a nonzero scalar
+multiple of the actual conjugate of beta. -/
+theorem CohomologyCanonicalLineComparison.exists_scale
+    {σ τ : E ≃ₐ[k] E}
+    (D : CohomologyCanonicalLineComparison σ τ) :
+    ∃ c : E, c ≠ 0 ∧
+      D.gamma = c • D.actualConjugate D.beta := by
+  let C : CanonicalTransportedMiddleLineData (k := k) σ τ where
+    beta := D.toCanonical D.beta
+    gamma := D.toCanonical D.gamma
+    beta_mem := D.beta_line
+    gamma_mem := D.gamma_line
+    beta_ne_zero := D.beta_canonical_ne_zero
+    gamma_ne_zero := D.gamma_canonical_ne_zero
+  obtain ⟨c, hc, hcan⟩ := C.exists_scale
+  refine ⟨c, hc, D.toCanonical.injective ?_⟩
+  rw [map_smul, D.conjugation_compatibility]
+  exact hcan
+
+end CohomologyToCanonicalComparison
+
 section PositiveMiddlePairing
 
 variable {V : Type*} [AddCommGroup V] [Module ℂ V]
