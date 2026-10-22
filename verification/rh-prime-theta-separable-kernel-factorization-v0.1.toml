@@ -1,0 +1,79 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-prime-theta-separable-kernel-factorization-v0.1"
+owner_repository = "grwtsk/math"
+issue = 723
+parent_issue = 720
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaSeparableKernelFactorizationControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaSeparableKernelFactorizationControls"
+
+[source_binding]
+parent_branch = "research/720-prime-kernel-recurrence-v01"
+parent_revision = "0d96e6571df70934a8d41e4c5821fcdd3ccc6e99"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_SEPARABLE_KERNEL_BOUND_DEFINED / SEPARABLE_CRITERION_TO_KERNEL_CRITERION_DEFINED / SOURCE_FEATURE_FAMILY_OPEN / SOURCE_MAJORANT_OPEN / UNIFORM_FACTOR_BUDGET_OPEN / DESCENDED_RESIDUAL_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[finite_factorization]
+prime_window = "thetaPrimeWindow X"
+factor_index = "finite Finset Nat"
+coefficient = "c_r(v)"
+left_feature = "L_r(p)"
+right_feature = "R_r(q)"
+induced_kernel = "K_v(p,q)=sum_r c_r(v)*L_r(p)*R_r(q)"
+absolute_factor_mass = "sum_(p,q in P_X) sum_r |c_r(v)*L_r(p)*R_r(q)|"
+pointwise_triangle = "|K_v(p,q)| <= sum_r |c_r(v)*L_r(p)*R_r(q)|"
+finite_mass_bound = "induced.kernelMass(v) <= absoluteFactorMass(v)"
+
+[criterion_transport]
+source = "PrimeThetaSeparableKernelCriterionAt(rho)"
+intermediate = "PrimeThetaQuadraticKernelCriterionAt(rho)"
+recurrence = "QuadraticThetaSourceRecurrenceAt(rho)"
+descent = "QuadraticThetaDescentAt(rho) when 3/4<=rho"
+criterion_to_intermediate_proved_source = true
+intermediate_to_recurrence_reused = true
+
+[clause_index]
+arity_three = "PrimeThetaSeparableKernelCriterionAt(7/8)"
+arity_two = "PrimeThetaSeparableKernelCriterionAt(3/4)"
+transport_kind = "exact real equality only"
+complexity_to_arithmetic_transport = false
+
+[open_obligations]
+source_feature_family = "open"
+next_octave_source_majorization = "open"
+uniform_absolute_factor_budget = "open"
+descended_residual_7_8 = "open"
+descended_residual_3_4 = "open"
+criterion_7_8 = "open"
+criterion_3_4 = "open"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PrimeThetaSeparableKernelFactorization"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimeThetaSeparableKernelFactorization.lean"
+blob = "d8c6be5969e622b23c6693e5d98da23bf644dcb0"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPrimeThetaSeparableKernel"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPrimeThetaSeparableKernel.lean"
+blob = "d132accf2b18ce26dcf7a81b0eb3d36d3323cf7e"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaSeparableKernelFactorizationControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimeThetaSeparableKernelFactorizationControls.lean"
+blob = "5cec08e7318fb3ee630da6642a78baa94cb91a8f"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-theta-separable-kernel-factorization.md"
+blob = "01edd373ac29a1b76e3e03fdcf4e7ed6e72b027f"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FINITE_SEPARABLE_KERNEL_BOUND_DEFINED = true
+SEPARABLE_CRITERION_TO_KERNEL_CRITERION_DEFINED = true
+SOURCE_FEATURE_FAMILY_CONSTRUCTED = false
+SOURCE_MAJORANT_PROVED = false
+UNIFORM_FACTOR_BUDGET_PROVED = false
+DESCENDED_RESIDUAL_PROVED = false
+COMPLEXITY_TO_ZETA_TRANSFER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
