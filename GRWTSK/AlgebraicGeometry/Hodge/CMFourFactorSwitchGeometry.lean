@@ -1499,6 +1499,45 @@ theorem CMFiniteSeparatedCanonicalAssembly_pure
     canonicalFinitePureAssembly,
     CMFiniteFourCoefficientMultiplication_pure]
 
+/-- The original fourfold tensor target with coefficient/vector pairs
+still interleaved. This fixes the associativity convention before
+constructing the canonical tensor shuffle. -/
+abbrev CMFiniteFourPairedTensor (E : CMGaloisIntermediateField) :=
+  (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)
+
+/-- The canonical generator of the interleaved paired tensor target. -/
+def CMFiniteFourPairedPure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourPairedTensor E :=
+  (((a₁ ⊗ₜ[ℚ] x₁) ⊗ₜ[ℚ] (a₂ ⊗ₜ[ℚ] x₂)) ⊗ₜ[ℚ]
+    (a₃ ⊗ₜ[ℚ] x₃)) ⊗ₜ[ℚ] (a₄ ⊗ₜ[ℚ] x₄)
+
+/-- The corresponding separated pure coefficient/vector tensor, with
+identical association conventions. -/
+def CMFiniteFourSeparatedPure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourCoefficientTensor E ⊗[ℚ]
+      CMFiniteCanonicalVectorTarget E :=
+  (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄) ⊗ₜ[ℚ]
+    (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
+
+/-- The constructed separated assembly evaluates the separated version
+of any interleaved pure generator to the required finite-CM formula.
+Only the tensor shuffle map remains to be constructed. -/
+theorem CMFiniteSeparatedCanonicalAssembly_on_separatedPure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteSeparatedCanonicalAssembly E
+        (CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  exact CMFiniteSeparatedCanonicalAssembly_pure E
+    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
 the first rational tensor-product universal property. -/
