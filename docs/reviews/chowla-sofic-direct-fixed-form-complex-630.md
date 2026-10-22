@@ -52,7 +52,7 @@ The new arithmetic source
 
 `GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedFormComplexAdapter.lean`
 
-has source blob `7e2bec5025d39d375c9ff8e9f5a826c8fcf7b8ff`.
+has source blob `028a65364fbc3d5365a813eac2212f26739b61fc`.
 Its local complex-valued functions reproduce the relevant
 **signature** of OpenAI's pinned external source:
 
