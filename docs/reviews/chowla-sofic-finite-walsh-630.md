@@ -811,3 +811,172 @@ acceptance.
 
 **Evidence:** `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 NOT_TRUST_AUDITED / NO_ARITHMETIC_SUPPLIER`.
+
+## 14. Source-only seventh increment: uniform all-order Chowla envelope and exponential cost
+
+**Date:** 2026-10-22. **Direct parent exact head:**
+`fbe3bc2b651fd24edd7eb40ed4276b8b0041bbc1`.
+
+**New subject source:**
+`GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteChowlaUniformEnvelope.lean`.
+**Source blob:** `6cddcb08c60dafff9ec36def5167a60f4c87212c`.
+
+This advances one missing *conditional arithmetic-supplier interface*: it
+specifies the quantifiers required to turn a uniform higher-order ordinary
+Chowla estimate into a usable finite Walsh energy bound, without constructing
+or admitting such an estimate.
+
+### 14.1 Exact supplier and finite implication
+
+Let `H : Finset Nat` be a selected set of `k=|H|` distinct offsets,
+`N>0`, and `z : Nat→Bool`. For each **nonempty** subset
+`S⊆H`, define the ordinary finite correlation
+
+```text
+C_N(S) = (1/N) * sum_(n=0)^(N-1)
+           prod_(h∈S) sign(z(n+h)).
+```
+
+The new proposition `OrdinaryAllOrderChowlaAtScale N H z epsilon`
+requires **one nonnegative rational epsilon, common to every nonempty
+subset at the exact SAME N and for the exact SAME H**, such that
+
+```text
+for all nonempty S⊆H: |C_N(S)| <= epsilon.
+```
+
+The analytic premise is NOT supplied. In particular, a theorem
+`∀ fixed S, ∃ C_S` with form-dependent constants is not an inhabitant
+of this interface for a growing family `H_N` without a separately
+proved uniformity theorem. Nor do two-point estimates establish all
+orders, or logarithmically averaged estimates supply ordinary averages.
+
+The exact cardinality identity is
+
+```text
+# { S⊆H : S != empty } = 2^k - 1.
+```
+
+A finite termwise square comparison and sum give
+
+```text
+E_N(H) := sum_(nonempty S⊆H) C_N(S)^2
+       <= (2^k - 1) * epsilon^2.
+```
+
+The conditional cyclic return now composes with the prior theorem,
+retaining the independent collar cost:
+
+```text
+TV(P_cyclic(H,N),U_H)
+  <= r/N + (1/2)*sqrt((2^k-1)*epsilon^2)
+   = r/N + (1/2)*sqrt(2^k-1)*epsilon
+```
+
+for `r=max H<N` and `epsilon>=0`. The new Lean source drafts the
+first expression with rational epsilon and an explicit cast to real
+before applying monotonicity of the square root. The simplified right
+side is a written elementary equality, not a separate Lean declaration.
+
+This makes the sufficient growing-window scope completely explicit:
+
+```text
+r_N / N -> 0
+and
+(2^k_N - 1) * epsilon_N^2 -> 0
+    ==> TV(P_cyclic(H_N,N), U_H_N) -> 0.
+```
+
+All assertions involving `N→∞` here are **written conditional
+deductions**, not convergence declarations or a claimed proof of
+Chowla. If a genuinely uniform quantitative rate were
+`epsilon_N <= C*(log N)^(-A)` with fixed `C,A>0`, then a sufficient
+growth regime would be
+`k_N <= (2A-eta)*log_2(log N)` for fixed `eta>0`.
+For a hypothetical uniform `epsilon_N <= C*N^(-delta)`, it would
+suffice to have `k_N <= (2*delta-eta)*log_2(N)`.
+These are elementary **rate comparisons**, not imported arithmetic
+results, and require `r_N=o(N)` independently.
+
+### 14.2 An independent finite-support obstruction (written mathematics)
+
+A sample of size `N` can realize at most `N` distinct Boolean words
+among the `q=2^k` possible patterns. If `A` is the empirical support,
+
+```text
+TV(P_N,U_q) >= U_q(A^c)
+            = 1 - |A|/q
+            >= 1 - N/q.
+```
+
+Thus `q/N→∞` prevents total-variation convergence to the fair
+Bernoulli law, regardless of a hypothesized cancellation mechanism.
+
+The existing finite chi-square identity also gives an exact algebraic
+version of the same obstruction. If `c_a` counts each observed word,
+then `sum_a c_a=N`, `c_a^2>=c_a`, and
+
+```text
+E_N(H) = (q/N^2) * sum_a c_a^2 - 1
+       >= q/N - 1.
+```
+
+This is a nontrivial *necessary feasibility boundary* for growing
+windows. It is a **paper derivation, not yet a Lean theorem**; do not
+misreport it as part of the new source.
+
+### 14.3 Sharp multiplicity fixture and hostile controls
+
+The exponential factor `2^k-1` cannot be replaced by `k` using
+pointwise bounds alone. For `k=2` and `N=8`, take four patterns with
+counts `(5,1,1,1)`. Every nonempty Walsh correlation has absolute
+value `1/2`. Hence
+
+```text
+epsilon = 1/2, E_N = 3/4
+        = (2^2-1)*epsilon^2
+        > 2*epsilon^2.
+```
+
+The bound is therefore attained by an actual finite sample. This
+fixture and the support obstruction are source-independent finite
+mathematics and are not being attributed to an arithmetic sequence.
+
+Mandatory review rejections:
+
+- dropping any nonempty subset, including 3-point and higher correlations;
+- replacing the exponential number of characters by only `k`;
+- deriving a common `epsilon_N` from form-dependent constants without
+  a uniformity argument;
+- changing ordinary averaging to logarithmic averaging;
+- inferring a nontrivial growing-window Bernoulli limit with `2^k≫N`;
+- interpreting a finite sign-pattern limit as a GUE or RH theorem.
+
+### 14.4 Source and evidence inventory
+
+The **two new definitions** are `AllOrderCorrelationEnvelope` and
+`OrdinaryAllOrderChowlaAtScale`. The **five new theorem heads** are
+`nonemptyCharacterCount`, `nonemptyCharacterCount_rat`,
+`energy_le_characterCount_mul_envelope_sq`,
+`energy_le_exponential_envelope_sq`, and
+`cyclicTV_le_allOrderEnvelope`.
+
+The passive verification target expands to **eight isolated modules,
+56 theorem heads and 24 definitions**. No existing mathematical
+source, root import, dependency pin or verification runtime changed.
+
+Independent exact-integer evaluation checked **11,774**
+exhaustive/sample cases of the energy/count and finite-support
+inequalities (including the zero-dimensional cube) without
+discrepancy. The sharp `(5,1,1,1)` fixture realizes equality in
+the exponential envelope. These finite checks are NOT Lean proof
+elaboration, kernel acceptance, or analytic evidence for Liouville.
+
+**Evidence state:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+NOT_TRUST_AUDITED / GROWING_SHIFT_ALL_ORDER_ESTIMATE_OPEN.
+
+**Exact next obstruction:** constructing (or identifying a legitimate
+external theorem with) an all-order ordinary Chowla estimate whose
+constants are uniform across the selected growing shift sets, while
+respecting the finite-sample feasibility boundary. Until then, no
+new unconditional distribution theorem follows from this adapter.
