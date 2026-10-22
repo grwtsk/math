@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-dft-smoothing-window-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "3f7a37643fdd194cca12ed887e47c8deec915d1d"
+parent_tree = "30e30215491684d68ad89cdd9248504850047413"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FOURIER_SMOOTHING_EXPONENT_WINDOW_TYPED / SMOOTHED_DFT_RECONSTRUCTION_OPEN"
+
+[tradeoff]
+low_mode_exponent = "(1+beta)/2"
+boundary_exponent = "1-beta"
+three_quarter_window = "1/4 <= beta <= 1/2"
+balanced_beta = "1/3"
+balanced_exponent = "2/3"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FOURIER_SMOOTHING_EXPONENT_WINDOW_TYPED = true
+SMOOTHED_DFT_RECONSTRUCTION_PROVED = false
+THREE_QUARTER_POWER_SAVING_PROVED = false
+RECURRENCE_7_8_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
