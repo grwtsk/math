@@ -155,6 +155,39 @@ theorem embeddingEigenspace_finrank_one (j : Fin n) :
   rw [embeddingEigenspace_eq_span k E j]
   exact finrank_span_singleton (canonicalEigenvector_ne_zero k E j)
 
+/-- Any two nonzero vectors in one canonical Galois embedding eigenspace
+differ by a unique-up-to-value nonzero scalar.  This is the linear-algebra
+content needed later for the manuscript's "gamma is a nonzero scalar multiple
+of conjugate beta" statement. -/
+theorem exists_ne_zero_smul_eq_of_mem_embeddingEigenspace
+    (σ : E ≃ₐ[k] E)
+    {x y : E ⊗[k] E}
+    (hxmem : x ∈ embeddingEigenspace (k := k) σ.toAlgHom)
+    (hymem : y ∈ embeddingEigenspace (k := k) σ.toAlgHom)
+    (hx : x ≠ 0)
+    (hy : y ≠ 0) :
+    ∃ c : E, c ≠ 0 ∧ y = c • x := by
+  let j : Fin n := (galIndexEquiv k E).symm σ
+  have hj : embeddingCharacter k E j = σ.toAlgHom :=
+    embeddingCharacter_symm k E σ
+  rw [← hj, embeddingEigenspace_eq_span k E j] at hxmem hymem
+  obtain ⟨a, ha⟩ := Submodule.mem_span_singleton.mp hxmem
+  obtain ⟨b, hb⟩ := Submodule.mem_span_singleton.mp hymem
+  have ha0 : a ≠ 0 := by
+    intro hzero
+    apply hx
+    rw [← ha, hzero, zero_smul]
+  have hb0 : b ≠ 0 := by
+    intro hzero
+    apply hy
+    rw [← hb, hzero, zero_smul]
+  refine ⟨b / a, div_ne_zero hb0 ha0, ?_⟩
+  calc
+    y = b • canonicalEigenvector k E j := hb.symm
+    _ = (b / a) • (a • canonicalEigenvector k E j) := by
+      rw [smul_smul, div_mul_cancel₀ b ha0]
+    _ = (b / a) • x := by rw [ha]
+
 /-- Every canonical embedding eigenspace contains a nonzero vector. -/
 theorem embeddingEigenspace_nonzero (j : Fin n) :
     ∃ t : E ⊗[k] E,
