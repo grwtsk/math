@@ -1,0 +1,79 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-wiener-ikehara-relative-window-to-full-v0.1"
+owner_repository = "grwtsk/math"
+issue = 940
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerIkeharaRelativeWindowToFullControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerIkeharaRelativeWindowToFullControls"
+
+[source_binding]
+parent_branch = "research/928-weak-pnt-modone-analytic-input-v01"
+parent_revision = "980277d0740ccb6d2d4a9fb30a8c65392ed6436d"
+implementation_branch = "research/940-wi-interval-to-full-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_CEILING_WINDOW_PARTITION_SOURCE_DEFINED / POSITIVE_PREFIX_LOSS_BOUND_SOURCE_DEFINED / RELATIVE_INTERVAL_TO_FULL_TAUBERIAN_SOURCE_DEFINED / ACTUAL_PINNED_LAMBDA_CONSUMER_SOURCE_DEFINED / HISTORICAL_INTERVAL_WIENER_IKEHARA_THEOREM_PORT_OPEN / NO_PNT_OR_RH_CLAIM"
+
+[historical]
+external_repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+revision = "a5040887e6bb24f7c201db8568e7755c138b3878"
+wiener_file = "PrimeNumberTheoremAnd/Wiener.lean"
+wiener_blob = "06d464bfbf34b21360a8c725422d6c7d1cb4c2eb"
+discrete_window_supplier = "WienerIkeharaInterval_discrete'"
+discrete_window_line_approx = 2061
+last_mile_source_theorem = "WienerIkeharaTheorem'"
+last_mile_line_approx = 2122
+historical_mathlib = "308445d7985027f538e281e18df29ca16ede2ba3"
+local_mathlib = "db584cd6d46c92f209a44c0f1c829460d327499d"
+external_proof_imported = false
+
+[mathematics]
+f_nonnegative = "forall n, 0 <= f(n)"
+fixed_linear_chebyshev = "forall N, sum_(n in range N) f(n) <= C*N"
+window_cutoff = "Nat.ceil(delta * N)"
+window_set = "Finset.Ico (ceil(delta*N)) N"
+all_relative_intervals = "forall delta, 0<delta<1, window_sum(N,delta)/N -> A*(1-delta)"
+partition = "sum_range N f = sum_range ceil(delta*N) f + sum_Ico ceil(delta*N) N f, eventually cutoff<=N"
+ceiling_normalization = "ceil(delta*N)/N -> delta"
+early_prefix_quantitative = "0<=prefix(N,delta)/N<=2*C*delta eventually"
+epsilon_budget = "delta=min(1/4, epsilon/(8*(C+abs(A)+1)))"
+proved_conclusion_source = "sum_range N f/N -> A"
+historic_window_limits_source_proved = false
+single_fixed_delta_insufficient_claim = false
+no_rh_conclusion = true
+
+[formal_declarations]
+generic_window_limits = "TauberianRelativeWindowLimits"
+exact_partition = "tauberian_relative_window_exact_partition"
+omitted_prefix_le = "tauberian_omitted_prefix_le"
+generic_last_mile = "tauberian_relativeWindows_to_fullCumulative"
+pinned_lambda_window_input = "PinnedVonMangoldtRelativeIntervalLimits"
+pinned_lambda_consumer = "pinnedVonMangoldtWeakPNT_of_intervalLimits"
+hostile_zero_counterexample = "zero_sequence_rejects_unit_windowLimit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerIkeharaRelativeWindowToFull"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedWienerIkeharaRelativeWindowToFull.lean"
+blob = "a7ec1f87878e7a9a29553471abb38e2b2ac9be4d"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerIkeharaRelativeWindowToFullControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedWienerIkeharaRelativeWindowToFullControls.lean"
+blob = "75e4fe939a8c14c60c1597aeacb23404db1a9ee4"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-wiener-ikehara-relative-window-to-full.md"
+blob = "ce67c7aa02a3d572387cbbe223bf855980e203ab"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXACT_FINITE_WINDOW_PARTITION_SOURCE_DEFINED = true
+EARLY_PREFIX_BOUND_SOURCE_DEFINED = true
+EPSILON_SQUEEZE_TAUBERIAN_SOURCE_DEFINED = true
+ACTUAL_PINNED_LAMBDA_SPECIALIZATION_SOURCE_DEFINED = true
+RELATIVE_INTERVAL_LIMIT_PROOF_IMPORTED = false
+WIENER_IKEHARA_ANALYTIC_PROOF_IMPORTED = false
+UNCONDITIONAL_LOCAL_WEAK_PNT_PROVED = false
+UNCONDITIONAL_LOCAL_NOT_CAPACITY_PROVED = false
+ROOT_IMPORT_CHANGED = false
+NO_RH_CLAIM = true
