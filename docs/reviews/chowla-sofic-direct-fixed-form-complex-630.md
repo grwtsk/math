@@ -234,3 +234,70 @@ modular pi identity, or Riemann Hypothesis.
 **Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 EXTERNAL_PROOF_NOT_IMPORTED / CROSS_PIN_PORT_OPEN /
 GROWING_SHIFT_ALL_ORDER_CHOWLA_OPEN.**
+
+## 7. Pinned external prime-reciprocal source-resolution blocker
+
+**Additional review: 2026-10-22.** This is a new bounded SOURCE-ONLY
+obstruction, not an additional analytic lemma or a kernel result.
+Parent PR head before the increment:
+`09a29b3bebdf10518d2dd49d03890a83f1931c54`.
+
+The selected OpenAI solution entrypoint's import graph passes through
+`OAI.NumberTheory.TwoPoint.PartiallyDischargedMain`
+(blob `fa2db4b20ce8ea287323c2bdadddc82182a846f5`)
+to `OAI.NumberTheory.TwoPoint.Bounds.PrimeReciprocalTheorem`
+(blob `5dacdbe763e4aac5f1ac8e48f63bc0d55e6f1f42`).
+
+The latter source, at pinned line 2, imports
+`PrimeNumberTheoremAnd.Erdos970.MertensClassical`, then invokes
+`Erdos970.Mertens.sum_prime_div_eq_log_log`.
+The nominal dependency is pinned to
+`AlexKontorovich/PrimeNumberTheoremAnd@c39a751132c88b6e8080b74c74023fd95b3d8be0`.
+Its expected `PrimeNumberTheoremAnd/Erdos970/MertensClassical.lean`
+source file was not found in that dependency's pinned tree.
+This is a concrete import-provenance question, NOT an observed compiler
+error: neither a complete package graph nor a clean build was run.
+
+In the same pinned package, the source
+`PrimeNumberTheoremAnd/IEANTN/Mertens.lean`
+(blob `1c45fc368e4fc7c3ff7876be4f8e67c3d6f2a6be`)
+contains `Mertens.sum_prime_div_eq_log_log` with the expected
+prime-reciprocal bounded-error mathematical statement and an
+authored proof body. The provider's own
+`Bounds/MertensScale.lean` (blob
+`70ed8879bcb968374e976a321bd82e53003b22db`)
+already defines the target `PrimeReciprocalInput`; its
+prime-set normalization is addressed in
+`sievePrimesUpTo_eq_Ioc`.
+
+An exact, **UNAPPLIED** proposed external patch is recorded as
+
+`verification/openai-result007-prime-reciprocal-import-630-v0.1.patch`
+(blob `ceaec6a0f3e6fb568abf51848e09ea7ca0d04ebf`).
+
+It changes precisely the outdated import, the source comment, and
+the theorem reference, with all other original lines unchanged.
+This is a source-level candidate repair and requires an actual
+Lean proof elaboration and transitive axiom audit. It is not an
+accepted source patch or proof of compatibility.
+
+The nominal PrimeNumberTheoremAnd dependency itself uses Lean 4.34.0
+and has a different Mathlib revision from OpenAI's Lean 4.34.1
+environment. OpenAI's pinned
+`lean/patches/PrimeNumberTheoremAnd-lean4341.patch`
+has empty source content at the examined pin; no repair is visible
+there. These are additional explicit qualification boundaries,
+not independently observed build failures.
+
+For full exact source references and external clean-checkout
+acceptance conditions, see
+`docs/reviews/chowla-sofic-openai-fixed-form-prime-import-630.md`.
+
+**Evidence:** `PINNED_SOURCE_IMPORT_PROVENANCE_UNRESOLVED /
+INERT_THREE_LINE_PATCH / NO_PROVIDER_REPLAY /
+NO_KERNEL_OR_TRANSITIVE_AXIOM_AUDIT /
+NO_LOCAL_FIXED_FORM_PROOF_TERM`.
+
+All source-only definitions and conditional theorem declarations
+from earlier sections remain unchanged. Even after resolving this
+dependency, growing-shift all-order Chowla remains independent.
