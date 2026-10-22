@@ -1416,3 +1416,19 @@ nonclaims = [
   "combinatorial four-label balance only",
   "does not construct a tensor, rational descent datum, or algebraic cycle"
 ]
+
+
+[[local_target]]
+name = "canonical atomic switch all-conjugate (2,2) profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.canonicalAtomicSwitchFourFactorProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source matrix",
+  "fixed-point-free selected conjugate coordinate",
+  "opposite mismatch pair defining one atomic switch"
+]
+nonclaims = [
+  "contains only the four canonical sign rows, FourBalance, and all-conjugate (2,2) certificate",
+  "does not construct tensor descent data, rational witness, or algebraic cycle"
+]
