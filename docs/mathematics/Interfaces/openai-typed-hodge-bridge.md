@@ -801,6 +801,52 @@ switch-line tensor/correspondence and its algebraic-cycle realization.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4l. Geometric suppliers for finite switch chains
+
+The combinatorial switch chain is now consumed by
+\`GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean\`.
+
+The remaining geometry is split into three explicit suppliers:
+
+~~~text
+IdentityTransitionSupplier
+AtomicSwitchTransitionSupplier
+TransitionCompositionSupplier
+~~~
+
+Their intended manuscript meanings are:
+
+- identity transitions come from the unchanged two-factor classes
+  \(U(v)_1\otimes U(v)_c\);
+- an atomic switch transition comes from the four-factor switch class together
+  with unchanged-row pair classes;
+- composition is the pullback/cup-product/pushforward operation of
+  \`eq:transition-composition\`, including the required nonvanishing pairing.
+
+The local theorem
+
+~~~text
+transitionOfReach
+~~~
+
+proves formally that any finite \`PairedMatrixReach\` chain assembles to one
+global algebraic-transition witness once those three suppliers are admitted.
+
+Combining this with the already-local finite connectivity theorem gives
+
+~~~text
+transitionOfEqualColumnSums
+~~~
+
+so the remaining switch-reduction boundary is no longer combinatorial.  It is
+exactly the geometric realization of an elementary switch and the geometric
+composition law for consecutive transition tensors.
+
+No local cycle/cohomology implementation is invented; the witnesses remain
+opaque until an appropriate geometric API or imported theorem is available.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
