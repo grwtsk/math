@@ -204,6 +204,54 @@ noncomputable def canonicalEigenlineRealization
     (fun σ => embeddingEigenspace_nonzero_aut k E σ)
     typeAt
     htype
+
+/-- Canonical formal weight-one type labels on the canonical Galois eigenlines.
+
+This is a typed profile only: it assigns `(1,0)`/`(0,1)` labels from the sign
+row by definition. The theorem does not prove that these labels arise from an
+actual polarized rational Hodge structure. -/
+noncomputable def canonicalTypedEigenlineRealization
+    {conj : (E ≃ₐ[k] E) → (E ≃ₐ[k] E)}
+    (v : CMFourBalance.OddSignRow (E ≃ₐ[k] E) conj) :
+    CMEmbeddingEigenspaces.CharacterEigenlineRealization
+      E E (E ⊗[k] E) (E ≃ₐ[k] E) conj v :=
+  canonicalEigenlineRealization k E v
+    (fun σ => CMEmbeddingLines.typeOfSign (v.value σ))
+    (fun _ => rfl)
+
+/-- Four balanced sign rows on the canonical Galois eigenspaces have the
+formal all-coordinate `(2,2)` type-label count.
+
+This still does not assert that the labelled decomposition is a Hodge
+decomposition or that the corresponding tensor line is algebraic. -/
+theorem canonicalTypedEigenlines_fourFactor_bidegree_two_two
+    {conj : (E ≃ₐ[k] E) → (E ≃ₐ[k] E)}
+    (v₁ v₂ v₃ v₄ : CMFourBalance.OddSignRow (E ≃ₐ[k] E) conj)
+    (hbal : CMFourBalance.FourBalance v₁ v₂ v₃ v₄) :
+    ∀ g,
+      (CMEmbeddingLines.pIndex
+          ((canonicalTypedEigenlineRealization k E v₁).typeAt g) +
+        CMEmbeddingLines.pIndex
+          ((canonicalTypedEigenlineRealization k E v₂).typeAt g) +
+        CMEmbeddingLines.pIndex
+          ((canonicalTypedEigenlineRealization k E v₃).typeAt (conj g)) +
+        CMEmbeddingLines.pIndex
+          ((canonicalTypedEigenlineRealization k E v₄).typeAt (conj g)) = 2) ∧
+      (CMEmbeddingLines.qIndex
+          ((canonicalTypedEigenlineRealization k E v₁).typeAt g) +
+        CMEmbeddingLines.qIndex
+          ((canonicalTypedEigenlineRealization k E v₂).typeAt g) +
+        CMEmbeddingLines.qIndex
+          ((canonicalTypedEigenlineRealization k E v₃).typeAt (conj g)) +
+        CMEmbeddingLines.qIndex
+          ((canonicalTypedEigenlineRealization k E v₄).typeAt (conj g)) = 2) :=
+  CMEmbeddingEigenspaces.characterEigenlines_fourFactor_bidegree_two_two
+    v₁ v₂ v₃ v₄
+    (canonicalTypedEigenlineRealization k E v₁)
+    (canonicalTypedEigenlineRealization k E v₂)
+    (canonicalTypedEigenlineRealization k E v₃)
+    (canonicalTypedEigenlineRealization k E v₄)
+    hbal
 end
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines
