@@ -1041,3 +1041,46 @@ nonclaims = [
   "uses local finite switch connectivity",
   "all geometric algebraicity input remains external"
 ]
+
+
+[[local_target]]
+name = "recover endpoint algebraicity from nonzero scalar multiple"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.NonzeroScalarCompositionData.endpoint_mem"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "submodule of algebraic classes",
+  "produced class lies in that submodule",
+  "produced class equals a nonzero scalar multiple of endpoint"
+]
+nonclaims = [
+  "pure linear algebra only",
+  "does not prove the transition-composition formula",
+  "does not prove the manuscript q_i factors are nonzero"
+]
+
+[[external_premise]]
+id = "cm-transition-composition-formula"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "pullback/cup-product/pushforward produces a class equal to sign times product(q_i) times the endpoint transition tensor"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.NonzeroScalarCompositionData.endpoint_mem"
+status = "OPEN"
+nonclaims = [
+  "local source only handles recovery from a nonzero scalar multiple"
+]
+
+[[external_premise]]
+id = "cm-transition-pairing-nonvanishing"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "each middle-factor pairing q_i is nonzero via conjugate embedding-line identification and Hodge-Riemann positivity"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.NonzeroScalarCompositionData.endpoint_mem"
+status = "OPEN"
+nonclaims = [
+  "no local Hodge-Riemann ample-class pairing theorem at this geometric scope"
+]
