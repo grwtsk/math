@@ -69,6 +69,7 @@ theorem singletonScaleSquareEnergy_le_coordinate
   rw [← alignedDyadicScaleSquareEnergy_zero]
   unfold alignedDyadicCoordinateSquareEnergy
   apply Finset.single_le_sum
+    (f := fun r => alignedDyadicScaleSquareEnergy m r a) (a := 0)
   · intro r hr
     unfold alignedDyadicScaleSquareEnergy
     exact Finset.sum_nonneg fun q _hq =>
