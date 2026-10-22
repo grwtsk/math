@@ -1462,3 +1462,36 @@ upstream_obligations = [
 nonclaims = [
   "no algebraicity conclusion"
 ]
+
+
+[[local_target]]
+name = "invariant-aware finite switch-chain geometric assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfReachWithInvariants"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-valued source matrix",
+  "odd source matrix",
+  "involutive conjugation",
+  "InvariantSwitchGeometrySupplier",
+  "finite PairedMatrixReach chain"
+]
+nonclaims = [
+  "formal invariant plumbing only",
+  "does not prove atomic tensor stability or algebraicity"
+]
+
+[[local_target]]
+name = "equal column sums feed invariant-aware geometric path"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfEqualColumnSumsWithInvariants"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source and target matrices",
+  "equal column sums",
+  "InvariantSwitchGeometrySupplier"
+]
+nonclaims = [
+  "fixed-point-freeness at each selected coordinate is derived locally from oddness and sign-valuedness",
+  "does not supply tensor-level geometric inputs"
+]
