@@ -168,8 +168,10 @@ theorem exists_ne_zero_smul_eq_of_mem_embeddingEigenspace
     (hy : y ≠ 0) :
     ∃ c : E, c ≠ 0 ∧ y = c • x := by
   let j : Fin n := (galIndexEquiv k E).symm σ
-  have hj : embeddingCharacter k E j = σ.toAlgHom :=
-    embeddingCharacter_symm k E σ
+  have hj : embeddingCharacter k E j = σ.toAlgHom := by
+    apply AlgHom.ext
+    intro a
+    simp [embeddingCharacter, j]
   rw [← hj, embeddingEigenspace_eq_span k E j] at hxmem hymem
   obtain ⟨a, ha⟩ := Submodule.mem_span_singleton.mp hxmem
   obtain ⟨b, hb⟩ := Submodule.mem_span_singleton.mp hymem
