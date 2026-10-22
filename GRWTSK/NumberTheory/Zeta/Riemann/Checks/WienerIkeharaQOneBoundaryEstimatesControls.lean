@@ -15,7 +15,7 @@ namespace GRWTSK.RiemannHypothesis.Checks
 
 open GRWTSK.RiemannHypothesis
 open Real Complex Filter MeasureTheory FourierTransform SchwartzMap
-open scoped FourierTransform
+open scoped FourierTransform Topology
 
 /-- The q=1 coefficient equality holds for ALL n, not merely
 primes or n≥1. No fictitious residue-class arithmetic input. -/
