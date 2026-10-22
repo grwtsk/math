@@ -290,6 +290,73 @@ theorem FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine
   rw [D.scalar_conjugate_eq σ]
   exact Submodule.subset_span (Set.mem_singleton _)
 
+/-- Exact Hodge-realization input for one transported monomial generator.
+
+Because the transported monomial line is defined as the span of this one
+assembled generator, generator membership is enough to recover the whole-line
+inclusion locally. -/
+structure TransportedMonomialGeneratorHodgeData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldMonomialAssemblyData factors tensor)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)) where
+  generator_mem :
+    ∀ σ,
+      D.assemble ((factors.scalarTransport σ).vector) ∈ hodgeSubspace
+
+/-- Membership of each transported monomial generator implies inclusion of the
+whole transported monomial line in the actual Hodge subspace. -/
+theorem TransportedMonomialGeneratorHodgeData.transportedLine_le
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    {D : FourfoldMonomialAssemblyData factors tensor}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (H : TransportedMonomialGeneratorHodgeData D hodgeSubspace)
+    (σ :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ≃ₐ[ℚ]
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers) :
+    D.transportedLine σ ≤ hodgeSubspace := by
+  rw [FourfoldMonomialAssemblyData.transportedLine]
+  apply Submodule.span_le.mpr
+  intro z hz
+  simpa only [Set.mem_singleton_iff] using
+    hz ▸ H.generator_mem σ
+
+/-- Generator-level Hodge membership is therefore enough to build the complete
+scalar-conjugate monomial-line package. -/
+def FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineDataOfGenerator
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldMonomialAssemblyData factors tensor)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (H : TransportedMonomialGeneratorHodgeData D hodgeSubspace) :
+    ScalarConjugateMonomialLineData tensor hodgeSubspace where
+  monomialLine := D.transportedLine
+  conjugate_mem_line := D.scalarConjugate_mem_transportedLine
+  line_le_hodge := H.transportedLine_le
+
 /-- Fourfold assembly data canonically supplies the monomial-line membership
 half of ScalarConjugateMonomialLineData.  Only inclusion of the transported
 line in the actual Hodge subspace remains geometric. -/
