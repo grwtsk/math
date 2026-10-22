@@ -1,0 +1,39 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-weighted-weak-mertens-641-v0.1"
+owner_repository = "grwtsk/math"
+issue = 641
+parent_issue = 639
+parent_pr = 640
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryWeightedWeakMertens"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryWeightedWeakMertens"
+
+[source_binding]
+stacked_parent_revision = "59d0a306489e4248542b7e85d08fae536e3d8747"
+candidate_branch = "research/rh-weighted-mertens-641"
+theorem_source_commit = "064fcef50a638de107e69ba4c9b7a041cfa8ddb7"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryWeightedWeakMertens.lean"
+theorem_source_git_blob = "7f4d1044484480d76500b2dfc5d4fe7ef27b9356"
+
+[selected_increment]
+weighted_prefix = "weightedMertensPrefixSquare"
+weighted_localized_energy = "boundaryLocalizedWeightedMertensSquareEnergy"
+unweighted_to_weighted = "boundaryLocalizedMertensSquareEnergy_le_weighted"
+discrete_source = "DyadicWeightedWeakMertensBoundarySource"
+weighted_to_localized = "subpolynomialBoundaryLocalizedMertensSquareEnergy_of_weighted"
+adapter_value = "discreteWeightedWeakMertensToBoundaryLocalizedEnergyAdapter"
+weighted_to_boundary = "subpolynomialCoreBoundarySignedPacket_of_weightedWeakMertens"
+classical_adapter = "ClassicalWeakMertensToDiscreteBoundaryAdapter"
+proof_classification = "DISCRETE_WEIGHTED_WEAK_MERTENS_LOCALIZATION"
+next_obstruction = "prove classical integral/global Weak Mertens implies the regularized discrete weighted boundary source"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+classical_weak_mertens_adapter_constructed = false
+riemann_hypothesis_proved = false
