@@ -475,3 +475,17 @@ nonclaims = [
   "alternation and nondegeneracy are local source targets",
   "positivity and Riemann realization remain external"
 ]
+
+
+[[local_target]]
+name = "anti-invariant trace-polarization constructor"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.tracePolarizationDataOfNonfixed"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one CM-field element x not fixed by canonical complex conjugation"
+]
+nonclaims = [
+  "does not enforce the prescribed archimedean sign profile",
+  "does not prove positivity or Riemann realization"
+]
