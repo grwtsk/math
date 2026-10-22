@@ -64,6 +64,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedPsiThresholdTransportContro
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ReverseExplicitFormulaPsiGateControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaRecurrenceSupplierControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellCancellationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellPrimeEndpointControls
 
 set_option autoImplicit false
 
