@@ -546,6 +546,58 @@ Weil-factor algebra are now local. What remains external is:
    trace pairing under the actual Hodge conjugation/Weil operator;
 3. obtain an integral lattice and apply the Riemann criterion.
 
+## 4e. Finite archimedean weak approximation is local
+
+The weak-approximation step itself is now source-local.
+
+For a totally real number field \(F\), choose a rational basis and order all
+real embeddings. The real embedding matrix has nonzero determinant by the
+field discriminant. Hence its transpose is a real linear equivalence. Since
+
+\[
+\mathbf Q^n\subset\mathbf R^n
+\]
+
+is dense, the diagonal map
+
+\[
+F\longrightarrow\mathbf R^n,\qquad
+f\longmapsto(\tau_i(f))_i
+\]
+
+has dense range.
+
+The local theorem
+\`TotallyRealSignApproximation.exists_canonicalRealEmbeddingVector_realizesSigns\`
+therefore proves that every finite \(\{\pm1\}\)-orthant contains an element
+of \(F\).
+
+On the CM side, an anti-invariant seed has nonzero imaginary value at every
+embedding. Its imaginary signs form an odd CM row. Multiplying that row by the
+target odd CM type gives an **even** rescaling sign row, constant on
+\(\{\sigma,c\sigma\}\).
+
+The source now formalizes
+
+\[
+\text{target odd sign}
++\text{seed odd imaginary sign}
+\longrightarrow
+\text{even real-rescaling sign}.
+\]
+
+A new \`RealRescalingInterface\` records only the remaining CM-specific
+identification between representatives of those conjugate pairs and the real
+embeddings of a totally real fixed-field model. Given this interface, the
+totally-real density theorem constructs the fixed rescaling factor and hence
+a \`SignControlledXi\`.
+
+Thus generic weak approximation is no longer an external Hodge premise.
+The unresolved step is canonical instantiation of that interface with
+\(F=E^+\), followed by identification of the coordinate positive energy with
+the actual Weil-twisted trace pairing, lattice integrality, and the Riemann
+criterion.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
