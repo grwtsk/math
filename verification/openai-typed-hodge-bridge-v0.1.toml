@@ -8,6 +8,11 @@ trust_audit = "NOT_RUN"
 [external]
 repository = "openai/math"
 revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+source_lean = "leanprover/lean4:v4.34.1"
+source_mathlib = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+local_lean = "leanprover/lean4:v4.33.0"
+local_mathlib = "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain_alignment = "MISMATCH_REQUIRES_LOCAL_PORT_REPLAY"
 
 [[result]]
 family = 245
@@ -148,4 +153,44 @@ nonclaims = [
   "no geometric Hodge-line realization",
   "no rational descent",
   "no algebraicity"
+]
+
+
+[[local_target]]
+name = "CM embedding-line realized four-factor bidegree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.fourFactor_allCoordinates_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four-label balance",
+  "actual sign-to-weight-one embedding-line realization"
+]
+nonclaims = [
+  "no scalar descent",
+  "no algebraicity",
+  "no CM abelian variety construction"
+]
+
+[[local_target]]
+name = "complementary weak-admissibility component equality"
+path = "GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "component Hodge <= Newton inequalities",
+  "Hodge additivity",
+  "Newton additivity",
+  "total Hodge = total Newton"
+]
+
+[[local_target]]
+name = "complementary projector to pure degree-one Hodge type"
+path = "GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.pureType_of_complementary_projector"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "component equality data",
+  "identification of Hodge number with finrank F1",
+  "identification of Newton number with slope times dimension",
+  "slope zero or one"
 ]
