@@ -1079,14 +1079,17 @@ def SupportedCMFourEmbeddingLineVectors.scalarTransport
     E := D.support.E
     localVector := D.support.scalarTransportLocal σ
     localCharacter := fun r =>
-      CMEmbeddingTransport.transportedCharacter
+      (σ.restrictNormal D.support.E.carrier) *
+        D.support.localCharacter r
+    local_mem := fun r => by
+      rw [← CMEmbeddingTransport.transportedCharacter_eq_mul
         (σ.restrictNormal D.support.E.carrier)
-        (D.support.localCharacter r).toAlgHom
-    local_mem := fun r =>
-      CMEmbeddingTransport.scalarConjugate_mem_embeddingEigenspace
-        (σ.restrictNormal D.support.E.carrier)
-        (D.support.localCharacter r).toAlgHom
-        (D.support.local_mem r)
+        (D.support.localCharacter r)]
+      exact
+        CMEmbeddingTransport.scalarConjugate_mem_embeddingEigenspace
+          (σ.restrictNormal D.support.E.carrier)
+          (D.support.localCharacter r).toAlgHom
+          (D.support.local_mem r)
     vector_inclusion := fun r =>
       D.support.scalarTransportLocal_inclusion σ r
     character_restriction := fun r => by
