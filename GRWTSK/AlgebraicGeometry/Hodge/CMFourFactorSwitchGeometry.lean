@@ -1476,6 +1476,29 @@ theorem canonicalFinitePureAssembly_eq_conjugatedCoefficientProduct
   simp [canonicalFinitePureAssembly,
     CMFiniteFourCoefficientMultiplication_pure, map_mul]
 
+/-- The fully constructed linear assembly on separated coefficient and
+vector tensors. Its remaining input rearrangement from four paired tensors
+is a distinct associativity/permutation construction. -/
+def CMFiniteSeparatedCanonicalAssembly
+    (E : CMGaloisIntermediateField) :
+    (CMFiniteFourCoefficientTensor E ⊗[ℚ] CMFiniteCanonicalVectorTarget E)
+      →ₗ[ℚ] (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E) :=
+  (CMFiniteFourCoefficientMultiplication E).rTensor
+    (CMFiniteCanonicalVectorTarget E)
+
+/-- The separated linear assembly reproduces the original eight-variable
+canonical formula on a pure coefficient tensor and pure vector tensor. -/
+theorem CMFiniteSeparatedCanonicalAssembly_pure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteSeparatedCanonicalAssembly E
+      (((((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄)) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)) =
+      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [CMFiniteSeparatedCanonicalAssembly,
+    canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure]
+
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
 the first rational tensor-product universal property. -/
