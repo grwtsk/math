@@ -1,0 +1,337 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-trace-primitive-coverage-674-v0.1"
+owner_repository = "grwtsk/math"
+issue = 674
+related_issues = [665, 661, 653, 649, 628, 159, 121, 168, 516, 100, 15]
+route_id = "FINITE_TRACE_PRIMITIVE_COVERAGE_THREE_ERROR_LEDGER"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage"
+build_target = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/trace-fourier-support-665-20261022"
+review_parent_revision = "f02af7af84c59f9e19d372ce864c5e82c3ec8eb2"
+review_parent_module_git_blob = "146c0baaaefe5d36e8973d796c1340ec6dfa656a"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Analysis/Fourier/FiniteTracePrimitiveCoverage.lean"
+new_module_git_blob = "77166710239236fe743476e24528aaec332e4ab0"
+new_module_namespace = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage"
+mathematical_note_path = "docs/mathematics/Analysis/Fourier/finite-trace-primitive-coverage.md"
+mathematical_note_git_blob = "fd63be8ee35081e3123cbfd73175ccea46ec07f4"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+finite_universe_only = true
+selected_subset_supplied = true
+all_universe_lengths_positive_required = true
+genuine_geodesic_source_bound = false
+primitive_geodesic_complete_enumeration = false
+three_independent_finite_error_budgets = true
+finite_primitive_omission_zero_is_conditional = true
+finite_iterate_omission_zero_is_conditional = true
+alias_mass_zero_is_conditional = true
+infinite_selberg_trace_formalized = false
+surface_marking_or_homology_certified = false
+wp_mirzakhani_integration_formalized = false
+gue_number_variance_or_sine_process_proved = false
+chowla_growing_shift_supplier_proved = false
+riemann_hypothesis_proved = false
+mathematical_statement = "Finite source-preserving superset decomposition with three independent error terms; conditional Fourier/length coverage removes two omission terms only."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage"
+authored_declaration_count = 24
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Analysis.Fourier.FiniteTraceFourierSupport"]
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.FinitePrimitiveUniverse"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.fullInput"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.fullInput_iterateHomology"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.fullInput_traceShapeWeight"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.selectedSources_subset"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.primitiveMissingSources"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.mem_primitiveMissingSources_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.primitiveMissingSelected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.primitiveMissingMass"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.integralProjection_full_eq_selected_add_missing"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.primitiveMissingSelected_norm_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.finite_three_error_bound"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.CoversContributingCandidates"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.primitiveMissing_fourier_zero_of_coverage"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.primitiveMissingMass_zero_of_coverage"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.finite_full_universe_error_le_alias_of_support"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.finite_full_universe_exact_of_noAlias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toySelected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toyUniverse"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toyCertificate"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toy_far_candidate_covered"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toy_near_candidate_not_covered"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toy_near_primitive_omitted"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage.toy_near_missing_fourier_nonzero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "q-zero-rejected"
+requirement = "Character averaging uses [NeZero q]; q=0 has no normalized q-ary projection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "q-one-allowed-with-alias"
+requirement = "q=1 remains valid, but must not be assumed to satisfy NoAlias when integer homology labels differ."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-homology-dimension"
+requirement = "m=0 is a legitimate one-element integral homology tuple; do not invent nonzero coordinates."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-iteration-cutoff"
+requirement = "K=0 contains no positive iterates; do not include n=0 by default."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-u-only"
+requirement = "FinitePrimitiveUniverse is an externally supplied finite ID universe, NOT all real geodesics of a surface."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "selected-subset-proved"
+requirement = "The selected Finset must be a proved subset of U; incomparable candidate families are not accepted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-source-indices"
+requirement = "The full packet must preserve original primitive source IDs and positive iterate IDs (gamma,n)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "retain-orientation-multiplicity"
+requirement = "Distinct oriented/conjugacy source IDs cannot be merged by length or homology equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-homology-length-weight-target"
+requirement = "Expansion from S to U changes only finite source membership; signed homology, length, Fourier test, target and coefficient cannot change."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-all-universe-lengths"
+requirement = "Every U candidate has positive length; a selected-only positivity certificate does not license estimates on omissions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "primitive-missing-filter"
+requirement = "A primitive omission must be in U, absent from S, and have iterate 1<=n<=M; no alias filter here."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "selected-complex-sum"
+requirement = "Integer-selected primitive omissions use the actual homology equality indicator and actual complex amplitudes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "third-error-separate"
+requirement = "Primitive missing mass is independent of modular alias mass at K and omitted iterate mass between K and M."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-silent-triangle-zero"
+requirement = "Neither finite omission budget is presumed zero without its own support or coverage theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cutoff-K-le-M"
+requirement = "Three-error comparison requires K<=M; no uncontrolled subtraction of nonnested iteration sets."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "one-sided-radius-vs-length"
+requirement = "Fourier support radius B and positive length floor are explicit hypotheses; no guessed B or uniform systole."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "coverage-boundary-weak"
+requirement = "Coverage requires every U candidate of length <=B selected; equality length=B remains potentially contributing."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "missing-strictly-long"
+requirement = "Under coverage, each missing U candidate has length>B, not merely length>=B."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-iterate-amplification"
+requirement = "n>=1 and positive length are essential for n*length >= length; n=0 is not an admissible source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-all-geodesics-inference"
+requirement = "Finite U coverage is not a proof of surface-wide primitive geodesic enumeration completeness."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "simple-vs-primitive-counting"
+requirement = "Mirzakhani simple-curve counts are not a completeness theorem for all primitive oriented Selberg trace terms."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "asymptotic-vs-enumeration"
+requirement = "Prime geodesic asymptotic counts do not furnish an exact marked geodesic source list or checker."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-unique-source-fabrication"
+requirement = "Two IDs of the same length or homology remain source-distinct; no invented injectivity of these invariants."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "toy-positive-coverage"
+requirement = "Toy finite universe with selected false length 1 and omitted true length 3 at B=2 passes coverage."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "toy-negative-coverage"
+requirement = "Toy finite universe with omitted true length 2 at B=2 fails coverage and retains a nonzero Fourier test input."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "toy-not-selberg-regular"
+requirement = "Discontinuous toy Fourier test is a finite logical fixture, not an admissible Selberg test function."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hair-or-trace-upgrade"
+requirement = "Finite q torsion averaging cannot be identified with continuous Haar or an analytic Selberg trace without an external theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-gue-sine-universality"
+requirement = "No GOE/GUE number variance, microscopic sine-kernel process or high-zeta-zero law follows from finite coverage."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh"
+requirement = "No actual Möbius/Liouville cancellation, growing-shift weighted supplier, zeta divisor or RH implication is produced."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-unapproved-runtime"
+requirement = "Passive source target does not run Lean/Lake, native VM, cache, workflow, F06 or an executor."
+status = "NOT_RUN"
+
