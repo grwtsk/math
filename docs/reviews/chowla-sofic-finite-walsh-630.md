@@ -111,10 +111,11 @@ k*log(2) - ShannonEntropy(P) <= log(1+Energy).
 
 The total-variation bound uses Cauchy--Schwarz. The entropy
 bound uses the order-two Renyi / Jensen inequality.
-All three are valid finite mathematical deductions, but
-**these bounds are not declarations proved by this source increment**.
-Their exact nonempty-subset and probability-normalization scopes remain
-the next Lean obligations.
+All three are valid finite mathematical deductions. The original source
+increment did not draft their formal proofs. The subsequent source-only
+Parseval increment (#10 below) now drafts the exact chi-square identity,
+while the total-variation and entropy inequalities remain separate
+Lean obligations. No module in this packet has been kernel audited.
 
 For the exception identity, coupling both distributions by choosing
 the SAME uniformly random root gives
@@ -187,7 +188,8 @@ cannot be substituted for all-order Walsh cancellation.
 |---|---|---|
 | Boolean indicator -> finite Walsh powerset identity | Any finite roots and coordinates | SOURCE_DRAFT, not compiled |
 | Finite labeled agreement outside E -> exact support identity | All selected coordinates agree | SOURCE_DRAFT, not compiled |
-| Walsh identity + orthogonality -> TV, chi-square, entropy | All nonempty coefficients | Orthogonality SOURCE_DRAFT; Parseval and bounds still OPEN |
+| Walsh identity + orthogonality -> Parseval / chi-square | Full finite cube; all nonempty coefficients; positive root count | Parseval and chi-square SOURCE_DRAFT; not compiled |
+| Finite energy + Cauchy--Schwarz -> TV, then Jensen -> entropy | Same normalization plus analytic inequalities | Written mathematics; Lean suppliers OPEN |
 | Labeled boundary support + coupling -> TV error <= exception cardinality / root cardinality | Written derivation; Lean supplier OPEN |
 | Fixed-order Chowla -> corresponding fixed-window Bernoulli law | All nonempty subsets, correct averaging | Conditional arithmetic adapter |
 | Full Chowla -> Liouville Bernoulli genericity | Every distinct fixed-shift tuple and all orders | Conditional; not supplied by this PR |
@@ -213,12 +215,15 @@ The orthogonality supplier is now **source-drafted** in
 the parent module. No algebraic or analytic theorem is accepted until
 independent Lean elaboration and trust inspection.
 
-Next finite Lean increment: combine the drafted character
-orthogonality with the parent pattern identity to prove the exact
-**Parseval / chi-squared energy identity**, then obtain the TV bound
-using finite Cauchy--Schwarz. Exception-coupling TV control remains a
-different subsequent finite theorem. Keep every step separate from
-arithmetic rates, sofic limits and spectral results.
+The Parseval / chi-square energy supplier is now additionally
+**source-drafted** in `FiniteWalshParseval.lean` (see #10). It remains
+NOT_RUN / NOT_KERNEL_AUDITED, and is not a compiled theorem.
+
+Next finite Lean increment: derive the total-variation inequality using
+the finite Cauchy--Schwarz bound, and separately formalize the
+label-preserving exception-coupling estimate `TV <= |E| / |R|`.
+Keep all supplier stages separate from arithmetic rates, sofic limits,
+spectral results and RH.
 
 Reject any proof or summary that (1) omits the empty subset from
 the exact Walsh identity, (2) treats pairwise moments as complete
@@ -315,3 +320,94 @@ The new source is enumerated in the updated passive target; its
 declarations still require independent Lean type checking, axiom
 inspection, and clean-checkout replay. No execution receipt is
 represented by this document.
+
+## 10. Source-only third increment: exact Parseval and Pearson chi-square
+
+**Date:** 2026-10-22. **Direct parent:** PR #638 exact head
+`6a20d7d5b694d3a8d6cc0f59618a322b11b46740`.
+
+**Subject source:** `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshParseval.lean`.
+It imports `FiniteWalshOrthogonality` and therefore preserves the
+source identity and order of the two preceding finite modules.
+
+For any finite coordinate type `ι`, finite **nonempty** root set `R`,
+and an arbitrary Boolean label function `x:R×ι→Bool`, put
+
+```text
+q := |ι→Bool| = 2^|ι|
+P(a) := (1/|R|) ∑_(n∈R) 1_[x(n,·)=a]
+m(S) := (1/|R|) ∑_(n∈R) ∏_(i∈S) sign(x(n,i))
+E(R,x) := ∑_(S⊆ι, S≠∅) m(S)^2.
+```
+
+Define `scaledPatternDeviation(a) = q P(a)-1`. The parent
+Walsh expansion and the fact `m(∅)=1` give
+
+```text
+scaledPatternDeviation(a)
+   = ∑_(S⊆ι, S≠∅) m(S) χ_S(a).
+```
+
+**First theorem (generic finite Parseval):** for ANY finite set `K`
+of distinct subset characters and rational coefficients `c(S)`,
+
+```text
+∑_(a:ι→Bool) (∑_(S∈K) c(S)χ_S(a))^2
+    = q * ∑_(S∈K) c(S)^2.
+```
+
+Its written proof expands the product of finite sums, switches
+the three finite summations, and applies the previously drafted Gram
+orthogonality. All off-diagonal coefficients disappear, while each
+diagonal entry contributes `q`.
+
+**Second theorem (empirical exact finite chi-square):**
+
+```text
+∑_(a:ι→Bool) (q P(a)-1)^2 = q * E(R,x)
+
+χ²(P || U) := (1/q)∑_a(q P(a)-1)^2 = E(R,x).
+```
+
+The definition is exactly Pearson's chi-square divergence with respect
+to the uniform mass `U(a)=1/q`. It is not the absolute correlation
+energy, the maximum correlation, a two-point truncation, or a
+probabilistic limit. No `sqrt` or `log` theorem is claimed.
+
+**Seven new proposed theorem heads:**
+
+- `walshPolynomial_parseval`
+- `sourceCorrelation_empty`
+- `sourceCorrelation_empty_sample`
+- `booleanCube_card`
+- `scaledPatternDeviation_walsh`
+- `scaledPatternDeviation_parseval`
+- `chiSquareAgainstUniform_eq_energy`
+
+**Five new definitions:** `walshPolynomial`, `sourceCorrelation`,
+`nonemptyCorrelationEnergy`, `scaledPatternDeviation`,
+`chiSquareAgainstUniform`.
+
+**Critical hostile controls.** `0 < R.card` must be an input to the
+empirical theorem; arithmetic over rationals can otherwise define
+`0/0=0` without yielding a probability law. The explicit empty-root
+fixture checks this distinction. The empty character contributes one
+and is then removed EXACTLY once. The full Boolean cube, not a
+sample-dependent subfamily of patterns, supports orthogonality and
+the cardinal factor. The plain source moment `m(S)` is independent
+of output pattern `a`; retaining `χ_S(a)` inside the squared
+coefficient would be a type/scope error.
+
+**Current review boundary:** This is a source-only PROPOSED proof body.
+No Lean/Lake or native execution was requested, and no compilation,
+type elaboration, transitive axiom audit, or kernel check occurred.
+Static declaration inventory and finite mathematical enumeration
+provide strictly weaker review evidence.
+
+**Next separate supplier:** first prove
+`TV(P,U) ≤ (1/2) sqrt(E(R,x))` using finite Cauchy--Schwarz and
+nonnegative real casts; separately prove that exact label agreement
+outside exceptional root set `E⊆R` implies
+`TV(P_x,P_y) ≤ |E|/|R|` via common-root coupling.
+Only a subsequently proved quantitative arithmetic estimate can
+drive either error small as windows grow.
