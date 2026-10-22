@@ -17,11 +17,13 @@ if len(matches)!=1 or matches[0].get("rev")!=sys.argv[1]:
     raise SystemExit("FAIL: unexpected Mathlib revision")
 PY
 test -f .lake/packages/mathlib/Mathlib.lean || { echo 'FAIL: Mathlib checkout unavailable' >&2; exit 1; }
-echo 'Checking generic integer balancing and Walsh Parseval imports'
+echo 'Building the complete selected transitive import graph'
+lake build GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternCountBalancing
+lake build GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleSharpSampleFloor
+echo 'Elaborating the two selected source files explicitly'
 lake env lean GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FinitePatternCountBalancing.lean
-echo 'Checking actual Liouville specialization'
 lake env lean GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleSharpSampleFloor.lean
-tmp="$(mktemp --suffix=.lean)"
+tmp="$(mktemp "$PWD/.sharp-sample-floor-audit-XXXXXX.lean")"
 trap 'rm -f "$tmp"' EXIT
 cat > "$tmp" <<'LEAN'
 import GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleSharpSampleFloor
