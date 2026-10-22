@@ -41,6 +41,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierFrameControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierReadoutControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierActionFrameControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenPolarizedReadoutControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicFourierFrameEnergyEquivalenceControls
 
 set_option autoImplicit false
 
