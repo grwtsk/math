@@ -272,3 +272,43 @@ higher-order growing-window estimates.
 **Final evidence:** `SOURCE_DRAFT / NOT_RUN /
 NOT_KERNEL_AUDITED / ODD_RESIDUAL_CANCELLATION_OPEN /
 NO_ARITHMETIC_CONTRACTION / NO_GUE_RH_CLAIM`.
+
+## 7. Signed interaction sharpened after canonical transport
+
+**Follow-on research date: 2026-10-22.** The sharp
+one-sided convexity estimate from section 4 is now
+supplemented by a **source-drafted exact equality**
+that retains the signed source/odd-residual interaction.
+
+New separate file
+`GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleDyadicSignedPairing.lean`
+(blob `c7b4feffad2c7f7fdfc06ba79e0f9295ad831d90`)
+defines
+`X(M,H)=sum_(∅≠S⊆H) (-1)^|S| C_M(S) R_M(S)`
+and source-drafts
+
+```text
+4 E_lambda(2M,oddLiftOffsets H)
+  = E_lambda(M,H) + E_oddResidual(M,H) + 2 X(M,H).
+```
+
+The previously proved source-draft convexity inequality
+remains valid but can be strictly weaker. At
+`M=2,H={1},H'={3}`, both marginal energies equal
+one and `X=-1`, so canonical lifted energy is zero,
+even with the strict cyclic collar satisfied.
+
+This provides an uninhabited, explicit signed
+mixed-budget supplier. It does **not** prove that
+this budget tends to zero for growing arithmetic
+shift sets, and hence does not solve Chowla.
+
+The new independent thirteen-module verification
+target `verification/liouville-dyadic-signed-pairing-630-v0.1.toml`
+selects 108 theorem/46 definition heads while
+preserving this twelve-module target unchanged.
+Full research note:
+`docs/reviews/chowla-sofic-dyadic-signed-pairing-630.md`.
+
+**STATUS:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+SIGNED_MIXED_CANCELLATION_OPEN / NO_GUE_RH_EDGE.
