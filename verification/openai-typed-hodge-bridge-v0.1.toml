@@ -2218,3 +2218,45 @@ nonclaims = [
   "does not assert algebraicity",
   "does not supply assembly equivariance"
 ]
+
+
+[[local_target]]
+name = "every algebraic-number tensor has a finite Galois carrier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.finiteGaloisTensorCarrier"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "GaloisScalarDescent.tensor_defined_over_finiteGalois"
+]
+nonclaims = [
+  "finite Galois containment only",
+  "does not imply the carrier is CM"
+]
+
+[[local_target]]
+name = "absolute conjugation restricts through finite Galois tensor carrier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FiniteGaloisTensorCarrier.scalarConjugate_restrict"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "GaloisScalarDescent.scalarConjugate_restrict"
+]
+nonclaims = [
+  "pure finite-Galois transport theorem",
+  "no Hodge or CM conclusion"
+]
+
+[[external_premise]]
+id = "cm-finite-galois-carrier-cm-compatibility"
+result_family = 32
+evidence = "EXTERNAL_CM_REALIZATION"
+source = "CM realization field for the finite Galois carrier of the switched tensor"
+labels = []
+statement_role = "show that the finite Galois support field relevant to the switched CM tensor admits the required CM-field realization/identification; finite Galois containment and restriction of absolute conjugation are already local"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteGaloisTensorCarrier"
+status = "OPEN"
+nonclaims = [
+  "does not ask for finite containment",
+  "does not ask for Galois stability",
+  "does not assert algebraicity"
+]
