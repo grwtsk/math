@@ -1246,6 +1246,29 @@ theorem CMFiniteFourFactorSwitchAlignment.canonicalPureTensor_mem_H22
         D.fourth.vector) ∈ R.H22 :=
   R.canonicalPureTensor_mem_H22 A.toActualAlignment
 
+/-!
+### Fixed-field comparison obstruction
+
+The finite assembly below stores `assemble` merely as a function from
+four finite embedding-line tensor inputs to a coefficient tensor. Its
+`scalar_transport_eq` concerns only one chosen tuple and its conjugates.
+Neither condition establishes additivity or rational multilinearity in
+the four input slots. More importantly, the actual fourfold tensor consists
+of complex H1 realizations, whereas the assembly takes finite field-level
+tensor vectors: the file contains no cohomological comparison commuting with
+these different carriers.
+
+Consequently `CMFiniteFourfoldAssembly` cannot by itself supply a canonical
+complex-linear map `FourfoldActualTensor →ₗ[ℂ] (ℂ ⊗[ℚ] V)`.
+A genuine constructor must receive (or establish) compatible rational
+multilinear assembly maps, four actual-H1 comparison maps, and a commuting
+pure-tensor equation. None is inferred from scalar transport alone.
+
+In particular, a pointwise image-membership witness is a conditional
+criterion, not an independent geometric construction; proving its two
+fields directly from the desired generator membership would be circular.
+-/
+
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
