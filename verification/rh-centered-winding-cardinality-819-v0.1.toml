@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-cardinality-819-v0.1"
+owner_repository = "grwtsk/math"
+issue = 819
+parent_issue = 814
+parent_pr = 815
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_CARDINALITY_SOURCE_DRAFT_CENTERED_WINDING_ANALYTIC_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingCardinality"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingCardinality"
+
+[source_binding]
+stacked_parent_revision = "b0ef92cdebef78d6096407dcacaaa218d2a61e02"
+candidate_branch = "research/rh-centered-winding-cardinality-816-20261022"
+theorem_source_commit = "87acb352fc3bdbb74a25961455378f3a1d80f79b"
+theorem_source_git_blob = "4f9c74fc05d3b30caba27505c4e59c680e394872"
+mathematical_note_commit = "99fca5abbbf23d20c5253a2653eddc04e3e54a60"
+mathematical_note_git_blob = "fa1b00fcbeb135cfdda8315be2583b7c662c87b4"
+
+[evidence_states]
+source_draft = true
+sharp_radius_equivalence_scripted = true
+candidate_interval_identity_scripted = true
+exact_total_cardinality_scripted = true
+exact_nonzero_cardinality_scripted = true
+realized_nonzero_membership_scripted = true
+analytic_estimate_proved = false
+modulus_average_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
