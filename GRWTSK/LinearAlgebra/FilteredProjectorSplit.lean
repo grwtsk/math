@@ -53,6 +53,12 @@ theorem FilteredIdempotent.q_preserves
     P.q x ∈ P.F1 := by
   simpa [FilteredIdempotent.q] using P.F1.sub_mem hx (P.preserves x hx)
 
+/-- The complementary projector is idempotent. -/
+theorem FilteredIdempotent.q_idempotent
+    (P : FilteredIdempotent (K := K) (D := D)) :
+    IsIdempotentElem P.q := by
+  simpa [FilteredIdempotent.q] using P.idempotent.one_sub
+
 /-- The ranges of an idempotent and its complementary projector are
 complementary. -/
 theorem FilteredIdempotent.range_isCompl
