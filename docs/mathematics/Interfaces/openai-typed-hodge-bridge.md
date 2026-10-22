@@ -349,6 +349,38 @@ projector/complement construction, filtration preservation, Frobenius
 commutation, and the weak-admissibility inequalities. The local finite theorem
 does not manufacture any of those inputs.
 
+## 5b. Local filtration splitting removes Hodge additivity as a premise
+
+The local module
+\`GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean\` now proves a further
+piece independently of the manuscript.
+
+Given an idempotent linear projector \(p\) preserving the selected filtration
+subspace \(F^1\), set
+
+\[
+F^1_p=F^1\cap\operatorname{im}p,\qquad
+F^1_{1-p}=F^1\cap\operatorname{im}(1-p).
+\]
+
+The source proves that \(1-p\) also preserves \(F^1\), that the two filtered
+pieces are disjoint, and that
+
+\[
+F^1_p\oplus F^1_{1-p}=F^1.
+\]
+
+Consequently,
+
+\[
+\dim F^1_p+\dim F^1_{1-p}=\dim F^1.
+\]
+
+Thus the complementary weak-admissibility bridge no longer needs Hodge
+additivity as an external premise. What remains external is the actual
+filtered-Frobenius construction, Frobenius commutation, the weak-admissibility
+inequalities, Newton additivity, and total Hodge/Newton equality.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
