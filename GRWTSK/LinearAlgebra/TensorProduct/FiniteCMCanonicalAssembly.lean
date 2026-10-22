@@ -73,8 +73,9 @@ def pairedAssembly : Paired E →ₗ[ℚ] Output E :=
   simp [pairedAssembly, separatedAssembly, separatedPure,
     coefficientMulFour_pure]
 
-/-- Any rational-linear finite paired assembly satisfying the original
-pure coefficient/vector multiplication formula equals the constructed one. -/
+attribute [local ext high] _root_.TensorProduct.ext in
+/-- The existing finite paired assembly is uniquely identified by its pure
+coefficient/vector formula, with no geometric hypotheses. -/
 theorem pairedAssembly_unique
     (F : Paired E →ₗ[ℚ] Output E)
     (hF : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E,
@@ -82,37 +83,9 @@ theorem pairedAssembly_unique
         (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
           (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)) :
     F = pairedAssembly E := by
-  apply LinearMap.ext
-  intro t
-  induction t using _root_.TensorProduct.induction_on with
-  | zero => simp
-  | tmul t123 t4 =>
-      induction t123 using _root_.TensorProduct.induction_on with
-      | zero => simp
-      | tmul t12 t3 =>
-          induction t12 using _root_.TensorProduct.induction_on with
-          | zero => simp
-          | tmul t1 t2 =>
-              induction t1 using _root_.TensorProduct.induction_on with
-              | zero => simp
-              | tmul a₁ x₁ =>
-                  induction t2 using _root_.TensorProduct.induction_on with
-                  | zero => simp
-                  | tmul a₂ x₂ =>
-                      induction t3 using _root_.TensorProduct.induction_on with
-                      | zero => simp
-                      | tmul a₃ x₃ =>
-                          induction t4 using _root_.TensorProduct.induction_on with
-                          | zero => simp
-                          | tmul a₄ x₄ =>
-                              exact (hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).trans
-                                (pairedAssembly_pure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).symm
-                          | add x y hx hy => simp [map_add, hx, hy]
-                      | add x y hx hy => simp [map_add, hx, hy]
-                  | add x y hx hy => simp [map_add, hx, hy]
-              | add x y hx hy => simp [map_add, hx, hy]
-          | add x y hx hy => simp [map_add, hx, hy]
-      | add x y hx hy => simp [map_add, hx, hy]
-  | add x y hx hy => simp [map_add, hx, hy]
+  ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  simpa [pairedPure] using
+    (hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).trans
+      (pairedAssembly_pure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).symm
 
 end GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly
