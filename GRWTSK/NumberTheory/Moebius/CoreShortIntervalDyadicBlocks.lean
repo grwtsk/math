@@ -38,40 +38,26 @@ def dyadicStartBlockAggregateL1 (j n : ℕ) : ℝ :=
       dyadicStartBlockShortIntervalL1 r n) +
     ambientEndpointStartCorrection j n
 
-/-- The union of standard dyadic start blocks through scale `j` is exactly
-the prefix `[1,2^(j+1))`. -/
-theorem biUnion_dyadicStartBlock_eq_prefix
-    (j : ℕ) :
-    Finset.biUnion (Finset.range (j + 1)) dyadicStartBlock =
-      Finset.Ico 1 (2 ^ (j + 1)) := by
-  ext x
-  simp only [Finset.mem_biUnion, Finset.mem_range, dyadicStartBlock,
-    Finset.mem_Ico]
-  constructor
-  · rintro ⟨r, hr, hxr⟩
-    have hrj : r ≤ j := by omega
-    constructor
-    · exact hxr.1
-    · exact lt_of_lt_of_le hxr.2
-        (Nat.pow_le_pow_right (by omega : 1 ≤ 2) (by omega : r + 1 ≤ j + 1))
-  · intro hx
-    obtain ⟨r, hr0, hr1⟩ := Nat.exists_eq_two_pow_mul_le hx.1
-    refine ⟨r, ?_, ?_⟩
-    · have hpow : 2 ^ r ≤ x := by omega
-      have hupper : x < 2 ^ (r + 1) := by
+/-- Exact finite sum decomposition of the prefix into standard dyadic start
+blocks.  This induction avoids any choice of a logarithmic block index. -/
+theorem sum_prefix_eq_sum_dyadicStartBlocks
+    (f : ℕ → ℝ) (j : ℕ) :
+    (∑ x ∈ Finset.Ico 1 (2 ^ (j + 1)), f x) =
+      ∑ r ∈ Finset.range (j + 1),
+        ∑ x ∈ dyadicStartBlock r, f x := by
+  induction j with
+  | zero =>
+      simp [dyadicStartBlock]
+  | succ j ih =>
+      rw [Nat.succ_eq_add_one, Finset.sum_range_succ]
+      rw [← ih]
+      unfold dyadicStartBlock
+      have h1 : 1 ≤ 2 ^ (j + 1) := by positivity
+      have h2 : 2 ^ (j + 1) ≤ 2 ^ (j + 2) := by
         rw [Nat.pow_succ]
         omega
-      have hrj : r ≤ j := by
-        by_contra hnot
-        have hjr : j + 1 ≤ r := by omega
-        have hp : 2 ^ (j + 1) ≤ 2 ^ r :=
-          Nat.pow_le_pow_right (by omega : 1 ≤ 2) hjr
-        omega
-      omega
-    · constructor
-      · omega
-      · rw [Nat.pow_succ]
-        omega
+      rw [← Finset.sum_Ico_consecutive _ h1 h2]
+      rfl
 
 /-- The common ambient start window is the dyadic prefix plus exactly two
 endpoint starts. -/
@@ -100,23 +86,9 @@ theorem harmonicAmbientShortIntervalL1_eq_dyadicAggregate
         (Finset.Ico 1 (2 ^ (j + 1))).insert (2 ^ (j + 1)) := by
     simp
   rw [Finset.sum_insert hY1, Finset.sum_insert hY]
-  rw [← biUnion_dyadicStartBlock_eq_prefix]
-  rw [Finset.sum_biUnion]
-  · ring
-  · intro r hr s hs hrs
-    simp only [Finset.mem_range] at hr hs
-    unfold dyadicStartBlock
-    apply Finset.disjoint_left.mpr
-    intro x hxr hxs
-    simp only [Finset.mem_Ico] at hxr hxs
-    by_cases hrs' : r < s
-    · have hp : 2 ^ (r + 1) ≤ 2 ^ s :=
-        Nat.pow_le_pow_right (by omega : 1 ≤ 2) (by omega)
-      omega
-    · have hsr : s < r := by omega
-      have hp : 2 ^ (s + 1) ≤ 2 ^ r :=
-        Nat.pow_le_pow_right (by omega : 1 ≤ 2) (by omega)
-      omega
+  rw [sum_prefix_eq_sum_dyadicStartBlocks
+    (fun x => |ambientMobiusShortIntervalSum x n|) j]
+  ring
 
 /-- Endpoint correction has the elementary bound `2n`. -/
 theorem ambientEndpointStartCorrection_le_two_mul_length
