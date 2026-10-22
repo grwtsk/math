@@ -482,6 +482,49 @@ theorem switchConjugatePair_corrects_conjugate
   · rw [hodd i.1 g, hy i.1 g, hsel.1]
   · rw [hodd j.1 g, hy j.1 g, hsel.2]
 
+/-- Rows outside the selected pair are pointwise unchanged in every column.
+
+This is the exact support statement behind the manuscript decomposition of one
+elementary transition into one four-factor switched core plus unchanged
+two-factor identity tensors. -/
+theorem switchConjugatePair_row_eq_of_ne
+    (x : I → G → ℤ)
+    (g : G) (i j r : I)
+    (hri : r ≠ i) (hrj : r ≠ j) :
+    ∀ h, switchConjugatePair conj x g i j r h = x r h := by
+  intro h
+  by_cases hhg : h = g
+  · subst h
+    simp [switchConjugatePair, switchPair, hri, hrj]
+  · by_cases hhcg : h = conj g
+    · simp [switchConjugatePair, hhg, hhcg, switchPair, hri, hrj]
+    · simp [switchConjugatePair, hhg, hhcg]
+
+/-- The row support of one atomic switch is contained in the two selected rows. -/
+theorem switchConjugatePair_changedRow_subset
+    (x : I → G → ℤ)
+    (g : G) (i j r : I)
+    (hr :
+      (fun h => switchConjugatePair conj x g i j r h) ≠
+        (fun h => x r h)) :
+    r = i ∨ r = j := by
+  by_contra h
+  push_neg at h
+  exact hr (funext (switchConjugatePair_row_eq_of_ne
+    conj x g i j r h.1 h.2))
+
+/-- Every unchanged row gives literal equality between its old and new sign
+functions.  This is the combinatorial input consumed by the manuscript's
+two-factor identity tensor for that row. -/
+theorem unchangedRow_eq
+    (x : I → G → ℤ)
+    (g : G) (i j r : I)
+    (hri : r ≠ i) (hrj : r ≠ j) :
+    (fun h => switchConjugatePair conj x g i j r h) =
+      (fun h => x r h) :=
+  funext (switchConjugatePair_row_eq_of_ne
+    conj x g i j r hri hrj)
+
 /-- Unrelated columns remain pointwise unchanged. -/
 theorem switchConjugatePair_preserves_other_column
     (x : I → G → ℤ)
