@@ -2927,4 +2927,69 @@ def CMFiniteActualToDescentComparison.ofPureTensorRule
   (CMFiniteBalancedTensorImageTest.ofPureTensorRule
     D hodgeSubspace compare pure_mem).toComparison S
 
+/-- Direct fixed-field criterion for the distinguished generator. Unlike
+the global comparison constructor, this requires neither H22 spanning nor
+preservation on arbitrary H22 vectors. Only the canonical pure tensor image
+is needed for the orbit-span descent endpoint. -/
+structure CMFiniteCanonicalImageWitness
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    (D : CMFiniteFourfoldAssembly factors)
+    (hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V))
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) where
+  v₁ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₂ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₃ : CMNumberFieldIndex.OddSignRow E.carrier
+  v₄ : CMNumberFieldIndex.OddSignRow E.carrier
+  actualTyping :
+    CMFiniteFourFactorActualTyping E
+      (factors.scalarTransport σ) v₁ v₂ v₃ v₄
+  alignment : CMFiniteFourFactorSwitchAlignment actualTyping
+  imageTest : CMFiniteBalancedTensorImageTest actualTyping hodgeSubspace
+  generator_eq :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) =
+      imageTest.compare
+        (fourfoldActualPureTensor actualTyping.toActualTyping
+          (actualTyping.first.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.first.vector)
+          (actualTyping.second.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.second.vector)
+          (actualTyping.third.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.third.vector)
+          (actualTyping.fourth.realization.canonicalTensorActualH1Comparison.toActual
+            actualTyping.fourth.vector))
+
+/-- A balanced image test and the actual canonical generator equation suffice
+for descent-side Hodge membership, with no spanning premise. -/
+theorem CMFiniteCanonicalImageWitness.generator_mem_hodge
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    {σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers}
+    (W : CMFiniteCanonicalImageWitness D hodgeSubspace σ) :
+    coefficientInclusion
+        (D.assemble ((factors.scalarTransport σ).vector)) ∈
+      hodgeSubspace := by
+  rw [W.generator_eq]
+  exact W.imageTest.balanced_mem _
+    W.alignment.canonicalPureTensor_mem_balanced
+
+/-- A uniform family of direct canonical image witnesses supplies the same
+finite transported-generator Hodge package as the stronger H22-comparison
+witness, without requiring any balanced spanning theorem. -/
+def CMFiniteTransportedGeneratorHodgeData.ofCanonicalImageWitnesses
+    {E : CMGaloisIntermediateField}
+    {factors : CMFiniteFourEmbeddingLineVectors E}
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {D : CMFiniteFourfoldAssembly factors}
+    {hodgeSubspace : Submodule ℂ (ℂ ⊗[ℚ] V)}
+    (W : ∀ σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers,
+      CMFiniteCanonicalImageWitness D hodgeSubspace σ) :
+    CMFiniteTransportedGeneratorHodgeData D hodgeSubspace where
+  generator_mem := fun σ => (W σ).generator_mem_hodge
+
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
