@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-log-threshold-finite-budget-535-v0.1"
+owner_repository = "grwtsk/math"
+issue = 535
+parent_issue = 531
+parent_pr = 533
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensLogThresholdFiniteBudget"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensLogThresholdFiniteBudget"
+
+[source_binding]
+stacked_parent_revision = "4601ccc8f4870bd443a28944523c5d9b5b0d6624"
+candidate_branch = "research/rh-finite-depth-budget-535-20261021"
+theorem_source_commit = "3c589e77d390c2aa37c586138554d7f46527296a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensLogThresholdFiniteBudget.lean"
+theorem_source_git_blob = "061cf104fc5b8b98c3186ab3a109470540137054"
+
+[selected_increment]
+summand_nonneg = "logThresholdDepthSummand_nonneg"
+summand_bound = "logThresholdDepthSummand_le_leftInv"
+finite_sum_bound = "logThresholdFiniteDepthSum_le_two"
+finite_budget = "logThresholdFiniteDepthBudget"
+packet_bound = "normalizedShortPacketBudget_le_four_logThreshold"
+proof_classification = "PURE_FINITE_RECIPROCAL_DEPTH_BOUND"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+logarithmic_absorption_proved = false
+long_short_interval_theorem_applied = false
+riemann_hypothesis_proved = false
