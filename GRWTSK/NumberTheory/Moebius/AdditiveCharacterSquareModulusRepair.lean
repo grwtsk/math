@@ -204,19 +204,17 @@ theorem complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier
     (complexMertensEndpointCrossCongruenceFibre_eq_additiveSelector b d).trans
       (additiveSelectorEndpointCrossFibre_eq_fourier b d)
 
-/-- Proof-relevant repair object replacing the open placeholder from PR #594. -/
+/-- Proof-relevant repair object replacing the open placeholder from PR #594.
+
+Its only field is the substantive all-endpoint/all-positive-modulus Fourier
+identity.  Coverage of nonunits and preservation of the square modulus are
+properties of that exact formula, not separate Boolean-style flags. -/
 structure AdditiveCharacterResidueRepair : Type where
   exactFibreExpansion :
-    ∀ b d : ℕ, 0 < d →
-      letI : NeZero d := ⟨ne_of_gt ‹0 < d›⟩
+    ∀ b d : ℕ, (hd : 0 < d) →
       (mertensEndpointCrossCongruenceFibre b d : ℂ) =
-        additiveFourierEndpointCrossCongruenceFibre b d
-  coversNonunitResidues :
-    True
-  preservesExactSquareModulus :
-    True
-  preservesSignedTwoPointSource :
-    True
+        @additiveFourierEndpointCrossCongruenceFibre
+          b d ⟨ne_of_gt hd⟩
 
 /-- Constructed source-level additive-character repair. -/
 def additiveCharacterResidueRepair :
@@ -227,9 +225,6 @@ def additiveCharacterResidueRepair :
     exact
       complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier
         b d
-  coversNonunitResidues := trivial
-  preservesExactSquareModulus := trivial
-  preservesSignedTwoPointSource := trivial
 
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
