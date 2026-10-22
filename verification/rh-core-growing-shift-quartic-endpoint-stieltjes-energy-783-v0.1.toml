@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-endpoint-stieltjes-energy-783-v0.1"
+owner_repository = "grwtsk/math"
+issue = 783
+parent_issue = 771
+parent_pr = 778
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointStieltjesEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointStieltjesEnergy"
+
+[source_binding]
+stacked_parent_revision = "0be8520468ce1270ab96c98fd29afbd5985ad3b2"
+candidate_branch = "research/rh-endpoint-stieltjes-783"
+theorem_source_commit = "1e05dcd1819f26076350df75988c3939e0f17b5b"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointStieltjesEnergy.lean"
+theorem_source_git_blob = "6ee29398e18002e46993f15f1741fa2f5c6adf28"
+
+[selected_increment]
+endpoint_weight = "coreGrowingShiftQuarticEndpointExplicitDepthWeight"
+endpoint_weight_drop = "coreGrowingShiftQuarticEndpointExplicitDepthWeightDrop"
+weight_antitone = "coreGrowingShiftQuarticEndpointExplicitDepthMultiplicity_antitone"
+weight_drop_nonneg = "coreGrowingShiftQuarticEndpointExplicitDepthWeightDrop_nonneg"
+right_endpoint_zero = "coreGrowingShiftQuarticEndpointExplicitDepthWeight_at_rightScale"
+diagonal_transposition = "coreGrowingShiftQuarticDiagonalEnergy_eq_endpointExplicitInterval"
+finite_forward_difference = "finite_weighted_forward_difference"
+finite_square_telescope = "finite_weighted_prefix_square_telescope"
+one_shift_telescope = "endpointExplicitInterval_diagonal_add_two_endpoint_eq_stieltjes"
+stieltjes_energy = "coreGrowingShiftQuarticEndpointStieltjesSquareEnergy"
+stieltjes_nonneg = "coreGrowingShiftQuarticEndpointStieltjesSquareEnergy_nonneg"
+packet_identity = "coreGrowingShiftQuarticDiagonal_add_two_endpointExplicitInterval_eq_stieltjes"
+prefix_energy_identity = "coreGrowingShiftBinaryPrefixSquareEnergy_eq_endpointStieltjes"
+stieltjes_source = "SubpolynomialCoreGrowingShiftQuarticEndpointStieltjesSquareEnergy"
+source_equivalence = "subpolynomialCoreGrowingShiftQuarticEndpointStieltjesSquareEnergy_iff_prefixSquareEnergy"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftQuarticEndpointStieltjesSquareEnergy"
+proof_classification = "EXACT_FINITE_STIELTJES_SQUARE_INCREMENT_AND_DIAGONAL_RECOMBINATION"
+next_obstruction = "prove the exact first-drop weighted binary-prefix square-energy bound or a source-faithful Carleson localization"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+stieltjes_energy_bound_proved = false
+carleson_localization_proved = false
+martingale_estimate_proved = false
+chowla_theorem_proved = false
+riemann_hypothesis_proved = false
