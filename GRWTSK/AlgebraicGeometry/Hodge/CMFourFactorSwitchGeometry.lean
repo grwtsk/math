@@ -112,8 +112,8 @@ Only the geometric switch suppliers remain external. -/
 def transitionOfEqualColumnSums
     (conj : G → G)
     (hconj : Function.Involutive conj)
-    (S : SwitchGeometrySupplier conj y)
     (x y : I → G → ℤ)
+    (S : SwitchGeometrySupplier conj y)
     (hxsign : ∀ r g, IsSign (x r g))
     (hysign : ∀ r g, IsSign (y r g))
     (hxodd : IsOddMatrix conj x)
