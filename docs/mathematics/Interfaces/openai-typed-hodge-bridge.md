@@ -1015,6 +1015,65 @@ The independent four-factor algebraicity theorem remains outside this chain.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 5h. Conditional classical Riemann existence supplier
+
+The final weight-one realization step is now isolated in
+\`GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean\`.
+
+The local repository proves the input package
+
+~~~text
+canonicalPreRiemannBilinearData
+~~~
+
+but current Mathlib does not supply the geometric existence theorem turning
+that package into a polarized projective complex torus / abelian variety.
+
+The missing theorem is therefore represented explicitly as
+
+~~~text
+RiemannExistenceSupplier
+~~~
+
+with the shape
+
+~~~text
+PreRiemannBilinearData E v X
+  -> WeightOneCMRealization E v X
+~~~
+
+and no local constructor for the supplier.
+
+The formal wrapper
+
+~~~text
+realizeWeightOneCM
+~~~
+
+composes an admitted supplier with the locally proved pre-Riemann data.  The
+endpoint
+
+~~~text
+realizeWeightOneCM_canonical
+~~~
+
+additionally feeds it the locally constructed canonical sign-controlled
+\(\xi\).
+
+This means the weight-one realization chain now has a single explicit
+external theorem boundary instead of several mixed geometric and analytic
+premises.
+
+The resulting realization record is intentionally abstract: the repository
+does not invent a local complex-torus or abelian-variety implementation where
+none exists.  It stores only the rational \(H^1\) comparison, Hodge/Weil
+compatibility, integral polarization compatibility, and an externally
+supplied polarized-projective marker.
+
+The four-factor algebraicity theorem remains mathematically independent.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 6. Polarization as a source of CM rigidity
 
 For a polarizable rational Hodge structure \(U\), let \(\psi\) be a
