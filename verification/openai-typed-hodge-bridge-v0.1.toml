@@ -2335,3 +2335,52 @@ name = "scalar transport keeps the identical support field"
 path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
 declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors.scalarTransport_support_field"
 status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "finite-CM four embedding-line factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourEmbeddingLineVectors"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "individual eigenlines remain over one finite Galois CM field",
+  "does not claim finite-level eigenvectors remain global AlgebraicNumbers eigenvectors"
+]
+
+[[local_target]]
+name = "finite-CM fourfold assembly extends only after assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourfoldAssembly.globalTensor"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "coefficient extension occurs only on the assembled tensor",
+  "individual factor eigenlines are not promoted to global regular-action eigenlines"
+]
+
+[[local_target]]
+name = "global assembled scalar conjugation computed by finite-CM restriction"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourfoldAssembly.globalTensor_scalarConjugate"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "finite-CM transported generator Hodge data implies orbit-span containment"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteTransportedGeneratorHodgeData.orbitSpan_le_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one finite Galois CM field",
+  "four finite-level embedding-line factors",
+  "finite-level fourfold assembly",
+  "Hodge membership of every transported finite-level assembled generator after coefficient inclusion"
+]
+nonclaims = [
+  "bypasses global AlgebraicNumbers embedding-eigenline factors",
+  "four-factor algebraicity remains independent"
+]
+
+[[correction]]
+id = "supersede-global-algebraicnumbers-eigenline-support"
+status = "ARCHITECTURE_SUPERSEDED"
+reason = "A finite-field embedding eigenspace condition quantifies over the finite field, while an AlgebraicNumbers embedding eigenspace condition quantifies over all AlgebraicNumbers. Direct inclusion of a finite-level eigenvector therefore does not by itself supply the stronger global eigenvector property."
+replacement = "CMFiniteFourEmbeddingLineVectors + CMFiniteFourfoldAssembly + CMFiniteTransportedGeneratorHodgeData"
