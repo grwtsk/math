@@ -691,6 +691,43 @@ operation.
 
 Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
 
+## 4i. A decreasing mismatch measure for switch iteration
+
+The conjugate-paired operation now carries an explicit well-founded measure.
+
+For one column, define
+
+\[
+m(x,y)=\#\{i:x_i\neq y_i\}.
+\]
+
+The source proves
+
+~~~text
+columnMismatchCount_switchPair_lt
+columnMismatchCount_switchConjugatePair_lt
+~~~
+
+for every paired opposite mismatch. Thus each atomic correction strictly
+decreases the mismatch count at the selected column.
+
+It also proves
+
+~~~text
+columnMismatchCount_switchConjugatePair_eq_of_ne
+~~~
+
+so every unrelated column retains exactly the same mismatch count. This is the
+key invariant needed to correct conjugate-column representatives sequentially
+without undoing previous columns.
+
+The remaining combinatorial obligation is therefore a finite induction:
+while the selected column has nonzero mismatch count, use equal column sums to
+obtain an opposite mismatch pair and apply the decreasing step; then iterate
+over the finite set of conjugate-pair representatives.
+
+Verification remains \`SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED\`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
