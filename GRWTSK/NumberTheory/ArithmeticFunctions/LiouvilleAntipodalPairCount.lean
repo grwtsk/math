@@ -595,18 +595,29 @@ theorem dyadicSignedMixedEnergy_eq_antipodal_count
       (((2 : ℚ) ^ H.card * (antipodalPairCount M H : ℚ)) /
         ((M : ℚ) ^ 2)) - 1 := by
   classical
-  have hM0 : (M : ℚ) ≠ 0 := by exact_mod_cast Nat.ne_of_gt hM
-  -- The generic finite Walsh expansion is available as a separate
-  -- proof-draft supplier; the remaining obligation is to commute the
-  -- normalized double sum with the complete character sum.
-  have hWalsh (f : ℕ → ℚ) :
-      (∏ h ∈ H, (1 - f h)) =
-        ∑ S ∈ H.powerset, (-1 : ℚ) ^ S.card * ∏ h ∈ S, f h :=
-    GRWTSK.NumberTheory.FiniteAntipodalWalshExpansion.product_one_sub_eq_powerset_sum H f
-  -- Reassociate the two finite root sums and expand the full powerset
-  -- via the finite product-of-sums identity. The nonempty sum is the
-  -- complete expansion minus its empty-character contribution.
-  simp only [dyadicSignedMixedEnergy, antipodalPairCount]
-  sorry
+  have hdetector :
+      (((2 : ℚ) ^ H.card * (antipodalPairCount M H : ℚ)) /
+          (M : ℚ) ^ 2) =
+        (∑ p ∈ (Finset.range M).product (Finset.range M),
+          ∏ h ∈ H,
+            ((1 : ℚ) -
+              ((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2 := by
+    rw [normalized_antipodal_product_eq_frequency M H hM]
+  have hsum :
+      (∑ p ∈ (Finset.range M).product (Finset.range M),
+          ∏ h ∈ H,
+            ((1 : ℚ) -
+              ((ArithmeticFunction.liouville (p.1 + h + 1) : ℤ) : ℚ) *
+                ((ArithmeticFunction.liouville (2 * p.2 + 2 * h + 3) : ℤ) : ℚ))) /
+          (M : ℚ) ^ 2 =
+        1 + dyadicSignedMixedEnergy M H := by
+    simp_rw [antipodal_character_powerset]
+    rw [normalized_powerset_character_sum]
+    rw [normalized_full_powerset_eq_subtype_characters]
+    exact normalized_full_subtype_characters_eq_one_add_mixed M H hM
+  rw [hdetector, hsum]
+  ring
 
 end GRWTSK.NumberTheory.LiouvilleWalshSourceBridge
