@@ -1571,3 +1571,56 @@ nonclaims = [
   "strictly weaker packaging than directly postulating all_scalar_conjugates_mem",
   "does not assert algebraicity"
 ]
+
+
+[[local_target]]
+name = "linewise scalar-conjugate transport implies orbit-span Hodge containment"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.orbitSpan_le_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "for each scalar automorphism, the conjugated switched tensor lies in its transported four-factor monomial line",
+  "each transported four-factor monomial line lies in the actual Hodge subspace"
+]
+nonclaims = [
+  "pure span argument after linewise inputs",
+  "does not construct the four-factor monomial tensor or actual Hodge realization"
+]
+
+[[local_target]]
+name = "atomic monomial transport data yields orbit-span Hodge data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchMonomialTransportData.toOrbitHodgeData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "interface conversion only",
+  "does not prove factorwise-to-fourfold tensor transport"
+]
+
+[[external_premise]]
+id = "cm-fourfold-monomial-scalar-transport"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-label-conjugation", "eq:switch-line"]
+statement_role = "upgrade the already-local factorwise embedding-line scalar transport to the actual four-factor switched monomial tensor"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.conjugate_mem_line"
+status = "OPEN"
+nonclaims = [
+  "multilinear/tensor compatibility only",
+  "does not assert algebraicity"
+]
+
+[[external_premise]]
+id = "cm-transported-monomial-line-hodge-inclusion"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:switch-conjugate-balance"]
+statement_role = "identify each transported four-factor monomial line with an actual all-conjugate (2,2) Hodge line, hence include it in the Hodge subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.line_le_hodge"
+status = "OPEN"
+nonclaims = [
+  "Hodge-realization comparison only",
+  "does not assert algebraicity"
+]
