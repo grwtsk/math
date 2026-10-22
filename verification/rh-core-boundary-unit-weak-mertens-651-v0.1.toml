@@ -1,0 +1,42 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-unit-weak-mertens-651-v0.1"
+owner_repository = "grwtsk/math"
+issue = 651
+parent_issue = 641
+parent_pr = 646
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryUnitIntervalWeakMertens"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryUnitIntervalWeakMertens"
+
+[source_binding]
+stacked_parent_revision = "e128d7864320ebe8471c8ccdd19f5e5019af32b0"
+candidate_branch = "research/rh-unit-weak-mertens-651"
+theorem_source_commit = "913059bb9c4fdfdb83344a26ab7faf3f5c3104b0"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryUnitIntervalWeakMertens.lean"
+theorem_source_git_blob = "5a619ed60e277fd2a155b20aaad3b93caf1f8b1b"
+
+[selected_increment]
+unit_kernel = "weakMertensUnitKernel"
+unit_integral = "weakMertensUnitIntervalIntegral"
+inverse_square_integral = "integral_zpow_neg_two_unit"
+integral_equals_kernel = "weakMertensUnitIntervalIntegral_eq_kernel"
+discrete_weight_bound = "weightedMertensPrefixSquare_le_unitKernel"
+localized_unit_energy = "boundaryLocalizedUnitWeakMertensEnergy"
+weighted_to_unit = "boundaryLocalizedWeightedMertensSquareEnergy_le_unit"
+unit_source = "BoundaryUnitIntervalWeakMertensSource"
+unit_to_discrete = "dyadicWeightedWeakMertensBoundarySource_of_unitInterval"
+unit_to_boundary = "subpolynomialCoreBoundarySignedPacket_of_unitWeakMertens"
+classical_adapter = "ClassicalWeakMertensToBoundaryUnitIntervalAdapter"
+proof_classification = "UNIT_INTERVAL_INTEGRAL_TO_DISCRETE_WEIGHT_COMPARISON"
+next_obstruction = "prove the conventional Mertens step-function integral identity and localized multiplicity bound"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+classical_weak_mertens_adapter_constructed = false
+riemann_hypothesis_proved = false
