@@ -16,15 +16,56 @@
         "git_blob": "374a9c29ca9aa15196ae8d8538f382f6298eced3",
         "mode": "100644"
       },
-      "repaired_component": {
-        "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/HammingPropagationHistograms.lean",
-        "sha256": "bacbba5d9eb260f0cb7a4ca415c84fc7f09b22157eab66f484b922a5d906b257",
-        "byte_count": 10959,
-        "git_blob": "23f93b93b2708a144790b35a7fe25e13bb3426d6",
-        "theorem": "BitMatrix.Dynamics.Avalanche.propagation_first_moment_count",
-        "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
-        "repair": "FINAL_FINITE_SUM_NORMALIZATION_ONLY"
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE",
+      "repaired_components": [
+        {
+          "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/HammingPropagationHistograms.lean",
+          "sha256": "bacbba5d9eb260f0cb7a4ca415c84fc7f09b22157eab66f484b922a5d906b257",
+          "byte_count": 10959,
+          "git_blob": "23f93b93b2708a144790b35a7fe25e13bb3426d6",
+          "theorem": "BitMatrix.Dynamics.Avalanche.propagation_first_moment_count",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "FINAL_FINITE_SUM_NORMALIZATION_ONLY"
+        }
+      ]
+    },
+    {
+      "module": "BitMatrix.FiniteField.Galois",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/d9/d9d307f9fc4eb0f70539d3fb84809fc24f00c8c80fb99fc4fd541f8037b44081.lean",
+        "sha256": "d9d307f9fc4eb0f70539d3fb84809fc24f00c8c80fb99fc4fd541f8037b44081",
+        "byte_count": 19356,
+        "git_blob": "a701412d46585d7a49855f4d8f36de6b32cfc0d3"
       },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/FiniteField/Galois.lean",
+        "sha256": "387a07670254a15c6c7604de1aed41d406b9617a2581c6da590e67cd539bb7c5",
+        "byte_count": 1244,
+        "git_blob": "3f95fd2ed143e3789fcc2bc98d9b49bc1c09f98f",
+        "mode": "100644"
+      },
+      "repaired_components": [
+        {
+          "path": "GRWTSK/Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/RowMajorBooleanCoordinates.lean",
+          "sha256": "a8f7d29e41f415a7ef502f218db1f7211d16082057154b949c11cff17b3d7360",
+          "byte_count": 5312,
+          "git_blob": "17fee4e9c033b2382720439f7b8055fd9de22da4",
+          "theorem": "BitMatrix.FiniteField.flattenEquiv_xor",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "POINTWISE_DEFINITIONAL_NORMALIZATION_ONLY"
+        },
+        {
+          "path": "GRWTSK/Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/SuppliedLinearFieldEncoding.lean",
+          "sha256": "58e28937347a4298495c8a88301196343552a3e8be689b978f56b2e11434c136",
+          "byte_count": 5971,
+          "git_blob": "8355c4419b79a132104cf3093e25e07695a33abb",
+          "theorem": "BitMatrix.FiniteField.Encoding.code_zero",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "LINEAR_ZERO_EQUIV_NORMALIZATION_ONLY"
+        }
+      ],
       "scope": "VALIDATION_COMPATIBILITY_ONLY",
       "mathematical_acceptance": false,
       "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"

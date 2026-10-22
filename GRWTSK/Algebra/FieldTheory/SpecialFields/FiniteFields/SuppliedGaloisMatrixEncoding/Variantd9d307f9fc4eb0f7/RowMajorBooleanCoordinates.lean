@@ -103,7 +103,12 @@ theorem flattenEquiv_xor (A B : BitMatrix m n) :
     flattenEquiv m n (BitMatrix.xor A B) =
       xorBits (flattenEquiv m n A) (flattenEquiv m n B) := by
   funext k
-  simp [flattenEquiv, xorBits, BitMatrix.xor]
+  change
+    (A ((rowMajorIndexEquiv m n).symm k).1 ((rowMajorIndexEquiv m n).symm k).2 !=
+      B ((rowMajorIndexEquiv m n).symm k).1 ((rowMajorIndexEquiv m n).symm k).2) =
+    (A ((rowMajorIndexEquiv m n).symm k).1 ((rowMajorIndexEquiv m n).symm k).2 !=
+      B ((rowMajorIndexEquiv m n).symm k).1 ((rowMajorIndexEquiv m n).symm k).2)
+  rfl
 
 
 end BitMatrix.FiniteField
