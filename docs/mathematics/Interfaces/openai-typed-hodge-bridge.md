@@ -407,6 +407,64 @@ It is now specifically:
 The local definition \`canonicalEigenlineRealization\` packages the proved
 linear eigenspaces once the sign-compatible Hodge-type assignment is supplied.
 
+## 4c. Canonical sign-labelled eigenlines are local
+
+The canonical Galois eigenline supplier can now attach the sign profile
+definitionally:
+
+\[
+v(\sigma)=+1\mapsto (1,0),\qquad
+v(\sigma)=-1\mapsto (0,1).
+\]
+
+The declaration
+\`CMGaloisEigenlines.canonicalTypedEigenlineRealization\` packages the
+already-constructed one-dimensional eigenspaces with these labels. Four
+balanced rows therefore give the formal all-coordinate two/two type count on
+the canonical eigenspaces.
+
+This removes "assign the labels" as an implementation gap. It does **not**
+prove that the labelled decomposition satisfies the semantic axioms of the
+manuscript's rational Hodge structure. That semantic Hodge realization remains
+an explicit theorem boundary.
+
+## 4d. Trace-form polarization algebra is local up to positivity
+
+The local module
+\`GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean\` defines
+
+\[
+\psi_\xi(x,y)=
+\operatorname{Tr}_{E/\mathbf Q}\!\bigl(\xi x c(y)\bigr)
+\]
+
+for a Galois CM number field. If
+
+\[
+\xi\neq0,\qquad c(\xi)=-\xi,
+\]
+
+the source proves:
+
+1. field trace is invariant under the canonical CM conjugation;
+2. \(\psi_\xi(y,x)=-\psi_\xi(x,y)\);
+3. \(\psi_\xi(x,x)=0\);
+4. the pairing is nondegenerate in both arguments.
+
+The proof of nondegeneracy uses the nondegenerate field trace form and
+bijectivity of CM conjugation.
+
+What remains external from the manuscript's polarization paragraph is exactly:
+
+- choose \(\xi\) with the prescribed archimedean sign at each conjugate pair;
+- prove \(i\psi_\xi(u,\bar u)>0\) on the selected \((1,0)\) part;
+- scale to an integral lattice;
+- apply the Riemann criterion to obtain \(B(v)\) and
+  \(U(v)=H^1(B(v),\mathbf Q)\).
+
+Thus alternating/nondegenerate trace-form algebra is no longer bundled with
+archimedean positivity.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
