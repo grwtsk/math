@@ -248,4 +248,38 @@ theorem nonemptyCorrelationEnergy_eq_natCount_defect
   ring
 
 
+
+/-- The SHARP finite-sample energy floor. The remainder r is the
+exact Euclidean remainder of the number of sampled roots modulo
+the complete Boolean cube cardinality q=2^|ι|. -/
+theorem nonemptyCorrelationEnergy_sharp_sample_floor
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (roots : Finset ℕ) (x : ℕ → ι → Bool)
+    (hroots : 0 < roots.card) :
+    (((roots.card % Fintype.card (ι → Bool) : ℕ) : ℚ) *
+      ((Fintype.card (ι → Bool) -
+        roots.card % Fintype.card (ι → Bool) : ℕ) : ℚ)) /
+        (roots.card : ℚ) ^ 2 ≤
+      nonemptyCorrelationEnergy roots x := by
+  classical
+  let s : Finset (ι → Bool) := Finset.univ
+  have hq : 0 < s.card := by
+    simp [s]
+  have htotal :
+      (∑ a ∈ s, fullPatternNatCount roots x a) = roots.card := by
+    simpa [s] using fullPatternNatCount_total roots x
+  have hfloor :=
+    finite_count_square_rational_floor s
+      (fullPatternNatCount roots x) roots.card hq htotal
+  have henergy :=
+    nonemptyCorrelationEnergy_eq_natCount_defect roots x hroots
+  have hN : (0 : ℚ) < (roots.card : ℚ) := by
+    exact_mod_cast hroots
+  have hN2 : (0 : ℚ) < (roots.card : ℚ) ^ 2 := sq_pos_of_pos hN
+  dsimp [s] at hfloor
+  rw [henergy]
+  apply (div_le_div_iff_of_pos_right hN2).2
+  simpa only [Finset.card_univ] using hfloor
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
