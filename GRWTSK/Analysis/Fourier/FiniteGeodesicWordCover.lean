@@ -227,4 +227,60 @@ theorem always_reject_incompatible_with_short_source
   rw [hall w] at hdecode
   cases hdecode
 
+/-!
+## Explicit finite positive and hostile examples
+
+These deliberately use an abstract PUnit source and the nonsmooth
+toyTraceInput from #665. They do not describe a primitive geodesic.
+They demonstrate that many different finite codes may decode to the
+SAME source ID, and that the decoder's derived Finset deduplicates it.
+-/
+
+/-- A nonvacuous finite decoder that maps every word to the same
+one-element abstract source. It is intentionally NOT injective. -/
+def toyWordGate : BoundedWordGeometricGate toyTraceInput Bool 1 2 where
+  decode := fun _ => some PUnit.unit
+  encode := fun _ => some (emptyWord Bool 1)
+  decode_sound := by
+    intro w a hw
+    simp [toyTraceInput]
+  short_has_code := by
+    intro a ha hlen
+    exact ⟨emptyWord Bool 1, rfl⟩
+  decode_encode := by
+    intro a w hw
+    cases a
+    rfl
+
+/-- The single Boolean letter code at length one. -/
+def toyOneLetter : BoundedWord Bool 1 :=
+  ⟨⟨1, by decide⟩, fun _ => true⟩
+
+/-- Two distinct word codes give the same output. This prevents
+incorrect reliance on injective Finset.filterMap decoding. -/
+theorem toy_distinct_codes_same_output :
+    toyWordGate.decode (emptyWord Bool 1) = toyWordGate.decode toyOneLetter ∧
+      emptyWord Bool 1 ≠ toyOneLetter := by
+  constructor
+  · rfl
+  · intro h
+    have hlen := congrArg (fun w : BoundedWord Bool 1 => wordLength w) h
+    norm_num [wordLength, emptyWord, toyOneLetter] at hlen
+
+/-- The decoded candidate family is a singleton, despite multiple
+distinct successful word encodings. -/
+theorem toy_decodedCandidates_eq_univ :
+    decodedCandidates toyTraceInput toyWordGate =
+      (Finset.univ : Finset PUnit) := by
+  classical
+  ext a
+  constructor
+  · intro ha
+    exact Finset.mem_univ a
+  · intro ha
+    cases a
+    exact (mem_decodedCandidates_iff toyTraceInput toyWordGate PUnit.unit).mpr
+      ⟨emptyWord Bool 1, rfl⟩
+
+
 end GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover
