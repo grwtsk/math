@@ -229,6 +229,27 @@ def AtomicSwitchTensorData.toDescentData
   tensor := D.tensor
   all_scalar_conjugates_mem := D.all_scalar_conjugates_mem
 
+/-- Exact remaining tensor-level supplier for an invariant-aware atomic switch.
+
+For each switch step it supplies only the actual tensor, complex Hodge
+subspace, and scalar-conjugate stability.  The four-row profile, (2,2)
+certificate, and rational descent are all constructed locally. -/
+structure InvariantAtomicTensorDataSupplier
+    (conj : G → G)
+    (hconj : Function.Involutive conj)
+    (target : I → G → ℤ) where
+  realize :
+    ∀ (x : I → G → ℤ)
+      (hxsign : ∀ r h, IsSign (x r h))
+      (hxodd : IsOddMatrix conj x)
+      (g : G)
+      (hg : g ≠ conj g)
+      (i : PosNegMismatch (fun r => x r g) (fun r => target r g))
+      (j : NegPosMismatch (fun r => x r g) (fun r => target r g)),
+      AtomicSwitchTensorData
+        (canonicalAtomicSwitchFourFactorProfile
+          conj hconj x target hxsign hxodd g hg i j)
+
 /-- Existential package for the rational four-factor Hodge witness attached
 to one switched core.
 
@@ -383,6 +404,29 @@ structure AtomicSwitchTransitionSupplier
       (j : NegPosMismatch (fun r => x r g) (fun r => target r g)),
       AlgebraicTransitionWitness x
         (switchConjugatePair conj x g i.1 j.1)
+
+/-- The invariant-aware atomic transition can be built from exactly the raw
+tensor-stability supplier plus the repository-wide four-factor algebraicity
+supplier and the routine geometric identity/assembly adapters.
+
+This is the end-to-end local composition for one atomic switch. -/
+def invariantAtomicSwitchTransitionSupplierOfTensorData
+    (conj : G → G)
+    (hconj : Function.Involutive conj)
+    (target : I → G → ℤ)
+    (T : InvariantAtomicTensorDataSupplier conj hconj target)
+    (S : CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier)
+    (P : AlgebraicCycleToSwitchCoreAdapter conj target)
+    (Id : TwoFactorIdentitySupplier)
+    (A : AtomicTransitionAssemblySupplier conj) :
+    InvariantAtomicSwitchTransitionSupplier conj target where
+  realize := fun x hxsign hxodd g hg i j =>
+    let D := T.realize x hxsign hxodd g hg i j
+    let W := D.toRationalPackage
+    let core :=
+      P.package x g i j W (S.realize W.witness)
+    A.assemble x g i.1 j.1 core
+      (fun r _ _ => Id.realize (x r))
 
 /-- A four-factor core theorem plus unchanged-row identity classes and routine
 slotwise assembly instantiate the generic atomic-switch transition supplier. -/
