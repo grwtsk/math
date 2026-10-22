@@ -101,8 +101,8 @@ def referenceCycles : Finset (Finset (Finset (Fin 4))) :=
    cyclicEdges (Equiv.swap (1 : Fin 4) 2),
    cyclicEdges (Equiv.swap (2 : Fin 4) 3)}
 
-theorem every_four_cycle_is_one_of_three (σ : Equiv.Perm (Fin 4)) :
-    cyclicEdges σ ∈ referenceCycles := by
+theorem every_four_cycle_is_one_of_three :
+    ∀ σ : Equiv.Perm (Fin 4), cyclicEdges σ ∈ referenceCycles := by
   decide
 
 /-- There are exactly three unoriented cyclic edge sets of four vertices. -/
@@ -135,6 +135,47 @@ theorem adjacencyResolvent_vieta (a b c d : R) :
     eFour, qOne, qTwo, qThree]
   simp only [map_add, map_sub, map_mul, map_pow]
   ring
+
+/-- The monic quartic reconstructed from the four Vieta coordinates. -/
+def quarticFromVieta (s₁ s₂ s₃ s₄ : R) : R[X] :=
+  Polynomial.X ^ 4 - Polynomial.C s₁ * Polynomial.X ^ 3 +
+    Polynomial.C s₂ * Polynomial.X ^ 2 -
+    Polynomial.C s₃ * Polynomial.X + Polynomial.C s₄
+
+theorem four_linear_factors_vieta (a b c d : R) :
+    (Polynomial.X - Polynomial.C a) *
+      (Polynomial.X - Polynomial.C b) *
+      (Polynomial.X - Polynomial.C c) *
+      (Polynomial.X - Polynomial.C d) =
+      quarticFromVieta (eOne a b c d) (eTwo a b c d)
+        (eThree a b c d) (eFour a b c d) := by
+  simp only [quarticFromVieta, eOne, eTwo, eThree, eFour]
+  simp only [map_add, map_sub, map_mul, map_pow]
+  ring
+
+/-- The output is a function of the actual quartic coefficients; no
+chosen ordering is included in the output. An explicit factorization
+is the sole input witness. If the quartic is separable over a splitting
+field, such an ordering exists with distinct roots, but the polynomial
+identity itself also holds for repeated roots in every characteristic. -/
+theorem resolvent_of_actual_factored_quartic
+    (p : R[X]) (a b c d A B C D : R)
+    (hp : p = (Polynomial.X - Polynomial.C a) *
+      (Polynomial.X - Polynomial.C b) *
+      (Polynomial.X - Polynomial.C c) *
+      (Polynomial.X - Polynomial.C d))
+    (hcoeff : p = Polynomial.X ^ 4 +
+      Polynomial.C A * Polynomial.X ^ 3 +
+      Polynomial.C B * Polynomial.X ^ 2 +
+      Polynomial.C C * Polynomial.X + Polynomial.C D)
+    (hA : A = -eOne a b c d)
+    (hB : B = eTwo a b c d)
+    (hC : C = -eThree a b c d)
+    (hD : D = eFour a b c d) :
+    adjacencyResolventFromRoots a b c d =
+      adjacencyResolventOfMonicCoefficients A B C D := by
+  rw [hA, hB, hC, hD]
+  exact adjacencyResolvent_coefficient_substitution a b c d
 
 /-- Express the same cubic through the coefficients of a monic quartic
   p = X⁴ + A X³ + B X² + C X + D. -/
