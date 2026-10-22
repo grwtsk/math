@@ -1240,3 +1240,34 @@ upstream_obligations = [
 nonclaims = [
   "pure field algebra after q_i nonvanishing"
 ]
+
+
+[[local_target]]
+name = "exact Hodge-Riemann supplier implies middle pairing nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassHodgeRiemannSupplier.q_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "geometric cup/integration pairing data",
+  "nonzero beta",
+  "nonzero scalar relation gamma = c * conjugate(beta)",
+  "Hodge-Riemann positive energy identifying pairing(beta, conjugate(beta))"
+]
+nonclaims = [
+  "no algebraicity conclusion in the supplier",
+  "does not construct an ample class or prove Hodge-Riemann"
+]
+
+[[external_premise]]
+id = "cm-ample-class-hodge-riemann-middle-pairing"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "for each middle factor, supply positive Hodge-Riemann energy identifying the ample-class pairing with the conjugate-partner pairing"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassHodgeRiemannSupplier.q_ne_zero"
+status = "OPEN"
+nonclaims = [
+  "no compatibility between the ample class and E is assumed",
+  "local source consumes positivity but does not prove the geometric theorem"
+]
