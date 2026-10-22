@@ -1,0 +1,339 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-geodesic-word-cover-687-v0.1"
+owner_repository = "grwtsk/math"
+issue = 687
+related_issues = [674, 665, 661, 653, 649, 628, 159, 121, 168, 516, 100, 15]
+route_id = "FINITE_BOUNDED_WORD_DECODER_PRIMITIVE_GEODESIC_SOURCE_GATE"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover"
+build_target = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/trace-primitive-coverage-674-20261022"
+review_parent_revision = "f508f376bad1558440c755003ff65e19c5648612"
+review_parent_module_git_blob = "77166710239236fe743476e24528aaec332e4ab0"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Analysis/Fourier/FiniteGeodesicWordCover.lean"
+new_module_git_blob = "d5cab0de6fceccc806cc3337c5aad1627acecd3a"
+new_module_namespace = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover"
+mathematical_note_path = "docs/mathematics/Analysis/Fourier/finite-geodesic-word-cover.md"
+mathematical_note_git_blob = "70b498609df35c1357651fbde65bcbd696d3af6d"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+finite_alphabet_and_word_depth_required = true
+all_bounded_words_enumerated = true
+word_count_is_code_count_only = true
+option_decoder_soundness_required = true
+short_word_geometric_bound_required = true
+roundtrip_same_source_identity_required = true
+noninjective_decoding_supported = true
+duplicate_decoder_outputs_deduplicated = true
+finite_universe_only = true
+primitive_conjugacy_checker_present = false
+surface_group_presentation_verified = false
+geodesic_source_complete = false
+geometric_word_length_bound_proved = false
+selberg_trace_formula_formalized = false
+finite_primitive_omission_zero_is_conditional = true
+finite_iterate_omission_zero_is_conditional = true
+modular_alias_error_still_open = true
+wp_mirzakhani_integration_formalized = false
+gue_number_variance_proved = false
+sofic_operator_limit_proved = false
+chowla_growing_shift_supplier_proved = false
+riemann_hypothesis_proved = false
+mathematical_statement = "Full finite bounded word-code enumeration and source-preserving optional decoding; external short-code and exact roundtrip premises imply conditional finite primitive source coverage and reuse alias-only trace error."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover"
+authored_declaration_count = 23
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Analysis.Fourier.FiniteTracePrimitiveCoverage", "Mathlib.Data.Finset.Option", "Mathlib.Data.Fintype.Sigma"]
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.BoundedWord"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.wordLength"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.wordLength_le_bound"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.emptyWord"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.emptyWord_length"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.letters"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.letters_length"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.card_boundedWord"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.BoundedWordGeometricGate"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.decodedCandidates"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.mem_decodedCandidates_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.decodedCandidates_subset"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.decodedCandidates_card_le_codes"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.decodedCandidates_card_le_word_sum"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.selectedInput"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.originalUniverse"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.decodedCandidates_cover_short_sources"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.bounded_word_trace_error_le_alias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.always_reject_incompatible_with_short_source"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.toyWordGate"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.toyOneLetter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.toy_distinct_codes_same_output"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover.toy_decodedCandidates_eq_univ"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-length-codes"
+requirement = "BoundedWord must enumerate lengths 0 through L inclusive, never omit the longest or empty word."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-word-not-geodesic"
+requirement = "The empty word is a finite code, not the identity of an oriented primitive hyperbolic geodesic."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "search-cardinality-not-geodesic-count"
+requirement = "The geometric sum counts all word codes, not conjugacy classes or primitive closed geodesics."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-alphabet-required"
+requirement = "The word alphabet must have a finite Fintype; infinite free generators are not an accepted finite enumeration."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "word-length-bound-unproved"
+requirement = "A numerical L(B,X,marking) is an explicit external geometric premise, not inferred from finite code enumeration."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "word-conjugacy-relations"
+requirement = "A surface group with relators cannot be silently replaced by a free group or free monoid."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "conjugacy-decoder-required"
+requirement = "Equal hyperbolic lengths, traces or homology labels do not imply identical oriented primitive conjugacy IDs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "proper-power-criterion"
+requirement = "Primitive in the Selberg source means not a proper power in the actual surface group, not primitive in a free-generator basis."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "simple-vs-primitive"
+requirement = "Mirzakhani simple-curve counts do not enumerate all non-simple primitive geodesics."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-orientation"
+requirement = "A word and its inverse may encode distinct oriented conjugacy/geodesic IDs; any quotient requires a theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "decoder-into-option"
+requirement = "Failed word decoding returns none, not a fabricated primitive source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-injectivity-of-decoder"
+requirement = "Two or more word codes may decode to the same source ID; reject Finset.filterMap without injectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-image-dedup"
+requirement = "Finset.image into Option followed by eraseNone yields each decoded source ID only once."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "decode-soundness"
+requirement = "Every successful output must be proven in the declared finite source universe."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "bounded-word-short-representation"
+requirement = "Each short source must have a bounded successful encoder, with length<=B checked against the exact original source length."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-encoder-roundtrip"
+requirement = "A successful source encoding must decode back to the same source identity, not merely an isospectral or homological neighbor."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "always-reject-invalid-if-short-source"
+requirement = "A decoder returning none for every code fails when the declared finite universe has a known source of length<=B."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "vacuity-explicit"
+requirement = "An empty short-source subfamily makes coverage conditional/vacuous and is not evidence of geodesic existence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noninjective-toy-positive"
+requirement = "Toy Bool word codes at L=1 include distinct empty/one-letter codes with the same successful PUnit output."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "toy-output-once"
+requirement = "The toy decoded candidate Finset deduplicates the one source ID regardless of how many words decode to it."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "toy-geometric-veto"
+requirement = "The toy PUnit source is not a marked surface, smooth Selberg test, or primitive geodesic."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "selected-superset-source-fidelity"
+requirement = "Decoded selected and original universe inputs must preserve exactly the same signed homology, lengths, Fourier test and target."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-original-universe-not-global"
+requirement = "The supplied finite U remains independent of all actual primitive geodesics on a surface, unless a separate authentic source-covering theorem exists."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "support-radius-exact"
+requirement = "The decoder short-word radius B must equal the Fourier support certificate radius used to erase finite primitive omissions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "iterate-cutoff-premises"
+requirement = "The parent 0<=K<=M and B<=K*delta conditions must remain explicit, including positive delta."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "alias-mass-retained"
+requirement = "Finite word coverage cannot remove q-modular aliases; NoAlias is a separate proved-or-premised field."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-infinite-selberg-inference"
+requirement = "A finite exhaustive word code search is not an infinite Selberg trace formula or complete length spectrum."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-goe-gue-universality"
+requirement = "No Weil-Petersson integration, GOE/GUE number variance or microscopic sine-kernel universality follows from bounded words."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh-upgrade"
+requirement = "No source-bound Liouville/Mobius cancellation, growing-shift maximal packet, zeta divisor or Riemann hypothesis is established."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-qualification"
+requirement = "No Lean/Lake execution, native VM, F06, cache, workflow, executor, root import or parent PR change is authorized."
+status = "NOT_RUN"
+
