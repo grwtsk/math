@@ -54,6 +54,39 @@ structure EmbeddingLineRealization
   typeAt : G → WeightOneHodgeType
   typeAt_eq : ∀ g, typeAt g = typeOfSign (v.value g)
 
+/-- A stronger realization interface in which each selected embedding line is an
+actual one-dimensional linear subspace of a coefficient-space realization.
+
+This still does not assert that the ambient vector space is a rational Hodge
+structure, that the subspaces are eigenspaces for a CM-field action, or that
+they form a complete direct-sum decomposition. Those are separate supplier
+obligations. -/
+structure LinearEmbeddingLineRealization
+    (C V G : Type*) [Field C] [AddCommGroup V] [Module C V]
+    [FiniteDimensional C V]
+    (conj : G → G) (v : OddSignRow G conj) where
+  line : G → Submodule C V
+  line_finrank_one : ∀ g, Module.finrank C (line g) = 1
+  line_nonzero : ∀ g, ∃ x : V, x ∈ line g ∧ x ≠ 0
+  typeAt : G → WeightOneHodgeType
+  typeAt_eq : ∀ g, typeAt g = typeOfSign (v.value g)
+
+/-- Forget the linear-subspace realization and retain only the line witness and
+its Hodge-type label. -/
+def LinearEmbeddingLineRealization.toEmbeddingLineRealization
+    {C V G : Type*} [Field C] [AddCommGroup V] [Module C V]
+    [FiniteDimensional C V]
+    {conj : G → G} {v : OddSignRow G conj}
+    (R : LinearEmbeddingLineRealization C V G conj v) :
+    EmbeddingLineRealization G conj v where
+  Line := fun g => R.line g
+  line_nonempty := by
+    intro g
+    rcases R.line_nonzero g with ⟨x, hx, _⟩
+    exact ⟨⟨x, hx⟩⟩
+  typeAt := R.typeAt
+  typeAt_eq := R.typeAt_eq
+
 theorem EmbeddingLineRealization.pIndex_eq
     {G : Type*} {conj : G → G} {v : OddSignRow G conj}
     (R : EmbeddingLineRealization G conj v) (g : G) :
@@ -110,5 +143,36 @@ theorem fourFactor_allCoordinates_bidegree_two_two
           qIndex (R₄.typeAt (conj g)) = 2) := by
   intro g
   exact fourFactor_bidegree_two_two v₁ v₂ v₃ v₄ R₁ R₂ R₃ R₄ hbal g
+
+
+/-- A genuine one-dimensional subspace realization is sufficient for the same
+all-coordinate bidegree conclusion after forgetting only the underlying vector
+coordinates. -/
+theorem linearFourFactor_allCoordinates_bidegree_two_two
+    {C V G : Type*} [Field C] [AddCommGroup V] [Module C V]
+    [FiniteDimensional C V]
+    {conj : G → G}
+    (v₁ v₂ v₃ v₄ : OddSignRow G conj)
+    (R₁ : LinearEmbeddingLineRealization C V G conj v₁)
+    (R₂ : LinearEmbeddingLineRealization C V G conj v₂)
+    (R₃ : LinearEmbeddingLineRealization C V G conj v₃)
+    (R₄ : LinearEmbeddingLineRealization C V G conj v₄)
+    (hbal : FourBalance v₁ v₂ v₃ v₄) :
+    ∀ g,
+      (pIndex ((R₁.toEmbeddingLineRealization).typeAt g) +
+          pIndex ((R₂.toEmbeddingLineRealization).typeAt g) +
+          pIndex ((R₃.toEmbeddingLineRealization).typeAt (conj g)) +
+          pIndex ((R₄.toEmbeddingLineRealization).typeAt (conj g)) = 2) ∧
+        (qIndex ((R₁.toEmbeddingLineRealization).typeAt g) +
+          qIndex ((R₂.toEmbeddingLineRealization).typeAt g) +
+          qIndex ((R₃.toEmbeddingLineRealization).typeAt (conj g)) +
+          qIndex ((R₄.toEmbeddingLineRealization).typeAt (conj g)) = 2) :=
+  fourFactor_allCoordinates_bidegree_two_two
+    v₁ v₂ v₃ v₄
+    R₁.toEmbeddingLineRealization
+    R₂.toEmbeddingLineRealization
+    R₃.toEmbeddingLineRealization
+    R₄.toEmbeddingLineRealization
+    hbal
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines
