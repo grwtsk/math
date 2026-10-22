@@ -1,0 +1,192 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "research-observation-v1"
+owner_repository = "grwtsk/math"
+root_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation"
+build_target = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-observation-correspondence"
+claim_type = "Empty"
+core_type = "Unit"
+runtime_operation = "RECORD_OBSERVATION"
+mathematical_operation = "GRWTSK.Logic.StateTransition.ResearchState.Change.observe"
+requires_exact_committed_source_inputs = true
+requires_unchanged_inputs_during_verification = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+full_project_build_required = false
+unrelated_untracked_files_are_outside_scope = true
+
+[source_binding]
+base_revision = "81ee62a7524d925398092e2f3d38b1be70ec5f8c"
+base_tree = "513d23055ee85ed636cd711873f1facb123ace5c"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "STATIC_SPECIFICATION_ONLY"
+receipt_revision_policy = "External verification must bind the actual committed math revision, tree, descriptor blob, all selected source blobs, and tool/dependency identities. The base revision is the mathematical predecessor, not a runtime result."
+inventory_policy = "Eight modules are the exact local source import closure of ResearchObservation. ResearchStateExamples is a ninth, separately selected companion regression target. All upstream imports also require reconciliation."
+checkout_policy = "Preserve unrelated staged, unstaged, untracked, and concurrent work. Require exact committed selected bytes and unchanged selected inputs throughout verification; no whole-checkout cleanliness assertion is made."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_project_added_axioms = true
+reject_unreported_native_dependencies = true
+reject_native_decide_dependencies = true
+required_lean_arguments = ["--trust=0"]
+requires_kernel_rechecking = true
+requires_full_transitive_axiom_audit = true
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.ProofCoverage"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Certificates/ProofCoverage.lean"
+source_git_blob = "4fe4475871ba36b4619fe0eef9309d7fa5e261d5"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Inference.FiniteRuleSystems"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Inference/FiniteRuleSystems.lean"
+source_git_blob = "89e16446676e28b9a46cdfa40bdff82aa04296e9"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Inference.RuleSoundness"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Inference/RuleSoundness.lean"
+source_git_blob = "6b06e15df2dc639558defb4c881a77f3b3e72327"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Locality.RevisionCertificates"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Locality/RevisionCertificates.lean"
+source_git_blob = "33c1c9e8420f83ff5cd52055e24dae0a4e15aa28"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.Invariant"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/Invariant.lean"
+source_git_blob = "d2e384c89ee6fd15392727d3d188f50f53ae6632"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchState.lean"
+source_git_blob = "dc0a2b8275614ec5f32159bed7663b9207ccde7e"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchObservation.lean"
+source_git_blob = "2e199c4edbef36591ed884498f0c3418de86462c"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.Order.Closure.FiniteDependencyClosure"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/Order/Closure/FiniteDependencyClosure.lean"
+source_git_blob = "a768e632066cf8bc1ec23b0137f30cb8a418f8b6"
+role = "import-closure"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchStateExamples"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchStateExamples.lean"
+source_git_blob = "4b72f4095cd144788ee9ac9d5500f7abedf4e0cb"
+role = "companion-regression"
+
+[declarations]
+requires_all_public_in_listed_modules = true
+requires_all_declarations_in_new_modules = true
+requires_generated_declaration_type_census = true
+requires_full_transitive_import_closure = true
+requires_elaborated_types_in_external_record = true
+required_new_source_names = [
+  "GRWTSK.Logic.StateTransition.ResearchObservation.recordObservationTag",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.Observation",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.ObservationState",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.decEq",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.listDecEq",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.NatTree.render",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.stringWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.sourceWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.verificationStatusWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.verificationWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.metadataWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.eventWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.observationWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.stateWire",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.stringWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.sourceWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.verificationStatusWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.verificationWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.metadataWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.eventWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.observationWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.stateWire_injective",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.emptyCatalog",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.coreMeaning",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.initial",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_initial",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.recordObservation",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.Admitted",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_recordObservation",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.admitted_change",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_sources",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_metadata",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_history",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_has_no_claims",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.realize_valid",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.ReplayAdmitted",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay_reachable",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay_admitted_reachable",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay_sources",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay_history",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay_version",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.replay_admitted_valid",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.wrong_operation_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchObservation.source_mutation_rejected",
+]
+
+[concrete_instance_acceptance]
+requires_exact_before_observation_after_values = true
+requires_all_three_natural_array_equalities = true
+requires_all_three_canonical_ascii_byte_equalities = true
+requires_literal_operation_tag = true
+requires_entire_resulting_state_equality = true
+requires_actual_change_observe_term = true
+requires_full_concrete_instance_axiom_audit = true
+requires_kernel_rechecking = true
+proof_artifact_is_external = true
+serialized_status_is_not_transition_evidence = true
+
+[replay_acceptance]
+requires_every_supplied_operation_tag = true
+requires_exact_ordered_observation_list = true
+requires_entire_final_state_equality = true
+requires_actual_mathematical_reachability = true
+requires_external_journal_coverage_and_custody = true
+requires_no_arithmetic_target_selection = true
+
+[nonclaims]
+claims = [
+  "this static descriptor or mathematical note is an execution receipt",
+  "the entire mathematical project has been rebuilt",
+  "serialized source identity strings authenticate Git associations",
+  "general JSON decoder correctness or renderer injectivity has been proved",
+  "a universal refinement theorem for the external runtime implementation",
+  "metadata or verification labels construct mathematical proofs",
+  "arbitrary supplied histories are reachable from the empty initial state",
+  "mathematical replay proves filesystem append-only behavior or durable writes",
+  "a supplied replay list authenticates its origin or complete journal coverage",
+  "a claim-bearing state or arithmetic conjecture has been selected or proved",
+  "execution, scheduling, repository mutation, publication, or deployment authority",
+  "a consistency theorem for Lean, Mathlib, or the research process",
+]
