@@ -48,3 +48,32 @@ OFF_DIAGONAL_COVARIANCE_IDENTITY_SOURCE_SCRIPTED
 WINDING_LAG_REINDEXING_OPEN
 OFF_DIAGONAL_COVARIANCE_ESTIMATE_OPEN
 ```
+
+
+## Winding-lag partition update
+
+The earlier provisional lag equality has been removed; the source no longer contains an explicit `sorry`.
+
+The arithmetic content of the reindexing is now scripted by
+
+```lean
+positiveCongruentCenterDifference_has_windingLag
+windingLag_gives_congruentCenters
+centeredWindingLagPartitionStatement
+```
+
+For `0 <= c1 < c2 <= b` with `c1 = c2 mod d^2`, there exists
+
+```text
+1 <= z <= floor(b/d^2)
+```
+
+such that
+
+```text
+c2 = c1 + z*d^2.
+```
+
+Conversely, adding `z*d^2` preserves the square-modulus residue class.
+
+The remaining `CenteredWindingLagSumReindexing` proposition is only the finite-sum bijection/reordering layer. It is not yet proved. No placeholder proof is used.
