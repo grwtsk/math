@@ -72,7 +72,7 @@ theorem tracePairing_skew
 theorem tracePairing_self
     (P : TracePolarizationData E) (x : E) :
     tracePairing E P.xi x x = 0 := by
-  have h := P.tracePairing_skew x x
+  have h := tracePairing_skew E P x x
   linarith
 
 /-- The trace pairing separates its left argument whenever xi is nonzero. -/
@@ -93,9 +93,9 @@ theorem tracePairing_right_nondegenerate
     (P : TracePolarizationData E) (y : E)
     (h : ∀ x : E, tracePairing E P.xi x y = 0) :
     y = 0 := by
-  apply P.tracePairing_left_nondegenerate y
+  apply tracePairing_left_nondegenerate E P y
   intro x
-  rw [P.tracePairing_skew]
+  rw [tracePairing_skew E P]
   simp [h x]
 
 /-- Source-level algebraic polarization package: alternating and nondegenerate.
@@ -105,8 +105,8 @@ theorem tracePairing_alternating_nondegenerate
     (∀ x : E, tracePairing E P.xi x x = 0) ∧
       (∀ x : E, (∀ y : E, tracePairing E P.xi x y = 0) → x = 0) ∧
       (∀ y : E, (∀ x : E, tracePairing E P.xi x y = 0) → y = 0) :=
-  ⟨P.tracePairing_self, P.tracePairing_left_nondegenerate,
-    P.tracePairing_right_nondegenerate⟩
+  ⟨tracePairing_self E P, tracePairing_left_nondegenerate E P,
+    tracePairing_right_nondegenerate E P⟩
 
 end
 
