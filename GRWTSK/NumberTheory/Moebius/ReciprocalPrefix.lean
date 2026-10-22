@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
-import GRWTSK.Analysis.Asymptotics.FinitePowerSum
+import GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
 /-!
 # Reciprocal Möbius prefixes and discrete partial summation

@@ -1,5 +1,5 @@
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
-import GRWTSK.MeasureTheory.Integral.FinitePrimeTranslationEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.FinitePrimeTranslationEnergy
 
 /-! Exact horizon-shell decomposition of the actual Möbius pickup.
 

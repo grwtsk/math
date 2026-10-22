@@ -1,13 +1,13 @@
 import GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy
 import GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula
 import GRWTSK.Algebra.MvPolynomial.SquarefreeEulerProduct
-import GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition
+import GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition
 import GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds
-import GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy
 import GRWTSK.Analysis.SumIntegralComparison.ExponentialResponseSquareSum
 import GRWTSK.NumberTheory.Zeta.ReciprocalDecayBounds
-import GRWTSK.Analysis.Asymptotics.DisjointPrimeChainBounds
-import GRWTSK.Analysis.Asymptotics.PrimeTranslationBoundContracts
+import GRWTSK.Analysis.AsymptoticAnalysis.DisjointPrimeChainBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeTranslationBoundContracts
 
 /-! All analytic return obligations are discharged for the literal pickup.
 The following terminal consumers retain only their explicitly displayed signed

@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy
-import GRWTSK.MeasureTheory.Integral.MoebiusCumulativeEnergy
+import GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy
 import GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry
 import GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula
 
