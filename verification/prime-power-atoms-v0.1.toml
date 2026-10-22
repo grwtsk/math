@@ -1,0 +1,114 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "moment-prime-power-03-v0.1"
+owner_issue = 478
+repository = "grwtsk/math"
+stack_parent_pr = 474
+base_revision = "f959e93a97170efa96c5edcc52dcc18964bf6156"
+base_tree = "e735fed922da0f6fe35dc136f09706dbc719bf61"
+branch = "research/478-prime-power-atoms-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+inherited_target = "verification/prime-exponent-scale-v0.1.toml"
+# Original parent target at base_revision has blob "c4c9ba01a12ca69b403d1332e9fb58bcdc7522b6".
+inherited_target_blob = "d7e2c4f8ef987ba5fb9e554098b18ff3f0d265b0"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PositiveExponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerAtom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerModule",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.atom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.unitAtom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.squareAtom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.logLocation",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapse",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.unitAtomSection",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapse_unitAtomSection",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapse_surjective",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapseKernelWitness",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapseKernelWitness_ne_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapseKernelWitness_mem_kernel",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapse_not_injective",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.FactorsThroughCollapse",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.factorsThroughCollapse_exponent_linear",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.squaredExponentReadout",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.squaredExponentReadout_not_factors",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.logTestReadout",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.logTest_factorization_requires_prime_ray_linearity",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerWitnessStage",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.primePowerDynamicWitnessChannel",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.atom_collapse_information_loss",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.nonlinear_readout_rejected",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.triangle_remains_three",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.unitAtom_prime",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.squareAtom_prime",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.unitAtom_exponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.squareAtom_exponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.atomCollapseHom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapse_single",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.unitAtomSection_single",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.squareAtom_ne_unitAtom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.collapseKernelWitness_apply_square",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerWitnessStage.WitnessIndex",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.square_atom_distinct_from_two_unit_atoms",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.square_atom_and_two_unit_atoms_same_collapse",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.collapse_has_section",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.twoAtomStage",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.twoAtomStage_card",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.Checks.no_triangle_fin_four",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerAtom.mk",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerAtom.prime",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerAtom.exponent",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerWitnessStage.mk",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.PrimePowerWitnessStage.atoms",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.instDecidableEqPrimePowerAtom",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms.instFintypeWitnessIndex",
+]
+
+hostile_controls = [
+  "one p^2 atom is not two p atoms before collapse",
+  "the same two sources have equal exponent collapse",
+  "collapse is not injective",
+  "quadratic exponent readout cannot factor through collapse",
+  "general log tests require a separately proved prime-ray linearity law",
+  "finite atom stage populates only the fourth witness channel",
+  "triangle remains Fin 3 rather than Fin 4"
+]
+
+nonclaims = [
+  "no prime number theorem",
+  "no explicit-formula theorem",
+  "no prime-distribution estimate",
+  "no Weil-form comparison",
+  "no OpenAI Hecke proof transport",
+  "no zero-free threshold improvement",
+  "no Riemann Hypothesis claim"
+]
+
+next_obstruction = "Attach an independently defined arithmetic readout (for example the exact von-Mangoldt/test-function coefficient) to the prime-power atom module and compare it to one named quadratic consumer without collapsing the source first."
+
+[[module]]
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimePowerAtoms.lean"
+# Original pre-repair blob = "6ecc767068c56c9ba703b3dc8827d57623bd11f1".
+blob = "ca25892174bf9e483025f5126f1de1041fc89f07"
+
+[[module]]
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/Checks/PrimePowerAtomControls.lean"
+# Original pre-repair blob = "acdbb24ea9d8106c45495573679e6f8c8fa58a33".
+blob = "7489c594068507ce1a9909c29d0a520cc2d6fba4"
+
+[[module]]
+path = "GRWTSK/Interfaces/PrimePowerAtomCore.lean"
+# Original pre-repair blob = "23b6a64c1db250ec818b287c55e15b907b84573e".
+blob = "a248d7ba63d7b80913ab8c1019a7277ad39bae1c"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/ArithmeticFunctions/prime-power-atoms.md"
+blob = "013b17afe7798f2e2a2646586e63577242cffdea"
