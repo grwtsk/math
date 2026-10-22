@@ -30,7 +30,8 @@ status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/concrete-newton-fifth-block-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "059192ae32044b535f4b4d207c0d8bd6011d3afe".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "88558373ab8c101a7b8a4f474cb3d7c0b39fd143"
+# Original pre-repair inherited_target_blob = "88558373ab8c101a7b8a4f474cb3d7c0b39fd143".
+inherited_target_blob = "fcb2de76703e4c81a9cbd4e7c7de03b323343f2c"
 receipt_policy = "No execution authority; evidence and applicable authorization remain external."
 
 [trust]

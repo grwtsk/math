@@ -33,7 +33,8 @@ status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/rational-power-evaluation-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "05a5dfbdad95a1fd8b71cd62f22f06a879f36b9d".
 # Current pin binds the revised static target; no acceptance is inferred.
-inherited_target_blob = "0eb7d05bc76d7948b476a975a742237cbcf24308"
+# Original pre-repair inherited_target_blob = "0eb7d05bc76d7948b476a975a742237cbcf24308".
+inherited_target_blob = "d9625821a766f7914f025e96771fb16030e9b58f"
 receipt_policy = "Bind exact new commit/tree externally; this static target represents no execution."
 
 [trust]

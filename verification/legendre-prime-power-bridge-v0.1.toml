@@ -98,7 +98,8 @@ status = "SOURCE_PRESENT_REPLAY_REQUIRED"
 
 [[inherited_sources]]
 name = "GRWTSK.NumberTheory.Primes.LandauStatements"
-source_blob = "41aa479be730fc09defba57576f9af0f09415306"
+# Original pre-repair source_blob = "41aa479be730fc09defba57576f9af0f09415306".
+source_blob = "c6efd023b4ca69c68f0a3b8022c67f656a12d546"
 status = "SOURCE_PRESENT_REPLAY_REQUIRED"
 
 [[inherited_sources]]

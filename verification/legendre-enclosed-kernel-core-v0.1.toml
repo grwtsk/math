@@ -32,7 +32,8 @@ lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/legendre-log-budget-core-v0.1.toml"
-inherited_target_blob = "c8d98d6eed627c565e6b26f8d1e03a5cbd1086f7"
+# Original pre-repair inherited_target_blob = "c8d98d6eed627c565e6b26f8d1e03a5cbd1086f7".
+inherited_target_blob = "7ed46408358786a62108a0801bc0bb4b2a3fa927"
 receipt_revision_policy = "Bind the actual new commit, tree and this manifest blob externally. Source manifests and parent evidence do not accept this head."
 inventory_policy = "These are source names and blobs, not elaborated types. Report every declaration in listed modules and the complete transitive import/type/trust closure."
 
@@ -93,7 +94,8 @@ disposition = "INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.NumberTheory.Primes.LandauStatements"
 path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
-source_blob = "41aa479be730fc09defba57576f9af0f09415306"
+# Original pre-repair source_blob = "41aa479be730fc09defba57576f9af0f09415306".
+source_blob = "c6efd023b4ca69c68f0a3b8022c67f656a12d546"
 origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
 disposition = "INHERITED_SOURCE"
 
