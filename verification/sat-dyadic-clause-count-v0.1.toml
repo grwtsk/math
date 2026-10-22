@@ -43,12 +43,12 @@ unconditional_rh_proved = false
 [[modules]]
 name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability.BooleanClauseCounting"
 path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Satisfiability/BooleanClauseCounting.lean"
-blob = "8d2e6665d5677eb42bd86a221ec6a3ff9c7b338b"
+blob = "c78a2fbd94e8728797912d926563f8d4a39b3d33"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedDyadicThreshold"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedDyadicThreshold.lean"
-blob = "8464b0c8fad6923c12c931e445a7066783c05409"
+blob = "02c6d42996bcc3cf54a16dc811583ea39497cdea"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ClauseIndexedDyadicThresholdControls"
