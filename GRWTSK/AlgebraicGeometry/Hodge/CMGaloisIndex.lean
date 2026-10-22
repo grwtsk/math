@@ -64,6 +64,36 @@ def CMOddSignRow.toOddSignRow
   isSign := v.isSign
   odd := v.odd
 
+/-- A sign row invariant under the selected central involution. Such rows
+descend to conjugate-pair / totally-real indexing. -/
+structure CMEvenSignRow
+    (G : Type*) [Group G] (C : CentralInvolution G) where
+  value : G → ℤ
+  isSign : ∀ g, IsSign (value g)
+  invariant : ∀ g, value (C.conj g) = value g
+
+/-- The real rescaling sign demanded by two odd rows. The minus sign matches
+the CM polarization convention `-v(g) * Im(g xi) > 0`. -/
+def rescalingSign
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v seed : CMOddSignRow G C) :
+    CMEvenSignRow G C where
+  value g := -(v.value g * seed.value g)
+  isSign g := by
+    rcases v.isSign g with hv | hv <;>
+    rcases seed.isSign g with hs | hs <;>
+    simp [hv, hs, IsSign]
+  invariant g := by
+    rw [v.odd, seed.odd]
+    ring
+
+/-- The rescaling sign is constant on the two-element conjugate orbit. -/
+theorem rescalingSign_conj
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v seed : CMOddSignRow G C) (g : G) :
+    (rescalingSign v seed).value (C.conj g) =
+      (rescalingSign v seed).value g :=
+  (rescalingSign v seed).invariant g
 /-- Pointwise four-label balance for CM-indexed sign rows. -/
 def CMFourBalance
     {G : Type*} [Group G] {C : CentralInvolution G}
