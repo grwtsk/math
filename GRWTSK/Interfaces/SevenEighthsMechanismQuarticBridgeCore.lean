@@ -24,6 +24,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticChannelPackingCon
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticFactorizationControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftCoefficientDecayControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEndpointControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEnclosureControls
 
 set_option autoImplicit false
 
