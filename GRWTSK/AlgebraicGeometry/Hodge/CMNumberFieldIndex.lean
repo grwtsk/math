@@ -102,7 +102,7 @@ number field with its canonical complex conjugation. -/
 theorem fourBalance_twoTwoSignProfile
     (v₁ v₂ v₃ v₄ : OddSignRow E)
     (hbal : FourBalance E v₁ v₂ v₃ v₄) :
-    CMFourBalance.HasTwoTwoSignProfile
+    GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.HasTwoTwoSignProfile
       v₁.toOddSignRow v₂.toOddSignRow v₃.toOddSignRow v₄.toOddSignRow :=
   CMGaloisIndex.cmFourBalance_twoTwoSignProfile v₁ v₂ v₃ v₄ hbal
 end
