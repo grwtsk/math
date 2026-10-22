@@ -1,0 +1,251 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "chowla-sofic-cyclic-bernoulli-triangle-685-v0.1"
+owner_repository = "grwtsk/math"
+issue = 685
+parent_issue = 675
+related_issues = [630, 654, 658, 667, 628, 635, 100, 121, 168, 441, 453, 516, 15]
+route_id = "FINITE_PATTERN_EVENT_IDENTIFICATION_TO_CYCLIC_BERNOULLI_TV"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicBernoulliComparison"
+build_target = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicBernoulliComparison"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "fae6a751437029b0bf6dd84c4c73b4dcfac5d6c7"
+review_parent_tree = "03dc391479ca1f1a0a324c1b59c0e543219e737a"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+pinned_lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+new_module_path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/CyclicBernoulliComparison.lean"
+new_module_git_blob = "fcf3bce39d49ea7b5ddb62189a754bf2693aae32"
+new_module_namespace = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli"
+mathematical_note_path = "docs/reviews/chowla-sofic-cyclic-bernoulli-comparison-685.md"
+mathematical_note_git_blob = "b29b883009990912162adaa7f43474e32d14de65"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+parent_walsh_bernoulli_TV_elaboration_verified = false
+parent_cyclic_seam_elaboration_verified = false
+event_law_equivalence_kernel_accepted = false
+finite_TV_triangle_kernel_accepted = false
+finite_cyclic_to_uniform_comparison_kernel_accepted = false
+uniform_law_is_not_empirical_sample = true
+source_pattern_matching_exact = true
+empty_coordinate_type_supported = true
+positive_horizon_required = true
+seam_bound_r_le_N_required = true
+all_selected_shift_le_r_required = true
+ordinary_arithmetic_moments_from_true_source_only = true
+source_liouville_adapter_imported = false
+full_chowla_cancellation_proved = false
+bernoulli_limit_proved = false
+sofic_local_to_global_operator_proved = false
+growing_shift_all_depth_uniform_energy_proved = false
+spectral_GUE_or_RH_proved = false
+empirical_event_interpretations = "root-count and complete finite pattern-count views; exactly identified with finite sum interchange"
+full_event_alphabet = "all Boolean predicates on the complete selected shift subtype"
+source_sequence = "single arbitrary a : Nat -> Bool"
+ordinary_source_argument = "n+h"
+cyclic_source_argument = "(n+h)%N"
+cyclic_seam = "Finset.Ico (N-r) N"
+finite_target = "TV(cyclic_N,H,uniform_H) <= 0.5 * Real.sqrt(energy_ordinary_N,H) + r/N"
+analytic_estimate_supplied = false
+conditional_limit_claimed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicBernoulliComparison"
+authored_declaration_count = 10
+authored_definition_count = 3
+authored_theorem_count = 7
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBernoulliTV", "Mathlib"]
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBernoulliTV.lean"
+git_blob = "2ebb845a9c71ef949d12f23fabdd0d8e5e44e8bd"
+status = "STACKED_PARENT_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshEnergy.lean"
+git_blob = "a2124e2efafc96320404421bc9c875f83bf8d16b"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/CyclicWindowSeam.lean"
+git_blob = "b94fc48280da575c9f0466cd64a3e1a1c38bb2f7"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FinitePatternBoundaryTV.lean"
+git_blob = "8087556eaff5a988caba7a2ec89b5f4607daa8ca"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+git_blob = "afa3ef31687182ebccf1877aeddb1e3647c7b935"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_targets]]
+path = "verification/chowla-sofic-bernoulli-tv-675-v0.1.toml"
+git_blob = "05310afc85f4923274aa9a6d23abe12152ee812b"
+status = "PARENT_PASSIVE_TARGET_NOT_VERIFICATION_RECEIPT"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.fullPattern_match_indicator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.patternCountOn_univ_eq_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.sum_patternCountOn_event_eq_rootCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.empiricalEvent_eq_sum_empiricalPatterns"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.uniformPatternEventMass"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.uniformPatternEventDeviation_eq_rooted"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.empiricalVsUniformTV_triangle"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.ordinarySelected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.cyclicSelected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicBernoulli.cyclicEmpiricalVsUniformTV_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-root-denominator"
+requirement = "All empirical probability comparisons require |R|>0. A zero-root normalization cannot be passed as a probability."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-coordinate-type"
+requirement = "At no selected shifts, the complete pattern space is singleton; no fictitious nonempty sign dimension or energy can be inserted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-pattern-indicator"
+requirement = "The equality indicator must be a product over ALL selected coordinates and equivalent to exact full-function equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-Fubini-completeness"
+requirement = "Exchange sums over every original root and every full Boolean pattern; reject a partial/sample-only pattern enumeration."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empirical-law-identity"
+requirement = "The parent root-event empiricalEvent and pattern-frequency sum must be connected by a theorem, not assumed definitionally equal."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "uniform-not-sampled"
+requirement = "Uniform event mass is a mathematically specified fair Bernoulli law, not a fabricated periodic or independently sampled root distribution."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-event-supremum"
+requirement = "Both inherited empiricalVsUniformTV and finiteEventTV must be compared over the SAME family of every Boolean event."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "triangle-sign-and-orientation"
+requirement = "Triangle inequality direction is cyclic-to-uniform, bounded by cyclic-vs-ordinary plus ordinary-vs-uniform; retain absolute values."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "rational-real-cast"
+requirement = "All root-count/pattern-count, normalization, and uniform-mass identities must preserve exact rational-to-real casts."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam-endpoints"
+requirement = "The seam is Ico (N-r) N with strict off-seam n < N-r; left endpoint is exceptional."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-original-source"
+requirement = "Ordinary a(n+h) and cyclic a((n+h)%N) must read one identical input sequence a, not unrelated Bernoulli labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "selected-shift-subtype"
+requirement = "All events act on functions indexed by exactly {h : Nat // h in H}; do not silently change coordinate sets."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-growth-shortcut"
+requirement = "Finite TV <= sqrt(E)/2 + r/N does not imply convergence if correlations/r may grow with the horizon."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-pairwise-upgrade"
+requirement = "Complete energy includes all nonempty subset orders; two-point estimates alone cannot be substituted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "liouville-binding-open"
+requirement = "This generic branch does not import PR #647's source binder; the actual arithmetic argument is n+1+h only after an explicit guarded specialization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "mobius-zero-separate"
+requirement = "Mobius values at nonsquarefree positive inputs can be zero and cannot be encoded by an unguarded binary Liouville adapter."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sofic-not-spectral"
+requirement = "Finite cyclic pattern TV gives no sofic operator convergence, microscopic GUE, zeta zero divisor identification, or RH theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "verification-trust"
+requirement = "SOURCE_DRAFT, textual proof, mathematical derivation and passive specification are NOT_RUN and NOT_KERNEL_AUDITED without independent exact-head replay."
+status = "NOT_RUN"
