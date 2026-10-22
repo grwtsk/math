@@ -1,0 +1,60 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quartic-winding-split-782-v0.1"
+owner_repository = "grwtsk/math"
+issue = 782
+parent_issue = 779
+parent_pr = 780
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_QUARTIC_WINDING_SPLIT_SOURCE_DRAFT_ZERO_WINDING_AND_WRAP_CANCELLATION_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitQuarticWindingSplit"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitQuarticWindingSplit"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-quartic-diagonal-obstruction-779-20261022"
+stacked_parent_revision = "e8d4a7d700f26590eee4d39be7f432cf2f270f1c"
+candidate_branch = "research/rh-quartic-winding-split-782-20261022"
+theorem_source_commit = "c97939d233325c7ad8590e8019cfb62913172bbc"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitQuarticWindingSplit.lean"
+theorem_source_git_blob = "43f9d2c288db3fc1fcdf980f05cbd122c408ae79"
+mathematical_note_commit = "87951ffb14558b2041e3b687727131177e41412b"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-quartic-winding-split.md"
+mathematical_note_git_blob = "961075057d157e0aefcd8791a77f02a65ca601f9"
+
+[winding_split]
+zero_winding = "parityHalfShiftSignedQuarticZeroWinding"
+wrap = "parityHalfShiftSignedQuarticWrap"
+nonzero_winding_witness = "wrapCollision_exists_nonzero_winding"
+pointwise_split = "quarticCollisionTerm_eq_zeroWinding_add_wrap"
+full_split = "parityHalfShiftSignedQuarticCollision_eq_zeroWinding_add_wrap"
+literal_diagonal_retained_inside_zero_winding = true
+
+[evidence_states]
+source_draft = true
+zero_winding_class_scripted = true
+wrap_class_scripted = true
+nonzero_integer_winding_scripted = true
+signed_split_scripted = true
+zero_winding_cancellation_proved = false
+wrap_cancellation_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+riemann_hypothesis_proved = false
+
+[open_obligations]
+prove_zero_winding_signed_quartic_cancellation = true
+prove_nonzero_winding_wrap_cancellation = true
+construct_two_unit_analytic_supplier = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+zero_winding_estimate_proved = false
+wrap_estimate_proved = false
+large_sieve_adapter_constructed = false
+grh_proved = false
+riemann_hypothesis_proved = false
