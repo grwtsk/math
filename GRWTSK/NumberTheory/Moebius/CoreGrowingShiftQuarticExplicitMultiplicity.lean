@@ -147,6 +147,7 @@ theorem coreGrowingShiftQuarticDepthSupport_eq_explicit
     simp only [coreGrowingShiftQuarticDepthSupport,
       Finset.mem_filter] at ht
     rcases ht with ⟨_htcore, hactive, hsep⟩
+    rcases hactive with ⟨hlow, _hupp⟩
     have hL : 1 ≤ harmonicShiftLower j t := by
       unfold harmonicShiftLower
       exact le_max_left _ _
@@ -167,15 +168,15 @@ theorem coreGrowingShiftQuarticDepthMultiplicity_eq_supportCard
   · intro x hx
     have hactive := (Finset.mem_filter.mp hx).1
     have hbox := (Finset.mem_filter.mp hx).2
-    rcases x with ⟨t, ⟨k, ⟨d', a'⟩⟩⟩
+    rcases x with ⟨t, ⟨k, ⟨d0, a0⟩⟩⟩
     simp only [coreGrowingShiftQuarticActiveCells,
       Finset.mem_sigma] at hactive
-    rcases hactive with ⟨ht, hk, hd', ha'⟩
+    rcases hactive with ⟨ht, hk, hdmem, hamem⟩
     simp only [coreGrowingShiftQuarticActiveCellBoxIndex,
       Prod.mk.injEq] at hbox
     rcases hbox with ⟨hh, hdeq, haeq⟩
-    subst d'
-    subst a'
+    subst d0
+    subst a0
     have hkN : k < harmonicShiftCount j t :=
       Finset.mem_range.mp hk
     have hrange :
@@ -183,15 +184,15 @@ theorem coreGrowingShiftQuarticDepthMultiplicity_eq_supportCard
           h < harmonicShiftUpper j t := by
       unfold harmonicShiftCount at hkN
       omega
-    rw [hh] at hd'
+    rw [hh] at hdmem
     apply Finset.mem_filter.mpr
-    exact ⟨ht, hrange, hd', Finset.mem_range.mp ha'⟩
+    exact ⟨ht, hrange, hdmem, Finset.mem_range.mp hamem⟩
   · intro x hx y hy hdepth
     have hxq := (Finset.mem_filter.mp hx).2
     have hyq := (Finset.mem_filter.mp hy).2
     rcases x with ⟨tx, ⟨kx, ⟨dx, ax⟩⟩⟩
     rcases y with ⟨ty, ⟨ky, ⟨dy, ay⟩⟩⟩
-    simp only at hdepth
+    change tx = ty at hdepth
     subst ty
     have hindices :
         (harmonicShiftLower j tx + kx, dx, ax) =
