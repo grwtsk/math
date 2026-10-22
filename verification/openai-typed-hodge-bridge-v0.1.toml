@@ -938,3 +938,27 @@ nonclaims = [
   "atomic paired correction only",
   "full multi-column termination/connectivity remains open"
 ]
+
+
+[[local_target]]
+name = "paired switch strictly decreases selected-column mismatch measure"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.columnMismatchCount_switchConjugatePair_lt"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "paired opposite mismatch at selected column"
+]
+nonclaims = [
+  "well-founded measure only",
+  "does not yet package recursive iteration or a complete finite switch sequence"
+]
+
+[[local_target]]
+name = "paired switch preserves mismatch count on unrelated columns"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.columnMismatchCount_switchConjugatePair_eq_of_ne"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "outer induction invariant only",
+  "no Hodge or algebraicity claim"
+]
