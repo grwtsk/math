@@ -114,6 +114,82 @@ theorem NonzeroScalarCompositionData.endpoint_mem
 
 end NonzeroScalarRecovery
 
+section PositiveMiddlePairing
+
+variable {V : Type*} [AddCommGroup V] [Module ℂ V]
+
+/-- Abstract positivity package for the middle-factor pairing in the
+transition-composition formula.
+
+This is deliberately weaker than a geometric Hodge--Riemann theorem: it only
+records the exact consequences needed to prove one scalar pairing is nonzero. -/
+structure PositiveConjugatePairing where
+  pairing : V → V → ℂ
+  conjugatePartner : V → V
+  energy : V → ℝ
+  pairing_conjugate :
+    ∀ v, pairing v (conjugatePartner v) = (energy v : ℂ)
+  pairing_smul_right :
+    ∀ v c w, pairing v (c • w) = c * pairing v w
+  energy_pos :
+    ∀ {v}, v ≠ 0 → 0 < energy v
+
+/-- Positivity makes the pairing with the conjugate partner nonzero. -/
+theorem PositiveConjugatePairing.pairing_conjugate_ne_zero
+    (P : PositiveConjugatePairing V)
+    {v : V} (hv : v ≠ 0) :
+    P.pairing v (P.conjugatePartner v) ≠ 0 := by
+  rw [P.pairing_conjugate v]
+  exact_mod_cast (P.energy_pos hv).ne'
+
+/-- If the second middle factor is a nonzero scalar multiple of the conjugate
+partner of the first, then the transition scalar q is nonzero.
+
+This is the exact formal implication used in the manuscript after the
+geometric Hodge--Riemann positivity and scalar-conjugation identifications have
+been supplied. -/
+theorem PositiveConjugatePairing.pairing_scaled_conjugate_ne_zero
+    (P : PositiveConjugatePairing V)
+    {beta : V} (hbeta : beta ≠ 0)
+    {c : ℂ} (hc : c ≠ 0) :
+    P.pairing beta (c • P.conjugatePartner beta) ≠ 0 := by
+  rw [P.pairing_smul_right]
+  exact mul_ne_zero hc (P.pairing_conjugate_ne_zero hbeta)
+
+/-- Exact local package for one manuscript middle-factor scalar q_i.
+
+The geometric supplier still has to identify gamma with the scaled conjugate
+partner and the cup/integration pairing with pairing. -/
+structure MiddlePairingNonvanishingData where
+  pairingData : PositiveConjugatePairing V
+  beta : V
+  beta_ne_zero : beta ≠ 0
+  scale : ℂ
+  scale_ne_zero : scale ≠ 0
+  gamma : V
+  gamma_eq : gamma = scale • pairingData.conjugatePartner beta
+
+/-- The middle pairing q_i is nonzero once the two geometric identifications
+have been packaged. -/
+theorem MiddlePairingNonvanishingData.pairing_ne_zero
+    (D : MiddlePairingNonvanishingData V) :
+    D.pairingData.pairing D.beta D.gamma ≠ 0 := by
+  rw [D.gamma_eq]
+  exact D.pairingData.pairing_scaled_conjugate_ne_zero
+    D.beta_ne_zero D.scale_ne_zero
+
+/-- A finite product of nonzero middle pairing scalars is nonzero. -/
+theorem product_middlePairing_ne_zero
+    {J : Type*} [Fintype J]
+    (q : J → ℂ)
+    (hq : ∀ j, q j ≠ 0) :
+    (∏ j, q j) ≠ 0 := by
+  exact Finset.prod_ne_zero_iff.mpr (by
+    intro j _
+    exact hq j)
+
+end PositiveMiddlePairing
+
 /-- Geometric composition of consecutive algebraic transitions.
 
 This abstracts the manuscript's pullback/cup-product/pushforward construction,
