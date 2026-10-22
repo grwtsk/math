@@ -5,6 +5,7 @@ Mathlib retains its upstream authorship and Apache-2.0 license. -/
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics
 import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity
+import GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization
 
 /-!
 # Geometric supplier boundary for finite four-factor switch chains
@@ -289,6 +290,82 @@ theorem FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine
         σ tensor) ∈ D.transportedLine σ := by
   rw [D.scalar_conjugate_eq σ]
   exact Submodule.subset_span (Set.mem_singleton _)
+
+section ActualWeightOneFactorTyping
+
+open scoped TensorProduct
+
+/-- One canonical embedding-line vector, interpreted in an actual weight-one
+CM realization.
+
+The actual Hodge type is no longer supplied: it follows locally from the
+realization's canonical tensor-to-H1 comparison and the canonical eigenspace
+membership. -/
+structure CanonicalEmbeddingFactorActualTyping
+    (E : Type*) [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    (v : CMNumberFieldIndex.OddSignRow E) where
+  X : CMArchimedeanPositivity.SignControlledXi E v
+  realization :
+    CMWeightOneRiemannRealization.WeightOneCMRealization E v X
+  character : E ≃ₐ[ℚ] E
+  vector : E ⊗[ℚ] E
+  vector_mem :
+    vector ∈ CMRegularBaseChange.embeddingEigenspace
+      (k := ℚ) character.toAlgHom
+
+/-- The canonical factor has the actual Hodge type dictated by its CM sign. -/
+theorem CanonicalEmbeddingFactorActualTyping.actual_type
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v : CMNumberFieldIndex.OddSignRow E}
+    (D : CanonicalEmbeddingFactorActualTyping E v) :
+    D.realization.IsOfType
+      (D.realization.canonicalTensorActualH1Comparison.toActual D.vector)
+      (CMEmbeddingLines.typeOfSign (v.value D.character)) := by
+  exact
+    D.realization.canonicalTensorActualH1Comparison.isOfType_typeOfSign
+      D.character D.vector_mem
+
+/-- Four independently realized canonical factors attached to a balanced
+four-row CM profile.
+
+The carriers of the four actual H1 realizations may differ; this record keeps
+that dependence explicit instead of forcing an artificial common carrier. -/
+structure FourCanonicalFactorsActualTyping
+    (E : Type*) [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    (v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E) where
+  first : CanonicalEmbeddingFactorActualTyping E v₁
+  second : CanonicalEmbeddingFactorActualTyping E v₂
+  third : CanonicalEmbeddingFactorActualTyping E v₃
+  fourth : CanonicalEmbeddingFactorActualTyping E v₄
+
+/-- Every member of a four-factor actual-typing package carries the genuine
+weight-one Hodge type prescribed by its row sign. -/
+theorem FourCanonicalFactorsActualTyping.all_actual_types
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    (D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄) :
+    D.first.realization.IsOfType
+        (D.first.realization.canonicalTensorActualH1Comparison.toActual
+          D.first.vector)
+        (CMEmbeddingLines.typeOfSign (v₁.value D.first.character)) ∧
+    D.second.realization.IsOfType
+        (D.second.realization.canonicalTensorActualH1Comparison.toActual
+          D.second.vector)
+        (CMEmbeddingLines.typeOfSign (v₂.value D.second.character)) ∧
+    D.third.realization.IsOfType
+        (D.third.realization.canonicalTensorActualH1Comparison.toActual
+          D.third.vector)
+        (CMEmbeddingLines.typeOfSign (v₃.value D.third.character)) ∧
+    D.fourth.realization.IsOfType
+        (D.fourth.realization.canonicalTensorActualH1Comparison.toActual
+          D.fourth.vector)
+        (CMEmbeddingLines.typeOfSign (v₄.value D.fourth.character)) :=
+  ⟨D.first.actual_type,
+    D.second.actual_type,
+    D.third.actual_type,
+    D.fourth.actual_type⟩
+
+end ActualWeightOneFactorTyping
 
 /-- Generic fourfold Hodge tensor-product compatibility.
 
