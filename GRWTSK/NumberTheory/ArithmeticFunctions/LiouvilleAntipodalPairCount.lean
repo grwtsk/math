@@ -301,6 +301,39 @@ def shiftPowersetEquiv (H : Finset ℕ) :
     apply Subtype.ext
     exact shiftSubsetValues_ofValues H T hT
 
+/-- Subtype-character products and their natural-number value sets
+have exactly the same factors. This is the missing coefficient-level
+compatibility for the full powerset equivalence. -/
+theorem shiftSubsetValues_prod
+    (H : Finset ℕ) (S : Finset {h : ℕ // h ∈ H})
+    (f : ℕ → ℚ) :
+    (∏ h ∈ S, f h.val) =
+      ∏ h ∈ shiftSubsetValues H S, f h := by
+  classical
+  unfold shiftSubsetValues
+  rw [Finset.prod_image]
+  · rfl
+  · intro a ha b hb hab
+    exact Subtype.ext hab
+
+/-- A character sum over ALL ordinary subsets of H is exactly a
+character sum over the complete subtype powerset. -/
+theorem sum_powerset_eq_subtype_sum
+    (H : Finset ℕ) (f : Finset ℕ → ℚ) :
+    (∑ T ∈ H.powerset, f T) =
+      ∑ S : Finset {h : ℕ // h ∈ H}, f (shiftSubsetValues H S) := by
+  classical
+  let e := shiftPowersetEquiv H
+  have hsum :
+      (∑ T : {T : Finset ℕ // T ⊆ H}, f T.val) =
+        ∑ S : Finset {h : ℕ // h ∈ H}, f (shiftSubsetValues H S) := by
+    exact Equiv.sum_comp e (fun T => f T.val)
+  calc
+    (∑ T ∈ H.powerset, f T) =
+        ∑ T : {T : Finset ℕ // T ⊆ H}, f T.val := by
+      exact Finset.sum_attach H.powerset (fun T => f T)
+    _ = _ := hsum
+
 /-- The finite signed interaction equals the normalized count of
 antipodal root pairs. This theorem uses the complete Walsh character
 expansion, including the empty character, before subtracting one.
