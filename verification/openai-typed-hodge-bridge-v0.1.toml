@@ -468,7 +468,7 @@ result_family = 32
 evidence = "EXTERNAL_MANUSCRIPT"
 source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
 labels = ["eq:cm-types"]
-statement_role = "existence of xi with the prescribed simultaneous archimedean sign profile beyond generic anti-invariance, identification of the locally positive coordinate energy with the complexified trace pairing i psi_xi(u,conj u), integral lattice scaling, and Riemann realization by B(v)"
+statement_role = "existence of xi with the prescribed simultaneous archimedean sign profile beyond generic anti-invariance, identification of the local coordinate Weil form with the base-changed rational trace pairing under the Hodge conjugation/Weil operator, integral lattice scaling, and Riemann realization by B(v)"
 local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization"
 status = "OPEN"
 nonclaims = [
@@ -567,4 +567,18 @@ nonclaims = [
   "coordinate-energy positivity is a separate local theorem",
   "no equality yet between coordinate energy and complexified i psi_xi",
   "no integral lattice/Riemann criterion"
+]
+
+
+[[local_target]]
+name = "coordinate Weil form equals positive energy"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.coordinateWeilForm_eq_energy"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "coordinate Weil form is not yet proved equal to the base-changed rational trace pairing under Hodge conjugation",
+  "no integral lattice or Riemann criterion"
 ]
