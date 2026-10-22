@@ -32,26 +32,18 @@ theorem divisor_two_mul_lt_of_ne
     (hrne2d : r ≠ 2 * d)
     (hrned : r ≠ d) :
     r < d := by
-  have hrpos : 1 ≤ r := Nat.one_le_iff_ne_zero.mpr (by
-    intro hr0
-    subst r
-    simp at hrdvd)
-  have hrlt : r < 2 * d := Nat.lt_of_le_of_ne
-    (Nat.le_of_dvd (by omega) hrdvd) hrne2d
-  by_contra hnot
-  have hdr : d < r := by omega
   obtain ⟨k, hk⟩ := hrdvd
-  have hkpos : 1 ≤ k := by
-    by_contra hk0
-    have : k = 0 := by omega
-    subst k
-    simp at hk
-  have hklt3 : k < 3 := by
-    rw [hk] at hrlt
-    nlinarith
-  have hk2 : k = 2 := by omega
-  rw [hk2] at hk
-  nlinarith
+  have hk0 : k ≠ 0 := by
+    intro hzero
+    rw [hzero, Nat.mul_zero] at hk
+    omega
+  have hk1 : k ≠ 1 := by
+    intro hone
+    rw [hone, Nat.mul_one] at hk
+    exact hrne2d hk.symm
+  have hk2 : 2 ≤ k := by omega
+  have hmul : r * 2 ≤ r * k := Nat.mul_le_mul_left r hk2
+  omega
 
 /-- Triangular row identity: if all lower coefficients vanish, row 2d is
 exactly a(d)*log 2. The coefficient at 2d is killed by log 1. -/
@@ -62,7 +54,8 @@ theorem mobiusLogDivisorRow_two_mul_eq
     mobiusLogDivisorRow a (2 * d) = a d * Real.log 2 := by
   unfold mobiusLogDivisorRow
   rw [Finset.sum_eq_single d]
-  · norm_num
+  · rw [Nat.mul_div_cancel 2 (by omega : 0 < d)]
+    norm_num
   · intro r hr hrne
     have hrdvd : r ∣ 2 * d := Nat.dvd_of_mem_divisors hr
     by_cases hr2d : r = 2 * d
@@ -73,7 +66,7 @@ theorem mobiusLogDivisorRow_two_mul_eq
       have hrpos : 1 ≤ r := Nat.pos_of_mem_divisors hr
       simp [hlower r hrpos hrlt]
   · intro hdnot
-    exact (hdnot (Nat.mem_divisors.mpr ⟨by omega, by omega⟩)).elim
+    exact (hdnot (Nat.mem_divisors.mpr ⟨⟨2, Nat.mul_comm 2 d⟩, by omega⟩)).elim
 
 /-- Algebraic reconstruction from rows through 2N: zero divisor-log output on
 1..2N forces the first N input coefficients to vanish. No support restriction
@@ -112,8 +105,8 @@ theorem truncatedMobiusLogConvolution_twoN_reconstruct
     rw [truncated_eq_mobiusLogDivisorRow hn hn2N,
       truncated_eq_mobiusLogDivisorRow hn hn2N] at h
     unfold mobiusLogDivisorRow c
-    rw [← Finset.sum_sub_distrib]
     simp_rw [sub_mul]
+    rw [Finset.sum_sub_distrib]
     unfold mobiusLogDivisorRow at h
     linarith
   intro d hd hdN
