@@ -75,12 +75,12 @@ theorem Sandwich.middle_of_upper_downward
   closed sandwich.middle_le_upper upperCertificate
 
 /-- A nonempty directed path, represented by its transitive edge construction. -/
-inductive Path (edge : EdgeRelation V) : V → V → Prop
+inductive Path (edge : EdgeRelation V) : V → V → Type _
   | single {u v : V} : edge u v → Path edge u v
   | tail {u v w : V} : Path edge u v → edge v w → Path edge u w
 
 /-- Directed paths persist when the edge relation is enlarged. -/
-theorem Path.mono {lower upper : EdgeRelation V}
+noncomputable def Path.mono {lower upper : EdgeRelation V}
     (included : Subrelation lower upper) {u v : V}
     (path : Path lower u v) : Path upper u v := by
   induction path with
@@ -91,23 +91,23 @@ theorem Path.mono {lower upper : EdgeRelation V}
 
 /-- Existence of a directed path between fixed endpoints is upward-closed. -/
 theorem pathProperty_upwardClosed (u v : V) :
-    UpwardClosed (fun edge => Path edge u v) := by
+    UpwardClosed (fun edge => Nonempty (Path edge u v)) := by
   intro lower upper included path
-  exact Path.mono included path
+  exact path.map (Path.mono included)
 
 /-- Every lower path is an actual middle path. -/
-theorem Sandwich.lower_path_to_middle (sandwich : Sandwich V) {u v : V}
+noncomputable def Sandwich.lower_path_to_middle (sandwich : Sandwich V) {u v : V}
     (path : Path sandwich.lower u v) : Path sandwich.middle u v :=
   Path.mono sandwich.lower_le_middle path
 
 /-- Every actual middle path is admitted by the upper relation. -/
-theorem Sandwich.middle_path_to_upper (sandwich : Sandwich V) {u v : V}
+noncomputable def Sandwich.middle_path_to_upper (sandwich : Sandwich V) {u v : V}
     (path : Path sandwich.middle u v) : Path sandwich.upper u v :=
   Path.mono sandwich.middle_le_upper path
 
 /-- A directed relation is acyclic when it has no nonempty path from a vertex to itself. -/
 def Acyclic (edge : EdgeRelation V) : Prop :=
-  ∀ vertex : V, ¬ Path edge vertex vertex
+  ∀ vertex : V, Path edge vertex vertex → False
 
 /-- Acyclicity is preserved by deleting edges. -/
 theorem acyclic_of_subrelation {lower upper : EdgeRelation V}
@@ -173,7 +173,7 @@ structure OrderedControl (V α Payload : Type*) [Preorder α] where
   upper_ordered : OrderedBy frequency sandwich.upper
 
 /-- A certified lower path survives in the actual relation. -/
-theorem OrderedControl.accepts_lower_path [Preorder α]
+noncomputable def OrderedControl.accepts_lower_path [Preorder α]
     (control : OrderedControl V α Payload) {u v : V}
     (path : Path control.sandwich.lower u v) :
     Path control.sandwich.middle u v :=
@@ -190,8 +190,8 @@ theorem OrderedControl.middle_acyclic [Preorder α]
 theorem OrderedControl.certified_path_control [Preorder α]
     (control : OrderedControl V α Payload) {u v : V}
     (path : Path control.sandwich.lower u v) :
-    Path control.sandwich.middle u v ∧ Acyclic control.sandwich.middle :=
-  ⟨OrderedControl.accepts_lower_path control path,
+    Nonempty (Path control.sandwich.middle u v) ∧ Acyclic control.sandwich.middle :=
+  ⟨⟨OrderedControl.accepts_lower_path control path⟩,
     OrderedControl.middle_acyclic control⟩
 
 end GRWTSK.Combinatorics.GraphTheory.RelationSandwich

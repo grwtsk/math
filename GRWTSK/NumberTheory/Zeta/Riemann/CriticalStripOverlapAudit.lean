@@ -217,7 +217,7 @@ theorem composed_bound
       first.boundAt x + second.boundAt x := by
   calc
     |first.defectAt x + second.defectAt x| ≤
-        |first.defectAt x| + |second.defectAt x| := abs_add _ _
+        |first.defectAt x| + |second.defectAt x| := abs_add_le _ _
     _ ≤ first.boundAt x + second.boundAt x :=
       add_le_add
         (first.defect_bound x hleft hmiddle)

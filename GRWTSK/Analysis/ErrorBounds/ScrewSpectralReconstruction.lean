@@ -59,14 +59,16 @@ theorem reconstruction_error_bound
               ‖tailError‖ := norm_add_le _ _
       _ ≤ (‖sourceError + hermiteError + transportError‖ + ‖spectralError‖) +
             ‖tailError‖ := by
-        exact add_le_add_right (norm_add_le _ _) _
+        gcongr
+        exact norm_add_le _ _
       _ ≤ ((‖sourceError + hermiteError‖ + ‖transportError‖) +
               ‖spectralError‖) + ‖tailError‖ := by
-        exact add_le_add_right (add_le_add_right (norm_add_le _ _) _) _
+        gcongr
+        exact norm_add_le _ _
       _ ≤ (((‖sourceError‖ + ‖hermiteError‖) + ‖transportError‖) +
               ‖spectralError‖) + ‖tailError‖ := by
-        exact add_le_add_right
-          (add_le_add_right (add_le_add_right (norm_add_le _ _) _) _) _
+        gcongr
+        exact norm_add_le _ _
   rw [decomposition]
   apply triangle.trans
   unfold Budget.total

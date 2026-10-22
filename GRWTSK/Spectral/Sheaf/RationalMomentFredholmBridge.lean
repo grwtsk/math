@@ -56,7 +56,7 @@ theorem transport_naturality (sheaf : MomentSheaf V edge Stalk)
       ((sheaf.representation target).action moment).comp (sheaf.transport path) := by
   induction path with
   | single arrow =>
-      exact sheaf.naturality arrow moment
+      simpa [transport] using sheaf.naturality arrow moment
   | tail path arrow inductionHypothesis =>
       simp only [transport]
       rw [LinearMap.comp_assoc, inductionHypothesis, ← LinearMap.comp_assoc,

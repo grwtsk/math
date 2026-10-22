@@ -165,8 +165,9 @@ def toDiagonal
     have hre :=
       (Complex.continuous_re.tendsto (form.toFun f f)).comp
         (limit.tendsto_polarized f f)
-    simpa [PositiveGramFamily.diagonal, PositiveGramFamily.gram,
-      WeilHermitianForm.diagonal] using hre
+    convert hre using 1 <;>
+      simp [Function.comp_def, PositiveGramFamily.diagonal,
+        PositiveGramFamily.gram, WeilHermitianForm.diagonal]
 
 /-- Polarized positive-Gram convergence has the same conditional RH endpoint. -/
 theorem riemannHypothesis

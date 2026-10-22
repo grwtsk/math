@@ -163,7 +163,8 @@ structure JetCertificate
       jetPolynomial order center coefficient z + remainder z
   remainder_bound : ∀ z,
     ‖z - center‖ ≤ radius →
-      ‖remainder z‖ ≤ constant * ‖z - center‖ ^ (order + 1)
+      @norm (P → P → ℂ) inferInstance (remainder z) ≤
+        constant * ‖z - center‖ ^ (order + 1)
 
 namespace JetCertificate
 
@@ -199,7 +200,7 @@ structure Enclosure (jet : JetCertificate P order) (z : ℂ) where
 theorem Enclosure.remainder_le
     {jet : JetCertificate P order} {z : ℂ}
     (enclosure : jet.Enclosure z) :
-    ‖jet.remainder z‖ ≤
+    @norm (P → P → ℂ) inferInstance (jet.remainder z) ≤
       jet.constant * ‖jet.displacement z‖ ^ (order + 1) :=
   jet.remainder_bound z enclosure.in_radius
 

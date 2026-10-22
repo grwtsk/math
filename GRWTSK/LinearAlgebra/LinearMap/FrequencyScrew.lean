@@ -43,9 +43,9 @@ theorem operator_apply {V M : Type*} {Stalk : V → Type*}
     [∀ v, AddCommGroup (Stalk v)] [∀ v, Module ℚ (Stalk v)]
     [AddCommGroup M] [Module ℚ M]
     (active : Finset V) (frequency : V → ℚ) (weight : ℚ → ℚ)
-    (observe : ∀ v, Stalk v →ₗ[ℚ] M) (section : ∀ v, Stalk v) :
-    operator active frequency weight observe section =
-      ∑ v ∈ active, weight (frequency v) • observe v (section v) := by
+    (observe : ∀ v, Stalk v →ₗ[ℚ] M) (value : ∀ v, Stalk v) :
+    operator active frequency weight observe value =
+      ∑ v ∈ active, weight (frequency v) • observe v (value v) := by
   classical
   simp [operator]
 
