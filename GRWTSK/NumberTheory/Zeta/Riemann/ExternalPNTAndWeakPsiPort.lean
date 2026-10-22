@@ -119,7 +119,7 @@ theorem chebyshevSqrt_isLittleO_id :
   have hinv :
       Filter.Tendsto (fun x : ℝ => (Real.sqrt x)⁻¹)
         Filter.atTop (nhds (0 : ℝ)) :=
-    Filter.tendsto_inv_atTop_zero.comp hroot
+    tendsto_inv_atTop_zero.comp hroot
   simpa only [Real.sqrt_div_self] using hinv
 
 /-- The source-bound local theorem: a WEAK inclusive PNT input on the
