@@ -1,0 +1,168 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-parity-residue-variance-621-v0.1"
+owner_repository = "grwtsk/math"
+issue = 621
+parent_issue = 617
+parent_pr = 618
+zero_nonzero_issue = 611
+zero_nonzero_pr = 612
+parity_factorization_issue = 607
+parity_factorization_pr = 608
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_PARSEVAL_RESIDUE_VARIANCE_SOURCE_DRAFT_RESIDUE_VARIANCE_SUPPLIER_OPEN_SQUAREFREE_DIAGONAL_NONZERO_L1_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ParityFourierResidueVariance"
+build_target = "GRWTSK.NumberTheory.Moebius.ParityFourierResidueVariance"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-pointwise-mertens-geometric-617-20261021"
+stacked_parent_revision = "0f98cd9101bd57fb193ea4b6655a52c6461e44c0"
+stacked_parent_tree = "24d71a9ba7f5ba7037606518313c08e9a405ff96"
+candidate_branch = "research/rh-parity-residue-variance-621-20261021"
+theorem_source_commit = "d65e429f0c63e8f684fdb5fa21bf8b0205814fb7"
+theorem_source_tree = "032b8a77b0505955d8291a2ad809ac4e8107e922"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ParityFourierResidueVariance.lean"
+theorem_source_git_blob = "80d12207b3194c9ff6b88f041ca963a1fdda6ea8"
+mathematical_note_commit = "39d851f0bafe42b7eabec0a737df0ba60ead9fab"
+mathematical_note_tree = "5ee1914623b558348036cc07129c920e69810f6f"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/parity-fourier-residue-variance.md"
+mathematical_note_git_blob = "aca296d7285fb4d91ea7b5730b8277fdb6f3a59d"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+residue_bucket = "parityMertensResidueBucket"
+residue_energy = "parityMertensResidueEnergy"
+residue_variance = "parityMertensResidueVariance"
+bucket_partition = "sum_parityMertensResidueBucket"
+fourier_regrouping = "parityOnePointMobiusFourierSum_eq_residueBuckets"
+character_orthogonality = "stdAddChar_conj_mul_orthogonality"
+generic_parseval = "stdAddChar_parseval_norm_sq"
+parity_parseval = "sum_norm_sq_parityOnePointMobiusFourierSum"
+zero_mode_subtraction = "normalized_nonzero_parityFourierEnergy_eq_residueVariance"
+variance_nonnegative = "parityMertensResidueVariance_nonneg"
+diagonal_l1 = "paritySquarefreeDiagonalNonzeroFourierL1"
+modulus_majorant = "parityResidueVarianceDiagonalModulusMajorant"
+modulus_comparison = "parityFourierNonzeroModulusMajorant_le_residueVarianceDiagonal"
+endpoint_majorant = "parityResidueVarianceDiagonalEndpointMajorant"
+endpoint_comparison = "parityFourierNonzeroFrequencyEndpointMajorant_le_residueVarianceDiagonal"
+all_scale_supplier = "DyadicNaturalScaleParityResidueVarianceDiagonalBudget"
+nonzero_transport = "nonzeroParityFourierBudget_of_residueVarianceDiagonal"
+natural_scale_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_residueVarianceDiagonal"
+proof_classification = "EXACT_FINITE_ADDITIVE_PARSEVAL_ZERO_MODE_SUBTRACTION_AND_CONDITIONAL_TRANSPORT"
+
+[residue_geometry]
+modulus = "d*d"
+index = "floor(u/2) mod d*d"
+parity_preserved = true
+endpoint_support_preserved = true
+absolute_value_inside_bucket = false
+bucket_sum = "parity Mertens prefix"
+
+[parseval]
+formula = "sum_k abs(S_r(b,d,k))^2 = d^2 * sum_a abs(A_r(b,d,a))^2"
+character = "ZMod.stdAddChar"
+finite_only = true
+large_sieve_used = false
+
+[variance]
+formula = "V_r = sum_a abs(A_r)^2 - M_r(b)^2/d^2"
+nonzero_fourier_formula = "V_r = (1/d^2)*sum_(k!=0) abs(S_r(b,d,k))^2"
+zero_mode_subtracted_exactly = true
+nonnegative = true
+
+[diagonal]
+object = "parityOnePointMobiusFourierDiagonal"
+normalized_nonzero_l1 = "paritySquarefreeDiagonalNonzeroFourierL1"
+kept_separate_from_mobius_variance = true
+estimate_proved = false
+
+[analytic_supplier]
+name = "DyadicNaturalScaleParityResidueVarianceDiagonalBudget"
+formula = "forall delta>0 exists C>=0 forall X=2^j,b in [X,2X), endpointResidueVarianceDiagonalMajorant(b)<=C*X*X^delta"
+inhabited = false
+implies_nonzero_fourier_budget = true
+implies_natural_scale_congruence_l1_with_pointwise_mertens = true
+
+[connections]
+square_modulus_large_sieve_relevant = true
+bombieri_vinogradov_dispersion_relevant = true
+local_fourier_mean_square_relevant = true
+l_function_additive_transport_relevant = true
+named_adapter_constructed = false
+
+[evidence_states]
+source_draft = true
+exact_residue_regrouping_scripted = true
+finite_parseval_scripted = true
+exact_zero_mode_subtraction_scripted = true
+variance_nonnegativity_scripted = true
+nonzero_fourier_to_variance_diagonal_comparison_scripted = true
+residue_variance_supplier_proved = false
+squarefree_diagonal_nonzero_l1_bound_proved = false
+pointwise_mertens_envelope_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParityFourierResidueVariance"
+definition_count = 8
+theorem_script_count = 12
+structure_count = 0
+authored_declaration_count = 20
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensPointwiseToDyadicGeometric.lean"
+git_blob = "870cb01d8a80bc6b5cb9cbf9feaa98670c87597f"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_618"
+
+[[dependencies]]
+source = "Mathlib.Analysis.Fourier.ZMod"
+git_blob = "101a428d82866a93cba10e85c589fe38864a212e"
+declarations = [
+  "ZMod.stdAddChar",
+  "ZMod.isPrimitive_stdAddChar",
+  "AddChar.sum_mulShift"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+square_modulus_preserved = true
+parity_preserved = true
+zero_mode_subtracted_exactly = true
+full_energy_not_called_variance = true
+absolute_values_inside_buckets_rejected = true
+squarefree_diagonal_not_absorbed_into_mobius_variance = true
+large_sieve_not_inferred = true
+bombieri_vinogradov_not_inferred = true
+pointwise_mertens_not_inferred = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_residue_variance_aggregate = true
+prove_squarefree_diagonal_nonzero_l1 = true
+construct_large_sieve_or_dispersion_adapter = true
+prove_pointwise_mertens_envelope = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+residue_variance_bound_proved = false
+squarefree_diagonal_bound_proved = false
+large_sieve_adapter_proved = false
+bombieri_vinogradov_adapter_proved = false
+pointwise_mertens_bound_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
