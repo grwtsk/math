@@ -28,6 +28,7 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization
 
+open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
 open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage
