@@ -1432,3 +1432,33 @@ nonclaims = [
   "contains only the four canonical sign rows, FourBalance, and all-conjugate (2,2) certificate",
   "does not construct tensor descent data, rational witness, or algebraic cycle"
 ]
+
+
+[[local_target]]
+name = "atomic tensor stability data yields rational four-factor witness"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchTensorData.toRationalPackage"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "canonical atomic switch four-factor profile",
+  "actual complex Hodge subspace",
+  "actual algebraic-number tensor",
+  "membership of every scalar conjugate in the Hodge subspace"
+]
+nonclaims = [
+  "all-conjugate (2,2) is supplied locally by the canonical atomic profile",
+  "rational descent is supplied locally by trace descent",
+  "does not prove scalar-conjugate stability or algebraicity"
+]
+
+[[local_target]]
+name = "atomic raw tensor data to descent datum"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchTensorData.toDescentData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "raw tensor and scalar-conjugate stability data"
+]
+nonclaims = [
+  "no algebraicity conclusion"
+]
