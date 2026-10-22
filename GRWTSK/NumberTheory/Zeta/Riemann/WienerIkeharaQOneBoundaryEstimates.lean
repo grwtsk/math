@@ -56,7 +56,7 @@ No PNT, RH, Chowla, Goldbach or accepted kernel theorem is claimed.
 namespace GRWTSK.RiemannHypothesis
 
 open Real Complex Filter Set MeasureTheory FourierTransform SchwartzMap
-open scoped FourierTransform
+open scoped FourierTransform Topology
 
 /-- The ACTUAL local Mathlib q=1 von Mangoldt L-function auxiliary.
 This is not an arbitrary analytic function fitted to the desired limit. -/
@@ -88,7 +88,7 @@ theorem wienerPinnedQOne_residueLSeries_eq_lambda (s : ℂ) :
         ((ArithmeticFunction.vonMangoldt.residueClass
           (1 : ZMod 1) n : ℝ) : ℂ)) s =
       LSeries wienerPinnedLambdaComplex s := by
-  apply LSeries.LSeries_congr (s := s)
+  apply LSeries_congr (s := s)
   intro n _hn
   simpa [wienerPinnedLambdaComplex] using
     congrArg (fun r : ℝ => (r : ℂ))
@@ -99,8 +99,7 @@ pinned LSeriesSummable_vonMangoldt theorem on Re(s)>1. -/
 theorem wienerPinnedLambdaComplex_summable
     {s : ℂ} (hs : 1 < s.re) :
     LSeriesSummable wienerPinnedLambdaComplex s := by
-  simpa [wienerPinnedLambdaComplex] using
-    (ArithmeticFunction.LSeriesSummable_vonMangoldt hs)
+  exact ArithmeticFunction.LSeriesSummable_vonMangoldt hs
 
 /-- The pinned q=1 auxiliary agrees on Re(s)>1 with the genuine
 von Mangoldt L-series minus a pole of residue EXACTLY 1 at s=1.
@@ -129,9 +128,8 @@ theorem wienerPinnedQOneAux_poleIdentity
 theorem wienerPinnedQOneAux_continuousOn :
     ContinuousOn wienerPinnedQOneAux
       {s : ℂ | 1 ≤ s.re} := by
-  simpa only [wienerPinnedQOneAux] using
-    (ArithmeticFunction.vonMangoldt.continuousOn_LFunctionResidueClassAux
-      (1 : ZMod 1))
+  exact ArithmeticFunction.vonMangoldt.continuousOn_LFunctionResidueClassAux
+    (1 : ZMod 1)
 
 /-- Continuity of the ACTUAL arithmetic auxiliary on the boundary
 line, with the complex embedding s=1+it explicitly retained. -/
@@ -162,7 +160,7 @@ The exact pinned Fourier transform convention is exp(-2*pi*i*t*xi),
 so the correct frequency is xi=-log(T)/(2*pi).
 -/
 theorem wiener_real_cpow_oscillation_tends_zero
-    (f : ℝ → ℂ) (hf : Integrable f) :
+    (f : ℝ → ℂ) (_hf : Integrable f) :
     Tendsto
       (fun T : ℝ =>
         ∫ t : ℝ, f t * (T : ℂ) ^ ((t : ℂ) * Complex.I))
@@ -186,7 +184,9 @@ theorem wiener_real_cpow_oscillation_tends_zero
             (Real.log T * (t : ℂ) * Complex.I)) := by
     filter_upwards [hphase] with T hT
     apply integral_congr_ae
-    exact Eventually.of_forall (fun t => by rw [hT t])
+    exact Eventually.of_forall (fun t => by
+      change f t * _ = f t * _
+      rw [hT t])
   rw [tendsto_congr' heq]
   convert_to
     Tendsto (fun T : ℝ =>
@@ -196,14 +196,12 @@ theorem wiener_real_cpow_oscillation_tends_zero
     simp only [Real.fourier_eq', smul_eq_mul,
       RCLike.inner_apply, conj_trivial, ofReal_neg,
       ofReal_mul, neg_mul]
-    congr 1
-    ext t
-    congr 1
+    apply integral_congr_ae
+    filter_upwards [] with t
     rw [mul_comm (f t)]
-    congr 1
-    norm_cast
-    field_simp [by positivity : (2 * Real.pi : ℝ) ≠ 0]
-    ring
+    congr 2
+    push_cast
+    field_simp [Real.pi_ne_zero]
   refine (Real.zero_at_infty_fourier f).comp <|
     Tendsto.mono_right ?_ atBot_le_cocompact
   exact (tendsto_neg_atBot_iff.mpr tendsto_log_atTop).atBot_mul_const
