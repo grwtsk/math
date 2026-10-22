@@ -2243,6 +2243,58 @@ After such support is supplied, factorwise scalar transport stays uniformly insi
 
 Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
 
+## 4ax. Common CM support is now carried with the global four-factor construction
+
+The common-support problem is better treated as construction data rather than a descent theorem about arbitrary global factors.
+
+`CMFourFactorSwitchGeometry.lean` now adds:
+
+~~~text
+SupportedCMFourEmbeddingLineVectors
+SupportedCMFourEmbeddingLineVectors.scalarTransport
+SupportedCMFourEmbeddingLineVectors.scalarTransport_support_field
+~~~
+
+A supported global package consists of:
+
+- the four global embedding-line factors over (overline{mathbf Q});
+- one common finite Galois CM carrier;
+- local vectors and local Galois characters on that carrier;
+- explicit automorphism lifts of the global stored `AlgHom` characters;
+- equality of local-vector inclusions with the global vectors;
+- equality of restricted global automorphisms with the local characters.
+
+The explicit global automorphism lifts are necessary because `FourEmbeddingLineVectors.character` is stored as an `AlgHom`, while Galois restriction requires an `AlgEquiv`.
+
+Scalar transport now preserves the same chosen CM carrier. The local character after transport is the Galois product
+
+[
+(sigma|_E)	au_r,
+]
+
+and the global automorphism lift is
+
+[
+sigmawidetilde{	au}_r.
+]
+
+Their restriction compatibility is proved elementwise using Mathlib's `restrictNormal_commutes`, not an assumed multiplication lemma.
+
+Consequently, once the global four-factor package is constructed from the original finite Galois CM data together with this support, the entire scalar-Galois orbit remains on that same CM carrier.
+
+The next exact frontier is now constructive rather than existential:
+
+[
+oxed{
+	ext{build }SupportedCMFourEmbeddingLineVectors
+	ext{ directly from the original finite Galois CM embedding-line data}
+}
+]
+
+rather than proving after the fact that arbitrary global factors happen to admit CM support.
+
+Verification remains `SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED`.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
