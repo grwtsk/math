@@ -254,6 +254,98 @@ theorem switchConjugatePair_isSign
       split_ifs <;> apply hx
     · simp [switchConjugatePair, hhg, hhcg, hx]
 
+/-- Indicator for whether one row is still incorrect at a column. -/
+def rowMismatch (x y : I → ℤ) (r : I) : ℕ :=
+  if x r = y r then 0 else 1
+
+/-- Number of incorrect rows in one column. -/
+def columnMismatchCount (x y : I → ℤ) : ℕ :=
+  ∑ r, rowMismatch x y r
+
+/-- A paired opposite mismatch is genuinely incorrect in both selected rows. -/
+theorem rowMismatch_eq_one_of_posNeg
+    (x y : I → ℤ)
+    (i : PosNegMismatch x y) :
+    rowMismatch x y i.1 = 1 := by
+  simp [rowMismatch, i.2]
+
+theorem rowMismatch_eq_one_of_negPos
+    (x y : I → ℤ)
+    (j : NegPosMismatch x y) :
+    rowMismatch x y j.1 = 1 := by
+  simp [rowMismatch, j.2]
+
+/-- After switching one paired opposite mismatch, no row becomes less correct
+at the selected column. -/
+theorem rowMismatch_switchPair_le
+    (x y : I → ℤ)
+    (i : PosNegMismatch x y)
+    (j : NegPosMismatch x y)
+    (r : I) :
+    rowMismatch (switchPair x i.1 j.1) y r ≤ rowMismatch x y r := by
+  have hij : i.1 ≠ j.1 := by
+    intro h
+    have hi := i.2.1
+    have hj := j.2.1
+    omega
+  by_cases hri : r = i.1
+  · subst r
+    have hc := (switchPair_corrects_mismatch_pair x y i j).1
+    simp [rowMismatch, hc, i.2]
+  · by_cases hrj : r = j.1
+    · subst r
+      have hc := (switchPair_corrects_mismatch_pair x y i j).2
+      simp [rowMismatch, hc, j.2]
+    · simp [rowMismatch, switchPair, hri, hrj]
+
+/-- One paired opposite-mismatch switch strictly decreases the selected
+column's mismatch count. This is the well-founded measure for iterating
+corrections inside one column. -/
+theorem columnMismatchCount_switchPair_lt
+    (x y : I → ℤ)
+    (i : PosNegMismatch x y)
+    (j : NegPosMismatch x y) :
+    columnMismatchCount (switchPair x i.1 j.1) y <
+      columnMismatchCount x y := by
+  unfold columnMismatchCount
+  apply Finset.sum_lt_sum
+  · intro r _
+    exact rowMismatch_switchPair_le x y i j r
+  · refine ⟨i.1, Finset.mem_univ _, ?_⟩
+    have hc := (switchPair_corrects_mismatch_pair x y i j).1
+    rw [rowMismatch_eq_one_of_posNeg x y i]
+    simp [rowMismatch, hc]
+
+/-- The conjugate-paired matrix switch strictly decreases the mismatch count
+at the selected column. -/
+theorem columnMismatchCount_switchConjugatePair_lt
+    (x y : I → G → ℤ)
+    (g : G)
+    (i : PosNegMismatch (fun r => x r g) (fun r => y r g))
+    (j : NegPosMismatch (fun r => x r g) (fun r => y r g)) :
+    columnMismatchCount
+        (fun r => switchConjugatePair conj x g i.1 j.1 r g)
+        (fun r => y r g) <
+      columnMismatchCount (fun r => x r g) (fun r => y r g) := by
+  simpa [switchConjugatePair] using
+    columnMismatchCount_switchPair_lt
+      (fun r => x r g) (fun r => y r g) i j
+
+/-- Unrelated columns have exactly the same mismatch count after a paired
+switch. This is the "previous columns stay fixed" invariant needed by the
+outer finite induction over conjugate-pair representatives. -/
+theorem columnMismatchCount_switchConjugatePair_eq_of_ne
+    (x y : I → G → ℤ)
+    (g h : G) (i j : I)
+    (hhg : h ≠ g) (hhcg : h ≠ conj g) :
+    columnMismatchCount
+        (fun r => switchConjugatePair conj x g i j r h)
+        (fun r => y r h) =
+      columnMismatchCount (fun r => x r h) (fun r => y r h) := by
+  apply Finset.sum_congr rfl
+  intro r _
+  rw [switchConjugatePair_eq_of_ne conj x g h i j hhg hhcg]
+
 /-- A paired opposite mismatch at the selected column is corrected by the
 conjugate-paired switch. -/
 theorem switchConjugatePair_corrects_selected
