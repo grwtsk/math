@@ -203,12 +203,15 @@ solution. The passive three-module target
 lists **40 theorem heads and 13 definitions** including parents.
 These are declaration inventories only.
 
-Finite independent test: direct integer correlation and its
-positive-index affine sum, with complex embedding represented by the
-exact real integer value, were checked for 97 shifts h=0,...,96
-and 161 cutoffs N=0,...,160: **15,617 cases**, no discrepancies
-or exceptions. The zero-shift and zero-sample cases were included.
-This does not validate Lean tactics, trust or analytic saving.
+Finite independent test: direct ordinary integer correlation
+and the separately enumerated positive-index affine sum were compared
+for 97 shifts h=0,...,96 and 161 cutoffs N=0,...,160:
+**15,617 cases**, no discrepancies. The zero-shift and
+zero-sample cases were included. An additional **5,000**
+pseudorandom finite affine quadruples and cutoff cases compared
+integer sums to their complex-real embeddings, with no discrepancies.
+These calculations do not validate Lean tactics, trust, or analytic
+saving.
 
 ## 6. Exact remaining dependency
 
