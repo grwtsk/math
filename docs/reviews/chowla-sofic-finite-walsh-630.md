@@ -187,8 +187,8 @@ cannot be substituted for all-order Walsh cancellation.
 |---|---|---|
 | Boolean indicator -> finite Walsh powerset identity | Any finite roots and coordinates | SOURCE_DRAFT, not compiled |
 | Finite labeled agreement outside E -> exact support identity | All selected coordinates agree | SOURCE_DRAFT, not compiled |
-| Walsh identity + orthogonality -> TV, chi-square, entropy | All nonempty coefficients | Written derivation; Lean supplier OPEN |
-| Labeled boundary support + coupling -> TV error <= |E|/|R| | Written derivation; Lean supplier OPEN |
+| Walsh identity + orthogonality -> TV, chi-square, entropy | All nonempty coefficients | Orthogonality SOURCE_DRAFT; Parseval and bounds still OPEN |
+| Labeled boundary support + coupling -> TV error <= exception cardinality / root cardinality | Written derivation; Lean supplier OPEN |
 | Fixed-order Chowla -> corresponding fixed-window Bernoulli law | All nonempty subsets, correct averaging | Conditional arithmetic adapter |
 | Full Chowla -> Liouville Bernoulli genericity | Every distinct fixed-shift tuple and all orders | Conditional; not supplied by this PR |
 | Cycle approximation -> zeta GUE microscopic gaps | Requires spectral/arithmetic identification, not local limits alone | NO PROOF EDGE |
@@ -208,10 +208,17 @@ and comparison, not admitted Lean premises.
 
 ## 8. Exact next work and rejection controls
 
-Next finite Lean increment: orthogonality for the complete
-`Finset` of Boolean patterns; the resulting chi-squared energy
-identity; and the TV and exception-coupling inequalities.
-Keep this separate from arithmetic rates.
+The orthogonality supplier is now **source-drafted** in
+`FiniteWalshOrthogonality.lean`, at the same review/evidence level as
+the parent module. No algebraic or analytic theorem is accepted until
+independent Lean elaboration and trust inspection.
+
+Next finite Lean increment: combine the drafted character
+orthogonality with the parent pattern identity to prove the exact
+**Parseval / chi-squared energy identity**, then obtain the TV bound
+using finite Cauchy--Schwarz. Exception-coupling TV control remains a
+different subsequent finite theorem. Keep every step separate from
+arithmetic rates, sofic limits and spectral results.
 
 Reject any proof or summary that (1) omits the empty subset from
 the exact Walsh identity, (2) treats pairwise moments as complete
@@ -221,3 +228,90 @@ uniform estimates, (5) turns source-level declarations into
 kernel-audited proofs, (6) treats a local spectral-measure limit
 as GUE microscopic universality, or (7) treats this optional leaf
 as an unconditional RH supplier.
+
+## 9. Source-only second increment: complete Boolean-character orthogonality
+
+**Date:** 2026-10-22. **Direct parent:** original #630 PR #638 head
+`dc276722903ba77173e89c7e3e7288d10bbc569a`.
+
+**New subject source:** `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshOrthogonality.lean`.
+This imports the earlier `FiniteWalshPatterns` module; it leaves that
+module's statements untouched.
+
+For a **finite entire coordinate type** `ι`, all assignments
+`a : ι -> Bool`, and subsets `S,T : Finset ι`, put
+
+```text
+chi_S(a) := prod_(i in S) sign(a(i)).
+Ncube := cardinality(ι -> Bool) = 2 ^ cardinality(ι).
+```
+
+The exact finite theorem now proposed in Lean is
+
+```text
+sum_(a : ι -> Bool) chi_S(a) * chi_T(a)
+   = if S = T then Ncube else 0.
+```
+
+**Proof derivation:** Each sign squares to one, so the diagonal is
+one for every assignment. When `S != T`, set extensionality gives
+some coordinate `j` whose membership in `S` and `T` differs.
+Write both characters as products over all coordinates, with factor
+one on unselected coordinates, and apply the finite
+`Fintype.prod_sum` factorization:
+
+```text
+sum_(a:ι->Bool) prod_(i:ι) f_i(a_i)
+    = prod_(i:ι) sum_(b:Bool) f_i(b).
+```
+
+At the differing coordinate the local factor is `sign(b)`; its
+two-point sum is `(+1)+(-1)=0`. The entire product vanishes.
+At the diagonal, every coordinate factor is one for each assignment.
+This also covers the empty-coordinate case, where exactly one
+Boolean assignment exists and the sole character is the empty one.
+
+**Seven source theorem heads:**
+
+- `boolSign_square`
+- `walshCharacter_square`
+- `walshCharacter_diagonal`
+- `walshCharacter_orthogonal`
+- `walshCharacter_orthogonality`
+- `signedMomentOn_factor`
+- `empiricalMoment_factor`
+
+The two new plain mathematical definitions are `walshCharacter` and
+`plainMomentOn`. In particular,
+
+```text
+signedMomentOn(R,S,x,a) = plainMomentOn(R,S,x)*chi_S(a).
+```
+
+This is necessary because the parent module's signed moment already
+contains the pattern character, while the Chowla correlation energy
+must sum squares of the **plain source moments**, independent of
+which output pattern was tested.
+
+**Scope guard:** This module assumes `[Fintype ι]` and ranges over
+*all* `ι -> Bool` patterns. The parent's arbitrary
+`I : Finset ι` living in a potentially infinite ambient coordinate
+type can later be handled by an explicit restriction/reindexing to
+the finite subtype `{ i // i ∈ I }`. Such reindexing is not
+claimed by this increment.
+
+The user-facing correlation bound
+
+```text
+TV(P,U) <= (1/2)*sqrt(sum_(nonempty S) |C_S|^2)
+```
+
+remains a written classical consequence, **not** a new Lean theorem
+in this increment. There is no Liouville-specific adapter or
+spectral operator, and no fixed-to-growing-shift quantifier exchange.
+
+**Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+The new source is enumerated in the updated passive target; its
+declarations still require independent Lean type checking, axiom
+inspection, and clean-checkout replay. No execution receipt is
+represented by this document.
