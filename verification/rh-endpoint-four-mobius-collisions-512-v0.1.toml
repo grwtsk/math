@@ -1,0 +1,251 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-endpoint-four-mobius-collisions-512-v0.1"
+owner_repository = "grwtsk/math"
+issue = 512
+parent_issue = 505
+parent_pr = 510
+active_tail_issue = 497
+active_tail_pr = 498
+signed_abel_issue = 468
+signed_abel_pr = 470
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_DISTINCT_CORRELATION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointFibreFourMobiusCollisions"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointFibreFourMobiusCollisions"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-abel-endpoint-fibres-505-20261021"
+stacked_parent_revision = "092a9b9923fdcf28d28ad2847ff3806a22ef6697"
+stacked_parent_tree = "e8a82324a9220353c0d3f42f77c843bbe6d61e55"
+candidate_branch = "research/rh-four-mobius-collisions-512-20261021"
+theorem_source_commit = "bf8be59909bd513423964a9070b3d23047bc098d"
+theorem_source_tree = "2fbeb5a9de9ccdaa17ebcb9ac3b01fb61aa91790"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointFibreFourMobiusCollisions.lean"
+theorem_source_git_blob = "d00548509820a19147fe00b9a8fe514daaffc275"
+mathematical_note_commit = "a9202002e70f205a683f5268c4de52477b7e3d8b"
+mathematical_note_tree = "2d4a92e4917c6b33dfd59820698ce6224064b388"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/endpoint-fibre-four-mobius-collisions.md"
+mathematical_note_git_blob = "e2b0f92b1a2850a38834177f3e2fad273b0d8d93"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+four_mobius_term = "mertensEndpointFourMobiusTerm"
+prefix_square_expansion = "mertensTwoPointPrefix_sq_eq_fourMobiusSum"
+stratum_type = "MertensEndpointFourMobiusStratum"
+stratum_classifier = "mertensEndpointFourMobiusStratum"
+pair_set = "mertensEndpointPairSet"
+stratum_pair_set = "mertensEndpointStratumPairSet"
+partition_theorem = "sum_mertensEndpointPairSet_eq_strata"
+four_distinct_arguments = "mertensEndpointFourMobius_fourDistinct_arguments"
+diagonal_energy = "mertensEndpointFibreDiagonalEnergy"
+cross_collision_energy = "mertensEndpointFibreCrossCollisionEnergy"
+four_distinct_correlation = "mertensEndpointFibreFourDistinctCorrelation"
+fibre_decomposition = "mertensTwoPointEndpointFibreQuadraticEnergy_eq_collisionDecomposition"
+weighted_decomposition = "weightedMertensSignedAbelEndpointFibreQuadraticEnergy_eq_strata"
+proof_classification = "EXACT_FINITE_SQUARE_EXPANSION_AND_COLLISION_PARTITION"
+next_obstruction = "test the reciprocal-weighted diagonal mass before constructing any four-distinct Chowla adapter"
+
+[four_arguments]
+shift = "h=b-n"
+arguments = ["a+1","a+1+h","c+1","c+1+h"]
+positive_shift_hypothesis = "1<=n<b implies h>0"
+possible_collision_patterns = [
+  "a=c",
+  "c=a+h",
+  "a=c+h"
+]
+other_collision_patterns_possible = false
+
+[collision_partition]
+constructors = [
+  "diagonal",
+  "forwardCross",
+  "backwardCross",
+  "fourDistinct"
+]
+classification_order = [
+  "a=c",
+  "c=a+h",
+  "a=c+h",
+  "otherwise fourDistinct"
+]
+partition_disjoint_by_classifier = true
+partition_exhaustive_by_classifier = true
+four_distinct_pairwise_arguments_proved = true
+
+[diagonal]
+term_formula = "mu(a+1)^2 * mu(a+1+h)^2"
+nonnegative = true
+energy = "mertensEndpointFibreDiagonalEnergy"
+estimate_proved = false
+interpretation = "squarefree overlap mass"
+
+[cross_collision]
+orientations = ["c=a+h","a=c+h"]
+energy = "mertensEndpointFibreCrossCollisionEnergy"
+signed = true
+automatic_nonnegative = false
+estimate_proved = false
+informal_reduced_shape = "mu(x)*mu(x+h)^2*mu(x+2h)"
+classification = "THREE_DISTINCT_COLLISION"
+
+[four_distinct]
+energy = "mertensEndpointFibreFourDistinctCorrelation"
+signed = true
+all_four_arguments_distinct = true
+estimate_proved = false
+higher_order_chowla_adapter_constructed = false
+fixed_form_higher_order_result_sufficient_without_uniform_adapter = false
+
+[endpoint_fibre_decomposition]
+fibre = "mertensTwoPointEndpointFibreQuadraticEnergy"
+formula = "Fibre(b)=Diagonal(b)+CrossCollision(b)+FourDistinct(b)"
+exact = true
+inequality_used = false
+
+[weighted_decomposition]
+source = "weightedMertensSignedAbelEndpointFibreQuadraticEnergy"
+diagonal = "weightedMertensEndpointDiagonalEnergy"
+cross_collision = "weightedMertensEndpointCrossCollisionEnergy"
+four_distinct = "weightedMertensEndpointFourDistinctCorrelation"
+formula = "WeightedEndpointEnergy(j)=WeightedDiagonal(j)+WeightedCross(j)+WeightedFourDistinct(j)"
+outer_factor = "4*(1/b-1/(b+1))"
+endpoint_range = "Finset.Ico (2^j) (2^(j+1))"
+exact = true
+
+[positivity]
+diagonal_term_nonnegative = true
+diagonal_energy_nonnegative = true
+cross_collision_nonnegative_claimed = false
+four_distinct_nonnegative_claimed = false
+positive_kernel_claimed = false
+positive_measure_claimed = false
+trace_state_positivity_claimed = false
+weil_positivity_claimed = false
+global_rh_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+diagonal_bound_proved = false
+cross_collision_estimate_proved = false
+four_distinct_estimate_proved = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_source_text_as_kernel_evidence = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointFibreFourMobiusCollisions"
+authored_declaration_count = 23
+definition_count = 10
+theorem_script_count = 12
+inductive_count = 1
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelEndpointFibreQuadraticEnergy.lean"
+git_blob = "9e1b549770e42bd366fa78680cbac0eb769d6fc8"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_510"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelActiveTailQuadraticEnergy.lean"
+git_blob = "12a150387b8755a515600c7599d54fb1f1b0d012"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_498"
+
+[statement_controls]
+exact_prefix_square_expansion = true
+all_pair_indices_retained = true
+diagonal_first = true
+both_cross_orientations_retained = true
+four_distinct_not_synonymous_with_off_diagonal = true
+signed_cross_sum_preserved = true
+signed_four_distinct_sum_preserved = true
+outer_factor_four_preserved = true
+reciprocal_endpoint_weight_preserved = true
+
+[hostile_controls]
+off_diagonal_not_promoted_to_four_distinct = true
+forward_cross_not_dropped = true
+backward_cross_not_dropped = true
+cross_absolute_value_not_inserted = true
+four_distinct_absolute_value_not_inserted = true
+higher_order_chowla_not_imported_without_adapter = true
+fixed_form_result_not_promoted_to_growing_weighted_family = true
+diagonal_nonnegativity_not_promoted_to_smallness = true
+source_elaboration_not_promoted_to_arithmetic_estimate = true
+conditional_rh_endpoint_not_promoted_to_rh_proof = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+weighted_diagonal_size_test = true
+cross_collision_estimate = true
+four_distinct_weighted_uniform_estimate = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+diagonal_bound_proved = false
+cross_collision_bound_proved = false
+four_distinct_bound_proved = false
+higher_order_chowla_proved = false
+elliott_proved = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "mertensEndpointFourMobiusTerm",
+  "mertensTwoPointPrefix_sq_eq_fourMobiusSum",
+  "MertensEndpointFourMobiusStratum",
+  "mertensEndpointFourMobiusStratum",
+  "mertensEndpointPairSet",
+  "mertensEndpointStratumPairSet",
+  "sum_mertensEndpointPairSet_eq_strata",
+  "mertensEndpointFourMobiusStratum_eq_diagonal_iff",
+  "mertensEndpointFourMobiusStratum_eq_forwardCross_iff",
+  "mertensEndpointFourMobiusStratum_eq_backwardCross_iff",
+  "mertensEndpointFourMobiusStratum_eq_fourDistinct_iff",
+  "mertensEndpointFourMobius_fourDistinct_arguments",
+  "mertensEndpointFourMobiusTerm_diagonal",
+  "mertensEndpointFourMobiusTerm_diagonal_nonneg",
+  "mertensEndpointFibreDiagonalEnergy",
+  "mertensEndpointFibreCrossCollisionEnergy",
+  "mertensEndpointFibreFourDistinctCorrelation",
+  "mertensEndpointFibreDiagonalEnergy_nonneg",
+  "mertensTwoPointEndpointFibreQuadraticEnergy_eq_collisionDecomposition",
+  "weightedMertensEndpointDiagonalEnergy",
+  "weightedMertensEndpointCrossCollisionEnergy",
+  "weightedMertensEndpointFourDistinctCorrelation",
+  "weightedMertensSignedAbelEndpointFibreQuadraticEnergy_eq_strata"
+]
