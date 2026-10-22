@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-long-short-interval-supplier-541-v0.1"
+owner_repository = "grwtsk/math"
+issue = 541
+parent_issue = 538
+parent_pr = 540
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensLongShortIntervalSupplier"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensLongShortIntervalSupplier"
+
+[source_binding]
+stacked_parent_revision = "93b83a632296a9dc77d24a3873c7f267f85196be"
+candidate_branch = "research/rh-long-short-interval-supplier-541-20261021"
+theorem_source_commit = "389d7a130b46cc8a45144bed22b486074b62ba39"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensLongShortIntervalSupplier.lean"
+theorem_source_git_blob = "fc074febefddbcf0fc76f62a3d2f5a06a618da61"
+
+[selected_increment]
+short_signed_packet = "logarithmicShortSignedPacket"
+long_remainder = "logarithmicLongHarmonicRemainderPacket"
+packet_decomposition = "harmonicPacket_eq_shortSigned_add_longRemainder"
+short_abs_bound = "abs_logarithmicShortSignedPacket_le_budget"
+long_supplier = "SubpolynomialLongHarmonicRemainderPacket"
+harmonic_return = "subpolynomialDyadicHarmonicWeightedMertensChowlaPacket_of_longRemainder"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialLongHarmonicRemainderPacket"
+long_l1_envelope = "LongHarmonicShortIntervalL1Envelope"
+long_l1_source = "LongHarmonicShortIntervalL1Source"
+adapter = "LongShortIntervalL1ToRemainderAdapter"
+proof_classification = "EXACT_SHORT_LONG_PACKET_DECOMPOSITION_AND_SUPPLIER_ISOLATION"
+next_obstruction = "prove the long-length short-interval remainder supplier"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+long_supplier_proved = false
+short_interval_adapter_constructed = false
+riemann_hypothesis_proved = false
