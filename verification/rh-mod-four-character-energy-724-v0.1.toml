@@ -1,0 +1,142 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mod-four-character-energy-724-v0.1"
+owner_repository = "grwtsk/math"
+issue = 724
+parent_issue = 698
+parent_pr = 701
+exceptional_character_issue = 691
+exceptional_character_pr = 697
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_MOD_FOUR_CHARACTER_ENERGY_EQUIVALENCE_SOURCE_DRAFT_PRINCIPAL_AND_CHI_FOUR_ENERGIES_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ModFourCharacterMertensEnergyEquivalence"
+build_target = "GRWTSK.NumberTheory.Moebius.ModFourCharacterMertensEnergyEquivalence"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-chi4-mod-four-residues-698-20261022"
+stacked_parent_revision = "a8d7518867a20dc369847e978b203784d67bfa7d"
+stacked_parent_tree = "10cd8eba2e3e99bcd0931539111e62074bd2e9df"
+candidate_branch = "research/rh-mod-four-character-energy-724-20261022"
+theorem_source_commit = "36c781f08e4fde8bfb503f867624a8553c551f6b"
+theorem_source_tree = "8c541f232d28761f8b7159d4e096151decdab1bd"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ModFourCharacterMertensEnergyEquivalence.lean"
+theorem_source_git_blob = "70c4b1a8ffa29bc1ae510fb89364c1a0f900a4d7"
+mathematical_note_commit = "add1b426ccce0b23a52b6b8adb398d8a8bf61505"
+mathematical_note_tree = "5a363ac879b59d6003212207622f5ea3d3e11c2f"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mod-four-character-mertens-energy-equivalence.md"
+mathematical_note_git_blob = "fc16656b517513fd63091843f581f1b0d1ddcb45"
+
+[principal_coordinate]
+odd_energy = "DyadicOddMertensSquareRootEnergy"
+from_parity = "oddMertensEnergy_of_parity"
+from_pointwise_ordinary = "oddMertensEnergy_of_pointwise"
+from_unit_residues = "oddMertensEnergy_of_modFourUnitResidues"
+unit_residue_to_odd_constant_factor = 4
+
+[character_coordinates]
+character_pair_energy = "DyadicModFourCharacterMertensSquareRootEnergy"
+principal_coordinate = "parityMertensPrefix b 1"
+nonprincipal_coordinate = "chiFourTwistedMertensPrefix b"
+residues_to_character_pair = "modFourCharacterEnergy_of_unitResidues"
+
+[inverse_transform]
+residue_one_identity = "two_mul_modFourMertensPrefix_one"
+residue_three_identity = "two_mul_modFourMertensPrefix_three"
+odd_plus_discrepancy_to_residues = "modFourUnitResidueEnergy_of_odd_and_discrepancy"
+transported_constant = "C_odd + C_discrepancy"
+discrepancy_alone_supplies_individual_residues = false
+
+[logical_equivalence]
+unit_residue_energy = "DyadicModFourUnitResidueMertensSquareRootEnergy"
+character_energy = "DyadicModFourCharacterMertensSquareRootEnergy"
+load_bearing_theorem = "dyadicModFourUnitResidueEnergy_iff_characterEnergy"
+proof_classification = "EXACT_FINITE_CHARACTER_TRANSFORM_PLUS_ELEMENTARY_QUADRATIC_INEQUALITIES"
+
+[conditional_transports]
+pointwise_and_chi_four_to_residues = "modFourUnitResidueEnergy_of_pointwise_and_chiFour"
+to_natural_scale = "naturalScaleCongruenceL1_of_characterEnergies_twoUnit_regular"
+pointwise_ordinary_mertens_required = true
+chi_four_energy_required = true
+two_unit_supplier_required = true
+regular_orbit_supplier_required = true
+
+[dirichlet_mertens_boundary]
+generic_adapter = "ToModFourCharacterMertensSquareRootEnergyAdapter"
+source_data = "ModFourCharacterMertensSourceData"
+source_proposition = "ModFourCharacterMertensSource"
+adapter_alias = "ModFourCharacterMertensAdapter"
+principal_odd_theorem_required = true
+chi_four_theorem_required = true
+positive_endpoint_convention_required = true
+square_root_plus_epsilon_scale_required = true
+common_dyadic_constants_required = true
+finite_initial_range_required = true
+named_adapter_value_constructed = false
+
+[evidence_states]
+source_draft = true
+odd_character_energy_defined = true
+parity_to_odd_energy_scripted = true
+residues_to_odd_energy_scripted = true
+residues_to_character_pair_scripted = true
+character_pair_to_residues_scripted = true
+logical_energy_equivalence_scripted = true
+conditional_downstream_transport_scripted = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+pointwise_ordinary_mertens_envelope_proved = false
+chi_four_twisted_mertens_energy_proved = false
+two_unit_supplier_proved = false
+regular_orbit_supplier_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ModFourCharacterMertensEnergyEquivalence"
+definition_count = 3
+theorem_script_count = 9
+structure_count = 2
+abbreviation_count = 1
+authored_declaration_count = 15
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ChiFourMertensResidueDecomposition.lean"
+git_blob = "bf15e90e7a6b8176caa5c2008892e971838f163c"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_701"
+
+[hostile_controls]
+discrepancy_not_promoted_to_individual_residues = true
+principal_odd_coordinate_required_in_reverse_transport = true
+positive_endpoint_convention_preserved = true
+common_dyadic_scale_preserved = true
+constant_losses_explicit = true
+result_003_not_promoted_to_square_root_character_bounds = true
+grh_not_claimed = true
+rh_not_claimed = true
+source_elaboration_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_pointwise_ordinary_mertens_supplier = true
+construct_chi_four_twisted_mertens_supplier = true
+construct_two_unit_analytic_supplier = true
+construct_regular_orbit_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+principal_odd_mertens_estimate_proved = false
+chi_four_mertens_estimate_proved = false
+dirichlet_l_series_transport_proved = false
+grh_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
