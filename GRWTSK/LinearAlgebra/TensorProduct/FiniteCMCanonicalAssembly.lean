@@ -1,5 +1,6 @@
 import GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle
 import Mathlib.LinearAlgebra.TensorProduct.Basic
+import Mathlib.Algebra.Field.Rat
 
 /-!
 # Finite coefficient/vector assembly
@@ -30,7 +31,7 @@ def coefficientMul : E ⊗[ℚ] E →ₗ[ℚ] E :=
       map_add' := by intros; simp [mul_add]
       map_smul' := by
         intro q b
-        simp [Algebra.smul_def, mul_assoc, mul_left_comm, mul_comm]
+        simp [Algebra.smul_def, mul_assoc, mul_comm]
     }
     map_add' := by
       intro a b
@@ -49,7 +50,7 @@ def coefficientMul : E ⊗[ℚ] E →ₗ[ℚ] E :=
 def coefficientMulFour : Coefficients E →ₗ[ℚ] E :=
   coefficientMul E ∘ₗ
     ((coefficientMul E ∘ₗ
-      (coefficientMul E).lTensor E).lTensor E)
+      (coefficientMul E).rTensor E).rTensor E)
 
 @[simp] theorem coefficientMulFour_pure (a b c d : E) :
     coefficientMulFour E (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
