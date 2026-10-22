@@ -105,7 +105,7 @@ theorem separatedHeight_bounds (N : ℕ) :
   constructor <;> linarith
 
 theorem separatedHeight_pos (N : ℕ) : 0 < separatedHeight N := by
-  have hn := Nat.cast_nonneg (R := ℝ) N
+  have hn := Nat.cast_nonneg (α := ℝ) N
   linarith [(separatedHeight_bounds N).1]
 
 theorem separatedHeight_strictMono : StrictMono separatedHeight := by
@@ -138,7 +138,7 @@ theorem horizontal_distance (N : ℕ) (σ y : ℝ) (hy : |y| = separatedHeight N
     heightClearance N ≤ ‖((σ : ℂ) + (y : ℂ) * Complex.I) - z.1‖ := by
   calc
     heightClearance N ≤ |separatedHeight N - height z| := separatedHeight_clearance N z
-    _ = ||y| - |z.1.im|| := by rw [hy]; rfl
+    _ = abs (|y| - |z.1.im|) := by rw [hy]; rfl
     _ ≤ |y - z.1.im| := abs_abs_sub_abs_le_abs_sub y z.1.im
     _ = |(((σ : ℂ) + (y : ℂ) * Complex.I) - z.1).im| := by simp
     _ ≤ _ := Complex.abs_im_le_norm _
@@ -175,7 +175,7 @@ theorem rounded_heightHead_eq (N : ℕ) (H : ℝ)
 theorem heightClearance_lower_of_card_bound (N : ℕ) (B : ℝ)
     (hB : ((heightBand N).card : ℝ) ≤ B) :
     1 / (4 * (B + 1)) ≤ heightClearance N := by
-  have hK := Nat.cast_nonneg (R := ℝ) (heightBand N).card
+  have hK := Nat.cast_nonneg (α := ℝ) (heightBand N).card
   unfold heightClearance clearance
   apply (div_le_div_iff₀ (by nlinarith) (by positivity)).mpr
   nlinarith

@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "quadratic-interval-core-v0.3"
 owner_repository = "grwtsk/math"
@@ -54,7 +57,9 @@ source_git_blob = "70d033bedc009ffda256125dc6ab368489c6e681"
 
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
-source_git_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
+# Original pre-repair source_git_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_git_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel"

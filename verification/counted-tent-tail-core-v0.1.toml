@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "counted-tent-tail-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -24,7 +27,9 @@ mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/legendre-tent-core-v0.1.toml"
-inherited_target_blob = "2c80dd1d0e963334afe99aae8778cbdaa77af3dd"
+# Original pre-repair inherited_target_blob = "2c80dd1d0e963334afe99aae8778cbdaa77af3dd".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "784bd05e21bb951e9efa35e357330836554619ed"
 receipt_policy = "Bind the replayed integration commit/tree/manifest blob externally; no parent receipt accepts this head."
 inventory_policy = "Names are lexical source inventory, not elaborated types. Resolve private declarations to elaborated names and audit their full trust closure too."
 
@@ -84,8 +89,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
 path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
-source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget"

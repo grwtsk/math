@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "cubic-circle-envelope-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/anchored-local-jensen-core-v0.1.toml"
-inherited_target_blob = "62db05a9af8aa18d3c18a83f0b96c40cbf017991"
+# Original pre-repair inherited_target_blob = "62db05a9af8aa18d3c18a83f0b96c40cbf017991".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "d92435d7e5cf07ec7c458b7965f0597c071696a6"
 receipt_policy = "Bind exact new commit/tree externally; no ancestor receipt accepts this source."
 
 [trust]
@@ -45,7 +50,9 @@ canonical_consumer_premises_changed = false
 [[modules]]
 name = "GRWTSK.Analysis.Real.CubicEulerMaclaurin"
 path = "GRWTSK/Analysis/Real/CubicEulerMaclaurin.lean"
-source_blob = "0c4e73ae2d9841c67b6fb05702cd891c6a9de624"
+# Original pre-repair source_blob = "0c4e73ae2d9841c67b6fb05702cd891c6a9de624".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "78b24832bcc40e98c2e145fbc5dd379e7ffff7b4"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -63,20 +70,27 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicCircleGeometry.lean"
-source_blob = "a0d3c2e1634e91a9969b99bc120e412d72c4e5cc"
+# Original pre-repair source_blob = "a0d3c2e1634e91a9969b99bc120e412d72c4e5cc".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "08b38fca12bf8e6dff26d9f6aa49c32c2e62e419"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicPowerSummation"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicPowerSummation.lean"
-source_blob = "e9beea18bfc091dd2fe3d870a020c15d3a98e6e7"
+# Original pre-repair source_blob = "e9beea18bfc091dd2fe3d870a020c15d3a98e6e7".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fd25e7f5a1025387a239b418248f0b0344891dfa"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensen"
 path = "GRWTSK/NumberTheory/Zeta/Riemann/AnchoredLocalJensen.lean"
-source_blob = "605f68bfc1af8a7e5cc646e33a941c3ef21f9913"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "605f68bfc1af8a7e5cc646e33a941c3ef21f9913".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "c75ff632b011100da1dce61eb5df8526926f04e0"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.Interfaces.AnchoredLocalJensenCore"
@@ -87,8 +101,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
 path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
-source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[mathematical_notes]]
 path = "docs/mathematics/NumberTheory/Zeta/Riemann/cubic-circle-ceiling.md"

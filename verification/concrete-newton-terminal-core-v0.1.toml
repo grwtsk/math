@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "concrete-newton-terminal-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -25,7 +28,9 @@ mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
 lean_toolchain = "leanprover/lean4:v4.33.0"
 status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/concrete-newton-third-endpoint-core-v0.1.toml"
-inherited_target_blob = "f579e7d9047ead0747b64fa0168d573d9534739a"
+# Original pre-repair inherited_target_blob = "f579e7d9047ead0747b64fa0168d573d9534739a".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "be8118010261a8e817f10e811e744b87aa7bb04f"
 receipt_policy = "Execution evidence and authorization are external; this static target grants none."
 
 [trust]

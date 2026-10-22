@@ -9,7 +9,7 @@ import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 import Mathlib.Tactic.FunProp
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
-import Mathlib.Tactic.NormCast
+import Lean.Elab.Tactic.NormCast
 
 /-!
 # The coupled compact-interval Mellin kernel
@@ -125,7 +125,7 @@ theorem norm_weighted_density_le {a b β t : ℝ} {z : ℂ}
   have hlog : Real.log t ≤ Real.log b := Real.log_le_log ht0 ht.2
   calc
     _ = ‖density z t‖ * Real.log t := by
-      simp [norm_mul, Real.norm_eq_abs, abs_of_nonneg hlog0]
+      simp [Real.norm_eq_abs, abs_of_nonneg hlog0]
     _ ≤ densityBound a b β * Real.log b :=
       mul_le_mul (norm_density_le ha ht hz) hlog hlog0 (densityBound_pos a b β).le
     _ = _ := mul_comm _ _
@@ -189,7 +189,8 @@ theorem norm_logMoment_le {a b β : ℝ} {z : ℂ}
 /-- A horizontal half-plane is convex over the real scalar field. -/
 theorem convex_re_le (β : ℝ) : Convex ℝ {z : ℂ | z.re ≤ β} := by
   intro x hx y hy r s hr hs hrs
-  change r * x.re + s * y.re ≤ β
+  change (r • x + s • y).re ≤ β
+  simp only [Complex.add_re, Complex.smul_re, smul_eq_mul]
   calc
     r * x.re + s * y.re ≤ r * β + s * β :=
       add_le_add (mul_le_mul_of_nonneg_left hx hr) (mul_le_mul_of_nonneg_left hy hs)

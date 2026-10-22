@@ -1,3 +1,6 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
 schema = "grwtsk-math-replay-target-v1"
 id = "normalized-disk-log-core-v0.1"
 owner_repository = "grwtsk/math"
@@ -27,7 +30,9 @@ lean_toolchain = "leanprover/lean4:v4.33.0"
 lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
 status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
 inherited_target = "verification/disk-log-derivative-core-v0.1.toml"
-inherited_target_blob = "6f6be416fca9b9c569d516b7c3ae15bca7b8ed74"
+# Original pre-repair inherited_target_blob = "6f6be416fca9b9c569d516b7c3ae15bca7b8ed74".
+# Current pin binds the revised static target; no acceptance is inferred.
+inherited_target_blob = "6d45f25ce98342a6b9ae296b74c8bf52a6970061"
 receipt_policy = "Bind exact new commit/tree externally; ancestor or root-only acceptance is insufficient."
 
 [trust]

@@ -64,7 +64,7 @@ theorem bandMass_le_localCountBudget (N : ℕ) (hN : 2 ≤ N) :
   simpa only [localCountBudget, mul_one, Nat.cast_ofNat] using hb
 
 theorem localCountBudget_nonneg (N : ℕ) : 0 ≤ localCountBudget N := by
-  have hlog : 0 ≤ Real.log ((N : ℝ) + 2) := Real.log_nonneg (by linarith [Nat.cast_nonneg (R := ℝ) N])
+  have hlog : 0 ≤ Real.log ((N : ℝ) + 2) := Real.log_nonneg (by linarith [Nat.cast_nonneg (α := ℝ) N])
   unfold localCountBudget
   exact div_nonneg (by positivity)
     (GRWTSK.Analysis.Complex.JensenFiniteMultiplicity.log_six_fifths_pos.le)
