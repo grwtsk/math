@@ -128,7 +128,7 @@ theorem sum_sq_realBucket_eq_signedQuarticCollision
   by_cases hcoord :
       parityAffineShiftResidueCoordinate d u h =
         parityAffineShiftResidueCoordinate d v g
-  · subst hcoord
+  · rw [hcoord]
     simp
   · have hne :
         ∀ s : ZMod (d * d),
