@@ -8,7 +8,7 @@
 
 ## 1. A changed dependency graph—not a second Chowla theorem
 
-Since the earlier dependency snapshot dc276722903ba77173e89c7e3e7288d10bbc569a, PR #638 added fourteen commits and five source modules (FiniteWalshOrthogonality, FiniteWalshParseval, FiniteWalshTotalVariation, FiniteLabeledBoundaryTV, FiniteWalshBoundaryTriangle). Source references in the later draft branch chain #655, #663, #670, #680 and #689 remain pinned to the former snapshot. Their file blobs and source evidence are still historically identifiable, but their declarations are not automatically synchronized with the current parent branch.
+Since the earlier dependency snapshot dc276722903ba77173e89c7e3e7288d10bbc569a, PR #638 first added fourteen commits and five source modules (FiniteWalshOrthogonality, FiniteWalshParseval, FiniteWalshTotalVariation, FiniteLabeledBoundaryTV, FiniteWalshBoundaryTriangle). It subsequently advanced four more commits to fbe3bc2b651fd24edd7eb40ed4276b8b0041bbc1, adding FiniteCyclicWalshBoundary. This increment was intentionally branched from the exact earlier review parent bc40a07d5a15e904e7226694749a60f3622c2d71; its imported triangle and categorical module blobs remain unchanged in that subsequent parent advance. Source references in the later draft branch chain #655, #663, #670, #680 and #689 remain pinned to the still-earlier dc276722 snapshot. Their file blobs and source evidence are historically identifiable, but their declarations are not automatically synchronized with the current parent branch.
 
 Several paths now express analogous **finite** results with different data representations. The updated #638 definitions include:
 
@@ -111,7 +111,7 @@ The generic zero-mass formula also holds algebraically when R is empty due to Le
 
 This increment establishes the **rational** all-event versus half-\(L^1\) categorical metric equality against the updated PR #638 source, using one actual source alphabet and shared roots. It does **not** import or compile the different real-valued event-supremum definitions in draft PR #655 or #680. An additional source-identity, normalization/cast, and branch-reconciliation adapter would be required before asserting equality of those concrete Lean declarations.
 
-No PR is rebased or merged by adding this generic bridge. In particular, although the updated PR #638 already scripts finite Parseval, finite TV, and a boundary triangle, the separate PR #663 continues to hold the explicit cyclic seam \(E_{N,r}\) in a different branch lineage. Formal verification and carefully reviewed consolidation should precede declaring either branch canonical.
+No PR is rebased or merged by adding this generic bridge. The latest observed PR #638 head also independently scripts a cyclic collar and finite cycle bound in FiniteCyclicWalshBoundary. Thus both PR #638 and the distinct PR #663 lineage now have cyclic seam interfaces, with different constraints and metrics (the updated parent requires maximum offset strictly below N). A downstream refactor must compare exact declarations and guards; neither source route is automatically canonical. Formal verification and carefully reviewed consolidation must precede merging or superseding either implementation.
 
 ## 5. Hostile controls and verification obligations
 
