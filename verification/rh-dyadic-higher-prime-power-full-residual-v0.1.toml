@@ -1,0 +1,47 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-higher-prime-power-full-residual-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "e853947fd69753e53dbdf63467a412581524ace3"
+parent_tree = "fd7eded20dbdd978825146a3e11f1354d00acb28"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / HIGHER_PRIME_POWER_FULL_WITNESS_RESIDUAL_INV_BOUND"
+
+[residual]
+mass0 = "higher-prime-power weighted octave mass"
+mass1 = "same mass weighted by location in [0,1]"
+fourier = "complete integer-frequency higher-power channel"
+combined = "mass0^2 + mass1^2 + FourierEnergy"
+bound = "exists K>=0, combined <= K/X"
+pnt_used = false
+rh_used = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicHigherPrimePowerFullResidual"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicHigherPrimePowerFullResidual.lean"
+blob = "c13bb0a7d6bd0dc50ef7ff23540a09850fd91f2b"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerFullResidualControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicHigherPrimePowerFullResidualControls.lean"
+blob = "19f2284066eb917455eb6acb1ec38783dcdfb589"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "916fc6f590d893367987ad8bafc73c4c79f7bc7e"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-higher-prime-power-full-residual.md"
+blob = "4da525c1c88de01482ed59312d6ec13cf26781bd"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+HIGHER_PRIME_POWER_FULL_WITNESS_RESIDUAL_INV_BOUND = true
+PRIME_ONLY_HARD_CORE_REMAINS = true
