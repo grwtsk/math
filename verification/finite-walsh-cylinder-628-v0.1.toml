@@ -1,0 +1,140 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-walsh-cylinder-628-v0.1"
+owner_repository = "grwtsk/math"
+issue = 628
+related_issues = [121, 444, 453, 516, 100, 15]
+route_id = "ARITHMETIC_TO_DYNAMICAL_WALSH"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.FiniteSum.WalshCylinder"
+build_target = "GRWTSK.Analysis.FiniteSum.WalshCylinder"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+review_parent_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+new_module_path = "GRWTSK/Analysis/FiniteSum/WalshCylinder.lean"
+new_module_git_blob = "025b1e07834831decc69261639cbfff7e6f70daa"
+new_module_namespace = "GRWTSK.Analysis.FiniteSum.WalshCylinder"
+mathematical_note_path = "docs/mathematics/Analysis/FiniteSums/finite-walsh-cylinder-reconstruction.md"
+mathematical_note_git_blob = "030755eb4df03bea37e060b94f234ad3dd01674a"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+ordinary_chowla_proved = false
+liouville_ergodicity_proved = false
+sofic_arithmetic_adapter_closed = false
+rh_supplier_closed = false
+mathematical_statement = "finite exact binary pattern counts reconstructed from subset moments including empty subset"
+sample_horizon_zero_supported = true
+requires_positive_normalization_for_probabilities = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder"
+authored_declaration_count = 10
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["Mathlib"]
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.bitSign"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.finiteMoment"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.rawCylinderSum"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.binaryPatternCount"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.finiteMoment_empty"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.binaryPatternCount_empty"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.rawCylinderSum_eq_sum_moments"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.bitSign_match_factor"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.rawCylinderSum_eq_scaled_binaryPatternCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.FiniteSum.WalshCylinder.binaryPatternCount_walsh"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-subset-retained"
+requirement = "The empty subset has moment N, not 0, and its term must appear in the powerset sum."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-sample"
+requirement = "The theorem works without dividing by N, including N = 0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-coordinate-set"
+requirement = "The empty pattern matches all N samples."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "binary-sign-mismatch"
+requirement = "Reject a pattern-count statement where the sign-selector equality is reversed or one factor is omitted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fixed-to-growing-shift"
+requirement = "Reject promotion from fixed-window correlations to growing-shift, all-depth or maximal-prefix arithmetic estimates."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "liouville-to-mobius-source"
+requirement = "Reject transport from the binary Liouville alphabet to ternary Mobius without a separate source adapter."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sofic-or-ergodic-promotion"
+requirement = "Reject Bernoulli, ergodicity, entropy, RH and zeta-zero claims from finite Walsh identity or finite sofic approximants alone."
+status = "NOT_RUN"
