@@ -25,6 +25,9 @@ name = "GRWTSK.Analysis.ErrorBounds.FiniteSquareBudget"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
+# Source at the historical binding had Git blob "594ff41e29323206962ef22863c82e3890382282".
+# Current pin binds repaired source; replay and acceptance obligations remain open.
+source_git_blob = "29ffefcbeef17d9118f16268a42d5d8e5fd35114"
 
 [[modules]]
 name = "GRWTSK.Interfaces.QuadraticIntervalCore"

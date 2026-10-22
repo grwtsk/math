@@ -33,7 +33,9 @@ inherited_target = "verification/rational-zeta-center-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "95f44d80eea8cbfc2fd2212e09d5d1b9352a22b8".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "5305b256459704466d27fc04c978b0914b27b4f5".
-inherited_target_blob = "6349811f70bc9576b0d8b92dfb74dd2cbe4f0d2a"
+# Pre-quadrature-repair inherited_target_blob = "6349811f70bc9576b0d8b92dfb74dd2cbe4f0d2a".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "eab1ac58475a12bce947b9d9defdff8e3a97ec7e"
 receipt_policy = "Exact new commit/tree and any execution evidence must be bound externally. This static target grants no execution authority."
 
 [trust]

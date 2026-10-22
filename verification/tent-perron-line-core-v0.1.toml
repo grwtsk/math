@@ -32,7 +32,9 @@ inherited_target = "verification/trivial-zero-tent-series-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "a4fe9621053af50928bbfd3afc15c3dc190cc71d".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "b57880e7911062590c1efdbe2a7fc4841065c9a2".
-inherited_target_blob = "d609bd916d1ddad731f1430a57b5b00ffb73bcca"
+# Pre-quadrature-repair inherited_target_blob = "d609bd916d1ddad731f1430a57b5b00ffb73bcca".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "86e315c9d1c9b5b49cb3124145a7d7dcd688d3dc"
 receipt_policy = "Bind the actual new commit/tree externally; a parent receipt does not accept this integration."
 inventory_policy = "Source names only; require exact elaborated types and complete transitive trust closure."
 

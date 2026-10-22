@@ -30,7 +30,9 @@ inherited_target = "verification/counted-tent-tail-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "8d6dce02fc7ff7880afbc24e8078afbac2c24526".
 # Current pin binds the revised static target; no acceptance is inferred.
 # Original pre-repair inherited_target_blob = "fd821fae51765c4051f0abd28e93df5853f448b1".
-inherited_target_blob = "6c4fa2e5d907b827cf4d5bac50441610a8c87c36"
+# Pre-quadrature-repair inherited_target_blob = "6c4fa2e5d907b827cf4d5bac50441610a8c87c36".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "654335dec48fc17382fff10d13c13dfaf2064cc3"
 receipt_policy = "Bind the actual new commit, tree and this manifest externally. Parent source or receipts do not accept this target."
 inventory_policy = "Names and hashes are lexical source inventory; require all actual elaborated types and complete transitive import/trust coverage."
 mathematical_scope = "The specific rational correction integral, its sign, endpoint envelopes and geometric-prefix convergence; not the complete Riemann explicit formula."
