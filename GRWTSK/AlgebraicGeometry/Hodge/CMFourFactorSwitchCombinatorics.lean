@@ -443,7 +443,7 @@ theorem exists_pairedColumnReach_corrects
         have hlt' : measure x' < n := by
           simpa [hm] using hlt
         obtain ⟨z, hreach, hzg, hzgc, hzodd, hzsign, hzsum⟩ :=
-          ih (measure x') hlt' x' rfl hx'sign hxodd
+          ih (measure x') hlt' x' rfl hx'sign hx'odd
             hyodd hx'sumg
         refine ⟨z, PairedColumnReach.step i j hreach,
           hzg, hzgc, hzodd, hzsign, ?_⟩
