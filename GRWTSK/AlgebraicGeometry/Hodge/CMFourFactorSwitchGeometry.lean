@@ -359,25 +359,6 @@ theorem TransportedFourFactorHodgeTyping.assembled_mem_h22
     (transported σ) (T.typeAt σ)
     (T.factor_type σ) (T.p_two σ) (T.q_two σ)
 
-/-- Fourfold assembly plus actual factor typing canonically supplies the
-transported-generator H^(2,2) package. -/
-def FourfoldMonomialAssemblyData.toTransportedGeneratorHodgeData
-    {V : Type*} [AddCommGroup V] [Module ℚ V]
-    {factors :
-      CMEmbeddingTransport.FourEmbeddingLineVectors
-        (k := ℚ)
-        (E :=
-          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
-    {tensor :
-      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
-        ⊗[ℚ] V}
-    (D : FourfoldMonomialAssemblyData factors tensor)
-    (R : FourfoldHodgeAssemblyRule D.assemble)
-    (T : TransportedFourFactorHodgeTyping R
-      (fun σ => (factors.scalarTransport σ).vector)) :
-    TransportedMonomialGeneratorHodgeData D R.h22 where
-  generator_mem := fun σ => T.assembled_mem_h22 σ
-
 /-- Exact Hodge-realization input for one transported monomial generator.
 
 Because the transported monomial line is defined as the span of this one
@@ -427,6 +408,25 @@ theorem TransportedMonomialGeneratorHodgeData.transportedLine_le
     simpa only [Set.mem_singleton_iff] using hz
   subst z
   exact H.generator_mem σ
+
+/-- Fourfold assembly plus actual factor typing canonically supplies the
+transported-generator H^(2,2) package. -/
+def FourfoldMonomialAssemblyData.toTransportedGeneratorHodgeData
+    {V : Type*} [AddCommGroup V] [Module ℚ V]
+    {factors :
+      CMEmbeddingTransport.FourEmbeddingLineVectors
+        (k := ℚ)
+        (E :=
+          GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers)}
+    {tensor :
+      GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.AlgebraicNumbers
+        ⊗[ℚ] V}
+    (D : FourfoldMonomialAssemblyData factors tensor)
+    (R : FourfoldHodgeAssemblyRule D.assemble)
+    (T : TransportedFourFactorHodgeTyping R
+      (fun σ => (factors.scalarTransport σ).vector)) :
+    TransportedMonomialGeneratorHodgeData D R.h22 where
+  generator_mem := fun σ => T.assembled_mem_h22 σ
 
 /-- Generator-level Hodge membership is therefore enough to build the complete
 scalar-conjugate monomial-line package. -/
