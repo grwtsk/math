@@ -1,0 +1,69 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-unit-circle-attachment-947-v0.1"
+owner_repository = "grwtsk/math"
+issue = 947
+parent_issue = 941
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment"
+
+[source_binding]
+review_parent_revision = "5aa55f9366e1d02ebc0b764b691dece299b4697a"
+review_parent_pr = 946
+new_source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonUnitCircleAttachment.lean"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-unit-circle-attachment.md"
+source_commit = "ff85707bfe2edb90a1df46062b242e4d878b5d05"
+note_commit = "6b1e1ef931b613beacecacc0e0930f487a4c8dc8"
+
+[scope]
+source_only = true
+passive_specification_only = true
+lean_lake_executed = false
+kernel_audited = false
+full_axiom_audited = false
+hostile_replay_executed = false
+circle_attaching_map_candidate = true
+continuity_candidate = true
+surjectivity_candidate = true
+source_factorization_candidate = true
+opposite_side_pairing_candidate = true
+noninjectivity_candidate = true
+same_kernel_candidate = true
+disk_extension_proved = false
+cw_pushout_proved = false
+manifold_proved = false
+rh_proved = false
+
+[trust]
+requires_exact_head_clean_replay = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_axiom_and_unsafe_audit = true
+requires_hostile_controls = true
+
+[[hostile_controls]]
+id = "wrong-arrow"
+requirement = "The map is UnitAddCircle -> PolygonBoundaryOneSkeleton, not the reverse."
+
+[[hostile_controls]]
+id = "no-trivial-attachment"
+requirement = "Map remains noninjective using the actual opposite a-side midpoint."
+
+[[hostile_controls]]
+id = "exact-a-side-reversal"
+requirement = "Original a and a^-1 side points with unitInterval.symm remain identified."
+
+[[hostile_controls]]
+id = "exact-b-side-reversal"
+requirement = "Original b and b^-1 side points with unitInterval.symm remain identified."
+
+[[hostile_controls]]
+id = "not-a-disk"
+requirement = "Do not identify a circle boundary map with a disk extension or CW pushout."
+
+[[hostile_controls]]
+id = "unverified-parent"
+requirement = "Do not promote candidate while parent PR #946 is not kernel-audited."
+
+[[hostile_controls]]
+id = "duplicate-frontier"
+requirement = "Reconcile competing PR #931 and #946 before merge or issue closure."
