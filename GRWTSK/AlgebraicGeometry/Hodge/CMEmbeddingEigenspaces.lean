@@ -175,36 +175,21 @@ theorem characterEigenspaceDecompositions_fourFactor_bidegree_two_two
     (R₄ : CharacterEigenspaceDecomposition A₄ C V₄ G conj v₄)
     (hbal : FourBalance v₁ v₂ v₃ v₄) :
     ∀ g,
-      (pIndex
-          ((R₁.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt g) +
-        pIndex
-          ((R₂.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt g) +
-        pIndex
-          ((R₃.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt (conj g)) +
-        pIndex
-          ((R₄.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt (conj g)) = 2) ∧
-      (qIndex
-          ((R₁.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt g) +
-        qIndex
-          ((R₂.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt g) +
-        qIndex
-          ((R₃.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt (conj g)) +
-        qIndex
-          ((R₄.toEigenlineRealization.toLinearEmbeddingLineRealization
-            .toEmbeddingLineRealization).typeAt (conj g)) = 2) :=
-  characterEigenlines_fourFactor_bidegree_two_two
-    v₁ v₂ v₃ v₄
-    R₁.toEigenlineRealization
-    R₂.toEigenlineRealization
-    R₃.toEigenlineRealization
-    R₄.toEigenlineRealization
-    hbal
+      (pIndex (R₁.typeAt g) +
+          pIndex (R₂.typeAt g) +
+          pIndex (R₃.typeAt (conj g)) +
+          pIndex (R₄.typeAt (conj g)) = 2) ∧
+        (qIndex (R₁.typeAt g) +
+          qIndex (R₂.typeAt g) +
+          qIndex (R₃.typeAt (conj g)) +
+          qIndex (R₄.typeAt (conj g)) = 2) := by
+  simpa using
+    (characterEigenlines_fourFactor_bidegree_two_two
+      v₁ v₂ v₃ v₄
+      R₁.toEigenlineRealization
+      R₂.toEigenlineRealization
+      R₃.toEigenlineRealization
+      R₄.toEigenlineRealization
+      hbal)
 
 end GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces
