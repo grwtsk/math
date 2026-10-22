@@ -1295,6 +1295,33 @@ No rationality or algebraicity is inferred from the canonical profile itself.
 
 Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
+## 4y. Atomic tensor data now descends to the rational four-factor witness locally
+
+The remaining identification adapter has been reduced to raw tensor-level input.
+
+`CMFourFactorSwitchGeometry.lean` now introduces:
+
+~~~text
+AtomicSwitchTensorData
+AtomicSwitchTensorData.toDescentData
+AtomicSwitchTensorData.toRationalPackage
+~~~
+
+For a canonical atomic-switch four-row profile, the only supplied data are now:
+
+- the ambient rational vector space;
+- the complex Hodge subspace;
+- the algebraic-number tensor;
+- membership of every scalar conjugate of that tensor in the Hodge subspace.
+
+The local canonical profile supplies the all-conjugate ((2,2)) certificate automatically. `toDescentData` inserts that certificate into `FourFactorTensorDescentData`, and `toRationalPackage` invokes the existing local trace-descent theorem to construct the exact rational four-factor Hodge witness consumed by `FourFactorAlgebraicitySupplier`.
+
+Therefore the remaining mathematical bridge before the independent algebraicity theorem is now precisely scalar-conjugate stability of the actual switched tensor.
+
+A structural interface issue is also exposed: the generic `AtomicSwitchTransitionSupplier` currently does not carry the source sign-valuedness, oddness, or fixed-point-free conjugate-coordinate proofs needed to instantiate this canonical profile automatically. That invariant plumbing is the next local interface frontier.
+
+Verification remains SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+
 ## 5. Frobenius slope to Hodge type
 
 The external manuscript also uses an arithmetic projector argument. Abstract it
