@@ -65,6 +65,7 @@ import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ReverseExplicitFormulaPsiGateCont
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaRecurrenceSupplierControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellCancellationControls
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShellPrimeEndpointControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaShortIntervalOscillationControls
 
 set_option autoImplicit false
 
