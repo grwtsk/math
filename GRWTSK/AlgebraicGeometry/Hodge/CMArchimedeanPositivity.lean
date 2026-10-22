@@ -219,6 +219,19 @@ theorem embedding_im_zero_of_conj_fixed
   simp only [Complex.conj_im] at h
   linarith
 
+/-- A conjugation-fixed factor has the same embedded value on the two labels
+in one CM conjugate pair. -/
+theorem complexEmbeddingAt_conj_eq_of_fixed
+    {f : E} (hf : galoisComplexConj E f = f)
+    (σ : E ≃ₐ[ℚ] E) :
+    complexEmbeddingAt E
+        ((CMNumberFieldIndex.centralInvolution E).conj σ) f =
+      complexEmbeddingAt E σ f := by
+  change (baseComplexEmbedding E)
+      ((galoisComplexConj E * σ) f) =
+    (baseComplexEmbedding E) (σ f)
+  rw [AlgEquiv.mul_apply,
+    CMNumberFieldIndex.galoisComplexConj_commute_apply E σ f, hf]
 /-- Imaginary coordinates of a fixed-factor rescaling multiply by the real
 embedding of the fixed factor. -/
 theorem imagAt_mul_of_conj_fixed
