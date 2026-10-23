@@ -1,0 +1,38 @@
+version = "0.1"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+axiom_audited = false
+warnings_as_errors = false
+
+[scope]
+mathematical_repository = "grwtsk/math"
+feature_line = "centered low-gcd non-aliasing Fejer diagonal"
+preserves_centered_channels = true
+signed_low_gcd_bilinear_bound_proved = false
+absolute_high_gcd_type_ii_replayed = false
+threshold_descent_proved = false
+rh_claimed = false
+chowla_claimed = false
+goldbach_claimed = false
+
+[dependencies]
+finite_divisor_summatory_path = "GRWTSK/NumberTheory/FiniteDivisorSummatoryBound.lean"
+finite_divisor_summatory_status = "independently replayed status not asserted here"
+fejer_bridge_pr = 973
+fejer_bridge_status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
+centered_low_gcd_reindexing_status = "consume exact definitions and identities; trust follows their independent replay"
+
+[results]
+divisor_sqrt_injection_source_authored = true
+divisor_count_bound_source_authored = true
+octave_divisor_square_bound_source_authored = true
+four_channel_diagonal_bound_source_authored = true
+explicit_diagonal_constant = 300
+actual_fejer_diagonal_instantiation_source_authored = true
+positive_shift_reduction_to_signed_bilinear_source_authored = true
+signed_coprime_plus_noncoprime_decomposition_source_authored = true
+
+[next_obligation]
+statement = "Bound the complete signed square-root-cutoff Fejer bilinear by C * X * sqrt(X) * log(X)^4, jointly controlling the Mobius-signed coprime square expansion and the 2 <= gcd <= floor(sqrt X) classes."
+termwise_absolute_coprime_energy_allowed = false
