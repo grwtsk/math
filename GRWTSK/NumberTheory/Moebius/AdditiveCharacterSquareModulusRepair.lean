@@ -76,7 +76,7 @@ theorem additiveSquareDivisorSelector_eq_indicator
     (d m : ℕ) [NeZero d] :
     additiveSquareDivisorSelector d m =
       if squareDivisorCongruence d m then 1 else 0 := by
-  letI : NeZero (d * d) :=
+  let : NeZero (d * d) :=
     ⟨mul_ne_zero (NeZero.ne d) (NeZero.ne d)⟩
   unfold additiveSquareDivisorSelector
   rw [additiveZeroResidueSelector_eq_indicator]
@@ -174,7 +174,7 @@ theorem additiveSelectorEndpointCrossFibre_eq_fourier
     additiveSelectorEndpointCrossFibre b d =
       additiveFourierEndpointCrossCongruenceFibre b d := by
   classical
-  letI : NeZero (d * d) :=
+  let : NeZero (d * d) :=
     ⟨mul_ne_zero (NeZero.ne d) (NeZero.ne d)⟩
   unfold additiveSelectorEndpointCrossFibre
     additiveSquareDivisorSelector
@@ -183,14 +183,14 @@ theorem additiveSelectorEndpointCrossFibre_eq_fourier
     additiveTwistedEndpointCrossCorrelation
   simp_rw [Finset.mul_sum, Finset.sum_mul]
   rw [Finset.sum_comm]
-  apply congrArg
-  apply Finset.sum_congr rfl
-  intro k _hk
-  rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro n _hn
   rw [Finset.sum_comm]
-  ring_nf
+  apply Finset.sum_congr rfl
+  intro k _hk
+  apply Finset.sum_congr rfl
+  intro a _ha
+  ring
 
 /-- Main exact repair: every real square-modulus congruence fibre is, after
 complexification, the finite average of additive-character-twisted two-point
@@ -221,7 +221,7 @@ def additiveCharacterResidueRepair :
     AdditiveCharacterResidueRepair where
   exactFibreExpansion := by
     intro b d hd
-    letI : NeZero d := ⟨ne_of_gt hd⟩
+    let : NeZero d := ⟨ne_of_gt hd⟩
     exact
       complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier
         b d
