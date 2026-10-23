@@ -118,9 +118,15 @@ theorem norm_full_sub_head_le (x h T : ℝ) (hh : 0 < h) (ha : 1 < x - h) (hT : 
   let f : ZeroPoint → ℂ := fun z => (multiplicity z : ℂ) * tentKernel x h z.1
   have hs : Summable f := (canonical_absolute_summable x h hh ha).2
   have ht := complement_summable_and_bound x h T hh ha hT
+  have hcomp : (∑' z : Set.Elem ((heightHead T : Set ZeroPoint)ᶜ), f z.1) =
+      ∑' z : {z : ZeroPoint // z ∉ heightHead T}, f z.1 := by
+    let e : Set.Elem ((heightHead T : Set ZeroPoint)ᶜ) ≃
+        {z : ZeroPoint // z ∉ heightHead T} :=
+      Equiv.subtypeEquivRight (by intro z; simp)
+    exact e.tsum_eq (fun z : {z : ZeroPoint // z ∉ heightHead T} => f z.1)
   have he : (∑' z, f z) - (∑ z ∈ heightHead T, f z) =
       ∑' z : {z : ZeroPoint // z ∉ heightHead T}, f z.1 := by
-    rw [← hs.sum_add_tsum_compl (s := heightHead T)]
+    rw [← hs.sum_add_tsum_compl (s := heightHead T), hcomp]
     ring
   change ‖(∑' z, f z) - (∑ z ∈ heightHead T, f z)‖ ≤ _
   rw [he]

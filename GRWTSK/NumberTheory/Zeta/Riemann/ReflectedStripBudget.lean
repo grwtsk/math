@@ -92,7 +92,7 @@ theorem norm_logDeriv_fixedStrip (N : ℕ) (hN : 2 ≤ N) (σ y : ℝ)
         Complex.ofReal_re, Complex.I_im, Complex.I_re, mul_one, zero_mul,
         add_zero, zero_add]
       rw [hy]
-      linarith [(separatedHeight_bounds N).1, Nat.cast_nonneg (R := ℝ) N]
+      linarith [(separatedHeight_bounds N).1, Nat.cast_nonneg (α := ℝ) N]
     have hi : s.im ≠ 0 := by intro he; rw [he, abs_zero] at hheight; norm_num at hheight
     have href := negative_logDeriv_reflection hs (zeta_ne_zero_left_nonreal s hs hi)
     have hg := norm_digamma_le (1 - s) (by

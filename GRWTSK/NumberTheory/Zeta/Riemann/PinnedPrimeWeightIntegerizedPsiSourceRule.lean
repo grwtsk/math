@@ -69,7 +69,7 @@ theorem thetaError_eq_integerPsiResponse_div_add_signedResidual
       pinnedPrimeWeightIntegerPsiResponse j v / (dyadicScale j : ℝ) +
         pinnedPrimeWeightIntegerPsiSignedResidual j v := by
   have hX : (dyadicScale j : ℝ) ≠ 0 := by
-    exact_mod_cast Nat.ne_of_gt (dyadicScale_pos j)
+    exact_mod_cast Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j)
   have hpsi := psi_eq_psi_gridIndex v
   unfold pinnedPrimeWeightIntegerPsiResponse
     pinnedPrimeWeightIntegerPsiSignedResidual thetaError psiError
@@ -126,11 +126,11 @@ theorem pinnedPrimeWeightIntegerPsiResidual_abs_le_parent_add_one
   calc
     |(θ v - ψ v) + ((pinnedPrimeWeightPsiGridIndex v : ℝ) - v)|
         ≤ |θ v - ψ v| +
-            |(pinnedPrimeWeightPsiGridIndex v : ℝ) - v| := abs_add _ _
+            |(pinnedPrimeWeightPsiGridIndex v : ℝ) - v| := abs_add_le _ _
     _ ≤ |θ v - ψ v| + 1 :=
-      add_le_add_left
+      add_le_add le_rfl
         (pinnedPrimeWeightPsiFloorCorrection_abs_le_one
-          (pinnedPrimeWeightNextOctave_nonnegative hv)) _
+          (pinnedPrimeWeightNextOctave_nonnegative hv))
 
 /-- Exact parent/new response comparison. -/
 theorem pinnedPrimeWeightPsiResponse_eq_integerResponse_add_floorCorrection
@@ -190,7 +190,7 @@ theorem pinnedPrimeWeightParentPsiPairBounds_force_sawtoothFloor
           |pinnedPrimeWeightPsiSourceRule.response j (m : ℝ) -
             pinnedPrimeWeightPsiSourceRule.response j ((m : ℝ) + 1 / 2)| := by
               rw [hrel]
-              simp only [sub_sub_cancel_left]
+              ring_nf
               rw [abs_of_nonneg (by positivity)]
       _ ≤ |pinnedPrimeWeightPsiSourceRule.response j (m : ℝ)| +
           |pinnedPrimeWeightPsiSourceRule.response j ((m : ℝ) + 1 / 2)| :=
@@ -284,7 +284,7 @@ theorem pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_stageEnvelope
   intro j v hv
   let X := dyadicScale j
   let e := quadraticThreshold ρ + η / 2
-  have hX : 0 < X := by dsimp [X]; exact dyadicScale_pos j
+  have hX : 0 < X := by dsimp [X]; exact GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
   have he : 0 ≤ e := by
     dsimp [e]
     linarith [half_le_quadraticThreshold hρ]

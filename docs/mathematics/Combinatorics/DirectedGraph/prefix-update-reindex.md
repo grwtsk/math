@@ -45,8 +45,8 @@ intended negative use. Empty rows still retain their mapped root.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableUpdateReindex.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableUpdateReindex.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-integration-2026-10-15.json)
+native receipt (artifact:gitblob:3ac8e0f5e725302acaec9c2257a596ea49381307)
+and integration record (artifact:gitblob:fe22139bedb29e00c219fcfa596c35844b6daa6d)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned

@@ -30,7 +30,7 @@ theorem normalizedShortDepthBudget_nonneg
   · positivity
   · unfold harmonicShiftFirstDifference harmonicShiftReciprocal
     apply sub_nonneg.mpr
-    apply one_div_le_one_div_of_le
+    apply inv_anti₀
     · positivity
     · exact_mod_cast Nat.le_succ
         (t + 1 + harmonicShiftLower j t)
@@ -115,8 +115,7 @@ theorem abs_logarithmicShallowLongRemainderPacket_le
         |logarithmicShallowShortSignedPacket j| := abs_sub _ _
     _ ≤ |logarithmicShallowDepthPacket j| +
         logarithmicShallowNormalizedShortBudget j := by
-      exact add_le_add_left
-        (abs_logarithmicShallowShortSignedPacket_le_budget j) _
+      exact add_le_add le_rfl (abs_logarithmicShallowShortSignedPacket_le_budget j)
 
 /-- The shallow-long remainder is subpolynomial. -/
 def SubpolynomialLogarithmicShallowLongRemainderPacket : Prop :=
@@ -142,8 +141,7 @@ theorem subpolynomialLogarithmicShallowLongRemainderPacket :
       abs_logarithmicShallowLongRemainderPacket_le j
     _ ≤ |logarithmicShallowDepthPacket j| +
         normalizedShortPacketBudget j := by
-      exact add_le_add_left
-        (logarithmicShallowNormalizedShortBudget_le_full j) _
+      exact add_le_add le_rfl (logarithmicShallowNormalizedShortBudget_le_full j)
     _ ≤ Cdepth * (((2 ^ j : ℕ) : ℝ) ^ δ) +
         Cshort * (((2 ^ j : ℕ) : ℝ) ^ δ) := by
       exact add_le_add (hdepth j) (hshort j)
@@ -168,7 +166,7 @@ theorem subpolynomialLongHarmonicRemainderPacket_of_deep
         logarithmicDeepLongRemainderPacket j ≤
       |logarithmicShallowLongRemainderPacket j| +
         logarithmicDeepLongRemainderPacket j := by
-      exact add_le_add_right (le_abs_self _) _
+      exact add_le_add (le_abs_self _) le_rfl
     _ ≤ Cshallow * (((2 ^ j : ℕ) : ℝ) ^ δ) +
         Cdeep * (((2 ^ j : ℕ) : ℝ) ^ δ) := by
       exact add_le_add (hshallow j) (hdeep j)

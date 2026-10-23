@@ -30,7 +30,7 @@ The [fixed-size anti-concentration theorem](subset-sum-anticoncentration.md) now
 
 ## Evidence and credit
 
-Source: Pham and Sauermann, [On Graham's rearrangement conjecture, arXiv:2602.15797v1](https://arxiv.org/html/2602.15797v1), Section 3. The [selected receipt](../../../../.noeaaeue/receipts/balanced-partition-fourier/selected-replay.json) and [elaborated inventory](../../../../.noeaaeue/receipts/balanced-partition-fourier/declarations.json) bind every checked theorem and its actual hypotheses. The [verification manifest](../../../../.noeaaeue/receipts/balanced-partition-fourier/final-verification.json) separates selected kernel checks from repository-wide failures.
+Source: Pham and Sauermann, [On Graham's rearrangement conjecture, arXiv:2602.15797v1](https://arxiv.org/html/2602.15797v1), Section 3. The selected receipt (artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7) and elaborated inventory (artifact:gitblob:d34132fa5a881c1da75d8ae3efd0094af83d773a) bind every checked theorem and its actual hypotheses. The verification manifest (artifact:gitblob:1d55a3fd3fe8a99104e48124b66e9a64d302b6ef) separates selected kernel checks from repository-wide failures.
 
 Human mathematical direction: grwtsk contributors. Lean implementation: OpenAI Codex. Original paper and upstream Mathlib attribution and licensing retained.
 

@@ -56,7 +56,6 @@ theorem finite_inverseSquare_le_scaled (S : Finset ι)
     have hhi : height i ≠ 0 :=
       ne_of_gt ((lt_of_lt_of_le zero_lt_one hT).trans (hlower i hi))
     field_simp [hA.ne', hhi]
-    <;> ring
   rw [he]
   exact mul_le_mul_of_nonneg_left hb hA.le
 

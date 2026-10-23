@@ -207,7 +207,7 @@ theorem primeThetaQuadraticKernelCriterion_to_recurrence
         (mul_le_mul_of_nonneg_right
           (hmass v hv) (sq_nonneg A))
   have hX : (0 : ℝ) < (dyadicScale j : ℝ) := by
-    exact_mod_cast dyadicScale_pos j
+    exact_mod_cast (show 0 < dyadicScale j by unfold dyadicScale; positivity)
   have hquadratic :
       |stage.response v| / (dyadicScale j : ℝ) ≤
         K * A^2 / (dyadicScale j : ℝ) :=

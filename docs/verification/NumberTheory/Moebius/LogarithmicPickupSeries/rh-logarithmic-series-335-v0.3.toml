@@ -1,0 +1,342 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-logarithmic-series-335-v0.3"
+owner_repository = "grwtsk/math"
+issue = 335
+meta_issue = 334
+route_id = "RH-E02"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.LogarithmicPickupSeries"
+build_target = "GRWTSK.NumberTheory.Moebius.LogarithmicPickupSeries"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "a1857b3ca587a36b575431b5446adf60e9d2af2b"
+review_parent_tree = "9198a6c2d81cba5a2743b4289302203562c9cc1e"
+new_module_path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSeries.lean"
+new_module_git_blob = "abb0bba38e30fcdd41c4c0737445b9b9e5d8551d"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.LogarithmicPickupSeries"
+authored_declaration_count = 32
+definition_count = 3
+theorem_script_count = 29
+private_helper_count = 2
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/LogarithmicPickupSampling/rh-logarithmic-sampling-335-v0.2.toml"
+git_blob = "fa7386ef54ca46aa1c3745d564c1b808c6a5cc10"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/CofinalEnergyDamping/rh-cofinal-energy-335-v0.1.toml"
+git_blob = "019fdbfbc88ea87be8d79b27e55a96494b45c214"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSampling.lean"
+git_blob = "8040c65ade21b244b317ede04131e6ffd8a75655"
+authored_declaration_count = 23
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CofinalEnergyDamping.lean"
+git_blob = "413f3e31870158078d380c5323f3c013efcdf00b"
+authored_declaration_count = 25
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/Bochner/Set.lean"
+git_blob = "338ff3f267c912291cbf581e3cd3f2de78982a82"
+selected_declarations = ["MeasureTheory.hasSum_integral_iUnion", "MeasureTheory.integrableOn_iUnion_of_summable_integral_norm"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[declarations]]
+source_name = "sampleResidue"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleResidue (n : ℕ) : ℝ"
+source_signature_sha256 = "719d3c767bc98787bc49ea8ba27ef1eeffc2fd87aee05c60357913de727527e7"
+
+[[declarations]]
+source_name = "logarithmicCell"
+visibility = "public"
+kind = "def"
+source_signature = "def logarithmicCell (k : ℕ) : Set ℝ"
+source_signature_sha256 = "e169af9d3ae2435b27c1f2723ef432fa51a1ab5f55d6b2f47de33b0aab72d05c"
+
+[[declarations]]
+source_name = "sampleCellMass"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleCellMass (σ : ℝ) (k : ℕ) : ℝ"
+source_signature_sha256 = "0b07cb4179d203114d824fa2ae23701058b6392aaf4a209336bd3e43a543ebbc"
+
+[[declarations]]
+source_name = "wholePickup_log_eq_sampleResidue"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem wholePickup_log_eq_sampleResidue {n : ℕ} (hn : 1 ≤ n) :\n    wholePickup (Real.log (n : ℝ)) = 2 * sampleResidue n"
+source_signature_sha256 = "3759bec53681ca8d8709e1a9fbfe37079f0339eaf612a8915a0dadfd6269e62e"
+
+[[declarations]]
+source_name = "sampleResidue_one"
+visibility = "public"
+kind = "theorem"
+source_signature = "@[simp] theorem sampleResidue_one : sampleResidue 1 = 0"
+source_signature_sha256 = "38047bf478c19ea89086a14a01976a611b22285b5afca9a249ee3c064f3e288c"
+
+[[declarations]]
+source_name = "closed_prefix_succ"
+visibility = "private"
+kind = "theorem"
+source_signature = "private theorem closed_prefix_succ (f : ℕ → ℝ) (n : ℕ) :\n    (∑ k ∈ Finset.Icc 1 (n + 1), f k) =\n      (∑ k ∈ Finset.Icc 1 n, f k) + f (n + 1)"
+source_signature_sha256 = "18e757a11a65c8b69624c70ec1ec8ee29bfb72ab77fdc02cf2b8740f96aa8f49"
+
+[[declarations]]
+source_name = "mertensPrefix_nat_succ"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem mertensPrefix_nat_succ (n : ℕ) :\n    mertensPrefix ((n + 1 : ℕ) : ℝ) =\n      mertensPrefix (n : ℝ) + moebiusReal (n + 1)"
+source_signature_sha256 = "fe31815d8ba9030098e78d694110db935b8612598be30132f164a07b73c01515"
+
+[[declarations]]
+source_name = "sampleResidue_succ_sub"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_succ_sub (n : ℕ) :\n    sampleResidue (n + 1) - sampleResidue n =\n      mertensPrefix (n : ℝ) *\n        ((Real.sqrt n)⁻¹ - (Real.sqrt (n + 1 : ℕ))⁻¹)"
+source_signature_sha256 = "bd25e518d90d2bbebbec611c17782a85a719a49d587c011f5fc2927ec90ebc2c"
+
+[[declarations]]
+source_name = "sampleResidue_square_step"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_square_step (n : ℕ) :\n    sampleResidue (n + 1) ^ 2 - sampleResidue n ^ 2 =\n      2 * sampleResidue n *\n        (mertensPrefix (n : ℝ) *\n          ((Real.sqrt n)⁻¹ - (Real.sqrt (n + 1 : ℕ))⁻¹)) +\n      (mertensPrefix (n : ℝ) *\n        ((Real.sqrt n)⁻¹ - (Real.sqrt (n + 1 : ℕ))⁻¹)) ^ 2"
+source_signature_sha256 = "0b7bd2548f383da3a0cff5badb0b1a1d52fb90b45b184fff832d5585d0a5ea6e"
+
+[[declarations]]
+source_name = "sampleResidue_square_telescope"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_square_telescope (N : ℕ) :\n    sampleResidue (N + 1) ^ 2 =\n      ∑ k ∈ Finset.range N,\n        (2 * sampleResidue (k + 1) *\n          (sampleResidue (k + 2) - sampleResidue (k + 1)) +\n          (sampleResidue (k + 2) - sampleResidue (k + 1)) ^ 2)"
+source_signature_sha256 = "44f0a04fdb8f602fac506002a99ae9450300dfb80f8c6a22c6e44630209cb7fc"
+
+[[declarations]]
+source_name = "sampleResidue_increment_abs_le"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_increment_abs_le {n : ℕ} (hn : 1 ≤ n) :\n    |sampleResidue (n + 1) - sampleResidue n| ≤\n      (Real.sqrt (n + 1 : ℕ))⁻¹ / 2"
+source_signature_sha256 = "4606a3cf9bbd018ea2e064e757095342d4428e7851dbb7e2259c7e54e25dcf6b"
+
+[[declarations]]
+source_name = "sampleResidue_increment_sq_le"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_increment_sq_le {n : ℕ} (hn : 1 ≤ n) :\n    (sampleResidue (n + 1) - sampleResidue n) ^ 2 ≤\n      1 / (4 * ((n : ℝ) + 1))"
+source_signature_sha256 = "9e397f9259b63213e5d5945fd5a7409430386c219538f3489c39141cca233f29"
+
+[[declarations]]
+source_name = "sampleResidue_diagonal_le"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_diagonal_le (N : ℕ) :\n    (∑ k ∈ Finset.range N,\n      (sampleResidue (k + 2) - sampleResidue (k + 1)) ^ 2) ≤\n      (1 / 4 : ℝ) * ∑ k ∈ Finset.range N, 1 / ((k : ℝ) + 2)"
+source_signature_sha256 = "7d4e912e1fe01d430ab93aa78c1fcdaa6cb7ca40e0d89de2ee2bb7d2a6c301ca"
+
+[[declarations]]
+source_name = "sampleResidue_weighted_telescope"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_weighted_telescope (w : ℕ → ℝ) (N : ℕ) :\n    (∑ k ∈ Finset.range N, sampleResidue (k + 1) ^ 2 * (w (k + 1) - w (k + 2))) =\n      (∑ k ∈ Finset.range N,\n        (2 * sampleResidue (k + 1) *\n          (sampleResidue (k + 2) - sampleResidue (k + 1)) +\n          (sampleResidue (k + 2) - sampleResidue (k + 1)) ^ 2) * w (k + 2)) -\n      sampleResidue (N + 1) ^ 2 * w (N + 1)"
+source_signature_sha256 = "47284ba98c2ddafcc474930f0835bd9cbebd785ffcd0df1eb94350a74e9995ba"
+
+[[declarations]]
+source_name = "sampleCellMass_partial_sum"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_partial_sum {σ : ℝ} (hσ : σ ≠ 0) (N : ℕ) :\n    (∑ k ∈ Finset.range N, sampleCellMass σ k) = (4 / σ) *\n      ((∑ k ∈ Finset.range N,\n        (2 * sampleResidue (k + 1) *\n          (sampleResidue (k + 2) - sampleResidue (k + 1)) +\n          (sampleResidue (k + 2) - sampleResidue (k + 1)) ^ 2) *\n            Real.exp (-σ * Real.log (k + 2 : ℕ))) -\n        sampleResidue (N + 1) ^ 2 * Real.exp (-σ * Real.log (N + 1 : ℕ)))"
+source_signature_sha256 = "2ea4bd1c37343ef479d2e75f41fd00c77c582dd2838046bc806d50b21f6ac153"
+
+[[declarations]]
+source_name = "sampleResidue_weighted_diagonal_le"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_weighted_diagonal_le (σ : ℝ) (N : ℕ) :\n    (∑ k ∈ Finset.range N,\n      (sampleResidue (k + 2) - sampleResidue (k + 1)) ^ 2 *\n        Real.exp (-σ * Real.log (k + 2 : ℕ))) ≤\n      (1 / 4 : ℝ) * ∑ k ∈ Finset.range N,\n        Real.exp (-σ * Real.log (k + 2 : ℕ)) / ((k : ℝ) + 2)"
+source_signature_sha256 = "5b96f8931de7bd2b0837ae8a09620fa2d9dd6ec222af40949bb68a49002b5dd1"
+
+[[declarations]]
+source_name = "logarithmicCell_measurable"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem logarithmicCell_measurable (k : ℕ) : MeasurableSet (logarithmicCell k)"
+source_signature_sha256 = "6b73a1405897a281ddd9dcf190e82f548a26a32e33cd662a9c93edd4a46e6e9b"
+
+[[declarations]]
+source_name = "logarithmicCell_floor"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem logarithmicCell_floor {k : ℕ} {u : ℝ} (hu : u ∈ logarithmicCell k) :\n    ⌊Real.exp u⌋₊ = k + 1"
+source_signature_sha256 = "8dbedd4c1b4acb8e681cb4f6deb1dbb6d82b53b77980622f96e90268bbd94b49"
+
+[[declarations]]
+source_name = "logarithmicCell_pairwise_disjoint"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem logarithmicCell_pairwise_disjoint :\n    Pairwise (fun k l : ℕ ↦ Disjoint (logarithmicCell k) (logarithmicCell l))"
+source_signature_sha256 = "c970370497730359472c7e9f9d835e54b4ff58156810ae70a2c68c6d49aa446e"
+
+[[declarations]]
+source_name = "iUnion_logarithmicCell"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem iUnion_logarithmicCell : (⋃ k : ℕ, logarithmicCell k) = Ici (0 : ℝ)"
+source_signature_sha256 = "15a4dd3e84bfb34b80f2bc02206e4fc772ca94516bb697e23cb7a3994be53a29"
+
+[[declarations]]
+source_name = "sampledPickup_eq_on_logarithmicCell"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampledPickup_eq_on_logarithmicCell {k : ℕ} {u : ℝ}\n    (hu : u ∈ logarithmicCell k) : sampledPickup u = 2 * sampleResidue (k + 1)"
+source_signature_sha256 = "ed02cf6f8bc937eadd92f7f15bd1ecb18e246bcf7086f5adb8fcddcf2dae755e"
+
+[[declarations]]
+source_name = "sampled_integrableOn_logarithmicCell"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampled_integrableOn_logarithmicCell (σ : ℝ) (k : ℕ) :\n    IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * sampledPickup u ^ 2)\n      (logarithmicCell k)"
+source_signature_sha256 = "5b1ae05f3f159cd005ae890b3793fa111882a7e9afe6cda2f2c2cf5e6bb23c8d"
+
+[[declarations]]
+source_name = "integral_exp_neg_mul"
+visibility = "private"
+kind = "theorem"
+source_signature = "private theorem integral_exp_neg_mul (σ a b : ℝ) (hσ : σ ≠ 0) :\n    (∫ u in a..b, Real.exp (-σ * u)) =\n      (Real.exp (-σ * a) - Real.exp (-σ * b)) / σ"
+source_signature_sha256 = "c45a461f5c1784af541012449095be274c4ef1b0a4dd83083e30e1888bbf2599"
+
+[[declarations]]
+source_name = "integral_sampled_logarithmicCell"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem integral_sampled_logarithmicCell {σ : ℝ} (hσ : σ ≠ 0) (k : ℕ) :\n    (∫ u in logarithmicCell k, Real.exp (-σ * u) * sampledPickup u ^ 2) =\n      sampleCellMass σ k"
+source_signature_sha256 = "cd3c81186fab5e27b583ad635a1c4859f05135cb47b7aeecf06fa31d6d9c0b91"
+
+[[declarations]]
+source_name = "sampleCellMass_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_nonneg {σ : ℝ} (hσ : σ ≠ 0) (k : ℕ) :\n    0 ≤ sampleCellMass σ k"
+source_signature_sha256 = "7bc9c9c1c161224df108807af60e94e6c75203ff9224c6db3289f4af51f24d64"
+
+[[declarations]]
+source_name = "sampleCellMass_eq_rpow"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_eq_rpow (σ : ℝ) (k : ℕ) :\n    sampleCellMass σ k =\n      4 * sampleResidue (k + 1) ^ 2 *\n        (((k : ℝ) + 1) ^ (-σ) - ((k : ℝ) + 2) ^ (-σ)) / σ"
+source_signature_sha256 = "226512edf2788d82603012c25c6252881d114903d93960f6f373d925dda6a365"
+
+[[declarations]]
+source_name = "sampled_integrable_iff_summable_cellMass"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampled_integrable_iff_summable_cellMass {σ : ℝ} (hσ : 0 < σ) :\n    IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * sampledPickup u ^ 2) (Ici 0) ↔\n      Summable (sampleCellMass σ)"
+source_signature_sha256 = "33fbeac2d8c36056efadca5c7c9678af3b9d4d6b2e6df0efbb16fda01273c75b"
+
+[[declarations]]
+source_name = "pickup_integrable_iff_summable_cellMass"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem pickup_integrable_iff_summable_cellMass {σ : ℝ} (hσ : 0 < σ) :\n    IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * wholePickup u ^ 2) (Ici 0) ↔\n      Summable (sampleCellMass σ)"
+source_signature_sha256 = "f9cfd9012ab1ecdbad9751c72c73618373e7ae7149aa87af44e2cef89b2e34cc"
+
+[[declarations]]
+source_name = "hasSum_sampleCellMass"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem hasSum_sampleCellMass {σ : ℝ} (hσ : 0 < σ)\n    (hs : Summable (sampleCellMass σ)) :\n    HasSum (sampleCellMass σ)\n      (∫ u in Ici (0 : ℝ), Real.exp (-σ * u) * sampledPickup u ^ 2)"
+source_signature_sha256 = "0a7cccb0c8bc48201931a8eae1e6db8ac87829470ef002a4371ad8f5e79164bc"
+
+[[declarations]]
+source_name = "actual_energy_le_cellMass_tsum"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem actual_energy_le_cellMass_tsum {σ : ℝ} (hσ : 0 < σ)\n    (hs : Summable (sampleCellMass σ)) :\n    (∫ u in Ici (0 : ℝ), Real.exp (-σ * u) * wholePickup u ^ 2) ≤\n      2 * (∑' k : ℕ, sampleCellMass σ k) + 2 / (σ + 1)"
+source_signature_sha256 = "16560f12d7469528414e05ece4eb5aa7c1ea3e4b2bf3ecce304db31476bd267b"
+
+[[declarations]]
+source_name = "abscissa_zero_iff_reciprocal_cellMass"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem abscissa_zero_iff_reciprocal_cellMass :\n    pickupEnergyAbscissa = 0 ↔\n      ∀ j : ℕ, Summable (sampleCellMass (CofinalDamping.reciprocalDamping j))"
+source_signature_sha256 = "f82fbd00c9b5f02ae2272f142fe5d8d4eb45816ae744a7c00db00ba5c377986f"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_reciprocal_cellMass"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem riemannHypothesis_of_reciprocal_cellMass\n    (hs : ∀ j : ℕ, Summable (sampleCellMass (CofinalDamping.reciprocalDamping j))) :\n    _root_.RiemannHypothesis"
+source_signature_sha256 = "71586bf19ffb597af29e473c3feabdae140b2e8888208699d3e82bcc35b075f4"
+
+[[hostile_controls]]
+id = "closed-source"
+description = "Retain both actual prefixes at exactly n, Q1=0, and factor four."
+
+[[hostile_controls]]
+id = "cell-cover"
+description = "Disjoint half-open cells must exhaust the whole half-line, not a finite prefix."
+
+[[hostile_controls]]
+id = "integrability-first"
+description = "Require genuine summability/integrability before real infinite integral and tsum identities."
+
+[[hostile_controls]]
+id = "positive-damping"
+description = "Do not evaluate the sigma-denominator formula at zero or infer sigma=0 integrability."
+
+[[hostile_controls]]
+id = "signed-square"
+description = "Retain mixed correlation and negative terminal compensation; diagonal-only is invalid."
+
+[[hostile_controls]]
+id = "actual-estimate"
+description = "The recurrence, paid interpolation and increment diagonal do not establish the actual all-rate supplier."
+
+[[hostile_controls]]
+id = "nonmobius-control"
+description = "All-positive comparison coefficients obey local allowances but not the small-damping target."
+
+[[hostile_controls]]
+id = "exact-trust"
+description = "No source, prior target, finite diagnostic or root-only pass substitutes for full exact-head trust evidence."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_private_and_generated_declaration_reconciliation = true
+requires_full_inherited_target_and_dependency_coverage = true
+requires_independent_source_review = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = ["unconditional RH", "new complete-pickup damping", "actual cancellation supplier", "fresh Lean acceptance", "choice-free dependency closure", "formalized dyadic block criterion", "formalized uniform integral-test diagonal bound"]

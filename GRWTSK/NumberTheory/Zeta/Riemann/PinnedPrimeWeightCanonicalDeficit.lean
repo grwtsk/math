@@ -21,9 +21,7 @@ stage.  This module performs two conservative repairs.
 First, for a fixed coefficient it defines the least nonnegative residual
 needed to majorize the next-octave theta amplitude:
 
-  max 0 (target - |c A_X^2| / X).
-
-Second, it fixes one coefficient rule before the epsilon and scale
+  max 0 (target - |c A_X^2| / X).Second, it fixes one coefficient rule before the epsilon and scale
 quantifiers.  The rule-relative residual criterion is proved equivalent to a
 criterion using only the canonical deficit.
 
@@ -36,6 +34,8 @@ IMMUTABLE_COEFFICIENT_RULE_DEFINED /
 RULE_RESIDUAL_DEFICIT_EQUIVALENCE_DEFINED /
 COEFFICIENT_SOURCE_LAW_OPEN / NO_RH_CLAIM.
 -/
+
+open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 
 namespace GRWTSK.RiemannHypothesis
 

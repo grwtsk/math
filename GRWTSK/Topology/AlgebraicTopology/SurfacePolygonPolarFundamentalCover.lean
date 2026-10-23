@@ -24,11 +24,16 @@ immutable-head elaboration.
 -/
 
 set_option autoImplicit false
+open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover
 
+open _root_.Topology
+
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk
 
 /-- Every genuine unit-circle point has a closed unit-interval
 representative, with 0 and 1 legitimately identified. -/
@@ -36,38 +41,63 @@ theorem unitAddCircle_unitInterval_surjective :
     ∀ z : UnitAddCircle,
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z := by
   intro z
-  have hcover :
-      Set.range (fun θ : Set.Icc (0 : ℝ) 1 =>
-        ((θ : ℝ) : UnitAddCircle)) = Set.univ := by
-    simpa only [Set.image_univ] using
-      (AddCircle.coe_image_Icc_eq (1 : ℝ) 0)
-  have hz : z ∈ Set.range (fun θ : Set.Icc (0 : ℝ) 1 =>
-      ((θ : ℝ) : UnitAddCircle)) := by
-    rw [hcover]
+  have hz : z ∈ ((↑) : ℝ → UnitAddCircle) '' Set.Icc (0 : ℝ) 1 := by
+    rw [show ((↑) : ℝ → UnitAddCircle) '' Set.Icc (0 : ℝ) 1 = Set.univ by
+      simpa only [zero_add] using (AddCircle.coe_image_Icc_eq (1 : ℝ) 0)]
     trivial
-  rcases hz with ⟨θ, hθ⟩
-  exact ⟨θ, hθ⟩
+  rcases hz with ⟨θ, hθ, heq⟩
+  exact ⟨⟨θ, hθ⟩, heq⟩
 
 /-- Unconditional source candidate for compact-cover quotient status,
 consuming the precise closed fundamental-domain theorem. -/
 theorem compactPolarProjection_isQuotientMap :
     IsQuotientMap compactPolarProjection := by
-  letI : T2Space (UnitAddCircle × unitInterval) := inferInstance
+  let : T2Space (UnitAddCircle × unitInterval) := inferInstance
   exact compactPolarProjection_isQuotientMap_of_cover
     unitAddCircle_unitInterval_surjective
 
-/-- Unconditional source candidate for JOINT polar continuity.
-The proof uses the compact quotient, not separately continuous slices. -/
+/-- The real-angle/radius product projection is a quotient map.
+The exact closed fundamental-interval cover supplies the only
+surjectivity input to the existing compact-to-Hausdorff comparison;
+the real line itself is not asserted compact. -/
+theorem polarProductProjection_isQuotientMap :
+    IsQuotientMap
+      GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity.polarProductProjection := by
+  let : T2Space (UnitAddCircle × unitInterval) := inferInstance
+  exact polarProductProjection_isQuotientMap_of_cover
+    unitAddCircle_unitInterval_surjective
+
+/-- Unconditional joint polar continuity through the exact real-angle
+product quotient map. The compact-cover route remains independently
+available as unitCircleJointPolar_continuous_of_compact_quotient. -/
 theorem unitCircleJointPolar_continuous :
     Continuous
       GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity.unitCircleJointPolar := by
-  exact unitCircleJointPolar_continuous_of_compact_quotient
-    compactPolarProjection_isQuotientMap
+  exact unitCircleJointPolar_continuous_of_quotient
+    polarProductProjection_isQuotientMap
+
+/-- The genuine joint polar map is the unique continuous descent of
+the original real-angle polar formula through the real-angle/radius
+quotient projection. Equality is required at EVERY real angle and
+radius; no representative choice or radius-zero exception is fitted. -/
+theorem unitCircleJointPolar_existsUnique_continuous_source :
+    ∃! F : UnitAddCircle × unitInterval → ClosedComplexUnitDisk,
+      Continuous F ∧
+        F ∘ polarProductProjection = realPolarProduct := by
+  refine ⟨unitCircleJointPolar, ⟨unitCircleJointPolar_continuous, ?_⟩, ?_⟩
+  · funext p
+    exact unitCircleJointPolar_source p
+  · intro F hF
+    funext q
+    obtain ⟨p, hp⟩ := polarProductProjection_surjective q
+    rw [← hp]
+    exact (congrFun hF.2 p).trans (unitCircleJointPolar_source p).symm
 
 /-
-Next: validate the pinned AddCircle.coe_image_Icc_eq statement and
-topology instances, then descend the joint polar map through the
-actual StandardCircleCone apex relation. No disk homeomorphism yet.
+Next: run pinned Lean elaboration and trust-zero audits on the
+AddCircle closed-interval cover and both joint-continuity proof routes,
+then replay cone descent and polar fibers. The existing source-level
+cone-to-disk homeomorphism is not accepted without those audits.
 -/
 
 end GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover

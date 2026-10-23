@@ -50,7 +50,7 @@ def tentCoefficient (x h : ℝ) (p : ℂ) : ℂ := logCoefficient p * tentKernel
 
 theorem logCoefficient_nontrivial (z : ZeroPoint) :
     logCoefficient z.1 = -(multiplicity z : ℂ) := by
-  simp only [logCoefficient, if_neg z.2.2.2, multiplicity]
+  simp only [logCoefficient, if_neg z.2.2.2, CanonicalZeroDivisor.multiplicity]
 
 /-- Simplicity of the actual trivial zero determines its natural analytic order. -/
 theorem analyticOrderNatAt_trivialPoint (k : ℕ) :
@@ -155,7 +155,7 @@ theorem tent_principal_part (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
       integrand x h =ᶠ[𝓝[≠] p] fun z => tentCoefficient x h p / (z - p) + A z := by
   obtain ⟨A, hA, hpart⟩ := negative_log_principal_part p hp
   exact principal_part_mul (fun z => -logDeriv riemannZeta z) A (tentKernel x h)
-    p (logCoefficient p) hA (differentiable_tentKernel x h hh ha).analyticAt hpart
+    p (logCoefficient p) hA ((differentiable_tentKernel x h hh ha).analyticAt p) hpart
 
 /-- The filled rectangle is the interior together with all four closed edges. -/
 theorem closed_mem_interior_or_boundary (N : ℕ) (z : ℂ)

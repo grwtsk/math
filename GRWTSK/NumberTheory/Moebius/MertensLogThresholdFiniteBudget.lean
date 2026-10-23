@@ -26,22 +26,24 @@ theorem logThresholdDepthSummand_nonneg
   apply mul_nonneg
   · positivity
   · apply sub_nonneg.mpr
-    apply one_div_le_one_div_of_le
-    · positivity
+    apply inv_anti₀
+    · have h : 0 < harmonicInitialDenominator j t := by
+        unfold harmonicInitialDenominator
+        omega
+      exact_mod_cast h
     · exact_mod_cast Nat.le_succ (harmonicInitialDenominator j t)
 
 /-- One reciprocal-depth summand is at most the reciprocal left dyadic scale. -/
 theorem logThresholdDepthSummand_le_leftInv
     (j t : ℕ) :
     (t + 1 : ℝ) *
-        ((((harmonicInitialDenominator j t : ℕ) : ℝ))⁻¹ -
-          ((((harmonicInitialDenominator j t + 1 : ℕ) : ℝ))⁻¹) ≤
-      (((2 ^ j : ℕ) : ℝ))⁻¹ := by
+      ((harmonicInitialDenominator j t : ℝ)⁻¹ -
+        ((harmonicInitialDenominator j t + 1 : ℕ) : ℝ)⁻¹) ≤
+      ((2 ^ j : ℕ) : ℝ)⁻¹ := by
   let X : ℕ := 2 ^ j
   let M : ℕ := harmonicInitialDenominator j t
   have hX : 1 ≤ X := by
-    dsimp [X]
-    positivity
+    exact one_le_pow₀ (by norm_num : (1 : ℕ) ≤ 2)
   have hXM : X ≤ M := by
     dsimp [M, harmonicInitialDenominator, X]
     exact le_max_left _ _
@@ -49,9 +51,9 @@ theorem logThresholdDepthSummand_le_leftInv
     dsimp [M, harmonicInitialDenominator]
     have htm : t + 1 ≤ t + 2 := by omega
     exact le_trans htm (le_max_right _ _)
-  have hXR : (0 : ℝ) < X := by exact_mod_cast hX
+  have hXR : (0 : ℝ) < X := by exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hX)
   have hMR : (0 : ℝ) < M := by
-    exact_mod_cast (le_trans hX hXM)
+    exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one (le_trans hX hXM))
   have hM1R : (0 : ℝ) < M + 1 := by positivity
   change (t + 1 : ℝ) *
       ((M : ℝ)⁻¹ - ((M + 1 : ℕ) : ℝ)⁻¹) ≤
@@ -59,8 +61,8 @@ theorem logThresholdDepthSummand_le_leftInv
   have hdiff :
       (M : ℝ)⁻¹ - ((M + 1 : ℕ) : ℝ)⁻¹ =
         1 / ((M : ℝ) * (M + 1 : ℝ)) := by
-    field_simp [ne_of_gt hMR, ne_of_gt hM1R]
-    ring
+    push_cast
+    field_simp [ne_of_gt hMR, ne_of_gt hM1R]; ring
   rw [hdiff]
   have htMR : (t + 1 : ℝ) ≤ M := by exact_mod_cast htM
   have hXM_R : (X : ℝ) ≤ M := by exact_mod_cast hXM
@@ -69,8 +71,7 @@ theorem logThresholdDepthSummand_le_leftInv
   have hstep :
       (t + 1 : ℝ) / ((M : ℝ) * (M + 1 : ℝ))
         ≤ 1 / (M : ℝ) := by
-    rw [div_le_iff₀ hden]
-    have hMpos : 0 ≤ (M : ℝ) := le_of_lt hMR
+    apply (div_le_div_iff₀ hden hMR).mpr
     nlinarith
   have hinv : 1 / (M : ℝ) ≤ 1 / (X : ℝ) := by
     exact one_div_le_one_div_of_le hXR hXM_R
@@ -100,9 +101,9 @@ theorem logThresholdFiniteDepthSum_le_two
       simp
     _ = 2 := by
       rw [Nat.pow_succ]
+      push_cast
       have hX : (((2 ^ j : ℕ) : ℝ)) ≠ 0 := by positivity
       field_simp [hX]
-      ring
 
 /-- The parent finite-depth obligation is now discharged unconditionally. -/
 theorem logThresholdFiniteDepthBudget
@@ -118,7 +119,8 @@ theorem normalizedShortPacketBudget_le_four_logThreshold
     normalizedShortPacketBudget j ≤
       4 * (logarithmicShiftThreshold j : ℝ) := by
   unfold normalizedShortPacketBudget normalizedShortDepthBudget
-  rw [Finset.mul_sum]
+  simp_rw [mul_assoc]
+  rw [← Finset.mul_sum, ← Finset.mul_sum, ← mul_assoc]
   calc
     2 * (logarithmicShiftThreshold j : ℝ) *
         (∑ t ∈ Finset.range (2 ^ (j + 1)),

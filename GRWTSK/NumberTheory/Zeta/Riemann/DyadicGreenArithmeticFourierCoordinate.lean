@@ -38,7 +38,7 @@ ARITHMETIC_FOURIER_COORDINATES_EXPOSED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open MeasureTheory Set
+open _root_.MeasureTheory Real Filter Topology Set
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 
 /-- The zero-endpoint Fourier primitive written directly as a phase difference. -/
@@ -48,7 +48,7 @@ theorem fourierModeValue_eq_phase_difference
       (fourier (-k) (t : AddCircle (1 : ℝ)) - 1) /
         (-2 * π * Complex.I * k) := by
   unfold fourierModeValue fourierModePrimitive
-  rw [fourier_eval_zero]
+  rw [AddCircle.coe_zero, fourier_eval_zero]
   field_simp [hk, Real.pi_pos.ne']
   ring
 
@@ -178,7 +178,8 @@ theorem greenArithmeticFourierHead_tendsto
     {X : ℕ} (hX : 0 < X) :
     Tendsto (greenArithmeticFourierHead X)
       Filter.atTop (𝓝 (greenEnergy X)) := by
-  simpa only [greenArithmeticFourierHead_eq_admissible hX] using
-    greenAdmissibleFourierActionHead_tendsto hX
+  convert! greenAdmissibleFourierActionHead_tendsto hX using 1
+  funext N
+  exact greenArithmeticFourierHead_eq_admissible hX N
 
 end GRWTSK.RiemannHypothesis

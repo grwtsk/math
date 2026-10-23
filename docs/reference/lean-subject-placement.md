@@ -33,7 +33,7 @@ mutation occurred; a failed process is unavailable execution evidence, not a
 mathematical refutation.
 
 The executable policy is the versioned static manifest
-`verification/lean-subject-sort-v1.toml`. Its subject profiles may be extended as
+`docs/verification/_unscoped/lean-subject-sort-v1.toml`. Its subject profiles may be extended as
 the taxonomy grows. Existing top-level subject directories can be represented as
 provisional local profiles without being silently promoted to accepted taxonomy
 concepts. Immutable prefixes such as `GRWTSK/SourceCorpus` are custody roots, not

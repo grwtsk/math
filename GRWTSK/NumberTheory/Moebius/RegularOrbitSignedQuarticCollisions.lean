@@ -65,7 +65,11 @@ theorem parityHalfShiftSignedResidueComplexBucket_eq_real
     parityAffineShiftResidueCorrelation
   push_cast
   simp_rw [Finset.mul_sum]
-  ring
+  apply Finset.sum_congr rfl
+  intro h _
+  apply Finset.sum_congr rfl
+  intro u _
+  split_ifs <;> simp
 
 /-- Even refined bucket as the generic half-shift bucket. -/
 theorem parityEvenHalfShiftSignedResidueBucket_eq_generic
@@ -113,10 +117,22 @@ theorem sum_sq_realBucket_eq_signedQuarticCollision
   classical
   unfold parityHalfShiftSignedResidueRealBucket
     parityHalfShiftSignedQuarticCollision
-  simp_rw [pow_two]
-  simp_rw [Finset.mul_sum, Finset.sum_mul]
+  simp only [mul_pow]
+  norm_num only [show (2 : ℝ) ^ 2 = 4 by norm_num]
+  rw [← Finset.mul_sum]
+  congr 1
+  simp only [pow_two, Finset.sum_mul_sum]
   rw [Finset.sum_comm]
-  ring_nf
+  conv_lhs =>
+    arg 2
+    ext h
+    rw [Finset.sum_comm]
+    arg 2
+    ext g
+    rw [Finset.sum_comm]
+    arg 2
+    ext u
+    rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
   apply Finset.sum_congr rfl
@@ -125,18 +141,13 @@ theorem sum_sq_realBucket_eq_signedQuarticCollision
   intro u _hu
   apply Finset.sum_congr rfl
   intro v _hv
+  simp_rw [ite_mul, zero_mul, mul_ite, mul_zero]
   by_cases hcoord :
       parityAffineShiftResidueCoordinate d u h =
         parityAffineShiftResidueCoordinate d v g
   · rw [hcoord]
-    simp
-  · have hne :
-        ∀ s : ZMod (d * d),
-          ¬ (parityAffineShiftResidueCoordinate d u h = s ∧
-            parityAffineShiftResidueCoordinate d v g = s) := by
-      intro s hs
-      exact hcoord (hs.1.trans hs.2.symm)
-    simp [hcoord, hne]
+    simp [mul_assoc]
+  · simp [hcoord, Ne.symm hcoord]
 
 /-- Generic complex residue energy equals the signed quartic collision sum. -/
 theorem sum_norm_sq_complexBucket_eq_signedQuarticCollision
@@ -206,7 +217,7 @@ def twoNonunitRegularSignedQuarticCollisionEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         twoNonunitRegularSignedQuarticCollisionMajorant b d
       else 0
@@ -224,7 +235,7 @@ theorem residueL2EndpointMajorant_eq_signedQuarticCollision
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hNonunit : TwoNonunitSquareModulusParameter d
   · simp only [hNonunit, dif_pos]
     exact residueL2Majorant_eq_signedQuarticCollision b d

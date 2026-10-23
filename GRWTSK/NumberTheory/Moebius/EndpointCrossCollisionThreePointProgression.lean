@@ -85,7 +85,7 @@ theorem sum_mertensEndpointForwardCross_eq_progression
     have ha_n : a < n := by omega
     have hac_n : a + h < n := by omega
     unfold mertensEndpointStratumPairSet mertensEndpointPairSet
-    simp only [Finset.mem_filter, Finset.mem_product, Finset.mem_range]
+    simp only [Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product, Finset.mem_range]
     refine ⟨⟨ha_n, hac_n⟩, ?_⟩
     apply
       (mertensEndpointFourMobiusStratum_eq_forwardCross_iff
@@ -115,11 +115,8 @@ theorem sum_mertensEndpointForwardCross_eq_progression
         ((mertensEndpointFourMobiusStratum_eq_forwardCross_iff
           (b := b) (n := n) (a := a) (c := c) hnb).mp hstr).2
     subst c
-    unfold mertensEndpointFourMobiusTerm
-      mertensThreePointProgressionTerm
-    have hm : a + h + 1 = a + 1 + h := by omega
-    have hr : a + h + 1 + h = a + 1 + h + h := by omega
-    rw [hm, hr]
+    dsimp only [mertensEndpointFourMobiusTerm, mertensThreePointProgressionTerm]
+    simp only [h, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
     ring
 
 /-- Backward-cross pairs give the same one-dimensional progression sum, now
@@ -160,7 +157,7 @@ theorem sum_mertensEndpointBackwardCross_eq_progression
     have hc_n : c < n := by omega
     have hch_n : c + h < n := by omega
     unfold mertensEndpointStratumPairSet mertensEndpointPairSet
-    simp only [Finset.mem_filter, Finset.mem_product, Finset.mem_range]
+    simp only [Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product, Finset.mem_range]
     refine ⟨⟨hch_n, hc_n⟩, ?_⟩
     apply
       (mertensEndpointFourMobiusStratum_eq_backwardCross_iff
@@ -191,11 +188,8 @@ theorem sum_mertensEndpointBackwardCross_eq_progression
         ((mertensEndpointFourMobiusStratum_eq_backwardCross_iff
           (b := b) (n := n) (a := a) (c := c) hnb).mp hstr).2.2
     subst a
-    unfold mertensEndpointFourMobiusTerm
-      mertensThreePointProgressionTerm
-    have hm : c + h + 1 = c + 1 + h := by omega
-    have hr : c + h + 1 + h = c + 1 + h + h := by omega
-    rw [hm, hr]
+    dsimp only [mertensEndpointFourMobiusTerm, mertensThreePointProgressionTerm]
+    simp only [h, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm]
     ring
 
 /-- The complete endpoint cross-collision contribution in one-dimensional
@@ -242,7 +236,7 @@ theorem mertensEndpointFibreCrossCollisionEnergy_eq_progression
 cross-collision observable. -/
 def weightedMertensEndpointCrossCollisionProgressionEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointCrossCollisionProgressionEnergy b
 

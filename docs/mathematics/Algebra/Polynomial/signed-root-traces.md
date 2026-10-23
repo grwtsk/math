@@ -81,13 +81,13 @@ unfinished. No code from that repository is imported or copied.
 The [interpolation source](../../../../GRWTSK/Algebra/Polynomial/ConjugateInterpolation.lean),
 [trace source](../../../../GRWTSK/Algebra/Polynomial/SignedRootTrace.lean), and
 [consumer fixtures](../../../../GRWTSK/Algebra/Polynomial/Checks/Positive/SignedRootTrace.lean)
-are bound by the [selected native receipt](../../../../.noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json).
+are bound by the selected native receipt (artifact:gitblob:765015f56011a087f12a78960c4f7d83b2298859).
 The replay uses pinned Lean 4.33.0 and Mathlib, trust zero, fatal warnings,
 fresh selected project objects, and the complete owned-declaration and
 transitive-axiom audit for those modules. Cached dependency objects are
 fingerprinted and reused; Mathlib and the whole repository are not rebuilt.
 Only `propext`, `Classical.choice`, and `Quot.sound` are allowed.
-The [integration record](../../../../.noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-integration-2026-10-15.json)
+The integration record (artifact:gitblob:58616fe9cb0230cb7609f4b57f943304006fc986)
 preserves search scope, contribution roles, earlier attempts and repository
 validation limits. Existing repository-wide layout and documentation failures
 block a whole-repository conformance claim. No independent review, novelty,

@@ -165,7 +165,7 @@ zeta-zero data. The literal Lean decisions have not executed here.
 ## 6. Acceptance and next scope
 
 The isolated root is GRWTSK.Interfaces.QuadraticIntervalRationalQuadratureCore.
-The static target is verification/quadratic-interval-rational-quadrature-v0.1.toml.
+The static target is docs/verification/Interfaces/QuadraticIntervalRationalQuadratureCore/quadratic-interval-rational-quadrature-v0.1.toml.
 It retains the predecessor target chain, every required type/name/control, all
 generated structures and decision instances, and full transitive import/trust
 obligations. Repeated source entries with empty name arrays do not waive earlier

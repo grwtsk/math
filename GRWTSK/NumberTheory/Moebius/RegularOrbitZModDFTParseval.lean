@@ -69,56 +69,14 @@ theorem sum_conj_dft_mul_dft
       star (ZMod.dft C k) * ZMod.dft C k) =
       (((d * d : ℕ) : ℂ)) *
         (∑ s : ZMod (d * d), star (C s) * C s) := by
-  classical
-  simp_rw [ZMod.dft_apply, smul_eq_mul]
-  simp_rw [map_sum, star_mul, AddChar.map_neg_eq_conj]
-  simp_rw [Finset.sum_mul, Finset.mul_sum]
-  rw [Finset.sum_comm]
-  simp_rw [Finset.sum_comm (s := Finset.univ)]
-  calc
-    (∑ s : ZMod (d * d),
-      ∑ t : ZMod (d * d),
-        ∑ k : ZMod (d * d),
-          (star (C s) *
-              ZMod.stdAddChar (s * k)) *
-            (ZMod.stdAddChar (-(t * k)) * C t)) =
-      ∑ s : ZMod (d * d),
-        ∑ t : ZMod (d * d),
-          (star (C s) * C t) *
-            (∑ k : ZMod (d * d),
-              ZMod.stdAddChar ((s - t) * k)) := by
-        apply Finset.sum_congr rfl
-        intro s _hs
-        apply Finset.sum_congr rfl
-        intro t _ht
-        rw [Finset.mul_sum]
-        apply Finset.sum_congr rfl
-        intro k _hk
-        rw [← AddChar.map_add_eq_mul]
-        congr 2
-        ring
-    _ =
-      ∑ s : ZMod (d * d),
-        ∑ t : ZMod (d * d),
-          (star (C s) * C t) *
-            (if s = t then (((d * d : ℕ) : ℂ)) else 0) := by
-        simp_rw [sum_stdAddChar_sub_mul d]
-    _ =
-      ∑ s : ZMod (d * d),
-        (star (C s) * C s) * (((d * d : ℕ) : ℂ)) := by
-        apply Finset.sum_congr rfl
-        intro s _hs
-        rw [Finset.sum_eq_single s]
-        · simp
-        · intro t _ht hts
-          simp [hts]
-        · simp
-    _ = (((d * d : ℕ) : ℂ)) *
-        (∑ s : ZMod (d * d), star (C s) * C s) := by
-      rw [Finset.mul_sum]
-      apply Finset.sum_congr rfl
-      intro s _hs
-      ring
+  have hnorm : (∑ k : ZMod (d * d), ‖ZMod.dft C k‖ ^ 2) =
+      ((d * d : ℕ) : ℝ) * ∑ s : ZMod (d * d), ‖C s‖ ^ 2 := by
+    rw [← sum_norm_sq_stdAddCharResidueFourier_eq_mathlibDft d C]
+    exact stdAddChar_parseval_norm_sq (d * d) C
+  simp only [← Complex.normSq_eq_norm_sq] at hnorm
+  have hc := congrArg (fun x : ℝ => (x : ℂ)) hnorm
+  simpa only [Complex.ofReal_sum, Complex.ofReal_mul, Complex.ofReal_natCast,
+    Complex.normSq_eq_conj_mul_self, starRingEnd_apply] using hc
 
 /-- Exact unnormalized squared-norm Parseval identity for Mathlib's
 `ZMod.dft` at square modulus. -/
@@ -129,16 +87,20 @@ theorem unnormalizedZModDFTParseval_sq
       (((d * d : ℕ) : ℝ)) *
         (∑ s : ZMod (d * d), ‖C s‖ ^ 2) := by
   have hcomplex := sum_conj_dft_mul_dft d C
-  have hreal := congrArg Complex.re hcomplex
-  simpa [Complex.normSq_eq_conj_mul_self,
-    Complex.normSq_eq_norm_sq] using hreal
+  change (∑ k, (starRingEnd ℂ) (ZMod.dft C k) * ZMod.dft C k) =
+    ((d * d : ℕ) : ℂ) * ∑ s, (starRingEnd ℂ) (C s) * C s at hcomplex
+  simp_rw [← Complex.normSq_eq_conj_mul_self] at hcomplex
+  have hreal : (∑ k : ZMod (d * d), Complex.normSq (ZMod.dft C k)) =
+      ((d * d : ℕ) : ℝ) * ∑ s : ZMod (d * d), Complex.normSq (C s) := by
+    exact_mod_cast hcomplex
+  simpa only [Complex.normSq_eq_norm_sq] using hreal
 
 /-- Constructed source-level inhabitant of the exact DFT Parseval
 proposition. -/
 theorem unnormalizedZModDFTParseval :
     UnnormalizedZModDFTParseval := by
   intro d hd C
-  letI : NeZero d := hd
+  let : NeZero d := hd
   exact unnormalizedZModDFTParseval_sq d C
 
 /-- The repository `stdAddChar(k*s)` Parseval proposition now follows by the

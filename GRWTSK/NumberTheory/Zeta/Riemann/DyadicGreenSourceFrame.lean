@@ -35,7 +35,8 @@ EXACT_DYADIC_GREEN_SOURCE_FRAME_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open MeasureTheory Set
+open _root_.MeasureTheory Set
+open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
 open CanonicalZeroDivisor
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
@@ -93,7 +94,8 @@ theorem greenSourceFrameNormSq_nonnegative
 
 theorem window_card (X : ℕ) :
     (window X).card = X := by
-  simpa [window] using Nat.card_Ioc X (2 * X)
+  simp only [window, Nat.card_Ioc]
+  omega
 
 def greenSourceFrameAtomCount (X : ℕ) : ℕ :=
   (window X).card + 1
@@ -121,7 +123,7 @@ theorem action_eq_greenSourceFrameReadout
     {X : ℕ} (hX : 0 < X)
     (φ : ComplexTest) :
     action X φ.value = greenSourceFrameReadout X φ := by
-  rw [ComplexReadout.centered_ibp φ hX]
+  rw [GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.centered_ibp φ hX]
   unfold greenSourceFrameReadout
   congr 1
   apply integral_congr_ae

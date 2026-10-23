@@ -5,7 +5,7 @@ into `ResearchState`. Its declarations live in
 `GRWTSK.Logic.StateTransition.ResearchObservation`; its maintained module is
 `GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation`.
 The static mathematical acceptance contract is
-[`verification/research-observation-v1.toml`](../verification/research-observation-v1.toml).
+[`docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchObservation/research-observation-v1.toml`](verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchObservation/research-observation-v1.toml).
 Neither this note nor that contract is an execution receipt.
 
 The source baseline is Gate Zero, math commit

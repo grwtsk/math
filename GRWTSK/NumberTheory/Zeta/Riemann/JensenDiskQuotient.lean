@@ -57,8 +57,9 @@ theorem translated_multiplicity_factorization (c : ℂ) (z : ZeroPoint) :
     have hcont : Continuous (fun w : ℂ => c + w) := continuous_const.add continuous_id
     simpa only [hcenter] using (hcont.continuousAt (x := z.1 - c)).tendsto
   refine ⟨fun w => A (c + w), ?_, ?_, ?_⟩
-  · simpa only [sub_neg_eq_add, sub_eq_add_neg, add_comm] using hA.comp_sub (-c)
-  · rw [hcenter]
+  · simpa only [sub_neg_eq_add, sub_eq_add_neg, add_comm, neg_neg] using hA.comp_sub (-c)
+  · change A (c + (z.1 - c)) ≠ 0
+    rw [hcenter]
     exact hA0
   · filter_upwards [hshift.eventually he] with w hw
     have heq : c + w - z.1 = w - (z.1 - c) := by ring
@@ -106,7 +107,7 @@ theorem exists_zeta_disk_quotient (N : ℕ) (hN : 2 ≤ N) (c : ℂ)
   · exact fun z hz => (mem_diskHead N c hc z).mp hz
   · intro z _ v _ he
     apply Subtype.val_injective
-    exact sub_right_injective he
+    exact sub_left_injective he
   · exact fun z _ => multiplicity_pos z
   · exact analytic_translated_zeta N hN c hc
   · exact fun z _ => translated_multiplicity_factorization c z

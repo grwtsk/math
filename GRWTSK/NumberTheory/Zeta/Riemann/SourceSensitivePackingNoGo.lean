@@ -55,7 +55,7 @@ theorem target_eq_zero_of_model_tendsto_zero
       Tendsto V atTop (𝓝 (L * target)) := by
     exact hright.congr' (Eventually.of_forall fun n => (identity n).symm)
   have hzero : L * target = 0 :=
-    tendsto_nhds_unique hV hsame
+    tendsto_nhds_unique hsame hV
   exact (mul_eq_zero.mp hzero).resolve_left hL.ne'
 
 /-- Comparison of the fixed damped packing against one signed quartic target. -/
@@ -155,7 +155,7 @@ theorem SourceSensitivePackingComparisonAtZero.stage_nonnegative
     {family : SourceSensitivePrimePowerPointFamily Parameter}
     {parameterOfZero : ℂ → Parameter}
     {s : ℂ}
-    (comparison :
+    (_comparison :
       SourceSensitivePackingComparisonAtZero family parameterOfZero s)
     (n : ℕ) :
     0 ≤ (family.sequence (parameterOfZero s)).valueAt n :=

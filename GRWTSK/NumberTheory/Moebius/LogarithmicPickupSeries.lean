@@ -145,8 +145,8 @@ theorem sampleResidue_increment_sq_le {n : ℕ} (hn : 1 ≤ n) :
     (by positivity : 0 ≤ (Real.sqrt (n + 1 : ℕ))⁻¹ / 2)).mpr
       (sampleResidue_increment_abs_le hn)
   rw [sq_abs, div_pow, inv_pow, Real.sq_sqrt hn1] at hs
-  convert hs using 1 <;> (try rfl) <;> push_cast <;>
-    (try field_simp [show (n : ℝ) + 1 ≠ 0 by positivity]) <;> ring
+  convert hs using 1 <;> (try rfl); push_cast;
+    (try field_simp [show (n : ℝ) + 1 ≠ 0 by positivity]); ring
 
 /-- A finite harmonic allowance for the actual diagonal increment sum. -/
 theorem sampleResidue_diagonal_le (N : ℕ) :
@@ -157,8 +157,8 @@ theorem sampleResidue_diagonal_le (N : ℕ) :
   apply Finset.sum_le_sum
   intro k _
   have h := sampleResidue_increment_sq_le (n := k + 1) (by omega)
-  convert h using 1 <;> (try rfl) <;> push_cast <;>
-    (try field_simp [show (k : ℝ) + 2 ≠ 0 by positivity]) <;> ring
+  convert h using 1 <;> (try rfl); push_cast;
+    (try field_simp [show (k : ℝ) + 2 ≠ 0 by positivity]); ring
 
 /-- Finite summation by parts retains the terminal subtraction exactly. -/
 theorem sampleResidue_weighted_telescope (w : ℕ → ℝ) (N : ℕ) :
@@ -194,7 +194,6 @@ theorem sampleCellMass_partial_sum {σ : ℝ} (hσ : σ ≠ 0) (N : ℕ) :
     unfold sampleCellMass
     push_cast
     field_simp [hσ]
-    <;> ring
   simp_rw [hm]
   rw [← Finset.mul_sum,
     sampleResidue_weighted_telescope (fun n : ℕ ↦ Real.exp (-σ * Real.log (n : ℝ)))]
@@ -212,8 +211,8 @@ theorem sampleResidue_weighted_diagonal_le (σ : ℝ) (N : ℕ) :
   have h := mul_le_mul_of_nonneg_right
     (sampleResidue_increment_sq_le (n := k + 1) (by omega))
     (Real.exp_pos (-σ * Real.log (k + 2 : ℕ))).le
-  convert h using 1 <;> push_cast <;>
-    (try field_simp [show (k : ℝ) + 2 ≠ 0 by positivity]) <;> ring
+  convert h using 1; push_cast;
+    (try field_simp [show (k : ℝ) + 2 ≠ 0 by positivity]); ring
 
 theorem logarithmicCell_measurable (k : ℕ) : MeasurableSet (logarithmicCell k) :=
   measurableSet_Ico
@@ -290,9 +289,9 @@ private theorem integral_exp_neg_mul (σ a b : ℝ) (hσ : σ ≠ 0) :
   have hd (u : ℝ) : HasDerivAt (fun t : ℝ ↦ -Real.exp (-σ * t) / σ)
       (Real.exp (-σ * u)) u := by
     convert (((hasDerivAt_id u).const_mul (-σ)).exp.neg.div_const σ) using 1 <;>
-      (try rfl) <;> (try funext x) <;>
-      dsimp only [id_eq, Pi.neg_apply, Pi.smul_apply, smul_eq_mul] <;>
-      (try field_simp [hσ]) <;> ring
+      (try rfl);
+      dsimp only [id_eq, Pi.neg_apply, Pi.smul_apply, smul_eq_mul];
+      field_simp [hσ]
   have hi : IntervalIntegrable (fun u : ℝ ↦ Real.exp (-σ * u)) volume a b :=
     (Real.continuous_exp.comp (continuous_const.mul continuous_id)).intervalIntegrable a b
   rw [intervalIntegral.integral_eq_sub_of_hasDerivAt (fun u _ ↦ hd u) hi]

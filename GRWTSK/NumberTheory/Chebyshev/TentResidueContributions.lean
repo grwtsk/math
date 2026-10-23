@@ -108,7 +108,6 @@ theorem firstRiesz_second_difference (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
   rw [tentKernel_eq_quotient x h hh ha z hz hz1]
   unfold firstRieszKernel
   field_simp [hz, hz1, (by exact_mod_cast ne_of_gt hh : (h : ℂ) ≠ 0)]
-  <;> ring
 
 /-- The same scalar identity transports a finite-order residue, not a global contour sum. -/
 theorem weighted_residue_second_difference (x h : ℝ) (hh : 0 < h)

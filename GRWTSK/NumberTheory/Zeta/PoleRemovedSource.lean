@@ -134,8 +134,7 @@ theorem poleRemoved_eq_mul {s : ℂ} (hs : s ≠ 1) :
   have h1 : 1-s ≠ 0 := sub_ne_zero.mpr (Ne.symm hs)
   have halg : numerator s=(s-1)*(s*completedRiemannZeta₀ s-1-s/(1-s)) := by
     unfold numerator
-    field_simp [h1]
-    <;> ring
+    field_simp [h1]; ring
   rw [riemannZeta_eq_mul_completedRiemannZeta₀, ← denominator_eq_classical,
     ← mul_div_assoc, ← halg]
   rfl
@@ -160,7 +159,7 @@ theorem poleRemoved_deriv {s : ℂ} (hs : s ≠ 1) :
   rw [he.deriv_eq]
   have hd := (((hasDerivAt_id s).sub_const 1).mul
     (differentiableAt_riemannZeta hs).hasDerivAt).deriv
-  simpa only [one_mul] using hd
+  simpa only [one_mul, Pi.mul_def, id_eq] using hd
 
 /-- A nontrivial zeta zero is a zero of the entire numerator.
 Gamma nonvanishing is proved before reversing a quotient identity. -/

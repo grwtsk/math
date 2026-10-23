@@ -52,8 +52,8 @@ the wrong root. The empty-reference state still retains its mapped root.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableReindex.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReindex.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json)
+native receipt (artifact:gitblob:2b249d2aaef8a9b744379a0df99abaa79a36ad54)
+and integration record (artifact:gitblob:58ad264a66762c6870f2a36716e1619ce91cdbdb)
 bind fresh selected local sources and actual controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and every owned declaration and transitive
 axiom, allowing only `propext`, `Classical.choice` and `Quot.sound`.

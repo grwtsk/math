@@ -93,7 +93,7 @@ the visual similarity of the two source statements.
 
 An inert unified-diff candidate is added to `grwtsk/math` at
 
-`verification/openai-result007-prime-reciprocal-import-630-v0.1.patch`
+`docs/verification/_unscoped/openai-result007-prime-reciprocal-import-630-v0.1.patch`
 
 with blob `ceaec6a0f3e6fb568abf51848e09ea7ca0d04ebf`.
 

@@ -129,7 +129,6 @@ theorem parityHalfShiftSignedQuarticZeroWinding_eq_halfIndex
   rw [parityAffineShiftCollisionCoordinateNat_reconstructed m r h hr,
     parityAffineShiftCollisionCoordinateNat_reconstructed n r g hr,
     regularQuarticMobiusCoefficient_reconstructed]
-  rfl
 
 /-- Zero-winding equation as an additive-energy equality. -/
 theorem halfIndexZeroWindingCoordinate_eq_iff
