@@ -1,0 +1,185 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-nonunit-kernel-pair-660-v0.1"
+owner_repository = "grwtsk/math"
+issue = 660
+parent_issue = 642
+parent_pr = 648
+half_index_issue = 633
+half_index_pr = 637
+growing_affine_issue = 629
+growing_affine_pr = 631
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_TWO_NONUNIT_KERNEL_PAIR_SOURCE_DRAFT_TWO_NONUNIT_KERNEL_PAIR_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoNonunitKernelPair"
+build_target = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoNonunitKernelPair"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-two-unit-frequency-split-642-20261021"
+stacked_parent_revision = "e092fd7a19f3455e08056786225f8ef66c8d6e92"
+stacked_parent_tree = "50664caddcd5b50492dffbf265c098a4ba5f08df"
+candidate_branch = "research/rh-two-nonunit-kernel-pair-660-20261022"
+theorem_source_commit = "ba2e3c93384d19748d0fe62c3f44947037abf90b"
+theorem_source_tree = "21649d99f3a0af33bcce33acb5f302019e511c85"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/HalfIndexAffineChowlaTwoNonunitKernelPair.lean"
+theorem_source_git_blob = "d75d91bfe3e3c5f3c1b1ead1ddb4e4135147179f"
+mathematical_note_commit = "c877e99336ce6879aceda1bf2d2d016cbc5995e1"
+mathematical_note_tree = "489ab4d2c3b2553c4898a6ba1f201dc4665ddf12"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-nonunit-kernel-pair.md"
+mathematical_note_git_blob = "21296c0186d67d1651ba6987ba54c982b7fdcc37"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+two_nonunit_predicate = "TwoNonunitSquareModulusParameter"
+even_square_modulus = "squareModulus_even_of_twoNonunit"
+kernel_frequency = "twoKernelFrequency"
+kernel_order_two = "twoKernelFrequency_add_self_eq_zero"
+kernel_nonzero = "twoKernelFrequency_ne_zero"
+partner = "twoKernelPartner"
+partner_involution = "twoKernelPartner_involutive"
+doubled_frequency_invariance = "doubledSquareModulusFrequency_partner"
+exceptional_orbit_zero = "twoKernelPartner_zero"
+exceptional_orbit_kernel = "twoKernelPartner_kernel_eq_zero"
+shift_character = "twoKernelShiftCharacter"
+shift_character_order_two = "twoKernelShiftCharacter_sq"
+partner_phase = "affineChowlaShiftPhase_partner"
+partner_aggregate = "halfIndexAffineChowlaShiftAggregate_partner"
+pair_plus = "twoKernelPairPlusAggregate"
+pair_minus = "twoKernelPairMinusAggregate"
+plus_projector = "twoKernelPairPlusAggregate_eq_projector"
+minus_projector = "twoKernelPairMinusAggregate_eq_projector"
+original_recovery = "halfIndexAggregate_eq_half_pairPlus_add_pairMinus"
+partner_recovery = "halfIndexPartnerAggregate_eq_half_pairPlus_sub_pairMinus"
+frequency_majorant = "twoNonunitKernelPairFrequencyMajorant"
+pointwise_comparison = "halfIndexAffineChowlaFrequencyMajorant_le_kernelPair"
+endpoint_majorant = "twoNonunitKernelPairEndpointMajorant"
+endpoint_comparison = "twoNonunitHalfIndexEndpointMajorant_le_kernelPair"
+all_scale_supplier = "DyadicNaturalScaleTwoNonunitKernelPairBudget"
+supplier_transport = "twoNonunitHalfIndexBudget_of_kernelPair"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_twoUnit_kernelPair"
+proof_classification = "EXACT_ORDER_TWO_KERNEL_DECOMPOSITION_AND_SUFFICIENT_MAJORANT"
+
+[kernel_geometry]
+modulus = "N=d*d"
+branch = "not Nat.Coprime 2 N"
+kernel_frequency = "H=N/2 mod N"
+kernel_frequency_nonzero = true
+kernel_frequency_order_two = true
+partner_formula = "k -> k+H"
+partner_involutive = true
+doubled_frequency_constant_on_partner = true
+exceptional_orbit = "{0,H}"
+partner_equivalence_on_nonzero_set_claimed = false
+
+[shift_character]
+formula = "eta_d(h)=stdAddChar(H*h)"
+order_two = true
+identified_with_minus_one_power_h = false
+partner_phase_formula = "phase(k+H,h)=phase(k,h)*eta_d(h)"
+
+[pair_transform]
+plus_formula = "P_r(k)=A_r(k)+A_r(k+H)"
+minus_formula = "M_r(k)=A_r(k)-A_r(k+H)"
+plus_projector = "sum_h phase(k,h)*(1+eta_d(h))*U_r(h,2k)"
+minus_projector = "sum_h phase(k,h)*(1-eta_d(h))*U_r(h,2k)"
+original_recovery = "A_r(k)=(P_r(k)+M_r(k))/2"
+partner_recovery = "A_r(k+H)=(P_r(k)-M_r(k))/2"
+absolute_values_before_pair_transform = false
+
+[consumer_comparison]
+source_consumer = "twoNonunitHalfIndexAffineChowlaEndpointMajorant"
+new_majorant = "twoNonunitKernelPairEndpointMajorant"
+relation = "source_consumer <= new_majorant"
+complete_nonzero_frequency_set_retained = true
+exceptional_kernel_frequency_retained = true
+both_parities_retained = true
+all_positive_shifts_retained = true
+square_modulus_retained = true
+endpoint_support_retained = true
+normalization = "1/d^2"
+exact_equivalence_claimed = false
+
+[downstream]
+zero_mode_source = "OrdinaryMertensSquareRootPlusEpsilonEnvelope"
+two_unit_source = "DyadicNaturalScaleTwoUnitHalfIndexBudget"
+two_nonunit_source = "DyadicNaturalScaleTwoNonunitKernelPairBudget"
+consumer = "DyadicNaturalScaleSquareModulusCongruenceL1"
+zero_mode_proved = false
+two_unit_proved = false
+two_nonunit_proved = false
+
+[analytic_boundary]
+generic_adapter = "ToTwoNonunitKernelPairBudgetAdapter"
+data_profile = "TwoNonunitKernelPairAnalyticData"
+source_profile = "TwoNonunitKernelPairAnalyticSource"
+adapter = "TwoNonunitKernelPairAnalyticAdapter"
+named_adapter_value_constructed = false
+
+[evidence_states]
+source_draft = true
+two_nonunit_kernel_pair_source_draft = true
+even_square_modulus_consequence_scripted = true
+order_two_kernel_scripted = true
+exceptional_kernel_orbit_retained = true
+partner_aggregate_formula_scripted = true
+pair_projector_formulas_scripted = true
+pointwise_majorant_comparison_scripted = true
+conditional_downstream_transport_scripted = true
+two_nonunit_kernel_pair_estimate_proved = false
+two_unit_analytic_supplier_proved = false
+pointwise_mertens_envelope_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.HalfIndexAffineChowlaTwoNonunitKernelPair"
+definition_count = 10
+theorem_script_count = 18
+structure_count = 2
+abbrev_count = 1
+authored_declaration_count = 31
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/HalfIndexAffineChowlaTwoUnitSplit.lean"
+git_blob = "824581b619af9d071db1d74c770ecf151ec5ff09"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_648"
+
+[hostile_controls]
+nonzero_frequency_partner_equivalence_not_claimed = true
+exceptional_kernel_frequency_not_dropped = true
+absolute_values_inside_pair_transform_rejected = true
+order_two_character_not_identified_with_minus_one_power = true
+orbit_representative_reindex_not_claimed = true
+full_conductor_descent_not_claimed = true
+fixed_data_not_promoted_to_growing_family = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_two_nonunit_kernel_pair_budget = true
+prove_two_unit_budget = true
+prove_pointwise_mertens_envelope = true
+construct_named_kernel_pair_analytic_adapter = true
+handle_kernel_orbits_or_conductor_descent = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+two_nonunit_kernel_pair_bound_proved = false
+two_unit_bound_proved = false
+pointwise_mertens_envelope_proved = false
+large_sieve_adapter_proved = false
+chowla_adapter_proved = false
+l_function_adapter_proved = false
+riemann_hypothesis_proved = false
