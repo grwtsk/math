@@ -1749,3 +1749,134 @@ require distinct **unresolved** source-preserving suppliers.
 Irrationality of zeros and alternating signs are not substitutes
 for those positive-operator and uniform-error premises.
 
+
+## Case FAREY-PROJECTIVE-QUADRATIC-20261023 — actual quotient Koopman eigenfunction
+
+**Source identity, authorship and exact bibliography.**
+This is a **2026 repository-original finite-algebra construction**,
+source-credited to mathematical direction by **R.A. Jacob Martone**
+and formalization assistance from **OpenAI**. No separately
+established paper theorem with an exact title, authors, publication
+date and theorem locator constructs this `F₃²` quadratic
+eigenreadout, so no such attribution is invented.
+The actual stable primary source is
+[`grwtsk/math@0783908183b27551088174e28703b9116bf2ada7`](https://github.com/grwtsk/math/commit/0783908183b27551088174e28703b9116bf2ada7),
+file `GRWTSK/NumberTheory/Farey/ProjectiveQuadraticChannel.lean`,
+Git blob **`b07cb18412f3e64f42d2916fea91b1e59b2228c2`**.
+Its [scope note](../../../mathematics/NumberTheory/Farey/projective-quadratic-channel.md)
+records the explicit quotient, identities, hypotheses, and hostile fixtures.
+
+**Method and exact mathematical hypotheses.** The existing
+`ReturnAngularChannel.modThreeReturn` is the *actual*
+chronological Farey shears `H=LR=[[1,1],[1,2]]` over
+`ZMod 3`; no moving-base frequency or abstractly assigned
+cyclic action is substituted. For
+`v=(x,y): Fin 2 → ZMod 3`, define
+`Q(v)=x(x+y)`. The source identities use only
+characteristic three and the explicit return coordinates:
+
+- `Q(-v)=Q(v)`, `Q(Hv)=-Q(v)` for **every** one of
+  the nine finite vectors, not only the previously fixed orbit.
+- The explicitly defined `χ:ZMod 3→ℂ` sends `0↦0`,
+  `1↦1`, `2↦-1`, with `χ(-u)=-χ(u)`. It is
+  **not a ring homomorphism** between characteristics.
+  `f(v)=χ(Q(v))` is nonzero at the source
+  vector `(1,0)`, sign-invariant `f(-v)=f(v)`,
+  and a **global full-vector** Koopman eigenreadout
+  `f(Hv)=-f(v)`.
+- The source explicitly defines `v∼w` iff
+  `w=v` or `w=-v`. This is an equivalence relation
+  whose quotient has five classes: a distinguished zero
+  class and the four nonzero projective lines.
+  The actual return descends by `Quotient.map`, and
+  `f` descends by `Quotient.lift`.
+  The descended function is a nonzero **`-1`**
+  eigenfunction at every quotient class.
+- On the existing source-selected four-state orbit,
+  `f` equals the **square** of the original oriented
+  `1,i,-1,-i` phase. The earlier `i` no-go
+  (nonzero sign-invariant eigenfunction ⇒ `ω²=1`)
+  is therefore **not contradicted**.
+  The readout vanishes on the second projective
+  two-cycle and on the zero class: no nowhere-zero
+  eigenfunction is claimed.
+
+**Formal destination and precise declaration names.**
+Every following declaration is prefixed by
+`GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel.`:
+`Vec3`, `quadraticSignal`, `quadraticSignal_neg`,
+`modThreeReturn_mulVec_zero`,
+`modThreeReturn_mulVec_one`, `quadraticSignal_return`,
+`ternaryComplexSign`, `ternaryComplexSign_neg`,
+`projectiveQuadraticReadout`,
+`projectiveQuadraticReadout_sign_invariant`,
+`projectiveQuadraticReadout_return`,
+`projectiveQuadraticReadout_nonzero`,
+`projectiveQuadraticReadout_on_orbit`,
+`signOrbitSetoid`, `SignOrbitQuotient`,
+`signOrbitClass`, `modThreeReturn_mulVec_neg`,
+`returnOnSignQuotient`, `descendedQuadraticReadout`,
+`descendedQuadraticReadout_eigen`,
+`descendedQuadraticReadout_nonzero`.
+
+**Dependencies and source preservation.** Direct import:
+`GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction`
+blob `08c7754c5116d7885613caf56e6b2005ab9a7167`
+plus `Mathlib.Tactic`; that leaf imports
+`ReturnAngularChannel` blob
+`df4c90661a7f0a6897d274604de22850b703d38b`,
+and transitively the previously recorded Farey
+group/return spectral construction. Source hypotheses,
+group-word order, field characteristic, zero class and
+original angular observation are preserved exactly.
+The corresponding older issues [#1100](https://github.com/grwtsk/math/issues/1100)
+and [#1102](https://github.com/grwtsk/math/issues/1102)
+remain independent verification gates.
+
+**External papers and their EXACT nonimported scope.**
+**Ram Band, Siegfried Beckus and Raphael Loewy**,
+*The Dry Ten Martini Problem for Sturmian Hamiltonians*
+(**2024** preprint, [arXiv:2402.16703](https://arxiv.org/abs/2402.16703)),
+**equation (1.1) / Theorem 1.1**, concern rotation-coded
+Schrödinger operators, with **irrational frequency
+and nonzero coupling** for the dry spectral-gap
+theorem. Neither the operator nor these analytic
+hypotheses is supplied by the finite sign quotient.
+**Peter Sarnak**, *Three Lectures on the Mobius
+Function: Randomness and Dynamics* (**2011** lecture
+notes, [IAS record](https://publications.ias.edu/sarnak/paper/506)),
+**Definition 3 and Conjecture 4** require actual
+compact zero-entropy flow data, continuous samples,
+a Möbius weight and asymptotic cancellation, none
+of which occurs in the finite quotient.
+Both connections are **`methodological-analogy` only**;
+no paper theorem is being re-proved or imported.
+
+**Actual verification classification.**
+`source-proof-candidate` for all new Lean declarations;
+`finite-certificate` for the independent complete
+enumeration of the nine `F₃²` vectors and five
+sign-orbit classes. **`NOT_RUN / NOT_KERNEL_AUDITED`**
+for this new leaf: no demonstrated pinned-toolchain
+elaboration, warning-clean module compilation,
+fresh kernel replay, or transitive axiom/unsafe audit
+has arrived. The earlier locally verified eight-module
+Farey parent proof scope (referenced above at exact
+commit `55fe9dbc34a784cb15782c9dfb0d371a55c6f988`)
+cannot be transferred to this new leaf or its previously
+unverified angular/projective dependency. Pinned Lean
+`v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The separate exact-commit validation issue must supply
+real exit statuses, outputs and accepted trust results
+before any status upgrade.
+
+**Missing bridges and nonclaims.** This is one finite
+projective-sign-quotient eigenchannel, **not** a global
+`SL₂(ℤ)` character, nonperiodic Farey/continued-fraction
+cocycle, spectrum of a Sturmian Hamiltonian, continuous
+geometric winding theorem, signed/tempered gauge
+invariance in a noncompact limit, zero-free
+Dirichlet `L`-function claim, Möbius disjointness,
+Hodge conjecture or Riemann Hypothesis result.
+
