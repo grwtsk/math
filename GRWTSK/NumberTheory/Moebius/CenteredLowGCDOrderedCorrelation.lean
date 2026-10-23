@@ -39,10 +39,11 @@ theorem genuineLowGCDBilinear_eq_ordered_pair_sum
           w n * w q * genuineLowGCDPairKernel X Y n q := by
   unfold genuineLowGCDBilinear genuineModulusCoefficient
     genuineLowGCDPairKernel
-  simp_rw [Finset.sum_mul, Finset.mul_sum]
-  repeat' rw [Finset.sum_comm]
+  simp_rw [Finset.sum_mul, Finset.mul_sum, Finset.ite_sum_zero]
+  rw [Finset.sum_comm_cycle]
   apply Finset.sum_congr rfl
   intro n hn
+  rw [Finset.sum_comm_cycle]
   apply Finset.sum_congr rfl
   intro q hq
   apply Finset.sum_congr rfl
@@ -52,11 +53,12 @@ theorem genuineLowGCDBilinear_eq_ordered_pair_sum
   by_cases hdn : d ∣ n
   · by_cases heq : e ∣ q
     · by_cases hg : Nat.gcd d e ≤ Y
-      · simp [hdn, heq, hg]
+      · simp only [hdn, heq, hg, and_self, if_true]
         ring
-      · simp [hdn, heq, hg]
-    · simp [hdn, heq]
+      · simp [hg]
+    · simp [heq]
   · simp [hdn]
+
 
 /-- Ordered pair reindexing with all four centered channels retained. -/
 theorem orderedCenteredLowGCDCorrelation_eq_bilinear
@@ -70,8 +72,7 @@ theorem orderedCenteredLowGCDCorrelation_eq_bilinear
   unfold centeredLowGCDChannelBilinear
     orderedCenteredLowGCDCorrelation
     centeredLowGCDPairKernel
-  rw [Finset.sum_add_distrib, Finset.sum_sub_distrib,
-    Finset.sum_sub_distrib]
+  simp_rw [mul_add, mul_sub, Finset.sum_add_distrib, Finset.sum_sub_distrib]
   have hgg :=
     (genuineLowGCDBilinear_eq_ordered_pair_sum X Y w).symm
   have hleft :
@@ -115,7 +116,6 @@ theorem orderedCenteredLowGCDCorrelation_eq_bilinear
     intro q hq
     ring
   rw [← hgg, hleft, hright, hanchor]
-  ring
 
 
 end GRWTSK.NumberTheory.Moebius.CenteredLowGCD

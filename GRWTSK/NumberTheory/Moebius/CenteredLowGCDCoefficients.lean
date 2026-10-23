@@ -180,11 +180,12 @@ theorem mobiusLogDivisorSum_eq_vonMangoldt
       (Nat.sum_divisorsAntidiagonal
         (n := n)
         (fun d a => mobiusReal d * Real.log a))
+  unfold mobiusLogTerm
   rw [← hantidiagonal]
-  simpa [ArithmeticFunction.mul_apply,
+  simpa only [ArithmeticFunction.mul_apply,
     ArithmeticFunction.log_apply,
     ArithmeticFunction.intCoe_apply,
-    mobiusLogTerm, mobiusReal] using h
+    mobiusReal] using h
 
 /-- The global pointwise atom agrees with the divisor sum on the octave. -/
 theorem genuineMobiusLogAtom_eq_divisorSum
@@ -199,7 +200,7 @@ theorem genuineMobiusLogAtom_eq_divisorSum
       (modulusIndexSet X).filter (fun d => d ∣ n) =
         n.divisors := by
     ext d
-    simp only [Finset.mem_filter, Finset.mem_Icc,
+    simp only [modulusIndexSet, Finset.mem_filter, Finset.mem_Icc,
       Nat.mem_divisors]
     constructor
     · rintro ⟨⟨hd0, hdB⟩, hdn⟩
@@ -280,6 +281,7 @@ theorem centeredCoefficientMass_eq_genuine_sub_anchor
     · intro hnot
       exact (hnot (one_mem_modulusIndexSet hX)).elim
   rw [hsingle]
+  rfl
 
 /-- Exact full centered weighted von Mangoldt mass. -/
 theorem centeredCoefficientMass_eq_weighted_vonMangoldt_sub_one
@@ -358,12 +360,9 @@ theorem centeredLowGCDBilinear_eq_four_channel
           intro d hd
           apply Finset.sum_congr rfl
           intro e he
-          by_cases hg : Nat.gcd d e ≤ Y
-          · simp [hg]
-            ring
-          · simp [hg]
+          split_ifs <;> ring
       _ = _ := by
-        simp_rw [Finset.sum_sub_distrib,
+        simp only [Finset.sum_sub_distrib,
           Finset.sum_add_distrib]
   have hAI :
       (∑ d ∈ modulusIndexSet X,
@@ -378,8 +377,7 @@ theorem centeredLowGCDBilinear_eq_four_channel
     apply Finset.sum_congr rfl
     intro d hd
     rw [Finset.sum_eq_single 1]
-    · have hg : Nat.gcd d 1 ≤ Y := by simp [hY]
-      simp [hg]
+    · simp only [Nat.gcd_one_right, if_pos hY, if_true]
     · intro e he he1
       simp [he1]
     · intro hnot
@@ -397,8 +395,7 @@ theorem centeredLowGCDBilinear_eq_four_channel
       rw [Finset.mul_sum]
       apply Finset.sum_congr rfl
       intro e he
-      have hg : Nat.gcd 1 e ≤ Y := by simp [hY]
-      simp [hg]
+      simp only [Nat.gcd_one_left, if_pos hY, if_true]
     · intro d hd hd1
       simp [hd1]
     · intro hnot
@@ -413,7 +410,7 @@ theorem centeredLowGCDBilinear_eq_four_channel
       anchorMass X w ^ 2 := by
     rw [Finset.sum_eq_single 1]
     · rw [Finset.sum_eq_single 1]
-      · simp [hY, pow_two]
+      · simp only [Nat.gcd_one_left, if_pos hY, if_true, pow_two]
       · intro e he he1
         simp [he1]
       · intro hnot

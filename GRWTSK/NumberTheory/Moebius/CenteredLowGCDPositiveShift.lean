@@ -141,10 +141,14 @@ theorem centeredLowGCDPairKernel_comm
     apply Finset.sum_congr rfl
     intro e he
     rw [Nat.gcd_comm]
-    by_cases hen : e ∣ n <;>
-      by_cases hdq : d ∣ q <;>
-      by_cases hg : Nat.gcd d e ≤ Y <;>
-      simp [hen, hdq, hg] <;> ring
+    by_cases hen : e ∣ n
+    · by_cases hdq : d ∣ q
+      · by_cases hg : Nat.gcd d e ≤ Y
+        · simp only [hen, hdq, hg, and_self, if_true]
+          ring
+        · simp [hg]
+      · simp [hdq]
+    · simp [hen]
   rw [hgg]
   ring
 
@@ -195,7 +199,10 @@ theorem negativePairSum_eq_positive
       w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2) =
     ∑ p ∈ positiveOffDiagonalPairs X,
       w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2 := by
-  rw [← Finset.sum_attach, ← Finset.sum_attach]
+  rw [← Finset.sum_coe_sort (negativeOffDiagonalPairs X)
+      (fun p : ℕ × ℕ => w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2),
+    ← Finset.sum_coe_sort (positiveOffDiagonalPairs X)
+      (fun p : ℕ × ℕ => w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2)]
   exact Fintype.sum_equiv
     (negativePositiveSwapEquiv X)
     (fun p =>
@@ -221,7 +228,7 @@ theorem orderedCorrelation_eq_diagonal_add_two_mul_positive
               centeredLowGCDPairKernel X Y p.1 p.2 := by
   unfold orderedCenteredLowGCDCorrelation
     diagonalCenteredLowGCDCorrelation
-  rw [Finset.sum_product']
+  rw [← Finset.sum_product']
   rw [← Finset.diag_union_offDiag]
   rw [Finset.sum_union
     (Finset.disjoint_diag_offDiag (octaveIndexSet X))]
@@ -318,12 +325,18 @@ theorem positivePairSum_eq_positiveShift
       w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2) =
       positiveShiftCenteredLowGCDCorrelation X Y w := by
   unfold positiveShiftCenteredLowGCDCorrelation
-    positiveLagFiber
   rw [← Finset.sum_fiberwise_of_maps_to
     (positivePairLag_mapsTo X)]
   apply Finset.sum_congr rfl
   intro h hh
-  rw [← Finset.sum_attach, ← Finset.sum_attach]
+  change (∑ p ∈ positiveLagFiber X h,
+      w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2) =
+    ∑ n ∈ Finset.Ioc (2 * X) (4 * X - h),
+      w n * w (n + h) * centeredLowGCDPairKernel X Y n (n + h)
+  rw [← Finset.sum_coe_sort (positiveLagFiber X h)
+      (fun p : ℕ × ℕ => w p.1 * w p.2 * centeredLowGCDPairKernel X Y p.1 p.2),
+    ← Finset.sum_coe_sort (Finset.Ioc (2 * X) (4 * X - h))
+      (fun n : ℕ => w n * w (n + h) * centeredLowGCDPairKernel X Y n (n + h))]
   exact Fintype.sum_equiv
     (positiveLagFiberEquivIoc hh)
     (fun p =>
