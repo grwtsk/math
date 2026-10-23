@@ -622,6 +622,21 @@ def CMFiniteFourPairedCoefficientConjugate
   _root_.TensorProduct.map
     (_root_.TensorProduct.map (_root_.TensorProduct.map f f) f) f
 
+/-- The fourfold coefficient action evaluates componentwise on the
+original left-associated paired pure tensor. -/
+@[simp]
+theorem CMFiniteFourPairedCoefficientConjugate_pure
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourPairedCoefficientConjugate E σ
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+    CMFiniteFourPairedPure E
+      (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ := by
+  simp [CMFiniteFourPairedCoefficientConjugate,
+    CMFiniteFourPairedPure,
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul]
+
 /-- The full paired-assembly conjugation equality is exactly the
 coefficient-only action, not a diagonal action on coefficient and vector. -/
 theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
@@ -646,8 +661,8 @@ theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
                       | tmul a₃ x₃ =>
                           induction t4 with
                           | tmul a₄ x₄ =>
-                              simpa [CMFiniteFourPairedCoefficientConjugate,
-                                CMFiniteFourPairedPure] using
+                              simpa only [CMFiniteFourPairedPure,
+                                CMFiniteFourPairedCoefficientConjugate_pure] using
                                 CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
                                   E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
                           | add x y hx hy => simp [map_add, hx, hy]
