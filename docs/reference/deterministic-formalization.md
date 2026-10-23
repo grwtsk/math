@@ -18,7 +18,7 @@ retain canonical taxonomy identity and editorial status. Unmatched signals remai
 in the residual, and overlapping memberships retain one underlying task identity.
 
 Noeaaeue's entry point is
-`bindings/mathematics/organization/python/incremental_formalization.py`.
+`workflows/formalization/lean/replay/incremental_formalization.py`.
 Its contract and commands are documented in
 `research-tracks/formalization/research/docs/deterministic-formalization-v1.md`.
 The persistent result index observes each Git blob once per observer version;
