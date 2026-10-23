@@ -215,3 +215,19 @@ No exit-zero evidence, acceptance receipt, or implicit external theorem
 port is claimed. Validation requests must be pinned to the exact
 unchanged source/blob closure and run by an authorized non-Railway
 Lean executor, preserving concurrent main changes.
+
+## Immutable queued verification issues
+
+All are **OPEN / NOT_RUN / NOT_KERNEL_AUDITED**, pinned to exact main
+snapshot [74a1937e01d7dc220e2c78d35a448b830afc3e0f](https://github.com/grwtsk/math/commit/74a1937e01d7dc220e2c78d35a448b830afc3e0f).
+Mathematical source blobs listed above are unchanged by this documentation addition.
+
+- [#1104: cyclic Farey Hodge and Ramanujan Fourier eigenmode check](https://github.com/grwtsk/math/issues/1104).
+- [#1105: quadratic CM prime density and Goldfeld twist tail check](https://github.com/grwtsk/math/issues/1105).
+- [#1106: source-canonical Guth–Maynard three-quarter count and OpenAI seven-eighths comparison](https://github.com/grwtsk/math/issues/1106).
+
+Each issue specifies direct/transitive builds, a temporary
+#check / #print axioms audit, trust-zero elaboration, independent
+fresh kernel replay, closure/source identities, and failure handling
+on a non-Railway authorized executor. Queuing is not execution.
+
