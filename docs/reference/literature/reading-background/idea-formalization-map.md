@@ -1,5 +1,7 @@
 # Ideas and Lean formalizations by taxonomy
 
+Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+
 Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 Current follow-up for the **70 historically unresolved ideas**: [taxonomy-organized target search](unmatched-idea-followup.md). It records five narrower conditional fragments and distinguishes repair candidates, analogies, obstructions and unresolved claims. Historical statuses below are retained.
@@ -28,6 +30,8 @@ Expanded code baseline: `549d145e5ab7b9faaacab46fd9b6123d907ee1f3`. The original
 ### Conjectures and Proofs for Galois-Theoretic Extensions of Automorphic L-Functions — `1574517a994e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1574517a994e89cc:motivic-period-orbits`
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#1574517a994e89cc-motivic-period-orbits).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#1574517a994e89cc-motivic-period-orbits).
 
@@ -59,6 +63,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1961da5dba9ca115:motivic-period-orbits`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#1961da5dba9ca115-motivic-period-orbits).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#1961da5dba9ca115-motivic-period-orbits).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1961da5dba9ca115-motivic-period-orbits).
@@ -89,6 +95,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
@@ -117,6 +125,8 @@ Missing bridges and uncertainty:
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `67b33f06a609`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
@@ -203,6 +213,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#159cb12b34d5a425-kl-positive-to-residue-gap).
@@ -232,6 +244,8 @@ Missing bridges and uncertainty:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
@@ -374,6 +388,8 @@ Missing bridges and uncertainty:
 ### Residue Suppression via Embeddings and Geometric Langlands Localization — `bd284739968e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
@@ -545,6 +561,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a748ea4b4592e7ab:purity-frobenius-versus-global-zeros`
 
+Current broader-search assessment: **obstruction-only**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
@@ -574,6 +592,8 @@ Missing bridges and uncertainty:
 ### The Ring—A Comprehensive Framework for Spectral Purity, Motivic Cohomology, and Fourier-Mukai Symmetries — `e686e3fe101e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:e686e3fe101ea8bf:purity-frobenius-versus-global-zeros`
+
+Current broader-search assessment: **obstruction-only**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
@@ -4491,6 +4511,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ec2b9a77a14f5ea8:distance-reduction`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#ec2b9a77a14f5ea8-distance-reduction).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ec2b9a77a14f5ea8-distance-reduction).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ec2b9a77a14f5ea8-distance-reduction).
@@ -4547,6 +4569,8 @@ Missing bridges and uncertainty:
 ### Boundary Regularization: A Framework for High-Rank Elimination — `796ba01d4a02`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
@@ -5378,6 +5402,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:3f28be14404a64ea:recomposition-upper-bound-not-separation`
 
+Current broader-search assessment: **obstruction-only**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
@@ -5408,6 +5434,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:b799fd9cb24af2a3:recomposition-upper-bound-not-separation`
 
+Current broader-search assessment: **obstruction-only**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
@@ -5437,6 +5465,8 @@ Missing bridges and uncertainty:
 ### Updated Verification of Recursive Refinement Framework — `d7819c0364c7`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
@@ -5706,6 +5736,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d00d427aef3a27d8:rmt-langlands-survey-boundary`
 
+Current broader-search assessment: **repair-candidate**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
@@ -5847,6 +5879,8 @@ Missing bridges and uncertainty:
 ### A Holistic Strategy for Deriving Properties of Prime Numbers — `0b423568798d`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#0b423568798d1ce3-prime-research-roadmap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0b423568798d1ce3-prime-research-roadmap).
 
@@ -7413,6 +7447,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:2b7478353ae500b1:conditional-transcendence-and-chaotic-sums`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
@@ -7442,6 +7478,8 @@ Missing bridges and uncertainty:
 ### Universal Transcendence of Non-Critical Values in Automorphic and Motivic L-Functions — `ac7a2ecdc5f9`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ac7a2ecdc5f9c787:conditional-transcendence-and-chaotic-sums`
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
@@ -7504,6 +7542,8 @@ Missing bridges and uncertainty:
 ### A Unified Theoretical Framework for the Proof of the Riemann Hypothesis and Its Generalizations — `7e3e7acb686d`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:7e3e7acb686d4196:short-rmt-proof-upgrade-gap`
+
+Current broader-search assessment: **repair-candidate**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
@@ -7618,6 +7658,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
@@ -7647,6 +7689,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering, Modular Symmetry, and the Generalized Riemann Hypothesis: Techniques and Next Steps — `579328ace007`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#579328ace007be79-entropy-threshold-zero-free-gap).
 

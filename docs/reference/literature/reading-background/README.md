@@ -1,5 +1,7 @@
 # Reading background and intellectual lineage
 
+Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+
 Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 This catalog supports [attribution issue #254](https://github.com/grwtsk/math/issues/254). It records bibliographic candidates and explicit source idea → owner understanding → pinned formalization links. Discovery is not evidence of reading, influence, originality, authorship, or proof acceptance. Attribution remains unresolved until source-specific review.

@@ -1,5 +1,7 @@
 # Unpublished research: source-to-code coverage
 
+Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+
 Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 All 274 byte-distinct unpublished PDF versions remain separate. The **233 formerly screened versions** now have substantive selected-page reviews; 41 earlier passage comparisons remain unchanged. Each new review records the full physical pages read, exact claim anchors and page-text hashes. Empty-body/abstract-only assets are explicitly unresolved. This completes the requested deeper reading pass, not the mathematical proofs or a full manuscript audit.
