@@ -3760,3 +3760,114 @@ claimed.
 **Exact hypotheses, method and formal declarations.** In namespace `GRWTSK.Logic.InformationLoss`, with arbitrary field `K`, additive commutative `K`-modules `V,Y,W,Z`, linear maps `P:V→ₗ[K]Y`, `B:Y→ₗ[K]W`, `R:V→ₗ[K]Z`, and vector `h:V`: `postprocessed_linear_observation_kernel_iff` equates `P h=0 ∧ (B.comp P) h=0` with `P h=0`; `postprocessed_augmented_reconstruction_iff` equates the pointwise readout-kernel conditions for the pair `(P,B.comp P)` and original `P`; `detecting_invisible_direction_not_postprocessed` assumes `P h=0` **and** `A h≠0`, concludes there does not exist `B` with `A=B.comp P`. Direct supplier `GRWTSK.Logic.InformationLoss.LinearObservationKernels`, blob `7930d8b88199507019d800b05852a616719bfa12`; its own transitive repository/Mathlib closure remains to be enumerated on pinned checkout.
 
 **Classification and evidence:** `source-proof-candidate` (three declarations). `direct-import` from an external paper: no. `local-proved-bridge`: not yet kernel accepted. `conditional-interface`: application to an actual source-specific physical/analytic observation requires an explicit proved linear map and its exact kernels. `finite-certificate`: none claimed for this leaf. `methodological-analogy`: inverse problems and quotient lifting only. `unresolved`: true finite-dimensional minimal sensor counts, continuous/quantitative inverse, admissibility, spectral/Weil properties and actual RH consequences. Validation request [#1121](https://github.com/grwtsk/math/issues/1121) pins the complete intended commands and declaration/axiom probes, Lean `leanprover/lean4:v4.33.0` and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Actual Git blob readback succeeded; commit status list was empty. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOM_AUDIT NOT_RUN**. The issue is a queue, not an execution receipt. Operational receipts must remain outside math in `grwtsk/noeaaeue`. Root import and proof promotion remain prohibited without actual source-bound acceptance.
+
+## Case HEAT-TURNWISE-VALIDATION-20261023 — selected normalization and letterwise obstruction
+
+**Source identity and classification.** These four modules are 2026 repository
+constructions under source-credited mathematical direction by R.A. Jacob Martone
+and OpenAI formalization assistance. No independent paper title, byline, year,
+DOI or theorem locator is established for these specific finite identities.
+Stable code-source identity is the repair commit and blobs below. Imported
+mathematics consists of the pinned Mathlib matrix, finite-field, complex norm,
+real exponential/logarithm and limit libraries and the named GRWTSK dependencies.
+No historical influence is inferred. Subsequent local kernel verification is
+classified separately from paper comparisons and unresolved analytic premises.
+
+The prior comparisons retain their bibliographic identities: Peter Sarnak,
+*Three Lectures on the Mobius Function: Randomness and Dynamics* (2011),
+[IAS record](https://publications.ias.edu/sarnak/paper/506), Definition 3 and
+Conjecture 4; Ram Band, Siegfried Beckus and Raphael Loewy,
+*The Dry Ten Martini Problem for Sturmian Hamiltonians* (2024),
+[arXiv:2402.16703](https://arxiv.org/abs/2402.16703), equation (1.1) and Theorem 1.1.
+These are **analogies/unresolved comparisons**, not imported theorems: compact
+metric zero-entropy flow, continuous observables, actual Möbius average
+cancellation, irrational Sturmian frequency and nonzero coupling are not supplied.
+The finite diagonal heat comparison is also not a port of Rodgers–Tao's heat
+integral or a proof of an algebraic Hodge conjecture. Earlier paper metadata and
+hypothesis records in this ledger remain unchanged.
+
+**Exact methods, fully qualified destinations and hypotheses.**
+
+- `GRWTSK.NumberTheory.Farey.HeatCompensatedReturn.heatReturnCompensator_eq_inv_pow`
+  and `GRWTSK.NumberTheory.Farey.HeatCompensatedReturn.heatNormalizedSpiral_eq_phase`:
+  for the actual selected LR return with λ=(3+√5)/2>1, choose scalar heat
+  eigenvalue one and the explicit schedule sₙ=n log λ. Then exp(−sₙ)=λ⁻ⁿ and
+  the declared product with the selected spiral equals iⁿ. This is a chosen
+  observation/time normalization, not an operator conjugacy or uniform recovery
+  estimate.
+- `GRWTSK.NumberTheory.Farey.HeatCompensatedReturn.heatNormalized_four_consecutive_zero`
+  and `GRWTSK.NumberTheory.Farey.HeatCompensatedReturn.raw_return_four_not_zero`:
+  exactly compensated four-sample blocks cancel; the corresponding raw first
+  block is nonzero. No arbitrary-orbit cancellation is asserted.
+- `GRWTSK.NumberTheory.Farey.WeightedReturnBalance.weightedFourPhase_norm_le`,
+  `GRWTSK.NumberTheory.Farey.WeightedReturnBalance.compensated_four_consecutive_zero`
+  and `GRWTSK.NumberTheory.Farey.WeightedReturnBalance.limit_lower_bound_of_balanced_partitions`:
+  weight defects are retained exactly. The limit theorem separately requires a
+  uniform lower margin, exact paired cancellation, a vanishing complete residual
+  and actual convergence; finite phases do not produce those analytic premises.
+- `GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel.projectiveQuadraticReadout_return`
+  and `GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel.descendedQuadraticReadout_eigen`:
+  Q(x,y)=x(x+y) over F₃, its declared complex sign lift, all-vector sign invariance
+  and the actual sign-orbit quotient yield a nonzero −1 return eigenchannel.
+  The complex sign lift is not a ring homomorphism. This is a global identity on
+  the finite carrier, stronger than selected-orbit sampling but not a global
+  SL₂(ℤ) scalar character.
+- `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction.no_scalar_left_extension_of_negative_return`
+  and `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction.quadraticReadout_no_turnwise_scalars`:
+  an arbitrary complex readout with a full-space L-scalar law, negative H-return
+  value and a **nonzero source-basepoint value** contradicts the actual L
+  three-cycle. The multiplier is unrestricted; no character assumption is added.
+- `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction.wordState_append`,
+  `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction.wordSignal_sign_invariant`
+  and `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction.wordSignal_selected_return`:
+  M(u++v)=M(u)M(v), so the right block acts first on a fixed column. The
+  arbitrary-word matrix-state readout is sign invariant, while the selected LR
+  return retains its −1 scalar law. Frame chronology is not silently replaced
+  by left-to-right column updates.
+
+**Immutable source pin.**
+[`6c52e2cbe4589a5a5fad4bf8f0b44b218dd3b08f`](https://github.com/grwtsk/math/commit/6c52e2cbe4589a5a5fad4bf8f0b44b218dd3b08f),
+with a source-hash-pinned local dependency closure of seventeen GRWTSK files:
+
+| Fully qualified module | Git blob |
+|---|---|
+| `GRWTSK.NumberTheory.Farey.HeatCompensatedReturn` | `4307d4c61f10d5a34777e7d34f3884fc94274cb4` |
+| `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction` | `6eabd59265a723e325654907eaf853530dd2a0bb` |
+| `GRWTSK.NumberTheory.Farey.WeightedReturnBalance` | `2915dbfb0a261b06d463945c8d1b1e57e1351d09` |
+| `GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel` | `79943dff174eee6049a9e097ca89ae1f6ddf04d4` |
+
+**Actual verification.** Lean `leanprover/lean4:v4.33.0`; Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. Executed, exit zero:
+
+```sh
+lake build GRWTSK.NumberTheory.Farey.HeatCompensatedReturn GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/think/Documents/ChatGPT/math-branch-integration-20261022/heat-turnwise-audit.lean
+```
+
+Strict build: 8,722 jobs; public root: 9,304 jobs. Fresh kernel replay:
+631 transitive GRWTSK declarations, with only `propext`, `Classical.choice`
+and `Quot.sound` (or none), no `sorryAx` or additional axioms. All 83 owned
+declarations in the four modules, including private/generated declarations, have
+reconciled type inventories and are safe. All 48 theorem/lemma headers are
+unchanged. Repairs concern cast/norm projections, exact characteristic-three
+reductions, proof algebra, namespace resolution and strict-build lint cleanup.
+The HeatCompensatedReturn source bytes themselves are unchanged.
+
+**Evidence and missing bridges.** These local finite identities are now
+**kernel-verified bridges at their stated scope**. The conditional limit premises
+remain **conditional interfaces**, finite arithmetic controls retain finite scope,
+and paper comparisons remain **analogies** with **unresolved premises**. Historical
+source-only comments are preserved; this dated evidence supersedes NOT_RUN only
+for these pinned sources and dependency closure. Independent external/CI replay,
+nonperiodic spectral or dynamical limits, uniform inverse stability, arbitrary
+signed cancellation, zeta/Weil identification, Möbius cancellation, elliptic rank
+and RH/GRH remain unproved. No standalone public-root imports are added.
+
+Receipts remain outside canonical math in
+`/Users/think/Documents/ChatGPT/math-branch-integration-20261022/`:
+`heat-turnwise-rebuild3.log`, `heat-turnwise-public.log`,
+`heat-turnwise-audit.lean`, `heat-turnwise-audit.log`,
+`heat-turnwise-validated-snapshot.json`, `heat-turnwise-completion-result.json`.
+Failed earlier builds remain diagnostics, not acceptance receipts. Concurrent
+new Riesz/Möbius sources and later literature increments are outside this claim.
