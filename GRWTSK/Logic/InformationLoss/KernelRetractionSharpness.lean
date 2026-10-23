@@ -43,12 +43,15 @@ theorem sharp_extra_of_kernel_retraction
       _ = 0 := ha
   exact congrArg Subtype.val hz
 
-/-- For the supplied kernel retraction, the lower bound is attained
-because the extra target is the old kernel itself. -/
-theorem sharp_extra_finrank_eq
+/-- A supplied kernel retraction makes the restricted measurement
+surjective onto its target; no missing kernel coordinate remains. -/
+theorem sharp_extra_restricted_surjective
     (P : V →ₗ[K] Y)
     (A : V →ₗ[K] P.ker)
     (hrestrict : ∀ x : P.ker, A x.1 = x) :
-    Module.finrank K (P.ker) = Module.finrank K (P.ker) := rfl
+    Function.Surjective (extraOnOldKernel P A) := by
+  intro x
+  refine ⟨x, ?_⟩
+  exact hrestrict x
 
 end GRWTSK.Logic.InformationLoss
