@@ -279,6 +279,15 @@ fresh native kernel replay and complete generated/transitive
 `NOT_RUN / PENDING`. Do not treat absence of literal
 `sorry` or source readback as proof acceptance.
 
+**Verification queues:** [grwtsk/math #1147](https://github.com/grwtsk/math/issues/1147)
+and [grwtsk/noeaaeue #393](https://github.com/grwtsk/noeaaeue/issues/393)
+are passive, independently authorized execution requests pinned to
+math source commit `b0926325f3bf2f276b58cabad49715da48762bac`,
+tree `ec44b09383b7bb561304819a1ca6fa125fbb5632`.
+They do not assert a build, fresh kernel check, axiom acceptance or
+remote dispatch. The real finite Python receipt cited above is
+a distinct, source-bound, off-kernel evidence artifact.
+
 ## 8. Precisely missing suppliers
 
 1. For unconditional no-extension: prove
