@@ -158,9 +158,12 @@ theorem poleRemoved_deriv {s : ℂ} (hs : s ≠ 1) :
     filter_upwards [isOpen_compl_singleton.mem_nhds hs] with z hz
     exact poleRemoved_eq_mul hz
   rw [he.deriv_eq]
-  have hd := (((hasDerivAt_id s).sub_const 1).mul
-    (differentiableAt_riemannZeta hs).hasDerivAt).deriv
-  simpa only [one_mul] using hd
+  have hproduct : HasDerivAt
+      (fun z : ℂ => (z - 1) * riemannZeta z)
+      (riemannZeta s + (s - 1) * deriv riemannZeta s) s := by
+    convert (((hasDerivAt_id s).sub_const 1).mul
+      (differentiableAt_riemannZeta hs).hasDerivAt) using 1 <;> ring
+  exact hproduct.deriv
 
 /-- A nontrivial zeta zero is a zero of the entire numerator.
 Gamma nonvanishing is proved before reversing a quotient identity. -/
