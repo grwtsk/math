@@ -54,7 +54,7 @@ theorem first_order_remainder_le (f : ℂ → ℂ) (c z root : ℂ) (r M : ℝ)
   have derivative (w : ℂ) (hw : w ∈ segment ℝ z root) :
       HasDerivWithinAt g (deriv f w - deriv f z) (segment ℝ z root) w := by
     have linear : HasDerivAt (fun u : ℂ => deriv f z * (u - z)) (deriv f z) w := by
-      simpa only [mul_one] using ((hasDerivAt_id w).sub_const z).const_mul (deriv f z)
+      convert ((hasDerivAt_id w).sub_const z).const_mul (deriv f z) using 1 <;> first | rfl | simp
     exact (((analytic w (pathSubset hw)).differentiableAt.hasDerivAt.sub_const (f z)).sub
       linear).hasDerivWithinAt
   have remainder := (convex_segment z root).norm_image_sub_le_of_norm_hasDerivWithin_le

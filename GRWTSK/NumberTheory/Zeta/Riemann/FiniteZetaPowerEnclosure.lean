@@ -28,7 +28,7 @@ noncomputable section
 
 /-- Base and exponent identities are in the dependent types, not a metadata comparison. -/
 structure PowerPacket (N : ℕ) (c : ℂ) where
-  prefix : ∀ i : Fin N, PowerInput ((i.1 : ℝ) + 1) (-c)
+  «prefix» : ∀ i : Fin N, PowerInput ((i.1 : ℝ) + 1) (-c)
   terminal : PowerInput (cutoff N) (-c)
 
 /-- The finite approximation to -log(t)*t^z, using the power's SAME derived logarithm. -/
@@ -44,7 +44,9 @@ theorem logValue_sound {t : ℝ} {z : ℂ} (p : PowerInput t z) :
     ‖-(Real.log t : ℂ) * logPower t z - logValue p‖ ≤ logError p := by
   let l : ℝ := (p.base.logarithm.center : ℝ)
   let eta : ℝ := (p.base.logarithm.error : ℝ)
-  have heta : 0 ≤ eta := by exact_mod_cast p.base.logarithm.error_nonneg
+  have heta : 0 ≤ eta := by
+    dsimp [eta]
+    exact_mod_cast p.base.logarithm.error_nonneg
   have hl : |Real.log t - l| ≤ eta := p.base.logarithm.sound
   have habs : |Real.log t| ≤ |l| + eta := by
     have ht := abs_add_le (Real.log t - l) l
@@ -73,17 +75,17 @@ namespace PowerPacket
 variable {N : ℕ} {c : ℂ}
 
 def value (p : PowerPacket N c) : ℂ :=
-  (∑ i, (p.prefix i).value) + terminalFactor N c * p.terminal.value
+  (∑ i, (p.«prefix» i).value) + terminalFactor N c * p.terminal.value
 
 def slope (p : PowerPacket N c) : ℂ :=
-  (∑ i, logValue (p.prefix i)) +
+  (∑ i, logValue (p.«prefix» i)) +
     (terminalSlope N c * p.terminal.value + terminalFactor N c * logValue p.terminal)
 
 def finiteValueError (p : PowerPacket N c) : ℝ :=
-  (∑ i, (p.prefix i).error) + rectNorm (terminalFactor N c) * p.terminal.error
+  (∑ i, (p.«prefix» i).error) + rectNorm (terminalFactor N c) * p.terminal.error
 
 def finiteSlopeError (p : PowerPacket N c) : ℝ :=
-  (∑ i, logError (p.prefix i)) +
+  (∑ i, logError (p.«prefix» i)) +
     (rectNorm (terminalSlope N c) * p.terminal.error +
       rectNorm (terminalFactor N c) * logError p.terminal)
 
@@ -98,14 +100,14 @@ theorem finite_sound (p : PowerPacket N c) :
     ‖approximation N c - p.value‖ ≤ p.finiteValueError ∧
       ‖approximationSlope N c - p.slope‖ ≤ p.finiteSlopeError := by
   have hv : ‖(∑ i : Fin N, logPower ((i.1 : ℝ) + 1) (-c)) -
-      ∑ i : Fin N, (p.prefix i).value‖ ≤ ∑ i, (p.prefix i).error := by
+      ∑ i : Fin N, (p.«prefix» i).value‖ ≤ ∑ i, (p.«prefix» i).error := by
     rw [← Finset.sum_sub_distrib]
-    exact (norm_sum_le _ _).trans (Finset.sum_le_sum (fun i _ => (p.prefix i).sound))
+    exact (norm_sum_le _ _).trans (Finset.sum_le_sum (fun i _ => (p.«prefix» i).sound))
   have hd : ‖(∑ i : Fin N, -(Real.log ((i.1 : ℝ) + 1) : ℂ) *
-      logPower ((i.1 : ℝ) + 1) (-c)) - ∑ i, logValue (p.prefix i)‖ ≤
-      ∑ i, logError (p.prefix i) := by
+      logPower ((i.1 : ℝ) + 1) (-c)) - ∑ i, logValue (p.«prefix» i)‖ ≤
+      ∑ i, logError (p.«prefix» i) := by
     rw [← Finset.sum_sub_distrib]
-    exact (norm_sum_le _ _).trans (Finset.sum_le_sum (fun i _ => logValue_sound (p.prefix i)))
+    exact (norm_sum_le _ _).trans (Finset.sum_le_sum (fun i _ => logValue_sound (p.«prefix» i)))
   have ht := coefficient_error (terminalFactor N c) _ _ _ p.terminal.sound
   have hj := coefficient_error (terminalSlope N c) _ _ _ p.terminal.sound
   have hl := coefficient_error (terminalFactor N c) _ _ _ (logValue_sound p.terminal)

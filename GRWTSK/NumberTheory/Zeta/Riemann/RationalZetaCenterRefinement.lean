@@ -32,7 +32,7 @@ open FiniteCubicZetaApproximation FiniteCubicZetaTail
 
 @[simp] theorem embed_sumQ {N : ℕ} (f : Fin N → QComplex) :
     QComplex.embed (sumQ f) = ∑ i, QComplex.embed (f i) := by
-  ext <;> simp [sumQ, QComplex.embed]
+  apply Complex.ext <;> simp [sumQ, QComplex.embed]
 
 @[simp] theorem embed_factorQ (N : ℕ) (c : QComplex) :
     QComplex.embed (factorQ N c) = terminalFactor N (QComplex.embed c) := by
@@ -146,7 +146,9 @@ theorem compute_sound (N : ℕ) (c : QComplex) (p : Plan N) (hp : Admissible N c
       ‖deriv riemannZeta (QComplex.embed c) - QComplex.embed (compute N c p).slope.value‖ ≤
         ((compute N c p).slope.error : ℝ) := by
   have hr : (0 : ℝ) < (p.cauchyRadius : ℝ) := by exact_mod_cast hp.1
-  have hc : (p.cauchyRadius : ℝ) ≤ (QComplex.embed c).re := by exact_mod_cast hp.2.1
+  have hc : (p.cauchyRadius : ℝ) ≤ (QComplex.embed c).re := by
+    change (p.cauchyRadius : ℝ) ≤ (c.re : ℝ)
+    exact (Rat.cast_le (K := ℝ)).2 hp.2.1
   have hf := finite_sound N c p hp
   have ha := center_enclosures_of_finite N (QComplex.embed c) (p.cauchyRadius : ℝ)
     hr hc (center_ne_one N c p hp) (QComplex.embed (finiteValueQ N c p))

@@ -67,7 +67,8 @@ theorem outer_derivative_defect (hsource : ConcreteNewtonPacket.SourceAcceptance
     (outer_center_enclosures_of_source hsource)).2 w member
   have rate : (RationalNewtonWitness.defectBudget ConcreteNewtonPacket.chart
       ConcreteNewtonPacket.newtonData : ℝ) < (1 / 3 : ℝ) := by
-    exact_mod_cast ConcreteNewtonPacket.contraction_budget_lt_third
+    have hs := (Rat.cast_lt (K := ℝ)).2 ConcreteNewtonPacket.contraction_budget_lt_third
+    simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_ofNat] using hs
   exact bound.trans rate.le
 
 /-- This is an upper bound, not an equality with the multiplier's complex modulus. -/
@@ -102,7 +103,7 @@ theorem outer_scaled_value_lower (hsource : ConcreteNewtonPacket.SourceAcceptanc
       ‖w - root.1‖ := by linarith
   calc
     _ ≤ (2 / 3 : ℝ) * ‖w - root.1‖ := mul_le_mul_of_nonneg_left separation (by norm_num)
-    _ ≤ _ := by simpa using bound
+    _ ≤ _ := by norm_num only [show (1 - 1 / 3 : ℝ) = 2 / 3 by norm_num] at bound; simpa only [norm_mul] using bound
 
 /-- A positive modulus floor outside the inner radius, with the ORIGINAL outer-domain restriction. -/
 theorem outer_value_lower (hsource : ConcreteNewtonPacket.SourceAcceptance)
@@ -126,7 +127,7 @@ theorem boundary_scaled_value_lower (hsource : ConcreteNewtonPacket.SourceAccept
     simpa only [mem_sphere, dist_eq_norm] using boundary
   rw [distance] at bound
   norm_num [innerRadius, ConcreteNewtonPacket.newtonRadius] at bound
-  exact bound
+  simpa only [norm_mul] using bound
 
 /-- The multiplier norm cost is retained: the actual zeta floor is smaller than the scaled floor. -/
 theorem boundary_modulus_lower (hsource : ConcreteNewtonPacket.SourceAcceptance)
@@ -153,7 +154,7 @@ theorem boundary_inverse_bound (hsource : ConcreteNewtonPacket.SourceAcceptance)
   have bound := div_le_div_of_nonneg_left (by norm_num : (0 : ℝ) ≤ 1)
     (by norm_num : (0 : ℝ) < 1 / 362500) (boundary_modulus_lower hsource w boundary)
   norm_num at bound
-  exact bound
+  simpa only [one_div] using bound
 
 /-- The multiplier cancels in the quotient only after scaled separation proves nonvanishing.
 No extension to a large contour, integrated zero count, or regular part is asserted. -/
@@ -162,14 +163,16 @@ theorem boundary_log_derivative_bound (hsource : ConcreteNewtonPacket.SourceAcce
       (ConcreteNewtonPacket.newtonRadius : ℝ)) :
     ‖deriv riemannZeta w / riemannZeta w‖ ≤ (1000000 / 3 : ℝ) := by
   have upper : ‖QComplex.embed ConcreteNewtonPacket.inverse * deriv riemannZeta w‖ ≤ (4 / 3 : ℝ) := by
-    simpa using scaled_derivative_upper (QComplex.embed ConcreteNewtonPacket.inverse)
+    have h := scaled_derivative_upper (QComplex.embed ConcreteNewtonPacket.inverse)
       (deriv riemannZeta w) (1 / 3 : ℝ)
       (outer_derivative_defect hsource w (sphere_subset_closedBall boundary))
+    norm_num at h
+    simpa only [norm_mul] using h
   have bound := (quotient_bound_of_scaled (QComplex.embed ConcreteNewtonPacket.inverse)
     (riemannZeta w) (deriv riemannZeta w) (1 / 250000 : ℝ) (4 / 3 : ℝ)
     (by norm_num) (boundary_scaled_value_lower hsource w boundary) upper).2
   norm_num at bound
-  exact bound
+  simpa only [norm_div] using bound
 
 end
 
