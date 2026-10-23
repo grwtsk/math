@@ -99,4 +99,32 @@ theorem unused_edge_meets_of_support_cut_connected
   · exact Or.inl hs
   · exact Or.inr ht
 
+
+/-- A connected support cut and residual degree balance supply an
+actual unused outgoing counted edge at a vertex in the circuit's
+vertex set. This is the precise local splice entry point. -/
+theorem FreshCountedTrail.unused_outgoing_at_supported_cut
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (hconn : CountedEdgeSupportCutConnected m c)
+    (S : Finset (Fin m → Bool))
+    (hused : ∀ e ∈ T.used,
+      countedEdgeSource m c e ∈ S ∧ countedEdgeTarget m c e ∈ S)
+    (hinside : ∃ e : CountedBinaryEdge m c, CountedEdgeMeets m c S e)
+    (houtside : ∃ e : CountedBinaryEdge m c,
+      countedEdgeSource m c e ∉ S ∨ countedEdgeTarget m c e ∉ S) :
+    ∃ v ∈ S, ∃ f : CountedBinaryEdge m c,
+      f ∈ (Finset.univ \ T.used) ∧ countedEdgeSource m c f = v := by
+  obtain ⟨e, he, hs | ht⟩ :=
+    unused_edge_meets_of_support_cut_connected
+      m c hconn T.used S hused hinside houtside
+  · exact ⟨countedEdgeSource m c e, hs, e, he, rfl⟩
+  · obtain ⟨f, hf, hsource⟩ :=
+      T.unused_out_edge_of_incident hclosed hbalance
+        (countedEdgeTarget m c e) e he (Or.inr rfl)
+    exact ⟨countedEdgeTarget m c e, ht, f, hf, hsource⟩
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
