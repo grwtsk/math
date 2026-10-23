@@ -586,3 +586,5 @@ Subjects follow the catalog’s provisional taxonomy. Each distinct asset appear
 | Real Differences between OT and CRDT under a General Transformation Framework for Consistency Maintenance in Co-Editors | Chengzheng Sun; David Sun; Agustina Ng; Weiwei Cai; Bryden Cho | 2020-01-04 | [10.1145/3375186](https://doi.org/10.1145/3375186) | [1905.01518](https://arxiv.org/abs/1905.01518) (v2 unconfirmed) | Version not established / 2fbcb5c8814c |
 | Superfluid Weight Bounds from Symmetry and Quantum Geometry in Flat Bands | Jonah Herzog-Arbeitman; Valerio Peri; Frank Schindler; Sebastian D. Huber; B. Andrei Bernevig | 2022-02-25 | [10.1103/PhysRevLett.128.087002](https://doi.org/10.1103/PhysRevLett.128.087002) | Not established | Version not established / 727f5a996dfc |
 | The Scanline Sweeper: A Glyph Rendering Algorithm | Scuff3D Rook; Rook & Possum | Publication date unresolved | Not established | Not established | v0.1 / b90608e621ac |
+
+Latest assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.

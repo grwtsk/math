@@ -1437,6 +1437,9 @@
           "scope"
         ]
       }
+    },
+    "idea_target_review_file": {
+      "const": "unmatched-idea-followup.json"
     }
   },
   "required": [
