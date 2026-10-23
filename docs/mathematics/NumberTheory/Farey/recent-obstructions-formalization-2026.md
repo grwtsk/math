@@ -248,7 +248,15 @@ source scope**, but that old acceptance does not
 include or prove these four new declarations.
 The full import closure, warning-clean leaf
 builds, fresh kernel and transitive axiom/unsafe audit
-are to be pinned and queued in a separate verification issue
-on the final main commit. Any failure must be corrected
+are explicitly queued at exact main commit
+`8c83118c3441252c3d82c9a4a201356b6256a87b`,
+tree `959d4d7db904d95cd1bc14c79393cfeaf33af321`:
+[Sturmian/projective verification #1107](https://github.com/grwtsk/math/issues/1107)
+and [gauge/Heisenberg verification #1108](https://github.com/grwtsk/math/issues/1108).
+Both requests have pinned Lean/Mathlib, dependency hashes,
+isolated/joint compilation commands, fresh checker instructions,
+named `#print axioms` declarations and hostile controls.
+These are **queued requests only; no build or audit has run here**.
+Any failure must be corrected
 without weakening the original mathematical hypotheses
 or replacing an unproved premise with a silent axiom.
