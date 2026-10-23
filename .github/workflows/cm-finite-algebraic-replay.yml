@@ -4,17 +4,7 @@ on:
   push:
     branches:
       - docs/openai-typed-hodge-bridge
-    paths:
-      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean'
-      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean'
-      - 'GRWTSK/LinearAlgebra/TensorProduct/**'
-      - '.github/workflows/cm-finite-algebraic-replay.yml'
   pull_request:
-    paths:
-      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean'
-      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean'
-      - 'GRWTSK/LinearAlgebra/TensorProduct/**'
-      - '.github/workflows/cm-finite-algebraic-replay.yml'
   workflow_dispatch:
 
 permissions:
