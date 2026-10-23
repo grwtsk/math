@@ -3,7 +3,11 @@ schema = "rh-canonical-four-family-thin-green-matrix-v0.1"
 repository = "grwtsk/math"
 issue = 942
 parent_pr = 1070
-base_branch = "research/rh-anchored-authentic-center-defect-942-20261023"
+parent_merged = true
+source_fork_on_exact_parent_head = true
+main_base_at_reconciliation = "fcf80a85e518b2a9c60f830f14d83d0d57927878"
+main_tree_at_reconciliation = "6b260ee9c27f76416b837e6474b03ee2217a9b61"
+base_branch = "main"
 base_commit = "dc0d2d7cc6e0f18ac45fd32fcfa1f7e34b25a23a"
 base_tree = "0f142300d9ee7a59219d77067604b86174eb0723"
 branch = "research/rh-fourfamily-thin-green-matrix-942-20261023"
@@ -11,11 +15,11 @@ branch = "research/rh-fourfamily-thin-green-matrix-942-20261023"
 toolchain = "leanprover/lean4:v4.33.0"
 mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
 source = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyThinGreenMatrix.lean"
-source_blob = "9468dd1f79d512981847582e56a6aa0c50ead2d4"
+source_blob = "d351831b67611b3a341f8e4181b38382c769994e"
 parent_source = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
 parent_blob = "84fed8973f7c1a1b358711d159713054805a33c2"
 note = "docs/mathematics/NumberTheory/Moebius/canonical-four-family-thin-green-matrix-942.md"
-note_blob = "e7387b371befc9602ff0944c965433fdb8ebf2ae"
+note_blob = "7d4badb252e952faead6e89d68a195b75d6fb104"
 
 evidence_state = "SOURCE_DRAFT"
 literature_reviewed = false
@@ -27,6 +31,7 @@ analytic_premises_discharged = false
 
 [validation]
 require_exact_parent_head = true
+require_reconcile_newer_main_import_closure = true
 require_exact_source_blob = true
 require_pinned_lean_mathlib = true
 require_transitive_imports = true
