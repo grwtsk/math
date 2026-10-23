@@ -1,0 +1,80 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-cyclic-reciprocal-obstruction-967-v0.4"
+owner_repository = "grwtsk/math"
+issue = 967
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_RECIPROCAL_PHASE_OBSTRUCTION_AUTHORED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicReciprocalObstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicReciprocalObstruction"
+
+[checked_parent_binding]
+parent_revision = "00ad56797863363078815f4d9f97f51ac9d7e982"
+generic_interval_distance_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicIntervalDistance.lean"
+generic_interval_distance_blob = "fc1f7afe93845df908f2a00481b1e33cfe3822cf"
+original_coordinate_owner_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointCyclicCoordinates.lean"
+original_coordinate_owner_blob = "cbc6abb605ba98b728a7de9a734565a83b9b325c"
+parent_local_check = "ACTUAL_CANONICAL_WFAIL_AND_TRUST0_REPORTED_BY_USER"
+legacy_full_156_module_leaf_verified = false
+
+[source_binding]
+generic_source_commit = "52ac7f4baf60089010d9e1744c1b74c2f46685e5"
+generic_source_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicReciprocalPhaseObstruction.lean"
+generic_source_blob = "bbc5b4a1f9f8f3d8f5b73639d5c4c9bcdead9933"
+endpoint_source_commit = "320be7f921d7496a344ea0d997021d50cac811e2"
+endpoint_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointCyclicReciprocalObstruction.lean"
+endpoint_source_blob = "9b8fe33c1c4793a180197a96c1d065c3940386b9"
+
+[selected_increment]
+reciprocal_mass = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicReciprocalMass"
+reciprocal_mass_nonnegative = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicReciprocalMass_nonneg"
+zero_mode_identity = "GRWTSK.NumberTheory.CharacterSums.sum_stdAddChar_neg_div_nat_add_Ico_zero"
+phase_matched_identity = "GRWTSK.NumberTheory.CharacterSums.stdAddChar_phaseMatched_reciprocal_Ico"
+phase_matched_norm_identity = "GRWTSK.NumberTheory.CharacterSums.norm_stdAddChar_phaseMatched_reciprocal_Ico"
+endpoint_zero_mode_identity = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseNatCharacter_reciprocal_Ico_zero"
+endpoint_phase_matched_identity = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverse_phaseMatchedReciprocal_Ico"
+endpoint_phase_matched_norm_identity = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverse_phaseMatchedReciprocal_Ico_norm"
+proof_classification = "EXACT_RECIPROCAL_ZERO_MODE_AND_NORM_ONE_PHASE_MATCHED_OBSTRUCTION"
+
+[hosted_replay_attempt]
+workflow_repository = "grwtsk/noeaaeue"
+workflow_run = 39877230666
+workflow_head = "da11f80f35fa3879f2f176a2b42a0afbbba40a7c"
+conclusion = "FAILURE_BEFORE_RUNNER_ALLOCATION"
+runner_id = 0
+recorded_steps = 0
+lean_diagnostic_produced = false
+
+[evidence_states]
+source_draft = true
+generic_source_elaborated = false
+endpoint_source_elaborated = false
+kernel_checked = false
+axiom_audited = false
+externally_replayed = false
+checked_parent_definitions_reused = true
+original_reciprocal_abel_source_elaborated = false
+original_full_leaf_elaborated = false
+
+[preserved_components]
+original_negative_phase = true
+original_doubled_modulus = true
+original_circular_distance = true
+opposite_phase_obstruction = true
+direct_zero_mode_joint_packet = true
+capped_correction = true
+genuine_right_endpoint_term = true
+singular_numerator = true
+exact_supports = true
+
+[nonclaims]
+reciprocal_abel_bound_replayed = false
+weighted_arithmetic_cancellation_proved = false
+liouville_cancellation_proved = false
+mobius_cancellation_proved = false
+full_endpoint_estimate_proved = false
+legacy_full_leaf_replayed = false
+riemann_hypothesis_proved = false
+chowla_proved = false
+goldbach_proved = false
+
+[next_obligation]
+statement = "Replay and axiom-audit the independent reciprocal obstruction sources and the earlier reciprocal Abel sources. Once the Abel bound is checked, combine it with a proved variation or energy estimate for actual arithmetic coefficients; coefficientwise norm-one bounds are now formally ruled out even after reciprocal weighting."
