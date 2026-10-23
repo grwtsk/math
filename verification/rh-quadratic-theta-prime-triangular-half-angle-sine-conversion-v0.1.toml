@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-half-angle-sine-conversion-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "2151fff4c8ddc7313e66a416d5966b0a4a5f86f0"
+parent_tree = "c1493229207644fdf7e57ec92c526070fe97bcb1"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / HALF_ANGLE_SINE_CONVERSION_SOURCE_WRITTEN / PHASE_CONJUGATE_CANCELLATION_OPEN"
+
+[conversion]
+half_angle_identity = "exp(2ix)-1 = 2*i*exp(ix)*sin(x)"
+geometric_block = "exp(pi*i*(N-1)*t) * sin(pi*N*t)/sin(pi*t)"
+off_boundary_domain = "0<|t|<=1/2"
+
+[frontier]
+claim = "TriangularPhaseConjugateCancellationClaim"
+analytic_content = false
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+HALF_ANGLE_SINE_CONVERSION_SOURCE_WRITTEN = true
+PHASE_CONJUGATE_CANCELLATION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

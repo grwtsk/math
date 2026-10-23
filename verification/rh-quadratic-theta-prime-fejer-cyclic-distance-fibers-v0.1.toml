@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-distance-fibers-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "aa9cb5ab1c37f1388ad3812374162672d36f3591"
+parent_tree = "59749d979cf0b37abc3c3deceb471c53a33422ba"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CYCLIC_DISTANCE_BOUND_SOURCE_WRITTEN / DISTANCE_FIBER_PAIR_CONTAINMENT_SOURCE_WRITTEN / DISTANCE_FIBER_CARD_LE_TWO_SOURCE_PROVED / POINTWISE_DISTANCE_SAMPLE_COMPARISON_OPEN"
+
+[closed]
+cyclic_distance_le_twoX = true
+distance_fiber_pair_containment = true
+distance_fiber_card_le_two = true
+
+[frontier]
+remaining = "pointwise cyclic kernel <= norm sample at cyclic distance, then finite regrouping"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+DISTANCE_FIBER_CARD_LE_TWO_SOURCE_PROVED = true
+FINITE_KERNEL_PAIRING_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
