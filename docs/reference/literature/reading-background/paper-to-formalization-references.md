@@ -844,3 +844,105 @@ operator class and the full coordinate-restriction family. It does not
 exclude a different operator reconstructing the missing coordinates,
 prove a full RH application-family estimate, bound the signed omitted
 source terms, or imply RH or its negation.
+
+
+## Case R4239-05 — normalized residue-squareclass supplier for the native rank criterion
+
+**Identity and scope.** The source point data are from **Noam D. Elkies,
+Zev Klagsbrun and Samuel Li**, *Elliptic Curve Rank Leaderboard: curve
+#4239* (ICARM online record, **2026-10-15**),
+https://elliptic-rank.icarm.cloud/curve/4239. The relevant *method* is
+**J. E. Cremona**, *On the Computation of Mordell–Weil and 2-Selmer
+Groups of Elliptic Curves* (2002), **§2.1–§2.2**, especially the
+finite good-prime characters and their point evaluations,
+https://doi.org/10.1216/rmjm/1034968425.
+**Michael Stoll**, *Elliptic Curves* (Lean source snapshot
+`bad38e242a187dea006fc302a0ef0fd53eedd4ba`, **2026**, not a journal
+publication), https://github.com/MichaelStollBayreuth/EllipticCurves/tree/bad38e242a187dea006fc302a0ef0fd53eedd4ba,
+gives a separate x−T/weak Mordell–Weil formalization in Lean **4.35**.
+That source is **not imported** or backported in this project. The
+`NormalizedResidueDescentEvidence` record and the following lemma names
+are **repository-derived adapters**, not named external paper theorems.
+
+**Mathematical content and exact hypotheses.** At each of the 32
+source-labelled prime/root pairs `(p_j, theta_j)` with `p_j>3`, good
+reduction and a simple root, the existing
+`sourceLocalReduction j : SourceLocalRing j →+* ZMod (primeLabel j)`
+takes the localized, branch-corrected source unit to its true residue.
+The new `sourceReducedSquareClass j i` is its **genuine unit-squareclass**
+image, and `sourceReducedQuadraticBit_eq_sourceQuadraticBit` is the
+structural character-transport comparison. It does **not** prove the
+quadratic character's equality to the finite Euler table.
+
+The new `NormalizedResidueDescentEvidence C` has **four explicit
+unproved suppliers**:
+
+1. `mu : Multiplicative nativeCurve.toAffine.Point →* C`, a point-group
+   homomorphism whose intended arithmetic identity with global x−T
+   descent is not established merely by its type;
+2. `normalize j : C →* UnitSquareClasses (ZMod (primeLabel j))`,
+   a homomorphic **valuation-normalized** specialization at each
+   good prime/root. It must justify denominators, local valuations,
+   infinity and simple-root derivative exceptional branches; it is
+   *not* induced by an impossible unital map `ℚ →+* ZMod p`;
+3. `sourceComparison j i`, all **1024 equalities** between the actual
+   specialized published-point classes and
+   `sourceReducedSquareClass j i` (not a chosen table of arbitrary signs);
+4. `quadraticEuler : QuadraticEulerAgreement`, separately identifying
+   the Mathlib quadratic character with the source Euler bit.
+
+For the numerical finrank conclusion,
+`Module.Finite ℤ nativeCurve.toAffine.Point` is an **additional
+external hypothesis**. The native no-two-torsion argument is imported
+as a local *source proof candidate*, not re-assumed; the 32×32
+matrix inversion and the point-first / character-second orientation
+are preserved. The name `localQuadraticCharacter` denotes an actual
+composition of `residueSquareClassBitHom` with the **assumed**
+`normalize`; construction of the character does not construct
+normalization or global descent.
+
+**Formal source identity.** All declarations belong to
+`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239`,
+new module
+[`Record4239NormalizedResidueCriterion.lean`](../../../../GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239NormalizedResidueCriterion.lean),
+math source commit **`d7e0991e5a136938d23ac44ad3717357605ebccb`**,
+source Git blob **`272ec3d79e816176fe68f37dad3f9ea2e83558c1`**.
+Fully qualified declarations are the namespace prefix above followed by:
+
+- `sourceReducedSquareClass`, `sourceReducedQuadraticBit`,
+  `sourceReducedQuadraticBit_eq_sourceQuadraticBit`;
+- `NormalizedResidueDescentEvidence`,
+  `NormalizedResidueDescentEvidence.localQuadraticCharacter`,
+  `NormalizedResidueDescentEvidence.localQuadraticCharacter_point`,
+  `NormalizedResidueDescentEvidence.toNativeDescentEvidence`;
+- `nativePoints_linearIndependent_of_normalizedResidue`,
+  `nativeCurve_finrank_ge_32_of_normalizedResidue`.
+
+**Import/proof status.** The pre-existing Mathlib
+`residueSquareClassBitHom` and source-local quotient maps are
+reused; the added lemmas are **source-proof-candidates** and the native
+linear-independence/finrank statements are
+**conditional interfaces**. The global arithmetic source maps and
+point-value identities remain **unresolved**. Only static source checks
+(no literal `sorry`, `admit` or new `axiom`; three import declarations,
+namespace/end present), remote Git-blob readback, and exact
+source-commit identity were completed. These are **not Lean checks**.
+
+**Verification:** math `lean-toolchain` at this source commit is
+`leanprover/lean4:v4.33.0`, `lake-manifest.json` locks Mathlib at
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The commands `lake build --wfail GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NormalizedResidueCriterion`,
+`lake env lean --trust=0 --wfail GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239NormalizedResidueCriterion.lean`,
+`lake env leanchecker --verbose GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NormalizedResidueCriterion`
+and transitive `#print axioms` / declaration-environment review have **not**
+been executed. Actual process exit codes, independent kernel acceptance,
+private/generated/imported/transitive axiom closure and trusted theorem
+type checks are **NOT_RUN / NOT_KERNEL_AUDITED**. The external pinned
+execution queue in `grwtsk/noeaaeue` must be issued separately, not
+mistaken for a receipt.
+
+**Nonclaims.** No unconditional `rank E(ℚ) ≥ 32`, exact rank, BSD,
+global x−T descent, construction of the normalizations,
+`SourceBitsMatch`, regulator, RH or GRH is proved. A theorem statement
+with `NormalizedResidueDescentEvidence` is **not** evidence the record
+can be inhabited.
