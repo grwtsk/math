@@ -14,6 +14,9 @@ namespace GRWTSK.RiemannHypothesis
 /-- Dyadic-rate supplier for the centered Möbius-log Fourier energy. -/
 def AllDyadicCenteredMobiusLogEnergyBound
     (dyadicScale : ℕ → ℕ) : Prop :=
+  (∀ j : ℕ, Summable (fun k : ℤ =>
+      if k = 0 then 0
+      else ‖centeredMobiusLogFourierCoordinate (dyadicScale j) k‖^2)) ∧
   ∀ η : ℝ, 0 < η →
     ∃ C : ℝ, 0 ≤ C ∧ ∃ j₀ : ℕ,
       ∀ j ≥ j₀,
@@ -85,7 +88,8 @@ theorem thinAllDyadicAugmentedEnergyBound_of_three_suppliers
     (h1 : AllDyadicBoundarySquareBound dyadicScale mass1) :
     ThinAllDyadicAugmentedEnergyBound dyadicScale mass0 mass1 thinGreenEnergy := by
   intro η hη
-  obtain ⟨CM, hCM, jM, hMbound⟩ := hM η hη
+  obtain ⟨hMsummable, hMrate⟩ := hM
+  obtain ⟨CM, hCM, jM, hMbound⟩ := hMrate η hη
   obtain ⟨C0, hC0, j0, h0bound⟩ := h0 η hη
   obtain ⟨C1, hC1, j1, h1bound⟩ := h1 η hη
   obtain ⟨CR, hCR, hRbound⟩ := greenFullResidualEnergyBound_le_rpow hη
@@ -95,10 +99,14 @@ theorem thinAllDyadicAugmentedEnergyBound_of_three_suppliers
   have hj0 : j0 ≤ j := le_trans (le_max_left _ _) (le_trans (le_max_right _ _) hj)
   have hj1 : j1 ≤ j := le_trans (le_max_right _ _) (le_trans (le_max_right _ _) hj)
   have hgreenPair := thinGreenEnergy_le_of_centered_summable
-    (by exact hscale j)
-  -- The centered supplier is an energy bound, not by itself a summability
-  -- witness. Summability remains a separate premise required by the transfer
-  -- theorem and cannot be inferred from the scalar bound.
-  sorry
+    (hscale j) (hMsummable j)
+  have hgreen := hgreenPair.2
+  have hMb := hMbound j hjM
+  have h0b := h0bound j hj0
+  have h1b := h1bound j hj1
+  have hRb := hRbound (dyadicScale j) (hscale j)
+  have hrpow_nonneg :
+      0 ≤ Real.rpow (dyadicScale j : ℝ) (-1 + η) := by positivity
+  nlinarith
 
 end GRWTSK.RiemannHypothesis
