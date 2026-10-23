@@ -1,0 +1,115 @@
+# Passive mathematical verification specification, NOT an execution receipt.
+schema = "farey-weighted-return-balance-v0.1"
+repository = "grwtsk/math"
+base_branch = "main"
+source_baseline_commit = "ce4304ad71677b4aa3c89a58d0b7682421c395d6"
+source_baseline_tree = "79c42b46524492e81c5420ba7a9080e30e146972"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source_module = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance"
+source_path = "GRWTSK/NumberTheory/Farey/WeightedReturnBalance.lean"
+source_blob = "6fb6857656d34b7b2e22e8ef3229be339cb526fc"
+source_introduction_commit = "c50155b484dc5167ec8f67002a463cdc9ef4f8f4"
+source_repair_commit = "9851f75531b628e574a59703a172a37c88fd68e4"
+math_note_path = "docs/mathematics/NumberTheory/Farey/weighted-return-balance.md"
+math_note_blob = "106ef9d16c14106726f861854d99a049f5affcfc"
+ideas_reference_path = "docs/reference/literature/reading-background/paper-to-formalization-references.md"
+ideas_reference_blob = "317be4a3758902cffd53e58d685d35dc14a73953"
+
+direct_imports = ["GRWTSK.NumberTheory.Farey.ReturnAngularChannel", "Mathlib"]
+return_angular_blob = "df4c90661a7f0a6897d274604de22850b703d38b"
+return_spectral_blob = "de3d52cd221bdf2334bcacccff43fafde4d52db9"
+group_spectral_blob = "4c643e9c728d7a0052dab7c7a1353e0ef97233cd"
+group_superwalk_blob = "281df5e34fdc5ee557642993b95c10e544d62b99"
+farey_cell_blob = "7caef4b022e35202eef471aae2730dff6b518f70"
+prior_parent_issue_numbers = [1086, 1094, 1098, 1100, 1101, 1102]
+
+evidence_class = "SOURCE_PROOF_CANDIDATE"
+source_integrated = true
+elaborated = false
+kernel_checked = false
+transitive_axiom_audited = false
+externally_replayed = false
+public_root_imported = false
+limit_premises_supplied = false
+classical_Weil_identification_supplied = false
+unconditional_global_positivity_proved = false
+
+[validation]
+require_pinned_exact_main_commit = true
+require_source_blob_and_import_closure = true
+require_pinned_lean_mathlib = true
+require_warning_clean_leaf_and_transitive_build = true
+require_fresh_kernel_checker_or_verified_supported_equivalent = true
+require_all_declaration_types = true
+require_transitive_axiom_closure = true
+require_source_free_of_sorry_admit_new_axiom_native_decide_unsafe = true
+require_hostile_controls = true
+reject_finite_checks_as_lean_evidence = true
+reject_arbitrary_gauge_normalization = true
+reject_unweighted_phase_cancel_as_raw_weighted_cancel = true
+reject_missing_uniform_margin_for_strict_positivity = true
+reject_zero_residual_without_actual_convergence = true
+reject_Weil_Hodge_NavierStokes_RH_proof_promotion = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.weightedFourPhase_eq_pair_defects"
+classification = "exact_two_pair_error_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.weightedFourPhase_norm_le"
+classification = "explicit_signed_error_bound"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.radialFourBlock_ne_zero_of_one_lt"
+classification = "expanding_raw_clock_noncancellation"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.discreteSpiral_first_four_eq_radialBlock"
+classification = "actual_source_observation_to_weighted_block"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.discreteSpiral_first_four_ne_zero"
+classification = "hostile_raw_clock"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.compensatedSample_eq_phase"
+classification = "explicit_inverse_eigenvalue_normalization"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.compensated_four_consecutive_zero"
+classification = "exact_compensated_four_stage_cancellation"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.finite_paired_signed_sum_zero"
+classification = "finite_cellwise_sign_pair_cancellation"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.finite_balanced_energy_nonneg"
+classification = "finite_square_energy_nonnegative"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.limit_lower_bound_of_balanced_partitions"
+classification = "conditional_uniform_margin_vanishing_error_actual_limit"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.WeightedReturnBalance.limit_nonneg_of_balanced_partitions"
+classification = "conditional_limit_positivity"
+
+[hostile_controls]
+cases = [
+  "lambda=(3+sqrt5)/2: raw four-return sum nonzero despite phase sum zero",
+  "two opposite phase weights unequal and signed error nonzero",
+  "wrong compensator lambda^n instead of lambda^-n",
+  "projective sign quotient loses the oriented quarter turn",
+  "arbitrary partition lacking matched weights or paired errors",
+  "residual_n=-2, energy_n=1, cancel_n=0: negative limit when residual nonvanishing",
+  "energy_n=1/(n+1), residual_n=0: no strict positive uniform margin",
+  "missing convergence of total signed energies",
+  "claiming an arbitrary spectral/Weil form equals the selected compensated observation",
+  "claiming a Hodge-cycle or Navier-Stokes or RH theorem from the generic limit criterion"
+]
+
+[next_obstruction]
+statement = "Construct the actual refining arithmetic partitions, their source-preserving pair involution and weight transport, a complete vanishing residual, and a uniform spectral margin or all-scale nonnegative estimate inside the genuine classical Weil test space."
