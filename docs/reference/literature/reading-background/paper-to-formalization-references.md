@@ -3084,7 +3084,7 @@ B1–B6 remain unresolved: compactification, cohomological comparison, completed
 one RH-W01 finite square-tent image-positivity increment formerly in
 [draft PR #1092](https://github.com/grwtsk/math/pull/1092), associated with
 [issue #197](https://github.com/grwtsk/math/issues/197).
-PR #1092 was subsequently merged by another concurrent actor and its head
+PR #1092 was subsequently merged outside this execution and its head
 branch deleted; **that merge is source integration, not accepted kernel evidence**.
 This provenance-only update is isolated on
 `docs/rh-w01-bombieri-weil-provenance-20261023` based on
