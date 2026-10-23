@@ -15,6 +15,9 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseRadial
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskBoundary
 
+local instance cornerDiscreteTopology (k : ℕ) :
+    TopologicalSpace (PolygonCorner k) := ⊥
+
 /-- The original filling respects precisely the cone's collapsed end. -/
 theorem cylinder_respects_cone (k : ℕ)
     {p q : UnpairedPerimeter k × unitInterval}
@@ -28,6 +31,8 @@ theorem cylinder_respects_cone (k : ℕ)
     | mk x r =>
       cases q with
       | mk y s =>
+        change r = 0 at hp
+        change s = 0 at hq
         subst r
         subst s
         exact (perimeterCylinderToFilling_zero k x).trans

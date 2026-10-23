@@ -43,6 +43,7 @@ the apex and at the outer reversed-side boundary. -/
         (perimeterConeDiskHomeomorph k
           (CircleCone.coneMk (perimeterProjection k p) r))) =
       radialProjection k (p, r) := by
+  let : TopologicalSpace (PolygonCorner k) := ⊥
   change adjunctionToFilling k
     (originalDiskMap k
       (perimeterConeDiskHomeomorph k
