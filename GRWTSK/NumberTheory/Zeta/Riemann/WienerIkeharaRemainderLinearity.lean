@@ -228,9 +228,17 @@ theorem wienerSchwartzBoundaryRemainder_truncation_split
         (wienerCompactSchwartzTruncation g R) T +
       wienerSchwartzBoundaryRemainder
         (g - wienerCompactSchwartzTruncation g R) T := by
-  have h := wienerSchwartzBoundaryRemainder_sub g
-    (wienerCompactSchwartzTruncation g R) hT
-  rw [sub_eq_iff_eq_add] at h
-  exact h.symm
+  calc
+    wienerSchwartzBoundaryRemainder g T =
+      wienerSchwartzBoundaryRemainder
+        (wienerCompactSchwartzTruncation g R +
+          (g - wienerCompactSchwartzTruncation g R)) T := by
+      congr 1
+      abel
+    _ = wienerSchwartzBoundaryRemainder
+          (wienerCompactSchwartzTruncation g R) T +
+        wienerSchwartzBoundaryRemainder
+          (g - wienerCompactSchwartzTruncation g R) T :=
+      wienerSchwartzBoundaryRemainder_add _ _ hT
 
 end GRWTSK.RiemannHypothesis
