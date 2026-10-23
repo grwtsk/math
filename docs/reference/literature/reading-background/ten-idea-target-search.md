@@ -1,5 +1,7 @@
 # Further Lean search: ten unresolved research ideas
 
+Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
 **3 conditional-fragment**; **7 unresolved**. All ten exact asset/idea identities remain separate. **No main manuscript claim is marked resolved.**
 
 Maintained-code search baseline: `b9c830170615ea5fc92ea988252891a1808ea074`. Explicit upstream mathlib dependency: `db584cd6d46c92f209a44c0f1c829460d327499d`, verified against `lake-manifest.json` at that maintained baseline. [Review data](ten-idea-target-search.json) · [Strict schema](ten-idea-target-search.schema.json) · [Prior 21-idea pass](remaining-idea-target-search.md)
@@ -12,6 +14,8 @@ Conditional fragments concern narrower source subclaims under retained premises;
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `498a8b7e7583`
 
 `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer` — **unresolved**. Main claim unresolved.
+
+Current blocker: **automorphic-transfer-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#498a8b7e7583e8ec-exceptional-embedding-transfer); unresolved, NOT_RUN.
 
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
 
@@ -46,6 +50,8 @@ Missing bridges:
 
 `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer` — **unresolved**. Main claim unresolved.
 
+Current blocker: **automorphic-transfer-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#67b33f06a6094d05-exceptional-embedding-transfer); unresolved, NOT_RUN.
+
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
 
 Both physical pages have now been reread. Upstream Cartan-matrix and root-system constructions describe algebraic root data; they do not construct the asserted G2/F4/E8 automorphic transfers or prove equality of completed L-functions. The dimensions 7/26/248 and reported tolerances do not fill that gap.
@@ -78,6 +84,8 @@ Missing bridges:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `159cb12b34d5`
 
 `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap` — **unresolved**. Main claim unresolved.
+
+Current blocker: **inconsistent-recurrence**. [Exact construction/proof obligations](seven-idea-construction-plan.md#159cb12b34d5a425-kl-positive-to-residue-gap); unresolved, NOT_RUN.
 
 KL polynomial positivity and nilpotent-stratum localization are asserted to imply analytic residue vanishing, with affine/quantum extensions and a G2 example.
 
@@ -114,6 +122,8 @@ Missing bridges:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap` — **unresolved**. Main claim unresolved.
+
+Current blocker: **inconsistent-recurrence**. [Exact construction/proof obligations](seven-idea-construction-plan.md#553f237f431fc299-kl-positive-to-residue-gap); unresolved, NOT_RUN.
 
 KL polynomial positivity and nilpotent-stratum localization are asserted to imply analytic residue vanishing, with affine/quantum extensions and a G2 example.
 
@@ -199,6 +209,8 @@ Missing bridges:
 
 `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline` — **unresolved**. Main claim unresolved.
 
+Current blocker: **geometric-realization-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#796ba01d4a02a5ba-boundary-positivity-outline); unresolved, NOT_RUN.
+
 The two-page outline proposes boundary localization, Euler-form positivity and exceptional-group regularization, with a reported 10^−8 numerical error.
 
 The complete two-page outline gives no boundary complex or analytic comparison. A maintained graph theorem proves that zero of a particular nonnegative sum-of-squared-coboundaries is equivalent to a zero coboundary. It assumes energy zero; positivity of an unspecified Euler pairing does not establish that hypothesis, and the graph model is not the paper’s intersection cohomology.
@@ -234,6 +246,8 @@ Missing bridges:
 ### Updated Verification of Recursive Refinement Framework — `d7819c0364c7`
 
 `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence` — **unresolved**. Main claim unresolved.
+
+Current blocker: **unsupported-status-claim**. [Exact construction/proof obligations](seven-idea-construction-plan.md#d7819c0364c77a97-status-assertions-not-proof-evidence); unresolved, NOT_RUN.
 
 The status note declares Axioms 1/5, mixed-source consistency and zero independence resolved while listing remaining cross-term and higher-dimensional bounds.
 
@@ -271,6 +285,8 @@ Missing bridges:
 ### A Holistic Strategy for Deriving Properties of Prime Numbers — `0b423568798d`
 
 `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap` — **unresolved**. Main claim unresolved.
+
+Current blocker: **source-specification-needed**. [Exact construction/proof obligations](seven-idea-construction-plan.md#0b423568798d1ce3-prime-research-roadmap); unresolved, NOT_RUN.
 
 The document proposes a research program joining zeta derivatives, prime-generation algorithms, motives and geometric visualizations; it states objectives rather than proving a prime-distribution theorem.
 
