@@ -1,0 +1,30 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Formalization assistance: OpenAI ChatGPT.
+Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+import GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerCoprimeTailSplit
+
+set_option autoImplicit false
+noncomputable section
+
+namespace GRWTSK.NumberTheory.Moebius.CenteredLowGCD
+
+#check centeredTailIncidenceSet
+#check centeredDivisibilityTail_eq_incidenceSum
+#check centeredTailIncidenceSet_card_le
+#check abs_centeredDivisibilityTail_le_quotient_log_product
+
+#check lowCoprimeMobiusSquareExpansion
+#check highCoprimeMobiusSquareExpansion
+#check coprimeMobiusSquareExpansion_eq_low_add_high
+#check highMobiusQuotientSquareMass_le
+#check absoluteHighCoprimeMobiusSquareMajorant_le_target
+#check abs_highCoprimeMobiusSquareExpansion_le_target
+
+#check nonAliasingFejerSmallMobiusAndPositiveGCDResidual
+#check nonAliasingFejerSignedLowGCDBilinear_eq_residual_add_high
+#check abs_nonAliasingFejer_highCoprimeMobiusSquare_le_target
+#check abs_nonAliasingFejerSignedLowGCDBilinear_le_of_residual
+#check abs_nonAliasingFejer_positiveShift_sqrt_le_of_residual
+
+end GRWTSK.NumberTheory.Moebius.CenteredLowGCD
