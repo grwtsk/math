@@ -1442,35 +1442,22 @@ theorem CMFiniteSeparatedCanonicalAssembly_on_separatedPure
   exact CMFiniteSeparatedCanonicalAssembly_pure E
     a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
-/-- Reassociate and exchange the middle two entries of two paired tensors. -/
-noncomputable def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
+/-- The two-pair specialization of the generic checked shuffle. -/
+def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
     ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
       (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
     ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
       (E.carrier ⊗[ℚ] E.carrier)) :=
-  TensorProduct.tensorTensorTensorComm ℚ
-    E.carrier E.carrier E.carrier E.carrier
+  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleTwo ℚ E.carrier
 
-/-- Extend the two-pair shuffle across a third coefficient/vector pair. -/
-noncomputable def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
+/-- The three-pair specialization of the generic checked shuffle. -/
+def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
     (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
       (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
       (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
     (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ]
       ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)) :=
-  (TensorProduct.congr (CMFiniteTwoTensorShuffle E)
-      (LinearEquiv.refl ℚ (E.carrier ⊗[ℚ] E.carrier))).trans
-    (TensorProduct.tensorTensorTensorComm ℚ
-      (E.carrier ⊗[ℚ] E.carrier)
-      (E.carrier ⊗[ℚ] E.carrier) E.carrier E.carrier)
-
-/-- The canonical four-pair tensor shuffle, built from the associator/
-commutator construction provided by Mathlib. -/
-
-/-- The shuffle separates all four coefficient entries from all four
-vector entries on paired pure tensors. -/
-/-- Compose the actual tensor shuffle with the already constructed
-separated coefficient-multiplication assembly. -/
+  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleThree ℚ E.carrier
 
 /-- Any two maps on the original finite-CM paired tensor carrier
 satisfying the original pure shuffle formula coincide. The proof now uses
