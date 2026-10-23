@@ -1,0 +1,150 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-exceptional-character-chi4-691-v0.1"
+owner_repository = "grwtsk/math"
+issue = 691
+parent_issue = 681
+parent_pr = 684
+orbit_issue = 671
+orbit_pr = 672
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_EXCEPTIONAL_CHARACTER_IDENTIFICATION_SOURCE_DRAFT_CHI_FOUR_TWISTED_MERTENS_ENERGY_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ExceptionalKernelCharacterChiFour"
+build_target = "GRWTSK.NumberTheory.Moebius.ExceptionalKernelCharacterChiFour"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-exceptional-twisted-mertens-681-20261022"
+stacked_parent_revision = "4fa5525141e96deec298c39c0ee68c0fde625e9f"
+stacked_parent_tree = "258463e8f05e273d260afb3a7d994d6aea10f11e"
+candidate_branch = "research/rh-exceptional-character-chi4-691-20261022"
+theorem_source_commit = "db22183c2f09ab3fb7fe2e83b56cbebfd753c68e"
+theorem_source_tree = "4257bfa8bce07c4b61fddba71c9448ecb73e6af3"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ExceptionalKernelCharacterChiFour.lean"
+theorem_source_git_blob = "8f346435e49801dd7f0a23e16375768f66f21381"
+mathematical_note_commit = "72bb587f933bf230b06064b5ef352d1c95a65a19"
+mathematical_note_tree = "c22a9ae3ced15294675137b5db0d602626681b26"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/exceptional-kernel-character-chi4.md"
+mathematical_note_git_blob = "3e44161b81f389bb5e1601823a96ca67db48aa84"
+
+[character_identification]
+kernel_character = "twoKernelShiftCharacter"
+nontrivial_at_one = "twoKernelShiftCharacter_one_ne_one"
+value_at_one = "twoKernelShiftCharacter_one_eq_neg_one"
+all_naturals = "twoKernelShiftCharacter_eq_neg_one_pow"
+formula = "eta_d(m)=(-1)^m"
+uses_std_add_char_injectivity = true
+uses_order_two_square_identity = true
+named_dirichlet_character_used_at_this_step = false
+
+[parity_reduction]
+explicit_alternating_prefix = "exceptionalKernelTwistedMertensPrefix_eq_neg_one_twist"
+chi_four_prefix = "chiFourTwistedMertensPrefix"
+even_reindex = "exceptionalKernelTwistedMertensPrefix_even_eq_halfSum"
+even_reduction = "exceptionalKernelTwistedMertensPrefix_even_eq_odd_half"
+odd_reduction = "exceptionalKernelTwistedMertensPrefix_odd_eq_chiFour"
+even_formula = "T_0(b,d)=parityMertensPrefix(floor(b/2),1)"
+odd_formula = "T_1(b,d)=sum_(1<=n<=b) mu(n)*chi_4(n)"
+mathlib_character = "ZMod.χ₄"
+mathlib_character_identity = "ZMod.χ₄_eq_neg_one_pow"
+even_argument_character_zero_checked = true
+mobius_two_mul_squarefree_zero_case_retained = true
+
+[analytic_split]
+half_scale_odd_energy = "DyadicHalfScaleOddMertensSquareRootEnergy"
+chi_four_energy = "DyadicChiFourTwistedMertensSquareRootEnergy"
+parity_to_half_scale = "halfScaleOddMertensEnergy_of_parity"
+two_sources_to_kernel_energy = "twoKernelTwistedMertensEnergy_of_halfOdd_and_chiFour"
+pointwise_and_chi_four_to_kernel_energy = "twoKernelTwistedMertensEnergy_of_pointwise_and_chiFour"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwise_chiFour_twoUnit_regular"
+chi_four_energy_constructed = false
+ordinary_pointwise_mertens_constructed = false
+regular_orbit_supplier_constructed = false
+two_unit_supplier_constructed = false
+
+[chi_four_adapter]
+adapter = "ToChiFourTwistedMertensSquareRootEnergyAdapter"
+source_data = "ChiFourTwistedMertensSourceData"
+source = "ChiFourTwistedMertensSource"
+named_adapter_value_constructed = false
+result_003_zero_free_region_used = false
+grh_inferred = false
+
+[evidence_states]
+source_draft = true
+exceptional_character_identification_source_draft = true
+order_two_character_nontriviality_scripted = true
+order_two_character_equals_neg_one_pow_scripted = true
+even_prefix_to_odd_mertens_scripted = true
+odd_prefix_to_chi_four_mertens_scripted = true
+half_scale_odd_energy_transport_scripted = true
+conditional_exceptional_energy_split_scripted = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+chi_four_twisted_mertens_energy_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ExceptionalKernelCharacterChiFour"
+definition_count = 4
+theorem_script_count = 11
+structure_count = 2
+authored_declaration_count = 17
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ExceptionalKernelTwistedMertensFactorization.lean"
+git_blob = "3a01c66e12ea60342eedff098909d1116a4fd255"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_684"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.LegendreSymbol.ZModChar"
+declarations = [
+  "ZMod.χ₄",
+  "ZMod.χ₄_nat_eq_if_mod_four",
+  "ZMod.χ₄_eq_neg_one_pow"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar"
+declaration = "ZMod.injective_stdAddChar"
+status = "TRANSITIVE_PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+chi_four_not_redefined = true
+even_arguments_not_discarded_without_proof = true
+mu_two_mul_unconditional_identity_rejected = true
+squarefree_zero_case_retained = true
+exact_endpoint_conventions_preserved = true
+common_dyadic_ambient_scale_preserved = true
+result_003_not_promoted_to_square_root_energy = true
+grh_not_inferred = true
+regular_orbit_branch_unchanged = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_chi_four_twisted_mertens_square_root_energy = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_two_unit_supplier = true
+prove_regular_orbit_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+chi_four_energy_proved = false
+grh_proved = false
+result_003_supplies_chi_four_energy = false
+regular_orbit_estimate_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
