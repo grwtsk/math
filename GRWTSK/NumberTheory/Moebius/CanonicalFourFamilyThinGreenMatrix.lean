@@ -401,6 +401,19 @@ theorem canonicalFourFamilyThinFourierHead_eq_originalThinHead
   rw [canonicalFourFamilyThinFourierCoordinate_eq_thinGreen,
     canonicalFourFamilyThinFourierCoordinate_eq_thinGreen]
 
+
+/-- The finite head is a nonnegative sum of squared complex norms.
+This elementary scalar nonnegativity supplies NO signed Weil-form
+positivity, coercive lower frame, or all-scale decay. -/
+theorem canonicalFourFamilyThinFourierHead_nonneg
+    (X N : ℕ) : 0 ≤ canonicalFourFamilyThinFourierHead X N := by
+  unfold canonicalFourFamilyThinFourierHead
+    canonicalFourFamilyThinFourierShell
+  apply Finset.sum_nonneg
+  intro j _hj
+  positivity
+
+
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamily_selected_shift_mem
