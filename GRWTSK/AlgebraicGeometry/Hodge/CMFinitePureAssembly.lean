@@ -637,6 +637,7 @@ theorem CMFiniteFourPairedCoefficientConjugate_pure
     CMFiniteFourPairedPure,
     GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul]
 
+attribute [local ext high] _root_.TensorProduct.ext in
 /-- The full paired-assembly conjugation equality is exactly the
 coefficient-only action, not a diagonal action on coefficient and vector. -/
 theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
@@ -647,31 +648,17 @@ theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
         (CMFiniteCanonicalPairedAssembly E t) =
       CMFiniteCanonicalPairedAssembly E
         (CMFiniteFourPairedCoefficientConjugate E σ t) := by
-  induction t with
-  | tmul t123 t4 =>
-      induction t123 with
-      | tmul t12 t3 =>
-          induction t12 with
-          | tmul t1 t2 =>
-              induction t1 with
-              | tmul a₁ x₁ =>
-                  induction t2 with
-                  | tmul a₂ x₂ =>
-                      induction t3 with
-                      | tmul a₃ x₃ =>
-                          induction t4 with
-                          | tmul a₄ x₄ =>
-                              simpa only [CMFiniteFourPairedPure,
-                                CMFiniteFourPairedCoefficientConjugate_pure] using
-                                CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
-                                  E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-                          | add x y hx hy => simp [map_add, hx, hy]
-                      | add x y hx hy => simp [map_add, hx, hy]
-                  | add x y hx hy => simp [map_add, hx, hy]
-              | add x y hx hy => simp [map_add, hx, hy]
-          | add x y hx hy => simp [map_add, hx, hy]
-      | add x y hx hy => simp [map_add, hx, hy]
-  | add x y hx hy => simp [map_add, hx, hy]
+  have h :
+      (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ).comp
+        (CMFiniteCanonicalPairedAssembly E) =
+      (CMFiniteCanonicalPairedAssembly E).comp
+        (CMFiniteFourPairedCoefficientConjugate E σ) := by
+    ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    simpa only [LinearMap.comp_apply, CMFiniteFourPairedPure,
+      CMFiniteFourPairedCoefficientConjugate_pure] using
+      CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+        E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  exact congrArg (fun f => f t) h
 
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
