@@ -386,4 +386,42 @@ theorem ResidualFreshTrail.disjoint_from_existing
   exact Finset.disjoint_sdiff_self_left
 
 
+
+/-- Residual degree balance inherited from a closed counted trail
+in a globally balanced graph. This transports the verified
+used/unused degree conservation interface into the residual
+maximal-extension construction. -/
+theorem residualDegreeBalanced_of_closed_trail
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hclosed : a = b)
+    (hbalance : CountedDegreeBalanced m c) :
+    ResidualDegreeBalanced m c (Finset.univ \ T.used) := by
+  intro v
+  exact T.closed_unused_balanced hclosed hbalance v
+
+/-- Given a residual outgoing edge at a visited vertex of a
+closed trail, produce a nonempty residual closed trail based
+there, edge-disjoint from the existing circuit. -/
+theorem FreshCountedTrail.exists_disjoint_residual_cycle
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hclosed : a = b)
+    (hbalance : CountedDegreeBalanced m c)
+    (e : CountedBinaryEdge m c)
+    (he : e ∈ Finset.univ \ T.used)
+    (hsource : countedEdgeSource m c e = v) :
+    ∃ C : FreshCountedTrail m c v v,
+      Disjoint T.used C.used ∧ 0 < C.used.card := by
+  let U : Finset (CountedBinaryEdge m c) := Finset.univ \ T.used
+  have hU : ResidualDegreeBalanced m c U :=
+    residualDegreeBalanced_of_closed_trail T hclosed hbalance
+  obtain ⟨R, _, hpos⟩ :=
+    ResidualFreshTrail.exists_nonempty_closed_of_edge U hU e he
+  rw [hsource] at R
+  exact ⟨R.trail, R.disjoint_from_existing T, hpos⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
