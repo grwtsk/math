@@ -1,0 +1,144 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-cross-congruence-fibres-553-v0.1"
+owner_repository = "grwtsk/math"
+issue = 553
+parent_issue = 546
+parent_pr = 549
+divisor_square_issue = 537
+divisor_square_pr = 539
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CONGRUENCE_FIBRE_REINDEX_SOURCE_DRAFT_CONGRUENCE_RESTRICTED_TWO_POINT_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionCongruenceFibres"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionCongruenceFibres"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-nonsquarefree-divisor-cancellation-546-20261021"
+stacked_parent_revision = "5a6040ea181d22dfb630f774178db919a5c226db"
+stacked_parent_tree = "0bdc530aa78e9ad5b11f5ac8f4d45962dc67f61c"
+candidate_branch = "research/rh-cross-congruence-fibres-553-20261021"
+theorem_source_commit = "162fa7853be0ed26be980590c184aaf8a9c820be"
+theorem_source_tree = "c7d9de6db8ef963f6e993b7eb444934afda56e71"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionCongruenceFibres.lean"
+theorem_source_git_blob = "0354a5ff6e9d1ac80ccc0f224b91dc268d8c0e0c"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+midpoint = "mertensCrossCollisionMidpoint"
+midpoint_range = "mertensCrossCollisionMidpoint_pos_lt_endpoint"
+fixed_support = "fixedEndpointSquareDivisorSupport"
+fixed_support_identity = "squareDivisorSupport_eq_fixedEndpointSupport"
+fixed_range_sum = "squareDivisorMobiusSum_eq_fixedEndpointRange"
+congruence_predicate = "squareDivisorCongruence"
+congruence_equivalence = "squareDivisorCongruence_iff"
+fixed_congruence_sum = "squareDivisorMobiusSum_eq_fixedCongruenceRange"
+congruence_base_set = "mertensEndpointCrossCongruenceBaseSet"
+congruence_fibre = "mertensEndpointCrossCongruenceFibre"
+expanded_energy = "mertensEndpointCrossCollisionCongruenceExpandedEnergy"
+fibre_energy = "mertensEndpointCrossCollisionCongruenceFibreEnergy"
+endpoint_identity = "mertensEndpointCrossCollisionDivisorSquareSieveEnergy_eq_congruenceFibres"
+weighted_energy = "weightedMertensEndpointCrossCollisionCongruenceFibreEnergy"
+weighted_identity = "weightedMertensEndpointCrossCollisionEnergy_eq_congruenceFibres"
+all_scale_surface = "SubpolynomialWeightedMertensEndpointCongruenceCrossCollision"
+surface_equivalence = "subpolynomialWeightedMertensEndpointCongruenceCrossCollision_iff_squarefreeMidpoint"
+proof_classification = "EXACT_FINITE_FIXED_RANGE_CONGRUENCE_REINDEXING"
+
+[geometry]
+endpoint = "b"
+prefix = "n"
+shift = "h=b-n"
+base = "a"
+x = "a+1"
+midpoint = "x+h"
+base_support = "a<n-(b-n)"
+midpoint_lower = "0<midpoint"
+midpoint_upper = "midpoint<b"
+modulus_parameter_range = "1<=d<b"
+modulus = "d*d"
+congruence = "midpoint ≡ 0 [MOD d*d]"
+informal_residue = "x ≡ -h (mod d^2)"
+
+[endpoint_identity]
+divisor_sieve = "mertensEndpointCrossCollisionDivisorSquareSieveEnergy"
+congruence_fibre_energy = "mertensEndpointCrossCollisionCongruenceFibreEnergy"
+formula = "2*sum_(1<=d<b) mu(d)*CrossCongruenceFibre(b,d)"
+signed_mu_d_retained = true
+endpoint_product_signed = true
+absolute_value_inserted = false
+finite_fubini_only = true
+
+[weighted_identity]
+source = "weightedMertensEndpointCrossCollisionEnergy"
+target = "weightedMertensEndpointCrossCollisionCongruenceFibreEnergy"
+uses_constructed_divisor_square_identity_from_parent = true
+outer_weight = "4*(1/b-1/(b+1))"
+estimate_proved = false
+
+[analytic_frontier]
+live_object = "square-modulus congruence-restricted two-point Mobius correlation"
+endpoint_product = "mu(x)*mu(x+2h)"
+restriction = "x+h ≡ 0 mod d^2"
+growing_shift = true
+growing_square_modulus = true
+residue_depends_on_shift = true
+fixed_shift_unrestricted_chowla_sufficient = false
+uniform_congruence_adapter_required = true
+
+[evidence_states]
+source_draft = true
+congruence_fibre_reindex_source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+congruence_restricted_two_point_estimate_proved = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionCongruenceFibres"
+authored_declaration_count = 20
+definition_count = 9
+theorem_script_count = 11
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SquareDivisorMobiusNonsquarefreeCancellation.lean"
+git_blob = "c678bcce50e6b77ef650960e43572bb490cbe50c"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_549"
+
+[[dependencies]]
+source = "Mathlib.Data.Nat.ModEq"
+declaration = "Nat.modEq_zero_iff_dvd"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+modulus_d_squared_preserved = true
+mu_d_sign_preserved = true
+endpoint_product_sign_preserved = true
+midpoint_support_exact = true
+endpoint_range_exact = true
+prefix_range_exact = true
+base_range_exact = true
+residue_class_not_enlarged = true
+absolute_values_not_inserted = true
+fixed_shift_theorem_not_promoted_to_uniform_congruence_family = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+uniform_congruence_restricted_two_point_estimate = true
+comparison_to_existing_elliott_chowla_results = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+independent_review = false
+congruence_fibre_bound_proved = false
+binary_chowla_adapter_proved = false
+elliott_adapter_proved = false
+riemann_hypothesis_proved = false
