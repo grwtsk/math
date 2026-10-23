@@ -36,7 +36,6 @@ theorem reduced_discriminant_ne_zero_iff_charTwoRoot
   have hn := monicQuarticDiscriminant_ne_zero_iff_charTwoRoot h2
     (Ideal.Quotient.mk I A) (Ideal.Quotient.mk I B)
     (Ideal.Quotient.mk I C) (Ideal.Quotient.mk I D)
-  have hd := GRWTSK.Algebra.QuarticResolventRingNaturality.resolvent_map
   simpa [monicQuarticDiscriminant, charTwoDiscriminantRoot, map_add,
     map_sub, map_mul, map_pow, map_ofNat] using hn
 
@@ -52,8 +51,10 @@ theorem charTwo_obstruction_nonmem_separable_resolvent
   intro hd
   have hzero : Ideal.Quotient.mk I (monicQuarticDiscriminant A B C D) = 0 :=
     (Ideal.Quotient.eq_zero_iff_mem).2 hd
-  have hh := (reduced_discriminant_ne_zero_iff_charTwoRoot I h2 A B C D).2
-  exact hh (fun hz => h ((Ideal.Quotient.eq_zero_iff_mem).1 hz)) hzero
+  have hroot : Ideal.Quotient.mk I (charTwoDiscriminantRoot A B C D) ≠ 0 := by
+    intro hz
+    exact h ((Ideal.Quotient.eq_zero_iff_mem).1 hz)
+  exact ((reduced_discriminant_ne_zero_iff_charTwoRoot I h2 A B C D).2 hroot) hzero
 
 end
 end GRWTSK.Algebra.QuarticCharTwoMaximalCriterion
