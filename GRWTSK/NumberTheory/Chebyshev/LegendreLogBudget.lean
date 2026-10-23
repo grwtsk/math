@@ -46,7 +46,7 @@ theorem properMass_eq_higherMass (n : ℕ) (hn : 1 ≤ n) :
     properPrimePowerMass (n ^ 2) ((n + 1) ^ 2) = higherPrimePowerMass n := by
   have hproducer := squareIncrement_decomposition n hn
   have hconsumer := source_sub_eq_theta_sub_add_proper
-    (n ^ 2) ((n + 1) ^ 2) (by nlinarith)
+    (n ^ 2) ((n + 1) ^ 2) (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2)
   rw [← squareIncrement_eq_nat_source n] at hconsumer
   change squareIncrement n = squarePrimeIncrement n +
     properPrimePowerMass (n ^ 2) ((n + 1) ^ 2) at hconsumer
@@ -61,7 +61,7 @@ theorem squarePrimeIncrement_pos_iff_count (n : ℕ) :
 theorem squarePrimeIncrement_nonneg (n : ℕ) : 0 ≤ squarePrimeIncrement n := by
   unfold squarePrimeIncrement
   exact sub_nonneg.mpr (_root_.Chebyshev.theta_mono
-    (by exact_mod_cast (show n ^ 2 ≤ (n + 1) ^ 2 by nlinarith)))
+    (by exact_mod_cast (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2)))
 
 /-- Zero prime count is exactly zero prime-only mass; this is not a statement about psi. -/
 theorem squarePrimeIncrement_eq_zero_iff_count_zero (n : ℕ) :
@@ -119,11 +119,11 @@ theorem squareCount_pos_of_shifted_log_budget (n : ℕ) (hn : 1 ≤ n) (A ε : �
   simpa only [squareIncrement_eq_shifted] using happrox
 
 /-- Global Legendre remains conditional on a complete prefix and every-input error/margin suppliers. -/
-theorem legendre_of_prefix_and_log_budgets (N : ℕ) (prefix : LegendreThrough N)
+theorem legendre_of_prefix_and_log_budgets (N : ℕ) («prefix» : LegendreThrough N)
     (A ε : ℕ → ℝ)
     (happrox : ∀ n, N < n → |squareIncrement n - A n| ≤ ε n)
     (hmargin : ∀ n, N < n → 0 < A n - ε n - squareCorrectionBudget n) : Legendre := by
-  apply legendre_of_prefix_and_tail N prefix
+  apply legendre_of_prefix_and_tail N «prefix»
   intro n hn
   exact squareCount_pos_of_log_budget n (by omega) (A n) (ε n)
     (happrox n hn) (hmargin n hn)

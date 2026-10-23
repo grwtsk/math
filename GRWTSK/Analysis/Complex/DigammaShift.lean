@@ -4,7 +4,7 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Analysis.SpecialFunctions.Gamma.Digamma
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.NormCast
+import Mathlib.Tactic
 import Mathlib.Tactic.Ring
 
 set_option autoImplicit false
@@ -27,7 +27,7 @@ theorem ne_neg_nat_of_re_pos (z : ℂ) (hz : 0 < z.re) (k : ℕ) : z ≠ -(k : �
   intro he
   have hr := congrArg Complex.re he
   simp only [Complex.neg_re, Complex.natCast_re] at hr
-  linarith [Nat.cast_nonneg (R := ℝ) k]
+  linarith [Nat.cast_nonneg (α := ℝ) k]
 
 /-- The finite sum contains exactly k consecutive reciprocals. -/
 theorem digamma_add_nat (z : ℂ) (hz : 0 < z.re) (k : ℕ) :
@@ -48,7 +48,7 @@ theorem norm_shift_inv_le_half (z : ℂ) (hz : 2 ≤ z.re) (j : ℕ) :
     ‖(z + (j : ℂ))⁻¹‖ ≤ (1 / 2 : ℝ) := by
   have hr : 2 ≤ (z + (j : ℂ)).re := by
     simp only [Complex.add_re, Complex.natCast_re]
-    linarith [Nat.cast_nonneg (R := ℝ) j]
+    linarith [Nat.cast_nonneg (α := ℝ) j]
   have hn : 2 ≤ ‖z + (j : ℂ)‖ :=
     hr.trans ((le_abs_self _).trans (Complex.abs_re_le_norm _))
   rw [norm_inv, inv_eq_one_div]

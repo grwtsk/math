@@ -125,7 +125,7 @@ theorem canonicalLedger_trivialZero_eq_actual_series
   symm
   exact tsum_trivial_tent_coefficients
     (squareCenter n) (squareRadius n)
-    (squareRadius_pos n) (square_tent_domain n hn)
+    (squareRadius_pos n) (GRWTSK.NumberTheory.Chebyshev.CountedTentTail.square_tent_domain n hn)
 
 /-- The square-tent source has zero weight at both arithmetic interval
 endpoints. This supports the no-separate-endpoint convention used by the
@@ -175,7 +175,7 @@ theorem canonical_tail_budget_tendsto_zero (n : ℕ) :
     Tendsto
       (canonicalTailBudget (squareCenter n) (squareRadius n))
       atTop (𝓝 0) :=
-  CanonicalTentAbsolute.canonicalTailBudget_tendsto_zero
+  GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.canonicalTailBudget_tendsto_zero
     (squareCenter n) (squareRadius n)
 
 /-- Reversing the prime-power sign does not give the selected balance: its

@@ -50,7 +50,7 @@ theorem cotangent_even_shift (s : ℂ) (k : ℕ) :
           (Real.pi : ℂ) * (s - 2 * (k : ℂ)) / 2 - (Real.pi : ℂ) := by
         push_cast
         ring
-      rw [he, Complex.cos_sub_pi, Complex.sin_sub_pi, neg_div_neg, ih]
+      rw [he, Complex.cos_sub_pi, Complex.sin_sub_pi, neg_div_neg_eq, ih]
 
 /-- A full-source identity; the two reflected logarithmic derivatives do not disappear. -/
 theorem negative_logDeriv_even_shift (s : ℂ) (hs : s.re ≤ -1) (hi : s.im ≠ 0)
@@ -60,9 +60,9 @@ theorem negative_logDeriv_even_shift (s : ℂ) (hs : s.re ≤ -1) (hi : s.im ≠
       logDeriv riemannZeta (1 - (s - 2 * (k : ℂ))) - logDeriv riemannZeta (1 - s) := by
   have hs0 : s.re < 0 := by linarith
   have hsk : (s - 2 * (k : ℂ)).re < 0 := by
-    simp only [Complex.sub_re, Complex.mul_re, Complex.ofNat_re, Complex.natCast_re,
-      Complex.ofNat_im, Complex.natCast_im, mul_zero, sub_zero]
-    linarith [Nat.cast_nonneg (R := ℝ) k]
+    simp only [Complex.sub_re, Complex.mul_re, show (2 : ℂ).re = 2 by rfl, Complex.natCast_re,
+      show (2 : ℂ).im = 0 by rfl, Complex.natCast_im, mul_zero, sub_zero]
+    linarith [Nat.cast_nonneg (α := ℝ) k]
   have hik : (s - 2 * (k : ℂ)).im ≠ 0 := by simpa using hi
   have hn := negative_logDeriv_reflection hsk (zeta_ne_zero_left_nonreal _ hsk hik)
   have h0 := negative_logDeriv_reflection hs0 (zeta_ne_zero_left_nonreal s hs0 hi)
@@ -82,11 +82,11 @@ theorem norm_even_shift_le (s : ℂ) (hs : s.re ≤ -1) (hi : s.im ≠ 0) (k : �
       ‖-logDeriv riemannZeta s‖ + (k : ℝ) + 2 * mangoldtLineMass := by
   have hw : 2 ≤ (1 - s).re := by simp only [Complex.sub_re, Complex.one_re]; linarith
   have hwk : 2 ≤ (1 - (s - 2 * (k : ℂ))).re := by
-    simp only [Complex.sub_re, Complex.one_re, Complex.mul_re, Complex.ofNat_re,
-      Complex.natCast_re, Complex.ofNat_im, Complex.natCast_im, mul_zero, sub_zero]
-    linarith [Nat.cast_nonneg (R := ℝ) k]
+    simp only [Complex.sub_re, Complex.one_re, Complex.mul_re, show (2 : ℂ).re = 2 by rfl,
+      Complex.natCast_re, show (2 : ℂ).im = 0 by rfl, Complex.natCast_im, mul_zero, sub_zero]
+    linarith [Nat.cast_nonneg (α := ℝ) k]
   have hr : ‖∑ j ∈ Finset.range (2 * k), (1 - s + (j : ℂ))⁻¹‖ ≤ (k : ℝ) := by
-    convert norm_reciprocal_sum_le (1 - s) hw (2 * k) using 1 <;> push_cast <;> ring
+    convert norm_reciprocal_sum_le (1 - s) hw (2 * k) using 1; push_cast; ring
   rw [negative_logDeriv_even_shift s hs hi k]
   have ht1 := norm_sub_le
     (-logDeriv riemannZeta s + (∑ j ∈ Finset.range (2 * k), (1 - s + (j : ℂ))⁻¹) +
@@ -163,7 +163,8 @@ theorem continuous_horizontal_logDeriv (y : ℝ) (hy : y ≠ 0)
     exact hy (by simpa [s] using hi)
   have ha := analyticOn_riemannZeta s hp
   exact ((ha.deriv.continuousAt.div ha.continuousAt
-    (zeta_ne_zero_horizontal y hy havoid σ)).neg).comp (by dsimp [s]; fun_prop)
+    (zeta_ne_zero_horizontal y hy havoid σ)).neg).comp (f := fun u : ℝ => (u : ℂ) + (y : ℂ) * Complex.I) (x := σ)
+    (show ContinuousAt (fun u : ℝ => (u : ℂ) + (y : ℂ) * Complex.I) σ from by fun_prop)
 
 /-- Fixed-height compactness supplies a finite strip bound, not any rate in height. -/
 theorem exists_horizontal_strip_bound (y : ℝ) (hy : y ≠ 0)
