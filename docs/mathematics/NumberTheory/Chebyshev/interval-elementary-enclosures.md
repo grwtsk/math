@@ -183,7 +183,7 @@ New mathematical owners:
 - `GRWTSK.Analysis.Complex.IntervalMellinElementary`.
 
 The isolated root is `GRWTSK.Interfaces.QuadraticIntervalElementaryCore`.
-The static target is `verification/quadratic-interval-elementary-v0.1.toml`.
+The static target is `docs/verification/Interfaces/QuadraticIntervalElementaryCore/quadratic-interval-elementary-v0.1.toml`.
 It preserves the parent's source snapshots and requires exact public types,
 module coverage, full transitive imports/axioms and inherited controls. The
 public root and previous manifests are unchanged. This is not a replay receipt.

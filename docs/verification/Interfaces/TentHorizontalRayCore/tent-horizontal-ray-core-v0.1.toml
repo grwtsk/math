@@ -1,0 +1,178 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "tent-horizontal-ray-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.TentHorizontalRayCore"
+build_target = "GRWTSK.Interfaces.TentHorizontalRayCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "640341499a6f2dedc907f71e342748a83c82d00f"
+base_tree = "c526c8a52e0c330d6f5db5bc9a4f214f3803f809"
+stacked_on_pr = 290
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/TentLeftDecayCore/tent-left-decay-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "dca0faf85cbb429d43c71f541c43e2e3395ba24e".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "9661258ce76a45e89d69e972aa68732326518110".
+# Pre-quadrature-repair inherited_target_blob = "addc06c08f532ff58fd7739322fb3bc477401f03".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "2a48697521002b2ee3f2fea14992f548783c4a9b".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "4a5d24620156793d9dd93286ac9d3c9d92670550"
+receipt_policy = "Bind the exact new commit and tree externally. Ancestor receipts do not accept this increment."
+inventory_policy = "Lexical names only. Reconcile exact elaborated types, complete import closure and every inherited obligation."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant"
+path = "GRWTSK/Analysis/Complex/TentHorizontalRayMajorant.lean"
+source_blob = "ff87a009400f124d591f14e6eacd7f170022f1d0"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TentHorizontalRayCore"
+path = "GRWTSK/Interfaces/TentHorizontalRayCore.lean"
+source_blob = "347ffb40e6f0aae29768b0346252063f01f8861c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/HorizontalRayControls.lean"
+source_blob = "a997127a86e87a359c58123db70c8b7c63c1df8c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays"
+path = "GRWTSK/NumberTheory/Chebyshev/TentHorizontalRays.lean"
+source_blob = "6a3cd89f7b57aca653caa4e07cf26a25bd91fad2"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.HorizontalLogDerivative"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/HorizontalLogDerivative.lean"
+source_blob = "7a5689e2791d6e24ddd7f4b96be19651a88d8859"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentContourMajorants"
+path = "GRWTSK/Analysis/Complex/TentContourMajorants.lean"
+source_blob = "01c81dc898181e1553c21bd7c168cb84f6621601"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TentLeftDecayCore"
+path = "GRWTSK/Interfaces/TentLeftDecayCore.lean"
+source_blob = "3c573f7602873182c5cef797bc41e574c7453db4"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentLeftDecay"
+path = "GRWTSK/NumberTheory/Chebyshev/TentLeftDecay.lean"
+source_blob = "70b6169d95f16af9d578e24151b644a5e6064c80"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LeftLogDerivative"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LeftLogDerivative.lean"
+source_blob = "2520a2839a5a95348d4c01ed131e8d5ca90bc361"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/Order/Floor/Semiring.lean"
+source_blob = "8af0bf21b086d4dd5ae3c92c52e6b2d5c5ae9235"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/IntegralEqImproper.lean"
+source_blob = "7de909dd857336d631a72f8d2b2e81be32bb02c9"
+
+[declarations]
+new_public_names = [
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affinePowerPrimitive",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affineProfilePrimitive",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affineRayBudget",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.shiftMomentBudget",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affineRayBudget_eq",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affinePowerPrimitive_deriv",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affineProfilePrimitive_deriv",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affinePowerPrimitive_nonneg",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affineProfilePrimitive_nonneg",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.affineRayBudget_nonneg",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.shiftMomentBudget_pos",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.integral_affine_envelope_le",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.integral_norm_le_of_affine_envelope",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.integrableOn_Iic_of_affine_envelope",
+  "GRWTSK.Analysis.Complex.TentHorizontalRayMajorant.integral_norm_Iic_le_of_affine_envelope",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.fractional_anchor",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.anchor_at_boundary",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.zero_height_contains_actual_trivial_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.shifted_and_reflected_height",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.zero_constant_keeps_shift_cost",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.shift_cost_is_positive",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.quadratic_strip_bound_has_nonzero_ratio",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.HorizontalRayControls.moving_parameter_diagonal",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.horizontalRay",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.continuous_horizontal_integrand",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.norm_horizontal_integrand_le",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.integrable_horizontal_ray",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.integral_norm_horizontal_ray_le",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.norm_horizontalRay_le",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.leftEdge_tendsto_atBot",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.horizontal_tendsto_ray",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.right_eq_residues_add_horizontalRays",
+  "GRWTSK.NumberTheory.Chebyshev.TentHorizontalRays.norm_combined_horizontalRays_le",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.zeta_ne_zero_left_nonreal",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.cotangent_even_shift",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.negative_logDeriv_even_shift",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.norm_even_shift_le",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.exists_horizontal_anchor",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.norm_horizontal_le_of_strip_bound",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.zeta_ne_zero_horizontal",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.continuous_horizontal_logDeriv",
+  "GRWTSK.RiemannHypothesis.HorizontalLogDerivative.exists_horizontal_strip_bound",
+]
+
+[controls]
+required_obligations = [
+  "Nonintegral anchor: sigma=-6 maps to -2, not a negative odd point.",
+  "Anchor lower endpoint is open; sigma=-3 maps to -1 with one two-unit shift.",
+  "Height zero contains actual trivial zeros and is excluded from ray theorems.",
+  "Even real shifts preserve imaginary height; reflection reverses its sign.",
+  "Both reflected zeta logarithmic-derivative terms survive the exact recurrence.",
+  "Positive logarithmic-square moment cannot be dropped when the constant envelope is zero.",
+  "Nonnegative A and sigma<=2 are retained when dropping the lower primitive.",
+  "A full strip bound of order T^2 does not supply a vanishing normalized rate.",
+  "Fixed-height compactness is not an estimate uniform in height or arithmetic interval.",
+  "Absolute convergence of each ray comes from norm-integral bounds, not cancellation of two divergent rays.",
+  "Top-minus-bottom and 2*pi*I are retained in the exact finite-height left-first identity.",
+  "Exact source, coordinates, analytic multiplicities, and correction are unchanged; no zero database or prime margin is inferred.",
+]
+
+[acceptance]
+required = ["exact-head Lean elaboration and repairs", "all inherited public declaration types", "complete transitive import/axiom/native coverage", "hostile replay", "external math#100 acceptance"]

@@ -1,0 +1,163 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-directional-minor-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachDirectionalMinorCore"
+build_target = "GRWTSK.Interfaces.GoldbachDirectionalMinorCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "e3c17e0097398b2da9539f1b8b93a2a187a039a8"
+base_tree = "72ab8e413f4ca85c6af9b6755cf71d9677cfbca7"
+stacked_on_pr = 386
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/GoldbachFrequencyEnvelopeCore/goldbach-frequency-envelope-core-v0.1.toml"
+inherited_target_blob = "c01e3bff9d2430da93f93d6796499a8d49aaf8b6"
+parallel_common_window_pr = 387
+parallel_common_window_revision = "10319d9b2f2912fc8ad44330be60e1339c2a7c7c"
+parallel_common_window_dependency = false
+receipt_policy = "Any future external replay must bind the exact commit, tree, and manifest blob. This static target is neither an execution receipt nor authorization."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_model_residual_minor_reconstruction = "NEW_SOURCE_DRAFT"
+necessary_upper_bound_from_norm_margin = "NEW_SOURCE_DRAFT"
+conditional_directional_minor_consumer = "NEW_SOURCE_DRAFT"
+universal_directional_tail_quantifiers = "NEW_SOURCE_DRAFT"
+rational_budget_algebra = "NEW_SOURCE_DRAFT"
+theta_to_q_one_two_progression_bridge = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+two_arc_integral_upper_bound = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+two_arc_model_lower_and_upper = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+rational_logarithm_enclosure_bridge = "WRITTEN_DERIVATION_NOT_NEW_LEAN_DECLARATION"
+finite_2310_mass_lower_bound = "WRITTEN_CERTIFICATE_WITH_EXTERNAL_ARITHMETIC_DIAGNOSTICS_NOT_LEAN_ACCEPTANCE"
+bounded_cutoff_universal_norm_obstruction = "WRITTEN_DEDUCTION_USING_CLASSICAL_FIXED_MODULUS_PNT"
+quantitative_universal_prefix_supplier = "NOT_SUPPLIED"
+complete_signed_minor_lower_supplier = "NOT_SUPPLIED"
+strict_universal_margin = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachDirectionalMinorCore"
+path = "GRWTSK/Interfaces/GoldbachDirectionalMinorCore.lean"
+source_blob = "748fb3735489e21bae1efcf8dd9fb5425c84ec54"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachDirectionalMinorControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachDirectionalMinorControls.lean"
+source_blob = "90f02f713b334ef260115ae28471707bf92e4c89"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary"
+path = "GRWTSK/NumberTheory/Primes/GoldbachDirectionalMinorBoundary.lean"
+source_blob = "371b955a4d2494d27b571a3f1ad23032f2eeecff"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget"
+path = "GRWTSK/NumberTheory/Primes/GoldbachTwoArcRationalBudget.lean"
+source_blob = "f0d9633597c472e509abfa06acadd12779e3cb3f"
+disposition = "NEW_SOURCE_DRAFT"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-two-arc-feasibility.md"
+source_blob = "4ce2c9bf70bc029c9cdba4f2121096784b915914"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_count = 18
+public_names = [
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachDirectionalMinorControls.positive_minor_is_not_a_loss",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachDirectionalMinorControls.upper_minor_bound_is_insufficient",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachDirectionalMinorControls.nonstrict_directional_margin_is_insufficient",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachDirectionalMinorControls.correction_survives_zero_prefix_budget",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachDirectionalMinorControls.q2_obstruction_rational_gap",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.goldbachProgressionModel_add_residual_add_minor",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.norm_goldbachProgressionResidualSum_le_frequency",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.mass_interval_of_norm_margin",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.goldbachLogMass_interval_of_frequency_norm_margin",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.no_frequency_norm_margin_of_large_logMass",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.mass_lower_of_signed_minor_lower",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.goldbachCount_pos_of_frequency_signed_minor_lower",
+  "GRWTSK.NumberTheory.Primes.GoldbachDirectionalMinorBoundary.goldbachCount_pos_above_of_frequency_signed_minor_supplier",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget.GoldbachThetaPrefixSupplier",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget.goldbachTwoArcRationalBudget",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget.goldbachTwoArcRationalBudget_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget.goldbachTwoArcRationalBudget_le_half",
+  "GRWTSK.NumberTheory.Primes.GoldbachTwoArcRationalBudget.goldbachTwoArcRationalBudget_strict_margin",
+]
+
+[[acceptance_obligations]]
+id = "D01"
+requirement = "Elaborate only when separately authorized; all current scripts and inherited source remain NOT_RUN and NOT_KERNEL_AUDITED."
+
+[[acceptance_obligations]]
+id = "D02"
+requirement = "Audit exact declaration types, complete imports, axioms, generated and native dependencies, inheriting every unresolved #386/#382/#379 obligation."
+
+[[acceptance_obligations]]
+id = "D03"
+requirement = "Preserve prime-only logarithmic weights, k+1 prefixes, the log2 non-reduced correction, and every-even target quantifiers."
+
+[[acceptance_obligations]]
+id = "D04"
+requirement = "Check the exact source reconstruction and the necessary upper bound G<2*Re(model) imposed by the old two-sided norm margin."
+
+[[acceptance_obligations]]
+id = "D05"
+requirement = "Use the real part of the SAME complete signed minor integral in the directional consumer. Never drop a region or substitute an upper bound for the required lower bound."
+
+[[acceptance_obligations]]
+id = "D06"
+requirement = "Retain a strict combined margin and independently specified suppliers; a large positive minor contribution is not evidence of failure of Goldbach."
+
+[[acceptance_obligations]]
+id = "D07"
+requirement = "Do not promote the rational budget algebra to an integral estimate: the theta/progression, kernel/window, integration and model-bound bridges remain written mathematics."
+
+[[acceptance_obligations]]
+id = "D08"
+requirement = "Reconcile the 2310 witness list, primality, distinctness, both-order multiplicity and rational logarithm bound before any formal use. The numeric Lean control covers only the last rational inequality."
+
+[[acceptance_obligations]]
+id = "D09"
+requirement = "Do not turn two finite prefix checks into a universal rate, signed-minor control, finite exception coverage, or Goldbach proof."
+
+[[acceptance_obligations]]
+id = "D10"
+requirement = "Keep the bounded-Q obstruction distinct from Goldbach and from one-sided minor reasoning; its tail deduction uses classical fixed-modulus PNT, not an imported or audited theorem."
+
+[[acceptance_obligations]]
+id = "D11"
+requirement = "Keep the root isolated, preserve the separate #387 branch, and leave #259/#257 open."
+
+[nonclaims]
+claims = [
+  "Lean execution, kernel acceptance or transitive trust audit",
+  "formalized analytic integral/model estimates from rational arithmetic alone",
+  "a quantitative universal prime-prefix theorem or explicit universal cutoff",
+  "a complete signed minor lower bound or strict every-even margin",
+  "complete finite exception coverage or a Goldbach proof",
+  "merge or execution authority",
+]

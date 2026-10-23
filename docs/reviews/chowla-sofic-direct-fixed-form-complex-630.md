@@ -199,7 +199,7 @@ zeroShift_directAffine_obstruction
 It imports only the existing two arithmetic leaf modules and pinned
 Mathlib, not the eight-module generic Walsh stack and not the OAI
 solution. The passive three-module target
-`verification/liouville-direct-fixed-form-complex-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-direct-fixed-form-complex-630-v0.1.toml`
 lists **40 theorem heads and 13 definitions** including parents.
 These are declaration inventories only.
 
@@ -272,7 +272,7 @@ prime-set normalization is addressed in
 
 An exact, **UNAPPLIED** proposed external patch is recorded as
 
-`verification/openai-result007-prime-reciprocal-import-630-v0.1.patch`
+`docs/verification/_unscoped/openai-result007-prime-reciprocal-import-630-v0.1.patch`
 (blob `ceaec6a0f3e6fb568abf51848e09ea7ca0d04ebf`).
 
 It changes precisely the outdated import, the source comment, and
@@ -329,7 +329,7 @@ positive theorem controlling its form-dependent constants.
 Standalone review:
 `docs/reviews/fixed-shift-uniformity-obstruction-441.md`;
 passive acceptance target:
-`verification/fixed-shift-uniformity-obstruction-441-v0.1.toml`.
+`docs/verification/_unscoped/fixed-shift-uniformity-obstruction-441-v0.1.toml`.
 
 **Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
 FIXED-TO-GROWING_LOGICAL_IMPLICATION_REFUTED /

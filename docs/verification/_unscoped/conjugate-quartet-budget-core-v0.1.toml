@@ -1,0 +1,256 @@
+schema = "grwtsk.conjugate-quartet-budget.v0.1"
+id = "conjugate-quartet-budget-core-v0.1"
+owner_issue = 330
+related_issues = [139, 135, 307, 100]
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+root = "GRWTSK.Interfaces.ConjugateQuartetBudgetCore"
+public_root_imported = false
+passive_specification_only = true
+
+[source]
+repository = "grwtsk/math"
+base_commit = "04668f67c8803486642782b74cfd01500eb41aeb"
+base_tree = "66242020e8f9180fa48f89ae0d9298a3b30a02a5"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+acceptance_binding = "Bind the exact candidate externally. This parent is not the candidate."
+
+[inherited_target]
+path = "docs/verification/_unscoped/remaining-multiplicity-budget-core-v0.1.toml"
+git_blob = "399627db67c792d9153e260d80469dfc9573ee28"
+commit = "04668f67c8803486642782b74cfd01500eb41aeb"
+all_predecessor_sources_signatures_and_targets_unchanged = true
+all_requirements_retained_at_original_scope = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry = true
+reject_unreported_native_or_unsafe = true
+missing_audit_is_pass = false
+complete_type_and_body_review = "PENDING"
+full_dependency_inventory = "PENDING; immediate source pins are not a complete transitive inventory"
+axiom_audit = "NOT_RUN"
+choice_free_dependency_claim = false
+
+[acceptance]
+requirements = [
+  "Elaborate both new owner modules, isolated root and every dependency at the exact candidate and unchanged toolchain/Mathlib pins; repair as necessary.",
+  "Independently author and compare COMPLETE expected types including binders, hypotheses, universes, generated declarations and defining bodies. Lexical inventory is insufficient.",
+  "Retain the predecessor targets at their original scopes and the full source/import/body/axiom/native/compiler qualification. No acceptance is inherited merely from a source merge.",
+  "Audit the entire newly consumed real-axis Mellin source and its closure, not just the wrapper returning nonzero imaginary part.",
+  "Verify all six quartet distinctness inequalities, four memberships, actual nonreality, unchanged analytic weights and both multiplicity transports.",
+  "Require BOTH regional critical-reflection and conjugation closure for threshold four. Do not apply it to a one-sign rectangle or merely reflection-stable disk.",
+  "Keep actual known-subset membership and line certificates, lower/upper count inequalities and strict selected versus uniform thresholds.",
+  "Do not promote remaining mass below four to enumeration. The below-two enumeration theorem additionally requires known-set conjugation closure and positive weights.",
+  "Preserve closed absolute-height endpoints; source-complete mathematical heads are not computed enumerations.",
+  "Execute the seven new source controls only under separately authorized replay; standalone rational models are not Lean or analytic evidence.",
+  "Bind eventual exact commit, tree, target path and target blob through the existing acceptance framework. This target grants no execution authority or hold release.",
+]
+nonclaims = ["No supplied actual count, zero packet, SourceAcceptance, margin or all-height family.", "No accepted Lean, bounded/global RH, parity or choice-free dependency result."]
+
+[inventory]
+new_theorem_commands = 25
+new_definition_commands = 1
+new_controls = 7
+new_lean_lines = 329
+generated_and_transitive_inventory = "PENDING"
+
+[[source_dependencies]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripRealAxisMellin.lean"
+commit = "04668f67c8803486642782b74cfd01500eb41aeb"
+git_blob = "d8f41771c84851553afc76bd7442e58ec992be70"
+consumed = "GRWTSK.RiemannHypothesis.CriticalStripHeightDescent.nontrivialZetaZero_im_ne_zero"
+status = "SOURCE_INSPECTED; full analytic/dependency acceptance remains open"
+
+[[new_sources]]
+path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+git_blob = "ed0e38d274ce393ddc667c9e996a11a068dd0703"
+sha256 = "db289b0a72125e9ba63a5910910df2b89d73c7a68d52946aba4063f07d94a93e"
+lines = 115
+imports = ["GRWTSK.Combinatorics.WeightedSubsetBudget"]
+
+[[new_sources]]
+path = "GRWTSK/Interfaces/ConjugateQuartetBudgetCore.lean"
+git_blob = "e6132a648d5dcf62aff253db3d3da51bed76bdd5"
+sha256 = "c356e20a777686b84be3f056aef9343255f1324fd3a50e0a86e2d0827991530d"
+lines = 2
+imports = ["GRWTSK.Combinatorics.WeightedQuartetBudget", "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget"]
+
+[[new_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+git_blob = "14dddebb8da330a7427558c23146aba95f63c605"
+sha256 = "0a83153b3200e01ef5aa64ea9a3c0cf84bd9ac2c15b0c40bb2ca02897e721b80"
+lines = 212
+imports = ["GRWTSK.Combinatorics.WeightedQuartetBudget", "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget", "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"]
+
+[[new_sources]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/conjugate-quartet-budget.md"
+git_blob = "432c3c16e796857d66b2ac6196c1c656c11eaeed"
+sha256 = "eaca5908c6bf867c3a8642c66094c33df6da3ea3cf6d2a852f387d3eed0eaf3d"
+lines = 101
+imports = []
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.four_le_mass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.known_add_four_le_mass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.eq_of_remaining_lt_two_of_involution"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.strict_four_threshold_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.collapsed_occurrences_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.missing_pair_below_four_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.unpaired_known_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedQuartetBudget.zero_weight_pair_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.conjugated"
+kind = "def"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.conjugated_re"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.conjugated_im"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.conjugated_involutive"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.height_conjugated"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.multiplicity_conjugated"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.nonreal"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.conjugated_ne_self"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.conjugated_mem_regionHead"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.quartet_distinct"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.known_add_fourfold_le_count_of_off_line"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.critical_line_of_known_quartet_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.all_on_line_of_known_quartet_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.all_on_line_of_remaining_lt_four"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.rhThrough_of_height_known_quartet_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.known_eq_regionHead_of_conjugate_closed_remaining_lt_two"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.real_axis_collapse_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConjugateQuartetBudget.positive_half_plane_not_conjugate_stable_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/ConjugateQuartetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete expected types and elaborated comparison PENDING"
+control_status = "SOURCE_PRESENT / NOT_EXECUTED"
