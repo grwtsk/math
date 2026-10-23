@@ -78,7 +78,8 @@ theorem weightedFourPhase_norm_le (w0 w1 w2 w3 : ℝ) :
           ‖((w1 - w3 : ℝ) : ℂ) * Complex.I‖ :=
       norm_add_le _ _
     _ = |w0 - w2| + |w1 - w3| := by
-      simp [norm_mul, Real.norm_eq_abs]
+      rw [norm_mul, Complex.norm_I, mul_one, Complex.norm_real, Complex.norm_real]
+      rfl
 
 /-- A raw radial block at eigenvalue r. The uniform clock phases are
 not themselves equally weighted when r is expanding. -/
@@ -89,7 +90,9 @@ def radialFourBlock (r : ℝ) : ℂ :=
 There is no dependence on numerical approximation to sqrt(5). -/
 theorem radialFourBlock_re (r : ℝ) :
     (radialFourBlock r).re = 1 - r ^ 2 := by
-  simp [radialFourBlock, weightedFourPhase, Complex.mul_re]
+  simp only [radialFourBlock, weightedFourPhase, Complex.add_re, Complex.sub_re,
+    Complex.mul_re, Complex.I_re, Complex.I_im, Complex.ofReal_re,
+    Complex.ofReal_im, mul_zero, sub_zero, add_zero, mul_one]
 
 /-- Any strictly expanding real eigenvalue leaves a NONZERO raw
 four-phase block, even though the four unweighted phases cancel. -/
@@ -152,7 +155,7 @@ theorem compensatedSample_eq_phase (n : ℕ) :
             rw [compensatedSample, discreteSpiral_formula]
     _ = (((expandingEigenvalue : ℂ)⁻¹) *
           ((expandingEigenvalue : ℂ) * Complex.I)) ^ n := by
-            rw [mul_pow]
+            simp only [mul_pow]
     _ = Complex.I ^ n := by
       have hcancel :
           ((expandingEigenvalue : ℂ)⁻¹) *
