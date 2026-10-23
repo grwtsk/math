@@ -79,6 +79,7 @@ theorem positiveOneCell_disjoint_interior (k : ℕ)
     congrArg Prod.snd hcorner
   constructor
   · exact hh
-  · exact Fin.cast_injective hi
+  · apply Fin.ext
+    exact congrArg Fin.val hi
 
 end GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges
