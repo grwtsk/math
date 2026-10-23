@@ -149,7 +149,7 @@ theorem reciprocalDamping_drop (n : ℕ) :
   unfold reciprocalDamping
   rw [hcast]
   field_simp [h1, h2]
-  <;> ring
+  ring
 
 /-- Lowering damping adds an exponential moment; finite mass alone does not pay it. -/
 theorem successor_density_identity (n : ℕ) (u : ℝ) :
@@ -157,7 +157,7 @@ theorem successor_density_identity (n : ℕ) (u : ℝ) :
       Real.exp ((reciprocalDamping n - reciprocalDamping (n + 1)) * u) *
         (Real.exp (-(reciprocalDamping n) * u) * wholePickup u ^ 2) := by
   rw [← mul_assoc, ← Real.exp_add]
-  congr 2 <;> ring
+  congr 2; ring
 
 theorem successor_membership_iff_extra_moment (n : ℕ) :
     reciprocalDamping (n + 1) ∈ pickupEnergyConvergenceSet ↔

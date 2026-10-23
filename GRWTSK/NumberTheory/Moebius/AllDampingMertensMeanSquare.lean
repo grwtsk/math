@@ -80,6 +80,8 @@ theorem sampleCellMass_eq_exponentialLogDrop (σ : ℝ) (k : ℕ) :
   push_cast
   ring
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- A fixed target damping is paid by any strictly smaller positive Cauchy
 exponent.  Equality `ε = σ` would leave the nonsummable harmonic exponent. -/
 theorem sampleCellMass_le_incrementMeanSquareMajorant
