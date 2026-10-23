@@ -112,11 +112,13 @@ no_classicalDiagonalFactorization_of_exactTransport
   (transport := actualExactTransport) correctedSourceDiagonal_pos
 ```
 
-Crucially, replacing a conditional strictness assumption with a source-proved strictness theorem **does not construct** `actualExactTransport`. The existing `GRWTSK.RiemannHypothesis.ExactSourceBoundTransport` record requires the exact classical target, its signed all-pairs form identity, positive scale and normalization; none follows from moments or the arithmetic diagonal.
+Crucially, replacing a conditional strictness assumption with a source-proved strictness theorem **does not construct** `actualExactTransport`. The existing `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport` record requires the exact classical target, its signed all-pairs form identity, positive scale and normalization; none follows from moments or the arithmetic diagonal.
 
 ## 6. Source and verification bindings
 
 **Source-inspection revision:** `grwtsk/math@556862fc7c9cee3a075230cc08610ab4f76cca4c`, tree `bd418926712ff815a5de1288febbf554011be446`. This is **not** a kernel-checked revision.
+
+For entries with abbreviated local names below, the complete namespace prefix is `GRWTSK.NumberTheory.Zeta.Riemann.`; the Chebyshev and Mathlib names are spelled separately.
 
 | Exact source declaration(s) | File, Git blob, introduction/custody |
 | --- | --- |
