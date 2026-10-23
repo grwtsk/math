@@ -64,9 +64,7 @@ theorem centeredLowGCDBilinear_eq_coprime_add_nonCoprime
   have hgpos : 0 < Nat.gcd d e :=
     Nat.gcd_pos_of_pos_left e (by omega)
   by_cases hcop : Nat.Coprime d e
-  · have hg1 : Nat.gcd d e = 1 :=
-      Nat.coprime_iff_gcd_eq_one.mp hcop
-    simp [hcop, hg1, hY]
+  · simp [hcop, hY]
   · have hg1 : Nat.gcd d e ≠ 1 := by
       exact fun h =>
         hcop (Nat.coprime_iff_gcd_eq_one.mpr h)
@@ -102,7 +100,7 @@ theorem sum_mobius_divisors_eq_coprime_indicator
   by_cases hcop : Nat.Coprime a b
   · have hg : Nat.gcd a b = 1 :=
       Nat.coprime_iff_gcd_eq_one.mp hcop
-    simp [hg, hcop, mobiusReal]
+    simp [hg, mobiusReal]
   · have hg : Nat.gcd a b ≠ 1 := by
       exact fun h1 =>
         hcop (Nat.coprime_iff_gcd_eq_one.mpr h1)
@@ -111,8 +109,9 @@ theorem sum_mobius_divisors_eq_coprime_indicator
         (fun f : ArithmeticFunction ℝ => f (Nat.gcd a b))
         (ArithmeticFunction.coe_moebius_mul_coe_zeta
           (R := ℝ))
-    simpa [ArithmeticFunction.coe_mul_zeta_apply,
-      mobiusReal, hcop, hg] using h
+    simpa only [ArithmeticFunction.coe_mul_zeta_apply,
+      ArithmeticFunction.intCoe_apply, ArithmeticFunction.one_apply,
+      if_neg hg, if_neg hcop, mobiusReal] using h
 
 /-- The common-divisor Möbius sum can be taken over the global modulus set. -/
 theorem sum_mobius_common_divisors_eq_coprime_indicator
@@ -131,8 +130,8 @@ theorem sum_mobius_common_divisors_eq_coprime_indicator
           (fun r => r ∣ d ∧ r ∣ e) =
         (Nat.gcd d e).divisors := by
     ext r
-    simp only [Finset.mem_filter, Finset.mem_Icc,
-      Nat.mem_divisors, dvd_gcd_iff]
+    simp only [modulusIndexSet, Finset.mem_filter, Finset.mem_Icc,
+      Nat.mem_divisors, Nat.dvd_gcd_iff]
     constructor
     · rintro ⟨⟨hr0, hrB⟩, hrd, hre⟩
       exact ⟨⟨hrd, hre⟩, Nat.ne_of_gt hgpos⟩
@@ -146,7 +145,7 @@ theorem sum_mobius_common_divisors_eq_coprime_indicator
       exact
         ⟨⟨hr0,
             hrle.trans
-              ((Nat.gcd_le_left d e).trans hdI.2)⟩,
+              ((Nat.gcd_le_left e (by omega : 0 < d)).trans hdI.2)⟩,
           hrg.1, hrg.2⟩
   rw [← Finset.sum_filter, hfilter,
     sum_mobius_divisors_eq_coprime_indicator]
@@ -235,9 +234,12 @@ theorem centeredCoprimeBilinear_eq_mobiusSquareExpansion
                   simp_rw [Finset.sum_mul]
                   apply Finset.sum_congr rfl
                   intro r hr
-                  by_cases hrd : r ∣ d <;>
-                    by_cases hre : r ∣ e <;>
-                    simp [hrd, hre] <;> ring
+                  by_cases hrd : r ∣ d
+                  · by_cases hre : r ∣ e
+                    · simp only [hrd, hre, and_self, if_true]
+                      ring
+                    · simp [hre]
+                  · simp [hrd]
     _ =
       ∑ r ∈ modulusIndexSet X,
         ∑ d ∈ modulusIndexSet X,
@@ -263,9 +265,6 @@ theorem centeredCoprimeBilinear_eq_mobiusSquareExpansion
               apply Finset.sum_congr rfl
               intro d hd
               rw [Finset.mul_sum]
-              apply Finset.sum_congr rfl
-              intro e he
-              ring
 
 /-- The divisibility tail at `r=1` is exactly the full centered coefficient
 mass. -/
@@ -290,12 +289,13 @@ theorem centeredCoefficientMass_sq_le_absoluteCoprimeMajorant
         |mobiusReal 1| *
           (centeredDivisibilityTail X w 1)^2 := by
       rw [centeredDivisibilityTail_one]
-      simp [mobiusReal, ArithmeticFunction.moebius_apply_one]
+      simp [mobiusReal]
     _ ≤
       ∑ r ∈ modulusIndexSet X,
         |mobiusReal r| *
           (centeredDivisibilityTail X w r)^2 := by
       exact Finset.single_le_sum
+        (f := fun r : ℕ => |mobiusReal r| * (centeredDivisibilityTail X w r)^2)
         (fun r hr => mul_nonneg (abs_nonneg _) (sq_nonneg _))
         (one_mem_modulusIndexSet hX)
 
