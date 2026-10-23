@@ -846,26 +846,26 @@ theorem thetaScaledPolynomial_gaussian_bound
           nlinarith [mul_le_mul_of_nonneg_left (cert.bound q hq) hcoef]
 
 
-/-- Exact elementary exponential majorant with an explicit, nonoptimal
-constant. This is an analytic candidate independent of any supplier field:
-for x≥0, x²+x ≤ 20 exp(x/2). -/
+/-- An elementary exponential envelope for a nonnegative variable.
+This candidate uses the quadratic Taylor lower bound for exp(x/4)
+and keeps a nonoptimal constant to avoid a sharp-optimization premise. -/
 theorem polynomial_exponential_envelope (x : ℝ) (hx : 0 ≤ x) :
     (x ^ 2 + x) * Real.exp (-x) ≤
       20 * Real.exp (-(x / 2)) := by
-  have he := add_one_le_exp (x / 4)
-  have hquarter : 0 ≤ x / 4 := by positivity
-  have hbasic : x / 4 ≤ Real.exp (x / 4) := by linarith
-  have hpos : 0 ≤ Real.exp (x / 4) := (Real.exp_pos _).le
-  have hsq : (x / 4) ^ 2 ≤ Real.exp (x / 4) ^ 2 := by
-    nlinarith [sq_nonneg (Real.exp (x / 4) - x / 4)]
-  have hlinear : x ≤ 4 * Real.exp (x / 4) := by linarith
+  have h := add_one_le_exp (x / 4)
+  have hpos : 0 < Real.exp (x / 4) := Real.exp_pos _
+  have hx4 : 0 ≤ x / 4 := by positivity
+  have hlin : x / 4 ≤ Real.exp (x / 4) := by linarith
+  have hsq : (x / 4) ^ 2 ≤ Real.exp (x / 4) ^ 2 :=
+    sq_le_sq₀ hx4 hlin
+  have hpoly : x ^ 2 + x ≤ 20 * Real.exp (x / 4) ^ 2 := by
+    nlinarith [sq_nonneg (Real.exp (x / 4)), hlin, hsq]
   have hexp : Real.exp (x / 4) ^ 2 = Real.exp (x / 2) := by
-    rw [← Real.exp_add]
+    rw [pow_two, ← Real.exp_add]
+    congr 1
     ring
-  have hbound : x ^ 2 + x ≤ 20 * Real.exp (x / 2) := by
-    nlinarith [Real.add_one_le_exp (x / 4), Real.exp_pos (x / 4)]
-  have hfactor : 0 < Real.exp (-x) := Real.exp_pos _
-  have hmul := mul_le_mul_of_nonneg_right hbound hfactor.le
+  rw [hexp] at hpoly
+  have hmul := mul_le_mul_of_nonneg_right hpoly (Real.exp_pos (-x)).le
   have hid : Real.exp (x / 2) * Real.exp (-x) =
       Real.exp (-(x / 2)) := by
     rw [← Real.exp_add]
@@ -873,10 +873,8 @@ theorem polynomial_exponential_envelope (x : ℝ) (hx : 0 ≤ x) :
     ring
   calc
     (x ^ 2 + x) * Real.exp (-x) ≤
-        20 * Real.exp (x / 2) * Real.exp (-x) := by
-          nlinarith
+        20 * Real.exp (x / 2) * Real.exp (-x) := hmul
     _ = 20 * Real.exp (-(x / 2)) := by rw [mul_assoc, hid]
-    _ ≤ 20 * Real.exp (-(x / 2)) := le_refl _
 
 end
 
