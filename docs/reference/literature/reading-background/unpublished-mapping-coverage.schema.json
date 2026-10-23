@@ -150,7 +150,8 @@
           "review_extent": {
             "enum": [
               "cited-passages-only",
-              "cited-excerpt-screened-no-mathematical-match"
+              "cited-excerpt-screened-no-mathematical-match",
+              "selected-complete-pages-beyond-screening"
             ]
           },
           "code_leads": {
@@ -200,6 +201,110 @@
             "items": {
               "type": "string"
             }
+          },
+          "deep_reviews": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "idea_id": {
+                  "type": "string"
+                },
+                "paper_citations": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "pdf_page": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "anchor": {
+                        "type": "string"
+                      },
+                      "page_text_sha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      }
+                    },
+                    "required": [
+                      "pdf_page",
+                      "anchor",
+                      "page_text_sha256"
+                    ]
+                  }
+                },
+                "read_pdf_pages": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "code_keys": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "connection_status": {
+                  "enum": [
+                    "matched-subclaim",
+                    "conditional-correspondence",
+                    "analogy-only",
+                    "unresolved"
+                  ]
+                }
+              },
+              "required": [
+                "idea_id",
+                "paper_citations",
+                "read_pdf_pages",
+                "code_keys",
+                "connection_status"
+              ]
+            }
+          },
+          "previous_screening": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "pdf_pages": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "locator": {
+                "type": "string"
+              },
+              "source_excerpt": {
+                "type": "string"
+              },
+              "review_extent": {
+                "type": "string"
+              },
+              "code_leads": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "pdf_pages",
+              "locator",
+              "source_excerpt",
+              "review_extent",
+              "code_leads"
+            ]
           }
         },
         "required": [
