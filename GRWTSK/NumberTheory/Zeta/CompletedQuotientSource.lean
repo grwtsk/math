@@ -1,6 +1,6 @@
 import Mathlib
 import GRWTSK.LinearAlgebra.Matrix.ToeplitzHankel
-import GRWTSK.Analysis.Asymptotics.SublinearDyadic
+import GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic
 import GRWTSK.Analysis.NormedSpace.SimilarityReconstruction
 
 /-!

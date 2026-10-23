@@ -185,6 +185,7 @@ theorem propagation_first_moment_count {n : Nat}
     (H : Bits n → Bits n) (i : Fin n) :
     ∑ k ∈ Finset.range (n + 1), k * propagationCount H i k =
       ∑ j : Fin n, sacCount H i j := by
+  classical
   have hmaps : Set.MapsTo (propagationWeight H i)
       (Finset.univ : Finset (Bits n)) (Finset.range (n + 1)) := by
     intro x _
@@ -205,9 +206,11 @@ theorem propagation_first_moment_count {n : Nat}
       Finset.sum_fiberwise_of_maps_to hmaps _
     _ = ∑ j : Fin n, sacCount H i j := by
       simp only [propagationWeight, hammingWeight, sacCount,
-        Finset.card_eq_sum_ones, derivativeBit]
-      simp_rw [Finset.sum_filter]
-      rw [Finset.sum_comm]
+        Finset.card_eq_sum_ones]
+      simp only [Finset.sum_filter]
+      rw [Finset.sum_comm (s := (Finset.univ : Finset (Bits n)))
+        (t := (Finset.univ : Finset (Fin n)))]
+      rfl
 
 /-- Rational first-moment form: `Σ k, k qᵢ(k) = Σ j, S_H(i,j)`. -/
 theorem propagation_first_moment_mass {n : Nat}

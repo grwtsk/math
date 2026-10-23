@@ -106,8 +106,11 @@ theorem ExactResidualComparison.comparison_vanishes {T : Type*}
   obtain ⟨N, hN⟩ := htotal f g ε hε
   refine ⟨N, ?_⟩
   intro n hn
-  rw [comparison.identity n f g]
-  exact hN n hn
+  calc
+    |comparison.target f g - comparison.approximant n f g| =
+        |comparison.residuals.total n f g| :=
+      congrArg abs (comparison.identity n f g)
+    _ ≤ ε := hN n hn
 
 /-- A source-independent polarized approximation family with nonnegative diagonal. -/
 structure PolarizedPositiveApproximation (T : Type*) (W : T → T → ℝ) where
