@@ -107,5 +107,27 @@ theorem complementaryAdjacency_injective (r : Fin 4 → F)
     rcases hall y with rfl | rfl | rfl
   all_goals simp_all [adjacency_first, adjacency_second, adjacency_third]
 
+
+/-- Four distinct roots of an actual separable quartic give an injective
+matching-to-adjacency-value map in the splitting extension. -/
+theorem actual_quartic_complementaryAdjacency_injective
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (p : K[X]) (hsep : p.Separable)
+    (e : GRWTSK.Algebra.PolygonalQuarticSplitting.QuarticRootEnumeration (L := L) p) :
+    Function.Injective (complementaryAdjacency e.r) :=
+  complementaryAdjacency_injective e.r
+    (GRWTSK.Algebra.PolygonalQuarticSplitting.enumeration_injective_of_separable p hsep e)
+
+/-- Root relabeling permutes the three distinct adjacency values in
+exact agreement with the genuine matching permutation action. -/
+theorem actual_quartic_adjacency_equivariant
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (p : K[X])
+    (e : GRWTSK.Algebra.PolygonalQuarticSplitting.QuarticRootEnumeration (L := L) p)
+    (σ : Equiv.Perm (Fin 4)) (m : PerfectMatching) :
+    complementaryAdjacency e.r (matchingPerm σ m) =
+      complementaryAdjacency (fun i => e.r (σ i)) m :=
+  complementaryAdjacency_relabel e.r σ m
+
 end
 end GRWTSK.Algebra.QuarticMatchingAdjacency
