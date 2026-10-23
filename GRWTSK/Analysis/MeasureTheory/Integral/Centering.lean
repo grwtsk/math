@@ -53,13 +53,17 @@ theorem integral_shifted_square (f : α → ℝ) (c : ℝ)
     (hf : Integrable f μ) (hf2 : Integrable (fun x ↦ f x ^ 2) μ) :
     (∫ x, (f x-c)^2 ∂μ) =
       (∫ x, f x^2 ∂μ) - 2*c*mean μ f + c^2 := by
-  have hpoly : (fun x ↦ (f x-c)^2) =
-      (fun x ↦ f x^2 - (2*c)*f x + c^2) := by
-    funext x
-    ring
-  rw [hpoly, integral_add (hf2.sub (hf.const_mul _)) (integrable_const _),
-    integral_sub hf2 (hf.const_mul _), integral_const_mul]
-  simp [mean]
+  calc
+    (∫ x, (f x - c)^2 ∂μ) =
+        (∫ x, f x^2 - (2*c)*f x + c^2 ∂μ) := by
+      apply integral_congr_ae
+      filter_upwards [] with x
+      ring
+    _ = (∫ x, f x^2 ∂μ) - 2*c*mean μ f + c^2 := by
+      rw [integral_add (hf2.sub (hf.const_mul _)) (integrable_const _)]
+      rw [integral_sub hf2 (hf.const_mul _)]
+      rw [integral_const_mul]
+      simp [mean]
 
 theorem energy_nonneg (f : α → ℝ) : 0 ≤ energy μ f :=
   integral_nonneg (fun _ ↦ sq_nonneg _)
