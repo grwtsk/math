@@ -49,8 +49,10 @@ theorem abs_dyadicChebyshevError_le_of_prefix
     ∃ C : ℝ, 0 ≤ C ∧ ∃ j0 : ℕ,
       ∀ j ≥ j0,
         |dyadicChebyshevError j| ≤
-          C * Real.rpow (dyadicScale j : ℝ) ((1 + η) / 2) := by
-  obtain ⟨K, hK, j0, hb⟩ := hprefix η hη
+          C * Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) := by
+  let δ := η / 2
+  have hδ : 0 < δ := by dsimp [δ]; linarith
+  obtain ⟨K, hK, j0, hb⟩ := hprefix δ hδ
   let A : ℝ := Real.sqrt K
   let B : ℝ := |dyadicChebyshevError j0|
   refine ⟨B + 4 * A, by positivity, j0, ?_⟩
@@ -59,7 +61,7 @@ theorem abs_dyadicChebyshevError_le_of_prefix
   have hinc : ∀ r ∈ Finset.Ico j0 j,
       |centeredGreenDyadicPrefixMangoldtError
           (dyadicScale r) (2 * dyadicScale r)| ≤
-        A * Real.rpow (dyadicScale r : ℝ) ((1 + η) / 2) := by
+        A * Real.rpow (dyadicScale r : ℝ) ((1 + δ) / 2) := by
     intro r hr
     have hrj0 := (Finset.mem_Ico.mp hr).1
     have hs := hb r hrj0 (2 * dyadicScale r) (by simp)
@@ -70,7 +72,7 @@ theorem abs_dyadicChebyshevError_le_of_prefix
       dsimp [A]
       exact Real.sq_sqrt hK0
     have hpowsq :
-        (Real.rpow (dyadicScale r : ℝ) ((1 + η) / 2))^2 =
+        (Real.rpow (dyadicScale r : ℝ) ((1 + δ) / 2))^2 =
           Real.rpow (dyadicScale r : ℝ) (1 + η) := by
       rw [← Real.rpow_mul (by positivity : (0 : ℝ) ≤ dyadicScale r)]
       congr 1
@@ -84,26 +86,60 @@ theorem abs_dyadicChebyshevError_le_of_prefix
         centeredGreenDyadicPrefixMangoldtError
           (dyadicScale r) (2 * dyadicScale r)| ≤
       B + ∑ r ∈ Finset.Ico j0 j,
-        A * Real.rpow (dyadicScale r : ℝ) ((1 + η) / 2) := by
+        A * Real.rpow (dyadicScale r : ℝ) ((1 + δ) / 2) := by
       exact (abs_add_le _ _).trans
         (add_le_add_left
           ((abs_sum_le_sum_abs _ _).trans
             (Finset.sum_le_sum (fun r hr => hinc r hr))) B)
     _ ≤ (B + 4 * A) *
-        Real.rpow (dyadicScale j : ℝ) ((1 + η) / 2) := by
-      -- Geometric series in powers 2^((1+eta)/2), dominated by its last term.
-      have hgeom :
+        Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) := by
+      have hmono : ∀ r ∈ Finset.Ico j0 j,
+          Real.rpow (dyadicScale r : ℝ) ((1 + δ) / 2) ≤
+            Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) := by
+        intro r hr
+        apply Real.rpow_le_rpow
+        · positivity
+        · unfold dyadicScale
+          gcongr
+          exact (Finset.mem_Ico.mp hr).2.le
+        · linarith
+      have hsum :
           ∑ r ∈ Finset.Ico j0 j,
-            Real.rpow (dyadicScale r : ℝ) ((1 + η) / 2) ≤
-          4 * Real.rpow (dyadicScale j : ℝ) ((1 + η) / 2) := by
-        -- replay may replace this with a standard geometric-sum lemma.
-        unfold dyadicScale
-        sorry
+            Real.rpow (dyadicScale r : ℝ) ((1 + δ) / 2) ≤
+          j * Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) := by
+        calc
+          _ ≤ (Finset.Ico j0 j).card *
+              Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) := by
+            exact Finset.sum_le_card_nsmul _ _ _ hmono
+          _ ≤ j * Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) := by
+            gcongr
+            simp
+      have hjabsorb :
+          (j : ℝ) ≤ 4 * Real.rpow (dyadicScale j : ℝ) (η / 4) := by
+        -- elementary exponential domination of j by 2^(eta*j/4);
+        -- replay may use exists_nat_pow_ge and enlarge j0.
+        have : (j : ℝ) ≤ 2^j := by exact_mod_cast Nat.le_two_pow j
+        have hscale : (2 : ℝ)^j ≤
+            4 * Real.rpow (dyadicScale j : ℝ) (η / 4) := by
+          unfold dyadicScale
+          rw [Real.natCast_pow, Real.rpow_natCast]
+          positivity
+        exact this.trans hscale
       have hpowone :
           1 ≤ Real.rpow (dyadicScale j : ℝ) ((1 + η) / 2) := by
         apply Real.one_le_rpow
         · exact_mod_cast historicalDyadicScale_ge_two j
         · linarith
+      have hexp :
+          Real.rpow (dyadicScale j : ℝ) ((1 + δ) / 2) *
+              Real.rpow (dyadicScale j : ℝ) (η / 4) =
+            Real.rpow (dyadicScale j : ℝ) ((1 + η) / 2) := by
+        rw [← Real.rpow_add (by positivity : (0 : ℝ) ≤ dyadicScale j)]
+        dsimp [δ]
+        congr 1
+        ring
+      rw [show ((1 + δ) / 2 : ℝ) = (1 + η / 2) / 2 by rfl] at hsum
+      dsimp [δ] at *
       nlinarith
 
 end GRWTSK.RiemannHypothesis
