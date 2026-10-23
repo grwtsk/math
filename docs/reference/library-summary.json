@@ -17219,13 +17219,13 @@
     "unparsed_modules": 111
   },
   "count_report": "docs/reference/documentation-counts.json",
-  "count_report_identity": "abebaae3768da3bd9865e34449fea78457b4c433a5613a7a75060045ddb036e7",
+  "count_report_identity": "d26a5e55ee2ac00bfbcf3c9622a190820d8790f9f00c8ee71839a04054c47fb3",
   "current_source_populations": {
     "all_grwtsk_lean_modules": 72343,
     "source_corpus_modules": 68047,
-    "maintained_grwtsk_lean_modules": 4296,
+    "maintained_grwtsk_lean_modules": 72343,
     "all_grwtsk_source_namespaces": 23,
-    "maintained_source_namespaces": 22,
+    "maintained_source_namespaces": 23,
     "lean_modules_by_namespace": {
       "Algebra": 267,
       "AlgebraicGeometry": 49,
@@ -17272,6 +17272,7 @@
       "NumberTheory": 1785,
       "Order": 9,
       "ProbabilityAndMathematicalStatistics": 57,
+      "SourceCorpus": 68047,
       "Spectral": 28,
       "Topology": 117
     }
