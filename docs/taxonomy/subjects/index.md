@@ -4,6 +4,13 @@
 
 This is navigation collection `subjects`, not a concept purporting to be the unique superclass of every mathematical subject. The full MSC-based scope remains open; the following are pilot branches, not a complete top-level classification.
 
+The [source-signal draft](../proposals/new-concepts/source-signal-subjects.md)
+adds distinct proposed records for [category theory](category-theory/index.md),
+[order theory](order-theory/index.md), [type theory](type-theory/index.md),
+[theory of data structures](data-structure-theory/index.md), and
+[proof-assistant metaprogramming](proof-assistant-metaprogramming/index.md).
+Candidate queue routing is not editorial acceptance of a source association.
+
 [Analysis](analysis/index.md) provides six nested specialization levels. [Probability theory](probability/index.md) supplies a second route to the same terminal concept. Every edge is proposed pending independent review; directory descent is not an exclusive semantic-parent claim.
 
 [History of mathematics](history-of-mathematics/index.md) and [mathematics education](mathematics-education/index.md) are additional subject entry points, not resource formats. Both reach the same [history of mathematics education](history-of-mathematics/mathematics-education/index.md) record. All new parentage remains proposed.
