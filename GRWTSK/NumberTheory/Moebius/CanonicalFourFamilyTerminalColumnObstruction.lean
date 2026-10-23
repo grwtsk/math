@@ -149,7 +149,7 @@ theorem canonicalFourFamilyTerminalDelta_ne_zero
   have hcell := congrFun
     (congrFun heq (canonicalFourFamilyOfAnchor (2 * X))) (X + 1)
   have hbad : (1 : ℝ) = 0 := by
-    simpa [canonicalFourFamilyTerminalDelta] using hcell
+    simp [canonicalFourFamilyTerminalDelta] at hcell
   norm_num at hbad
 
 /-- The nonzero one-cell source packet is annihilated by EVERY Green
@@ -258,7 +258,9 @@ theorem canonicalFourFamilyTerminalDelta_sourceEnergy_pos
       ∑ F : CanonicalFourFamily,
         ∑ c ∈ Finset.range (2 * X + 1),
           (canonicalFourFamilyTerminalDelta X F c) ^ 2 := by
-    apply Finset.single_le_sum
+    apply Finset.single_le_sum (f := fun F : CanonicalFourFamily =>
+      ∑ c ∈ Finset.range (2 * X + 1),
+        (canonicalFourFamilyTerminalDelta X F c) ^ 2)
     · intro F _hF
       exact Finset.sum_nonneg (by intro c _hc; positivity)
     · exact Finset.mem_univ _
