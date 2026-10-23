@@ -543,6 +543,36 @@ theorem finiteHeatErrorBudget_tail_le_total
   unfold FiniteHeatErrorBudget.total
   linarith
 
+
+/-- A source-independent finite analytic tail gate. Its proof does not
+manufacture integrability: the literal theta-kernel supplier must prove
+the pointwise decay and integral comparison separately. -/
+structure ThetaTailSupplier (C c U : ℝ) where
+  amplitude_nonneg : 0 ≤ C
+  rate_positive : 0 < c
+  cutoff_nonneg : 0 ≤ U
+  thetaTail : ℝ
+  tail_nonneg : 0 ≤ thetaTail
+  tail_le_exponential : thetaTail ≤ exponentialTailBudget C c U
+
+/-- Source and tail errors can be combined only when the source-specific
+theta-tail estimate is actually supplied. -/
+theorem thetaTailSupplier_combine
+    (C c U sourceError : ℝ)
+    (cert : ThetaTailSupplier C c U)
+    (hsource : 0 ≤ sourceError) :
+    sourceError + cert.thetaTail ≤
+      sourceError + exponentialTailBudget C c U := by
+  exact add_le_add_left cert.tail_le_exponential sourceError
+
+/-- The supplied analytic tail is nonnegative, so it cannot improve
+an absolute-error estimate by being silently subtracted. -/
+theorem thetaTailSupplier_source_le_total
+    (C c U sourceError : ℝ)
+    (cert : ThetaTailSupplier C c U) :
+    sourceError ≤ sourceError + cert.thetaTail := by
+  linarith [cert.tail_nonneg]
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
