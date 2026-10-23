@@ -1,0 +1,311 @@
+# Pure static validation specification. No execution, authorization, status receipt or runner.
+# Noeaaeue owns effectful replay, immutable logs, scheduler and acceptance receipts.
+schema = "rh-e02-966-main-validation-20261023-v0.1"
+repository = "grwtsk/math"
+owner_issue = 966
+related_issues = [942, 100]
+source_commit = "698b694747a0b62f4126caf5475601b073ebcd9e"
+source_tree = "5bf9a3ad3e32470c6e7e117f2cb56f322d968cac"
+root_module = "GRWTSK"
+root_imports_leaf_modules = false
+source_clean_checkout_required = true
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+evidence = "QUEUED_SPEC_ONLY"
+source_preflight = "DIRECT_IMPORTS_AND_BLOBS_MATCH"
+compilation = "PENDING_EXECUTION"
+fresh_kernel_check = "PENDING_EXECUTION"
+transitive_axiom_audit = "PENDING_EXECUTION"
+independent_replay = "PENDING_EXECUTION"
+analytic_premises_discharged = false
+remote_execution_authorized_by_this_file = false
+forbid_force_push = true
+
+[acceptance]
+require_exact_git_commit_and_tree = true
+require_exact_source_and_dependency_blobs = true
+require_exact_pinned_toolchain_and_mathlib = true
+require_reproducible_transitive_import_closure = true
+require_warning_clean_compilation = true
+require_fresh_kernel_check_after_successful_elaboration = true
+require_transitive_axiom_census = true
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorryAx = true
+reject_unexpected_axioms = true
+reject_unjustified_unsafe_or_native_dependency = true
+require_exact_public_declaration_types_and_universes = true
+require_negative_controls = true
+require_raw_exit_status_logs_and_resource_record = true
+require_external_receipt_bound_to_source_commit = true
+no_root_only_pass_promotion = true
+no_assumption_of_RH_or_uniform_Green_energy = true
+
+[preflight]
+git_branch_pinned = "detached_HEAD_at_source_commit"
+repository_source_readable = true
+root_omits_three_research_leaves = true
+no_local_lean_lake_elan_available_in_chat_container = true
+chat_container_github_dns_available = false
+none_of_these_is_a_compilation_result = true
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.NormControlledAdditiveMultiplicativeBridge"
+path = "GRWTSK/NumberTheory/Moebius/NormControlledAdditiveMultiplicativeBridge.lean"
+blob = "b52be1b426ae6d42af49314a3fe737557ef9b60c"
+checked_direct_math_imports = []
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.RestrictedAdditiveMultiplicativeBridgeAudit"
+path = "GRWTSK/NumberTheory/Moebius/RestrictedAdditiveMultiplicativeBridgeAudit.lean"
+blob = "bcfb0dbdef5e924d96cc681f265414dd0708de5d"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.NormControlledAdditiveMultiplicativeBridge"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+path = "GRWTSK/NumberTheory/Moebius/RestrictedFrameResidualComparison.lean"
+blob = "63ec7f9d2e172035d8df42ae383ce3eba1adf944"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.RestrictedAdditiveMultiplicativeBridgeAudit"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"
+path = "GRWTSK/NumberTheory/Moebius/MobiusVonMangoldtCoefficientBridge.lean"
+blob = "703076acb4b44f5ce3bc3b63ef1155c0da426b9f"
+checked_direct_math_imports = []
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+path = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeBridgeObstruction.lean"
+blob = "6530da3ccea612394f604b708e354c8ec7440e03"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+path = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeKernelQuantifierNoGo.lean"
+blob = "9228ce106b578c3926b6689dde61d6dbb7c80e80"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredPairGreenCoefficientBridge.lean"
+blob = "70e382e8c8548a915f15d080fae512580f45bf3c"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredPairPositiveShiftBoundary.lean"
+blob = "d4b7ff5d6b64e9bbdeea3931b4f43f6d6e6477cd"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingCenteredCorrelation"
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitZeroWindingCenteredCorrelation.lean"
+blob = "70facd58b855c1a0aad2eb4c0ba1f7210f7d1ed5"
+checked_direct_math_imports = []
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredWindingZeroModeVariance.lean"
+blob = "b28f69f29ca8fd90978709e89e6642a5b52db962"
+checked_direct_math_imports = []
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
+blob = "84fed8973f7c1a1b358711d159713054805a33c2"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary", "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+path = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyThinGreenMatrix.lean"
+blob = "d351831b67611b3a341f8e4181b38382c769994e"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+path = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyTerminalColumnObstruction.lean"
+blob = "45039e5cdc467f461f5702d7c735e15fc34cec07"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"]
+transitive_imports_verified = false
+
+[[source_modules]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+path = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyRestrictedObservability.lean"
+blob = "c2d8db7b74a4b877e4153e392c357cd9fc31dda9"
+checked_direct_math_imports = ["GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"]
+transitive_imports_verified = false
+
+[[other_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CenteredMobiusLogGreenFourierBridge.lean"
+blob = "6b11fea2492a8552f93919bc215f0e40a53deb7e"
+
+[[other_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenArithmeticFourierCoordinate.lean"
+blob = "8e46e5f442647f0840793f48b44d03f65982fe05"
+
+[[other_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenCoordinateEnergyCriterion.lean"
+blob = "f40915f82fa625ab74d0cfd9c6459db08e65b75b"
+
+[[other_sources]]
+path = "GRWTSK.lean"
+blob = "21e1e8c6bfdd829eb26004acd6e10ac82a1830ce"
+
+[[requested_commands]]
+id = "pin"
+command = "git rev-parse HEAD"
+expected = "exit 0; stdout exactly 698b694747a0b62f4126caf5475601b073ebcd9e"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "lean_pin"
+command = "cat lean-toolchain"
+expected = "exact pin leanprover/lean4:v4.33.0"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "mathlib_pin"
+command = "grep -F 'db584cd6d46c92f209a44c0f1c829460d327499d' lake-manifest.json"
+expected = "exit 0; exact pinned Mathlib SHA"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "abstract_build"
+command = "lake build --wfail GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+expected = "exit 0; dependency closure warning clean"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "all_packets_build"
+command = "lake build --wfail GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+expected = "exit 0; dependency closure warning clean"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "four_family_build"
+command = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+expected = "exit 0; all anchored and regular-orbit dependencies warning clean"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "historical_criterion_build"
+command = "lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion"
+expected = "exit 0; independent historical stack warning clean; NOT a combined import proof"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "abstract_kernel"
+command = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+expected = "exit 0 after accepted compilation of exact closure"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "all_packets_kernel"
+command = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+expected = "exit 0 after accepted compilation of exact closure"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "four_family_kernel"
+command = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+expected = "exit 0 after accepted compilation of exact closure"
+status = "PENDING_EXECUTION"
+
+[[requested_commands]]
+id = "historical_criterion_kernel"
+command = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion"
+expected = "exit 0; distinct historical source, no joint-import shortcut"
+status = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.hasRestrictedLowerFrameBound_of_small_reconstructionResidual"
+expected_scope = "conditional: C>0, q>=0, 2*q<1, independent reconstruction bound and residual estimate on f in D, then restricted A=(1-2q)/(2C)"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_additiveMultiplicativeCoefficientKernelExists"
+expected_scope = "exact negative theorem: forall finite packets includes empty; actual coefficient at (1,2,2) nonzero"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredFiniteGreenDivisorTransform_actual"
+expected_scope = "exact finite window X<n<=2X, source anchored coefficients recover von Mangoldt"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.vonMangoldt_eq_canonicalFourFamilyMatrix_corrected"
+expected_scope = "exact signed full arithmetic coefficient equals four-family center matrix minus other-shift defect plus zero-shift boundary"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyThinFourierHead_eq_originalThinHead"
+expected_scope = "exact finite thin head only; no equality to separate historical arithmetic Fourier head"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyGreenMatrixEntry_terminalCenter_zero"
+expected_scope = "exact zero column at c=X+1 on original Green window"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_hasCanonicalFourFamilyAmbientLowerFrame"
+expected_scope = "ambient no-go for X>=2, positive A"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_hasCanonicalFourFamilySupportOnlyLowerFrame"
+expected_scope = "support-only restriction no-go for X>=2, positive A, NOT genuine arithmetic differences"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalSingleArithmeticDifferenceSet_eq_zero"
+expected_scope = "one declared arithmetic configuration yields singleton difference set {0}"
+type_and_axioms = "PENDING_EXECUTION"
+
+[[declarations_to_audit]]
+name = "GRWTSK.RiemannHypothesis.riemannHypothesis_of_arithmeticFourierCoordinateBound"
+expected_scope = "conditional RH criterion; preserve OPEN all dyadic arithmetic Fourier-head bound"
+type_and_axioms = "PENDING_EXECUTION"
+
+[transitive_axiom_audit_request]
+scope = "all_owned_declarations_in_the_transitive_import_closure_of_each_four_isolated_leaf"
+methods = ["record full module dependency DAG", "query exact declaration types/universe levels", "run source-bound Lean axiom collector on every audited declaration", "record transitive closure of every used axiom", "separately flag sorryAx, unsafe, native-only helpers, and all project axioms", "retain raw stdout/stderr, command exit codes, tool and runtime versions"]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+implementation = "Noeaaeue verified runner; no fabricated script path or invocation"
+status = "PENDING_EXECUTION"
+proof_term_coverage = "PENDING_EXECUTION"
+
+[hostile_controls]
+requirements = [
+  "reject complete source reconstruction from empty packet",
+  "reject norm-only zero kernel as a reverse lower frame",
+  "retain exact parity anchor signs, antidiagonal support and 1/n factor",
+  "retain signed other-shift and zero-shift corrections",
+  "terminal delta has genuine centered-shift support yet zero Green readout",
+  "erasing center X+1 is not identification of full kernel",
+  "single fixed arithmetic configuration has difference set {0}; no nontrivial admissible differences proven",
+  "do not jointly import colliding thin and historical Fourier declarations without a separate type-safe reconciliation",
+  "do not infer RH, Weil positivity or uniform energy decay from exact finite identities"
+]
+status = "PENDING_EXECUTION"
+
+[receipt]
+effect_owner = "grwtsk/noeaaeue"
+reference_issue = "grwtsk/noeaaeue#291"
+math_issues = ["grwtsk/math#966", "grwtsk/math#942", "grwtsk/math#100"]
+receipt_state = "NONE"
+require_exact_source_commit_tree_and_manifest_blob = true
+require_real_commands_exit_codes_stdout_stderr_timestamps = true
+failed_unavailable_and_pending_checks_remain_separate = true
+no_authorization_escalation_by_this_spec = true
