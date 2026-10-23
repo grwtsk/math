@@ -7990,3 +7990,5 @@ Code: **no matching declaration established in this pass**.
 Missing bridges and uncertainty:
 
 - No substantive theorem statement was established in this one-page asset. Do not substitute an abc conjecture theorem merely because the title says abc.
+
+Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.

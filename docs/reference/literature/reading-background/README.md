@@ -70,3 +70,5 @@ The [three additional manuscript versions under docs](spectral-docs-unpublished.
 Mapping extraction, rendering and validation tooling lives in `grwtsk/noeaaeue/operations/literature/`. Pre-read machine-access observations and extracted PDF text stay in the external library; bibliographic source records and original dates are preserved.
 
 Latest assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.
+
+Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.
