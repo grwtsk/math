@@ -1351,7 +1351,10 @@ theorem CMFiniteFourfoldAssembly.canonical_tensor_eq_checked
         E.carrier
         (((factors.vector 0 ⊗ₜ[ℚ] factors.vector 1) ⊗ₜ[ℚ]
           factors.vector 2) ⊗ₜ[ℚ] factors.vector 3) := by
-  rfl
+  calc
+    _ = (CMFiniteFourfoldAssembly.canonical factors).assemble factors.vector :=
+      (CMFiniteFourfoldAssembly.canonical factors).original_eq
+    _ = _ := CMFiniteFourfoldAssembly.canonical_assemble_eq_checked factors factors.vector
 
 /-- The canonical finite generator is transported using the *same*
 checked coefficient-only action as the paired assembly. -/
