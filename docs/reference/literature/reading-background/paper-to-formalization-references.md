@@ -5286,37 +5286,37 @@ deterministic 256-byte alphabet, natural-number frequency weights,
 packed bits, stored lengths and metadata. Zero-frequency source
 symbols are omitted, the singleton has a one-bit code, and
 an empty source is handled separately. The packet carries a
-frequency function §UInt8 → Nat§, not the original list or decoder
+frequency function `UInt8 → Nat`, not the original list or decoder
 tree. Its decoder is partial on arbitrary externally supplied
-packets but total on the image of §encode§.
+packets but total on the image of `encode`.
 
-**Immutable primary math source integration:** [§grwtsk/math@b0e8454d3107e1f89e35e69bc2642e78739596b9§](https://github.com/grwtsk/math/commit/b0e8454d3107e1f89e35e69bc2642e78739596b9),
+**Immutable primary math source integration:** [`grwtsk/math@b0e8454d3107e1f89e35e69bc2642e78739596b9`](https://github.com/grwtsk/math/commit/b0e8454d3107e1f89e35e69bc2642e78739596b9),
 seven new Lean modules; full exact namespace prefix
-§GRWTSK.InformationTheory.Huffman§. All seven Git blobs
+`GRWTSK.InformationTheory.Huffman`. All seven Git blobs
 were read again at the later
-[§377bbfb44e83c9b29911bd232ae050cad8d62df5§](https://github.com/grwtsk/math/commit/377bbfb44e83c9b29911bd232ae050cad8d62df5)
+[`377bbfb44e83c9b29911bd232ae050cad8d62df5`](https://github.com/grwtsk/math/commit/377bbfb44e83c9b29911bd232ae050cad8d62df5)
 snapshot and retain these objects:
 
 | Exact Lean file | Git source blob | Selected fully qualified declarations and clauses |
 | --- | --- | --- |
-| [§Tree.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Tree.lean) | §af50e9445a35ab06b4f42bc9b0991a39289c5c2b§ | §GRWTSK.InformationTheory.Huffman.Tree.path_exists§, §Tree.readPath_path§ and §Tree.readWord_word§, with a concrete tree and a byte present in that tree; no assumption that an arbitrary tree covers every byte |
-| [§Builder.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Builder.lean) | §cbaee12eb4084f25f0e46fa0bfa91a719191050a§ | §GRWTSK.InformationTheory.Huffman.Entry.before§, §buildFuel_complete§, §fromWeights_complete§, §build_complete§, §build_covers§; the sorted-list priority is weight, least symbol, then construction order; the build is bounded by queue length and source-frequency positivity |
-| [§Stream.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Stream.lean) | §6c8e070975344ea9f0c6607086547be1dffc2459§ | §GRWTSK.InformationTheory.Huffman.encodeWith§, §decodeCount_encodeWith§; the tree must cover the actual input symbols |
-| [§Wire.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Wire.lean) | §6ce93eb54d75e47938ee25c1f223326f14f68607§ | §GRWTSK.InformationTheory.Huffman.Wire.unpack_pack§, §storedBits_padding§, §octet_eq_rustOctet§, §octetBits_eq_rustOctetBits§; MSB-first UInt8 packing and exact bit length, **not** external Rust overflow safety |
-| [§Machine.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Machine.lean) | §290c678d0a5989df33e732919d486163d2274104§ | §GRWTSK.InformationTheory.Huffman.Machine.run_encodeWith§ and §run_packed_encoding§, using actual root-reset decoding, coverage and source-aligned encoded bits |
-| [§RoundTrip.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/RoundTrip.lean#L18-L108) | §07e1a9a291bd5002fc8e2dceed980242ba0752ec§ | §GRWTSK.InformationTheory.Huffman.Packet§, §encode§, §decode§, §decode_encode§ (all §source : List UInt8§, no extra hypothesis), §encode_injective§ |
-| [§Examples.lean§](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Examples.lean) | §639bffedba1f6935a199a3b9f7890b61dc37c6e5§ | §GRWTSK.InformationTheory.Huffman.Examples.assignment_bytes§, §deterministic_ties§, §singleton_zero_bits§; **finite concrete examples**, distinct from the universal round-trip theorem |
+| [`Tree.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Tree.lean) | `af50e9445a35ab06b4f42bc9b0991a39289c5c2b` | `GRWTSK.InformationTheory.Huffman.Tree.path_exists`, `Tree.readPath_path` and `Tree.readWord_word`, with a concrete tree and a byte present in that tree; no assumption that an arbitrary tree covers every byte |
+| [`Builder.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Builder.lean) | `cbaee12eb4084f25f0e46fa0bfa91a719191050a` | `GRWTSK.InformationTheory.Huffman.Entry.before`, `buildFuel_complete`, `fromWeights_complete`, `build_complete`, `build_covers`; the sorted-list priority is weight, least symbol, then construction order; the build is bounded by queue length and source-frequency positivity |
+| [`Stream.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Stream.lean) | `6c8e070975344ea9f0c6607086547be1dffc2459` | `GRWTSK.InformationTheory.Huffman.encodeWith`, `decodeCount_encodeWith`; the tree must cover the actual input symbols |
+| [`Wire.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Wire.lean) | `6ce93eb54d75e47938ee25c1f223326f14f68607` | `GRWTSK.InformationTheory.Huffman.Wire.unpack_pack`, `storedBits_padding`, `octet_eq_rustOctet`, `octetBits_eq_rustOctetBits`; MSB-first UInt8 packing and exact bit length, **not** external Rust overflow safety |
+| [`Machine.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Machine.lean) | `290c678d0a5989df33e732919d486163d2274104` | `GRWTSK.InformationTheory.Huffman.Machine.run_encodeWith` and `run_packed_encoding`, using actual root-reset decoding, coverage and source-aligned encoded bits |
+| [`RoundTrip.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/RoundTrip.lean#L18-L108) | `07e1a9a291bd5002fc8e2dceed980242ba0752ec` | `GRWTSK.InformationTheory.Huffman.Packet`, `encode`, `decode`, `decode_encode` (all `source : List UInt8`, no extra hypothesis), `encode_injective` |
+| [`Examples.lean`](https://github.com/grwtsk/math/blob/b0e8454d3107e1f89e35e69bc2642e78739596b9/GRWTSK/InformationTheory/Huffman/Examples.lean) | `639bffedba1f6935a199a3b9f7890b61dc37c6e5` | `GRWTSK.InformationTheory.Huffman.Examples.assignment_bytes`, `deterministic_ties`, `singleton_zero_bits`; **finite concrete examples**, distinct from the universal round-trip theorem |
 
 **Cross-language source identities, without claiming a proven
-refinement:** [§grwtsk/noeaaeue@3a5469b1af5ccd3fdf391a35952f51adea06483c§](https://github.com/grwtsk/noeaaeue/commit/3a5469b1af5ccd3fdf391a35952f51adea06483c)
+refinement:** [`grwtsk/noeaaeue@3a5469b1af5ccd3fdf391a35952f51adea06483c`](https://github.com/grwtsk/noeaaeue/commit/3a5469b1af5ccd3fdf391a35952f51adea06483c)
 introduced the Rust/Python implementation sources, whose reviewed
-snapshot at §cc48911d8c65cf5cb05bf4b489ff60a1fa894f71§
-has §managers/custody/python-quine/rust/src/huffman.rs§
-Git blob §bf0a73950887ee76f0dba9bb7f3d1f7056868b0d§ and
-§managers/custody/python-quine/python/huffman.py§
-blob §875f7ac48af0862d86ba229ee3c3ad11d388df96§.
-The reviewed Rust source uses checked bounded §u64§ operations,
-while the Lean priority uses arbitrary §Nat§ weights.
+snapshot at `cc48911d8c65cf5cb05bf4b489ff60a1fa894f71`
+has `managers/custody/python-quine/rust/src/huffman.rs`
+Git blob `bf0a73950887ee76f0dba9bb7f3d1f7056868b0d` and
+`managers/custody/python-quine/python/huffman.py`
+blob `875f7ac48af0862d86ba229ee3c3ad11d388df96`.
+The reviewed Rust source uses checked bounded `u64` operations,
+while the Lean priority uses arbitrary `Nat` weights.
 Source similarity, common binary encoding and sample vectors
 **do not supply** a complete refinement theorem for Rust heap
 tie handling, no-overflow, packet validation, FFI, or Python
@@ -5324,41 +5324,41 @@ tuple-heap semantics. The software-source snapshot is not a
 dated publication of Huffman's 1952 theorem.
 
 **Actual verification classification at the exact b0e8454d
-math commit:** §SOURCE_PRESENT / SOURCE_PROOF_CANDIDATE§.
+math commit:** `SOURCE_PRESENT / SOURCE_PROOF_CANDIDATE`.
 Previous authors recorded passing *working-file* Lean
-§--trust=0 -DwarningAsError=true§ checks, but neither an
+`--trust=0 -DwarningAsError=true` checks, but neither an
 immutable full **same-source-command exit/log receipt**
 nor complete fresh checker plus transitive axiom/generated/
 native/unsafe audit was independently available in this
 review. GitHub combined status returned **zero contexts** and
 PR-triggered workflow search returned **zero runs** at
-§b0e8454d3107e1f89e35e69bc2642e78739596b9§.
-The authoring container's actual §lean§, §lake§, §elan§ and
-§leanchecker§ lookups each returned **127**. For this
-exact-source external replay, §lake build --wfail
+`b0e8454d3107e1f89e35e69bc2642e78739596b9`.
+The authoring container's actual `lean`, `lake`, `elan` and
+`leanchecker` lookups each returned **127**. For this
+exact-source external replay, `lake build --wfail
 GRWTSK.InformationTheory.Huffman.RoundTrip
-GRWTSK.InformationTheory.Huffman.Examples§,
-§lake env leanchecker --fresh -v
-GRWTSK.InformationTheory.Huffman.RoundTrip§ and
-§lake env lean --trust=0 --wfail /EXTERNAL/PINNED/HUFFMAN/axioms.lean§
+GRWTSK.InformationTheory.Huffman.Examples`,
+`lake env leanchecker --fresh -v
+GRWTSK.InformationTheory.Huffman.RoundTrip` and
+`lake env lean --trust=0 --wfail /EXTERNAL/PINNED/HUFFMAN/axioms.lean`
 are **REQUESTED / NOT_RUN here**, not successful commands.
-Include §#print axioms
-GRWTSK.InformationTheory.Huffman.decode_encode§ and
-§encode_injective§, plus exhaustive transitive closure
+Include `#print axioms
+GRWTSK.InformationTheory.Huffman.decode_encode` and
+`encode_injective`, plus exhaustive transitive closure
 beyond those probes, in any actual signed receipt.
-The public §GRWTSK.lean§ does **not** import the new
+The public `GRWTSK.lean` does **not** import the new
 Huffman modules at the referenced integration.
 Keep all executable scripts, logs, generated artifacts
-and acceptance receipts in §grwtsk/noeaaeue§, never in
+and acceptance receipts in `grwtsk/noeaaeue`, never in
 canonical math.
 
-**Seven separate statuses:** imported mathematics = Lean §Std§
+**Seven separate statuses:** imported mathematics = Lean `Std`
 types and elementary finite lists, plus actual repository
 Huffman source imports, **not** Huffman's optimality theorem
 as an external axiom; kernel-verified paper bridge =
 **NONE established by an available exact receipt**;
 source proof candidates = the seven module proofs above;
-conditional interfaces = external bounded §u64§ heap/refinement
+conditional interfaces = external bounded `u64` heap/refinement
 and source metadata validation; finite evidence = tested
 byte fixtures, **not** a universal proof;
 methodological analogy = Huffman's 1952 minimum-redundancy
@@ -5382,103 +5382,115 @@ the Riemann Hypothesis*, Clay Mathematics Institute problem
 description (**2000**), collected **2006**, Section V
 (pp. 8–9), [official stable text](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf).
 Here exactly two conditions on the same complex source
-function §g§, namely §∫₀∞g(x)dx=0§ and
-§∫₀∞g(x)dx/x=0§, are encoded in the already
+function `g`, namely `∫₀∞g(x)dx=0` and
+`∫₀∞g(x)dx/x=0`, are encoded in the already
 defined canonical three-tent moment map. Bombieri's full
-piecewise-§C¹§ source class §W§, Mellin transform, signed
+piecewise-`C¹` source class `W`, Mellin transform, signed
 Weil functional, completed zeta normalization and RH criterion
 are **NOT imported or proved** by this comparison.
 
 **New mathematical source; exact integration commit.**
-[§grwtsk/math@377bbfb44e83c9b29911bd232ae050cad8d62df5§](https://github.com/grwtsk/math/commit/377bbfb44e83c9b29911bd232ae050cad8d62df5),
-§GRWTSK/NumberTheory/Zeta/Riemann/BombieriHuffmanLosslessBoundary.lean§,
-Git blob §901939ee5cce378631d0aad819fdf6fdb4a4775c§,
+[`grwtsk/math@377bbfb44e83c9b29911bd232ae050cad8d62df5`](https://github.com/grwtsk/math/commit/377bbfb44e83c9b29911bd232ae050cad8d62df5),
+`GRWTSK/NumberTheory/Zeta/Riemann/BombieriHuffmanLosslessBoundary.lean`,
+Git blob `901939ee5cce378631d0aad819fdf6fdb4a4775c`,
 source [lines 43–108](https://github.com/grwtsk/math/blob/377bbfb44e83c9b29911bd232ae050cad8d62df5/GRWTSK/NumberTheory/Zeta/Riemann/BombieriHuffmanLosslessBoundary.lean#L43-L108);
 full namespace
-§GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary§.
-It directly imports the pinned Huffman §RoundTrip§ blob
-§07e1a9a291bd5002fc8e2dceed980242ba0752ec§
-and the canonical §BombieriMomentInformationLoss§ blob
-§9a2435d9c74b89ce1434c45bade1aa9beaa6cead§.
+`GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary`.
+It directly imports the pinned Huffman `RoundTrip` blob
+`07e1a9a291bd5002fc8e2dceed980242ba0752ec`
+and the canonical `BombieriMomentInformationLoss` blob
+`9a2435d9c74b89ce1434c45bade1aa9beaa6cead`.
 
 Fully qualified new declarations and exact formal inputs:
 
-- §…BombieriHuffmanLosslessBoundary.HasTotalLosslessDecoder§:
-  §∃ decoder:Y→X, Function.LeftInverse decoder encoding§,
-  for arbitrary types §X,Y§. This is *total left-inverse
+- `…BombieriHuffmanLosslessBoundary.HasTotalLosslessDecoder`:
+  `∃ decoder:Y→X, Function.LeftInverse decoder encoding`,
+  for arbitrary types `X,Y`. This is *total left-inverse
   existence*, not a compression-rate or computability predicate.
-- §…BombieriHuffmanLosslessBoundary.injective_of_hasTotalLosslessDecoder§:
+- `…BombieriHuffmanLosslessBoundary.injective_of_hasTotalLosslessDecoder`:
   a supplied total left inverse implies injectivity.
-- §…BombieriHuffmanLosslessBoundary.huffman_bytes_have_total_lossless_decoder§:
-  for **all finite §List UInt8§** under the concrete
-  Huffman §encode§ and packet §Packet§, the decoder
-  §(decode packet).getD []§ is a left inverse;
-  imports §GRWTSK.InformationTheory.Huffman.decode_encode§
+- `…BombieriHuffmanLosslessBoundary.huffman_bytes_have_total_lossless_decoder`:
+  for **all finite `List UInt8`** under the concrete
+  Huffman `encode` and packet `Packet`, the decoder
+  `(decode packet).getD []` is a left inverse;
+  imports `GRWTSK.InformationTheory.Huffman.decode_encode`
   with no external prefix-free axiom.
-- §…BombieriHuffmanLosslessBoundary.two_bombieri_moments_have_no_total_lossless_decoder§:
-  the fixed §Combination 2 = Fin 3 → ℂ§ moment
+- `…BombieriHuffmanLosslessBoundary.two_bombieri_moments_have_no_total_lossless_decoder`:
+  the fixed `Combination 2 = Fin 3 → ℂ` moment
   profile has no total left inverse, consuming the
   source-cofactor kernel's noninjectivity.
-- §…BombieriHuffmanLosslessBoundary.no_total_lossless_decoder_from_moment_only_postprocessing§:
-  for **arbitrary type §Y§** and arbitrary mapping
-  §postprocess:(ℂ×ℂ)→Y§, there is no decoder left-inverting
-  §u↦postprocess(bombieriMomentProfile u)§ on all
+- `…BombieriHuffmanLosslessBoundary.no_total_lossless_decoder_from_moment_only_postprocessing`:
+  for **arbitrary type `Y`** and arbitrary mapping
+  `postprocess:(ℂ×ℂ)→Y`, there is no decoder left-inverting
+  `u↦postprocess(bombieriMomentProfile u)` on all
   three-coordinate source coefficient vectors. This
   uses the **literal cofactor/zero collision**:
-  §P(correctedCoordinates)=P(0)§ with
-  §correctedCoordinates≠0§. No linearity, continuity,
-  computability or injectivity of §postprocess§ is assumed.
+  `P(correctedCoordinates)=P(0)` with
+  `correctedCoordinates≠0`. No linearity, continuity,
+  computability or injectivity of `postprocess` is assumed.
 
 **Exact algebraic/finite evidence:** independent Python/SymPy
 expansion of three polynomial identities in
-§A₀,A₁,A₂,B₀,B₁,B₂§ (two moment-cancellation
-equations and §cofactorTwo=D=A₁B₀−A₀B₁§),
+`A₀,A₁,A₂,B₀,B₁,B₂` (two moment-cancellation
+equations and `cofactorTwo=D=A₁B₀−A₀B₁`),
 **exit 0**. Nontriviality requires the separate
 positive-determinant source supplier:
-§GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos§
-(blob §e522772381075f125453ef2ba6b30e63d2873910§).
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos`
+(blob `e522772381075f125453ef2ba6b30e63d2873910`).
 This preflight is **not** a Lean kernel proof, nor does
 it verify the byte-packet round trip at the new import closure.
 
 **Commands and verification at the new integrated source.**
-Pinned Lean §leanprover/lean4:v4.33.0§,
-§lean-toolchain§ blob
-§025e59548e48cf71f2744154e2890beefe30a258§,
-Mathlib §db584cd6d46c92f209a44c0f1c829460d327499d§,
+Pinned Lean `leanprover/lean4:v4.33.0`,
+`lean-toolchain` blob
+`025e59548e48cf71f2744154e2890beefe30a258`,
+Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`,
 manifest blob
-§1f2e3e2d66253933a410e981eb359a9b454aae0b§.
-Git source commit and blob inspected, §GRWTSK.lean§
+`1f2e3e2d66253933a410e981eb359a9b454aae0b`.
+Git source commit and blob inspected, `GRWTSK.lean`
 does **not** import the new module; Lean/Lake/Elan/
 leanchecker unavailable locally (each 127). Exact
-§lake build --wfail
-GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary§,
-§lake env leanchecker --fresh -v
-GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary§,
-and §lake env lean --trust=0 --wfail
-/EXTERNAL/EXACT/SCRATCH/transitive_axioms.lean§
+`lake build --wfail
+GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary`,
+`lake env leanchecker --fresh -v
+GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary`,
+and `lake env lean --trust=0 --wfail
+/EXTERNAL/EXACT/SCRATCH/transitive_axioms.lean`
 were **NOT_RUN** here. No full transitive
 axiom/generated/native/unsafe audit or accepted external
 same-commit receipt is provided; any replay request
-will remain §REQUESTED_NOT_RUN§ until actual execution.
+will remain `REQUESTED_NOT_RUN` until actual execution.
 Do not transfer older working-file checks to this import
 closure.
 
+**Exact immutable passive replay specification, not an acceptance receipt:**
+[Noeaaeue request at `5c4a1684ab39a669faa2339cfdd4df6d92d06046`](https://github.com/grwtsk/noeaaeue/blob/5c4a1684ab39a669faa2339cfdd4df6d92d06046/verification/math/20261023-main-67d39802-huffman-bombieri-lossless-boundary.json),
+JSON Git blob `a0f9bfa6bb3784bb297b630f43e1b387704b634b`,
+pinning `grwtsk/math@67d398028ff8e4964f110ec1c800b20fc3efacc7`,
+tree `5506e3ff64e8536f767016c091667fefaa17e5e7`
+with 17 exact source objects, build and checker commands,
+transitive axiom census and hostile controls. Status is
+`REQUESTED_NOT_RUN`; all build/kernel/audit/receipt fields remain
+`PENDING_EXECUTION` or null. This inert file authorizes no
+remote run, Railway or force push. Keep mutable process logs
+and any accepted receipts outside math.
+
 **Separate classifications, no inference of provenance:**
-§imported-mathematics§ = source-level Huffman round trip,
+`imported-mathematics` = source-level Huffman round trip,
 Mathlib/Std finite algebra, true positive two-moment
 determinant and equality of moment fibers;
-§kernel-verified-bridges§ = **NONE** for the new
+`kernel-verified-bridges` = **NONE** for the new
 Huffman–Bombieri comparison (no fresh same-source receipt);
-§source-proof-candidate§ = the five new Lean declarations;
-§conditional-interface§ = any proposed identification with
+`source-proof-candidate` = the five new Lean declarations;
+`conditional-interface` = any proposed identification with
 a full analytic test space or computational decoder,
 **not** an assumption discharged here;
-§finite-evidence§ = exact three polynomial identities,
+`finite-evidence` = exact three polynomial identities,
 separately from source proof and from example packets;
-§methodological-analogy§ = finite source-coding and
+`methodological-analogy` = finite source-coding and
 information loss, **not** historical influence and
 **not** a Tao/heat-flow/Huffman equivalence;
-§unresolved-premises§ = complete Bombieri §W§
+`unresolved-premises` = complete Bombieri `W`
 admissibility, exact signed classical Weil all-pairs
 form, spectral tail/continuity/density, RH, any
 variable-height/compression rate theorem,
