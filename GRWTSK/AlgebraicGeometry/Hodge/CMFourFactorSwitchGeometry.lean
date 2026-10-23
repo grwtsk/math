@@ -1423,18 +1423,6 @@ constructing the canonical tensor shuffle. -/
 /-- The corresponding separated pure coefficient/vector tensor, with
 identical association conventions. -/
 
-/-- The constructed separated assembly evaluates the separated version
-of any interleaved pure generator to the required finite-CM formula.
-Only the tensor shuffle map remains to be constructed. -/
-theorem CMFiniteSeparatedCanonicalAssembly_on_separatedPure
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    CMFiniteSeparatedCanonicalAssembly E
-        (CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
-      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
-  exact CMFiniteSeparatedCanonicalAssembly_pure E
-    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-
 /-- The two-pair specialization of the generic checked shuffle. -/
 def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
     ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
