@@ -224,7 +224,7 @@ strict arithmetic source calculation does **not** construct
 the classical Weil target, signed all-pairs form comparison,
 or any unconditional RH result.
 
-### Proposed coefficient reconstruction from both Bombieri moments and one source coordinate
+### Authored finite coefficient reconstruction from both Bombieri moments and one source coordinate (kernel pending)
 
 **Paper source and exact borrowed hypotheses:** Enrico Bombieri,
 *Problems of the Millennium: the Riemann Hypothesis*, Clay Mathematics
@@ -251,7 +251,7 @@ has blob `e522772381075f125453ef2ba6b30e63d2873910`.
 The existing standalone sources and transitive imports remain
 **SOURCE_ONLY / NOT_KERNEL_AUDITED** in this review.
 
-**Next exact mathematical supplier, NOT YET A LEAN DECLARATION:**
+**Exact mathematical supplier (now authored in source, not kernel-accepted):**
 Let the genuine stage 2/3/4 ordinary/reciprocal moment columns be
 `(A₀,A₁,A₂)` and `(B₀,B₁,B₂)`. The existing rank source
 has `D=A₁B₀−A₀B₁>0`. The pair of moments plus the
@@ -264,22 +264,39 @@ is `−D≠0`. It has an explicit coefficientwise inverse:
 This would prove
 `Function.Injective (augmentedProfile bombieriMomentProfile thirdCoordinateReadout)`
 **only on the actual three-dimensional coefficient carrier**.
-The existing augmentation theorem proves separation of a selected
-pair, **not** that global injection. It is not a map of
+The **original** augmentation theorem proved only pair separation.
+Subsequently [`grwtsk/math@37781e9ee1872edf41d275c9a67f82118a194313`](https://github.com/grwtsk/math/commit/37781e9ee1872edf41d275c9a67f82118a194313)
+integrated two **authored Lean source** declarations in
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss`:
+
+- [`augmentedThreeMomentProfile_injective` at line 88](https://github.com/grwtsk/math/blob/37781e9ee1872edf41d275c9a67f82118a194313/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L88) proves injection of the actual coefficient map
+  `augmentedProfile bombieriMomentProfile thirdCoordinateReadout` by
+  applying `CanonicalSquareTentThreeTentMomentKernelLine.coefficient_line_of_two_moments`
+  to the difference and using `cofactorTwo_ne_zero`.
+- [`any_source_readout_factorsThrough_augmentedThreeMoments` at line 140](https://github.com/grwtsk/math/blob/37781e9ee1872edf41d275c9a67f82118a194313/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L140)
+  uses `GRWTSK.Logic.InformationLoss.factorsThrough_iff_fiberConstant_of_nonempty_source` (revised supplier blob `13e934c9c8b477474bda909a5e689710795154bd`) to furnish a
+  **classical set-theoretic factorization** for arbitrary coefficient
+  readouts. It supplies neither a computable, continuous, bounded
+  decoder nor a Weil-form identity.
+
+New source blob `ebfa664d3b8fb4ecd3f70c3ee6a989c3d14e485f`;
+previous blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74`
+remains an immutable historical introduction.
+The separate **explicit formula for the decoder** remains a
+mathematical identity without a Lean `decodeAugmentedBombieri`
+definition; the actual source establishes injectivity/factorization
+without that explicit term. It is not a map of
 the full classical test space.
 
 **Mathematical note:** [exact matrix/source identities and Lean
 supplier proposals](../../../mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-augmented-moment-reconstruction-219.md),
-integrated at `grwtsk/math@42d52cb5908f462eff0db002a4023387eeb7ec40`,
-documentation blob `77c34dc66127dbf146ab53f9a6d07db10ad9b290`.
+updated at `grwtsk/math@bef02109d7f82d506ef6e43ac23e887e4163bb7b`,
+documentation blob `00fca6e5f1160068fd6e3c6ecf9a44d12fcc264f` (original note introduction at `42d52cb5908f462eff0db002a4023387eeb7ec40`).
 Independent Sympy exact matrix left/right inverse and
 60-digit complex-vector reconstruction checks passed, Python
 exit **0**, script checksum
 `f3af7883bf9dfc7bcfc8e862a682e76653a4afce6e1e3895484fc538e5a70545`.
-This is `REPOSITORY_DERIVED_UNFORMALIZED_MATHEMATICAL_SUPPLIER`,
-**NOT** `PAPER_TO_LEAN_BRIDGE_PROVED`,
-`LEAN_COMPILED`, `FRESH_KERNEL_REPLAYED` or
-`TRANSITIVE_AXIOMS_AUDITED`. No source-exact signed
+The two new Lean theorem scripts are `REPOSITORY_DERIVED_SOURCE_DRAFT`; the explicitly computed decoder formula remains a `REPOSITORY_DERIVED_UNFORMALIZED_MATHEMATICAL_SUPPLIER`. Neither is `PAPER_TO_LEAN_BRIDGE_PROVED`, `LEAN_COMPILED`, `FRESH_KERNEL_REPLAYED` or `TRANSITIVE_AXIOMS_AUDITED` at the checked source commit. The local source file is not imported by `GRWTSK.lean`. No source-exact signed
 classical Weil comparison or RH consequence follows.
 
 ## Primary paper supplying the Weil-form criterion context
