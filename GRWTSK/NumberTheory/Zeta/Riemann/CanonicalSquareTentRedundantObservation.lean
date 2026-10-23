@@ -28,6 +28,7 @@ open GRWTSK.Logic.InformationLoss
 open GRWTSK.RiemannHypothesis
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss
+open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentInformationLossBridge
 
 /-- A postprocessing of the original two moment rows cannot repair the
 third-coefficient information loss, even when retained alongside both
