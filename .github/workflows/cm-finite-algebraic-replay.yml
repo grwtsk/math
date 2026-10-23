@@ -27,3 +27,13 @@ jobs:
         run: lake env lean -DwarningAsError=true GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean
       - name: Lean algebraic owner with trust level zero
         run: lake env lean --trust=0 -DwarningAsError=true GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean
+      - name: Report axioms of the finite-CM equivariance and transport declarations
+        shell: bash
+        run: |
+          cat > /tmp/CMFiniteAxiomAudit.lean <<'LEAN'
+          import GRWTSK.AlgebraicGeometry.Hodge.CMFinitePureAssembly
+          #print axioms GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourPairedCoefficientConjugate_pure
+          #print axioms GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap
+          #print axioms GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteCanonicalPairedAssembly_transport_four
+          LEAN
+          lake env lean --trust=0 -DwarningAsError=true /tmp/CMFiniteAxiomAudit.lean
