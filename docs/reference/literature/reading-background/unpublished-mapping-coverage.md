@@ -1,5 +1,7 @@
 # Unpublished research: source-to-code coverage
 
+Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+
 Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
 
 Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.

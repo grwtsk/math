@@ -1,5 +1,7 @@
 # Broader Lean search: 40 unresolved research ideas
 
+Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+
 Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
 
 **6 conditional-fragment**; **5 corrective-fragment**; **7 analogy-only**; **1 repair-candidate**; **21 unresolved**. All 40 exact asset/idea identities remain separate. **No main manuscript claim is marked resolved.**
@@ -83,6 +85,8 @@ Missing bridges:
 
 `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer` — **unresolved**. Main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
 
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
@@ -116,6 +120,8 @@ Missing bridges:
 
 `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer` — **unresolved**. Main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
@@ -148,6 +154,8 @@ Missing bridges:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `159cb12b34d5`
 
 `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap` — **unresolved**. Main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
@@ -183,6 +191,8 @@ Missing bridges:
 
 `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap` — **unresolved**. Main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#553f237f431fc299-kl-positive-to-residue-gap).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
 KL polynomial positivity and nilpotent-stratum localization are asserted to imply analytic residue vanishing, with affine/quantum extensions and a G2 example.
@@ -216,6 +226,8 @@ Missing bridges:
 ### Residue Suppression via Embeddings and Geometric Langlands Localization — `bd284739968e`
 
 `idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer` — **unresolved**. Main claim unresolved.
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
@@ -496,6 +508,8 @@ Missing bridges:
 ### Boundary Regularization: A Framework for High-Rank Elimination — `796ba01d4a02`
 
 `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline` — **unresolved**. Main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
@@ -836,6 +850,8 @@ Missing bridges:
 
 `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence` — **unresolved**. Main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 The status note declares Axioms 1/5, mixed-source consistency and zero independence resolved while listing remaining cross-term and higher-dimensional bounds.
@@ -871,6 +887,8 @@ Missing bridges:
 ### A Holistic Strategy for Deriving Properties of Prime Numbers — `0b423568798d`
 
 `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap` — **unresolved**. Main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#0b423568798d1ce3-prime-research-roadmap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#0b423568798d1ce3-prime-research-roadmap).
 
@@ -1287,6 +1305,8 @@ Missing bridges:
 
 `idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap` — **unresolved**. Main claim unresolved.
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
 
 Shannon entropy is corrected by weighted residue projections; empirical conductor/rank scaling and H<0.1 are used to predict zero-free modular classes.
@@ -1320,6 +1340,8 @@ Missing bridges:
 ### Residue Clustering, Modular Symmetry, and the Generalized Riemann Hypothesis: Techniques and Next Steps — `579328ace007`
 
 `idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap` — **unresolved**. Main claim unresolved.
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
