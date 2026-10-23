@@ -113007,6 +113007,772 @@
         "All-orders compatibility, actual-source normalization, and an exact RH criterion."
       ],
       "evidence": "Inspected PDF text at physical pages 20, 29, 30; exact asset SHA-256 1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86"
+    },
+    {
+      "id": "idea:unpublished-v2:187a244631f9e4f9",
+      "source_id": "sha256:187a244631f9e4f9e505729219a08d9218d5c34e7cca8a6f4b80fb41f4dde65f",
+      "locator": "§8.3, Theorem 8.3 (N003)",
+      "pdf_pages": [
+        20
+      ],
+      "statement": "The manuscript’s unchanged logarithmic xi coefficients require two positive Hankel towers and a source-specific Stieltjes/analytic-continuation argument.",
+      "hypotheses": [
+        "The independently fixed entire xi source and its logarithmic coefficients p_r.",
+        "Condition H requires nonnegativity of both ordinary and shifted Hankel families at every finite order; the manuscript does not supply the arithmetic proof of H."
+      ],
+      "evidence": "Cited physical PDF page 20, exact SHA-256 187a244631f9e4f9e505729219a08d9218d5c34e7cca8a6f4b80fb41f4dde65f; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Define the ordinary and shifted logarithmic Hankel forms from the independently fixed xi coefficients and reconcile both towers with the chosen test type.",
+        "Prove the representing measure, compact support and holomorphic slit-plane continuation, including the converse.",
+        "Distinguish vector-state moments from ordinary trace powers and integer spectral multiplicities. Positive raw theta moments do not supply the logarithmic positivity towers."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:8199c88c1e77c74c",
+      "source_id": "sha256:8199c88c1e77c74cc58533cd83eec8b3609f8566a8651100951e2f06edaf9702",
+      "locator": "Overview; Ricci flow, singularities and surgery",
+      "pdf_pages": [
+        1
+      ],
+      "statement": "This overview describes Ricci flow with surgery and Poincaré/Geometrization.",
+      "hypotheses": [
+        "A Ricci-flow/surgery geometric setting as described in the overview; no precise analytic surgery hypotheses are transcribed or formalized in this pass."
+      ],
+      "evidence": "Cited physical PDF page 1, exact SHA-256 8199c88c1e77c74cc58533cd83eec8b3609f8566a8651100951e2f06edaf9702; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "GeometryTopology",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "No Ricci-flow PDE, canonical-neighborhood or surgery theorem was established in the inspected Lean modules. Finite heat-mode analogies cannot supply these geometric theorems."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:7a8aff52b8b6a6ad",
+      "source_id": "sha256:7a8aff52b8b6a6ada935881a833f0a6a7c9b62a71e3a0b9c9b7fd4f18f8bb918",
+      "locator": "§4.3, Theorem 4.3 (N003)",
+      "pdf_pages": [
+        9
+      ],
+      "statement": "The manuscript’s unchanged logarithmic xi coefficients require two positive Hankel towers and a source-specific Stieltjes/analytic-continuation argument.",
+      "hypotheses": [
+        "The independently fixed entire xi source and its logarithmic coefficients p_r.",
+        "Condition H requires nonnegativity of both ordinary and shifted Hankel families at every finite order; the manuscript does not supply the arithmetic proof of H."
+      ],
+      "evidence": "Cited physical PDF page 9, exact SHA-256 7a8aff52b8b6a6ada935881a833f0a6a7c9b62a71e3a0b9c9b7fd4f18f8bb918; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Define the ordinary and shifted logarithmic Hankel forms from the independently fixed xi coefficients and reconcile both towers with the chosen test type.",
+        "Prove the representing measure, compact support and holomorphic slit-plane continuation, including the converse.",
+        "Distinguish vector-state moments from ordinary trace powers and integer spectral multiplicities. Positive raw theta moments do not supply the logarithmic positivity towers."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:b7798efb57d0b33a",
+      "source_id": "sha256:b7798efb57d0b33a332d8e426673ee587836f66da076b7be4c4f1423378ad257",
+      "locator": "§2.1, Definition 2.2; theorem 2.1 provides the preceding predicate-descent criterion",
+      "pdf_pages": [
+        4
+      ],
+      "statement": "A retained shadow and residual must recover the declared task profile; exact source recovery is stronger.",
+      "hypotheses": [
+        "Declared source X, shadow map P, retained residual r, task family Q and a decoder recovering exactly the task profile."
+      ],
+      "evidence": "Cited physical PDF page 4, exact SHA-256 b7798efb57d0b33a332d8e426673ee587836f66da076b7be4c4f1423378ad257; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "matched-subclaim",
+      "missing_bridges": [
+        "Instantiate the carrier with shadow–residual pairs and identify the same task family.",
+        "The predicate-descent iff, bit lower bound, geometric lifting and amortized query bounds are not proved by this structure."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:3843446bb981f345",
+      "source_id": "sha256:3843446bb981f345cf52499f740f6c8abbbb7f3eb583a5948b8c6d150651a6d9",
+      "locator": "§4.3, Theorem 4.3 (N003)",
+      "pdf_pages": [
+        15
+      ],
+      "statement": "The manuscript’s unchanged logarithmic xi coefficients require two positive Hankel towers and a source-specific Stieltjes/analytic-continuation argument.",
+      "hypotheses": [
+        "The independently fixed entire xi source and its logarithmic coefficients p_r.",
+        "Condition H requires nonnegativity of both ordinary and shifted Hankel families at every finite order; the manuscript does not supply the arithmetic proof of H."
+      ],
+      "evidence": "Cited physical PDF page 15, exact SHA-256 3843446bb981f345cf52499f740f6c8abbbb7f3eb583a5948b8c6d150651a6d9; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Define the ordinary and shifted logarithmic Hankel forms from the independently fixed xi coefficients and reconcile both towers with the chosen test type.",
+        "Prove the representing measure, compact support and holomorphic slit-plane continuation, including the converse.",
+        "Distinguish vector-state moments from ordinary trace powers and integer spectral multiplicities. Positive raw theta moments do not supply the logarithmic positivity towers."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:f4ec0ff737d21370",
+      "source_id": "sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+      "locator": "Definition 2.3 (A01-D03)",
+      "pdf_pages": [
+        6
+      ],
+      "statement": "Period observation must retain the represented source; a later faithful period bank cannot repair a kernel in the source-to-automorphic transfer.",
+      "hypotheses": [
+        "Pinned arithmetic quotient and represented source; a bounded source-to-automorphic transfer and the declared period bank.",
+        "Kernel preservation requires the period bank to be faithful on the transfer image; actual construction remains unproved."
+      ],
+      "evidence": "Cited physical PDF page 6, exact SHA-256 f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Construct the actual prime-path quotient, cochain transfer and automorphic realization with their domains and normalization.",
+        "Prove that the selected period composite has a bounded left inverse on the represented source. A left inverse on an added external witness factor does not prove faithfulness of the original arithmetic transfer.",
+        "The four PDF revisions have separately inspected locators; their different external-product and canonical-transfer claims are not identified."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:cda859bfce642e94",
+      "source_id": "sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+      "locator": "Definition 2.2 (A01-D02)",
+      "pdf_pages": [
+        6
+      ],
+      "statement": "Period observation must retain the represented source; a later faithful period bank cannot repair a kernel in the source-to-automorphic transfer.",
+      "hypotheses": [
+        "Pinned arithmetic quotient and represented source; a bounded source-to-automorphic transfer and the declared period bank.",
+        "Kernel preservation requires the period bank to be faithful on the transfer image; actual construction remains unproved."
+      ],
+      "evidence": "Cited physical PDF page 6, exact SHA-256 cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Construct the actual prime-path quotient, cochain transfer and automorphic realization with their domains and normalization.",
+        "Prove that the selected period composite has a bounded left inverse on the represented source. A left inverse on an added external witness factor does not prove faithfulness of the original arithmetic transfer.",
+        "The four PDF revisions have separately inspected locators; their different external-product and canonical-transfer claims are not identified."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:9884a6a5efb7ed3e",
+      "source_id": "sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+      "locator": "Theorem 6.1 (A01-T07)",
+      "pdf_pages": [
+        12
+      ],
+      "statement": "Period observation must retain the represented source; a later faithful period bank cannot repair a kernel in the source-to-automorphic transfer.",
+      "hypotheses": [
+        "Pinned arithmetic quotient and represented source; a bounded source-to-automorphic transfer and the declared period bank.",
+        "Kernel preservation requires the period bank to be faithful on the transfer image; actual construction remains unproved."
+      ],
+      "evidence": "Cited physical PDF page 12, exact SHA-256 9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Construct the actual prime-path quotient, cochain transfer and automorphic realization with their domains and normalization.",
+        "Prove that the selected period composite has a bounded left inverse on the represented source. A left inverse on an added external witness factor does not prove faithfulness of the original arithmetic transfer.",
+        "The four PDF revisions have separately inspected locators; their different external-product and canonical-transfer claims are not identified."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:cbbfa2c78fda23e0",
+      "source_id": "sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+      "locator": "Theorem 4.4 (A01-T04)",
+      "pdf_pages": [
+        11
+      ],
+      "statement": "An independently fixed nonzero automorphic witness with a nonzero period vector gives an explicit left inverse for an external-product observation.",
+      "hypotheses": [
+        "A fixed automorphic cohomology witness η and a period vector p≠0 in the declared finite period bank; the observation is defined on the external-product source."
+      ],
+      "evidence": "Cited physical PDF page 11, exact SHA-256 cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Identify the bounded external-product map with the Lean encoder/decoder and prove the same normed-space recovery equation.",
+        "A left inverse on an added automorphic witness factor does not construct or prove injectivity of the original prime-path-to-automorphic transfer.",
+        "Do not transfer the canonical-transfer conclusions of revisions 1.1–1.3 to this distinct version 1.0."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:effab6e7692ecce7",
+      "source_id": "sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+      "locator": "Theorems 3.1–3.2 (P06-T01–T02)",
+      "pdf_pages": [
+        5
+      ],
+      "statement": "A detector floor and detector norm give a reconstruction floor; composition must restrict each factor to the preceding image.",
+      "hypotheses": [
+        "Bounded linear factors with norms fixed in advance and nonzero declared source/preceding image.",
+        "A detector pairing floor b and detector norm ceiling B>0; any additional Hodge/transport lower factors must be separately certified."
+      ],
+      "evidence": "Cited physical PDF page 5, exact SHA-256 effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "Formalize minimum modulus on the declared nonzero image and prove its restricted composition law.",
+        "Supply the actual arithmetic detector, quotient norm and positive transport factors before claiming a nonzero reconstruction floor."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:8090de7e2acfd435",
+      "source_id": "sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+      "locator": "Theorem 3.2 (P06-T01); detector quotient floor continues on PDF page 6",
+      "pdf_pages": [
+        5
+      ],
+      "statement": "A detector floor and detector norm give a reconstruction floor; composition must restrict each factor to the preceding image.",
+      "hypotheses": [
+        "Bounded linear factors with norms fixed in advance and nonzero declared source/preceding image.",
+        "A detector pairing floor b and detector norm ceiling B>0; any additional Hodge/transport lower factors must be separately certified."
+      ],
+      "evidence": "Cited physical PDF page 5, exact SHA-256 8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "Formalize minimum modulus on the declared nonzero image and prove its restricted composition law.",
+        "Supply the actual arithmetic detector, quotient norm and positive transport factors before claiming a nonzero reconstruction floor."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:5d78840a4167367c",
+      "source_id": "sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+      "locator": "Theorems 2.2–2.3 (P07-T01–T02)",
+      "pdf_pages": [
+        6
+      ],
+      "statement": "Compatible orthogonal finite sections of a finite-dimensional source yield a bounded global decoder and convergence of the minimum moduli.",
+      "hypotheses": [
+        "Finite-dimensional source K, a common Hilbert target, increasing exhaustive orthogonal projections, exact section compatibility and a uniform operator-norm bound."
+      ],
+      "evidence": "Cited physical PDF page 6, exact SHA-256 5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Construct a common Hilbert target, increasing orthogonal projections, exact compatibility and uniform boundedness.",
+        "Prove convergence using the finite-dimensional source hypothesis; the finite sum identity alone supplies neither the limit decoder nor its positive floor."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:a951ebf04f797d1d",
+      "source_id": "sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+      "locator": "§3, Definition 3.1 (P08-D02); Theorem 3.2 (P08-T02)",
+      "pdf_pages": [
+        5
+      ],
+      "statement": "Null spaces must be transported correctly before a map descends to a Hilbert quotient, and closed ranges are needed for the stated Hodge/pseudoinverse claims.",
+      "hypotheses": [
+        "Bounded graph traces and closed differential operators on declared domains; closed exact/coexact or aggregate ranges for the pseudoinverse branch."
+      ],
+      "evidence": "Cited physical PDF page 5, exact SHA-256 a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "GeometryTopology",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Construct the trace-relative graph domains and aggregate closed null space with the exact norms.",
+        "Prove null annihilation/transport and closed-range conditions. Supply the geometric cycle-class comparison rather than inferring it from dimensions or strings."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:7ca107df41bb1142",
+      "source_id": "sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+      "locator": "Theorem 3.1 (P08-T01)",
+      "pdf_pages": [
+        6
+      ],
+      "statement": "Null spaces must be transported correctly before a map descends to a Hilbert quotient, and closed ranges are needed for the stated Hodge/pseudoinverse claims.",
+      "hypotheses": [
+        "Closed subspaces N⊆H and M⊆K of the specified Hilbert spaces and a bounded linear T:H→K. The claimed descent criterion is T(N)⊆M."
+      ],
+      "evidence": "Cited physical PDF page 6, exact SHA-256 7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "GeometryTopology",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Construct the trace-relative graph domains and aggregate closed null space with the exact norms.",
+        "Prove null annihilation/transport and closed-range conditions. Supply the geometric cycle-class comparison rather than inferring it from dimensions or strings."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:7d13a6d60790c964",
+      "source_id": "sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+      "locator": "Theorem 4.2 (P09-T02)",
+      "pdf_pages": [
+        7
+      ],
+      "statement": "Bessel upper control and positive Gram form do not by themselves ensure a faithful observation on the reconstruction image; a restricted lower frame floor is needed.",
+      "hypotheses": [
+        "A finite-dimensional nonzero represented source, an injective reconstruction J with image M, and an independently defined Bessel observation W.",
+        "The claimed equivalences concern W restricted to M; a lower frame bound is not supplied by the Bessel upper bound."
+      ],
+      "evidence": "Cited physical PDF page 7, exact SHA-256 7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Identify the actual P07 image and independently defined prime observation.",
+        "Prove restricted injectivity and a positive lower frame bound, then the finite-prefix/dimension and decoder statements in the correct spaces.",
+        "The finite logarithmic orbit is not Haar orthogonality and no all-window prime completeness theorem follows from this guard."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:3e667d873ecf5260",
+      "source_id": "sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+      "locator": "Theorems 4.1–4.3 (P09-T01–T03)",
+      "pdf_pages": [
+        8
+      ],
+      "statement": "Bessel upper control and positive Gram form do not by themselves ensure a faithful observation on the reconstruction image; a restricted lower frame floor is needed.",
+      "hypotheses": [
+        "A finite-dimensional nonzero represented source, an injective reconstruction J with image M, and an independently defined Bessel observation W.",
+        "The claimed equivalences concern W restricted to M; a lower frame bound is not supplied by the Bessel upper bound."
+      ],
+      "evidence": "Cited physical PDF page 8, exact SHA-256 3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Identify the actual P07 image and independently defined prime observation.",
+        "Prove restricted injectivity and a positive lower frame bound, then the finite-prefix/dimension and decoder statements in the correct spaces.",
+        "The finite logarithmic orbit is not Haar orthogonality and no all-window prime completeness theorem follows from this guard."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:7314fd7961144788",
+      "source_id": "sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+      "locator": "Theorem 5.2 and Corollary 5.3 (P09-T08–T09)",
+      "pdf_pages": [
+        9
+      ],
+      "statement": "Bessel upper control and positive Gram form do not by themselves ensure a faithful observation on the reconstruction image; a restricted lower frame floor is needed.",
+      "hypotheses": [
+        "A finite-dimensional nonzero represented source, an injective reconstruction J with image M, and an independently defined Bessel observation W.",
+        "The claimed equivalences concern W restricted to M; a lower frame bound is not supplied by the Bessel upper bound."
+      ],
+      "evidence": "Cited physical PDF page 9, exact SHA-256 7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Identify the actual P07 image and independently defined prime observation.",
+        "Prove restricted injectivity and a positive lower frame bound, then the finite-prefix/dimension and decoder statements in the correct spaces.",
+        "The finite logarithmic orbit is not Haar orthogonality and no all-window prime completeness theorem follows from this guard."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:82f838ae5214a4e5",
+      "source_id": "sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+      "locator": "Theorem 6.1 (P10-T03)",
+      "pdf_pages": [
+        8
+      ],
+      "statement": "Comparator normalization must use an independently nowhere-zero gauge and preserve the same endpoint data.",
+      "hypotheses": [
+        "Both endpoint expressions and normalizers have the stated common domain; the gauge is independently holomorphic and nowhere zero."
+      ],
+      "evidence": "Cited physical PDF page 8, exact SHA-256 82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Construct endpoint sections, their common domains and normalizers as actual holomorphic units.",
+        "Prove the quotient and dense-core endpoint identities and align the same cocycles and source.",
+        "Gauge transport does not prove endpoint reversal, equality of zero loci or RH."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:dc23aae7df721289",
+      "source_id": "sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+      "locator": "Theorem 1.3 (Abelian two-fiber quotient)",
+      "pdf_pages": [
+        13
+      ],
+      "statement": "The diagonal quotient of a kernel pair is identified with the kernel by taking endpoint difference.",
+      "hypotheses": [
+        "A homomorphism q:A→B of abelian groups; compare its kernel pair modulo simultaneous diagonal translation."
+      ],
+      "evidence": "Cited physical PDF page 13, exact SHA-256 dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "GeometryTopology",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "Formalize the actual fiber product, diagonal action and quotient equivalence with the specified abelian hypotheses. A generic observation-recovery record does not prove this quotient theorem."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:e19a42c2d74c178f",
+      "source_id": "sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+      "locator": "Executive summary; proposer/trusted-kernel separation",
+      "pdf_pages": [
+        1
+      ],
+      "statement": "Heuristic syntax proposals acquire authority only through a separately sound checker for the exact claim.",
+      "hypotheses": [
+        "A fixed exact claim semantics, sound local rules/checkers and all declared side conditions.",
+        "Any completion theorem additionally assumes effective descent, recognition equivalence and an authority-preserving backward decoder."
+      ],
+      "evidence": "Cited physical PDF page 1, exact SHA-256 e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "matched-subclaim",
+      "missing_bridges": [
+        "Instantiate the judgment semantics, checker and byte parser.",
+        "No neural grammar-learning theorem, Crochemore–Perrin implementation or runtime refinement is supplied by the abstract contract."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:655492306cf582d5",
+      "source_id": "sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+      "locator": "Theorem 10.2 (Conservative completion theorem)",
+      "pdf_pages": [
+        32
+      ],
+      "statement": "Completion requires checked local fillers, descent, protected-semantics equivalence and a backward decoder.",
+      "hypotheses": [
+        "A fixed exact claim semantics, sound local rules/checkers and all declared side conditions.",
+        "Any completion theorem additionally assumes effective descent, recognition equivalence and an authority-preserving backward decoder."
+      ],
+      "evidence": "Cited physical PDF page 32, exact SHA-256 655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Formalize effective descent, recognition equivalence and maximality in the declared reachable-state order.",
+        "Provide the authority-preserving backward decoder; acceptance alone is not completeness, maximality or an off-critical exclusion theorem."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:cf1c7cee16c00c5e",
+      "source_id": "sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+      "locator": "§4, Theorem 4; displayed finite induction bound",
+      "pdf_pages": [
+        4
+      ],
+      "statement": "An explicit amortized recurrence with nonnegative masses and common constants gives an exponential-in-total-mass finite bound.",
+      "hypotheses": [
+        "At fixed T≥0, masses ω_j≥0 and common C,q≥0; set K=(1+T)^q≥0.",
+        "The potential obeys φ_(j+1)≤exp(Cω_j)φ_j+Cω_j K. The finite induction does not require intermediate φ_j≥0."
+      ],
+      "evidence": "Cited physical PDF page 4, exact SHA-256 cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "matched-subclaim",
+      "missing_bridges": [
+        "The code assumes the recurrence; it does not construct the actual source-derived reserve or an admissible full-prime chain.",
+        "The harmonic-mass estimate, polynomial initial bound, terminal reserve nonnegativity and transfer to P04 must be supplied to close the whole paper theorem.",
+        "The paper’s universal-interface obstruction is not removed by this conditional finite lemma."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:eb72e67be7cbe0dd",
+      "source_id": "sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+      "locator": "§7, Definition 7.1 (Fibered higher history, Proposed)",
+      "pdf_pages": [
+        19
+      ],
+      "statement": "The proposed history object retains ordered compositions and higher cells, rather than merely an unordered collection of endpoints.",
+      "hypotheses": [
+        "A declared dependent context and ordered history; higher-dimensional coherence and descent hypotheses are proposed, not constructed by list data."
+      ],
+      "evidence": "Cited physical PDF page 19, exact SHA-256 eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Construct the dependent higher-cell carrier, coherences, descent and proof fibration.",
+        "Prove byte-level and execution refinement independently. A list prefix is not a bisimplicial homotopy totalization or a Frobenius–Langlands realization."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:1113859d6d1fe43d",
+      "source_id": "sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+      "locator": "§1.1–1.2, syntax and grammar boundaries",
+      "pdf_pages": [
+        5
+      ],
+      "statement": "The publication atlas requires typed symbols and explicit reconstruction, detector, comparator and provenance data before downstream inference.",
+      "hypotheses": [
+        "A fixed exact claim semantics, sound local rules/checkers and all declared side conditions.",
+        "Any completion theorem additionally assumes effective descent, recognition equivalence and an authority-preserving backward decoder."
+      ],
+      "evidence": "Cited physical PDF page 5, exact SHA-256 1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Instantiate all typed maps and their semantic side conditions.",
+        "Provide actual detector and source-recognition theorems; a workflow or publication order does not discharge them."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:dbf2a57184a8fca2",
+      "source_id": "sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+      "locator": "§1.2, elementary arithmetic certificate; general grammar specialization is Unified theorem U5 on PDF page 12",
+      "pdf_pages": [
+        4
+      ],
+      "statement": "A simple root lifts by solving a derivative correction congruence at each prime-power level.",
+      "hypotheses": [
+        "A prime p, polynomial f over the stated p-adic ring, an old root modulo p and nonvanishing derivative modulo p.",
+        "The Lean specialization additionally fixes f=x²+1, p≠2 and k≥1."
+      ],
+      "evidence": "Cited physical PDF page 4, exact SHA-256 dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "matched-subclaim",
+      "missing_bridges": [
+        "Identify f(x)=x²+1 and retain odd primality, k≥1 and the old root divisibility.",
+        "General proper polynomial systems, complete-ring limits, naturality, quadratic precision, Weil–Petersson expectation and Suzuki screw compatibility remain separate bridges."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:fd60a933105e48a0",
+      "source_id": "sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+      "locator": "§6.2, Proposition 6.2 (P10-T06)",
+      "pdf_pages": [
+        10
+      ],
+      "statement": "Comparator normalization must use an independently nowhere-zero gauge and preserve the same endpoint data.",
+      "hypotheses": [
+        "Both endpoint expressions and normalizers have the stated common domain; the gauge is independently holomorphic and nowhere zero."
+      ],
+      "evidence": "Cited physical PDF page 10, exact SHA-256 fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Construct endpoint sections, their common domains and normalizers as actual holomorphic units.",
+        "Prove the quotient and dense-core endpoint identities and align the same cocycles and source.",
+        "Gauge transport does not prove endpoint reversal, equality of zero loci or RH."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:808a5117cf67204d",
+      "source_id": "sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+      "locator": "§3.2, Theorem 3.2 (Constellation packing count)",
+      "pdf_pages": [
+        21
+      ],
+      "statement": "A finite sieve constellation has local allowed residue counts whose product is assembled by CRT.",
+      "hypotheses": [
+        "A finite set of offsets, a finite primorial and local excluded-residue counts ν_p; CRT is applied to pairwise coprime prime moduli."
+      ],
+      "evidence": "Cited physical PDF page 21, exact SHA-256 808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Prove the all-prime, arbitrary-constellation CRT product in the same anchored interval conventions.",
+        "Pay truncation/boundary charges and prove the separate dispersion, Green geometry and determinant-reconstruction estimates; local residue capacity does not establish prime distribution or RH."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:2b7a45268e2c3828",
+      "source_id": "sha256:2b7a45268e2c3828bb2f77301c57ee907d99088771ae99b8716c54ab2135d312",
+      "locator": "§3, Numerical Techniques",
+      "pdf_pages": [
+        3
+      ],
+      "statement": "The manuscript proposes high-precision fixed-point and quadrature checks for zeros and prime-counting functions.",
+      "hypotheses": [
+        "A specified computation domain and numerical scheme; the cited page supplies no all-height interval certificate or complete omitted-tail theorem."
+      ],
+      "evidence": "Cited physical PDF page 3, exact SHA-256 2b7a45268e2c3828bb2f77301c57ee907d99088771ae99b8716c54ab2135d312; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Provide validated enclosures and local propositions on an explicit cover of the declared domain.",
+        "Prove the entire omitted tail separately; arbitrary precision or a finite sample does not establish an all-height theorem."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:6e8e7b6fea13a5da",
+      "source_id": "sha256:6e8e7b6fea13a5da1d48009dd2afa7b3a9af22395cab44334b7d39fdfd81510a",
+      "locator": "§3, Numerical Techniques",
+      "pdf_pages": [
+        3
+      ],
+      "statement": "The manuscript proposes high-precision fixed-point and quadrature checks for zeros and prime-counting functions.",
+      "hypotheses": [
+        "A specified computation domain and numerical scheme; the cited page supplies no all-height interval certificate or complete omitted-tail theorem."
+      ],
+      "evidence": "Cited physical PDF page 3, exact SHA-256 6e8e7b6fea13a5da1d48009dd2afa7b3a9af22395cab44334b7d39fdfd81510a; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Provide validated enclosures and local propositions on an explicit cover of the declared domain.",
+        "Prove the entire omitted tail separately; arbitrary precision or a finite sample does not establish an all-height theorem."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:fa54e13e56c5df07",
+      "source_id": "sha256:fa54e13e56c5df07c0b53391d96a221858d765c8b3f1b5c2d689c27b151e69c6",
+      "locator": "§2.1–2.3 and §4.1–4.3",
+      "pdf_pages": [
+        1
+      ],
+      "statement": "The visible AGI Lattice page repeats framework/definition/theorem placeholders.",
+      "hypotheses": [
+        "No substantive theorem hypotheses were established from the cited asset/page."
+      ],
+      "evidence": "Cited physical PDF page 1, exact SHA-256 fa54e13e56c5df07c0b53391d96a221858d765c8b3f1b5c2d689c27b151e69c6; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "ReviewQueue",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "No precise mathematical claim sufficient for a source-to-declaration correspondence was established from the inspected page. No AGI theorem is inferred from the title."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:d5dfdf34f37e2d87",
+      "source_id": "sha256:d5dfdf34f37e2d87c189ed1a18c5a7fe6ac0c078059c4eca1fda96d9a1754e50",
+      "locator": "§2.2–3.1, recursive refinement and fixed-point claim",
+      "pdf_pages": [
+        2
+      ],
+      "statement": "The paper iterates a refinement operator and then invokes fixed-point convergence in its RH program.",
+      "hypotheses": [
+        "A declared refinement operator and approximants; its required contraction, domain preservation and source identification are additional unproved inputs."
+      ],
+      "evidence": "Cited physical PDF page 2, exact SHA-256 d5dfdf34f37e2d87c189ed1a18c5a7fe6ac0c078059c4eca1fda96d9a1754e50; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Define the actual source/model residual and prove a complete norm comparison.",
+        "Supply 0≤r<1, a valid recurrence and vanishing net forcing uniformly in the required source variables.",
+        "Identify the limiting source with the intended zeta object and independently prove the positivity/zero-location bridge."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:8702e1618a329ee1",
+      "source_id": "sha256:8702e1618a329ee15d9f6b4d86deb4a5e7b7535fb3bfcf784f4a29f3d8cadca4",
+      "locator": "§2.2–3.1, recursive refinement and fixed-point claim",
+      "pdf_pages": [
+        2
+      ],
+      "statement": "The paper iterates a refinement operator and then invokes fixed-point convergence in its RH program.",
+      "hypotheses": [
+        "A declared refinement operator and approximants; its required contraction, domain preservation and source identification are additional unproved inputs."
+      ],
+      "evidence": "Cited physical PDF page 2, exact SHA-256 8702e1618a329ee15d9f6b4d86deb4a5e7b7535fb3bfcf784f4a29f3d8cadca4; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "conditional-correspondence",
+      "missing_bridges": [
+        "Define the actual source/model residual and prove a complete norm comparison.",
+        "Supply 0≤r<1, a valid recurrence and vanishing net forcing uniformly in the required source variables.",
+        "Identify the limiting source with the intended zeta object and independently prove the positivity/zero-location bridge."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:b028d25bef27bdc3",
+      "source_id": "sha256:b028d25bef27bdc3a1f2e8deb4eaaf3228cce7a2d6418e44e85de891df6ed5e2",
+      "locator": "§2.1, Proposition 1 (Residue Symmetry)",
+      "pdf_pages": [
+        2
+      ],
+      "statement": "The manuscript infers off-line residue vanishing from functional-equation symmetry.",
+      "hypotheses": [
+        "An L-function with the asserted functional-equation/contragredient normalization; the meaning of residue versus zero needs separate source verification."
+      ],
+      "evidence": "Cited physical PDF page 2, exact SHA-256 b028d25bef27bdc3a1f2e8deb4eaaf3228cce7a2d6418e44e85de891df6ed5e2; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "General automorphic L-functions, residues of L versus poles of its logarithmic derivative, and contragredient normalization must first be defined consistently.",
+        "Symmetry permits paired off-line locations. A separate exclusion or positivity theorem is needed; reflection alone does not imply support on the critical line."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:1a0dc300601a5d3a",
+      "source_id": "sha256:1a0dc300601a5d3a2fa42ef3cbd2a3f4601ebfadc5b3cb463292158a016be740",
+      "locator": "§2.1, Proposition 1 (Residue Symmetry)",
+      "pdf_pages": [
+        2
+      ],
+      "statement": "The manuscript infers off-line residue vanishing from functional-equation symmetry.",
+      "hypotheses": [
+        "An L-function with the asserted functional-equation/contragredient normalization; the meaning of residue versus zero needs separate source verification."
+      ],
+      "evidence": "Cited physical PDF page 2, exact SHA-256 1a0dc300601a5d3a2fa42ef3cbd2a3f4601ebfadc5b3cb463292158a016be740; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "NumberTheory",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "General automorphic L-functions, residues of L versus poles of its logarithmic derivative, and contragredient normalization must first be defined consistently.",
+        "Symmetry permits paired off-line locations. A separate exclusion or positivity theorem is needed; reflection alone does not imply support on the critical line."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:f4ccd06d0e9849ae",
+      "source_id": "sha256:f4ccd06d0e9849ae167e1442a9071f8c91b863e5b8ef952a55669300b3aee309",
+      "locator": "Matrix Definition and Structure",
+      "pdf_pages": [
+        3
+      ],
+      "statement": "The manuscript places the constant-one sequence in ℓ² while defining a diagonal operator model.",
+      "hypotheses": [
+        "The source asserts an ℓ² setting and uses the constant-one infinite sequence; that vector does not satisfy the square-summability requirement."
+      ],
+      "evidence": "Cited physical PDF page 3, exact SHA-256 f4ccd06d0e9849ae167e1442a9071f8c91b863e5b8ef952a55669300b3aee309; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "ReviewQueue",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "The constant-one infinite sequence is not square summable. Repair the source domain/vector before an ℓ² operator correspondence can be made. No infinite matrix or zeta-convergence proof is inferred."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:f9ac0ec9866f2099",
+      "source_id": "sha256:f9ac0ec9866f2099fc3e74a5bf21b185162e6ebdabc73532f4d46985f4be15b1",
+      "locator": "Title and Introduction",
+      "pdf_pages": [
+        1
+      ],
+      "statement": "The abc asset contains a title and Introduction heading.",
+      "hypotheses": [
+        "No substantive theorem hypotheses were established from the cited asset/page."
+      ],
+      "evidence": "Cited physical PDF page 1, exact SHA-256 f9ac0ec9866f2099fc3e74a5bf21b185162e6ebdabc73532f4d46985f4be15b1; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "ReviewQueue",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "No substantive theorem statement was established in this one-page asset. Do not substitute an abc conjecture theorem merely because the title says abc."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:90632c77bb67f087",
+      "source_id": "sha256:90632c77bb67f0871a65e1ddb9dfee94123618102b74f744da6ec5307d24d75c",
+      "locator": "Theorem 2 and its use of §2.3",
+      "pdf_pages": [
+        4
+      ],
+      "statement": "The manuscript claims that exponential recomposition separates P from NP.",
+      "hypotheses": [
+        "A chosen decomposition/recomposition procedure for NP-complete instances; no universal machine-model lower-bound premise has been supplied."
+      ],
+      "evidence": "Cited physical PDF page 4, exact SHA-256 90632c77bb67f0871a65e1ddb9dfee94123618102b74f744da6ec5307d24d75c; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "LogicAndComputation",
+      "mapping_status": "unresolved",
+      "missing_bridges": [
+        "The displayed O(2^n) is an algorithmic upper-bound shape, not a lower bound against every polynomial algorithm. Supply a universal model-correct lower-bound theorem; no matching P≠NP Lean declaration was established."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:b86baa113c56857c",
+      "source_id": "sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+      "locator": "Operator/determinant summary on the cited physical PDF page",
+      "pdf_pages": [
+        5
+      ],
+      "statement": "The manuscript proposes a compact self-adjoint source operator and a determinant correspondence to xi.",
+      "hypotheses": [
+        "The manuscript asserts a weighted Hilbert-space realization and compact self-adjoint/trace-class operator with its determinant comparison; these analytic assertions are not verified by this map."
+      ],
+      "evidence": "Cited physical PDF page 5, exact SHA-256 b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Construct the actual infinite operator and domain, prove the appropriate trace-ideal properties and settle the determinant convention.",
+        "Prove the multiplicity-preserving determinant–xi comparison and limits. Do not inherit claims or defects from another byte-distinct revision without checking it."
+      ]
+    },
+    {
+      "id": "idea:unpublished-v2:8c4694e05d7749bd",
+      "source_id": "sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+      "locator": "Operator/determinant summary on the cited physical PDF page",
+      "pdf_pages": [
+        5
+      ],
+      "statement": "The manuscript proposes a compact self-adjoint source operator and a determinant correspondence to xi.",
+      "hypotheses": [
+        "The manuscript asserts a weighted Hilbert-space realization and compact self-adjoint/trace-class operator with its determinant comparison; these analytic assertions are not verified by this map."
+      ],
+      "evidence": "Cited physical PDF page 5, exact SHA-256 8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8; source passage compared only. Full-paper correctness and historical influence are not asserted.",
+      "taxonomy": "Analysis",
+      "mapping_status": "analogy-only",
+      "missing_bridges": [
+        "Construct the actual infinite operator and domain, prove the appropriate trace-ideal properties and settle the determinant convention.",
+        "Prove the multiplicity-preserving determinant–xi comparison and limits. Do not inherit claims or defects from another byte-distinct revision without checking it."
+      ]
     }
   ],
   "understandings": [
@@ -113052,6 +113818,435 @@
       "recorded_at": "2026-10-23T18:09:30.227533+00:00",
       "asserted_understood_at": null,
       "evidence": "Assistant source comparison; owner interpretation and chronology unconfirmed.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:187a244631f9e4f9",
+      "idea_id": "idea:unpublished-v2:187a244631f9e4f9",
+      "owner_statement": null,
+      "interpretation": "The abstract Lean positivity criterion can express a proved positivity iff RH theorem, but no term supplying this manuscript’s Stieltjes criterion has been established.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:8199c88c1e77c74c",
+      "idea_id": "idea:unpublished-v2:8199c88c1e77c74c",
+      "owner_statement": null,
+      "interpretation": "No matching formalization established in this pass.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:7a8aff52b8b6a6ad",
+      "idea_id": "idea:unpublished-v2:7a8aff52b8b6a6ad",
+      "owner_statement": null,
+      "interpretation": "The abstract Lean positivity criterion can express a proved positivity iff RH theorem, but no term supplying this manuscript’s Stieltjes criterion has been established.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:b7798efb57d0b33a",
+      "idea_id": "idea:unpublished-v2:b7798efb57d0b33a",
+      "owner_statement": null,
+      "interpretation": "The Lean sufficient-representation structure stores an observation family, compression and exact recovery equations. This matches the task-conservative data contract, without constructing the representation.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:3843446bb981f345",
+      "idea_id": "idea:unpublished-v2:3843446bb981f345",
+      "owner_statement": null,
+      "interpretation": "The abstract Lean positivity criterion can express a proved positivity iff RH theorem, but no term supplying this manuscript’s Stieltjes criterion has been established.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:f4ec0ff737d21370",
+      "idea_id": "idea:unpublished-v2:f4ec0ff737d21370",
+      "owner_statement": null,
+      "interpretation": "The bounded encoder/decoder interface requires an actual left inverse. It is a possible target for a faithful composite, not a construction of the automorphic transfer.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:cda859bfce642e94",
+      "idea_id": "idea:unpublished-v2:cda859bfce642e94",
+      "owner_statement": null,
+      "interpretation": "The bounded encoder/decoder interface requires an actual left inverse. It is a possible target for a faithful composite, not a construction of the automorphic transfer.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:9884a6a5efb7ed3e",
+      "idea_id": "idea:unpublished-v2:9884a6a5efb7ed3e",
+      "owner_statement": null,
+      "interpretation": "The bounded encoder/decoder interface requires an actual left inverse. It is a possible target for a faithful composite, not a construction of the automorphic transfer.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:cbbfa2c78fda23e0",
+      "idea_id": "idea:unpublished-v2:cbbfa2c78fda23e0",
+      "owner_statement": null,
+      "interpretation": "The bounded encoder/decoder interface requires an actual left inverse. It is a possible target for a faithful composite, not a construction of the automorphic transfer.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:effab6e7692ecce7",
+      "idea_id": "idea:unpublished-v2:effab6e7692ecce7",
+      "owner_statement": null,
+      "interpretation": "No matching minimum-modulus compiler declaration was established in the inspected maintained modules. The source-error budget is a nearby estimate in the opposite direction, not this lower-bound theorem.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:8090de7e2acfd435",
+      "idea_id": "idea:unpublished-v2:8090de7e2acfd435",
+      "owner_statement": null,
+      "interpretation": "No matching minimum-modulus compiler declaration was established in the inspected maintained modules. The source-error budget is a nearby estimate in the opposite direction, not this lower-bound theorem.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:5d78840a4167367c",
+      "idea_id": "idea:unpublished-v2:5d78840a4167367c",
+      "owner_statement": null,
+      "interpretation": "Finite source-preserving aggregation has a nearby Lean identity, but it does not build the paper’s global inverse limit.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:a951ebf04f797d1d",
+      "idea_id": "idea:unpublished-v2:a951ebf04f797d1d",
+      "owner_statement": null,
+      "interpretation": "The existing rational-Hodge transport theorem only transports surjectivity through a supplied exact linear equivalence. It is not a quotient construction or a closed-range theorem.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:7ca107df41bb1142",
+      "idea_id": "idea:unpublished-v2:7ca107df41bb1142",
+      "owner_statement": null,
+      "interpretation": "The existing rational-Hodge transport theorem only transports surjectivity through a supplied exact linear equivalence. It is not a quotient construction or a closed-range theorem.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:7d13a6d60790c964",
+      "idea_id": "idea:unpublished-v2:7d13a6d60790c964",
+      "owner_statement": null,
+      "interpretation": "The Lean empty-family counterexample makes the upper-bound/lower-reconstruction distinction explicit. It is a scope guard, not the manuscript’s frame equivalence.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:3e667d873ecf5260",
+      "idea_id": "idea:unpublished-v2:3e667d873ecf5260",
+      "owner_statement": null,
+      "interpretation": "The Lean empty-family counterexample makes the upper-bound/lower-reconstruction distinction explicit. It is a scope guard, not the manuscript’s frame equivalence.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:7314fd7961144788",
+      "idea_id": "idea:unpublished-v2:7314fd7961144788",
+      "owner_statement": null,
+      "interpretation": "The Lean empty-family counterexample makes the upper-bound/lower-reconstruction distinction explicit. It is a scope guard, not the manuscript’s frame equivalence.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:82f838ae5214a4e5",
+      "idea_id": "idea:unpublished-v2:82f838ae5214a4e5",
+      "owner_statement": null,
+      "interpretation": "Lean has actual holomorphic units and gauge transport of sections on a fixed cover. This is a related geometric interface, not an identification of the paper’s Fredholm and Hodge endpoints.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:dc23aae7df721289",
+      "idea_id": "idea:unpublished-v2:dc23aae7df721289",
+      "owner_statement": null,
+      "interpretation": "No matching formalization established in this pass.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:e19a42c2d74c178f",
+      "idea_id": "idea:unpublished-v2:e19a42c2d74c178f",
+      "owner_statement": null,
+      "interpretation": "The Lean checker contract separates accept/reject/unknown and proves meaning only for the checker’s accepted exact conclusion.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:655492306cf582d5",
+      "idea_id": "idea:unpublished-v2:655492306cf582d5",
+      "owner_statement": null,
+      "interpretation": "Lean’s sound-checker theorem covers only the exact accepted-claim component of this larger conditional completion architecture.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:cf1c7cee16c00c5e",
+      "idea_id": "idea:unpublished-v2:cf1c7cee16c00c5e",
+      "owner_statement": null,
+      "interpretation": "With K=(1+T)^q, ASBNP04.amortized_iteration is the displayed finite induction step. No nonnegativity of the intermediate potential is required.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:eb72e67be7cbe0dd",
+      "idea_id": "idea:unpublished-v2:eb72e67be7cbe0dd",
+      "owner_statement": null,
+      "interpretation": "Lean’s checked append-only list prefix supplies a finite ordered-history fragment only.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:1113859d6d1fe43d",
+      "idea_id": "idea:unpublished-v2:1113859d6d1fe43d",
+      "owner_statement": null,
+      "interpretation": "Lean sound-rule composition is a related finite inference contract; the atlas is a roadmap, not a proof that its proposed arithmetic objects exist.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:dbf2a57184a8fca2",
+      "idea_id": "idea:unpublished-v2:dbf2a57184a8fca2",
+      "owner_statement": null,
+      "interpretation": "The Lean theorem gives a unique correction digit for x²+1 at an odd prime and k≥1. This is a concrete specialization of the finite lifting mechanism.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:fd60a933105e48a0",
+      "idea_id": "idea:unpublished-v2:fd60a933105e48a0",
+      "owner_statement": null,
+      "interpretation": "Lean has actual holomorphic units and gauge transport of sections on a fixed cover. This is a related geometric interface, not an identification of the paper’s Fredholm and Hodge endpoints.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:808a5117cf67204d",
+      "idea_id": "idea:unpublished-v2:808a5117cf67204d",
+      "owner_statement": null,
+      "interpretation": "Lean has the concrete shift-two compatibility criterion and residue counting. This is a narrow arithmetic component, not the general constellation product.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:2b7a45268e2c3828",
+      "idea_id": "idea:unpublished-v2:2b7a45268e2c3828",
+      "owner_statement": null,
+      "interpretation": "Lean’s finite-cover-and-tail theorem states the missing domain-exhaustion obligation. It does not certify the paper’s numerical runs.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:6e8e7b6fea13a5da",
+      "idea_id": "idea:unpublished-v2:6e8e7b6fea13a5da",
+      "owner_statement": null,
+      "interpretation": "Lean’s finite-cover-and-tail theorem states the missing domain-exhaustion obligation. It does not certify the paper’s numerical runs.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:fa54e13e56c5df07",
+      "idea_id": "idea:unpublished-v2:fa54e13e56c5df07",
+      "owner_statement": null,
+      "interpretation": "No matching formalization established in this pass.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:d5dfdf34f37e2d87",
+      "idea_id": "idea:unpublished-v2:d5dfdf34f37e2d87",
+      "owner_statement": null,
+      "interpretation": "Lean has a conditional convergence theorem for a nonnegative scalar budget with strict contraction and vanishing forcing, not for this arithmetic operator.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:8702e1618a329ee1",
+      "idea_id": "idea:unpublished-v2:8702e1618a329ee1",
+      "owner_statement": null,
+      "interpretation": "Lean has a conditional convergence theorem for a nonnegative scalar budget with strict contraction and vanishing forcing, not for this arithmetic operator.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:b028d25bef27bdc3",
+      "idea_id": "idea:unpublished-v2:b028d25bef27bdc3",
+      "owner_statement": null,
+      "interpretation": "Lean proves that nontrivial Riemann zeta zeros are transported by reflection. This records a symmetry subclaim in a narrower source, not off-line vanishing.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:1a0dc300601a5d3a",
+      "idea_id": "idea:unpublished-v2:1a0dc300601a5d3a",
+      "owner_statement": null,
+      "interpretation": "Lean proves that nontrivial Riemann zeta zeros are transported by reflection. This records a symmetry subclaim in a narrower source, not off-line vanishing.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:f4ccd06d0e9849ae",
+      "idea_id": "idea:unpublished-v2:f4ccd06d0e9849ae",
+      "owner_statement": null,
+      "interpretation": "No matching formalization established in this pass.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:f9ac0ec9866f2099",
+      "idea_id": "idea:unpublished-v2:f9ac0ec9866f2099",
+      "owner_statement": null,
+      "interpretation": "No matching formalization established in this pass.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:90632c77bb67f087",
+      "idea_id": "idea:unpublished-v2:90632c77bb67f087",
+      "owner_statement": null,
+      "interpretation": "No matching formalization established in this pass.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:b86baa113c56857c",
+      "idea_id": "idea:unpublished-v2:b86baa113c56857c",
+      "owner_statement": null,
+      "interpretation": "The finite rational determinant is only a finite algebraic analogue of the proposed infinite spectral determinant.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:unpublished-v2:8c4694e05d7749bd",
+      "idea_id": "idea:unpublished-v2:8c4694e05d7749bd",
+      "owner_statement": null,
+      "interpretation": "The finite rational determinant is only a finite algebraic analogue of the proposed infinite spectral determinant.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:25:24.278476+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison of the cited passage; no owner understanding or chronology asserted.",
       "status": "draft"
     }
   ],
@@ -113136,6 +114331,641 @@
         "The actual arithmetic approximants, all-orders error limits, and matching test space/normalization are unresolved."
       ],
       "evidence": "Pinned Lean source inspected against the cited PDF pages; no build or independent kernel audit performed.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:187a244631f9e4f9",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/WeilPositiveLimitCore.lean",
+      "blob": "c7f56149ec8d1dd8abed6c7fe9dc6d0f9f0b6006",
+      "code_sha256": "f0f25ddbf814f2cd1e770094380901df7e30fb62b3704199130bcc9f98887076",
+      "declaration": "GRWTSK.RiemannHypothesis.ExactPositivityCriterion",
+      "line_start": 165,
+      "line_end": 166,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Define the ordinary and shifted logarithmic Hankel forms from the independently fixed xi coefficients and reconcile both towers with the chosen test type.",
+        "Prove the representing measure, compact support and holomorphic slit-plane continuation, including the converse.",
+        "Distinguish vector-state moments from ordinary trace powers and integer spectral multiplicities. Positive raw theta moments do not supply the logarithmic positivity towers."
+      ],
+      "evidence": "A proof-carrying record requires positivity of the same target form iff canonical RH; it does not construct this proof. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:7a8aff52b8b6a6ad",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/WeilPositiveLimitCore.lean",
+      "blob": "c7f56149ec8d1dd8abed6c7fe9dc6d0f9f0b6006",
+      "code_sha256": "f0f25ddbf814f2cd1e770094380901df7e30fb62b3704199130bcc9f98887076",
+      "declaration": "GRWTSK.RiemannHypothesis.ExactPositivityCriterion",
+      "line_start": 165,
+      "line_end": 166,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Define the ordinary and shifted logarithmic Hankel forms from the independently fixed xi coefficients and reconcile both towers with the chosen test type.",
+        "Prove the representing measure, compact support and holomorphic slit-plane continuation, including the converse.",
+        "Distinguish vector-state moments from ordinary trace powers and integer spectral multiplicities. Positive raw theta moments do not supply the logarithmic positivity towers."
+      ],
+      "evidence": "A proof-carrying record requires positivity of the same target form iff canonical RH; it does not construct this proof. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:b7798efb57d0b33a",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/RecoverableObservationRepresentations.lean",
+      "blob": "cf105a90af920f423bb43451c430544b4f797600",
+      "code_sha256": "3a263b5cf5b56f9d60cd76fde52392a8dfef08f403ea081cb82f5fe8e2d80b22",
+      "declaration": "GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.ObservationFactorization.SufficientRepresentation",
+      "line_start": 20,
+      "line_end": 25,
+      "relation": "corresponds-to",
+      "connection_status": "matched-subclaim",
+      "hypotheses_and_gaps": [
+        "Instantiate the carrier with shadow–residual pairs and identify the same task family.",
+        "The predicate-descent iff, bit lower bound, geometric lifting and amortized query bounds are not proved by this structure."
+      ],
+      "evidence": "Abstract observation compression with supplied recovery equations; no representation is constructed. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:3843446bb981f345",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/WeilPositiveLimitCore.lean",
+      "blob": "c7f56149ec8d1dd8abed6c7fe9dc6d0f9f0b6006",
+      "code_sha256": "f0f25ddbf814f2cd1e770094380901df7e30fb62b3704199130bcc9f98887076",
+      "declaration": "GRWTSK.RiemannHypothesis.ExactPositivityCriterion",
+      "line_start": 165,
+      "line_end": 166,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Define the ordinary and shifted logarithmic Hankel forms from the independently fixed xi coefficients and reconcile both towers with the chosen test type.",
+        "Prove the representing measure, compact support and holomorphic slit-plane continuation, including the converse.",
+        "Distinguish vector-state moments from ordinary trace powers and integer spectral multiplicities. Positive raw theta moments do not supply the logarithmic positivity towers."
+      ],
+      "evidence": "A proof-carrying record requires positivity of the same target form iff canonical RH; it does not construct this proof. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:f4ec0ff737d21370",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean",
+      "blob": "41f7a04bb098acfb983e57254e161dad556caa39",
+      "code_sha256": "61af9e91d403bb4d4c3368856db43d7e2a8cba70b8132a117e9d834ded8620dc",
+      "declaration": "GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.Code.decode_encode_apply",
+      "line_start": 91,
+      "line_end": 93,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Construct the actual prime-path quotient, cochain transfer and automorphic realization with their domains and normalization.",
+        "Prove that the selected period composite has a bounded left inverse on the represented source. A left inverse on an added external witness factor does not prove faithfulness of the original arithmetic transfer.",
+        "The four PDF revisions have separately inspected locators; their different external-product and canonical-transfer claims are not identified."
+      ],
+      "evidence": "A bounded encoder/decoder with an assumed left inverse recovers its source. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:cda859bfce642e94",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean",
+      "blob": "41f7a04bb098acfb983e57254e161dad556caa39",
+      "code_sha256": "61af9e91d403bb4d4c3368856db43d7e2a8cba70b8132a117e9d834ded8620dc",
+      "declaration": "GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.Code.decode_encode_apply",
+      "line_start": 91,
+      "line_end": 93,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Construct the actual prime-path quotient, cochain transfer and automorphic realization with their domains and normalization.",
+        "Prove that the selected period composite has a bounded left inverse on the represented source. A left inverse on an added external witness factor does not prove faithfulness of the original arithmetic transfer.",
+        "The four PDF revisions have separately inspected locators; their different external-product and canonical-transfer claims are not identified."
+      ],
+      "evidence": "A bounded encoder/decoder with an assumed left inverse recovers its source. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:9884a6a5efb7ed3e",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean",
+      "blob": "41f7a04bb098acfb983e57254e161dad556caa39",
+      "code_sha256": "61af9e91d403bb4d4c3368856db43d7e2a8cba70b8132a117e9d834ded8620dc",
+      "declaration": "GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.Code.decode_encode_apply",
+      "line_start": 91,
+      "line_end": 93,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Construct the actual prime-path quotient, cochain transfer and automorphic realization with their domains and normalization.",
+        "Prove that the selected period composite has a bounded left inverse on the represented source. A left inverse on an added external witness factor does not prove faithfulness of the original arithmetic transfer.",
+        "The four PDF revisions have separately inspected locators; their different external-product and canonical-transfer claims are not identified."
+      ],
+      "evidence": "A bounded encoder/decoder with an assumed left inverse recovers its source. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:cbbfa2c78fda23e0",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean",
+      "blob": "41f7a04bb098acfb983e57254e161dad556caa39",
+      "code_sha256": "61af9e91d403bb4d4c3368856db43d7e2a8cba70b8132a117e9d834ded8620dc",
+      "declaration": "GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.Code.decode_encode_apply",
+      "line_start": 91,
+      "line_end": 93,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Identify the bounded external-product map with the Lean encoder/decoder and prove the same normed-space recovery equation.",
+        "A left inverse on an added automorphic witness factor does not construct or prove injectivity of the original prime-path-to-automorphic transfer.",
+        "Do not transfer the canonical-transfer conclusions of revisions 1.1–1.3 to this distinct version 1.0."
+      ],
+      "evidence": "A bounded encoder/decoder with an assumed left inverse recovers its source. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:5d78840a4167367c",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/LinearAlgebra/LinearMap/ReedSolomonRefinement.lean",
+      "blob": "41f7a04bb098acfb983e57254e161dad556caa39",
+      "code_sha256": "61af9e91d403bb4d4c3368856db43d7e2a8cba70b8132a117e9d834ded8620dc",
+      "declaration": "GRWTSK.LinearAlgebra.LinearMap.ReedSolomonRefinement.encode_aggregate",
+      "line_start": 122,
+      "line_end": 129,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Construct a common Hilbert target, increasing orthogonal projections, exact compatibility and uniform boundedness.",
+        "Prove convergence using the finite-dimensional source hypothesis; the finite sum identity alone supplies neither the limit decoder nor its positive floor."
+      ],
+      "evidence": "Exact finite coverage gives exact encoded aggregation; no inverse limit is constructed. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:a951ebf04f797d1d",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Geometry/Hodge/RationalHodgeTransport.lean",
+      "blob": "ce90366d81cf18384db557b2d66b3734b33d6f28",
+      "code_sha256": "02099019703f64f901297197bab29e49b4380f57968f7cc4a7ade0218ae3aa10",
+      "declaration": "GRWTSK.Geometry.Hodge.RationalHodgeTransport.CycleClassEquiv.surjective_iff",
+      "line_start": 73,
+      "line_end": 75,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Construct the trace-relative graph domains and aggregate closed null space with the exact norms.",
+        "Prove null annihilation/transport and closed-range conditions. Supply the geometric cycle-class comparison rather than inferring it from dimensions or strings."
+      ],
+      "evidence": "Surjectivity transports through supplied exact rational cycle-class equivalences and a commuting square. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:7ca107df41bb1142",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Geometry/Hodge/RationalHodgeTransport.lean",
+      "blob": "ce90366d81cf18384db557b2d66b3734b33d6f28",
+      "code_sha256": "02099019703f64f901297197bab29e49b4380f57968f7cc4a7ade0218ae3aa10",
+      "declaration": "GRWTSK.Geometry.Hodge.RationalHodgeTransport.CycleClassEquiv.surjective_iff",
+      "line_start": 73,
+      "line_end": 75,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Construct the trace-relative graph domains and aggregate closed null space with the exact norms.",
+        "Prove null annihilation/transport and closed-range conditions. Supply the geometric cycle-class comparison rather than inferring it from dimensions or strings."
+      ],
+      "evidence": "Surjectivity transports through supplied exact rational cycle-class equivalences and a commuting square. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:7d13a6d60790c964",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean",
+      "blob": "db2cb85bcb679383a4a4b7664fb6fbe644ed2422",
+      "code_sha256": "f8ba7ca70373086bfa3546b7a9abe0f8c1cca819ed2a1caf1cf14d985e5afe1c",
+      "declaration": "EulerP04RH.ResearchObstructions.upper_bessel_does_not_imply_reconstruction",
+      "line_start": 253,
+      "line_end": 261,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Identify the actual P07 image and independently defined prime observation.",
+        "Prove restricted injectivity and a positive lower frame bound, then the finite-prefix/dimension and decoder statements in the correct spaces.",
+        "The finite logarithmic orbit is not Haar orthogonality and no all-window prime completeness theorem follows from this guard."
+      ],
+      "evidence": "An empty-family counterexample separates upper Bessel control from lower reconstruction. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:3e667d873ecf5260",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean",
+      "blob": "db2cb85bcb679383a4a4b7664fb6fbe644ed2422",
+      "code_sha256": "f8ba7ca70373086bfa3546b7a9abe0f8c1cca819ed2a1caf1cf14d985e5afe1c",
+      "declaration": "EulerP04RH.ResearchObstructions.upper_bessel_does_not_imply_reconstruction",
+      "line_start": 253,
+      "line_end": 261,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Identify the actual P07 image and independently defined prime observation.",
+        "Prove restricted injectivity and a positive lower frame bound, then the finite-prefix/dimension and decoder statements in the correct spaces.",
+        "The finite logarithmic orbit is not Haar orthogonality and no all-window prime completeness theorem follows from this guard."
+      ],
+      "evidence": "An empty-family counterexample separates upper Bessel control from lower reconstruction. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:7314fd7961144788",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/InnerProductSpace/LogarithmicCharacterGramBounds.lean",
+      "blob": "db2cb85bcb679383a4a4b7664fb6fbe644ed2422",
+      "code_sha256": "f8ba7ca70373086bfa3546b7a9abe0f8c1cca819ed2a1caf1cf14d985e5afe1c",
+      "declaration": "EulerP04RH.ResearchObstructions.upper_bessel_does_not_imply_reconstruction",
+      "line_start": 253,
+      "line_end": 261,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Identify the actual P07 image and independently defined prime observation.",
+        "Prove restricted injectivity and a positive lower frame bound, then the finite-prefix/dimension and decoder statements in the correct spaces.",
+        "The finite logarithmic orbit is not Haar orthogonality and no all-window prime completeness theorem follows from this guard."
+      ],
+      "evidence": "An empty-family counterexample separates upper Bessel control from lower reconstruction. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:82f838ae5214a4e5",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/Complex/HolomorphicLineGauge.lean",
+      "blob": "02bce81ab498f01b07b51b41e21eed45bcc2e742",
+      "code_sha256": "4a27c3d6bc3b09341cfb8f412edeba2d22042e5a50075dd79594d02c70a33b56",
+      "declaration": "GRWTSK.Analysis.Complex.HolomorphicLineGauge.Gauge.familyEquiv",
+      "line_start": 137,
+      "line_end": 153,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Construct endpoint sections, their common domains and normalizers as actual holomorphic units.",
+        "Prove the quotient and dense-core endpoint identities and align the same cocycles and source.",
+        "Gauge transport does not prove endpoint reversal, equality of zero loci or RH."
+      ],
+      "evidence": "Supplied holomorphic unit gauges transport twisted families on the same indexed cover. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:e19a42c2d74c178f",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Logic/Inference/RuleSoundness.lean",
+      "blob": "69bb43bef1f38716e3f5d17aa3b1cee41ac91e57",
+      "code_sha256": "6b24a0160d31a0e2bbf660cb0f544b0fff4600769fd322305c6e1fe8c8a9d5d7",
+      "declaration": "GRWTSK.Logic.Inference.CertificateChecker.meaning_of_accepts",
+      "line_start": 97,
+      "line_end": 105,
+      "relation": "corresponds-to",
+      "connection_status": "matched-subclaim",
+      "hypotheses_and_gaps": [
+        "Instantiate the judgment semantics, checker and byte parser.",
+        "No neural grammar-learning theorem, Crochemore–Perrin implementation or runtime refinement is supplied by the abstract contract."
+      ],
+      "evidence": "A sound checker proves the meaning of its exact accepted judgment; acceptance is a premise. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:655492306cf582d5",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Logic/Inference/RuleSoundness.lean",
+      "blob": "69bb43bef1f38716e3f5d17aa3b1cee41ac91e57",
+      "code_sha256": "6b24a0160d31a0e2bbf660cb0f544b0fff4600769fd322305c6e1fe8c8a9d5d7",
+      "declaration": "GRWTSK.Logic.Inference.CertificateChecker.meaning_of_accepts",
+      "line_start": 97,
+      "line_end": 105,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Formalize effective descent, recognition equivalence and maximality in the declared reachable-state order.",
+        "Provide the authority-preserving backward decoder; acceptance alone is not completeness, maximality or an off-critical exclusion theorem."
+      ],
+      "evidence": "A sound checker proves the meaning of its exact accepted judgment; acceptance is a premise. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:cf1c7cee16c00c5e",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/Asymptotics/MassWeightedRecurrence.lean",
+      "blob": "fa1e14a598dd9616dc10c43e51ffa3a5d803c2c5",
+      "code_sha256": "7d4c98ea7a03d5a792c8fa1ad83e9f33c16233a5dcad548c18d11ae8d5dee3a6",
+      "declaration": "ASBNP04.amortized_iteration",
+      "line_start": 28,
+      "line_end": 72,
+      "relation": "corresponds-to",
+      "connection_status": "matched-subclaim",
+      "hypotheses_and_gaps": [
+        "The code assumes the recurrence; it does not construct the actual source-derived reserve or an admissible full-prime chain.",
+        "The harmonic-mass estimate, polynomial initial bound, terminal reserve nonnegativity and transfer to P04 must be supplied to close the whole paper theorem.",
+        "The paper’s universal-interface obstruction is not removed by this conditional finite lemma."
+      ],
+      "evidence": "Finite amortized induction with C,K and all masses nonnegative; the potential itself may be signed. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:eb72e67be7cbe0dd",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean",
+      "blob": "0dedfadfff35d08d0361835a68680fd3cd70c91b",
+      "code_sha256": "f015968ae5c73f3285c18f98d08dd480a9ab7cc4ed9a01a8fdf6a566f308d67e",
+      "declaration": "GRWTSK.Logic.FiniteSequences.AppendOnlyHistory.checkPrefix_iff_suffix",
+      "line_start": 44,
+      "line_end": 46,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Construct the dependent higher-cell carrier, coherences, descent and proof fibration.",
+        "Prove byte-level and execution refinement independently. A list prefix is not a bisimplicial homotopy totalization or a Frobenius–Langlands realization."
+      ],
+      "evidence": "Boolean ordered-prefix acceptance is equivalent to an exact appended suffix of a list. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:1113859d6d1fe43d",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Logic/Inference/RuleSoundness.lean",
+      "blob": "69bb43bef1f38716e3f5d17aa3b1cee41ac91e57",
+      "code_sha256": "6b24a0160d31a0e2bbf660cb0f544b0fff4600769fd322305c6e1fe8c8a9d5d7",
+      "declaration": "GRWTSK.Logic.Inference.grounded_rules_meaning",
+      "line_start": 62,
+      "line_end": 75,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Instantiate all typed maps and their semantic side conditions.",
+        "Provide actual detector and source-recognition theorems; a workflow or publication order does not discharge them."
+      ],
+      "evidence": "Grounded finite support and sound rule/side-condition premises yield the exact judgment meaning. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:dbf2a57184a8fca2",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Primes/QuadraticPlusOnePrimePowerLift.lean",
+      "blob": "96f8f536824b122e6b999c45656b81a3463a2d6f",
+      "code_sha256": "1a669749c78588ff268a092aa6eaa7dd58740ad5205aa152d5924f3805abd500",
+      "declaration": "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCoefficient_existsUnique",
+      "line_start": 172,
+      "line_end": 179,
+      "relation": "corresponds-to",
+      "connection_status": "matched-subclaim",
+      "hypotheses_and_gaps": [
+        "Identify f(x)=x²+1 and retain odd primality, k≥1 and the old root divisibility.",
+        "General proper polynomial systems, complete-ring limits, naturality, quadratic precision, Weil–Petersson expectation and Suzuki screw compatibility remain separate bridges."
+      ],
+      "evidence": "For an odd prime, k≥1 and an old root of x²+1 modulo p^k, there is a unique canonical correction digit. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:fd60a933105e48a0",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/Complex/HolomorphicLineGauge.lean",
+      "blob": "02bce81ab498f01b07b51b41e21eed45bcc2e742",
+      "code_sha256": "4a27c3d6bc3b09341cfb8f412edeba2d22042e5a50075dd79594d02c70a33b56",
+      "declaration": "GRWTSK.Analysis.Complex.HolomorphicLineGauge.Gauge.familyEquiv",
+      "line_start": 137,
+      "line_end": 153,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Construct endpoint sections, their common domains and normalizers as actual holomorphic units.",
+        "Prove the quotient and dense-core endpoint identities and align the same cocycles and source.",
+        "Gauge transport does not prove endpoint reversal, equality of zero loci or RH."
+      ],
+      "evidence": "Supplied holomorphic unit gauges transport twisted families on the same indexed cover. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:808a5117cf67204d",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Primes/TwinShiftTwoCRT.lean",
+      "blob": "55c9643b4704fc3101244eb2c7c22a165083edfa",
+      "code_sha256": "212dc9fdaca66144ab9fa10a946d8a4f59857288ae2799255f787bc1a29cf102",
+      "declaration": "GRWTSK.NumberTheory.Primes.TwinShiftTwoCRT.naturalSolution_iff_compatible",
+      "line_start": 160,
+      "line_end": 168,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Prove the all-prime, arbitrary-constellation CRT product in the same anchored interval conventions.",
+        "Pay truncation/boundary charges and prove the separate dispersion, Green geometry and determinant-reconstruction estimates; local residue capacity does not establish prime distribution or RH."
+      ],
+      "evidence": "For positive d,e, a shift-two divisibility solution exists iff gcd(d,e) divides 2. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:2b7a45268e2c3828",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Logic/FiniteCoverage.lean",
+      "blob": "744c846e977e06f8dd38962e70e96b47c0149d77",
+      "code_sha256": "e1694a750b75d4b4db6bdba517f494a1aa7955736569e04643a2ddc7b45cf4ef",
+      "declaration": "GRWTSK.Logic.FiniteCoverage.forall_on_of_finite_cover_and_tail",
+      "line_start": 43,
+      "line_end": 52,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Provide validated enclosures and local propositions on an explicit cover of the declared domain.",
+        "Prove the entire omitted tail separately; arbitrary precision or a finite sample does not establish an all-height theorem."
+      ],
+      "evidence": "Finite coverage plus independently proved local propositions and a full tail theorem cover the declared domain. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:6e8e7b6fea13a5da",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Logic/FiniteCoverage.lean",
+      "blob": "744c846e977e06f8dd38962e70e96b47c0149d77",
+      "code_sha256": "e1694a750b75d4b4db6bdba517f494a1aa7955736569e04643a2ddc7b45cf4ef",
+      "declaration": "GRWTSK.Logic.FiniteCoverage.forall_on_of_finite_cover_and_tail",
+      "line_start": 43,
+      "line_end": 52,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Provide validated enclosures and local propositions on an explicit cover of the declared domain.",
+        "Prove the entire omitted tail separately; arbitrary precision or a finite sample does not establish an all-height theorem."
+      ],
+      "evidence": "Finite coverage plus independently proved local propositions and a full tail theorem cover the declared domain. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:d5dfdf34f37e2d87",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/ErrorBounds/ContractingResidualBudget.lean",
+      "blob": "753f3162d343c67447cd2f8681291821b50b785d",
+      "code_sha256": "326d5fd7b61399613ede0a4128c46e862bf67b4fb712fd8c0ef9b53a960ab6dd",
+      "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.variable_budget_vanishes",
+      "line_start": 80,
+      "line_end": 110,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Define the actual source/model residual and prove a complete norm comparison.",
+        "Supply 0≤r<1, a valid recurrence and vanishing net forcing uniformly in the required source variables.",
+        "Identify the limiting source with the intended zeta object and independently prove the positivity/zero-location bridge."
+      ],
+      "evidence": "A nonnegative scalar budget vanishes under a supplied strict contraction and vanishing forcing. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:8702e1618a329ee1",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Analysis/ErrorBounds/ContractingResidualBudget.lean",
+      "blob": "753f3162d343c67447cd2f8681291821b50b785d",
+      "code_sha256": "326d5fd7b61399613ede0a4128c46e862bf67b4fb712fd8c0ef9b53a960ab6dd",
+      "declaration": "GRWTSK.Analysis.ErrorBounds.ContractingResidualBudget.variable_budget_vanishes",
+      "line_start": 80,
+      "line_end": 110,
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "hypotheses_and_gaps": [
+        "Define the actual source/model residual and prove a complete norm comparison.",
+        "Supply 0≤r<1, a valid recurrence and vanishing net forcing uniformly in the required source variables.",
+        "Identify the limiting source with the intended zeta object and independently prove the positivity/zero-location bridge."
+      ],
+      "evidence": "A nonnegative scalar budget vanishes under a supplied strict contraction and vanishing forcing. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:b028d25bef27bdc3",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "blob": "5f465139ee895a99b79af84ee0866aa5f637bdfa",
+      "code_sha256": "44e1e3452c5e94077ac11fe9397dc420503d5c7c005bc1c1105685b015471076",
+      "declaration": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect",
+      "line_start": 74,
+      "line_end": 95,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "General automorphic L-functions, residues of L versus poles of its logarithmic derivative, and contragredient normalization must first be defined consistently.",
+        "Symmetry permits paired off-line locations. A separate exclusion or positivity theorem is needed; reflection alone does not imply support on the critical line."
+      ],
+      "evidence": "The exact nontrivial Riemann zeta zero predicate transports under s↦1−s; no off-line exclusion. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:1a0dc300601a5d3a",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "blob": "5f465139ee895a99b79af84ee0866aa5f637bdfa",
+      "code_sha256": "44e1e3452c5e94077ac11fe9397dc420503d5c7c005bc1c1105685b015471076",
+      "declaration": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect",
+      "line_start": 74,
+      "line_end": 95,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "General automorphic L-functions, residues of L versus poles of its logarithmic derivative, and contragredient normalization must first be defined consistently.",
+        "Symmetry permits paired off-line locations. A separate exclusion or positivity theorem is needed; reflection alone does not imply support on the critical line."
+      ],
+      "evidence": "The exact nontrivial Riemann zeta zero predicate transports under s↦1−s; no off-line exclusion. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:b86baa113c56857c",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Spectral/Sheaf/RationalMomentFredholmBridge.lean",
+      "blob": "ab0a7854f9941fa0378d30ef19dcbcd13a22844d",
+      "code_sha256": "b1ec2584b9838cca2304ec0beaea9c8ff689d8b11eebc725fb402bdf9d61538c",
+      "declaration": "GRWTSK.Spectral.Sheaf.RationalMomentFredholmBridge.FiniteFredholmBridge.determinant",
+      "line_start": 127,
+      "line_end": 133,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Construct the actual infinite operator and domain, prove the appropriate trace-ideal properties and settle the determinant convention.",
+        "Prove the multiplicity-preserving determinant–xi comparison and limits. Do not inherit claims or defects from another byte-distinct revision without checking it."
+      ],
+      "evidence": "Finite-dimensional rational det(I−qT); no analytic determinant or xi comparison. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:unpublished-v2:8c4694e05d7749bd",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "fa27fde9b4df2aedd203679e832c0956c3e12889",
+      "path": "GRWTSK/Spectral/Sheaf/RationalMomentFredholmBridge.lean",
+      "blob": "ab0a7854f9941fa0378d30ef19dcbcd13a22844d",
+      "code_sha256": "b1ec2584b9838cca2304ec0beaea9c8ff689d8b11eebc725fb402bdf9d61538c",
+      "declaration": "GRWTSK.Spectral.Sheaf.RationalMomentFredholmBridge.FiniteFredholmBridge.determinant",
+      "line_start": 127,
+      "line_end": 133,
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "hypotheses_and_gaps": [
+        "Construct the actual infinite operator and domain, prove the appropriate trace-ideal properties and settle the determinant convention.",
+        "Prove the multiplicity-preserving determinant–xi comparison and limits. Do not inherit claims or defects from another byte-distinct revision without checking it."
+      ],
+      "evidence": "Finite-dimensional rational det(I−qT); no analytic determinant or xi comparison. Pinned source inspected; no compilation or independent kernel audit performed in this mapping pass.",
       "review_status": "source-reviewed",
       "attribution_issue": "https://github.com/grwtsk/math/issues/254"
     }

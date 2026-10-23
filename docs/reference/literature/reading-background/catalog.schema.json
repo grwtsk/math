@@ -1127,6 +1127,32 @@
               "type": "integer",
               "minimum": 1
             }
+          },
+          "taxonomy": {
+            "enum": [
+              "Algebra",
+              "Analysis",
+              "GeometryTopology",
+              "LogicAndComputation",
+              "MathematicalPhysics",
+              "NumberTheory",
+              "ProbabilityCombinatorics",
+              "ReviewQueue"
+            ]
+          },
+          "mapping_status": {
+            "enum": [
+              "matched-subclaim",
+              "conditional-correspondence",
+              "analogy-only",
+              "unresolved"
+            ]
+          },
+          "missing_bridges": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "required": [

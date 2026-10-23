@@ -243,7 +243,7 @@ theorem canonicalSingleArithmeticDifferenceSet_eq_zero
     have hw0 : w = canonicalFourFamilyCenteredData X := by
       simpa [CanonicalFourFamilySingleArithmeticConfiguration] using hw
     rw [hu0, hw0, sub_self] at hv
-    simpa [hv]
+    simp [hv]
   · intro hv
     have hv0 : v = 0 := by simpa using hv
     subst v

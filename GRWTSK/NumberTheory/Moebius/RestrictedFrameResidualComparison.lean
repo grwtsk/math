@@ -93,6 +93,7 @@ theorem finitePacketEnergy_le_reconstruction_add_residual
           2 * finitePacketEnergy (ReconstructionResidual T R f) :=
       finitePacketEnergy_add_le_two _ _
 
+set_option linter.unusedVariables false in
 /-- A bounded approximate reconstruction with relative *squared-energy*
 residual q < 1/2 supplies the required positive restricted lower frame.
 No hypothesis of global injectivity is used, but both estimates must hold on
