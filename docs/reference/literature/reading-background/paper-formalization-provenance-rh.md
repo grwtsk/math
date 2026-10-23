@@ -143,6 +143,40 @@ blob `2c25cac04fe5575ac0242349a2dcc5592d19f0bb`.
 build/kernel/axiom receipt for either module. No classical Weil-form
 positivity-to-RH bridge is accepted in this chain.
 
+
+**Additional exact paper consequence (conditional finite inertia, NOT a
+local theorem):** Bombieri's 2000 paper also constructs Fourier-side
+finite truncations of its **particular** Weil quadratic form. In the
+hypothetical case that **RH is false but only finitely many nontrivial
+zeros are off the critical line**, the paper states that, for
+sufficiently large truncation, the number of **negative eigenvalues**
+is exactly **one half the number of zeros failing RH** (under the
+paper's zero-count and truncation conventions). See the [publisher
+abstract and article](https://www.bdim.eu/item?id=RLIN_2000_9_11_3_183_0).
+This is a conditional, eventual-in-truncation **inertia theorem**;
+it does **not** assume all truncations are positive, does not say that
+finitely many off-line zeros actually exist, and does not imply RH.
+No theorem number or multiplicity translation has been independently
+certified in this provenance review; those details must be checked
+against the identified paper before theorem-level porting.
+
+**Precise local comparison:** `GRWTSK.RiemannHypothesis.WeilHermitianForm`
+and `negativeWitness_of_not_rh`
+([WeilCriterion.lean at
+`033be4864f9363b391a0991eae3aa3e71e6dfa69`](https://github.com/grwtsk/math/blob/033be4864f9363b391a0991eae3aa3e71e6dfa69/GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean#L62-L192),
+blob `29d8c4f1c741ab25f6abd136a3c3c2eb900da69a`)
+supply an **abstract form record** and a **conditional criterion
+contrapositive**; neither constructs Bombieri's finite truncation
+operator or counts its negative eigenvalues.
+`CanonicalSquareTentWeilTransportObstruction.distinct_basis_cross_zero`
+is another conditional form identity, not Sylvester inertia.
+**Relationship: ANALOGY_ONLY / UNRESOLVED_PREMISE.**
+Required suppliers: exact Bombieri test-space/truncation realization,
+zero multiplicity and reflection-orbit accounting, eigenvalue-sign
+convention, finite-dimensional inertia, and the signed comparison with
+the repository's arithmetic Gram. **Actual local verification:
+NOT_FORMALIZED / NO_RECEIPT** for this conditional inertia statement.
+
 ## Closest recent proved external method — analogy, not imported
 
 **Citation ALPOEGE-FURMAN-2026:** Levent Alpöge and Ralph Furman,
@@ -172,6 +206,63 @@ mapping, or external `Zeta23` declaration is imported or replayed
 against the pinned local Lean/Mathlib version. External Lean
 formalization is **author-reported**; it is not a `grwtsk/math` kernel
 acceptance receipt.
+
+
+**Exact external Lean comparator identity (additional source audit;
+no local import):** At the inspected Anthropic
+[`anthropics/formal-math@e1a4e6508154ea59f030480661590a9fe3018011`](https://github.com/anthropics/formal-math/tree/e1a4e6508154ea59f030480661590a9fe3018011/zeta23),
+`zeta23/Solution.lean` has Git blob
+`bd5dd641b10983884cafb0a4d7d964a10de32d11` and binds the
+following *headline* declarations to their source §Zeta23§ suppliers:
+
+- [`two_thirds_simple_on_critical_line` (source line 60)](https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Solution.lean#L60):
+  for **every** `ε>0` there exists a cutoff `T₀` such that for
+  all `T≥T₀`, `(2/3−ε) Ncount(T,2T) ≤ N0simple(T,2T)`.
+  This is an **asymptotic proportion**, not a universal statement
+  about each nontrivial zero.
+- [`five_sixths_distinct` (line 68)](https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Solution.lean#L68):
+  the analogous bound `(5/6−ε) Ncount(T,2T) ≤ Ndist(T,2T)`.
+- [`montgomery_taylor_simple_on_critical_line_mult` (line 82)](https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Solution.lean#L82):
+  replaces `2/3` by `2−1/cMT`, with `cMT` exactly defined by
+  the companion formalization's Montgomery–Taylor window.
+  All three statements preserve their own `∀ ε>0, ∃ T₀, ∀ T≥T₀`
+  quantifier order; no implicit RH hypothesis is added.
+
+External **source/toolchain pin**: Lean
+`leanprover/lean4:v4.33.0-rc2` (toolchain blob
+`c084c7fbe586b0276863b66f16d2955a43bc3fc6`),
+Mathlib `51e6992efd06126df61a496bebf8f49482a4e129`,
+`comparator.json` blob
+`0fc12ebb8b21a74de5d30fd598e1f1ad1094ca2e`
+(17 named headline comparison targets), and
+`scripts/PrintAxioms.lean` blob
+`3c379361166b431bc47332df88479706857e5d81`.
+The project's [`AUDIT.md`](https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/AUDIT.md)
+(blob `a5baf29bd4cc8d9833feec7a4d4438338e400594`)
+**reports** source-bound builds, comparator and headline axioms
+`propext`, `Classical.choice`, `Quot.sound`. It is an
+**external published audit record**, not a verification executed
+in this review.
+
+**CI evidence boundary at that exact external head:** the
+[successful GitHub Actions run 37411656515](https://github.com/anthropics/formal-math/actions/runs/37411656515)
+was inspected, including its jobs; the verification job was
+**`verify (3sum-apsp)`**, not `zeta23`. It must **not** be cited
+as a fresh same-head `zeta23` replay. Historical successful
+`Zeta23 CI` runs exist, e.g.
+[33978477836](https://github.com/anthropics/formal-math/actions/runs/33978477836)
+on an older source commit. Their evidence may be cited only for
+the exact source and job they checked. No new Lean build/kernel or
+transitive axiom census for these *external or local* modules was
+run in this provenance update.
+
+**Local relationship: ANALOGY_ONLY** for the
+`grwtsk/math` form; these are **actual named external Lean
+statements**, but there is **no locally proved import,
+normalization equivalence, zero-divisor identification or
+rank–trace transfer** across the different Lean/Mathlib pins.
+`ELABORATED`, `KERNEL_CHECKED`, and `TRUST_AUDITED` remain
+**NOT_ESTABLISHED** for any local paper-to-Lean bridge.
 
 ## Closure and finite-to-global analogies — not formal imports
 
