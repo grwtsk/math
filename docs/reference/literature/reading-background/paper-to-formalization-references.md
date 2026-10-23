@@ -3247,10 +3247,15 @@ issue, or import presence is not a substitute
 for an actual checked-commit receipt. The specific
 module/dependency/source hashes, full axiom closure,
 executor commands, real exit statuses and receipt
-locations will be pinned in an independent
-validation issue. Operational runners, mutable
-receipts and schedules do **not** belong in this
-canonical mathematics repository.
+locations are requested in [math #1119](https://github.com/grwtsk/math/issues/1119),
+pinned to exact main commit
+`2f02b4fe86d2255c5d76b03daf4fa9b03a60fb63`
+(tree `5dd9ba1505cbe46e4759fed10468724a661268b6`),
+with a separate passive [noeaaeue #390](https://github.com/grwtsk/noeaaeue/issues/390)
+authorization-gated execution/receipt handoff.
+Both are **QUEUED, NOT_RUN** and no remote runner was dispatched.
+Operational runners, mutable receipts and schedules
+do **not** belong in this canonical mathematics repository.
 
 **Precisely missing bridges.** (1) An actual
 nonperiodic Farey or continued-fraction base
