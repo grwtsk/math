@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-additive-multiplicative-bridge-obstruction-956-v0.1"
+owner_repository = "grwtsk/math"
+issue = 956
+parent_issue = 948
+parent_pr = 949
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ADDITIVE_MULTIPLICATIVE_BRIDGE_OBSTRUCTION"
+root_module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+
+[source_binding]
+stacked_parent_revision = "64d1233fe2620f62e06f282d83982d105592d21c"
+candidate_branch = "research/rh-additive-multiplicative-bridge-obstruction-950-20261022"
+theorem_source_commit = "4b17b87b4064e58689f25c6dad62337a53cf24af"
+mathematical_note_commit = "6b544c5e5e1030b36b2c129c52207e675663bfa2"
+
+[evidence_states]
+source_draft = true
+additive_centered_carrier_defined = true
+multiplicative_factorization_carrier_defined = true
+carrier_geometry_distinction_scripted = true
+direct_reindexing_claimed = false
+bilinear_kernel_interface_defined = true
+coefficient_kernel_constructed = false
+norm_controlled_kernel_constructed = false
+energy_comparison_claimed = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
