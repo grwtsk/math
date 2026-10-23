@@ -1,0 +1,200 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cone-outer-pairs-981-v0.1"
+owner_repository = "grwtsk/math"
+issue = 981
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_pr = 977
+review_parent_revision = "61f1cdafca5e4c48d60f995309ba77da3dcd7ebd"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonConeOuterPairs.lean"
+new_module_git_blob = "5f019bbee742ae78773799925bd0f9c2ca71a249"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-cone-outer-pairs.md"
+mathematical_note_git_blob = "c3232e116503b47037800b0281b4c1c7a8c42db6"
+candidate_final_head = "BOUND_IN_IMMUTABLE_REVIEW_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+elaboration_status = "NOT_RUN"
+full_fiber_kernel_characterization_proved = false
+outer_relation_soundness_candidate = true
+outer_relation_radius_invariance_candidate = true
+outer_quotient_surjectivity_candidate = true
+disk_homeomorphism_proved = false
+CW_pushout_proved = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs"
+authored_declaration_count = 12
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"]
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerConePoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerConePoint_eq_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.ConeOuterPairStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.ConeOuterConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.coneOuterPairSetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.coneToFilled_respects_outerStep"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.coneToFilled_respects_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerPairedConeToFilled"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerPairedConeToFilled_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerPairedConeToFilled_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerStep_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs.outerConnected_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "immutable-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-original-handle-ids"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-boundary-point"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-radius-only"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reversed-A-pair"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reversed-B-pair"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-new-interior-pair"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-cone-quotient"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-EqvGen"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-setoid"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "consume-radial-outerA"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "consume-radial-outerB"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "soundness-not-completeness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-EqvGen-induction"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "surjectivity-from-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "preserve-radius"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "do-not-claim-injective"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "do-not-claim-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homology-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-arithmetic-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
