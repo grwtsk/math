@@ -7996,3 +7996,5 @@ Implementation follow-up: [36 version-bound obligations with exact Lean bridges,
 Next implementation pass: [local order detection, finite local products, residual readouts and rate separation by taxonomy](obligation-implementation-progress-v2.md). Four obligations remain completed; seven have verified partial results; 25 remain unresolved.
 
 Next implementation pass: [rank-one Hecke, finite variance and convergent local products by taxonomy](obligation-implementation-progress-v3.md). Four optional/corrective obligations completed; ten verified partial results; 22 unresolved obligations.
+
+Next implementation pass: [normalized rank-one basis, approximate covariance and signed local orders by taxonomy](obligation-implementation-progress-v4.md). Four optional/corrective obligations completed; fourteen verified partial results; eighteen unresolved obligations.
