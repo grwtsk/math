@@ -425,6 +425,31 @@ theorem certified_integrated_tail_refinement
     (exponentialTailBudget_refine C D c U V
       cert.amplitude_nonneg hCD cert.decay_positive hUV)
 
+
+/-- The Gaussian mode heat factor has a uniform scalar bound on
+nonnegative Hodge times. This is a real-domain finite statement, not
+a claim about the entire xi kernel or complex zero transport. -/
+theorem modeHeat_abs_le_one (s frequency : ℝ) (hs : 0 ≤ s) :
+    |modeHeat s frequency| ≤ 1 := by
+  rw [abs_of_pos (modeHeat_pos s frequency)]
+  exact modeHeat_le_one s frequency hs
+
+/-- A supplied coefficient enclosure transports through one damped
+finite mode without amplification when Hodge time is nonnegative. -/
+theorem coefficient_error_contracts
+    (a b s frequency : ℝ) (hs : 0 ≤ s) :
+    |coefficient a s frequency - coefficient b s frequency| ≤ |a - b| := by
+  have hheat := modeHeat_abs_le_one s frequency hs
+  have heq : coefficient a s frequency - coefficient b s frequency =
+      (a - b) * modeHeat s frequency := by
+    unfold coefficient
+    ring
+  rw [heq, abs_mul]
+  calc
+    |a - b| * |modeHeat s frequency| ≤ |a - b| * 1 := by
+      exact mul_le_mul_of_nonneg_left hheat (abs_nonneg _)
+    _ = |a - b| := by ring
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
