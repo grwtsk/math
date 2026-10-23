@@ -135,8 +135,9 @@ source-derived corrected coefficient vector. This is NOT uniform convergence
 over the full classical Weil test space. -/
 theorem correctedTailBudget_vanishes :
     VanishesAtInfinity correctedTailBudget := by
-  simpa only [correctedTailBudget] using
-    (pairError_vanishes correctedCoordinates correctedCoordinates)
+  change VanishesAtInfinity (fun N =>
+    pairError N correctedCoordinates correctedCoordinates)
+  exact pairError_vanishes correctedCoordinates correctedCoordinates
 
 /-- The finite spectral diagonal converges to the recomputed arithmetic
 diagonal in the repository's epsilon-error sense, not the classical
