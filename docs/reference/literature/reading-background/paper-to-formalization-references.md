@@ -4035,7 +4035,7 @@ The mathematical scope document
 [`farey-shift-dual-cocycle.md`](../../../mathematics/NumberTheory/Farey/farey-shift-dual-cocycle.md)
 was integrated at
 `9faa4da15eed992fb0423cf2514be497f2ce7a94`,
-doc blob `cdc7c0a6f36f4dd68924c9f26a36ae88a8f0560f`.
+historical doc blob `cdc7c0a6f36f4dd68924c9f26a36ae88a8f0560f`; reconciliation commit `2f995ddc1e1cff8b5ce21627c0c71c46cd903361` has current doc blob `713a0806789849297aefa9eeb63a817bc4da385f`.
 
 Full declaration names have prefix
 `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.`:
@@ -4064,7 +4064,7 @@ Full declaration names have prefix
 
 **Exact direct imports and source identities:**
 `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction`,
-blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1`;
+introductory source blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1` but **current exact replay-snapshot blob** `6eabd59265a723e325654907eaf853530dd2a0bb`;
 `GRWTSK.LinearAlgebra.PeriodicCocycleData`,
 blob `11ca2a896e8844dcb483ce9c910c1bb07ae857e1`;
 `GRWTSK.LinearAlgebra.Sturmian`,
@@ -4076,6 +4076,10 @@ transitively imports the true
 `GroupSuperwalk`,
 `ReturnAngularChannel`,
 `ProjectiveQuadraticChannel`
+(**current proof-repaired source blob**
+`79943dff174eee6049a9e097ca89ae1f6ddf04d4`,
+not historical introductory blob
+`b07cb18412f3e64f42d2916fea91b1e59b2228c2`)
 and the Farey polynomial sources.
 The operator-cocycle supplier
 `CocycleProduct.cocycleProduct_gauge`
