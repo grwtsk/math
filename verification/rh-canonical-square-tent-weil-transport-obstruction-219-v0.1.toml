@@ -3,9 +3,12 @@ schema = "rh-canonical-square-tent-weil-transport-obstruction-v0.1"
 repository = "grwtsk/math"
 issue = 219
 parent_pr = 1081
-base_branch = "research/rh-square-tent-polarization-157-20261023"
-base_commit = "26772e0f80dd28e9c1b15222eccb06a5073e3e0b"
-base_tree = "f40c72b2fd207a9e5070868cc929ac76f846904b"
+parent_merged = true
+historical_parent_commit = "26772e0f80dd28e9c1b15222eccb06a5073e3e0b"
+historical_parent_tree = "f40c72b2fd207a9e5070868cc929ac76f846904b"
+base_branch = "main"
+base_commit = "0f1b93e6c358d06d8f0fe7d7ba5841268fbc1c21"
+base_tree = "c85e0b28d82a6f6cfe357dc2fb6dbd41c39ef6fa"
 branch = "research/rh-square-tent-weil-transport-obstruction-219-20261023"
 
 toolchain = "leanprover/lean4:v4.33.0"
@@ -14,10 +17,11 @@ mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
 source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean"
 source_blob = "2c25cac04fe5575ac0242349a2dcc5592d19f0bb"
 note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-weil-transport-obstruction-219.md"
-note_blob = "78cfdd23ffe218ddd09822e8a213d690001c361b"
+note_blob = "49a85085de2bd786b477b079ce312fcd9a95badc"
 
 parent_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean"
-parent_source_blob = "f75ae60e93023fb40d2b09959dbf427f4236c5c8"
+historical_parent_source_blob = "f75ae60e93023fb40d2b09959dbf427f4236c5c8"
+current_main_parent_source_blob = "f33d5f402160bc141115c450f1488c103e9cf131"
 criterion_interface_source = "GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean"
 criterion_interface_blob = "29d8c4f1c741ab25f6abd136a3c3c2eb900da69a"
 
