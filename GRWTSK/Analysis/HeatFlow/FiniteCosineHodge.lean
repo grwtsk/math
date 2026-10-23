@@ -573,6 +573,31 @@ theorem thetaTailSupplier_source_le_total
     sourceError ≤ sourceError + cert.thetaTail := by
   linarith [cert.tail_nonneg]
 
+
+/-- The elementary Gaussian theta summand has a positive exponential
+factor. This is the first local ingredient of the actual theta-series
+tail analysis; summability and the n-sum remain separate obligations. -/
+def thetaGaussianSummand (n : ℕ) (u : ℝ) : ℝ :=
+  Real.exp (-(Real.pi * (n : ℝ) ^ 2 * Real.exp (4 * u)))
+
+theorem thetaGaussianSummand_pos (n : ℕ) (u : ℝ) :
+    0 < thetaGaussianSummand n u := by
+  unfold thetaGaussianSummand
+  exact Real.exp_pos _
+
+/-- Increasing the nonnegative mode index decreases the Gaussian factor
+at any fixed real logarithmic height. -/
+theorem thetaGaussianSummand_mode_antitone
+    (m n : ℕ) (u : ℝ) (hmn : m ≤ n) :
+    thetaGaussianSummand n u ≤ thetaGaussianSummand m u := by
+  unfold thetaGaussianSummand
+  apply Real.exp_le_exp.mpr
+  have hmnR : (m : ℝ) ≤ n := by exact_mod_cast hmn
+  have hm : 0 ≤ (m : ℝ) := Nat.cast_nonneg _
+  have he : 0 < Real.exp (4 * u) := Real.exp_pos _
+  have hp : 0 < Real.pi := Real.pi_pos
+  nlinarith [sq_nonneg ((n : ℝ) - m)]
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
