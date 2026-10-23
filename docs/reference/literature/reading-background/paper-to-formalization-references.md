@@ -1650,8 +1650,8 @@ preprint proves these exact Farey-specific constructions; therefore
 an external paper **title, printed authors, year, DOI/arXiv or theorem
 number are not established** and no historical influence is claimed.
 The stable source reference is
-[`grwtsk/math` commit `c50155b484dc5167ec8f67002a463cdc9ef4f8f4`](https://github.com/grwtsk/math/commit/c50155b484dc5167ec8f67002a463cdc9ef4f8f4),
-Git blob `d3c68e18dc0e5be7b8a82464dc3feaede8ac56b0`.
+[`grwtsk/math` commit `c50155b484dc5167ec8f67002a463cdc9ef4f8f4 (source introduction; compensation-proof revision `9851f75531b628e574a59703a172a37c88fd68e4`) (source introduction; compensation-proof revision `9851f75531b628e574a59703a172a37c88fd68e4`)`](https://github.com/grwtsk/math/commit/c50155b484dc5167ec8f67002a463cdc9ef4f8f4),
+Git blob `6fb6857656d34b7b2e22e8ef3229be339cb526fc`.
 The detailed [mathematical source note](../../../mathematics/NumberTheory/Farey/weighted-return-balance.md)
 was introduced at `d3339cb4d298b6b73d12928671fafca63f4d5d0d`,
 blob `9e75642cc3594c628fee3fc96516026ef7c78d2a`.
@@ -1692,7 +1692,7 @@ Module `GRWTSK.NumberTheory.Farey.WeightedReturnBalance`
 in [`WeightedReturnBalance.lean`](../../../../GRWTSK/NumberTheory/Farey/WeightedReturnBalance.lean),
 introduced on existing `main` in
 `c50155b484dc5167ec8f67002a463cdc9ef4f8f4`,
-Git blob `d3c68e18dc0e5be7b8a82464dc3feaede8ac56b0`.
+Git blob `6fb6857656d34b7b2e22e8ef3229be339cb526fc`.
 Fully qualified declaration suffixes:
 `weightedFourPhase`,
 `weightedFourPhase_eq_pair_defects`,
