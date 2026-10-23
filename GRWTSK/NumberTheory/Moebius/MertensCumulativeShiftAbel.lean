@@ -62,9 +62,15 @@ theorem finite_second_abel
       by_cases hN : N = 0
       · subst N
         simp
-      · rw [Finset.sum_range_succ, ih]
-        simp [hN]
-        rw [Finset.sum_range_succ]
+      · have hp : N - 1 + 1 = N := by omega
+        have hp2 : N - 1 + 2 = N + 1 := by omega
+        have hs := Finset.sum_range_succ
+          (f := fun k => (∑ r ∈ Finset.range (k + 1), c r) *
+            ((q k - q (k + 1)) - (q (k + 1) - q (k + 2)))) (N - 1)
+        rw [hp, hp2] at hs
+        rw [Finset.sum_range_succ, ih]
+        simp only [Nat.succ_ne_zero, if_false, Nat.succ_sub_one, if_neg hN]
+        rw [hs, Finset.sum_range_succ (f := c)]
         ring
 
 /-- Positive reciprocal sequences have nonnegative discrete second
@@ -78,6 +84,7 @@ theorem reciprocal_second_difference_nonneg
   have hbR : (0 : ℝ) < b := by exact_mod_cast hb
   have hb1R : (0 : ℝ) < b + 1 := by positivity
   have hb2R : (0 : ℝ) < b + 2 := by positivity
+  push_cast
   field_simp [ne_of_gt hbR, ne_of_gt hb1R, ne_of_gt hb2R]
   nlinarith
 
@@ -92,35 +99,21 @@ theorem harmonicWeightedMertensTwoPointChowlaAverage_eq_activeRange
             (harmonicShiftReciprocal j t k -
               harmonicShiftReciprocal j t (k + 1)) := by
   unfold harmonicWeightedMertensTwoPointChowlaAverage
-    harmonicShiftCount harmonicShiftUpper harmonicShiftLower
-    harmonicShiftCorrelation harmonicShiftReciprocal
-  let X : ℕ := 2 ^ j
-  let Y : ℕ := 2 ^ (j + 1)
-  let L : ℕ := max 1 (X - t - 1)
-  have hLY : L ≤ Y - t - 1 := by
-    dsimp [L, X, Y]
-    apply max_le
-    · have hY : 1 ≤ 2 ^ (j + 1) := by positivity
-      omega
-    · omega
-  rw [show 2 ^ j = X by rfl, show 2 ^ (j + 1) = Y by rfl]
-  rw [Finset.mul_sum]
-  rw [← Finset.sum_Ico_eq_sum_range]
-  apply Finset.sum_congr
-  · ext h
-    simp [L]
+  rw [← Finset.sum_filter]
+  have hf : (Finset.Ico 1 (2 ^ (j + 1))).filter
+      (fun h => t < 2 ^ (j + 1) - h - 1 ∧ 2 ^ j ≤ t + 1 + h) =
+      Finset.Ico (harmonicShiftLower j t) (harmonicShiftUpper j t) := by
+    ext h
+    simp only [Finset.mem_filter, Finset.mem_Ico, harmonicShiftLower,
+      harmonicShiftUpper, max_le_iff]
     omega
-  · intro h hh
-    have hhI := Finset.mem_Ico.mp hh
-    have hh1 : 1 ≤ h := le_trans (le_max_left 1 (X - t - 1)) hhI.1
-    have hhY : h < Y := by omega
-    have ht : t < Y - h - 1 := by omega
-    have hb : X ≤ t + 1 + h := by
-      have hL : X - t - 1 ≤ h :=
-        le_trans (le_max_right 1 (X - t - 1)) hhI.1
-      omega
-    simp [hh1, hhY, ht, hb, L]
-    ring
+  rw [hf, Finset.sum_Ico_eq_sum_range, Finset.mul_sum]
+  apply Finset.sum_congr rfl
+  intro k _hk
+  dsimp [harmonicShiftCorrelation, harmonicShiftReciprocal]
+  rw [show t + 1 + 1 + (harmonicShiftLower j t + k) =
+    t + 1 + (harmonicShiftLower j t + (k + 1)) by omega]
+  ring
 
 /-- Second-Abel representation of the harmonic weighted Chowla average through
 cumulative shift correlations. -/
@@ -173,11 +166,17 @@ theorem harmonicShiftReciprocal_terminalDifference_nonneg
         harmonicShiftReciprocal j t (harmonicShiftCount j t) := by
   unfold harmonicShiftReciprocal
   apply sub_nonneg.mpr
-  apply one_div_le_one_div_of_le
-  · positivity
-  · exact_mod_cast Nat.le_succ
-      (t + 1 + (harmonicShiftLower j t +
-        (harmonicShiftCount j t - 1)))
+  have hp : harmonicShiftCount j t - 1 + 1 = harmonicShiftCount j t :=
+    Nat.sub_add_cancel hN
+  simpa only [one_div] using one_div_le_one_div_of_le
+    (show (0 : ℝ) < ((t + 1 + (harmonicShiftLower j t +
+      (harmonicShiftCount j t - 1)) : ℕ) : ℝ) by positivity)
+    (show ((t + 1 + (harmonicShiftLower j t +
+      (harmonicShiftCount j t - 1)) : ℕ) : ℝ) ≤
+      ((t + 1 + (harmonicShiftLower j t + harmonicShiftCount j t) : ℕ) : ℝ) by
+      exact_mod_cast (show t + 1 + (harmonicShiftLower j t +
+        (harmonicShiftCount j t - 1)) ≤
+        t + 1 + (harmonicShiftLower j t + harmonicShiftCount j t) by omega))
 
 /-- Source-facing cumulative-shift supplier.  It asks directly for the exact
 second-Abel representation to satisfy the inherited subpolynomial budget. -/
