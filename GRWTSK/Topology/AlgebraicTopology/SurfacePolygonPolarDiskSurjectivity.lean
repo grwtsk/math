@@ -68,7 +68,10 @@ theorem standardConePolarDisk_surjective_of_phase
     Function.Surjective standardConePolarDisk := by
   intro z
   by_cases hz : z.val = 0
-  · subst z
+  · have hz' : z = (⟨0, by simp⟩ : ClosedComplexUnitDisk) := by
+      apply Subtype.ext
+      exact hz
+    rw [hz']
     exact disk_origin_in_polar_range
   · exact disk_nonzero_in_polar_range_of_phase z hz
       (hphase z.val hz)
