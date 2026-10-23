@@ -624,6 +624,46 @@ theorem thetaKernelTerm_expansion (n : ℕ) (u : ℝ) :
   unfold thetaKernelTerm
   ring
 
+
+/-- The positive and negative polynomial-weighted pieces of the literal
+theta summand are separately nonnegative at every real logarithmic height. -/
+def thetaKernelPositivePart (n : ℕ) (u : ℝ) : ℝ :=
+  2 * Real.pi ^ 2 * (n : ℝ) ^ 4 * Real.exp (9 * u) *
+    thetaGaussianSummand n u
+
+def thetaKernelNegativePart (n : ℕ) (u : ℝ) : ℝ :=
+  3 * Real.pi * (n : ℝ) ^ 2 * Real.exp (5 * u) *
+    thetaGaussianSummand n u
+
+theorem thetaKernelPositivePart_nonneg (n : ℕ) (u : ℝ) :
+    0 ≤ thetaKernelPositivePart n u := by
+  unfold thetaKernelPositivePart
+  positivity
+
+theorem thetaKernelNegativePart_nonneg (n : ℕ) (u : ℝ) :
+    0 ≤ thetaKernelNegativePart n u := by
+  unfold thetaKernelNegativePart
+  positivity
+
+/-- The exact signed theta term splits into two nonnegative pieces.
+Absolute-value and summability estimates may therefore be derived from
+the separate pieces without assuming that the signed term is positive. -/
+theorem thetaKernelTerm_split (n : ℕ) (u : ℝ) :
+    thetaKernelTerm n u =
+      thetaKernelPositivePart n u - thetaKernelNegativePart n u := by
+  unfold thetaKernelTerm thetaKernelPositivePart thetaKernelNegativePart
+  ring
+
+/-- Source-exact absolute bound for one polynomial-weighted theta term. -/
+theorem thetaKernelTerm_abs_le_parts (n : ℕ) (u : ℝ) :
+    |thetaKernelTerm n u| ≤
+      thetaKernelPositivePart n u + thetaKernelNegativePart n u := by
+  rw [thetaKernelTerm_split]
+  have hp := thetaKernelPositivePart_nonneg n u
+  have hn := thetaKernelNegativePart_nonneg n u
+  exact abs_sub_le _ _ |>.trans_eq (by
+    rw [abs_of_nonneg hp, abs_of_nonneg hn])
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
