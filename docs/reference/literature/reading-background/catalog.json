@@ -112952,9 +112952,194 @@
       ]
     }
   ],
-  "ideas": [],
-  "understandings": [],
-  "formalization_links": [],
+  "ideas": [
+    {
+      "id": "idea:heat-v1",
+      "source_id": "sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+      "locator": "Lemma 2.18; heat-semigroup claims",
+      "pdf_pages": [
+        64,
+        65
+      ],
+      "statement": "The manuscript uses exp(−t Lsym²) and claims trace-class heat smoothing for a compact trace-class operator.",
+      "hypotheses": [
+        "Infinite-dimensional weighted L² space; claimed compact self-adjoint trace-class Lsym."
+      ],
+      "evidence": "Inspected PDF text at physical pages 64, 65; exact asset SHA-256 e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3"
+    },
+    {
+      "id": "idea:determinant-v1",
+      "source_id": "sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+      "locator": "Appendix H; Fredholm and Carleman Determinants",
+      "pdf_pages": [
+        206
+      ],
+      "statement": "The manuscript writes det(I−λT) as a product over eigenvalues and relates operator determinants to xi.",
+      "hypotheses": [
+        "Trace-class complex operator and a separately justified choice of regularization/normalization."
+      ],
+      "evidence": "Inspected PDF text at physical pages 206; exact asset SHA-256 e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3"
+    },
+    {
+      "id": "idea:budget-v1",
+      "source_id": "sha256:1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86",
+      "locator": "§14.2, equation (14.3); printed page 27",
+      "pdf_pages": [
+        30
+      ],
+      "statement": "Preconditioned source error must retain arithmetic tails, gluing, weights, overlap and discarded-label errors.",
+      "hypotheses": [
+        "An actual source comparison and all estimates at every rank; admissible correction radius."
+      ],
+      "evidence": "Inspected PDF text at physical pages 30; exact asset SHA-256 1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86"
+    },
+    {
+      "id": "idea:positive-limit-v1",
+      "source_id": "sha256:1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86",
+      "locator": "Conjecture 10.2; Conjecture 14.1; §14.1 equation (14.2)",
+      "pdf_pages": [
+        20,
+        29,
+        30
+      ],
+      "statement": "Compatible positive models must match the actual arithmetic source at all orders; finite success does not close RH.",
+      "hypotheses": [
+        "All-orders compatibility, actual-source normalization, and an exact RH criterion."
+      ],
+      "evidence": "Inspected PDF text at physical pages 20, 29, 30; exact asset SHA-256 1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86"
+    }
+  ],
+  "understandings": [
+    {
+      "id": "understanding:heat-draft-v1",
+      "idea_id": "idea:heat-v1",
+      "owner_statement": null,
+      "interpretation": "The scalar exponential mode obeys a semigroup law. This is a finite-mode fragment, not a construction of the manuscript operator.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:09:29.833822+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison; owner interpretation and chronology unconfirmed.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:determinant-draft-v1",
+      "idea_id": "idea:determinant-v1",
+      "owner_statement": null,
+      "interpretation": "A finite rational determinant has the same I−parameter·transfer shape.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:09:29.958854+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison; owner interpretation and chronology unconfirmed.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:budget-draft-v1",
+      "idea_id": "idea:budget-v1",
+      "owner_statement": null,
+      "interpretation": "A supplied complete signed discrepancy decomposition is bounded by the sum of independently supplied component bounds.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:09:30.079348+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison; owner interpretation and chronology unconfirmed.",
+      "status": "draft"
+    },
+    {
+      "id": "understanding:positive-limit-draft-v1",
+      "idea_id": "idea:positive-limit-v1",
+      "owner_statement": null,
+      "interpretation": "The Lean endpoint requires a positive approximating family and an independently proved positivity equivalence for the same target form.",
+      "origin": "assistant-proposed",
+      "recorded_at": "2026-10-23T18:09:30.227533+00:00",
+      "asserted_understood_at": null,
+      "evidence": "Assistant source comparison; owner interpretation and chronology unconfirmed.",
+      "status": "draft"
+    }
+  ],
+  "formalization_links": [
+    {
+      "understanding_id": "understanding:heat-draft-v1",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "e2a00f851c6efb07e9c5c2f5c1e69d5c2d521400",
+      "path": "GRWTSK/Analysis/HeatFlow/FiniteCosineHodge.lean",
+      "blob": "0b4a9f940f2ec1ac1cfd6cd21e22c5b2a92ef7e9",
+      "declaration": "modeHeat_add",
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "line_start": 54,
+      "line_end": 62,
+      "code_sha256": "cb1262c25d14838bd6aa22967eb45afcc79730b711b8b797a271aa0289cf65a4",
+      "hypotheses_and_gaps": [
+        "No weighted Hilbert-space operator, trace-class heat theorem, or xi identification is supplied by this declaration.",
+        "Blocking manuscript issue: page 64 says nonzero eigenvalues accumulate at zero, yet sums exp(−t μ_n²). For infinitely many eigenvalues these terms tend to one, so this displayed sum diverges. It later asserts incompatible eigenvalue growth. Requires operator/normalization correction, not a formal bridge."
+      ],
+      "evidence": "Pinned Lean source inspected against the cited PDF pages; no build or independent kernel audit performed.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:determinant-draft-v1",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "e2a00f851c6efb07e9c5c2f5c1e69d5c2d521400",
+      "path": "GRWTSK/Spectral/Sheaf/RationalMomentFredholmBridge.lean",
+      "blob": "ab0a7854f9941fa0378d30ef19dcbcd13a22844d",
+      "declaration": "FiniteFredholmBridge.determinant",
+      "relation": "analogy",
+      "connection_status": "analogy-only",
+      "line_start": 127,
+      "line_end": 134,
+      "code_sha256": "b1ec2584b9838cca2304ec0beaea9c8ff689d8b11eebc725fb402bdf9d61538c",
+      "hypotheses_and_gaps": [
+        "Code is finite dimensional over ℚ; manuscript is infinite dimensional over ℂ.",
+        "No trace-ideal convergence, regularization comparison, analytic continuation, or determinant–xi identity follows.",
+        "Different determinant conventions within the manuscript need reconciliation before identifying a target."
+      ],
+      "evidence": "Pinned Lean source inspected against the cited PDF pages; no build or independent kernel audit performed.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:budget-draft-v1",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "e2a00f851c6efb07e9c5c2f5c1e69d5c2d521400",
+      "path": "GRWTSK/Analysis/ErrorBounds/ScrewSpectralReconstruction.lean",
+      "blob": "967215531015cb5ad57c4458b5cc7c7b29df00c0",
+      "declaration": "reconstruction_error_bound",
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "line_start": 36,
+      "line_end": 65,
+      "code_sha256": "b2b27b23ce8901cda2d8c2d5c6b94425eb16e462b9b81a9016395aa528094791",
+      "hypotheses_and_gaps": [
+        "The code needs an exact five-term decomposition and five norm estimates; none is obtained from a citation.",
+        "No supplied instantiation identifies the consumer with J_R⁻¹ or matches its five channels to (14.3).",
+        "No decay exponent, all-rank bound, or correction-radius inequality is established here."
+      ],
+      "evidence": "Pinned Lean source inspected against the cited PDF pages; no build or independent kernel audit performed.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    },
+    {
+      "understanding_id": "understanding:positive-limit-draft-v1",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "e2a00f851c6efb07e9c5c2f5c1e69d5c2d521400",
+      "path": "GRWTSK/NumberTheory/Zeta/Riemann/WeilPositiveLimitCore.lean",
+      "blob": "c7f56149ec8d1dd8abed6c7fe9dc6d0f9f0b6006",
+      "declaration": "riemannHypothesis_of_positiveGramLimit",
+      "relation": "corresponds-to",
+      "connection_status": "conditional-correspondence",
+      "line_start": 187,
+      "line_end": 194,
+      "code_sha256": "f0f25ddbf814f2cd1e770094380901df7e30fb62b3704199130bcc9f98887076",
+      "hypotheses_and_gaps": [
+        "Paper trace-power/determinant convergence is not the code’s polarized real-form comparison. A translation remains unconstructed.",
+        "WeilCriterionForZeta includes an actual proof of positivity iff RH; strings or paper claims cannot fill that field.",
+        "The actual arithmetic approximants, all-orders error limits, and matching test space/normalization are unresolved."
+      ],
+      "evidence": "Pinned Lean source inspected against the cited PDF pages; no build or independent kernel audit performed.",
+      "review_status": "source-reviewed",
+      "attribution_issue": "https://github.com/grwtsk/math/issues/254"
+    }
+  ],
   "dates": [
     {
       "subject_id": "sha256:945e278613c45ea1ab617b28c3095783d0e68958dc0546dfcfa9b42b9674fbe1",
