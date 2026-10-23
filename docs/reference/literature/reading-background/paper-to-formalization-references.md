@@ -6031,6 +6031,23 @@ Do not discharge it by simply matching numeric matrices
 or claiming the external measure-mixing theorem
 already inhabits the local type.
 
+**Pinned passive verification requests — QUEUED / NOT_RUN:**
+[math #1147](https://github.com/grwtsk/math/issues/1147) and
+[noeaaeue #393](https://github.com/grwtsk/noeaaeue/issues/393),
+both pinned to existing math main commit
+`b0926325f3bf2f276b58cabad49715da48762bac`,
+Git tree `ec44b09383b7bb561304819a1ca6fa125fbb5632`,
+with exact leaf blobs
+`8ef5c4b4f732040cf0af29f11406008c08b4daec`
+and `b76d4c8bf7544a1800917fd111cc017011d172c0`.
+These requests specify module imports, full build commands,
+direct elaboration, fresh native kernel checking,
+complete transitive `#print axioms` and generated/unsafe
+audits with hostile counterexamples. **No authorized
+remote runner was dispatched** and neither issue is an
+execution receipt. The actually executed Python finite
+preflight above is a distinct, limited, pinned receipt.
+
 
 
 ## Case BOMBIERI-CALIBRATED-THIRD-20261023 — nonzero source-coordinate gain
