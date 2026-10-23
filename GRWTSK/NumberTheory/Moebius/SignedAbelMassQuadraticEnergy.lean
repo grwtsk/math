@@ -74,11 +74,13 @@ private theorem weightedMertensSignedAbelDepthMass_eq_dropRange
   · have hsupp : t < Y - (k + 1) - 1 := by
       dsimp [N] at hkN
       omega
-    simp [hsupp, hkN]
+    simp only [Nat.add_comm 1 k, ← show Y = 2 ^ (j + 1) from rfl,
+      if_pos hsupp, if_pos hkN]
   · have hsupp : ¬ t < Y - (k + 1) - 1 := by
       dsimp [N] at hkN
       omega
-    simp [hsupp, hkN]
+    simp only [Nat.add_comm 1 k, ← show Y = 2 ^ (j + 1) from rfl,
+      if_neg hsupp, if_neg hkN]
 
 /-- The exact Abel mass over the growing shift family telescopes to one kernel
 weight, with a zero convention after the triangular support has ended. -/
@@ -106,15 +108,14 @@ theorem weightedMertensSignedAbelDepthMass_eq_telescoped
     calc
       (∑ k ∈ Finset.range N,
           dyadicMertensShiftWeightDrop j (k + 1) t) =
-        ∑ k ∈ Finset.range N, q k - q (k + 1) := by
+        ∑ k ∈ Finset.range N, (q k - q (k + 1)) := by
           apply Finset.sum_congr rfl
           intro k _hk
           simp [q, dyadicMertensShiftWeightDrop, Nat.add_assoc,
             Nat.add_comm, Nat.add_left_comm]
       _ = q 0 - q N := htel
       _ = dyadicMertensShiftWeight j (t + 2) := by
-        rw [hterminal, sub_zero]
-        simp [q]
+        simp [hterminal, q]
       _ = weightedMertensSignedAbelDepthTelescopedMass j t := by
         simp [weightedMertensSignedAbelDepthTelescopedMass, Y, ht]
   · have hzero : weightedMertensSignedAbelDepthMass j t = 0 := by
@@ -122,6 +123,7 @@ theorem weightedMertensSignedAbelDepthMass_eq_telescoped
       apply Finset.sum_eq_zero
       intro h hh
       have hh' := Finset.mem_Ico.mp hh
+      have htY : ¬ t + 2 ≤ 2 ^ (j + 1) := by simpa [Y] using ht
       have hsupp : ¬ t < 2 ^ (j + 1) - h - 1 := by
         omega
       simp [hsupp]

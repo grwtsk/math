@@ -99,6 +99,8 @@ theorem dyadicMertensShiftWeight_step_antitone {j b : ℕ} :
       max_le_max le_rfl (Nat.le_succ b)
     exact_mod_cast hmax
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- Every weight below the right endpoint is at most its reciprocal. -/
 theorem dyadicMertensShiftWeight_le_right_inv {j b : ℕ}
     (hb : b ≤ 2 ^ (j + 1)) :
@@ -115,6 +117,8 @@ theorem dyadicMertensShiftWeight_le_right_inv {j b : ℕ}
   have hdy := dyadic_left_inv_eq_two_mul_right_inv j
   linarith
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- Reindex one fixed shift by the ordinary correlation coordinate `a`. -/
 theorem weightedMertensDyadicShiftContribution_eq_range
     {j h : ℕ} (hh : 1 ≤ h) (hhY : h < 2 ^ (j + 1)) :
@@ -166,6 +170,8 @@ private theorem finite_weight_drop_telescope
       rw [Finset.sum_range_succ, ih]
       ring
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- A nonincreasing nonnegative finite weight pays a weighted sum from a
 uniform bound on every arithmetic prefix. -/
 private theorem abs_weighted_sum_le_of_prefix_bound

@@ -104,6 +104,8 @@ private theorem finite_weight_drop_telescope_mean
       rw [Finset.sum_range_succ, ih]
       ring
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- A nonincreasing finite weight pays one shift from a bound on every prefix. -/
 private theorem abs_weighted_sum_le_of_shift_prefix_bound
     (x q : ℕ → ℝ) (N : ℕ) {U : ℝ}
