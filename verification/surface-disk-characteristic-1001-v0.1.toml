@@ -1,0 +1,147 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-disk-characteristic-1001-v0.1"
+issue = 1001
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic"
+
+[source_binding]
+parent_pr = 999
+parent_revision = "23f2053ab1213a518a8140a543f76c63b7111050"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonDiskCharacteristic.lean"
+new_module_git_blob = "2e69e1723efad941650259e80ac51ef3eb869060"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-disk-characteristic.md"
+note_blob = "a2d973d84f71cbda47427e109df815feaa78cb55"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+full_fiber_kernel_imported = false
+CW_pushout_proved = false
+surface_manifold_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic"
+authored_declaration_count = 9
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardCircleConeDisk"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic_cone"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic_center"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.diskCharacteristic_not_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.genusTwo_diskCharacteristic_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic.genusThree_diskCharacteristic_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-standard-disk"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-unpaired-cone"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-cone-to-filled"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-map"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "surjective-map"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-cone-triangle"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-attachment"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "apex"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noninjectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "g2"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "g3"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-pushout"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homology"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
