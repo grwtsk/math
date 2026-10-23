@@ -48,7 +48,9 @@ theorem redundant_extra_cannot_recover_third
       (fun x y hp =>
         eq_of_factorsThrough
           (augmentedProfile bombieriMomentProfile extra)
-          thirdCoordinateReadout hrecover hp)
+          thirdCoordinateReadout hrecover
+          (Prod.ext hp (eq_of_factorsThrough
+            bombieriMomentProfile extra hextra hp)))
   exact thirdCoordinateReadout_separates
     (hconst correctedCoordinates 0 bombieri_corrected_zero_same_profile)
 
