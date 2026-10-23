@@ -75,7 +75,7 @@ theorem modThreeReturn_fourth :
     modThreeReturn ^ 4 = modThreeReturn ^ (2 + 2) := by norm_num
     _ = modThreeReturn ^ 2 * modThreeReturn ^ 2 := pow_add _ _ _
     _ = (-1 : Mat3) * (-1 : Mat3) := by
-      rw [pow_two, modThreeReturn_square]
+      simp only [pow_two, modThreeReturn_square]
     _ = 1 := by simp
 
 /-- The return is not a two-cycle in the matrix quotient. -/
@@ -101,6 +101,18 @@ theorem modThreeReturn_orbit (j : Fin 4) :
       residueOrbit (orbitNext j) := by
   fin_cases j <;> funext i <;> fin_cases i <;>
     decide
+
+/-- Every finite source-quotient return acts on the chosen four-state orbit
+as the specified cyclic successor, not just at the first step. -/
+theorem modThreeReturn_orbit_iterate (j : Fin 4) (n : ℕ) :
+    ((fun v : Fin 2 → ZMod 3 => modThreeReturn.mulVec v)^[n])
+        (residueOrbit j) =
+      residueOrbit ((orbitNext)^[n] j) := by
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+      rw [Function.iterate_succ_apply', ih, modThreeReturn_orbit,
+        Function.iterate_succ_apply']
 
 /-- The nonconstant complex readout of the four actual finite orbit states. -/
 def orbitPhase : Fin 4 → ℂ :=
@@ -129,13 +141,19 @@ theorem initial_orbit_phase (n : ℕ) :
     orbitPhase ((orbitNext)^[n] (0 : Fin 4)) = Complex.I ^ n := by
   simpa [orbitPhase] using orbitPhase_iterate 0 n
 
-/-- The two independent source-derived channels, both evaluated at exactly
-n copies of the SAME positive Farey return word. -/
+/-- All three data sources agree at exactly n copies of the SAME
+positive Farey return: its expanding real eigensector, its mod-three
+vector action, and the four-state angular eigenfunction. -/
 theorem simultaneous_return_channels (n : ℕ) :
     returnMatrix ^ n * expandingProjector =
       (expandingEigenvalue ^ n) • expandingProjector ∧
+    ((fun v : Fin 2 → ZMod 3 => modThreeReturn.mulVec v)^[n])
+        (residueOrbit 0) =
+      residueOrbit ((orbitNext)^[n] (0 : Fin 4)) ∧
     orbitPhase ((orbitNext)^[n] (0 : Fin 4)) = Complex.I ^ n :=
-  ⟨expandingProjector_iterate n, initial_orbit_phase n⟩
+  ⟨expandingProjector_iterate n,
+    modThreeReturn_orbit_iterate 0 n,
+    initial_orbit_phase n⟩
 
 /-- Complex observation of real spectral amplitude and arithmetic angular
 phase; the observation itself is a declared choice, not an automatic
