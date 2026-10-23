@@ -102,6 +102,50 @@ theorem factorsThrough_observedProfile_iff
     intro x y hxy
     exact hc x y ((observedProfile_eq_iff profile x y).1 hxy)
 
+/-- When the target is inhabited, any unattained observable values can
+be assigned a fixed default target. Thus exact constancy on fibers is also
+sufficient for a total decoder on the *ambient* observable codomain.
+Unlike surjectivity, this hypothesis is about the readout target type only.
+
+The chosen decoder is classical and not asserted to be effective, continuous,
+measurable, linear or bounded. -/
+theorem factorsThrough_iff_fiberConstant_of_inhabited_target
+    {X : Type u} {Y : Type v} {Z : Type w}
+    [Nonempty Z]
+    (profile : X → Y) (readout : X → Z) :
+    FactorsThrough profile readout ↔
+      ∀ x y : X, profile x = profile y → readout x = readout y := by
+  constructor
+  · intro hfactor x y hxy
+    exact eq_of_factorsThrough profile readout hfactor hxy
+  · intro hconstant
+    classical
+    let decode : Y → Z := fun y =>
+      if h : ∃ x : X, profile x = y then
+        readout (Classical.choose h)
+      else Classical.choice (inferInstance : Nonempty Z)
+    refine ⟨decode, ?_⟩
+    funext x
+    have hx : ∃ t : X, profile t = profile x := ⟨x, rfl⟩
+    change readout x = decode (profile x)
+    dsimp [decode]
+    rw [dif_pos hx]
+    exact hconstant x (Classical.choose hx)
+      (Classical.choose_spec hx).symm
+
+/-- A nonempty source automatically provides an inhabited target through
+the supplied readout. This yields ambient-codomain reconstruction from fiber
+constancy without requiring the observable itself to be surjective. -/
+theorem factorsThrough_iff_fiberConstant_of_nonempty_source
+    {X : Type u} {Y : Type v} {Z : Type w}
+    [Nonempty X]
+    (profile : X → Y) (readout : X → Z) :
+    FactorsThrough profile readout ↔
+      ∀ x y : X, profile x = profile y → readout x = readout y := by
+  letI : Nonempty Z :=
+    ⟨readout (Classical.choice (inferInstance : Nonempty X))⟩
+  exact factorsThrough_iff_fiberConstant_of_inhabited_target profile readout
+
 /-- The augmented observable can always recover the supplied extra
 measurement: the second projection is an exact decoder. This does not make
 the augmented observable injective or computable. -/
