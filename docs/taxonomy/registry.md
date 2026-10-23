@@ -6,6 +6,16 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 
 ## Concepts, alphabetically by current English label
 
+Source-signal draft additions (canonical identities; all proposed):
+
+| Label / canonical page | Persistent identifier |
+| --- | --- |
+| [Category theory](subjects/category-theory/index.md) | `urn:uuid:4c0f6c9e-db23-5d18-85c8-67ff6c9c8f2b` |
+| [Order theory](subjects/order-theory/index.md) | `urn:uuid:c4f54bfa-058b-52ee-8611-9795fe7f7a0c` |
+| [Proof-assistant metaprogramming](subjects/proof-assistant-metaprogramming/index.md) | `urn:uuid:e97fd9c5-7e86-567c-8671-dcab0ac89176` |
+| [Theory of data structures](subjects/data-structure-theory/index.md) | `urn:uuid:00fa1f4d-831c-5ebf-8c2e-18cc9738a352` |
+| [Type theory](subjects/type-theory/index.md) | `urn:uuid:f049a177-9e72-55f3-bf00-fef13ee535f4` |
+
 | Label / canonical page | Persistent identifier |
 | --- | --- |
 | [Algebra](subjects/algebra/index.md) | `urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a` |
