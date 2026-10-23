@@ -1,0 +1,110 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-partition-1037-v0.1"
+issue = 1037
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition"
+
+[source_binding]
+parent_pr = 1036
+parent_revision = "331b11eac53781e8f79b91f837daf884b4f34a5e"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWPartition.lean"
+new_module_git_blob = "ce7ed693f5ed856ca5188450ac435c78ff5f142f"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-partition.md"
+note_blob = "3daf6ec33b6272f6c43b4decf94f6aa6156a58e2"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+full_open_cell_partition_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition"
+authored_declaration_count = 4
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition.directedEdge_one_eq_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition.positiveOneCell_one_eq_zeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition.directedEdge_has_positive_representative"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition.source_has_positive_representative"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "four-directed-sides"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam01"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam12"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam23"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seamNext"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-a-b"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "negative-reversal"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "both-endpoints-vertex"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-interval"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-coverage"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-quotient-partition-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-open-embedding"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

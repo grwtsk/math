@@ -1,0 +1,153 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-positive-edges-1034-v0.1"
+owner_repository = "grwtsk/math"
+issue = 1034
+related_issues = [1032, 1029, 1026, 1023, 1021, 1001, 845, 834, 823, 758, 100]
+route_id = "AUTHENTIC_POSITIVE_EDGE_INTERIOR_INJECTIVITY_AND_DISJOINTNESS"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"
+
+[source_binding]
+parent_pr = 1033
+parent_revision = "51b0eba980a7c446d1283320937db62092aed838"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean"
+new_module_git_blob = "2e959cb64495bbe0e75df8681e8f8279dbfa6cc9"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-positive-edges.md"
+note_blob = "4471b8d1fcbb25b003a067f3a568ee140b286af6"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[source_repair]
+original_module_git_blob = "b3eb23627d632c1da9759c91d4aecf6aaf0ef325"
+repaired_module_git_blob = "2e959cb64495bbe0e75df8681e8f8279dbfa6cc9"
+scope = "Replace Fin.cast_injective use with Fin.ext and equality of Fin.val when recovering the Fin 2 positive-side label from equality after coercion to Fin 4; theorem statements and mathematical obligations unchanged."
+elaboration_status = "NOT_RUN"
+
+[scope]
+source_only = true
+passive_specification_only = true
+elaboration_status = "NOT_RUN"
+requires_clean_checkout = true
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_full_transitive_import_review = true
+requires_hostile_replay = true
+positive_source_equality_candidate = true
+positive_interior_injectivity_candidate = true
+positive_label_disjointness_candidate = true
+open_cell_embeddings_proved = false
+homeomorphism_onto_image_proved = false
+CW_weak_topology_proved = false
+closure_finiteness_proved = false
+CW_surface_proved = false
+surface_manifold_proved = false
+cellular_singular_comparison_proved = false
+van_kampen_hurewicz_proved = false
+zeta_or_RH_result_proved = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"
+authored_declaration_count = 4
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positive_not_opposite_positive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positive_interior_projection_eq_source"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positiveOneCell_injective_interior"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positiveOneCell_disjoint_interior"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+requirement = "The child is reviewed against PR #1033 exact head 51b0eba980a7c446d1283320937db62092aed838."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-Fin2-Fin4"
+requirement = "The selected positive sides remain indexed by inherited Fin 2 and compared through their actual coercions to source Fin 4."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-vs-negative"
+requirement = "The opposite branch is rejected because sides 0/1 cannot equal sides 2/3, not because of endpoint status."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-two-point-orbit"
+requirement = "The proof consumes the full EqvGen interior_projection_eq_orbit theorem from PR #1033."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-equality"
+requirement = "Equal positive strict-interior quotient points yield equality of the original BoundaryPoint source values."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-edge-injectivity"
+requirement = "Each positive a/b characteristic is injective on nonendpoint parameters."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "different-edge-disjointness"
+requirement = "A common strict-interior image forces equality of both inherited handle and positive-side labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-interior"
+requirement = "The theorem retains an explicit nonendpoint hypothesis and does not classify the common vertex endpoints as open-cell points."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "Fin-label-repair"
+requirement = "Fin 2 label equality is recovered by Fin.ext and equality of values, not an assumed Fin.cast_injective API."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-open-embedding"
+requirement = "Set-theoretic injectivity is not promoted to a topological embedding or homeomorphism onto the image."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+requirement = "No closure-finiteness, weak topology, or CW-complex instance is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+requirement = "No surface manifold charts or compact oriented surface theorem is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+requirement = "No cellular/singular homology comparison, fundamental group, van Kampen, or Hurewicz theorem is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+requirement = "No hyperbolic, trace-formula, GUE, sofic, Chowla, zeta-divisor, or RH consequence is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+requirement = "No Lean/Lake/native/VM/F06 execution or kernel qualification is represented."
+status = "NOT_RUN"
