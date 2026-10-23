@@ -1,0 +1,114 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-interior-orbit-1029-v0.1"
+issue = 1029
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit"
+
+[source_binding]
+parent_pr = 1027
+parent_revision = "e5e835fbc9ff2dba09569347e7cd29a9e44ff5f6"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWInteriorOrbit.lean"
+new_module_git_blob = "bf154e092c4bdc88e658343eb31f649acede1b34"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-interior-orbit.md"
+note_blob = "1d77f03b26f0bdc7ad685a6fa13f865153662697"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+full_EqvGen_orbit_proved = false
+pairwise_open_edge_disjointness_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit"
+authored_declaration_count = 4
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorSeparation"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit.oppositeBoundaryPoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit.interior_step_pair_orbit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit.interior_step_preserves_handle"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit.interior_step_preserves_nonendpoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-Fin4-index"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-interval"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-pair-A"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-pair-B"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exclude-seam01"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exclude-seam12"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exclude-seam23"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exclude-seamNext"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "preserve-handle"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "preserve-interior"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-EqvGen-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-open-embedding"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
