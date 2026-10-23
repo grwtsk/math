@@ -266,6 +266,7 @@ def canonicalFourFamilyOtherShiftDivisor
           (canonicalFourFamilyShiftSet (2 * X) (canonicalFourFamilyOfAnchor p.1))
     else 0
 
+set_option linter.unusedVariables false in
 /-- Exactly correct the finite matrix on its TRUE arithmetic data.
 No absolute values or independent Cauchy bounds are introduced. -/
 theorem canonicalFourFamilyMatrix_minus_other_eq_positiveAnchored
