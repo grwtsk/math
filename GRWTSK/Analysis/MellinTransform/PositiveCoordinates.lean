@@ -70,7 +70,8 @@ theorem atom_scaling {X n : ℝ} (hX : 0 < X) (hn : 0 < n)
     power X (1 - s) * ((a / n : ℝ) : ℂ) * power (n / X) (1 - s) =
       (a : ℂ) * power n (-s) := by
   have hnX : 0 < n / X := div_pos hn hX
-  have hprod : X * (n / X) = n := by field_simp [ne_of_gt hX]; ring
+  have hprod : X * (n / X) = n := by
+    field_simp [ne_of_gt hX]
   have hm := power_mul hX hnX (1 - s)
   rw [hprod] at hm
   calc
