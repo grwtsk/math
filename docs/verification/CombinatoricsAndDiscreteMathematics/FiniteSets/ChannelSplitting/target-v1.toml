@@ -1,0 +1,9 @@
+id = "predicate-channel-splitting"
+version = "1"
+source = "GRWTSK/CombinatoricsAndDiscreteMathematics/FiniteSets/ChannelSplitting.lean"
+declarations = ["GRWTSK.Combinatorics.FiniteSets.ChannelSplitting.lossless", "GRWTSK.Combinatorics.FiniteSets.ChannelSplitting.filter_split", "GRWTSK.Combinatorics.FiniteSets.ChannelSplitting.residual_disjoint"]
+acceptance = ["Lean 4.33.0 trust=0 elaboration succeeds", "No sorryAx or unregistered axioms", "Classical logical axioms recorded separately"]
+positive_controls = ["Overlapping channels preserve one task", "Unmatched input reaches residual"]
+hostile_controls = ["Unknown taxonomy UUID rejects", "Routing cannot discharge a proof obligation"]
+nonclaims = ["Physical fiber-optic model", "Semantic source classification", "Payload validity"]
+receipt_owner = "grwtsk/noeaaeue"
