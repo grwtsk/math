@@ -29,11 +29,19 @@ status**. An analogy is not a formal dependency, and an unproved
 specialization or a source-level proof candidate is not a kernel-accepted
 bridge.
 
-The ledger currently contains specific entries for the 2026 ICARM
-rank-32 record, Cremona's 2002 good-prime 2-descent independence method,
-Stoll's pinned Lean 4.35 2-descent development (a **code source**, not a
-paper), and the 2026 finite Weil-form/inertia comparison
-(an **analogy**, not an imported zero-distribution theorem). The
+The ledger contains source-bound entries for the 2026 ICARM
+rank-32 record, Cremona's 2002 good-prime 2-descent method,
+Stoll's pinned Lean 4.35 development (**code**, not a paper),
+Sarnak's 2011 deterministic-flow conjecture (**analogy**, not an
+instantiated theorem), and the 2026 Weil-form/inertia comparison
+(**analogy**, not an imported zero-distribution theorem). It now
+also records exact Farey selected-return angular and projective
+obstructions and cyclic-residue Hodge identities as **2026
+repository-derived constructions with no separately established
+paper theorem or historical influence**. Those entries distinguish
+the earlier eight-module local kernel/axiom qualification from the
+still-unverified angular, projective and Hodge leaves and list
+their individual queued replay issues. The
 large version-bound unpublished-manuscript map remains separate; neither
 catalog proves reading history, influence, priority or theorem acceptance.
 
