@@ -198,13 +198,24 @@ theorem left_right_trace_three :
   rw [left_right_product]
   norm_num [Matrix.trace, Fin.sum_univ_two]
 
-/-- The original source's quadratic-times-cubic sign certificate is preserved
-under any exact Farey word; no new root-completeness claim is made. -/
+/-- The updated Farey-source endpoint-local positivity theorem applies at
+the ACTUAL refined cell; no positivity away from its two endpoints is assumed. -/
+theorem quintic_eye_on_walk_iff_of_endpoint_pos (q c : Polynomial ℚ)
+    (I : Cell) (w : List Turn)
+    (hleft : 0 < q.eval (walk I w).left)
+    (hright : 0 < q.eval (walk I w).right) :
+    ResolvableEye (q * c) (walk I w) ↔
+      ResolvableEye c (walk I w) :=
+  resolvableEye_mul_iff_of_pos_at_endpoints q c (walk I w) hleft hright
+
+/-- The original global-positivity supplier is a sufficient specialization;
+neither route proves existence of a root or completeness of a rational search. -/
 theorem quintic_eye_on_walk_iff (q c : Polynomial ℚ)
     (hq : ∀ x : ℚ, 0 < q.eval x) (I : Cell) (w : List Turn) :
     ResolvableEye (q * c) (walk I w) ↔
       ResolvableEye c (walk I w) :=
-  polynomialResolves_mul_iff_of_pos q c (walk I w) hq
+  quintic_eye_on_walk_iff_of_endpoint_pos q c I w
+    (hq (walk I w).left) (hq (walk I w).right)
 
 /-- A nonempty source cell, used to rule out empty-carrier interpretations. -/
 def rootCell : Cell where
