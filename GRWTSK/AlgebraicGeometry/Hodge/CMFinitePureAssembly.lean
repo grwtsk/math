@@ -1,4 +1,5 @@
 import GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly
+import GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.FieldTheory.Galois
 
@@ -107,6 +108,22 @@ theorem canonicalFinitePureAssembly_eq_checked
 def CMFiniteCoefficientMultiplication (E : CMGaloisIntermediateField) :
     E.carrier ⊗[ℚ] E.carrier →ₗ[ℚ] E.carrier :=
   coefficientMul E.carrier
+
+/-- Original coefficient multiplication pure-tensor lemma, restored in its
+single algebraic owner after migration from the geometric consumer. -/
+@[simp] theorem CMFiniteCoefficientMultiplication_tmul
+    (E : CMGaloisIntermediateField) (a b : E.carrier) :
+    CMFiniteCoefficientMultiplication E (a ⊗ₜ[ℚ] b) = a * b :=
+  coefficientMul_tmul E.carrier a b
+
+/-- The finite coefficient multiplication map sends the unit pure
+tensor to the unit of the CM field. -/
+@[simp]
+theorem CMFiniteCoefficientMultiplication_one
+    (E : CMGaloisIntermediateField) :
+    CMFiniteCoefficientMultiplication E
+        ((1 : E.carrier) ⊗ₜ[ℚ] (1 : E.carrier)) = 1 := by
+  simp
 
 /-- Original fourfold multiplication, corrected to rTensor for the
 left-associated fourfold coefficient carrier. -/
@@ -247,6 +264,436 @@ theorem CMFiniteCanonicalPairedAssembly_unique
   apply pairedAssembly_unique E.carrier F
   intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
   exact hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Any two maps on the original finite-CM paired tensor carrier
+satisfying the original pure shuffle formula coincide. The proof now uses
+the independently checked generic uniqueness theorem. -/
+theorem CMFiniteFourTensorShuffle_unique
+    (E : CMGaloisIntermediateField)
+    (F G : CMFiniteFourPairedTensor E →ₗ[ℚ]
+      (CMFiniteFourCoefficientTensor E ⊗[ℚ]
+        CMFiniteCanonicalVectorTarget E))
+    (hF : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      F (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)
+    (hG : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      G (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) :
+    F = G := by
+  have hF' :
+      F = (GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour
+        ℚ E.carrier).toLinearMap := by
+    apply GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour_unique
+    intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    exact hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  have hG' :
+      G = (GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour
+        ℚ E.carrier).toLinearMap := by
+    apply GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour_unique
+    intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    exact hG a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  exact hF'.trans hG'.symm
+
+
+/-- The two-pair specialization of the generic checked shuffle. -/
+def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) :=
+  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleTwo ℚ E.carrier
+
+/-- The three-pair specialization of the generic checked shuffle. -/
+def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
+    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
+    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ]
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)) :=
+  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleThree ℚ E.carrier
+
+
+/-- Diagonal rational-linear action on the finite tensor square: both
+factors are conjugated by the same field automorphism. -/
+def CMFiniteDiagonalScalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) :=
+  σ.toLinearMap.lTensor E.carrier ∘ₗ
+    σ.toLinearMap.rTensor E.carrier
+
+/-- The diagonal action conjugates both entries of a pure tensor. -/
+@[simp]
+theorem CMFiniteDiagonalScalarConjugate_tmul
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a b : E.carrier) :
+    CMFiniteDiagonalScalarConjugate E σ (a ⊗ₜ[ℚ] b) =
+      (σ a) ⊗ₜ[ℚ] (σ b) := by
+  simp [CMFiniteDiagonalScalarConjugate, LinearMap.comp_apply]
+
+/-- Multiplication is equivariant under the diagonal action, not under
+the action on only one tensor factor. -/
+theorem CMFiniteCoefficientMultiplication_diagonal_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : E.carrier ⊗[ℚ] E.carrier) :
+    CMFiniteCoefficientMultiplication E
+        (CMFiniteDiagonalScalarConjugate E σ t) =
+      σ (CMFiniteCoefficientMultiplication E t) := by
+  induction t with
+  | tmul a b =>
+      simp [CMFiniteDiagonalScalarConjugate_tmul,
+        CMFiniteCoefficientMultiplication_tmul, map_mul]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- The rational tensor target for four coefficient entries, with the
+same parenthesization as the canonical four-vector target. -/
+
+/-- Iterated finite-CM coefficient multiplication. The construction uses
+the existing two-factor multiplication map and rational tensor functoriality,
+without postulating a fourfold multiplication operation. -/
+
+/-- Evaluation on a fourfold pure tensor is ordinary field multiplication. -/
+/-- Diagonal action on a threefold coefficient tensor: conjugate every
+coefficient entry, not merely the outermost tensor factor. -/
+def CMFiniteTripleCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) :=
+  σ.toLinearMap.lTensor (E.carrier ⊗[ℚ] E.carrier) ∘ₗ
+    (CMFiniteDiagonalScalarConjugate E σ).rTensor E.carrier
+
+/-- Diagonal action on all four coefficient factors. -/
+def CMFiniteFourCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    CMFiniteFourCoefficientTensor E →ₗ[ℚ]
+      CMFiniteFourCoefficientTensor E :=
+  σ.toLinearMap.lTensor
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ∘ₗ
+    (CMFiniteTripleCoefficientConjugate E σ).rTensor E.carrier
+
+/-- Explicit evaluation of the diagonal fourfold action on pure tensors. -/
+@[simp]
+theorem CMFiniteFourCoefficientConjugate_pure
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a b c d : E.carrier) :
+    CMFiniteFourCoefficientConjugate E σ
+      (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
+        (((σ a ⊗ₜ[ℚ] σ b) ⊗ₜ[ℚ] σ c) ⊗ₜ[ℚ] σ d) := by
+  simp [CMFiniteFourCoefficientConjugate,
+    CMFiniteTripleCoefficientConjugate,
+    CMFiniteDiagonalScalarConjugate, LinearMap.comp_apply]
+
+/-- Iterated multiplication commutes with diagonal Galois transport of all
+four coefficient entries. -/
+theorem CMFiniteFourCoefficientMultiplication_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : CMFiniteFourCoefficientTensor E) :
+    CMFiniteFourCoefficientMultiplication E
+        (CMFiniteFourCoefficientConjugate E σ t) =
+      σ (CMFiniteFourCoefficientMultiplication E t) := by
+  induction t with
+  | tmul t d =>
+      induction t with
+      | tmul t c =>
+          induction t with
+          | tmul a b =>
+              simp [CMFiniteFourCoefficientConjugate_pure,
+                CMFiniteFourCoefficientMultiplication_pure, map_mul]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- Canonical finite-CM pure-factor formula, prior to extension of
+coefficients into algebraic numbers. The coefficient entries multiply in
+E while the four vector entries remain a rational tensor. -/
+
+/-- The canonical finite switched pure tensor factors through the
+constructed rational-linear fourfold coefficient multiplication map.
+This is the first explicit link between the coefficient construction and
+the final finite assembly formula, without geometric assumptions. -/
+theorem canonicalFinitePureAssembly_eq_coefficientMultiplication
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      (CMFiniteFourCoefficientMultiplication E
+        (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄)) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simp [canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure]
+
+/-- Coefficient multiplication commutes with diagonal finite Galois
+transport in the canonical pure assembly. The rational vector entries
+are deliberately unchanged by the coefficient-only transport. -/
+theorem canonicalFinitePureAssembly_eq_conjugatedCoefficientProduct
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E
+        (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ =
+      (σ (CMFiniteFourCoefficientMultiplication E
+        (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄))) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simp [canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure, map_mul]
+
+
+/-- Rational balancing in coefficient/vector pair 1 of the canonical
+finite pure-factor assembly. -/
+theorem canonicalFinitePureAssembly_balance_1
+    (E : CMGaloisIntermediateField) (q : ℚ)
+    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
+    canonicalFinitePureAssembly E (q • a1) x1 a2 x2 a3 x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 (q • x1) a2 x2 a3 x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, Algebra.smul_def,
+    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
+    mul_left_comm, mul_comm]
+
+/-- Rational balancing in coefficient/vector pair 2 of the canonical
+finite pure-factor assembly. -/
+theorem canonicalFinitePureAssembly_balance_2
+    (E : CMGaloisIntermediateField) (q : ℚ)
+    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 (q • a2) x2 a3 x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 (q • x2) a3 x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, Algebra.smul_def,
+    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
+    mul_left_comm, mul_comm]
+
+/-- Rational balancing in coefficient/vector pair 3 of the canonical
+finite pure-factor assembly. -/
+theorem canonicalFinitePureAssembly_balance_3
+    (E : CMGaloisIntermediateField) (q : ℚ)
+    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 (q • a3) x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 (q • x3) a4 x4 := by
+  simp [canonicalFinitePureAssembly, Algebra.smul_def,
+    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
+    mul_left_comm, mul_comm]
+
+/-- Rational balancing in coefficient/vector pair 4 of the canonical
+finite pure-factor assembly. -/
+theorem canonicalFinitePureAssembly_balance_4
+    (E : CMGaloisIntermediateField) (q : ℚ)
+    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 (q • a4) x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 a4 (q • x4) := by
+  simp [canonicalFinitePureAssembly, Algebra.smul_def,
+    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
+    mul_left_comm, mul_comm]
+
+
+/-- The proposed pure-factor rule is additive in its first coefficient
+entry. This is a local consistency check for extending the rule through
+the first rational tensor-product universal property. -/
+theorem canonicalFinitePureAssembly_add_first
+    (E : CMGaloisIntermediateField)
+    (a b x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E (a + b) x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      canonicalFinitePureAssembly E a x₁ a₂ x₂ a₃ x₃ a₄ x₄ +
+      canonicalFinitePureAssembly E b x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [canonicalFinitePureAssembly, add_mul, TensorProduct.add_tmul]
+
+/-- The same pure-factor rule is additive in the first vector entry. -/
+theorem canonicalFinitePureAssembly_add_first_vector
+    (E : CMGaloisIntermediateField)
+    (a₁ x y a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E a₁ (x + y) a₂ x₂ a₃ x₃ a₄ x₄ =
+      canonicalFinitePureAssembly E a₁ x a₂ x₂ a₃ x₃ a₄ x₄ +
+      canonicalFinitePureAssembly E a₁ y a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
+    TensorProduct.tmul_add]
+
+/-- Additivity in finite pure-factor coefficient slot 2. -/
+theorem canonicalFinitePureAssembly_add_coefficient_2
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a3 x3 a4 x4 x2 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 (u + v) x2 a3 x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 u x2 a3 x3 a4 x4 +
+      canonicalFinitePureAssembly E a1 x1 v x2 a3 x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, add_mul, mul_add,
+    TensorProduct.add_tmul]
+
+/-- Additivity in finite pure-factor coefficient slot 3. -/
+theorem canonicalFinitePureAssembly_add_coefficient_3
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 x2 a4 x4 x3 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 (u + v) x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 u x3 a4 x4 +
+      canonicalFinitePureAssembly E a1 x1 a2 x2 v x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, add_mul, mul_add,
+    TensorProduct.add_tmul]
+
+/-- Additivity in finite pure-factor coefficient slot 4. -/
+theorem canonicalFinitePureAssembly_add_coefficient_4
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 x2 a3 x3 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 (u + v) x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 u x4 +
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 v x4 := by
+  simp [canonicalFinitePureAssembly, add_mul, mul_add,
+    TensorProduct.add_tmul]
+
+/-- Additivity in finite pure-factor vector slot 2. -/
+theorem canonicalFinitePureAssembly_add_vector_2
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 a3 x3 a4 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 (u + v) a3 x3 a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 u a3 x3 a4 x4 +
+      canonicalFinitePureAssembly E a1 x1 a2 v a3 x3 a4 x4 := by
+  simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
+    TensorProduct.tmul_add]
+
+/-- Additivity in finite pure-factor vector slot 3. -/
+theorem canonicalFinitePureAssembly_add_vector_3
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 x2 a3 a4 x4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 a3 (u + v) a4 x4 =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 u a4 x4 +
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 v a4 x4 := by
+  simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
+    TensorProduct.tmul_add]
+
+/-- Additivity in finite pure-factor vector slot 4. -/
+theorem canonicalFinitePureAssembly_add_vector_4
+    (E : CMGaloisIntermediateField)
+    (u v a1 x1 a2 x2 a3 x3 a4 : E.carrier) :
+    canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 a4 (u + v) =
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 a4 u +
+      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 a4 v := by
+  simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
+    TensorProduct.tmul_add]
+
+
+/-- Pure finite-CM coefficient conjugation respects the canonical
+fourfold multiplication formula. The vector tensor is unchanged because
+scalar conjugation acts only on the coefficient slot. -/
+theorem canonicalFinitePureAssembly_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ (canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      canonicalFinitePureAssembly E
+        (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ := by
+  simp [canonicalFinitePureAssembly,
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul,
+    map_mul]
+
+
+
+/-- Coefficient-only scalar conjugation of the authentic paired assembly,
+evaluated on a pure paired tensor.  This combines the algebraic assembly
+identity with the existing canonical pure-factor conjugation theorem. -/
+theorem CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)) =
+      CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedPure E
+          (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄) := by
+  rw [CMFiniteCanonicalPairedAssembly_originalFormula,
+    CMFiniteCanonicalPairedAssembly_originalFormula]
+  exact canonicalFinitePureAssembly_scalarConjugate E σ
+    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+
+/-- Conjugate coefficients only, in each of the four paired tensor factors.
+The second entry of each pair is unchanged. -/
+def CMFiniteFourPairedCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    CMFiniteFourPairedTensor E →ₗ[ℚ] CMFiniteFourPairedTensor E :=
+  let f := GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+    σ
+  _root_.TensorProduct.map
+    (_root_.TensorProduct.map (_root_.TensorProduct.map f f) f) f
+
+/-- The fourfold coefficient action evaluates componentwise on the
+original left-associated paired pure tensor. -/
+@[simp]
+theorem CMFiniteFourPairedCoefficientConjugate_pure
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourPairedCoefficientConjugate E σ
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+    CMFiniteFourPairedPure E
+      (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ := by
+  simp [CMFiniteFourPairedCoefficientConjugate,
+    CMFiniteFourPairedPure,
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul]
+
+attribute [local ext high] _root_.TensorProduct.ext in
+/-- The full paired-assembly conjugation equality is exactly the
+coefficient-only action, not a diagonal action on coefficient and vector. -/
+theorem CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    :
+    (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ).comp
+      (CMFiniteCanonicalPairedAssembly E) =
+    (CMFiniteCanonicalPairedAssembly E).comp
+      (CMFiniteFourPairedCoefficientConjugate E σ) := by
+  ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  change
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)) =
+    CMFiniteCanonicalPairedAssembly E
+      (CMFiniteFourPairedCoefficientConjugate E σ
+        (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄))
+  rw [CMFiniteFourPairedCoefficientConjugate_pure]
+  exact CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+    E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Pointwise consequence of the full linear-map equivariance identity. -/
+theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : CMFiniteFourPairedTensor E) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+        (CMFiniteCanonicalPairedAssembly E t) =
+      CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedCoefficientConjugate E σ t) := by
+  exact congrArg (fun f => f t)
+    (CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap E σ)
+
+
+/-- The canonical finite paired assembly is compatible with the coefficient
+action on a left-associated tensor of four arbitrary paired inputs.
+This is the exact form used by the finite four-factor construction; no
+Hodge or geometric hypothesis is involved. -/
+theorem CMFiniteCanonicalPairedAssembly_transport_four
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t₁ t₂ t₃ t₄ : E.carrier ⊗[ℚ] E.carrier) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (CMFiniteCanonicalPairedAssembly E
+        (((t₁ ⊗ₜ[ℚ] t₂) ⊗ₜ[ℚ] t₃) ⊗ₜ[ℚ] t₄)) =
+    CMFiniteCanonicalPairedAssembly E
+      (((GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₁
+          ⊗ₜ[ℚ]
+          GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₂)
+          ⊗ₜ[ℚ]
+          GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₃)
+          ⊗ₜ[ℚ]
+          GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₄) := by
+  rw [CMFiniteCanonicalPairedAssembly_scalarConjugate]
+  simp [CMFiniteFourPairedCoefficientConjugate]
 
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
