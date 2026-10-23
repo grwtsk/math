@@ -1,4 +1,5 @@
 import GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly
+import GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent
 import Mathlib.NumberTheory.NumberField.CMField
 import Mathlib.FieldTheory.Galois
 
