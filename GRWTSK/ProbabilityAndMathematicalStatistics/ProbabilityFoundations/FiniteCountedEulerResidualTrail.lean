@@ -299,4 +299,38 @@ theorem ResidualFreshTrail.closed_of_balanced_maximal
   omega
 
 
+
+/-- The empty residual fresh trail at a vertex uses no edge instances
+and is supported in every finite residual edge universe U. -/
+def ResidualFreshTrail.empty
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (U : Finset (CountedBinaryEdge m c))
+    (v : Fin m → Bool) :
+    ResidualFreshTrail m c U v v where
+  trail := FreshCountedTrail.empty m c v
+  supported := by simp [FreshCountedTrail.empty_used]
+
+/-- An actual counted edge in U gives a nonempty residual fresh
+trail with that exact edge instance, without any balance premise. -/
+def ResidualFreshTrail.single
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (U : Finset (CountedBinaryEdge m c))
+    (e : CountedBinaryEdge m c) (he : e ∈ U) :
+    ResidualFreshTrail m c U
+      (countedEdgeSource m c e) (countedEdgeTarget m c e) where
+  trail := FreshCountedTrail.single m c e
+  supported := by
+    rw [FreshCountedTrail.single_used]
+    exact Finset.singleton_subset_iff.mpr he
+
+/-- The residual single-edge trail uses precisely the chosen
+individual counted edge instance. -/
+theorem ResidualFreshTrail.single_used
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (U : Finset (CountedBinaryEdge m c))
+    (e : CountedBinaryEdge m c) (he : e ∈ U) :
+    (ResidualFreshTrail.single m c U e he).trail.used = {e} := by
+  exact FreshCountedTrail.single_used m c e
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
