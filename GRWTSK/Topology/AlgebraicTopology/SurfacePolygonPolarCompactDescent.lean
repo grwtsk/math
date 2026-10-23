@@ -28,6 +28,8 @@ open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent
 
+open _root_.Topology
+
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover
 

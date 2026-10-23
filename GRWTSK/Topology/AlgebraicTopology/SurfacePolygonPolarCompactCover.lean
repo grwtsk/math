@@ -8,6 +8,8 @@ Parent PR #1000 head 53befb09d0cf8c182f9b1f71a7b23d7df256652a.
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 import Mathlib.Topology.Instances.AddCircle.Defs
 import Mathlib.Topology.Compactness.Compact
+import Mathlib.Topology.Maps.Basic
+import Mathlib.Topology.Separation.Hausdorff
 import Mathlib.Tactic
 
 /-!
@@ -28,6 +30,8 @@ set_option autoImplicit false
 open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover
+
+open _root_.Topology
 
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 
@@ -88,7 +92,7 @@ theorem polarProductProjection_isQuotientMap_of_cover
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z)
     [T2Space (UnitAddCircle × unitInterval)] :
     IsQuotientMap polarProductProjection := by
-  have hcompact :=
+  have hcompact : IsQuotientMap compactPolarProjection :=
     compactPolarProjection_isQuotientMap_of_cover hcover
   have hcont := polarProductProjection_continuous
   -- The remaining composition/quotient descent is a source proof

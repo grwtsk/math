@@ -7,6 +7,7 @@ Parent PR #997 exact head 255b3199772cd7eb1f2ec8339e2bc5665f9a065a.
 -/
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarUnitCircleLift
 import Mathlib.Topology.Constructions
+import Mathlib.Topology.Maps.Basic
 import Mathlib.Topology.Compactness.Compact
 import Mathlib.Tactic
 
@@ -28,6 +29,8 @@ set_option autoImplicit false
 open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
+
+open _root_.Topology
 
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarUnitCircleLift
