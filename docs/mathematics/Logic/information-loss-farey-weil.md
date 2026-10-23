@@ -41,6 +41,22 @@ These declarations provide a concrete `ℂ`-valued, linear-on-coefficient-space 
 
 **Actual verification:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The commit and blob fix what should be replayed; they are not a Lean proof receipt. Full `lake build --wfail`, direct elaboration, fresh kernel checking, `#print axioms` and transitive unsafe/generated declaration audits are pending in [#1099](https://github.com/grwtsk/math/issues/1099), with prior supplier obligations unchanged.
 
+### Three arithmetic measurements recover the entire three-tent source space
+
+The earlier source-only statement showed merely that `thirdCoordinateReadout` distinguishes the corrected zero-moment vector from zero. The [exact kernel-line supplier](https://github.com/grwtsk/math/blob/cd4f6d91aca5be0c95baa55be1149b6b7014bb58/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean) (`coefficient_line_of_two_moments`, source blob `2b9d613a7cef0428754fdceab226907407ad5467`) is stronger: every three-tent coefficient vector with both actual moments zero is a scalar multiple of the concrete cofactor vector. Because the third cofactor `cofactorTwo` is nonzero, **two vectors with equal moment pairs and equal third coefficients are equal**.
+
+The new Lean source candidates `CanonicalSquareTentThirdCoordinateInformationLoss.augmentedThreeMomentProfile_injective` and `any_source_readout_factorsThrough_augmentedThreeMoments` consume the existing exact kernel-line result plus the generic image/inhabited-source factorization theorem. On the **three-dimensional complex coefficient space** `Combination 2`, the map
+
+```
+u ↦ (bombieriMomentProfile u, u (2 : Fin 3))
+```
+
+is injective, and every readout of those three coordinates factors set-theoretically through the three measurements. The proof uses subtraction, the original two-moment kernel theorem and `cofactorTwo_ne_zero`. The decoder is classical and no explicit analytic inverse, operator norm, positivity, measure-theoretic regularity or computational bound is asserted.
+
+**Scope:** This is source-coordinate reconstruction, not global injectivity on Bombieri's full test class, not an identity between the third coefficient and the classical Guinand–Weil Hermitian form, and not RH. It supersedes only the earlier limitation that this *particular augmented three-coordinate map* was not yet proved injective. The unverified root, other Farey and spectral comparisons, and unresolved analytic hypotheses remain open.
+
+**Status:** The source is integrated as `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`; actual Lean compilation, fresh kernel checking and complete transitive axiom/unsafe audit are pending at the immutable integration SHA. The paper-to-Lean ideas ledger retains Bombieri's title, source and exact two-moment hypotheses, without falsely attributing this extra arithmetic theorem to the paper.
+
 ### Native Farey group-channel obstruction
 
 **Exact source:** `GRWTSK.NumberTheory.Farey.GroupSpectralChannel` (blob `fc42376a6c12f7729076564cfd223bf8d1b2b75b`) states that a complex `2×2` matrix projector `P`, if idempotent and commuting with **both** native Farey shear matrices, equals zero or identity. The new adapter transports this to the pointwise readout on `Fin 2 → ℂ`: either every vector is sent to zero or every vector is unchanged. A simultaneous nonzero retained signal and nontrivially changed signal is impossible.
