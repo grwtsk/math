@@ -1,4 +1,4 @@
-import GRWTSK.Algebra.QuarticGaloisMatching
+import GRWTSK.Algebra.PolygonalQuarticSplitting
 
 /-!
 # Base-field quartic adjacency resolvent
