@@ -514,6 +514,35 @@ theorem twoModeHeat_source_and_readout_budget
   rw [heq] at h₂
   exact h₂.trans (add_le_add h₁ hReadout)
 
+
+/-- A strictly positive decay rate yields an explicit cutoff at which
+the exponential budget is no larger than the original amplitude.
+This is an elementary normalization test, not a theta-tail integral. -/
+theorem exponentialTailBudget_at_zero
+    (C c : ℝ) (hc : 0 < c) :
+    exponentialTailBudget C c 0 = C / c := by
+  simp [exponentialTailBudget]
+
+/-- Splitting a nonnegative tail budget into independently checked
+components cannot make the total estimate smaller than either part. -/
+theorem finiteHeatErrorBudget_source_le_total
+    (e : FiniteHeatErrorBudget)
+    (hq : 0 ≤ e.quadrature) (ht : 0 ≤ e.tail)
+    (hr : 0 ≤ e.rounding) :
+    e.source ≤ e.total := by
+  unfold FiniteHeatErrorBudget.total
+  linarith
+
+/-- The omitted-tail contribution is not allowed to disappear from a
+nonnegative complete error budget. -/
+theorem finiteHeatErrorBudget_tail_le_total
+    (e : FiniteHeatErrorBudget)
+    (hs : 0 ≤ e.source) (hq : 0 ≤ e.quadrature)
+    (hr : 0 ≤ e.rounding) :
+    e.tail ≤ e.total := by
+  unfold FiniteHeatErrorBudget.total
+  linarith
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
