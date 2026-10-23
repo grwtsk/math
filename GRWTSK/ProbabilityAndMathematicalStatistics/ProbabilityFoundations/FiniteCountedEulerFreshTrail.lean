@@ -98,4 +98,50 @@ theorem FreshCountedTrail.append_unused_card
     Finset.mem_sdiff.mpr ⟨Finset.mem_univ _, fresh⟩
   exact Finset.card_erase_of_mem he
 
+
+/-- Every finite counted walk starts at a source-compatible vertex
+and ends at the target of its last edge, by construction. A fresh
+trail with no unused outgoing edge is maximal at its terminal
+vertex, without claiming it is already a closed Euler circuit. -/
+def FreshCountedTrail.MaximalAtFinish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish) : Prop :=
+  ∀ e : CountedBinaryEdge m c,
+    countedEdgeSource m c e = finish → e ∈ T.used
+
+/-- The negation of terminal maximality supplies an ACTUAL fresh
+counted edge with the correct incidence, not just an edge label. -/
+theorem FreshCountedTrail.exists_append_of_not_maximal
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (h : ¬ T.MaximalAtFinish) :
+    ∃ e : CountedBinaryEdge m c,
+      ∃ fresh : e ∉ T.used,
+        countedEdgeSource m c e = finish := by
+  classical
+  unfold FreshCountedTrail.MaximalAtFinish at h
+  push_neg at h
+  obtain ⟨e, hsource, hnot⟩ := h
+  exact ⟨e, hnot, hsource⟩
+
+/-- Every nonmaximal finite counted trail has a genuine strict
+extension with exactly one fewer unused edge instance. -/
+theorem FreshCountedTrail.exists_strict_extension
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (h : ¬ T.MaximalAtFinish) :
+    ∃ e : CountedBinaryEdge m c,
+      ∃ fresh : e ∉ T.used,
+        ∃ incident : countedEdgeSource m c e = finish,
+          (Finset.univ \
+            (T.append e fresh incident).used).card + 1 =
+              (Finset.univ \ T.used).card := by
+  obtain ⟨e, fresh, incident⟩ := T.exists_append_of_not_maximal h
+  exact ⟨e, fresh, incident,
+    T.append_unused_card e fresh incident⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
