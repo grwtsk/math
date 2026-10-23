@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-squarefree-divisor-reduction-894-v0.1"
+owner_repository = "grwtsk/math"
+issue = 894
+parent_issue = 892
+parent_pr = 893
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_SQUAREFREE_DIVISOR_REDUCTION_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSquarefreeDivisorReduction"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSquarefreeDivisorReduction"
+
+[source_binding]
+stacked_parent_revision = "4f3c0e4afcc889838228f346d6c17af2d94315d8"
+candidate_branch = "research/rh-degenerate-squarefree-divisor-894-20261022"
+theorem_source_commit = "deac3910557ef11c6c9a99aa6e29ffcbd180d673"
+mathematical_note_commit = "ad3b8f0e81148565cfdd951903a42da8d7a5ec24"
+
+[evidence_states]
+source_draft = true
+square_divisor_set_defined = true
+mobius_square_identity_explicit_premise = true
+mobius_square_identity_repository_proved = false
+conditional_divisor_square_rewrite_scripted = true
+squarefree_weight_discarded = false
+restricted_binary_interface_defined = true
+restricted_binary_estimate_proved = false
+four_distinct_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
