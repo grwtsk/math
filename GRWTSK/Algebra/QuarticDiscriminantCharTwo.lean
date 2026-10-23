@@ -71,4 +71,25 @@ theorem monicQuarticDiscriminant_charTwo
     exact neg_eq_iff_add_eq_zero.mpr hh
   simp only [hneg]
   ring
+
+/-- In a characteristic-two field, the quartic discriminant vanishes
+exactly when its explicit square-root expression vanishes. -/
+theorem monicQuarticDiscriminant_ne_zero_iff_charTwoRoot
+    {F : Type*} [Field F] (h2 : (2 : F) = 0)
+    (A B C D : F) :
+    monicQuarticDiscriminant A B C D ≠ 0 ↔
+      charTwoDiscriminantRoot A B C D ≠ 0 := by
+  rw [monicQuarticDiscriminant_charTwo h2]
+  simp
+
+/-- In a characteristic-two field, the discriminant's vanishing is
+detected by the same root expression, without using a sign character. -/
+theorem monicQuarticDiscriminant_eq_zero_iff_charTwoRoot
+    {F : Type*} [Field F] (h2 : (2 : F) = 0)
+    (A B C D : F) :
+    monicQuarticDiscriminant A B C D = 0 ↔
+      charTwoDiscriminantRoot A B C D = 0 := by
+  rw [monicQuarticDiscriminant_charTwo h2]
+  simp
+
 end GRWTSK.Algebra.QuarticDiscriminantCharTwo
