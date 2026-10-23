@@ -359,4 +359,31 @@ theorem ResidualFreshTrail.exists_nonempty_closed_of_edge
         exact Finset.mem_singleton_self e)⟩
 
 
+
+/-- A residual trail constructed inside U is automatically edge-disjoint
+from a preexisting circuit whose used instances are disjoint from U.
+This supplies the exact freshness premise for cycle splicing. -/
+theorem ResidualFreshTrail.disjoint_of_universe_disjoint
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b)
+    (used : Finset (CountedBinaryEdge m c))
+    (hdisj : Disjoint used U) :
+    Disjoint used R.trail.used :=
+  hdisj.mono_right R.supported
+
+/-- In the canonical residual universe, every residual trail is
+edge-disjoint from the existing counted circuit. -/
+theorem ResidualFreshTrail.disjoint_from_existing
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    {v w : Fin m → Bool}
+    (R : ResidualFreshTrail m c (Finset.univ \ T.used) v w) :
+    Disjoint T.used R.trail.used := by
+  apply R.disjoint_of_universe_disjoint T.used
+  exact Finset.disjoint_sdiff_self_left
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
