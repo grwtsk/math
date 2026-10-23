@@ -1,0 +1,197 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-edge-open-1043-v0.1"
+issue = 1043
+owner_repository = "grwtsk/math"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen"
+
+[source_binding]
+parent_pr = 1042
+parent_revision = "753a46203fd2a45c199d5403898b3d1e46e03e85"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWEdgeOpen.lean"
+new_module_git_blob = "57398c48aad597fba55aae433db057ffff1e3f68"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-edge-open.md"
+note_blob = "66c85d9096458754178523d45450e8d34e1e141e"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+arbitrary_open_subset_saturation_candidate = true
+open_edge_image_candidate = true
+open_embedding_candidate = true
+closure_finiteness_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+manifold_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen"
+authored_public_declaration_count = 13
+imports = [
+  "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeInterior",
+  "Mathlib.Topology.Maps.Basic"
+]
+
+[[generated_source_notices]]
+name = "cornerDiscreteTopology"
+kind = "local instance"
+elaboration_status = "NOT_RUN"
+
+[[generated_source_notices]]
+name = "cornerDiscreteSpace"
+kind = "local instance"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.strictUnitInteriorCarrier"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.strictUnitInteriorCarrier_isOpen"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.subtypeVal_image_isOpen"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdgeSourcePoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdge_eq_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdge_eq_opposite_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdgeSaturation"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdgeSaturation_isOpen"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.boundaryProjection_preimage_positiveOpenEdge_image"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdge_image_isOpen"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdge_isOpenMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdge_isOpenEmbedding"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWEdgeOpen.positiveOpenEdge_isEmbedding"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-boundary-quotient"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-strict-unit-interval"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-carrier-open"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "subtype-image-open"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-positive-side"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reversed-negative-side"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-endpoint-seam-in-saturation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-two-copy-saturation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-preimage-identity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-open-criterion"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "arbitrary-open-subset"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "open-map-not-continuity-alone"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "injectivity-consumed"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "open-embedding-api"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-closure-finiteness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-weak-topology"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homology-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-arithmetic-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
