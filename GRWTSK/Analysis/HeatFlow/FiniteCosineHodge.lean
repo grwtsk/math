@@ -243,6 +243,48 @@ theorem twoModeHeat_finite_heat_equation (a b s u v z : ℝ) :
   rw [(hasDerivAt_twoModeHeat_time a b s u v z).deriv,
     (hasDerivAt_twoModeHeat_space_derivative a b s u v z).deriv]
 
+
+/-- A quantitative finite error budget, with source and quadrature defects
+kept separate from the omitted tail and rounding. -/
+structure FiniteHeatErrorBudget where
+  source : ℝ
+  quadrature : ℝ
+  tail : ℝ
+  rounding : ℝ
+
+/-- The sum of all four named errors. -/
+def FiniteHeatErrorBudget.total (e : FiniteHeatErrorBudget) : ℝ :=
+  e.source + e.quadrature + e.tail + e.rounding
+
+/-- A finite chain of independently bounded errors yields the complete
+four-term estimate. No term is silently discarded. -/
+theorem finiteHeatErrorBudget_bound
+    (actual sourceApprox quadratureApprox truncated rounded : ℝ)
+    (e : FiniteHeatErrorBudget)
+    (hs : |actual - sourceApprox| ≤ e.source)
+    (hq : |sourceApprox - quadratureApprox| ≤ e.quadrature)
+    (ht : |quadratureApprox - truncated| ≤ e.tail)
+    (hr : |truncated - rounded| ≤ e.rounding) :
+    |actual - rounded| ≤ e.total := by
+  have h₁ := (abs_add_le (actual - sourceApprox)
+    (sourceApprox - quadratureApprox)).trans (add_le_add hs hq)
+  have h₂ := (abs_add_le (quadratureApprox - truncated)
+    (truncated - rounded)).trans (add_le_add ht hr)
+  have h := (abs_add_le (actual - quadratureApprox)
+    (quadratureApprox - rounded))
+  have heq₁ : (actual - sourceApprox) +
+      (sourceApprox - quadratureApprox) = actual - quadratureApprox := by ring
+  have heq₂ : (quadratureApprox - truncated) +
+      (truncated - rounded) = quadratureApprox - rounded := by ring
+  rw [heq₁] at h₁
+  rw [heq₂] at h₂
+  have heq : (actual - quadratureApprox) +
+      (quadratureApprox - rounded) = actual - rounded := by ring
+  rw [heq] at h
+  exact h.trans (add_le_add h₁ h₂) |>.trans_eq (by
+    unfold FiniteHeatErrorBudget.total
+    ring)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
