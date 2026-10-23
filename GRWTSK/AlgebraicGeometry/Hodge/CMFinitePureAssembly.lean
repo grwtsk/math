@@ -672,5 +672,28 @@ theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
   exact congrArg (fun f => f t)
     (CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap E σ)
 
+
+/-- The canonical finite paired assembly is compatible with the coefficient
+action on a left-associated tensor of four arbitrary paired inputs.
+This is the exact form used by the finite four-factor construction; no
+Hodge or geometric hypothesis is involved. -/
+theorem CMFiniteCanonicalPairedAssembly_transport_four
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t₁ t₂ t₃ t₄ : E.carrier ⊗[ℚ] E.carrier) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (CMFiniteCanonicalPairedAssembly E
+        (((t₁ ⊗ₜ[ℚ] t₂) ⊗ₜ[ℚ] t₃) ⊗ₜ[ℚ] t₄)) =
+    CMFiniteCanonicalPairedAssembly E
+      (((GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₁
+          ⊗ₜ[ℚ]
+          GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₂)
+          ⊗ₜ[ℚ]
+          GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₃)
+          ⊗ₜ[ℚ]
+          GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ t₄) := by
+  rw [CMFiniteCanonicalPairedAssembly_scalarConjugate]
+  simp [CMFiniteFourPairedCoefficientConjugate]
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
