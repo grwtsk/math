@@ -1,0 +1,57 @@
+# Passive source-bound replay request, not an execution receipt.
+schema = "rh-restricted-frame-residual-v0.1"
+repository = "grwtsk/math"
+issue = 966
+base_branch = "main"
+base_commit = "a3b0e1ee3890708162db7d4c7e228c1b22e66abf"
+base_tree = "5117abe32cdd8d90510950d11d320e9e479d3c3f"
+branch = "research/rh-restricted-frame-residual-966-20261022"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Moebius/RestrictedFrameResidualComparison.lean"
+source_blob = "63ec7f9d2e172035d8df42ae383ce3eba1adf944"
+import_source = "GRWTSK/NumberTheory/Moebius/RestrictedAdditiveMultiplicativeBridgeAudit.lean"
+import_source_blob = "bcfb0dbdef5e924d96cc681f265414dd0708de5d"
+import_parent_source = "GRWTSK/NumberTheory/Moebius/NormControlledAdditiveMultiplicativeBridge.lean"
+import_parent_blob = "b52be1b426ae6d42af49314a3fe737557ef9b60c"
+note = "docs/mathematics/NumberTheory/Moebius/restricted-frame-residual-966.md"
+
+evidence_state = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[checks]
+require_pinned_toolchain = true
+require_exact_source_blob = true
+require_transitive_import_closure = true
+require_kernel_replay = true
+require_axiom_inspection = true
+require_no_sorry_or_unsafe_in_target = true
+require_hostile_control_review = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.finitePacketEnergy_add_le_two"
+kind = "exact_finite_inequality"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.finitePacketEnergy_le_reconstruction_add_residual"
+kind = "exact_finite_decomposition_bound"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.hasRestrictedLowerFrameBound_of_small_reconstructionResidual"
+kind = "conditional_positive_restricted_lower_frame"
+
+[hostile_controls]
+tests = [
+  "q must satisfy 0 <= q and 2*q < 1; no weak q=1 reconstruction",
+  "C is positive; denominator 2*C cannot vanish",
+  "reconstruction and residual estimates are both on exactly the same D",
+  "do not replace linearPart energy by the affine observed energy",
+  "ambient noninjectivity outside D does not refute a restricted frame",
+  "no actual arithmetic operator/adapter, no RH or analytic estimate"
+]
