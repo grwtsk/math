@@ -1,0 +1,126 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-orbit-closure-1032-v0.1"
+issue = 1032
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure"
+
+[source_binding]
+parent_pr = 1031
+parent_revision = "32373e549a588881f851c485c8df9efc5cbd4be3"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWOrbitClosure.lean"
+new_module_git_blob = "0fba7a07dcb100bf26f2422a574ccf18553863cf"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-orbit-closure.md"
+note_blob = "00429da1ec62c154d8045fd7d02c0ab24430dafc"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+two_point_orbit_candidate = true
+pairwise_edge_disjointness_proved = false
+open_cell_embeddings_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure"
+authored_declaration_count = 7
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWInteriorOrbit"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.oppositeBoundaryPoint_involutive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.InteriorOrbit"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.interior_step_orbit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.interiorOrbit_symm"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.interiorOrbit_trans"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.interior_connected_orbit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure.interior_projection_eq_orbit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-boundary-EqvGen"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "opposite-involution"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "Fin4-normalization"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-interval-reversal"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-preservation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonendpoint-generalization"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "symmetry"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "transitivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "two-point-orbit"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-exact"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-positive-cell-injectivity-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-pairwise-disjointness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

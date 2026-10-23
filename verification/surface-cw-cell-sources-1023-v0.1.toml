@@ -1,0 +1,125 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-cell-sources-1023-v0.1"
+issue = 1023
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources"
+
+[source_binding]
+parent_pr = 1022
+parent_revision = "6c896a797fd9b460a758c8e8345d5ea17589c7aa"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWCellSources.lean"
+new_module_git_blob = "faec3ea219731ca9cf662a1d8bf5ce2685836dc1"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-cell-sources.md"
+note_blob = "2c1c764dd6d70c2677f816e6e6183e4d6911f9d3"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+open_cell_embeddings_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources"
+authored_declaration_count = 7
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.polygonZeroCell"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.allCorners_eq_polygonZeroCell"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.positiveOneCell"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.positiveOneCell_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.negativeA_eq_positiveA_reverse"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.negativeB_eq_positiveB_reverse"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellSources.positiveOneCell_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-paired-topology"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "one-vertex"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-handles"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-a-b"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-a"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-b"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-edges"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-zero"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-open-cell-embedding"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
