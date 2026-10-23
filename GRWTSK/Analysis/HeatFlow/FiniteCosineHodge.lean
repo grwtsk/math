@@ -111,6 +111,26 @@ theorem twoModeHeat_source_separation
       b * modeHeat s v * Real.cos (z * v) :=
   sourceIdentity
 
+
+/-- Exact scalar two-mode source error under a common readout. -/
+theorem twoModeHeat_source_error
+    (a b a' b' s u v z : ℝ) :
+    twoModeHeat a b s u v z - twoModeHeat a' b' s u v z =
+      (a - a') * modeHeat s u * Real.cos (z * u) +
+      (b - b') * modeHeat s v * Real.cos (z * v) := by
+  unfold twoModeHeat coefficient
+  ring
+
+/-- A finite source approximation is bounded by its two coefficient errors,
+without assuming cancellation or any zeta-kernel identification. -/
+theorem twoModeHeat_source_error_bound
+    (a b a' b' s u v z e₁ e₂ : ℝ)
+    (h₁ : |(a - a') * modeHeat s u * Real.cos (z * u)| ≤ e₁)
+    (h₂ : |(b - b') * modeHeat s v * Real.cos (z * v)| ≤ e₂) :
+    |twoModeHeat a b s u v z - twoModeHeat a' b' s u v z| ≤ e₁ + e₂ := by
+  rw [twoModeHeat_source_error]
+  exact (abs_add_le _ _).trans (add_le_add h₁ h₂)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
