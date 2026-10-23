@@ -27,6 +27,8 @@ noncomputable section
 
 namespace GRWTSK.NumberTheory.Farey.GroupSpectralChannel
 
+open GRWTSK.NumberTheory.Farey.GroupSuperwalk
+
 /-- An invariant idempotent is globally zero or globally identity on the
 native two-coordinate carrier; there is no intermediate readout map. -/
 theorem native_projector_erases_all_or_retains_all
