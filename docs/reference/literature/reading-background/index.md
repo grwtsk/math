@@ -1,6 +1,6 @@
-# Desktop literature index
+# Literature index
 
-Provisional metadata; see catalog.json for authors, identifiers, date claims and exact library paths. Reading status is unknown.
+Provisional metadata and subject assignments; reading status remains unknown. Full bibliographic claims and library paths are in catalog.json.
 
 | Subject | Reference / opening heading candidate | Asset SHA-256 prefix |
 | --- | --- | --- |
@@ -244,3 +244,36 @@ Provisional metadata; see catalog.json for authors, identifiers, date claims and
 | ProbabilityCombinatorics | Ramsey Numbers Christos Nestor Chachamis May 13, 2018 | 5a76fddfa389 |
 | LogicAndComputation | Proof-theoretic uniform boundedness and bounded collection principles and countable Heine–Borel compactness | 431a40a2fe65 |
 | NumberTheory | MORE THAN TWO THIRDS OF THE ZEROS OF THE RIEMANN ZETA FUNCTION LIE ON THE CRITICAL LINE CLAUDE | 6792988e6cd0 |
+| ProbabilityCombinatorics | Discrete Mathematics 340 (2017) 3183–3196 Contents lists available at ScienceDirect Discrete Mathematics journal homepage: www.elsevier.com/locate/disc Geodesics on the regular tetrahedron and the cube Diana Davis a , Victor Dods b , Cynthia Traub c , Jed Yang d a Mathematics Department, Northwestern University, Evanston, IL 60208, USA Department of Mathematics, University of California Santa Cruz, Santa Cruz, CA 95064, USA c University Libraries, Washington University in St. Louis, St. Louis, M | 3b46c20b4ca9 |
+| GeometryTopology | arXiv:1202.6036v2 [math.DG] 28 Mar 2013 MIN-MAX THEORY AND THE WILLMORE CONJECTURE FERNANDO C. MARQUES AND ANDRÉ NEVES Abstract. In 1965, T. J. Willmore conjectured that the integral of the square of the mean curvature of a torus immersed in R3 is at least 2π 2 . We prove this conjecture using the min-max theory of minimal surfaces. Contents 1. 2. Introduction Main ideas and organization | 0883144a55cf |
+| Analysis | EVERYTHING IS ILLUMINATED arXiv:1407.2975v1 [math.DS] 10 Jul 2014 SAMUEL LELIÈVRE, THIERRY MONTEIL, AND BARAK WEISS Abstract. We study geometrical properties of translation surfaces: the finite blocking property, bounded blocking property, and illumination properties. These are elementary properties which can be fruitfully studied using the dynamical behavior of the SL(2, R)-action on the moduli space of translation surfaces. We characterize surfaces with the finite blocking property and bounde | 6ecc6a948ae7 |
+| Analysis | arXiv:1411.1827v1 [math.DS] 7 Nov 2014 TRANSLATION SURFACES AND THEIR ORBIT CLOSURES: AN INTRODUCTION FOR A BROAD AUDIENCE ALEX WRIGHT Translation surfaces can be defined in an elementary way via polygons, and arise naturally in in the study of various basic dynamical systems. They can also be defined as differentials on Riemann surfaces, and have moduli spaces called strata that are related to the moduli space of Riemann surfaces. There is a GL(2, R) action on each stratum, and to solve most pr | 59b3dd43b1e1 |
+| Analysis | pyFFS: A Python Library for Fast Fourier Series Computation and Interpolation with GPU Acceleration | 4e6817ad3dfe |
+| Algebra | QUASI-ISOGENY GROUPS OF SUPERSINGULAR ABELIAN SURFACES VIA PRO-ÉTALE FUNDAMENTAL GROUPS arXiv:2203.09542v2 [math.AG] 21 Nov 2023 THIBAUD VAN DEN HOVE Abstract. We consider a Jb (Qp )-torsor on the supersingular locus of the Siegel threefold constructed by Caraiani-Scholze, and show that it induces an isomorphism between a free group on a finite number of generators, and the group of self-quasi-isogenies of a supersingular abelian surface, respecting a principal polarization and a prime-to-p lev | 51c4c9f0b410 |
+| LogicAndComputation | Feasibilism, Explication, and the Cobham-Edmonds Thesis | 26933a5f4d9c |
+| NumberTheory | A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.1 | f4ec0ff737d2 |
+| NumberTheory | A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.2 | cda859bfce64 |
+| NumberTheory | A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.3 | 9884a6a5efb7 |
+| NumberTheory | A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion | cbbfa2c78fda |
+| NumberTheory | Theta-Eisenstein-Hecke Local-to-Global Compatibility | e49b4fba58be |
+| GeometryTopology | Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution | 8f78a9815cde |
+| NumberTheory | Quantitative Reconstruction Norm-Floor Compiler | effab6e7692e |
+| NumberTheory | Quantitative Reconstruction Norm-Floor Compiler | 8090de7e2acf |
+| NumberTheory | Global No-Disappearance and Boundary Adequacy, Revision 1.1 | 5d78840a4167 |
+| NumberTheory | P08 v1.1: Relative Trace, Ground, Gauge, and Boundary Quotient Stability | a951ebf04f79 |
+| NumberTheory | P08: Relative Trace, Ground, Gauge, and Boundary Quotient Stability | 7ca107df41bb |
+| NumberTheory | Prime-Complete Logarithmic Frame Faithfulness | 7d13a6d60790 |
+| NumberTheory | Prime-Complete Logarithmic Frame Faithfulness | 3e667d873ecf |
+| NumberTheory | Prime-Complete Logarithmic Frame Faithfulness | 7314fd796114 |
+| NumberTheory | P10: Fredholm-Hodge Comparator Naturality and Endpoint Reversal | 82f838ae5214 |
+| NumberTheory | Projective Equality and Two-Fiber Geometry | dc23aae7df72 |
+| LogicAndComputation | Proof-Carrying Symbol–Syntax–Grammar Kernel | e19a42c2d74c |
+| NumberTheory | JOURNAL OF THE AMERICAN MATHEMATICAL SOCIETY Volume 20, Number 1, January 2007, Pages 1–23 S 0894-0347(06)00526-1 Article electronically published on March 8, 2006 WEIL-PETERSSON VOLUMES AND INTERSECTION THEORY ON THE MODULI SPACE OF CURVES MARYAM MIRZAKHANI 1. Introduction In this paper, we establish a relationship between the Weil-Petersson volume Vg,n (b) of the moduli space Mg,n (b) of hyperbolic Riemann surfaces with geodesic boundary components of lengths b1 , . . . , bn , and the intersec | 6c3823be6f3a |
+| NumberTheory | Sustained Expression and Interstitial Completion | 655492306cf5 |
+| NumberTheory | ASBN–P04: Exact Pickup, Closure, and a Universal-Interface Obstruction Research formalization with OpenAI Codex assistance October 10, 2026 Result. The universal one-block estimate in ASBN–P04/0.1 is false. A finite source-generated block of primes near the observation horizon has harmonic mass tending to zero and energy of order eT /T 2 . It contradicts every nonnegative reserve with a polynomial initial bound in one step from the empty state. This meets success criterion 4. The exact pickup id | cf1c7cee16c0 |
+| NumberTheory | Fibered Higher-History Authority for Frobenius–Hodge Reconstruction | eb72e67be7cb |
+| NumberTheory | Reconstruction-First Publication Atlas | 1113859d6d1f |
+| GeometryTopology | Geodesics on Regular Polyhedra with Endpoints at the Vertices | 5529b173b416 |
+| NumberTheory | Hensel Lifting on p-Adic Fibers: A Unified Grammar of Algebraic Series, Weil–Petersson Geometry, and Suzuki Screw Convolution | dbf2a57184a8 |
+| NumberTheory | P10: Fredholm-Hodge Comparator Naturality and Endpoint Reversal | fd60a933105e |
+| NumberTheory | Anchored Sieve Carpets and Lifted-Exponent Geometry | 808a5117cf67 |
