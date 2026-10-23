@@ -134814,5 +134814,8 @@
       "scope": "Unpublished-research classification for PDFs under docs at commit aab35df4b766ce864e95b4505e3a2c7ddc43d158; prior graveyard intake retained without duplicate addition."
     }
   ],
-  "idea_target_review_file": "unmatched-idea-followup.json"
+  "idea_target_review_file": "unmatched-idea-followup.json",
+  "idea_target_review_followups": [
+    "unresolved-idea-broader-search.json"
+  ]
 }

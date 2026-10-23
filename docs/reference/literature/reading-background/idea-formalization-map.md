@@ -1,5 +1,7 @@
 # Ideas and Lean formalizations by taxonomy
 
+Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+
 Current follow-up for the **70 historically unresolved ideas**: [taxonomy-organized target search](unmatched-idea-followup.md). It records five narrower conditional fragments and distinguishes repair candidates, analogies, obstructions and unresolved claims. Historical statuses below are retained.
 
 279 version-bound idea records across all 274 owner-designated unpublished PDF versions, with 226 pinned code links. All **233 formerly screened versions** now have substantive decisions from selected complete pages beyond screening; the earlier 41 comparisons remain intact. No full-manuscript or independent kernel audit is claimed.
@@ -26,6 +28,8 @@ Expanded code baseline: `549d145e5ab7b9faaacab46fd9b6123d907ee1f3`. The original
 ### Conjectures and Proofs for Galois-Theoretic Extensions of Automorphic L-Functions — `1574517a994e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1574517a994e89cc:motivic-period-orbits`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#1574517a994e89cc-motivic-period-orbits).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1574517a994e89cc-motivic-period-orbits).
 
@@ -55,6 +59,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1961da5dba9ca115:motivic-period-orbits`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#1961da5dba9ca115-motivic-period-orbits).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1961da5dba9ca115-motivic-period-orbits).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2>) — Conjectures 1–3 and proof sketches.
@@ -83,6 +89,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>) — §2–5, representation embeddings and proposed residue transfer.
@@ -109,6 +117,8 @@ Missing bridges and uncertainty:
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `67b33f06a609`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
@@ -193,6 +203,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>) — §3.1–3.2, §4 and appendix A.
@@ -220,6 +232,8 @@ Missing bridges and uncertainty:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#553f237f431fc299-kl-positive-to-residue-gap).
 
@@ -360,6 +374,8 @@ Missing bridges and uncertainty:
 ### Residue Suppression via Embeddings and Geometric Langlands Localization — `bd284739968e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
@@ -529,6 +545,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a748ea4b4592e7ab:purity-frobenius-versus-global-zeros`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
 
 Paper: [PDF page 82](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=82>), [PDF page 87](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=87>), [PDF page 91](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=91>) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
@@ -556,6 +574,8 @@ Missing bridges and uncertainty:
 ### The Ring—A Comprehensive Framework for Spectral Purity, Motivic Cohomology, and Fourier-Mukai Symmetries — `e686e3fe101e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:e686e3fe101ea8bf:purity-frobenius-versus-global-zeros`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
@@ -981,6 +1001,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:465f76a208948832:absolute-error-integral-scale`
 
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#465f76a208948832-absolute-error-integral-scale).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#465f76a208948832-absolute-error-integral-scale).
 
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=7>), [PDF page 9](</Users/think/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=9>) — §2.4 assumption3 and §3.4–3.5.
@@ -1008,6 +1030,8 @@ Missing bridges and uncertainty:
 ### A Hybrid Approach to Proving the Riemann Hypothesis: Cross-Domain Consistency and Error Propagation — `d8d87416bd19`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d8d87416bd1943d6:absolute-error-integral-scale`
+
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d8d87416bd1943d6-absolute-error-integral-scale).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d8d87416bd1943d6-absolute-error-integral-scale).
 
@@ -3355,6 +3379,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0b655e075a1e7798:dimension-decay-versus-fixed-source`
 
+Current broader-search assessment: **repair-candidate**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0b655e075a1e7798-dimension-decay-versus-fixed-source).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0b655e075a1e7798-dimension-decay-versus-fixed-source).
 
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=4>), [PDF page 8](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=8>) — §2.2 and §5.1.
@@ -4115,6 +4141,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0db38ec749b78bd0:derived-vanishing-zero-comparison`
 
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0db38ec749b78bd0-derived-vanishing-zero-comparison).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0db38ec749b78bd0-derived-vanishing-zero-comparison).
 
 Paper: [PDF page 13](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=13>), [PDF page 17](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=17>) — §3.1.2 and §3.2.3–3.2.4.
@@ -4142,6 +4170,8 @@ Missing bridges and uncertainty:
 ### A Derived Geometric Framework for the Riemann Hypothesis — `a9d476a5336e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a9d476a5336e2064:derived-vanishing-zero-comparison`
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a9d476a5336e2064-derived-vanishing-zero-comparison).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a9d476a5336e2064-derived-vanishing-zero-comparison).
 
@@ -4171,6 +4201,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:34ebca88596ffc41:twisted-vanishing-versus-untwisted-source`
 
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#34ebca88596ffc41-twisted-vanishing-versus-untwisted-source).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#34ebca88596ffc41-twisted-vanishing-versus-untwisted-source).
 
 Paper: [PDF page 18](</Users/think/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18>) — §2.8.3–2.8.4, with §1.2.5.
@@ -4198,6 +4230,8 @@ Missing bridges and uncertainty:
 ### A Derived Geometric Proof of the Riemann Hypothesis — `50a2340db4a9`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:50a2340db4a9dbfa:twisted-vanishing-versus-untwisted-source`
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#50a2340db4a9dbfa-twisted-vanishing-versus-untwisted-source).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#50a2340db4a9dbfa-twisted-vanishing-versus-untwisted-source).
 
@@ -4227,6 +4261,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:8a8dc8e29d327ad4:geometric-functorial-alignment-outline`
 
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#8a8dc8e29d327ad4-geometric-functorial-alignment-outline).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#8a8dc8e29d327ad4-geometric-functorial-alignment-outline).
 
 Paper: [PDF page 30](</Users/think/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=30>), [PDF page 40](</Users/think/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=40>) — physical pp30 and40.
@@ -4254,6 +4290,8 @@ Missing bridges and uncertainty:
 ### A Geometric Framework for the Grand Riemann Hypothesis — `efe16f86d173`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:efe16f86d1739c61:geometric-functorial-alignment-outline`
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#efe16f86d1739c61-geometric-functorial-alignment-outline).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#efe16f86d1739c61-geometric-functorial-alignment-outline).
 
@@ -4423,6 +4461,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:4eae7c78f226245e:joint-runner-orbit`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#4eae7c78f226245e-joint-runner-orbit).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#4eae7c78f226245e-joint-runner-orbit).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2>) — §2–4, relative-speed reformulation and lattice/volume argument.
@@ -4450,6 +4490,8 @@ Missing bridges and uncertainty:
 ### Absolute Proof of the Nonexistence of a Rational Distance Point for a Square — `ec2b9a77a14f`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ec2b9a77a14f5ea8:distance-reduction`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ec2b9a77a14f5ea8-distance-reduction).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ec2b9a77a14f5ea8-distance-reduction).
 
@@ -4505,6 +4547,8 @@ Missing bridges and uncertainty:
 ### Boundary Regularization: A Framework for High-Rank Elimination — `796ba01d4a02`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
@@ -4876,6 +4920,8 @@ Missing bridges and uncertainty:
 ### Spectral Rigidity, Homotopy Constraints, and the Functorial Necessity of the Riemann Hypothesis — `8b0f8dbc97a4`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:8b0f8dbc97a4587f:homotopy-rigidity-unproved-comparisons`
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#8b0f8dbc97a4587f-homotopy-rigidity-unproved-comparisons).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#8b0f8dbc97a4587f-homotopy-rigidity-unproved-comparisons).
 
@@ -5332,6 +5378,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:3f28be14404a64ea:recomposition-upper-bound-not-separation`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
 
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4>) — complexity theorem 3 and critical-line theorem 1.
@@ -5360,6 +5408,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:b799fd9cb24af2a3:recomposition-upper-bound-not-separation`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
 
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4>) — complexity theorem 3 and critical-line theorem 1.
@@ -5387,6 +5437,8 @@ Missing bridges and uncertainty:
 ### Updated Verification of Recursive Refinement Framework — `d7819c0364c7`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
@@ -5654,6 +5706,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d00d427aef3a27d8:rmt-langlands-survey-boundary`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
 
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=6>), [PDF page 8](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=8>) — §3.2–3.3 and §4.1–4.4.
@@ -5794,6 +5848,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0b423568798d1ce3-prime-research-roadmap).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0b423568798d1ce3-prime-research-roadmap).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>) — §2 and §6 (analytic and computational objectives).
@@ -5876,6 +5932,8 @@ Missing bridges and uncertainty:
 ### A Proof of the Generalized Riemann Hypothesis via Residue Clustering Laws — `f8f7f4692f9a`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:f8f7f4692f9a8412:local-clustering-symmetry-gap`
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#f8f7f4692f9a8412-local-clustering-symmetry-gap).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#f8f7f4692f9a8412-local-clustering-symmetry-gap).
 
@@ -6723,6 +6781,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ba422dcbe9ffc6fb:compact-integral-residue-alignment-gap`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ba422dcbe9ffc6fb-compact-integral-residue-alignment-gap).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ba422dcbe9ffc6fb-compact-integral-residue-alignment-gap).
 
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=6>), [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=7>) — §3.1–3.2.
@@ -6891,6 +6951,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0523b6d449088321:modular-j-density-countercheck`
 
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0523b6d449088321-modular-j-density-countercheck).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0523b6d449088321-modular-j-density-countercheck).
 
 Paper: [PDF page 8](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8>), [PDF page 11](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>) — §4 reflection/boundedness and §5 converse.
@@ -6919,6 +6981,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:482cdae3e36c3e60:modular-density-and-bsd-residue-gap`
 
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#482cdae3e36c3e60-modular-density-and-bsd-residue-gap).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#482cdae3e36c3e60-modular-density-and-bsd-residue-gap).
 
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=3>), [PDF page 5](</Users/think/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=5>) — §2.3 and §4.2.
@@ -6946,6 +7010,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering, Modular Symmetries, and the Generalized Riemann Hypothesis: Proof and Workflow — `6900e23cd2e0`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:6900e23cd2e098fd:reciprocal-power-reflection-error`
+
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#6900e23cd2e098fd-reciprocal-power-reflection-error).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#6900e23cd2e098fd-reciprocal-power-reflection-error).
 
@@ -7147,6 +7213,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:47f41bdea32cea56:local-dirichlet-clustering-reflection-gap`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#47f41bdea32cea56-local-dirichlet-clustering-reflection-gap).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#47f41bdea32cea56-local-dirichlet-clustering-reflection-gap).
 
 Paper: [PDF page 14](</Users/think/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14>) — physical p14 discrete universality examples.
@@ -7203,6 +7271,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a26ad58b00222955:arithmetic-residue-formula-scope`
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a26ad58b00222955-arithmetic-residue-formula-scope).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a26ad58b00222955-arithmetic-residue-formula-scope).
 
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=6>), [PDF page 15](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=15>) — §2.2 and §9.2.
@@ -7230,6 +7300,8 @@ Missing bridges and uncertainty:
 ### The Riemann Hypothesis and Its Automorphic Generalizations: Comprehensive Insights into Unified Analytic, Spectral, and Geometric Structures — `e04e2d11c430`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:e04e2d11c430078f:arithmetic-residue-formula-scope`
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#e04e2d11c430078f-arithmetic-residue-formula-scope).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e04e2d11c430078f-arithmetic-residue-formula-scope).
 
@@ -7341,6 +7413,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:2b7478353ae500b1:conditional-transcendence-and-chaotic-sums`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
 
 Paper: [PDF page 15](</Users/think/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=15>), [PDF page 24](</Users/think/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=24>) — §5.3 and §8.5 physical pp15/24.
@@ -7368,6 +7442,8 @@ Missing bridges and uncertainty:
 ### Universal Transcendence of Non-Critical Values in Automorphic and Motivic L-Functions — `ac7a2ecdc5f9`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ac7a2ecdc5f9c787:conditional-transcendence-and-chaotic-sums`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
@@ -7428,6 +7504,8 @@ Missing bridges and uncertainty:
 ### A Unified Theoretical Framework for the Proof of the Riemann Hypothesis and Its Generalizations — `7e3e7acb686d`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:7e3e7acb686d4196:short-rmt-proof-upgrade-gap`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
@@ -7540,6 +7618,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap`
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
+
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2>) — §2.1–3 and §4.3.
@@ -7567,6 +7647,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering, Modular Symmetry, and the Generalized Riemann Hypothesis: Techniques and Next Steps — `579328ace007`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap`
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
