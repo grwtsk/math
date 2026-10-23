@@ -48,6 +48,7 @@ namespace GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction
 open Matrix
 open GRWTSK.NumberTheory.Farey.GroupSuperwalk
 open GRWTSK.NumberTheory.Farey.ReturnAngularChannel
+open GRWTSK.NumberTheory.Farey.ReturnSpectralChannel
 open GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel
 
 /-- The actual left-generator action of the same Farey matrix source
@@ -128,14 +129,14 @@ theorem no_scalar_left_extension_of_negative_return
       _ = a ^ 3 * f (residueOrbit (0 : Fin 4)) := by ring
   have hneg : f (residueOrbit (0 : Fin 4)) =
       -(f (residueOrbit (0 : Fin 4))) := by
-    simpa [ha] using hcycle
+    simpa only [ha, show (-1 : ℂ) ^ 3 = -1 by norm_num, neg_one_mul] using hcycle
   have hzero : f (residueOrbit (0 : Fin 4)) = 0 := by
     have htwice : (2 : ℂ) * f (residueOrbit (0 : Fin 4)) = 0 := by
       calc
         (2 : ℂ) * f (residueOrbit (0 : Fin 4)) =
             f (residueOrbit (0 : Fin 4)) +
               f (residueOrbit (0 : Fin 4)) := by ring
-        _ = 0 := by rw [hneg]; ring
+        _ = 0 := by linear_combination hneg
     exact (mul_eq_zero.mp htwice).resolve_left (by norm_num)
   exact hNonzero hzero
 
@@ -197,7 +198,7 @@ theorem anyMatrix_mulVec_neg (M : Mat3) (x : Vec3) :
     M.mulVec (-x) = -(M.mulVec x) := by
   funext i
   fin_cases i <;>
-    simp [Matrix.mulVec, dotProduct, Fin.sum_univ_two] <;> ring
+    simp [Matrix.mulVec, dotProduct, Fin.sum_univ_two]
 
 /-- Matrix-state observation, not a falsely asserted 1D
 per-letter scalar character. -/
