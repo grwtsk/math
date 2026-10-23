@@ -99,7 +99,7 @@ u_2&=t.
 \]
 
 The denominator is nonzero by the source-proposed theorem
-\`twoTentMomentDeterminant_pos\`. Substitution gives
+`twoTentMomentDeterminant_pos`. Substitution gives
 
 \[
 u_0D=A_1(B_0u_0+B_1u_1)
@@ -120,9 +120,9 @@ source-preserving reconstruction of all Bombieri \(W\) functions.
 ## 4. Proposed Lean declarations — not present in main
 
 These are **names and types for the next bounded verification-backed
-implementation**, not current facts in \`grwtsk/math\`:
+implementation**, not current facts in `grwtsk/math`:
 
-\`\`\`lean
+```lean
 -- Within GRWTSK.NumberTheory.Zeta.Riemann.
 -- CanonicalSquareTentThirdCoordinateInformationLoss
 
@@ -136,13 +136,13 @@ noncomputable def decodeAugmentedBombieri :
 theorem decodeAugmentedBombieri_leftInverse :
     Function.LeftInverse decodeAugmentedBombieri
       (augmentedProfile bombieriMomentProfile thirdCoordinateReadout)
-\`\`\`
+```
 
-The *actual* source \`bombieriMomentProfile\` and
-\`thirdCoordinateReadout\` should be reused; do **not** substitute
+The *actual* source `bombieriMomentProfile` and
+`thirdCoordinateReadout` should be reused; do **not** substitute
 abstract arbitrary measurements or infer additional source test
 admissibility. The proof may use the existing two-tent
-\`combination_eq_zero_of_momentMaps_zero\` after subtracting the
+`combination_eq_zero_of_momentMaps_zero` after subtracting the
 known third-coordinate contribution, or carry out the two linear
 eliminations with the exact \(D>0\) supplier.
 
@@ -152,39 +152,35 @@ verification report as if they had been compiled.
 ## 5. Source identities and formalization mapping
 
 **Inspected complete repository source snapshot:**
-[\`grwtsk/math@16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2\`](https://github.com/grwtsk/math/commit/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2).
+[`grwtsk/math@16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2`](https://github.com/grwtsk/math/commit/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2).
 The exact source file SHA-1 objects below were observed through GitHub;
 their declarations are repository source candidates, **not fresh kernel
 acceptance**.
 
 | Mathematical supplier / formal declaration | Exact source commit, file and Git blob | Role |
 |---|---|---|
-| \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos\` | [source at this pin](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean#L328), blob \`e522772381075f125453ef2ba6b30e63d2873910\` | Nonzero real 2×2 moment determinant \`D\` |
-| \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile\`, \`bombieriMomentProfile_not_injective\` | [source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean#L44), blob \`9a2435d9c74b89ce1434c45bade1aa9beaa6cead\` | Both exact actual moments; noninjective without third coordinate |
-| \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.thirdCoordinateReadout\`, \`thirdCoordinateReadout_separates\`, \`thirdCoordinateReadout_augmented_separates\` | [original integration \`93468e369390b8ec75e7fd6a031ada2ae92223b0\`](https://github.com/grwtsk/math/blob/93468e369390b8ec75e7fd6a031ada2ae92223b0/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L39), blob \`1ff8c00eac7c167abc4c5456924312bf6f95bf74\` | Actual added arithmetic coefficient observable and pair separation |
-| \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentKernelLine.physicalTwoMoments_iff_cofactor_line\` | [source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean#L208), blob \`2b9d613a7cef0428754fdceab226907407ad5467\` | Identifies exactly the lost one-dimensional coefficient direction |
-| \`GRWTSK.Logic.InformationLoss.augmentedProfile\`, \`readout_factorsThrough_augmentedProfile\` | [source at pin](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/Logic/InformationLoss/FactorizationFiberCompleteness.lean#L108), blob \`13e934c9c8b477474bda909a5e689710795154bd\` | Generic augmentation and readout recovery; does not alone imply injectivity |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos` | [source at this pin](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean#L328), blob `e522772381075f125453ef2ba6b30e63d2873910` | Nonzero real 2×2 moment determinant `D` |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile`, `bombieriMomentProfile_not_injective` | [source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean#L44), blob `9a2435d9c74b89ce1434c45bade1aa9beaa6cead` | Both exact actual moments; noninjective without third coordinate |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.thirdCoordinateReadout`, `thirdCoordinateReadout_separates`, `thirdCoordinateReadout_augmented_separates` | [original integration `93468e369390b8ec75e7fd6a031ada2ae92223b0`](https://github.com/grwtsk/math/blob/93468e369390b8ec75e7fd6a031ada2ae92223b0/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L39), blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74` | Actual added arithmetic coefficient observable and pair separation |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentKernelLine.physicalTwoMoments_iff_cofactor_line` | [source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean#L208), blob `2b9d613a7cef0428754fdceab226907407ad5467` | Identifies exactly the lost one-dimensional coefficient direction |
+| `GRWTSK.Logic.InformationLoss.augmentedProfile` | [FactorizationFiber.lean at pinned source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/Logic/InformationLoss/FactorizationFiber.lean#L62), blob `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd` | Generic pair-valued observable; by itself not globally injective |
+| `GRWTSK.Logic.InformationLoss.readout_factorsThrough_augmentedProfile` | [FactorizationFiberCompleteness.lean at pinned source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/Logic/InformationLoss/FactorizationFiberCompleteness.lean#L152), blob `13e934c9c8b477474bda909a5e689710795154bd` | Generic readout reconstruction via second projection; still no injectivity claim |
 
-The last row's \`augmentedProfile\` is defined in
-\`GRWTSK/Logic/InformationLoss/FactorizationFiber.lean\`
-(blob \`3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd\`);
-the \`FactorizationFiberCompleteness\` file carries the
-\`readout_factorsThrough_augmentedProfile\` theorem. Do not
-identify them as one declaration with one source location.
+The two generic declarations above are separately pinned to their actual source files. Neither supplies a classical Weil-form identification.
 
-**Formalization relationship:** \`DIRECT_HYPOTHESIS_ENCODING\`
-for the two Bombieri displayed moments; \`LOCAL_FINITE_LINEAR_ALGEBRA\`
-for the matrix recovery; \`UNFORMALIZED_MATHEMATICAL_BRIDGE\`
-for the new full injectivity/decoder proof; \`ANALOGY_ONLY\`
+**Formalization relationship:** `DIRECT_HYPOTHESIS_ENCODING`
+for the two Bombieri displayed moments; `LOCAL_FINITE_LINEAR_ALGEBRA`
+for the matrix recovery; `UNFORMALIZED_MATHEMATICAL_BRIDGE`
+for the new full injectivity/decoder proof; `ANALOGY_ONLY`
 for any relation to the classical polarized Weil spectral form.
 The existing pair-separation theorem is a repository proof script
 whose exact current kernel acceptance remains **NOT ESTABLISHED**.
 
 ## 6. Independent preflight and trust boundary
 
-**Actually executed:** \`python /tmp/grwtsk_augmented_moment_inverse_preflight_20261023.py\`;
+**Actually executed:** `python /tmp/grwtsk_augmented_moment_inverse_preflight_20261023.py`;
 exit **0**; script SHA-256
-\`f3af7883bf9dfc7bcfc8e862a682e76653a4afce6e1e3895484fc538e5a70545\`.
+`f3af7883bf9dfc7bcfc8e862a682e76653a4afce6e1e3895484fc538e5a70545`.
 Sympy verifies both formal products \(M^{-1}M=I\) and \(MM^{-1}=I\),
 and mpmath 60-digit values of the **actual** two-tent moment determinant
 give \(D\approx0.67203230270158182870325689549>0\) with
@@ -192,8 +188,8 @@ successful reconstruction of an arbitrary complex three-vector.
 
 These are **finite algebraic/numeric diagnostics**, not Lean
 elaboration, fresh kernel checking or transitive axiom auditing.
-The pinned local container still lacks \`lean\`, \`lake\`,
-\`elan\`, \`leanchecker\` (exit **127**); GitHub DNS/remote-Git
+The pinned local container still lacks `lean`, `lake`,
+`elan`, `leanchecker` (exit **127**); GitHub DNS/remote-Git
 exits **2/128**. No authorization for Railway or unapproved remote
 execution is granted by this note.
 
@@ -201,5 +197,5 @@ execution is granted by this note.
 Weil test family, comparing the full signed classical Hermitian
 pairing to the corrected *arithmetic* Gram, proving a source-preserving
 global dense extension, uniform zero tails, and instantiating a
-criterion to the canonical \`RiemannHypothesis\`. None follows
+criterion to the canonical `RiemannHypothesis`. None follows
 from the finite inverse.
