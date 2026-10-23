@@ -648,24 +648,17 @@ theorem CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap
       (CMFiniteCanonicalPairedAssembly E) =
     (CMFiniteCanonicalPairedAssembly E).comp
       (CMFiniteFourPairedCoefficientConjugate E σ) := by
-  have h :
-      (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ).comp
-        (CMFiniteCanonicalPairedAssembly E) =
-      (CMFiniteCanonicalPairedAssembly E).comp
-        (CMFiniteFourPairedCoefficientConjugate E σ) := by
-    ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-    change
-      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
-        (CMFiniteCanonicalPairedAssembly E
-          (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)) =
-      CMFiniteCanonicalPairedAssembly E
-        (CMFiniteFourPairedCoefficientConjugate E σ
-          (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄))
-    rw [CMFiniteFourPairedCoefficientConjugate_pure]
-    exact CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
-      E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-  exact h
-
+  ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  change
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)) =
+    CMFiniteCanonicalPairedAssembly E
+      (CMFiniteFourPairedCoefficientConjugate E σ
+        (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄))
+  rw [CMFiniteFourPairedCoefficientConjugate_pure]
+  exact CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+    E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
 /-- Pointwise consequence of the full linear-map equivariance identity. -/
 theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
