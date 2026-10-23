@@ -3500,3 +3500,249 @@ No historical influence, understanding date, effective source access, joint Gaus
 **Formal binding.** Declarations `GRWTSK.Logic.InformationLoss.pairedLinearObservation`, `pairedLinear_zero_iff`, `linear_fiberConstant_iff_kernelContainment`, `linear_augmented_unique_reconstruction_iff`. Initial main commit [`103d6ddc1db28e53a35295c19d943916935ea50a`](https://github.com/grwtsk/math/commit/103d6ddc1db28e53a35295c19d943916935ea50a); `GRWTSK/Logic/InformationLoss/LinearObservationKernels.lean`, blob `7930d8b88199507019d800b05852a616719bfa12`. Direct imports `GRWTSK.Logic.InformationLoss.AugmentedRepairCriterion`, blob `fa60e69e2a170c8b588227aab97d359adf04586e`, and `Mathlib.LinearAlgebra.Basic`; full transitive imports to be captured by actual executor. Toolchain pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Classification and real evidence.** `source-proof-candidate`: yes. `direct-import` of an external paper theorem: **no**. `local-proved-bridge`: **not yet**. `conditional-interface`: connecting this abstract linear observation to actual Farey/Bombieri/Hodge moments. `finite-certificate`: **none newly claimed** for this source. `methodological-analogy`: inverse-problem identifiability and quotient lifting; not historical influence. `unresolved`: transitive closure and any spectral/analytic representation, quantitative inverse bounds, minimal number of measurements, source-specific positivity, and all Lean/kernel/axiom acceptance. The exact commands and expected hostile controls are in [#1120](https://github.com/grwtsk/math/issues/1120). Actual status: **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**, Git blob read back and no GitHub commit status checks; **no** executed `lake build`, `--trust=0`, fresh independent checker or transitive `#print axioms` receipt exists for this leaf. Runners, logs and receipts belong exclusively to `grwtsk/noeaaeue`; keep the root import withheld.
+
+
+## Third implementation pass for the seven unpublished research ideas
+
+New Lean source commit `0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+Ten new theorems in three subject-based modules. **Four completed optional/corrective obligations, ten verified partial results, 22 unresolved obligations. All seven manuscript-level claims remain open.** The newly partial obligations are K1 in each of the two distinct KL PDF versions and S5. E4 in each exceptional-group PDF version and S3 also advance without being discharged.
+
+[Structured record](obligation-implementation-progress-v3.json) retains all 36 original specifications, exact dependencies, bibliographic metadata, page anchors and page-text hashes, and full earlier states for changed obligations. [Previous pass](obligation-implementation-progress-v2.md) remains historical. Owner understanding dates remain unknown; no historical influence is inferred.
+
+Verification: the exact three-module `lake build … --wfail` command and external `Audit.lean` command in JSON both exited 0. All ten `#print axioms` readbacks contain only `propext`, `Classical.choice`, `Quot.sound`, with no `sorryAx`. Logs remain external under `MathematicsLibrary/.catalog/obligation-bridges-v3`. New results are local kernel-verified fragments with the hypotheses below; upstream variance/product infrastructure retains Mathlib attribution. No finite computation or analogy is promoted to a manuscript claim.
+
+## Algebra
+
+### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `[]`. PDF SHA-256 `498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%283%29.pdf); original blob `9263622af06f0bdfd8d1f9dfe6a9add5eb19bad6`.
+
+**E4, PDF pages 2 — kernel-verified-conditional-fragment.** Advanced finite comparison to transport of HasProd for inverse local determinant factors, given actual two-sided intertwiners at every place. Independently convergent products have equal values in a Hausdorff coefficient field. HasProd remains an explicit premise: no convergence, nonvanishing domain, bad-place/Archimedean factors, completed-function equality or analytic continuation is constructed. Totalized inversion is not asserted to be holomorphic at zeros.
+
+- [`GRWTSK.LinearAlgebra.Matrix.hasProd_inverse_local_factors`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/LinearAlgebra/Matrix/ConvergentLocalProduct.lean#L11); blob `acb378a8503fdc98b60105c247e8f6d252e69c54`.
+- [`GRWTSK.LinearAlgebra.Matrix.local_product_limits_eq`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/LinearAlgebra/Matrix/ConvergentLocalProduct.lean#L26); blob `acb378a8503fdc98b60105c247e8f6d252e69c54`.
+
+**Other obligations retained:** E1 — unresolved; E2 — unresolved; E3 — kernel-verified-conditional-fragment; E5 — unresolved.
+
+- **E1 missing construction:** Fix the base field and exact G2/F4/E8 forms, their pinned/split data and a representation r with explicitly defined V. Prove the claimed dimensions 7/26/248, homomorphism laws and faithfulness. A Lie-algebra representation alone needs an additional group-level integration/descent proof.
+- **E2 missing construction:** Specify the required representation of the L-group (or dual group in an explicitly unramified split setting), an automorphic representation π of G and a proposed GL(V) transfer Π. Prove existence/automorphy; an ordinary embedding G→GL(V) does not define Π.
+- **E5 missing construction:** Derive the divisor/residue comparison for the same completed sources from E4, including every extra factor’s divisor. Any critical-line theorem for the target family remains a separate premise or proof.
+
+### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `[]`. PDF SHA-256 `67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%282%29.pdf); original blob `71542562d4e167aaa8145eb43de20253dc111ae2`.
+
+**E4, PDF pages 2 — kernel-verified-conditional-fragment.** Advanced finite comparison to transport of HasProd for inverse local determinant factors, given actual two-sided intertwiners at every place. Independently convergent products have equal values in a Hausdorff coefficient field. HasProd remains an explicit premise: no convergence, nonvanishing domain, bad-place/Archimedean factors, completed-function equality or analytic continuation is constructed. Totalized inversion is not asserted to be holomorphic at zeros.
+
+- [`GRWTSK.LinearAlgebra.Matrix.hasProd_inverse_local_factors`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/LinearAlgebra/Matrix/ConvergentLocalProduct.lean#L11); blob `acb378a8503fdc98b60105c247e8f6d252e69c54`.
+- [`GRWTSK.LinearAlgebra.Matrix.local_product_limits_eq`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/LinearAlgebra/Matrix/ConvergentLocalProduct.lean#L26); blob `acb378a8503fdc98b60105c247e8f6d252e69c54`.
+
+**Other obligations retained:** E1 — unresolved; E2 — unresolved; E3 — kernel-verified-conditional-fragment; E5 — unresolved.
+
+- **E1 missing construction:** Fix the base field and exact G2/F4/E8 forms, their pinned/split data and a representation r with explicitly defined V. Prove the claimed dimensions 7/26/248, homomorphism laws and faithfulness. A Lie-algebra representation alone needs an additional group-level integration/descent proof.
+- **E2 missing construction:** Specify the required representation of the L-group (or dual group in an explicitly unramified split setting), an automorphic representation π of G and a proposed GL(V) transfer Π. Prove existence/automorphy; an ordinary embedding G→GL(V) does not define Π.
+- **E5 missing construction:** Derive the divisor/residue comparison for the same completed sources from E4, including every extra factor’s divisor. Any critical-line theorem for the target family remains a separate premise or proof.
+
+### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `['RA Jacob Martone']`. PDF SHA-256 `159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/C%20%287%29.pdf); original blob `321ef7c1fa5685faac750558754f8d0e2906fe14`.
+
+**K1, PDF pages 2 — kernel-verified-conditional-fragment.** Constructed the rank-one matrix model T(q)=[[0,q],[1,q−1]] over any commutative ring, with T²=(q−1)T+qI, unique coordinates aI+bT and closed multiplication. With qqinv=1, qinv(T−(q−1)I) is a two-sided inverse. With v vinv=1 and q=v², C=vinv(T+I) satisfies C²=(v+vinv)C. This is an assistant-proposed rank-one construction under the intended convention. Arbitrary Coxeter generators, braid relations, Laurent coefficient implementation, bar involution and comparison with the manuscript remain missing; K1 is not discharged.
+
+- [`GRWTSK.Algebra.Hecke.rankOne_quadratic`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L15); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_inverse`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L22); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_normalized_square`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L30); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_coordinates_unique`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L39); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_normalForm_mul`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L47); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+
+**Other obligations retained:** K2 — unresolved; K3 — kernel-verified-correction-check; K4 — unresolved; K5 — unresolved.
+
+- **K2 missing construction:** Construct the bar-invariant basis C′_w=v^{−ℓ(w)}Σ_{y≤w}P_{y,w}(v²)T_y, with P_{w,w}=1, P_{y,w}=0 if y≰w and deg P_{y,w}≤(ℓ(w)−ℓ(y)−1)/2 for y<w. Prove existence/uniqueness and derive a correct recurrence.
+- **K4 missing construction:** Construct the relevant Schubert/stratum intersection-cohomology realization, with grading, normalization and coefficient conditions, then prove coefficient nonnegativity for this exact KL family. Define affine/quantum variants independently before reusing a theorem.
+- **K5 missing construction:** Construct a source-specific realization from these graded classes to the analytic zero detector, prove the full signed/graded identity, and prove why its off-line nonzero class would lie in an actually vanishing group. Nonnegative coefficients alone do not force a residue to be zero.
+
+### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `['RA Jacob Martone']`. PDF SHA-256 `553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/C%20%289%29.pdf); original blob `68757e7d6f23427e3487d3166928241025ce0ea6`.
+
+**K1, PDF pages 2 — kernel-verified-conditional-fragment.** Constructed the rank-one matrix model T(q)=[[0,q],[1,q−1]] over any commutative ring, with T²=(q−1)T+qI, unique coordinates aI+bT and closed multiplication. With qqinv=1, qinv(T−(q−1)I) is a two-sided inverse. With v vinv=1 and q=v², C=vinv(T+I) satisfies C²=(v+vinv)C. This is an assistant-proposed rank-one construction under the intended convention. Arbitrary Coxeter generators, braid relations, Laurent coefficient implementation, bar involution and comparison with the manuscript remain missing; K1 is not discharged.
+
+- [`GRWTSK.Algebra.Hecke.rankOne_quadratic`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L15); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_inverse`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L22); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_normalized_square`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L30); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_coordinates_unique`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L39); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+- [`GRWTSK.Algebra.Hecke.rankOne_normalForm_mul`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Algebra/Hecke/RankOneQuadratic.lean#L47); blob `0266c97fd8ef7c09290cf977a198e13adc76dc23`.
+
+**Other obligations retained:** K2 — unresolved; K3 — kernel-verified-correction-check; K4 — unresolved; K5 — unresolved.
+
+- **K2 missing construction:** Construct the bar-invariant basis C′_w=v^{−ℓ(w)}Σ_{y≤w}P_{y,w}(v²)T_y, with P_{w,w}=1, P_{y,w}=0 if y≰w and deg P_{y,w}≤(ℓ(w)−ℓ(y)−1)/2 for y<w. Prove existence/uniqueness and derive a correct recurrence.
+- **K4 missing construction:** Construct the relevant Schubert/stratum intersection-cohomology realization, with grading, normalization and coefficient conditions, then prove coefficient nonnegativity for this exact KL family. Define affine/quantum variants independently before reusing a theorem.
+- **K5 missing construction:** Construct a source-specific realization from these graded classes to the analytic zero detector, prove the full signed/graded identity, and prove why its off-line nonzero class would lie in an actually vanishing group. Nonnegative coefficients alone do not force a residue to be zero.
+
+## GeometryTopology
+
+### Boundary Regularization: A Framework for High-Rank Elimination
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `[]`. PDF SHA-256 `796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/g%20%282%29.pdf); original blob `a6b1384d8b682feabc705eee0e058eb50c61df39`.
+
+**Other obligations retained:** B1 — unresolved; B2 — unresolved; B3 — kernel-verified-conditional-fragment; B4 — unresolved; B5 — unresolved; B6 — unresolved.
+
+- **B1 missing construction:** Fix the group/base, compactification j:U→X with boundary i:Z→X, coefficient complex K and the exact cohomology theory. Construct C_Z(K) and H^k(Z,K); do not identify arbitrary graph cohomology with these groups.
+- **B2 missing construction:** Construct the localization/excision triangle or long exact sequence. If a direct sum is needed, construct a splitting/projector and prove compatibility with Hecke actions; a set union does not produce a split cohomology decomposition.
+- **B4 missing construction:** For every nontrivial zero ρ of the exact source with Re(ρ)≠1/2, construct kρ, Kρ and vρ∈H^{kρ}(Z,Kρ), prove vρ≠0 and that kρ lies in the specific forbidden degree range.
+- **B5 missing construction:** Prove H^k(Z,Kρ)=0 in that same range for the original Kρ, under verified properness/dimension/positivity hypotheses. Vanishing only after a positive twist requires a proved untwisting comparison.
+- **B6 missing construction:** Combine vρ≠0 with B5 for every allowed off-line zero. This final contradiction is conditional until B1–B5 are constructed.
+
+## LogicAndComputation
+
+### Updated Verification of Recursive Refinement Framework
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `['RA Jacob Martone']`. PDF SHA-256 `d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Updated_Verification_of_Recursive_Refinement_Framework%20%282%29.pdf); original blob `e7e459f64d4d145ea39d56f08721c2ba5b39372b`.
+
+**S3, PDF pages 1, 2 — kernel-verified-correction-fragment.** Added a finite probabilistic route alongside the earlier √n obstruction: square-integrable real observables under a probability measure, with exactly zero off-diagonal covariances, have aggregate variance equal to the sum of diagonal variances. A uniform diagonal bound C gives variance ≤NC; for N>0 the normalized average has variance ≤C/N. This is neither a deterministic uniform cumulative-error bound nor almost-sure convergence, and says nothing about bias without centering. Actual paper observables, probability law, exact covariance bounds, rate hypotheses and Fourier identity remain missing.
+
+- [`GRWTSK.Probability.Moments.variance_sum_of_uncorrelated`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Probability/Moments/FiniteUncorrelatedBudget.lean#L16); blob `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0`.
+- [`GRWTSK.Probability.Moments.variance_sum_le_card_mul`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Probability/Moments/FiniteUncorrelatedBudget.lean#L31); blob `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0`.
+- [`GRWTSK.Probability.Moments.variance_average_le`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Probability/Moments/FiniteUncorrelatedBudget.lean#L42); blob `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0`.
+
+**S5, PDF pages 2 — kernel-verified-conditional-fragment.** Implemented the finite second-moment consumer under a supplied probability space, real L² observables and exact pairwise zero covariance. No independence conclusion is asserted; the converse would still require extra assumptions such as an actual joint Gaussian law. No arithmetic zero process, finite-family independence, limiting independence or joint Gaussian supplier is constructed.
+
+- [`GRWTSK.Probability.Moments.variance_sum_of_uncorrelated`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Probability/Moments/FiniteUncorrelatedBudget.lean#L16); blob `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0`.
+- [`GRWTSK.Probability.Moments.variance_sum_le_card_mul`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Probability/Moments/FiniteUncorrelatedBudget.lean#L31); blob `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0`.
+- [`GRWTSK.Probability.Moments.variance_average_le`](https://github.com/grwtsk/math/blob/0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a/GRWTSK/Probability/Moments/FiniteUncorrelatedBudget.lean#L42); blob `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0`.
+
+**Other obligations retained:** S1 — unresolved; S2 — unresolved; S4 — kernel-verified-conditional-fragment; S6 — unresolved.
+
+- **S1 missing construction:** Bind each named January reference to an exact catalog SHA/version and exact theorem. Eight candidate versions of four title families were inspected; title matching alone does not prove that the status note invokes either particular version.
+- **S2 missing construction:** Define each arithmetic sequence, its deterministic centering and e_n before choosing a target rate. Decide whether the needed claim is ∃C∀n |e_n|≤C, a variable envelope |e_n|≤C B(n), or a normalized o(n) statement.
+- **S6 missing construction:** Retain every RH/GRH hypothesis printed in the Resolution draft §4.3. If the desired downstream theorem is unconditional RH/GRH, replace that supplier by an independently proved result rather than using it circularly.
+
+## NumberTheory
+
+### A Holistic Strategy for Deriving Properties of Prime Numbers
+
+Owner-identified unpublished research by R.A. Jacob Martone; printed byline `['RA Jacob Martone']`. PDF SHA-256 `0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f`. Publication date, DOI and arXiv ID remain unestablished; typed manuscript dates remain in JSON.
+
+[Exact PDF version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers%20%283%29.pdf); original blob `28e3ee7aaf8f5b4fd1d85a32316654fea12e446c`.
+
+**Other obligations retained:** P1 — unresolved; P2 — kernel-verified-optional-specialization; P3 — kernel-verified-optional-specialization; P4 — unresolved.
+
+- **P1 missing construction:** Resolve each numbered Source 23/26/27/28/29 to a title, exact version and theorem/method, or explicitly leave the citation unresolved.
+- **P4 missing construction:** For any proposed prime-distribution estimate, specify the actual counting/weighted source S(x), comparison M(x), domain x≥x0 and constants C≥0, then prove ∀x≥x0, |S(x)−M(x)|≤C B(x) for a named B. No bound B is supplied by this roadmap.
+
+## Hypotheses and remaining boundaries
+
+**Rank-one Hecke:** arbitrary commutative ring R. Coordinates are recovered from matrix entries (0,0) and (1,0); normal-form multiplication is explicitly checked for all entries, not sampled parameter values. Invertibility requires an actual qqinv=1; normalized-square identity requires v vinv=1 and q=v². No assertion of a constructed general Coxeter Hecke algebra, braid relations, bar involution, KL recurrence, basis existence/uniqueness, positivity or geometric realization follows. K2–K5 keep their previous scopes.
+
+**Finite second moments:** a specified probability measure μ, finite indexed real observables Xᵢ with MemLp Xᵢ 2 μ, and exactly cov(Xᵢ,Xⱼ)=0 for each i≠j. Uniform diagonal variance ≤C gives Var(ΣXᵢ)≤NC. If N>0, Var(N⁻¹ΣXᵢ)≤C/N. Neither independence nor zero expectation is inferred; this variance budget alone gives no deterministic error bound, tail bound, almost-sure law or arithmetic source estimate. Source-specific covariance-decay estimates do not supply exact zero covariance.
+
+**Infinite local products:** arbitrary place index, finite decidable square matrix index, topological coefficient field, actual UₚVₚ=VₚUₚ=I and AₚUₚ=UₚBₚ at every place, and an actual HasProd premise for the inverse determinant factors at the supplied scalar parameters. Equality of two specified limits additionally requires Hausdorff topology and HasProd for the second limit. These statements do not assert either product exists without that premise, or compare completed L-functions outside a proved domain. Analytic use still needs actual parameters, nonvanishing and all bad/Archimedean factors and continuation bridges.
+
+## Global boundary-normalized Riesz source and two-coordinate reconstruction (#189, #966)
+
+**Identities and classifications (2026-10-23).** This is a
+`local-proved-bridge` from the source developments in
+[math 9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5](https://github.com/grwtsk/math/commit/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5),
+“An actual integral primitive of the rational tent correction,” “Corrected
+first-Riesz defect and actual normalization data,” and “A full-family
+obstruction to the one-cell reconstruction” (copyright R.A. Jacob Martone,
+formalization assistance OpenAI, 2026 source snapshots). No new external
+paper attribution or historical influence is claimed. The new source is
+pinned to [math 6dfadb36014cdc63dc667d5857b6f22cfc920b19](https://github.com/grwtsk/math/commit/6dfadb36014cdc63dc667d5857b6f22cfc920b19).
+
+The `direct-import` methods include Mathlib's “Compactness of a closed
+interval” (2021; authors Patrick Massot, Yury Kudryashov), especially
+`IsCompact.exists_isMaxOn`, and “Uniform approximation” (2020; author
+Sébastien Gouëzel), especially `TendstoUniformlyOn.continuousOn`, at
+[Mathlib db584cd6d46c92f209a44c0f1c829460d327499d](https://github.com/leanprover-community/mathlib4/tree/db584cd6d46c92f209a44c0f1c829460d327499d).
+Interval-primitive continuity is imported from `DominatedConvergence.lean`
+(2019; authors Zhouhang Zhou, Yury Kudryashov, Patrick Massot, Louis
+(Yiyang) Liu), with its integrability hypotheses proved on the admitted
+compact intervals. These are Lean source snapshots, not journal articles.
+
+**Proved destinations, methods and premises.**
+
+- `GRWTSK.Analysis.Real.ContinuousMidpointAffine.chord_identity` and
+  `GRWTSK.Analysis.Real.ContinuousMidpointAffine.affine_from_two`, in
+  `GRWTSK/Analysis/Real/ContinuousMidpointAffine.lean`, derive complex
+  affine interpolation from continuity and the midpoint equation on a
+  nondegenerate closed real interval. The local proof uses a maximum of
+  the norm of the endpoint-zero residual and reflection to an endpoint.
+- `GRWTSK.NumberTheory.Zeta.Riemann.RieszZeroContinuity.finiteRieszZeroHead_tendstoUniformlyOn`
+  and
+  `GRWTSK.NumberTheory.Zeta.Riemann.RieszZeroContinuity.fullRieszZeroValue_continuousOn`,
+  in `GRWTSK/NumberTheory/Zeta/Riemann/RieszZeroContinuity.lean`, prove
+  compact-uniform convergence and continuity of the actual canonical
+  first-Riesz zero series on `[a,b]`, `1<a`. The existing count-derived
+  tail is bounded uniformly by its value at the upper endpoint, and
+  each finite head is continuous by its proved derivative.
+- `GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization.correctedRieszSourceDefect_affine`
+  and
+  `GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization.firstRieszPrefix_eq_global_normalized`,
+  in `GRWTSK/NumberTheory/Chebyshev/GlobalRieszAffineNormalization.lean`,
+  discharge the actual regularity and affine-source gates. The global
+  source equality holds for every `x>1`, `N≥3`, `x≤N`. It retains the
+  literal Mangoldt first-Riesz prefix, the full canonical zero series,
+  the oriented rational-density primitive at fixed base 2, and explicit
+  affine coefficients determined by the exact arithmetic values at 2
+  and 3. `primitive_change_base_all` proves the oriented rebasing step
+  needed also for `1<x<2`; no affine defect or continuity premise is
+  supplied by the caller.
+- `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoReconstruction_exact`,
+  `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoReconstruction_uniform_bound`,
+  `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoArithmetic_residual_zero`,
+  and `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.twoArithmetic_uniform_frame`,
+  in `GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyTwoCoordinateReconstruction.lean`,
+  construct isolating actual Green-window rows and reconstruct both the
+  genuine anchor-3 and anchor-5 cells for every `X≥10`. The reconstruction
+  energy bound is `C=2/(log 2)^2` on every actual readout. Its residual
+  is zero on the specified arithmetic family, with lower frame constant
+  `(log 2)^2/2`. The family is the full genuine restriction-difference
+  set intersected with the two-coordinate span, and both actual anchor
+  packets are proved members. This construction includes the anchor-5
+  witness obstructing the previous one-cell operator.
+
+**Verification evidence.** Source commit `6dfadb36014cdc63dc667d5857b6f22cfc920b19`, Lean 4.33.0, clean
+Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`:
+`lake build --wfail` on the public root, fifteen previously qualified
+standalone consumers and the four new modules (twenty targets) completed
+with exit 0, 9,419 jobs. All four new modules passed exact-module kernel
+replay, exit 0 and zero failures; unchanged source/object hashes match the
+qualified baseline `9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5`. This is
+incremental kernel qualification, not fresh replay of the whole imported
+environment. The 713-module closure passed the axiom audit with 22701
+logical declarations and zero disallowed axioms, the coverage census with
+6790 explained native-only entries and zero unexplained entries,
+and the runtime-helper audit with 12 helpers and zero failures.
+The actual audit commands were `lake env lean --trust=0
+-DwarningAsError=true` on `FullAxiomAudit.lean`, `FullCoverageAudit.lean`
+and `FullRuntimeAudit.lean`, and `lake env lean --run
+KernelAffectedClosure.lean`, all exit 0. Runners, logs and bindings remain
+outside math in
+`/Users/think/Desktop/noeaaeue/.codex-runtime/math-global-affine-two-coordinate/`.
+All 713 committed source blobs were checked against their audited hashes.
+
+**Unresolved premises and nonclaims.** Classical zeta special-value
+identification of the now-explicit affine coefficients, raw pointwise
+zero-tail control and justified unsmoothing limits remain open in
+[#189](https://github.com/grwtsk/math/issues/189). The two-coordinate
+arithmetic family is not proved to contain the full RH application
+packet. Growth in the number of required coordinates, the appropriate
+application domain, terminal-column obstructions, and signed omitted-
+source, other-shift and boundary estimates remain open in
+[#966](https://github.com/grwtsk/math/issues/966). No RH consequence,
+full-family lower frame or derivative/infinite-series interchange is
+claimed.
