@@ -31,6 +31,11 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionComparison
 local instance cornerDiscreteTopology (k : ℕ) :
     TopologicalSpace (PolygonCorner k) := ⊥
 
+private theorem cornerProductTopology_eq_bot (k : ℕ) :
+    @instTopologicalSpaceProd (Handle k) (Fin 4) inferInstance inferInstance =
+      cornerDiscreteTopology k := by
+  exact DiscreteTopology.eq_bot
+
 /-- Continuous original source sector coordinates into the product
 of the unpaired perimeter and the actual radius interval. -/
 theorem perimeterRadiusSource_continuous (k : ℕ) :
@@ -48,7 +53,8 @@ theorem sourceCone_continuous (k : ℕ) :
       Continuous (fun pr : UnpairedPerimeter k × unitInterval =>
         CircleCone.coneMk pr.1 pr.2) := by
     change Continuous
-      (Quotient.mk' : (UnpairedPerimeter k × unitInterval) →
+      (@Quotient.mk' _ (CircleCone.coneSetoid (UnpairedPerimeter k)) :
+        (UnpairedPerimeter k × unitInterval) →
         CircleCone.Cone (UnpairedPerimeter k))
     exact continuous_quotient_mk'
   exact hmk.comp (perimeterRadiusSource_continuous k)
@@ -58,7 +64,12 @@ continuous in BOTH tangential and radial variables. -/
 theorem radialSourceToAdjunction_continuous (k : ℕ) :
     Continuous (radialSourceToAdjunction k) := by
   unfold radialSourceToAdjunction
-  exact (originalDiskMap_continuous k).comp
+  have hdisk : Continuous (originalDiskMap k) := by
+    have h := originalDiskMap_continuous k
+    convert h using 1
+    congr 4
+    exact (cornerProductTopology_eq_bot k).symm
+  exact hdisk.comp
     ((perimeterConeDiskHomeomorph k).continuous.comp
       (sourceCone_continuous k))
 
