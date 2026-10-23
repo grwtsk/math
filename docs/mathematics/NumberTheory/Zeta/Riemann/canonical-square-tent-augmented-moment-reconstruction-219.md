@@ -1,6 +1,6 @@
 # RH / #219: three-tent moment-plus-coordinate reconstruction
 
-**2026-10-23 · Mathematical supplier proved by elementary linear algebra; Lean formalization NOT YET DECLARED and NOT KERNEL CHECKED.**
+**2026-10-23 · Mathematical reconstruction identified; Lean SOURCE_DRAFT integrated later at `37781e9ee1872edf41d275c9a67f82118a194313`. Warning-clean compilation, fresh kernel replay and transitive axiom audit NOT ESTABLISHED.**
 
 This note isolates the exact next bounded supplier after the
 [existing third-coordinate information-loss source](https://github.com/grwtsk/math/blob/93468e369390b8ec75e7fd6a031ada2ae92223b0/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean).
@@ -117,10 +117,27 @@ from zero. The full augmented map is an isomorphism **of this
 three-dimensional complex coefficient space**, not a theorem of
 source-preserving reconstruction of all Bombieri \(W\) functions.
 
-## 4. Proposed Lean declarations — not present in main
+## 4. Source-integrated injectivity and remaining explicit inverse proposal
 
-These are **names and types for the next bounded verification-backed
-implementation**, not current facts in `grwtsk/math`:
+**Authored source-level Lean declarations (not kernel verified):**
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.augmentedThreeMomentProfile_injective`
+and
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.any_source_readout_factorsThrough_augmentedThreeMoments`,
+introduced at [`37781e9ee1872edf41d275c9a67f82118a194313`](https://github.com/grwtsk/math/commit/37781e9ee1872edf41d275c9a67f82118a194313),
+source blob `ebfa664d3b8fb4ecd3f70c3ee6a989c3d14e485f`.
+The first proves global injectivity of the augmented profile **only
+on `Combination 2`** by subtracting two vectors, applying
+`coefficient_line_of_two_moments`, and forcing the remaining scalar
+zero through `cofactorTwo_ne_zero`. The second uses
+`factorsThrough_iff_fiberConstant_of_nonempty_source` to prove the
+existence of a *classically chosen set-theoretic decoder* for any
+coefficient readout. This is neither an effective decoder nor
+classical Weil-form reconstruction.
+
+The following are the **original proposed** declaration names/types
+from the mathematical plan. They are **not** the declaration names
+used by the integrated injectivity theorem; the explicitly computed
+`decodeAugmentedBombieri` function remains uncommitted Lean source:
 
 ```lean
 -- Within GRWTSK.NumberTheory.Zeta.Riemann.
@@ -161,6 +178,7 @@ acceptance**.
 |---|---|---|
 | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos` | [source at this pin](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean#L328), blob `e522772381075f125453ef2ba6b30e63d2873910` | Nonzero real 2×2 moment determinant `D` |
 | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile`, `bombieriMomentProfile_not_injective` | [source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean#L44), blob `9a2435d9c74b89ce1434c45bade1aa9beaa6cead` | Both exact actual moments; noninjective without third coordinate |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.augmentedThreeMomentProfile_injective`, `any_source_readout_factorsThrough_augmentedThreeMoments` | [later main source integration `37781e9ee1872edf41d275c9a67f82118a194313`](https://github.com/grwtsk/math/blob/37781e9ee1872edf41d275c9a67f82118a194313/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L88), blob `ebfa664d3b8fb4ecd3f70c3ee6a989c3d14e485f` | Source-level full coefficient-space injectivity and nonconstructive readout-factorization theorem; NOT fresh kernel checked |
 | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.thirdCoordinateReadout`, `thirdCoordinateReadout_separates`, `thirdCoordinateReadout_augmented_separates` | [original integration `93468e369390b8ec75e7fd6a031ada2ae92223b0`](https://github.com/grwtsk/math/blob/93468e369390b8ec75e7fd6a031ada2ae92223b0/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L39), blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74` | Actual added arithmetic coefficient observable and pair separation |
 | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentKernelLine.physicalTwoMoments_iff_cofactor_line` | [source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean#L208), blob `2b9d613a7cef0428754fdceab226907407ad5467` | Identifies exactly the lost one-dimensional coefficient direction |
 | `GRWTSK.Logic.InformationLoss.augmentedProfile` | [FactorizationFiber.lean at pinned source](https://github.com/grwtsk/math/blob/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2/GRWTSK/Logic/InformationLoss/FactorizationFiber.lean#L62), blob `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd` | Generic pair-valued observable; by itself not globally injective |
@@ -177,6 +195,9 @@ The existing pair-separation theorem is a repository proof script
 whose exact current kernel acceptance remains **NOT ESTABLISHED**.
 
 ## 6. Independent preflight and trust boundary
+
+**Authored source advance, independent of this numeric preflight:** the two actual Lean theorem scripts above are now in `main`; no new successful `lake build --wfail`, `leanchecker --fresh -v` or transitive axiom receipt is attached at their exact introduction commit. The explicit formula in §3 remains a mathematical calculation, not a separately defined Lean inverse.
+
 
 **Actually executed:** `python /tmp/grwtsk_augmented_moment_inverse_preflight_20261023.py`;
 exit **0**; script SHA-256
