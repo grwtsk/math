@@ -246,4 +246,46 @@ theorem FreshCountedTrail.closed_unused_balanced
   omega
 
 
+
+/-- At every vertex of the residual graph, unused incoming edge
+incidence is equivalent to unused outgoing edge incidence.
+The result retains parallel counted edge instances. -/
+theorem FreshCountedTrail.unused_in_pos_iff_out_pos
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (v : Fin m → Bool) :
+    0 < countedUsedInDegree m c (Finset.univ \ T.used) v ↔
+      0 < countedUsedOutDegree m c (Finset.univ \ T.used) v := by
+  rw [T.closed_unused_balanced hclosed hbalance v]
+
+/-- An unused incoming counted edge at a vertex on a closed trail
+supplies an actual unused outgoing edge instance at that vertex.
+This is a local splice supplier, not weak-connectivity existence. -/
+theorem FreshCountedTrail.unused_out_edge_of_unused_in_edge
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (v : Fin m → Bool)
+    (e : CountedBinaryEdge m c)
+    (he : e ∈ Finset.univ \ T.used)
+    (htarget : countedEdgeTarget m c e = v) :
+    ∃ f : CountedBinaryEdge m c,
+      f ∈ Finset.univ \ T.used ∧ countedEdgeSource m c f = v := by
+  classical
+  have hin : 0 < countedUsedInDegree m c
+      (Finset.univ \ T.used) v := by
+    unfold countedUsedInDegree
+    apply Finset.card_pos.mpr
+    exact ⟨e, Finset.mem_filter.mpr ⟨he, htarget⟩⟩
+  have hout := (T.unused_in_pos_iff_out_pos hclosed hbalance v).mp hin
+  unfold countedUsedOutDegree at hout
+  obtain ⟨f, hf⟩ := Finset.card_pos.mp hout
+  exact ⟨f, (Finset.mem_filter.mp hf).1, (Finset.mem_filter.mp hf).2⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
