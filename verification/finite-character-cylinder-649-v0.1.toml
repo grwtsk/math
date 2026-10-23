@@ -1,0 +1,218 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-character-cylinder-649-v0.1"
+owner_repository = "grwtsk/math"
+issue = 649
+related_issues = [628, 635, 121, 168, 444, 453, 516, 100, 15]
+route_id = "FINITE_FOURIER_PROJECTOR_WALSH_HOLONOMY"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder"
+build_target = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/finite-walsh-cylinder-sofic-628-20261021"
+review_parent_revision = "a58ec67f358b838527ea6220aab8353ba611e823"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Analysis/Fourier/FiniteCharacterCylinder.lean"
+new_module_git_blob = "d161b49c157cae4e66a1d56c7613a36336b04987"
+new_module_namespace = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder"
+mathematical_note_path = "docs/mathematics/Analysis/Fourier/finite-character-cylinders-modular-holonomy.md"
+mathematical_note_git_blob = "0f87556f9f8890660b1a142cb137009badd91628"
+upstream_character_module = "GRWTSK.Analysis.Fourier.FiniteAdditiveProjector"
+upstream_walsh_module = "GRWTSK.Analysis.FiniteSum.WalshCylinder"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+continuous_holonomy_adapted = false
+wp_volume_theorem_formalized = false
+gue_universality_proved = false
+liouville_chowla_proved = false
+sofic_arithmetic_adapter_closed = false
+rh_supplier_closed = false
+mathematical_statement = "Full finite additive-character orthogonality on (ZMod q)^m; exact q-ary pattern projection and q=2 Walsh factors"
+q_is_nonzero = true
+tuple_dimension_zero_supported = true
+sample_horizon_zero_supported = true
+requires_positive_normalization_for_probabilities = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder"
+authored_declaration_count = 17
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Analysis.Fourier.FiniteAdditiveProjector", "GRWTSK.Analysis.FiniteSum.WalshCylinder", "Mathlib.Algebra.BigOperators.Ring.Finset"]
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.coordinateAverage"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.coordinateAverage_eq_factored_sum"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.coordinateAverage_eq_indicator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.tuple_coordinateAverage_eq_indicator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.tupleCharacterMean"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.tupleCharacterMean_eq_coordinateAverage"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.tupleCharacterMean_eq_indicator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.qaryPatternCount"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.finiteCharacterMatches"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.finiteCharacterMatches_eq_qaryPatternCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.qaryPatternCount_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.qaryPatternCount_empty"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.boolResidue"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.boolResidue_eq_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.characterAverage_two_eq_walsh_factor"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.coordinateAverage_two_scaled"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteCharacterCylinder.finiteCharacterMatches_two_scaled"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reject-zero-modulus"
+requirement = "The modulus must be nonzero; no q=0 division, character normalization or false finite cyclic model."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "normalized-frequency-average"
+requirement = "Reject the full character sum without q^(-m), and reject normalization by q rather than q^m."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-tuple"
+requirement = "m=0 has exactly one frequency tuple and its indicator equals one."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-coordinates"
+requirement = "The empty coordinate set matches every finite observation; qaryPatternCount is N."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-horizon"
+requirement = "N=0 counts zero, with no division by N."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boolean-encoding"
+requirement = "Swapping the true/false signs must not silently preserve the wrong signed factor."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integer-modular-alias"
+requirement = "Distinct integer classes 0 and q have identical mod-q residues; refuse integral equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-vs-haar"
+requirement = "No finite torsion average is identified with continuous Haar orthogonality without a new theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "complex-phase-vs-gue"
+requirement = "q>=3 complex characters alone do not imply GUE universality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "variance-vs-spacing"
+requirement = "GOE/GUE spectral number variance is not a full microscopic nearest-neighbor or sine process theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-labels"
+requirement = "No replacement of actual geodesic homology or Liouville/Mobius source labels by free finite residues."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla"
+requirement = "Finite character identities contain no Liouville or Mobius correlation cancellation estimate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-sofic-operator-upgrade"
+requirement = "Finite residue character models supply no labeled local/sofic operator limit by themselves."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-rh"
+requirement = "No zeta divisor identification, growing-shift maximal packet, or Riemann hypothesis is proved."
+status = "NOT_RUN"
+
