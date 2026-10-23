@@ -1,0 +1,123 @@
+schema = "grwtsk.lean-subject-sort/1"
+managed_root = "GRWTSK"
+umbrella = "GRWTSK.lean"
+taxonomy_root = "docs/taxonomy/subjects"
+immutable_prefixes = ["GRWTSK/SourceCorpus"]
+ignored_prefixes = []
+
+# A model score is only a placement proposal. Ambiguous files remain in REVIEW.
+confidence_threshold = 0.42
+margin_threshold = 0.06
+secondary_threshold = 0.30
+current_location_prior = 0.035
+import_prefix_bonus = 0.20
+namespace_prefix_bonus = 0.15
+require_non_path_evidence = true
+
+[validation]
+require_native_parse_for_move = true
+native_parse_command = ["lake", "env", "lean", "--src-deps", "{path}"]
+native_parse_timeout_seconds = 300
+check_each_moved_file = true
+per_file_command = ["lake", "env", "lean", "{path}"]
+command = ["lake", "build", "GRWTSK"]
+timeout_seconds = 7200
+
+[[subject_profiles]]
+key = "algebra"
+directory = "Algebra"
+taxonomy_ids = ["urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a"]
+labels = ["algebra"]
+keywords = ["ring", "field", "module", "polynomial", "homomorphism", "localization", "affine"]
+import_prefixes = ["Mathlib.Algebra", "Mathlib.RingTheory", "Mathlib.FieldTheory"]
+namespace_prefixes = ["GRWTSK.Algebra"]
+
+[[subject_profiles]]
+key = "group-theory"
+directory = "GroupTheory"
+taxonomy_ids = ["urn:uuid:c20ca165-7737-4291-9a0b-f39e7a3f3744"]
+labels = ["group theory"]
+keywords = ["group", "subgroup", "action", "orbit", "sylow", "permutation"]
+import_prefixes = ["Mathlib.GroupTheory"]
+namespace_prefixes = ["GRWTSK.GroupTheory"]
+
+[[subject_profiles]]
+key = "analysis"
+directory = "Analysis"
+taxonomy_ids = ["urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9"]
+labels = ["analysis"]
+keywords = ["limit", "continuity", "derivative", "integral", "fourier", "laplace", "norm", "measure"]
+import_prefixes = ["Mathlib.Analysis", "Mathlib.MeasureTheory"]
+namespace_prefixes = ["GRWTSK.Analysis"]
+
+[[subject_profiles]]
+key = "linear-operator-theory"
+directory = "LinearAlgebra"
+taxonomy_ids = ["urn:uuid:827f5db9-1422-479e-a716-d9993230180c"]
+labels = ["linear algebra", "linear operator theory"]
+keywords = ["linear", "matrix", "determinant", "eigenvector", "basis", "operator", "tensor"]
+import_prefixes = ["Mathlib.LinearAlgebra"]
+namespace_prefixes = ["GRWTSK.LinearAlgebra"]
+
+[[subject_profiles]]
+key = "spectral-theory"
+directory = "Spectral"
+taxonomy_ids = ["urn:uuid:0aff8294-7302-4beb-80ae-72c2de9daf58"]
+labels = ["spectral theory", "spectrum"]
+keywords = ["spectral", "eigenvalue", "eigenspace", "resolvent", "charpoly", "dirichlet", "schrodinger"]
+import_prefixes = ["Mathlib.LinearAlgebra.Eigenspace", "Mathlib.LinearAlgebra.Matrix.Charpoly"]
+namespace_prefixes = ["GRWTSK.Spectral"]
+
+[[subject_profiles]]
+key = "combinatorics"
+directory = "Combinatorics"
+taxonomy_ids = ["urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b"]
+labels = ["combinatorics"]
+keywords = ["finite", "counting", "enumeration", "graph", "coloring", "matching", "sequence"]
+import_prefixes = ["Mathlib.Combinatorics"]
+namespace_prefixes = ["GRWTSK.Combinatorics"]
+
+[[subject_profiles]]
+key = "discrete-mathematics"
+directory = "CombinatoricsAndDiscreteMathematics"
+taxonomy_ids = ["urn:uuid:bea4592d-e519-4511-b6ad-3e51d43f04fb"]
+labels = ["discrete mathematics"]
+keywords = ["finite", "discrete", "boolean", "bit", "word", "grid", "incidence"]
+import_prefixes = ["Mathlib.Data.Fin", "Mathlib.Data.Fintype"]
+namespace_prefixes = ["GRWTSK.CombinatoricsAndDiscreteMathematics"]
+
+[[subject_profiles]]
+key = "geometry"
+directory = "Geometry"
+taxonomy_ids = ["urn:uuid:f8eae694-aed8-4351-98c9-33f0cbb70448"]
+labels = ["geometry"]
+keywords = ["geometric", "euclidean", "riemannian", "curve", "bezier", "manifold", "metric"]
+import_prefixes = ["Mathlib.Geometry"]
+namespace_prefixes = ["GRWTSK.Geometry"]
+
+[[subject_profiles]]
+key = "mathematical-logic"
+directory = "FoundationsLogicAndTypeTheory"
+taxonomy_ids = ["urn:uuid:72d4d327-ab11-4ac8-a09c-0db545aed427"]
+labels = ["mathematical logic", "foundations", "proof theory", "type theory"]
+keywords = ["logic", "proof", "inference", "certificate", "soundness", "model", "theory", "rule", "type"]
+import_prefixes = ["Mathlib.Logic", "Mathlib.ModelTheory", "Mathlib.SetTheory"]
+namespace_prefixes = ["GRWTSK.FoundationsLogicAndTypeTheory"]
+
+[[subject_profiles]]
+key = "probability"
+directory = "Probability"
+taxonomy_ids = ["urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943"]
+labels = ["probability theory"]
+keywords = ["probability", "measure", "random", "distribution", "expectation", "markov"]
+import_prefixes = ["Mathlib.Probability"]
+namespace_prefixes = ["GRWTSK.Probability"]
+
+[[subject_profiles]]
+key = "topology"
+directory = "Topology"
+taxonomy_ids = ["urn:uuid:03a6b10c-71cd-4062-8bef-bccc82c5b1de"]
+labels = ["topology"]
+keywords = ["topological", "continuous", "homotopy", "homology", "simplicial", "compact", "connected"]
+import_prefixes = ["Mathlib.Topology", "Mathlib.AlgebraicTopology"]
+namespace_prefixes = ["GRWTSK.Topology"]
