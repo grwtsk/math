@@ -285,6 +285,37 @@ theorem finiteHeatErrorBudget_bound
     unfold FiniteHeatErrorBudget.total
     ring)
 
+
+/-- The cutoff tail bound for a real cosine kernel. Unlike a generic
+four-term budget, this derives an explicit tail from a pointwise
+theta-kernel majorant, with the source function retained as a parameter. -/
+theorem finiteCosineTailBound
+    (Φ : ℝ → ℝ) (s z U B : ℝ)
+    (hU : 0 ≤ U) (hs : 0 ≤ s)
+    (hmajor : ∀ u, U ≤ u → |Φ u| ≤ B)
+    (hB : 0 ≤ B) :
+    ∀ u, U ≤ u →
+      |Real.exp (-(s * u ^ 2)) * Φ u * Real.cos (z * u)| ≤ B := by
+  intro u hu
+  have hheat : Real.exp (-(s * u ^ 2)) ≤ 1 := by
+    apply Real.exp_le_one_iff.mpr
+    have : 0 ≤ u ^ 2 := sq_nonneg u
+    nlinarith
+  have hpos : 0 ≤ Real.exp (-(s * u ^ 2)) := (Real.exp_pos _).le
+  calc
+    |Real.exp (-(s * u ^ 2)) * Φ u * Real.cos (z * u)| =
+        Real.exp (-(s * u ^ 2)) * |Φ u| * |Real.cos (z * u)| := by
+          rw [abs_mul, abs_mul, abs_of_nonneg hpos]
+    _ ≤ Real.exp (-(s * u ^ 2)) * |Φ u| := by
+          apply mul_le_mul_of_nonneg_left
+          · exact mul_le_of_le_one_right (abs_nonneg _) (Real.abs_cos_le_one _)
+          · exact hpos
+    _ ≤ B := by
+          calc
+            Real.exp (-(s * u ^ 2)) * |Φ u| ≤ 1 * |Φ u| := by
+              exact mul_le_mul_of_nonneg_right hheat (abs_nonneg _)
+            _ ≤ B := by simpa using hmajor u hu
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
