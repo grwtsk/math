@@ -1749,3 +1749,298 @@ require distinct **unresolved** source-preserving suppliers.
 Irrationality of zeros and alternating signs are not substitutes
 for those positive-operator and uniform-error premises.
 
+
+## Case FAREY-PROJECTIVE-QUADRATIC-20261023 — actual quotient Koopman eigenfunction
+
+**Source identity, authorship and exact bibliography.**
+This is a **2026 repository-original finite-algebra construction**,
+source-credited to mathematical direction by **R.A. Jacob Martone**
+and formalization assistance from **OpenAI**. No separately
+established paper theorem with an exact title, authors, publication
+date and theorem locator constructs this `F₃²` quadratic
+eigenreadout, so no such attribution is invented.
+The actual stable primary source is
+[`grwtsk/math@0783908183b27551088174e28703b9116bf2ada7`](https://github.com/grwtsk/math/commit/0783908183b27551088174e28703b9116bf2ada7),
+file `GRWTSK/NumberTheory/Farey/ProjectiveQuadraticChannel.lean`,
+Git blob **`b07cb18412f3e64f42d2916fea91b1e59b2228c2`**.
+Its [scope note](../../../mathematics/NumberTheory/Farey/projective-quadratic-channel.md)
+records the explicit quotient, identities, hypotheses, and hostile fixtures.
+
+**Method and exact mathematical hypotheses.** The existing
+`ReturnAngularChannel.modThreeReturn` is the *actual*
+chronological Farey shears `H=LR=[[1,1],[1,2]]` over
+`ZMod 3`; no moving-base frequency or abstractly assigned
+cyclic action is substituted. For
+`v=(x,y): Fin 2 → ZMod 3`, define
+`Q(v)=x(x+y)`. The source identities use only
+characteristic three and the explicit return coordinates:
+
+- `Q(-v)=Q(v)`, `Q(Hv)=-Q(v)` for **every** one of
+  the nine finite vectors, not only the previously fixed orbit.
+- The explicitly defined `χ:ZMod 3→ℂ` sends `0↦0`,
+  `1↦1`, `2↦-1`, with `χ(-u)=-χ(u)`. It is
+  **not a ring homomorphism** between characteristics.
+  `f(v)=χ(Q(v))` is nonzero at the source
+  vector `(1,0)`, sign-invariant `f(-v)=f(v)`,
+  and a **global full-vector** Koopman eigenreadout
+  `f(Hv)=-f(v)`.
+- The source explicitly defines `v∼w` iff
+  `w=v` or `w=-v`. This is an equivalence relation
+  whose quotient has five classes: a distinguished zero
+  class and the four nonzero projective lines.
+  The actual return descends by `Quotient.map`, and
+  `f` descends by `Quotient.lift`.
+  The descended function is a nonzero **`-1`**
+  eigenfunction at every quotient class.
+- On the existing source-selected four-state orbit,
+  `f` equals the **square** of the original oriented
+  `1,i,-1,-i` phase. The earlier `i` no-go
+  (nonzero sign-invariant eigenfunction ⇒ `ω²=1`)
+  is therefore **not contradicted**.
+  The readout vanishes on the second projective
+  two-cycle and on the zero class: no nowhere-zero
+  eigenfunction is claimed.
+
+**Formal destination and precise declaration names.**
+Every following declaration is prefixed by
+`GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel.`:
+`Vec3`, `quadraticSignal`, `quadraticSignal_neg`,
+`modThreeReturn_mulVec_zero`,
+`modThreeReturn_mulVec_one`, `quadraticSignal_return`,
+`ternaryComplexSign`, `ternaryComplexSign_neg`,
+`projectiveQuadraticReadout`,
+`projectiveQuadraticReadout_sign_invariant`,
+`projectiveQuadraticReadout_return`,
+`projectiveQuadraticReadout_nonzero`,
+`projectiveQuadraticReadout_on_orbit`,
+`signOrbitSetoid`, `SignOrbitQuotient`,
+`signOrbitClass`, `modThreeReturn_mulVec_neg`,
+`returnOnSignQuotient`, `descendedQuadraticReadout`,
+`descendedQuadraticReadout_eigen`,
+`descendedQuadraticReadout_nonzero`.
+
+**Dependencies and source preservation.** Direct import:
+`GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction`
+blob `08c7754c5116d7885613caf56e6b2005ab9a7167`
+plus `Mathlib.Tactic`; that leaf imports
+`ReturnAngularChannel` blob
+`df4c90661a7f0a6897d274604de22850b703d38b`,
+and transitively the previously recorded Farey
+group/return spectral construction. Source hypotheses,
+group-word order, field characteristic, zero class and
+original angular observation are preserved exactly.
+The corresponding older issues [#1100](https://github.com/grwtsk/math/issues/1100)
+and [#1102](https://github.com/grwtsk/math/issues/1102)
+remain independent verification gates.
+
+**External papers and their EXACT nonimported scope.**
+**Ram Band, Siegfried Beckus and Raphael Loewy**,
+*The Dry Ten Martini Problem for Sturmian Hamiltonians*
+(**2024** preprint, [arXiv:2402.16703](https://arxiv.org/abs/2402.16703)),
+**equation (1.1) / Theorem 1.1**, concern rotation-coded
+Schrödinger operators, with **irrational frequency
+and nonzero coupling** for the dry spectral-gap
+theorem. Neither the operator nor these analytic
+hypotheses is supplied by the finite sign quotient.
+**Peter Sarnak**, *Three Lectures on the Mobius
+Function: Randomness and Dynamics* (**2011** lecture
+notes, [IAS record](https://publications.ias.edu/sarnak/paper/506)),
+**Definition 3 and Conjecture 4** require actual
+compact zero-entropy flow data, continuous samples,
+a Möbius weight and asymptotic cancellation, none
+of which occurs in the finite quotient.
+Both connections are **`methodological-analogy` only**;
+no paper theorem is being re-proved or imported.
+
+**Actual verification classification.**
+`source-proof-candidate` for all new Lean declarations;
+`finite-certificate` for the independent complete
+enumeration of the nine `F₃²` vectors and five
+sign-orbit classes. **`NOT_RUN / NOT_KERNEL_AUDITED`**
+for this new leaf: no demonstrated pinned-toolchain
+elaboration, warning-clean module compilation,
+fresh kernel replay, or transitive axiom/unsafe audit
+has arrived. The earlier locally verified eight-module
+Farey parent proof scope (referenced above at exact
+commit `55fe9dbc34a784cb15782c9dfb0d371a55c6f988`)
+cannot be transferred to this new leaf or its previously
+unverified angular/projective dependency. Pinned Lean
+`v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The new exact-commit validation request is
+[math #1111](https://github.com/grwtsk/math/issues/1111),
+pinned to integrated main commit
+`69bed07912614d448ecb013f2247a07c79d14f2a`
+(tree `fc2f081be2d023e50e9d23828fe6b53778b1ebb2`),
+source blob `b07cb18412f3e64f42d2916fea91b1e59b2228c2`.
+Its module/dependency build commands, exact declarations,
+hostile controls, fresh checker plan and transitive axiom
+request are a **passive queue, not a verification receipt**.
+Real exit statuses, outputs and accepted trust results
+are required before any status upgrade.
+
+**Missing bridges and nonclaims.** This is one finite
+projective-sign-quotient eigenchannel, **not** a global
+`SL₂(ℤ)` character, nonperiodic Farey/continued-fraction
+cocycle, spectrum of a Sturmian Hamiltonian, continuous
+geometric winding theorem, signed/tempered gauge
+invariance in a noncompact limit, zero-free
+Dirichlet `L`-function claim, Möbius disjointness,
+Hodge conjecture or Riemann Hypothesis result.
+
+
+## October 23, 2026: finite heat recovery, Newman sign and selected Farey compensation
+
+**Epistemic/verification status:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED;
+no accepted external theorem port or RH claim. Detailed
+source/hypothesis/obstruction note:
+[finite-heat-recovery-newman-normalization.md](../../../mathematics/NumberTheory/Zeta/Riemann/finite-heat-recovery-newman-normalization.md).
+
+### Rodgers--Tao source: finite coefficient method comparison only
+
+- **Paper and source identity:** Brad Rodgers and Terence Tao,
+  *The de Bruijn--Newman constant is non-negative*, **2018** initial
+  arXiv posting (18 January 2018), stable
+  [arXiv:1801.05914](https://arxiv.org/abs/1801.05914).
+  The mathematical method located in the arXiv abstract is
+  the entire-function family
+  H_t(z) = integral_0^infinity exp(t*u^2)*Phi(u)*cos(z*u) du,
+  for real t with the paper's super-exponentially decaying source
+  kernel Phi. Its Newman-constant conclusion, zero-dynamics, dynamics
+  estimates and Montgomery pair-correlation contradiction are NOT
+  imported. Exact original PDF theorem/page for the canonical
+  H_0(z)=xi(1/2+i*z/2)/8 normalization is **UNRESOLVED** here;
+  that normalization is recorded in source-labelled
+  grwtsk/math issue #193, not independently paper-verified.
+- **Precisely extracted fragment/hypotheses:** For an *arbitrary finite*
+  index carrier I, real frequencies u_i and REAL coefficients a_i,
+  define exp(t*u_i^2)*a_i. A separately defined finite diagonal
+  positive Hodge heat has eigenvalues lambda_i=u_i^2. With t=-s,
+  this coefficient equals exp(-s*lambda_i)*a_i; at t=+s it equals
+  the finite **inverse** coefficient multiplier. The heat time sign
+  and squared-frequency normalization are required. The actual
+  source Phi, cosine integral, analytic continuation, differentiation
+  under the integral, zero multiplicity and growing-window errors
+  are NOT instantiated by the local proof scripts.
+- **Formal binding:** first integrated at
+  [grwtsk/math@882947685b51abdd0469acdd1515096be604a91a](https://github.com/grwtsk/math/commit/882947685b51abdd0469acdd1515096be604a91a),
+  source
+  GRWTSK/NumberTheory/Zeta/Riemann/FiniteHeatNewmanNormalization.lean,
+  blob **bd6219af4e929ff6b54bb5aef00821ebeb484060**.
+  Declarations (namespace
+  GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization):
+  squareFrequencies, squareFrequencies_nonneg,
+  newmanFiniteCoefficients, newman_negative_time_eq_forward_heat,
+  newman_positive_time_eq_inverse_heat,
+  newman_zero_time, recover_newman_negative_time,
+  newman_negative_time_squareEnergy_le,
+  zetaOrdinateOfNewman, newmanVariableOfZetaOrdinate,
+  ordinate_of_newman_of_ordinate,
+  newman_of_ordinate_of_newman,
+  threeQuarter_height_newman_variable,
+  newman_height_threeHalves_is_zeta_threeQuarters.
+- **Relationship:** METHOD_COMPARISON to the Rodgers--Tao integral;
+  LOCAL_IDENTITY_SOURCE_CANDIDATE for finite scalar coefficients
+  and factor-two arithmetic. NO paper-to-Lean theorem-equivalence or
+  genuine entire-function/zero transfer. In particular t>=0
+  is the **inverse coefficient direction**, whereas negative Newman
+  t=-s with s>=0 is dissipative; the zeta ordinate gamma=z/2
+  makes |gamma|<=3/4 correspond to |z|<=3/2.
+
+### Exact finite Hodge source and inverse-information obstruction
+
+- **Repository-authored identity source:** integrated on main at
+  [grwtsk/math@a4ba792528d23732d9b0c4e62176a19df7e7df57](https://github.com/grwtsk/math/commit/a4ba792528d23732d9b0c4e62176a19df7e7df57).
+  File GRWTSK/Geometry/Hodge/FiniteHeatRecovery.lean, current
+  blob **fdcb3b9584eea3579af88ea13c48beda509482de**.
+  Mathematical assumptions: arbitrary real diagonal modes, finite
+  real t, with nonnegative eigenvalues and t>=0 separately required
+  for contraction; finite index Fintype for the square-energy sum.
+  The genuinely Hodge-facing chart HodgeSpectralChart requires an
+  actual finite incidence graph, a linear equivalence, nonnegative
+  eigenvalues, **isometric square-norm compatibility**, and exact
+  diagonal intertwining with the repository's finite graph Laplacian.
+  No chart constructor or growing-tower theorem is supplied.
+- **Declarations** under
+  GRWTSK.Geometry.Hodge.FiniteHeatRecovery:
+  diagonalHeat, inverseDiagonalHeat,
+  inverse_after_heat, heat_after_inverse, diagonalHeat_injective,
+  diagonalHeat_add_time, diagonalHeat_abs_le,
+  diagonalHeat_squareEnergy_le, diagonalHeat_zero_mode,
+  inverse_gain_readout, UniformInverseBound,
+  uniformInverseBound_iff_gain, HodgeSpectralChart,
+  HodgeSpectralChart.heat, HodgeSpectralChart.recover,
+  HodgeSpectralChart.recover_heat,
+  HodgeSpectralChart.heat_squareEnergy_le,
+  discarded_coordinate_is_not_injective,
+  implicitEulerEncode, implicitEulerRecover,
+  implicitEuler_exact, implicitEuler_no_uniform_inverse_bound.
+  The latter obstruction is specifically for the implicit-Euler
+  scalar x/(n+1), not the exact exponential semigroup. It demonstrates
+  that stagewise exact inversion need not give a uniformly Lipschitz
+  inverse across increasing stages. The coordinate-drop obstruction
+  distinguishes true full-signal injectivity from lossy observation.
+- **Relationship:** LOCAL_IDENTITY_SOURCE_CANDIDATE and
+  CONDITIONAL_REDUCTION (chart existence). No Huffman finite-bit
+  encoder, lossless compression rate, zeta source identification,
+  uniform Hodge gap or arithmetic 7/8->3/4 transition is proved.
+
+### Exact Farey return compensated by a chosen heat clock
+
+- **Existing source, not an outside paper:** the genuine Farey LR
+  expanding eigenvalue lambda=(3+sqrt(5))/2>1 and mod-three
+  four-phase discreteSpiral(n)=(lambda*i)^n reside in
+  GRWTSK.NumberTheory.Farey.ReturnSpectralChannel,
+  ReturnAngularChannel and WeightedReturnBalance. The latter's
+  source blob at this integration is
+  6fb6857656d34b7b2e22e8ef3229be339cb526fc.
+- **New mathematical hypothesis/normalization:** choose scalar
+  heat eigenvalue **one** and a return-specific time
+  s_n=n log(lambda). Then exp(-s_n)=(lambda^-1)^n and
+  exp(-s_n)*discreteSpiral(n)=i^n. Four consecutive compensated
+  values cancel exactly. The *uncompensated* selected sum is
+  nonzero because Re(1+lambda*i-lambda^2-lambda^3*i)=1-lambda^2<0.
+  This time schedule is an explicit selected gauge, not an
+  isometric Hodge/Farey operator conjugacy or a canonical time on
+  all Farey walks.
+- **Formal binding:** main source integration
+  [grwtsk/math@f23626b03ded1f45a4c6410231127e1b02024be7](https://github.com/grwtsk/math/commit/f23626b03ded1f45a4c6410231127e1b02024be7),
+  GRWTSK/NumberTheory/Farey/HeatCompensatedReturn.lean,
+  blob **4307d4c61f10d5a34777e7d34f3884fc94274cb4**.
+  Declarations under
+  GRWTSK.NumberTheory.Farey.HeatCompensatedReturn:
+  returnHeatTime, returnHeatTime_nonneg,
+  heatReturnCompensator, heatReturnCompensator_is_unit_heat,
+  heatReturnCompensator_eq_inv_pow,
+  heatNormalizedSpiral,
+  heatNormalizedSpiral_eq_compensatedSample,
+  heatNormalizedSpiral_eq_phase,
+  heatNormalized_four_consecutive_zero,
+  raw_return_four_not_zero.
+- **Relationship:** REPOSITORY_SOURCE_IDENTITY_CANDIDATE
+  (selected finite observation), not a
+  PAPER_TO_LEAN_BRIDGE_PROVED claim. Finite source normalization
+  does not imply arbitrary signed cancellation, Guth--Maynard
+  large-value density, sofic/local-limit positivity, RH, GRH,
+  Newman's constant, or irrationality/transcendence of zero heights.
+
+### Validation and trust
+
+All three new files were read from exact Git source blobs after their
+routine non-force main integration. Declaration-head inspection found
+no direct sorry/admit/axiom. Independently, off-kernel exact SymPy
+algebra checked the Farey four-block cancellation for twelve start
+indices, the first twelve compensated samples, and the nonzero raw
+four-block real component. Such checks are FINITE_COMPUTATION_ONLY,
+not proof of all n and not Lean evidence.
+
+Pinned toolchain is leanprover/lean4:v4.33.0; Mathlib lock
+db584cd6d46c92f209a44c0f1c829460d327499d.
+Local \`lean\`, \`lake\` and \`elan\` executables were absent.
+No warning-clean build, direct elaboration, fresh kernel replay,
+trust-zero check, full transitive #print axioms, generated/opaque/unsafe
+audit or external theorem admission was executed. All such checks
+are **NOT_RUN / NOT_KERNEL_AUDITED**. No Railway, no force push.
+A separate pinned issue is required before accepting or promoting
+any of these source scripts. This work does not claim that a linked
+private discussion was inspected or verified.
