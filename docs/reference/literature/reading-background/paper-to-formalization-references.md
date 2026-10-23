@@ -945,3 +945,217 @@ global x−T descent, construction of the normalizations,
 `SourceBitsMatch`, regulator, RH or GRH is proved. A theorem statement
 with `NormalizedResidueDescentEvidence` is **not** evidence the record
 can be inhabited.
+
+
+## October 23 2026: Farey Hodge, Guth–Maynard density and CM/Goldfeld comparisons
+
+**Evidence:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED on all new
+Lean modules. Static GitHub readback is not a kernel proof. The detailed
+scope/nonclaim ledger is at
+[docs/mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md](../../../../mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md).
+This reference entry is a mathematical provenance ledger, not a
+verification receipt or a source attribution for repository-authored identities.
+
+### Guth–Maynard 3/4 zero-density theorem
+
+**Paper:** Larry Guth and James Maynard, *New large value estimates for
+Dirichlet polynomials*, **2026 journal publication** (Annals of Mathematics
+203(2), pp. 623–675), DOI
+[10.4007/annals.2026.203.2.6](https://doi.org/10.4007/annals.2026.203.2.6).
+Manuscript [arXiv:2405.20552](https://arxiv.org/abs/2405.20552);
+the DOI is the stable cited published version. **Exact use: Theorem 1.2**:
+for the zeta zero count by multiplicity, with Re(rho)>=sigma and
+|Im(rho)|<=T, the pointwise exponent is
+15(1-sigma)/(3+5 sigma) (and the uniform exponent is 30(1-sigma)/13),
+with the paper's o(1) asymptotic quantifiers. At sigma=3/4 these are
+exactly 5/9 and 15/26, respectively. The source's actual Dirichlet
+polynomial large-value estimate is **not** ported.
+
+**Local candidate:** [grwtsk/math@d1d14de848aa84bcd3ed9cd8bb74a03627b9f362](https://github.com/grwtsk/math/commit/d1d14de848aa84bcd3ed9cd8bb74a03627b9f362),
+GRWTSK/NumberTheory/Zeta/Riemann/ThreeQuarterDensityHodgeComparison.lean,
+blob 319552d047092d7e13e96e950ea7e26263898482,
+namespace GRWTSK.RiemannHypothesis.ThreeQuarterDensityHodgeComparison.
+Declarations include guthMaynardPointwiseExponent,
+pointwiseExponent_threeQuarters, uniformExponent_threeQuarters,
+bothSignZeroCount, positiveHeightZeroCount,
+positiveHeightZeroCount_le_bothSignZeroCount,
+GuthMaynardBothSignThreeQuarter, PositiveThreeQuarterDensity,
+positiveDensity_of_guthMaynard,
+bothSignZeroCount_zero_right_of_sevenEighths,
+positiveHeightZeroCount_zero_at_low_seed, density_and_sevenEighths_band,
+naive_gradedFourier_strictly_misses_threeQuarters,
+distinct_threeQuarter_exponents. The full both-sign counter consumes
+the repository's exact CanonicalZeroDivisor.heightHead and analytic
+multiplicity, NOT a fabricated list; positiveHeight is a subset.
+**Relationship:** LOCAL_IDENTITY_SOURCE_CANDIDATE for exponent arithmetic
+and finite count comparison, CONDITIONAL_REDUCTION for the actual
+Guth--Maynard infinite-height estimate. There is **no** local constructor
+of GuthMaynardBothSignThreeQuarter, no analysis of large values,
+and no proved port of Theorem 1.2. The earlier
+CriticalStripThreeQuarterSeed.lean bound is on |Im(s)| <=3/4, not
+Re(s)>=3/4.
+
+**Verification:** GitHub source/blob readback only. Pinned Lean
+leanprover/lean4:v4.33.0, Mathlib
+db584cd6d46c92f209a44c0f1c829460d327499d.
+No lake build, direct elaboration, fresh kernel replay, transitive
+#print axioms or generated/unsafe audit; all are NOT_RUN.
+Acceptance depends on the exact target and transitive import closure.
+
+### OpenAI seven-eighths zero-free result: comparison, NOT port
+
+**Source:** OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+Re(s)>7/8*, **September 30, 2026 preprint**, stable repository revision
+[openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026).
+The precise external Lean declaration identified in
+lean/docs/003.md is OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re:
+Re(s)>7/8 implies riemannZeta s != 0 (in its exact imported universe).
+The corresponding local proposition is
+GRWTSK.RiemannHypothesis.SevenEighthsZeroFree in
+GRWTSK/NumberTheory/Zeta/Riemann/ExternalSevenEighthsBand.lean.
+The present density comparison consumes it as an **explicit premise**,
+giving a reflected real-part band 1/8<=Re(s)<=7/8.
+**Relationship:** ANALOGY_ONLY to the external proof mechanism,
+CONDITIONAL_REDUCTION at the terminal zero-free proposition;
+LOCAL_ADMISSION_BLOCKED pending toolchain, dependency, trust and
+proof-transport alignment in OpenAISevenEighthsPort.lean.
+This cannot prove RH or the nonlinear 7/8 -> 3/4 arithmetic contraction.
+
+### OpenAI CM Hodge paper; two meanings of Hodge remain separated
+
+**Paper:** OpenAI, *The rational Hodge conjecture for CM abelian
+varieties*, **revised preprint October 6, 2026**,
+[immutable OpenAI repository revision](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026).
+Exact manuscript fragments inspected: build/sections/02-tensors.tex
+(odd CM sign rows, four-factor balance, rational trace descent) and
+05c-cm-types.tex (Hecke idempotents, good-reduction crystalline
+Frobenius and weak-admissibility slope/filtration comparison).
+Main theorem thm:cm asserts surjectivity of
+CH^p(A)_Q -> H^(2p)(A,Q) intersection H^(p,p)(A) for each complex
+CM abelian variety A and each p>=0; **not imported locally**.
+Existing GRWTSK declarations:
+GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_twoTwoSignProfile,
+GRWTSK.AlgebraicGeometry.Hodge.CMCoordinateHodge.hodgePieces_isCompl,
+GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities,
+GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.realizeAlgebraicCycle_of_descentData
+(the last requires an explicit algebraicity supplier).
+No local constructor for a general rational cycle-class surjection is
+asserted. **Relationship:** finite Hodge TYPE identities and
+conditional scalar descent, not algebraic-cycle realization.
+
+**New distinct finite-graph source:**
+GRWTSK/NumberTheory/Farey/CyclicResidueHodge.lean,
+[grwtsk/math@7c966ff78bc79530d15c4410a1d7c8c5b726b35a](https://github.com/grwtsk/math/commit/7c966ff78bc79530d15c4410a1d7c8c5b726b35a),
+blob 449c566c6366b9732ba719d6485ad299b29473c2.
+Declarations: cyclicIncidence, cyclic_energy_nonneg,
+cyclic_laplacian_nonneg, cyclic_laplacian_kernel, unitPart,
+nonunitPart, unit_add_nonunit, unitPart_idempotent,
+nonunitPart_idempotent, unit_nonunit_counting_orthogonal,
+fareyNonunitPointMass_eq_indicator,
+farey_unit_projector_not_translation_equivariant.
+This uses real finite cellular Hodge (delta*delta) and demonstrates
+failure of translation-invariance for the arithmetic unit projector;
+it is **not** a rational-Hodge (p,p) theorem. A functorial geometric
+comparison to CM cohomology is UNRESOLVED_PREMISE.
+
+**Ramanujan/cyclic Fourier companion:**
+GRWTSK/NumberTheory/Farey/RamanujanFourierHodge.lean, **current repaired
+source** at
+[grwtsk/math@8460baa69c35110348dcb3498f7051cc49762aa4](https://github.com/grwtsk/math/commit/8460baa69c35110348dcb3498f7051cc49762aa4),
+blob 9d85c0b82c5643e14ee48df4b3becd7a873a680d.
+Declarations: additiveMode_shift, additiveMode_shift_back,
+cyclicDifferenceStar_difference_eq_laplacian,
+additiveMode_laplacian_eigen, primitiveRamanujanSum,
+nonprimitiveFrequencySum, fullFrequency_eq_primitive_add_nonprimitive,
+characterAverage_primitive_nonprimitive.
+This is a **repository-authored finite Fourier identity**, not a
+paper-exact formalization of a video. The divisor reconstruction
+sum_(d|q) c_d(n) = q*indicator(q|n) is NOT proved in this increment.
+Matching real Hodge matrix and complex Laplacian after scalar extension
+remains open. No classical Ramanujan historical attribution is claimed
+from a video whose exact argument was not checked.
+**Verification:** both modules SOURCE_ONLY / NOT_RUN for all kernel,
+compiler and transitive axiom/unsafe checks. Same pinned Lean/Mathlib.
+
+### Quadratic Gaussian CM prime density and ordinary reduction
+
+**Mathematical background:** Joseph H. Silverman,
+*Advanced Topics in the Arithmetic of Elliptic Curves*, **1994**,
+Chapter II (Complex Multiplication), Springer GTM 151,
+[DOI 10.1007/978-1-4612-0851-8](https://doi.org/10.1007/978-1-4612-0851-8).
+The exact location/theorem number for the Deuring ordinary/supersingular
+criterion on E:y^2=x^3-x is **UNRESOLVED** here; no passage is
+paper-ported. A separate classical Dirichlet/Chebotarev source is
+needed to prove natural relative densities 1/2 for primes p mod4=1,
+p mod4=3. Neither theorem has been supplied as a Lean proof.
+
+**Local candidate:** GRWTSK/NumberTheory/ArithmeticGeometry/
+QuadraticCMPrimeDensity.lean,
+[grwtsk/math@16336be883567229fff9ebc64be555d21ed6d403](https://github.com/grwtsk/math/commit/16336be883567229fff9ebc64be555d21ed6d403),
+blob 6178e018686b0e329479cfae8293b343fbd2b42e.
+Declarations: oddPrimeWindow/oddPrimeCount/splitPrimeCount/inertPrimeCount,
+HasRelativePrimeDensityHalf, QuadraticPrimeDensitySupplier,
+QuadraticCMReductionProfile, ordinaryPrimeCount,
+supersingularPrimeCount, ordinaryPrimeCount_eq_splitPrimeCount,
+supersingularPrimeCount_eq_inertPrimeCount,
+ordinaryPrimeDensity_half, supersingularPrimeDensity_half,
+ordinary_and_supersingular_density_half, ramified_two_excluded.
+The exact classification and BOTH density halves are independent
+unconstructed supplier fields. Local theorem types transport
+finite-count equalities to the two asymptotic density conclusions;
+they do NOT establish these density inputs.
+**Relationship:** conditional arithmetic/geometric transport,
+not imported Deuring/Chebotarev or CM Hodge algebraicity theorem.
+SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED; no receipt.
+
+### Goldfeld half densities do not imply mean rank without a tail
+
+**Paper:** OpenAI, *Goldfeld's analytic density conjecture and the
+2-converse for elliptic curves*, **October 7, 2026 preprint**,
+[openai/math at immutable source](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026).
+Exact cited theorem **thm:main-density** in
+build/sections/00-introduction.tex: for every elliptic curve E/Q and
+j in {0,1}, density 1/2 of analytic rank j quadratic twists among
+D(X)={d integer: 0<|d|<=X, d squarefree}. The 2-converse
+**thm:main-converse** assumes FULL 2-infinity Selmer corank 0 or 1
+and concludes analytic rank = Mordell--Weil rank = Selmer corank,
+plus finite Sha. Section 11 lemma **lem:squarefree-density** assumes
+a squareclass-invariant property and 2 delta X+o(X) signed integer
+count. The introduction explicitly states that a separate mean-rank
+paper/tail estimate is needed; the two half densities alone do not
+bound unbounded analytic ranks on an exceptional density-zero set.
+
+**Local source:** GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/
+GoldfeldTwistDensityComparison.lean,
+[grwtsk/math@cd4f6d91aca5be0c95baa55be1149b6b7014bb58](https://github.com/grwtsk/math/commit/cd4f6d91aca5be0c95baa55be1149b6b7014bb58),
+blob 9fd9e6663bda0adba4bfd887045604e05adcaded.
+Declarations: TwistRankFamily, eligibleTwists (symmetric signed window),
+rankZeroMass, rankOneMass, highRankMoment, fullRankMoment,
+rank_moment_pointwise, fullRankMoment_eq_one_add_high,
+meanRank_eq_one_fraction_add_high,
+GoldfeldZeroOneHalfDensities, HighRankMomentNegligible,
+GoldfeldMeanHalf, mean_half_of_density_and_high_tail.
+The family adapter is NOT instantiated with a curve, source-exact
+squarefree predicate or analytic L-function order. The finite moment
+identity and mean inference are **LOCAL_IDENTITY_SOURCE_CANDIDATE**
+and **CONDITIONAL_REDUCTION**. No Goldfeld density theorem, converse,
+BSD statement, rank-32 independence or mean-rank theorem is imported.
+No claimed kernel/axiom receipt.
+
+### Actual verification and trust status for this entire group
+
+All five source modules were added through routine non-force main
+commits and independently read back by exact Git blob. Static checks
+found no new declaration-level sorry, admit or axiom tokens. Environment
+toolchain: leanprover/lean4:v4.33.0; Mathlib locked at
+db584cd6d46c92f209a44c0f1c829460d327499d.
+The local container has no lean/lake executable, and an attempted
+git ls-remote failed host resolution (exit 128). No Railway or other
+declined remote executor was used. **Compiler builds, direct
+elaboration, independent fresh kernel replay, transitive #print axioms
+and unsafe/generated declaration audits are all NOT_RUN.**
+The external manuscripts' own proof or kernel claims are not local
+receipts. No proof accepted into GRWTSK.lean public root, no
+unconditional density or zero-free theorem and no asserted
+PAPER_TO_LEAN_BRIDGE_PROVED. Add exact commit-bound issue links and
+real execution receipts only after an authorized executor runs them.
