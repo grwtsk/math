@@ -45,7 +45,7 @@ theorem analyticAt_integrand (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
     (s : ℂ) (hs : s ≠ 1) (hz : riemannZeta s ≠ 0) :
     AnalyticAt ℂ (integrand x h) s := by
   have hζ := analyticOn_riemannZeta s hs
-  exact ((hζ.deriv.div hζ hz).neg).mul (differentiable_tentKernel x h hh ha).analyticAt
+  exact ((hζ.deriv.div hζ hz).neg).mul ((differentiable_tentKernel x h hh ha).analyticAt s)
 
 /-- No boundary-zero or boundary-pole premise is left to the caller. -/
 theorem analyticAt_integrand_on_boundary (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
@@ -123,9 +123,10 @@ theorem rightSegment_tendsto_squareSource (n : ℕ) (hn : 2 ≤ n) :
   have he : (∫ t : ℝ,
       integrand (squareCenter n) (squareRadius n) ((2 : ℂ) + (t : ℂ) * Complex.I)) /
       ((2 * Real.pi : ℝ) : ℂ) = (squareTentMangoldt n : ℂ) := by
-    simpa only [integrand, rightLine, Complex.ofReal_div, Complex.ofReal_one,
-      div_eq_mul_inv, mul_comm] using (squareTentMangoldt_eq_rightLine n hn).symm
-  simpa only [rightSegment, he] using hv.div_const ((2 * Real.pi : ℝ) : ℂ)
+    simpa [integrand, rightLine, div_eq_mul_inv, mul_comm] using (squareTentMangoldt_eq_rightLine n hn).symm
+  have hv' := hv.div_const ((2 * Real.pi : ℝ) : ℂ)
+  rw [show ((2 : ℝ) : ℂ) = 2 by norm_num, he] at hv'
+  exact hv'
 
 end
 end GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours

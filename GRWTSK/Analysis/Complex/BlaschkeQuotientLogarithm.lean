@@ -45,7 +45,7 @@ theorem norm_product_at_center_le_one {ι : Type*} (S : Finset ι)
   intro i hi
   apply pow_le_one₀ (norm_nonneg _)
   rw [factor_at_zero 3 (by norm_num), norm_div, norm_neg]
-  norm_num only [Complex.norm_ofNat]
+  norm_num [Complex.norm_real, Real.norm_eq_abs]
   exact (div_le_one (by norm_num : (0 : ℝ) < 3)).mpr (by linarith [ha i hi])
 
 /-- Maximum modulus transports the original boundary ceiling to the extended quotient. -/

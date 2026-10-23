@@ -44,7 +44,7 @@ def diskCountBudget (N : ℕ) : ℝ := growthLog N / Real.log (12 / 11 : ℝ)
 
 theorem growthLog_pos (N : ℕ) : 0 < growthLog N := by
   have h4 := Real.log_pos (by norm_num : (1 : ℝ) < 4)
-  have hn := Real.log_nonneg (show (1 : ℝ) ≤ (N : ℝ) + 2 by linarith [Nat.cast_nonneg (R := ℝ) N])
+  have hn := Real.log_nonneg (show (1 : ℝ) ≤ (N : ℝ) + 2 by linarith [Nat.cast_nonneg (α := ℝ) N])
   unfold growthLog
   linarith
 
@@ -71,7 +71,7 @@ theorem mem_diskHead (N : ℕ) (c : ℂ) (hc : c = upperCenter N ∨ c = lowerCe
     have ht : |z.1.im| ≤ |z.1.im - c.im| + |c.im| := by
       calc
         _ = |(z.1.im - c.im) + c.im| := by congr 1; ring
-        _ ≤ _ := abs_add _ _
+        _ ≤ _ := abs_add_le _ _
     rw [him] at ht
     change |z.1.im| ≤ (N : ℝ) + 5
     linarith
@@ -95,7 +95,7 @@ theorem diskMass_le (N : ℕ) (hN : 2 ≤ N) (c : ℂ)
     intro he
     rw [he, norm_zero] at hcFloor
     norm_num at hcFloor
-  have hM : (1 : ℝ) ≤ ((N : ℝ) + 2) ^ 3 := one_le_pow₀ (by linarith [Nat.cast_nonneg (R := ℝ) N])
+  have hM : (1 : ℝ) ≤ ((N : ℝ) + 2) ^ 3 := one_le_pow₀ (by linarith [Nat.cast_nonneg (α := ℝ) N])
   have hbound : ∀ s ∈ sphere c (3 : ℝ), ‖riemannZeta s‖ ≤ ((N : ℝ) + 2) ^ 3 :=
     fun s hs => norm_zeta_le_cube_on_disk N hN c s hc (sphere_subset_closedBall hs)
   have hid : (∑ p ∈ (diskHead N c).image (fun z : ZeroPoint => z.1),
@@ -118,12 +118,13 @@ theorem diskMass_le (N : ℕ) (hN : 2 ≤ N) (c : ℂ)
     apply Real.log_le_log (by positivity)
     have hh := div_le_div_of_nonneg_left (by positivity : 0 ≤ ((N : ℝ) + 2) ^ 3)
       (by norm_num : (0 : ℝ) < 1 / 4) hcFloor
-    convert hh using 1 <;> ring
+    simpa [div_eq_mul_inv, mul_comm] using hh
   have he : Real.log (4 * ((N : ℝ) + 2) ^ 3) = growthLog N := by
     rw [Real.log_mul (by norm_num) (by positivity), Real.log_pow]
     rfl
-  exact hj'.trans (by rw [diskCountBudget, ← he];
-    exact div_le_div_of_nonneg_right hl log_twelve_elevenths_pos.le)
+  apply hj'.trans
+  rw [diskCountBudget, ← he]
+  exact div_le_div_of_nonneg_right hl log_twelve_elevenths_pos.le
 
 /-- The central horizontal segment lies strictly inside the Cauchy core disk. -/
 theorem central_point_norm (c s : ℂ) (hc : c.re = 2) (hs : s.re ∈ Icc (0 : ℝ) 2)
@@ -187,9 +188,13 @@ theorem norm_zeta_logDeriv_of_factorization (N : ℕ) (hN : 2 ≤ N) (c : ℂ)
     linarith [separatedHeight_pos N]
   have hcomp : logDeriv (fun u => riemannZeta (c + u)) w = logDeriv riemannZeta s := by
     change logDeriv (riemannZeta ∘ fun u => c + u) w = _
-    have hd := (hasDerivAt_id w).const_add c
-    rw [logDeriv_comp (by simpa only [hcs] using differentiableAt_riemannZeta hsne)
-      hd.differentiableAt, hd.deriv, mul_one, hcs]
+    have hd : HasDerivAt (fun u : ℂ => c + u) 1 w := by
+      simpa only [id_eq] using (hasDerivAt_id w).const_add c
+    have hzeta : DifferentiableAt ℂ riemannZeta (c + w) := by
+      rw [hcs]
+      exact differentiableAt_riemannZeta hsne
+    have he := logDeriv_comp (f := riemannZeta) (g := fun u => c + u) (x := w) hzeta hd.differentiableAt
+    simpa only [hd.deriv, mul_one, hcs] using he
   rw [hcomp] at hb
   have hJ := localCountBudget_nonneg N
   have hinv : 1 / heightClearance N ≤ 4 * (localCountBudget N + 1) := by
@@ -200,9 +205,10 @@ theorem norm_zeta_logDeriv_of_factorization (N : ℕ) (hN : 2 ≤ N) (c : ℂ)
     _ ≤ 80 * growthLog N + (∑ z ∈ diskHead N c, (multiplicity z : ℝ)) *
         (1 / heightClearance N + 1) := hb
     _ ≤ 80 * growthLog N + diskCountBudget N * (1 / heightClearance N + 1) :=
-      add_le_add_left (mul_le_mul_of_nonneg_right (diskMass_le N hN c hc) (by positivity)) _
-    _ ≤ _ := add_le_add_left (mul_le_mul_of_nonneg_left
-      (add_le_add_right hinv 1) (diskCountBudget_nonneg N)) _
+      add_le_add le_rfl (mul_le_mul_of_nonneg_right (diskMass_le N hN c hc)
+        (by have := (heightClearance_pos N); positivity))
+    _ ≤ _ := add_le_add le_rfl (mul_le_mul_of_nonneg_left
+      (add_le_add hinv le_rfl) (diskCountBudget_nonneg N))
 
 end
 end GRWTSK.RiemannHypothesis.JensenDiskLogDerivative

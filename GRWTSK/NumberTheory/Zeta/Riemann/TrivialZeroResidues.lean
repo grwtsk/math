@@ -7,7 +7,7 @@ import Mathlib.NumberTheory.LSeries.Nonvanishing
 import Mathlib.Analysis.SpecialFunctions.Gamma.Deriv
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
 import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.NormCast
+import Mathlib.Tactic
 
 set_option autoImplicit false
 
@@ -37,7 +37,7 @@ def trivialPoint (k : ℕ) : ℂ := -2 * ((k : ℂ) + 1)
 theorem trivialPoint_re_neg (k : ℕ) : (trivialPoint k).re < 0 := by
   have hr : (trivialPoint k).re = -2 * ((k : ℝ) + 1) := by simp [trivialPoint]
   rw [hr]
-  nlinarith [Nat.cast_nonneg (R := ℝ) k]
+  nlinarith [Nat.cast_nonneg (α := ℝ) k]
 
 @[simp] theorem trivialPoint_im (k : ℕ) : (trivialPoint k).im = 0 := by
   simp [trivialPoint]
@@ -46,8 +46,7 @@ theorem trivialPoint_injective : Function.Injective trivialPoint := by
   intro j k he
   have hr := congrArg Complex.re he
   simp [trivialPoint] at hr
-  have hjk : (j : ℝ) = k := by linarith
-  exact_mod_cast hjk
+  exact hr
 
 theorem zeta_trivialPoint (k : ℕ) : riemannZeta (trivialPoint k) = 0 :=
   riemannZeta_neg_two_mul_nat_add_one k
@@ -149,9 +148,10 @@ theorem deriv_zeta_trivialPoint (k : ℕ) :
       (Complex.cos ((Real.pi : ℂ) * trivialPoint k / 2) * ((Real.pi : ℂ) / 2))
       (trivialPoint k) := by
     simpa using (((hasDerivAt_id (trivialPoint k)).const_mul (Real.pi : ℂ)).div_const 2).csin
-  rw [hnear.deriv_eq, ((reflectedUnit_differentiableAt
-    (trivialPoint_re_neg k)).hasDerivAt.mul hsin).deriv,
-    sine_trivialPoint, mul_zero, zero_add]
+  rw [hnear.deriv_eq]
+  have hd := ((reflectedUnit_differentiableAt
+    (trivialPoint_re_neg k)).hasDerivAt.mul hsin).deriv
+  simpa only [Pi.mul_def, sine_trivialPoint, mul_zero, zero_add] using hd
 
 /-- Every actual negative-even zero is simple; simplicity is not a theorem argument. -/
 theorem deriv_zeta_trivialPoint_ne_zero (k : ℕ) : deriv riemannZeta (trivialPoint k) ≠ 0 := by

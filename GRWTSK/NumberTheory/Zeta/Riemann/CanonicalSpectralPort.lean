@@ -36,6 +36,7 @@ open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage
 open GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula
+open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.Analysis.Complex.TentMellinKernel
 open GRWTSK.Analysis.Real.TentRationalCorrection

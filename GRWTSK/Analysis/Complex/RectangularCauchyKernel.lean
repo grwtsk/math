@@ -31,14 +31,19 @@ theorem inverse_cartesian (u v : ℝ) :
     ((u : ℂ) + (v : ℂ) * Complex.I)⁻¹ =
       ((u / (u ^ 2 + v ^ 2) : ℝ) : ℂ) - ((v / (u ^ 2 + v ^ 2) : ℝ) : ℂ) * Complex.I := by
   apply Complex.ext <;>
-    simp [Complex.inv_re, Complex.inv_im, Complex.normSq_apply, pow_two]
+    simp only [Complex.inv_re, Complex.inv_im, Complex.normSq_apply, Complex.add_re, Complex.add_im,
+      Complex.mul_re, Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, Complex.I_re, Complex.I_im,
+      Complex.sub_re, Complex.sub_im, pow_two, neg_div, mul_zero, mul_one, add_zero, zero_add, sub_zero, zero_sub]
 
 /-- The differential I on an upward vertical edge is included here. -/
 theorem I_mul_inverse_cartesian (u v : ℝ) :
     Complex.I * ((u : ℂ) + (v : ℂ) * Complex.I)⁻¹ =
       ((v / (v ^ 2 + u ^ 2) : ℝ) : ℂ) + ((u / (v ^ 2 + u ^ 2) : ℝ) : ℂ) * Complex.I := by
   rw [inverse_cartesian]
-  apply Complex.ext <;> simp [add_comm]
+  apply Complex.ext <;> simp only [Complex.mul_re, Complex.mul_im, Complex.sub_re, Complex.sub_im,
+    Complex.add_re, Complex.add_im, Complex.ofReal_re, Complex.ofReal_im, Complex.I_re, Complex.I_im,
+    zero_mul, one_mul, mul_zero, mul_one, add_zero, zero_add, sub_zero, zero_sub,
+    add_comm (u ^ 2) (v ^ 2)]; ring
 
 /-- Exact horizontal integral, with its signed transverse coordinate. -/
 theorem horizontal_cauchy (p : ℂ) (l r y : ℝ) (hy : y - p.im ≠ 0) :
@@ -55,7 +60,10 @@ theorem horizontal_cauchy (p : ℂ) (l r y : ℝ) (hy : y - p.im ≠ 0) :
     (continuous_angular_density p.re (y - p.im) hy)).mul (continuous_const : Continuous (fun _ : ℝ => Complex.I))
   unfold horizontal
   simp_rw [hcoord, inverse_cartesian]
-  rw [intervalIntegral.integral_sub (hf.intervalIntegrable l r) (hg.intervalIntegrable l r),
+  have he := intervalIntegral.integral_sub
+    (hf.intervalIntegrable (μ := volume) l r) (hg.intervalIntegrable (μ := volume) l r)
+  simp only [Function.comp_apply, Pi.mul_apply] at he
+  rw [he,
     intervalIntegral.integral_mul_const, intervalIntegral.integral_ofReal,
     intervalIntegral.integral_ofReal, integral_radial_density l r p.re (y - p.im) hy,
     integral_angular_density l r p.re (y - p.im) hy]
@@ -76,7 +84,10 @@ theorem I_mul_vertical_cauchy (p : ℂ) (c T : ℝ) (hc : c - p.re ≠ 0) :
   unfold vertical
   rw [← intervalIntegral.integral_const_mul]
   simp_rw [hcoord, I_mul_inverse_cartesian]
-  rw [intervalIntegral.integral_add (hf.intervalIntegrable (-T) T) (hg.intervalIntegrable (-T) T),
+  have he := intervalIntegral.integral_add
+    (hf.intervalIntegrable (μ := volume) (-T) T) (hg.intervalIntegrable (μ := volume) (-T) T)
+  simp only [Function.comp_apply, Pi.mul_apply] at he
+  rw [he,
     intervalIntegral.integral_mul_const, intervalIntegral.integral_ofReal,
     intervalIntegral.integral_ofReal, integral_radial_density (-T) T p.im (c - p.re) hc,
     integral_angular_density (-T) T p.im (c - p.re) hc]
@@ -117,11 +128,11 @@ theorem boundaryIntegral_cauchy (p : ℂ) (l r T : ℝ)
       ((Real.arctan (U / R) - Real.arctan ((-D) / R) : ℝ) : ℂ) * Complex.I) -
     (((Real.log (U ^ 2 + (-L) ^ 2) / 2 - Real.log ((-D) ^ 2 + (-L) ^ 2) / 2 : ℝ) : ℂ) +
       ((Real.arctan (U / (-L)) - Real.arctan ((-D) / (-L)) : ℝ) : ℂ) * Complex.I) = _
-  simp only [neg_sq, neg_div_neg, neg_div, div_neg, Real.arctan_neg]
+  simp only [neg_sq, neg_div, div_neg, Real.arctan_neg]
   rw [add_comm (U ^ 2) (R ^ 2), add_comm (D ^ 2) (R ^ 2),
     add_comm (U ^ 2) (L ^ 2), add_comm (D ^ 2) (L ^ 2)]
   apply Complex.ext
-  · simp <;> ring
+  · simp; ring
   · simp
     linarith [hRD, hLD, hRU, hLU]
 
@@ -132,7 +143,7 @@ theorem boundaryIntegral_cauchy_exterior (p : ℂ) (l r T : ℝ)
   apply boundaryIntegral_zero_on_rectangle _ l r T hlr hT
   intro z hz
   exact (analyticAt_id.sub analyticAt_const).inv
-    (sub_ne_zero.mpr (by intro he; subst z; exact hp hz))
+    (sub_ne_zero.mpr (by intro he; change z = p at he; exact hp (he ▸ hz)))
 
 /-- Scalar linearity applies to the maintained boundary expression. -/
 theorem boundaryIntegral_const_mul (c : ℂ) (f : ℂ → ℂ) (l r T : ℝ) :
