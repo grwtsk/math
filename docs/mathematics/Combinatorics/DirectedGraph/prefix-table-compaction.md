@@ -53,8 +53,8 @@ input; equal raw trace words do not identify different root contexts.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableCompaction.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCompaction.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-integration-2026-10-15.json)
+native receipt (artifact:gitblob:72a53263dc77918b21a813bdc58b3a83a065d6d3)
+and integration record (artifact:gitblob:64acfb30f8cd0701dfa5c588f6140e13f7dc4a6d)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the complete owned-declaration/
 transitive-axiom census, allowing only `propext`, `Classical.choice` and

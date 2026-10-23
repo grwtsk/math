@@ -62,7 +62,7 @@ identity. Its own source and native receipt carry those additional claims.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PathUnfolding.lean),
 [positive consumers](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathUnfolding.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json)
+and native receipt (artifact:gitblob:485901552126708676a6deeca8147d1519c0d46b)
 bind exact bytes and controls. Fresh selected project objects and accepted
 controls use pinned Lean 4.33.0, trust zero, fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,
@@ -70,8 +70,8 @@ owned-declaration/transitive-axiom census permitting only `propext`,
 and rechecked. Pinned dependency objects are reused and fingerprinted rather
 than rebuilt from source.
 
-The [integration evidence](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json)
-and [source review](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json)
+The integration evidence (artifact:gitblob:98560dea424edb9f0e3e81508e29e602d5b1ac91)
+and source review (artifact:gitblob:123f10e5120781fd57d61e1dcd0101e4b89e7aeb)
 preserve attribution, source identities and coverage limits. Courcelle's
 [arXiv construction](https://arxiv.org/abs/2212.07205v3) supplies closely matching
 context, with its own countability, connectedness and terminology conventions;

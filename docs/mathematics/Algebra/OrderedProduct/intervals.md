@@ -3,7 +3,7 @@
 The maintained source links use the current PMD placement. Earlier verification
 receipts retain their recorded source paths, bytes and tool context. Fresh
 proof replay of the relocated context remains pending; see the
-[source relocation scope](../../../../.noeaaeue/documentation/reference/source-layout.md#pmd-source-tree).
+source relocation scope (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3#pmd-source-tree).
 
 `GRWTSK.Algebra.OrderedProduct` carries established finite-product and group identities. The newest factor acts on the left: the successor product is `A (n + k) * orderedProduct A n k`. Concatenating intervals puts the later interval on the left.
 
@@ -17,7 +17,7 @@ This is a local candidate. Transactional admission, further review and public re
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Algebra/OrderedProduct.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Algebra/OrderedProduct.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

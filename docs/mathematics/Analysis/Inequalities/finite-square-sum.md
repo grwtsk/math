@@ -19,7 +19,7 @@ It is used by the [Hermitian matrix trace-rank theorem](../../LinearAlgebra/Matr
 on the real eigenvalue function. This makes the multiplier matrix rank rather
 than ambient dimension.
 
-The [selected native receipt](../../../../.noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json)
+The selected native receipt (artifact:gitblob:32c4dda5d6b5d72b2e901095ec41aeb24cd5185d)
 binds this source and its actual matrix consumer. The sources were freshly
 elaborated using pinned Lean 4.33.0, trust zero and fatal warnings, with the
 complete owned-declaration/transitive-axiom audit for the selected closure.

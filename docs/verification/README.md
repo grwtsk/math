@@ -14,6 +14,12 @@ manifest identity/version, exact content digest, and whether its source scope
 was mirrored, library-wide, or unscoped. `_library-root/` and `_unscoped/`
 are explicit metadata boundaries; they do not imply a source-module binding.
 
+Historical paths that appeared in older documentation are resolved through the
+[legacy artifact registry](../reference/legacy-artifacts.md). Canonical docs use
+stable external artifact IDs; the registry records the historical Git blob,
+exact target digest, optional immutable readback URL, and explicit unresolved
+status when no blob was found.
+
 The former [`verification/`](../../verification/README.md) directory remains
 only as a compatibility boundary for legacy fixtures, provider adapters,
 relocation records, source variants, and attribution material. Those are not

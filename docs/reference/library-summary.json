@@ -2,8 +2,8 @@
   "schema": "mathematical-documentation-inventory-v1",
   "scope": "Current local source paths and maintained documentation metadata; not theorem acceptance",
   "input_sha256": {
-    ".noeaaeue/documentation/reference/documentation-layout.json": "0b18ef277b29b69746fd88a923c86e0dcea0c84c99e82de965e6854a0075d53a",
-    ".noeaaeue/evidence/source-intake.json": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
+    "artifact:gitblob:d5ceb659de67d78c1cede5a053a2d6fb4ed1f359": "0b18ef277b29b69746fd88a923c86e0dcea0c84c99e82de965e6854a0075d53a",
+    "artifact:gitblob:5768dd6443326f9137958546065006ddbe451d7b": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3",
     "docs/reference/results.json": "2499a20f74b091d41bb7e2244d666feac51279fe65c9ca746d6a4c47cbeee59f",
     "lake-manifest.json": "d2632a891c988a2042639f0c59f6438ac094eb38a18a5e5d6ceaac6c4c3d43ec",
     "lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
