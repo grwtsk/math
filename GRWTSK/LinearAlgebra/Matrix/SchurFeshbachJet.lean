@@ -7,7 +7,7 @@ import Mathlib.Tactic.Ring
 
 set_option autoImplicit false
 
-open scoped BigOperators Matrix
+open scoped BigOperators Matrix Matrix.Norms.Elementwise
 
 /-!
 # Finite Schur--Feshbach reduction and certified jets
@@ -20,7 +20,8 @@ region.
 The jet layer is a certificate interface: its coefficient matrices are intended to be the
 successive derivatives of the effective pencil, and its expansion and remainder estimate
 are retained as proof fields. This separates algebraic Schur reduction from analytic
-differentiation and numerical enclosure.
+differentiation and numerical enclosure. The finite matrix remainder is measured in the
+entrywise supremum norm.
 
 No infinite-dimensional Feshbach theorem, analytic continuation, zeta identification,
 quantum algorithm, or complexity bound is inferred.
@@ -96,7 +97,7 @@ theorem det_factorization (region : InvertibleRegion pencil) (z : Z)
     (hz : z ∈ region.carrier) :
     (pencil.full z).det =
       (pencil.qq z).det * (region.effective z hz).det := by
-  letI := region.qqInvertible z hz
+  let := region.qqInvertible z hz
   simpa [effective] using
     (pencil.det_full_eq_det_qq_mul_det_effective z)
 
@@ -106,7 +107,7 @@ theorem full_zero_iff_effective_zero
     (region : InvertibleRegion pencil) (z : Z)
     (hz : z ∈ region.carrier) :
     (pencil.full z).det = 0 ↔ (region.effective z hz).det = 0 := by
-  letI := region.qqInvertible z hz
+  let := region.qqInvertible z hz
   have hqq : (pencil.qq z).det ≠ 0 :=
     Matrix.det_ne_zero_of_right_inverse (mul_invOf_self (pencil.qq z))
   constructor
@@ -118,7 +119,9 @@ theorem full_zero_iff_effective_zero
 
 /-- Full determinant zeros restricted to the invertibility region. -/
 def fullZeroSet (region : InvertibleRegion pencil) : Set Z :=
-  {z | ∃ hz : z ∈ region.carrier, (pencil.full z).det = 0}
+  {z | ∃ hz : z ∈ region.carrier, by
+    clear hz
+    exact (pencil.full z).det = 0}
 
 /-- Effective determinant zeros restricted to the invertibility region. -/
 def effectiveZeroSet (region : InvertibleRegion pencil) : Set Z :=
@@ -163,7 +166,7 @@ structure JetCertificate
       jetPolynomial order center coefficient z + remainder z
   remainder_bound : ∀ z,
     ‖z - center‖ ≤ radius →
-      @norm (P → P → ℂ) inferInstance (remainder z) ≤
+      ‖remainder z‖ ≤
         constant * ‖z - center‖ ^ (order + 1)
 
 namespace JetCertificate
@@ -200,7 +203,7 @@ structure Enclosure (jet : JetCertificate P order) (z : ℂ) where
 theorem Enclosure.remainder_le
     {jet : JetCertificate P order} {z : ℂ}
     (enclosure : jet.Enclosure z) :
-    @norm (P → P → ℂ) inferInstance (jet.remainder z) ≤
+    ‖jet.remainder z‖ ≤
       jet.constant * ‖jet.displacement z‖ ^ (order + 1) :=
   jet.remainder_bound z enclosure.in_radius
 

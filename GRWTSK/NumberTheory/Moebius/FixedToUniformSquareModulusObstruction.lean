@@ -13,7 +13,7 @@ mathematical idea already source-drafted in issue #441 / PR #454
 (`parameterDependent_doesNotImply_uniform`).
 -/
 import GRWTSK.NumberTheory.Moebius.SquareModulusAPConjectureJunction
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 
 /-!
 # Fixed-scope constants do not become growing-family constants by logic alone
