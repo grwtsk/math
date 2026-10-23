@@ -26,12 +26,18 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseRadial
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseCone
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseAdjunction
 
+private theorem cornerProductTopology_eq_bot (k : ℕ) :
+    @instTopologicalSpaceProd (Handle k) (Fin 4) inferInstance inferInstance =
+      (⊥ : TopologicalSpace (PolygonCorner k)) := by
+  exact DiscreteTopology.eq_bot
+
 /-- Reverse after forward, checked on each genuine original radial
 square source point with no replacement identification relation. -/
 theorem reverse_forward_source (k : ℕ) (p : RadialSource k) :
     adjunctionToFilling k
       (radialFillingToAdjunction k (radialProjection k p)) =
         radialProjection k p := by
+  let : TopologicalSpace (PolygonCorner k) := ⊥
   rcases p with ⟨p, r⟩
   rw [radialFillingToAdjunction_source]
   change adjunctionToFilling k
@@ -63,6 +69,9 @@ theorem forward_reverse_skeleton (k : ℕ)
   rw [adjunctionToFilling_skeleton]
   refine Quotient.inductionOn b ?_
   intro p
+  change radialFillingToAdjunction k
+    (boundaryInclusion k (boundaryProjection k p)) =
+      originalSkeletonMap k (boundaryProjection k p)
   rw [show boundaryInclusion k (boundaryProjection k p) =
     radialProjection k (p, 1) from boundaryInclusion_projection k p]
   rw [radialFillingToAdjunction_source]
@@ -75,6 +84,7 @@ theorem forward_reverse_disk (k : ℕ)
     radialFillingToAdjunction k
       (adjunctionToFilling k (originalDiskMap k d)) =
         originalDiskMap k d := by
+  let : TopologicalSpace (PolygonCorner k) := ⊥
   rw [adjunctionToFilling_disk]
   obtain ⟨c, rfl⟩ := (perimeterConeDiskHomeomorph k).surjective d
   refine Quotient.inductionOn c ?_
@@ -86,6 +96,11 @@ theorem forward_reverse_disk (k : ℕ)
     (perimeterCylinderToFilling k (x, r)) = _
   refine Quotient.inductionOn x ?_
   intro p
+  change radialFillingToAdjunction k
+      (perimeterCylinderToFilling k (perimeterProjection k p, r)) =
+    originalDiskMap k
+      (perimeterConeDiskHomeomorph k
+        (CircleCone.coneMk (perimeterProjection k p) r))
   rw [show perimeterCylinderToFilling k
       (perimeterProjection k p, r) = radialProjection k (p, r)
       from perimeterCylinderToFilling_source k p r]
@@ -111,7 +126,12 @@ noncomputable def filledPolygonHomeomorphAttachedDisk (k : ℕ) :
   invFun := adjunctionToFilling k
   left_inv := fun x => congrFun (reverse_forward k) x
   right_inv := fun x => congrFun (forward_reverse k) x
-  continuous_toFun := radialFillingToAdjunction_continuous k
+  continuous_toFun := by
+    have h := radialFillingToAdjunction_continuous k
+    convert h using 1
+    all_goals
+      congr 4
+      exact cornerProductTopology_eq_bot k
   continuous_invFun := adjunctionToFilling_continuous k
 
 end GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionInverse

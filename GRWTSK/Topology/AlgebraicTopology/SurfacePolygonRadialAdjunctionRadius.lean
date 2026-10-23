@@ -50,7 +50,7 @@ theorem apex_euclidean_radius_zero (k : ℕ) (p : BoundaryPoint k) :
     ‖((perimeterConeDiskHomeomorph k
       (CircleCone.coneMk (perimeterProjection k p) 0)).down :
       ComplexDisk.EuclideanPlane)‖ = 0 := by
-  simpa using euclidean_radius_source k p 0
+  exact euclidean_radius_source k p 0
 
 /-- The outer original polygon boundary is sent to radius one,
 without reversing or reparametrizing its tangential coordinate. -/
@@ -58,6 +58,6 @@ theorem boundary_euclidean_radius_one (k : ℕ) (p : BoundaryPoint k) :
     ‖((perimeterConeDiskHomeomorph k
       (CircleCone.coneMk (perimeterProjection k p) 1)).down :
       ComplexDisk.EuclideanPlane)‖ = 1 := by
-  simpa using euclidean_radius_source k p 1
+  exact euclidean_radius_source k p 1
 
 end GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialAdjunctionRadius
