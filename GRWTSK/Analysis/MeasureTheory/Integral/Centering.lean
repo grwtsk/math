@@ -21,7 +21,7 @@ open MeasureTheory
 namespace GRWTSK.MeasureTheory.Integral.Centering
 
 variable {α : Type*} [MeasurableSpace α] (μ : Measure α)
-  [IsProbabilityMeasure μ]
+  [hμ : IsProbabilityMeasure μ]
 
 def mean (f : α → ℝ) : ℝ := ∫ x, f x ∂μ
 
@@ -57,11 +57,16 @@ theorem integral_shifted_square (f : α → ℝ) (c : ℝ)
       (fun x ↦ f x^2 - (2*c)*f x + c^2) := by
     funext x
     ring
-  rw [hpoly, integral_add (hf2.sub (hf.const_mul _)) (integrable_const _),
-    integral_sub hf2 (hf.const_mul _), integral_const_mul]
+  rw [hpoly]
+  have hadd := integral_add (hf2.sub (hf.const_mul (2*c)))
+    (integrable_const (c^2) : Integrable (fun _ : α => c^2) μ)
+  have hsub := integral_sub hf2 (hf.const_mul (2*c))
+  simp only [Pi.sub_def] at hadd hsub
+  rw [hadd, hsub, integral_const_mul]
   simp [mean]
 
-theorem energy_nonneg (f : α → ℝ) : 0 ≤ energy μ f :=
+omit hμ in
+theorem energy_nonneg [IsProbabilityMeasure μ] (f : α → ℝ) : 0 ≤ energy μ f :=
   integral_nonneg (fun _ ↦ sq_nonneg _)
 
 theorem energy_eq_second_moment_sub_mean_sq (f : α → ℝ)
