@@ -3,7 +3,6 @@
   "scope": "current regular files under GRWTSK and docs; inventory only",
   "source_populations": {
     "all_grwtsk_lean_modules": 72343,
-    "source_corpus_modules": 68047,
     "maintained_grwtsk_lean_modules": 72343,
     "all_grwtsk_source_namespaces": 23,
     "maintained_source_namespaces": 23,
@@ -82,7 +81,7 @@
     "scope": "legacy curated source paths and pinned-parser observer census"
   },
   "input_digests": {
-    "grwtsk_lean_inventory": "3bb70cfc7de0c5d78ed8b651f72ff71d9912ac763afa863efc437d6afb3283c4",
+    "grwtsk_lean_inventory": "1f1f12a3cb1340a14c010f34455457e747ee9de3d790e81987ff998d1cd5c859",
     "docs_markdown_inventory_excluding_generated_count_surfaces": "3ca15d986b1aa4e9e6e9287c366a7a1f31a7607956218ccb3ac1f4de68dd5b11",
     "object_source_bindings": "dea449625f78dc8c9446efa60ea0d35af5f6bcd059f4df1f3db9d231caa7c0f7",
     "selected_results": "39d761d6bd1ed199bb41209618a44eeccdda17e59c44293c8fa85d75027e8c06",
@@ -90,9 +89,9 @@
   },
   "nonclaims": [
     "Counts do not establish parsing, elaboration, proof acceptance or theorem admission.",
-    "SourceCorpus is a maintained namespace and is included in maintained module counts; its subset count is shown separately for navigation.",
+    "Every regular Lean file under GRWTSK, regardless of first-level namespace, is in the maintained source population.",
     "Registered object guides and source bindings are curated documentation populations, not whole-library coverage.",
     "The legacy observer census remains historical and is not added to current filesystem populations."
   ],
-  "identity": "d26a5e55ee2ac00bfbcf3c9622a190820d8790f9f00c8ee71839a04054c47fb3"
+  "identity": "c064a8e960146f2999f5e739ce50c3f245040e0bbb342ab950333f80c212f42a"
 }

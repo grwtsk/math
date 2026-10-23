@@ -17219,10 +17219,9 @@
     "unparsed_modules": 111
   },
   "count_report": "docs/reference/documentation-counts.json",
-  "count_report_identity": "d26a5e55ee2ac00bfbcf3c9622a190820d8790f9f00c8ee71839a04054c47fb3",
+  "count_report_identity": "c064a8e960146f2999f5e739ce50c3f245040e0bbb342ab950333f80c212f42a",
   "current_source_populations": {
     "all_grwtsk_lean_modules": 72343,
-    "source_corpus_modules": 68047,
     "maintained_grwtsk_lean_modules": 72343,
     "all_grwtsk_source_namespaces": 23,
     "maintained_source_namespaces": 23,
