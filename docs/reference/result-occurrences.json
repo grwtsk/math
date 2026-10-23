@@ -1,8 +1,8 @@
 {
   "schema": "noe.math-result-occurrences/1",
   "repository": "grwtsk/math",
-  "commit": "1b2d9cce6299e2f0ddef4ae107e0b4d05829b5e0",
-  "root_tree": "7a22c28a3f01234bdd33526ff7bda77255a105bb",
+  "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+  "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739",
   "source_scope": "every regular .lean file under GRWTSK",
   "result_scope": "every lexically observed named theorem or lemma command",
   "observation_profile": "SOURCE_ONLY_LEXICAL_COMMAND_HEAD",
@@ -20,19 +20,19 @@
     "Anonymous examples, generated declarations and declarations not named on an observed command head are outside this lexical result scope."
   ],
   "counts": {
-    "result_occurrences": 1089711,
-    "theorems": 922228,
+    "result_occurrences": 1089759,
+    "theorems": 922276,
     "lemmas": 167483,
     "verification": 0,
-    "verification_pending": 1089711,
+    "verification_pending": 1089759,
     "namespaces_with_results": 23
   },
   "result_rows": {
     "path": "docs/reference/result-occurrences.ndjson.gz",
     "format": "NDJSON",
     "compression": "gzip",
-    "sha256": "d594e92dbc7cbf4542f3a19535663e618f308a93ae44578017e13a6159122f10",
-    "byte_count": 51676628,
+    "sha256": "7bf0bb5927a19445f4ce341b2a1b5ecf3d8a2ebdeb869f666658e5b63efbc8cc",
+    "byte_count": 51679387,
     "record_fields": [
       "result_id",
       "source_occurrence_id",
@@ -49,5 +49,5 @@
       "verification_status"
     ]
   },
-  "identity": "b37c6e74d48ac3885ba98c5363faeb45be70c124e90884f7d416915b0d9d4d7c"
+  "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b"
 }
