@@ -1399,3 +1399,195 @@ not imported algebraic-geometric Hodge theory.
 All target the unchanged mathematical source blobs at immutable main
 commit 74a1937e01d7dc220e2c78d35a448b830afc3e0f; none is an actual
 compiler, kernel, or axiom-audit acceptance receipt.
+
+## Case FAREY-RECENT-OBSTRUCTIONS-20261023 — exact suppliers versus solved/open-paper analogies
+
+**Source/publication identities and classification.** The four new
+modules below are **2026 repository-original local mathematics**, under
+source-credited mathematical direction by grwtsk contributors and
+formalization assistance from OpenAI, NOT purported paper theorem
+imports. The detailed [scope and bibliography note](../../../mathematics/NumberTheory/Farey/recent-obstructions-formalization-2026.md)
+binds every comparison to the exact original model and preserves the
+necessary hypotheses.
+
+Four external papers/formalizations provide precisely scoped *comparisons*
+(and one underlying potential-model normalization):
+1. **Ram Band, Siegfried Beckus, Raphael Loewy**, *The Dry Ten Martini
+   Problem for Sturmian Hamiltonians*, **2024**, arXiv
+   [2402.16703](https://arxiv.org/abs/2402.16703),
+   **equation (1.1)** (Sturmian rotation-coded Schrödinger potential)
+   and **Theorem 1.1** (**irrational frequency** and **nonzero coupling**,
+   all labelled spectral gaps open). The already-authored
+   `GRWTSK.LinearAlgebra.Sturmian` source identifies equation (1.1)
+   and implements a scalar recurrence/transfer formula. The new exact
+   conjugacy instead takes **zero coupling**, outside Theorem 1.1's
+   hypotheses. No Dry Ten Martini theorem is imported.
+2. **OpenAI**, *Unitarizability implies amenability for discrete
+   groups*, **2026**,
+   [Lean scope `251`](https://github.com/openai/math/blob/main/lean/docs/251.md).
+   Its discrete-group theorem quantifies over **uniformly bounded
+   Hilbert-space representations** and a bounded invertible similarity.
+   The repository's new gauge comparison assumes a separately supplied
+   height with submultiplicativity and **both forward and inverse**
+   uniform gauge bounds; it constructs no unitarizer or amenability
+   statement. **`methodological-analogy`, not imported theorem.**
+3. **W. T. Gowers, Ben Green, Freddie Manners, Terence Tao**,
+   *On a conjecture of Marton*, **2025**, DOI
+   [10.4007/annals.2025.201.2.5](https://doi.org/10.4007/annals.2025.201.2.5),
+   and the external [teorth/pfr Lean code](https://github.com/teorth/pfr).
+   The characteristic-two small-doubling/polynomial quantitative
+   structural hypotheses are not supplied by the local exact
+   observation-fiber collision. The paper theorem is
+   **`methodological-analogy` only**, particularly on source-bound
+   hypotheses and generated/transitive axiom checks; no PFR theorem
+   is imported.
+4. **Larry Guth, Hong Wang, Joshua Zahl**, *A streamlined proof of
+   the Kakeya conjecture in R3*, **2026**, as represented by
+   [project-numina/kakeya-3d](https://github.com/project-numina/kakeya-3d).
+   The conditional `KakeyaDimensionThree` requires the
+   dimension-three `StickyKakeya.StickyFrostmanHypothesis`;
+   the external separate unconditional linking formalization proves
+   that supplier from a separately formalized Wang–Zahl theorem.
+   Our source does not construct a Kakeya set, a Frostman/tube estimate,
+   or that linking theorem. This is a **proof-dependency design
+   analogy** and remains unrelated to the local numeric content.
+
+Further comparisons only: **Peter Sarnak**, *Three Lectures on the
+Mobius Function: Randomness and Dynamics* (**2011** IAS lectures),
+[stable IAS record](https://publications.ias.edu/sarnak/paper/506),
+**Definition 3 and Conjecture 4** (zero entropy/compact metric
+flow, continuous observable, actual Möbius weight and ordinary-average
+cancellation; **not** instantiated); **OpenAI**,
+*Uniform exclusion of Landau–Siegel zeros* (**2026**),
+[formalization scope](https://github.com/openai/math/blob/main/lean/docs/003.md)
+(primitive nonprincipal real Dirichlet characters and a uniform
+logarithmic real-zero gap, **not** a conclusion of finite nonunit-residue
+algebra). All are **`methodological-analogy` or
+`unresolved`**, never `direct-import` or
+`local-proved-bridge` from these new source files. The
+full algebraic Hodge conjecture and residual finiteness of
+hyperbolic groups are also **not** formalized by these cases.
+
+**Source-specific declarations, exact hypotheses, integration
+commits and Git blobs.**
+
+- **Fixed Farey–free Schrödinger intertwiner**:
+  `GRWTSK.Spectral.FareySturmianFreeConjugacy` declarations
+  `frameChange_mul_inverse`, `frameChange_inverse_mul`,
+  `freeTransfer_ne_returnMatrix`, `farey_free_intertwines`,
+  `farey_free_conjugate`, `farey_free_power_intertwines`,
+  `sturmian_free_intertwines`,
+  `sturmian_free_power_intertwines`,
+  `free_energy_three_not_elliptic`.
+  Source introduced on main at **`f7d8dd922f763c786b61d436f16dba5bf955865f`**,
+  blob **`f854110d2c099b97094505063eee3e8399f35e2f`**,
+  file `GRWTSK/Spectral/FareySturmianFreeConjugacy.lean`.
+  Exact restriction: `H=LR=[[1,1],[1,2]]`,
+  `T_0(3)=[[3,-1],[1,0]]`,
+  `C=[[1,-2],[0,1]]`, `H*C=C*T_0(3)`,
+  and all finite powers. Every `alpha,xi` and site parameter
+  is permitted only because **coupling=0**.
+  The source `Sturmian.zero_coupling_trace_iff` rejects
+  the free elliptic trace bound at `E=3`.
+  Classification: `source-proof-candidate` for a genuine
+  finite-dimensional conjugacy, **not** Theorem 1.1 or an
+  infinite-volume spectral bridge.
+
+- **Projective Koopman obstruction and repair**:
+  `GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue`
+  declarations
+  `eigenvalue_sq_one_of_gauge_two_step`,
+  `selected_return_two_step_antipodal`,
+  `farey_projective_eigenvalue_sq_one`,
+  `no_projective_quarter_turn_eigenfunction`,
+  `projectiveParityReadout`,
+  `projectiveParityReadout_sign_invariant`,
+  `projectiveParityReadout_on_orbit`,
+  `projectiveParityReadout_selected_eigen`,
+  `parityProfile`, `orbitPhase_not_factorsThrough_parity`,
+  `squared_orbitPhase_factorsThrough_parity`.
+  Introduction **`9872d0c70b2c16c4efefaa57060fd53875239606`**,
+  blob **`f82dfdb4aa2cded519e6d06abefe25405144c030`**,
+  file `GRWTSK/NumberTheory/Farey/ProjectiveKoopmanEigenvalue.lean`.
+  Explicit premises: a source two-step return equals an
+  involutive gauge **at a chosen point**; sign-invariant observation;
+  two-step eigen-relations; **nonzero** measured value. Then
+  `omega²=1`. For the actual mod-three Farey matrix
+  `H²=-I`, a global sign-invariant eigenfunction nonzero
+  at the chosen vector cannot have eigenvalue `i`.
+  A separate sign-invariant squared-phase readout has
+  eigenvalue `-1` **only on the selected four-state orbit**.
+  The original `i)-phase cannot be decoded from the parity
+  quotient, whereas its square can, using the exact existing
+  `FactorizationFiber` interface. Neither statement asserts a
+  global projective Koopman eigenfunction on all vectors or a PFR
+  quantitative reconstruction.
+
+- **Bi-bounded cocycle height**:
+  `GRWTSK.LinearAlgebra.BoundedGaugeHeight.height_triple_le`,
+  `height_triple_of_bounded_ends`,
+  `cocycle_gauge_height_sandwich`, source file
+  `GRWTSK/LinearAlgebra/BoundedGaugeHeight.lean`,
+  integration **`41a63bc678e1a1ede0915bfd03619a85385c9e26`**,
+  blob **`26e1067482cfe6d6af732c7336b73f256e75e150`**.
+  Hypotheses are `[Group G]`, source base dynamics `T`,
+  `height:G→ℝ` **nonnegative and submultiplicative**,
+  `0≤C`, and `height(B y)≤C`,
+  `height((B y)⁻¹)≤C` **for every y**.
+  The exact imported
+  `GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct_gauge`
+  supplies the endpoint identity. The conclusion compares
+  both finite cocycle heights by `C²` for every natural n.
+  Operator-norm instantiation and asymptotic exponent limits
+  remain missing, so this is not Dixmier's theorem.
+
+- **Heisenberg abelianization loses the central query**:
+  `GRWTSK.GroupTheory.Words.HeisenbergObservationLoss.abelianized`,
+  `abelianized_commutator_eq_identity`,
+  `isIdentityFlag`, `central_flag_differs`,
+  `identity_flag_not_factorsThrough_abelianization`,
+  `commutative_character_kills_central_memory`,
+  `commutative_character_cannot_separate`.
+  File `GRWTSK/GroupTheory/Words/HeisenbergObservationLoss.lean`,
+  integration **`d9b5736a739e00e7739c5c04fbf0d3055ce70924`**,
+  blob **`1082ac7d954d2fcb1ba7fddd1a21343f0ee5d436`**.
+  Explicit source group is the genuine integer
+  Heisenberg group; `Z=[X,Y]≠1`, but the
+  **Mathlib abelianization** sends `Z` to `1`.
+  Therefore the identity query does not factor through
+  abelianization, and every homomorphism to a
+  **commutative** group kills `Z`. It does **not**
+  say that every finite quotient kills `Z`; this
+  is **not non-residual finiteness** and not a
+  Heisenberg nilflow or Sarnak theorem.
+
+**Verification, trust and unresolved bridges.** At this writing,
+all four **new** modules are `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`, no fresh verified leaf compilation or
+transitive axiom result is available. Independent SymPy symbolic
+checks confirmed the matrix similarity, all powers `0..99`,
+and the selected mod-three phase/antipodal fixtures; these are
+**finite-certificate**, not Lean proof evidence. The earlier eight
+Farey modules were locally kernel/audit-verified on their
+**own immutable source blobs** at
+`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`,
+as documented in FAREY-VALIDATION-20261023; do not silently
+transfer this status to new leaf modules or an altered dependency
+closure. Pinned Lean is `v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`;
+all new leaf builds, fresh native kernel replay and
+complete generated/transitive axiom review are **pending**.
+The actual final immutable validation pin and commands must
+be recorded separately in a linked issue (not fabricated in
+this literature ledger).
+
+There is **no proved paper-to-Farey spectral-tree
+identification**, no nonzero-coupling spectral gap
+theorem, no constructive Hilbert-space unitarizer,
+no characteristic-two PFR quantitative theorem,
+no Kakeya sticky estimate or dimension theorem,
+no nonperiodic zero-entropy dynamical system with
+Möbius cancellation, no Landau–Siegel zero estimate,
+no analytic Hodge conjecture, no hyperbolic
+non-residual finiteness theorem and no RH deduction.
+
