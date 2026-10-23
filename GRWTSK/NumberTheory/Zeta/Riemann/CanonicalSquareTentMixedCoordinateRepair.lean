@@ -73,11 +73,7 @@ theorem mixedCoordinate_detects_moment_fibers
               rw [h2, h0]
               ring
       _ = 0 := by
-        apply sub_eq_zero.mpr
-        calc
-          u (2 : Fin 3) + weight * u (0 : Fin 3) =
-              v (2 : Fin 3) + weight * v (0 : Fin 3) := ha
-          _ = _ := rfl
+        linear_combination ha
   have hc0 : c = 0 := (mul_eq_zero.mp hzero).resolve_right hnonzero
   funext i
   have hi := hc i
