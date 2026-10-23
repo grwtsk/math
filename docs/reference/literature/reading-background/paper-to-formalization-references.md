@@ -6031,3 +6031,14 @@ Do not discharge it by simply matching numeric matrices
 or claiming the external measure-mixing theorem
 already inhabits the local type.
 
+
+
+## Case BOMBIERI-CALIBRATED-THIRD-20261023 — nonzero source-coordinate gain
+
+**Reference:** Repository-derived 2026 source mathematics, with OpenAI formalization assistance; no external paper title, authors, year/version, DOI/arXiv or theorem locator applicable to this new local result. Bombieri and Weil names do not imply historical influence or imported analytic theorems.
+
+**Exact mathematical statements/hypotheses:** For `gain:ℂ`, `u:Combination 2`, `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCalibratedRepair.calibratedThirdCoordinate gain u := gain * thirdCoordinateReadout u`. Under **gain ≠ 0**, `calibratedThirdCoordinate_eq_iff` establishes equality of calibrated values iff equality of the actual third coefficient, for every u,v. Under the same hypothesis, `calibrated_augmented_injective` uses the authored full-fiber sufficiency theorem to derive injectivity of the augmented two-Bombieri-row plus calibrated-third observation. The gain-zero case is expressly excluded: it would leave the original collision intact. This is a rescaling of a previously identified coefficient, **not** a newly independent physical or classical Weil measurement.
+
+**Formal source binding:** [`grwtsk/math@b9bcf4d36849a9e1d830f68ed546f2bd64eee4e8`](https://github.com/grwtsk/math/commit/b9bcf4d36849a9e1d830f68ed546f2bd64eee4e8), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentCalibratedRepair.lean`, blob `977d9054b0183dc7b8e354a0f07ba2f241438734`. Direct import `CanonicalSquareTentRepairSufficiency`, blob `2ee4d6d925580960af5e536f7db6aecab1f4a56b`; complete transitive math/Mathlib closure needs real executor inspection.
+
+**Classification:** imported external paper mathematics: none; kernel-verified bridge: **not established**; source proof candidates: two theorems and one definition; conditional interface: complex gain ≠ 0; finite numerical evidence: none newly claimed; analogy: measurement calibration only; unresolved premises: independent analytic observable, admissibility, classical Guinand–Weil map, positivity, density, RH and actual Lean/kernel/axiom checks. [Verification #1148](https://github.com/grwtsk/math/issues/1148) pins Lean 4.33.0, Mathlib db584cd6d46c92f209a44c0f1c829460d327499d and exact commands. **SOURCE_ONLY / GIT_BLOB_READBACK / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** All effectful receipts belong in grwtsk/noeaaeue, not math. Root promotion withheld.
