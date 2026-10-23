@@ -87,7 +87,8 @@ theorem pAdicExponent_pPrimaryEmbedding (p : PrimeIndex) (n : ℤ) :
 /-- Bundled split identity for the local coordinate and primary embedding. -/
 theorem pAdicExponent_comp_pPrimaryEmbedding (p : PrimeIndex) :
     (pAdicExponent p).comp (pPrimaryEmbedding p) = AddMonoidHom.id ℤ := by
-  ext n
+  apply AddMonoidHom.ext
+  intro n
   exact pAdicExponent_pPrimaryEmbedding p n
 
 /-- The `p`-primary embedding is injective because its local coordinate is a
