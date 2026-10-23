@@ -2,7 +2,7 @@
 Copyright (c) 2026 grwtsk contributors. MIT.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
-import GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogWeightedPrefix
+import GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogWeightedPrefix\nimport GRWTSK.NumberTheory.Zeta.Riemann.GreenHarmonicQuadrature
 import Mathlib.Tactic
 set_option autoImplicit false
 noncomputable section
@@ -93,7 +93,7 @@ theorem abs_centeredGreenBaselinePrefixResidual_le
     -- decreasing-function right-sum estimate on [X,m]
     have hXp : (0 : ℝ) < X := by exact_mod_cast hX
     have hmp : (0 : ℝ) < m := by exact_mod_cast (lt_of_lt_of_le (by omega : 0 < X) hm.1)
-    exact harmonic_Ioc_sub_log_ratio_abs_le hX hm.1
+    exact harmonic_Ioc_sub_log_ratio_abs_le_local hX hm.1
   have hloggap :
       |Real.log ((m : ℝ) / X) - Real.log (1 + t)| ≤ 1 / (X : ℝ) := by
     have hXp : (0 : ℝ) < X := by exact_mod_cast hX
@@ -102,7 +102,7 @@ theorem abs_centeredGreenBaselinePrefixResidual_le
         0 ≤ (1 + t) - (m : ℝ) / X ∧
         (1 + t) - (m : ℝ) / X < 1 / X := by
       constructor <;> field_simp <;> nlinarith
-    exact abs_log_sub_log_le_of_close hXp hmpos hratio
+    exact abs_log_floor_ratio_sub_log_le_local hX hm.1 ht0 hfloor_lo hfloor_hi
   exact (abs_sub_le _ _ _).trans (by linarith)
 
 end GRWTSK.RiemannHypothesis
