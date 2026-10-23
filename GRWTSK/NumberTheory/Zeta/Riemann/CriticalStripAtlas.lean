@@ -367,7 +367,7 @@ structure VerticalStep
 namespace VerticalStep
 
 /-- Identity proof transport. -/
-def refl
+theorem refl
     {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     (atlas : CriticalStripAtlas ι A X H) (i : ι) :
     VerticalStep atlas i i where
@@ -375,7 +375,7 @@ def refl
   transport := fun h => h
 
 /-- Proof-local vertical transports compose without referring to subject boundaries. -/
-def trans
+theorem trans
     {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {atlas : CriticalStripAtlas ι A X H} {i j k : ι}
     (first : VerticalStep atlas i j) (second : VerticalStep atlas j k) :

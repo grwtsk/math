@@ -38,7 +38,7 @@ def IsEquivalent {P Q : Prop} : StatementTransport P Q → Prop
   | _ => False
 
 /-- Extract the equivalence only after the exact admission predicate is proved. -/
-def iffOfEquivalent {P Q : Prop} (transport : StatementTransport P Q)
+theorem iffOfEquivalent {P Q : Prop} (transport : StatementTransport P Q)
     (hEquivalent : transport.IsEquivalent) : P ↔ Q := by
   cases transport with
   | equivalent proof => exact proof
