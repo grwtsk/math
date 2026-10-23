@@ -1,0 +1,169 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-canonical-square-tent-bombieri-moment-rank-obstruction-v0.1"
+repository = "grwtsk/math"
+issue = 219
+
+parent_pr = 1083
+parent_state_at_branch_creation = "OPEN_DRAFT"
+parent_branch = "research/rh-bombieri-tent-moment-obstruction-219-20261023"
+parent_commit = "f93948b7d62b68497fc3a348b07ba969f744d476"
+parent_tree = "8373b1bc7524bca690238eff9a8a2ea1df447cb8"
+base_branch = "research/rh-bombieri-tent-moment-obstruction-219-20261023"
+base_commit = "f93948b7d62b68497fc3a348b07ba969f744d476"
+branch = "research/rh-bombieri-two-tent-moment-rank-obstruction-219-20261023"
+
+main_at_audit = "f70b6e236a88eb81c6007435d77705d12c788dca"
+main_tree_at_audit = "e7f98015e06a66298839307958b015650d8c6a29"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean"
+source_blob = "a059155e6835f590596c568be463eefa3d90ab1f"
+note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-bombieri-moment-rank-obstruction-219.md"
+note_blob = "2ffc13645f251025b2b0a2b49876dca68b59b960"
+
+parent_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentObstruction.lean"
+parent_source_blob = "a2a45110229876f744f1ce5965d68a159fa843c1"
+polarization_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean"
+transport_obstruction_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean"
+
+literature_source = "E. Bombieri, Problems of the Millennium: the Riemann Hypothesis, CMI, section V, printed pp. 8-9"
+literature_pdf = "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf"
+source_conditions = ["integral_0_infinity g(x) dx/x = 0", "integral_0_infinity g(x) dx = 0"]
+
+test_span = "complex span of canonical stage-two and stage-three square tents"
+stage_two_support = "[4,9]"
+stage_three_support = "[9,16]"
+reciprocal_pivot = "1/9"
+selected_result = "two moment functionals have positive determinant and trivial kernel"
+recomputed_arithmetic_matrix = "zero 2x2 matrix on every corrected pair"
+criterion_adapter_defined = false
+classical_cross_term_computed = false
+rh_claim = false
+
+evidence_states = ["LITERATURE_REVIEWED", "SOURCE_DRAFT"]
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[stack]
+is_stacked = true
+parent_must_merge_first = true
+parent_declaration_dependency = "BombieriZeroMomentConditions and canonical tent moment lemmas"
+on_parent_change = "rebase or merge updated parent non-force, replay all checks, and refresh immutable blobs"
+on_parent_rejection = "child becomes unavailable and must not be merged"
+
+[validation]
+require_exact_parent_commit = true
+require_exact_source_blob = true
+require_exact_note_blob = true
+require_pinned_lean_mathlib = true
+require_isolated_source_elaboration = true
+require_warning_clean_build = true
+require_parent_head_import_compatibility = true
+require_current_main_reconciliation_after_parent_merge = true
+require_transitive_import_inventory = true
+require_exact_declaration_types = true
+require_no_sorry_admit_or_new_axiom = true
+require_kernel_checker = true
+require_axiom_closure = true
+require_generated_declaration_reconciliation = true
+require_external_replay_receipt = true
+reject_numerical_determinant_as_proof = true
+reject_old_arithmetic_matrix_reuse = true
+reject_wider_span_nonexistence_claim = true
+reject_classical_cross_term_claim = true
+reject_weil_criterion_adapter = true
+reject_rh_claim = true
+do_not_merge = true
+
+[[commands]]
+order = 1
+command = "lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction"
+expected = "exit 0; warning clean"
+
+[[commands]]
+order = 2
+command = "lake env lean GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean"
+expected = "exit 0"
+
+[[commands]]
+order = 3
+command = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction"
+expected = "exit 0; fresh kernel acceptance"
+
+[[commands]]
+order = 4
+command = "transitive axiom and unsafe declaration audit for the new leaf and all imported declarations"
+expected = "only documented accepted axioms; no unsafe dependency"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.canonicalTentReal_div_integrable"
+classification = "multiplicative_moment_integrability"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.stageTwoReciprocalGap_integral_pos"
+classification = "strict_left_reciprocal_gap"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.stageThreeReciprocalGap_integral_pos"
+classification = "strict_right_reciprocal_gap"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos"
+classification = "positive_moment_determinant"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.bombieriOrdinaryMoment_twoTent_eq"
+classification = "actual_ordinary_moment_coordinate_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.bombieriMultiplicativeMoment_twoTent_eq"
+classification = "actual_multiplicative_moment_coordinate_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.combination_eq_zero_of_bombieriMoments"
+classification = "trivial_two_tent_moment_kernel"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.TwoTentMomentCorrectedPair.arithmeticMatrix_eq_zero"
+classification = "complete_recomputed_zero_matrix"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.no_nondegenerateTwoTentMomentCorrectedPair"
+classification = "two_vector_correction_nonexistence"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentRankObstructionPacket"
+classification = "source_bound_negative_packet"
+
+[hostile_controls]
+cases = [
+  "both Bombieri moments remain typed",
+  "multiplicative moment integrability is proved from compact support away from zero",
+  "strict inequalities use positive-measure open supports rather than endpoint values",
+  "the determinant is proved positive symbolically",
+  "complex coefficient equations are derived from actual integrals",
+  "basis mixing inside the two-tent span is covered",
+  "the corrected arithmetic matrix is recomputed as zero rather than copied from the parent",
+  "no claim is made about adding a third function or a wider span",
+  "no classical Weil form or cross term is constructed",
+  "no criterion direction or RH adapter is defined"
+]
+
+[finite_fixture]
+coefficient_dimension = 2
+moment_count = 2
+stage_two = 2
+stage_three = 3
+shared_endpoint = 9
+determinant_sign = "strictly_positive"
+kernel = "zero"
+corrected_matrix = "[[0,0],[0,0]]"
+numerical_authority = false
+
+[next_obstruction]
+statement = "Add one explicit third correction profile H with source-bound support, regularity and arithmetic readout; prove rank two of the two moment functionals on span{T2,T3,H}, construct one nonzero kernel vector, and recompute its full arithmetic coefficients before any classical comparison."
