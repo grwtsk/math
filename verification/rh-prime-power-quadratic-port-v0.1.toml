@@ -1,0 +1,149 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-prime-quadratic-port-01-v0.1"
+owner_issue = 483
+repository = "grwtsk/math"
+stack_parent_pr = 480
+base_revision = "953c477df53352393f6f6b6f0e8c1690508b29d6"
+base_tree = "79403d9cf771f1819e8ff85485dceef236a3028d"
+branch = "research/483-von-mangoldt-quartic-port-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+terminal_consumer = "GRWTSK.NumberTheory.Zeta.Riemann.riemannHypothesis_of_trace_extraction"
+selected_premise = "Replace arbitrary nonnegative W_n by the exact finite von-Mangoldt prime-power Gram, leaving only the source comparison and limit hypotheses open."
+
+inherited_target = "verification/prime-power-atoms-v0.1.toml"
+# Original parent target at base_revision has blob "493e8e7ff124a9b37a127ff2f1087cfb527b02b9".
+inherited_target_blob = "91e653ee6b8e4c2b48f784042bfa193801e1b754"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomNat",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomNat_pos",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomNat_ne_zero",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.vonMangoldt_atomNat",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomWeight",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomWeight_eq_log",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomWeight_nonneg",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomWeight_pos",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageReadout",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy_nonneg",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageReadout_eq_vonMangoldt_sum",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy_eq_vonMangoldt_sum",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.atomWeight_same_prime",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.squareAtom_weight_ne_two_unitAtom_weight",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.source_nonneg",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.witnessTrace_nonneg_of_quarticExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.horizontal_displacement_eq_zero_of_quarticExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.riemannHypothesis_of_primePowerGramExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.two_and_four_have_same_weight",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.four_weight_is_not_two_times_two_weight",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.arbitrary_stage_energy_nonnegative",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.zero_test_has_zero_energy",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.no_extraction_at_unit_horizontal_displacement",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.collapse_witness_survives_in_source",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks.triangular_base_cardinality",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.mk",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.stage",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.test",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.weight",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.error",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.limitWeight",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.limitWeight_pos",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.identity",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.weight_tendsto",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.QuarticExtraction.error_tendsto",
+]
+
+hostile_controls = [
+  "von Mangoldt at p^m equals log p, not m log p",
+  "p^m atoms are not collapsed before arbitrary test evaluation",
+  "finite Gram positivity alone does not imply signed quartic positivity",
+  "comparison at horizontal displacement one cannot satisfy positive-scale vanishing-error extraction",
+  "prime-power collapse witness remains nonzero in source",
+  "triangle base remains three phases"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive axiom and trust audit",
+  "source-faithful construction of the quartic comparison identity",
+  "proof that the comparison weight tends to a positive limit",
+  "proof that the complete comparison error tends to zero",
+  "explicit-formula or Weil identification with all prime, gamma, pole, trivial-zero, nontrivial-zero, endpoint and tail channels",
+  "noncircular construction audit",
+  "external replay"
+]
+
+nonclaims = [
+  "no prime number theorem",
+  "no prime-distribution estimate",
+  "no explicit-formula theorem",
+  "no Weil-form identity",
+  "no OpenAI theorem transport",
+  "no zero-free threshold improvement",
+  "no unconditional Riemann Hypothesis result"
+]
+
+next_obstruction = "Construct one source-faithful explicit-formula/Weil comparison for the von-Mangoldt prime-power Gram with a complete residual tending to zero; do not collapse prime-power atoms first."
+
+[[module]]
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimePowerVonMangoldt.lean"
+# Original pre-repair blob = "4a8adead83b2819ae75d7ab62ee132d8d8d70b8b".
+blob = "1df05e21d7d7cd5c9988ff843cf0bd0821e2f5b7"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimePowerQuadraticPort.lean"
+# Original pre-repair blob = "017f988f8d0e5708485bb873f29c98b5405ef034".
+blob = "ffc603c70c7ebebfa57a02e788e69a1669ddbaf8"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimePowerQuadraticPortControls.lean"
+# Original pre-repair blob = "8b010b00a5ec7913e6c74e68975827676716c837".
+blob = "e3a7de4fdab327aecd0154cdb40553fca45db5e2"
+
+[[module]]
+path = "GRWTSK/Interfaces/PrimePowerQuadraticPortCore.lean"
+# Original pre-repair blob = "db3360fdb2e79734246d6b0599d333675102bee9".
+blob = "e852755c242921bf1e1b3a87cda0d6ad63479710"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-power-quadratic-port.md"
+blob = "f3a710f56ba5d159569c6f7cb1c5aaf09849238f"
+
+[[upstream]]
+repository = "grwtsk/math"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/QuadraticTraceCriterion.lean"
+blob = "2dc31b0967cf232a485f2b8a72724925a713b50f"
+
+[[upstream]]
+repository = "grwtsk/math"
+path = "GRWTSK/Algebra/Polynomial/ConjugateQuartic.lean"
+blob = "3b19fa113f9493c2ef98f791507ae351ea927c20"
+
+[[upstream]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean"
+blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "dbd4940cdffa7ab5ac5b8ff72ad987576aed104f"
+path = "GRWTSK/Analysis/Complex/CriticalReflection.lean"
+blob = "12fefa13c8e031e119b25db0564f61faa017f72c"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "dbd4940cdffa7ab5ac5b8ff72ad987576aed104f"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+blob = "3768bab2649a6ae19e4973bf2ee2dfe41bfe3fe9"
