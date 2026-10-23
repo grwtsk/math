@@ -169,6 +169,61 @@ normalization/sign comparison, a genuinely injective corrected
 family, density/continuity, and the RH criterion direction.
 
 
+### Additional candidate: prime-17 strict corrected arithmetic supplier (not Lean-formalized)
+
+**Bibliography and exact borrowed hypotheses:** Enrico Bombieri,
+*Problems of the Millennium: the Riemann Hypothesis* (**2000**;
+collected edition 2006), **§V, printed pp. 8–9**,
+[primary stable PDF](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf).
+Only the *two displayed zero moments* are borrowed; the
+prime-17 arithmetic calculation below is **not a paper theorem**.
+The full class `W`, its Mellin normalization, signed Weil
+explicit formula and RH criterion are not imported.
+
+**Source-specific candidate:** The repository's actual corrected
+coefficient vector `correctedCoordinates : Combination 2`
+has nonzero third entry equal to the positive two-tent
+moment determinant `Δ`. Its already-declared **arithmetic**
+Gram is `∑ i : Fin 3, ‖u_i‖² squareTentMangoldt (i+2)`.
+The stage-four window `(16,25]` contains prime 17 with
+`squareWeight 4 17=2/9`; with all terms nonnegative this gives
+
+\[
+\texttt{correctedSourceDiagonal}\geq
+\frac29\Delta^2\log17>0.
+\]
+
+The exact finite source evaluation also yields
+`squareTentMangoldt 4 = (2/9) log 17 + (2/3) log 19 + (4/9) log 23`;
+prime-power 25 is at zero tent weight. The **complete elementary
+proof and intended Lean supplier signatures** are in
+[the strict arithmetic source-witness note](../../../mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-strict-arithmetic-witness-219.md)
+([pinned note commit `e2c6b6adb704c8d87db00ce769e663edef483dbe`](https://github.com/grwtsk/math/commit/e2c6b6adb704c8d87db00ce769e663edef483dbe)).
+The note's Git blob is
+`50f2f0c2c57943a91077ddad4250b12f7f52dd0b`.
+
+**Exact consumer and source commit:** Existing
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.no_classicalDiagonalFactorization_of_exactTransport`
+is [source-bound at
+`12d66674a317f5503bce3a424a0246c880b7671c`](https://github.com/grwtsk/math/blob/12d66674a317f5503bce3a424a0246c880b7671c/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean),
+blob `9a2435d9c74b89ce1434c45bade1aa9beaa6cead`.
+It currently takes `hsource : 0 < correctedSourceDiagonal`
+as an **explicit argument**, in addition to an actual
+`ExactSourceBoundTransport` record. No Lean declaration
+`correctedSourceDiagonal_pos` has been committed in this
+increment. Supporting extant local declarations and repaired
+source blobs are enumerated in the linked note.
+
+**Status:** `REPOSITORY_DERIVED_MATHEMATICAL_SUPPLIER_UNFORMALIZED`;
+exact rational prime-power arithmetic checked independently
+with Python 3/Sympy, **exit 0**. `LEAN_NOT_RUN`,
+`FRESH_KERNEL_NOT_RUN`, `TRANSITIVE_AXIOMS_NOT_AUDITED`,
+`NO_RECEIPT`. The previously queued kernel replay of the
+affected source dependency chain remains outstanding. This
+strict arithmetic source calculation does **not** construct
+the classical Weil target, signed all-pairs form comparison,
+or any unconditional RH result.
+
 ## Primary paper supplying the Weil-form criterion context
 
 **Citation BOMB-LINCEI-2000:** Enrico Bombieri,

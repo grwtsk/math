@@ -396,6 +396,7 @@ Tracked separately in
 [Farey #1086](https://github.com/grwtsk/math/issues/1086),
 [bridge verification #1088](https://github.com/grwtsk/math/issues/1088),
 and [integration gate #1089](https://github.com/grwtsk/math/issues/1089).
+A separately pinned, **queued but unexecuted** [current-source five-module validation request](https://github.com/grwtsk/noeaaeue/issues/386) targets math `f3fac5a7e8f373d8efdbfd5a961e7fcf971011a3`; this request does not supersede any prior checked theorem because no relevant Lean receipt exists.
 No real global quadratic-character homomorphism, finite
 `SourceBitsMatch`, unconditional rank bound, Sarnak
 disjointness, BSD or RH theorem is obtained here.
@@ -495,6 +496,8 @@ request actual pinned compilation, fresh kernel checking,
 transitive axioms and source-bound receipts. The existing
 Record4239 19-module validation target predates this
 √2 module, so it **cannot** count as verification.
+A fresh [five-module verification request #386](https://github.com/grwtsk/noeaaeue/issues/386)
+is explicitly pinned to `f3fac5a7e8f373d8efdbfd5a961e7fcf971011a3` (tree `e678194110a6268ece125c7ca18dfbfa6c602161`), with the source blobs, commands, kernel and axiom checks listed; **QUEUED / NO LEAN EXECUTION**. Exact BigInt source preflight covers 32/32 curve and completed-square identities and 33 finite bounded-ratio steps, but none supplies an infinite correlation limit or native kernel acceptance.
 
 ## Current verification boundary for these entries
 
