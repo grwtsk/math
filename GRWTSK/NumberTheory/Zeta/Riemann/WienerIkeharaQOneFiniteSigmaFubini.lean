@@ -61,8 +61,7 @@ def wienerFubiniLambda (n : ℕ) : ℂ :=
 theorem wienerFubiniLambda_LSeriesSummable
     {s : ℂ} (hs : 1 < s.re) :
     LSeriesSummable wienerFubiniLambda s := by
-  simpa only [wienerFubiniLambda] using
-    (ArithmeticFunction.LSeriesSummable_vonMangoldt hs)
+  exact ArithmeticFunction.LSeriesSummable_vonMangoldt hs
 
 /-- Norms of L-series terms are invariant under vertical translation;
 this is the precise uniform pointwise domination in the t variable. -/
@@ -153,7 +152,7 @@ theorem wienerFubini_integral_norm_summable
     rw [integral_const_mul]
   have hpsiNorm : Integrable (fun t : ℝ => ‖psi t‖) := hpsiInt.norm
   simp_rw [heq]
-  exact hL.norm.mul_const _
+  exact Summable.mul_right _ hL.norm
 
 /-- Actual Lebesgue tsum-integral exchange, justified by term
 integrability AND a summable sequence of integrated norms. -/
@@ -210,12 +209,12 @@ theorem wienerFubini_term_phase
             (((T : ℂ) ^ ((t : ℂ) * Complex.I)) /
               (n : ℂ) ^ ((sigma : ℂ) +
                 (t : ℂ) * Complex.I))) • psi t := by
-        congr 2
         rw [Real.rpow_def_of_pos hnR,
           Complex.cpow_def_of_ne_zero hTC,
           Complex.cpow_def_of_ne_zero hnC]
         push_cast
-        simp_rw [← Complex.exp_sub]
+        rw [mul_div_assoc, ← Complex.exp_sub, ← Complex.exp_sub]
+        congr 1
         congr 1
         have hfrequency :
             (2 * Real.pi : ℂ) *
@@ -224,16 +223,19 @@ theorem wienerFubini_term_phase
                     Real.log ((n : ℝ) / T))) =
               -((t : ℂ) * Real.log ((n : ℝ) / T)) := by
           push_cast
-          field_simp [by positivity :
-            (2 * Real.pi : ℂ) ≠ 0]
-          ring
+          field_simp [show (2 * Real.pi : ℂ) ≠ 0 from by
+            exact_mod_cast (mul_ne_zero (by norm_num : (2 : ℝ) ≠ 0) Real.pi_ne_zero)]
+        unfold wienerFubiniFrequency
+        push_cast at hfrequency ⊢
+        simp only [neg_mul] at hfrequency
         rw [hfrequency, Real.log_div hnR.ne' hT.ne']
         push_cast
         rw [Complex.ofReal_log hT.le]
+        congr 1
         ring
       _ = _ := by
         simp only [smul_eq_mul]
-        group
+        ring
 
 /-- The Fourier transform here is Mathlib's actual exp(-2*pi*i*t*xi)
 transform, not a redefined signed version. -/
