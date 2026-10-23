@@ -1,0 +1,63 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-abel-conjecture-junction-477-v0.1"
+owner_repository = "grwtsk/math"
+issue = 477
+parent_witness_issue = 473
+parent_pr = 475
+next_supplier_issue = 476
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.SignedAbelConjectureJunction"
+build_target = "GRWTSK.NumberTheory.Moebius.SignedAbelConjectureJunction"
+
+[source_binding]
+stacked_parent_revision = "ccc10c51d39bc153f8d177eba661d95afe8abddb"
+candidate_branch = "research/rh-signed-abel-conjecture-junction-477-20261021"
+theorem_source_commit = "e0e3c39527565f7b25eec863efd140ae4d00d6f3"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SignedAbelConjectureJunction.lean"
+theorem_source_git_blob = "4384ddac8a3fcb6cd33be1b115c4219b55d1034e"
+
+[target]
+premise = "SubpolynomialDyadicSignedAbelDepthPacket"
+conditional_endpoint = "RiemannHypothesis"
+
+[adapter]
+name = "ToSignedAbelDepthPacketAdapter"
+constructed_named_values = false
+generic_source_to_depth = "signedAbelDepthPacket_of_adapter"
+generic_source_to_rh = "riemannHypothesis_of_signedDepthAdapter"
+
+[conjecture_families]
+growing_shift_chowla = true
+every_interval_subprefix = true
+corrected_elliott_family = true
+higher_order_chowla = true
+higher_order_corrected_elliott = true
+sarnak_local_gowers = true
+weak_mertens = true
+gonek_hejhal = true
+
+[scope_controls]
+fixed_data_not_growing_family = true
+logarithmic_not_ordinary = true
+almost_all_not_every = true
+binary_not_higher_order = true
+adapter_type_not_value = true
+literature_not_proof = true
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+weak_mertens_proved = false
+gonek_hejhal_proved = false
+signed_depth_estimate_proved = false
+riemann_hypothesis_proved = false
