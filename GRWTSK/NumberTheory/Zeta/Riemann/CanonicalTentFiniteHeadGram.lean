@@ -65,6 +65,20 @@ theorem finiteHeadCorrection_sub_canonicalCorrection_eq
   unfold finiteHeadCorrection finiteHeadBalance
   ring
 
+/-- Flipping the source sign changes the residual by twice the actual
+arithmetic stage value. This algebraic defect is NOT part of the divisor-tail
+budget, and no false nonzero/decay assertion is made about it. -/
+theorem wrong_sign_defect
+    (n : ℕ) (height : ℝ) :
+    finiteHeadCorrection n height + (canonicalCorrection n : ℂ) =
+      finiteHeadBalance (n + 2) height +
+        2 * (canonicalCorrection n : ℂ) := by
+  calc
+    finiteHeadCorrection n height + (canonicalCorrection n : ℂ) =
+        (finiteHeadCorrection n height - (canonicalCorrection n : ℂ)) +
+          2 * (canonicalCorrection n : ℂ) := by ring
+    _ = _ := by rw [finiteHeadCorrection_sub_canonicalCorrection_eq]
+
 /-- Certified finite-height comparison, conditional only on the hypotheses
 of the imported canonical explicit-formula and tail theorems. The bound is
 not a zero-count certificate or a numerical enclosure. -/
