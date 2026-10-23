@@ -5,7 +5,7 @@
 # No CI/workflow, dependency, or toolchain changes are made.
 set -euo pipefail
 EXPECTED_PARENT=5aa55f9366e1d02ebc0b764b691dece299b4697a
-EXPECTED_HEAD=d2f48b29d1798e4d52c0119bb789b4b4a11aa708
+EXPECTED_AUDITED_SOURCE_COMMIT=d2f48b29d1798e4d52c0119bb789b4b4a11aa708
 EXPECTED_KERNEL_BLOB=debad508b11d0e349e4f9114a38fc66f67f32e71
 TARGET=GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean
 test -f "$TARGET"
@@ -21,8 +21,8 @@ lake --version
 lake env lean --version
 git merge-base --is-ancestor "$EXPECTED_PARENT" HEAD || { echo 'Pinned parent is not an ancestor' >&2; exit 1; }
 actual_head=$(git rev-parse HEAD)
-if [ "$actual_head" != "$EXPECTED_HEAD" ]; then
-  echo "Expected exact PR #974 head $EXPECTED_HEAD, got $actual_head" >&2
+if ! git merge-base --is-ancestor "$EXPECTED_AUDITED_SOURCE_COMMIT" "$actual_head"; then
+  echo "Audited source commit is not an ancestor of $actual_head" >&2
   exit 1
 fi
 # Reject changes to the mathematical parent modules, even when ancestry holds.
