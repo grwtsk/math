@@ -1,0 +1,471 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-disk-kernel-1008-v0.1"
+owner_repository = "grwtsk/math"
+issue = 1008
+related_issues = [1001, 985, 981, 976, 983, 975, 970, 100, 868, 859, 845, 834]
+route_id = "EXACT_CLOSED_DISK_CHARACTERISTIC_KERNEL_AND_FILLED_QUOTIENT"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+disk_parent_pr = 1003
+disk_parent_branch = "research/surface-disk-characteristic-1001-20261022"
+disk_parent_revision = "9f1809e7870608f98fbaa943c4ab9bf53a9ba489"
+kernel_supplier_pr = 987
+kernel_supplier_revision = "1800553a9cdaa4a9fb031155de81c0bd180513f1"
+kernel_parent_prs = [977, 982]
+candidate_branch = "research/surface-disk-kernel-1008-20261022"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonDiskKernel.lean"
+new_module_git_blob = "fd8f86e87218f74b410a40a661005c7ce6d2cd67"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-disk-kernel.md"
+mathematical_note_git_blob = "5df6f57a1c3d815c0511ccf3e6dec8113990143b"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[reconciled_source_binding]
+cone_filled_source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonConeFilledQuotient.lean"
+cone_filled_source_blob = "b282000a00e561eb12b1fb8522a657fe93c22c25"
+cone_filled_note_blob = "78aa37c08773a5ae82e5fb297e096392f95242a0"
+cone_filled_manifest_blob = "44e313cd6a8b3c0b08a9a5a5e6fdd5f18b66bb73"
+cone_outer_source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonConeOuterPairs.lean"
+cone_outer_source_blob = "5f019bbee742ae78773799925bd0f9c2ca71a249"
+cone_outer_note_blob = "c3232e116503b47037800b0281b4c1c7a8c42db6"
+cone_outer_manifest_blob = "f987976e72100acbcea54845f45a8019151685cb"
+cone_kernel_source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonConeKernel.lean"
+cone_kernel_source_blob = "3af26571069a49ff09ab205320ed4859f73a4712"
+cone_kernel_note_blob = "ba82eda1d5c6e938bf05a6e10a4a374c59958c3f"
+cone_kernel_manifest_blob = "d8dbce9be52be0c1a5b08df975c102622785ca3a"
+
+[imported_theorem_binding]
+disk_homeomorphism = "SurfacePolygonStandardCircleConeDisk.perimeterConeHomeomorphUnitClosedDisc"
+disk_characteristic = "SurfacePolygonDiskCharacteristic.diskCharacteristic"
+cone_outer_relation = "SurfacePolygonConeOuterPairs.ConeOuterConnected"
+cone_kernel_iff = "SurfacePolygonConeKernel.coneToFilled_eq_iff_outerConnected"
+cone_quotient_map = "SurfacePolygonConeFilledQuotient.coneToFilled_isQuotientMap"
+quotient_lift_continuity = "Continuous.quotient_lift"
+quotient_projection = "isQuotientMap_quotient_mk'"
+quotient_homeomorphism = "Topology.IsQuotientMap.homeoOfBijective"
+reuse_status = "PINNED_SOURCE_IDENTIFIED_NOT_KERNEL_QUALIFIED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+nine_file_kernel_stack_reconciled = true
+standard_closed_disk_boundary_source_preserved = true
+only_two_opposite_side_generator_families = true
+exact_relation_transport_candidate = true
+exact_disk_characteristic_kernel_candidate = true
+disk_characteristic_quotient_map_candidate = true
+closed_disk_quotient_homeomorphism_candidate = true
+radius_norm_invariance_candidate = true
+genus_two_three_fixtures = true
+two_map_adjunction_universal_property_proved = false
+CW_complex_proved = false
+surface_manifold_proved = false
+cellular_singular_comparison_proved = false
+vanKampen_Hurewicz_proved = false
+hyperbolic_trace_GUE_sofic_Chowla_proved = false
+zeta_divisor_or_RH_proved = false
+mathematical_statement = "Transport the exact source-generated cone outer-pairing kernel through the authentic perimeter-cone-to-closed-disk homeomorphism; prove it is precisely the standard disk characteristic-map kernel and identify the resulting quotient homeomorphically with the genuine filled polygon quotient."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+authored_declaration_count = 27
+hostile_control_count = 45
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic", "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+source_construct = "DiskOuterPairStep constructors and generated recursor"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+source_construct = "Relation.EqvGen closure, Setoid and Quotient topology instances"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel"
+source_construct = "bundled Homeomorph and quotient coercions"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskBoundaryPoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskPerimeterBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskPerimeterBoundary_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskPerimeterBoundary_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.norm_diskBoundaryPoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskCharacteristic_boundaryPoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.DiskOuterPairStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.DiskOuterConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairSetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterStep_to_coneOuterConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterConnected_to_coneOuterConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.coneOuterStep_to_diskOuterConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.coneOuterConnected_to_diskOuterConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterConnected_iff_coneOuterConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterStep_preserves_norm"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterConnected_preserves_norm"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskCharacteristic_eq_iff_diskOuterConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskCharacteristic_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedToFilled"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedToFilled_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedToFilled_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedToFilled_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedToFilled_bijective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedToFilled_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.diskOuterPairedHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.genusTwo_diskCharacteristic_eq_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernel.genusThree_diskOuterPairedHomeomorph"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-disk-parent"
+requirement = "The direct disk-side parent is PR #1003 at exact head 9f1809e7870608f98fbaa943c4ab9bf53a9ba489."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-kernel-supplier"
+requirement = "The independent kernel supplier is PR #987 at exact head 1800553a9cdaa4a9fb031155de81c0bd180513f1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-nine-reconciled-files"
+requirement = "All nine additive files from PRs #977, #982 and #987 are present with their exact original blobs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-parent-mutation"
+requirement = "Neither divergent parent branch nor any inherited source file is modified."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-unit-closed-disk"
+requirement = "The source disk is Mathlib Complex.UnitClosedDisc from the existing cone homeomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-cone-homeomorphism"
+requirement = "Disk transport uses perimeterConeHomeomorphUnitClosedDisc rather than an unrelated bijection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-boundary-source"
+requirement = "Boundary points retain the inherited BoundaryPoint k source identifiers."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-handle-source"
+requirement = "Pair generators retain Handle k and the original Fin 4 positions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reversed-a-pairing"
+requirement = "The a pairing uses side 0 versus side 2 with unitInterval.symm."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reversed-b-pairing"
+requirement = "The b pairing uses side 1 versus side 3 with unitInterval.symm."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outer-radius-only"
+requirement = "Both primitive pairing families occur only on the transported radius-one disk boundary."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exactly-two-generator-families"
+requirement = "DiskOuterPairStep contains no primitive family other than pairA and pairB."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "eqvgen-minimality"
+requirement = "DiskOuterConnected is the actual Relation.EqvGen closure of DiskOuterPairStep."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-setoid"
+requirement = "diskOuterPairSetoid uses the EqvGen equivalence proof and no universal relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "forward-step-transport"
+requirement = "Every disk primitive generator maps to the exact corresponding cone generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-step-transport"
+requirement = "Every cone primitive generator maps to the exact corresponding disk generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "forward-closure-transport"
+requirement = "The full disk EqvGen maps into ConeOuterConnected by induction."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reverse-closure-transport"
+requirement = "The full cone EqvGen maps into DiskOuterConnected by induction."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "relation-iff"
+requirement = "The two generated relations are proved equivalent under the homeomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-continuity"
+requirement = "The authentic unpaired perimeter boundary map into the disk is continuous."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-source-equation"
+requirement = "Every original BoundaryPoint projection maps to the exact transported disk boundary point."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "unit-boundary-norm"
+requirement = "Every diskBoundaryPoint has complex norm exactly one."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radial-source-equation"
+requirement = "diskCharacteristic on diskBoundaryPoint equals radialProjection at radius one."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "norm-invariance-step"
+requirement = "Every primitive disk pair preserves complex norm."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "norm-invariance-closure"
+requirement = "The full disk relation preserves complex norm."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-kernel-forward"
+requirement = "Disk characteristic equality implies DiskOuterConnected through PR #987's full cone kernel."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-kernel-reverse"
+requirement = "DiskOuterConnected implies disk characteristic equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-interior-collapse"
+requirement = "No distinct positive-radius interior point is introduced by a primitive generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "characteristic-quotient-map"
+requirement = "diskCharacteristic is proved IsQuotientMap using the cone quotient map and inverse homeomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-quotient-lift"
+requirement = "diskOuterPairedToFilled is a genuine Quotient.lift of diskCharacteristic."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-surjective"
+requirement = "The descended map is proved surjective from the authentic characteristic map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-injective"
+requirement = "The descended map is proved injective from the exact fiber theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-continuous"
+requirement = "Continuity is proved through Continuous.quotient_lift."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-homeomorphism"
+requirement = "The disk quotient is bundled as a Homeomorph with FilledPolygonQuotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-control"
+requirement = "The exact fiber theorem is instantiated at k=0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-control"
+requirement = "The quotient homeomorphism is instantiated at k=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-two-map-pushout-yet"
+requirement = "No arbitrary compatible disk/boundary pair is yet lifted to the filled quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-cw-claim"
+requirement = "A quotient presentation is not reported as a completed CW structure."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold-homology-pi1"
+requirement = "No manifold, cellular/singular homology, van Kampen or Hurewicz theorem is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-geometric-spectral-arithmetic-claim"
+requirement = "No hyperbolic, trace-formula, GUE, sofic, Chowla, zeta-divisor or RH theorem is claimed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-execution-promotion"
+requirement = "No Lean/Lake/native/VM/F06, CI, workflow, cache, executor, merge or issue closure is represented."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-types-required"
+requirement = "All authored and generated declarations require exact elaborated type reconciliation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "trust-zero-required"
+requirement = "Acceptance requires warning-as-error and --trust=0 immutable-head replay."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "axiom-unsafe-import-audit-required"
+requirement = "Acceptance requires full transitive axiom, unsafe, import and native dependency review."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "hostile-replay-required"
+requirement = "Acceptance requires executable generator, boundary, radius, kernel, and quotient hostile fixtures."
+status = "NOT_RUN"
