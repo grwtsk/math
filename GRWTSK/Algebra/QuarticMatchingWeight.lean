@@ -56,5 +56,18 @@ theorem matchingWeight_third (a b c d : R) :
   simp [matchingWeight, matching03_12, pair, qThree]
   ring
 
+
+/-- Equivariance applied to the actual four-root enumeration of a
+quartic in a field extension. This requires no separability; if the
+roots repeat, the weight map need not be injective. -/
+theorem actual_quartic_matching_weight_relabel
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (p : K[X])
+    (e : GRWTSK.Algebra.PolygonalQuarticSplitting.QuarticRootEnumeration (L := L) p)
+    (σ : Equiv.Perm (Fin 4)) (m : Finset (Finset (Fin 4))) :
+    matchingWeight e.r (relabel σ m) =
+      matchingWeight (fun i => e.r (σ i)) m :=
+  matchingWeight_relabel e.r σ m
+
 end
 end GRWTSK.Algebra.QuarticMatchingWeight
