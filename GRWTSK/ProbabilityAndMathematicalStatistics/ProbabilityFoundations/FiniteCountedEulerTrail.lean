@@ -74,7 +74,9 @@ theorem countedTrail_unused_card_strict_of_append
       T.unused.card := by
   classical
   have hnot : e ∉ T.edges.toFinset := by
-    simpa [CountedDirectedTrail.unused] using he.2
+    exact (Finset.mem_sdiff.mp (show e ∈
+      (Finset.univ : Finset (CountedBinaryEdge m c)) \
+        T.edges.toFinset from he)).2
   have hmem : e ∈ (Finset.univ : Finset (CountedBinaryEdge m c)) :=
     Finset.mem_univ e
   simp only [List.toFinset_cons, CountedDirectedTrail.unused]
