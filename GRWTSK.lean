@@ -342,6 +342,7 @@ import GRWTSK.Algebra.Polynomial.ConjugateQuartic
 import GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.QuadraticTraceCriterion
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation
+import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentFiniteHeadGram
 import GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrbitQuartic
 import GRWTSK.Analysis.Inequalities.FiniteSquareSum
