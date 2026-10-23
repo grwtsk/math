@@ -1,107 +1,85 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
-Self-contained harmonic/log quadrature lemmas for the Green cutoff.
+Self-contained discrete harmonic/log estimates; no interval-partition API required.
 -/
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Tactic
 set_option autoImplicit false
 noncomputable section
-open MeasureTheory
 open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-/-- Right-cell comparison for 1/u on a positive integer cell. -/
-theorem one_div_le_cell_integral
+/-- One-step logarithmic increment is squeezed by neighboring harmonic cells. -/
+theorem log_succ_ratio_bounds
     {n : ℕ} (hn : 1 ≤ n) :
-    1 / (n : ℝ) ≤ ∫ u in (n - 1 : ℕ : ℝ)..(n : ℝ), 1 / u := by
-  have hmono : ∀ u ∈ Set.Icc ((n - 1 : ℕ) : ℝ) n,
-      1 / (n : ℝ) ≤ 1 / u := by
-    intro u hu
-    have hnpos : (0 : ℝ) < n := by exact_mod_cast hn
-    exact one_div_le_one_div_of_le (by linarith [hu.1]) hu.2
-  have hconst :
-      (∫ _u in ((n - 1 : ℕ) : ℝ)..(n : ℝ), 1 / (n : ℝ)) =
-        1 / (n : ℝ) := by
-    simp
-  rw [← hconst]
-  apply intervalIntegral.integral_mono_on
-  · exact intervalIntegrable_const
-  · exact (ContinuousOn.intervalIntegrable
-      (by
-        apply ContinuousOn.one_div continuousOn_const continuousOn_id
-        intro u hu
-        have hnpos : (0 : ℝ) < n := by exact_mod_cast hn
-        linarith [hu.1]))
-  · exact hmono
+    1 / (n + 1 : ℝ) ≤ Real.log ((n + 1 : ℝ) / n) ∧
+      Real.log ((n + 1 : ℝ) / n) ≤ 1 / (n : ℝ) := by
+  have hnpos : (0 : ℝ) < n := by exact_mod_cast hn
+  have hratio :
+      ((n + 1 : ℝ) / n) = 1 + 1 / (n : ℝ) := by
+    field_simp
+    ring
+  rw [hratio]
+  constructor
+  · have h := Real.log_le_sub_one_of_pos (show 0 < 1 + 1 / (n + 1 : ℝ) by positivity)
+    have hrec :
+        1 + 1 / (n + 1 : ℝ) ≤ 1 + 1 / (n : ℝ) := by
+      gcongr
+      exact one_div_le_one_div_of_le hnpos (by norm_num)
+    have hlogmono :
+        Real.log (1 + 1 / (n + 1 : ℝ)) ≤
+          Real.log (1 + 1 / (n : ℝ)) := by
+      exact Real.strictMonoOn_log.monotoneOn (by positivity) (by positivity) hrec
+    have hlower :
+        1 / (n + 1 : ℝ) ≤
+          Real.log (1 + 1 / (n + 1 : ℝ)) := by
+      -- log(1+x) >= x/(1+x), here x=1/n.
+      have := Real.div_one_add_le_log_one_add (show 0 ≤ 1 / (n : ℝ) by positivity)
+      field_simp at this ⊢
+      nlinarith
+    exact hlower.trans hlogmono
+  · exact Real.log_le_sub_one_of_pos (by positivity)
 
-/-- Left-cell comparison for 1/u. -/
-theorem cell_integral_le_one_div
-    {n : ℕ} (hn : 1 ≤ n) :
-    (∫ u in (n : ℝ)..(n + 1 : ℕ : ℝ), 1 / u) ≤ 1 / (n : ℝ) := by
-  have hmono : ∀ u ∈ Set.Icc (n : ℝ) ((n + 1 : ℕ) : ℝ),
-      1 / u ≤ 1 / (n : ℝ) := by
-    intro u hu
-    have hnpos : (0 : ℝ) < n := by exact_mod_cast hn
-    exact one_div_le_one_div_of_le hnpos hu.1
-  have hconst :
-      (∫ _u in (n : ℝ)..((n + 1 : ℕ) : ℝ), 1 / (n : ℝ)) =
-        1 / (n : ℝ) := by
-    simp
-  rw [← hconst]
-  apply intervalIntegral.integral_mono_on
-  · exact (ContinuousOn.intervalIntegrable
-      (by
-        apply ContinuousOn.one_div continuousOn_const continuousOn_id
-        intro u hu
-        have hnpos : (0 : ℝ) < n := by exact_mod_cast hn
-        linarith [hu.1]))
-  · exact intervalIntegrable_const
-  · exact hmono
-
-/-- Finite harmonic sum over (X,m] differs from log(m/X) by at most 1/X. -/
+/-- Finite right harmonic sum differs from log ratio by at most 1/X.
+Proof is by induction on the endpoint and the one-cell logarithmic squeeze. -/
 theorem harmonic_Ioc_sub_log_ratio_abs_le_local
     {X m : ℕ} (hX : 1 ≤ X) (hXm : X ≤ m) :
     |(∑ n ∈ Finset.Ioc X m, 1 / (n : ℝ)) -
       Real.log ((m : ℝ) / X)| ≤ 1 / (X : ℝ) := by
-  have hXpos : (0 : ℝ) < X := by exact_mod_cast hX
-  by_cases hEq : m = X
-  · subst m
-    simp
-  · have hmpos : (0 : ℝ) < m := by exact_mod_cast (lt_of_le_of_ne hXm (Ne.symm hEq))
-    have hlog :
-        Real.log ((m : ℝ) / X) =
-          ∫ u in (X : ℝ)..(m : ℝ), 1 / u := by
-      rw [Real.log_div (ne_of_gt hmpos) (ne_of_gt hXpos)]
-      rw [← intervalIntegral.integral_one_div]
+  induction m, hXm using Nat.le_induction with
+  | base =>
       simp
-    rw [hlog]
-    have hlower :
-        (∫ u in (X : ℝ)..(m : ℝ), 1 / u) ≤
-          ∑ n ∈ Finset.Ioc X m, 1 / (n : ℝ) := by
-      -- partition [X,m] into [n,n+1], n=X,...,m-1
-      rw [intervalIntegral.integral_eq_sum_Ico]
-      exact Finset.sum_le_sum (fun n hn =>
-        cell_integral_le_one_div (by
-          have hi := Finset.mem_Ico.mp hn
-          omega))
-    have hupper :
-        (∑ n ∈ Finset.Ioc X m, 1 / (n : ℝ)) ≤
-          (∫ u in (X : ℝ)..(m : ℝ), 1 / u) + 1 / (X : ℝ) := by
-      -- shift right cells; the only unmatched cell costs at most 1/X.
-      rw [intervalIntegral.integral_eq_sum_Ico]
-      have := Finset.sum_le_sum (fun n hn =>
-        one_div_le_cell_integral (by
-          have hi := Finset.mem_Ioc.mp hn
-          omega))
-      -- index normalization is proof-only.
-      simpa [Finset.sum_Ioc_eq_sub, Finset.sum_Ico_eq_sub] using this
-    rw [abs_le]
-    constructor <;> linarith
+  | succ m hXm ih =>
+      have hm1 : 1 ≤ m := le_trans hX hXm
+      have hstep := log_succ_ratio_bounds hm1
+      have hsum :
+          (∑ n ∈ Finset.Ioc X (m + 1), 1 / (n : ℝ)) =
+            (∑ n ∈ Finset.Ioc X m, 1 / (n : ℝ)) +
+              1 / (m + 1 : ℝ) := by
+        rw [Finset.sum_Ioc_succ_top hXm]
+      have hlog :
+          Real.log (((m + 1 : ℕ) : ℝ) / X) =
+            Real.log ((m : ℝ) / X) +
+              Real.log ((m + 1 : ℝ) / m) := by
+        have hXp : (0 : ℝ) < X := by exact_mod_cast hX
+        have hmp : (0 : ℝ) < m := by exact_mod_cast hm1
+        rw [← Real.log_mul (by positivity) (by positivity)]
+        congr 1
+        field_simp
+        ring
+      rw [hsum, hlog]
+      rw [abs_le] at ih ⊢
+      constructor
+      · nlinarith [hstep.2]
+      · have hrec :
+            1 / (m + 1 : ℝ) ≤ 1 / (X : ℝ) := by
+          have hXp : (0 : ℝ) < X := by exact_mod_cast hX
+          exact one_div_le_one_div_of_le hXp (by exact_mod_cast hXm.trans (Nat.le_succ m))
+        nlinarith [hstep.1]
 
-/-- Floor/log gap used by the Green cutoff. -/
+/-- Floor/log gap: m<=X(1+t)<m+1 implies at most 1/X logarithmic error. -/
 theorem abs_log_floor_ratio_sub_log_le_local
     {X m : ℕ} (hX : 1 ≤ X) (hm : X ≤ m)
     {t : ℝ} (ht0 : 0 ≤ t)
@@ -111,12 +89,11 @@ theorem abs_log_floor_ratio_sub_log_le_local
   have hXpos : (0 : ℝ) < X := by exact_mod_cast hX
   have hmpos : (0 : ℝ) < m := by exact_mod_cast (lt_of_lt_of_le (by omega : 0 < X) hm)
   have htpos : 0 < 1 + t := by linarith
-  have horder : Real.log ((m : ℝ) / X) ≤ Real.log (1 + t) := by
-    apply Real.strictMonoOn_log.monotoneOn
-    · positivity
-    · exact le_of_lt htpos
-    · exact (div_le_iff₀ hXpos).2 hlo
-  rw [abs_of_nonpos (sub_nonpos.mpr horder)]
+  have hratioLow : (m : ℝ) / X ≤ 1 + t := (div_le_iff₀ hXpos).2 hlo
+  have horder :
+      Real.log ((m : ℝ) / X) ≤ Real.log (1 + t) :=
+    Real.strictMonoOn_log.monotoneOn (by positivity) (by positivity) hratioLow
+  rw [abs_of_nonpos (sub_nonpos.mpr horder), neg_sub]
   rw [← Real.log_div htpos (by positivity)]
   have hratio :
       (1 + t) / ((m : ℝ) / X) < 1 + 1 / (m : ℝ) := by
@@ -125,8 +102,8 @@ theorem abs_log_floor_ratio_sub_log_le_local
   calc
     Real.log ((1 + t) / ((m : ℝ) / X)) ≤
         Real.log (1 + 1 / (m : ℝ)) := by
-      exact (Real.strictMonoOn_log.monotoneOn
-        (by positivity) (by positivity) (le_of_lt hratio))
+      exact Real.strictMonoOn_log.monotoneOn
+        (by positivity) (by positivity) (le_of_lt hratio)
     _ ≤ 1 / (m : ℝ) := Real.log_le_sub_one_of_pos (by positivity)
     _ ≤ 1 / (X : ℝ) := one_div_le_one_div_of_le hXpos (by exact_mod_cast hm)
 
