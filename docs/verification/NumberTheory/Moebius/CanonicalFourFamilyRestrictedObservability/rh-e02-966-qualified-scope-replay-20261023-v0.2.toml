@@ -1,0 +1,253 @@
+# v0.2 follows immutable v0.1; it does NOT alter the prior source pin.
+# Pure math-side queued target. Does NOT execute, authorize or certify any step.
+schema = "rh-e02-966-qualified-scope-replay-20261023-v0.2"
+repository = "grwtsk/math"
+source_commit = "4dcf18fbfdc51cecafec26f00e7583a875c3b2e7"
+source_tree = "6ab507ac5c77ff39285a7d77950eafd5b34a917d"
+predecessor_source_commit = "698b694747a0b62f4126caf5475601b073ebcd9e"
+predecessor_spec_blob = "1e7ff95a3dc1be062a3957d3f88e1f0c504d3060"
+qualified_reference_commit = "16851ad6be948a1467baf7d029f2a8a65e308b31"
+qualified_reference_issues = ["grwtsk/math#100", "grwtsk/math#966"]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+effect_owner = "grwtsk/noeaaeue"
+effect_handoff_issue = "grwtsk/noeaaeue#291"
+source_commit_has_only_documentation_changes_since_qualified_reference = true
+none_of_this_file_is_execution_authority = true
+source_preflight = "DIRECT_IMPORTS_AND_BLOBS_CHECKED"
+all_builds_at_source_commit = "PENDING_EXECUTION"
+fresh_kernel_check_at_source_commit = "PENDING_EXECUTION"
+transitive_axiom_audit_at_source_commit = "PENDING_EXECUTION"
+external_receipt_at_source_commit = "PENDING_EXECUTION"
+no_RH_claim = true
+
+[reference_evidence]
+reported_status = "QUALIFIED_FOR_NAMED_12_TARGET_MATRIX_ONLY"
+reported_at_commit = "16851ad6be948a1467baf7d029f2a8a65e308b31"
+reported_build = "lake build --wfail; 9468 jobs, PASS according to issue #100"
+reported_fresh_checker = "fresh full combined environment plus additional dependent polar modules, PASS according to issue #100"
+reported_axiom_census = "25826 logical declarations; axioms propext/Classical.choice/Quot.sound according to issue #100"
+includes_abstract_NormControlledAdditiveMultiplicativeBridge = true
+includes_abstract_RestrictedAdditiveMultiplicativeBridgeAudit = true
+excludes_CanonicalFourFamilyRestrictedObservability = true
+standalone_four_family_attempt = "UPSTREAM_FAILURE_REPORTED; exact diagnostic not available in this conversation"
+is_new_exact_target_receipt = false
+is_root_pass_for_unimported_leaf = false
+
+[pin_difference]
+changed_transitive_file = "GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredWindingZeroModeVariance.lean"
+blob_in_predecessor_commit = "b28f69f29ca8fd90978709e89e6642a5b52db962"
+blob_in_this_commit = "a9de98b01c67f4ce06f4d01ba896127b5fb4d84b"
+changed_other_transitive_sources_between_predecessor_and_qualified_reference = true
+source_pin_substitution_disallowed = true
+must_rederive_transitive_import_closure = true
+
+[required_checks]
+exact_clean_detached_checkout = true
+match_git_commit_tree_and_source_blobs = true
+warning_clean_lean_build_per_leaf = true
+fresh_kernel_checker_per_compiled_leaf = true
+axiom_audit_of_every_owned_transitive_declaration = true
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorryAx_unsafe_native_unexplained_axioms = true
+exact_declaration_type_universe_and_proof_body_check = true
+failures_and_previous_passing_checks_must_remain_separate = true
+record_stdout_stderr_exit_code_resources_and_runtime = true
+return_immutable_source_bound_receipt_only_after_authorized_execution = true
+no_unauthorized_remote_or_force_push = true
+no_source_edits_without_real_diagnostic = true
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.NormControlledAdditiveMultiplicativeBridge"
+path = "GRWTSK/NumberTheory/Moebius/NormControlledAdditiveMultiplicativeBridge.lean"
+sha = "b52be1b426ae6d42af49314a3fe737557ef9b60c"
+disposition = "qualified_at_reference_only"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.RestrictedAdditiveMultiplicativeBridgeAudit"
+path = "GRWTSK/NumberTheory/Moebius/RestrictedAdditiveMultiplicativeBridgeAudit.lean"
+sha = "bcfb0dbdef5e924d96cc681f265414dd0708de5d"
+disposition = "qualified_at_reference_only"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+path = "GRWTSK/NumberTheory/Moebius/RestrictedFrameResidualComparison.lean"
+sha = "63ec7f9d2e172035d8df42ae383ce3eba1adf944"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+path = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeKernelQuantifierNoGo.lean"
+sha = "9228ce106b578c3926b6689dde61d6dbb7c80e80"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredPairGreenCoefficientBridge.lean"
+sha = "70e382e8c8548a915f15d080fae512580f45bf3c"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredPairPositiveShiftBoundary.lean"
+sha = "d4b7ff5d6b64e9bbdeea3931b4f43f6d6e6477cd"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
+sha = "84fed8973f7c1a1b358711d159713054805a33c2"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+path = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyThinGreenMatrix.lean"
+sha = "d351831b67611b3a341f8e4181b38382c769994e"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+path = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyTerminalColumnObstruction.lean"
+sha = "45039e5cdc467f461f5702d7c735e15fc34cec07"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+path = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyRestrictedObservability.lean"
+sha = "c2d8db7b74a4b877e4153e392c357cd9fc31dda9"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredWindingZeroModeVariance.lean"
+sha = "a9de98b01c67f4ce06f4d01ba896127b5fb4d84b"
+disposition = "changed_since_v0.1"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingCenteredCorrelation"
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitZeroWindingCenteredCorrelation.lean"
+sha = "70facd58b855c1a0aad2eb4c0ba1f7210f7d1ed5"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"
+path = "GRWTSK/NumberTheory/Moebius/MobiusVonMangoldtCoefficientBridge.lean"
+sha = "703076acb4b44f5ce3bc3b63ef1155c0da426b9f"
+disposition = "pending_exact_commit"
+
+[[source_blobs]]
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+path = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeBridgeObstruction.lean"
+sha = "6530da3ccea612394f604b708e354c8ec7440e03"
+disposition = "pending_exact_commit"
+
+[[check_plan]]
+priority = 1
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 2
+module = "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 3
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 4
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 5
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 6
+module = "GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.RestrictedFrameResidualComparison"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 7
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeKernelQuantifierNoGo"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[[check_plan]]
+priority = 8
+module = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion"
+compile = "lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion"
+compile_status = "PENDING_EXECUTION"
+fresh_kernel = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion"
+fresh_status = "PENDING_EXECUTION"
+axiom_census = "PENDING_EXECUTION"
+can_skip_on_upstream_failure = true
+record_upstream_failure_without_recovery_sorryAx = true
+
+[hostile_controls]
+checks = [
+  "Do not infer all leaf checks from the qualified reference root",
+  "Do not transfer transitive axiom census from a different source dependency blob",
+  "Isolate the first failing import in the four-family chain before modifying any proof",
+  "Only source-identified finite signed matrix plus other-shift and zero-shift correction",
+  "Terminal-center delta is support legal but not proved genuine arithmetic difference",
+  "Erasure factors observation only; full kernel not identified",
+  "Singleton arithmetic difference space is {0}, not a nonvacuous lower-frame supplier",
+  "Keep thin and historical Fourier roots isolated until declaration-name reconciliation",
+  "Never claim RH, global Weil positivity or uniform Fourier energy",
+  "Declined remote authorization is not bypassed by a passive manifest"
+]
+
+[queued_status]
+math_manifest_queued = true
+noeaaeue_execution_queued = false
+noeaaeue_execution_authorized = false
+compilation = "PENDING"
+fresh_kernel = "PENDING"
+transitive_axioms = "PENDING"
+independent_external_replay = "PENDING"
