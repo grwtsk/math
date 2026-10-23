@@ -39,7 +39,10 @@ theorem source_angle_eq_iff_connected (k : ℕ)
     sourceAngularAddress k p = sourceAngularAddress k q ↔
       PerimeterConnected k p q := by
   rw [source_angle_eq_iff_perimeter_projection_eq]
-  rfl
+  change (Quotient.mk (perimeterSetoid k) p =
+      Quotient.mk (perimeterSetoid k) q) ↔
+    (perimeterSetoid k).r p q
+  exact Quotient.eq
 
 
 /-- Distinct original perimeter classes have distinct angular addresses;
