@@ -155,6 +155,7 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 | [Algebraic structures addition](proposals/new-concepts/algebra-structures.md) | `urn:uuid:c5134679-7a75-4f0d-9aee-4ecd34cc581f` |
 | [Analysis, measure and Fourier addition](proposals/new-concepts/analysis-measure-fourier.md) | `urn:uuid:a2ba1baa-9bc0-4c26-81cf-f964a90e9634` |
 | [Probability/process additions](proposals/new-concepts/probability-processes.md) | `urn:uuid:ef76df22-8a02-56a7-b64a-3c363473c2b1` |
+| [Typed critical-strip witness classification proposal](proposals/typed-critical-strip-witness-classification.md) | `urn:uuid:4be88bee-cf4e-4ec3-a4a9-bd85e16ab45f` |
 
 The scoped navigation collections `subjects`, `facets` and `objects` resolve to their index pages. They do not create mathematical superclass assertions. The local scheme key is `grwtsk-mathematics`; its vocabulary release is `0.12-pilot`, an unpublished candidate independent of schema versions 0.1.0 and 0.1.1. The previous `0.1-pilot` registry and mappings remain pinned at math `cce5f855028dfc581917a40a222e8209ac9bd8c3`; no old identifier is reused. Candidate `0.2-pilot` remains pinned at math `47b87581675315cd4cecfec5602df0c7db9b0c61`.
 
