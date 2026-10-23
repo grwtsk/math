@@ -181,7 +181,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -265,7 +266,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -349,7 +351,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -433,7 +436,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -517,7 +521,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -601,7 +606,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -685,7 +691,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -769,7 +776,8 @@
                             "pdf",
                             "arxiv",
                             "crossref",
-                            "owner-report"
+                            "owner-report",
+                            "github"
                           ]
                         },
                         "asset_sha256": {
@@ -861,7 +869,8 @@
                               "pdf",
                               "arxiv",
                               "crossref",
-                              "owner-report"
+                              "owner-report",
+                              "github"
                             ]
                           },
                           "asset_sha256": {
@@ -937,7 +946,8 @@
                               "pdf",
                               "arxiv",
                               "crossref",
-                              "owner-report"
+                              "owner-report",
+                              "github"
                             ]
                           },
                           "asset_sha256": {
@@ -1005,6 +1015,69 @@
               "related_publications",
               "uncertainties"
             ]
+          },
+          "repository_origins": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "repository": {
+                  "type": "string"
+                },
+                "commit": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "tree": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "path": {
+                  "type": "string"
+                },
+                "blob": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "mode": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "source_url": {
+                  "type": "string"
+                },
+                "commit_author_date": {
+                  "type": "string"
+                },
+                "commit_committer_date": {
+                  "type": "string"
+                },
+                "classification": {
+                  "const": "owner-designated-unpublished-research"
+                },
+                "classification_evidence": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "repository",
+                "commit",
+                "tree",
+                "path",
+                "blob",
+                "mode",
+                "size",
+                "source_url",
+                "commit_author_date",
+                "commit_committer_date",
+                "classification",
+                "classification_evidence"
+              ]
+            }
           }
         },
         "required": [
