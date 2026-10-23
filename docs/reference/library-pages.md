@@ -4,9 +4,9 @@ The [mathematical area directory](../index.md) links to an index inside each are
 
 The [structured inventory](library-summary.json) is generated from existing tracked and nonignored untracked source paths and bytes in the local checkout, the maintained layout ledger, the selected catalog and the archive-intake records. It includes a separate census of explicit Lean source declaration commands, with parsing coverage. It is an inventory snapshot, not a census of compiler-generated declarations or a mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
 
-The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. [Historical evidence limits](../../.noeaaeue/documentation/reference/documentation-history.md) explain the disposition of the former flat documentation.
+The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) explain the disposition of the former flat documentation.
 
-Migration and acceptance boundaries are recorded separately in the [Lean consolidation report](../../.noeaaeue/documentation/reference/lean-consolidation-report.md), [repository reconstruction contract](../../.noeaaeue/documentation/reference/reconstruction.md), and [rigor and reconstruction status](../../.noeaaeue/documentation/reference/rigor-and-reconstruction-report.md).
+Migration and acceptance boundaries are recorded separately in the Lean consolidation report (artifact:gitblob:a0aee0a59e806de6638a059af9df7dd22359b507), repository reconstruction contract (artifact:gitblob:6434bef0cd7e148093f275fc82ea3013c6523630), and rigor and reconstruction status (artifact:gitblob:558248aa8fd44d10f9024a266f8a64dbab2f4b13).
 
 ## Count definitions
 
@@ -38,4 +38,4 @@ Source-command totals use the pinned Lean parser with Mathlib's parser environme
 
 The snapshot records exact input digests for the layout ledger, selected catalog, intake inventory, Lean pin and Lake package manifest, and a content digest for every counted source. Its source-path list and source-command census measure coverage without claiming that those files were elaborated or axiom-audited. Counts use the current local checkout; they do not claim remote integration.
 
-The [selected result catalog](results.md) remains narrower than the page inventory. [Verification interfaces](../../.noeaaeue/documentation/reference/verification-interfaces.md) distinguish written, historical and source-bound checked evidence. [Historical evidence limits](../../.noeaaeue/documentation/reference/documentation-history.md) retain the disposition of the former flat documentation.
+The [selected result catalog](results.md) remains narrower than the page inventory. Verification interfaces (artifact:gitblob:d7df3a864028a221ea3728082afc25ec28c72953) distinguish written, historical and source-bound checked evidence. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) retain the disposition of the former flat documentation.

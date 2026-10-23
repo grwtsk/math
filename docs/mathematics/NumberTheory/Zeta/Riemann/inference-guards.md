@@ -27,7 +27,7 @@ The reusable [complex reflection result](../../../Analysis/Complex/CriticalRefle
 
 Three original guard proofs use canonical dependencies, while four synthetic audit wrappers exercise the guard theorems. The wrappers are verification fixtures. No external original proof consumer of these four guards has been verified. The scoped check preserves all 30 compared declaration types and the source proof text; the Hermitian proof's elaborated value differs only in 32 local binder names associated with its source module.
 
-Local direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. Lean and Mathlib retain upstream identities, named authors and licenses. No mathematical originality is claimed. [Credit and historical evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md).
+Local direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. Lean and Mathlib retain upstream identities, named authors and licenses. No mathematical originality is claimed. Credit and historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f).
 
 **Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 

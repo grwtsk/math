@@ -40,7 +40,7 @@ theorem. Neither counterexample depends on a probabilistic test.
 The [source](../../../../GRWTSK/Logic/FiniteSequences/DictionaryRevision.lean)
 reuses the [exact codec](indexed-dictionary.md). Its
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/DictionaryRevision.lean)
-and [fresh selected receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json)
+and fresh selected receipt (artifact:gitblob:b5a95d344f418e620982093ac8e0e27661cd22ea)
 bind the actual source, controls and owned-declaration audit. The pinned Lean
 4.33.0 replay uses trust zero and fatal warnings, allowing only `propext`,
 `Classical.choice` and `Quot.sound`. Dependency objects are reused and
@@ -48,7 +48,7 @@ fingerprinted. Whole-repository and independent-review acceptance are not
 claimed.
 
 The finite-list theorems supply exact mathematical revision conditions. The
-[operational cache](../../../../.noeaaeue/documentation/reference/content-cache.md) separately tests its
+operational cache (artifact:gitblob:2304c61045278f7e7ef9b09be4a2ba4367c2b984) separately tests its
 hashes, serialization, compression and file operations; a verified refinement
 from that Python adapter to these definitions remains open.
 

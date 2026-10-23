@@ -70,8 +70,8 @@ slot-stability, byte-compression or permission-authority claim.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RootedTraceRevision.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RootedTraceRevision.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-integration-2026-10-15.json)
+native receipt (artifact:gitblob:7a06810662f143c7434105fa5c49f73a0e98c280)
+and integration record (artifact:gitblob:a25095decb66149c7efccec4b6e20d5cac8e96b4)
 bind the exact selected closure. Lean 4.33.0 checks fresh local sources at
 trust zero with fatal warnings and a complete owned-declaration/transitive-
 axiom census permitting only `propext`, `Classical.choice` and `Quot.sound`.

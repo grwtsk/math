@@ -165,8 +165,8 @@ authorship and licenses.
 ## Source and verification scope
 
 [Source](../../../../GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean).
-Status: **fresh-selected**. [Verification receipt](../../../../.noeaaeue/evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json) ·
-[credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md).
+Status: **fresh-selected**. Verification receipt (artifact:gitblob:bd2f6ab88153b727a4d1e21c2c5d40751816cd59) ·
+credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f).
 The receipt covers the conditional theorem and its separate consumer under the
 pinned compiler with trust zero, fatal warnings, and an owned-declaration axiom
 audit. The displayed Mertens premise remains explicitly unproved here.
@@ -486,13 +486,13 @@ This is a counterexample to an inference rule, not to the Mobius target.
 
 ### Verification boundary and remaining arithmetic
 
-[`zero_free_pickup_transfer.py`](../../../../.noeaaeue/scripts/zero_free_pickup_transfer.py)
+`zero_free_pickup_transfer.py` (artifact:gitblob:97acf4e7cee93a7a4c3663b29596fbf4e864c553)
 checks exact rational radii, Borel--Caratheodory coefficients, the integer
 ceiling in $L$, the prefactor in (8), and the crossed-pole model.
 It leaves exponentials symbolic and rejects $\sigma\le3/8$, including $1/3$.
-[`test_zero_free_pickup_transfer.py`](../../../../.noeaaeue/scripts/test_zero_free_pickup_transfer.py)
+`test_zero_free_pickup_transfer.py` (artifact:gitblob:5ba720e5f5ba316756a26ecb5a6f1c9ff438d943)
 contains finite controls and tests rejection under optimized Python.
-The [source-bound receipt](../../../../.noeaaeue/evidence/number-theory/moebius/zero-free-pickup-transfer-20261014.json)
+The source-bound receipt (artifact:gitblob:6664c398dd6609510c373346ef3563ede17e4724)
 records the actual runs and distinguishes them from the analytic proof.
 
 This continuation supplies a written route from the reported external

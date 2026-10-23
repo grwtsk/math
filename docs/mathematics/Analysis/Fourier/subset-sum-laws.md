@@ -16,7 +16,7 @@ The [balanced partition sampling law](../../Combinatorics/Sequences/balanced-par
 
 ## Evidence and credit
 
-The [selected receipt](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json) and [elaborated inventory](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/declarations.json) record the checked scope. `PhamSauermannSourceRange` records the exact asymptotic proposition without asserting it. A complete Graham theorem for every prime is not claimed.
+The selected receipt (artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603) and elaborated inventory (artifact:gitblob:08c78be73d92de914ca31935d12afd64993d8626) record the checked scope. `PhamSauermannSourceRange` records the exact asymptotic proposition without asserting it. A complete Graham theorem for every prime is not claimed.
 
 Original rearrangement and anti-concentration argument: Huy Tuan Pham and Lisa Sauermann. Human direction: grwtsk contributors. Lean implementation: OpenAI Codex; upstream Mathlib authorship and licenses retained.
 

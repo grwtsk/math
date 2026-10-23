@@ -18,7 +18,7 @@ Positive controls check equality on supported references and refute the generali
 
 ## Sources and verification scope
 
-The [library source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean), [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean), [negative control](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean) and [selected receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json) bind the exact checked bytes. Earlier failed attempts and source variants remain preserved.
+The [library source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableDirectLookup.lean), [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableDirectLookup.lean), [negative control](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixDirectLookupMissingReference.lean) and selected receipt (artifact:gitblob:4a46b8653f8d6a531fe8f927f11399f6b9c912f8) bind the exact checked bytes. Earlier failed attempts and source variants remain preserved.
 
 The selected Lean 4.33.0 replay used trust zero, fatal warnings and the complete owned-declaration/transitive-axiom audit. Its 928 owned declarations comprise 853 from the prior library closure, three owned by the new library module and 72 by the self-contained positive module. These are declaration counts, not theorem totals. All are mathematical; only `propext`, `Classical.choice` and `Quot.sound` are used, with no unsafe or partial declarations and no runtime-helper exemptions. The actual intended negative is rejected separately.
 

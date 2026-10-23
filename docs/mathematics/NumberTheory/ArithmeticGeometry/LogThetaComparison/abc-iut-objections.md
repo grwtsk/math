@@ -18,7 +18,7 @@ A sufficient finite linear comparison retains a common ordered line, square weig
 
 ## Source and verification scope
 
-[Formal source](../../../../../GRWTSK/NumberTheory/ArithmeticGeometry/LogThetaComparison.lean). The [source ledger](../../../../../.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/abc-source-ledger.json) distinguishes journal metadata, author manuscripts, inaccessible source occurrences, response versions and later candidate repairs. Each source claim retains its own locator and digest. The [objection matrix](../../../../../.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-iut-objections-current.json) preserves independent model, interpretation, response and repair coordinates.
+[Formal source](../../../../../GRWTSK/NumberTheory/ArithmeticGeometry/LogThetaComparison.lean). The source ledger (artifact:gitblob:fcc318057f9b4a9ed44745ee81d2736f21506be0) distinguishes journal metadata, author manuscripts, inaccessible source occurrences, response versions and later candidate repairs. Each source claim retains its own locator and digest. The objection matrix (artifact:gitblob:f9b4265ebad742f1d4956ad087ff690d45122283) preserves independent model, interpretation, response and repair coordinates.
 
 Direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. Original additions: MIT. Source publications retain their own rights and attribution. Selected model checks do not grant IUT validity, repair instantiation, abc closure, or repository admission.
 
