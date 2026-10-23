@@ -1,0 +1,178 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cone-kernel-985-v0.1"
+issue = 985
+owner_repository = "grwtsk/math"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+parent_pr = 982
+parent_revision = "073285147677ca4500f6ca8fa46fbccf34d07c31"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonConeKernel.lean"
+new_module_git_blob = "3af26571069a49ff09ab205320ed4859f73a4712"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-cone-kernel.md"
+mathematical_note_git_blob = "ba82eda1d5c6e938bf05a6e10a4a374c59958c3f"
+
+[scope]
+source_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+elaboration_status = "NOT_RUN"
+kernel_status = "NOT_KERNEL_AUDITED"
+disk_homeomorphism_proved = false
+CW_pushout_proved = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel"
+authored_declaration_count = 8
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeOuterPairs"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.radialStep_to_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.radialConnected_to_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.coneToFilled_eq_implies_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.coneToFilled_eq_iff_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.outerPairedConeToFilled_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.outerPairedConeToFilled_bijective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.outerPairedConeToFilled_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel.outerPairedConeHomeomorph"
+kind = "noncomputable def"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-seven-radial-generators"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam01"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam12"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam23"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seamNext"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "apex-only-zero"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outerA"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "outerB"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "EqvGen-induction"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radial-source-surjectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-exactness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-extra-interior-fibers"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "kernel-iff"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "descended-injective"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "descended-surjective"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-topology"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-cancellation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-filled-T2-assumption"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-run"
+status = "NOT_RUN"
