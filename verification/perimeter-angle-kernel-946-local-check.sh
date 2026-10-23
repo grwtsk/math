@@ -113,6 +113,15 @@ import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
+/-- Distinct source endpoints collapse only after taking the quotient. -/
+example (k : ℕ) (c : PolygonCorner k) :
+    ((c, (1 : unitInterval)) : BoundaryPoint k) ≠
+      ((nextDirectedCorner k c, (0 : unitInterval)) : BoundaryPoint k) := by
+  intro h
+  have ht : (1 : unitInterval) = (0 : unitInterval) :=
+    congrArg Prod.snd h
+  have hr : (1 : ℝ) = 0 := congrArg Subtype.val ht
+  norm_num at hr
 example (k : ℕ) (c : PolygonCorner k) :
     perimeterProjection k (c, 1) =
       perimeterProjection k (nextDirectedCorner k c, 0) :=
