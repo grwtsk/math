@@ -180,14 +180,17 @@ theorem hasDerivAt_modeHeat (s frequency : ℝ) :
     funext t
     rfl
   rw [hfun]
-  convert h using 1 <;> simp only [modeHeat] <;> ring
+  convert h using 1
+  · simp only [modeHeat]
+    ring
 
 /-- The scalar heat coefficient satisfies the exact finite generator ODE. -/
 theorem hasDerivAt_coefficient (a s frequency : ℝ) :
     HasDerivAt (fun t : ℝ => coefficient a t frequency)
       (-(modeLaplacian frequency) * coefficient a s frequency) s := by
   convert (hasDerivAt_modeHeat s frequency).const_mul a using 1
-  · rfl
+  · funext t
+    rfl
   · simp only [coefficient]
     ring
 
