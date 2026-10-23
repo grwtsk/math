@@ -1,0 +1,35 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-fourier-bridge-841-v0.1"
+owner_repository = "grwtsk/math"
+issue = 841
+parent_issue = 835
+parent_pr = 837
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_FOURIER_BRIDGE_SOURCE_DRAFT_CENTERED_WINDING_FULL_FREQUENCY_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingFourierBridge"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingFourierBridge"
+
+[source_binding]
+stacked_parent_revision = "b6314e628441e1b2705cf5be0c4f303ff31ca666"
+candidate_branch = "research/rh-centered-winding-fourier-bridge-841-20261022"
+theorem_source_commit = "9b683dae3c66f1bdf071a6045b98772df494051e"
+theorem_source_git_blob = "feb81772812ff116e3e52d9355b9cb6539170eda"
+mathematical_note_commit = "e33a2f4c0941a7b69f647e9135f31aec47fb1e59"
+mathematical_note_git_blob = "474c917dd22689912600ce5841b15fc12bf936e0"
+
+[evidence_states]
+source_draft = true
+zmod_centered_residue_fiber_defined = true
+zmod_square_expansion_scripted = true
+natural_and_zmod_square_masses_identified = true
+existing_bucket_factor_two_identified = true
+existing_fourier_factor_two_identified = true
+finite_parseval_reused = true
+normalized_full_frequency_energy_identity_scripted = true
+wrap_as_full_frequency_minus_zero_energy_scripted = true
+four_family_modulus_aggregate_defined = true
+effective_modulus_endpoint_aggregate_defined = true
+residue_and_fourier_envelopes_identified = true
+full_frequency_dispersion_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
