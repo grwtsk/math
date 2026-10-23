@@ -1,5 +1,5 @@
 {
-  "schema": "docs-record/1",
+  "schema": "docs-record/2",
   "status": "candidate; authoritative catalogue acceptance pending",
   "coverage": "exactly these three selected families; no declaration-wide or complete topic coverage",
   "records": [
@@ -17,7 +17,18 @@
       "page": "docs/mathematics/NumberTheory/Prime/least-prime.md",
       "contribution": "Checked reuse/conditional interface; no originality claim",
       "integration": "local working source; broader layout replay separate",
-      "publication": "no publication action in this packet"
+      "publication": "no publication action in this packet",
+      "status": "verification",
+      "status_reason": "fresh-selected evidence label with matching current source bytes",
+      "status_observation": {
+        "source_path": "GRWTSK/NumberTheory/Prime/LeastPrime.lean",
+        "source_file": "PRESENT_REGULAR",
+        "expected_source_sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+        "observed_source_sha256": "89d862e92978b74d032ea9b8ce764c0593a19cb93001c2c1cf5695c600c187fd",
+        "source_matches_catalog": true,
+        "current_verification": null,
+        "verification_evidence_label": "fresh-selected"
+      }
     },
     {
       "id": "quota-coverage",
@@ -77,6 +88,17 @@
         },
         "current_verification": "not-run",
         "scope": "Current path and byte observation only; retained verification labels do not establish replay."
+      },
+      "status": "verification pending",
+      "status_reason": "current_verification=not-run",
+      "status_observation": {
+        "source_path": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+        "source_file": "PRESENT_REGULAR",
+        "expected_source_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a",
+        "observed_source_sha256": "8d07146fa509e71b3e8d70e33714d121c08460ee3519f5aa1f18f1746f11183a",
+        "source_matches_catalog": true,
+        "current_verification": "not-run",
+        "verification_evidence_label": "historical-source-relocated"
       }
     },
     {
@@ -139,7 +161,36 @@
         },
         "current_verification": "not-run",
         "scope": "Current path and byte observation only; retained verification labels do not establish replay."
+      },
+      "status": "verification pending",
+      "status_reason": "current_verification=not-run",
+      "status_observation": {
+        "source_path": "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean",
+        "source_file": "PRESENT_REGULAR",
+        "expected_source_sha256": "532d46ae618acc957bdb799be09f19e04f936d23b344dd0e0e0cf743c105372f",
+        "observed_source_sha256": "532d46ae618acc957bdb799be09f19e04f936d23b344dd0e0e0cf743c105372f",
+        "source_matches_catalog": true,
+        "current_verification": "not-run",
+        "verification_evidence_label": "historical-source-relocated"
       }
     }
-  ]
+  ],
+  "record_status_vocabulary": {
+    "verification": "Current source bytes match the catalog binding and replay evidence is recorded.",
+    "verification pending": "Current-source verification has not been replayed or its binding is not current."
+  },
+  "status_summary": {
+    "verification": 1,
+    "verification pending": 2
+  },
+  "generator": {
+    "schema": "noe.math-results-catalog/1",
+    "identity": "447fc31186ccc0ef3d9f40add2334d2a33832b9ca1d9f28787a569c58c0224aa",
+    "status_source": "current source digest, current_verification and retained verification label",
+    "nonclaims": [
+      "Verification status does not establish theorem admission, originality or whole-library coverage.",
+      "Historical receipts are not upgraded when a current source is merely present.",
+      "A matching source digest records byte identity only; it does not replace a kernel receipt or trust audit."
+    ]
+  }
 }

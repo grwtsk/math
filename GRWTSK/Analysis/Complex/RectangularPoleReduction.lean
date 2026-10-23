@@ -126,7 +126,7 @@ theorem boundaryIntegral_eq_principalSum (S : Finset ℂ) (f : ℂ → ℂ) (c :
     refine ⟨by simpa [closedRectangle, hy] using hu, ?_⟩
     intro hm
     have hp := (hS _ hm).2.2
-    simpa [hy] using hp
+    simp [hy] at hp
   have hvsafe (c₀ t : ℝ) (hc : c₀ = l ∨ c₀ = r) (ht : t ∈ Icc (-T) T) :
       (c₀ : ℂ) + (t : ℂ) * Complex.I ∈ closedRectangle l r T ∧
         (c₀ : ℂ) + (t : ℂ) * Complex.I ∉ S := by
