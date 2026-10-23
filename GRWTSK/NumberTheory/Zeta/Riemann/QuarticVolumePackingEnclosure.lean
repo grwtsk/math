@@ -32,6 +32,8 @@ CANONICAL_EDGE_PRODUCT_ENCLOSURE_DEFINED / SCALE_AND_DECAY_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
+open Filter Topology
+
 namespace ThreePointPacking
 
 /-- Product of consecutive edge squared norms. -/
@@ -41,7 +43,9 @@ def edgeProductEnclosure (p : ThreePointPacking) : ℝ :=
 theorem edgeProductEnclosure_nonnegative (p : ThreePointPacking) :
     0 ≤ p.edgeProductEnclosure := by
   unfold edgeProductEnclosure PackingPoint.normSq PackingPoint.dot
-  positivity
+  simpa only [pow_two] using
+    mul_nonneg (add_nonneg (sq_nonneg p.edge01.x) (sq_nonneg p.edge01.y))
+      (add_nonneg (sq_nonneg p.edge12.x) (sq_nonneg p.edge12.y))
 
 /-- The squared oriented area fits inside the edge-product enclosure. -/
 theorem gramVolume_le_edgeProductEnclosure (p : ThreePointPacking) :
@@ -84,6 +88,8 @@ theorem safeQuarticStructuredPackingValue_le_edgeProductEnclosure
   have hT :=
     ThreePointPacking.gramVolume_le_edgeProductEnclosure
       ((safeTransversePackingSequence z).packingAt n)
+  change (safeAxialPackingSequence z).valueAt n ≤ _ at hA
+  change (safeTransversePackingSequence z).valueAt n ≤ _ at hT
   nlinarith
 
 /-- The now-reduced supplier: enclosure and containment are canonical, so only

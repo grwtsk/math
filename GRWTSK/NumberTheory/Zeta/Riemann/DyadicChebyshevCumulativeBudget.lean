@@ -89,7 +89,7 @@ theorem windowMangoldtMass_le
   have hpsi :
       (∑ n ∈ Finset.Ioc 0 (2 * X), mangoldt n) =
         Chebyshev.psi (((2 * X : ℕ) : ℝ)) := by
-    simp [Chebyshev.psi, mangoldt]
+    simp only [Chebyshev.psi, mangoldt, Nat.floor_natCast]
   calc
     windowMangoldtMass X
         ≤ ∑ n ∈ Finset.Ioc 0 (2 * X), mangoldt n := hsum
@@ -128,12 +128,11 @@ theorem windowCoefficientMass_le_constant
     windowCoefficientMass X
         ≤ windowMangoldtMass X / (X : ℝ) := hsum
     _ ≤ ((Real.log 4 + 4) * (((2 * X : ℕ) : ℝ))) / (X : ℝ) := by
-      exact (div_le_div_iff₀ hXr).2 hmass
+      exact div_le_div_of_nonneg_right hmass hXr.le
     _ = chebyshevOctaveMassConstant := by
       unfold chebyshevOctaveMassConstant
       push_cast
       field_simp
-      ring
 
 /-- Direct bound for the literal unit-interval Mellin action. -/
 theorem action_norm_le_chebyshev
@@ -219,7 +218,7 @@ def safeChebyshevActionConstant (z : ZeroPoint) : ℝ :=
 theorem safeChebyshevActionConstant_nonnegative (z : ZeroPoint) :
     0 ≤ safeChebyshevActionConstant z := by
   unfold safeChebyshevActionConstant
-  positivity [chebyshevOctaveMassConstant_nonnegative]
+  exact mul_nonneg (by linarith [chebyshevOctaveMassConstant_nonnegative]) (by unfold radiusFactor; positivity)
 
 def safeChebyshevDyadicEnvelope (z : ZeroPoint) (j : ℕ) : ℝ :=
   safeChebyshevActionConstant z * dyadicWeight (1 / 2) j
@@ -269,7 +268,8 @@ theorem safeDyadicBlock_norm_le_chebyshevEnvelope
       hnorm
   rw [safeChebyshevDyadicEnvelope,
     ← safeDyadicHalfWeight_eq_dyadicWeight_half]
-  exact mul_le_mul hexp haction (norm_nonneg _) (by positivity)
+  rw [mul_comm (safeChebyshevActionConstant z)]
+  exact mul_le_mul hexp haction (norm_nonneg _) (by unfold safeDyadicHalfWeight; positivity)
 
 theorem safePlusDyadicBlock_norm_le_chebyshev
     (z : ZeroPoint) (j : ℕ) :
@@ -292,7 +292,7 @@ theorem safeCenterDyadicBlock_norm_le_chebyshev
     ‖safeCenterDyadicBlock z j‖ ≤ safeChebyshevDyadicEnvelope z j := by
   unfold safeCenterDyadicBlock
   apply safeDyadicBlock_norm_le_chebyshevEnvelope
-  · simp [safeShiftCenter]
+  · norm_num [safeShiftCenter]
   · exact safeShiftCenter_norm_le_quarticRadius z
 
 theorem safeEvenDyadicBlock_norm_le_chebyshev
@@ -351,7 +351,7 @@ theorem safeQuarticDyadicPackingValue_le_of_envelope
       simpa [abs_of_nonneg (hB k)] using hx
     have hySq : (safeEvenDefectDyadicBlock z k).re^2 ≤ (2*B k)^2 := by
       rw [sq_le_sq]
-      have h2 : 0 ≤ 2 * B k := by positivity
+      have h2 : 0 ≤ 2 * B k := mul_nonneg (by norm_num) (hB k)
       simpa [abs_of_nonneg h2] using hy
     unfold safeAxialDyadicPoint PackingPoint.normSq PackingPoint.dot
     nlinarith
@@ -411,7 +411,7 @@ theorem safeQuarticDyadicPackingValue_le_of_envelope
     calc
       _ ≤ (10 * ((B j)^2 + (B (j+1))^2)) *
           (10 * ((B (j+1))^2 + (B (j+2))^2)) := by
-        exact mul_le_mul hAe01 hAe12 (by positivity) (by positivity)
+        exact mul_le_mul hAe01 hAe12 (PackingPoint.normSq_nonneg _) (by positivity)
       _ = _ := by ring
   have hTedge :
       (safeTransverseDyadicPacking z j).edgeProductEnclosure ≤
@@ -421,7 +421,7 @@ theorem safeQuarticDyadicPackingValue_le_of_envelope
     calc
       _ ≤ (4 * ((B j)^2 + (B (j+1))^2)) *
           (4 * ((B (j+1))^2 + (B (j+2))^2)) := by
-        exact mul_le_mul hTe01 hTe12 (by positivity) (by positivity)
+        exact mul_le_mul hTe01 hTe12 (PackingPoint.normSq_nonneg _) (by positivity)
       _ = _ := by ring
   unfold safeQuarticDyadicPackingValue
     safeAxialDyadicGram safeTransverseDyadicGram

@@ -31,8 +31,7 @@ theorem ode_on_euler_domain {F : ℂ → ℂ}
   have hs1 : s ≠ 1 := by intro h; simp [h] at hs
   have hz : riemannZeta s ≠ 0 := riemannZeta_ne_zero_of_one_lt_re hs
   rw [poleRemoved_deriv hs1, poleRemoved_eq_mul hs1, hF s hs]
-  field_simp [hz, sub_ne_zero.mpr hs1]
-  <;> ring
+  field_simp [hz, sub_ne_zero.mpr hs1]; ring
 
 /-- Identity-theorem continuation of the denominator-free ODE, including 1. -/
 theorem ode_on_halfPlane {F : ℂ → ℂ}

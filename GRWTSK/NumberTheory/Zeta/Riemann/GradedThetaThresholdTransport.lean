@@ -110,9 +110,11 @@ theorem thetaAtThreshold_to_energyAtThreshold
   let X : ℕ := dyadicScale j
   let a : ℝ := ρ + η / 2
   let T : ℝ := Real.rpow (X : ℝ) a
-  have hX : 0 < X := dyadicScale_pos j
+  have hX : 0 < X := by dsimp [X, dyadicScale]; positivity
   have hX2 : 2 ≤ X := by
     dsimp [X, dyadicScale]
+    rw [pow_succ]
+    have hp : 0 < (2 : ℕ)^j := pow_pos (by decide) _
     omega
   have hXr : (0 : ℝ) < (X : ℝ) := by exact_mod_cast hX
   have hT0 : 0 ≤ T := by
@@ -163,10 +165,8 @@ theorem thetaAtThreshold_to_energyAtThreshold
           ψ u - u =
             (θ u - u) + (ψ u - θ u) := by ring
       rw [hid]
-      exact (abs_add _ _).trans
-        (add_le_add_left
-          (by simpa [abs_of_nonneg hpsiTheta0])
-          |θ u - u|)
+      simpa only [abs_of_nonneg hpsiTheta0] using
+        (abs_add_le (θ u - u) (ψ u - θ u))
     dsimp [D]
     nlinarith
   have henergy :=
@@ -198,7 +198,8 @@ theorem thetaAtThreshold_to_energyAtThreshold
     rw [← Real.rpow_mul hXr.le]
     rw [show ((X : ℝ)^2) =
       Real.rpow (X : ℝ) 2 by
-        rw [Real.rpow_natCast]]
+        rw [Real.rpow_eq_pow, Real.rpow_two]]
+    simp only [Real.rpow_eq_pow]
     rw [← Real.rpow_sub hXr]
     congr 1
     ring

@@ -74,7 +74,7 @@ theorem moebiusReal_two_mul_eq_parity
       exact Nat.prime_two.ne_one (Nat.isUnit_iff.mp hu)
     unfold moebiusReal
     rw [ArithmeticFunction.moebius_eq_zero_of_not_squarefree hnsq]
-    simp [hodd]
+    simp
 
 /-- Even positive endpoints up to `b` are in exact bijection with positive
 halves up to `b/2`. -/
@@ -84,9 +84,9 @@ theorem parityMertensPrefix_even_eq_sum_two_mul
       ∑ m ∈ Finset.Icc 1 (b / 2), moebiusReal (2 * m) := by
   classical
   unfold parityMertensPrefix endpointParitySet
-  apply Finset.sum_bij'
+  refine Finset.sum_bij'
     (fun u _hu => u / 2)
-    (fun m _hm => 2 * m)
+    (fun m _hm => 2 * m) ?_ ?_ ?_ ?_ ?_
   · intro u hu
     have hu' := Finset.mem_filter.mp hu
     have huI := Finset.mem_Icc.mp hu'.1
@@ -127,7 +127,8 @@ theorem parityMertensPrefix_even_eq_neg_odd_half
           by_cases h : m % 2 = 1 <;> simp [h]
     _ = -∑ m ∈ Finset.Icc 1 (b / 2),
         if m % 2 = 1 then moebiusReal m else 0 := by
-          exact Finset.sum_neg_distrib
+          simpa only using (Finset.sum_neg_distrib (s := Finset.Icc 1 (b / 2))
+            (f := fun m => if m % 2 = 1 then moebiusReal m else 0))
     _ = -parityMertensPrefix (b / 2) 1 := by
           unfold parityMertensPrefix endpointParitySet
           rw [Finset.sum_filter]

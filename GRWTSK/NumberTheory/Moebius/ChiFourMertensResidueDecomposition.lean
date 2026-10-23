@@ -71,7 +71,7 @@ theorem chiFourMobiusTerm_eq_modFourSigned
     simp [h1]
   · by_cases h3 : n % 4 = 3
     · rw [ZMod.χ₄_nat_three_mod_four h3]
-      simp [h1, h3]
+      simp [h3]
     · have hlt : n % 4 < 4 := Nat.mod_lt _ (by norm_num)
       have hres : n % 4 = 0 ∨ n % 4 = 2 := by
         omega
@@ -104,7 +104,7 @@ theorem chiFourTwistedMertensPrefix_eq_modFourDiscrepancy
   by_cases h1 : n % 4 = 1
   · simp [h1]
   · by_cases h3 : n % 4 = 3
-    · simp [h1, h3]
+    · simp [h3]
     · simp [h1, h3]
 
 /-- The odd Mertens prefix is the sum of the two unit residue prefixes modulo
@@ -131,7 +131,7 @@ theorem parityMertensPrefix_odd_eq_modFour_one_add_three
       have hodd : n % 2 = 1 := by
         rw [← hmod2]
         simp [h3]
-      simp [h1, h3, hodd]
+      simp [h3, hodd]
     · have hlt : n % 4 < 4 := Nat.mod_lt _ (by norm_num)
       have hres : n % 4 = 0 ∨ n % 4 = 2 := by
         omega
@@ -187,13 +187,13 @@ theorem dyadicChiFourTwistedMertensEnergy_iff_modFourDiscrepancy :
     intro j b hb
     have h := hscale j b hb
     rwa [chiFourTwistedMertensPrefix_eq_modFourDiscrepancy,
-      Complex.norm_real, sq_abs] at h
+      Complex.norm_real, Real.norm_eq_abs, sq_abs] at h
   · intro hDisc δ hδ
     obtain ⟨C, hC, hscale⟩ := hDisc δ hδ
     refine ⟨C, hC, ?_⟩
     intro j b hb
     rw [chiFourTwistedMertensPrefix_eq_modFourDiscrepancy,
-      Complex.norm_real, sq_abs]
+      Complex.norm_real, Real.norm_eq_abs, sq_abs]
     exact hscale j b hb
 
 /-- Stronger common square-root-energy statement for both unit residue classes

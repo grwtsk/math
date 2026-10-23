@@ -23,12 +23,18 @@ theorem two_mul_sum_Icc_one_centeredWindingRadius
     (b d : ℕ) :
     2 * (∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d), z) =
       windingTriangularNumerator b d := by
+  let R := centeredWindingRadius b d
+  have hset : insert 0 (Finset.Icc 1 R) = Finset.range (R + 1) := by
+    ext z
+    simp
+    omega
+  have hsum : (∑ z ∈ Finset.Icc 1 R, z) = ∑ z ∈ Finset.range (R + 1), z := by
+    rw [← hset, Finset.sum_insert (by simp)]
+    simp
   unfold windingTriangularNumerator
-  have h :=
-    Finset.sum_Ico_eq_sub
-      (fun z : ℕ => z) 1 (centeredWindingRadius b d + 1)
-  simp at h
-  omega
+  change 2 * (∑ z ∈ Finset.Icc 1 R, z) = R * (R + 1)
+  rw [hsum]
+  simpa only [Nat.add_sub_cancel, mul_comm] using Finset.sum_range_id_mul_two (R + 1)
 
 /-- Twice the lag-sensitive winding support ceiling, in exact polynomial form.
 The factor two avoids natural-number division. -/
@@ -38,21 +44,29 @@ theorem two_mul_centeredFourDistinctWindingRawSupportCeilingSum
       (2 * centeredWindingRadius b d * (b + 1) -
         (d * d) * windingTriangularNumerator b d) *
           ((b + 1) * (b + 1)) := by
-  unfold centeredFourDistinctWindingRawSupportCeilingSum
-    centeredFourDistinctWindingRawSupportCeiling
-    windingTriangularNumerator
-  have hsum :=
-    two_mul_sum_Icc_one_centeredWindingRadius b d
-  rw [Finset.mul_sum]
-  simp_rw [Nat.mul_sub_left_distrib]
-  rw [Finset.sum_sub_distrib]
-  rw [Finset.sum_const_nat]
-  have hcard :
-      (Finset.Icc 1 (centeredWindingRadius b d)).card =
-        centeredWindingRadius b d := by simp
-  rw [hcard]
-  rw [Finset.mul_sum] at hsum
-  omega
+  have hbound : ∀ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
+      z * (d * d) ≤ b + 1 := by
+    intro z hz
+    have hzR := (Finset.mem_Icc.mp hz).2
+    have hR : centeredWindingRadius b d * (d * d) ≤ b := Nat.div_mul_le_self _ _
+    exact (Nat.mul_le_mul_right _ hzR).trans (hR.trans (Nat.le_succ _))
+  have hsum :
+      (∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d), ((b + 1) - z * (d * d))) =
+      centeredWindingRadius b d * (b + 1) -
+        (∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d), z) * (d * d) := by
+    rw [Finset.sum_tsub_distrib _ hbound]
+    simp [← Finset.sum_mul]
+  have hprod :
+      2 * ((∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d), z) * (d * d)) =
+      (d * d) * windingTriangularNumerator b d := by
+    calc
+      _ = (2 * (∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d), z)) * (d * d) := by ring
+      _ = windingTriangularNumerator b d * (d * d) := by
+        rw [two_mul_sum_Icc_one_centeredWindingRadius]
+      _ = _ := mul_comm _ _
+  unfold centeredFourDistinctWindingRawSupportCeilingSum centeredFourDistinctWindingRawSupportCeiling
+  rw [← Finset.sum_mul, hsum, ← mul_assoc, Nat.mul_sub_left_distrib, hprod]
+  simp only [mul_assoc]
 
 /-- Simple d-sensitive upper bound before any cancellation:
 the winding sum costs at most R*(b+1)^3. -/
@@ -88,19 +102,22 @@ theorem windingRawSupport_cast_le_reciprocalSquare
       (b : ℝ) * (((d : ℝ) ^ 2)⁻¹) *
         (((b + 1 : ℕ) : ℝ) ^ 3) := by
   have h := square_mul_windingRawSupport_le_b_mul_cube b d
-  have hd : (0 : ℝ) < (d : ℝ) ^ 2 := by positivity
+  have hdR : (d : ℝ) ≠ 0 := by exact_mod_cast (NeZero.ne d)
+  have hd : (0 : ℝ) < (d : ℝ) ^ 2 := sq_pos_of_ne_zero hdR
   have hcast :
-      ((d * d : ℕ) : ℝ) *
+      (d : ℝ)^2 *
           (centeredFourDistinctWindingRawSupportCeilingSum b d : ℝ) ≤
         (b : ℝ) * (((b + 1 : ℕ) : ℝ) ^ 3) := by
-    exact_mod_cast h
-  push_cast at hcast
+    have hnat : d^2 * centeredFourDistinctWindingRawSupportCeilingSum b d ≤
+        b * (b + 1)^3 := by
+      simpa only [pow_succ, pow_zero, mul_one, one_mul, mul_assoc] using h
+    exact_mod_cast hnat
   calc
     (centeredFourDistinctWindingRawSupportCeilingSum b d : ℝ) =
       ((d : ℝ) ^ 2)⁻¹ *
         (((d : ℝ) ^ 2) *
           (centeredFourDistinctWindingRawSupportCeilingSum b d : ℝ)) := by
-            field_simp
+            field_simp [hdR]
     _ ≤ ((d : ℝ) ^ 2)⁻¹ *
         ((b : ℝ) * (((b + 1 : ℕ) : ℝ) ^ 3)) := by
           exact mul_le_mul_of_nonneg_left hcast (by positivity)

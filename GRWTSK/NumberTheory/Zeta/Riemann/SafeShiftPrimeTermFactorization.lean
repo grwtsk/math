@@ -58,7 +58,7 @@ theorem safePlusDefectScale_cast
     (safePlusDefectScale z event : ℂ) =
       (event.natValue : ℂ) ^ (-(zeroDefect z.1 : ℂ)) := by
   unfold safePlusDefectScale
-  simpa only [ofReal_neg] using
+  simpa only [ofReal_neg, Complex.ofReal_natCast] using
     Complex.ofReal_cpow (Nat.cast_nonneg event.natValue)
       (-zeroDefect z.1)
 
@@ -75,14 +75,14 @@ theorem safeShiftPlus_eq_center_add_defect (s : ℂ) :
     safeShiftPlus s =
       safeShiftCenter s + (zeroDefect s : ℂ) := by
   apply Complex.ext <;>
-    simp [safeShiftPlus, safeShiftCenter, zeroDefect] <;> ring
+    simp [safeShiftPlus, safeShiftCenter, zeroDefect]
 
 /-- The minus exponent differs from the center exponent by -a. -/
 theorem safeShiftMinus_eq_center_sub_defect (s : ℂ) :
     safeShiftMinus s =
       safeShiftCenter s - (zeroDefect s : ℂ) := by
   apply Complex.ext <;>
-    simp [safeShiftMinus, safeShiftCenter, zeroDefect] <;> ring
+    simp [safeShiftMinus, safeShiftCenter, zeroDefect]
 
 /-- Exact factorization of the plus prime-power term. -/
 theorem safePlusPrimePowerTerm_factor

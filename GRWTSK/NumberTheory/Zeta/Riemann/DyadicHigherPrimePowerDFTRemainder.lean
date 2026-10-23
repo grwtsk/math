@@ -94,7 +94,7 @@ theorem higherPrimePowerWindowMass_le_mangoldt_div
         (by exact_mod_cast hX)
       exact_mod_cast Nat.le_of_lt (window_lower hmem)
     _ = higherPrimePowerMangoldtWindowMass X / (X : ℝ) := by
-      rw [Finset.sum_div]
+      rw [← Finset.sum_div]
       rfl
 
 /-- The non-prime mass in one octave is at most the complete non-prime mass up
@@ -128,7 +128,7 @@ theorem higherPrimePowerMangoldtWindowMass_le_psi_sub_theta
             mangoldt n := hsum
     _ = ψ ((2 * X : ℕ) : ℝ) - θ ((2 * X : ℕ) : ℝ) := by
       rw [Chebyshev.psi_sub_theta_eq_sum_not_prime]
-      simp [mangoldt]
+      simp only [mangoldt, Nat.floor_natCast]
 
 /-- Exact square-root source bound inherited from pinned Chebyshev. -/
 theorem higherPrimePowerWindowMass_sqrt_bound :
@@ -247,7 +247,7 @@ theorem greenHigherPrimePowerDFTPhaseSum_norm_le
       intro n hn
       rw [norm_mul, Complex.norm_real, Real.norm_eq_abs,
         abs_of_nonneg (coefficient_nonnegative n)]
-      simp [greenDFTPhase]
+      simp only [greenDFTPhase, fourier_apply, Circle.norm_coe, mul_one]
     _ = higherPrimePowerWindowMass X := rfl
 
 theorem greenHigherPrimePowerWindowMassComplex_norm
@@ -257,12 +257,13 @@ theorem greenHigherPrimePowerWindowMassComplex_norm
   unfold greenHigherPrimePowerWindowMassComplex
     higherPrimePowerWindowMass
   rw [← Complex.ofReal_sum]
-  simp [abs_of_nonneg (higherPrimePowerWindowMass_nonnegative X)]
+  rw [Complex.norm_real, Real.norm_eq_abs]
+  exact abs_of_nonneg (higherPrimePowerWindowMass_nonnegative X)
 
 /-- Fixed-frequency correction bound. Combined with the previous square-root
 mass theorem, this is O(X^(-1/2)) for every fixed nonzero k. -/
 theorem greenHigherPrimePowerFourierPrimeCoordinate_norm_le
-    {k : ℤ} (hk : k ≠ 0)
+    {k : ℤ} (_hk : k ≠ 0)
     (X : ℕ) :
     ‖greenHigherPrimePowerFourierPrimeCoordinate X k‖ ≤
       (2 * higherPrimePowerWindowMass X) /

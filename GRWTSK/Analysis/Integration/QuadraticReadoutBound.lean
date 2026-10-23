@@ -50,9 +50,9 @@ theorem reconstructed_readout_sq_le (f g : α → ℝ)
   have hD : 0≤D := integral_nonneg (fun _ ↦ sq_nonneg _)
   have hC := integral_product_bound f g hf hg
   have ht : |a₀*m₀+a₁*m₁-(∫ x, f x*g x ∂μ)| ≤
-      |m₀|*|a₀|+|m₁|*|a₁|+Real.sqrt Q*Real.sqrt D := by
+      |m₀| * |a₀| + |m₁| * |a₁|+Real.sqrt Q*Real.sqrt D := by
     calc
-      _ ≤ |a₀*m₀+a₁*m₁|+|∫ x, f x*g x ∂μ| := abs_sub_le _ _
+      _ ≤ |a₀*m₀+a₁*m₁|+|∫ x, f x*g x ∂μ| := abs_sub _ _
       _ ≤ (|a₀*m₀|+|a₁*m₁|)+Real.sqrt Q*Real.sqrt D :=
         add_le_add (abs_add_le _ _) hC
       _ = _ := by simp only [abs_mul]; ring

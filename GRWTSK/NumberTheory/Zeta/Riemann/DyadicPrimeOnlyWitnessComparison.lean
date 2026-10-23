@@ -78,7 +78,7 @@ theorem mass1_eq_primeOnly_add_higherPrimePower
 /-- Prime-only complete arithmetic Fourier coordinate. -/
 def greenPrimeOnlyArithmeticFourierCoordinate
     (X : ℕ) (k : ℤ) : ℂ :=
-  if hk : k = 0 then
+  if k = 0 then
     0
   else
     greenFourierBackgroundCoordinate k -
@@ -87,7 +87,7 @@ def greenPrimeOnlyArithmeticFourierCoordinate
 /-- Totalized higher-prime-power coordinate correction. -/
 def greenHigherPrimePowerArithmeticCorrection
     (X : ℕ) (k : ℤ) : ℂ :=
-  if hk : k = 0 then
+  if k = 0 then
     0
   else
     greenHigherPrimePowerFourierPrimeCoordinate X k
@@ -115,9 +115,9 @@ theorem greenArithmeticFourierCoordinate_eq_primeOnly_sub_higherPrimePower
   · subst k
     simp
   · rw [greenPrimeOnlyArithmeticFourierCoordinate,
-      dif_neg hk,
+      if_neg hk,
       greenHigherPrimePowerArithmeticCorrection,
-      dif_neg hk]
+      if_neg hk]
     unfold greenArithmeticFourierCoordinate
     rw [greenFourierPrimeCoordinate_split hk X]
     ring
@@ -132,7 +132,7 @@ theorem higherPrimePowerFourierModeEnergy_eq_correction
   · subst k
     simp [higherPrimePowerFourierModeEnergy]
   · rw [higherPrimePowerFourierModeEnergy, if_neg hk,
-      greenHigherPrimePowerArithmeticCorrection, dif_neg hk]
+      greenHigherPrimePowerArithmeticCorrection, if_neg hk]
 
 /-- Prime-only Fourier mode energy. -/
 def greenPrimeOnlyFourierModeEnergy
@@ -260,8 +260,7 @@ theorem higherPrimePowerFourierHead_le_tsum
   have hShell :
       HasSum (higherPrimePowerFourierShellEnergy X)
         (∑' k : ℤ, higherPrimePowerFourierModeEnergy X k) := by
-    simpa [higherPrimePowerFourierShellEnergy] using
-      hMode.hasSum.nat_add_neg_add_one
+    convert! hMode.hasSum.nat_add_neg_add_one using 1
   have hSummable := hShell.summable
   have hle := hSummable.sum_le_tsum
     (Finset.range N)
@@ -372,10 +371,7 @@ theorem higherPrimePowerFiniteWitnessEnergy_le_full
       higherPrimePowerFullWitnessEnergy X := by
   unfold higherPrimePowerFiniteWitnessEnergy
     higherPrimePowerFullWitnessEnergy
-  exact add_le_add_left
-    (higherPrimePowerFourierHead_le_tsum X N)
-    ((higherPrimePowerMass0Contribution X)^2 +
-      (higherPrimePowerMass1Contribution X)^2)
+  exact add_le_add le_rfl (higherPrimePowerFourierHead_le_tsum X N)
 
 /-- Full finite witness is stable under deleting higher prime powers. -/
 theorem fullStage_le_two_primeOnly_add_residual
