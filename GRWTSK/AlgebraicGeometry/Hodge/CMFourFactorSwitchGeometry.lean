@@ -1325,6 +1325,20 @@ theorem CMFiniteFourfoldAssembly.canonical_assemble_pure
     (CMFiniteCanonicalPairedAssembly_originalFormula E
       a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)
 
+/-- The constructed finite fourfold assembly is exactly the checked
+rational paired assembly on arbitrary inputs, not only on pure factors. -/
+theorem CMFiniteFourfoldAssembly.canonical_assemble_eq_checked
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    (f : Fin 4 → E.carrier ⊗[ℚ] E.carrier) :
+    (CMFiniteFourfoldAssembly.canonical factors).assemble f =
+      GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly.pairedAssembly
+        E.carrier (((f 0 ⊗ₜ[ℚ] f 1) ⊗ₜ[ℚ] f 2) ⊗ₜ[ℚ] f 3) := by
+  exact congrArg (fun A : CMFiniteFourPairedTensor E →ₗ[ℚ]
+    (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E) =>
+      A (((f 0 ⊗ₜ[ℚ] f 1) ⊗ₜ[ℚ] f 2) ⊗ₜ[ℚ] f 3))
+    (CMFiniteCanonicalPairedAssembly_eq_checked E)
+
 /-- Explicit rational multilinearity of the finite four-slot assembly.
 This strengthens the function-valued interface without pretending that
 a geometric assembly with these properties has been constructed. -/
