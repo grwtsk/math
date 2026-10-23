@@ -1472,12 +1472,9 @@ vector entries on paired pure tensors. -/
 /-- Compose the actual tensor shuffle with the already constructed
 separated coefficient-multiplication assembly. -/
 
-/-- A rational-linear paired-to-separated shuffle is uniquely determined
-by its action on fourfold paired pure tensors. Existence is not asserted.
-
-This theorem discharges the *uniqueness* half of the tensor-shuffle
-construction and prevents a future geometric comparison from requiring
-an independent equality-of-shuffles premise. -/
+/-- Any two maps on the original finite-CM paired tensor carrier
+satisfying the original pure shuffle formula coincide. The proof now uses
+the independently checked generic uniqueness theorem. -/
 theorem CMFiniteFourTensorShuffle_unique
     (E : CMGaloisIntermediateField)
     (F G : CMFiniteFourPairedTensor E →ₗ[ℚ]
@@ -1490,38 +1487,19 @@ theorem CMFiniteFourTensorShuffle_unique
       G (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
         CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) :
     F = G := by
-  apply LinearMap.ext
-  intro t
-  induction t with
-  | tmul t123 t4 =>
-      induction t123 with
-      | tmul t12 t3 =>
-          induction t12 with
-          | tmul t1 t2 =>
-              induction t1 with
-              | tmul a₁ x₁ =>
-                  induction t2 with
-                  | tmul a₂ x₂ =>
-                      induction t3 with
-                      | tmul a₃ x₃ =>
-                          induction t4 with
-                          | tmul a₄ x₄ =>
-                              exact (hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).trans
-                                (hG a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄).symm
-                          | add x y hx hy =>
-                              simp [map_add, hx, hy]
-                      | add x y hx hy =>
-                          simp [map_add, hx, hy]
-                  | add x y hx hy =>
-                      simp [map_add, hx, hy]
-              | add x y hx hy =>
-                  simp [map_add, hx, hy]
-          | add x y hx hy =>
-              simp [map_add, hx, hy]
-      | add x y hx hy =>
-          simp [map_add, hx, hy]
-  | add x y hx hy =>
-      simp [map_add, hx, hy]
+  have hF' :
+      F = (GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour
+        ℚ E.carrier).toLinearMap := by
+    apply GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour_unique
+    intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    exact hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  have hG' :
+      G = (GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour
+        ℚ E.carrier).toLinearMap := by
+    apply GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour_unique
+    intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    exact hG a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  exact hF'.trans hG'.symm
 
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
