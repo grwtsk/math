@@ -1,6 +1,6 @@
 # Literature index
 
-See the [idea–formalization map by subject](idea-formalization-map.md) for 35 pinned code links and the [unpublished-source coverage](unpublished-mapping-coverage.md) for explicit unresolved bridges.
+See the [idea–formalization map by subject](idea-formalization-map.md) for 226 pinned code links and the [unpublished-source coverage](unpublished-mapping-coverage.md) for explicit unresolved bridges.
 
 Bibliographic fields were checked against the individual PDF versions. Named bylines and owner-reported attribution are distinct. Publication, draft and arXiv dates retain their event types in `catalog.json`. See [qualifications and unresolved fields](metadata-review.md).
 
