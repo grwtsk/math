@@ -422,4 +422,44 @@ theorem CountedWalk.visits_previous_finish
   CountedWalk.visits_append_of_visits T e he T.visits_finish
 
 
+
+/-- A visited vertex of a FRESH counted trail admits a genuine
+factorization into two fresh trails with disjoint edge-instance
+sets. This uses the no-duplicate invariant of the ORIGINAL trail,
+rather than assuming disjointness as an additional hypothesis. -/
+theorem FreshCountedTrail.factor_of_visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hv : T.walk.Visits v) :
+    ∃ (P : FreshCountedTrail m c a v)
+      (Q : FreshCountedTrail m c v b),
+      Disjoint P.used Q.used ∧
+        T.used = P.used ∪ Q.used := by
+  classical
+  obtain ⟨PW, QW, hlist⟩ := hv
+  have hnodup : (QW.edges ++ PW.edges).Nodup := by
+    rw [← hlist]
+    exact T.nodup
+  have hparts := List.nodup_append.mp hnodup
+  have hP : PW.edges.Nodup := hparts.2.1
+  have hQ : QW.edges.Nodup := hparts.1
+  let P : FreshCountedTrail m c a v :=
+    ⟨PW, hP⟩
+  let Q : FreshCountedTrail m c v b :=
+    ⟨QW, hQ⟩
+  refine ⟨P, Q, ?_, ?_⟩
+  · apply Finset.disjoint_left.mpr
+    intro e heP heQ
+    have hePl : e ∈ PW.edges := by
+      simpa [P, FreshCountedTrail.used] using heP
+    have heQl : e ∈ QW.edges := by
+      simpa [Q, FreshCountedTrail.used] using heQ
+    exact hparts.2.2 e heQl hePl
+  · change T.walk.edges.toFinset =
+      PW.edges.toFinset ∪ QW.edges.toFinset
+    rw [hlist, List.toFinset_append]
+    exact Finset.union_comm _ _
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
