@@ -78,5 +78,25 @@ theorem actual_quartic_base_resolvent_in_splitting_field
   actual_quartic_base_resolvent p A B C₀ D hp
     (IsSplittingField.splits L p) hm e
 
+/-- The cubic coefficient formula is compatible with a tower of field
+homomorphisms. This is a pure polynomial identity: no splitting,
+separability, characteristic restriction, or chosen root ordering. -/
+theorem baseAdjacencyResolvent_map_tower
+    {M : Type*} [Field M]
+    (f : K →+* L) (g : L →+* M) (A B C₀ D : K) :
+    ((baseAdjacencyResolvent A B C₀ D).map f).map g =
+      (baseAdjacencyResolvent A B C₀ D).map (g.comp f) := by
+  exact Polynomial.map_map (baseAdjacencyResolvent A B C₀ D) f g
+
+/-- Coefficient-wise base change gives exactly the same cubic as first
+extending the coefficient tuple; no root enumeration is involved. -/
+theorem baseAdjacencyResolvent_ringHom_map
+    {M : Type*} [Field M] (f : K →+* M) (A B C₀ D : K) :
+    (baseAdjacencyResolvent A B C₀ D).map f =
+      baseAdjacencyResolvent (f A) (f B) (f C₀) (f D) := by
+  simp [baseAdjacencyResolvent, adjacencyResolventOfMonicCoefficients,
+    adjacencyResolventFromVieta, map_add, map_sub, map_mul, map_pow,
+    map_ofNat]
+
 end
 end GRWTSK.Algebra.QuarticBaseResolvent
