@@ -161,6 +161,24 @@ theorem twoModeHeat_two_stage_bound
   rw [heq] at h
   exact h.trans (add_le_add h₁ h₂)
 
+
+/-- A mode's forward Hodge-time derivative is minus its Laplacian eigenvalue
+times the mode. This is the finite generator relation, not a theta-kernel
+or infinite-dimensional intertwining statement. -/
+theorem hasDerivAt_modeHeat (s frequency : ℝ) :
+    HasDerivAt (fun t : ℝ => modeHeat t frequency)
+      (-(modeLaplacian frequency) * modeHeat s frequency) s := by
+  unfold modeHeat
+  convert (Real.hasDerivAt_exp (-(s * modeLaplacian frequency))).comp s
+    ((hasDerivAt_id s).mul_const (-(modeLaplacian frequency))) using 1 <;> ring
+
+/-- The scalar heat coefficient satisfies the exact finite generator ODE. -/
+theorem hasDerivAt_coefficient (a s frequency : ℝ) :
+    HasDerivAt (fun t : ℝ => coefficient a t frequency)
+      (-(modeLaplacian frequency) * coefficient a s frequency) s := by
+  convert (hasDerivAt_modeHeat s frequency).const_mul a using 1 <;>
+    simp [coefficient] <;> ring
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
