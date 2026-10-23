@@ -5227,14 +5227,24 @@ do. Minimum expected code length, Huffman optimality, machine-language
 refinement, hash authenticity, arbitrary Python termination, Hodge/PTS bridges,
 model quality, and unrelated finite-law acceptance are not claimed.
 
-**Exact source and evidence.** This source increment owns
-`GRWTSK/InformationTheory/Huffman/*.lean`; its immutable math commit, source
-blobs, theorem types, compiler digest, before/after source observations,
-commands, raw logs and axiom audit are pinned by the subsequent
-`grwtsk/noeaaeue` source binding. Operational artifacts remain outside math.
-Initial receipt status here is `SOURCE_PINNED_REPLAY_PENDING`; later provenance
-updates must give the actual immutable identity and receipt, rather than
-promoting this pending status by implication.
+**Exact source and checked evidence.** The seven source modules are pinned at
+math commit `b0e8454d3107e1f89e35e69bc2642e78739596b9`. A fresh private
+compilation of each module, theorem-type/axiom audit and false-wire rejection
+passed Lean 4.33.0 with `--trust=0 -DwarningAsError=true`. The proof sources
+were compared byte-for-byte with the immutable Git blobs before and after the
+check. The main law has only standard `propext`, `Classical.choice` and
+`Quot.sound` dependencies, no custom theorem assumption or native oracle.
+The exact 29,938-byte receipt is retained externally at
+`../.noeaaeue-runtime/python-quine/formal-work/codec-kernel-v1/check-b0e8454d3107e1f89e35e69bc2642e78739596b9-1792798476480793000/receipt.json`,
+SHA-256 `e2fdea9231cdf7e0230a6315fdcdc1a037f6e6b6473967b59e380183913b4798`.
+The downstream `grwtsk/noeaaeue` source binding retains all source blobs,
+compiler digest, exact commands and raw logs. Seven separate finite
+cross-language cases agreed with the pinned Rust encoder and generated Python
+decoder. Classification is now **local-proved-bridge for the concrete Lean
+algorithm**, **finite conformance for the language implementations**, and
+**unresolved for full operational-semantics refinement**. No unrelated theorem
+acceptance or stronger source-language claim follows. Operational artifacts
+remain outside math.
 
 
 ## Case CLASSICAL-RIESZ-AND-STRICT-GAP-20261023 — normalization and limit boundaries
@@ -5261,3 +5271,60 @@ promoting this pending status by implication.
 **Exact hypotheses, declarations, source:** `GRWTSK.Logic.InformationLoss.exists_kernel_retraction_of_isCompl` and `exists_sharp_measurement_of_isCompl` retain field K, K-modules V/Y, K-linear P, submodule S, and **hc:IsCompl P.ker S**; retraction and paired injectivity conclusions unchanged. New math main [`14bcb36c57904c0ae9101790f86bc83811d52451`](https://github.com/grwtsk/math/commit/14bcb36c57904c0ae9101790f86bc83811d52451), `GRWTSK/Logic/InformationLoss/KernelComplementExistence.lean`, blob `aa02d716d476d02e0b0de2fd8a3bb8569d291928`; direct imports `KernelCoordinateCertificate` blob `2df2eaeabf0d44c768110fda526add4216f90920` and `Mathlib.LinearAlgebra.Projection`. No theorem statements altered.
 
 **Independent statuses:** Imported mathematics: exact Mathlib projection source **inspected**, not newly kernel replayed. Kernel-verified local bridge: **NONE**. Local declarations: **SOURCE PROOF CANDIDATES**. Conditional interface: supplied `IsCompl` and downstream algebraic complement existence. Finite evidence: none. Analogy: standard splitting only. Unresolved: compilation, full transitive imports/axioms and fresh kernel, analytic continuity and source-specific spectral observations. [Validation #1139](https://github.com/grwtsk/math/issues/1139) pins commands and checks. **ACTUAL SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Receipts outside math in `grwtsk/noeaaeue`, root import withheld.
+
+
+## Case CONCRETE-GF128-RS-SOURCE-ROUNDTRIP-20261023 — exact fixed-node recovery
+
+**Reference boundary.** I. S. Reed and G. Solomon, *Polynomial Codes Over
+Certain Finite Fields*, Journal of the Society for Industrial and Applied
+Mathematics 8(2), June 1960, 300–304,
+[DOI 10.1137/0108018](https://epubs.siam.org/doi/10.1137/0108018).
+The original publication date is distinct from its later online date.
+This is background for evaluation coding, not an imported theorem or a claim
+that this bit-level proof derives from that paper. The current construction
+and its exact constants were derived from the source-bound Rust/Python codec.
+The Huffman part and its separate reference boundary appear in the preceding
+EXECUTABLE-HUFFMAN-ROUNDTRIP case.
+
+**Concrete statements and methods.** Maintained source is split under
+`GRWTSK/Algebra/FiniteField/GF128/` and
+`GRWTSK/InformationTheory/ReedSolomon/`. The carrier is `BitVec 128`, addition
+is XOR, and multiplication is 128 shift/reduce steps with reduction constant
+`0x87`. `mul_assoc`, XOR linearity and unit laws are proved for those actual
+operations. `runtime_inverse_laws` proves two-sided inverses for the exact
+18 denominators occurring in four-node profiles among nodes 1–6. Each inverse
+is connected to the actual square-and-multiply exponentiation by kernel
+checked literal step certificates. These are mathematical certificate leaves,
+not execution receipts or a native decision oracle.
+
+`sorted_profiles_complete` covers every sorted four-element subset of the
+six nodes. `runtime_roundtrip (k : Fin 15) (x : Four)` recovers every four-word
+input by computed interpolation coefficients, rather than assuming a field
+interface or supplying a recovery law. Fifteen small matrix certificates
+establish coefficient composition, and XOR linearity/associativity lift them
+to all input values. The wire laws prove little-endian word packing, four
+words per 64-byte stripe and exact removal of zero padding.
+`source_roundtrip (profile : Fin 15) (source : List UInt8)` composes these
+facts with the concrete Huffman algorithm and proves
+`decodeSource profile (encodeSource source) = some source` without theorem
+hypotheses. The packet stores frequencies, lengths and shards only, never the
+original source, tree or intermediate compressed payload.
+
+**Assumptions and evidence classes.** Kernel checking uses Lean 4.33.0,
+trust level zero, fatal warnings and an explicit transitive axiom audit; only
+standard `propext`, `Classical.choice` and `Quot.sound` occur in the checked
+round-trip closure. There is no assumed codec inverse, coefficient identity,
+alphabet coverage, `Field` instance, irreducibility premise or inverse law
+for arbitrary nonzero words. General polynomial irreducibility and total
+nonzero inversion are not proved here. The earlier independent Rabin
+computation remains separate finite evidence. Fixed inverse/matrix
+certificates are kernel proofs; cross-language sample agreement is finite
+conformance. Rust/Python heap and cache operational semantics, integer bounds,
+allocation, compilation, JSON/hex parsing, filesystem/hash behavior, malformed
+packet equivalence and unknown-error correction remain separate obligations.
+Topology, PTS, Hodge and optional model laws are not premises or conclusions.
+Immutable source commits, blobs, compiler, commands, logs, replay receipts
+and cross-language results belong in the downstream `grwtsk/noeaaeue`
+`python-quine/contracts/source-bindings.json` and external runtime, with final
+source-pinned replay reported there rather than inferred from this source
+entry. No mutable runner or receipt is added to canonical math.
