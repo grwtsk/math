@@ -217,7 +217,7 @@ def localBit (j i : Fin 32) : ZMod 2 :=
   let theta : ℤ := rootLabel j
   let diff := (shortXInt i - theta) % (p : ℤ)
   let value := if diff = 0 then 3 * theta ^ 2 + shortA else diff
-  if Nat.powMod ((value % (p : ℤ)).toNat) ((p - 1) / 2) p = p - 1
+  if (((value % (p : ℤ)).toNat) ^ ((p - 1) / 2)) % p = p - 1
   then 1 else 0
 
 /-- Each bit is recomputed from an actual source coordinate, not accepted as
