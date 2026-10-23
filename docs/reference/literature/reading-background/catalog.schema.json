@@ -1440,6 +1440,13 @@
     },
     "idea_target_review_file": {
       "const": "unmatched-idea-followup.json"
+    },
+    "idea_target_review_followups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
     }
   },
   "required": [
