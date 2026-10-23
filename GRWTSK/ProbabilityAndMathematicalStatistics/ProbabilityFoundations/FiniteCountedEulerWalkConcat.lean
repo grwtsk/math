@@ -227,4 +227,41 @@ theorem FreshCountedTrail.spliceAtFactorization_used
     Finset.union_comm, Finset.union_left_comm]
 
 
+
+/-- Splicing a nonempty residual cycle at an explicit interior
+factorization strictly decreases the number of unused counted
+edge instances, with no assumptions on simple-graph labels. -/
+theorem FreshCountedTrail.spliceAtFactorization_strict
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used)
+    (hC : 0 < C.used.card) :
+    (Finset.univ \
+      (FreshCountedTrail.spliceAtFactorization P Q C
+        hPQ hPC hQC).used).card <
+      (Finset.univ \ (P.used ∪ Q.used)).card := by
+  classical
+  rw [FreshCountedTrail.spliceAtFactorization_used]
+  have hdisj : Disjoint (P.used ∪ Q.used) C.used :=
+    Finset.disjoint_union_left.mpr ⟨hPC, hQC⟩
+  have hcard :
+      ((P.used ∪ Q.used) ∪ C.used).card =
+        (P.used ∪ Q.used).card + C.used.card :=
+    Finset.card_union_of_disjoint hdisj
+  have hsub1 : P.used ∪ Q.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hsub2 : (P.used ∪ Q.used) ∪ C.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have ha := Finset.card_sdiff_add_card_eq_card hsub1
+  have hb := Finset.card_sdiff_add_card_eq_card hsub2
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
