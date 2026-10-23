@@ -59,7 +59,10 @@ theorem expPolynomial_error (q : ℂ) (r : ℝ) (K : ℕ)
   unfold expRemainder
   have hp : ‖q‖ ^ K ≤ r ^ K := pow_le_pow_left₀ (norm_nonneg q) hr K
   have hd := div_le_div_of_nonneg_right hp (show (0 : ℝ) ≤ K.factorial by positivity)
-  nlinarith
+  calc
+    ‖q‖ ^ K / ↑K.factorial * 2 ≤ r ^ K / ↑K.factorial * 2 :=
+      mul_le_mul_of_nonneg_right hd (by norm_num)
+    _ = 2 * r ^ K / ↑K.factorial := by ring
 
 /-- A small argument displacement has its own complete exponential error. -/
 theorem exp_difference_near (u v : ℂ) (d : ℝ)

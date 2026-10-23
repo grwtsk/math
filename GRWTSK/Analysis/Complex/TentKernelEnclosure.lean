@@ -85,7 +85,7 @@ theorem tentSensitivity_one_le (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
   have h2 (a b : ℝ) (ha0 : 0 < a) (hab : a ≤ b) :
       sensitivity a b 2 = (b - a) * Real.log b * b := by
     have hl := Real.log_le_log ha0 hab
-    simp [sensitivity, densityBound, max_eq_right hl, Real.exp_log (ha0.trans_le hab)]
+    norm_num [sensitivity, densityBound, max_eq_right hl, Real.exp_log (ha0.trans_le hab)]
   have he : tentSensitivity x h 1 = (2 * x - h) * Real.log x +
       2 * (x + h) * Real.log (x + h) := by
     unfold tentSensitivity
@@ -127,7 +127,7 @@ theorem endpoint_quotient_error (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
     have htri := (norm_add_le
       ((logPower (x + h) (c + 1) - B) - 2 * (logPower x (c + 1) - X))
       (logPower (x - h) (c + 1) - A)).trans
-        (add_le_add_right (norm_sub_le (logPower (x + h) (c + 1) - B)
+        (add_le_add_left (norm_sub_le (logPower (x + h) (c + 1) - B)
           (2 * (logPower x (c + 1) - X))) _)
     rw [norm_mul] at htri
     norm_num only [Complex.norm_ofNat] at htri
