@@ -952,7 +952,7 @@ can be inhabited.
 **Evidence:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED on all new
 Lean modules. Static GitHub readback is not a kernel proof. The detailed
 scope/nonclaim ledger is at
-[docs/mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md](../../../../mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md).
+[docs/mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md](../../../mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md).
 This reference entry is a mathematical provenance ledger, not a
 verification receipt or a source attribution for repository-authored identities.
 
@@ -1390,3 +1390,12 @@ frequency-dependent comparison remains
 the exact finite graph coboundary/adjoint algebra,
 not imported algebraic-geometric Hodge theory.
 
+
+
+**Pinned verification requests for this source group (all OPEN/PENDING):**
+[finite Farey Hodge/Ramanujan #1104](https://github.com/grwtsk/math/issues/1104),
+[CM/Goldfeld density #1105](https://github.com/grwtsk/math/issues/1105),
+[canonical Guth–Maynard / 3/4 zeta comparison #1106](https://github.com/grwtsk/math/issues/1106).
+All target the unchanged mathematical source blobs at immutable main
+commit 74a1937e01d7dc220e2c78d35a448b830afc3e0f; none is an actual
+compiler, kernel, or axiom-audit acceptance receipt.
