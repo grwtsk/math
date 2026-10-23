@@ -147,4 +147,48 @@ theorem FreshCountedTrail.used_degree_imbalance
           split_ifs <;> omega
 
 
+
+/-- At a terminal-maximal fresh trail, the UNUSED outgoing degree
+at the finish vertex is exactly zero. -/
+theorem FreshCountedTrail.unused_out_zero_of_maximal
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hmax : T.MaximalAtFinish) :
+    countedUsedOutDegree m c (Finset.univ \ T.used) finish = 0 := by
+  classical
+  unfold countedUsedOutDegree
+  apply Finset.card_eq_zero.mpr
+  apply Finset.eq_empty_iff_forall_not_mem.mpr
+  intro e he
+  have he' := Finset.mem_filter.mp he
+  have hused := hmax e he'.2
+  exact (Finset.mem_sdiff.mp he'.1).2 hused
+
+/-- If the full counted graph is balanced, then a terminal-maximal
+trail has zero or negative unused incoming degree at its finish
+according to the endpoint imbalance. This is the exact algebraic
+closure obstruction. -/
+theorem FreshCountedTrail.maximal_finish_imbalance
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (hmax : T.MaximalAtFinish) :
+    (if start = finish then (0 : ℤ) else 1) =
+      (countedUsedInDegree m c (Finset.univ \ T.used) finish : ℤ) := by
+  have htotal := hbalance finish
+  have hout := countedOutDegree_used_unused m c T.used finish
+  have hin := countedInDegree_used_unused m c T.used finish
+  have hzero := T.unused_out_zero_of_maximal hmax
+  have htrail := T.used_degree_imbalance finish
+  rw [hzero] at hout
+  by_cases heq : start = finish
+  · simp [heq] at htrail ⊢
+    omega
+  · have hneq : finish = finish := rfl
+    simp [heq, hneq] at htrail
+    omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
