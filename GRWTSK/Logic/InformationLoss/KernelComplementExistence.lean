@@ -4,6 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No root import.
 -/
 import GRWTSK.Logic.InformationLoss.KernelCoordinateCertificate
+import Mathlib.LinearAlgebra.Projection
 
 /-!
 # Kernel retraction from an explicit subspace complement
