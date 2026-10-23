@@ -4,13 +4,20 @@
 # No CI/workflow, dependency, or toolchain changes are made.
 set -euo pipefail
 EXPECTED_PARENT=5aa55f9366e1d02ebc0b764b691dece299b4697a
+EXPECTED_KERNEL_BLOB=debad508b11d0e349e4f9114a38fc66f67f32e71
 TARGET=GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean
 test -f "$TARGET"
+actual_blob=$(git hash-object "$TARGET")
+if [ "$actual_blob" != "$EXPECTED_KERNEL_BLOB" ]; then
+  echo "Kernel source differs from audited blob: $actual_blob" >&2
+  exit 1
+fi
 command -v lake >/dev/null
 command -v lean >/dev/null
 git merge-base --is-ancestor "$EXPECTED_PARENT" HEAD || { echo 'Pinned parent is not an ancestor' >&2; exit 1; }
 printf 'HEAD: '; git rev-parse HEAD
 printf 'Working tree status:\n'; git status --short
+printf 'Kernel blob: %s\n' "$actual_blob"
 # Build the module first: a plain lean invocation does not produce the .olean
 # required by the subsequent independent import-and-axioms inspection.
 lake build GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
