@@ -1,0 +1,191 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "height-fifteen-seed-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.HeightFifteenSeedCore"
+build_target = "GRWTSK.Interfaces.HeightFifteenSeedCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "224a103d93f264fb5282408599b3f9584ef49924"
+parent_tree = "22386dc809d0c7487354283e50265ffccd06d126"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/integer-square-witness-v0.1.toml"
+inherited_target_blob = "3e9d2f8792d487047dec5876936f700f663ace54"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Closed unexecuted seed and leaf proof scripts only. All 38 original contour block equalities remain open."
+receipt_policy = "This is not permission to execute, a compiler qualification or an acceptance receipt. Bind review to exact published head."
+inventory_policy = "Selected modules are not the complete closure. Retain all predecessor declarations, exact types, generated members and transitive trust obligations."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerSeedWindows.lean"
+source_git_blob = "b3fdcc136b5f4b38704ba4eacdf411c2af490e38"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.FloorWindow", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.CeilWindow", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.floor_eq_of_window", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.ceil_eq_of_window", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.down_eq_of_window", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.up_eq_of_window", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.rounded_eq_of_windows", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.roundBall_eq_of_windows", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.initial_eq_of_windows", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.floor_upper_reject", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.ceil_lower_reject", "GRWTSK.Analysis.ErrorBounds.IntegerSeedWindows.negative_floor_window"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.HeightFifteenSeedCore"
+path = "GRWTSK/Interfaces/HeightFifteenSeedCore.lean"
+source_git_blob = "014286915a15bc3a28bbb0a219e12699a064fd68"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenSeedBinding"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenSeedBinding.lean"
+source_git_blob = "8a78c5d2b625015d12eb5006f914bea97a4185fc"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.scaledExponent", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seedValue", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.scaled_exponent_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_real_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_imag_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_error_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_binding", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.source_ready", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.outputBall", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.finish_error_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.finish_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.leaf_checked", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.original_evaluator_checked", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.power_enclosed", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.radius_bound", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.requested_tolerance_checked", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_without_tail_rejected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.seed_smaller_error_rejected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedBinding.final_error_strictly_above_square_error"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenSeedLog"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenSeedLog.lean"
+source_git_blob = "93ebc5420658835acf9568d679283d58ae94a86b"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.rawLog", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.logState", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.logValue", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.raw_log_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.log_real_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.log_imag_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.log_radius_window", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.logBall_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.exponentValue", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.exponent_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.scale_checked", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.source_guard", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.actual_log_enclosure", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSeedLog.log_radius_positive"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower"
+path = "GRWTSK/Analysis/ErrorBounds/CheckedIntegerPower.lean"
+source_git_blob = "29ef6faab491175b757e438f93491a3d3b888383"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerSquareWitness.lean"
+source_git_blob = "83e955b0362a3b6da3aecb8557f567c7b277b55c"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerExpStateFold.lean"
+source_git_blob = "50eb000d423f6dc98f6d23283224eea7723ab1fa"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerDyadicSquare.lean"
+source_git_blob = "88393cd866786e8aec8c4bf08da552b93a2a8fc9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhLog.lean"
+source_git_blob = "43b6919419d396701f20f08e2a79a2840089e8f3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpStateFold"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpStateFold.lean"
+source_git_blob = "fd205decec0654eef4b48303e0809bc67de4c391"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalPowerValue"
+path = "GRWTSK/Analysis/ErrorBounds/RationalPowerValue.lean"
+source_git_blob = "ad45930024f7bb7739e051ed972cb5c59c7ca918"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenSquareWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenSquareWitness.lean"
+source_git_blob = "f30d4281bff80fee583b1bb52f823572c67adde8"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenJetCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenJetCandidate.lean"
+source_git_blob = "e136351169c1e027d2b4846156355194758529de"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.IntegerWitnessCore"
+path = "GRWTSK/Interfaces/IntegerWitnessCore.lean"
+source_git_blob = "3fa326c449681623607fe508d66e76e297ec1da3"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/Order/Floor/Ring.lean"
+source_git_blob = "49904a0d6ade8e3aebc797af08da6521ff1b9b5b"
+required_declarations = ["Int.floor_eq_iff", "Int.ceil_eq_iff"]
+
+[[controls]]
+id = "SEED01"
+obligation = "Signed floor and ceiling windows preserve both strict endpoint conventions."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED02"
+obligation = "Raw logarithm is the actual finite atanh sum with FOUR log-two remainders and exact mantissa one."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED03"
+obligation = "Log rounding includes its full center displacement and nonzero error."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED04"
+obligation = "Exponent derives from the literal source center and the computed logarithm, not witness metadata."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED05"
+obligation = "Exact 16-term polynomial retains factorials and original operation semantics; no per-term rounding."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED06"
+obligation = "Seed floors and error ceiling include both coordinate displacements AND the full Taylor tail."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED07"
+obligation = "The old SeedBinding and SourceReady are supplied by closed source scripts without hypotheses, but remain unexecuted."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED08"
+obligation = "All seven original transitions, every row and the exact terminal state remain inherited obligations."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED09"
+obligation = "Final inverse-power radius charges original-log sensitivity exactly once and differs from the square radius."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED10"
+obligation = "Old evaluator equality and original complex-power semantics retain all original guards."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED11"
+obligation = "One leaf meeting tolerance is not whole-cell, block, contour, count or zero certification."
+status = "NOT_RUN"
+
+[[controls]]
+id = "SEED12"
+obligation = "Full predecessor closure, generated declarations, exact types, large finite reductions and independent axiom/native review remain required."
+status = "NOT_RUN"

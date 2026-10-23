@@ -1,0 +1,176 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "height-fifteen-direct-quarters-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.HeightFifteenDirectQuarterCore"
+build_target = "GRWTSK.Interfaces.HeightFifteenDirectQuarterCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "ecdf7163bd8d1256504e188b12948fafac0078c7"
+parent_tree = "fed700618dfd1283b3671bbbb6072d94d88f575e"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/height-fifteen-direct-halves-v0.1.toml"
+inherited_target_blob = "6c2e97b77356ffa21b5fdaba777bd9929aaffb75"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "One hundred fifty smaller direct decisions and exact range/sum composition only; no Lean acceptance or count receipt."
+receipt_policy = "Bind any future replay to the exact published head. Python reports are not proof receipts."
+inventory_policy = "The selected declaration catalog is intentionally representative, not exhaustive; source scans must reconcile all 150 local theorem names and the full transitive closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterBlocks"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectQuarterBlocks.lean"
+source_git_blob = "cc50070bb1c9d737163d15f532a0bf5596328f36"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterBlocks.quarterWidths", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterBlocks.quarterExpected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterBlocks.quarterWidths_shape", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterBlocks.quarterExpected_shape", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterBlocks.QuarterObligations"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsA"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectQuarterClaimsA.lean"
+source_git_blob = "46685a6ceca4f0dd9fd8753193ba9a14a6461a24"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter000", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter017", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter049"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsB"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectQuarterClaimsB.lean"
+source_git_blob = "db169573da590508c42e9e56f2d9c0b6f38da139"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter050", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter099"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClaimsC"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectQuarterClaimsC.lean"
+source_git_blob = "f5c280fab7f9fce6769ecc8bddf9441320222bc3"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter100", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter148", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClaims.quarter149"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterClosure"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectQuarterClosure.lean"
+source_git_blob = "d15013c64d694e46a69c447a190d335399a8e5a6"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.quarter_obligations", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.quarter_ranges", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.positive_half", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.positive_block", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.original_success", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.canonical_result", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.regional_count_one", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterClosure.complete_pair"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectQuarterControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectQuarterControls.lean"
+source_git_blob = "d1f0cd3d59781285b44f3a509c038337ba38d3f4"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.quarter17_zero_rejected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.quarter00_one_rejected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.final_three_present", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.exact_exhaustion", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.none_ne_successful_zero", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.positive_half_exact", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.positive_block_exact", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectQuarterControls.claim_sum_one"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.HeightFifteenDirectQuarterCore"
+path = "GRWTSK/Interfaces/HeightFifteenDirectQuarterCore.lean"
+source_git_blob = "80050a9c0df23709f7d2f04c3a9a3a44ef2fe9e8"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.CheckedChunkComposition"
+path = "GRWTSK/Algebra/BigOperators/CheckedChunkComposition.lean"
+source_git_blob = "8eae4999d9eb3f5b12531bf65aae64e0978471cf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfBlocks"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectHalfBlocks.lean"
+source_git_blob = "e63297d9476eab080c9b87b9f153794b01b88b89"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenBlockDecomposition"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenBlockDecomposition.lean"
+source_git_blob = "072d13cdf1f4e44eecdb5e8e4e5a610f9b2391c2"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenCanonicalJets"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenCanonicalJets.lean"
+source_git_blob = "23c5bf817bd96b28e829fad2b10b62b3ce45aa74"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks"
+path = "GRWTSK/Algebra/BigOperators/CheckedContiguousBlocks.lean"
+source_git_blob = "bcb64230852237611b3cf1f20e526e636fd28648"
+required_declarations = []
+
+[[controls]]
+id = "quarter-partition"
+requirement = "Retain 148 widths of 16 followed by 8 and 3, exhausting exactly 2379 cells."
+status = "NOT_RUN"
+
+[[controls]]
+id = "quarter-claims"
+requirement = "Retain only quarter index 17 as +1 and every other quarter as zero."
+status = "NOT_RUN"
+
+[[controls]]
+id = "direct-predicate"
+requirement = "Use the unchanged directTest and directTerm; do not evaluate canonical packet expansion inside local decisions."
+status = "NOT_RUN"
+
+[[controls]]
+id = "pieces-coverage"
+requirement = "Compose all 150 exact claims through Pieces, preserving every local predicate and signed total."
+status = "NOT_RUN"
+
+[[controls]]
+id = "separate-reductions"
+requirement = "Elaborate all 150 local by-decide scripts independently; no cancellation-only acceptance."
+status = "NOT_RUN"
+
+[[controls]]
+id = "final-three"
+requirement = "Keep cells 2376..2378 as a separate accepted local equality."
+status = "NOT_RUN"
+
+[[controls]]
+id = "none-versus-zero"
+requirement = "Preserve none distinct from some 0."
+status = "NOT_RUN"
+
+[[controls]]
+id = "signed-result"
+requirement = "Keep reverse orientation negative; never coerce through absolute value or Nat."
+status = "NOT_RUN"
+
+[[controls]]
+id = "old-success"
+requirement = "Conclude exactly the unchanged HeightFifteenJetCandidate.Success proposition."
+status = "NOT_RUN"
+
+[[controls]]
+id = "count-consumer"
+requirement = "Use only the inherited same-region analytic-multiplicity count bridge."
+status = "NOT_RUN"
+
+[[controls]]
+id = "resource-evidence"
+requirement = "Report actual elaboration/reduction resource behavior; source scripts alone are not evidence."
+status = "NOT_RUN"
+
+[[controls]]
+id = "module-isolation"
+requirement = "Replay the three fifty-claim modules independently before composing them."
+status = "NOT_RUN"
+
+[[controls]]
+id = "transitive-trust"
+requirement = "Audit exact types, generated declarations, imports, axioms, and native dependencies."
+status = "NOT_RUN"
+
+[[controls]]
+id = "external-boundary"
+requirement = "Do not treat Python reports, hashes, or stored PASS labels as Lean proof or execution authority."
+status = "NOT_RUN"

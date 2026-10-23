@@ -1,0 +1,84 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "endpoint-corrected-newton-candidate-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.EndpointCorrectedNewtonCandidateCore"
+build_target = "GRWTSK.Interfaces.EndpointCorrectedNewtonCandidateCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "970b96a393b9539520adcf1dfd12088124ae9bf1"
+parent_tree = "8318a52f640c990313a6bab90fd840d960ac2731"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/cauchy-newton-source-v0.1.toml"
+inherited_target_blob = "a6ffea75e858a8eb15fe6e6d7cbe360decfadfef"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+center_estimates_status = "WRITTEN_RESEARCH_AND_RATIONAL_PROTOTYPE_ONLY / UNPROVED_IN_LEAN"
+receipt_policy = "Publication is not acceptance. Bind future replay externally to the exact source."
+inventory_policy = "Every predecessor declaration, control, generated type and full transitive import/axiom obligation persists. The conditional theorem must retain actual CenterEstimates; a numerical file is not its proof."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCorrectedNewtonCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCorrectedNewtonCandidate.lean"
+source_git_blob = "30a62f486d9a440c0a77058bb4ad653eadaa3295"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.center", "GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.innerRadius", "GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.outerRadius", "GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.centerData", "GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.quantitative_guard", "GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.strict_scalar_margins", "GRWTSK.RiemannHypothesis.Checks.EndpointCorrectedNewtonCandidate.unique_point_of_centerEstimates"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointCorrectedNewtonCandidateCore"
+path = "GRWTSK/Interfaces/EndpointCorrectedNewtonCandidateCore.lean"
+source_git_blob = "bfdfbd33fce6afbd856f480f285ce72dd1d2e75a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.CauchyNewtonSourceCore"
+path = "GRWTSK/Interfaces/CauchyNewtonSourceCore.lean"
+source_git_blob = "04f6e10063beba2ccd2c1c8b120649a0a9ec9888"
+required_declarations = []
+
+[[controls]]
+id = "CENTER_ESTIMATES_NOT_ERASED"
+description = "Inspect final type: actual-zeta value and derivative enclosures remain a proof premise."
+
+[[controls]]
+id = "SAME_LITERAL_CENTER"
+description = "No ordinal zero claim; center, both radii, value, derivative, and error constants must match."
+
+[[controls]]
+id = "ALL_TERMS_AND_ENDPOINTS"
+description = "For future EM refinement, use all 81 terms and the minus half endpoint for an inclusive cutoff."
+
+[[controls]]
+id = "BERNOULLI_REMAINDER"
+description = "Written remainder and coefficient bound are not newly proved Lean declarations."
+
+[[controls]]
+id = "FULL_DISK_NOT_PROBES"
+description = "Cauchy derivative error needs actual analytic uniformity, not sampled circle values."
+
+[[controls]]
+id = "SEPARATE_FINITE_ARITHMETIC"
+description = "The atanh and rounded-radius prototype is not the existing reciprocal-grid or exact-radius checker."
+
+[[controls]]
+id = "NO_SOURCE_CLAIM_FROM_GUARD"
+description = "quantitative_guard can be checked without establishing actual CenterEstimates."
+
+[[controls]]
+id = "INDEPENDENT_COMPLETE_COUNT"
+description = "One local candidate supplies neither count, ordinal position, completeness nor prime margins."
