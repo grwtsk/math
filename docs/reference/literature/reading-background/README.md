@@ -74,3 +74,5 @@ Latest assessment of the 70 historically unresolved ideas: [taxonomy-organized p
 Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.
 
 Next implementation pass: [local order detection, finite local products, residual readouts and rate separation by taxonomy](obligation-implementation-progress-v2.md). Four obligations remain completed; seven have verified partial results; 25 remain unresolved.
+
+Next implementation pass: [rank-one Hecke, finite variance and convergent local products by taxonomy](obligation-implementation-progress-v3.md). Four optional/corrective obligations completed; ten verified partial results; 22 unresolved obligations.
