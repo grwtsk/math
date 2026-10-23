@@ -136,4 +136,38 @@ theorem CountedWalk.chronologicalVertices_length
       omega
 
 
+
+/-- The chronological vertex trace begins at the actual initial
+vertex of the directed walk, even when the edge list is empty. -/
+theorem CountedWalk.chronologicalVertices_head
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalVertices.head? = some a := by
+  induction T with
+  | empty v => rfl
+  | append T e he ih =>
+      rw [CountedWalk.append_chronologicalVertices]
+      have hne : T.chronologicalVertices ≠ [] := by
+        intro h
+        have hlen := T.chronologicalVertices_length
+        rw [h] at hlen
+        simp at hlen
+      simpa [List.head?_append, hne] using ih
+
+/-- The chronological vertex trace ends at the actual terminal
+vertex. The final seam of a closed trail is obtained by combining
+this with the initial-vertex theorem. -/
+theorem CountedWalk.chronologicalVertices_last
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalVertices.getLast? = some b := by
+  cases T with
+  | empty v => rfl
+  | append T e he =>
+      rw [CountedWalk.append_chronologicalVertices]
+      simp
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
