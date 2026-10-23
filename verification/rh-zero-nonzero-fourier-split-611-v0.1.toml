@@ -1,0 +1,172 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-nonzero-fourier-split-611-v0.1"
+owner_repository = "grwtsk/math"
+issue = 611
+parent_issue = 607
+parent_pr = 608
+natural_scale_issue = 586
+natural_scale_pr = 588
+boundary_mertens_issue = 609
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ZERO_MODE_MERTENS_SUPPLIER_OPEN_NONZERO_FREQUENCY_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ParityFourierZeroNonzeroSplit"
+companion_module = "GRWTSK.NumberTheory.Moebius.ParityFourierZeroNonzeroConnections"
+build_target = "GRWTSK.NumberTheory.Moebius.ParityFourierZeroNonzeroSplit"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-parity-midpoint-factorization-607-20261021"
+stacked_parent_revision = "62bef837f806e425d2fcbc80ba33718ca6c68a41"
+stacked_parent_tree = "da5444f513489f27b4295292f4a529548d42562e"
+candidate_branch = "research/rh-zero-nonzero-fourier-split-611-20261021"
+split_source_path = "GRWTSK/NumberTheory/Moebius/ParityFourierZeroNonzeroSplit.lean"
+split_source_commit = "fb366810ee7696cc728236998a08f499d163de06"
+split_source_git_blob = "7ca9fc590373af970c249f716c6b6ad1fab1e0e6"
+connection_source_path = "GRWTSK/NumberTheory/Moebius/ParityFourierZeroNonzeroConnections.lean"
+connection_source_commit = "ca2bd98914088151d4e7b4444eb824745e902e6a"
+connection_source_git_blob = "43e55d869a081455f6dadca32181122418999e17"
+mathematical_note_commit = "9294a1e441fb220b226ded3ed72d3f0834e0380c"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/parity-fourier-zero-nonzero-connections.md"
+
+[exact_split]
+zero_frequency = "k=0 in ZMod(d*d)"
+nonzero_frequency_set = "nonzeroSquareModulusFrequencySet"
+zero_endpoint_majorant = "parityFourierZeroModeEndpointMajorant"
+nonzero_endpoint_majorant = "parityFourierNonzeroFrequencyEndpointMajorant"
+split_theorem = "parityFourierEndpointMajorant_eq_zero_add_nonzero"
+proof_classification = "EXACT_FINITE_FREQUENCY_DECOMPOSITION"
+
+[zero_mode]
+parity_mertens = "parityMertensPrefix"
+parity_squarefree_diagonal = "paritySquarefreeDiagonal"
+fourier_sum_zero = "parityOnePointMobiusFourierSum_zero"
+fourier_diagonal_zero = "parityOnePointMobiusFourierDiagonal_zero"
+zero_quadratic_majorant = "parityFourierZeroModeQuadraticMajorant"
+reciprocal_square_mass = "effectiveSquareModulusReciprocalMass"
+reciprocal_square_mass_bound = "effectiveSquareModulusReciprocalMass_le_two"
+squarefree_nonnegative = "paritySquarefreeDiagonal_nonneg"
+squarefree_trivial_bound = "paritySquarefreeDiagonal_le_endpoint"
+supplier = "DyadicParityMertensSquareRootEnergy"
+zero_budget = "DyadicNaturalScaleZeroModeParityFourierBudget"
+conditional_transport = "zeroModeParityFourierBudget_of_parityMertensSquareRootEnergy"
+supplier_constructed = false
+
+[ordinary_mertens_relation]
+ordinary_prefix = "ordinaryMertensPrefix"
+parity_decomposition = "ordinaryMertensPrefix_eq_even_add_odd"
+ordinary_energy = "DyadicOrdinaryMertensSquareRootEnergy"
+parity_to_ordinary = "ordinaryMertensSquareRootEnergy_of_parity"
+converse_proved = false
+rh_transport_proved = false
+
+[nonzero_mode]
+supplier = "DyadicNaturalScaleNonzeroParityFourierBudget"
+supplier_constructed = false
+contains_zero_frequency = false
+square_modulus_preserved = true
+parity_restriction_preserved = true
+natural_scale_endpoint_normalization = true
+
+[recombination]
+full_budget = "DyadicNaturalScaleParityFourierQuadraticBudget"
+zero_plus_nonzero_to_full = "parityFourierQuadraticBudget_of_zero_and_nonzero"
+to_natural_scale_congruence_l1 = "naturalScaleCongruenceL1_of_zero_and_nonzero"
+mertens_plus_nonzero_to_natural_scale = "naturalScaleCongruenceL1_of_parityMertens_and_nonzero"
+
+[zero_mode_connection_atlas]
+generic_adapter = "ParityFourierZeroNonzeroConnections.ToParityMertensSquareRootEnergyAdapter"
+mertens_square_root = "ParityFourierZeroNonzeroConnections.MertensSquareRootEnvelopeData"
+half_damping_153 = "ParityFourierZeroNonzeroConnections.HalfDampingMertensData"
+power_envelope_154 = "ParityFourierZeroNonzeroConnections.MertensPowerEnvelopeData"
+weak_mertens = "ParityFourierZeroNonzeroConnections.WeakMertensQuadraticData"
+gonek_hejhal = "ParityFourierZeroNonzeroConnections.GonekHejhalMertensData"
+boundary_mertens_609 = "ParityFourierZeroNonzeroConnections.BoundaryMertensSquareEnergyData"
+ordinary_to_parity_boundary = "ParityFourierZeroNonzeroConnections.OrdinaryToParityMertensAdapter"
+ordinary_mertens_to_rh_boundary = "ParityFourierZeroNonzeroConnections.OrdinaryMertensToRHAdapter"
+named_adapter_values_constructed = false
+
+[nonzero_connection_atlas]
+generic_adapter = "ParityFourierZeroNonzeroConnections.ToNonzeroParityFourierBudgetAdapter"
+local_fourier_gowers = "ParityFourierZeroNonzeroConnections.LocalFourierGowersNonzeroData"
+square_modulus_large_sieve = "ParityFourierZeroNonzeroConnections.SquareModulusLargeSieveData"
+bombieri_vinogradov = "ParityFourierZeroNonzeroConnections.BombieriVinogradovNonzeroData"
+nilsequence = "ParityFourierZeroNonzeroConnections.NilsequenceNonzeroData"
+l_function_restriction = "ParityFourierZeroNonzeroConnections.LFunctionRestrictionNonzeroData"
+function_field = "ParityFourierZeroNonzeroConnections.FunctionFieldNonzeroData"
+pointwise_to_mean_square_boundary = "ParityFourierZeroNonzeroConnections.PointwiseToMeanSquareFourierAdapter"
+averaged_to_required_endpoint_boundary = "ParityFourierZeroNonzeroConnections.AveragedToRequiredEndpointBudgetAdapter"
+named_adapter_values_constructed = false
+
+[scope_controls]
+beta_below_five_sixths_not_promoted_to_square_root_zero_mode = true
+ordinary_mertens_not_promoted_to_parity_mertens = true
+weak_mertens_not_promoted_without_localization = true
+gonek_hejhal_not_promoted_without_explicit_formula_localization = true
+boundary_mertens_energy_not_promoted_without_comparison = true
+pointwise_fourier_not_promoted_to_mean_square = true
+averaged_endpoint_control_not_promoted_to_required_budget = true
+l_function_zero_free_not_promoted_to_nonzero_frequency_budget = true
+function_field_not_promoted_to_integer = true
+
+[evidence_states]
+source_draft = true
+exact_zero_nonzero_frequency_split_scripted = true
+zero_mode_identified_with_parity_mertens = true
+parity_to_ordinary_mertens_energy_scripted = true
+zero_mode_conditional_reduction_scripted = true
+connection_atlas_source_draft = true
+parity_mertens_square_root_energy_proved = false
+nonzero_frequency_budget_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParityFourierZeroNonzeroSplit"
+definition_count = 12
+theorem_script_count = 13
+authored_declaration_count = 25
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParityFourierZeroNonzeroConnections"
+definition_count = 12
+theorem_script_count = 3
+structure_count = 18
+authored_declaration_count = 33
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/AdditiveTwistParityFourierFactorization.lean"
+git_blob = "9633aeec04aa09b1bb685450589212e32de6334b"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_608"
+
+[[dependencies]]
+source = "Mathlib.Analysis.PSeries"
+declaration = "sum_Ioc_inv_sq_le_sub"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_parity_mertens_square_root_supplier = true
+construct_nonzero_frequency_supplier = true
+construct_named_mertens_localization_adapter = true
+construct_square_modulus_large_sieve_or_local_fourier_adapter = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+parity_mertens_square_root_energy_proved = false
+weak_mertens_adapter_proved = false
+gonek_hejhal_adapter_proved = false
+large_sieve_adapter_proved = false
+local_fourier_adapter_proved = false
+l_function_adapter_proved = false
+ordinary_mertens_to_rh_adapter_proved = false
+riemann_hypothesis_proved = false
