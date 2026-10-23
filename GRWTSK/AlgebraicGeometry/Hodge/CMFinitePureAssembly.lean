@@ -654,10 +654,16 @@ theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
       (CMFiniteCanonicalPairedAssembly E).comp
         (CMFiniteFourPairedCoefficientConjugate E σ) := by
     ext a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-    simpa only [LinearMap.comp_apply, CMFiniteFourPairedPure,
-      CMFiniteFourPairedCoefficientConjugate_pure] using
-      CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
-        E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    change
+      GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+        (CMFiniteCanonicalPairedAssembly E
+          (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)) =
+      CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedCoefficientConjugate E σ
+          (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄))
+    rw [CMFiniteFourPairedCoefficientConjugate_pure]
+    exact CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+      E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
   exact congrArg (fun f => f t) h
 
 end
