@@ -1,0 +1,292 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-trace-iterate-cutoff-661-v0.1"
+owner_repository = "grwtsk/math"
+issue = 661
+related_issues = [653, 649, 628, 121, 168, 453, 516, 100, 15]
+route_id = "FINITE_SELBERG_SHAPED_ITERATE_ALIAS_CUTOFF"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket"
+build_target = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/finite-holonomy-alias-653-20261022"
+review_parent_revision = "6ce062764afff69749e69888830096d5e3b17897"
+review_parent_module_git_blob = "4e74242dceb742c168636e9c7c80ea1ffa06f88d"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Analysis/Fourier/FiniteTraceIteratePacket.lean"
+new_module_git_blob = "0b95f35524b4b297e7d80328528fb65641f12232"
+new_module_namespace = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket"
+mathematical_note_path = "docs/mathematics/Analysis/Fourier/finite-trace-iterate-cutoff.md"
+mathematical_note_git_blob = "d329534c4ded828d372c6844a07691c82f1c2f3b"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+actual_geodesic_source_bound = false
+selberg_trace_formula_formalized = false
+primitive_geodesic_complete_enumeration = false
+infinite_tail_estimated = false
+wp_integration_formalized = false
+gue_number_variance_proved = false
+sofic_operator_limit_proved = false
+liouville_chowla_proved = false
+rh_supplier_closed = false
+positive_primitive_length_required = true
+zero_iteration_excluded = true
+zero_iteration_cutoff_supported = true
+empty_source_family_supported = true
+positive_modulus_required = true
+finite_two_error_theorem = true
+mathematical_statement = "Selected finite trace-shaped primitive/iterate source packet with explicit alias and omitted-iterate L1 error"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket"
+authored_declaration_count = 22
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Analysis.Fourier.FiniteHolonomyAliasing"]
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.TraceShapedInput"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.iterateSources"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.iterateHomology"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.traceShapeWeight"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.tracePacket"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.iterateHomology_add"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.iterateHomology_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.traceShape_denominator_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.mem_iterateSources_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.iterateSources_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.iterateSources_mono"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.torsionProjection_eq_trace_double_sum"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.omittedSources"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.omittedIntegral"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.omittedMass"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.integralProjection_large_eq_small_add_omitted"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.omittedIntegral_norm_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.finite_trace_cutoff_alias_error"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.traceShapeWeight_zero_of_fourier_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.omittedMass_zero_of_fourier_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.finite_trace_cutoff_error_of_fourier_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteTraceIteratePacket.tracePacket_zero_sources"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-zero-modulus"
+requirement = "q=0 cannot be supplied to the canonical character average; q=1 remains a legal finite case."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-zero-iterate"
+requirement = "Only 1<=n<=K terms are selected; n=0 is not a primitive iterate term."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-cutoff-empty"
+requirement = "K=0 produces an empty term family and never an n=0 term."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-primitive-family"
+requirement = "An empty candidate set contributes no terms at any finite K."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "orientation-identity"
+requirement = "Oppositely oriented primitive sources must retain distinct IDs where the upstream geometry distinguishes them."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "primitive-vs-power"
+requirement = "The pair (candidate,n) preserves primitive source identity and positive repeat number, not an undifferentiated closed loop."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "duplicate-homology"
+requirement = "Distinct candidate IDs with the same integral homology remain separate weighted terms."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "signed-homology"
+requirement = "Iterated homology is signed integer multiplication n*h(gamma); no cast to untracked unsigned or mod-q coordinates."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-length"
+requirement = "Selected primitive candidates require a proved real positive length, not arbitrary input lacking the positivity field."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonzero-denominator"
+requirement = "The 2*sinh(n*length/2) denominator is only shown nonzero for selected positive iterates and positive lengths."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "correct-selberg-shape"
+requirement = "Do not omit length numerator, factor 2, hyperbolic sine, test Fourier scaling or introduce an unsupported 1/n."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fourier-normalization"
+requirement = "The supplied Fourier test is not identified with a differently normalized transform without an adapter."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-character-normalization"
+requirement = "The q-ary character mean imports its q^(-m) normalization exactly from parent #649."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "monotone-cutoff"
+requirement = "Source containment depends on K<=M; do not silently upgrade an inverted cutoff."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-omitted-terms"
+requirement = "Every source in S_M minus S_K contributes to the independent finite truncation budget."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-error-conflation"
+requirement = "Alias mass at K and omitted L1 mass between K and M are different additive error coordinates."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-free-tail-vanishing"
+requirement = "OmittedMass may vanish only after pointwise zero Fourier test premises or a separately proved bound."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "support-vs-infinite-trace"
+requirement = "Compact Fourier support alone, without a complete actual geodesic source enumeration, does not prove an infinite Selberg trace tail is zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-geodesic-certification"
+requirement = "A candidate type does not certify real primitive hyperbolic geodesics, marking, orientation or length identities."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-selberg-proof"
+requirement = "The finite double sum is not an admitted Selberg trace formula or spectral trace equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-wp-rmt"
+requirement = "No Weil-Petersson integration, Mirzakhani volume, large-genus GOE/GUE number variance or microscopic sine-kernel law is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-arithmetic-rh"
+requirement = "No Chowla, growing-shift Mobius estimate, zeta-zero identification or RH theorem follows from finite trace-shaped data."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-execution"
+requirement = "No Lean/Lake build, native VM, cache, workflow, executor or F06 action is authorized by this passive manifest."
+status = "NOT_RUN"
+
