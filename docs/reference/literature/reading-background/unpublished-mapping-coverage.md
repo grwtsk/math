@@ -1,5 +1,7 @@
 # Unpublished research: source-to-code coverage
 
+Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
 Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
 
 Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
