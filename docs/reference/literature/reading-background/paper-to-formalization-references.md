@@ -3873,6 +3873,11 @@ new Riesz/Möbius sources and later literature increments are outside this claim
 
 ## Case FAREY-SHIFT-DUAL-20261023 — genuine Farey dual shift cocycle and periodic-data obstruction
 
+Subsequent local verification: **FAREY-SHIFT-VALIDATION-20261023** below
+records the exact repaired source blobs, successful strict compilation and fresh
+trust-zero transitive audit. Earlier NOT_RUN observations here describe the
+source-authoring run; analytic and dynamical missing bridges remain unresolved.
+
 **Original paper identities, versions and theorem locators.**
 
 1. **Boris Kalinin**, *Livšic Theorem for matrix cocycles*,
@@ -4644,3 +4649,108 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 **Signed local order:** complex functions with actual punctured factorizations and integer orders k,l, allowing zeros and poles. The product factorization is algebraic; its scaled −logDeriv coefficient additionally requires analytic units nonzero at the center. The unit-multiplier specialization requires the actual extra factor analytic and nonzero at that same point. No residue of the original completed function, global divisor equality, infinite contour identity, completed-source supplier or critical-line result is asserted.
 
 Still missing are the prime roadmap’s source binding and arithmetic estimate; the boundary outline’s geometry, actual localization, zero-to-class realization and same-sheaf vanishing; exceptional-group representations/automorphic transfers and all source-specific global factors; the KL geometric positivity and signed analytic realization; and the status note’s exact January-version binding, arithmetic sequences and noncircular replacement for RH/GRH premises. Conditional fragments do not discharge these suppliers.
+
+## Case FAREY-SHIFT-VALIDATION-20261023 — checked dual ordering and periodic obstruction
+
+**Publication and relationship.** Boris Kalinin, *Livšic Theorem for matrix
+cocycles*, Annals of Mathematics 173 (2011), issue 2, pp. 1025–1042,
+[DOI:10.4007/annals.2011.173.2.11](https://doi.org/10.4007/annals.2011.173.2.11),
+[official journal record](https://annals.math.princeton.edu/2011/173-2/p11).
+The official record was checked in this validation run. Its stated sufficient
+direction uses a hyperbolic dynamical system, Hölder GL(m,ℝ) cocycle and trivial
+products at every periodic point to obtain a Hölder transfer map. The local
+`PeriodicCocycleData` proves only the elementary **necessary** periodic consistency
+and gauge-conjugacy direction for any group and any base self-map. The paper's
+full hypotheses, sufficiency proof, regularity and GL(m,ℝ) realization are not
+imported or discharged by the finite SL₂(F₃) example.
+
+The Farey full-shift construction is 2026 repository-derived mathematics with
+source-credited direction by grwtsk contributors and OpenAI formalization assistance.
+A separate external paper theorem for this exact finite Farey construction is
+not established. The existing Sturmian/Sarnak paper comparisons retain their
+metadata and remain analogies/unresolved applications, not proof suppliers.
+No historical influence is inferred from the common cocycle language.
+
+**Exact methods, declarations and hypotheses.**
+
+- `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.shift_iterate_apply`,
+  `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.chronological_farey_frame`,
+  `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.dualCocycle_sourceMatrix`:
+  on the one-sided full schedule ω:ℕ→Turn, the source Farey word is chronological
+  right multiplication. The maintained cocycle product is newest-factor-left.
+  Taking the **transpose** shear in the genuine Mathlib SL₂(F₃) group gives the
+  exact product identity Pₙ(ω)=M(prefixₙ(ω))ᵀ for every finite prefix. No order
+  reversal or frame/column identification is suppressed.
+- `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.repeatLR_shift_period_two`,
+  `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.repeatLR_monodromy_ne_one`,
+  `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.fullShift_no_pure_coboundary`,
+  `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.fullShift_no_gauge_trivializes_LR`:
+  the literal repeating LR point belongs to this full shift and has nonidentity
+  dual monodromy. It obstructs a global pure coboundary and any gauge trivializing
+  that closed product on this specified carrier; it is not assumed to belong
+  to a separate irrational Sturmian orbit closure.
+- `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.periodic_source_word_not_coboundary`
+  and `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.periodic_source_word_resists_gauge`:
+  the generalized obstruction explicitly requires shift^[n]ω=ω and a nonidentity
+  source word. Gauge is arbitrary group-valued data; no norm bound is needed for
+  this necessary obstruction.
+- `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.sturmian_source_dual_product`:
+  the declared left=1/right=0 schedule uses the maintained Sturmian bit function.
+  Its finite product identity is unconditional in α,ξ,n, but does not prove
+  irrationality, nonperiodicity, periodic-point membership, spectral limits or
+  a topological identification of the two dynamical carriers.
+- `GRWTSK.LinearAlgebra.PeriodicCocycleData.pureCoboundary_periodic_identity`,
+  `GRWTSK.LinearAlgebra.PeriodicCocycleData.periodic_gauge_product_one_iff`,
+  `GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct_gauge`:
+  for arbitrary group G and self-map T, pure-coboundary products telescope;
+  at an explicitly closed orbit the existing gauge changes the product by one
+  basepoint conjugation. No existence or Hölder-regularity theorem for a transfer
+  map is inferred.
+
+**Source commit and blobs.** At repair commit
+[`eb83f984a195d037bc87a5b5e569f7e9a5f4af16`](https://github.com/grwtsk/math/commit/eb83f984a195d037bc87a5b5e569f7e9a5f4af16),
+the audited local dependency closure comprises seventeen source files:
+
+| Fully qualified module | Git blob |
+|---|---|
+| `GRWTSK.NumberTheory.Farey.FareyShiftCocycle` | `92433f1bb30280a419aa7f872365e86103a9f659` |
+| `GRWTSK.LinearAlgebra.PeriodicCocycleData` | `11ca2a896e8844dcb483ce9c910c1bb07ae857e1` |
+| `GRWTSK.LinearAlgebra.CocycleProduct` | `464093299328bd804948a8959e603224418264f7` |
+
+**Actual executed verification.** Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`; exit zero for:
+
+```sh
+lake build GRWTSK.NumberTheory.Farey.FareyShiftCocycle --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/farey-shift-audit.lean
+```
+
+Strict module/dependency build: 8,722 jobs; public root: 9,304 jobs. Fresh
+trust-zero replay: 440 transitive GRWTSK declarations, using only `propext`,
+`Classical.choice`, `Quot.sound` (or none), with no `sorryAx` or additional axioms.
+All 56 owned declarations in the three named modules, including
+private/generated declarations, have reconciled type inventories and are safe.
+All 18 authored FareyShiftCocycle theorem/lemma headers are unchanged; inherited
+source bytes are unchanged. The only repairs are simplification of the zero
+iterate base case and opening the selected return word's existing namespace.
+
+**Classification, actual receipts and missing bridges.** Local finite product,
+periodic consistency and gauge-obstruction identities are now **kernel-verified
+bridges at their stated scope**. Periodic/source-word hypotheses remain explicit
+**conditional interfaces**; finite LR monodromy is an exact finite witness, not
+analytic evidence. Kalinin's sufficient theorem and Sturmian/Sarnak applications
+remain **unresolved paper bridges/analogies**. Historical source-only comments and
+authoring NOT_RUN records remain as provenance, superseded only by this dated
+source-pinned evidence for the named closure. No standalone public-root import,
+independent external/CI replay, hyperbolic homeomorphism/closing property, Hölder
+transfer, nonzero-coupling gap theorem, Möbius cancellation, zeta or RH consequence
+is claimed.
+
+Runners, logs and receipts are outside canonical mathematics at
+`/Users/local/Documents/ChatGPT/math-branch-integration-20261022/`:
+`farey-shift-rebuild.log`, `farey-shift-public.log`, `farey-shift-audit.lean`,
+`farey-shift-audit.log`, `farey-shift-validated-snapshot.json`,
+`farey-shift-completion-result.json`. The failed initial build is diagnostic,
+not acceptance evidence. Concurrent new linear-observation, Riesz and other
+modules remain outside this validation claim.
