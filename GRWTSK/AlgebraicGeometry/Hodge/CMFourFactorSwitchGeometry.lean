@@ -1309,6 +1309,22 @@ def CMFiniteFourfoldAssembly.canonical
         (factors.vector 0) (factors.vector 1)
         (factors.vector 2) (factors.vector 3))
 
+/-- The concrete finite fourfold constructor computes the canonical
+coefficient/vector multiplication formula on pure paired factors. -/
+theorem CMFiniteFourfoldAssembly.canonical_assemble_pure
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    (CMFiniteFourfoldAssembly.canonical factors).assemble
+      (fun i => if i = 0 then a₁ ⊗ₜ[ℚ] x₁
+        else if i = 1 then a₂ ⊗ₜ[ℚ] x₂
+        else if i = 2 then a₃ ⊗ₜ[ℚ] x₃
+        else a₄ ⊗ₜ[ℚ] x₄) =
+      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  simpa [CMFiniteFourfoldAssembly.canonical, CMFiniteFourPairedPure] using
+    (CMFiniteCanonicalPairedAssembly_originalFormula E
+      a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)
+
 /-- Explicit rational multilinearity of the finite four-slot assembly.
 This strengthens the function-valued interface without pretending that
 a geometric assembly with these properties has been constructed. -/
