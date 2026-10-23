@@ -46,6 +46,12 @@ theorem wordsOfFour_fourOfWords (words : List Word) (shape : words.length = 4) :
 def encodeStripes (stripes : List (List Word)) : List (Fin 6 → Word) :=
   stripes.map (fun words => fullEncode (fourOfWords words))
 
+/-- The stored six-node codeword agrees with computed interpolation at every
+selected four-node profile; its literal coefficients are not an assumption. -/
+theorem encodeRuntime_select_fullEncode (profile : Fin 15) (stripe : Four) :
+    encodeRuntime profile stripe = some (selectProfile profile (fullEncode stripe)) := by
+  rw [encodeRuntime_eq, selectProfile_fullEncode]
+
 def decodeStripes (profile : Fin 15) :
     List (Fin 6 → Word) → Option (List (List Word))
   | [] => some []
