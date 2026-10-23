@@ -728,6 +728,37 @@ theorem thetaKernelPartialMajorant_mono
     exact add_nonneg (thetaKernelPositivePart_nonneg n u)
       (thetaKernelNegativePart_nonneg n u)
 
+
+/-- A Gaussian factor absorbs any fixed polynomial factor in one mode.
+This is a source-level exact factorization, not a uniform n-series
+estimate. -/
+def thetaScaledGaussian (n : ℕ) (u : ℝ) : ℝ :=
+  (n : ℝ) ^ 2 * Real.exp (4 * u)
+
+theorem thetaGaussianSummand_scaled (n : ℕ) (u : ℝ) :
+    thetaGaussianSummand n u =
+      Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
+  simp [thetaGaussianSummand, thetaScaledGaussian, pow_two]
+  ring
+
+/-- The scaled Gaussian variable is nonnegative at every real height. -/
+theorem thetaScaledGaussian_nonneg (n : ℕ) (u : ℝ) :
+    0 ≤ thetaScaledGaussian n u := by
+  unfold thetaScaledGaussian
+  positivity
+
+/-- The exact positive theta summand is a polynomial in the scaled
+Gaussian variable times a remaining positive exponential weight.
+The equality exposes the variable needed for a future uniform bound. -/
+theorem thetaKernelPositivePart_scaled (n : ℕ) (u : ℝ) :
+    thetaKernelPositivePart n u =
+      2 * Real.pi ^ 2 * (thetaScaledGaussian n u) ^ 2 *
+        Real.exp u * Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
+  rw [thetaKernelPositivePart, thetaGaussianSummand_scaled]
+  unfold thetaScaledGaussian
+  rw [← Real.exp_add]
+  ring
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
