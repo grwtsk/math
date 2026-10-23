@@ -1,0 +1,102 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-tent-atom-stage-01-v0.1"
+owner_issue = 495
+repository = "grwtsk/math"
+stack_parent_pr = 491
+base_revision = "2bb64e39af2905f9d6e36ccfbcbca82b4377c26c"
+branch = "research/495-square-tent-atom-stage-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_obstruction = "Construct the exact finite prime-power atom stage for squareTentMangoldt and an exact noncircular positive Gram lift."
+terminal_interface = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.AtomStageAlignment"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentAtomStage.lean"
+blob = "88ac98a84b68999824b68e9015bee8ca5627359d"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalTentAtomStageControls.lean"
+blob = "d22a66435f70fc63d1e9548af0f977913612ab95"
+
+[[module]]
+path = "GRWTSK/Interfaces/CanonicalTentAtomStageCore.lean"
+blob = "0f8046ae903898edb14d55aa036be5bbc5e09ea9"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-tent-atom-stage.md"
+blob = "de2ae3940528cf4128f9e897fd25802201faa873"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "main"
+path = "GRWTSK/NumberTheory/Chebyshev/HigherPrimePowerSource.lean"
+blob = "d0eb381f2a0f4bb06cac0225e44162f2c4961827"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "main"
+path = "GRWTSK/NumberTheory/Chebyshev/TentSource.lean"
+blob = "e2e79a6b798772252b7d856ca3052c83fa9284ff"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "527931dabe8b2642443baddc0e6494ae2dc4d33a"
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimePowerVonMangoldt.lean"
+blob = "4a8adead83b2819ae75d7ab62ee132d8d8d70b8b"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "2bb64e39af2905f9d6e36ccfbcbca82b4377c26c"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentLedger.lean"
+blob = "d5f4cdab9316269cc8ab1383f3810d057a95453b"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.SquarePair",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.pairAtom",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.pairAtom_injective",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.squareAtomStage",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.pairWitnessEquiv",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.exp_logLocation_pairAtom",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.squareLogTest",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.pairTentMass",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.pairTentMass_eq_squareTentMangoldt",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.stageReadout_squareLogTest_eq",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.squareAtomStageAlignment",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.squareRootAmplitude",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.stageEnergy_squareRootAmplitude_eq",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.squareRoot_quadraticization"
+]
+
+hostile_controls = [
+  "pair inventory is transported by an injective map rather than cardinality matching",
+  "Lambda(p^k) equals log p and not k log p",
+  "same-test linear/quadratic equality remains false",
+  "square-root is applied only to the independently nonnegative tent weight",
+  "fourth channel remains dynamically sized while the triangular base remains three phases"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive trust and axiom audit",
+  "combine the exact positive prime-power Gram with the canonical signed explicit-formula ledger",
+  "identify the resulting signed spectral correction with one named quartic or Weil consumer",
+  "prove any required stage-limit or error-decay statement for that comparison",
+  "external replay"
+]
+
+nonclaims = [
+  "no same-test quadraticization identity",
+  "no square root of the Weil form or signed quartic",
+  "no Weil-form identity",
+  "no prime number theorem",
+  "no zero-free threshold improvement",
+  "no Riemann Hypothesis result"
+]
+
+next_obstruction = "Compare the exact positive source Q_n = squareTentMangoldt n with the canonical signed ledger -S_n + P_n + Z_n + T_n = 0, and type the remaining signed spectral correction P_n + Z_n + T_n against one named quartic or Weil consumer."
