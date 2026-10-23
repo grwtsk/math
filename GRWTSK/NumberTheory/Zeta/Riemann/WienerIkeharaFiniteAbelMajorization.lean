@@ -146,7 +146,7 @@ theorem wienerAbel_weighted_le_linear_envelope
     _ = C * ((n : ℝ) * w n +
           ∑ k ∈ Finset.range n,
             ((k + 1 : ℕ) : ℝ) * (w k - w (k + 1))) := by
-      rw [Finset.mul_sum]
+      simp only [mul_add, Finset.mul_sum]
       ring
     _ = C * (∑ k ∈ Finset.range n, w k) := by
       rw [wienerAbel_linear_telescoping]
