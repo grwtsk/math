@@ -96,4 +96,33 @@ theorem CountedWalk.used_edge_internal
         exact ⟨Finset.mem_insert_of_mem hs,
           Finset.mem_insert_of_mem ht⟩
 
+
+/-- A nonempty fresh counted trail has an actual used edge incident
+to its canonical visited-vertex support. This supplies the
+inside-supported-edge hypothesis of the weak connectivity cut. -/
+theorem FreshCountedTrail.exists_edge_meeting_vertexSupport
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hused : T.used.Nonempty) :
+    ∃ e : CountedBinaryEdge m c,
+      countedEdgeSource m c e ∈ T.walk.vertexSupport ∨
+        countedEdgeTarget m c e ∈ T.walk.vertexSupport := by
+  obtain ⟨e, he⟩ := hused
+  have hinternal := T.walk.used_edge_internal e he
+  exact ⟨e, Or.inl hinternal.1⟩
+
+/-- Every counted edge instance used by a fresh trail has both
+endpoints in its canonical vertex support. -/
+theorem FreshCountedTrail.used_internal_vertexSupport
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    ∀ e ∈ T.used,
+      countedEdgeSource m c e ∈ T.walk.vertexSupport ∧
+        countedEdgeTarget m c e ∈ T.walk.vertexSupport := by
+  intro e he
+  exact T.walk.used_edge_internal e he
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
