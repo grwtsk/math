@@ -192,3 +192,16 @@ checking, full transitive #print axioms, generated/unsafe/opaque checks,
 or source-bound external paper theorem admission. No local source scan,
 off-Lean numeric sample, Git commit or queued issue changes this status.
 No Railway or declined remote execution is authorized here.
+
+## Exact pinned verification requests (open, not executed)
+
+- [#1112 — finite Hodge exponential inversion and Newman sign/height controls](https://github.com/grwtsk/math/issues/1112).
+- [#1113 — source-specific Farey heat compensation, proof and hostile raw-block check](https://github.com/grwtsk/math/issues/1113).
+
+Both requests target immutable mathematical-and-provenance main commit
+[78ac3d9fe09d2437dac24d931302571183767887](https://github.com/grwtsk/math/commit/78ac3d9fe09d2437dac24d931302571183767887).
+Both require pinned direct and transitive dependency builds, trust-zero
+elaboration, fresh independent kernel replay, full transitive axiom/unsafe
+audit, literal command exit statuses, and actual receipts on an authorized
+non-Railway executor. **Neither issue creation nor source inspection
+constitutes execution or acceptance.**
