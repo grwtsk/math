@@ -69,7 +69,7 @@ theorem rowEval_linear (r : Row) : XorLinear4 (rowEval r) := by
     decide
   · intro x y
     simp only [rowEval, xor, mul_xor_right]
-    simp [BitVec.xor_assoc, BitVec.xor_comm, xor_left_comm]
+    simp [BitVec.xor_assoc, xor_left_comm]
 
 theorem transform_zero (m : Matrix) : transform m zero = zero := by
   apply Four.ext <;> simp only [transform, rowEval, zero, mul_zero_right] <;> decide
