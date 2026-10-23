@@ -296,4 +296,55 @@ theorem FreshCountedTrail.spliceAtFactorization_closed
     P Q C hPQ hPC hQC⟩
 
 
+
+/-- A fresh trail is factorable at its initial vertex, using an
+empty prefix and the entire trail as suffix. This is the first
+constructive case of the general visited-vertex factorization. -/
+def FreshCountedTrail.factorAtStart
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    FreshCountedTrail m c a a × FreshCountedTrail m c a b :=
+  ({ walk := CountedWalk.empty a
+     nodup := by simp [CountedWalk.edges] }, T)
+
+/-- Factorization at the initial vertex preserves all counted
+edge instances, and the two factors are disjoint. -/
+theorem FreshCountedTrail.factorAtStart_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    (T.factorAtStart).1.used ∪ (T.factorAtStart).2.used = T.used ∧
+      Disjoint (T.factorAtStart).1.used (T.factorAtStart).2.used := by
+  constructor
+  · simp [FreshCountedTrail.factorAtStart,
+      FreshCountedTrail.used, CountedWalk.edges]
+  · simp [FreshCountedTrail.factorAtStart,
+      FreshCountedTrail.used, CountedWalk.edges]
+
+/-- A fresh trail is also factorable at its terminal vertex,
+using the entire trail as prefix and an empty suffix. -/
+def FreshCountedTrail.factorAtFinish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    FreshCountedTrail m c a b × FreshCountedTrail m c b b :=
+  (T, { walk := CountedWalk.empty b
+        nodup := by simp [CountedWalk.edges] })
+
+/-- Terminal factorization likewise preserves every counted
+edge instance and satisfies exact disjointness. -/
+theorem FreshCountedTrail.factorAtFinish_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    (T.factorAtFinish).1.used ∪ (T.factorAtFinish).2.used = T.used ∧
+      Disjoint (T.factorAtFinish).1.used (T.factorAtFinish).2.used := by
+  constructor
+  · simp [FreshCountedTrail.factorAtFinish,
+      FreshCountedTrail.used, CountedWalk.edges]
+  · simp [FreshCountedTrail.factorAtFinish,
+      FreshCountedTrail.used, CountedWalk.edges]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
