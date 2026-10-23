@@ -31,6 +31,7 @@ def unitCoefficient (a w : ℂ) : ℂ := 3 / ((3 : ℂ) ^ 2 - conj a * w)
 theorem factor_eq_sub_mul_unit (a w : ℂ) :
     factor 3 a w = (w - a) * unitCoefficient a w := by
   unfold factor unitCoefficient
+  norm_num only [Complex.ofReal_ofNat]
   ring
 
 theorem analyticAt_unit (a w : ℂ) (ha : ‖a‖ ≤ 11 / 4) (hw : ‖w‖ ≤ 3) :
@@ -147,7 +148,8 @@ theorem exists_removed_quotient {ι : Type*} (S : Finset ι) (a : ι → ℂ) (m
     obtain ⟨hQ, hQ0, hQeq⟩ := quotient_germ_of_matching_power f P A d (a i) (m i)
       hA hA0 hd hd0 he hPd
     have hai : a i ∈ U := by
-      rw [U, Metric.mem_closedBall, dist_zero_right]
+      change a i ∈ closedBall (0 : ℂ) (3 : ℝ)
+      rw [Metric.mem_closedBall, dist_zero_right]
       linarith [ha i hi]
     have hgerm := normalForm_germ F (fun w => A w / d w) U (a i) hF hai hQ hQeq
     exact ⟨hQ.congr hgerm.symm, hgerm.eq_of_nhds.trans_ne hQ0⟩
@@ -166,7 +168,8 @@ theorem exists_removed_quotient {ι : Type*} (S : Finset ι) (a : ι → ℂ) (m
   refine ⟨g, hg, ?_, ?_, ?_⟩
   · intro w hw
     have hwU : w ∈ U := by
-      rw [U, Metric.mem_closedBall, dist_zero_right]
+      change w ∈ closedBall (0 : ℂ) (3 : ℝ)
+      rw [Metric.mem_closedBall, dist_zero_right]
       have hn : ‖w‖ < 11 / 4 := by simpa only [Metric.mem_ball, dist_zero_right] using hw
       linarith
     by_cases hr : ∃ i ∈ S, w = a i

@@ -67,7 +67,7 @@ theorem norm_Gamma_le_envelope (s : ℂ)
     rw [norm_mul, Complex.norm_of_nonneg (Real.exp_pos (-t)).le,
       Complex.norm_cpow_eq_rpow_re_of_pos ht]
     simp only [Complex.sub_re, Complex.one_re]
-    simpa only [mul_add] using mul_le_mul_of_nonneg_left
+    simpa only [mul_add, Pi.add_apply] using mul_le_mul_of_nonneg_left
       (power_le_endpoint_sum t s.re ht hs) (Real.exp_pos (-t)).le
   dsimp [envelope]
   linarith
@@ -103,7 +103,8 @@ theorem half_anchor_product_ge_pi (t : ℝ) :
   calc
     _ = ‖Complex.Gamma z‖ * ‖Complex.Gamma (1 - z)‖ *
         ‖Complex.sin ((Real.pi : ℂ) * z)‖ := he'.symm
-    _ ≤ _ := by gcongr
+    _ ≤ _ := mul_le_mul (mul_le_mul_of_nonneg_left hg (norm_nonneg _)) hs
+      (norm_nonneg _) (mul_nonneg (norm_nonneg _) envelope_pos.le)
 
 /-- Two exact Gamma recurrences move the half anchor to the center of the disk. -/
 theorem center_norm_ge_half_anchor (t : ℝ) :
@@ -180,7 +181,7 @@ theorem normalized_log_deriv_le (L : ℂ → ℂ) (H : ℝ) (hH : 0 < H)
   have hd := Complex.norm_deriv_le_of_forall_mem_sphere_norm_le
     (by norm_num : (0 : ℝ) < 1 / 4) hcont
     (fun v hv => hmid v (hcircle v (sphere_subset_closedBall hv)))
-  convert hd using 1 <;> ring
+  convert hd using 1; ring
 
 /-- Full actual digamma on the reflected positive strip; no series identity is assumed. -/
 theorem norm_digamma_le (s : ℂ) (hs : s.re ∈ Icc (1 : ℝ) 4) :
@@ -203,7 +204,7 @@ theorem norm_digamma_le (s : ℂ) (hs : s.re ∈ Icc (1 : ℝ) 4) :
       intro m he
       have hr := congrArg Complex.re he
       simp only [Complex.neg_re, Complex.natCast_re] at hr
-      linarith [Nat.cast_nonneg (R := ℝ) m]
+      linarith [Nat.cast_nonneg (α := ℝ) m]
     exact ((Complex.differentiableAt_Gamma (c + w) hne).comp w
       ((differentiableAt_const c).add differentiableAt_id)).differentiableWithinAt
   have hn : ∀ w ∈ ball 0 (2 : ℝ), g w ≠ 0 := by
@@ -224,7 +225,7 @@ theorem norm_digamma_le (s : ℂ) (hs : s.re ∈ Icc (1 : ℝ) 4) :
     ring
   let w : ℂ := s - c
   have hew : w = ((s.re - 5 / 2 : ℝ) : ℂ) := by
-    ext <;> norm_num [w, c, center, t]
+    apply Complex.ext <;> norm_num [w, c, center, t]
   have hw : ‖w‖ ≤ (3 / 2 : ℝ) := by
     rw [hew, Complex.norm_real, Real.norm_eq_abs]
     exact abs_le.mpr ⟨by linarith [hs.1], by linarith [hs.2]⟩
@@ -240,10 +241,15 @@ theorem norm_digamma_le (s : ℂ) (hs : s.re ∈ Icc (1 : ℝ) 4) :
       intro m he
       have hrr := congrArg Complex.re he
       simp only [Complex.neg_re, Complex.natCast_re] at hrr
-      linarith [hs.1, Nat.cast_nonneg (R := ℝ) m]
-    have hdc := (hasDerivAt_id w).const_add c
-    rw [logDeriv_comp (by simpa only [hcs] using Complex.differentiableAt_Gamma s hne)
-      hdc.differentiableAt, hdc.deriv, mul_one, hcs, Complex.digamma_def]
+      linarith [hs.1, Nat.cast_nonneg (α := ℝ) m]
+    have hdc : HasDerivAt (fun v : ℂ => c + v) 1 w := by
+      simpa only [id_eq] using (hasDerivAt_id w).const_add c
+    have hgamma : DifferentiableAt ℂ Complex.Gamma (c + w) := by
+      rw [hcs]
+      exact Complex.differentiableAt_Gamma s hne
+    have he := logDeriv_comp (f := Complex.Gamma) (g := fun v => c + v)
+      (x := w) hgamma hdc.differentiableAt
+    simpa only [hdc.deriv, mul_one, hcs, Complex.digamma_def] using he
   rw [(hd w hmem).deriv, hcomp] at hnorm
   exact hnorm
 

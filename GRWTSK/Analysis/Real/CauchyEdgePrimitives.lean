@@ -2,6 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 import Mathlib.Tactic.FieldSimp
@@ -48,7 +49,7 @@ theorem hasDerivAt_radial_primitive (o c t : ℝ) (hc : c ≠ 0) :
       ((t - o) / ((t - o) ^ 2 + c ^ 2)) t := by
   have hd := ((((hasDerivAt_id t).sub_const o).pow 2).add_const (c ^ 2)).log
     (ne_of_gt (squared_radius_pos o c t hc))
-  convert hd.div_const 2 using 1 <;> ring
+  convert hd.div_const 2 using 1 <;> first | rfl | (simp only [Pi.pow_apply, id_eq]; ring)
 
 /-- This primitive works for either sign of c, without an absolute-value substitution. -/
 theorem hasDerivAt_angular_primitive (o c t : ℝ) (hc : c ≠ 0) :
@@ -57,7 +58,7 @@ theorem hasDerivAt_angular_primitive (o c t : ℝ) (hc : c ≠ 0) :
   have hd := (((hasDerivAt_id t).sub_const o).div_const c).arctan
   have hden := ne_of_gt (squared_radius_pos o c t hc)
   have hang : 1 + ((t - o) / c) ^ 2 ≠ 0 := by positivity
-  convert hd using 1 <;> field_simp [hc, hden, hang] <;> ring
+  convert hd using 1 <;> first | rfl | (field_simp [hc, hden, hang]; simp only [id_eq]; ring)
 
 theorem integral_radial_density (a b o c : ℝ) (hc : c ≠ 0) :
     (∫ t in a..b, (t - o) / ((t - o) ^ 2 + c ^ 2)) =

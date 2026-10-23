@@ -43,8 +43,8 @@ theorem continuous_term_rightLine (f : ℕ → ℂ) (m : ℕ) :
   · subst m; simp only [_root_.LSeries.term_zero]; exact continuous_const
   have hmC : (m : ℂ) ≠ 0 := Nat.cast_ne_zero.mpr hm
   simp_rw [_root_.LSeries.term_of_ne_zero hm, Complex.cpow_def_of_ne_zero hmC]
-  unfold rightLine
-  fun_prop (disch := exact Complex.exp_ne_zero _)
+  have hr : Continuous rightLine := by unfold rightLine; fun_prop
+  exact continuous_const.div ((continuous_const.mul hr).cexp) (fun _ => Complex.exp_ne_zero _)
 
 /-- Product domination uses a summable coefficient norm and an integrable height factor. -/
 theorem norm_pairedTerm_le (f : ℕ → ℂ) (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
@@ -58,8 +58,8 @@ theorem norm_pairedTerm_le (f : ℕ → ℂ) (x h : ℝ) (hh : 0 < h) (ha : 1 < 
 /-- Each term is integrable, including the n=0 convention and height zero. -/
 theorem integrable_pairedTerm (f : ℕ → ℂ) (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
     (m : ℕ) : Integrable (pairedTerm f x h m) := by
-  have hc := (continuous_term_rightLine f m).mul
-    ((continuous_tentKernel x h hh ha).comp (by unfold rightLine; fun_prop))
+  have hc : Continuous (pairedTerm f x h m) := (continuous_term_rightLine f m).mul
+    ((continuous_tentKernel x h hh ha).comp (show Continuous rightLine from by unfold rightLine; fun_prop))
   exact (integrable_inv_one_add_sq.const_mul
     (‖_root_.LSeries.term f 2 m‖ * rightLineConstant x h)).mono'
     hc.aestronglyMeasurable (Eventually.of_forall (norm_pairedTerm_le f x h hh ha m))
@@ -103,7 +103,8 @@ theorem pairedTerm_inversion (f : ℕ → ℂ) (x h : ℝ) (hh : 0 < h) (ha : 1 
   calc
     _ = f m * (((1 / (2 * Real.pi) : ℝ) : ℂ) *
       ∫ t : ℝ, (m : ℂ) ^ (-rightLine t) * tentKernel x h (rightLine t)) := by ring
-    _ = _ := by rw [rightLine_inversion x h (m : ℝ) hh ha hmR]
+    _ = _ := by
+      simpa using congrArg (fun v : ℂ => f m * v) (rightLine_inversion x h (m : ℝ) hh ha hmR)
 
 /-- The complete absolutely convergent Dirichlet series may be integrated term by term.
 No residue inventory, truncation limit or sum-integral equality is a hypothesis. -/
