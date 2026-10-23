@@ -85,8 +85,12 @@ theorem FreshCountedTrail.complete_or_unused_edge
             Finset (CountedBinaryEdge m c)) :=
           Finset.mem_sdiff.mpr ⟨he, hn⟩
         simpa [hz] using hmem
-      exact h (Finset.eq_of_subset_of_card_le hsubset
-        (by simp))
+      have heq : T.used = (Finset.univ :
+          Finset (CountedBinaryEdge m c)) := by
+        apply Finset.eq_of_subset_of_subset
+        · exact Finset.subset_univ _
+        · exact hsubset
+      exact h heq
     exact hne
 
 
