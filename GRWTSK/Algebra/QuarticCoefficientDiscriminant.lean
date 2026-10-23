@@ -39,4 +39,14 @@ theorem monicQuarticDiscriminant_eq_adjacencyCubic_discr
   simp only [monicQuarticDiscriminant, adjacencyCubic, Cubic.discr]
   ring
 
+
+/-- The explicit monic quartic discriminant is natural under every
+homomorphism of commutative rings, including quotient maps. -/
+theorem monicQuarticDiscriminant_map
+    {S : Type*} [CommRing S] (f : R →+* S) (A B C D : R) :
+    f (monicQuarticDiscriminant A B C D) =
+      monicQuarticDiscriminant (f A) (f B) (f C) (f D) := by
+  simp [monicQuarticDiscriminant, map_add, map_sub,
+    map_mul, map_pow, map_ofNat]
+
 end GRWTSK.Algebra.QuarticCoefficientDiscriminant
