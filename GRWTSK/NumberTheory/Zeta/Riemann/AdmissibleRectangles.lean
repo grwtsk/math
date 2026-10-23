@@ -4,7 +4,7 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor
 import GRWTSK.NumberTheory.Zeta.Riemann.TrivialZeroResidues
 import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Tactic.Omega
+import Mathlib.Tactic
 
 set_option autoImplicit false
 
@@ -74,7 +74,7 @@ theorem contourHeight_avoids (N : ℕ) (z : ZeroPoint) : height z ≠ contourHei
 
 theorem contourHeight_pos (N : ℕ) : 0 < contourHeight N := by
   have := (contourHeight_bounds N).1
-  have := Nat.cast_nonneg (R := ℝ) N
+  have := Nat.cast_nonneg (α := ℝ) N
   linarith
 
 /-- The chosen sequence is strictly increasing despite the noncomputable choices. -/
@@ -96,7 +96,7 @@ def leftEdge (N : ℕ) : ℝ := -(2 * (N : ℝ) + 1)
 
 theorem leftEdge_neg (N : ℕ) : leftEdge N < 0 := by
   unfold leftEdge
-  have := Nat.cast_nonneg (R := ℝ) N
+  have := Nat.cast_nonneg (α := ℝ) N
   linarith
 
 /-- The interior covers the part of Re(s)<2 between the two horizontal edges. -/
@@ -119,9 +119,9 @@ theorem vertical_mem_boundary (N : ℕ) (c t : ℝ)
     (hc : c = leftEdge N ∨ c = 2) (ht : |t| ≤ contourHeight N) :
     (c : ℂ) + (t : ℂ) * Complex.I ∈ boundary N := by
   have hlr : leftEdge N ≤ 2 := (leftEdge_neg N).le.trans (by norm_num)
-  simp only [boundary, Set.mem_setOf_eq, Complex.add_re, Complex.ofReal_re,
+  simp only [boundary, Set.mem_ofPred_eq, Complex.add_re, Complex.ofReal_re,
     Complex.mul_re, Complex.ofReal_im, Complex.I_re, Complex.I_im,
-    Complex.add_im, Complex.mul_im, mul_zero, zero_mul, sub_zero,
+    Complex.add_im, Complex.mul_im, mul_zero, sub_zero,
     add_zero, zero_add, mul_one]
   rcases hc with rfl | rfl
   · exact ⟨le_rfl, hlr, ht, Or.inl rfl⟩
@@ -134,7 +134,7 @@ theorem eventually_mem_interior (s : ℂ) (hs : s.re < 2) :
   refine eventually_atTop.mpr ⟨M, ?_⟩
   intro N hMN
   have hcast : (M : ℝ) ≤ N := by exact_mod_cast hMN
-  have hn := Nat.cast_nonneg (R := ℝ) N
+  have hn := Nat.cast_nonneg (α := ℝ) N
   have hh := (contourHeight_bounds N).1
   refine ⟨?_, hs, ?_⟩
   · unfold leftEdge

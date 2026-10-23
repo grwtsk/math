@@ -3,6 +3,7 @@ Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport
 import GRWTSK.NumberTheory.Zeta.Riemann.WeilApproximatePositiveLimit
 import Mathlib.Tactic
 
@@ -39,6 +40,8 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.Analysis.ErrorBounds
+open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula
@@ -95,11 +98,12 @@ theorem testStage_ge_two (f : CanonicalSquareTentTest) :
 theorem zeroHeightCutoff_ge_two (N : ℕ) :
     2 ≤ zeroHeightCutoff N := by
   unfold zeroHeightCutoff
-  positivity
+  linarith [Nat.cast_nonneg (α := ℝ) N]
 
 theorem zeroHeightCutoff_tendsto_atTop :
     Tendsto zeroHeightCutoff atTop atTop := by
-  simpa [zeroHeightCutoff] using
+  change Tendsto (fun N : ℕ => (N : ℝ) + 2) atTop atTop
+  exact
     (tendsto_atTop_add_const_right atTop (2 : ℝ)
       tendsto_natCast_atTop_atTop)
 
@@ -162,7 +166,7 @@ theorem zetaTarget_diagonal_eq_sourceGram
     (f : CanonicalSquareTentTest) :
     zetaTarget f f =
       stageEnergy (canonicalStage f.index) (canonicalAmplitude f.index) := by
-  simp only [zetaTarget, if_pos rfl]
+  rw [zetaTarget, if_pos rfl]
   exact (canonicalStageEnergy_eq_correction f.index).symm
 
 theorem zetaTarget_diagonal_nonnegative
@@ -180,8 +184,8 @@ theorem abs_target_sub_finiteApproximant_le
     |zetaTarget f f - finiteApproximant N f f| =
         |(finiteSpectralValue N f -
           (canonicalCorrection f.index : ℂ)).re| := by
-            simp only [zetaTarget, finiteApproximant, if_pos rfl,
-              Complex.sub_re, Complex.ofReal_re]
+            rw [zetaTarget, finiteApproximant, if_pos rfl]
+            simp only [ite_true, Complex.sub_re, Complex.ofReal_re]
             rw [abs_sub_comm]
     _ ≤ ‖finiteSpectralValue N f -
           (canonicalCorrection f.index : ℂ)‖ :=
@@ -208,7 +212,7 @@ theorem finiteApproximant_diagonal_lower_bound
 theorem lowerDefect_tendsto_zero
     (f : CanonicalSquareTentTest) :
     Tendsto (fun N => lowerDefect N f) atTop (𝓝 0) := by
-  simpa [lowerDefect] using
+  simpa only [lowerDefect, Function.comp_def] using
     (canonical_tail_budget_tendsto_zero (testStage f)).comp
       zeroHeightCutoff_tendsto_atTop
 

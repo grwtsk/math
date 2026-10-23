@@ -63,14 +63,13 @@ theorem norm_deriv_log_le_eighty (L : ℂ → ℂ) (H : ℝ) (hH : 0 < H)
     (by norm_num : (0 : ℝ) < 1 / 4) hcont
     (fun w hw => norm_log_le_twenty L H hH hL h0 hreal w
       (small_circle_norm_le z w hz (sphere_subset_closedBall hw)))
-  convert hc using 1 <;> ring
+  convert hc using 1; ring
 
 /-- Differentiating the exponential uses a neighborhood function, not a sampled value. -/
 theorem logDeriv_exp (L : ℂ → ℂ) (z : ℂ) (hL : DifferentiableAt ℂ L z) :
     logDeriv (fun w => Complex.exp (L w)) z = deriv L z := by
   rw [logDeriv_apply, hL.hasDerivAt.cexp.deriv]
   field_simp [Complex.exp_ne_zero]
-  <;> ring
 
 /-- Exact finite factorization, retaining natural multiplicities and the analytic factor. -/
 theorem logDeriv_of_factorization {ι : Type*} (S : Finset ι) (a : ι → ℂ) (m : ι → ℕ)
@@ -95,10 +94,10 @@ theorem logDeriv_of_factorization {ι : Type*} (S : Finset ι) (a : ι → ℂ) 
   have he := (logDeriv_congr_nhds hfactor).eq_of_nhds
   rw [he, logDeriv_const_mul z C hC]
   change logDeriv (fun w => Complex.exp (L w) * P w) z = _
-  rw [logDeriv_mul z (Complex.exp_ne_zero _) hP hL.cexp hdP, logDeriv_exp L z hL]
+  rw [logDeriv_mul (f := fun w => Complex.exp (L w)) (g := P) z (Complex.exp_ne_zero _) hP hL.cexp hdP, logDeriv_exp L z hL]
   congr 1
   dsimp only [P]
-  rw [logDeriv_prod (fun i hi => pow_ne_zero _ (hfac i hi))
+  rw [logDeriv_prod (s := S) (x := z) (f := fun i w => (factor 3 (a i) w) ^ m i) (fun i hi => pow_ne_zero _ (hfac i hi))
     (fun i hi => (hdf i hi).pow (m i))]
   exact Finset.sum_congr rfl (fun i hi => logDeriv_fun_pow (hdf i hi) (m i))
 
@@ -128,7 +127,7 @@ theorem norm_logDeriv_of_factorization {ι : Type*} (S : Finset ι) (a : ι → 
     _ ≤ 80 * H + ∑ i ∈ S, ‖(m i : ℂ) * logDeriv (factor 3 (a i)) z‖ :=
       add_le_add (norm_deriv_log_le_eighty L H hH hL h0 hreal z hz) (norm_sum_le _ _)
     _ ≤ 80 * H + ∑ i ∈ S, (m i : ℝ) * (1 / δ + 1) := by
-      apply add_le_add_left
+      apply add_le_add le_rfl
       apply Finset.sum_le_sum
       intro i hi
       rw [norm_mul, Complex.norm_natCast]

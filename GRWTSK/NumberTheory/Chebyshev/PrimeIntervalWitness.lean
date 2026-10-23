@@ -6,7 +6,7 @@ import Mathlib.NumberTheory.Chebyshev
 import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.NormCast
+import Mathlib.Tactic
 import Lean.Elab.Tactic.Omega
 
 set_option autoImplicit false
@@ -76,7 +76,7 @@ theorem theta_sub_pos_iff_intervalCount (a b : ℕ) (hab : a ≤ b)
 /-- This includes zero and one; no square is a natural prime. -/
 theorem square_not_prime (n : ℕ) : ¬ Nat.Prime (n ^ 2) := by
   by_cases hn : n = 1
-  · simp [hn]
+  · simpa [hn] using Nat.not_prime_one
   · simpa only [pow_two] using Nat.not_prime_mul hn hn
 
 /-- The exact weighted/count equivalence for consecutive squares, including the zero stage. -/
@@ -84,7 +84,7 @@ theorem theta_square_sub_pos_iff (n : ℕ) :
     0 < Chebyshev.theta (((n + 1) ^ 2 : ℕ) : ℝ) -
       Chebyshev.theta ((n ^ 2 : ℕ) : ℝ) ↔ 0 < squareCount n := by
   exact theta_sub_pos_iff_intervalCount (n ^ 2) ((n + 1) ^ 2)
-    (by nlinarith) (square_not_prime (n + 1))
+    (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2) (square_not_prime (n + 1))
 
 end
 

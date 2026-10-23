@@ -2,6 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Algebra.BigOperators.Field
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.Analysis.SpecialFunctions.Log.Deriv
 import Mathlib.Analysis.Normed.Group.InfiniteSum
 import Mathlib.Topology.Algebra.InfiniteSum.Real
@@ -86,8 +87,8 @@ private theorem integral_inverseCube {a b : ℝ} (ha : 0 < a) (hab : a ≤ b) :
     intro t ht
     have ht0 : t ≠ 0 := ne_of_gt (ha.trans_le ht.1)
     have h := (((hasDerivAt_id t).pow 2).inv (pow_ne_zero 2 ht0)).neg
-    convert h using 1 <;> field_simp [ht0] <;> ring
-  have hi := ContinuousOn.intervalIntegrable_of_Icc hab (inverseCube_continuousOn ha)
+    convert h using 1 <;> first | rfl | (field_simp [ht0]; simp only [Pi.pow_apply, id_eq]; ring)
+  have hi := ContinuousOn.intervalIntegrable_of_Icc (μ := volume) hab (inverseCube_continuousOn ha)
   have h := intervalIntegral.integral_eq_sub_of_hasDerivAt
     (a := a) (b := b) (f := fun u : ℝ => -(u ^ 2)⁻¹)
     (f' := fun t : ℝ => 2 / t ^ 3)
@@ -115,8 +116,8 @@ theorem integral_logDensity {a b : ℝ} (ha : 0 < a) (hab : a ≤ b) :
     have ht0 : t ≠ 0 := ne_of_gt (ha.trans_le ht.1)
     have h := ((((Real.hasDerivAt_log ht0).add_const 1).const_mul 2).div
       (hasDerivAt_id t) ht0).neg
-    convert h using 1 <;> field_simp [ht0] <;> ring
-  have hi := ContinuousOn.intervalIntegrable_of_Icc hab (logDensity_continuousOn ha)
+    convert h using 1 <;> first | rfl | (field_simp [ht0]; simp only [id_eq]; ring)
+  have hi := ContinuousOn.intervalIntegrable_of_Icc (μ := volume) hab (logDensity_continuousOn ha)
   have h := intervalIntegral.integral_eq_sub_of_hasDerivAt
     (a := a) (b := b) (f := fun u : ℝ => -(2 * (Real.log u + 1) / u))
     (f' := fun t : ℝ => 2 * Real.log t / t ^ 2)
@@ -137,7 +138,7 @@ private theorem stepDensity_intervalIntegrable (c w : ℝ) {a b : ℝ}
     (ha : 0 < a) (hab : a ≤ b) :
     IntervalIntegrable (fun t => if c ≤ t then 2 * w / t ^ 3 else 0) volume a b := by
   have hi : IntervalIntegrable (fun t : ℝ => 2 * w / t ^ 3) volume a b := by
-    have h := (ContinuousOn.intervalIntegrable_of_Icc hab
+    have h := (ContinuousOn.intervalIntegrable_of_Icc (μ := volume) hab
       (inverseCube_continuousOn ha)).const_mul w
     have heq : (fun t : ℝ => 2 * w / t ^ 3) =
         (fun t : ℝ => w * (2 / t ^ 3)) := by funext t; ring
@@ -152,7 +153,12 @@ private theorem countingDensity_intervalIntegrable (S : Finset ι)
       volume a b := by
   have h := IntervalIntegrable.sum S (fun i _ =>
     stepDensity_intervalIntegrable (height i) (weight i) ha hab)
-  simpa only [Finset.sum_apply, ← countingDensity_eq_sum] using h
+  have he : (∑ i ∈ S, (fun t : ℝ => if height i ≤ t then 2 * weight i / t ^ 3 else 0)) =
+      (fun t => 2 * finiteCountingMass S height weight t / t ^ 3) := by
+    funext t
+    simp only [Finset.sum_apply, countingDensity_eq_sum]
+  rw [he] at h
+  exact h
 
 /-- Finite partial summation with its terminal boundary kept exactly. All
 selected heights are strictly beyond T and at most R. -/
@@ -207,7 +213,7 @@ theorem finite_inverseSquare_le_with_boundary (S : Finset ι)
   rw [finiteCountingMass_eq_total S height weight R hupper] at hcR
   have hi := intervalIntegral.integral_mono_on hTR
     (countingDensity_intervalIntegrable S height weight hT0 hTR)
-    (ContinuousOn.intervalIntegrable_of_Icc hTR (logDensity_continuousOn hT0))
+    (ContinuousOn.intervalIntegrable_of_Icc (μ := volume) hTR (logDensity_continuousOn hT0))
     (fun t ht => by
       have ht0 : 0 < t := hT0.trans_le ht.1
       calc
@@ -215,7 +221,7 @@ theorem finite_inverseSquare_le_with_boundary (S : Finset ι)
             2 * (t * Real.log t) / t ^ 3 :=
           div_le_div_of_nonneg_right
             (mul_le_mul_of_nonneg_left (hcount t ht) (by norm_num)) (pow_nonneg ht0.le 3)
-        _ = 2 * Real.log t / t ^ 2 := by field_simp [ne_of_gt ht0]; ring)
+        _ = 2 * Real.log t / t ^ 2 := by field_simp [ne_of_gt ht0])
   rw [integral_logDensity hT0 hTR] at hi
   rw [finite_inverseSquare_identity S height weight T R hT0 hTR hlower hupper]
   calc
@@ -267,6 +273,7 @@ theorem inverseSquare_summable_and_bound (height weight : ι → ℝ)
     (fun i _ => hlower i) (hcount S)
   exact ⟨summable_of_sum_le hn hf, Real.tsum_le_of_sum_le hn hf⟩
 
+set_option linter.unusedVariables false in
 /-- Absolute convergence and a norm bound are conclusions, not premises. -/
 theorem dominated_family_summable_and_bound {E : Type*}
     [NormedAddCommGroup E] [CompleteSpace E]

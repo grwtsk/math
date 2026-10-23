@@ -72,7 +72,7 @@ theorem tent_family_tail (x h β T : ℝ) (hh : 0 < h) (ha : 1 < x - h)
       linarith
     have hk := norm_tentKernel_le_inverse_height_sq x h β hh ha hβ (ρ i) (hρ i) hγ
     calc
-      _ = (m i : ℝ) * ‖tentKernel x h (ρ i)‖ := by simp [norm_mul, Complex.norm_natCast]
+      _ = (m i : ℝ) * ‖tentKernel x h (ρ i)‖ := by simp
       _ ≤ (m i : ℝ) *
           (4 * Real.exp ((β + 1) * Real.log (x + h)) / (h * (ρ i).im ^ 2)) :=
         mul_le_mul_of_nonneg_left hk (Nat.cast_nonneg _)
@@ -105,9 +105,9 @@ theorem tent_full_sum_and_remainder (x h β T : ℝ)
       ‖(∑' i, (m i : ℂ) * tentKernel x h (ρ i)) -
         ∑ i ∈ head, (m i : ℂ) * tentKernel x h (ρ i)‖ ≤ tentTailBudget x h β T := by
   classical
-  let e : {i // i ∉ head} ↪ ι := ⟨Subtype.val, Subtype.val_injective⟩
+  let e : (Set.Elem ((head : Set ι)ᶜ)) ↪ ι := ⟨Subtype.val, Subtype.val_injective⟩
   have htail := tent_family_tail x h β T hh ha hβ hT
-    (fun i : {i // i ∉ head} => m i) (fun i : {i // i ∉ head} => ρ i)
+    (fun i : (Set.Elem ((head : Set ι)ᶜ)) => m i) (fun i : (Set.Elem ((head : Set ι)ᶜ)) => ρ i)
     (fun i => hρ i i.property)
     (fun i => lt_of_not_ge (fun hi => i.property (hhead i hi)))
     (fun S t ht => by
@@ -122,7 +122,7 @@ theorem tent_full_sum_and_remainder (x h β T : ℝ)
   have heq := hs.sum_add_tsum_compl (s := head)
   have hsplit : (∑' i, (m i : ℂ) * tentKernel x h (ρ i)) -
       (∑ i ∈ head, (m i : ℂ) * tentKernel x h (ρ i)) =
-      ∑' i : {i // i ∉ head}, (m i : ℂ) * tentKernel x h (ρ i) := by
+      ∑' i : (Set.Elem ((head : Set ι)ᶜ)), (m i : ℂ) * tentKernel x h (ρ i) := by
     rw [← heq]
     ring
   rw [hsplit]

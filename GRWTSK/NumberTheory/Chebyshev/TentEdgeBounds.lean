@@ -62,7 +62,8 @@ theorem continuous_zeta_tent_left (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) (N :
     linarith [leftEdge_neg N]
   have hpath : ContinuousAt (fun u : ℝ =>
       (leftEdge N : ℂ) + (u : ℂ) * Complex.I) t := by fun_prop
-  exact (analyticAt_integrand x h hh ha s hp (zeta_ne_zero_on_left N s hs)).continuousAt.comp hpath
+  exact (analyticAt_integrand x h hh ha s hp (zeta_ne_zero_on_left N s hs)).continuousAt.comp
+    (f := fun u : ℝ => (leftEdge N : ℂ) + (u : ℂ) * Complex.I) (x := t) hpath
 
 /-- Actual source regularity supplies the finite vertical integrability premise. -/
 theorem zeta_tent_left_intervalIntegrable (x h : ℝ) (hh : 0 < h)
@@ -86,7 +87,8 @@ theorem norm_selected_horizontal_le (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
   have hysq : y ^ 2 = (separatedHeight J) ^ 2 := by rw [← sq_abs y, hy]
   have hi := separated_horizontal_integrable x h hh ha J (leftEdge N) 2 y
     ((leftEdge_neg N).le.trans (by norm_num)) hy
-  simpa only [integrand, hysq] using norm_horizontal_product_le
+  change ‖horizontal (fun z => -logDeriv riemannZeta z * tentKernel x h z) (leftEdge N) 2 y‖ ≤ _
+  simpa only [hysq] using norm_horizontal_product_le
     (fun s => -logDeriv riemannZeta s) x h (leftEdge N) y Q hh ha
     ((leftEdge_neg N).le.trans (by norm_num)) hy0 hQ hi hg
 
@@ -97,7 +99,8 @@ theorem norm_left_vertical_le (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
       ‖-logDeriv riemannZeta ((leftEdge N : ℂ) + (t : ℂ) * Complex.I)‖ ≤ Q) :
     ‖vertical (integrand x h) (leftEdge N) T‖ ≤
       Q * (4 * Real.exp (-2 * (N : ℝ) * Real.log (x - h)) / h) * Real.pi := by
-  simpa only [integrand, powerProfile_leftEdge] using norm_vertical_product_le
+  change ‖vertical (fun z => -logDeriv riemannZeta z * tentKernel x h z) (leftEdge N) T‖ ≤ _
+  simpa only [powerProfile_leftEdge] using norm_vertical_product_le
     (fun s => -logDeriv riemannZeta s) x h (leftEdge N) T Q hh ha
     (leftEdge_le_neg_two N hN) hT hQ (zeta_tent_left_intervalIntegrable x h hh ha N T) hg
 
@@ -146,7 +149,7 @@ theorem norm_edgeRemainder_le (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
       add_le_add (div_le_div_of_nonneg_right hL hp.le) (div_le_div_of_nonneg_right hUD hp.le)
     _ = _ := by
       field_simp [Real.pi_ne_zero, ne_of_gt hh, ne_of_gt (separatedHeight_pos J)]
-      <;> ring
+      ; ring
 
 /-- The finite source comparison inherits the same explicit edge budget, not an unassigned residual. -/
 theorem norm_right_residue_defect_le (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)

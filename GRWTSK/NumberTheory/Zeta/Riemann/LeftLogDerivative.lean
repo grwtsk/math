@@ -41,7 +41,7 @@ theorem leftPoint_re (N : ℕ) (t : ℝ) : (leftPoint N t).re = leftEdge N := by
 theorem leftPoint_reflected (N : ℕ) (t : ℝ) :
     1 - leftPoint N t = (2 - (t : ℂ) * Complex.I) + ((2 * N : ℕ) : ℂ) := by
   simp only [leftPoint, leftEdge, Complex.ofReal_neg, Complex.ofReal_add,
-    Complex.ofReal_mul, Complex.ofReal_natCast, Complex.ofReal_ofNat, Nat.cast_mul, Nat.cast_ofNat]
+    Complex.ofReal_mul, Complex.ofReal_natCast, Complex.ofReal_ofNat, Complex.ofReal_one, Nat.cast_mul, Nat.cast_ofNat]
   ring
 
 /-- The reflected unit has no zero in the open left half-plane. -/
@@ -65,11 +65,11 @@ theorem reflectedUnit_logDeriv {s : ℂ} (hs : s.re < 0) :
       simp only [Complex.sub_re, Complex.one_re]; linarith)
   have dG : HasDerivAt (fun u : ℂ => Complex.Gamma (1 - u))
       (-deriv Complex.Gamma (1 - s)) s := by
-    simpa using ((Complex.differentiableAt_Gamma (1 - s)
+    simpa only [Function.comp_def, id_eq, mul_neg_one] using ((Complex.differentiableAt_Gamma (1 - s)
       (ne_neg_nat_of_re_pos _ hw)).hasDerivAt.comp s ((hasDerivAt_id s).const_sub 1))
   have dZ : HasDerivAt (fun u : ℂ => riemannZeta (1 - u))
       (-deriv riemannZeta (1 - s)) s := by
-    simpa using (differentiableAt_riemannZeta hw1).hasDerivAt.comp s
+    simpa only [Function.comp_def, id_eq, mul_neg_one] using (differentiableAt_riemannZeta hw1).hasDerivAt.comp s
       ((hasDerivAt_id s).const_sub 1)
   have dE := (((hasDerivAt_id s).sub_const 1).const_mul
     (Complex.log (2 * (Real.pi : ℂ)))).cexp
@@ -77,8 +77,8 @@ theorem reflectedUnit_logDeriv {s : ℂ} (hs : s.re < 0) :
   change HasDerivAt reflectedUnit _ s at dU
   rw [logDeriv_apply, dU.deriv, Complex.digamma_def, logDeriv_apply, logDeriv_apply]
   unfold reflectedUnit
-  field_simp [hG, hZ, Complex.exp_ne_zero]
-  <;> ring
+  simp only [Pi.mul_apply, id_eq]
+  field_simp [hG, hZ, Complex.exp_ne_zero]; ring
 
 /-- All reflected terms, including the reflected zeta derivative, are retained. -/
 theorem negative_logDeriv_reflection {s : ℂ} (hs : s.re < 0)
@@ -94,11 +94,15 @@ theorem negative_logDeriv_reflection {s : ℂ} (hs : s.re < 0)
   have hsin : Complex.sin ((Real.pi : ℂ) * s / 2) ≠ 0 := by
     intro hz
     exact hζ (by rw [zeta_eq_reflectedUnit_mul_sin hs, hz, mul_zero])
-  have dS := (((hasDerivAt_id s).const_mul (Real.pi : ℂ)).div_const 2).csin
+  have dS : HasDerivAt (fun u : ℂ => Complex.sin ((Real.pi : ℂ) * u / 2))
+      (Complex.cos ((Real.pi : ℂ) * s / 2) * ((Real.pi : ℂ) / 2)) s := by
+    simpa only [id_eq, mul_one] using (((hasDerivAt_id s).const_mul (Real.pi : ℂ)).div_const 2).csin
   rw [(logDeriv_congr_nhds he).eq_of_nhds,
-    logDeriv_mul s (reflectedUnit_ne_zero hs) hsin
+    logDeriv_mul (f := reflectedUnit) (g := fun u => Complex.sin ((Real.pi : ℂ) * u / 2)) s (reflectedUnit_ne_zero hs) hsin
       (reflectedUnit_differentiableAt hs) dS.differentiableAt,
-    reflectedUnit_logDeriv hs, logDeriv_apply, dS.deriv]
+    reflectedUnit_logDeriv hs]
+  simp only [logDeriv_apply]
+  rw [dS.deriv]
   ring
 
 /-- Shifting by a negative even integer leaves this trigonometric quotient unchanged. -/
@@ -113,9 +117,9 @@ theorem left_cotangent_periodic (N : ℕ) (t : ℝ) :
       have he : (Real.pi : ℂ) * leftPoint (N + 1) t / 2 =
           (Real.pi : ℂ) * leftPoint N t / 2 - (Real.pi : ℂ) := by
         simp only [leftPoint, leftEdge, Nat.cast_add, Nat.cast_one, Complex.ofReal_neg,
-          Complex.ofReal_add, Complex.ofReal_mul, Complex.ofReal_natCast, Complex.ofReal_ofNat]
+          Complex.ofReal_add, Complex.ofReal_mul, Complex.ofReal_natCast, Complex.ofReal_ofNat, Complex.ofReal_one]
         ring
-      rw [he, Complex.cos_sub_pi, Complex.sin_sub_pi, neg_div_neg, ih]
+      rw [he, Complex.cos_sub_pi, Complex.sin_sub_pi, neg_div_neg_eq, ih]
 
 /-- Exact recurrence for the actual negative logarithmic derivative. -/
 theorem negative_logDeriv_left_recurrence (N : ℕ) (t : ℝ) :
@@ -152,7 +156,7 @@ theorem norm_logDeriv_right_halfPlane_le (s : ℂ) (hs : 2 ≤ s.re) :
   calc
     _ ≤ ∑' m, ‖_root_.LSeries.term f s m‖ := norm_tsum_le_tsum_norm hσ.norm
     _ ≤ ∑' m, ‖_root_.LSeries.term f 2 m‖ :=
-      tsum_le_tsum (fun m => _root_.LSeries.norm_term_le_of_re_le_re f
+      Summable.tsum_le_tsum (fun m => _root_.LSeries.norm_term_le_of_re_le_re f
         (by simpa using hs) m) hσ.norm h2.norm
     _ = _ := rfl
 
@@ -162,14 +166,15 @@ theorem norm_left_logDeriv_le_base (N : ℕ) (t : ℝ) :
       ‖-logDeriv riemannZeta (leftPoint 0 t)‖ + (N : ℝ) + 2 * mangoldtLineMass := by
   have hs (k : ℕ) : 2 ≤ (1 - leftPoint k t).re := by
     rw [leftPoint_reflected]
-    simp only [Complex.add_re, Complex.sub_re, Complex.ofNat_re, Complex.mul_re,
-      Complex.ofReal_re, Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.natCast_re]
-    nlinarith [Nat.cast_nonneg (R := ℝ) (2 * k)]
+    simp only [Complex.add_re, Complex.sub_re,  Complex.mul_re,
+      Complex.ofReal_re, Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.natCast_re,
+      show (2 : ℂ).re = 2 by rfl, mul_zero, zero_mul, sub_zero]
+    nlinarith [Nat.cast_nonneg (α := ℝ) (2 * k)]
   have hrec : ‖∑ j ∈ Finset.range (2 * N),
       (2 - (t : ℂ) * Complex.I + (j : ℂ))⁻¹‖ ≤ (N : ℝ) := by
     have hc := norm_reciprocal_sum_le (2 - (t : ℂ) * Complex.I) (by simp) (2 * N)
     norm_num only [Nat.cast_mul, Nat.cast_ofNat] at hc
-    convert hc using 1 <;> ring
+    convert hc using 1; ring
   rw [negative_logDeriv_left_recurrence]
   calc
     _ ≤ ‖-logDeriv riemannZeta (leftPoint 0 t) +
@@ -180,7 +185,7 @@ theorem norm_left_logDeriv_le_base (N : ℕ) (t : ℝ) :
           ‖∑ j ∈ Finset.range (2 * N), (2 - (t : ℂ) * Complex.I + (j : ℂ))⁻¹‖) +
           ‖logDeriv riemannZeta (1 - leftPoint N t)‖ +
           ‖logDeriv riemannZeta (1 - leftPoint 0 t)‖ :=
-      add_le_add_right ((norm_add_le _ _).trans (add_le_add_right (norm_add_le _ _) _)) _
+      add_le_add ((norm_add_le _ _).trans (add_le_add (norm_add_le _ _) le_rfl)) le_rfl
     _ ≤ _ := by linarith [norm_logDeriv_right_halfPlane_le _ (hs N),
       norm_logDeriv_right_halfPlane_le _ (hs 0)]
 

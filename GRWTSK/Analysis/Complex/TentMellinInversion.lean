@@ -136,9 +136,9 @@ theorem norm_tentKernel_rightLine_le (x h t : ℝ) (hh : 0 < h) (ha : 1 < x - h)
   have hz1 : rightLine t + 1 ≠ 0 := by
     intro he; have hr := congrArg Complex.re he; norm_num [rightLine] at hr
   have hsq : ‖rightLine t‖ ^ 2 = 4 + t ^ 2 := by
-    simp [Complex.sq_norm, Complex.normSq_apply, rightLine] <;> ring
+    simp [Complex.sq_norm, Complex.normSq_apply, rightLine]; ring
   have hsq1 : ‖rightLine t + 1‖ ^ 2 = 9 + t ^ 2 := by
-    simp [Complex.sq_norm, Complex.normSq_apply, rightLine] <;> ring
+    simp [Complex.sq_norm, Complex.normSq_apply, rightLine]; ring
   have hmono : ‖rightLine t‖ ≤ ‖rightLine t + 1‖ :=
     (sq_le_sq₀ (norm_nonneg _) (norm_nonneg _)).mp (by nlinarith)
   have hprod : 1 + t ^ 2 ≤ ‖rightLine t‖ * ‖rightLine t + 1‖ := by
@@ -154,7 +154,7 @@ theorem norm_tentKernel_rightLine_le (x h t : ℝ) (hh : 0 < h) (ha : 1 < x - h)
     norm_div, norm_mul, norm_mul, Complex.norm_of_nonneg hh.le]
   rw [show rightLineConstant x h * (1 + t ^ 2)⁻¹ =
     (4 * Real.exp (3 * Real.log (x + h))) / (h * (1 + t ^ 2)) by
-      unfold rightLineConstant; ring]
+      unfold rightLineConstant; field_simp]
   apply (div_le_div_iff₀ hd hs).mpr
   exact (mul_le_mul_of_nonneg_right hb hs.le).trans
     (mul_le_mul_of_nonneg_left
@@ -186,7 +186,7 @@ theorem rightLine_inversion (x h y : ℝ) (hh : 0 < h) (ha : 1 < x - h) (hy : 0 
     ((1 / (2 * Real.pi) : ℝ) : ℂ) *
       (∫ t : ℝ, (y : ℂ) ^ (-rightLine t) * tentKernel x h (rightLine t)) =
         (tent x h y : ℂ) := by
-  simpa only [mellinInv, rightLine, smul_eq_mul, Complex.real_smul] using
+  simpa [mellinInv, rightLine, smul_eq_mul, Complex.real_smul] using
     mellinInv_tentKernel x h y hh ha hy
 
 end
