@@ -699,6 +699,35 @@ theorem thetaKernelPartialSum_abs_le (N : ℕ) (u : ℝ) :
           intro n hn
           exact thetaKernelTerm_abs_le_parts n u
 
+
+/-- An explicit uniform majorant supplier for the finite theta partial
+sums. This is a typed conditional hypothesis, not a derived Gaussian
+series estimate. -/
+structure ThetaUniformMajorant (B : ℝ → ℝ) where
+  bound_nonneg : ∀ u, 0 ≤ B u
+  finite_bound : ∀ N u, thetaKernelPartialMajorant N u ≤ B u
+
+/-- A genuine uniform majorant, once supplied, controls every finite
+theta truncation at the same real logarithmic height. -/
+theorem thetaKernelPartialSum_uniform_bound
+    (B : ℝ → ℝ) (cert : ThetaUniformMajorant B)
+    (N : ℕ) (u : ℝ) :
+    |thetaKernelPartialSum N u| ≤ B u :=
+  (thetaKernelPartialSum_abs_le N u).trans (cert.finite_bound N u)
+
+/-- The finite majorant increases as more positive-mode terms are added.
+This is a monotonicity property of the finite sums, not a proof that
+their infinite supremum is finite. -/
+theorem thetaKernelPartialMajorant_mono
+    (N M : ℕ) (u : ℝ) (hNM : N ≤ M) :
+    thetaKernelPartialMajorant N u ≤ thetaKernelPartialMajorant M u := by
+  unfold thetaKernelPartialMajorant
+  apply Finset.sum_le_sum_of_subset_of_nonneg
+  · exact Finset.Icc_subset_Icc_right hNM
+  · intro n hn hnot
+    exact add_nonneg (thetaKernelPositivePart_nonneg n u)
+      (thetaKernelNegativePart_nonneg n u)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
