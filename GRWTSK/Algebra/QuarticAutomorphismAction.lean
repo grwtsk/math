@@ -82,5 +82,41 @@ theorem adjacency_automorphism_compatible
   funext i
   exact (hσ i).symm
 
+
+/-- Evaluation of a polynomial with coefficients fixed by an algebra
+automorphism commutes with that automorphism. -/
+theorem eval_mapped_algEquiv (p : K[X]) (φ : L ≃ₐ[K] L) (x : L) :
+    φ ((p.map (algebraMap K L)).eval x) =
+      (p.map (algebraMap K L)).eval (φ x) := by
+  rw [← eval₂_at_apply, ← eval₂_at_apply]
+  simp only [eval₂_map]
+  exact (map_eval₂ φ.toRingHom (algebraMap K L) x p).trans (by
+    simp)
+
+/-- Every K-algebra automorphism preserves the zero set of the mapped
+polynomial, without assuming separability. -/
+theorem automorphism_preserves_quartic_root (p : K[X])
+    (φ : L ≃ₐ[K] L) (x : L)
+    (hx : (p.map (algebraMap K L)).IsRoot x) :
+    (p.map (algebraMap K L)).IsRoot (φ x) := by
+  rw [IsRoot.def] at hx ⊢
+  rw [← eval_mapped_algEquiv p φ x, hx, map_zero]
+
+/-- The automorphism image of every label of an actual root enumeration
+is another root. This statement does not assume distinct roots. -/
+theorem automorphism_maps_enumerated_roots (p : K[X])
+    (e : QuarticRootEnumeration (L := L) p)
+    (φ : L ≃ₐ[K] L) :
+    ∀ i : Fin 4, (p.map (algebraMap K L)).IsRoot (φ (e.r i)) := by
+  intro i
+  apply automorphism_preserves_quartic_root p φ
+  have hm : e.r i ∈ (p.map (algebraMap K L)).roots := by
+    rw [e.roots_eq]
+    fin_cases i <;> simp
+  exact (mem_roots (by
+    intro h
+    have hh := congrArg Polynomial.natDegree h
+    simp [e.roots_eq] at hh)).mp hm
+
 end
 end GRWTSK.Algebra.QuarticAutomorphismAction
