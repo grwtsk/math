@@ -1,0 +1,71 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-ratio-sandwich-v0.1"
+owner_repository = "grwtsk/math"
+issue = 799
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightRatioSandwichControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightRatioSandwichControls"
+
+[source_binding]
+parent_branch = "research/790-pinned-prime-bertrand-positivity-v01"
+parent_revision = "0121fb8993b7edd11b2a2744d11342b97eb7c6b9"
+implementation_branch = "research/799-pinned-prime-ratio-sandwich-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / BERTRAND_AMPLITUDE_FLOOR_DEFINED / CURRENT_ENVELOPE_CEILING_DEFINED / EXACT_RATIO_SANDWICH_DEFINED / CUBIC_LOSS_NORMALIZATION_DEFINED / UNIFORM_RATIO_BOUND_OPEN / COEFFICIENT_SOURCE_LAW_OPEN / SEVEN_EIGHTHS_RATIO_CRITERION_OPEN / THREE_QUARTERS_RATIO_CRITERION_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[quantitative_floor]
+bertrand_floor = "log(2)/(2X)"
+prime_witness = "exists p prime with X<p<=2X"
+coefficient_lower_bound = "log(2)/(2X)<=log(p)/p"
+amplitude_lower_bound = "BertrandFloor(X)<=A_X"
+square_lower_bound = "BertrandFloor(X)^2<=A_X^2"
+
+[current_envelope_ceiling]
+coefficient_mass_budget = "2*log(4)"
+envelope = "forall u in [X,2X], abs(thetaError(u))+1<=B"
+amplitude_upper_bound = "A_X<=(2*log(4))*B"
+square_upper_bound = "A_X^2<=((2*log(4))*B)^2"
+
+[ratio_sandwich]
+remaining_target = "T(v,E)=max(0,abs(thetaError(v))+1-E)"
+required_capacity = "C_req=X*T/A_X^2"
+envelope_minorant = "X*T/((2*log(4))*B)^2"
+bertrand_majorant = "X*T/(log(2)/(2X))^2"
+sandwich = "EnvelopeMinorant<=C_req<=BertrandMajorant"
+cubic_normalization = "BertrandMajorant=4*X^3*T/(log(2))^2"
+
+[analytic_boundary]
+bertrand_floor_uniform_ratio_proved = false
+current_envelope_cross_scale_majorant_proved = false
+seven_eighths_ratio_criterion_proved = false
+three_quarters_ratio_criterion_proved = false
+coefficient_source_law_proved = false
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightRatioSandwich"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightRatioSandwich.lean"
+blob = "165cd57caca5edfbfbffa3681717ece615c35006"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightRatioSandwichControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightRatioSandwichControls.lean"
+blob = "917471754b0f8ab296b1d3e745fd01ab265d8f7a"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-ratio-sandwich.md"
+blob = "39c3e295e155a72599c6b16cee80fbff615bd61f"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+BERTRAND_AMPLITUDE_FLOOR_DEFINED = true
+CURRENT_ENVELOPE_CEILING_DEFINED = true
+EXACT_RATIO_SANDWICH_DEFINED = true
+CUBIC_LOSS_NORMALIZATION_DEFINED = true
+UNIFORM_RATIO_BOUND_PROVED = false
+COEFFICIENT_SOURCE_LAW_PROVED = false
+SEVEN_EIGHTHS_RATIO_CRITERION_PROVED = false
+THREE_QUARTERS_RATIO_CRITERION_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false
