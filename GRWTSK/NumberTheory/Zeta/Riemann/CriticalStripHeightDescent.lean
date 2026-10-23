@@ -87,7 +87,9 @@ theorem windowRH_iff_rhThrough (N : ℕ) :
 /-- Each window has an ambient point; no unproved zero-existence premise is used. -/
 theorem heightWindow_nonempty (N : ℕ) : (heightWindow N).Nonempty := by
   refine ⟨0, ?_⟩
-  simp [heightWindow, ZetaCommutatorRoot.heightAt_eq_im]
+  change |ZetaCommutatorRoot.root.heightAt (0 : ℂ)| ≤ (N : ℝ)
+  rw [ZetaCommutatorRoot.heightAt_eq_im]
+  simpa using (Nat.cast_nonneg (α := ℝ) N)
 
 /-- All complex source points, hence all canonical target zeros, are covered. -/
 theorem heightWindows_cover (z : ℂ) : ∃ N : ℕ, z ∈ heightWindow N := by
@@ -218,9 +220,11 @@ theorem bounded_windows_miss_point (B : ℕ) :
 theorem root_height_not_injective :
     ¬ Function.Injective ZetaCommutatorRoot.root.heightAt := by
   intro h
+  have him : (0 : ℂ).im = (1 : ℂ).im := rfl
   have heq : ZetaCommutatorRoot.root.heightAt (0 : ℂ) =
-      ZetaCommutatorRoot.root.heightAt (1 : ℂ) := by
-    simp [ZetaCommutatorRoot.heightAt_eq_im]
+      ZetaCommutatorRoot.root.heightAt (1 : ℂ) :=
+    (ZetaCommutatorRoot.heightAt_eq_im 0).trans
+      (him.trans (ZetaCommutatorRoot.heightAt_eq_im 1).symm)
   exact zero_ne_one (h heq)
 
 /-- The coordinate image consists of upper shifts whose pairwise products vanish.
