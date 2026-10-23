@@ -53,7 +53,8 @@ theorem residueOrbit_three_eq_neg_one :
 two antipodal representatives. -/
 theorem orbitPhase_two_ne_zero :
     orbitPhase (2 : Fin 4) ≠ orbitPhase (0 : Fin 4) := by
-  norm_num [orbitPhase]
+  change (-1 : ℂ) ≠ 1
+  norm_num
 
 /-- Invariance under -1 is a necessary (not sufficient) condition for
 descent of a vector observable to the projective quotient. -/

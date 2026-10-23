@@ -125,6 +125,7 @@ theorem projectiveParityReadout_on_orbit (j : Fin 4) :
   fin_cases j <;>
     norm_num [projectiveParityReadout, residueOrbit, orbitPhase,
       Complex.I_mul_I]
+  all_goals decide
 
 /-- The descended two-state phase has eigenvalue -1 under the ACTUAL
 LR return, on the four explicitly realized nonzero vectors only. -/
@@ -154,7 +155,7 @@ theorem orbitPhase_not_factorsThrough_parity :
     ¬ FactorsThrough parityProfile orbitPhase :=
   not_factorsThrough_of_collision parityProfile orbitPhase
     (0 : Fin 4) (2 : Fin 4) parityProfile_zero_eq_two
-    (by norm_num [orbitPhase])
+    (by change (1 : ℂ) ≠ -1; norm_num)
 
 /-- A genuine decoder for the *squared* phase through the parity
 quotient, repairing precisely the lost antipodal sign information. -/
