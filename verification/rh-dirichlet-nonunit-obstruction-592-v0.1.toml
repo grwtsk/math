@@ -1,0 +1,131 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dirichlet-nonunit-obstruction-592-v0.1"
+owner_repository = "grwtsk/math"
+issue = 592
+parent_issue = 586
+parent_pr = 588
+l_function_review_issue = 500
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_PURE_DIRICHLET_CHARACTER_REDUCTION_REFUTED_AT_SCOPE"
+root_module = "GRWTSK.NumberTheory.Moebius.DirichletNonunitResidueObstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.DirichletNonunitResidueObstruction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-natural-scale-congruence-l1-586-20261021"
+stacked_parent_revision = "8c511882f632af8382cde73b8832859f30e61e94"
+stacked_parent_tree = "da9a9d4f0776a1879b7cd80365da05174b333da5"
+candidate_branch = "research/rh-dirichlet-nonunit-obstruction-592-20261021"
+theorem_source_commit = "86d7cec91d4bf7d984d7c8c5063ccff03cddd52d"
+theorem_source_tree = "7a3f3a0138d0cf1d09fd38b26f8f2964ea036e34"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/DirichletNonunitResidueObstruction.lean"
+theorem_source_git_blob = "8550083484ee9639a5fb96d9428b118b38c7d4da"
+
+[witness]
+endpoint = 6
+prefix = 4
+shift = 2
+modulus_parameter = 2
+square_modulus = 4
+base_index = 1
+x = 2
+midpoint = 4
+residue = "2 mod 4"
+residue_is_unit = false
+endpoint_product = "-1"
+
+[selected_increment]
+support_membership = "actualNonunitCongruenceBase_mem"
+nonunit = "two_not_isUnit_zmod_four"
+character_vanishing = "dirichletCharacter_mod_four_two_eq_zero"
+mobius_six = "moebiusReal_six_for_nonunit_residue_witness"
+nonzero_endpoint_term = "actualNonunitEndpointProduct_eq_neg_one"
+linear_combination = "dirichletCharacterLinearCombinationModFour"
+linear_combination_vanishing = "dirichletCharacterLinearCombinationModFour_two_eq_zero"
+residue_indicator = "residueTwoIndicatorModFour"
+representation_proposal = "PureDirichletCharacterResidueTwoRepresentation"
+representation_refutation = "not_pureDirichletCharacterResidueTwoRepresentation"
+named_disposition = "PureDirichletCharacterReductionRefutedAtScope"
+repair_adapter = "NonunitResidueRepairAdapter"
+proof_classification = "FINITE_ACTUAL_MOBIUS_NONUNIT_RESIDUE_WITNESS"
+
+[dirichlet_boundary]
+ordinary_dirichlet_characters_vanish_on_nonunits = true
+required_residue_can_be_nonunit = true
+required_residue_term_can_be_nonzero = true
+pure_same_modulus_multiplicative_character_span_complete = false
+gcd_stratification_required_or_alternative = true
+additive_character_route_relevant = true
+dirichlet_l_functions_refuted = false
+
+[scope_disposition]
+refutes = "pure ordinary multiplicative Dirichlet-character representation of every exact square-modulus residue selector"
+does_not_refute = [
+  "Dirichlet L-function usefulness after gcd stratification",
+  "additive-character expansions",
+  "hybrid additive/multiplicative decompositions",
+  "OpenAI Result 003",
+  "OpenAI Result 007",
+  "DyadicNaturalScaleSquareModulusCongruenceL1",
+  "RiemannHypothesis"
+]
+
+[evidence_states]
+source_draft = true
+pure_dirichlet_character_reduction_refuted_at_scope = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+gcd_stratified_adapter_constructed = false
+additive_character_adapter_constructed = false
+natural_scale_endpoint_l1_supplier_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DirichletNonunitResidueObstruction"
+authored_declaration_count = 12
+definition_count = 4
+theorem_script_count = 7
+structure_count = 1
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/NaturalScaleSquareModulusCongruenceL1.lean"
+git_blob = "d2111eae7c76579ae719a36f8b8e8da7a90461a7"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_588"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.DirichletCharacter.Orthogonality"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Data.ZMod.Units"
+declaration = "ZMod.isUnit_iff_coprime"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+nonunit_residue_not_discarded = true
+active_term_nonzero_checked_source_level = true
+pure_character_span_not_promoted_to_complete_residue_basis = true
+dirichlet_l_function_program_not_refuted = true
+gcd_or_additive_repair_required = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_gcd_stratified_or_additive_character_repair = true
+connect_repaired_representation_to_l_function_inputs = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+dirichlet_l_functions_useless = false
+result_003_refuted = false
+result_007_refuted = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
