@@ -72,3 +72,5 @@ Mapping extraction, rendering and validation tooling lives in `grwtsk/noeaaeue/o
 Latest assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.
 
 Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.
+
+Next implementation pass: [local order detection, finite local products, residual readouts and rate separation by taxonomy](obligation-implementation-progress-v2.md). Four obligations remain completed; seven have verified partial results; 25 remain unresolved.
