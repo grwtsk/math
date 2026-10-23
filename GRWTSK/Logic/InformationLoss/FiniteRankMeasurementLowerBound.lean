@@ -4,6 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No root import.
 -/
 import GRWTSK.Logic.InformationLoss.FiniteRankMeasurementRange
+import Mathlib.LinearAlgebra.Dimension.StrongRankCondition
 
 /-!
 # Finrank lower bound for added linear measurements
@@ -37,10 +38,7 @@ theorem old_kernel_finrank_le_extra_finrank
     (P : V →ₗ[K] Y) (A : V →ₗ[K] W)
     (hpair : Function.Injective (pairedLinearObservation P A)) :
     Module.finrank K P.ker ≤ Module.finrank K W := by
-  have heq := finrank_extra_range_eq_old_kernel P A hpair
-  calc
-    Module.finrank K P.ker =
-        Module.finrank K (extraOnOldKernel P A).range := heq.symm
-    _ ≤ Module.finrank K W := Submodule.finrank_le _
+  exact LinearMap.finrank_le_finrank_of_injective
+    (f := extraOnOldKernel P A) (extraOnOldKernel_injective P A hpair)
 
 end GRWTSK.Logic.InformationLoss
