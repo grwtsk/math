@@ -50,6 +50,7 @@ noncomputable section
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone
 
+open _root_.Topology
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
