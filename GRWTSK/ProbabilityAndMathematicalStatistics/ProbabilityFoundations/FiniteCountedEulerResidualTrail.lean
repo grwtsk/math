@@ -333,4 +333,30 @@ theorem ResidualFreshTrail.single_used
   exact FreshCountedTrail.single_used m c e
 
 
+
+/-- Starting from any residual edge instance in a balanced residual
+multigraph, maximal extension produces a NONEMPTY closed fresh trail
+based at that edge's source. The seed instance remains used. -/
+theorem ResidualFreshTrail.exists_nonempty_closed_of_edge
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    (U : Finset (CountedBinaryEdge m c))
+    (hbalance : ResidualDegreeBalanced m c U)
+    (e : CountedBinaryEdge m c) (he : e ∈ U) :
+    ∃ R : ResidualFreshTrail m c U
+        (countedEdgeSource m c e) (countedEdgeSource m c e),
+      e ∈ R.trail.used ∧ 0 < R.trail.used.card := by
+  let T := ResidualFreshTrail.single m c U e he
+  obtain ⟨z, Q, hmax, hTQ⟩ := T.exists_maximal_extension
+  have hclosed := Q.closed_of_balanced_maximal hbalance hmax
+  subst z
+  refine ⟨Q, ?_, ?_⟩
+  · apply hTQ
+    rw [ResidualFreshTrail.single_used]
+    exact Finset.mem_singleton_self e
+  · exact Finset.card_pos.mpr
+      ⟨e, hTQ (by
+        rw [ResidualFreshTrail.single_used]
+        exact Finset.mem_singleton_self e)⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
