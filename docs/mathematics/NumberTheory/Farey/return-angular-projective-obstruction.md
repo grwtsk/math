@@ -91,6 +91,32 @@ projector algebra. These are **NOT** Lean elaboration, kernel checks
 or transitive axiom audits. The local environment has no Lean/Lake
 executables. See exact-commit verification issue (queued separately).
 
+## Downstream positive projective repair — source-only
+
+The previously missing **finite** sign-invariant return eigenchannel is
+now a standalone source proof candidate in
+[`ProjectiveQuadraticChannel.lean`](../../../../GRWTSK/NumberTheory/Farey/ProjectiveQuadraticChannel.lean),
+first integrated at main commit
+`0783908183b27551088174e28703b9116bf2ada7`,
+blob `b07cb18412f3e64f42d2916fea91b1e59b2228c2`.
+Its actual `ZMod 3` quadratic `Q(x,y)=x(x+y)` satisfies
+`Q(-v)=Q(v)` and `Q(Hv)=-Q(v)` for every vector.
+A signed complex three-element lift gives a nonzero
+`-1` eigenreadout on the **five-class** sign quotient:
+four projective lines and the distinct zero class.
+It matches the square, not the original `i` phase,
+on the earlier selected four-vector orbit. This is
+therefore consistent with the quarter-turn no-go,
+not a counterexample to it.
+
+Actual Lean elaboration, fresh kernel checking and transitive
+axiom auditing of the new leaf are **PENDING** under
+[verification #1111](https://github.com/grwtsk/math/issues/1111),
+pinned at `69bed07912614d448ecb013f2247a07c79d14f2a`.
+The earlier no-go source has separate gate #1102.
+The analytic, nonperiodic and admissible-gauge
+bridges remain unresolved.
+
 ## Next bounded supplier
 
 Construct an **actual source-preserving projective angular channel**
