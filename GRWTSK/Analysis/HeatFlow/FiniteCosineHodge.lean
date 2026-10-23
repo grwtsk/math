@@ -854,7 +854,7 @@ theorem polynomial_exponential_envelope (x : ℝ) (hx : 0 ≤ x) :
       20 * Real.exp (-(x / 2)) := by
   have hx4 : 0 ≤ x / 4 := by positivity
   have hExpLower : 1 + x / 4 ≤ Real.exp (x / 4) := by
-    simpa [add_comm] using (add_one_le_exp (x / 4))
+    simpa [add_comm] using (Real.add_one_le_exp (x / 4))
   have hEone : 1 ≤ Real.exp (x / 4) := by linarith
   have hlinear : x ≤ 4 * Real.exp (x / 4) := by linarith
   have hsquare : x ^ 2 ≤ 16 * Real.exp (x / 4) ^ 2 := by
