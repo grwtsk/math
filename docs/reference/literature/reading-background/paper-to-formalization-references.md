@@ -4157,11 +4157,18 @@ to this new module or to the
 `ProjectiveQuadraticChannel`
 source-only obligations (their
 requests remain independent).
-An exact-commit passive issue
-with module/dependency blobs,
-commands and hostile controls
-is required before upgrading
-any verification state.
+An exact-commit passive request is now queued:
+[math #1123](https://github.com/grwtsk/math/issues/1123)
+and the separate authorization-gated effectful/receipt
+handoff [noeaaeue #391](https://github.com/grwtsk/noeaaeue/issues/391).
+Both are pinned to **math main commit**
+`37f087dce1217c96a408fe99c489a3d168423949`,
+Git tree `15f65387bd268002ddfc36e2f30bd572f19536d8`,
+source blob `50b0a865a550341322e64615419461b998546e17`,
+and the exact concurrently repaired parent source blobs
+recorded above. They are **QUEUED only**:
+no runner has been dispatched, no Lean build/kernel/audit
+was executed and no mathematical result was promoted.
 Operational runners, receipts
 and mutable execution state
 belong in `grwtsk/noeaaeue`,
