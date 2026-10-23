@@ -170,4 +170,35 @@ theorem CountedWalk.chronologicalVertices_last
       simp
 
 
+
+/-- The first and last vertices of the chronological trace agree
+for every closed counted directed walk. This is the exact endpoint
+seam needed for cyclic Euler order compatibility. -/
+theorem CountedWalk.closed_chronological_seam
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (hclosed : a = b) :
+    T.chronologicalVertices.head? =
+      T.chronologicalVertices.getLast? := by
+  rw [T.chronologicalVertices_head,
+    T.chronologicalVertices_last, hclosed]
+
+/-- The chronological edge trace is nonempty whenever the used
+edge-instance set is nonempty. This ensures a genuine final edge
+exists when extracting a cyclic Euler certificate. -/
+theorem FreshCountedTrail.chronologicalEdges_nonempty
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hused : T.used.Nonempty) :
+    T.walk.chronologicalEdges ≠ [] := by
+  intro hnil
+  have hfin := T.walk.chronologicalEdges_toFinset
+  rw [hnil] at hfin
+  have hzero : T.used = ∅ := by
+    simpa [FreshCountedTrail.used] using hfin.symm
+  exact (Finset.nonempty_iff_ne_empty.mp hused) hzero
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
