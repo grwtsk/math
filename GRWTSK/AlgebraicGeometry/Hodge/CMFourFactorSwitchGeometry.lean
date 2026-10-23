@@ -1264,15 +1264,6 @@ rational tensor square of the finite CM field. Unlike the later fourfold
 cohomological comparison, this map uses only field multiplication and
 the tensor-product universal property. -/
 
-/-- The finite coefficient multiplication map sends the unit pure
-tensor to the unit of the CM field. -/
-@[simp]
-theorem CMFiniteCoefficientMultiplication_one
-    (E : CMGaloisIntermediateField) :
-    CMFiniteCoefficientMultiplication E
-        ((1 : E.carrier) ⊗ₜ[ℚ] (1 : E.carrier)) = 1 := by
-  simp
-
 /-- Diagonal rational-linear action on the finite tensor square: both
 factors are conjugated by the same field automorphism. -/
 def CMFiniteDiagonalScalarConjugate
