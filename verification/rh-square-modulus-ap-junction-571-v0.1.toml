@@ -1,0 +1,128 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-square-modulus-ap-junction-571-v0.1"
+owner_repository = "grwtsk/math"
+issue = 571
+parent_issue = 567
+parent_pr = 568
+earlier_junction_issue = 477
+earlier_junction_pr = 479
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ALL_SQUARE_MODULUS_LITERATURE_ADAPTERS_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SquareModulusAPConjectureJunction"
+build_target = "GRWTSK.NumberTheory.Moebius.SquareModulusAPConjectureJunction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-uniform-square-modulus-ap-567-20261021"
+stacked_parent_revision = "f94e5fc0efd27757af9ea5f4bfbc7db56132b220"
+stacked_parent_tree = "afb2801174bbe086cb2222f12f2df91cff166443"
+candidate_branch = "research/rh-square-modulus-junction-571-20261021"
+theorem_source_commit = "2ea9c1a732af39cfc749b62a3f3fef817b9a1358"
+theorem_source_tree = "ccaef780a20d457e5698c1b397bcbbbcc62611c3"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SquareModulusAPConjectureJunction.lean"
+theorem_source_git_blob = "a5028ac5f7fc38f6330a0c26d63f38dcc0e73b93"
+
+[target]
+name = "UniformDyadicSquareModulusMertensTwoPointAP"
+growing_shift = true
+growing_square_modulus = true
+shift_dependent_residue = true
+every_endpoint = true
+every_modulus = true
+one_constant_per_delta = true
+ordinary_average = true
+
+[selected_increment]
+fixed_form_data = "FixedFormBinaryChowlaData"
+fixed_residue_elliott_data = "FixedResidueCorrectedElliottData"
+growing_shift_data = "GrowingShiftBinaryChowlaData"
+uniform_ap_data = "UniformAPBinaryCorrelationData"
+uniformity_requirements = "SquareModulusUniformityRequirements"
+proof_adapter = "ToUniformSquareModulusAPAdapter"
+generic_target_transport = "uniformSquareModulusAP_of_adapter"
+generic_l1_transport = "congruenceL1_of_squareModulusAdapter"
+generic_signed_transport = "signedCongruenceCrossCollision_of_squareModulusAdapter"
+proof_classification = "TYPED_LITERATURE_AND_CONJECTURE_JUNCTION_NO_NAMED_ADAPTER_VALUES"
+
+[result_007]
+source = "OpenAI Math Result 007, September 24 2026"
+url = "https://math20.org/f/007/"
+classification = "RECENTLY_CLOSED_FIXED_SCOPE_ADAPTER_OPEN"
+ordinary_average = true
+fixed_nonproportional_affine_forms = true
+fixed_residue_classes = true
+power_log_saving = true
+constant_may_depend_on_forms = true
+growing_shift_uniformity_supplied_by_scope = false
+growing_square_modulus_uniformity_supplied_by_scope = false
+one_constant_for_dyadic_family_supplied_by_scope = false
+adapter_constructed = false
+
+[function_field_analogue]
+authors = "Will Sawin; Mark Shusterman"
+title = "On the Chowla and twin primes conjectures over F_q[T]"
+journal = "Annals of Mathematics 196 (2022), 457-506"
+doi = "10.4007/annals.2022.196.2.1"
+classification = "FUNCTION_FIELD_ANALOGUE_ONLY"
+ap_level_of_distribution_relevant = true
+large_shift_uniformity_relevant = true
+integer_transport_constructed = false
+repository_proof_edge = false
+
+[adapter_boundaries]
+fixed_forms_to_growing = "FixedFormsToGrowingFormsAdapter"
+fixed_residue_to_growing_square_modulus = "FixedResidueToGrowingSquareModulusAdapter"
+almost_all_to_every_modulus = "ModulusCoverageAdapter"
+average_classes_to_required_class = "ResidueCoverageAdapter"
+logarithmic_to_ordinary = "AveragingConventionAdapter"
+function_field_to_integer = "FunctionFieldAnalogueBoundary"
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+named_literature_adapter_constructed = false
+uniform_square_modulus_ap_supplier_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SquareModulusAPConjectureJunction"
+authored_declaration_count = 22
+definition_count = 5
+theorem_script_count = 4
+structure_count = 13
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/UniformSquareModulusTwoPointAP.lean"
+git_blob = "29e2a20e8aa802d622d370532d823ea30b469dd0"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_568"
+
+[hostile_controls]
+literature_url_not_theorem = true
+fixed_constant_not_promoted_to_growing_uniform_constant = true
+fixed_residue_not_promoted_to_growing_modulus = true
+almost_all_not_promoted_to_every_modulus = true
+average_residue_not_promoted_to_required_class = true
+function_field_not_promoted_to_integer = true
+adapter_type_not_adapter_value = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_named_uniformity_adapter = true
+prove_uniform_square_modulus_ap_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+openai_result_007_directly_supplies_target = false
+function_field_result_directly_supplies_target = false
+binary_chowla_adapter_proved = false
+elliott_adapter_proved = false
+riemann_hypothesis_proved = false
