@@ -1,0 +1,261 @@
+schema = "grwtsk.remaining-multiplicity-budget.v0.1"
+id = "remaining-multiplicity-budget-core-v0.1"
+owner_issue = 330
+related_issues = [139, 135, 307, 100]
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+root = "GRWTSK.Interfaces.RemainingMultiplicityBudgetCore"
+public_root_imported = false
+passive_specification_only = true
+
+[source]
+repository = "grwtsk/math"
+base_commit = "47619c01d13e365916bae38e799734279df6844b"
+base_tree = "434b354a5870bf9860ddab90b4975af83c6a3403"
+toolchain = "leanprover/lean4:v4.33.0"
+toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+acceptance_binding = "Bind eventual candidate commit, tree, target path and target blob externally; the base is not the candidate."
+
+[inherited_target]
+path = "docs/verification/_unscoped/reflected-multiplicity-supplier-core-v0.1.toml"
+git_blob = "ffddeaa03b33b57bf9c6ac1c3779e91fa4438f56"
+commit = "47619c01d13e365916bae38e799734279df6844b"
+all_requirements_and_predecessor_targets_retained = true
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry = true
+reject_unreported_native_or_unsafe = true
+missing_audit_is_pass = false
+transitive_audit_status = "NOT_RUN"
+independently_authored_complete_type_expectations = "PENDING"
+full_dependency_inventory = "PENDING; the source table is not a transitive inventory"
+choice_free_dependency_claim = false
+
+[acceptance]
+requirements = [
+  "Elaborate the new owner modules, isolated root and every inherited dependency at exact pins; repair unelaborated source as necessary.",
+  "Independently author and compare complete expected types with all hypotheses, binders, universes and generated declarations; lexical names are insufficient.",
+  "Retain every predecessor target, full import/body/axiom/native audit and compiler qualification; unchanged allowance is not an audit result.",
+  "Prove known-subset membership in the same canonical regional head before using its subtraction identity or numeric residual budget.",
+  "Use deduplicated full point identity, actual positive analytic multiplicity, and exact on-line proofs for every removed point.",
+  "Retain actual reflection, region stability, both partner memberships, distinctness off the line and source-derived multiplicity preservation.",
+  "Keep selected-root and uniform-all-region thresholds distinct, with strict inequalities, lower certificates and independent total upper certificates.",
+  "Do not promote remaining mass below two to enumeration completeness; use the separate positive-weight zero-remainder theorem.",
+  "Reconcile cutoff endpoints, height signs and all source/region conventions; no unproved adapter from the asymmetric count rectangle.",
+  "Execute the eight new controls only under separately authorized replay; source presence or finite diagnostics are not proof acceptance.",
+  "Bind eventual acceptance through the existing replay framework; this passive specification authorizes no execution or hold release."
+]
+nonclaims = [
+  "No actual numerical zero list, known-mass certificate, useful count upper bound, SourceAcceptance or all-height supplier is constructed.",
+  "No accepted count, bounded/global RH, complete external enumeration or choice-free closure is claimed.",
+  "Finite diagnostic counts are not Lean result counts or evidence for analytic suppliers."
+]
+
+[inventory]
+new_theorem_commands = 27
+new_definition_commands = 1
+new_controls = 8
+all_generated_and_transitive_declarations = "PENDING"
+
+[[new_sources]]
+path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+git_blob = "7d7bc47c94ff422c15050e9eacfb6fe3c50dce5e"
+sha256 = "54adeee710b0c6ee904a242b636fd9174544ec0ad7e478db471487a835021395"
+lines = 139
+imports = ["GRWTSK.Combinatorics.WeightedPairBudget", "Mathlib.Algebra.BigOperators.Group.Finset.Basic", "Mathlib.Tactic"]
+
+[[new_sources]]
+path = "GRWTSK/Interfaces/RemainingMultiplicityBudgetCore.lean"
+git_blob = "a18f841898dc042ce5d58123efeebfa0ce11bf24"
+sha256 = "59ebea04b6e284e85170c0acc963b640f2cd41046505da0bcb5c21fc47a6ba60"
+lines = 2
+imports = ["GRWTSK.Combinatorics.WeightedSubsetBudget", "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget"]
+
+[[new_sources]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+git_blob = "7246b8e70417c4847457242457257ea407c90e41"
+sha256 = "9256a267d107b0eab019409803d1afef58f5c644d59fe584c4f23737027751f1"
+lines = 163
+imports = ["GRWTSK.Combinatorics.WeightedSubsetBudget", "GRWTSK.NumberTheory.Zeta.Riemann.ReflectedMultiplicitySupplier"]
+
+[[new_sources]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/remaining-multiplicity-budget.md"
+git_blob = "d6981f1618d026d61daa26c997400659a0d73e94"
+sha256 = "39bb096b265c3cf7ec53e835ac12ae10d976dced7ff08ce9a27d6ed854d19fc4"
+lines = 124
+imports = []
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.mass_mono"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.remaining_add_known"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.remaining_eq_sub"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.lower_le_upper"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.remaining_le_budget"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.lower_weights_le_mass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.known_add_pair_le_mass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.weight_le_mass"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.eq_of_mass_eq"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.one_missing_fixed_point_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.two_missing_exchanged_points_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.contaminated_known_set_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.outside_known_set_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.overlapping_reports_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.zero_weight_exhaustion_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.overclaimed_lower_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.Combinatorics.WeightedSubsetBudget.repeated_fixed_point_inconclusive_fixture"
+kind = "theorem"
+owner_path = "GRWTSK/Combinatorics/WeightedSubsetBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.remainingCount"
+kind = "def"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.remaining_add_known"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.remaining_eq_sub"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.reflected_off_line"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.known_add_twice_le_count_of_off_line"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.critical_line_of_known_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.all_on_line_of_known_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.all_on_line_of_sub_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.all_on_line_of_remaining_lt_two"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.known_eq_regionHead_of_remaining_zero"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RemainingMultiplicityBudget.rhThrough_of_height_known_budget"
+kind = "theorem"
+owner_path = "GRWTSK/NumberTheory/Zeta/Riemann/RemainingMultiplicityBudget.lean"
+type_status = "AUTHORED_SOURCE_ONLY; independent complete type and elaborated comparison pending"
+
+[controls]
+status = "SOURCE_PRESENT / NOT_EXECUTED"
+names = ["GRWTSK.Combinatorics.WeightedSubsetBudget.one_missing_fixed_point_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.two_missing_exchanged_points_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.contaminated_known_set_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.outside_known_set_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.overlapping_reports_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.zero_weight_exhaustion_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.overclaimed_lower_fixture", "GRWTSK.Combinatorics.WeightedSubsetBudget.repeated_fixed_point_inconclusive_fixture"]

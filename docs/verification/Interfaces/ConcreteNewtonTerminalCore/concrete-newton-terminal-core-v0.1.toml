@@ -1,0 +1,140 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "concrete-newton-terminal-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.ConcreteNewtonTerminalCore"
+build_target = "GRWTSK.Interfaces.ConcreteNewtonTerminalCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "db54ffe311be3f7faaf15d0a9c0767a0bf52ba49"
+base_tree = "6bde817d4385c1d3ba5658318b174cfcc1a5fcd1"
+parent_pr = 336
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/ConcreteNewtonThirdEndpointCore/concrete-newton-third-endpoint-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "f579e7d9047ead0747b64fa0168d573d9534739a".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "be8118010261a8e817f10e811e744b87aa7bb04f".
+# Pre-quadrature-repair inherited_target_blob = "3b03fe6abe3c8bd9b49d2a03f3cefcc03bd23bf6".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "897433e73df3c181eb533f0596b56c50a1c3ec63".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "b5ab893554c0a03a32d2bd952a3a5e79cc911297"
+receipt_policy = "Execution evidence and authorization are external; this static target grants none."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+generic_seed_refinement = "EXACT_ORIGINAL_ARGUMENT_RADIUS_DISPLACEMENT_AND_DEGREE"
+complete_error = "DERIVED_INTEGER_FRACTION_NOT_SUPPLIED_OR_SHRUNK"
+terminal_acceptance = "CLOSED_SOURCE_SCRIPT_NOT_KERNEL_ACCEPTED"
+terminal_base = 4097
+prefix_length = 4096
+new_prefix_endpoint_leaves = 0
+remaining_adapter_premises = "ALL_64_PREFIX_BLOCK_CHECKS_AND_ORIGINAL_FINAL_CHECK"
+source_acceptance = "NOT_ESTABLISHED"
+whole_prefix_blocks = "NOT_ESTABLISHED"
+final_aggregation = "NOT_ESTABLISHED"
+code_generation = "NOT_RUN"
+critical_line_status = "NOT_SUPPLIED"
+complete_zero_count = "NOT_SUPPLIED"
+all_interval_prime_margin = "NOT_SUPPLIED"
+historical_predicates_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalPowerIntegerSeed"
+path = "GRWTSK/Analysis/Complex/RationalPowerIntegerSeed.lean"
+source_blob = "43d746f8868585f0f4144b292ff03023391e999d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.ConcreteNewtonTerminalCore"
+path = "GRWTSK/Interfaces/ConcreteNewtonTerminalCore.lean"
+source_blob = "d82a61e0ae9393ddb860e2f8a4b70568f20fff3e"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.TerminalEndpointControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/TerminalEndpointControls.lean"
+source_blob = "8a2e0f37483f6a3d67139bf88c2a57e6777b1213"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTerminalEndpoint"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonTerminalEndpoint.lean"
+source_blob = "478efa6b416229df2aff37dff490cadb93c2eaa5"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTerminalSeed"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonTerminalSeed.lean"
+source_blob = "5b68123c209dd8ba8c9a5d2f0c3f8a881cf2aec6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[documents]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/terminal-endpoint-integer-certificate.md"
+source_blob = "50aaa789234a8728a74d729fab4fad5566df0f81"
+
+[declarations]
+lexical_inventory_only = true
+requires_generated_structure_members = true
+requires_decidability_instances = true
+requires_computational_dependency_audit = true
+
+[[declaration_inventory]]
+module = "GRWTSK.Analysis.Complex.RationalPowerIntegerSeed"
+names = ["Encoding", "Valid", "Binding", "seedNum", "seedDen", "taylorNum", "taylorDen", "errorNum", "errorDen", "seedDen_pos", "taylorDen_pos", "errorDen_pos", "errorNum_nonneg", "seed_identity", "seed_error_identity", "Windows", "seed_valid", "endpoint_eq_of_windows"]
+
+[[declaration_inventory]]
+module = "GRWTSK.Interfaces.ConcreteNewtonTerminalCore"
+names = []
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Chebyshev.Checks.TerminalEndpointControls"
+names = ["terminal_base", "terminal_not_a_prefix_base", "reduction_not_mantissa_one", "log_exponent_is_twelve", "wrong_term_count_rejected", "zero_denominator_rejected", "negative_displacement_rejected", "initialization_error_retained", "full_error_not_zero", "error_can_decrease", "terminal_attachment_preserves_prefix", "terminal_check_independent_of_prefix"]
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTerminalEndpoint"
+names = ["terminalTrace", "terminalOutput", "terminal_steps_valid", "terminal_output_identity", "terminal_endpoint_compute", "terminal_check", "withTerminal", "attached_terminal_check", "source_acceptance_of_prefix_and_final"]
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonTerminalSeed"
+names = ["encoding", "encoding_valid", "reduction_data", "log_decomposition", "log_data", "encoding_binding", "terminal_admissible", "terminalStart", "real_window", "imag_window", "error_window", "terminal_windows", "terminal_seed_valid"]
+
+[acceptance]
+inherited_obligations_preserved = true
+requirements = [
+  "Reconcile exact types, generated Encoding/Valid/Binding members and the full transitive import/type/axiom/computational dependency closure.",
+  "No Lean/Lake/native/build/worker/replay action is authorized by this static target; preserve all inherited holds.",
+  "Bind degree j+1, argument, radius and displacement to the SAME original base, complex exponent and schedule; rounded-state agreement cannot supply these identities.",
+  "Derive strictly positive denominators and nonnegative integer numerators before cross multiplication or error interpretation.",
+  "Preserve every term in t + 2*(rect(seed)+t)*displacement and identify it exactly, rather than replacing it by a smaller error or assuming a seed equality.",
+  "Retain the TWO-component initialization allowance, both signed component floors and the correct strict endpoints of every floor/ceiling window.",
+  "For terminal base 4097 retain log exponent 12, mantissa 4097/4096, twelve copies of log(2) width and the nonzero mantissa width.",
+  "Reconstruct exactly 22 Taylor terms from stage 21; a different term count may give the same grid state and must still fail source binding.",
+  "Check all nine complete states and all eight transitions, including quadratic error, local allowance and exact last-state decoding.",
+  "Retain EVERY original endpoint admissibility guard and the literal original terminal schedule, not just the integer windows.",
+  "Keep terminal base 4097 separate from the 4096 included prefix integers; attaching a terminal record certifies no prefix entry.",
+  "Leave all 64 prefix-block checks, final six-field/two-tolerance aggregation and original SourceAcceptance untouched; no complete accepted packet is supplied.",
+  "Assess concrete integer-proof resource demand without asserting a measured speedup, byte-decoder refinement, resource bound or successful compilation.",
+  "No actual zero-count, canonical-head completeness, critical-line theorem, first-zero ordering, strict prime margin, Legendre or RH conclusion follows from this source increment.",
+]

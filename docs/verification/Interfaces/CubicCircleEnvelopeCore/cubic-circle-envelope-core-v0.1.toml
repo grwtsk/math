@@ -1,0 +1,186 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "cubic-circle-envelope-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.CubicCircleEnvelopeCore"
+build_target = "GRWTSK.Interfaces.CubicCircleEnvelopeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "3ffdcef557222c92baafe6b71992aef8ffd799c9"
+base_tree = "6995869d95be6bb859714eb10e4ddf007b28ad4d"
+stacked_on_pr = 293
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/AnchoredLocalJensenCore/anchored-local-jensen-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "62db05a9af8aa18d3c18a83f0b96c40cbf017991".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "d92435d7e5cf07ec7c458b7965f0597c071696a6".
+# Pre-quadrature-repair inherited_target_blob = "1a0966c7a189f909586f76f96909ce8eece28424".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "73b1c315e5456e9f97d1f127f09eae0f78913ddd".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "dc8cfb769036377bbfb332a3876fa755e59c2f78"
+receipt_policy = "Bind exact new commit/tree externally; no ancestor receipt accepts this source."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+finite_calculus = "PROOF_DRAFT"
+actual_infinite_remainder = "WRITTEN_ONLY_NOT_FORMALIZED"
+normal_convergence_and_continuation = "WRITTEN_ONLY_NOT_FORMALIZED"
+unconditional_riemannZeta_circle_ceiling = "WRITTEN_ONLY_NOT_FORMALIZED"
+canonical_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.CubicEulerMaclaurin"
+path = "GRWTSK/Analysis/Real/CubicEulerMaclaurin.lean"
+# Original pre-repair source_blob = "0c4e73ae2d9841c67b6fb05702cd891c6a9de624".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "78b24832bcc40e98c2e145fbc5dd379e7ffff7b4"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CubicCircleEnvelopeCore"
+path = "GRWTSK/Interfaces/CubicCircleEnvelopeCore.lean"
+source_blob = "e1c5d9f952e185cd1e684af72bfeb76146340c3d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/CubicCircleControls.lean"
+source_blob = "8ceceede1ab1c8c373155bdb16727934ba196d15"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicCircleGeometry.lean"
+# Original pre-repair source_blob = "a0d3c2e1634e91a9969b99bc120e412d72c4e5cc".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "08b38fca12bf8e6dff26d9f6aa49c32c2e62e419"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicPowerSummation"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicPowerSummation.lean"
+# Original pre-repair source_blob = "e9beea18bfc091dd2fe3d870a020c15d3a98e6e7".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fd25e7f5a1025387a239b418248f0b0344891dfa"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensen"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/AnchoredLocalJensen.lean"
+# Original pre-repair source_blob = "605f68bfc1af8a7e5cc646e33a941c3ef21f9913".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "c75ff632b011100da1dce61eb5df8526926f04e0"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.AnchoredLocalJensenCore"
+path = "GRWTSK/Interfaces/AnchoredLocalJensenCore.lean"
+source_blob = "3b911207aa9014c79492d779a4be59de49eb10d3"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[mathematical_notes]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/cubic-circle-ceiling.md"
+source_blob = "41d22932e814c4cf0eded15efcb315cba09d4cf0"
+status = "WRITTEN_DERIVATION_NOT_KERNEL_ACCEPTED"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean"
+source_blob = "82d269a5e9269d791f5581f5f0da29cfc125541a"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/LocallyUniformLimit.lean"
+source_blob = "afc9908533c3076986a43c9d963c53899f0669c3"
+
+[declarations]
+public_names = [
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.first",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.second",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.third",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.first_zero",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.first_one",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.second_zero",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.second_one",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.third_zero",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.third_one",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.hasDerivAt_first",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.hasDerivAt_second",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.hasDerivAt_third",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.abs_third_le",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.third_reflection",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.hasDerivAt_combined",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.one_cell",
+  "GRWTSK.Analysis.Real.CubicEulerMaclaurin.finite_cells",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.third_quarter_nonzero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.third_three_quarters_negative",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.unnormalized_cubic_is_six_times",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.quartic_balance",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.quartic_omitted_remainder_fails",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.cubic_budget_at_one_fails",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.outer_leftmost_real_part",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls.cubic_factor_at_minus_one",
+  "GRWTSK.RiemannHypothesis.CubicCircleGeometry.disk_geometry",
+  "GRWTSK.RiemannHypothesis.CubicCircleGeometry.norm_inverse_sub_one_le",
+  "GRWTSK.RiemannHypothesis.CubicCircleGeometry.scalar_cubic_budget",
+  "GRWTSK.RiemannHypothesis.CubicCircleGeometry.norm_le_cube_of_cubic_identity",
+  "GRWTSK.RiemannHypothesis.CubicPowerSummation.cellRemainder",
+  "GRWTSK.RiemannHypothesis.CubicPowerSummation.shifted_power_deriv",
+  "GRWTSK.RiemannHypothesis.CubicPowerSummation.continuousOn_shifted_power",
+  "GRWTSK.RiemannHypothesis.CubicPowerSummation.integral_shifted_power",
+  "GRWTSK.RiemannHypothesis.CubicPowerSummation.one_cell_power",
+  "GRWTSK.RiemannHypothesis.CubicPowerSummation.finite_power_sum",
+]
+private_helpers = []
+
+[controls]
+obligations = [
+  "The normalized third Bernoulli polynomial already includes 1/3!; do not divide by six twice.",
+  "Both zero cubic endpoints coexist with nonzero interior values and a nonzero quartic remainder.",
+  "Retain both terminal values and the derivative correction in each finite cell telescope.",
+  "Actual positive-axis power derivatives supply the finite specialization; no source identity is an input there.",
+  "The quotient primitive excludes exponent -1; do not divide by the cubic prefactor at exponents zero, one or two.",
+  "Closed-disk geometry requires N>=2; low-stage disks contain the actual pole.",
+  "The center half-plane bound does not cover the circle leftmost point at real part -1.",
+  "The 1/48 complete infinite remainder bound and actual zeta continuation are written results, not Lean declarations here.",
+  "The generic complex norm lemma retains equality and remainder assumptions and is not instantiated with riemannZeta.",
+  "The mathematical note gives an unconditional classical cubic circle ceiling, but cannot be consumed as a Lean proof term.",
+  "Finite local divisor growth is not a bound for the logarithmic derivative regular or distant contribution.",
+  "All inherited exact types, transitive imports/axioms/native dependencies and source/count/evaluation/prime-margin obligations remain.",
+]

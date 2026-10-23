@@ -145,7 +145,7 @@ The v0.1 shift-one, correction-omission and zero-margin controls remain intact.
 ## 6. Replay and remaining boundary
 
 The separate root is `GRWTSK.Interfaces.QuadraticIntervalPrimePowerCore` and the
-static target is `verification/quadratic-interval-core-v0.2.toml`. Neither root
+static target is `docs/verification/Interfaces/QuadraticIntervalPrimePowerCore/quadratic-interval-core-v0.2.toml`. Neither root
 is added to `GRWTSK.lean`. The target enumerates the unchanged source, both v0.1
 owners and root, all three v0.2 owners and the new root. Acceptance requires
 every exact elaborated public type and the full transitive axiom/import audit;

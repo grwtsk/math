@@ -2,7 +2,7 @@
 
 Conceptual direction and authorship: grwtsk contributors. Mathematical formulation, formalization, and source development with AI assistance.
 
-This exposition accompanies [RevisionEvidence.lean](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/RevisionEvidence.lean) and its [separate static verification target](../../../../verification/revision-evidence-v0.1.toml). The mathematical subject is a finite ledger whose observations name exact revisions and kinds. Source presence does not report elaboration, a transitive trust audit, or correspondence with another program.
+This exposition accompanies [RevisionEvidence.lean](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/RevisionEvidence.lean) and its [separate static verification target](../../../verification/_unscoped/revision-evidence-v0.1.toml). The mathematical subject is a finite ledger whose observations name exact revisions and kinds. Source presence does not report elaboration, a transitive trust audit, or correspondence with another program.
 
 Tracking: [generic revision-scoped evidence, issue #321](https://github.com/grwtsk/math/issues/321).
 
