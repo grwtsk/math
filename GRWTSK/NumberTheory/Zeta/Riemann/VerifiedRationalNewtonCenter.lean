@@ -51,7 +51,7 @@ theorem exists_zero_of_verify (N chart : ℕ) (positive : Bool) (c : QComplex) (
     ∃ z : ZeroPoint, ‖z.1 - QComplex.embed c‖ ≤ (radius : ℝ) ∧
       deriv riemannZeta z.1 ≠ 0 ∧
       ∀ w : ZeroPoint, ‖w.1 - QComplex.embed c‖ ≤ (radius : ℝ) → w = z := by
-  have h := Bool.and_eq_true.mp hv
+  have h := Bool.and_eq_true_iff.mp hv
   have hc := centerEnclosures_of_verified N c p valueTol slopeTol radius inverse out h.1
   obtain ⟨z, hz, _, hd, hu⟩ := RationalNewtonWitness.exists_zero chart positive
     (newtonData c radius inverse out) h.2 hc

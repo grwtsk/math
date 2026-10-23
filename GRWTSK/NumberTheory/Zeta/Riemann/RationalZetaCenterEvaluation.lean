@@ -25,7 +25,7 @@ open GRWTSK.Analysis.Complex.RationalRoundedArithmetic
 
 /-- Precision data only. Prefix inputs have exactly the declared finite size. -/
 structure Plan (N : ℕ) where
-  prefix : Fin N → GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule
+  «prefix» : Fin N → GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule
   terminal : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Schedule
   cauchyRadius : ℚ
   valueBits : ℕ
@@ -72,12 +72,12 @@ def powerLogError (q : ℚ) (c : QComplex)
 def finiteValueQ (N : ℕ) (c : QComplex) (p : Plan N) : QComplex :=
   QComplex.add
     (sumQ (fun i => (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
-      ((i.1 : ℚ) + 1) (sourceExponent c) (p.prefix i)).value))
+      ((i.1 : ℚ) + 1) (sourceExponent c) (p.«prefix» i)).value))
     (QComplex.mul (factorQ N c) (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
       (cutoffQ N) (sourceExponent c) p.terminal).value)
 
 def finiteSlopeQ (N : ℕ) (c : QComplex) (p : Plan N) : QComplex :=
-  QComplex.add (sumQ (fun i => powerLogValue ((i.1 : ℚ) + 1) c (p.prefix i)))
+  QComplex.add (sumQ (fun i => powerLogValue ((i.1 : ℚ) + 1) c (p.«prefix» i)))
     (QComplex.add
       (QComplex.mul (factorSlopeQ N c) (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
         (cutoffQ N) (sourceExponent c) p.terminal).value)
@@ -85,12 +85,12 @@ def finiteSlopeQ (N : ℕ) (c : QComplex) (p : Plan N) : QComplex :=
 
 def finiteValueErrorQ (N : ℕ) (c : QComplex) (p : Plan N) : ℚ :=
   (∑ i, (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
-    ((i.1 : ℚ) + 1) (sourceExponent c) (p.prefix i)).error) +
+    ((i.1 : ℚ) + 1) (sourceExponent c) (p.«prefix» i)).error) +
   QComplex.rect (factorQ N c) * (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
     (cutoffQ N) (sourceExponent c) p.terminal).error
 
 def finiteSlopeErrorQ (N : ℕ) (c : QComplex) (p : Plan N) : ℚ :=
-  (∑ i, powerLogError ((i.1 : ℚ) + 1) c (p.prefix i)) +
+  (∑ i, powerLogError ((i.1 : ℚ) + 1) c (p.«prefix» i)) +
     (QComplex.rect (factorSlopeQ N c) *
         (GRWTSK.Analysis.Complex.RationalPowerEvaluation.compute
           (cutoffQ N) (sourceExponent c) p.terminal).error +
@@ -109,7 +109,7 @@ def Admissible (N : ℕ) (c : QComplex) (p : Plan N) : Prop :=
   0 < p.cauchyRadius ∧ p.cauchyRadius ≤ c.re ∧
   0 < QComplex.normSq (QComplex.sub c QComplex.one) ∧
   (∀ i, GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible
-    ((i.1 : ℚ) + 1) (sourceExponent c) (p.prefix i)) ∧
+    ((i.1 : ℚ) + 1) (sourceExponent c) (p.«prefix» i)) ∧
   GRWTSK.Analysis.Complex.RationalPowerEvaluation.Admissible
     (cutoffQ N) (sourceExponent c) p.terminal
 
@@ -144,7 +144,12 @@ theorem evaluate_none_iff (N : ℕ) (c : QComplex) (p : Plan N)
       ¬Admissible N c p ∨ valueTol < (compute N c p).value.error ∨
         slopeTol < (compute N c p).slope.error := by
   unfold evaluate
-  by_cases hg : Admissible N c p <;> simp [hg, not_and_or]
+  by_cases hg : Admissible N c p
+  · by_cases hv : (compute N c p).value.error ≤ valueTol
+    · simp [hg, hv, not_lt_of_ge hv]
+    · have hv' : valueTol < (compute N c p).value.error := lt_of_not_ge hv
+      simp [hg, hv, hv']
+  · simp [hg]
 
 theorem verify_iff (N : ℕ) (c : QComplex) (p : Plan N)
     (valueTol slopeTol : ℚ) (out : CenterState) :

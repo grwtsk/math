@@ -81,6 +81,7 @@ theorem log_bounds (q : ℚ) (hq : 1 ≤ q) (K : ℕ) :
     simp only [width, Rat.cast_div, Rat.cast_mul, Rat.cast_ofNat, Rat.cast_pow,
       Rat.cast_sub, Rat.cast_one]
   rw [hL, hW]
+  simp only [mul_div_assoc]
   constructor <;> linarith
 
 /-- Reduction to [1,2] gives a uniform rational geometric width. -/
@@ -150,7 +151,10 @@ theorem bounds (p : DyadicInput t) :
     have h : (1 : ℝ) ≤ p.mantissa := by exact_mod_cast p.mantissa_ge_one
     linarith
   have he : Real.log t = (p.exponent : ℝ) * Real.log 2 + Real.log (p.mantissa : ℝ) := by
-    rw [p.source_eq, Real.log_mul (by positivity) hmp.ne', Real.log_pow]
+    calc
+      Real.log t = Real.log ((2 : ℝ) ^ p.exponent * (p.mantissa : ℝ)) :=
+        congrArg Real.log p.source_eq
+      _ = _ := by rw [Real.log_mul (by positivity) hmp.ne', Real.log_pow]
   have hl := mul_le_mul_of_nonneg_left h2.1 (Nat.cast_nonneg p.exponent : (0 : ℝ) ≤ p.exponent)
   have hu := mul_le_mul_of_nonneg_left h2.2 (Nat.cast_nonneg p.exponent : (0 : ℝ) ≤ p.exponent)
   simp only [Rat.cast_ofNat] at hl hu
@@ -203,7 +207,10 @@ theorem error_tendsto_zero (p : DyadicInput t) (hm : p.mantissa ≤ 2) :
   have hb (K : ℕ) : ((p.withTerms K).error : ℝ) ≤
       (((p.exponent : ℝ) + 1) * (3 / 8 : ℝ)) * (1 / 9 : ℝ) ^ K := by
     have h := (p.withTerms K).reduced_error_le hm
-    exact_mod_cast h
+    change (p.withTerms K).error ≤ ((p.exponent : ℚ) + 1) * (3 / 8 : ℚ) * (1 / 9 : ℚ) ^ K at h
+    have hcast := (Rat.cast_le (K := ℝ)).2 h
+    simpa only [Rat.cast_mul, Rat.cast_add, Rat.cast_natCast, Rat.cast_one,
+      Rat.cast_div, Rat.cast_ofNat, Rat.cast_pow] using hcast
   have ht := (tendsto_pow_atTop_nhds_zero_of_lt_one
     (by norm_num : (0 : ℝ) ≤ 1 / 9) (by norm_num : (1 / 9 : ℝ) < 1)).const_mul
       (((p.exponent : ℝ) + 1) * (3 / 8 : ℝ))

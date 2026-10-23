@@ -47,18 +47,18 @@ def polynomial (z : QComplex) : ℕ → QComplex
 
 noncomputable def embed (z : QComplex) : ℂ := ⟨(z.re : ℝ), (z.im : ℝ)⟩
 
-@[simp] theorem embed_zero : embed zero = 0 := by ext <;> simp [embed, zero]
-@[simp] theorem embed_one : embed one = 1 := by ext <;> simp [embed, one]
+@[simp] theorem embed_zero : embed zero = 0 := by apply Complex.ext <;> simp [embed, zero]
+@[simp] theorem embed_one : embed one = 1 := by apply Complex.ext <;> simp [embed, one]
 
 @[simp] theorem embed_add (z w : QComplex) : embed (add z w) = embed z + embed w := by
-  ext <;> simp [embed, add]
+  apply Complex.ext <;> simp [embed, add]
 
 @[simp] theorem embed_mul (z w : QComplex) : embed (mul z w) = embed z * embed w := by
-  ext <;> simp [embed, mul, Complex.mul_re, Complex.mul_im]
+  apply Complex.ext <;> simp [embed, mul, Complex.mul_re, Complex.mul_im]
 
 @[simp] theorem embed_smul (r : ℚ) (z : QComplex) :
     embed (smul r z) = ((r : ℝ) : ℂ) * embed z := by
-  ext <;> simp [embed, smul, Complex.mul_re, Complex.mul_im]
+  apply Complex.ext <;> simp [embed, smul, Complex.mul_re, Complex.mul_im]
 
 @[simp] theorem embed_pow (z : QComplex) (n : ℕ) : embed (pow z n) = embed z ^ n := by
   induction n with
@@ -129,7 +129,7 @@ def run (bits : ℕ) (seed : QComplex) (initial : ℚ) : ℕ → State
 @[simp] theorem embed_quantizeQ (bits : ℕ) (z : QComplex) :
     QComplex.embed (quantizeQ bits z) =
       DyadicRoundedSquaring.quantize bits (QComplex.embed z) := by
-  ext <;> simp [QComplex.embed, quantizeQ, DyadicRoundedSquaring.quantize]
+  apply Complex.ext <;> simp [QComplex.embed, quantizeQ, DyadicRoundedSquaring.quantize]
 
 /-- EXACT refinement of BOTH components, not merely a nearby output. -/
 theorem run_refines (bits : ℕ) (seed : QComplex) (initial : ℚ) (s : ℕ) :

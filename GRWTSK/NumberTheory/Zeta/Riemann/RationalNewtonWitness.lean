@@ -79,8 +79,8 @@ theorem chartCenter_spec (N : ℕ) (positive : Bool) :
     QComplex.embed (chartCenter N positive) = upperCenter N ∨
       QComplex.embed (chartCenter N positive) = lowerCenter N := by
   cases positive with
-  | false => right; ext <;> simp [chartCenter, QComplex.embed, lowerCenter]
-  | true => left; ext <;> simp [chartCenter, QComplex.embed, upperCenter]
+  | false => right; apply Complex.ext <;> simp [chartCenter, QComplex.embed, lowerCenter]
+  | true => left; apply Complex.ext <;> simp [chartCenter, QComplex.embed, upperCenter]
 
 theorem curvature_nonneg (N : ℕ) : 0 ≤ curvature N := by unfold curvature; positivity
 
@@ -89,11 +89,16 @@ theorem geometry_subset (N : ℕ) (positive : Bool) (p : Data)
     (hg : Geometry N positive p) :
     closedBall (QComplex.embed p.center) (p.radius : ℝ) ⊆
       closedBall (QComplex.embed (chartCenter N positive)) (5 / 2 : ℝ) := by
-  have hr : (p.radius : ℝ) ≤ 5 / 2 := by exact_mod_cast hg.2.2.1
+  have hr : (p.radius : ℝ) ≤ 5 / 2 := by
+    have h := (Rat.cast_le (K := ℝ)).2 hg.2.2.1
+    norm_num only [Rat.cast_div, Rat.cast_ofNat] at h
+    exact h
   have hd : ‖QComplex.embed p.center - QComplex.embed (chartCenter N positive)‖ ^ 2 ≤
       (5 / 2 - (p.radius : ℝ)) ^ 2 := by
     have h : (QComplex.normSq (QComplex.sub p.center (chartCenter N positive)) : ℝ) ≤
-        (5 / 2 - (p.radius : ℝ)) ^ 2 := by exact_mod_cast hg.2.2.2
+        (5 / 2 - (p.radius : ℝ)) ^ 2 := by
+      have hc := (Rat.cast_le (K := ℝ)).2 hg.2.2.2
+      simpa only [Rat.cast_pow, Rat.cast_sub, Rat.cast_div, Rat.cast_ofNat] using hc
     simpa only [QComplex.cast_normSq, QComplex.embed_sub] using h
   have hdist : dist (QComplex.embed p.center) (QComplex.embed (chartCenter N positive)) ≤
       5 / 2 - (p.radius : ℝ) := by
@@ -133,7 +138,7 @@ theorem source_bounds (N : ℕ) (positive : Bool) (p : Data)
     have h := mul_le_mul (norm_le_rectNorm (QComplex.embed p.inverse))
       (add_le_add_right (norm_le_rectNorm (QComplex.embed p.value)) (p.valueError : ℝ))
       (by positivity) (rectNorm_nonneg (QComplex.embed p.inverse))
-    simpa [residualBudget] using h
+    simpa [residualBudget, add_comm] using h
   · intro z hz
     refine (hb.2 z hz).trans ?_
     have hA := mul_le_mul_of_nonneg_right (norm_le_rectNorm (QComplex.embed p.inverse))
