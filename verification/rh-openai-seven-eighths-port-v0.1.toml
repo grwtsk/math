@@ -1,0 +1,226 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-openai-seven-eighths-port-v0.1"
+owner_repository = "grwtsk/math"
+issue = 448
+parent_issue = 434
+external_result_issue = 187
+program_issue = 15
+root_module = "GRWTSK.Interfaces.OpenAISevenEighthsPortCore"
+build_target = "GRWTSK.Interfaces.OpenAISevenEighthsPortCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-source-review-and-port-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+requires_hostile_control_replay = true
+operational_receipt_is_external = true
+public_root_imported = false
+
+[source_binding]
+base_revision = "2a62ebca1ab754ea13c18c3e5b177cbbd98b7f02"
+base_tree = "80cd7da1910b96cdf0624afa277f286b408e9db0"
+stacked_pr = 438
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+local_dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+local_lean_toolchain = "leanprover/lean4:v4.33.0"
+local_lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "LITERATURE_REVIEWED / SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / LOCAL_ADMISSION_BLOCKED"
+inherited_target = "verification/rh-zeta-half-plane-adapter-v0.1.toml"
+inherited_target_blob = "b7b9480a7178180c6d9fda5104be0051557efae8"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Source-location metadata and static checks are not theorem or replay evidence."
+
+[external_source]
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+tree = "45074722c918576d65b4c8be9686c76f508ba696"
+declaration = "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re"
+source_path = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+source_blob = "46c67f4000906b1391a471d6e6396ac0da3c16a5"
+solution_dependency_path = "lean/OAI/NumberTheory/DirichletL/Detector/FinalAssemblyUnconditional.lean"
+solution_dependency_blob = "e7c20910424837fb954796e1216f5aa453bbd5da"
+challenge_path = "lean/ComparatorChallenges/QuasiRiemannHypothesis.lean"
+challenge_blob = "e7d1caf6c579dc9afbf0d2b01f79e5cd2511b028"
+comparator_path = "lean/ComparatorChallenges/QuasiRiemannHypothesis.json"
+comparator_blob = "acf552468fc23c1a27d685d33983c58c50040542"
+source_lean_toolchain = "leanprover/lean4:v4.34.1"
+source_lean_toolchain_blob = "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+source_mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+source_manifest_blob = "67d01d2717d0aaff59fb8814bb53581b961f42b4"
+displayed_type = "{s : Complex} -> (7 / 8 : Real) < s.re -> riemannZeta s != 0"
+direct_body = "SevenEighths.ProbeFinalAssemblyUnconditional.zeta_nonzero s hs"
+comparator_permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+direct_source_body_placeholder_free = true
+transitive_dependency_reviewed = false
+actual_axiom_profile_reviewed = false
+clean_pinned_build_receipt = false
+local_import_or_adapter = false
+
+[terminal_consumer]
+declaration = "GRWTSK.RiemannHypothesis.RiemannZetaZeroFreeRightHalfPlane ((7 : Real) / 8)"
+parent_regional_adapter = "GRWTSK.RiemannHypothesis.nontrivialZeroFreeRightHalfPlane_of_riemannZeta"
+weaker_threshold_consumer = "GRWTSK.RiemannHypothesis.RiemannZetaZeroFreeRightHalfPlane ((11 : Real) / 12)"
+classification = "REGIONAL_RESULT_PORT"
+rh_consequence = "No direct RH consequence. Seven eighths is strictly right of one half."
+
+[candidate_selection]
+maximum_candidates = 3
+selected_issue = 448
+selected_reason = "A source-bound gated port is the only bounded option that preserves the exact source, environment drift, missing trust closure and theorem authority."
+rejected = [
+  "Direct dependency import: incompatible Lean and Mathlib pins plus unreviewed transitive source.",
+  "Local copy or reproof: unbounded analytic work and source-provenance drift."
+]
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unsafe_selected_declarations = true
+
+[formalization_boundary]
+external_source_location = "REVIEWED_AT_PINNED_REVISION"
+external_statement_text = "ALIGNED_WITH_LOCAL_COMPARATOR_PROP"
+external_direct_solution_body = "LOCATED"
+challenge_solution_separation = "PROVED_IN_LOCAL_REVIEW_RECORD"
+toolchain_alignment = "REFUTED_BY_PINNED_STRING_INEQUALITY"
+mathlib_revision_alignment = "REFUTED_BY_PINNED_STRING_INEQUALITY"
+transitive_dependency_closure = "OPEN"
+actual_axiom_profile = "OPEN"
+clean_pinned_external_build = "OPEN"
+local_adapter = "OPEN"
+accepted_external_port = "NOT_CONSTRUCTED"
+seven_eighths_theorem_local = "NOT_PROVED"
+riemann_hypothesis = "NOT_CLAIMED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.OpenAISevenEighthsPort"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/OpenAISevenEighthsPort.lean"
+blob = "243ded6a1c542f0f735d18f24e9b6a9e42ef2145"
+role = "external source review, local proposition comparator, admission gate and accepted regional theorem port"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.OpenAISevenEighthsPortControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/OpenAISevenEighthsPortControls.lean"
+blob = "bdefcb981a891f759bcdb83e4e45569f39437cf8"
+role = "challenge-solution, environment, replay and threshold controls"
+
+[[modules]]
+name = "GRWTSK.Interfaces.OpenAISevenEighthsPortCore"
+path = "GRWTSK/Interfaces/OpenAISevenEighthsPortCore.lean"
+blob = "85754df0f5f569ef788db8afd3b4811eeaa40dff"
+role = "isolated stacked integration root"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/openai-seven-eighths-port.md"
+blob = "06ca079b1ec339362e52e06e6eec2fb9b8e6235e"
+status = "source review, mathematical port description and bounded audit; not theorem or replay evidence"
+
+[declaration_inventory]
+count = 26
+names = [
+  "GRWTSK.RiemannHypothesis.ExternalFormalCheck",
+  "GRWTSK.RiemannHypothesis.ExternalDeclarationReview",
+  "GRWTSK.RiemannHypothesis.ExternalDeclarationReview.Has",
+  "GRWTSK.RiemannHypothesis.ExternalDeclarationReview.requiredChecks",
+  "GRWTSK.RiemannHypothesis.ExternalDeclarationReview.AdmissionReady",
+  "GRWTSK.RiemannHypothesis.OpenAISevenEighthsClaim",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsClaim_iff_local",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview_sourceLocated",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview_statementAndBodyLocated",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview_challenge_ne_solution",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview_toolchain_mismatch",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview_mathlib_mismatch",
+  "GRWTSK.RiemannHypothesis.openAISevenEighthsReview_not_admissionReady",
+  "GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort",
+  "GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort.toNontrivial",
+  "GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort.toOpenAISevenEighthsClaim",
+  "GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort.toElevenTwelfths",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.challenge_source_separation",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.comparator_config_is_not_replay_receipt",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.solution_body_is_not_dependency_review",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.statement_alignment_is_not_admission",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.source_and_local_environments_differ",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.sevenEighths_not_at_or_left_of_half",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.accepted_port_regional_consequence",
+  "GRWTSK.RiemannHypothesis.Checks.OpenAISevenEighthsPortControls.located_review_remains_blocked"
+]
+
+[hostile_controls]
+required = [
+  "challenge placeholder is separated from the solution source",
+  "comparator configuration is not a replay receipt",
+  "direct solution-body location is not transitive dependency review",
+  "statement-text alignment is not admission readiness",
+  "source and local Lean and Mathlib pins differ",
+  "source metadata does not coerce into a theorem term",
+  "seven eighths is not at or left of one half",
+  "an accepted seven-eighths port has regional rather than RH scope"
+]
+
+[evidence_states]
+LITERATURE_REVIEWED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+ANALYTIC_PREMISES_DISCHARGED = false
+
+[static_checks]
+toml_parse = "PASSED_BEFORE_COMMIT"
+source_inventory = "PASSED_BEFORE_COMMIT"
+internal_import_closure = "PASSED_BEFORE_COMMIT"
+comment_aware_forbidden_token_scan = "PASSED_BEFORE_COMMIT"
+forbidden_tokens = ["sorry", "admit", "axiom", "unsafe", "native_decide", "#eval"]
+lean_elaboration = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+hostile_lean_replay = "NOT_RUN"
+external_acceptance = "NOT_RUN"
+
+[finite_diagnostics]
+status = "PASSED"
+models = 4096
+assertions = 77828
+coverage = [
+  "all twelve external admission-gate profiles",
+  "admission readiness only when every gate is present",
+  "blocking by missing environment, dependency, trust, replay or adapter gates",
+  "source-located but locally unaccepted profile",
+  "exact rational threshold order one-half < seven-eighths < eleven-twelfths < one"
+]
+qualification = "Finite review-state and exact-rational checks only; no Lean parsing, external build, dependency audit, trust verification or zeta theorem."
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and source repair if needed",
+  "exact elaborated declaration types for all selected declarations",
+  "complete local transitive dependency and axiom audit",
+  "hostile Lean replay and immutable local acceptance",
+  "clean pinned external build and comparator receipt for openai/math at the selected revision",
+  "complete external transitive dependency closure and actual axiom output",
+  "a sound cross-environment theorem transport or a local reproof",
+  "construction of an AcceptedExternalRawHalfPlanePort at seven eighths"
+]
+
+[next_obstruction]
+statement = "Obtain an immutable clean external replay and trust packet for OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re at openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a."
+scope = "Even a fully accepted port proves only the seven-eighths regional theorem and its weaker threshold consequences."
+
+[nonclaims]
+items = [
+  "no local proof of the OpenAI seven-eighths theorem",
+  "no claim that the external project or declaration builds",
+  "no transitive dependency or trust closure",
+  "no accepted cross-version type identity",
+  "no validation of the eleven-twelfths manuscript theorem",
+  "no validation of the Anthropic proportion result",
+  "no zero-free estimate at or left of one half",
+  "no Riemann hypothesis proof",
+  "no merge, deployment or execution authority"
+]
