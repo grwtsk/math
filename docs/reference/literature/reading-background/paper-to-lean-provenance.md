@@ -187,6 +187,72 @@ Sarnak-disjointness, RH or unconditional spiral for arbitrary
 superwalks is established. The full entries, rather than this
 cross-index, are the source for provenance and verification claims.
 
+## Bounded formalization of recent group/spectral obstructions — 2026-10-23
+
+The [fully sourced reference entry](paper-to-formalization-references.md#case-farey-recent-obstructions-20261023--exact-suppliers-versus-solvedopen-paper-analogies)
+and [exact mathematical scope note](../../../mathematics/NumberTheory/Farey/recent-obstructions-formalization-2026.md)
+record four genuinely integrated repository math sources:
+
+- `GRWTSK.Spectral.FareySturmianFreeConjugacy`,
+  `f7d8dd922f763c786b61d436f16dba5bf955865f`,
+  blob `f854110d2c099b97094505063eee3e8399f35e2f`.
+  **Band–Beckus–Loewy**, *The Dry Ten Martini Problem for Sturmian
+  Hamiltonians* (2024), arXiv:2402.16703, equation (1.1),
+  is the **source-model correspondence** through
+  `GRWTSK.LinearAlgebra.Sturmian`.
+  Their Theorem 1.1 assumes irrational frequency and
+  **nonzero coupling**; our fixed similarity is at
+  **zero coupling, energy 3**, so there is **no theorem port**.
+- `GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue`,
+  `9872d0c70b2c16c4efefaa57060fd53875239606`,
+  blob `f82dfdb4aa2cded519e6d06abefe25405144c030`.
+  The exact two-step sign gauge and nonzero-output premises
+  force `omega^2=1`. It proves a finite projective
+  factorization obstruction and a square-phase decoder
+  on the selected orbit; **no PFR/Kakeya theorem port**.
+  Source comparisons: **Gowers–Green–Manners–Tao**,
+  *On a conjecture of Marton* (2025),
+  DOI:10.4007/annals.2025.201.2.5, and
+  **Guth–Wang–Zahl** *A streamlined proof of the Kakeya
+  conjecture in R3* (2026), source
+  https://github.com/project-numina/kakeya-3d,
+  are **ANALOGY_ONLY** for information loss,
+  exact supplier discharge and axiom hygiene.
+- `GRWTSK.LinearAlgebra.BoundedGaugeHeight`,
+  `41a63bc678e1a1ede0915bfd03619a85385c9e26`,
+  blob `26e1067482cfe6d6af732c7336b73f256e75e150`.
+  Assumes submultiplicative nonnegative height and
+  **both** gauge/inverse uniform bound `C`; deduces
+  the explicit two-sided `C^2` finite cocycle comparison.
+  **OpenAI**, *Unitarizability implies amenability for
+  discrete groups* (2026),
+  https://github.com/openai/math/blob/main/lean/docs/251.md,
+  is **ANALOGY_ONLY**: there is no local Hilbert-space
+  representation or unitarization theorem.
+- `GRWTSK.GroupTheory.Words.HeisenbergObservationLoss`,
+  `d9b5736a739e00e7739c5c04fbf0d3055ce70924`,
+  blob `1082ac7d954d2fcb1ba7fddd1a21343f0ee5d436`.
+  An exact Mathlib abelianization/factorization
+  collision shows commutative characters cannot see the
+  central commutator. It does **not** imply
+  non-residual finiteness, nilflow construction or the
+  Möbius disjointness of **Peter Sarnak**'s *Three
+  Lectures on the Mobius Function: Randomness and Dynamics*
+  (2011, IAS https://publications.ias.edu/sarnak/paper/506,
+  Definition 3 and Conjecture 4); Sarnak is
+  **ANALOGY_ONLY / UNRESOLVED**.
+
+All four are `LOCAL_IDENTITY_SOURCE_CANDIDATE`, with
+no compiler exit, fresh kernel replay, axiom audit or
+exact-closing external receipt for these new leaves.
+The eight previously verified finite Farey parents
+at `55fe9dbc34a784cb15782c9dfb0d371a55c6f988`
+retain their earlier **scoped** local verification status,
+which does **not** transfer to these four leaves.
+The paper ledger holds all fully qualified declaration
+names, exact hypotheses, source path and Git blob,
+and remaining semantic/analytic suppliers.
+
 ## Updating the ledger
 
 When a later result is added, create a record alongside its source: refer to the original theorem label and *exact* special-case hypotheses, list every newly added declaration and its main commit/blob, preserve earlier records without retroactive verification upgrades, and attach the validation issue/receipt. Keep unproved analogies and mathematical obstacles readable even when some finite definitions or algebraic lemmas compile. Documentation edits themselves require no Lean acceptance claim; their Git commit establishes only document integration.
