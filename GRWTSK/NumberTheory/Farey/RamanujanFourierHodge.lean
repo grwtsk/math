@@ -127,11 +127,11 @@ theorem characterAverage_primitive_nonprimitive
     characterAverage q x =
       (q : ℂ)⁻¹ *
         (primitiveRamanujanSum q x + nonprimitiveFrequencySum q x) := by
-  rw [characterAverage_eq_indicator]
-  have hsum := fullFrequency_eq_primitive_add_nonprimitive q x
-  have hwhole :
-      characterAverage q x =
+  calc
+    characterAverage q x =
         (q : ℂ)⁻¹ * ∑ k : ZMod q, ZMod.stdAddChar (k * x) := rfl
-  rw [hwhole, hsum]
+    _ = (q : ℂ)⁻¹ *
+        (primitiveRamanujanSum q x + nonprimitiveFrequencySum q x) := by
+      rw [fullFrequency_eq_primitive_add_nonprimitive q x]
 
 end GRWTSK.NumberTheory.Farey.RamanujanFourierHodge
