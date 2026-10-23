@@ -71,6 +71,7 @@ lake env lean --trust=0 --wfail "$tmp"
 # The same corners DO alias after the paired attaching map.
 cat > "$tmp" <<'LEAN'
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
+open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
