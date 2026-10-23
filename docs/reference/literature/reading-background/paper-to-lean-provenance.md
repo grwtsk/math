@@ -149,6 +149,44 @@ conditional interfaces, not imported theorems.
 
 **Verification:** `NOT_LEAN_BUILT / NOT_FRESH_KERNEL_CHECKED / TRANSITIVE_AXIOMS_PENDING`; any source commit, paper citation, finite arithmetic preflight or queued verification issue is not Lean kernel acceptance. Run the complete, immutable-commit module/transitive closure, `lake build --wfail`, direct elaboration, fresh kernel, all `#print axioms` and unsafe/generated declaration checks; record outputs and exit codes.
 
+## Farey return, angular observation and cyclic-residue Hodge — 2026-10-23
+
+The authoritative [paper-to-formalization references ledger](paper-to-formalization-references.md#case-farey-angular-02--oriented-return-phase-not-a-global-spectral-character)
+records the exact source identities and **paper boundary** for the
+Farey return's mod-three angular observation and its
+sign/projectivization obstruction; the
+[cyclic-residue Hodge entry](paper-to-formalization-references.md#case-farey-hodge-01--cyclic-residue-hodge-and-nonunit-equivariance-failure)
+records the finite graph/Dirichlet-residue application.
+These are **2026 repository-derived constructions**, **not** imports
+of a newly identified publication. The source credits mathematical direction
+to R.A. Jacob Martone and OpenAI formalization assistance; outside
+paper bibliographic details and theorem locator are **not established**.
+The only separately identified dynamics-paper comparison is
+**Peter Sarnak**, *Three Lectures on the Mobius Function: Randomness
+and Dynamics* (2011, [IAS](https://publications.ias.edu/sarnak/paper/506)),
+**Definition 3 and Conjecture 4**: the missing compact
+zero-topological-entropy flow, continuous observable, actual Möbius
+weight and ordinary-average cancellation make this
+**`ANALOGY_ONLY`**, not a proved port.
+
+Fully qualified declaration names, exact hypotheses (selected
+positive Farey word, mod-three quotient, oriented phase, sign-gauge
+invariance, nonunit residue two mod four), first main commits and
+Git blobs are in the linked ledger. The parent eight-module
+finite-algebra scope has a recorded local exit-zero Lean/kernel/axiom
+qualification at `55fe9dbc34a784cb15782c9dfb0d371a55c6f988`;
+that status **does not extend** to the `ReturnAngularChannel`,
+`ReturnAngularProjectiveObstruction` and `CyclicResidueHodge`
+leaves. Those remain `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`
+under distinct queued issues
+[#1100](https://github.com/grwtsk/math/issues/1100),
+[#1102](https://github.com/grwtsk/math/issues/1102) and
+[#1103](https://github.com/grwtsk/math/issues/1103).
+No infinite-volume spectrum, analytic Hodge, Siegel-zero,
+Sarnak-disjointness, RH or unconditional spiral for arbitrary
+superwalks is established. The full entries, rather than this
+cross-index, are the source for provenance and verification claims.
+
 ## Updating the ledger
 
 When a later result is added, create a record alongside its source: refer to the original theorem label and *exact* special-case hypotheses, list every newly added declaration and its main commit/blob, preserve earlier records without retroactive verification upgrades, and attach the validation issue/receipt. Keep unproved analogies and mathematical obstacles readable even when some finite definitions or algebraic lemmas compile. Documentation edits themselves require no Lean acceptance claim; their Git commit establishes only document integration.
