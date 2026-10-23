@@ -10,9 +10,11 @@ import GRWTSK.Logic.InformationLoss.AlgebraicKernelComplement
 
 When the algebraic complement existence chain is accepted, it supplies a
 jointly injective added measurement with codomain exactly the old kernel.
-Every jointly injective added linear measurement must have at least that
-finrank. These two quantifiers give optimality within this algebraic
-measurement class. Neither continuity nor effective selection follows.
+Every jointly injective added linear measurement with finite-dimensional
+target must have at least that finrank. The numerical finrank optimality
+interpretation is restricted to the finite-dimensional regime; algebraic
+existence below is stated separately. Neither continuity nor effective
+selection follows.
 
 This leaf transitively depends on the still-unverified pinned Mathlib
 complement/projection APIs: it is NOT an independent proof receipt.
@@ -28,9 +30,10 @@ variable {V : Type u} [AddCommGroup V] [Module K V]
 variable {Y : Type v} [AddCommGroup Y] [Module K Y]
 variable {W : Type w} [AddCommGroup W] [Module K W]
 
-/-- Every extra output space of a jointly injective linear observation
-has finrank at least that of the original invisible directions. -/
+/-- Every finite-dimensional extra output space of a jointly injective
+linear observation has finrank at least that of the original invisible directions. -/
 theorem every_joint_measurement_meets_kernel_bound
+    [FiniteDimensional K W]
     (P : V →ₗ[K] Y) (A : V →ₗ[K] W)
     (hpair : Function.Injective (pairedLinearObservation P A)) :
     Module.finrank K P.ker ≤ Module.finrank K W := by
