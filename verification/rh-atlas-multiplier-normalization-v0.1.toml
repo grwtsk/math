@@ -1,0 +1,114 @@
+# Static mathematical specification, not execution authority or a receipt.
+# Prepared against aad79b94a0e9c0e30f6efd92520c52e505d93b93.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-multiplier-normalization-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MultiplierNormalized"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import closure.
+modules = [
+  { name = "Mathlib.Analysis.Calculus.Deriv.Inv" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairApproximation" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairChannelChoice" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairUnitTransport" },
+  { name = "GRWTSK.Analysis.Complex.GaussianRationalArithmetic" },
+  { name = "GRWTSK.Analysis.Complex.GaussianRationalDivision" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticC1Approximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairApproximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalEvaluatedPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMultiplierNormalized" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripNormalizedRationalPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MultiplierNormalized" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "actual_normalized_source"
+requirement = "Bounds belong to H/A7 and F_N/A7, not to unchanged H or F_N."
+
+[[hostile_controls]]
+id = "both_endpoint_units"
+requirement = "Prove the exact multiplier nonzero at BOTH endpoints before inverse transport."
+
+[[hostile_controls]]
+id = "open_strip_domain"
+requirement = "Keep 0<Re(s)<1 and do not extrapolate through multiplier zeros."
+
+[[hostile_controls]]
+id = "pole_totalization"
+requirement = "At s=1 the normalized total quotient is zero while H(1)=1; this is excluded."
+
+[[hostile_controls]]
+id = "full_derivative_identity"
+requirement = "Differentiate the exact residual on a neighborhood; retain the positive log-tail sign."
+
+[[hostile_controls]]
+id = "product_rule_cancellation"
+requirement = "A7 derivative terms cancel by the quotient identity, not by omitting one term."
+
+[[hostile_controls]]
+id = "channel_mixing"
+requirement = "Keep d^2 times the odd cross term and the complex determinant in the inverse map."
+
+[[hostile_controls]]
+id = "energy_conditioning"
+requirement = "Transfer energy with BOTH endpoint multiplier norm bounds; no isometry claim."
+
+[[hostile_controls]]
+id = "finite_inverse_radius"
+requirement = "Multiply finite evaluation radii by a computed inverse norm upper bound."
+
+[[hostile_controls]]
+id = "finite_support"
+requirement = "Validate all original positive-base power proposals and exact list length at the same cutoff."
+
+[[hostile_controls]]
+id = "cutoff_positive"
+requirement = "Reject cutoff zero; preserve N-dependent rates and exact refinement telescopes."
+
+[[hostile_controls]]
+id = "offline_displacement"
+requirement = "Reject d=0 in normalized secant use; do not identify the total quotient with a derivative."
+
+[[hostile_controls]]
+id = "finite_evaluation_separation"
+requirement = "Retain inverse-separation loss of endpoint evaluation, distinct from the C1 tail supplier."
+
+[[hostile_controls]]
+id = "uniform_is_not_positive"
+requirement = "Uniform all-height absolute error convergence does not supply any positive lower margin."
+
+[[hostile_controls]]
+id = "actual_zero_rejection"
+requirement = "A true simultaneous zero pair cannot pass a valid strict selected-channel comparison."
+
+[[hostile_controls]]
+id = "fixture_scope"
+requirement = "The source-bound height-eighteen POINT is not a neighborhood or WindowRH18."
+
+[[hostile_controls]]
+id = "previous_successor"
+requirement = "Keep the exact previous-window and all-point closed-successor-cover obligations."
+
+[[hostile_controls]]
+id = "proof_acceptance"
+requirement = "Finite Python checks and hashes are not Lean elaboration, transitive axiom audit, or execution authority."

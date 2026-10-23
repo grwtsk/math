@@ -1,0 +1,115 @@
+# Static mathematical acceptance target; it grants no execution authority.
+# Prepared against 729c880ff01bee762b6dd8044746a17b1e3caede.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-height-fiber-criterion-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightFiberCriterion"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused declaration suppliers, not a completed transitive-import inventory.
+modules = [
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripDerivativeIsolation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorIsolation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFifteenDerivativeWitness" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripZeroPermittingExtension" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSeventeenBandSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberCriterion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightFiberCriterion" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "same_actual_target"
+requirement = "TargetCapacity and TargetHeightInjective quantify over canonical NontrivialZetaZero locations, not modeled roots, lists, or all zeros of an unrelated function."
+
+[[hostile_controls]]
+id = "signed_root_height"
+requirement = "Use the maintained root.heightAt and its exact equality with Im. Absolute height is not the fiber coordinate; opposite signed fibers must not collapse."
+
+[[hostile_controls]]
+id = "mirror_and_source"
+requirement = "The local reverse implication consumes MirrorStable U and canonical critical reflection of actual target zeros. Neither arbitrary reflected H-value equality nor projection to the critical line is assumed."
+
+[[hostile_controls]]
+id = "ambient_not_injective"
+requirement = "Retain equal-height distinct ambient points. Only the actual target-zero set may satisfy the global injectivity criterion."
+
+[[hostile_controls]]
+id = "exact_reverse_direction"
+requirement = "Prove RHOn implies fiber capacity from equality of real coordinates and signed heights. Prove capacity implies RHOn by reflection. Do not label a one-way derivative realization equivalent."
+
+[[hostile_controls]]
+id = "all_height_quantifier"
+requirement = "The global equivalence uses every natural window and the maintained exhaustive coverage theorem. One bounded capacity theorem is only a necessary RH condition."
+
+[[hostile_controls]]
+id = "proof_carrying_status"
+requirement = "Check globalHeightProfile equivalent, windowFiberProfile necessary, and derivativeFiberProfile sufficient. Their implications must come from theorem terms; no reverse derivative realization is supplied."
+
+[[hostile_controls]]
+id = "trivial_zero_scope"
+requirement = "The analytic all-height supplier is restricted to the actual open critical strip. Global capacity of all zeros of H, including trivial zeros, is not the canonical criterion."
+
+[[hostile_controls]]
+id = "per_fiber_not_whole_box"
+requirement = "The synthetic twoLevels polynomial has two distinct zero locations at different heights, satisfies per-height source capacity, and fails whole-region source capacity. Do not use it as zeta evidence."
+
+[[hostile_controls]]
+id = "location_not_multiplicity"
+requirement = "The synthetic repeated-root polynomial has per-height capacity and zero derivative at its root. Capacity does not establish simplicity or a strict derivative disk."
+
+[[hostile_controls]]
+id = "separate_derivative_errors"
+requirement = "derivativeDisksOfModels retains both derivative-model and actual-source derivative errors at every height. No derivative estimate is obtained by differentiating a value-error inequality."
+
+[[hostile_controls]]
+id = "convexity_and_ambient_derivative"
+requirement = "Prove convexity of each horizontal fiber from actual region convexity. The supplied derivative is ambient complex deriv with DifferentiableAt hypotheses, not a vacuous derivative within a lower-dimensional set."
+
+[[hostile_controls]]
+id = "no_uniform_gap"
+requirement = "Keep each certificate's strict margin at its own height. A sequence of positive margins need not have a uniform positive lower bound. This is not an assertion of an actual zeta or spectral gap."
+
+[[hostile_controls]]
+id = "nonempty_and_coverage"
+requirement = "successorBox is inhabited. Empty fiber capacity cannot replace the universal actual-zero coverage premise of targetCapacity_of_zero_cover."
+
+[[hostile_controls]]
+id = "lower_seam"
+requirement = "The equivalence between an open-lower shell and capacity on the closed successorBox requires the prior WindowRH N. Keep both real boundaries and both height seams."
+
+[[hostile_controls]]
+id = "bounded_existing_supplier"
+requirement = "Reuse the pinned height-seventeen source theorem and the actual FifteenWitness derivative disk. These are unelaborated dependencies, not new kernel-audited results."
+
+[[hostile_controls]]
+id = "next_and_global_remain_open"
+requirement = "window_eighteen_of_fiber_capacity and every higher-step theorem retain their supplier premises. Do not assert a newly constructed higher-height derivative family or unconditional RH."
+
+[[hostile_controls]]
+id = "replay_and_authority"
+requirement = "Verify the complete transitive imports and exact theorem types before acceptance. Finite models, source hashes, and static targets are not Lean replay receipts or execution authority."
