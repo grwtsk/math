@@ -863,7 +863,9 @@ theorem polynomial_exponential_envelope (x : ℝ) (hx : 0 ≤ x) :
     linarith
   have hlinear : x ≤ 4 * Real.exp (x / 4) := by linarith
   have hsquare : x ^ 2 ≤ 16 * Real.exp (x / 4) ^ 2 := by
-    nlinarith [sq_nonneg (4 * Real.exp (x / 4) - x)]
+    have hdiff : 0 ≤ 4 * Real.exp (x / 4) - x := by linarith
+    nlinarith [mul_nonneg hdiff (by
+      linarith : 0 ≤ 4 * Real.exp (x / 4) + x)]
   have hEminus : 0 ≤ Real.exp (x / 4) - 1 := by linarith
   have hEsquare : Real.exp (x / 4) ≤ Real.exp (x / 4) ^ 2 := by
     nlinarith [mul_nonneg hEminus (Real.exp_pos (x / 4)).le]
