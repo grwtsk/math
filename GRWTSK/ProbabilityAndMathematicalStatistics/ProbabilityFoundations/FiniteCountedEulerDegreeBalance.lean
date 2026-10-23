@@ -288,4 +288,28 @@ theorem FreshCountedTrail.unused_out_edge_of_unused_in_edge
   exact ⟨f, (Finset.mem_filter.mp hf).1, (Finset.mem_filter.mp hf).2⟩
 
 
+
+/-- A residual edge incident to a vertex, in EITHER orientation,
+supplies a residual outgoing counted edge at that vertex.
+This is the precise local input needed after a weak-support
+connectivity argument finds an incident residual edge. -/
+theorem FreshCountedTrail.unused_out_edge_of_incident
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (v : Fin m → Bool)
+    (e : CountedBinaryEdge m c)
+    (he : e ∈ Finset.univ \ T.used)
+    (hincident : countedEdgeSource m c e = v ∨
+      countedEdgeTarget m c e = v) :
+    ∃ f : CountedBinaryEdge m c,
+      f ∈ Finset.univ \ T.used ∧ countedEdgeSource m c f = v := by
+  rcases hincident with hs | ht
+  · exact ⟨e, he, hs⟩
+  · exact T.unused_out_edge_of_unused_in_edge
+      hclosed hbalance v e he ht
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
