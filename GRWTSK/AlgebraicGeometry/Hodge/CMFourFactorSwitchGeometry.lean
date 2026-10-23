@@ -2,6 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
+import GRWTSK.AlgebraicGeometry.Hodge.CMFinitePureAssembly
 import Mathlib.LinearAlgebra.TensorProduct.Associator
 import GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics
 import GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport
@@ -952,21 +953,6 @@ theorem FiniteGaloisTensorCarrier.scalarConjugate_restrict
 /-- Finite Galois intermediate field of AlgebraicNumbers carrying a
 CM-field structure.  This is the correct field object for a uniform CM
 realization of one switched tensor. -/
-structure CMGaloisIntermediateField where
-  carrier : FiniteGaloisIntermediateField ℚ AlgebraicNumbers
-  [isCMField : IsCMField carrier]
-
-instance (E : CMGaloisIntermediateField) :
-    FiniteDimensional ℚ E.carrier :=
-  inferInstance
-
-instance (E : CMGaloisIntermediateField) :
-    IsGalois ℚ E.carrier :=
-  inferInstance
-
-instance (E : CMGaloisIntermediateField) :
-    IsCMField E.carrier :=
-  E.isCMField
 
 /-- Include both tensor factors from one finite Galois CM intermediate
 field into AlgebraicNumbers. -/
@@ -1272,35 +1258,11 @@ fields directly from the desired generator membership would be circular.
 
 /-- The concrete rational target for the finite canonical fourfold formula.
 Unlike an arbitrary target V, its four vector slots are explicit. -/
-abbrev CMFiniteCanonicalVectorTarget (E : CMGaloisIntermediateField) :=
-  (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
 
 /-- The first constructed coefficient supplier: multiplication on a
 rational tensor square of the finite CM field. Unlike the later fourfold
 cohomological comparison, this map uses only field multiplication and
 the tensor-product universal property. -/
-def CMFiniteCoefficientMultiplication
-    (E : CMGaloisIntermediateField) :
-    E.carrier ⊗[ℚ] E.carrier →ₗ[ℚ] E.carrier :=
-  TensorProduct.lift {
-    toFun := fun a => {
-      toFun := fun b => a * b
-      map_add' := by
-        intro x y
-        exact mul_add a x y
-      map_smul' := by
-        intro q x
-        simp [smul_eq_mul, mul_assoc, mul_left_comm, mul_comm]
-    }
-    map_add' := by
-      intro a b
-      ext x
-      exact add_mul a b x
-    map_smul' := by
-      intro q a
-      ext x
-      simp [smul_eq_mul, mul_assoc, mul_left_comm, mul_comm]
-  }
 
 /-- The multiplication supplier has the intended pure-tensor formula. -/
 @[simp]
@@ -1356,30 +1318,13 @@ theorem CMFiniteCoefficientMultiplication_diagonal_equivariant
 
 /-- The rational tensor target for four coefficient entries, with the
 same parenthesization as the canonical four-vector target. -/
-abbrev CMFiniteFourCoefficientTensor (E : CMGaloisIntermediateField) :=
-  (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
 
 /-- Iterated finite-CM coefficient multiplication. The construction uses
 the existing two-factor multiplication map and rational tensor functoriality,
 without postulating a fourfold multiplication operation. -/
-def CMFiniteFourCoefficientMultiplication
-    (E : CMGaloisIntermediateField) :
-    CMFiniteFourCoefficientTensor E →ₗ[ℚ] E.carrier :=
-  CMFiniteCoefficientMultiplication E ∘ₗ
-    ((CMFiniteCoefficientMultiplication E ∘ₗ
-      (CMFiniteCoefficientMultiplication E).lTensor E.carrier).lTensor
-        E.carrier)
 
 /-- Evaluation on a fourfold pure tensor is ordinary field multiplication. -/
 @[simp]
-theorem CMFiniteFourCoefficientMultiplication_pure
-    (E : CMGaloisIntermediateField)
-    (a b c d : E.carrier) :
-    CMFiniteFourCoefficientMultiplication E
-        (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
-      a * b * c * d := by
-  simp [CMFiniteFourCoefficientMultiplication,
-    CMFiniteCoefficientMultiplication_tmul, mul_assoc]
 
 /-- Diagonal action on a threefold coefficient tensor: conjugate every
 coefficient entry, not merely the outermost tensor factor. -/
@@ -1441,12 +1386,6 @@ theorem CMFiniteFourCoefficientMultiplication_equivariant
 /-- Canonical finite-CM pure-factor formula, prior to extension of
 coefficients into algebraic numbers. The coefficient entries multiply in
 E while the four vector entries remain a rational tensor. -/
-def canonicalFinitePureAssembly
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E :=
-  (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
-    (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
 
 /-- The canonical finite switched pure tensor factors through the
 constructed rational-linear fourfold coefficient multiplication map.
@@ -1480,52 +1419,18 @@ theorem canonicalFinitePureAssembly_eq_conjugatedCoefficientProduct
 /-- The fully constructed linear assembly on separated coefficient and
 vector tensors. Its remaining input rearrangement from four paired tensors
 is a distinct associativity/permutation construction. -/
-def CMFiniteSeparatedCanonicalAssembly
-    (E : CMGaloisIntermediateField) :
-    (CMFiniteFourCoefficientTensor E ⊗[ℚ] CMFiniteCanonicalVectorTarget E)
-      →ₗ[ℚ] (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E) :=
-  (CMFiniteFourCoefficientMultiplication E).rTensor
-    (CMFiniteCanonicalVectorTarget E)
 
 /-- The separated linear assembly reproduces the original eight-variable
 canonical formula on a pure coefficient tensor and pure vector tensor. -/
-theorem CMFiniteSeparatedCanonicalAssembly_pure
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    CMFiniteSeparatedCanonicalAssembly E
-      (((((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄)) ⊗ₜ[ℚ]
-        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)) =
-      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
-  simp [CMFiniteSeparatedCanonicalAssembly,
-    canonicalFinitePureAssembly,
-    CMFiniteFourCoefficientMultiplication_pure]
 
 /-- The original fourfold tensor target with coefficient/vector pairs
 still interleaved. This fixes the associativity convention before
 constructing the canonical tensor shuffle. -/
-abbrev CMFiniteFourPairedTensor (E : CMGaloisIntermediateField) :=
-  (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)
 
 /-- The canonical generator of the interleaved paired tensor target. -/
-def CMFiniteFourPairedPure
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    CMFiniteFourPairedTensor E :=
-  (((a₁ ⊗ₜ[ℚ] x₁) ⊗ₜ[ℚ] (a₂ ⊗ₜ[ℚ] x₂)) ⊗ₜ[ℚ]
-    (a₃ ⊗ₜ[ℚ] x₃)) ⊗ₜ[ℚ] (a₄ ⊗ₜ[ℚ] x₄)
 
 /-- The corresponding separated pure coefficient/vector tensor, with
 identical association conventions. -/
-def CMFiniteFourSeparatedPure
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    CMFiniteFourCoefficientTensor E ⊗[ℚ]
-      CMFiniteCanonicalVectorTarget E :=
-  (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄) ⊗ₜ[ℚ]
-    (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
 
 /-- The constructed separated assembly evaluates the separated version
 of any interleaved pure generator to the required finite-CM formula.
@@ -1563,49 +1468,15 @@ noncomputable def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
 
 /-- The canonical four-pair tensor shuffle, built from the associator/
 commutator construction provided by Mathlib. -/
-noncomputable def CMFiniteFourTensorShuffle (E : CMGaloisIntermediateField) :
-    CMFiniteFourPairedTensor E ≃ₗ[ℚ]
-      (CMFiniteFourCoefficientTensor E ⊗[ℚ]
-        CMFiniteCanonicalVectorTarget E) :=
-  (TensorProduct.congr (CMFiniteThreeTensorShuffle E)
-      (LinearEquiv.refl ℚ (E.carrier ⊗[ℚ] E.carrier))).trans
-    (TensorProduct.tensorTensorTensorComm ℚ
-      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
-      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)
-      E.carrier E.carrier)
 
 /-- The shuffle separates all four coefficient entries from all four
 vector entries on paired pure tensors. -/
 @[simp]
-theorem CMFiniteFourTensorShuffle_pure
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    CMFiniteFourTensorShuffle E
-      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
-      CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
-  simp [CMFiniteFourTensorShuffle, CMFiniteThreeTensorShuffle,
-    CMFiniteTwoTensorShuffle, CMFiniteFourPairedPure,
-    CMFiniteFourSeparatedPure]
 
 /-- Compose the actual tensor shuffle with the already constructed
 separated coefficient-multiplication assembly. -/
-def CMFiniteCanonicalPairedAssembly (E : CMGaloisIntermediateField) :
-    CMFiniteFourPairedTensor E →ₗ[ℚ]
-      (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E) :=
-  CMFiniteSeparatedCanonicalAssembly E ∘ₗ
-    (CMFiniteFourTensorShuffle E).toLinearMap
 
 @[simp]
-theorem CMFiniteCanonicalPairedAssembly_pure
-    (E : CMGaloisIntermediateField)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    CMFiniteCanonicalPairedAssembly E
-      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
-      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
-  rw [CMFiniteCanonicalPairedAssembly, LinearMap.comp_apply,
-    CMFiniteFourTensorShuffle_pure]
-  exact CMFiniteSeparatedCanonicalAssembly_on_separatedPure E
-    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
 /-- A rational-linear paired-to-separated shuffle is uniquely determined
 by its action on fourfold paired pure tensors. Existence is not asserted.
