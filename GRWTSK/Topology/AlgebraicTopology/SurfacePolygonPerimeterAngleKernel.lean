@@ -41,6 +41,23 @@ theorem source_angle_eq_iff_connected (k : ℕ)
   rw [source_angle_eq_iff_perimeter_projection_eq]
   rfl
 
+
+/-- Distinct original perimeter classes have distinct angular addresses;
+this is the contrapositive of the source-exact kernel characterization. -/
+theorem source_angle_ne_iff_projection_ne (k : ℕ)
+    (p q : BoundaryPoint k) :
+    sourceAngularAddress k p ≠ sourceAngularAddress k q ↔
+      perimeterProjection k p ≠ perimeterProjection k q := by
+  exact not_congr (source_angle_eq_iff_perimeter_projection_eq k p q)
+
+/-- The angular coordinate has exactly the inherited cyclic seam
+EqvGen fibers, and no additional identifications. -/
+theorem source_angle_ne_iff_not_connected (k : ℕ)
+    (p q : BoundaryPoint k) :
+    sourceAngularAddress k p ≠ sourceAngularAddress k q ↔
+      ¬ PerimeterConnected k p q := by
+  exact not_congr (source_angle_eq_iff_connected k p q)
+
 /-- The quotient angular coordinate separates any two perimeter classes. -/
 theorem perimeter_angle_eq_iff (k : ℕ)
     (x y : UnpairedPerimeter k) :
