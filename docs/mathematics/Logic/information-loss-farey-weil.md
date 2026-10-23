@@ -51,6 +51,17 @@ The repository's generic obstruction is now paired with an exact **converse on t
 
 **Verification status:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The new statements are authored Lean proofs, not checked Lean kernel output. The new standalone module must be compiled independently, its import closure and all transitive axioms audited (including `Classical.choice` and any actual additional axioms), then accepted at an immutable exact main SHA before root promotion. The mathematical content is repository-original; **no new paper theorem is imported**.
 
+### Total ambient-codomain reconstruction: the exact extra hypothesis
+
+The original image-restriction theorem avoids an empty readout target at unattained observable values. An additional source-only supplier in `GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness` makes the precise ambient boundary explicit:
+
+- `factorsThrough_iff_fiberConstant_of_inhabited_target`: for `[Nonempty Z]`, **without** assuming `profile : X → Y` is surjective, `FactorsThrough profile readout` is equivalent to constancy of `readout` on profile fibers. For each actually attained `y : Y`, the decoder chooses a preimage; for unattained `y` it returns the default element supplied by `[Nonempty Z]`. Classical choice appears explicitly; no computability, continuity, boundedness or measurable selection is inferred.
+- `factorsThrough_iff_fiberConstant_of_nonempty_source`: a `[Nonempty X]` source and the given `readout : X → Z` automatically provide a `Nonempty Z` witness. The same equivalence then holds on the full observable codomain.
+
+These sufficiency results **do not weaken** the existing hostile `X=Empty, Y=Unit, Z=Empty` counterexample; it fails both additional nonemptiness hypotheses. They do not construct a separating Weil readout for the Bombieri moment collision, restore rational roots from Farey endpoints, or realize nontrivial native Farey spectral channels.
+
+**Verification boundary:** source-only addendum; independently run pinned Lean 4.33.0/Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d` compilation, fresh kernel checking, `#print axioms` (including `Classical.choice`) and transitive unsafe/declaration audits. Integration is not kernel acceptance.
+
 ## Literature comparisons, not theorem imports
 
 These are **ANALOGY_ONLY** unless a future theorem explicitly constructs and verifies an adapter of the relevant types with the paper's exact hypotheses.
