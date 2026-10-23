@@ -178,19 +178,35 @@ theorem eval_mul_nonneg_iff_of_pos
   · intro hc
     exact mul_nonneg hq.le hc
 
-/-- A pointwise positive quadratic factor preserves every oriented Farey
-resolution certificate for the cubic factor. -/
-theorem polynomialResolves_mul_iff_of_pos
-    (q c : Polynomial ℚ) (I : Cell) (hq : ∀ x : ℚ, 0 < q.eval x) :
+/-- Endpoint positivity is sufficient to preserve an oriented polynomial
+sign certificate. No positivity assumption is made away from the two endpoints. -/
+theorem polynomialResolves_mul_iff_of_pos_at_endpoints
+    (q c : Polynomial ℚ) (I : Cell)
+    (hleft : 0 < q.eval I.left) (hright : 0 < q.eval I.right) :
     PolynomialResolves (q * c) I ↔ PolynomialResolves c I := by
   constructor
   · intro h
     exact ⟨
-      (eval_mul_nonpos_iff_of_pos q c I.left (hq I.left)).mp h.1,
-      (eval_mul_nonneg_iff_of_pos q c I.right (hq I.right)).mp h.2⟩
+      (eval_mul_nonpos_iff_of_pos q c I.left hleft).mp h.1,
+      (eval_mul_nonneg_iff_of_pos q c I.right hright).mp h.2⟩
   · intro h
     exact ⟨
-      (eval_mul_nonpos_iff_of_pos q c I.left (hq I.left)).mpr h.1,
-      (eval_mul_nonneg_iff_of_pos q c I.right (hq I.right)).mpr h.2⟩
+      (eval_mul_nonpos_iff_of_pos q c I.left hleft).mpr h.1,
+      (eval_mul_nonneg_iff_of_pos q c I.right hright).mpr h.2⟩
+
+/-- The endpoint-local comparison also applies to the declared resolvable-eye
+interface; it asserts sign preservation, not a rational root or completeness. -/
+theorem resolvableEye_mul_iff_of_pos_at_endpoints
+    (q c : Polynomial ℚ) (I : Cell)
+    (hleft : 0 < q.eval I.left) (hright : 0 < q.eval I.right) :
+    ResolvableEye (q * c) I ↔ ResolvableEye c I :=
+  polynomialResolves_mul_iff_of_pos_at_endpoints q c I hleft hright
+
+/-- A pointwise positive quadratic factor preserves every oriented Farey
+resolution certificate for the cubic factor. -/
+theorem polynomialResolves_mul_iff_of_pos
+    (q c : Polynomial ℚ) (I : Cell) (hq : ∀ x : ℚ, 0 < q.eval x) :
+    PolynomialResolves (q * c) I ↔ PolynomialResolves c I :=
+  polynomialResolves_mul_iff_of_pos_at_endpoints q c I (hq I.left) (hq I.right)
 
 end GRWTSK.NumberTheory.Farey
