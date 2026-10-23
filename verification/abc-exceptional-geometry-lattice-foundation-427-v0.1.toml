@@ -1,0 +1,143 @@
+schema = "grwtsk.abc-exceptional-geometry-lattice-foundation/0.1"
+id = "abc-exceptional-geometry-lattice-foundation-427-v0.1"
+owner_issue = 427
+parent_issue = 414
+predecessor_issue = 417
+predecessor_pr = 418
+predecessor_commit = "7f2fa130aecc053b8dac007e7eaab088736ebbe7"
+predecessor_tree = "de29f2d192099d1b514e352cc8c2aba7c0bd7913"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FINITE_LATTICE_THEOREM_OPEN"
+public_root_required = false
+
+mathematical_sources = [
+  "Christian Bernert, Tim Browning, Jared Duker Lichtman, Joni Teräväinen, Bounds on the exceptional set in the abc conjecture, arXiv:2410.12234v2 (2026), Proposition 4.1",
+  "D. R. Heath-Brown, Diophantine approximation with square-free numbers, Math. Z. 187 (1984), Lemma 3",
+]
+
+modules = [
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetGeometryLatticeInput",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls",
+  "GRWTSK.Interfaces.PrimitiveLinearLatticeFoundation",
+]
+
+source_paths = [
+  "GRWTSK/GeometryOfNumbers/PrimitiveLinearBoxCount.lean",
+  "GRWTSK/GeometryOfNumbers/PrimitiveLinearKernel.lean",
+  "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetGeometryLatticeInput.lean",
+  "GRWTSK/GeometryOfNumbers/Checks/PrimitiveLinearBoxControls.lean",
+  "GRWTSK/Interfaces/PrimitiveLinearLatticeFoundation.lean",
+]
+
+source_blobs = [
+  "354dc26112c05459da1a8cd37569c86aa0d76c99",
+  "99071fe43000dff0049a0c48beab5806f2b89108",
+  "cccd406696f7896ccad0779d86ff754ec0f77ac0",
+  "d68ceff0a4584640cc7064b2e9c9b1c41095c37d",
+  "43119785a33216c69bf640d91412a3b4e1ee4976",
+]
+
+documentation_path = "docs/mathematics/GeometryOfNumbers/heath-brown-primitive-linear-box-foundation.md"
+documentation_blob = "a2264e3e321499127825c36e3720b9a3138c540a"
+
+required_declarations = [
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Point",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.LinearEquation",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.VariablePrimitive",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.PrimitivePositiveSolution",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.primitivePositiveSolutions",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.mem_primitivePositiveSolutions",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.primitivePositiveSolutionCount",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.card_solutionSubtype",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.primitivePositiveSolutions_ext",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.primitivePositiveSolutionCount_eq_zero_iff",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.scaleHeight",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.scaleHeight_pos",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.scaleHeight_ne_zero",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.normalizedPrimitiveVolume",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.normalizedPrimitiveVolume_pos",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.PrimitiveLinearBoxBoundAt",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearBoxCount.Data.HasAbsolutePrimitiveLinearBoxBound",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.IntPoint",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.coefficientHom",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.linearKernel",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.mem_linearKernel",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.scalePoint",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.coefficientHom_scale",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.mem_linearKernel_of_scalePoint_mem",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.primitiveNormalWitness",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.coefficientHom_primitiveNormalWitness",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.coefficientHom_surjective",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.intPointOfNat",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.intPointOfNat_mem_linearKernel",
+  "GRWTSK.GeometryOfNumbers.PrimitiveLinearKernel.countedPoint_mem_linearKernel",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.geometrySelectedMonomialUpper",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.paperSelectedMonomial_le_geometryUpper",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.geometrySelectedPoint",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.geometryPrimitiveLinearBoxData",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.geometrySelectedPoint_mem_primitivePositiveSolutions",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.geometrySelectedPoint_mem_linearKernel",
+  "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces.geometryLatticeInput_of_paperAdmissible",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.unitData_count_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.unitData_member_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.coefficient_primitive_not_variable_primitive_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.primitive_ray_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.saturated_kernel_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.primitive_normal_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.primitive_normal_surjective_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.lopsided_scaleHeight_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.natural_division_rejected_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.denominator_positive_control",
+  "GRWTSK.GeometryOfNumbers.Checks.PrimitiveLinearBoxControls.named_bound_not_automatic_control",
+]
+
+required_checks = [
+  "direct exact-head elaboration of all five modules",
+  "exact authored and generated declaration/type reconciliation",
+  "duplicate-free finite count membership and cardinal equivalence",
+  "coefficient and variable gcd separation",
+  "positive anisotropic denominator and real quotient normalization",
+  "integral coefficient homomorphism and kernel membership",
+  "kernel saturation under nonzero integer scaling",
+  "nested Bezout witness and coefficient-homomorphism surjectivity",
+  "literal selected-monomial dyadic upper bounds",
+  "PR #418 positive primitive source adapter",
+  "all ten positive and hostile controls",
+  "transitive import, axiom, unsafe, opaque, native and compiler audit",
+  "immutable external receipt bound to this exact target",
+]
+
+hostile_controls = [
+  "coefficient gcd one substituted for variable primitivity",
+  "equation membership substituted for variable primitivity",
+  "division by max(aX,bY,cZ) without a positivity proof",
+  "natural-number division substituted for real division",
+  "all lattice points silently relabelled primitive",
+  "a lopsided box replaced by a cube without a distortion theorem",
+  "a coefficient-dependent constant relabelled absolute",
+  "a named bound proposition reported as a proved finite inequality",
+  "the finite foundation promoted to Proposition 4.1 or abc",
+]
+
+open_obligations = [
+  "rank-two lattice and covolume theorem",
+  "anisotropic reduced-basis or successive-minima estimate",
+  "scaled covolume bridge to max(aX,bY,cZ)",
+  "primitive-ray finite count",
+  "one explicit absolute constant",
+  "coordinate-permutation theorem",
+  "divisor-fibre lifting and complementary-variable summation",
+  "complete Proposition 4.1 supplier",
+]
+
+nonclaims = [
+  "No Heath-Brown finite lattice-point inequality is proved.",
+  "No Lean or Lake process ran.",
+  "No declaration has been kernel accepted or trust audited.",
+  "No divisor-fibre estimate, Proposition 4.1, exceptional-set theorem, or abc theorem is supplied.",
+  "This passive manifest is not an execution receipt.",
+]
