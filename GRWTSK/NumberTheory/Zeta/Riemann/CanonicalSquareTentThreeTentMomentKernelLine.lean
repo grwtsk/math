@@ -172,7 +172,10 @@ theorem actualThreeTentFunction_ordinaryMoment_eq (u : Combination 2) :
   have h1 := (canonicalTentComplex_integrableOn 1).const_mul (u (1 : Fin 3))
   have h2 := (canonicalTentComplex_integrableOn 2).const_mul (u (2 : Fin 3))
   unfold bombieriOrdinaryMoment actualThreeTentFunction ordinaryMomentRow
-  rw [integral_add (h0.add h1) h2, integral_add h0 h1]
+  have hadd := integral_add (h0.add h1) h2
+  have hadd01 := integral_add h0 h1
+  simp only [Pi.add_apply] at hadd hadd01
+  rw [hadd, hadd01]
   rw [integral_const_mul, integral_const_mul, integral_const_mul]
   change u (0 : Fin 3) * bombieriOrdinaryMoment (canonicalTentComplex 0) +
       u (1 : Fin 3) * bombieriOrdinaryMoment (canonicalTentComplex 1) +
@@ -192,7 +195,10 @@ theorem actualThreeTentFunction_reciprocalMoment_eq (u : Combination 2) :
   have h2 := (canonicalTentComplex_div_integrableOn 2).const_mul (u (2 : Fin 3))
   unfold bombieriMultiplicativeMoment actualThreeTentFunction reciprocalMomentRow
   simp_rw [add_div, mul_div_assoc]
-  rw [integral_add (h0.add h1) h2, integral_add h0 h1]
+  have hadd := integral_add (h0.add h1) h2
+  have hadd01 := integral_add h0 h1
+  simp only [Pi.add_apply] at hadd hadd01
+  rw [hadd, hadd01]
   rw [integral_const_mul, integral_const_mul, integral_const_mul]
   change u (0 : Fin 3) * bombieriMultiplicativeMoment (canonicalTentComplex 0) +
       u (1 : Fin 3) * bombieriMultiplicativeMoment (canonicalTentComplex 1) +
@@ -200,7 +206,6 @@ theorem actualThreeTentFunction_reciprocalMoment_eq (u : Combination 2) :
   rw [bombieriMultiplicativeMoment_canonicalTent_eq 0,
     bombieriMultiplicativeMoment_canonicalTent_eq 1,
     bombieriMultiplicativeMoment_canonicalTent_eq 2]
-  rfl
 
 /-- Source-faithful characterization: precisely the scalar cofactor line
 in the *three-tent coefficient space* satisfies Bombieri's TWO displayed
