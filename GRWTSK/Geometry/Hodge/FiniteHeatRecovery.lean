@@ -168,6 +168,32 @@ theorem inverse_gain_readout {ι : Type*} (eigenvalue : ι → ℝ)
   rw [hrew, abs_mul, abs_of_pos (Real.exp_pos _)]
   exact mul_le_mul_of_nonneg_right (hgain i) (abs_nonneg _)
 
+/-- Exact uniform coordinate-inverse requirement for the full spectral
+heat operator, with ONE real constant shared across all inputs and modes. -/
+def UniformInverseBound {ι : Type*} (eigenvalue : ι → ℝ)
+    (t C : ℝ) : Prop :=
+  ∀ signal : ι → ℝ, ∀ i : ι,
+    |inverseDiagonalHeat eigenvalue t signal i| ≤ C * |signal i|
+
+/-- This is the precise stability gate: a uniform inverse is bounded
+if and only if every spectral amplification exp(t*lambda(i)) is bounded
+by that same constant. Mere stagewise invertibility proves neither side. -/
+theorem uniformInverseBound_iff_gain {ι : Type*}
+    (eigenvalue : ι → ℝ) (t C : ℝ) :
+    UniformInverseBound eigenvalue t C ↔
+      ∀ i : ι, Real.exp (t * eigenvalue i) ≤ C := by
+  constructor
+  · intro h i
+    have hsingle := h (fun _ => (1 : ℝ)) i
+    change |Real.exp (t * eigenvalue i) * (1 : ℝ)| ≤
+      C * |(1 : ℝ)| at hsingle
+    simpa [abs_of_pos (Real.exp_pos _)] using hsingle
+  · intro h signal i
+    change |Real.exp (t * eigenvalue i) * signal i| ≤
+      C * |signal i|
+    rw [abs_mul, abs_of_pos (Real.exp_pos _)]
+    exact mul_le_mul_of_nonneg_right (h i) (abs_nonneg _)
+
 /-- A supplied, source-faithful finite Hodge spectral chart for an ACTUAL
 finite incidence Laplacian. Existence is not constructed in this module. -/
 structure HodgeSpectralChart
