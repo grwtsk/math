@@ -1364,7 +1364,14 @@ theorem CMFiniteFourfoldAssembly.canonical_tensor_transport
         (CMFiniteFourfoldAssembly.canonical factors).tensor =
       (CMFiniteFourfoldAssembly.canonical
         (factors.scalarTransport σ)).tensor := by
-  exact (CMFiniteFourfoldAssembly.canonical factors).scalar_transport_eq σ
+  calc
+    _ = (CMFiniteFourfoldAssembly.canonical factors).assemble
+          ((factors.scalarTransport σ).vector) :=
+      (CMFiniteFourfoldAssembly.canonical factors).scalar_transport_eq σ
+    _ = (CMFiniteFourfoldAssembly.canonical
+          (factors.scalarTransport σ)).tensor :=
+      (CMFiniteFourfoldAssembly.canonical
+        (factors.scalarTransport σ)).original_eq.symm
 
 /-- Explicit rational multilinearity of the finite four-slot assembly.
 This strengthens the function-valued interface without pretending that
