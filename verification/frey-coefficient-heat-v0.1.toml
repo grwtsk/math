@@ -1,0 +1,242 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-coefficient-heat-v0.1"
+owner_repository = "grwtsk/math"
+issues = [100, 206, 221, 222, 227, 230, 233, 250, 270]
+root_module = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+build_target = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "907d2f81d4242345d59affac9419b78b3c7642ea"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyPolynomialCoordinates"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.WeightedInvolution"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationEnergy"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationIntegral"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationCokernel"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+
+[[hostile_controls]]
+id = "reject-discrete-jet-as-real-time-topology"
+description = "The new finite real coefficient topology is named independently. Do not identify it with the previous discrete-observation completion topology."
+
+[[hostile_controls]]
+id = "reject-coefficient-heat-as-elliptic-hodge"
+description = "Rate 3 is the selected phase-triangle residual generator plus a closure channel, not the geometric Dolbeault Laplacian or its spectrum."
+
+[[hostile_controls]]
+id = "reject-rank-growth-as-gap-proof"
+description = "Replicating a fixed finite phase generator over W_k does not prove a uniform gap for growing geometric or arithmetic generators."
+
+[[hostile_controls]]
+id = "reject-damped-coherent-section"
+description = "Retain the entire phase mean in W_k. High-degree coherent sections are stationary, not damped away."
+
+[[hostile_controls]]
+id = "reject-energy-rate-as-state-rate"
+description = "The state factor is exp(-3t). Squared defect energy has factor exp(-6t), not exp(-3t)."
+
+[[hostile_controls]]
+id = "reject-finite-time-exactification"
+description = "For finite real time the exponential is nonzero. Exact zero defect after heat is equivalent to an already exact initial zero defect; tolerance is not equality."
+
+[[hostile_controls]]
+id = "reject-unweighted-closure-kernel"
+description = "Closure weight must be positive to detect closure. Nonnegative weight suffices only for contraction/nonnegativity."
+
+[[hostile_controls]]
+id = "reject-negative-time-contraction"
+description = "The formulas and semigroup are defined for real time, but contraction requires t>=0. Backward time can amplify."
+
+[[hostile_controls]]
+id = "reject-three-phases-as-torsion-c3"
+description = "The three source-indexed section copies are not a C3 action of the geometric two-torsion translation, which remains period two."
+
+[[hostile_controls]]
+id = "reject-closure-as-fourth-boundary-port"
+description = "The closure copy is independent coefficient data, not a fourth geometric point or the derivative observation added in the earlier rank increment."
+
+[[hostile_controls]]
+id = "reject-commutator-map-drift"
+description = "Heat commutation must use the old weighted stageEquiv on EVERY phase and closure, not an independently fitted matrix or unequal phase maps."
+
+[[hostile_controls]]
+id = "reject-commutation-as-isometry"
+description = "Exact heat/port commutation retains the old (ab)^(2k) energy bound. It does not remove source or grade dependence."
+
+[[hostile_controls]]
+id = "reject-real-heat-as-integral-flow"
+description = "Real scalar attenuation and averaging need not preserve the integer coefficient lattice. Example: half attenuation of (1,-1,0) produces half-integer coefficients."
+
+[[hostile_controls]]
+id = "reject-scalar-test-as-function-realization"
+description = "Derive all phase-coordinate formulas from the direct mean/relaxation on the old W_k, and bind the energy to the previous basis metric."
+
+[[hostile_controls]]
+id = "reject-selected-flow-as-global-section-proof"
+description = "This finite flow does not identify W_k with complete H0, construct intrinsic metrics, or prove geometric/adelic interpolation."
+
+[[hostile_controls]]
+id = "reject-unelaborated-source-as-acceptance"
+description = "Finite exact arithmetic and symbolic exponential checks are not Lean elaboration, exact public-type checks, transitive trust audit or replay evidence."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "Lean elaboration, kernel acceptance or an external replay receipt",
+  "replacement of prior targets or acceptance of their historical hostile controls",
+  "intrinsic elliptic Hodge/Dolbeault heat or arithmetic Markov heat",
+  "complex C3 waveform, harmonic oscillator or a geometric return law",
+  "a nonconstant continuous path in the previous discrete-jet topology",
+  "a global analytic power-series norm or infinite-dimensional heat limit",
+  "complete H0 spaces, polar divisors or geometric integral model lattices",
+  "an integral-lattice or rational-source automorphism at arbitrary real time",
+  "uniform geometric spectral gaps from finite phase gap or rank growth",
+  "removal of weighted-port metric, denominator or index costs",
+  "exact gluing after a finite displayed waveform cycle",
+  "conductor, radical-excess, uniform-height, abc or RH results",
+  "execution, merge, issue closure, workflow or worker authority"
+]

@@ -1,0 +1,333 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-cech-affine-height-v0.1"
+owner_repository = "grwtsk/math"
+issues = [100, 221, 222, 230, 250, 270]
+root_module = "GRWTSK.Interfaces.FreyCechAffineHeightCore"
+build_target = "GRWTSK.Interfaces.FreyCechAffineHeightCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "3911354c69575a7b6e39c7339255ec2eda4b9c52"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyPolynomialCoordinates"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.WeightedInvolution"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationEnergy"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationIntegral"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationCokernel"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellCech"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHeatCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellHodgeGauge"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHodgeComparison"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHodgeCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellGaugeMetric"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGaugeMetric"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechGaugeMetricCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellIntegralGauge"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechIntegralGauge"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechIntegralGaugeCore"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechWeightedMinimum"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechWeightedMinimumCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechPrimeBudget"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechPrimeBudgetCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Padics.WeightedPermutationNorm"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechPadicNorm"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechPadicNormCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechArchimedeanNorm"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechArchimedeanNormCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Height.RationalVectorAffineHeight"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechAffineHeight"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechAffineHeightCore"
+
+[[hostile_controls]]
+id = "reject-homogeneous-height-substitution"
+description = "The height is H([1:x]), not H([x]). Scaling x changes the affine point; the first homogeneous coordinate must be scaled too for projective invariance."
+
+[[hostile_controls]]
+id = "reject-arbitrary-common-denominator"
+description = "Use the actual LCM of reduced Rat.den coordinates. A larger common denominator does not give the primitive representative or its exact height."
+
+[[hostile_controls]]
+id = "reject-denominator-product"
+description = "The least common denominator is an LCM, not a product. Shared denominators are not counted independently."
+
+[[hostile_controls]]
+id = "reject-zero-denominator"
+description = "Prove the common denominator nonzero before cancellation, inequalities or logarithms. The zero clearing scalar is not a positive denominator."
+
+[[hostile_controls]]
+id = "reject-nonprimitive-height"
+description = "Bind the max formula to the explicit primitive integer representative (D,N_i), proving every natural common divisor is one."
+
+[[hostile_controls]]
+id = "reject-zero-height-zero"
+description = "The affine origin has height one. Zero vectors are allowed in the affine inequalities and are not undefined projective vectors."
+
+[[hostile_controls]]
+id = "reject-local-cost-as-height-theorem"
+description = "Prove denominator divisibility and the archimedean comparison for the same map before exporting a height inequality. A sum of proposed local costs is insufficient."
+
+[[hostile_controls]]
+id = "reject-map-replacement"
+description = "Reuse OLD combinedQ and inverseQ, old source weights, source-column reversal and raw reduced fields. The older one-section operator is not the four-parameter composite."
+
+[[hostile_controls]]
+id = "reject-forgotten-raw-mismatch"
+description = "Retain all three raw mismatch coordinates plus the vertex sum; a difference-only target loses information."
+
+[[hostile_controls]]
+id = "reject-arch-frame-isometry"
+description = "The difference frame is not archimedean-isometric. Consume the proved raw-row bound with factor five, not the framed diagonal factor four."
+
+[[hostile_controls]]
+id = "reject-inverse-cost-one"
+description = "Archimedean inverse factor one does not give affine-height factor one. Retain the full inverse common-denominator multiplier 12|ab|^k."
+
+[[hostile_controls]]
+id = "reject-clearing-index-radical-interchange"
+description = "The clearing integer, actual cokernel index and radical support are different. Neither index nor radical replaces the sharp height factor."
+
+[[hostile_controls]]
+id = "reject-lcm-of-composite-costs"
+description = "The old composite uses 12|ab|^k, not lcm(12,|ab|^k). Shared primes can accumulate valuation depth."
+
+[[hostile_controls]]
+id = "reject-missing-grade-zero"
+description = "At grade zero forward height factor five and inverse factor twelve still arise from the fixed four-field chart."
+
+[[hostile_controls]]
+id = "reject-norm-witness-as-height-witness"
+description = "Sharpness must include actual least denominators and affine heights. The reciprocal 3w and 4w columns force the full witness denominator."
+
+[[hostile_controls]]
+id = "reject-reduced-height-as-source-model-height"
+description = "The four reduced fields omit gauge; the marked Frey model and primitive triple are not identified with these coefficient coordinates or the fixed section x."
+
+[[hostile_controls]]
+id = "reject-hidden-uniformity"
+description = "Bounds quantify over rational vectors at fixed source and grade; retain |ab| and k. No source-independent or grade-independent radical bound is inferred."
+
+[[hostile_controls]]
+id = "reject-unelaborated-height-as-acceptance"
+description = "Exact arithmetic tests, lexical checks and source publication do not elaborate Lean, validate public signatures, audit trust or authorize execution/merge."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "Lean elaboration, exact-public-signature or transitive trust acceptance",
+  "execution or replacement of any historical verification target",
+  "homogeneous height invariance under scaling the affine coordinates alone",
+  "a bundled Mathlib projective-space height or general number-field adelic theorem",
+  "an intrinsic Hodge, geometric integral-lattice or complete H0 identification",
+  "recovery of discarded gauge fields from four reduced coordinates",
+  "a marked-source/model-to-coordinate height comparison",
+  "conductor, minimal-model or characteristic-two classification",
+  "uniformity in arithmetic source or unbounded auxiliary grade",
+  "a radical bound obtained by discarding denominator multiplicities",
+  "the ABC-equivalent observation-height upper bound or ABC/RH conclusion",
+  "execution, workflow, worker, merge, issue closure or target promotion authority"
+]
