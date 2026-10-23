@@ -1,0 +1,159 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-canonical-square-tent-polarization-v0.1"
+repository = "grwtsk/math"
+issue = 157
+base_branch = "main"
+base_commit = "16851ad6be948a1467baf7d029f2a8a65e308b31"
+base_tree = "c34b9b1302b4bbf7784b95c8eb583e5ae3bd6436"
+branch = "research/rh-square-tent-polarization-157-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean"
+source_blob = "f75ae60e93023fb40d2b09959dbf427f4236c5c8"
+note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-polarization-157.md"
+note_blob = "d468700c149d221d3a3364a41cc743653ebb9a4c"
+
+predecessor_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentZetaApproximation.lean"
+predecessor_blob = "40fa21e22cdcf6dad9aca2d21bac483d5bf7fd05"
+tent_source = "GRWTSK/NumberTheory/Chebyshev/TentSource.lean"
+tent_source_blob = "e2e79a6b798772252b7d856ca3052c83fa9284ff"
+prime_gram_source = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimePowerVonMangoldt.lean"
+prime_gram_blob = "1df05e21d7d7cd5c9988ff843cf0bd0821e2f5b7"
+
+source_binding = "Riemann-zeta canonical absolutely-summed square-tent explicit formula"
+test_class = "fixed M; Fin(M+1)->Complex coefficients on canonical square tents i+2"
+polarization = "orthogonal arithmetic direct sum with source-proved disjoint square-window support"
+normalization = "diagonal coefficient = prime-power Gram = complete canonical correction; finite diagonal = real finite zero-head correction"
+raw_residual = "complete complex finiteHeadBalance on diagonal; exact zero off diagonal"
+hermitian_residual = "real projection of raw residual with coefficientwise canonicalTailBudget"
+criterion_transport = "absent and explicitly rejected until a same-source cross-term and positive-cone transport theorem is proved"
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+require_exact_base_commit = true
+require_exact_source_blob = true
+require_exact_note_blob = true
+require_pinned_lean_mathlib = true
+require_isolated_source_elaboration = true
+require_warning_clean_build = true
+require_current_main_import_compatibility = true
+require_transitive_import_inventory = true
+require_exact_declaration_types = true
+require_no_sorry_admit_new_axiom_native_decide_or_unsafe = true
+require_kernel_checker = true
+require_axiom_closure = true
+require_generated_declaration_reconciliation = true
+require_external_replay_receipt = true
+reject_public_root_pass_as_leaf_evidence = true
+reject_invented_cross_terms = true
+reject_dropped_raw_imaginary_residual = true
+reject_growing_dimension_convergence_claim = true
+reject_classical_weil_transport_claim = true
+reject_weil_criterion_claim = true
+reject_rh_claim = true
+do_not_merge = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.Combination"
+classification = "finite_complex_square_tent_coefficient_space"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.squareWeight_mul_eq_zero_of_ne"
+classification = "source_support_orthogonality"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourceCrossTermAt"
+classification = "literal_prime_power_cross_summand"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourceCrossSum_eq_arithmeticCrossCoefficient"
+classification = "exact_arithmetic_cross_coefficient_matrix"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.rawCrossResidual_diag"
+classification = "complete_complex_diagonal_residual"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.hermitianCrossResidual_eq_raw_re"
+classification = "raw_to_hermitian_residual_projection"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm"
+classification = "source_proved_complex_polarized_form"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm_hermitian"
+classification = "hermitian_symmetry"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourceDiagonal_nonnegative"
+classification = "arithmetic_positive_semidefinite_diagonal"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.source_sub_rawFinite_eq_rawResidualForm"
+classification = "exact_complete_raw_polarized_residual_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.source_sub_finite_eq_hermitianResidualForm"
+classification = "exact_hermitian_polarized_residual_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.norm_source_sub_finite_le_pairError"
+classification = "complete_pairwise_tail_bound"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.pairError_vanishes"
+classification = "fixed_dimension_pairwise_error_decay"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.realFiniteForm_diagonal_lower_bound"
+classification = "approximate_positive_diagonal_bound"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.approximatePositiveApproximation"
+classification = "finite_dimension_polarized_approximate_positive_instance"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourceBoundPolarizedPacket"
+classification = "source_bound_polarized_packet_without_classical_criterion"
+
+[hostile_controls]
+cases = [
+  "basis i uses source square stage i+2",
+  "distinct source square windows have disjoint open support",
+  "shared square endpoints carry zero tent weight",
+  "literal cross summand uses actual von Mangoldt coefficient and both square-root amplitudes",
+  "off-diagonal zero follows from source support rather than missing-data convention",
+  "diagonal coefficient equals actual prime-power Gram and complete canonical correction",
+  "raw finite coefficient remains complex before Hermitian projection",
+  "raw residual retains the complete finiteHeadBalance including multiplicity and tail",
+  "off-diagonal raw and Hermitian residuals are exact zeros only at this orthogonal direct-sum scope",
+  "source and finite forms prove conjugate-linearity, linearity and Hermitian symmetry",
+  "source diagonal positivity is derived from actual Gram coefficients",
+  "finite Hermitian diagonal is only lower bounded by a vanishing defect",
+  "pair error is coefficientwise and tends to zero only for fixed finite M and fixed vectors",
+  "no operator-norm or growing-support convergence",
+  "no identification with classical Weil convolution cross terms",
+  "no WeilTestSpace, WeilCriterionForZeta or RH implication"
+]
+
+[finite_fixture]
+maximum_index = 1
+basis_indices = [0, 1]
+source_stages = [2, 3]
+shared_endpoint = 9
+expected_cross_coefficient = 0
+kind = "symbolic_disjoint_square_support"
+mathematical_authority = false
+
+[next_obstruction]
+statement = "Prove or refute an exact source-bound transport from the finite orthogonal arithmetic coefficient space into one named classical zeta Weil test space and normalization, including equality of all cross terms and preservation of the required positive cone."
