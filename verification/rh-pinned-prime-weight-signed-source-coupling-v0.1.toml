@@ -1,0 +1,75 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-signed-source-coupling-v0.1"
+owner_repository = "grwtsk/math"
+issue = 822
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightSignedSourceCouplingControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightSignedSourceCouplingControls"
+
+[source_binding]
+parent_branch = "research/817-pinned-prime-envelope-collapse-v01"
+parent_revision = "a3a753375a3b5e52f64591111fe00b1ebcb71724"
+implementation_branch = "research/822-pinned-prime-signed-coupling-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / IMMUTABLE_SIGNED_SOURCE_RULE_DEFINED / POINTWISE_SIGNED_SUPPLIER_DEFINED / SIGNED_COUPLING_TO_RATIO_DEFINED / SIGNED_COUPLING_TO_RECURRENCE_DEFINED / ACTUAL_ARITHMETIC_SOURCE_RULE_OPEN / UNIFORM_RESPONSE_CAPACITY_OPEN / DESCENDED_SIGNED_RESIDUAL_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[signed_rule]
+structure = "PinnedPrimeWeightSignedSourceRule"
+metadata_fields = ["sourceIdentity", "normalization", "invalidationKey"]
+response = "response : Nat -> Real -> Real"
+residual = "signedResidual : Nat -> Real -> Real"
+identity = "thetaError(v)=response(j,v)/dyadicScale(j)+signedResidual(j,v) on the next octave"
+metadata_proves_identity = false
+identity_is_proof_field = true
+
+[pointwise_transport]
+response_bound = "abs(response(j,v))<=C*pinnedPrimeWeightedAmplitude(dyadicScale(j))^2"
+residual_bound = "abs(signedResidual(j,v))+1<=E"
+amplitude_conclusion = "pinnedPrimeWeightAmplitudeRequirement(dyadicScale(j),C,v,E)"
+ratio_conclusion = "pinnedPrimeWeightBertrandRatioRequirement(dyadicScale(j),C,v,E)"
+uses_exact_signed_identity = true
+uses_actual_pinned_amplitude = true
+
+[criterion_transport]
+variable_signed_to_ratio = true
+fixed_signed_to_fixed_ratio = true
+fixed_signed_to_recurrence = true
+fixed_signed_to_descent_for_rho_ge_three_quarters = true
+ratio_to_signed_converse = false
+actual_arithmetic_rule_constructed = false
+
+[hostile_controls]
+zero_response_full_residual_rule = true
+target_fitted_zero_residual_rule = true
+exact_identity_alone_implies_response_bound = false
+exact_identity_alone_implies_residual_decay = false
+metadata_strings_prove_source_law = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightSignedSourceCoupling"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightSignedSourceCoupling.lean"
+blob = "639e3dd3a5565d7e95c5b42f49d8fc02551a4575"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightSignedSourceCouplingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightSignedSourceCouplingControls.lean"
+blob = "6f30e0332799c0595f3176ee95c42cdc8947594b"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-signed-source-coupling.md"
+blob = "30e38d4d403aa5da83f9ac67f83c2cdbbc467a5d"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+IMMUTABLE_SIGNED_SOURCE_RULE_DEFINED = true
+POINTWISE_SIGNED_SUPPLIER_DEFINED = true
+SIGNED_COUPLING_TO_RATIO_DEFINED = true
+SIGNED_COUPLING_TO_RECURRENCE_DEFINED = true
+ACTUAL_ARITHMETIC_SOURCE_RULE_PROVED = false
+UNIFORM_RESPONSE_CAPACITY_PROVED = false
+DESCENDED_SIGNED_RESIDUAL_PROVED = false
+SEVEN_EIGHTHS_SIGNED_COUPLING_PROVED = false
+THREE_QUARTERS_SIGNED_COUPLING_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false
