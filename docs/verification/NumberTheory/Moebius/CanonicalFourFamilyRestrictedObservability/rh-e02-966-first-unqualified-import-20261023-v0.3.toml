@@ -1,0 +1,310 @@
+# Supplemental v0.3 source-pinned import-chain preflight; no execution authority or receipt.
+# Qualified-reference scopes are from issue #100 at an older commit.
+schema = "rh-e02-966-first-unqualified-import-v0.3"
+repository = "grwtsk/math"
+source_commit = "4dcf18fbfdc51cecafec26f00e7583a875c3b2e7"
+source_tree = "6ab507ac5c77ff39285a7d77950eafd5b34a917d"
+qualified_reference_commit = "16851ad6be948a1467baf7d029f2a8a65e308b31"
+qualified_reference_owner = "grwtsk/math#100"
+parent_spec_v01_blob = "1e7ff95a3dc1be062a3957d3f88e1f0c504d3060"
+parent_spec_v02_blob = "6dee9a91c01d6fb3998f56953cbbe6af3f8d9b39"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+effect_owner = "grwtsk/noeaaeue"
+math_issue = 966
+status = "STATIC_QUALIFICATION_PRECHECK"
+current_source_build = "PENDING_EXECUTION"
+current_source_fresh_kernel = "PENDING_EXECUTION"
+current_source_transitive_axioms = "PENDING_EXECUTION"
+remote_authorization = "NOT_GRANTED_BY_THIS_SPEC"
+do_not_force_push = true
+do_not_change_math_source = true
+
+[qualified_reference]
+reported_build_root = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredCauchyPremiseAudit"
+reported_build_root_is_member_of_12_target_matrix = true
+reported_full_target_compilation_pass = true
+reported_fresh_kernel_and_transitive_axiom_audit = true
+this_spec_did_not_execute_reported_checks = true
+graph_audit_commit = "16851ad6be948a1467baf7d029f2a8a65e308b31"
+verified_exact_local_import_edges = 16
+graph_path_reaches = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+graph_path_implies_module_in_reported_import_closure = true
+reported_historical_scope_does_not_accept_anchored_four_family_leaves = true
+all_current_source_replays_remain_pending = true
+
+[[historical_import_chain]]
+order = 1
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredCauchyPremiseAudit"
+source_blob = "090732bf37e7a7738c6ab3a1f75368415c586e71"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSecondMomentWinding"
+
+[[historical_import_chain]]
+order = 2
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSecondMomentWinding"
+source_blob = "8647a1386d3a66a1cfafe7e13fa623dfe71a381d"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredCauchyDimensionReduction"
+
+[[historical_import_chain]]
+order = 3
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredCauchyDimensionReduction"
+source_blob = "4d63378c4650779db091b8d90985f8c0f8bdfe2f"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctCancellationThreshold"
+
+[[historical_import_chain]]
+order = 4
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctCancellationThreshold"
+source_blob = "92786a9f439b0c695ea6413cbf7b8101e4c2e869"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctWindingSupportSum"
+
+[[historical_import_chain]]
+order = 5
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctWindingSupportSum"
+source_blob = "c065e0d78d6fb15de15e9e0c09dda39ad502d48f"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctLagSupport"
+
+[[historical_import_chain]]
+order = 6
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctLagSupport"
+source_blob = "53b950e770c13d6715f8aefee3c35dab6cff0774"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctShiftPairCount"
+
+[[historical_import_chain]]
+order = 7
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctShiftPairCount"
+source_blob = "43fdda858a7c5cb40aeecf67ef4a8b9497944ebb"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinctPerLag"
+
+[[historical_import_chain]]
+order = 8
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinctPerLag"
+source_blob = "b2052858921d6e0037da6ef087a66ae969c8d099"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinct"
+
+[[historical_import_chain]]
+order = 9
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinct"
+source_blob = "f2430e54949c4074d73fc8db4578c0109662384c"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctChowlaNormalForm"
+
+[[historical_import_chain]]
+order = 10
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctChowlaNormalForm"
+source_blob = "bb262312153816d7d01a7f4dd62e23c9aa79de19"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobiusCollisions"
+
+[[historical_import_chain]]
+order = 11
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobiusCollisions"
+source_blob = "7d65e340218f41a6498a4acb2ba7c701548b0866"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobius"
+
+[[historical_import_chain]]
+order = 12
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobius"
+source_blob = "245d69f3ed557962bed6cc232ec7a5ffcca12a82"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingOffDiagonalCovariance"
+
+[[historical_import_chain]]
+order = 13
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingOffDiagonalCovariance"
+source_blob = "c9f26d5e9745d28039ab7c7ceaca5c74f0261f45"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingAffineChowlaVarianceDefect"
+
+[[historical_import_chain]]
+order = 14
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingAffineChowlaVarianceDefect"
+source_blob = "cb239ffccc633fa300bf48f10e5aa72f7a57eac2"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredPairMassChowlaBridge"
+
+[[historical_import_chain]]
+order = 15
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredPairMassChowlaBridge"
+source_blob = "6e72cc0ba0281a4d3310d0bbbccee3c994286125"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingMeanInflation"
+
+[[historical_import_chain]]
+order = 16
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingMeanInflation"
+source_blob = "eda2593c1712b50983dd8a158cda069f94fb8a8f"
+imported_next = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+
+[[historical_import_chain]]
+order = 17
+module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+source_blob = "a9de98b01c67f4ce06f4d01ba896127b5fb4d84b"
+imported_next = "END_OF_VERIFIED_CHAIN"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.MertensPrimitive"
+source_blob = "963ad70225b0d6625e7001fd643d18a890024833"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"
+source_blob = "703076acb4b44f5ce3bc3b63ef1155c0da426b9f"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+source_blob = "6530da3ccea612394f604b708e354c8ec7440e03"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenCoefficientBridge"
+source_blob = "144610b8e8064cb9669526308e19323073049068"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierBridge"
+source_blob = "6b11fea2492a8552f93919bc215f0e40a53deb7e"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"
+source_blob = "70e382e8c8548a915f15d080fae512580f45bf3c"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary"
+source_blob = "d4b7ff5d6b64e9bbdeea3931b4f43f6d6e6477cd"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+source_blob = "84fed8973f7c1a1b358711d159713054805a33c2"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+source_blob = "d351831b67611b3a341f8e4181b38382c769994e"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+source_blob = "45039e5cdc467f461f5702d7c735e15fc34cec07"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[unqualified_or_unreplayed_source]]
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+source_blob = "c2d8db7b74a4b877e4153e392c357cd9fc31dda9"
+result_at_target_commit = "PENDING_EXECUTION"
+
+[[priority_commands]]
+order = 1
+id = "fork_a1"
+module = "GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.MobiusVonMangoldtCoefficientBridge"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "inspect underlying Möbius-log factorization before anchored bridge"
+
+[[priority_commands]]
+order = 2
+id = "fork_b1"
+module = "GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierBridge"
+compile = "lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierBridge"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogGreenFourierBridge"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "compile separate thin Fourier branch; no historical joint import"
+
+[[priority_commands]]
+order = 3
+id = "fork_a2"
+module = "GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AdditiveMultiplicativeBridgeObstruction"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "compile source carrier from coefficient bridge"
+
+[[priority_commands]]
+order = 4
+id = "fork_join1"
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AnchoredPairGreenCoefficientBridge"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "first explicit anchored join; stop downstream acceptance if this fails"
+
+[[priority_commands]]
+order = 5
+id = "fork_join2"
+module = "GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AnchoredPairPositiveShiftBoundary"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "check a=1,2 correction unchanged"
+
+[[priority_commands]]
+order = 6
+id = "orbit_join"
+module = "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "join previously qualified regular-orbit module with anchored coefficient branch"
+
+[[priority_commands]]
+order = 7
+id = "four_family"
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "check one-hot signed finite matrix and thin Fourier coordinate"
+
+[[priority_commands]]
+order = 8
+id = "zero_column"
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "check null-column witness with actual source support"
+
+[[priority_commands]]
+order = 9
+id = "restricted_leaf"
+module = "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+compile = "lake build --wfail GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+compile_status = "PENDING_EXECUTION"
+checker = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability"
+checker_status = "PENDING_EXECUTION"
+transitive_axiom_census = "PENDING_EXECUTION"
+interpretation = "check terminal erasure and support-only no-go"
+
+[controls]
+require_clean_detached_checkout_exact_commit = true
+require_exact_lean_and_mathlib_pins = true
+require_complete_project_and_mathlib_import_closure = true
+require_exact_theorem_types_universes_and_negative_controls = true
+require_fresh_checker_after_each_successful_compiled_leaf = true
+require_transitive_axiom_audit_of_every_owned_declaration = true
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorryAx = true
+reject_unexplained_unsafe_or_native_dependencies = true
+reject_promotion_of_older_reference_scope_to_new_target = true
+do_not_assume_first_failed_module_without_actual_diagnostic = true
+stop_downstream_acceptance_after_first_actual_import_failure = true
+preserve_signed_other_shift_and_zero_shift_corrections = true
+keep_historical_thin_Fourier_name_collision_unresolved = true
+keep_RH_strength_uniform_energy_premise_open = true
+record_command_exit_stderr_stdout_sources_resources_timestamps = true
+noeaaeue_shell_is_not_authorized_here = true
+no_merge_or_change_of_mathematical_source = true
