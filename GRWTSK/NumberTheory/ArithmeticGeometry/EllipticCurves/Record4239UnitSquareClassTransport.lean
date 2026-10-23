@@ -41,7 +41,7 @@ set_option autoImplicit false
 namespace GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
 
 /-- Units modulo unit squares over a commutative ring. -/
-abbrev UnitSquareClasses (R : Type*) [CommRing R] : Type :=
+abbrev UnitSquareClasses (R : Type*) [CommRing R] : Type _ :=
   Rˣ ⧸ (powMonoidHom (α := Rˣ) 2).range
 
 /-- A *genuine* map of unit square-class groups induced by an actual
@@ -110,8 +110,9 @@ def reduction49to7 : ZMod 49 →+* ZMod 7 :=
 /-- An actual quadratic local unit-squareclass character arising from
 the above reduction (a fixed finite instance of the generic map). -/
 noncomputable def reduction49to7SquareClassCharacter :
-    UnitSquareClasses (ZMod 49) →* Multiplicative (ZMod 2) :=
-  localUnitClassCharacter 7 reduction49to7
+    UnitSquareClasses (ZMod 49) →* Multiplicative (ZMod 2) := by
+  letI : Fact (Nat.Prime 7) := ⟨by decide⟩
+  exact localUnitClassCharacter 7 reduction49to7
 
 /-- A hostile control excluding a common invalid global-to-local port.
 A unital ring hom Q → ZMod p cannot exist for p prime, since p is

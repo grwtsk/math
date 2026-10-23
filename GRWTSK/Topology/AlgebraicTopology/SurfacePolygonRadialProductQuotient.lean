@@ -50,7 +50,7 @@ private theorem boundaryPointCompact (k : ℕ) : CompactSpace (BoundaryPoint k) 
 /-- The actual unpaired polygon perimeter has Hausdorff topology:
 the angular map is a continuous injection into the genuine AddCircle. -/
 private theorem perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) := by
-  letI : Fact (0 < angularPeriod k) := ⟨angularPeriod_pos k⟩
+  let : Fact (0 < angularPeriod k) := ⟨angularPeriod_pos k⟩
   exact T2Space.of_injective_continuous
     (perimeterAngle_injective k)
     (perimeterAngle_continuous k)

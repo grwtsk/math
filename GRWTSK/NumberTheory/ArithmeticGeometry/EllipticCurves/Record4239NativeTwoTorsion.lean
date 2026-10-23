@@ -65,7 +65,7 @@ theorem nativeDiscriminant_eq :
     nativeCurve.Δ = (recordDiscriminant : ℚ) := by
   norm_num [nativeCurve, WeierstrassCurve.Δ, WeierstrassCurve.b₂,
     WeierstrassCurve.b₄, WeierstrassCurve.b₆,
-    WeierstrassCurve.b₈, recordDiscriminant] <;> ring
+    WeierstrassCurve.b₈, recordDiscriminant]
 
 /-- Thus the chosen Mathlib curve is genuinely nonsingular over ℚ. -/
 theorem nativeDiscriminant_ne_zero : nativeCurve.Δ ≠ 0 := by
