@@ -179,6 +179,39 @@ theorem hasDerivAt_coefficient (a s frequency : ℝ) :
   convert (hasDerivAt_modeHeat s frequency).const_mul a using 1 <;>
     simp [coefficient] <;> ring
 
+
+/-- Spatial derivative of one finite cosine mode. -/
+theorem hasDerivAt_cosineMode (a s u z : ℝ) :
+    HasDerivAt (fun x : ℝ => coefficient a s u * Real.cos (x * u))
+      (-(coefficient a s u * u * Real.sin (z * u))) z := by
+  convert ((Real.hasDerivAt_cos (z * u)).comp z
+    ((hasDerivAt_id z).mul_const u)).const_mul (coefficient a s u) using 1 <;>
+    ring
+
+/-- Spatial derivative of the corresponding sine mode. -/
+theorem hasDerivAt_sineMode (a s u z : ℝ) :
+    HasDerivAt (fun x : ℝ => coefficient a s u * u * Real.sin (x * u))
+      (coefficient a s u * u ^ 2 * Real.cos (z * u)) z := by
+  convert ((Real.hasDerivAt_sin (z * u)).comp z
+    ((hasDerivAt_id z).mul_const u)).const_mul (coefficient a s u * u) using 1 <;>
+    ring
+
+/-- Time derivative of a single finite cosine mode. -/
+theorem hasDerivAt_timeCosineMode (a s u z : ℝ) :
+    HasDerivAt (fun t : ℝ => coefficient a t u * Real.cos (z * u))
+      (-(modeLaplacian u) * coefficient a s u * Real.cos (z * u)) s := by
+  convert (hasDerivAt_coefficient a s u).mul_const (Real.cos (z * u))
+    using 1 <;> ring
+
+/-- The two-mode readout satisfies the finite time generator equation. -/
+theorem hasDerivAt_twoModeHeat_time (a b s u v z : ℝ) :
+    HasDerivAt (fun t : ℝ => twoModeHeat a b t u v z)
+      (-(u ^ 2) * coefficient a s u * Real.cos (z * u) -
+        (v ^ 2) * coefficient b s v * Real.cos (z * v)) s := by
+  convert (hasDerivAt_timeCosineMode a s u z).add
+    (hasDerivAt_timeCosineMode b s v z) using 1 <;>
+    simp [twoModeHeat, modeLaplacian] <;> ring
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
