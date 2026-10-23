@@ -398,14 +398,14 @@ directed edge. This constructs the suffix by appending to the
 previous suffix, preserving exact edge-instance order. -/
 theorem CountedWalk.visits_append_of_visits
     {m : ℕ} {c : BinaryEdgeWord m → ℕ}
-    {a b d v : Fin m → Bool}
+    {a b v : Fin m → Bool}
     (T : CountedWalk m c a b)
     (e : CountedBinaryEdge m c)
     (he : countedEdgeSource m c e = b)
     (hv : T.Visits v) :
     (CountedWalk.append T e he).Visits v := by
   obtain ⟨P, Q, hlist⟩ := hv
-  refine ⟨P, CountedWalk.append Q e he, ?_⟩
+  refine ⟨P, CountedWalk.append Q e (by simpa only using he), ?_⟩
   simp only [CountedWalk.edges]
   rw [hlist]
 
