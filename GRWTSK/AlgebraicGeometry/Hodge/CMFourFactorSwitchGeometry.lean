@@ -1339,6 +1339,33 @@ theorem CMFiniteFourfoldAssembly.canonical_assemble_eq_checked
       A (((f 0 ⊗ₜ[ℚ] f 1) ⊗ₜ[ℚ] f 2) ⊗ₜ[ℚ] f 3))
     (CMFiniteCanonicalPairedAssembly_eq_checked E)
 
+/-- The distinguished tensor of the canonical finite fourfold assembly is
+literally the independently checked paired assembly on the stored factors.
+This identifies the actual generator used by the downstream descent route,
+not merely the assembly function on an arbitrary four-tuple. -/
+theorem CMFiniteFourfoldAssembly.canonical_tensor_eq_checked
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E) :
+    (CMFiniteFourfoldAssembly.canonical factors).tensor =
+      GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly.pairedAssembly
+        E.carrier
+        (((factors.vector 0 ⊗ₜ[ℚ] factors.vector 1) ⊗ₜ[ℚ]
+          factors.vector 2) ⊗ₜ[ℚ] factors.vector 3) := by
+  rfl
+
+/-- The canonical finite generator is transported using the *same*
+checked coefficient-only action as the paired assembly. -/
+theorem CMFiniteFourfoldAssembly.canonical_tensor_transport
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        (σ.restrictNormal E.carrier)
+        (CMFiniteFourfoldAssembly.canonical factors).tensor =
+      (CMFiniteFourfoldAssembly.canonical
+        (factors.scalarTransport σ)).tensor := by
+  exact (CMFiniteFourfoldAssembly.canonical factors).scalar_transport_eq σ
+
 /-- Explicit rational multilinearity of the finite four-slot assembly.
 This strengthens the function-valued interface without pretending that
 a geometric assembly with these properties has been constructed. -/
