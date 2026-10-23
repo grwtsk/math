@@ -1,0 +1,29 @@
+name: CM finite algebraic replay
+
+on:
+  push:
+    branches:
+      - docs/openai-typed-hodge-bridge
+    paths:
+      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean'
+      - 'GRWTSK/LinearAlgebra/TensorProduct/**'
+      - '.github/workflows/cm-finite-algebraic-replay.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          use-mathlib-cache: true
+          build: false
+      - name: Lean algebraic owner with warnings as errors
+        run: lake env lean -DwarningAsError=true GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean
+      - name: Lean algebraic owner with trust level zero
+        run: lake env lean --trust=0 -DwarningAsError=true GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean
