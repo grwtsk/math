@@ -212,4 +212,38 @@ theorem FreshCountedTrail.closed_of_balanced_maximal
   omega
 
 
+
+/-- A closed fresh counted trail uses equally many incoming and
+outgoing individual edge instances at every vertex. -/
+theorem FreshCountedTrail.closed_used_balanced
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish) (v : Fin m → Bool) :
+    countedUsedOutDegree m c T.used v =
+      countedUsedInDegree m c T.used v := by
+  have h := T.used_degree_imbalance v
+  subst finish
+  simp only [sub_self] at h
+  omega
+
+/-- Removing a closed trail from a balanced counted multigraph
+leaves another balanced counted multigraph on the UNUSED edge
+instances. Parallel-edge identifiers remain distinct. -/
+theorem FreshCountedTrail.closed_unused_balanced
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (v : Fin m → Bool) :
+    countedUsedOutDegree m c (Finset.univ \ T.used) v =
+      countedUsedInDegree m c (Finset.univ \ T.used) v := by
+  have hall := hbalance v
+  have hout := countedOutDegree_used_unused m c T.used v
+  have hin := countedInDegree_used_unused m c T.used v
+  have hused := T.closed_used_balanced hclosed v
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
