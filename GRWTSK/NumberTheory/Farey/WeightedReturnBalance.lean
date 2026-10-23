@@ -154,7 +154,14 @@ theorem compensatedSample_eq_phase (n : ℕ) :
           ((expandingEigenvalue : ℂ) * Complex.I)) ^ n := by
             rw [mul_pow]
     _ = Complex.I ^ n := by
-      simp [hr, mul_assoc]
+      have hcancel :
+          ((expandingEigenvalue : ℂ)⁻¹) *
+              ((expandingEigenvalue : ℂ) * Complex.I) = Complex.I := by
+        calc
+          _ = (((expandingEigenvalue : ℂ)⁻¹) *
+                (expandingEigenvalue : ℂ)) * Complex.I := by ring
+          _ = Complex.I := by simp [hr]
+      rw [hcancel]
 
 /-- The selected angular fourth-root-of-unity phase sums to zero over
 an unweighted four-cycle. -/
