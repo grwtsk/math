@@ -138,7 +138,8 @@ theorem bombieriOrdinaryMoment_canonicalTent_eq (i : ℕ) :
     bombieriOrdinaryMoment (canonicalTentComplex i) =
       ((∫ x in Set.Ioi (0 : ℝ), canonicalTentReal i x : ℝ) : ℂ) := by
   unfold bombieriOrdinaryMoment canonicalTentComplex
-  rw [integral_ofReal]
+  exact integral_ofReal (f := canonicalTentReal i)
+    (μ := volume.restrict (Set.Ioi (0 : ℝ)))
 
 /-- A canonical square tent has nonzero ordinary Bombieri moment. -/
 theorem bombieriOrdinaryMoment_canonicalTent_ne_zero (i : ℕ) :
