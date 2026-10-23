@@ -1,0 +1,244 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "endpoint-bernoulli-source-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.EndpointBernoulliSourceCore"
+build_target = "GRWTSK.Interfaces.EndpointBernoulliSourceCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "ab16f387b3ccf38a80a5d81ea516ee025ddf365b"
+parent_tree = "306e04d1892ce2c199ca16a8441407a472e45337"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/endpoint-finite-jet-refinement-v0.1.toml"
+inherited_target_blob = "77daab630fc5017c0461fe35c377b6e699e372d7"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+center_estimates_status = "New no-application-premise SOURCE CANDIDATE; no proof script or inherited finite reduction has been accepted."
+receipt_policy = "No authority or receipt; future acceptance binds externally to actual commit/tree/target."
+inventory_policy = "Retain every predecessor name, control and exact type. Selected modules are not the full transitive closure. Empty declaration arrays waive nothing. Reconcile all generated definitions, noncomputable choices, finite reductions, complete imports/axioms/native dependencies, and exact canonical source normalization."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence"
+path = "GRWTSK/Analysis/Complex/BernoulliMellinRecurrence.lean"
+source_git_blob = "b520d80ab9009b2965a97a6e12fc4a7c8fb094ee"
+required_declarations = ["GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.cellIntegrand", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.cell", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.block", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.hasDerivAt_positive_power", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.continuousOn_cellIntegrand", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.cellIntegrand_integrable", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.cell_primitive_derivative", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.cell_step", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.cell_eq_periodic", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.periodic_cell_integrable", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.block_succ", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.block_integral", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.block_step", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.boundary_tendsto_zero", "GRWTSK.Analysis.Complex.BernoulliMellinRecurrence.tail_step"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin"
+path = "GRWTSK/Analysis/Complex/PeriodicBernoulliMellin.lean"
+source_git_blob = "610ff1312cf70fca263c36588e3e456c9a0645f2"
+required_declarations = ["GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.integrand", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.tail", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.norm_integrand_le", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.integrable_tail", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.tail_norm_le", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.tail_norm_le_nat", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.pochhammer_norm_le", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.remainder", "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin.remainder_norm_le_nat"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli"
+path = "GRWTSK/Analysis/ErrorBounds/PeriodicBernoulli.lean"
+source_git_blob = "58eb2f959ac30beaee402055ebc8acc1c1f6b736"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.majorant", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.value", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.periodic", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.value_expansion", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.majorant_nonneg", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.abs_value_le", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.abs_periodic_le", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.continuous_value", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.measurable_periodic", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.hasDerivAt_value_succ", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.value_zero", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.value_one", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.value_first", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.periodic_first", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.periodic_on_cell", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.seam", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.first_seam_control", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.sixteenth_majorant", "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli.sixteenth_majorant_le"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointBernoulliSourceCore"
+path = "GRWTSK/Interfaces/EndpointBernoulliSourceCore.lean"
+source_git_blob = "a062d72cf6a4fd17331971c3a66201de4d5bb679"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointBernoulliSource"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointBernoulliSource.lean"
+source_git_blob = "db0d62d81bf9949d1c12945a36c8f939d99183d6"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.outer_bounds", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.rational_remainder_budget", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.uniform_source", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.centerEstimates", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.unique_simple_point", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.degree_one_seam_must_not_cancel", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.empty_block_is_zero", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.periodic_bound_is_not_zero", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.rational_budget_identity"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EndpointBernoulliResidual"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EndpointBernoulliResidual.lean"
+source_git_blob = "d6cc94a0247dfb94c05e138c9cd035f40f1b6f13"
+required_declarations = ["GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.fract_eq_nat_fraction", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.fractional_tail_split", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.half_endpoint_source", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.scaled_step", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.correction_step", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.even_to_odd", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.source_residual_succ", "GRWTSK.RiemannHypothesis.EndpointBernoulliResidual.remainder_sixteen_bound"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PochhammerJet"
+path = "GRWTSK/Analysis/Complex/PochhammerJet.lean"
+source_git_blob = "139c359328778587ff493492c246796cdd8b7b60"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointJetRefinementCore"
+path = "GRWTSK/Interfaces/EndpointJetRefinementCore.lean"
+source_git_blob = "75cf53cfc4f3e999eb369875181af25c04f74b85"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EndpointCorrectedJet.lean"
+source_git_blob = "e0e39c443b0fcbe54413fc8a0fb33706b8001a5d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointJetRefinement"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointJetRefinement.lean"
+source_git_blob = "97979962c2e64d491836d8ebd85eb2e39f42aab3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.FinitePowerZetaJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/FinitePowerZetaJet.lean"
+source_git_blob = "7a3384b368210b6462dd5492936bc2d6b548677b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CauchyNewtonWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CauchyNewtonWitness.lean"
+source_git_blob = "1f893fa226c3e4d3566005419b107b59c0da0690"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaDiskCauchyBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZetaDiskCauchyBounds.lean"
+source_git_blob = "e9f83e388d3ced3b7d51e06fd53b27451aa11f61"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCorrectedNewtonCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCorrectedNewtonCandidate.lean"
+source_git_blob = "30a62f486d9a440c0a77058bb4ad653eadaa3295"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePower"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripFinitePower.lean"
+source_git_blob = "b6b64c4f3eaa478d646f196d8217c82a6602bcfd"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripMellinBounds.lean"
+source_git_blob = "3c6c7e4356504348e7bd83d53a9be630ba232419"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripRealAxisMellin.lean"
+source_git_blob = "d8f41771c84851553afc76bd7442e58ec992be70"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/BernoulliPolynomials.lean"
+source_git_blob = "21a770d7a2665513e68661ecd929d246f7e4a4f6"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/IntegralEqImproper.lean"
+source_git_blob = "7de909dd857336d631a72f8d2b2e81be32bb02c9"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean"
+source_git_blob = "82d269a5e9269d791f5581f5f0da29cfc125541a"
+
+[[hostile_controls]]
+id = "bernoulli-convention"
+requirement = "Require upstream negative B1 and actual upstream polynomial; reject a renamed coefficient table."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "degree-one-seam"
+requirement = "Do not cancel B1(1)-B1(0)=1. Unit-tail recurrence requires m>=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "coefficient-continuum"
+requirement = "Require proof on every unit-interval point, not endpoints or finite samples; coefficient sum is not asserted the supremum."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integrability-first"
+requirement = "Require measurable integrand and the sigma+m>1 domination proof before using each infinite tail."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-base"
+requirement = "Retain N>=1 and positive real bases. Zero-base totalized complex powers are not consumed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "power-derivative-zero"
+requirement = "The real-base derivative handles exponent zero separately, not through a false nonzero premise."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cell-endpoint-nullity"
+requirement = "Raw polynomial and periodic functions agree on open cells; singleton-nullity transports integrals without claiming global seam differentiability."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-cells"
+requirement = "Finite block exactly covers N..N+K. K=0 is zero, not the infinite tail."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "both-exterior-endpoints"
+requirement = "Retain the upper endpoint until its proved limit is taken. A finite identity with it deleted is false."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "absolute-limit"
+requirement = "Use actual improper-integral convergence from absolute integrability and upper-endpoint norm decay, not an unproved formal limit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inclusive-cutoff"
+requirement = "The source sum includes N and requires the minus half endpoint; changing the sign changes the function."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonpole-and-domain"
+requirement = "The zeta residual retains Re(s)>0 and s!=1; an enlarged tail domain does not enlarge the source identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-rising-factorial"
+requirement = "All factors and the factorial denominator remain; no division by a vanishing Pochhammer factor."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "literal-uniform-disk"
+requirement = "Retain exact old center and outer radius; prove all-point Re(s)>=1/4, |s|<=15 and pole exclusion."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-finite-target"
+requirement = "Require exact equality with EndpointCorrectedJet.model, including every Bernoulli correction and original positive-base inventory."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-newton-consumer"
+requirement = "Supply exactly old CenterEstimates without changing constants/errors; Cauchy derivative and finite presentation charges remain."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "large-prior-decisions"
+requirement = "All inherited 81-term checks and rational reductions must actually elaborate under authorized resource limits; no native shortcut or report truth value."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-not-acceptance"
+requirement = "No-hypothesis source declaration is not kernel acceptance, an ordinal zero number, a critical-line theorem, a count/tail/margin or RH result."
+status = "NOT_RUN"

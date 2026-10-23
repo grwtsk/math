@@ -1,0 +1,238 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "endpoint-finite-jet-refinement-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.EndpointJetRefinementCore"
+build_target = "GRWTSK.Interfaces.EndpointJetRefinementCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "4d1c83576c58dad709e772aac9b9a34b0423c6cb"
+parent_tree = "7e79f0c1df4d627f05eb534b5099a3ad00227aac"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/endpoint-log-refinement-v0.1.toml"
+inherited_target_blob = "a9b80f50331b615ad1791f7a58f4492eb4bb0305"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+center_estimates_status = "Conditional on actual uniform source remainder on the entire outer disk; NOT constructed unconditionally."
+receipt_policy = "No execution authority or receipt; any replay binds externally to its actual commit/tree/target."
+inventory_policy = "Every predecessor name, control, exact type and transitive trust obligation persists. The selected module list is NOT a full closure. Reconcile all generated recursion equations, instances, noncomputable dependencies, large finite decision reductions and every public/generated type/import/axiom/native dependency. Empty repeated name arrays waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PochhammerJet"
+path = "GRWTSK/Analysis/Complex/PochhammerJet.lean"
+source_git_blob = "139c359328778587ff493492c246796cdd8b7b60"
+required_declarations = ["GRWTSK.Analysis.Complex.PochhammerJet.value", "GRWTSK.Analysis.Complex.PochhammerJet.slope", "GRWTSK.Analysis.Complex.PochhammerJet.value_zero", "GRWTSK.Analysis.Complex.PochhammerJet.value_succ", "GRWTSK.Analysis.Complex.PochhammerJet.hasDerivAt_value", "GRWTSK.Analysis.Complex.PochhammerJet.deriv_value", "GRWTSK.Analysis.Complex.PochhammerJet.vanishing_factor_control", "GRWTSK.Analysis.Complex.PochhammerJet.empty_product_control"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp"
+path = "GRWTSK/Analysis/ErrorBounds/RationalRoundedExp.lean"
+source_git_blob = "43b9ddac8be240f55cf94eb55aca4a8a82654d13"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.stage", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.squareRadius", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.trace", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.trace_value", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.trace_radius", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.trace_checked", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.enclosure", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.enclosure_sound", "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp.rounded_trace_control"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointJetRefinementCore"
+path = "GRWTSK/Interfaces/EndpointJetRefinementCore.lean"
+source_git_blob = "75cf53cfc4f3e999eb369875181af25c04f74b85"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointJetRefinement"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointJetRefinement.lean"
+source_git_blob = "97979962c2e64d491836d8ebd85eb2e39f42aab3"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidateExponent", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidateTrace", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidatePower", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.all_power_guards", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidate_trace_checked", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidate_power_sound", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidateJet", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.candidate_finite_jet_sound", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.valuePresentationAllowance", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.derivativePresentationAllowance", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.finite_presentation_allowances", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.finite_presented_errors", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.outer_avoids_pole", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.centerEstimates_of_uniform_source", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.unique_point_of_uniform_source", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.bernoulli_coefficients_control", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.inclusive_endpoint_control", "GRWTSK.RiemannHypothesis.Checks.EndpointJetRefinement.endpoint_derivative_control"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EndpointCorrectedJet.lean"
+source_git_blob = "e0e39c443b0fcbe54413fc8a0fb33706b8001a5d"
+required_declarations = ["GRWTSK.RiemannHypothesis.EndpointCorrectedJet.weight", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.coefficient", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.coefficientSlope", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.model", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.dirichletSlope", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.slope", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.positive_sum_succ", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.inverse_power_eq_exp", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.hasDerivAt_inverse_power", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.coefficient_succ", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.coefficientSlope_succ", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.hasDerivAt_coefficient", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.hasDerivAt_model", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.deriv_model", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.model_eq_previous_plus_corrections", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.correction_power_identity", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.derivative_error_of_uniform_source", "GRWTSK.RiemannHypothesis.EndpointCorrectedJet.first_correction_control"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalEndpointJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalEndpointJet.lean"
+source_git_blob = "42ecc0619b210b15be65f28688a1330190b6a905"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalEndpointJet.inverse", "GRWTSK.RiemannHypothesis.RationalEndpointJet.inverse_refines", "GRWTSK.RiemannHypothesis.RationalEndpointJet.risingJet", "GRWTSK.RiemannHypothesis.RationalEndpointJet.risingJet_refines", "GRWTSK.RiemannHypothesis.RationalEndpointJet.coefficientJet", "GRWTSK.RiemannHypothesis.RationalEndpointJet.coefficientJet_refines", "GRWTSK.RiemannHypothesis.RationalEndpointJet.point", "GRWTSK.RiemannHypothesis.RationalEndpointJet.point_sound", "GRWTSK.RiemannHypothesis.RationalEndpointJet.prefix", "GRWTSK.RiemannHypothesis.RationalEndpointJet.prefix_sound", "GRWTSK.RiemannHypothesis.RationalEndpointJet.assemble", "GRWTSK.RiemannHypothesis.RationalEndpointJet.assemble_sound", "GRWTSK.RiemannHypothesis.RationalEndpointJet.presented_error", "GRWTSK.RiemannHypothesis.RationalEndpointJet.rising_zero_control"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpTrace"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpTrace.lean"
+source_git_blob = "51d14c14241ec3f81fbd83775cf1d345d5365a49"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhPower"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhPower.lean"
+source_git_blob = "abce5774ed5d58aad42edcacc65b3bd165c0a38a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhLog.lean"
+source_git_blob = "43b6919419d396701f20f08e2a79a2840089e8f3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedDiskCauchy"
+path = "GRWTSK/Analysis/Complex/ClosedDiskCauchy.lean"
+source_git_blob = "10fd0445fae48aefb8726e721d9a93985c375021"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.FinitePowerZetaJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/FinitePowerZetaJet.lean"
+source_git_blob = "7a3384b368210b6462dd5492936bc2d6b548677b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CauchyNewtonWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CauchyNewtonWitness.lean"
+source_git_blob = "1f893fa226c3e4d3566005419b107b59c0da0690"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCorrectedNewtonCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCorrectedNewtonCandidate.lean"
+source_git_blob = "30a62f486d9a440c0a77058bb4ad653eadaa3295"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointLogRefinement"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointLogRefinement.lean"
+source_git_blob = "a62524a48704f640e4d6d6d1a596ecb410009599"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointLogRefinementCore"
+path = "GRWTSK/Interfaces/EndpointLogRefinementCore.lean"
+source_git_blob = "8295d7dc021f80965e3e4a646a1443f8f837352a"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/RingTheory/Polynomial/Pochhammer.lean"
+source_git_blob = "ae098f694678e6164839cf9645093c1acefae5c9"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/Bernoulli.lean"
+source_git_blob = "8382b79b7c72fac31dbb7da1a06379299bf2714d"
+
+[[hostile_controls]]
+id = "existing_rising_polynomial"
+required = true
+description = "value is upstream ascPochhammer; do not replace it with a free jet label."
+
+[[hostile_controls]]
+id = "vanishing_factors"
+required = true
+description = "P3(-1)=0 and derivative=-1; reject division-based zero tangent."
+
+[[hostile_controls]]
+id = "positive_inventory"
+required = true
+description = "Exactly all bases 1 through N, with no base zero and no missing final endpoint."
+
+[[hostile_controls]]
+id = "inclusive_half"
+required = true
+description = "The inclusive cutoff uses minus one-half. N=1,p=0,s=2 gives 3/2, not 5/2."
+
+[[hostile_controls]]
+id = "endpoint_derivative"
+required = true
+description = "At N=1,p=0,s=2 the Dirichlet derivative is zero but the full derivative is -1."
+
+[[hostile_controls]]
+id = "bernoulli_identity"
+required = true
+description = "Use upstream B1=-1/2 and all even coefficients through B16; no unchecked coefficient labels."
+
+[[hostile_controls]]
+id = "nonpole_domain"
+required = true
+description = "Actual analytic and reciprocal refinement theorems require s not equal to one."
+
+[[hostile_controls]]
+id = "constructed_rounded_traces"
+required = true
+description = "All seed and square residuals and exactly s+1 values/s radii are constructed; no defaults as evidence."
+
+[[hostile_controls]]
+id = "input_alignment"
+required = true
+description = "Each of 81 traces uses the derived exponent from the same literal center and exact positive-base log."
+
+[[hostile_controls]]
+id = "taylor_domain"
+required = true
+description = "The real-part and divided-argument Taylor guards remain required for every leaf."
+
+[[hostile_controls]]
+id = "nonlinear_and_rounding_errors"
+required = true
+description = "Keep seed error, every square residual, nonlinear amplification, and upward radius rounding."
+
+[[hostile_controls]]
+id = "full_ball_product"
+required = true
+description = "Keep both linear radius terms, the product of radii, signed coordinate displacement and every outer operation."
+
+[[hostile_controls]]
+id = "presented_center"
+required = true
+description = "Retain displacement to both unchanged Newton constants in the final budgets."
+
+[[hostile_controls]]
+id = "two_output_identity"
+required = true
+description = "The second output encloses the actual complex derivative of the same finite corrected model."
+
+[[hostile_controls]]
+id = "uniform_source_gap"
+required = true
+description = "The local actual-zeta theorem still requires the full closed-disk remainder bound. Do not infer it from sample values."
+
+[[hostile_controls]]
+id = "cauchy_derivative_gap"
+required = true
+description = "Use holomorphic difference on the same outer disk with factor 1/S, not differentiated pointwise error."
+
+[[hostile_controls]]
+id = "large_finite_decisions"
+required = true
+description = "All large by-decide expressions need pinned execution and resource review. Python matches are not Lean acceptance."
+
+[[hostile_controls]]
+id = "global_and_runtime_nonclaims"
+required = true
+description = "No Horner/parser/compiler/runtime qualification, complete count, omitted-divisor tail, prime margin, bounded line theorem or RH conclusion."

@@ -1,0 +1,226 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rational-rectangle-count-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.RationalRectangleCountCore"
+build_target = "GRWTSK.Interfaces.RationalRectangleCountCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "bd8239473e7c12d6a73e3f1b2599a56b5750e7e0"
+parent_tree = "97087ac1d982e3e87a11bd70dc79994f2dc74384"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/canonical-rectangle-index-v0.1.toml"
+inherited_target_blob = "2e362705723a87fce170ecfc8c6919f4f2045f83"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Coverage and positive traversal are derived for constructed meshes; actual target Enclosures and successful numerical count remain unsupplied."
+receipt_policy = "No execution authority or receipt. Future acceptance binds externally to actual commit/tree/target."
+inventory_policy = "Retain every predecessor declaration, exact type, generated name, control, large finite reduction and full transitive import/axiom/native-dependency obligation. The selected catalog is NOT the full closure. Empty repeated inventories waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalRectangleMesh"
+path = "GRWTSK/Analysis/Complex/RationalRectangleMesh.lean"
+source_git_blob = "a2256c39adb654bb8274d8750e5326cd19cc213d"
+required_declarations = ["GRWTSK.Analysis.Complex.RationalRectangleMesh.mark", "GRWTSK.Analysis.Complex.RationalRectangleMesh.Valid", "GRWTSK.Analysis.Complex.RationalRectangleMesh.validDecidable", "GRWTSK.Analysis.Complex.RationalRectangleMesh.check", "GRWTSK.Analysis.Complex.RationalRectangleMesh.check_iff_valid", "GRWTSK.Analysis.Complex.RationalRectangleMesh.ramp", "GRWTSK.Analysis.Complex.RationalRectangleMesh.point", "GRWTSK.Analysis.Complex.RationalRectangleMesh.vertices", "GRWTSK.Analysis.Complex.RationalRectangleMesh.vertices_length", "GRWTSK.Analysis.Complex.RationalRectangleMesh.point_zero", "GRWTSK.Analysis.Complex.RationalRectangleMesh.point_four", "GRWTSK.Analysis.Complex.RationalRectangleMesh.vertex_at", "GRWTSK.Analysis.Complex.RationalRectangleMesh.marks", "GRWTSK.Analysis.Complex.RationalRectangleMesh.rectangle", "GRWTSK.Analysis.Complex.RationalRectangleMesh.cast_ramp", "GRWTSK.Analysis.Complex.RationalRectangleMesh.point_cast", "GRWTSK.Analysis.Complex.RationalRectangleMesh.admissible", "GRWTSK.Analysis.Complex.RationalRectangleMesh.points", "GRWTSK.Analysis.Complex.RationalRectangleMesh.curve_eq", "GRWTSK.Analysis.Complex.RationalRectangleMesh.range_eq_boundary", "GRWTSK.Analysis.Complex.RationalRectangleMesh.closed"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectanglePerimeterMesh"
+path = "GRWTSK/Analysis/Complex/RectanglePerimeterMesh.lean"
+source_git_blob = "2b513405bdee90ba3a4af458242850dbcb2ef209"
+required_declarations = ["GRWTSK.Analysis.Complex.RectanglePerimeterMesh.ramp", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.ramp_of_nonpos", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.ramp_of_mem", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.ramp_of_one_le", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_continuous", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_cell", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_corner", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_zero", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_four", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_affine", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.point_boundary", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.boundary_point", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.Admissible", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.node_mem", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.curve", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.curve_clock", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.curve_closed", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.curve_range", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.reference_admissible", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.reference_curve", "GRWTSK.Analysis.Complex.RectanglePerimeterMesh.boundaryHomotopy"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.RationalRectangleCountCore"
+path = "GRWTSK/Interfaces/RationalRectangleCountCore.lean"
+source_git_blob = "268afb9e7def42f1b536ad132ecb725362299766"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.RectangleMeshControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/RectangleMeshControls.lean"
+source_git_blob = "1093b803cd694e4a74dfc08a3a95c2ad728e0635"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.marks", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.lower", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.upper", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.data", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.image", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.marks_checked", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.small_box_evaluates", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.small_tube_checked", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.source_enclosures", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.small_boundary_nonzero", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.records_and_final_edge_required", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.mesh_length_and_zero_rejected", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.wrong_endpoint_and_reversal_rejected", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.double_traversal_and_backtracking_rejected", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.corner_skip_rejected", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.degenerate_and_changed_geometry_rejected", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.target_geometry", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.unitBox", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.coordinate_homotopy_not_chord", "GRWTSK.RiemannHypothesis.Checks.RectangleMeshControls.synthetic_boundary_not_interior_exclusion"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalRectangleCount.lean"
+source_git_blob = "0862021b13af8aafc64cdcdffa55cfb5bf8b260a"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalRectangleCount.evaluateBox", "GRWTSK.RiemannHypothesis.RationalRectangleCount.evaluateBox_eq_some_iff", "GRWTSK.RiemannHypothesis.RationalRectangleCount.lower", "GRWTSK.RiemannHypothesis.RationalRectangleCount.upper", "GRWTSK.RiemannHypothesis.RationalRectangleCount.evaluate", "GRWTSK.RiemannHypothesis.RationalRectangleCount.boundary_of_tube", "GRWTSK.RiemannHypothesis.RationalRectangleCount.sourceHomotopy", "GRWTSK.RiemannHypothesis.RationalRectangleCount.sourceIndex_aligned", "GRWTSK.RiemannHypothesis.RationalRectangleCount.target_rectangle", "GRWTSK.RiemannHypothesis.RationalRectangleCount.count_eq_of_evaluate", "GRWTSK.RiemannHypothesis.RationalRectangleCount.result_nonnegative", "GRWTSK.RiemannHypothesis.RationalRectangleCount.complete_pair_of_evaluate_one"]
+
+[[modules]]
+name = "GRWTSK.Topology.Homotopy.RealPolygonClock"
+path = "GRWTSK/Topology/Homotopy/RealPolygonClock.lean"
+source_git_blob = "bf6e36a1d7bdecdd264564b1c18086242358f2ed"
+required_declarations = ["GRWTSK.Topology.Homotopy.RealPolygonClock.blend", "GRWTSK.Topology.Homotopy.RealPolygonClock.vertex", "GRWTSK.Topology.Homotopy.RealPolygonClock.cell", "GRWTSK.Topology.Homotopy.RealPolygonClock.clock", "GRWTSK.Topology.Homotopy.RealPolygonClock.start", "GRWTSK.Topology.Homotopy.RealPolygonClock.finish", "GRWTSK.Topology.Homotopy.RealPolygonClock.blend_mem", "GRWTSK.Topology.Homotopy.RealPolygonClock.mem_interval", "GRWTSK.Topology.Homotopy.RealPolygonClock.bracket", "GRWTSK.Topology.Homotopy.RealPolygonClock.exists_blend", "GRWTSK.Topology.Homotopy.RealPolygonClock.covers"]
+
+[[modules]]
+name = "GRWTSK.Topology.Homotopy.FiniteConcatenation"
+path = "GRWTSK/Topology/Homotopy/FiniteConcatenation.lean"
+source_git_blob = "2be15d0e8a7f43a3ac32b7e1729bbd15e6a3f6e8"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectangleFactorIndex"
+path = "GRWTSK/Analysis/Complex/RectangleFactorIndex.lean"
+source_git_blob = "7fad1ff30bcc598116fa2707b620549a8645e7e9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonFreeHomotopy"
+path = "GRWTSK/Analysis/Complex/PolygonFreeHomotopy.lean"
+source_git_blob = "f6536494d4d8fa7a48ffa9139a8110b36fdaf9d6"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex"
+path = "GRWTSK/Analysis/Complex/ClosedCurveFactorIndex.lean"
+source_git_blob = "4e44b28d38b84a9dc8e52899fc54d83933b7d2b9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalRectangleIndex.lean"
+source_git_blob = "53eb5c3537f5a3e0031b14b300885550f97bb6b5"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourWinding"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourWinding.lean"
+source_git_blob = "dc1cf654efe55448fc107ecb4f6bcdfce3428973"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourPolygonIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourPolygonIndex.lean"
+source_git_blob = "40c16f2151013422a143661a5dce2de3a3c4d24e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalRectangleIndexCore"
+path = "GRWTSK/Interfaces/CanonicalRectangleIndexCore.lean"
+source_git_blob = "bdd278b7191d82699d328efea3d61f3743e6ceef"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PoleContourCoverage"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PoleContourCoverage.lean"
+source_git_blob = "f494215689cc346a9eb815c2e3d1bd00d35a95ef"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContour"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleContour.lean"
+source_git_blob = "e0cb441f7ee87487c7eb76c2b59fbd7f9436e1b1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContourTube"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleContourTube.lean"
+source_git_blob = "b5768453c2ffd0308610a0557c4b22f41d38f41f"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/List/GetD.lean"
+source_git_blob = "296b75d1659c7e3ee325495e6196cec1ec62c987"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Rat/Cast/Order.lean"
+source_git_blob = "8fecc133d644463ae0ec9cb521dfa4e000e7e1ea"
+
+[[controls]]
+id = "exact_source_types"
+requirement = "Inspect exact public and generated types; distinguish mathematical proofs from data flags."
+
+[[controls]]
+id = "complete_length"
+requirement = "Reject zero edges, missing/extra marks and missing/extra witness records."
+
+[[controls]]
+id = "unwrapped_endpoints"
+requirement = "Require marks 0 and 4 literally, not modulo-four closure."
+
+[[controls]]
+id = "one_side_each_cell"
+requirement = "Reject any cell crossing a corner without a split."
+
+[[controls]]
+id = "same_coordinates"
+requirement = "All vertices derive from literal external corners and rational marks; no coordinate substitution."
+
+[[controls]]
+id = "clock_schedule"
+requirement = "Retain the old complete dyadic schedule, initial pause and final edge."
+
+[[controls]]
+id = "full_range"
+requirement = "Prove BOTH boundary range directions, not only membership or sampled coverage."
+
+[[controls]]
+id = "repeat_cells"
+requirement = "Retain zero-width cells and their witnesses; no silent data skipping."
+
+[[controls]]
+id = "signed_orientation"
+requirement = "Reject reverse, double and backtracking mark inventories; do not absolute-value indices."
+
+[[controls]]
+id = "perimeter_not_chord"
+requirement = "All-point deformation interpolates real perimeter coordinates, not complex chords through interior zeros."
+
+[[controls]]
+id = "actual_enclosures"
+requirement = "Actual normalized-source Enclosures remain required; false metadata may pass finite arithmetic."
+
+[[controls]]
+id = "boundary_derived"
+requirement = "Derive whole-boundary nonzero from old source tube and new full range, not a fresh caller premise."
+
+[[controls]]
+id = "alignment_derived"
+requirement = "Construct standard source homotopy; no caller-supplied r or hparam remains in new count theorem."
+
+[[controls]]
+id = "same_count"
+requirement = "Preserve old winding, source, canonical regional head and full analytic multiplicities."
+
+[[controls]]
+id = "small_source_control"
+requirement = "Nine-cell small square composes old F(1)=1; not a successful height-fifteen count."
+
+[[controls]]
+id = "target_geometry"
+requirement = "Top remains 61/4 at T=15; geometric checks alone do not certify source values."
+
+[[controls]]
+id = "negative_result"
+requirement = "Genuine source and successful constructed positive traversal force nonnegative index; no truncation."
+
+[[controls]]
+id = "acceptance"
+requirement = "All inherited target, type, import, axiom, native and large-reduction duties persist; no receipt or hold release."

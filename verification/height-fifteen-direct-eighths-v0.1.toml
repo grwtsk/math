@@ -1,0 +1,155 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "height-fifteen-direct-eighths-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.HeightFifteenDirectEighthCore"
+build_target = "GRWTSK.Interfaces.HeightFifteenDirectEighthCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "2fefae6dc53e7bc93a0bbe4fbb6465be3b8a604f"
+parent_tree = "7475dbb384fb6788d535ac7d277af3fcedb00aa3"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/height-fifteen-direct-quarters-v0.1.toml"
+inherited_target_blob = "2bb2228373e82d642a2b8a69d49e0ec16be5926f"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Two hundred ninety-eight smaller direct decisions and exact Pieces composition only; no Lean acceptance or count receipt."
+receipt_policy = "Bind future replay to the exact published head. Python reports are not proof receipts."
+inventory_policy = "The catalog is representative; reconcile all 298 local theorem names and the full transitive closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.HeightFifteenDirectEighthCore"
+path = "GRWTSK/Interfaces/HeightFifteenDirectEighthCore.lean"
+source_git_blob = "750c24bb7f1fb21911de7578eec534dd2af74359"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthBlocks"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthBlocks.lean"
+source_git_blob = "af6e282847d5fc3ad15145f1d18113bc28be09e8"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClaimsA"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClaimsA.lean"
+source_git_blob = "ef3c8e6bb0d553614f3166cc395b0b9c70326ff9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClaimsB"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClaimsB.lean"
+source_git_blob = "e1dbf87ac287c886a92c3e3f990592559f8c9b15"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClaimsC"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClaimsC.lean"
+source_git_blob = "8d4051cdde39466e0f88f824045a62a0f06354e1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClaimsD"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClaimsD.lean"
+source_git_blob = "5996d4a8b8236493cd673b943874cc0d690360e1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClaimsE"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClaimsE.lean"
+source_git_blob = "bd1a9f47dd48de7f1aa1e50917292056d8e034ab"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClaimsF"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClaimsF.lean"
+source_git_blob = "0a7c615015f6009a4728a287ddd63012660a2610"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthClosure"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthClosure.lean"
+source_git_blob = "175f486509ce8c44aac82e9992fd55efe8a00080"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectEighthControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectEighthControls.lean"
+source_git_blob = "f137102198d5465d387fc89debb3f89c22c48697"
+required_declarations = []
+
+[[controls]]
+id = "eighth-partition"
+requirement = "Retain 297 widths of 8 followed by 3, exhausting 2379 cells."
+status = "NOT_RUN"
+[[controls]]
+id = "eighth-claims"
+requirement = "Retain only eighth index 34 as +1 and every other claim as zero."
+status = "NOT_RUN"
+[[controls]]
+id = "direct-predicate"
+requirement = "Use unchanged directTest and directTerm."
+status = "NOT_RUN"
+[[controls]]
+id = "pieces-coverage"
+requirement = "Compose all 298 exact claims through Pieces."
+status = "NOT_RUN"
+[[controls]]
+id = "separate-reductions"
+requirement = "Elaborate all 298 local by-decide scripts independently."
+status = "NOT_RUN"
+[[controls]]
+id = "final-three"
+requirement = "Keep cells 2376..2378 as a separate equality."
+status = "NOT_RUN"
+[[controls]]
+id = "none-versus-zero"
+requirement = "Preserve none distinct from some 0."
+status = "NOT_RUN"
+[[controls]]
+id = "signed-result"
+requirement = "Keep reverse orientation negative."
+status = "NOT_RUN"
+[[controls]]
+id = "old-success"
+requirement = "Conclude the unchanged HeightFifteenJetCandidate.Success."
+status = "NOT_RUN"
+[[controls]]
+id = "positive-reconstruction"
+requirement = "Recover the positive quarter, half, and block at exact cursors."
+status = "NOT_RUN"
+[[controls]]
+id = "count-consumer"
+requirement = "Use only the inherited same-region multiplicity bridge."
+status = "NOT_RUN"
+[[controls]]
+id = "resource-evidence"
+requirement = "Report actual elaboration and reduction behavior."
+status = "NOT_RUN"
+[[controls]]
+id = "module-isolation"
+requirement = "Replay the six claim modules independently."
+status = "NOT_RUN"
+[[controls]]
+id = "transitive-trust"
+requirement = "Audit exact types, imports, axioms, and native dependencies."
+status = "NOT_RUN"
+[[controls]]
+id = "external-boundary"
+requirement = "Do not treat reports or hashes as Lean proof."
+status = "NOT_RUN"
