@@ -1518,7 +1518,7 @@ commits and Git blobs.**
   at the chosen vector cannot have eigenvalue `i`.
   A separate sign-invariant squared-phase readout has
   eigenvalue `-1` **only on the selected four-state orbit**.
-  The original `i)-phase cannot be decoded from the parity
+  The original `i`-phase cannot be decoded from the parity
   quotient, whereas its square can, using the exact existing
   `FactorizationFiber` interface. Neither statement asserts a
   global projective Koopman eigenfunction on all vectors or a PFR
@@ -1578,9 +1578,16 @@ closure. Pinned Lean is `v4.33.0`, Mathlib
 `db584cd6d46c92f209a44c0f1c829460d327499d`;
 all new leaf builds, fresh native kernel replay and
 complete generated/transitive axiom review are **pending**.
-The actual final immutable validation pin and commands must
-be recorded separately in a linked issue (not fabricated in
-this literature ledger).
+The two **queued** exact-source validation requests are
+[Sturmian/projective #1107](https://github.com/grwtsk/math/issues/1107)
+and [gauge/Heisenberg #1108](https://github.com/grwtsk/math/issues/1108),
+both pinned to the integrated main snapshot
+`8c83118c3441252c3d82c9a4a201356b6256a87b`
+(tree `959d4d7db904d95cd1bc14c79393cfeaf33af321`).
+They specify all named leaf/dependency modules and blobs,
+actual proposed build/direct elaboration/fresh kernel
+commands, generated/transitive axiom audit and hostile controls.
+They are **NOT** executed Lean/kernel receipts.
 
 There is **no proved paper-to-Farey spectral-tree
 identification**, no nonzero-coupling spectral gap
