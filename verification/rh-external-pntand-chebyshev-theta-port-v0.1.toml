@@ -1,0 +1,68 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-external-pntand-chebyshev-theta-port-v0.1"
+owner_repository = "grwtsk/math"
+issue = 880
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ExternalPNTAndChebyshevThetaPortControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ExternalPNTAndChebyshevThetaPortControls"
+
+[source_binding]
+parent_branch = "research/871-psi-canonical-envelope-recurrence-v01"
+parent_revision = "d4074c8ea780f2fda485c5fae82e3c37d04e89de"
+implementation_branch = "research/880-external-pntand-theta-port-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXTERNAL_PNTAND_PRIME_SUM_EQ_PINNED_THETA_DEFINED / EXTERNAL_ASYMPTOTIC_IFF_LOCAL_PNT_DEFINED / EXTERNAL_THEOREM_PROOF_PORT_OPEN / NO_RH_CLAIM"
+
+[external_source]
+repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+revision = "a5040887e6bb24f7c201db8568e7755c138b3878"
+file = "PrimeNumberTheoremAnd/Consequences.lean"
+blob = "6ca8f33be62e333e1a0e2774b78a35af9a57c049"
+theorem = "chebyshev_asymptotic"
+theorem_statement = "(fun x : Real => sum_(p in (Finset.Iic floor(x)).filter Nat.Prime) Real.log p) ~[Filter.atTop] (fun x => x)"
+parent_file = "PrimeNumberTheoremAnd/Wiener.lean"
+parent_blob = "06d464bfbf34b21360a8c725422d6c7d1cb4c2eb"
+parent_theorem = "WeakPNT"
+external_mathlib_revision = "308445d7985027f538e281e18df29ca16ede2ba3"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+proof_imported = false
+cross_revision_proof_transport_accepted = false
+
+[math]
+external_sum = "externalPNTAndPrimeLogSum"
+finite_source_identity = "externalPNTAndPrimeLogSum_eq_theta"
+local_theta = "Chebyshev.theta"
+external_proposition = "ExternalPNTAndChebyshevAsymptotic"
+epsilon_local_proposition = "ThetaPrimeNumberTheorem"
+forward_transport = "externalPNTAndAsymptotic_to_thetaPNT"
+reverse_transport = "thetaPNT_to_externalPNTAndAsymptotic"
+equivalence = "externalPNTAndAsymptotic_iff_thetaPNT"
+conditioned_no_go = "no_integerPsiCapacity_of_externalPNTAnd_proof"
+no_go_without_pnt_proof = false
+no_rh_conclusion = true
+
+[trust]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXTERNAL_PNT_PROOF_IMPORTED = false
+SOURCE_SUM_EQ_PINNED_THETA_DEFINED = true
+SEMANTIC_PNT_COMPARISON_DEFINED = true
+CONDITIONAL_NO_CAPACITY_TRANSPORT_DEFINED = true
+UNCONDITIONAL_NOT_CAPACITY_KERNEL_PROVED = false
+LEAN_LAKE_RUN = false
+ISSUE_100_REPLAY_RECEIPT = false
+RH_PROVED = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ExternalPNTAndChebyshevThetaPort"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ExternalPNTAndChebyshevThetaPort.lean"
+blob = "88667194289abf25ff353834913659756297fcee"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ExternalPNTAndChebyshevThetaPortControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ExternalPNTAndChebyshevThetaPortControls.lean"
+blob = "753d20641d38d17f9e6a226773bae75767436cb9"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/external-pntand-chebyshev-theta-port.md"
+blob = "e292c8fd21933fe0f5f29cd6cf893c03bdcaf82c"
