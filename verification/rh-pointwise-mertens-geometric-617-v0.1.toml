@@ -1,0 +1,160 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pointwise-mertens-geometric-617-v0.1"
+owner_repository = "grwtsk/math"
+issue = 617
+parent_issue = 615
+parent_pr = 616
+parity_reconstruction_issue = 613
+parity_reconstruction_pr = 614
+zero_nonzero_issue = 611
+zero_nonzero_pr = 612
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_POINTWISE_TO_GEOMETRIC_ADAPTER_SOURCE_DRAFT_POINTWISE_MERTENS_ENVELOPE_OPEN_NONZERO_FREQUENCY_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensPointwiseToDyadicGeometric"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensPointwiseToDyadicGeometric"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-mertens-dyadic-geometric-envelope-615-20261021"
+stacked_parent_revision = "771492a1d5d464f579d1a3c0147532ef182119ab"
+stacked_parent_tree = "3821ddb57d2653bc3ec023deba76e20a79e8a831"
+candidate_branch = "research/rh-pointwise-mertens-geometric-617-20261021"
+theorem_source_commit = "414ef467dba93835ef00008dffb25b5afec392b5"
+theorem_source_tree = "dd358e9ab9b6ec4580919af6033ebc1086168753"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensPointwiseToDyadicGeometric.lean"
+theorem_source_git_blob = "870cb01d8a80bc6b5cb9cbf9feaa98670c87597f"
+mathematical_note_commit = "d50f9d6b837c17df38e6a78fea24877594f06387"
+mathematical_note_tree = "2b274f7a93b6615381bfb989f3faa95ffd7097b6"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/pointwise-mertens-to-dyadic-geometric.md"
+mathematical_note_git_blob = "dbc20e12c8382f785384ef660444e129e2daa905"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+pointwise_epsilon = "pointwiseMertensDyadicEpsilon"
+total_exponent = "pointwiseMertensDyadicExponent"
+endpoint_constant_factor = "pointwiseMertensDyadicConstantFactor"
+geometric_ratio = "pointwiseMertensDyadicRatio"
+ratio_negative_exponent = "pointwiseMertensDyadicRatio_eq_rpow_neg"
+ratio_nonnegative = "pointwiseMertensDyadicRatio_nonneg"
+ratio_strictly_less_than_one = "pointwiseMertensDyadicRatio_lt_one"
+floor_cast_comparison = "cast_dyadicDescendant_le_upperModel"
+sqrt_rpow_combination = "sqrt_mul_rpow_eq_totalExponent"
+upper_model_factorization = "upperModel_rpow_eq_geometric"
+exponent_slack = "dyadic_totalExponent_le_parentScale"
+descendant_transport = "ordinaryMertens_descendant_le_geometric"
+geometric_envelope_transport = "dyadicOrdinaryMertensGeometricEnvelope_of_pointwise"
+adapter_value = "pointwiseMertensToDyadicGeometricAdapter"
+parity_transport = "parityMertensSquareRootEnergy_of_pointwise"
+natural_scale_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_nonzero"
+proof_classification = "EXACT_FLOOR_CAST_RPOW_COMPARISON_PLUS_CONDITIONAL_SUPPLIER_TRANSPORT"
+
+[parameters]
+target_loss = "delta"
+pointwise_epsilon = "delta/8"
+total_exponent = "1/2+delta/8"
+endpoint_constant = "2^(1/2+delta/8)"
+geometric_ratio = "2^(-(1/2+delta/8))"
+parent_pre_squared_loss = "delta/4"
+post_square_loss = "delta/2"
+ratio_nonnegative = true
+ratio_strictly_less_than_one = true
+
+[floor_comparison]
+formula = "n<=floor(b/2^t), b<2^(j+1) -> cast(n)<=2*cast(2^j)/cast(2^t)"
+natural_floor_preserved = true
+real_division_equality_claimed = false
+uses_nat_cast_div_le = true
+zero_descendant_separate = true
+
+[adapter]
+source = "OrdinaryMertensSquareRootPlusEpsilonEnvelope"
+target = "DyadicOrdinaryMertensGeometricEnvelope"
+value = "pointwiseMertensToDyadicGeometricAdapter"
+source_proposition_inhabited = false
+adapter_source_constructed = true
+analytic_mertens_estimate_proved = false
+
+[downstream]
+geometric_tail_supplier = "DyadicOrdinaryMertensGeometricEnvelope"
+ordinary_tail_energy = "DyadicOrdinaryMertensTailSquareRootEnergy"
+parity_zero_mode_supplier = "DyadicParityMertensSquareRootEnergy"
+nonzero_frequency_supplier = "DyadicNaturalScaleNonzeroParityFourierBudget"
+natural_scale_target = "DyadicNaturalScaleSquareModulusCongruenceL1"
+nonzero_frequency_supplier_constructed = false
+
+[evidence_states]
+source_draft = true
+exact_floor_cast_comparison_scripted = true
+explicit_geometric_ratio_scripted = true
+pointwise_to_geometric_adapter_source_draft = true
+downstream_zero_mode_transport_source_draft = true
+pointwise_mertens_envelope_proved = false
+nonzero_frequency_supplier_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.MertensPointwiseToDyadicGeometric"
+definition_count = 5
+theorem_script_count = 12
+structure_count = 0
+authored_declaration_count = 17
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensDyadicGeometricEnvelope.lean"
+git_blob = "9f33e04573e08c17007ce76006b141d94af4e856"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_616"
+
+[[dependencies]]
+source = "Mathlib.Data.Nat.Cast.Order.Field"
+declaration = "Nat.cast_div_le"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+declarations = [
+  "Real.rpow_add",
+  "Real.rpow_mul",
+  "Real.div_rpow",
+  "Real.mul_rpow",
+  "Real.one_lt_rpow",
+  "Real.rpow_le_rpow",
+  "Real.rpow_le_rpow_of_exponent_le"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+pointwise_mertens_not_asserted = true
+delta_eighth_visible = true
+total_exponent_visible = true
+endpoint_factor_visible = true
+geometric_ratio_strictness_proved_source_level = true
+zero_descendant_separated = true
+natural_floor_preserved = true
+nonzero_frequency_supplier_not_inferred = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_pointwise_mertens_square_root_plus_epsilon_envelope = true
+prove_nonzero_frequency_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+pointwise_mertens_bound_proved = false
+nonzero_frequency_budget_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
