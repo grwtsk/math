@@ -112,4 +112,43 @@ theorem ResidualFreshTrail.maximal_or_strict_successor
     omega
 
 
+
+/-- Every residual-restricted fresh trail has a terminal-maximal
+extension, obtained by finite descent on the exact unused-edge
+count inside U. All original used instances remain present. -/
+theorem ResidualFreshTrail.exists_maximal_extension
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b) :
+    ∃ (z : Fin m → Bool) (Q : ResidualFreshTrail m c U a z),
+      Q.Maximal ∧ R.trail.used ⊆ Q.trail.used := by
+  classical
+  suffices hmain :
+      ∀ (n : ℕ) (b : Fin m → Bool)
+        (R : ResidualFreshTrail m c U a b),
+        (U \ R.trail.used).card = n →
+        ∃ (z : Fin m → Bool) (Q : ResidualFreshTrail m c U a z),
+          Q.Maximal ∧ R.trail.used ⊆ Q.trail.used by
+    exact hmain _ b R rfl
+  intro n
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+      intro b R hn
+      rcases R.maximal_or_strict_successor with hmax | hstep
+      · exact ⟨b, R, hmax, Finset.Subset.rfl⟩
+      · obtain ⟨e, heU, fresh, incident, hlt⟩ := hstep
+        let S := R.append e heU fresh incident
+        have hs : (U \ S.trail.used).card < n := by
+          dsimp [S]
+          omega
+        obtain ⟨z, Q, hmax, hSQ⟩ := ih _ hs _ S rfl
+        refine ⟨z, Q, hmax, ?_⟩
+        have hRS : R.trail.used ⊆ S.trail.used := by
+          dsimp [S]
+          rw [FreshCountedTrail.append_used]
+          exact Finset.subset_insert _ _
+        exact hRS.trans hSQ
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
