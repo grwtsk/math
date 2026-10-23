@@ -28,7 +28,7 @@ set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.NumberTheory.Farey.CyclicResidueHodge
 
-open scoped BigOperators
+open scoped BigOperators ComplexConjugate
 open Matrix
 open GRWTSK.Geometry.Hodge.FiniteGraphCellular
 open GRWTSK.Geometry.Hodge.FiniteMatrixHodge
@@ -122,7 +122,7 @@ theorem fareyNonunitPointMass_eq_indicator (x : ZMod 4) :
     fareyNonunitPointMass x =
       if x = (2 : ZMod 4) then (1 : ℂ) else 0 := by
   rw [fareyNonunitPointMass, additiveResidueSelector_eq_indicator]
-  simp [nonunitFareyRightResidue, GRWTSK.NumberTheory.Farey.nonunitEye]
+  rfl
 
 /-- Concrete failure of translation-equivariance of the unit projector. -/
 theorem farey_unit_projector_not_translation_equivariant :
