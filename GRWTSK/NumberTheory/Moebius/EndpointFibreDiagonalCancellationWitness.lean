@@ -67,42 +67,47 @@ namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 /-- At endpoint two the diagonal is exactly one. -/
 theorem mertensEndpointFibreDiagonalEnergy_two :
     mertensEndpointFibreDiagonalEnergy 2 = 1 := by
-  norm_num [mertensEndpointFibreDiagonalEnergy,
+  simp [Finset.sum_filter, Finset.product_eq_sprod, Finset.sum_product, mertensEndpointFibreDiagonalEnergy,
     mertensEndpointStratumPairSet, mertensEndpointPairSet,
     mertensEndpointFourMobiusStratum, mertensEndpointFourMobiusTerm]
 
 /-- At endpoint three the positive diagonal has mass three. -/
 theorem mertensEndpointFibreDiagonalEnergy_three :
     mertensEndpointFibreDiagonalEnergy 3 = 3 := by
-  norm_num [mertensEndpointFibreDiagonalEnergy,
+  simp [Finset.sum_Ico_eq_sum_range, Finset.sum_range_succ,
+    Finset.sum_filter, Finset.product_eq_sprod, Finset.sum_product, mertensEndpointFibreDiagonalEnergy,
     mertensEndpointStratumPairSet, mertensEndpointPairSet,
     mertensEndpointFourMobiusStratum, mertensEndpointFourMobiusTerm]
+  norm_num
 
 /-- There is no cross-collision at endpoint two. -/
 theorem mertensEndpointFibreCrossCollisionEnergy_two :
     mertensEndpointFibreCrossCollisionEnergy 2 = 0 := by
-  norm_num [mertensEndpointFibreCrossCollisionEnergy,
+  simp [Finset.sum_filter, Finset.product_eq_sprod, mertensEndpointFibreCrossCollisionEnergy,
     mertensEndpointStratumPairSet, mertensEndpointPairSet,
     mertensEndpointFourMobiusStratum, mertensEndpointFourMobiusTerm]
 
 /-- The two oriented cross-collisions at endpoint three contribute `-2`. -/
 theorem mertensEndpointFibreCrossCollisionEnergy_three :
     mertensEndpointFibreCrossCollisionEnergy 3 = -2 := by
-  norm_num [mertensEndpointFibreCrossCollisionEnergy,
+  simp [Finset.sum_Ico_eq_sum_range, Finset.sum_range_succ,
+    Finset.sum_filter, Finset.product_eq_sprod, Finset.sum_product, mertensEndpointFibreCrossCollisionEnergy,
     mertensEndpointStratumPairSet, mertensEndpointPairSet,
     mertensEndpointFourMobiusStratum, mertensEndpointFourMobiusTerm]
+  norm_num
 
 /-- There is no four-distinct contribution at endpoint two. -/
 theorem mertensEndpointFibreFourDistinctCorrelation_two :
     mertensEndpointFibreFourDistinctCorrelation 2 = 0 := by
-  norm_num [mertensEndpointFibreFourDistinctCorrelation,
+  simp [Finset.sum_filter, Finset.product_eq_sprod, mertensEndpointFibreFourDistinctCorrelation,
     mertensEndpointStratumPairSet, mertensEndpointPairSet,
     mertensEndpointFourMobiusStratum, mertensEndpointFourMobiusTerm]
 
 /-- There is no four-distinct contribution at endpoint three. -/
 theorem mertensEndpointFibreFourDistinctCorrelation_three :
     mertensEndpointFibreFourDistinctCorrelation 3 = 0 := by
-  norm_num [mertensEndpointFibreFourDistinctCorrelation,
+  simp [Finset.sum_Ico_eq_sum_range, Finset.sum_range_succ,
+    Finset.sum_filter, Finset.product_eq_sprod, Finset.sum_product, mertensEndpointFibreFourDistinctCorrelation,
     mertensEndpointStratumPairSet, mertensEndpointPairSet,
     mertensEndpointFourMobiusStratum, mertensEndpointFourMobiusTerm]
 
@@ -140,21 +145,21 @@ theorem not_endpointFibreDiagonalLowerBoundProposal :
 /-- At scale one the reciprocal-weighted diagonal is exactly `5/3`. -/
 theorem weightedMertensEndpointDiagonalEnergy_one :
     weightedMertensEndpointDiagonalEnergy 1 = (5 : ℝ) / 3 := by
-  norm_num [weightedMertensEndpointDiagonalEnergy,
+  norm_num [Finset.sum_Ico_eq_sum_range, Finset.sum_range_succ, weightedMertensEndpointDiagonalEnergy,
     mertensEndpointFibreDiagonalEnergy_two,
     mertensEndpointFibreDiagonalEnergy_three]
 
 /-- At scale one the weighted cross-collision contribution is `-2/3`. -/
 theorem weightedMertensEndpointCrossCollisionEnergy_one :
     weightedMertensEndpointCrossCollisionEnergy 1 = (-2 : ℝ) / 3 := by
-  norm_num [weightedMertensEndpointCrossCollisionEnergy,
+  norm_num [Finset.sum_Ico_eq_sum_range, Finset.sum_range_succ, weightedMertensEndpointCrossCollisionEnergy,
     mertensEndpointFibreCrossCollisionEnergy_two,
     mertensEndpointFibreCrossCollisionEnergy_three]
 
 /-- At scale one the four-distinct weighted contribution is zero. -/
 theorem weightedMertensEndpointFourDistinctCorrelation_one :
     weightedMertensEndpointFourDistinctCorrelation 1 = 0 := by
-  norm_num [weightedMertensEndpointFourDistinctCorrelation,
+  norm_num [Finset.sum_Ico_eq_sum_range, Finset.sum_range_succ, weightedMertensEndpointFourDistinctCorrelation,
     mertensEndpointFibreFourDistinctCorrelation_two,
     mertensEndpointFibreFourDistinctCorrelation_three]
 
