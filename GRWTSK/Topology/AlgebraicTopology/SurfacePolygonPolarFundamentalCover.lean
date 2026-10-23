@@ -39,16 +39,15 @@ theorem unitAddCircle_unitInterval_surjective :
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z := by
   intro z
   have hcover :
-      Set.range (fun θ : Set.Icc (0 : ℝ) 1 =>
-        ((θ : ℝ) : UnitAddCircle)) = Set.univ := by
-    simpa only [Set.image_univ] using
+      ((↑) : ℝ → UnitAddCircle) '' Set.Icc (0 : ℝ) 1 = Set.univ := by
+    simpa only [zero_add] using
       (AddCircle.coe_image_Icc_eq (1 : ℝ) 0)
-  have hz : z ∈ Set.range (fun θ : Set.Icc (0 : ℝ) 1 =>
-      ((θ : ℝ) : UnitAddCircle)) := by
+  have hz :
+      z ∈ ((↑) : ℝ → UnitAddCircle) '' Set.Icc (0 : ℝ) 1 := by
     rw [hcover]
-    trivial
-  rcases hz with ⟨θ, hθ⟩
-  exact ⟨θ, hθ⟩
+    exact Set.mem_univ z
+  rcases hz with ⟨θ, hθ, hθz⟩
+  exact ⟨⟨θ, hθ⟩, hθz⟩
 
 /-- Unconditional source candidate for compact-cover quotient status,
 consuming the precise closed fundamental-domain theorem. -/
@@ -56,6 +55,17 @@ theorem compactPolarProjection_isQuotientMap :
     IsQuotientMap compactPolarProjection := by
   letI : T2Space (UnitAddCircle × unitInterval) := inferInstance
   exact compactPolarProjection_isQuotientMap_of_cover
+    unitAddCircle_unitInterval_surjective
+
+/-- The real-angle/radius product projection is a quotient map.
+The exact closed fundamental-interval cover supplies the only
+surjectivity input to the existing compact-to-Hausdorff comparison;
+the real line itself is not asserted compact. -/
+theorem polarProductProjection_isQuotientMap :
+    IsQuotientMap
+      GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity.polarProductProjection := by
+  letI : T2Space (UnitAddCircle × unitInterval) := inferInstance
+  exact polarProductProjection_isQuotientMap_of_cover
     unitAddCircle_unitInterval_surjective
 
 /-- Unconditional source candidate for JOINT polar continuity.
