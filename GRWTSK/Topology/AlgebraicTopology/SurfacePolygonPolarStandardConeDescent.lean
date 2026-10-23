@@ -65,6 +65,18 @@ def standardConePolarDisk :
     standardConePolarDisk (standardCircleConeProjection p) =
       unitCircleJointPolar p := rfl
 
+/-- The exact standard-circle-cone radius is the complex norm of the
+quotient-descended polar point, at every cone point including the apex.
+This does not identify the filled polygon quotient with a disk. -/
+theorem standardConePolarDisk_norm_eq_radius (x : StandardCircleCone) :
+    ‖(standardConePolarDisk x).val‖ = (standardCircleConeRadius x : ℝ) := by
+  refine Quotient.inductionOn x ?_
+  rintro ⟨z, r⟩
+  refine Quotient.inductionOn z ?_
+  intro θ
+  change ‖realAnglePolar θ (r : ℝ)‖ = (r : ℝ)
+  exact realAnglePolar_norm θ r.property.1
+
 /-- Joint continuity descends through the ACTUAL cone quotient. -/
 theorem standardConePolarDisk_continuous :
     Continuous standardConePolarDisk := by
