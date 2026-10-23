@@ -65,7 +65,7 @@ theorem harmonic_Ioc_sub_log_ratio_abs_le_local
               Real.log ((m + 1 : ℝ) / m) := by
         have hXp : (0 : ℝ) < X := by exact_mod_cast hX
         have hmp : (0 : ℝ) < m := by exact_mod_cast hm1
-        rw [← Real.log_mul (by positivity) (by positivity)]
+        rw [← Real.log_mul (by positivity : ((m : ℝ) / X) ≠ 0) (by positivity : ((m + 1 : ℝ) / m) ≠ 0)]
         congr 1
         field_simp
         ring
@@ -94,7 +94,7 @@ theorem abs_log_floor_ratio_sub_log_le_local
       Real.log ((m : ℝ) / X) ≤ Real.log (1 + t) :=
     Real.strictMonoOn_log.monotoneOn (by positivity) (by positivity) hratioLow
   rw [abs_of_nonpos (sub_nonpos.mpr horder), neg_sub]
-  rw [← Real.log_div htpos (by positivity)]
+  rw [← Real.log_div htpos.ne' (by positivity : ((m : ℝ) / X) ≠ 0)]
   have hratio :
       (1 + t) / ((m : ℝ) / X) < 1 + 1 / (m : ℝ) := by
     field_simp
