@@ -13,4 +13,12 @@ of either condition forbids completion. Runtime clock monotonicity, transaction
 isolation, digest collision resistance and database implementation refinement
 are separate implementation obligations; they are not assumed as Lean axioms.
 
+`BoundCompletionAllowed` additionally requires equality of the current task
+binding and the submitted binding. `changed_binding_rejected` rules out a changed
+binding even when a valid token is supplied. `bound_completion_conditions`
+extracts binding equality, token equality and the expiry bound. Noeaaeue checks
+the stored claim before native execution and compares the serialized binding
+again in its atomic completion update. Canonical JSON distinguishes booleans
+from integers; this serialization behavior is tested separately.
+
 [Workflow contracts](../../../../reference/deterministic-formalization.md)
