@@ -26,7 +26,7 @@ def div (z w : QComplex) : QComplex :=
     (z.im * w.re - z.re * w.im) / normSq w⟩
 
 @[simp] theorem embed_sub (z w : QComplex) : embed (sub z w) = embed z - embed w := by
-  ext <;> simp [embed, sub]
+  apply Complex.ext <;> simp [embed, sub]
 
 @[simp] theorem cast_normSq (z : QComplex) : (normSq z : ℝ) = ‖embed z‖ ^ 2 := by
   rw [← Complex.normSq_eq_norm_sq]
@@ -35,7 +35,7 @@ def div (z w : QComplex) : QComplex :=
 /-- Exact algebra, including the inherited totalized zero convention. Sound
 numerical division still requires the separate positive-denominator guard. -/
 @[simp] theorem embed_div (z w : QComplex) : embed (div z w) = embed z / embed w := by
-  ext <;> simp [embed, div, normSq, Complex.div_re, Complex.div_im,
+  apply Complex.ext <;> simp [embed, div, normSq, Complex.div_re, Complex.div_im,
     Complex.normSq_apply, pow_two] <;> ring
 
 /-- Squared rational guards suffice; no computed square root is trusted. -/

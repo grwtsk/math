@@ -69,7 +69,9 @@ theorem norm_sub_quantize_le (bits : ℕ) (z : ℂ) :
   have hi := abs_sub_down_le bits z.im
   refine (norm_le_rectNorm (z - quantize bits z)).trans ?_
   change |z.re - down bits z.re| + |z.im - down bits z.im| ≤ 2 / scale bits
-  linarith
+  calc
+    _ ≤ 1 / scale bits + 1 / scale bits := add_le_add hr hi
+    _ = 2 / scale bits := by ring
 
 theorem down_on_grid (bits : ℕ) (x : ℝ) :
     ∃ k : ℤ, down bits x = (k : ℝ) / scale bits :=

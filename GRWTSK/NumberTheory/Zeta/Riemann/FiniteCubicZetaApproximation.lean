@@ -58,14 +58,14 @@ theorem hasDerivAt_negative_power (t : ℝ) (s : ℂ) :
     HasDerivAt (fun w : ℂ => logPower t (-w))
       (-(Real.log t : ℂ) * logPower t (-s)) s := by
   have h := (((hasDerivAt_id s).neg).mul_const (Real.log t : ℂ)).cexp
-  convert h using 1 <;> unfold logPower <;> ring
+  simpa [logPower, mul_comm, mul_left_comm, mul_assoc] using h
 
 theorem hasDerivAt_terminalFactor (N : ℕ) (s : ℂ) (hs : s ≠ 1) :
     HasDerivAt (terminalFactor N) (terminalSlope N s) s := by
   have hd := (((hasDerivAt_const s (cutoff N : ℂ)).div
     ((hasDerivAt_id s).sub_const 1) (sub_ne_zero.mpr hs)).add_const (1 / 2)).add
       ((hasDerivAt_id s).div_const (12 * (cutoff N : ℂ)))
-  convert hd using 1 <;> simp [terminalFactor, terminalSlope] <;> ring
+  convert hd using 1 <;> (try rfl) <;> (try dsimp [terminalFactor, terminalSlope]) <;> ring
 
 theorem hasDerivAt_approximation (N : ℕ) (s : ℂ) (hs : s ≠ 1) :
     HasDerivAt (approximation N) (approximationSlope N s) s := by
@@ -101,7 +101,10 @@ theorem zeta_sub_approximation (N : ℕ) (s : ℂ) (hσ : -2 < s.re) (hs : s ≠
     s * (s + 1) * (s + 2) * cellPrefix N s at hfinite
   rw [ht.1, ht.2] at hfinite
   unfold approximation
-  rw [Fin.sum_univ_eq_sum_range, hfinite, hsource]
+  have hsum : (∑ i : Fin N, logPower ((i.1 : ℝ) + 1) (-s)) =
+      ∑ k ∈ Finset.range N, logPower ((k : ℝ) + 1) (-s) :=
+    Fin.sum_univ_eq_sum_range (fun k => logPower ((k : ℝ) + 1) (-s)) N
+  rw [hsum, hfinite, hsource]
   unfold terminalFactor analyticTail
   have hL : (cutoff N : ℂ) ≠ 0 := Complex.ofReal_ne_zero.mpr (cutoff_pos N).ne'
   field_simp [sub_ne_zero.mpr hs, hL]
@@ -110,14 +113,17 @@ theorem zeta_sub_approximation (N : ℕ) (s : ℂ) (hσ : -2 < s.re) (hs : s ≠
 /-- Finite prefixes are entire in the complex parameter. -/
 theorem analyticAt_cellPrefix (N : ℕ) (s : ℂ) : AnalyticAt ℂ (cellPrefix N) s := by
   induction N with
-  | zero => simpa [cellPrefix] using (analyticAt_const : AnalyticAt ℂ (fun _ : ℂ => (0 : ℂ)) s)
+  | zero =>
+      have he : cellPrefix 0 = fun _ : ℂ => (0 : ℂ) := by funext w; simp [cellPrefix]
+      rw [he]
+      exact analyticAt_const
   | succ N ih =>
       have he : cellPrefix (N + 1) = fun w =>
           cellPrefix N w + cellRemainder ((N : ℝ) + 1) (-w) := by
         funext w
         simp [cellPrefix, Finset.sum_range_succ]
       rw [he]
-      exact ih.add ((differentiable_cell ((N : ℝ) + 1) (by positivity)).analyticAt)
+      exact ih.add ((differentiable_cell ((N : ℝ) + 1) (by have h := Nat.cast_nonneg (α := ℝ) N; linarith)).analyticAt s)
 
 /-- The tail itself is analytic at one; only restoration of raw zeta excludes the pole. -/
 theorem analyticAt_analyticTail (N : ℕ) (s : ℂ) (hs : -2 < s.re) :

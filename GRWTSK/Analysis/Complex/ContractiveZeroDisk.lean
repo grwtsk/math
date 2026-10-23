@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import Mathlib.Analysis.Complex.Basic
 import Mathlib.Analysis.Calculus.MeanValue
 import Mathlib.Analysis.Calculus.FDeriv.Analytic
 import Mathlib.Topology.MetricSpace.Contracting
@@ -66,9 +67,9 @@ theorem exists_unique_zero (f : ℂ → ℂ) (A c : ℂ) (r q Y : ℝ)
       _ ≤ ‖correction f A z - correction f A c‖ + ‖correction f A c - c‖ :=
         norm_sub_le_norm_sub_add_norm_sub _ _ _
       _ ≤ q * ‖z - c‖ + Y := add_le_add (hlip z hz c hc) hcenter
-      _ ≤ q * r + Y := add_le_add_right (mul_le_mul_of_nonneg_left hzR hq0) Y
+      _ ≤ q * r + Y := add_le_add_left (mul_le_mul_of_nonneg_left hzR hq0) Y
       _ ≤ r := by linarith
-  have hcontract : ContractingWith (⟨q, hq0⟩ : ℝ≥0)
+  have hcontract : ContractingWith (⟨q, hq0⟩ : NNReal)
       (hmaps.restrict (correction f A) (closedBall c r) (closedBall c r)) := by
     refine ⟨hq1, LipschitzWith.of_dist_le_mul ?_⟩
     intro z w
@@ -145,7 +146,7 @@ theorem center_enclosure_bounds (f : ℂ → ℂ) (A c v d : ℂ) (r M ev ed : �
       _ ≤ ‖1 - A * d‖ + ‖A * (deriv f z - d)‖ := norm_sub_le _ _
       _ ≤ _ := by
         rw [norm_mul]
-        exact add_le_add_left (mul_le_mul_of_nonneg_left hdiff (norm_nonneg A)) _
+        exact add_le_add_right (mul_le_mul_of_nonneg_left hdiff (norm_nonneg A)) _
 
 end
 end GRWTSK.Analysis.Complex.ContractiveZeroDisk
