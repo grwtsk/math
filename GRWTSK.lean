@@ -94,6 +94,9 @@ import GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators
 import GRWTSK.DynamicalSystems.Sequences.ApproximationReturn
 import GRWTSK.DynamicalSystems.TransitionSystems.GuardedFiniteBudget
 import GRWTSK.Logic.Certificates.ProofCoverage
+import GRWTSK.Logic.Certificates.ExactMoment
+import GRWTSK.Combinatorics.CodingTheory.Lossless
+import GRWTSK.Combinatorics.GraphTheory.RootHeatState
 import GRWTSK.Logic.Locality.RevisionCertificates
 import GRWTSK.Order.Closure.FiniteDependencyClosure
 import GRWTSK.Logic.Certificates.DependencyRevision
