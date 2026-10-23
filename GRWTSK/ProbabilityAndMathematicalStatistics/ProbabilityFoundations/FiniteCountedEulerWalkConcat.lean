@@ -392,4 +392,34 @@ theorem CountedWalk.visits_start
   exact ⟨CountedWalk.empty a, T, by
     simp [CountedWalk.edges]⟩
 
+
+/-- An explicitly visited vertex remains visited after appending a
+directed edge. This constructs the suffix by appending to the
+previous suffix, preserving exact edge-instance order. -/
+theorem CountedWalk.visits_append_of_visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b d v : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b)
+    (hv : T.Visits v) :
+    (CountedWalk.append T e he).Visits v := by
+  obtain ⟨P, Q, hlist⟩ := hv
+  refine ⟨P, CountedWalk.append Q e he, ?_⟩
+  simp only [CountedWalk.edges]
+  rw [hlist]
+
+/-- The predecessor terminal vertex is visited after one append.
+This provides a concrete interior-vertex occurrence rather than
+requiring the factorization as a new hypothesis. -/
+theorem CountedWalk.visits_previous_finish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b) :
+    (CountedWalk.append T e he).Visits b :=
+  CountedWalk.visits_append_of_visits T e he T.visits_finish
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
