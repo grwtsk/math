@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Source-only exact-head verification instructions for perimeter angle kernel
 # This script is NOT a verification receipt. Run from a local clone with the
 # repository's pinned Lean/Lake toolchain and dependencies already installed.
@@ -14,6 +15,9 @@ if [ "$actual_blob" != "$EXPECTED_KERNEL_BLOB" ]; then
 fi
 command -v lake >/dev/null
 command -v lean >/dev/null
+# The receipt must identify the actual toolchain, not just the source.
+lake --version
+lake env lean --version
 git merge-base --is-ancestor "$EXPECTED_PARENT" HEAD || { echo 'Pinned parent is not an ancestor' >&2; exit 1; }
 # Reject changes to the mathematical parent modules, even when ancestry holds.
 for upstream in \
@@ -27,6 +31,10 @@ for upstream in \
   fi
 done
 printf 'HEAD: '; git rev-parse HEAD
+if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+  echo 'Tracked working tree is dirty; refusing source-bound audit' >&2
+  exit 1
+fi
 printf 'Working tree status:\n'; git status --short
 printf 'Kernel blob: %s\n' "$actual_blob"
 # Build the module first: a plain lean invocation does not produce the .olean
