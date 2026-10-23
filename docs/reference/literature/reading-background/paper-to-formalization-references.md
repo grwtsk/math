@@ -1888,3 +1888,159 @@ invariance in a noncompact limit, zero-free
 Dirichlet `L`-function claim, Möbius disjointness,
 Hodge conjecture or Riemann Hypothesis result.
 
+
+## October 23, 2026: finite heat recovery, Newman sign and selected Farey compensation
+
+**Epistemic/verification status:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED;
+no accepted external theorem port or RH claim. Detailed
+source/hypothesis/obstruction note:
+[finite-heat-recovery-newman-normalization.md](../../../mathematics/NumberTheory/Zeta/Riemann/finite-heat-recovery-newman-normalization.md).
+
+### Rodgers--Tao source: finite coefficient method comparison only
+
+- **Paper and source identity:** Brad Rodgers and Terence Tao,
+  *The de Bruijn--Newman constant is non-negative*, **2018** initial
+  arXiv posting (18 January 2018), stable
+  [arXiv:1801.05914](https://arxiv.org/abs/1801.05914).
+  The mathematical method located in the arXiv abstract is
+  the entire-function family
+  H_t(z) = integral_0^infinity exp(t*u^2)*Phi(u)*cos(z*u) du,
+  for real t with the paper's super-exponentially decaying source
+  kernel Phi. Its Newman-constant conclusion, zero-dynamics, dynamics
+  estimates and Montgomery pair-correlation contradiction are NOT
+  imported. Exact original PDF theorem/page for the canonical
+  H_0(z)=xi(1/2+i*z/2)/8 normalization is **UNRESOLVED** here;
+  that normalization is recorded in source-labelled
+  grwtsk/math issue #193, not independently paper-verified.
+- **Precisely extracted fragment/hypotheses:** For an *arbitrary finite*
+  index carrier I, real frequencies u_i and REAL coefficients a_i,
+  define exp(t*u_i^2)*a_i. A separately defined finite diagonal
+  positive Hodge heat has eigenvalues lambda_i=u_i^2. With t=-s,
+  this coefficient equals exp(-s*lambda_i)*a_i; at t=+s it equals
+  the finite **inverse** coefficient multiplier. The heat time sign
+  and squared-frequency normalization are required. The actual
+  source Phi, cosine integral, analytic continuation, differentiation
+  under the integral, zero multiplicity and growing-window errors
+  are NOT instantiated by the local proof scripts.
+- **Formal binding:** first integrated at
+  [grwtsk/math@882947685b51abdd0469acdd1515096be604a91a](https://github.com/grwtsk/math/commit/882947685b51abdd0469acdd1515096be604a91a),
+  source
+  GRWTSK/NumberTheory/Zeta/Riemann/FiniteHeatNewmanNormalization.lean,
+  blob **bd6219af4e929ff6b54bb5aef00821ebeb484060**.
+  Declarations (namespace
+  GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization):
+  squareFrequencies, squareFrequencies_nonneg,
+  newmanFiniteCoefficients, newman_negative_time_eq_forward_heat,
+  newman_positive_time_eq_inverse_heat,
+  newman_zero_time, recover_newman_negative_time,
+  newman_negative_time_squareEnergy_le,
+  zetaOrdinateOfNewman, newmanVariableOfZetaOrdinate,
+  ordinate_of_newman_of_ordinate,
+  newman_of_ordinate_of_newman,
+  threeQuarter_height_newman_variable,
+  newman_height_threeHalves_is_zeta_threeQuarters.
+- **Relationship:** METHOD_COMPARISON to the Rodgers--Tao integral;
+  LOCAL_IDENTITY_SOURCE_CANDIDATE for finite scalar coefficients
+  and factor-two arithmetic. NO paper-to-Lean theorem-equivalence or
+  genuine entire-function/zero transfer. In particular t>=0
+  is the **inverse coefficient direction**, whereas negative Newman
+  t=-s with s>=0 is dissipative; the zeta ordinate gamma=z/2
+  makes |gamma|<=3/4 correspond to |z|<=3/2.
+
+### Exact finite Hodge source and inverse-information obstruction
+
+- **Repository-authored identity source:** integrated on main at
+  [grwtsk/math@a4ba792528d23732d9b0c4e62176a19df7e7df57](https://github.com/grwtsk/math/commit/a4ba792528d23732d9b0c4e62176a19df7e7df57).
+  File GRWTSK/Geometry/Hodge/FiniteHeatRecovery.lean, current
+  blob **fdcb3b9584eea3579af88ea13c48beda509482de**.
+  Mathematical assumptions: arbitrary real diagonal modes, finite
+  real t, with nonnegative eigenvalues and t>=0 separately required
+  for contraction; finite index Fintype for the square-energy sum.
+  The genuinely Hodge-facing chart HodgeSpectralChart requires an
+  actual finite incidence graph, a linear equivalence, nonnegative
+  eigenvalues, **isometric square-norm compatibility**, and exact
+  diagonal intertwining with the repository's finite graph Laplacian.
+  No chart constructor or growing-tower theorem is supplied.
+- **Declarations** under
+  GRWTSK.Geometry.Hodge.FiniteHeatRecovery:
+  diagonalHeat, inverseDiagonalHeat,
+  inverse_after_heat, heat_after_inverse, diagonalHeat_injective,
+  diagonalHeat_add_time, diagonalHeat_abs_le,
+  diagonalHeat_squareEnergy_le, diagonalHeat_zero_mode,
+  inverse_gain_readout, UniformInverseBound,
+  uniformInverseBound_iff_gain, HodgeSpectralChart,
+  HodgeSpectralChart.heat, HodgeSpectralChart.recover,
+  HodgeSpectralChart.recover_heat,
+  HodgeSpectralChart.heat_squareEnergy_le,
+  discarded_coordinate_is_not_injective,
+  implicitEulerEncode, implicitEulerRecover,
+  implicitEuler_exact, implicitEuler_no_uniform_inverse_bound.
+  The latter obstruction is specifically for the implicit-Euler
+  scalar x/(n+1), not the exact exponential semigroup. It demonstrates
+  that stagewise exact inversion need not give a uniformly Lipschitz
+  inverse across increasing stages. The coordinate-drop obstruction
+  distinguishes true full-signal injectivity from lossy observation.
+- **Relationship:** LOCAL_IDENTITY_SOURCE_CANDIDATE and
+  CONDITIONAL_REDUCTION (chart existence). No Huffman finite-bit
+  encoder, lossless compression rate, zeta source identification,
+  uniform Hodge gap or arithmetic 7/8->3/4 transition is proved.
+
+### Exact Farey return compensated by a chosen heat clock
+
+- **Existing source, not an outside paper:** the genuine Farey LR
+  expanding eigenvalue lambda=(3+sqrt(5))/2>1 and mod-three
+  four-phase discreteSpiral(n)=(lambda*i)^n reside in
+  GRWTSK.NumberTheory.Farey.ReturnSpectralChannel,
+  ReturnAngularChannel and WeightedReturnBalance. The latter's
+  source blob at this integration is
+  6fb6857656d34b7b2e22e8ef3229be339cb526fc.
+- **New mathematical hypothesis/normalization:** choose scalar
+  heat eigenvalue **one** and a return-specific time
+  s_n=n log(lambda). Then exp(-s_n)=(lambda^-1)^n and
+  exp(-s_n)*discreteSpiral(n)=i^n. Four consecutive compensated
+  values cancel exactly. The *uncompensated* selected sum is
+  nonzero because Re(1+lambda*i-lambda^2-lambda^3*i)=1-lambda^2<0.
+  This time schedule is an explicit selected gauge, not an
+  isometric Hodge/Farey operator conjugacy or a canonical time on
+  all Farey walks.
+- **Formal binding:** main source integration
+  [grwtsk/math@f23626b03ded1f45a4c6410231127e1b02024be7](https://github.com/grwtsk/math/commit/f23626b03ded1f45a4c6410231127e1b02024be7),
+  GRWTSK/NumberTheory/Farey/HeatCompensatedReturn.lean,
+  blob **4307d4c61f10d5a34777e7d34f3884fc94274cb4**.
+  Declarations under
+  GRWTSK.NumberTheory.Farey.HeatCompensatedReturn:
+  returnHeatTime, returnHeatTime_nonneg,
+  heatReturnCompensator, heatReturnCompensator_is_unit_heat,
+  heatReturnCompensator_eq_inv_pow,
+  heatNormalizedSpiral,
+  heatNormalizedSpiral_eq_compensatedSample,
+  heatNormalizedSpiral_eq_phase,
+  heatNormalized_four_consecutive_zero,
+  raw_return_four_not_zero.
+- **Relationship:** REPOSITORY_SOURCE_IDENTITY_CANDIDATE
+  (selected finite observation), not a
+  PAPER_TO_LEAN_BRIDGE_PROVED claim. Finite source normalization
+  does not imply arbitrary signed cancellation, Guth--Maynard
+  large-value density, sofic/local-limit positivity, RH, GRH,
+  Newman's constant, or irrationality/transcendence of zero heights.
+
+### Validation and trust
+
+All three new files were read from exact Git source blobs after their
+routine non-force main integration. Declaration-head inspection found
+no direct sorry/admit/axiom. Independently, off-kernel exact SymPy
+algebra checked the Farey four-block cancellation for twelve start
+indices, the first twelve compensated samples, and the nonzero raw
+four-block real component. Such checks are FINITE_COMPUTATION_ONLY,
+not proof of all n and not Lean evidence.
+
+Pinned toolchain is leanprover/lean4:v4.33.0; Mathlib lock
+db584cd6d46c92f209a44c0f1c829460d327499d.
+Local \`lean\`, \`lake\` and \`elan\` executables were absent.
+No warning-clean build, direct elaboration, fresh kernel replay,
+trust-zero check, full transitive #print axioms, generated/opaque/unsafe
+audit or external theorem admission was executed. All such checks
+are **NOT_RUN / NOT_KERNEL_AUDITED**. No Railway, no force push.
+A separate pinned issue is required before accepting or promoting
+any of these source scripts. This work does not claim that a linked
+private discussion was inspected or verified.
