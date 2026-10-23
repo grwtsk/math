@@ -440,3 +440,111 @@ Ideas documentation retains source identifiers, formal target commits,
 relationships and open obligations; it does **not** store or
 manufacture execution receipts. Do not infer an unconditional
 Mordell–Weil rank-32 statement, exact rank, BSD, GRH or RH.
+
+
+## Case FAREY-GMD-WALK-01 — finite Gaussian/modular/Dirichlet Farey-word bridge (repository construction)
+
+**Source identity and paper status.** A **2026 repository-derived finite
+algebraic composition**, under the mathematical direction credited in the
+source to grwtsk contributors, with OpenAI formalization assistance. **This is
+not a theorem imported from an identified paper**, and no publication
+title/authors/theorem locator are claimed. Its exact mathematical supplier
+identities are the prior GRWTSK Farey/Gaussian/Dirichlet files and the
+following pinned upstream Mathlib **code** sources (not journal papers):
+[Gaussian integers](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/Zsqrtd/GaussianInt.lean),
+[finite additive characters](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/SpecialFunctions/Complex/CircleAddChar.lean),
+and [Dirichlet character orthogonality](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/DirichletCharacter/Orthogonality.lean).
+Mathlib revision: `db584cd6d46c92f209a44c0f1c829460d327499d`;
+Lean `leanprover/lean4:v4.33.0`. Historical influence and separate
+paper metadata are **not established**. Earlier classical identities
+were used through local named declarations, not inferred from similarity.
+
+**Exact theorem/method and hypotheses used.** For a natural Farey cell
+`I` with positive denominators and `b*c = a*d + 1`, its orientation-correct
+integral matrix frame is `[[c,a],[d,b]]`; the Gaussian product
+`(a+i*b)*(c-i*d)` has the same imaginary part as the frame determinant,
+namely one. For each **finite chronological word** of actual left/right
+mediant shears, `frame (walk I w) = frame I * wordUnit w`, retaining
+the exact order. Reduction into `ZMod q` works for any natural `q`;
+the normalized additive projector and Dirichlet-character comparison
+separately require `[NeZero q]`. Additive detection is a *congruence*,
+not unbounded integer equality. A polynomial eye asserts only
+`p.eval J.left ≤ 0` and `0 ≤ p.eval J.right` for the reached cell
+`J = walk I w`. The quintic/cubic eye comparison assumes the extra
+polynomial factor is **strictly positive at both reached endpoints**.
+
+For the nonunit obstruction, `¬ IsUnit (J.rightNum : ZMod q)` is
+an **additional explicit premise at J**, not inferred from determinant one
+and not asserted invariant under every turn. At that nonunit,
+every ordinary multiplicative `DirichletCharacter ℂ q` and every
+finite linear combination of such characters vanishes, whereas the
+normalized additive-character average at residue-minus-itself is one.
+Therefore no *pure finite multiplicative-character sum* is the exact
+delta selector of that nonunit. The existing cell `1/2 < 2/3` at
+modulus four instantiates the generic scope. No restriction to a
+specific nonzero polynomial degree is present in that obstruction.
+
+**Formal destination and exact source identity.**
+[GRWTSK/NumberTheory/Farey/GaussianModularDirichletWalk.lean](../../../../GRWTSK/NumberTheory/Farey/GaussianModularDirichletWalk.lean),
+introduced directly on **main** in commit
+[`4ca07594f5c944ba36cd1b14e44f4482cc5d94e8`](https://github.com/grwtsk/math/commit/4ca07594f5c944ba36cd1b14e44f4482cc5d94e8),
+Git blob `54583ff703940dc4fe3fe72b981fdd4cb898cea5`.
+Fully qualified names all begin `GRWTSK.NumberTheory.Farey.`:
+
+- `gaussian_cross_im_eq_frame_det`,
+  `gaussian_cross_im_eq_word_frame_det`,
+  `gaussian_modular_walk_certificates`, `walk_mediant_projectors`;
+- `gaussianModularEye_mul_iff_of_endpoint_pos_on_walk`;
+- `PureDirichletRightSelectorRepresentation` (a **definition of a
+  proposal**, not an established representation);
+- `nonunit_right_dirichlet_zero`,
+  `nonunit_right_pure_dirichlet_sum_zero`,
+  `right_additive_selector`,
+  `nonunit_right_pure_dirichlet_indicator_impossible`,
+  `gaussianModularEye_nonunit_obstruction_on_walk`, and
+  `nonunitEye_no_pure_dirichlet_right_selector`.
+
+The bridge consumes, without changing their statements,
+`GRWTSK.NumberTheory.Farey.gaussian_cross_im_eq_one`,
+`modularDet_eq_one`, `gaussianModularEye_iff`,
+`mediant_numerator_projector`,
+`mediant_denominator_projector`,
+`nonunitEye_right_nonunit`;
+`GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_walk`,
+`frame_det`,
+`quintic_eye_on_walk_iff_of_endpoint_pos`;
+`GRWTSK.Analysis.Fourier.FiniteAdditiveProjector.characterAverage_eq_indicator`;
+and Mathlib `MulChar.map_nonunit`.
+See [mathematical scope note](../../../mathematics/NumberTheory/Farey/gaussian-modular-dirichlet-walk.md)
+and the prior bridge issue [#1093](https://github.com/grwtsk/math/issues/1093).
+
+**Relationship classifications.** **`source-proof-candidate`** for the
+local exact algebra, matrix/word comparison, finite additive detection,
+nonunit obstruction and predicate transport; **`conditional-interface`**
+for the combined reached-cell theorem, whose endpoint-sign and nonunit
+premises remain explicit; **`obstruction-at-scope`** only to a pure
+finite Dirichlet-character representation; **not**
+`local-proved-bridge`, `direct-import` of an outside paper theorem,
+or an analytic/spectral theorem. The upstream Mathlib facts are
+**code dependencies**, not a claim to have audited their transitive axioms
+in this repository.
+
+**Verification and unresolved premises.** GitHub source readback at
+`4ca07594f5c944ba36cd1b14e44f4482cc5d94e8` confirmed two direct
+imports, one definition, eleven authored theorems, and no literal source
+declaration `sorry`, `admit` or `axiom`. The commit has no combined
+GitHub status in the lookup. The available local container has no
+`lean` or `lake`, and `git ls-remote` cannot resolve github.com.
+**SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**:
+build exit status **not obtained**, fresh kernel check **not obtained**,
+transitive axiom/unsafe audit **not obtained**, and no verified theorem
+receipt exists. The source is deliberately unimported from
+`GRWTSK.lean`. Full source/dependency replay is pending in a separate
+commit-bound verification issue, independently of earlier #1093.
+
+**Nonclaims.** No automatic nonunit property of all Farey words,
+spectral decomposition of the native Farey action, full Dirichlet
+L-function exclusion, analytic continuation, prime cancellation,
+Sarnak Möbius disjointness, RH/GRH, uniqueness/existence of rational roots,
+quintic solvability, or elliptic-curve rank is derived. A finite
+Gaussian/Dirichlet obstruction does not constitute those missing bridges.
