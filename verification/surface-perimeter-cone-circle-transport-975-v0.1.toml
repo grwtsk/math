@@ -1,0 +1,588 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-perimeter-cone-circle-transport-975-v0.1"
+owner_repository = "grwtsk/math"
+issue = 975
+related_issues = [970, 961, 955, 947, 941, 916, 889, 868, 859, 845, 834, 823, 803, 795, 774, 758, 745, 734, 722, 100, 159, 15]
+route_id = "AUTHENTIC_PERIMETER_CONE_TO_STANDARD_UNIT_CIRCLE_CONE_HOMEOMORPHISM"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_pr = 972
+review_parent_branch = "research/surface-perimeter-cone-970-20261022"
+review_parent_revision = "525457c57b9d5b040bbe0c3be46f80c7e4eaaaa0"
+review_parent_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCone.lean"
+review_parent_module_git_blob = "b75c6440380a0bd83e48028eb6521b23b115dcfe"
+review_inherited_circle_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCircleEquivalence.lean"
+review_inherited_circle_module_git_blob = "ad92d48b7eb6eb7135fb84c124e11aa3ccdd17cc"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+candidate_branch = "research/surface-cone-circle-transport-975-20261022"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterConeCircleTransport.lean"
+new_module_git_blob = "48435119934eb290cf74363de9c0acb4a7accab8"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-perimeter-cone-circle-transport.md"
+mathematical_note_git_blob = "1f7e2916a161f319fbce4c68c80ceefc7b44ff84"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+quotient_equivalence_closure = "Relation.EqvGen"
+quotient_topology_source = "instTopologicalSpaceQuotient"
+quotient_continuous_projection = "continuous_quotient_mk'"
+quotient_map_projection = "isQuotientMap_quotient_mk'"
+quotient_lift_continuity = "Continuous.quotient_lift"
+quotient_compactness = "Quotient.compactSpace"
+source_perimeter_circle_homeomorphism = "SurfacePolygonPerimeterCircleEquivalence.perimeterUnitCircleHomeomorph"
+source_perimeter_cone_fiber = "SurfacePolygonPerimeterCone.coneConnected_iff"
+source_perimeter_cone_projection = "SurfacePolygonPerimeterCone.coneProjection"
+source_perimeter_cone_radius = "SurfacePolygonPerimeterCone.coneRadius"
+reuse_status = "PINNED_MATHLIB_AND_PARENT_SOURCE_IDENTIFIED_NOT_KERNEL_QUALIFIED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+standard_unit_circle_cone_defined_as_actual_quotient = true
+only_zero_radius_apex_relation_generators = true
+exact_standard_cone_fiber_characterization_candidate = true
+actual_coinduced_quotient_topology = true
+continuous_standard_cone_projection_candidate = true
+standard_cone_projection_quotient_map_candidate = true
+positive_radius_source_separation_candidate = true
+continuous_standard_cone_radius_candidate = true
+injective_standard_outer_boundary_candidate = true
+compact_standard_circle_cone_candidate = true
+exact_forward_and_inverse_source_product_maps = true
+forward_and_inverse_relation_preservation_candidates = true
+continuous_forward_and_inverse_quotient_lifts = true
+forward_inverse_laws_by_quotient_induction = true
+perimeter_cone_standard_circle_cone_homeomorphism_candidate = true
+radius_apex_boundary_compatibility_candidates = true
+genus_two_three_fixtures = true
+standard_circle_cone_to_closed_disk_homeomorphism_proved = false
+polar_coordinate_inverse_proved = false
+cone_to_filled_homeomorphism_proved = false
+full_cone_to_filled_fiber_characterization_proved = false
+filled_quotient_pushout_universal_property_proved = false
+genuine_genus_g_CW_manifold_proved = false
+actual_surface_cellular_singular_H1_proved = false
+actual_surface_pi1_vanKampen_Hurewicz_proved = false
+hyperbolic_geodesic_lengths_or_primitive_trace_proved = false
+Selberg_WP_GUE_sofic_proved = false
+Chowla_growing_shift_or_zeta_RH_proved = false
+mathematical_statement = "The authentic source-exact perimeter cone is homeomorphic, via the inherited perimeter-to-UnitAddCircle homeomorphism crossed with the identity radius and descended through the exact apex quotients, to an independently defined standard unit-circle cone; the homeomorphism preserves radius, apex and outer boundary."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+authored_declaration_count = 46
+hostile_control_count = 60
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone", "Mathlib.Topology.Compactness.Compact", "Mathlib.Tactic"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+source_construct = "StandardCircleConeStep and its generated recursor plus Relation.EqvGen closure"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+source_construct = "standardCircleConeSetoid, Quotient topology and quotient projection instances"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+source_construct = "implicit CompactSpace, Fact and product topology instance resolution"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport"
+source_construct = "bundled Equiv and Homeomorph coercions plus generated simp projections"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.StandardCircleConeCylinder"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.StandardCircleConeStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.StandardCircleConeConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeConnected_iff"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeSetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.StandardCircleCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeTopology_coinduced"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeProjection_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeProjection_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeProjection_eq_iff_of_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeConnected_preserves_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeRadius"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeRadius_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeRadius_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeApex"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleCone_zero_eq_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeBoundary_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeBoundary_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeCompactSpace"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterToStandardCircleConeSource"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterToStandardCircleConeSource_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.coneConnected_perimeterToStandardCircleConeSource"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeToStandardCircleCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeToStandardCircleCone_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeToStandardCircleCone_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeToStandardCircleCone_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleToPerimeterConeSource"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleToPerimeterConeSource_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeConnected_standardCircleToPerimeterConeSource"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeToPerimeterCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeToPerimeterCone_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeToPerimeterCone_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeToPerimeterCone_leftInverse"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.standardCircleConeToPerimeterCone_rightInverse"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeEquivStandardCircleCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone_apply"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone_symm_apply"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone_apex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.perimeterConeHomeomorphStandardCircleCone_symm_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.genusTwoPerimeterConeHomeomorphStandardCircleCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport.genusThreePerimeterConeHomeomorphStandardCircleCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent-pinned"
+requirement = "The direct parent is PR #972 at exact head 525457c57b9d5b040bbe0c3be46f80c7e4eaaaa0; no parent source is edited."
+
+[[hostile_controls]]
+id = "three-additive-files-only"
+requirement = "The increment consists only of one Lean module, one mathematical note and one passive replay target."
+
+[[hostile_controls]]
+id = "source-status-only"
+requirement = "All declarations remain SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED until immutable replay."
+
+[[hostile_controls]]
+id = "standard-cone-independent-definition"
+requirement = "StandardCircleCone is independently defined as a true quotient of UnitAddCircle × unitInterval."
+
+[[hostile_controls]]
+id = "only-apex-generators"
+requirement = "StandardCircleConeStep has only radius-zero apex generators."
+
+[[hostile_controls]]
+id = "no-positive-radius-generator"
+requirement = "No primitive relation identifies distinct positive-radius source points."
+
+[[hostile_controls]]
+id = "eqvgen-exact"
+requirement = "The cone relation is the actual Relation.EqvGen closure, not an asserted equivalence."
+
+[[hostile_controls]]
+id = "fiber-criterion-bidirectional"
+requirement = "The full standard cone relation is proved equivalent to equality or two zero radii."
+
+[[hostile_controls]]
+id = "coinduced-topology"
+requirement = "The standard cone carries the actual Mathlib coinduced quotient topology."
+
+[[hostile_controls]]
+id = "continuous-projection"
+requirement = "The standard cone quotient projection is proved continuous."
+
+[[hostile_controls]]
+id = "quotient-map-projection"
+requirement = "The standard cone projection is proved an IsQuotientMap."
+
+[[hostile_controls]]
+id = "positive-radius-separation"
+requirement = "Equality of standard cone classes at nonzero source radius forces exact cylinder equality."
+
+[[hostile_controls]]
+id = "radius-well-defined"
+requirement = "The radial coordinate is descended only after proving relation invariance."
+
+[[hostile_controls]]
+id = "radius-continuous"
+requirement = "The descended standard-cone radial coordinate is proved continuous."
+
+[[hostile_controls]]
+id = "apex-source-exact"
+requirement = "All and only radius-zero standard source points map to the selected apex under the supplied theorem."
+
+[[hostile_controls]]
+id = "boundary-radius-one"
+requirement = "The standard outer boundary is defined at the true radius-one level."
+
+[[hostile_controls]]
+id = "boundary-injective"
+requirement = "The standard outer boundary is proved injective using positive-radius fiber separation."
+
+[[hostile_controls]]
+id = "standard-cone-compact"
+requirement = "Compactness is obtained from the genuine compact source product and Quotient.compactSpace."
+
+[[hostile_controls]]
+id = "consume-existing-homeomorph"
+requirement = "The transport consumes perimeterUnitCircleHomeomorph from PR #946 rather than inventing a new circle identification."
+
+[[hostile_controls]]
+id = "forward-source-product"
+requirement = "The forward cylinder map is exactly perimeterUnitCircleHomeomorph × id on the radial coordinate."
+
+[[hostile_controls]]
+id = "inverse-source-product"
+requirement = "The inverse cylinder map is exactly the inverse perimeter homeomorphism × id."
+
+[[hostile_controls]]
+id = "forward-continuous"
+requirement = "The forward source transport is proved continuous from the existing homeomorphism and product topology."
+
+[[hostile_controls]]
+id = "inverse-continuous"
+requirement = "The inverse source transport is proved continuous from the inverse homeomorphism and product topology."
+
+[[hostile_controls]]
+id = "forward-relation-preservation"
+requirement = "The forward source transport preserves the authentic and standard apex relations."
+
+[[hostile_controls]]
+id = "inverse-relation-preservation"
+requirement = "The inverse source transport preserves the standard and authentic apex relations."
+
+[[hostile_controls]]
+id = "forward-quotient-lift"
+requirement = "The forward cone map is a genuine Quotient.lift."
+
+[[hostile_controls]]
+id = "inverse-quotient-lift"
+requirement = "The inverse cone map is a genuine Quotient.lift."
+
+[[hostile_controls]]
+id = "forward-descended-continuity"
+requirement = "Continuity of the forward descended map is proved through Continuous.quotient_lift."
+
+[[hostile_controls]]
+id = "inverse-descended-continuity"
+requirement = "Continuity of the inverse descended map is proved through Continuous.quotient_lift."
+
+[[hostile_controls]]
+id = "left-inverse"
+requirement = "The inverse-after-forward law is proved by quotient induction and the inherited homeomorphism inverse law."
+
+[[hostile_controls]]
+id = "right-inverse"
+requirement = "The forward-after-inverse law is proved by quotient induction and the inherited homeomorphism inverse law."
+
+[[hostile_controls]]
+id = "actual-equivalence"
+requirement = "A bundled Equiv is built from the two proved inverse laws."
+
+[[hostile_controls]]
+id = "actual-homeomorphism"
+requirement = "A bundled Homeomorph is built from the Equiv and both continuity proofs."
+
+[[hostile_controls]]
+id = "not-continuity-alone"
+requirement = "No homeomorphism is inferred merely from continuity."
+
+[[hostile_controls]]
+id = "not-cardinality"
+requirement = "No bijection or homeomorphism is inferred from cardinality or finite reindexing."
+
+[[hostile_controls]]
+id = "radius-compatibility"
+requirement = "The homeomorphism is proved to preserve the actual radial coordinate."
+
+[[hostile_controls]]
+id = "apex-compatibility"
+requirement = "The authentic selected apex is proved to map to the standard selected apex."
+
+[[hostile_controls]]
+id = "boundary-compatibility"
+requirement = "The authentic cone boundary is transported by the exact existing perimeter-circle homeomorphism."
+
+[[hostile_controls]]
+id = "inverse-boundary-compatibility"
+requirement = "The inverse standard boundary formula uses the exact inverse perimeter-circle homeomorphism."
+
+[[hostile_controls]]
+id = "source-identities-retained"
+requirement = "The original polygon side identities remain in the authentic source before transport."
+
+[[hostile_controls]]
+id = "genus-two-control"
+requirement = "The k=0 / genus-two cone transport is explicitly named."
+
+[[hostile_controls]]
+id = "genus-three-control"
+requirement = "The k=1 / genus-three cone transport is explicitly named."
+
+[[hostile_controls]]
+id = "no-standard-disk-homeomorphism"
+requirement = "No homeomorphism from StandardCircleCone to a complex closed disk is claimed."
+
+[[hostile_controls]]
+id = "no-polar-map"
+requirement = "No exponential/polar map or positive-radius angular inverse is silently assumed."
+
+[[hostile_controls]]
+id = "no-cone-filled-injectivity"
+requirement = "The inherited noninjective coneToFilled map is not promoted to an injection or homeomorphism."
+
+[[hostile_controls]]
+id = "no-fiber-pushout-claim"
+requirement = "No full coneToFilled fiber characterization or pushout universal property is claimed."
+
+[[hostile_controls]]
+id = "no-cw-manifold-claim"
+requirement = "No CW complex or surface manifold structure is claimed."
+
+[[hostile_controls]]
+id = "no-homology-pi1-claim"
+requirement = "No cellular/singular homology comparison, van Kampen theorem or Hurewicz theorem is claimed."
+
+[[hostile_controls]]
+id = "no-geometric-spectral-claim"
+requirement = "No hyperbolic, Selberg, Weil–Petersson, GUE, sofic or Chowla theorem is claimed."
+
+[[hostile_controls]]
+id = "no-zeta-rh-claim"
+requirement = "No zeta-divisor or Riemann Hypothesis consequence is claimed."
+
+[[hostile_controls]]
+id = "no-root-import"
+requirement = "The public GRWTSK root is not modified."
+
+[[hostile_controls]]
+id = "no-toolchain-dependency-change"
+requirement = "No toolchain, lake manifest, package or dependency pin is changed."
+
+[[hostile_controls]]
+id = "no-ci-workflow-execution"
+requirement = "No CI, workflow, cache, executor, native, VM or F06 operation is represented."
+
+[[hostile_controls]]
+id = "no-merge-close"
+requirement = "No merge or issue closure is authorized by the source packet."
+
+[[hostile_controls]]
+id = "exact-generated-review-required"
+requirement = "Generated recursors, quotient instances and implicit topology/compactness instances require explicit replay reconciliation."
+
+[[hostile_controls]]
+id = "exact-types-required"
+requirement = "All authored declarations require exact elaborated type extraction before promotion."
+
+[[hostile_controls]]
+id = "trust-zero-required"
+requirement = "Acceptance requires warning-as-error and --trust=0 replay at the immutable exact head."
+
+[[hostile_controls]]
+id = "axiom-unsafe-import-audit-required"
+requirement = "Acceptance requires full transitive axiom, unsafe, import and native-dependency review."
+
+[[hostile_controls]]
+id = "hostile-replay-required"
+requirement = "Acceptance requires hostile apex, positive-radius, inverse, radius and boundary fixtures."
+
+[[hostile_controls]]
+id = "source-blob-binding-required"
+requirement = "The accepted receipt must bind parent, source, note, manifest and candidate commit blobs exactly."
