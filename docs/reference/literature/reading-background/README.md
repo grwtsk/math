@@ -1,5 +1,7 @@
 # Reading background and intellectual lineage
 
+Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
 ## Paper-to-Lean provenance requirement
 
 For each newly formalized theorem, construction, algorithm, or method drawn from a paper, maintain a [paper-to-Lean provenance record](paper-to-lean-provenance.md) in the ideas documentation. Record the title, authors, publication/version year, stable DOI/arXiv URL, exact paper theorem or method and **all hypotheses actually used**, imported and local Lean declarations, the full source commit and blob, and command-level verification status. Mark separately a proved repository identity, a genuinely proved bridge to the paper, a conditional application, a comparison-only analogy, and every unresolved supplier. Bibliographic inspection, source presence, a merged commit, a queued validation issue, or a passing unrelated root import is **not** kernel verification. The existing version-bound idea map and catalog remain authoritative for their historical source identities and are not silently rewritten by this policy.
@@ -27,11 +29,19 @@ status**. An analogy is not a formal dependency, and an unproved
 specialization or a source-level proof candidate is not a kernel-accepted
 bridge.
 
-The ledger currently contains specific entries for the 2026 ICARM
-rank-32 record, Cremona's 2002 good-prime 2-descent independence method,
-Stoll's pinned Lean 4.35 2-descent development (a **code source**, not a
-paper), and the 2026 finite Weil-form/inertia comparison
-(an **analogy**, not an imported zero-distribution theorem). The
+The ledger contains source-bound entries for the 2026 ICARM
+rank-32 record, Cremona's 2002 good-prime 2-descent method,
+Stoll's pinned Lean 4.35 development (**code**, not a paper),
+Sarnak's 2011 deterministic-flow conjecture (**analogy**, not an
+instantiated theorem), and the 2026 Weil-form/inertia comparison
+(**analogy**, not an imported zero-distribution theorem). It now
+also records exact Farey selected-return angular and projective
+obstructions and cyclic-residue Hodge identities as **2026
+repository-derived constructions with no separately established
+paper theorem or historical influence**. Those entries distinguish
+the earlier eight-module local kernel/axiom qualification from the
+still-unverified angular, projective and Hodge leaves and list
+their individual queued replay issues. The
 large version-bound unpublished-manuscript map remains separate; neither
 catalog proves reading history, influence, priority or theorem acceptance.
 

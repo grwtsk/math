@@ -91,7 +91,7 @@ theorem commutant_is_scalar (P : MatC)
   have hc : P 1 0 = 0 := by
     have h := congrArg (fun M : MatC => M 0 0) hR
     norm_num [rightShear, Matrix.mul_apply, Fin.sum_univ_two] at h
-    linear_combination -h
+    exact h
   ext i j
   fin_cases i <;> fin_cases j <;>
     simp [Matrix.smul_apply, hb, hc, hd]
