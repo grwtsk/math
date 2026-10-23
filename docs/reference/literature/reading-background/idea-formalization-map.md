@@ -7992,3 +7992,5 @@ Missing bridges and uncertainty:
 - No substantive theorem statement was established in this one-page asset. Do not substitute an abc conjecture theorem merely because the title says abc.
 
 Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.
+
+Next implementation pass: [local order detection, finite local products, residual readouts and rate separation by taxonomy](obligation-implementation-progress-v2.md). Four obligations remain completed; seven have verified partial results; 25 remain unresolved.
