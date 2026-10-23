@@ -1,0 +1,117 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "concrete-newton-eleventh-block-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.ConcreteNewtonEleventhBlockCore"
+build_target = "GRWTSK.Interfaces.ConcreteNewtonEleventhBlockCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "82b2a8e295e3efcb84fe5e3d72964fd20328246c"
+base_tree = "71e9afcefb60ae8226dd5e879fc9da66ffb83ded"
+parent_pr = 380
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "verification/concrete-newton-tenth-block-core-v0.1.toml"
+inherited_target_blob = "180416f487b08edc3d6c0959fa1a49c0843fb03e"
+receipt_policy = "No execution authority; evidence and applicable authorization remain external."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+new_prefix_block = 10
+first_base = 641
+last_base = 704
+fresh_endpoint_cases = 64
+prior_blocks = "REUSED_SOURCE_DRAFTS_0_THROUGH_9"
+terminal = "REUSED_SOURCE_DRAFT_BASE_4097"
+source_acceptance = "OPEN_NOT_PROVED"
+remaining_composition_premises = "53_PREFIX_BLOCK_CHECKS_AND_ORIGINAL_FINAL_AGGREGATION"
+lean_checks = "NOT_RUN"
+compilation = "NOT_RUN"
+independent_full_replay = "NOT_PERFORMED"
+complete_zero_count = "NOT_SUPPLIED"
+strict_prime_margins = "NOT_SUPPLIED"
+historical_predicates_changed = false
+
+[diagnostics]
+assertions = 14116
+fresh_endpoints = 64
+max_seed_denominator_digits = 6144
+max_error_denominator_digits = 9594
+ordinary_optimized_report_identity = true
+ordinary_optimized_data_identity = true
+qualification = "Exact-rational internal cross-checks, not Lean proof or independent accepted replay."
+
+[[modules]]
+name = "GRWTSK.Interfaces.ConcreteNewtonEleventhBlockCore"
+path = "GRWTSK/Interfaces/ConcreteNewtonEleventhBlockCore.lean"
+source_blob = "6f5fa80fa549242baf1d95ae5d630167fc0eb41d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.EleventhBlockControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/EleventhBlockControls.lean"
+source_blob = "15a068f96817882eaff729c14c4c5d7297d30077"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonEleventhBlock"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonEleventhBlock.lean"
+source_blob = "1f16b449956f75bb0bfa27f7ca1f34a401dc608a"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonEleventhBlockData"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonEleventhBlockData.lean"
+source_blob = "a4f795c4b3a3ffd65736f47cb968fb65e53a0b72"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonEleventhBlockSeeds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonEleventhBlockSeeds.lean"
+source_blob = "ec4de5181e3fcc3b58c1fae2cb417589dc61dc91"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonElevenBlocksAndTerminal"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonElevenBlocksAndTerminal.lean"
+source_blob = "90c3714b817e1e1447d093a074b892fc73cdc047"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[documents]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/eleventh-block-integer-verification.md"
+source_blob = "b5a356da631c086cc27cabf506201909bd1c8580"
+
+[acceptance]
+inherited_obligations_preserved = true
+requirements = [
+  "Audit all new and inherited exact types, generated members, instances, imports, axioms and computational dependencies at the immutable parent and applied source hashes.",
+  "This static target authorizes no Lean, Lake, native decision, build, replay, worker dispatch or hold release.",
+  "Preserve global positions 640..703 and bases 641..704; local indices 0..63 must never be substituted for global prefix indices.",
+  "Recompute the same source exponent, all logarithm contributions and widths, radius and displacement from the original schedule for every base.",
+  "Retain logarithm reduction exponent nine for every base 641..704, including its multiplier in logarithm uncertainty.",
+  "Validate all 64 proposed initial triples using the complete original seed/error identities and every original admissibility guard.",
+  "Preserve the exact eight-step Euclidean recurrence, signed floors, error ceiling, quadratic term, local allowance and complete output State.",
+  "Compose prior fills only at disjoint positions and prove preservation of every unverified later record.",
+  "Keep terminal base 4097 independent and unchanged.",
+  "Require the original 53 remaining block checks and the original six-field/two-tolerance final aggregation.",
+  "Do not treat source scripts, exact-rational diagnostics or integration metadata as Lean/kernel acceptance.",
+  "Assess resource demand and repair elaboration as needed without weakening statements or error budgets.",
+  "Supply sharp complete zero counts, inventory identity and strict all-interval margins independently; none is produced here."
+]
