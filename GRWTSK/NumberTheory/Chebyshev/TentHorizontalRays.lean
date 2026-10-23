@@ -107,7 +107,7 @@ theorem leftEdge_tendsto_atBot : Tendsto leftEdge atTop atBot := by
   filter_upwards [eventually_ge_atTop K] with N hN
   have hcast : (K : ℝ) ≤ N := by exact_mod_cast hN
   unfold leftEdge
-  linarith [Nat.cast_nonneg (R := ℝ) N]
+  linarith [Nat.cast_nonneg (α := ℝ) N]
 
 /-- Separate absolute convergence identifies each finite-edge limit with its literal ray. -/
 theorem horizontal_tendsto_ray (x h y : ℝ) (hh : 0 < h) (ha : 1 < x - h)

@@ -68,7 +68,7 @@ theorem squareIncrement_eq_vonMangoldt_sum (n : ℕ) :
   have hleft : (n : ℝ) ^ 2 = ((n ^ 2 : ℕ) : ℝ) := (Nat.cast_pow n 2).symm
   rw [squareIncrement, hright, hleft, source_eq_mathlib_psi, source_eq_mathlib_psi]
   simp only [_root_.Chebyshev.psi, Nat.floor_natCast]
-  exact sum_Ioc_difference _ _ (by nlinarith) _
+  exact sum_Ioc_difference _ _ (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2) _
 
 /-- The prime-only increment is defined from Mathlib theta, not fitted to the correction. -/
 def squarePrimeIncrement (n : ℕ) : ℝ :=
@@ -91,7 +91,7 @@ theorem squarePrimeIncrement_eq_first_fiber (n : ℕ) :
     squarePrimeIncrement n = ∑ p ∈ primePowerBases n 1, Real.log p := by
   unfold squarePrimeIncrement
   simp only [_root_.Chebyshev.theta, Nat.floor_natCast, Finset.sum_filter]
-  rw [sum_Ioc_difference _ _ (by nlinarith)]
+  rw [sum_Ioc_difference _ _ (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2)]
   rw [primePowerBases_one, Finset.sum_filter]
 
 /-- All positive exponents and their actual prime bases, at the complete finite cutoff. -/

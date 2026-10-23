@@ -69,8 +69,8 @@ theorem separated_horizontal_integrable (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h
   intro u hu
   have hs : |(((u : ℂ) + (y : ℂ) * Complex.I)).im| = separatedHeight N := by
     simpa using hy
-  exact ((analyticAt_integrand_separated_horizontal x h hh ha N _ hs).continuousAt.comp
-    (by fun_prop)).continuousWithinAt
+  exact ((analyticAt_integrand_separated_horizontal x h hh ha N _ hs).continuousAt.comp (f := fun v : ℝ => (v : ℂ) + (y : ℂ) * Complex.I) (x := u)
+    (show ContinuousAt (fun v : ℝ => (v : ℂ) + (y : ℂ) * Complex.I) u from by fun_prop)).continuousWithinAt
 
 /-- A new cutoff requires a new inventory. Certified rounding preserves THIS selected head exactly. -/
 theorem rounded_weighted_head_eq (N : ℕ) (H : ℝ)
@@ -94,9 +94,10 @@ theorem separated_right_tendsto_squareSource (n : ℕ) (hn : 2 ≤ n) :
   have he : (∫ t : ℝ,
       integrand (squareCenter n) (squareRadius n) ((2 : ℂ) + (t : ℂ) * Complex.I)) /
         ((2 * Real.pi : ℝ) : ℂ) = (squareTentMangoldt n : ℂ) := by
-    simpa only [integrand, rightLine, Complex.ofReal_div, Complex.ofReal_one,
-      div_eq_mul_inv, mul_comm] using (squareTentMangoldt_eq_rightLine n hn).symm
-  simpa only [he] using hv.div_const ((2 * Real.pi : ℝ) : ℂ)
+    simpa [integrand, rightLine, div_eq_mul_inv, mul_comm] using (squareTentMangoldt_eq_rightLine n hn).symm
+  have hv' := hv.div_const ((2 * Real.pi : ℝ) : ℂ)
+  rw [show ((2 : ℝ) : ℂ) = 2 by norm_num, he] at hv'
+  exact hv'
 
 end
 end GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours

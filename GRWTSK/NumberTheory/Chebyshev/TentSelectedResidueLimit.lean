@@ -85,6 +85,7 @@ theorem finite_residues_tendsto_squareSource (n : ℕ) (hn : 2 ≤ n) :
         (rationalTentCorrection (squareCenter n) (squareRadius n) : ℂ)) := by
     apply Eventually.of_forall
     intro N
+    dsimp only
     rw [right_eq_residues_add_horizontalRays (squareCenter n) (squareRadius n)
       (separatedHeight N) (squareRadius_pos n) (square_tent_domain n hn)
       (separatedHeight_pos N) (separatedHeight_avoids N)]

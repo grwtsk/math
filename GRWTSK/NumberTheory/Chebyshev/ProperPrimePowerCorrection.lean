@@ -122,14 +122,16 @@ theorem properPrimePowerMass_le_coarse_bound (a b : ℕ) (hab : a ≤ b) (hb : 1
 theorem upper_endpoint_le_properPrimePowerMass (a b : ℕ) (hab : a < b)
     (hb : ¬ Nat.Prime b) :
     ArithmeticFunction.vonMangoldt b ≤ properPrimePowerMass a b := by
-  apply Finset.single_le_sum (fun _ _ => ArithmeticFunction.vonMangoldt_nonneg)
+  unfold properPrimePowerMass
+  apply Finset.single_le_sum (f := fun k : ℕ => (ArithmeticFunction.vonMangoldt k : ℝ))
+    (fun _ _ => ArithmeticFunction.vonMangoldt_nonneg)
   exact Finset.mem_filter.mpr ⟨Finset.mem_Ioc.mpr ⟨hab, le_rfl⟩, hb⟩
 
 /-- If n+1 is prime, its square contributes log(n+1) at the closed upper endpoint. -/
 theorem prime_square_endpoint_lower_bound (n : ℕ) (hp : Nat.Prime (n + 1)) :
     Real.log ((n + 1 : ℕ) : ℝ) ≤ properPrimePowerMass (n ^ 2) ((n + 1) ^ 2) := by
   have h := upper_endpoint_le_properPrimePowerMass (n ^ 2) ((n + 1) ^ 2)
-    (by nlinarith) (square_not_prime (n + 1))
+    (Nat.pow_lt_pow_left (Nat.lt_succ_self n) (by decide)) (square_not_prime (n + 1))
   simpa only [ArithmeticFunction.vonMangoldt_apply_pow (by decide : (2 : ℕ) ≠ 0),
     ArithmeticFunction.vonMangoldt_apply_prime hp] using h
 
@@ -144,6 +146,7 @@ theorem intervalCount_pos_of_source_margin (a b : ℕ) (hab : a ≤ b)
   have hsplit := source_sub_eq_theta_sub_add_proper a b hab
   linarith
 
+set_option linter.unusedVariables false in
 /-- The source expression is exactly the one used by #256, with natural-square casts explicit. -/
 theorem squareCount_pos_of_source_margin (n : ℕ) (hn : 1 ≤ n) (A ε U : ℝ)
     (happrox : |chebyshevPrimePower (((n + 1) ^ 2 : ℕ) : ℝ) -
@@ -151,17 +154,17 @@ theorem squareCount_pos_of_source_margin (n : ℕ) (hn : 1 ≤ n) (A ε U : ℝ)
     (hcorrection : properPrimePowerMass (n ^ 2) ((n + 1) ^ 2) ≤ U)
     (hmargin : 0 < A - ε - U) : 0 < squareCount n := by
   exact intervalCount_pos_of_source_margin (n ^ 2) ((n + 1) ^ 2)
-    (by nlinarith) (square_not_prime (n + 1)) A ε U happrox hcorrection hmargin
+    (pow_le_pow_left₀ (Nat.zero_le n) (by omega : n ≤ n + 1) 2) (square_not_prime (n + 1)) A ε U happrox hcorrection hmargin
 
 /-- Only an independently supplied every-input margin can complete the finite-prefix theorem. -/
-theorem legendre_of_prefix_and_source_margins (N : ℕ) (prefix : LegendreThrough N)
+theorem legendre_of_prefix_and_source_margins (N : ℕ) («prefix» : LegendreThrough N)
     (A ε U : ℕ → ℝ)
     (happrox : ∀ n, N < n →
       |chebyshevPrimePower (((n + 1) ^ 2 : ℕ) : ℝ) -
         chebyshevPrimePower ((n ^ 2 : ℕ) : ℝ) - A n| ≤ ε n)
     (hcorrection : ∀ n, N < n → properPrimePowerMass (n ^ 2) ((n + 1) ^ 2) ≤ U n)
     (hmargin : ∀ n, N < n → 0 < A n - ε n - U n) : Legendre := by
-  apply legendre_of_prefix_and_tail N prefix
+  apply legendre_of_prefix_and_tail N «prefix»
   intro n hn
   exact squareCount_pos_of_source_margin n (by omega) (A n) (ε n) (U n)
     (happrox n hn) (hcorrection n hn) (hmargin n hn)
