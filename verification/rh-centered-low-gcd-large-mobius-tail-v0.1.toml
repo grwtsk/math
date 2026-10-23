@@ -1,0 +1,36 @@
+schema = "grwtsk.verification.v1"
+packet = "rh-centered-low-gcd-large-mobius-tail-v0.1"
+repository = "grwtsk/math"
+parent = "e61069a6a36cc39b0d19796d66b609c432932198"
+status = "SOURCE_DRAFT"
+
+[claims]
+exact_tail_incidence_reindexing_source_authored = true
+large_mobius_index_anchor_exclusion_source_authored = true
+large_mobius_index_absolute_target_bound_source_authored = true
+actual_fejer_residual_reduction_source_authored = true
+signed_small_index_residual_bound_proved = false
+threshold_descent_proved = false
+riemann_hypothesis_proved = false
+
+[constants]
+large_mobius_tail = 1152
+centered_diagonal = 300
+combined_positive_shift_increment = 1452
+provisional_until_replay = true
+
+[formal]
+elaborated = false
+kernel_checked = false
+axiom_audited = false
+warning_as_error_checked = false
+trust_zero_checked = false
+
+[dependencies]
+finite_divisor_summatory_replay_reasserted = false
+historical_fejer_bridge_replay_reasserted = false
+centered_low_gcd_replay_reasserted = false
+high_g_constant_7200_accepted = false
+
+[next]
+obligation = "Bound the sum of the small-r signed coprime Mobius-square expansion and every positive low-common-gcd class by C * X * sqrt(X) * log(X)^4 for the actual period-4X Fejer weight."
