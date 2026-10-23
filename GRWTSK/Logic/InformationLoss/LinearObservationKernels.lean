@@ -4,7 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No root import.
 -/
 import GRWTSK.Logic.InformationLoss.AugmentedRepairCriterion
-import Mathlib.LinearAlgebra.Basic
+import Mathlib.LinearAlgebra.Prod
 
 /-!
 # Linear observations: exact invisible directions and additional measurements

@@ -3,7 +3,7 @@ Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED; no root import.
 -/
-import GRWTSK.Logic.InformationLoss.FiniteRankMeasurementLowerBound
+import GRWTSK.Logic.InformationLoss.FiniteRankMeasurementRange
 
 /-!
 # Sharpness under an explicitly supplied linear splitting

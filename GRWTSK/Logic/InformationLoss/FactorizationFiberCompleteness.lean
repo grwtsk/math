@@ -8,6 +8,7 @@ pinned warning-clean elaboration, fresh kernel replay and transitive axioms
 have been checked on an immutable revision.
 -/
 import GRWTSK.Logic.InformationLoss.FactorizationFiber
+import Mathlib.Data.Set.Function
 
 /-!
 # When fiber constancy is sufficient for information reconstruction
@@ -142,7 +143,7 @@ theorem factorsThrough_iff_fiberConstant_of_nonempty_source
     (profile : X → Y) (readout : X → Z) :
     FactorsThrough profile readout ↔
       ∀ x y : X, profile x = profile y → readout x = readout y := by
-  letI : Nonempty Z :=
+  let : Nonempty Z :=
     ⟨readout (Classical.choice (inferInstance : Nonempty X))⟩
   exact factorsThrough_iff_fiberConstant_of_inhabited_target profile readout
 

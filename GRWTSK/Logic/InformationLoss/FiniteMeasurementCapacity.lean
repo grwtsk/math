@@ -6,6 +6,7 @@ Standalone leaf, not imported by GRWTSK.lean.
 -/
 import GRWTSK.Logic.InformationLoss.KernelRestrictedDetection
 import Mathlib.Data.Fintype.Card
+import Mathlib.Data.Fintype.Sets
 
 /-!
 # Finite measurement-capacity lower bound
@@ -40,9 +41,10 @@ theorem restricted_extra_injective_of_paired
   apply Prod.ext
   · have hx : P x.1 = 0 := x.2
     have hy : P y.1 = 0 := y.2
-    simpa [pairedLinearObservation, hx, hy]
+    simp [pairedLinearObservation, hx, hy]
   · exact hxy
 
+open scoped Classical in
 /-- An injective paired observation requires at least as many possible
 extra-measurement outcomes as old invisible source states. No dimension
 formula or finite-field cardinal formula is assumed. -/
