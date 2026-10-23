@@ -36,7 +36,8 @@ theorem canonical_zero_principal_part (z : ZeroPoint) :
   obtain ⟨g, hg, hg0, hfactor⟩ := multiplicity_factorization z
   have hfactor' : riemannZeta =ᶠ[𝓝[≠] z.1]
       fun s => (s - z.1) ^ (multiplicity z : ℤ) * g s := by
-    simpa only [zpow_natCast, smul_eq_mul] using hfactor.filter_mono nhdsWithin_le_nhds
+    filter_upwards [hfactor.filter_mono nhdsWithin_le_nhds] with s hs
+    simpa only [zpow_natCast, smul_eq_mul] using hs
   have hp := logDeriv_principal_part riemannZeta g z.1 (multiplicity z : ℤ)
     hg hg0 hfactor'
   exact ⟨logDeriv g, hp.1, by simpa only [Int.cast_natCast] using hp.2⟩
@@ -63,10 +64,10 @@ theorem zeta_pole_principal_part :
     AnalyticAt ℂ (logDeriv riemannZeta₁) 1 ∧
       logDeriv riemannZeta =ᶠ[𝓝[≠] (1 : ℂ)]
         fun s => (-1 : ℂ) / (s - 1) + logDeriv riemannZeta₁ s := by
-  have hunit : AnalyticAt ℂ riemannZeta₁ 1 := differentiable_riemannZeta₁.analyticAt
+  have hunit : AnalyticAt ℂ riemannZeta₁ 1 := differentiable_riemannZeta₁.analyticAt 1
   refine ⟨hunit.deriv.div hunit (by simp), ?_⟩
-  simpa only [logDeriv_apply, neg_div, one_div] using
-    log_deriv_riemannZeta_eq_neg_inv_sub_add
+  filter_upwards [log_deriv_riemannZeta_eq_neg_inv_sub_add] with s hs
+  simpa only [logDeriv_apply, neg_div, one_div] using hs
 
 /-- The negative logarithmic derivative has coefficient +1 at the pole. -/
 theorem zeta_pole_scaled_limit :

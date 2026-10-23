@@ -1,0 +1,108 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-canonical-four-family-thin-green-matrix-v0.1"
+repository = "grwtsk/math"
+issue = 942
+parent_pr = 1070
+parent_merged = true
+source_fork_on_exact_parent_head = true
+main_base_at_reconciliation = "fcf80a85e518b2a9c60f830f14d83d0d57927878"
+main_tree_at_reconciliation = "6b260ee9c27f76416b837e6474b03ee2217a9b61"
+base_branch = "main"
+base_commit = "dc0d2d7cc6e0f18ac45fd32fcfa1f7e34b25a23a"
+base_tree = "0f142300d9ee7a59219d77067604b86174eb0723"
+branch = "research/rh-fourfamily-thin-green-matrix-942-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyThinGreenMatrix.lean"
+source_blob = "d351831b67611b3a341f8e4181b38382c769994e"
+parent_source = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
+parent_blob = "84fed8973f7c1a1b358711d159713054805a33c2"
+note = "docs/mathematics/NumberTheory/Moebius/canonical-four-family-thin-green-matrix-942.md"
+note_blob = "7d4badb252e952faead6e89d68a195b75d6fb104"
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+require_exact_parent_head = true
+require_reconcile_newer_main_import_closure = true
+require_exact_source_blob = true
+require_pinned_lean_mathlib = true
+require_transitive_imports = true
+require_elaboration = true
+require_kernel_checker = true
+require_type_universe_and_declaration_alignment = true
+require_no_sorry_admit_or_unsafe_axioms = true
+require_print_axiom_closure_and_log = true
+require_independent_replay_receipt = true
+reject_false_Weil_positivity_claim = true
+reject_false_RH_implication_claim = true
+do_not_merge = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyEndpointParity_of_anchor"
+classification = "finite_family_labels"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamily_selected_shift_mem"
+classification = "authentic_shift_support"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamily_anchor_cell_minus_other_eq_coefficient"
+classification = "signed_centered_amplitude_with_defect"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyGreenMatrixApply_eq_divisor"
+classification = "onehot_four_family_coefficient_matrix"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyMatrix_minus_other_eq_positiveAnchored"
+classification = "finite_signed_source_reconstruction"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.vonMangoldt_eq_canonicalFourFamilyMatrix_corrected"
+classification = "exact_vonMangoldt_with_two_defect_channels"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyThinFourierCoordinate_eq_thinGreen"
+classification = "named_thin_green_fourier_mode"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyThinFourierHead_eq_originalThinHead"
+classification = "finite_positive_negative_frequency_shell"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyThinFourierHead_nonneg"
+classification = "scalar_finite_squared_norm_nonnegative_only"
+
+[hostile_controls]
+cases = [
+  "four labels are r in {0,1} and half-shift parity in {0,1}",
+  "each anchored factor selects exactly one family-center cell, not four",
+  "actual shift family is positiveEndpointEvenShiftSet or positiveEndpointOddShiftSet",
+  "matrix uses the original source antidiagonal and signed divisor logarithm",
+  "a=9 other-shift defect with g=2 is nonzero and survives log2 at n=18,X=10",
+  "boundary a=1,2, especially B(3)=log3, cannot be omitted",
+  "complete arithmetic input is matrix times amplitudes MINUS defect PLUS boundary",
+  "complex test phi_k evaluated at n/X-1 with 1/n scalar and original background",
+  "Fourier shells use k=j and k=-(j+1) for 0<=j<N, with no factor two",
+  "historical greenArithmeticFourierHead equality is NOT established by this module",
+  "no all-scale energy smallness or Weil positivity or arithmetic lower frame",
+  "no thin/historical name collision repaired without explicit common-import check"
+]
+
+[finite_diagnostic]
+kind = "exact_prime_log_exponent_integer_vectors"
+X_min = 1
+X_max = 64
+target_cases = 2080
+positive_shift_divisor_factor_cases = 7777
+matrix_identity_failures = 0
+maximum_observed_absolute_other_shift_defect = 12
+mathematical_authority = false

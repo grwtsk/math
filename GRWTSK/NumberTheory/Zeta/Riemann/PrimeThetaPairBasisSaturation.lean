@@ -62,7 +62,8 @@ theorem pairBasisExpansion_eq
           intro i hi
           by_cases hip : i = p
           · subst i
-            simp [pairBasisLeftDelta, pairBasisRightDelta, hq]
+            simp only [pairBasisLeftDelta, pairBasisRightDelta, mul_one, mul_ite, mul_zero]
+            simp [hq]
           · simp [pairBasisLeftDelta, pairBasisRightDelta, hip]
     _ = kernel p q := by
       simp [hp]
@@ -90,7 +91,9 @@ theorem pairBasisAbsoluteExpansionAt_eq
           intro i hi
           by_cases hip : i = p
           · subst i
-            simp [pairBasisLeftDelta, pairBasisRightDelta, hq]
+            simp only [pairBasisLeftDelta, pairBasisRightDelta, mul_one, mul_ite, mul_zero]
+            simp_rw [apply_ite abs]
+            simp [hq]
           · simp [pairBasisLeftDelta, pairBasisRightDelta, hip]
     _ = |kernel p q| := by
       simp [hp]
@@ -122,6 +125,7 @@ theorem pairBasisAbsoluteMass_eq_finiteKernelL1Mass
 def pairBasisFactorIndex (s : Finset α) : Finset (α × α) :=
   s.product s
 
+omit [DecidableEq α] in
 /-- The canonical universal expansion uses exactly `|s|^2` ordered factors. -/
 @[simp]
 theorem pairBasisFactorIndex_card (s : Finset α) :

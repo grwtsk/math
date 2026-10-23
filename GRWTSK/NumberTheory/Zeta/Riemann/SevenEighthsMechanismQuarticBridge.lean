@@ -38,6 +38,8 @@ PRIME_QUARTIC_EXTRACTION_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
+universe u
+
 open Filter Topology
 open GRWTSK.Polynomial.ConjugateQuartic
 
@@ -54,7 +56,7 @@ structure OneWayRawHalfPlaneTransport (σ : ℝ) where
 namespace OneWayRawHalfPlaneTransport
 
 /-- The local theorem term produced by a sound one-way transport. -/
-def localTheorem {σ : ℝ} (transport : OneWayRawHalfPlaneTransport σ) :
+theorem localTheorem {σ : ℝ} (transport : OneWayRawHalfPlaneTransport σ) :
     RiemannZetaZeroFreeRightHalfPlane σ :=
   transport.toLocal transport.externalProof
 
@@ -68,14 +70,14 @@ def toAcceptedPort {σ : ℝ}
     AcceptedExternalRawHalfPlanePort σ where
   review := review
   admissionReady := hready
-  theorem := transport.localTheorem
+  «theorem» := transport.localTheorem
 
 end OneWayRawHalfPlaneTransport
 
 /-- The local proposition adapter for the displayed OpenAI seven-eighths claim.
 This transports a local proof of the aligned proposition; it does not import or
 accept the external proof. -/
-def openAISevenEighthsClaim_toLocal :
+theorem openAISevenEighthsClaim_toLocal :
     OpenAISevenEighthsClaim →
       RiemannZetaZeroFreeRightHalfPlane ((7 : ℝ) / 8) :=
   openAISevenEighthsClaim_iff_local.mp
@@ -208,7 +210,7 @@ theorem openAISevenEighthsMechanismReview_not_admissionReady :
   have htypes :=
     hready .declarationTypesAligned
       (by simp [ExternalMechanismReview.requiredChecks])
-  simpa [ExternalMechanismReview.Has, openAISevenEighthsMechanismReview] using htypes
+  simp [ExternalMechanismReview.Has, openAISevenEighthsMechanismReview] at htypes
 
 /-! ## Proof-relevant mechanism chain -/
 
@@ -233,7 +235,7 @@ structure SevenEighthsMechanismChain where
       RiemannZetaZeroFreeRightHalfPlane ((7 : ℝ) / 8)
 
 /-- Terminal zeta theorem derived from the full proof-relevant chain. -/
-def SevenEighthsMechanismChain.toZeta
+theorem SevenEighthsMechanismChain.toZeta
     (chain : SevenEighthsMechanismChain) :
     RiemannZetaZeroFreeRightHalfPlane ((7 : ℝ) / 8) :=
   chain.familyToZeta
@@ -352,8 +354,10 @@ structure RealBilinearMechanismBridge
 /-- A theorem-level dependency audit bound to the exact theorem term being
 audited.  `closure` is required to be exactly the reflexive-transitive
 dependency closure of `root`; every declaration in it is certified not to be a
-PNT result or an equivalent/stronger circular zero-free supplier. -/
-structure PNTIndependentDependencyAudit (Claim : Prop) where
+PNT result or an equivalent/stronger circular zero-free supplier.
+`Claim` may be proof-relevant: an extraction family retains its actual witness
+data, including the identities and residuals used by downstream proofs. -/
+structure PNTIndependentDependencyAudit (Claim : Sort u) where
   theoremTerm : Claim
   Declaration : Type
   root : Declaration
@@ -383,7 +387,13 @@ inductive PrimeQuarticResidualKey where
   | formComparison
   | quadrature
   | rounding
-  deriving DecidableEq, Fintype, Repr
+  deriving DecidableEq, Repr
+
+instance : Fintype PrimeQuarticResidualKey where
+  elems := {.primePower, .archimedeanGamma, .pole, .trivialZero, .endpoint,
+    .zeroMultiplicity, .omittedTail, .detectorTransport, .involutionTransport,
+    .formComparison, .quadrature, .rounding}
+  complete key := by cases key <;> simp
 
 /-- Complete finite residual ledger.  The total is definitionally tied by a
 proof to the sum over every named key and is the exact error sequence required
@@ -409,7 +419,7 @@ structure QuarticExtractionAtZero (s : ℂ) where
   weight_tendsto : Tendsto weight atTop (𝓝 limitWeight)
 
 /-- The exact all-zero extraction claim audited by a prime-derived supplier. -/
-def PrimeQuarticClaim : Prop :=
+def PrimeQuarticClaim : Type :=
   ∀ s : ℂ, NontrivialZetaZero s → QuarticExtractionAtZero s
 
 /-- Prime-derived nonnegative quartic extraction for every actual nontrivial
@@ -525,7 +535,7 @@ structure PrimeQuarticStep (τ σ : ℝ) where
   pntIndependent : PNTIndependentDependencyAudit (RawDescentClaim τ σ)
 
 /-- The descent theorem term certified by this step's dependency audit. -/
-def PrimeQuarticStep.descend
+theorem PrimeQuarticStep.descend
     {τ σ : ℝ} (step : PrimeQuarticStep τ σ) :
     RawDescentClaim τ σ :=
   step.pntIndependent.theoremTerm
@@ -542,7 +552,7 @@ structure CofinalPrimeQuarticDescent where
     ∀ x : ℝ, (1 / 2 : ℝ) < x → ∃ n, threshold n < x
 
 /-- Every stage of a descent tower inherits raw nonvanishing. -/
-def CofinalPrimeQuarticDescent.zeroFreeAt
+theorem CofinalPrimeQuarticDescent.zeroFreeAt
     (tower : CofinalPrimeQuarticDescent) :
     ∀ n, RiemannZetaZeroFreeRightHalfPlane (tower.threshold n)
   | 0 => tower.initial

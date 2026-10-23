@@ -49,7 +49,7 @@ theorem realAnglePolar_norm (θ : ℝ) {r : ℝ} (hr : 0 ≤ r) :
 def realAnglePolarDisk (θ : ℝ) (r : unitInterval) :
     ClosedComplexUnitDisk :=
   ⟨realAnglePolar θ r, by
-    change ‖realAnglePolar θ r‖ ≤ 1
+    rw [Metric.mem_closedBall, dist_zero_right]
     rw [realAnglePolar_norm θ r.property.1]
     exact r.property.2⟩
 

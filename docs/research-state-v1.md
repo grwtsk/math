@@ -10,7 +10,7 @@ The maintained model is
 Its declarations live in `GRWTSK.Logic.StateTransition.ResearchState`.
 The adjacent `ResearchStateExamples` module supplies finite demonstrations and
 hostile controls. The static replay contract is
-`verification/research-state-v1.toml`. Execution logs, source custody, feedback
+`docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchStateExamples/research-state-v1.toml`. Execution logs, source custody, feedback
 serialization, and publication state belong to `grwtsk/noeaaeue`.
 
 ## Exact propositions and source identities

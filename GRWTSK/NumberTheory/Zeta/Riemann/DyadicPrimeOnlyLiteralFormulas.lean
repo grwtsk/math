@@ -89,7 +89,6 @@ theorem primeOnlyMass1_eq_logMass_div_sub_harmonic
     rw [coefficient_eq_log_div_of_prime hp]
     unfold location
     field_simp [hp0, hX0]
-    ring
   rw [hsum, Finset.sum_div]
 
 /-- Exact endpoint cancellation. -/
@@ -107,7 +106,7 @@ theorem primeWindowLogMass_eq_theta_sub
     primeWindowLogMass X =
       θ (((2 * X : ℕ) : ℝ)) - θ ((X : ℕ) : ℝ) := by
   unfold primeWindowLogMass window
-  simp only [Chebyshev.theta, floor_natCast]
+  simp only [Chebyshev.theta, Nat.floor_natCast]
   have hle₀X : 0 ≤ X := Nat.zero_le X
   have hleX2X : X ≤ 2 * X := by omega
   have hunion :
@@ -194,7 +193,7 @@ theorem greenPrimeOnlyArithmeticFourierCoordinate_eq_literal
       greenFourierBackgroundCoordinate k -
         primeLogWeightedDFTDiscrepancy X k /
           (-2 * Real.pi * Complex.I * k) := by
-  rw [greenPrimeOnlyArithmeticFourierCoordinate, dif_neg hk]
+  rw [greenPrimeOnlyArithmeticFourierCoordinate, if_neg hk]
   rw [greenPrimeOnlyFourierPrimeCoordinate_eq_logWeightedDFT]
 
 end GRWTSK.RiemannHypothesis

@@ -131,8 +131,8 @@ theorem parityFourierEndpointMajorant_eq_zero_add_nonzero
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
-  rw [← Finset.mul_sum]
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
+  rw [← mul_add]
   congr 1
   rw [Finset.sum_eq_sum_sdiff_singleton_add
     (Finset.mem_univ (0 : ZMod (d * d)))]
@@ -156,7 +156,7 @@ theorem effectiveSquareModulusReciprocalMass_le_two
   unfold effectiveSquareModulusReciprocalMass
     effectiveEndpointSquareModulusSet
   by_cases hb : b ≤ 2
-  · interval_cases b <;> norm_num
+  · interval_cases b <;> norm_num [Finset.filter_singleton]
   · have hb2 : 2 ≤ b - 1 := by omega
     calc
       (∑ d ∈ (Finset.Ico 1 b).filter (fun d => d * d < b),
@@ -182,9 +182,11 @@ theorem effectiveSquareModulusReciprocalMass_le_two
             gcongr
             simpa [pow_two] using
               (sum_Ioc_inv_sq_le_sub (α := ℝ)
-                (k := 1) (n := b - 1) one_ne_zero hb2)
+                (k := 1) (n := b - 1) one_ne_zero (by omega))
       _ ≤ 2 := by
-            positivity
+            have h := inv_nonneg.mpr (Nat.cast_nonneg (b - 1) : (0 : ℝ) ≤ _)
+            norm_num only [inv_one] at *
+            linarith
 
 /-- Each parity squarefree diagonal is nonnegative. -/
 theorem paritySquarefreeDiagonal_nonneg
@@ -205,7 +207,9 @@ theorem paritySquarefreeDiagonal_le_endpoint
         apply Finset.sum_le_sum
         intro u _hu
         have hmu := abs_moebiusReal_le_one u
-        nlinarith [sq_nonneg (moebiusReal u)]
+        have hm := abs_le.mp hmu
+        nlinarith [mul_nonneg (by linarith : 0 ≤ 1 - moebiusReal u)
+          (by linarith : 0 ≤ 1 + moebiusReal u)]
     _ = (((Finset.Icc 1 b).filter (fun u => u % 2 = r)).card : ℝ) := by
         simp
     _ ≤ b := by
@@ -215,7 +219,7 @@ theorem paritySquarefreeDiagonal_le_endpoint
               (Finset.Icc 1 b).card :=
             Finset.card_le_card (Finset.filter_subset _ _)
           _ ≤ b := by
-            simp [Finset.card_Icc]
+            simp [Nat.card_Icc]
 
 /-- Ordinary real Mertens prefix on positive integers up to the endpoint. -/
 def ordinaryMertensPrefix (b : ℕ) : ℝ :=
@@ -234,13 +238,16 @@ theorem ordinaryMertensPrefix_eq_even_add_odd
           (Finset.Icc 1 b).filter (fun u => u % 2 = 1) =
         Finset.Icc 1 b := by
     ext u
-    simp
+    have hmod := Nat.mod_lt u (by omega : 0 < 2)
+    simp only [Finset.mem_union, Finset.mem_filter, Finset.mem_Icc]
     omega
   have hdisj :
       Disjoint
         ((Finset.Icc 1 b).filter (fun u => u % 2 = 0))
         ((Finset.Icc 1 b).filter (fun u => u % 2 = 1)) := by
-    simp [Finset.disjoint_left]
+    simp only [Finset.disjoint_left, Finset.mem_filter]
+    intro a ha hb
+    omega
   rw [← Finset.sum_union hdisj, hcover]
 
 /-- RH-scale dyadic square-energy hypothesis for parity-restricted Mertens
@@ -316,7 +323,8 @@ theorem zeroModeParityFourierBudget_of_parityMertensSquareRootEnergy
     have hI := Finset.mem_Ico.mp hb
     dsimp [X]
     rw [pow_succ] at hI
-    exact_mod_cast (Nat.le_of_lt hI.2)
+    have h := Nat.le_of_lt hI.2
+    exact_mod_cast (by simpa [mul_comm] using h : b ≤ 2 * 2 ^ j)
   have hquad :
       parityFourierZeroModeQuadraticMajorant b ≤
         (C + 2) * X * (X ^ δ) := by
@@ -331,14 +339,14 @@ theorem zeroModeParityFourierBudget_of_parityMertensSquareRootEnergy
         ‖((parityMertensPrefix b 0 : ℂ) ^ 2 -
             (paritySquarefreeDiagonal b 0 : ℂ))‖ ≤
           C * X * (X ^ δ) + 2 * X * (X ^ δ) := by
-      rw [Complex.norm_real]
+      rw [← Complex.ofReal_pow, ← Complex.ofReal_sub, Complex.norm_real]
       apply abs_le.2
       constructor <;> nlinarith
     have hz1 :
         ‖((parityMertensPrefix b 1 : ℂ) ^ 2 -
             (paritySquarefreeDiagonal b 1 : ℂ))‖ ≤
           C * X * (X ^ δ) + 2 * X * (X ^ δ) := by
-      rw [Complex.norm_real]
+      rw [← Complex.ofReal_pow, ← Complex.ofReal_sub, Complex.norm_real]
       apply abs_le.2
       constructor <;> nlinarith
     nlinarith

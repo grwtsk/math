@@ -60,15 +60,15 @@ lack supplied individual method identities.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PathOccurrences.lean),
 [positive consumers](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PathOccurrences.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json)
+and native receipt (artifact:gitblob:437fa624f14cc2060efc88d16afb01a4578e01d2)
 bind the exact selected source and controls. Pinned Lean 4.33.0 checks fresh
 project objects at trust zero with fatal warnings and a complete owned-declaration
 and transitive-axiom census. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted. Pinned dependency objects are reused and fingerprinted, rather
 than rebuilt from source.
 
-The [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json)
-and [source review](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json)
+The integration record (artifact:gitblob:aa168d97a0a6104281c4a3b2fb26acda128e348c)
+and source review (artifact:gitblob:deecd189f5f80f14aa949413132a3ba7c9db8fa4)
 preserve exact upstream API identities and the limits of transfer from
 Anthropic's optional-weight-per-vertex-pair model. Source review is correlated
 model review; it is not independent validation. No whole-library or operational

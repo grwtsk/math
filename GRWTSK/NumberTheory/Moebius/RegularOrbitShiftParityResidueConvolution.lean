@@ -116,6 +116,7 @@ theorem parityEvenHalfShiftSignedResidueFourier_eq_sum_affineTwists
   classical
   unfold parityEvenHalfShiftSignedResidueFourier
     parityEvenHalfShiftSignedResidueBucket
+  simp_rw [Finset.sum_mul]
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
@@ -132,6 +133,7 @@ theorem parityOddHalfShiftSignedResidueFourier_eq_sum_affineTwists
   classical
   unfold parityOddHalfShiftSignedResidueFourier
     parityOddHalfShiftSignedResidueBucket
+  simp_rw [Finset.sum_mul]
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
@@ -198,7 +200,7 @@ def twoNonunitRegularShiftParityResidueEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         (((d * d : ℕ) : ℝ))⁻¹ *
           ∑ k ∈ twoKernelRegularOrbitRepresentativeSet d,
@@ -219,7 +221,7 @@ theorem twoNonunitCanonicalRegularOrbitEndpointMajorant_eq_shiftParityResidue
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hNonunit : TwoNonunitSquareModulusParameter d
   · simp only [hNonunit, dif_pos]
     refine congrArg

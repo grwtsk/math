@@ -33,7 +33,8 @@ FOURIER_MODES_ADMISSIBLE_COMPLEX_TESTS_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open MeasureTheory Set
+open _root_.MeasureTheory Set
+open Real
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
@@ -52,9 +53,9 @@ theorem fourierModePrimitive_hasDerivAt
     {k : ℤ} (hk : k ≠ 0) (t : ℝ) :
     HasDerivAt (fourierModePrimitive k)
       (fourierModeSlope k t) t := by
-  simpa [fourierModePrimitive, fourierModeSlope] using
+  convert!
     (has_antideriv_at_fourier_neg
-      (T := (1 : ℝ)) (Fact.mk zero_lt_one) hk t)
+      (T := (1 : ℝ)) (Fact.mk zero_lt_one) hk t) using 1
 
 theorem fourierModeValue_hasDerivAt
     {k : ℤ} (hk : k ≠ 0) (t : ℝ) :
@@ -79,7 +80,7 @@ theorem fourierModeValue_one (k : ℤ) :
   unfold fourierModeValue fourierModePrimitive
   have hperiod :
       ((1 : ℝ) : AddCircle (1 : ℝ)) = 0 := by
-    simpa using (AddCircle.coe_period (p := (1 : ℝ)))
+    exact AddCircle.coe_period (p := (1 : ℝ))
   rw [hperiod]
   simp
 
@@ -87,7 +88,7 @@ def fourierModeComplexTest (k : ℤ) (hk : k ≠ 0) : ComplexTest where
   value := fourierModeValue k
   slope := fourierModeSlope k
   slope_continuous := (fourierModeSlope_continuous k).continuousOn
-  hasDeriv := fun t ht => fourierModeValue_hasDerivAt hk t
+  hasDeriv := fun t _ht => fourierModeValue_hasDerivAt hk t
 
 @[simp]
 theorem fourierModeComplexTest_value_zero
@@ -112,17 +113,17 @@ theorem greenResidualFourierCoeff_eq_unit_pairing
   rw [← GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.unit_integral_eq_interval]
   apply integral_congr_ae
   filter_upwards with t
-  simp [greenResidualComplex, fourierModeSlope, mul_comm, smul_eq_mul]
+  simp [greenResidualComplex, fourierModeSlope, mul_comm]
 
 theorem action_fourierModeComplexTest_eq_neg_fourierCoeff
     {X : ℕ} (hX : 0 < X)
     {k : ℤ} (hk : k ≠ 0) :
     action X (fourierModeComplexTest k hk).value =
       -greenResidualFourierCoeff X k := by
-  rw [ComplexReadout.centered_ibp
+  rw [GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.centered_ibp
     (fourierModeComplexTest k hk) hX]
   simp only [fourierModeComplexTest_value_zero,
-    fourierModeComplexTest_value_one, zero_mul, sub_zero]
+    fourierModeComplexTest_value_one, zero_mul, sub_zero, zero_add, zero_sub]
   rw [greenResidualFourierCoeff_eq_unit_pairing]
   congr 1
   apply integral_congr_ae

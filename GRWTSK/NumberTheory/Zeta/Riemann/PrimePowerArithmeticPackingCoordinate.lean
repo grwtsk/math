@@ -126,8 +126,8 @@ structure PrimePowerCoordinateRecurrence
     Local → ℕ → ThreePointPackingState IsPrimePowerEventValue →
       PrimePowerEvent
   next_order :
-    ∀ local n state,
-      state.thirdSource < (nextEvent local n state).natValue
+    ∀ localData n state,
+      state.thirdSource < (nextEvent localData n state).natValue
 
 namespace PrimePowerCoordinateRecurrence
 
@@ -162,12 +162,12 @@ def toPackingProgram
   accepted := data.accepted
   IsPrimePowerSource := IsPrimePowerEventValue
   initial := fun _ => data.initialState
-  nextPoint := fun local n state =>
-    data.weight.packingPoint (data.nextEvent local n state)
-  nextSource := fun local n state =>
-    (data.nextEvent local n state).natValue
-  nextSource_ok := fun local n state =>
-    ⟨data.nextEvent local n state, rfl⟩
+  nextPoint := fun localData n state =>
+    data.weight.packingPoint (data.nextEvent localData n state)
+  nextSource := fun localData n state =>
+    (data.nextEvent localData n state).natValue
+  nextSource_ok := fun localData n state =>
+    ⟨data.nextEvent localData n state, rfl⟩
 
 /-- The generated recurrence's new point is definitionally the canonical
 weighted coordinate of the selected next prime-power event. -/
@@ -178,10 +178,10 @@ theorem nextPoint_eq_weighted_primePower_coordinate
     [Module ℝ Source] [Module ℝ Local]
     [TopologicalSpace Source] [TopologicalSpace Local]
     (data : PrimePowerCoordinateRecurrence Source Local)
-    (local : Local) (n : ℕ)
+    (localData : Local) (n : ℕ)
     (state : ThreePointPackingState IsPrimePowerEventValue) :
-    data.toPackingProgram.nextPoint local n state =
-      data.weight.packingPoint (data.nextEvent local n state) := by
+    data.toPackingProgram.nextPoint localData n state =
+      data.weight.packingPoint (data.nextEvent localData n state) := by
   rfl
 
 /-- The generated source label is the actual natural prime-power value. -/
@@ -192,10 +192,10 @@ theorem nextSource_eq_primePower_value
     [Module ℝ Source] [Module ℝ Local]
     [TopologicalSpace Source] [TopologicalSpace Local]
     (data : PrimePowerCoordinateRecurrence Source Local)
-    (local : Local) (n : ℕ)
+    (localData : Local) (n : ℕ)
     (state : ThreePointPackingState IsPrimePowerEventValue) :
-    data.toPackingProgram.nextSource local n state =
-      (data.nextEvent local n state).natValue := by
+    data.toPackingProgram.nextSource localData n state =
+      (data.nextEvent localData n state).natValue := by
   rfl
 
 /-- The selected next event strictly advances beyond the current third source
@@ -206,11 +206,11 @@ theorem nextEvent_strictly_advances
     [Module ℝ Source] [Module ℝ Local]
     [TopologicalSpace Source] [TopologicalSpace Local]
     (data : PrimePowerCoordinateRecurrence Source Local)
-    (local : Local) (n : ℕ)
+    (localData : Local) (n : ℕ)
     (state : ThreePointPackingState IsPrimePowerEventValue) :
     state.thirdSource <
-      data.toPackingProgram.nextSource local n state :=
-  data.next_order local n state
+      data.toPackingProgram.nextSource localData n state :=
+  data.next_order localData n state
 
 end PrimePowerCoordinateRecurrence
 

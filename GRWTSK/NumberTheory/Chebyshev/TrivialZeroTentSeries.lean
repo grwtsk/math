@@ -49,7 +49,7 @@ theorem density_trivialPoint {t : ℝ} (ht : 0 < t) (k : ℕ) :
     simp only [trivialPoint, Nat.cast_add, Nat.cast_mul, Nat.cast_ofNat]
     ring
   rw [density, he, neg_mul, Complex.exp_neg, Complex.exp_nat_mul, exp_real_log ht]
-  push_cast <;> simp only [pow_add, pow_mul, one_div, mul_inv_rev, inv_pow] <;> ring
+  push_cast; simp only [pow_add, pow_mul, one_div, mul_inv_rev, inv_pow]
 
 theorem powerWeight_intervalIntegrable (x h : ℝ) (k : ℕ) {a b : ℝ}
     (ha : 1 < a) (hab : a ≤ b) :
@@ -86,8 +86,9 @@ theorem tentKernel_trivialPoint (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) (k : �
     apply intervalIntegral.integral_congr
     intro t ht
     have ht' : t ∈ Icc (x - h) x := (uIcc_of_le hl) ▸ ht
+    dsimp only
     rw [density_trivialPoint ((lt_trans zero_lt_one ha).trans_le ht'.1) k]
-    push_cast <;> rfl
+    push_cast; rfl
   have hright : (∫ t in x..(x + h), (tent x h t : ℂ) * density (trivialPoint k) t) =
       ((∫ t in x..(x + h),
         tent x h t * ((1 / t ^ 3) * (1 / t ^ 2) ^ k) : ℝ) : ℂ) := by
@@ -95,8 +96,9 @@ theorem tentKernel_trivialPoint (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) (k : �
     apply intervalIntegral.integral_congr
     intro t ht
     have ht' : t ∈ Icc x (x + h) := (uIcc_of_le hr) ▸ ht
+    dsimp only
     rw [density_trivialPoint ((lt_trans zero_lt_one hx).trans_le ht'.1) k]
-    push_cast <;> rfl
+    push_cast; rfl
   rw [tentKernel_eq_split_integral x h hh ha, hleft, hright, ← Complex.ofReal_add,
     intervalIntegral.integral_add_adjacent_intervals
       (powerWeight_intervalIntegrable x h k ha hl)

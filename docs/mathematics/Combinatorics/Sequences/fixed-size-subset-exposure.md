@@ -14,7 +14,7 @@ This supplies the two-stage sampling step in Section 4 of Pham and Sauermann, [a
 
 ## Verification and credit
 
-The [fresh selected receipt](../../../../.noeaaeue/evidence/Analysis/fourier/larger-slice-checks-2026-10-16.json) binds the exact source bytes and pinned environment. It freshly rebuilds the complete 22-module local project closure with trust zero and fatal warnings, compiles the positive consumer, verifies both intended rejections and audits all 761 owned declarations, including private and generated declarations. Only `propext`, `Classical.choice` and `Quot.sound` are permitted. Cached dependency source provenance and whole-library acceptance are outside this selected receipt. Historical records retain their original scope and bytes.
+The fresh selected receipt (artifact:gitblob:e80bd000264db3cc8c09f285808344be62e9680e) binds the exact source bytes and pinned environment. It freshly rebuilds the complete 22-module local project closure with trust zero and fatal warnings, compiles the positive consumer, verifies both intended rejections and audits all 761 owned declarations, including private and generated declarations. Only `propext`, `Classical.choice` and `Quot.sound` are permitted. Cached dependency source provenance and whole-library acceptance are outside this selected receipt. Historical records retain their original scope and bytes.
 
 Original mathematical argument: Huy Tuan Pham and Lisa Sauermann. Human mathematical direction: grwtsk contributors. Lean implementation: OpenAI Codex. Mathlib authorship and licensing retained; no originality claim.
 

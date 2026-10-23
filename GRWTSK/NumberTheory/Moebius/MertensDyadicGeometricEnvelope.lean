@@ -69,8 +69,7 @@ theorem dyadicMertensSquareRootEpsilonScale_sq
     rw [← Real.rpow_mul hX0]
     congr 1
     ring
-  unfold dyadicMertensSquareRootEpsilonScale
-  fold X
+  change (Real.sqrt X * X ^ (δ / 4)) ^ 2 = X * X ^ (δ / 2)
   rw [mul_pow, hsqrt, hrpow]
 
 /-- After squaring, the `delta/4` envelope loss fits inside the target
@@ -83,7 +82,7 @@ theorem dyadicMertensSquareRootEpsilonScale_sq_le_target
   rw [dyadicMertensSquareRootEpsilonScale_sq]
   apply mul_le_mul_of_nonneg_left ?_ (by positivity)
   have hX : 1 ≤ (((2 ^ j : ℕ) : ℝ)) := by
-    exact_mod_cast (show 1 ≤ 2 ^ j by positivity)
+    exact_mod_cast (Nat.one_le_iff_ne_zero.mpr (pow_ne_zero j (by omega : (2 : ℕ) ≠ 0)))
   exact Real.rpow_le_rpow_of_exponent_le hX (by linarith)
 
 /-- A finite geometric sum is bounded by the complete geometric mass.
@@ -95,7 +94,7 @@ theorem finiteGeometricSum_le_invOneSub
     (L : ℕ) :
     (∑ t ∈ Finset.range L, ρ ^ t) ≤ (1 - ρ)⁻¹ := by
   have hden : 0 < 1 - ρ := sub_pos.mpr hρ1
-  rw [show (1 - ρ)⁻¹ = 1 / (1 - ρ) by rfl]
+  rw [show (1 - ρ)⁻¹ = 1 / (1 - ρ) by simp]
   apply (le_div_iff₀ hden).2
   rw [geom_sum_mul_neg]
   exact sub_le_self 1 (pow_nonneg hρ0 L)
@@ -150,7 +149,7 @@ theorem sq_tail_le_dyadic_target_of_geometric
     {T C ρ : ℝ} (j : ℕ) {δ : ℝ}
     (hδ : 0 ≤ δ)
     (hT0 : 0 ≤ T) (hC : 0 ≤ C)
-    (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1)
+    (_hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1)
     (hT : T ≤
       C * dyadicMertensSquareRootEpsilonScale j δ * (1 - ρ)⁻¹) :
     T ^ 2 ≤

@@ -29,7 +29,7 @@ hash-injectivity hypothesis or assumed serializer law.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/IndexedDictionary.lean),
 [consumer controls](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/IndexedDictionary.lean),
-and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json)
+and selected native receipt (artifact:gitblob:b5a95d344f418e620982093ac8e0e27661cd22ea)
 bind the exact definitions and theorem types. The missing-reference negative
 control is rejected at its intended type. Replay uses pinned Lean 4.33.0,
 trust zero, fatal warnings and the complete owned-declaration/transitive-axiom
@@ -38,7 +38,7 @@ and `Quot.sound` are allowed. Pinned dependency objects are fingerprinted and
 reused, without whole-repository or independent-review acceptance.
 
 The [revision theorems](dictionary-revision.md) state the premises needed when
-the dictionary changes. The [repository cache](../../../../.noeaaeue/documentation/reference/content-cache.md)
+the dictionary changes. The repository cache (artifact:gitblob:2304c61045278f7e7ef9b09be4a2ba4367c2b984)
 uses content-addressed compressed byte objects and separately tested adapters;
 the list codec does not prove SHA-256 injectivity, zlib correctness, filesystem
 transactions, semantic equivalence of different theorem statements, or the

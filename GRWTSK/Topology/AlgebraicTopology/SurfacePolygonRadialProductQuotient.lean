@@ -24,9 +24,11 @@ No standard disk or topological CW pushout is constructed here.
 
 set_option autoImplicit false
 noncomputable section
+open Topology
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialProductQuotient
 
+open _root_.Topology
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
@@ -42,21 +44,22 @@ local instance cornerDiscreteTopology (k : ℕ) :
 
 /-- Source compactness comes from a finite side index and a compact
 real unit interval; both source parameters remain real intervals. -/
-private def boundaryPointCompact (k : ℕ) : CompactSpace (BoundaryPoint k) := by
+private theorem boundaryPointCompact (k : ℕ) : CompactSpace (BoundaryPoint k) := by
   infer_instance
 
 /-- The actual unpaired polygon perimeter has Hausdorff topology:
 the angular map is a continuous injection into the genuine AddCircle. -/
-private def perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) :=
-  T2Space.of_injective_continuous
+private theorem perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) := by
+  let : Fact (0 < angularPeriod k) := ⟨angularPeriod_pos k⟩
+  exact T2Space.of_injective_continuous
     (perimeterAngle_injective k)
     (perimeterAngle_continuous k)
 
 /-- Product source compactness follows from compactness of the same
 exact finite family of interval copies and the radial unit interval. -/
-private def radialProductCompact (k : ℕ) :
+private theorem radialProductCompact (k : ℕ) :
     CompactSpace (BoundaryPoint k × unitInterval) := by
-  letI : CompactSpace (BoundaryPoint k) := boundaryPointCompact k
+  let : CompactSpace (BoundaryPoint k) := boundaryPointCompact k
   infer_instance
 
 /-- The literal perimeter quotient product with the identity map on
@@ -81,9 +84,9 @@ compact-source/Hausdorff-target criterion, NOT by treating all
 quotient maps as stable under arbitrary products. -/
 theorem perimeterProductProjection_isQuotientMap (k : ℕ) :
     IsQuotientMap (perimeterProductProjection k) := by
-  letI : CompactSpace (BoundaryPoint k × unitInterval) :=
+  let : CompactSpace (BoundaryPoint k × unitInterval) :=
     radialProductCompact k
-  letI : T2Space (UnpairedPerimeter k) := perimeterT2 k
+  let : T2Space (UnpairedPerimeter k) := perimeterT2 k
   exact Topology.IsQuotientMap.of_surjective_continuous
     (perimeterProductProjection_surjective k)
     (perimeterProductProjection_continuous k)

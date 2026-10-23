@@ -92,7 +92,8 @@ theorem one_pole_subtraction (f A : ℂ → ℂ) (a c : ℂ)
     by_cases hza : z = a
     · subst z
       simp only [g, Function.update_self]
-    · rw [g, Function.update_of_ne hza, hz hza]
+    · change Function.update (fun z => f z - c / (z - a)) a (A a) z = A z
+      rw [Function.update_of_ne hza, hz hza]
       ring
   exact ⟨g, hA.congr hnear.symm, fun z hz => Function.update_of_ne hz _ _⟩
 

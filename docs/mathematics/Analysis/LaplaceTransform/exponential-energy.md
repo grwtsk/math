@@ -46,7 +46,7 @@ All twenty-eight raw type and metadata records and the twenty-seven other comple
 
 The native qualification covers these exact frozen owners and consumers. Other reverse consumers, the whole project and the full consumer replay remain unqualified by this result. The assumed arithmetic growth supplier and unconditional RH remain open. Original receipts keep their original source scopes; the documentation registry does not promote this page to a public fresh-selected theorem view.
 
-Human mathematical direction: grwtsk contributors. Formalization and documentation assistance: OpenAI Codex. The local source is Copyright (c) 2026 grwtsk contributors, MIT. Mathlib results retain their upstream authorship and Apache-2.0 license. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md).
+Human mathematical direction: grwtsk contributors. Formalization and documentation assistance: OpenAI Codex. The local source is Copyright (c) 2026 grwtsk contributors, MIT. Mathlib results retain their upstream authorship and Apache-2.0 license. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f).
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

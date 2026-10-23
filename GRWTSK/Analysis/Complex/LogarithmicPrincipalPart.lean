@@ -1,7 +1,9 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import Mathlib.Analysis.Complex.Basic
 import Mathlib.Analysis.Analytic.Order
+import Mathlib.Analysis.Calculus.Deriv.ZPow
 import Mathlib.Analysis.Calculus.LogDeriv
 import Mathlib.Tactic.FunProp
 import Mathlib.Tactic.FieldSimp
@@ -36,17 +38,17 @@ theorem logDeriv_principal_part (f g : ℂ → ℂ) (a : ℂ) (k : ℤ)
       logDeriv f =ᶠ[𝓝[≠] a] fun s => (k : ℂ) / (s - a) + logDeriv g s := by
   have hregular : AnalyticAt ℂ (logDeriv g) a := hg.deriv.div hg hg0
   refine ⟨hregular, ?_⟩
-  have hunit := hg.eventually_analyticAt.filter_mono nhdsWithin_le_nhds
-  have hnonzero := (hg.continuousAt.tendsto.eventually_ne hg0).filter_mono
+  have hunit : ∀ᶠ s in 𝓝[≠] a, AnalyticAt ℂ g s := hg.eventually_analyticAt.filter_mono nhdsWithin_le_nhds
+  have hnonzero : ∀ᶠ s in 𝓝[≠] a, g s ≠ 0 := (hg.continuousAt.tendsto.eventually_ne hg0).filter_mono
     nhdsWithin_le_nhds
   filter_upwards [logDeriv_congr_nhdsNE hfactor, hunit, hnonzero,
     self_mem_nhdsWithin] with s heq hgs hgs0 hsa
   have hs0 : s - a ≠ 0 := sub_ne_zero.mpr (by simpa using hsa)
   have hpower : logDeriv (fun u : ℂ => (u - a) ^ k) s = (k : ℂ) / (s - a) := by
     rw [logDeriv_fun_zpow (by fun_prop : DifferentiableAt ℂ (fun u : ℂ => u - a) s) k]
-    simp [logDeriv_apply, mul_one_div]
-  rw [heq, logDeriv_mul s (zpow_ne_zero k hs0) hgs0
-    (by fun_prop (disch := assumption)) hgs.differentiableAt, hpower]
+    simp [logDeriv_apply, div_eq_mul_inv]
+  rw [heq, logDeriv_mul (f := fun u : ℂ => (u - a) ^ k) (g := g) s (zpow_ne_zero k hs0) hgs0
+    (((hasDerivAt_id s).sub_const a).differentiableAt.zpow (Or.inl hs0)) hgs.differentiableAt, hpower]
 
 /-- A punctured principal-part identity gives the signed coefficient by a
 limit. The function's assigned center value is irrelevant to this statement. -/
@@ -64,7 +66,7 @@ theorem tendsto_scaled_neg_logDeriv_of_principal_part
   have hs0 : s - a ≠ 0 := sub_ne_zero.mpr (by simpa using hsa)
   rw [hs]
   field_simp [hs0]
-  <;> ring
+  ; ring
 
 /-- Negative logDeriv has coefficient -k: zeros and poles have opposite signs. -/
 theorem tendsto_scaled_neg_logDeriv_of_factorization

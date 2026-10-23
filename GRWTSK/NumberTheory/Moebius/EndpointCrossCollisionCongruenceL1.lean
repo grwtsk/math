@@ -44,7 +44,6 @@ theorem abs_moebiusReal_le_one
     (d : ℕ) :
     |moebiusReal d| ≤ 1 := by
   unfold moebiusReal
-  change |((ArithmeticFunction.moebius d : ℤ) : ℝ)| ≤ 1
   rw [← Int.cast_abs]
   norm_cast
   exact ArithmeticFunction.abs_moebius_le_one
@@ -106,7 +105,7 @@ four from the inherited endpoint weight and two from the two oriented
 cross-collision strata. -/
 def weightedMertensEndpointCrossCongruenceL1Majorant
     (j : ℕ) : ℝ :=
-  8 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  8 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointCrossCongruenceL1Mass b
 
@@ -135,10 +134,10 @@ theorem weightedMertensEndpointCrossCollisionEnergy_le_congruenceL1Majorant
   unfold weightedMertensEndpointCrossCollisionCongruenceFibreEnergy
     weightedMertensEndpointCrossCongruenceL1Majorant
   calc
-    4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+    4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
           mertensEndpointCrossCollisionCongruenceFibreEnergy b ≤
-      4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+      4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
           (2 * mertensEndpointCrossCongruenceL1Mass b) := by
       apply mul_le_mul_of_nonneg_left ?_ (by norm_num)
@@ -152,9 +151,12 @@ theorem weightedMertensEndpointCrossCollisionEnergy_le_congruenceL1Majorant
         mul_le_mul_of_nonneg_left
           (mertensEndpointCrossCollisionCongruenceFibreEnergy_le_l1 b)
           (reciprocalEndpointDrop_nonneg hbpos)
-    _ = 8 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+    _ = 8 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
           mertensEndpointCrossCongruenceL1Mass b := by
+      simp_rw [Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro b _hb
       ring
 
 /-- Explicit all-scale arithmetic-progression supplier.  It requires
@@ -174,6 +176,7 @@ theorem subpolynomialWeightedMertensEndpointCongruenceCrossCollision_of_l1
   obtain ⟨C, hC, hscale⟩ := hL1 δ hδ
   refine ⟨C, hC, ?_⟩
   intro j
+  rw [← weightedMertensEndpointCrossCollisionEnergy_eq_congruenceFibres]
   exact
     (weightedMertensEndpointCrossCollisionEnergy_le_congruenceL1Majorant j).trans
       (hscale j)

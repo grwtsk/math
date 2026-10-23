@@ -133,6 +133,6 @@ These geometric and arithmetic steps are not replaced by the optional finite alg
 
 ## 6. Verification boundary
 
-Additive files only: the new Lean source, this note, and one passive `verification/finite-trace-fourier-support-665-v0.1.toml` manifest. No root imports, toolchain, Lake manifest, external executor, native/VM run, cache, CI workflows or earlier PRs are changed.
+Additive files only: the new Lean source, this note, and one passive `docs/verification/Analysis/Fourier/FiniteTraceFourierSupport/finite-trace-fourier-support-665-v0.1.toml` manifest. No root imports, toolchain, Lake manifest, external executor, native/VM run, cache, CI workflows or earlier PRs are changed.
 
 Static source review may inventory names and compare blobs to the passive manifest, but successful elaboration, generated declaration coverage, trust/axiom checks and external verification receipts remain **NOT_RUN / NOT_KERNEL_AUDITED**. Issue #665 and its draft PR are not to be closed or merged on the strength of source text alone.

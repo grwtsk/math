@@ -3,7 +3,7 @@
 The maintained source links use the current PMD placement. Earlier verification
 receipts retain their recorded source paths, bytes and tool context. Fresh
 proof replay of the relocated context remains pending; see the
-[source relocation scope](../../../../../.noeaaeue/documentation/reference/source-layout.md#pmd-source-tree).
+source relocation scope (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3#pmd-source-tree).
 
 A proposed damped finite-window construction supplies candidate finite-window L1/L2, exact integral-kernel, distribution-to-L2 Fourier and angular normalization adapters. It remains unelaborated, outside the library and without a native axiom audit. The [prime-product debt record](../../../NumberTheory/Moebius/Laplace/finite-product-debt.md) now gives the written finite-to-infinite argument: the extended half-line energy is the supremum of all finite recording energies; its complete omitted tail is infinite at every finite cutoff if the total energy is infinite. A finite total gives L2 tail convergence. A paid smaller positive damping gives an explicit uniform angular-kernel tail estimate by Cauchy--Schwarz. These conditional limit arguments retain the independent all-rate premise; they do not supply it. Historical checked reductions, written arguments, candidate scripts and independent acceptance remain separate statuses.
 
@@ -14,7 +14,7 @@ Retain every ordered cross term and its source/sign/phase. The first Hilbert-inn
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/Analysis/Fourier/WindowCertificates.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/Analysis/Fourier/WindowCertificates.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 The source binding was updated after history integration. Earlier proof receipts retain their original bytes; this page does not assert fresh acceptance of the updated source.
 

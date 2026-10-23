@@ -93,7 +93,9 @@ theorem partial_le_budget_div_factor
     cumulative.quarticFactor_pos
   have hlower := cumulative.quarticFactor_mul_partial_le N
   have hbudget := cumulative.occupiedPartial_le N
-  exact (le_div_iff₀ hfactor).2 (hlower.trans hbudget)
+  apply (le_div_iff₀ hfactor).2
+  convert! hlower.trans hbudget using 1
+  · exact mul_comm _ _
 
 /-- The required divergent common lower mass is impossible for the raw safe
 dyadic packing. -/
@@ -107,8 +109,8 @@ end OffLineDyadicCommonLowerMassAtZero
 
 theorem no_offLineDyadicCommonLowerMassAtZero
     (z : ZeroPoint) (ha : zeroDefect z.1 ≠ 0) :
-    ¬ OffLineDyadicCommonLowerMassAtZero z ha := by
-  intro data
+    ¬ Nonempty (OffLineDyadicCommonLowerMassAtZero z ha) := by
+  rintro ⟨data⟩
   exact data.impossible
 
 /-- The exact global lower-density supplier proposed by the current cumulative
@@ -134,7 +136,7 @@ theorem offLineDyadicCommonLowerMassClaim_iff_rh :
       dsimp [z] at hzero
       linarith
     obtain ⟨data⟩ := supplier z ha
-    exact (no_offLineDyadicCommonLowerMassAtZero z ha) data
+    exact (no_offLineDyadicCommonLowerMassAtZero z ha) ⟨data⟩
   · intro hrh z ha
     have hline : z.1.re = 1 / 2 :=
       hrh z.1 z.2.1 z.2.2.1 z.2.2.2

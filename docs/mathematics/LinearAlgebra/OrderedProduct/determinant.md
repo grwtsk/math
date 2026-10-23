@@ -7,13 +7,13 @@ The weighted Jacobi specialization retains its field and every-step nonzero coef
 
 GRWTSK added canonical placement, complete contract-preservation checking and original consumer replay. This slice contains two source theorems, no definition and no generated or query-added equation. The retained introduction discusses related ordered-product/gauge conventions; this module supplies the two determinant theorems above. No additional original external consumer was found in the selected source frontier. No new mathematical result, spectral identification or RH proof is claimed.
 
-For a clean reconstruction of only this public slice, use `python3 -B .noeaaeue/scripts/check_ordered_product_determinant.py --interface-only`. Its exact scope is the determinant module and four imported local modules, the audit, the three controls, the runner and pinned Lean/Lake/lock files. The receipt explicitly records that the global layout check was not run. The default mode requires the repository's canonical layout policy, map and checker; source admission separately requires that full current gate. A successful bounded reconstruction does not accept the whole repository or authorize a transfer.
+For a clean reconstruction of only this public slice, use `python3 -B artifact:gitblob:4d4b78252cf4dd32c5fb65226c7cb4f8060af89f --interface-only`. Its exact scope is the determinant module and four imported local modules, the audit, the three controls, the runner and pinned Lean/Lake/lock files. The receipt explicitly records that the global layout check was not run. The default mode requires the repository's canonical layout policy, map and checker; source admission separately requires that full current gate. A successful bounded reconstruction does not accept the whole repository or authorize a transfer.
 
 Direction: grwtsk contributors. Formalization and verification assistance: OpenAI Codex. MIT; historical human/machine authoring split unknown. `Matrix.det_mul` keeps its upstream Mathlib identity. The determinant source credits Kenny Lau, Chris Hughes and Anne Baanen, Apache-2.0. Other Lean and Mathlib identities, authors and licenses remain preserved. This remains a checked local candidate pending transactional admission and review.
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/OrderedProductDeterminant.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 **Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 

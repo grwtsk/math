@@ -19,7 +19,7 @@ All ordered factors, squareful outputs and signs remain present. The complete cl
 
 ## Sources and evidence
 
-[Truncated series](../../../../GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean) and [entire closed polynomial](../../../../GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean) have a separate [public consumer receipt](../../../../.noeaaeue/evidence/NumberTheory/LSeries/density-series-checks.json). It reuses only unchanged source-bound arithmetic dependencies already publicly checked, and freshly replays the series consumers with literal contracts, owned bodies and transitive axioms. Counts for the reused dependencies are not counted as new proofs. Neither identity supplies P04, P05, original absolute MB6 or RH; all remain open.
+[Truncated series](../../../../GRWTSK/NumberTheory/LSeries/TruncatedMoebiusSeries.lean) and [entire closed polynomial](../../../../GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean) have a separate public consumer receipt (artifact:gitblob:90489f7f5af779ff5b892b490b8a2a050a63d131). It reuses only unchanged source-bound arithmetic dependencies already publicly checked, and freshly replays the series consumers with literal contracts, owned bodies and transitive axioms. Counts for the reused dependencies are not counted as new proofs. Neither identity supplies P04, P05, original absolute MB6 or RH; all remain open.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

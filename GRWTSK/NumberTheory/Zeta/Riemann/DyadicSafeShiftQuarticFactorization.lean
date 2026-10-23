@@ -35,13 +35,13 @@ open CanonicalZeroDivisor
 open GRWTSK.Polynomial.ConjugateQuartic
 
 def safeAxialDyadicNormalizedY (z : ZeroPoint) (j : ℕ) : ℝ :=
-  if ha : zeroDefect z.1 = 0 then
+  if zeroDefect z.1 = 0 then
     0
   else
     (safeEvenDefectDyadicBlock z j).re / (zeroDefect z.1) ^ 2
 
 def safeTransverseDyadicNormalizedY (z : ZeroPoint) (j : ℕ) : ℝ :=
-  if ha : zeroDefect z.1 = 0 then
+  if zeroDefect z.1 = 0 then
     0
   else
     (safeOddDyadicBlock z j).im /
@@ -174,6 +174,7 @@ theorem safeQuarticDyadicPackingValue_factor
   rw [safeQuarticDyadicPackingValue,
     safeAxialDyadicGram_factor,
     safeTransverseDyadicGram_factor]
+  ring
 
 /-- Off-line dyadic asymptotic packet sufficient for the packing contradiction. -/
 structure OffLineDyadicQuarticScaleDataAtZero

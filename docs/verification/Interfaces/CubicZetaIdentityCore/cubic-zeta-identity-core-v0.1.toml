@@ -1,0 +1,217 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "cubic-zeta-identity-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.CubicZetaIdentityCore"
+build_target = "GRWTSK.Interfaces.CubicZetaIdentityCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "8601bfe0881faa628235d5d6f209daa02cb9a1fd"
+base_tree = "79006bed7ca8ebff35d74247805b1abf9c4a3dc9"
+stacked_on_pr = 295
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CubicRemainderCore/cubic-remainder-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "a74b7588d69c38d2f5d4cfd5f36f8b7a2ff57672".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "9af290c8b1719de346a2044b7f9df37ec6f1297f".
+# Pre-quadrature-repair inherited_target_blob = "c97e6a32b544282936df322d1f589a62f2e767ce".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "b9a8a72b9ffbd43561f9779fcd410451648d6651".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "6d29b887d65426a64a394da901ac09f7c45fd8b0"
+receipt_policy = "Bind exact new commit/tree externally; ancestor or root-only evidence is insufficient."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+actual_zeta_source_identification = "PROOF_DRAFT_NOT_KERNEL_ACCEPTED"
+actual_all_point_disk_ceiling = "PROOF_DRAFT_NOT_KERNEL_ACCEPTED"
+actual_local_multiplicity_count = "PROOF_DRAFT_NOT_KERNEL_ACCEPTED"
+periodic_improper_integral_adapter = "NOT_FORMALIZED_NOT_USED"
+full_logarithmic_derivative_growth = "NOT_SUPPLIED"
+height_infinite_prime_explicit_formula = "NOT_SUPPLIED"
+canonical_prime_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Interfaces.CubicZetaIdentityCore"
+path = "GRWTSK/Interfaces/CubicZetaIdentityCore.lean"
+source_blob = "3a5511d3e2df441640b0c7542c0cd0a90411052b"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/CubicZetaIdentityControls.lean"
+source_blob = "ba463cd7dee0456d7242c3375fd9b30d2a3b9f2a"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaCircleBound"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicZetaCircleBound.lean"
+# Original pre-repair source_blob = "53dec4e2b76717d091bd8fd01775a33123e4253f".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "2f0dd39c9bc41e89538d1dbb02e7f6f53050045b"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaIdentity"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicZetaIdentity.lean"
+# Original pre-repair source_blob = "81016158f05abbd8178732121e1035c52243797c".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "42876d11d64a9fa16cb4d40e501493517250282f"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CubicRemainderCore"
+path = "GRWTSK/Interfaces/CubicRemainderCore.lean"
+source_blob = "9ecc33f276d365b200fcfbd76e9d24ae837e1225"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicRemainderHolomorphic.lean"
+# Original pre-repair source_blob = "1b38681da0e5d53d09414bc9232fd244c2993711".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "7bf8b41ba8b704fee0ee64a53b61d2842e9542da"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicRemainder"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicRemainder.lean"
+# Original pre-repair source_blob = "ce3412c0cd75863b474b2ae2357b87b1e7f0b1dc".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "9ef1c1752a4f2f1389352f7b82ac4877bd84cfe1"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicPowerSummation"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicPowerSummation.lean"
+# Original pre-repair source_blob = "e9beea18bfc091dd2fe3d870a020c15d3a98e6e7".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fd25e7f5a1025387a239b418248f0b0344891dfa"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicCircleGeometry.lean"
+# Original pre-repair source_blob = "a0d3c2e1634e91a9969b99bc120e412d72c4e5cc".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "08b38fca12bf8e6dff26d9f6aa49c32c2e62e419"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RightHalfPlaneModulus"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RightHalfPlaneModulus.lean"
+# Original pre-repair source_blob = "f120aaf3a7bf91089fff2310b3dc6d423dff5071".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "6a6818872730e47da338cb1727de6c8848048142"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensen"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/AnchoredLocalJensen.lean"
+# Original pre-repair source_blob = "605f68bfc1af8a7e5cc646e33a941c3ef21f9913".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "c75ff632b011100da1dce61eb5df8526926f04e0"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[mathematical_notes]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/cubic-zeta-identification.md"
+source_blob = "bfd9a30617cb938442bad926a02d6bc0871e4545"
+status = "WRITTEN_DERIVATION_NOT_KERNEL_ACCEPTED"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean"
+source_blob = "6846dc699ecd29cc8a1754c1680176210969ffd1"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Analytic/IsolatedZeros.lean"
+source_blob = "9bad403947a1959b68846a3a407f28fdd19d320e"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Pow/Asymptotics.lean"
+source_blob = "40bde6d8539f88ebf65d15f623d6d521c578404c"
+
+[declarations]
+public_names = [
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.pole_parameter_not_admissible",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.left_boundary_not_admissible",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.zero_value_from_cubic",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.minus_one_value_from_cubic",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.normalized_value_at_pole",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.zero_factor_does_not_cancel",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.terminal_zero_exponent",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.empty_prefix_at_two",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CubicZetaIdentityControls.zero_divisor_does_not_bound_regular_term",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.norm_zeta_le_cube_on_disk",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.upper_circle_bound",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.lower_circle_bound",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.localCountBudget",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.bandMass_le_localCountBudget",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.localCountBudget_nonneg",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.clearance_le_actual",
+  "GRWTSK.RiemannHypothesis.CubicZetaCircleBound.local_principal_le",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.logPower_neg_eq_reciprocal_cpow",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.terminal_logPower_tendsto_zero",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.dirichlet_prefix_tendsto",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.finite_zeta_telescope",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.zeta_eq_cubic_of_one_lt_re",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.cubicRegularPart",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.analyticOnNhd_cubicRegularPart",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.cubic_halfPlane_convex",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.riemannZeta₀_eq_cubicRegularPart",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.zeta_eq_cubic",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.riemannZeta₁_eq_cubic",
+  "GRWTSK.RiemannHypothesis.CubicZetaIdentity.cubicRemainder_at_one_identity",
+]
+private_helpers = []
+
+[controls]
+obligations = [
+  "Retain the actual cellRemainder, normalized third polynomial and real-log logPower; no replacement source.",
+  "The N positive Dirichlet terms end at N; all three terminal powers occur at N+1, including the empty prefix.",
+  "Prove the negative real part of each terminal exponent separately; the exponent-zero term does not vanish.",
+  "Match the actual positive-base complex powers and justify summability before taking the Dirichlet-series limit.",
+  "Continue equality of analytic regular parts on a connected domain, not an inequality or agreement at finitely many points.",
+  "Reuse the existing riemannZeta\u2080 and riemannZeta\u2081, preserving their special values at one.",
+  "The raw zeta identity excludes one; the regular identity at one is gamma=7/12-6R(1).",
+  "Zero and minus one remain allowed; no division by s(s+1)(s+2). Re(s)=-2 remains excluded.",
+  "The ceiling covers all points of both closed disks. Keep N>=2 and actual disk membership; samples are not suppliers.",
+  "Preserve both signs, analytic multiplicities, full complex locations, and the original open-lower/closed-upper local band.",
+  "The finite principal-sum bound does not control the analytic regular or distant part of the full logarithmic derivative.",
+  "No height-infinite prime explicit formula, numerical evaluator, zero-list completeness, or all-interval margin is supplied.",
+  "All inherited exact types, transitive imports/axioms/native dependencies, and external acceptance obligations remain.",
+]

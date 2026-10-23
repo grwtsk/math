@@ -8,6 +8,7 @@ Parent PR #1014 exact head 3aa2a98ffc824c410c8b0b7ce1cc68bc4f55bdb1.
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport
 import Mathlib.Topology.Compactness.Compact
+import Mathlib.Topology.Homeomorph.Lemmas
 import Mathlib.Tactic
 
 /-!
@@ -31,6 +32,7 @@ namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskHomeomorphism
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarStandardConeDescent
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarConeFibers
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase
@@ -59,7 +61,7 @@ noncomputable def standardCircleConeHomeomorphClosedDisk :
   letI : CompactSpace StandardCircleCone := standardCircleCone_compact
   letI : T2Space ClosedComplexUnitDisk := closedComplexUnitDisk_t2
   exact Continuous.homeoOfEquivCompactToT2
-    (Equiv.ofBijective standardConePolarDisk standardConePolarDisk_bijective)
+    (f := Equiv.ofBijective standardConePolarDisk standardConePolarDisk_bijective)
     standardConePolarDisk_continuous
 
 /-- The homeomorphism is definitionally tied to the actual polar
@@ -69,6 +71,20 @@ theorem standardCircleConeHomeomorphClosedDisk_apply
     standardCircleConeHomeomorphClosedDisk z =
       standardConePolarDisk z := rfl
 
+/-- The standard cone's genuine radial coordinate is the complex norm
+of its image under the authentic polar disk homeomorphism. -/
+theorem standardCircleConeHomeomorphClosedDisk_radius
+    (z : StandardCircleCone) :
+    ‖(standardCircleConeHomeomorphClosedDisk z).val‖ =
+      (standardCircleConeRadius z : ℝ) := by
+  calc
+    ‖(standardCircleConeHomeomorphClosedDisk z).val‖ =
+        ‖(standardConePolarDisk z).val‖ :=
+      congrArg (fun w : ClosedComplexUnitDisk => ‖w.val‖)
+        (standardCircleConeHomeomorphClosedDisk_apply z)
+    _ = (standardCircleConeRadius z : ℝ) :=
+      standardConePolarDisk_norm_eq_radius z
+
 /-- The authentic polygon perimeter cone is homeomorphic to the
 standard closed disk by composition with the previously constructed
 source-exact perimeter-circle cone transport. -/
@@ -77,13 +93,52 @@ noncomputable def perimeterConeHomeomorphClosedDisk (k : ℕ) :
   (perimeterConeHomeomorphStandardCircleCone k).trans
     standardCircleConeHomeomorphClosedDisk
 
+/-- The exact source-preserving cone transport also preserves the radial
+coordinate through the closed-disk polar map, at every genus and radius. -/
+theorem perimeterConeHomeomorphClosedDisk_radius
+    (k : ℕ) (z : PerimeterCone k) :
+    ‖(perimeterConeHomeomorphClosedDisk k z).val‖ =
+      (coneRadius k z : ℝ) := by
+  calc
+    ‖(perimeterConeHomeomorphClosedDisk k z).val‖ =
+        ‖(standardCircleConeHomeomorphClosedDisk
+          (perimeterConeHomeomorphStandardCircleCone k z)).val‖ := rfl
+    _ = (standardCircleConeRadius
+          (perimeterConeHomeomorphStandardCircleCone k z) : ℝ) :=
+      standardCircleConeHomeomorphClosedDisk_radius _
+    _ = (coneRadius k z : ℝ) :=
+      congrArg (fun r : unitInterval => (r : ℝ))
+        (perimeterConeHomeomorphStandardCircleCone_radius k z)
+
 /-- The original source cone apex maps to the disk origin. -/
 theorem perimeterConeHomeomorphClosedDisk_apex (k : ℕ) :
     perimeterConeHomeomorphClosedDisk k (coneApex k) =
       (⟨0, by simp⟩ : ClosedComplexUnitDisk) := by
-  rw [perimeterConeHomeomorphClosedDisk]
+  change standardConePolarDisk
+    (perimeterConeHomeomorphStandardCircleCone k (coneApex k)) = _
   rw [perimeterConeHomeomorphStandardCircleCone_apex]
   exact standardConePolarDisk_apex
+
+/-- Source-exact obstruction: the polar disk homeomorphism on the
+UNPAIRED perimeter cone cannot descend to any function on the
+PAIRED filled polygon quotient along the genuine cone-to-filling map.
+This uses the original opposite-side midpoint noninjectivity,
+and does NOT assert that the filled polygon has no disk chart or that
+its intrinsic topology is not a disk. -/
+theorem perimeterConePolar_not_factor_through_filling (k : ℕ) :
+    ¬ ∃ f : FilledPolygonQuotient k → ClosedComplexUnitDisk,
+        f ∘ coneToFilled k =
+          (perimeterConeHomeomorphClosedDisk k :
+            PerimeterCone k → ClosedComplexUnitDisk) := by
+  rintro ⟨f, hf⟩
+  apply coneToFilled_not_injective k
+  intro x y hxy
+  apply (perimeterConeHomeomorphClosedDisk k).injective
+  calc
+    perimeterConeHomeomorphClosedDisk k x =
+        f (coneToFilled k x) := (congrFun hf x).symm
+    _ = f (coneToFilled k y) := congrArg f hxy
+    _ = perimeterConeHomeomorphClosedDisk k y := congrFun hf y
 
 /-
 Strictly open and independent:

@@ -63,8 +63,8 @@ is a different map from reindexing parent-dictionary storage slots.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RoleRelationReindex.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationReindex.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json)
+native receipt (artifact:gitblob:67183f2894df2b92740b5e1de1b91b1b738165b5)
+and integration record (artifact:gitblob:b10bb065d9a020d529de0afe1f9b7e5f4a2f4019)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the complete owned-declaration and
 transitive-axiom census, allowing only `propext`, `Classical.choice` and

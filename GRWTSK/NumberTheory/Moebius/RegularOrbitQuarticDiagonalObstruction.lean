@@ -55,16 +55,7 @@ theorem parityHalfShiftQuarticDiagonal_eq_squarefreePairDiagonal
       parityHalfShiftSquarefreePairDiagonal b r H := by
   unfold parityHalfShiftQuarticDiagonal
     parityHalfShiftSquarefreePairDiagonal
-  simp_rw [Finset.sum_eq_single]
-  · apply congrArg (fun x : ℝ => 4 * x)
-    apply Finset.sum_congr rfl
-    intro h hh
-    apply Finset.sum_congr rfl
-    intro u hu
-    rw [regularQuarticMobiusCoefficient_diagonal]
-  · intro g hg hgh
-    simp [hgh]
-  · simp
+  simp [ite_and, regularQuarticMobiusCoefficient_diagonal]
 
 /-- Explicit independence of the literal diagonal from the modulus. -/
 theorem parityHalfShiftQuarticDiagonal_eq_of_moduli

@@ -7,11 +7,11 @@ GRWTSK added the canonical interface, mechanical preservation checks and actual 
 
 The earlier rational/common-generator consumers and the original sign-conjugation proof have been checked against canonical constants. The sign proof is an intra-family consumer; the two new public wrappers are explicitly synthetic interface checks. No additional distinct external downstream consumer or equivalence between different scalar carriers is inferred.
 
-The rational edges are assigned algebraic examples. This interface supplies no arithmetic construction, analytic estimate or proof of the Riemann hypothesis. Related gauge and noncommuting shear fixtures remain outside this interface. Transactional admission and review remain pending. See `.noeaaeue/evidence/citation-common-j.json` for the versioned claim.
+The rational edges are assigned algebraic examples. This interface supplies no arithmetic construction, analytic estimate or proof of the Riemann hypothesis. Related gauge and noncommuting shear fixtures remain outside this interface. Transactional admission and review remain pending. See `artifact:gitblob:bd950154f0c91d14f0a0caaf3554124069b92e66` for the versioned claim.
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/LinearAlgebra/CommonJ.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/LinearAlgebra/CommonJ.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 **Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.
 

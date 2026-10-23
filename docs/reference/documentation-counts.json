@@ -1,0 +1,97 @@
+{
+  "schema": "noe.math-documentation-counts/1",
+  "scope": "current regular files under GRWTSK and docs; inventory only",
+  "source_populations": {
+    "all_grwtsk_lean_modules": 72343,
+    "maintained_grwtsk_lean_modules": 72343,
+    "all_grwtsk_source_namespaces": 23,
+    "maintained_source_namespaces": 23,
+    "lean_modules_by_namespace": {
+      "Algebra": 267,
+      "AlgebraicGeometry": 49,
+      "Analysis": 701,
+      "CategoriesAndHomologicalAlgebra": 57,
+      "Combinatorics": 99,
+      "CombinatoricsAndDiscreteMathematics": 185,
+      "Data": 2,
+      "DifferentialEquationsAndDynamicalSystems": 24,
+      "DynamicalSystems": 17,
+      "FoundationsLogicAndTypeTheory": 431,
+      "Geometry": 37,
+      "GeometryOfNumbers": 6,
+      "GroupTheory": 9,
+      "Interfaces": 238,
+      "LinearAlgebra": 92,
+      "Logic": 80,
+      "MeasureTheory": 6,
+      "NumberTheory": 1785,
+      "Order": 9,
+      "ProbabilityAndMathematicalStatistics": 57,
+      "SourceCorpus": 68047,
+      "Spectral": 28,
+      "Topology": 117
+    },
+    "maintained_lean_modules_by_namespace": {
+      "Algebra": 267,
+      "AlgebraicGeometry": 49,
+      "Analysis": 701,
+      "CategoriesAndHomologicalAlgebra": 57,
+      "Combinatorics": 99,
+      "CombinatoricsAndDiscreteMathematics": 185,
+      "Data": 2,
+      "DifferentialEquationsAndDynamicalSystems": 24,
+      "DynamicalSystems": 17,
+      "FoundationsLogicAndTypeTheory": 431,
+      "Geometry": 37,
+      "GeometryOfNumbers": 6,
+      "GroupTheory": 9,
+      "Interfaces": 238,
+      "LinearAlgebra": 92,
+      "Logic": 80,
+      "MeasureTheory": 6,
+      "NumberTheory": 1785,
+      "Order": 9,
+      "ProbabilityAndMathematicalStatistics": 57,
+      "SourceCorpus": 68047,
+      "Spectral": 28,
+      "Topology": 117
+    }
+  },
+  "documentation_populations": {
+    "all_docs_markdown_pages": 983,
+    "core_documentation_markdown_pages": 765,
+    "mathematics_markdown_pages": 751,
+    "mathematics_area_indexes": 12,
+    "mathematics_object_candidate_pages": 739,
+    "registered_object_guides": 149,
+    "documented_object_groups": 59,
+    "distinct_primary_sources": 145,
+    "archive_intake_records": 68,
+    "selected_result_families": 3
+  },
+  "legacy_curated_observer_census": {
+    "source_module_count": 886,
+    "maintained_page_registry_count": 186,
+    "declaration_totals": {
+      "declarations": 7003,
+      "theorems": 5017,
+      "parsed_modules": 775,
+      "unparsed_modules": 111
+    },
+    "scope": "legacy curated source paths and pinned-parser observer census"
+  },
+  "input_digests": {
+    "grwtsk_lean_inventory": "1f1f12a3cb1340a14c010f34455457e747ee9de3d790e81987ff998d1cd5c859",
+    "docs_markdown_inventory_excluding_generated_count_surfaces": "3ca15d986b1aa4e9e6e9287c366a7a1f31a7607956218ccb3ac1f4de68dd5b11",
+    "object_source_bindings": "dea449625f78dc8c9446efa60ea0d35af5f6bcd059f4df1f3db9d231caa7c0f7",
+    "selected_results": "39d761d6bd1ed199bb41209618a44eeccdda17e59c44293c8fa85d75027e8c06",
+    "source_intake": "e4a31611bf376ec5c1ecdefee9fdfa9791540d4670d5e194fa0532d290cbc2ee"
+  },
+  "nonclaims": [
+    "Counts do not establish parsing, elaboration, proof acceptance or theorem admission.",
+    "Every regular Lean file under GRWTSK, regardless of first-level namespace, is in the maintained source population.",
+    "Registered object guides and source bindings are curated documentation populations, not whole-library coverage.",
+    "The legacy observer census remains historical and is not added to current filesystem populations."
+  ],
+  "identity": "c064a8e960146f2999f5e739ce50c3f245040e0bbb342ab950333f80c212f42a"
+}

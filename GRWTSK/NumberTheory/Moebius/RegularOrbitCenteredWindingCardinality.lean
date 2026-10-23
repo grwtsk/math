@@ -57,30 +57,12 @@ theorem abs_squareMul_le_endpoint_iff_abs_le_radius
   have hqInt : 0 < (((d * d : ℕ) : ℤ)) := by
     exact_mod_cast hqNat
   rw [abs_mul, abs_of_pos hqInt]
-  have hznonneg : 0 ≤ |z| := abs_nonneg z
-  constructor
-  · intro h
-    have hzNat :
-        Int.natAbs z * (d * d) ≤ b := by
-      exact_mod_cast h
-    have hdiv :
-        Int.natAbs z ≤ b / (d * d) := by
-      exact (Nat.le_div_iff_mul_le hqNat).2 hzNat
-    have habs : |z| = (Int.natAbs z : ℤ) := by
-      exact Int.natAbs_ofNatAbs z
-    rw [centeredWindingRadius, habs]
-    exact_mod_cast hdiv
-  · intro h
-    have habs : |z| = (Int.natAbs z : ℤ) := by
-      exact Int.natAbs_ofNatAbs z
-    rw [centeredWindingRadius, habs] at h
-    have hNat :
-        Int.natAbs z ≤ b / (d * d) := by
-      exact_mod_cast h
-    have hmulNat :
-        Int.natAbs z * (d * d) ≤ b :=
-      (Nat.le_div_iff_mul_le hqNat).1 hNat
-    exact_mod_cast hmulNat
+  rw [← Int.natCast_natAbs z]
+  unfold centeredWindingRadius
+  have hnat : (d * d) * z.natAbs ≤ b ↔ z.natAbs ≤ b / (d * d) := by
+    rw [Nat.le_div_iff_mul_le hqNat]
+    simp only [mul_comm]
+  exact_mod_cast hnat
 
 /-- The candidate set is exactly the symmetric integer interval of radius
 `floor(b/d^2)`. -/
@@ -123,7 +105,12 @@ theorem card_centeredWindingCandidateSet
       (-(centeredWindingRadius b d : ℤ))
       (centeredWindingRadius b d : ℤ)
       hle
-  exact_mod_cast hcard
+  have hcast : ((Finset.Icc (-(centeredWindingRadius b d : ℤ))
+      (centeredWindingRadius b d : ℤ)).card : ℤ) =
+      ((2 * centeredWindingRadius b d + 1 : ℕ) : ℤ) := by
+    push_cast
+    linarith [hcard]
+  exact_mod_cast hcast
 
 /-- Zero winding belongs to every candidate set. -/
 theorem zero_mem_centeredWindingCandidateSet

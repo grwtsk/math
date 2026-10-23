@@ -79,9 +79,18 @@ theorem centeredResidueFiberZModSquareExpansion
               else 0 := by
   classical
   unfold parityHalfIndexCenteredResidueFiberZMod
-  simp_rw [pow_two, Finset.sum_mul, Finset.mul_sum]
+  simp only [pow_two, Finset.sum_mul_sum]
   rw [Finset.sum_comm]
-  simp_rw [Finset.sum_comm (s := H)]
+  conv_lhs =>
+    arg 2
+    ext h
+    rw [Finset.sum_comm]
+    arg 2
+    ext g
+    rw [Finset.sum_comm]
+    arg 2
+    ext m
+    rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
   apply Finset.sum_congr rfl
@@ -113,13 +122,7 @@ theorem centeredResidueFiberZModSquareExpansion
       intro hEq
       exact hmod
         ((ZMod.natCast_eq_natCast_iff _ _ (d * d)).1 hEq)
-    have hdisj :
-        ∀ s : ZMod (d * d),
-          ¬ ((halfIndexZeroWindingCoordinate m h : ZMod (d * d)) = s ∧
-            (halfIndexZeroWindingCoordinate n g : ZMod (d * d)) = s) := by
-      intro s hs
-      exact hcast (hs.1.trans hs.2.symm)
-    simp [hmod, hdisj]
+    simp [hmod, hcast]
 
 /-- The `ZMod` square mass is the same full signed congruence surface used by
 the natural-residue formulation. -/
@@ -204,6 +207,7 @@ theorem sum_parityAffineShiftResidueCorrelation_eq_two_mul_centeredFiberZMod
         (parityHalfIndexCenteredResidueFiberZMod b d r H s : ℂ) := by
       unfold parityHalfIndexCenteredResidueFiberZMod
       push_cast
+      simp_rw [apply_ite (fun x : ℝ => (x : ℂ)), Complex.ofReal_zero]
 
 /-- Exact factor-two bridge for the even half-shift residue bucket. -/
 theorem parityEvenHalfShiftSignedResidueBucket_eq_two_mul_centeredFiberZMod
@@ -386,8 +390,10 @@ theorem parityCenteredWindingFullFrequencyDispersion_eq_wrap
   unfold parityCenteredWindingFullFrequencyDispersion
   rw [sum_norm_sq_two_mul_centeredResidueFourier_eq_square_mul_squareMass]
   rw [parityHalfIndexCenteredResidueSquareMass_eq_zeroEnergy_add_wrap]
-  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by positivity
-  field_simp [hq] <;> ring
+  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by
+    exact_mod_cast (Nat.mul_ne_zero (NeZero.ne d) (NeZero.ne d))
+  field_simp [hq]
+  ring
 
 /-- Existing even-half-shift full-frequency energy equals `d^2` times the
 centered residue square mass. -/
@@ -458,8 +464,9 @@ theorem normalized_evenFullFrequencyEnergy_eq_zeroEnergy_add_wrap
   rw [sum_norm_sq_parityEvenHalfShiftSignedResidueFourier_eq_square_mul_squareMass
     b d r hr]
   rw [parityHalfIndexCenteredResidueSquareMass_eq_zeroEnergy_add_wrap]
-  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by positivity
-  field_simp [hq] <;> ring
+  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by
+    exact_mod_cast (Nat.mul_ne_zero (NeZero.ne d) (NeZero.ne d))
+  field_simp [hq]
 
 /-- Normalized odd-half-shift full-frequency energy is exactly zero winding
 plus nonzero winding. -/
@@ -476,8 +483,9 @@ theorem normalized_oddFullFrequencyEnergy_eq_zeroEnergy_add_wrap
   rw [sum_norm_sq_parityOddHalfShiftSignedResidueFourier_eq_square_mul_squareMass
     b d r hr]
   rw [parityHalfIndexCenteredResidueSquareMass_eq_zeroEnergy_add_wrap]
-  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by positivity
-  field_simp [hq] <;> ring
+  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by
+    exact_mod_cast (Nat.mul_ne_zero (NeZero.ne d) (NeZero.ne d))
+  field_simp [hq]
 
 /-- The even-half-shift wrap term is normalized full-frequency energy minus
 zero-winding fiber energy. -/
@@ -559,7 +567,7 @@ def regularCenteredWindingFullFrequencyDispersionEndpoint
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       regularCenteredWindingFullFrequencyDispersionAtModulus b d
     else 0
 
@@ -576,7 +584,7 @@ theorem regularCenteredWindingFullFrequencyDispersionEndpoint_eq_residue
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact regularCenteredWindingFullFrequencyDispersionAtModulus_eq_residue b d
 
 /-- Parameterized analytic boundary in full-frequency Fourier coordinates. -/

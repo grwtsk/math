@@ -59,8 +59,8 @@ is separate from the dyadic Gaussian-window family above.
 
 The [source](../../../../GRWTSK/Analysis/Fourier/SchwartzMoments.lean),
 [positive controls](../../../../GRWTSK/Analysis/Fourier/Checks/Positive/SchwartzMoments.lean),
-[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/Fourier/schwartz-moments-integration-2026-10-15.json)
+joint native receipt (artifact:gitblob:4f955ffd30fe196f05ebac36a19e42c254103cf2)
+and integration record (artifact:legacy-artifact-unavailable:12de0dfc0f4e7105b3bb195db4312c9050cc52ce99c8033d0b5851d5e86ab6c1)
 bind exact fresh selected local sources, the actual Gaussian consumer and
 both sets of controls. Pinned Lean 4.33.0 checks trust zero, fatal warnings
 and the complete owned-declaration/transitive-axiom census, allowing only

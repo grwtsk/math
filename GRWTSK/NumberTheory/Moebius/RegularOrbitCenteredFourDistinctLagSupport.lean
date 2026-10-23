@@ -57,9 +57,7 @@ theorem centeredFourDistinctRawSupportCount_le_lagSensitive
       exact card_centeredAffineFourMobiusDistinctShiftPairs_le_endpointSquare
         H hcRange hcell
     _ = ((b + 1) - ell) * ((b + 1) * (b + 1)) := by
-      rw [Finset.sum_const_nat]
-      rw [card_endpointValidCenterSetAtLag]
-      ring
+      simp [card_endpointValidCenterSetAtLag]
 
 theorem centeredFourDistinctRawSupportCount_eq_zero_of_endpoint_lt_lag
     {b r ell : ℕ} (H : Finset ℕ)
@@ -106,7 +104,7 @@ theorem centeredFourDistinctWindingRawSupportCeilingSum_le
       nlinarith
     _ ≤ centeredWindingRadius b d *
         ((b + 1) * ((b + 1) * (b + 1))) := by
-      rw [Finset.sum_const_nat]
+      simp only [Finset.sum_const, nsmul_eq_mul]
       have hcard :
           (Finset.Icc 1 (centeredWindingRadius b d)).card ≤
             centeredWindingRadius b d := by

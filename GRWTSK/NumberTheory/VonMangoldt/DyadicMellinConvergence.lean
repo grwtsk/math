@@ -66,7 +66,11 @@ theorem uniform_energy_constant (hE : AllDyadicEnergyBound)
     (fun j => augmentedEnergy_nonneg _) (fun j => Real.exp_pos _) hC j₀
   intro j hj
   have hx : (0:ℝ) < dyadicScale j := by exact_mod_cast dyadicScale_pos j
-  simpa only [Real.rpow_def_of_pos hx, mul_comm] using hbound j hj
+  have hb := hbound j hj
+  convert! hb using 1
+  rw [Real.rpow_eq_pow, Real.rpow_def_of_pos hx]
+  congr 2
+  ring
 
 /-- The exact exponent left after multiplying the Mellin dilation and root energy. -/
 theorem energy_to_geometric_bound {X : ℕ} (hX : 0 < X)
@@ -145,6 +149,7 @@ theorem absolute_summability (hE : AllDyadicEnergyBound)
 theorem blockSeries_differentiableOn (hE : AllDyadicEnergyBound) :
     DifferentiableOn ℂ blockSeries {s : ℂ | 1/2 < s.re} := by
   intro s hs
+  change (1 : ℝ)/2 < s.re at hs
   let σ : ℝ := (s.re+1/2)/2
   let M : ℝ := ‖s‖+1
   let U : Set ℂ := {z : ℂ | σ < z.re ∧ ‖z‖ < M}

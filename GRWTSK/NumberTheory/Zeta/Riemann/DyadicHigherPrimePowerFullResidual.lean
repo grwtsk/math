@@ -80,7 +80,7 @@ def higherPrimePowerFullWitnessEnergy (X : ℕ) : ℝ :=
     ∑' k : ℤ, higherPrimePowerFourierModeEnergy X k
 
 theorem higherPrimePowerFullWitnessEnergy_nonnegative
-    {X : ℕ} (hX : 0 < X) :
+    {X : ℕ} (_hX : 0 < X) :
     0 ≤ higherPrimePowerFullWitnessEnergy X := by
   unfold higherPrimePowerFullWitnessEnergy
   have hFourier :
@@ -122,7 +122,6 @@ theorem sqrt_two_mul_nat_div_sq
   rw [div_pow, Real.sq_sqrt (by positivity)]
   push_cast
   field_simp [hX0]
-  ring
 
 /-- Unconditional inverse-scale bound for the COMPLETE higher-prime-power
 witness residual. -/

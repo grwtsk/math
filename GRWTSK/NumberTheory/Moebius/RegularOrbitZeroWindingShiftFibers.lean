@@ -124,7 +124,8 @@ theorem sum_halfIndex_eq_coordinate_single
         apply hne
         exact (zeroWindingHalfIndexFromCoordinate_eq heq).symm
       simp [hneq]
-    · exact (hcond.2.2)
+    · intro hnot
+      exact (hnot hcond.2.2).elim
   · rw [if_neg hcond]
     apply Finset.sum_eq_zero
     intro m hm
@@ -156,24 +157,9 @@ theorem parityHalfIndexZeroWindingFiber_eq_shiftCorrelation
   classical
   unfold parityHalfIndexZeroWindingFiber
     parityZeroWindingShiftFiberCorrelation
-  apply Finset.sum_subset
-  · intro h hh
-    exact (Finset.mem_filter.mp hh).1
-  · intro h hhH hhNot
-    rw [sum_halfIndex_eq_coordinate_single]
-    have hnotCond :
-        ¬ (h ≤ c ∧
-          (c - h) % 2 = 0 ∧
-          zeroWindingHalfIndexFromCoordinate c h ∈
-            zeroWindingHalfIndexBaseSet b r h) := by
-      intro hcond
-      exact hhNot
-        (Finset.mem_filter.mpr ⟨hhH, hcond⟩)
-    simp [hnotCond]
-  · intro h hh
-    rcases Finset.mem_filter.mp hh with ⟨_hhH, hcond⟩
-    rw [sum_halfIndex_eq_coordinate_single]
-    simp [hcond]
+  simp_rw [sum_halfIndex_eq_coordinate_single]
+  unfold zeroWindingAdmissibleShiftSet
+  rw [Finset.sum_filter]
 
 /-- Fiber energy expressed entirely through the one-dimensional shift
 correlations. -/

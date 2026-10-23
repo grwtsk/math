@@ -57,15 +57,15 @@ state's invariant is required.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableBatch.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableBatch.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json)
+native receipt (artifact:gitblob:05ca8ce8a81a6085db200f4962912f993caa257a)
+and integration record (artifact:gitblob:ff520a9aee86e5fc81f65280671baf33c68d59fa)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
 dependency objects are reused and fingerprinted; their sources and the whole
 umbrella are not rebuilt.
 
-The [durable decision](../../../../.noeaaeue/cache/decisions/finite-batch-prefix-state-v1.json)
+The durable decision (artifact:gitblob:34ba04ffa74a8484e4851ba53d67fedf5d52544b)
 records the mathematical choice and its boundaries. This result does not
 supply operational JSON, parser, hash, compression or filesystem refinement,
 automatic row criteria, or permission authority. Local source is MIT; named

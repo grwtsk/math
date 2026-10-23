@@ -153,7 +153,7 @@ def regularCenteredWindingAffineChowlaVarianceDefectEndpoint
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       regularCenteredWindingAffineChowlaVarianceDefectAtModulus b d
     else 0
 
@@ -168,7 +168,7 @@ theorem regularCenteredWindingAffineChowlaVarianceDefectEndpoint_eq_residue
   have hdpos : 0 < d :=
     (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact regularCenteredWindingAffineChowlaVarianceDefectAtModulus_eq_residue b d
 
 /-- Direct analytic interface preserving spectral/variance cancellation. -/

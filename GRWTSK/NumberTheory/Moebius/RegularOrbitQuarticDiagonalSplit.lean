@@ -121,11 +121,10 @@ theorem quarticCollisionTerm_eq_diagonal_add_offDiagonal
             ¬ (h = g ∧ u = v) then
         regularQuarticMobiusCoefficient u h v g
       else 0) := by
-  rw [parityAffineShiftResidueCoordinate_eq_iff_modEq]
+  simp only [parityAffineShiftResidueCoordinate_eq_iff_modEq]
   by_cases hdiag : h = g ∧ u = v
-  · have hcoll :=
-      diagonal_implies_affineCollision d u h v g hdiag
-    simp [hdiag, hcoll]
+  · rcases hdiag with ⟨rfl, rfl⟩
+    simp [Nat.ModEq.refl]
   · by_cases hcoll :
       parityAffineShiftCollisionCoordinateNat u h ≡
         parityAffineShiftCollisionCoordinateNat v g [MOD d * d]
@@ -143,9 +142,12 @@ theorem parityHalfShiftSignedQuarticCollision_eq_diagonal_add_offDiagonal
   unfold parityHalfShiftSignedQuarticCollision
     parityHalfShiftQuarticDiagonal
     parityHalfShiftSignedQuarticOffDiagonal
-    regularQuarticMobiusCoefficient
+  change 4 * (∑ h ∈ H, ∑ g ∈ H, ∑ u ∈ parityAffineShiftBaseSet b r h,
+    ∑ v ∈ parityAffineShiftBaseSet b r g,
+      if parityAffineShiftResidueCoordinate d u h = parityAffineShiftResidueCoordinate d v g
+      then regularQuarticMobiusCoefficient u h v g else 0) = _
   simp_rw [quarticCollisionTerm_eq_diagonal_add_offDiagonal d]
-  simp_rw [← Finset.sum_add_distrib]
+  simp_rw [Finset.sum_add_distrib]
   ring
 
 /-- Diagonal coefficient is the square of the binary Möbius product. -/

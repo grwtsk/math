@@ -1,0 +1,304 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "canonical-tent-rounded-evaluation-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.CanonicalTentRoundedEvaluationCore"
+build_target = "GRWTSK.Interfaces.CanonicalTentRoundedEvaluationCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "eed91175503712b974bfe849cb3afe3eebb7f26f"
+base_tree = "296b6b297f6dd34b3cfc23a3085f05ee673a64e4"
+stacked_on_pr = 310
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CanonicalTentScaledEvaluationCore/canonical-tent-scaled-evaluation-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "a7286722e5039a11f9f4c00555dcba2b529b77af".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "a3ebd27107000bcf3d272a218dfe969b32fffbb4".
+# Pre-quadrature-repair inherited_target_blob = "6b341b16edb344008fd52f6e919123c6450dca5c".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "921c95ccf9e99ae63b4a87517dc24f5c08975ca3".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "90985c7e12819298ae261f26efa46015598e250a"
+receipt_policy = "Bind exact new commit and tree externally. This static target represents no execution."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+directed_floor_rounding = "SOURCE_DRAFT_ALL_SIGNED_COMPONENTS"
+local_rounding_bounds = "DERIVED_FROM_SPECIFIED_OPERATION"
+seed_rounding = "CHARGED_BEFORE_PROPAGATION"
+error_storage = "UPWARD_ROUNDED_EVERY_STAGE"
+value_and_error_denominators = "ONE_FIXED_DYADIC_GRID_PER_POWER_INPUT"
+requested_precision = "FINAL_BUDGET_CHECK_ON_FINITE_ADMISSIBLE_LIST"
+finite_search_failure = "NONE_NOT_UNCERTIFIED_SUCCESS"
+search_completeness = "ONLY_WITHIN_GIVEN_LIST"
+universal_precision_attainment = "NOT_SUPPLIED"
+real_complex_implementation = "NONCOMPUTABLE_MATHEMATICAL_SPECIFICATION"
+rational_byte_checker_and_refinement = "NOT_SUPPLIED"
+zero_identity_and_completeness = "NOT_SUPPLIED"
+all_interval_positive_margin = "NOT_SUPPLIED"
+historical_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.DyadicRoundedSquaring"
+path = "GRWTSK/Analysis/Complex/DyadicRoundedSquaring.lean"
+source_blob = "f2f58807877ba25e5627cfa5a1f0762ed297c2ba"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation"
+path = "GRWTSK/Analysis/Complex/RoundedLogPowerEvaluation.lean"
+source_blob = "4a52432f4ee2f723e7d3821bc56885336c5a1629"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection"
+path = "GRWTSK/Analysis/ErrorBounds/FinitePrecisionSelection.lean"
+source_blob = "af547e54beb48c3a5bf7742e4d27e1d382a0d0b0"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentRoundedEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentRoundedEvaluationCore.lean"
+source_blob = "47a894927c32bf2c6266bd1069d165cffa40f5e8"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentRoundedEvaluation.lean"
+source_blob = "428ceb329ea8523927a395d079d0bd06fd7066d3"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/RoundedEvaluationControls.lean"
+source_blob = "f4f0a4a36a27bddc591a7c7ed77660a27533773a"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.DyadicExponentialEnclosure"
+path = "GRWTSK/Analysis/Complex/DyadicExponentialEnclosure.lean"
+source_blob = "30bd881b8ccf5b74a44446e0481748db48d1e034"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ScaledLogPowerEvaluation"
+path = "GRWTSK/Analysis/Complex/ScaledLogPowerEvaluation.lean"
+source_blob = "abee79fc045c99a93f976e44262c999788cfd958"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure"
+path = "GRWTSK/Analysis/Complex/FiniteExponentialEnclosure.lean"
+source_blob = "f8de8e5a517cdc022fa48516ae744defabd599ff"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentKernelEnclosure"
+path = "GRWTSK/Analysis/Complex/TentKernelEnclosure.lean"
+source_blob = "a11c25d44bf3d4c8c38112a146f295e7df62caec"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentMellinKernel"
+path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.RationalLogEnclosure"
+path = "GRWTSK/Analysis/Real/RationalLogEnclosure.lean"
+source_blob = "75cb556b0e858edf1634baa2bd2865816c90b176"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentPrimeCriterion.lean"
+source_blob = "6812843e5ef6eee7c30725cd0bc93a0e070f0eec"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentScaledEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentScaledEvaluationCore.lean"
+source_blob = "b73c79a886fead6eea3c1fab9d43f6afe68ecdce"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/Order/Floor/Defs.lean"
+blob = "1b56a36497d868a1f805702f948492a9c739a174"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/Order/Floor/Ring.lean"
+blob = "49904a0d6ade8e3aebc797af08da6521ff1b9b5b"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Chebyshev/rounded-dyadic-tent-evaluation.md"
+source_blob = "2507c8f5a3816f14cd7018c26a5c59e3184a3551"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+generated_structure_members_required = true
+inventory_status = "LEXICAL_NOT_LEAN_PARSED"
+public_names = [
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.scale",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.scale_pos",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.down",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.up",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.down_bounds",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.up_bounds",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.abs_sub_down_le",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.quantize",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.roundoff",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.norm_sub_quantize_le",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.down_on_grid",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.up_on_grid",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.quantize_on_grid",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.roundedValue",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.roundedError",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.rounded_chain_sound",
+  "GRWTSK.Analysis.Complex.DyadicRoundedSquaring.rounded_state_on_grid",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.seed",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.seedError",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.value",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.error",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.seed_sound",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.sound",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.error_nonneg",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PowerInput.output_on_grid",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.selectPower",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.selectPower_sound",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.selectPower_none_iff",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PointInput",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PointInput.value",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PointInput.error",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PointInput.sound",
+  "GRWTSK.Analysis.Complex.RoundedLogPowerEvaluation.PointInput.error_nonneg",
+  "GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection.firstWithin",
+  "GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection.firstWithin_some",
+  "GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection.firstWithin_none_iff",
+  "GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection.firstWithin_exists_of_candidate",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.roundedHead",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.roundedHeadError",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.norm_head_sub_rounded_inputs_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.roundedHeadError_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.norm_head_sub_rounded_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.norm_head_sub_rounded_of_target",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.prime_in_square_of_rounded_inputs",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRoundedEvaluation.prime_in_square_of_accumulated_rounded_inputs",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.negative_floor",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.upward_never_shrinks",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.seed_is_rounded",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.seed_roundoff_is_charged",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.quadratic_error_is_needed",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.early_rounding_is_amplified",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.two_coordinates_not_one",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.zero_bits_roundoff",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.empty_candidates_fail",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.selection_skips_bad_budget",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.finite_exhaustion_is_failure",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.tolerance_allows_equality",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RoundedEvaluationControls.prime_margin_still_strict",
+]
+
+[[acceptance_obligations]]
+id = "R01"
+requirement = "Elaborate all six new modules at the exact new head and preserve all inherited target obligations."
+
+[[acceptance_obligations]]
+id = "R02"
+requirement = "Reconcile every exact declaration type, generated structure member and the entire transitive import/axiom/native closure."
+
+[[acceptance_obligations]]
+id = "R03"
+requirement = "Use integer floor for negative components; truncation toward zero is a different algorithm."
+
+[[acceptance_obligations]]
+id = "R04"
+requirement = "Charge both component errors, including initial seed rounding and zero squarings."
+
+[[acceptance_obligations]]
+id = "R05"
+requirement = "Round stored error budgets upward at every stage and retain the complete quadratic propagation."
+
+[[acceptance_obligations]]
+id = "R06"
+requirement = "Local step bounds must be derived from the specified quantizer, not supplied as trusted result fields."
+
+[[acceptance_obligations]]
+id = "R07"
+requirement = "Retain identical exact scaling of actual argument, nominal argument and logarithm displacement; restore the same actual exponential."
+
+[[acceptance_obligations]]
+id = "R08"
+requirement = "Keep grid bits, scaling count, log terms and Taylor degree independent; valid guards are not target accuracy."
+
+[[acceptance_obligations]]
+id = "R09"
+requirement = "Accept a selected candidate only after its complete final budget meets the tolerance; permit explicit none on finite exhaustion."
+
+[[acceptance_obligations]]
+id = "R10"
+requirement = "No monotone schedule or completeness beyond the supplied candidate list may be inferred from finite selection."
+
+[[acceptance_obligations]]
+id = "R11"
+requirement = "The dyadic denominator theorem bounds stored values/errors only; no claim about overflow, numerator size, temporary algebra or runtime."
+
+[[acceptance_obligations]]
+id = "R12"
+requirement = "The real/complex mathematical definitions are not an executable rational serialization checker; preserve the refinement obligation."
+
+[[acceptance_obligations]]
+id = "R13"
+requirement = "Coordinate transport remains entire and separate from guarded center quotient evaluation; keep endpoint coefficient two."
+
+[[acceptance_obligations]]
+id = "R14"
+requirement = "Canonical head identity, actual multiplicities, scaled omitted tail, signed correction, proper-power correction and strict margin are unchanged."
+
+[[acceptance_obligations]]
+id = "R15"
+requirement = "Final quotient and head accumulation are exact unless a separate rounding allowance is proved; do not omit or double-count errors."
+
+[[acceptance_obligations]]
+id = "R16"
+requirement = "Finite rational diagnostics and static hashes do not establish Lean acceptance, zero-file completeness or positive prime margins."
+

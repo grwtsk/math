@@ -1,0 +1,291 @@
+# Historical original target Git blob: d0a623ae9e738a1f2896273188ed11dce14fc2c0.
+# Historical original parent: c90e918f668cfd9e04974a9c79283a72df121e1a; tree c3e51c6f19052fd6cb7787d1abe395cb36b26425.
+# Parent and containing-source identities below bind the repaired sources; source signatures are not kernel types.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-ordered-pair-366-v0.1"
+owner_repository = "grwtsk/math"
+issue = 366
+parent_issue = 357
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 360
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicOrderedPairMertensCorrelation"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicOrderedPairMertensCorrelation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "9d2613f414770c7ed5291e0afd3400099ba4208f"
+stacked_parent_tree = "0610220e558fbfde6bdc901d78298ef7ec812897"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicOrderedPairMertensCorrelation.lean"
+new_module_git_blob = "4ebf13f2d10e325668905a904635d326f8d9f6af"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-ordered-pair-mertens-correlation.md"
+mathematical_note_git_blob = "6fea1adddb4defab8dc114923a76887a1f92dc65"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicOrderedPairMertensCorrelation"
+authored_declaration_count = 21
+definition_count = 5
+theorem_script_count = 16
+private_helper_count = 1
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/DyadicBlockWeightedMertensSquare/rh-dyadic-block-equivalence-357-v0.1.toml"
+git_blob = "c1de506f455b6a1a48c47c734fc138f90e5c3423"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicBlockWeightedMertensSquare.lean"
+git_blob = "f4e73056029a7ad7b055ed75cdd9c99f4971f32a"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicWeightedMertensSquare.lean"
+git_blob = "4e8a822a0a1f97593c7f524c7a2067dc6dc5b4a5"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[upstream_sources]]
+path = "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean"
+git_blob = "4a5e8075d851d7c9b9f697412c28b0dd627885a1"
+selected_declarations = ["moebiusReal_abs_le_one"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[diagnostics]
+engine = "python-fractions-exact"
+check_count = 181292
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 8
+exhaustive_stream_count = 6561
+actual_moebius_cutoff = 4096
+checked_dyadic_scales = 12
+normal_mode_status = "PASS"
+optimized_mode_status = "NOT_SEPARATELY_RUN"
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+ordered_pairs_keep_both_orientations = true
+pair_signs_retained = true
+absolute_value_replacement_rejected = true
+diagonal_not_cancellation_supplier = true
+half_open_dyadic_cells_required = true
+finite_block_tables_not_universal = true
+lower_pair_bound_not_substitute_for_upper_bound = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+
+[[declarations]]
+source_name = "mertensPrefixSquareDiagonal"
+visibility = "public"
+kind = "def"
+source_signature = """def mertensPrefixSquareDiagonal (n : ℕ) : ℝ"""
+source_signature_sha256 = "75d98dbe59c29fe7d80d970ad97504efd0891cd95863821a1d1b9be8f0b45ab9"
+
+[[declarations]]
+source_name = "mertensPrefixOrderedPairCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = """def mertensPrefixOrderedPairCorrelation (n : ℕ) : ℝ"""
+source_signature_sha256 = "d15c064bf09edc7a5a7d258b045eeae705a200397910dc59f07008c34bd568fe"
+
+[[declarations]]
+source_name = "weightedMertensDyadicDiagonal"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensDyadicDiagonal (j : ℕ) : ℝ"""
+source_signature_sha256 = "459cfb27c61f9f67fa64a210d32dbb629835c85b4411cb643932d0c41b372661"
+
+[[declarations]]
+source_name = "weightedMertensDyadicOrderedPairCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensDyadicOrderedPairCorrelation (j : ℕ) : ℝ"""
+source_signature_sha256 = "5bd17ee7c2755f498e0735ca8dd1531edb0cb750c7a09435dfd411b773998631"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicOrderedPairMertensCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = """def SubpolynomialDyadicOrderedPairMertensCorrelation : Prop"""
+source_signature_sha256 = "c70499fe10002aec1624f421fa11922539b5ad6a5478f709dd2497ec014c738f"
+
+[[declarations]]
+source_name = "square_finset_sum_eq_diagonal_add_orderedPair"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem square_finset_sum_eq_diagonal_add_orderedPair
+    (s : Finset ℕ) (f : ℕ → ℝ) :
+    (∑ n ∈ s, f n) ^ 2 =
+      (∑ n ∈ s, f n ^ 2) +
+        ∑ a ∈ s, ∑ b ∈ s,
+          if a = b then 0 else f a * f b"""
+source_signature_sha256 = "f6afd3e60c6091bcfb722b92e835ca9df64f140f8b85d623810c2e606ca69836"
+
+[[declarations]]
+source_name = "pickupMertensPrefix_sq_eq_diagonal_add_orderedPair"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem pickupMertensPrefix_sq_eq_diagonal_add_orderedPair (n : ℕ) :
+    pickupMertensPrefix n ^ 2 =
+      mertensPrefixSquareDiagonal n +
+        mertensPrefixOrderedPairCorrelation n"""
+source_signature_sha256 = "9133d1616a2cc181574d54d74a1a3ad54010ebf3e27baad7da6acc26306625b2"
+
+[[declarations]]
+source_name = "mertensPrefixSquareDiagonal_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensPrefixSquareDiagonal_nonneg (n : ℕ) :
+    0 ≤ mertensPrefixSquareDiagonal n"""
+source_signature_sha256 = "bdd8a8a960fdd572432d6cdc4ff5217819c794ae69e87edc301dad475ee1d3d0"
+
+[[declarations]]
+source_name = "mertensPrefixSquareDiagonal_le_natCast"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensPrefixSquareDiagonal_le_natCast (n : ℕ) :
+    mertensPrefixSquareDiagonal n ≤ (n : ℝ)"""
+source_signature_sha256 = "5b2583b9141a8f4ea8ce469bddda753f3ae7d57a824b7441ce0f2adfeace9c09"
+
+[[declarations]]
+source_name = "weightedMertensDyadicDiagonal_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicDiagonal_nonneg (j : ℕ) :
+    0 ≤ weightedMertensDyadicDiagonal j"""
+source_signature_sha256 = "d582a55ef1dd979b0ade1fb641ff4960a4638177319ac50014da931ce53c289c"
+
+[[declarations]]
+source_name = "weightedMertensDyadicBlock_eq_diagonal_add_orderedPair"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicBlock_eq_diagonal_add_orderedPair (j : ℕ) :
+    weightedMertensDyadicBlock j =
+      weightedMertensDyadicDiagonal j +
+        weightedMertensDyadicOrderedPairCorrelation j"""
+source_signature_sha256 = "7e99f07755b0523bbd04ce309160bd835d895ede1e01e7ce8b7dd55bf744ee9d"
+
+[[declarations]]
+source_name = "weightedMertensDiagonal_summand_le_inv_dyadic"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDiagonal_summand_le_inv_dyadic
+    {j n : ℕ}
+    (hn : n ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1))) :
+    mertensPrefixSquareDiagonal n *
+        (n : ℝ) ^ (-(1 : ℝ)) *
+        ((n + 1 : ℕ) : ℝ) ^ (-(1 : ℝ)) ≤
+      (((2 ^ j : ℕ) : ℝ))⁻¹"""
+source_signature_sha256 = "0ceaddab4fa50014c65c4c67a2f0a5305b5761542c51283d60221af6f9b2abad"
+
+[[declarations]]
+source_name = "weightedMertensDyadicDiagonal_le_one"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicDiagonal_le_one (j : ℕ) :
+    weightedMertensDyadicDiagonal j ≤ 1"""
+source_signature_sha256 = "6dfc7ac0634ad57f4902b8d239271f72469c77bdd8d171bc79087b7e9094de54"
+
+[[declarations]]
+source_name = "weightedMertensDyadicOrderedPairCorrelation_le_block"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicOrderedPairCorrelation_le_block (j : ℕ) :
+    weightedMertensDyadicOrderedPairCorrelation j ≤
+      weightedMertensDyadicBlock j"""
+source_signature_sha256 = "e110fcf83aeaacc2cefe544e7ca1f2220908795b7c95ad8b63c5d32626278d8b"
+
+[[declarations]]
+source_name = "one_le_dyadic_rpow"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem one_le_dyadic_rpow {δ : ℝ} (hδ : 0 < δ) (j : ℕ) :
+    1 ≤ (((2 ^ j : ℕ) : ℝ) ^ δ)"""
+source_signature_sha256 = "486e6851ac78d9ee744ba1d200e31e47a5bcd61912f2c4311014c5d66708b135"
+
+[[declarations]]
+source_name = "subpolynomialOrderedPair_of_dyadicBlock"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialOrderedPair_of_dyadicBlock
+    (hblock : SubpolynomialDyadicBlockWeightedMertensSquare) :
+    SubpolynomialDyadicOrderedPairMertensCorrelation"""
+source_signature_sha256 = "ed393cc5e54acc06e32f502d35f1dc7c37f1d2d6e2d93d2b794275794319468b"
+
+[[declarations]]
+source_name = "subpolynomialDyadicBlock_of_orderedPair"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicBlock_of_orderedPair
+    (hpair : SubpolynomialDyadicOrderedPairMertensCorrelation) :
+    SubpolynomialDyadicBlockWeightedMertensSquare"""
+source_signature_sha256 = "58a1dad0754c4209bb523fb6566310ad29b2e03f3bec03b9fa0e33e802c1fa3f"
+
+[[declarations]]
+source_name = "subpolynomialDyadicOrderedPair_iff_block"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicOrderedPair_iff_block :
+    SubpolynomialDyadicOrderedPairMertensCorrelation ↔
+      SubpolynomialDyadicBlockWeightedMertensSquare"""
+source_signature_sha256 = "5139eb200ca7a01bf1bd51f8e290cfca5b34703debba80f197d53d58d617934d"
+
+[[declarations]]
+source_name = "subpolynomialDyadicOrderedPair_iff_cumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicOrderedPair_iff_cumulative :
+    SubpolynomialDyadicOrderedPairMertensCorrelation ↔
+      SubpolynomialCumulativeWeightedMertensSquare"""
+source_signature_sha256 = "43d2dbdfcd359179bba8b5e491f2a7324f84d0e5e35766eb224705a9501f0388"
+
+[[declarations]]
+source_name = "subpolynomialDyadicOrderedPair_iff_allPositiveWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicOrderedPair_iff_allPositiveWeightedMertensSquare :
+    SubpolynomialDyadicOrderedPairMertensCorrelation ↔
+      AllPositiveWeightedMertensSquare"""
+source_signature_sha256 = "895f8854f8093cc6228fa97ba6f968c34f505dcdc80406e6515715d2c1057e87"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicOrderedPairMertensCorrelation"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem riemannHypothesis_of_subpolynomialDyadicOrderedPairMertensCorrelation
+    (hpair : SubpolynomialDyadicOrderedPairMertensCorrelation) :
+    _root_.RiemannHypothesis"""
+source_signature_sha256 = "f00eaae6bbe4c58d4e429b3811c500fa0871bd6e1dfad3db8876bdf3fe9145d6"

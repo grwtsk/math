@@ -35,8 +35,8 @@ separate obligation.
 
 The [source](../../../../GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean),
 [positive controls](../../../../GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicReduction.lean),
-[native receipt](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json)
-and [historical integration record](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-integration-2026-10-15.json)
+native receipt (artifact:gitblob:812ed44271f3984ca38b7fc940163fc84fc6a536)
+and historical integration record (artifact:gitblob:51b4c9704798e0a1adda8831fe4f116ec06ee271)
 record the selected source and control checks; the integration record retains the earlier context. The relocated-context native receipt audits 57 owned declarations in its exact recorded source and verifier context. This is not a theorem count or a claim that later shared verifier edits were replayed. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
@@ -49,7 +49,7 @@ and Apache-2.0 terms from
 Mathlib's cyclotomic ideal results retain Xavier Roblot's named credit, with
 individual imported cyclotomic/number-field/ideal-norm credits including
 Riccardo Brasca, Ashvni Narayanan, Anne Baanen, Alex J. Best and Eric Rodriguez. The
-[source review](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-source-review-2026-10-15.json)
+source review (artifact:gitblob:7c8e1ea184c82c8a661d37b914fdd95d80bfd70f)
 records exact identities and bounded source comparisons. Human direction:
 grwtsk contributors; adaptation, formalization and checking: OpenAI Codex.
 Correlated model/source review is not independent validation.

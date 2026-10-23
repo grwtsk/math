@@ -113,7 +113,7 @@ theorem heightCount_nat_le_budget (N : ℕ) :
   calc
     _ ≤ (heightCount 2 : ℝ) + ∑ k ∈ Finset.range N, (bandMass (k + 2) : ℝ) := hc
     _ ≤ (heightCount 2 : ℝ) + ∑ _k ∈ Finset.range N, localCountBudget (N + 2) := by
-      apply add_le_add_left
+      apply add_le_add le_rfl
       apply Finset.sum_le_sum
       intro k hk
       exact (bandMass_le_localCountBudget (k + 2) (by omega)).trans
@@ -163,7 +163,7 @@ theorem heightCount_le_low_add (t : ℝ) (ht : 2 ≤ t) :
     _ ≤ (heightCount 2 : ℝ) + (N : ℝ) * localCountBudget (N + 2) :=
       heightCount_nat_le_budget N
     _ ≤ (heightCount 2 : ℝ) + (2 * t) *
-        ((22 / Real.log (6 / 5 : ℝ)) * Real.log t) := add_le_add_left hp _
+        ((22 / Real.log (6 / 5 : ℝ)) * Real.log t) := add_le_add le_rfl hp
     _ = _ := by unfold countingCoefficient; ring
 
 /-- Uniform count for EVERY finite high subfamily. The exact low mass cancels;

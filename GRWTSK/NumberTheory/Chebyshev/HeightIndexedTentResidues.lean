@@ -153,7 +153,7 @@ theorem rounded_boundary_formula (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
       (h : ℂ) - (∑ z ∈ heightHead (separatedHeight J),
         (multiplicity z : ℂ) * tentKernel x h z.1) + (correctionPrefix N x h : ℂ) := by
   have hT : 0 < T := by
-    have hJ := Nat.cast_nonneg (R := ℝ) J
+    have hJ := Nat.cast_nonneg (α := ℝ) J
     linarith [(rounded_height_bounds J T herr).1]
   rw [boundary_div_at_height x h hh ha N T hT (rounded_avoids J T herr),
     rounded_heightHead_eq J T herr]
@@ -174,7 +174,7 @@ theorem rounded_right_change (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
       vertical (integrand x h) 2 (separatedHeight J) / ((2 * Real.pi : ℝ) : ℂ) =
         edgeRemainder x h N T - edgeRemainder x h N (separatedHeight J) := by
   have hT : 0 < T := by
-    have hJ := Nat.cast_nonneg (R := ℝ) J
+    have hJ := Nat.cast_nonneg (α := ℝ) J
     linarith [(rounded_height_bounds J T herr).1]
   rw [right_residue_at_height x h hh ha N T hT (rounded_avoids J T herr),
     right_residue_at_height x h hh ha N (separatedHeight J)
@@ -203,9 +203,10 @@ theorem rounded_right_tendsto_squareSource (n : ℕ) (hn : 2 ≤ n) (H : ℕ →
   have he : (∫ t : ℝ,
       integrand (squareCenter n) (squareRadius n) ((2 : ℂ) + (t : ℂ) * Complex.I)) /
         ((2 * Real.pi : ℝ) : ℂ) = (squareTentMangoldt n : ℂ) := by
-    simpa only [integrand, rightLine, Complex.ofReal_div, Complex.ofReal_one,
-      div_eq_mul_inv, mul_comm] using (squareTentMangoldt_eq_rightLine n hn).symm
-  simpa only [he] using hv.div_const ((2 * Real.pi : ℝ) : ℂ)
+    simpa [integrand, rightLine, div_eq_mul_inv, mul_comm] using (squareTentMangoldt_eq_rightLine n hn).symm
+  have hv' := hv.div_const ((2 * Real.pi : ℝ) : ℂ)
+  rw [show ((2 : ℝ) : ℂ) = 2 by norm_num, he] at hv'
+  exact hv'
 
 /-- Certified height perturbations change the correction by a quantity tending to zero,
 even for an arbitrary moving left cutoff. This does NOT prove either correction tends to zero. -/

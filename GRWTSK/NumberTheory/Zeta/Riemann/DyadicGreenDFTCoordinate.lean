@@ -49,7 +49,7 @@ theorem location_coe_eq_normalized_coe
   have hperiod :=
     (AddCircle.coe_add_period (1 : ℝ)
       ((n : ℝ) / (X : ℝ) - 1))
-  convert hperiod.symm using 1 <;> ring
+  convert hperiod.symm using 1; ring
 
 theorem fourier_at_location_eq_DFTPhase
     (X : ℕ) (k : ℤ) (n : ℕ) :
@@ -103,14 +103,10 @@ theorem greenFourierPrimeCoordinate_eq_weightedDFT
     greenWeightedDFTPhaseSum
     greenWindowCoefficientMassComplex
   simp_rw [fourierModeValue_location_eq_DFT hk]
-  rw [← Finset.sum_div]
-  congr 1
-  rw [Finset.sum_sub_distrib]
-  apply congrArg₂ (· - ·)
-  · apply Finset.sum_congr rfl
-    intro n hn
-    ring
-  · rfl
+  rw [← Finset.sum_sub_distrib, Finset.sum_div]
+  apply Finset.sum_congr rfl
+  intro n _hn
+  ring
 
 /-- Full witness coordinate with the arithmetic term now in literal DFT form. -/
 theorem greenArithmeticFourierCoordinate_eq_background_sub_weightedDFT

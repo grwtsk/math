@@ -1,0 +1,175 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "tent-finite-residue-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.TentFiniteResidueCore"
+build_target = "GRWTSK.Interfaces.TentFiniteResidueCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "50530953a6326fa34fb4c3d457017749a20377b1"
+base_tree = "2606167683c92ea2509fe45a98a56863cc6504bb"
+stacked_on_pr = 285
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/TentPoleSubtractionCore/tent-pole-subtraction-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "b57177610ded8a6627350be4daef04466950c03e".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "0c21bb24d0331ca81a47fde4d99dff84f0d9e030".
+# Pre-quadrature-repair inherited_target_blob = "169ee0ca93758bcf86f1b65a47d7e9f05fb484e1".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "eaf9e079559ee35b215ac13cff2bedcd0e2529e2".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "ee2b73eadfe009425480f0a69f31525922b97d13"
+receipt_policy = "Bind the new commit/tree externally; ancestor receipts do not accept this target."
+inventory_policy = "Lexical names only; reconcile all exact elaborated types and transitive imports."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectangularCauchyKernel"
+path = "GRWTSK/Analysis/Complex/RectangularCauchyKernel.lean"
+source_blob = "073dda1949888f8f3d3ed8b7b0c244cb3c719141"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.CauchyEdgePrimitives"
+path = "GRWTSK/Analysis/Real/CauchyEdgePrimitives.lean"
+source_blob = "68aee76756acc536670f9e77301416e970a3039d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TentFiniteResidueCore"
+path = "GRWTSK/Interfaces/TentFiniteResidueCore.lean"
+source_blob = "f0abc21dc4214bf9299bcbd0cb74b71f17f42257"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/RectangularResidueControls.lean"
+source_blob = "43b92c914720c7d6a93497bd3b0eece5df2f8822"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues"
+path = "GRWTSK/NumberTheory/Chebyshev/TentFiniteResidues.lean"
+source_blob = "10451053d59556e4bbe608951e9ddbfb394f4720"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectangularPoleReduction"
+path = "GRWTSK/Analysis/Complex/RectangularPoleReduction.lean"
+source_blob = "3db8517b26fbd3e77df3523b135a64b703c84fe8"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TentPoleSubtractionCore"
+path = "GRWTSK/Interfaces/TentPoleSubtractionCore.lean"
+source_blob = "909dfe7719905999ea0897a640e4cef2d0fa89b5"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentPoleSubtraction"
+path = "GRWTSK/NumberTheory/Chebyshev/TentPoleSubtraction.lean"
+source_blob = "6db9f869d9a8f7ee9a79f18199194d371602d9ef"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Arctan.lean"
+source_blob = "dc89658bb21aeb4e93311ea74956f0f08870751a"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/ArctanDeriv.lean"
+source_blob = "ddbd9a85f0b34e76ee4f9e7614a57018eedcc103"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean"
+source_blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+
+[declarations]
+public = [
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.inverse_cartesian",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.I_mul_inverse_cartesian",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.horizontal_cauchy",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.I_mul_vertical_cauchy",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_cauchy",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_cauchy_exterior",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_const_mul",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_swap",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_simple_pole",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_finset_sum",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_principalSum",
+  "GRWTSK.Analysis.Complex.RectangularCauchyKernel.boundaryIntegral_eq_coefficient_sum",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.squared_radius_pos",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.continuous_radial_density",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.continuous_angular_density",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.hasDerivAt_radial_primitive",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.hasDerivAt_angular_primitive",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.integral_radial_density",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.integral_angular_density",
+  "GRWTSK.Analysis.Real.CauchyEdgePrimitives.arctan_reciprocal_corner",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.centered_interior",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.noncentral_interior",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.exterior_is_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.coefficient_minus_two",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.reversed_orientation",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.boundary_point_not_interior",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.boundary_point_not_exterior",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.zero_height_guard",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls.negative_corner_has_opposite_sign",
+  "GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues.tent_boundary_residue_formula",
+  "GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues.tent_boundary_div_two_pi_I",
+  "GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues.rightSegment_finite_residue_formula",
+]
+
+[controls]
+required = [
+  "Nonzero signed transverse coordinates imply positive squared radii on complete edges.",
+  "Real primitives are used on each edge; no global complex-log branch is assumed.",
+  "The upward vertical differential includes I. The real-parameter right integral uses 2*pi.",
+  "Four positive reciprocal corner pairs give exactly 2*pi; negative ratios have another sign.",
+  "Strict interior yields 2*pi*I; exterior to the closed rectangle yields zero.",
+  "Boundary points satisfy neither normalization domain; no half-residue convention is introduced.",
+  "Reversing left and right reverses the complete boundary orientation.",
+  "Finite sums require edge integrability before linearity is invoked.",
+  "Actual complex points and analytic multiplicities are preserved; the pole and both zero families are disjoint.",
+  "The actual coefficient sum retains the radius h and the complete signed trivial prefix.",
+  "The finite contour formula has no winding, residue-equality, counting or decay hypothesis.",
+  "The upward-left and top-minus-bottom edge corrections remain in the finite right-segment formula.",
+  "Finite normalization supplies no infinite boundary decay, global count bound, evaluator or all-interval prime margin.",
+  "Every inherited type, import, axiom and native dependency must be audited at the new exact head.",
+]
+
+[acceptance]
+requires_all_inherited_targets = true
+requires_all_new_and_inherited_modules = true
+requires_hostile_replay = true
+requires_external_acceptance = true
+external_owner_issue = 100
+root_only_success_is_insufficient = true
+no_execution_requested = true

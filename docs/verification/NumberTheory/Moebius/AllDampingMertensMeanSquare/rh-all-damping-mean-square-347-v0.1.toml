@@ -1,0 +1,308 @@
+# Original stacked parent was e29e1e5c22e1ab5814210fb15c6f3767ff033e3d, tree a7cbc7e4d1f87543e7e508da83019a2ed9ac0cb9.
+# Historical PR #349 target Git blob: c4494dddd9ffecd54bb77c3a51c3db90b3f0ecc7.
+# This revision corrects signature digests; these remain source signatures, not kernel types.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-all-damping-mean-square-347-v0.1"
+owner_repository = "grwtsk/math"
+issue = 347
+parent_issue = 343
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 344
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.AllDampingMertensMeanSquare"
+build_target = "GRWTSK.NumberTheory.Moebius.AllDampingMertensMeanSquare"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "7d933de1329a278b6a0d2720eeef84b983348602"
+stacked_parent_tree = "6f32cf73d62545f557b651e4e514ff8bef26f7f4"
+new_module_path = "GRWTSK/NumberTheory/Moebius/AllDampingMertensMeanSquare.lean"
+new_module_git_blob = "923ed2cb410b9df4eeec45c69530df89a630d3f5"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/all-damping-mertens-mean-square.md"
+mathematical_note_git_blob = "0a65e27ab257c06f50440f3e0e1d08912615bf77"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_module_coverage_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+new_damping_paid = false
+unconditional_rh_claim = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.AllDampingMertensMeanSquare"
+authored_declaration_count = 21
+definition_count = 4
+theorem_script_count = 17
+private_helper_count = 0
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/CompensatedCorrelationCriterion/rh-compensated-correlation-343-v0.1.toml"
+git_blob = "2ce6a75d9dad5063ee999527a4ea7619d3ff16ff"
+status = "STACKED_SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/LogarithmicPickupSeries/rh-logarithmic-series-335-v0.3.toml"
+git_blob = "3b3863eb6ab1235743f3021d60f5febc2de26738"
+status = "SOURCE_INTEGRATED_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CompensatedCorrelationCriterion.lean"
+git_blob = "82e49398c769a90c64bdc679877ad8d0ca1d0423"
+status = "STACKED_SOURCE_DRAFT_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSeries.lean"
+git_blob = "abb0bba38e30fcdd41c4c0737445b9b9e5d8551d"
+status = "SOURCE_INTEGRATED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean"
+git_blob = "3f6351a4be4f1edb54228e7d6fe7792dbaa9b2e3"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean"
+git_blob = "07f131eb969d773d205b636ef157be87daa6e021"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean"
+git_blob = "5563864fc93f3c1732b50fb22a6db9f8d37e6356"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean"
+git_blob = "b9035e3e51cca47aa3c4d36f1cc4c375ed6169ef"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/PSeries.lean"
+git_blob = "6499506f39f848904fbf7c0aca08bc303c19dca4"
+selected_declarations = ["Real.summable_nat_rpow"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Topology/Algebra/InfiniteSum/Real.lean"
+git_blob = "32b87fa4ac3121786c310fa7b31ef263de567d13"
+selected_declarations = ["summable_of_sum_range_le", "Real.tsum_le_of_sum_range_le"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[declarations]]
+source_name = "sampleIncrementMeanSquareTotal"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleIncrementMeanSquareTotal (ε : ℝ) : ℝ"
+source_signature_sha256 = "6a6ce100ba0725cbb715d5e25715d70aff8dcee9f80a92afc6f6120a45878d65"
+
+[[declarations]]
+source_name = "sampleIncrementMeanSquareTotal_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleIncrementMeanSquareTotal_nonneg (ε : ℝ) :\n    0 ≤ sampleIncrementMeanSquareTotal ε"
+source_signature_sha256 = "4cfad9f01ef2eaa8c16496a2590d092fec275aba5acc9a46dd5130220673fbef"
+
+[[declarations]]
+source_name = "sampleResidue_sq_le_incrementMeanSquareTotal"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_sq_le_incrementMeanSquareTotal\n    {ε : ℝ} (hε0 : 0 < ε) (hε1 : ε ≤ 1)\n    (hs : CriticalMertensIncrementMeanSquare ε)\n    {n : ℕ} (hn : 1 ≤ n) :\n    sampleResidue n ^ 2 ≤\n      sampleIncrementMeanSquareTotal ε * ((n : ℝ) ^ ε / ε)"
+source_signature_sha256 = "c9948910789b80209301bb57a0228ad6e134f7e63c97c363850c54889d99ffca"
+
+[[declarations]]
+source_name = "sampleCellMass_eq_exponentialLogDrop"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_eq_exponentialLogDrop (σ : ℝ) (k : ℕ) :\n    sampleCellMass σ k =\n      (4 / σ) * sampleResidue (k + 1) ^ 2 *\n        exponentialLogDrop σ (k + 1)"
+source_signature_sha256 = "35d0a3a2a69250218891bc80289d083c0fda1e42c2aaec7289d9b27029de5899"
+
+[[declarations]]
+source_name = "sampleCellMass_le_incrementMeanSquareMajorant"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_le_incrementMeanSquareMajorant\n    {σ ε : ℝ} (hσ : 0 < σ) (hε0 : 0 < ε)\n    (hε1 : ε ≤ 1) (hεσ : ε < σ)\n    (hs : CriticalMertensIncrementMeanSquare ε) (k : ℕ) :\n    sampleCellMass σ k ≤\n      (4 * sampleIncrementMeanSquareTotal ε / ε) *\n        (((k + 1 : ℕ) : ℝ) ^ (ε - σ - 1))"
+source_signature_sha256 = "121a74d3cd9c74f37118456cfff581d6739edc706d73ec0860085940015acd0a"
+
+[[declarations]]
+source_name = "summable_sampleCellMass_of_incrementMeanSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem summable_sampleCellMass_of_incrementMeanSquare\n    {σ ε : ℝ} (hσ : 0 < σ) (hε0 : 0 < ε)\n    (hε1 : ε ≤ 1) (hεσ : ε < σ)\n    (hs : CriticalMertensIncrementMeanSquare ε) :\n    Summable (sampleCellMass σ)"
+source_signature_sha256 = "02cb0cd10186806756d0fdb91330f38b703d3af25a6232505b7a17295e9bb49f"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_of_incrementMeanSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_of_incrementMeanSquare\n    {σ ε : ℝ} (hσ : 0 < σ) (hε0 : 0 < ε)\n    (hε1 : ε ≤ 1) (hεσ : ε < σ)\n    (hs : CriticalMertensIncrementMeanSquare ε) :\n    CompensatedCorrelationBound σ"
+source_signature_sha256 = "51ad673f6ccbdf67aed932270c6778d9c8aa83173c217cac1d177097d8331325"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_of_weightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_of_weightedMertensSquare\n    {σ ε : ℝ} (hσ : 0 < σ) (hε0 : 0 < ε)\n    (hε1 : ε ≤ 1) (hεσ : ε < σ)\n    (hs : CriticalWeightedMertensSquareSummable ε) :\n    CompensatedCorrelationBound σ"
+source_signature_sha256 = "e001601e4e9d77418535a200572e5ca18cb8885151456e118212adc8568e6030"
+
+[[declarations]]
+source_name = "ReciprocalIncrementMeanSquare"
+visibility = "public"
+kind = "def"
+source_signature = "def ReciprocalIncrementMeanSquare : Prop"
+source_signature_sha256 = "cd7ebb5a28be16b184375c18413929ec41a6f711efdcdbcba7f9344068972476"
+
+[[declarations]]
+source_name = "ReciprocalWeightedMertensSquare"
+visibility = "public"
+kind = "def"
+source_signature = "def ReciprocalWeightedMertensSquare : Prop"
+source_signature_sha256 = "a22b779abe43bdc755654a0f5148a9319844a635e8139e23772f29ccaeea04d8"
+
+[[declarations]]
+source_name = "AllPositiveWeightedMertensSquare"
+visibility = "public"
+kind = "def"
+source_signature = "def AllPositiveWeightedMertensSquare : Prop"
+source_signature_sha256 = "d549534819dac1852e68278b49df826ec9e881534256df0a0ab1851fbe85d30b"
+
+[[declarations]]
+source_name = "reciprocalHalfDamping_pos"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem reciprocalHalfDamping_pos (j : ℕ) :\n    0 < CofinalDamping.reciprocalDamping j / 2"
+source_signature_sha256 = "628f527196932a2548e4bff94636bc4a496756bbb01bdd324fe4248cb70ca2bd"
+
+[[declarations]]
+source_name = "reciprocalHalfDamping_le_one"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem reciprocalHalfDamping_le_one (j : ℕ) :\n    CofinalDamping.reciprocalDamping j / 2 ≤ 1"
+source_signature_sha256 = "a62ce152c683db097d8f1859f4b5f5d0f65b332ccb5692f7936d67897b5ec9f0"
+
+[[declarations]]
+source_name = "reciprocalHalfDamping_lt_damping"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem reciprocalHalfDamping_lt_damping (j : ℕ) :\n    CofinalDamping.reciprocalDamping j / 2 <\n      CofinalDamping.reciprocalDamping j"
+source_signature_sha256 = "001f27a4352b15ce1badbc0672262b2f8e8f2719702d89b593c9cac291067a27"
+
+[[declarations]]
+source_name = "reciprocalCompensatedCorrelation_of_incrementMeanSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem reciprocalCompensatedCorrelation_of_incrementMeanSquare\n    (hs : ReciprocalIncrementMeanSquare) :\n    ReciprocalCompensatedCorrelation"
+source_signature_sha256 = "80f2cb181a9611217dcee53e36062812442c98ab5db2f31811534d255efeea15"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_reciprocalIncrementMeanSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem riemannHypothesis_of_reciprocalIncrementMeanSquare\n    (hs : ReciprocalIncrementMeanSquare) :\n    _root_.RiemannHypothesis"
+source_signature_sha256 = "1bfb12b15d793db98b7a7e16e09242f0f3fbfa671adabf2fbba6d2a937c5ec90"
+
+[[declarations]]
+source_name = "reciprocalIncrementMeanSquare_of_weightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem reciprocalIncrementMeanSquare_of_weightedMertensSquare\n    (hs : ReciprocalWeightedMertensSquare) :\n    ReciprocalIncrementMeanSquare"
+source_signature_sha256 = "7fd6dff37a286a319f94bc2348524fb59a38b64f1ae3b0d175a04df538343f6e"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_reciprocalWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem riemannHypothesis_of_reciprocalWeightedMertensSquare\n    (hs : ReciprocalWeightedMertensSquare) :\n    _root_.RiemannHypothesis"
+source_signature_sha256 = "b12e279be8ff5f637b397cfa82ec615c6ffa51987dd446bb1712b3a738de542e"
+
+[[declarations]]
+source_name = "weightedMertensSquareSummable_mono"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensSquareSummable_mono\n    {ε δ : ℝ} (hεδ : ε ≤ δ)\n    (hs : CriticalWeightedMertensSquareSummable ε) :\n    CriticalWeightedMertensSquareSummable δ"
+source_signature_sha256 = "a81c7243f42dc6b26b4b35532e8e9981f080847c1d3e70ec5e7f18f5a996253f"
+
+[[declarations]]
+source_name = "allPositiveWeightedMertensSquare_iff_reciprocal"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem allPositiveWeightedMertensSquare_iff_reciprocal :\n    AllPositiveWeightedMertensSquare ↔\n      ReciprocalWeightedMertensSquare"
+source_signature_sha256 = "8e5de4a22089cd74dcb18920fc9547ec285a216294e04cbeed44bafc52d5d2c8"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_allPositiveWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem riemannHypothesis_of_allPositiveWeightedMertensSquare\n    (hs : AllPositiveWeightedMertensSquare) :\n    _root_.RiemannHypothesis"
+source_signature_sha256 = "966249ea953eef42cd9304a10a2f046a0d829e20a7640d884e90e4bad90806df"
+
+[[hostile_controls]]
+id = "reject-epsilon-equals-sigma"
+description = "The comparison exponent is harmonic when epsilon equals the target damping; strict epsilon < sigma is required."
+
+[[hostile_controls]]
+id = "reject-single-damping"
+description = "One fixed damping or the damping-one critical boundary cannot satisfy the cofinal RH criterion."
+
+[[hostile_controls]]
+id = "reject-unpaid-increment-series"
+description = "The increment mean-square and weighted Mertens-square families remain explicit arithmetic premises."
+
+[[hostile_controls]]
+id = "reject-unsigned-source-replacement"
+description = "The actual signed sample residue, including its Mertens endpoint, cannot be replaced by separate unsigned prefixes."
+
+[[hostile_controls]]
+id = "reject-positive-majorant-equivalence"
+description = "The all-positive weighted Mertens-square condition is sufficient; no converse from RH or energy is claimed."
+
+[[hostile_controls]]
+id = "reject-source-as-replay"
+description = "Source text, signatures, merged parents, and finite diagnostics do not establish elaboration or trust acceptance."
+
+[acceptance]
+requires_all_authored_and_generated_declarations = true
+requires_exact_elaborated_types = true
+requires_full_transitive_dependency_closure = true
+requires_axiom_and_native_audit = true
+requires_hostile_controls = true
+requires_independent_source_review = true
+requires_immutable_external_receipt = true
+requires_stacked_parent_identity = true
+conditional_supplier_must_remain_explicit = true
+
+[nonclaims]
+claims = [
+  "Riemann hypothesis",
+  "new unconditional positive damping",
+  "summability of the increment mean-square family",
+  "summability of the weighted Mertens-square family",
+  "necessity of the positive majorant for RH",
+  "Lean elaboration or kernel acceptance",
+  "transitive axiom or native-dependency acceptance"
+]

@@ -1,0 +1,245 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "pole-normalized-contour-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.PoleNormalizedContourCore"
+build_target = "GRWTSK.Interfaces.PoleNormalizedContourCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "88941cbdaf84eb06957ecaed99403999f4991c3d"
+parent_tree = "e09f0dc9d6c9bc038cc33e7dae1f611f3476a888"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/EndpointSignedCountCore/endpoint-signed-count-v0.1.toml"
+inherited_target_blob = "299af3aa6d55e0dce04f2685624e2a27fb5bdb7a"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+upper_count_status = "NOT_SUPPLIED; local normalized-source patches are not a complete contour or upper count."
+receipt_policy = "No execution authority or receipt; bind any future acceptance externally to actual commit/tree/target."
+inventory_policy = "Every predecessor type, control, large finite decision and transitive import/axiom obligation persists. The selected catalog is NOT a full closure. Reconcile every generated recursion equation, decision instance and actual source/order/derivative identity. Empty inherited declaration arrays waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.PoleNormalizedContourCore"
+path = "GRWTSK/Interfaces/PoleNormalizedContourCore.lean"
+source_git_blob = "0f5fb1219c8f8daf83b5946eed285382fc9d0975"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PoleNormalizedContour"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PoleNormalizedContour.lean"
+source_git_blob = "cf365d074ce366df10a5dc3876dcfa1709f22d0d"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.model_one_base", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.derivative_at_removed_pole", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.raw_product_spurious_zero", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.rational_pole_jet", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.sourced_pole_value", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.rational_patch_passes", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.actual_closed_disk_nonzero", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.equality_margin_rejected", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.rejected_disk_still_nonzero", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.invalid_geometry_rejected", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.fictitious_pole_value_passes", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.fictitious_pole_value_has_no_enclosure", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.norm_lower_not_upper", "GRWTSK.RiemannHypothesis.Checks.PoleNormalizedContour.endpoints_alone_do_not_cover"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedContourBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedContourBounds.lean"
+source_git_blob = "4744ddf4d7a4d52ac6e2a6802c61660eff3b3e96"
+required_declarations = ["GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.analytic_order_eq", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.canonical_weight_eq", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.order_at_one", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.zero_iff_target", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.norm_le", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.disk_bounds", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.derivative_bound", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.samplePatch", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.pole_variation", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.pole_collar_variation", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.poleCollarPatch", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.pole_collar_lower", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.no_target_in_pole_collar", "GRWTSK.RiemannHypothesis.PoleNormalizedContourBounds.punctured_pole_lower"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedEndpointJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedEndpointJet.lean"
+source_git_blob = "bb93b1bc2fc7f6aad133d64cee3924430949f419"
+required_declarations = ["GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.regular", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.regularSlope", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.coefficient", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.coefficientSlope", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.model", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.slope", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.regular_succ", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.regularSlope_succ", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.hasDerivAt_regular", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.hasDerivAt_coefficient", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.hasDerivAt_model", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.differentiable_model", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.deriv_model", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.model_eq_mul_previous", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.model_one", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.model_one_ne_raw_product", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.slope_one", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.source_residual", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.source_error", "GRWTSK.RiemannHypothesis.PoleNormalizedEndpointJet.derivative_error_of_uniform_source"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleNormalizedJet.lean"
+source_git_blob = "fa90642a45d78579a1202202b055fc3bc456f16d"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.regularJet", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.coefficientJet", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.regularJet_refines", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.coefficientJet_refines", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.assemble", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.assemble_sound", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.tailAllowance", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.sourceAllowance", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.sourceBall", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.source_error", "GRWTSK.RiemannHypothesis.RationalPoleNormalizedJet.sourceBall_sound"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPolePatch.lean"
+source_git_blob = "e1bc2347e739bc1cb2a78647478d1d478887d2d9"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalPolePatch.sampleLower", "GRWTSK.RiemannHypothesis.RationalPolePatch.leftMargin", "GRWTSK.RiemannHypothesis.RationalPolePatch.sizeBound", "GRWTSK.RiemannHypothesis.RationalPolePatch.factorBound", "GRWTSK.RiemannHypothesis.RationalPolePatch.sourceBound", "GRWTSK.RiemannHypothesis.RationalPolePatch.slopeBound", "GRWTSK.RiemannHypothesis.RationalPolePatch.Valid", "GRWTSK.RiemannHypothesis.RationalPolePatch.validDecidable", "GRWTSK.RiemannHypothesis.RationalPolePatch.check", "GRWTSK.RiemannHypothesis.RationalPolePatch.check_iff_valid", "GRWTSK.RiemannHypothesis.RationalPolePatch.sampleLower_le", "GRWTSK.RiemannHypothesis.RationalPolePatch.patchOfCheck", "GRWTSK.RiemannHypothesis.RationalPolePatch.check_sound", "GRWTSK.RiemannHypothesis.RationalPolePatch.assembled_patch_sound"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EndpointBernoulliResidual"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EndpointBernoulliResidual.lean"
+source_git_blob = "d6cc94a0247dfb94c05e138c9cd035f40f1b6f13"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripMellinBounds.lean"
+source_git_blob = "3c6c7e4356504348e7bd83d53a9be630ba232419"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+source_git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedDiskCauchy"
+path = "GRWTSK/Analysis/Complex/ClosedDiskCauchy.lean"
+source_git_blob = "10fd0445fae48aefb8726e721d9a93985c375021"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalEndpointJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalEndpointJet.lean"
+source_git_blob = "42ecc0619b210b15be65f28688a1330190b6a905"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointSignedCountCore"
+path = "GRWTSK/Interfaces/EndpointSignedCountCore.lean"
+source_git_blob = "3f3fd904ee0fbde588b45af5dbaa055fdc351ff6"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripPolePatch.lean"
+source_git_blob = "15a5f9c5f9e74262a5923809069947e2fdced117"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripAnalyticPatch.lean"
+source_git_blob = "11e28c5d48e3d607fab5427588ea90441215d16d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripPatchCertificate.lean"
+source_git_blob = "e95d14c96df89e507b48bc8023b0b5bf99f2ecc9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PeriodicBernoulliMellin"
+path = "GRWTSK/Analysis/Complex/PeriodicBernoulliMellin.lean"
+source_git_blob = "610ff1312cf70fca263c36588e3e456c9a0645f2"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.PeriodicBernoulli"
+path = "GRWTSK/Analysis/ErrorBounds/PeriodicBernoulli.lean"
+source_git_blob = "58eb2f959ac30beaee402055ebc8acc1c1f6b736"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EndpointCorrectedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EndpointCorrectedJet.lean"
+source_git_blob = "e0e39c443b0fcbe54413fc8a0fb33706b8001a5d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripRealAxisMellin.lean"
+source_git_blob = "d8f41771c84851553afc76bd7442e58ec992be70"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Rat/BigOperators.lean"
+source_git_blob = "214dd3e391b23ab1687ecbbbfb3b875f4ed3d641"
+
+[[hostile_controls]]
+id = "source_identity"
+required = true
+description = "Reuse the existing residue-normalized source with F(1)=1, not a raw totalized product."
+
+[[hostile_controls]]
+id = "canonical_orders"
+required = true
+description = "Transport analytic orders at actual nonpole points; count contribution at one is zero."
+
+[[hostile_controls]]
+id = "right_half_plane"
+required = true
+description = "Zero equivalence and source remainder retain positive real part; no silent crossing of Re(s)=0."
+
+[[hostile_controls]]
+id = "finite_inventory"
+required = true
+description = "Positive bases 1..N only; every Bernoulli correction and minus half endpoint retained."
+
+[[hostile_controls]]
+id = "pole_safe_definition"
+required = true
+description = "Define entire G before division. Nonpole raw-product identity is not asserted at one."
+
+[[hostile_controls]]
+id = "true_derivative"
+required = true
+description = "The second output is the derivative of G at ALL complex points, including one, for N>=1."
+
+[[hostile_controls]]
+id = "source_tail_factor"
+required = true
+description = "Pay the inherited integral remainder times |s-1| and the complete finite ball error."
+
+[[hostile_controls]]
+id = "pointwise_vs_derivative"
+required = true
+description = "A zero pointwise value residual does not imply a zero derivative residual; require uniform Cauchy input."
+
+[[hostile_controls]]
+id = "complete_disk_geometry"
+required = true
+description = "Positive left margin, nonnegative inner radius and strictly positive outer-to-inner gap required."
+
+[[hostile_controls]]
+id = "computed_derivative_bound"
+required = true
+description = "Cauchy source bound is derived, not a sampled derivative or a claimed curvature field."
+
+[[hostile_controls]]
+id = "proper_norm_direction"
+required = true
+description = "Use max coordinate absolute value as a lower bound; L1 magnitude is an upper bound only."
+
+[[hostile_controls]]
+id = "strict_margin"
+required = true
+description = "Equality e+MR=lower must reject; rejection is not a claim of a source zero."
+
+[[hostile_controls]]
+id = "actual_sample_semantics"
+required = true
+description = "A fictitious value two at one can pass the finite gate but has no true source enclosure."
+
+[[hostile_controls]]
+id = "rounded_arithmetic"
+required = true
+description = "Keep signed midpoint displacements, product-of-radii terms and all old logarithm/exponential trace checks."
+
+[[hostile_controls]]
+id = "effective_closed_collar"
+required = true
+description = "The actual full closed disk |s-1|<=1/5 receives norm lower bound 1/2; not just endpoint samples."
+
+[[hostile_controls]]
+id = "coverage_and_count"
+required = true
+description = "No full contour, winding theorem, canonical coverage or H(15)<4 is supplied by local patches."
+
+[[hostile_controls]]
+id = "inherited_trust"
+required = true
+description = "Entire predecessor chain and generated declarations need pinned elaboration and independent trust review."

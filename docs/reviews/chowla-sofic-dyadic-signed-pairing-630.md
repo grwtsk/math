@@ -264,7 +264,7 @@ dyadicSignedMixedEnergy_lower_bound
 
 Independent passive verification target:
 
-`verification/liouville-dyadic-signed-pairing-630-v0.1.toml`.
+`docs/verification/_unscoped/liouville-dyadic-signed-pairing-630-v0.1.toml`.
 
 This includes **13 selected local modules, 108 theorem heads,
 46 definitions**, retaining the earlier twelve-module

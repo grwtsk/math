@@ -130,19 +130,18 @@ theorem sum_mertensEndpointPairSet_eq_strata
               .fourDistinct then F p.1 p.2 else 0)) := by
         apply Finset.sum_congr rfl
         intro p _hp
-        cases h :
-            mertensEndpointFourMobiusStratum b n p.1 p.2 <;>
-          simp [h]
+        cases mertensEndpointFourMobiusStratum b n p.1 p.2 <;> simp
     _ = _ := by
       simp only [Finset.sum_add_distrib]
-      ring
 
 /-- Characterization of the diagonal stratum. -/
 theorem mertensEndpointFourMobiusStratum_eq_diagonal_iff
     (b n a c : ℕ) :
     mertensEndpointFourMobiusStratum b n a c = .diagonal ↔
       a = c := by
-  simp [mertensEndpointFourMobiusStratum]
+  dsimp only [mertensEndpointFourMobiusStratum]
+  repeat' split_ifs
+  all_goals tauto
 
 /-- Under the endpoint condition `n<b`, the forward cross stratum is exactly
 `a != c` and `c=a+h`. -/
@@ -150,18 +149,10 @@ theorem mertensEndpointFourMobiusStratum_eq_forwardCross_iff
     {b n a c : ℕ} (hnb : n < b) :
     mertensEndpointFourMobiusStratum b n a c = .forwardCross ↔
       a ≠ c ∧ c = a + (b - n) := by
-  have hh : 0 < b - n := Nat.sub_pos_of_lt hnb
-  simp [mertensEndpointFourMobiusStratum]
-  constructor
-  · intro h
-    by_cases hac : a = c
-    · simp [hac] at h
-    · simp [hac] at h
-      by_cases hf : c = a + (b - n)
-      · exact ⟨hac, hf⟩
-      · simp [hf] at h
-  · rintro ⟨hac, hf⟩
-    simp [mertensEndpointFourMobiusStratum, hac, hf]
+  have _hh : 0 < b - n := Nat.sub_pos_of_lt hnb
+  dsimp only [mertensEndpointFourMobiusStratum]
+  repeat' split_ifs
+  all_goals tauto
 
 /-- Under `n<b`, the backward cross stratum is exactly the remaining
 orientation `a=c+h`. -/
@@ -169,13 +160,10 @@ theorem mertensEndpointFourMobiusStratum_eq_backwardCross_iff
     {b n a c : ℕ} (hnb : n < b) :
     mertensEndpointFourMobiusStratum b n a c = .backwardCross ↔
       a ≠ c ∧ c ≠ a + (b - n) ∧ a = c + (b - n) := by
-  have hh : 0 < b - n := Nat.sub_pos_of_lt hnb
-  simp [mertensEndpointFourMobiusStratum]
-  by_cases hac : a = c
-  · simp [hac]
-  · by_cases hf : c = a + (b - n)
-    · simp [hac, hf]
-    · simp [hac, hf]
+  have _hh : 0 < b - n := Nat.sub_pos_of_lt hnb
+  dsimp only [mertensEndpointFourMobiusStratum]
+  repeat' split_ifs
+  all_goals tauto
 
 /-- The final stratum is exactly the absence of all three possible collision
 patterns. -/
@@ -183,14 +171,9 @@ theorem mertensEndpointFourMobiusStratum_eq_fourDistinct_iff
     {b n a c : ℕ} :
     mertensEndpointFourMobiusStratum b n a c = .fourDistinct ↔
       a ≠ c ∧ c ≠ a + (b - n) ∧ a ≠ c + (b - n) := by
-  simp [mertensEndpointFourMobiusStratum]
-  by_cases hac : a = c
-  · simp [hac]
-  · by_cases hf : c = a + (b - n)
-    · simp [hac, hf]
-    · by_cases hb : a = c + (b - n)
-      · simp [hac, hf, hb]
-      · simp [hac, hf, hb]
+  dsimp only [mertensEndpointFourMobiusStratum]
+  repeat' split_ifs
+  all_goals tauto
 
 /-- A four-distinct classified pair really gives four pairwise-distinct
 arguments when the shift is positive. -/
@@ -307,31 +290,31 @@ theorem mertensTwoPointEndpointFibreQuadraticEnergy_eq_collisionDecomposition
         intro n _hn
         rw [mertensTwoPointPrefix_sq_eq_fourMobiusSum]
         unfold mertensEndpointPairSet
-        rw [Finset.sum_product]
+        rw [Finset.product_eq_sprod, Finset.sum_product]
     _ = _ := by
-      apply Finset.sum_congr rfl
-      intro n _hn
-      rw [sum_mertensEndpointPairSet_eq_strata]
+      have hsplit (n : ℕ) := sum_mertensEndpointPairSet_eq_strata b n
+        (mertensEndpointFourMobiusTerm b n)
+      simp_rw [hsplit, Finset.sum_add_distrib]
       ring
 
 /-- Reciprocal endpoint-weighted diagonal contribution. -/
 def weightedMertensEndpointDiagonalEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointFibreDiagonalEnergy b
 
 /-- Reciprocal endpoint-weighted cross-collision contribution. -/
 def weightedMertensEndpointCrossCollisionEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointFibreCrossCollisionEnergy b
 
 /-- Reciprocal endpoint-weighted four-distinct contribution. -/
 def weightedMertensEndpointFourDistinctCorrelation
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointFibreFourDistinctCorrelation b
 
@@ -347,22 +330,9 @@ theorem weightedMertensSignedAbelEndpointFibreQuadraticEnergy_eq_strata
     weightedMertensEndpointDiagonalEnergy
     weightedMertensEndpointCrossCollisionEnergy
     weightedMertensEndpointFourDistinctCorrelation
-  apply congrArg (fun x : ℝ => 4 * x)
-  calc
-    (∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
-      ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
-        mertensTwoPointEndpointFibreQuadraticEnergy b) =
-      ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
-        ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
-          (mertensEndpointFibreDiagonalEnergy b +
-            mertensEndpointFibreCrossCollisionEnergy b +
-            mertensEndpointFibreFourDistinctCorrelation b) := by
-        apply Finset.sum_congr rfl
-        intro b _hb
-        rw [mertensTwoPointEndpointFibreQuadraticEnergy_eq_collisionDecomposition]
-    _ = _ := by
-      simp_rw [mul_add, Finset.sum_add_distrib]
-      ring
+  simp_rw [mertensTwoPointEndpointFibreQuadraticEnergy_eq_collisionDecomposition,
+    mul_add, Finset.sum_add_distrib]
+  ring
 
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 

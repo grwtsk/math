@@ -47,9 +47,11 @@ Hurewicz, hyperbolic lengths, Selberg, GUE, Chowla and RH remain open.
 
 set_option autoImplicit false
 noncomputable section
+open Topology
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone
 
+open _root_.Topology
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
@@ -128,10 +130,15 @@ def coneSetoid (k : ℕ) : Setoid (ConeCylinder k) where
   r := ConeConnected k
   iseqv := Relation.EqvGen.is_equivalence _
 
+local instance coneSourceSetoid (k : ℕ) : Setoid (ConeCylinder k) := coneSetoid k
+
 /-- An ACTUAL topological cone carrier: the Mathlib quotient of
 P_k × [0,1] by only its radius-zero apex equivalence. -/
 def PerimeterCone (k : ℕ) : Type :=
   Quotient (coneSetoid k)
+
+instance perimeterConeTopology (k : ℕ) : TopologicalSpace (PerimeterCone k) :=
+  inferInstanceAs (TopologicalSpace (Quotient (coneSetoid k)))
 
 /-- The cone's topology is exactly the Mathlib coinduced quotient
 topology from its full genuine cylinder source. -/
@@ -196,9 +203,9 @@ def coneRadius (k : ℕ) : PerimeterCone k → unitInterval :=
 
 theorem coneRadius_continuous (k : ℕ) :
     Continuous (coneRadius k) := by
-  apply Continuous.quotient_lift continuous_snd
-  intro p q h
-  exact coneConnected_preserves_radius k h
+  exact Continuous.quotient_lift
+    (show Continuous (fun p : ConeCylinder k => p.2) from continuous_snd)
+    (fun _ _ h => coneConnected_preserves_radius k h)
 
 /-- The ACTUAL parent jointly continuous map is constant along each
 new cone equivalence class, because parent #959 proves its entire
@@ -234,10 +241,8 @@ Hausdorff product-quotient supplier, rather than separate continuity
 of fixed-radius slices or an unexplained quotient product axiom. -/
 theorem coneToFilled_continuous (k : ℕ) :
     Continuous (coneToFilled k) := by
-  apply Continuous.quotient_lift
-    (perimeterJointRadialMap_continuous k)
-  intro p q h
-  exact coneConnected_jointRadialMap_eq k h
+  exact Continuous.quotient_lift (perimeterJointRadialMap_continuous k)
+    (fun _ _ h => coneConnected_jointRadialMap_eq k h)
 
 /-- SURJECTIVE on the ENTIRE genuine filled quotient, since every
 radial square source point is an image of the SAME unpaired source
@@ -354,19 +359,19 @@ theorem coneToFilled_not_injective (k : ℕ) :
 /-- The topological cone is COMPACT, since the genuine perimeter is
 compact via #946's finite interval proof, I is compact, and Mathlib
 proves compactness of coinduced quotient spaces. -/
-def perimeterConeCompactSpace (k : ℕ) :
+theorem perimeterConeCompactSpace (k : ℕ) :
     CompactSpace (PerimeterCone k) := by
-  letI : CompactSpace (UnpairedPerimeter k) :=
+  let : CompactSpace (UnpairedPerimeter k) :=
     unpairedPerimeterCompactSpace k
-  haveI : CompactSpace (ConeCylinder k) := by infer_instance
+  have : CompactSpace (ConeCylinder k) := by infer_instance
   exact Quotient.compactSpace
 
 /-- Independently the actual filled quotient is compact as a quotient
 of finitely many real unit squares. This does NOT imply Hausdorff or
 a manifold without a separate source theorem. -/
-def filledPolygonCompactSpace (k : ℕ) :
+theorem filledPolygonCompactSpace (k : ℕ) :
     CompactSpace (FilledPolygonQuotient k) := by
-  haveI : CompactSpace (RadialSource k) := by infer_instance
+  have : CompactSpace (RadialSource k) := by infer_instance
   exact Quotient.compactSpace
 
 /-- Cone apex and a true outer boundary point are provably different:
@@ -377,7 +382,7 @@ theorem coneApex_ne_boundary (k : ℕ)
   intro h
   have hr := congrArg (coneRadius k) h
   have h01 : (0 : unitInterval) = 1 := by
-    simpa [coneApex, coneBoundary] using hr
+    exact hr
   exact zero_ne_one h01
 
 /-- Genus two: the source cone-to-filling map is a genuine continuous

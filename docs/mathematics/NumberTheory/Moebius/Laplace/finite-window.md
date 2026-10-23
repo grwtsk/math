@@ -3,7 +3,7 @@
 The maintained source links use the current PMD placement. Earlier verification
 receipts retain their recorded source paths, bytes and tool context. Fresh
 proof replay of the relocated context remains pending; see the
-[source relocation scope](../../../../../.noeaaeue/documentation/reference/source-layout.md#pmd-source-tree).
+source relocation scope (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3#pmd-source-tree).
 
 Human mathematical direction: grwtsk contributors. Derivation, formalization and checking assistance: OpenAI Codex. Local contribution: MIT; upstream Lean and Mathlib authorship and Apache-2.0 licensing remain preserved. No originality or independent acceptance is claimed. Continuing RH research belongs to [math #15](https://github.com/grwtsk/math/issues/15).
 
@@ -42,7 +42,7 @@ This contribution does not prove an arithmetic upper bound, negligible boundary 
 
 ## Source and verification scope
 
-[Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../../GRWTSK/NumberTheory/Moebius/PrimeFilterLaplace.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 The current import-only repair passed source elaboration at trust zero with fatal warnings. The statements, hypotheses and proof text are unchanged. Complete current owned-declaration auditing and affected-consumer acceptance remain pending; the historical status above is retained.
 
