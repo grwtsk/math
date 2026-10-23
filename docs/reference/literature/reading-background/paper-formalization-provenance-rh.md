@@ -224,6 +224,64 @@ strict arithmetic source calculation does **not** construct
 the classical Weil target, signed all-pairs form comparison,
 or any unconditional RH result.
 
+### Proposed coefficient reconstruction from both Bombieri moments and one source coordinate
+
+**Paper source and exact borrowed hypotheses:** Enrico Bombieri,
+*Problems of the Millennium: the Riemann Hypothesis*, Clay Mathematics
+Institute **2000** (collected **2006**), Section V, printed pp. 8–9,
+[official source](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf).
+Use **both** displayed vanishing moments
+`∫₀∞g(x)dx=0` and `∫₀∞g(x)dx/x=0` of the same complex test
+function. The explicit inverse below is *local finite linear
+algebra*, **not** an imported theorem or method asserted in
+Bombieri's paper. Classical `W` membership, form/involution,
+normalization, zero head/tail and RH criterion are separate.
+
+**Actual current formal declaration:** At
+[`grwtsk/math@16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2`](https://github.com/grwtsk/math/commit/16e1b6d2c78ffc157e3453c6b9832f9da1b1a0b2),
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.thirdCoordinateReadout`
+and `thirdCoordinateReadout_augmented_separates` are in
+[`CanonicalSquareTentThirdCoordinateInformationLoss.lean`](https://github.com/grwtsk/math/blob/93468e369390b8ec75e7fd6a031ada2ae92223b0/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean#L39),
+introduced at `93468e369390b8ec75e7fd6a031ada2ae92223b0`,
+Git blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74`.
+`CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile`
+has blob `9a2435d9c74b89ce1434c45bade1aa9beaa6cead`.
+`CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos`
+has blob `e522772381075f125453ef2ba6b30e63d2873910`.
+The existing standalone sources and transitive imports remain
+**SOURCE_ONLY / NOT_KERNEL_AUDITED** in this review.
+
+**Next exact mathematical supplier, NOT YET A LEAN DECLARATION:**
+Let the genuine stage 2/3/4 ordinary/reciprocal moment columns be
+`(A₀,A₁,A₂)` and `(B₀,B₁,B₂)`. The existing rank source
+has `D=A₁B₀−A₀B₁>0`. The pair of moments plus the
+actual third coefficient `t=u₂` is represented by the matrix
+`[[A₀,A₁,A₂],[B₀,B₁,B₂],[0,0,1]]`, whose determinant
+is `−D≠0`. It has an explicit coefficientwise inverse:
+`q₀=m₀−A₂t`, `q₁=m₁−B₂t`,
+`u₀=(A₁q₁−B₁q₀)/D`,
+`u₁=(B₀q₀−A₀q₁)/D`, `u₂=t`.
+This would prove
+`Function.Injective (augmentedProfile bombieriMomentProfile thirdCoordinateReadout)`
+**only on the actual three-dimensional coefficient carrier**.
+The existing augmentation theorem proves separation of a selected
+pair, **not** that global injection. It is not a map of
+the full classical test space.
+
+**Mathematical note:** [exact matrix/source identities and Lean
+supplier proposals](../../../mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-augmented-moment-reconstruction-219.md),
+integrated at `grwtsk/math@42d52cb5908f462eff0db002a4023387eeb7ec40`,
+documentation blob `77c34dc66127dbf146ab53f9a6d07db10ad9b290`.
+Independent Sympy exact matrix left/right inverse and
+60-digit complex-vector reconstruction checks passed, Python
+exit **0**, script checksum
+`f3af7883bf9dfc7bcfc8e862a682e76653a4afce6e1e3895484fc538e5a70545`.
+This is `REPOSITORY_DERIVED_UNFORMALIZED_MATHEMATICAL_SUPPLIER`,
+**NOT** `PAPER_TO_LEAN_BRIDGE_PROVED`,
+`LEAN_COMPILED`, `FRESH_KERNEL_REPLAYED` or
+`TRANSITIVE_AXIOMS_AUDITED`. No source-exact signed
+classical Weil comparison or RH consequence follows.
+
 ## Primary paper supplying the Weil-form criterion context
 
 **Citation BOMB-LINCEI-2000:** Enrico Bombieri,
