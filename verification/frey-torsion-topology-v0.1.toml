@@ -1,0 +1,215 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-torsion-topology-v0.1"
+owner_repository = "grwtsk/math"
+issues = [100, 221, 222, 227, 230, 233, 250, 270]
+root_module = "GRWTSK.Interfaces.FreyTorsionTopologyCore"
+build_target = "GRWTSK.Interfaces.FreyTorsionTopologyCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "ea111d18f4bf6094d9644a0010472a599ee2d200"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCompletionBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCompletionTopology"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTopology"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.Topology.Algebra.DiscreteProjection"
+
+[[modules]]
+name = "GRWTSK.Topology.Algebra.DiscreteProjectionRigidity"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTopologyCore"
+
+[[hostile_controls]]
+id = "reject-alternate-underlying-map"
+description = "The homeomorph must have exactly the old completionEquiv or seriesPullback as its function and the actual inverse as its inverse."
+
+[[hostile_controls]]
+id = "reject-transported-topology-shortcut"
+description = "Use the independently defined FreyCompletionTopology topologies on both sides, not a new topology transported through the desired equivalence."
+
+[[hostile_controls]]
+id = "reject-one-sided-continuity"
+description = "Supply forward and inverse finite factorizations. Bijectivity plus one direction of continuity is not enough."
+
+[[hostile_controls]]
+id = "reject-canonical-index-shift"
+description = "Positive observation N uses canonical exponent N+1. Retain exponent zero in quotient statements and in the separation argument."
+
+[[hostile_controls]]
+id = "reject-unit-anchor-as-formal-smoothness"
+description = "The canonical homeomorph requires ab*l=1 but not unit curve derivatives. Formal frames separately retain BOTH inverse Jacobians; singular completions remain singular."
+
+[[hostile_controls]]
+id = "reject-forward-series-as-its-inverse"
+description = "The forward and reverse chart directions are inverse, not necessarily the same raw series formula despite identical carrier types."
+
+[[hostile_controls]]
+id = "reject-linear-fit-as-nonlinear-transport"
+description = "Keep the old nonlinear parameterEquiv and full seriesPullback. Quadratic rescaling is not the full formal map."
+
+[[hostile_controls]]
+id = "reject-sampled-fiber-equality"
+description = "Prove the complete fiber preimage at every exponent and every target quotient value, not just sampled congruence pairs."
+
+[[hostile_controls]]
+id = "reject-connected-time-without-separation"
+description = "Every observation may be constant without separating whole objects. Use all positive canonical projections or all formal truncations for whole-object constancy."
+
+[[hostile_controls]]
+id = "reject-path-rigidity-without-connectedness"
+description = "The time domain must be preconnected. Do not rule out nonconstant sequences or maps from discrete time."
+
+[[hostile_controls]]
+id = "reject-discrete-jets-as-heat-topology"
+description = "Nonconstant continuous connected-time wave/heat paths cannot use the discrete-observation topology. A coefficient-sensitive analytic topology needs its own definition and comparison."
+
+[[hostile_controls]]
+id = "reject-topology-as-norm-or-height"
+description = "Parameter congruence and homeomorphism do not control coefficient magnitudes, Hodge energy, lattice index, p-adic depth, or ABC observation height."
+
+[[hostile_controls]]
+id = "reject-finite-order-as-finite-set"
+description = "Finite-order quotients can be infinite sets. No compactness, profiniteness, or arithmetic coefficient completion follows."
+
+[[hostile_controls]]
+id = "reject-finite-arithmetic-as-topology-proof"
+description = "The external checker tests bounded finite quotient and series-prefix shadows only; neither infinite topology nor Lean proof terms is executed."
+
+[[hostile_controls]]
+id = "reject-target-coverage-promotion"
+description = "This separate target preserves old roots and historical manifests. Its local module list is not full PR or upstream trust acceptance."
+
+[[hostile_controls]]
+id = "reject-coefficient-naturality-by-analogy"
+description = "Continuity of this inter-anchor map does not supply its still-separate canonical coefficient-base-change square."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "accepted Lean elaboration, kernel audit, or replay evidence",
+  "coverage of all PR 270 or PR 251 sources by this separate root",
+  "a new underlying torsion, coefficient, or weighted-function map",
+  "intrinsic Hodge or analytic heat continuity from discrete finite observations",
+  "constancy for arbitrary disconnected time domains or discrete refinement sequences",
+  "coefficient norm, lattice, conductor, or uniform arithmetic height bounds",
+  "complete global sections, polar divisors, scheme-stalk or line-bundle realization",
+  "canonical inter-anchor coefficient-base-change naturality without its own proof",
+  "compactness, profiniteness, or a tensor/completion interchange",
+  "abc conjecture, Riemann Hypothesis, execution authority, merge or issue closure"
+]
