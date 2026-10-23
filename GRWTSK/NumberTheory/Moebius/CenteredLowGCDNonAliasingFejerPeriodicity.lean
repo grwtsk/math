@@ -1,0 +1,48 @@
+/- Copyright (c) 2026 R.A. Jacob Martone. MIT. Formalization assistance: OpenAI ChatGPT. -/
+import GRWTSK.NumberTheory.Moebius.CenteredLowGCDNonAliasingFejerSampleMass
+import Mathlib.Analysis.Fourier.ZMod
+import Mathlib.Tactic
+
+set_option autoImplicit false
+noncomputable section
+open scoped BigOperators
+
+namespace GRWTSK.RiemannHypothesis
+
+theorem signedSampledTriangularKernelAtPeriod_add_period
+    {L : ℕ} (hL : 0 < L)
+    (N : ℕ) (r : ℤ) :
+    signedSampledTriangularKernelAtPeriod L N (r + L) =
+      signedSampledTriangularKernelAtPeriod L N r := by
+  unfold signedSampledTriangularKernelAtPeriod
+  have hLr : (L : ℝ) ≠ 0 := by
+    exact_mod_cast (Nat.ne_of_gt hL)
+  congr 2
+  apply congrArg Complex.re
+  congr 1
+  have hperiod :=
+    AddCircle.coe_add_period (1 : ℝ) ((r : ℝ) / (L : ℝ))
+  convert hperiod.symm using 1
+  field_simp [hLr]
+  ring
+
+theorem signedSampledTriangularKernelAtPeriod_eq_of_modEq
+    {L : ℕ} (hL : 0 < L)
+    (N : ℕ) {a b : ℤ}
+    (hmod : (a : ZMod L) = (b : ZMod L)) :
+    signedSampledTriangularKernelAtPeriod L N a =
+      signedSampledTriangularKernelAtPeriod L N b := by
+  have hper :
+      Function.Periodic
+        (signedSampledTriangularKernelAtPeriod L N) (L : ℤ) := by
+    intro r
+    exact signedSampledTriangularKernelAtPeriod_add_period hL N r
+  have hdiv : (L : ℤ) ∣ b - a := by
+    exact (ZMod.intCast_eq_intCast_iff_dvd_sub a b L).mp hmod
+  rcases hdiv with ⟨z, hz⟩
+  have hab : b = a + z * (L : ℤ) := by
+    linarith
+  rw [hab]
+  simpa [mul_comm] using hper.int_mul z a
+
+end GRWTSK.RiemannHypothesis
