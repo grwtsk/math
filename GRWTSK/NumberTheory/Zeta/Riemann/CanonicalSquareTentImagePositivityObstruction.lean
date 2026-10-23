@@ -139,7 +139,7 @@ theorem negativeDirection_not_in_arithmetic_image (M : ℕ) :
 theorem extensionDiagonal_negativeDirection (M : ℕ) :
     extensionDiagonal (negativeDirection M) = -1 := by
   simp [extensionDiagonal, extensionForm, negativeDirection,
-    sourcePolarizedForm_zero_self, Complex.sub_re]
+    sourcePolarizedForm_zero_self]
 
 /-- The bounded obstruction: an injective, all-pairs exact arithmetic
 transport can be positive semidefinite on its entire image while its
