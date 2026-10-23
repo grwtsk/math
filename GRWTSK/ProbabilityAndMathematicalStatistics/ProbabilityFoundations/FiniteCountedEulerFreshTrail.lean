@@ -204,7 +204,9 @@ theorem FreshCountedTrail.exists_maximal_extension
         have hlt : (Finset.univ \ R.used).card < n := by
           dsimp [R]
           omega
-        obtain ⟨z, Q, hQmax, hRQ⟩ := ih _ hlt R rfl
+        have hR : (Finset.univ \ R.used).card =
+            (Finset.univ \ R.used).card := rfl
+        obtain ⟨z, Q, hQmax, hRQ⟩ := ih _ hlt R hR
         refine ⟨z, Q, hQmax, ?_⟩
         have hTR : T.used ⊆ R.used := by
           rw [FreshCountedTrail.append_used]
