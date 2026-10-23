@@ -4035,7 +4035,7 @@ The mathematical scope document
 [`farey-shift-dual-cocycle.md`](../../../mathematics/NumberTheory/Farey/farey-shift-dual-cocycle.md)
 was integrated at
 `9faa4da15eed992fb0423cf2514be497f2ce7a94`,
-doc blob `cdc7c0a6f36f4dd68924c9f26a36ae88a8f0560f`.
+historical doc blob `cdc7c0a6f36f4dd68924c9f26a36ae88a8f0560f`; reconciliation commit `2f995ddc1e1cff8b5ce21627c0c71c46cd903361` has current doc blob `713a0806789849297aefa9eeb63a817bc4da385f`.
 
 Full declaration names have prefix
 `GRWTSK.NumberTheory.Farey.FareyShiftCocycle.`:
@@ -4064,7 +4064,7 @@ Full declaration names have prefix
 
 **Exact direct imports and source identities:**
 `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction`,
-blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1`;
+introductory source blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1` but **current exact replay-snapshot blob** `6eabd59265a723e325654907eaf853530dd2a0bb`;
 `GRWTSK.LinearAlgebra.PeriodicCocycleData`,
 blob `11ca2a896e8844dcb483ce9c910c1bb07ae857e1`;
 `GRWTSK.LinearAlgebra.Sturmian`,
@@ -4076,6 +4076,10 @@ transitively imports the true
 `GroupSuperwalk`,
 `ReturnAngularChannel`,
 `ProjectiveQuadraticChannel`
+(**current proof-repaired source blob**
+`79943dff174eee6049a9e097ca89ae1f6ddf04d4`,
+not historical introductory blob
+`b07cb18412f3e64f42d2916fea91b1e59b2228c2`)
 and the Farey polynomial sources.
 The operator-cocycle supplier
 `CocycleProduct.cocycleProduct_gauge`
@@ -4186,6 +4190,18 @@ Siegel-zero, zeta or
 Riemann-Hypothesis conclusions.
 This is a source-preserving
 finite algebraic bridge only.
+
+
+
+## Case LINEAR-MEASUREMENT-NECESSITY-20261023 — exact invisible-direction witness
+
+**Source/reference boundary.** This is a 2026 repository-derived mathematical source with formalization assistance by OpenAI; it is NOT a claimed theorem from an external paper. Published title, authors, year/version, DOI/arXiv and paper theorem locator: **NOT APPLICABLE**. Similarity to phase retrieval and quotient lifting is a **methodological analogy**, not historical influence or an imported theorem.
+
+**Formal mathematical content and exact hypotheses.** For any field `K`, additive commutative K-modules `V,Y,W,Z`, and K-linear maps `P:V→ₗ[K]Y`, `A:V→ₗ[K]W`, `R:V→ₗ[K]Z`: `GRWTSK.Logic.InformationLoss.extra_detects_relevant_invisible_direction` assumes pointwise recovery `∀h, P h=0→A h=0→R h=0` and a vector `h` with `P h=0` and `R h≠0`; it concludes `A h≠0`. `GRWTSK.Logic.InformationLoss.unresolved_direction_refutes_unique_reconstruction` uses explicit `P h=0`, `A h=0` and `R h≠0` to refute existence of a unique set-theoretic decoder on the actual image of paired observation. No dimension bound, minimal sensor count or analytic-stability theorem follows.
+
+**Source identity and consumers.** Integrated main source [`13742de84a8b9f93d3240141927e7863e059ffaf`](https://github.com/grwtsk/math/commit/13742de84a8b9f93d3240141927e7863e059ffaf), `GRWTSK/Logic/InformationLoss/LinearMeasurementNecessity.lean`, blob `b7ee0761c291a235ce14208c0d45160271bf6260`; direct import `LinearRedundantMeasurements` blob `cb036375da2510a1580f578e54edeb3cf5405722`, then `LinearObservationKernels` blob `7930d8b88199507019d800b05852a616719bfa12` and its transitive closure. Not root imported.
+
+**Categories and evidence.** `source-proof-candidate`: both declarations; `direct-import` external paper theorem: none; `local-proved-bridge`: not established; `conditional-interface`: a concrete Farey/Bombieri/spectral readout must supply actual maps and the relevant invisible vector; `finite-certificate`: none claimed; `methodological-analogy`: phase retrieval/identifiability; `unresolved`: minimal sensor counts, stability and actual spectral/analytic realization. Verification [#1122](https://github.com/grwtsk/math/issues/1122) records full command requests, immutable dependencies, Lean 4.33.0/Mathlib db584cd6d46c92f209a44c0f1c829460d327499d and expected controls. Actual status **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**; source Git readback succeeded, commit status list empty. No executed stdout/stderr or kernel receipts; retain runners/receipts outside math in `grwtsk/noeaaeue`.
 
 ## Case RH-W01-WEIL-IMAGE-20261023 — reviewed paper context and arithmetic-image positivity boundary
 
