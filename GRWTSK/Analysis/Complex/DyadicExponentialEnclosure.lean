@@ -131,7 +131,7 @@ theorem nat_succ_le_two_pow (s : ℕ) : (s : ℝ) + 1 ≤ (2 : ℝ) ^ s := by
   | zero => norm_num
   | succ s ih =>
       rw [Nat.cast_succ, pow_succ]
-      nlinarith [Nat.cast_nonneg (R := ℝ) s]
+      nlinarith [Nat.cast_nonneg (α := ℝ) s]
 
 theorem exists_scaling (r d : ℝ) :
     ∃ s : ℕ, r / (2 : ℝ) ^ s ≤ 1 ∧ d / (2 : ℝ) ^ s ≤ 1 := by
