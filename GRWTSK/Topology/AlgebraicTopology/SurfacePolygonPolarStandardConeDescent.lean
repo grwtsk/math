@@ -68,9 +68,8 @@ def standardConePolarDisk :
 /-- Joint continuity descends through the ACTUAL cone quotient. -/
 theorem standardConePolarDisk_continuous :
     Continuous standardConePolarDisk := by
-  apply Continuous.quotient_lift unitCircleJointPolar_continuous
-  intro p q h
-  exact standardCircleConeConnected_jointPolar_eq h
+  exact Continuous.quotient_lift unitCircleJointPolar_continuous
+    (fun _ _ h => standardCircleConeConnected_jointPolar_eq h)
 
 /-- The cone apex is sent to the genuine complex disk origin. -/
 theorem standardConePolarDisk_apex :
