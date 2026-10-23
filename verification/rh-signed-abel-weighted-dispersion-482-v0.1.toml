@@ -1,0 +1,236 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-abel-weighted-dispersion-482-v0.1"
+owner_repository = "grwtsk/math"
+issue = 482
+parent_issue = 476
+parent_pr = 481
+depth_packet_issue = 473
+depth_packet_pr = 475
+signed_abel_issue = 468
+signed_abel_pr = 470
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_WEIGHTED_DISPERSION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SignedAbelDepthWeightedDispersion"
+build_target = "GRWTSK.NumberTheory.Moebius.SignedAbelDepthWeightedDispersion"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-signed-abel-dispersion-476-20261021"
+stacked_parent_revision = "2b1c075808b2365ede62f909014b5b83b30ddabf"
+stacked_parent_tree = "bd50bbdb612b6abc1d7acc45007803f5422d1cf7"
+candidate_branch = "research/rh-signed-abel-weighted-dispersion-482-20261021"
+theorem_source_commit = "258f6d64529b674541f197ec228a6d5ea41f7836"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthWeightedDispersion.lean"
+theorem_source_git_blob = "628cf95ac1c145d9a8a52a1a81e85a3db29e712a"
+mathematical_note_commit = "408785cfe9c5159488b7c30a325d573d1f646f58"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/signed-abel-depth-weighted-dispersion.md"
+mathematical_note_git_blob = "1ec7bfbc21b49039b6bedca4a882fbf1d3418324"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[terminal_consumer]
+source_premise = "SubpolynomialDyadicSignedAbelWeightedDispersion"
+intermediate_premise = "SubpolynomialDyadicSignedAbelDepthPacket"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicSignedAbelDepthPacket"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[selected_increment]
+amplitude = "signedAbelDepthAmplitude"
+weight = "signedAbelDepthWeight"
+canonical_model = "weightedMertensSignedAbelDepthBilinearModel"
+exact_slice_identity = "weightedMertensDyadicSignedAbelDepthSlice_eq_weightedBilinear"
+mass = "weightedMertensSignedAbelDepthMass"
+quadratic_energy = "weightedMertensSignedAbelDepthQuadraticEnergy"
+weighted_cauchy = "weightedMertensDyadicSignedAbelDepthSlice_sq_le_dispersion"
+radius = "weightedMertensSignedAbelDepthDispersionRadius"
+majorant = "weightedMertensDyadicSignedAbelDispersionMajorant"
+packet_comparison = "weightedMertensDyadicSignedAbelDepthPacket_le_dispersionMajorant"
+all_scale_supplier = "SubpolynomialDyadicSignedAbelWeightedDispersion"
+supplier_transport = "subpolynomialDyadicSignedAbelDepthPacket_of_weightedDispersion"
+conditional_rh = "riemannHypothesis_of_subpolynomialDyadicSignedAbelWeightedDispersion"
+proof_classification = "EXACT_SOURCE_RECONSTRUCTION_THEN_FINITE_WEIGHTED_CAUCHY"
+next_obstruction = "prove or obstruct the all-scale source-specific weighted dispersion majorant"
+
+[actual_bilinear_source]
+dyadic_endpoint = "Y=2^(j+1)"
+shift_range = "Finset.Ico 1 (2^(j+1))"
+depth_range = "Finset.range (2^(j+1))"
+amplitude_formula = "2 * mertensTwoPointPrefix h (t+1)"
+weight_formula = "if t < 2^(j+1)-h-1 then dyadicMertensShiftWeightDrop j h t else 0"
+triangular_support = "t < 2^(j+1)-h-1"
+residual = "0"
+cell_factorization = "actual signed Abel cell = amplitude * weight"
+signed_reconstruction_precedes_majorization = true
+termwise_absolute_value_sum_used = false
+
+[dispersion_quantities]
+mass_formula = "sum_h W(j,t,h)"
+quadratic_formula = "sum_h A(j,t,h)^2 * W(j,t,h)"
+radius_formula = "sqrt(Quadratic(j,t) * Mass(j,t))"
+majorant_formula = "sum_(t<2^(j+1)) Radius(j,t)"
+slice_square_bound = "DepthSlice(j,t)^2 <= Quadratic(j,t) * Mass(j,t)"
+slice_upper_bound = "DepthSlice(j,t) <= Radius(j,t)"
+packet_upper_bound = "DepthPacket(j) <= DispersionMajorant(j)"
+square_introduced_after_exact_reconstruction = true
+
+[all_scale_supplier]
+name = "SubpolynomialDyadicSignedAbelWeightedDispersion"
+formula = "forall delta>0 exists C>=0 forall j, DispersionMajorant(j) <= C*(2^j)^delta"
+supplier_constructed = false
+arithmetic_estimate_proved = false
+conditional_chain = [
+  "SubpolynomialDyadicSignedAbelWeightedDispersion",
+  "SubpolynomialDyadicSignedAbelDepthPacket",
+  "RiemannHypothesis"
+]
+
+[positivity]
+weight_nonnegative = true
+mass_nonnegative = true
+weighted_quadratic_energy_nonnegative = true
+dispersion_radius_nonnegative = true
+dispersion_majorant_nonnegative = true
+signed_depth_slice_positive_claimed = false
+signed_depth_packet_positive_claimed = false
+positive_kernel_claimed = false
+positive_measure_claimed = false
+trace_state_positivity_claimed = false
+weil_positivity_claimed = false
+global_rh_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+weighted_dispersion_estimate_proved = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_source_text_as_kernel_evidence = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SignedAbelDepthWeightedDispersion"
+authored_declaration_count = 20
+definition_count = 8
+theorem_script_count = 12
+structure_count = 0
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelDepthDispersion.lean"
+git_blob = "f5cf7fa855bbebbbdc7411add123116963693f80"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_481"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelDepthPacket.lean"
+git_blob = "ef7b3e9ce1c185093809e01ef5682b7ffdea438d"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_475"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelShiftPacket.lean"
+git_blob = "6c953dad99f2e410f47ee8350a6f19b729ff8df9"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_470"
+
+[[dependencies]]
+source = "Mathlib.Algebra.Order.BigOperators.Ring.Finset"
+declaration = "Finset.sum_sq_le_sum_mul_sum_of_sq_le_mul"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Analysis.Real.Sqrt"
+declarations = ["Real.abs_le_sqrt", "Real.sqrt_nonneg"]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[statement_controls]
+positive_shift_range_exact = true
+triangular_support_exact = true
+zero_extension_literal = true
+abel_drop_orientation_preserved = true
+signed_prefix_preserved = true
+exact_slice_reconstruction_before_square = true
+residual_zero_for_canonical_model = true
+finite_weighted_cauchy_only_after_reconstruction = true
+signed_packet_target_preserved = true
+
+[hostile_controls]
+sum_h_abs_cell_replacement_rejected = true
+cell_square_before_reconstruction_rejected = true
+terminal_only_replacement_rejected = true
+wrong_weight_drop_orientation_rejected = true
+omitted_shift_rejected = true
+closed_right_shift_endpoint_rejected = true
+weight_positivity_not_promoted_to_slice_positivity = true
+generic_model_type_not_promoted_to_estimate = true
+fixed_shift_result_not_promoted_to_growing_shift_bound = true
+source_elaboration_not_promoted_to_arithmetic_estimate = true
+conditional_rh_endpoint_not_promoted_to_rh_proof = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+weighted_dispersion_majorant_estimate = true
+comparison_with_large_sieve_or_fourier_sources = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+large_sieve_estimate_proved = false
+dispersion_estimate_proved = false
+fourier_estimate_proved = false
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "signedAbelDepthAmplitude",
+  "signedAbelDepthWeight",
+  "signedAbelDepthWeight_nonneg",
+  "weightedMertensDyadicSignedAbelCell_eq_amplitude_mul_weight",
+  "weightedMertensDyadicSignedAbelDepthSlice_eq_weightedBilinear",
+  "weightedMertensSignedAbelDepthBilinearModel",
+  "weightedMertensSignedAbelDepthMass",
+  "weightedMertensSignedAbelDepthQuadraticEnergy",
+  "weightedMertensSignedAbelDepthMass_nonneg",
+  "weightedMertensSignedAbelDepthQuadraticEnergy_nonneg",
+  "weightedMertensDyadicSignedAbelDepthSlice_sq_le_dispersion",
+  "weightedMertensSignedAbelDepthDispersionRadius",
+  "weightedMertensSignedAbelDepthDispersionRadius_nonneg",
+  "weightedMertensDyadicSignedAbelDepthSlice_le_dispersionRadius",
+  "weightedMertensDyadicSignedAbelDispersionMajorant",
+  "weightedMertensDyadicSignedAbelDispersionMajorant_nonneg",
+  "weightedMertensDyadicSignedAbelDepthPacket_le_dispersionMajorant",
+  "SubpolynomialDyadicSignedAbelWeightedDispersion",
+  "subpolynomialDyadicSignedAbelDepthPacket_of_weightedDispersion",
+  "riemannHypothesis_of_subpolynomialDyadicSignedAbelWeightedDispersion"
+]
