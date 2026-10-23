@@ -112,7 +112,7 @@ theorem hasNoOpenReverseGap : ¬ HasOpenGap gaps .missingReverseImplication := b
 def auditEntry : ChartAuditEntry atlas .root where
   chartId := "zeta-spectral-parameter-root"
   binding := binding
-  binding_matches := by simpa [atlas] using binding_matches_chart
+  binding_matches := by simp [atlas]
   forwardDeclaration := none
   reverseDeclaration := some "GRWTSK.RiemannHypothesis.ZetaCommutatorRoot.rootStatement_of_rh"
   suppliers :=
@@ -140,8 +140,8 @@ def rootStep : SourceBoundVerticalStep atlas .root .root where
   step := VerticalStep.refl atlas .root
   lowerBinding := binding
   upperBinding := binding
-  lower_binding_matches := by simpa [atlas] using binding_matches_chart
-  upper_binding_matches := by simpa [atlas] using binding_matches_chart
+  lower_binding_matches := by simp [atlas]
+  upper_binding_matches := by simp [atlas]
   binding_eq := rfl
   kinds := [.coordinateEquivalence, .logicalImplication, .heightMonotone]
   kinds_nonempty := by simp
