@@ -4155,11 +4155,18 @@ to this new module or to the
 `ProjectiveQuadraticChannel`
 source-only obligations (their
 requests remain independent).
-An exact-commit passive issue
-with module/dependency blobs,
-commands and hostile controls
-is required before upgrading
-any verification state.
+An exact-commit passive request is now queued:
+[math #1123](https://github.com/grwtsk/math/issues/1123)
+and the separate authorization-gated effectful/receipt
+handoff [noeaaeue #391](https://github.com/grwtsk/noeaaeue/issues/391).
+Both are pinned to **math main commit**
+`37f087dce1217c96a408fe99c489a3d168423949`,
+Git tree `15f65387bd268002ddfc36e2f30bd572f19536d8`,
+source blob `50b0a865a550341322e64615419461b998546e17`,
+and the exact concurrently repaired parent source blobs
+recorded above. They are **QUEUED only**:
+no runner has been dispatched, no Lean build/kernel/audit
+was executed and no mathematical result was promoted.
 Operational runners, receipts
 and mutable execution state
 belong in `grwtsk/noeaaeue`,
@@ -4453,3 +4460,23 @@ transferring the independently reconstructed arithmetic nonnegativity
 to `form.PositiveDiagonal`; alternatively exhibit an exact
 classical complementary-direction diagonal contradicting that
 specific transport. **No such bridge is proved by this increment.**
+
+
+## Case JOINT-LINEAR-IDENTIFIABILITY-20261023 — common-kernel obstruction
+
+**Reference and classification.** Repository-derived algebraic result authored as Lean source in 2026 with OpenAI formalization assistance; no externally identified publication theorem is claimed. External paper title/byline/year/version/stable DOI/arXiv/theorem: **NOT APPLICABLE**. Quotient-lifting and inverse-problem identifiability are **methodological analogies**, not evidence of historical influence. `direct-import` of paper mathematics: none; `local-proved-bridge`: none accepted; `source-proof-candidate`: both below; `conditional-interface`: applications to actual spectral or arithmetic observations; `finite-certificate`: none newly claimed; `unresolved`: quantitative dimension/rank, stable inversion and analytical source maps.
+
+**Exact statements and hypotheses.** Arbitrary field K and additive commutative K-modules V,Y,W; P:V→ₗ[K]Y, A:V→ₗ[K]W. `GRWTSK.Logic.InformationLoss.pairedLinear_injective_iff_common_kernel_zero` asserts injectivity of the paired function x↦(P x,A x) iff `∀h, P h=0→A h=0→h=0`. `GRWTSK.Logic.InformationLoss.pairedLinear_not_injective_of_common_kernel` assumes explicit h with P h=0, A h=0 and h≠0, and derives noninjectivity. No finite dimensionality or minimal sensor count asserted.
+
+**Immutable binding and evidence.** Integrated math main [`b6cfa2bde16e9d4779cb79475f06f48e992f95c6`](https://github.com/grwtsk/math/commit/b6cfa2bde16e9d4779cb79475f06f48e992f95c6), source `GRWTSK/Logic/InformationLoss/JointLinearIdentifiability.lean`, Git blob `5d1540260dcf60e40dbee26cfd70357551bdaf86`. Direct supplier `LinearMeasurementNecessity` blob `b7ee0761c291a235ce14208c0d45160271bf6260` and its recursively imported math/Mathlib closure. Verification request [#1124](https://github.com/grwtsk/math/issues/1124) pins Lean 4.33.0, Mathlib db584cd6d46c92f209a44c0f1c829460d327499d, exact commands and required declaration/trust-zero/fresh-kernel/transitive-axiom checks. Actual evidence: Git blob readback only, commit status checks empty; **COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Operational receipts belong outside math in `grwtsk/noeaaeue`; no root import.
+
+
+## Case KERNEL-RESTRICTED-DETECTION-20261023 — sufficient observation condition
+
+**Bibliographic boundary.** Repository-derived 2026 linear algebra with OpenAI formalization assistance, not a port of an external paper; paper title, byline, version/year, DOI/arXiv and theorem locator **NOT APPLICABLE**. Quotient lifting and identifiability are analogies; historical influence not inferred.
+
+**Exact declarations and hypotheses.** `GRWTSK.Logic.InformationLoss.pairedLinear_injective_iff_extra_detects_old_kernel` restates the exact common-kernel condition. `GRWTSK.Logic.InformationLoss.pairedLinear_injective_of_kernel_restriction` assumes for all `x,y:V`, `P x=0`, `P y=0` and `A x=A y` imply `x=y`; it concludes that the paired observation is injective. `GRWTSK.Logic.InformationLoss.readout_recoverable_of_kernel_restriction` assumes `∀h:V,P h=0→A h=0→R h=0` and yields exactly one set-theoretic decoder of R on the attained image of (P,A). Arbitrary field K, additive commutative K-modules V,Y,W,Z, and K-linear P,A,R. This does not assert linearity/continuity of decoder or a finite-dimensional rank or minimal measurement bound.
+
+**Immutable source.** Math main [`65f713dac8a849471f794852ba49f3ca5af5fad4`](https://github.com/grwtsk/math/commit/65f713dac8a849471f794852ba49f3ca5af5fad4), `GRWTSK/Logic/InformationLoss/KernelRestrictedDetection.lean`, blob `242fdd63d842b1fe7b14efb1727f1f198656324e`; direct import `JointLinearIdentifiability`, blob `5d1540260dcf60e40dbee26cfd70357551bdaf86` and complete transitive closure still pending actual inspection on executor.
+
+**Status classification.** `source-proof-candidate` yes; `direct-import` external paper theorem no; `kernel-verified bridge` not established; `conditional-interface` any concrete Farey/Bombieri/Hodge linear realization; `finite-evidence` none newly claimed; `analogy` abstract inverse-problem identifiability only; `unresolved premise` finite-dimensional rank bounds, quantified sensor counts, analytic map hypotheses. [Validation #1125](https://github.com/grwtsk/math/issues/1125) pins Lean 4.33.0, Mathlib db584cd6d46c92f209a44c0f1c829460d327499d, direct builds, probes, trust-zero and fresh-kernel/axiom audit. Git blob readback yes; GitHub status checks empty; `COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN`. No operational receipts in this math tree.
