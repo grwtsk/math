@@ -5103,6 +5103,16 @@
     },
     {
       "manifest_id": null,
+      "migrated_sha256": "9c6005810450dfdf3c0c18730ff255f60bf91f38f80e2982b57a246af56c483b",
+      "new_path": "docs/verification/NumberTheory/Moebius/CanonicalFourFamilyRestrictedObservability/rh-four-family-restricted-observability-966-v0.1.toml",
+      "old_path": "verification/rh-four-family-restricted-observability-966-v0.1.toml",
+      "original_sha256": "9c6005810450dfdf3c0c18730ff255f60bf91f38f80e2982b57a246af56c483b",
+      "root_module": "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyRestrictedObservability",
+      "scope": "MIRRORED_SOURCE_MODULE",
+      "version": "v0.1"
+    },
+    {
+      "manifest_id": null,
       "migrated_sha256": "069936731bf36835ab49e65a3228b58685e68a8d61dd245d466958437c4a911a",
       "new_path": "docs/verification/NumberTheory/Moebius/CanonicalFourFamilyTerminalColumnObstruction/rh-four-family-terminal-column-obstruction-966-v0.1.toml",
       "old_path": "verification/rh-four-family-terminal-column-obstruction-966-v0.1.toml",
@@ -8033,7 +8043,7 @@
     }
   ],
   "legacy_root": "verification",
-  "migrated_file_count": 803,
+  "migrated_file_count": 804,
   "nonclaims": [
     "Migration does not assert Lean elaboration, replay, trust audit, hostile-control execution, or mathematical admission.",
     "The _unscoped and _library-root groups preserve targets without an exact source-module mirror.",
@@ -8043,7 +8053,7 @@
   "schema": "grwtsk-verification-layout-migration-v1",
   "scope_counts": {
     "LIBRARY_ROOT": 52,
-    "MIRRORED_SOURCE_MODULE": 700,
+    "MIRRORED_SOURCE_MODULE": 701,
     "UNSCOPED_SOURCE_SCOPE": 51
   },
   "status": "STATIC_SOURCE_AUTHORED_ONLY"
