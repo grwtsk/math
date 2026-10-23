@@ -5235,3 +5235,12 @@ commands, raw logs and axiom audit are pinned by the subsequent
 Initial receipt status here is `SOURCE_PINNED_REPLAY_PENDING`; later provenance
 updates must give the actual immutable identity and receipt, rather than
 promoting this pending status by implication.
+
+
+## Case COMPLEMENT-PROJECTION-DIRECT-IMPORT-20261023 — exact source supplier closure
+
+**Identity:** 2026 repository source import repair, not a paper-derived theorem. External paper title, authors, year/version, DOI/arXiv, theorem number **NOT APPLICABLE**; no historical influence inferred. Pinned formal library `leanprover-community/mathlib4@db584cd6d46c92f209a44c0f1c829460d327499d`, `Mathlib/LinearAlgebra/Projection.lean`, blob `04b8f4e112f5df907f3106c950b0af3ac212f2a9`, statically supplies `Submodule.projectionOnto` and `Submodule.projectionOnto_apply_left`.
+
+**Exact hypotheses, declarations, source:** `GRWTSK.Logic.InformationLoss.exists_kernel_retraction_of_isCompl` and `exists_sharp_measurement_of_isCompl` retain field K, K-modules V/Y, K-linear P, submodule S, and **hc:IsCompl P.ker S**; retraction and paired injectivity conclusions unchanged. New math main [`14bcb36c57904c0ae9101790f86bc83811d52451`](https://github.com/grwtsk/math/commit/14bcb36c57904c0ae9101790f86bc83811d52451), `GRWTSK/Logic/InformationLoss/KernelComplementExistence.lean`, blob `aa02d716d476d02e0b0de2fd8a3bb8569d291928`; direct imports `KernelCoordinateCertificate` blob `2df2eaeabf0d44c768110fda526add4216f90920` and `Mathlib.LinearAlgebra.Projection`. No theorem statements altered.
+
+**Independent statuses:** Imported mathematics: exact Mathlib projection source **inspected**, not newly kernel replayed. Kernel-verified local bridge: **NONE**. Local declarations: **SOURCE PROOF CANDIDATES**. Conditional interface: supplied `IsCompl` and downstream algebraic complement existence. Finite evidence: none. Analogy: standard splitting only. Unresolved: compilation, full transitive imports/axioms and fresh kernel, analytic continuity and source-specific spectral observations. [Validation #1139](https://github.com/grwtsk/math/issues/1139) pins commands and checks. **ACTUAL SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Receipts outside math in `grwtsk/noeaaeue`, root import withheld.
