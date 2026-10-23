@@ -219,12 +219,14 @@ theorem rawCrossResidual_diag {M : ℕ}
   calc
     rawCrossResidual N i i =
         (canonicalCorrection i.1 : ℂ) - finiteSpectralValue N (basisTest i) := by
-      simp [rawCrossResidual, rawFiniteCrossCoefficient,
-        arithmeticCrossCoefficient_diag_eq_correction]
+      unfold rawCrossResidual
+      rw [arithmeticCrossCoefficient_diag_eq_correction]
+      simp [rawFiniteCrossCoefficient]
     _ = -(finiteSpectralValue N (basisTest i) -
           (canonicalCorrection i.1 : ℂ)) := by ring
     _ = -finiteHeadBalance (testStage (basisTest i)) (zeroHeightCutoff N) := by
-      rw [finiteSpectralValue_sub_target_eq_residual]
+      simpa only [basisTest] using congrArg Neg.neg
+        (finiteSpectralValue_sub_target_eq_residual N (basisTest i))
 
 @[simp]
 theorem rawCrossResidual_offdiag {M : ℕ}
@@ -269,47 +271,46 @@ cross coefficient matrix is visible in the double sum. -/
 noncomputable def sourcePolarizedForm {M : ℕ}
     (u v : Combination M) : ℂ :=
   ∑ i : Fin (M + 1), ∑ j : Fin (M + 1),
-    Complex.conj (u i) * v j * (arithmeticCrossCoefficient i j : ℂ)
+    conj (u i) * v j * (arithmeticCrossCoefficient i j : ℂ)
 
 /-- Raw finite-height polarization before projecting its diagonal coefficient to
 its real part.  It is retained only for complete residual accounting. -/
 noncomputable def rawFinitePolarizedForm {M : ℕ}
     (N : ℕ) (u v : Combination M) : ℂ :=
   ∑ i : Fin (M + 1), ∑ j : Fin (M + 1),
-    Complex.conj (u i) * v j * rawFiniteCrossCoefficient N i j
+    conj (u i) * v j * rawFiniteCrossCoefficient N i j
 
 /-- Hermitian finite-height polarization.  Each diagonal coefficient is real by
 definition; the raw imaginary discrepancy remains in `rawCrossResidual`. -/
 noncomputable def finitePolarizedForm {M : ℕ}
     (N : ℕ) (u v : Combination M) : ℂ :=
   ∑ i : Fin (M + 1), ∑ j : Fin (M + 1),
-    Complex.conj (u i) * v j * (finiteCrossCoefficient N i j : ℂ)
+    conj (u i) * v j * (finiteCrossCoefficient N i j : ℂ)
 
 /-- Complete raw residual on finite combinations. -/
 noncomputable def rawResidualForm {M : ℕ}
     (N : ℕ) (u v : Combination M) : ℂ :=
   ∑ i : Fin (M + 1), ∑ j : Fin (M + 1),
-    Complex.conj (u i) * v j * rawCrossResidual N i j
+    conj (u i) * v j * rawCrossResidual N i j
 
 /-- Hermitian residual on finite combinations. -/
 noncomputable def hermitianResidualForm {M : ℕ}
     (N : ℕ) (u v : Combination M) : ℂ :=
   ∑ i : Fin (M + 1), ∑ j : Fin (M + 1),
-    Complex.conj (u i) * v j * (hermitianCrossResidual N i j : ℂ)
+    conj (u i) * v j * (hermitianCrossResidual N i j : ℂ)
 
 /-- Exact arithmetic coefficient expansion. -/
 theorem sourcePolarizedForm_eq_diagonal_sum {M : ℕ}
     (u v : Combination M) :
     sourcePolarizedForm u v =
       ∑ i : Fin (M + 1),
-        Complex.conj (u i) * v i *
+        conj (u i) * v i *
           (arithmeticCrossCoefficient i i : ℂ) := by
   classical
   unfold sourcePolarizedForm
   apply Finset.sum_congr rfl
   intro i hi
   rw [Finset.sum_eq_single i]
-  · rfl
   · intro j hj hji
     simp [arithmeticCrossCoefficient, Ne.symm hji]
   · simp
@@ -319,14 +320,13 @@ theorem finitePolarizedForm_eq_diagonal_sum {M : ℕ}
     (N : ℕ) (u v : Combination M) :
     finitePolarizedForm N u v =
       ∑ i : Fin (M + 1),
-        Complex.conj (u i) * v i *
+        conj (u i) * v i *
           (finiteCrossCoefficient N i i : ℂ) := by
   classical
   unfold finitePolarizedForm
   apply Finset.sum_congr rfl
   intro i hi
   rw [Finset.sum_eq_single i]
-  · rfl
   · intro j hj hji
     simp [finiteCrossCoefficient, Ne.symm hji]
   · simp
@@ -361,6 +361,7 @@ theorem source_sub_finite_eq_hermitianResidualForm {M : ℕ}
   apply Finset.sum_congr rfl
   intro j hj
   unfold hermitianCrossResidual
+  push_cast
   ring
 
 /-- Collapse the complete Hermitian residual to its source-proved diagonal entries. -/
@@ -368,14 +369,13 @@ theorem hermitianResidualForm_eq_diagonal_sum {M : ℕ}
     (N : ℕ) (u v : Combination M) :
     hermitianResidualForm N u v =
       ∑ i : Fin (M + 1),
-        Complex.conj (u i) * v i *
+        conj (u i) * v i *
           (hermitianCrossResidual N i i : ℂ) := by
   classical
   unfold hermitianResidualForm
   apply Finset.sum_congr rfl
   intro i hi
   rw [Finset.sum_eq_single i]
-  · rfl
   · intro j hj hji
     have hij : i ≠ j := Ne.symm hji
     simp [hermitianCrossResidual, finiteCrossCoefficient,
@@ -396,13 +396,13 @@ theorem sourcePolarizedForm_add_right {M : ℕ}
     sourcePolarizedForm u (v + w) =
       sourcePolarizedForm u v + sourcePolarizedForm u w := by
   classical
-  simp [sourcePolarizedForm, mul_add, Finset.sum_add_distrib]
+  simp [sourcePolarizedForm, mul_add, add_mul, Finset.sum_add_distrib]
 
 /-- Conjugate scalar law in the first variable. -/
 theorem sourcePolarizedForm_smul_left {M : ℕ}
     (c : ℂ) (u v : Combination M) :
     sourcePolarizedForm (c • u) v =
-      Complex.conj c * sourcePolarizedForm u v := by
+      conj c * sourcePolarizedForm u v := by
   classical
   simp [sourcePolarizedForm, Finset.mul_sum, mul_assoc]
 
@@ -417,7 +417,7 @@ theorem sourcePolarizedForm_smul_right {M : ℕ}
 /-- The source polarization is Hermitian. -/
 theorem sourcePolarizedForm_hermitian {M : ℕ}
     (u v : Combination M) :
-    sourcePolarizedForm v u = Complex.conj (sourcePolarizedForm u v) := by
+    sourcePolarizedForm v u = conj (sourcePolarizedForm u v) := by
   classical
   rw [sourcePolarizedForm_eq_diagonal_sum,
     sourcePolarizedForm_eq_diagonal_sum]
@@ -440,13 +440,13 @@ theorem finitePolarizedForm_add_right {M : ℕ}
     finitePolarizedForm N u (v + w) =
       finitePolarizedForm N u v + finitePolarizedForm N u w := by
   classical
-  simp [finitePolarizedForm, mul_add, Finset.sum_add_distrib]
+  simp [finitePolarizedForm, mul_add, add_mul, Finset.sum_add_distrib]
 
 /-- Conjugate scalar law for the finite Hermitian form. -/
 theorem finitePolarizedForm_smul_left {M : ℕ}
     (N : ℕ) (c : ℂ) (u v : Combination M) :
     finitePolarizedForm N (c • u) v =
-      Complex.conj c * finitePolarizedForm N u v := by
+      conj c * finitePolarizedForm N u v := by
   classical
   simp [finitePolarizedForm, Finset.mul_sum, mul_assoc]
 
@@ -461,7 +461,7 @@ theorem finitePolarizedForm_smul_right {M : ℕ}
 /-- The Hermitian finite form obeys the same algebraic polarization laws. -/
 theorem finitePolarizedForm_hermitian {M : ℕ}
     (N : ℕ) (u v : Combination M) :
-    finitePolarizedForm N v u = Complex.conj (finitePolarizedForm N u v) := by
+    finitePolarizedForm N v u = conj (finitePolarizedForm N u v) := by
   classical
   rw [finitePolarizedForm_eq_diagonal_sum,
     finitePolarizedForm_eq_diagonal_sum]
@@ -533,10 +533,10 @@ theorem norm_source_sub_finite_le_pairError {M : ℕ}
     hermitianResidualForm_eq_diagonal_sum]
   calc
     ‖∑ i : Fin (M + 1),
-        Complex.conj (u i) * v i *
+        conj (u i) * v i *
           (hermitianCrossResidual N i i : ℂ)‖
         ≤ ∑ i : Fin (M + 1),
-            ‖Complex.conj (u i) * v i *
+            ‖conj (u i) * v i *
               (hermitianCrossResidual N i i : ℂ)‖ :=
       norm_sum_le _ _
     _ ≤ pairError N u v := by
@@ -545,10 +545,10 @@ theorem norm_source_sub_finite_le_pairError {M : ℕ}
       apply Finset.sum_le_sum
       intro i hi
       calc
-        ‖Complex.conj (u i) * v i *
+        ‖conj (u i) * v i *
             (hermitianCrossResidual N i i : ℂ)‖ =
             ‖u i‖ * ‖v i‖ * |hermitianCrossResidual N i i| := by
-              simp [norm_mul, Real.norm_eq_abs, mul_assoc]
+              simp [Real.norm_eq_abs, mul_assoc]
         _ ≤ ‖u i‖ * ‖v i‖ * lowerDefect N (basisTest i) := by
               have hres :
                   |hermitianCrossResidual N i i| ≤
