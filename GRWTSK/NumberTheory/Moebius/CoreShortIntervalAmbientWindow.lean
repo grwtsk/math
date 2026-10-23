@@ -41,7 +41,8 @@ theorem harmonicShortMobiusSum_eq_ambient
     harmonicShortIntervalStart harmonicStartWindowLower
   apply Finset.sum_congr rfl
   intro k _hk
-  congr 2 <;> omega
+  apply congrArg moebiusReal
+  omega
 
 /-- Every inherited start window lies in one common ambient block. -/
 theorem harmonicStartWindow_subset_ambient
@@ -50,21 +51,20 @@ theorem harmonicStartWindow_subset_ambient
         (harmonicStartWindowUpper j t) ⊆
       harmonicAmbientStartWindow j := by
   intro x hx
+  unfold harmonicAmbientStartWindow
   simp only [Finset.mem_Ico] at hx ⊢
   constructor
   · have hlower : 1 ≤ harmonicStartWindowLower j t := by
       unfold harmonicStartWindowLower harmonicShiftLower
       omega
     omega
-  · unfold harmonicStartWindowUpper harmonicStartWindowLower
-      harmonicShiftLower
+  · unfold harmonicStartWindowUpper harmonicStartWindowLower harmonicShiftLower at hx
+    have hp : 2 ^ j ≤ 2 ^ (j + 1) := Nat.pow_le_pow_right (by omega) (by omega)
     by_cases hleft : t + 1 < 2 ^ j
-    · rw [max_eq_right]
-      · omega
-      · omega
-    · rw [max_eq_left]
-      · omega
-      · omega
+    · rw [max_eq_right (by omega)] at hx
+      omega
+    · rw [max_eq_left (by omega)] at hx
+      omega
 
 /-- Exact first-moment rewrite from base indices to literal starting points. -/
 theorem harmonicShortIntervalL1_eq_startWindowSum
@@ -135,7 +135,7 @@ theorem coreLongDepthShortIntervalL1Majorant_le_ambient
       coreLongDepthAmbientL1Majorant j t := by
   have htY : t < 2 ^ (j + 1) := by
     simpa [coreLongDeepDepths] using
-      (Finset.mem_filter.mp hcore).1.2
+      (Finset.mem_Ico.mp (Finset.mem_filter.mp hcore).1).2
   unfold coreLongDepthShortIntervalL1Majorant
     coreLongDepthAmbientL1Majorant
     harmonicTerminalShortIntervalL1Majorant
@@ -150,7 +150,8 @@ theorem coreLongDepthShortIntervalL1Majorant_le_ambient
         apply mul_le_mul_of_nonneg_right
         · exact harmonicShortIntervalL1_le_ambient htY
         · have hNpos : 0 < harmonicShiftCount j t := Nat.pos_of_ne_zero hN
-          exact harmonicShiftReciprocal_terminalDifference_nonneg hNpos
+          simpa only [harmonicShiftFirstDifference, Nat.sub_add_cancel hNpos] using
+            harmonicShiftReciprocal_terminalDifference_nonneg hNpos
     · apply Finset.sum_le_sum
       intro k _hk
       apply mul_le_mul_of_nonneg_right

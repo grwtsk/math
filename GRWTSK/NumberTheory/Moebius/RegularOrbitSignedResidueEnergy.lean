@@ -67,7 +67,7 @@ def twoNonunitRegularShiftParityResidueL2Majorant
     Real.sqrt (parityOddHalfShiftSignedResidueEnergy b d 1)
 
 theorem sqrt_squareModulus_mul_energy
-    (d : ℕ) (E : ℝ) (hE : 0 ≤ E) :
+    (d : ℕ) (E : ℝ) (_hE : 0 ≤ E) :
     Real.sqrt ((((d * d : ℕ) : ℝ)) * E) =
       (d : ℝ) * Real.sqrt E := by
   push_cast
@@ -86,17 +86,25 @@ theorem fullFrequencyL2Majorant_eq_d_mul_residueL2
       oddHalfShiftFullFrequencyEnergy_eq_residue b d 0,
       evenHalfShiftFullFrequencyEnergy_eq_residue b d 1,
       oddHalfShiftFullFrequencyEnergy_eq_residue b d 1]
-  rw [sqrt_squareModulus_mul_energy d _ (by positivity),
-      sqrt_squareModulus_mul_energy d _ (by positivity),
-      sqrt_squareModulus_mul_energy d _ (by positivity),
-      sqrt_squareModulus_mul_energy d _ (by positivity)]
+  rw [sqrt_squareModulus_mul_energy d _ (by
+        unfold parityEvenHalfShiftSignedResidueEnergy
+        positivity),
+      sqrt_squareModulus_mul_energy d _ (by
+        unfold parityOddHalfShiftSignedResidueEnergy
+        positivity),
+      sqrt_squareModulus_mul_energy d _ (by
+        unfold parityEvenHalfShiftSignedResidueEnergy
+        positivity),
+      sqrt_squareModulus_mul_energy d _ (by
+        unfold parityOddHalfShiftSignedResidueEnergy
+        positivity)]
   ring
 
 def twoNonunitRegularShiftParityResidueL2EndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         twoNonunitRegularShiftParityResidueL2Majorant b d
       else 0
@@ -113,7 +121,7 @@ theorem fullFrequencyL2EndpointMajorant_eq_residueL2
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hNonunit : TwoNonunitSquareModulusParameter d
   · simp only [hNonunit, dif_pos]
     rw [fullFrequencyL2Majorant_eq_d_mul_residueL2]

@@ -36,6 +36,8 @@ UNIFORM_CERTIFIED_BUDGET_OPEN / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
+open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+
 namespace PrimeThetaSeparableKernelStage
 
 /-- Current-window `l1` norm of one left source feature. -/
@@ -78,7 +80,9 @@ theorem separatedFeatureNormMass_nonnegative
     (v : ℝ) :
     0 ≤ stage.separatedFeatureNormMass v := by
   unfold separatedFeatureNormMass
-  exact Finset.sum_nonneg fun r hr => by positivity
+  exact Finset.sum_nonneg fun r _hr =>
+    mul_nonneg (mul_nonneg (abs_nonneg _) (stage.leftFeatureL1_nonnegative r))
+      (stage.rightFeatureL1_nonnegative r)
 
 /-- Exact finite Fubini factorization of the complete absolute factor mass. -/
 theorem absoluteFactorMass_eq_separatedFeatureNormMass

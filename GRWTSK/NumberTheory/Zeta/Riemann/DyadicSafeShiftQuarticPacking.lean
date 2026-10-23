@@ -111,7 +111,7 @@ theorem safeCenterDyadicBlock_norm_le
       safeDyadicQuarticBlockEnvelope z j := by
   unfold safeCenterDyadicBlock
   apply safeDyadicBlock_norm_le_quarticEnvelope
-  · simp [safeShiftCenter]
+  · norm_num [safeShiftCenter]
   · exact safeShiftCenter_norm_le_quarticRadius z
 
 theorem safePlusDyadicBlock_norm_le_quartic
@@ -336,7 +336,7 @@ theorem safeAxialDyadic_edgeProduct_le
           (safeDyadicQuarticBlockEnvelope z (j+1))^2)) *
         (10 * ((safeDyadicQuarticBlockEnvelope z (j+1))^2 +
           (safeDyadicQuarticBlockEnvelope z (j+2))^2)) := by
-      exact mul_le_mul he01 he12 (by positivity) (by positivity)
+      exact mul_le_mul he01 he12 (PackingPoint.normSq_nonneg _) (by positivity)
     _ = 100 *
         (((safeDyadicQuarticBlockEnvelope z j)^2 +
           (safeDyadicQuarticBlockEnvelope z (j+1))^2) *
@@ -377,7 +377,7 @@ theorem safeTransverseDyadic_edgeProduct_le
           (safeDyadicQuarticBlockEnvelope z (j+1))^2)) *
         (4 * ((safeDyadicQuarticBlockEnvelope z (j+1))^2 +
           (safeDyadicQuarticBlockEnvelope z (j+2))^2)) := by
-      exact mul_le_mul he01 he12 (by positivity) (by positivity)
+      exact mul_le_mul he01 he12 (PackingPoint.normSq_nonneg _) (by positivity)
     _ = 16 *
         (((safeDyadicQuarticBlockEnvelope z j)^2 +
           (safeDyadicQuarticBlockEnvelope z (j+1))^2) *

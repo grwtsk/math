@@ -35,7 +35,7 @@ theorem abs_ambientMobiusShortIntervalSum_le_length
 theorem dyadicStartBlock_card (r : ℕ) :
     (dyadicStartBlock r).card = 2 ^ r := by
   unfold dyadicStartBlock
-  rw [Finset.card_Ico]
+  rw [Nat.card_Ico]
   rw [Nat.pow_succ]
   omega
 
@@ -146,8 +146,8 @@ theorem coreLongIncompatibleDyadicL1Packet_le_trivialBudget
       · simp only [hN, if_false]
         apply mul_le_mul_of_nonneg_right
         · exact incompatibleDyadicStartBlockL1_le_trivialBudget _ _
-        · exact harmonicShiftReciprocal_terminalDifference_nonneg
-            (Nat.pos_of_ne_zero hN)
+        · simpa only [harmonicShiftFirstDifference, Nat.sub_add_cancel (Nat.pos_of_ne_zero hN)] using
+            harmonicShiftReciprocal_terminalDifference_nonneg (Nat.pos_of_ne_zero hN)
     · apply Finset.sum_le_sum
       intro k _hk
       apply mul_le_mul_of_nonneg_right
@@ -173,8 +173,8 @@ theorem coreLongEndpointCorrectionL1Packet_le_trivialBudget
       · simp only [hN, if_false]
         apply mul_le_mul_of_nonneg_right
         · exact ambientEndpointStartCorrection_le_trivialBudget _ _
-        · exact harmonicShiftReciprocal_terminalDifference_nonneg
-            (Nat.pos_of_ne_zero hN)
+        · simpa only [harmonicShiftFirstDifference, Nat.sub_add_cancel (Nat.pos_of_ne_zero hN)] using
+            harmonicShiftReciprocal_terminalDifference_nonneg (Nat.pos_of_ne_zero hN)
     · apply Finset.sum_le_sum
       intro k _hk
       apply mul_le_mul_of_nonneg_right
@@ -218,7 +218,8 @@ theorem subpolynomialCoreLongDyadicBlockShortIntervalL1Packet_of_compatible
       coreLongCompatibleDyadicL1Packet j +
         (coreLongIncompatibleTrivialBudgetPacket j +
           coreLongEndpointTrivialBudgetPacket j) := by
-      apply add_le_add_left
+      rw [add_assoc]
+      apply add_le_add le_rfl
       exact add_le_add
         (coreLongIncompatibleDyadicL1Packet_le_trivialBudget j)
         (coreLongEndpointCorrectionL1Packet_le_trivialBudget j)

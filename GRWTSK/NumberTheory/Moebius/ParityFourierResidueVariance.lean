@@ -33,7 +33,7 @@ set_option autoImplicit false
 noncomputable section
 
 open scoped BigOperators
-open AddChar Complex
+open AddChar Complex ComplexConjugate
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
@@ -68,6 +68,7 @@ theorem sum_parityMertensResidueBucket
   classical
   unfold parityMertensResidueBucket parityMertensPrefix
   rw [Finset.sum_comm]
+  push_cast
   apply Finset.sum_congr rfl
   intro u _hu
   simp
@@ -84,10 +85,11 @@ theorem parityOnePointMobiusFourierSum_eq_residueBuckets
   unfold parityOnePointMobiusFourierSum
     parityOnePointMobiusFourierTerm
     parityMertensResidueBucket
+  simp_rw [Finset.sum_mul]
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro u _hu
-  simp [mul_assoc, mul_left_comm, mul_comm]
+  simp
 
 /-- Orthogonality of the standard additive characters, in the conjugate form
 needed for Parseval. -/
@@ -102,14 +104,22 @@ theorem stdAddChar_conj_mul_orthogonality
   have hconj (x : ZMod N) :
       conj (ZMod.stdAddChar x) = ZMod.stdAddChar (-x) := by
     rw [ZMod.stdAddChar_apply, ← Circle.coe_inv_eq_conj]
-    simpa using congrArg Subtype.val
-      ((ZMod.toCircle (N := N)).map_neg_eq_inv x)
+    simpa only [ZMod.stdAddChar_apply, Circle.coe_inv] using congrArg Subtype.val
+      ((ZMod.toCircle (N := N)).map_neg_eq_inv x).symm
   simp_rw [hconj, ← AddChar.map_add_eq_mul]
   have hsum :=
     AddChar.sum_mulShift
       (ψ := ZMod.stdAddChar (N := N))
       (c - a) (ZMod.isPrimitive_stdAddChar N)
-  simpa [AddChar.mulShift_apply, mul_sub, sub_eq_zero] using hsum
+  convert hsum using 1
+  · apply Finset.sum_congr rfl
+    intro k _
+    congr 1
+    ring
+  · by_cases hac : a = c
+    · subst c; simp
+    · have hca : c - a ≠ 0 := sub_ne_zero.mpr (Ne.symm hac)
+      simp [hac, hca]
 
 /-- Finite Parseval identity for the standard additive characters on `ZMod N`.
 The transform convention uses the positive phase, which has the same norm as
@@ -131,9 +141,13 @@ theorem stdAddChar_parseval_norm_sq
         (N : ℂ) *
           ∑ a : ZMod N, conj (F a) * F a := by
     simp_rw [map_sum, map_mul]
-    simp_rw [Finset.sum_mul, Finset.mul_sum]
+    conv_lhs => simp only [Finset.sum_mul, Finset.mul_sum]
     rw [Finset.sum_comm]
-    simp_rw [Finset.sum_comm (s := Finset.univ)]
+    conv_lhs =>
+      arg 2
+      ext a
+      rw [Finset.sum_comm]
+    rw [Finset.sum_comm]
     calc
       (∑ a : ZMod N,
         ∑ c : ZMod N,
@@ -151,7 +165,7 @@ theorem stdAddChar_parseval_norm_sq
           intro a _ha
           apply Finset.sum_congr rfl
           intro c _hc
-          rw [← Finset.mul_sum]
+          rw [Finset.mul_sum]
           apply Finset.sum_congr rfl
           intro k _hk
           ring
@@ -162,10 +176,13 @@ theorem stdAddChar_parseval_norm_sq
           simp_rw [stdAddChar_conj_mul_orthogonality]
       _ = (N : ℂ) *
           ∑ a : ZMod N, conj (F a) * F a := by
-          simp [Finset.mul_sum, mul_assoc, mul_left_comm, mul_comm]
-  have hre := congrArg Complex.re hcomplex
-  simpa [← Complex.normSq_eq_norm_sq,
-    Complex.normSq_eq_conj_mul_self] using hre
+          simp [Finset.mul_sum, mul_comm, mul_left_comm]
+  simp_rw [← Complex.normSq_eq_conj_mul_self] at hcomplex
+  have hreal : (∑ k : ZMod N, Complex.normSq (∑ a : ZMod N,
+      F a * ZMod.stdAddChar (k * a))) =
+      (N : ℝ) * ∑ a : ZMod N, Complex.normSq (F a) := by
+    exact_mod_cast hcomplex
+  simpa only [Complex.normSq_eq_norm_sq] using hreal
 
 /-- Parseval for the exact parity-residue regrouping. -/
 theorem sum_norm_sq_parityOnePointMobiusFourierSum
@@ -204,10 +221,10 @@ theorem normalized_nonzero_parityFourierEnergy_eq_residueVariance
   rw [hsplit, parityOnePointMobiusFourierSum_zero] at hfull
   unfold parityMertensResidueVariance
   have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by
-    positivity
-  rw [← hfull]
-  field_simp
-  ring
+    exact_mod_cast mul_ne_zero (NeZero.ne d) (NeZero.ne d)
+  rw [Complex.norm_real, Real.norm_eq_abs, sq_abs] at hfull
+  field_simp [hq]
+  nlinarith [hfull]
 
 /-- Residue variance is nonnegative because it is a normalized sum of squared
 nonzero Fourier coefficients. -/
@@ -302,8 +319,8 @@ theorem parityFourierNonzeroModulusMajorant_le_residueVarianceDiagonal
               b d 0,
             ← normalized_nonzero_parityFourierEnergy_eq_residueVariance
               b d 1]
-          simp_rw [Finset.mul_sum, Finset.sum_mul]
-          ring
+          simp only [Finset.mul_sum, mul_add, Finset.sum_add_distrib]
+          ring_nf
 
 /-- Endpoint aggregate expressed through residue variance and the separate
 squarefree-diagonal nonzero-frequency L1 term. -/
@@ -322,13 +339,12 @@ theorem parityFourierNonzeroFrequencyEndpointMajorant_le_residueVarianceDiagonal
       parityResidueVarianceDiagonalEndpointMajorant b := by
   unfold parityFourierNonzeroFrequencyEndpointMajorant
     parityResidueVarianceDiagonalEndpointMajorant
-    parityFourierNonzeroModulusMajorant
   apply Finset.sum_le_sum
   intro d hd
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact
     parityFourierNonzeroModulusMajorant_le_residueVarianceDiagonal b d
 

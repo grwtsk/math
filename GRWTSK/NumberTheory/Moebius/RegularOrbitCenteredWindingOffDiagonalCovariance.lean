@@ -33,43 +33,61 @@ theorem parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_wrap
     parityCenteredIntegerCoordinateOffDiagonalCovariance b d r H =
       parityHalfIndexSignedQuarticWrap b d r H := by
   classical
+  have swap (S T U : Finset ℕ) (f : ℕ → ℕ → ℕ → ℝ) :
+      (∑ a ∈ S, ∑ b ∈ T, ∑ c ∈ U, f a b c) =
+        ∑ c ∈ U, ∑ a ∈ S, ∑ b ∈ T, f a b c := by
+    conv_lhs =>
+      arg 2
+      ext a
+      rw [Finset.sum_comm]
+    rw [Finset.sum_comm]
+  have expand (c₁ c₂ : ℕ) :
+      (if c₁ ≡ c₂ [MOD d * d] ∧ c₁ ≠ c₂ then
+        parityHalfIndexZeroWindingFiber b r H c₁ *
+          parityHalfIndexZeroWindingFiber b r H c₂ else 0) =
+      ∑ h ∈ H, ∑ g ∈ H,
+        ∑ m ∈ zeroWindingHalfIndexBaseSet b r h,
+          ∑ n ∈ zeroWindingHalfIndexBaseSet b r g,
+            if halfIndexZeroWindingCoordinate m h = c₁ ∧
+                halfIndexZeroWindingCoordinate n g = c₂ ∧
+                (c₁ ≡ c₂ [MOD d * d] ∧ c₁ ≠ c₂) then
+              halfIndexBinaryMobiusCoefficient r m h *
+                halfIndexBinaryMobiusCoefficient r n g else 0 := by
+    unfold parityHalfIndexZeroWindingFiber
+    by_cases hc : c₁ ≡ c₂ [MOD d * d] ∧ c₁ ≠ c₂
+    · rw [if_pos hc]
+      simp only [hc.1, Finset.sum_mul_sum]
+      apply Finset.sum_congr rfl
+      intro h _
+      apply Finset.sum_congr rfl
+      intro g _
+      apply Finset.sum_congr rfl
+      intro m _
+      apply Finset.sum_congr rfl
+      intro n _
+      split_ifs <;> simp_all
+    · simp [hc]
   unfold parityCenteredIntegerCoordinateOffDiagonalCovariance
     parityCenteredIntegerCoordinateAmplitude
-    parityZeroWindingShiftFiberCorrelation
-    parityHalfIndexSignedQuarticWrap
-  rw [← mul_sum]
+  simp_rw [← parityHalfIndexZeroWindingFiber_eq_shiftCorrelation, expand]
+  unfold parityHalfIndexSignedQuarticWrap
   apply congrArg (fun x : ℝ => 4 * x)
-  simp_rw [Finset.sum_mul, Finset.mul_sum]
-  rw [Finset.sum_comm]
-  simp_rw [Finset.sum_comm (s := Finset.range (b + 1))]
-  rw [Finset.sum_comm]
-  simp_rw [Finset.sum_comm (s := H)]
+  rw [swap]
   apply Finset.sum_congr rfl
-  intro h hh
+  intro h _
+  rw [swap]
   apply Finset.sum_congr rfl
-  intro g hg
+  intro g _
+  rw [swap]
   apply Finset.sum_congr rfl
   intro m hm
+  rw [swap]
   apply Finset.sum_congr rfl
   intro n hn
-  let c₁ := halfIndexZeroWindingCoordinate m h
-  let c₂ := halfIndexZeroWindingCoordinate n g
-  have hc₁ : c₁ < b + 1 := halfIndexZeroWindingCoordinate_lt_endpoint hm
-  have hc₂ : c₂ < b + 1 := halfIndexZeroWindingCoordinate_lt_endpoint hn
-  rw [Finset.sum_eq_single c₁]
-  · rw [Finset.sum_eq_single c₂]
-    · by_cases hmod : c₁ ≡ c₂ [MOD d * d]
-      · by_cases hne : c₁ ≠ c₂
-        · simp [hmod, hne, c₁, c₂,
-            zeroWindingHalfIndexFromCoordinate_eq]
-        · simp [hmod, hne, c₁, c₂]
-      · simp [hmod, c₁, c₂]
-    · intro c hc hne
-      simp [hne]
-    · exact Finset.mem_range.mpr hc₂
-  · intro c hc hne
-    simp [hne]
-  · exact Finset.mem_range.mpr hc₁
+  have hc₁ := halfIndexZeroWindingCoordinate_lt_endpoint hm
+  have hc₂ := halfIndexZeroWindingCoordinate_lt_endpoint hn
+  simp only [ite_and]
+  simp [hc₁, hc₂, halfIndexQuarticMobiusCoefficient_eq_binary_mul]
 
 /-- The affine-Chowla spectral variance defect is purely off-diagonal. -/
 theorem parityAffineChowlaVarianceDefect_even_eq_offDiagonalCovariance
@@ -123,15 +141,16 @@ def parityCenteredIntegerCoordinateWindingLagSum
 quotient lies in the exact winding-radius interval. -/
 theorem positiveCongruentCenterDifference_has_windingLag
     (b d c₁ c₂ : ℕ) [NeZero d]
-    (hc₁ : c₁ < b + 1)
+    (_hc₁ : c₁ < b + 1)
     (hc₂ : c₂ < b + 1)
     (hlt : c₁ < c₂)
     (hmod : c₁ ≡ c₂ [MOD d * d]) :
     ∃ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
       c₂ = c₁ + z * (d * d) := by
-  have hqpos : 0 < d * d := by positivity
+  have hqpos : 0 < d * d := Nat.mul_pos (Nat.pos_of_ne_zero (NeZero.ne d))
+    (Nat.pos_of_ne_zero (NeZero.ne d))
   have hdiv : d * d ∣ c₂ - c₁ := by
-    exact (Nat.modEq_iff_dvd' hlt.le).mp hmod.symm
+    exact (Nat.modEq_iff_dvd' hlt.le).mp hmod
   obtain ⟨z, hz⟩ := hdiv
   have hdiffpos : 0 < c₂ - c₁ := Nat.sub_pos_of_lt hlt
   have hzpos : 0 < z := by
@@ -140,11 +159,12 @@ theorem positiveCongruentCenterDifference_has_windingLag
     simp [this] at hz
     omega
   have hdiffle : c₂ - c₁ ≤ b := by omega
-  have hzmul : z * (d * d) ≤ b := by simpa [hz] using hdiffle
+  have hzmul : z * (d * d) ≤ b := by simpa [hz, mul_comm] using hdiffle
   have hzrad : z ≤ centeredWindingRadius b d := by
     unfold centeredWindingRadius
     exact (Nat.le_div_iff_mul_le hqpos).2 hzmul
   refine ⟨z, Finset.mem_Icc.mpr ⟨hzpos, hzrad⟩, ?_⟩
+  have hz' : c₂ - c₁ = z * (d * d) := by simpa only [mul_comm] using hz
   omega
 
 /-- Conversely, every positive winding lag that stays inside the endpoint
@@ -152,7 +172,7 @@ range gives a distinct congruent center pair. -/
 theorem windingLag_gives_congruentCenters
     (d c z : ℕ) [NeZero d] :
     c ≡ c + z * (d * d) [MOD d * d] := by
-  exact Nat.ModEq.add_fac _ _ _
+  simp [Nat.ModEq, Nat.add_mod]
 
 /-- Source-level lag partition statement.  This is the finite bijection needed
 to turn the off-diagonal covariance into the positive-lag sum. -/
@@ -168,7 +188,7 @@ def CenteredWindingLagPartitionStatement : Prop :=
 theorem centeredWindingLagPartitionStatement :
     CenteredWindingLagPartitionStatement := by
   intro b d c₁ c₂ hd hc₁ hc₂ hlt hmod
-  letI : NeZero d := hd
+  let : NeZero d := hd
   exact positiveCongruentCenterDifference_has_windingLag
     b d c₁ c₂ hc₁ hc₂ hlt hmod
 
@@ -218,13 +238,16 @@ theorem parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_lagPartition
           positiveCongruentCenterDifference_has_windingLag
             b d c₂ c₁ hc₂b hc₁b hgt hold.1.symm
         exact ⟨z, hz, Or.inr heq⟩
-    simp [hold, hex]
+    rw [if_pos hold, if_pos hex]
   · have hnex :
         ¬ ∃ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
           (c₂ = c₁ + z * (d * d) ∨ c₁ = c₂ + z * (d * d)) := by
       intro hex
       obtain ⟨z, hz, heq⟩ := hex
       have hzpos : 0 < z := (Finset.mem_Icc.mp hz).1
+      have hq : 0 < d * d := Nat.mul_pos (Nat.pos_of_ne_zero (NeZero.ne d))
+        (Nat.pos_of_ne_zero (NeZero.ne d))
+      have hsep : 0 < z * (d * d) := Nat.mul_pos hzpos hq
       apply hold
       rcases heq with hforward | hbackward
       · constructor
@@ -235,7 +258,7 @@ theorem parityCenteredIntegerCoordinateOffDiagonalCovariance_eq_lagPartition
         · rw [hbackward]
           exact (windingLag_gives_congruentCenters d c₂ z).symm
         · omega
-    simp [hold, hnex]
+    rw [if_neg hold, if_neg hnex]
 
 /-- The exact lag partition is the wrap surface and therefore the affine-Chowla
 variance defect. -/
@@ -277,7 +300,7 @@ theorem regularCenteredWindingOffDiagonalCovarianceAtModulus_eq_residue
 def regularCenteredWindingOffDiagonalCovarianceEndpoint (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       regularCenteredWindingOffDiagonalCovarianceAtModulus b d
     else 0
 
@@ -292,7 +315,7 @@ theorem regularCenteredWindingOffDiagonalCovarianceEndpoint_eq_residue
   have hdpos : 0 < d :=
     (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact regularCenteredWindingOffDiagonalCovarianceAtModulus_eq_residue b d
 
 def RegularCenteredWindingOffDiagonalCovarianceEnvelope

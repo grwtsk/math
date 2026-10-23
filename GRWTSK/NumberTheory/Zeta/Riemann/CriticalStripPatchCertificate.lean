@@ -88,9 +88,13 @@ theorem exists_zeta_patch_at_zero :
   obtain ⟨r, hr, hvariation⟩ :=
     Metric.continuousAt_iff.mp hcont (1 / 4 : ℝ) (by norm_num)
   refine ⟨r, hr, ⟨?_⟩⟩
-  refine { center := 0, lower := 1 / 2, error := 1 / 4,
-    error_nonneg := by norm_num,
-    sample_lower := ?_, variation := ?_, strict_margin := by norm_num }
+  refine { center := 0
+           lower := 1 / 2
+           error := 1 / 4
+           error_nonneg := by norm_num
+           sample_lower := ?_
+           variation := ?_
+           strict_margin := by norm_num }
   · rw [riemannZeta_zero]
     norm_num
   · intro z hz

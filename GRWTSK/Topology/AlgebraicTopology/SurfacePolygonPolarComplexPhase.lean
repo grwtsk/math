@@ -33,7 +33,7 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskSurjectivity
 /-- Every nonzero complex point has the standard norm/argument
 exponential representation. The exact Mathlib theorem is to be
 reconciled at the pinned toolchain. -/
-theorem complex_norm_exp_arg (z : ℂ) (hz : z ≠ 0) :
+theorem complex_norm_exp_arg (z : ℂ) (_hz : z ≠ 0) :
     z = (‖z‖ : ℂ) * Complex.exp ((Complex.arg z : ℝ) * Complex.I) := by
   have h := Complex.norm_mul_exp_arg_mul_I z
   simpa [mul_comm, mul_left_comm, mul_assoc] using h.symm
@@ -48,14 +48,13 @@ theorem normalizedComplexAngle_mul_two_pi (z : ℂ) :
     2 * Real.pi * normalizedComplexAngle z = Complex.arg z := by
   unfold normalizedComplexAngle
   field_simp
-  ring
 
 /-- Unconditional complex polar phase representation candidate. -/
 theorem complex_realAnglePolar_representation (z : ℂ) (hz : z ≠ 0) :
     z = realAnglePolar (normalizedComplexAngle z) (‖z‖) := by
-  rw [complex_norm_exp_arg z hz]
   unfold realAnglePolar
   rw [normalizedComplexAngle_mul_two_pi]
+  exact complex_norm_exp_arg z hz
 
 /-- Unconditional surjectivity candidate obtained by consuming the
 exact complex norm/argument identity, not a new hypothesis. -/

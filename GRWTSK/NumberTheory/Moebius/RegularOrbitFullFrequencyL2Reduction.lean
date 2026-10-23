@@ -47,11 +47,8 @@ theorem sum_sq_regularRepresentatives_le_univ
     (f : ZMod (d * d) → ℂ) :
     (∑ k ∈ twoKernelRegularOrbitRepresentativeSet d, ‖f k‖ ^ 2) ≤
       ∑ k : ZMod (d * d), ‖f k‖ ^ 2 := by
-  apply Finset.sum_le_sum_of_subset
-  · intro k hk
-    simp
-  · intro k hk hnot
-    positivity
+  exact Finset.sum_le_sum_of_subset_of_nonneg (Finset.subset_univ _)
+    (fun _ _ _ => sq_nonneg _)
 
 /-- Corresponding square-root L2 monotonicity. -/
 theorem sqrt_sum_sq_regularRepresentatives_le_univ
@@ -107,7 +104,7 @@ def twoNonunitRegularShiftParityFullFrequencyL2EndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         ((d : ℝ))⁻¹ *
           twoNonunitRegularShiftParityFullFrequencyL2Majorant b d
@@ -126,7 +123,7 @@ theorem regularShiftParityFrequencyL2EndpointMajorant_le_fullFrequency
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hNonunit : TwoNonunitSquareModulusParameter d
   · simp only [hNonunit, dif_pos]
     exact mul_le_mul_of_nonneg_left

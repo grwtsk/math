@@ -91,11 +91,11 @@ theorem stdAddCharSquareModulusParseval_iff_mathlibDft :
       UnnormalizedZModDFTParseval := by
   constructor
   · intro hRepo d hd C
-    letI : NeZero d := hd
+    let : NeZero d := hd
     rw [← sum_norm_sq_stdAddCharResidueFourier_eq_mathlibDft d C]
     exact hRepo d hd C
   · intro hDft d hd C
-    letI : NeZero d := hd
+    let : NeZero d := hd
     rw [sum_norm_sq_stdAddCharResidueFourier_eq_mathlibDft d C]
     exact hDft d hd C
 

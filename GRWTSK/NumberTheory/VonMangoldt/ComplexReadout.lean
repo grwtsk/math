@@ -35,14 +35,14 @@ def reTest : RealTest where
   slope := fun t => (φ.slope t).re
   slope_continuous := Complex.continuous_re.comp_continuousOn φ.slope_continuous
   hasDeriv := fun t ht => by
-    simpa using Complex.reCLM.hasFDerivAt.comp_hasDerivAt t (φ.hasDeriv t ht)
+    convert! Complex.reCLM.hasFDerivAt.comp_hasDerivAt t (φ.hasDeriv t ht) using 0
 
 def imTest : RealTest where
   value := fun t => (φ.value t).im
   slope := fun t => (φ.slope t).im
   slope_continuous := Complex.continuous_im.comp_continuousOn φ.slope_continuous
   hasDeriv := fun t ht => by
-    simpa using Complex.imCLM.hasFDerivAt.comp_hasDerivAt t (φ.hasDeriv t ht)
+    convert! Complex.imCLM.hasFDerivAt.comp_hasDerivAt t (φ.hasDeriv t ht) using 0
 
 theorem value_continuous : ContinuousOn φ.value (Icc (0:ℝ) 1) := by
   intro t ht
@@ -64,13 +64,18 @@ theorem density_integrable :
 
 theorem action_re (X : ℕ) :
     (action X φ.value).re = realAction (reTest φ) X := by
-  have h := Complex.reCLM.intervalIntegral_comp_comm
-    ((show IntegrableOn (fun t => φ.value t / (1+(t:ℂ)))
-      (Icc (0:ℝ) 1) volume from density_integrable φ).intervalIntegrable)
+  have hintOn : IntegrableOn (fun t : ℝ => φ.value t / (1+(t:ℂ)))
+      (Icc (0:ℝ) 1) volume := by
+    convert! density_integrable φ using 0
+  have hint : IntervalIntegrable (fun t : ℝ => φ.value t / (1+(t:ℂ)))
+      volume 0 1 := by
+    apply IntegrableOn.intervalIntegrable
+    simpa only [uIcc_of_le (show (0 : ℝ) ≤ 1 by norm_num)] using hintOn
+  have h := Complex.reCLM.intervalIntegral_comp_comm hint
   have hi : (∫ t in (0:ℝ)..1, φ.value t/(1+(t:ℂ))).re =
       ∫ t in (0:ℝ)..1, (φ.value t).re/(1+t) := by
     calc
-      _ = ∫ t in (0:ℝ)..1, (φ.value t/(1+(t:ℂ))).re := h.symm
+      _ = ∫ t in (0:ℝ)..1, (φ.value t/(1+(t:ℂ))).re := by convert! h.symm using 0
       _ = _ := by
         congr 1
         funext t
@@ -83,13 +88,18 @@ theorem action_re (X : ℕ) :
 
 theorem action_im (X : ℕ) :
     (action X φ.value).im = realAction (imTest φ) X := by
-  have h := Complex.imCLM.intervalIntegral_comp_comm
-    ((show IntegrableOn (fun t => φ.value t / (1+(t:ℂ)))
-      (Icc (0:ℝ) 1) volume from density_integrable φ).intervalIntegrable)
+  have hintOn : IntegrableOn (fun t : ℝ => φ.value t / (1+(t:ℂ)))
+      (Icc (0:ℝ) 1) volume := by
+    convert! density_integrable φ using 0
+  have hint : IntervalIntegrable (fun t : ℝ => φ.value t / (1+(t:ℂ)))
+      volume 0 1 := by
+    apply IntegrableOn.intervalIntegrable
+    simpa only [uIcc_of_le (show (0 : ℝ) ≤ 1 by norm_num)] using hintOn
+  have h := Complex.imCLM.intervalIntegral_comp_comm hint
   have hi : (∫ t in (0:ℝ)..1, φ.value t/(1+(t:ℂ))).im =
       ∫ t in (0:ℝ)..1, (φ.value t).im/(1+t) := by
     calc
-      _ = ∫ t in (0:ℝ)..1, (φ.value t/(1+(t:ℂ))).im := h.symm
+      _ = ∫ t in (0:ℝ)..1, (φ.value t/(1+(t:ℂ))).im := by convert! h.symm using 0
       _ = _ := by
         congr 1
         funext t
@@ -101,13 +111,13 @@ theorem action_im (X : ℕ) :
     GRWTSK.NumberTheory.VonMangoldt.CenteredReadout.unit_integral_eq_interval]
 
 theorem residual_product_integrable (X : ℕ) :
-    Integrable (fun t => ((cumulative X t-center X : ℝ):ℂ)*φ.slope t) unitVolume := by
+    Integrable (fun t => ((cumulative X t-DyadicDiscrepancy.center X : ℝ):ℂ)*φ.slope t) unitVolume := by
   have hRe := (cumulative_slope_integrable (reTest φ) X).sub
-    ((slope_integrable (reTest φ)).const_mul (center X))
+    ((slope_integrable (reTest φ)).const_mul (DyadicDiscrepancy.center X))
   have hIm := (cumulative_slope_integrable (imTest φ) X).sub
-    ((slope_integrable (imTest φ)).const_mul (center X))
+    ((slope_integrable (imTest φ)).const_mul (DyadicDiscrepancy.center X))
   have h := hRe.ofReal.add (hIm.ofReal.const_mul Complex.I)
-  convert h using 1
+  convert! h using 1
   funext t
   apply Complex.ext <;> simp [reTest, imTest, Complex.mul_re, Complex.mul_im] <;> ring
 
@@ -115,19 +125,33 @@ theorem residual_product_integrable (X : ℕ) :
 theorem centered_ibp {X : ℕ} (hX : 0 < X) :
     action X φ.value = φ.value 0*(mass0 X : ℂ) +
       (φ.value 1-φ.value 0)*(mass1 X : ℂ) -
-      ∫ t, ((cumulative X t-center X : ℝ):ℂ)*φ.slope t ∂unitVolume := by
+      ∫ t, ((cumulative X t-DyadicDiscrepancy.center X : ℝ):ℂ)*φ.slope t ∂unitVolume := by
   have hr := GRWTSK.NumberTheory.VonMangoldt.CenteredReadout.centered_ibp (reTest φ) hX
   have hi := GRWTSK.NumberTheory.VonMangoldt.CenteredReadout.centered_ibp (imTest φ) hX
-  have hR := Complex.reCLM.integral_comp_comm (residual_product_integrable φ X)
-  have hI := Complex.imCLM.integral_comp_comm (residual_product_integrable φ X)
+  have hR : (∫ t, ((cumulative X t-DyadicDiscrepancy.center X : ℝ):ℂ)*φ.slope t
+      ∂unitVolume).re = ∫ t, (cumulative X t-DyadicDiscrepancy.center X) *
+        (φ.slope t).re ∂unitVolume := by
+    convert! (Complex.reCLM.integral_comp_comm (residual_product_integrable φ X)).symm using 1
+    apply integral_congr_ae
+    filter_upwards [] with t
+    change _ = (((cumulative X t-DyadicDiscrepancy.center X : ℝ):ℂ)*φ.slope t).re
+    simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, zero_mul, sub_zero]
+  have hI : (∫ t, ((cumulative X t-DyadicDiscrepancy.center X : ℝ):ℂ)*φ.slope t
+      ∂unitVolume).im = ∫ t, (cumulative X t-DyadicDiscrepancy.center X) *
+        (φ.slope t).im ∂unitVolume := by
+    convert! (Complex.imCLM.integral_comp_comm (residual_product_integrable φ X)).symm using 1
+    apply integral_congr_ae
+    filter_upwards [] with t
+    change _ = (((cumulative X t-DyadicDiscrepancy.center X : ℝ):ℂ)*φ.slope t).im
+    simp only [Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, zero_mul, add_zero]
   apply Complex.ext
   · rw [action_re]
     simpa only [reTest, Complex.sub_re, Complex.add_re, Complex.mul_re,
-      Complex.ofReal_re, Complex.ofReal_im, mul_zero, sub_zero, ← hR] using hr
+      Complex.ofReal_re, Complex.ofReal_im, mul_zero, sub_zero, hR] using hr
   · rw [action_im]
     simpa only [imTest, Complex.sub_im, Complex.add_im, Complex.mul_im,
       Complex.ofReal_re, Complex.ofReal_im, mul_zero, zero_mul, zero_add,
-      add_zero, ← hI] using hi
+      add_zero, hI] using hi
 
 /-- Useful without choosing a square-root branch or weakening the constant. -/
 theorem complex_norm_sq (z : ℂ) : ‖z‖^2 = z.re^2+z.im^2 := by
@@ -155,12 +179,14 @@ theorem action_norm_sq_le {X : ℕ} (hX : 0 < X) :
         ∫ t, (φ.slope t).im^2 ∂unitVolume) := by
     unfold testEnergy
     simp_rw [complex_norm_sq]
-    rw [integral_add
-      (((reTest φ).slope_continuous.pow 2).integrableOn_Icc)
-      (((imTest φ).slope_continuous.pow 2).integrableOn_Icc)]
+    have hre : Integrable (fun t => (φ.slope t).re^2) unitVolume :=
+      ((reTest φ).slope_continuous.pow 2).integrableOn_Icc
+    have him : Integrable (fun t => (φ.slope t).im^2) unitVolume :=
+      ((imTest φ).slope_continuous.pow 2).integrableOn_Icc
+    rw [integral_add hre him]
     ring
   rw [complex_norm_sq, action_re, action_im, hsplit, mul_add]
-  convert add_le_add hr hi using 1 <;> simp [reTest, imTest, Complex.sub_re, Complex.sub_im]
+  convert! add_le_add hr hi using 1
 
 theorem action_norm_le {X : ℕ} (hX : 0 < X) :
     ‖action X φ.value‖ ≤ Real.sqrt (augmentedEnergy X) * Real.sqrt (testEnergy φ) := by

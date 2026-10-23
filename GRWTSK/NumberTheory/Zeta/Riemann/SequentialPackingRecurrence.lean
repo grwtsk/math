@@ -160,13 +160,13 @@ theorem stateAt_succ_second
 theorem stateAt_succ_third
     (seq : SequentialThreePointPrimePacking) (n : ℕ) :
     (seq.stateAt (n + 1)).third = seq.point (n + 3) := by
-  congr 1 <;> omega
+  congr 1
 
 /-- The only new source label at the next stage is source n+3. -/
 theorem stateAt_succ_thirdSource
     (seq : SequentialThreePointPrimePacking) (n : ℕ) :
     (seq.stateAt (n + 1)).thirdSource = seq.source (n + 3) := by
-  congr 1 <;> omega
+  congr 1
 
 end SequentialThreePointPrimePacking
 

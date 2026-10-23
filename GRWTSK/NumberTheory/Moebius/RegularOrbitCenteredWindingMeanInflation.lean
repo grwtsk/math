@@ -28,7 +28,7 @@ theorem effectiveSquareModulus_reciprocalDifference_nonneg
   have hdR : (0 : ℝ) < ((d * d : ℕ) : ℝ) := by exact_mod_cast hpos
   have hbR : (0 : ℝ) < ((b + 1 : ℕ) : ℝ) := by positivity
   have hinv : (((b + 1 : ℕ) : ℝ))⁻¹ ≤ (((d * d : ℕ) : ℝ))⁻¹ :=
-    inv_le_inv₀ hdR hcast
+    (inv_le_inv₀ hbR hdR).2 hcast
   linarith
 
 /-- Mean inflation is nonnegative on effective moduli. -/
@@ -100,7 +100,7 @@ theorem regularCenteredWindingMeanInflationAtModulus_le
 def regularCenteredWindingMeanInflationEndpoint (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       regularCenteredWindingMeanInflationAtModulus b d
     else 0
 
@@ -114,7 +114,7 @@ theorem regularCenteredWindingMeanInflationEndpoint_le_eight_mul_pairMassSquare
   calc
     (∑ d ∈ effectiveEndpointSquareModulusSet b,
       if hd : 0 < d then
-        letI : NeZero d := ⟨ne_of_gt hd⟩
+        let : NeZero d := ⟨ne_of_gt hd⟩
         regularCenteredWindingMeanInflationAtModulus b d
       else 0) ≤
       ∑ d ∈ effectiveEndpointSquareModulusSet b,
@@ -124,7 +124,7 @@ theorem regularCenteredWindingMeanInflationEndpoint_le_eight_mul_pairMassSquare
           have hdpos : 0 < d :=
             (Finset.mem_Ico.mp (Finset.mem_filter.mp hdmem).1).1
           simp only [dif_pos hdpos]
-          letI : NeZero d := ⟨ne_of_gt hdpos⟩
+          let : NeZero d := ⟨ne_of_gt hdpos⟩
           exact regularCenteredWindingMeanInflationAtModulus_le b d
     _ = 4 * regularCenteredWindingPairMassSquare b *
         (∑ d ∈ effectiveEndpointSquareModulusSet b, (((d : ℝ) ^ 2)⁻¹)) := by

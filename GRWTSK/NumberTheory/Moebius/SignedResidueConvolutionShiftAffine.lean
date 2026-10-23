@@ -86,7 +86,7 @@ theorem endpointParityStrictPair_shift_mem
   have hspec := endpointParityStrictPair_shift_spec huv
   rcases Finset.mem_filter.mp huv with ⟨huvProd, _huvLt⟩
   have hv := (Finset.mem_product.mp huvProd).2
-  have hvI := (Finset.mem_filter.mp hv).1
+  have hvI := Finset.mem_Icc.mp (Finset.mem_filter.mp hv).1
   unfold positiveEndpointShiftSet
   apply Finset.mem_Ico.mpr
   constructor
@@ -160,9 +160,9 @@ theorem parityPairShiftResidueCorrelation_eq_affine
   unfold parityPairShiftResidueCorrelation
     parityAffineShiftResidueCorrelation
   apply congrArg (fun z : ℂ => 2 * z)
-  apply Finset.sum_bij'
+  refine Finset.sum_bij'
     (fun uv _ => uv.1)
-    (fun u _ => (u, u + 2 * h))
+    (fun u _ => (u, u + 2 * h)) ?_ ?_ ?_ ?_ ?_
   · intro uv huv
     rcases Finset.mem_filter.mp huv with ⟨huvPair, hshift⟩
     rcases Finset.mem_filter.mp huvPair with ⟨huvProd, huvLt⟩
@@ -175,7 +175,7 @@ theorem parityPairShiftResidueCorrelation_eq_affine
     apply Finset.mem_filter.mpr
     constructor
     · exact hu
-    · simpa [hvEq] using (Finset.mem_filter.mp hv).1.2
+    · simpa [hvEq] using (Finset.mem_Icc.mp (Finset.mem_filter.mp hv).1).2
   · intro u hu
     rcases Finset.mem_filter.mp hu with ⟨huParity, huTop⟩
     have hhI := Finset.mem_Ico.mp hh
@@ -203,15 +203,9 @@ theorem parityPairShiftResidueCorrelation_eq_affine
     have hvEq : uv.2 = uv.1 + 2 * h := by
       rw [← hshift]
       exact hspec.2
-    simp only
-    constructor
-    · rfl
-    · rw [hvEq, pairResidueCoordinate_eq_affineShift]
+    exact Prod.ext rfl hvEq.symm
   · intro u hu
-    simp only
-    constructor
-    · rfl
-    · rfl
+    rfl
   · intro uv huv
     rcases Finset.mem_filter.mp huv with ⟨huvPair, hshift⟩
     have hspec := endpointParityStrictPair_shift_spec huvPair
@@ -242,8 +236,10 @@ theorem paritySignedResidueConvolutionBucket_eq_sum_pairShifts
   rw [Finset.sum_eq_single h0]
   · simp [h0]
   · intro h hh hne
-    simp [hne]
-  · exact hmem0
+    have hhne : (uv.2 - uv.1) / 2 ≠ h := by simpa only [h0] using hne.symm
+    simp [hhne]
+  · intro hnot
+    exact (hnot hmem0).elim
 
 /-- The signed residue bucket is exactly the sum of its affine growing-shift
 binary correlations. -/
@@ -282,11 +278,13 @@ theorem sum_shiftResidueCorrelation_mul_char
   unfold parityAffineShiftResidueCorrelation
     parityGrowingShiftAffineChowlaTwist
   simp_rw [mul_assoc, Finset.mul_sum, Finset.sum_mul]
+  rw [← Finset.mul_sum]
   rw [Finset.sum_comm]
-  apply congrArg (fun z : ℂ => 2 * z)
+  rw [← Finset.mul_sum]
+  congr 1
   apply Finset.sum_congr rfl
   intro u _hu
-  simp
+  simp [mul_assoc]
 
 /-- Exact growing-shift affine form of the signed residue-convolution Fourier
 transform. -/
@@ -298,7 +296,7 @@ theorem paritySignedResidueConvolutionFourier_eq_sum_affineChowlaTwists
         parityGrowingShiftAffineChowlaTwist b d r h k := by
   classical
   unfold paritySignedResidueConvolutionFourier
-  simp_rw [paritySignedResidueConvolutionBucket_eq_sum_affineShifts]
+  simp_rw [paritySignedResidueConvolutionBucket_eq_sum_affineShifts, Finset.sum_mul]
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
@@ -368,7 +366,7 @@ theorem parityGrowingShiftAffineChowlaEndpointMajorant_eq_signed
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact
     parityGrowingShiftAffineChowlaNonzeroModulusMajorant_eq_signed b d
 

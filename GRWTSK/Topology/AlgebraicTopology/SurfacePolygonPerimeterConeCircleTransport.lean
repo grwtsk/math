@@ -43,12 +43,18 @@ sofic, Chowla, zeta-divisor, or Riemann-hypothesis statement follows.
 
 set_option autoImplicit false
 noncomputable section
+open Topology
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport
 
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone
+
+local instance cornerDiscreteTopology (k : ℕ) :
+    TopologicalSpace (GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing.PolygonCorner k) := ⊥
+
+local instance coneSourceSetoid (k : ℕ) : Setoid (ConeCylinder k) := coneSetoid k
 
 /-- The genuine source cylinder for the standard cone on Mathlib's
 unit additive circle. -/
@@ -117,6 +123,12 @@ def standardCircleConeSetoid :
 /-- The actual topological cone on `UnitAddCircle`. -/
 def StandardCircleCone : Type :=
   Quotient standardCircleConeSetoid
+
+local instance standardConeSourceSetoid : Setoid StandardCircleConeCylinder :=
+  standardCircleConeSetoid
+
+instance standardCircleConeTopology : TopologicalSpace StandardCircleCone :=
+  inferInstanceAs (TopologicalSpace (Quotient standardCircleConeSetoid))
 
 /-- Its topology is the true coinduced quotient topology. -/
 theorem standardCircleConeTopology_coinduced :
@@ -191,9 +203,9 @@ def standardCircleConeRadius :
 
 theorem standardCircleConeRadius_continuous :
     Continuous standardCircleConeRadius := by
-  apply Continuous.quotient_lift continuous_snd
-  intro p q h
-  exact standardCircleConeConnected_preserves_radius h
+  exact Continuous.quotient_lift
+    (show Continuous (fun p : StandardCircleConeCylinder => p.2) from continuous_snd)
+    (fun _ _ h => standardCircleConeConnected_preserves_radius h)
 
 /-- A selected apex of the standard cone. -/
 def standardCircleConeApex : StandardCircleCone :=
@@ -233,10 +245,10 @@ theorem standardCircleConeBoundary_injective :
 
 /-- Compactness of the standard cone, inherited from the genuine
 compact circle-cylinder quotient. -/
-def standardCircleConeCompactSpace :
+theorem standardCircleConeCompactSpace :
     CompactSpace StandardCircleCone := by
-  letI : Fact (0 < (1 : ℝ)) := ⟨by norm_num⟩
-  haveI : CompactSpace StandardCircleConeCylinder := by
+  let : Fact (0 < (1 : ℝ)) := ⟨by norm_num⟩
+  have : CompactSpace StandardCircleConeCylinder := by
     infer_instance
   exact Quotient.compactSpace
 
@@ -293,12 +305,10 @@ def perimeterConeToStandardCircleCone (k : ℕ) :
 theorem perimeterConeToStandardCircleCone_continuous
     (k : ℕ) :
     Continuous (perimeterConeToStandardCircleCone k) := by
-  apply Continuous.quotient_lift
+  exact Continuous.quotient_lift
     (standardCircleConeProjection_continuous.comp
       (perimeterToStandardCircleConeSource_continuous k))
-  intro p q h
-  exact Quotient.sound
-    (coneConnected_perimeterToStandardCircleConeSource k h)
+    (fun _ _ h => Quotient.sound (coneConnected_perimeterToStandardCircleConeSource k h))
 
 /-- Every authentic perimeter point at radius zero maps to the selected
 standard cone apex. -/
@@ -364,13 +374,11 @@ def standardCircleConeToPerimeterCone (k : ℕ) :
 theorem standardCircleConeToPerimeterCone_continuous
     (k : ℕ) :
     Continuous (standardCircleConeToPerimeterCone k) := by
-  apply Continuous.quotient_lift
+  exact Continuous.quotient_lift
     ((coneProjection_continuous k).comp
       (standardCircleToPerimeterConeSource_continuous k))
-  intro p q h
-  exact Quotient.sound
-    (standardCircleConeConnected_standardCircleToPerimeterConeSource
-      k h)
+    (fun _ _ h => Quotient.sound
+      (standardCircleConeConnected_standardCircleToPerimeterConeSource k h))
 
 /-- The two descended cone maps are left inverses. -/
 theorem standardCircleConeToPerimeterCone_leftInverse
@@ -386,8 +394,9 @@ theorem standardCircleConeToPerimeterCone_leftInverse
         (standardCircleToPerimeterConeSource k
           (perimeterToStandardCircleConeSource k (x, r))) =
       coneProjection k (x, r)
-  simp [perimeterToStandardCircleConeSource,
-    standardCircleToPerimeterConeSource]
+  change coneProjection k
+    ((perimeterUnitCircleHomeomorph k).symm (perimeterUnitCircleHomeomorph k x), r) = _
+  rw [(perimeterUnitCircleHomeomorph k).symm_apply_apply]
 
 /-- The two descended cone maps are right inverses. -/
 theorem standardCircleConeToPerimeterCone_rightInverse
@@ -403,8 +412,9 @@ theorem standardCircleConeToPerimeterCone_rightInverse
         (perimeterToStandardCircleConeSource k
           (standardCircleToPerimeterConeSource k (x, r))) =
       standardCircleConeProjection (x, r)
-  simp [perimeterToStandardCircleConeSource,
-    standardCircleToPerimeterConeSource]
+  change standardCircleConeProjection
+    ((perimeterUnitCircleHomeomorph k) ((perimeterUnitCircleHomeomorph k).symm x), r) = _
+  rw [(perimeterUnitCircleHomeomorph k).apply_symm_apply]
 
 /-- The source-exact equivalence of the two cone quotient carriers. -/
 def perimeterConeEquivStandardCircleCone (k : ℕ) :

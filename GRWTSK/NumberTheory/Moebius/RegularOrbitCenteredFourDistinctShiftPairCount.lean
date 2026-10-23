@@ -19,7 +19,7 @@ theorem zeroWindingAdmissibleShiftSet_subset_range_center
     zeroWindingAdmissibleShiftSet b r c H ⊆ Finset.range (c + 1) := by
   intro h hh
   have hadm := (Finset.mem_filter.mp hh).2
-  exact Finset.mem_range.mpr hadm.1
+  exact Finset.mem_range.mpr (Nat.lt_succ_of_le hadm.1)
 
 theorem card_zeroWindingAdmissibleShiftSet_le_center
     (b r c : ℕ) (H : Finset ℕ) :
@@ -61,15 +61,15 @@ theorem card_centeredAffineFourMobiusDistinctShiftPairs_le_endpointSquare
       (b + 1) * (b + 1) := by
   unfold centeredAffineFourMobiusDistinctShiftPairs
   exact
-    (Finset.card_filter_le_iff.mpr
-      (card_admissibleShiftPairProduct_le_endpointSquare H hc hcell))
+    (Finset.card_filter_le _ _).trans
+      (card_admissibleShiftPairProduct_le_endpointSquare H hc hcell)
 
 /-- Safe total number of center/shift-pair configurations at one positive lag:
 at most (b+1)^3. -/
 theorem sum_card_distinctShiftPairs_le_endpointCube
     (b r ell : ℕ) (H : Finset ℕ) :
     (∑ c ∈ Finset.range (b + 1),
-      if hc : c + ell < b + 1 then
+      if _hc : c + ell < b + 1 then
         (centeredAffineFourMobiusDistinctShiftPairs b r c ell H).card
       else 0) ≤ (b + 1) * ((b + 1) * (b + 1)) := by
   calc
@@ -82,7 +82,7 @@ theorem sum_card_distinctShiftPairs_le_endpointCube
           H (Finset.mem_range.mp hc) hcell
       · simp [hcell]
     _ = (b + 1) * ((b + 1) * (b + 1)) := by
-      simp [mul_assoc, mul_left_comm]
+      simp
 
 structure RegularCenteredFourDistinctShiftPairCountSourceData where
   theoremStatement : Prop

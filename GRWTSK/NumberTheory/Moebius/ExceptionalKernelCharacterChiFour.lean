@@ -71,8 +71,7 @@ theorem twoKernelShiftCharacter_eq_neg_one_pow
   | zero =>
       simp [twoKernelShiftCharacter]
   | succ m ih =>
-      rw [Nat.succ_eq_add_one,
-        twoKernelShiftCharacter_add d m 1,
+      rw [twoKernelShiftCharacter_add d m 1,
         ih,
         twoKernelShiftCharacter_one_eq_neg_one d hNonunit,
         pow_succ]
@@ -110,9 +109,9 @@ theorem exceptionalKernelTwistedMertensPrefix_even_eq_halfSum
   rw [exceptionalKernelTwistedMertensPrefix_eq_neg_one_twist
     b d 0 hNonunit]
   unfold endpointParitySet
-  apply Finset.sum_bij'
+  refine Finset.sum_bij'
     (fun u _hu => u / 2)
-    (fun m _hm => 2 * m)
+    (fun m _hm => 2 * m) ?_ ?_ ?_ ?_ ?_
   · intro u hu
     have hu' := Finset.mem_filter.mp hu
     have huI := Finset.mem_Icc.mp hu'.1
@@ -227,7 +226,7 @@ theorem halfScaleOddMertensEnergy_of_parity
           b / 2 ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) := by
         apply Finset.mem_Ico.mpr
         have hbI := Finset.mem_Ico.mp hb
-        simp only [Nat.succ_eq_add_one, pow_succ] at hbI ⊢
+        simp only [pow_succ] at hbI ⊢
         omega
       have hsmall := hscale j (b / 2) 1 hbHalf (by norm_num)
       have hbase :
@@ -257,17 +256,18 @@ theorem twoKernelTwistedMertensEnergy_of_halfOdd_and_chiFour
   obtain ⟨C₁, hC₁, hChiScale⟩ := hChi δ hδ
   refine ⟨C₀ + C₁, add_nonneg hC₀ hC₁, ?_⟩
   intro j b d r hb hd hNonunit hr
-  letI : NeZero d := ⟨by
+  let : NeZero d := ⟨by
     have hd' := (Finset.mem_filter.mp hd).1
     exact ne_of_gt (Finset.mem_Ico.mp hd').1⟩
+  dsimp only
   have hrCases : r = 0 ∨ r = 1 := by omega
   rcases hrCases with rfl | rfl
   · rw [exceptionalKernelTwistedMertensPrefix_even_eq_odd_half
-      b d hNonunit, Complex.norm_real, sq_abs]
-    exact (hOddScale j b hb).trans (by gcongr)
+      b d hNonunit, Complex.norm_real, Real.norm_eq_abs, sq_abs]
+    exact (hOddScale j b hb).trans (by gcongr; linarith)
   · rw [exceptionalKernelTwistedMertensPrefix_odd_eq_chiFour
       b d hNonunit]
-    exact (hChiScale j b hb).trans (by gcongr)
+    exact (hChiScale j b hb).trans (by gcongr; linarith)
 
 /-- Existing pointwise ordinary-Mertens control plus the independent `chi_4`
 energy premise supplies the exceptional kernel energy. -/

@@ -36,14 +36,14 @@ theorem unitAddCircle_coe_eq_iff_integer (θ φ : ℝ) :
   constructor
   · intro h
     have hz : θ - φ ∈ AddSubgroup.zmultiples (1 : ℝ) := by
-      exact (AddSubgroup.Quotient.eq_iff_sub_mem).mp h
+      exact (QuotientAddGroup.eq_iff_sub_mem).mp h
     rcases hz with ⟨n, hn⟩
     refine ⟨n, ?_⟩
     have hn' : θ - φ = (n : ℝ) := by
-      simpa using hn
+      simpa using hn.symm
     linarith
   · rintro ⟨n, hn⟩
-    apply (AddSubgroup.Quotient.eq_iff_sub_mem).mpr
+    apply (QuotientAddGroup.eq_iff_sub_mem).mpr
     change θ - φ ∈ AddSubgroup.zmultiples (1 : ℝ)
     refine ⟨n, ?_⟩
     simp [hn]

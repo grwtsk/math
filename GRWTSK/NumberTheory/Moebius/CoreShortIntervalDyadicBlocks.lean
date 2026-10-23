@@ -49,25 +49,23 @@ theorem sum_prefix_eq_sum_dyadicStartBlocks
   | zero =>
       simp [dyadicStartBlock]
   | succ j ih =>
-      rw [Nat.succ_eq_add_one, Finset.sum_range_succ]
+      rw [Finset.sum_range_succ]
       rw [← ih]
       unfold dyadicStartBlock
-      have h1 : 1 ≤ 2 ^ (j + 1) := by positivity
-      have h2 : 2 ^ (j + 1) ≤ 2 ^ (j + 2) := by
-        rw [Nat.pow_succ]
-        omega
+      have h1 : 1 ≤ 2 ^ (j + 1) := Nat.one_le_iff_ne_zero.mpr (pow_ne_zero _ two_ne_zero)
+      have h2 : 2 ^ (j + 1) ≤ 2 ^ (j + 2) :=
+        Nat.pow_le_pow_right (by omega) (by omega)
       rw [← Finset.sum_Ico_consecutive _ h1 h2]
-      rfl
 
 /-- The common ambient start window is the dyadic prefix plus exactly two
 endpoint starts. -/
 theorem harmonicAmbientStartWindow_eq_prefix_insert_two
     (j : ℕ) :
     harmonicAmbientStartWindow j =
-      (Finset.Ico 1 (2 ^ (j + 1))).insert (2 ^ (j + 1))
-        |>.insert (2 ^ (j + 1) + 1) := by
+      insert (2 ^ (j + 1) + 1) (insert (2 ^ (j + 1)) (Finset.Ico 1 (2 ^ (j + 1)))) := by
   ext x
-  simp [harmonicAmbientStartWindow]
+  have hp := pow_pos (by omega : (0 : ℕ) < 2) (j + 1)
+  simp only [harmonicAmbientStartWindow, Finset.mem_Ico, Finset.mem_insert]
   omega
 
 /-- Exact decomposition of the ambient first moment into standard dyadic start
@@ -83,7 +81,7 @@ theorem harmonicAmbientShortIntervalL1_eq_dyadicAggregate
       2 ^ (j + 1) ∉ Finset.Ico 1 (2 ^ (j + 1)) := by simp
   have hY1 :
       2 ^ (j + 1) + 1 ∉
-        (Finset.Ico 1 (2 ^ (j + 1))).insert (2 ^ (j + 1)) := by
+        insert (2 ^ (j + 1)) (Finset.Ico 1 (2 ^ (j + 1))) := by
     simp
   rw [Finset.sum_insert hY1, Finset.sum_insert hY]
   rw [sum_prefix_eq_sum_dyadicStartBlocks
@@ -95,6 +93,7 @@ theorem ambientEndpointStartCorrection_le_two_mul_length
     (j n : ℕ) :
     ambientEndpointStartCorrection j n ≤ 2 * (n : ℝ) := by
   unfold ambientEndpointStartCorrection
+  rw [two_mul]
   apply add_le_add
   · unfold ambientMobiusShortIntervalSum
     calc

@@ -44,6 +44,9 @@ namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 def TwoUnitSquareModulusParameter (d : ℕ) : Prop :=
   Nat.Coprime 2 (d * d)
 
+instance (d : ℕ) : Decidable (TwoUnitSquareModulusParameter d) :=
+  inferInstanceAs (Decidable (Nat.Coprime 2 (d * d)))
+
 /-- Inverse frequency for the multiplication-by-two map. -/
 def halfSquareModulusFrequency
     (d : ℕ) [NeZero d]
@@ -68,7 +71,7 @@ theorem doubled_halfSquareModulusFrequency
   have hunit := two_isUnit_squareModulus d hTwo
   have hmul :
       (2 : ZMod (d * d)) * (2 : ZMod (d * d))⁻¹ = 1 :=
-    mul_inv_of_unit _ hunit
+    ZMod.mul_inv_of_unit _ hunit
   unfold doubledSquareModulusFrequency halfSquareModulusFrequency
   calc
     (2 : ZMod (d * d))⁻¹ * ell +
@@ -90,7 +93,7 @@ theorem half_doubledSquareModulusFrequency
   have hunit := two_isUnit_squareModulus d hTwo
   have hmul :
       (2 : ZMod (d * d))⁻¹ * (2 : ZMod (d * d)) = 1 :=
-    inv_mul_of_unit _ hunit
+    ZMod.inv_mul_of_unit _ hunit
   unfold doubledSquareModulusFrequency halfSquareModulusFrequency
   calc
     (2 : ZMod (d * d))⁻¹ * (k + k) =
@@ -122,7 +125,8 @@ theorem doubledSquareModulusFrequency_ne_zero_iff
   · intro hk hdouble
     apply hk
     apply (doubledSquareModulusFrequencyEquiv d hTwo).injective
-    simpa [doubledSquareModulusFrequency] using hdouble
+    change doubledSquareModulusFrequency d k = doubledSquareModulusFrequency d 0
+    simpa only [doubledSquareModulusFrequency, add_zero] using hdouble
 
 /-- The inverse half-frequency also preserves nonzero frequencies. -/
 theorem halfSquareModulusFrequency_ne_zero_iff
@@ -137,7 +141,8 @@ theorem halfSquareModulusFrequency_ne_zero_iff
   · intro hell hhalf
     apply hell
     have h := congrArg (doubledSquareModulusFrequency d) hhalf
-    simpa [doubled_halfSquareModulusFrequency d hTwo] using h
+    rw [doubled_halfSquareModulusFrequency d hTwo] at h
+    simpa only [doubledSquareModulusFrequency, add_zero] using h
 
 /-- Shift aggregate indexed by the undoubled frequency `ell` on the two-unit
 branch.
@@ -146,7 +151,7 @@ The shift phase uses the unique half-frequency, while the fixed-form core is
 sampled at `ell` itself. -/
 def twoUnitHalfIndexAffineChowlaShiftAggregate
     (b d r : ℕ) [NeZero d]
-    (hTwo : TwoUnitSquareModulusParameter d)
+    (_hTwo : TwoUnitSquareModulusParameter d)
     (ell : ZMod (d * d)) : ℂ :=
   ∑ h ∈ positiveEndpointShiftSet b,
     affineChowlaShiftPhase d h
@@ -241,7 +246,7 @@ def twoUnitHalfIndexAffineChowlaEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if hTwo : TwoUnitSquareModulusParameter d then
         twoUnitHalfIndexAffineChowlaNonzeroModulusMajorant b d hTwo
       else 0
@@ -253,7 +258,7 @@ def twoNonunitHalfIndexAffineChowlaEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hTwo : TwoUnitSquareModulusParameter d then
         0
       else halfIndexAffineChowlaNonzeroModulusMajorant b d
@@ -275,7 +280,7 @@ theorem halfIndexAffineChowlaEndpointMajorant_eq_twoUnit_add_twoNonunit
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hTwo : TwoUnitSquareModulusParameter d
   · simp only [hTwo, dif_pos]
     rw [twoUnitHalfIndexAffineChowlaNonzeroModulusMajorant_eq_halfIndex

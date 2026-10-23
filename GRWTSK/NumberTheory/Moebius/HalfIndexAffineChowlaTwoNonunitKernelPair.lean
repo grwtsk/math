@@ -44,6 +44,9 @@ a unit. -/
 def TwoNonunitSquareModulusParameter (d : ℕ) : Prop :=
   ¬ TwoUnitSquareModulusParameter d
 
+instance (d : ℕ) : Decidable (TwoNonunitSquareModulusParameter d) :=
+  inferInstanceAs (Decidable (¬ TwoUnitSquareModulusParameter d))
+
 /-- The square modulus is even on the two-nonunit branch. -/
 theorem squareModulus_even_of_twoNonunit
     (d : ℕ)
@@ -83,6 +86,7 @@ theorem twoKernelFrequency_ne_zero
     have hd1 : d = 1 := by omega
     subst d
     exact hNonunit (by norm_num [TwoUnitSquareModulusParameter])
+  have hdsq : 4 ≤ d * d := by nlinarith
   have hhalfpos : 0 < (d * d) / 2 := by omega
   have hhalflt : (d * d) / 2 < d * d := by omega
   intro hz
@@ -198,7 +202,6 @@ theorem halfIndexAffineChowlaShiftAggregate_partner
   intro h _hh
   rw [affineChowlaShiftPhase_partner,
     doubledSquareModulusFrequency_partner d hNonunit k]
-  ring
 
 /-- Pair-sum transform at one parity and frequency. -/
 def twoKernelPairPlusAggregate
@@ -305,8 +308,7 @@ theorem halfIndexAffineChowlaFrequencyMajorant_le_kernelPair
     rw [halfIndexAggregate_eq_half_pairPlus_add_pairMinus]
     rw [norm_mul]
     norm_num
-    exact mul_le_mul_of_nonneg_left
-      (norm_add_le _ _) (by norm_num)
+    exact norm_add_le _ _
   have h1 :
       ‖halfIndexAffineChowlaShiftAggregate b d 1 k‖ ≤
         (1 / 2 : ℝ) *
@@ -315,8 +317,7 @@ theorem halfIndexAffineChowlaFrequencyMajorant_le_kernelPair
     rw [halfIndexAggregate_eq_half_pairPlus_add_pairMinus]
     rw [norm_mul]
     norm_num
-    exact mul_le_mul_of_nonneg_left
-      (norm_add_le _ _) (by norm_num)
+    exact norm_add_le _ _
   unfold halfIndexAffineChowlaFrequencyMajorant
     twoNonunitKernelPairFrequencyMajorant
   nlinarith
@@ -328,7 +329,7 @@ def twoNonunitKernelPairEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         (((d * d : ℕ) : ℝ))⁻¹ *
           ∑ k ∈ nonzeroSquareModulusFrequencySet d,
@@ -349,11 +350,11 @@ theorem twoNonunitHalfIndexEndpointMajorant_le_kernelPair
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hTwo : TwoUnitSquareModulusParameter d
   · simp [hTwo, TwoNonunitSquareModulusParameter]
   · have hNonunit : TwoNonunitSquareModulusParameter d := hTwo
-    simp only [hTwo, dif_neg, hNonunit, dif_pos]
+    simp only [hTwo, hNonunit, dif_pos]
     apply mul_le_mul_of_nonneg_left ?_ (by positivity)
     apply Finset.sum_le_sum
     intro k _hk

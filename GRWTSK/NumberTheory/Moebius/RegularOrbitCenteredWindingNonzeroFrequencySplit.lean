@@ -120,8 +120,9 @@ theorem parityHalfIndexCenteredZeroModeEnergy_eq_pairMassSquare
         parityHalfIndexCenteredPairMass b r H ^ 2 := by
   unfold parityHalfIndexCenteredZeroModeEnergy
   rw [parityHalfIndexCenteredResidueFourier_zero]
-  simp [norm_mul, Complex.norm_real, Real.norm_eq_abs, sq_abs]
-  ring
+  simp [Complex.norm_real, Real.norm_eq_abs]
+  ring_nf
+  rw [sq_abs]
 
 /-- Exact split of the normalized complete Fourier energy into its zero and
 nonzero modes. -/
@@ -401,7 +402,7 @@ def regularCenteredWindingNonzeroFrequencySplitEndpoint
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       regularCenteredWindingNonzeroFrequencySplitAtModulus b d
     else 0
 
@@ -418,7 +419,7 @@ theorem regularCenteredWindingNonzeroFrequencySplitEndpoint_eq_fullFrequency
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact
     regularCenteredWindingNonzeroFrequencySplitAtModulus_eq_fullFrequency
       b d
