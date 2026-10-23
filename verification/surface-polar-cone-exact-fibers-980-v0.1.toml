@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1007
+parent_revision = "dad6c7c95cb113e6a578a67e81ffdce356958923"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarConeFibers"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarConeFibers.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_theorems = ["jointPolar_radius_eq", "jointPolar_angle_eq_of_ne_zero", "standardConePolarDisk_eq_iff_connected", "standardConePolarDisk_injective"]
+hostile_controls = ["apex_angles_collapse", "positive_radius_angles_separate", "positive_radius_ne_zero", "radius_equality_exact", "no_false_real_angle_injectivity", "no_disk_surjectivity_claim"]
+open_obligations = ["pinned_ancestor_elaboration_and_repairs", "complex_polar_surjectivity", "compact_to_hausdorff_homeomorphism", "authentic_perimeter_disk_transport"]
+lean_run = false
+kernel_audited = false

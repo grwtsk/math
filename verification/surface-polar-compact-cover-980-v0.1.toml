@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1000
+parent_revision = "53befb09d0cf8c182f9b1f71a7b23d7df256652a"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarCompactCover.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["PolarCompactSource", "compactPolarProjection", "compactPolarProjection_factor", "compactPolarProjection_continuous", "compactPolarSource_compact", "compactPolarProjection_surjective_of_circle_cover", "compactPolarProjection_isQuotientMap_of_cover", "polarProductProjection_isQuotientMap_of_cover", "unitCircleJointPolar_continuous_of_cover"]
+open_obligations = ["unconditional_addcircle_fundamental_cover", "exact_quotient_factorization_api", "unconditional_joint_continuity", "standard_cone_descent", "exact_cone_fibers", "disk_surjectivity", "disk_homeomorphism"]
+hostile_controls = ["real_line_not_compact", "unit_interval_endpoints_same_circle_class", "continuous_surjective_without_compactness_not_enough", "target_hausdorff_required", "factorization_source_exact", "no_unconditional_quotient_claim"]
+lean_run = false
+kernel_audited = false
