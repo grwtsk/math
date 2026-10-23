@@ -8,14 +8,20 @@ criterion adapter and proves no RH consequence.
 
 Repository: `grwtsk/math`.
 
-Stacked source base:
+Historical source parent and current reconciliation:
 
 ```text
-parent PR:     #1081
-parent branch: research/rh-square-tent-polarization-157-20261023
-parent commit: 26772e0f80dd28e9c1b15222eccb06a5073e3e0b
-parent tree:   f40c72b2fd207a9e5070868cc929ac76f846904b
+parent PR:                  #1081, merged
+historical parent commit:   26772e0f80dd28e9c1b15222eccb06a5073e3e0b
+historical parent tree:     f40c72b2fd207a9e5070868cc929ac76f846904b
+current main at reconcile:  0f1b93e6c358d06d8f0fe7d7ba5841268fbc1c21
+current main tree:          c85e0b28d82a6f6cfe357dc2fb6dbd41c39ef6fa
 ```
+
+The child was authored against the exact parent head and then merged with current
+`main` without rewriting either history. Current `main` contains later proof repairs
+to the imported square-tent modules. The declaration names and types used here remain
+present; actual current-main elaboration is still an explicit pending validation gate.
 
 Dedicated child branch:
 
