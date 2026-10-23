@@ -809,6 +809,42 @@ theorem thetaKernelTerm_scaledPolynomial (n : ℕ) (u : ℝ) :
   rw [thetaKernelTerm_scaled]
   rfl
 
+
+/-- A quantitative Gaussian-envelope supplier for the polynomial factor.
+The crucial inequality is deliberately an explicit premise until proved
+from the exponential function, rather than an invented theorem. -/
+structure ScaledGaussianEnvelope (K : ℝ) where
+  constant_nonneg : 0 ≤ K
+  bound : ∀ q : ℝ, 0 ≤ q →
+    (q ^ 2 + q) * Real.exp (-(Real.pi * q)) ≤
+      K * Real.exp (-(Real.pi / 2 * q))
+
+/-- A supplied polynomial-Gaussian envelope controls the source's
+unsigned scaled factor, preserving the exact pi coefficients. -/
+theorem thetaScaledPolynomial_gaussian_bound
+    (K q : ℝ) (cert : ScaledGaussianEnvelope K) (hq : 0 ≤ q) :
+    |thetaScaledPolynomial q| * Real.exp (-(Real.pi * q)) ≤
+      (2 * Real.pi ^ 2 + 3 * Real.pi) * K *
+        Real.exp (-(Real.pi / 2 * q)) := by
+  have hpoly := thetaScaledPolynomial_abs_bound q hq
+  have hcoef : 0 ≤ 2 * Real.pi ^ 2 + 3 * Real.pi := by positivity
+  have hq2 : 0 ≤ q ^ 2 := sq_nonneg q
+  have hweight :
+      2 * Real.pi ^ 2 * q ^ 2 + 3 * Real.pi * q ≤
+        (2 * Real.pi ^ 2 + 3 * Real.pi) * (q ^ 2 + q) := by
+    nlinarith [Real.pi_pos]
+  calc
+    |thetaScaledPolynomial q| * Real.exp (-(Real.pi * q)) ≤
+      (2 * Real.pi ^ 2 * q ^ 2 + 3 * Real.pi * q) *
+        Real.exp (-(Real.pi * q)) := by
+          exact mul_le_mul_of_nonneg_right hpoly (Real.exp_pos _).le
+    _ ≤ (2 * Real.pi ^ 2 + 3 * Real.pi) * (q ^ 2 + q) *
+        Real.exp (-(Real.pi * q)) := by
+          exact mul_le_mul_of_nonneg_right hweight (Real.exp_pos _).le
+    _ ≤ (2 * Real.pi ^ 2 + 3 * Real.pi) * K *
+        Real.exp (-(Real.pi / 2 * q)) := by
+          nlinarith [mul_le_mul_of_nonneg_left (cert.bound q hq) hcoef]
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
