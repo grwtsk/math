@@ -7,8 +7,6 @@ Maintained source at 127b50e33f6033e2147921167a117af96d9ba4ea,
 Wiener.lean blob 59fd5069a7eca51a8bc5005b5c43e31a5cbb38ac.
 Formalization assistance: OpenAI ChatGPT.
 -/
-import GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaQOneFiniteSigmaFubini
-import GRWTSK.NumberTheory.Zeta.Riemann.WienerIkeharaQOneBoundaryEstimates
 import Mathlib.Analysis.Fourier.FourierTransform
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 import Mathlib.MeasureTheory.Integral.ExpDecay
@@ -51,9 +49,10 @@ The sign is the Fourier exp(-2*pi*i*t*xi) convention, with xi=u/(2*pi).
 It yields (1-sigma-it) u in the exponent. This is the SECOND Fourier
 identity and not the full Wiener--Ikehara Schwartz limit.
 
-The final source theorem composes it with the first Fourier source and
-the actual pinned q=1 L-series pole identity, producing the finite-sigma
-identity with G(s)=LSeries(Lambda,s)-1/(s-1) for Re(s)>1.
+This module is independently importable without the still-unverified
+first Fourier or q=1 boundary source. Once both have separate kernel
+receipts, the two finite-sigma Fourier identities and the actual pinned
+q=1 pole formula compose to G(s)=LSeries(Lambda,s)-1/(s-1).
 
 Remaining: the uniform Chebyshev logarithmic-kernel bound_sum_log',
 the controlled sigma↓1 arithmetic limit, and the compact-to-Schwartz
@@ -120,7 +119,7 @@ theorem wienerPoleProduct_integrable
   apply Eventually.of_forall
   intro p
   dsimp [Function.uncurry, wienerPoleProduct]
-  simp only [norm_mul, Circle.norm_smul]
+  simp [norm_mul, Circle.norm_smul]
 
 /-- Exact exponential phase after the 2*pi Fourier character cancels
 its frequency denominator: 1-sigma-i*t is the Laplace parameter,
