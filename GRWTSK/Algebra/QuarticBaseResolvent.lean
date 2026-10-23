@@ -55,5 +55,28 @@ theorem actual_quartic_base_resolvent
   rw [hp]
   simp [Polynomial.map_add, Polynomial.map_mul, Polynomial.map_pow]
 
+
+/-- The base-field comparison is independent of the chosen enumeration
+of the *actual root multiset*, even if the quartic has repeated roots.
+This does not select or require a canonical ordering. -/
+theorem actual_quartic_base_resolvent_order_independent
+    (p : K[X]) (e₁ e₂ : QuarticRootEnumeration (L := L) p) :
+    adjacencyResolventFromRoots (e₁.r 0) (e₁.r 1) (e₁.r 2) (e₁.r 3) =
+      adjacencyResolventFromRoots (e₂.r 0) (e₂.r 1) (e₂.r 2) (e₂.r 3) := by
+  exact (resolvent_independent_of_enumeration p e₁ e₂).symm
+
+/-- In a genuine splitting field, the splitting hypothesis required by
+the base-field comparison is supplied directly by Mathlib's instance. -/
+theorem actual_quartic_base_resolvent_in_splitting_field
+    (p : K[X]) [IsSplittingField K L p] (A B C₀ D : K)
+    (hp : p = X ^ 4 + Polynomial.C A * X ^ 3 +
+      Polynomial.C B * X ^ 2 + Polynomial.C C₀ * X + Polynomial.C D)
+    (hm : (p.map (algebraMap K L)).Monic)
+    (e : QuarticRootEnumeration (L := L) p) :
+    adjacencyResolventFromRoots (e.r 0) (e.r 1) (e.r 2) (e.r 3) =
+      (baseAdjacencyResolvent A B C₀ D).map (algebraMap K L) :=
+  actual_quartic_base_resolvent p A B C₀ D hp
+    (IsSplittingField.splits L p) hm e
+
 end
 end GRWTSK.Algebra.QuarticBaseResolvent
