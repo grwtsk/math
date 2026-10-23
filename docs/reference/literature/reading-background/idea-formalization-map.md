@@ -1,5 +1,7 @@
 # Ideas and Lean formalizations by taxonomy
 
+**Paper-derived formalizations:** see the maintained [paper-to-formalization references ledger](paper-to-formalization-references.md) for exact publication metadata, theorem/method hypotheses, corresponding Lean declarations and commits, actual kernel/axiom verification status, and explicit distinctions among formal bridges, finite checks, analogies and unresolved premises. This companion ledger does not replace the version-bound unpublished-manuscript records below.
+
 Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
 
 Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
