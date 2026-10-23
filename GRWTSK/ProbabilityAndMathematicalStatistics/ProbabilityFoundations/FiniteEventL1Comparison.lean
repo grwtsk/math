@@ -18,7 +18,7 @@ maximum of the absolute mass discrepancy over ALL Boolean events.
 
 For an arbitrary zero-total-mass rational vector on a finite alphabet,
 these two expressions are exactly equal. The upper bound follows by
-centering each Boolean event into a +1/-1 sign function; the lower
+centering each Boolean event into a plus-one/minus-one sign function; the lower
 bound selects the event of nonnegative signed masses.
 
 The same theorem is instantiated with the *actual* category counts
@@ -51,7 +51,7 @@ def finiteSignedEventSup (δ : β → ℚ) : ℚ :=
     (by exact ⟨(fun _ : β => false), Finset.mem_univ _⟩)
     (fun event => |finiteSignedEventMass δ event|)
 
-/-- The centered +/-1 weight associated with an arbitrary event. -/
+/-- The centered plus/minus-one weight associated with an arbitrary event. -/
 def finiteEventSign (event : β → Bool) (b : β) : ℚ :=
   if event b then 1 else -1
 
