@@ -1159,3 +1159,234 @@ receipts. No proof accepted into GRWTSK.lean public root, no
 unconditional density or zero-free theorem and no asserted
 PAPER_TO_LEAN_BRIDGE_PROVED. Add exact commit-bound issue links and
 real execution receipts only after an authorized executor runs them.
+
+## Case FAREY-ANGULAR-02 — oriented return phase, not a global spectral character
+
+**Bibliography and attribution.** These are **2026 repository-derived
+constructions**, credited in the source to mathematical direction by
+**grwtsk contributors** with formalization assistance from **OpenAI**.
+There is **no identified external paper** whose exact theorem or method
+asserts this mod-three Farey angular construction. Consequently an
+additional external paper title, authors, publication year, DOI/arXiv
+identifier and theorem locator are **not established**, and none is
+invented. Its stable, citable **code-source identities** are
+[the angular implementation at `ffe99332d6129ddeddd57cbf2f8b2e97ce2e1e36`](https://github.com/grwtsk/math/commit/ffe99332d6129ddeddd57cbf2f8b2e97ce2e1e36)
+and [the projective obstruction at `94ea7f741c162ff60d93e47e54124845f29e2764`](https://github.com/grwtsk/math/commit/94ea7f741c162ff60d93e47e54124845f29e2764).
+The preceding exact matrix and return eigensector constructions were
+integrated at `367a4a4d7ca24eeb506e9bcaad118a66ee0cb0ad` and
+`5c9a0b1d418daef930367d3537a83f1b0ec66ff2`,
+with the later proof repair and qualified parent source at
+`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`.
+
+**Exact statements, method and hypotheses.**
+The source `GRWTSK.NumberTheory.Farey.GroupSuperwalk` restricts to
+a **positive chronological** two-letter Farey word
+`[Turn.left, Turn.right]`, acting by the genuine shears
+`L=[[1,0],[1,1]]`, `R=[[1,1],[0,1]]` on the right
+of the original determinant-one Farey frame with positive denominators;
+inverse shears are **not** claimed to preserve positive Farey cells.
+The selected return is `H=L*R=[[1,1],[1,2]]`.
+The parent real channel uses the explicitly constructed proper idempotent
+for `s=√5>0`, `s²=5`, and
+`λ₊=(3+√5)/2>1`, with `H^n P₊=λ₊^n P₊`.
+It commutes with the selected **return**, not necessarily each
+generator: the earlier simultaneous-commutant no-go therefore remains intact.
+
+The next local construction interprets the **same** source return
+over `ZMod 3`: `H₃²=-I`, `H₃⁴=I`, with
+`H₃²≠I`. Starting at the actual vector `v₀=(1,0)`,
+its four distinct states are `(1,0),(1,1),(2,0),(2,2)`.
+The **chosen** complex observable takes values `1,i,-1,-i`,
+so `φ(H₃ v)=i φ(v)` **on this finite selected orbit**.
+The independently chosen product readout is
+`z_n=(λ₊ i)^n`, `‖z_n‖=λ₊^n`, and
+`z_(n+4)=λ₊⁴ z_n`. This is a *discrete sampled observation*,
+not a continuous spiral embedding or a global
+`SL₂(ℤ)` one-dimensional character.
+
+The projective no-go has **two necessary, explicitly formalized
+premises** on any putative extension
+`f : (Fin 2 → ZMod 3) → ℂ`:
+`SignGaugeInvariant f := ∀ v, f(-v)=f(v)`;
+`AgreesWithOrbitPhase f := ∀ j : Fin 4,
+f(residueOrbit j)=orbitPhase j`. Because the *actual* pairs
+`v₂=-v₀` and `v₃=-v₁` carry opposite, distinct
+phases, no `f` satisfies both conditions. The statement does
+**not** forbid sign-invariant *different* observables or
+projective two-state characters (e.g. a separately constructed
+squared-phase channel). It also does not negate the oriented readout.
+
+**Exact Lean declarations, commits and blobs.**
+
+- `GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeWord_return`,
+  `modThreeReturn_square`, `modThreeReturn_fourth`,
+  `modThreeReturn_square_ne_one`, `modThreeReturn_orbit`,
+  `modThreeReturn_orbit_iterate`, `orbitPhase_next`,
+  `orbitPhase_iterate`, `simultaneous_return_channels`,
+  `discreteSpiral_formula`, `discreteSpiral_norm`,
+  `discreteSpiral_four_returns` in
+  [`ReturnAngularChannel.lean`](../../../../GRWTSK/NumberTheory/Farey/ReturnAngularChannel.lean);
+  first source commit `d8f689c45e3c51988a1699e0f42c4fb4f1c9d1a0`,
+  orbit-iterate revision `ffe99332d6129ddeddd57cbf2f8b2e97ce2e1e36`,
+  integrated scope pin `ab80341e288db86f8b79b19e959bc2694e4c5472`,
+  exact source Git blob `df4c90661a7f0a6897d274604de22850b703d38b`.
+- `GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction.SignGaugeInvariant`,
+  `AgreesWithOrbitPhase`, `residueOrbit_two_eq_neg_zero`,
+  `residueOrbit_three_eq_neg_one`, `orbitPhase_two_ne_zero`,
+  `no_sign_invariant_orbit_phase`,
+  `no_projective_selected_phase_extension` in
+  [`ReturnAngularProjectiveObstruction.lean`](../../../../GRWTSK/NumberTheory/Farey/ReturnAngularProjectiveObstruction.lean),
+  introduced at `94ea7f741c162ff60d93e47e54124845f29e2764`,
+  documentation pin `8c48a9d8f2e3efca28d86b652dda4e9a23b6b374`,
+  Git blob `08c7754c5116d7885613caf56e6b2005ab9a7167`.
+- Exact imported repository suppliers:
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.expandingProjector_iterate`
+  and `expandingProjector_eigen`, blob
+  `de3d52cd221bdf2334bcacccff43fafde4d52db9`;
+  `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.native_invariant_projector_trivial`,
+  blob `4c643e9c728d7a0052dab7c7a1353e0ef97233cd`;
+  `GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_walk`,
+  blob `281df5e34fdc5ee557642993b95c10e544d62b99`.
+  The immutable qualified parent source identity for these three
+  dependencies is stated in FAREY-VALIDATION-20261023 above.
+
+**Relationship and actual verification.** The finite matrix/real
+return parent modules are **`local-proved-bridge` only at their
+finite algebraic scope** as recorded above at
+`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`:
+the ledger gives the executed local `lake build` and
+`lean --trust=0` exit-zero commands, transitive axiom
+results and external local receipt paths. This provenance update
+does **not** independently re-run those commands or assert external
+CI replay. **Both new angular and projective leaf modules remain
+`source-proof-candidate`, `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`**: zero valid new-leaf compiler,
+fresh kernel or transitive axiom receipts are established in the
+current review. Finite modular, radical and orbit calculations are
+`finite-certificate` only. Their distinct immutable verification
+requests are [#1100](https://github.com/grwtsk/math/issues/1100)
+and [#1102](https://github.com/grwtsk/math/issues/1102).
+They remain outside the public `GRWTSK.lean` import.
+
+**External-paper relationship and unresolved premises.** Sarnak's
+**Peter Sarnak (2011)** *Three Lectures on the Mobius Function:
+Randomness and Dynamics*,
+[IAS source](https://publications.ias.edu/sarnak/paper/506),
+**Definition 3** and **Conjecture 4** (printed p. 4), are already
+identified under DYN-SQRT2-01. The local finite angular return is
+**`methodological-analogy` only**, not an instance of that
+conjecture: no compact metric zero-entropy dynamical realization,
+all-continuous-observables quantifier, genuine Möbius weight or
+ordinary-average `o(N)` cancellation is supplied. A
+nonperiodic Farey/continued-fraction return, a source-preserving
+gauge/phase lift and an actual observation comparison remain
+**`unresolved`**. No continuous geometric spiral,
+Sturmian spectrum, zeta determinant, RH or arithmetic
+zero-distribution result follows.
+
+## Case FAREY-HODGE-01 — cyclic residue Hodge and nonunit equivariance failure
+
+**Bibliography/source type.** This is a **2026 repository-derived
+finite graph and residue construction** credited in the source to
+mathematical direction by **grwtsk contributors** and formalization
+assistance by **OpenAI**. An outside paper with exact title,
+authors, year/version and DOI/arXiv theorem locator that this file
+formally instantiates is **not established**. The stable
+mathematical/code sources, *not publication-theorem imports*, are
+[the new source commit `7c966ff78bc79530d15c4410a1d7c8c5b726b35a`](https://github.com/grwtsk/math/commit/7c966ff78bc79530d15c4410a1d7c8c5b726b35a),
+`GRWTSK.Geometry.Hodge.FiniteGraphCellular`
+(Git blob `8443dddddc00f3c8e5c79c110381c7fa2d58ad6e`),
+`GRWTSK.Geometry.Hodge.FiniteMatrixHodge`
+(blob `1299a222b0e8bd5f6ac25d8508fab8ac3d548b7b`),
+and the previously recorded finite Dirichlet/additive
+`FareyResidueChannelDecomposition`
+(blob `a44f3cf92d0d3c05ff09ac66b43b3d078918982b`).
+These are code dependencies in pinned Mathlib/GRWTSK, not a
+proof of the algebraic Hodge conjecture.
+
+**Exact source theorem/method, hypotheses and normalizations.**
+For a natural modulus `q` with **`[NeZero q]`**, the
+cyclic finite incidence object on `ZMod q` has source `x`
+and target `x+1`, so the degree-zero real coboundary is
+`δf(x)=f(x+1)-f(x)`. With finite vertex/edge sets and
+the original standard real counting pairing, its
+energy `∑ (δf)^2` and Laplacian quadratic form
+`⟨f,δ*δf⟩` are nonnegative, with
+`ker(δ*δ)=ker δ` under the source's finite-dimensional
+linear-algebra hypotheses. The separate complex
+`ZMod q → ℂ` unit/nonunit coordinate cutoffs
+`unitPart` and `nonunitPart` are **complementary
+idempotents**, with zero pointwise products and
+zero counting-pairing cross term; this does **not**
+imply invariance under translation or under the
+finite Hodge Laplacian.
+
+The exact `q=4` Farey witness is the right numerator
+**2** of the previously defined cell `1/2<2/3`.
+It is a **nonunit modulo four**. Its additive-residue
+selector `f(x)=1_{x=2}` remains meaningful despite the
+multiplicative Dirichlet-character obstruction.
+For `translateUp f(x)=f(x+1)`, the unit cutoff
+does **not** commute with translation: evaluation
+at `x=1` gives `unitPart(translateUp f)(1)=1`
+but `translateUp(unitPart f)(1)=0`.
+The target residue and nonunit status are not
+asserted for arbitrary Farey coordinates or all moduli.
+
+**Exact Lean declarations, source commit/blob and hypotheses.**
+In [`GRWTSK/NumberTheory/Farey/CyclicResidueHodge.lean`](../../../../GRWTSK/NumberTheory/Farey/CyclicResidueHodge.lean),
+first integrated on **main** by
+`7c966ff78bc79530d15c4410a1d7c8c5b726b35a`,
+source blob `449c566c6366b9732ba719d6485ad299b29473c2`,
+namespace `GRWTSK.NumberTheory.Farey.CyclicResidueHodge`:
+
+- `cyclicIncidence`, `cyclic_coboundary_apply`,
+  `cyclic_energy_nonneg`, `cyclic_laplacian_nonneg`,
+  `cyclic_laplacian_kernel`: finite oriented real
+  coboundary/Laplacian statements with `[NeZero q]`
+  and source finite-module requirements.
+- `unitPart`, `nonunitPart`, `unit_add_nonunit`,
+  `unitPart_idempotent`, `nonunitPart_idempotent`,
+  `unit_nonunit_pointwise_zero`,
+  `unit_nonunit_counting_orthogonal`: finite complex
+  residue-space decomposition, again with
+  `[NeZero q]`.
+- `translateUp`, `fareyNonunitPointMass`,
+  `fareyNonunitPointMass_eq_indicator`,
+  `farey_unit_projector_not_translation_equivariant`:
+  exact mod-four selected nonunit arithmetic witness,
+  not a statement of translation noncommutation for
+  every q or every input.
+
+**Relationship and evidence.** The import
+`GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.farey_nonunit_channel_certificate`
+is part of the eight-module scope locally
+`local-proved-bridge`-qualified in
+FAREY-VALIDATION-20261023, at the precise source
+blob stated there. The *new* cyclic Hodge application is
+**`source-proof-candidate`, `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`**, not covered by that older
+eight-module execution or a separate complete compiler/axiom
+receipt in this review. Finite `q=4` sample arrays and energy
+calculations are `finite-certificate` only. The
+standalone verification request [#1103](https://github.com/grwtsk/math/issues/1103)
+pins math `c788f9c92a3681ebe2ffb68b96dbf745e6edcf1a`
+with Lean `v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`,
+target modules, exact dependencies, build,
+fresh kernel and transitive axiom commands. It is
+a **queue**, not an executed receipt.
+
+**Missing bridge, analogy/nonclaim.** A Hodge
+nonnegative energy or an orthogonal unit/nonunit
+coordinate decomposition does **not** imply
+dynamical invariance, Dirichlet L-function spectral
+claims, a Siegel-zero theorem, a density estimate,
+the Hodge conjecture, analytic continuation or RH.
+The missing map from the finite cyclic graph
+to a named analytic spectral/operator family and its
+frequency-dependent comparison remains
+**`unresolved`**. The phrase "Hodge" here denotes
+the exact finite graph coboundary/adjoint algebra,
+not imported algebraic-geometric Hodge theory.
+
