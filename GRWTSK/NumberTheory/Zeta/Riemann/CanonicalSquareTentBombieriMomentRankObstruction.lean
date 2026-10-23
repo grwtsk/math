@@ -120,7 +120,7 @@ theorem canonicalTentReal_div_integrableOn (i : ℕ) :
   (canonicalTentReal_div_integrable i).integrableOn
 
 /-- The shared reciprocal pivot at the square endpoint `9`. -/
-def reciprocalPivot : ℝ := 1 / 9
+noncomputable def reciprocalPivot : ℝ := 1 / 9
 
 /-- Positive gap on the stage-two window. -/
 noncomputable def stageTwoReciprocalGap (x : ℝ) : ℝ :=
@@ -176,6 +176,7 @@ theorem stageTwoReciprocalGap_nonnegative
   · have hz := stageTwoTent_eq_zero_of_nine_le (le_of_not_gt hx9)
     simp [stageTwoReciprocalGap, hz]
 
+set_option linter.unusedVariables false in
 theorem stageThreeReciprocalGap_nonnegative
     {x : ℝ} (hx : x ∈ Set.Ioi (0 : ℝ)) :
     0 ≤ stageThreeReciprocalGap x := by
@@ -257,7 +258,7 @@ theorem stageTwoReciprocalGap_integral_pos :
       constructor
       · rw [Function.mem_support]
         exact ne_of_gt (stageTwoReciprocalGap_pos hx)
-      · exact by linarith [hx.1]
+      · exact lt_trans (by norm_num) hx.1
     have hvol : 0 < volume (Set.Ioo (4 : ℝ) 9) := by
       rw [Real.volume_Ioo]
       exact ENNReal.ofReal_pos.mpr (by norm_num)
@@ -276,7 +277,7 @@ theorem stageThreeReciprocalGap_integral_pos :
       constructor
       · rw [Function.mem_support]
         exact ne_of_gt (stageThreeReciprocalGap_pos hx)
-      · exact by linarith [hx.1]
+      · exact lt_trans (by norm_num) hx.1
     have hvol : 0 < volume (Set.Ioo (9 : ℝ) 16) := by
       rw [Real.volume_Ioo]
       exact ENNReal.ofReal_pos.mpr (by norm_num)
@@ -288,7 +289,8 @@ theorem stageTwo_multiplicative_gt_pivot_ordinary :
       realMultiplicativeMoment 0 := by
   have hpos := stageTwoReciprocalGap_integral_pos
   have hdiv := canonicalTentReal_div_integrableOn 0
-  have htent := (canonicalTentReal_integrable 0).integrableOn
+  have htent : IntegrableOn (canonicalTentReal 0) (Set.Ioi (0 : ℝ)) :=
+    (canonicalTentReal_integrable 0).integrableOn
   have heq :
       (∫ x in Set.Ioi (0 : ℝ), stageTwoReciprocalGap x) =
         realMultiplicativeMoment 0 -
@@ -305,7 +307,8 @@ theorem stageThree_multiplicative_lt_pivot_ordinary :
       reciprocalPivot * realOrdinaryMoment 1 := by
   have hpos := stageThreeReciprocalGap_integral_pos
   have hdiv := canonicalTentReal_div_integrableOn 1
-  have htent := (canonicalTentReal_integrable 1).integrableOn
+  have htent : IntegrableOn (canonicalTentReal 1) (Set.Ioi (0 : ℝ)) :=
+    (canonicalTentReal_integrable 1).integrableOn
   have heq :
       (∫ x in Set.Ioi (0 : ℝ), stageThreeReciprocalGap x) =
         reciprocalPivot * realOrdinaryMoment 1 -
@@ -371,10 +374,9 @@ noncomputable def bombieriMultiplicativeMoment (g : ℝ → ℂ) : ℂ :=
 
 theorem canonicalTentComplex_integrableOn (i : ℕ) :
     IntegrableOn (canonicalTentComplex i) (Set.Ioi (0 : ℝ)) := by
-  simpa [canonicalTentComplex] using
-    (IntegrableOn.ofReal
-      ((canonicalTentReal_integrable i).integrableOn) :
-        IntegrableOn (fun x => (canonicalTentReal i x : ℂ)) (Set.Ioi 0))
+  have h : Integrable (canonicalTentReal i) (volume.restrict (Set.Ioi (0 : ℝ))) :=
+    (canonicalTentReal_integrable i).integrableOn
+  exact Integrable.ofReal (𝕜 := ℂ) h
 
 theorem canonicalTentComplex_div_integrableOn (i : ℕ) :
     IntegrableOn (fun x : ℝ => canonicalTentComplex i x / (x : ℂ))
@@ -383,17 +385,20 @@ theorem canonicalTentComplex_div_integrableOn (i : ℕ) :
       IntegrableOn
         (fun x : ℝ => ((canonicalTentReal i x / x : ℝ) : ℂ))
         (Set.Ioi (0 : ℝ)) :=
-    IntegrableOn.ofReal (canonicalTentReal_div_integrableOn i)
+    Integrable.ofReal (canonicalTentReal_div_integrableOn i)
   simpa [canonicalTentComplex, Complex.ofReal_div] using hreal
 
 theorem bombieriMultiplicativeMoment_canonicalTent_eq (i : ℕ) :
     bombieriMultiplicativeMoment (canonicalTentComplex i) =
       (realMultiplicativeMoment i : ℂ) := by
   unfold bombieriMultiplicativeMoment realMultiplicativeMoment
-  rw [← integral_ofReal]
-  apply setIntegral_congr_fun measurableSet_Ioi
-  intro x hx
-  simp [canonicalTentComplex, Complex.ofReal_div]
+  calc
+    (∫ x in Set.Ioi (0 : ℝ), canonicalTentComplex i x / (x : ℂ)) =
+        ∫ x in Set.Ioi (0 : ℝ), ((canonicalTentReal i x / x : ℝ) : ℂ) := by
+      apply integral_congr_ae
+      exact Filter.Eventually.of_forall fun x => (Complex.ofReal_div _ _).symm
+    _ = _ := integral_ofReal (f := fun x : ℝ => canonicalTentReal i x / x)
+      (μ := volume.restrict (Set.Ioi (0 : ℝ))) (𝕜 := ℂ)
 
 theorem bombieriOrdinaryMoment_twoTent_eq (u : Combination 1) :
     bombieriOrdinaryMoment (twoTentFunction u) =
@@ -403,9 +408,10 @@ theorem bombieriOrdinaryMoment_twoTent_eq (u : Combination 1) :
   have h1 :=
     (canonicalTentComplex_integrableOn 1).const_mul (u stageThreeCoordinate)
   unfold bombieriOrdinaryMoment twoTentFunction ordinaryMomentMap
-  rw [integral_add h0 h1, integral_const_mul, integral_const_mul,
-    bombieriOrdinaryMoment_canonicalTent_eq,
-    bombieriOrdinaryMoment_canonicalTent_eq]
+  rw [integral_add h0 h1, integral_const_mul, integral_const_mul]
+  change u stageTwoCoordinate * bombieriOrdinaryMoment (canonicalTentComplex 0) +
+    u stageThreeCoordinate * bombieriOrdinaryMoment (canonicalTentComplex 1) = _
+  rw [bombieriOrdinaryMoment_canonicalTent_eq, bombieriOrdinaryMoment_canonicalTent_eq]
   rfl
 
 theorem bombieriMultiplicativeMoment_twoTent_eq (u : Combination 1) :
@@ -417,9 +423,10 @@ theorem bombieriMultiplicativeMoment_twoTent_eq (u : Combination 1) :
     (canonicalTentComplex_div_integrableOn 1).const_mul (u stageThreeCoordinate)
   unfold bombieriMultiplicativeMoment twoTentFunction multiplicativeMomentMap
   simp_rw [add_div, mul_div_assoc]
-  rw [integral_add h0 h1, integral_const_mul, integral_const_mul,
-    bombieriMultiplicativeMoment_canonicalTent_eq,
-    bombieriMultiplicativeMoment_canonicalTent_eq]
+  rw [integral_add h0 h1, integral_const_mul, integral_const_mul]
+  change u stageTwoCoordinate * bombieriMultiplicativeMoment (canonicalTentComplex 0) +
+    u stageThreeCoordinate * bombieriMultiplicativeMoment (canonicalTentComplex 1) = _
+  rw [bombieriMultiplicativeMoment_canonicalTent_eq, bombieriMultiplicativeMoment_canonicalTent_eq]
 
 /-- The two-moment coordinate map has trivial kernel. -/
 theorem combination_eq_zero_of_momentMaps_zero
@@ -505,8 +512,9 @@ noncomputable def arithmeticMatrix
 theorem arithmeticMatrix_entry_eq_zero
     (candidate : TwoTentMomentCorrectedPair) (i j : Fin 2) :
     candidate.arithmeticMatrix i j = 0 := by
+  unfold arithmeticMatrix
   rw [candidate.vector_eq_zero i, candidate.vector_eq_zero j]
-  simp [arithmeticMatrix, sourcePolarizedForm]
+  simp [sourcePolarizedForm]
 
 theorem arithmeticMatrix_eq_zero
     (candidate : TwoTentMomentCorrectedPair) :
