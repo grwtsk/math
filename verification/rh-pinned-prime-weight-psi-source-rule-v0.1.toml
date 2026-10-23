@@ -1,0 +1,105 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-psi-source-rule-v0.1"
+owner_repository = "grwtsk/math"
+issue = 830
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiSourceRuleControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiSourceRuleControls"
+
+[source_binding]
+parent_branch = "research/822-pinned-prime-signed-coupling-v01"
+parent_revision = "0df39fb681909521e0bf616d1b7e8730c0b3b714"
+implementation_branch = "research/830-pinned-prime-psi-source-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CHEBYSHEV_PSI_SIGNED_RULE_DEFINED / HIGHER_PRIME_POWER_RESIDUAL_DISCHARGED / SEVEN_EIGHTHS_RESIDUAL_BOUND_DEFINED / THREE_QUARTERS_RESIDUAL_BOUND_DEFINED / PSI_RESPONSE_CAPACITY_INTERFACE_DEFINED / PSI_CAPACITY_TO_RECURRENCE_DEFINED / PSI_CAPACITY_TO_DESCENT_DEFINED / QUADRATIC_PSI_RESPONSE_CAPACITY_OPEN / NO_GLOBAL_EXPLICIT_FORMULA_CLAIM / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[chebyshev_source]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/Chebyshev.lean"
+blob = "6ffaf1bc3538b5a86fae7f4c62cc1287f9d48f2a"
+psi_declaration = "Chebyshev.psi"
+theta_declaration = "Chebyshev.theta"
+theta_le_psi_declaration = "Chebyshev.theta_le_psi"
+psi_theta_sqrt_declaration = "Chebyshev.psi_sub_theta_le_mul_sqrt"
+metadata_proves_identity = false
+
+[signed_rule]
+rule = "pinnedPrimeWeightPsiSourceRule"
+response = "dyadicScale(j)*psiError(v)"
+signed_residual = "theta(v)-psi(v)"
+identity = "thetaError(v)=response(j,v)/dyadicScale(j)+signedResidual(j,v)"
+identity_domain = "all real v; consumed on pinnedPrimeWeightNextOctave(j)"
+response_uses_theta_error = false
+residual_is_higher_prime_power_correction = true
+
+[next_octave]
+set = "[dyadicScale(j+1),2*dyadicScale(j+1)]"
+scale_identity = "dyadicScale(j+1)=2*dyadicScale(j)"
+current_scale_enclosure = "v<=4*dyadicScale(j)"
+
+[residual_discharge]
+absolute_residual = "psi(v)-theta(v)"
+pinned_bound = "psi(v)-theta(v)<=C_hp*sqrt(v)"
+threshold_range = "rho>=3/4"
+general_envelope = "abs(signedResidual(j,v))+1<=R*dyadicScale(j)^(quadraticThreshold(rho)+eta/2)"
+seven_eighths_exponent = "3/4+eta/2"
+three_quarters_exponent = "1/2+eta/2"
+complete_plus_one_retained = true
+proved_source_level = true
+
+[open_response_capacity]
+predicate_with_budget = "PinnedPrimeWeightPsiQuadraticResponseCapacityWithBudget(C)"
+existential_predicate = "PinnedPrimeWeightPsiQuadraticResponseCapacity"
+pointwise_rule_form = "abs(response(j,v))<=C*pinnedPrimeWeightedAmplitude(dyadicScale(j))^2"
+pointwise_explicit_form = "dyadicScale(j)*abs(psiError(v))<=C*pinnedPrimeWeightedAmplitude(dyadicScale(j))^2"
+fixed_budget = true
+eventual_in_stage = true
+uniform_in_next_octave_target = true
+proved = false
+
+[criterion_transport]
+psi_capacity_to_fixed_signed_coupling = true
+fixed_signed_coupling_to_fixed_ratio = true
+fixed_signed_coupling_to_recurrence = true
+fixed_signed_coupling_to_descent_for_rho_ge_three_quarters = true
+existential_capacity_to_two_live_recurrences = true
+existential_capacity_to_descent_program = true
+response_capacity_converse = false
+
+[hostile_controls]
+zero_amplitude_forces_psi_error_zero = true
+psi_response_equals_target_fitted_iff_psi_equals_theta = true
+exact_split_implies_response_capacity = false
+residual_bound_implies_response_capacity = false
+chebyshev_upper_bounds_imply_cross_scale_coupling = false
+metadata_strings_prove_source_law = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightPsiSourceRule"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightPsiSourceRule.lean"
+blob = "2f838d9850315e800b6dcc452bdd7093d5c5387a"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightPsiSourceRuleControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightPsiSourceRuleControls.lean"
+blob = "1e85bb86b19ca02a21746e5e91701a9a310ca74f"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-psi-source-rule.md"
+blob = "13679f3cd6af4a2b408c00704156eea2124a8ef6"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CHEBYSHEV_PSI_SIGNED_RULE_DEFINED = true
+HIGHER_PRIME_POWER_RESIDUAL_DISCHARGED = true
+SEVEN_EIGHTHS_RESIDUAL_BOUND_DEFINED = true
+THREE_QUARTERS_RESIDUAL_BOUND_DEFINED = true
+PSI_RESPONSE_CAPACITY_INTERFACE_DEFINED = true
+PSI_CAPACITY_TO_RECURRENCE_DEFINED = true
+PSI_CAPACITY_TO_DESCENT_DEFINED = true
+QUADRATIC_PSI_RESPONSE_CAPACITY_PROVED = false
+GLOBAL_ZETA_EXPLICIT_FORMULA_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false
