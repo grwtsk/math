@@ -3502,6 +3502,16 @@
       "version": "v0.1"
     },
     {
+      "manifest_id": null,
+      "migrated_sha256": "5dec34ba375f4e40369a7838d7a7e4c3b805fc35f9dfc609c62e35df6a6e90ea",
+      "new_path": "docs/verification/NumberTheory/Moebius/CanonicalFourFamilyThinGreenMatrix/rh-canonical-four-family-thin-green-matrix-942-v0.1.toml",
+      "old_path": "verification/rh-canonical-four-family-thin-green-matrix-942-v0.1.toml",
+      "original_sha256": "5dec34ba375f4e40369a7838d7a7e4c3b805fc35f9dfc609c62e35df6a6e90ea",
+      "root_module": "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyThinGreenMatrix",
+      "scope": "MIRRORED_SOURCE_MODULE",
+      "version": "v0.1"
+    },
+    {
       "manifest_id": "rh-canonical-packing-necessity-and-finite-residue-head-v0.1",
       "migrated_sha256": "c4823c713cb79341b1b9e421aaa92496452f38b71427c4af4744cfce9ac1d035",
       "new_path": "docs/verification/Interfaces/SevenEighthsMechanismQuarticBridgeCore/rh-canonical-packing-necessity-and-finite-residue-head-v0.1.toml",
@@ -5078,6 +5088,16 @@
       "old_path": "verification/rh-fixed-to-uniform-obstruction-576-v0.1.toml",
       "original_sha256": "2dd5edc963640e67b3d1fbb34d3fa6a9f0f48196f53a48c06c3b8b4f9a7efaa7",
       "root_module": "GRWTSK.NumberTheory.Moebius.FixedToUniformSquareModulusObstruction",
+      "scope": "MIRRORED_SOURCE_MODULE",
+      "version": "v0.1"
+    },
+    {
+      "manifest_id": null,
+      "migrated_sha256": "069936731bf36835ab49e65a3228b58685e68a8d61dd245d466958437c4a911a",
+      "new_path": "docs/verification/NumberTheory/Moebius/CanonicalFourFamilyTerminalColumnObstruction/rh-four-family-terminal-column-obstruction-966-v0.1.toml",
+      "old_path": "verification/rh-four-family-terminal-column-obstruction-966-v0.1.toml",
+      "original_sha256": "069936731bf36835ab49e65a3228b58685e68a8d61dd245d466958437c4a911a",
+      "root_module": "GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyTerminalColumnObstruction",
       "scope": "MIRRORED_SOURCE_MODULE",
       "version": "v0.1"
     },
@@ -7162,6 +7182,16 @@
       "version": "v1"
     },
     {
+      "manifest_id": null,
+      "migrated_sha256": "e42b5a03894ed1caf144fc9071170336ed8a4e2b786a2aaa88291561b53e6430",
+      "new_path": "docs/verification/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit/rh-weil-approximate-positive-limit-215-v0.1.toml",
+      "old_path": "verification/rh-weil-approximate-positive-limit-215-v0.1.toml",
+      "original_sha256": "e42b5a03894ed1caf144fc9071170336ed8a4e2b786a2aaa88291561b53e6430",
+      "root_module": "GRWTSK.NumberTheory.Zeta.Riemann.WeilApproximatePositiveLimit",
+      "scope": "MIRRORED_SOURCE_MODULE",
+      "version": "v0.1"
+    },
+    {
       "manifest_id": "rh-weil-positive-limit-core-v0.1",
       "migrated_sha256": "a671d86c3fb6b792b415f138cd726229699a13c336e61226801c3c9119ef0c2f",
       "new_path": "docs/verification/_library-root/rh-weil-positive-limit-core-v0.1.toml",
@@ -7993,7 +8023,7 @@
     }
   ],
   "legacy_root": "verification",
-  "migrated_file_count": 799,
+  "migrated_file_count": 802,
   "nonclaims": [
     "Migration does not assert Lean elaboration, replay, trust audit, hostile-control execution, or mathematical admission.",
     "The _unscoped and _library-root groups preserve targets without an exact source-module mirror.",
@@ -8003,7 +8033,7 @@
   "schema": "grwtsk-verification-layout-migration-v1",
   "scope_counts": {
     "LIBRARY_ROOT": 52,
-    "MIRRORED_SOURCE_MODULE": 696,
+    "MIRRORED_SOURCE_MODULE": 699,
     "UNSCOPED_SOURCE_SCOPE": 51
   },
   "status": "STATIC_SOURCE_AUTHORED_ONLY"
