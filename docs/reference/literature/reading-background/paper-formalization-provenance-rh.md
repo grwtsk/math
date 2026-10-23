@@ -208,6 +208,233 @@ conclusion needs extra proof. No Li coefficients, formula, or
 Li→Weil conversion have been constructed, and no local Lean proof
 of Li's criterion has been checked. This is a logical analogy.
 
+## Recent papers, formalized foundations and closed conjectures — exact comparison ledger
+
+These are **additional citations for previously discussed connections**, not new
+paper-to-Lean theorem imports. Each record gives the actual theorem/method and
+hypotheses in the *external* source, the exact local declaration consulted,
+and the local verification state. A paper can report a proved mathematical
+result or an author-verified external formalization without thereby giving
+a source-faithful, checked `grwtsk/math` theorem.
+
+For the following exact local source references, `grwtsk/math` revision
+[`0c9de2badc62537764c3d09ebed7650267ea99b9`](https://github.com/grwtsk/math/commit/0c9de2badc62537764c3d09ebed7650267ea99b9)
+is the **source-inspected snapshot**, not the original introduction commit or
+a fresh build receipt. Full file SHA-1 Git blobs are given individually.
+This snapshot uses Lean `v4.33.0` and pinned Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+### Formalized foundations: Loeffler–Stoll (2025)
+
+**Bibliography:** David Loeffler and Michael Stoll, *Formalizing zeta and
+L-functions in Lean*, *Annals of Formalized Mathematics* **1** (2025),
+43–56, published July 15, 2025.
+[DOI:10.46298/afm.15328](https://doi.org/10.46298/afm.15328);
+[arXiv:2503.00959](https://arxiv.org/abs/2503.00959).
+
+**Exact external method/hypotheses:** formalization in Mathlib of
+the Riemann zeta function and character Dirichlet `L`-functions, including
+Dirichlet's theorem that every reduced residue class modulo a positive
+integer contains infinitely many primes (the residue is coprime to the
+modulus). The work also **states** the Riemann Hypothesis in Lean;
+it does **not prove RH**. The zeta and `L` functions retain their
+analytic domains/continuations and character conventions; none of these
+may be replaced by a finite Dirichlet polynomial without a comparison.
+
+**Formal binding:** `GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis.Statement`
+and `statement_eq_mathlib` [at this pin](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean#L17-L22),
+blob `6fe545d161e3166d4fd7b2a5dc5cb117c418e261`,
+identify the local RH proposition with `_root_.RiemannHypothesis`.
+`GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity`
+and `heightHead` [are source declarations](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean#L55-L109)
+(blob `7dcaef4040533a9b3f76d1cf46b2bba88622fdad`).
+They consume repository/Mathlib zeta notions; the paper's Dirichlet
+progression theorem is **not** a new locally proved RH supplier.
+
+**Relationship:** `LOCAL_IDENTITY_SOURCE_CANDIDATE` for the source-level
+local RH proposition identity; Mathlib foundational dependency is distinct
+from `PAPER_TO_LEAN_BRIDGE_PROVED` for a new analytic result, which is
+**not asserted** here. `SOURCE_PRESENT / LOCAL_FRESH_BUILD_NOT_RUN /
+LOCAL_FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOMS_NOT_AUDITED /
+NO_SAME_COMMIT_RECEIPT` in this review. Mathlib's published development
+does not qualify every downstream local theorem.
+
+### Alternative unconditional critical-line method: Lamzouri (2026)
+
+**Bibliography:** Youness Lamzouri, *A new proof that more than
+2/3 of the zeros of the Riemann zeta function are simple and on the
+critical line*, posted September 2, **2026**,
+[arXiv:2609.02882](https://arxiv.org/abs/2609.02882).
+
+**Exact external theorem/method:** unconditionally more than 67.25% of
+nontrivial zeros, counted with the paper's height/multiplicity convention,
+are simple and on `Re(s)=1/2`; at least 83.62% are distinct. The paper
+also obtains the 88.76% lower bound for zeros that are **simple or on
+the line**. Its shorter argument replaces the finite Hermitian
+compression/rank–trace device of Alpöge–Furman with a **Hilbert-space
+inequality**, using the unconditional pair-correlation result of
+Baluyot–Goldston–Suriajaya–Turnage-Butterbaugh. It does **not**
+assume Montgomery's *full conjectural* pair correlation nor prove
+that **every** zero lies on the critical line.
+
+**Local declarations/comparison:** source-bound test/form records
+`GRWTSK.RiemannHypothesis.WeilHermitianForm` and
+`WeilPositivityImpliesRH`, [`WeilCriterion.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean#L62-L115),
+blob `29d8c4f1c741ab25f6abd136a3c3c2eb900da69a`;
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.distinct_basis_cross_zero`,
+[source line 139](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean#L139),
+blob `2c25cac04fe5575ac0242349a2dcc5592d19f0bb`.
+
+**Relationship:** `ANALOGY_ONLY` — no locally defined Lamzouri
+Hilbert-space functional or inequality and no local proof of any
+zero proportion. Exact test, zero-counting asymptotics and any
+Weil-form sign conversion are `UNRESOLVED_PREMISE`.
+Local `SOURCE_INSPECTED / BUILD_NOT_RUN / KERNEL_NOT_RUN /
+AXIOMS_NOT_AUDITED / NO_RECEIPT`. No external Lean formalization
+of this particular proof is established in this repository.
+
+### Pair correlation conjecture as a hypothesis: Goldston–Lee–Schettler–Suriajaya (2025)
+
+**Bibliography:** Daniel A. Goldston, Junghun Lee, Jordan Schettler,
+and Ade Irma Suriajaya, *Pair Correlation Conjecture for the zeros of
+the Riemann zeta-function I: simple and critical zeros*, first posted
+March 19, **2025**, [arXiv:2503.15449](https://arxiv.org/abs/2503.15449).
+
+**Exact external theorem/hypotheses:** **assuming Montgomery's Pair
+Correlation Conjecture** for the nontrivial zeta zeros, with its
+specified near-mean-spacing statistics and height-asymptotic counting
+conventions, asymptotically 100% of the zeros are both simple and on
+`Re(s)=1/2`, **without separately assuming RH**. The *conditional*
+PCC hypothesis cannot be deleted. A density-zero exceptional set
+is still compatible with this conclusion, so it is not the
+universal RH statement.
+
+**Local declarations/comparison:** actual zero identity,
+analytic multiplicity and finite height-head counting:
+`GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity`,
+`heightHead` and `heightCount`,
+[`CanonicalZeroDivisor.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean#L55-L156),
+blob `7dcaef4040533a9b3f76d1cf46b2bba88622fdad`;
+`GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis.Statement`
+[`Hypothesis.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean#L17),
+blob `6fe545d161e3166d4fd7b2a5dc5cb117c418e261`.
+
+**Relationship:** `ANALOGY_ONLY`. Neither pair-correlation statistics,
+PCC hypotheses nor a density-one implication are locally formalized.
+The local finite height-head and universal RH predicate are **not**
+an imported proof of pair correlation or a bridge from density one
+to every zero. `SOURCE_INSPECTED / BUILD_NOT_RUN /
+FRESH_KERNEL_NOT_RUN / AXIOMS_NOT_AUDITED / NO_RECEIPT`.
+
+### One-sided heat-flow result: Rodgers–Tao (2018/2020)
+
+**Bibliography:** Brad Rodgers and Terence Tao, *The de Bruijn–Newman
+constant is non-negative*, first arXiv posting **2018**,
+*Forum of Mathematics, Pi* **8** (2020), e6.
+[DOI:10.1017/fmp.2020.6](https://doi.org/10.1017/fmp.2020.6);
+[arXiv:1801.05914](https://arxiv.org/abs/1801.05914).
+
+**Exact external statement/hypotheses:** for the standard
+de Bruijn–Newman family `H_t` obtained by heat deformation of the
+Riemann-xi Fourier kernel, its reality threshold `Λ` satisfies
+`Λ≥0` unconditionally. The defining theorem says all zeros of
+`H_t` are real exactly for `t≥Λ`, and RH is equivalent to the
+*additional opposite inequality* `Λ≤0`. The analytic zero dynamics,
+entire-function normalization, heat parameter and zero-gap estimates
+are essential to this external method; it is not a positivity theorem
+about arbitrary Hermitian forms.
+
+**Local declarations/comparison:** the universal terminal proposition
+`GRWTSK.NumberTheory.Zeta.Riemann.Hypothesis.Statement`
+[at this pin](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/Hypothesis.lean#L17),
+blob `6fe545d161e3166d4fd7b2a5dc5cb117c418e261`;
+`GRWTSK.RiemannHypothesis.WeilPositivityImpliesRH`,
+[`WeilCriterion.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean#L107),
+blob `29d8c4f1c741ab25f6abd136a3c3c2eb900da69a`.
+
+**Relationship:** `ANALOGY_ONLY` for the logical obstruction:
+one proved inequality/positivity direction does not discharge the
+complementary RH direction. **No** local de Bruijn–Newman `Λ`,
+`H_t` or heat-flow zero-dynamics declaration is supplied here;
+no link of the classical heat family to `WeilHermitianForm` is
+proved. `SOURCE_INSPECTED / LOCAL_LEAN_NOT_RUN / NO_RECEIPT`.
+
+### Separate zero-free-region method and Lean scope: OpenAI (2026)
+
+**Bibliography:** OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free
+Half-Plane Re(s)>7/8*, preprint dated September 30, **2026**,
+stable release identifier
+`OAI:The-Quasi-Riemann-Hypothesis-September-30-2026`,
+[official paper](https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf),
+[formalization scope](https://github.com/openai/math/blob/main/lean/docs/003.md).
+
+**Exact external theorem/hypotheses:** the released formalization
+reports the zeta zero exclusion `Re(s)>7/8` and a uniform
+Dirichlet-character analogue; the Hecke analogue concerns
+finite-order characters over `Q(√−3)`. The Dirichlet and Hecke
+principal-character poles at `s=1` require explicit exclusion.
+The *classical meromorphic pole* of zeta at 1 is separate from
+Mathlib's assigned total-function value at 1. The strict boundary
+`Re(s)=7/8` is not included. The formalization also gives a
+uniform logarithmic real-zero exclusion for primitive nonprincipal
+real Dirichlet characters, with a positive **unspecified** constant;
+that is a separate conclusion, not RH.
+
+**Local declarations/comparison:** 
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.CanonicalQuarticComparison`
+and `riemannHypothesis_of_canonicalSpectralComparison`,
+[source lines 119–163](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSpectralPort.lean#L119),
+blob `32e1bf3064601486ea3385fe9e5e76bf1de14962`;
+`GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.point_mem_strip`,
+[`CanonicalZeroDivisor.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean#L82),
+blob `7dcaef4040533a9b3f76d1cf46b2bba88622fdad`.
+
+**Relationship:** `ANALOGY_ONLY` for an infinite-region
+zero-exclusion supplier; no official `OAI` theorem term was
+imported or replayed in `grwtsk/math` and no 7/8→1/2
+comparison was proved. **External formalization is
+publisher-reported, not a fresh local certificate**.
+Local `SOURCE_INSPECTED / LEAN_NOT_RUN /
+TRANSITIVE_AXIOMS_NOT_AUDITED / NO_RECEIPT`.
+
+### Disproved determinant generalization: OpenAI (2026)
+
+**Bibliography:** OpenAI, *A Counterexample to the Group-Ring
+Determinant Conjecture*, released September 23, **2026**,
+stable official release path/identifier
+`OAI:A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026`,
+[official paper](https://github.com/openai/math/blob/main/preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/paper.pdf),
+[Lean scope and comparator](https://github.com/openai/math/blob/main/lean/docs/197.md).
+
+**Exact external theorem/hypotheses:** for some finitely generated
+group `G` and `n≥1`, an integer `n×n` group-ring matrix `A`
+is invertible over `Q[G]`, and its induced invertible
+left-regular operator on `ℓ²(G)^n` has Fuglede–Kadison determinant
+strictly between 0 and 1. This refutes the previously proposed
+general bound `det_FK≥1` **for arbitrary groups**.
+The external formalization covers the invertible-operator
+`trace log(T* T)` determinant result; the separate
+**spectral-measure integral** conclusion of the manuscript is
+**not** part of that checked statement.
+
+**Local declarations/comparison:** the **source arithmetic**
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm_self_re_nonnegative`,
+[`CanonicalSquareTentPolarization.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean#L505),
+blob `f33d5f402160bc141115c450f1488c103e9cf131`;
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.no_exactSourceBoundTransport_of_nonzeroCross`,
+[`CanonicalSquareTentWeilTransportObstruction.lean`](https://github.com/grwtsk/math/blob/0c9de2badc62537764c3d09ebed7650267ea99b9/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean#L209),
+blob `2c25cac04fe5575ac0242349a2dcc5592d19f0bb`.
+
+**Relationship:** `ANALOGY_ONLY`. The failure of a group-ring
+operator determinant bound is **not** a theorem about Riemann
+zeta zeros or a refutation of a local Weil-form transport.
+No group-ring, Fuglede–Kadison trace or von Neumann algebra
+operator is identified with the local arithmetic source.
+Local `SOURCE_INSPECTED / NO_LEAN_RUN / NO_AXIOM_AUDIT /
+NO_SAME_COMMIT_RECEIPT`; the external publisher's Lean
+scope does **not** qualify these local declarations.
+
+
 ## Open obligations, prohibited promotions and acceptance evidence
 
 - **UNRESOLVED_PREMISE — test class:** verify a
