@@ -30,8 +30,6 @@ Connections to finite-height zero certificates, Li's universal
 coefficient signs, Nyman--Beurling closure, and pair-correlation density
 remain *comparisons of logical quantifiers*, not imported equivalences.
 
-SOURCE_DRAFT: Lean elaboration, kernel replay and transitive axiom audit
-have not been established for this new module.
 -/
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentFiniteUniformTail
@@ -59,8 +57,9 @@ theorem finite_test_tail_uniform
       obtain ⟨M, hM⟩ := lowerDefect_vanishes a ε hε
       refine ⟨max N M, ?_⟩
       intro n hn f hf
-      rcases Finset.mem_insert.mp hf with rfl | hfs
-      · have hnonneg : 0 ≤ lowerDefect n a := lowerDefect_nonnegative n a
+      rcases Finset.mem_insert.mp hf with hfa | hfs
+      · subst f
+        have hnonneg : 0 ≤ lowerDefect n a := lowerDefect_nonnegative n a
         have hbound := hM n (le_trans (le_max_right N M) hn)
         simpa only [abs_of_nonneg hnonneg] using hbound
       · exact hN n (le_trans (le_max_left N M) hn) f hfs
