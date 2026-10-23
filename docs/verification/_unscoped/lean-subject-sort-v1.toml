@@ -1,3 +1,4 @@
+filename_only = true
 schema = "grwtsk.lean-subject-sort/1"
 managed_root = "GRWTSK"
 umbrella = "GRWTSK.lean"
@@ -296,3 +297,303 @@ reason = "accepted mathematical subject placement is preserved by merge ab3e70df
 path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/ProbabilityMeasures/FiniteAtomicPackets/Variante4efdc9c8d172f77/TaggedMixtureMeasureEquality.lean"
 source_sha256 = "723824eedb3b9b0d3171fa464ae67675792d03a9fcd01e56b856b74ba022938d"
 reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[filename_overrides]]
+path = "GRWTSK/Algebra/AffineMap/SourceReconstruction.lean"
+source_sha256 = "e59003354f6fe5823f92426964cd8ade42008193d0a74c216db2da04f2a57a48"
+filename = "RationalAffineViewAndReflectionLaws.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+source_sha256 = "ba3c0a4ddd3c137fdd803d4ba8aae2c1f42fb373a64e5e7bab797ab44b8dfbee"
+filename = "EqualTotalDifferentDiagonal.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+source_sha256 = "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e"
+filename = "RankOneDeterminantEncoding.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+source_sha256 = "c794442a18ee20b17d7a9de85d12e1450f5856c152dd9fec159e2c41c9dec34e"
+filename = "RankOneDeterminantEncoding.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonRegularPart.lean"
+source_sha256 = "d3e01c7d890af6604e58d74e57d8dfe3ede01c8383d63e6179f584645bd76910"
+filename = "ConcreteNewtonPoleSubtractedBounds.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[consumer_rewrites]]
+path = "docs/reference/library-summary.json"
+source_sha256 = "6da15a3cf145b13571a947feb86dc93408886a8873e08f99eead1e8f3e022f0b"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "8b4a9a78110369d0071ae36b292d2687c58a8559dc47e51c334528482f983fb9"
+[[consumer_rewrites.edits]]
+start = 72032
+end = 72088
+old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/source_census/GRWTSK~1Algebra~1BigOperators~1QuadraticCounterexample.lean"
+[[consumer_rewrites.edits]]
+start = 865
+end = 921
+old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/source_paths/1"
+[[consumer_rewrites.edits]]
+start = 495215
+end = 495273
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_census/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 34415
+end = 34473
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_paths/466"
+
+[[consumer_rewrites]]
+path = "docs/reference/math-source-catalog.json"
+source_sha256 = "ab66635c7c23b73905f81e23383be5ecf3f10381dbf4f3c73becdd95be550da4"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "08ca83ddbfd49c97f44a4299bef1e6d3a56f460a5027576dcb6abc38b75a50bc"
+[[consumer_rewrites.edits]]
+start = 269669
+end = 269725
+old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/current_source_observations/sources/2/path"
+[[consumer_rewrites.edits]]
+start = 240462
+end = 240513
+old = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+new = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/current_source_observations/public_entrypoint_closure/2"
+[[consumer_rewrites.edits]]
+start = 521964
+end = 522022
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/current_source_observations/sources/465/path"
+[[consumer_rewrites.edits]]
+start = 255510
+end = 255563
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/current_source_observations/public_entrypoint_closure/242"
+
+[[consumer_rewrites]]
+path = "GRWTSK/Analysis/Energy/Checks/Declarations.lean"
+source_sha256 = "28809c1aba0124e3da4b6fd8171cf98f941083492f3f6046bdacab78860154e5"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "56bbd66b3cbd6fc5df6437d5930f9874239dfb485e8dd89ff0f31ce2e8652cf8"
+[[consumer_rewrites.edits]]
+start = 4891
+end = 4944
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+line = 86
+
+[[consumer_rewrites]]
+path = "GRWTSK/Analysis/Energy/Checks/result-contracts.json"
+source_sha256 = "0c72fd1fb861b14cc580b166f1084ef65c000c4987e688ad3f3cc6998728f29b"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "d11e0453c19868fa9e6a47c64ec95d1ed58a5761816ee14640b8183b205992f1"
+[[consumer_rewrites.edits]]
+start = 111952
+end = 112010
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 75583
+end = 75636
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/172/module"
+[[consumer_rewrites.edits]]
+start = 76035
+end = 76088
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/173/module"
+[[consumer_rewrites.edits]]
+start = 76451
+end = 76504
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/174/module"
+[[consumer_rewrites.edits]]
+start = 76822
+end = 76875
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/175/module"
+[[consumer_rewrites.edits]]
+start = 77223
+end = 77276
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/176/module"
+[[consumer_rewrites.edits]]
+start = 77547
+end = 77600
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/177/module"
+[[consumer_rewrites.edits]]
+start = 77876
+end = 77929
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/178/module"
+[[consumer_rewrites.edits]]
+start = 78419
+end = 78472
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/179/module"
+[[consumer_rewrites.edits]]
+start = 78959
+end = 79012
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/180/module"
+[[consumer_rewrites.edits]]
+start = 79351
+end = 79404
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/181/module"
+[[consumer_rewrites.edits]]
+start = 79779
+end = 79832
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/182/module"
+[[consumer_rewrites.edits]]
+start = 80132
+end = 80185
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/183/module"
+
+[[consumer_rewrites]]
+path = "GRWTSK/Analysis/Energy/Checks/result-oracle-fixtures.json"
+source_sha256 = "88bc2d08ee05442c4edb7a0a86b3f35eee160e6430a919b78e6d798b92c51bae"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "d4c2d05c20bc41bd8bc7b4a46a4a491647f7bc63b0d89b0a004d506083eb90d1"
+[[consumer_rewrites.edits]]
+start = 2035
+end = 2093
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1DeterminantPaysBudget.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 8148
+end = 8206
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1DroppedResidual.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 14489
+end = 14547
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1FiniteSamples.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 20884
+end = 20942
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1MissingBudget.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 26961
+end = 27019
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1SingleRate.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 35782
+end = 35840
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/positive/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 260871
+end = 260929
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/previous_generation/source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 264298
+end = 264356
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
