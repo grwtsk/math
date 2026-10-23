@@ -43,7 +43,7 @@ theorem extraOnOldKernel_injective
   apply Prod.ext
   · have hx : P x.1 = 0 := x.2
     have hy : P y.1 = 0 := y.2
-    simpa [pairedLinearObservation, hx, hy]
+    simp [pairedLinearObservation, hx, hy]
   · exact hxy
 
 /-- Exact finrank of the added measurement's range on the old kernel.

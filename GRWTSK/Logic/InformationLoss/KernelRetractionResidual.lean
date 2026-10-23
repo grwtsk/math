@@ -55,6 +55,7 @@ theorem kernelRetraction_decompose
     (P : V →ₗ[K] Y) (projection : V →ₗ[K] P.ker) (x : V) :
     (projection x).1 + kernelRetractionResidual P projection x = x := by
   unfold kernelRetractionResidual
-  abel
+  rw [add_comm]
+  exact sub_add_cancel x (projection x).1
 
 end GRWTSK.Logic.InformationLoss
