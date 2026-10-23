@@ -90,6 +90,10 @@ direct or transitive supplier files. The provenance record is in
 [paper-to-formalization-references.md](../../../reference/literature/reading-background/paper-to-formalization-references.md)
 and must not be upgraded by a source merge.
 
+**Commit-bound validation queue:** [grwtsk/math #1096](https://github.com/grwtsk/math/issues/1096)
+(pinned to `ecfda6e1b7ea98925de3cbbf8e86bf258b8b8e9c`, no executor
+result). Parent module checks are tracked separately in #1093 and #1094.
+
 ## Required validation (pending)
 
 On a host with actual Lean/Lake and authorized repository checkout:
