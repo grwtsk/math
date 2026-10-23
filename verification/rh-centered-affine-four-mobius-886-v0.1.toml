@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-affine-four-mobius-886-v0.1"
+owner_repository = "grwtsk/math"
+issue = 886
+parent_issue = 881
+parent_pr = 882
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_AFFINE_FOUR_MOBIUS_SOURCE_DRAFT_FOUR_MOBIUS_LAG_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobius"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobius"
+
+[source_binding]
+stacked_parent_revision = "e3111b226cf2607866cbb95f0229075e1cec68fe"
+candidate_branch = "research/rh-centered-winding-four-mobius-883-20261022"
+theorem_source_commit = "b46e5a6655ff64fa28f42267f8c9433d737b64ba"
+mathematical_note_commit = "d681604799e5c48ffb600afc8042df2a5ce8d7c7"
+
+[evidence_states]
+source_draft = true
+four_mobius_coefficient_defined = true
+center_lag_shift_surface_defined = true
+amplitude_product_identity_scripted = true
+positive_lag_covariance_identity_scripted = true
+square_modulus_winding_lag_identity_scripted = true
+winding_lag_sum_identity_scripted = true
+analytic_envelope_defined = true
+binary_chowla_implication_claimed = false
+pointwise_mertens_implication_claimed = false
+four_mobius_lag_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
