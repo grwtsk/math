@@ -1,0 +1,590 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-perimeter-attachment-868-v0.1"
+owner_repository = "grwtsk/math"
+issue = 868
+related_issues = [859,845,834,823,803,795,774,758,745,734,722,704,653,198,205,545,121,168,516,159,100,15]
+route_id = "UNPAIRED_CYCLIC_PERIMETER_TO_PAIRED_BOUNDARY_ATTACHING_DIRECTION"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-radial-filling-859-20261022"
+review_parent_revision = "9f623c04671939a3cdd502edd1bf994a6f0e50a2"
+review_parent_radial_git_blob = "4455b74da256ec09efbe664f9fa95a0b48651d4a"
+review_parent_boundary_git_blob = "e563395f94fc594453e48a5b0589d39b28ce42da"
+review_parent_corner_git_blob = "ab06170acca456efcba7dc1f444b097a132501a8"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterAttachment.lean"
+new_module_git_blob = "89e89609b8dabbf9117a61eb65362f34830916cf"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-perimeter-attachment.md"
+mathematical_note_git_blob = "4fcfaac4ac3eadb6c2cd92b87fdabe62d7a85162"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+interval_path = "Mathlib/Topology/UnitInterval.lean"
+interval_type = "unitInterval"
+interval_reflection = "unitInterval.symm"
+quotient_path = "Mathlib/Topology/Constructions.lean"
+quotient_coinduced = "instTopologicalSpaceQuotient"
+quotient_continuous = "continuous_quotient_mk'"
+quotient_map = "isQuotientMap_quotient_mk'"
+quotient_lift_continuous = "Continuous.quotient_lift"
+generated_relation_path = "Mathlib/Logic/Relation.lean"
+relation_equivalence_closure = "Relation.EqvGen"
+reuse_status = "PINNED_MATHLIB_DECLARATIONS_SOURCE_INSPECTED_NOT_ELABORATED_AT_CHILD_HEAD"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+true_unpaired_cyclic_topological_perimeter = true
+seam_only_relation_and_topology = true
+continuous_true_quotient_projection = true
+continuous_original_source_edge_maps = true
+exact_seam_to_paired_relation_source_candidate = true
+actual_quotient_lift_attaching_map_source_candidate = true
+continuous_surjective_attaching_map_source_candidate = true
+attaching_universal_source_equality = true
+opposite_edge_interiors_distinct_before_attach_source_candidate = true
+opposite_edge_interiors_equal_after_attach_source_candidate = true
+attaching_map_noninjective_source_candidate = true
+continuous_outer_filling_composite_source_candidate = true
+fixed_radius_seams_descend_source_candidate = true
+continuous_fixed_radius_slices_source_candidate = true
+zero_radius_apex_and_one_radius_outer_triangle = true
+original_four_g_directed_sources = true
+explicit_genus_two_three_fixtures = true
+actual_S1_perimeter_homeomorphism_proved = false
+actual_disk_boundary_circle_attaching_map_proved = false
+jointly_continuous_cone_to_filled_map_proved = false
+cone_to_closed_disk_homeomorphism_proved = false
+filled_quotient_adjunction_pushout_proved = false
+authentic_genus_g_CW_surface_proved = false
+actual_cellular_singular_homology_proved = false
+surface_pi1_van_kampen_or_hurewicz_proved = false
+marked_hyperbolic_geodesic_length_proved = false
+Selberg_WP_GUE_sofic_proved = false
+Chowla_growing_shift_or_zeta_RH_proved = false
+mathematical_statement = "The exact unpaired seam-only cyclic quotient of the 4g original oriented unit intervals admits a continuous surjective noninjective quotient-descended map into the original paired boundary one-skeleton; opposite edge interior points remain distinct before attachment, are identified afterwards, and fixed-radius descent commutes with the inherited radial filling."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+authored_declaration_count = 42
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling", "Mathlib.Topology.Constructions", "Mathlib.Topology.UnitInterval"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+source_construct = "local instance cornerDiscreteTopology on exact directed source IDs"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+source_construct = "PerimeterSeamStep inductive constructors seam01/seam12/seam23/seamNext and generated recursor"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment"
+source_construct = "perimeterSetoid and true Quotient with coinduced topology, plus implicit Quotient.lift generated terms"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.PerimeterSeamStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.PerimeterConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterSetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.UnpairedPerimeter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeter_topology_coinduced"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterProjection_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterProjection_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterEdgeMap"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterEdgeMap_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeter_seam_01"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeter_seam_12"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeter_seam_23"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeter_seam_next"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.seamStep_respected_by_pairedBoundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterConnected_respected_by_pairedBoundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterAttach"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterAttach_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterAttach_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterAttach_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterAttach_unique"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.attachingMap_pairs_a"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.attachingMap_pairs_b"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.seamStep_has_endpoints"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterConnected_preserves_endpoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterConnected_interior_fixed"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.opposite_a_midpoints_distinct_in_perimeter"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterAttach_not_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterToFilling"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterToFilling_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterToFilling_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterSeam_respected_at_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterConnected_respected_at_radius"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterRadialSlice"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterRadialSlice_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterRadialSlice_projection"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterRadialSlice_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.perimeterRadialSlice_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.radialCoordinate_slice"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.directed_edge_source_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.genusTwo_attaching_noninjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment.genusThree_attaching_noninjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-revision-bound"
+requirement = "The child must import PR #864 pinned at 9f623c04671939a3cdd502edd1bf994a6f0e50a2, without modifying any existing ancestor module."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-directed-source"
+requirement = "The true source is BoundaryPoint k=PolygonCorner k×unitInterval from #845, retaining every original signed source edge index."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-index-discrete-only"
+requirement = "The finite directed edge index uses a discrete topology, while unitInterval retains its real usual topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-four-seam-generators"
+requirement = "PerimeterSeamStep has ONLY seam01, seam12, seam23, seamNext; it must NOT include pairA, pairB or universal gluing."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam01"
+requirement = "The endpoint of local edge zero joins the start of edge one of the same handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam12"
+requirement = "The endpoint of local edge one joins the start of edge two of the same handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam23"
+requirement = "The endpoint of local edge two joins the start of edge three of the same handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seamNext"
+requirement = "The endpoint of local edge three joins the exact nextHandle start edge zero, with source-preserving cyclic wraparound."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "k-zero-final-seam"
+requirement = "At k=0, the second base handle's last edge joins the first base handle, not a nonexistent extra Fin0 index."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "k-one-extra-seam"
+requirement = "At k=1, the second base handle's last edge joins the true added extra handle and the final extra handle wraps back to the first."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "eqvGen-smallest-relation"
+requirement = "PerimeterConnected is exactly Relation.EqvGen of four seam constructors, not a freely declared all-true equivalence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-perimeter-quotient"
+requirement = "UnpairedPerimeter k is a true Mathlib Quotient of REAL unit-interval source points by the generated seam Setoid."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-quotient-topology"
+requirement = "The perimeter topology is Mathlib's coinduced quotient topology, not an arbitrary discrete, finite or codiscrete structure."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-perimeter-projection"
+requirement = "The authentic quotient projection is continuous."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-map-perimeter-projection"
+requirement = "The authentic projection satisfies IsQuotientMap, not only continuity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-directed-edge-maps"
+requirement = "Each source-labelled unit interval maps continuously into the unpaired cyclic perimeter."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-endpoint-images"
+requirement = "The four original consecutive side endpoint equalities hold in the unpaired perimeter, including last-to-first."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seams-subset-paired"
+requirement = "Each of the four unpaired seam generators is an actual existing #845 BoundaryGluingStep generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-seam-to-boundary-rel"
+requirement = "EqvGen induction shows every unpaired perimeter equivalence is respected by the existing paired boundary Setoid."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-attaching-arrow"
+requirement = "perimeterAttach maps FROM UnpairedPerimeter INTO PolygonBoundaryOneSkeleton, never the reverse."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "attaching-defined-by-quot-lift"
+requirement = "The attaching-direction map is a real Quotient.lift of the original paired boundary projection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-attaching-map"
+requirement = "Continuity follows from the actual quotient universal property, not an unsupported topological claim."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "attaching-exact-source-square"
+requirement = "For every original source point p, perimeterAttach(perimeterProjection p)=boundaryProjection p."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "attaching-surjective"
+requirement = "Every paired boundary point has a preimage in the unpaired perimeter; no source edge point is omitted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "attaching-unique"
+requirement = "Any other map agreeing at all original source edge points is equal to the quotient-descended attaching map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pair-a-only-in-target"
+requirement = "Full opposite-oriented a/a-inverse side points have equal images under attachment due to old paired relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pair-b-only-in-target"
+requirement = "Full opposite-oriented b/b-inverse side points have equal images under attachment due to old paired relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam-steps-endpoints-only"
+requirement = "Each unpaired primitive seam has t=0 or t=1 on both sides; it never directly identifies edge interiors."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-status-invariant"
+requirement = "The entire unpaired EqvGen preserves the exact endpoint predicate, by induction."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-interior-immovable"
+requirement = "If an original source point is not an endpoint, its EqvGen class for seam-only gluing is the singleton original source point."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "opposite-midpoint-sources-distinct"
+requirement = "The original a-edge midpoint and inverse a-edge midpoint have distinct Fin4 edge IDs and are not equal modulo seam-only perimeter relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "attaching-map-noninjective"
+requirement = "Those two genuinely distinct unpaired perimeter points have the SAME attaching-map image, proving noninjectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-premature-opposite-gluing"
+requirement = "Do not identify opposite edge interiors inside UnpairedPerimeter; that would destroy the hostile distinctness proof."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-composite-continuous"
+requirement = "Composition of perimeterAttach with #859 boundaryInclusion is continuous as a map to FilledPolygonQuotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-to-filled-commutes"
+requirement = "Every original source point p maps under the perimeter-to-filling composite to the exact inherited radialProjection(p,1)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fixed-radius-seam-transport"
+requirement = "For every radius r, the four unpaired perimeter seams lift to the corresponding exact #859 radial gluing generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-radii-full-EqvGen"
+requirement = "The full seam-only equivalence closure is respected at each fixed radial level, not only r=0 or r=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fixed-radius-continuity"
+requirement = "For each fixed radius r, the descended map UnpairedPerimeter→FilledPolygonQuotient is genuinely continuous."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radius-zero-apex"
+requirement = "Every perimeter point at radius zero maps to the actual inherited apexPoint."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radius-one-boundary-composite"
+requirement = "The radius-one slice equals boundaryInclusion ∘ perimeterAttach on the WHOLE unpaired quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radius-coordinate-commutes"
+requirement = "The true #859 radialCoordinate of the radius-r slice equals r for every point and every r."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-joint-continuity-assertion"
+requirement = "Continuous maps at each fixed r do not alone prove a continuous map UnpairedPerimeter×I→FilledPolygonQuotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "directed-edge-count"
+requirement = "Fintype.card PolygonCorner k must equal 4*(k+2), distinct from 2g unoriented source generator labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two"
+requirement = "The genus-two perimeter has eight directed edge source intervals and attaching-map noninjectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three"
+requirement = "The genus-three perimeter has twelve directed edge source intervals, a true extra handle, and attaching-map noninjectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-yet-S1-homeomorphic"
+requirement = "UnpairedPerimeter has not yet been proved homeomorphic to Mathlib AddCircle, UnitCircle or topological S1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-yet-disk-attachment"
+requirement = "A map from a cyclic perimeter candidate is not a verified characteristic map from ∂D² until circle/disk recognition is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-yet-cone-universal"
+requirement = "The radial slices are not a proof of a cone pushout/adjunction-space universal property."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-or-surface-manifold"
+requirement = "No genuine closed genus-g CW surface/manifold structure, cellular chain equivalence, marked π1 or Hurewicz is established."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-geodesic"
+requirement = "No marked hyperbolic metric, authentic geodesic class, length or complete primitive trace source is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-arithmetic-RH"
+requirement = "No Selberg/Weil–Petersson, GUE/sofic, Möbius/Chowla growing-shift, zeta-divisor or RH implication follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-inductive-recursor-unqualified"
+requirement = "The four-constructor PerimeterSeamStep generated recursor, Setoid/Quotient and local topological instance require exact-head generated type/axiom audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "static-not-kernel-proof"
+requirement = "Matching names/blobs and absence of text-level sorry/admit/axiom are not successful Lean elaboration or a kernel proof certificate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-F06-execution"
+requirement = "No Lean/Lake, native/VM/F06, CI/workflows/cache/executor, toolchain, package/pin, public root or existing parent changes are authorized."
+status = "NOT_RUN"
+
