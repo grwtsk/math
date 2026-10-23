@@ -1,0 +1,73 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-feature-norm-v0.1"
+owner_repository = "grwtsk/math"
+issue = 737
+parent_issue = 730
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightFeatureNormControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightFeatureNormControls"
+
+[source_binding]
+parent_branch = "research/730-prime-feature-norm-v01"
+parent_revision = "adfa3395bffbb40a77ec35b31f2226746bf46280"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PINNED_PRIME_WEIGHT_L1_BOUND_DEFINED / CONCRETE_RANK_ONE_FEATURE_DEFINED / CONCRETE_FEATURE_CERTIFICATE_DEFINED / PINNED_CRITERION_TO_RECURRENCE_DEFINED / SOURCE_MAJORANT_OPEN / TARGET_COEFFICIENT_CONSTRUCTION_OPEN / DESCENDED_RESIDUAL_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[pinned_prime_weight]
+window = "(X,2X] filtered by Nat.Prime"
+weight = "Lambda(p)/p=log(p)/p"
+l1_bound = "sum_{p in window} |weight(p)| <= 2*log(4)"
+uses_pnt = false
+source_theorems = "ArithmeticFunction.vonMangoldt_apply_prime; Chebyshev.theta_eq_sum_primesLE_log; Chebyshev.theta_le_log4_mul_x"
+
+[rank_one_stage]
+factor_index = "{0}"
+left_feature = "coefficient(p)"
+right_feature = "coefficient(q)"
+weighted_amplitude = "sum_p coefficient(p)*(|thetaError(p)|+1)"
+response = "c(v)*(weightedAmplitude(X))^2"
+left_budget = "2*log(4)"
+right_budget = "2*log(4)"
+certified_budget = "|c(v)|*(2*log(4))^2"
+
+[criterion]
+name = "PinnedPrimeWeightCriterionAt"
+target_coefficient_bound_open = true
+source_majorization_open = true
+descended_residual_open = true
+to_feature_norm_criterion = true
+to_recurrence = true
+to_descent_for_rho_ge_three_quarters = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightFeatureNorm"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightFeatureNorm.lean"
+blob = "78f8b418c1e15d862055f9094909018abfc31a12"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeight"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPinnedPrimeWeight.lean"
+blob = "fcf403b0b14cd5bcd76a44d05a40010c6f16517f"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightFeatureNormControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightFeatureNormControls.lean"
+blob = "aaf1df56035af4d3e785e8f6c6f8d1ef02f0a937"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-feature-norm.md"
+blob = "e12621b81472f2c305aca773516ab6ca0a07b416"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PINNED_PRIME_WEIGHT_L1_BOUND_DEFINED = true
+CONCRETE_RANK_ONE_FEATURE_DEFINED = true
+CONCRETE_FEATURE_CERTIFICATE_DEFINED = true
+PINNED_CRITERION_TO_RECURRENCE_DEFINED = true
+SOURCE_MAJORANT_PROVED = false
+TARGET_COEFFICIENT_CONSTRUCTION_PROVED = false
+DESCENDED_RESIDUAL_PROVED = false
+COMPLEXITY_TO_ZETA_TRANSFER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
