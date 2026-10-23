@@ -98,6 +98,28 @@ example (k : ℕ) :
   distinct_angles_same_attached_vertex k
 LEAN
 lake env lean --trust=0 --wfail "$tmp"
+# Exact source-level negative control: the quotient map is injective
+# on canonical half-open representatives, but NOT on the original
+# closed interval copies at their glued endpoints. This checks the
+# normalization boundary rather than accidentally assuming it away.
+cat > "$tmp" <<'LEAN'
+import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
+open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
+example (k : ℕ) (c : PolygonCorner k) :
+    perimeterProjection k (c, 1) =
+      perimeterProjection k (nextDirectedCorner k c, 0) :=
+  perimeterProjection_one_eq_nextDirectedCorner k c
+example (k : ℕ) (p : BoundaryPoint k) :
+    perimeterProjection k (canonicalBoundaryPoint k p) =
+      perimeterProjection k p :=
+  canonicalBoundaryPoint_projection k p
+example (k : ℕ) (p : BoundaryPoint k) :
+    ((canonicalBoundaryPoint k p).2 : ℝ) < 1 :=
+  canonicalBoundaryPoint_parameter_lt_one k p
+LEAN
+lake env lean --trust=0 --wfail "$tmp"
 # This script performs a trust=0 elaboration request and prints both inherited
 # homeomorphism dependency axioms and child theorem axioms, but
 # does not replace independent import/unsafe review or hostile seam fixtures.
