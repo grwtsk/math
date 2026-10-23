@@ -16229,6 +16229,2318 @@
       ],
       "reading_status": "unknown",
       "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+      "kind": "paper",
+      "title": "1-s2.0-S0012365X16302254-main-2",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Subject",
+          "value": "Discrete Mathematics, 340 (2017) 3183-3196. doi:10.1016/j.disc.2016.07.004",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "Elsevier",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Fri Oct  7 04:54:05 2016 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Fri Oct  7 04:54:05 2016 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "14",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Discrete Mathematics 340 (2017) 3183–3196 Contents lists available at ScienceDirect Discrete Mathematics journal homepage: www.elsevier.com/locate/disc Geodesics on the regular tetrahedron and the cube Diana Davis a , Victor Dods b , Cynthia Traub c , Jed Yang d a Mathematics Department, Northwestern University, Evanston, IL 60208, USA Department of Mathematics, University of California Santa Cruz, Santa Cruz, CA 95064, USA c University Libraries, Washington University in St. Louis, St. Louis, M",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "doi",
+          "value": "10.1016/j.disc.2016.07.004",
+          "evidence": "opening pages; sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+          "version_label": null,
+          "taxonomy": "ProbabilityCombinatorics",
+          "relative_library_path": "ProbabilityCombinatorics/3b46c20b4ca9--1-s2.0-S0012365X16302254-main-2.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+      "kind": "paper",
+      "title": "1202.6036v2",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref package",
+          "evidence": "pdfinfo embedded metadata; asset sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "GPL Ghostscript 10.01.2",
+          "evidence": "pdfinfo embedded metadata; asset sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Tue Nov 26 21:19:58 2024 PST",
+          "evidence": "pdfinfo embedded metadata; asset sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Tue Nov 26 21:19:58 2024 PST",
+          "evidence": "pdfinfo embedded metadata; asset sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "96",
+          "evidence": "pdfinfo embedded metadata; asset sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "arXiv:1202.6036v2 [math.DG] 28 Mar 2013 MIN-MAX THEORY AND THE WILLMORE CONJECTURE FERNANDO C. MARQUES AND ANDRÉ NEVES Abstract. In 1965, T. J. Willmore conjectured that the integral of the square of the mean curvature of a torus immersed in R3 is at least 2π 2 . We prove this conjecture using the min-max theory of minimal surfaces. Contents 1. 2. Introduction Main ideas and organization",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "arxiv",
+          "value": "1202.6036v2",
+          "evidence": "opening pages; sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+          "version_label": null,
+          "taxonomy": "GeometryTopology",
+          "relative_library_path": "GeometryTopology/0883144a55cf--1202.6036v2.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+      "kind": "paper",
+      "title": "1407.2975v1",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref package",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.12",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun Jul 13 17:29:50 2014 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun Jul 13 17:29:50 2014 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "16",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "EVERYTHING IS ILLUMINATED arXiv:1407.2975v1 [math.DS] 10 Jul 2014 SAMUEL LELIÈVRE, THIERRY MONTEIL, AND BARAK WEISS Abstract. We study geometrical properties of translation surfaces: the finite blocking property, bounded blocking property, and illumination properties. These are elementary properties which can be fruitfully studied using the dynamical behavior of the SL(2, R)-action on the moduli space of translation surfaces. We characterize surfaces with the finite blocking property and bounde",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "arxiv",
+          "value": "1407.2975v1",
+          "evidence": "opening pages; sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+          "version_label": null,
+          "taxonomy": "Analysis",
+          "relative_library_path": "Analysis/6ecc6a948ae7--1407.2975v1.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+      "kind": "paper",
+      "title": "1411.1827v1",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref package",
+          "evidence": "pdfinfo embedded metadata; asset sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.12",
+          "evidence": "pdfinfo embedded metadata; asset sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun Nov  9 17:22:05 2014 PST",
+          "evidence": "pdfinfo embedded metadata; asset sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun Nov  9 17:22:05 2014 PST",
+          "evidence": "pdfinfo embedded metadata; asset sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "54",
+          "evidence": "pdfinfo embedded metadata; asset sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "arXiv:1411.1827v1 [math.DS] 7 Nov 2014 TRANSLATION SURFACES AND THEIR ORBIT CLOSURES: AN INTRODUCTION FOR A BROAD AUDIENCE ALEX WRIGHT Translation surfaces can be defined in an elementary way via polygons, and arise naturally in in the study of various basic dynamical systems. They can also be defined as differentials on Riemann surfaces, and have moduli spaces called strata that are related to the moduli space of Riemann surfaces. There is a GL(2, R) action on each stratum, and to solve most pr",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "arxiv",
+          "value": "1411.1827v1",
+          "evidence": "opening pages; sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+          "version_label": null,
+          "taxonomy": "Analysis",
+          "relative_library_path": "Analysis/59b3dd43b1e1--1411.1827v1.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+      "kind": "paper",
+      "title": "pyFFS: A Python Library for Fast Fourier Series Computation and Interpolation with GPU Acceleration",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "pyFFS: A Python Library for Fast Fourier Series Computation and Interpolation with GPU Acceleration",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "E. Bezzam, S. Kashani, P. Hurley, and M. Vetterli and M. Simeoni",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.21",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Mon Sep 26 19:37:09 2022 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Mon Sep 26 19:37:09 2022 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "21",
+          "evidence": "pdfinfo embedded metadata; asset sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "pyFFS: A PYTHON LIBRARY FOR FAST FOURIER SERIES COMPUTATION AND INTERPOLATION WITH GPU ACCELERATION∗ ERIC BEZZAM† , SEPAND KASHANI† , PAUL HURLEY‡ , MARTIN VETTERLI† , AND arXiv:2110.00262v3 [cs.MS] 26 Sep 2022 MATTHIEU SIMEONI§ Abstract. Fourier transforms are an often necessary component in many computational tasks, and can be computed efficiently through the fast Fourier transform (FFT) algorithm. However, many applications involve an underlying continuous signal, and a more natural choice wo",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "arxiv",
+          "value": "2110.00262v3",
+          "evidence": "opening pages; sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+          "version_label": null,
+          "taxonomy": "Analysis",
+          "relative_library_path": "Analysis/4e6817ad3dfe--2110.00262v3.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+      "kind": "paper",
+      "title": "2203.09542v2",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "dvips + GPL Ghostscript GIT PRERELEASE 9.22",
+          "evidence": "pdfinfo embedded metadata; asset sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Tue Nov 21 17:53:40 2023 PST",
+          "evidence": "pdfinfo embedded metadata; asset sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Tue Nov 21 17:53:40 2023 PST",
+          "evidence": "pdfinfo embedded metadata; asset sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "20",
+          "evidence": "pdfinfo embedded metadata; asset sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "QUASI-ISOGENY GROUPS OF SUPERSINGULAR ABELIAN SURFACES VIA PRO-ÉTALE FUNDAMENTAL GROUPS arXiv:2203.09542v2 [math.AG] 21 Nov 2023 THIBAUD VAN DEN HOVE Abstract. We consider a Jb (Qp )-torsor on the supersingular locus of the Siegel threefold constructed by Caraiani-Scholze, and show that it induces an isomorphism between a free group on a finite number of generators, and the group of self-quasi-isogenies of a supersingular abelian surface, respecting a principal polarization and a prime-to-p lev",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "arxiv",
+          "value": "2203.09542v2",
+          "evidence": "opening pages; sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+          "version_label": null,
+          "taxonomy": "Algebra",
+          "relative_library_path": "Algebra/51c4c9f0b410--2203.09542v2.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+      "kind": "paper",
+      "title": "Feasibilism, Explication, and the Cobham-Edmonds Thesis",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Feasibilism, Explication, and the Cobham-Edmonds Thesis",
+          "evidence": "pdfinfo embedded metadata; asset sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Abrahim Ladha; Yiran Luo; Alan Tian",
+          "evidence": "pdfinfo embedded metadata; asset sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "arXiv GenPDF (tex2pdf:a6404ea)",
+          "evidence": "pdfinfo embedded metadata; asset sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pikepdf 8.15.1",
+          "evidence": "pdfinfo embedded metadata; asset sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "40",
+          "evidence": "pdfinfo embedded metadata; asset sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Feasibilism, Explication, and the Cobham-Edmonds Thesis Abrahim Ladha∗ Yiran Luo† Alan Tian‡ arXiv:2607.00315v1 [cs.CC] 1 Jul 2026 July 2, 2026 Abstract While the Church-Turing thesis asserts that effective calculability explicates to sets decidable by a Turing machine, the Cobham-Edmonds thesis asserts that feasible computation explicates to the complexity class P, those decidable by a polynomial-time bounded Turing machine. The Church-Turing thesis has been placed under rigorous scrutiny and h",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "arxiv",
+          "value": "2607.00315v1",
+          "evidence": "opening pages; sha256:26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "26933a5f4d9cc43b4abb548a73bca51d0d5cb5e8abc23d34d8cb427983155982",
+          "version_label": null,
+          "taxonomy": "LogicAndComputation",
+          "relative_library_path": "LogicAndComputation/26933a5f4d9c--2607.00315v1.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+      "kind": "paper",
+      "title": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.1",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.1",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Prime-path transfer, Hecke-star period banks, and exact obstruction isolation",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "automorphic cohomology, Hecke operators, period maps, transfer obstruction, modular symbols, finite frames",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion Prime-path transfer, Hecke-star period banks, finite cyclic witnesses, and exact obstruction isolation Revision 1.1 – canonical-rebase candidate 2 September 2026 Manuscript status The governing A01 detector is restored as the source-eliminating composite 𝐽𝑠 prime Φ𝑠",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/f4ec0ff737d2--A01-v1.1.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+      "kind": "paper",
+      "title": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.2",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.2",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Prime-path transfer, Hecke-star period banks, and exact obstruction isolation",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "automorphic cohomology, Hecke operators, period maps, transfer obstruction, modular symbols, finite frames",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "28",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion Harmonic null annihilation, Hecke-cyclic witnesses, automorphic transfer obstruction, and typed downstream exports Revision 1.2 – canonical-contract candidate 2 September 2026 Manuscript status The governing A01 chain is 𝐽𝑠 prime Φ𝑠",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/cda859bfce64--A01-v1.2 (1).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+      "kind": "paper",
+      "title": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.3",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion, Revision 1.3",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Prime-path transfer, Hecke-star period banks, and exact obstruction isolation",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "automorphic cohomology, Hecke operators, period maps, transfer obstruction, modular symbols, finite frames",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "30",
+          "evidence": "pdfinfo embedded metadata; asset sha256:9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion Harmonic null annihilation, Hecke-cyclic witnesses, automorphic transfer obstruction, and typed downstream exports Revision 1.3 – canonical-contract full-return candidate 3 September 2026 Manuscript status The governing A01 chain is 𝐽𝑠 prime Φ𝑠",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/9884a6a5efb7--A01-v1.3.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+      "kind": "paper",
+      "title": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Automorphic period detectors for reconstructed cohomology classes",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "automorphic cohomology, modular symbols, period maps, Hilbert complexes, Kunneth, left inverse",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "32",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program A01: Period-Anchored Automorphic Observation and Cohomological Left Inversion External-product detectors, modular-symbol contractions, and kernel-preserving exports to P03, P09, and P10 Version 1.0 – atlas-rebased production return 2 September 2026 Manuscript status This is a standalone alternate-detector paper in the Reconstruction-First Publication Atlas. It proves an exact period-anchored Kunneth detector theorem: an independently fixed nonze",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/cbbfa2c78fda--A01.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+      "kind": "paper",
+      "title": "Theta-Eisenstein-Hecke Local-to-Global Compatibility",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Theta-Eisenstein-Hecke Local-to-Global Compatibility",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Paper A02",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "restricted tensor product, theta correspondence, Eisenstein cohomology, Hecke covariance, local-to-global compatibility",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Research Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Thu Sep  3 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Thu Sep  3 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "36",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Paper A02 Theta–Eisenstein–Hecke Local-to-Global Compatibility Restricted Tensor Products, One-Excitation Prime Localization, Eisenstein Boundary Completion, and Global Observation Assembly Noeoueeue Research Program Revision 1.1 – 4 September 2026 Revision status and admission boundary paper_id: roadmap_stage: submission_status: recommended_principal_outcome: migration_status: canonical_freeze: actual_local_theta_maps_constructed:",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+      "kind": "paper",
+      "title": "Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "ChatGPT Deep Research",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "ChatGPT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "WeasyPrint 68.0",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "17",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution Executive summary A concrete replacement for the earlier 64-authority binomial warming schedule is to make “authority” a band-indexed bit-matrix pipeline rather than a ﬁxed list of 64 symbolic states. In this design, the core object is a family of bit-packed rows Mb , Σb , Cb ∈ {0, 1}W , b ∈ B := {0, 12 , 1, 2, 4, 8, 16, 32, 64, 128} , where Mb is an occupancy row, Σb is a sign or residue row, and Cb is a certiﬁcate row. Th",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07",
+          "version_label": null,
+          "taxonomy": "GeometryTopology",
+          "relative_library_path": "GeometryTopology/8f78a9815cde--Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+      "kind": "paper",
+      "title": "Quantitative Reconstruction Norm-Floor Compiler",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Quantitative Reconstruction Norm-Floor Compiler",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "P06 v1.1 full-architecture revision candidate",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "minimum modulus, quotient descent, Hodge transport, relative leakage, absolute leakage, reconstruction norm floor",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun Aug 30 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun Aug 30 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "15",
+          "evidence": "pdfinfo embedded metadata; asset sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Quantitative Reconstruction Norm-Floor Compiler Raw-Cochain Descent, Invariant Transport, Relative and Absolute Leakage, and Exact Prime-Path Cancellation Noeoueeue Reconstruction-First Publication Program Paper P06 31 August 2026 Version 1.1 full-architecture revision candidate Binding status declaration paper_id: P06 roadmap_stage: Grammar priority: A2 direct_dependencies: P03, P04 prior_wave_context: P05 submission_status: PendingMasterAudit expected_principal_outcome:",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/effab6e7692e--P06 (1).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+      "kind": "paper",
+      "title": "Quantitative Reconstruction Norm-Floor Compiler",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Quantitative Reconstruction Norm-Floor Compiler",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "P06 v1.2 canonical-rebase candidate",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "minimum modulus, quotient descent, Hodge transport, detector authority, reconstruction norm floor",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun Aug 30 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun Aug 30 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "17",
+          "evidence": "pdfinfo embedded metadata; asset sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Quantitative Reconstruction Norm-Floor Compiler Detector Quotient Floors, Harmonic Transport Factors, Nonconforming Loss Budgets, and Stable Certificate Arithmetic Noeoueeue Reconstruction-First Publication Program Paper P06 31 August 2026 Version 1.2 canonical-rebase candidate Binding status declaration paper_id: P06 roadmap_stage: Grammar priority: A2 direct_dependencies: P03, P04 prior_wave_context: P05 submission_status: PendingMasterAudit expected_principal_outcome:",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/8090de7e2acf--P06 (3).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+      "kind": "paper",
+      "title": "Global No-Disappearance and Boundary Adequacy, Revision 1.1",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Global No-Disappearance and Boundary Adequacy, Revision 1.1",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Paper P07 revision 1.1",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "finite-section decoder, inverse limit, packet source extractor, straightening, boundary adequacy, no escape",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Mon Aug 31 16:16:28 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Mon Aug 31 16:16:28 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "20",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Global No-Disappearance and Boundary Adequacy Straightened Prime-Path Packets, Exact Source Extraction, and a Schema-Enforced Finite-to-Global Harmonic Decoder Noeoueeue Reconstruction-First Publication Program Paper P07 – Revision 1.1 Revision status. This revision preserves the accepted finite-section decoder architecture and repairs the release blockers identified in the P07 production-packet audit. It distinguishes the raw tail-folding inverse system from its straightened ambient inverse sys",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/5d78840a4167--P07-v1.1.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+      "kind": "paper",
+      "title": "P08 v1.1: Relative Trace, Ground, Gauge, and Boundary Quotient Stability",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "P08 v1.1: Relative Trace, Ground, Gauge, and Boundary Quotient Stability",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Mon Aug 31 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Mon Aug 31 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "16",
+          "evidence": "pdfinfo embedded metadata; asset sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Reconstruction-First Publication Program Relative Trace, Ground, Gauge, and Boundary Quotient Stability Aggregate Null Generators, Exact Representative Norms, and Prime-Path Recognition Survival Paper P08 Revision 1.1 canonical-rebase full-return candidate Governing outcome. PartialQuotientStability_ExactReductionDefectIsolated. The revision restores the stable namespace P08-D01–D08, P08-E01–E02, P08-T01–T14, P08-C01, and P08-O01–O10; repairs the invalid coexact counterexample; separates null-tr",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/a951ebf04f79--P08 (1).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+      "kind": "paper",
+      "title": "P08: Relative Trace, Ground, Gauge, and Boundary Quotient Stability",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "P08: Relative Trace, Ground, Gauge, and Boundary Quotient Stability",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Tue Sep  1 00:38:44 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Tue Sep  1 00:38:44 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "17",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Reconstruction-First Publication Program Relative Trace, Ground, Gauge, and Boundary Quotient Stability Commuting Six-Stage Hodge Reductions, Sharp Refinement Norms, and Certified Non-Disappearance Paper P08 Version 1.0 production return Manuscript status. This is a standalone syntax/grammar paper in the Reconstruction-First Publication Atlas. It proves abstract and concrete stability theorems for relative trace restriction and the successive ground, gauge, exact, coexact, and boundary quotients",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/7ca107df41bb--P08.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+      "kind": "paper",
+      "title": "Prime-Complete Logarithmic Frame Faithfulness",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Prime-Complete Logarithmic Frame Faithfulness",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Paper P09 Revision 1.1",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "frames, logarithmic primes, finite witness, reconstruction, blind space, exact certificate",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Mon Aug 31 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Mon Aug 31 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "20",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program Prime-Complete Logarithmic Frame Faithfulness Canonical Scalar Cyclic Observation, Finite-Witness Coercivity, Exact Blind-Space Separation, and Compact-Window Log-Prime Sampling Paper P09 – Revision 1.1 Canonical-Rebase Candidate 1 September 2026 Manuscript status. Revision 1.1 repairs the local operator typing, restores the stable P09 namespace, restores the issued scalar cyclic prime-path profile, supplies the missing finite-witness, canonical",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/7d13a6d60790--P09 (1).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+      "kind": "paper",
+      "title": "Prime-Complete Logarithmic Frame Faithfulness",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Prime-Complete Logarithmic Frame Faithfulness",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Paper P09 Revision 1.2",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "frames, logarithmic primes, finite witness, reconstruction, blind space, exact certificate",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Mon Aug 31 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Mon Aug 31 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "22",
+          "evidence": "pdfinfo embedded metadata; asset sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program Prime-Complete Logarithmic Frame Faithfulness Canonical Scalar Cyclic Observation, Finite-Witness Coercivity, Exact Blind-Space Separation, and Compact-Window Log-Prime Sampling Paper P09 – Revision 1.2 Canonical-Contract Candidate 1 September 2026 Manuscript status. Revision 1.2 restores the governing definition, theorem, and obligation meanings; adopts the permitted compiler outcome; completes the frameoperator, composite-perturbation, and coe",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/3e667d873ecf--P09 (2).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+      "kind": "paper",
+      "title": "Prime-Complete Logarithmic Frame Faithfulness",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Prime-Complete Logarithmic Frame Faithfulness",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Paper P09",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "frames, logarithmic primes, nonharmonic Fourier series, reconstruction, Hodge quotient",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Tue Sep  1 17:36:33 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Tue Sep  1 17:36:33 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "20",
+          "evidence": "pdfinfo embedded metadata; asset sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Noeoueeue Reconstruction-First Publication Program Prime-Complete Logarithmic Frame Faithfulness Restricted Gram Positivity on the P07 Decoder Image, Uniform Log-Prime Window Bounds, and Exact Truncation Loss Paper P09 – Production Return Version 1.0 1 September 2026 Manuscript status. This paper proves an abstract reconstruction-restricted frame theorem, an unconditional logarithmic-prime completeness theorem, an explicit compactwindow frame estimate, and an exact reference specialization on th",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/7314fd796114--P09.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+      "kind": "paper",
+      "title": "P10: Fredholm-Hodge Comparator Naturality and Endpoint Reversal",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "P10: Fredholm-Hodge Comparator Naturality and Endpoint Reversal",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Reconstruction-First Publication Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Wed Sep  2 03:45:21 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Wed Sep  2 03:45:21 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "21",
+          "evidence": "pdfinfo embedded metadata; asset sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Fredholm–Hodge Comparator Naturality and Endpoint Reversal Completed Endpoint Pairs, Quotient-Descending Coequalizers, Zero-Free Gauge Alignment, and Reversal-Covariant Defect Closure Noeoueeue Reconstruction-First Publication Program Paper P10 2 September 2026 Mandatory production status. paper_id: roadmap_stage: priority: direct_dependencies: submission_status: expected_principal_outcome:",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/82f838ae5214--P10.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+      "kind": "paper",
+      "title": "Projective Equality and Two-Fiber Geometry",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Projective Equality and Two-Fiber Geometry",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "A sixteen-paper monograph collection on quotient equality, projective residues, toric choice, frequency filtration, angular cut lifts, and conditional arithmetic reconstruction",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Research Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Tue Sep  1 17:37:29 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Tue Sep  1 17:37:29 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "95",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Projective Equality and Two-Fiber Geometry A Monograph Collection on Reflective Choice, Toric Depletion, Frequency Filtration, Angular Cut Lifts, and Conditional Arithmetic Reconstruction Sixteen papers: TQ01–TQ16 Noeoueeue Research Program Version 1.0 – 1 September 2026 Original research collection. Not a record of peer review, not a record of an awarded degree, and not a proof of the Riemann hypothesis. Collection status",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/dc23aae7df72--Projective-Equality-and-Two-Fiber-Geometry-Monograph-v1.0.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+      "kind": "paper",
+      "title": "Proof-Carrying Symbol–Syntax–Grammar Kernel",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Proof-Carrying Symbol–Syntax–Grammar Kernel",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "ChatGPT Deep Research",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "ChatGPT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "WeasyPrint 68.0",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "31",
+          "evidence": "pdfinfo embedded metadata; asset sha256:e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Proof-Carrying Symbol–Syntax–Grammar Kernel Executive summary The strongest version of the proposed system is not a neural network that “discovers the true grammar” from raw symbols. It is a proof-carrying inference architecture in which a heuristic proposer—potentially neural—generates candidate syntax, grammatical roles, equivalences, recursive decompositions, and spectral/topological structure, while a substantially smaller trusted kernel establishes exactly which claims follow from the suppl",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442",
+          "version_label": null,
+          "taxonomy": "LogicAndComputation",
+          "relative_library_path": "LogicAndComputation/e19a42c2d74c--Proof-Carrying Symbol–Syntax–Grammar Kernel.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+      "kind": "paper",
+      "title": "S0894-0347-06-00526-1",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref package",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "Acrobat Distiller Server 6.0.1 (Sparc Solaris, Built: 2003-11-03)",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Thu Oct 12 21:52:06 2006 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Thu Oct 12 21:52:06 2006 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "23",
+          "evidence": "pdfinfo embedded metadata; asset sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "JOURNAL OF THE AMERICAN MATHEMATICAL SOCIETY Volume 20, Number 1, January 2007, Pages 1–23 S 0894-0347(06)00526-1 Article electronically published on March 8, 2006 WEIL-PETERSSON VOLUMES AND INTERSECTION THEORY ON THE MODULI SPACE OF CURVES MARYAM MIRZAKHANI 1. Introduction In this paper, we establish a relationship between the Weil-Petersson volume Vg,n (b) of the moduli space Mg,n (b) of hyperbolic Riemann surfaces with geodesic boundary components of lengths b1 , . . . , bn , and the intersec",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/6c3823be6f3a--S0894-0347-06-00526-1.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+      "kind": "paper",
+      "title": "Sustained Expression and Interstitial Completion",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Sustained Expression and Interstitial Completion",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Atomic notes, proof-bearing interpolation, profile-relative boundary homology, and obstruction ports",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "sustained expression, interpolation, atomic notes, Lambek calculus, homology, discourse, Riemann hypothesis",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Author name to be supplied",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Fri Aug 28 18:09:07 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Fri Aug 28 18:09:07 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "47",
+          "evidence": "pdfinfo embedded metadata; asset sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Sustained Expression and Interstitial Completion Atomic Notes, Proof-Bearing Interpolation, Profile-Relative Boundary Homology, and Obstruction Ports Author name to be supplied Noeoueeue Mathematical-Theory Project August 2026 Manuscript status This is an original synthesis manuscript built from the project conversation and the supplied internal papers on mathematical pseudo-classes, interpolation in non-classical logics, grounded Hodge exactness, noncommutative memory, and Riemann-hypothesis pr",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/655492306cf5--Sustained_Expression_and_Interstitial_Completion.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+      "kind": "paper",
+      "title": "document (1)",
+      "title_status": "filename-only",
+      "bibliographic_claims": [
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "xdvipdfmx (0.1)",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sat Oct 10 21:09:03 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "6",
+          "evidence": "pdfinfo embedded metadata; asset sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "ASBN–P04: Exact Pickup, Closure, and a Universal-Interface Obstruction Research formalization with OpenAI Codex assistance October 10, 2026 Result. The universal one-block estimate in ASBN–P04/0.1 is false. A finite source-generated block of primes near the observation horizon has harmonic mass tending to zero and energy of order eT /T 2 . It contradicts every nonnegative reserve with a polynomial initial bound in one step from the empty state. This meets success criterion 4. The exact pickup id",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/cf1c7cee16c0--document (1).pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+      "kind": "paper",
+      "title": "Fibered Higher-History Authority for Frobenius–Hodge Reconstruction",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Fibered Higher-History Authority for Frobenius–Hodge Reconstruction",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Proof-bearing hyperdescent, arithmetic quines, and endogenous counterfactual execution",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueue Project",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Wed Sep  2 03:05:15 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Wed Sep  2 03:05:15 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "58",
+          "evidence": "pdfinfo embedded metadata; asset sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Fibered Higher-History Authority for Frobenius–Hodge Reconstruction Proof-Bearing Hyperdescent, Shift-Equivariant Arithmetic Quines, and Endogenous Counterfactual Execution A formal research proposal and finite-theorem architecture Noeoueue Project 2 September 2026 ω GHT20F v4auth = Totdesc [Hfibered ⋊dep Exec(Alearned )] ×hClmΘ ×EnvΘ Prf ✓",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/eb72e67be7cb--fibered-higher-history-authority.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+      "kind": "paper",
+      "title": "Reconstruction-First Publication Atlas",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Reconstruction-First Publication Atlas",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "OpenAI GPT-5.6 Pro",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sat Aug 29 12:51:25 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sat Aug 29 12:51:25 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "42",
+          "evidence": "pdfinfo embedded metadata; asset sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Reconstruction-First Publication Atlas From Typed Syntax through Descent Grammar to Obstruction Rings A master roadmap for producing the paper sequence without directly approaching the terminal hypothesis Version 1.0 29 August 2026 Project: Noeoueeue Manuscript status. This is a formal publication roadmap and production protocol derived from the supplied conversation and the source paper Reconstruction Norm-Floor. It does not claim a proof of the Riemann Hypothesis. It deliberately stops before ",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/1113859d6d1f--reconstruction-first-publication-atlas.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+      "kind": "paper",
+      "title": "Geodesics on Regular Polyhedra with Endpoints at the Vertices",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Geodesics on Regular Polyhedra with Endpoints at the Vertices",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Arnold Mathematical Journal, doi:10.1007/s40598-016-0040-z",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "Regular polyhedra; Geodesic segments; Endpoints",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Dmitry Fuchs",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "Springer",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "Acrobat Distiller 10.1.8 (Windows)",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Mon Mar 21 08:00:12 2016 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Fri May 20 19:39:25 2016 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "11",
+          "evidence": "pdfinfo embedded metadata; asset sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Arnold Math J. (2016) 2:201–211 DOI 10.1007/s40598-016-0040-z RESEARCH CONTRIBUTION Geodesics on Regular Polyhedra with Endpoints at the Vertices Dmitry Fuchs1 To Sergei Tabachnikov on the occasion of his 60th birthday Received: 3 October 2015 / Revised: 23 October 2015 / Accepted: 3 March 2016 / Published online: 23 March 2016 © Institute for Mathematical Sciences (IMS), Stony Brook University, NY 2016 Abstract In a recent work of Davis et al. (2016), the authors consider geodesics on regular p",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [
+        {
+          "field": "doi",
+          "value": "10.1007/s40598-016-0040-z",
+          "evidence": "opening pages; sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "status": "extracted-unverified"
+        }
+      ],
+      "versions": [
+        {
+          "asset_sha256": "5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+          "version_label": null,
+          "taxonomy": "GeometryTopology",
+          "relative_library_path": "GeometryTopology/5529b173b416--s40598-016-0040-z.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+      "kind": "paper",
+      "title": "Hensel Lifting on p-Adic Fibers: A Unified Grammar of Algebraic Series, Weil–Petersson Geometry, and Suzuki Screw Convolution",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Hensel Lifting on p-Adic Fibers: A Unified Grammar of Algebraic Series, Weil–Petersson Geometry, and Suzuki Screw Convolution",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Proper grammars, filtered Hensel lifting, coordinate pullbacks, and geometric coefficient semantics",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "R.A. Jacob Martone",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun Sep  6 14:49:48 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun Sep  6 14:49:48 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "85",
+          "evidence": "pdfinfo embedded metadata; asset sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Hensel Lifting on 𝑝-Adic Fibers A Unified Grammar of Algebraic Series, Weil–Petersson Geometry, and Suzuki Screw Convolution Proper systems, coordinate pullbacks, and geometric coefficient semantics R.A. Jacob Martone 6 September 2026 Abstract A finite proper grammar, rather than a sequence of analogies, is the common source of the construction. Its ordered derivation series has a commutative census solving a proper polynomial system. An idealfiltered Hensel theorem proves existence, uniqueness,",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/dbf2a57184a8--unified_hensel.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+      "kind": "paper",
+      "title": "P10: Fredholm-Hodge Comparator Naturality and Endpoint Reversal",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "P10: Fredholm-Hodge Comparator Naturality and Endpoint Reversal",
+          "evidence": "pdfinfo embedded metadata; asset sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Tue Sep  1 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Tue Sep  1 17:00:00 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "21",
+          "evidence": "pdfinfo embedded metadata; asset sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Fredholm–Hodge Comparator Naturality and Endpoint Reversal Completed Endpoint Maps, Quotient-Stable Reconstruction, Zero-Free Normalization, and Quantitative Recognition on the P07 Image Noeoueeue Reconstruction-First Publication Program Paper P10 2 September 2026 Manuscript status. Revision 1.0 production-return candidate. The strongest justified principal outcome is ComparatorNaturalityCompilerSatisfied_ActualEndpointAuthorityOpen. The abstract completion, quotient, reversal, refinement, and q",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/fd60a933105e--P10.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
+    },
+    {
+      "id": "sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+      "kind": "paper",
+      "title": "Anchored Sieve Carpets and Lifted-Exponent Geometry",
+      "title_status": "extracted-unverified",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "Anchored Sieve Carpets and Lifted-Exponent Geometry",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Boundary-anchored sieves, Moire clock frames, Jacobi dispersion, Mellin criteria, and lifted exponent geometry",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "Riemann hypothesis, sieve, Chinese remainder theorem, Moire, Jacobi matrix, Mellin transform, projective geometry",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "Noeoueeue Number-Theory Program",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.26",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun Aug 30 00:46:49 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun Aug 30 00:46:49 2026 PDT",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "85",
+          "evidence": "pdfinfo embedded metadata; asset sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "opening-heading-candidate",
+          "value": "Anchored Sieve Carpets and Lifted-Exponent Geometry Complementary Residue Packings, Moiré Clock Frames, Jacobi Dispersion, and the Riemann Unit-Wall A number-theory research monograph Noeoueeue Number-Theory Program Status. This monograph contains exact finite constructions, proved analytic implications, standard external inputs, and a separately typed research program. It does not claim a proof of the Riemann hypothesis. The universal prime-dispersion and determinant-reconstruction obligations ",
+          "evidence": "opening pages; boundary unreviewed",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+          "version_label": null,
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/808a5117cf67--anchored-sieve-carpets-lifted-exponent-geometry.pdf",
+          "rights_status": "unreviewed; original notices retained in PDF"
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED"
     }
   ],
   "ideas": [],
@@ -20059,6 +22371,516 @@
       "subject_id": "sha256:6792988e6cd0e17690621ce898abd5d534f98407741bc7cb14bbe7d07c77d72f",
       "date": {
         "value": "Mon Dec 31 16:00:00 1979 PST",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+      "date": {
+        "value": "Fri Oct  7 04:54:05 2016 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:3b46c20b4ca9e602abe16e8927e58ce02b620f5b4fa0085f76c9cef95a82b2c7",
+      "date": {
+        "value": "Fri Oct  7 04:54:05 2016 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+      "date": {
+        "value": "Tue Nov 26 21:19:58 2024 PST",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:0883144a55cf857c2de850c08c2c1e67de2c06b661b399154a3a20538c585294",
+      "date": {
+        "value": "Tue Nov 26 21:19:58 2024 PST",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+      "date": {
+        "value": "Sun Jul 13 17:29:50 2014 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:6ecc6a948ae71efae1971019459dae59683f184d31b4ffbef7f4ed156ecdacf5",
+      "date": {
+        "value": "Sun Jul 13 17:29:50 2014 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+      "date": {
+        "value": "Sun Nov  9 17:22:05 2014 PST",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:59b3dd43b1e1d27ea341527c659e9e22517908be39fd50574a233af1d704430f",
+      "date": {
+        "value": "Sun Nov  9 17:22:05 2014 PST",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+      "date": {
+        "value": "Mon Sep 26 19:37:09 2022 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:4e6817ad3dfea0c26db2eb8219588322124cca199f7e11b03ca1a67306b9d7a4",
+      "date": {
+        "value": "Mon Sep 26 19:37:09 2022 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+      "date": {
+        "value": "Tue Nov 21 17:53:40 2023 PST",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:51c4c9f0b41038009b62f10060ae2e1b354ac2c6425295caa0802a7be5c6878e",
+      "date": {
+        "value": "Tue Nov 21 17:53:40 2023 PST",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+      "date": {
+        "value": "Thu Sep  3 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71",
+      "date": {
+        "value": "Thu Sep  3 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+      "date": {
+        "value": "Sun Aug 30 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff",
+      "date": {
+        "value": "Sun Aug 30 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+      "date": {
+        "value": "Sun Aug 30 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe",
+      "date": {
+        "value": "Sun Aug 30 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+      "date": {
+        "value": "Mon Aug 31 16:16:28 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee",
+      "date": {
+        "value": "Mon Aug 31 16:16:28 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+      "date": {
+        "value": "Mon Aug 31 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5",
+      "date": {
+        "value": "Mon Aug 31 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+      "date": {
+        "value": "Tue Sep  1 00:38:44 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e",
+      "date": {
+        "value": "Tue Sep  1 00:38:44 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+      "date": {
+        "value": "Mon Aug 31 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae",
+      "date": {
+        "value": "Mon Aug 31 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+      "date": {
+        "value": "Mon Aug 31 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32",
+      "date": {
+        "value": "Mon Aug 31 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+      "date": {
+        "value": "Tue Sep  1 17:36:33 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04",
+      "date": {
+        "value": "Tue Sep  1 17:36:33 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+      "date": {
+        "value": "Wed Sep  2 03:45:21 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93",
+      "date": {
+        "value": "Wed Sep  2 03:45:21 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+      "date": {
+        "value": "Tue Sep  1 17:37:29 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e",
+      "date": {
+        "value": "Tue Sep  1 17:37:29 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+      "date": {
+        "value": "Thu Oct 12 21:52:06 2006 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:6c3823be6f3ad6e84f897ca89835fc1bd6e1fd5842b4e46fbad1ab09818f2c78",
+      "date": {
+        "value": "Thu Oct 12 21:52:06 2006 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+      "date": {
+        "value": "Fri Aug 28 18:09:07 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2",
+      "date": {
+        "value": "Fri Aug 28 18:09:07 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222",
+      "date": {
+        "value": "Sat Oct 10 21:09:03 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+      "date": {
+        "value": "Wed Sep  2 03:05:15 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129",
+      "date": {
+        "value": "Wed Sep  2 03:05:15 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+      "date": {
+        "value": "Sat Aug 29 12:51:25 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0",
+      "date": {
+        "value": "Sat Aug 29 12:51:25 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+      "date": {
+        "value": "Mon Mar 21 08:00:12 2016 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:5529b173b41643294821ca1cd1e58b36272846385c9f5692a5e36a404366c14e",
+      "date": {
+        "value": "Fri May 20 19:39:25 2016 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+      "date": {
+        "value": "Sun Sep  6 14:49:48 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b",
+      "date": {
+        "value": "Sun Sep  6 14:49:48 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+      "date": {
+        "value": "Tue Sep  1 17:00:00 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a",
+      "date": {
+        "value": "Tue Sep  1 17:00:00 2026 PDT",
+        "meaning": "pdf-modification",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+      "date": {
+        "value": "Sun Aug 30 00:46:49 2026 PDT",
+        "meaning": "pdf-creation",
+        "evidence": "pdfinfo embedded metadata",
+        "precision": "raw unverified PDF date string",
+        "actor": "PDF metadata producer unknown"
+      }
+    },
+    {
+      "subject_id": "sha256:808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e",
+      "date": {
+        "value": "Sun Aug 30 00:46:49 2026 PDT",
         "meaning": "pdf-modification",
         "evidence": "pdfinfo embedded metadata",
         "precision": "raw unverified PDF date string",
