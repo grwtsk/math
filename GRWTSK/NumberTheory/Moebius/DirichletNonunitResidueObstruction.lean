@@ -55,6 +55,7 @@ theorem actualNonunitCongruenceBase_mem :
 `2 mod 4`. -/
 theorem two_not_isUnit_zmod_four :
     ¬ IsUnit (2 : ZMod 4) := by
+  change ¬ IsUnit ((2 : ℕ) : ZMod 4)
   rw [ZMod.isUnit_iff_coprime]
   norm_num
 
