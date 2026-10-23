@@ -31,6 +31,8 @@ jobs:
           use-mathlib-cache: true
           build: false
           auto-config: false
+      - name: Build algebraic owner and its local imports
+        run: lake build GRWTSK.AlgebraicGeometry.Hodge.CMFinitePureAssembly
       - name: Lean algebraic owner with warnings as errors
         run: lake env lean -DwarningAsError=true GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean
       - name: Lean algebraic owner with trust level zero
