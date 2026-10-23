@@ -35,9 +35,9 @@ theorem log_succ_ratio_bounds
     have hlower :
         1 / (n + 1 : ℝ) ≤
           Real.log (1 + 1 / (n + 1 : ℝ)) := by
-      -- log(1+x) >= x/(1+x), here x=1/n.
-      have := Real.div_one_add_le_log_one_add (show 0 ≤ 1 / (n : ℝ) by positivity)
-      field_simp at this ⊢
+      have hloglower := Real.le_log_one_add_of_nonneg
+        (show 0 ≤ 1 / (n : ℝ) by positivity)
+      field_simp at hloglower ⊢
       nlinarith
     exact hlower.trans hlogmono
   · exact Real.log_le_sub_one_of_pos (by positivity)
