@@ -1,0 +1,75 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-capacity-ratio-v0.1"
+owner_repository = "grwtsk/math"
+issue = 781
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightCapacityRatioControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightCapacityRatioControls"
+
+[source_binding]
+parent_branch = "research/763-pinned-prime-amplitude-envelope-v01"
+parent_revision = "dca794000aaea6d6bd08b280545d7375a7afb1f0"
+implementation_branch = "research/781-pinned-prime-capacity-ratio-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / POSITIVE_PART_REDUCTION_DEFINED / FINITE_CAPACITY_RATIO_DEFINED / ZERO_AMPLITUDE_DICHOTOMY_DEFINED / RATIO_CRITERION_EQUIVALENCE_DEFINED / PINNED_AMPLITUDE_ESTIMATE_OPEN / COEFFICIENT_SOURCE_LAW_OPEN / SEVEN_EIGHTHS_RATIO_CRITERION_OPEN / THREE_QUARTERS_RATIO_CRITERION_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[ratio_algebra]
+remaining_target = "T(v,E)=max(0,abs(thetaError(v))+1-E)"
+required_capacity = "C_req(X,v,E)=X*T(v,E)/A_X^2"
+covered_target = "T(v,E)=0 iff abs(thetaError(v))+1<=E"
+nonzero_amplitude_branch = "AmpReq iff C_req<=C when A_X!=0 and C>=0"
+zero_amplitude_branch = "AmpReq iff abs(thetaError(v))+1<=E when X>0 and A_X=0"
+exact_dichotomy = "AmpReq iff target-covered or (A_X!=0 and C_req<=C)"
+minimum_budget = "C_req is the least nonnegative budget satisfying AmpReq when A_X!=0"
+nonvacuous_resources = "E<target and AmpReq imply A_X!=0 and 0<C"
+
+[criterion_boundary]
+variable_ratio_equivalent_to_amplitude = true
+fixed_ratio_equivalent_to_amplitude = true
+fixed_ratio_transports_to_recurrence = true
+fixed_ratio_transports_to_descent_for_rho_ge_three_quarters = true
+pinned_amplitude_estimate_proved = false
+coefficient_source_law_proved = false
+seven_eighths_ratio_criterion_proved = false
+three_quarters_ratio_criterion_proved = false
+unconditional_rh_proved = false
+
+[hostile_controls]
+totalized_zero_ratio_is_not_certificate = true
+zero_amplitude_nonvacuous_stage_rejected = true
+nonvacuous_stage_requires_positive_budget = true
+nonvacuous_stage_requires_nonzero_amplitude = true
+clause_arity_supplies_only_threshold = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightCapacityRatio"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightCapacityRatio.lean"
+blob = "b61ca1233b5d3bd9163b157aac3cf99e10b957a8"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeightCapacityRatio"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPinnedPrimeWeightCapacityRatio.lean"
+blob = "e9147c747c13319d68d19416524694a172ea23d5"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightCapacityRatioControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightCapacityRatioControls.lean"
+blob = "0730498a46db2a31450d1ba8e751c5eced0cf993"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-capacity-ratio.md"
+blob = "853afb918f6fcb3528da6651f216118826674bc5"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+POSITIVE_PART_REDUCTION_DEFINED = true
+FINITE_CAPACITY_RATIO_DEFINED = true
+ZERO_AMPLITUDE_DICHOTOMY_DEFINED = true
+RATIO_CRITERION_EQUIVALENCE_DEFINED = true
+PINNED_AMPLITUDE_ESTIMATE_PROVED = false
+COEFFICIENT_SOURCE_LAW_PROVED = false
+SEVEN_EIGHTHS_RATIO_CRITERION_PROVED = false
+THREE_QUARTERS_RATIO_CRITERION_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false
