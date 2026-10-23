@@ -168,9 +168,13 @@ or infinite-dimensional intertwining statement. -/
 theorem hasDerivAt_modeHeat (s frequency : ℝ) :
     HasDerivAt (fun t : ℝ => modeHeat t frequency)
       (-(modeLaplacian frequency) * modeHeat s frequency) s := by
-  unfold modeHeat
-  convert (Real.hasDerivAt_exp (-(s * modeLaplacian frequency))).comp s
-    ((hasDerivAt_id s).mul_const (-(modeLaplacian frequency))) using 1 <;> ring
+  have hlin : HasDerivAt
+      (fun t : ℝ => -(t * modeLaplacian frequency))
+      (-(modeLaplacian frequency)) s := by
+    convert ((hasDerivAt_id s).mul_const (modeLaplacian frequency)).neg using 1 <;>
+      ring
+  have h := (Real.hasDerivAt_exp (-(s * modeLaplacian frequency))).comp s hlin
+  convert h using 1 <;> simp only [modeHeat] <;> ring
 
 /-- The scalar heat coefficient satisfies the exact finite generator ODE. -/
 theorem hasDerivAt_coefficient (a s frequency : ℝ) :
