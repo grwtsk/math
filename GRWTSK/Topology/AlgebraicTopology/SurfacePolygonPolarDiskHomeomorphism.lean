@@ -8,6 +8,7 @@ Parent PR #1014 exact head 3aa2a98ffc824c410c8b0b7ce1cc68bc4f55bdb1.
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport
 import Mathlib.Topology.Compactness.Compact
+import Mathlib.Topology.Homeomorph.Lemmas
 import Mathlib.Tactic
 
 /-!
@@ -59,7 +60,7 @@ noncomputable def standardCircleConeHomeomorphClosedDisk :
   letI : CompactSpace StandardCircleCone := standardCircleCone_compact
   letI : T2Space ClosedComplexUnitDisk := closedComplexUnitDisk_t2
   exact Continuous.homeoOfEquivCompactToT2
-    (Equiv.ofBijective standardConePolarDisk standardConePolarDisk_bijective)
+    (f := Equiv.ofBijective standardConePolarDisk standardConePolarDisk_bijective)
     standardConePolarDisk_continuous
 
 /-- The homeomorphism is definitionally tied to the actual polar
@@ -69,6 +70,20 @@ theorem standardCircleConeHomeomorphClosedDisk_apply
     standardCircleConeHomeomorphClosedDisk z =
       standardConePolarDisk z := rfl
 
+/-- The standard cone's genuine radial coordinate is the complex norm
+of its image under the authentic polar disk homeomorphism. -/
+theorem standardCircleConeHomeomorphClosedDisk_radius
+    (z : StandardCircleCone) :
+    ‖(standardCircleConeHomeomorphClosedDisk z).val‖ =
+      (standardCircleConeRadius z : ℝ) := by
+  calc
+    ‖(standardCircleConeHomeomorphClosedDisk z).val‖ =
+        ‖(standardConePolarDisk z).val‖ :=
+      congrArg (fun w : ClosedComplexUnitDisk => ‖w.val‖)
+        (standardCircleConeHomeomorphClosedDisk_apply z)
+    _ = (standardCircleConeRadius z : ℝ) :=
+      standardConePolarDisk_norm_eq_radius z
+
 /-- The authentic polygon perimeter cone is homeomorphic to the
 standard closed disk by composition with the previously constructed
 source-exact perimeter-circle cone transport. -/
@@ -76,6 +91,23 @@ noncomputable def perimeterConeHomeomorphClosedDisk (k : ℕ) :
     PerimeterCone k ≃ₜ ClosedComplexUnitDisk :=
   (perimeterConeHomeomorphStandardCircleCone k).trans
     standardCircleConeHomeomorphClosedDisk
+
+/-- The exact source-preserving cone transport also preserves the radial
+coordinate through the closed-disk polar map, at every genus and radius. -/
+theorem perimeterConeHomeomorphClosedDisk_radius
+    (k : ℕ) (z : PerimeterCone k) :
+    ‖(perimeterConeHomeomorphClosedDisk k z).val‖ =
+      (coneRadius k z : ℝ) := by
+  calc
+    ‖(perimeterConeHomeomorphClosedDisk k z).val‖ =
+        ‖(standardCircleConeHomeomorphClosedDisk
+          (perimeterConeHomeomorphStandardCircleCone k z)).val‖ := rfl
+    _ = (standardCircleConeRadius
+          (perimeterConeHomeomorphStandardCircleCone k z) : ℝ) :=
+      standardCircleConeHomeomorphClosedDisk_radius _
+    _ = (coneRadius k z : ℝ) :=
+      congrArg (fun r : unitInterval => (r : ℝ))
+        (perimeterConeHomeomorphStandardCircleCone_radius k z)
 
 /-- The original source cone apex maps to the disk origin. -/
 theorem perimeterConeHomeomorphClosedDisk_apex (k : ℕ) :
