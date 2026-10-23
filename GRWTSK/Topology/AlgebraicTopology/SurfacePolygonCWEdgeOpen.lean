@@ -135,16 +135,10 @@ theorem boundaryProjection_preimage_positiveOpenEdge_image (k : ℕ)
       simpa using heq
     have horbit := interior_projection_eq_orbit k t.property heq'
     rcases horbit with hsame | hopp
-    · have hp : (c, u) = positiveOpenEdgeSourcePoint k h i t.1 := hsame
-      subst hp
-      left
-      exact ⟨rfl, ⟨t, htU, rfl⟩⟩
-    · have hp : (c, u) =
-          oppositeBoundaryPoint k
-            (positiveOpenEdgeSourcePoint k h i t.1) := hopp
-      subst hp
-      right
-      exact ⟨rfl, ⟨t.1, ⟨t, htU, rfl⟩, rfl⟩⟩
+    · rw [hsame]
+      exact Or.inl ⟨rfl, ⟨t, htU, rfl⟩⟩
+    · rw [hopp]
+      exact Or.inr ⟨rfl, ⟨t.1, ⟨t, htU, rfl⟩, rfl⟩⟩
   · intro hp
     rcases hp with hp | hp
     · rcases hp with ⟨hc, ⟨t, htU, hu⟩⟩
