@@ -3512,6 +3512,16 @@
       "version": "v0.1"
     },
     {
+      "manifest_id": null,
+      "migrated_sha256": "c7e7c87e3cbd7f5d0e1deb2d61ca402892abec8da7dd8fc38537b9726ca32220",
+      "new_path": "docs/verification/NumberTheory/Zeta/Riemann/CanonicalSquareTentZetaApproximation/rh-canonical-square-tent-zeta-approximation-157-v0.1.toml",
+      "old_path": "verification/rh-canonical-square-tent-zeta-approximation-157-v0.1.toml",
+      "original_sha256": "c7e7c87e3cbd7f5d0e1deb2d61ca402892abec8da7dd8fc38537b9726ca32220",
+      "root_module": "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation",
+      "scope": "MIRRORED_SOURCE_MODULE",
+      "version": "v0.1"
+    },
+    {
       "manifest_id": "rh-canonical-packing-necessity-and-finite-residue-head-v0.1",
       "migrated_sha256": "c4823c713cb79341b1b9e421aaa92496452f38b71427c4af4744cfce9ac1d035",
       "new_path": "docs/verification/Interfaces/SevenEighthsMechanismQuarticBridgeCore/rh-canonical-packing-necessity-and-finite-residue-head-v0.1.toml",
@@ -8023,7 +8033,7 @@
     }
   ],
   "legacy_root": "verification",
-  "migrated_file_count": 802,
+  "migrated_file_count": 803,
   "nonclaims": [
     "Migration does not assert Lean elaboration, replay, trust audit, hostile-control execution, or mathematical admission.",
     "The _unscoped and _library-root groups preserve targets without an exact source-module mirror.",
@@ -8033,7 +8043,7 @@
   "schema": "grwtsk-verification-layout-migration-v1",
   "scope_counts": {
     "LIBRARY_ROOT": 52,
-    "MIRRORED_SOURCE_MODULE": 699,
+    "MIRRORED_SOURCE_MODULE": 700,
     "UNSCOPED_SOURCE_SCOPE": 51
   },
   "status": "STATIC_SOURCE_AUTHORED_ONLY"
