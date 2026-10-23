@@ -191,4 +191,25 @@ theorem FreshCountedTrail.maximal_finish_imbalance
     omega
 
 
+
+/-- Degree balance forces a terminal-maximal fresh counted trail
+to return to its starting vertex. Otherwise the unused incoming
+degree at its finish would equal -1, contradicting its cardinality. -/
+theorem FreshCountedTrail.closed_of_balanced_maximal
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (hmax : T.MaximalAtFinish) :
+    start = finish := by
+  by_contra hne
+  have h := T.maximal_finish_imbalance hbalance hmax
+  simp [hne] at h
+  have hnonneg :
+      (0 : ℤ) ≤
+        (countedUsedInDegree m c (Finset.univ \ T.used) finish : ℤ) := by
+    positivity
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
