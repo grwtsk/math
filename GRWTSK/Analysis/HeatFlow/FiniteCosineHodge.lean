@@ -394,6 +394,37 @@ theorem exponentialTailBudget_refine
   exact (exponentialTailBudget_antitone C c U V hC hc hUV).trans
     (exponentialTailBudget_amplitude_mono C D c U hCD hc)
 
+
+/-- A source-independent integrated tail certificate. It does not assert
+that the source function satisfies the integral bound: that is a separately
+named hypothesis to be discharged for the literal theta kernel. -/
+structure ExponentialTailIntegralCertificate
+    (tailIntegral C c U : ℝ) where
+  amplitude_nonneg : 0 ≤ C
+  decay_positive : 0 < c
+  tail_nonneg : 0 ≤ tailIntegral
+  integral_le_budget :
+    tailIntegral ≤ exponentialTailBudget C c U
+
+/-- A certified integrated tail can be consumed without replacing its
+analytic premise by a pointwise or algebraic bound. -/
+theorem certified_integrated_tail_bound
+    {tailIntegral C c U : ℝ}
+    (cert : ExponentialTailIntegralCertificate tailIntegral C c U) :
+    tailIntegral ≤ C * Real.exp (-(c * U)) / c :=
+  cert.integral_le_budget
+
+/-- A certified tail remains bounded by the larger budget when its
+amplitude is increased or its cutoff is moved backwards. -/
+theorem certified_integrated_tail_refinement
+    {tailIntegral C D c U V : ℝ}
+    (cert : ExponentialTailIntegralCertificate tailIntegral C c V)
+    (hCD : C ≤ D) (hUV : U ≤ V) :
+    tailIntegral ≤ exponentialTailBudget D c U :=
+  cert.integral_le_budget.trans
+    (exponentialTailBudget_refine C D c U V
+      cert.amplitude_nonneg hCD cert.decay_positive hUV)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
