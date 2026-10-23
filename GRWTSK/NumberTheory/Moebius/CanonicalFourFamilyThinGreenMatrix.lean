@@ -3,7 +3,7 @@ Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI ChatGPT.
 Imported project and Mathlib results retain their upstream credit and licenses.
-Owner: #942. Stacked parent: draft PR #1070 at
+Owner: #942. Immutable source ancestor (merged PR #1070) at
 dc0d2d7cc6e0f18ac45fd32fcfa1f7e34b25a23a.
 Evidence: SOURCE_DRAFT / NOT_ELABORATED / NOT_KERNEL_CHECKED.
 -/
