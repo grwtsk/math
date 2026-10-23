@@ -4805,6 +4805,11 @@ modules remain outside this validation claim.
 
 ## Case KERNEL-RETRACTION-RESIDUAL-20261023 — exact algebraic source decomposition
 
+Subsequent scoped verification: **KERNEL-CHART-RESIDUAL-VALIDATION-20261023**
+below records the repaired imports, strict build, fresh kernel/axiom audit and
+source blobs. Historical NOT_RUN statuses below describe the authoring run;
+chart and retraction premises remain explicit.
+
 **Reference identity and historical boundary.** This is repository-derived 2026 mathematics with OpenAI formalization assistance, not a theorem ported from an identifiable paper. External title/byline/publication year/version/DOI/arXiv/theorem locator: **NOT APPLICABLE**. Quotient decompositions are general algebraic analogies, not assertions of provenance or historical influence.
 
 **Exact method, types and hypotheses.** For any field K, additive commutative K-modules V,Y, linear P:V→ₗ[K]Y, and supplied linear projection:V→ₗ[K]P.ker, define `GRWTSK.Logic.InformationLoss.kernelRetractionResidual P projection x = x-(projection x).1`. Source lemma `kernelRetractionResidual_preserves_observation` asserts `P residual=P x`, using that projection values belong to ker P. Source lemma `kernelRetraction_decompose` asserts `(projection x).1+residual=x`. **Only** `kernelRetractionResidual_projection_zero` additionally assumes `projection.comp P.ker.subtype=LinearMap.id` and concludes `projection residual=0`. Nothing constructs a projection from bare finite-dimensionality; no claim is made about a bounded or canonical splitting or physical Hodge/Farey/Bombieri source.
@@ -4986,6 +4991,11 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 Unresolved source-specific constructions remain exactly as preserved per obligation in JSON: prime sources/estimates, boundary geometry and vanishing, exceptional representations and automorphic transfers, KL geometric positivity and signed analytic realization, January version binding, arithmetic sequences and noncircular RH/GRH suppliers. No historical influence or owner understanding date is inferred.
 ## Case KERNEL-COMPLEMENT-CHART-20261023 — conditional coordinate construction
 
+Subsequent scoped verification: **KERNEL-CHART-RESIDUAL-VALIDATION-20261023**
+below records the repaired imports, strict build, fresh kernel/axiom audit and
+source blobs. Historical NOT_RUN statuses below describe the authoring run;
+chart and retraction premises remain explicit.
+
 **Source/reference identity.** Repository-derived 2026 source, formalization assistance OpenAI; not a formalization of any identified external paper. Published title, author/byline, year/version, DOI/arXiv and theorem locator are **NOT APPLICABLE**. Quotient complements and finite-dimensional splitting are methodological comparisons only, not historical attribution.
 
 **Exact method and hypotheses.** Over arbitrary field K with additive commutative K-modules V,Y,C, supply P:V→ₗ[K]Y and an **explicit** linear equivalence `chart:V≃ₗ[K](P.ker×C)`, plus the separate compatibility hypothesis `∀x:P.ker,(chart x.1).1=x`. `GRWTSK.Logic.InformationLoss.kernelCoordinateOfChart` defines the linear first-coordinate extraction. `kernelCoordinateOfChart_retracts` obtains its exact restriction identity on P.ker. `sharp_joint_of_kernel_chart` derives injectivity of the paired observation from the earlier conditional retraction supplier. No finite-dimensional complement existence proof is included; the chart and compatibility are hypotheses. No norms, continuity, computational canonical splitting, phase retrieval, Farey/Bombieri analytic equivalence or RH follow.
@@ -5048,3 +5058,115 @@ Unresolved source-specific constructions remain exactly as preserved per obligat
 **Immutable math identity.** Repair integrated on existing main at [`4ce149dfaf399a0533e2b9d0d667fdb54ff0bdfe`](https://github.com/grwtsk/math/commit/4ce149dfaf399a0533e2b9d0d667fdb54ff0bdfe), `GRWTSK/Logic/InformationLoss/KernelComplementExistence.lean`, new blob `657a292d682ce18a7b7d8456d86612b6bdd3d00f`. Old blob `a7b733fbfd0a95874a544cdfc3ca59b0f9dd5395` and #1134 remain historical source-only pins, not equivalent executable receipts. Downstream old pins #1135/#1136 require new source-bound replay. Full local and Mathlib import closure remains to be enumerated.
 
 **Distinct classifications.** Imported mathematics: pinned Mathlib projection API, **source-identified** only; kernel-verified bridge: **none**; source proof candidates: repaired existence and downstream dependent theorems; conditional interface: `IsCompl`; finite evidence: none; analogy: algebraic complements only; unresolved premises: actual Lean elaboration, independent fresh kernel and transitive axioms, total downstream compatibility, continuous/stable operators or arithmetic spectral identification. [Verification #1137](https://github.com/grwtsk/math/issues/1137) pins exact builds and checks on Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. **ACTUAL SOURCE_ONLY / STATIC_MATHLIB_API_INSPECTED / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Operational receipts exclusively in grwtsk/noeaaeue; retain existing stopping and no-root-promotion conditions.
+
+## Case KERNEL-CHART-RESIDUAL-VALIDATION-20261023 — checked conditional splitting and dependency repair
+
+**Source/bibliography boundary.** These are 2026 repository-derived algebraic
+constructions with OpenAI formalization assistance per source headers, not
+imports of an identified paper theorem. A separate publication title, authors,
+year/version, DOI/arXiv/URL and theorem locator are **not applicable/not supplied**;
+no historical influence is inferred. Stable source URLs are the exact repository
+commit below. Mathlib linear maps, products, submodules, finite enumeration and
+finrank equivalences are imported mathematical infrastructure, distinct from
+local bridges and from any analytic/physical interpretation.
+
+**Exact destinations, methods and retained hypotheses.**
+
+- `GRWTSK.Logic.InformationLoss.kernelCoordinateOfChart` is the first coordinate
+  of an explicitly supplied linear equivalence `chart : V ≃ₗ[K] (P.ker × C)`.
+  `GRWTSK.Logic.InformationLoss.kernelCoordinateOfChart_retracts` requires
+  `∀ x : P.ker, (chart x.1).1 = x`; that compatibility is not inferred from the
+  mere existence of an arbitrary equivalence. With the same premise,
+  `GRWTSK.Logic.InformationLoss.sharp_joint_of_kernel_chart` proves injectivity
+  of the paired P/kernel-coordinate observation.
+- `GRWTSK.Logic.InformationLoss.kernelRetractionResidual` subtracts the included
+  kernel component of a supplied linear `projection : V →ₗ[K] P.ker`.
+  `GRWTSK.Logic.InformationLoss.kernelRetractionResidual_preserves_observation`
+  preserves P using membership in its kernel;
+  `GRWTSK.Logic.InformationLoss.kernelRetractionResidual_projection_zero`
+  additionally requires `projection.comp P.ker.subtype = LinearMap.id`.
+  `GRWTSK.Logic.InformationLoss.kernelRetraction_decompose` gives the exact
+  additive decomposition. The field/module assumptions and these explicit
+  chart/left-inverse premises remain unchanged.
+- The actual sixteen-file dependency closure includes the observed-image decoder
+  criteria and their empty-source control, paired linear kernel criteria,
+  finite-cardinality capacity, range finrank equality and conditional retraction
+  sharpness. It constructs no canonical/effective/continuous complement, bounded
+  inverse, spectral realization or RH bridge. All 44 authored theorem/lemma
+  headers in the checked closure are unchanged.
+
+**Mathematical dependency issue, preserved separately.** The original unrelated
+`GRWTSK.Logic.InformationLoss.old_kernel_finrank_le_extra_finrank` claimed a
+natural-number finrank bound for arbitrary target W. This is false for an
+infinite-dimensional target: choose V=ℚ, P=0 and inject ℚ into ℕ→₀ℚ at coordinate
+zero. The paired observation is injective, but the two finranks are 1 and 0.
+An explicit Lean proof of this counterexample was freshly kernel-checked with
+`--trust=0` in the external `kernel-finrank-obstruction.lean` runner below.
+The requested modules do not use that bound; `KernelRetractionSharpness` now
+imports its actual range supplier directly, preserving every theorem statement.
+A concurrent source edit added `[FiniteDimensional K W]` to the separate bound.
+That change is preserved, **outside this validation claim**, and is not silently
+reported as checked here. No stronger statement has been substituted or admitted.
+
+**Repair pin and precise blobs.** At
+[`102bacf16ab6ef274ca6477b2eb1c66244fd40e9`](https://github.com/grwtsk/math/commit/102bacf16ab6ef274ca6477b2eb1c66244fd40e9),
+all paths below are under `GRWTSK/Logic/InformationLoss/`:
+
+| Module | Git blob |
+|---|---|
+| `AugmentedRepairCriterion` | `fa60e69e2a170c8b588227aab97d359adf04586e` |
+| `FactorizationDecoderUniqueness` | `4c568562742645c0bb1b8ae8d9ef89968a32918a` |
+| `FactorizationFiber` | `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd` |
+| `FactorizationFiberCompleteness` | `384f7ead3e902659ba1f592bb3fa2a8be9278f65` |
+| `FactorizationUniqueReconstruction` | `53916cc045ae969b09d86729f294cfd96561e6e6` |
+| `FiniteMeasurementCapacity` | `ad8423b88c8a91453932e5a16bef95139cc6f643` |
+| `FiniteRankMeasurementRange` | `ab79d157b60ae8dd33f8fff2b664e88f26772be4` |
+| `JointLinearIdentifiability` | `5d1540260dcf60e40dbee26cfd70357551bdaf86` |
+| `KernelComplementChart` | `5103226dd35ea2c1455eed89785ac4cb889e4b01` |
+| `KernelRestrictedDetection` | `242fdd63d842b1fe7b14efb1727f1f198656324e` |
+| `KernelRetractionResidual` | `a23da086c9a61578d22551febec5ca677beb8f69` |
+| `KernelRetractionSharpness` | `b0c521559de60eb9a85b038b1a2407e4ee65d6ca` |
+| `KernelSplittingSharpness` | `09b7d2b4f5beab606da1950b06cd13a816ae5eab` |
+| `LinearMeasurementNecessity` | `b7ee0761c291a235ce14208c0d45160271bf6260` |
+| `LinearObservationKernels` | `89ccada5df2c052fbc97522159eabfa4ce2aae7f` |
+| `LinearRedundantMeasurements` | `cb036375da2510a1580f578e54edeb3cf5405722` |
+
+**Actual execution.** Lean `leanprover/lean4:v4.33.0`; Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. Exit zero:
+
+```sh
+lake build GRWTSK.Logic.InformationLoss.KernelComplementChart GRWTSK.Logic.InformationLoss.KernelRetractionResidual --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/kernel-complement-audit.lean
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/kernel-finrank-obstruction.lean
+```
+
+Strict targets/dependencies: 1,266 jobs; public root: 9,307 jobs. Fresh audit:
+55 transitive GRWTSK declarations, all using only `propext`, `Classical.choice`
+and/or `Quot.sound` (or none), with no `sorryAx` or additional axioms. All 55
+owned declarations in the sixteen imported modules, including private/generated
+ones, have reconciled type inventories and are safe. Source SHA-256 snapshots
+match the repair commit. Repairs add the actual pinned imports for set ranges,
+linear-map products and subtype enumeration, scope classical kernel-membership
+decidability, remove unnecessary proof steps, use exact additive cancellation,
+and remove the unused dependency on the invalid unrestricted finrank bound.
+The chart module's source bytes themselves are unchanged.
+
+**Evidence classification and remaining bridges.** These exact algebraic
+statements are **kernel-verified local bridges at their stated scope**. Chart,
+retraction and finite-enumeration assumptions remain **conditional interfaces**;
+the infinite-target example is an exact checked obstruction, not an analytic
+estimate. Canonical complement existence, computational extraction, stability,
+topological or spectral/physical comparison remain **unresolved**. Independent
+external/CI replay is not claimed. Historical source-only comments remain as
+provenance, superseded only by this source-pinned dated evidence. No root imports
+are added, and the concurrently edited finrank bound and later complement-existence
+modules are not covered by this run.
+
+Receipts stay outside canonical mathematics in
+`/Users/local/Documents/ChatGPT/math-branch-integration-20261022/`:
+`kernel-complement-rebuild4.log`, `kernel-complement-public.log`,
+`kernel-complement-audit.lean`, `kernel-complement-audit.log`,
+`kernel-complement-validated-snapshot.json`, `kernel-finrank-obstruction.lean`,
+`kernel-finrank-obstruction3.log`, `kernel-complement-completion-result.json`.
+Earlier failures remain diagnostic records, not acceptance receipts.
