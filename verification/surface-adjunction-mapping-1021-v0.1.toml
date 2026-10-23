@@ -1,0 +1,113 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-adjunction-mapping-1021-v0.1"
+issue = 1021
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping"
+
+[source_binding]
+parent_pr = 1019
+parent_revision = "dd8f9b97281ebc678fc767923a08462b15e2d8d9"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAdjunctionMapping.lean"
+new_module_git_blob = "5d91c09af05d96f743d9613db5d86bf2db3026ea"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-adjunction-mapping.md"
+note_blob = "e5403f5cff68f90c402bbf11356a20d14d8bc1d6"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+continuous_mapping_equivalence_candidate = true
+function_space_homeomorphism_proved = false
+CW_surface_proved = false
+manifold_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping"
+authored_declaration_count = 6
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping.CompatibleContinuousPair"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping.restrictContinuousPair"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping.extendContinuousPair"
+kind = "noncomputable def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping.restrict_extendContinuousPair"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping.extend_restrictContinuousPair"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionMapping.continuousMappingEquiv"
+kind = "noncomputable def"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-continuous-map-types"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-boundary-compatibility"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "forward-restrictions"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inverse-extension"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "left-inverse"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "right-inverse"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-function-space-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homology-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
