@@ -5172,3 +5172,68 @@ Receipts stay outside canonical mathematics in
 `kernel-complement-validated-snapshot.json`, `kernel-finrank-obstruction.lean`,
 `kernel-finrank-obstruction3.log`, `kernel-complement-completion-result.json`.
 Earlier failures remain diagnostic records, not acceptance receipts.
+
+## Case COMPLEMENT-EXISTENCE-IMPORT-REPAIR-20261023 — exact pinned Mathlib supplier
+
+**Source/reference.** This is a 2026 repository-source import repair, not a formalization of a particular external paper. External paper title/authors/year/version/DOI/arXiv/theorem locator: **NOT APPLICABLE**; no historical influence inferred. The imported formal mathematical supplier `Submodule.exists_isCompl` was identified by static inspection in `leanprover-community/mathlib4` at immutable commit `db584cd6d46c92f209a44c0f1c829460d327499d`, `Mathlib/LinearAlgebra/Basis/VectorSpace.lean`, blob `da1e7bed2f4cd201356bf10ea819d8dea11dc65c`. Static source identification is **not** actual elaboration or kernel evidence.
+
+**Exact formal destination and scope.** `GRWTSK.Logic.InformationLoss.exists_old_kernel_complement` retains field K, additive commutative K-modules V,Y, K-linear P:V→ₗ[K]Y, and the exact conclusion `∃ S:Submodule K V, IsCompl P.ker S`. `exists_sharp_extra_algebraically` retains the downstream Q:V→ₗ[K]P.ker jointly injective conclusion. `GRWTSK/Logic/InformationLoss/AlgebraicKernelComplement.lean` now imports the exact supplier module `Mathlib.LinearAlgebra.Basis.VectorSpace` instead of unrelated `Mathlib.LinearAlgebra.Dimension.Finrank`; no theorem or hypothesis changed. Revised math main [`76c1150d33bb45a9f30ef7ff2baba11543166026`](https://github.com/grwtsk/math/commit/76c1150d33bb45a9f30ef7ff2baba11543166026), blob `7b082d468400ceb92637e177056ee8710478697a`. Direct repo import `KernelComplementExistence`, repaired blob `657a292d682ce18a7b7d8456d86612b6bdd3d00f`.
+
+**Separated classification.** Imported mathematics: identified pinned Mathlib `Submodule.exists_isCompl`; kernel-verified bridge: **not established for the GRWTSK leaf**; local source proof candidates: complement and sharp observation; conditional interfaces: projection construction and downstream source-specific observations; finite evidence: none; analogy: algebraic complement method only; unresolved: actual compilation, full transitive import/axiom/unsafe closure and independent kernel replay, any continuous/stable or arithmetic/spectral realization. [#1138](https://github.com/grwtsk/math/issues/1138) pins commands and exact check scope. **SOURCE_ONLY / STATIC_UPSTREAM_IDENTIFIED / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Operational receipts stay in `grwtsk/noeaaeue`; no root import.
+
+
+## Case EXECUTABLE-HUFFMAN-ROUNDTRIP-20261023 — concrete source-byte codec
+
+**Source identity.** Algorithm context: David A. Huffman, *A Method for the
+Construction of Minimum-Redundancy Codes*, Proceedings of the IRE 40(9),
+1098–1101, September 1952, DOI
+[10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898),
+[original paper scan](https://web.stanford.edu/class/ee398a/handouts/papers/Huffman%20-%20Min%20Redundancy%20Codes%20-%20IRE52.pdf).
+The least-two-weight merge is method context. The present round-trip proof is
+repository-derived; no optimality theorem or historical influence is inferred.
+The exact software source is `grwtsk/noeaaeue` commit
+`cc48911d8c65cf5cb05bf4b489ff60a1fa894f71`,
+`managers/custody/python-quine/rust/src/huffman.rs` and
+`managers/custody/python-quine/python/huffman.py`.
+
+**Exact method and declarations.** Under
+`GRWTSK.InformationTheory.Huffman`, seven leaf modules `Tree`, `Builder`,
+`Stream`, `Wire`, `Machine`, `RoundTrip` and `Examples` define byte-labelled
+binary trees, all-256-byte positive-frequency initialization, deterministic
+frequency/minimum/construction-index queue order, least-two merges, code paths,
+singleton false bits, literal root-reset decoding and MSB-first UInt8 packing.
+`Builder.fromWeights` rebuilds the decoder tree from frequencies alone.
+`decode_encode (source : List UInt8) : decode (encode source) = some source`
+has no prefix-freedom, tree, alphabet-coverage, code-inverse or source-length
+hypothesis. `encode_injective` follows. Packet data contains frequencies,
+byte count, bit count and packed bytes; neither source bytes nor a tree are
+secretly retained. `Wire.unpack_pack`, `Wire.storedBits_padding`,
+`Wire.octet_eq_rustOctet`, `Wire.octetBits_eq_rustOctetBits` and
+`Machine.run_encodeWith` establish the wire and stream bridges explicitly.
+`Examples.assignment_bytes` and `Examples.deterministic_ties` kernel-reduce
+independently recorded concrete wire vectors.
+
+**Premises and classifications.** Local concrete algorithms and their
+round-trip proofs are kernel-check candidates in this source increment;
+working-file checks passed Lean `leanprover/lean4:v4.33.0` with
+`--trust=0 -DwarningAsError=true`. Source-pinned replay and complete transitive
+axiom audit are recorded by the downstream codec binding, not inferred from
+compilation of a different source version. Standard Lean logical axioms are
+reported explicitly. There is no `sorry`, native decision oracle, custom
+axiom, or assumed `Codec.leftInverse`. Natural-number weights avoid overflow;
+Rust checked-u64 bounds, allocation and heap operational semantics are separate
+language-refinement obligations. Python tuple-heap representation and runtime
+validation correspondences are separately source-bound and tested. Finite
+wire examples do not establish the universal theorem; the structural proofs
+do. Minimum expected code length, Huffman optimality, machine-language
+refinement, hash authenticity, arbitrary Python termination, Hodge/PTS bridges,
+model quality, and unrelated finite-law acceptance are not claimed.
+
+**Exact source and evidence.** This source increment owns
+`GRWTSK/InformationTheory/Huffman/*.lean`; its immutable math commit, source
+blobs, theorem types, compiler digest, before/after source observations,
+commands, raw logs and axiom audit are pinned by the subsequent
+`grwtsk/noeaaeue` source binding. Operational artifacts remain outside math.
+Initial receipt status here is `SOURCE_PINNED_REPLAY_PENDING`; later provenance
+updates must give the actual immutable identity and receipt, rather than
+promoting this pending status by implication.
