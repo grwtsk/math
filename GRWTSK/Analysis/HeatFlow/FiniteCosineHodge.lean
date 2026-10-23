@@ -664,6 +664,41 @@ theorem thetaKernelTerm_abs_le_parts (n : ℕ) (u : ℝ) :
   exact abs_sub_le _ _ |>.trans_eq (by
     rw [abs_of_nonneg hp, abs_of_nonneg hn])
 
+
+/-- A finite theta-kernel truncation at the first N positive modes.
+This definition has no hidden infinite-series or convergence premise. -/
+def thetaKernelPartialSum (N : ℕ) (u : ℝ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 N, thetaKernelTerm n u
+
+/-- The matching nonnegative finite majorant. -/
+def thetaKernelPartialMajorant (N : ℕ) (u : ℝ) : ℝ :=
+  ∑ n ∈ Finset.Icc 1 N,
+    (thetaKernelPositivePart n u + thetaKernelNegativePart n u)
+
+/-- The finite majorant is nonnegative at every real height. -/
+theorem thetaKernelPartialMajorant_nonneg (N : ℕ) (u : ℝ) :
+    0 ≤ thetaKernelPartialMajorant N u := by
+  unfold thetaKernelPartialMajorant
+  apply Finset.sum_nonneg
+  intro n hn
+  exact add_nonneg (thetaKernelPositivePart_nonneg n u)
+    (thetaKernelNegativePart_nonneg n u)
+
+/-- Exact finite source-specific majorization. No summability theorem is
+needed for this finite statement, and no infinite tail is suppressed. -/
+theorem thetaKernelPartialSum_abs_le (N : ℕ) (u : ℝ) :
+    |thetaKernelPartialSum N u| ≤ thetaKernelPartialMajorant N u := by
+  unfold thetaKernelPartialSum thetaKernelPartialMajorant
+  calc
+    |∑ n ∈ Finset.Icc 1 N, thetaKernelTerm n u| ≤
+        ∑ n ∈ Finset.Icc 1 N, |thetaKernelTerm n u| := by
+          exact Finset.abs_sum_le_sum_abs _ _
+    _ ≤ ∑ n ∈ Finset.Icc 1 N,
+        (thetaKernelPositivePart n u + thetaKernelNegativePart n u) := by
+          apply Finset.sum_le_sum
+          intro n hn
+          exact thetaKernelTerm_abs_le_parts n u
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
