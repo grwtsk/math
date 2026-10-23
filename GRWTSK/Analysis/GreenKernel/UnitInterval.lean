@@ -104,22 +104,31 @@ theorem integral_feature_product {r s : ℝ}
     (∫ t, feature r t*feature s t ∂unitVolume)=kernel r s := by
   have hm : max r s ∈ Icc (0:ℝ) 1 :=
     ⟨hr.1.trans (le_max_left _ _), max_le hr.2 hs.2⟩
-  simp_rw [feature_product_expansion]
-  rw [integral_add
-    (((step_integrable (max r s)).sub ((step_integrable r).const_mul _)).sub
-      ((step_integrable s).const_mul _)) (integrable_const _),
-    integral_sub ((step_integrable (max r s)).sub ((step_integrable r).const_mul _))
-      ((step_integrable s).const_mul _),
-    integral_sub (step_integrable (max r s)) ((step_integrable r).const_mul _),
-    integral_const_mul, integral_const_mul, integral_step hm, integral_step hr,
-    integral_step hs]
-  simp only [integral_const]
-  simp
-  rcases le_total r s with h | h
-  · simp only [kernel, max_eq_right h, min_eq_left h]
-    ring
-  · simp only [kernel, max_eq_left h, min_eq_right h]
-    ring
+  calc
+    (∫ t, feature r t * feature s t ∂unitVolume) =
+        (∫ t, step (max r s) t -
+          (1-s)*step r t - (1-r)*step s t + (1-r)*(1-s) ∂unitVolume) := by
+      apply integral_congr_ae
+      filter_upwards [] with t
+      exact feature_product_expansion r s t
+    _ = kernel r s := by
+      rw [integral_add
+        (((step_integrable (max r s)).sub ((step_integrable r).const_mul _)).sub
+          ((step_integrable s).const_mul _)) (integrable_const _)]
+      rw [integral_sub
+        ((step_integrable (max r s)).sub ((step_integrable r).const_mul _))
+          ((step_integrable s).const_mul _)]
+      rw [integral_sub (step_integrable (max r s))
+        ((step_integrable r).const_mul _)]
+      rw [integral_const_mul, integral_const_mul, integral_step hm,
+        integral_step hr, integral_step hs]
+      simp only [integral_const]
+      simp
+      rcases le_total r s with h | h
+      · simp only [kernel, max_eq_right h, min_eq_left h]
+        ring
+      · simp only [kernel, max_eq_left h, min_eq_right h]
+        ring
 
 /-- The complete finite Gram form is an integral of the square of one signed sum. -/
 theorem finite_signed_gram {ι : Type*} (s : Finset ι) (a r : ι → ℝ)
