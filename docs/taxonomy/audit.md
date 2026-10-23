@@ -2,7 +2,7 @@
 
 ## Current source-occurrence reconciliation
 
-The current maintained tree is now enumerated by the durable Noeaaeue source-occurrence inventory at math commit `20d18e9c383bf185719919cd1c74291c82ccd08a` and root tree `12120b756cbda0fd3d6bbc79d012179eb1df6437`. It contains all 72,343 regular `.lean` files under `GRWTSK`, including `SourceCorpus`, with exact repository, commit, tree, path, mode, Git blob, module and content-digest fields. The inventory is complete for that pinned current tree; every semantic taxonomy assignment remains `UNASSESSED`, so it does not retroactively turn the historical 2026-10-19 inspection into a semantic or historical classification review.
+The current maintained tree is now enumerated by the durable Noeaaeue source-occurrence inventory at math commit `4f4fe7f62c203210ce9b02afe68ab800d243a232` and root tree `5eecb19329997ca8801b602d7a3b4647b6a0c499`. It contains all 72,343 regular `.lean` files under `GRWTSK`, including `SourceCorpus`, with exact repository, commit, tree, path, mode, Git blob, module and content-digest fields. The inventory is complete for that pinned current tree; every semantic taxonomy assignment remains `UNASSESSED`, so it does not retroactively turn the historical 2026-10-19 inspection into a semantic or historical classification review.
 
 Inspection date: 2026-10-19. Scope: repository boundary, documentation/source-root reconciliation, selected source association, issue requirements and open-PR overlap. This is not a complete source-corpus, declaration, authorship or proof audit.
 
