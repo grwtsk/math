@@ -1,0 +1,154 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mertens-dyadic-geometric-envelope-615-v0.1"
+owner_repository = "grwtsk/math"
+issue = 615
+parent_issue = 613
+parent_pr = 614
+zero_mode_issue = 611
+zero_mode_pr = 612
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_DYADIC_GEOMETRIC_TAIL_REDUCTION_SOURCE_DRAFT_POINTWISE_MERTENS_TO_GEOMETRIC_ADAPTER_OPEN_NONZERO_FREQUENCY_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.MertensDyadicGeometricEnvelope"
+build_target = "GRWTSK.NumberTheory.Moebius.MertensDyadicGeometricEnvelope"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-parity-mertens-dyadic-tail-613-20261021"
+stacked_parent_revision = "aff0d4b4cff6cfb77ff695fc894058f500b41bec"
+stacked_parent_tree = "2c06646c6b59b27a2ec33ca146af593a6c841d28"
+candidate_branch = "research/rh-mertens-dyadic-geometric-envelope-615-20261021"
+theorem_source_commit = "875c81686ae725acee68b1274ac795a8062a368c"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensDyadicGeometricEnvelope.lean"
+theorem_source_git_blob = "9f33e04573e08c17007ce76006b141d94af4e856"
+mathematical_note_commit = "21a70528539a013075f48ef3091c3e2dd5528106"
+mathematical_note_tree = "fea4d259bc76e4f718506b54ee3b67647004bbbc"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mertens-dyadic-geometric-envelope.md"
+mathematical_note_git_blob = "0e0efb9651a622d4ae74e2602bbc5d04611fa05e"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+pre_squared_scale = "dyadicMertensSquareRootEpsilonScale"
+scale_nonnegative = "dyadicMertensSquareRootEpsilonScale_nonneg"
+scale_square_identity = "dyadicMertensSquareRootEpsilonScale_sq"
+scale_square_target_bound = "dyadicMertensSquareRootEpsilonScale_sq_le_target"
+finite_geometric_bound = "finiteGeometricSum_le_invOneSub"
+generic_tail_bound = "ordinaryMertensDyadicTailMass_le_geometric"
+geometric_envelope = "DyadicOrdinaryMertensGeometricEnvelope"
+squared_tail_bound = "sq_tail_le_dyadic_target_of_geometric"
+tail_supplier_transport = "dyadicOrdinaryMertensTailSquareRootEnergy_of_geometricEnvelope"
+parity_transport = "parityMertensSquareRootEnergy_of_geometricEnvelope"
+natural_scale_transport = "naturalScaleCongruenceL1_of_geometricEnvelope_and_nonzero"
+pointwise_envelope = "OrdinaryMertensSquareRootPlusEpsilonEnvelope"
+pointwise_adapter = "PointwiseMertensToDyadicGeometricAdapter"
+proof_classification = "FINITE_GEOMETRIC_SUM_AND_CONDITIONAL_SUPPLIER_TRANSPORT"
+
+[pre_squared_scale]
+formula = "sqrt(X)*X^(delta/4)"
+square_formula = "X*X^(delta/2)"
+target_formula = "X*X^delta"
+requires_delta_positive = true
+scale_loss_hidden = false
+
+[geometric_envelope]
+formula_endpoint = "abs(M(floor(b/2^t))) <= C*sqrt(X)*X^(delta/4)*rho^t"
+formula_half_endpoint = "abs(M(floor((b/2)/2^t))) <= C*sqrt(X)*X^(delta/4)*rho^t"
+C_nonnegative = true
+rho_nonnegative = true
+rho_strictly_less_than_one = true
+inhabited = false
+ordinary_mertens_only = true
+
+[finite_geometric_control]
+formula = "sum_(t<L) rho^t <= 1/(1-rho)"
+infinite_series_used = false
+exact_finite_identity = "geom_sum_mul_neg"
+explicit_tail_constant = "C/(1-rho)"
+explicit_squared_constant = "(C/(1-rho))^2"
+
+[downstream]
+ordinary_tail_supplier = "DyadicOrdinaryMertensTailSquareRootEnergy"
+parity_zero_mode_supplier = "DyadicParityMertensSquareRootEnergy"
+nonzero_frequency_supplier = "DyadicNaturalScaleNonzeroParityFourierBudget"
+natural_scale_target = "DyadicNaturalScaleSquareModulusCongruenceL1"
+nonzero_frequency_supplier_constructed = false
+
+[pointwise_boundary]
+standard_statement = "forall epsilon>0 exists C_epsilon>=0 forall n, abs(M(n))<=C_epsilon*sqrt(n)*n^epsilon"
+standard_statement_proved = false
+adapter_constructed = false
+pointwise_constants_promoted_automatically = false
+uniform_geometric_ratio_required = true
+
+[evidence_states]
+source_draft = true
+finite_geometric_sum_reduction_source_draft = true
+dyadic_geometric_tail_reduction_source_draft = true
+geometric_to_parity_zero_mode_source_draft = true
+pointwise_mertens_envelope_proved = false
+pointwise_to_geometric_adapter_constructed = false
+nonzero_frequency_supplier_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.MertensDyadicGeometricEnvelope"
+definition_count = 3
+theorem_script_count = 9
+structure_count = 1
+authored_declaration_count = 13
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ParityMertensDyadicReconstruction.lean"
+git_blob = "e3ba490203252a0dfeefa13441d56ca4fa6622ae"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_614"
+
+[[dependencies]]
+source = "Mathlib.Algebra.Field.GeomSum"
+declaration = "geom_sum_mul_neg"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+declarations = [
+  "Real.rpow_natCast",
+  "Real.rpow_mul",
+  "Real.rpow_le_rpow_of_exponent_le"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+pointwise_mertens_not_asserted = true
+pointwise_to_geometric_not_implicit = true
+finite_tail_not_replaced_by_unproved_infinite_sum = true
+delta_quarter_visible = true
+delta_half_after_squaring_visible = true
+one_sub_rho_inverse_square_visible = true
+nonzero_frequency_supplier_not_inferred = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_pointwise_mertens_square_root_plus_epsilon_envelope = true
+construct_pointwise_to_geometric_adapter = true
+prove_nonzero_frequency_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+pointwise_mertens_bound_proved = false
+pointwise_to_geometric_adapter_proved = false
+nonzero_frequency_budget_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
