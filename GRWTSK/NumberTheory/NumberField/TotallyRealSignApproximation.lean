@@ -16,7 +16,7 @@ For a totally real number field K, an ordering of the n real embeddings and a
 rational basis give an invertible real embedding matrix. Rational coordinate
 vectors are dense in R^n; transporting this density through the embedding
 matrix proves density of the diagonal field embedding. As a finite
-weak-approximation corollary, every prescribed +/- sign orthant contains an
+weak-approximation corollary, every prescribed plus/minus sign orthant contains an
 element of K.
 
 This is exactly the finite archimedean sign-selection mechanism needed by the
@@ -162,9 +162,8 @@ def canonicalRealEmbeddingVector (x : K) :
 /-- Canonical diagonal embedding is dense. -/
 theorem canonicalRealEmbeddingVector_denseRange :
     DenseRange (canonicalRealEmbeddingVector (K := K)) := by
-  simpa [canonicalRealEmbeddingVector] using
-    realEmbeddingVector_denseRange
-      (Module.finBasis ℚ K) (canonicalEmbeddingOrder (K := K))
+  exact realEmbeddingVector_denseRange
+    (Module.finBasis ℚ K) (canonicalEmbeddingOrder (K := K))
 /-- A finite sign pattern. -/
 structure SignPattern (n : ℕ) where
   value : Fin n → ℤ
@@ -177,7 +176,7 @@ def RealizesSigns (s : SignPattern n) (z : Fin n → ℝ) : Prop :=
     (s.value i = -1 → z i < 0)
 
 /-- Every prescribed finite sign pattern occurs on a totally real field
-element. The proof approximates the +/-1 target vector within 1/2. -/
+element. The proof approximates the plus/minus-one target vector within 1/2. -/
 theorem exists_realEmbeddingVector_realizesSigns
     (b : Module.Basis (Fin n) ℚ K)
     (σ : EmbeddingOrder K n)
@@ -186,12 +185,15 @@ theorem exists_realEmbeddingVector_realizesSigns
   have hd := realEmbeddingVector_denseRange b σ
   obtain ⟨x, hx⟩ := hd.exists_dist_lt
     (fun i => (s.value i : ℝ)) (by norm_num : (0 : ℝ) < 1 / 2)
+  have hx' : dist (realEmbeddingVector σ x)
+      (fun i => (s.value i : ℝ)) < (1 / 2 : ℝ) := by
+    simpa only [dist_comm] using hx
   refine ⟨x, ?_⟩
   intro i
   have hi :
       dist (realEmbeddingVector σ x i) (s.value i : ℝ) < (1 / 2 : ℝ) :=
     (dist_le_pi_dist (realEmbeddingVector σ x)
-      (fun i => (s.value i : ℝ)) i).trans_lt hx
+      (fun i => (s.value i : ℝ)) i).trans_lt hx'
   rw [Real.dist_eq] at hi
   constructor
   · intro hs
@@ -223,8 +225,8 @@ theorem ne_zero_of_realizesSigns
   subst x
   let i : Fin n := Classical.choice (inferInstance : Nonempty (Fin n))
   rcases s.isSign i with hi | hi
-  · exact (lt_irrefl (0 : ℝ)) (by simpa [hi] using (hx i).1 hi)
-  · exact (lt_irrefl (0 : ℝ)) (by simpa [hi] using (hx i).2 hi)
+  · exact (lt_irrefl (0 : ℝ)) (by simpa [realEmbeddingVector] using (hx i).1 hi)
+  · exact (lt_irrefl (0 : ℝ)) (by simpa [realEmbeddingVector] using (hx i).2 hi)
 
 end
 
