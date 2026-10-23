@@ -131,6 +131,36 @@ theorem twoModeHeat_source_error_bound
   rw [twoModeHeat_source_error]
   exact (abs_add_le _ _).trans (add_le_add h₁ h₂)
 
+
+/-- Exact source identity: unlike the earlier supplied-identity wrapper, this
+theorem derives the coefficient readout directly from the definitions. -/
+theorem twoModeHeat_source_identity (a b s u v z : ℝ) :
+    twoModeHeat a b s u v z =
+      a * modeHeat s u * Real.cos (z * u) +
+      b * modeHeat s v * Real.cos (z * v) := by
+  unfold twoModeHeat coefficient
+  ring
+
+/-- Two independent approximation stages accumulate their finite source errors.
+No cancellation or theta-kernel identification is assumed. -/
+theorem twoModeHeat_two_stage_bound
+    (a b a' b' a'' b'' s u v z e₁ e₂ : ℝ)
+    (h₁ : |twoModeHeat a b s u v z -
+        twoModeHeat a' b' s u v z| ≤ e₁)
+    (h₂ : |twoModeHeat a' b' s u v z -
+        twoModeHeat a'' b'' s u v z| ≤ e₂) :
+    |twoModeHeat a b s u v z -
+        twoModeHeat a'' b'' s u v z| ≤ e₁ + e₂ := by
+  have h := abs_add_le
+    (twoModeHeat a b s u v z - twoModeHeat a' b' s u v z)
+    (twoModeHeat a' b' s u v z - twoModeHeat a'' b'' s u v z)
+  have heq :
+      (twoModeHeat a b s u v z - twoModeHeat a' b' s u v z) +
+        (twoModeHeat a' b' s u v z - twoModeHeat a'' b'' s u v z) =
+      twoModeHeat a b s u v z - twoModeHeat a'' b'' s u v z := by ring
+  rw [heq] at h
+  exact h.trans (add_le_add h₁ h₂)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
