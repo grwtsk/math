@@ -15,3 +15,7 @@ Private local records in `MathematicsLibrary/.catalog/` retain original absolute
 Filesystem access time is a single OS observation, not an access history and not proof of human reading. It may be stale, suppressed, restored or changed by indexing, copying and this scanner. Birth and modification dates are likewise not publication or reading dates. PDF metadata dates are publisher/tool claims, not validated chronology. Capture pre-read times and extended attributes before hashing or extraction; scanner access and move observations are separately labeled. Original date observations remain durable even if moving changes ctime. Existing history cannot be reconstructed from a lone atime. Owner-reported reading dates, annotations, download provenance and bibliographic dates must retain their evidence, precision and actor separately.
 
 The schema admits future video sources with timestamp locators and video-publication dates. No YouTube collection has been performed. Bibliographic identifiers/authors/titles are candidates until independently checked; PDF notices and bytes are retained, and no redistribution license is inferred.
+
+## Historical unpublished research
+
+The [spectral research archive](graveyard-unpublished.md) adds 240 pinned PDF versions from `grwtsk/spectral-proof-of-RH/docs/graveyard`, designated unpublished research by the owner. Repository origins are distinct from local filesystem observations; Git dates do not supply historical reading dates. Exact bytes stay outside Git.
