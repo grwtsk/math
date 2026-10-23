@@ -34,7 +34,7 @@ No approximation by `1/b^2` is used.
 
 ## Exact mass formula
 
-On the actual depth range,
+For every natural scale `j` and depth `t` with `t+2 <= 2^(j+1)`,
 
 ```text
 KernelMass(j,t)
@@ -72,7 +72,7 @@ is proved exactly equivalent to the preceding weighted-Chowla packet supplier an
 
 The remaining source is now an explicit finite harmonic-weighted family of ordinary two-point Möbius prefixes.
 
-This is the first exact repository interface genuinely close to logarithmically weighted Chowla/Elliott statements. However, no external theorem is imported here and no identification with a literature logarithmic average is made.
+The exact reciprocal shift weights permit a direct comparison with logarithmically weighted Chowla/Elliott statements. No external theorem is imported here and no identification with a base-variable logarithmic average is made.
 
 The remaining mismatch must be checked theorem-by-theorem:
 - finite versus asymptotic averaging;
@@ -89,9 +89,9 @@ The remaining mismatch must be checked theorem-by-theorem:
 - The right endpoint remains strict.
 - Reciprocal differences are exact; `1/b^2` is only a potential comparison theorem.
 - Harmonic weighting does not itself imply logarithmic Chowla.
-- Fixed-shift results remain insufficient for the growing family.
+- A fixed-shift result requires a separately proved uniform bound over the growing family.
 - Exact representation is not an arithmetic estimate.
 
 ## Next obstruction
 
-Compare the explicit harmonic-tail packet against the strongest current logarithmically weighted two-point Chowla/Elliott theorem at exact quantifier and normalization scope. Either construct a valid adapter or record the first precise mismatch as an obstruction witness.
+Compare the explicit harmonic-tail packet against version-pinned logarithmically weighted two-point Chowla/Elliott statements at exact quantifier and normalization scope. Either construct a valid adapter or record the first precise mismatch as an obstruction witness.
