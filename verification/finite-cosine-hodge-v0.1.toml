@@ -23,7 +23,13 @@ direct_imports = [
   "Mathlib.Data.Real.Basic",
   "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
   "Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv",
-  "Mathlib.Tactic",
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+  "Mathlib.Data.Nat.Cast.Order.Basic",
+  "Mathlib.Order.Interval.Finset.Nat",
+  "Mathlib.Tactic.Convert",
+  "Mathlib.Tactic.Linarith",
+  "Mathlib.Tactic.Positivity",
+  "Mathlib.Tactic.Ring",
 ]
 
 [source_binding]
