@@ -462,4 +462,64 @@ theorem FreshCountedTrail.factor_of_visits
     exact Finset.union_comm _ _
 
 
+
+/-- A residual closed trail disjoint from an original fresh trail
+can be spliced at ANY vertex with a genuine visit witness.
+The disjointness of the prefix and suffix is derived from
+the original trail's Nodup invariant. -/
+theorem FreshCountedTrail.exists_splice_of_visit
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hv : T.walk.Visits v)
+    (C : FreshCountedTrail m c v v)
+    (hTC : Disjoint T.used C.used) :
+    ∃ R : FreshCountedTrail m c a b,
+      R.used = T.used ∪ C.used := by
+  obtain ⟨P, Q, hPQ, hT⟩ := T.factor_of_visits hv
+  have hPC : Disjoint P.used C.used := by
+    apply Finset.disjoint_left.mpr
+    intro e heP heC
+    apply (Finset.disjoint_left.mp hTC) (by
+      rw [hT]
+      exact Finset.mem_union_left _ heP) heC
+  have hQC : Disjoint Q.used C.used := by
+    apply Finset.disjoint_left.mpr
+    intro e heQ heC
+    apply (Finset.disjoint_left.mp hTC) (by
+      rw [hT]
+      exact Finset.mem_union_right _ heQ) heC
+  refine ⟨FreshCountedTrail.spliceAtFactorization P Q C
+    hPQ hPC hQC, ?_⟩
+  rw [FreshCountedTrail.spliceAtFactorization_used, hT]
+  simp only [Finset.union_assoc]
+
+/-- The same interior splice strictly decreases the unused-edge
+count when the residual cycle is nonempty. -/
+theorem FreshCountedTrail.exists_strict_splice_of_visit
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hv : T.walk.Visits v)
+    (C : FreshCountedTrail m c v v)
+    (hTC : Disjoint T.used C.used)
+    (hC : 0 < C.used.card) :
+    ∃ R : FreshCountedTrail m c a b,
+      (Finset.univ \ R.used).card <
+        (Finset.univ \ T.used).card := by
+  obtain ⟨R, hR⟩ := T.exists_splice_of_visit hv C hTC
+  refine ⟨R, ?_⟩
+  rw [hR]
+  have hsubT : T.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hsubR : T.used ∪ C.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hcard := Finset.card_union_of_disjoint hTC
+  have h1 := Finset.card_sdiff_add_card_eq_card hsubT
+  have h2 := Finset.card_sdiff_add_card_eq_card hsubR
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
