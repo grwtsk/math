@@ -49,12 +49,12 @@ theorem sqrtTwoDenominator_recurrence (n : ℕ) :
 
 /-- Every square-root-of-two denominator is positive. -/
 theorem sqrtTwoDenominator_pos (n : ℕ) : 0 < sqrtTwoDenominator n :=
-  denominator_pos sqrtTwoPartialQuotient (fun _ => by norm_num) n
+  denominator_pos sqrtTwoPartialQuotient (fun _ => by norm_num [sqrtTwoPartialQuotient]) n
 
 /-- The denominator stream diverges. -/
 theorem sqrtTwoDenominator_tendsto :
     Tendsto sqrtTwoDenominator atTop atTop :=
-  denominator_tendsto sqrtTwoPartialQuotient (fun _ => by norm_num)
+  denominator_tendsto sqrtTwoPartialQuotient (fun _ => by norm_num [sqrtTwoPartialQuotient])
 
 /-- The square-root-of-two denominator stream has zero arithmetic exponent in
 the existing `log(q[n+1]) / q[n]` limsup regime. -/
@@ -67,7 +67,7 @@ theorem sqrtTwoDenominator_arithmeticExponent_zero :
   | zero => norm_num [sqrtTwoDenominator, sqrtTwoPartialQuotient, denominator]
   | succ n =>
       have hle : sqrtTwoDenominator n ≤ sqrtTwoDenominator (n + 1) :=
-        denominator_le_succ sqrtTwoPartialQuotient (fun _ => by norm_num) n
+        denominator_le_succ sqrtTwoPartialQuotient (fun _ => by norm_num [sqrtTwoPartialQuotient]) n
       have hrec := sqrtTwoDenominator_recurrence n
       have hnat : sqrtTwoDenominator (n + 2) ≤
           3 * sqrtTwoDenominator (n + 1) := by
@@ -84,7 +84,7 @@ def reciprocalStageWeight (n : ℕ) : ℝ :=
 /-- Finite logarithmic digest of an observable sampled at square-root-of-two
 denominators. -/
 def finiteLogDigest (N : ℕ) (observable : ℕ → ℝ) : ℝ :=
-  ∑ n in Finset.range N,
+  ∑ n ∈ Finset.range N,
     reciprocalStageWeight n * observable (sqrtTwoDenominator n)
 
 @[simp] theorem finiteLogDigest_zero (N : ℕ) :
@@ -101,7 +101,7 @@ theorem finiteLogDigest_add (N : ℕ) (u v : ℕ → ℝ) :
 sampled at square-root-of-two denominators. No limiting claim is built in. -/
 def finiteLogCorrelation (N : ℕ)
     (arithmeticWeight orbitObservable : ℕ → ℝ) : ℝ :=
-  ∑ n in Finset.range N,
+  ∑ n ∈ Finset.range N,
     reciprocalStageWeight n * arithmeticWeight (n + 1) *
       orbitObservable (sqrtTwoDenominator n)
 
@@ -120,7 +120,7 @@ theorem finiteLogCorrelation_add_right
 
 /-- Finite harmonic normalizer. -/
 def harmonicNormalizer (N : ℕ) : ℝ :=
-  ∑ n in Finset.range N, reciprocalStageWeight n
+  ∑ n ∈ Finset.range N, reciprocalStageWeight n
 
 /-- A normalized finite correlation. The horizon is `N+1`, so the denominator
 contains at least its positive stage-zero term. -/

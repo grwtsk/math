@@ -150,8 +150,10 @@ theorem completedSquareLower_natDegree_le :
   · apply (natDegree_sub_le _ _).trans
     apply max_le
     · simp
-    · exact (natDegree_C_mul_X_le (4 * (A : ℚ))).trans (by omega)
-  · simp
+    · exact (natDegree_C_mul_le _ _).trans (by simp)
+  · change (C (4 * (B : ℚ))).natDegree ≤ 2
+    rw [natDegree_C]
+    omega
 
 /-- The positive quadratic has exact natural degree two. -/
 theorem positiveQuadratic_natDegree : positiveQuadratic.natDegree = 2 := by
@@ -165,10 +167,11 @@ theorem positiveQuadratic_natDegree : positiveQuadratic.natDegree = 2 := by
 /-- The completed-square polynomial has exact natural degree three. -/
 theorem completedSquareCubic_natDegree : completedSquareCubic.natDegree = 3 := by
   have hlead : (C (4 : ℚ) * X ^ 3).natDegree = 3 := by
-    simpa using natDegree_C_mul_X_pow 3 (4 : ℚ) (by norm_num)
+    simp
   have hlt : completedSquareLower.natDegree <
       (C (4 : ℚ) * X ^ 3).natDegree := by
     rw [hlead]
+    have := completedSquareLower_natDegree_le
     omega
   calc
     completedSquareCubic.natDegree =
