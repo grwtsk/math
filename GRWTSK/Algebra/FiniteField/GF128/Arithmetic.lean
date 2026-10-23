@@ -29,7 +29,7 @@ theorem iter_linear (n : Nat) : XorLinear (iter n) := by
 
 theorem basis_bits (i : Nat) (hi : i < 128) (j : Nat) (hj : j < 128) :
     (basis i).getLsbD j = decide (j = i) := by
-  simp only [basis, BitVec.getLsbD_shiftLeft, BitVec.getLsbD_one]
+  simp only [basis, BitVec.getLsbD_shiftLeft]
   by_cases hji : j = i
   · subst j
     simp [hi]
@@ -65,8 +65,7 @@ theorem mulFuel_basis (n i : Nat) (a : Word) (hi : i < n) (hw : i < 128) :
     cases n with
     | zero => omega
     | succ n =>
-      simp only [basis, BitVec.shiftLeft_zero, mulFuel, BitVec.getLsbD_one,
-        Nat.zero_eq, decide_true, ite_true, BitVec.ushiftRight_eq_zero (by decide : 128 ≤ 128)]
+      simp only [basis, BitVec.shiftLeft_zero, mulFuel]
       have hz : (1 : Word) >>> (1 : Nat) = 0 := by decide
       rw [hz, mulFuel_zero_right]
       simp [iter]

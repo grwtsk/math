@@ -118,13 +118,11 @@ theorem split_low_bit (a : Word) :
   intro i hi
   by_cases hz : i = 0
   · subst i
-    cases ha : a.getLsbD 0 <;> simp [ha]
+    cases a.getLsbD 0 <;> simp
   · have hi1 : 1 ≤ i := by omega
     have his : 1 + (i - 1) = i := by omega
-    cases ha : a.getLsbD 0 <;>
-      simp [ha, BitVec.getLsbD_xor, BitVec.getLsbD_shiftLeft,
-        BitVec.getLsbD_ushiftRight, hi, Nat.not_lt.mpr hi1, his,
-        BitVec.getLsbD_one, hz]
+    cases a.getLsbD 0 <;>
+      simp [hi, Nat.not_lt.mpr hi1, his, hz]
 
 theorem linear_eq_of_basis_low (n : Nat) (f g : Word → Word)
     (hf : XorLinear f) (hg : XorLinear g)
