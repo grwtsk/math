@@ -1,0 +1,2451 @@
+schema = "grwtsk.external-interface-review/1"
+issue = 500
+status = "SOURCE_DRAFT"
+local_execution = "NOT_RUN"
+kernel_audit = "NOT_RUN"
+trust_audit = "NOT_RUN"
+
+[external]
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+source_lean = "leanprover/lean4:v4.34.1"
+source_mathlib = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+local_lean = "leanprover/lean4:v4.33.0"
+local_mathlib = "db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain_alignment = "MISMATCH_REQUIRES_LOCAL_PORT_REPLAY"
+
+[[result]]
+family = 245
+name = "pure-type-system weak-to-strong normalization"
+evidence = "EXTERNAL_FORMAL_SOURCE"
+source = "lean/OAI/Computability/TypeSystem/Normalization.lean"
+scope = "lean/docs/245.md"
+candidate = "OAI.PureTypeSystem.weak_implies_strong"
+comparator = "lean/ComparatorChallenges/TypeSystemNormalization.json"
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+local_adapter = "PENDING"
+
+[[result]]
+family = 3
+name = "quasi-RH seven-eighths zero-free half-plane"
+evidence = "EXTERNAL_FORMAL_SOURCE"
+source = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+scope = "lean/docs/003.md"
+candidate = "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re"
+candidate_type = "{s : ℂ} -> (7/8 : ℝ) < s.re -> riemannZeta s != 0"
+comparator = "lean/ComparatorChallenges/QuasiRiemannHypothesis.json"
+permitted_axioms = ["propext", "Quot.sound", "Classical.choice"]
+local_adapter = "PENDING"
+
+
+[[result]]
+family = 32
+name = "tensor scalar descent core used by the CM Hodge bridge"
+evidence = "EXTERNAL_FORMAL_SOURCE"
+source = "lean/OAI/LinearAlgebra/TensorProduct/ScalarDescent.lean"
+candidate = "OAI.RationalHodgeCM.Partial.finite_galois_scalar_descent"
+local_adapter = "GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.finiteGalois_scalarDescent"
+local_source_status = "SOURCE_DRAFT_NOT_RUN"
+
+[[result]]
+family = 32
+name = "rational Hodge conjecture for CM abelian varieties"
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026"
+selected_sections = [
+  "build/sections/02-tensors.tex",
+  "build/sections/05c-cm-types.tex",
+  "build/sections/07-consequences.tex"
+]
+local_adapter = "PENDING"
+
+[[result]]
+family = 1
+name = "Milne rationality"
+evidence = "EXTERNAL_MANUSCRIPT"
+local_adapter = "PENDING"
+
+[[result]]
+family = 43
+name = "P=W for fixed determinant"
+evidence = "EXTERNAL_MANUSCRIPT"
+local_adapter = "PENDING"
+
+[[result]]
+family = 10
+name = "Fontaine-Mazur/pro-modularity at 2"
+evidence = "EXTERNAL_MANUSCRIPT"
+local_adapter = "PENDING"
+
+[guards]
+direct_pts_to_hodge = false
+hodge_type_to_lfunction = false
+four_balance_to_algebraicity = false
+external_formal_source_to_local_theorem = false
+zero_free_to_rh = false
+
+
+[[local_target]]
+name = "finite Galois scalar descent"
+path = "GRWTSK/LinearAlgebra/TensorProduct/RationalScalarDescent.lean"
+declaration = "GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.finiteGalois_scalarDescent"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "CM four-label holomorphic count"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourBalance.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_holomorphicCount"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "degree-one pure-slope Hodge endpoint"
+path = "GRWTSK/AlgebraicGeometry/Hodge/DegreeOneSlope.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope.pureType_of_zero_or_one_slope"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "filtration-preserving projector",
+  "Frobenius commutation",
+  "weak-admissibility Hodge/Newton equality",
+  "pure slope zero or one"
+]
+
+
+[[local_target]]
+name = "witness syntax strong-normalization reflection"
+path = "GRWTSK/Logic/TypeTheory/WitnessSyntaxNormalization.lean"
+declaration = "GRWTSK.Logic.TypeTheory.WitnessSyntax.ReductionSimulation.stronglyNormalizing_of_encode"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "exact local-to-PTS encoding",
+  "one-step reduction simulation",
+  "target strong normalization from an admitted theorem"
+]
+
+[[local_target]]
+name = "witness syntax semantic invariance on finite reduction paths"
+path = "GRWTSK/Logic/TypeTheory/WitnessSyntaxNormalization.lean"
+declaration = "GRWTSK.Logic.TypeTheory.WitnessSyntax.SemanticReductionBridge.reflTransGen_semantic"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "seven-eighths symmetric nontrivial-zero band"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ExternalSevenEighthsBand.lean"
+declaration = "GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_closed_seven_eighths_band"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "SevenEighthsZeroFree premise",
+  "external 7/8 theorem exact-type/dependency review",
+  "local adapter/replay before external theorem admission"
+]
+
+
+[[local_target]]
+name = "CM four-label all-coordinate two/two sign profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourBalance.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_twoTwoSignProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd sign rows",
+  "pointwise four-label balance"
+]
+nonclaims = [
+  "no geometric Hodge-line realization",
+  "no rational descent",
+  "no algebraicity"
+]
+
+
+[[local_target]]
+name = "abstract CM line-label four-factor bidegree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.fourFactor_allCoordinates_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four-label balance",
+  "actual sign-to-weight-one embedding-line realization"
+]
+nonclaims = [
+  "no scalar descent",
+  "no algebraicity",
+  "no CM abelian variety construction"
+]
+
+[[local_target]]
+name = "complementary weak-admissibility component equality"
+path = "GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "component Hodge <= Newton inequalities",
+  "Hodge additivity",
+  "Newton additivity",
+  "total Hodge = total Newton"
+]
+
+[[local_target]]
+name = "complementary projector to pure degree-one Hodge type"
+path = "GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.pureType_of_complementary_projector"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "component equality data",
+  "identification of Hodge number with finrank F1",
+  "identification of Newton number with slope times dimension",
+  "slope zero or one"
+]
+
+
+[[external_premise]]
+id = "cm-weight-one-realization"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types", "eq:cm-label-conjugation"]
+statement_role = "prove that the locally constructed canonical eigenline decomposition with sign labels is the intended rational weight-one Hodge structure; supply archimedean polarization positivity, lattice integrality, and realize U(v)=H^1(B(v),Q)"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.EmbeddingLineRealization"
+status = "OPEN"
+nonclaims = ["local source supplies the central Galois complex-conjugation involution, canonical regular base-change field action, literal embedding-character eigenspaces, one-dimensionality/nonvanishing, Galois evaluation coordinates, scalar-conjugation transport, a complete internal direct-sum decomposition, and definitional sign type labels", "local source has not proved that the sign-labelled direct sum satisfies the semantic polarized rational Hodge-structure axioms", "local source does not construct B(v)", "local source does not prove archimedean positivity/integral Riemann realization"]
+
+[[external_premise]]
+id = "cm-four-factor-switch-algebraicity"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["thm:switch", "eq:switch-line", "eq:switch-conjugate-balance"]
+statement_role = "geometric realization of atomic four-factor switches and composition of transition tensors; local source now owns finite switch connectivity and formal composition once these suppliers are admitted"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
+status = "OPEN"
+nonclaims = ["four-label balance alone is not algebraicity", "all-conjugate (2,2) type alone is not rational descent", "generic scalar descent alone is not an algebraic-cycle theorem"]
+
+[[external_premise]]
+id = "filtered-hecke-summands"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+labels = ["lem:filtered-hecke-summands"]
+statement_role = "manuscript supplies the actual filtered-Frobenius/Hecke projector, its filtration preservation and p-phi commutation, weak-admissibility inequalities, Newton data and total equality; local source derives complement commutation, projected-range Frobenius stability and Hodge additivity"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities"
+status = "OPEN"
+
+[[external_premise]]
+id = "active-hodge-types"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+labels = ["prop:active-hodge-types", "eq:active-hodge-slope"]
+statement_role = "pure slope zero or one on the generalized Hecke summand gives pure degree-one Hodge type"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.DegreeOneSlope.pureType_of_zero_or_one_slope"
+status = "OPEN"
+
+[[external_premise]]
+id = "cm-sign-to-hodge-type"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+labels = ["eq:cm-sign-to-hodge-type"]
+statement_role = "supply the valuation identity nu_iota(sigma e)=-(3/2)v(g) and identify scalar-conjugate active Hecke-space Hodge type with the prescribed odd CM sign; local source derives the resulting slope selector arithmetic"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines"
+status = "OPEN"
+
+
+[[local_target]]
+name = "filtered idempotent F1 splitting"
+path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
+declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredIdempotent.finrank_left_add_right"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "idempotent linear projector",
+  "projector preserves selected filtration subspace F1"
+]
+nonclaims = [
+  "no Frobenius structure",
+  "no weak admissibility",
+  "no Newton number theorem"
+]
+
+[[local_target]]
+name = "component Hodge/Newton equality with local Hodge additivity"
+path = "GRWTSK/AlgebraicGeometry/Hodge/ComplementaryWeakAdmissibility.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities_of_filteredProjector"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "component Hodge <= Newton inequalities",
+  "Newton additivity",
+  "total Hodge = total Newton"
+]
+
+
+[[local_target]]
+name = "arbitrary Galois scalar descent"
+path = "GRWTSK/LinearAlgebra/TensorProduct/GaloisScalarDescent.lean"
+declaration = "GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.galoisScalarDescent"
+status = "SOURCE_DRAFT_NOT_RUN"
+external_source = "OAI.RationalHodgeCM.Partial.galois_scalar_descent"
+toolchain_blocker = "OpenAI source is Lean 4.34.1/mathlib d13f...; local is Lean 4.33.0/mathlib db58..."
+
+[[local_target]]
+name = "algebraic-number ambient complex trace descent"
+path = "GRWTSK/LinearAlgebra/TensorProduct/GaloisScalarDescent.lean"
+declaration = "GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.traceDescent"
+status = "SOURCE_DRAFT_NOT_RUN"
+external_source = "OAI.RationalHodgeCM.Partial.trace_descent"
+nonclaims = [
+  "does not prove that the ambient subspace is a Hodge subspace",
+  "does not prove algebraicity"
+]
+
+[[local_target]]
+name = "projector complement Frobenius commutation"
+path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
+declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredFrobeniusProjector.q_commutes"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "projected-range Frobenius stability"
+path = "GRWTSK/LinearAlgebra/FilteredProjectorSplit.lean"
+declaration = "GRWTSK.LinearAlgebra.FilteredProjectorSplit.FilteredFrobeniusProjector.phi_mem_range_p"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "one-dimensional linear CM line four-factor bidegree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingLines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingLines.linearFourFactor_allCoordinates_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual one-dimensional linear subspace selected at every coordinate",
+  "sign-compatible weight-one type assignment"
+]
+nonclaims = [
+  "no proof that the subspace equals the CM-field embedding eigenspace U(v)_lambda",
+  "no proof that the line family is a complete direct-sum decomposition",
+  "no CM abelian variety construction",
+  "no scalar descent",
+  "no algebraicity"
+]
+
+
+[[local_target]]
+name = "CM central-involution sign profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisIndex.cmFourBalance_twoTwoSignProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["group with selected central involution c", "odd sign rows", "four-label balance"]
+
+[[local_target]]
+name = "character-eigenline CM four-factor bidegree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.characterEigenlines_fourFactor_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["commutative algebra actions", "one-dimensional character eigenspaces", "sign-compatible type labels", "four-label balance"]
+nonclaims = ["no complete eigenspace decomposition required by this theorem", "no scalar-conjugation transport", "no H^1 realization", "no algebraicity"]
+
+[[local_target]]
+name = "complete CM character-eigenspace decomposition dimension"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.CharacterEigenspaceDecomposition.finrank_eq_card"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "Galois CM eigenspace dimension equals field degree"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingEigenspaces.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingEigenspaces.CharacterEigenspaceDecomposition.finrank_eq_fieldDegree"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["finite Galois extension E/k", "complete internal one-dimensional eigenspace decomposition indexed by Gal(E/k)"]
+
+
+[[local_target]]
+name = "Galois CM number-field central involution"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMNumberFieldIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex.centralInvolution"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["NumberField E", "IsCMField E", "IsGalois Q E"]
+source_dependency = "Mathlib.NumberTheory.NumberField.CMField"
+nonclaims = ["no CM Hodge structure U(v)", "no embedding eigenspace decomposition", "no H^1 realization"]
+
+
+[[local_target]]
+name = "Galois CM specialized odd-sign profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMNumberFieldIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMNumberFieldIndex.fourBalance_twoTwoSignProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["NumberField E", "IsCMField E", "IsGalois Q E", "four odd sign rows", "four-label balance"]
+
+
+[[local_target]]
+name = "canonical regular base-change field action"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRegularBaseChange.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange.regularAction"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = ["field extension E/k", "coefficient field C over k"]
+
+[[local_target]]
+name = "canonical embedding-character eigenspace"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRegularBaseChange.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRegularBaseChange.embeddingEigenspace"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = ["no one-dimensionality theorem", "no completeness theorem", "no Hodge type assignment", "no geometric H^1 realization"]
+
+
+[[local_target]]
+name = "canonical Galois embedding eigenspace one-dimensionality"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.embeddingEigenspace_finrank_one_aut"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite Galois extension E/k"
+]
+nonclaims = [
+  "no Hodge type assignment",
+  "no CM abelian variety realization"
+]
+
+[[local_target]]
+name = "canonical Galois embedding eigenspace nonvanishing"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.embeddingEigenspace_nonzero_aut"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "canonical Galois character-eigenline realization"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalEigenlineRealization"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-compatible weight-one Hodge type assignment"
+]
+nonclaims = [
+  "one-dimensionality and nonvanishing are local",
+  "Hodge type assignment remains a separate input",
+  "no B(v) construction or algebraicity"
+]
+
+
+[[local_target]]
+name = "canonical sign-labelled Galois eigenline profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalTypedEigenlineRealization"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite Galois extension E/k",
+  "odd sign row"
+]
+nonclaims = [
+  "type labels are formal data, not yet a proved rational Hodge decomposition",
+  "no polarization positivity",
+  "no abelian variety realization"
+]
+
+[[local_target]]
+name = "canonical sign-labelled four-factor two/two profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalTypedEigenlines_fourFactor_bidegree_two_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "formal Hodge-type labels only",
+  "no four-factor algebraicity"
+]
+
+[[local_target]]
+name = "CM trace pairing alternating and nondegenerate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.tracePairing_alternating_nondegenerate"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "nonzero xi with complexConj(xi) = -xi"
+]
+nonclaims = [
+  "no archimedean sign/positivity theorem",
+  "no integral lattice theorem",
+  "no Riemann criterion or B(v) construction"
+]
+
+[[external_premise]]
+id = "cm-polarization-positivity-riemann"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types"]
+statement_role = "classical Riemann existence theorem producing the complex torus / abelian variety and identifying the resulting weight-one Hodge structure with H^1(B(v),Q)"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm"
+status = "OPEN"
+nonclaims = [
+  "alternation, nondegeneracy, coordinate positivity, canonical archimedean sign selection, complexified trace comparison, integral lattice scaling, J-invariance and strict Riemann-form positivity are local source targets",
+  "only the actual complex-torus / abelian-variety existence theorem and H^1 realization remain external"
+]
+
+
+[[local_target]]
+name = "anti-invariant trace-polarization constructor"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.tracePolarizationDataOfNonfixed"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one CM-field element x not fixed by canonical complex conjugation"
+]
+nonclaims = [
+  "does not enforce the prescribed archimedean sign profile",
+  "does not prove positivity or Riemann realization"
+]
+
+
+[[local_target]]
+name = "canonical complete Galois eigenspace decomposition"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalEigenspaces_isInternal"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite Galois extension E/k"
+]
+nonclaims = [
+  "no semantic Hodge-structure theorem",
+  "no polarization positivity"
+]
+
+[[local_target]]
+name = "canonical typed complete Galois eigenspace decomposition"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.canonicalTypedEigenspaceDecomposition"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd sign row on Gal(E/k)"
+]
+nonclaims = [
+  "type labels are definitional profile data",
+  "no proof yet that the labelled decomposition is a rational Hodge structure"
+]
+
+[[local_target]]
+name = "archimedean sign-profile coordinate positivity"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.energy_pos"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled xi with 0 < -v(sigma)*Im(sigma(xi)) for every Galois embedding label"
+]
+nonclaims = [
+  "this theorem consumes sign-controlled xi; its canonical constructor is a separate local target in CMRealRescaling",
+  "does not identify the coordinate energy with i psi_xi(u,conj u)",
+  "does not apply the Riemann criterion"
+]
+
+
+[[local_target]]
+name = "CM conjugation nonfixed witness"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.exists_nonfixed"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "CM number field"
+]
+nonclaims = [
+  "no prescribed archimedean sign profile"
+]
+
+[[local_target]]
+name = "unconditional anti-invariant trace-polarization datum"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMTracePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.someTracePolarizationData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "anti-invariance/nonzero are local",
+  "no archimedean positivity profile",
+  "no Riemann realization"
+]
+
+[[local_target]]
+name = "sign-controlled combined trace and coordinate positivity certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.tracePairing_alternating_nondegenerate"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one xi satisfying anti-invariance and the prescribed simultaneous archimedean sign inequalities"
+]
+nonclaims = [
+  "coordinate-energy positivity is a separate local theorem",
+  "no equality yet between coordinate energy and complexified i psi_xi",
+  "no integral lattice/Riemann criterion"
+]
+
+
+[[local_target]]
+name = "coordinate Weil form equals positive energy"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.coordinateWeilForm_eq_energy"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "coordinate Weil form is not yet proved equal to the base-changed rational trace pairing under Hodge conjugation",
+  "integral lattice scaling is now a separate local target; no Riemann criterion"
+]
+
+
+[[local_target]]
+name = "totally real diagonal embedding dense range"
+path = "GRWTSK/NumberTheory/NumberField/TotallyRealSignApproximation.lean"
+declaration = "GRWTSK.NumberTheory.TotallyRealSignApproximation.canonicalRealEmbeddingVector_denseRange"
+status = "SOURCE_DRAFT_NOT_RUN"
+source_pattern = "openai/math lean/OAI/NumberTheory/DukePrimeDegree/Geometry/EmbeddingMatrix.lean"
+nonclaims = [
+  "no CM fixed-field identification",
+  "no Hodge theory"
+]
+
+[[local_target]]
+name = "totally real finite sign approximation"
+path = "GRWTSK/NumberTheory/NumberField/TotallyRealSignApproximation.lean"
+declaration = "GRWTSK.NumberTheory.TotallyRealSignApproximation.exists_canonicalRealEmbeddingVector_realizesSigns"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "totally real number field"
+]
+nonclaims = [
+  "no identification with conjugate-pair labels of a CM extension"
+]
+
+[[local_target]]
+name = "even CM real-rescaling sign row"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisIndex.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisIndex.rescalingSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "anti-invariant seed imaginary sign row"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMTracePolarization.TracePolarizationData.imagSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "fixed rescaling sign condition from realized even row"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.fixedRescalingSignCondition_of_realizesRequiredSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "sign-controlled xi from fixed rescaling"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.signControlledXiOfFixedRescaling"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "CM sign-controlled xi from totally-real rescaling interface"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling.nonempty_signControlledXi"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "RealRescalingInterface identifying a totally real fixed-field model with representatives of CM conjugate Galois pairs"
+]
+nonclaims = [
+  "generic interface theorem; canonical E-plus construction is recorded separately",
+  "integral lattice scaling is now a separate local target; no Riemann criterion"
+]
+
+[[local_target]]
+name = "canonical maximal-real-subfield rescaling interface"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling.canonicalMaximalRealRescalingInterface"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "Mathlib maximal real subfield and quadratic CM conjugation",
+  "Galois extension of real embeddings to E"
+]
+nonclaims = [
+  "source-level canonical E-plus instantiation only; no compile or kernel receipt",
+  "no complexified trace-pairing identification",
+  "no integral lattice, Riemann criterion, or four-factor algebraicity"
+]
+
+[[local_target]]
+name = "canonical archimedean sign-controlled xi existence"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRealRescaling.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRealRescaling.nonempty_signControlledXi_canonical"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "odd CM sign row v"
+]
+nonclaims = [
+  "uses the local anti-invariant seed and finite totally-real sign approximation",
+  "no equality yet between coordinate energy and the complexified rational trace pairing",
+  "no integral lattice, Riemann criterion, or four-factor algebraicity theorem"
+]
+
+
+[[local_target]]
+name = "complexified CM trace pairing on embedding coordinates"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.complexifiedTracePairing_fieldCoordinates"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Galois CM number field E",
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "identifies the coordinate bilinear form with the rational trace pairing only after explicit base change",
+  "integral lattice scaling is now a separate local target; no Riemann criterion"
+]
+
+[[local_target]]
+name = "Hodge Weil-real-conjugation trace pairing equals positive energy"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMArchimedeanPositivity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMArchimedeanPositivity.SignControlledXi.complexifiedTracePairing_weil_realConj_eq_energy"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi",
+  "coordinate weight-one real structure",
+  "sign-defined Weil operator"
+]
+nonclaims = [
+  "source-level coordinate/base-change identification only; no compile or kernel receipt",
+  "no integral lattice, Riemann criterion, or four-factor algebraicity"
+]
+
+
+[[local_target]]
+name = "full integer-coordinate CM lattice"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMLatticePolarization.latticeVector_injective"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite-dimensional rational CM field E"
+]
+nonclaims = [
+  "integer-coordinate presentation in a fixed rational basis",
+  "no topological/discreteness theorem beyond this algebraic full-rank presentation",
+  "no Riemann criterion"
+]
+
+[[local_target]]
+name = "denominator-cleared integral CM trace pairing"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMLatticePolarization.scaled_tracePairing_lattice_integral"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi",
+  "rational trace-pairing matrix"
+]
+nonclaims = [
+  "clears all matrix denominators simultaneously with one positive integer scale",
+  "no Riemann bilinear criterion or abelian-variety realization"
+]
+
+[[local_target]]
+name = "canonical integral lattice polarization certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMLatticePolarization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMLatticePolarization.canonicalIntegralLatticePolarization"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "records injective integer coordinates, nonzero scale, integral alternating pairing and exact scaled-pairing identity",
+  "no Riemann criterion",
+  "no four-factor algebraicity theorem"
+]
+
+
+[[local_target]]
+name = "global skew and alternating complexified CM trace form"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm.complexifiedTracePairing_skew"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "source-level coordinate theorem only; no compile or kernel receipt",
+  "no complex-torus existence theorem"
+]
+
+[[local_target]]
+name = "CM Riemann-form J-invariance and strict positivity"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm.riemannForm_weil_self_pos"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi",
+  "real fixed-locus coordinate vector"
+]
+nonclaims = [
+  "does not construct a quotient complex torus",
+  "does not prove projectivity or abelian-variety realization"
+]
+
+[[local_target]]
+name = "canonical pre-Riemann bilinear certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMRiemannForm.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMRiemannForm.canonicalPreRiemannBilinearData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-controlled anti-invariant xi"
+]
+nonclaims = [
+  "packages real structure, J^2=-1, global alternation, J-invariance, positivity, injective lattice and integral scaled pairing",
+  "Mathlib currently supplies no downstream Riemann existence theorem",
+  "no four-factor algebraicity theorem"
+]
+
+
+[[local_target]]
+name = "conditional CM weight-one Riemann realization wrapper"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.realizeWeightOneCM"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "RiemannExistenceSupplier"
+]
+nonclaims = [
+  "formal wrapper only",
+  "does not prove or construct the external Riemann existence supplier",
+  "does not prove four-factor algebraicity"
+]
+
+[[local_target]]
+name = "canonical sign-controlled CM weight-one realization conditional on supplier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.realizeWeightOneCM_canonical"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "RiemannExistenceSupplier",
+  "canonical local sign-controlled xi"
+]
+nonclaims = [
+  "conditional composition only",
+  "no local complex-torus or abelian-variety construction"
+]
+
+
+[[local_target]]
+name = "balanced four-factor all-conjugate numerical type certificate"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.allConjugatesType22_of_fourBalance"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four odd sign rows",
+  "pointwise four-label balance"
+]
+nonclaims = [
+  "numerical Hodge-type certificate only",
+  "does not imply scalar-conjugate stability, rational descent, or algebraicity"
+]
+
+[[local_target]]
+name = "four-factor rational descent from explicit conjugate-stable tensor data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorTensorDescentData.rational_descent"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual algebraic-number tensor",
+  "complex Hodge subspace P",
+  "membership of every scalar conjugate in P"
+]
+source_dependency = "GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.traceDescent"
+nonclaims = [
+  "does not construct the four-factor tensor from the switch theorem",
+  "does not prove algebraic-cycle realization"
+]
+
+[[local_target]]
+name = "conditional four-factor algebraic-cycle realization"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorAlgebraicity.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.realizeAlgebraicCycle_of_descentData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "FourFactorAlgebraicitySupplier",
+  "explicit conjugate-stable four-factor tensor data"
+]
+nonclaims = [
+  "conditional wrapper only",
+  "no local constructor of the manuscript switch/algebraicity supplier"
+]
+
+
+[[local_target]]
+name = "four-factor switch mismatch counts are balanced"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.mismatch_card_eq_of_sum_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite row index type",
+  "two +/-1-valued columns",
+  "equal column sums"
+]
+nonclaims = [
+  "one-column combinatorial lemma only",
+  "does not construct a full multi-column switch sequence",
+  "no Hodge, tensor, descent, or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "four-factor switch mismatch pairing"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.mismatchPairing"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "equal-sum +/-1 columns"
+]
+nonclaims = [
+  "pairs the two mismatch orientations needed for atomic two-row switches",
+  "does not prove the geometric four-factor switch theorem"
+]
+
+[[local_target]]
+name = "atomic two-row switch preserves sum and corrects paired mismatches"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchPair_corrects_mismatch_pair"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "finite column operation only",
+  "no complete switch chain yet",
+  "no algebraic-cycle realization"
+]
+
+
+[[local_target]]
+name = "conjugate-paired two-row switch preserves odd sign matrices"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchConjugatePair_odd"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "involutive column conjugation",
+  "selected column distinct from its conjugate",
+  "odd current sign matrix"
+]
+nonclaims = [
+  "one conjugate-pair operation only",
+  "does not construct the full finite switch sequence",
+  "no Hodge or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "conjugate-paired switch preserves all column sums"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.sum_switchConjugatePair"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "conjugate-paired switch corrects selected and conjugate mismatches"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchConjugatePair_corrects_conjugate"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd current and target sign matrices",
+  "paired opposite mismatch at the selected column"
+]
+nonclaims = [
+  "atomic paired correction only",
+  "full multi-column termination/connectivity remains open"
+]
+
+
+[[local_target]]
+name = "paired switch strictly decreases selected-column mismatch measure"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.columnMismatchCount_switchConjugatePair_lt"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "paired opposite mismatch at selected column"
+]
+nonclaims = [
+  "well-founded measure only",
+  "does not yet package recursive iteration or a complete finite switch sequence"
+]
+
+[[local_target]]
+name = "paired switch preserves mismatch count on unrelated columns"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.columnMismatchCount_switchConjugatePair_eq_of_ne"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "outer induction invariant only",
+  "no Hodge or algebraicity claim"
+]
+
+
+[[local_target]]
+name = "finite paired-switch correction of one conjugate column pair"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.exists_pairedColumnReach_corrects"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite row index type",
+  "involutive column conjugation",
+  "odd +/-1-valued current and target matrices",
+  "selected column distinct from its conjugate",
+  "equal selected-column sums"
+]
+nonclaims = [
+  "normalizes one conjugate column pair by a finite reachability chain",
+  "preserves oddness, sign-valuedness and all column sums",
+  "does not yet iterate over all conjugate-pair representatives",
+  "no Hodge or algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "global finite connectivity by conjugate-paired switches"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.pairedMatrixReach_of_equal_column_sums"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite row and column index types",
+  "involutive column conjugation",
+  "odd +/-1-valued source and target matrices",
+  "equality of every column sum"
+]
+nonclaims = [
+  "finite combinatorial connectivity only",
+  "does not construct Hodge tensors",
+  "does not prove scalar-conjugate stability or algebraicity"
+]
+
+[[local_target]]
+name = "global switch mismatch measure decreases"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.matrixMismatchCount_switchConjugatePair_lt"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "well-founded combinatorial measure only",
+  "no geometric consequence"
+]
+
+
+[[local_target]]
+name = "global algebraic transition from finite switch reachability"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfReach"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "IdentityTransitionSupplier",
+  "AtomicSwitchTransitionSupplier",
+  "TransitionCompositionSupplier",
+  "finite PairedMatrixReach chain"
+]
+nonclaims = [
+  "formal composition theorem only",
+  "does not construct any geometric supplier"
+]
+
+[[local_target]]
+name = "conditional transition from equal column sums"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfEqualColumnSums"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source and target matrices with equal column sums",
+  "SwitchGeometrySupplier"
+]
+nonclaims = [
+  "uses local finite switch connectivity",
+  "all geometric algebraicity input remains external"
+]
+
+
+[[local_target]]
+name = "recover endpoint algebraicity from nonzero scalar multiple"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.NonzeroScalarCompositionData.endpoint_mem"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "submodule of algebraic classes",
+  "produced class lies in that submodule",
+  "produced class equals a nonzero scalar multiple of endpoint"
+]
+nonclaims = [
+  "pure linear algebra only",
+  "does not prove the transition-composition formula",
+  "does not prove the manuscript q_i factors are nonzero"
+]
+
+[[external_premise]]
+id = "cm-transition-composition-formula"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "pullback/cup-product/pushforward produces a class equal to sign times product(q_i) times the endpoint transition tensor"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.NonzeroScalarCompositionData.endpoint_mem"
+status = "OPEN"
+nonclaims = [
+  "local source only handles recovery from a nonzero scalar multiple"
+]
+
+[[external_premise]]
+id = "cm-transition-pairing-nonvanishing"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "each middle-factor pairing q_i is nonzero via conjugate embedding-line identification and Hodge-Riemann positivity"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.NonzeroScalarCompositionData.endpoint_mem"
+status = "OPEN"
+nonclaims = [
+  "no local Hodge-Riemann ample-class pairing theorem at this geometric scope"
+]
+
+
+[[local_target]]
+name = "positive conjugate middle pairing is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.PositiveConjugatePairing.pairing_scaled_conjugate_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "positive energy on nonzero vectors",
+  "pairing with conjugate partner equals complexified positive energy",
+  "right-linearity of the pairing",
+  "nonzero scalar relating gamma to the conjugate partner"
+]
+nonclaims = [
+  "abstract positivity implication only",
+  "does not identify the manuscript ample-class pairing with this package"
+]
+
+[[local_target]]
+name = "finite product of middle pairing scalars is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.product_middlePairing_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "pointwise q_i nonvanishing"
+]
+nonclaims = [
+  "pure finite product algebra"
+]
+
+[[external_premise]]
+id = "cm-middle-pairing-hodge-riemann-identification"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "identify each middle integral pairing q_i with a positive conjugate-pairing value for the selected ample class and identify gamma_i as a nonzero scalar multiple of the conjugate partner of beta_i"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.MiddlePairingNonvanishingData.pairing_ne_zero"
+status = "OPEN"
+nonclaims = [
+  "local CM trace-polarization positivity is not identified here with the geometric ample-class Hodge-Riemann pairing"
+]
+
+
+[[local_target]]
+name = "transported canonical CM eigenline vectors differ by nonzero scalar"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingTransport.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport.exists_ne_zero_smul_scalarConjugate_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite Galois field extension",
+  "nonzero source vector in one canonical embedding eigenspace",
+  "nonzero target vector in the transported embedding eigenspace"
+]
+nonclaims = [
+  "canonical tensor-model statement only",
+  "does not identify these vectors with actual H^1(B(v)) embedding lines"
+]
+
+[[local_target]]
+name = "geometric-layer canonical transported middle-line scale"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CanonicalTransportedMiddleLineData.exists_scale"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "repackages the local tensor-model proportionality",
+  "no ample-class pairing or cohomological comparison"
+]
+
+[[external_premise]]
+id = "cm-cohomology-line-to-canonical-tensor-model"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types", "eq:cm-label-conjugation", "eq:transition-composition"]
+statement_role = "supply an E-linear cohomology-to-canonical tensor-model comparison carrying the actual middle embedding lines to the canonical eigenspaces and intertwining scalar conjugation"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CanonicalTransportedMiddleLineData.exists_scale"
+status = "OPEN"
+nonclaims = [
+  "local source proves the one-dimensional tensor-model proportionality but not the H^1 comparison"
+]
+
+
+[[local_target]]
+name = "cohomology-to-canonical transported-line proportionality adapter"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CohomologyCanonicalLineComparison.exists_scale"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "E-linear equivalence from actual cohomological realization to canonical tensor model",
+  "compatibility of actual scalar conjugation with canonical scalarConjugate",
+  "source and target actual vectors map into the corresponding canonical embedding eigenspaces"
+]
+nonclaims = [
+  "formal comparison adapter only",
+  "does not construct the H^1 comparison equivalence",
+  "does not identify the ample-class pairing"
+]
+
+
+[[local_target]]
+name = "ample-class middle pairing comparison implies q_i nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassMiddlePairingComparison.q_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "positive conjugate pairing package",
+  "nonzero beta",
+  "nonzero scalar proportionality of gamma to conjugate partner",
+  "identification of geometric q_i with the abstract pairing"
+]
+nonclaims = [
+  "formal implication only",
+  "does not construct the ample-class Hodge-Riemann comparison"
+]
+
+[[local_target]]
+name = "signed transition-composition scalar is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionCompositionScalar_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "pointwise nonvanishing of all middle pairing scalars q_i"
+]
+nonclaims = [
+  "pure field algebra after q_i nonvanishing"
+]
+
+
+[[local_target]]
+name = "ample-class middle pairing comparison implies q_i nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassMiddlePairingComparison.q_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "positive conjugate pairing package",
+  "nonzero beta",
+  "nonzero scalar proportionality of gamma to conjugate partner",
+  "identification of geometric q_i with the abstract pairing"
+]
+nonclaims = [
+  "formal implication only",
+  "does not construct the ample-class Hodge-Riemann comparison"
+]
+
+[[local_target]]
+name = "signed transition-composition scalar is nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionCompositionScalar_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "pointwise nonvanishing of all middle pairing scalars q_i"
+]
+nonclaims = [
+  "pure field algebra after q_i nonvanishing"
+]
+
+
+[[local_target]]
+name = "exact Hodge-Riemann supplier implies middle pairing nonzero"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassHodgeRiemannSupplier.q_ne_zero"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "geometric cup/integration pairing data",
+  "nonzero beta",
+  "nonzero scalar relation gamma = c * conjugate(beta)",
+  "Hodge-Riemann positive energy identifying pairing(beta, conjugate(beta))"
+]
+nonclaims = [
+  "no algebraicity conclusion in the supplier",
+  "does not construct an ample class or prove Hodge-Riemann"
+]
+
+[[external_premise]]
+id = "cm-ample-class-hodge-riemann-middle-pairing"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:transition-composition"]
+statement_role = "for each middle factor, supply positive Hodge-Riemann energy identifying the ample-class pairing with the conjugate-partner pairing"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AmpleClassHodgeRiemannSupplier.q_ne_zero"
+status = "OPEN"
+nonclaims = [
+  "no compatibility between the ample class and E is assumed",
+  "local source consumes positivity but does not prove the geometric theorem"
+]
+
+
+[[local_target]]
+name = "atomic switch changes only two rows"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.switchConjugatePair_changedRow_subset"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one conjugate-paired two-row switch"
+]
+nonclaims = [
+  "support decomposition only",
+  "no two-factor algebraicity theorem",
+  "no four-factor algebraicity theorem"
+]
+
+[[local_target]]
+name = "unchanged atomic-switch rows are literally equal"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.unchangedRow_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "combinatorial equality only",
+  "does not construct the manuscript identity tensor"
+]
+
+
+[[local_target]]
+name = "whole-list identity transition from two-factor row identities"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.identityTransitionSupplierOfTwoFactor"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "TwoFactorIdentitySupplier",
+  "IdentityTensorAssemblySupplier"
+]
+nonclaims = [
+  "formal assembly only",
+  "does not construct diagonal cycle classes",
+  "does not use or prove the four-factor switch theorem"
+]
+
+[[external_premise]]
+id = "cm-two-factor-identity-line-algebraicity"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["lem:weight-one-maps", "prop:switch-reduction"]
+statement_role = "for each unchanged row, realize the degree-one identity/diagonal correspondence as a nonzero algebraic two-factor tensor U(v)_1 tensor U(v)_c"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TwoFactorIdentitySupplier"
+status = "OPEN"
+nonclaims = [
+  "separate from the independent four-factor switch theorem"
+]
+
+[[external_premise]]
+id = "cm-two-factor-identity-slot-assembly"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["prop:switch-reduction"]
+statement_role = "pull unchanged-row two-factor classes to their old/new slots and multiply them into the whole-list identity transition"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.IdentityTensorAssemblySupplier"
+status = "OPEN"
+nonclaims = [
+  "routine geometric assembly only",
+  "no four-factor algebraicity content"
+]
+
+
+[[local_target]]
+name = "atomic transition from four-factor core and unchanged-row identities"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.atomicSwitchTransitionSupplierOfCore"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "FourFactorSwitchCoreSupplier",
+  "TwoFactorIdentitySupplier",
+  "AtomicTransitionAssemblySupplier"
+]
+nonclaims = [
+  "formal supplier composition only",
+  "does not prove the four-factor core algebraic",
+  "does not construct the unchanged-row diagonal classes"
+]
+
+[[external_premise]]
+id = "cm-four-factor-switched-core-algebraicity"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["thm:switch", "eq:switch-line"]
+statement_role = "for the two rows changed by one atomic switch, supply a nonzero algebraic four-factor core class"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
+status = "OPEN"
+nonclaims = [
+  "independent of unchanged-row two-factor identity classes",
+  "not implied by balance, all-conjugate (2,2), descent, or switch combinatorics"
+]
+
+[[external_premise]]
+id = "cm-atomic-transition-slot-assembly"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["prop:switch-reduction"]
+statement_role = "pull one four-factor switched core and all unchanged-row two-factor identity classes to their slots and multiply them into the full atomic transition"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicTransitionAssemblySupplier"
+status = "OPEN"
+nonclaims = [
+  "routine geometric assembly only",
+  "does not supply four-factor algebraicity"
+]
+
+
+[[local_target]]
+name = "switched core uses repository-wide four-factor algebraicity supplier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.fourFactorSwitchCoreSupplierOfAlgebraicity"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "SwitchCoreRationalWitnessAdapter",
+  "AlgebraicCycleToSwitchCoreAdapter",
+  "CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier"
+]
+nonclaims = [
+  "no second independent algebraicity theorem",
+  "identification and packaging adapters carry no algebraicity content"
+]
+
+
+[[local_target]]
+name = "atomic switch canonically supplies four-factor balance"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchCombinatorics.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchCombinatorics.atomicSwitch_fourBalance"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source matrix",
+  "fixed-point-free selected conjugate coordinate",
+  "opposite mismatch pair defining one atomic switch"
+]
+nonclaims = [
+  "combinatorial four-label balance only",
+  "does not construct a tensor, rational descent datum, or algebraic cycle"
+]
+
+
+[[local_target]]
+name = "canonical atomic switch all-conjugate (2,2) profile"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.canonicalAtomicSwitchFourFactorProfile"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source matrix",
+  "fixed-point-free selected conjugate coordinate",
+  "opposite mismatch pair defining one atomic switch"
+]
+nonclaims = [
+  "contains only the four canonical sign rows, FourBalance, and all-conjugate (2,2) certificate",
+  "does not construct tensor descent data, rational witness, or algebraic cycle"
+]
+
+
+[[local_target]]
+name = "atomic tensor stability data yields rational four-factor witness"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchTensorData.toRationalPackage"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "canonical atomic switch four-factor profile",
+  "actual complex Hodge subspace",
+  "actual algebraic-number tensor",
+  "membership of every scalar conjugate in the Hodge subspace"
+]
+nonclaims = [
+  "all-conjugate (2,2) is supplied locally by the canonical atomic profile",
+  "rational descent is supplied locally by trace descent",
+  "does not prove scalar-conjugate stability or algebraicity"
+]
+
+[[local_target]]
+name = "atomic raw tensor data to descent datum"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchTensorData.toDescentData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "raw tensor and scalar-conjugate stability data"
+]
+nonclaims = [
+  "no algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "invariant-aware finite switch-chain geometric assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfReachWithInvariants"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "sign-valued source matrix",
+  "odd source matrix",
+  "involutive conjugation",
+  "InvariantSwitchGeometrySupplier",
+  "finite PairedMatrixReach chain"
+]
+nonclaims = [
+  "formal invariant plumbing only",
+  "does not prove atomic tensor stability or algebraicity"
+]
+
+[[local_target]]
+name = "equal column sums feed invariant-aware geometric path"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.transitionOfEqualColumnSumsWithInvariants"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "odd +/-1 source and target matrices",
+  "equal column sums",
+  "InvariantSwitchGeometrySupplier"
+]
+nonclaims = [
+  "fixed-point-freeness at each selected coordinate is derived locally from oddness and sign-valuedness",
+  "does not supply tensor-level geometric inputs"
+]
+
+
+[[local_target]]
+name = "invariant atomic transition from raw tensor stability data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.invariantAtomicSwitchTransitionSupplierOfTensorData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "InvariantAtomicTensorDataSupplier",
+  "CMFourFactorAlgebraicity.FourFactorAlgebraicitySupplier",
+  "AlgebraicCycleToSwitchCoreAdapter",
+  "TwoFactorIdentitySupplier",
+  "AtomicTransitionAssemblySupplier"
+]
+nonclaims = [
+  "all sign/type bookkeeping and rational descent are local",
+  "raw tensor supplier does not assert algebraicity",
+  "four-factor algebraicity remains independent"
+]
+
+[[external_premise]]
+id = "cm-atomic-switched-tensor-conjugate-stability"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-label-conjugation", "eq:switch-line", "eq:switch-conjugate-balance"]
+statement_role = "for each invariant-aware atomic switch, supply the actual algebraic-number switched tensor, its complex Hodge subspace, and membership of every scalar conjugate in that subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.InvariantAtomicTensorDataSupplier"
+status = "OPEN"
+nonclaims = [
+  "does not assert the tensor is algebraic",
+  "does not replace the independent FourFactorAlgebraicitySupplier"
+]
+
+
+[[local_target]]
+name = "scalar-conjugate orbit span membership is automatic"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.scalarConjugate_mem_orbitSpan"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual algebraic-number switched tensor"
+]
+nonclaims = [
+  "pure span-membership theorem",
+  "does not identify the orbit span with a Hodge subspace"
+]
+
+[[local_target]]
+name = "orbit-span Hodge containment supplies scalar-conjugate stability"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchOrbitHodgeData.toTensorData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual switched tensor",
+  "actual complex Hodge subspace",
+  "containment of the scalar-conjugate orbit span in that Hodge subspace"
+]
+nonclaims = [
+  "does not prove orbit-span containment",
+  "does not prove algebraicity"
+]
+
+[[external_premise]]
+id = "cm-atomic-switch-orbit-span-hodge-containment"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-label-conjugation", "eq:switch-conjugate-balance"]
+statement_role = "identify every scalar-Galois conjugate of the switched monomial tensor as lying in the actual all-conjugate (2,2) Hodge subspace; equivalently, show its scalar-conjugate orbit span is contained in that Hodge subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchOrbitHodgeData"
+status = "OPEN"
+nonclaims = [
+  "strictly weaker packaging than directly postulating all_scalar_conjugates_mem",
+  "does not assert algebraicity"
+]
+
+
+[[local_target]]
+name = "linewise scalar-conjugate transport implies orbit-span Hodge containment"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.orbitSpan_le_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "for each scalar automorphism, the conjugated switched tensor lies in its transported four-factor monomial line",
+  "each transported four-factor monomial line lies in the actual Hodge subspace"
+]
+nonclaims = [
+  "pure span argument after linewise inputs",
+  "does not construct the four-factor monomial tensor or actual Hodge realization"
+]
+
+[[local_target]]
+name = "atomic monomial transport data yields orbit-span Hodge data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.AtomicSwitchMonomialTransportData.toOrbitHodgeData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "interface conversion only",
+  "does not prove factorwise-to-fourfold tensor transport"
+]
+
+[[external_premise]]
+id = "cm-fourfold-monomial-scalar-transport"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-label-conjugation", "eq:switch-line"]
+statement_role = "supply the actual fourfold assembly map and prove coefficient-field scalar conjugation commutes with that assembly; transported monomial-line membership then follows locally"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.conjugate_mem_line"
+status = "OPEN"
+nonclaims = [
+  "multilinear/tensor compatibility only",
+  "does not assert algebraicity"
+]
+
+[[external_premise]]
+id = "cm-transported-monomial-line-hodge-inclusion"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:switch-conjugate-balance"]
+statement_role = "show each assembled transported monomial generator lies in the actual all-conjugate (2,2) Hodge subspace; whole-line inclusion then follows locally because the line is its singleton span"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ScalarConjugateMonomialLineData.line_le_hodge"
+status = "OPEN"
+nonclaims = [
+  "Hodge-realization comparison only",
+  "does not assert algebraicity"
+]
+
+
+[[local_target]]
+name = "simultaneous scalar transport of four canonical embedding-line factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMEmbeddingTransport.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMEmbeddingTransport.FourEmbeddingLineVectors.scalarTransport"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four factorwise canonical embedding-line vectors"
+]
+nonclaims = [
+  "factorwise transport only",
+  "does not form or transport the fourfold monomial tensor"
+]
+
+[[local_target]]
+name = "canonical eigenline proportionality without forward reference"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMGaloisEigenlines.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMGaloisEigenlines.exists_ne_zero_smul_eq_of_mem_embeddingEigenspace"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "source-order repair only",
+  "still not kernel audited"
+]
+
+
+[[local_target]]
+name = "fourfold assembly compatibility implies transported monomial-line membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.scalarConjugate_mem_transportedLine"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four canonical embedding-line factors",
+  "actual fourfold assembly map",
+  "scalar conjugation commutes with fourfold assembly"
+]
+nonclaims = [
+  "does not prove the assembly map exists geometrically",
+  "does not identify the transported line as an actual Hodge line"
+]
+
+[[local_target]]
+name = "fourfold assembly data supplies monomial-line transport package"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "transported monomial lines lie in the actual Hodge subspace"
+]
+nonclaims = [
+  "monomial-line membership is local",
+  "Hodge-line inclusion remains external"
+]
+
+
+[[local_target]]
+name = "transported monomial generator membership implies whole-line Hodge inclusion"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedMonomialGeneratorHodgeData.transportedLine_le"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "for each scalar automorphism, the assembled transported monomial generator lies in the actual Hodge subspace"
+]
+nonclaims = [
+  "pure singleton-span closure",
+  "does not prove actual Hodge membership of the transported generator"
+]
+
+[[local_target]]
+name = "generator-level Hodge data yields scalar-conjugate monomial-line package"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.toScalarConjugateMonomialLineDataOfGenerator"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "interface composition only",
+  "actual transported generator Hodge membership remains external"
+]
+
+
+[[local_target]]
+name = "actual factor Hodge typing plus tensor rule yields transported generator H22"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedFourFactorHodgeTyping.assembled_mem_h22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "actual Hodge type membership of each transported weight-one factor",
+  "fourfold Hodge tensor-product compatibility",
+  "p-index sum equals two",
+  "q-index sum equals two"
+]
+nonclaims = [
+  "does not identify formal sign labels with actual Hodge subspaces",
+  "does not construct the geometric tensor-product Hodge decomposition"
+]
+
+[[local_target]]
+name = "fourfold assembly plus actual factor typing yields generator H22 package"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMonomialAssemblyData.toTransportedGeneratorHodgeData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "formal composition only",
+  "actual factor typing and tensor-product Hodge compatibility remain external"
+]
+
+[[external_premise]]
+id = "cm-transported-factor-actual-hodge-typing"
+result_family = 32
+evidence = "EXTERNAL_MANUSCRIPT"
+source = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+labels = ["eq:cm-types", "eq:cm-label-conjugation"]
+statement_role = "compare each transported canonical embedding-line vector with the actual complexified H1 realization so its coordinate image lies in the locally-defined H^(1,0) or H^(0,1) subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedFourFactorHodgeTyping.factor_type"
+status = "OPEN"
+nonclaims = [
+  "formal sign-derived type labels alone do not discharge this premise"
+]
+
+[[external_premise]]
+id = "cm-fourfold-hodge-tensor-product-compatibility"
+result_family = 32
+evidence = "EXTERNAL_CLASSICAL"
+source = "standard tensor-product Hodge decomposition for pure weight-one Hodge structures"
+labels = []
+statement_role = "assembling four actual weight-one Hodge vectors with total bidegree (2,2) lands in the actual H^(2,2) subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldHodgeAssemblyRule.assemble_mem_h22"
+status = "OPEN"
+nonclaims = [
+  "classical structural Hodge theorem only",
+  "no algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "actual complexified H1 Hodge pieces in weight-one realization"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.IsOfType"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "WeightOneCMRealization with actual complexified H1 carrier",
+  "linear equivalence from H1_C to the canonical CM coordinate model"
+]
+nonclaims = [
+  "does not construct the realization supplier",
+  "does not identify canonical tensor-model embedding vectors with actual H1_C vectors"
+]
+
+[[local_target]]
+name = "actual Weil operator has plus-i action on H10"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.actualWeil_H10"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "actual Weil operator has minus-i action on H01"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.actualWeil_H01"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "canonical tensor eigenspace support transfers to actual H1 Hodge type"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.CanonicalTensorActualH1Comparison.isOfType_typeOfSign"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "coordinate-preserving comparison from E tensor_Q E to actual complexified H1",
+  "canonical embedding-eigenspace membership"
+]
+nonclaims = [
+  "comparison supplier remains external",
+  "actual Hodge type follows locally once coordinate compatibility is supplied",
+  "does not prove four-factor algebraicity"
+]
+
+[[local_target]]
+name = "canonical tensor eigenspace has off-diagonal complex coordinate support"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.canonicalTensorComplexCoordinate_eq_zero_of_ne"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "canonical Galois evaluation eigenspace theorem"
+]
+nonclaims = [
+  "pure local linear algebra"
+]
+
+[[external_premise]]
+id = "cm-weight-one-realization-rational-inclusion-compatibility"
+result_family = 32
+evidence = "EXTERNAL_CLASSICAL_OR_REALIZATION"
+source = "weight-one CM realization comparison"
+labels = []
+statement_role = "as part of WeightOneCMRealization, supply the rational inclusion H1 -> H1_C and prove its coordinates agree with the h1Equiv field coordinates; the tensor-level comparison is then constructed locally by the tensor universal property"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.h1ToComplex_coordinates"
+status = "OPEN"
+nonclaims = [
+  "no Hodge-type theorem is postulated beyond coordinate compatibility",
+  "formal sign-to-actual-Hodge typing is local downstream"
+]
+
+
+[[local_target]]
+name = "pure-tensor coordinate comparison extends to all canonical tensors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.PureTensorActualH1Comparison.coordinate_compatibility"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "Q-linear map from E tensor_Q E to actual complexified H1",
+  "explicit coordinate formula on pure tensors"
+]
+nonclaims = [
+  "extension to arbitrary tensors is local tensor induction",
+  "does not construct the base-change map"
+]
+
+[[local_target]]
+name = "pure-tensor comparison supplies canonical tensor to actual H1 comparison"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.PureTensorActualH1Comparison.toCanonicalComparison"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "weight-one realization canonically builds tensor-to-H1 comparison"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.canonicalTensorActualH1Comparison"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "rational H1 equivalence with E",
+  "rational inclusion H1 -> H1_C",
+  "coordinate compatibility of that rational inclusion"
+]
+nonclaims = [
+  "comparison is local once WeightOneCMRealization exists",
+  "RiemannExistenceSupplier remains external",
+  "no four-factor algebraicity conclusion"
+]
+
+[[local_target]]
+name = "canonical tensor map constructed by tensor universal property"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMWeightOneRiemannRealization.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMWeightOneRiemannRealization.WeightOneCMRealization.canonicalTensorToActual"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "standard scalar-extension construction only"
+]
+
+
+[[local_target]]
+name = "canonical embedding factor acquires actual weight-one Hodge type"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CanonicalEmbeddingFactorActualTyping.actual_type"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "strengthened WeightOneCMRealization",
+  "canonical embedding-eigenspace membership"
+]
+nonclaims = [
+  "actual type follows locally from realization comparison",
+  "does not assemble multiple factors"
+]
+
+[[local_target]]
+name = "four independently realized canonical factors all have actual Hodge types"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourCanonicalFactorsActualTyping.all_actual_types"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four WeightOneCMRealization instances, one per CM sign row"
+]
+nonclaims = [
+  "the four actual H1_C carriers may differ",
+  "no common tensor target or fourfold assembly is asserted",
+  "no algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "explicit common tensor target for four actual weight-one realizations"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldActualTensor"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "nested complex tensor product only",
+  "the four H1_C carriers remain distinct"
+]
+
+[[local_target]]
+name = "pure fourfold tensor of independently realized H1 factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.fourfoldActualPureTensor"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[external_premise]]
+id = "cm-fourfold-actual-hodge-pure-tensor-rule"
+result_family = 32
+evidence = "EXTERNAL_CLASSICAL"
+source = "standard tensor-product Hodge decomposition for four pure weight-one Hodge structures"
+labels = []
+statement_role = "for four independently realized actual H1_C factors, a pure tensor of genuine weight-one types whose total bidegree is (2,2) lies in the H^(2,2) subspace of the explicit nested tensor product"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldActualHodgeTensorRule.pureTensor_mem_H22"
+status = "OPEN"
+nonclaims = [
+  "structural Hodge theorem only",
+  "no algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "switch-character alignment supplies actual four-factor p-count"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourCanonicalFactorsSwitchAlignment.p_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "CM FourBalance for the four sign rows",
+  "first two actual factor characters equal g",
+  "last two actual factor characters equal the CM-conjugate of g"
+]
+nonclaims = [
+  "finite sign/type count only",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "switch-character alignment supplies actual four-factor q-count"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourCanonicalFactorsSwitchAlignment.q_two"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "aligned canonical fourfold pure tensor lies in actual H22"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldActualHodgeTensorRule.canonicalPureTensor_mem_H22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four actual weight-one realizations",
+  "switch-character alignment",
+  "standard fourfold actual Hodge tensor rule"
+]
+nonclaims = [
+  "H22 membership only",
+  "does not prove algebraicity"
+]
+
+
+[[local_target]]
+name = "actual H22 comparison implies descent-side Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldToMonomialComparison.mem_hodge_of_mem_H22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "complex-linear comparison from explicit actual fourfold H1 tensor target to descent-side complexification",
+  "image of actual H22 lies in the descent Hodge subspace"
+]
+nonclaims = [
+  "comparison theorem only",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "identified actual fourfold pure tensor gives monomial-generator Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldMonomialGeneratorIdentification.assembled_mem_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "switch-character alignment",
+  "standard actual fourfold Hodge tensor rule",
+  "actual-to-descent comparison",
+  "assembled monomial generator identification"
+]
+nonclaims = [
+  "all Hodge membership after the comparison/identification inputs is local",
+  "does not assert scalar-conjugation naturality",
+  "does not assert algebraicity"
+]
+
+[[external_premise]]
+id = "cm-actual-fourfold-to-descent-hodge-comparison"
+result_family = 32
+evidence = "EXTERNAL_REALIZATION_COMPARISON"
+source = "comparison between actual fourfold cohomology tensor realization and descent-side complexified tensor model"
+labels = []
+statement_role = "supply a complex-linear comparison from the explicit nested actual H1 tensor product to the descent-side complexification and prove the actual H^(2,2) subspace maps into the descent Hodge subspace"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldToMonomialComparison"
+status = "OPEN"
+nonclaims = [
+  "coefficient/change-of-realization bridge only",
+  "no algebraicity conclusion"
+]
+
+[[external_premise]]
+id = "cm-actual-fourfold-monomial-generator-identification"
+result_family = 32
+evidence = "EXTERNAL_REALIZATION_COMPARISON"
+source = "identification of switched monomial assembly with the explicit actual fourfold pure tensor"
+labels = []
+statement_role = "identify the descent-side assembled switched monomial generator with the image of the explicit actual fourfold pure tensor under the comparison map"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.ActualFourfoldMonomialGeneratorIdentification"
+status = "OPEN"
+nonclaims = [
+  "generator identification only",
+  "scalar-conjugation naturality remains separate"
+]
+
+
+[[local_target]]
+name = "algebraic fourfold assembly before complex coefficient inclusion"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyData"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "assembly remains at AlgebraicNumbers coefficients",
+  "does not assert Galois equivariance",
+  "does not assert algebraicity of a cycle"
+]
+
+[[local_target]]
+name = "algebraic assembly equivariance converts to complexified monomial assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldAlgebraicAssemblyData.toMonomialAssemblyData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "algebraic-level fourfold assembly",
+  "Galois equivariance of assembly"
+]
+nonclaims = [
+  "factorwise scalar transport is already local",
+  "complex coefficient inclusion is formal"
+]
+
+[[external_premise]]
+id = "cm-geometric-switched-assembly-multilinear-presentation"
+result_family = 32
+evidence = "EXTERNAL_MULTILINEAR_NATURALITY"
+source = "fourfold switched tensor assembly over algebraic-number coefficients"
+labels = []
+statement_role = "present the geometric switched monomial assembly as four nested Q-linear maps and prove its value on pure factors is canonicalPureAlgebraicAssembly; extensional identification and Galois equivariance then follow locally"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly"
+status = "OPEN"
+nonclaims = [
+  "Galois equivariance is local once the assembly is fourfold Q-linear with the canonical pure-factor formula",
+  "the remaining issue is identification of the geometric switched assembly with that canonical multilinear assembly",
+  "no Hodge or algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "pure fourfold algebraic assembly is Galois equivariant"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.scalarConjugate_canonicalPureAlgebraicAssembly"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "pure canonical factors a_i tensor x_i"
+]
+nonclaims = [
+  "pure-factor theorem only",
+  "arbitrary factor tensors still require multilinear extension",
+  "no Hodge or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "canonical pure algebraic fourfold assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.canonicalPureAlgebraicAssembly"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "fourfold multilinearity extends pure assembly equivariance"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.equivariant"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four nested Q-linear assembly maps",
+  "canonical pure-factor formula"
+]
+nonclaims = [
+  "formal tensor-induction theorem",
+  "no remaining arithmetic or Hodge input in equivariance"
+]
+
+[[local_target]]
+name = "multilinear canonical assembly supplies algebraic equivariance interface"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.toAssemblyEquivariance"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "adapter only",
+  "does not identify the canonical multilinear assembly with the geometric switched monomial assembly"
+]
+
+
+[[local_target]]
+name = "canonical pure formula identifies all fourfold multilinear assemblies"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.assemble_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "fourfold Q-multilinearity for both assemblies",
+  "same canonical pure-factor formula"
+]
+nonclaims = [
+  "formal fourfold tensor induction only",
+  "does not construct the geometric switched assembly"
+]
+
+[[local_target]]
+name = "extensional equality of canonical fourfold assembly maps"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.assemble_fun_eq"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "presented fourfold multilinear assembly directly yields monomial assembly data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.toMonomialAssemblyData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "fourfold Q-multilinear switched assembly",
+  "canonical pure-factor formula"
+]
+nonclaims = [
+  "algebraic assembly and Galois equivariance are derived locally",
+  "does not supply Hodge comparison or algebraicity"
+]
+
+[[local_target]]
+name = "presented assembly gives scalar-conjugate transported-line membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.scalarConjugate_mem_transportedLine"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "fourfold Q-multilinear switched assembly",
+  "canonical pure-factor formula"
+]
+nonclaims = [
+  "no separate scalar-conjugation naturality premise remains",
+  "Hodge-line inclusion remains a separate comparison branch"
+]
+
+
+[[local_target]]
+name = "finite-CM realization witness gives descent-side Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.RealizedMonomialGeneratorHodgeWitness.assembled_mem_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "finite CM field may vary with the scalar conjugate",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "transported realization family supplies transported-generator Hodge data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedGeneratorRealizationFamily.toTransportedGeneratorHodgeData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one realized finite-CM Hodge witness for each scalar automorphism"
+]
+nonclaims = [
+  "allows the finite CM field and actual realization to vary with sigma"
+]
+
+[[local_target]]
+name = "presented assembly plus realization family yields scalar-conjugate monomial lines"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FourfoldMultilinearAlgebraicAssembly.toScalarConjugateMonomialLineData"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "canonical fourfold multilinear assembly presentation",
+  "finite-CM realization family for every transported generator"
+]
+nonclaims = [
+  "assembly equivariance is local",
+  "Hodge membership is local after the realization family",
+  "four-factor algebraicity remains independent"
+]
+
+[[external_premise]]
+id = "cm-transported-generator-finite-cm-realization-family"
+result_family = 32
+evidence = "EXTERNAL_REALIZATION_COMPARISON"
+source = "finite CM realization/comparison for every scalar-conjugated switched monomial generator"
+labels = []
+statement_role = "for each scalar automorphism of AlgebraicNumbers, choose a finite Galois CM realization, aligned four actual weight-one factors, the standard fourfold Hodge rule, an actual-to-descent comparison, and a generator identification for the transported assembled monomial"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.TransportedGeneratorRealizationFamily"
+status = "OPEN"
+nonclaims = [
+  "finite CM field need not be uniform across all scalar automorphisms",
+  "does not assert algebraicity",
+  "does not supply assembly equivariance"
+]
+
+
+[[local_target]]
+name = "every algebraic-number tensor has a finite Galois carrier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.finiteGaloisTensorCarrier"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "GaloisScalarDescent.tensor_defined_over_finiteGalois"
+]
+nonclaims = [
+  "finite Galois containment only",
+  "does not imply the carrier is CM"
+]
+
+[[local_target]]
+name = "absolute conjugation restricts through finite Galois tensor carrier"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.FiniteGaloisTensorCarrier.scalarConjugate_restrict"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "GaloisScalarDescent.scalarConjugate_restrict"
+]
+nonclaims = [
+  "pure finite-Galois transport theorem",
+  "no Hodge or CM conclusion"
+]
+
+[[external_premise]]
+id = "cm-supported-global-four-factor-construction"
+result_family = 32
+evidence = "EXTERNAL_CM_REALIZATION"
+source = "CM realization field for the finite Galois carrier of the switched tensor"
+labels = []
+statement_role = "construct the global AlgebraicNumbers four-factor package together with its common finite Galois CM support directly from the original finite Galois CM embedding-line data; scalar transport then preserves that same support locally"
+local_consumer = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors"
+status = "OPEN"
+nonclaims = [
+  "arbitrary finite tensor support is already local",
+  "the additional requirement is common CM support of the four canonical factors",
+  "does not assert algebraicity"
+]
+
+
+[[local_target]]
+name = "four canonical factors supported on one finite Galois CM field"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFourFactorSupport"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one finite Galois CM intermediate field of AlgebraicNumbers",
+  "four local embedding-eigenspace vectors",
+  "inclusion of local vectors equals the global canonical factors",
+  "global characters restrict to the local characters"
+]
+nonclaims = [
+  "does not prove such a common CM support exists for arbitrary factors",
+  "does not construct Hodge realizations"
+]
+
+[[local_target]]
+name = "finite CM factor inclusion commutes with scalar conjugation"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMGaloisIntermediateField.factorTensorInclusion_scalarConjugate"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "pure coefficient/support compatibility",
+  "no Hodge or algebraicity conclusion"
+]
+
+[[local_target]]
+name = "global transported factors are inclusions of local transported factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFourFactorSupport.scalarTransportLocal_inclusion"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "CMFourFactorSupport"
+]
+nonclaims = [
+  "all scalar transports stay on the same finite Galois CM carrier once support is supplied"
+]
+
+
+[[local_target]]
+name = "global four-factor data carries explicit common CM support"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "global four embedding-line factors over AlgebraicNumbers",
+  "explicit global automorphism lift for each stored AlgHom character",
+  "one common finite Galois CM carrier",
+  "local vectors and characters with inclusion/restriction comparison"
+]
+nonclaims = [
+  "does not construct supported global factors from arbitrary global data",
+  "support is construction data, not inferred afterward"
+]
+
+[[local_target]]
+name = "scalar transport preserves chosen common CM support"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors.scalarTransport"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "SupportedCMFourEmbeddingLineVectors"
+]
+nonclaims = [
+  "same finite Galois CM carrier is retained for all scalar conjugates",
+  "global character restrictions are proved through explicit automorphism lifts"
+]
+
+[[local_target]]
+name = "scalar transport keeps the identical support field"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.SupportedCMFourEmbeddingLineVectors.scalarTransport_support_field"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+
+[[local_target]]
+name = "finite-CM four embedding-line factors"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourEmbeddingLineVectors"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "individual eigenlines remain over one finite Galois CM field",
+  "does not claim finite-level eigenvectors remain global AlgebraicNumbers eigenvectors"
+]
+
+[[local_target]]
+name = "finite-CM fourfold assembly extends only after assembly"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourfoldAssembly.globalTensor"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "coefficient extension occurs only on the assembled tensor",
+  "individual factor eigenlines are not promoted to global regular-action eigenlines"
+]
+
+[[local_target]]
+name = "global assembled scalar conjugation computed by finite-CM restriction"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourfoldAssembly.globalTensor_scalarConjugate"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "finite-CM transported generator Hodge data implies orbit-span containment"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteTransportedGeneratorHodgeData.orbitSpan_le_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one finite Galois CM field",
+  "four finite-level embedding-line factors",
+  "finite-level fourfold assembly",
+  "Hodge membership of every transported finite-level assembled generator after coefficient inclusion"
+]
+nonclaims = [
+  "bypasses global AlgebraicNumbers embedding-eigenline factors",
+  "four-factor algebraicity remains independent"
+]
+
+[[correction]]
+id = "supersede-global-algebraicnumbers-eigenline-support"
+status = "ARCHITECTURE_SUPERSEDED"
+reason = "A finite-field embedding eigenspace condition quantifies over the finite field, while an AlgebraicNumbers embedding eigenspace condition quantifies over all AlgebraicNumbers. Direct inclusion of a finite-level eigenvector therefore does not by itself supply the stronger global eigenvector property."
+replacement = "CMFiniteFourEmbeddingLineVectors + CMFiniteFourfoldAssembly + CMFiniteTransportedGeneratorHodgeData"
+
+
+[[local_target]]
+name = "finite-CM four factors carry actual weight-one realizations"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourFactorActualTyping"
+status = "SOURCE_DRAFT_NOT_RUN"
+nonclaims = [
+  "all factors remain over one finite Galois CM field",
+  "does not compare the actual H1 tensor with the finite assembly target"
+]
+
+[[local_target]]
+name = "finite-CM switch alignment converts to actual H1 alignment"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourFactorSwitchAlignment.toActualAlignment"
+status = "SOURCE_DRAFT_NOT_RUN"
+
+[[local_target]]
+name = "finite-CM switched canonical pure tensor lies in actual H22"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteFourFactorSwitchAlignment.canonicalPureTensor_mem_H22"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "four strengthened WeightOneCMRealization instances over the same finite Galois CM field",
+  "finite switch alignment",
+  "standard fourfold actual Hodge tensor rule"
+]
+nonclaims = [
+  "actual H22 membership only",
+  "comparison to the finite assembled generator remains separate",
+  "no algebraicity conclusion"
+]
+
+
+[[local_target]]
+name = "fixed-CM transported comparison witness gives generator Hodge membership"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteTransportedGeneratorWitness.generator_mem_hodge"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "finite-CM actual typing for transported factors",
+  "finite switch alignment",
+  "standard fourfold Hodge tensor rule",
+  "complex-linear actual-to-descent comparison",
+  "H22 maps into descent Hodge subspace",
+  "assembled generator identification"
+]
+nonclaims = [
+  "finite Galois CM field remains fixed",
+  "no algebraicity conclusion"
+]
+
+[[local_target]]
+name = "fixed-field witness family supplies finite-CM transported Hodge data"
+path = "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean"
+declaration = "GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry.CMFiniteTransportedGeneratorHodgeData.ofWitnesses"
+status = "SOURCE_DRAFT_NOT_RUN"
+upstream_obligations = [
+  "one CMFiniteTransportedGeneratorWitness for each absolute scalar automorphism"
+]
+nonclaims = [
+  "field does not vary with scalar automorphism",
+  "orbit-span containment follows downstream locally"
+]
