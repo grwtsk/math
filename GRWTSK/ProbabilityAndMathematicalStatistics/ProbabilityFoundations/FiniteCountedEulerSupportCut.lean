@@ -66,7 +66,8 @@ def CountedEdgeSupportCutConnected
     (m : ℕ) (c : BinaryEdgeWord m → ℕ) : Prop :=
   ∀ S : Finset (Fin m → Bool),
     (∃ e : CountedBinaryEdge m c, CountedEdgeMeets m c S e) →
-    (∃ e : CountedBinaryEdge m c, ¬ CountedEdgeMeets m c S e) →
+    (∃ e : CountedBinaryEdge m c,
+      countedEdgeSource m c e ∉ S ∨ countedEdgeTarget m c e ∉ S) →
     ∃ e : CountedBinaryEdge m c, CountedEdgeCrosses m c S e
 
 /-- Finite support crossing: if every used edge is internal to S,
@@ -81,7 +82,8 @@ theorem unused_edge_meets_of_support_cut_connected
     (hused : ∀ e ∈ used,
       countedEdgeSource m c e ∈ S ∧ countedEdgeTarget m c e ∈ S)
     (hinside : ∃ e : CountedBinaryEdge m c, CountedEdgeMeets m c S e)
-    (houtside : ∃ e : CountedBinaryEdge m c, ¬ CountedEdgeMeets m c S e) :
+    (houtside : ∃ e : CountedBinaryEdge m c,
+      countedEdgeSource m c e ∉ S ∨ countedEdgeTarget m c e ∉ S) :
     ∃ e ∈ (Finset.univ \\ used :
         Finset (CountedBinaryEdge m c)), CountedEdgeMeets m c S e := by
   classical
