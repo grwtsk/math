@@ -637,11 +637,13 @@ def thetaKernelNegativePart (n : ℕ) (u : ℝ) : ℝ :=
 theorem thetaKernelPositivePart_nonneg (n : ℕ) (u : ℝ) :
     0 ≤ thetaKernelPositivePart n u := by
   unfold thetaKernelPositivePart
+  dsimp [thetaGaussianSummand]
   positivity
 
 theorem thetaKernelNegativePart_nonneg (n : ℕ) (u : ℝ) :
     0 ≤ thetaKernelNegativePart n u := by
   unfold thetaKernelNegativePart
+  dsimp [thetaGaussianSummand]
   positivity
 
 /-- The exact signed theta term splits into two nonnegative pieces.
@@ -759,7 +761,11 @@ theorem thetaKernelPositivePart_scaled (n : ℕ) (u : ℝ) :
         Real.exp u * Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
   rw [thetaKernelPositivePart, thetaGaussianSummand_scaled]
   unfold thetaScaledGaussian
-  rw [← Real.exp_add]
+  have hexp : Real.exp (9 * u) = Real.exp (4 * u) ^ 2 * Real.exp u := by
+    rw [pow_two, ← Real.exp_add, ← Real.exp_add]
+    congr 1
+    ring
+  rw [hexp]
   ring
 
 
