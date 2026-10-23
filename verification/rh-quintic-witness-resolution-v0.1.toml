@@ -1,0 +1,77 @@
+version = "0.1"
+title = "RH quintic witness resolution"
+status = "SOURCE_DRAFT"
+repository = "grwtsk/math"
+issue = 451
+pull_request = 452
+base_commit = "305ff3553257ef5b55bb0951b6258fefdc7d3cf3"
+external_repository = "grwtsk/formal-research"
+external_accepted_commit = "dc96769a40980ba724fa248c00541f594ad00080"
+
+[source]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RiemannWitnessQuinticResolution.lean"
+git_blob = "ae71a4f9f305cf53fa137b28f2a4587b6312a730"
+lines = 354
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/riemann-quintic-witness-resolution.md"
+git_blob = "0c6739c8d19a57f229d72483aa08b784f036c2bf"
+lines = 253
+
+[local_result]
+factor = "(2-u)^5"
+endpoint_quotient = "(6144/5)*r^2"
+opposite_endpoint_value_at_r_one = "45056/1105"
+midpoint_reflection_symmetry = false
+arithmetic_tail_constructed = false
+rh_bridge_discharged = false
+
+[[external_declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceBumpAutocorrelation.lean"
+name = "FormalResearch.RiemannHypothesis.SourceBumpAutocorrelation.overlapProfile"
+role = "exact primitive overlap with ninth-order endpoint factor"
+
+[[external_declarations]]
+path = "FormalResearch/RiemannHypothesis/KQHThreeResponse.lean"
+name = "FormalResearch.RiemannHypothesis.KQHThreeResponse.sourceCorrelation_eq_threeProfile"
+role = "actual normalized source equals the complete three-profile response"
+
+[[external_declarations]]
+path = "FormalResearch/RiemannHypothesis/KQHThreeResponse.lean"
+name = "FormalResearch.RiemannHypothesis.KQHThreeResponse.mertensResidual_eq_threeResponse"
+role = "arithmetic residual representation"
+
+[[external_declarations]]
+path = "FormalResearch/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/CorrelationRegularity.lean"
+name = "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity.sourceCorrelation_even"
+role = "separate autocorrelation symmetry theorem"
+
+[[external_declarations]]
+path = "FormalResearch/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/EstimateMertensResidual.lean"
+name = "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.estimate_of_mertens_residual_tail"
+role = "conditional RH-estimate consumer"
+
+[evidence]
+source_draft = true
+external_kernel_checked = true
+external_trust_audited = true
+local_elaborated = false
+local_kernel_checked = false
+local_trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[hostile_controls]
+source_url_is_not_theorem = true
+endpoint_order_is_not_global_positivity = true
+quintic_factor_is_not_symmetry = true
+profile_representation_is_not_tail_bound = true
+finite_algebra_is_not_rh = true
+
+[nonclaims]
+constructs_mertens_residual_tail = false
+constructs_boundary_witness = false
+constructs_filter_witness = false
+constructs_rectangle_witness = false
+proves_finite_height_rh = false
+proves_rh = false
