@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 995
+parent_revision = "18f65ef246991fb73b823449a50f3a25614e966a"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarUnitCircleLift"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarUnitCircleLift.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["realAnglePolarDisk_eq_of_unitAddCircle_eq", "unitCirclePolarDisk", "unitCirclePolarDisk_coe", "unitCirclePolarDisk_zero"]
+hostile_controls = ["actual_unit_addcircle_quotient", "representative_independence", "zero_radius_constant", "no_discontinuous_representative_choice", "fixed_radius_not_joint_continuity", "no_cone_disk_homeomorphism_claim"]
+open_obligations = ["pinned_quotient_lift_elaboration", "fixed_radius_continuity", "joint_product_quotient_continuity", "standard_cone_descent", "exact_fiber_iff", "polar_surjectivity", "cone_disk_homeomorphism"]
+lean_run = false
+kernel_audited = false

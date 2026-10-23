@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1004
+parent_revision = "e45af26f2c8ea26c90e876f6e8b05cef90d7df53"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarFundamentalCover.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_theorems = ["unitAddCircle_unitInterval_surjective", "compactPolarProjection_isQuotientMap", "unitCircleJointPolar_continuous"]
+hostile_controls = ["unit_interval_endpoint_duplication", "no_closed_interval_injectivity", "exact_mathlib_coverage_signature", "target_T2_instance", "compact_source_only", "no_cone_disk_homeomorphism"]
+open_obligations = ["pinned_mathlib_elaboration_and_ancestor_repairs", "standard_cone_quotient_descent", "exact_cone_fiber_iff", "polar_disk_surjectivity", "cone_disk_homeomorphism"]
+lean_run = false
+kernel_audited = false
