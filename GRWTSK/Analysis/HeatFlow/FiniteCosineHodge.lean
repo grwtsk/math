@@ -852,15 +852,9 @@ and keeps a nonoptimal constant to avoid a sharp-optimization premise. -/
 theorem polynomial_exponential_envelope (x : ℝ) (hx : 0 ≤ x) :
     (x ^ 2 + x) * Real.exp (-x) ≤
       20 * Real.exp (-(x / 2)) := by
-  have h := add_one_le_exp (x / 4)
-  have hpos : 0 < Real.exp (x / 4) := Real.exp_pos _
   have hx4 : 0 ≤ x / 4 := by positivity
-  have hlin : x / 4 ≤ Real.exp (x / 4) := by linarith
-  have hsq : (x / 4) ^ 2 ≤ Real.exp (x / 4) ^ 2 :=
-    sq_le_sq₀ hx4 hlin
-  have hEone : 1 ≤ Real.exp (x / 4) := by
-    have h := add_one_le_exp (x / 4)
-    linarith
+  have hExpLower := add_one_le_exp (x / 4)
+  have hEone : 1 ≤ Real.exp (x / 4) := by linarith
   have hlinear : x ≤ 4 * Real.exp (x / 4) := by linarith
   have hsquare : x ^ 2 ≤ 16 * Real.exp (x / 4) ^ 2 := by
     have hdiff : 0 ≤ 4 * Real.exp (x / 4) - x := by linarith
