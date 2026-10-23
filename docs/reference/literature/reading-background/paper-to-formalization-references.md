@@ -13,6 +13,15 @@ Do not merge differently sourced results because they have a similar name.
 An external upstream theorem, a local source proof candidate, a verified
 local theorem, and an analogy are four different statuses.
 
+**Related ideas records:** the detailed [paper-to-Lean provenance ledger](paper-to-lean-provenance.md)
+and [RH source-provenance supplement](paper-formalization-provenance-rh.md)
+retain their own reviewed papers, exact code identities and open
+obligations. This page is a cross-case index and entry contract,
+not a replacement for those ledgers or the version-bound
+[unpublished idea map](idea-formalization-map.md). A later
+documentation commit does not automatically supersede an earlier
+source version or verification record.
+
 ## Required entry for every paper-derived increment
 
 Add or update an entry here **in the same main-branch change** that introduces
@@ -129,6 +138,25 @@ The **homomorphism property, exceptional branch, denominators and
 native point-model identification are part of this method**, not
 consequences of a full-rank matrix by themselves.
 
+**Exact Lemma 2.1 and its quantifier.** In the author-hosted
+paper's §2.1, printed p. 4 (PDF page 4), Lemma 2.1 states that
+for **each** `P ∈ E(ℚ) ∖ 2E(ℚ)`, **some** good prime `p`
+detects `P`: `ε_p(P) ≠ 0`. The argument considers the
+quartic whose roots are x-coordinates of halves `Q` of `P`,
+and obtains a prime where the quartic has no root.
+This is an existence-of-detection result, **not** a claim that
+any arbitrarily chosen list of primes detects the whole quotient.
+Section **2.2**, printed p. 4, is the separate finite-vector
+independence argument, which requires enough detecting primes.
+Moreover a nonzero class modulo 2 does not automatically have
+infinite order: e.g. a point of `ℤ/2ℤ` has a nonzero mod-2
+class and is torsion. The repository therefore demands the
+**separate** assumption `∀ x, (2 : ℤ) • x = 0 → x = 0`
+in `GRWTSK.LinearAlgebra.ModTwoIndependenceDescent.linearIndependent_of_even_relations`
+(source revision `62b33f5917133d187bcf70532354be4f23268c84`).
+Neither a finite character matrix nor Lemma 2.1 alone supplies
+that no-two-torsion hypothesis.
+
 **Corresponding local Lean declarations and commits:**
 
 - `Record4239.localBit`, `localBit_eq_characterMatrix`,
@@ -240,6 +268,28 @@ arithmetic second-moment/explicit-formula inputs; it does not
 presuppose RH in place of these estimates. The optimized window
 gives the paper's stated improvement to approximately 67.25%.
 
+**Theorem locator and actual external inputs.** The cited
+[arXiv:2608.13637](https://arxiv.org/abs/2608.13637)
+states in **Theorem A** unconditional limiting proportions
+at least `2/3` for simple zeros on the critical line and
+`5/6` for distinct zeros, improved by the
+Montgomery–Taylor window to approximately `0.67250`
+and `0.83625`. **Theorem B** extends this to each fixed
+primitive Dirichlet `L`-function. Its argument also depends
+on the correct Weil explicit formula, the Riemann–von
+Mangoldt zero count, short-interval zero bounds,
+gamma-factor estimates, Chebyshev–Mertens second moments
+and the Montgomery–Vaughan inequality, in addition to
+the finite-form rank–trace/inertia analysis. None of these
+analytic ingredients, the exact source-normalized Weil form,
+or a zero-divisor comparison follows from the local theorem
+`negativeWitness_forces_comparisonError`. The paper reports
+a Lean 4 formalization; this repository has **not imported
+or audited that upstream formalization**. No particular
+local PDF byte identity/version has been authenticated here:
+the stable arXiv work identifier does not itself verify
+the exact bytes of a quoted version.
+
 **Corresponding (much narrower) local declarations:**
 `GRWTSK.LinearAlgebra.SignedWeilComparisonGate.PositiveGramComparison`,
 `negativeWitness_forces_comparisonError`,
@@ -268,6 +318,87 @@ and zero-density conclusion remain **unresolved**.
 
 **Verification:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`
 locally. No RH or proportion-of-zeros theorem is claimed.
+
+
+## Case R4239-04 — Farey/quintic envelope, a repository-derived construction
+
+**Primary mathematical data and bibliography.** Use the
+original **2026 ICARM curve #4239** and its 32 rational points
+from **Elkies, Klagsbrun and Li**,
+https://elliptic-rank.icarm.cloud/curve/4239
+(as already recorded in **R4239-01**).
+The Farey mediant and determinant-one rational neighbours are
+classical notions. The specifically named `ResolvableEye`
+and `rank32Quintic` are **repository definitions**,
+not propositions imported from the ICARM source or from
+a separately identified paper. For these *derived*
+constructions, a second paper's title, authors, year,
+DOI and theorem locator are **not established**; do
+not invent bibliographic credit. A fuller independently
+reviewed record is in
+[paper-to-lean-provenance.md](paper-to-lean-provenance.md#icarm-curve-4239-research-data-not-a-paper-proof).
+
+**Exact local method, domains and hypotheses.**
+For the published `ℚ`-curve
+`y²+xy = x³−Ax+B`, completing the square gives
+`(2y+x)² = c(x)`, with
+`c(x)=4x³+x²−4Ax+4B`.
+The polynomial factor `q(x)=x²+1` is **strictly
+positive at every rational x**. Therefore the new
+quintic `q(x)c(x)` has the **same rational zeros
+and signs** as `c(x)`. Its exact natural degree
+five is a separate claim requiring that `q,c ≠ 0`
+and their degrees are **2** and **3**.
+
+A Farey `Cell` has natural-number endpoint numerators,
+**positive** denominators `b,d`, and determinant-one
+relation `b*c=a*d+1`. The
+`ResolvableEye p I` predicate means only that the
+polynomial evaluates **nonpositively** at the left
+endpoint and **nonnegatively** at the right endpoint.
+A mediant step yields an exact rational root at the
+mediant **or** an oriented sign-resolving child.
+This does **not** establish that a rational root exists,
+that repeated refinement converges, or that the
+quintic implies any statement about Mordell–Weil rank.
+
+**Exact Lean declarations, source identities and revisions.**
+
+- `GRWTSK.NumberTheory.Farey.Cell`, `ResolvableEye`,
+  `resolvableEye_refine`,
+  `polynomialResolves_mul_iff_of_pos_at_endpoints`,
+  `quadratic_mul_cubic_natDegree` in
+  [`GRWTSK/NumberTheory/Farey/ResolvableQuintic.lean`](../../../../GRWTSK/NumberTheory/Farey/ResolvableQuintic.lean):
+  integrated `a569494ac6a119db34c5fd0630145477f90acfdf`,
+  revision `9aef104465dfb242812bc9a0ea7a821492cae99d`,
+  reviewed Git blob `7caef4b022e35202eef471aae2730dff6b518f70`.
+- `GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239.FareyQuintic.completedSquareCubic`,
+  `rank32Quintic`,
+  `rank32Quintic_at_published_point`,
+  `resolvableEye_rank32Quintic_iff`,
+  `rank32Quintic_natDegree` in
+  [`Record4239QuinticFareyBridge.lean`](../../../../GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239QuinticFareyBridge.lean):
+  integrated `101e6a661a7befc77aa05baee53eaa0e840ebd49`,
+  revision `1b2d9cce6299e2f0ddef4ae107e0b4d05829b5e0`,
+  reviewed Git blob `665105c6e0ad86bbb8647bc89f0980bfc735aae8`.
+
+**Relationship and status.** `source-proof-candidate`
+for the elementary polynomial/sign/point identities;
+`finite-certificate` for source-data point arithmetic;
+not `direct-import` of a paper theorem and **not a
+`local-proved-bridge`** to analytic number theory or
+elliptic rank. The files remain
+`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`.
+The earlier 19-module validation target
+`698b694747a0b62f4126caf5475601b073ebcd9e`
+predates these files and **cannot** verify them.
+Tracked separately in
+[Farey #1086](https://github.com/grwtsk/math/issues/1086),
+[bridge verification #1088](https://github.com/grwtsk/math/issues/1088),
+and [integration gate #1089](https://github.com/grwtsk/math/issues/1089).
+No real global quadratic-character homomorphism, finite
+`SourceBitsMatch`, unconditional rank bound, Sarnak
+disjointness, BSD or RH theorem is obtained here.
 
 ## Current verification boundary for these entries
 
