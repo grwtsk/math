@@ -591,5 +591,24 @@ theorem canonicalFinitePureAssembly_scalarConjugate
     map_mul]
 
 
+
+/-- Coefficient-only scalar conjugation of the authentic paired assembly,
+evaluated on a pure paired tensor.  This combines the algebraic assembly
+identity with the existing canonical pure-factor conjugation theorem. -/
+theorem CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)) =
+      CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedPure E
+          (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄) := by
+  rw [CMFiniteCanonicalPairedAssembly_originalFormula,
+    CMFiniteCanonicalPairedAssembly_originalFormula]
+  exact canonicalFinitePureAssembly_scalarConjugate E σ
+    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
