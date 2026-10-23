@@ -188,4 +188,43 @@ theorem FreshCountedTrail.spliceClosedAtFinish_strict
   omega
 
 
+
+/-- General interior splicing, given an ACTUAL factorization of the
+original fresh trail into endpoint-compatible prefix and suffix
+trails at the chosen vertex. This avoids assuming a rotation
+exists without constructing the relevant vertex occurrence. -/
+def FreshCountedTrail.spliceAtFactorization
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    FreshCountedTrail m c a b := by
+  have hCQ : Disjoint C.used Q.used := hQC.symm
+  have hPQC : Disjoint P.used (C.used ∪ Q.used) :=
+    Finset.disjoint_union_right.mpr ⟨hPC, hPQ⟩
+  exact P.concat (C.concat Q hCQ) (by
+    simpa [FreshCountedTrail.concat_used] using hPQC)
+
+/-- The interior splice uses precisely the original two trail
+segments and the inserted residual closed cycle. -/
+theorem FreshCountedTrail.spliceAtFactorization_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    (FreshCountedTrail.spliceAtFactorization P Q C
+      hPQ hPC hQC).used = (P.used ∪ Q.used) ∪ C.used := by
+  simp [FreshCountedTrail.spliceAtFactorization,
+    FreshCountedTrail.concat_used, Finset.union_assoc,
+    Finset.union_comm, Finset.union_left_comm]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
