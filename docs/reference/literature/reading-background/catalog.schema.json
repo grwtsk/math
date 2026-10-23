@@ -1153,6 +1153,43 @@
             "items": {
               "type": "string"
             }
+          },
+          "paper_citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "anchor": {
+                  "type": "string"
+                },
+                "page_text_sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "pdf_page",
+                "anchor",
+                "page_text_sha256"
+              ]
+            }
+          },
+          "read_pdf_pages": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "review_extent": {
+            "type": "string"
           }
         },
         "required": [
