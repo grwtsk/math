@@ -3079,6 +3079,201 @@ Exact original hypotheses, dependency order, acceptance checks, page anchors and
 Prime enumeration is an assistant-proposed finite specialization, with strict p < N; P1 bibliography binding and P4 analytic source/model estimates remain open. E3 retains a commutative coefficient ring, finite decidable square index type, two inverse identities and an actual intertwining equality; no representation, L-group transfer, infinite product, continuation or divisor comparison is constructed. K3 is a correction check in ℤ[q], not a KL theory. S4 retains nonnegative weights, a common fixed finite channel type, 0 ≤ r < 1, every weighted column estimate and vanishing net source/model defect. Positivity of weights alone does not give channel separation, and no actual arithmetic forcing or readout is supplied.
 
 B1–B6 remain unresolved: compactification, cohomological comparison, completed zero detector, off-line-zero class, vanishing in the same degree/sheaf and their actual composition are missing. S1–S3 and S5–S6 retain exact version-binding, arithmetic error/rate, independence and noncircularity gaps from the original plan. Imported mathlib infrastructure and prior source-only candidates are not newly classified as source-specific suppliers.
+ 
+
+## Case KALININ-LIVSIC-PERIODIC-20261023 — necessary periodic-data obstruction only
+
+**Publication identity and version (independently checked against printed
+journal pages).** **Boris Kalinin**, *Livšic Theorem for matrix cocycles*,
+*Annals of Mathematics*, volume **173**, number 2 (**2011**), pp.
+**1025–1042**, stable DOI
+[10.4007/annals.2011.173.2.11](https://doi.org/10.4007/annals.2011.173.2.11),
+[official journal article](https://annals.math.princeton.edu/2011/173-2/p11)
+and [official 18-page PDF](https://annals.math.princeton.edu/wp-content/uploads/annals-v173-n2-p11-p.pdf).
+The identified paper’s **Introduction, displayed condition (1.1),
+printed p. 1025 (PDF index 0)** records *necessity* of identity
+periodic products for a pure coboundary.
+The paper’s distinct, much stronger **Theorem 1.1, printed
+p. 1027 (PDF index 2)** proves the **sufficiency**
+direction under its full dynamical/regularity hypotheses.
+These are not interchangeable formal proof obligations.
+The separate preprint is [arXiv:0808.0350v2](https://arxiv.org/abs/0808.0350v2),
+revision March 2010; the theorem/source identity used
+here is the **2011 published journal version**.
+No independent historical influence on GRWTSK or an
+unpublished manuscript follows from this idea correspondence.
+
+**Paper theorem, its exact hypotheses, and the chosen fragment.**
+Kalinin’s Theorem 1.1 assumes a **topologically transitive
+homeomorphism `f:X→X` of a compact metric space `X`** with
+the explicitly defined **closing property** and an
+**`α`-Hölder `A:X→GL(m,ℝ)`**. Its hypothesis
+`A(f^(n-1)p) ⋯ A(fp) A(p)=Id` holds for **every**
+periodic pair `(p,n)` satisfying `f^n p=p`.
+It concludes existence of an **`α`-Hölder**
+`C:X→GL(m,ℝ)` satisfying
+`A(x)=C(fx)C(x)⁻¹` for all `x`.
+The local formalization does **NOT** prove or use
+this sufficiency assertion. It formalizes only the
+elementary **necessary implication** described
+in the published **formula (1.1)**:
+if a supplied `B` satisfies this exact coboundary
+identity, its correctly ordered product telescopes
+to `B(f^n x) B(x)⁻¹`, hence equals identity at any
+explicitly provided periodic point.
+
+The local Lean version deliberately generalizes
+the **necessary algebra** to an arbitrary
+carrier `S`, **any** self-map `T:S→S` and **any**
+`[Group G]`. For the new necessary direction,
+`S` need not be topological, `T` need not be
+invertible or hyperbolic, and no matrix norm
+or Hölder/closing hypothesis is needed.
+Such generality is permitted only because the
+conclusion is strictly weaker than Kalinin’s
+Theorem 1.1: **no transfer function is constructed**.
+The hypotheses that are instead **actually used**
+are `IsPureCoboundary T A` (an **existentially
+supplied** `B`), an explicit natural return
+length `n`, and literal `T^[n] p=p`.
+The contrapositive additionally requires an
+**actual** nonidentity product witness, not a
+putative density or average observation.
+
+**Exact source normalization and fully qualified declarations.**
+The existing `GRWTSK.LinearAlgebra.CocycleProduct.cocycleProduct`
+uses the same chronological **newest-left**
+`A(T^[n-1]x) ⋯ A(Tx) A(x)` convention as
+Kalinin’s (1.1). Its imported source definition
+and `cocycleProduct_gauge` are in
+`GRWTSK/LinearAlgebra/CocycleProduct.lean`,
+Git blob **`464093299328bd804948a8959e603224418264f7`**,
+with direct upstream dependency
+`GRWTSK.LinearAlgebra.OrderedProductDeterminant`
+and pinned Mathlib. The parent’s **gauge**
+`A^B(x)=B(Tx)⁻¹ A(x) B(x)` is distinguished
+from the **paper’s pure coboundary**
+`A(x)=B(Tx)B(x)⁻¹`; they are linked through
+the exact inverse gauge, not identified.
+
+**New math source integrated on existing `main`:**
+[`GRWTSK/LinearAlgebra/PeriodicCocycleData.lean`](../../../../GRWTSK/LinearAlgebra/PeriodicCocycleData.lean),
+first source commit
+[`153ee97c6f1a12b9e98a18f72e961f8d6227b2e7`](https://github.com/grwtsk/math/commit/153ee97c6f1a12b9e98a18f72e961f8d6227b2e7),
+Git blob **`11ca2a896e8844dcb483ce9c910c1bb07ae857e1`**.
+An exact mathematical exposition was integrated
+at main commit **`84cb7607487d63b0117e482864d1f5e61cc58931`**,
+[`docs/mathematics/LinearAlgebra/periodic-cocycle-data.md`](../../../mathematics/LinearAlgebra/periodic-cocycle-data.md),
+Git blob **`9a163ead73c561b0a00bc3b80f7b16768b06f48d`**.
+
+Full names with prefix
+`GRWTSK.LinearAlgebra.PeriodicCocycleData.`:
+`IsPureCoboundary` (**definition, not an existence theorem**);
+`cocycleProduct_one`;
+`pureCoboundary_product`;
+`pureCoboundary_periodic_identity`;
+`nontrivial_periodic_product_not_coboundary`;
+`periodic_gauge_product_conjugate`;
+`periodic_gauge_product_one_iff`;
+`periodic_nontrivial_persists_under_gauge`;
+`no_gauge_trivializes_nontrivial_period`.
+Each is a **source proof candidate**, with its full
+literal type/hypotheses to be recorded in the
+pending compiler and axiom audit.
+The last four lemmas additionally express the
+correct **closed-orbit** gauge conjugacy and
+gauge-invariance of the identity predicate.
+They do not assert conjugation for a nonclosed
+orbit, equality of noncentral group holonomies,
+the existence of periodic points, or gauge
+boundedness/temperedness.
+
+**Provenance and logical classifications kept separate.**
+`imported-mathematics`: pinned Mathlib group/tactic
+infrastructure and the maintained
+`CocycleProduct` source, **not** a direct import
+of Kalinin’s complete paper proof.
+`source-proof-candidate`: eight new Lean
+theorems + explicit `IsPureCoboundary` definition.
+`conditional-interface`: any theorem consuming
+an **assumed** transfer `B`, periodic point
+and/or nonidentity monodromy; none establishes
+those witnesses for a source-defined irrational
+Farey cocycle.
+`finite-certificate`: exact independent exhaustive
+noncommutative `S₃` sanity checks on
+**46,656** three-step cocycle/gauge combinations,
+**38,880** nonidentity obstruction cases,
+and **216** explicit pure-coboundary cases,
+all passed; local preflight script SHA-256
+`12da87112c3b9bde1ccd97fb750aa604ec92acef50cf8f2ce5a26040b0a65048`.
+This is **not Lean proof evidence** and the script
+and actual runtime logs remain **outside `math`**.
+`methodological-analogy`: applying the necessity
+gate before a prospective Farey/continued-fraction
+global cocycle; it is not a checked Farey-to-Kalinin
+transport.
+`unresolved`: all sufficiency, analytic, geometric
+and actual nonperiodic dynamical suppliers named below.
+**No `local-proved-bridge` or
+`PAPER_TO_LEAN_BRIDGE_PROVED` label is assigned
+to this new source.**
+
+**Actual verification state — `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`.** Pinned `lean-toolchain`:
+`leanprover/lean4:v4.33.0`; `lake-manifest.json`
+pins Mathlib at
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The available runtime has no `lean`, `lake` or
+`leanchecker` executable. No module build, direct
+elaboration, fresh native kernel replay, or transitive
+`#print axioms`/generated/private/unsafe/native
+audit was executed for this source. In particular,
+the following are **proposed future commands,
+not past results**:
+
+```sh
+lake build --wfail GRWTSK.LinearAlgebra.CocycleProduct
+lake build --wfail GRWTSK.LinearAlgebra.PeriodicCocycleData
+lake env lean --trust=0 -DwarningAsError=true GRWTSK/LinearAlgebra/PeriodicCocycleData.lean
+lake env leanchecker --help
+# followed by the actual supported fresh checker invocation and
+# the full #check / #print axioms / generated-declaration audit.
+```
+
+A source readback, noncommutative finite computation,
+historical accepted source in another module, queued
+issue, or import presence is not a substitute
+for an actual checked-commit receipt. The specific
+module/dependency/source hashes, full axiom closure,
+executor commands, real exit statuses and receipt
+locations will be pinned in an independent
+validation issue. Operational runners, mutable
+receipts and schedules do **not** belong in this
+canonical mathematics repository.
+
+**Precisely missing bridges.** (1) An actual
+nonperiodic Farey or continued-fraction base
+homeomorphism, with the correct right-frame /
+left-column ordering and a specified group
+matrix cocycle; (2) a proof relating its
+periodic data to the finite `TurnwiseScalarObstruction`
+source without identifying a column action with
+the chronological Farey frame action;
+(3) a compact metric topologically transitive
+hyperbolic/closing system, `α`-Hölder `GL(m,ℝ)`
+cocycle, and all-periodic-pair triviality,
+if Kalinin’s **sufficient** direction is to be
+invoked; (4) a constructed regular and
+quantitatively admissible transfer, which is
+**not** supplied by a one-sided unrestricted
+gauge; (5) any infinite-volume Sturmian operator,
+Sarnak Möbius cancellation, Dirichlet `L`-function
+zero-free region, sofic approximation or RH
+identification. No theorem here proves any of
+those claims, nor any historical intellectual
+priority relationship.
+
 
 
 ## Second implementation pass for the seven unpublished research ideas
