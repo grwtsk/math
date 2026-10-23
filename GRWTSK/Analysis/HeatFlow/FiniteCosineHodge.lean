@@ -316,6 +316,36 @@ theorem finiteCosineTailBound
               exact mul_le_mul_of_nonneg_right hheat (abs_nonneg _)
             _ ≤ B := by simpa using hmajor u hu
 
+
+/-- A genuinely decaying majorant for the real finite heat integrand.
+This remains conditional on a supplied exponential kernel bound and
+does not assert that the actual theta kernel has yet been identified. -/
+theorem finiteCosineExponentialMajorant
+    (Φ : ℝ → ℝ) (s z u C c : ℝ)
+    (hs : 0 ≤ s) (hC : 0 ≤ C) (hc : 0 ≤ c)
+    (hkernel : |Φ u| ≤ C * Real.exp (-(c * u))) :
+    |Real.exp (-(s * u ^ 2)) * Φ u * Real.cos (z * u)| ≤
+      C * Real.exp (-(c * u)) := by
+  have hheat : Real.exp (-(s * u ^ 2)) ≤ 1 := by
+    apply Real.exp_le_one_iff.mpr
+    nlinarith [sq_nonneg u]
+  have hpos : 0 ≤ Real.exp (-(s * u ^ 2)) :=
+    (Real.exp_pos _).le
+  calc
+    |Real.exp (-(s * u ^ 2)) * Φ u * Real.cos (z * u)| =
+        Real.exp (-(s * u ^ 2)) * |Φ u| * |Real.cos (z * u)| := by
+          rw [abs_mul, abs_mul, abs_of_nonneg hpos]
+    _ ≤ Real.exp (-(s * u ^ 2)) * |Φ u| := by
+          apply mul_le_mul_of_nonneg_left
+          · exact mul_le_of_le_one_right (abs_nonneg _) (Real.abs_cos_le_one _)
+          · exact hpos
+    _ ≤ C * Real.exp (-(c * u)) := by
+          calc
+            Real.exp (-(s * u ^ 2)) * |Φ u| ≤ 1 * |Φ u| := by
+              exact mul_le_mul_of_nonneg_right hheat (abs_nonneg _)
+            _ ≤ C * Real.exp (-(c * u)) := by
+              simpa using hkernel
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
