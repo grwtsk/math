@@ -130,9 +130,7 @@ theorem sum_mertensEndpointPairSet_eq_strata
               .fourDistinct then F p.1 p.2 else 0)) := by
         apply Finset.sum_congr rfl
         intro p _hp
-        cases h :
-            mertensEndpointFourMobiusStratum b n p.1 p.2 <;>
-          simp [h]
+        cases mertensEndpointFourMobiusStratum b n p.1 p.2 <;> simp
     _ = _ := by
       simp only [Finset.sum_add_distrib]
 
@@ -141,8 +139,10 @@ theorem mertensEndpointFourMobiusStratum_eq_diagonal_iff
     (b n a c : ℕ) :
     mertensEndpointFourMobiusStratum b n a c = .diagonal ↔
       a = c := by
-  unfold mertensEndpointFourMobiusStratum
-  split_ifs <;> simp_all
+  dsimp only [mertensEndpointFourMobiusStratum]
+  by_cases hac : a = c <;>
+    by_cases hf : c = a + (b - n) <;>
+    by_cases hb : a = c + (b - n) <;> simp_all
 
 /-- Under the endpoint condition `n<b`, the forward cross stratum is exactly
 `a != c` and `c=a+h`. -/
@@ -151,8 +151,10 @@ theorem mertensEndpointFourMobiusStratum_eq_forwardCross_iff
     mertensEndpointFourMobiusStratum b n a c = .forwardCross ↔
       a ≠ c ∧ c = a + (b - n) := by
   have _hh : 0 < b - n := Nat.sub_pos_of_lt hnb
-  unfold mertensEndpointFourMobiusStratum
-  split_ifs <;> simp_all
+  dsimp only [mertensEndpointFourMobiusStratum]
+  by_cases hac : a = c <;>
+    by_cases hf : c = a + (b - n) <;>
+    by_cases hb : a = c + (b - n) <;> simp_all
 
 /-- Under `n<b`, the backward cross stratum is exactly the remaining
 orientation `a=c+h`. -/
@@ -161,8 +163,10 @@ theorem mertensEndpointFourMobiusStratum_eq_backwardCross_iff
     mertensEndpointFourMobiusStratum b n a c = .backwardCross ↔
       a ≠ c ∧ c ≠ a + (b - n) ∧ a = c + (b - n) := by
   have _hh : 0 < b - n := Nat.sub_pos_of_lt hnb
-  unfold mertensEndpointFourMobiusStratum
-  split_ifs <;> simp_all
+  dsimp only [mertensEndpointFourMobiusStratum]
+  by_cases hac : a = c <;>
+    by_cases hf : c = a + (b - n) <;>
+    by_cases hb : a = c + (b - n) <;> simp_all
 
 /-- The final stratum is exactly the absence of all three possible collision
 patterns. -/
@@ -170,8 +174,10 @@ theorem mertensEndpointFourMobiusStratum_eq_fourDistinct_iff
     {b n a c : ℕ} :
     mertensEndpointFourMobiusStratum b n a c = .fourDistinct ↔
       a ≠ c ∧ c ≠ a + (b - n) ∧ a ≠ c + (b - n) := by
-  unfold mertensEndpointFourMobiusStratum
-  split_ifs <;> simp_all
+  dsimp only [mertensEndpointFourMobiusStratum]
+  by_cases hac : a = c <;>
+    by_cases hf : c = a + (b - n) <;>
+    by_cases hb : a = c + (b - n) <;> simp_all
 
 /-- A four-distinct classified pair really gives four pairwise-distinct
 arguments when the shift is positive. -/
@@ -290,7 +296,9 @@ theorem mertensTwoPointEndpointFibreQuadraticEnergy_eq_collisionDecomposition
         unfold mertensEndpointPairSet
         rw [Finset.product_eq_sprod, Finset.sum_product]
     _ = _ := by
-      simp_rw [sum_mertensEndpointPairSet_eq_strata, Finset.sum_add_distrib]
+      have hsplit (n : ℕ) := sum_mertensEndpointPairSet_eq_strata b n
+        (mertensEndpointFourMobiusTerm b n)
+      simp_rw [hsplit, Finset.sum_add_distrib]
       ring
 
 /-- Reciprocal endpoint-weighted diagonal contribution. -/
