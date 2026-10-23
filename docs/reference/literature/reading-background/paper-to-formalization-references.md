@@ -5508,6 +5508,93 @@ and a source-exact Lean↔Rust/Python refinement.
 No theorem about the irrationality/transcendence
 of zero heights or an RH/GRH proof follows.
 
+## Case BOMBIERI-REPAIR-NECESSITY-20261023 — exact extra-observation separation
+
+**Exact publication/bibliographic boundary.** **Enrico Bombieri**,
+*Problems of the Millennium: the Riemann Hypothesis*,
+Clay Mathematics Institute description (**2000**;
+collected in *The Millennium Prize Problems*, **2006**),
+**Section V, printed pages 8–9**,
+[official stable publication URL](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf).
+The only paper statements consumed are the **two** positive-half-line
+zero moments of the **same** admissible complex test `g`:
+`∫₀∞g(x)dx=0` and `∫₀∞g(x)dx/x=0`.
+The factorization/reconstruction statement below is
+**new elementary repository-derived logic**, *not*
+Bombieri's theorem. It imports neither the complete
+regularity/decay class `W` nor Weil's explicit formula.
+
+**Exact formally authored source and hypotheses.**
+[Main integration `83002c3c42a43130dc4ec0a4b32b1b764773146d`](https://github.com/grwtsk/math/commit/83002c3c42a43130dc4ec0a4b32b1b764773146d),
+`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentRepairNecessity.lean`,
+blob `f52cbb3777afe4f90a9c14fede472d1ee1c3f013`,
+fully qualified declaration
+[`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity.extra_separates_corrected_of_third_recoverable`](https://github.com/grwtsk/math/blob/83002c3c42a43130dc4ec0a4b32b1b764773146d/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentRepairNecessity.lean#L32).
+It quantifies over an **arbitrary type** `W`, an
+`extra : Combination 2 → W`, and explicitly assumes
+
+```lean
+hrecover : FactorsThrough
+  (augmentedProfile bombieriMomentProfile extra)
+  thirdCoordinateReadout
+```
+
+It concludes **only**
+`extra correctedCoordinates ≠ extra (0 : Combination 2)`.
+The proof consumes the literal collision
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentInformationLossBridge.bombieri_corrected_zero_same_profile`
+(blob `6872d5305e9ce50387434fde6a92784866896783`)
+and `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.thirdCoordinateReadout_separates`
+(blob `ebfa664d3b8fb4ecd3f70c3ee6a989c3d14e485f`).
+Its direct import is
+`CanonicalSquareTentRedundantObservation.lean`,
+blob `0a3693d1a1a0832f322c8379863d6e616619ca60`;
+this and the upstream logical `FactorsThrough` interface
+must be in the actual transitive compilation audit.
+There is no claim that `extra` exists, computes a
+classical zeta functional or is injective on the
+source coefficient space. A **necessary** witness
+separation is not a **sufficient** global decoder criterion.
+
+**Separated relationship and evidence states.**
+Imported mathematics: existing Lean/Mathlib algebra and
+previously authored moment/profile collision, **not**
+Bombieri's full criterion. Kernel-verified source-exact
+paper bridge: **NONE established**. Source proof
+candidate: the newly committed conditional necessity
+theorem; its formal hypothesis `hrecover` remains
+visible. Conditional interface: arbitrary added
+observation and its supplied `FactorsThrough` proof.
+Finite evidence: none used to prove a universal
+statement. Analogy: generic information recovery only;
+no historical reading, influence, authorship transfer
+or relation to Huffman's optimality follows from the
+shared vocabulary. Unresolved: any actual classical
+Weil-form readout, full `W` admissibility, signed
+all-pairs comparison, source normalization, test
+density/continuity and zero-tail control, plus RH.
+
+**Actual checking at this source commit:** Git blob
+and theorem statement were **read**, not compiled.
+The available local environment lacks `lean`,
+`lake`, `elan` and `leanchecker` (**127**);
+no matched fresh same-commit kernel/axiom receipt has
+been produced by this review. Required commands for
+a separately authorized exact checkout — **NOT_RUN**:
+`lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity`;
+`lake env leanchecker --fresh -v GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity`;
+`lake env lean --trust=0 --wfail /EXTERNAL/PINNED/repair_axioms.lean`
+with `#print axioms GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity.extra_separates_corrected_of_third_recoverable`
+and full transitive private/generated/native/unsafe
+audit. Locked Lean is `v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+**SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXIOMS NOT_RUN / NO_RECEIPT.**
+Root import/promotion, automated remote execution, Railway,
+force push and inference of RH from the fiber collision
+remain prohibited; operational receipts belong in
+`grwtsk/noeaaeue`.
+
 ## Case CLASSICAL-RIESZ-AND-STRICT-GAP-20261023 — normalization and limit boundaries
 
 **Reference boundary.** Repository-derived 2026 increments, grwtsk contributors with OpenAI formalization assistance; no newly claimed paper theorem or historical attribution (external title/authors/year/DOI/arXiv NOT APPLICABLE). Imported special values, Bernoulli evaluation, finite-set facts and calculus are Mathlib mathematics at `db584cd6d46c92f209a44c0f1c829460d327499d`. Source identities: [HurwitzZetaValues](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/LSeries/HurwitzZetaValues.lean), [ZetaAsymp](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean). Similarity to a compactness or inverse-problem method establishes no historical influence.
@@ -5637,3 +5724,14 @@ The newer GF128/RS source closure is pinned independently and its full replay
 is reported by the downstream binding. No claim about unexecuted
 Huffman–Bombieri or other expanded import closures follows from either codec
 receipt. The public root import and unrelated theorem statuses are unchanged.
+
+
+## Case BOMBIERI-REPAIR-NECESSITY-20261023 — exact witness-separation condition
+
+**Bibliographic identity:** 2026 repository-derived theorem candidate with OpenAI formalization assistance, not a newly imported external paper theorem. External paper title, authors/byline, year/version, stable DOI/arXiv and theorem locator: **NOT APPLICABLE**; no historical influence inferred from analogies to Bombieri or Weil.
+
+**Exact statement:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentRepairNecessity.extra_separates_corrected_of_third_recoverable` assumes arbitrary type W and `extra : Combination 2 → W`, together with the **explicit factorization** of the actual `thirdCoordinateReadout` through `augmentedProfile bombieriMomentProfile extra`. It concludes `extra correctedCoordinates ≠ extra 0`, using `bombieri_corrected_zero_same_profile` and `thirdCoordinateReadout_separates`. This is a **necessary witness-separation test, not sufficient for global reconstruction**, not classical Guinand–Weil transport, positivity, density, admissibility or RH.
+
+**Source binding:** [`grwtsk/math@83002c3c42a43130dc4ec0a4b32b1b764773146d`](https://github.com/grwtsk/math/commit/83002c3c42a43130dc4ec0a4b32b1b764773146d), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentRepairNecessity.lean` blob `f52cbb3777afe4f90a9c14fede472d1ee1c3f013`; direct import `CanonicalSquareTentRedundantObservation` blob `0a3693d1a1a0832f322c8379863d6e616619ca60`, and complete transitive source closure pending actual execution.
+
+**Classification and real evidence:** Imported external paper mathematics: none. Kernel-verified bridge: **not established**. Source-proof-candidate: new necessary obstruction. Conditional interface: an independently supplied `FactorsThrough` proof. Finite evidence: none newly claimed. Analogy: information-theoretic repair of a collision, not historical influence. Unresolved: actual analytic Weil bridge, full Lean elaboration, fresh kernel and transitive axiom audit. [Verification #1145](https://github.com/grwtsk/math/issues/1145) pins Lean 4.33.0 and Mathlib db584cd6d46c92f209a44c0f1c829460d327499d with exact commands. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Operational receipts in grwtsk/noeaaeue, not math; root import withheld.
