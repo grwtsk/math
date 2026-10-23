@@ -2,7 +2,7 @@ import Lean
 import Std
 import Init.Data.Rat
 import Init.GrindInstances.Ring.Rat
-import PaperLocalGlobal
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FunctionGluing.Basic
 
 /-!
 WAVEFORM-CELL-1: authored finite reference laws, not an analytic Mellin transform,
