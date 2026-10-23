@@ -96,7 +96,7 @@ a universal local factorization for all of `E(ℚ)`.
 **Verification:** finite, exact Python/BigInt replays are reported in
 [math #1049](https://github.com/grwtsk/math/issues/1049) (32 point
 equations, 1024 bits, inverse matrix, 17 exceptional derivative cases);
-those are **not** native Lean/kernal receipts. The formal declarations
+those are **not** native Lean/kernel receipts. The formal declarations
 remain `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED` for the relevant
 unverified modules. No unconditional `rank E(ℚ) ≥ 32` theorem is
 established in the repository.
