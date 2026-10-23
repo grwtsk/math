@@ -6,6 +6,14 @@ This is the authoritative path assignment for the pilot's persistent IDs. Labels
 
 ## Concepts, alphabetically by current English label
 
+Source-reviewed resource additions (canonical identities; proposed resource kinds,
+not subject nodes):
+
+| Label / canonical page | Persistent identifier |
+| --- | --- |
+| [Conditional mathematical interface](facets/resources/conditional-interface.md) | `urn:uuid:30401bfc-5e4f-403d-adad-ef76a037720d` |
+| [Formalization support specification](facets/resources/support-specification.md) | `urn:uuid:f633a28f-ee02-40ab-8f58-2d5f75f0a161` |
+
 Source-signal draft additions (canonical identities; all proposed):
 
 | Label / canonical page | Persistent identifier |
