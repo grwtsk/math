@@ -305,7 +305,6 @@ theorem vonMangoldt_eq_authentic_matched_add_all_defects
               Real.log ((n / 2 : ℕ) : ℝ) else 0)) := by
   rw [vonMangoldt_eq_positiveAnchored_add_boundary hn,
     anchoredPositiveDivisor_eq_authentic_matched_add_omitted hn H]
-  ring
 
 /-- The Green observable rebuilt from genuine centered-family amplitudes
 and the COMPLETE signed source defects, with no change of window, 1/n,
@@ -330,7 +329,6 @@ theorem centeredGreenPrimeCoordinate_eq_authentic_corrected
   intro n hn
   unfold centeredGreenArithmeticCoefficient
   rw [vonMangoldt_eq_authentic_matched_add_all_defects hn H]
-  rfl
 
 /-- The original historical Fourier coordinate consumes the exact identity
 with its continuum background kept separate. No L², RH-scale, or Weil-form
