@@ -115,7 +115,7 @@ theorem anchoredFiniteGreenDivisorTransform_eq_positive_add_boundary
       simp [hmem, hpos, hne]
     · have hz : (anchoredMobiusPair p.1).h = 0 :=
         Nat.eq_zero_of_not_pos hpos
-      simp [hmem, hpos, hz]
+      simp [hmem, hz]
   · simp [hmem]
 
 /-- An explicit arithmetic low-factor sum, retaining the exact real
@@ -171,7 +171,6 @@ private theorem secondFactorMobiusLog_eq
       else 0) =
       if 2 ∣ n then -Real.log ((n / 2 : ℕ) : ℝ) else 0 := by
   have hmu2 : (ArithmeticFunction.moebius 2 : ℝ) = -1 := by
-    change ((ArithmeticFunction.moebius 2 : ℤ) : ℝ) = -1
     rw [ArithmeticFunction.moebius_apply_prime
       (by norm_num : Nat.Prime 2)]
     norm_num

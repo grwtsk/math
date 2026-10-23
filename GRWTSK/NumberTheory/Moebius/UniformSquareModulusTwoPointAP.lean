@@ -66,8 +66,7 @@ theorem mertensEndpointCrossCongruenceL1Mass_le_endpoint_mul
     _ ≤ (b : ℝ) * B := by
       apply mul_le_mul_of_nonneg_right ?_ hB
       norm_cast
-      simp [Finset.card_Ico]
-      omega
+      simp [Nat.card_Ico]
 
 /-- Multiplying the reciprocal endpoint drop by the endpoint leaves exactly
 the next reciprocal. -/
@@ -78,13 +77,14 @@ theorem reciprocalEndpointDrop_mul_endpoint_eq
   have hb0 : (b : ℝ) ≠ 0 := by exact_mod_cast (ne_of_gt hb)
   have hb10 : (((b + 1 : ℕ) : ℝ)) ≠ 0 := by positivity
   field_simp
+  push_cast
   ring
 
 /-- One dyadic endpoint block has exactly `2^j` integer endpoints. -/
 theorem card_dyadicEndpointIco
     (j : ℕ) :
     (Finset.Ico (2 ^ j) (2 ^ (j + 1))).card = 2 ^ j := by
-  rw [Finset.card_Ico, pow_succ]
+  rw [Nat.card_Ico, pow_succ]
   omega
 
 /-- The reciprocal endpoint factor multiplied by the endpoint is at most the
@@ -163,7 +163,6 @@ theorem weightedMertensEndpointCrossCongruenceL1Majorant_le_of_uniformFibres
       rw [hcard]
       have hX0 : (X : ℝ) ≠ 0 := ne_of_gt hXRpos
       field_simp
-      ring
 
 /-- The uniform square-modulus AP supplier discharges the weighted congruence
 L1 supplier. -/

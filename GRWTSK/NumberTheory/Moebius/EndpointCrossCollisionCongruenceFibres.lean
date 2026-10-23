@@ -101,6 +101,9 @@ theorem squareDivisorMobiusSum_eq_fixedEndpointRange
 def squareDivisorCongruence (d m : ℕ) : Prop :=
   Nat.ModEq (d * d) m 0
 
+instance (d m : ℕ) : Decidable (squareDivisorCongruence d m) :=
+  inferInstanceAs (Decidable (Nat.ModEq (d * d) m 0))
+
 theorem squareDivisorCongruence_iff
     (d m : ℕ) :
     squareDivisorCongruence d m ↔ d * d ∣ m := by
@@ -168,6 +171,8 @@ theorem mertensEndpointCrossCollisionDivisorSquareSieveEnergy_eq_congruenceExpan
   intro a ha
   obtain ⟨hmpos, hmb⟩ :=
     mertensCrossCollisionMidpoint_pos_lt_endpoint hn ha
+  change mertensSquarefreeMidpointEndpointProduct (b - n) a *
+    squareDivisorMobiusSum (mertensCrossCollisionMidpoint b n a) = _
   rw [squareDivisorMobiusSum_eq_fixedCongruenceRange hmpos hmb]
   simp_rw [Finset.mul_sum]
   apply Finset.sum_congr rfl
@@ -200,14 +205,12 @@ theorem mertensEndpointCrossCollisionCongruenceExpandedEnergy_eq_fibres
   apply congrArg (fun x : ℝ => 2 * x)
   simp_rw [Finset.sum_filter]
   simp_rw [Finset.mul_sum]
-  simp_rw [Finset.sum_mul]
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro n _hn
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro d _hd
-  ring_nf
-  congr 1
-  apply Finset.sum_congr rfl
-  intro n _hn
   apply Finset.sum_congr rfl
   intro a _ha
   by_cases hc :
@@ -228,7 +231,7 @@ theorem mertensEndpointCrossCollisionDivisorSquareSieveEnergy_eq_congruenceFibre
 /-- RH-facing reciprocal endpoint-weighted congruence-fibre observable. -/
 def weightedMertensEndpointCrossCollisionCongruenceFibreEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointCrossCollisionCongruenceFibreEnergy b
 
