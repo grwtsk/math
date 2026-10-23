@@ -346,6 +346,33 @@ theorem finiteCosineExponentialMajorant
             _ ≤ C * Real.exp (-(c * u)) := by
               simpa using hkernel
 
+
+/-- Explicit positive-rate exponential tail budget. The identity is algebraic;
+a separate analytic integral comparison must show that this budget controls
+the actual theta-kernel tail. -/
+def exponentialTailBudget (C c U : ℝ) : ℝ :=
+  C * Real.exp (-(c * U)) / c
+
+/-- The exponential tail budget is nonnegative for positive rate and
+nonnegative amplitude. -/
+theorem exponentialTailBudget_nonneg
+    (C c U : ℝ) (hC : 0 ≤ C) (hc : 0 < c) :
+    0 ≤ exponentialTailBudget C c U := by
+  unfold exponentialTailBudget
+  positivity
+
+/-- The cutoff budget is monotone: a later cutoff has no larger
+exponential majorant, provided the decay rate is strictly positive. -/
+theorem exponentialTailBudget_antitone
+    (C c U V : ℝ) (hC : 0 ≤ C) (hc : 0 < c)
+    (hUV : U ≤ V) :
+    exponentialTailBudget C c V ≤ exponentialTailBudget C c U := by
+  unfold exponentialTailBudget
+  apply div_le_div_of_nonneg_right _ hc.le
+  apply mul_le_mul_of_nonneg_left _ hC
+  apply Real.exp_le_exp.mpr
+  nlinarith
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
