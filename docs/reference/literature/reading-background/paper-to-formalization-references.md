@@ -2193,3 +2193,167 @@ spectral gap, Dry Ten Martini theorem, globally descended quarter-turn character
 nonperiodic Möbius cancellation, L-function estimate, elliptic rank or RH is
 proved. The distinct concurrently added `HeatCompensatedReturn` and unrelated
 new density, gauge and group modules are outside this validation claim.
+
+
+## Case FAREY-TURNWISE-SCALAR-20261023 — scalar-return extension obstruction
+
+**Original source identity and external-paper boundary.** This is a
+2026 **repository-derived** finite representation theorem candidate,
+source-credited to mathematical direction by **R.A. Jacob Martone**
+and formalization assistance by **OpenAI**. It is **not**
+a theorem imported from an independently identified paper;
+there is no separate external publication title/author/year/
+DOI/theorem locator asserted for this specific `ZMod 3`
+Farey turnwise-scalar no-go. Stable source identity is
+[`grwtsk/math@98bada8f6029c75df85402c9ba7f6b7ec00da111`](https://github.com/grwtsk/math/commit/98bada8f6029c75df85402c9ba7f6b7ec00da111),
+`GRWTSK/NumberTheory/Farey/TurnwiseScalarObstruction.lean`,
+Git blob **`ba99ad673f032e44eb14a4564f5488cfd31af0f1`**.
+The [full mathematical scope note](../../../mathematics/NumberTheory/Farey/turnwise-scalar-obstruction.md)
+contains the exact orbit and right-product order convention.
+
+**Exact method, hypotheses and conclusion.** The source positive
+Farey alphabet uses `L=[[1,0],[1,1]]`,
+`R=[[1,1],[0,1]]` over `ZMod 3`;
+the chronological word `[left,right]` is represented by
+`H=LR=[[1,1],[1,2]]`, as an actual integer
+Farey-frame right product reduced to `ZMod 3`.
+For arbitrary **complex-valued**
+`f:(Fin 2→ZMod 3)→ℂ`, scalar `a:ℂ`,
+and SOURCE initial vector `v0=(1,0)`,
+the generic new negative theorem retains **three separate
+hypotheses**:
+(1) `∀v,f(Lv)=a*f(v)`;
+(2) `f(Hv0)=-f(v0)`;
+(3) `f(v0)≠0`. The actual generator orbit
+`v0=(1,0)→v1=(1,1)→v2=(1,2)→v0`
+and `Hv0=Lv0=v1` force `a=-1` and
+`a³=1`, a contradiction over `ℂ`.
+No nonzero, root-of-unity, unitarity, boundedness,
+positivity or character hypothesis is **assumed** on
+`a`. Consequently the previously source-defined
+`projectiveQuadraticReadout`, which has
+`f(Hv)=-f(v)` globally and `f(v0)=1`,
+cannot be a full-vector eigenfunction of **L**
+alone, and cannot have fixed scalar eigenvalues
+simultaneously for both L and R. This obstruction is
+for the **specified return-`-1` observation
+and nonzero source basepoint**; it does **not**
+claim that no nonconstant matrix-valued or other
+scalar observation could exist for the whole monoid.
+
+**Correct arbitrary-word representation.** The positive
+Farey matrix-word source `modThreeWord` admits
+`M(u++v)=M(u)*M(v)` with fixed chronology,
+and defines `wordState(w,x)=M(w).mulVec x`.
+For a **fixed column** state,
+`wordState(u++v,x)=wordState(u,wordState(v,x))`:
+the **right** block is applied first to columns.
+That is not the chronological application of
+turns to Farey cells, whose **FRAME** acts on
+the right. This source-distinction is explicit.
+The corresponding `wordSignal(w,x)=f(wordState(w,x))`
+satisfies the analogous concatenation formula
+and is sign-invariant for ALL finite words,
+but does **not** satisfy a universal scalar
+letterwise product. The selected return retains
+`wordSignal([left,right],x)=-f(x)`.
+
+**Formal declarations, commit and precise source ownership.**
+Every name below has prefix
+`GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction.`:
+`leftStep`, `rightStep`, `leftThird`,
+`leftStep_zero`, `leftStep_one`,
+`leftStep_two`, `returnStep_zero`,
+`no_scalar_left_extension_of_negative_return`,
+`quadraticReadout_no_scalar_left`,
+`quadraticReadout_no_turnwise_scalars`,
+`modThreeWord_append`, `wordState`,
+`wordState_append`, `anyMatrix_mulVec_neg`,
+`wordSignal`, `wordSignal_append`,
+`wordSignal_sign_invariant`,
+`wordSignal_selected_return`.
+The exact introduction commit/blob is given above.
+The direct repository dependency
+`GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel`,
+blob `b07cb18412f3e64f42d2916fea91b1e59b2228c2`,
+provides the parent fully defined `F₃`
+quadratic/projective readout and the actual source
+word module; it imports the repaired
+`ReturnAngularProjectiveObstruction` and
+the full Farey/Mathlib closure.
+A later source-validated parent snapshot
+`9374e112a911a42b6e355127bbce529567006b70`
+has `ReturnAngularProjectiveObstruction`
+blob `14419d94086337a48a1e99eb3ba1b0cf29ddcd62`
+and `ReturnAngularChannel` blob
+`96af81229ee06c47b3bbb81740319d097d51f0e1`;
+these **current source identities**, not obsolete blobs,
+must be used by a fresh dependent replay.
+
+**External named comparisons (not paper theorem ports).**
+**Peter Sarnak**, *Three Lectures on the Mobius Function:
+Randomness and Dynamics* (**2011**, IAS lectures),
+[IAS stable record](https://publications.ias.edu/sarnak/paper/506),
+**Definition 3 / Conjecture 4**, requires
+a compact metric zero-entropy flow, continuous
+observation and genuine Möbius ordinary-average
+cancellation, none of which is supplied here.
+**Ram Band, Siegfried Beckus and Raphael Loewy**,
+*The Dry Ten Martini Problem for Sturmian Hamiltonians*
+(**2024** preprint,
+[arXiv:2402.16703](https://arxiv.org/abs/2402.16703)),
+**equation (1.1) and Theorem 1.1**:
+the paper's rotation-coded potential and its
+irrational-frequency, **nonzero-coupling**
+gap-opening theorem do not follow from the
+finite matrix return or its `ZMod3` reduction.
+These comparisons remain **`methodological-analogy`
+or `unresolved`**, not
+`direct-import` or `local-proved-bridge`.
+
+**Actual verification and pending checks.**
+This **new** source is `source-proof-candidate`,
+`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`.
+Independent exact SymPy arithmetic checked **127**
+positive L/R words of lengths 0..6,
+**769** concatenation/source matrix-order splits,
+**1,143** antipodal signal cases, and the
+actual L three-cycle readout `1,-1,0,1`.
+They are `finite-certificate`, **not Lean evidence**.
+The prior eight-module finite Farey parent scope
+was locally kernel-verified at immutable source
+`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`
+and the distinct eight-module **remaining**
+scope at `9374e112a911a42b6e355127bbce529567006b70`,
+as separately documented above with actual
+execution commands, exit-zero statuses and
+external local receipts. **Neither source scope
+covers this new leaf or its
+`ProjectiveQuadraticChannel` parent**, which remains
+independently pending [#1111](https://github.com/grwtsk/math/issues/1111).
+No completed compilation, fresh kernel or
+transitive generated/unsafe axiom audit has
+been reported for this new leaf.
+Pinned `leanprover/lean4:v4.33.0`,
+Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+Pending verification must use the *new exact
+main commit and transitive source hashes*,
+not a prior source scan or an unrelated
+parent receipt.
+
+**Missing supplier and nonclaims.**
+No nonperiodic continued-fraction base rotation
+is identified with this arbitrary finite-word
+input; no infinite ordered-product limit,
+analytic spectral observation, nilflow,
+Möbius orthogonality, Sturmian spectral gap,
+Dirichlet L-function zero region, Hodge
+conjecture, elliptic rank bound or RH is
+derived. A correct chronological
+left-column cocycle must additionally
+address the **right-multiplication frame
+versus left-column product order**;
+a matrix-state observation alone
+does not automatically supply a
+physical winding rate.
+
