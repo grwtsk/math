@@ -1,0 +1,72 @@
+version = "0.1"
+status = "SOURCE_DRAFT"
+repository = "grwtsk/math"
+base_branch = "research/451-rh-witness-registry-20261021"
+base_commit = "276c5c240d82bd91be69fecc3434d149d66c0c05"
+
+[[files]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RiemannWitnessBoundaryResolution.lean"
+role = "metadata overlay resolving one historical label"
+
+[[files]]
+path = "docs/mathematics/NumberTheory/Zeta/riemann-boundary-witness-resolution.md"
+role = "source and scope note"
+
+[source]
+repository = "grwtsk/formal-research"
+issue = 16
+pull_request = 289
+accepted_main_commit = "dc96769a40980ba724fa248c00541f594ad00080"
+
+[[source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceFirstPrimeAbel.lean"
+name = "FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.CriticalAbelTailLowerBound"
+role = "exact open signed Abel witness"
+
+[[source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceFirstPrimeAbel.lean"
+name = "FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel.firstPrime_tail_iff_criticalAbel_tail"
+role = "exact witness equivalence"
+
+[[source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourcePrimePowerPartition.lean"
+name = "FormalResearch.RiemannHypothesis.SourcePrimePowerPartition.estimate_of_firstPrime_tail"
+role = "accepted-main estimate consumer"
+
+[[source.declarations]]
+path = "FormalResearch/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/CorrelationAssembly.lean"
+name = "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation"
+role = "all-scale lower-bound target"
+
+[[source.declarations]]
+path = "FormalResearch/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/CorrelationAssembly.lean"
+name = "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.BridgeObligation"
+role = "separate open RH bridge"
+
+[evidence]
+source_repository_kernel_checked = true
+source_repository_trust_audited = true
+local_import = false
+local_elaborated = false
+local_kernel_checked = false
+local_trust_audited = false
+cross_repository_replayed = false
+analytic_premises_discharged = false
+witness_constructed = false
+rh_bridge_discharged = false
+
+[resolution]
+historical_label = "boundary-layer witness"
+registry_id = "boundaryLayerWitnessLabel"
+new_status = "EXTERNAL_SOURCE_BOUND"
+quintic_label_status = "UNRESOLVED_LABEL"
+finite_scale_filter_label_status = "UNRESOLVED_LABEL"
+
+hostile_controls = [
+  "Do not treat an exact external source reference as a local theorem.",
+  "Do not treat CriticalAbelTailLowerBound as inhabited.",
+  "Do not collapse EstimateObligation and BridgeObligation.",
+  "Do not infer RH from the accepted estimate adapter without the witness and bridge.",
+  "Do not identify the boundary witness with rectangle, Mobius endpoint, or reflection-cover routes.",
+  "Do not resolve quintic or finite-scale-filter labels by analogy."
+]
