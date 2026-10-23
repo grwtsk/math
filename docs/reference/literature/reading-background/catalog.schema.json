@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "properties": {
     "schema_version": {
-      "const": 1
+      "const": 2
     },
     "sources": {
       "type": "array",
@@ -30,7 +30,8 @@
             "enum": [
               "extracted-unverified",
               "human-confirmed",
-              "filename-only"
+              "filename-only",
+              "verified-in-paper"
             ]
           },
           "bibliographic_claims": {
@@ -142,6 +143,868 @@
               "ATTRIBUTION_CLARIFICATION_NEEDED",
               "reviewed"
             ]
+          },
+          "bibliography": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "title": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "printed_byline": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "authors": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "doi": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "arxiv_id": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "arxiv_version": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "version_label": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "publication_date": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "status": {
+                    "enum": [
+                      "verified-in-paper",
+                      "verified-primary-record",
+                      "owner-reported",
+                      "filename-candidate",
+                      "not-located",
+                      "not-established",
+                      "conflicting",
+                      "extracted-unverified"
+                    ]
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "kind": {
+                          "enum": [
+                            "pdf",
+                            "arxiv",
+                            "crossref",
+                            "owner-report"
+                          ]
+                        },
+                        "asset_sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "pdf_page": {
+                          "type": [
+                            "integer",
+                            "null"
+                          ],
+                          "minimum": 1
+                        },
+                        "url": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "locator": {
+                          "type": "string"
+                        },
+                        "excerpt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "kind",
+                        "asset_sha256",
+                        "pdf_page",
+                        "url",
+                        "locator",
+                        "excerpt"
+                      ]
+                    }
+                  },
+                  "notes": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "value",
+                  "status",
+                  "evidence",
+                  "notes"
+                ]
+              },
+              "publication_status": {
+                "type": "string"
+              },
+              "dates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "value": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "enum": [
+                        "verified-in-paper",
+                        "verified-primary-record",
+                        "owner-reported",
+                        "filename-candidate",
+                        "not-located",
+                        "not-established",
+                        "conflicting",
+                        "extracted-unverified"
+                      ]
+                    },
+                    "scope": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "kind": {
+                            "enum": [
+                              "pdf",
+                              "arxiv",
+                              "crossref",
+                              "owner-report"
+                            ]
+                          },
+                          "asset_sha256": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "pdf_page": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ],
+                            "minimum": 1
+                          },
+                          "url": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "locator": {
+                            "type": "string"
+                          },
+                          "excerpt": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "asset_sha256",
+                          "pdf_page",
+                          "url",
+                          "locator",
+                          "excerpt"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "kind",
+                    "status",
+                    "scope",
+                    "evidence"
+                  ]
+                }
+              },
+              "related_publications": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "doi": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "const": "needs-review"
+                    },
+                    "scope": {
+                      "type": "string"
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "kind": {
+                            "enum": [
+                              "pdf",
+                              "arxiv",
+                              "crossref",
+                              "owner-report"
+                            ]
+                          },
+                          "asset_sha256": {
+                            "type": "string",
+                            "pattern": "^[a-f0-9]{64}$"
+                          },
+                          "pdf_page": {
+                            "type": [
+                              "integer",
+                              "null"
+                            ],
+                            "minimum": 1
+                          },
+                          "url": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "locator": {
+                            "type": "string"
+                          },
+                          "excerpt": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "kind",
+                          "asset_sha256",
+                          "pdf_page",
+                          "url",
+                          "locator",
+                          "excerpt"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "doi",
+                    "title",
+                    "status",
+                    "scope",
+                    "evidence"
+                  ]
+                }
+              },
+              "uncertainties": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "title",
+              "printed_byline",
+              "authors",
+              "doi",
+              "arxiv_id",
+              "arxiv_version",
+              "version_label",
+              "publication_date",
+              "publication_status",
+              "dates",
+              "related_publications",
+              "uncertainties"
+            ]
           }
         },
         "required": [
@@ -153,7 +1016,8 @@
           "identifiers",
           "versions",
           "reading_status",
-          "attribution_status"
+          "attribution_status",
+          "bibliography"
         ]
       }
     },
@@ -370,6 +1234,33 @@
           "date"
         ]
       }
+    },
+    "owner_reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reported_by": {
+            "type": "string"
+          },
+          "reported_on": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "reported_by",
+          "reported_on",
+          "statement",
+          "scope"
+        ]
+      }
     }
   },
   "required": [
@@ -378,7 +1269,8 @@
     "ideas",
     "understandings",
     "formalization_links",
-    "dates"
+    "dates",
+    "owner_reports"
   ],
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Reading background and intellectual lineage",
