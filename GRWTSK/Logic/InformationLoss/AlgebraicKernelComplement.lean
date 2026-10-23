@@ -4,7 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No public root import.
 -/
 import GRWTSK.Logic.InformationLoss.KernelComplementExistence
-import Mathlib.LinearAlgebra.Dimension.Finrank
+import Mathlib.LinearAlgebra.Basis.VectorSpace
 
 /-!
 # Kernel complement availability and optimal added measurement
