@@ -1,0 +1,169 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-half-index-affine-633-v0.1"
+owner_repository = "grwtsk/math"
+issue = 633
+parent_issue = 629
+parent_pr = 631
+signed_residue_issue = 625
+signed_residue_pr = 626
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_HALF_INDEX_PHASE_NORMALIZATION_SOURCE_DRAFT_HALF_INDEX_AFFINE_CHOWLA_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.GrowingShiftAffineChowlaHalfIndex"
+build_target = "GRWTSK.NumberTheory.Moebius.GrowingShiftAffineChowlaHalfIndex"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-signed-affine-chowla-629-20261021"
+stacked_parent_revision = "6d2674d6b8a7315aefe9298dfddc03ef35b0128a"
+stacked_parent_tree = "011c9e1632311b1b99b61f2fe32b8d27c8955b4e"
+candidate_branch = "research/rh-half-index-affine-633-20261021"
+theorem_source_commit = "f3d23520a2d4a6bdce2ca3e1c6b2c9b5f4b525ec"
+theorem_source_tree = "ab7082b6ac48f343550ad3644dff8785424c5fd6"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/GrowingShiftAffineChowlaHalfIndex.lean"
+theorem_source_git_blob = "960b500023bb3684ca18ae2549b98d9107aee7b3"
+mathematical_note_commit = "f73eb0b835f850d8287c5a7d45eef7deeb482c0b"
+mathematical_note_tree = "b9e75b97bbe6f29263c0e1f36a102e5654da95de"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/growing-shift-affine-chowla-half-index.md"
+mathematical_note_git_blob = "dc5264c8f211b558729b2f5a1eceffafee60cf91"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+half_index_support = "parityHalfIndexAffineBaseSet"
+base_to_half = "halfIndex_mem_of_parityAffineBase"
+half_to_base = "parityAffineBase_mem_of_halfIndex"
+base_inverse = "two_mul_half_add_parity_eq"
+half_inverse = "reconstructedParity_half_eq"
+finite_sum_reindex = "sum_parityAffineShiftBaseSet_eq_halfIndex"
+lower_affine_form = "halfIndexLowerAffineForm"
+upper_affine_form = "halfIndexUpperAffineForm"
+doubled_frequency = "doubledSquareModulusFrequency"
+shift_phase = "affineChowlaShiftPhase"
+half_index_core = "halfIndexAffineChowlaCore"
+coordinate_reconstruction = "parityAffineShiftResidueCoordinate_reconstructed"
+phase_factorization = "stdAddChar_affineShift_eq_shift_mul_doubled"
+twist_factorization = "parityGrowingShiftAffineChowlaTwist_eq_halfIndex"
+shift_aggregate = "halfIndexAffineChowlaShiftAggregate"
+shift_aggregate_equality = "sum_growingShiftAffineChowlaTwist_eq_halfIndexAggregate"
+frequency_majorant = "halfIndexAffineChowlaFrequencyMajorant"
+frequency_surface_equality = "halfIndexAffineChowlaFrequencyMajorant_eq_growingShift"
+modulus_majorant = "halfIndexAffineChowlaNonzeroModulusMajorant"
+modulus_surface_equality = "halfIndexAffineChowlaNonzeroModulusMajorant_eq_growingShift"
+endpoint_majorant = "halfIndexAffineChowlaEndpointMajorant"
+endpoint_surface_equality = "halfIndexAffineChowlaEndpointMajorant_eq_growingShift"
+all_scale_supplier = "DyadicNaturalScaleHalfIndexAffineChowlaBudget"
+supplier_equivalence = "dyadicNaturalScaleHalfIndexAffineChowlaBudget_iff_growingShift"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_halfIndexAffineChowla"
+proof_classification = "EXACT_FINITE_PARITY_REINDEX_AND_SHIFT_PHASE_FACTORIZATION"
+
+[half_index]
+substitution = "u=2*m+r"
+parities = [0, 1]
+lower_form = "2*m+r"
+upper_form = "2*m+r+2*h"
+support = "1<=2*m+r and 2*m+r+2*h<=b"
+endpoint_support_preserved = true
+
+[phase_factorization]
+original_coordinate = "2*floor(u/2)+h"
+normalized_coordinate = "2*m+h"
+formula = "e_q(k*(2*m+h))=e_q(k*h)*e_q((2*k)*m)"
+shift_phase_retained_inside_shift_sum = true
+doubled_frequency_reindexed = false
+doubling_assumed_invertible = false
+square_modulus_preserved = true
+
+[consumer_surfaces]
+frequency_exact_equality = true
+modulus_exact_equality = true
+endpoint_exact_equality = true
+nonzero_frequency_range_preserved = true
+normalization = "1/d^2"
+absolute_value_before_shift_sum = false
+all_scale_target = "C_delta*X*X^delta"
+source_identical_representation = true
+
+[fixed_form_boundary]
+generic_adapter = "ToHalfIndexAffineChowlaBudgetAdapter"
+data = "FixedFormHalfIndexAffineChowlaData"
+source = "FixedFormHalfIndexAffineChowlaSource"
+adapter = "FixedFormHalfIndexAffineChowlaAdapter"
+doubled_frequency_boundary = "DoubledFrequencyCoverageAdapter"
+fixed_affine_form_coverage_required = true
+additive_twist_or_residue_compatibility_required = true
+growing_shift_uniformity_required = true
+growing_square_modulus_uniformity_required = true
+doubled_frequency_coverage_required = true
+exact_endpoint_aggregation_required = true
+adapter_value_constructed = false
+
+[downstream]
+zero_mode_source = "OrdinaryMertensSquareRootPlusEpsilonEnvelope"
+nonzero_source = "DyadicNaturalScaleHalfIndexAffineChowlaBudget"
+consumer = "DyadicNaturalScaleSquareModulusCongruenceL1"
+pointwise_mertens_proved = false
+half_index_affine_budget_proved = false
+
+[evidence_states]
+source_draft = true
+half_index_phase_normalization_source_draft = true
+exact_parity_half_index_reindex_scripted = true
+exact_affine_forms_exposed = true
+exact_shift_phase_factorization_scripted = true
+exact_consumer_surface_equivalence_scripted = true
+fixed_form_source_boundary_typed = true
+half_index_affine_chowla_estimate_proved = false
+pointwise_mertens_envelope_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.GrowingShiftAffineChowlaHalfIndex"
+definition_count = 12
+theorem_script_count = 15
+structure_count = 3
+authored_declaration_count = 30
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedResidueConvolutionShiftAffine.lean"
+git_blob = "1b34328f97cc3d099439909566fbf9f86a051af8"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_631"
+
+[hostile_controls]
+parity_classes_preserved = true
+endpoint_support_preserved = true
+square_modulus_preserved = true
+doubled_frequency_not_reindexed = true
+frequency_doubling_invertibility_not_assumed = true
+shift_phase_retained_inside_outer_sum = true
+absolute_value_before_outer_shift_sum_rejected = true
+fixed_data_not_promoted_to_growing_family = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_half_index_affine_chowla_budget = true
+prove_pointwise_mertens_envelope = true
+construct_named_fixed_form_adapter = true
+construct_doubled_frequency_coverage_adapter = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+half_index_affine_chowla_bound_proved = false
+fixed_form_chowla_adapter_proved = false
+corrected_elliott_adapter_proved = false
+large_sieve_adapter_proved = false
+l_function_adapter_proved = false
+pointwise_mertens_envelope_proved = false
+riemann_hypothesis_proved = false
