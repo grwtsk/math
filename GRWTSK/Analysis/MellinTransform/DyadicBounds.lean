@@ -34,12 +34,15 @@ theorem summable_exponential_tail (C a : ℝ) (ha : 0<a) :
   have hr : |Real.exp (-a)|<1 := by
     rw [abs_of_pos (Real.exp_pos _), ← Real.exp_zero]
     exact Real.exp_lt_exp.mpr (by linarith)
-  have h := (summable_geometric_of_abs_lt_one hr).mul_left C
-  convert h using 1
-  funext n
-  rw [← Real.exp_nat_mul]
-  congr 1
-  ring
+  have hpointwise :
+      (fun n : ℕ => C * Real.exp (-a * (n : ℝ))) =
+        (fun n : ℕ => C * (Real.exp (-a)) ^ n) := by
+    funext n
+    rw [← Real.exp_nat_mul]
+    congr 1
+    ring
+  rw [hpointwise]
+  exact (summable_geometric_of_abs_lt_one hr).mul_left C
 
 /-- A finite initial prefix is harmless; the inequality is uniform on the tail. -/
 theorem summable_norm_of_eventual_geometric_bound
