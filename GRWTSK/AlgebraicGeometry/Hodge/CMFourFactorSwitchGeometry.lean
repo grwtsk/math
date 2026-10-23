@@ -1264,22 +1264,6 @@ rational tensor square of the finite CM field. Unlike the later fourfold
 cohomological comparison, this map uses only field multiplication and
 the tensor-product universal property. -/
 
-/-- The fully constructed linear assembly on separated coefficient and
-vector tensors. Its remaining input rearrangement from four paired tensors
-is a distinct associativity/permutation construction. -/
-
-/-- The separated linear assembly reproduces the original eight-variable
-canonical formula on a pure coefficient tensor and pure vector tensor. -/
-
-/-- The original fourfold tensor target with coefficient/vector pairs
-still interleaved. This fixes the associativity convention before
-constructing the canonical tensor shuffle. -/
-
-/-- The canonical generator of the interleaved paired tensor target. -/
-
-/-- The corresponding separated pure coefficient/vector tensor, with
-identical association conventions. -/
-
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
 the first rational tensor-product universal property. -/
