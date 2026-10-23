@@ -151,4 +151,37 @@ theorem ResidualFreshTrail.exists_maximal_extension
         exact hRS.trans hSQ
 
 
+
+/-- A terminal-maximal residual trail uses every residual outgoing
+edge instance at its final vertex. Hence its unused residual
+outgoing degree is exactly zero. -/
+theorem ResidualFreshTrail.unused_out_zero_of_maximal
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b)
+    (hmax : R.Maximal) :
+    (U \ R.trail.used).filter
+      (fun e => countedEdgeSource m c e = b) = ∅ := by
+  classical
+  apply Finset.eq_empty_iff_forall_not_mem.mpr
+  intro e he
+  have he' := Finset.mem_filter.mp he
+  have hmem := Finset.mem_sdiff.mp he'.1
+  exact hmem.2 (hmax e hmem.1 he'.2)
+
+/-- Residual outgoing maximality as a zero-cardinality identity,
+ready for the balanced-degree endpoint calculation. -/
+theorem ResidualFreshTrail.unused_out_card_zero_of_maximal
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b)
+    (hmax : R.Maximal) :
+    countedUsedOutDegree m c (U \ R.trail.used) b = 0 := by
+  unfold countedUsedOutDegree
+  rw [R.unused_out_zero_of_maximal hmax]
+  rfl
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
