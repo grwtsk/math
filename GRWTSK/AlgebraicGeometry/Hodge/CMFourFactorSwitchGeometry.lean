@@ -1264,21 +1264,6 @@ rational tensor square of the finite CM field. Unlike the later fourfold
 cohomological comparison, this map uses only field multiplication and
 the tensor-product universal property. -/
 
-/-- Pure finite-CM coefficient conjugation respects the canonical
-fourfold multiplication formula. The vector tensor is unchanged because
-scalar conjugation acts only on the coefficient slot. -/
-theorem canonicalFinitePureAssembly_scalarConjugate
-    (E : CMGaloisIntermediateField)
-    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
-    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
-    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
-        σ (canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
-      canonicalFinitePureAssembly E
-        (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ := by
-  simp [canonicalFinitePureAssembly,
-    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate_tmul,
-    map_mul]
-
 /-- Finite-level fourfold assembly over a fixed finite Galois CM field.
 
 The output keeps one coefficient factor in E and moves the four vector entries
