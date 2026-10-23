@@ -1,0 +1,83 @@
+# Passive mathematical verification specification; NOT an execution receipt.
+schema = "farey-group-superwalk-spectral-channel-v0.1"
+repository = "grwtsk/math"
+source_parent_commit = "763e5581487a6321be999d1e948a305a86a60f48"
+source_parent_farey_blob = "44fa0d6f518bd820eea3ac37d823c271fdb8803a"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_modules = [
+  "GRWTSK.NumberTheory.Farey.GroupSuperwalk",
+  "GRWTSK.NumberTheory.Farey.GroupSpectralChannel"
+]
+direct_source_dependency = "GRWTSK.NumberTheory.Farey.ResolvableQuintic"
+parent_verification_issue = 1086
+note_path = "docs/mathematics/NumberTheory/Farey/group-superwalk-spectral-channel.md"
+evidence_state = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+public_root_imported = false
+
+[validation]
+require_final_exact_main_commit = true
+require_parent_farey_compilation = true
+require_pinned_lean_mathlib = true
+require_individual_and_joint_lake_build_wfail = true
+require_fresh_kernel_replay = true
+require_transitive_axiom_audit = true
+require_declaration_types_and_no_sorry_unsafe_native = true
+require_negative_controls = true
+reject_root_only_success_as_leaf_evidence = true
+reject_unverified_source_as_proof = true
+reject_unproved_spiral_or_analytic_channel = true
+reject_rh_or_zeta_divisor_claim = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_walk"
+purpose = "exact Farey mediant word to integral GL2 frame action"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_det"
+purpose = "source unimodular Farey frame"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.wordUnit_append"
+purpose = "free positive word representation into matrix units"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.shears_do_not_commute"
+purpose = "order-sensitive two-step witness"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.left_right_trace_three"
+purpose = "finite hyperbolic-type block without spectral promotion"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.quintic_eye_on_walk_iff"
+purpose = "source-identical Farey/positive-factor predicate transport"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSpectralChannel.commutes_complexWord"
+purpose = "conditional projector intertwining along actual Farey words"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSpectralChannel.commutant_is_scalar"
+purpose = "no nontrivial native 2D commutant"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSpectralChannel.native_invariant_projector_trivial"
+purpose = "no nontrivial full-Farey native spectral channel"
+
+[hostile_controls]
+cases = [
+  "wrong Farey endpoint column orientation",
+  "reversing chronological matrix factors",
+  "identifying LR with RL",
+  "using inverse generator as positive Farey child",
+  "promoting a sign-resolving interval to a rational root witness",
+  "using a noncommuting projector as an invariant spectral channel",
+  "promoting native 2D no-go to every enlarged or block-return representation",
+  "inferring logarithmic spiral without eigenline and radial/phase supplier",
+  "equating finite transfer trace with an infinite spectrum or RH"
+]
