@@ -1345,50 +1345,6 @@ theorem canonicalFinitePureAssembly_add_vector_4
   simp [canonicalFinitePureAssembly, TensorProduct.add_tmul,
     TensorProduct.tmul_add]
 
-/-- Rational balancing in coefficient/vector pair 1 of the canonical
-finite pure-factor assembly. -/
-theorem canonicalFinitePureAssembly_balance_1
-    (E : CMGaloisIntermediateField) (q : ℚ)
-    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
-    canonicalFinitePureAssembly E (q • a1) x1 a2 x2 a3 x3 a4 x4 =
-      canonicalFinitePureAssembly E a1 (q • x1) a2 x2 a3 x3 a4 x4 := by
-  simp [canonicalFinitePureAssembly, Algebra.smul_def,
-    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
-    mul_left_comm, mul_comm]
-
-/-- Rational balancing in coefficient/vector pair 2 of the canonical
-finite pure-factor assembly. -/
-theorem canonicalFinitePureAssembly_balance_2
-    (E : CMGaloisIntermediateField) (q : ℚ)
-    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
-    canonicalFinitePureAssembly E a1 x1 (q • a2) x2 a3 x3 a4 x4 =
-      canonicalFinitePureAssembly E a1 x1 a2 (q • x2) a3 x3 a4 x4 := by
-  simp [canonicalFinitePureAssembly, Algebra.smul_def,
-    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
-    mul_left_comm, mul_comm]
-
-/-- Rational balancing in coefficient/vector pair 3 of the canonical
-finite pure-factor assembly. -/
-theorem canonicalFinitePureAssembly_balance_3
-    (E : CMGaloisIntermediateField) (q : ℚ)
-    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
-    canonicalFinitePureAssembly E a1 x1 a2 x2 (q • a3) x3 a4 x4 =
-      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 (q • x3) a4 x4 := by
-  simp [canonicalFinitePureAssembly, Algebra.smul_def,
-    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
-    mul_left_comm, mul_comm]
-
-/-- Rational balancing in coefficient/vector pair 4 of the canonical
-finite pure-factor assembly. -/
-theorem canonicalFinitePureAssembly_balance_4
-    (E : CMGaloisIntermediateField) (q : ℚ)
-    (a1 x1 a2 x2 a3 x3 a4 x4 : E.carrier) :
-    canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 (q • a4) x4 =
-      canonicalFinitePureAssembly E a1 x1 a2 x2 a3 x3 a4 (q • x4) := by
-  simp [canonicalFinitePureAssembly, Algebra.smul_def,
-    TensorProduct.smul_tmul', TensorProduct.tmul_smul, mul_assoc,
-    mul_left_comm, mul_comm]
-
 /-- Pure finite-CM coefficient conjugation respects the canonical
 fourfold multiplication formula. The vector tensor is unchanged because
 scalar conjugation acts only on the coefficient slot. -/
