@@ -45,7 +45,7 @@ def schedule (base : ℕ) : GRWTSK.Analysis.Complex.RationalPowerEvaluation.Sche
   bits := 64
 
 def plan : RationalZetaCenterEvaluation.Plan prefixLength where
-  prefix := fun i => schedule (i.1 + 1)
+  «prefix» := fun i => schedule (i.1 + 1)
   terminal := schedule (prefixLength + 1)
   cauchyRadius := 1 / 2
   valueBits := 64
@@ -118,7 +118,7 @@ theorem self_map_slack_gt : (3 / 1000000 : ℚ) < newtonRadius -
 theorem combined_acceptance_of_source (hsource : SourceAcceptance) :
     VerifiedRationalNewtonCenter.verifyZero prefixLength chart true center plan
       valueTolerance slopeTolerance newtonRadius inverse claimed = true := by
-  exact Bool.and_eq_true.mpr ⟨hsource, newton_accepts⟩
+  exact Bool.and_eq_true_iff.mpr ⟨hsource, newton_accepts⟩
 
 /-- A conditional theorem only. There is no closed zero-existence theorem in
 this increment until the source acceptance equality and inherited stack are audited. -/
