@@ -59,7 +59,7 @@ noncomputable def standardCircleConeHomeomorphClosedDisk :
   letI : CompactSpace StandardCircleCone := standardCircleCone_compact
   letI : T2Space ClosedComplexUnitDisk := closedComplexUnitDisk_t2
   exact Continuous.homeoOfEquivCompactToT2
-    (Equiv.ofBijective standardConePolarDisk standardConePolarDisk_bijective)
+    (f := Equiv.ofBijective standardConePolarDisk standardConePolarDisk_bijective)
     standardConePolarDisk_continuous
 
 /-- The homeomorphism is definitionally tied to the actual polar
@@ -81,7 +81,8 @@ noncomputable def perimeterConeHomeomorphClosedDisk (k : ℕ) :
 theorem perimeterConeHomeomorphClosedDisk_apex (k : ℕ) :
     perimeterConeHomeomorphClosedDisk k (coneApex k) =
       (⟨0, by simp⟩ : ClosedComplexUnitDisk) := by
-  rw [perimeterConeHomeomorphClosedDisk]
+  change standardConePolarDisk
+    (perimeterConeHomeomorphStandardCircleCone k (coneApex k)) = _
   rw [perimeterConeHomeomorphStandardCircleCone_apex]
   exact standardConePolarDisk_apex
 
