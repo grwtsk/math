@@ -5,7 +5,13 @@ Mathlib's upstream authors and license remain unchanged. -/
 import Mathlib.Data.Real.Basic
 import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
-import Mathlib.Tactic
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+import Mathlib.Data.Nat.Cast.Order.Basic
+import Mathlib.Order.Interval.Finset.Nat
+import Mathlib.Tactic.Convert
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 
 set_option autoImplicit false
 
@@ -162,6 +168,7 @@ theorem twoModeHeat_two_stage_bound
   exact h.trans (add_le_add h₁ h₂)
 
 
+set_option backward.isDefEq.respectTransparency false in
 /-- A mode's forward Hodge-time derivative is minus its Laplacian eigenvalue
 times the mode. This is the finite generator relation, not a theta-kernel
 or infinite-dimensional intertwining statement. -/
@@ -171,72 +178,70 @@ theorem hasDerivAt_modeHeat (s frequency : ℝ) :
   have hlin : HasDerivAt
       (fun t : ℝ => -(t * modeLaplacian frequency))
       (-(modeLaplacian frequency)) s := by
-    convert ((hasDerivAt_id s).mul_const (modeLaplacian frequency)).neg using 1 <;>
-      ring
-  have h := (Real.hasDerivAt_exp (-(s * modeLaplacian frequency))).comp s hlin
-  have hfun :
-      (fun t : ℝ => modeHeat t frequency) =
-        (Real.exp ∘ fun t : ℝ => -(t * modeLaplacian frequency)) := by
-    funext t
-    rfl
-  rw [hfun]
-  convert h using 1
-  · simp only [modeHeat]
+    convert! ((hasDerivAt_id s).mul_const (modeLaplacian frequency)).neg using 1
     ring
+  have h := (Real.hasDerivAt_exp (-(s * modeLaplacian frequency))).comp s hlin
+  convert! h using 1
+  simp only [modeHeat]
+  ring
 
+set_option backward.isDefEq.respectTransparency false in
 /-- The scalar heat coefficient satisfies the exact finite generator ODE. -/
 theorem hasDerivAt_coefficient (a s frequency : ℝ) :
     HasDerivAt (fun t : ℝ => coefficient a t frequency)
       (-(modeLaplacian frequency) * coefficient a s frequency) s := by
-  convert (hasDerivAt_modeHeat s frequency).const_mul a using 1
-  · funext t
-    rfl
-  · simp only [coefficient]
-    ring
+  convert! (hasDerivAt_modeHeat s frequency).const_mul a using 1
+  simp only [coefficient]
+  ring
 
 
+set_option backward.isDefEq.respectTransparency false in
 /-- Spatial derivative of one finite cosine mode. -/
 theorem hasDerivAt_cosineMode (a s u z : ℝ) :
     HasDerivAt (fun x : ℝ => coefficient a s u * Real.cos (x * u))
       (-(coefficient a s u * u * Real.sin (z * u))) z := by
-  convert ((Real.hasDerivAt_cos (z * u)).comp z
-    ((hasDerivAt_id z).mul_const u)).const_mul (coefficient a s u) using 1 <;>
-    ring
+  convert! ((Real.hasDerivAt_cos (z * u)).comp z
+    ((hasDerivAt_id z).mul_const u)).const_mul (coefficient a s u) using 1
+  ring
 
+set_option backward.isDefEq.respectTransparency false in
 /-- Spatial derivative of the corresponding sine mode. -/
 theorem hasDerivAt_sineMode (a s u z : ℝ) :
     HasDerivAt (fun x : ℝ => coefficient a s u * u * Real.sin (x * u))
       (coefficient a s u * u ^ 2 * Real.cos (z * u)) z := by
-  convert ((Real.hasDerivAt_sin (z * u)).comp z
-    ((hasDerivAt_id z).mul_const u)).const_mul (coefficient a s u * u) using 1 <;>
-    ring
+  convert! ((Real.hasDerivAt_sin (z * u)).comp z
+    ((hasDerivAt_id z).mul_const u)).const_mul (coefficient a s u * u) using 1
+  ring
 
+set_option backward.isDefEq.respectTransparency false in
 /-- Time derivative of a single finite cosine mode. -/
 theorem hasDerivAt_timeCosineMode (a s u z : ℝ) :
     HasDerivAt (fun t : ℝ => coefficient a t u * Real.cos (z * u))
       (-(modeLaplacian u) * coefficient a s u * Real.cos (z * u)) s := by
-  convert (hasDerivAt_coefficient a s u).mul_const (Real.cos (z * u))
-    using 1 <;> ring
+  exact (hasDerivAt_coefficient a s u).mul_const (Real.cos (z * u))
 
+set_option backward.isDefEq.respectTransparency false in
 /-- The two-mode readout satisfies the finite time generator equation. -/
 theorem hasDerivAt_twoModeHeat_time (a b s u v z : ℝ) :
     HasDerivAt (fun t : ℝ => twoModeHeat a b t u v z)
       (-(u ^ 2) * coefficient a s u * Real.cos (z * u) -
         (v ^ 2) * coefficient b s v * Real.cos (z * v)) s := by
-  convert (hasDerivAt_timeCosineMode a s u z).add
-    (hasDerivAt_timeCosineMode b s v z) using 1 <;>
-    simp [twoModeHeat, modeLaplacian] <;> ring
+  convert! (hasDerivAt_timeCosineMode a s u z).add
+    (hasDerivAt_timeCosineMode b s v z) using 1
+  simp only [modeLaplacian]
+  ring
 
 
+set_option backward.isDefEq.respectTransparency false in
 /-- The first spatial derivative of the two-mode readout is a sine sum. -/
 theorem hasDerivAt_twoModeHeat_space (a b s u v z : ℝ) :
     HasDerivAt (fun x : ℝ => twoModeHeat a b s u v x)
       (-(coefficient a s u * u * Real.sin (z * u)) -
         coefficient b s v * v * Real.sin (z * v)) z := by
-  convert (hasDerivAt_cosineMode a s u z).add
-    (hasDerivAt_cosineMode b s v z) using 1 <;>
-    simp [twoModeHeat] <;> ring
+  convert! (hasDerivAt_cosineMode a s u z).add
+    (hasDerivAt_cosineMode b s v z) using 1
 
+set_option backward.isDefEq.respectTransparency false in
 /-- Exact second spatial derivative of the finite cosine readout. -/
 theorem hasDerivAt_twoModeHeat_space_derivative (a b s u v z : ℝ) :
     HasDerivAt
@@ -245,8 +250,9 @@ theorem hasDerivAt_twoModeHeat_space_derivative (a b s u v z : ℝ) :
           coefficient b s v * v * Real.sin (x * v))
       (-(u ^ 2) * coefficient a s u * Real.cos (z * u) -
         (v ^ 2) * coefficient b s v * Real.cos (z * v)) z := by
-  convert ((hasDerivAt_sineMode a s u z).neg).add
-    ((hasDerivAt_sineMode b s v z).neg) using 1 <;> ring
+  convert! ((hasDerivAt_sineMode a s u z).neg).add
+    ((hasDerivAt_sineMode b s v z).neg) using 1
+  ring
 
 /-- The exact finite forward Hodge heat equation, expressed without a
 global analytic xi source or a second-derivative library coercion. -/
@@ -311,6 +317,8 @@ theorem finiteCosineTailBound
     (hB : 0 ≤ B) :
     ∀ u, U ≤ u →
       |Real.exp (-(s * u ^ 2)) * Φ u * Real.cos (z * u)| ≤ B := by
+  have _cutoff_nonneg := hU
+  have _bound_nonneg := hB
   intro u hu
   have hheat : Real.exp (-(s * u ^ 2)) ≤ 1 := by
     apply Real.exp_le_one_iff.mpr
@@ -340,6 +348,8 @@ theorem finiteCosineExponentialMajorant
     (hkernel : |Φ u| ≤ C * Real.exp (-(c * u))) :
     |Real.exp (-(s * u ^ 2)) * Φ u * Real.cos (z * u)| ≤
       C * Real.exp (-(c * u)) := by
+  have _amplitude_nonneg := hC
+  have _rate_nonneg := hc
   have hheat : Real.exp (-(s * u ^ 2)) ≤ 1 := by
     apply Real.exp_le_one_iff.mpr
     nlinarith [sq_nonneg u]
@@ -534,6 +544,7 @@ This is an elementary normalization test, not a theta-tail integral. -/
 theorem exponentialTailBudget_at_zero
     (C c : ℝ) (hc : 0 < c) :
     exponentialTailBudget C c 0 = C / c := by
+  have _rate_positive := hc
   simp [exponentialTailBudget]
 
 /-- Splitting a nonnegative tail budget into independently checked
@@ -576,6 +587,7 @@ theorem thetaTailSupplier_combine
     (hsource : 0 ≤ sourceError) :
     sourceError + cert.thetaTail ≤
       sourceError + exponentialTailBudget C c U := by
+  have _source_nonneg := hsource
   exact add_le_add_right cert.tail_le_exponential sourceError
 
 /-- The supplied analytic tail is nonnegative, so it cannot improve
@@ -605,7 +617,7 @@ theorem thetaGaussianSummand_mode_antitone
     thetaGaussianSummand n u ≤ thetaGaussianSummand m u := by
   unfold thetaGaussianSummand
   apply Real.exp_le_exp.mpr
-  have hmnR : (m : ℝ) ≤ n := by exact_mod_cast hmn
+  have hmnR : (m : ℝ) ≤ n := Nat.cast_le.mpr hmn
   have hm : 0 ≤ (m : ℝ) := Nat.cast_nonneg _
   have hn : 0 ≤ (n : ℝ) := Nat.cast_nonneg _
   have hsq : (m : ℝ) ^ 2 ≤ (n : ℝ) ^ 2 := by nlinarith
