@@ -450,6 +450,40 @@ theorem coefficient_error_contracts
       exact mul_le_mul_of_nonneg_left hheat (abs_nonneg _)
     _ = |a - b| := by ring
 
+
+/-- Real-axis two-mode coefficient perturbations are contractive at
+nonnegative forward Hodge time. -/
+theorem twoModeHeat_source_error_contracts
+    (a b a' b' s u v z : ℝ) (hs : 0 ≤ s) :
+    |twoModeHeat a b s u v z - twoModeHeat a' b' s u v z| ≤
+      |a - a'| + |b - b'| := by
+  rw [twoModeHeat_source_error]
+  have h₁ :
+      |(a - a') * modeHeat s u * Real.cos (z * u)| ≤ |a - a'| := by
+    rw [abs_mul, abs_mul]
+    have hc : |Real.cos (z * u)| ≤ 1 := Real.abs_cos_le_one _
+    have hh := modeHeat_abs_le_one s u hs
+    calc
+      |a - a'| * |modeHeat s u| * |Real.cos (z * u)| ≤
+          |a - a'| * |modeHeat s u| := by
+            exact mul_le_of_le_one_right
+              (mul_nonneg (abs_nonneg _) (abs_nonneg _)) hc
+      _ ≤ |a - a'| := by
+            nlinarith [mul_le_mul_of_nonneg_left hh (abs_nonneg (a - a'))]
+  have h₂ :
+      |(b - b') * modeHeat s v * Real.cos (z * v)| ≤ |b - b'| := by
+    rw [abs_mul, abs_mul]
+    have hc : |Real.cos (z * v)| ≤ 1 := Real.abs_cos_le_one _
+    have hh := modeHeat_abs_le_one s v hs
+    calc
+      |b - b'| * |modeHeat s v| * |Real.cos (z * v)| ≤
+          |b - b'| * |modeHeat s v| := by
+            exact mul_le_of_le_one_right
+              (mul_nonneg (abs_nonneg _) (abs_nonneg _)) hc
+      _ ≤ |b - b'| := by
+            nlinarith [mul_le_mul_of_nonneg_left hh (abs_nonneg (b - b'))]
+  exact (abs_add_le _ _).trans (add_le_add h₁ h₂)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
