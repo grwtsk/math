@@ -16,6 +16,7 @@ namespace GRWTSK.Algebra.QuarticCubicResidueSeparation
 
 open Polynomial
 open GRWTSK.Algebra.QuarticCubicDiscriminant
+open GRWTSK.Algebra.QuarticAdjacencyDiscriminant
 
 noncomputable section
 
