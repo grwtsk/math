@@ -201,4 +201,34 @@ theorem FreshCountedTrail.chronologicalEdges_nonempty
   exact (Finset.nonempty_iff_ne_empty.mp hused) hzero
 
 
+
+/-- Chronological edge list is the exact reversal of the internal
+edge storage list. In particular, the first chronological edge is
+the last internally stored edge, and vice versa. -/
+theorem CountedWalk.chronologicalEdges_reverse
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalEdges.reverse = T.edges := by
+  simp [CountedWalk.chronologicalEdges]
+
+/-- The chronological vertex trace of an appended edge has the
+old terminal vertex immediately before the new terminal vertex.
+This is an endpoint-level incidence identity, independent of
+list-index casts or the total edge count. -/
+theorem CountedWalk.append_last_two_vertices
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b) :
+    (CountedWalk.append T e he).chronologicalVertices.getLast? =
+      some (countedEdgeTarget m c e) ∧
+    T.chronologicalVertices.getLast? =
+      some (countedEdgeSource m c e) := by
+  constructor
+  · exact (CountedWalk.append T e he).chronologicalVertices_last
+  · rw [T.chronologicalVertices_last, he]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
