@@ -1,0 +1,361 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "integral-homology-primitive-704-v0.1"
+owner_repository = "grwtsk/math"
+issue = 704
+related_issues = [694, 687, 674, 665, 661, 653, 649, 159, 121, 168, 516, 100, 15]
+route_id = "SIGNED_INTEGER_HOMOLOGY_PRIMITIVE_GROUP_SOURCE"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive"
+build_target = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/geodesic-conjugacy-gate-694-20261022"
+review_parent_revision = "2949a153ebb8553284757687ac83d45d64aac01e"
+review_parent_generic_git_blob = "134ada9f10af356a226e1427333560f9e717acf1"
+review_parent_consumer_git_blob = "ff13697a8833bb4605c9566c13bc7d0892aea9a7"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+generic_module_path = "GRWTSK/GroupTheory/Words/IntegralHomologyPrimitive.lean"
+generic_module_git_blob = "ae16aee475fccc5bed0ecc2177508c7a0efb7b44"
+consumer_module_path = "GRWTSK/Analysis/Fourier/FiniteGeodesicHomologyPrimitive.lean"
+consumer_module_git_blob = "88ad9be72dbf65cae27712ae2b5f6bd94d210dbb"
+mathematical_note_path = "docs/mathematics/GroupTheory/Words/integral-homology-primitive-witness.md"
+mathematical_note_git_blob = "825e205c69bb47aaa54d6dc66dbafe1161ee969d"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+true_monoid_hom_required = true
+integer_unit_value_required = true
+proper_power_exclusion_is_unbounded_at_group_scope = true
+source_signed_pairing_consistency_required = true
+short_word_and_class_source_gates_retained = true
+homological_certificate_not_complete = true
+complete_primitive_root_decider_proved = false
+genuine_surface_abelianization_proved = false
+surface_group_presentation_verified = false
+oriented_primitive_geodesic_source_authenticated = false
+effective_geometric_word_cutoff_proved = false
+selberg_trace_formula_formalized = false
+wp_integration_formalized = false
+gue_number_variance_or_sine_process_proved = false
+chowla_growing_shift_supplier_proved = false
+rh_supplier_closed = false
+mathematical_statement = "An actual group-to-integer character unit value excludes all proper powers. Exact source-matched signed linear pairing gives a conditional bounded-word primitive gate; prior finite trace alias budget remains."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive"
+authored_declaration_count = 12
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.PrimitiveConjugacy", "Mathlib.Algebra.Group.Int.TypeTags", "Mathlib.Algebra.Group.Int.Units", "Mathlib.Algebra.Divisibility.Units"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive"
+authored_declaration_count = 14
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive", "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate"]
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.IntegerCharacter"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.integerCharacter_pow"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.exponent_dvd_integerValue"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.not_isProperPower_of_unit_integerValue"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.ne_one_of_unit_integerValue"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.isPrimitiveConjugacy_of_unit_integerValue"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.isPrimitiveConjugacy_of_value_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.isPrimitiveConjugacy_of_value_neg_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.integerValue_eq_of_isConj"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.properPower_forces_nonunit_integerValue"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.integer_one_isPrimitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive.integer_neg_one_isPrimitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.signedHomologyPairing"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.zero_homology_pairing_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.SignedHomologyWordGate"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.accepted_isPrimitive_of_signedHomology"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.toConjugacySoundWordGate"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.empty_word_rejected_of_signedHomology"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.repeated_word_rejected_of_signedHomology"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.cyclic_split_decoder_agreement_of_signedHomology"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.signed_homology_trace_error_le_alias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.toyBezoutCoefficients"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.toyBezoutHomology"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.toyBezout_pairing_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.toyBezout_pairing_unit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicHomologyPrimitive.toyBezout_coordinates_nonunit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "homology-map-multiplicative"
+requirement = "Use an actual MonoidHom G →* Multiplicative ℤ, never a loose numeric tag or arithmetic analogy."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "power-map-actual-theorem"
+requirement = "Derive h(r^n)=n*h(r) from group homomorphism map_pow and integer nsmul, not an unproved assumption."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "any-root-exponent-covered"
+requirement = "Every r∈G and n≥2 is excluded by unit homology: no bounded root-search exhaustiveness assumption."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonidentity-from-nonzero-image"
+requirement = "The unit-valued character forces g≠1 because h(1)=0; omitting nonidentity is rejected."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "unit-codomain-int"
+requirement = "IsUnit applies to the integer image, not a complex or finite-mod-q unit, where the conclusion would be false."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "minus-sign-supported"
+requirement = "The witness works for +1 and -1; an arbitrary integer of magnitude>1 is not a unit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "root-exponent-unit-contradiction"
+requirement = "n≥2 cannot divide a unit of ℤ; no negative n or n=0,1 is slipped into the proper-power definition."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "conjugacy-invariance"
+requirement = "The actual homomorphism's integer image is invariant on Mathlib IsConj classes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-integer-positive-examples"
+requirement = "Both +1 and -1 in Multiplicative ℤ are primitive; proofs must use the true group identity homomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonnecessity-preserved"
+requirement = "Absence of a unit-valued homological functional never proves nonprimitivity; separating primitive geodesics may be nullhomologous."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "signed-vs-residue"
+requirement = "The source pairing uses exact signed ℤ homology; ZMod q or absolute values cannot be substituted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-linear-functional-required"
+requirement = "Signed coefficients c_i are integers; arbitrary unverified coefficients without a true group homomorphism do not certify primitivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-pairing-same-ID"
+requirement = "For every accepted word w and source ID a, actual group functional value equals signed pairing of t.homology a, with the same decoding event."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "wrong-homology-row-rejected"
+requirement = "A different source identifier, conjugacy representative with unproved transfer, shifted indexing or unmatched amplitude cannot discharge source_pairing."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "modular-alias-remains"
+requirement = "Unit homology proves group nonpower, not equality of q-torsion and integral source projections; aliasMass is not zeroed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-word-rejected"
+requirement = "The strengthened gate must reject codes whose evaluation is group identity, including empty words."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "repeated-word-rejected"
+requirement = "Doubled word u++u is a square and cannot decode to accepted primitive source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cyclic-word-ID-preserved"
+requirement = "Cyclically split words decode to equal source IDs through the same ConjClasses factorization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "proper-power-decision-still-open"
+requirement = "A positive unit witness does not give Decidable IsProperPower for all group words, including null-homologous cases."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-universe-not-geometric"
+requirement = "The selected source remains a finite candidate universe, not authenticated all oriented primitive geodesics of a surface."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-homology-no-unit"
+requirement = "A zero integer homology vector produces zero under every signed pairing; this does not imply the group element is a power."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "dimension-zero-conditional"
+requirement = "For m=0 no unit signed pairing exists for a successful source; an arbitrary nonempty decoder cannot vacuously instantiate the gate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "bezout-positive-example"
+requirement = "With H=(2,3), c=(-1,1), the signed pairing is +1 even though neither coordinate is a unit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "bezout-not-surface-example"
+requirement = "The toy integer vector/coefficients do NOT construct a genuine surface-group element or marked homology functional."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-gcd-completeness"
+requirement = "Signed unit pairing is a useful sufficient arithmetic witness; not every primitive group element has primitive abelianization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "conjugacy-class-map-remains-supplied"
+requirement = "A ConjClasses G→Option γ map is externally supplied; no full conjugacy normalizer or effective decision algorithm is built."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "geometric-marking-open"
+requirement = "The chosen group G, group homomorphism and packet homology are not automatically authenticated as π1(X) or H1(X;ℤ)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "Fourier-support-premises-retained"
+requirement = "The old lengthFloor, Fourier radius, finite word search bound, cutoff K≤M and source completeness obligations persist."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-rmt-selberg-upgrade"
+requirement = "This group algebra yields no Selberg trace, Weil-Petersson volume, GOE/GUE variance, or microscopic sine process."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh-upgrade"
+requirement = "No growing-shift Möbius/Chowla cancellation, zeta divisor or Riemann hypothesis is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-unapproved-execution"
+requirement = "Passive target does not authorize Lean/Lake, native/VM/F06, workflow, cache, executor or CI mutation."
+status = "NOT_RUN"
+
