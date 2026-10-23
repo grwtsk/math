@@ -34,7 +34,8 @@ EXACT_FINITE_GREEN_GRAM_FORM_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open MeasureTheory Set
+open _root_.MeasureTheory Set
+open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 
@@ -84,11 +85,11 @@ theorem feature_mul_centeredLogarithmAtom_integrable
   apply Integrable.congr
     (hstep.sub hconst)
   filter_upwards with t
-  unfold feature
+  simp only [Pi.sub_apply, feature]
   ring
 
 theorem greenPrimeFrameSum_sq_integrable
-    {X : ℕ} (hX : 0 < X) :
+    {X : ℕ} (_hX : 0 < X) :
     Integrable
       (fun t => (greenPrimeFrameSum X t)^2)
       unitVolume := by
@@ -206,14 +207,14 @@ theorem greenEnergy_eq_finiteGreenFrameQuadratic
     rw [greenSourceFrameValue_eq_primeSum_sub_background]
     ring
   simp_rw [hex]
-  rw [integral_add, integral_sub,
+  have hadd := integral_add (hS2.sub (hSg.const_mul 2)) hg2
+  have hsub := integral_sub hS2 (hSg.const_mul 2)
+  simp only [Pi.sub_def] at hadd hsub
+  rw [hadd, hsub,
     greenPrimeFrameSum_sq_integral hX,
     integral_const_mul,
     greenPrimeFrameSum_mul_background_integral]
-  · rfl
-  · exact hS2
-  · exact hSg.const_mul 2
-  · exact hg2
+  rfl
 
 theorem finiteGreenFrameQuadratic_nonnegative
     {X : ℕ} (hX : 0 < X) :
@@ -230,7 +231,6 @@ theorem fullFiniteGreenSourceQuadratic_eq_augmentedEnergy
     fullFiniteGreenSourceQuadratic X = augmentedEnergy X := by
   unfold fullFiniteGreenSourceQuadratic augmentedEnergy
   rw [← greenEnergy_eq_finiteGreenFrameQuadratic hX]
-  ring
 
 theorem fullFiniteGreenSourceQuadratic_nonnegative
     {X : ℕ} (hX : 0 < X) :
@@ -246,6 +246,5 @@ theorem fullFiniteGreenSourceCoordinateCount_eq
     (X : ℕ) :
     fullFiniteGreenSourceCoordinateCount X = X + 3 := by
   simp [fullFiniteGreenSourceCoordinateCount, greenSourceFrameAtomCount_eq]
-  omega
 
 end GRWTSK.RiemannHypothesis

@@ -45,7 +45,8 @@ PSI_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY.
 
 namespace GRWTSK.RiemannHypothesis
 
-open MeasureTheory Set
+open _root_.MeasureTheory Set
+open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
@@ -66,7 +67,7 @@ theorem cumulative_one_eq_mass0
     rw [hs]
     ring
   rw [hsum]
-  simp [logarithm]
+  norm_num [logarithm]
 
 /-- A uniform pointwise cumulative bound controls the complete finite energy
 packet. -/
@@ -84,18 +85,18 @@ theorem augmentedEnergy_le_of_cumulative_uniform
           ≤ ∫ _t in Set.Icc (0 : ℝ) 1, B^2 := by
         apply setIntegral_mono_on
         · exact cumulative_square_integrable X
-        · exact integrableOn_const
+        · exact integrableOn_const (hs := by simp)
         · exact measurableSet_Icc
         · intro t ht
           have habs := hC t ht
           rw [sq_le_sq]
           simpa [abs_of_nonneg hB] using habs
       _ = B^2 := by
-        simp [Real.volume_Icc]
+        simp
   have hgreen :
       greenEnergy X ≤ B^2 := by
     have hid := raw_cumulative_energy hX
-    nlinarith [sq_nonneg (center X)]
+    nlinarith [sq_nonneg (GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center X)]
   have hm0abs :
       |mass0 X| ≤ B := by
     rw [← cumulative_one_eq_mass0 hX]
@@ -105,7 +106,7 @@ theorem augmentedEnergy_le_of_cumulative_uniform
     rw [sq_le_sq]
     simpa [abs_of_nonneg hB] using hm0abs
   have hcenterabs :
-      |center X| ≤ B := by
+      |GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center X| ≤ B := by
     rw [← integral_cumulative hX]
     have hnorm0 :
         ‖∫ t, cumulative X t ∂unitVolume‖ ≤
@@ -121,8 +122,8 @@ theorem augmentedEnergy_le_of_cumulative_uniform
     simpa [Real.norm_eq_abs] using hnorm
   have hm1abs :
       |mass1 X| ≤ 2 * B := by
-    have hid : mass1 X = mass0 X - center X := by
-      unfold center
+    have hid : mass1 X = mass0 X - GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center X := by
+      unfold GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center
       ring
     rw [hid]
     exact (abs_sub _ _).trans (by linarith)
@@ -146,7 +147,7 @@ theorem augmentedEnergy_le_of_psiEnvelope
   have hB :
       0 ≤ (3 * A + 1) / (X : ℝ) := by
     have hXr : (0 : ℝ) < (X : ℝ) := by exact_mod_cast hXpos
-    positivity
+    exact div_nonneg (by linarith [hA.1]) hXr.le
   exact augmentedEnergy_le_of_cumulative_uniform
     hXpos hB
     (fun t ht => cumulative_abs_le_of_psiEnvelope hX hA ht)
@@ -182,6 +183,8 @@ theorem psiOctaveSquareRootBound_to_allDyadicEnergyBound
   let A : ℝ := C * (X : ℝ) * Real.sqrt q
   have hX2 : 2 ≤ X := by
     dsimp [X, dyadicScale]
+    rw [pow_succ]
+    have hp : 0 < (2 : ℕ)^j := pow_pos (by decide) _
     omega
   have hXpos : 0 < X := lt_of_lt_of_le (by norm_num) hX2
   have hXr : (0 : ℝ) < (X : ℝ) := by exact_mod_cast hXpos
@@ -203,7 +206,7 @@ theorem psiOctaveSquareRootBound_to_allDyadicEnergyBound
       · exact le_rfl
       · exact_mod_cast (by omega : X ≤ 2 * X))
     dsimp [A, q, X] at *
-    linarith
+    linarith [abs_nonneg (psiError (dyadicScale j : ℝ))]
   have henergy := augmentedEnergy_le_of_psiEnvelope hX2 henv
   have hnumer : 3 * A + 1 ≤ 4 * A := by
     linarith
@@ -224,7 +227,6 @@ theorem psiOctaveSquareRootBound_to_allDyadicEnergyBound
       A / (X : ℝ) = C * Real.sqrt q := by
     dsimp [A]
     field_simp [hXr.ne']
-    ring
   have hsqA :
       (A / (X : ℝ))^2 = C^2 * q := by
     rw [hratioA, mul_pow, Real.sq_sqrt hq]
@@ -234,7 +236,7 @@ theorem psiOctaveSquareRootBound_to_allDyadicEnergyBound
       augmentedEnergy X
           ≤ 6 * (4 * A / (X : ℝ))^2 := hcoarse
       _ = 96 * (A / (X : ℝ))^2 := by ring
-      _ = 96 * C^2 * q := by rw [hsqA]
+      _ = 96 * C^2 * q := by rw [hsqA]; ring
       _ = D * q := by rfl
   simpa [X, q] using hfinal
 

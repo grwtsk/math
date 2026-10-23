@@ -26,25 +26,17 @@ def logarithmicShallowDepthPacket (j : ℕ) : ℝ :=
   ∑ t ∈ Finset.range (logarithmicShallowDepthCount j),
     weightedMertensDyadicSignedAbelDepthSlice j t
 
-/-- One shallow signed depth slice has absolute value at most two. -/
-theorem abs_signedAbelDepthSlice_le_two_of_shallow
-    {j t : ℕ}
-    (ht : t < logarithmicShallowDepthCount j) :
+/-- Every depth with nonempty triangular support has absolute value at most two. -/
+theorem abs_signedAbelDepthSlice_le_two_of_depth
+    {j t : ℕ} (htY : t + 2 ≤ 2 ^ (j + 1)) :
     |weightedMertensDyadicSignedAbelDepthSlice j t| ≤ 2 := by
   let Y : ℕ := 2 ^ (j + 1)
-  have hDY :
-      logarithmicShallowDepthCount j ≤ Y - 1 := by
-    unfold logarithmicShallowDepthCount
-    exact min_le_right _ _
-  have htY : t + 2 ≤ Y := by
-    have ht' : t < Y - 1 := lt_of_lt_of_le ht hDY
-    omega
   have havg :
       |weightedMertensTwoPointChowlaAverage j t| ≤ (t + 1 : ℝ) := by
     apply abs_weightedMertensTwoPointChowlaAverage_le_of_abs_prefix_bound
       htY (by positivity)
     intro h hh
-    exact abs_mertensTwoPointPrefix_le_length h (t + 1)
+    simpa only [Nat.cast_add, Nat.cast_one] using abs_mertensTwoPointPrefix_le_length h (t + 1)
   rw [weightedMertensDyadicSignedAbelDepthSlice_eq_weightedChowlaAverage,
     abs_mul, abs_of_nonneg (by positivity :
       0 ≤ 2 * (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹)]
@@ -64,6 +56,14 @@ theorem abs_signedAbelDepthSlice_le_two_of_shallow
             2 * (Y : ℝ)⁻¹ * (Y : ℝ) := by
           exact mul_le_mul_of_nonneg_left htYR (by positivity)
         _ = 2 := by field_simp [ne_of_gt hYpos]
+
+/-- Shallow depths satisfy the general finite-depth bound. -/
+theorem abs_signedAbelDepthSlice_le_two_of_shallow
+    {j t : ℕ} (ht : t < logarithmicShallowDepthCount j) :
+    |weightedMertensDyadicSignedAbelDepthSlice j t| ≤ 2 := by
+  apply abs_signedAbelDepthSlice_le_two_of_depth
+  have hDY : logarithmicShallowDepthCount j ≤ 2 ^ (j + 1) - 1 := min_le_right _ _
+  omega
 
 /-- The complete shallow-depth packet costs at most two per shallow depth. -/
 theorem abs_logarithmicShallowDepthPacket_le
@@ -116,7 +116,7 @@ theorem subpolynomialLogarithmicShallowDepthPacket :
       apply mul_le_mul_of_nonneg_left
       · exact_mod_cast logarithmicShallowDepthCount_le_threshold j
       · norm_num
-    _ = 2 * (j + 2 : ℝ) := by rfl
+    _ = 2 * (j + 2 : ℝ) := by simp [logarithmicShiftThreshold]
     _ ≤ 2 * (A * (((2 ^ j : ℕ) : ℝ) ^ δ)) := by
       exact mul_le_mul_of_nonneg_left (hlog j) (by norm_num)
     _ = (2 * A) * (((2 ^ j : ℕ) : ℝ) ^ δ) := by ring
@@ -168,7 +168,7 @@ theorem logarithmicLongRemainder_eq_shallow_add_deep
       logarithmicShallowDepthCount j ≤ 2 ^ (j + 1) := by
     unfold logarithmicShallowDepthCount
     exact le_trans (min_le_right _ _) (Nat.sub_le _ _)
-  rw [← Finset.sum_Ico_eq_sum_range]
+  simp only [← Nat.Ico_zero_eq_range]
   exact (Finset.sum_Ico_consecutive
     (fun t => logarithmicLongDepthRemainder j t)
     (Nat.zero_le _) hD).symm

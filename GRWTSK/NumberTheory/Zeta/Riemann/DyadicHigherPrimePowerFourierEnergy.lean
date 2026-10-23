@@ -42,9 +42,8 @@ theorem fourierFrequencyDenominator_norm (k : ℤ) :
     ‖(-2 * Real.pi * Complex.I * k : ℂ)‖ =
       2 * Real.pi * |(k : ℝ)| := by
   simp only [norm_mul, norm_neg, Complex.norm_ofNat,
-    Complex.norm_real, Real.norm_eq_abs, abs_pi,
+    Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg Real.pi_pos.le,
     Complex.norm_I, mul_one, Complex.norm_intCast]
-  ring
 
 /-- Coarse but universal lower bound on the denominator by the integer
 frequency magnitude. -/
@@ -112,7 +111,7 @@ theorem higherPrimePowerFourierModeEnergy_le_pSeries
       ‖greenHigherPrimePowerFourierPrimeCoordinate X k‖^2
           ≤ (2 * higherPrimePowerWindowMass X / |(k : ℝ)|)^2 := hsq
       _ = 4 * (higherPrimePowerWindowMass X)^2 / ((k : ℝ)^2) := by
-        rw [sq_div, sq_abs]
+        rw [div_pow, sq_abs]
         ring
 
 /-- The complete higher-prime-power mode-energy sequence is summable. -/
@@ -127,7 +126,7 @@ theorem higherPrimePowerFourierModeEnergy_summable
         (fun k : ℤ =>
           4 * (higherPrimePowerWindowMass X)^2 /
             ((k : ℝ)^2)) := by
-    simpa [div_eq_mul_inv, mul_assoc] using
+    simpa only [one_div, div_eq_mul_inv, one_mul] using
       hp.mul_left (4 * (higherPrimePowerWindowMass X)^2)
   exact Summable.of_nonneg_of_le
     (higherPrimePowerFourierModeEnergy_nonnegative X)
@@ -155,7 +154,7 @@ theorem higherPrimePowerFourierEnergy_le_mass_sq
       Summable (fun k : ℤ => 4 / ((k : ℝ)^2)) := by
     have h :=
       (Real.summable_one_div_int_pow (p := 2)).mpr (by norm_num)
-    simpa [div_eq_mul_inv, mul_assoc] using h.mul_left 4
+    simpa only [one_div, div_eq_mul_inv, one_mul] using h.mul_left 4
   have hmajor :
       Summable
         (fun k : ℤ =>

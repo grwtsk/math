@@ -52,7 +52,7 @@ deterministic summed cost. -/
 theorem regularCenteredStructuredFourDistinctEnvelope_of_perLag
     (L : StructuredFourDistinctLagCost)
     (hL : RegularCenteredStructuredFourDistinctPerLagBound L)
-    (hLnonneg : ∀ b d z r H, 0 ≤ L b d z r H) :
+    (_hLnonneg : ∀ b d z r H, 0 ≤ L b d z r H) :
     RegularCenteredStructuredFourDistinctEnvelope
       (regularCenteredStructuredFourDistinctLagCostEndpoint L) := by
   intro b
@@ -67,7 +67,7 @@ theorem regularCenteredStructuredFourDistinctEnvelope_of_perLag
   have hdpos : 0 < d :=
     (Finset.mem_Ico.mp (Finset.mem_filter.mp hdmem).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   have familyBound :
       ∀ r : ℕ, ∀ H : Finset ℕ,
         |∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
@@ -83,16 +83,14 @@ theorem regularCenteredStructuredFourDistinctEnvelope_of_perLag
         ∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
           |8 * centeredStructuredFourDistinctLagCorrelation
             b r (z * (d * d)) H| := by
-              exact abs_sum_le_sum_abs _ _
+              exact Finset.abs_sum_le_sum_abs _ _
       _ ≤ ∑ z ∈ Finset.Icc 1 (centeredWindingRadius b d),
           8 * L b d z r H := by
             apply Finset.sum_le_sum
             intro z hz
-            rw [abs_mul]
-            norm_num
-            exact mul_le_mul_of_nonneg_left
-              (hL b d r z inferInstance H)
-              (by norm_num)
+            simpa only [abs_mul, show |(8 : ℝ)| = 8 by norm_num] using
+              mul_le_mul_of_nonneg_left (hL b d r z inferInstance H)
+                (by norm_num : (0 : ℝ) ≤ 8)
   have h0e := familyBound 0 (positiveEndpointEvenShiftSet b)
   have h0o := familyBound 0 (positiveEndpointOddShiftSet b)
   have h1e := familyBound 1 (positiveEndpointEvenShiftSet b)

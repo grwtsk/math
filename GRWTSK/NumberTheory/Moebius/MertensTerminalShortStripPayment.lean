@@ -39,7 +39,9 @@ theorem nat_add_two_le_two_pow_of_two_le
       · have hih := ih hj'
         rw [Nat.pow_succ]
         omega
-      · interval_cases j <;> norm_num at hj ⊢
+      · have hj1 : j = 1 := by omega
+        subst j
+        norm_num
 
 /-- The terminal-short deep set has only logarithmically many depths.  The
 constant two in the padding covers the two smallest dyadic scales and the
@@ -92,6 +94,7 @@ theorem terminalShortDeepDepths_card_le
           harmonicShiftCount j t = Y - t - 2 := by
         unfold harmonicShiftCount harmonicShiftUpper
         rw [hlower1]
+        change Y - t - 1 - 1 = Y - t - 2
         omega
       have hleft : Y - (H + 2) ≤ t := by
         omega
@@ -105,7 +108,7 @@ theorem terminalShortDeepDepths_card_le
       _ ≤ H + 2 := by omega
   · have hjsmall : j = 0 ∨ j = 1 := by omega
     rcases hjsmall with rfl | rfl <;>
-      native_decide
+      decide
 
 /-- The final inherited depth has empty triangular support. -/
 theorem signedAbelDepthSlice_at_final_eq_zero
@@ -141,11 +144,8 @@ theorem abs_longDepthRemainder_le_two_add_shortBudget
         · subst t
           rw [signedAbelDepthSlice_at_final_eq_zero]
           norm_num
-        · apply abs_signedAbelDepthSlice_le_two_of_shallow
-          unfold logarithmicShallowDepthCount
-          apply lt_min
-          · omega
-          · omega
+        · apply abs_signedAbelDepthSlice_le_two_of_depth
+          omega
       · rw [abs_mul, abs_of_nonneg (by positivity :
           0 ≤ 2 * (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹)]
         exact normalized_shortContribution_le_budget j t
@@ -170,13 +170,10 @@ theorem deepLongRemainder_eq_terminalShort_add_core
   unfold logarithmicDeepLongRemainderPacket
     terminalShortDeepRemainderPacket coreLongDeepRemainderPacket
     terminalShortDeepDepths coreLongDeepDepths
-  rw [← Finset.sum_filter_add_sum_filter_not
+  simpa only [not_lt] using (Finset.sum_filter_add_sum_filter_not
     (s := Finset.Ico (logarithmicShallowDepthCount j) (2 ^ (j + 1)))
-    (p := fun t =>
-      harmonicShiftCount j t < logarithmicShiftThreshold j)]
-  congr 1
-  ext t
-  simp [Nat.not_lt]
+    (p := fun t => harmonicShiftCount j t < logarithmicShiftThreshold j)
+    (f := fun t => logarithmicLongDepthRemainder j t)).symm
 
 /-- Nonnegative short-budget mass restricted to the terminal strip. -/
 def terminalShortNormalizedBudget (j : ℕ) : ℝ :=
@@ -259,7 +256,7 @@ theorem subpolynomialTerminalShortDeepRemainderPacket :
       abs_terminalShortDeepRemainderPacket_le j
     _ ≤ 4 * (j + 2 : ℝ) +
         normalizedShortPacketBudget j := by
-      apply add_le_add_right
+      apply add_le_add _ le_rfl
       unfold logarithmicShiftThreshold
       norm_num
       nlinarith
@@ -294,7 +291,7 @@ theorem subpolynomialDeepLongHarmonicRemainderPacket_of_core
         coreLongDeepRemainderPacket j ≤
       |terminalShortDeepRemainderPacket j| +
         coreLongDeepRemainderPacket j := by
-      exact add_le_add_right (le_abs_self _) _
+      exact add_le_add (le_abs_self _) le_rfl
     _ ≤ Cterminal * (((2 ^ j : ℕ) : ℝ) ^ δ) +
         Ccore * (((2 ^ j : ℕ) : ℝ) ^ δ) := by
       exact add_le_add (hterminal j) (hcore j)

@@ -67,7 +67,7 @@ theorem nat_add_two_le_absorptionConstant_mul_exp
       _ = A * (1 + c * (j : ℝ)) := by ring
   have hexp :
       1 + c * (j : ℝ) ≤ Real.exp (c * (j : ℝ)) :=
-    Real.one_add_le_exp _
+    by simpa only [add_comm] using Real.add_one_le_exp (c * (j : ℝ))
   calc
     (j + 2 : ℝ) ≤ A * (1 + c * (j : ℝ)) := hlinear
     _ ≤ A * Real.exp (c * (j : ℝ)) := by
@@ -126,7 +126,7 @@ theorem subpolynomialLogThresholdShortPacketBudget :
         4 * (logarithmicShiftThreshold j : ℝ) :=
       normalizedShortPacketBudget_le_four_logThreshold j
     _ = 4 * (j + 2 : ℝ) := by
-      rfl
+      simp [logarithmicShiftThreshold]
     _ ≤ 4 * (A * (((2 ^ j : ℕ) : ℝ) ^ δ)) := by
       exact mul_le_mul_of_nonneg_left (hlog j) (by norm_num)
     _ = (4 * A) * (((2 ^ j : ℕ) : ℝ) ^ δ) := by ring

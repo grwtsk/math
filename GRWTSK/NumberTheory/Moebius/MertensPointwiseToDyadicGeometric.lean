@@ -128,7 +128,7 @@ theorem cast_dyadicDescendant_le_upperModel
       · positivity
     _ = (2 * (((2 ^ j : ℕ) : ℝ))) /
         (((2 ^ t : ℕ) : ℝ)) := by
-      norm_num [pow_succ]
+      norm_num [pow_succ, mul_comm]
 
 /-- Positive-base equality combining the square-root and epsilon factors. -/
 theorem sqrt_mul_rpow_eq_totalExponent
@@ -166,15 +166,13 @@ theorem upperModel_rpow_eq_geometric
     rw [← Real.rpow_mul (by norm_num : 0 ≤ (2 : ℝ))]
     congr 1
     ring
-  unfold pointwiseMertensDyadicConstantFactor
-    pointwiseMertensDyadicRatio
-  fold X α
-  norm_num [Nat.cast_pow]
+  change (2 * X / ((2 ^ t : ℕ) : ℝ)) ^ α =
+    (2 : ℝ) ^ α * X ^ α * (((2 : ℝ) ^ α)⁻¹) ^ t
+  push_cast
   rw [Real.div_rpow (by positivity) (by positivity)]
   rw [Real.mul_rpow (by norm_num) hX.le]
   rw [hpowCommute]
   rw [div_eq_mul_inv, inv_pow]
-  ring
 
 /-- The exponent used by the pointwise envelope fits inside the parent
 `delta/4` scale. -/
@@ -189,11 +187,8 @@ theorem dyadic_totalExponent_le_parentScale
     positivity
   have hXone : 1 ≤ X := by
     dsimp [X]
-    exact_mod_cast (show 1 ≤ 2 ^ j by positivity)
-  unfold dyadicMertensSquareRootEpsilonScale
-    pointwiseMertensDyadicExponent
-    pointwiseMertensDyadicEpsilon
-  fold X
+    exact_mod_cast Nat.one_le_iff_ne_zero.mpr (pow_ne_zero j (by omega : (2 : ℕ) ≠ 0))
+  change X ^ (1 / 2 + δ / 8) ≤ Real.sqrt X * X ^ (δ / 4)
   rw [Real.sqrt_eq_rpow, ← Real.rpow_add hXpos]
   exact Real.rpow_le_rpow_of_exponent_le hXone (by linarith)
 
@@ -215,10 +210,12 @@ theorem ordinaryMertens_descendant_le_geometric
         pointwiseMertensDyadicRatio δ ^ t := by
   by_cases hn0 : n = 0
   · subst n
-    simp [ordinaryMertensPrefix,
-      pointwiseMertensDyadicRatio_nonneg,
-      dyadicMertensSquareRootEpsilonScale_nonneg,
-      hC]
+    simp only [ordinaryMertensPrefix, Finset.Icc_eq_empty_of_lt (by omega : (0 : ℕ) < 1),
+      Finset.sum_empty, abs_zero]
+    exact mul_nonneg (mul_nonneg
+      (mul_nonneg hC (by unfold pointwiseMertensDyadicConstantFactor; positivity))
+      (dyadicMertensSquareRootEpsilonScale_nonneg j δ))
+      (pow_nonneg (pointwiseMertensDyadicRatio_nonneg δ) t)
   · have hnpos : 0 < (n : ℝ) := by
       exact_mod_cast (Nat.pos_of_ne_zero hn0)
     have hnUpper := cast_dyadicDescendant_le_upperModel hb hn
@@ -232,7 +229,7 @@ theorem ordinaryMertens_descendant_le_geometric
         hPoint n
       _ = C *
           ((n : ℝ) ^ pointwiseMertensDyadicExponent δ) := by
-        rw [sqrt_mul_rpow_eq_totalExponent hnpos]
+        rw [mul_assoc, sqrt_mul_rpow_eq_totalExponent hnpos]
       _ ≤ C *
           ((((2 * (((2 ^ j : ℕ) : ℝ))) /
               (((2 ^ t : ℕ) : ℝ))) ^
@@ -249,8 +246,10 @@ theorem ordinaryMertens_descendant_le_geometric
           (pointwiseMertensDyadicConstantFactor δ *
             dyadicMertensSquareRootEpsilonScale j δ *
             pointwiseMertensDyadicRatio δ ^ t) := by
-        gcongr
-        exact dyadic_totalExponent_le_parentScale j hδ
+        apply mul_le_mul_of_nonneg_left _ hC
+        apply mul_le_mul_of_nonneg_right _ (pow_nonneg (pointwiseMertensDyadicRatio_nonneg δ) t)
+        exact mul_le_mul_of_nonneg_left (dyadic_totalExponent_le_parentScale j hδ)
+          (by unfold pointwiseMertensDyadicConstantFactor; positivity)
       _ = (C * pointwiseMertensDyadicConstantFactor δ) *
           dyadicMertensSquareRootEpsilonScale j δ *
           pointwiseMertensDyadicRatio δ ^ t := by

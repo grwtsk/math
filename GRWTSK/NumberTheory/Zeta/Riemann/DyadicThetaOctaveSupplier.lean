@@ -60,7 +60,7 @@ theorem sqrt_X_le_X_mul_sqrt_target
       mul_le_mul_of_nonneg_left hinv
         (show 0 ≤ (X : ℝ)^2 by positivity)
     field_simp [hXr.ne'] at hmul
-    simpa [mul_assoc] using hmul
+    nlinarith [mul_le_mul_of_nonneg_left hmul hXr.le]
   have hsqrt0 : 0 ≤ Real.sqrt (X : ℝ) :=
     Real.sqrt_nonneg _
   have hrhs0 :
@@ -125,10 +125,10 @@ theorem thetaOctaveSquareRootBound_to_psi
   let X : ℕ := dyadicScale j
   let target : ℝ :=
     (X : ℝ) * Real.sqrt (Real.rpow (X : ℝ) (-1 + η))
-  have hX : 0 < X := dyadicScale_pos j
+  have hX : 0 < X := by dsimp [X, dyadicScale]; positivity
   have huTheta :
       |thetaError u| + 1 ≤ C * target := by
-    simpa [X, target, thetaError] using hthetaBound j hj u
+    simpa [X, target, thetaError, mul_assoc] using hthetaBound j hj u
       (by simpa [X] using hu)
   have hpsiTheta0 :
       0 ≤ ψ u - θ u :=
@@ -141,7 +141,7 @@ theorem thetaOctaveSquareRootBound_to_psi
       exact le_abs_self C₀
     exact h0.trans
       (mul_le_mul_of_nonneg_right hCabs (Real.sqrt_nonneg u))
-  have hu0 : 0 ≤ u := hu.1.trans (by exact_mod_cast hX.le)
+  have hu0 : 0 ≤ u := (show (0 : ℝ) ≤ dyadicScale j by exact_mod_cast hX.le).trans hu.1
   have hsqrt_u :
       Real.sqrt u ≤
         Real.sqrt (((2 * X : ℕ) : ℝ)) :=
@@ -162,13 +162,16 @@ theorem thetaOctaveSquareRootBound_to_psi
     have hid :
         ψ u - u = (θ u - u) + (ψ u - θ u) := by ring
     rw [hid]
-    exact (abs_add _ _).trans
-      (add_le_add_left
-        (by simpa [abs_of_nonneg hpsiTheta0])
-        |θ u - u|)
-  dsimp [D]
-  unfold psiError
-  nlinarith
+    simpa only [abs_of_nonneg hpsiTheta0] using
+      (abs_add_le (θ u - u) (ψ u - θ u))
+  change |psiError u| + 1 ≤ D * (X : ℝ) *
+    Real.sqrt (Real.rpow (X : ℝ) (-1 + η))
+  calc
+    |psiError u| + 1 ≤ (|thetaError u| + 1) + (ψ u - θ u) := by linarith [herr]
+    _ ≤ C * target + 2 * A₀ * target := add_le_add huTheta hhp
+    _ = D * (X : ℝ) * Real.sqrt (Real.rpow (X : ℝ) (-1 + η)) := by
+      dsimp [D, target]
+      ring
 
 theorem thetaOctaveSquareRootBound_to_allDyadicEnergyBound
     (htheta : AllDyadicThetaOctaveSquareRootBound) :

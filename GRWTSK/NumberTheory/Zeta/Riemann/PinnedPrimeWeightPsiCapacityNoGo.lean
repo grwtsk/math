@@ -99,7 +99,7 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
       have hXone : (1 : ℝ) ≤ (dyadicScale j₀ : ℝ) := by
         exact_mod_cast
           (Nat.one_le_iff_ne_zero.mpr
-            (Nat.ne_of_gt (dyadicScale_pos j₀)))
+            (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j₀)))
       have hsqrt : 1 ≤ Real.sqrt (dyadicScale j₀ : ℝ) := by
         simpa using Real.sqrt_le_sqrt hXone
       have hE0 := hE j₀
@@ -112,7 +112,7 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
       let X : ℝ := (dyadicScale j : ℝ)
       have hX : 0 < X := by
         dsimp [X]
-        exact_mod_cast dyadicScale_pos j
+        exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
       have hsmallj : E j ≤ δ * X := by
         exact hsmallStages j (by
           dsimp [j₀] at hj
@@ -120,7 +120,6 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
       have hδid : 2 * (K + 1) * δ = 1 := by
         dsimp [δ]
         field_simp [hKone.ne']
-        ring
       have htwice : 2 * (K + 1) * E j ≤ X := by
         calc
           2 * (K + 1) * E j
@@ -156,7 +155,7 @@ theorem sublinear_quadraticRecurrence_eventually_sqrt
             ≤ K * (E j)^2 / X +
                 H * Real.sqrt X := hstep
         _ ≤ E j / 2 + H * Real.sqrt X :=
-          add_le_add_right hquad _
+          add_le_add hquad le_rfl
         _ ≤ (M / 2 + H) * Real.sqrt X := by
           have hroot0 : 0 ≤ Real.sqrt X := Real.sqrt_nonneg X
           dsimp [X] at ih ⊢
@@ -212,7 +211,7 @@ theorem no_uniform_integerPsiResponse_of_sublinear_recurrence_and_jumps
   let X : ℝ := (dyadicScale j : ℝ)
   have hX : 0 < X := by
     dsimp [X]
-    exact_mod_cast dyadicScale_pos j
+    exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
   have hEbound : E j ≤ M * Real.sqrt X := by
     simpa [X] using hMbound j hjM
   have hEsq : (E j)^2 ≤ M^2 * X := by
@@ -235,7 +234,7 @@ theorem no_uniform_integerPsiResponse_of_sublinear_recurrence_and_jumps
         _ = D * X := by
           dsimp [D]
           ring
-    exact (mul_le_mul_left hX).mp (by simpa [mul_comm] using hupper)
+    exact le_of_mul_le_mul_left (by simpa only [mul_comm] using hupper) hX
   have hm1low : 2 * dyadicScale j ≤ m + 1 := by omega
   have hm1 := hrespBound (m + 1) hm1low hmup
   have hm := hrespBound m hmlow (by omega)
@@ -269,7 +268,7 @@ theorem integerPsiCapacity_to_envelopeQuadraticResponse
   refine ⟨j₀, ?_⟩
   intro j hj m hlow hup
   let X : ℕ := dyadicScale j
-  have hX : 0 < X := dyadicScale_pos j
+  have hX : 0 < X := GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
   have hsq :
       (pinnedPrimeWeightedAmplitude X)^2 ≤
         (primeCoefficientL1Budget * E j)^2 :=
@@ -280,7 +279,7 @@ theorem integerPsiCapacity_to_envelopeQuadraticResponse
     simpa [X] using hlow
   have hnextUpper : m ≤ 2 * dyadicScale (j + 1) := by
     rw [dyadicScale_succ_eq_two_mul]
-    simpa [X] using hup
+    omega
   have h := hstage j hj m hnextLower hnextUpper
   calc
     (dyadicScale j : ℝ) * |psiError (m : ℝ)|

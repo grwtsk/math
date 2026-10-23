@@ -31,7 +31,8 @@ theorem mellinTest_hasDerivAt (s : ℂ) {t : ℝ} (ht : t ∈ Icc (0:ℝ) 1) :
     HasDerivAt (mellinTest s) (mellinSlope s t) t := by
   have hy : 0 < 1+t := by linarith [ht.1]
   have h := (power_hasDerivAt hy (1-s)).scomp t ((hasDerivAt_id t).const_add 1)
-  convert h using 1 <;> simp [power, mellinTest, mellinSlope]
+  convert! h using 1
+  simp [mellinSlope, mellinTest, power]
 
 theorem mellinTest_continuous (s : ℂ) :
     ContinuousOn (mellinTest s) (Icc (0:ℝ) 1) := by
@@ -115,7 +116,7 @@ theorem mass0_add_mass1 {X : ℕ} (hX : 0 < X) :
     ring
   unfold mass0 mass1
   calc
-    _ = (∑ n ∈ window X, coefficient n+coefficient n*location X n)-1 := by
+    _ = (∑ n ∈ window X, (coefficient n + coefficient n * location X n))-1 := by
       rw [Finset.sum_add_distrib]
       ring
     _ = (∑ n ∈ window X, mangoldt n/(X:ℝ))-1 := by
@@ -185,7 +186,7 @@ theorem testEnergy_bound {s : ℂ} {M : ℝ} (hM : 0 ≤ M) (hs : ‖s‖ ≤ M)
   have hd2 : ‖mellinTest s 1-mellinTest s 0‖^2 ≤ (radiusFactor M+1)^2 :=
     pow_le_pow_left₀ (norm_nonneg _) hdiff 2
   simpa only [testEnergy, mellinC1, mellin_at_zero, norm_one, one_pow,
-    radiusBudget] using add_le_add (add_le_add_left hd2 1) hInt
+    radiusBudget] using add_le_add (add_le_add le_rfl hd2) hInt
 
 /-- A complete square-root energy bound, uniform on each bounded parameter set. -/
 theorem dirichletBlock_norm_bound {X : ℕ} (hX : 0 < X)
@@ -200,7 +201,9 @@ theorem dirichletBlock_norm_bound {X : ℕ} (hX : 0 < X)
       Real.sqrt (augmentedEnergy X)*Real.sqrt (radiusBudget M) := by
     exact hread.trans (mul_le_mul_of_nonneg_left hbudget (Real.sqrt_nonneg _))
   have hexp : ‖Complex.exp ((1-s)*(Real.log X:ℂ))‖ =
-      Real.exp ((1-s.re)*Real.log X) := by simp [Complex.norm_exp, Complex.mul_re]
+      Real.exp ((1-s.re)*Real.log X) := by
+    simp only [Complex.norm_exp, Complex.mul_re, Complex.sub_re, Complex.one_re,
+      Complex.ofReal_re, Complex.ofReal_im, mul_zero, sub_zero]
   rw [hexp]
   exact mul_le_mul_of_nonneg_left hsqrt (Real.exp_pos _).le
 

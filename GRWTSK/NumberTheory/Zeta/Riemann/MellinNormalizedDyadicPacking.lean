@@ -41,6 +41,7 @@ namespace GRWTSK.RiemannHypothesis
 
 open Complex
 open CanonicalZeroDivisor
+open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
 
@@ -209,14 +210,14 @@ theorem safeQuarticDyadicActionValue_nonnegative
 
 def safeAxialDyadicActionNormalizedY
     (z : ZeroPoint) (j : ℕ) : ℝ :=
-  if ha : zeroDefect z.1 = 0 then
+  if zeroDefect z.1 = 0 then
     0
   else
     (safeEvenDefectDyadicAction z j).re / (zeroDefect z.1)^2
 
 def safeTransverseDyadicActionNormalizedY
     (z : ZeroPoint) (j : ℕ) : ℝ :=
-  if ha : zeroDefect z.1 = 0 then
+  if zeroDefect z.1 = 0 then
     0
   else
     (safeOddDyadicAction z j).im /
@@ -346,5 +347,6 @@ theorem safeQuarticDyadicActionValue_factor
   rw [safeQuarticDyadicActionValue,
     safeAxialDyadicActionGram_factor,
     safeTransverseDyadicActionGram_factor]
+  ring
 
 end GRWTSK.RiemannHypothesis

@@ -110,11 +110,10 @@ theorem subpolynomialDyadicHarmonicWeightedMertensChowlaPacket_of_longRemainder
         logarithmicLongHarmonicRemainderPacket j ≤
       |logarithmicShortSignedPacket j| +
         logarithmicLongHarmonicRemainderPacket j := by
-      exact add_le_add_right (le_abs_self _) _
+      exact add_le_add (le_abs_self _) le_rfl
     _ ≤ normalizedShortPacketBudget j +
         logarithmicLongHarmonicRemainderPacket j := by
-      exact add_le_add_right
-        (abs_logarithmicShortSignedPacket_le_budget j) _
+      exact add_le_add (abs_logarithmicShortSignedPacket_le_budget j) le_rfl
     _ ≤ Cshort * (((2 ^ j : ℕ) : ℝ) ^ δ) +
         Clong * (((2 ^ j : ℕ) : ℝ) ^ δ) := by
       exact add_le_add (hshort j) (hlong j)

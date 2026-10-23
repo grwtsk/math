@@ -74,7 +74,7 @@ theorem sum_norm_le_parameter_mul_sqrt_sum_sq
         (s := s)
         (f := fun x => ‖f x‖))
   have hcard_real : (s.card : ℝ) ≤ (D : ℝ) ^ 2 := by
-    exact_mod_cast hcard
+    exact_mod_cast (by simpa only [pow_two] using hcard : s.card ≤ D ^ 2)
   have hsq' :
       (∑ x ∈ s, ‖f x‖) ^ 2 ≤
         (D : ℝ) ^ 2 * (∑ x ∈ s, ‖f x‖ ^ 2) := by
@@ -88,7 +88,8 @@ theorem sum_norm_le_parameter_mul_sqrt_sum_sq
         ∑ x ∈ s, ‖f x‖ ^ 2 := by
     exact Real.sq_sqrt henergy_nonneg
   have hD : 0 ≤ (D : ℝ) := by positivity
-  nlinarith
+  apply (sq_le_sq₀ hsum_nonneg (mul_nonneg hD hsqrt_nonneg)).mp
+  simpa only [mul_pow, hsqrt_sq] using hsq'
 
 /-- The four canonical regular Fourier L2 norms at one square modulus. -/
 def twoNonunitRegularShiftParityFrequencyL2Majorant
@@ -147,7 +148,7 @@ def twoNonunitRegularShiftParityFrequencyL2EndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         ((d : ℝ))⁻¹ *
           twoNonunitRegularShiftParityFrequencyL2Majorant b d
@@ -167,7 +168,7 @@ theorem regularShiftParityResidueEndpointMajorant_le_frequencyL2
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hNonunit : TwoNonunitSquareModulusParameter d
   · simp only [hNonunit, dif_pos]
     have hsum :=
@@ -186,7 +187,6 @@ theorem regularShiftParityResidueEndpointMajorant_le_frequencyL2
           twoNonunitRegularShiftParityFrequencyL2Majorant b d := by
             push_cast
             field_simp
-            ring
   · simp [hNonunit]
 
 /-- Natural-scale supplier for the canonical regular-frequency L2 endpoint

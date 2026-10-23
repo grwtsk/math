@@ -72,11 +72,12 @@ theorem quadratic_power_identity
     {x ρ δ : ℝ} (hx : 0 < x) :
     (Real.rpow x (ρ + δ))^2 / x =
       Real.rpow x (quadraticThreshold ρ + 2 * δ) := by
-  rw [← Real.rpow_two]
-  rw [← Real.rpow_mul hx.le]
-  rw [show x = Real.rpow x 1 by
-    rw [Real.rpow_one]]
-  rw [← Real.rpow_sub hx]
+  simp only [Real.rpow_eq_pow]
+  have hmul := Real.rpow_mul hx.le (ρ + δ) 2
+  rw [Real.rpow_two] at hmul
+  have hdiv := Real.rpow_sub hx ((ρ + δ) * 2) 1
+  rw [Real.rpow_one, hmul] at hdiv
+  rw [← hdiv]
   congr 1
   unfold quadraticThreshold
   ring
@@ -85,7 +86,7 @@ theorem quadratic_error_step
     {x A B C K R ρ δ : ℝ}
     (hx : 0 < x)
     (hA0 : 0 ≤ A) (hC : 0 ≤ C)
-    (hK : 0 ≤ K) (hR : 0 ≤ R)
+    (hK : 0 ≤ K) (_hR : 0 ≤ R)
     (hA : A ≤ C * Real.rpow x (ρ + δ))
     (hB :
       B ≤ K * A^2 / x +
@@ -133,7 +134,7 @@ theorem quadratic_error_step
             (quadraticThreshold ρ + 2 * δ) +
         R * Real.rpow x
           (quadraticThreshold ρ + 2 * δ) :=
-      add_le_add_right hquad _
+      add_le_add hquad le_rfl
     _ = (K * C^2 + R) *
         Real.rpow x
           (quadraticThreshold ρ + 2 * δ) := by

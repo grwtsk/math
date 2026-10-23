@@ -98,9 +98,18 @@ theorem zeroWindingFiberSquareExpansion
               else 0 := by
   classical
   unfold parityHalfIndexZeroWindingFiber
-  simp_rw [pow_two, Finset.sum_mul, Finset.mul_sum]
+  simp only [pow_two, Finset.sum_mul_sum]
   rw [Finset.sum_comm]
-  simp_rw [Finset.sum_comm (s := H)]
+  conv_lhs =>
+    arg 2
+    ext h
+    rw [Finset.sum_comm]
+    arg 2
+    ext g
+    rw [Finset.sum_comm]
+    arg 2
+    ext m
+    rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h hh
   apply Finset.sum_congr rfl
@@ -117,18 +126,12 @@ theorem zeroWindingFiberSquareExpansion
       (halfIndexZeroWindingCoordinate n g)]
     · simp
     · intro c hc hcn
-      simp [hcn]
+      simp [Ne.symm hcn]
     · intro hnot
       exact (hnot
         (Finset.mem_range.mpr
           (halfIndexZeroWindingCoordinate_lt_endpoint hn))).elim
-  · have hdisj :
-      ∀ c : ℕ,
-        ¬ (halfIndexZeroWindingCoordinate m h = c ∧
-          halfIndexZeroWindingCoordinate n g = c) := by
-      intro c hc
-      exact heq (hc.1.trans hc.2.symm)
-    simp [heq, hdisj]
+  · simp [heq]
 
 /-- Exact signed-fiber representation of the zero-winding quartic surface. -/
 theorem parityHalfIndexSignedQuarticZeroWinding_eq_fiberEnergy

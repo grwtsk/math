@@ -38,9 +38,9 @@ theorem parityCenteredLagLeftEnergy_le_secondMoment
   unfold parityCenteredLagLeftEnergy
     parityCenteredIntegerCoordinateSecondMoment
   apply Finset.sum_le_sum_of_subset_of_nonneg
-  · intro c hc _
+  · intro c hc
     exact (Finset.mem_filter.mp hc).1
-  · intro c _ _ _
+  · intro c _ _
     positivity
 
 /-- The translated valid centers inject into range(b+1), so the right
@@ -55,12 +55,15 @@ theorem parityCenteredLagRightEnergy_le_secondMoment
   have hinj : Set.InjOn f ↑(endpointValidCenterSetAtLag b ell) := by
     intro a ha c hc h
     exact Nat.add_right_cancel h
-  rw [← Finset.sum_image hinj]
+  change (∑ c ∈ endpointValidCenterSetAtLag b ell,
+    (fun x => parityCenteredIntegerCoordinateAmplitude b r H x ^ 2) (f c)) ≤ _
+  rw [← Finset.sum_image
+    (f := fun x => parityCenteredIntegerCoordinateAmplitude b r H x ^ 2) hinj]
   apply Finset.sum_le_sum_of_subset_of_nonneg
-  · intro x hx _
+  · intro x hx
     rcases Finset.mem_image.mp hx with ⟨c, hc, rfl⟩
     exact Finset.mem_range.mpr (Finset.mem_filter.mp hc).2
-  · intro c _ _ _
+  · intro c _ _
     positivity
 
 /-- Center autocorrelation at one positive lag. -/
@@ -103,7 +106,8 @@ theorem sq_abs_parityCenteredLagAutocorrelation_le_secondMoment_sq
       exact mul_le_mul
         (parityCenteredLagLeftEnergy_le_secondMoment b r ell H)
         (parityCenteredLagRightEnergy_le_secondMoment b r ell H)
-        (by positivity) (by positivity)
+        (by unfold parityCenteredLagRightEnergy; positivity)
+        (by unfold parityCenteredIntegerCoordinateSecondMoment; positivity)
     _ = parityCenteredIntegerCoordinateSecondMoment b r H ^ 2 := by ring
 
 /-- Existing zero-winding energy is exactly four times this second moment. -/

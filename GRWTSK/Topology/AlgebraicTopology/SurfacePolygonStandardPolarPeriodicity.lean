@@ -65,8 +65,9 @@ theorem realAnglePolar_add_int (θ r : ℝ) (n : ℤ) :
       have h := realAnglePolar_add_nat
         (θ - (n + 1 : ℕ)) r (n + 1)
       have hadd : θ - (n + 1 : ℝ) + (n + 1 : ℝ) = θ := by ring
+      push_cast at h
       rw [hadd] at h
-      simpa using h.symm
+      convert h.symm using 2; push_cast; ring
 
 /-
 Next obligations:

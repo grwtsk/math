@@ -20,15 +20,25 @@ def centeredAffineFourMobiusDegenerate
 
 instance centeredAffineFourMobiusDegenerateDecidable
     (ell h g : ℕ) : Decidable (centeredAffineFourMobiusDegenerate ell h g) :=
-  inferInstance
+  inferInstanceAs (Decidable (h + g = ell ∨ h = ell + g ∨ g = ell + h))
 
 /-- Equivalent absolute-difference description of cross-pair collisions. -/
 theorem centeredAffineFourMobiusDegenerate_iff_sum_or_absDiff
     {ell h g : ℕ} :
     centeredAffineFourMobiusDegenerate ell h g ↔
-      h + g = ell ∨ h - g = ell ∨ g - h = ell := by
+      h + g = ell ∨ |((h : ℤ) - (g : ℤ))| = (ell : ℤ) := by
   unfold centeredAffineFourMobiusDegenerate
-  omega
+  by_cases hle : (h : ℤ) ≤ (g : ℤ)
+  · rw [abs_of_nonpos (sub_nonpos.mpr hle)]
+    omega
+  · rw [abs_of_nonneg (by omega : (0 : ℤ) ≤ (h : ℤ) - (g : ℤ))]
+    omega
+
+/-- Truncated natural subtraction is not an absolute-difference predicate:
+lag zero can satisfy it even when neither pair collides. -/
+theorem truncatedNatDifference_has_spurious_zeroLag :
+    ¬ centeredAffineFourMobiusDegenerate 0 1 2 ∧ (1 : ℕ) - 2 = 0 := by
+  norm_num [centeredAffineFourMobiusDegenerate]
 
 /-- With positive half-shifts, the two members of the first symmetric pair
 are distinct. -/
@@ -73,8 +83,8 @@ theorem degenerate_implies_crossPairCollision
   unfold centeredAffineFourMobiusDegenerate at hdeg
   rcases hdeg with hsum | hright | hleft
   · right; right; left; omega
-  · left; omega
   · right; right; right; omega
+  · left; omega
 
 /-- Degenerate admissible shift pairs at fixed center and lag. -/
 def centeredAffineFourMobiusDegenerateShiftPairs
@@ -119,8 +129,7 @@ theorem parityCenteredAffineFourMobiusAtCenterLag_eq_degenerate_add_distinct
     parityCenteredAffineFourMobiusDistinctAtCenterLag
     centeredAffineFourMobiusDegenerateShiftPairs
     centeredAffineFourMobiusDistinctShiftPairs
-  rw [← Finset.sum_product]
-  rw [← Finset.sum_filter_add_sum_filter_neg_eq]
+  rw [Finset.sum_filter_add_sum_filter_not, Finset.sum_product]
 
 /-- Center-summed degenerate stratum. -/
 def parityCenteredAffineFourMobiusDegenerateLagCorrelation

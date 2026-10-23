@@ -93,6 +93,7 @@ theorem density_integrable : Integrable (density φ) unitVolume := by
   apply ContinuousOn.integrableOn_Icc
   apply (value_continuous φ).div (continuous_const.add continuous_id).continuousOn
   intro t ht
+  change 1 + t ≠ 0
   linarith [ht.1]
 
 theorem log_slope_integrable :
@@ -113,12 +114,13 @@ theorem background_ibp :
   have hder := intervalIntegral.integral_eq_sub_of_hasDerivAt
     (fun t ht ↦ hp t (by simpa using ht))
     ((((value_continuous φ).div (continuous_const.add continuous_id).continuousOn
-      (fun t ht ↦ by linarith [ht.1])).add
+      (fun t ht ↦ by change 1 + t ≠ 0; linarith [ht.1])).add
       (logarithm_continuousOn.mul φ.slope_continuous)).intervalIntegrable_of_Icc (by norm_num))
   rw [← unit_integral_eq_interval] at hder
   rw [integral_add (density_integrable φ) (log_slope_integrable φ)] at hder
   simp only [logarithm, add_zero, Real.log_one, zero_mul, sub_zero] at hder
   norm_num at hder
+  unfold logarithm
   linarith
 
 def realAction (X : ℕ) : ℝ :=
@@ -180,7 +182,7 @@ theorem centered_ibp {X : ℕ} (hX : 0<X) :
   rw [integral_sub (cumulative_slope_integrable φ X)
       ((slope_integrable φ).const_mul _),
     integral_const_mul, cumulative_ibp φ hX, slope_integral φ]
-  unfold center
+  unfold DyadicDiscrepancy.center
   ring
 
 theorem slope_memLp_two : MemLp φ.slope 2 unitVolume := by

@@ -59,6 +59,7 @@ theorem halfIndex_mem_of_parityAffineBase
     u / 2 ∈ parityHalfIndexAffineBaseSet b r h := by
   rcases Finset.mem_filter.mp hu with ⟨huParity, huTop⟩
   rcases Finset.mem_filter.mp huParity with ⟨huI, huMod⟩
+  have huI := Finset.mem_Icc.mp huI
   unfold parityHalfIndexAffineBaseSet
   apply Finset.mem_filter.mpr
   constructor
@@ -88,7 +89,7 @@ theorem parityAffineBase_mem_of_halfIndex
 base variable. -/
 theorem two_mul_half_add_parity_eq
     {u r : ℕ}
-    (hr : r < 2)
+    (_hr : r < 2)
     (hu : u % 2 = r) :
     2 * (u / 2) + r = u := by
   omega
@@ -111,9 +112,9 @@ theorem sum_parityAffineShiftBaseSet_eq_halfIndex
       ∑ m ∈ parityHalfIndexAffineBaseSet b r h,
         f (2 * m + r) := by
   classical
-  apply Finset.sum_bij'
+  refine Finset.sum_bij'
     (fun u _hu => u / 2)
-    (fun m _hm => 2 * m + r)
+    (fun m _hm => 2 * m + r) ?_ ?_ ?_ ?_ ?_
   · intro u hu
     exact halfIndex_mem_of_parityAffineBase hr hu
   · intro m hm
@@ -248,7 +249,9 @@ theorem parityGrowingShiftAffineChowlaTwist_eq_halfIndex
             ZMod.stdAddChar
               (doubledSquareModulusFrequency d k *
                 (m : ZMod (d * d)))) := by
-          rw [Finset.mul_sum]
+          simp only [Finset.mul_sum]
+          apply Finset.sum_congr rfl
+          intro m _
           ring
 
 /-- The complete shift-weighted half-index correlation for one parity class. -/
@@ -322,7 +325,7 @@ def halfIndexAffineChowlaEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       halfIndexAffineChowlaNonzeroModulusMajorant b d
     else 0
 
@@ -338,7 +341,7 @@ theorem halfIndexAffineChowlaEndpointMajorant_eq_growingShift
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact
     halfIndexAffineChowlaNonzeroModulusMajorant_eq_growingShift b d
 

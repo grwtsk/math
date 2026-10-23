@@ -41,7 +41,7 @@ open GRWTSK.Polynomial.ConjugateQuartic
 /-- Axial vertical coordinate after removing the common a^2 factor. -/
 def safeAxialNormalizedY
     (z : ZeroPoint) (event : PrimePowerEvent) : ℝ :=
-  if h : zeroDefect z.1 = 0 then
+  if zeroDefect z.1 = 0 then
     0
   else
     (safeEvenDefectPrimePowerTerm z event).re / (zeroDefect z.1) ^ 2
@@ -60,9 +60,9 @@ theorem safeAxial_y_factor
 /-- Transverse vertical coordinate after removing the common a*t factor. -/
 def safeTransverseNormalizedY
     (z : ZeroPoint) (event : PrimePowerEvent) : ℝ :=
-  if ha : zeroDefect z.1 = 0 then
+  if zeroDefect z.1 = 0 then
     0
-  else if ht : z.1.im = 0 then
+  else if z.1.im = 0 then
     0
   else
     (safeOddPrimePowerTerm z event).im /
@@ -217,6 +217,7 @@ theorem safeQuarticStructuredPackingValue_factor
   rw [safeQuarticStructuredPackingValue,
     safeAxialPacking_valueAt_factor,
     safeTransversePacking_valueAt_factor]
+  ring
 
 /-- If the two normalized source coefficients align at one stage, the positive
 source becomes exactly a scalar multiple of -witnessTrace/4. -/
