@@ -264,4 +264,36 @@ theorem FreshCountedTrail.spliceAtFactorization_strict
   omega
 
 
+
+/-- A splice performed at an explicit factorization preserves the
+start and finish vertices of the original concatenated trail. -/
+theorem FreshCountedTrail.spliceAtFactorization_endpoint
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    Nonempty (FreshCountedTrail m c a b) := by
+  exact ⟨FreshCountedTrail.spliceAtFactorization
+    P Q C hPQ hPC hQC⟩
+
+/-- A closed original trail remains closed after inserting a
+disjoint residual cycle at an explicitly factored vertex. -/
+theorem FreshCountedTrail.spliceAtFactorization_closed
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v a)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    Nonempty (FreshCountedTrail m c a a) := by
+  exact ⟨FreshCountedTrail.spliceAtFactorization
+    P Q C hPQ hPC hQC⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
