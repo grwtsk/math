@@ -1423,23 +1423,6 @@ constructing the canonical tensor shuffle. -/
 /-- The corresponding separated pure coefficient/vector tensor, with
 identical association conventions. -/
 
-/-- The two-pair specialization of the generic checked shuffle. -/
-def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
-    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
-    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)) :=
-  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleTwo ℚ E.carrier
-
-/-- The three-pair specialization of the generic checked shuffle. -/
-def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
-    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
-      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
-    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ]
-      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)) :=
-  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleThree ℚ E.carrier
-
 /-- The proposed pure-factor rule is additive in its first coefficient
 entry. This is a local consistency check for extending the rule through
 the first rational tensor-product universal property. -/
