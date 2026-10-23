@@ -104,7 +104,10 @@ theorem correctedThreeTent_ordinaryMoment_eq :
   have h1 := (canonicalTentComplex_integrableOn 1).const_mul cofactorOne
   have h2 := (canonicalTentComplex_integrableOn 2).const_mul cofactorTwo
   unfold bombieriOrdinaryMoment correctedThreeTent
-  rw [integral_add (h0.add h1) h2, integral_add h0 h1]
+  have hadd := integral_add (h0.add h1) h2
+  have hadd01 := integral_add h0 h1
+  simp only [Pi.add_apply] at hadd hadd01
+  rw [hadd, hadd01]
   rw [integral_const_mul, integral_const_mul, integral_const_mul]
   change cofactorZero * bombieriOrdinaryMoment (canonicalTentComplex 0) +
       cofactorOne * bombieriOrdinaryMoment (canonicalTentComplex 1) +
@@ -127,7 +130,10 @@ theorem correctedThreeTent_multiplicativeMoment_eq :
   have h2 := (canonicalTentComplex_div_integrableOn 2).const_mul cofactorTwo
   unfold bombieriMultiplicativeMoment correctedThreeTent
   simp_rw [add_div, mul_div_assoc]
-  rw [integral_add (h0.add h1) h2, integral_add h0 h1]
+  have hadd := integral_add (h0.add h1) h2
+  have hadd01 := integral_add h0 h1
+  simp only [Pi.add_apply] at hadd hadd01
+  rw [hadd, hadd01]
   rw [integral_const_mul, integral_const_mul, integral_const_mul]
   change cofactorZero * bombieriMultiplicativeMoment (canonicalTentComplex 0) +
       cofactorOne * bombieriMultiplicativeMoment (canonicalTentComplex 1) +
@@ -135,7 +141,6 @@ theorem correctedThreeTent_multiplicativeMoment_eq :
   rw [bombieriMultiplicativeMoment_canonicalTent_eq 0,
     bombieriMultiplicativeMoment_canonicalTent_eq 1,
     bombieriMultiplicativeMoment_canonicalTent_eq 2]
-  rfl
 
 /-- Both source-stated Bombieri moments vanish for the actual, corrected
 three-tent function. No full classical test-class admissibility is claimed. -/
