@@ -34,4 +34,3 @@ No semantic parent is asserted in this increment. These canonical draft identiti
 allow distinct candidate channels without equating their scopes with an existing
 broad subject. Directory names, retained labels and imports are observations only.
 See the [routing proposal](../../proposals/new-concepts/source-signal-subjects.md).
-
