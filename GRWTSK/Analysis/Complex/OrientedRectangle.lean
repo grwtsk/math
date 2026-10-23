@@ -54,8 +54,7 @@ theorem normalized_right_decomposition (f : ℂ → ℂ) (l r T : ℝ)
       boundaryIntegral f l r T / (q * Complex.I) + vertical f l T / q +
         (horizontal f l r T - horizontal f l r (-T)) / (q * Complex.I) := by
   unfold boundaryIntegral
-  field_simp [hq, Complex.I_ne_zero]
-  <;> ring
+  field_simp [hq, Complex.I_ne_zero]; ring
 
 /-- A finite horizontal edge bound retains the actual edge length. -/
 theorem norm_horizontal_le (f : ℂ → ℂ) (l r y C : ℝ) (hlr : l ≤ r)
@@ -86,7 +85,7 @@ theorem vertical_tendsto (f : ℂ → ℂ) (c : ℝ) (H : ℕ → ℝ)
     (hH : Tendsto H atTop atTop) :
     Tendsto (fun N => vertical f c (H N)) atTop
       (𝓝 (∫ t : ℝ, f ((c : ℂ) + (t : ℂ) * Complex.I))) := by
-  exact intervalIntegral_tendsto_integral hf hH.neg_atTop_atBot hH
+  exact intervalIntegral_tendsto_integral hf (tendsto_neg_atTop_atBot.comp hH) hH
 
 end
 end GRWTSK.Analysis.Complex.OrientedRectangle
