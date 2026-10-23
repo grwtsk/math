@@ -1,0 +1,28 @@
+name: Finite cosine Hodge replay
+on:
+  pull_request:
+    paths:
+      - 'GRWTSK/Analysis/HeatFlow/FiniteCosineHodge.lean'
+      - 'scripts/check-finite-cosine-hodge.sh'
+      - '.github/workflows/finite-cosine-hodge.yml'
+      - 'lean-toolchain'
+      - 'lakefile.toml'
+      - 'lakefile.lean'
+      - 'lake-manifest.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite-cosine-hodge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean and Mathlib cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+      - name: Replay exact finite cosine module
+        run: bash scripts/check-finite-cosine-hodge.sh
