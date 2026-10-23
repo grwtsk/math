@@ -27,6 +27,7 @@ noncomputable section
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialProductQuotient
 
+open _root_.Topology
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
@@ -47,8 +48,9 @@ private def boundaryPointCompact (k : ℕ) : CompactSpace (BoundaryPoint k) := b
 
 /-- The actual unpaired polygon perimeter has Hausdorff topology:
 the angular map is a continuous injection into the genuine AddCircle. -/
-private def perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) :=
-  T2Space.of_injective_continuous
+private def perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) := by
+  letI : Fact (0 < angularPeriod k) := ⟨angularPeriod_pos k⟩
+  exact T2Space.of_injective_continuous
     (perimeterAngle_injective k)
     (perimeterAngle_continuous k)
 
