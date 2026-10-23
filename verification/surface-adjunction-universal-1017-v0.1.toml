@@ -1,0 +1,129 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-adjunction-universal-1017-v0.1"
+issue = 1017
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal"
+
+[source_binding]
+parent_pr = 1015
+parent_revision = "941de95e1c6f536c7b105792d68c269388d475ec"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAdjunctionUniversal.lean"
+new_module_git_blob = "4cf3fa881e32d3ad58b15fc9efc81f204ba71197"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-adjunction-universal.md"
+note_blob = "b039def3c6b70d6277f3a0714c2974dc602642a6"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+full_compatible_extension_candidate = true
+CW_surface_proved = false
+manifold_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal"
+authored_declaration_count = 7
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.diskRepresentative"
+kind = "private def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.diskRepresentative_spec"
+kind = "private theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.extendCompatibleDisk"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.extendCompatibleDisk_disk"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.extendCompatibleDisk_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.extendCompatibleDisk_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal.existsUnique_continuous_compatible_extension"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-disk-surjection"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-fiber-constancy"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "choice-independence"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "disk-restriction"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-continuity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-surjectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-boundary"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "extension-uniqueness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-pair"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-extra-fibers"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
