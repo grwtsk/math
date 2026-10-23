@@ -40,7 +40,8 @@ theorem centeredMobiusLogDivisorIndexSum_eq_centeredVonMangoldt (n : ℕ) :
       ArithmeticFunction.moebius_mul_log_eq_vonMangoldt
     simp only [ArithmeticFunction.mul_apply, ArithmeticFunction.log_apply,
       ArithmeticFunction.intCoe_apply] at h
-    rw [Nat.sum_divisorsAntidiagonal (fun d a => mobiusReal d * Real.log a)] at h
+    rw [Nat.sum_divisorsAntidiagonal
+      (fun d a => ((ArithmeticFunction.moebius d : ℤ) : ℝ) * Real.log a)] at h
     unfold mobiusReal centeredVonMangoldtAtom
     rw [← h]
     ring
