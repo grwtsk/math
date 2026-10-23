@@ -140,9 +140,8 @@ theorem mertensEndpointFourMobiusStratum_eq_diagonal_iff
     mertensEndpointFourMobiusStratum b n a c = .diagonal ↔
       a = c := by
   dsimp only [mertensEndpointFourMobiusStratum]
-  by_cases hac : a = c <;>
-    by_cases hf : c = a + (b - n) <;>
-    by_cases hb : a = c + (b - n) <;> simp_all
+  repeat' split_ifs
+  all_goals tauto
 
 /-- Under the endpoint condition `n<b`, the forward cross stratum is exactly
 `a != c` and `c=a+h`. -/
@@ -152,9 +151,8 @@ theorem mertensEndpointFourMobiusStratum_eq_forwardCross_iff
       a ≠ c ∧ c = a + (b - n) := by
   have _hh : 0 < b - n := Nat.sub_pos_of_lt hnb
   dsimp only [mertensEndpointFourMobiusStratum]
-  by_cases hac : a = c <;>
-    by_cases hf : c = a + (b - n) <;>
-    by_cases hb : a = c + (b - n) <;> simp_all
+  repeat' split_ifs
+  all_goals tauto
 
 /-- Under `n<b`, the backward cross stratum is exactly the remaining
 orientation `a=c+h`. -/
@@ -164,9 +162,8 @@ theorem mertensEndpointFourMobiusStratum_eq_backwardCross_iff
       a ≠ c ∧ c ≠ a + (b - n) ∧ a = c + (b - n) := by
   have _hh : 0 < b - n := Nat.sub_pos_of_lt hnb
   dsimp only [mertensEndpointFourMobiusStratum]
-  by_cases hac : a = c <;>
-    by_cases hf : c = a + (b - n) <;>
-    by_cases hb : a = c + (b - n) <;> simp_all
+  repeat' split_ifs
+  all_goals tauto
 
 /-- The final stratum is exactly the absence of all three possible collision
 patterns. -/
@@ -175,9 +172,8 @@ theorem mertensEndpointFourMobiusStratum_eq_fourDistinct_iff
     mertensEndpointFourMobiusStratum b n a c = .fourDistinct ↔
       a ≠ c ∧ c ≠ a + (b - n) ∧ a ≠ c + (b - n) := by
   dsimp only [mertensEndpointFourMobiusStratum]
-  by_cases hac : a = c <;>
-    by_cases hf : c = a + (b - n) <;>
-    by_cases hb : a = c + (b - n) <;> simp_all
+  repeat' split_ifs
+  all_goals tauto
 
 /-- A four-distinct classified pair really gives four pairwise-distinct
 arguments when the shift is positive. -/
