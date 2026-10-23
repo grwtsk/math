@@ -1,0 +1,58 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quartic-diagonal-obstruction-779-v0.1"
+owner_repository = "grwtsk/math"
+issue = 779
+parent_issue = 775
+parent_pr = 777
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_QUARTIC_DIAGONAL_OBSTRUCTION_SOURCE_DRAFT_COUPLED_SIGNED_QUARTIC_CANCELLATION_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitQuarticDiagonalObstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitQuarticDiagonalObstruction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-regular-quartic-diagonal-775-20261022"
+stacked_parent_revision = "30b59631bd1dfd3206bf2ea6b0eac10abfa37f8f"
+candidate_branch = "research/rh-quartic-diagonal-obstruction-779-20261022"
+theorem_source_commit = "3147fd64c0e20e30187aeffae9f6ac2bc4562673"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitQuarticDiagonalObstruction.lean"
+theorem_source_git_blob = "0d58d304e5b852c6004a57f383bf99e42f09d22a"
+mathematical_note_commit = "14530ef083521cece2d1220b03084e1df34aee83"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-quartic-diagonal-obstruction.md"
+mathematical_note_git_blob = "4a9d2120081126e032a94fda2253317f2339411d"
+
+[diagonal_obstruction]
+squarefree_pair_diagonal = "parityHalfShiftSquarefreePairDiagonal"
+exact_diagonal_identity = "parityHalfShiftQuarticDiagonal_eq_squarefreePairDiagonal"
+modulus_independence = "parityHalfShiftQuarticDiagonal_eq_of_moduli"
+coupled_target = "RegularQuarticCancellationMustRemainCoupled"
+coupled_target_identity = "regularQuarticCancellationMustRemainCoupled_iff"
+
+[evidence_states]
+source_draft = true
+positive_diagonal_identity_scripted = true
+diagonal_modulus_independence_scripted = true
+coupled_signed_target_retained = true
+positive_diagonal_natural_scale_proved = false
+signed_off_diagonal_natural_scale_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+riemann_hypothesis_proved = false
+
+[open_obligations]
+prove_coupled_signed_quartic_cancellation = true
+or_prove_positive_diagonal_and_signed_off_diagonal_separately = true
+construct_two_unit_analytic_supplier = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+positive_diagonal_natural_scale_proved = false
+off_diagonal_natural_scale_proved = false
+large_sieve_adapter_constructed = false
+grh_proved = false
+riemann_hypothesis_proved = false
