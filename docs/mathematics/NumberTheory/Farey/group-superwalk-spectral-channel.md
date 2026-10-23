@@ -66,6 +66,53 @@ channel, and prove a source-preserving observation and its gauge restrictions.
 This must retain any continued-fraction/irrational-frequency, Farey-sign,
 and elliptic/arithmetic adapters as separately declared premises.
 
+## Exact return-only spectral channel (new bounded supplier)
+
+Module: `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel`.
+Status: source-level Lean proof candidate, NOT_RUN, NOT_KERNEL_AUDITED.
+
+The two-step Farey word `[Turn.left, Turn.right]` is connected to
+`GroupSuperwalk.frame_walk` by `farey_return_frame`: for every **actual**
+source cell `I` its child frame is `frame I * (leftUnit * rightUnit)`.
+This proves provenance of the ordered return, not simply an assigned matrix.
+
+The same elementary shears over the reals give
+
+    H = [[1,1],[1,2]],   H^2 = 3 H - I.
+
+The two roots are `lambda_plus = (3+sqrt(5))/2 > 1` and
+`lambda_minus = (3-sqrt(5))/2`. Source proves their sum is 3,
+product is 1, and they are distinct. Set `s=sqrt(5)>0` and
+
+    P_plus = [[(s-1)/(2s),1/s],[1/s,(s+1)/(2s)]].
+
+The source proof candidates `returnProjector_idempotent`,
+`returnProjector_proper`, `returnProjector_commutes`, and
+`returnProjector_eigen` claim the explicit identities
+
+    P_plus^2=P_plus,   P_plus != 0,   P_plus != I,
+    [P_plus,H]=0,      H P_plus = lambda_plus P_plus.
+
+`expandingProjector_iterate` states for every natural n:
+
+    H^n P_plus = (lambda_plus)^n P_plus.
+
+These identify a proper **selected-return eigensector** of the actual
+Farey representation. It is not invariant under both generators L and R;
+the earlier `native_invariant_projector_trivial` no-go requires that
+strictly stronger simultaneous equivariance.
+
+The positive real eigenvalue supplies **radial expansion without
+intrinsic phase rotation**. A nonconstant angular channel, its
+observation map, relevant gauge/normalization, and compatibility with
+the continued-fraction/Farey arithmetic carrier are all still missing.
+No claim is made about spirals drawn from empirical data, Schrödinger
+spectra or a zeta/RH divisor.
+
+The source is elementary two-by-two linear algebra applied directly to
+the repository Farey construction, NOT the import of any external paper
+theorem or a historical attribution claim.
+
 ## Hostile controls
 
 - Inverting a Farey shear need not preserve the positive Farey-cell domain.
