@@ -312,5 +312,140 @@ def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
   GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleThree ℚ E.carrier
 
 
+/-- Diagonal rational-linear action on the finite tensor square: both
+factors are conjugated by the same field automorphism. -/
+def CMFiniteDiagonalScalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    (E.carrier ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier) :=
+  σ.toLinearMap.lTensor E.carrier ∘ₗ
+    σ.toLinearMap.rTensor E.carrier
+
+/-- The diagonal action conjugates both entries of a pure tensor. -/
+@[simp]
+theorem CMFiniteDiagonalScalarConjugate_tmul
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a b : E.carrier) :
+    CMFiniteDiagonalScalarConjugate E σ (a ⊗ₜ[ℚ] b) =
+      (σ a) ⊗ₜ[ℚ] (σ b) := by
+  simp [CMFiniteDiagonalScalarConjugate, LinearMap.comp_apply]
+
+/-- Multiplication is equivariant under the diagonal action, not under
+the action on only one tensor factor. -/
+theorem CMFiniteCoefficientMultiplication_diagonal_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : E.carrier ⊗[ℚ] E.carrier) :
+    CMFiniteCoefficientMultiplication E
+        (CMFiniteDiagonalScalarConjugate E σ t) =
+      σ (CMFiniteCoefficientMultiplication E t) := by
+  induction t with
+  | tmul a b =>
+      simp [CMFiniteDiagonalScalarConjugate_tmul,
+        CMFiniteCoefficientMultiplication_tmul, map_mul]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- The rational tensor target for four coefficient entries, with the
+same parenthesization as the canonical four-vector target. -/
+
+/-- Iterated finite-CM coefficient multiplication. The construction uses
+the existing two-factor multiplication map and rational tensor functoriality,
+without postulating a fourfold multiplication operation. -/
+
+/-- Evaluation on a fourfold pure tensor is ordinary field multiplication. -/
+/-- Diagonal action on a threefold coefficient tensor: conjugate every
+coefficient entry, not merely the outermost tensor factor. -/
+def CMFiniteTripleCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) →ₗ[ℚ]
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) :=
+  σ.toLinearMap.lTensor (E.carrier ⊗[ℚ] E.carrier) ∘ₗ
+    (CMFiniteDiagonalScalarConjugate E σ).rTensor E.carrier
+
+/-- Diagonal action on all four coefficient factors. -/
+def CMFiniteFourCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    CMFiniteFourCoefficientTensor E →ₗ[ℚ]
+      CMFiniteFourCoefficientTensor E :=
+  σ.toLinearMap.lTensor
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ∘ₗ
+    (CMFiniteTripleCoefficientConjugate E σ).rTensor E.carrier
+
+/-- Explicit evaluation of the diagonal fourfold action on pure tensors. -/
+@[simp]
+theorem CMFiniteFourCoefficientConjugate_pure
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a b c d : E.carrier) :
+    CMFiniteFourCoefficientConjugate E σ
+      (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
+        (((σ a ⊗ₜ[ℚ] σ b) ⊗ₜ[ℚ] σ c) ⊗ₜ[ℚ] σ d) := by
+  simp [CMFiniteFourCoefficientConjugate,
+    CMFiniteTripleCoefficientConjugate,
+    CMFiniteDiagonalScalarConjugate, LinearMap.comp_apply]
+
+/-- Iterated multiplication commutes with diagonal Galois transport of all
+four coefficient entries. -/
+theorem CMFiniteFourCoefficientMultiplication_equivariant
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : CMFiniteFourCoefficientTensor E) :
+    CMFiniteFourCoefficientMultiplication E
+        (CMFiniteFourCoefficientConjugate E σ t) =
+      σ (CMFiniteFourCoefficientMultiplication E t) := by
+  induction t with
+  | tmul t d =>
+      induction t with
+      | tmul t c =>
+          induction t with
+          | tmul a b =>
+              simp [CMFiniteFourCoefficientConjugate_pure,
+                CMFiniteFourCoefficientMultiplication_pure, map_mul]
+          | add x y hx hy =>
+              simp [map_add, hx, hy]
+      | add x y hx hy =>
+          simp [map_add, hx, hy]
+  | add x y hx hy =>
+      simp [map_add, hx, hy]
+
+/-- Canonical finite-CM pure-factor formula, prior to extension of
+coefficients into algebraic numbers. The coefficient entries multiply in
+E while the four vector entries remain a rational tensor. -/
+
+/-- The canonical finite switched pure tensor factors through the
+constructed rational-linear fourfold coefficient multiplication map.
+This is the first explicit link between the coefficient construction and
+the final finite assembly formula, without geometric assumptions. -/
+theorem canonicalFinitePureAssembly_eq_coefficientMultiplication
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      (CMFiniteFourCoefficientMultiplication E
+        (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄)) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simp [canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure]
+
+/-- Coefficient multiplication commutes with diagonal finite Galois
+transport in the canonical pure assembly. The rational vector entries
+are deliberately unchanged by the coefficient-only transport. -/
+theorem canonicalFinitePureAssembly_eq_conjugatedCoefficientProduct
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E
+        (σ a₁) x₁ (σ a₂) x₂ (σ a₃) x₃ (σ a₄) x₄ =
+      (σ (CMFiniteFourCoefficientMultiplication E
+        (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄))) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  simp [canonicalFinitePureAssembly,
+    CMFiniteFourCoefficientMultiplication_pure, map_mul]
+
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
