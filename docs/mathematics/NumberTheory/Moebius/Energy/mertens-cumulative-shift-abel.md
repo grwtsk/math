@@ -14,7 +14,7 @@ B = 2^(j+1) - t - 1
 N = B - L.
 ```
 
-The explicit harmonic weighted Chowla average is supported on the contiguous half-open range `L <= h < B`.
+The explicit harmonic weighted Chowla average is supported on the contiguous half-open range `L <= h < B`. Natural subtraction is truncated: when `B <= L`, this range and `range N` are both empty. No assertion `L <= B` is needed.
 
 Define
 
@@ -37,13 +37,13 @@ The source authors a generic finite identity
 ```text
 sum_(k<N) c_k (q_k-q_(k+1))
  =
-terminal_first_difference * S_N
+(if N=0 then 0 else S_N*(q_(N-1)-q_N))
  +
 sum_(k<N-1)
-  second_difference(q,k) * S_(k+1).
+  S_(k+1)*((q_k-q_(k+1))-(q_(k+1)-q_(k+2))).
 ```
 
-No absolute values enter this identity.
+The interior range is `k < N-1` with natural subtraction. At `N=0` the terminal branch and both sums are zero; at `N=1` only the exact terminal contribution remains. No absolute values enter this identity.
 
 Applied to the harmonic packet, this converts individual shift correlations into cumulative shift correlations.
 
@@ -57,7 +57,7 @@ For reciprocal coordinates, the source authors
 (1/(b+1) - 1/(b+2)).
 ```
 
-Thus all interior second-Abel coefficients are nonnegative; the terminal first-difference coefficient is also nonnegative when the active range is nonempty.
+Here `b` is a natural number with `1 <= b`. Thus all interior second-Abel coefficients are nonnegative; the terminal first-difference coefficient is also nonnegative when the active range is nonempty.
 
 This positivity is only coefficient positivity. The cumulative correlation sums remain signed.
 
@@ -73,7 +73,7 @@ S_n(j,t)
 
 against an explicit positive second-difference reciprocal kernel.
 
-This is the direct interface for average-over-shifts results. It does not yet show that any current average-over-shifts theorem has the required scale, depth, normalization, or quantitative strength.
+This gives an exact finite interface for comparisons with average-over-shifts results. It does not yet show that any current average-over-shifts theorem has the required scale, depth, normalization, or quantitative strength.
 
 ## Hostile boundaries
 
