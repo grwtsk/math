@@ -34,7 +34,8 @@ theorem kernelRetractionResidual_preserves_observation
     P (kernelRetractionResidual P projection x) = P x := by
   unfold kernelRetractionResidual
   rw [map_sub]
-  simp only [Submodule.mem_ker.mp (projection x).2, sub_zero]
+  have hz : P (projection x).1 = 0 := (LinearMap.mem_ker).mp (projection x).2
+  rw [hz, sub_zero]
 
 /-- Under the supplied left-inverse premise, the residual has zero
 kernel-coordinate readout. -/
@@ -54,6 +55,6 @@ theorem kernelRetraction_decompose
     (P : V →ₗ[K] Y) (projection : V →ₗ[K] P.ker) (x : V) :
     (projection x).1 + kernelRetractionResidual P projection x = x := by
   unfold kernelRetractionResidual
-  exact add_sub_cancel_left _ _
+  abel
 
 end GRWTSK.Logic.InformationLoss
