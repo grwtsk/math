@@ -278,5 +278,23 @@ theorem CMFiniteFourTensorShuffle_unique
   exact hF'.trans hG'.symm
 
 
+/-- The two-pair specialization of the generic checked shuffle. -/
+def CMFiniteTwoTensorShuffle (E : CMGaloisIntermediateField) :
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
+    ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) :=
+  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleTwo ℚ E.carrier
+
+/-- The three-pair specialization of the generic checked shuffle. -/
+def CMFiniteThreeTensorShuffle (E : CMGaloisIntermediateField) :
+    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
+      (E.carrier ⊗[ℚ] E.carrier)) ≃ₗ[ℚ]
+    (((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier) ⊗[ℚ]
+      ((E.carrier ⊗[ℚ] E.carrier) ⊗[ℚ] E.carrier)) :=
+  GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleThree ℚ E.carrier
+
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
