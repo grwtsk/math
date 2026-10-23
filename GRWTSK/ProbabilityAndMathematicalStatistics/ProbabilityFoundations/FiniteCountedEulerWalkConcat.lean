@@ -112,4 +112,40 @@ theorem FreshCountedTrail.concat_used
   exact CountedWalk.concat_used P.walk Q.walk
 
 
+
+/-- Exact cardinality gain when two edge-disjoint counted trails are
+concatenated. Every parallel edge instance contributes separately. -/
+theorem FreshCountedTrail.concat_used_card
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b d : Fin m → Bool}
+    (P : FreshCountedTrail m c a b)
+    (Q : FreshCountedTrail m c b d)
+    (hdisj : Disjoint P.used Q.used) :
+    (P.concat Q hdisj).used.card = P.used.card + Q.used.card := by
+  rw [FreshCountedTrail.concat_used]
+  exact Finset.card_union_of_disjoint hdisj
+
+/-- The unused counted edge instances decrease by precisely the
+number of edges in the appended, disjoint trail. -/
+theorem FreshCountedTrail.concat_unused_card
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b d : Fin m → Bool}
+    (P : FreshCountedTrail m c a b)
+    (Q : FreshCountedTrail m c b d)
+    (hdisj : Disjoint P.used Q.used) :
+    (Finset.univ \ (P.concat Q hdisj).used).card + Q.used.card =
+      (Finset.univ \ P.used).card := by
+  classical
+  have hP : P.used ⊆ (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hPQ :
+      (P.concat Q hdisj).used ⊆
+        (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hp := Finset.card_sdiff_add_card_eq_card hP
+  have hpq := Finset.card_sdiff_add_card_eq_card hPQ
+  rw [FreshCountedTrail.concat_used_card P Q hdisj] at hpq
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
