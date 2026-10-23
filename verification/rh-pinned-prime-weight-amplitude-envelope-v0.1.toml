@@ -1,0 +1,79 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-amplitude-envelope-v0.1"
+owner_repository = "grwtsk/math"
+issue = 763
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightAmplitudeEnvelopeControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightAmplitudeEnvelopeControls"
+
+[source_binding]
+parent_branch = "research/759-pinned-prime-capacity-v01"
+parent_revision = "95d383a02fa030a791979836bf5d078176f691b5"
+implementation_branch = "research/763-pinned-prime-amplitude-envelope-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / POINTWISE_CAPACITY_AMPLITUDE_EQUIVALENCE_DEFINED / AMPLITUDE_CRITERION_EQUIVALENCE_DEFINED / CLAUSE_INDEXED_AMPLITUDE_LAYER_DEFINED / PINNED_AMPLITUDE_ESTIMATE_OPEN / COEFFICIENT_SOURCE_LAW_OPEN / SEVEN_EIGHTHS_AMPLITUDE_CRITERION_OPEN / THREE_QUARTERS_AMPLITUDE_CRITERION_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[pointwise_equivalence]
+capacity = "Cap_X(C)=C*A_X^2/X"
+bounded_deficit = "D*_X(C;v)=max(0,abs(thetaError(v))+1-Cap_X(C))"
+amplitude_requirement = "X*(abs(thetaError(v))+1-E)<=C*A_X^2"
+error_nonnegative_required = true
+positive_scale_required_for_denominator_free_form = true
+bounded_deficit_iff_capacity = true
+bounded_deficit_iff_amplitude_requirement = true
+zero_deficit_iff_full_capacity = true
+
+[criterion_equivalence]
+variable_capacity_iff_amplitude = true
+fixed_capacity_iff_amplitude = true
+immutable_rule_implies_amplitude = true
+fixed_amplitude_transports_to_recurrence = true
+fixed_amplitude_transports_to_descent_for_rho_ge_three_quarters = true
+constant_optimizer_source_derived = false
+
+[clause_index]
+arity_three_threshold = "7/8"
+arity_two_threshold = "3/4"
+clause_arity_supplies_amplitude_estimate = false
+conditional_two_step_endpoint_exposed = true
+
+[hostile_controls]
+dominant_error_can_make_requirement_vacuous = true
+positive_target_after_error_proved = false
+nonzero_amplitude_suffices = false
+pinned_amplitude_lower_bound_proved = false
+seven_eighths_amplitude_criterion_proved = false
+three_quarters_amplitude_criterion_proved = false
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightAmplitudeEnvelope"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightAmplitudeEnvelope.lean"
+blob = "af28c29e2838b65fa722eb52c8f29e3a39cb3300"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPinnedPrimeWeightAmplitude"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPinnedPrimeWeightAmplitude.lean"
+blob = "8c57fa69c87705b7495ed8f7490efc1347c57c34"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightAmplitudeEnvelopeControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightAmplitudeEnvelopeControls.lean"
+blob = "0cbc2376b8fc5a577d493f9b2c3af031968f0f6b"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-amplitude-envelope.md"
+blob = "26428dcb3aab0caf2c624c066787b329ad270164"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+POINTWISE_CAPACITY_AMPLITUDE_EQUIVALENCE_DEFINED = true
+AMPLITUDE_CRITERION_EQUIVALENCE_DEFINED = true
+CLAUSE_INDEXED_AMPLITUDE_LAYER_DEFINED = true
+PINNED_AMPLITUDE_ESTIMATE_PROVED = false
+COEFFICIENT_SOURCE_LAW_PROVED = false
+SEVEN_EIGHTHS_AMPLITUDE_CRITERION_PROVED = false
+THREE_QUARTERS_AMPLITUDE_CRITERION_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false
