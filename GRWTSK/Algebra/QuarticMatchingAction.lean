@@ -49,7 +49,7 @@ theorem relabel_one (m : Matching) :
 /-- Relabeling is compatible with permutation composition (rightmost first). -/
 theorem relabel_mul (σ τ : Equiv.Perm Vertex) (m : Matching) :
     relabel (σ * τ) m = relabel σ (relabel τ m) := by
-  simp [relabel, Finset.image_image, Equiv.Perm.mul_apply, Function.comp_def]
+  simp [relabel, Finset.image_image, Function.comp_def]
 
 /-- A concrete nontrivial action: exchanging labels 1 and 2 exchanges
 the 01|23 and 02|13 matchings. -/
@@ -77,14 +77,28 @@ This is a finite proposition about 24 permutations and three matchings. -/
 theorem threeMatchings_closed :
     ∀ σ : Equiv.Perm Vertex, ∀ m ∈ threeMatchings,
       relabel σ m ∈ threeMatchings := by
-  decide
+  have h : ∀ σ : Equiv.Perm Vertex,
+      relabel σ matching01_23 ∈ threeMatchings ∧
+      relabel σ matching02_13 ∈ threeMatchings ∧
+      relabel σ matching03_12 ∈ threeMatchings := by
+    decide
+  intro σ m hm
+  simp only [threeMatchings, Finset.mem_insert, Finset.mem_singleton] at hm
+  rcases hm with rfl | rfl | rfl
+  · exact (h σ).1
+  · exact (h σ).2.1
+  · exact (h σ).2.2
 
 /-- The genuine three-element carrier, without identifying it arbitrarily
 with Fin 3. -/
 def PerfectMatching : Type := {m : Matching // m ∈ threeMatchings}
 
-instance : Fintype PerfectMatching := inferInstance
-instance : DecidableEq PerfectMatching := inferInstance
+instance : Fintype PerfectMatching := by
+  unfold PerfectMatching
+  infer_instance
+instance : DecidableEq PerfectMatching := by
+  unfold PerfectMatching
+  infer_instance
 
 /-- Every vertex permutation induces a permutation of perfect matchings. -/
 def matchingPerm (σ : Equiv.Perm Vertex) : Equiv.Perm PerfectMatching where
