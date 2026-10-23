@@ -1,5 +1,7 @@
 # Reading background and intellectual lineage
 
+Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
 ## Paper-to-Lean provenance requirement
 
 For each newly formalized theorem, construction, algorithm, or method drawn from a paper, maintain a [paper-to-Lean provenance record](paper-to-lean-provenance.md) in the ideas documentation. Record the title, authors, publication/version year, stable DOI/arXiv URL, exact paper theorem or method and **all hypotheses actually used**, imported and local Lean declarations, the full source commit and blob, and command-level verification status. Mark separately a proved repository identity, a genuinely proved bridge to the paper, a conditional application, a comparison-only analogy, and every unresolved supplier. Bibliographic inspection, source presence, a merged commit, a queued validation issue, or a passing unrelated root import is **not** kernel verification. The existing version-bound idea map and catalog remain authoritative for their historical source identities and are not silently rewritten by this policy.
