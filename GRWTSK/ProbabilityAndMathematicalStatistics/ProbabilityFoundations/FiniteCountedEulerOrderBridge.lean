@@ -68,4 +68,31 @@ theorem FreshCountedTrail.complete_chronological_card
   rw [hcard] at hlen
   simpa using hlen
 
+
+/-- Chronological edge lists compose in the same order as the
+underlying directed walks, unlike the reversed storage lists. -/
+theorem CountedWalk.concat_chronologicalEdges
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b d : Fin m → Bool}
+    (P : CountedWalk m c a b)
+    (Q : CountedWalk m c b d) :
+    (P.concat Q).chronologicalEdges =
+      P.chronologicalEdges ++ Q.chronologicalEdges := by
+  unfold CountedWalk.chronologicalEdges
+  rw [CountedWalk.concat_edges, List.reverse_append]
+
+/-- Appending an edge puts it at the end of the chronological list.
+This is the fundamental orientation needed for the cyclic
+successor proof and the final-to-first seam. -/
+theorem CountedWalk.append_chronologicalEdges
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b) :
+    (CountedWalk.append T e he).chronologicalEdges =
+      T.chronologicalEdges ++ [e] := by
+  simp [CountedWalk.chronologicalEdges, CountedWalk.edges]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
