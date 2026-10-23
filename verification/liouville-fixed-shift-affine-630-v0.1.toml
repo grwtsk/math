@@ -1,0 +1,204 @@
+# Source-bound LEAN proof candidate. Never treat this as a compiler receipt.
+schema = "grwtsk-math-replay-target-v1"
+id = "liouville-fixed-shift-affine-630-v0.1"
+owner_repository = "grwtsk/math"
+owner_issues = [630, 441, 571]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "isolated-two-module-arithmetic-leaf"
+module = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleFixedShiftAffine"
+source = "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedShiftAffine.lean"
+required_modules = [
+  "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleDyadicAffineBridge",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleFixedShiftAffine",
+]
+required_sources = [
+  "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleDyadicAffineBridge.lean",
+  "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleFixedShiftAffine.lean",
+]
+mathematical_note = "docs/reviews/chowla-sofic-fixed-shift-affine-630.md"
+requires_clean_checkout = true
+requires_exact_source_content = true
+requires_exact_theorem_types = true
+requires_all_selected_declarations = true
+requires_full_transitive_axiom_inspection = true
+root_import_required = false
+requires_no_unverified_probability_modules = true
+full_library_build_required = false
+
+[source_binding]
+provider = "authorized independent Lean/Noeaaeue replay"
+require_one_commit_tree_and_exact_source_blobs = true
+require_manifest_and_toolchain_blobs = true
+source_blobs = [
+  "64cc286852eb05408ef337b6e86c3ce6f405d188",
+  "5fe1d90d76dd8bcc67b15d6a5520c42688e8be64",
+]
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+manifest_is_not_self_referential = true
+effectful_receipts_are_external = true
+
+[definitions]
+exact_count = 10
+expected = [
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.proportionalLiouvilleMean",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouvilleTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.dyadicAffineTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.leftDyadicAffineSum",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.rightDyadicAffineSum",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.fixedShiftTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddAffineLeftTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddAffineRightTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenAffineLeftTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenAffineRightTerm",
+]
+
+[theorems]
+exact_count = 32
+required = [
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_at_two",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_twice",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_positive_square",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_proportional_product",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_proportional_pair_term",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_proportional_prefix",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.proportionalLiouvilleMean_eq_neg_one",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.proportional_bound_below_one_impossible",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_pair_dyadic",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.sum_even_odd_reindex",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_prefix_dyadic",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_prefix_affine",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_abs_le_of_affine_bounds",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.dyadicAffine_determinant_controls",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_evenRoot",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_oddRoot",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_pair",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_evenRoot",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_oddRoot",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_pair",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_prefix",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_prefix",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.zeroShift_term",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.zeroShift_prefix",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.range_head_add_Icc",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_Icc_comparator",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_Icc_comparator",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_affine_determinants",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_affine_determinants",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.oddShift_Icc_triangle",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.evenShift_Icc_triangle",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.fixedShift_oddCutoff",
+]
+
+[external_scope]
+provider_repo = "openai/math"
+pinned_ref = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+comparator = "lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.lean"
+comparator_blob = "8764f91cc16967f765b4f19c4378ff8fb5f29cd0"
+scope_note = "lean/docs/007.md"
+scope_note_blob = "dad638d19609ebbddc93a5594dfc2ecd2a26a7a6"
+comparator_theorem_name = "OAI.OrdinaryTwoPointCorrelations.liouville_log_saving"
+comparator_defines_sum_over = "Finset.Icc 1 N"
+comparator_codomain = "Complex"
+comparator_requires_positive_slopes = true
+comparator_requires_nonproportional_det = true
+comparator_contains_sorry_placeholders = true
+comparator_json_blob = "96dbfcd015da7bb0d32f30e17a3b8a6743bf1fe5"
+solution_entrypoint = "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+solution_entrypoint_blob = "2bd48811e73bbdc80c1f738fa889a14189186408"
+solution_main = "lean/OAI/NumberTheory/TwoPoint/Main.lean"
+solution_main_blob = "5a1a015c0cfe8221af315933c579eb7fb2885d3f"
+solution_mrt_input = "lean/OAI/NumberTheory/TwoPoint/ShortIntervals/MRTInputsTheorem.lean"
+solution_mrt_input_blob = "936159f5177f3b4bc4a1f5815c706ffe042158e2"
+solution_contains_source_theorem_declarations = true
+solution_transitive_trust_audit_not_performed = true
+provider_lean_toolchain = "leanprover/lean4:v4.34.1"
+provider_mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+local_lean_toolchain = "leanprover/lean4:v4.33.0"
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+requires_explicit_cross_version_port_and_axiom_receipt = true
+comparison_is_literature_scope_only = true
+NO_EXTERNAL_RESULT_ADMITTED = true
+NO_LOCAL_COMPLEX_CAST_ADAPTER = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_unlisted_axioms = true
+reject_sorry = true
+reject_admit = true
+reject_native_decide = true
+reject_unexamined_opaque_dependencies = true
+unavailable_audit_must_not_pass = true
+
+[[hostile_controls]]
+id = "zero-shift-is-not-cancellation"
+must_preserve = "For h=0 every product lambda(n+1)^2 equals 1, so the ordinary prefix equals its length. Exclude h=0 from nonproportional applications."
+
+[[hostile_controls]]
+id = "odd-even-shift-sign"
+must_preserve = "For h=2j+1 both reindexed affine terms carry negative signs. For h=2j>0 both carry positive signs; do not reuse odd sign for even shifts."
+
+[[hostile_controls]]
+id = "positive-affine-form-det"
+must_preserve = "Odd h=2j+1 pairs (2m+1,m+j+1) and (m+1,2m+2j+3) have determinant h. Even h=2j>0 pairs (2m+1,2m+2j+1) and (m+1,m+j+1) have determinants 4j and j, both nonzero."
+
+[[hostile_controls]]
+id = "positive-index-Icc-1-M"
+must_preserve = "The external comparator sums m in Finset.Icc 1 M. The new even-endpoint expression is 2*(M+1) and its two m=0 affine terms remain explicit; no silent shift of cutoff or fabricated endpoint cancellation."
+
+[[hostile_controls]]
+id = "real-versus-complex-result"
+must_preserve = "Local exact sums are integer-valued. External comparator uses complex-valued affineSum; no cast/normalization/proof-term adapter is admitted merely because source formulas match."
+
+[[hostile_controls]]
+id = "comparator-is-not-a-proof"
+must_preserve = "Pinned OpenAI ComparatorChallenges theorem liouville_log_saving has a sorry placeholder. Its theorem statement supplies the scope signature only and is NOT imported as a verified theorem."
+
+[[hostile_controls]]
+id = "solution-not-challenge-comparator"
+must_preserve = "The ComparatorChallenges module has three expected sorry placeholders; it is a challenge statement. A separate FinalMain solution file and Main theorem source exist and must be evaluated on their own merits, with a complete transitive axiom audit; do not misrepresent the comparator as the only proof source."
+
+[[hostile_controls]]
+id = "cross-version-proof-import"
+must_preserve = "OpenAI solution uses Lean 4.34.1 / Mathlib d13f23; grwtsk/math is Lean 4.33.0 / Mathlib db584cd. No direct import, elaboration, trust success or source-level transfer is claimed without a separately controlled port."
+
+[[hostile_controls]]
+id = "fixed-shift-not-growing-shift"
+must_preserve = "Per-fixed-h constants do not imply one uniform bound over h growing with M. Affine slopes/intercepts depend on fixed h, and no uniform rate is constructed here."
+
+[[hostile_controls]]
+id = "binary-not-full-Chowla"
+must_preserve = "This treats one binary additive pair at a time. No higher-order Chowla, all-nonempty Walsh envelope, or RH square-modulus supplier is derived."
+
+[acceptance]
+requires_clean_selected_modules_build = true
+requires_zero_elaboration_errors = true
+requires_exact_theorem_type_printout = true
+requires_transitive_axiom_receipt = true
+requires_independent_replay = true
+requires_source_blob_reconciliation = true
+requires_comparator_sorry_rejection = true
+static_inventory_is_not_kernel_acceptance = true
+
+[evidence]
+authored_status = "SOURCE_DRAFT"
+lean_compilation = "NOT_RUN"
+kernel_status = "NOT_KERNEL_AUDITED"
+transitive_axioms_status = "NOT_CHECKED"
+external_fixed_form_proof = "NOT_IMPORTED"
+no_Lake_or_native_claim = true
+no_root_import_or_merge_claim = true
+
+[nonclaims]
+claims = [
+  "Unconditional fixed-shift analytic cancellation",
+  "OpenAI Result 007 imported as kernel-checked theorem",
+  "Any uniform estimate for growing shifts",
+  "Higher-order Chowla or uniform Walsh energy bound",
+  "Sofic limit or GUE or Montgomery statistics",
+  "Riemann hypothesis",
+  "Lean build, CI, kernel or external replay success",
+]

@@ -1,0 +1,282 @@
+# Passive isolated supplier: actual Liouville signs to the finite Walsh energy.
+# Only authorized independent clean-checkout Lean/Noeaaeue receipts can establish success.
+schema = "grwtsk-math-replay-target-v1"
+id = "liouville-walsh-arithmetic-source-630-v0.1"
+owner_repository = "grwtsk/math"
+owner_issues = [630, 441]
+toolchain_file = "lean-toolchain"
+toolchain = "leanprover/lean4:v4.33.0"
+lake_manifest_file = "lake-manifest.json"
+public_root_import_required = false
+
+[scope]
+kind = "isolated-ten-module-arithmetic-to-probability-interface"
+module = "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshSourceBridge"
+source = "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleWalshSourceBridge.lean"
+mathematical_note = "docs/reviews/chowla-sofic-liouville-walsh-source-630.md"
+required_modules = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshTotalVariation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteChowlaUniformEnvelope",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleDyadicAffineBridge",
+  "GRWTSK.NumberTheory.ArithmeticFunctions.LiouvilleWalshSourceBridge",
+]
+required_sources = [
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshOrthogonality.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshParseval.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshTotalVariation.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteChowlaUniformEnvelope.lean",
+  "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleDyadicAffineBridge.lean",
+  "GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleWalshSourceBridge.lean",
+]
+requires_clean_checkout = true
+requires_exact_selected_sources = true
+requires_all_selected_theorem_types = true
+requires_kernel_proof_terms = true
+requires_full_transitive_axiom_inspection = true
+requires_independent_replay = true
+requires_no_source_execution_claim = true
+full_library_build_required = false
+
+[parents]
+generic_walsh_target = "verification/chowla-sofic-finite-walsh-630-v0.1.toml"
+generic_walsh_target_blob = "ef8e97fb989963cf1a95fbce69521dc67a0d9661"
+generic_theorem_count = 56
+generic_definition_count = 24
+arithmetic_positive_sign_target = "verification/liouville-dyadic-affine-630-v0.1.toml"
+arithmetic_positive_sign_target_blob = "75c793c6bd48f95b77186622c86f414b935212f7"
+arithmetic_theorem_count = 14
+arithmetic_definition_count = 5
+new_arithmetic_walsh_theorem_count = 10
+new_arithmetic_walsh_definition_count = 4
+all_parents_still_source_drafts = true
+
+[source_binding]
+blobs_ordered = [
+  "afa3ef31687182ebccf1877aeddb1e3647c7b935",
+  "25fe356db15c1075190e76a374695a23e0a4d5ec",
+  "7f3ef7d0de94f097a5a9fa5758fd7afeb273c3a0",
+  "e41ec71f269372322d73b27321b2bd785b458469",
+  "49918eff15b5e94a0cd603714be192539d65de7c",
+  "000196df6397930e95b72f792c325a7043c2e1b8",
+  "fbbdc11ef2ad8987e3dfd3e25d7e92af1b477e55",
+  "6cddcb08c60dafff9ec36def5167a60f4c87212c",
+  "64cc286852eb05408ef337b6e86c3ce6f405d188",
+  "0b2cf1223268ae50399119dda7295d9f16729e6d",
+]
+toolchain_file_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+binding_requires_one_commit_tree_and_all_source_blobs = true
+target_document_not_self_referential = true
+
+[definitions]
+exact_count = 33
+required = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalPattern",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityLeft",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityRight",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityThird",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.plainMomentOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshPolynomial",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCorrelationEnergy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.chiSquareAgainstUniform",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariationFromUniform",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalTotalVariation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicMaxOffset",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinaryShiftWord",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicShiftWord",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.AllOrderCorrelationEnvelope",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.OrdinaryAllOrderChowlaAtScale",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.proportionalLiouvilleMean",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouvilleTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.dyadicAffineTerm",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.leftDyadicAffineSum",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.rightDyadicAffineSum",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvillePositiveBool",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleSubsetMean",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleAllOrderEnergy",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.LiouvilleAllOrderOrdinaryEnvelope",
+]
+
+[theorems]
+exact_count = 80
+required = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign_match",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternProduct_eq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.rawWalsh_patternCountOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalPattern_walsh",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_split",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_agree_off",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCount_difference_supported",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parity_pairwise_not_threewise_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign_square",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_square",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_diagonal",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonal",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonality",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn_factor",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment_factor",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshPolynomial_parseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation_empty",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation_empty_sample",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.booleanCube_card",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation_walsh",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation_parseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.chiSquareAgainstUniform_eq_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolCube_card_pos",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariationFromUniform_nonneg",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_l1_sq_le_card_mul_l2",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_l1_sq_le_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.two_mul_totalVariation_sq_le_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariation_le_half_sqrt_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_nonneg",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_total",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_split",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_agree_off",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternDifference_supported",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternDifference_abs_le",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternL1_le_twice_exception",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalTotalVariation_le_exception",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.coordinateIndicator_eq_pattern",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubePatternCount_eq_categorical",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubeEmpirical_eq_categorical",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubeBoundaryTV_le",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.missing_label_agreement_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.one_root_sharp_tv_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_change",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.uniformTV_le_boundaryTV_add_sourceTV",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.finiteWalshBoundary_return",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.offset_le_cyclicMaxOffset",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar_subset_range",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar_card",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinary_eq_cyclic_off_collar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empty_offsets_zero_collar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWalshTV_bound",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCharacterCount",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCharacterCount_rat",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.energy_le_characterCount_mul_envelope_sq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.energy_le_exponential_envelope_sq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicTV_le_allOrderEnvelope",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_at_two",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_twice",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_positive_square",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_proportional_product",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_proportional_pair_term",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.liouville_proportional_prefix",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.proportionalLiouvilleMean_eq_neg_one",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.proportional_bound_below_one_impossible",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_pair_dyadic",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.sum_even_odd_reindex",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_prefix_dyadic",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_prefix_affine",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.adjacentLiouville_abs_le_of_affine_bounds",
+  "GRWTSK.NumberTheory.LiouvilleDyadicAffineBridge.dyadicAffine_determinant_controls",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouville_positive_pm_one",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvillePositiveBool_sign",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.ordinaryLiouvilleWord_sign",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleSubsetMean_eq_sourceCorrelation",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleSubsetMean_empty",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleSubsetMean_zero_sample",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleAllOrderEnergy_eq_sourceEnergy",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleEnvelope_iff_generic",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleCyclicTV_le_energy",
+  "GRWTSK.NumberTheory.LiouvilleWalshSourceBridge.liouvilleCyclicTV_of_allOrderEnvelope",
+]
+require_exact_elaborated_types_and_owner_module = true
+require_all_theorem_transitive_axiom_checks = true
+
+[[hostile_controls]]
+id = "actual-Liouville-source"
+must_preserve = "ArithmeticFunction.liouville is the pinned Mathlib integer function, not a generic invented +/-1 sequence or a declared Chowla premise."
+
+[[hostile_controls]]
+id = "lambda-zero-exception"
+must_preserve = "Mathlib lambda(0)=0, so use lambda(n+h+1) for nonnegative finite roots and shifts. Never assert a unit sign at zero or drop the +1."
+
+[[hostile_controls]]
+id = "bool-sign-orientation"
+must_preserve = "boolSign true=+1 and false=-1. Exact pointwise boolSign of liouvillePositiveBool equals integer lambda(n+1) cast to rationals, no sign reversal."
+
+[[hostile_controls]]
+id = "all-order-exact-normalization"
+must_preserve = "The subset coefficient is the ordinary uniform mean 1/N of products over every selected shift. For N=0 the rational coefficient convention is zero; only N>0 normalizes the empty character to one."
+
+[[hostile_controls]]
+id = "full-distinct-subset-family"
+must_preserve = "Finset shifts are distinct and the correlation energy sums ALL nonempty subsets of the finite shift subtype with no omitted higher-order term or repeated subset."
+
+[[hostile_controls]]
+id = "real-cyclic-collar"
+must_preserve = "The consumer requires max(H)<N. The finite modulo-N cyclic sign source is lambda(((n+h) mod N)+1), using actual first N arithmetic labels and an exact r/N collar."
+
+[[hostile_controls]]
+id = "conditional-analytic-allorder-premise"
+must_preserve = "LiouvilleAllOrderOrdinaryEnvelope is a Prop requiring a single epsilon for ALL nonempty subsets at exact N,H. Its exact equivalence with the generic envelope does NOT furnish an inhabitant."
+
+[[hostile_controls]]
+id = "fixed-binary-not-higher-order"
+must_preserve = "The external 2026 fixed nonproportional binary result, even if verified, does not produce all-order ordinary Liouville cancellation or shift-uniform growing-window control."
+
+[[hostile_controls]]
+id = "no-GUE-RH"
+must_preserve = "Finite Boolean pattern, Walsh energy and cyclic TV identities do not imply microscopic spectral statistics, Montgomery pair correlation or the Riemann Hypothesis."
+
+[[hostile_controls]]
+id = "trust-not-execution"
+must_preserve = "The source inventory, finite tests, and passive manifest do not imply Lean/Lake elaboration, kernel trust, source import resolution, CI success or a replay receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_any_unlisted_axiom = true
+reject_sorry = true
+reject_admit = true
+reject_native_decide = true
+reject_unexamined_opaque_dependency = true
+missing_or_unavailable_audit_is_failure = true
+
+[acceptance]
+requires_exact_commit_tree_and_ten_module_blobs = true
+requires_root_import_status_check = true
+requires_clean_selected_module_compilation = true
+requires_exact_declaration_inventory = true
+requires_every_elaborated_theorem_type = true
+requires_transitive_axiom_inspection = true
+requires_independent_verified_replay_receipts = true
+do_not_merge_from_source_draft = true
+
+[evidence]
+source_status = "SOURCE_DRAFT"
+lean_compilation = "NOT_RUN"
+kernel_audit = "NOT_KERNEL_AUDITED"
+transitive_axioms = "NOT_CHECKED"
+external_analytic_supplier = "NOT_IMPORTED"
+all_order_Liouville_cancellation = "OPEN"
+public_root_import = "NOT_PERFORMED"
+
+[nonclaims]
+claims = [
+  "Unconditional Liouville Chowla cancellation or Bernoulli genericity",
+  "Uniform cancellation across growing shifts",
+  "Higher-order GUE/Montgomery spectral universality",
+  "Riemann hypothesis",
+  "Lean, Lake or CI proof replay success",
+]
