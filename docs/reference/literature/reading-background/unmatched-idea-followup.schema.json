@@ -1,0 +1,240 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "type": "string"
+    },
+    "code_baseline": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "recorded_at": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "code_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "blob": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "code_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "declaration": {
+            "type": "string"
+          },
+          "line_start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "scope": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "repository",
+          "commit",
+          "path",
+          "blob",
+          "code_sha256",
+          "declaration",
+          "line_start",
+          "line_end",
+          "scope"
+        ]
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idea_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "asset_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "taxonomy": {
+            "enum": [
+              "Algebra",
+              "Analysis",
+              "GeometryTopology",
+              "LogicAndComputation",
+              "MathematicalPhysics",
+              "NumberTheory",
+              "ProbabilityCombinatorics",
+              "ReviewQueue"
+            ]
+          },
+          "original_mapping_status": {
+            "const": "unresolved"
+          },
+          "outcome": {
+            "enum": [
+              "conditional-fragment",
+              "analogy-only",
+              "repair-candidate",
+              "obstruction-only",
+              "unresolved",
+              "no-substantive-body"
+            ]
+          },
+          "main_claim_resolved": {
+            "const": false
+          },
+          "interpretation_origin": {
+            "const": "assistant-proposed"
+          },
+          "owner_understanding_date": {
+            "type": "null"
+          },
+          "paper_citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "anchor": {
+                  "type": "string"
+                },
+                "page_text_sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "pdf_page",
+                "anchor",
+                "page_text_sha256"
+              ]
+            }
+          },
+          "followup_read_pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "read_extent": {
+            "type": "string"
+          },
+          "new_page_beyond_previous_review": {
+            "type": "boolean"
+          },
+          "finding": {
+            "type": "string"
+          },
+          "code_keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "missing_bridges": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "candidate_roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "code_key": {
+                  "type": "string"
+                },
+                "role": {
+                  "enum": [
+                    "conditional-fragment",
+                    "analogy-only",
+                    "repair-candidate",
+                    "obstruction-only",
+                    "rejected-candidate"
+                  ]
+                }
+              },
+              "required": [
+                "code_key",
+                "role"
+              ]
+            }
+          }
+        },
+        "required": [
+          "idea_id",
+          "source_id",
+          "asset_sha256",
+          "taxonomy",
+          "original_mapping_status",
+          "outcome",
+          "main_claim_resolved",
+          "interpretation_origin",
+          "owner_understanding_date",
+          "paper_citations",
+          "followup_read_pdf_pages",
+          "read_extent",
+          "new_page_beyond_previous_review",
+          "finding",
+          "code_keys",
+          "missing_bridges",
+          "candidate_roles"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "code_baseline",
+    "recorded_at",
+    "limitations",
+    "code_references",
+    "reviews"
+  ]
+}
