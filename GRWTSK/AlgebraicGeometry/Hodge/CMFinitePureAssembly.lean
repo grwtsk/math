@@ -162,5 +162,34 @@ theorem CMFiniteCanonicalPairedAssembly_pure
   rw [CMFiniteCanonicalPairedAssembly_eq_checked]
   exact pairedAssembly_pure E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
+
+/-- The authentic original paired pure tensor, rather than its generic
+alias, evaluates under the original named assembly by the same formula. -/
+theorem CMFiniteCanonicalPairedAssembly_originalPure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteCanonicalPairedAssembly E
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  rw [CMFiniteFourPairedPure_eq_checked]
+  exact CMFiniteCanonicalPairedAssembly_pure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Any candidate map on the authentic original finite-CM carrier with
+the prescribed pure formula equals the original named assembly. -/
+theorem CMFiniteCanonicalPairedAssembly_unique
+    (E : CMGaloisIntermediateField)
+    (F : CMFiniteFourPairedTensor E →ₗ[ℚ]
+      (E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E))
+    (hF : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      F (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+          (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)) :
+    F = CMFiniteCanonicalPairedAssembly E := by
+  rw [CMFiniteCanonicalPairedAssembly_eq_checked]
+  apply pairedAssembly_unique E.carrier F
+  intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  exact hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
