@@ -151,7 +151,8 @@ def rootStep : SourceBoundVerticalStep atlas .root .root where
   coordinate_evidence_exact := by intro _; exact ⟨selfOutcome, rfl, trivial⟩
   terminal_status_exact := by intro h; simp at h
 
-def rootPath : VerticalPath atlas .root .root := .cons rootStep (.refl .root)
+def rootPath : VerticalPath atlas ChartIndex.root ChartIndex.root :=
+  .cons rootStep (.refl ChartIndex.root)
 
 theorem atlas_not_gapFree : ¬ atlas.GapFree := by
   intro hgap

@@ -37,7 +37,11 @@ noncomputable section
 inductive Sign
   | negative
   | positive
-  deriving DecidableEq, Fintype
+  deriving DecidableEq
+
+instance : Fintype Sign where
+  elems := {Sign.negative, Sign.positive}
+  complete sign := by cases sign <;> simp
 
 /-- The rational scalar represented by a sign. -/
 def Sign.scalar : Sign → ℚ
@@ -157,7 +161,13 @@ theorem determinant_eq_zero_iff_sector
       ∃ sector, (pencil.sectorMatrix sector z).det = 0 := by
   classical
   rw [pencil.determinant_factorization]
-  simp
+  constructor
+  · intro h
+    rw [Finset.prod_eq_zero_iff] at h
+    rcases h with ⟨sector, _, hsector⟩
+    exact ⟨sector, hsector⟩
+  · rintro ⟨sector, hsector⟩
+    exact Finset.prod_eq_zero (Finset.mem_univ sector) hsector
 
 /-- Intrinsic local zeros are recovered sectorwise. -/
 theorem zeroSet_eq_iUnion_sectorZeroSet

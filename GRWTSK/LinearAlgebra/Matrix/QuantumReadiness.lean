@@ -77,13 +77,13 @@ theorem markedReflection_sigma (system : SteeringSystem ι) :
     (1 - 2 • system.markedProjector) * system.actions.sigma =
         system.actions.sigma - 2 •
           (system.markedProjector * system.actions.sigma) := by
-      simp [sub_mul]
+      simp only [sub_mul, one_mul, smul_mul_assoc]
     _ = system.actions.sigma - 2 •
           (system.actions.sigma * system.markedProjector) := by
       rw [hmarked]
     _ = system.actions.sigma *
           (1 - 2 • system.markedProjector) := by
-      simp [mul_sub]
+      simp only [mul_sub, mul_one, mul_smul_comm]
 
 theorem markedReflection_tau (system : SteeringSystem ι) :
     Commutes system.markedReflection system.actions.tau := by
@@ -96,13 +96,13 @@ theorem markedReflection_tau (system : SteeringSystem ι) :
     (1 - 2 • system.markedProjector) * system.actions.tau =
         system.actions.tau - 2 •
           (system.markedProjector * system.actions.tau) := by
-      simp [sub_mul]
+      simp only [sub_mul, one_mul, smul_mul_assoc]
     _ = system.actions.tau - 2 •
           (system.actions.tau * system.markedProjector) := by
       rw [hmarked]
     _ = system.actions.tau *
           (1 - 2 • system.markedProjector) := by
-      simp [mul_sub]
+      simp only [mul_sub, mul_one, mul_smul_comm]
 
 theorem referenceReflection_sigma (system : SteeringSystem ι) :
     Commutes system.referenceReflection system.actions.sigma := by
@@ -115,13 +115,13 @@ theorem referenceReflection_sigma (system : SteeringSystem ι) :
     (2 • system.referenceProjector - 1) * system.actions.sigma =
         2 • (system.referenceProjector * system.actions.sigma) -
           system.actions.sigma := by
-      simp [sub_mul]
+      simp only [sub_mul, one_mul, smul_mul_assoc]
     _ = 2 • (system.actions.sigma * system.referenceProjector) -
           system.actions.sigma := by
       rw [hreference]
     _ = system.actions.sigma *
           (2 • system.referenceProjector - 1) := by
-      simp [mul_sub]
+      simp only [mul_sub, mul_one, mul_smul_comm]
 
 theorem referenceReflection_tau (system : SteeringSystem ι) :
     Commutes system.referenceReflection system.actions.tau := by
@@ -134,13 +134,13 @@ theorem referenceReflection_tau (system : SteeringSystem ι) :
     (2 • system.referenceProjector - 1) * system.actions.tau =
         2 • (system.referenceProjector * system.actions.tau) -
           system.actions.tau := by
-      simp [sub_mul]
+      simp only [sub_mul, one_mul, smul_mul_assoc]
     _ = 2 • (system.actions.tau * system.referenceProjector) -
           system.actions.tau := by
       rw [hreference]
     _ = system.actions.tau *
           (2 • system.referenceProjector - 1) := by
-      simp [mul_sub]
+      simp only [mul_sub, mul_one, mul_smul_comm]
 
 /-- The Grover-type iterate preserves the first involution labels. -/
 theorem grover_sigma (system : SteeringSystem ι) :

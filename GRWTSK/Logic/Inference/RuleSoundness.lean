@@ -216,9 +216,9 @@ theorem CertificateChecker.meaning_of_ambient_coverage
     ∀ ambient, Meaning snapshot (ambientTarget ambient) := by
   intro ambient
   obtain ⟨idx, member, aligned⟩ := exhausts ambient
-  have scoped : Meaning snapshot (caseTarget idx) :=
+  have caseMeaning : Meaning snapshot (caseTarget idx) :=
     checker.meaning_of_complete_coverage snapshot domain caseTarget covered idx member
-  exact aligned ▸ scoped
+  exact aligned ▸ caseMeaning
 
 /-- A supplied finite family of accepted byte inputs reaches an ambient target
 only with both exact parsed-conclusion binding and ambient target exhaustion.
@@ -241,10 +241,10 @@ theorem CheckedByteInterface.meaning_of_ambient_byte_coverage
     ∀ ambient, Meaning snapshot (ambientTarget ambient) := by
   intro ambient
   obtain ⟨idx, member, aligned⟩ := exhausts ambient
-  have scoped : Meaning snapshot (caseTarget idx) :=
+  have caseMeaning : Meaning snapshot (caseTarget idx) :=
     interface.accepted_meaning_at_requested snapshot (input idx) (caseTarget idx)
       (accepted idx member) (bound idx member)
-  exact aligned ▸ scoped
+  exact aligned ▸ caseMeaning
 
 /-- Restrict an already sound checker by a supplied Boolean admission gate.
 The gate is mathematical input; this constructor does not authenticate schema
@@ -362,7 +362,9 @@ theorem accepted_conclusion_and_digest_do_not_bind_request :
     trueConclusionChecker.Accepts () () true ∧
       (fun _ : Bool => ()) true = (fun _ : Bool => ()) false ∧
       ¬ trueMeaning () false := by
-  exact ⟨⟨rfl, rfl⟩, rfl, by decide⟩
+  refine ⟨⟨rfl, rfl⟩, rfl, ?_⟩
+  change ¬ (false = true)
+  exact Bool.noConfusion
 
 def snapshotMeaning (snapshot : Bool) (_ : Unit) : Prop := snapshot = true
 
@@ -380,7 +382,9 @@ def snapshotChecker : CertificateChecker Bool Unit Unit snapshotMeaning where
 /-- A checked judgment at one snapshot gives no unproved snapshot transport. -/
 theorem acceptance_does_not_change_snapshot :
     snapshotChecker.Accepts true () () ∧ ¬ snapshotMeaning false () := by
-  exact ⟨⟨rfl, rfl⟩, by decide⟩
+  refine ⟨⟨rfl, rfl⟩, ?_⟩
+  change ¬ (false = true)
+  exact Bool.noConfusion
 
 def falseMeaning (_ : Unit) (judgment : Bool) : Prop := judgment = false
 

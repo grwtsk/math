@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+import GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
 open GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
 

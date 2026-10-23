@@ -80,7 +80,13 @@ theorem determinant_eq_zero_iff_sector
       ∃ sector, (resolution.sectorMatrix sector z).det = 0 := by
   classical
   rw [resolution.determinant_factorization]
-  simp
+  constructor
+  · intro h
+    rw [Finset.prod_eq_zero_iff] at h
+    rcases h with ⟨sector, _, hsector⟩
+    exact ⟨sector, hsector⟩
+  · rintro ⟨sector, hsector⟩
+    exact Finset.prod_eq_zero (Finset.mem_univ sector) hsector
 
 /-- Sectorwise recovery of the effective zero set. -/
 theorem zeroSet_eq_iUnion
@@ -186,7 +192,7 @@ theorem transport_effective_intertwines
       (sheaf.jet target).effective z * sheaf.transport path := by
   induction path with
   | single arrow =>
-      exact sheaf.effective_intertwines arrow z
+      simpa [transport] using sheaf.effective_intertwines arrow z
   | tail path arrow inductionHypothesis =>
       simp only [transport]
       rw [Matrix.mul_assoc, inductionHypothesis, ← Matrix.mul_assoc,
@@ -201,7 +207,7 @@ theorem transport_coefficient_intertwines
       (sheaf.jet target).coefficient j * sheaf.transport path := by
   induction path with
   | single arrow =>
-      exact sheaf.coefficient_intertwines arrow j
+      simpa [transport] using sheaf.coefficient_intertwines arrow j
   | tail path arrow inductionHypothesis =>
       simp only [transport]
       rw [Matrix.mul_assoc, inductionHypothesis, ← Matrix.mul_assoc,
@@ -215,7 +221,7 @@ theorem transport_sigma_intertwines
       ((sheaf.synchronized target).actions).sigma * sheaf.transport path := by
   induction path with
   | single arrow =>
-      exact sheaf.sigma_intertwines arrow
+      simpa [transport] using sheaf.sigma_intertwines arrow
   | tail path arrow inductionHypothesis =>
       simp only [transport]
       rw [Matrix.mul_assoc, inductionHypothesis, ← Matrix.mul_assoc,
@@ -229,7 +235,7 @@ theorem transport_tau_intertwines
       ((sheaf.synchronized target).actions).tau * sheaf.transport path := by
   induction path with
   | single arrow =>
-      exact sheaf.tau_intertwines arrow
+      simpa [transport] using sheaf.tau_intertwines arrow
   | tail path arrow inductionHypothesis =>
       simp only [transport]
       rw [Matrix.mul_assoc, inductionHypothesis, ← Matrix.mul_assoc,

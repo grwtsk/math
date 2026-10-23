@@ -1,5 +1,5 @@
 import Mathlib
-import GRWTSK.Analysis.Asymptotics.MassWeightedRecurrence
+import GRWTSK.Analysis.AsymptoticAnalysis.MassWeightedRecurrence
 
 /-!
 Research direction: grwtsk contributors.

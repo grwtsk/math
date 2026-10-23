@@ -98,8 +98,11 @@ theorem code_decode (E : BitMatrix.FiniteField.Encoding F m n) (A : BitMatrix m 
 theorem code_zero (E : BitMatrix.FiniteField.Encoding F m n) :
     E.code 0 = zeroMatrix m n := by
   apply (boolMatrixGF2Equiv m n).injective
+  simp only [code, Equiv.trans_apply, Equiv.apply_symm_apply]
+  change E.coordinates 0 = boolMatrixGF2Equiv m n (zeroMatrix m n)
+  rw [E.coordinates.map_zero]
   ext i j
-  simp [code, zeroMatrix, boolMatrixGF2Equiv]
+  rfl
 
 
 @[simp]

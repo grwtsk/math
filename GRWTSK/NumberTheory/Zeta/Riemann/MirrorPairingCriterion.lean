@@ -54,8 +54,8 @@ theorem mirrorPairing_positive_iff_fixed {Z : Type*} (mirror : Z → Z) :
     norm_num [hostile, mirrorPairingForm] at hhostile
   · intro hfixed v
     have hsame : v.left = v.right := v.fixed_consistency (hfixed v.point)
-    simp only [mirrorPairingForm, hsame]
-    positivity
+    rw [mirrorPairingForm, hsame]
+    nlinarith [sq_nonneg v.right]
 
 /-- Critical-line reflection acting on the exact subtype of nontrivial zeta zeros. -/
 def criticalLineMirror (z : CriticalLineTest) : CriticalLineTest :=
@@ -74,6 +74,7 @@ theorem criticalLineMirror_eq_self_iff (z : CriticalLineTest) :
     apply Subtype.ext
     apply Complex.ext
     · simp [criticalLineMirror, criticalReflection, hreal]
+      norm_num
     · simp [criticalLineMirror, criticalReflection]
 
 /-- All nontrivial zeros are mirror-fixed exactly when the canonical RH proposition holds. -/

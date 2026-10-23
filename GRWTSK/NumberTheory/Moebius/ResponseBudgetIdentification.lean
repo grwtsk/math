@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.FixedWidthEnergyBoundEquivalence
+import GRWTSK.Analysis.AsymptoticAnalysis.FixedWidthEnergyBoundEquivalence
 import GRWTSK.NumberTheory.Moebius.MertensPrimitive
 
 /-! Exact adapter to the existing grwtsk/math CCC arithmetic proposition.

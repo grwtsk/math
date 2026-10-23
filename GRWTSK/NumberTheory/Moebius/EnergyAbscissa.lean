@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Asymptotics.PolynomialSubexponential
+import GRWTSK.Analysis.AsymptoticAnalysis.PolynomialSubexponential
 import GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy
 import GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound
 

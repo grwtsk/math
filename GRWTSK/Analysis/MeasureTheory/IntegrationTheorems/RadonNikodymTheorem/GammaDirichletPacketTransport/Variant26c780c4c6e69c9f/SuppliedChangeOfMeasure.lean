@@ -42,7 +42,7 @@ open scoped BigOperators ENNReal NNReal
 open MeasureTheory
 open BitMatrix.Probability
 open BitMatrix.Probability.GammaDirichlet
-open BitMatrix.Spectral
+open _root_.BitMatrix.Spectral
 
 variable {I : Type*} [Fintype I] [Nonempty I]
 variable {Outcomes : I → Type*} [∀ i, Fintype (Outcomes i)]

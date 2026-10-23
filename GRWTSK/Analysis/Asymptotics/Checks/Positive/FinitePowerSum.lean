@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.FinitePowerSum
+import GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 import Lean
 
 open Lean Elab Command

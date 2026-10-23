@@ -25,7 +25,7 @@ namespace GRWTSK.RiemannHypothesis
 def CriticalLineTest := {s : ℂ // NontrivialZetaZero s}
 
 /-- A symmetric real-valued form whose diagonal is the negative critical-line defect. -/
-def criticalLineDefectForm (z w : CriticalLineTest) : ℝ :=
+noncomputable def criticalLineDefectForm (z w : CriticalLineTest) : ℝ :=
   -(rhDefect z.1 + rhDefect w.1) / 2
 
 /-- The diagonal of the form is exactly the negative defect. -/
@@ -43,7 +43,8 @@ theorem criticalLineDefectPositivity_iff_rh :
   constructor
   · intro hpositive s hs
     have hnegativeDefect := hpositive ⟨s, hs⟩
-    rw [criticalLineDefectForm_diagonal] at hnegativeDefect
+    have hdiagonal := criticalLineDefectForm_diagonal ⟨s, hs⟩
+    rw [hdiagonal] at hnegativeDefect
     have hnonnegativeDefect := rh_defect_nonneg s
     linarith
   · intro hzero z

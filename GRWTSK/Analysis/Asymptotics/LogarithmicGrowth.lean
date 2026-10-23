@@ -1,5 +1,5 @@
 import Mathlib.Algebra.Ring.IsFormallyReal
-import GRWTSK.Analysis.Asymptotics.SublinearDyadic
+import GRWTSK.Analysis.AsymptoticAnalysis.SublinearDyadic
 import GRWTSK.Analysis.Inequalities.ResidualGrowthComparison
 
 /-! Source: the supplied transported-weight manuscript, Proposition 2.1.

@@ -1,6 +1,6 @@
-import GRWTSK.Analysis.Asymptotics.PrimeSubsetPotentialBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeSubsetPotentialBounds
 import GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth
-import GRWTSK.Analysis.Asymptotics.SelectedPrimeChainBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.SelectedPrimeChainBounds
 
 /-! Rigorous counterexample to the universal all-prime-subsets AS interface.
 The actual signed state contains only primes above exp(3T/4), so every
