@@ -170,4 +170,91 @@ theorem CountedWalk.chronologicalVertices_last
       simp
 
 
+
+/-- The first and last vertices of the chronological trace agree
+for every closed counted directed walk. This is the exact endpoint
+seam needed for cyclic Euler order compatibility. -/
+theorem CountedWalk.closed_chronological_seam
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (hclosed : a = b) :
+    T.chronologicalVertices.head? =
+      T.chronologicalVertices.getLast? := by
+  rw [T.chronologicalVertices_head,
+    T.chronologicalVertices_last, hclosed]
+
+/-- The chronological edge trace is nonempty whenever the used
+edge-instance set is nonempty. This ensures a genuine final edge
+exists when extracting a cyclic Euler certificate. -/
+theorem FreshCountedTrail.chronologicalEdges_nonempty
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hused : T.used.Nonempty) :
+    T.walk.chronologicalEdges ≠ [] := by
+  intro hnil
+  have hfin := T.walk.chronologicalEdges_toFinset
+  rw [hnil] at hfin
+  have hzero : T.used = ∅ := by
+    simpa [FreshCountedTrail.used] using hfin.symm
+  exact (Finset.nonempty_iff_ne_empty.mp hused) hzero
+
+
+
+/-- Chronological edge list is the exact reversal of the internal
+edge storage list. In particular, the first chronological edge is
+the last internally stored edge, and vice versa. -/
+theorem CountedWalk.chronologicalEdges_reverse
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalEdges.reverse = T.edges := by
+  simp [CountedWalk.chronologicalEdges]
+
+/-- The chronological vertex trace of an appended edge has the
+old terminal vertex immediately before the new terminal vertex.
+This is an endpoint-level incidence identity, independent of
+list-index casts or the total edge count. -/
+theorem CountedWalk.append_last_two_vertices
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b) :
+    (CountedWalk.append T e he).chronologicalVertices.getLast? =
+      some (countedEdgeTarget m c e) ∧
+    T.chronologicalVertices.getLast? =
+      some (countedEdgeSource m c e) := by
+  constructor
+  · exact (CountedWalk.append T e he).chronologicalVertices_last
+  · rw [T.chronologicalVertices_last, he]
+
+
+
+/-- Every chronological edge list is paired with a vertex trace
+whose final vertex is the actual terminal vertex. For a closed
+walk the same vertex is its initial vertex, giving the cyclic
+seam without any assumption on the number of edges. -/
+theorem CountedWalk.closed_trace_endpoint
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (hclosed : a = b) :
+    T.chronologicalVertices.getLast? = some a := by
+  rw [T.chronologicalVertices_last, ← hclosed]
+
+/-- The chronological vertex trace is always nonempty, so its
+head and last are genuine vertices rather than absent options. -/
+theorem CountedWalk.chronologicalVertices_nonempty
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalVertices ≠ [] := by
+  intro h
+  have hlen := T.chronologicalVertices_length
+  rw [h] at hlen
+  simp at hlen
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic

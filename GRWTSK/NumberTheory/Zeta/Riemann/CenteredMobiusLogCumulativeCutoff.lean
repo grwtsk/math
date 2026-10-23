@@ -2,7 +2,8 @@
 Copyright (c) 2026 grwtsk contributors. MIT.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 -/
-import GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogWeightedPrefix\nimport GRWTSK.NumberTheory.Zeta.Riemann.GreenHarmonicQuadrature
+import GRWTSK.NumberTheory.Zeta.Riemann.CenteredMobiusLogWeightedPrefix
+import GRWTSK.NumberTheory.Zeta.Riemann.GreenHarmonicQuadrature
 import Mathlib.Tactic
 set_option autoImplicit false
 noncomputable section
