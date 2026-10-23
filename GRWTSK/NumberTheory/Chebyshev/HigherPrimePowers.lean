@@ -6,7 +6,7 @@ import Mathlib.Algebra.Order.Floor.Semiring
 import Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt
 import Mathlib.NumberTheory.Harmonic.Bounds
 import Mathlib.Data.Finset.Card
-import Mathlib.Tactic.NormCast
+import Mathlib.Tactic
 
 /-!
 # Complete finite higher-prime-power inventory and logarithmic budget
@@ -186,7 +186,7 @@ theorem right_prime_square_present_control : 3 ∈ primePowerBases 2 2 := by
 
 /-- At-most-one occupancy permits an empty exponent fiber. -/
 theorem empty_fiber_control : primePowerBases 1 3 = ∅ := by
-  norm_num [primePowerBases]
+  decide
 
 /-- Composite bases can duplicate one power value; the prime filter is indispensable. -/
 theorem composite_base_duplicate_control :

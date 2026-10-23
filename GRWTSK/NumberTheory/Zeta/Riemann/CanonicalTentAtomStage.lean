@@ -45,7 +45,7 @@ abbrev SquarePair (n : ℕ) :=
   {kp : ℕ × ℕ // kp ∈ primePowerPairs n}
 
 noncomputable instance squarePairFintype (n : ℕ) : Fintype (SquarePair n) :=
-  Fintype.ofFinset (primePowerPairs n) (fun kp => Iff.rfl)
+  Fintype.ofFinset (primePowerPairs n) (fun _kp => Iff.rfl)
 
 theorem squarePair_exponent_pos {n : ℕ} (kp : SquarePair n) :
     0 < kp.1.1 :=
@@ -92,7 +92,7 @@ noncomputable def squareAtomStage (n : ℕ) : PrimePowerWitnessStage where
 noncomputable def pairToWitness (n : ℕ) (kp : SquarePair n) :
     (squareAtomStage n).WitnessIndex :=
   ⟨pairAtom n kp, by
-    simp [squareAtomStage, squareStageAtoms]⟩
+    exact Finset.mem_map.mpr ⟨kp, Finset.mem_univ kp, rfl⟩⟩
 
 theorem pairToWitness_injective (n : ℕ) :
     Function.Injective (pairToWitness n) := by
@@ -223,12 +223,18 @@ theorem pairAtom_tent_sum_eq_pairTentMass (n : ℕ) :
         squareWeight n (kp.1.2 ^ kp.1.1)) = pairTentMass n := by
   classical
   unfold pairTentMass
-  rw [Finset.univ_eq_attach]
-  rw [(primePowerPairs n).sum_attach
-    (fun kp => Real.log kp.2 * squareWeight n (kp.2 ^ kp.1))]
-  apply Finset.sum_congr rfl
-  intro kp hkp
-  simp [pairAtom, atomWeight_eq_log]
+  have hu : (Finset.univ : Finset (SquarePair n)) = (primePowerPairs n).attach := by
+    ext kp
+    simp
+  rw [hu]
+  calc
+    _ = ∑ kp ∈ (primePowerPairs n).attach,
+        Real.log kp.1.2 * squareWeight n (kp.1.2 ^ kp.1.1) := by
+      apply Finset.sum_congr rfl
+      intro kp hkp
+      simp only [atomWeight_eq_log, pairAtom_prime_val]
+    _ = _ := (primePowerPairs n).sum_attach
+      (fun kp => Real.log kp.2 * squareWeight n (kp.2 ^ kp.1))
 
 /-- The source-faithful finite atom readout equals the canonical square-tent
 von Mangoldt observable exactly. -/

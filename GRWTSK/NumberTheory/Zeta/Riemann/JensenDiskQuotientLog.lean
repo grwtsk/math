@@ -47,7 +47,7 @@ theorem exists_zeta_disk_log_of_quotient (N : ℕ) (hN : 2 ≤ N) (c : ℂ)
     intro w hw
     apply norm_zeta_le_cube_on_disk N hN c (c + w) hc
     have hnorm : ‖w‖ = 3 := by simpa [Metric.mem_sphere, dist_zero_right] using hw
-    simpa [Metric.mem_closedBall, dist_eq_norm, hnorm] using (le_refl (3 : ℝ))
+    simp [Metric.mem_closedBall, dist_eq_norm, hnorm]
   have hf : (1 / 4 : ℝ) ≤ ‖riemannZeta (c + 0)‖ := by
     rw [add_zero]
     rcases hc with rfl | rfl

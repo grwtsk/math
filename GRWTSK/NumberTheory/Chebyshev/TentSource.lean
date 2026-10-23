@@ -3,7 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Real.TentWeight
 import GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget
-import Mathlib.Tactic.NormCast
+import Mathlib.Tactic
 
 set_option autoImplicit false
 
@@ -33,7 +33,7 @@ def squareCenter (n : ℕ) : ℝ :=
 def squareRadius (n : ℕ) : ℝ := (2 * (n : ℝ) + 1) / 2
 
 theorem squareRadius_pos (n : ℕ) : 0 < squareRadius n := by
-  have hn := Nat.cast_nonneg (R := ℝ) n
+  have hn := Nat.cast_nonneg (α := ℝ) n
   unfold squareRadius
   linarith
 
