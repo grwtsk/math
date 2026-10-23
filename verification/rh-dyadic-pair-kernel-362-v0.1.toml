@@ -1,0 +1,287 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-pair-kernel-362-v0.1"
+owner_repository = "grwtsk/math"
+issue = 362
+parent_issue = 357
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 360
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicMertensPairKernel"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicMertensPairKernel"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "c90e918f668cfd9e04974a9c79283a72df121e1a"
+stacked_parent_tree = "c3e51c6f19052fd6cb7787d1abe395cb36b26425"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicMertensPairKernel.lean"
+new_module_git_blob = "31822c65fae0eca5a7fc352d9c77887cbdc17bf0"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-mertens-pair-kernel.md"
+mathematical_note_git_blob = "a9919da55878526effc7fc7f44e745cf1b769c2b"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+source_signature_hashes_require_exact_extraction_reconciliation = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+rh_claimed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unsafe_or_opaque_without_review = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicMertensPairKernel"
+authored_declaration_count = 27
+definition_count = 7
+theorem_script_count = 20
+private_helper_count = 0
+
+[[inherited_targets]]
+path = "verification/rh-dyadic-block-equivalence-357-v0.1.toml"
+git_blob = "f85af923e3107478846e4c36e449ddaf35ebcdc6"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicBlockWeightedMertensSquare.lean"
+git_blob = "04d6f34558e85f22460d76e65717ecd81b2237fe"
+selected_declarations = [
+  "weightedMertensDyadicBlock",
+  "SubpolynomialDyadicBlockWeightedMertensSquare",
+  "riemannHypothesis_of_subpolynomialDyadicBlockWeightedMertensSquare"
+]
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicWeightedMertensSquare.lean"
+git_blob = "5be4e03ba89872c7ce1cd3bdafaeaf7b3c2168c5"
+selected_declarations = [
+  "weightedMertensDyadicBlock",
+  "weightedMertensDyadicPrefix",
+  "dyadicEndpoint_succ_rpow"
+]
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CumulativeWeightedMertensSquare.lean"
+git_blob = "8e49bbe86c216b82fac5ecbdc23adfeea292f6b8"
+selected_declarations = [
+  "weightedMertensBaseTerm",
+  "weightedMertensBaseTerm_nonneg"
+]
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[upstream_sources]]
+path = "GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean"
+git_blob = "57817369f523ecc3a166a8a51810d2af23589399"
+selected_declarations = ["pickupMertensPrefix"]
+status = "SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[upstream_sources]]
+path = "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean"
+git_blob = "4a5e8075d851d7c9b9f697412c28b0dd627885a1"
+selected_declarations = ["moebiusReal_abs_le_one"]
+status = "SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[finite_diagnostics]
+status = "PASSED_FINITE_ONLY"
+report_sha256 = "dc2b7bb7b2af2b40c3fb6ede98705556034804e0b14f8e4cfdbabd5ad8133613"
+total_checks = 1761205
+exhaustive_coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 8
+exhaustive_stream_count = 6561
+dyadic_stages = [0, 1, 2]
+actual_moebius_limit = 4096
+actual_direct_pair_stages = 8
+actual_kernel_samples_per_stage = 256
+deleted_terminal_mutation_rejected_cases = 1614
+absolute_offdiagonal_mutation_rejected_cases = 926
+closed_cell_mutation_rejected_cases = 1632
+finite_diagnostics_are_not_infinite_estimates = true
+finite_diagnostics_are_not_lean_acceptance = true
+
+[[hostile_controls]]
+id = "ordered_signed_off_diagonal"
+requirement = "Retain both ordered pair orientations and the Möbius product sign."
+
+[[hostile_controls]]
+id = "terminal_kernel_subtraction"
+requirement = "Retain the negative reciprocal right-endpoint term in the closed kernel."
+
+[[hostile_controls]]
+id = "diagonal_not_cancellation"
+requirement = "Pay the nonnegative diagonal separately; do not call its boundedness Möbius cancellation."
+
+[[hostile_controls]]
+id = "half_open_dyadic_ownership"
+requirement = "Retain Finset.Ico at the dyadic right endpoint."
+
+[[hostile_controls]]
+id = "no_absolute_majorant_substitution"
+requirement = "Do not replace the signed off-diagonal by an absolute-value pair sum."
+
+[[hostile_controls]]
+id = "universal_quantifiers"
+requirement = "A finite scale table does not witness every positive exponent and every dyadic stage."
+
+[nonclaims]
+lean_parsed = false
+lean_elaborated = false
+kernel_checked = false
+transitive_axiom_audited = false
+native_dependency_audited = false
+independently_reviewed = false
+pair_correlation_estimate_proved = false
+new_damping_paid = false
+riemann_hypothesis_proved = false
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicWeight"
+kind = "def"
+source_signature_sha256 = "ca6097cce5ca209599c83e9019b4270a779d2af990fe757ec627dc09d7a5b935"
+
+[[declaration_bindings]]
+name = "weightedMertensBaseTerm_eq_weight"
+kind = "theorem"
+source_signature_sha256 = "71ff2117bca42ec3ed6114c7372c92381da03638f4239231877083a5c39803e6"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicWeight_nonneg"
+kind = "theorem"
+source_signature_sha256 = "55abe65825caff4ae4d5792b9dedc2ed693eea95afad415c42bb21e4e4f91a69"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicWeight_eq_inv_sub_inv_succ"
+kind = "theorem"
+source_signature_sha256 = "4b853973536ee975b2e3aa9bee206e7ee1cb02c9af50a6c2a119e539af77a7de"
+
+[[declaration_bindings]]
+name = "sum_weightedMertensDyadicWeight_Ico"
+kind = "theorem"
+source_signature_sha256 = "999909dcf681e1506324870ec4021c95bb271a0e4b28be13806903cfc99f0083"
+
+[[declaration_bindings]]
+name = "weightedMertensPairKernel"
+kind = "def"
+source_signature_sha256 = "7b8e8d982671fdf00d2a891aa7b75a6dbdfd1af215174ad7f47e547e3c278701"
+
+[[declaration_bindings]]
+name = "weightedMertensPairLower"
+kind = "def"
+source_signature_sha256 = "3178595b4e3471ad80da97e61de70a1808e58ba3b9463e49f5b8dcd71e658190"
+
+[[declaration_bindings]]
+name = "weightedMertensPairKernel_eq_sum_Ico_lower"
+kind = "theorem"
+source_signature_sha256 = "67903e29f589a85dc32a0d9a6737206aa43a6a68335302f4e4a503216cd91161"
+
+[[declaration_bindings]]
+name = "weightedMertensPairKernel_closed"
+kind = "theorem"
+source_signature_sha256 = "b4da740cfc1e743a642e0080e9f8e0e95798801e0a170e90ae60bcf938876a33"
+
+[[declaration_bindings]]
+name = "weightedMertensPairKernel_nonneg"
+kind = "theorem"
+source_signature_sha256 = "5922c2cbf116b9986e2286e281c16e01d3cb9459bbde8c368453052cdbb020e4"
+
+[[declaration_bindings]]
+name = "weightedMertensPairKernel_le_inv_left"
+kind = "theorem"
+source_signature_sha256 = "d7308f1aebafd3d59a8cb0ecea7f9d9256e5c87253fd3921350c6751745910dc"
+
+[[declaration_bindings]]
+name = "pickupMertensPrefix_fixed_inventory"
+kind = "theorem"
+source_signature_sha256 = "a89df27056d79acf998e8923f241f575f1f7d6bd867779994a051f5d3d8aa3d5"
+
+[[declaration_bindings]]
+name = "pickupMertensPrefix_sq_fixed_inventory"
+kind = "theorem"
+source_signature_sha256 = "dece67eca8c48a0a7d8b11be930cd9f17b45a220edbebdb09db6976ffe120853"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicPairQuadratic"
+kind = "def"
+source_signature_sha256 = "40d7e18148219e555a612675bfb2067de397b6d918b96d24aa25ec4f107304cf"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicBlock_eq_pairQuadratic"
+kind = "theorem"
+source_signature_sha256 = "3af94f1aab4b0fba182d80edcf9fc9e8d683ef17a370005b39d93fd1d3a1242a"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicPairDiagonal"
+kind = "def"
+source_signature_sha256 = "bfa851b014b9d2114ecbde57a8c5cc42aa940c0b99663c378611334af5d5b6e7"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicPairOffDiagonal"
+kind = "def"
+source_signature_sha256 = "bc005b23fe9a99c643b0f59e7af2bb939fd0f71abe7164782eec4c65d9712df1"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicPairQuadratic_eq_diagonal_add_offDiagonal"
+kind = "theorem"
+source_signature_sha256 = "59a0a9062356eea5505899cb012e99aa60f2b62d37cbee1c64c0aa4e9d85f821"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicBlock_eq_pairDiagonal_add_offDiagonal"
+kind = "theorem"
+source_signature_sha256 = "44b7ede3aec40126dea0212bacce6e1beb1313675af7b77c3aeb1ed430bd621e"
+
+[[declaration_bindings]]
+name = "moebiusReal_sq_le_one"
+kind = "theorem"
+source_signature_sha256 = "5a3c1d0a2a225f92ba15f2f702b907ef3b10a88e9198481d07f0cb1b8a561993"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicPairDiagonal_nonneg"
+kind = "theorem"
+source_signature_sha256 = "bbde01fb914105cf1cf3ad06303882194de7f59bf52c0d5d7a6df3a664cf68a2"
+
+[[declaration_bindings]]
+name = "weightedMertensDyadicPairDiagonal_le_two"
+kind = "theorem"
+source_signature_sha256 = "fd01413d4e2af795be65080fab4a0a87c8fb3cf694b5e026d466e10ea56cee03"
+
+[[declaration_bindings]]
+name = "SubpolynomialDyadicMertensPairCorrelation"
+kind = "def"
+source_signature_sha256 = "0aa91cd4a4ca5b3044385b62cd00314a7025b67059d1fb97dff204163267a194"
+
+[[declaration_bindings]]
+name = "pairCorrelation_of_dyadicBlock"
+kind = "theorem"
+source_signature_sha256 = "780df9054b4a0f9f6212468789a6b1aa153c8c2b08da11b632ba5d7510ad4c56"
+
+[[declaration_bindings]]
+name = "dyadicBlock_of_pairCorrelation"
+kind = "theorem"
+source_signature_sha256 = "3fd17d16a3e326a1db90e3ecd833d319929b74dd604f3919159bc59092ca6e44"
+
+[[declaration_bindings]]
+name = "subpolynomialDyadicMertensPairCorrelation_iff_block"
+kind = "theorem"
+source_signature_sha256 = "83deba91a3acd77153df70f2ba601f749e1dd9b42b74b8d275fce512a7a6163a"
+
+[[declaration_bindings]]
+name = "riemannHypothesis_of_subpolynomialDyadicMertensPairCorrelation"
+kind = "theorem"
+source_signature_sha256 = "bb89fc56886f862e6c0d02e020c81a560834ea5514f88a60d33741b48a6b7360"
