@@ -24,6 +24,7 @@ The remaining independent supplier is
 
 set_option autoImplicit false
 noncomputable section
+open Topology
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonJointRadialDescent
 
@@ -35,6 +36,10 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment
+
+/-- Use the same finite discrete source topology as the perimeter homeomorphism. -/
+local instance cornerDiscreteTopology (k : ℕ) :
+    TopologicalSpace (PolygonCorner k) := ⊥
 
 /-- The precise product projection whose quotient-map property is still
 an independent supplier, not inferred from separate continuity. -/

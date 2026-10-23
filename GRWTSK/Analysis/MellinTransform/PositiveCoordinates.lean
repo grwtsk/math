@@ -57,7 +57,8 @@ theorem power_hasDerivAt {x : ℝ} (hx : 0 < x) (s : ℂ) :
     HasDerivAt (fun y : ℝ => power y s)
       (s * power x s / (x : ℂ)) x := by
   have h := (((Real.hasDerivAt_log (ne_of_gt hx)).ofReal_comp).const_mul s).cexp
-  convert h using 1 <;> simp only [power, Complex.ofReal_inv] <;> ring
+  simpa only [power, Complex.ofReal_inv, div_eq_mul_inv, mul_assoc, mul_comm,
+    mul_left_comm] using h
 
 theorem power_differentiable_parameter (x : ℝ) :
     Differentiable ℂ (power x) := by
@@ -70,7 +71,7 @@ theorem atom_scaling {X n : ℝ} (hX : 0 < X) (hn : 0 < n)
     power X (1 - s) * ((a / n : ℝ) : ℂ) * power (n / X) (1 - s) =
       (a : ℂ) * power n (-s) := by
   have hnX : 0 < n / X := div_pos hn hX
-  have hprod : X * (n / X) = n := by field_simp [ne_of_gt hX]; ring
+  have hprod : X * (n / X) = n := by field_simp [ne_of_gt hX]
   have hm := power_mul hX hnX (1 - s)
   rw [hprod] at hm
   calc
