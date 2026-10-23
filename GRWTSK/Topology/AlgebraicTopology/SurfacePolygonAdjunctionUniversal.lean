@@ -116,6 +116,6 @@ theorem existsUnique_continuous_compatible_extension (k : ℕ)
       extendCompatibleDisk_disk k disk boundary hcompat,
       extendCompatibleDisk_boundary k disk boundary hcompat⟩
   · intro f hf
-    exact filledMap_ext_of_disk k hf.2.1
+    exact filledMap_ext_of_disk k (hf.2.1.trans\n      (extendCompatibleDisk_disk k disk boundary hcompat).symm)
 
 end GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionUniversal
