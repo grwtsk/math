@@ -32,6 +32,7 @@ namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskHomeomorphism
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterConeCircleTransport
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonRadialFilling
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarStandardConeDescent
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarConeFibers
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase
@@ -116,6 +117,27 @@ theorem perimeterConeHomeomorphClosedDisk_apex (k : ℕ) :
   rw [perimeterConeHomeomorphClosedDisk]
   rw [perimeterConeHomeomorphStandardCircleCone_apex]
   exact standardConePolarDisk_apex
+
+/-- Source-exact obstruction: the polar disk homeomorphism on the
+UNPAIRED perimeter cone cannot descend to any function on the
+PAIRED filled polygon quotient along the genuine cone-to-filling map.
+This uses the original opposite-side midpoint noninjectivity,
+and does NOT assert that the filled polygon has no disk chart or that
+its intrinsic topology is not a disk. -/
+theorem perimeterConePolar_not_factor_through_filling (k : ℕ) :
+    ¬ ∃ f : FilledPolygonQuotient k → ClosedComplexUnitDisk,
+        f ∘ coneToFilled k =
+          (perimeterConeHomeomorphClosedDisk k :
+            PerimeterCone k → ClosedComplexUnitDisk) := by
+  rintro ⟨f, hf⟩
+  apply coneToFilled_not_injective k
+  intro x y hxy
+  apply (perimeterConeHomeomorphClosedDisk k).injective
+  calc
+    perimeterConeHomeomorphClosedDisk k x =
+        f (coneToFilled k x) := (congrFun hf x).symm
+    _ = f (coneToFilled k y) := congrArg f hxy
+    _ = perimeterConeHomeomorphClosedDisk k y := congrFun hf y
 
 /-
 Strictly open and independent:
