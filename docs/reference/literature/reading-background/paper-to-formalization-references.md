@@ -5759,3 +5759,275 @@ receipt. The public root import and unrelated theorem statuses are unchanged.
 **Exact source.** [`grwtsk/math@6c6173925b4d5e01245c055d2035aa62923cade9`](https://github.com/grwtsk/math/commit/6c6173925b4d5e01245c055d2035aa62923cade9), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentRepairSufficiency.lean`, blob `2ee4d6d925580960af5e536f7db6aecab1f4a56b`; direct imports `CanonicalSquareTentRepairNecessity` blob `f52cbb3777afe4f90a9c14fede472d1ee1c3f013` and `CanonicalSquareTentThreeMomentUniqueDecoder` blob `db38127cc402436f6e2e07bf3af012de4c3a5513`; full transitive closure pending actual checkout audit.
 
 **Independent evidence classifications.** Imported external paper mathematics: none; kernel-verified bridge: **not established**; source proof candidates: two new declarations; conditional interface: explicit third-coordinate **full-fiber** determination by extra; finite evidence: none newly claimed; analogies: statistical sufficiency/inverse problems only, with no historical inference; unresolved premises: identifying an actual independently sourced extra observable satisfying that hypothesis, classical analytic transport, and Lean/kernel/transitive-axiom acceptance. [Verification issue #1146](https://github.com/grwtsk/math/issues/1146) pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`, exact builds/probes and expected receipts. **ACTUAL SOURCE_ONLY / GIT_BLOB_READBACK / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** Runner/receipts outside math in `grwtsk/noeaaeue`; public root promotion withheld.
+
+## Case FAREY-CAT-TORSION-20261023 — Arnold matrix identity, real torus torsion and conditional no-extension
+
+**Historical publication and precise method, with no invented influence.**
+**Roy L. Adler and Benjamin Weiss**, *Entropy, a Complete Metric Invariant
+for Automorphisms of the Torus*, *Proceedings of the National Academy of
+Sciences of the USA* **57**(6) (**1967**), pp. **1573–1576**,
+stable DOI [10.1073/pnas.57.6.1573](https://doi.org/10.1073/pnas.57.6.1573),
+[open PubMed Central record](https://pmc.ncbi.nlm.nih.gov/articles/PMC224513/).
+The paper concerns **metric entropy and the classification of ergodic
+toral automorphisms**, not a finite Farey projective eigenfunction.
+Its method is context for the external cat-map entropy/Markov-partition
+formalization, NOT the proof of the elementary Farey `RL` identity
+or the new open-mixing conditional no-extension theorem.
+No historical influence on GRWTSK is inferred from an idea match.
+
+**External formalized work, separate source and toolchain.**
+**Marcel Morgenstern (2026)**, *lean4-ergodic-theory*,
+[stable GitHub repository](https://github.com/marcmorningstar/lean4-ergodic-theory),
+pinned source commit
+[`040fec2e0ddf4fcba49af9f76c866d295308dd7f`](https://github.com/marcmorningstar/lean4-ergodic-theory/commit/040fec2e0ddf4fcba49af9f76c866d295308dd7f).
+Exact imported-external-only declaration identities, which are
+**NOT** Lean imports into `grwtsk/math`:
+
+- `ErgodicTheory.CatMapToral.catℤ`:
+  integer **`[[2,1],[1,1]]`**, file
+  `ErgodicTheory/Examples/CatMapOrbit.lean`, blob
+  `d72b481dbaf3a788d74248fb616ca33b53a6ba8a`.
+- `ErgodicTheory.CatMapToral.catTorus`,
+  `measurePreserving_catTorus`,
+  `ergodic_catTorus`:
+  genuine compact real two-torus automorphism and Haar
+  measure/ergodicity, file `CatMapToral.lean`, blob
+  `2fbc2dc709270f9c7dcbfb12f34715318402dc2e`.
+- `ErgodicTheory.CatMapToral.catTorus_mixing` and
+  `catTorus_eigenfunction_ae_zero_of_mixing`:
+  **MEASURE-THEORETIC strong mixing** and its measurable
+  eigenfunction corollary, file `CatMapMixing.lean`,
+  blob `680a64b9746cf75579586041bda758c0f0eb824c`.
+  The latter assumes `Measurable g`, an **everywhere**
+  scalar eigenrelation, `‖l‖=1`, `l≠1`, and concludes
+  **`g=ᵐ[volume]0`**, NOT pointwise vanishing at
+  individual Haar-null torsion points.
+- `ErgodicTheory.CatMapToral.catTorus_ksEntropy_eq`:
+  actual metric entropy `log((3+√5)/2)`,
+  file `CatMapEntropy.lean`, blob
+  `362845d4911edeaf9bee94016dcf9ed931c7633f`.
+  This uses genuine Markov partitions and geometric
+  entropy estimates, NOT a theorem of the finite
+  Farey `LR` or `RL` words.
+- `ErgodicTheory.Livsic.isHolderCoboundary_iff`:
+  scalar additive Hölder coboundary criterion with
+  **explicit closing, dense-orbit and Hölder hypotheses**,
+  file `Livsic/Abstract.lean`, blob
+  `c9af5a07952948a8203edcf95a3c83e9b49f70fe`.
+  It is NOT Kalinin's full matrix-valued Livšic theorem.
+
+The external source locks **Lean v4.30.0-rc2**, distinct from
+`grwtsk/math` Lean **v4.33.0**.
+GitHub reported **two completed success check runs** at this exact
+external commit, “Build” and “Build project” (external CI
+[Build](https://github.com/marcmorningstar/lean4-ergodic-theory/actions/runs/29606825667),
+[Build project](https://github.com/marcmorningstar/lean4-ergodic-theory/actions/runs/29606825600)).
+These are **external provider CI status evidence**, not a fresh
+kernel replay or imported, reconciled type/axiom check by GRWTSK.
+Do not silently promote external claims to local verified bridges.
+
+**New repository-derived exact mathematics and hypotheses.**
+The genuine sourced positive Farey shears
+`L=[[1,0],[1,1]]` and `R=[[1,1],[0,1]]`
+form `H=LR=[[1,1],[1,2]]` and
+`M=RL=[[2,1],[1,1]]`. The latter is **literally**
+the external Arnold cat matrix. With the integral
+coordinate swap `P=[[0,1],[1,0]]`,
+`P²=I`, **`det P=-1`** and `M=P H P`.
+Thus the source gives `GL₂(ℤ)` conjugacy,
+**not** an `SL₂(ℤ)` conjugacy by P and
+**not** a conjugacy of the positive Farey
+cell system with the compact torus dynamics.
+The exact expanding eigenvalue
+`λ+=(3+√5)/2` is already sourced in
+`ReturnSpectralChannel`, but no KS entropy
+assertion is inferred from the finite source.
+
+At the **actual torus** `Torus2 =
+UnitAddTorus (Fin 2)=(ℝ/ℤ)²`, the new code
+uses the pinned Mathlib injective additive
+homomorphism
+`ZMod.toAddCircle : ZMod 3 →+ UnitAddCircle`,
+from `Mathlib.Topology.Instances.AddCircle.Real`,
+source blob
+`b360e250d0d12bdee2fb4a55c63d99790198eefe`
+in Mathlib revision
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The embedding of `(ZMod 3)²` into the torus
+is injective on all **nine** distinct source vectors,
+its image is annihilated by 3,
+and the actual `M` torus map agrees with
+the mod-three source action at every embedded point.
+The **five-class sign quotient** is NOT substituted
+for the nine-vector torsion subgroup.
+
+Transporting the previous selected quadratic
+`f_H(v)=χ(v₀(v₀+v₁))` by P gives
+`f_M(v)=f_H(Pv)`, with
+`f_M(Mv)=-f_M(v)` on ALL nine finite
+vectors and **`f_M(0,1)=1`**.
+The torus eigen-relation is only asserted
+**on the nine embedded points** for any function
+agreeing with these nine values.
+A continuous function agreeing with those finitely
+many values need not be a global eigenfunction.
+
+**The exact conditional continuous obstruction.**
+For a topological base `T:X→X`,
+`HasOddLocalReturns T p` means every
+open neighborhood U of p contains some
+`x∈U` returning to U under an
+**odd** time `2n+1`.
+A continuous `F:X→ℂ` satisfying
+`F(Tx)=-F(x)` everywhere, with
+`Re F(p)>0`, cannot coexist with that
+odd near-return property: the open set
+`{x : 0 < Re F(x)}` cannot meet its
+odd forward images.
+A stronger `EventualOpenMixing T`
+is declared to provide odd returns.
+For the **source-local** torus map
+`CatMapArithmeticBridge.catTorus`,
+`no_continuous_cat_phase_extension_of_eventualOpenMixing`
+has the explicit **hypothesis**
+`EventualOpenMixing catTorus`.
+It excludes a **continuous, GLOBAL -1
+eigenfunction** agreeing with the finite
+torsion readout; it does **not** prohibit
+a continuous interpolation of finite point values
+without a global eigenlaw.
+The crucial mixing premise is **NOT DISCHARGED**:
+the external Lean theorem is **measure** mixing,
+and a source-identity/full-Haar-support transport
+is still missing.
+
+**Exact fully qualified GRWTSK declarations,
+first main source commits, current blobs.**
+
+- `GRWTSK.NumberTheory.Farey.CatMapArithmeticBridge`,
+  [initial source commit
+  `0126a5caa75ffb1cf78ecca9db0db2d8bf8d08c4`](https://github.com/grwtsk/math/commit/0126a5caa75ffb1cf78ecca9db0db2d8bf8d08c4),
+  path `GRWTSK/NumberTheory/Farey/CatMapArithmeticBridge.lean`,
+  blob **`8ef5c4b4f732040cf0af29f11406008c08b4daec`**.
+  Declarations (each prefixed by the namespace):
+  `catInteger`, `catInteger_eq`, `swapInteger`,
+  `swapInteger_sq`, `catInteger_conjugate`,
+  `catReal`, `catReal_eq`, `swapReal`,
+  `catReal_conjugate`, `catFiniteMatrix`,
+  `catFiniteMatrix_eq`, `catFinite`,
+  `catFinite_matrix`, `swapFinite`,
+  `swapFinite_involutive`,
+  `swapFinite_catFinite`,
+  `finiteCatReadout`,
+  `finiteCatReadout_eigen`,
+  `finiteWitness`,
+  `finiteCatReadout_witness`,
+  `Torus2`, `catTorus`,
+  `torsionEmbedding`,
+  `torsionEmbedding_injective`,
+  `torsionEmbedding_three_nsmul`,
+  `catTorus_torsion_intertwines`,
+  `torsion_phase_eigen`.
+  Direct repository import
+  `GRWTSK.NumberTheory.Farey.ProjectiveQuadraticChannel`
+  blob `79943dff174eee6049a9e097ca89ae1f6ddf04d4`;
+  direct Mathlib imports
+  `Mathlib.Topology.Instances.AddCircle.Real`
+  and `Mathlib.Tactic`.
+- `GRWTSK.NumberTheory.Farey.CatMapContinuousPhaseObstruction`,
+  [initial source commit
+  `cc96eae8a69d5087794bad49df2a353370de5cda`](https://github.com/grwtsk/math/commit/cc96eae8a69d5087794bad49df2a353370de5cda),
+  file `GRWTSK/NumberTheory/Farey/CatMapContinuousPhaseObstruction.lean`,
+  blob **`b76d4c8bf7544a1800917fd111cc017011d172c0`**.
+  Declarations under that prefix:
+  `HasOddLocalReturns`, `EventualOpenMixing`,
+  `oddLocalReturns_of_eventualOpenMixing`,
+  `signEigen_iterate`, `signEigen_odd`,
+  `no_continuous_signEigen_of_oddLocalReturns`,
+  `torsion_witness_positive`,
+  `no_continuous_cat_phase_extension_of_oddLocalReturns`,
+  `no_continuous_cat_phase_extension_of_eventualOpenMixing`.
+  Direct imports are the arithmetic-bridge module,
+  `Mathlib.Topology.Instances.Complex` and
+  `Mathlib.Tactic`.
+
+The exact mathematical exposition is
+[`docs/mathematics/NumberTheory/Farey/cat-map-torsion-continuous-obstruction.md`](../../../mathematics/NumberTheory/Farey/cat-map-torsion-continuous-obstruction.md),
+first documentation commit
+`0e8e4ec175a9f5f56b456e6e403dacd7438088d3`,
+Git blob
+`8467ce6b2a55eb6b3ed643a83aa216797f60cdc1`.
+
+**Verification and finite evidence classification — kept separate.**
+
+- `imported-mathematics`: source-defined Farey matrices,
+  the source previous mod-three readout and canonical
+  Mathlib `ZMod.toAddCircle`; **no external
+  ErgodicTheory project imported**.
+- `source-proof-candidate`: each new Lean declaration,
+  including literal `UnitAddTorus` embedding and exact
+  integer RL conjugacy; no fresh local accepted kernel receipt.
+- `conditional-interface`: both no-continuous-extension
+  theorems retain their odd-return or eventual open-mixing
+  premise; the latter is **unproved for this local catTorus**.
+- `finite-evidence`: an ACTUAL off-kernel
+  **Python 3.13.5** execution checked the integer
+  identity, nine embedded vectors, their 3-torsion
+  status, the finite torus map and phase relation
+  (36 point-level checks). Exact executed command:
+  `python /mnt/data/farey_cat_map_preflight.py > /mnt/data/farey_cat_map_preflight.stdout 2> /mnt/data/farey_cat_map_preflight.stderr`;
+  **observed exit status 0** and **stderr 0 bytes**.
+  Exact SHA-256 of script:
+  `a63d7e4e56bf8e6452b0573bebf0a7cc10295b859b05d419fbbdd3b86db2ad41`,
+  stdout:
+  `67aedd9704ae0f081733e46ba3933ecbe040e5b533ce39c7e9cae2d5295f8693`.
+  Exact math preflight pin
+  `7fbba776a8a7dbfac9ebee1d2571aee66d52516c`.
+  The **executable source** and **real receipt** were
+  retained OUTSIDE math in `grwtsk/noeaaeue`:
+  [executed script at commit c7d9008c](https://github.com/grwtsk/noeaaeue/blob/c7d9008c9eeaa985e9ca3efb0b1451fda7ae2ba7/verification/scripts/farey_cat_map_preflight_20261023.py)
+  and [receipt at commit 65554004](https://github.com/grwtsk/noeaaeue/blob/655540044f347fbf5c0d85e7b26e37cb98bde253/verification/math/20261023-cat-map-torsion-7fbba776-exact-preflight.json).
+  This is **not** an analytic mixing check or Lean proof.
+- `external-CI-reported`: the independent
+  Morgenstern project reports two successful GitHub checks
+  at pinned `040fec2e...`; no GRWTSK replay or
+  cross-toolchain import acceptance was performed.
+- `kernel-verified bridges`: **NONE NEW** for
+  these two GRWTSK leaves. The actual local
+  `lake build --wfail`, native `leanchecker`,
+  direct `lean --trust=0`, and transitive
+  `#print axioms` / generated/unsafe/opaque
+  audits are **NOT_RUN / PENDING** in this session.
+  Lean toolchain `leanprover/lean4:v4.33.0`,
+  Mathlib
+  `db584cd6d46c92f209a44c0f1c829460d327499d`.
+  The available local runtime has no `lean`, `lake`
+  or `leanchecker`. Readback of the source,
+  absence of literal `sorry`, and a queued issue
+  are not proof acceptance.
+- `analogies`: Adler–Weiss entropy and
+  Morgenstern's measure mixing/KS theorem are
+  **different and stronger global dynamical claims**
+  than the finite Farey return eigenchannel.
+  The exact matrix identity is a genuine **algebraic
+  comparison**, but no externally compiled cross-repo
+  declaration or theorem is imported into math.
+- `unresolved-premises`: an actual source-to-external
+  torus map identity in a common Lean environment,
+  Haar full support/measure-mixing-to-odd-local-return
+  or eventual-open-mixing proof, no-extension
+  unconditional supplier, nonperiodic Farey/Sturmian
+  analytic cocycle and a real operator-spectrum
+  identification. No Sarnak, Siegel-zero, Hodge,
+  Kakeya, nonsofic-group or RH/GRH theorem follows.
+
+**Actual precise next obligation:** prove
+`CatMapContinuousPhaseObstruction.EventualOpenMixing
+CatMapArithmeticBridge.catTorus`
+or the weaker named `HasOddLocalReturns`
+from an **imported, checked** dynamical theorem and
+complete necessary full-support/source-equivalence bridge.
+Do not discharge it by simply matching numeric matrices
+or claiming the external measure-mixing theorem
+already inhabits the local type.
+
