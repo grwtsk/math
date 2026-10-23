@@ -105,8 +105,9 @@ square of a unit. This makes the square-class quotient map legal. -/
 theorem residueUnitBitHom_square (p : ℕ) [Fact p.Prime]
     (u : (ZMod p)ˣ) : residueUnitBitHom p (u ^ 2) = 1 := by
   apply Multiplicative.toAdd.injective
-  simpa only [map_pow, Multiplicative.toAdd_pow, Multiplicative.toAdd_one] using
-    two_smul_zmod_two ((residueUnitBitHom p u).toAdd)
+  rw [map_pow]
+  change (2 : ℕ) • (residueUnitBitHom p u).toAdd = 0
+  exact two_smul_zmod_two _
 
 /-- The actual quotient group of finite residue units modulo squares.
 It is not the global elliptic Selmer group or its étale algebra. -/
