@@ -248,5 +248,35 @@ theorem CMFiniteCanonicalPairedAssembly_unique
   intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
   exact hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
+/-- Any two maps on the original finite-CM paired tensor carrier
+satisfying the original pure shuffle formula coincide. The proof now uses
+the independently checked generic uniqueness theorem. -/
+theorem CMFiniteFourTensorShuffle_unique
+    (E : CMGaloisIntermediateField)
+    (F G : CMFiniteFourPairedTensor E →ₗ[ℚ]
+      (CMFiniteFourCoefficientTensor E ⊗[ℚ]
+        CMFiniteCanonicalVectorTarget E))
+    (hF : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      F (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄)
+    (hG : ∀ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier,
+      G (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+        CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) :
+    F = G := by
+  have hF' :
+      F = (GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour
+        ℚ E.carrier).toLinearMap := by
+    apply GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour_unique
+    intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    exact hF a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  have hG' :
+      G = (GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour
+        ℚ E.carrier).toLinearMap := by
+    apply GRWTSK.LinearAlgebra.TensorProduct.FourPairedShuffle.shuffleFour_unique
+    intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    exact hG a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+  exact hF'.trans hG'.symm
+
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
