@@ -1,0 +1,31 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-autocorrelation-assembly-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "97cd7c5189657ef333937cb3bdc4a8b05cf28b6a"
+parent_tree = "ee59a5ff2fc211192a37da4f06e642ca0b0207a6"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / AUTOCORRELATION_ASSEMBLED_SOURCE_WRITTEN / FINAL_INTEGER_FREQUENCY_REWRITE_OPEN"
+
+[assembly]
+zero_diagonal = "N"
+positive_phase = "fourier(d,t)"
+negative_phase = "fourier(-d,t)"
+assembled_frequency_sum = true
+
+[frontier]
+claim = "TriangularAssembledFrequencyKernelClaim"
+analytic_content = false
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+AUTOCORRELATION_ASSEMBLED_SOURCE_WRITTEN = true
+FINAL_INTEGER_FREQUENCY_REWRITE_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

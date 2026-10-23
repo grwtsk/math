@@ -1,0 +1,31 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-integer-frequency-partition-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "6cb18b463385ba3ba60271e453d824d68ef39ad5"
+parent_tree = "97287a32ac7946306c7d9b6f10e79469b66a41c0"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FREQUENCY_COEFFICIENTS_IDENTIFIED / INTEGER_INTERVAL_PARTITION_OPEN"
+
+[coefficients]
+positive = "(N-d)/N"
+negative = "(N-d)/N"
+zero = "1"
+endpoints = "0"
+
+[frontier]
+claim = "TriangularIntegerFrequencyPartitionClaim"
+analytic_content = false
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FREQUENCY_COEFFICIENTS_IDENTIFIED = true
+INTEGER_INTERVAL_PARTITION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,35 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-graded-gain-budget-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerGradedGainBudgetCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerGradedGainBudgetCore"
+
+[source_binding]
+parent_revision = "6e232fbd7c4043c9cd542acc0d7ea3804bd5237b"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / GRADED_FEJER_GAIN_BUDGET_SOURCE_PROVED / QUARTER_POWER_TOTAL_GAIN_REQUIRED / EIGHTH_POWER_ARITHMETIC_GAIN_REQUIRED / SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_OPEN"
+
+[closed]
+graded_smoothed_value_gain_formula = true
+graded_value_closure_equivalence = true
+fejer_boundary_threshold_formula = true
+pure_bandwidth_gain_obstruction = true
+double_threshold_gap_gain_floor = true
+seven_eighths_quarter_gain_floor = true
+seven_eighths_extra_eighth_arithmetic_gain = true
+corrected_graded_supplier_interface = true
+
+[frontier]
+remaining = "construct ThresholdGradedPrimeFejerSupplier at rho=7/8 from a noncircular nonlinear/maximal arithmetic theorem"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+GRADED_FEJER_GAIN_BUDGET_SOURCE_PROVED = true
+QUARTER_POWER_TOTAL_GAIN_REQUIRED = true
+EIGHTH_POWER_ARITHMETIC_GAIN_REQUIRED = true
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,31 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-graded-fourier-no-descent-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "280c6b1b50dcd177cf88b6e0f659a594a75a36ce"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CRITICAL_PREMISE_STRENGTH_CLASSIFIED / GRADED_FOURIER_PREMISE_TYPED / NAIVE_GRADED_FOURIER_NO_DESCENT_SOURCE_PROVED / SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_OPEN"
+
+[closed]
+critical_premise_classified = true
+graded_prime_fourier_premise_typed = true
+graded_naive_exponent_formula = true
+naive_quadratic_descent_obstruction = true
+seven_eighths_naive_no_descent = true
+
+[frontier]
+remaining = "SevenEighthsGradedPrimeFourierReadout or a stronger nonlinear/maximal arithmetic supplier"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CRITICAL_PREMISE_STRENGTH_CLASSIFIED = true
+NAIVE_GRADED_FOURIER_NO_DESCENT_SOURCE_PROVED = true
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

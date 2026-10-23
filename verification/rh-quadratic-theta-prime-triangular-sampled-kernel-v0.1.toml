@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-sampled-kernel-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "4d80507bc4e95d16df6622f898d46303ff92c0a2"
+parent_tree = "0b2c94f909350cc043430524afc01ccaf62c6306"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SAMPLED_KERNEL_SQUARE_DECAY_SOURCE_WRITTEN / PRIME_PREFIX_CONVOLUTION_IDENTIFICATION_OPEN"
+
+[sampled_kernel]
+normalization = "1/X"
+sample = "t=d/X"
+domain = "1<=d and 2*d<=X"
+bound = "X/(4*N*d^2)"
+
+[frontier]
+claim = "PrimePrefixSampledKernelTailPropagationClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SAMPLED_KERNEL_SQUARE_DECAY_SOURCE_WRITTEN = true
+PRIME_PREFIX_CONVOLUTION_IDENTIFICATION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

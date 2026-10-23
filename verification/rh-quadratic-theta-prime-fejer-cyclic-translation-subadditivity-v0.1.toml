@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-translation-subadditivity-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "5ea917ccf174503af13c4f2ed5dc436acaa71afe"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / TRANSLATION_SUBADDITIVITY_SOURCE_WRITTEN / NATURAL_SHIFT_TELESCOPING_SOURCE_WRITTEN / CYCLIC_DISTANCE_TELESCOPING_SOURCE_PROVED / UNIT_TRANSLATION_BOUND_OPEN"
+
+[closed]
+translation_subadditivity = true
+natural_shift_telescoping = true
+cyclic_distance_telescoping = true
+sharp_telescoping_supplier = true
+
+[frontier]
+remaining = "CyclicSharpUnitTranslationBoundClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CYCLIC_DISTANCE_TELESCOPING_SOURCE_PROVED = true
+UNIT_TRANSLATION_BOUND_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

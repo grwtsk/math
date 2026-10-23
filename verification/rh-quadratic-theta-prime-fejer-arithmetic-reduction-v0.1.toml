@@ -1,0 +1,33 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-arithmetic-reduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "f77f18427bcb46ffa737e3227cfc6b8bc11e9e40"
+parent_tree = "6f1b7f27cac450d56f9d70a85611bf652dc1d01f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / ARITHMETIC_ATOM_DECOMPOSITION_SOURCE_WRITTEN / SAFE_ATOM_ENVELOPE_SOURCE_WRITTEN / ARITHMETIC_TO_L1_REDUCTION_SOURCE_WRITTEN / SHARP_STEP_L1_FIRST_MOMENT_OPEN"
+
+[closed]
+sharp_atom_representation = true
+smoothed_atom_representation = true
+exact_error_decomposition = true
+safe_atom_envelope = "1+log(4X)"
+arithmetic_to_L1_reduction = true
+
+[frontier]
+remaining = "NonAliasingFejerSharpStepL1FirstMomentClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+ARITHMETIC_ATOM_DECOMPOSITION_SOURCE_WRITTEN = true
+SAFE_ATOM_ENVELOPE_SOURCE_WRITTEN = true
+ARITHMETIC_TO_L1_REDUCTION_SOURCE_WRITTEN = true
+SHARP_STEP_L1_FIRST_MOMENT_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-convex-contraction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "666c69de8085a3da5872cc56edc06b696e198891"
+parent_tree = "276586c64c95dd6a4b0aaf1e0f1c98ff4bccc520"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CYCLIC_KERNEL_FINTYPE_MASS_ONE_SOURCE_WRITTEN / SHIFTED_MASS_ONE_SOURCE_WRITTEN / POINTWISE_CONVEX_CONTRACTION_SOURCE_WRITTEN / DOUBLE_SUM_REINDEXING_OPEN / CYCLIC_INTERVAL_TRANSLATION_COUNT_OPEN"
+
+[closed]
+cyclic_kernel_fintype_mass_one = true
+shifted_kernel_mass_one = true
+pointwise_convex_contraction = true
+
+[frontier]
+double_sum = "CyclicConvolutionDoubleSumReindexingClaim"
+translation_count = "CyclicSharpTranslationCardinalityClaim"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CYCLIC_KERNEL_FINTYPE_MASS_ONE_SOURCE_WRITTEN = true
+SHIFTED_MASS_ONE_SOURCE_WRITTEN = true
+POINTWISE_CONVEX_CONTRACTION_SOURCE_WRITTEN = true
+DOUBLE_SUM_REINDEXING_PROVED = false
+CYCLIC_INTERVAL_TRANSLATION_COUNT_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

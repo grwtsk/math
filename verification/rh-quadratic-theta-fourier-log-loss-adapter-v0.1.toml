@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-fourier-log-loss-adapter-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "a64a129e9467e36998f800801bbe5d5ab6380ef8"
+parent_tree = "64a145f907892b58829956d45d848f8072d14811"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / LOGARITHMIC_MAXIMAL_LOSS_ABSORBED / POWER_EXPONENT_REMAINS_OPEN"
+
+[log_loss]
+premise = "|thetaError(2u)-thetaError(2X)| <= S*X^Q(rho)*(log X)^2"
+adapter = "(log X)^2 <= X^(eta/2) eventually"
+conclusion = "DyadicThetaErrorOscillationAt(rho)"
+
+[seven_eighths]
+power = "3/4"
+sufficient_bound = "X^(3/4)*(log X)^2"
+proved = false
+
+[frontier]
+maximal_interface = "PrimeFourierLogSqMaximalReadoutAt(rho)"
+power_saving_open = true
+logarithmic_loss_obstruction = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+LOGARITHMIC_MAXIMAL_LOSS_ABSORBED = true
+LOGSQ_MAXIMAL_READOUT_PROVED = false
+RECURRENCE_7_8_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

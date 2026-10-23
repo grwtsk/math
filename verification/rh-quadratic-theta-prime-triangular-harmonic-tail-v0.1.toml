@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-harmonic-tail-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "e9e868a860bacd9539678860fe978a24f17c40c8"
+parent_tree = "eafe4fcf379813c643357564d3fee6fc7f81b07e"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / HARMONIC_TAIL_AGGREGATION_PROVED / POINTWISE_TRIANGULAR_TAIL_DECAY_OPEN"
+
+[tail_model]
+pointwise = "O((X/N)/d)"
+aggregate = "C*(X/N)*log(4X)*harmonic(X)"
+harmonic_bound = "<= 1+log X"
+new_power_loss = "none"
+
+[balanced_cutoff]
+beta = "1/3"
+tail_power = "2/3"
+target_power = "3/4"
+
+[frontier]
+claim = "TriangularHarmonicTailDecayClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+HARMONIC_TAIL_AGGREGATION_PROVED = true
+POINTWISE_TRIANGULAR_TAIL_DECAY_PROVED = false
+THREE_QUARTER_POWER_SAVING_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,31 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-mass-one-reduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "d0c520e3b0d798d838bd8902b254c74dac8a585a"
+parent_tree = "75183e8f71ca14d8c022f178013154eb600df095"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / MASS_ONE_REDUCED_TO_MODE_ORTHOGONALITY / ZERO_MODE_MASS_SOURCE_WRITTEN / FINITE_CHARACTER_ORTHOGONALITY_OPEN / SHARP_STEP_COMPARISON_OPEN"
+
+[closed]
+zero_mode_sum = true
+zero_mode_weight_one = true
+mass_one_from_mode_orthogonality = true
+
+[frontier]
+remaining = "PeriodFourXFourierModeOrthogonalityClaim"
+route = "finite nontrivial additive character sum on ZMod(4X)"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+MASS_ONE_REDUCED_TO_MODE_ORTHOGONALITY = true
+ZERO_MODE_MASS_SOURCE_WRITTEN = true
+FINITE_CHARACTER_ORTHOGONALITY_PROVED = false
+SHARP_STEP_COMPARISON_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

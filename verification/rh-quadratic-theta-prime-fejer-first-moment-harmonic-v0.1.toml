@@ -1,0 +1,31 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-first-moment-harmonic-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "9263aa6625d4d1fe3c065fe150c34823845f36aa"
+parent_tree = "1d1f54de8cdcf21f64ba9ccf3a960ec0aead7c70"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_HARMONIC_SUMMATION_SOURCE_PROVED / FIRST_MOMENT_BUDGET_SOURCE_PROVED / SHARP_STEP_CONVOLUTION_COMPARISON_OPEN"
+
+[closed]
+reciprocal_sum_harmonic_identity = true
+harmonic_log_bound = true
+first_moment_harmonic_claim = true
+budget_log_squared_shape = true
+
+[frontier]
+remaining = "NonAliasingPrimePrefixFejerFirstMomentComparison"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FINITE_HARMONIC_SUMMATION_SOURCE_PROVED = true
+FIRST_MOMENT_BUDGET_SOURCE_PROVED = true
+SHARP_STEP_CONVOLUTION_COMPARISON_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-arithmetic-restriction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "ef1acf3d067da8f77a4e34ec029cd98488845e53"
+parent_tree = "d50e5ce493be9cb359712b69a75aa5ab7268764c"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / OCTAVE_REPRESENTATIVE_NATCAST_SOURCE_WRITTEN / CYCLIC_SHARP_INDICATOR_RESTRICTION_SOURCE_WRITTEN / CYCLIC_PREFIX_REINDEXING_OPEN / CYCLIC_KERNEL_DIFFERENCE_OPEN"
+
+[closed]
+octave_representative_natcast = true
+endpoint_4X_residue_zero = true
+cyclic_indicator_pointwise_restriction = true
+two_supplier_reduction = true
+
+[frontier]
+reindexing = "ArithmeticCyclicPrefixReindexingClaim"
+kernel_difference = "ArithmeticCyclicKernelDifferenceClaim"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+OCTAVE_REPRESENTATIVE_NATCAST_SOURCE_WRITTEN = true
+CYCLIC_SHARP_INDICATOR_RESTRICTION_SOURCE_WRITTEN = true
+CYCLIC_PREFIX_REINDEXING_PROVED = false
+CYCLIC_KERNEL_DIFFERENCE_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
