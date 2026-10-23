@@ -1,0 +1,138 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-canonical-square-tent-bombieri-moment-obstruction-v0.1"
+repository = "grwtsk/math"
+issue = 219
+base_branch = "main"
+base_commit = "549d145e5ab7b9faaacab46fd9b6123d907ee1f3"
+base_tree = "e09eb441a18636dd93155abac972b9baf42cc887"
+branch = "research/rh-bombieri-tent-moment-obstruction-219-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentObstruction.lean"
+source_blob = "a2a45110229876f744f1ce5965d68a159fa843c1"
+note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-bombieri-moment-obstruction-219.md"
+note_blob = "2c4cc2fef8a37e5a9165131eb4366abe6b54360c"
+
+parent_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean"
+parent_source_blob = "2c25cac04fe5575ac0242349a2dcc5592d19f0bb"
+tent_source = "GRWTSK/Analysis/Real/TentWeight.lean"
+tent_source_blob = "see exact base tree"
+square_source = "GRWTSK/NumberTheory/Chebyshev/TentSource.lean"
+square_source_blob = "see exact base tree"
+
+literature_source = "E. Bombieri, Problems of the Millennium: the Riemann Hypothesis, Clay Mathematics Institute, section V, printed pages 8-9"
+literature_url = "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf"
+literature_test_class = "W: piecewise C1 on R+, specified first-kind singularities and decay"
+literature_criterion_profile = "f(x)=integral g(xy) conjugate(g(y)) dy; integral g(x) dx/x = integral g(x) dx = 0"
+
+selected_result = "literal nonzero-scaled canonical square tents cannot satisfy Bombieri ordinary zero moment"
+transport_scope = "direct basis realization only; arbitrary moment correction or basis mixing unresolved"
+criterion_adapter_defined = false
+rh_claim = false
+
+evidence_states = ["LITERATURE_REVIEWED", "SOURCE_DRAFT"]
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+require_exact_base_commit = true
+require_exact_source_blob = true
+require_exact_note_blob = true
+require_pinned_lean_mathlib = true
+require_isolated_source_elaboration = true
+require_warning_clean_build = true
+require_current_main_import_compatibility = true
+require_transitive_import_inventory = true
+require_exact_declaration_types = true
+require_no_sorry_admit_or_new_axiom = true
+require_kernel_checker = true
+require_axiom_closure = true
+require_generated_declaration_reconciliation = true
+require_external_replay_receipt = true
+reject_moment_condition_deletion = true
+reject_zero_basis_scale = true
+reject_arbitrary_shape_correction_as_literal_tent = true
+reject_basis_mixing_nonexistence_claim = true
+reject_cross_term_computation_claim = true
+reject_global_transport_nonexistence_claim = true
+reject_weil_criterion_adapter = true
+reject_rh_claim = true
+do_not_merge = true
+
+[[commands]]
+id = "isolated_build"
+command = "lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction"
+status = "PENDING_EXECUTION"
+
+[[commands]]
+id = "fresh_kernel"
+command = "lake env leanchecker --fresh -v GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction"
+status = "PENDING_EXECUTION"
+
+[[commands]]
+id = "axiom_audit"
+command = "transitive axiom/unsafe/oracle census for the source and imported closure"
+status = "PENDING_EXECUTION"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.canonicalTentReal"
+classification = "literal_canonical_square_tent"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.canonicalTentReal_ordinaryMoment_pos"
+classification = "strict_positive_halfline_ordinary_moment"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.BombieriZeroMomentConditions"
+classification = "typed_source_moment_profile"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.bombieriOrdinaryMoment_canonicalTent_ne_zero"
+classification = "canonical_tent_moment_obstruction"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.bombieriOrdinaryMoment_scaledCanonicalTent_ne_zero"
+classification = "nonzero_scalar_normalization_obstruction"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.BombieriScaledCanonicalTentRealization"
+classification = "direct_source_bound_realization_candidate"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.no_bombieriScaledCanonicalTentRealization"
+classification = "direct_realization_refutation"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.no_exactTransport_with_directBombieriTentBasis"
+classification = "direct_exact_transport_refutation"
+
+[hostile_controls]
+cases = [
+  "both Bombieri source moments remain in the typed record",
+  "ordinary moment is proved strictly positive from nonnegative positive-measure support",
+  "every basis normalization scalar is nonzero",
+  "the obstruction applies only to literal scaled tents",
+  "moment-corrected shapes and basis mixing remain unresolved",
+  "no classical cross term is claimed computed",
+  "no global exact-transport nonexistence claim",
+  "no WeilCriterionForZeta or criterion direction",
+  "no RH claim"
+]
+
+[finite_fixture]
+dimension_parameter = 1
+basis_index = 0
+source_stage = 2
+support = "[4,9]"
+ordinary_moment_sign = "strictly_positive"
+source_required_value = "zero"
+result = "direct Bombieri realization impossible before cross-term evaluation"
+mathematical_authority = false
+
+[next_obstruction]
+statement = "Construct a two-vector moment-corrected Bombieri candidate from the stage-two and stage-three tents, prove both moments vanish, and recompute its full arithmetic coefficient matrix before any classical cross comparison."
