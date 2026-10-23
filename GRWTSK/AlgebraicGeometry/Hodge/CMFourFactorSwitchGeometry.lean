@@ -1324,8 +1324,6 @@ the existing two-factor multiplication map and rational tensor functoriality,
 without postulating a fourfold multiplication operation. -/
 
 /-- Evaluation on a fourfold pure tensor is ordinary field multiplication. -/
-@[simp]
-
 /-- Diagonal action on a threefold coefficient tensor: conjugate every
 coefficient entry, not merely the outermost tensor factor. -/
 def CMFiniteTripleCoefficientConjugate
@@ -1471,12 +1469,8 @@ commutator construction provided by Mathlib. -/
 
 /-- The shuffle separates all four coefficient entries from all four
 vector entries on paired pure tensors. -/
-@[simp]
-
 /-- Compose the actual tensor shuffle with the already constructed
 separated coefficient-multiplication assembly. -/
-
-@[simp]
 
 /-- A rational-linear paired-to-separated shuffle is uniquely determined
 by its action on fourfold paired pure tensors. Existence is not asserted.
