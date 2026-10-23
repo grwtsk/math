@@ -37,6 +37,20 @@ For any supplied `readout : Combination 2 → α`, **if** `readout correctedCoor
 
 **Scope:** this is a native two-dimensional, joint-generator, invariant-idempotent statement. It does not exclude projectors for just one generator, enlarged representations, a return map, non-equivariant observables, a spiral limit, a zeta-zero model, or a global spectral decomposition.
 
+## Exact completeness criterion for observable fibers (source-only increment)
+
+The repository's generic obstruction is now paired with an exact **converse on the attained observable range**. The source-only module `GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness` imports the original `FactorizationFiber` (blob `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd`) and introduces:
+
+- `factorsThrough_iff_fiberConstant_of_surjective`: for any types `X,Y,Z` and actual surjection `profile : X → Y`, the existence of a decoder `decode : Y → Z` is **equivalent** to the readout being constant on all profile fibers. The constructive-looking proof uses a classically chosen preimage, so this is **not** an effective algorithm, continuous inverse or norm bound.
+- `observedProfile`, `observedProfile_surjective`, and `observedProfile_eq_iff`: the subtype `Set.range profile` has precisely the original fibers but no unattained output values.
+- `factorsThrough_observedProfile_iff`: for **arbitrary** `profile`, fiber constancy is necessary and sufficient for factorization through the *range-restricted* profile. There is no ambient surjectivity hypothesis or hidden nonemptiness assumption.
+- `readout_factorsThrough_augmentedProfile`: the supplied readout factors by projection through `(profile,readout)`. This proves neither global injectivity nor that the extra readout exists in a targeted arithmetic/analytic model.
+- `empty_source_fiber_constant_without_total_decoder`: a hostile type-level example using `Empty → Unit` and `Empty → Empty` shows why fiber constancy alone cannot guarantee a total decoder on an arbitrary original codomain.
+
+**Exact mathematical distinction:** the original Farey collision and canonical two-moment collision remain genuine **necessary-condition obstructions**. The converse does not discharge the separating classical Weil observable, construct a nontrivial native Farey spectral channel, or prove PFR, Kakeya, Sarnak, Siegel-zero, elliptic rank or RH conclusions. Restricting the codomain to the image is a logically sufficient reconstruction **interface**; it is not an analytic comparison theorem.
+
+**Verification status:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The new statements are authored Lean proofs, not checked Lean kernel output. The new standalone module must be compiled independently, its import closure and all transitive axioms audited (including `Classical.choice` and any actual additional axioms), then accepted at an immutable exact main SHA before root promotion. The mathematical content is repository-original; **no new paper theorem is imported**.
+
 ## Literature comparisons, not theorem imports
 
 These are **ANALOGY_ONLY** unless a future theorem explicitly constructs and verifies an adapter of the relevant types with the paper's exact hypotheses.
