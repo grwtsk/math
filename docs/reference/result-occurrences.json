@@ -1,0 +1,53 @@
+{
+  "schema": "noe.math-result-occurrences/1",
+  "repository": "grwtsk/math",
+  "commit": "3f5c50ff1019faed0a2cbeee72a80a556dbd1c5e",
+  "root_tree": "e0d5a8833f3c908c334daee6c06c7ac3a268798b",
+  "source_scope": "every regular .lean file under GRWTSK",
+  "result_scope": "every lexically observed named theorem or lemma command",
+  "observation_profile": "SOURCE_ONLY_LEXICAL_COMMAND_HEAD",
+  "compilation": "NOT_RUN",
+  "verification": "NOT_RUN",
+  "mathematical_admission": "NOT_CLAIMED",
+  "status_vocabulary": {
+    "verification": "Current theorem source is bound to a replay receipt.",
+    "verification pending": "No current theorem replay receipt is bound."
+  },
+  "nonclaims": [
+    "A lexical command head is not a complete Lean declaration parse.",
+    "A result identity does not establish theorem validity, proof acceptance, originality or authorship.",
+    "Verification pending is not a failed theorem; it records the absence of a current replay receipt.",
+    "Anonymous examples, generated declarations and declarations not named on an observed command head are outside this lexical result scope."
+  ],
+  "counts": {
+    "result_occurrences": 1089641,
+    "theorems": 922158,
+    "lemmas": 167483,
+    "verification": 0,
+    "verification_pending": 1089641,
+    "namespaces_with_results": 23
+  },
+  "result_rows": {
+    "path": "docs/reference/result-occurrences.ndjson.gz",
+    "format": "NDJSON",
+    "compression": "gzip",
+    "sha256": "0845ad91a8cf1259fecfd52c915fa88f889856b9e3e73c534e0368dbb3c7817d",
+    "byte_count": 51673510,
+    "record_fields": [
+      "result_id",
+      "source_occurrence_id",
+      "source_path",
+      "mode",
+      "blob",
+      "source_sha256",
+      "module",
+      "namespace",
+      "declaration_kind",
+      "name",
+      "source_ordinal",
+      "source_line",
+      "verification_status"
+    ]
+  },
+  "identity": "24f06967feb589a91ad5002fde6959b8fcebb6c723ce6beb574975993877d602"
+}
