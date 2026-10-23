@@ -318,7 +318,6 @@ theorem wienerSigmaFourier_uniform_norm_tsum
         ∑' n : ℕ, C * wienerLambdaLogKernel T n :=
       htermSum.tsum_le_tsum hterm hdom
     _ = C * (∑' n : ℕ, wienerLambdaLogKernel T n) := by
-      simp only [mul_comm]
       rw [tsum_mul_left]
     _ ≤ C * ((Real.log 4 + 4) * (1 + 2 * Real.pi ^ 2)) :=
       mul_le_mul_of_nonneg_left hkernelBound hC
