@@ -175,8 +175,8 @@ theorem FreshCountedTrail.maximal_finish_imbalance
     (T : FreshCountedTrail m c start finish)
     (hbalance : CountedDegreeBalanced m c)
     (hmax : T.MaximalAtFinish) :
-    (if start = finish then (0 : ℤ) else 1) =
-      (countedUsedInDegree m c (Finset.univ \ T.used) finish : ℤ) := by
+    (countedUsedInDegree m c (Finset.univ \ T.used) finish : ℤ) =
+      (if start = finish then (0 : ℤ) else -1) := by
   have htotal := hbalance finish
   have hout := countedOutDegree_used_unused m c T.used finish
   have hin := countedInDegree_used_unused m c T.used finish
