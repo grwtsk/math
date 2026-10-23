@@ -212,6 +212,37 @@ theorem hasDerivAt_twoModeHeat_time (a b s u v z : ℝ) :
     (hasDerivAt_timeCosineMode b s v z) using 1 <;>
     simp [twoModeHeat, modeLaplacian] <;> ring
 
+
+/-- The first spatial derivative of the two-mode readout is a sine sum. -/
+theorem hasDerivAt_twoModeHeat_space (a b s u v z : ℝ) :
+    HasDerivAt (fun x : ℝ => twoModeHeat a b s u v x)
+      (-(coefficient a s u * u * Real.sin (z * u)) -
+        coefficient b s v * v * Real.sin (z * v)) z := by
+  convert (hasDerivAt_cosineMode a s u z).add
+    (hasDerivAt_cosineMode b s v z) using 1 <;>
+    simp [twoModeHeat] <;> ring
+
+/-- Exact second spatial derivative of the finite cosine readout. -/
+theorem hasDerivAt_twoModeHeat_space_derivative (a b s u v z : ℝ) :
+    HasDerivAt
+      (fun x : ℝ =>
+        -(coefficient a s u * u * Real.sin (x * u)) -
+          coefficient b s v * v * Real.sin (x * v))
+      (-(u ^ 2) * coefficient a s u * Real.cos (z * u) -
+        (v ^ 2) * coefficient b s v * Real.cos (z * v)) z := by
+  convert ((hasDerivAt_sineMode a s u z).neg).add
+    ((hasDerivAt_sineMode b s v z).neg) using 1 <;> ring
+
+/-- The exact finite forward Hodge heat equation, expressed without a
+global analytic xi source or a second-derivative library coercion. -/
+theorem twoModeHeat_finite_heat_equation (a b s u v z : ℝ) :
+    deriv (fun t : ℝ => twoModeHeat a b t u v z) s =
+      deriv (fun x : ℝ =>
+        -(coefficient a s u * u * Real.sin (x * u)) -
+          coefficient b s v * v * Real.sin (x * v)) z := by
+  rw [(hasDerivAt_twoModeHeat_time a b s u v z).deriv,
+    (hasDerivAt_twoModeHeat_space_derivative a b s u v z).deriv]
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
