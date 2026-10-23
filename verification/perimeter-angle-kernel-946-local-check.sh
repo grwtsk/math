@@ -14,7 +14,7 @@ if [ "$actual_blob" != "$EXPECTED_KERNEL_BLOB" ]; then
   exit 1
 fi
 command -v lake >/dev/null
-command -v lean >/dev/null
+lake env lean --version >/dev/null
 # The receipt must identify the actual toolchain, not just the source.
 lake --version
 lake env lean --version
@@ -48,6 +48,12 @@ trap 'rm -f "$tmp"' EXIT
 cat > "$tmp" <<'LEAN'
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
+#print axioms perimeterAngle_injective
+#print axioms perimeterAngle_surjective
+#print axioms perimeterAngle_bijective
+#print axioms perimeterCircleHomeomorph
+#print axioms perimeterUnitCircleHomeomorph
 #print source_angle_eq_iff_perimeter_projection_eq
 #print source_angle_eq_iff_connected
 #print source_angle_ne_iff_projection_ne
@@ -60,6 +66,7 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
 #print axioms perimeter_angle_eq_iff
 LEAN
 lake env lean --trust=0 --wfail "$tmp"
-# This script performs a trust=0 elaboration request and prints axioms, but
+# This script performs a trust=0 elaboration request and prints both inherited
+# homeomorphism dependency axioms and child theorem axioms, but
 # does not replace independent import/unsafe review or hostile seam fixtures.
 # Do not claim acceptance without an authorized immutable #100 receipt.
