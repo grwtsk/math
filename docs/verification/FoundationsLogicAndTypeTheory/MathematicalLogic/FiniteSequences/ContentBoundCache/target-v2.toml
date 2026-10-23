@@ -1,0 +1,10 @@
+id = "content-bound-observation-and-claim-validity"
+version = "2"
+supersedes_version = "1"
+source = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/ContentBoundCache.lean"
+declarations = ["GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.observation_reuse", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.unchanged_preserved", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.changed_refreshed", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.stale_token_rejected", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.expired_rejected", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.changed_binding_rejected", "GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache.bound_completion_conditions"]
+acceptance = ["Lean 4.33.0 trust=0 elaboration succeeds", "Only recorded propext dependency is allowed; no sorryAx"]
+positive_controls = ["Original unchanged claim remains usable after rejecting an altered packet", "Repeated sync reads zero Lean blobs"]
+hostile_controls = ["Changed source binding cannot complete a valid lease", "Changed candidate binding rejects before native execution", "Boolean and integer substitutions cannot pass binding equality", "Expired and replaced lease cannot finish"]
+nonclaims = ["Canonical JSON implementation refinement", "Digest injectivity", "Database and clock refinement", "Receipt implies mathematical admission"]
+receipt_owner = "grwtsk/noeaaeue"

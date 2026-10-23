@@ -1,0 +1,9 @@
+id = "constructive-propositional-derivation-soundness"
+version = "1"
+source = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Propositional/ConstructiveDerivation.lean"
+declarations = ["GRWTSK.MathematicalLogic.Propositional.ConstructiveDerivation.sound", "GRWTSK.MathematicalLogic.Propositional.ConstructiveDerivation.closed_sound", "GRWTSK.MathematicalLogic.Propositional.ConstructiveDerivation.no_closed_falsity"]
+acceptance = ["Lean 4.33.0 trust=0 elaboration succeeds", "All scoped declarations have empty axiom dependencies", "No admitted proof"]
+positive_controls = ["Explicit hypotheses survive rendering", "Conjunction and disjunction exchange", "Implication composition"]
+hostile_controls = ["Closed falsity remains open", "Forged application derivation rejects", "Unsupported raw Lean rejects"]
+nonclaims = ["Bounded-search completeness", "Arbitrary-prose translation", "Python implementation refinement"]
+receipt_owner = "grwtsk/noeaaeue"

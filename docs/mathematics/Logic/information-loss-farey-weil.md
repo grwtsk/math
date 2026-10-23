@@ -31,11 +31,62 @@ The source imports `GRWTSK.NumberTheory.Farey.ResolvableQuinticEndpointControls`
 
 For any supplied `readout : Combination 2 → α`, **if** `readout correctedCoordinates ≠ readout 0`, it cannot factor through those two actual moments. An extra readout distinguishes the **specific pair** after augmentation, but no result proves a positive classical Weil diagonal, existence of the classical source transport, or RH. The separating-readout hypothesis is **not discharged** by the algebraic collision.
 
+### Actual third arithmetic coordinate separates the zero-moment witness
+
+The conditional `readout correctedCoordinates ≠ readout 0` premise **is discharged for a specific repository arithmetic readout**, but **not** for the classical Weil diagonal. The [integrated source module](https://github.com/grwtsk/math/blob/93468e369390b8ec75e7fd6a031ada2ae92223b0/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean) `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss` (main source commit `93468e369390b8ec75e7fd6a031ada2ae92223b0`, blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74`) imports `CanonicalSquareTentInformationLossBridge` (blob `6872d5305e9ce50387434fde6a92784866896783`) and uses `CanonicalSquareTentThreeTentMomentCorrection.cofactorTwo_ne_zero` (source blob `644be0606ac195f35c8409f8877a707edb2aa457`).
+
+The exact readout is `thirdCoordinateReadout (u : Combination 2) : ℂ := u (2 : Fin 3)`, the **stage-four coefficient** of the actual stage-2/3/4 normalized square-tent combination. The source declarations `thirdCoordinateReadout_corrected`, `thirdCoordinateReadout_zero`, and `thirdCoordinateReadout_separates` identify the corrected readout with `cofactorTwo ≠ 0` and the zero-vector readout with `0`. Thus `thirdCoordinateReadout_not_factorsThrough` consumes the existing two-moment collision and proves source-level nonfactorization; `thirdCoordinateReadout_augmented_separates` shows that adding this coordinate distinguishes the **particular corrected vector** from zero.
+
+These declarations provide a concrete `ℂ`-valued, linear-on-coefficient-space information supplier, **not a third classical Bombieri moment**, **not** a classical Guinand–Weil Hermitian diagonal, **not** a globally injective three-measurement map, and **not** a test-space completion or RH theorem. Their authorship is repository-original: the background paper contributes only the exact two moment constraints documented in the [Bombieri source provenance](../../reference/literature/reading-background/paper-formalization-provenance-rh.md). There is no new paper theorem imported.
+
+**Actual verification:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The commit and blob fix what should be replayed; they are not a Lean proof receipt. Full `lake build --wfail`, direct elaboration, fresh kernel checking, `#print axioms` and transitive unsafe/generated declaration audits are pending in [#1099](https://github.com/grwtsk/math/issues/1099), with prior supplier obligations unchanged.
+
+### Three arithmetic measurements recover the entire three-tent source space
+
+The earlier source-only statement showed merely that `thirdCoordinateReadout` distinguishes the corrected zero-moment vector from zero. The [exact kernel-line supplier](https://github.com/grwtsk/math/blob/cd4f6d91aca5be0c95baa55be1149b6b7014bb58/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean) (`coefficient_line_of_two_moments`, source blob `2b9d613a7cef0428754fdceab226907407ad5467`) is stronger: every three-tent coefficient vector with both actual moments zero is a scalar multiple of the concrete cofactor vector. Because the third cofactor `cofactorTwo` is nonzero, **two vectors with equal moment pairs and equal third coefficients are equal**.
+
+The new Lean source candidates `CanonicalSquareTentThirdCoordinateInformationLoss.augmentedThreeMomentProfile_injective` and `any_source_readout_factorsThrough_augmentedThreeMoments` consume the existing exact kernel-line result plus the generic image/inhabited-source factorization theorem. On the **three-dimensional complex coefficient space** `Combination 2`, the map
+
+```
+u ↦ (bombieriMomentProfile u, u (2 : Fin 3))
+```
+
+is injective, and every readout of those three coordinates factors set-theoretically through the three measurements. The proof uses subtraction, the original two-moment kernel theorem and `cofactorTwo_ne_zero`. The decoder is classical and no explicit analytic inverse, operator norm, positivity, measure-theoretic regularity or computational bound is asserted.
+
+**Scope:** This is source-coordinate reconstruction, not global injectivity on Bombieri's full test class, not an identity between the third coefficient and the classical Guinand–Weil Hermitian form, and not RH. It supersedes only the earlier limitation that this *particular augmented three-coordinate map* was not yet proved injective. The unverified root, other Farey and spectral comparisons, and unresolved analytic hypotheses remain open.
+
+**Status:** The source is integrated as `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`; actual Lean compilation, fresh kernel checking and complete transitive axiom/unsafe audit are pending at the immutable integration SHA. The paper-to-Lean ideas ledger retains Bombieri's title, source and exact two-moment hypotheses, without falsely attributing this extra arithmetic theorem to the paper.
+
 ### Native Farey group-channel obstruction
 
 **Exact source:** `GRWTSK.NumberTheory.Farey.GroupSpectralChannel` (blob `fc42376a6c12f7729076564cfd223bf8d1b2b75b`) states that a complex `2×2` matrix projector `P`, if idempotent and commuting with **both** native Farey shear matrices, equals zero or identity. The new adapter transports this to the pointwise readout on `Fin 2 → ℂ`: either every vector is sent to zero or every vector is unchanged. A simultaneous nonzero retained signal and nontrivially changed signal is impossible.
 
 **Scope:** this is a native two-dimensional, joint-generator, invariant-idempotent statement. It does not exclude projectors for just one generator, enlarged representations, a return map, non-equivariant observables, a spiral limit, a zeta-zero model, or a global spectral decomposition.
+
+## Exact completeness criterion for observable fibers (source-only increment)
+
+The repository's generic obstruction is now paired with an exact **converse on the attained observable range**. The source-only module `GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness` imports the original `FactorizationFiber` (blob `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd`) and introduces:
+
+- `factorsThrough_iff_fiberConstant_of_surjective`: for any types `X,Y,Z` and actual surjection `profile : X → Y`, the existence of a decoder `decode : Y → Z` is **equivalent** to the readout being constant on all profile fibers. The constructive-looking proof uses a classically chosen preimage, so this is **not** an effective algorithm, continuous inverse or norm bound.
+- `observedProfile`, `observedProfile_surjective`, and `observedProfile_eq_iff`: the subtype `Set.range profile` has precisely the original fibers but no unattained output values.
+- `factorsThrough_observedProfile_iff`: for **arbitrary** `profile`, fiber constancy is necessary and sufficient for factorization through the *range-restricted* profile. There is no ambient surjectivity hypothesis or hidden nonemptiness assumption.
+- `readout_factorsThrough_augmentedProfile`: the supplied readout factors by projection through `(profile,readout)`. This proves neither global injectivity nor that the extra readout exists in a targeted arithmetic/analytic model.
+- `empty_source_fiber_constant_without_total_decoder`: a hostile type-level example using `Empty → Unit` and `Empty → Empty` shows why fiber constancy alone cannot guarantee a total decoder on an arbitrary original codomain.
+
+**Exact mathematical distinction:** the original Farey collision and canonical two-moment collision remain genuine **necessary-condition obstructions**. The converse does not discharge the separating classical Weil observable, construct a nontrivial native Farey spectral channel, or prove PFR, Kakeya, Sarnak, Siegel-zero, elliptic rank or RH conclusions. Restricting the codomain to the image is a logically sufficient reconstruction **interface**; it is not an analytic comparison theorem.
+
+**Verification status:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The new statements are authored Lean proofs, not checked Lean kernel output. The new standalone module must be compiled independently, its import closure and all transitive axioms audited (including `Classical.choice` and any actual additional axioms), then accepted at an immutable exact main SHA before root promotion. The mathematical content is repository-original; **no new paper theorem is imported**.
+
+### Total ambient-codomain reconstruction: the exact extra hypothesis
+
+The original image-restriction theorem avoids an empty readout target at unattained observable values. An additional source-only supplier in `GRWTSK.Logic.InformationLoss.FactorizationFiberCompleteness` makes the precise ambient boundary explicit:
+
+- `factorsThrough_iff_fiberConstant_of_inhabited_target`: for `[Nonempty Z]`, **without** assuming `profile : X → Y` is surjective, `FactorsThrough profile readout` is equivalent to constancy of `readout` on profile fibers. For each actually attained `y : Y`, the decoder chooses a preimage; for unattained `y` it returns the default element supplied by `[Nonempty Z]`. Classical choice appears explicitly; no computability, continuity, boundedness or measurable selection is inferred.
+- `factorsThrough_iff_fiberConstant_of_nonempty_source`: a `[Nonempty X]` source and the given `readout : X → Z` automatically provide a `Nonempty Z` witness. The same equivalence then holds on the full observable codomain.
+
+These sufficiency results **do not weaken** the existing hostile `X=Empty, Y=Unit, Z=Empty` counterexample; it fails both additional nonemptiness hypotheses. They do not construct a separating Weil readout for the Bombieri moment collision, restore rational roots from Farey endpoints, or realize nontrivial native Farey spectral channels.
+
+**Verification boundary:** source-only addendum; independently run pinned Lean 4.33.0/Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d` compilation, fresh kernel checking, `#print axioms` (including `Classical.choice`) and transitive unsafe/declaration audits. Integration is not kernel acceptance.
 
 ## Literature comparisons, not theorem imports
 

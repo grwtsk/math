@@ -125,6 +125,68 @@ conditional interfaces, not imported theorems.
 
 **Actual verification:** `SOURCE_INTEGRATED / NOT_RUN / NOT_FRESH_KERNEL_CHECKED / TRANSITIVE_AXIOMS_PENDING`. The tree and authored source provide no accepted Lean proof evidence. Pins remain Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Require a clean immutable commit replay of the four modules and their transitive dependencies, `lake build --wfail`, direct elaboration, fresh kernel checking, `#print axioms` including `propext` and unsafe/generated checks, with literal execution statuses. Do not upgrade the record on a queued issue alone.
 
+## Bombieri-source zero moments versus an explicit third arithmetic coordinate — 2026-10-23
+
+**Exact publication context:** Enrico Bombieri, *Problems of the Millennium: the Riemann Hypothesis* (**2000**, Clay Mathematics Institute official description; reprinted 2006), **Section V, Further evidence: the explicit formula**, printed pp. 8–9; stable source [Clay official PDF](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf). The relevant paper constraints are `∫₀∞ g(x) dx/x = 0` and `∫₀∞ g(x) dx = 0` for the paper's admissible multiplicative test class `W`. The class's piecewise regularity, endpoint decay, Mellin measure, conjugated multiplicative autocorrelation and explicit-formula sign conventions remain separate unfulfilled obligations, as detailed in [source review](paper-formalization-provenance-rh.md). These two moments are **the only paper-method inputs** to this finite arithmetic correspondence.
+
+**Repository-original formal step (not a paper theorem):** `grwtsk/math` integrated main commit [`93468e369390b8ec75e7fd6a031ada2ae92223b0`](https://github.com/grwtsk/math/commit/93468e369390b8ec75e7fd6a031ada2ae92223b0); module `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss`, file `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThirdCoordinateInformationLoss.lean`, Git blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74`. Imported repository source: `CanonicalSquareTentInformationLossBridge.lean`, blob `6872d5305e9ce50387434fde6a92784866896783`, ultimately consuming `CanonicalSquareTentThreeTentMomentCorrection.cofactorTwo_ne_zero` with blob `644be0606ac195f35c8409f8877a707edb2aa457`. Pinned Lean `v4.33.0`; Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+**Exact declarations, hypothesis binding:** `thirdCoordinateReadout` is the index `(2 : Fin 3)` complex coefficient on `Combination 2`—it is stage four of stages 2/3/4, not a Weil diagonal. `thirdCoordinateReadout_corrected` identifies its corrected value with the nonzero arithmetic cofactor `cofactorTwo`; `thirdCoordinateReadout_zero` identifies its zero-vector value; `thirdCoordinateReadout_separates` discharges the separation hypothesis of `CanonicalSquareTentInformationLossBridge.bombieri_not_factorsThrough_generic` specifically for that arithmetic readout. `thirdCoordinateReadout_not_factorsThrough` rules out **any decoder from just the two Bombieri moment coordinates** to the third coefficient. `thirdCoordinateReadout_augmented_separates` separates one explicit pair after adding the third coordinate; it does **not** establish injectivity globally.
+
+**Relationship classes:** `DIRECT_HYPOTHESIS_ENCODING` applies only to Bombieri's two zero-moment conditions through existing canonical tent source; `LOCAL_IDENTITY_SOURCE_CANDIDATE` applies to the new finite-coordinate lemmas; `UNRESOLVED_PREMISE` applies to any classical Guinand–Weil form, sign-normalized transport, full test class, arithmetic-to-classical separation, asymptotic estimates or RH. No classical analytic bridge and no stronger theorem from Bombieri's paper is asserted.
+
+**Actual verification:** `SOURCE_PRESENT / NOT_RUN / NOT_FRESH_KERNEL_CHECKED / TRANSITIVE_AXIOMS_PENDING` for this exact source commit; source/blob inspection is not successful compilation. The source is absent from `GRWTSK.lean`, pending the module build, direct Lean elaboration, fresh kernel replay and full `#print axioms`/unsafe/generated-declaration audit in [#1099](https://github.com/grwtsk/math/issues/1099). Any future verification upgrade must bind the exact checked commit and real command exit statuses.
+
+## Exact three-coordinate arithmetic reconstruction after two Bombieri moments — 2026-10-23
+
+**Paper source and hypotheses:** Enrico Bombieri, *Problems of the Millennium: the Riemann Hypothesis*, Clay Mathematics Institute (**2000**, official problem description; book reprint 2006), **Section V, Further evidence: the explicit formula**, printed pp. 8–9, [official PDF](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf). The only source-derived conditions used here are the two zero moments `∫ g(x) dx = 0` and `∫ g(x) dx/x = 0` for his admitted test class; the test class's regularity, decay, multiplicative convolution, classical explicit-formula sign and full quantifier are **not** formalized by this source-level finite reconstruction.
+
+**Exact repository method:** the existing `CanonicalSquareTentThreeTentMomentKernelLine.coefficient_line_of_two_moments` (blob `2b9d613a7cef0428754fdceab226907407ad5467`) states that any vector in `Combination 2` with both actual source moments zero lies on the scalar line generated by `correctedCoordinates`. The existing `CanonicalSquareTentThreeTentMomentCorrection.cofactorTwo_ne_zero` (blob `644be0606ac195f35c8409f8877a707edb2aa457`) says the third cofactor is nonzero. Their combination is the determinant-one-dimensional kernel elimination supplier for an augmented finite coordinate map.
+
+**New formal declarations:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThirdCoordinateInformationLoss.augmentedThreeMomentProfile_injective` establishes injectivity of `u ↦ (bombieriMomentProfile u, thirdCoordinateReadout u)` on the exact three-coordinate arithmetic source; `any_source_readout_factorsThrough_augmentedThreeMoments` uses the generic inhabited-source factorization criterion to obtain a classical decoder for any `readout : Combination 2 → α` using that augmented map. This is a **repository-original local finite-algebraic theorem candidate**, not an imported paper theorem. Its direct dependencies and exact new blob and main commit must be recorded with the verification request and checked source readback; an earlier third-coordinate integration was `grwtsk/math@93468e369390b8ec75e7fd6a031ada2ae92223b0`, blob `1ff8c00eac7c167abc4c5456924312bf6f95bf74`. This record does not claim the new source is accepted by the kernel.
+
+**Relationship:** `DIRECT_HYPOTHESIS_ENCODING` only for the two Bombieri moment equations; `LOCAL_IDENTITY_SOURCE_CANDIDATE` for the new source injectivity and factorization; `UNRESOLVED_PREMISE` for a classical Weil diagonal identification, positivity, all-pairs transport, admissible test space, density and RH. An algebraic decoder on a fixed three-dimensional coefficient space is not a global analytic inverse or a formalized Kakeya/PFR/Siegel-zero theorem.
+
+**Verification:** `NOT_LEAN_BUILT / NOT_FRESH_KERNEL_CHECKED / TRANSITIVE_AXIOMS_PENDING`; any source commit, paper citation, finite arithmetic preflight or queued verification issue is not Lean kernel acceptance. Run the complete, immutable-commit module/transitive closure, `lake build --wfail`, direct elaboration, fresh kernel, all `#print axioms` and unsafe/generated declaration checks; record outputs and exit codes.
+
+## Farey return, angular observation and cyclic-residue Hodge — 2026-10-23
+
+The authoritative [paper-to-formalization references ledger](paper-to-formalization-references.md#case-farey-angular-02--oriented-return-phase-not-a-global-spectral-character)
+records the exact source identities and **paper boundary** for the
+Farey return's mod-three angular observation and its
+sign/projectivization obstruction; the
+[cyclic-residue Hodge entry](paper-to-formalization-references.md#case-farey-hodge-01--cyclic-residue-hodge-and-nonunit-equivariance-failure)
+records the finite graph/Dirichlet-residue application.
+These are **2026 repository-derived constructions**, **not** imports
+of a newly identified publication. The source credits mathematical direction
+to grwtsk contributors and OpenAI formalization assistance; outside
+paper bibliographic details and theorem locator are **not established**.
+The only separately identified dynamics-paper comparison is
+**Peter Sarnak**, *Three Lectures on the Mobius Function: Randomness
+and Dynamics* (2011, [IAS](https://publications.ias.edu/sarnak/paper/506)),
+**Definition 3 and Conjecture 4**: the missing compact
+zero-topological-entropy flow, continuous observable, actual Möbius
+weight and ordinary-average cancellation make this
+**`ANALOGY_ONLY`**, not a proved port.
+
+Fully qualified declaration names, exact hypotheses (selected
+positive Farey word, mod-three quotient, oriented phase, sign-gauge
+invariance, nonunit residue two mod four), first main commits and
+Git blobs are in the linked ledger. The parent eight-module
+finite-algebra scope has a recorded local exit-zero Lean/kernel/axiom
+qualification at `55fe9dbc34a784cb15782c9dfb0d371a55c6f988`;
+that status **does not extend** to the `ReturnAngularChannel`,
+`ReturnAngularProjectiveObstruction` and `CyclicResidueHodge`
+leaves. Those remain `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`
+under distinct queued issues
+[#1100](https://github.com/grwtsk/math/issues/1100),
+[#1102](https://github.com/grwtsk/math/issues/1102) and
+[#1103](https://github.com/grwtsk/math/issues/1103).
+No infinite-volume spectrum, analytic Hodge, Siegel-zero,
+Sarnak-disjointness, RH or unconditional spiral for arbitrary
+superwalks is established. The full entries, rather than this
+cross-index, are the source for provenance and verification claims.
+
 ## Updating the ledger
 
 When a later result is added, create a record alongside its source: refer to the original theorem label and *exact* special-case hypotheses, list every newly added declaration and its main commit/blob, preserve earlier records without retroactive verification upgrades, and attach the validation issue/receipt. Keep unproved analogies and mathematical obstacles readable even when some finite definitions or algebraic lemmas compile. Documentation edits themselves require no Lean acceptance claim; their Git commit establishes only document integration.

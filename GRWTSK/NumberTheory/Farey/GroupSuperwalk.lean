@@ -7,7 +7,7 @@ This module consumes the source-only Farey/ResolvableQuintic module.
 No root import or Lean/kernel acceptance is asserted.
 -/
 import GRWTSK.NumberTheory.Farey.ResolvableQuintic
-import Mathlib.Data.Matrix.Notation
+import Mathlib.LinearAlgebra.Matrix.Notation
 import Mathlib.Tactic
 
 /-!

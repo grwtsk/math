@@ -18,7 +18,7 @@ The previously constructed positive Farey superwalk has elementary integer
 shears L=[[1,0],[1,1]] and R=[[1,1],[0,1]]. The concrete chronological
 word [left,right] has return matrix H=LR=[[1,1],[1,2]].
 
-H has distinct real eigenvalues (3 +/- sqrt(5))/2. An explicit symmetric
+H has distinct real eigenvalues (3 ± sqrt(5))/2. An explicit symmetric
 rank-one idempotent P is constructed for the expanding eigenvalue. It
 commutes with the RETURN H, not with both original generators. Repeated
 returns act on P by the exact scalar lambda^n.
