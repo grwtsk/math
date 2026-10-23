@@ -89,13 +89,34 @@ def CMFiniteCanonicalPairedAssembly (E : CMGaloisIntermediateField) :
   CMFiniteSeparatedCanonicalAssembly E ∘ₗ
     (CMFiniteFourTensorShuffle E).toLinearMap
 
-/-- The authentic named finite-CM assembly equals the independently replayed
-canonical algebraic specialization, on precisely its original carrier. -/
+/-- The original finite separated assembly is definitionally the checked one. -/
+theorem CMFiniteSeparatedCanonicalAssembly_eq_checked
+    (E : CMGaloisIntermediateField) :
+    CMFiniteSeparatedCanonicalAssembly E =
+      separatedAssembly E.carrier := rfl
+
+/-- The original finite tensor shuffle is definitionally the checked one. -/
+theorem CMFiniteFourTensorShuffle_eq_checked
+    (E : CMGaloisIntermediateField) :
+    CMFiniteFourTensorShuffle E = shuffleFour ℚ E.carrier := rfl
+
+/-- Declaration-level equality of the extracted original finite-CM
+assembly and the independently checked canonical specialization. -/
 theorem CMFiniteCanonicalPairedAssembly_eq_checked
     (E : CMGaloisIntermediateField) :
-    CMFiniteCanonicalPairedAssembly E = pairedAssembly E.carrier := by
-  apply pairedAssembly_unique E.carrier
-  intro a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+    CMFiniteCanonicalPairedAssembly E = pairedAssembly E.carrier := rfl
+
+/-- The original named assembly has precisely the canonical pure tensor
+formula, without using geometric or Hodge data. -/
+@[simp]
+theorem CMFiniteCanonicalPairedAssembly_pure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteCanonicalPairedAssembly E
+      (pairedPure ℚ E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
+  rw [CMFiniteCanonicalPairedAssembly_eq_checked]
   exact pairedAssembly_pure E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
 end
