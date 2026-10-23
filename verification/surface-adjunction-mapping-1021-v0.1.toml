@@ -11,7 +11,14 @@ parent_revision = "dd8f9b97281ebc678fc767923a08462b15e2d8d9"
 new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAdjunctionMapping.lean"
 new_module_git_blob = "5d91c09af05d96f743d9613db5d86bf2db3026ea"
 note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-adjunction-mapping.md"
-note_blob = "e5403f5cff68f90c402bbf11356a20d14d8bc1d6"
+note_blob = "a73bcde67af6ad6d7ee98421f858c8d574581836"
+
+[source_repair]
+path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAdjunctionUniversal.lean"
+parent_blob = "4cf3fa881e32d3ad58b15fc9efc81f204ba71197"
+repaired_blob = "dbc1fe50fd85d82db3e066731468f19d330b074d"
+scope = "Replace one literal backslash-n token in the final uniqueness proof with the intended Lean line break; theorem statement and proof structure otherwise unchanged."
+elaboration_status = "NOT_RUN"
 
 [scope]
 source_only = true
@@ -21,6 +28,7 @@ requires_generated_declaration_audit = true
 requires_axiom_unsafe_import_audit = true
 requires_hostile_replay = true
 continuous_mapping_equivalence_candidate = true
+inherited_source_repair_present = true
 function_space_homeomorphism_proved = false
 CW_surface_proved = false
 manifold_proved = false
@@ -62,6 +70,10 @@ elaboration_status = "NOT_RUN"
 
 [[hostile_controls]]
 id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "literal-backslash-n-repaired"
 status = "NOT_RUN"
 
 [[hostile_controls]]
