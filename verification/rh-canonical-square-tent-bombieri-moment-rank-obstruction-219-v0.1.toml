@@ -4,16 +4,17 @@ repository = "grwtsk/math"
 issue = 219
 
 parent_pr = 1083
-parent_state_at_branch_creation = "OPEN_DRAFT"
-parent_branch = "research/rh-bombieri-tent-moment-obstruction-219-20261023"
-parent_commit = "f93948b7d62b68497fc3a348b07ba969f744d476"
-parent_tree = "8373b1bc7524bca690238eff9a8a2ea1df447cb8"
-base_branch = "research/rh-bombieri-tent-moment-obstruction-219-20261023"
-base_commit = "f93948b7d62b68497fc3a348b07ba969f744d476"
-branch = "research/rh-bombieri-two-tent-moment-rank-obstruction-219-20261023"
+parent_merged = true
+parent_merge_commit = "584371c792bc89c23fe4c4de51ef7a62ba676048"
+historical_parent_branch = "research/rh-bombieri-tent-moment-obstruction-219-20261023"
+historical_parent_commit = "f93948b7d62b68497fc3a348b07ba969f744d476"
+historical_parent_tree = "8373b1bc7524bca690238eff9a8a2ea1df447cb8"
 
-main_at_audit = "f70b6e236a88eb81c6007435d77705d12c788dca"
-main_tree_at_audit = "e7f98015e06a66298839307958b015650d8c6a29"
+base_branch = "main"
+reconciled_main_commit = "4a9285c99de5b08772e974cda933d350b52332dd"
+reconciled_main_tree = "91a1724303fe72b0f8e71a1cc8472fbb66ff4749"
+reconciliation_commit = "b983fbc10326781694d5667da9ebb6ec7de3e7db"
+branch = "research/rh-bombieri-two-tent-moment-rank-obstruction-219-20261023"
 
 toolchain = "leanprover/lean4:v4.33.0"
 mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
@@ -21,10 +22,11 @@ mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
 source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean"
 source_blob = "a059155e6835f590596c568be463eefa3d90ab1f"
 note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-bombieri-moment-rank-obstruction-219.md"
-note_blob = "2ffc13645f251025b2b0a2b49876dca68b59b960"
+note_blob = "55420f580fe1342285bcb1d8819c737ee32bd500"
 
 parent_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentObstruction.lean"
-parent_source_blob = "a2a45110229876f744f1ce5965d68a159fa843c1"
+historical_parent_source_blob = "a2a45110229876f744f1ce5965d68a159fa843c1"
+repaired_parent_source_blob = "cc9ed5b34159242ac69eb569f80e1ea7b420fa53"
 polarization_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean"
 transport_obstruction_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean"
 
@@ -49,22 +51,24 @@ trust_audited = false
 externally_replayed = false
 analytic_premises_discharged = false
 
-[stack]
-is_stacked = true
-parent_must_merge_first = true
+[history]
+historical_stacked_authorship = true
+parent_now_merged = true
+current_pr_base = "main"
 parent_declaration_dependency = "BombieriZeroMomentConditions and canonical tent moment lemmas"
-on_parent_change = "rebase or merge updated parent non-force, replay all checks, and refresh immutable blobs"
-on_parent_rejection = "child becomes unavailable and must not be merged"
+reconciliation_method = "non-force merge commit with child history and repaired main as parents"
+on_parent_change = "merge updated main non-force, replay all checks, and refresh immutable blobs"
 
 [validation]
-require_exact_parent_commit = true
+require_exact_historical_parent_commit = true
+require_exact_reconciled_main_commit = true
 require_exact_source_blob = true
 require_exact_note_blob = true
 require_pinned_lean_mathlib = true
 require_isolated_source_elaboration = true
 require_warning_clean_build = true
-require_parent_head_import_compatibility = true
-require_current_main_reconciliation_after_parent_merge = true
+require_repaired_parent_import_compatibility = true
+require_current_main_import_compatibility = true
 require_transitive_import_inventory = true
 require_exact_declaration_types = true
 require_no_sorry_admit_or_new_axiom = true
@@ -72,6 +76,7 @@ require_kernel_checker = true
 require_axiom_closure = true
 require_generated_declaration_reconciliation = true
 require_external_replay_receipt = true
+reject_parent_validation_as_child_validation = true
 reject_numerical_determinant_as_proof = true
 reject_old_arithmetic_matrix_reuse = true
 reject_wider_span_nonexistence_claim = true

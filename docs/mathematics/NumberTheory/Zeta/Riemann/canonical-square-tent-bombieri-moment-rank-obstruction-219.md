@@ -6,29 +6,38 @@
 `EXTERNALLY_REPLAYED`, `ANALYTIC_PREMISES_DISCHARGED`.
 
 This increment proves a negative result at the exact next dependency edge. The
-stage-two and stage-three canonical square tents do not contain a nonzero vector
-satisfying both of Bombieri's displayed moment conditions. Therefore they cannot
-supply a two-vector moment-corrected Bombieri basis, and their corrected arithmetic
-matrix collapses to zero.
+stage-two and stage-three canonical square tents contain no nonzero vector satisfying
+both displayed Bombieri moment conditions. They therefore cannot supply a two-vector
+moment-corrected Bombieri basis. When the arithmetic form is recomputed on any such
+corrected pair, the complete matrix is zero rather than the earlier diagonal matrix.
 
 No classical Weil form, criterion theorem, or RH adapter is defined.
 
-## 1. Repository audit and stacked dependency
+## 1. Repository audit and dependency reconciliation
 
 Repository: `grwtsk/math`.
 
 Selected issue: **#219**, owner of the exact Weil test-space, form, normalization,
 and criterion interfaces.
 
-Stacked parent:
+Historical parent:
 
 ```text
 parent PR:       #1083
 parent title:    [Draft][RH #219] Refute literal Bombieri realization of canonical square tents
-parent state:    open draft at branch creation
 parent head:     f93948b7d62b68497fc3a348b07ba969f744d476
 parent tree:     8373b1bc7524bca690238eff9a8a2ea1df447cb8
 parent branch:   research/rh-bombieri-tent-moment-obstruction-219-20261023
+```
+
+The parent subsequently merged, and its source was repaired and validated on public
+`main`:
+
+```text
+parent merge commit:        584371c792bc89c23fe4c4de51ef7a62ba676048
+repaired main commit:       4a9285c99de5b08772e974cda933d350b52332dd
+repaired main tree:         91a1724303fe72b0f8e71a1cc8472fbb66ff4749
+repaired parent source blob: cc9ed5b34159242ac69eb569f80e1ea7b420fa53
 ```
 
 Dedicated child:
@@ -37,29 +46,17 @@ Dedicated child:
 branch:
   research/rh-bombieri-two-tent-moment-rank-obstruction-219-20261023
 
-exact branch base:
+historical branch base:
   f93948b7d62b68497fc3a348b07ba969f744d476
 
-initial source commit:
-  b3d99d7453a2e50f01ffdea8ac7726ee93a0d425
+non-force reconciliation commit:
+  b983fbc10326781694d5667da9ebb6ec7de3e7db
 ```
 
-Current public `main` at the repository audit:
-
-```text
-main commit:
-  f70b6e236a88eb81c6007435d77705d12c788dca
-
-main tree:
-  e7f98015e06a66298839307958b015650d8c6a29
-```
-
-The six commits by which `main` advanced after the parent base touched endpoint
-conventions, Möbius restriction sources, finite-tail material, and repository
-metadata. The parent Bombieri obstruction remains an unmerged dependency, so this
-child must not be retargeted or merged independently. If #1083 changes, is rejected,
-or is rebased with altered declarations, this child must be replayed against the new
-exact parent head.
+The reconciliation commit has the child source history and repaired `main` as its two
+parents. Neither history was rewritten. The repaired parent retains the declaration
+names and types consumed by this leaf. Actual elaboration of the child against that
+repaired parent remains pending.
 
 Pinned toolchain:
 
@@ -86,8 +83,8 @@ https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf
 ```
 
 Bombieri defines a class `W` of complex-valued functions on the positive half-line,
-states Weil's explicit formula, and then records the specialization using a test
-`g ∈ W` with
+states Weil's explicit formula, and records the specialization using a test `g ∈ W`
+with
 
 ```text
 ∫₀∞ g(x) dx/x = 0,
@@ -104,9 +101,9 @@ This increment imports no external criterion theorem. It uses only the two displ
 moment conditions. The full piecewise-`C¹`, endpoint, transform, and decay profile of
 `W` remains outside this leaf.
 
-## 3. Terminal consumer
+## 3. Exact terminal consumer
 
-The immediate typed consumer is the parent record
+The immediate typed consumer is the merged parent record
 
 ```lean
 BombieriZeroMomentConditions (g : ℝ → ℂ)
@@ -122,17 +119,17 @@ ordinaryMoment_zero :
   (∫ x in Set.Ioi 0, g x) = 0.
 ```
 
-The parent result excludes a single literal canonical tent and every nonzero scalar
-multiple. The selected missing premise was whether basis mixing inside the first two
-canonical tents could repair both moments.
+The parent result excludes one literal canonical tent and every nonzero scalar
+multiple. The selected missing premise was whether arbitrary basis mixing inside the
+first two canonical tents could repair both moments.
 
 ## 4. Candidate comparison
 
 | Candidate | Missing premise / proposed conclusion | Support | Result |
 |---|---|---|---|
 | Full Bombieri model and first classical cross term | Formalize all of `W`, the multiplicative correlation, explicit-formula form, and normalization | Exact publication identified, but several analytic interfaces remain absent | Deferred |
-| **Selected two-tent moment correction** | Find nonzero vectors in the span of the stage-two and stage-three tents satisfying both moments, then recompute their arithmetic matrix | Parent source supplies the tents and moments; supports meet only at `9` | Refuted by a positive moment determinant |
-| Add a third correction profile | Two moment constraints may leave a nonzero kernel in a three-dimensional span | No source-bound third profile or arithmetic comparison yet | Next obstruction only |
+| **Selected two-tent moment correction** | Find nonzero vectors in the span of the stage-two and stage-three tents satisfying both moments, then recompute their arithmetic matrix | Merged parent supplies the tents and moments; supports meet only at `9` | Refuted by a positive moment determinant |
+| Add a third correction profile | Two moment constraints may leave a nonzero kernel in a three-dimensional span | No source-bound third profile or arithmetic comparison yet | Exactly one next obstruction |
 
 The selected candidate is the nearest actual correction to the rejected literal
 basis and requires no unproved classical cross formula.
@@ -158,12 +155,12 @@ and they are strictly positive on the corresponding open intervals.
 Define
 
 ```text
-Aᵢ = ∫₀∞ Tᵢ(x) dx,
-Bᵢ = ∫₀∞ Tᵢ(x) dx/x.
+A₂ = ∫₀∞ T₂(x) dx,       B₂ = ∫₀∞ T₂(x) dx/x,
+A₃ = ∫₀∞ T₃(x) dx,       B₃ = ∫₀∞ T₃(x) dx/x.
 ```
 
 The source proves the quotient integrands are integrable because each support is
-compact and bounded away from zero. It does not use numerical quadrature or an
+compact and bounded away from zero. It uses no numerical quadrature and no
 unverified closed-form logarithmic evaluation.
 
 ## 6. Shared-endpoint reciprocal separation
@@ -210,8 +207,8 @@ so
 B₃ < A₃/9.
 ```
 
-The strictness comes from positive Lebesgue measure of the open support intervals,
-not from endpoint values.
+Strictness comes from positive Lebesgue measure of the open support intervals, not
+from endpoint values.
 
 ## 7. Moment determinant
 
@@ -258,8 +255,8 @@ bombieriMultiplicativeMoment_twoTent_eq :
   ∫₀∞ gᵤ(x) dx/x = u₀ B₂ + u₁ B₃.
 ```
 
-No coefficient equation is inserted as an extra hypothesis: both are derived from
-the actual integrals using integrability and linearity.
+No coordinate equation is inserted as an extra hypothesis: both identities are
+derived from the actual integrals using integrability and linearity.
 
 The positive determinant then gives
 
@@ -302,8 +299,8 @@ no_nondegenerateTwoTentMomentCorrectedPair :
   ¬ Nonempty NondegenerateTwoTentMomentCorrectedPair.
 ```
 
-This is stronger than failure of one proposed normalization: no two distinct vectors
-inside the two-dimensional literal tent span can satisfy both moments.
+This covers all basis mixing inside the literal two-tent span, not merely one proposed
+normalization.
 
 ## 10. Complete recomputed arithmetic matrix
 
@@ -333,12 +330,14 @@ diag(canonicalCorrection 0, canonicalCorrection 1)
 is not reused. Moment correction inside the two-tent span annihilates the entire
 coefficient space, so the corrected matrix is the zero matrix.
 
-## 11. Proof classification
+## 11. Proof and positivity classification
+
+Proof classification:
 
 ```text
 imported/source-bound:
   Bombieri's two displayed moment conditions;
-  parent canonical tent definitions and ordinary-moment positivity.
+  merged canonical tent definitions and ordinary-moment positivity.
 
 repository-proved in this leaf:
   integrability of Tᵢ/x;
@@ -350,43 +349,26 @@ repository-proved in this leaf:
 
 formal wrappers:
   source-bound obstruction packet and pair records.
-
-not used:
-  RH;
-  target positivity;
-  a classical Weil form;
-  an explicit-formula criterion theorem;
-  numerical zero data;
-  interval arithmetic;
-  an external oracle.
 ```
 
-## 12. Positivity classification
-
-Proved:
+Not used:
 
 ```text
-strict positivity of A₂ and A₃;
-strict positivity of the two reciprocal-gap integrals;
-strict positivity of the moment determinant.
+RH;
+target positivity;
+a classical Weil form;
+an explicit-formula criterion theorem;
+numerical zero data;
+interval arithmetic;
+an external oracle.
 ```
 
-The determinant positivity is not positivity of a Weil form. The recomputed
-corrected arithmetic form is identically zero because the admissible coefficient
-kernel is zero.
+Positivity proved here is strict positivity of `A₂`, `A₃`, both reciprocal-gap
+integrals, and the moment determinant. This is not positivity of a Weil form. The
+recomputed corrected arithmetic form is identically zero because the admissible
+coefficient kernel is zero.
 
-Not proved:
-
-```text
-global classical Weil positivity;
-strict positivity of a classical form;
-kernel, measure, trace, state, or operator positivity;
-positivity after a wider moment correction.
-```
-
-## 13. Finite witness
-
-The exact finite fixture is:
+## 12. Finite witness
 
 ```text
 stage-two support:   [4,9]
@@ -401,20 +383,19 @@ corrected matrix:    zero 2 × 2 matrix.
 
 No decimal approximation is mathematical authority.
 
-## 14. Failure cases and information boundaries
+## 13. Failure cases and information boundaries
 
 1. Adding a third function may create a nonzero one-dimensional moment kernel.
 2. A derivative, distribution, or endpoint correction is not in the literal
    two-tent span and is not excluded.
-3. Basis mixing within the two-tent span is fully covered; basis mixing with a wider
-   family is not.
+3. Basis mixing inside the two-tent span is fully covered; a wider family is not.
 4. The result does not compute a classical Weil cross term.
 5. The result does not construct the full class `W`.
 6. A zero corrected arithmetic matrix cannot be promoted to a classical criterion.
 7. No density, closure, or completion theorem is supplied.
 8. No criterion direction or RH consequence is inferred.
 
-## 15. Evidence states
+## 14. Evidence states
 
 Established separately:
 
@@ -436,9 +417,10 @@ ANALYTIC_PREMISES_DISCHARGED
 Lean/Lake execution was unavailable in the authoring environment. No project build,
 warning-clean elaboration, exact declaration print, fresh kernel replay, transitive
 axiom audit, or independent replay occurred. Static source review is not kernel
-acceptance.
+acceptance. The repaired parent validation does not imply acceptance of this new
+child leaf.
 
-## 16. RH consequence
+## 15. RH consequence
 
 This increment supplies a negative test-class result only:
 
@@ -454,7 +436,7 @@ Bombieri's two source moments
 It proves neither RH nor its negation and supplies no premise to a classical Weil
 criterion.
 
-## 17. Provenance graph
+## 16. Provenance graph
 
 ```text
 Bombieri, section V
@@ -463,7 +445,7 @@ Bombieri, section V
 TentWeight + TentSource
   -> positive tents on (4,9) and (9,16)
 
-parent #1083 source
+merged and repaired parent #1083
   -> literal tent functions and typed Bombieri moment record
 
 shared endpoint 9
@@ -480,7 +462,7 @@ trivial kernel + parent arithmetic form
 
 No numerical contributor weights are assigned.
 
-## 18. Exactly one next obstruction
+## 17. Exactly one next obstruction
 
 Add exactly one explicitly defined third correction profile `H` with source-bound
 support, regularity, and arithmetic readout. Prove the resulting two moment
