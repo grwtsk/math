@@ -54,17 +54,17 @@ theorem affinePowerPrimitive_deriv (t A σ : ℝ) (ht : 1 < t) :
       ((A + (2 - σ) / 2) * powerProfile t σ) σ := by
   have hc : Real.log t ≠ 0 := ne_of_gt (Real.log_pos ht)
   have he : HasDerivAt (powerProfile t) (powerProfile t σ * Real.log t) σ := by
-    simpa [powerProfile] using ((((hasDerivAt_id σ).add_const 1).mul_const (Real.log t)).exp)
+    change HasDerivAt (fun u : ℝ => Real.exp ((u + 1) * Real.log t)) _ σ
+    simpa [powerProfile, Pi.mul_def, id_eq] using ((((hasDerivAt_id σ).add_const 1).mul_const (Real.log t)).exp)
   have hd : HasDerivAt
       (fun u : ℝ => (A + (2 - u) / 2) / Real.log t + 1 / (2 * (Real.log t) ^ 2))
       (-1 / (2 * Real.log t)) σ := by
     convert (((((hasDerivAt_id σ).const_sub 2).div_const 2).const_add A).div_const
-      (Real.log t)).add_const (1 / (2 * (Real.log t) ^ 2)) using 1 <;> ring
+      (Real.log t)).add_const (1 / (2 * (Real.log t) ^ 2)) using 1 <;> first | rfl | ring
   change HasDerivAt (fun u => powerProfile t u *
     ((A + (2 - u) / 2) / Real.log t + 1 / (2 * (Real.log t) ^ 2))) _ σ
   apply (he.mul hd).congr_deriv
-  field_simp [hc]
-  <;> ring
+  field_simp [hc]; ring
 
 theorem affineProfilePrimitive_deriv (x h A σ : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
     HasDerivAt (affineProfilePrimitive x h A)
@@ -72,8 +72,7 @@ theorem affineProfilePrimitive_deriv (x h A σ : ℝ) (hh : 0 < h) (ha : 1 < x -
   convert ((affinePowerPrimitive_deriv (x + h) A σ (by linarith)).add
     ((affinePowerPrimitive_deriv x A σ (by linarith)).const_mul 2)).add
       (affinePowerPrimitive_deriv (x - h) A σ ha) using 1
-  <;> unfold affineProfilePrimitive numeratorProfile
-  <;> ring
+  <;> first | rfl | (simp only [numeratorProfile]; ring)
 
 theorem affinePowerPrimitive_nonneg (t A σ : ℝ) (ht : 1 < t) (hA : 0 ≤ A) (hσ : σ ≤ 2) :
     0 ≤ affinePowerPrimitive t A σ := by
@@ -145,9 +144,9 @@ theorem integrableOn_Iic_of_affine_envelope (g : ℝ → ℂ) (hg : Continuous g
     (a := fun N : ℕ => -(N : ℝ)) (l := atTop) (affineRayBudget x h A / y ^ 2) 2
   · intro N
     exact (hg.integrableOn_Icc).mono_set Ioc_subset_Icc_self
-  · exact tendsto_natCast_atTop_atTop.neg_atTop_atBot
+  · exact (tendsto_neg_atTop_atBot.comp tendsto_natCast_atTop_atTop)
   · exact Eventually.of_forall (fun N => integral_norm_le_of_affine_envelope g hg
-      x h A y (-(N : ℝ)) hh ha hA hy (by linarith [Nat.cast_nonneg (R := ℝ) N]) hbound)
+      x h A y (-(N : ℝ)) hh ha hA hy (by linarith [Nat.cast_nonneg (α := ℝ) N]) hbound)
 
 /-- The same explicit budget bounds the norm integral over the entire leftward ray. -/
 theorem integral_norm_Iic_le_of_affine_envelope (g : ℝ → ℂ) (hg : Continuous g)
@@ -157,11 +156,11 @@ theorem integral_norm_Iic_le_of_affine_envelope (g : ℝ → ℂ) (hg : Continuo
     (∫ σ in Iic (2 : ℝ), ‖g σ‖) ≤ affineRayBudget x h A / y ^ 2 := by
   have hi := integrableOn_Iic_of_affine_envelope g hg x h A y hh ha hA hy hbound
   have hl := intervalIntegral_tendsto_integral_Iic 2 hi.norm
-    (tendsto_natCast_atTop_atTop.neg_atTop_atBot :
+    ((tendsto_neg_atTop_atBot.comp tendsto_natCast_atTop_atTop) :
       Tendsto (fun N : ℕ => -(N : ℝ)) atTop atBot)
   exact le_of_tendsto hl (Eventually.of_forall (fun N =>
     integral_norm_le_of_affine_envelope g hg x h A y (-(N : ℝ)) hh ha hA hy
-      (by linarith [Nat.cast_nonneg (R := ℝ) N]) hbound))
+      (by linarith [Nat.cast_nonneg (α := ℝ) N]) hbound))
 
 end
 end GRWTSK.Analysis.Complex.TentHorizontalRayMajorant

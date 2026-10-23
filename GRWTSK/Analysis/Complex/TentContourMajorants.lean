@@ -67,8 +67,8 @@ theorem norm_numerator_le_profile (x h : ℝ) (z : ℂ) :
   have ht := (norm_add_le
     (logPower (x + h) (z + 1) - 2 * logPower x (z + 1))
     (logPower (x - h) (z + 1))).trans
-      (add_le_add_right (norm_sub_le
-        (logPower (x + h) (z + 1)) (2 * logPower x (z + 1))) _)
+      (add_le_add (norm_sub_le
+        (logPower (x + h) (z + 1)) (2 * logPower x (z + 1))) le_rfl)
   simpa only [norm_mul, Complex.norm_ofNat, norm_logPower_exact,
     Complex.add_re, Complex.one_re, numeratorProfile, powerProfile] using ht
 
@@ -114,7 +114,7 @@ theorem powerProfile_primitive_deriv (t σ : ℝ) (ht : 1 < t) :
   have hn : Real.log t ≠ 0 := ne_of_gt (Real.log_pos ht)
   have hd := ((((hasDerivAt_id σ).add_const 1).mul_const (Real.log t)).exp).div_const
     (Real.log t)
-  simpa only [powerProfile, one_mul, mul_div_cancel_right₀ _ hn] using hd
+  simpa [powerProfile, Pi.mul_def, id_eq, hn] using hd
 
 theorem profilePrimitive_deriv (x h σ : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
     HasDerivAt (profilePrimitive x h) (numeratorProfile x h σ) σ := by
@@ -220,9 +220,9 @@ theorem norm_kernel_left_le (x h σ t : ℝ) (hh : 0 < h)
       (4 * powerProfile (x - h) σ / h) * (1 + t ^ 2)⁻¹ := by
   let z : ℂ := (σ : ℂ) + (t : ℂ) * Complex.I
   have hsq : ‖z‖ ^ 2 = σ ^ 2 + t ^ 2 := by
-    simp [z, Complex.sq_norm, Complex.normSq_apply] <;> ring
+    simp [z, Complex.sq_norm, Complex.normSq_apply]; ring
   have hsq1 : ‖z + 1‖ ^ 2 = (σ + 1) ^ 2 + t ^ 2 := by
-    simp [z, Complex.sq_norm, Complex.normSq_apply] <;> ring
+    simp [z, Complex.sq_norm, Complex.normSq_apply]; ring
   have hm : ‖z + 1‖ ≤ ‖z‖ :=
     (sq_le_sq₀ (norm_nonneg _) (norm_nonneg _)).mp (by nlinarith)
   have hd : 1 + t ^ 2 ≤ ‖z‖ * ‖z + 1‖ := by
@@ -234,7 +234,7 @@ theorem norm_kernel_left_le (x h σ t : ℝ) (hh : 0 < h)
     _ ≤ numeratorProfile x h σ / (h * (1 + t ^ 2)) := by simpa [z] using hk
     _ ≤ 4 * powerProfile (x - h) σ / (h * (1 + t ^ 2)) :=
       div_le_div_of_nonneg_right hn (by positivity)
-    _ = _ := by ring
+    _ = _ := by simp only [div_eq_mul_inv, mul_inv_rev]; ring
 
 /-- An explicit finite Cauchy mass bound, not a singular inverse-height integral. -/
 theorem finite_cauchy_mass_le_pi (T : ℝ) :

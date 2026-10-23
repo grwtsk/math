@@ -55,7 +55,7 @@ theorem norm_cot_le_three_of_one_le_im (z : ℂ) (hz : 1 ≤ z.im) :
     ‖Complex.cot z‖ ≤ (3 : ℝ) := by
   rw [Complex.cot_eq_exp_ratio]
   apply norm_cot_ratio_le_three
-  have hr : (2 * Complex.I * z).re = -(2 * z.im) := by simp <;> ring
+  have hr : (2 * Complex.I * z).re = -(2 * z.im) := by simp
   rw [Complex.norm_exp, hr, Real.exp_neg, inv_eq_one_div]
   have he : 2 ≤ Real.exp (2 * z.im) := by
     linarith [Real.add_one_le_exp (2 * z.im)]
@@ -81,7 +81,7 @@ theorem norm_half_pi_cot_le (s : ℂ) (hs : 1 ≤ |s.im|) :
   have hi : 1 ≤ |((Real.pi : ℂ) * s / 2).im| := by
     have he : ((Real.pi : ℂ) * s / 2).im = Real.pi * s.im / 2 := by simp
     rw [he, abs_div, abs_mul, abs_of_pos Real.pi_pos]
-    norm_num only [abs_ofNat]
+    norm_num only [abs_of_pos (show (0 : ℝ) < 2 by norm_num)]
     nlinarith [Real.two_le_pi, mul_le_mul_of_nonneg_left hs Real.pi_pos.le]
   have hb := norm_cot_le_three ((Real.pi : ℂ) * s / 2) hi
   change ‖((Real.pi : ℂ) / 2) * Complex.cot ((Real.pi : ℂ) * s / 2)‖ ≤ _

@@ -113,7 +113,6 @@ theorem stripBudget_div_height_sq_tendsto_zero :
   · funext N
     rw [stripBudget_eq_affine_height]
     field_simp [(separatedHeight_pos N).ne']
-    <;> ring
   · simp
 
 /-- Fixed geometric coefficients may be transported; index-dependent ones may not. -/
