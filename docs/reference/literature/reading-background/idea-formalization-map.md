@@ -1,5 +1,7 @@
 # Ideas and Lean formalizations by taxonomy
 
+Current follow-up for the **70 historically unresolved ideas**: [taxonomy-organized target search](unmatched-idea-followup.md). It records five narrower conditional fragments and distinguishes repair candidates, analogies, obstructions and unresolved claims. Historical statuses below are retained.
+
 279 version-bound idea records across all 274 owner-designated unpublished PDF versions, with 226 pinned code links. All **233 formerly screened versions** now have substantive decisions from selected complete pages beyond screening; the earlier 41 comparisons remain intact. No full-manuscript or independent kernel audit is claimed.
 
 These are assistant-proposed interpretations, not statements of what R.A. Jacob Martone understood or when. Owner statements and understanding dates remain null. Mathematical correspondence does not establish influence, priority or attribution. Attribution clarification remains tracked in [issue #254](https://github.com/grwtsk/math/issues/254).
@@ -24,6 +26,8 @@ Expanded code baseline: `549d145e5ab7b9faaacab46fd9b6123d907ee1f3`. The original
 ### Conjectures and Proofs for Galois-Theoretic Extensions of Automorphic L-Functions — `1574517a994e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1574517a994e89cc:motivic-period-orbits`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1574517a994e89cc-motivic-period-orbits).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2>) — Conjectures 1–3 and proof sketches.
 
@@ -51,6 +55,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1961da5dba9ca115:motivic-period-orbits`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1961da5dba9ca115-motivic-period-orbits).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2>) — Conjectures 1–3 and proof sketches.
 
 Exact PDF SHA-256: `1961da5dba9ca1152f38a2c7c093dcac813729876908194597fae5a3a1c1c8e1`.
@@ -77,6 +83,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>) — §2–5, representation embeddings and proposed residue transfer.
 
 Exact PDF SHA-256: `498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f`.
@@ -101,6 +109,8 @@ Missing bridges and uncertainty:
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `67b33f06a609`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>) — §2–5, representation embeddings and proposed residue transfer.
 
@@ -183,6 +193,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#159cb12b34d5a425-kl-positive-to-residue-gap).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>) — §3.1–3.2, §4 and appendix A.
 
 Exact PDF SHA-256: `159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d`.
@@ -208,6 +220,8 @@ Missing bridges and uncertainty:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#553f237f431fc299-kl-positive-to-residue-gap).
 
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>) — §3.1–3.2, §4 and appendix A.
 
@@ -291,6 +305,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:21b37ab459e746fe:geometric-positivity-residue-bridge`
 
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#21b37ab459e746fe-geometric-positivity-residue-bridge).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=3>) — §2.3 and §3 proof steps.
 
 Exact PDF SHA-256: `21b37ab459e746fefd04bae61caff0ec2c4bc33925095360ae2235220b5f4d00`.
@@ -317,6 +333,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a18a628c04c5a33a:geometric-positivity-residue-bridge`
 
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a18a628c04c5a33a-geometric-positivity-residue-bridge).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=3>) — §2.3 and §3 proof steps.
 
 Exact PDF SHA-256: `a18a628c04c5a33a53f081fd795195641e02b185cf09a67fef290b571921e2de`.
@@ -342,6 +360,8 @@ Missing bridges and uncertainty:
 ### Residue Suppression via Embeddings and Geometric Langlands Localization — `bd284739968e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3>), [PDF page 5](</Users/think/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5>) — §5.1.1 and §7.
 
@@ -425,6 +445,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:4fd05e96b1d7ef28:strict-pairing-and-variance-counterchecks`
 
+Later target-search review: **obstruction-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#4fd05e96b1d7ef28-strict-pairing-and-variance-counterchecks).
+
 Paper: [PDF page 34](</Users/think/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34>) — appendix G.1–G.2 physical p34.
 
 Exact PDF SHA-256: `4fd05e96b1d7ef280dc2382bfd3a0e6bf6c6ff4353afa5402abb374794836f8c`.
@@ -450,6 +472,8 @@ Missing bridges and uncertainty:
 ### Resolution of the Riemann Hypothesis: Representation-Theoretic, Numerical, and Compactification-Based Methods — `c34a092c5adb`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:c34a092c5adbd193:strict-pairing-and-variance-counterchecks`
+
+Later target-search review: **obstruction-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c34a092c5adbd193-strict-pairing-and-variance-counterchecks).
 
 Paper: [PDF page 34](</Users/think/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34>) — appendix G.1–G.2 physical p34.
 
@@ -505,6 +529,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a748ea4b4592e7ab:purity-frobenius-versus-global-zeros`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
+
 Paper: [PDF page 82](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=82>), [PDF page 87](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=87>), [PDF page 91](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=91>) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
 
 Exact PDF SHA-256: `a748ea4b4592e7ab0c0d2d088342035a07bef9e9c78efc69a2a19602aa3cf515`.
@@ -530,6 +556,8 @@ Missing bridges and uncertainty:
 ### The Ring—A Comprehensive Framework for Spectral Purity, Motivic Cohomology, and Fourier-Mukai Symmetries — `e686e3fe101e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:e686e3fe101ea8bf:purity-frobenius-versus-global-zeros`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
 Paper: [PDF page 82](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=82>), [PDF page 87](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=87>), [PDF page 91](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=91>) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
 
@@ -925,6 +953,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:33a5d8fe67a4e573:li-flow-source-preservation`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#33a5d8fe67a4e573-li-flow-source-preservation).
+
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=6>), [PDF page 11](</Users/think/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>), [PDF page 14](</Users/think/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=14>) — §3–4 coefficient definition, §11 coercivity, §15 limit-to-GRH.
 
 Exact PDF SHA-256: `33a5d8fe67a4e573a4de2c0cd0d553a403b1b781f58af445ccd6e402f71fc5d6`.
@@ -951,6 +981,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:465f76a208948832:absolute-error-integral-scale`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#465f76a208948832-absolute-error-integral-scale).
+
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=7>), [PDF page 9](</Users/think/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=9>) — §2.4 assumption3 and §3.4–3.5.
 
 Exact PDF SHA-256: `465f76a20894883259ad4ea846bb3e28f4e48c0bc834e0dbea80c8eadc49f28c`.
@@ -976,6 +1008,8 @@ Missing bridges and uncertainty:
 ### A Hybrid Approach to Proving the Riemann Hypothesis: Cross-Domain Consistency and Error Propagation — `d8d87416bd19`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d8d87416bd1943d6:absolute-error-integral-scale`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d8d87416bd1943d6-absolute-error-integral-scale).
 
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=7>), [PDF page 9](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=9>) — §2.4 assumption3 and §3.4–3.5.
 
@@ -1750,6 +1784,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:17fb9e43b5ef8cff:weighted-gradient-energy-minimizer`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#17fb9e43b5ef8cff-weighted-gradient-energy-minimizer).
+
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=7>), [PDF page 14](</Users/think/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=14>) — §3.2 and §6.2.
 
 Exact PDF SHA-256: `17fb9e43b5ef8cff0941ac1bc880ffeee818d2203abefa03ff06642998220271`.
@@ -1775,6 +1811,8 @@ Missing bridges and uncertainty:
 ### A Unified Theoretical Framework for the Proof of the Riemann Hypothesis and Its Generalizations — `92dd2484898a`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:92dd2484898a99ea:weighted-gradient-energy-minimizer`
+
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#92dd2484898a99ea-weighted-gradient-energy-minimizer).
 
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=7>), [PDF page 14](</Users/think/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=14>) — §3.2 and §6.2.
 
@@ -2088,6 +2126,8 @@ Missing bridges and uncertainty:
 ### Entropy-Driven Residue Dynamics: A Rigorous Proof of the Riemann Hypothesis — `294c1f7e26b6`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:294c1f7e26b63880:sobolev-compactness-and-entropy-correction`
+
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#294c1f7e26b63880-sobolev-compactness-and-entropy-correction).
 
 Paper: [PDF page 17](</Users/think/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=17>), [PDF page 21](</Users/think/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=21>) — §6.4.3 and §7.1.
 
@@ -2704,6 +2744,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a470293a2cf9c81e:unweighted-energy-variational-gap`
 
+Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a470293a2cf9c81e-unweighted-energy-variational-gap).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>) — §3–4, proposed energy and growth/zero-location inference.
 
 Exact PDF SHA-256: `a470293a2cf9c81e262e3fcbd522ce0a9dac7ecd36283510d11307416234fc3a`.
@@ -2728,6 +2770,8 @@ Missing bridges and uncertainty:
 ### Harmonic-Residue Framework for the Generalized Riemann Hypothesis — `eea3f78035e7`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:eea3f78035e7071a:unweighted-energy-variational-gap`
+
+Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#eea3f78035e7071a-unweighted-energy-variational-gap).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>) — §3–4, proposed energy and growth/zero-location inference.
 
@@ -3023,6 +3067,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:3dda12b56a7f399b:modular-correction-product-faithfulness`
 
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#3dda12b56a7f399b-modular-correction-product-faithfulness).
+
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=4>), [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=7>) — §1.1 and §2.3–2.4.
 
 Exact PDF SHA-256: `3dda12b56a7f399b7cc9317a73e3b7c4a13d9e0d96b0f5be0cd10665be3f643f`.
@@ -3308,6 +3354,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering, Entropy Suppression, and Symmetry Alignment: A Framework for Validating the Generalized Riemann Hypothesis — `0b655e075a1e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0b655e075a1e7798:dimension-decay-versus-fixed-source`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0b655e075a1e7798-dimension-decay-versus-fixed-source).
 
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=4>), [PDF page 8](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=8>) — §2.2 and §5.1.
 
@@ -3911,6 +3959,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · Revision 1.1 · `idea:unpublished-v3:e49b4fba58be2cb5:theta-one-excitation-authority-boundary`
 
+Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e49b4fba58be2cb5-theta-one-excitation-authority-boundary).
+
 Paper: [PDF page 11](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11>), [PDF page 13](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=13>) — §4 remark4.2, §5.2 and §6 physical pp11/13.
 
 Exact PDF SHA-256: `e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71`.
@@ -4065,6 +4115,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0db38ec749b78bd0:derived-vanishing-zero-comparison`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0db38ec749b78bd0-derived-vanishing-zero-comparison).
+
 Paper: [PDF page 13](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=13>), [PDF page 17](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=17>) — §3.1.2 and §3.2.3–3.2.4.
 
 Exact PDF SHA-256: `0db38ec749b78bd0d0974e91800620dd6c29ee9abd220c5cda97d7a875067ea4`.
@@ -4090,6 +4142,8 @@ Missing bridges and uncertainty:
 ### A Derived Geometric Framework for the Riemann Hypothesis — `a9d476a5336e`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a9d476a5336e2064:derived-vanishing-zero-comparison`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a9d476a5336e2064-derived-vanishing-zero-comparison).
 
 Paper: [PDF page 13](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=13>), [PDF page 17](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=17>) — §3.1.2 and §3.2.3–3.2.4.
 
@@ -4117,6 +4171,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:34ebca88596ffc41:twisted-vanishing-versus-untwisted-source`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#34ebca88596ffc41-twisted-vanishing-versus-untwisted-source).
+
 Paper: [PDF page 18](</Users/think/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18>) — §2.8.3–2.8.4, with §1.2.5.
 
 Exact PDF SHA-256: `34ebca88596ffc4150a4cea62fddd8158b07775c84bf4211abe5eb18323e1a55`.
@@ -4142,6 +4198,8 @@ Missing bridges and uncertainty:
 ### A Derived Geometric Proof of the Riemann Hypothesis — `50a2340db4a9`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:50a2340db4a9dbfa:twisted-vanishing-versus-untwisted-source`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#50a2340db4a9dbfa-twisted-vanishing-versus-untwisted-source).
 
 Paper: [PDF page 18](</Users/think/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18>) — §2.8.3–2.8.4, with §1.2.5.
 
@@ -4169,6 +4227,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:8a8dc8e29d327ad4:geometric-functorial-alignment-outline`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#8a8dc8e29d327ad4-geometric-functorial-alignment-outline).
+
 Paper: [PDF page 30](</Users/think/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=30>), [PDF page 40](</Users/think/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=40>) — physical pp30 and40.
 
 Exact PDF SHA-256: `8a8dc8e29d327ad4e1d95b5215d7dddd78db2cd04e1a73c9ebb43967c009e1f4`.
@@ -4194,6 +4254,8 @@ Missing bridges and uncertainty:
 ### A Geometric Framework for the Grand Riemann Hypothesis — `efe16f86d173`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:efe16f86d1739c61:geometric-functorial-alignment-outline`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#efe16f86d1739c61-geometric-functorial-alignment-outline).
 
 Paper: [PDF page 30](</Users/think/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=30>), [PDF page 40](</Users/think/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=40>) — physical pp30 and40.
 
@@ -4249,6 +4311,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:b4653d8949e0c7c3:residue-modified-ricci-arithmetic-gap`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b4653d8949e0c7c3-residue-modified-ricci-arithmetic-gap).
+
 Paper: [PDF page 30](</Users/think/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=30>), [PDF page 40](</Users/think/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=40>) — §2.4.2–2.4.3 and §4.1.3.
 
 Exact PDF SHA-256: `b4653d8949e0c7c30a15382e86055484c9207fc4e1b09e020765c54e230efc75`.
@@ -4274,6 +4338,8 @@ Missing bridges and uncertainty:
 ### A Unified Theoretical Framework for the Proof of the Riemann Hypothesis and Its Extensions — `c5773b3ef5f0`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:c5773b3ef5f0157d:residue-modified-ricci-arithmetic-gap`
+
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c5773b3ef5f0157d-residue-modified-ricci-arithmetic-gap).
 
 Paper: [PDF page 30](</Users/think/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=30>), [PDF page 40](</Users/think/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=40>) — §2.4.2–2.4.3 and §4.1.3.
 
@@ -4357,6 +4423,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:4eae7c78f226245e:joint-runner-orbit`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#4eae7c78f226245e-joint-runner-orbit).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2>) — §2–4, relative-speed reformulation and lattice/volume argument.
 
 Exact PDF SHA-256: `4eae7c78f226245e5deb42d6e95692a7c97a349905aaf57f88cf6fd9ac843fb8`.
@@ -4383,6 +4451,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ec2b9a77a14f5ea8:distance-reduction`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ec2b9a77a14f5ea8-distance-reduction).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2>) — §2 (coordinate reduction), §3–4 (quartic and higher-genus argument).
 
 Exact PDF SHA-256: `ec2b9a77a14f5ea8eaaf560e4fb9dba0e32d3b904d66b5be458310e4abf642f8`.
@@ -4407,6 +4477,8 @@ Missing bridges and uncertainty:
 ### B (8) — `35e6de86f676`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:35e6de86f6760712:boundary-localization-positivity-gap`
+
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#35e6de86f6760712-boundary-localization-positivity-gap).
 
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3>) — §3–5.
 
@@ -4434,6 +4506,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#796ba01d4a02a5ba-boundary-positivity-outline).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>) — §4–7, localization, Euler positivity and numerical-error outline.
 
 Exact PDF SHA-256: `796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362`.
@@ -4459,6 +4533,8 @@ Missing bridges and uncertainty:
 ### Compactification Symmetry and the Riemann Hypothesis — `74fdf55b9492`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:74fdf55b94927e16:compactification-gamma-cancellation`
+
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#74fdf55b94927e16-compactification-gamma-cancellation).
 
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=4>) — §3.1–3.3.
 
@@ -4486,6 +4562,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:b9cfb67e8d0ee43e:compactification-gamma-cancellation`
 
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b9cfb67e8d0ee43e-compactification-gamma-cancellation).
+
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=4>) — §3.1–3.3.
 
 Exact PDF SHA-256: `b9cfb67e8d0ee43e547c959e19507437c26c7f7a77fb348b04187db76a52a1c2`.
@@ -4511,6 +4589,8 @@ Missing bridges and uncertainty:
 ### Compactification Symmetry and the Riemann Hypothesis — `c49188e01b3c`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:c49188e01b3c6072:expanded-compactification-gamma-cancellation`
+
+Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c49188e01b3c6072-expanded-compactification-gamma-cancellation).
 
 Paper: [PDF page 10](</Users/think/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10>) — §3.2–3.3 physical p10.
 
@@ -4691,6 +4771,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:1973205b71af0113:foundational-correspondence-is-premise`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1973205b71af0113-foundational-correspondence-is-premise).
+
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=7>), [PDF page 20](</Users/think/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=20>) — §4.1 and §14.3.
 
 Exact PDF SHA-256: `1973205b71af01131e5141e99262073fdfa8692df913bd0581af5f324a16f44b`.
@@ -4716,6 +4798,8 @@ Missing bridges and uncertainty:
 ### Resolution of the Riemann Hypothesis and Generalized Automorphic L-Functions — `fc037812efa3`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:fc037812efa393af:foundational-correspondence-is-premise`
+
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#fc037812efa393af-foundational-correspondence-is-premise).
 
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=7>), [PDF page 20](</Users/think/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=20>) — §4.1 and §14.3.
 
@@ -4792,6 +4876,8 @@ Missing bridges and uncertainty:
 ### Spectral Rigidity, Homotopy Constraints, and the Functorial Necessity of the Riemann Hypothesis — `8b0f8dbc97a4`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:8b0f8dbc97a4587f:homotopy-rigidity-unproved-comparisons`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#8b0f8dbc97a4587f-homotopy-rigidity-unproved-comparisons).
 
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=3>) — §3–5 homotopy flow, motive and functorial balance.
 
@@ -5246,6 +5332,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:3f28be14404a64ea:recomposition-upper-bound-not-separation`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
+
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4>) — complexity theorem 3 and critical-line theorem 1.
 
 Exact PDF SHA-256: `3f28be14404a64ea356abbc35615d406d0d9ca9e535f36b0b602f69e16fe38ea`.
@@ -5272,6 +5360,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:b799fd9cb24af2a3:recomposition-upper-bound-not-separation`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
+
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4>) — complexity theorem 3 and critical-line theorem 1.
 
 Exact PDF SHA-256: `b799fd9cb24af2a3415bfd20176c9232a371034809561e69eeb8dd4222c518d5`.
@@ -5297,6 +5387,8 @@ Missing bridges and uncertainty:
 ### Updated Verification of Recursive Refinement Framework — `d7819c0364c7`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>) — status item 5 and remaining-open-problems item 3.
 
@@ -5420,6 +5512,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:6948b3b1a6b97ffd:empirical-power-law`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#6948b3b1a6b97ffd-empirical-power-law).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=3>) — §2 equation (1), §4 observations and appendix plot.
 
 Exact PDF SHA-256: `6948b3b1a6b97ffdf2e4f66c16ce17eb0b35d79b720c8924603313b484a632f7`.
@@ -5445,6 +5539,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:939947621e220181:empirical-power-law`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#939947621e220181-empirical-power-law).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=2>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=3>) — §2 equation (1), §4 observations and appendix plot.
 
 Exact PDF SHA-256: `939947621e220181a07dbae5aca131fcc9691a9f8723dff7ed7712efaa11031d`.
@@ -5469,6 +5565,8 @@ Missing bridges and uncertainty:
 ### Spectral Gaps, Time-Asymptotic Behavior, and Lattice Models for Primes — `404255208b9d`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:404255208b9d6243:gap-flow-and-prime-lattice`
+
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#404255208b9d6243-gap-flow-and-prime-lattice).
 
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3>) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
 
@@ -5496,6 +5594,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:9b67b1410fb61cb6:gap-flow-and-prime-lattice`
 
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#9b67b1410fb61cb6-gap-flow-and-prime-lattice).
+
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3>) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
 
 Exact PDF SHA-256: `9b67b1410fb61cb69442fa0d041a77d8a3a9b74711074c6755c5087b0c9991b3`.
@@ -5521,6 +5621,8 @@ Missing bridges and uncertainty:
 ### Spectral Gaps, Time-Asymptotic Behavior, and Lattice Models for Primes — `b1ddb7027564`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:b1ddb7027564ed7a:gap-flow-and-prime-lattice`
+
+Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b1ddb7027564ed7a-gap-flow-and-prime-lattice).
 
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3>) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
 
@@ -5551,6 +5653,8 @@ Missing bridges and uncertainty:
 ### A Comprehensive Exploration of the Generalized Riemann Hypothesis — `d00d427aef3a`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d00d427aef3a27d8:rmt-langlands-survey-boundary`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
 
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=6>), [PDF page 8](</Users/think/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=8>) — §3.2–3.3 and §4.1–4.4.
 
@@ -5690,6 +5794,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0b423568798d1ce3-prime-research-roadmap).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>), [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>) — §2 and §6 (analytic and computational objectives).
 
 Exact PDF SHA-256: `0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f`.
@@ -5770,6 +5876,8 @@ Missing bridges and uncertainty:
 ### A Proof of the Generalized Riemann Hypothesis via Residue Clustering Laws — `f8f7f4692f9a`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:f8f7f4692f9a8412:local-clustering-symmetry-gap`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#f8f7f4692f9a8412-local-clustering-symmetry-gap).
 
 Paper: [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7>) — §3–4, physical pp5–7.
 
@@ -6615,6 +6723,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ba422dcbe9ffc6fb:compact-integral-residue-alignment-gap`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ba422dcbe9ffc6fb-compact-integral-residue-alignment-gap).
+
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=6>), [PDF page 7](</Users/think/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=7>) — §3.1–3.2.
 
 Exact PDF SHA-256: `ba422dcbe9ffc6fb0a3553f0345047d8a07d52f329fc031b5d59f6293fb81610`.
@@ -6781,6 +6891,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0523b6d449088321:modular-j-density-countercheck`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0523b6d449088321-modular-j-density-countercheck).
+
 Paper: [PDF page 8](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8>), [PDF page 11](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>) — §4 reflection/boundedness and §5 converse.
 
 Exact PDF SHA-256: `0523b6d449088321283859c8854ed32f766f9fea00950d7629ab5a3f9dbbf95f`.
@@ -6806,6 +6918,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering and the Proof of the Generalized Riemann Hypothesis — `482cdae3e36c`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:482cdae3e36c3e60:modular-density-and-bsd-residue-gap`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#482cdae3e36c3e60-modular-density-and-bsd-residue-gap).
 
 Paper: [PDF page 3](</Users/think/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=3>), [PDF page 5](</Users/think/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=5>) — §2.3 and §4.2.
 
@@ -6833,6 +6947,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:6900e23cd2e098fd:reciprocal-power-reflection-error`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#6900e23cd2e098fd-reciprocal-power-reflection-error).
+
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4>) — physical p4 reciprocal-power argument and Taylor bound, p6 zero-free claim.
 
 Exact PDF SHA-256: `6900e23cd2e098fd7eb5c99eaf85cbe1ec5f61b1436a9b9cf2edfbfdc75caffd`.
@@ -6859,6 +6975,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:76129703513fecd2:modular-residue-numerical-source-gap`
 
+Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#76129703513fecd2-modular-residue-numerical-source-gap).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>) — §2.2–4 numerical residues and proposed GRH connection.
 
 Exact PDF SHA-256: `76129703513fecd25c8843932174fb7bef44b49654b3b1452cdca4bc478092d3`.
@@ -6884,6 +7002,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering, Modular Symmetry, and Connections to the Generalized Riemann Hypothesis — `c6b61ffc72f6`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:c6b61ffc72f602af:modular-residue-numerical-source-gap`
+
+Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c6b61ffc72f602af-modular-residue-numerical-source-gap).
 
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>) — §2.2–4 numerical residues and proposed GRH connection.
 
@@ -7027,6 +7147,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:47f41bdea32cea56:local-dirichlet-clustering-reflection-gap`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#47f41bdea32cea56-local-dirichlet-clustering-reflection-gap).
+
 Paper: [PDF page 14](</Users/think/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14>) — physical p14 discrete universality examples.
 
 Exact PDF SHA-256: `47f41bdea32cea5614ae8eec3aec280268e0464509c507f51480a510d0612e88`.
@@ -7081,6 +7203,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:a26ad58b00222955:arithmetic-residue-formula-scope`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a26ad58b00222955-arithmetic-residue-formula-scope).
+
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=6>), [PDF page 15](</Users/think/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=15>) — §2.2 and §9.2.
 
 Exact PDF SHA-256: `a26ad58b002229559726316bf90e9fc0e4943fe14cdfaf28e5add999350bc8ac`.
@@ -7106,6 +7230,8 @@ Missing bridges and uncertainty:
 ### The Riemann Hypothesis and Its Automorphic Generalizations: Comprehensive Insights into Unified Analytic, Spectral, and Geometric Structures — `e04e2d11c430`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:e04e2d11c430078f:arithmetic-residue-formula-scope`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e04e2d11c430078f-arithmetic-residue-formula-scope).
 
 Paper: [PDF page 6](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=6>), [PDF page 15](</Users/think/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=15>) — §2.2 and §9.2.
 
@@ -7215,6 +7341,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:2b7478353ae500b1:conditional-transcendence-and-chaotic-sums`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
+
 Paper: [PDF page 15](</Users/think/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=15>), [PDF page 24](</Users/think/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=24>) — §5.3 and §8.5 physical pp15/24.
 
 Exact PDF SHA-256: `2b7478353ae500b16accd001c530b316673bd54ca7239a6f4b31552a5212dcb0`.
@@ -7240,6 +7368,8 @@ Missing bridges and uncertainty:
 ### Universal Transcendence of Non-Critical Values in Automorphic and Motivic L-Functions — `ac7a2ecdc5f9`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:ac7a2ecdc5f9c787:conditional-transcendence-and-chaotic-sums`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
 Paper: [PDF page 15](</Users/think/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=15>), [PDF page 24](</Users/think/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=24>) — §5.3 and §8.5 physical pp15/24.
 
@@ -7298,6 +7428,8 @@ Missing bridges and uncertainty:
 ### A Unified Theoretical Framework for the Proof of the Riemann Hypothesis and Its Generalizations — `7e3e7acb686d`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:7e3e7acb686d4196:short-rmt-proof-upgrade-gap`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
 Paper: [PDF page 4](</Users/think/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=4>) — §2.3.1–2.3.2.
 
@@ -7408,6 +7540,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap`
 
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2>) — §2.1–3 and §4.3.
 
 Exact PDF SHA-256: `0f3deff790c3e5981fc304f6fef684f2d93ee0830b20c3129244a40721875833`.
@@ -7433,6 +7567,8 @@ Missing bridges and uncertainty:
 ### Residue Clustering, Modular Symmetry, and the Generalized Riemann Hypothesis: Techniques and Next Steps — `579328ace007`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap`
+
+Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1>), [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2>) — §2.1–3 and §4.3.
 
@@ -7548,6 +7684,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:26516b4beee3b085:clustering-empty-version`
 
+Later target-search review: **no-substantive-body**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#26516b4beee3b085-clustering-empty-version).
+
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2>) — physical p2 empty section6.
 
 Exact PDF SHA-256: `26516b4beee3b08515a0f9b8dfac5399b68973af066cbffb3ff8bc7cd9072caa`.
@@ -7594,6 +7732,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:917ca3c827b1627b:abstract-only-entropy-version`
 
+Later target-search review: **no-substantive-body**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#917ca3c827b1627b-abstract-only-entropy-version).
+
 Paper: [PDF page 1](</Users/think/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1>) — physical p1 abstract.
 
 Exact PDF SHA-256: `917ca3c827b1627b6375c1ad821cb42f2a38a11c891bb7565ffa5fee2f255a85`.
@@ -7639,6 +7779,8 @@ Missing bridges and uncertainty:
 ### _A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1) — `85c8288713f3`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:85c8288713f3f7fa:placeholder-no-substantive-body`
+
+Later target-search review: **no-substantive-body**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#85c8288713f3f7fa-placeholder-no-substantive-body).
 
 Paper: [PDF page 2](</Users/think/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2>) — physical PDF p2, printed p88.
 
