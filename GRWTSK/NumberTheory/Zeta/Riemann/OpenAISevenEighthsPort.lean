@@ -181,7 +181,7 @@ theorem openAISevenEighthsReview_not_admissionReady :
   have htool :=
     hready .toolchainAligned
       (by simp [ExternalDeclarationReview.requiredChecks])
-  simpa [ExternalDeclarationReview.Has, openAISevenEighthsReview] using htool
+  simp [ExternalDeclarationReview.Has, openAISevenEighthsReview] at htool
 
 /-- A noncoercible accepted port for an external raw half-plane theorem.
 
@@ -190,7 +190,7 @@ fields. Source metadata alone cannot inhabit this structure. -/
 structure AcceptedExternalRawHalfPlanePort (σ : ℝ) where
   review : ExternalDeclarationReview
   admissionReady : review.AdmissionReady
-  theorem : RiemannZetaZeroFreeRightHalfPlane σ
+  «theorem» : RiemannZetaZeroFreeRightHalfPlane σ
 
 namespace AcceptedExternalRawHalfPlanePort
 

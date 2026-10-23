@@ -42,7 +42,8 @@ theorem cumulativeHarmonicShiftCorrelation_eq_shortIntervalAverage
   apply congrArg (fun x : ℝ => moebiusReal (a + 1) * x)
   apply Finset.sum_congr rfl
   intro k _hk
-  congr 2 <;> omega
+  apply congrArg moebiusReal
+  omega
 
 /-- Triangle transfer from cumulative shift cancellation to the first moment of
 short-interval Möbius sums.  This is sufficient only; the exact source remains
