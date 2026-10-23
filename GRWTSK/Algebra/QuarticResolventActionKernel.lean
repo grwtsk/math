@@ -14,6 +14,7 @@ actual Galois image. The proof uses no characteristic restriction.
 
 namespace GRWTSK.Algebra.QuarticResolventActionKernel
 
+open Polynomial
 open GRWTSK.Algebra.QuarticMatchingAction
 open GRWTSK.Algebra.QuarticMatchingAdjacency
 open GRWTSK.Algebra.QuarticRootLocusEnumeration
