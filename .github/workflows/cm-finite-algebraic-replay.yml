@@ -6,6 +6,13 @@ on:
       - docs/openai-typed-hodge-bridge
     paths:
       - 'GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean'
+      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean'
+      - 'GRWTSK/LinearAlgebra/TensorProduct/**'
+      - '.github/workflows/cm-finite-algebraic-replay.yml'
+  pull_request:
+    paths:
+      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean'
+      - 'GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean'
       - 'GRWTSK/LinearAlgebra/TensorProduct/**'
       - '.github/workflows/cm-finite-algebraic-replay.yml'
   workflow_dispatch:
@@ -23,6 +30,7 @@ jobs:
         with:
           use-mathlib-cache: true
           build: false
+          auto-config: false
       - name: Lean algebraic owner with warnings as errors
         run: lake env lean -DwarningAsError=true GRWTSK/AlgebraicGeometry/Hodge/CMFinitePureAssembly.lean
       - name: Lean algebraic owner with trust level zero
