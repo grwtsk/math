@@ -3012,6 +3012,16 @@
       "version": "v0.1"
     },
     {
+      "manifest_id": null,
+      "migrated_sha256": "03f6588c6f726e19d1c118d8ecf2ad7aeef8873a0b2d18e4eb7094988b656b4c",
+      "new_path": "docs/verification/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison/rh-anchored-authentic-centered-defect-942-v0.1.toml",
+      "old_path": "verification/rh-anchored-authentic-centered-defect-942-v0.1.toml",
+      "original_sha256": "03f6588c6f726e19d1c118d8ecf2ad7aeef8873a0b2d18e4eb7094988b656b4c",
+      "root_module": "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison",
+      "scope": "MIRRORED_SOURCE_MODULE",
+      "version": "v0.1"
+    },
+    {
       "manifest_id": "rh-atlas-analytic-pole-patch-v0.1",
       "migrated_sha256": "72c52c7c50c6a797a06617177b1e6b410644098d8b5b6acd94ec5bef7d28b416",
       "new_path": "docs/verification/_library-root/rh-atlas-analytic-pole-patch-v0.1.toml",
@@ -7983,7 +7993,7 @@
     }
   ],
   "legacy_root": "verification",
-  "migrated_file_count": 798,
+  "migrated_file_count": 799,
   "nonclaims": [
     "Migration does not assert Lean elaboration, replay, trust audit, hostile-control execution, or mathematical admission.",
     "The _unscoped and _library-root groups preserve targets without an exact source-module mirror.",
@@ -7993,7 +8003,7 @@
   "schema": "grwtsk-verification-layout-migration-v1",
   "scope_counts": {
     "LIBRARY_ROOT": 52,
-    "MIRRORED_SOURCE_MODULE": 695,
+    "MIRRORED_SOURCE_MODULE": 696,
     "UNSCOPED_SOURCE_SCOPE": 51
   },
   "status": "STATIC_SOURCE_AUTHORED_ONLY"
