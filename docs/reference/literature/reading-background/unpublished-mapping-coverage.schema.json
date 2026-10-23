@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Unpublished source-to-code correspondence coverage",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "scope": {
+      "type": "string"
+    },
+    "code_baseline": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "code_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "repository": {
+            "const": "https://github.com/grwtsk/math"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "blob": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "code_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "declaration": {
+            "type": "string"
+          },
+          "line_start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "scope": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "repository",
+          "commit",
+          "path",
+          "blob",
+          "code_sha256",
+          "declaration",
+          "line_start",
+          "line_end",
+          "scope"
+        ]
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$"
+          },
+          "asset_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "version_label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "catalog_taxonomy": {
+            "enum": [
+              "Algebra",
+              "Analysis",
+              "GeometryTopology",
+              "LogicAndComputation",
+              "MathematicalPhysics",
+              "NumberTheory",
+              "ProbabilityCombinatorics",
+              "ReviewQueue"
+            ]
+          },
+          "idea_taxonomy": {
+            "enum": [
+              "Algebra",
+              "Analysis",
+              "GeometryTopology",
+              "LogicAndComputation",
+              "MathematicalPhysics",
+              "NumberTheory",
+              "ProbabilityCombinatorics",
+              "ReviewQueue"
+            ]
+          },
+          "topic": {
+            "type": "string"
+          },
+          "pdf_pages": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "locator": {
+            "type": "string"
+          },
+          "paper_url": {
+            "type": "string"
+          },
+          "source_excerpt": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "source-compared",
+              "screened-unresolved",
+              "previous-map"
+            ]
+          },
+          "review_extent": {
+            "enum": [
+              "cited-passages-only",
+              "cited-excerpt-screened-no-mathematical-match"
+            ]
+          },
+          "code_leads": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "missing_bridges": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "idea_id": {
+            "type": "string"
+          },
+          "idea_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "proposed_interpretation": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "connection_status": {
+            "enum": [
+              "matched-subclaim",
+              "conditional-correspondence",
+              "analogy-only",
+              "unresolved"
+            ]
+          },
+          "comparison_code": {
+            "type": "string"
+          },
+          "screening_note": {
+            "type": "string"
+          },
+          "paper_hypotheses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "source_id",
+          "asset_sha256",
+          "title",
+          "version_label",
+          "catalog_taxonomy",
+          "idea_taxonomy",
+          "topic",
+          "pdf_pages",
+          "locator",
+          "paper_url",
+          "source_excerpt",
+          "status",
+          "review_extent",
+          "code_leads",
+          "missing_bridges"
+        ]
+      }
+    }
+  },
+  "required": [
+    "scope",
+    "code_baseline",
+    "limitations",
+    "code_references",
+    "sources"
+  ]
+}
