@@ -93,7 +93,7 @@ theorem abs_centeredGreenBaselinePrefixResidual_le
     -- decreasing-function right-sum estimate on [X,m]
     have hXp : (0 : ℝ) < X := by exact_mod_cast hX
     have hmp : (0 : ℝ) < m := by exact_mod_cast (lt_of_lt_of_le (by omega : 0 < X) hm.1)
-    -- Local right-Riemann comparison for decreasing 1/t.\n    have hlow :\n        Real.log ((m : ℝ) / X) ≤\n          ∑ n ∈ Finset.Ioc X m, 1 / (n : ℝ) + 1 / (X : ℝ) := by\n      -- integral comparison; replay may normalize interval-integral syntax.\n      have hmono : AntitoneOn (fun u : ℝ => 1 / u)\n          (Set.Icc (X : ℝ) m) := by\n        intro a ha b hb hab\n        exact one_div_le_one_div_of_le (by linarith [ha.1]) hab\n      have := hmono\n      rw [Real.log_div (by positivity) (by positivity)]\n      exact harmonic_sum_integral_lower hX hm.1\n    have hupp :\n        ∑ n ∈ Finset.Ioc X m, 1 / (n : ℝ) ≤\n          Real.log ((m : ℝ) / X) := by\n      exact harmonic_sum_integral_upper hX hm.1\n    rw [abs_le]\n    constructor <;> linarith
+    exact harmonic_Ioc_sub_log_ratio_abs_le hX hm.1
   have hloggap :
       |Real.log ((m : ℝ) / X) - Real.log (1 + t)| ≤ 1 / (X : ℝ) := by
     have hXp : (0 : ℝ) < X := by exact_mod_cast hX
@@ -102,7 +102,7 @@ theorem abs_centeredGreenBaselinePrefixResidual_le
         0 ≤ (1 + t) - (m : ℝ) / X ∧
         (1 + t) - (m : ℝ) / X < 1 / X := by
       constructor <;> field_simp <;> nlinarith
-    have horder : Real.log ((m : ℝ) / X) ≤ Real.log (1 + t) := by\n      apply Real.log_le_iff (by positivity) (by linarith [ht0]) |>.2\n      exact (div_le_iff₀ hXp).2 (by nlinarith [hfloor_lo])\n    have hratioUpper : (1 + t) / ((m : ℝ) / X) ≤ 1 + 1 / (m : ℝ) := by\n      field_simp\n      nlinarith [hfloor_hi]\n    have hlogratio :\n        Real.log (1 + t) - Real.log ((m : ℝ) / X) ≤ 1 / (m : ℝ) := by\n      rw [← Real.log_div (by linarith [ht0]) (by positivity)]\n      calc\n        Real.log ((1 + t) / ((m : ℝ) / X)) ≤ Real.log (1 + 1 / (m : ℝ)) := by\n          exact Real.log_le_iff (by positivity) (by positivity) |>.2 hratioUpper\n        _ ≤ 1 / (m : ℝ) := Real.log_one_plus_le (by positivity)\n    rw [abs_of_nonneg (sub_nonneg.mpr horder)]\n    exact hlogratio.trans (one_div_le_one_div_of_le hXp (by exact_mod_cast hm.1))
+    exact abs_log_sub_log_le_of_close hXp hmpos hratio
   exact (abs_sub_le _ _ _).trans (by linarith)
 
 end GRWTSK.RiemannHypothesis
