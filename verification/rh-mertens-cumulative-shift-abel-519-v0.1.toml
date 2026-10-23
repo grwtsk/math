@@ -1,3 +1,6 @@
+# Historical original target Git blob: 8a5130f251a209daffeea123a575b7c3c70e3f1b.
+# Historical original parent: ef07323a8c7c5101ef851351424afd50e2a7027e; tree e346c0ad4ede6b2b22b7314f94f782e3942e5c82.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-mertens-cumulative-shift-abel-519-v0.1"
 owner_repository = "grwtsk/math"
@@ -9,12 +12,68 @@ status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
 root_module = "GRWTSK.NumberTheory.Moebius.MertensCumulativeShiftAbel"
 build_target = "GRWTSK.NumberTheory.Moebius.MertensCumulativeShiftAbel"
 
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_git_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_git_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+
 [source_binding]
-stacked_parent_revision = "ef07323a8c7c5101ef851351424afd50e2a7027e"
-candidate_branch = "research/rh-cumulative-shift-519-20261021"
-theorem_source_commit = "4aa9ec54c038c41973f638eb0080d639e6a2154c"
+stacked_parent_revision = "826204309e122cfdbf07e343e05222fa4655dde6"
+stacked_parent_tree = "e917e23b1c82adb4058f9d480ca665c305512898"
+historical_candidate_branch = "research/rh-cumulative-shift-519-20261021"
+historical_theorem_source_commit = "4aa9ec54c038c41973f638eb0080d639e6a2154c"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensCumulativeShiftAbel.lean"
-theorem_source_git_blob = "35cd90a03572e9a46004ad43977651f830fba9b4"
+historical_theorem_source_git_blob = "35cd90a03572e9a46004ad43977651f830fba9b4"
+theorem_source_git_blob = "fa5515812d4441eee7c8fbaa562a1b2026527227"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "9818a41a4fb069e5ff7662da451a8dfd6dafe7d5"
+historical_mathematical_note_commit = "671f114c6501c5d92d81a82c9fcdc5eed1eff67e"
+historical_mathematical_note_tree = "02ca0f474125685352976a8815cc4c9f432d6625"
+historical_mathematical_note_git_blob = "730c3a13ce83c32fd8f198effb9837a51ca4fce1"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mertens-cumulative-shift-abel.md"
+mathematical_note_git_blob = "d9d974d11e04753ab9bd312ca887dbb2927eb6aa"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensHarmonicWeightedChowlaPacket.lean"
+git_blob = "92b33c6f6b01948ce4807a2e722b3082b83fee28"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
+
+[declaration_inventory]
+names = [
+  "harmonicShiftLower",
+  "harmonicShiftUpper",
+  "harmonicShiftCount",
+  "harmonicShiftReciprocal",
+  "harmonicShiftCorrelation",
+  "cumulativeHarmonicShiftCorrelation",
+  "finite_second_abel",
+  "reciprocal_second_difference_nonneg",
+  "harmonicWeightedMertensTwoPointChowlaAverage_eq_activeRange",
+  "harmonicWeightedMertensTwoPointChowlaAverage_eq_cumulativeShift",
+  "harmonicShiftReciprocal_secondDifference_nonneg",
+  "harmonicShiftReciprocal_terminalDifference_nonneg",
+  "SubpolynomialDyadicCumulativeShiftMertensPacket",
+  "riemannHypothesis_of_subpolynomialDyadicCumulativeShiftMertensPacket"
+]
 
 [selected_increment]
 lower_shift = "harmonicShiftLower"
