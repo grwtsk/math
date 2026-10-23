@@ -94,4 +94,33 @@ theorem FreshCountedTrail.exists_complete_connected_extension
         exact ⟨R, hR, hTS.trans hSR⟩
 
 
+
+/-- A balanced, weakly edge-support-connected counted graph with
+at least one individual edge instance admits a complete closed
+fresh trail. This begins from the actual one-edge trail, then
+uses residual maximality and finite cycle splicing. -/
+theorem exists_complete_counted_closed_trail
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (hbalance : CountedDegreeBalanced m c)
+    (hconn : CountedEdgeSupportCutConnected m c)
+    (e : CountedBinaryEdge m c) :
+    ∃ v : Fin m → Bool,
+      ∃ R : FreshCountedTrail m c v v,
+        R.used = Finset.univ := by
+  let U : Finset (CountedBinaryEdge m c) := Finset.univ
+  have hU : ResidualDegreeBalanced m c U := by
+    intro v
+    simpa [U, countedOutDegree, countedInDegree,
+      countedUsedOutDegree, countedUsedInDegree] using hbalance v
+  obtain ⟨Q, _, hnonempty⟩ :=
+    ResidualFreshTrail.exists_nonempty_closed_of_edge
+      U hU e (Finset.mem_univ e)
+  have hQ : Q.trail.used.Nonempty :=
+    Finset.card_pos.mp hnonempty
+  obtain ⟨R, hcomplete, _⟩ :=
+    Q.trail.exists_complete_connected_extension
+      rfl hbalance hconn hQ
+  exact ⟨countedEdgeSource m c e, R, hcomplete⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
