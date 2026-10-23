@@ -17,6 +17,8 @@ namespace GRWTSK.Algebra.QuarticCubicDiscriminantReduction
 
 open Polynomial
 open GRWTSK.Algebra.QuarticCubicDiscriminant
+open GRWTSK.Algebra.PolygonalQuarticDescent
+open GRWTSK.Algebra.QuarticAdjacencyDiscriminant
 open GRWTSK.Algebra.QuarticCubicPolynomialComparison
 
 variable {R S : Type*} [CommRing R] [CommRing S]
