@@ -35,7 +35,9 @@ inherited_target = "verification/reflected-strip-budget-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "ea406ca21002b92bfb1c182af6c1e255200a2280".
 # Pre-quadrature-repair inherited_target_blob = "8d7c89162e675a1bbafe283be307308db0c0ae4d".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "01c3e20ef691eaf376f2e8a66036c4375f73ee22"
+# Pre-phase-2-repair inherited_target_blob = "01c3e20ef691eaf376f2e8a66036c4375f73ee22".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "12339440b7c062dc5a977b0af9e61a2e86972f69"
 receipt_policy = "Exact new commit/tree must be bound externally. This target is not an execution receipt."
 
 [trust]

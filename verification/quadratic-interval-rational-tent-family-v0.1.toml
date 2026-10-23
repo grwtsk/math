@@ -1,0 +1,243 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "quadratic-interval-rational-tent-family-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.QuadraticIntervalRationalTentFamilyCore"
+build_target = "GRWTSK.Interfaces.QuadraticIntervalRationalTentFamilyCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+# Authored parent revision/tree below are historical, before compatibility repairs.
+# Current module and inherited-target blobs bind maintained mathematical source.
+# The containing replayed commit/tree is bound externally under receipt_policy.
+# Actual repaired phase-1 parent provenance, without substituting for source blob pins.
+phase1_source_repair_revision = "a154e0de2ed60e0219673e11ac65832fbead6bf1"
+phase1_source_repair_tree = "34fac62626e6f3c9c03fe49363731b0bfe826027"
+parent_revision = "b2de5f032b919b92aa5123d77ec3372e2137c919"
+parent_tree = "1236624acb5f8fbd4564bc03823c861de2cea4ea"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/quadratic-interval-rational-tent-v0.1.toml"
+# Pre-phase-2-repair inherited_target_blob = "fc8d86833992924e1fc548be7c4caa53d551c368".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "394543284f59a9700e568973f6e64a822fcdada8"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind replayed commit, tree and target externally; this inventory is not acceptance."
+inventory_policy = "Every exact predecessor name, type and control remains required. Empty repeated arrays waive nothing. Reconcile all public types, reused Member identity, generated Evaluation/Trace/CoordinateData declarations and decision instances, plus the full transitive imports, axioms and native dependencies. The selected catalog is not a complete import closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.Checks.RationalTentQuadratureControls"
+path = "GRWTSK/Analysis/Complex/Checks/RationalTentQuadratureControls.lean"
+# Pre-phase-2-repair source_git_blob = "e429fde91cd5ca7ae12bf071d409fdae26f323ec".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "ba160505aa14e80160fd38bc733cdd8f396beedc"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalTentQuadrature"
+path = "GRWTSK/Analysis/Complex/RationalTentQuadrature.lean"
+source_git_blob = "fe8341691da60ed65a27321baf909664ecd26a0b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentMellinQuadrature"
+path = "GRWTSK/Analysis/Complex/TentMellinQuadrature.lean"
+# Pre-phase-2-repair source_git_blob = "b455a56720c361de42b5410705b2f4df7b81074e".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "e2bf555a1791fbdfa0b2d16a65a3cac52ce36570"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalTentCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalTentCore.lean"
+source_git_blob = "7c2147ae72877161ebde1a9cb7d0e87b3f7210c4"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalMellinQuadrature"
+path = "GRWTSK/Analysis/Complex/RationalMellinQuadrature.lean"
+# Pre-phase-2-repair source_git_blob = "cd0ff21766fa771e8a7a888e329cb791e89ab616".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "e5d9d2a73c8b9d6e71364af8e3dc33a6ec9620e9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalMellinNode"
+path = "GRWTSK/Analysis/Complex/RationalMellinNode.lean"
+# Pre-phase-2-repair source_git_blob = "daccd50530474146baa53bc3300bb00b21b6941e".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "f5d8f3523af5bef2eb3169228a0804c38de8d795"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalFiniteSum"
+path = "GRWTSK/Analysis/ErrorBounds/RationalFiniteSum.lean"
+# Pre-phase-2-repair source_git_blob = "cf1b4c6249177faf460030f68be51d7681589e8a".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "3150e400dd0db697df587fcf002ac60b70085bdf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Pre-phase-2-repair source_git_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinQuadrature"
+path = "GRWTSK/Analysis/Complex/IntervalMellinQuadrature.lean"
+# Pre-phase-2-repair source_git_blob = "8f8f92f5ee86260676582e22175e724f6d58f68f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "6b1b1b06b7c498ed15a660769626596bfaca774e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/ComplexTaylorEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "e63895b3bd3f16b421b8cb6dccd5059cd6333e12".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "20212303a646b65d9eda3eaa3b857e59a070244a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalFamilyCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalFamilyCore.lean"
+source_git_blob = "c8ac8a08fc73f5140cb6f15b013a4ece7636993b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.TentWeight"
+path = "GRWTSK/Analysis/Real/TentWeight.lean"
+# Pre-phase-2-repair source_git_blob = "5eed877e84d8efc1b8c87fc5a4cc1d2f095c36a2".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "b12835c66ab08b64918a9543cd201043c1a99895"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentMellinKernel"
+path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
+# Pre-phase-2-repair source_git_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalMellinFamily"
+path = "GRWTSK/Analysis/Complex/RationalMellinFamily.lean"
+source_git_blob = "49c1da2175805aa385fe4fae5ff64515b5511d67"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalLogEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "4205892af69b4b0fa5835b05d07920a1f959eacb".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "af7a10087249174747825c7e2a18888dc705c39d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls"
+path = "GRWTSK/Analysis/Complex/Checks/RationalTentFamilyControls.lean"
+# Pre-phase-2-repair source_git_blob = "3a2153b9de2cfede877ec76d2a2e0b2fbd366c6d".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "12c8dfdafb12899c3abcf1c62f78b4c4c72efe3c"
+required_declarations = ["GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.unitFamily", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.unitEvaluations", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.unitTrace", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.weighted_unit_control", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.weighted_unit_analytic", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.missing_extra_reordered_rejected", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.duplicate_key_rejected", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.multiplicity_and_geometry_rejected", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.intermediate_and_imaginary_rejected", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.roundedTrace", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.rounded_family_error", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.nonconstantFamily", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.nonconstantTrace", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.member_precision_not_family_precision", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.coordinateData", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.coordinate_charge_control", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.missing_negative_radii_rejected", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.invalid_endpoint_log_rejected", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.nonbijective_source_controls", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.empty_family_controls", "GRWTSK.Analysis.Complex.Checks.RationalTentFamilyControls.negative_tolerance_rejected"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalTentEnclosure"
+path = "GRWTSK/Analysis/Complex/RationalTentEnclosure.lean"
+source_git_blob = "6b38ccb0b9dbb153ad3f194faff3423f0881ab65"
+required_declarations = ["GRWTSK.Analysis.Complex.RationalTentEnclosure.CoordinateData", "GRWTSK.Analysis.Complex.RationalTentEnclosure.radiusAt", "GRWTSK.Analysis.Complex.RationalTentEnclosure.logUpper", "GRWTSK.Analysis.Complex.RationalTentEnclosure.coordinateBudget", "GRWTSK.Analysis.Complex.RationalTentEnclosure.totalError", "GRWTSK.Analysis.Complex.RationalTentEnclosure.checkWithin", "GRWTSK.Analysis.Complex.RationalTentEnclosure.checkWithin_iff", "GRWTSK.Analysis.Complex.RationalTentEnclosure.log_le_logUpper", "GRWTSK.Analysis.Complex.RationalTentEnclosure.coordinate_error", "GRWTSK.Analysis.Complex.RationalTentEnclosure.checkWithin_sound", "GRWTSK.Analysis.Complex.RationalTentEnclosure.reindexed_source_sound"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalTentFamily"
+path = "GRWTSK/Analysis/Complex/RationalTentFamily.lean"
+source_git_blob = "29f15ec82049bbe24d8c6648cdac3b85e8502c30"
+required_declarations = ["GRWTSK.Analysis.Complex.RationalTentFamily.Evaluation", "GRWTSK.Analysis.Complex.RationalTentFamily.Trace", "GRWTSK.Analysis.Complex.RationalTentFamily.defaultEvaluation", "GRWTSK.Analysis.Complex.RationalTentFamily.evaluationAt", "GRWTSK.Analysis.Complex.RationalTentFamily.terms", "GRWTSK.Analysis.Complex.RationalTentFamily.localBudget", "GRWTSK.Analysis.Complex.RationalTentFamily.error", "GRWTSK.Analysis.Complex.RationalTentFamily.output", "GRWTSK.Analysis.Complex.RationalTentFamily.Valid", "GRWTSK.Analysis.Complex.RationalTentFamily.instDecidableValid", "GRWTSK.Analysis.Complex.RationalTentFamily.check", "GRWTSK.Analysis.Complex.RationalTentFamily.checkWithin", "GRWTSK.Analysis.Complex.RationalTentFamily.centerSum", "GRWTSK.Analysis.Complex.RationalTentFamily.check_iff_valid", "GRWTSK.Analysis.Complex.RationalTentFamily.length_terms", "GRWTSK.Analysis.Complex.RationalTentFamily.termAt_terms", "GRWTSK.Analysis.Complex.RationalTentFamily.weighted_member_error", "GRWTSK.Analysis.Complex.RationalTentFamily.centerSum_error", "GRWTSK.Analysis.Complex.RationalTentFamily.check_sound", "GRWTSK.Analysis.Complex.RationalTentFamily.checkWithin_sound", "GRWTSK.Analysis.Complex.RationalTentFamily.checked_shape", "GRWTSK.Analysis.Complex.RationalTentFamily.checked_radius_nonneg", "GRWTSK.Analysis.Complex.RationalTentFamily.checked_local_charge_le", "GRWTSK.Analysis.Complex.RationalTentFamily.withExactAccumulation", "GRWTSK.Analysis.Complex.RationalTentFamily.withExactAccumulation_checked", "GRWTSK.Analysis.Complex.RationalTentFamily.referenceEvaluations", "GRWTSK.Analysis.Complex.RationalTentFamily.referenceTrace", "GRWTSK.Analysis.Complex.RationalTentFamily.referenceEvaluationAt", "GRWTSK.Analysis.Complex.RationalTentFamily.reference_checked", "GRWTSK.Analysis.Complex.RationalTentFamily.empty_centerSum"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentKernelSensitivity"
+path = "GRWTSK/Analysis/Complex/TentKernelSensitivity.lean"
+# Pre-phase-2-repair source_git_blob = "5676c65c21cf997ad6f6670e30e27c3cb1314826".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "ef8ecf40bf188f91ae7e97da6f0964982dadcec4"
+required_declarations = ["GRWTSK.Analysis.Complex.TentKernelSensitivity.density_parameter_error", "GRWTSK.Analysis.Complex.TentKernelSensitivity.affine_parameter_error", "GRWTSK.Analysis.Complex.TentKernelSensitivity.tentKernel_eq_affine", "GRWTSK.Analysis.Complex.TentKernelSensitivity.norm_tent_sub_le", "GRWTSK.Analysis.Complex.TentKernelSensitivity.finite_enclosure_error"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalTentFamilyCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalTentFamilyCore.lean"
+source_git_blob = "29a602a5685bcec54f932c12e72eec855737b67f"
+required_declarations = []
+
+[[controls]]
+id = "same_tent"
+description = "Every member must target the existing normalized tent, not the unweighted interval or a shifted-parameter call."
+
+[[controls]]
+id = "radius_mass"
+description = "Check the direct sensitivity coefficient h*log(x+h), the two affine masses h/2, and both Re<=1 premises."
+
+[[controls]]
+id = "complete_local_and_outer"
+description = "Require every local two-half trace, exact family lengths and keys, zero initialization, and all weighted outer updates."
+
+[[controls]]
+id = "multiplicity_twice"
+description = "Positive natural multiplicities weight outputs and full error allowances; zero-weight shortcuts are rejected."
+
+[[controls]]
+id = "keys_not_provenance"
+description = "Unique keys do not prove source-point identity; equal centers do not imply equal source points."
+
+[[controls]]
+id = "constructed_acceptance"
+description = "Replay reference_checked at its complete per-node guards; no assumed accepted-family premise or always-reject checker."
+
+[[controls]]
+id = "actual_source_equivalence"
+description = "Reindexed source conclusion requires a true finite-type equivalence and exact point/multiplicity equations; neither injectivity nor surjectivity alone suffices."
+
+[[controls]]
+id = "coordinate_truth_is_external"
+description = "Successful rational arithmetic does not prove that any actual zero belongs to a coordinate enclosure. Preserve independent coordinate and horizontal proofs."
+
+[[controls]]
+id = "computed_log_majorant"
+description = "Recompute the upper logarithm enclosure at exact x+h, retaining scale/resolution guards and complete shared error."
+
+[[controls]]
+id = "radii_shape_and_sign"
+description = "Require exactly one nonnegative coordinate radius per member; missing/default or negative entries cannot pass."
+
+[[controls]]
+id = "three_error_levels"
+description = "Member node/quadrature arithmetic, family accumulation and coordinate movement are distinct; charge once each and retain complex errors."
+
+[[controls]]
+id = "precision_not_error_lower_bound"
+description = "Rejected conservative tolerances are not proofs of actual inaccuracy, zeros or prime-free intervals."
+
+[[controls]]
+id = "empty_family"
+description = "Empty finite evaluation requires a zero accumulator and does not identify a canonical head as empty."
+
+[[controls]]
+id = "no_tail_or_global_source"
+description = "No finite arithmetic or reindexing theorem supplies a complete divisor tail, global source identity, universal prime margin, Legendre or RH."

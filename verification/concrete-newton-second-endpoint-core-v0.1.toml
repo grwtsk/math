@@ -35,7 +35,9 @@ inherited_target = "verification/integer-dyadic-trace-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "398fbb3fc2878008af5fb08b99e19d8a472bc7a4".
 # Pre-quadrature-repair inherited_target_blob = "93ba85699ae9d2e8a09ea0019d6dbc8c43229aff".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "2b22cbe16ffd6298f08778f321ba34d99ff71ecb"
+# Pre-phase-2-repair inherited_target_blob = "2b22cbe16ffd6298f08778f321ba34d99ff71ecb".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "79bc485e6c856e9cc2c8de97cd6f69db0ce9d3c8"
 receipt_policy = "Exact commit/tree and execution evidence are external. This static target grants no execution authority."
 
 [trust]

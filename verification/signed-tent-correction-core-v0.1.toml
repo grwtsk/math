@@ -32,7 +32,9 @@ inherited_target = "verification/counted-tent-tail-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "fd821fae51765c4051f0abd28e93df5853f448b1".
 # Pre-quadrature-repair inherited_target_blob = "6c4fa2e5d907b827cf4d5bac50441610a8c87c36".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "654335dec48fc17382fff10d13c13dfaf2064cc3"
+# Pre-phase-2-repair inherited_target_blob = "654335dec48fc17382fff10d13c13dfaf2064cc3".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "c3d5eefbd8cf0bd9df4db0f168d8294f748f3e1c"
 receipt_policy = "Bind the actual new commit, tree and this manifest externally. Parent source or receipts do not accept this target."
 inventory_policy = "Names and hashes are lexical source inventory; require all actual elaborated types and complete transitive import/trust coverage."
 mathematical_scope = "The specific rational correction integral, its sign, endpoint envelopes and geometric-prefix convergence; not the complete Riemann explicit formula."
@@ -69,8 +71,11 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.Analysis.Real.TentWeight"
 path = "GRWTSK/Analysis/Real/TentWeight.lean"
-source_blob = "5eed877e84d8efc1b8c87fc5a4cc1d2f095c36a2"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Pre-phase-2-repair source_blob = "5eed877e84d8efc1b8c87fc5a4cc1d2f095c36a2".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "b12835c66ab08b64918a9543cd201043c1a99895"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Chebyshev.CountedTentTail"

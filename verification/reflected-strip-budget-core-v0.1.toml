@@ -35,7 +35,9 @@ inherited_target = "verification/jensen-central-log-derivative-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "61522c664f4f5eb70d64b3c0b0e6500ff6efabea".
 # Pre-quadrature-repair inherited_target_blob = "63a2863dd24d74d753d7a5397cc2dcb003b8210e".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "25719fe325b76333d273b3600aa47f7976ac4fee"
+# Pre-phase-2-repair inherited_target_blob = "25719fe325b76333d273b3600aa47f7976ac4fee".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "d1a67f0a7fad9b04c37c1a3b56ce6e978929dea8"
 receipt_policy = "Exact new commit/tree must be bound externally. This static target represents no execution."
 
 [trust]
