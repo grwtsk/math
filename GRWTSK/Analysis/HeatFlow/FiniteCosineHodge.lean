@@ -845,6 +845,39 @@ theorem thetaScaledPolynomial_gaussian_bound
         Real.exp (-(Real.pi / 2 * q)) := by
           nlinarith [mul_le_mul_of_nonneg_left (cert.bound q hq) hcoef]
 
+
+/-- Exact elementary exponential majorant with an explicit, nonoptimal
+constant. This is an analytic candidate independent of any supplier field:
+for x≥0, x²+x ≤ 20 exp(x/2). -/
+theorem polynomial_exponential_envelope (x : ℝ) (hx : 0 ≤ x) :
+    (x ^ 2 + x) * Real.exp (-x) ≤
+      20 * Real.exp (-(x / 2)) := by
+  have he := add_one_le_exp (x / 4)
+  have hquarter : 0 ≤ x / 4 := by positivity
+  have hbasic : x / 4 ≤ Real.exp (x / 4) := by linarith
+  have hpos : 0 ≤ Real.exp (x / 4) := (Real.exp_pos _).le
+  have hsq : (x / 4) ^ 2 ≤ Real.exp (x / 4) ^ 2 := by
+    nlinarith [sq_nonneg (Real.exp (x / 4) - x / 4)]
+  have hlinear : x ≤ 4 * Real.exp (x / 4) := by linarith
+  have hexp : Real.exp (x / 4) ^ 2 = Real.exp (x / 2) := by
+    rw [← Real.exp_add]
+    ring
+  have hbound : x ^ 2 + x ≤ 20 * Real.exp (x / 2) := by
+    nlinarith [Real.add_one_le_exp (x / 4), Real.exp_pos (x / 4)]
+  have hfactor : 0 < Real.exp (-x) := Real.exp_pos _
+  have hmul := mul_le_mul_of_nonneg_right hbound hfactor.le
+  have hid : Real.exp (x / 2) * Real.exp (-x) =
+      Real.exp (-(x / 2)) := by
+    rw [← Real.exp_add]
+    congr 1
+    ring
+  calc
+    (x ^ 2 + x) * Real.exp (-x) ≤
+        20 * Real.exp (x / 2) * Real.exp (-x) := by
+          nlinarith
+    _ = 20 * Real.exp (-(x / 2)) := by rw [mul_assoc, hid]
+    _ ≤ 20 * Real.exp (-(x / 2)) := le_refl _
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
