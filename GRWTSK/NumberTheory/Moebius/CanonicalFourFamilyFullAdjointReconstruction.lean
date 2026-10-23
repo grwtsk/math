@@ -1,4 +1,4 @@
-/- Copyright (c) 2026 GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent.reconstruction.GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent.applyMatrix. Jacob Martone. MIT.
+/- Copyright (c) 2026 R.A. Jacob Martone. MIT.
 Formalization assistance: OpenAI. -/
 import GRWTSK.LinearAlgebra.Matrix.FiniteAdjointDescent
 import GRWTSK.NumberTheory.Moebius.CanonicalFourFamilyArithmeticRestrictions
