@@ -1,0 +1,94 @@
+# Passive source-bound verification request, not an executed replay receipt.
+schema = "rh-four-family-terminal-column-obstruction-v0.1"
+repository = "grwtsk/math"
+issue = 966
+target_branch = "main"
+source_authoring_main = "a3d750e93f40ea6eeb50eaa2613ff261fb57e8bc"
+source_authoring_main_tree = "91d1936acc00a1d391ad9f97714074d4b489a47e"
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyTerminalColumnObstruction.lean"
+source_blob = "45039e5cdc467f461f5702d7c735e15fc34cec07"
+direct_import = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyThinGreenMatrix.lean"
+direct_import_blob = "d351831b67611b3a341f8e4181b38382c769994e"
+note = "docs/mathematics/NumberTheory/Moebius/canonical-four-family-terminal-column-obstruction-966.md"
+note_blob = "fda1a3e62b15b9a568409148e348ffba30f572d4"
+main_parent_commit = "a3d750e93f40ea6eeb50eaa2613ff261fb57e8bc"
+current_main_inclusion = "NON_FORCE_HEAD_CHECKED_FAST_FORWARD_REQUEST"
+state = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[acceptance]
+require_exact_current_main_parent = true
+require_import_closure_at_immutable_revision = true
+require_pinned_lean_and_mathlib = true
+run_lean_build_warning_clean = true
+require_type_universe_alignment = true
+reject_sorry_admit_unsafe = true
+require_axiom_census = true
+require_fresh_kernel_check = true
+require_external_replay_receipt = true
+reject_ambient_to_restricted_coercivity = true
+reject_finite_to_RH_inference = true
+do_not_change_root_import = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.greenWindow_upperFactor_cofactor_eq_one"
+classification = "exact_window_divisor_order"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.greenWindow_upperFactor_log_eq_zero"
+classification = "exact_real_log_one"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchored_terminalCenter_factor_gt_scale"
+classification = "parity_center_support"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyGreenMatrixEntry_terminalCenter_zero"
+classification = "actual_zero_matrix_column"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalTerminalAnchor_shift_admissible"
+classification = "real_source_family_positive_shift"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyTerminalDelta_ne_zero"
+classification = "nontrivial_ambient_vector"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyTerminalDelta_matrixApply_zero"
+classification = "source_bound_matrix_kernel"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyWindowReadout_not_injective"
+classification = "finite_matrix_noninjectivity"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyTerminalDelta_sourceEnergy_pos"
+classification = "real_source_energy_strictly_positive"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyTerminalDelta_outputEnergy_zero"
+classification = "finite_target_energy_exact_zero"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_hasCanonicalFourFamilyAmbientLowerFrame"
+classification = "strictly_positive_ambient_lower_frame_no_go"
+
+[hostile_controls]
+cases = [
+  "X>=2 required for a=2X to have genuinely positive shift",
+  "target n is restricted to exact X<n<=2X half-open Green window",
+  "terminal factor a=2X is only seen at n=2X with cofactor b=1",
+  "odd anchor at c=X+1 lies outside source support",
+  "four family-center entries at c=X+1 vanish",
+  "terminal delta is an arbitrary ambient real vector, not an authentic arithmetic difference",
+  "ambient source squared energy is strictly positive, output squared energy zero",
+  "the restricted lower frame on genuine admissible differences remains undecided",
+  "the signed other-shift and zero-shift corrections are not dropped or bounded",
+  "duplicated thin/historical Fourier declarations are not repaired by this module",
+  "finite computations and source code are not kernel acceptance",
+  "no all-scale Fourier bound, Weil positivity, or RH theorem follows"
+]
+
+[finite_diagnostic]
+scale_start = 2
+scale_end = 256
+terminal_center_cofactor_one_occurrences = 255
+structural_mismatches = 0
+is_proof = false
