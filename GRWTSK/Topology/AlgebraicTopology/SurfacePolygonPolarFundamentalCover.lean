@@ -63,7 +63,7 @@ the real line itself is not asserted compact. -/
 theorem polarProductProjection_isQuotientMap :
     IsQuotientMap
       GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity.polarProductProjection := by
-  letI : T2Space (UnitAddCircle × unitInterval) := inferInstance
+  let : T2Space (UnitAddCircle × unitInterval) := inferInstance
   exact polarProductProjection_isQuotientMap_of_cover
     unitAddCircle_unitInterval_surjective
 
