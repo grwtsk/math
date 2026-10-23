@@ -34,7 +34,9 @@ inherited_target = "verification/signed-tent-correction-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "368d34a9232c0e2efc80401324b3be57376c720c".
 # Pre-quadrature-repair inherited_target_blob = "1b839119906ddb53ac546d1e2ab93566392cb8ad".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "4f39538bb81f3a369f7c20a3767db9518d74a8a9"
+# Pre-phase-2-repair inherited_target_blob = "4f39538bb81f3a369f7c20a3767db9518d74a8a9".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "dad7389fa880ffe0197d70d5f6d50bde93d0fc64"
 receipt_policy = "Bind the actual new commit, tree, manifest and all elaborated declarations externally. Source existence and parent acceptance are not an integration receipt."
 inventory_policy = "Names and blobs are static lexical inventory only. All selected/new declarations and the full inherited import and trust closure require reconciliation."
 

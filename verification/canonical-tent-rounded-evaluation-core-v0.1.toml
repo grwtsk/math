@@ -35,7 +35,9 @@ inherited_target = "verification/canonical-tent-scaled-evaluation-core-v0.1.toml
 # Original pre-repair inherited_target_blob = "a3ebd27107000bcf3d272a218dfe969b32fffbb4".
 # Pre-quadrature-repair inherited_target_blob = "6b341b16edb344008fd52f6e919123c6450dca5c".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "921c95ccf9e99ae63b4a87517dc24f5c08975ca3"
+# Pre-phase-2-repair inherited_target_blob = "921c95ccf9e99ae63b4a87517dc24f5c08975ca3".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "90985c7e12819298ae261f26efa46015598e250a"
 receipt_policy = "Bind exact new commit and tree externally. This static target represents no execution."
 
 [trust]
@@ -130,7 +132,9 @@ disposition = "INHERITED_NOT_ACCEPTED"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.TentMellinKernel"
 path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
-source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
 disposition = "INHERITED_NOT_ACCEPTED"
 
 [[modules]]

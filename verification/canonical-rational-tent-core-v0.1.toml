@@ -36,7 +36,9 @@ inherited_target = "verification/rational-power-evaluation-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "0eb7d05bc76d7948b476a975a742237cbcf24308".
 # Pre-quadrature-repair inherited_target_blob = "d9625821a766f7914f025e96771fb16030e9b58f".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "8ba37147cdac1bb9ea515e9fa1b2858d50b9e68e"
+# Pre-phase-2-repair inherited_target_blob = "8ba37147cdac1bb9ea515e9fa1b2858d50b9e68e".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "f0a1c7dd594661e5bb7a667e11a312890d0c797d"
 receipt_policy = "Bind exact new commit/tree externally; this static target represents no execution."
 
 [trust]

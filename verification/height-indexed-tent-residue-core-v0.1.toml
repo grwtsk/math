@@ -34,7 +34,9 @@ inherited_target = "verification/separated-tent-contour-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "d1a4817540fb240494b2ff0c043326794e0b1ec8".
 # Pre-quadrature-repair inherited_target_blob = "cc8486ed4b1c287465e44f2a8799731fdf20469a".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "61e436a5faecef08f6ef653202e9799321bfc5c6"
+# Pre-phase-2-repair inherited_target_blob = "61e436a5faecef08f6ef653202e9799321bfc5c6".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "12f189691b3c2c0fb6c2768b5199372ca6f81799"
 receipt_policy = "Bind exact new commit/tree externally. No ancestor receipt accepts this increment."
 inventory_policy = "Lexical names only; reconcile every exact elaborated type and transitive dependency."
 

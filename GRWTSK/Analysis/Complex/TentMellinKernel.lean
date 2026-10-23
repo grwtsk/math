@@ -66,12 +66,12 @@ theorem tentKernel_eq_split_integral (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
           (density (z + 1) t - ((x - h : ℝ) : ℂ) * density z t) := by
         apply intervalIntegral.integral_congr
         intro t ht
+        dsimp only
         have ht' : t ∈ Set.Icc (x - h) x := (uIcc_of_le hab) ▸ ht
         have ht0 : 0 < t := (lt_trans zero_lt_one ha).trans_le ht'.1
         rw [tent_on_left x h t hh ht'.1 ht'.2, density_add_one ht0]
         push_cast
         field_simp [ne_of_gt hh]
-        <;> ring
       _ = _ := by
         rw [intervalIntegral.integral_const_mul,
           intervalIntegral.integral_sub (density_intervalIntegrable ha hab (z + 1))
@@ -87,12 +87,12 @@ theorem tentKernel_eq_split_integral (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
           (((x + h : ℝ) : ℂ) * density z t - density (z + 1) t) := by
         apply intervalIntegral.integral_congr
         intro t ht
+        dsimp only
         have ht' : t ∈ Set.Icc x (x + h) := (uIcc_of_le hbc) ▸ ht
         have ht0 : 0 < t := (lt_trans zero_lt_one hx).trans_le ht'.1
         rw [tent_on_right x h t hh ht'.1 ht'.2, density_add_one ht0]
         push_cast
         field_simp [ne_of_gt hh]
-        <;> ring
       _ = _ := by
         rw [intervalIntegral.integral_const_mul,
           intervalIntegral.integral_sub
@@ -122,7 +122,7 @@ theorem tentKernel_eq_quotient (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h)
   simp only [logPower_add_one hapos, logPower_add_one hxpos, logPower_add_one hbpos,
     Complex.ofReal_sub, Complex.ofReal_add]
   field_simp [hz, hz1, hh0]
-  <;> ring
+  ring
 
 /-- No critical-line assumption: every endpoint retains beta+1 growth. -/
 theorem norm_tent_numerator_le (x h β : ℝ) (hh : 0 < h) (ha : 1 < x - h)
@@ -143,8 +143,8 @@ theorem norm_tent_numerator_le (x h β : ℝ) (hh : 0 < h) (ha : 1 < x - h)
   have htri := (norm_add_le
     (logPower (x + h) (z + 1) - 2 * logPower x (z + 1))
     (logPower (x - h) (z + 1))).trans
-      (add_le_add_right (norm_sub_le
-        (logPower (x + h) (z + 1)) (2 * logPower x (z + 1))) _)
+      (add_le_add (norm_sub_le
+        (logPower (x + h) (z + 1)) (2 * logPower x (z + 1))) (le_refl _))
   rw [norm_mul] at htri
   norm_num only [Complex.norm_ofNat] at htri
   linarith
@@ -197,7 +197,7 @@ theorem tentKernel_one (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
   rw [hpow (x + h) (by linarith), hpow x (by linarith), hpow (x - h) (by linarith)]
   push_cast
   field_simp [ne_of_gt hh]
-  <;> ring
+  ring
 
 /-- Finite multiplicity-weighted tails inherit inverse-square height decay.
 The finite family is not a complete zero divisor; completeness and an infinite

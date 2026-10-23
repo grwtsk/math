@@ -45,7 +45,9 @@ reject_unreported_native_dependencies = true
 [[modules]]
 name = "GRWTSK.Analysis.Real.TentWeight"
 path = "GRWTSK/Analysis/Real/TentWeight.lean"
-source_blob = "5eed877e84d8efc1b8c87fc5a4cc1d2f095c36a2"
+# Pre-phase-2-repair source_blob = "5eed877e84d8efc1b8c87fc5a4cc1d2f095c36a2".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "b12835c66ab08b64918a9543cd201043c1a99895"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]
@@ -57,7 +59,9 @@ disposition = "NEW_SOURCE_DRAFT"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.TentMellinKernel"
 path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
-source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
 disposition = "NEW_SOURCE_DRAFT"
 
 [[modules]]

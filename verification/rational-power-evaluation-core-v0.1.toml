@@ -35,7 +35,9 @@ inherited_target = "verification/canonical-tent-rounded-evaluation-core-v0.1.tom
 # Original pre-repair inherited_target_blob = "3f1dd90fed02be0d21de4bc914ea879855ed28b1".
 # Pre-quadrature-repair inherited_target_blob = "cfa1e9f48423f796d40b474bc15fe53fdde3f994".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "bb78995a595e4a421051e90000e5d5795e43f4c5"
+# Pre-phase-2-repair inherited_target_blob = "bb78995a595e4a421051e90000e5d5795e43f4c5".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "8df540c1a00042a0a2e1e612149b82a76658ccab"
 receipt_policy = "Bind exact new commit/tree externally. No execution is represented by this static target."
 
 [trust]

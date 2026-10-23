@@ -21,7 +21,7 @@ Source draft for #261/#189; NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.Analysis.Real.TentWeight
 
 /-- A normalized nonnegative tent, with zero values at both endpoints. -/
-def tent (x h t : ℝ) : ℝ := max 0 (1 - |t - x| / h)
+noncomputable def tent (x h t : ℝ) : ℝ := max 0 (1 - |t - x| / h)
 
 theorem tent_nonneg (x h t : ℝ) : 0 ≤ tent x h t := le_max_left _ _
 
@@ -49,7 +49,7 @@ theorem tent_on_left (x h t : ℝ) (hh : 0 < h)
   have hv : 0 ≤ (t - (x - h)) / h := div_nonneg (by linarith) hh.le
   have he : 1 - (-(t - x)) / h = (t - (x - h)) / h := by
     field_simp [ne_of_gt hh]
-    <;> ring
+    ring
   rw [tent, abs_of_nonpos (by linarith), he, max_eq_right hv]
 
 theorem tent_on_right (x h t : ℝ) (hh : 0 < h)
@@ -58,7 +58,7 @@ theorem tent_on_right (x h t : ℝ) (hh : 0 < h)
   have hv : 0 ≤ (x + h - t) / h := div_nonneg (by linarith) hh.le
   have he : 1 - (t - x) / h = (x + h - t) / h := by
     field_simp [ne_of_gt hh]
-    <;> ring
+    ring
   rw [tent, abs_of_nonneg (by linarith), he, max_eq_right hv]
 
 /-- Second differencing a linear hinge gives the unnormalized tent h*tent.
@@ -76,13 +76,13 @@ theorem hinge_second_difference (x h t : ℝ) (hh : 0 < h) :
     rw [max_eq_left (by linarith), max_eq_left (by linarith),
       max_eq_right (by linarith)]
     field_simp [ne_of_gt hh]
-    <;> ring
+    ring
   by_cases hright : t ≤ x + h
   · rw [tent_on_right x h t hh (by linarith) hright]
     rw [max_eq_left (by linarith), max_eq_right (by linarith),
       max_eq_right (by linarith)]
     field_simp [ne_of_gt hh]
-    <;> ring
+    ring
   · rw [tent_eq_zero_of_outside x h t hh (by intro ht; linarith [ht.2])]
     rw [max_eq_right (by linarith), max_eq_right (by linarith),
       max_eq_right (by linarith)]
@@ -97,6 +97,6 @@ theorem affine_second_difference (x h c d : ℝ) :
 theorem quadratic_main_second_difference (x h : ℝ) (hh : 0 < h) :
     ((x + h) ^ 2 / 2 - 2 * (x ^ 2 / 2) + (x - h) ^ 2 / 2) / h = h := by
   field_simp [ne_of_gt hh]
-  <;> ring
+  ring
 
 end GRWTSK.Analysis.Real.TentWeight

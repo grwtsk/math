@@ -33,7 +33,9 @@ inherited_target = "verification/concrete-newton-fourth-block-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "e48fdbed72f72e5810207b673e99c53766a279cf".
 # Pre-quadrature-repair inherited_target_blob = "643fe6103381e976bb7dbccbfd092d5756d0beab".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "f12a7edc1389a1396d6e3ee46823baf305734642"
+# Pre-phase-2-repair inherited_target_blob = "f12a7edc1389a1396d6e3ee46823baf305734642".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "a4de05be87d0434316b228dbf85d8597e600ea1b"
 receipt_policy = "No execution authority; evidence and applicable authorization remain external."
 
 [trust]

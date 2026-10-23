@@ -34,7 +34,9 @@ inherited_target = "verification/tent-finite-residue-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "2bfbf31564325da434c7084ae17f0c910d445048".
 # Pre-quadrature-repair inherited_target_blob = "7e38c000250d9145b54e3f7bb4b71234b30363e5".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "8a4ac10449c567065539b83ec4edc2cbcbb91f45"
+# Pre-phase-2-repair inherited_target_blob = "8a4ac10449c567065539b83ec4edc2cbcbb91f45".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "57d0bb6e12d4b22f74e8bdf189766d7c2349b46c"
 receipt_policy = "Bind the exact new commit/tree externally. No ancestor receipt accepts this increment."
 inventory_policy = "Lexical names only. Reconcile exact elaborated types and all transitive imports, including tactic imports."
 
