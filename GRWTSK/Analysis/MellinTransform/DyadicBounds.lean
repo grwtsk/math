@@ -21,7 +21,7 @@ open Filter
 namespace GRWTSK.Analysis.MellinTransform.DyadicBounds
 
 /-- The half-plane margin exceeds half the energy loss. -/
-theorem half_plane_margin {σ η : ℝ} (hσ : 1/2<σ)
+theorem half_plane_margin {σ η : ℝ} (_hσ : 1/2<σ)
     (hη : η<2*(σ-1/2)) : σ-1/2-η/2>0 := by linarith
 
 theorem choose_energy_loss {σ : ℝ} (hσ : 1/2<σ) :
@@ -35,11 +35,14 @@ theorem summable_exponential_tail (C a : ℝ) (ha : 0<a) :
     rw [abs_of_pos (Real.exp_pos _), ← Real.exp_zero]
     exact Real.exp_lt_exp.mpr (by linarith)
   have h := (summable_geometric_of_abs_lt_one hr).mul_left C
-  convert h using 1
-  funext n
-  rw [← Real.exp_nat_mul]
-  congr 1
-  ring
+  have he : (fun n : ℕ => C * Real.exp (-a * (n : ℝ))) =
+      (fun n : ℕ => C * Real.exp (-a) ^ n) := by
+    funext n
+    rw [← Real.exp_nat_mul]
+    congr 1
+    ring
+  rw [he]
+  exact h
 
 /-- A finite initial prefix is harmless; the inequality is uniform on the tail. -/
 theorem summable_norm_of_eventual_geometric_bound
@@ -47,8 +50,8 @@ theorem summable_norm_of_eventual_geometric_bound
     (hbound : ∀ n≥n₀, ‖B n‖≤C*Real.exp (-a*(n:ℝ))) :
     Summable (fun n ↦ ‖B n‖) := by
   apply (summable_nat_add_iff n₀).1
-  apply Summable.of_nonneg_of_le (fun n ↦ norm_nonneg _)
-    (g := fun n ↦ C*Real.exp (-a*(n:ℝ)))
+  apply Summable.of_nonneg_of_le (f := fun n : ℕ ↦ C*Real.exp (-a*(n:ℝ)))
+    (fun n ↦ norm_nonneg _)
   · intro n
     calc
       ‖B (n+n₀)‖ ≤ C*Real.exp (-a*((n+n₀:ℕ):ℝ)) := hbound _ (by omega)
