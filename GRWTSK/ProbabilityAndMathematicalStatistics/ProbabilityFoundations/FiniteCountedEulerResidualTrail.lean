@@ -184,4 +184,96 @@ theorem ResidualFreshTrail.unused_out_card_zero_of_maximal
   rfl
 
 
+
+/-- Residual degree balance is a statement about the exact finite
+edge-instance set U; it need not coincide with the entire graph. -/
+def ResidualDegreeBalanced
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (U : Finset (CountedBinaryEdge m c)) : Prop :=
+  ∀ v : Fin m → Bool,
+    countedUsedOutDegree m c U v = countedUsedInDegree m c U v
+
+/-- The residual outgoing degree partitions into edges used by R
+and those still unused inside U. -/
+theorem ResidualFreshTrail.out_degree_partition
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b)
+    (v : Fin m → Bool) :
+    countedUsedOutDegree m c U v =
+      countedUsedOutDegree m c R.trail.used v +
+        countedUsedOutDegree m c (U \ R.trail.used) v := by
+  classical
+  unfold countedUsedOutDegree
+  have hdisj :
+      Disjoint (R.trail.used.filter
+        (fun e => countedEdgeSource m c e = v))
+        ((U \ R.trail.used).filter
+          (fun e => countedEdgeSource m c e = v)) := by
+    apply Finset.disjoint_left.mpr
+    intro e he1 he2
+    have h1 := (Finset.mem_filter.mp he1).1
+    have h2 := (Finset.mem_filter.mp he2).1
+    exact (Finset.mem_sdiff.mp h2).2 h1
+  have hunion :
+      U.filter (fun e => countedEdgeSource m c e = v) =
+        (R.trail.used.filter
+          (fun e => countedEdgeSource m c e = v)) ∪
+        ((U \ R.trail.used).filter
+          (fun e => countedEdgeSource m c e = v)) := by
+    ext e
+    simp only [Finset.mem_filter, Finset.mem_union, Finset.mem_sdiff]
+    constructor
+    · intro ⟨heU, hv⟩
+      by_cases hu : e ∈ R.trail.used
+      · exact Or.inl ⟨hu, hv⟩
+      · exact Or.inr ⟨⟨heU, hu⟩, hv⟩
+    · intro h
+      rcases h with ⟨hu, hv⟩ | ⟨⟨heU, _⟩, hv⟩
+      · exact ⟨R.supported hu, hv⟩
+      · exact ⟨heU, hv⟩
+  rw [hunion, Finset.card_union_of_disjoint hdisj]
+
+/-- The matching residual incoming-degree partition. -/
+theorem ResidualFreshTrail.in_degree_partition
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b)
+    (v : Fin m → Bool) :
+    countedUsedInDegree m c U v =
+      countedUsedInDegree m c R.trail.used v +
+        countedUsedInDegree m c (U \ R.trail.used) v := by
+  classical
+  unfold countedUsedInDegree
+  have hdisj :
+      Disjoint (R.trail.used.filter
+        (fun e => countedEdgeTarget m c e = v))
+        ((U \ R.trail.used).filter
+          (fun e => countedEdgeTarget m c e = v)) := by
+    apply Finset.disjoint_left.mpr
+    intro e he1 he2
+    exact (Finset.mem_sdiff.mp (Finset.mem_filter.mp he2).1).2
+      (Finset.mem_filter.mp he1).1
+  have hunion :
+      U.filter (fun e => countedEdgeTarget m c e = v) =
+        (R.trail.used.filter
+          (fun e => countedEdgeTarget m c e = v)) ∪
+        ((U \ R.trail.used).filter
+          (fun e => countedEdgeTarget m c e = v)) := by
+    ext e
+    simp only [Finset.mem_filter, Finset.mem_union, Finset.mem_sdiff]
+    constructor
+    · intro ⟨heU, hv⟩
+      by_cases hu : e ∈ R.trail.used
+      · exact Or.inl ⟨hu, hv⟩
+      · exact Or.inr ⟨⟨heU, hu⟩, hv⟩
+    · intro h
+      rcases h with ⟨hu, hv⟩ | ⟨⟨heU, _⟩, hv⟩
+      · exact ⟨R.supported hu, hv⟩
+      · exact ⟨heU, hv⟩
+  rw [hunion, Finset.card_union_of_disjoint hdisj]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
