@@ -15,13 +15,24 @@ fi
 command -v lake >/dev/null
 command -v lean >/dev/null
 git merge-base --is-ancestor "$EXPECTED_PARENT" HEAD || { echo 'Pinned parent is not an ancestor' >&2; exit 1; }
+# Reject changes to the mathematical parent modules, even when ancestry holds.
+for upstream in \
+  GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCircleEquivalence.lean \
+  GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCircleAddress.lean \
+  GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterAttachment.lean; do
+  if ! git diff --quiet "$EXPECTED_PARENT" HEAD -- "$upstream" ||
+     ! git diff --quiet HEAD -- "$upstream"; then
+    echo "Pinned upstream source changed: $upstream" >&2
+    exit 1
+  fi
+done
 printf 'HEAD: '; git rev-parse HEAD
 printf 'Working tree status:\n'; git status --short
 printf 'Kernel blob: %s\n' "$actual_blob"
 # Build the module first: a plain lean invocation does not produce the .olean
 # required by the subsequent independent import-and-axioms inspection.
 lake build GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
-lake env lean --trust=0 "$TARGET"
+lake env lean --trust=0 --wfail "$TARGET"
 # Independently request kernel elaboration of the imported declarations
 # and inspect their transitive axioms. Keep this temporary file outside GRWTSK.
 tmp=$(mktemp --suffix=.lean)
@@ -40,7 +51,7 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
 #print axioms source_angle_ne_iff_not_connected
 #print axioms perimeter_angle_eq_iff
 LEAN
-lake env lean --trust=0 "$tmp"
+lake env lean --trust=0 --wfail "$tmp"
 # This script performs a trust=0 elaboration request and prints axioms, but
 # does not replace independent import/unsafe review or hostile seam fixtures.
 # Do not claim acceptance without an authorized immutable #100 receipt.
