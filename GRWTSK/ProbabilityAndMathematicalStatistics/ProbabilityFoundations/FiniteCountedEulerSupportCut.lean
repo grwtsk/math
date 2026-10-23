@@ -41,7 +41,7 @@ theorem no_crossing_of_used_internal_unused_disjoint
     (S : Finset (Fin m → Bool))
     (hused : ∀ e ∈ used,
       countedEdgeSource m c e ∈ S ∧ countedEdgeTarget m c e ∈ S)
-    (hunused : ∀ e ∈ (Finset.univ \\ used :
+    (hunused : ∀ e ∈ (Finset.univ \ used :
         Finset (CountedBinaryEdge m c)), ¬ CountedEdgeMeets m c S e) :
     ∀ e : CountedBinaryEdge m c, ¬ CountedEdgeCrosses m c S e := by
   classical
@@ -51,7 +51,7 @@ theorem no_crossing_of_used_internal_unused_disjoint
     rcases hc with ⟨_, hnot⟩ | ⟨hnot, _⟩
     · exact hnot ht
     · exact hnot hs
-  · have hu : e ∈ (Finset.univ \\ used :
+  · have hu : e ∈ (Finset.univ \ used :
         Finset (CountedBinaryEdge m c)) :=
       Finset.mem_sdiff.mpr ⟨Finset.mem_univ _, he⟩
     have havoid := hunused e hu
@@ -84,7 +84,7 @@ theorem unused_edge_meets_of_support_cut_connected
     (hinside : ∃ e : CountedBinaryEdge m c, CountedEdgeMeets m c S e)
     (houtside : ∃ e : CountedBinaryEdge m c,
       countedEdgeSource m c e ∉ S ∨ countedEdgeTarget m c e ∉ S) :
-    ∃ e ∈ (Finset.univ \\ used :
+    ∃ e ∈ (Finset.univ \ used :
         Finset (CountedBinaryEdge m c)), CountedEdgeMeets m c S e := by
   classical
   obtain ⟨e, hc⟩ := hconn S hinside houtside
