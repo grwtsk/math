@@ -57,13 +57,13 @@ theorem quadraticSignal_neg (v : Vec3) :
 /-- Literal endpoint coordinates of the SAME source Farey LR matrix modulo 3. -/
 theorem modThreeReturn_mulVec_zero (v : Vec3) :
     (modThreeReturn.mulVec v) 0 = v 0 + v 1 := by
-  simp [modThreeReturn, leftShear, rightShear,
-    Matrix.mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two] <;> ring
+  simp +decide [modThreeReturn, leftShear, rightShear,
+    Matrix.mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two]
 
 theorem modThreeReturn_mulVec_one (v : Vec3) :
     (modThreeReturn.mulVec v) 1 = v 0 + 2 * v 1 := by
-  simp [modThreeReturn, leftShear, rightShear,
-    Matrix.mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two] <;> ring
+  simp +decide [modThreeReturn, leftShear, rightShear,
+    Matrix.mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two]
 
 /-- Global quadratic Koopman eigenrelation, proved using characteristic 3,
 not extrapolated from the four sampled orbit states. -/
@@ -77,7 +77,9 @@ theorem quadraticSignal_return (v : Vec3) :
     (v 0 + v 1) * ((v 0 + v 1) + (v 0 + 2 * v 1)) =
         -(v 0 * (v 0 + v 1)) +
           (3 : ZMod 3) * (v 0 + v 1) ^ 2 := by ring
-    _ = -(v 0 * (v 0 + v 1)) := by norm_num
+    _ = -(v 0 * (v 0 + v 1)) := by
+      rw [show (3 : ZMod 3) = 0 by decide]
+      ring
 
 /-- Complex lift of the signed three-element residual signal.
 It is NOT a ring homomorphism from characteristic three to zero. -/
@@ -86,7 +88,19 @@ def ternaryComplexSign (a : ZMod 3) : ℂ :=
 
 theorem ternaryComplexSign_neg (a : ZMod 3) :
     ternaryComplexSign (-a) = -ternaryComplexSign a := by
-  fin_cases a <;> norm_num [ternaryComplexSign]
+  have h0 : ternaryComplexSign (0 : ZMod 3) = 0 := by
+    rw [ternaryComplexSign, if_pos rfl]
+  have h1 : ternaryComplexSign (1 : ZMod 3) = 1 := by
+    rw [ternaryComplexSign, if_neg (by decide), if_pos rfl]
+  have h2 : ternaryComplexSign (2 : ZMod 3) = -1 := by
+    rw [ternaryComplexSign, if_neg (by decide), if_neg (by decide)]
+  fin_cases a
+  · change ternaryComplexSign (-(0 : ZMod 3)) = -ternaryComplexSign 0
+    rw [neg_zero, h0, neg_zero]
+  · change ternaryComplexSign (-(1 : ZMod 3)) = -ternaryComplexSign 1
+    rw [show -(1 : ZMod 3) = 2 by decide, h2, h1]
+  · change ternaryComplexSign (-(2 : ZMod 3)) = -ternaryComplexSign 2
+    rw [show -(2 : ZMod 3) = 1 by decide, h1, h2, neg_neg]
 
 /-- The actual global complex readout, including the zero vector. -/
 def projectiveQuadraticReadout (v : Vec3) : ℂ :=
@@ -120,6 +134,7 @@ theorem projectiveQuadraticReadout_on_orbit (j : Fin 4) :
   fin_cases j <;>
     norm_num [projectiveQuadraticReadout, ternaryComplexSign,
       quadraticSignal, residueOrbit, orbitPhase, pow_two, Complex.I_mul_I]
+  all_goals simp +decide
 
 /-- Every antipodal sign orbit, including the zero vector, forms a
 single equivalence class. This is a concrete Setoid, not an implicit
@@ -162,8 +177,8 @@ theorem modThreeReturn_mulVec_neg (v : Vec3) :
     modThreeReturn.mulVec (-v) = -(modThreeReturn.mulVec v) := by
   funext i
   fin_cases i <;>
-    simp [modThreeReturn, leftShear, rightShear,
-      Matrix.mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two] <;> ring
+    simp +decide [modThreeReturn, leftShear, rightShear,
+      Matrix.mulVec, dotProduct, Matrix.mul_apply, Fin.sum_univ_two]
 
 /-- Genuine induced return on the sign quotient, rather than a
 permutation assumed to exist on quotient labels. -/
