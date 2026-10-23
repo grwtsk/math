@@ -1,0 +1,90 @@
+# Immutable source and trust-check request. NOT a successful replay receipt.
+schema = "rh-anchored-authentic-centered-defect-v0.1"
+repository = "grwtsk/math"
+issue = 942
+base_branch = "main"
+base_commit = "2382e05d0ec48bc45ec64e538f4b792e277f0d76"
+base_tree = "04890262523f398117d5c77ebc5392c694b1a1f0"
+head_branch = "research/rh-anchored-authentic-center-defect-942-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
+source_blob = "84fed8973f7c1a1b358711d159713054805a33c2"
+note = "docs/mathematics/NumberTheory/Moebius/anchored-authentic-centered-defect-942.md"
+note_blob = "a0677e2cbc143f3636ef405c4174e256365c1bae"
+import_anchored_source = "GRWTSK/NumberTheory/Moebius/AnchoredPairPositiveShiftBoundary.lean"
+import_anchored_blob = "d4b7ff5d6b64e9bbdeea3931b4f43f6d6e6477cd"
+import_authentic_source = "GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredWindingZeroModeVariance.lean"
+import_authentic_blob = "b28f69f29ca8fd90978709e89e6642a5b52db962"
+import_support_source = "GRWTSK/NumberTheory/Moebius/RegularOrbitZeroWindingCenteredCorrelation.lean"
+import_support_blob = "70facd58b855c1a0aad2eb4c0ba1f7210f7d1ed5"
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[checks]
+require_exact_source_hashes = true
+require_pinned_lean_mathlib = true
+require_transitive_import_closure = true
+require_exact_theorem_types = true
+require_no_sorry_admit_unsafe = true
+require_axiom_census = true
+require_clean_build = true
+require_kernel_acceptance = true
+require_independent_replay = true
+preserve_main_root_unchanged = true
+preserve_no_RH_theorem_claim = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchored_shift_mem_authentic_centered_iff"
+classification = "actual_source_support_transport"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.authentic_integer_center_amplitude_eq_centered_sum"
+classification = "existing_source_amplitude_comparison"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.authentic_center_amplitude_eq_anchor_add_other_shift"
+classification = "exact_signed_center_sum_and_defect"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchored_center_coordinates_injective"
+classification = "index_and_multiplicity_faithfulness"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchored_green_factor_mem_authentic_iff"
+classification = "Green_window_divisor_support"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredPositiveDivisor_eq_authentic_matched_add_omitted"
+classification = "finite_multiplicative_factor_versus_additive_center"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.vonMangoldt_eq_authentic_matched_add_all_defects"
+classification = "full_signed_arithmetic_coefficient_reconstruction"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.centeredGreenPrimeCoordinate_eq_authentic_corrected"
+classification = "weighted_prime_Green_exact"
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.thinGreenArithmeticFourierCoordinate_eq_authentic_corrected"
+classification = "historical_Fourier_exact"
+
+[hostile_controls]
+cases = [
+  "a>0, a<=b necessary to infer authentic shifted-endpoint membership",
+  "positive h does not imply h in user-selected H",
+  "center amplitude is a signed SUM; do not identify it with one pair",
+  "a=b=9 H={2,4}: anchor mu(9)=0, other-shift defect mu(3)mu(7)=1",
+  "every original antidiagonal factor classified exactly once as matched or omitted",
+  "boundary a=1,2 remains explicit and n=3 produces log 3>0",
+  "all real signs, parity, center and shift labels preserved",
+  "no source H-even/H-odd doubling or unstated canonical partition",
+  "no replacing signed defect by absolute bound or omitting mixed interactions",
+  "no positivity of Weil form, no global frame constant, no RH theorem"
+]
+
+[finite_diagnostics]
+center_membership_and_amplitude_cases = 12480
+prime_log_coefficient_cases = 12480
+failures_observed = 0
+is_proof = false
