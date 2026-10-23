@@ -123,7 +123,8 @@ theorem inner_posterior_lt_radius :
       (RationalNewtonWitness.residualBudget innerData : ℝ) -
       (RationalNewtonWitness.defectBudget ConcreteNewtonPacket.chart innerData : ℝ) *
         (innerRadius : ℝ) := by
-    exact_mod_cast inner_self_map_slack
+    have hs := (Rat.cast_lt (K := ℝ)).2 inner_self_map_slack
+    simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_ofNat, Rat.cast_sub, Rat.cast_mul] using hs
   apply (div_lt_iff₀ (by linarith : (0 : ℝ) <
     1 - (RationalNewtonWitness.defectBudget ConcreteNewtonPacket.chart innerData : ℝ))).mpr
   nlinarith
