@@ -54,8 +54,8 @@ premise. This classifies it as a contradiction certificate, not a source
 construction target. -/
 theorem no_offLineDyadicQuarticScaleDataAtZero
     (z : ZeroPoint) (ha : zeroDefect z.1 ≠ 0) :
-    ¬ OffLineDyadicQuarticScaleDataAtZero z ha := by
-  intro data
+    ¬ Nonempty (OffLineDyadicQuarticScaleDataAtZero z ha) := by
+  rintro ⟨data⟩
   have hline := data.forces_critical_line
   apply ha
   unfold zeroDefect
@@ -116,6 +116,8 @@ theorem quarticFactor_mul_lowerWeight_le
   have ha2 : 0 ≤ (zeroDefect z.1) ^ 2 := sq_nonneg _
   have ha4 : 0 ≤ (zeroDefect z.1) ^ 4 := by positivity
   have ht2 : 0 ≤ z.1.im ^ 2 := sq_nonneg _
+  have h1 := mul_le_mul_of_nonneg_left hA ha4
+  have h2 := mul_le_mul_of_nonneg_left hT (mul_nonneg (mul_nonneg (by norm_num : (0 : ℝ) ≤ 3) ha2) ht2)
   nlinarith
 
 /-- The cumulative occupied volume dominates the divergent lower packing mass. -/

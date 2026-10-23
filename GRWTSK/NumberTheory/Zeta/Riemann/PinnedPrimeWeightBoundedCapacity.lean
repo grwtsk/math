@@ -34,6 +34,8 @@ AMPLITUDE_NECESSITY_DEFINED /
 COEFFICIENT_SOURCE_LAW_OPEN / NO_RH_CLAIM.
 -/
 
+open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+
 namespace GRWTSK.RiemannHypothesis
 
 /-- Largest normalized response available under the absolute coefficient
@@ -88,7 +90,7 @@ theorem pinnedPrimeWeightResponseMagnitude_le_boundedCapacity
   have hnum :
       |c * (pinnedPrimeWeightedAmplitude X)^2| ≤
         C * (pinnedPrimeWeightedAmplitude X)^2 := by
-    rw [abs_mul, abs_of_nonneg (sq_nonneg _)]
+    rw [abs_mul, abs_of_nonneg (sq_nonneg (pinnedPrimeWeightedAmplitude X))]
     exact mul_le_mul_of_nonneg_right hc (sq_nonneg _)
   exact div_le_div_of_nonneg_right hnum (Nat.cast_nonneg _)
 

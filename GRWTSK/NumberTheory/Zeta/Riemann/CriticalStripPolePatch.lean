@@ -2,6 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch
+import Mathlib.Analysis.Complex.RemovableSingularity
 
 set_option autoImplicit false
 
@@ -48,7 +49,7 @@ actual product, using equality on a neighborhood rather than at one sample. -/
 theorem differentiableAt_poleNormalizedZeta_of_ne {z : ℂ} (hz : z ≠ 1) :
     DifferentiableAt ℂ poleNormalizedZeta z := by
   have hprod : DifferentiableAt ℂ (fun w : ℂ => (w - 1) * riemannZeta w) z :=
-    (differentiableAt_id.sub differentiableAt_const).mul (differentiableAt_riemannZeta hz)
+    (differentiableAt_id.sub (differentiableAt_const 1)).mul (differentiableAt_riemannZeta hz)
   apply hprod.congr_of_eventuallyEq
   filter_upwards [eventually_ne_nhds hz] with w hw using poleNormalizedZeta_of_ne hw
 
@@ -58,7 +59,7 @@ theorem differentiable_poleNormalizedZeta : Differentiable ℂ poleNormalizedZet
   intro z
   rcases ne_or_eq z 1 with hz | rfl
   · exact differentiableAt_poleNormalizedZeta_of_ne hz
-  · refine (analyticAt_of_differentiable_on_punctured_nhds_of_continuousAt
+  · refine (Complex.analyticAt_of_differentiable_on_punctured_nhds_of_continuousAt
       ?_ continuousAt_poleNormalizedZeta_one).differentiableAt
     filter_upwards [self_mem_nhdsWithin] with w hw
     exact differentiableAt_poleNormalizedZeta_of_ne hw
@@ -89,7 +90,7 @@ theorem poleNormalizedZeta_ne_raw_product :
     poleNormalizedZeta ≠ (fun z : ℂ => (z - 1) * riemannZeta z) := by
   intro h
   have h1 := congrFun h 1
-  simpa using h1
+  simp at h1
 
 /-- Continuity yields a genuine local bound, with the radius still noneffective. -/
 theorem exists_poleNormalized_variation :

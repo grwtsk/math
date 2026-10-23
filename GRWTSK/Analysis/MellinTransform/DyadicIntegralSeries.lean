@@ -40,7 +40,7 @@ theorem power_edge (j : ℕ) (s : ℂ) :
 
 theorem power_integrable {a b : ℝ} (ha : 0 < a) (hab : a ≤ b) (s : ℂ) :
     IntervalIntegrable (fun u : ℝ => power u s) volume a b := by
-  apply ContinuousOn.intervalIntegrable_of_Icc _ hab
+  apply ContinuousOn.intervalIntegrable_of_Icc hab
   intro u hu
   exact (power_hasDerivAt (ha.trans_le hu.1) s).continuousAt.continuousWithinAt
 
@@ -51,7 +51,7 @@ theorem primitive_hasDerivAt {s : ℂ} (hs : s ≠ 1) {u : ℝ} (hu : 0 < u) :
   have h := (power_hasDerivAt hu (1-s)).div_const (1-s)
   apply h.congr_deriv
   rw [power_one_sub hu]
-  field_simp [hz, hu0] <;> ring
+  field_simp [hz, hu0]
 
 /-- Exact finite primitive, with the branch and exceptional parameter explicit. -/
 theorem finite_integral {s : ℂ} (hs : s ≠ 1) {a b : ℝ}
@@ -93,7 +93,7 @@ theorem background_eq {s : ℂ} (hs : s ≠ 1) (j : ℕ) :
   change (ratio s^(j+1)-ratio s^j)/(1-s) = _
   have hd : (s-1 : ℂ) ≠ 0 := sub_ne_zero.mpr hs
   have he : (1-s : ℂ) ≠ 0 := sub_ne_zero.mpr (Ne.symm hs)
-  field_simp [hd, he] <;> ring
+  field_simp [hd, he]; ring
 
 /-- Exact finite continuum inventory, useful for endpoint and sign checks. -/
 theorem finite_background_sum {s : ℂ} (hs : s ≠ 1) (J : ℕ) :
@@ -112,11 +112,16 @@ theorem background_hasSum {s : ℂ} (hs : 1 < s.re) :
   have hq0 := one_sub_ratio_ne_zero hs
   have hs0 : s-1 ≠ 0 := sub_ne_zero.mpr (parameter_ne_one hs)
   have hg := (hasSum_geometric_of_norm_lt_one hq).mul_left ((1-ratio s)/(s-1))
-  convert hg using 1
-  · funext j
+  have heq : (fun j => background j s) =
+      (fun j : ℕ => ((1-ratio s)/(s-1)) * ratio s^j) := by
+    funext j
     rw [background_eq (parameter_ne_one hs), pow_succ]
     ring
-  · field_simp [hq0, hs0]
+  rw [heq]
+  have hvalue : (1-ratio s)/(s-1) * (1-ratio s)⁻¹ = 1/(s-1) := by
+    field_simp [hq0, hs0]
+  rw [← hvalue]
+  exact hg
 
 /-- The excluded primitive formula is not used at s=1: each cell is log 2. -/
 theorem background_at_one (j : ℕ) : background j 1 = (Real.log 2 : ℂ) := by
@@ -140,6 +145,9 @@ theorem background_at_one (j : ℕ) : background j 1 = (Real.log 2 : ℂ) := by
     push_cast
     rw [Real.log_mul (by norm_num) ha.ne']
     ring
-  simpa [background, ← Complex.ofReal_sub, hlog] using h
+  change (∫ u in (edge j : ℝ)..(edge (j+1) : ℝ), power u (-1)) = _
+  calc
+    _ = (Real.log (edge (j+1) : ℝ) : ℂ) - (Real.log (edge j : ℝ) : ℂ) := h
+    _ = (Real.log 2 : ℂ) := by rw [← Complex.ofReal_sub, hlog]
 
 end GRWTSK.Analysis.MellinTransform.DyadicIntegralSeries

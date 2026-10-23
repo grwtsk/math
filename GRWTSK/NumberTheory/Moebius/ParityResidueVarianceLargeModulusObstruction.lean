@@ -72,7 +72,9 @@ theorem squarefreeMobiusMass_eq_parityDiagonals
       Disjoint
         ((Finset.Icc 1 b).filter (fun u => u % 2 = 0))
         ((Finset.Icc 1 b).filter (fun u => u % 2 = 1)) := by
-    simp [Finset.disjoint_left]
+    simp only [Finset.disjoint_left, Finset.mem_filter]
+    intro a ha hb
+    omega
   rw [← Finset.sum_union hdisj, hcover]
 
 /-- For the real-valued repository wrapper, absolute Möbius value equals its
@@ -81,7 +83,8 @@ theorem abs_moebiusReal_eq_sq
     (u : ℕ) :
     |moebiusReal u| = moebiusReal u ^ 2 := by
   unfold moebiusReal
-  have hle := ArithmeticFunction.abs_moebius_le_one u
+  have hle := (ArithmeticFunction.abs_moebius_le_one (n := u))
+  have hbounds := abs_le.mp hle
   have hcases :
       ArithmeticFunction.moebius u = -1 ∨
       ArithmeticFunction.moebius u = 0 ∨
@@ -121,11 +124,13 @@ theorem parityMertensSquares_le_squarefreeMobiusMass_sq
   have hs0 :
       parityMertensPrefix b 0 ^ 2 ≤
         paritySquarefreeDiagonal b 0 ^ 2 := by
-    nlinarith [sq_nonneg (parityMertensPrefix b 0)]
+    have hh := mul_le_mul hm0 hm0 (abs_nonneg _) hq0
+    nlinarith [sq_abs (parityMertensPrefix b 0)]
   have hs1 :
       parityMertensPrefix b 1 ^ 2 ≤
         paritySquarefreeDiagonal b 1 ^ 2 := by
-    nlinarith [sq_nonneg (parityMertensPrefix b 1)]
+    have hh := mul_le_mul hm1 hm1 (abs_nonneg _) hq1
+    nlinarith [sq_abs (parityMertensPrefix b 1)]
   rw [squarefreeMobiusMass_eq_parityDiagonals]
   nlinarith [mul_nonneg hq0 hq1]
 
@@ -133,7 +138,7 @@ theorem parityMertensSquares_le_squarefreeMobiusMass_sq
 as soon as `d^2` exceeds the complete half-endpoint range. -/
 theorem parityHalfResidue_injective_of_half_lt_square
     (b d r : ℕ) [NeZero d]
-    (hr : r < 2)
+    (_hr : r < 2)
     (hq : b / 2 < d * d) :
     Set.InjOn
       (fun u : ℕ => ((u / 2 : ℕ) : ZMod (d * d)))
@@ -141,6 +146,8 @@ theorem parityHalfResidue_injective_of_half_lt_square
   intro u hu v hv huv
   rcases Finset.mem_filter.mp hu with ⟨huI, huParity⟩
   rcases Finset.mem_filter.mp hv with ⟨hvI, hvParity⟩
+  have huI := Finset.mem_Icc.mp huI
+  have hvI := Finset.mem_Icc.mp hvI
   have huHalf : u / 2 < d * d :=
     (Nat.div_le_div_right huI.2).trans_lt hq
   have hvHalf : v / 2 < d * d :=
@@ -167,34 +174,21 @@ theorem sum_sq_indicatorFibres_eq_of_injOn
       (∑ x ∈ s, if f x = y then w x else 0) ^ 2) =
       ∑ x ∈ s, w x ^ 2 := by
   classical
-  calc
-    (∑ y : β,
-      (∑ x ∈ s, if f x = y then w x else 0) ^ 2) =
-      ∑ x ∈ s,
-        ∑ z ∈ s,
-          if f x = f z then w x * w z else 0 := by
-        simp_rw [pow_two, Finset.sum_mul]
-        rw [Finset.sum_comm]
-        apply Finset.sum_congr rfl
-        intro x hx
-        rw [Finset.sum_comm]
-        apply Finset.sum_congr rfl
-        intro z hz
-        by_cases h : f x = f z
-        · simp [h]
-        · simp [h]
-    _ = ∑ x ∈ s, w x ^ 2 := by
-        apply Finset.sum_congr rfl
-        intro x hx
-        rw [Finset.sum_eq_single x]
-        · simp [pow_two]
-        · intro z hz hzx
-          have hne : f x ≠ f z := by
-            intro h
-            exact hzx (hf hx hz h)
-          simp [hne]
-        · intro hxnot
-          exact (hxnot hx).elim
+  simp_rw [pow_two, Finset.sum_mul]
+  rw [Finset.sum_comm]
+  apply Finset.sum_congr rfl
+  intro x hx
+  rw [show (∑ y : β, (if f x = y then w x else 0) *
+      ∑ z ∈ s, if f z = y then w z else 0) =
+      w x * ∑ z ∈ s, if f z = f x then w z else 0 by simp]
+  congr 1
+  rw [Finset.sum_eq_single x]
+  · simp
+  · intro z hz hzx
+    have hne : f z ≠ f x := fun h => hzx (hf hz hx h)
+    simp [hne]
+  · intro hnot
+    exact (hnot hx).elim
 
 /-- For a large square modulus, every parity residue bucket is a singleton and
 its L2 energy is exactly the parity squarefree diagonal. -/
@@ -216,7 +210,16 @@ theorem parityMertensResidueEnergy_eq_squarefreeDiagonal_of_half_lt_square
       (fun u : ℕ => ((u / 2 : ℕ) : ZMod (d * d)))
       moebiusReal
       hinj
-  simpa [Complex.norm_real, sq_abs] using hreal
+  have hcast (a : ZMod (d * d)) :
+      (∑ u ∈ endpointParitySet b r, if ((u / 2 : ℕ) : ZMod (d * d)) = a then
+        (moebiusReal u : ℂ) else 0) =
+      ((∑ u ∈ endpointParitySet b r, if ((u / 2 : ℕ) : ZMod (d * d)) = a then
+        moebiusReal u else 0 : ℝ) : ℂ) := by
+    push_cast
+    apply Finset.sum_congr rfl
+    intro u _
+    split_ifs <;> rfl
+  simpa only [hcast, Complex.norm_real, Real.norm_eq_abs, sq_abs] using hreal
 
 /-- Explicit arithmetic input used by the large-modulus obstruction.
 
@@ -240,7 +243,7 @@ theorem parityResidueVarianceSum_ge_endpoint_div_64
   let q : ℝ := ((d * d : ℕ) : ℝ)
   have hqpos : 0 < q := by
     dsimp [q]
-    positivity
+    exact_mod_cast Nat.mul_pos (Nat.pos_of_ne_zero (NeZero.ne d)) (Nat.pos_of_ne_zero (NeZero.ne d))
   have hE0 :=
     parityMertensResidueEnergy_eq_squarefreeDiagonal_of_half_lt_square
       b d 0 (by norm_num) hHalf
@@ -254,6 +257,7 @@ theorem parityResidueVarianceSum_ge_endpoint_div_64
   have hLower : (b : ℝ) / 4 ≤ Q := hMass.1
   have hUpper : Q ≤ 3 * (b : ℝ) / 4 := hMass.2
   have hqScale : 4 * (b : ℝ) ≤ 5 * q := by
+    dsimp [q]
     exact_mod_cast hFourFifths
   have hQq : 16 * Q ≤ 15 * q := by
     nlinarith
@@ -267,9 +271,9 @@ theorem parityResidueVarianceSum_ge_endpoint_div_64
           (parityMertensPrefix b 0 ^ 2 +
             parityMertensPrefix b 1 ^ 2) / q := by
     unfold parityMertensResidueVariance
-    rw [hE0, hE1,
-      ← squarefreeMobiusMass_eq_parityDiagonals]
+    rw [hE0, hE1]
     dsimp [Q, q]
+    rw [squarefreeMobiusMass_eq_parityDiagonals]
     ring
   rw [hvar]
   have hMdiv :
@@ -338,7 +342,13 @@ theorem largeSquareModulusWindow_scale
       0 < ((10 : ℝ) * d - 9 * m) *
         ((10 : ℝ) * d + 9 * m) := by
     exact mul_pos (sub_pos.mpr hratio) (by positivity)
-  constructor <;> nlinarith
+  have hmR : (20 : ℝ) ≤ m := by exact_mod_cast hm
+  have hdR : (0 : ℝ) < d := by nlinarith
+  have hsq : (81 : ℝ) * (m : ℝ)^2 < 100 * (d : ℝ)^2 := by nlinarith
+  constructor
+  · have hnat : m * m < 2 * (d * d) := by exact_mod_cast (show (m : ℝ) * m < 2 * ((d : ℝ) * d) by nlinarith)
+    omega
+  · exact_mod_cast (show (4 : ℝ) * ((m : ℝ) * m) ≤ 5 * ((d : ℝ) * d) by nlinarith)
 
 /-- The large modulus window contains at least `m/20` parameters once
 `m >= 20`. -/
@@ -346,7 +356,7 @@ theorem card_largeSquareModulusWindow_ge
     {m : ℕ} (hm : 20 ≤ m) :
     m / 20 ≤ (largeSquareModulusWindow m).card := by
   unfold largeSquareModulusWindow
-  rw [Finset.card_Ico]
+  rw [Nat.card_Ico]
   omega
 
 /-- The positive modulus majorant is nonnegative. -/
@@ -384,7 +394,7 @@ theorem parityResidueVarianceDiagonalEndpointMajorant_ge_window
           simp [nsmul_eq_mul]
     _ ≤ ∑ d ∈ largeSquareModulusWindow m,
         if hd : 0 < d then
-          letI : NeZero d := ⟨ne_of_gt hd⟩
+          let : NeZero d := ⟨ne_of_gt hd⟩
           parityResidueVarianceDiagonalModulusMajorant (m * m) d
         else 0 := by
           apply Finset.sum_le_sum
@@ -393,7 +403,7 @@ theorem parityResidueVarianceDiagonalEndpointMajorant_ge_window
             have heff := largeSquareModulusWindow_subset_effective hm hd
             exact (Finset.mem_Ico.mp (Finset.mem_filter.mp heff).1).1
           simp only [dif_pos hdpos]
-          letI : NeZero d := ⟨ne_of_gt hdpos⟩
+          let : NeZero d := ⟨ne_of_gt hdpos⟩
           obtain ⟨hhalf, hfour⟩ :=
             largeSquareModulusWindow_scale hm hd
           exact
@@ -401,7 +411,7 @@ theorem parityResidueVarianceDiagonalEndpointMajorant_ge_window
               (m * m) d hhalf hfour hMass
     _ ≤ ∑ d ∈ effectiveEndpointSquareModulusSet (m * m),
         if hd : 0 < d then
-          letI : NeZero d := ⟨ne_of_gt hd⟩
+          let : NeZero d := ⟨ne_of_gt hd⟩
           parityResidueVarianceDiagonalModulusMajorant (m * m) d
         else 0 := by
           apply Finset.sum_le_sum_of_subset_of_nonneg
@@ -411,7 +421,7 @@ theorem parityResidueVarianceDiagonalEndpointMajorant_ge_window
             have hdpos : 0 < d :=
               (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
             simp only [dif_pos hdpos]
-            letI : NeZero d := ⟨ne_of_gt hdpos⟩
+            let : NeZero d := ⟨ne_of_gt hdpos⟩
             exact
               parityResidueVarianceDiagonalModulusMajorant_nonneg
                 (m * m) d
@@ -428,7 +438,12 @@ theorem parityResidueVarianceDiagonalEndpointMajorant_ge_cubic
   have hcard :
       (m : ℝ) / 20 ≤
         ((largeSquareModulusWindow m).card : ℝ) := by
-    exact_mod_cast hcardNat
+    have hnat : m ≤ 20 * (largeSquareModulusWindow m).card := by
+      unfold largeSquareModulusWindow
+      rw [Nat.card_Ico]
+      omega
+    have hr : (m : ℝ) ≤ 20 * ((largeSquareModulusWindow m).card : ℝ) := by exact_mod_cast hnat
+    linarith
   have hbnonneg : 0 ≤ ((m * m : ℕ) : ℝ) / 128 := by
     positivity
   have hmul := mul_le_mul_of_nonneg_right hcard hbnonneg
@@ -477,16 +492,18 @@ theorem not_dyadicNaturalScaleParityResidueVarianceDiagonalBudget
     hGrowth C hC B
   have hbmem :
       m * m ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) := by
+    apply Finset.mem_Ico.mpr
     rw [hmX]
     constructor
     · exact le_rfl
     · rw [pow_succ]
+      have hp := pow_pos (by omega : (0 : ℕ) < 2) j
       omega
   have hupper := hscale j (m * m) hbmem
   have hlower :=
     parityResidueVarianceDiagonalEndpointMajorant_ge_cubic
       hm20 (hB (m * m) hmB)
-  rw [← hmX] at hupper
+  rw [← hmX] at hupper hout
   exact (not_lt_of_ge (hlower.trans hupper)) hout
 
 /-- Named conditional scope disposition. -/

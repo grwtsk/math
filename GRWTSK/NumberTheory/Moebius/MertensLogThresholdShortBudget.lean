@@ -34,22 +34,10 @@ theorem harmonicShiftFirstDifference_zero_eq_maxDrop
         ((((harmonicInitialDenominator j t + 1 : ℕ) : ℝ))⁻¹) := by
   unfold harmonicShiftFirstDifference harmonicShiftReciprocal
     harmonicInitialDenominator harmonicShiftLower
-  by_cases ht : t + 2 ≤ 2 ^ j
-  · have hmax : max (2 ^ j) (t + 2) = 2 ^ j :=
-      max_eq_left ht
-    have hL : max 1 (2 ^ j - t - 1) = 2 ^ j - t - 1 := by
-      apply max_eq_right
-      omega
-    rw [hmax, hL]
-    congr 2 <;> omega
-  · have ht' : 2 ^ j ≤ t + 2 := Nat.le_of_not_ge ht
-    have hmax : max (2 ^ j) (t + 2) = t + 2 :=
-      max_eq_right ht'
-    have hL : max 1 (2 ^ j - t - 1) = 1 := by
-      apply max_eq_left
-      omega
-    rw [hmax, hL]
-    congr 2 <;> omega
+  simp only [Nat.add_zero, Nat.zero_add]
+  have hden : t+1+max 1 (2^j-t-1) = max (2^j) (t+2) := by omega
+  have hnext : t+1+(max 1 (2^j-t-1)+1) = max (2^j) (t+2)+1 := by omega
+  rw [hden, hnext]
 
 /-- Normalized deterministic short-range budget at one depth after restoring
 the exact `2/Y` depth-slice prefactor. -/
@@ -89,7 +77,6 @@ theorem normalized_shortContribution_le_budget
         (t + 1 : ℝ) *
           harmonicShiftFirstDifference j t 0 := by
       field_simp [ne_of_gt hYR]
-      ring
 
 /-- Total deterministic short-range budget over all inherited depths. -/
 def normalizedShortPacketBudget
@@ -115,7 +102,8 @@ theorem normalizedShortPacketBudget_le_six_logThreshold_of_finiteDepthBudget
     normalizedShortPacketBudget j ≤
       6 * (logarithmicShiftThreshold j : ℝ) := by
   unfold normalizedShortPacketBudget normalizedShortDepthBudget
-  rw [Finset.mul_sum]
+  simp_rw [mul_assoc]
+  rw [← Finset.mul_sum, ← Finset.mul_sum, ← mul_assoc]
   calc
     2 * (logarithmicShiftThreshold j : ℝ) *
         (∑ t ∈ Finset.range (2 ^ (j + 1)),

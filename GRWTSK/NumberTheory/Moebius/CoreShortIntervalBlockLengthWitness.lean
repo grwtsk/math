@@ -44,13 +44,7 @@ theorem dyadicStartBlockAggregateL1_eq_compatible_add_incompatible
   rw [← Finset.sum_filter_add_sum_filter_not
     (s := Finset.range (j + 1))
     (p := fun r => n ≤ 2 ^ r)]
-  congr 2
-  · rfl
-  · apply Finset.sum_congr
-    · ext r
-      simp [Nat.not_le]
-    · intro r _hr
-      rfl
+  simp only [not_le]
 
 /-- Compatible terminal majorant. -/
 def compatibleDyadicBlockTerminalL1Majorant

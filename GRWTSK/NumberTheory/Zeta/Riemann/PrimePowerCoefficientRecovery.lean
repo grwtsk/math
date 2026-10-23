@@ -115,8 +115,8 @@ structure PrimePowerCoefficientRecurrence
     Local → ℕ → ThreePointPackingState IsPrimePowerEventValue →
       PrimePowerEvent
   next_order :
-    ∀ local n state,
-      state.thirdSource < (nextEvent local n state).natValue
+    ∀ localData n state,
+      state.thirdSource < (nextEvent localData n state).natValue
 
 namespace PrimePowerCoefficientRecurrence
 
@@ -154,13 +154,13 @@ theorem nextPoint_y_eq_coefficient
     [Module ℝ Source] [Module ℝ Local]
     [TopologicalSpace Source] [TopologicalSpace Local]
     (data : PrimePowerCoefficientRecurrence Source Local)
-    (local : Local) (n : ℕ)
+    (localData : Local) (n : ℕ)
     (state : ThreePointPackingState IsPrimePowerEventValue) :
-    (data.toPackingProgram.nextPoint local n state).y =
-      data.coefficientSource.coefficient (data.nextEvent local n state) := by
+    (data.toPackingProgram.nextPoint localData n state).y =
+      data.coefficientSource.coefficient (data.nextEvent localData n state) := by
   exact
     data.coefficientSource.packingPoint_y_eq_coefficient
-      (data.nextEvent local n state)
+      (data.nextEvent localData n state)
 
 /-- The new point's x-coordinate remains the exact logarithmic prime-power
 scale. -/
@@ -170,10 +170,10 @@ theorem nextPoint_x_eq_logScale
     [Module ℝ Source] [Module ℝ Local]
     [TopologicalSpace Source] [TopologicalSpace Local]
     (data : PrimePowerCoefficientRecurrence Source Local)
-    (local : Local) (n : ℕ)
+    (localData : Local) (n : ℕ)
     (state : ThreePointPackingState IsPrimePowerEventValue) :
-    (data.toPackingProgram.nextPoint local n state).x =
-      (data.nextEvent local n state).logScale := by
+    (data.toPackingProgram.nextPoint localData n state).x =
+      (data.nextEvent localData n state).logScale := by
   rfl
 
 end PrimePowerCoefficientRecurrence

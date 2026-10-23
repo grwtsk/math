@@ -122,7 +122,8 @@ theorem paritySignedResidueConvolutionFourier_eq_twice_pairSum
           else 0) * ZMod.stdAddChar (k * s) := by
             simp_rw [mul_assoc, Finset.mul_sum, Finset.sum_mul]
             rw [Finset.sum_comm]
-            ring
+            ring_nf
+            simp only [Finset.sum_mul]
     _ = 2 * ∑ uv ∈ endpointParityStrictPairSet b r,
         ((moebiusReal uv.1 : ℂ) * (moebiusReal uv.2 : ℂ)) *
           ZMod.stdAddChar
@@ -218,13 +219,12 @@ theorem paritySignedResidueConvolutionEndpointMajorant_eq_parityFourier
       parityFourierNonzeroFrequencyEndpointMajorant b := by
   unfold paritySignedResidueConvolutionEndpointMajorant
     parityFourierNonzeroFrequencyEndpointMajorant
-    parityFourierNonzeroModulusMajorant
   apply Finset.sum_congr rfl
   intro d hd
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   exact
     paritySignedResidueConvolutionNonzeroModulusMajorant_eq_parityFourier b d
 

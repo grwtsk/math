@@ -71,7 +71,7 @@ theorem arithmeticTerm_hasSum {s : ℂ} (hs : 1 < s.re) :
   change HasSum (LSeries.term (fun m => (mangoldt m : ℂ)) s)
     (LSeries (fun m => (mangoldt m : ℂ)) s) at h
   rw [hv] at h
-  exact h.congr (fun n => (arithmeticTerm_eq_LSeries_term s n).symm)
+  exact h.congr_fun (fun n => arithmeticTerm_eq_LSeries_term s n)
 
 theorem cell_eq_window (j : ℕ) : cell j = window (edge j) := by
   simp only [cell, window, edge_succ]
@@ -94,7 +94,7 @@ theorem source_blocks_hasSum {s : ℂ} (hs : 1 < s.re) :
     HasSum (fun j => dirichletBlock (edge j) s)
       (-(deriv riemannZeta s)/riemannZeta s-1/(s-1)) := by
   have h := (arithmetic_cells_hasSum hs).sub (background_hasSum hs)
-  exact h.congr (fun j => (source_block_split j s).symm)
+  exact h.congr_fun (fun j => source_block_split j s)
 
 theorem source_blocks_summable {s : ℂ} (hs : 1 < s.re) :
     Summable (fun j => dirichletBlock (edge j) s) :=

@@ -34,10 +34,10 @@ theorem phase_eq_iff_integer_winding (θ φ : ℝ) :
   constructor
   · intro h
     have hphase :
-        Complex.circleMap 0 1 (2 * Real.pi * θ) =
-          Complex.circleMap 0 1 (2 * Real.pi * φ) := by
-      simpa [Complex.circleMap, mul_assoc, mul_comm, mul_left_comm] using h
-    rcases (Complex.circleMap_eq_circleMap_iff (0 : ℂ)
+        circleMap 0 1 (2 * Real.pi * θ) =
+          circleMap 0 1 (2 * Real.pi * φ) := by
+      simpa [circleMap, mul_assoc, mul_comm, mul_left_comm] using h
+    rcases (circleMap_eq_circleMap_iff (0 : ℂ)
       (by norm_num : (1 : ℝ) ≠ 0)).mp hphase with ⟨n, hn⟩
     have hi : (2 * Real.pi * θ : ℂ) * Complex.I =
         (2 * Real.pi * φ : ℂ) * Complex.I +
@@ -45,16 +45,9 @@ theorem phase_eq_iff_integer_winding (θ φ : ℝ) :
       simpa only [Complex.ofReal_mul, Complex.ofReal_ofNat,
         Complex.ofReal_mul, mul_assoc] using hn
     have hreal : θ = φ + (n : ℝ) := by
-      have hpi : (2 * Real.pi : ℝ) ≠ 0 := by positivity
-      apply (mul_left_cancel₀ hpi)
-      have hc := congrArg (fun z : ℂ => z / Complex.I) hi
-      have hc' : (2 * Real.pi * θ : ℂ) =
-          (2 * Real.pi * (φ + (n : ℝ)) : ℂ) := by
-        convert hc using 1 <;> push_cast <;> ring
-      exact_mod_cast (by
-        apply (mul_left_cancel₀ hpi)
-        exact_mod_cast hc' : 2 * Real.pi * θ =
-          2 * Real.pi * (φ + (n : ℝ)))
+      have hc := congrArg Complex.im hi
+      norm_num [Complex.mul_im, Complex.mul_re] at hc
+      nlinarith [Real.pi_pos]
     exact ⟨n, hreal⟩
   · rintro ⟨n, rfl⟩
     have h := GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriodicity.realAnglePolar_add_int

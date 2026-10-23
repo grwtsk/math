@@ -70,8 +70,10 @@ theorem one_coordinate_sq_le_arithmeticCoordinateStage
       fullGreenArithmeticCoordinateStage X 2 := by
   unfold fullGreenArithmeticCoordinateStage greenArithmeticFourierHead
     greenArithmeticFourierShellEnergy
-  norm_num [greenArithmeticFourierCoordinate_zero]
-  positivity
+  norm_num [greenArithmeticFourierCoordinate_zero, Finset.sum_range_succ]
+  nlinarith [sq_nonneg (mass0 X), sq_nonneg (mass1 X),
+    sq_nonneg (‖greenArithmeticFourierCoordinate X (-1)‖),
+    sq_nonneg (‖greenArithmeticFourierCoordinate X (-2)‖)]
 
 theorem coordinateBound_forces_mass0_sq_decay
     (hC : AllDyadicArithmeticFourierCoordinateBound)

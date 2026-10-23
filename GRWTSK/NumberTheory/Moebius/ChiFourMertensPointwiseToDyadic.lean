@@ -80,7 +80,7 @@ theorem chiFourTwistedMertens_le_dyadicScale
     simpa using
       (cast_dyadicDescendant_le_upperModel
         (j := j) (b := b) (n := b) (t := 0)
-        hbUpper le_rfl)
+        hbUpper (by simp))
   have hα :
       0 ≤ pointwiseMertensDyadicExponent δ :=
     (pointwiseMertensDyadicExponent_pos hδ).le
@@ -90,7 +90,7 @@ theorem chiFourTwistedMertens_le_dyadicScale
           ((b : ℝ) ^ pointwiseMertensDyadicEpsilon δ) :=
       hPoint b
     _ = C * ((b : ℝ) ^ pointwiseMertensDyadicExponent δ) := by
-      rw [sqrt_mul_rpow_eq_totalExponent hbpos]
+      rw [mul_assoc, sqrt_mul_rpow_eq_totalExponent hbpos]
     _ ≤ C *
         ((2 * (((2 ^ j : ℕ) : ℝ))) ^
           pointwiseMertensDyadicExponent δ) := by
@@ -108,8 +108,9 @@ theorem chiFourTwistedMertens_le_dyadicScale
     _ ≤ C *
         (pointwiseMertensDyadicConstantFactor δ *
           dyadicMertensSquareRootEpsilonScale j δ) := by
-      gcongr
-      exact dyadic_totalExponent_le_parentScale j hδ
+      apply mul_le_mul_of_nonneg_left _ hC
+      exact mul_le_mul_of_nonneg_left (dyadic_totalExponent_le_parentScale j hδ)
+        (by unfold pointwiseMertensDyadicConstantFactor; positivity)
     _ = (C * pointwiseMertensDyadicConstantFactor δ) *
         dyadicMertensSquareRootEpsilonScale j δ := by
       ring

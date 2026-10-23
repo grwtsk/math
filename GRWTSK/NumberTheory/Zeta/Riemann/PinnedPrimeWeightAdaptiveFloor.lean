@@ -13,14 +13,10 @@ open scoped BigOperators
 
 The preceding ratio sandwich used the constant one-prime floor
 
-  log 2 / (2X).
-
-A Bertrand witness actually satisfies `X < p ≤ 2X`, hence `X+1 ≤ p`.  The
+  log 2 / (2X).A Bertrand witness actually satisfies `X < p ≤ 2X`, hence `X+1 ≤ p`.  The
 same argument therefore gives the sharper scale-adaptive floor
 
-  log (X+1) / (2X).
-
-This module also audits the pinned global Chebyshev bounds.  On the dyadic
+  log (X+1) / (2X).This module also audits the pinned global Chebyshev bounds.  On the dyadic
 window their leading terms cancel exactly because `log 4 = 2 log 2`.  The
 resulting raw window lower expression is nonpositive, so those two global
 bounds alone do not furnish a positive full-window coefficient floor.
@@ -131,7 +127,7 @@ theorem pinnedPrimeWeightChebyshevRawFloor_nonpositive
   rw [pinnedPrimeWeightChebyshevRawFloor_eq_negativeErrors]
   have hlogSucc :
       0 ≤ Real.log (2 * (X : ℝ) + 1) :=
-    Real.log_nonneg (by positivity)
+    Real.log_nonneg (by nlinarith [show (0 : ℝ) ≤ (X : ℝ) from Nat.cast_nonneg X])
   rcases X.eq_zero_or_pos with rfl | hX
   · norm_num
   · have htwoX : (1 : ℝ) ≤ 2 * (X : ℝ) := by

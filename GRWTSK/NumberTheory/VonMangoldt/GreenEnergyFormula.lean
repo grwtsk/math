@@ -37,7 +37,8 @@ theorem background_integrable : Integrable background unitVolume :=
 
 theorem integral_background : (∫ t, background t ∂unitVolume)=0 := by
   unfold background
-  rw [integral_sub logarithm_continuousOn.integrableOn_Icc (integrable_const _)]
+  have hlog : Integrable logarithm unitVolume := logarithm_continuousOn.integrableOn_Icc
+  rw [integral_sub hlog (integrable_const _)]
   rw [unit_integral_eq_interval, integral_logarithm]
   simp [backgroundCenter]
 
@@ -50,10 +51,12 @@ theorem integral_background_square :
       HasDerivAt (fun t ↦ cellPrimitive backgroundCenter (1+t)) (background t^2) t := by
     intro t ht
     have hp : 0<1+t := by linarith [ht.1]
-    have h := (cellPrimitive_hasDerivAt backgroundCenter hp).comp t
-      ((hasDerivAt_id t).const_add 1)
-    convert h using 1
-    dsimp [background, logarithm]
+    have ha : HasDerivAt (fun x : ℝ => 1+x) 1 t := by
+      simpa only [Pi.add_def, id_eq, zero_add] using
+        (hasDerivAt_const t (1 : ℝ)).add (hasDerivAt_id t)
+    have h := (cellPrimitive_hasDerivAt backgroundCenter hp).comp t ha
+    apply h.congr_deriv
+    unfold background logarithm
     ring
   rw [unit_integral_eq_interval]
   rw [intervalIntegral.integral_eq_sub_of_hasDerivAt
@@ -97,11 +100,12 @@ theorem integral_feature_background {r : ℝ} (hr : r∈Icc (0:ℝ) 1) :
     unfold feature background
     ring
   simp_rw [he]
-  rw [integral_sub
-    ((step_log_integrable r).sub (logarithm_continuousOn.integrableOn_Icc.const_mul _))
-    ((feature_integrable r).const_mul _),
-    integral_sub (step_log_integrable r) (logarithm_continuousOn.integrableOn_Icc.const_mul _),
-    integral_const_mul, integral_const_mul, integral_feature hr,
+  have hlog : Integrable logarithm unitVolume := logarithm_continuousOn.integrableOn_Icc
+  have hsub₁ := integral_sub ((step_log_integrable r).sub (hlog.const_mul (1-r)))
+    ((feature_integrable r).const_mul backgroundCenter)
+  have hsub₂ := integral_sub (step_log_integrable r) (hlog.const_mul (1-r))
+  simp only [Pi.sub_def] at hsub₁ hsub₂
+  rw [hsub₁, hsub₂, integral_const_mul, integral_const_mul, integral_feature hr,
     integral_step_log hr, unit_integral_eq_interval, integral_logarithm]
   norm_num [logPrimitive,greenBackground]
   ring
@@ -178,11 +182,14 @@ theorem greenEnergy_eq_finiteGreenFormula {X : ℕ} (hX : 0<X) :
   have he (t : ℝ) : (atomicFeature X t-background t)^2 =
       atomicFeature X t^2-2*(atomicFeature X t*background t)+background t^2 := by ring
   simp_rw [he]
-  rw [integral_add
-    ((atomic_square_integrable X).sub ((atomic_background_integrable X).const_mul _))
-    background_square_integrable,
-    integral_sub (atomic_square_integrable X) ((atomic_background_integrable X).const_mul _),
-    integral_const_mul, integral_atomic_background hX, integral_background_square]
+  have hadd := integral_add
+    ((atomic_square_integrable X).sub ((atomic_background_integrable X).const_mul 2))
+    background_square_integrable
+  have hsub := integral_sub (atomic_square_integrable X)
+    ((atomic_background_integrable X).const_mul 2)
+  simp only [Pi.sub_def] at hadd hsub
+  rw [hadd, hsub, integral_const_mul, integral_atomic_background hX,
+    integral_background_square]
   have hgram := finite_signed_gram (window X) coefficient (location X)
     (fun n hn ↦ location_mem hX hn)
   change (∫ t, atomicFeature X t^2 ∂unitVolume)=_ at hgram

@@ -132,7 +132,7 @@ theorem regularFrequency_representative_or_partner
   have hvalne : k.val ≠ (twoKernelPartner d k).val := by
     intro hval
     have heq : k = twoKernelPartner d k := by
-      exact ZMod.val_injective hval
+      exact ZMod.val_injective (d * d) hval
     exact twoKernelPartner_ne_self d hNonunit k heq.symm
   rcases lt_or_gt_of_ne hvalne with hlt | hgt
   · left
@@ -145,15 +145,15 @@ theorem regularFrequency_representative_or_partner
         (twoKernelPartner d k).val <
           (twoKernelPartner d (twoKernelPartner d k)).val := by
       simpa [twoKernelPartner_involutive d hNonunit] using hgt
-    simp [twoKernelRegularOrbitRepresentativeSet, hpartner0,
-      hback0, hbacklt, twoKernelPartner_involutive d hNonunit]
+    simp [twoKernelRegularOrbitRepresentativeSet, hpartner0, hk0, hgt,
+      twoKernelPartner_involutive d hNonunit]
 
 /-- Every regular representative has a distinct partner. -/
 theorem representative_partner_ne
     (d : ℕ) [NeZero d]
     (hNonunit : TwoNonunitSquareModulusParameter d)
     {k : ZMod (d * d)}
-    (hk : k ∈ twoKernelRegularOrbitRepresentativeSet d) :
+    (_hk : k ∈ twoKernelRegularOrbitRepresentativeSet d) :
     twoKernelPartner d k ≠ k :=
   twoKernelPartner_ne_self d hNonunit k
 
@@ -190,10 +190,10 @@ theorem nonzeroFrequencySet_eq_exceptional_union_regularOrbits
       exact twoKernelFrequency_mem_nonzeroSet d hNonunit
     · rcases Finset.mem_union.mp hkrest with hrep | himage
       · have hk0 := representative_ne_zero hrep
-        simpa [nonzeroSquareModulusFrequencySet, hk0]
+        simp [nonzeroSquareModulusFrequencySet, hk0]
       · rcases Finset.mem_image.mp himage with ⟨q, hq, rfl⟩
         have hq0 := representative_partner_ne_zero hq
-        simpa [nonzeroSquareModulusFrequencySet, hq0]
+        simp [nonzeroSquareModulusFrequencySet, hq0]
 
 /-- The exceptional frequency does not occur in the regular representative
 set. -/
@@ -337,13 +337,13 @@ theorem regularOrbit_frequencyPair_le_projectorMajorant
   have h1b := norm_sub_le
     (twoKernelPairPlusAggregate b d 1 k)
     (twoKernelPairMinusAggregate b d 1 k)
+  unfold halfIndexAffineChowlaFrequencyMajorant
   rw [halfIndexAggregate_eq_half_pairPlus_add_pairMinus,
     halfIndexPartnerAggregate_eq_half_pairPlus_sub_pairMinus,
     halfIndexAggregate_eq_half_pairPlus_add_pairMinus,
     halfIndexPartnerAggregate_eq_half_pairPlus_sub_pairMinus]
-  unfold halfIndexAffineChowlaFrequencyMajorant
-    twoNonunitRegularOrbitMajorant
-  simp only [norm_mul, norm_ofNat, norm_inv]
+  unfold twoNonunitRegularOrbitMajorant
+  simp only [norm_mul]
   norm_num at *
   nlinarith
 
@@ -394,7 +394,7 @@ theorem halfIndexNonzeroModulusMajorant_le_orbitRepresentative
   unfold twoNonunitOrbitDecomposedModulusMajorant
     twoNonunitOrbitRepresentativeModulusMajorant
   apply mul_le_mul_of_nonneg_left ?_ (by positivity)
-  apply add_le_add_left
+  apply add_le_add le_rfl
   apply Finset.sum_le_sum
   intro k _hk
   exact regularOrbit_frequencyPair_le_projectorMajorant b d k
@@ -404,7 +404,7 @@ def twoNonunitExceptionalKernelEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         (((d * d : ℕ) : ℝ))⁻¹ *
           twoNonunitExceptionalKernelFrequencyMajorant b d
@@ -417,7 +417,7 @@ def twoNonunitRegularOrbitEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         (((d * d : ℕ) : ℝ))⁻¹ *
           ∑ k ∈ twoKernelRegularOrbitRepresentativeSet d,
@@ -441,13 +441,13 @@ theorem twoNonunitHalfIndexEndpointMajorant_le_exceptional_add_regular
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hTwo : TwoUnitSquareModulusParameter d
   · simp [hTwo, TwoNonunitSquareModulusParameter]
   · have hNonunit : TwoNonunitSquareModulusParameter d := hTwo
-    simp only [hTwo, dif_neg, hNonunit, dif_pos]
-    exact halfIndexNonzeroModulusMajorant_le_orbitRepresentative
-      b d hNonunit
+    simp only [hTwo, hNonunit, ↓reduceDIte]
+    simpa only [twoNonunitOrbitRepresentativeModulusMajorant, mul_add] using
+      halfIndexNonzeroModulusMajorant_le_orbitRepresentative b d hNonunit
 
 /-- Natural-scale supplier for the exceptional kernel frequency. -/
 def DyadicNaturalScaleTwoNonunitExceptionalKernelBudget : Prop :=

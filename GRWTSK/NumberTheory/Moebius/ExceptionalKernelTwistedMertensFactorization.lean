@@ -190,8 +190,8 @@ def exceptionalKernelTwistedMertensEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
-      if hNonunit : TwoNonunitSquareModulusParameter d then
+      let : NeZero d := ⟨ne_of_gt hd⟩
+      if _hNonunit : TwoNonunitSquareModulusParameter d then
         (((d * d : ℕ) : ℝ))⁻¹ *
           exceptionalKernelTwistedMertensFrequencyMajorant b d
       else 0
@@ -209,7 +209,7 @@ theorem exceptionalKernelTwistedMertensEndpointMajorant_eq_existing
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hNonunit : TwoNonunitSquareModulusParameter d
   · simp only [hNonunit, dif_pos]
     rw [exceptionalKernelTwistedMertensFrequencyMajorant_eq_existing
@@ -224,11 +224,11 @@ def DyadicTwoKernelTwistedMertensSquareRootEnergy : Prop :=
   ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧
     ∀ j b d r : ℕ,
       b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) →
-      d ∈ effectiveEndpointSquareModulusSet b →
+      ∀ (hdMem : d ∈ effectiveEndpointSquareModulusSet b),
       TwoNonunitSquareModulusParameter d →
       r < 2 →
-      letI : NeZero d := ⟨by
-        have hd := (Finset.mem_filter.mp ‹d ∈ effectiveEndpointSquareModulusSet b›).1
+      let : NeZero d := ⟨by
+        have hd := (Finset.mem_filter.mp hdMem).1
         exact ne_of_gt (Finset.mem_Ico.mp hd).1⟩
       ‖exceptionalKernelTwistedMertensPrefix b d r‖ ^ 2 ≤
         C * (((2 ^ j : ℕ) : ℝ)) *
@@ -237,18 +237,18 @@ def DyadicTwoKernelTwistedMertensSquareRootEnergy : Prop :=
 /-- Pointwise exceptional frequency control from the twisted Mertens energy
 premise and the elementary squarefree diagonal bound. -/
 theorem exceptionalKernelTwistedMertensFrequencyMajorant_le
-    (hEnergy : DyadicTwoKernelTwistedMertensSquareRootEnergy)
+    (_hEnergy : DyadicTwoKernelTwistedMertensSquareRootEnergy)
     {δ : ℝ} (hδ : 0 < δ)
     {C : ℝ}
-    (hC : 0 ≤ C)
+    (_hC : 0 ≤ C)
     (hscale :
       ∀ j b d r : ℕ,
         b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) →
-        d ∈ effectiveEndpointSquareModulusSet b →
+        ∀ (hdMem : d ∈ effectiveEndpointSquareModulusSet b),
         TwoNonunitSquareModulusParameter d →
         r < 2 →
-        letI : NeZero d := ⟨by
-          have hd := (Finset.mem_filter.mp ‹d ∈ effectiveEndpointSquareModulusSet b›).1
+        let : NeZero d := ⟨by
+          have hd := (Finset.mem_filter.mp hdMem).1
           exact ne_of_gt (Finset.mem_Ico.mp hd).1⟩
         ‖exceptionalKernelTwistedMertensPrefix b d r‖ ^ 2 ≤
           C * (((2 ^ j : ℕ) : ℝ)) *
@@ -257,22 +257,23 @@ theorem exceptionalKernelTwistedMertensFrequencyMajorant_le
     (hb : b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)))
     (hd : d ∈ effectiveEndpointSquareModulusSet b)
     (hNonunit : TwoNonunitSquareModulusParameter d) :
-    letI : NeZero d := ⟨by
+    let : NeZero d := ⟨by
       have hd' := (Finset.mem_filter.mp hd).1
       exact ne_of_gt (Finset.mem_Ico.mp hd').1⟩
     exceptionalKernelTwistedMertensFrequencyMajorant b d ≤
       (C + 2) * (((2 ^ j : ℕ) : ℝ)) *
         (((2 ^ j : ℕ) : ℝ) ^ δ) := by
+  let : NeZero d := ⟨ne_of_gt (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1⟩
   let X : ℝ := ((2 ^ j : ℕ) : ℝ)
   have hX : 1 ≤ X := by
     dsimp [X]
-    positivity
+    exact_mod_cast Nat.one_le_iff_ne_zero.mpr (pow_ne_zero j two_ne_zero)
   have hXδ : 1 ≤ X ^ δ := Real.one_le_rpow hX hδ.le
   have hbtop : (b : ℝ) ≤ 2 * X := by
     have hI := Finset.mem_Ico.mp hb
     dsimp [X]
     rw [pow_succ] at hI
-    exact_mod_cast (Nat.le_of_lt hI.2)
+    exact_mod_cast (by simpa only [mul_comm] using Nat.le_of_lt hI.2 : b ≤ 2 * 2 ^ j)
   have h0 := hscale j b d 0 hb hd hNonunit (by norm_num)
   have h1 := hscale j b d 1 hb hd hNonunit (by norm_num)
   have hq0 := paritySquarefreeDiagonal_le_endpoint b 0
@@ -289,11 +290,10 @@ theorem exceptionalKernelTwistedMertensFrequencyMajorant_le
           (paritySquarefreeDiagonal b 0 : ℂ)‖ ≤
         ‖exceptionalKernelTwistedMertensPrefix b d 0‖ ^ 2 +
           paritySquarefreeDiagonal b 0 := by
-            rw [norm_pow, Complex.norm_real]
-            simpa [abs_of_nonneg hq0n] using
-              norm_sub_le
-                (exceptionalKernelTwistedMertensPrefix b d 0 ^ 2)
-                (paritySquarefreeDiagonal b 0 : ℂ)
+            convert! norm_sub_le
+              (exceptionalKernelTwistedMertensPrefix b d 0 ^ 2)
+              (paritySquarefreeDiagonal b 0 : ℂ) using 1
+            simp only [norm_pow, Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg hq0n]
       _ ≤ C * X * (X ^ δ) + 2 * X * (X ^ δ) := by
         nlinarith
   have hz1 :
@@ -305,11 +305,10 @@ theorem exceptionalKernelTwistedMertensFrequencyMajorant_le
           (paritySquarefreeDiagonal b 1 : ℂ)‖ ≤
         ‖exceptionalKernelTwistedMertensPrefix b d 1‖ ^ 2 +
           paritySquarefreeDiagonal b 1 := by
-            rw [norm_pow, Complex.norm_real]
-            simpa [abs_of_nonneg hq1n] using
-              norm_sub_le
-                (exceptionalKernelTwistedMertensPrefix b d 1 ^ 2)
-                (paritySquarefreeDiagonal b 1 : ℂ)
+            convert! norm_sub_le
+              (exceptionalKernelTwistedMertensPrefix b d 1 ^ 2)
+              (paritySquarefreeDiagonal b 1 : ℂ) using 1
+            simp only [norm_pow, Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg hq1n]
       _ ≤ C * X * (X ^ δ) + 2 * X * (X ^ δ) := by
         nlinarith
   nlinarith
@@ -329,8 +328,8 @@ theorem exceptionalKernelBudget_of_twistedMertensSquareRootEnergy
   calc
     (∑ d ∈ effectiveEndpointSquareModulusSet b,
       if hd : 0 < d then
-        letI : NeZero d := ⟨ne_of_gt hd⟩
-        if hNonunit : TwoNonunitSquareModulusParameter d then
+        let : NeZero d := ⟨ne_of_gt hd⟩
+        if _hNonunit : TwoNonunitSquareModulusParameter d then
           (((d * d : ℕ) : ℝ))⁻¹ *
             exceptionalKernelTwistedMertensFrequencyMajorant b d
         else 0
@@ -344,14 +343,15 @@ theorem exceptionalKernelBudget_of_twistedMertensSquareRootEnergy
           have hdpos :
               0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
           simp only [dif_pos hdpos]
-          letI : NeZero d := ⟨ne_of_gt hdpos⟩
+          let : NeZero d := ⟨ne_of_gt hdpos⟩
           by_cases hNonunit : TwoNonunitSquareModulusParameter d
           · simp only [hNonunit, dif_pos]
             apply mul_le_mul_of_nonneg_left ?_ (by positivity)
             simpa [X] using
               exceptionalKernelTwistedMertensFrequencyMajorant_le
                 hEnergy hδ hC hscale hb hd hNonunit
-          · simp [hNonunit]
+          · simp only [hNonunit, ↓reduceDIte]
+            positivity
     _ ≤ 2 * ((C + 2) * X * (X ^ δ)) := by
       exact mul_le_mul_of_nonneg_right
         (effectiveSquareModulusReciprocalMass_le_two b)

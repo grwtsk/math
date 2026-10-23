@@ -112,15 +112,12 @@ theorem quarticCollisionTerm_eq_zeroWinding_add_wrap
               parityAffineShiftCollisionCoordinateNat v g then
         regularQuarticMobiusCoefficient u h v g
       else 0) := by
-  rw [parityAffineShiftResidueCoordinate_eq_iff_modEq]
+  simp only [parityAffineShiftResidueCoordinate_eq_iff_modEq]
   by_cases heq :
       parityAffineShiftCollisionCoordinateNat u h =
         parityAffineShiftCollisionCoordinateNat v g
-  · have hmod :
-        parityAffineShiftCollisionCoordinateNat u h ≡
-          parityAffineShiftCollisionCoordinateNat v g [MOD d * d] := by
-      rw [heq]
-    simp [heq, hmod]
+  · simp [heq, Nat.ModEq.refl]
+
   · by_cases hmod :
       parityAffineShiftCollisionCoordinateNat u h ≡
         parityAffineShiftCollisionCoordinateNat v g [MOD d * d]
@@ -138,9 +135,12 @@ theorem parityHalfShiftSignedQuarticCollision_eq_zeroWinding_add_wrap
   unfold parityHalfShiftSignedQuarticCollision
     parityHalfShiftSignedQuarticZeroWinding
     parityHalfShiftSignedQuarticWrap
-    regularQuarticMobiusCoefficient
+  change 4 * (∑ h ∈ H, ∑ g ∈ H, ∑ u ∈ parityAffineShiftBaseSet b r h,
+    ∑ v ∈ parityAffineShiftBaseSet b r g,
+      if parityAffineShiftResidueCoordinate d u h = parityAffineShiftResidueCoordinate d v g
+      then regularQuarticMobiusCoefficient u h v g else 0) = _
   simp_rw [quarticCollisionTerm_eq_zeroWinding_add_wrap d]
-  simp_rw [← Finset.sum_add_distrib]
+  simp_rw [Finset.sum_add_distrib]
   ring
 
 /-- Literal diagonal is contained inside the zero-winding class, but is not

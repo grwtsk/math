@@ -36,7 +36,7 @@ namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 /-- The solved lower affine form is exactly `c-h+r`. -/
 theorem solvedHalfIndex_lower_eq_symmetricLeft
     {c h r : ℕ}
-    (hle : h ≤ c)
+    (_hle : h ≤ c)
     (heven : (c - h) % 2 = 0) :
     2 * zeroWindingHalfIndexFromCoordinate c h + r =
       c - h + r := by
@@ -64,8 +64,8 @@ theorem halfIndexBinaryMobiusCoefficient_solved
       moebiusReal (c - h + r) *
         moebiusReal (c + h + r) := by
   unfold halfIndexBinaryMobiusCoefficient
-  rw [solvedHalfIndex_lower_eq_symmetricLeft hle heven,
-    solvedHalfIndex_upper_eq_symmetricRight hle heven]
+  rw [solvedHalfIndex_upper_eq_symmetricRight hle heven,
+    solvedHalfIndex_lower_eq_symmetricLeft hle heven]
 
 /-- Direct symmetric Möbius correlation on the exact admissible shift fiber. -/
 def parityZeroWindingSymmetricMobiusCorrelation

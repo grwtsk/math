@@ -46,7 +46,7 @@ def centeredNonzeroWindingEndpointMultiplicity
     (b : ℕ) : ℕ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       (centeredNonzeroWindingCandidateSet b d).card
     else 0
 
@@ -59,6 +59,12 @@ theorem reciprocalSquare_le_endpointDrop
     exact_mod_cast (by omega : 1 ≤ d - 1)
   have hdpos : (0 : ℝ) < d := by positivity
   have hdm1pos : (0 : ℝ) < (d - 1 : ℕ) := by positivity
+  have hsub : ((d - 1 : ℕ) : ℝ) = (d : ℝ) - 1 := by
+    rw [Nat.cast_sub (by omega)]
+    norm_num
+  rw [hsub]
+  have hd2 : (2 : ℝ) ≤ d := by exact_mod_cast hd
+  have hdm1 : (0 : ℝ) < (d : ℝ) - 1 := by linarith
   field_simp
   nlinarith
 
@@ -87,7 +93,11 @@ theorem sum_reciprocalSquare_Ico_two_le_one
           finiteWeightDropTelescope
             (fun t : ℕ => (((t + 1 : ℕ) : ℝ))⁻¹)
             (b - 2)
-        simpa [Nat.add_assoc, Nat.add_comm, Nat.add_left_comm,
+        have hshift : (1 : ℝ) + ((b - 2 : ℕ) : ℝ) = ((b - 1 : ℕ) : ℝ) := by
+          rw [Nat.cast_sub h2b, Nat.cast_sub (by omega)]
+          push_cast
+          ring
+        simpa [hshift, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm,
           Nat.add_sub_of_le h2b] using htel
       _ ≤ 1 := by
         have hnonneg :
@@ -131,7 +141,6 @@ theorem effectiveSquareModulusReciprocalSquareMass_le_two
   by_cases hsq : d * d < b
   · simp [hsq]
   · simp [hsq]
-    positivity
 
 /-- The integer winding radius is bounded by the corresponding real reciprocal
 square contribution. -/
@@ -165,18 +174,18 @@ theorem centeredNonzeroWindingEndpointMultiplicity_le_four_mul
   have hreal :
       ((∑ d ∈ effectiveEndpointSquareModulusSet b,
         if hd : 0 < d then
-          letI : NeZero d := ⟨ne_of_gt hd⟩
+          let : NeZero d := ⟨ne_of_gt hd⟩
           (centeredNonzeroWindingCandidateSet b d).card
         else 0 : ℕ) : ℝ) ≤ 4 * (b : ℝ) := by
     calc
       ((∑ d ∈ effectiveEndpointSquareModulusSet b,
         if hd : 0 < d then
-          letI : NeZero d := ⟨ne_of_gt hd⟩
+          let : NeZero d := ⟨ne_of_gt hd⟩
           (centeredNonzeroWindingCandidateSet b d).card
         else 0 : ℕ) : ℝ) =
           ∑ d ∈ effectiveEndpointSquareModulusSet b,
             if hd : 0 < d then
-              letI : NeZero d := ⟨ne_of_gt hd⟩
+              let : NeZero d := ⟨ne_of_gt hd⟩
               (2 : ℝ) * centeredWindingRadius b d
             else 0 := by
         push_cast
@@ -185,7 +194,7 @@ theorem centeredNonzeroWindingEndpointMultiplicity_le_four_mul
         have hdpos :
             0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hdmem).1).1
         simp only [dif_pos hdpos]
-        letI : NeZero d := ⟨ne_of_gt hdpos⟩
+        let : NeZero d := ⟨ne_of_gt hdpos⟩
         rw [card_centeredNonzeroWindingCandidateSet]
         norm_num
       _ ≤ ∑ d ∈ effectiveEndpointSquareModulusSet b,
@@ -195,7 +204,7 @@ theorem centeredNonzeroWindingEndpointMultiplicity_le_four_mul
         have hdpos :
             0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hdmem).1).1
         simp only [dif_pos hdpos]
-        letI : NeZero d := ⟨ne_of_gt hdpos⟩
+        let : NeZero d := ⟨ne_of_gt hdpos⟩
         exact mul_le_mul_of_nonneg_left
           (centeredWindingRadius_cast_le b d) (by norm_num)
       _ = (2 : ℝ) * (b : ℝ) *
