@@ -1,0 +1,63 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-cumulative-quartic-packing-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "f19294f77a6e75f471d28387c389043f43a31e3d"
+parent_tree = "35ede38584811c37f26bd858db9f5e39211ac629"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SAME_STAGE_SCALE_PACKET_REJECTED / CUMULATIVE_PACKING_ENDPOINT_TYPED"
+
+[rejected_same_stage_packet]
+reason = "for a!=0 the scaled Green envelope dominates a positive multiple of the scaled normalized coefficient, so envelope->0 and coefficient->L>0 are incompatible"
+constructive_supplier_target = false
+
+[cumulative_endpoint]
+common_lower_weight = "lambda_j >= 0"
+axial_lower = "lambda_j <= A_j^D"
+transverse_lower = "lambda_j <= T_j^D"
+divergence = "sum_{j<N} lambda_j -> +infinity"
+bounded_volume = "sum_{j<N} Q_j^D <= B for all N"
+off_line_factor = "a^4+3*a^2*t^2 > 0 when a!=0"
+conclusion = "contradiction; hence RH if supplied for every hypothetical off-line zero"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicCumulativeQuarticPacking"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicCumulativeQuarticPacking.lean"
+blob = "97657a3b19c9165140ca8b5c12154447aee40269"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicCumulativeQuarticPackingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicCumulativeQuarticPackingControls.lean"
+blob = "0e4b0ca323ba60420833279a5c08de94a6ddbf54"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "23d0531414c20102ddb08041623dd1f7451efcdc"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-cumulative-quartic-packing.md"
+blob = "34fc323de7653f6feae4024a94a351a06280b0aa"
+
+[evidence_states]
+CLAIM_SORT_REPAIRED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SAME_STAGE_SCALE_PACKET_REJECTED = true
+CUMULATIVE_PACKING_ENDPOINT_TYPED = true
+UNIFORM_TOTAL_BUDGET_PROVED = false
+DIVERGENT_COMMON_LOWER_MASS_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "prove an unconditional finite cumulative budget from dyadic safe-half-plane source bounds",
+  "construct a common lower weight dominated by both normalized dyadic Gram coefficients",
+  "prove that lower weight has divergent partial sums",
+  "keep the upper and lower source tasks logically independent"
+]

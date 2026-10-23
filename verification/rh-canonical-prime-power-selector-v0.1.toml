@@ -1,0 +1,78 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-canonical-prime-power-selector-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+prime_coordinate_issue = 126
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "bf6a350f75e0bd2267e088d96c5a6cc65f6aad62"
+parent_tree = "5e64d27f85c9f7081c9a64133c4fbb5e859fff6c"
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CANONICAL_PRIME_POWER_SELECTOR_DEFINED"
+
+[mathematical_scope]
+selector = "least q>N satisfying IsPrimePow q"
+existence = "Euclid: a prime >= N+1 is a prime power"
+canonical_prime = "minFac(q)"
+canonical_exponent = "factorization(q)(minFac(q))"
+representation_unique = true
+strict_sequence = true
+no_skipped_prime_power_between_successive_values = true
+detector_selects_arithmetic_points = false
+pnt_required = false
+coefficient_source = "pinned von Mangoldt Lambda(p^k)=log p"
+packing_point = "(k log p, log p)"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerSelector"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalPrimePowerSelector.lean"
+blob = "77db66a35bd7aca38d1bd90cf6e81d4f84a3c25d"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPrimePowerSelectorControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalPrimePowerSelectorControls.lean"
+blob = "fd25b534a47d31264569af71ff29e5f9b9aa81e4"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "0d8cf18f484cdf5e1ea367392c4b17b33aab9ce6"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-prime-power-selector.md"
+blob = "e2c27ad3c5cbffc193432ce8151bc5949b84713d"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+CANONICAL_PRIME_POWER_SELECTOR_DEFINED = true
+EXPLICIT_FORMULA_COMPLETION_ACCEPTED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "formalize/import the full issue-189 explicit formula including gamma, pole, trivial-zero, nontrivial-zero, endpoint and tail channels",
+  "prove how the accepted detector/source windows control or group the canonical prime-power schedule, if that route is used",
+  "prove the signed-quartic comparison for consecutive canonical packing points",
+  "prove positive limiting coefficient and complete residual decay",
+  "construct the theorem-bound PNT/circularity dependency audit"
+]
+
+[nonclaims]
+items = [
+  "no detector inversion is used to choose prime powers",
+  "no prime number theorem is used for event existence or ordering",
+  "no full Weil/Guinand explicit formula",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]

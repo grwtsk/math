@@ -1,0 +1,74 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-chebyshev-cumulative-budget-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "12c4a34d6fa62722192174bb6a466a6cf281b6e0"
+parent_tree = "57c6a7c6e4c54661bcf62a7b44070c8ad8665a91"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / UNCONDITIONAL_CUMULATIVE_UPPER_BUDGET_SOURCE_WRITTEN"
+
+[arithmetic_input]
+chebyshev = "psi(x) <= (log 4 + 4) x"
+weighted_octave_mass = "sum_(X<n<=2X) Lambda(n)/n <= 2*(log 4+4)"
+pnt_used = false
+all_dyadic_energy_bound_used = false
+rh_used = false
+
+[geometric_envelope]
+block = "safe block <= K_z * dyadicWeight(1/2,j)"
+quartic_pair = "Q_j^D <= 148 * pairEnvelope_j"
+pair_majorant = "pairEnvelope_j <= 4*K_z^4*dyadicWeight(2,j)"
+summable = true
+canonical_budget = "B_z = tsum_j Q_j^D"
+every_finite_prefix_bounded = true
+
+[cumulative_frontier]
+upper_volume_task_source_written = true
+lower_density_task = "find lambda_j>=0 with lambda_j<=A_j^D,T_j^D and partial sums -> +infinity"
+lower_density_task_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicChebyshevCumulativeBudget"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicChebyshevCumulativeBudget.lean"
+blob = "f9987515ec929aec8711751eaa98e081bf6dba6d"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicChebyshevCumulativeBudgetControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicChebyshevCumulativeBudgetControls.lean"
+blob = "1156e72892e7055a9f9d303df43a175e98f602af"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "ec6f06972b8bb2c5fb5ebb907032d54abfe6f539"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-chebyshev-cumulative-budget.md"
+blob = "04fd62096245e48c86acd3507e4730d25ad427c4"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+UNCONDITIONAL_CUMULATIVE_UPPER_BUDGET_SOURCE_WRITTEN = true
+DIVERGENT_COMMON_LOWER_MASS_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct common lower weight lambda_j dominated by both normalized dyadic Gram coefficients",
+  "prove the lower-weight partial sums diverge under the hypothetical off-line assumption",
+  "bind any lower-density input to an exact arithmetic/test source without using RH or target positivity"
+]
+
+[nonclaims]
+items = [
+  "source-written upper budget is not an elaboration or kernel receipt",
+  "no divergent common lower mass theorem",
+  "no unconditional RH proof"
+]
