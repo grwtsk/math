@@ -1,0 +1,53 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-mobius-log-high-gcd-type-ii-counting-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogHighGCDTypeIICountingCore"
+
+[source_binding]
+parent_revision = "1e78b71f5b5d44c35e5ba7cf5057173800e5213d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_DIVISOR_SUM_BOUND_SOURCE_PROVED / EXACT_FEJER_WEIGHT_UNIT_BOUND_SOURCE_PROVED / ABSOLUTE_HIGH_GCD_TYPE_II_BOUND_SOURCE_PROVED / SIGNED_LOW_GCD_TYPE_I_BOUND_OPEN"
+
+[closed]
+positive_divisor_incidence_finset = true
+integer_floor_double_count = true
+finite_divisor_summatory_bound = true
+explicit_B_ge_one_hypothesis = true
+exact_fejer_prefix_weight_nonnegative_reused = true
+exact_fejer_prefix_weight_le_one_reused = true
+exact_shift_weight_le_one = true
+high_genuine_term_log_bound = true
+exact_high_g_term_index = true
+exact_aggregate_term_sum_identity = true
+reduced_tuple_majorizing_box = true
+reduced_tuple_maps_to = true
+reduced_tuple_injective = true
+no_hidden_shift_or_divisor_multiplicity = true
+relaxed_box_cardinality_formula = true
+finite_reciprocal_square_tail = true
+sqrt_cutoff_three_halves_power = true
+absolute_high_gcd_type_ii_exact_target = true
+absolute_high_gcd_type_ii_supplier = true
+signed_type_i_only_adapter = true
+sibling_signed_kernel_identity_used = false
+sibling_centered_winding_identity_used = false
+
+[frontier]
+remaining = "prove the genuinely signed low-g Type I X^(3/2) log^4 bound at g <= floor(sqrt(X)), preserving the complete centered anchor/anchor, mixed, and genuine channels"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+AXIOM_AUDITED = false
+FINITE_DIVISOR_SUM_BOUND_SOURCE_PROVED = true
+EXACT_FEJER_WEIGHT_UNIT_BOUND_SOURCE_PROVED = true
+ABSOLUTE_HIGH_GCD_TYPE_II_BOUND_SOURCE_PROVED = true
+SIGNED_LOW_GCD_TYPE_I_BOUND_PROVED = false
+SEVEN_EIGHTHS_SQUAREFREE_GCD_STRATIFIED_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,39 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-dft-smoothing-packet-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "7ef71931b6815f63db94b37bf06af9fa4aad6382"
+parent_tree = "29037e6a57a24a551c1d13ee3885210d496cad60"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXPLICIT_SMOOTHING_PACKET_TYPED / SMOOTHING_PACKET_CONSTRUCTION_OPEN"
+
+[packet]
+cutoff = "finite N"
+coefficient_l2_budget = "<= N"
+boundary_width_budget = "<= 1/N"
+family_cutoff = "N_X <= X^beta + O(1)"
+
+[window]
+beta_min = "1/4"
+beta_max = "1/2"
+balanced_beta = "1/3"
+balanced_power = "2/3"
+
+[frontier]
+interface = "PrimeDFTSmoothingPacketReadoutAt(family,rho)"
+packet_construction = "open"
+source_faithful_readout = "open"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXPLICIT_SMOOTHING_PACKET_TYPED = true
+SMOOTHING_PACKET_CONSTRUCTION_PROVED = false
+THREE_QUARTER_POWER_SAVING_PROVED = false
+RECURRENCE_7_8_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

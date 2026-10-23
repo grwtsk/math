@@ -1,0 +1,42 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-shift-correlation-reduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerShiftCorrelationReductionCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerShiftCorrelationReductionCore"
+
+[source_binding]
+parent_revision = "6f4138bf842089ebbbc5179840676b28a04d7e11"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / OFFDIAGONAL_POSITIVE_SHIFT_REINDEXING_SOURCE_PROVED / CENTERED_PRIME_PAIR_SHIFT_FORM_SOURCE_PROVED / HALF_POWER_PER_SHIFT_SUFFICIENT_CRITERION_SOURCE_PROVED / SEVEN_EIGHTHS_SHIFT_CORRELATION_BOUND_OPEN"
+
+[closed]
+off_diagonal_ordered_pair_sum = true
+upper_lower_pair_symmetry = true
+off_diagonal_twice_upper_triangle = true
+positive_lag_range = true
+positive_lag_fiber_equivalence = true
+lag_to_shifted_sum_identity = true
+centered_prime_pair_shift_form = true
+off_diagonal_shift_aggregate_identity = true
+absolute_shift_to_signed_adapter = true
+pointwise_square_root_shift_to_aggregate_adapter = true
+shift_aggregate_to_off_diagonal_adapter = true
+shift_aggregate_to_partial_discrepancy_adapter = true
+
+[frontier]
+remaining = "prove the signed aggregate X^(3/2) log^4 bound for the explicit Fejer-weighted centered prime-pair shift correlations at the concrete ceiling fourth-root cutoff, or prove the stronger pointwise X^(1/2) log^4 upper bound for every admissible shift"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+OFFDIAGONAL_POSITIVE_SHIFT_REINDEXING_SOURCE_PROVED = true
+CENTERED_PRIME_PAIR_SHIFT_FORM_SOURCE_PROVED = true
+HALF_POWER_PER_SHIFT_SUFFICIENT_CRITERION_SOURCE_PROVED = true
+SEVEN_EIGHTHS_SHIFT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SIGNED_OFFDIAGONAL_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
