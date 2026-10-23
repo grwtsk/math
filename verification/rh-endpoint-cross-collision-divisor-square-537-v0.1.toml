@@ -1,0 +1,99 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-endpoint-cross-collision-divisor-square-537-v0.1"
+owner_repository = "grwtsk/math"
+issue = 537
+parent_issue = 532
+parent_pr = 534
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_DIVISOR_SQUARE_IDENTITY_SUPPLIER_OPEN_SIEVED_CROSS_COLLISION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionDivisorSquareSieve"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionDivisorSquareSieve"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_revision = "7d3faf3d588280045f9e05d9b2aa9183660657a3"
+candidate_branch = "research/rh-divisor-square-midpoint-537-20261021"
+theorem_source_commit = "91ccf705d82b976896bb4de0f21ae1b103436f28"
+theorem_source_tree = "5b08acff4c2b3ab50f0d746cbb0e94e1289b9fb8"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionDivisorSquareSieve.lean"
+theorem_source_git_blob = "59f7d81a0a056731d8a4ea9dae5fdb49046d5fdc"
+
+[selected_increment]
+finite_divisor_square_sum = "squareDivisorMobiusSum"
+identity_supplier = "SquarefreeDivisorSquareMobiusIdentity"
+mobius_square_transport = "moebiusReal_sq_eq_squareDivisorMobiusSum"
+pointwise_sieve_term = "mertensSquarefreeMidpointDivisorSieveTerm"
+pointwise_transport = "mertensThreePointProgressionTerm_eq_divisorSquareSieve"
+endpoint_energy = "mertensEndpointCrossCollisionDivisorSquareSieveEnergy"
+weighted_energy = "weightedMertensEndpointCrossCollisionDivisorSquareSieveEnergy"
+all_scale_surface = "SubpolynomialWeightedMertensEndpointDivisorSquareCrossCollision"
+proof_classification = "PROOF_RELEVANT_ARITHMETIC_IDENTITY_ADAPTER_PLUS_EXACT_FINITE_TRANSPORT"
+
+[identity_boundary]
+target = "1_Squarefree(m)=sum_(d|m,d*d|m) mu(d)"
+positive_input_only = true
+supplier_constructed = false
+silently_assumed = false
+mathlib_direct_theorem_located = false
+related_mathlib_theorem = "ArithmeticFunction.moebius_sq"
+
+[transport]
+pointwise_exact = true
+endpoint_exact = true
+weighted_exact = true
+constants_changed = false
+absolute_values_inserted = false
+sign_preserved = true
+finite_support_preserved = true
+reciprocal_endpoint_weight_preserved = true
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+divisor_square_identity_supplier_constructed = false
+sieved_cross_collision_estimate_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionDivisorSquareSieve"
+authored_declaration_count = 13
+definition_count = 5
+theorem_script_count = 7
+structure_count = 1
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionSquarefreeMidpoint.lean"
+git_blob = "49f0037ff8a531a68c0d91adcf15811bab361bcb"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_534"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+declaration = "ArithmeticFunction.moebius_sq"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+unproved_identity_not_admitted = true
+repository_moebius_wrapper_reused = true
+divisor_square_condition_preserved = true
+density_heuristic_not_used = true
+absolute_value_not_inserted = true
+binary_chowla_not_promoted_without_uniform_adapter = true
+source_elaboration_not_promoted_to_theorem = true
+rh_not_claimed = true
+
+[open_obligations]
+construct_squarefree_divisor_square_identity = true
+exact_head_elaboration = true
+transitive_trust_audit = true
+independent_replay = true
+sieved_cross_collision_estimate = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+divisor_square_identity_proved = false
+cross_collision_bound_proved = false
+binary_chowla_adapter_proved = false
+riemann_hypothesis_proved = false
