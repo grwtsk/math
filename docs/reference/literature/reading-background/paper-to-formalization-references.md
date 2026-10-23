@@ -3087,10 +3087,10 @@ one RH-W01 finite square-tent image-positivity increment formerly in
 PR #1092 was subsequently merged by another concurrent actor and its head
 branch deleted; **that merge is source integration, not accepted kernel evidence**.
 This provenance-only update is isolated on
-\`docs/rh-w01-bombieri-weil-provenance-20261023\` based on
-\`grwtsk/math@0e2b3ff51073e44dc6674063c10696a1f1d30626\`.
+`docs/rh-w01-bombieri-weil-provenance-20261023` based on
+`grwtsk/math@0e2b3ff51073e44dc6674063c10696a1f1d30626`.
 The live RH-facing terminal consumer remains
-\`GRWTSK.RiemannHypothesis.WeilPositivityImpliesRH.proof\`;
+`GRWTSK.RiemannHypothesis.WeilPositivityImpliesRH.proof`;
 its concrete classical zeta source/form/criterion record is **not inhabited**
 by the arithmetic-image construction.
 
@@ -3103,21 +3103,21 @@ Clay Mathematics Institute official problem account (2000; collected in
 **V. Further evidence: the explicit formula**, printed pp. 8–9.
 Stable original: https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf
 and https://www.claymath.org/millennium/Riemann-Hypothesis/ .
-The account's \`W\` consists of specified complex functions on the
+The account's `W` consists of specified complex functions on the
 positive half-line, piecewise continuously differentiable with finitely
 many first-kind discontinuities and averaged endpoint values for
-function/derivative, with some \`δ>0\`, growth \`O(x^δ)\` at zero and
-\`O(x^(-1-δ))\` at infinity. The Mellin convention is \`dx/x\`.
+function/derivative, with some `δ>0`, growth `O(x^δ)` at zero and
+`O(x^(-1-δ))` at infinity. The Mellin convention is `dx/x`.
 The autocorrelation criterion additionally requires the **two distinct**
-vanishing integrals \`∫ g(x) dx/x = 0\` and \`∫ g(x) dx = 0\`;
+vanishing integrals `∫ g(x) dx/x = 0` and `∫ g(x) dx = 0`;
 its explicit formula retains primes/powers, archimedean terms, pole and
 symmetrically summed nontrivial zeros and uses its **printed sign convention**.
 Only the two zero-moment requirements are encoded as the repository's
-\`BombieriZeroMomentConditions\` and tested against canonical tents.
-That record does **not** implement the whole class \`W\`, convolution,
+`BombieriZeroMomentConditions` and tested against canonical tents.
+That record does **not** implement the whole class `W`, convolution,
 the stated sign, test topology, or a Weil→RH implication.
-Relationship: \`direct-hypothesis-encoding\` (local and partial),
-\`source-proof-candidate\`, \`unresolved\`. There is **no direct paper
+Relationship: `direct-hypothesis-encoding` (local and partial),
+`source-proof-candidate`, `unresolved`. There is **no direct paper
 theorem import** and **no kernel-verified paper-to-Lean bridge**.
 
 **RH-W01-P2 — classical RH-facing criterion context only.**
@@ -3129,8 +3129,8 @@ https://www.bdim.eu/item?id=RLIN_2000_9_11_3_183_0 ;
 **MR1841692**. No unverified DOI is assigned.
 The article's abstract identifies **positive semidefiniteness of its
 specific Weil quadratic functional** with RH; it analyzes a minimum in the
-unit ball of an \`L²\` space of functions supported in \`[-t,t]\`,
-positive definiteness at sufficiently small \`t\`, and finite Fourier
+unit ball of an `L²` space of functions supported in `[-t,t]`,
+positive definiteness at sufficiently small `t`, and finite Fourier
 truncations. Its stated finite-inertia conclusion is conditional on RH
 failing with only **finitely many off-critical-line nontrivial zeros**,
 and on a **sufficiently large truncation**: the number of negative
@@ -3139,14 +3139,14 @@ A numbered theorem locator, translation of multiplicity conventions,
 full test space and normalization were **not independently authenticated**
 in this increment, so these are **abstract/method-level comparisons,
 not imported proof terms**.
-The local \`WeilPositivityImpliesRH\`/\`WeilPositivityIffRH\` records
+The local `WeilPositivityImpliesRH`/`WeilPositivityIffRH` records
 require actual Lean proof fields for the *chosen form and test space*.
 They are **conditional interfaces**, not paper-derived inhabitants.
 The local square-tent-image countermodel is a **repository-authored
 algebraic obstruction**, not a theorem asserted by Bombieri.
-Relationships: \`conditional-interface\`, \`methodological-analogy\`,
-\`source-proof-candidate\` for the independent countermodel,
-\`unresolved\`. No identified kernel-verified analytic criterion bridge.
+Relationships: `conditional-interface`, `methodological-analogy`,
+`source-proof-candidate` for the independent countermodel,
+`unresolved`. No identified kernel-verified analytic criterion bridge.
 
 **RH-W01-P3 — comparison of signed finite Hermitian mechanisms only.**
 Levent Alpöge and Ralph Furman,
@@ -3157,51 +3157,73 @@ DOI-form stable arXiv identifier https://doi.org/10.48550/arXiv.2608.13637 .
 The arXiv abstract was compared on 2026-10-23; a specific revision's
 PDF bytes and theorem-text hash were **not** pinned here.
 The paper's stated unconditional zeta result is a proportion of at least
-\`2/3\` simple zeros on the critical line and \`5/6\` distinct zeros
+`2/3` simple zeros on the critical line and `5/6` distinct zeros
 (counted in its multiplicity/height-asymptotic conventions), sharpened
-by its Montgomery–Taylor window to approximately \`0.6725\` and
-\`0.8362\`. Its mechanism combines an **actual finite compression of
+by its Montgomery–Taylor window to approximately `0.6725` and
+`0.8362`. Its mechanism combines an **actual finite compression of
 Weil's Hermitian form**, Sylvester inertia, a rank–trace bound, and
 the specific explicit-formula/second-moment and zero-counting inputs.
 The local negative-complement example is **not** its finite compression,
 does not realize the paper's signed matrix or estimates, and yields
-**no zero proportion**. Relationship: \`methodological-analogy\` only;
+**no zero proportion**. Relationship: `methodological-analogy` only;
 no theorem or external Lean implementation is imported, no historical
 influence is inferred from similarity.
 
 ### Exact local source bindings: fully qualified declarations, commits and blobs
 
-All current-snapshot paths below are within **\`grwtsk/math\`** and
-pinned to \`0e2b3ff51073e44dc6674063c10696a1f1d30626\`; a blob
+All current-snapshot paths below are within **`grwtsk/math`** and
+pinned to `0e2b3ff51073e44dc6674063c10696a1f1d30626`; a blob
 identifies the precise file bytes at that snapshot.
 Their status is **source present, NOT_RUN for this provenance audit**,
 not a claim that the corresponding Lean theorem was kernel checked.
 
 | Publication relation and classification | Actual fully qualified declarations and hypotheses | Exact path / blob at pinned source commit |
 | --- | --- | --- |
-| P1: partial published **moment-hypothesis encoding**, plus local source proof candidates | \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.BombieriZeroMomentConditions\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.canonicalTentReal_ordinaryMoment_pos\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.no_bombieriScaledCanonicalTentRealization\`. The last assertion excludes an **unmodified nonzero scalar-rescaled** tent as an admissible two-moment family, not any transformed or corrected tent. | \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentObstruction.lean\`; blob \`cc9ed5b34159242ac69eb569f80e1ea7b420fa53\` |
-| P1: local two-tent **moment-rank source candidate** | \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.combination_eq_zero_of_bombieriMoments\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.no_nondegenerateTwoTentMomentCorrectedPair\`. Their domain is the first **two source tents**, with independently specified real ordinary and reciprocal moments; not the whole classical \`W\`. | \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean\`; blob \`e522772381075f125453ef2ba6b30e63d2873910\` |
-| P1: local **three-tent cofactor source candidate**, not a classical Weil pairing | \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection.correctedThreeTent_zeroMoments\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection.exists_nonzero_threeTent_zeroMoments\`. Hypotheses and output concern the actual stage-two/three/four source tents and their two linear moment functionals; no arbitrary test-space density. | \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentCorrection.lean\`; blob \`644be0606ac195f35c8409f8877a707edb2aa457\` |
-| Arithmetic source **direct local import**, not an external paper theorem import | \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.arithmeticCrossCoefficient_diag_eq_mangoldt\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm_self_re_nonnegative\`. Inputs: \`M : ℕ\`, coefficient vectors \`Combination M := Fin (M+1) → ℂ\`; off-diagonal entries vanish from source window disjointness and diagonal entries equal authentic prime-power \`stageEnergy\`/\`squareTentMangoldt\`. The proved-in-source sign is **nonnegative finite arithmetic Hermitian diagonal**, not the classical Weil sign. | \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean\`; blob \`f33d5f402160bc141115c450f1488c103e9cf131\` |
-| P2: **conditional formal Weil criterion**, no concrete classical inhabitant | \`GRWTSK.RiemannHypothesis.WeilHermitianForm.PositiveDiagonal\`; \`GRWTSK.RiemannHypothesis.WeilPositivityImpliesRH.proof\`; \`GRWTSK.RiemannHypothesis.WeilPositivityIffRH.proof\`; \`GRWTSK.RiemannHypothesis.PositiveNormalizationTransport.sourcePositive_of_repoPositive\`. Hypotheses: a named \`WeilTestSpace\`, matching Hermitian form, correct source bindings, a **real positive scale** and linear equivalence where transported, and **actual proof field** for the relevant RH direction. No field is filled by this paper citation. | \`GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean\`; blob \`29d8c4f1c741ab25f6abd136a3c3c2eb900da69a\` |
-| P2: **conditional all-pairs transport obstruction** | \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport.positiveCone_preserved_on_image\`; \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.no_exactSourceBoundTransport_of_nonzeroCross\`. A target \`GuinandWeilCompactSupportModel\` and **actual** polarized equality/positive scale are explicit *assumptions*, not built instances. Output is image nonnegativity or conditional nonexistence upon a **source-bound nonzero classical cross** witness. | \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean\`; blob \`2c25cac04fe5575ac0242349a2dcc5592d19f0bb\` |
-| P2/P3 contextual analogy only; **repository-authored new diagnostic source proof candidate** | \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.Extension\`; \`...extensionForm\`; \`...extensionDiagonal\`; \`...extensionForm_arithmeticEmbed\`; \`...extensionForm_hermitian\`; \`...extensionDiagonal_arithmeticEmbed_nonnegative\`; \`...extensionDiagonal_negativeDirection\`; \`...arithmetic_image_positivity_does_not_imply_global\`; \`...not_globally_nonnegative\`. Every ellipsis expands **only** to \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction\`; these are **not** Bombieri or Alpöge–Furman theorem statements. Exact introduction in PR #1092 at commit \`8099b5be5a0a419ed6840a5721811e77db398b94\`, original blob \`47a674ba4f5005c28f16a8a818dcde3beec1d37e\`; revised main snapshot cited in the last column. | \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentImagePositivityObstruction.lean\`; current blob \`c070463ad0d2ae87d9119030131fdd60b4fecf2b\` |
-| P3: independent local **negative-sector comparison**, analogy only | \`GRWTSK.LinearAlgebra.SignedWeilComparisonGate.PositiveGramComparison\`; \`GRWTSK.LinearAlgebra.SignedWeilComparisonGate.negativeWitness_forces_comparisonError\`; \`GRWTSK.LinearAlgebra.SignedWeilComparisonGate.signed_not_positive_from_positive_metric\`. Assumed \`G(x)≥0\`, independent \`q(x)≤-μ\` with \`μ≥0\`, and \`|q(x)-G(x)|≤ε(x)\` give \`μ≤ε(x)\`. None supplies a classical Weil form, zero divisor, zero-density theorem, or a source-furnished \`ε\`. | \`GRWTSK/LinearAlgebra/SignedWeilComparisonGate.lean\`; blob \`6f81cabc4b5c9a7fc60c3a9a742588dc6ac0399f\` |
+| P1: partial published **moment-hypothesis encoding**, plus local source proof candidates | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.BombieriZeroMomentConditions`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.canonicalTentReal_ordinaryMoment_pos`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.no_bombieriScaledCanonicalTentRealization`. The last assertion excludes an **unmodified nonzero scalar-rescaled** tent as an admissible two-moment family, not any transformed or corrected tent. | `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentObstruction.lean`; blob `cc9ed5b34159242ac69eb569f80e1ea7b420fa53` |
+| P1: local two-tent **moment-rank source candidate** | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.twoTentMomentDeterminant_pos`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.combination_eq_zero_of_bombieriMoments`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction.no_nondegenerateTwoTentMomentCorrectedPair`. Their domain is the first **two source tents**, with independently specified real ordinary and reciprocal moments; not the whole classical `W`. | `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentRankObstruction.lean`; blob `e522772381075f125453ef2ba6b30e63d2873910` |
+| P1: local **three-tent cofactor source candidate**, not a classical Weil pairing | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection.correctedThreeTent_zeroMoments`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection.exists_nonzero_threeTent_zeroMoments`. Hypotheses and output concern the actual stage-two/three/four source tents and their two linear moment functionals; no arbitrary test-space density. | `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentCorrection.lean`; blob `644be0606ac195f35c8409f8877a707edb2aa457` |
+| Arithmetic source **direct local import**, not an external paper theorem import | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.arithmeticCrossCoefficient_diag_eq_mangoldt`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.sourcePolarizedForm_self_re_nonnegative`. Inputs: `M : ℕ`, coefficient vectors `Combination M := Fin (M+1) → ℂ`; off-diagonal entries vanish from source window disjointness and diagonal entries equal authentic prime-power `stageEnergy`/`squareTentMangoldt`. The proved-in-source sign is **nonnegative finite arithmetic Hermitian diagonal**, not the classical Weil sign. | `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean`; blob `f33d5f402160bc141115c450f1488c103e9cf131` |
+| P2: **conditional formal Weil criterion**, no concrete classical inhabitant | `GRWTSK.RiemannHypothesis.WeilHermitianForm.PositiveDiagonal`; `GRWTSK.RiemannHypothesis.WeilPositivityImpliesRH.proof`; `GRWTSK.RiemannHypothesis.WeilPositivityIffRH.proof`; `GRWTSK.RiemannHypothesis.PositiveNormalizationTransport.sourcePositive_of_repoPositive`. Hypotheses: a named `WeilTestSpace`, matching Hermitian form, correct source bindings, a **real positive scale** and linear equivalence where transported, and **actual proof field** for the relevant RH direction. No field is filled by this paper citation. | `GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean`; blob `29d8c4f1c741ab25f6abd136a3c3c2eb900da69a` |
+| P2: **conditional all-pairs transport obstruction** | `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport.positiveCone_preserved_on_image`; `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.no_exactSourceBoundTransport_of_nonzeroCross`. A target `GuinandWeilCompactSupportModel` and **actual** polarized equality/positive scale are explicit *assumptions*, not built instances. Output is image nonnegativity or conditional nonexistence upon a **source-bound nonzero classical cross** witness. | `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean`; blob `2c25cac04fe5575ac0242349a2dcc5592d19f0bb` |
+| P2/P3 contextual analogy only; **repository-authored new diagnostic source proof candidate** | Exact fully qualified declarations are individually enumerated immediately below this table. Original source in PR #1092: commit `8099b5be5a0a419ed6840a5721811e77db398b94`, original blob `47a674ba4f5005c28f16a8a818dcde3beec1d37e`. The repaired current-snapshot source is not a Bombieri or Alpöge–Furman theorem. | `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentImagePositivityObstruction.lean`; current blob `c070463ad0d2ae87d9119030131fdd60b4fecf2b` |
+| P3: independent local **negative-sector comparison**, analogy only | `GRWTSK.LinearAlgebra.SignedWeilComparisonGate.PositiveGramComparison`; `GRWTSK.LinearAlgebra.SignedWeilComparisonGate.negativeWitness_forces_comparisonError`; `GRWTSK.LinearAlgebra.SignedWeilComparisonGate.signed_not_positive_from_positive_metric`. Assumed `G(x)≥0`, independent `q(x)≤-μ` with `μ≥0`, and `|q(x)-G(x)|≤ε(x)` give `μ≤ε(x)`. None supplies a classical Weil form, zero divisor, zero-density theorem, or a source-furnished `ε`. | `GRWTSK/LinearAlgebra/SignedWeilComparisonGate.lean`; blob `6f81cabc4b5c9a7fc60c3a9a742588dc6ac0399f` |
+
+**Full new-module Lean source declaration identifiers** (definitions, structural lemmas, and two obstruction conclusions; local source candidates, not kernel receipts):
+
+```lean
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.Extension
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.arithmeticEmbed
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionDiagonal
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.arithmeticEmbed_injective
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm_arithmeticEmbed
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm_hermitian
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm_add_left
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm_add_right
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm_smul_left
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionForm_smul_right
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionDiagonal_arithmeticEmbed_nonnegative
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.negativeDirection
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.negativeDirection_not_in_arithmetic_image
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.extensionDiagonal_negativeDirection
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.arithmetic_image_positivity_does_not_imply_global
+GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.not_globally_nonnegative
+```
 
 The **new canonical observable** is only the real diagonal of
-\`extensionForm\` on \`Extension M := (Fin (M+1) → ℂ) × ℂ\`.
-With inherited \`A_M(u,v) := sourcePolarizedForm u v\`, let
-\`B_M((u,a),(v,b)) := A_M(u,v) - conj(a)*b\`,
-\`q_M(x) := Re B_M(x,x)\`, and \`e(u):=(u,0)\`.
-For each natural \`M\`, the source candidate proves:
-\`\`\`
+`extensionForm` on `Extension M := (Fin (M+1) → ℂ) × ℂ`.
+With inherited `A_M(u,v) := sourcePolarizedForm u v`, let
+`B_M((u,a),(v,b)) := A_M(u,v) - conj(a)*b`,
+`q_M(x) := Re B_M(x,x)`, and `e(u):=(u,0)`.
+For each natural `M`, the source candidate proves:
+```
 Function.Injective e
 ∧ (∀ u v, B_M (e u) (e v) = A_M u v)
 ∧ (∀ u, 0 ≤ q_M (e u))
 ∧ (∃ x, x ∉ Set.range e ∧ q_M x < 0).
-\`\`\`
-The **exact finite witness** is \`x=(0,1)\`, outside the arithmetic
-image, with \`q_M(x)=-1\`. The argument is an algebraic countermodel,
+```
+The **exact finite witness** is `x=(0,1)`, outside the arithmetic
+image, with `q_M(x)=-1`. The argument is an algebraic countermodel,
 without a height cutoff, limit, truncation error, interval enclosure
 or external sign certificate. The *positive* property is precisely
 nonnegativity of **every diagonal in the finite arithmetic image**.
@@ -3215,25 +3237,25 @@ be identified with a genuine Weil admissible test without a theorem.
 
 | Category | Exactly what is and is not supported here |
 | --- | --- |
-| **Imported mathematics** | Existing Mathlib algebra and repository's actual finite prime-power stage identities are imported *as source dependencies*. No paper's Weil criterion theorem, Bombieri finite-inertia result, Alpöge–Furman rank–trace theorem or \`Zeta23\` source is imported. Source visibility alone says nothing about the transitive kernel status of these imports. |
+| **Imported mathematics** | Existing Mathlib algebra and repository's actual finite prime-power stage identities are imported *as source dependencies*. No paper's Weil criterion theorem, Bombieri finite-inertia result, Alpöge–Furman rank–trace theorem or `Zeta23` source is imported. Source visibility alone says nothing about the transitive kernel status of these imports. |
 | **Kernel-verified local paper bridges** | **NONE established by this audit.** No matching warning-clean build + fresh kernel acceptance + full transitive axiom receipt for these exact snapshot declarations was presented. |
 | **Source proof candidates** | Bombieri two-moment tests and rank obstruction, three-tent cofactor, arithmetic Gram, and the new synthetic extension counterexample. They are written proof scripts, **not claimed ELABORATED or KERNEL_CHECKED**. |
-| **Conditional interfaces** | \`WeilPositivityImpliesRH.proof\`, \`WeilPositivityIffRH.proof\`, \`PositiveNormalizationTransport\`, \`ExactSourceBoundTransport\`; the required exact classical theorem/form and transport inhabitants are **not built**. |
-| **Finite evidence** | Explicit \`(0,1)\` / \`-1\` synthetic fixture; historical exact finite arithmetic computations, if cited elsewhere, are **not** the full analytic criterion, a Lean kernel receipt, or finite-height zeta completeness. |
+| **Conditional interfaces** | `WeilPositivityImpliesRH.proof`, `WeilPositivityIffRH.proof`, `PositiveNormalizationTransport`, `ExactSourceBoundTransport`; the required exact classical theorem/form and transport inhabitants are **not built**. |
+| **Finite evidence** | Explicit `(0,1)` / `-1` synthetic fixture; historical exact finite arithmetic computations, if cited elsewhere, are **not** the full analytic criterion, a Lean kernel receipt, or finite-height zeta completeness. |
 | **Analogies / comparisons** | Bombieri's particular classical Weil functional and Alpöge–Furman's finite signed compression illuminate where form sign and test-space coverage matter. Neither implies this local extension equals those paper forms or was historically influenced by them. |
 | **Unresolved premises** | Actual admissible Weil class and its topology, both moment/regularity conditions and correct Mellin/involution conventions, full prime/gamma/pole/zero explicit-formula identity, source-normalized *all-pairs* Hermitian comparison, zero multiplicities/height tails, positive-scale sign conversion, proof-field instantiation, density or surjectivity plus *form continuity*, and full-test nonnegativity. |
 | **Actual RH consequence** | **NONE** for the synthetic obstruction. It blocks the invalid arrow finite-image PSD → arbitrary larger target PSD. Even if a named criterion were separately accepted, the source does **not** supply its global positivity premise. |
 
 **Provenance graph, not contributor percentages:**
-\`Bombieri Clay §V\` → (only the two-zero-moment *hypothesis
-encoding*) → \`CanonicalSquareTentBombieriMomentObstruction\`;
-\`repository prime-power arithmetic\` → (locally imported source)
-→ \`CanonicalSquareTentPolarization\` → (source-only exact extension)
-→ \`CanonicalSquareTentImagePositivityObstruction\`;
-\`Bombieri 2000 Lincei\` → (criterion *context only*) →
-\`WeilPositivityImpliesRH\` (conditional field, **no proof import**);
-\`Alpöge–Furman 2026\` ↔ (comparison only, **no proof edge**)
-\`SignedWeilComparisonGate\` / the synthetic extension.
+`Bombieri Clay §V` → (only the two-zero-moment *hypothesis
+encoding*) → `CanonicalSquareTentBombieriMomentObstruction`;
+`repository prime-power arithmetic` → (locally imported source)
+→ `CanonicalSquareTentPolarization` → (source-only exact extension)
+→ `CanonicalSquareTentImagePositivityObstruction`;
+`Bombieri 2000 Lincei` → (criterion *context only*) →
+`WeilPositivityImpliesRH` (conditional field, **no proof import**);
+`Alpöge–Furman 2026` ↔ (comparison only, **no proof edge**)
+`SignedWeilComparisonGate` / the synthetic extension.
 The original human mathematical direction and formalization-assistance
 attribution are preserved in the source-file headers. Similarity is
 not evidence of intellectual derivation, priority, historical
@@ -3242,57 +3264,60 @@ influence, or a new theorem from any cited author.
 ### Exact validation record, executable-request boundary and next obstruction
 
 **Actual evidence as of this review.** Source/blob readbacks on the
-pinned \`0e2b3ff51073e44dc6674063c10696a1f1d30626\` snapshot
-and introduction \`8099b5be5a0a419ed6840a5721811e77db398b94\`
+pinned `0e2b3ff51073e44dc6674063c10696a1f1d30626` snapshot
+and introduction `8099b5be5a0a419ed6840a5721811e77db398b94`
 were successful. A GitHub commit-status lookup for the audited main
 pin and earlier introduction returned **no status contexts**; absence
 of a status context is not a build failure and is not evidence of
 a successful build. Available local execution preflight:
-\`git=/usr/bin/git\`; \`lake=NOT_FOUND\`,
-\`lean=NOT_FOUND\`, \`lean4checker=NOT_FOUND\`,
-\`leanchecker=NOT_FOUND\`. No Lean/Lake command ran here.
-Consequently **\`SOURCE_DRAFT\` / \`NOT_RUN\` /
-\`NOT_KERNEL_AUDITED\` / \`NO_RECEIPT\`** for this audit;
-\`ELABORATED\`, \`KERNEL_CHECKED\`, \`TRUST_AUDITED\`,
-\`EXTERNALLY_REPLAYED\`, and
-\`ANALYTIC_PREMISES_DISCHARGED\` are **not established**.
+`git=/usr/bin/git`; `lake=NOT_FOUND`,
+`lean=NOT_FOUND`, `lean4checker=NOT_FOUND`,
+`leanchecker=NOT_FOUND`. No Lean/Lake command ran here.
+Consequently **`SOURCE_DRAFT` / `NOT_RUN` /
+`NOT_KERNEL_AUDITED` / `NO_RECEIPT`** for this audit;
+`ELABORATED`, `KERNEL_CHECKED`, `TRUST_AUDITED`,
+`EXTERNALLY_REPLAYED`, and
+`ANALYTIC_PREMISES_DISCHARGED` are **not established**.
 No exit code, checker output, axiom closure or receipt URL may be
 fabricated. The older scoped acceptance evidence in
 [issue #100](https://github.com/grwtsk/math/issues/100) does
 **not** transfer to later source or different import closures.
 
 **Requested commands only, not receipts**, for an authorized host
-using Lean \`leanprover/lean4:v4.33.0\` and Mathlib
-\`db584cd6d46c92f209a44c0f1c829460d327499d\`:
-\`\`\`sh
+using Lean `leanprover/lean4:v4.33.0` and Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+```sh
 git checkout --detach 0e2b3ff51073e44dc6674063c10696a1f1d30626
 lake env lean --version
 lake build GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction
 lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentImagePositivityObstruction.lean
-# Additionally run a fresh version-compatible Lean kernel checker on its built .olean.
-# Lean axiom-audit source must import this module and query:
-# print axioms of
-# GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.arithmetic_image_positivity_does_not_imply_global
-# GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.not_globally_nonnegative
-# GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.realTargetForm_diagonal_nonnegative
-\`\`\`
+cat >/tmp/rh-w01-axiom-audit.lean <<'EOF'
+import GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.arithmetic_image_positivity_does_not_imply_global
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentImagePositivityObstruction.not_globally_nonnegative
+#print axioms GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentPolarization.realTargetForm_diagonal_nonnegative
+EOF
+lake env lean --trust=0 /tmp/rh-w01-axiom-audit.lean
+# Fresh kernel-check the built .olean with the version-compatible Lean checker;
+# record the actual checker invocation, exit status, and full transitive axiom closure.
+```
 The exact module, transitive imports, command/environment versions,
 exit statuses, full trusted kernel/axiom and unsafe/oracle closure,
 and independent replay must be recorded **at that same source SHA**.
-A passive request, a \`#print axioms\` line in documentation, and a
+A passive request, a `#print axioms` line in documentation, and a
 GitHub merge are not such evidence. Effectful controllers,
 runner scripts, generated or signed execution receipts, mutable
-artifacts and replay outputs belong **outside** \`grwtsk/math\`,
-in \`grwtsk/noeaaeue\`, keyed by exact math commit.
+artifacts and replay outputs belong **outside** `grwtsk/math`,
+in `grwtsk/noeaaeue`, keyed by exact math commit.
 Do not dispatch a remote run without explicit authorization, use
-Railway, merge a documentation PR, force-push, or change \`GRWTSK.lean\`.
+Railway, merge a documentation PR, force-push, or change `GRWTSK.lean`.
 
 **Single next mathematical obstruction (unchanged):** construct
-a *concrete* classical zeta \`WeilTestSpace\` and
-\`WeilHermitianForm\`, realize admissible canonical source tests
+a *concrete* classical zeta `WeilTestSpace` and
+`WeilHermitianForm`, realize admissible canonical source tests
 with exact Mellin/explicit-formula sign/normalization, and prove an
 actual coverage+density+continuity (or all-test comparison) theorem
 transferring the independently reconstructed arithmetic nonnegativity
-to \`form.PositiveDiagonal\`; alternatively exhibit an exact
+to `form.PositiveDiagonal`; alternatively exhibit an exact
 classical complementary-direction diagonal contradicting that
 specific transport. **No such bridge is proved by this increment.**
