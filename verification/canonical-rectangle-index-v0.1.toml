@@ -1,0 +1,264 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "canonical-rectangle-index-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.CanonicalRectangleIndexCore"
+build_target = "GRWTSK.Interfaces.CanonicalRectangleIndexCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "5e6577f3af825f1b825525facd748c6af51b3691"
+parent_tree = "0e8d0e87db70f55fb5ad4c37630c47291119c455"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/pole-contour-polygon-index-v0.1.toml"
+inherited_target_blob = "4188d25f36c0d4ba53054b7e2e7d1505a343725e"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Rectangle lift-index argument-principle source candidate; no actual complete target trace, regional numeric upper count or accepted zero inventory."
+receipt_policy = "No execution authority or receipt. Bind future acceptance externally to the actual commit, tree and target."
+inventory_policy = "Retain EVERY predecessor declaration, exact type, control and finite reduction and the complete transitive import/axiom/native-dependency chain. This selected catalog is NOT the full closure. Reconcile generated rectangle fields, subtype finite instances, all inferred proof types, classical normal-form choices and conditional numerical consumers. Empty repeated catalogs waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex"
+path = "GRWTSK/Analysis/Complex/ClosedCurveFactorIndex.lean"
+source_git_blob = "4e44b28d38b84a9dc8e52899fc54d83933b7d2b9"
+required_declarations = ["GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.lift", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.lift_closed", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_eq_winding", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_congr", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_homotopy", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_const", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.mul_closed", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.mul_nonzero", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_mul", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.pow_closed", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.pow_nonzero", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_pow", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.product_apply", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.prod_closed", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.prod_nonzero", "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex.index_prod"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.FiniteLinearRemoval"
+path = "GRWTSK/Analysis/Complex/FiniteLinearRemoval.lean"
+source_git_blob = "856650b522a8d8070a0e1044cf934a0567028a05"
+required_declarations = ["GRWTSK.Analysis.Complex.FiniteLinearRemoval.product", "GRWTSK.Analysis.Complex.FiniteLinearRemoval.product_analytic", "GRWTSK.Analysis.Complex.FiniteLinearRemoval.product_nonzero", "GRWTSK.Analysis.Complex.FiniteLinearRemoval.local_product", "GRWTSK.Analysis.Complex.FiniteLinearRemoval.exists_quotient"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectangleDivisorIndex"
+path = "GRWTSK/Analysis/Complex/RectangleDivisorIndex.lean"
+source_git_blob = "76018190cd20ba0d9729eed400b62a326be70129"
+required_declarations = ["GRWTSK.Analysis.Complex.RectangleDivisorIndex.index_of_factorization", "GRWTSK.Analysis.Complex.RectangleDivisorIndex.index_eq_mass"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectangleFactorIndex"
+path = "GRWTSK/Analysis/Complex/RectangleFactorIndex.lean"
+source_git_blob = "7fad1ff30bcc598116fa2707b620549a8645e7e9"
+required_declarations = ["GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.interior", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.box", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.boundary", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.corners", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.curve", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.curve_closed", "GRWTSK.Analysis.Complex.RectangleFactorIndex.weighted_mem", "GRWTSK.Analysis.Complex.RectangleFactorIndex.weighted_pos", "GRWTSK.Analysis.Complex.RectangleFactorIndex.weighted_neg", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.blend_mem_box", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.corner_mem_box", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.edge_boundary", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.curve_boundary", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.boundary_ne_interior", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.boundary_of_box_not_interior", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.factor", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.factor_closed", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.factor_nonzero", "GRWTSK.Analysis.Complex.RectangleFactorIndex.reference", "GRWTSK.Analysis.Complex.RectangleFactorIndex.reference_evaluates", "GRWTSK.Analysis.Complex.RectangleFactorIndex.reference_checked", "GRWTSK.Analysis.Complex.RectangleFactorIndex.referenceCurve", "GRWTSK.Analysis.Complex.RectangleFactorIndex.reference_closed", "GRWTSK.Analysis.Complex.RectangleFactorIndex.reference_nonzero", "GRWTSK.Analysis.Complex.RectangleFactorIndex.reference_index", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.factor_cells", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.factor_index_one", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.center", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.center_mem", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.image", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.image_closed", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.image_nonzero", "GRWTSK.Analysis.Complex.RectangleFactorIndex.Rectangle.zero_free_index"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalRectangleIndexCore"
+path = "GRWTSK/Interfaces/CanonicalRectangleIndexCore.lean"
+source_git_blob = "bdd278b7191d82699d328efea3d61f3743e6ceef"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalRectangleIndex.lean"
+source_git_blob = "53eb5c3537f5a3e0031b14b300885550f97bb6b5"
+required_declarations = ["GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.region", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.region_interior", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.BoundaryNonzero", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.source_analytic", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.source_local", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.RegionalPoint", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.regional_location", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.source_covered", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.exists_source_quotient", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.sourceCurve", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.sourceCurve_closed", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.sourceCurve_nonzero", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.index_eq_count", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.curve_eq_maintained", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.evaluated_index_eq_count", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.count_eq_of_evaluate", "GRWTSK.RiemannHypothesis.CanonicalRectangleIndex.complete_pair_of_evaluate_one"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.RectangleDivisorControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/RectangleDivisorControls.lean"
+source_git_blob = "442968366d4db75d578d0636dc2eb6854d6907d9"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.unitRectangle", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.zero_interior", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.linear_index_one", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.cubic_index_three", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.reversed_linear_index", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.boundary_only_is_insufficient", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.boundary_root_not_interior", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.double_root_has_extended_quotient", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.raw_quotient_at_removed_point", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.missing_factor_leaves_zero", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.exponential_multiplier_index_zero", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.full_location_control", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.removed_pole_not_counted", "GRWTSK.RiemannHypothesis.Checks.RectangleDivisorControls.reversal_not_endpoint_preserving"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ExponentialLoopIndex"
+path = "GRWTSK/Analysis/Complex/ExponentialLoopIndex.lean"
+source_git_blob = "c5219539cc35d1c9bade0f39c05d651a0afdb886"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.LoopIndexOperations"
+path = "GRWTSK/Analysis/Complex/LoopIndexOperations.lean"
+source_git_blob = "dc8371af65e5f80ec9602346db65e97f2cad7d0a"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonFreeHomotopy"
+path = "GRWTSK/Analysis/Complex/PolygonFreeHomotopy.lean"
+source_git_blob = "f6536494d4d8fa7a48ffa9139a8110b36fdaf9d6"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalPolygonIndex"
+path = "GRWTSK/Analysis/Complex/RationalPolygonIndex.lean"
+source_git_blob = "aa629f8335b89cd9b4c79194f791fb3b64b68f55"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+source_git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.MirrorCountingRectangle"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/MirrorCountingRectangle.lean"
+source_git_blob = "ae65868eb8dc8a9ba219d3a338afd75b7d774fc1"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedContourBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedContourBounds.lean"
+source_git_blob = "4744ddf4d7a4d52ac6e2a6802c61660eff3b3e96"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourPolygonIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourPolygonIndex.lean"
+source_git_blob = "40c16f2151013422a143661a5dce2de3a3c4d24e"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourWinding"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourWinding.lean"
+source_git_blob = "dc1cf654efe55448fc107ecb4f6bcdfce3428973"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[modules]]
+name = "GRWTSK.Interfaces.PoleContourPolygonIndexCore"
+path = "GRWTSK/Interfaces/PoleContourPolygonIndexCore.lean"
+source_git_blob = "046fe1a5d458d3387ac78192cc3c79ca8abe5ef0"
+required_declarations = []
+acceptance = "All predecessor declarations/types/controls remain required via the inherited target chain; this empty repeated catalog waives nothing."
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Meromorphic/NormalForm.lean"
+source_git_blob = "1c64648a3556483c6e950777c449b74cc842fda9"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/CauchyIntegral.lean"
+source_git_blob = "7ab35a8eefd071d78383042b0806e30664a62cca"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Topology/ContinuousMap/Algebra.lean"
+source_git_blob = "0170d061412772387b6a63c93c543bb9fed61bb8"
+
+[[controls]]
+id = "same-invariant"
+requirement = "The wrapper must reduce to the inherited exponential-lift winding, with closure and nonvanishing proof arguments, not a new numeric label."
+status = "NOT_RUN"
+
+[[controls]]
+id = "signed-product"
+requirement = "Check index_mul, index_pow and index_prod retain signed Z values and every natural multiplicity."
+status = "NOT_RUN"
+
+[[controls]]
+id = "strict-rectangle"
+requirement = "Reversed or degenerate coordinate bounds cannot construct the positive Rectangle without their genuine strict inequalities."
+status = "NOT_RUN"
+
+[[controls]]
+id = "full-boundary"
+requirement = "Reconcile all four oriented edges, corners, closure and the old full dyadic traversal; no vertex-only coverage."
+status = "NOT_RUN"
+
+[[controls]]
+id = "arbitrary-root"
+requirement = "The linear-factor homotopy accepts an arbitrary actual complex interior point, not its rounded center."
+status = "NOT_RUN"
+
+[[controls]]
+id = "positive-linear"
+requirement = "Execute reference_evaluates and compose it with factor_index_one; the exact CCW linear factor contributes +1."
+status = "NOT_RUN"
+
+[[controls]]
+id = "multiplicity-three"
+requirement = "Execute cubic_index_three: one distinct order-three root contributes three, not cardinality one."
+status = "NOT_RUN"
+
+[[controls]]
+id = "negative-orientation"
+requirement = "Retain reversed_linear_index=-1 and do not use natAbs to hide orientation."
+status = "NOT_RUN"
+
+[[controls]]
+id = "whole-remainder"
+requirement = "Boundary nonzero alone cannot replace whole-box nonzero in zero_free_index; test boundary_only_is_insufficient."
+status = "NOT_RUN"
+
+[[controls]]
+id = "normal-form"
+requirement = "Audit the genuine meromorphic raw quotient construction and the normal-form uniqueness theorem at EVERY selected point."
+status = "NOT_RUN"
+
+[[controls]]
+id = "matching-orders"
+requirement = "Cancellation occurs on punctured neighborhoods with equal exact powers; under-removal, over-removal and missing roots cannot supply the hypotheses."
+status = "NOT_RUN"
+
+[[controls]]
+id = "removed-center"
+requirement = "Execute double_root_has_extended_quotient and raw_quotient_at_removed_point; raw 0/0 is not the analytic quotient value."
+status = "NOT_RUN"
+
+[[controls]]
+id = "full-location"
+requirement = "Injectivity is on complex locations, not labels or heights; execute full_location_control."
+status = "NOT_RUN"
+
+[[controls]]
+id = "source-divisor"
+requirement = "Reconcile actual normalized-zeta local orders to canonical source multiplicities, including hypothetical repeated zeros."
+status = "NOT_RUN"
+
+[[controls]]
+id = "canonical-coverage"
+requirement = "source_covered uses the exact predicate, positive half-plane and whole-boundary exclusion to exhaust the CLOSED box."
+status = "NOT_RUN"
+
+[[controls]]
+id = "pole-exclusion"
+requirement = "Execute removed_pole_not_counted: F(1)=1 and order zero even though one is on the bottom edge."
+status = "NOT_RUN"
+
+[[controls]]
+id = "same-count"
+requirement = "index_eq_count must reindex to the maintained MirrorCountingRectangle.count, not an external list or cardinality."
+status = "NOT_RUN"
+
+[[controls]]
+id = "traversal"
+requirement = "The numerical consumer must retain literal all-parameter alignment with continuous endpoint-preserving r; carrier or area alone is insufficient."
+status = "NOT_RUN"
+
+[[controls]]
+id = "conditional-completion"
+requirement = "complete_pair_of_evaluate_one retains actual Enclosures, returned some 1, boundary exclusion and traversal; none is asserted for the large rectangle."
+status = "NOT_RUN"
+
+[[controls]]
+id = "transitive-acceptance"
+requirement = "All inherited finite decisions, exact types, generated names, imports, axioms and native dependencies require pinned elaboration and independent audit."
+status = "NOT_RUN"

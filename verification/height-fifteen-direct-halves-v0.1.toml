@@ -1,0 +1,140 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "height-fifteen-direct-halves-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.HeightFifteenDirectHalfCore"
+build_target = "GRWTSK.Interfaces.HeightFifteenDirectHalfCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "f694fb34053d135f1370ea82fce07e41b454c990"
+parent_tree = "40398dfb177515ec24b150bdd0b9e9025df4ac84"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "verification/height-fifteen-canonical-blocks-v0.1.toml"
+inherited_target_blob = "349a62afc76b2bba38096c3c09b384ca211902d4"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Seventy-six smaller direct decisions and pairwise source composition only; no Lean acceptance or count receipt."
+receipt_policy = "Bind any future replay to the exact published head. Python reports are not proof receipts."
+inventory_policy = "Selected modules are not the full closure. Preserve all predecessor exact types, generated declarations, imports, axioms, native dependencies, and resource obligations."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.HeightFifteenDirectHalfCore"
+path = "GRWTSK/Interfaces/HeightFifteenDirectHalfCore.lean"
+source_git_blob = "f2384a991993de9e91cfde2bb583f334fc74a66a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.CheckedChunkComposition"
+path = "GRWTSK/Algebra/BigOperators/CheckedChunkComposition.lean"
+source_git_blob = "8eae4999d9eb3f5b12531bf65aae64e0978471cf"
+required_declarations = ["GRWTSK.Algebra.BigOperators.CheckedChunkComposition.chunk_add", "GRWTSK.Algebra.BigOperators.CheckedChunkComposition.chunk_add_zero_right"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfBlocks"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectHalfBlocks.lean"
+source_git_blob = "e63297d9476eab080c9b87b9f153794b01b88b89"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfBlocks.halfWidths", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfBlocks.halfExpected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfBlocks.halfWidths_shape", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfBlocks.halfExpected_shape", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfBlocks.HalfObligations"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfClaims"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectHalfClaims.lean"
+source_git_blob = "4a2f6cfa4210d4ca43d3d6b17545a2afb9951d36"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half00", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half01", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half02", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half03", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half04", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half05", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half06", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half07", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half08", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half09", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half10", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half11", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half12", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half13", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half14", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half15", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half16", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half17", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half18", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half19", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half20", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half21", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half22", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half23", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half24", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half25", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half26", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half27", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half28", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half29", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half30", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half31", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half32", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half33", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half34", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half35", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half36", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half37", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half38", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half39", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half40", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half41", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half42", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half43", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half44", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half45", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half46", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half47", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half48", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half49", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half50", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half51", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half52", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half53", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half54", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half55", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half56", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half57", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half58", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half59", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half60", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half61", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half62", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half63", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half64", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half65", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half66", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half67", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half68", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half69", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half70", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half71", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half72", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half73", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half74", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClaims.half75"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfClosure"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectHalfClosure.lean"
+source_git_blob = "d2f6a5bd383ee0931aa473ea8b4276e62442f261"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.HalfScriptProofs", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.half_scripts", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.half_obligations", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.BlockScriptProofs", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block_scripts", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block_obligations", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.canonical_result", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.original_success", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.regional_count_one", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.complete_pair", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block00", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block01", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block02", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block03", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block04", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block05", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block06", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block07", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block08", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block09", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block10", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block11", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block12", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block13", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block14", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block15", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block16", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block17", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block18", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block19", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block20", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block21", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block22", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block23", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block24", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block25", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block26", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block27", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block28", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block29", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block30", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block31", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block32", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block33", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block34", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block35", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block36", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfClosure.block37"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectHalfControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectHalfControls.lean"
+source_git_blob = "b9d1b90a0dedd0defcec79910541aa3382963039"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfControls.half08_zero_rejected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfControls.half00_one_rejected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfControls.final_suffix_present", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfControls.exact_exhaustion", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfControls.none_ne_successful_zero", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenDirectHalfControls.positive_block_exact"]
+
+[[controls]]
+id = "half-partition"
+requirement = "Retain 74 widths of 32 followed by 8 and 3, exhausting exactly 2379 cells."
+status = "NOT_RUN"
+
+[[controls]]
+id = "half-claims"
+requirement = "Retain only half index 8 as +1 and every other half as zero."
+status = "NOT_RUN"
+
+[[controls]]
+id = "direct-predicate"
+requirement = "Use the unchanged directTest and directTerm; do not evaluate canonical packet expansion inside local decisions."
+status = "NOT_RUN"
+
+[[controls]]
+id = "adjacent-cursor"
+requirement = "Compose only at the exact shared cursor with no artificial closure edge."
+status = "NOT_RUN"
+
+[[controls]]
+id = "pair-reconstruction"
+requirement = "Recover every original 64-cell block and the final 11-cell suffix from its two exact parts."
+status = "NOT_RUN"
+
+[[controls]]
+id = "separate-reductions"
+requirement = "Elaborate all 76 local by-decide scripts independently; no cancellation-only acceptance."
+status = "NOT_RUN"
+
+[[controls]]
+id = "final-three"
+requirement = "Keep cells 2376..2378 as a separate accepted local equality."
+status = "NOT_RUN"
+
+[[controls]]
+id = "none-versus-zero"
+requirement = "Preserve none distinct from some 0."
+status = "NOT_RUN"
+
+[[controls]]
+id = "signed-result"
+requirement = "Keep reverse orientation negative; never coerce through absolute value or Nat."
+status = "NOT_RUN"
+
+[[controls]]
+id = "old-obligations"
+requirement = "Produce exactly the old BlockObligations and unchanged Success proposition."
+status = "NOT_RUN"
+
+[[controls]]
+id = "count-consumer"
+requirement = "Use only the inherited same-region analytic-multiplicity count bridge."
+status = "NOT_RUN"
+
+[[controls]]
+id = "resource-evidence"
+requirement = "Report actual elaboration/reduction resource behavior; source scripts alone are not evidence."
+status = "NOT_RUN"
+
+[[controls]]
+id = "transitive-trust"
+requirement = "Audit exact types, generated declarations, imports, axioms, and native dependencies."
+status = "NOT_RUN"
+
+[[controls]]
+id = "external-boundary"
+requirement = "Do not treat Python reports, hashes, or stored PASS labels as Lean proof or execution authority."
+status = "NOT_RUN"

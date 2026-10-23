@@ -1,0 +1,52 @@
+/- Copyright (c) 2026 R.A. Jacob Martone. MIT.
+Human research direction: R.A. Jacob Martone. Proof drafting assistance: OpenAI ChatGPT.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+
+import GRWTSK.Algebra.BigOperators.CheckedChunkComposition
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenDirectSixteenthClosure
+
+set_option autoImplicit false
+
+/-!
+# Isolate the unique positive polygon increment to one contour cell
+
+These four one-cell decisions refine the existing positive four-cell piece
+[272,276). They use the unchanged direct predicate and signed term. Cell 275 is
+a polygon branch-crossing index, not a claimed zeta-zero location.
+SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+namespace GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell
+
+open GRWTSK.Algebra.BigOperators.CheckedContiguousBlocks
+open GRWTSK.Algebra.BigOperators.CheckedChunkComposition
+open HeightFifteenBlockDecomposition
+
+theorem cell272 : chunk directTest directTerm 272 1 = some 0 := by decide
+theorem cell273 : chunk directTest directTerm 273 1 = some 0 := by decide
+theorem cell274 : chunk directTest directTerm 274 1 = some 0 := by decide
+theorem cell275 : chunk directTest directTerm 275 1 = some 1 := by decide
+
+theorem left_pair : chunk directTest directTerm 272 2 = some 0 := by
+  simpa using chunk_add cell272 cell273
+
+theorem right_pair : chunk directTest directTerm 274 2 = some 1 := by
+  simpa using chunk_add cell274 cell275
+
+theorem positive_four : chunk directTest directTerm 272 4 = some 1 := by
+  simpa using chunk_add left_pair right_pair
+
+theorem cell275_test : directTest 275 = true := by
+  have h := (chunk_eq_some_iff directTest directTerm 275 1 1).mp cell275
+  simpa [allRange] using h.1
+
+theorem cell275_term : directTerm 275 = 1 := by
+  have h := (chunk_eq_some_iff directTest directTerm 275 1 1).mp cell275
+  simpa [sumRange] using h.2
+
+theorem original_success : HeightFifteenJetCandidate.Success :=
+  HeightFifteenDirectSixteenthClosure.original_success
+
+theorem regional_count_one : MirrorCountingRectangle.count (15 : ℝ) = 1 :=
+  HeightFifteenJetCandidate.count_one_of_success original_success
+
+end GRWTSK.RiemannHypothesis.Checks.HeightFifteenPositiveCell
