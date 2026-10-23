@@ -36,8 +36,16 @@ theorem reduced_discriminant_ne_zero_iff_charTwoRoot
   have hn := monicQuarticDiscriminant_ne_zero_iff_charTwoRoot h2
     (Ideal.Quotient.mk I A) (Ideal.Quotient.mk I B)
     (Ideal.Quotient.mk I C) (Ideal.Quotient.mk I D)
-  simpa [monicQuarticDiscriminant, charTwoDiscriminantRoot, map_add,
-    map_sub, map_mul, map_pow, map_ofNat] using hn
+  have hdisc := monicQuarticDiscriminant_map
+    (Ideal.Quotient.mk I) A B C D
+  have hroot :
+      Ideal.Quotient.mk I (charTwoDiscriminantRoot A B C D) =
+        charTwoDiscriminantRoot (Ideal.Quotient.mk I A)
+          (Ideal.Quotient.mk I B) (Ideal.Quotient.mk I C)
+          (Ideal.Quotient.mk I D) := by
+    simp [charTwoDiscriminantRoot, map_add, map_mul, map_pow]
+  rw [hdisc, hroot]
+  exact hn
 
 /-- Nonvanishing of the characteristic-two obstruction modulo the maximal
 ideal implies separability of the coefficient-defined reduced resolvent. -/
