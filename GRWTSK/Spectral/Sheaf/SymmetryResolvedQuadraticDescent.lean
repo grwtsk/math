@@ -120,17 +120,17 @@ structure ModelSheaf
   edge : EdgeRelation Vertex
   frequency : Vertex → ℚ
   ordered : OrderedBy frequency edge
-  local : ∀ vertex, LocalModel Z (Stalk vertex)
+  model : ∀ vertex, LocalModel Z (Stalk vertex)
   restrict : ∀ {source target}, edge source target →
     Stalk source →L[ℚ] Stalk target
   encoded_source : ∀ {source target} (arrow : edge source target),
-    (local target).code.encode.comp (restrict arrow) = (local source).code.encode
+    (model target).code.encode.comp (restrict arrow) = (model source).code.encode
   sigma_intertwines : ∀ {source target} (arrow : edge source target),
-    (restrict arrow).toLinearMap.comp (local source).involutions.sigma =
-      (local target).involutions.sigma.comp (restrict arrow).toLinearMap
+    (restrict arrow).toLinearMap.comp (model source).involutions.sigma =
+      (model target).involutions.sigma.comp (restrict arrow).toLinearMap
   tau_intertwines : ∀ {source target} (arrow : edge source target),
-    (restrict arrow).toLinearMap.comp (local source).involutions.tau =
-      (local target).involutions.tau.comp (restrict arrow).toLinearMap
+    (restrict arrow).toLinearMap.comp (model source).involutions.tau =
+      (model target).involutions.tau.comp (restrict arrow).toLinearMap
 
 namespace ModelSheaf
 
@@ -143,7 +143,7 @@ variable {Vertex Z : Type*} {Stalk : Vertex → Type*}
 /-- An edge restriction regarded as an involution intertwiner. -/
 def edgeIntertwiner (sheaf : ModelSheaf Vertex Z Stalk)
     {source target : Vertex} (arrow : sheaf.edge source target) :
-    Intertwiner (sheaf.local source).involutions (sheaf.local target).involutions where
+    Intertwiner (sheaf.model source).involutions (sheaf.model target).involutions where
   map := (sheaf.restrict arrow).toLinearMap
   sigma_intertwines := sheaf.sigma_intertwines arrow
   tau_intertwines := sheaf.tau_intertwines arrow
@@ -152,8 +152,8 @@ def edgeIntertwiner (sheaf : ModelSheaf Vertex Z Stalk)
 theorem restrict_preserves_sector (sheaf : ModelSheaf Vertex Z Stalk)
     {source target : Vertex} (arrow : sheaf.edge source target)
     (sector : Sector) {x : Stalk source}
-    (hx : (sheaf.local source).involutions.InSector sector x) :
-    (sheaf.local target).involutions.InSector sector (sheaf.restrict arrow x) :=
+    (hx : (sheaf.model source).involutions.InSector sector x) :
+    (sheaf.model target).involutions.InSector sector (sheaf.restrict arrow x) :=
   (sheaf.edgeIntertwiner arrow).maps_sector sector hx
 
 /-- Compose bounded restriction maps along a nonempty directed path. -/
@@ -166,11 +166,11 @@ def transport (sheaf : ModelSheaf Vertex Z Stalk) :
 /-- Encoded source data are preserved along an entire descent path. -/
 theorem encoded_source_transport (sheaf : ModelSheaf Vertex Z Stalk)
     {source target : Vertex} (path : Path sheaf.edge source target) :
-    (sheaf.local target).code.encode.comp (sheaf.transport path) =
-      (sheaf.local source).code.encode := by
+    (sheaf.model target).code.encode.comp (sheaf.transport path) =
+      (sheaf.model source).code.encode := by
   induction path with
   | single arrow =>
-      exact sheaf.encoded_source arrow
+      simpa [transport] using sheaf.encoded_source arrow
   | tail path arrow inductionHypothesis =>
       simp only [transport]
       rw [← ContinuousLinearMap.comp_assoc, sheaf.encoded_source arrow,
@@ -189,10 +189,10 @@ structure LocalZeroDatum
     (Coverage : Vertex → Type*) (z : Z) (vertex : Vertex) where
   sector : Sector
   source : Stalk vertex
-  source_sector : (sheaf.local vertex).involutions.InSector sector source
+  source_sector : (sheaf.model vertex).involutions.InSector sector source
   symbols : Symbols
-  encoded : (sheaf.local vertex).code.encode source = symbols
-  sector_zero : ((sheaf.local vertex).pencil.sectorMatrix sector z).det = 0
+  encoded : (sheaf.model vertex).code.encode source = symbols
+  sector_zero : ((sheaf.model vertex).pencil.sectorMatrix sector z).det = 0
   coverage : Coverage vertex
 
 namespace LocalZeroDatum
@@ -207,9 +207,9 @@ variable {Vertex Z : Type*} {Stalk : Vertex → Type*}
 
 /-- A certified sector zero is an intrinsic zero of the full local pencil. -/
 theorem full_zero (datum : LocalZeroDatum sheaf Coverage z vertex) :
-    ((sheaf.local vertex).pencil.operator z).det = 0 :=
+    ((sheaf.model vertex).pencil.operator z).det = 0 :=
   (ResolvedPencil.determinant_eq_zero_iff_sector
-    (sheaf.local vertex).pencil z).2 ⟨datum.sector, datum.sector_zero⟩
+    (sheaf.model vertex).pencil z).2 ⟨datum.sector, datum.sector_zero⟩
 
 end LocalZeroDatum
 
@@ -225,13 +225,13 @@ structure CompatibleZeroDatum
     (coverageCompatible : ∀ {source target} (arrow : sheaf.edge source target),
       Coverage source → Coverage target → Prop)
     (z : Z) where
-  local : ∀ vertex, LocalZeroDatum sheaf Coverage z vertex
+  data : ∀ vertex, LocalZeroDatum sheaf Coverage z vertex
   sector_compatible : ∀ {source target} (arrow : sheaf.edge source target),
-    (local source).sector = (local target).sector
+    (data source).sector = (data target).sector
   source_compatible : ∀ {source target} (arrow : sheaf.edge source target),
-    sheaf.restrict arrow (local source).source = (local target).source
+    sheaf.restrict arrow (data source).source = (data target).source
   coverage_compatible : ∀ {source target} (arrow : sheaf.edge source target),
-    coverageCompatible arrow (local source).coverage (local target).coverage
+    coverageCompatible arrow (data source).coverage (data target).coverage
 
 namespace CompatibleZeroDatum
 
@@ -250,31 +250,31 @@ variable {Vertex Z : Type*} {Stalk : Vertex → Type*}
 theorem symbols_compatible
     (datum : CompatibleZeroDatum sheaf Coverage coverageCompatible z)
     {source target : Vertex} (arrow : sheaf.edge source target) :
-    (datum.local source).symbols = (datum.local target).symbols := by
+    (datum.data source).symbols = (datum.data target).symbols := by
   have hencode := congrArg
-    (fun map : Stalk source →L[ℚ] Symbols => map (datum.local source).source)
+    (fun map : Stalk source →L[ℚ] Symbols => map (datum.data source).source)
     (sheaf.encoded_source arrow)
   simp only [ContinuousLinearMap.comp_apply] at hencode
   calc
-    (datum.local source).symbols =
-        (sheaf.local source).code.encode (datum.local source).source :=
-      (datum.local source).encoded.symm
-    _ = (sheaf.local target).code.encode
-          (sheaf.restrict arrow (datum.local source).source) := hencode.symm
-    _ = (sheaf.local target).code.encode (datum.local target).source := by
+    (datum.data source).symbols =
+        (sheaf.model source).code.encode (datum.data source).source :=
+      (datum.data source).encoded.symm
+    _ = (sheaf.model target).code.encode
+          (sheaf.restrict arrow (datum.data source).source) := hencode.symm
+    _ = (sheaf.model target).code.encode (datum.data target).source := by
       rw [datum.source_compatible arrow]
-    _ = (datum.local target).symbols := (datum.local target).encoded
+    _ = (datum.data target).symbols := (datum.data target).encoded
 
 /-- The transported source remains in the same sector before identifying it with the target
 source. -/
 theorem transported_source_sector
     (datum : CompatibleZeroDatum sheaf Coverage coverageCompatible z)
     {source target : Vertex} (arrow : sheaf.edge source target) :
-    (sheaf.local target).involutions.InSector
-      (datum.local source).sector
-      (sheaf.restrict arrow (datum.local source).source) :=
-  sheaf.restrict_preserves_sector arrow (datum.local source).sector
-    (datum.local source).source_sector
+    (sheaf.model target).involutions.InSector
+      (datum.data source).sector
+      (sheaf.restrict arrow (datum.data source).source) :=
+  sheaf.restrict_preserves_sector arrow (datum.data source).sector
+    (datum.data source).source_sector
 
 end CompatibleZeroDatum
 
@@ -300,7 +300,7 @@ def commonLocalZeroSet
     [∀ vertex, NormedSpace ℚ (Stalk vertex)]
     [∀ vertex, FiniteDimensional ℚ (Stalk vertex)]
     (sheaf : ModelSheaf Vertex Z Stalk) : Set Z :=
-  {z | ∀ vertex, ((sheaf.local vertex).pencil.operator z).det = 0}
+  {z | ∀ vertex, ((sheaf.model vertex).pencil.operator z).det = 0}
 
 /-- Compatible local data glue to the global divisor support. -/
 def glue
@@ -314,15 +314,15 @@ def glue
     {coverageCompatible : ∀ {source target} (arrow : sheaf.edge source target),
       Coverage source → Coverage target → Prop}
     {z : Z}
-    (local : ∀ vertex, LocalZeroDatum sheaf Coverage z vertex)
+    (localData : ∀ vertex, LocalZeroDatum sheaf Coverage z vertex)
     (sector_compatible : ∀ {source target} (arrow : sheaf.edge source target),
-      (local source).sector = (local target).sector)
+      (localData source).sector = (localData target).sector)
     (source_compatible : ∀ {source target} (arrow : sheaf.edge source target),
-      sheaf.restrict arrow (local source).source = (local target).source)
+      sheaf.restrict arrow (localData source).source = (localData target).source)
     (coverage_compatible : ∀ {source target} (arrow : sheaf.edge source target),
-      coverageCompatible arrow (local source).coverage (local target).coverage) :
+      coverageCompatible arrow (localData source).coverage (localData target).coverage) :
     CompatibleZeroDatum sheaf Coverage coverageCompatible z where
-  local := local
+  data := localData
   sector_compatible := sector_compatible
   source_compatible := source_compatible
   coverage_compatible := coverage_compatible
@@ -346,9 +346,9 @@ theorem descent
   constructor
   · change Nonempty (CompatibleZeroDatum sheaf Coverage coverageCompatible z)
     exact ⟨datum⟩
-  · change ∀ vertex, ((sheaf.local vertex).pencil.operator z).det = 0
+  · change ∀ vertex, ((sheaf.model vertex).pencil.operator z).det = 0
     intro vertex
-    exact (datum.local vertex).full_zero
+    exact (datum.data vertex).full_zero
 
 /-- Every globally descended parameter is a full-pencil zero at every vertex. -/
 theorem globalSpectralDivisorSupport_subset_commonLocalZeroSet
@@ -365,10 +365,10 @@ theorem globalSpectralDivisorSupport_subset_commonLocalZeroSet
       commonLocalZeroSet sheaf := by
   intro z hz
   change Nonempty (CompatibleZeroDatum sheaf Coverage coverageCompatible z) at hz
-  change ∀ vertex, ((sheaf.local vertex).pencil.operator z).det = 0
+  change ∀ vertex, ((sheaf.model vertex).pencil.operator z).det = 0
   rcases hz with ⟨datum⟩
   intro vertex
-  exact (datum.local vertex).full_zero
+  exact (datum.data vertex).full_zero
 
 /-- The affine part of an invertible center or metric change. The center is retained as
 metadata; determinant invariance depends on the invertible linear part and similarity of

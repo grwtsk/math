@@ -23,6 +23,58 @@ per_file_command = ["lake", "env", "lean", "{path}"]
 command = ["lake", "build", "GRWTSK"]
 timeout_seconds = 7200
 
+# Reviewed source-bound exceptions retain exact maintained occurrences for
+# human review.  Digest drift invalidates the exception before classification.
+[[review_overrides]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/OutputFlipSignCorrelation.lean"
+source_sha256 = "2bcf657ea63d5e20d3f970bae9bee20a18bb8585e984a0e8f3ad535089e17e7c"
+reason = "expectation and probability content is not justified as algebra by a generic import"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
+source_sha256 = "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+reason = "current owner declarations and audits bind this exact module occurrence"
+
+[[review_overrides]]
+path = "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean"
+source_sha256 = "308954ccc5537fc6dc46377c72a3f18c118c87bafb72b01746ab5368b156dd05"
+reason = "current owner and result contracts bind this exact module occurrence"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
+reason = "mixed whole-library proof audit has no dominant whole-file subject"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
+reason = "mixed whole-library proof audit has no dominant whole-file subject"
+
+[[review_overrides]]
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/Bijections/ExplicitFieldRepresentationTransport/Variant7b67a64e7cab240c/TransportToBits.lean"
+source_sha256 = "7f4683ea975bf7a38dba9566b71a4a61581a0f397386cd64f49d40b170b5e16a"
+reason = "generic transport across a supplied equivalence does not establish field or algebra subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/Geometry/ConvexGeometry/ConvexSets/ConvexHulls/FiniteConvexCombinations/BarycentricCoefficients/FiniteSimplexGammaAndObservation/Variant5cc54b9c520347b4/FiniteRefinementParametersAndPoints.lean"
+source_sha256 = "e8720d893b82d8f6c37c6ae55d0bcd0876ec9c52f9e1ebdecd0da95ca3e03a70"
+reason = "finite simplex weights admit geometric and probabilistic readings, so a whole-file probability placement is not sufficiently justified"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/PrefixCoverage.lean"
+source_sha256 = "b3a18d904fddadd6d32f938796b01dcac292d89f639546fa01f4a06006225ac1"
+reason = "finite-sequence recurrences and coverage bounds do not establish an analysis subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/Data/Sampling/Descriptions.lean"
+source_sha256 = "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f"
+reason = "role and metadata records do not establish an analysis subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods/QuantifierElimination/EliminationData/Sampling/Descriptions.lean"
+source_sha256 = "165d95062a6395676289e4948747fbbb572379fc7031534f87cef9b553301b0f"
+reason = "role and metadata records do not establish an analysis subject placement"
+
 [[subject_profiles]]
 key = "algebra"
 directory = "Algebra"

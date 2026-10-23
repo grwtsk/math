@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.SignedEnergyDecomposition
+import GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition
 import GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds
 
 /-! Semantic audit of the generic transform assembly interface.
