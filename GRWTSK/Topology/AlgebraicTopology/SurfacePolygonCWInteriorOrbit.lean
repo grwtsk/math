@@ -28,7 +28,7 @@ retaining its original handle, side index, and true real parameter. -/
 def oppositeBoundaryPoint (k : ℕ) :
     BoundaryPoint k → BoundaryPoint k
   | (((h, i), t)) =>
-      (((h, (i + 2) % 4), unitInterval.symm t))
+      (((h, i + 2), unitInterval.symm t))
 
 /-- Every original opposite-pairing generator is compatible with
 the same two-point orbit. Endpoint seams are deliberately excluded. -/
