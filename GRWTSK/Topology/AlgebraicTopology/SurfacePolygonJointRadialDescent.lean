@@ -7,6 +7,7 @@ Issue grwtsk/math#955. Parent PR #951 exact head
 -/
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment
 import Mathlib.Topology.Constructions
+import Mathlib.Topology.Maps.Basic
 
 /-!
 # Joint radial map: exact product-quotient obligation
@@ -28,6 +29,7 @@ open Topology
 
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonJointRadialDescent
 
+open _root_.Topology
 open GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology
@@ -37,7 +39,8 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment
 
-/-- Use the same finite discrete source topology as the perimeter homeomorphism. -/
+/- Reuse the authentic finite-corner topology of the perimeter homeomorphism;
+   the unitInterval factor retains its ordinary, nondiscrete topology. -/
 local instance cornerDiscreteTopology (k : ℕ) :
     TopologicalSpace (PolygonCorner k) := ⊥
 
@@ -76,9 +79,9 @@ This does not promote fixed-slice continuity to joint continuity. -/
 theorem perimeterJointRadialMap_continuous_of_productQuotient (k : ℕ)
     (hq : IsQuotientMap (perimeterProductProjection k)) :
     Continuous (perimeterJointRadialMap k) := by
-  apply hq.continuous_iff.mpr
-  rw [perimeterJointRadialMap_comp_projection]
-  exact radialProjection_continuous k
+  exact hq.continuous_iff.mpr (by
+    simpa only [perimeterJointRadialMap_comp_projection] using
+      radialProjection_continuous k)
 
 /-- The zero radius collapses the whole genuine perimeter to the apex. -/
 theorem perimeterJointRadialMap_zero (k : ℕ)
