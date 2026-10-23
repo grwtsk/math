@@ -1866,9 +1866,17 @@ cannot be transferred to this new leaf or its previously
 unverified angular/projective dependency. Pinned Lean
 `v4.33.0`, Mathlib
 `db584cd6d46c92f209a44c0f1c829460d327499d`.
-The separate exact-commit validation issue must supply
-real exit statuses, outputs and accepted trust results
-before any status upgrade.
+The new exact-commit validation request is
+[math #1111](https://github.com/grwtsk/math/issues/1111),
+pinned to integrated main commit
+`69bed07912614d448ecb013f2247a07c79d14f2a`
+(tree `fc2f081be2d023e50e9d23828fe6b53778b1ebb2`),
+source blob `b07cb18412f3e64f42d2916fea91b1e59b2228c2`.
+Its module/dependency build commands, exact declarations,
+hostile controls, fresh checker plan and transitive axiom
+request are a **passive queue, not a verification receipt**.
+Real exit statuses, outputs and accepted trust results
+are required before any status upgrade.
 
 **Missing bridges and nonclaims.** This is one finite
 projective-sign-quotient eigenchannel, **not** a global
