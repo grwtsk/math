@@ -48,6 +48,7 @@ namespace GRWTSK.NumberTheory.Farey.FareyShiftCocycle
 open Matrix
 open GRWTSK.NumberTheory.Farey.GroupSuperwalk
 open GRWTSK.NumberTheory.Farey.ReturnAngularChannel
+open GRWTSK.NumberTheory.Farey.ReturnSpectralChannel
 open GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction
 open GRWTSK.LinearAlgebra.CocycleProduct
 open GRWTSK.LinearAlgebra.PeriodicCocycleData
@@ -63,7 +64,7 @@ def shift (ω : Schedule) : Schedule := fun k => ω (k + 1)
 theorem shift_iterate_apply (ω : Schedule) (n k : ℕ) :
     (shift^[n] ω) k = ω (n + k) := by
   induction n generalizing k with
-  | zero => rfl
+  | zero => simp
   | succ n ih =>
       rw [Function.iterate_succ_apply']
       change (shift^[n] ω) (k + 1) = ω ((n + 1) + k)
