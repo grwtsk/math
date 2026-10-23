@@ -15,6 +15,7 @@ must not be confused with a canonical choice of root ordering.
 
 namespace GRWTSK.Algebra.QuarticMatchingAdjacency
 
+open Polynomial
 open GRWTSK.Algebra.QuarticMatchingAction
 open GRWTSK.Algebra.QuarticMatchingWeight
 open GRWTSK.Algebra.PolygonalQuarticDescent
@@ -46,7 +47,6 @@ expression, in any commutative ring. -/
 theorem eTwo_permutation (r : Fin 4 → R) (σ : Equiv.Perm (Fin 4)) :
     eTwo (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)) =
       eTwo (r 0) (r 1) (r 2) (r 3) := by
-  have h := GRWTSK.Algebra.PolygonalQuarticDescent.adjacencyResolvent_permutation r σ
   have hprod :
       quarticFromVieta (eOne (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)))
         (eTwo (r (σ 0)) (r (σ 1)) (r (σ 2)) (r (σ 3)))
