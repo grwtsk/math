@@ -21,7 +21,7 @@ open GRWTSK.RiemannHypothesis
 Fourier frequency at n=0 is expressed with a totalized real log.
 No ordinary log(0) or division by n=0 is used in the proof. -/
 theorem wienerFubini_actual_lambda_zero_term
-    (sigma T : ℝ) :
+    (sigma _T : ℝ) :
     LSeries.term wienerFubiniLambda (sigma : ℂ) 0 = 0 := by
   simp [LSeries.term]
 
