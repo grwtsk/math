@@ -84,7 +84,7 @@ theorem modThreeReturn_square_ne_one :
   intro h
   have h00 := congrArg (fun M : Mat3 => M 0 0) h
   rw [pow_two, modThreeReturn_square] at h00
-  norm_num at h00
+  exact (by decide : (-1 : ZMod 3) ≠ 1) h00
 
 /-- A four-state orbit of a real Farey quotient action, in chronological order:
 (1,0) -> (1,1) -> (2,0) -> (2,2) -> (1,0) modulo three. -/
@@ -123,7 +123,7 @@ The eigenvalue is the native complex fourth root of unity i. -/
 theorem orbitPhase_next (j : Fin 4) :
     orbitPhase (orbitNext j) = Complex.I * orbitPhase j := by
   fin_cases j <;>
-    norm_num [orbitPhase, orbitNext, Complex.I_mul_I]
+    norm_num [orbitPhase, orbitNext, Fin.add_def, Complex.I_mul_I]
 
 /-- The angular return channel is a genuine character of the selected
 four-state cyclic orbit under repeated applications of its return. -/
@@ -199,9 +199,8 @@ theorem imaginaryUnit_fourth : (Complex.I : ℂ) ^ 4 = 1 := by
 theorem discreteSpiral_four_returns (n : ℕ) :
     discreteSpiral (n + 4) =
       ((expandingEigenvalue ^ 4 : ℝ) : ℂ) * discreteSpiral n := by
-  rw [discreteSpiral_formula, discreteSpiral_formula, pow_add, mul_pow,
-    imaginaryUnit_fourth]
-  simp [mul_comm, mul_left_comm, mul_assoc]
+  simp only [discreteSpiral_formula, pow_add, mul_pow, imaginaryUnit_fourth]
+  simp [mul_comm, mul_assoc]
 
 /-- A strict expanding real channel prevents the observed spiral from
 ever hitting zero. -/

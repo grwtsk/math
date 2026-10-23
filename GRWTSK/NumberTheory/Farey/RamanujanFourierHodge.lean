@@ -45,7 +45,7 @@ theorem additiveMode_shift (q : ℕ) [NeZero q]
     additiveMode q k (x + 1) =
       ZMod.stdAddChar k * additiveMode q k x := by
   unfold additiveMode
-  rw [mul_add, mul_one, map_add]
+  rw [mul_add, mul_one, AddChar.map_add_eq_mul]
   ring
 
 /-- Backward shift formula, retaining the orientation of the cyclic graph. -/
@@ -54,7 +54,7 @@ theorem additiveMode_shift_back (q : ℕ) [NeZero q]
     additiveMode q k (x - 1) =
       ZMod.stdAddChar (-k) * additiveMode q k x := by
   unfold additiveMode
-  rw [mul_sub, mul_one, sub_eq_add_neg, map_add]
+  rw [mul_sub, mul_one, sub_eq_add_neg, AddChar.map_add_eq_mul]
   ring
 
 /-- Complex forward difference for the cyclic graph. -/
