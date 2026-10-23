@@ -8,6 +8,18 @@ The permitted pilot mode is citation/reference plus locally authored explanation
 
 ## Classification and interoperability sources
 
+### Local source warrant R-GRWTSK-20261023
+
+`grwtsk/math` commit `72c588ba1a885fe475bdbefabbc5f3306a60452e` supplies the inspected maintained source context:
+`GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/`, `GRWTSK/Order/`,
+`GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/`, and the retained subject and
+original-source metadata in `GRWTSK/SourceCorpus/`. This is a local organizational
+warrant for the source-signal draft, not an external classification authority or
+independent validation of retained labels. Source attributions and licenses stay
+with each file; no upstream source payload is copied into taxonomy prose.
+Noeaaeue binds actual routing observations to full commit/blob/SHA-256 identities.
+External terminology, literature adequacy, and all editorial review remain pending.
+
 | Key | Publisher; scheme/edition; exact location | Coverage and available granularity | Access, reuse and disposition |
 | --- | --- | --- | --- |
 | S1 | Mathematical Reviews/AMS and zbMATH; MSC2020; [publication](https://msc2020.org/) and [official PDF](https://msc2020.org/MSC_2020.pdf), [TeX](https://msc2020.org/MSC_2020.tex) and [CSV](https://msc2020.org/MSC_2020.csv) | Published mathematical-sciences classification at all native levels; selected PDF pages inspected. `47A10` occurs on PDF page 125 and `60J10` on page 162, counting from 1. | Site identifies CC BY-NC-SA 4.0. Reference-only here; complete raw-source acquisition, rights arrangement and identifier reconciliation pending. Native descriptions/relations are not rewritten into this local scheme. |

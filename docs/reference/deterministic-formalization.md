@@ -10,6 +10,7 @@ and receipts remain in `grwtsk/noeaaeue` and its external runtime.
 | Constructive derivation soundness | [ConstructiveDerivation.lean](../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Propositional/ConstructiveDerivation.lean) | Every derivation in the defined propositional calculus preserves the meaning of its explicit hypotheses; closed falsity has no derivation |
 | Taxonomy-channel filter splitting | [ChannelSplitting.lean](../../GRWTSK/CombinatoricsAndDiscreteMathematics/FiniteSets/ChannelSplitting.lean) | Predicate channels may overlap; two filters have four exhaustive membership cases; the residual contains all unmatched signals |
 | Observation cache and claim validity | [ContentBoundCache.lean](../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/ContentBoundCache.lean) | Equal source bytes and observer profile permit observation reuse; unchanged entries persist; changed entries refresh; stale/expired claims are rejected |
+| Typed equational rewriting | [TypedRewriting.lean](../../GRWTSK/Algebra/UniversalAlgebra/Equational/TypedRewriting.lean) | Natural-number semiring laws and order-preserving list append/reverse laws compose soundly under contextual transport, symmetry and transitivity |
 
 The fiber optics analogy describes multiplexing by subject identity and splitting
 with explicit predicates. No theorem about physical optics, bandwidth, taxonomy
@@ -27,6 +28,18 @@ computed from stored observations. A result stays verification pending until its
 own replay evidence has been checked. The initial closed compiler accepts
 structured constructive propositions and emits explicit proof terms; unsupported
 or unresolved goals remain open. It does not translate arbitrary prose.
+
+The compiler also accepts typed natural-number addition/multiplication and
+finite-list append/reverse equalities. It performs bounded rewrite search with
+independent trace checking; it is not an unrestricted algebra solver. List
+reverse uses the upstream `propext` axiom, which native replay reports explicitly.
+See the [mirrored guide](../mathematics/Algebra/UniversalAlgebra/Equational/TypedRewriting.md).
+
+Source-signal routing uses the canonical UUID subjects, including the
+[source-signal draft](../taxonomy/proposals/new-concepts/source-signal-subjects.md).
+Every GRWTSK file, including hash-named files, is in scope. Direct observations,
+exact-original links and lexical dependency-only candidates remain distinct;
+none confers editorial acceptance or a mathematical verification receipt.
 
 The pure contracts were directly compiled using `lean -t 0 <source-path>` with
 Lean 4.33.0. Operational logs/receipts are retained in Noeaaeue, not here.
