@@ -1,4 +1,5 @@
 import GRWTSK.Algebra.PolygonalQuarticSplitting
+import GRWTSK.Algebra.QuarticResolventRingNaturality
 
 /-!
 # Base-field quartic adjacency resolvent
@@ -33,9 +34,7 @@ theorem baseAdjacencyResolvent_ringHom_map
     {M : Type*} [Field M] (f : K →+* M) (A B C₀ D : K) :
     (baseAdjacencyResolvent A B C₀ D).map f =
       baseAdjacencyResolvent (f A) (f B) (f C₀) (f D) := by
-  simp [baseAdjacencyResolvent, adjacencyResolventOfMonicCoefficients,
-    adjacencyResolventFromVieta, map_add, map_sub, map_mul, map_pow,
-    map_ofNat]
+  exact GRWTSK.Algebra.QuarticResolventRingNaturality.resolvent_map f A B C₀ D
 
 /-- Explicit coefficient descent commutes with scalar extension in
 every characteristic, with no separability requirement. -/
