@@ -137,4 +137,54 @@ theorem matchingActionHom_nontrivial :
   apply hne
   exact (hfirst.symm.trans (congrArg Subtype.val hh)).symm
 
+
+/-- Three canonical double transpositions, independent of field characteristic. -/
+def double01_23 : Equiv.Perm Vertex :=
+  Equiv.swap (0 : Vertex) 1 * Equiv.swap (2 : Vertex) 3
+
+def double02_13 : Equiv.Perm Vertex :=
+  Equiv.swap (0 : Vertex) 2 * Equiv.swap (1 : Vertex) 3
+
+def double03_12 : Equiv.Perm Vertex :=
+  Equiv.swap (0 : Vertex) 3 * Equiv.swap (1 : Vertex) 2
+
+/-- The image is the complete permutation group of the three matching classes. -/
+theorem matchingActionHom_surjective :
+    Function.Surjective matchingActionHom := by
+  classical
+  change ∀ τ : Equiv.Perm PerfectMatching,
+    ∃ σ : Equiv.Perm Vertex, matchingActionHom σ = τ
+  decide
+
+/-- Exact finite kernel, with no classification theorem imported. -/
+theorem matchingActionHom_kernel_iff (σ : Equiv.Perm Vertex) :
+    matchingActionHom σ = 1 ↔
+      σ = 1 ∨ σ = double01_23 ∨
+      σ = double02_13 ∨ σ = double03_12 := by
+  classical
+  have h : ∀ σ : Equiv.Perm Vertex,
+      (matchingActionHom σ = 1 ↔
+        σ = 1 ∨ σ = double01_23 ∨
+        σ = double02_13 ∨ σ = double03_12) := by
+    decide
+  exact h σ
+
+/-- The four kernel representatives are genuinely different. -/
+theorem kernel_representatives_distinct :
+    (1 : Equiv.Perm Vertex) ≠ double01_23 ∧
+    (1 : Equiv.Perm Vertex) ≠ double02_13 ∧
+    (1 : Equiv.Perm Vertex) ≠ double03_12 ∧
+    double01_23 ≠ double02_13 ∧
+    double01_23 ≠ double03_12 ∧
+    double02_13 ≠ double03_12 := by
+  decide
+
+/-- The homomorphism kernel as a set is exactly the four-element Klein set. -/
+theorem matchingActionHom_mem_ker_iff (σ : Equiv.Perm Vertex) :
+    σ ∈ MonoidHom.ker matchingActionHom ↔
+      σ = 1 ∨ σ = double01_23 ∨
+      σ = double02_13 ∨ σ = double03_12 := by
+  change matchingActionHom σ = 1 ↔ _
+  exact matchingActionHom_kernel_iff σ
+
 end GRWTSK.Algebra.QuarticMatchingAction
