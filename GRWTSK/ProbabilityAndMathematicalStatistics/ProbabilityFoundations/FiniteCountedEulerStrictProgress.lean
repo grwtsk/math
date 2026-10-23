@@ -56,4 +56,38 @@ theorem FreshCountedTrail.exists_strict_progress_of_visited_unused_edge
     have h2 := Finset.card_sdiff_add_card_eq_card hsubR
     omega
 
+
+/-- Exact global completion alternative for a closed counted trail:
+either every individual edge instance is already used, or there is
+a residual edge instance. This does not assume weak connectivity. -/
+theorem FreshCountedTrail.complete_or_unused_edge
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    T.used = Finset.univ ∨
+      ∃ e : CountedBinaryEdge m c,
+        e ∈ Finset.univ \ T.used := by
+  classical
+  by_cases h : T.used = Finset.univ
+  · exact Or.inl h
+  · right
+    have hne : (Finset.univ \ T.used :
+        Finset (CountedBinaryEdge m c)).Nonempty := by
+      by_contra hempty
+      have hz : (Finset.univ \ T.used :
+          Finset (CountedBinaryEdge m c)) = ∅ := by
+        simpa only [Finset.not_nonempty_iff_eq_empty] using hempty
+      have hsubset : (Finset.univ :
+          Finset (CountedBinaryEdge m c)) ⊆ T.used := by
+        intro e he
+        by_contra hn
+        have hmem : e ∈ (Finset.univ \ T.used :
+            Finset (CountedBinaryEdge m c)) :=
+          Finset.mem_sdiff.mpr ⟨he, hn⟩
+        simpa [hz] using hmem
+      exact h (Finset.eq_of_subset_of_card_le hsubset
+        (by simp))
+    exact hne
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
