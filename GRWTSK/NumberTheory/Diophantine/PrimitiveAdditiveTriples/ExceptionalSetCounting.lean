@@ -7,11 +7,11 @@ assistance using Lean to verify parts of an earlier version.
 This module connects finite primitive-additive-triple counts to the exact
 Proposition 6.1 optimization certificate. The exact and quantitative integer
 anatomy of Lemma 2.2 and the exact finite dyadic reduction of Proposition 2.1
-are imported here. The Fourier estimate and geometry-of-numbers estimate
-remain explicit obligations of `ExceptionalSetAnalyticSupplier`. -/
+are imported here. Propositions 3.1 and 4.1 and the extraction of inequalities
+(6.1)--(6.10) are kept as three separately visible obligations. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AnatomicFactorization
-import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.AdmissibleAnatomicReduction
+import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticBounds
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.MomentReindexing
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetOptimization
 import Mathlib.Tactic
@@ -19,6 +19,8 @@ import Mathlib.Tactic
 set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
+
+open ExceptionalSetAnalyticBounds
 
 /-- The exceptional predicate used for the paper's counting function:
 `rad(abc) < c^lam`. This normalization is distinct from the coefficient-one
@@ -123,13 +125,10 @@ theorem exponent_le_three_fifths_of_certificate {D : ℝ}
   simpa [hD] using
     ExceptionalSetOptimization.exponent_le_three_fifths x hx
 
-/-- The deliberately explicit boundary for the remaining analytic
-mathematics. The exact integer anatomy and the finite admissible dyadic cover
-are already imported. An implementation must combine the source paper's
-Fourier estimate (Proposition 3.1), geometry-of-numbers estimate
-(Proposition 4.1), and parameter extraction into (6.1)--(6.10) to obtain a
-feasible Proposition 6.1 point from a persistent lower bound. No such
-implementation is asserted in this module. -/
+/-- The legacy combined boundary. It is retained as the small interface
+consumed by the already-proved contradiction argument below. New work should
+construct it through `SplitExceptionalSetAnalyticSupplier`, so that the
+Fourier, geometry, and optimization-extraction obligations remain separate. -/
 structure ExceptionalSetAnalyticSupplier (lam : ℝ) : Prop where
   lambda_pos : 0 < lam
   lambda_lt_one : lam < 1
@@ -137,6 +136,40 @@ structure ExceptionalSetAnalyticSupplier (lam : ℝ) : Prop where
     ∀ D : ℝ, (3 : ℝ) / 5 < D →
       FrequentlyAtLeastPower (exponentExceptionalCount lam) D →
       HasOptimizationCertificate D
+
+/-- The remaining bookkeeping theorem after Propositions 3.1 and 4.1 are
+available: a persistent lower bound above `3/5`, together with the two box
+estimate families, must produce the normalized variables satisfying
+(6.1)--(6.10). This field is not an assertion that the theorem is proved. -/
+structure ExceptionalSetOptimizationExtractor (lam : ℝ) : Prop where
+  certificate_of_box_estimates :
+    HasClosedFourierEstimates lam →
+    HasClosedGeometryEstimates lam →
+    ∀ D : ℝ, (3 : ℝ) / 5 < D →
+      FrequentlyAtLeastPower (exponentExceptionalCount lam) D →
+      HasOptimizationCertificate D
+
+/-- The source-faithful decomposition of the remaining 2026 argument.
+Each field names a distinct theorem family rather than hiding all analytic
+content behind one implication. -/
+structure SplitExceptionalSetAnalyticSupplier (lam : ℝ) : Prop where
+  lambda_pos : 0 < lam
+  lambda_lt_one : lam < 1
+  fourier : HasClosedFourierEstimates lam
+  geometry : HasClosedGeometryEstimates lam
+  extraction : ExceptionalSetOptimizationExtractor lam
+
+/-- Assemble the legacy consumer interface from the three explicit remaining
+obligations. No analytic estimate is proved by this adapter. -/
+theorem SplitExceptionalSetAnalyticSupplier.toAnalyticSupplier {lam : ℝ}
+    (supplier : SplitExceptionalSetAnalyticSupplier lam) :
+    ExceptionalSetAnalyticSupplier lam where
+  lambda_pos := supplier.lambda_pos
+  lambda_lt_one := supplier.lambda_lt_one
+  certificate_of_frequent_lower_bound := by
+    intro D hD hfreq
+    exact supplier.extraction.certificate_of_box_estimates
+      supplier.fourier supplier.geometry D hD hfreq
 
 theorem not_frequentlyAtLeastPower_of_supplier {lam D : ℝ}
     (supplier : ExceptionalSetAnalyticSupplier lam)
@@ -147,12 +180,24 @@ theorem not_frequentlyAtLeastPower_of_supplier {lam D : ℝ}
   exact (not_le_of_gt hD)
     (exponent_le_three_fifths_of_certificate hcert)
 
+theorem not_frequentlyAtLeastPower_of_split_supplier {lam D : ℝ}
+    (supplier : SplitExceptionalSetAnalyticSupplier lam)
+    (hD : (3 : ℝ) / 5 < D) :
+    ¬ FrequentlyAtLeastPower (exponentExceptionalCount lam) D :=
+  not_frequentlyAtLeastPower_of_supplier supplier.toAnalyticSupplier hD
+
 theorem eventuallyBelowPower_of_supplier {lam D : ℝ}
     (supplier : ExceptionalSetAnalyticSupplier lam)
     (hD : (3 : ℝ) / 5 < D) :
     EventuallyBelowPower (exponentExceptionalCount lam) D :=
   eventuallyBelowPower_of_not_frequentlyAtLeastPower
     (not_frequentlyAtLeastPower_of_supplier supplier hD)
+
+theorem eventuallyBelowPower_of_split_supplier {lam D : ℝ}
+    (supplier : SplitExceptionalSetAnalyticSupplier lam)
+    (hD : (3 : ℝ) / 5 < D) :
+    EventuallyBelowPower (exponentExceptionalCount lam) D :=
+  eventuallyBelowPower_of_supplier supplier.toAnalyticSupplier hD
 
 /-- The exponent-slack form of the paper's `3/5` exceptional-set conclusion.
 It is a proposition about the finite count, not an assertion that its analytic
@@ -166,5 +211,10 @@ theorem hasThreeFifthsExceptionalBound_of_supplier {lam : ℝ}
     HasThreeFifthsExceptionalBound lam := by
   intro ε hε
   exact eventuallyBelowPower_of_supplier supplier (by linarith)
+
+theorem hasThreeFifthsExceptionalBound_of_split_supplier {lam : ℝ}
+    (supplier : SplitExceptionalSetAnalyticSupplier lam) :
+    HasThreeFifthsExceptionalBound lam :=
+  hasThreeFifthsExceptionalBound_of_supplier supplier.toAnalyticSupplier
 
 end GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples
