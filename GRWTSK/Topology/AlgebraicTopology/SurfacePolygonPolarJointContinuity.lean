@@ -25,6 +25,7 @@ compact-source without first restricting to a compact covering domain.
 -/
 
 set_option autoImplicit false
+open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 
@@ -84,8 +85,11 @@ theorem unitCircleJointPolar_continuous_of_quotient
     (hq : IsQuotientMap polarProductProjection) :
     Continuous unitCircleJointPolar := by
   apply hq.continuous_iff.mpr
-  simpa only [← unitCircleJointPolar_source] using
-    realPolarProduct_continuous
+  have heq : unitCircleJointPolar ∘ polarProductProjection = realPolarProduct := by
+    funext p
+    exact unitCircleJointPolar_source p
+  rw [heq]
+  exact realPolarProduct_continuous
 
 /-
 OPEN: prove IsQuotientMap polarProductProjection using a correct

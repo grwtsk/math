@@ -24,6 +24,7 @@ premise until the pinned AddCircle theorem is instantiated.
 -/
 
 set_option autoImplicit false
+open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent
 
@@ -50,7 +51,12 @@ theorem unitCircleJointPolar_continuous_of_compact_quotient
     exact realPolarProduct_continuous.comp
       ((continuous_subtype_val.comp continuous_fst).prodMk
         continuous_snd)
-  simpa only [← compactPolar_joint_source] using hsource
+  have heq : unitCircleJointPolar ∘ compactPolarProjection =
+      (fun p : PolarCompactSource => realPolarProduct ((p.1 : ℝ), p.2)) := by
+    funext p
+    exact compactPolar_joint_source p
+  rw [heq]
+  exact hsource
 
 /-- The compact-to-Hausdorff quotient criterion is sufficient to
 discharge joint continuity, with the exact fundamental interval
