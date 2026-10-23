@@ -27,6 +27,8 @@ set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover
 
+open _root_.Topology
+
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactDescent
 
