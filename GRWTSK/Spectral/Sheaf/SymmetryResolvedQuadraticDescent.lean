@@ -213,6 +213,8 @@ theorem full_zero (datum : LocalZeroDatum sheaf Coverage z vertex) :
 
 end LocalZeroDatum
 
+-- Preserve the named edge witness in the coverage/sector interface.
+set_option linter.unusedVariables false in
 /-- Edgewise compatibility for a family of local zero records. -/
 structure CompatibleZeroDatum
     {Vertex Z : Type*} {Stalk : Vertex → Type*}
@@ -235,6 +237,8 @@ structure CompatibleZeroDatum
 
 namespace CompatibleZeroDatum
 
+-- The shared coverage predicate retains its named edge witness for consumers.
+set_option linter.unusedVariables false in
 variable {Vertex Z : Type*} {Stalk : Vertex → Type*}
   [Fintype Vertex] [DecidableEq Vertex]
   [∀ vertex, NormedAddCommGroup (Stalk vertex)]
@@ -278,6 +282,8 @@ theorem transported_source_sector
 
 end CompatibleZeroDatum
 
+-- Preserve the named edge witness in the coverage/sector interface.
+set_option linter.unusedVariables false in
 /-- The support of the global spectral divisor: parameters admitting compatible local
 zero, jet, source, and coverage data at every vertex. Multiplicities are not inferred. -/
 def globalSpectralDivisorSupport
@@ -302,6 +308,8 @@ def commonLocalZeroSet
     (sheaf : ModelSheaf Vertex Z Stalk) : Set Z :=
   {z | ∀ vertex, ((sheaf.model vertex).pencil.operator z).det = 0}
 
+-- Preserve the named edge witness in the coverage/sector interface.
+set_option linter.unusedVariables false in
 /-- Compatible local data glue to the global divisor support. -/
 def glue
     {Vertex Z : Type*} {Stalk : Vertex → Type*}
@@ -327,6 +335,8 @@ def glue
   source_compatible := source_compatible
   coverage_compatible := coverage_compatible
 
+-- Preserve the named edge witness in the coverage/sector interface.
+set_option linter.unusedVariables false in
 /-- The descent theorem: a compatible family belongs to the global divisor support and is
 an intrinsic full-pencil zero at every vertex. -/
 theorem descent
@@ -350,6 +360,8 @@ theorem descent
     intro vertex
     exact (datum.data vertex).full_zero
 
+-- Preserve the named edge witness in the coverage/sector interface.
+set_option linter.unusedVariables false in
 /-- Every globally descended parameter is a full-pencil zero at every vertex. -/
 theorem globalSpectralDivisorSupport_subset_commonLocalZeroSet
     {Vertex Z : Type*} {Stalk : Vertex → Type*}

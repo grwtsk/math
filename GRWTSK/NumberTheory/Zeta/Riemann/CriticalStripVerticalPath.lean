@@ -106,7 +106,7 @@ inductive VerticalPath
 namespace VerticalPath
 
 /-- Forget source metadata while retaining the exact height and proof transport. -/
-def toVerticalStep
+theorem toVerticalStep
     {ι A X H : Type*} [Ring A] [AddCommGroup H] [Module ℂ H]
     {atlas : CriticalStripAtlas ι A X H} {i j : ι} :
     VerticalPath atlas i j → VerticalStep atlas i j
