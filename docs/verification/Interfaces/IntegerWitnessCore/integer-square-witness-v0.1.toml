@@ -1,0 +1,191 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "integer-square-witness-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.IntegerWitnessCore"
+build_target = "GRWTSK.Interfaces.IntegerWitnessCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "1e1394ea8a8b15694e4c35070746391ac9920584"
+parent_tree = "f11750d426138a85e1f3e1d3cc9feab1c912f1bb"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/IntegerJetStateCore/integer-jet-state-v0.1.toml"
+inherited_target_blob = "efefc01114843b50827330ea28f63331e506d5a8"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "No original target block equation or Success proved. The literal pilot seed/guard binding remains unproved."
+receipt_policy = "Pure mathematical target, not execution permission or a receipt. Bind acceptance to exact published head."
+inventory_policy = "Selected modules are not complete closure. Preserve all predecessor declarations, generated members, exact types, large reductions and import/axiom/native obligations."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower"
+path = "GRWTSK/Analysis/ErrorBounds/CheckedIntegerPower.lean"
+source_git_blob = "29ef6faab491175b757e438f93491a3d3b888383"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.start", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.finish", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.evaluate", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.evaluate_eq_some_iff", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.finish_eq_reference", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.evaluate_refines", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.evaluate_sound", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.accepted_length", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.exists_rows_iff", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.evaluateWithin", "GRWTSK.Analysis.ErrorBounds.CheckedIntegerPower.within_refines"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerSquareWitness.lean"
+source_git_blob = "83e955b0362a3b6da3aecb8557f567c7b277b55c"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.FloorBounds", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.CeilBounds", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.floorBounds_iff", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.ceilBounds_iff", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.proposedResidual", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.errorNumerator", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.StepBounds", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.stepBoundsDecidable", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.checkStep", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.proposedResidual_eq", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.stepBounds_iff", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.checkStep_iff", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.walk", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.run_cursor", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.walk_sound", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.walk_length", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.rowsFor", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.walk_rowsFor", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.check", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.check_iff", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.check_sound", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.exists_checked_iff", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.walk_append", "GRWTSK.Analysis.ErrorBounds.IntegerSquareWitness.check_append"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.IntegerWitnessCore"
+path = "GRWTSK/Interfaces/IntegerWitnessCore.lean"
+source_git_blob = "3fa326c449681623607fe508d66e76e297ec1da3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenSquareWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenSquareWitness.lean"
+source_git_blob = "f30d4281bff80fee583b1bb52f823572c67adde8"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.center", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.resolution", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.center_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.resolution_value", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state0", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state1", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state2", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state3", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state4", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state5", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state6", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.state7", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition0", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition1", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition2", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition3", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition4", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition5", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.transition6", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.rows", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.tail_checked", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.SeedBinding", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.SourceReady", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.result", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.leaf_of_sourceReady", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenSquareWitness.power_enclosure_of_sourceReady"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.IntegerWitnessControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/IntegerWitnessControls.lean"
+source_git_blob = "6310329a89e9399cb1acc9afd25c0906a7075eec"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.negative_floor", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.truncation_reject", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.exact_radius", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.larger_radius_not_same_state", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.smaller_radius_reject", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.quadratic_error_required", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.complete_chain", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.right_final_does_not_hide_bad_step", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.wrong_seed", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.wrong_final_radius", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.missing_last", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.extra_row", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.order_matters", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.empty_chain", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.empty_positive_count", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.fixed_point_extra_row_reject", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.fixed_point_full_count", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.negative_arithmetic_state", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.floor_upper_is_strict", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.ceil_lower_is_strict", "GRWTSK.RiemannHypothesis.Checks.IntegerWitnessControls.base_zero_reject"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerDyadicSquare.lean"
+source_git_blob = "88393cd866786e8aec8c4bf08da552b93a2a8fc9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerExpStateFold.lean"
+source_git_blob = "50eb000d423f6dc98f6d23283224eea7723ab1fa"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpStateFold"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpStateFold.lean"
+source_git_blob = "fd205decec0654eef4b48303e0809bc67de4c391"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalPowerValue"
+path = "GRWTSK/Analysis/ErrorBounds/RationalPowerValue.lean"
+source_git_blob = "ad45930024f7bb7739e051ed972cb5c59c7ca918"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.IndexedStateFold"
+path = "GRWTSK/Algebra/BigOperators/IndexedStateFold.lean"
+source_git_blob = "65342473798679fc08e32609e0d7f8809453eb89"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenJetCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenJetCandidate.lean"
+source_git_blob = "e136351169c1e027d2b4846156355194758529de"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.IntegerJetStateCore"
+path = "GRWTSK/Interfaces/IntegerJetStateCore.lean"
+source_git_blob = "01bf824570c1982d46b1504970040316c765ee92"
+required_declarations = []
+
+[[controls]]
+id = "WIT01"
+obligation = "Positive dyadic scale; signed floor inequalities retain strict upper endpoint."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT02"
+obligation = "Ceiling inequality retains strict lower endpoint and complete nonlinear residual numerator."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT03"
+obligation = "Both coordinates and exact error integer identify the original step, not another sound ball."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT04"
+obligation = "All negative arithmetic states remain distinct from valid analytic enclosures."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT05"
+obligation = "Zero steps require empty rows and return the fixed initial state; positive empty input rejects."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT06"
+obligation = "Exact requested row count rejects missing/extra rows including at fixed points."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT07"
+obligation = "Every preceding row is checked even when the final state is correct."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT08"
+obligation = "Piece composition retains the complete intermediate state, not only its midpoint."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT09"
+obligation = "Reference rows and existence equivalence establish completeness, not only an always-reject implication."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT10"
+obligation = "Source wrapper recomputes logarithm/exponent/Taylor seed from fixed source inputs."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT11"
+obligation = "Original source/Taylor/scale guards and once-charged final logarithm sensitivity remain."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT12"
+obligation = "Exact old power evaluator equality includes both coordinates and the complete radius."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT13"
+obligation = "Requested tolerance is separate from arithmetic/source validity."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT14"
+obligation = "Literal seven-step transition proofs are NOT_RUN; seed/guard binding is not asserted."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT15"
+obligation = "All original contour data, analytic bounds, index/refinement and 38 equalities remain unchanged."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT16"
+obligation = "No byte-parser, compiler, runtime, input-authentication or resource qualification inferred."
+status = "NOT_RUN"
+
+[[controls]]
+id = "WIT17"
+obligation = "Full predecessor closure including generated declarations, all types, axioms and native dependencies required."
+status = "NOT_RUN"

@@ -10,7 +10,7 @@ GRWTSK added canonical placement, preserved contracts, consumer replay and indep
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Analysis/IntervalReflection.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Analysis/IntervalReflection.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

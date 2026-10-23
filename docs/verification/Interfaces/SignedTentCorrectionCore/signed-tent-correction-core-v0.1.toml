@@ -1,0 +1,181 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "signed-tent-correction-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 261
+root_module = "GRWTSK.Interfaces.SignedTentCorrectionCore"
+build_target = "GRWTSK.Interfaces.SignedTentCorrectionCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "7d9c914f509c8e7fb2460bbed4c4adb1e6ab2667"
+base_tree = "81e56e4a598e0d9abcb01f2981b3c16233e92283"
+stacked_on_pr = 276
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CountedTentTailCore/counted-tent-tail-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "8d6dce02fc7ff7880afbc24e8078afbac2c24526".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "fd821fae51765c4051f0abd28e93df5853f448b1".
+# Pre-quadrature-repair inherited_target_blob = "6c4fa2e5d907b827cf4d5bac50441610a8c87c36".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "654335dec48fc17382fff10d13c13dfaf2064cc3".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "c3d5eefbd8cf0bd9df4db0f168d8294f748f3e1c"
+receipt_policy = "Bind the actual new commit, tree and this manifest externally. Parent source or receipts do not accept this target."
+inventory_policy = "Names and hashes are lexical source inventory; require all actual elaborated types and complete transitive import/trust coverage."
+mathematical_scope = "The specific rational correction integral, its sign, endpoint envelopes and geometric-prefix convergence; not the complete Riemann explicit formula."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.TentRationalCorrection"
+path = "GRWTSK/Analysis/Real/TentRationalCorrection.lean"
+source_blob = "e1503cd9a505105c82e7bc4893769f5d68d010de"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SignedTentCorrectionCore"
+path = "GRWTSK/Interfaces/SignedTentCorrectionCore.lean"
+source_blob = "24eb34c8c9f7c18762905bdcc4e26a648eecf39f"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/SignedTentCorrectionControls.lean"
+source_blob = "83112b86418758c1554e77b540eaa20763599ffc"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection"
+path = "GRWTSK/NumberTheory/Chebyshev/SignedTentCorrection.lean"
+source_blob = "2bbff7a5b305a4f421e5884c05ec629e2c9a7534"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.TentWeight"
+path = "GRWTSK/Analysis/Real/TentWeight.lean"
+# Pre-phase-2-repair source_blob = "5eed877e84d8efc1b8c87fc5a4cc1d2f095c36a2".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "b12835c66ab08b64918a9543cd201043c1a99895"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CountedTentTail"
+path = "GRWTSK/NumberTheory/Chebyshev/CountedTentTail.lean"
+source_blob = "d4b6cd930855fd6f61d688ada798eb6681f1a76d"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CountedTentTailCore"
+path = "GRWTSK/Interfaces/CountedTentTailCore.lean"
+source_blob = "91e9ee5ae541b12525f70c400b5e672bad6c3d40"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[acceptance]
+requires_all_declared_modules = true
+requires_all_inherited_target_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+required_declarations = [
+  "GRWTSK.Analysis.Real.TentRationalCorrection.continuous_tent",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.integral_tent",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.weighted_integral_bounds",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalDensity",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalDensity_pos",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalDensity_antitone",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalDensity_continuousOn",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalTentCorrection",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalTentCorrection_bounds",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.rationalTentCorrection_neg",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.densityPrefix",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.densityPrefix_succ",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.densityPrefix_eq",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.densityPrefix_remainder_bounds",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.densityPrefix_continuousOn",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.correctionPrefix",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.correctionPrefix_error",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.correctionPrefix_lower",
+  "GRWTSK.Analysis.Real.TentRationalCorrection.correctionPrefix_tendsto",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.first_density_term_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.second_density_term_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.empty_prefix_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.radius_not_diameter_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.square_two_bounds_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.first_square_domain_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.singular_density_control",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls.equality_margin_control",
+  "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection.squareTrivialCorrection",
+  "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection.squareTrivialBudget",
+  "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection.squareTrivialCorrection_bounds",
+  "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection.squareTrivialCorrection_neg",
+  "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection.square_correctionPrefix_error",
+  "GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection.prime_in_square_of_signed_counted_tent",
+]
+
+[[hostile_controls]]
+id = "negative-not-unsigned"
+description = "The complete correction is strictly negative for h>0 and x-h>1; no zero-correction or positive-correction substitution."
+
+[[hostile_controls]]
+id = "normalized-area"
+description = "Integral of the normalized tent equals h, not 2h or h squared."
+
+[[hostile_controls]]
+id = "finite-prefix-direction"
+description = "A finite negative prefix is an upper approximation; subtract its geometric remainder before using it as a lower bound."
+
+[[hostile_controls]]
+id = "density-tail"
+description = "The pointwise density prefix retains exactly q(t)*(1/t squared)^N, including N=0."
+
+[[hostile_controls]]
+id = "compact-domain"
+description = "All uniform estimates require the full interval x-h <= t <= x+h and x-h>1."
+
+[[hostile_controls]]
+id = "singular-first-square"
+description = "n=1 lies outside this analytic correction domain; totalized division at t=1 is not analytic evidence."
+
+[[hostile_controls]]
+id = "equality-margin"
+description = "A zero or non-strict corrected margin cannot force an actual prime witness."
+
+[[hostile_controls]]
+id = "source-identity-open"
+description = "The source equality with this exact rational integral remains an independent theorem hypothesis, not a constructed Perron/contour formula."
+
+[[hostile_controls]]
+id = "count-and-signed-divisor"
+description = "The actual zeta counting theorem, low-height coverage, both signs and multiplicities remain independent."
+
+[[hostile_controls]]
+id = "finite-checks-not-replay"
+description = "Rational tests, hash matches, primitive algebra and import scans do not establish Lean elaboration or transitive trust."
+
+[nonclaims]
+claims = [
+  "complete first-Riesz or Riemann explicit formula",
+  "identification of the rational correction with contour residues in Lean",
+  "actual zeta zero counting, finite low-height coverage or multiplicity certification",
+  "finite zero evaluator or spectral prime certificate",
+  "all-square strict margins, Legendre or RH",
+  "Lean elaboration, transitive trust acceptance or execution authority"
+]

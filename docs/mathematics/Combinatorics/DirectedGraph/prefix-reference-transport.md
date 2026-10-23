@@ -63,7 +63,7 @@ The [library source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableR
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableReferenceTransport.lean)
 and [intended negative](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixReferenceMissingSupport.lean)
 are bound by the
-[selected native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json).
+selected native receipt (artifact:gitblob:8e51a42c9017a8a4e0d0516611efbdf01ea2c402).
 The recorded pinned Lean 4.33.0 replay uses trust zero, fatal warnings and the
 complete owned-declaration/transitive-axiom audit with no runtime-helper
 exemptions. It contains 958 owned declarations: 14 in the new library, 19 in

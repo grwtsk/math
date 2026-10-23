@@ -40,15 +40,15 @@ The [source](../../../../GRWTSK/Logic/FiniteSequences/IncrementalComposition.lea
 uses the accepted [incremental encoder](incremental-dictionary.md), rather than
 an assumed serializer law. The
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalComposition.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json)
+and native receipt (artifact:gitblob:c96d1a93023e466a8dc02eab6e6eeded76d59b8c)
 bind exact source bytes and the complete local import closure. Replay uses
 pinned Lean 4.33.0, trust zero, fatal warnings and a complete owned-declaration
 and transitive-axiom audit. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted; pinned dependency objects are reused and fingerprinted.
 
-The [integration record](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-integration-2026-10-15.json)
+The integration record (artifact:gitblob:6d6eded028ce41192bd925d58d11056b2bb4d4ec)
 records contribution roles and the
-[source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json)
+source review (artifact:gitblob:f7f98ce02f26f4d27b71939aa64dbd4b0894e25f)
 records bounded antecedents. These finite-list results do not establish a
 Python or JSON refinement, cryptographic authentication, byte serialization,
 compression, filesystem transactions, complexity bounds, whole-repository

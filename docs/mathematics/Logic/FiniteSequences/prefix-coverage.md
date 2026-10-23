@@ -8,7 +8,7 @@ A pinned obligation enumeration is serviced through the exact intervals `[S_n,S_
 
 ## Source and verification scope
 
-[Source](../../../../GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean). Status: **historical-source-description**. [Credit and evidence limits](../../../../.noeaaeue/documentation/reference/documentation-history.md). Earlier checks bind their recorded revisions; no new proof acceptance.
+[Source](../../../../GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean). Status: **historical-source-description**. Credit and evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f). Earlier checks bind their recorded revisions; no new proof acceptance.
 
 The source binding was updated after history integration. Earlier proof receipts retain their original bytes; this page does not assert fresh acceptance of the updated source.
 

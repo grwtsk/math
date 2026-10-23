@@ -157,7 +157,7 @@ check proves RH, Legendre or a new prime-distribution estimate.
 New owners are GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure and
 GRWTSK.Analysis.Complex.RationalMellinNode. The isolated import root is
 GRWTSK.Interfaces.QuadraticIntervalRationalNodeCore, with static target
-verification/quadratic-interval-rational-node-v0.1.toml. Previous sources, roots
+docs/verification/Interfaces/QuadraticIntervalRationalNodeCore/quadratic-interval-rational-node-v0.1.toml. Previous sources, roots
 and targets are unchanged. The target retains the exact previous target and
 all inherited public-type, generated-declaration, decision-instance, control and
 transitive trust obligations. Static source hashes are not elaborated types.

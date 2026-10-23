@@ -92,7 +92,7 @@ with an unclosed known set; zero-weight omitted partners; real-axis quartet
 collapse; and failure of conjugation stability in a positive-height region.
 They are SOURCE_PRESENT / NOT_EXECUTED, and none asserts a synthetic zeta zero.
 
-The passive target is `verification/conjugate-quartet-budget-core-v0.1.toml`.
+The passive target is `docs/verification/_unscoped/conjugate-quartet-budget-core-v0.1.toml`.
 It retains the previous target and all its scoped requirements, pins the new
 real-axis dependency, and requires complete types, bodies, generated/import
 closure, axiom/native/toolchain qualification and exact-source acceptance.

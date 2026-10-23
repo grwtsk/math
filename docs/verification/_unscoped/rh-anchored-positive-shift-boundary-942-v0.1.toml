@@ -1,0 +1,88 @@
+# Passive immutable-source replay request. Not a completed toolchain or kernel receipt.
+schema = "rh-anchored-positive-shift-boundary-v0.1"
+repository = "grwtsk/math"
+issue = 942
+base_branch = "main"
+base_commit = "645cc45f0d7abb6f19d26637370cdd1a29e9131c"
+base_tree = "9672a165e8f77c7ad4b3c46fc1190a1d4e82dafb"
+branch = "research/rh-anchored-positive-boundary-942-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Moebius/AnchoredPairPositiveShiftBoundary.lean"
+source_blob = "148b2465504a517e213ca8d4887e89aa5567e9ae"
+note = "docs/mathematics/NumberTheory/Moebius/anchored-positive-shift-boundary-942.md"
+note_blob = "2d035002b6ff3a718edbc0f6302b213d82544f0e"
+direct_import = "GRWTSK/NumberTheory/Moebius/AnchoredPairGreenCoefficientBridge.lean"
+direct_import_blob = "70e382e8c8548a915f15d080fae512580f45bf3c"
+
+evidence = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+pinned_source_and_import_closure = true
+pinned_toolchain_required = true
+exact_name_and_type_check_required = true
+no_sorry_or_admit = true
+no_unsafe_oracles = true
+print_axiom_closure = true
+kernel_replay_required = true
+independent_replay_required = true
+check_original_rh_consumer_unchanged = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredMobiusPair_shift_pos_iff_ge_three"
+classification = "exact_anchor_shift_support"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredMobiusPair_shift_zero_iff_one_or_two"
+classification = "exact_zero_shift_boundary"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredFiniteGreenDivisorTransform_eq_positive_add_boundary"
+classification = "exact_finite_packet_partition"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredZeroShiftBoundaryTransform_actual"
+classification = "exact_two_divisor_log_correction"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.vonMangoldt_eq_positiveAnchored_add_boundary"
+classification = "principal_exact_coefficient_identity"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredZeroShiftBoundary_two_three_pos"
+classification = "hostile_explicit_nonzero_boundary"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.centeredGreenPrimeCoordinate_eq_positive_add_zeroShift"
+classification = "exact_weighted_Green_coordinate"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.thinGreenArithmeticFourierCoordinate_eq_positive_sub_boundary"
+classification = "exact_unchanged_Fourier_readout"
+
+[hostile_controls]
+cases = [
+  "a>0 required for anchor shift iff a>=3",
+  "a=1 and a=2 are precisely zero-shift anchored factors",
+  "n=3 at X=2 has B(3)=log 3 > 0 and cannot drop boundary",
+  "even n=2m gives exactly -log m from the second divisor",
+  "n target must remain X<n<=2X; source a<=2X",
+  "retain exact signed Mobius factor and exact 1/n weight",
+  "retain full Fourier background and both arithmetic components",
+  "no transfer to actual regular-centered amplitude without source membership",
+  "no positivity or uniform energy estimate inferred from factor >=3",
+  "no implication from finite computation to analytic premise or RH"
+]
+
+[finite_diagnostic]
+kind = "integer_prime_exponent_comparison"
+range = "1<=n<=4096"
+counterexamples = 0
+mathematical_authority = false

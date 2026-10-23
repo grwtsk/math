@@ -1,0 +1,277 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "quadratic-interval-rational-node-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.QuadraticIntervalRationalNodeCore"
+build_target = "GRWTSK.Interfaces.QuadraticIntervalRationalNodeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+# Authored parent revision/tree below are historical, before compatibility repairs.
+# Current module and inherited-target blobs bind maintained mathematical source.
+# The containing replayed commit/tree is bound externally under receipt_policy.
+# Actual repaired phase-1 parent provenance, without substituting for source blob pins.
+phase1_source_repair_revision = "a154e0de2ed60e0219673e11ac65832fbead6bf1"
+phase1_source_repair_tree = "34fac62626e6f3c9c03fe49363731b0bfe826027"
+parent_revision = "5fc28a0c06cb7622d01bc475da88c726fabc2b05"
+parent_tree = "6b5c9f725277dc496e7c72f68ca87823195f8b60"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/QuadraticIntervalRationalTraceCore/quadratic-interval-rational-trace-v0.1.toml"
+# Pre-phase-2-repair inherited_target_blob = "bfda8bc941c8e0d116c97f9beed5b2e73ba3f4a4".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "3e45d16d3d3e4ce0be2c674f4c6ddebeebf1903f"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind replayed commit, tree and target externally; no source inventory is acceptance."
+inventory_policy = "All required names from the exact inherited target chain remain required, including arrays omitted from repeated source entries here. Reconcile public types, generated Resolution/Trace declarations, deriving instances, and full transitive dependencies."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinQuadrature"
+path = "GRWTSK/Analysis/Complex/IntervalMellinQuadrature.lean"
+# Pre-phase-2-repair source_git_blob = "8f8f92f5ee86260676582e22175e724f6d58f68f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "6b1b1b06b7c498ed15a660769626596bfaca774e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalQuadratureCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalQuadratureCore.lean"
+source_git_blob = "5205bb99354fda8cf0c15857354ece55bfea9ae1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalQuadrature"
+path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervalQuadrature.lean"
+source_git_blob = "ae4848f01f9f8630a19316f7d9117ce54692850e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Pre-phase-2-repair source_git_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel"
+path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervalKernel.lean"
+source_git_blob = "4551d9366ba7eec2b7dcaa069842d0013ad2cda4"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
+path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervals.lean"
+# Pre-phase-2-repair source_git_blob = "594ff41e29323206962ef22863c82e3890382282".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "29ffefcbeef17d9118f16268a42d5d8e5fd35114"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing"
+path = "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean"
+source_git_blob = "85923009b211961763765b523234e9746555ca7f"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FiniteLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/FiniteLogEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "d2860c4e6cc6dff37410b7e757764bc2cb480e6e".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "31966b66b73658a084cd1414800626f273b40563"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/ComplexTaylorEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "e63895b3bd3f16b421b8cb6dccd5059cd6333e12".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "20212303a646b65d9eda3eaa3b857e59a070244a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinElementary"
+path = "GRWTSK/Analysis/Complex/IntervalMellinElementary.lean"
+# Pre-phase-2-repair source_git_blob = "a6a143721be26811c4c67ad4b4bae0330823c21f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "814d0ecea7bdd62b570030fba8cd1f59b9ed295d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalElementaryCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalElementaryCore.lean"
+source_git_blob = "f7f058d44c9ae055ca877eae2d797b8302599a62"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.DyadicLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/DyadicLogEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "5a53eaf00ec5750160d4ca5b7e26bf2b0f288b06".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "6052994dd135bf02b607121ba641aed5a3ad397d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinRangeReduction"
+path = "GRWTSK/Analysis/Complex/IntervalMellinRangeReduction.lean"
+# Pre-phase-2-repair source_git_blob = "07c7e8b492de7333d986898bce023c2c95231b90".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "359376d100cc15c5cdabf219f66380f16bde2ff8"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRangeReductionCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRangeReductionCore.lean"
+source_git_blob = "de507f1992eefd2c48b20f2e4b8ad00e3d0a5eda"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.ComplexExpScaling"
+path = "GRWTSK/Analysis/ErrorBounds/ComplexExpScaling.lean"
+# Pre-phase-2-repair source_git_blob = "b249221e87d8f3be7d979d6be9cf8dbc855ab87c".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "80279893ee175375265f94bf6987378123ae48c5"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinScaledExponential"
+path = "GRWTSK/Analysis/Complex/IntervalMellinScaledExponential.lean"
+# Pre-phase-2-repair source_git_blob = "cd20cff5940cedd8e45fb56d286cf3765ce55d76".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "3fd1825602b4b0212dd4b9f964d4332217e398f5"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalExpScalingCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalExpScalingCore.lean"
+source_git_blob = "52ceff1bdd7fe9083fd3028700d1bd706fc53067"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "56c5dba16fc9e7edb9f2770d5cfbf9518edde4b5"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpTrace"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpTrace.lean"
+# Pre-phase-2-repair source_git_blob = "51d14c14241ec3f81fbd83775cf1d345d5365a49".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "0fd59faab5778fa8162bdb72b545230390d04ad6"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalTraceCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalTraceCore.lean"
+source_git_blob = "e68cd4d11d71e44ae1a4350b01fef92fdbc5fd53"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalLogEnclosure.lean"
+# Pre-phase-2-repair source_git_blob = "4205892af69b4b0fa5835b05d07920a1f959eacb".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "af7a10087249174747825c7e2a18888dc705c39d"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.gridNode", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.lowerGrid", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.upperGrid", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.gridCenter", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.gridRadius", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.mantissa", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.center", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.radius", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.validScale", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.checkWithin", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_gridNode", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_lowerGrid", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_upperGrid", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_gridCenter", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_gridRadius", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_mantissa", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_center", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.cast_radius", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.validScale_iff", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.log_error", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.center_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.radius_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.radius_formula", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.radius_le", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.checkWithin_sound", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.common_precision_checked", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.admissible_checked", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.boundary_consistent", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.log_two_control", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.shared_error_control", "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure.invalid_scale_controls"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalMellinNode"
+path = "GRWTSK/Analysis/Complex/RationalMellinNode.lean"
+# Pre-phase-2-repair source_git_blob = "daccd50530474146baa53bc3300bb00b21b6941e".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "f5d8f3523af5bef2eb3169228a0804c38de8d795"
+required_declarations = ["GRWTSK.Analysis.Complex.RationalMellinNode.Resolution", "GRWTSK.Analysis.Complex.RationalMellinNode.magnitude", "GRWTSK.Analysis.Complex.RationalMellinNode.logCenterQ", "GRWTSK.Analysis.Complex.RationalMellinNode.logRadiusQ", "GRWTSK.Analysis.Complex.RationalMellinNode.exponent", "GRWTSK.Analysis.Complex.RationalMellinNode.exponentBound", "GRWTSK.Analysis.Complex.RationalMellinNode.error", "GRWTSK.Analysis.Complex.RationalMellinNode.check", "GRWTSK.Analysis.Complex.RationalMellinNode.checkWithin", "GRWTSK.Analysis.Complex.RationalMellinNode.exactTrace", "GRWTSK.Analysis.Complex.RationalMellinNode.cast_magnitude", "GRWTSK.Analysis.Complex.RationalMellinNode.magnitude_nonneg", "GRWTSK.Analysis.Complex.RationalMellinNode.toComplex_exponent", "GRWTSK.Analysis.Complex.RationalMellinNode.exponent_in_ball", "GRWTSK.Analysis.Complex.RationalMellinNode.exponent_re_nonpos", "GRWTSK.Analysis.Complex.RationalMellinNode.check_components", "GRWTSK.Analysis.Complex.RationalMellinNode.logarithm_input_error", "GRWTSK.Analysis.Complex.RationalMellinNode.check_sound", "GRWTSK.Analysis.Complex.RationalMellinNode.checkWithin_sound", "GRWTSK.Analysis.Complex.RationalMellinNode.exactTrace_checked", "GRWTSK.Analysis.Complex.RationalMellinNode.checked_log_charge_le", "GRWTSK.Analysis.Complex.RationalMellinNode.checked_lengths", "GRWTSK.Analysis.Complex.RationalMellinNode.reciprocalResolution", "GRWTSK.Analysis.Complex.RationalMellinNode.reciprocalTrace", "GRWTSK.Analysis.Complex.RationalMellinNode.reciprocal_node_checked", "GRWTSK.Analysis.Complex.RationalMellinNode.reciprocal_node_enclosure", "GRWTSK.Analysis.Complex.RationalMellinNode.exponential_only_is_insufficient", "GRWTSK.Analysis.Complex.RationalMellinNode.stale_node_rejected", "GRWTSK.Analysis.Complex.RationalMellinNode.source_parameter_rejected", "GRWTSK.Analysis.Complex.RationalMellinNode.constant_density_control", "GRWTSK.Analysis.Complex.RationalMellinNode.domain_controls"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalNodeCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalNodeCore.lean"
+source_git_blob = "6c4992ea290863a94ca7382c171594c45c1d17b3"
+required_declarations = []
+
+[[hostile_controls]]
+id = "inherited-chain"
+description = "Require all exact inherited targets, public types, decision instances and controls; root-only success is insufficient."
+
+[[hostile_controls]]
+id = "rational-real-refinement"
+description = "All reciprocal nodes/sums, centers, radii and dyadic expressions must cast to their exact existing analytic definitions."
+
+[[hostile_controls]]
+id = "positive-log-grids"
+description = "Reject zero cell counts and nodes below one. Empty sums or totalized divisions are not valid logarithm evidence."
+
+[[hostile_controls]]
+id = "exact-scale"
+description = "Check both power inequalities at the external rational node; no unverified mantissa or logarithm metadata."
+
+[[hostile_controls]]
+id = "shared-log-two"
+description = "Retain k-fold shared uncertainty. Equal-grid boundary choices must agree; a unit mantissa does not erase log-two error."
+
+[[hostile_controls]]
+id = "external-node-parameter"
+description = "Recompute the exponent from the exact external node and complex parameter. Concrete stale-node and changed-parameter controls must fail."
+
+[[hostile_controls]]
+id = "domain-sign"
+description = "Re(z)<=1 and the proved nonnegative center supply Re(w)<=0. Do not silently apply the ray bound above the admitted half-plane."
+
+[[hostile_controls]]
+id = "complete-exp-trace"
+description = "Retain every seed, square, magnitude, Taylor-ratio and exact-length check from the prior rational checker."
+
+[[hostile_controls]]
+id = "separate-total-precision"
+description = "Compare log-input plus full nonlinear exponential allowance to the external nonnegative tolerance. Exp-only precision is not node precision."
+
+[[hostile_controls]]
+id = "charged-radius-not-error-lower-bound"
+description = "checked_log_charge_le is a condition on this sufficient checker, not a lower bound on actual numerical error. Failure is not an analytic counterexample."
+
+[[hostile_controls]]
+id = "constructed-acceptance"
+description = "exactTrace_checked must construct an accepted trace at every admissible resolution; no assumed passing trace or always-rejecting checker."
+
+[[hostile_controls]]
+id = "nonconstant-control"
+description = "Retain the exact t=2,z=0 sample 7921/16384 with total allowance 74833/262144 and tolerance 3/10; exp-only 1/10 is not total 1/10."
+
+[[hostile_controls]]
+id = "unit-control"
+description = "Constant density admits exact zero tolerance at a valid resolution, while invalid log grids and negative precision still fail."
+
+[[hostile_controls]]
+id = "finite-code-versus-runtime"
+description = "Computational definitions use rational/natural operations and prior checks, not analytic log/exp/norm or noncomputable interpretation. Source proof is not code-generation or parser qualification."
+
+[[hostile_controls]]
+id = "node-versus-integral"
+description = "No standalone node trace is a covered-partition, weighted-sum, tent, full-divisor or prime-margin certificate."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_inherited_source_replay = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = ["Lean elaboration or kernel acceptance", "qualified executable, parser or generated code", "automatic precision allocation or bounded bit complexity", "complete rational quadrature or outer accumulation checker", "actual zeta-zero inventory or multiplicities", "complete arithmetic source or omitted-divisor tail", "Legendre, RH, new prime distribution, worker qualification or F06 release"]

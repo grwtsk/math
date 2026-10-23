@@ -37,7 +37,7 @@ LOCALIZED_PSI_ABEL_RECONSTRUCTION_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open MeasureTheory Set
+open _root_.MeasureTheory Set
 open Chebyshev
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
@@ -56,21 +56,25 @@ theorem weightedMangoldt_Ioc_abel
       ∀ u ∈ Set.Icc (X : ℝ) (Y : ℝ), DifferentiableAt ℝ f u := by
     intro u hu
     dsimp [f]
-    fun_prop (disch := linarith [hX])
+    have hXp : (0 : ℝ) < X := by exact_mod_cast (show 0 < X by omega)
+    exact differentiableAt_inv (ne_of_gt (hXp.trans_le hu.1))
   have hint :
       IntegrableOn (deriv f) (Set.Icc (X : ℝ) (Y : ℝ)) := by
     have hcont :
         ContinuousOn (fun u : ℝ => -(u^2)⁻¹)
           (Set.Icc (X : ℝ) (Y : ℝ)) := by
-      fun_prop (disch := intro u hu; linarith [hX])
-    apply IntegrableOn.congr_fun hcont.integrableOn_Icc measurableSet_Icc
-    intro u hu
-    simp [f, deriv_inv]
+      apply ContinuousOn.neg
+      apply ContinuousOn.inv₀ (continuousOn_id.pow 2)
+      intro u hu
+      apply pow_ne_zero
+      have : (0 : ℝ) < X := by exact_mod_cast (show 0 < X by omega)
+      exact ne_of_gt (this.trans_le hu.1)
+    exact hcont.integrableOn_Icc.congr_fun (by intro u hu; simp [f, deriv_inv]) measurableSet_Icc
   have h :=
     sum_mul_eq_sub_sub_integral_mul'
       (c := fun n => mangoldt n) hXY hdiff hint
   rw [← intervalIntegral.integral_of_le (by exact_mod_cast hXY)] at h
-  simpa [f, coefficient, mangoldt, Chebyshev.psi, deriv_inv,
+  simpa [f, coefficient, mangoldt, Chebyshev.psi_eq_sum_Icc, deriv_inv,
     div_eq_mul_inv, mul_comm, mul_left_comm, mul_assoc] using h
 
 theorem weightedMangoldt_Ioc_error
@@ -92,7 +96,9 @@ theorem weightedMangoldt_Ioc_error
       ContinuousOn (fun u : ℝ => (u^2)⁻¹)
         (Set.uIcc (X : ℝ) (Y : ℝ)) := by
     rw [Set.uIcc_of_le (by exact_mod_cast hXY)]
-    fun_prop (disch := intro u hu; linarith [hX])
+    apply ContinuousOn.inv₀ (continuousOn_id.pow 2)
+    intro u hu
+    exact pow_ne_zero _ (ne_of_gt (hXpos.trans_le hu.1))
   have hpsiDiv :
       IntervalIntegrable (fun u : ℝ => ψ u / u^2)
         volume (X : ℝ) (Y : ℝ) := by
@@ -102,7 +108,7 @@ theorem weightedMangoldt_Ioc_error
         volume (X : ℝ) (Y : ℝ) := by
     exact ContinuousOn.intervalIntegrable (by
       rw [Set.uIcc_of_le (by exact_mod_cast hXY)]
-      fun_prop (disch := intro u hu; linarith [hX]))
+      exact continuousOn_const.div continuousOn_id (fun u hu => ne_of_gt (hXpos.trans_le hu.1)))
   have herr :
       IntervalIntegrable (fun u : ℝ => psiError u / u^2)
         volume (X : ℝ) (Y : ℝ) := by
@@ -111,22 +117,21 @@ theorem weightedMangoldt_Ioc_error
     intro u hu
     unfold psiError
     have hu0 : u ≠ 0 := by
-      rw [Set.uIcc_of_le (by exact_mod_cast hXY)] at hu
-      linarith [hu.1, hX]
+      rw [Set.uIoc_of_le (by exact_mod_cast hXY)] at hu
+      linarith [hu.1, hXpos]
     field_simp [hu0]
-    ring
   have hsplit :
       (∫ u in (X : ℝ)..(Y : ℝ), ψ u / u^2) =
         (∫ u in (X : ℝ)..(Y : ℝ), psiError u / u^2) +
         Real.log ((Y : ℝ) / (X : ℝ)) := by
-    rw [← intervalIntegral.integral_one_div_of_pos hXpos hYpos]
+    rw [← integral_one_div_of_pos hXpos hYpos]
     rw [← intervalIntegral.integral_add herr hone]
     apply intervalIntegral.integral_congr
     intro u hu
     unfold psiError
     have hu0 : u ≠ 0 := by
-      rcases hu with ⟨hu1, hu2⟩
-      linarith [hX]
+      rw [Set.uIcc_of_le (by exact_mod_cast hXY)] at hu
+      linarith [hu.1, hXpos]
     field_simp [hu0]
     ring
   rw [hAbel, hsplit]
@@ -144,13 +149,13 @@ theorem location_le_location_iff
     have hdiv :
         (n : ℝ) / (X : ℝ) ≤ (m : ℝ) / (X : ℝ) := by linarith
     have hnm : (n : ℝ) ≤ (m : ℝ) :=
-      (div_le_div_iff₀ hXr hXr).mp hdiv
+      (div_le_div_iff_of_pos_right hXr).mp hdiv
     exact_mod_cast hnm
   · intro h
     have hnm : (n : ℝ) ≤ (m : ℝ) := by exact_mod_cast h
     have hdiv :
         (n : ℝ) / (X : ℝ) ≤ (m : ℝ) / (X : ℝ) :=
-      (div_le_div_iff₀ hXr hXr).2 hnm
+      (div_le_div_iff_of_pos_right hXr).2 hnm
     linarith
 
 theorem step_location_location
@@ -166,7 +171,7 @@ theorem step_location_location
 
 theorem cumulative_at_grid
     {X m : ℕ} (hX : 0 < X)
-    (hXm : X ≤ m) (hm2X : m ≤ 2 * X) :
+    (_hXm : X ≤ m) (hm2X : m ≤ 2 * X) :
     cumulative X (location X m) =
       (∑ n ∈ Finset.Ioc X m, coefficient n) -
         Real.log ((m : ℝ) / (X : ℝ)) := by
@@ -182,11 +187,11 @@ theorem cumulative_at_grid
           coefficient n * step (location X n) (location X m)) =
         ∑ n ∈ Finset.Ioc X m, coefficient n := by
     simp_rw [step_location_location hX]
+    simp only [mul_ite, mul_one, mul_zero]
     rw [← Finset.sum_filter]
-    simpa [hfilter]
+    simp [hfilter]
   rw [hsum]
   unfold logarithm location
-  have hX0 : (X : ℝ) ≠ 0 := by exact_mod_cast (Nat.ne_of_gt hX)
   rw [show 1 + ((m : ℝ) / (X : ℝ) - 1) =
       (m : ℝ) / (X : ℝ) by ring]
 
@@ -208,7 +213,7 @@ theorem gridIndex_bounds
     {t : ℝ} (ht : t ∈ Set.Icc (0 : ℝ) 1) :
     X ≤ gridIndex X t ∧ gridIndex X t ≤ 2 * X := by
   have hXr : (0 : ℝ) < (X : ℝ) := by exact_mod_cast hX
-  have hy0 : 0 ≤ (X : ℝ) * (1 + t) := by positivity
+  have hy0 : 0 ≤ (X : ℝ) * (1 + t) := mul_nonneg hXr.le (by linarith [ht.1])
   have hlow :
       (X : ℝ) ≤ (X : ℝ) * (1 + t) := by
     nlinarith [ht.1]
@@ -230,14 +235,15 @@ theorem location_le_t_iff_le_gridIndex
     location X n ≤ t ↔ n ≤ gridIndex X t := by
   have hXr : (0 : ℝ) < (X : ℝ) := by exact_mod_cast hX
   have hy0 : 0 ≤ (X : ℝ) * (1 + t) := by positivity
+  unfold gridIndex
   rw [Nat.le_floor_iff hy0]
   unfold location
   constructor <;> intro h
   · have hdiv : (n : ℝ) / (X : ℝ) ≤ 1 + t := by linarith
-    exact (div_le_iff₀ hXr).1 hdiv
+    simpa only [mul_comm] using (div_le_iff₀ hXr).1 hdiv
   · have hdiv :
         (n : ℝ) / (X : ℝ) ≤ 1 + t :=
-      (div_le_iff₀ hXr).2 h
+      (div_le_iff₀ hXr).2 (by simpa only [mul_comm] using h)
     linarith
 
 theorem cumulative_sub_grid_eq_logarithm_sub
@@ -256,7 +262,7 @@ theorem cumulative_sub_grid_eq_logarithm_sub
             step (location X n) (location X (gridIndex X t)) := by
     apply Finset.sum_congr rfl
     intro n hn
-    have hiff1 := location_le_t_iff_le_gridIndex hX ht.1
+    have hiff1 := location_le_t_iff_le_gridIndex (n := n) hX ht.1
     have hiff2 :=
       location_le_location_iff
         (n := n) (m := gridIndex X t) hX
@@ -287,14 +293,14 @@ theorem logarithm_grid_error_le
     exact_mod_cast (lt_of_lt_of_le hX hmX)
   have hy0 : 0 ≤ y := by
     dsimp [y]
-    positivity
+    exact mul_nonneg hXr.le (by linarith [ht.1])
   have hmy : (m : ℝ) ≤ y := by
     dsimp [m, y, gridIndex]
     exact Nat.floor_le hy0
   have hylt : y < (m : ℝ) + 1 := by
     dsimp [m, y, gridIndex]
     exact_mod_cast Nat.lt_floor_add_one ((X : ℝ) * (1 + t))
-  have hypos : 0 < y := hXr.mul (by linarith [ht.1])
+  have hypos : 0 < y := mul_pos hXr (by linarith [ht.1])
   have hratio1 : 1 ≤ y / (m : ℝ) :=
     (le_div_iff₀ hmpos).2 (by simpa using hmy)
   have hlog0 : 0 ≤ Real.log (y / (m : ℝ)) :=
@@ -312,7 +318,6 @@ theorem logarithm_grid_error_le
       y / (m : ℝ) - 1
           = (y - (m : ℝ)) / (m : ℝ) := by
             field_simp [hmpos.ne']
-            ring
       _ ≤ 1 / (m : ℝ) :=
         div_le_div_of_nonneg_right (le_of_lt hdiff) hmpos.le
       _ ≤ 1 / (X : ℝ) := h1m
@@ -331,14 +336,12 @@ theorem logarithm_grid_error_le
         (m : ℝ) / (X : ℝ) by ring]
     rw [show 1 + t = y / (X : ℝ) by
       dsimp [y]
-      field_simp [hX0]
-      ring]
+      field_simp [hX0]]
     rw [← Real.log_div
       (div_ne_zero hypos.ne' hX0)
       (div_ne_zero hm0 hX0)]
     congr 1
     field_simp [hX0, hm0]
-    ring
   rw [hlogarithm]
   exact hlog
 
@@ -388,8 +391,8 @@ theorem cumulative_grid_abs_le
         (f := fun u : ℝ => psiError u / u^2)
         (a := (X : ℝ)) (b := (m : ℝ))
         (fun u hu => by
-          rw [Set.uIcc_of_le (by exact_mod_cast hXm)] at hu
-          have huX : (X : ℝ) ≤ u := hu.1
+          rw [Set.uIoc_of_le (by exact_mod_cast hXm)] at hu
+          have huX : (X : ℝ) ≤ u := hu.1.le
           have hu2X : u ≤ ((2 * X : ℕ) : ℝ) :=
             hu.2.trans (by exact_mod_cast hm2X)
           have hEu := hA.2 u ⟨huX, hu2X⟩
@@ -401,17 +404,17 @@ theorem cumulative_grid_abs_le
     rw [Real.norm_eq_abs] at hnorm
     have hlen :
         |(m : ℝ) - (X : ℝ)| ≤ (X : ℝ) := by
-      rw [abs_of_nonneg (by exact_mod_cast Nat.sub_nonneg.mpr hXm)]
-      exact_mod_cast (by omega : m - X ≤ X)
+      rw [abs_of_nonneg (sub_nonneg.mpr (by exact_mod_cast hXm))]
+      have hm : (m : ℝ) ≤ 2 * (X : ℝ) := by exact_mod_cast hm2X
+      linarith
     calc
       |∫ u in (X : ℝ)..(m : ℝ), psiError u / u^2|
           ≤ (A / (X : ℝ)^2) *
               |(m : ℝ) - (X : ℝ)| := hnorm
       _ ≤ (A / (X : ℝ)^2) * (X : ℝ) :=
-        mul_le_mul_of_nonneg_left hlen (by positivity)
+        mul_le_mul_of_nonneg_left hlen (div_nonneg hA.1 (sq_nonneg _))
       _ = A / (X : ℝ) := by
         field_simp [hXr.ne']
-        ring
   have htri :
       |psiError (m : ℝ) / (m : ℝ) -
           psiError (X : ℝ) / (X : ℝ) +
@@ -420,9 +423,9 @@ theorem cumulative_grid_abs_le
       (|psiError (m : ℝ) / (m : ℝ)| +
           |psiError (X : ℝ) / (X : ℝ)|) +
         |∫ u in (X : ℝ)..(m : ℝ), psiError u / u^2| := by
-    exact (abs_add _ _).trans
-      (add_le_add_right (abs_sub _ _) _)
-  exact htri.trans (by linarith)
+    exact (abs_add_le _ _).trans
+      (add_le_add (abs_sub _ _) le_rfl)
+  exact htri.trans (by linarith [show 3 * A / (X : ℝ) = 3 * (A / (X : ℝ)) by ring])
 
 theorem cumulative_abs_le_of_psiEnvelope
     {X : ℕ} (hX : 2 ≤ X)
@@ -448,7 +451,7 @@ theorem cumulative_abs_le_of_psiEnvelope
       linarith
     rw [heq]
     simpa [abs_sub_comm] using
-      (abs_add
+      (abs_add_le
         (cumulative X (location X (gridIndex X t)))
         (logarithm (location X (gridIndex X t)) - logarithm t))
   calc

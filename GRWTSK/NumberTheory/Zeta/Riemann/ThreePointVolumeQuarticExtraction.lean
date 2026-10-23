@@ -35,6 +35,11 @@ structure PackingPoint where
 
 namespace PackingPoint
 
+@[ext] theorem ext {p q : PackingPoint} (hx : p.x = q.x) (hy : p.y = q.y) : p = q := by
+  cases p
+  cases q
+  simp_all
+
 def sub (p q : PackingPoint) : PackingPoint :=
   ⟨p.x - q.x, p.y - q.y⟩
 
@@ -43,6 +48,9 @@ def dot (p q : PackingPoint) : ℝ :=
 
 def normSq (p : PackingPoint) : ℝ :=
   p.dot p
+
+theorem normSq_nonneg (p : PackingPoint) : 0 ≤ p.normSq :=
+  add_nonneg (mul_self_nonneg p.x) (mul_self_nonneg p.y)
 
 end PackingPoint
 
@@ -147,7 +155,7 @@ def ThreePointVolumeExtractionAtZero.toQuarticExtraction
   weight_tendsto := data.weight_tendsto
 
 /-- Exact all-zero claim for the three-point packing supplier. -/
-def ThreePointVolumeQuarticClaim : Prop :=
+def ThreePointVolumeQuarticClaim : Type :=
   ∀ s : ℂ, NontrivialZetaZero s → ThreePointVolumeExtractionAtZero s
 
 /-- The source-bound, theorem-audited three-point volume supplier. -/

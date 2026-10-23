@@ -1,0 +1,234 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "constructed-rectangle-count-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.ConstructedRectangleCountCore"
+build_target = "GRWTSK.Interfaces.ConstructedRectangleCountCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "d39dd4203fb5ef306b095eac37784201a05e8882"
+parent_tree = "8f9501d705c19e0752e5372973fea08e6e7089ce"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/RationalRectangleCountCore/rational-rectangle-count-v0.1.toml"
+inherited_target_blob = "7786812206406b6905c767a4acda12dd826f485b"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Actual-source enclosures are derived from constructed values; successful COMPLETE target count still absent. One local target-side pilot is not full coverage."
+receipt_policy = "No execution authority or receipt. Acceptance must bind externally to actual commit/tree/target."
+inventory_policy = "Retain EVERY predecessor declaration, exact type, generated structure/DecidableEq name, control, large finite decision, transitive import/axiom/native dependency and source identity. This selected catalog is NOT the complete closure. Empty repeated name lists waive nothing. Python output is not a proof of Lean finite success."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalPowerValue"
+path = "GRWTSK/Analysis/ErrorBounds/RationalPowerValue.lean"
+source_git_blob = "ad45930024f7bb7739e051ed972cb5c59c7ca918"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalPowerValue.Resolution", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.logBall", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.exponent", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.trace", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.valueBall", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.Valid", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.validDecidable", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.check", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.check_iff_valid", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.exponent_re_nonpos", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.trace_checked", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.logBall_sound", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.valueBall_sound", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.evaluate", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.evaluate_eq_some_iff", "GRWTSK.Analysis.ErrorBounds.RationalPowerValue.evaluate_sound"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.ConstructedRectangleCountCore"
+path = "GRWTSK/Interfaces/ConstructedRectangleCountCore.lean"
+source_git_blob = "72c1160cd99ba17a063dd95dd171ead7aece0a24"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ConstructedSourceControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ConstructedSourceControls.lean"
+source_git_blob = "f5f9e75b5c77933c50858931a3b9e9af534ed349"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.poleParameters", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.coarseParameters", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pole_value_computed", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pole_value_sound", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pole_precision_zero", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.validity_not_precision", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.invalid_source_domain", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.negative_tolerance_rejected", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.wrong_scale_and_base_rejected", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.coarse_log_error_retained", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.polePlan", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.plans", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.generated_records", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.all_plans_checked", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.generated_enclosures", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.small_box_computed", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.complete_plan_inventory_required", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.changed_source_center_rejected", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.coarse_values_do_not_certify_tubes", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.target_geometry_not_supplied", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pilotCenter", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pilotParameters", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pilot_source_checked", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pilot_precision_checked", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pilot_patch_checked", "GRWTSK.RiemannHypothesis.Checks.ConstructedSourceControls.pilot_disk_nonzero"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConstructedRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConstructedRectangleCount.lean"
+source_git_blob = "2c314c1ae8f25931cd7c7d8593089509c235ede3"
+required_declarations = ["GRWTSK.RiemannHypothesis.ConstructedRectangleCount.Plan", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.fallback", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.planAt", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.record", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.records", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.PlansValid", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.plansValidDecidable", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.checkPlans", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.checkPlans_iff", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.records_length", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.edgeAt_records", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.enclosures_of_checkPlans", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.evaluateBox", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.evaluateBox_eq_some_iff", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.evaluate", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.count_eq_of_evaluate", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.result_nonnegative", "GRWTSK.RiemannHypothesis.ConstructedRectangleCount.complete_pair_of_evaluate_one"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleValue"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleValue.lean"
+source_git_blob = "52f1bb4b39a75d21e0d41d1ed662901a07187a12"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalPoleValue.Parameters", "GRWTSK.RiemannHypothesis.RationalPoleValue.resolution", "GRWTSK.RiemannHypothesis.RationalPoleValue.logs", "GRWTSK.RiemannHypothesis.RationalPoleValue.powers", "GRWTSK.RiemannHypothesis.RationalPoleValue.Valid", "GRWTSK.RiemannHypothesis.RationalPoleValue.validDecidable", "GRWTSK.RiemannHypothesis.RationalPoleValue.check", "GRWTSK.RiemannHypothesis.RationalPoleValue.check_iff_valid", "GRWTSK.RiemannHypothesis.RationalPoleValue.finiteJet", "GRWTSK.RiemannHypothesis.RationalPoleValue.valueBall", "GRWTSK.RiemannHypothesis.RationalPoleValue.logs_sound", "GRWTSK.RiemannHypothesis.RationalPoleValue.powers_sound", "GRWTSK.RiemannHypothesis.RationalPoleValue.finiteJet_sound", "GRWTSK.RiemannHypothesis.RationalPoleValue.valueBall_sound", "GRWTSK.RiemannHypothesis.RationalPoleValue.evaluate", "GRWTSK.RiemannHypothesis.RationalPoleValue.evaluate_eq_some_iff", "GRWTSK.RiemannHypothesis.RationalPoleValue.evaluate_sound", "GRWTSK.RiemannHypothesis.RationalPoleValue.checkWithin", "GRWTSK.RiemannHypothesis.RationalPoleValue.checkWithin_sound"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhPower"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhPower.lean"
+source_git_blob = "abce5774ed5d58aad42edcacc65b3bd165c0a38a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhLog.lean"
+source_git_blob = "43b6919419d396701f20f08e2a79a2840089e8f3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp"
+path = "GRWTSK/Analysis/ErrorBounds/RationalRoundedExp.lean"
+source_git_blob = "43b9ddac8be240f55cf94eb55aca4a8a82654d13"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpTrace"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpTrace.lean"
+source_git_blob = "51d14c14241ec3f81fbd83775cf1d345d5365a49"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleNormalizedJet.lean"
+source_git_blob = "fa90642a45d78579a1202202b055fc3bc456f16d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedEndpointJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedEndpointJet.lean"
+source_git_blob = "bb93b1bc2fc7f6aad133d64cee3924430949f419"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalEndpointJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalEndpointJet.lean"
+source_git_blob = "42ecc0619b210b15be65f28688a1330190b6a905"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPolePatch.lean"
+source_git_blob = "e1bc2347e739bc1cb2a78647478d1d478887d2d9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalRectangleCount.lean"
+source_git_blob = "0862021b13af8aafc64cdcdffa55cfb5bf8b260a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.RectangleMeshControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/RectangleMeshControls.lean"
+source_git_blob = "1093b803cd694e4a74dfc08a3a95c2ad728e0635"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.RationalRectangleCountCore"
+path = "GRWTSK/Interfaces/RationalRectangleCountCore.lean"
+source_git_blob = "268afb9e7def42f1b536ad132ecb725362299766"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/List/GetD.lean"
+source_git_blob = "296b75d1659c7e3ee325495e6196cec1ec62c987"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Rat/Cast/Order.lean"
+source_git_blob = "8fecc133d644463ae0ec9cb521dfa4e000e7e1ea"
+
+[[controls]]
+id = "exact_types"
+requirement = "Inspect all new/inherited exact types and generated structure members; a Bool or data record is not actual source semantics."
+
+[[controls]]
+id = "leaf_source_identity"
+requirement = "Use the literal external base and complex parameter to derive the exponent; do not accept a relabeled output."
+
+[[controls]]
+id = "scale_guards"
+requirement = "Check exact dyadic inequalities even when Nat.log2 constructs the candidate scale. Reject base zero."
+
+[[controls]]
+id = "full_log_error"
+requirement = "Retain scale-weighted log(2) uncertainty, full atanh remainder and directed coordinate displacement."
+
+[[controls]]
+id = "actual_generated_trace"
+requirement = "Derive every inherited trace check from the reference constructor; no missing seed, square or endpoint."
+
+[[controls]]
+id = "nonlinear_rounding"
+requirement = "Retain E^2 and every local residual before later squarings; upward error rounding is not exact error."
+
+[[controls]]
+id = "validity_not_precision"
+requirement = "M=0 can be valid but coarse; require full radius comparison for requested precision and unchanged strict patch margin."
+
+[[controls]]
+id = "positive_base_inventory"
+requirement = "Generate every base 1..N; N>=1 and complete endpoint corrections are mandatory."
+
+[[controls]]
+id = "correction_count"
+requirement = "extraCorrections=p means p+1 actual Bernoulli corrections; do not shift the source residual order."
+
+[[controls]]
+id = "actual_source_tail"
+requirement = "Add the inherited actual-source remainder to the complete finite value radius; finite derivative is not actual source derivative."
+
+[[controls]]
+id = "removed_pole"
+requirement = "Retain F(1)=1 and the pole-free finite construction. Do not evaluate raw totalized 0*zeta(1)."
+
+[[controls]]
+id = "no_value_field"
+requirement = "Plans contain geometry and parameters only. Construct the same value ball internally rather than accepting source truth metadata."
+
+[[controls]]
+id = "plan_lengths"
+requirement = "Require positive n, exactly n plans and every source guard, including zero-width cells; defaults waive no record."
+
+[[controls]]
+id = "upstream_count_preserved"
+requirement = "Reuse unchanged mesh, tube, polygon index, oriented alignment, canonical divisor and all original strict checks."
+
+[[controls]]
+id = "only_finite_success"
+requirement = "Inspect count_eq_of_evaluate to ensure Enclosures is derived, not retained under a disguised free premise."
+
+[[controls]]
+id = "small_constructed_example"
+requirement = "The old small pole square must compute generated records and some0; failed target reuse remains none."
+
+[[controls]]
+id = "literal_target_pilot"
+requirement = "The single left-side pilot requires actual reduction of all 81 leaves and full source/patch formulas. It is not whole-contour coverage."
+
+[[controls]]
+id = "strict_radius"
+requirement = "Equality at the Cauchy radius threshold rejects. Rejection is not a zero witness; reducing value error alone does not remove variation."
+
+[[controls]]
+id = "negative_index"
+requirement = "Retain signed output and derive nonnegativity only from the complete soundness chain; no truncation or absolute value."
+
+[[controls]]
+id = "full_acceptance"
+requirement = "No Python diagnostic, static scan, hash match or source commitment substitutes for pinned elaboration, large decision acceptance and independent transitive trust review."

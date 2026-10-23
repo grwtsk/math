@@ -88,19 +88,19 @@ theorem safeShiftMinus_one_lt_re (z : ZeroPoint) :
 /-- Critical reflection negates the horizontal defect. -/
 theorem zeroDefect_criticalReflection (s : ℂ) :
     zeroDefect (criticalReflection s) = -zeroDefect s := by
-  simp [zeroDefect, criticalReflection, zeroReflect, zeroConjugate]
+  simp [zeroDefect, criticalReflection]
   ring
 
 /-- Critical reflection swaps the two safe Dirichlet evaluation points. -/
 theorem safeShiftPlus_criticalReflection (s : ℂ) :
     safeShiftPlus (criticalReflection s) = safeShiftMinus s := by
   apply Complex.ext <;>
-    simp [safeShiftPlus, safeShiftMinus, zeroDefect_criticalReflection]
+    simp [safeShiftPlus, safeShiftMinus, zeroDefect, criticalReflection]; ring
 
 theorem safeShiftMinus_criticalReflection (s : ℂ) :
     safeShiftMinus (criticalReflection s) = safeShiftPlus s := by
   apply Complex.ext <;>
-    simp [safeShiftPlus, safeShiftMinus, zeroDefect_criticalReflection]
+    simp [safeShiftPlus, safeShiftMinus, zeroDefect, criticalReflection]; ring
 
 /-- Exact complex von Mangoldt term at one natural source label and one safe
 evaluation point. -/

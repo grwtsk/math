@@ -82,7 +82,6 @@ theorem parityHalfShiftSignedQuarticWrap_eq_halfIndex
   rw [parityAffineShiftCollisionCoordinateNat_reconstructed m r h hr,
     parityAffineShiftCollisionCoordinateNat_reconstructed n r g hr,
     regularQuarticMobiusCoefficient_reconstructed]
-  rfl
 
 /-- Every half-index wrap collision has a nonzero integer winding. -/
 theorem halfIndexWrap_exists_nonzero_winding
@@ -159,10 +158,10 @@ theorem halfIndexQuarticMobiusCoefficient_eq_centeredWrap
       centeredWrapQuarticMobiusCoefficient r m h n g := by
   unfold halfIndexQuarticMobiusCoefficient
     centeredWrapQuarticMobiusCoefficient
-  rw [wrapFirst_lower_eq_centered,
-    wrapFirst_upper_eq_centered,
-    wrapSecond_lower_eq_centered,
-    wrapSecond_upper_eq_centered]
+  rw [wrapFirst_upper_eq_centered r m h,
+    wrapSecond_upper_eq_centered r n g,
+    wrapFirst_lower_eq_centered r m h,
+    wrapSecond_lower_eq_centered r n g]
 
 /-- Half-index wrap surface with the coefficient written directly as two
 symmetric Möbius pairs around separated centers. -/

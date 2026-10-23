@@ -158,7 +158,7 @@ margins still require their own source-bound integration under #261.
 ## 6. Static target, checks, and remaining work
 
 The new root is `GRWTSK.Interfaces.QuadraticIntervalKernelCore`; the new static
-target is `verification/quadratic-interval-core-v0.3.toml`. The target retains
+target is `docs/verification/Interfaces/QuadraticIntervalKernelCore/quadratic-interval-core-v0.3.toml`. The target retains
 the old eight modules and adds the two new owners and import-only root. Its
 module source hashes and required new declaration names are static identities,
 not elaborated types or evidence of execution. The public root is unchanged.

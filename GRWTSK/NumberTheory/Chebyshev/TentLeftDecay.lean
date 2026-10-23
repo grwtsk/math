@@ -53,7 +53,6 @@ theorem affine_exp_decay (a B : ℝ) (ha : 1 < a) :
         rw [Nat.cast_succ, show -2 * ((N : ℝ) + 1) * Real.log a =
           -2 * (N : ℝ) * Real.log a + (-2 * Real.log a) by ring,
           Real.exp_add, ih, pow_succ]
-        rfl
   simpa only [he, add_mul, mul_zero, add_zero] using (h0.const_mul B).add h1
 
 /-- The multiplier supplier and its index dependence are derived, not assumed. -/
@@ -68,7 +67,7 @@ theorem exists_left_vertical_budget (x h T : ℝ) (hh : 0 < h) (ha : 1 < x - h)
   intro N hN
   have hQ : 0 ≤ B + (N : ℝ) := add_nonneg hB (Nat.cast_nonneg _)
   have hbound := norm_left_vertical_le x h hh ha N hN T (B + (N : ℝ)) hT hQ (hb N)
-  convert hbound using 1 <;> ring
+  convert hbound using 1; ring
 
 /-- Unconditional within the stated geometric domain, with T fixed.
 No zero count, safe-height selection, source equality, or growth premise is required. -/

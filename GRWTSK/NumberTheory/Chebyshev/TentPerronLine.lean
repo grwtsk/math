@@ -108,8 +108,8 @@ theorem continuous_neg_logDeriv_rightLine :
 theorem integrable_zeta_tent_rightLine (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
     Integrable (fun t : ℝ => -logDeriv riemannZeta (rightLine t) *
       tentKernel x h (rightLine t)) := by
-  have hc := continuous_neg_logDeriv_rightLine.mul
-    ((continuous_tentKernel x h hh ha).comp (by unfold rightLine; fun_prop))
+  have hc : Continuous (fun t : ℝ => -logDeriv riemannZeta (rightLine t) * tentKernel x h (rightLine t)) := continuous_neg_logDeriv_rightLine.mul
+    ((continuous_tentKernel x h hh ha).comp (show Continuous rightLine from by unfold rightLine; fun_prop))
   apply (integrable_inv_one_add_sq.const_mul
     (mangoldtLineMass * rightLineConstant x h)).mono' hc.aestronglyMeasurable
   apply Eventually.of_forall

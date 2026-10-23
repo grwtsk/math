@@ -59,7 +59,7 @@ theorem step_integrable (r : ℝ) : Integrable (step r) unitVolume :=
 
 theorem step_mul (r s t : ℝ) : step r t*step s t=step (max r s) t := by
   by_cases hr : r ≤ t <;> by_cases hs : s ≤ t <;>
-    simp [step, Set.indicator, hr, hs, max_le_iff]
+    simp [step, Set.indicator, hr, hs]
 
 theorem integral_step {r : ℝ} (hr : r ∈ Icc (0:ℝ) 1) :
     (∫ t, step r t ∂unitVolume)=1-r := by
@@ -105,14 +105,19 @@ theorem integral_feature_product {r s : ℝ}
   have hm : max r s ∈ Icc (0:ℝ) 1 :=
     ⟨hr.1.trans (le_max_left _ _), max_le hr.2 hs.2⟩
   simp_rw [feature_product_expansion]
-  rw [integral_add
-    (((step_integrable (max r s)).sub ((step_integrable r).const_mul _)).sub
-      ((step_integrable s).const_mul _)) (integrable_const _),
-    integral_sub ((step_integrable (max r s)).sub ((step_integrable r).const_mul _))
-      ((step_integrable s).const_mul _),
-    integral_sub (step_integrable (max r s)) ((step_integrable r).const_mul _),
-    integral_const_mul, integral_const_mul, integral_step hm, integral_step hr,
-    integral_step hs]
+  have hadd := integral_add
+    (((step_integrable (max r s)).sub ((step_integrable r).const_mul (1-s))).sub
+      ((step_integrable s).const_mul (1-r)))
+    (integrable_const ((1-r)*(1-s)) :
+      Integrable (fun _ : ℝ => (1-r)*(1-s)) unitVolume)
+  have hsub₁ := integral_sub
+    ((step_integrable (max r s)).sub ((step_integrable r).const_mul (1-s)))
+    ((step_integrable s).const_mul (1-r))
+  have hsub₂ := integral_sub (step_integrable (max r s))
+    ((step_integrable r).const_mul (1-s))
+  simp only [Pi.sub_def] at hadd hsub₁ hsub₂
+  rw [hadd, hsub₁, hsub₂, integral_const_mul, integral_const_mul,
+    integral_step hm, integral_step hr, integral_step hs]
   simp only [integral_const]
   simp
   rcases le_total r s with h | h

@@ -97,7 +97,7 @@ theorem finiteSquare_eq_diagonal_add_twice_strictPairs
         2 * ∑ uv ∈ (s.product s).filter (fun uv => uv.1 < uv.2),
           f uv.1 * f uv.2 := by
   classical
-  rw [pow_two, Finset.sum_mul_sum]
+  rw [pow_two, Finset.sum_mul_sum, ← Finset.sum_product', ← Finset.product_eq_sprod]
   let diag : Finset (ℕ × ℕ) :=
     (s.product s).filter (fun uv => uv.1 = uv.2)
   let ltPairs : Finset (ℕ × ℕ) :=
@@ -106,33 +106,57 @@ theorem finiteSquare_eq_diagonal_add_twice_strictPairs
     (s.product s).filter (fun uv => uv.2 < uv.1)
   have hpartition :
       s.product s = diag ∪ ltPairs ∪ gtPairs := by
-    ext uv
-    simp [diag, ltPairs, gtPairs]
+    apply Finset.ext
+    intro uv
+    simp only [diag, ltPairs, gtPairs, Finset.mem_union, Finset.mem_filter]
+    constructor
+    · intro hm
+      rcases lt_trichotomy uv.1 uv.2 with hl | he | hg
+      · exact Or.inl (Or.inr ⟨hm, hl⟩)
+      · exact Or.inl (Or.inl ⟨hm, he⟩)
+      · exact Or.inr ⟨hm, hg⟩
+    · rintro ((h | h) | h) <;> exact h.1
+  have hDL : Disjoint diag ltPairs := by
+    apply Finset.disjoint_left.mpr
+    intro uv hd hl
+    have heq := (Finset.mem_filter.mp hd).2
+    have hlt := (Finset.mem_filter.mp hl).2
     omega
-  rw [hpartition, Finset.sum_union]
-  · rw [Finset.sum_union]
-    · have hdiag :
-          (∑ uv ∈ diag, f uv.1 * f uv.2) =
-            ∑ u ∈ s, f u ^ 2 := by
-        unfold diag
-        apply Finset.sum_bij'
-          (fun uv _ => uv.1)
-          (fun u _ => (u, u))
-        <;> simp [pow_two]
-      have hswap :
-          (∑ uv ∈ gtPairs, f uv.1 * f uv.2) =
-            ∑ uv ∈ ltPairs, f uv.1 * f uv.2 := by
-        unfold gtPairs ltPairs
-        apply Finset.sum_bij'
-          (fun uv _ => (uv.2, uv.1))
-          (fun uv _ => (uv.2, uv.1))
-        <;> simp [mul_comm]
-      rw [hdiag, hswap]
-      ring
-    · simp [diag, ltPairs, gtPairs]
-      omega
-  · simp [diag, ltPairs, gtPairs]
+  have hDG : Disjoint diag gtPairs := by
+    apply Finset.disjoint_left.mpr
+    intro uv hd hg
+    have heq := (Finset.mem_filter.mp hd).2
+    have hgt := (Finset.mem_filter.mp hg).2
     omega
+  have hLG : Disjoint ltPairs gtPairs := by
+    apply Finset.disjoint_left.mpr
+    intro uv hl hg
+    have hlt := (Finset.mem_filter.mp hl).2
+    have hgt := (Finset.mem_filter.mp hg).2
+    omega
+  have hdiag : (∑ uv ∈ diag, f uv.1 * f uv.2) = ∑ u ∈ s, f u ^ 2 := by
+    unfold diag
+    refine Finset.sum_bij' (fun uv _ => uv.1) (fun u _ => (u, u)) ?_ ?_ ?_ ?_ ?_
+    · intro uv huv
+      exact (Finset.mem_product.mp (Finset.mem_filter.mp huv).1).1
+    · intro u hu
+      exact Finset.mem_filter.mpr ⟨Finset.mem_product.mpr ⟨hu, hu⟩, rfl⟩
+    · intro uv huv
+      exact Prod.ext rfl (Finset.mem_filter.mp huv).2
+    · intro u hu
+      rfl
+    · intro uv huv
+      have he := (Finset.mem_filter.mp huv).2
+      rw [he, pow_two]
+  have hswap : (∑ uv ∈ gtPairs, f uv.1 * f uv.2) =
+      ∑ uv ∈ ltPairs, f uv.1 * f uv.2 := by
+    unfold gtPairs ltPairs
+    apply Finset.sum_bij' (fun uv _ => (uv.2, uv.1)) (fun uv _ => (uv.2, uv.1)) <;>
+      simp [mul_comm, Finset.product_eq_sprod, and_comm]
+  conv_lhs => rw [hpartition, Finset.sum_union (Finset.disjoint_union_left.mpr ⟨hDG, hLG⟩),
+    Finset.sum_union hDL, hdiag, hswap]
+  change _ = _ + 2 * ∑ uv ∈ ltPairs, f uv.1 * f uv.2
+  ring
 
 /-- Specialization of the finite square identity to one parity class. -/
 theorem parityPairSum_eq_half_square_sub_diagonal
@@ -149,8 +173,11 @@ theorem parityPairSum_eq_half_square_sub_diagonal
     finiteSquare_eq_diagonal_add_twice_strictPairs
       (endpointParitySet b r)
       (parityOnePointMobiusFourierTerm d k)
-  linarith
+  rw [h]
+  ring
 
+-- Retain the published parity-domain parameter.
+set_option linter.unusedVariables false in
 /-- Arithmetic midpoint identity for equal-parity endpoints. -/
 theorem midpoint_eq_halves_add_parity
     {u v r : ℕ}
@@ -232,8 +259,7 @@ theorem two_mul_parityMidpointPairTwist_eq_square_sub_diagonal
         (parityOnePointMobiusFourierSum b d r k ^ 2 -
           parityOnePointMobiusFourierDiagonal b d r k) := by
   rw [parityMidpointPairTwist_eq_phase_mul_pairSum b d r hr k,
-    mul_assoc,
-    parityPairSum_eq_half_square_sub_diagonal b d r k]
+    ← parityPairSum_eq_half_square_sub_diagonal b d r k]
   ring
 
 /-- All strict same-parity endpoint pairs, without choosing the parity first. -/
@@ -266,18 +292,35 @@ theorem additiveTwistedEndpointCrossCorrelation_eq_endpointPairs
     mertensEndpointCrossCollisionBaseSet
     mertensCrossCollisionMidpoint
     mertensSquarefreeMidpointEndpointProduct
-  apply Finset.sum_bij'
-    (fun na _ =>
-      let n := na.1
-      let a := na.2
-      let h := b - n
-      (a + 1, a + 1 + 2 * h))
-    (fun uv _ =>
-      let h := (uv.2 - uv.1) / 2
-      (b - h, uv.1 - 1))
-  <;> simp only [Finset.mem_filter, Finset.mem_product,
-    Finset.mem_Icc, Finset.mem_Ico, Finset.mem_range]
-  <;> omega
+  rw [Finset.sum_sigma']
+  refine Finset.sum_bij'
+    (fun na _ => (na.2 + 1, na.2 + 1 + 2 * (b - na.1)))
+    (fun uv _ => ⟨b - (uv.2 - uv.1) / 2, uv.1 - 1⟩) ?_ ?_ ?_ ?_ ?_
+  · rintro ⟨n, a⟩ hna
+    simp only [Finset.mem_sigma, Finset.mem_Ico, Finset.mem_range] at hna
+    simp only [Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
+      Finset.mem_Icc]
+    omega
+  · rintro ⟨u, v⟩ huv
+    simp only [Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
+      Finset.mem_Icc] at huv
+    simp only [Finset.mem_sigma, Finset.mem_Ico, Finset.mem_range]
+    omega
+  · rintro ⟨n, a⟩ hna
+    simp only [Finset.mem_sigma, Finset.mem_Ico, Finset.mem_range] at hna
+    apply Sigma.ext
+    · dsimp
+      omega
+    · exact heq_of_eq (by simp)
+  · rintro ⟨u, v⟩ huv
+    simp only [Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
+      Finset.mem_Icc] at huv
+    apply Prod.ext <;> dsimp <;> omega
+  · rintro ⟨n, a⟩ hna
+    have hmid : (a + 1 + (a + 1 + 2 * (b - n))) / 2 =
+        a + 1 + (b - n) := by omega
+    have hend : a + 1 + (b - n) + (b - n) = a + 1 + 2 * (b - n) := by omega
+    simp only [hmid, hend, Complex.ofReal_mul, mul_assoc]
 
 /-- The same-parity pair sum is the sum of its even and odd parity pieces. -/
 theorem endpointPairAdditiveTwist_eq_even_add_odd
@@ -295,11 +338,15 @@ theorem endpointPairAdditiveTwist_eq_even_add_odd
   rw [← Finset.sum_union]
   · apply Finset.sum_congr
     · ext uv
-      simp
+      simp [Finset.product_eq_sprod]
       omega
     · intro uv _huv
       rfl
-  · simp
+  · apply Finset.disjoint_left.mpr
+    intro uv heven hodd
+    simp only [Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product] at heven hodd
+    have h0 := heven.1.1.2
+    have h1 := hodd.1.1.2
     omega
 
 /-- Final exact parity/Fourier factorization of the additive twist.
@@ -349,12 +396,13 @@ theorem norm_additiveTwistedEndpointCrossCorrelation_le_parityFourierMajorant
   unfold parityFourierQuadraticMajorant
   have hphase :
       ‖ZMod.stdAddChar (k * (1 : ZMod (d * d)))‖ = 1 :=
-    ZMod.stdAddChar.norm_apply _
+    Circle.norm_coe (ZMod.toCircle (k * (1 : ZMod (d * d))))
   calc
     ‖additiveTwistedEndpointCrossCorrelation b d k‖ =
         (1 / 2 : ℝ) *
           ‖2 * additiveTwistedEndpointCrossCorrelation b d k‖ := by
       norm_num
+      ring
     _ ≤ (1 / 2 : ℝ) *
         (‖parityOnePointMobiusFourierSum b d 0 k ^ 2 -
             parityOnePointMobiusFourierDiagonal b d 0 k‖ +
@@ -409,8 +457,8 @@ theorem naturalScaleSquareModulusCongruenceL1_of_parityFourierQuadraticBudget
         have hdpos :
             0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
         simp only [dif_pos hdpos]
-        letI : NeZero d := ⟨ne_of_gt hdpos⟩
-        change ‖(mertensEndpointCrossCongruenceFibre b d : ℂ)‖ ≤ _
+        let : NeZero d := ⟨ne_of_gt hdpos⟩
+        rw [← Real.norm_eq_abs, ← Complex.norm_real]
         rw [complex_cast_mertensEndpointCrossCongruenceFibre_eq_additiveFourier]
         unfold additiveFourierEndpointCrossCongruenceFibre
         have hqpos : 0 < ((d * d : ℕ) : ℝ) := by positivity

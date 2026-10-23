@@ -44,7 +44,7 @@ namespace SevenEighthsMechanismChain
 
 /-- Canonical trace obtained by following every directed edge of the mechanism
 chain from its detector witness. -/
-def trace (chain : SevenEighthsMechanismChain) :
+theorem trace (chain : SevenEighthsMechanismChain) :
     SevenEighthsMechanismTrace chain := by
   let fine := chain.detectorToFine chain.detector
   let chosen := chain.fineToChosen fine
@@ -65,7 +65,7 @@ end SevenEighthsMechanismChain
 namespace SevenEighthsMechanismTrace
 
 /-- Terminal projection of the complete mechanism trace. -/
-def toZeta {chain : SevenEighthsMechanismChain}
+theorem toZeta {chain : SevenEighthsMechanismChain}
     (trace : SevenEighthsMechanismTrace chain) :
     RiemannZetaZeroFreeRightHalfPlane ((7 : ℝ) / 8) :=
   trace.zeta
@@ -112,7 +112,7 @@ structure SourceBoundAcceptedSevenEighthsMechanismPort where
 namespace SourceBoundAcceptedSevenEighthsMechanismPort
 
 /-- Complete stage trace retained by a source-bound accepted mechanism. -/
-def trace (accepted : SourceBoundAcceptedSevenEighthsMechanismPort) :
+theorem trace (accepted : SourceBoundAcceptedSevenEighthsMechanismPort) :
     SevenEighthsMechanismTrace accepted.accepted.chain :=
   accepted.accepted.chain.trace
 

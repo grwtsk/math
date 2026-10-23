@@ -1,0 +1,383 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-compensated-correlation-343-v0.1"
+owner_repository = "grwtsk/math"
+issue = 343
+parent_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CompensatedCorrelationCriterion"
+build_target = "GRWTSK.NumberTheory.Moebius.CompensatedCorrelationCriterion"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_base_revision = "b93701ff07aca26a23b1bda3b663170bd60d5a6e"
+review_base_tree = "c6cafddd7f0c3e85ee2d3ad08c89177616cbe512"
+new_module_path = "GRWTSK/NumberTheory/Moebius/CompensatedCorrelationCriterion.lean"
+new_module_git_blob = "82e49398c769a90c64bdc679877ad8d0ca1d0423"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/compensated-correlation-criterion.md"
+mathematical_note_git_blob = "c4016fe16791e3137c1f1ed507157059db030b6b"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_APPLICABLE_NO_PRIVATE_DECLARATIONS"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+new_paid_damping = false
+riemann_hypothesis_claimed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.CompensatedCorrelationCriterion"
+authored_declaration_count = 25
+definition_count = 6
+theorem_script_count = 19
+private_helper_count = 0
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/LogarithmicPickupSeries/rh-logarithmic-series-335-v0.3.toml"
+git_blob = "3b3863eb6ab1235743f3021d60f5febc2de26738"
+status = "SOURCE_INTEGRATED_ONLY_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSeries.lean"
+git_blob = "abb0bba38e30fcdd41c4c0737445b9b9e5d8551d"
+selected_declarations = [
+  "sampleResidue",
+  "sampleCellMass",
+  "sampleCellMass_nonneg",
+  "sampleResidue_increment_sq_le",
+  "sampleResidue_weighted_diagonal_le",
+  "sampleCellMass_partial_sum",
+  "actual_energy_le_cellMass_tsum",
+  "abscissa_zero_iff_reciprocal_cellMass"
+]
+status = "SOURCE_INTEGRATED_ONLY_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalEndpointDefect.lean"
+git_blob = "5563864fc93f3c1732b50fb22a6db9f8d37e6356"
+selected_declarations = [
+  "criticalEndpointDefect",
+  "criticalEndpointDefect_eq_half_wholePickup",
+  "criticalEndpointDefectEnergy",
+  "CriticalEndpointDefectSummable",
+  "criticalBoundary_iff_endpointDefectSummable"
+]
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalEndpointDefectRecurrence.lean"
+git_blob = "b9035e3e51cca47aa3c4d36f1cc4c375ed6169ef"
+selected_declarations = [
+  "criticalEndpointDefect_eq_mertensTransform",
+  "criticalBoundary_iff_mertensTransformSummable"
+]
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalMertensTransformMeanSquare.lean"
+git_blob = "3f6351a4be4f1edb54228e7d6fe7792dbaa9b2e3"
+selected_declarations = [
+  "CriticalMertensIncrementMeanSquare",
+  "criticalBoundary_of_incrementMeanSquare"
+]
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CriticalWeightedMertensSquare.lean"
+git_blob = "07f131eb969d773d205b636ef157be87daa6e021"
+selected_declarations = [
+  "CriticalWeightedMertensSquareSummable",
+  "criticalBoundary_of_weightedMertensSquare"
+]
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/PSeries.lean"
+git_blob = "6499506f39f848904fbf7c0aca08bc303c19dca4"
+selected_declarations = ["Real.summable_nat_rpow"]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Topology/Algebra/InfiniteSum/Real.lean"
+git_blob = "32b87fa4ac3121786c310fa7b31ef263de567d13"
+selected_declarations = [
+  "summable_of_sum_range_le",
+  "Real.tsum_le_of_sum_range_le"
+]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[[declarations]]
+source_name = "sampleWeightedDiagonal"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleWeightedDiagonal (σ : ℝ) (N : ℕ) : ℝ"
+source_signature_sha256 = "df0f2e824dfa21a8b792ad4def250d82e9d454a0b85dc8d19991f2f2d0f84c1c"
+
+[[declarations]]
+source_name = "sampleCompensatedCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleCompensatedCorrelation (σ : ℝ) (N : ℕ) : ℝ"
+source_signature_sha256 = "5f3e2caa794a426622fbded19b011c0b872be7a3b57af6d089208ff1f309f447"
+
+[[declarations]]
+source_name = "sampleDiagonalMajorant"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleDiagonalMajorant (σ : ℝ) (k : ℕ) : ℝ"
+source_signature_sha256 = "3a6fd288340bf66c70de50d49155290acd45337e6b70e4478a89e7b05b4a8b16"
+
+[[declarations]]
+source_name = "sampleDiagonalBudget"
+visibility = "public"
+kind = "def"
+source_signature = "def sampleDiagonalBudget (σ : ℝ) : ℝ"
+source_signature_sha256 = "af7aad480b1122715dae00fe48ba27a3e3df834da1460c6134cc725d1b830055"
+
+[[declarations]]
+source_name = "CompensatedCorrelationBound"
+visibility = "public"
+kind = "def"
+source_signature = "def CompensatedCorrelationBound (σ : ℝ) : Prop"
+source_signature_sha256 = "ab1a0440f8bc21c8b0286f63452c33a52c677201d4d3dae0d148a0c3af0c9c93"
+
+[[declarations]]
+source_name = "ReciprocalCompensatedCorrelation"
+visibility = "public"
+kind = "def"
+source_signature = "def ReciprocalCompensatedCorrelation : Prop"
+source_signature_sha256 = "4bca0f5a7a1dac7dc62cbc83b46c88dde7737b19948bcc4f01f948d774b1082d"
+
+[[declarations]]
+source_name = "sampleWeightedDiagonal_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleWeightedDiagonal_nonneg (σ : ℝ) (N : ℕ) :\n    0 ≤ sampleWeightedDiagonal σ N"
+source_signature_sha256 = "4ea278ce8b0beb87b26a713b202eb862e1f2afa766b2ce4def0794957db4a259"
+
+[[declarations]]
+source_name = "sampleDiagonalMajorant_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleDiagonalMajorant_nonneg (σ : ℝ) (k : ℕ) :\n    0 ≤ sampleDiagonalMajorant σ k"
+source_signature_sha256 = "80252e69644d7d4332f93416d805488483ec1b77675fb13406859bc525df026a"
+
+[[declarations]]
+source_name = "sampleDiagonalMajorant_eq_rpow"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleDiagonalMajorant_eq_rpow (σ : ℝ) (k : ℕ) :\n    sampleDiagonalMajorant σ k =\n      (1 / 4 : ℝ) * (((k : ℝ) + 2) ^ (-(σ + 1)))"
+source_signature_sha256 = "a4b0b6be54721a9abb8db1e7917af72cdab31431b1332af9dc959234d08da553"
+
+[[declarations]]
+source_name = "summable_sampleDiagonalMajorant"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem summable_sampleDiagonalMajorant {σ : ℝ} (hσ : 0 < σ) :\n    Summable (sampleDiagonalMajorant σ)"
+source_signature_sha256 = "2eab5ffb69ad2bf6513bcdd3456d4db96e6eec1b4abd308f69bf748a3bbfad7f"
+
+[[declarations]]
+source_name = "sampleDiagonalBudget_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleDiagonalBudget_nonneg (σ : ℝ) :\n    0 ≤ sampleDiagonalBudget σ"
+source_signature_sha256 = "8c90c8ed372a25845da7cb3bb0e869878e5aa96b173fffa4b1085647561a3272"
+
+[[declarations]]
+source_name = "sampleWeightedDiagonal_le_budget"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleWeightedDiagonal_le_budget {σ : ℝ} (hσ : 0 < σ) (N : ℕ) :\n    sampleWeightedDiagonal σ N ≤ sampleDiagonalBudget σ"
+source_signature_sha256 = "ec9d312d04ace19de4a957a5d931d447dfd9c3a47657504249ac8bf42b75d737"
+
+[[declarations]]
+source_name = "sampleCellMass_partial_sum_eq_compensated_add_diagonal"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_partial_sum_eq_compensated_add_diagonal\n    {σ : ℝ} (hσ : σ ≠ 0) (N : ℕ) :\n    (∑ k ∈ Finset.range N, sampleCellMass σ k) =\n      (4 / σ) *\n        (sampleCompensatedCorrelation σ N +\n          sampleWeightedDiagonal σ N)"
+source_signature_sha256 = "035607d22c8e3cb3430b38900484c4f5e216be1e28535e5a4be5992d8b6ea9df"
+
+[[declarations]]
+source_name = "summable_cellMass_iff_compensatedCorrelationBound"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem summable_cellMass_iff_compensatedCorrelationBound\n    {σ : ℝ} (hσ : 0 < σ) :\n    Summable (sampleCellMass σ) ↔ CompensatedCorrelationBound σ"
+source_signature_sha256 = "31c62c27e915d0e007f749e3adc89b8e9c3d993e44218a71220edb870206e236"
+
+[[declarations]]
+source_name = "sampleCellMass_tsum_le_of_compensatedCorrelation"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_tsum_le_of_compensatedCorrelation\n    {σ C : ℝ} (hσ : 0 < σ) (hC : 0 ≤ C)\n    (hbound : ∀ N : ℕ, sampleCompensatedCorrelation σ N ≤ C) :\n    (∑' k : ℕ, sampleCellMass σ k) ≤\n      (4 / σ) * (C + sampleDiagonalBudget σ)"
+source_signature_sha256 = "1f525ba4703d53d85241bbedb043d1e3ccbab9f19feb6426817c10e417770af1"
+
+[[declarations]]
+source_name = "actual_energy_le_of_compensatedCorrelation"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem actual_energy_le_of_compensatedCorrelation\n    {σ C : ℝ} (hσ : 0 < σ) (hC : 0 ≤ C)\n    (hbound : ∀ N : ℕ, sampleCompensatedCorrelation σ N ≤ C) :\n    (∫ u in Ici (0 : ℝ),\n      Real.exp (-σ * u) * wholePickup u ^ 2) ≤\n      (8 / σ) * (C + sampleDiagonalBudget σ) +\n        2 / (σ + 1)"
+source_signature_sha256 = "93b6ce40d70faaf976e15d670910adb5002ea1d9aa1bf592da85107278997dd4"
+
+[[declarations]]
+source_name = "abscissa_zero_iff_reciprocal_compensatedCorrelation"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem abscissa_zero_iff_reciprocal_compensatedCorrelation :\n    pickupEnergyAbscissa = 0 ↔\n      ReciprocalCompensatedCorrelation"
+source_signature_sha256 = "355d277cab642e6b54cefad092269436bd8911611b87be59c3bb427732e197e9"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_reciprocal_compensatedCorrelation"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem riemannHypothesis_of_reciprocal_compensatedCorrelation\n    (hcorr : ReciprocalCompensatedCorrelation) :\n    _root_.RiemannHypothesis"
+source_signature_sha256 = "53b44a220d762260c53a246df18c368bf5dfc813ac3f35f795a09fd05d8b76e0"
+
+[[declarations]]
+source_name = "sampleResidue_eq_criticalEndpointDefect"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleResidue_eq_criticalEndpointDefect {n : ℕ} (hn : 1 ≤ n) :\n    sampleResidue n = criticalEndpointDefect n"
+source_signature_sha256 = "8a210e9ad57107c6dfb6da14b57e6c38abbfe9fa07785148fbb29624ab76b102"
+
+[[declarations]]
+source_name = "sampleCellMass_one_eq_endpointDefectEnergy"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem sampleCellMass_one_eq_endpointDefectEnergy (k : ℕ) :\n    sampleCellMass 1 k =\n      4 * criticalEndpointDefectEnergy (k + 1)"
+source_signature_sha256 = "0daaa11a0bb066953343d115eff933a6e63dd62bedd360843042c5f0dd49abae"
+
+[[declarations]]
+source_name = "summable_sampleCellMass_one_iff_endpointDefectSummable"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem summable_sampleCellMass_one_iff_endpointDefectSummable :\n    Summable (sampleCellMass 1) ↔\n      CriticalEndpointDefectSummable"
+source_signature_sha256 = "8c98aa39313b9575049f0bda7b1bc2b08d1fc86fdf2f1ca6a4e8065b9f40b637"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_one_iff_criticalBoundary"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_one_iff_criticalBoundary :\n    CompensatedCorrelationBound 1 ↔\n      CriticalBoundaryVerticalLineUniform"
+source_signature_sha256 = "c617b6d896d0983d8ff96e23f9b92e54fa8837983759fccc27ddba756adda37c"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_one_iff_mertensTransformSummable"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_one_iff_mertensTransformSummable :\n    CompensatedCorrelationBound 1 ↔\n      CriticalMertensTransformSummable"
+source_signature_sha256 = "c93b067f198e19ac5ac88f802dd146cdea6e542d353d1f5c27f02b1bc80f6da7"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_one_of_incrementMeanSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_one_of_incrementMeanSquare\n    {ε : ℝ} (hε0 : 0 < ε) (hε1 : ε < 1)\n    (hs : CriticalMertensIncrementMeanSquare ε) :\n    CompensatedCorrelationBound 1"
+source_signature_sha256 = "e794e55a7e127d09374ade1c8655a25872feeba6441bf03e519a705b21668625"
+
+[[declarations]]
+source_name = "compensatedCorrelationBound_one_of_weightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem compensatedCorrelationBound_one_of_weightedMertensSquare\n    {ε : ℝ} (hε0 : 0 < ε) (hε1 : ε < 1)\n    (hs : CriticalWeightedMertensSquareSummable ε) :\n    CompensatedCorrelationBound 1"
+source_signature_sha256 = "75bbe8ba7f93e3801743d8e6340242309344463664599f1bfc11aec9cda3f0e8"
+
+[[hostile_controls]]
+id = "retain-terminal-compensation"
+description = "Deleting the negative terminal square changes the exact finite identity and must fail."
+
+[[hostile_controls]]
+id = "reject-diagonal-as-cancellation"
+description = "A finite or summable nonnegative diagonal does not bound the complete signed correlation."
+
+[[hostile_controls]]
+id = "reject-uncompensated-substitution"
+description = "A bound for the uncompensated mixed sum is stronger and cannot be reported as the exact equivalence without a proved comparison."
+
+[[hostile_controls]]
+id = "reject-fixed-rate-promotion"
+description = "The damping-one critical boundary is one fixed rate and cannot be promoted to the cofinal all-positive-rate premise."
+
+[[hostile_controls]]
+id = "reject-finite-prefix"
+description = "A finite table of correlation values cannot discharge a uniform all-N bound."
+
+[[hostile_controls]]
+id = "reject-totalized-integral"
+description = "A totalized real integral value cannot witness integrability or summability without the corresponding proof."
+
+[[hostile_controls]]
+id = "preserve-actual-source"
+description = "The sample residue must remain the actual closed Möbius source, including its Mertens endpoint."
+
+[[hostile_controls]]
+id = "critical-compatibility-not-rh"
+description = "Compatibility at damping one is not a proof at cofinally small dampings and is not RH."
+
+[[hostile_controls]]
+id = "source-signatures-not-types"
+description = "Source text signatures cannot be reported as elaborated declaration types."
+
+[acceptance]
+requires_all_authored_and_generated_declarations = true
+requires_exact_public_signatures = true
+requires_full_transitive_import_coverage = true
+requires_axiom_and_native_closure = true
+requires_hostile_controls = true
+requires_independent_source_review = true
+requires_exact_candidate_commit_tree_and_target_blob = true
+conditional_reduction_may_close_implementation_leaf = true
+arithmetic_supplier_remains_separate = true
+meta_route_remains_open = true
+
+[open_obligations]
+items = [
+  "Exact-head Lean elaboration of all authored and generated declarations.",
+  "Extraction and reconciliation of actual elaborated types.",
+  "Full transitive import, axiom, native, unsafe and opaque dependency audit.",
+  "Independent review of the fixed-rate summability equivalence and all constants.",
+  "Independent review of the damping-one endpoint-defect compatibility.",
+  "A source-specific bound for the actual compensated correlation at cofinally small positive dampings.",
+  "Accepted immutable external replay evidence at the exact candidate scope."
+]
+
+[nonclaims]
+claims = [
+  "No unconditional compensated-correlation bound.",
+  "No new complete-pickup damping stage.",
+  "No damping-zero integrability statement.",
+  "No uniform-in-damping constant.",
+  "No converse from the Riemann hypothesis to the selected energy criterion.",
+  "No Lean, Lake, native, kernel, axiom or dependency audit.",
+  "No independent review.",
+  "No Riemann-hypothesis proof.",
+  "No execution-hold release."
+]
+
+# Proof-script integration preserves declaration statements and hypotheses.
+# Predecessor source blobs: 1a80d899449bc755d2ca7469e31078479ff3312f (sampling), 5a0c175b8cb045a03cabc6636d50ebb7782a37aa (series), d3f5a5a0dfedd6b35f021ee150b4042f66808f9b (criterion).

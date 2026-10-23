@@ -126,7 +126,7 @@ theorem mertensEndpointFibreCrossCollisionEnergy_eq_divisorSquareSieve
 /-- RH-facing reciprocal endpoint-weighted divisor-square sieve observable. -/
 def weightedMertensEndpointCrossCollisionDivisorSquareSieveEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointCrossCollisionDivisorSquareSieveEnergy b
 

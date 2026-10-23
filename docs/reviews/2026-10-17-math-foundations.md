@@ -1,6 +1,6 @@
 # Source-only mathematical foundations audit — 2026-10-17
 
-Status: **DRAFT / NOT_RUN / NOT_ACCEPTED**. Prepared on isolated candidate branch from immutable baseline `990688d77a474827ff6069e596ae42872fbf6673`. Does not modify `main`, the accepted `verification/spectral-descent-v1.toml` target, or any operational system. F06 remains held.
+Status: **DRAFT / NOT_RUN / NOT_ACCEPTED**. Prepared on isolated candidate branch from immutable baseline `990688d77a474827ff6069e596ae42872fbf6673`. Does not modify `main`, the accepted `docs/verification/_library-root/spectral-descent-v1.toml` target, or any operational system. F06 remains held.
 
 ## Audit: reuse first, do not duplicate existing formalization
 
@@ -22,7 +22,7 @@ Existing canonical modules already implement significant generic parts of #88/#8
 
 2. `GRWTSK/Combinatorics/Matching/CyclicDutyDeficiency.lean`: separate four-checkpoint and nine-duty *types*; a partial injective matching into available players with compatibility proof; card-matching bound; cardinal shortage bound and nine-role/four-player >=5 deficit; exact rational 4/9 and 10/9 tag discrepancy calculations; constraint-change counterexample to assuming total admissible identity extension.
 
-3. `verification/fpc-math-candidate-v0.toml`: static not-run replay intent for *only* these candidates, not part of current accepted v1 manifest or public root import.
+3. `docs/verification/_unscoped/fpc-math-candidate-v0.toml`: static not-run replay intent for *only* these candidates, not part of current accepted v1 manifest or public root import.
 
 ## Independent finite sanity calculations (not Lean evidence)
 

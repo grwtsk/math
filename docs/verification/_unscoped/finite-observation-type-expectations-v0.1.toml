@@ -1,0 +1,1079 @@
+# Copyright (c) 2026 R.A. Jacob Martone. MIT.
+# Human mathematical direction: R.A. Jacob Martone.
+# Formalization and independently authored expectation terms with AI assistance.
+# Authored mathematical specification; not observed type output or an execution receipt.
+# New terms do not assert human approval, external acceptance, or operational authority.
+schema = "grwtsk-exact-declaration-expectations-v1"
+id = "finite-observation-type-expectations-v0.1"
+target_id = "finite-observation-support-v0.1"
+target_path = "docs/verification/_unscoped/finite-observation-support-v0.1.toml"
+declaration_count = 78
+mathematical_author = "R.A. Jacob Martone"
+formalization_assistance = "AI-assisted mathematical source review and expectation authorship"
+canonical_expression_grammar = "lean4.33-expr-alpha-json/1"
+
+# Authorship basis: reviewed definitions, propositions, and authored exposition;
+# no observed declaration types were used to construct these expected terms.
+# All outer binders are materialized. Project constants are fully qualified;
+# terms need no project namespace openings or surrounding section variables.
+# Elaborate each expected term independently under its ordered universe list.
+# Compare the resulting expression without reduction or definitional equality.
+# Canonicalization ignores bound-variable spelling and metadata nodes only;
+# retain binder information and every other Expr, Level, and Name constructor.
+# The universe list supplies ordered canonical indices, not a universe set.
+# Reject unresolved variables, missing entries, duplicates, and extra entries.
+# source_form records reviewed source syntax. Kernel kind alone cannot establish
+# that a definition was introduced by `def` or `abbrev`, or an inductive by
+# `inductive` or `structure`; retain the corresponding source/structure checks.
+# Type identity does not fix defining bodies. Reviewed definitions, exact source
+# identities, compiler/Init identity, and transitive trust inspection remain
+# required. Bind this file's identity externally before actual-type comparison.
+# Observed comparisons and audits belong to the external execution repository.
+# This authorship does not claim independent professional review or human
+# approval. Native validation requires separate authorization. Application
+# correspondence and operational authority remain separate obligations.
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.Compatible"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View) (seen : View) (trace : Trace),
+  Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.NonemptyFiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View) (seen : View),
+  Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.Supports"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View),
+  Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.Refutes"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View),
+  Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_nonempty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View)
+    (supported : GRWTSK.Logic.Observation.Supports admissible observe claim seen),
+  GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.refutes_nonempty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View)
+    (refuted : GRWTSK.Logic.Observation.Refutes admissible observe claim seen),
+  GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_sound"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (actual : Trace)
+    (supported : GRWTSK.Logic.Observation.Supports admissible observe claim seen)
+    (actual_admissible : admissible actual)
+    (actual_observation : observe actual = seen),
+  claim actual
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.refutes_sound"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (actual : Trace)
+    (refuted : GRWTSK.Logic.Observation.Refutes admissible observe claim seen)
+    (actual_admissible : admissible actual)
+    (actual_observation : observe actual = seen),
+  ¬ claim actual
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.not_supports_of_empty_fiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View)
+    (empty : ¬ GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen),
+  ¬ GRWTSK.Logic.Observation.Supports admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.not_refutes_of_empty_fiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View)
+    (empty : ¬ GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen),
+  ¬ GRWTSK.Logic.Observation.Refutes admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.ambiguity_of_opposite_compatible"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View)
+    (positive negative : Trace)
+    (positive_compatible : GRWTSK.Logic.Observation.Compatible admissible observe seen positive)
+    (negative_compatible : GRWTSK.Logic.Observation.Compatible admissible observe seen negative)
+    (positive_claim : claim positive) (negative_claim : ¬ claim negative),
+  ¬ GRWTSK.Logic.Observation.Supports admissible observe claim seen ∧
+    ¬ GRWTSK.Logic.Observation.Refutes admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_refutes_inconsistent"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View),
+  ¬ (GRWTSK.Logic.Observation.Supports admissible observe claim seen ∧
+    GRWTSK.Logic.Observation.Refutes admissible observe claim seen)
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.compatible_coarsening"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v", "w"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v} {CoarseView : Type w}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (coarsen : View → CoarseView) (seen : View) (trace : Trace)
+    (compatible : GRWTSK.Logic.Observation.Compatible admissible observe seen trace),
+  GRWTSK.Logic.Observation.Compatible admissible (fun value : Trace => coarsen (observe value))
+    (coarsen seen) trace
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.nonempty_fiber_coarsening"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v", "w"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v} {CoarseView : Type w}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (coarsen : View → CoarseView) (seen : View)
+    (nonempty : GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen),
+  GRWTSK.Logic.Observation.NonemptyFiber admissible (fun value : Trace => coarsen (observe value))
+    (coarsen seen)
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_of_coarsened_support"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v", "w"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v} {CoarseView : Type w}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (coarsen : View → CoarseView)
+    (claim : Trace → Prop) (seen : View)
+    (fine_nonempty : GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen)
+    (coarse_support : GRWTSK.Logic.Observation.Supports admissible
+      (fun value : Trace => coarsen (observe value)) claim (coarsen seen)),
+  GRWTSK.Logic.Observation.Supports admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.refutes_of_coarsened_refutation"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v", "w"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v} {CoarseView : Type w}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (coarsen : View → CoarseView)
+    (claim : Trace → Prop) (seen : View)
+    (fine_nonempty : GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen)
+    (coarse_refutation : GRWTSK.Logic.Observation.Refutes admissible
+      (fun value : Trace => coarsen (observe value)) claim (coarsen seen)),
+  GRWTSK.Logic.Observation.Refutes admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.admitted"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+∀ (trace : Bool), Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.lostReceipt"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+∀ (trace : Bool), Bool
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.occurred"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+∀ (trace : Bool), Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.lost_receipt_nonempty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.NonemptyFiber GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.lost_receipt_ambiguous"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+¬ GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt GRWTSK.Logic.Observation.FiniteExamples.occurred false ∧
+  ¬ GRWTSK.Logic.Observation.Refutes GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt GRWTSK.Logic.Observation.FiniteExamples.occurred false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.impossible_observation_empty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+¬ GRWTSK.Logic.Observation.NonemptyFiber GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.impossible_observation_no_certainty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (claim : Bool → Prop),
+  ¬ GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt claim true ∧
+    ¬ GRWTSK.Logic.Observation.Refutes GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt claim true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.fine_observation_supports"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted (fun trace : Bool => trace) GRWTSK.Logic.Observation.FiniteExamples.occurred true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.coarsening_can_lose_support"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted (fun trace : Bool => trace) GRWTSK.Logic.Observation.FiniteExamples.occurred true ∧
+  ¬ GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted (fun trace : Bool => GRWTSK.Logic.Observation.FiniteExamples.lostReceipt trace) GRWTSK.Logic.Observation.FiniteExamples.occurred false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.fine_witness_is_necessary"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted (fun trace : Bool => GRWTSK.Logic.Observation.FiniteExamples.lostReceipt (GRWTSK.Logic.Observation.FiniteExamples.lostReceipt trace))
+    (fun trace : Bool => True) (GRWTSK.Logic.Observation.FiniteExamples.lostReceipt true) ∧
+  ¬ GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteExamples.admitted GRWTSK.Logic.Observation.FiniteExamples.lostReceipt (fun trace : Bool => True) true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Outcome"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "inductive"
+source_form = "inductive"
+universe_parameters = []
+expected_type_lean = '''
+Type
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "inductive"
+source_form = "structure"
+universe_parameters = []
+expected_type_lean = '''
+Type
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+∀ (flags : GRWTSK.Logic.Observation.FiniteClassification.Flags), GRWTSK.Logic.Observation.FiniteClassification.Outcome
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.eq_of_fields"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (left right : GRWTSK.Logic.Observation.FiniteClassification.Flags)
+    (positive : GRWTSK.Logic.Observation.FiniteClassification.Flags.positive left = GRWTSK.Logic.Observation.FiniteClassification.Flags.positive right)
+    (negative : GRWTSK.Logic.Observation.FiniteClassification.Flags.negative left = GRWTSK.Logic.Observation.FiniteClassification.Flags.negative right),
+  left = right
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_supported_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (flags : GRWTSK.Logic.Observation.FiniteClassification.Flags),
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.classify flags = GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported ↔
+    GRWTSK.Logic.Observation.FiniteClassification.Flags.positive flags = true ∧ GRWTSK.Logic.Observation.FiniteClassification.Flags.negative flags = false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_refuted_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (flags : GRWTSK.Logic.Observation.FiniteClassification.Flags),
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.classify flags = GRWTSK.Logic.Observation.FiniteClassification.Outcome.refuted ↔
+    GRWTSK.Logic.Observation.FiniteClassification.Flags.positive flags = false ∧ GRWTSK.Logic.Observation.FiniteClassification.Flags.negative flags = true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_ambiguous_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (flags : GRWTSK.Logic.Observation.FiniteClassification.Flags),
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.classify flags = GRWTSK.Logic.Observation.FiniteClassification.Outcome.ambiguous ↔
+    GRWTSK.Logic.Observation.FiniteClassification.Flags.positive flags = true ∧ GRWTSK.Logic.Observation.FiniteClassification.Flags.negative flags = true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_model_mismatch_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (flags : GRWTSK.Logic.Observation.FiniteClassification.Flags),
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.classify flags = GRWTSK.Logic.Observation.FiniteClassification.Outcome.model_mismatch ↔
+    GRWTSK.Logic.Observation.FiniteClassification.Flags.positive flags = false ∧ GRWTSK.Logic.Observation.FiniteClassification.Flags.negative flags = false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.any_true_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u"]
+expected_type_lean = '''
+∀ {Trace : Type u} (inventory : List Trace) (predicate : Trace → Bool),
+  inventory.any predicate = true ↔
+    ∃ trace : Trace, trace ∈ inventory ∧ predicate trace = true
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u"]
+expected_type_lean = '''
+∀ {Trace : Type u} (admissible : Trace → Prop)
+    (inventory : List Trace) (trace : Trace),
+  Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.CoversFiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (seen : View) (inventory : List Trace),
+  Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.coversFiber_of_admissible_enumeration"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (seen : View) (inventory : List Trace)
+    (enumerates : ∀ trace : Trace, admissible trace → trace ∈ inventory),
+  GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.listed_nonempty_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (seen : View) (inventory : List Trace)
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory),
+  GRWTSK.Logic.Observation.NonemptyFiber (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible inventory) observe seen ↔
+    GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.listed_support_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory),
+  GRWTSK.Logic.Observation.Supports (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible inventory) observe claim seen ↔
+    GRWTSK.Logic.Observation.Supports admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.listed_refutation_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory),
+  GRWTSK.Logic.Observation.Refutes (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible inventory) observe claim seen ↔
+    GRWTSK.Logic.Observation.Refutes admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.Flags
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.Outcome
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_positive_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.positive (GRWTSK.Logic.Observation.FiniteClassification.scan admissible observe claim seen inventory) = true ↔
+    (∃ trace : Trace, trace ∈ inventory ∧ GRWTSK.Logic.Observation.Compatible admissible observe seen trace ∧ claim trace)
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_negative_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.negative (GRWTSK.Logic.Observation.FiniteClassification.scan admissible observe claim seen inventory) = true ↔
+    (∃ trace : Trace, trace ∈ inventory ∧ GRWTSK.Logic.Observation.Compatible admissible observe seen trace ∧ ¬ claim trace)
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_positive_false_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.positive (GRWTSK.Logic.Observation.FiniteClassification.scan admissible observe claim seen inventory) = false ↔
+    ∀ trace : Trace, trace ∈ inventory → GRWTSK.Logic.Observation.Compatible admissible observe seen trace → ¬ claim trace
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_negative_false_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.Flags.negative (GRWTSK.Logic.Observation.FiniteClassification.scan admissible observe claim seen inventory) = false ↔
+    ∀ trace : Trace, trace ∈ inventory → GRWTSK.Logic.Observation.Compatible admissible observe seen trace → claim trace
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_supported_iff_listed"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported ↔
+    GRWTSK.Logic.Observation.Supports (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible inventory) observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_refuted_iff_listed"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.refuted ↔
+    GRWTSK.Logic.Observation.Refutes (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible inventory) observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_model_mismatch_iff_listed"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.model_mismatch ↔
+    ¬ GRWTSK.Logic.Observation.NonemptyFiber (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible inventory) observe seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_ambiguous_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.ambiguous ↔
+    (∃ trace : Trace, trace ∈ inventory ∧ GRWTSK.Logic.Observation.Compatible admissible observe seen trace ∧ claim trace) ∧
+    (∃ trace : Trace, trace ∈ inventory ∧ GRWTSK.Logic.Observation.Compatible admissible observe seen trace ∧ ¬ claim trace)
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_ambiguous_no_certainty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View]
+    (result : GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.ambiguous),
+  ¬ GRWTSK.Logic.Observation.Supports admissible observe claim seen ∧ ¬ GRWTSK.Logic.Observation.Refutes admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_supported_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View]
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory),
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported ↔
+    GRWTSK.Logic.Observation.Supports admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_refuted_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View]
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory),
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.refuted ↔
+    GRWTSK.Logic.Observation.Refutes admissible observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_model_mismatch_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View]
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory),
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.model_mismatch ↔
+    ¬ GRWTSK.Logic.Observation.NonemptyFiber admissible observe seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classified_support_sound"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View]
+    (covers : GRWTSK.Logic.Observation.FiniteClassification.CoversFiber admissible observe seen inventory)
+    (result : GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported)
+    (actual : Trace) (actualAdmissible : admissible actual)
+    (actualObservation : observe actual = seen),
+  claim actual
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_model_mismatch"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View],
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen ([] : List Trace) = GRWTSK.Logic.Observation.FiniteClassification.Outcome.model_mismatch
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_no_certainty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View),
+  ¬ GRWTSK.Logic.Observation.Supports (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible ([] : List Trace)) observe claim seen ∧
+    ¬ GRWTSK.Logic.Observation.Refutes (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible admissible ([] : List Trace)) observe claim seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_inventory_congr"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View] (other : List Trace)
+    (sameMembers : ∀ trace : Trace, trace ∈ inventory ↔ trace ∈ other),
+  GRWTSK.Logic.Observation.FiniteClassification.scan admissible observe claim seen inventory =
+    GRWTSK.Logic.Observation.FiniteClassification.scan admissible observe claim seen other
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_inventory_congr"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = ["u", "v"]
+expected_type_lean = '''
+∀ {Trace : Type u} {View : Type v}
+    (admissible : Trace → Prop) (observe : Trace → View)
+    (claim : Trace → Prop) (seen : View) (inventory : List Trace)
+    [admissibilityDecider : DecidablePred admissible]
+    [claimDecider : DecidablePred claim]
+    [viewEquality : DecidableEq View] (other : List Trace)
+    (sameMembers : ∀ trace : Trace, trace ∈ inventory ↔ trace ∈ other),
+  GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen inventory =
+    GRWTSK.Logic.Observation.FiniteClassification.classify admissible observe claim seen other
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Row"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "inductive"
+source_form = "structure"
+universe_parameters = []
+expected_type_lean = '''
+Type
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classifyRows"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+∀ (rows : List GRWTSK.Logic.Observation.FiniteClassification.Row) (seen : String), GRWTSK.Logic.Observation.FiniteClassification.Outcome
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classifyRows_supported_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (rows : List GRWTSK.Logic.Observation.FiniteClassification.Row) (seen : String),
+  GRWTSK.Logic.Observation.FiniteClassification.classifyRows rows seen = GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported ↔
+    GRWTSK.Logic.Observation.Supports
+      (GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible (fun row : GRWTSK.Logic.Observation.FiniteClassification.Row => GRWTSK.Logic.Observation.FiniteClassification.Row.admissible row = true) rows)
+      (fun row : GRWTSK.Logic.Observation.FiniteClassification.Row => GRWTSK.Logic.Observation.FiniteClassification.Row.view row)
+      (fun row : GRWTSK.Logic.Observation.FiniteClassification.Row => GRWTSK.Logic.Observation.FiniteClassification.Row.claim row = true) seen
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "abbrev"
+universe_parameters = []
+expected_type_lean = '''
+∀ (trace : Bool), Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+∀ (trace : Bool), Bool
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "abbrev"
+universe_parameters = []
+expected_type_lean = '''
+∀ (trace : Bool), Prop
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "definition"
+source_form = "def"
+universe_parameters = []
+expected_type_lean = '''
+List Bool
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.complete_inventory_covers"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+∀ (seen : Bool), GRWTSK.Logic.Observation.FiniteClassification.CoversFiber GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt seen GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.supported_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt (fun trace : Bool => True) false GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory =
+  GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.refuted_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt (fun trace : Bool => False) false GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory =
+  GRWTSK.Logic.Observation.FiniteClassification.Outcome.refuted
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.ambiguous_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.ambiguous
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.model_mismatch_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred true GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory = GRWTSK.Logic.Observation.FiniteClassification.Outcome.model_mismatch
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.different_view_ignored"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted (fun trace : Bool => trace) GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred true GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory =
+  GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.inadmissible_trace_ignored"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify (fun trace : Bool => trace = true) GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory =
+  GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omission_can_report_list_support"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false [true] = GRWTSK.Logic.Observation.FiniteClassification.Outcome.supported ∧
+  ¬ GRWTSK.Logic.Observation.Supports GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omitted_counterexample_breaks_coverage"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+¬ GRWTSK.Logic.Observation.FiniteClassification.CoversFiber GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt false [true]
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.empty_inventory_can_miss_real_fiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false [] = GRWTSK.Logic.Observation.FiniteClassification.Outcome.model_mismatch ∧
+  GRWTSK.Logic.Observation.NonemptyFiber GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt false
+'''
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.repeated_and_reordered_inventory"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kernel_kind = "theorem"
+source_form = "theorem"
+universe_parameters = []
+expected_type_lean = '''
+GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory =
+  GRWTSK.Logic.Observation.FiniteClassification.classify GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred false [true, false, true]
+'''

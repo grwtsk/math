@@ -46,8 +46,13 @@ theorem moebiusReal_sq_eq_squarefreeIndicator
     (n : ℕ) :
     moebiusReal n ^ 2 = squarefreeIndicatorReal n := by
   unfold moebiusReal squarefreeIndicatorReal
-  norm_cast
-  exact ArithmeticFunction.moebius_sq
+  have h : (ArithmeticFunction.moebius n : ℤ) ^ 2 =
+      (if Squarefree n then 1 else 0) := ArithmeticFunction.moebius_sq
+  by_cases hs : Squarefree n
+  · simp only [if_pos hs] at h ⊢
+    exact_mod_cast h
+  · simp only [if_neg hs] at h ⊢
+    exact_mod_cast h
 
 /-- The signed endpoint product left after the squarefree midpoint selector is
 removed from the coefficient. -/
@@ -70,7 +75,6 @@ theorem mertensThreePointProgressionTerm_eq_squarefreeMidpoint
   unfold squarefreeIndicatorReal
   by_cases hs : Squarefree (a + 1 + h)
   · simp [hs]
-    ring
   · simp [hs]
 
 /-- Exact base indices whose midpoint is squarefree. -/
@@ -128,7 +132,7 @@ theorem mertensEndpointFibreCrossCollisionEnergy_eq_squarefreeMidpoint
 observable. -/
 def weightedMertensEndpointCrossCollisionSquarefreeMidpointEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
       mertensEndpointCrossCollisionSquarefreeMidpointEnergy b
 

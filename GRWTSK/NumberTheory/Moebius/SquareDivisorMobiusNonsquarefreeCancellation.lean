@@ -41,6 +41,8 @@ These are exactly the potentially nonzero terms in `squareDivisorMobiusSum`. -/
 def squareDivisorMobiusSupport (m : ℕ) : Finset ℕ :=
   m.divisors.filter (fun d => d * d ∣ m ∧ Squarefree d)
 
+-- Retain the published positivity parameter in the public interface.
+set_option linter.unusedVariables false in
 /-- Terms outside the squarefree square-divisor support vanish, so the original
 finite sum is exactly the Möbius sum over this support. -/
 theorem squareDivisorMobiusSum_eq_supportSum
@@ -67,7 +69,7 @@ theorem exists_prime_square_dvd_of_not_squarefree
     {m : ℕ} (hnsq : ¬ Squarefree m) :
     ∃ p : ℕ, p.Prime ∧ p * p ∣ m := by
   rw [Nat.squarefree_iff_prime_squarefree] at hnsq
-  push_neg at hnsq
+  push Not at hnsq
   exact hnsq
 
 /-- Toggle one fixed prime in a squarefree divisor. -/
@@ -165,7 +167,8 @@ theorem squareDivisorPrimeToggle_ne_self_on_support
   · rw [if_pos hpd]
     exact ne_of_lt (Nat.div_lt_self hdpos hp.one_lt)
   · rw [if_neg hpd]
-    omega
+    have hlt := Nat.mul_lt_mul_of_pos_right hp.one_lt hdpos
+    exact ne_of_gt (by simpa using hlt)
 
 /-- Möbius values on a toggled support pair have opposite signs. -/
 theorem moebiusReal_add_toggle_eq_zero
@@ -183,7 +186,8 @@ theorem moebiusReal_add_toggle_eq_zero
     have hcop : p.Coprime (d / p) :=
       (hp.coprime_iff_not_dvd).2 hqnot
     have hdecomp : p * (d / p) = d := Nat.mul_div_cancel' hpd
-    rw [if_pos hpd, ← hdecomp]
+    rw [if_pos hpd]
+    nth_rw 1 [← hdecomp]
     unfold moebiusReal
     rw [ArithmeticFunction.isMultiplicative_moebius.map_mul_of_coprime hcop,
       ArithmeticFunction.moebius_apply_prime hp]

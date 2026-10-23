@@ -56,8 +56,9 @@ private theorem weightedMertensSignedAbelDepthMass_eq_dropRange
         dyadicMertensShiftWeightDrop j (k + 1) t := by
   let Y : ℕ := 2 ^ (j + 1)
   let N : ℕ := Y - t - 2
+  have htY : t + 2 ≤ Y := by simpa [Y] using ht
   have hNY : N ≤ Y - 1 := by
-    dsimp [N, Y]
+    dsimp [N]
     omega
   unfold weightedMertensSignedAbelDepthMass
   rw [show 2 ^ (j + 1) = Y by rfl, Finset.sum_Ico_eq_sum_range]
@@ -74,11 +75,13 @@ private theorem weightedMertensSignedAbelDepthMass_eq_dropRange
   · have hsupp : t < Y - (k + 1) - 1 := by
       dsimp [N] at hkN
       omega
-    simp [hsupp, hkN]
+    simp only [Nat.add_comm 1 k, ← show Y = 2 ^ (j + 1) from rfl,
+      if_pos hsupp, if_pos hkN]
   · have hsupp : ¬ t < Y - (k + 1) - 1 := by
       dsimp [N] at hkN
       omega
-    simp [hsupp, hkN]
+    simp only [Nat.add_comm 1 k, ← show Y = 2 ^ (j + 1) from rfl,
+      if_neg hsupp, if_neg hkN]
 
 /-- The exact Abel mass over the growing shift family telescopes to one kernel
 weight, with a zero convention after the triangular support has ended. -/
@@ -96,6 +99,7 @@ theorem weightedMertensSignedAbelDepthMass_eq_telescoped
     let q : ℕ → ℝ := fun k =>
       dyadicMertensShiftWeight j (t + 2 + k)
     have htel := finiteWeightDropTelescope q N
+    have htY : t + 2 ≤ Y := ht
     have hindex : t + 2 + N = Y := by
       dsimp [N]
       omega
@@ -103,18 +107,21 @@ theorem weightedMertensSignedAbelDepthMass_eq_telescoped
       dsimp [q]
       rw [hindex, show Y = 2 ^ (j + 1) by rfl,
         dyadicMertensShiftWeight_at_right]
-    calc
-      (∑ k ∈ Finset.range N,
+    have hdrop :
+        (Finset.range N).sum (fun k =>
           dyadicMertensShiftWeightDrop j (k + 1) t) =
-        ∑ k ∈ Finset.range N, q k - q (k + 1) := by
-          apply Finset.sum_congr rfl
-          intro k _hk
-          simp [q, dyadicMertensShiftWeightDrop, Nat.add_assoc,
-            Nat.add_comm, Nat.add_left_comm]
+        (Finset.range N).sum (fun k => q k - q (k + 1)) := by
+      apply Finset.sum_congr rfl
+      intro k _hk
+      simp [q, dyadicMertensShiftWeightDrop, Nat.add_assoc,
+        Nat.add_comm, Nat.add_left_comm]
+    calc
+      (Finset.range N).sum (fun k =>
+          dyadicMertensShiftWeightDrop j (k + 1) t) =
+        (Finset.range N).sum (fun k => q k - q (k + 1)) := hdrop
       _ = q 0 - q N := htel
       _ = dyadicMertensShiftWeight j (t + 2) := by
-        rw [hterminal, sub_zero]
-        simp [q]
+        simp [hterminal, q]
       _ = weightedMertensSignedAbelDepthTelescopedMass j t := by
         simp [weightedMertensSignedAbelDepthTelescopedMass, Y, ht]
   · have hzero : weightedMertensSignedAbelDepthMass j t = 0 := by
@@ -122,7 +129,10 @@ theorem weightedMertensSignedAbelDepthMass_eq_telescoped
       apply Finset.sum_eq_zero
       intro h hh
       have hh' := Finset.mem_Ico.mp hh
+      have htY : Y < t + 2 := Nat.lt_of_not_ge ht
+      have hlow : 1 ≤ h := hh'.1
       have hsupp : ¬ t < 2 ^ (j + 1) - h - 1 := by
+        change ¬ t < Y - h - 1
         omega
       simp [hsupp]
     rw [hzero]

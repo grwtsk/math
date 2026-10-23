@@ -201,6 +201,7 @@ theorem safeAxialPacking_valueAt_eq_zero_of_zeroDefect
     (ha : zeroDefect z.1 = 0) :
     (safeAxialPackingSequence z).valueAt n = 0 := by
   apply ThreePointPacking.gramVolume_eq_zero_of_y_zero
+  all_goals change (safeAxialPoint z _).y = 0
   · simp [safeAxialPoint, safeEvenDefectPrimePowerTerm_eq_zero_of_zeroDefect
       z (canonicalPrimePowerEventSequence n) ha]
   · simp [safeAxialPoint, safeEvenDefectPrimePowerTerm_eq_zero_of_zeroDefect
@@ -214,6 +215,7 @@ theorem safeTransversePacking_valueAt_eq_zero_of_zeroDefect
     (ha : zeroDefect z.1 = 0) :
     (safeTransversePackingSequence z).valueAt n = 0 := by
   apply ThreePointPacking.gramVolume_eq_zero_of_y_zero
+  all_goals change (safeTransversePoint z _).y = 0
   · simp [safeTransversePoint,
       safeOddPrimePowerTerm_eq_zero_of_zeroDefect
         z (canonicalPrimePowerEventSequence n) ha]
@@ -230,6 +232,7 @@ theorem safeTransversePacking_valueAt_eq_zero_of_im_zero
     (ht : z.1.im = 0) :
     (safeTransversePackingSequence z).valueAt n = 0 := by
   apply ThreePointPacking.gramVolume_eq_zero_of_y_zero
+  all_goals change (safeTransversePoint z _).y = 0
   · simp [safeTransversePoint,
       safeOddPrimePowerTerm_im_eq_zero_of_im_zero
         z (canonicalPrimePowerEventSequence n) ht]
@@ -249,8 +252,8 @@ def safeQuarticStructuredPackingValue
 theorem safeQuarticStructuredPackingValue_nonnegative
     (z : ZeroPoint) (n : ℕ) :
     0 ≤ safeQuarticStructuredPackingValue z n := by
-  unfold safeQuarticStructuredPackingValue
-  positivity
+  exact add_nonneg (safeAxialPacking_valueAt_nonnegative z n)
+    (mul_nonneg (by norm_num) (safeTransversePacking_valueAt_nonnegative z n))
 
 /-- The combined positive source vanishes on the critical line. -/
 theorem safeQuarticStructuredPackingValue_eq_zero_of_zeroDefect

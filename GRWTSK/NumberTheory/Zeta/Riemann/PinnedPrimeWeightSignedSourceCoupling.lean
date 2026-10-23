@@ -18,9 +18,7 @@ metadata, and an exact next-octave identity
 
   thetaError(v)
     = response(j,v) / dyadicScale(j)
-      + signedResidual(j,v).
-
-If the response is bounded by a fixed multiple of the actual pinned amplitude
+      + signedResidual(j,v).If the response is bounded by a fixed multiple of the actual pinned amplitude
 square and the complete signed residual is already at the descended scale, the
 rule supplies the guard-free Bertrand ratio condition.  The existing transport
 then yields the quadratic recurrence and one threshold descent.
@@ -67,7 +65,7 @@ theorem target_le_response_add_residual
       |rule.response j v| / (dyadicScale j : ℝ) +
         (|rule.signedResidual j v| + 1) := by
   have hX : (0 : ℝ) < (dyadicScale j : ℝ) := by
-    exact_mod_cast dyadicScale_pos j
+    exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
   calc
     |thetaError v| + 1 =
         |rule.response j v / (dyadicScale j : ℝ) +
@@ -76,7 +74,7 @@ theorem target_le_response_add_residual
     _ ≤
         (|rule.response j v / (dyadicScale j : ℝ)| +
           |rule.signedResidual j v|) + 1 := by
-      exact add_le_add_right (abs_add _ _) 1
+      exact add_le_add (abs_add_le _ _) le_rfl
     _ =
         |rule.response j v| / (dyadicScale j : ℝ) +
           (|rule.signedResidual j v| + 1) := by
@@ -97,7 +95,7 @@ theorem pointwise_to_amplitudeRequirement
     pinnedPrimeWeightAmplitudeRequirement
       (dyadicScale j) C v E := by
   have hX : (0 : ℝ) < (dyadicScale j : ℝ) := by
-    exact_mod_cast dyadicScale_pos j
+    exact_mod_cast GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
   have htarget := rule.target_le_response_add_residual hv
   have hgap :
       (|thetaError v| + 1) - E ≤
@@ -131,7 +129,7 @@ theorem pointwise_to_bertrandRatioRequirement
   exact
     (pinnedPrimeWeightAmplitudeRequirement_iff_bertrandRatioRequirement
       (X := dyadicScale j) (C := C) (v := v) (E := E)
-      (dyadicScale_pos j) hC).1
+      (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hC).1
       (rule.pointwise_to_amplitudeRequirement
         hv hresponse hresidual)
 

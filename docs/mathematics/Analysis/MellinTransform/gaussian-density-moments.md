@@ -53,8 +53,8 @@ entirely; it does not establish that $A\ge1$ is sharp.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianDensityMoments.lean),
-[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-integration-2026-10-15.json)
+native receipt (artifact:gitblob:78403906b76d2eb7d14efb19f69629b4619d8090)
+and integration record (artifact:gitblob:58d2f93c87825629dea4d84576462e17b8568a9c)
 bind exact fresh selected local sources and controls, including the prior
 compact Gaussian window used by the nonzero control. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the full owned-declaration and

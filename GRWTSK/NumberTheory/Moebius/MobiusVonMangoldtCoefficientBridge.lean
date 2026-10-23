@@ -5,7 +5,9 @@ Formalization assistance: OpenAI ChatGPT.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Issue: #948. Parent: draft PR #937 at b109a7e835230614092d17f9ad7a098a3e132d17.
 -/
-import GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredEnergyBranchSeparation
+-- This finite coefficient identity uses the Möbius definition, independently
+-- of the regular-orbit energy and its analytic supplier interfaces.
+import GRWTSK.NumberTheory.Moebius.MertensPrimitive
 import Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt
 
 set_option autoImplicit false
@@ -31,8 +33,10 @@ theorem vonMangoldt_eq_sum_divisorsAntidiagonal_mobius_log
           ArithmeticFunction.log p.2 := by
   have h := congrArg (fun f : ArithmeticFunction ℝ => f n)
     mobiusLogConvolution_eq_vonMangoldt
-  simpa [ArithmeticFunction.mul_apply] using h.symm
+  simpa only [ArithmeticFunction.mul_apply, ArithmeticFunction.intCoe_apply] using h.symm
 
+-- Preserve the published nonzero-domain parameter.
+set_option linter.unusedVariables false in
 /-- Equivalent divisor form: Lambda(n) is a finite Möbius-log divisor
 convolution. -/
 theorem vonMangoldt_eq_sum_divisors_mobius_log_quotient
@@ -41,25 +45,10 @@ theorem vonMangoldt_eq_sum_divisors_mobius_log_quotient
       ∑ d ∈ n.divisors,
         (ArithmeticFunction.moebius d : ℝ) *
           Real.log (n / d : ℕ) := by
-  rw [← ArithmeticFunction.log_apply]
-  rw [← ArithmeticFunction.log_mul_moebius_eq_vonMangoldt]
-  simp only [ArithmeticFunction.mul_apply]
-  rw [ArithmeticFunction.sum_divisorsAntidiagonal
-    (fun d q => ArithmeticFunction.log d *
-      (ArithmeticFunction.moebius q : ℝ))]
-  rw [Finset.sum_bij (fun d _ => n / d)]
-  · intro d hd
-    simp only [ArithmeticFunction.log_apply]
-    ring
-  · intro d hd
-    exact Nat.div_mem_divisors (Finset.mem_divisors.mp hd).1 hn
-  · intro a ha b hb hab
-    exact Nat.div_left_injective
-      (Finset.mem_divisors.mp ha).2
-      (Finset.mem_divisors.mp hb).2 hab
-  · intro d hd
-    refine ⟨n / d, Nat.div_mem_divisors (Finset.mem_divisors.mp hd).1 hn, ?_⟩
-    exact Nat.div_div_cancel (Finset.mem_divisors.mp hd).1
+  rw [vonMangoldt_eq_sum_divisorsAntidiagonal_mobius_log,
+    Nat.sum_divisorsAntidiagonal
+      (fun d q => (ArithmeticFunction.moebius d : ℝ) * ArithmeticFunction.log q)]
+  simp only [ArithmeticFunction.log_apply]
 
 /-- Exact substitution of von-Mangoldt coefficients in any finite real test
 sum by the Möbius-log convolution. -/
@@ -85,7 +74,8 @@ theorem sum_vonMangoldt_complexTest_eq_mobiusLogConvolution
   apply Finset.sum_congr rfl
   intro n hn
   have h := vonMangoldt_eq_sum_divisorsAntidiagonal_mobius_log n
-  exact congrArg (fun x : ℝ => (x : ℂ) * F n) h
+  simpa only [Complex.ofReal_sum, Complex.ofReal_mul] using
+    congrArg (fun x : ℝ => (x : ℂ) * F n) h
 
 structure MobiusVonMangoldtCoefficientBridgeSourceData where
   theoremStatement : Prop

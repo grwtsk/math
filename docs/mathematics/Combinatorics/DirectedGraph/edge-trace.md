@@ -49,7 +49,7 @@ edges. It does not construct an unfolding tree of all paths, assert a relation
 between graph reachability and proof implication, or make a shortest-path
 subtree cover every occurrence.
 
-The separate [operational occurrence validator](../../../../.noeaaeue/documentation/reference/content-cache.md)
+The separate operational occurrence validator (artifact:gitblob:2304c61045278f7e7ef9b09be4a2ba4367c2b984)
 binds relation-ID traces to exact taxonomy bytes and a source snapshot. Its
 bounded tests are separate from this theorem. A correspondence from those
 JSON rows to this Lean equivalence remains open. Taxonomy/classification
@@ -65,7 +65,7 @@ the valid-list equivalence or its binding on this page.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/EdgeTrace.lean),
 [positive consumers](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EdgeTrace.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json)
+and native receipt (artifact:gitblob:eabe42d40fbf1687ce669f637af40d8f53d42968)
 bind exact bytes and controls. The complete local source closure and accepted
 controls use fresh project objects, pinned Lean 4.33.0, trust zero, fatal warnings
 and an owned-declaration/transitive-axiom census permitting only `propext`,
@@ -73,8 +73,8 @@ and an owned-declaration/transitive-axiom census permitting only `propext`,
 and rechecked. Pinned dependency objects are reused and fingerprinted rather
 than rebuilt from source.
 
-The [integration evidence](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json)
-and [bounded source review](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json)
+The integration evidence (artifact:gitblob:df19bbec1a32d893793ce0828ce0cd58affa133d)
+and bounded source review (artifact:gitblob:71becf7ba704b364367c58307a9001f8b41d760f)
 preserve upstream API identities, credit, controls and transfer limits.
 Model review is correlated, not independent validation. Local source is MIT;
 Mathlib and Lean authorship and Apache-2.0 terms remain upstream. Human direction:
