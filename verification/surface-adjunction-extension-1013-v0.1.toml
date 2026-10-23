@@ -1,0 +1,106 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-adjunction-extension-1013-v0.1"
+issue = 1013
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension"
+
+[source_binding]
+parent_pr = 1011
+parent_revision = "35b67b0ff345112caebebac230dca0ccedd0397f"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAdjunctionExtension.lean"
+new_module_git_blob = "3395f0ed4061d648682d37d6c0af71bda5b8b9d5"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-adjunction-extension.md"
+note_blob = "6cadf519149ba13b72c337441b7fa0f3863eb3c9"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+continuous_compatible_pair_extension_proved = false
+full_adjunction_universal_property_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension"
+authored_declaration_count = 4
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension.conePullback"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension.conePullback_respects_outerStep"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension.conePullback_respects_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionExtension.disk_eq_of_characteristic_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-cone-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-attach-A"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-attach-B"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "EqvGen-soundness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-disk-fibers"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-interior-gluing"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-extension-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-pushout-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-run"
+status = "NOT_RUN"
