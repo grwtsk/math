@@ -640,14 +640,14 @@ theorem CMFiniteFourPairedCoefficientConjugate_pure
 attribute [local ext high] _root_.TensorProduct.ext in
 /-- The full paired-assembly conjugation equality is exactly the
 coefficient-only action, not a diagonal action on coefficient and vector. -/
-theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
+theorem CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap
     (E : CMGaloisIntermediateField)
     (σ : E.carrier ≃ₐ[ℚ] E.carrier)
-    (t : CMFiniteFourPairedTensor E) :
-    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
-        (CMFiniteCanonicalPairedAssembly E t) =
-      CMFiniteCanonicalPairedAssembly E
-        (CMFiniteFourPairedCoefficientConjugate E σ t) := by
+    :
+    (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ).comp
+      (CMFiniteCanonicalPairedAssembly E) =
+    (CMFiniteCanonicalPairedAssembly E).comp
+      (CMFiniteFourPairedCoefficientConjugate E σ) := by
   have h :
       (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ).comp
         (CMFiniteCanonicalPairedAssembly E) =
@@ -664,7 +664,20 @@ theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
     rw [CMFiniteFourPairedCoefficientConjugate_pure]
     exact CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
       E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
-  exact congrArg (fun f => f t) h
+  exact h
+
+
+/-- Pointwise consequence of the full linear-map equivariance identity. -/
+theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : CMFiniteFourPairedTensor E) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+        (CMFiniteCanonicalPairedAssembly E t) =
+      CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedCoefficientConjugate E σ t) := by
+  exact congrArg (fun f => f t)
+    (CMFiniteCanonicalPairedAssembly_scalarConjugate_linearMap E σ)
 
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
