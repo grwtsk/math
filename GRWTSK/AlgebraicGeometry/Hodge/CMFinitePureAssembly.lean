@@ -619,9 +619,8 @@ def CMFiniteFourPairedCoefficientConjugate
     CMFiniteFourPairedTensor E →ₗ[ℚ] CMFiniteFourPairedTensor E :=
   let f := GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
     σ
-  (f.rTensor (E.carrier ⊗[ℚ] E.carrier) |>.rTensor
-    (E.carrier ⊗[ℚ] E.carrier) |>.rTensor
-    (E.carrier ⊗[ℚ] E.carrier))
+  _root_.TensorProduct.map
+    (_root_.TensorProduct.map (_root_.TensorProduct.map f f) f) f
 
 /-- The full paired-assembly conjugation equality is exactly the
 coefficient-only action, not a diagonal action on coefficient and vector. -/
