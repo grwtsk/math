@@ -34,7 +34,9 @@ inherited_target = "verification/tent-edge-bounds-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "689e8cad23908897da81887c2a89da0849c7db7f".
 # Pre-quadrature-repair inherited_target_blob = "0bce76a0d9bce4b7ea11890f0601267b456276a0".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "56a51d5ada315f3faf47b147f8b9aaf89df79b6a"
+# Pre-phase-2-repair inherited_target_blob = "56a51d5ada315f3faf47b147f8b9aaf89df79b6a".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "48432603fe884c544273ea17125d30ef031719d3"
 receipt_policy = "Bind the exact new commit and tree externally. Ancestor receipts do not accept this increment."
 inventory_policy = "Lexical names only. Reconcile exact elaborated types, complete import closure and every inherited obligation."
 

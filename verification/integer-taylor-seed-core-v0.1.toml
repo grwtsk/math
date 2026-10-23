@@ -35,7 +35,9 @@ inherited_target = "verification/concrete-newton-second-endpoint-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "8131f6ad92d8ff2bc9948adff23518249d6b96e7".
 # Pre-quadrature-repair inherited_target_blob = "1fb4465593275963c0efe67468943ff205e260c0".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "41bb85949a485201afb31910966b7aa40a9ae879"
+# Pre-phase-2-repair inherited_target_blob = "41bb85949a485201afb31910966b7aa40a9ae879".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "49c76762817b755cd09823f995ba801b79ff431f"
 receipt_policy = "Exact new commit/tree must be bound externally; this static manifest authorizes no execution."
 
 [trust]

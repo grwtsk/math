@@ -35,7 +35,9 @@ inherited_target = "verification/concrete-newton-block-acceptance-core-v0.1.toml
 # Original pre-repair inherited_target_blob = "4304af5e58004f331412ef2136cfd2150af8f25a".
 # Pre-quadrature-repair inherited_target_blob = "90b8982b1e48eed12b9b26b0072f34b9f7d42b7d".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "0241a7149ed5a50a75336d4cacc1c6192f2fe510"
+# Pre-phase-2-repair inherited_target_blob = "0241a7149ed5a50a75336d4cacc1c6192f2fe510".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "b3ffc84f6a28c38c7f3f215249b82397ffa2feeb"
 receipt_policy = "Exact new commit/tree and execution evidence belong externally. This static target grants no execution authority."
 
 [trust]
