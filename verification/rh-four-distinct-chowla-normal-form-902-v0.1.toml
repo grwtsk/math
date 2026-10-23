@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-four-distinct-chowla-normal-form-902-v0.1"
+owner_repository = "grwtsk/math"
+issue = 902
+parent_issue = 890
+parent_pr = 891
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_DISTINCT_CHOWLA_NORMAL_FORM_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctChowlaNormalForm"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctChowlaNormalForm"
+
+[source_binding]
+stacked_parent_revision = "a3b342558abfa80e2743a1c54e8d4b0dcbacd7e8"
+candidate_branch = "research/rh-four-distinct-chowla-normal-form-901-20261022"
+theorem_source_commit = "90dd540ff4ff85d8e33b22c9ee1d0f4ccbd736b4"
+mathematical_note_commit = "53dc0709d47543e21a71a07ea26edd9beb47dd33"
+
+[evidence_states]
+source_draft = true
+common_base_defined = true
+four_offsets_defined = true
+argument_normalization_scripted = true
+nondegenerate_offset_injectivity_scripted = true
+four_distinct_datum_defined = true
+order_four_chowla_premise_explicit = true
+binary_chowla_implication_claimed = false
+four_distinct_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
