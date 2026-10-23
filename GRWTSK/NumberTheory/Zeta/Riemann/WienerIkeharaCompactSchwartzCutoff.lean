@@ -208,4 +208,41 @@ theorem wienerCompactSchwartzTruncation_tendsto_pointwise
   tendsto_nhds_of_eventually_eq
     (wienerCompactSchwartzTruncation_eventually_pointwise g x)
 
+/-- Exact agreement of the Schwartz cutoff and the original test
+on the entire CLOSED expanding core, at every finite R. -/
+theorem wienerCompactSchwartzTruncation_agrees_on_core
+    (g : 𝓢(ℝ, ℂ)) (R : ℕ) {x : ℝ}
+    (hx : |x| ≤ ((R + 1 : ℕ) : ℝ)) :
+    wienerCompactSchwartzTruncation g R x = g x := by
+  rw [wienerCompactSchwartzTruncation_apply,
+    wienerScaledSchwartzCutoff_one_on R hx]
+  exact one_smul ℝ (g x)
+
+/-- The actual truncation ERROR vanishes identically on the
+expanding core. This is the key support input for the remaining
+Schwartz weighted-derivative tail estimate. -/
+theorem wienerCompactSchwartzTruncation_error_zero_on_core
+    (g : 𝓢(ℝ, ℂ)) (R : ℕ) {x : ℝ}
+    (hx : |x| ≤ ((R + 1 : ℕ) : ℝ)) :
+    (g - wienerCompactSchwartzTruncation g R) x = 0 := by
+  change g x - wienerCompactSchwartzTruncation g R x = 0
+  rw [wienerCompactSchwartzTruncation_agrees_on_core g R hx]
+  exact sub_self _
+
+/-- A quantitative support separation, not just pointwise eventual
+agreement: every point of the truncation error support has radius
+STRICTLY larger than R+1. -/
+theorem wienerCompactSchwartzTruncation_error_support_far
+    (g : 𝓢(ℝ, ℂ)) (R : ℕ) :
+    Function.support
+        (g - wienerCompactSchwartzTruncation g R : ℝ → ℂ) ⊆
+      {x : ℝ | ((R + 1 : ℕ) : ℝ) < |x|} := by
+  intro x hx
+  by_contra hnot
+  have hbound : |x| ≤ ((R + 1 : ℕ) : ℝ) :=
+    le_of_not_gt hnot
+  have hzero :=
+    wienerCompactSchwartzTruncation_error_zero_on_core g R hbound
+  exact hx hzero
+
 end GRWTSK.RiemannHypothesis
