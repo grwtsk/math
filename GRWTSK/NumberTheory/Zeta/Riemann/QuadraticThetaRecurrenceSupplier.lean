@@ -69,8 +69,7 @@ theorem quadraticThetaSourceRecurrence_to_descent
     (hρ : (3 : ℝ) / 4 ≤ ρ)
     (hrec : QuadraticThetaSourceRecurrenceAt ρ) :
     QuadraticThetaDescentAt ρ := by
-  intro hθ
-  intro η hη
+  intro hθ η hη
   have hη2 : 0 < η / 2 := by linarith
   obtain ⟨C, hC, jθ, hθbound⟩ := hθ (η / 2) hη2
   obtain ⟨K, hK, R, hR, jr, hstep⟩ := hrec η hη
@@ -98,8 +97,8 @@ theorem quadraticThetaSourceRecurrence_to_descent
   let A : ℝ :=
     C * Real.rpow (X : ℝ) (ρ + η / 4)
   have hX : 0 < X := by
-    dsimp [X]
-    exact dyadicScale_pos j
+    dsimp [X, dyadicScale]
+    positivity
   have hXr : (0 : ℝ) < (X : ℝ) := by
     exact_mod_cast hX
   have hA0 : 0 ≤ A := by
@@ -131,10 +130,11 @@ theorem quadraticThetaSourceRecurrence_to_descent
     have hA :
         A ≤ C * Real.rpow (X : ℝ) (ρ + η / 4) :=
       le_rfl
+    have hδ : 2 * (η / 4) = η / 2 := by ring
     have h :=
       quadratic_error_step
-        hXr hA0 hC hK hR hA hnext
-    simpa [D] using h
+        hXr hA0 hC hK hR hA (by simpa only [hδ] using hnext)
+    simpa only [hδ, D] using h
   have htargetExp :
       0 ≤ quadraticThreshold ρ + η / 2 := by
     have hhalf := half_le_quadraticThreshold hρ
@@ -143,7 +143,9 @@ theorem quadraticThetaSourceRecurrence_to_descent
       (X : ℝ) ≤ (dyadicScale n : ℝ) := by
     rw [← hjSucc, dyadicScale_succ_eq_two_mul]
     dsimp [X]
-    norm_num
+    push_cast
+    have hp : (0 : ℝ) ≤ dyadicScale j := Nat.cast_nonneg _
+    linarith
   have hpow :
       Real.rpow (X : ℝ)
           (quadraticThreshold ρ + η / 2) ≤

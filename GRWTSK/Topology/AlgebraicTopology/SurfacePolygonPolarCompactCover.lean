@@ -8,6 +8,8 @@ Parent PR #1000 head 53befb09d0cf8c182f9b1f71a7b23d7df256652a.
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 import Mathlib.Topology.Instances.AddCircle.Defs
 import Mathlib.Topology.Compactness.Compact
+import Mathlib.Topology.Maps.Basic
+import Mathlib.Topology.Separation.Hausdorff
 import Mathlib.Tactic
 
 /-!
@@ -25,8 +27,11 @@ All proof scripts remain source candidates pending exact Lean replay.
 -/
 
 set_option autoImplicit false
+open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover
+
+open _root_.Topology
 
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 
@@ -64,8 +69,7 @@ theorem compactPolarProjection_surjective_of_circle_cover
     Function.Surjective compactPolarProjection := by
   rintro ⟨z, r⟩
   obtain ⟨θ, hθ⟩ := hcover z
-  exact ⟨(θ, r), by simpa [compactPolarProjection] using
-    congrArg (fun z : UnitAddCircle => (z, r)) hθ⟩
+  exact ⟨(θ, r), by simpa only [compactPolarProjection, Prod.mk.injEq, and_true] using hθ⟩
 
 /-- The quotient-map theorem is conditional only on the precise
 unit-interval angular covering theorem and target Hausdorffness.
@@ -75,7 +79,7 @@ theorem compactPolarProjection_isQuotientMap_of_cover
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z)
     [T2Space (UnitAddCircle × unitInterval)] :
     IsQuotientMap compactPolarProjection := by
-  letI : CompactSpace PolarCompactSource := compactPolarSource_compact
+  let : CompactSpace PolarCompactSource := compactPolarSource_compact
   exact IsQuotientMap.of_surjective_continuous
     (compactPolarProjection_surjective_of_circle_cover hcover)
     compactPolarProjection_continuous
@@ -88,14 +92,15 @@ theorem polarProductProjection_isQuotientMap_of_cover
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z)
     [T2Space (UnitAddCircle × unitInterval)] :
     IsQuotientMap polarProductProjection := by
-  have hcompact :=
+  have hcompact : IsQuotientMap compactPolarProjection :=
     compactPolarProjection_isQuotientMap_of_cover hcover
   have hcont := polarProductProjection_continuous
-  have hsurj := polarProductProjection_surjective
   -- The remaining composition/quotient descent is a source proof
   -- candidate; use the exact IsQuotientMap factorization API.
-  exact hcompact.of_comp_surjective
-    hcont hsurj compactPolarProjection_factor
+  have hcomp : IsQuotientMap (polarProductProjection ∘
+      (fun p : PolarCompactSource => ((p.1 : ℝ), p.2))) := by
+    convert! hcompact using 1
+  exact IsQuotientMap.of_comp (by fun_prop) hcont hcomp
 
 /-- Conditional source candidate for joint continuity with a precise
 compact fundamental-domain supplier rather than a generic quotient

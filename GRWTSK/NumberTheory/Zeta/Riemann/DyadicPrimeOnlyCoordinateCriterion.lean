@@ -99,8 +99,8 @@ theorem primeOnlyBound_to_fullCoordinateBound
   have hcompare :=
     fullStage_le_two_primeOnly_add_residual X N
   have hpow :
-      0 ≤ Real.rpow (X : ℝ) (-1 + η) := by
-    positivity
+      0 ≤ Real.rpow (X : ℝ) (-1 + η) :=
+    Real.rpow_nonneg (Nat.cast_nonneg X) _
   dsimp [D, X] at *
   nlinarith
 
@@ -130,8 +130,8 @@ theorem fullCoordinateBound_to_primeOnlyBound
   have hcompare :=
     primeOnlyStage_le_two_full_add_residual X N
   have hpow :
-      0 ≤ Real.rpow (X : ℝ) (-1 + η) := by
-    positivity
+      0 ≤ Real.rpow (X : ℝ) (-1 + η) :=
+    Real.rpow_nonneg (Nat.cast_nonneg X) _
   dsimp [D, X] at *
   nlinarith
 

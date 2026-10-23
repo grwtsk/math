@@ -47,7 +47,6 @@ theorem parityCenteredAffineFourMobiusAtCenterLag_eq_amplitude_mul
   apply Finset.sum_congr rfl
   intro h hh
   rw [Finset.mul_sum]
-  rfl
 
 /-- Fixed positive-lag four-Möbius correlation, summed over all centers for
 which both symmetric pairs remain in the endpoint. -/

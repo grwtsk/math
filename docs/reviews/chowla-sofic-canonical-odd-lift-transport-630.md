@@ -227,7 +227,7 @@ canonicalOddLiftCyclicTV_le_source_residual
 
 Passive source-locked verification target:
 
-`verification/liouville-odd-lift-canonical-transport-630-v0.1.toml`.
+`docs/verification/_unscoped/liouville-odd-lift-canonical-transport-630-v0.1.toml`.
 
 This targets **12 local modules, 101 theorem heads,
 44 definitions**, including all eleven predecessor
@@ -304,7 +304,7 @@ this budget tends to zero for growing arithmetic
 shift sets, and hence does not solve Chowla.
 
 The new independent thirteen-module verification
-target `verification/liouville-dyadic-signed-pairing-630-v0.1.toml`
+target `docs/verification/_unscoped/liouville-dyadic-signed-pairing-630-v0.1.toml`
 selects 108 theorem/46 definition heads while
 preserving this twelve-module target unchanged.
 Full research note:

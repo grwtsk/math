@@ -80,6 +80,8 @@ theorem abs_harmonicTerminalCumulativeContribution_le_l1
   unfold harmonicTerminalCumulativeContribution
     harmonicTerminalShortIntervalL1Majorant
   rw [if_neg (Nat.ne_of_gt hNpos), if_neg (Nat.ne_of_gt hNpos)]
+  simp only [harmonicShiftFirstDifference]
+  rw [Nat.sub_add_cancel hNpos]
   rw [abs_mul,
     abs_of_nonneg
       (harmonicShiftReciprocal_terminalDifference_nonneg hNpos)]
@@ -137,6 +139,7 @@ theorem abs_harmonicCumulativeLongContribution_le_l1
           _ = _ := by
             apply Finset.sum_congr rfl
             intro k _hk
+            simp only [harmonicShiftSecondDifference, harmonicShiftFirstDifference, Nat.add_assoc, Nat.reduceAdd]
             rw [abs_mul,
               abs_of_nonneg
                 (harmonicShiftReciprocal_secondDifference_nonneg j t k)]
@@ -169,15 +172,21 @@ theorem logarithmicLongDepthRemainder_eq_terminal_add_longInterior
   rw [weightedMertensDyadicSignedAbelDepthSlice_eq_weightedChowlaAverage,
     weightedMertensTwoPointChowlaAverage_eq_harmonic,
     harmonicWeightedMertensTwoPointChowlaAverage_eq_cumulativeShift]
-  rw [harmonicCumulativeInterior_eq_short_add_long
-    j t (logarithmicShiftThreshold j)]
+  rw [mul_add]
+  have hsplit := harmonicCumulativeInterior_eq_short_add_long j t (logarithmicShiftThreshold j)
+  simp only [harmonicShiftSecondDifference, harmonicShiftFirstDifference, Nat.add_assoc, Nat.reduceAdd] at hsplit
+  rw [hsplit]
   unfold harmonicTerminalCumulativeContribution
   let YR : ℝ := ((2 ^ (j + 1) : ℕ) : ℝ)
   have hYR : 0 < YR := by
     dsimp [YR]
     positivity
   field_simp [ne_of_gt hYR]
-  ring
+  simp only [harmonicShiftFirstDifference]
+  split_ifs with hN
+  · ring
+  · rw [Nat.sub_add_cancel (Nat.one_le_iff_ne_zero.mpr hN)]
+    ring
 
 /-- One genuine core depth remainder is majorized by the exact coefficient-
 weighted L1 short-interval observable. -/
@@ -196,7 +205,7 @@ theorem abs_logarithmicLongDepthRemainder_le_coreL1
       |2 * harmonicTerminalCumulativeContribution j t| +
       |2 * (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹ *
         harmonicCumulativeLongContribution
-          j t (logarithmicShiftThreshold j)| := abs_add _ _
+          j t (logarithmicShiftThreshold j)| := abs_add_le _ _
     _ ≤ 2 * harmonicTerminalShortIntervalL1Majorant j t +
         2 * harmonicLongInteriorShortIntervalL1Majorant j t := by
       apply add_le_add

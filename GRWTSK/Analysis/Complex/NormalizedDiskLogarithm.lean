@@ -68,7 +68,7 @@ theorem normalized_primitives_eqOn (g L K : ℂ → ℂ) (r : ℝ) (hr : 0 < r)
     fun z hz => ((hL z hz).sub (hK z hz)).differentiableAt.differentiableWithinAt
   have hz : EqOn (deriv (fun z => L z - K z)) 0 (ball 0 r) := by
     intro z hz
-    simpa only [sub_self, Pi.zero_apply] using ((hL z hz).sub (hK z hz)).deriv
+    simpa only [sub_self, Pi.zero_apply, Pi.sub_def] using ((hL z hz).sub (hK z hz)).deriv
   obtain ⟨a, ha⟩ := isOpen_ball.exists_is_const_of_deriv_eq_zero
     (convex_ball (0 : ℂ) r).isPreconnected hd hz
   have ha0 : a = 0 := by simpa [hL0, hK0] using (ha 0 (mem_ball_self hr)).symm

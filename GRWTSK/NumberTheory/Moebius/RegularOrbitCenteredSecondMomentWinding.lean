@@ -54,13 +54,7 @@ theorem centeredWindingRadius_cast_le_b_mul_reciprocalSquare
     (b d : ℕ) [NeZero d] :
     (centeredWindingRadius b d : ℝ) ≤
       (b : ℝ) * (((d : ℝ) ^ 2)⁻¹) := by
-  unfold centeredWindingRadius
-  have h := Nat.div_mul_le_self b (d * d)
-  have hd : (0 : ℝ) < (d : ℝ) ^ 2 := by positivity
-  have hcast :
-      ((b / (d * d) : ℕ) : ℝ) * ((d : ℝ) ^ 2) ≤ b := by
-    exact_mod_cast h
-  exact (le_div_iff₀ hd).2 (by simpa [div_eq_mul_inv] using hcast)
+  exact centeredWindingRadius_cast_le b d
 
 theorem regularCenteredCauchyWindingCostEndpoint_le_sixteen_mul_b_secondMoment
     (b : ℕ) :
@@ -69,7 +63,7 @@ theorem regularCenteredCauchyWindingCostEndpoint_le_sixteen_mul_b_secondMoment
   unfold regularCenteredCauchyWindingCostEndpoint
     regularCenteredCauchyWindingCostAtModulus
   have hM : 0 ≤ regularCenteredFourFamilySecondMoment b := by
-    unfold regularCenteredFourFamilySecondMoment
+    unfold regularCenteredFourFamilySecondMoment parityCenteredIntegerCoordinateSecondMoment
     positivity
   calc
     _ ≤ ∑ d ∈ effectiveEndpointSquareModulusSet b,
@@ -79,7 +73,7 @@ theorem regularCenteredCauchyWindingCostEndpoint_le_sixteen_mul_b_secondMoment
       intro d hdmem
       have hdpos : 0 < d :=
         (Finset.mem_Ico.mp (Finset.mem_filter.mp hdmem).1).1
-      letI : NeZero d := ⟨ne_of_gt hdpos⟩
+      let : NeZero d := ⟨ne_of_gt hdpos⟩
       exact mul_le_mul_of_nonneg_right
         (mul_le_mul_of_nonneg_left
           (centeredWindingRadius_cast_le_b_mul_reciprocalSquare b d)
@@ -89,6 +83,8 @@ theorem regularCenteredCauchyWindingCostEndpoint_le_sixteen_mul_b_secondMoment
         (∑ d ∈ effectiveEndpointSquareModulusSet b,
           (((d : ℝ) ^ 2)⁻¹)) := by
       rw [Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro d _
       ring
     _ ≤ 8 * (b : ℝ) * regularCenteredFourFamilySecondMoment b * 2 := by
       exact mul_le_mul_of_nonneg_left

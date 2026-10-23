@@ -47,6 +47,8 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- Signed coefficient in the actual Abel depth bilinear form. -/
 def signedAbelDepthAmplitude (j t h : ℕ) : ℝ :=
   2 * mertensTwoPointPrefix h (t + 1)

@@ -1,0 +1,383 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-logarithmic-sampling-335-v0.2"
+owner_repository = "grwtsk/math"
+issue = 335
+meta_issue = 334
+route_id = "RH-E02"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.LogarithmicPickupSampling"
+build_target = "GRWTSK.NumberTheory.Moebius.LogarithmicPickupSampling"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "a5dde3c6e366d323328f7a50ada936995c656282"
+review_parent_tree = "64bad4cf9298cb3e48ad1d9eb982638e4898a6af"
+new_module_path = "GRWTSK/NumberTheory/Moebius/LogarithmicPickupSampling.lean"
+new_module_git_blob = "8040c65ade21b244b317ede04131e6ffd8a75655"
+new_module_namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.LogarithmicPickupSampling"
+authored_declaration_count = 23
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.CofinalEnergyDamping"
+authored_declaration_count = 25
+source_inventory_status = "INHERITED_SOURCE_SIGNATURES_ONLY"
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/CofinalEnergyDamping/rh-cofinal-energy-335-v0.1.toml"
+git_blob = "019fdbfbc88ea87be8d79b27e55a96494b45c214"
+status = "PRESERVED_NOT_AN_ACCEPTANCE_RECEIPT"
+requires_all_authored_and_generated_declarations = true
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CofinalEnergyDamping.lean"
+git_blob = "413f3e31870158078d380c5323f3c013efcdf00b"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/PrimitiveRegularity.lean"
+git_blob = "4a5e8075d851d7c9b9f697412c28b0dd627885a1"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/FiniteResponseSum.lean"
+git_blob = "28c98122255cae3df73a58c486590e60a801e157"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/GramDiagonalBound.lean"
+git_blob = "bbb2d7e20158d8208d3a80e6128ae732f9e532bf"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean"
+git_blob = "f5ed8915ec03933a15b0b3685294942d4959a24a"
+status = "SOURCE_REUSED_NOT_FRESHLY_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampledPickup"
+kind = "def"
+source_signature = '''
+def sampledPickup (u : ℝ) : ℝ
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampledPickup_measurable"
+kind = "theorem"
+source_signature = '''
+theorem sampledPickup_measurable : Measurable sampledPickup
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.floor_exp_ge_one"
+kind = "theorem"
+source_signature = '''
+theorem floor_exp_ge_one {u : ℝ} (hu : 0 ≤ u) : 1 ≤ ⌊Real.exp u⌋₊
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.wholePickup_log_nat"
+kind = "theorem"
+source_signature = '''
+theorem wholePickup_log_nat (n : ℕ) (hn : 1 ≤ n) :
+    wholePickup (Real.log (n : ℝ)) =
+      2 * (∑ k ∈ Finset.Icc 1 n, moebiusReal k * (Real.sqrt k)⁻¹) -
+        2 * (Real.sqrt n)⁻¹ * mertensPrefix (n : ℝ)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampledPickup_zero"
+kind = "theorem"
+source_signature = '''
+@[simp] theorem sampledPickup_zero : sampledPickup 0 = 0
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampledPickup_at_log_nat"
+kind = "theorem"
+source_signature = '''
+theorem sampledPickup_at_log_nat (n : ℕ) (hn : 1 ≤ n) :
+    sampledPickup (Real.log (n : ℝ)) = wholePickup (Real.log (n : ℝ))
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampledPickup_on_cell"
+kind = "theorem"
+source_signature = '''
+theorem sampledPickup_on_cell (n : ℕ) (hn : 1 ≤ n) {u : ℝ}
+    (hu : u ∈ Ico (Real.log (n : ℝ)) (Real.log ((n : ℝ) + 1))) :
+    sampledPickup u = wholePickup (Real.log (n : ℝ))
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampling_difference"
+kind = "theorem"
+source_signature = '''
+theorem sampling_difference {u : ℝ} (hu : 0 ≤ u) :
+    wholePickup u - sampledPickup u =
+      2 * mertensPrefix (⌊Real.exp u⌋₊ : ℝ) *
+        ((Real.sqrt (⌊Real.exp u⌋₊ : ℝ))⁻¹ - Real.exp (-u / 2))
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.cell_drift_bound"
+kind = "theorem"
+source_signature = '''
+theorem cell_drift_bound {a b m : ℝ} (ha : 0 < a) (hb : 0 < b)
+    (hba : b ≤ a) (hwidth : a ^ 2 - b ^ 2 ≤ 1) (hm : |m| ≤ b ^ 2) :
+    |2 * m * (b⁻¹ - a⁻¹)| ≤ a⁻¹
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampling_difference_abs_le"
+kind = "theorem"
+source_signature = '''
+theorem sampling_difference_abs_le {u : ℝ} (hu : 0 ≤ u) :
+    |wholePickup u - sampledPickup u| ≤ Real.exp (-u / 2)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weighted_sampling_error_le"
+kind = "theorem"
+source_signature = '''
+theorem weighted_sampling_error_le (σ : ℝ) {u : ℝ} (hu : 0 ≤ u) :
+    Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2 ≤
+      Real.exp (-(σ + 1) * u)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weighted_sampling_error_measurable"
+kind = "theorem"
+source_signature = '''
+theorem weighted_sampling_error_measurable (σ : ℝ) :
+    Measurable (fun u : ℝ ↦
+      Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weighted_sampling_error_integrable"
+kind = "theorem"
+source_signature = '''
+theorem weighted_sampling_error_integrable {σ : ℝ} (hσ : -1 < σ) :
+    IntegrableOn (fun u : ℝ ↦
+      Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2) (Ici 0)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weighted_sampling_error_integral_le"
+kind = "theorem"
+source_signature = '''
+theorem weighted_sampling_error_integral_le {σ : ℝ} (hσ : -1 < σ) :
+    (∫ u in Ici (0 : ℝ),
+      Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2) ≤ 1 / (σ + 1)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.undamped_sampling_error"
+kind = "theorem"
+source_signature = '''
+theorem undamped_sampling_error :
+    IntegrableOn (fun u : ℝ ↦ (wholePickup u - sampledPickup u) ^ 2) (Ici 0) ∧
+      (∫ u in Ici (0 : ℝ), (wholePickup u - sampledPickup u) ^ 2) ≤ 1
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weighted_square_comparisons"
+kind = "theorem"
+source_signature = '''
+theorem weighted_square_comparisons (σ u : ℝ) :
+    (Real.exp (-σ * u) * wholePickup u ^ 2 ≤
+      2 * (Real.exp (-σ * u) * sampledPickup u ^ 2) +
+      2 * (Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2)) ∧
+    (Real.exp (-σ * u) * sampledPickup u ^ 2 ≤
+      2 * (Real.exp (-σ * u) * wholePickup u ^ 2) +
+      2 * (Real.exp (-σ * u) * (wholePickup u - sampledPickup u) ^ 2))
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.weighted_integrable_iff_sampled"
+kind = "theorem"
+source_signature = '''
+theorem weighted_integrable_iff_sampled {σ : ℝ} (hσ : -1 < σ) :
+    IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * wholePickup u ^ 2) (Ici 0) ↔
+      IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * sampledPickup u ^ 2) (Ici 0)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.actual_energy_le_sampled"
+kind = "theorem"
+source_signature = '''
+theorem actual_energy_le_sampled {σ : ℝ} (hσ : -1 < σ)
+    (hs : IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * sampledPickup u ^ 2) (Ici 0)) :
+    (∫ u in Ici (0 : ℝ), Real.exp (-σ * u) * wholePickup u ^ 2) ≤
+      2 * (∫ u in Ici (0 : ℝ), Real.exp (-σ * u) * sampledPickup u ^ 2) +
+        2 / (σ + 1)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampled_energy_le_actual"
+kind = "theorem"
+source_signature = '''
+theorem sampled_energy_le_actual {σ : ℝ} (hσ : -1 < σ)
+    (hw : IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * wholePickup u ^ 2) (Ici 0)) :
+    (∫ u in Ici (0 : ℝ), Real.exp (-σ * u) * sampledPickup u ^ 2) ≤
+      2 * (∫ u in Ici (0 : ℝ), Real.exp (-σ * u) * wholePickup u ^ 2) +
+        2 / (σ + 1)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sampled_weighted_square_integrableOn_Icc"
+kind = "theorem"
+source_signature = '''
+theorem sampled_weighted_square_integrableOn_Icc {σ : ℝ} (hσ : -1 < σ) (T : ℝ) :
+    IntegrableOn (fun u : ℝ ↦ Real.exp (-σ * u) * sampledPickup u ^ 2) (Icc 0 T)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.finite_weighted_comparisons"
+kind = "theorem"
+source_signature = '''
+theorem finite_weighted_comparisons {σ : ℝ} (hσ : -1 < σ) (T : ℝ) :
+    ((∫ u in Icc (0 : ℝ) T, Real.exp (-σ * u) * wholePickup u ^ 2) ≤
+      2 * (∫ u in Icc (0 : ℝ) T, Real.exp (-σ * u) * sampledPickup u ^ 2) +
+        2 / (σ + 1)) ∧
+    ((∫ u in Icc (0 : ℝ) T, Real.exp (-σ * u) * sampledPickup u ^ 2) ≤
+      2 * (∫ u in Icc (0 : ℝ) T, Real.exp (-σ * u) * wholePickup u ^ 2) +
+        2 / (σ + 1))
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.abscissa_zero_iff_sampled_reciprocal"
+kind = "theorem"
+source_signature = '''
+theorem abscissa_zero_iff_sampled_reciprocal :
+    pickupEnergyAbscissa = 0 ↔ ∀ n : ℕ,
+      IntegrableOn (fun u : ℝ ↦
+        Real.exp (-CofinalDamping.reciprocalDamping n * u) * sampledPickup u ^ 2) (Ici 0)
+'''
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_sampled_reciprocal"
+kind = "theorem"
+source_signature = '''
+theorem riemannHypothesis_of_sampled_reciprocal
+    (hp : ∀ n : ℕ, IntegrableOn (fun u : ℝ ↦
+      Real.exp (-CofinalDamping.reciprocalDamping n * u) * sampledPickup u ^ 2) (Ici 0)) :
+    _root_.RiemannHypothesis
+'''
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-source-and-cutoff"
+description = "Both finite prefixes use the actual Mobius source and the same closed floor. A_N cancels before absolute bounding."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "closed-event-zero-error"
+description = "At a logarithmic integer event G=W. At n=1 the Mertens endpoint must cancel A_1."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "floor-cell-width"
+description = "The scalar drift bound retains a^2-b^2 <= 1 and |m| <= b^2; deleting either admits an explicit counterexample."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "difference-not-complete-source"
+description = "The undamped integrability theorem applies only to W-G. It cannot be coerced into finite energy for W or G."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "damping-normalization"
+description = "The prior one-third waveform damping is square exponent sigma=2/3, giving constants 6/5 and 3/10."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "sampled-source-not-cancellation"
+description = "The same interpolation estimate holds for all-positive coefficients, whose complete energy need not converge."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "all-cofinal-stages"
+description = "The terminal RH consumer still quantifies every reciprocal stage. A finite prefix or positive floor is insufficient."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "series-port-not-admitted"
+description = "The countable-cell/summability and dyadic-block formulas in the note remain written derivations, not declarations in this target."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[[hostile_controls]]
+id = "source-not-kernel"
+description = "Source inventories, rational diagnostics and unchanged imports do not prove elaboration, axioms or accepted dependency coverage."
+status = "REQUIRES_EXACT_SCOPE_REVIEW_AND_REPLAY"
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_independent_source_review = true
+requires_external_immutable_receipt = true
+requires_inherited_target_reconciliation = true
+may_close_actual_arithmetic_supplier = false
+
+[nonclaims]
+claims = [
+  "unconditional RH",
+  "new complete-pickup damping integrability",
+  "decrease of the actual energy abscissa",
+  "undamped finite energy of W or G",
+  "actual all-scale Mobius cancellation bound",
+  "Lean admission of the written countable-series bridge",
+  "fresh kernel or transitive-axiom acceptance",
+  "execution-hold release"
+]

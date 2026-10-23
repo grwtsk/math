@@ -82,6 +82,7 @@ theorem safeEvenPrimePowerTerm_criticalReflectedZero
   rw [safeEvenPrimePowerTerm,
     safePlusPrimePowerTerm_criticalReflectedZero,
     safeMinusPrimePowerTerm_criticalReflectedZero]
+  unfold safeEvenPrimePowerTerm
   ring
 
 /-- The odd channel changes sign under critical reflection. -/
@@ -92,6 +93,7 @@ theorem safeOddPrimePowerTerm_criticalReflectedZero
   rw [safeOddPrimePowerTerm,
     safePlusPrimePowerTerm_criticalReflectedZero,
     safeMinusPrimePowerTerm_criticalReflectedZero]
+  unfold safeOddPrimePowerTerm
   ring
 
 /-- On the critical line the two safe shifts coincide. -/
@@ -154,7 +156,7 @@ theorem orientedVolume_reflectY (p : ThreePointPacking) :
 /-- The positive Gram volume is invariant under y-reflection. -/
 theorem gramVolume_reflectY (p : ThreePointPacking) :
     p.reflectY.gramVolume = p.gramVolume := by
-  rw [gramVolume, orientedVolume_reflectY, neg_sq]
+  simp only [gramVolume, orientedVolume_reflectY, neg_sq]
 
 /-- Three collinear horizontal points have zero Gram volume. -/
 theorem gramVolume_eq_zero_of_y_zero

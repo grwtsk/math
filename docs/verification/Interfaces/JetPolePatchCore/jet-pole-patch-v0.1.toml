@@ -1,0 +1,214 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "jet-pole-patch-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.JetPolePatchCore"
+build_target = "GRWTSK.Interfaces.JetPolePatchCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "4c14fea1618ac2f06d236fab0bfc667185854be8"
+parent_tree = "c1d72733533b871d72340a1417d0e9acc92ec95b"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/ConstructedRectangleCountCore/constructed-rectangle-count-v0.1.toml"
+inherited_target_blob = "441e0233254bf3a0a160577a8ac34e7bc2ae293c"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Alternate local derivative-aware patch only; old contour/count checker is unchanged and no complete target success is supplied."
+receipt_policy = "No execution authority or receipt. External acceptance binds to the actual commit/tree/target."
+inventory_policy = "Retain EVERY predecessor declaration, exact type, generated name, control, large finite decision, transitive import/axiom/native dependency and source identity. This selected catalog is NOT the complete closure. Empty inherited name lists waive nothing. Independent Python output is not Lean acceptance."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.CenterJetVariation"
+path = "GRWTSK/Analysis/Complex/CenterJetVariation.lean"
+source_git_blob = "f1dd911eb9cb80b202e3dda0cc9da164647c8f3f"
+required_declarations = ["GRWTSK.Analysis.Complex.CenterJetVariation.center_derivative_norm", "GRWTSK.Analysis.Complex.CenterJetVariation.derivative_norm_le", "GRWTSK.Analysis.Complex.CenterJetVariation.value_variation", "GRWTSK.Analysis.Complex.CenterJetVariation.cauchy_derivative_norm_le"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.JetPolePatchCore"
+path = "GRWTSK/Interfaces/JetPolePatchCore.lean"
+source_git_blob = "a6014e184946d52ace7fab2648e946853ea99ed1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.JetPolePatchControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/JetPolePatchControls.lean"
+source_git_blob = "189a86d38206807514cfb91c21452f7422a047e9"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pointwise_error_not_derivative_error", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pole_uniform_error_retained", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pole_jet_checked", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pole_derivative_enclosed", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pole_fallback_and_strict_equality", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.rejected_pole_disk_is_still_nonzero", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.invalid_outer_disks", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.curved", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.curved_derivative", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.curvature_cannot_be_discarded", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pilot_jet_checked", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pilot_derivative_precision", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pilot_radius_gain", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.pilot_larger_disk_nonzero", "GRWTSK.RiemannHypothesis.Checks.JetPolePatchControls.quadratic_budget_control"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalJetPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalJetPolePatch.lean"
+source_git_blob = "048cbe4826f316d2c424aa4f449890974483d7b9"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalJetPolePatch.centerBound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.curvature", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.jetSlope", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.selectedSlope", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.imageRadius", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.Valid", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.validDecidable", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.check", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.check_iff", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.sourceBound_on_disk", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.centerBound_sound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.curvature_sound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.jetSlope_sound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.oldSlope_sound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.selectedSlope_sound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.image_bound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.patchOfCheck", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.check_sound", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.imageRadius_le_old", "GRWTSK.RiemannHypothesis.RationalJetPolePatch.accepts_of_old"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleJet.lean"
+source_git_blob = "d713fab9e2c45d76d0f4c2ba603f82efae27b530"
+required_declarations = ["GRWTSK.RiemannHypothesis.RationalPoleJet.check", "GRWTSK.RiemannHypothesis.RationalPoleJet.check_iff", "GRWTSK.RiemannHypothesis.RationalPoleJet.uniformError", "GRWTSK.RiemannHypothesis.RationalPoleJet.tailAllowance_nonneg", "GRWTSK.RiemannHypothesis.RationalPoleJet.uniformError_nonneg", "GRWTSK.RiemannHypothesis.RationalPoleJet.disk_geometry", "GRWTSK.RiemannHypothesis.RationalPoleJet.uniform_source_error", "GRWTSK.RiemannHypothesis.RationalPoleJet.derivativeBall", "GRWTSK.RiemannHypothesis.RationalPoleJet.derivativeBall_sound", "GRWTSK.RiemannHypothesis.RationalPoleJet.jet", "GRWTSK.RiemannHypothesis.RationalPoleJet.jet_sound", "GRWTSK.RiemannHypothesis.RationalPoleJet.evaluate", "GRWTSK.RiemannHypothesis.RationalPoleJet.evaluate_sound"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedDiskCauchy"
+path = "GRWTSK/Analysis/Complex/ClosedDiskCauchy.lean"
+source_git_blob = "10fd0445fae48aefb8726e721d9a93985c375021"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleValue"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleValue.lean"
+source_git_blob = "52f1bb4b39a75d21e0d41d1ed662901a07187a12"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleNormalizedJet.lean"
+source_git_blob = "fa90642a45d78579a1202202b055fc3bc456f16d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedEndpointJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedEndpointJet.lean"
+source_git_blob = "bb93b1bc2fc7f6aad133d64cee3924430949f419"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleNormalizedContourBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleNormalizedContourBounds.lean"
+source_git_blob = "4744ddf4d7a4d52ac6e2a6802c61660eff3b3e96"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPolePatch.lean"
+source_git_blob = "e1bc2347e739bc1cb2a78647478d1d478887d2d9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalPowerValue"
+path = "GRWTSK/Analysis/ErrorBounds/RationalPowerValue.lean"
+source_git_blob = "ad45930024f7bb7739e051ed972cb5c59c7ca918"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalRoundedExp"
+path = "GRWTSK/Analysis/ErrorBounds/RationalRoundedExp.lean"
+source_git_blob = "43b9ddac8be240f55cf94eb55aca4a8a82654d13"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ConstructedSourceControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ConstructedSourceControls.lean"
+source_git_blob = "f5f9e75b5c77933c50858931a3b9e9af534ed349"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.ConstructedRectangleCountCore"
+path = "GRWTSK/Interfaces/ConstructedRectangleCountCore.lean"
+source_git_blob = "72c1160cd99ba17a063dd95dd171ead7aece0a24"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/MeanValue.lean"
+source_git_blob = "0cb69990a3dea0765ecded27124f1df538867f7a"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/CauchyIntegral.lean"
+source_git_blob = "7ab35a8eefd071d78383042b0806e30664a62cca"
+
+[[controls]]
+id = "J01-uniform_not_pointwise"
+requirement = "Require the complete outer-disk residual and Cauchy bound on the actual analytic difference. A zero point error is not a derivative error."
+
+[[controls]]
+id = "J02-same_finite_model"
+requirement = "Value, finite derivative, source residual and correction count refer to the identical existing normalized finite model."
+
+[[controls]]
+id = "J03-outer_disk_geometry"
+requirement = "Both magnitude factors use the whole outer disk; retain 0<S<Re(c), including strict tangent rejection."
+
+[[controls]]
+id = "J04-radius_gap"
+requirement = "Retain 0<=R<S and the positive Cauchy gap before any analytic denominator use."
+
+[[controls]]
+id = "J05-complete_inherited_arithmetic"
+requirement = "Retain every log, Taylor, seed, square, nonlinear amplification, finite-jet and source-tail obligation."
+
+[[controls]]
+id = "J06-derivative_source_charge"
+requirement = "The derivative radius is e_fin+E/S, not e_fin, E or center source error divided by S."
+
+[[controls]]
+id = "J07-pole_not_exact_derivative"
+requirement = "F(1)=1 leaves a nonzero source-derivative error. Reconcile the 65/32 uniform error and 33/8 radius fixture."
+
+[[controls]]
+id = "J08-curvature_allpoints"
+requirement = "Retain 2! and the full inner-disk Cauchy curvature; no sampled F second derivative or caller oracle."
+
+[[controls]]
+id = "J09-nonlinear_budget"
+requirement = "Two mean values give L*R^2, not an unproved half of that value. Retain the quadratic counterexample."
+
+[[controls]]
+id = "J10-min_two_proved_bounds"
+requirement = "Both bounds concern the same derivative on the same disk. Retain fallback and no-regression proofs."
+
+[[controls]]
+id = "J11-strict_lower_norm"
+requirement = "Use max absolute coordinate as a lower bound; never replace it by the L1 upper bound."
+
+[[controls]]
+id = "J12-equality_rejects"
+requirement = "Retain strict rejection at the pole equality case and the separate direct-collar nonzero theorem."
+
+[[controls]]
+id = "J13-generated_jet"
+requirement = "No independent actual value/derivative/curvature premise in the constructed patch theorem."
+
+[[controls]]
+id = "J14-unchanged_pilot"
+requirement = "Reconcile exact pilot center, original 81-base schedule, correction inventory and unchanged value ball."
+
+[[controls]]
+id = "J15-larger_pilot_disk"
+requirement = "Check old failure, new success at 1/400, and new failure at 1/200; these large decisions remain mandatory."
+
+[[controls]]
+id = "J16-old_count_unchanged"
+requirement = "Do not substitute the new image radius into the old tube/count Boolean semantics without a separate proved adapter."
+
+[[controls]]
+id = "J17-finite_models_not_proof"
+requirement = "Independent Python polynomial and zeta comparisons do not prove uniformity or execute/refine Lean."
+
+[[controls]]
+id = "J18-transitive_acceptance"
+requirement = "Elaborate exact types and all large decisions; audit complete generated/import/axiom/native closure and all predecessor controls."

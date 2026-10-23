@@ -65,6 +65,8 @@ def centeredGreenHarmonicCorrection
     (centeredGreenHarmonicCorrectionCoefficient n : ℂ) *
       φ (centeredGreenLocation X n)
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 theorem centeredGreenPrimeCoordinate_decomposition
     {X : ℕ} (hX : 1 ≤ X) (φ : ℝ → ℂ) :
     centeredGreenPrimeCoordinate X φ =

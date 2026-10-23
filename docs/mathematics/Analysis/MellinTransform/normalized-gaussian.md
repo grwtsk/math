@@ -58,7 +58,7 @@ not supply that missing coefficient identity.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean),
 [positive consumers](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/NormalizedGaussian.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json)
+and native receipt (artifact:gitblob:9af23a4c5912be70435f70c47aa2cb3c718b55e2)
 bind exact statements, bytes and controls. Pinned Lean 4.33.0 checks fresh
 selected local objects at trust zero with fatal warnings and the complete
 owned-declaration/transitive-axiom census; only `propext`, `Classical.choice`
@@ -66,8 +66,8 @@ and `Quot.sound` are permitted. Generated project objects and reused pinned
 dependency objects are fingerprinted and rechecked. Dependency sources are
 not rebuilt.
 
-The [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-integration-2026-10-15.json)
-and [source review](../../../../.noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-source-review-2026-10-15.json)
+The integration record (artifact:gitblob:35112d78aee4df5fb5cabc68bbac10813d9bc84b)
+and source review (artifact:gitblob:4329ef704c097fd92992c907e2849e0fca0bfc04)
 preserve the exact [OpenAI source](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/Detector/GaussianMellin.lean),
 normalization, author credit and comparison limits. The local proof supplies a
 forward transform and recovers the selected inverse identity through an actual

@@ -20,7 +20,7 @@ Every `SearchAttempt` retains its explicit candidate, optional seed, revision, e
 
 ## Evidence and credit
 
-The [selected trust-zero receipt](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json) and [declaration inventory](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/declarations.json) bind the checked claims and exact hypotheses. The adapter leaves `ControllerState` unchanged. It is a formal compatibility layer, not a deployed runtime or a source of funding and permission.
+The selected trust-zero receipt (artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603) and declaration inventory (artifact:gitblob:08c78be73d92de914ca31935d12afd64993d8626) bind the checked claims and exact hypotheses. The adapter leaves `ControllerState` unchanged. It is a formal compatibility layer, not a deployed runtime or a source of funding and permission.
 
 Human mathematical direction: grwtsk contributors. Lean implementation: OpenAI Codex; existing repository and Mathlib attribution retained. See [partial-sum ordering](../../Combinatorics/Sequences/partial-sum-ordering.md) for the mathematical repair construction.
 

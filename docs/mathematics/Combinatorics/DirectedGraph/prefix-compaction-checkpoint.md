@@ -45,15 +45,15 @@ internal empty batches and distinct retained roots are checked consumers.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableCheckpoint.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableCheckpoint.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json)
+native receipt (artifact:gitblob:9b6f7abca32e0cc151859cb2081056d9fd710cc0)
+and integration record (artifact:gitblob:fd32195a386ab6cac83dc4a3e29722dbae8bca2d)
 bind fresh selected local sources and controls. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
 dependency objects are reused and fingerprinted; their sources and the whole
 umbrella are not rebuilt.
 
-The [durable decision](../../../../.noeaaeue/cache/decisions/compaction-checkpoint-state-v1.json)
+The durable decision (artifact:gitblob:d707cbe338edb4ce306fd9d9d3c4f05706422b63)
 records this semantic checkpoint and its storage boundaries. No raw array
 or old-slot stability across compaction is claimed. Criteria and evidence
 for appended rows remain explicit obligations. Runtime parser/JSON/zlib/hash,

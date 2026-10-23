@@ -34,7 +34,7 @@ EXACT_GREEN_FOURIER_PARSEVAL_FRAME_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open Filter Topology MeasureTheory Set
+open Filter Topology _root_.MeasureTheory Set
 open CanonicalZeroDivisor
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
@@ -59,8 +59,9 @@ theorem greenResidualComplex_memLp_Ioc
     unfold unitVolume
     exact Measure.restrict_mono Ioc_subset_Icc_self le_rfl
   have hrestricted := hcomplex.mono_measure hmeasure
-  simpa [greenResidualComplex, greenSourceFrameValue_eq_centeredResidual] using
-    hrestricted
+  convert! hrestricted using 1
+  funext t
+  exact congrArg Complex.ofReal (greenSourceFrameValue_eq_centeredResidual X t)
 
 def greenResidualFourierCoeff (X : ℕ) (k : ℤ) : ℂ :=
   fourierCoeffOn (show (0 : ℝ) < 1 by norm_num)
@@ -101,8 +102,7 @@ theorem greenFourierShellEnergy_nonnegative
 theorem greenFourierShellEnergy_hasSum
     (X : ℕ) :
     HasSum (greenFourierShellEnergy X) (greenEnergy X) := by
-  simpa [greenFourierShellEnergy] using
-    (greenResidualFourier_parseval_hasSum X).nat_add_neg_add_one
+  convert! (greenResidualFourier_parseval_hasSum X).nat_add_neg_add_one using 1
 
 def greenFourierHeadEnergy (X N : ℕ) : ℝ :=
   ∑ n ∈ Finset.range N, greenFourierShellEnergy X n
@@ -152,9 +152,7 @@ theorem fullGreenFourierStage_mono
     Monotone (fullGreenFourierStage X) := by
   intro M N hMN
   unfold fullGreenFourierStage
-  exact add_le_add_left
-    (greenFourierHeadEnergy_mono X hMN)
-    ((mass0 X)^2 + (mass1 X)^2)
+  exact add_le_add le_rfl (greenFourierHeadEnergy_mono X hMN)
 
 theorem fullGreenFourierStage_tendsto
     (X : ℕ) :
@@ -167,15 +165,16 @@ theorem fullGreenFourierStage_tendsto
         (𝓝 ((mass0 X)^2 + (mass1 X)^2)) :=
     tendsto_const_nhds
   have hadd := hconst.add h
-  simpa [fullGreenFourierStage, augmentedEnergy, add_assoc, add_left_comm,
-    add_comm] using hadd
+  convert! hadd using 1
+  unfold augmentedEnergy
+  ring
 
 theorem fullGreenFourierStage_le_augmentedEnergy
     (X N : ℕ) :
     fullGreenFourierStage X N ≤ augmentedEnergy X := by
-  unfold fullGreenFourierStage augmentedEnergy
-  exact add_le_add_left
-    (greenFourierHeadEnergy_le_greenEnergy X N)
-    ((mass0 X)^2 + (mass1 X)^2)
+  calc
+    _ ≤ (mass0 X)^2 + (mass1 X)^2 + greenEnergy X :=
+      add_le_add le_rfl (greenFourierHeadEnergy_le_greenEnergy X N)
+    _ = _ := by unfold augmentedEnergy; ring
 
 end GRWTSK.RiemannHypothesis

@@ -18,9 +18,7 @@ The zero-mode correction from the parent is
   4 * P^2 / d^2 - 4 * sum_c C(c)^2,
 
 where P is the total signed centered pair mass and C(c) is the signed
-equal-center fiber amplitude on c in range (b+1).
-
-Writing N=b+1 and centering C(c) at P/N gives the exact finite identity
+equal-center fiber amplitude on c in range (b+1).Writing N=b+1 and centering C(c) at P/N gives the exact finite identity
 
   sum_c C(c)^2 = V + P^2/N,
 
@@ -52,35 +50,15 @@ theorem sum_parityCenteredIntegerCoordinateAmplitude_eq_pairMass
       parityHalfIndexCenteredPairMass b r H := by
   classical
   unfold parityCenteredIntegerCoordinateAmplitude
-    parityZeroWindingShiftFiberCorrelation
-    parityHalfIndexCenteredPairMass
+  simp_rw [← parityHalfIndexZeroWindingFiber_eq_shiftCorrelation]
+  unfold parityHalfIndexZeroWindingFiber parityHalfIndexCenteredPairMass
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h _hh
   rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro m hm
-  have hc :
-      halfIndexZeroWindingCoordinate m h < b + 1 :=
-    halfIndexZeroWindingCoordinate_lt_endpoint hm
-  rw [Finset.sum_eq_single (halfIndexZeroWindingCoordinate m h)]
-  · simp [zeroWindingHalfIndexFromCoordinate_eq]
-  · intro c hcMem hne
-    have hneq :
-        zeroWindingHalfIndexFromCoordinate c h ≠ m := by
-      intro heq
-      apply hne
-      have hrec :=
-        zeroWindingCoordinate_reconstruct
-          (Finset.mem_filter.mp
-            (show h ∈ zeroWindingAdmissibleShiftSet b r c H by
-              simpa [zeroWindingAdmissibleShiftSet] using hcMem)).2.1
-          (Finset.mem_filter.mp
-            (show h ∈ zeroWindingAdmissibleShiftSet b r c H by
-              simpa [zeroWindingAdmissibleShiftSet] using hcMem)).2.2.1
-      simpa [halfIndexZeroWindingCoordinate, heq] using hrec.symm
-    simp [hneq]
-  · exact Finset.mem_range.mpr hc
+  simp [halfIndexZeroWindingCoordinate_lt_endpoint hm]
 
 /-- Mean integer-center amplitude over the N=b+1 possible centers. -/
 def parityCenteredIntegerCoordinateMean
@@ -109,27 +87,12 @@ theorem sum_sq_integerCoordinateAmplitude_eq_variance_add_meanSquare
         parityHalfIndexCenteredPairMass b r H ^ 2 /
           ((b + 1 : ℕ) : ℝ) := by
   classical
-  let P := parityHalfIndexCenteredPairMass b r H
-  let N : ℝ := ((b + 1 : ℕ) : ℝ)
-  have hN : N ≠ 0 := by
-    dsimp [N]
-    positivity
-  have hsum :
-      (∑ c ∈ Finset.range (b + 1),
-        parityCenteredIntegerCoordinateAmplitude b r H c) = P := by
-    simpa [P] using
-      sum_parityCenteredIntegerCoordinateAmplitude_eq_pairMass b r H
-  have hcard :
-      ((Finset.range (b + 1)).card : ℝ) = N := by
-    simp [N]
-  unfold parityCenteredIntegerCoordinateVariance
-    parityCenteredIntegerCoordinateMean
-  dsimp [P, N] at hsum hcard ⊢
-  simp_rw [sub_sq]
-  rw [Finset.sum_add_distrib, Finset.sum_sub_distrib]
-  simp_rw [Finset.sum_mul, Finset.mul_sum]
+  have hN : (((b + 1 : ℕ) : ℝ)) ≠ 0 := by positivity
+  unfold parityCenteredIntegerCoordinateVariance parityCenteredIntegerCoordinateMean
+  simp only [sub_sq, Finset.sum_add_distrib, Finset.sum_sub_distrib,
+    ← Finset.mul_sum, ← Finset.sum_mul, Finset.sum_const, nsmul_eq_mul,
+    Finset.card_range]
   rw [sum_parityCenteredIntegerCoordinateAmplitude_eq_pairMass]
-  simp [hN]
   field_simp [hN]
   ring
 
@@ -141,7 +104,6 @@ theorem parityHalfIndexZeroWindingFiberEnergy_eq_four_mul_integerCoordinateSecon
       4 * ∑ c ∈ Finset.range (b + 1),
         parityCenteredIntegerCoordinateAmplitude b r H c ^ 2 := by
   rw [parityHalfIndexZeroWindingFiberEnergy_eq_shiftCorrelation]
-  rfl
 
 /-- Zero-mode correction in reciprocal-difference minus variance form. -/
 theorem parityHalfIndexCenteredZeroModeCorrection_eq_reciprocalDifference_sub_variance
@@ -155,7 +117,8 @@ theorem parityHalfIndexCenteredZeroModeCorrection_eq_reciprocalDifference_sub_va
   rw [parityHalfIndexCenteredZeroModeEnergy_eq_pairMassSquare]
   rw [parityHalfIndexZeroWindingFiberEnergy_eq_four_mul_integerCoordinateSecondMoment]
   rw [sum_sq_integerCoordinateAmplitude_eq_variance_add_meanSquare]
-  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by positivity
+  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by
+    exact_mod_cast (Nat.mul_ne_zero (NeZero.ne d) (NeZero.ne d))
   have hN : (((b + 1 : ℕ) : ℝ)) ≠ 0 := by positivity
   field_simp [hq, hN]
   ring
@@ -170,10 +133,10 @@ theorem parityHalfIndexCenteredZeroModeCorrection_eq_meanInflation_sub_variance
             (((b + 1 : ℕ) : ℝ))) -
           parityCenteredIntegerCoordinateVariance b r H) := by
   rw [parityHalfIndexCenteredZeroModeCorrection_eq_reciprocalDifference_sub_variance]
-  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by positivity
+  have hq : (((d * d : ℕ) : ℝ)) ≠ 0 := by
+    exact_mod_cast (Nat.mul_ne_zero (NeZero.ne d) (NeZero.ne d))
   have hN : (((b + 1 : ℕ) : ℝ)) ≠ 0 := by positivity
   field_simp [hq, hN]
-  ring
 
 /-- Deterministic mean-inflation component. -/
 def parityCenteredWindingMeanInflation

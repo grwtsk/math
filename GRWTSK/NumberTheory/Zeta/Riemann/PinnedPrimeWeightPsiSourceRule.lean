@@ -15,14 +15,10 @@ noncomputable section
 The abstract signed-source layer is instantiated by the canonical arithmetic
 split
 
-  theta(v) - v = (psi(v) - v) + (theta(v) - psi(v)).
-
-At dyadic stage `j`, with `X_j = dyadicScale j`, define
+  theta(v) - v = (psi(v) - v) + (theta(v) - psi(v)).At dyadic stage `j`, with `X_j = dyadicScale j`, define
 
   response(j,v)       = X_j * psiError(v),
-  signedResidual(j,v) = theta(v) - psi(v).
-
-The response is the complete Chebyshev psi error, sourced from the full von
+  signedResidual(j,v) = theta(v) - psi(v).The response is the complete Chebyshev psi error, sourced from the full von
 Mangoldt prime-power channel.  The signed residual is exactly the correction
 that removes higher prime powers.  Pinned Mathlib proves that this correction
 is nonpositive and has magnitude `O(sqrt(v))`.
@@ -31,9 +27,7 @@ Every declared next-octave point lies below `4 * X_j`.  Consequently, for every
 `rho >= 3/4`, the complete residual, including the additive `1`, lies in the
 required stage envelope
 
-  X_j^(quadraticThreshold rho + eta/2).
-
-Thus the residual side of the signed coupling is discharged unconditionally.
+  X_j^(quadraticThreshold rho + eta/2).Thus the residual side of the signed coupling is discharged unconditionally.
 The sole remaining source-specific supplier is the nonlinear response bound
 
   X_j * |psiError(v)|
@@ -109,7 +103,7 @@ theorem thetaError_eq_psiResponse_div_add_signedResidual
           (dyadicScale j : ℝ) +
         pinnedPrimeWeightPsiSignedResidual j v := by
   have hX : (dyadicScale j : ℝ) ≠ 0 := by
-    exact_mod_cast Nat.ne_of_gt (dyadicScale_pos j)
+    exact_mod_cast Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j)
   unfold pinnedPrimeWeightPsiResponse
     pinnedPrimeWeightPsiSignedResidual thetaError psiError
   field_simp [hX]
@@ -240,10 +234,10 @@ theorem pinnedPrimeWeightPsiSourceRule_signedResidual_stageEnvelope
   let Y : ℕ := dyadicScale (j + 1)
   have hX : 0 < X := by
     dsimp [X]
-    exact dyadicScale_pos j
+    exact GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j
   have hY : 0 < Y := by
     dsimp [Y]
-    exact dyadicScale_pos (j + 1)
+    exact GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos (j + 1)
   have hYeq : Y = 2 * X := by
     dsimp [X, Y]
     exact dyadicScale_succ_eq_two_mul j
@@ -275,11 +269,12 @@ theorem pinnedPrimeWeightPsiSourceRule_signedResidual_stageEnvelope
           Real.rpow (2 * (X : ℝ)) e := by
         rw [hYeq]
         push_cast
+        rfl
       _ = Real.rpow 2 e *
           Real.rpow (X : ℝ) e := by
-        rw [Real.mul_rpow
-          (by norm_num : (0 : ℝ) ≤ 2)
-          (by exact_mod_cast hX.le)]
+        simp only [Real.rpow_eq_pow]
+        exact Real.mul_rpow (by norm_num : (0 : ℝ) ≤ 2)
+          (by exact_mod_cast hX.le)
       _ = S * Real.rpow (X : ℝ) e := by
         rfl
   have hsqrtX :

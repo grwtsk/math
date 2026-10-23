@@ -6,7 +6,7 @@
 
 **Use.** [The audit](../../../../GRWTSK/NumberTheory/Prime/Checks/ArchitectureAudit.lean) checks the full type and an actual consumer at two. [The walkthrough](../../../start/least-prime.md) derives the uniqueness statement and shows its Lean consumer.
 
-**Sources and evidence.** [Original conjunction](../../../../GRWTSK/NumberTheory/FirstPrime.lean), [uniqueness consumer](../../../../GRWTSK/NumberTheory/Prime/LeastPrime.lean), [current selected receipt](../../../../.noeaaeue/evidence/prime-architecture-checks.json), [retained citation](../../../../.noeaaeue/evidence/citation-prime.json). Standard axioms are recorded; no `sorryAx` is accepted. Earlier checker failures remain historical.
+**Sources and evidence.** [Original conjunction](../../../../GRWTSK/NumberTheory/FirstPrime.lean), [uniqueness consumer](../../../../GRWTSK/NumberTheory/Prime/LeastPrime.lean), current selected receipt (artifact:gitblob:4f3b77b45e32c93c9f9b514c776c1d2df5174a9c), retained citation (artifact:gitblob:86ad55c71a905d8dc2b950f7730a7c3a43e5c685). Standard axioms are recorded; no `sorryAx` is accepted. Earlier checker failures remain historical.
 
 **Credit.** Mathlib source authors Leonardo de Moura, Jeremy Avigad and Mario Carneiro; Mathlib community, Apache-2.0. Local composition and consumer: grwtsk contributors, with OpenAI Codex assistance, MIT. No mathematical originality or priority claim; earlier elementary historical lineage is not researched here.
 

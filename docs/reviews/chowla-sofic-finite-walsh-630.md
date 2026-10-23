@@ -994,7 +994,7 @@ leaf has now been added:
 - standalone review note
   `docs/reviews/chowla-sofic-liouville-dyadic-affine-630.md`;
 - standalone passive target
-  `verification/liouville-dyadic-affine-630-v0.1.toml`.
+  `docs/verification/_unscoped/liouville-dyadic-affine-630-v0.1.toml`.
 
 The source uses the **actual pinned Mathlib Liouville function**, not an
 arbitrary Boolean label or a hypothetical analytic axiom. Its two finite
@@ -1108,7 +1108,7 @@ full-order growing-window energy remains open.
 - `docs/reviews/chowla-sofic-fixed-shift-affine-630.md`:
   exact identities, external source/version differences,
   finite checks and negative controls.
-- `verification/liouville-fixed-shift-affine-630-v0.1.toml`:
+- `docs/verification/_unscoped/liouville-fixed-shift-affine-630-v0.1.toml`:
   an isolated two-module arithmetic target, listing
   32 theorem and 10 definition heads, including the
   14-theorem arithmetic parent.
@@ -1167,7 +1167,7 @@ conflated. Neither an external transitive axiom audit
 nor a cross-pin port was performed.
 
 **New acceptance artifact:**
-`verification/liouville-direct-fixed-form-complex-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-direct-fixed-form-complex-630-v0.1.toml`
 tracks the independent THREE-module arithmetic chain,
 with 40 proposed theorem heads and 13 definitions.
 The complete mathematical, source-provenance and
@@ -1207,7 +1207,7 @@ Mertens-second-theorem candidate at
 with `Mertens.sum_prime_div_eq_log_log`.
 A three-line exact-scope external patch proposal
 has been stored **without applying it** at
-`verification/openai-result007-prime-reciprocal-import-630-v0.1.patch`.
+`docs/verification/_unscoped/openai-result007-prime-reciprocal-import-630-v0.1.patch`.
 
 The source evidence, SHA-pinned candidate and
 qualification gates are in
@@ -1282,7 +1282,7 @@ growing-window Walsh energy interface.
 Standalone note:
 `docs/reviews/fixed-shift-uniformity-obstruction-441.md`.
 Standalone passive target:
-`verification/fixed-shift-uniformity-obstruction-441-v0.1.toml`,
+`docs/verification/_unscoped/fixed-shift-uniformity-obstruction-441-v0.1.toml`,
 8 proposed theorem heads, 2 definitions, and strict
 source-to-kernel guards.
 
@@ -1347,7 +1347,7 @@ count and one error budget common to all subsets.
 
 The new source adds **10 theorem heads and four definitions**.
 Its separate passive clean-replay target
-`verification/liouville-walsh-arithmetic-source-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-walsh-arithmetic-source-630-v0.1.toml`
 selects all TEN dependency modules (eight generic finite
 modules, one arithmetic sign parent, and the new arithmetic
 adapter): 80 theorem heads and 33 definitions, source-blob
@@ -1423,7 +1423,7 @@ The new module has eight definitions and ten theorem
 heads, including a conditional bound consuming TWO
 separately provided energy estimates. A new isolated
 11-module passive verification target
-`verification/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`
 selects all 90 theorem and 41 definition heads,
 retaining the earlier ten-module source target unchanged.
 The detailed math, sharpness, and remaining obligation
@@ -1516,7 +1516,7 @@ fixed-point contradiction, full Chowla or
 RH theorem has been inferred.
 
 **New passive acceptance target**
-`verification/liouville-odd-lift-canonical-transport-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-odd-lift-canonical-transport-630-v0.1.toml`
 includes twelve source-only modules with 101
 theorem heads and 44 definitions. Full detailed
 review:
@@ -1604,7 +1604,7 @@ follow-up arithmetic/combinatorial suppliers,
 not evidence of general Chowla cancellation.
 
 Independent passive thirteen-module target:
-`verification/liouville-dyadic-signed-pairing-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-dyadic-signed-pairing-630-v0.1.toml`
 selects 108 theorem and 46 definition heads.
 Full note:
 `docs/reviews/chowla-sofic-dyadic-signed-pairing-630.md`.

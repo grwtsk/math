@@ -37,7 +37,7 @@ def diskRadius (z : ClosedComplexUnitDisk) : unitInterval :=
   ⟨‖z.val‖, by
     constructor
     · exact norm_nonneg _
-    · exact z.property⟩
+    · simpa only [Metric.mem_closedBall, dist_zero_right] using z.property⟩
 
 /-- The origin is represented by the actual cone apex. -/
 theorem disk_origin_in_polar_range :
@@ -49,7 +49,7 @@ theorem disk_origin_in_polar_range :
 /-- A nonzero disk point is in the polar range whenever its complex
 phase is represented by an exact real angle. -/
 theorem disk_nonzero_in_polar_range_of_phase
-    (z : ClosedComplexUnitDisk) (hz : z.val ≠ 0)
+    (z : ClosedComplexUnitDisk) (_hz : z.val ≠ 0)
     (hphase : ∃ θ : ℝ,
       z.val = realAnglePolar θ (‖z.val‖)) :
     ∃ c : StandardCircleCone, standardConePolarDisk c = z := by

@@ -44,8 +44,8 @@ structure SourceBoundPackingRecurrenceProgram
   nextSource :
     Local → ℕ → ThreePointPackingState IsPrimePowerSource → ℕ
   nextSource_ok :
-    ∀ local n state,
-      IsPrimePowerSource (nextSource local n state)
+    ∀ localData n state,
+      IsPrimePowerSource (nextSource localData n state)
 
 namespace SourceBoundPackingRecurrenceProgram
 
@@ -212,7 +212,7 @@ def PackingRecurrenceQuarticClaim
     [AddCommGroup Source] [AddCommGroup Local]
     [Module ℝ Source] [Module ℝ Local]
     [TopologicalSpace Source] [TopologicalSpace Local]
-    (program : SourceBoundPackingRecurrenceProgram Source Local) : Prop :=
+    (program : SourceBoundPackingRecurrenceProgram Source Local) : Type :=
   ∀ s : ℂ, NontrivialZetaZero s →
     PackingRecurrenceComparisonAtZero program s
 

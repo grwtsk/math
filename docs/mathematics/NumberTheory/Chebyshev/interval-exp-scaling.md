@@ -167,7 +167,7 @@ observable receives no source/tail theorem by importing this evaluator.
 
 The new owners are ComplexExpScaling and IntervalMellinScaledExponential, with
 isolated root GRWTSK.Interfaces.QuadraticIntervalExpScalingCore and target
-verification/quadratic-interval-exp-scaling-v0.1.toml. Source identities and
+docs/verification/Interfaces/QuadraticIntervalExpScalingCore/quadratic-interval-exp-scaling-v0.1.toml. Source identities and
 required names are static inventory, not elaborated types or replay evidence.
 The public root and every previous target stay unchanged.
 

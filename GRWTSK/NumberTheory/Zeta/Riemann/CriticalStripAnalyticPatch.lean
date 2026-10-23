@@ -37,7 +37,7 @@ namespace SampleVariationPatch
 /-- Derive uniform variation by the complex mean-value inequality on an actual
 real-convex ambient region. Convexity of a drawing or a derivative sample is not enough. -/
 def ofDerivativeEnclosure {F : ℂ → ℂ} {U V : Set ℂ} (c a : ℂ)
-    (b δ M r : ℝ) (hδ : 0 ≤ δ) (hM : 0 ≤ M) (hr : 0 ≤ r)
+    (b δ M r : ℝ) (_hδ : 0 ≤ δ) (hM : 0 ≤ M) (hr : 0 ≤ r)
     (hconv : Convex ℝ V) (hc : c ∈ V) (hUV : U ⊆ V)
     (hF : ∀ z ∈ V, DifferentiableAt ℂ F z)
     (hderiv : ∀ z ∈ V, ‖deriv F z‖ ≤ M)
@@ -120,7 +120,7 @@ remainder on the entire target region. No four-sample or derivative-array substi
 is used. The hypotheses hF and hD make the derivative semantics explicit. -/
 def ofNativeQuadraticRemainder {F : ℂ → ℂ} {U : Set ℂ}
     (c : ℂ) (r τ : ℝ) (hr : 0 ≤ r) (hτ : 0 ≤ τ)
-    (hF : DifferentiableAt ℂ F c) (hD : DifferentiableAt ℂ (deriv F) c)
+    (_hF : DifferentiableAt ℂ F c) (_hD : DifferentiableAt ℂ (deriv F) c)
     (hradius : ∀ z ∈ U, ‖z - c‖ ≤ r)
     (hremainder : ∀ z ∈ U, ‖F z - nativeQuadraticModel F c z‖ ≤ τ)
     (hmargin : ‖deriv F c‖ * r + ‖deriv (deriv F) c / 2‖ * r ^ 2 + τ < ‖F c‖) :

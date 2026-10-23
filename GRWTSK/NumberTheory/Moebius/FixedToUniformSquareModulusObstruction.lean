@@ -73,6 +73,7 @@ theorem not_uniformNaturalDominance :
     ¬ UniformExistsBound naturalDominanceRelation := by
   rintro ⟨constant, hconstant⟩
   have hbad := hconstant (constant + 1)
+  unfold naturalDominanceRelation at hbad
   omega
 
 /-- The quantifier exchange from parameter-dependent constants to one uniform

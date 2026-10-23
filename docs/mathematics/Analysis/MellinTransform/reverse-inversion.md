@@ -56,15 +56,15 @@ fail at the intended type.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/ReverseInversion.lean),
 [positive consumers](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/ReverseInversion.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json)
+and native receipt (artifact:gitblob:4380fb4b7d89141fbe4f53deedaefdd07c20aa90)
 bind exact hypotheses and bytes. Fresh selected project objects are checked
 using pinned Lean 4.33.0, trust zero, fatal warnings and the complete
 owned-declaration/transitive-axiom census, permitting only `propext`,
 `Classical.choice` and `Quot.sound`. Pinned dependency objects are reused and
 fingerprinted, rather than rebuilt from source.
 
-The [integration evidence](../../../../.noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-integration-2026-10-15.json)
-and [bounded source review](../../../../.noeaaeue/evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json)
+The integration evidence (artifact:gitblob:64cdb4600fba2f06782f1f0db0b54318df74d4ea)
+and bounded source review (artifact:gitblob:8b20b50d13784e06d5022afb8b78b460a343c0a9)
 retain source identities, normalization, attribution and verification limits.
 The generic first two declarations adapt [OpenAI's pinned source](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/ContinuationInversion.lean).
 OpenAI's Apache-2.0 terms remain on this module. The log-profile change of

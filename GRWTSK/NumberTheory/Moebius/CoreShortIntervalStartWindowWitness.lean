@@ -50,8 +50,11 @@ theorem harmonicStartWindow_eq_image_range
   simp only [Finset.mem_image, Finset.mem_range, Finset.mem_Ico]
   constructor
   · rintro ⟨a, ha, rfl⟩
-    exact (harmonicShortIntervalStart_mem_window ha)
+    exact Finset.mem_Ico.mp (harmonicShortIntervalStart_mem_window (j := j) ha)
   · intro hx
+    have hu : harmonicStartWindowUpper j t = harmonicStartWindowLower j t + (t + 1) := by
+      unfold harmonicStartWindowUpper harmonicStartWindowLower
+      omega
     refine ⟨x - harmonicStartWindowLower j t, ?_, ?_⟩
     · omega
     · unfold harmonicShortIntervalStart
@@ -62,7 +65,8 @@ theorem harmonicStartWindow_card
     (j t : ℕ) :
     (Finset.Ico (harmonicStartWindowLower j t)
       (harmonicStartWindowUpper j t)).card = t + 1 := by
-  simp [harmonicStartWindowLower, harmonicStartWindowUpper]
+  simp only [Nat.card_Ico, harmonicStartWindowLower, harmonicStartWindowUpper]
+  omega
 
 /-- Below the left dyadic scale, the starting window ends exactly at the left
 dyadic endpoint plus one. -/
@@ -80,9 +84,7 @@ theorem harmonicStartWindowLower_eq_two_of_left_le_depth
     {j t : ℕ} (ht : 2 ^ j ≤ t + 1) :
     harmonicStartWindowLower j t = 2 := by
   unfold harmonicStartWindowLower harmonicShiftLower
-  rw [max_eq_left]
-  · norm_num
-  · omega
+  rw [max_eq_left (by omega)]
 
 /-- Scope descriptor for a theorem whose short-interval first moment is
 available only after averaging starting points over a macroscopic ambient

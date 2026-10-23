@@ -31,10 +31,9 @@ theorem abs_mertensTwoPointPrefix_le_length
       apply Finset.sum_le_sum
       intro a _ha
       rw [abs_mul]
-      exact mul_le_one
-        (abs_nonneg _)
-        (moebiusReal_abs_le_one (a + 1))
-        (moebiusReal_abs_le_one (a + 1 + h))
+      nlinarith [moebiusReal_abs_le_one (a + 1),
+        moebiusReal_abs_le_one (a + 1 + h), abs_nonneg (moebiusReal (a + 1)),
+        abs_nonneg (moebiusReal (a + 1 + h))]
     _ = N := by simp
 
 /-- Trivial bound for the first `n` active cumulative shift correlations. -/
@@ -52,10 +51,10 @@ theorem abs_cumulativeHarmonicShiftCorrelation_le_trivial
     _ ≤ ∑ _k ∈ Finset.range n, (t + 1 : ℝ) := by
       apply Finset.sum_le_sum
       intro k _hk
-      exact abs_mertensTwoPointPrefix_le_length
-        (harmonicShiftLower j t + k) (t + 1)
+      simpa only [Nat.cast_add, Nat.cast_one] using
+        abs_mertensTwoPointPrefix_le_length (harmonicShiftLower j t + k) (t + 1)
     _ = (n : ℝ) * (t + 1 : ℝ) := by
-      simp [mul_comm]
+      simp only [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
 
 /-- First reciprocal difference in the active harmonic shift coordinate. -/
 def harmonicShiftFirstDifference
@@ -100,14 +99,14 @@ theorem harmonicCumulativeInterior_eq_short_add_long
         harmonicCumulativeLongContribution j t H := by
   unfold harmonicCumulativeShortContribution
     harmonicCumulativeLongContribution
-  rw [← Finset.mul_sum, ← Finset.mul_sum, ← mul_add]
+  rw [← mul_add]
   congr 1
-  rw [← Finset.sum_filter_add_sum_filter_not
-    (s := Finset.range (harmonicShiftCount j t - 1))
-    (p := fun k => k + 1 < H)]
-  apply congrArg
-  ext k
-  simp [Nat.not_lt]
+  simpa only [Nat.not_lt] using
+    (Finset.sum_filter_add_sum_filter_not
+      (s := Finset.range (harmonicShiftCount j t - 1))
+      (p := fun k => k + 1 < H)
+      (f := fun k => cumulativeHarmonicShiftCorrelation j t (k+1) *
+        harmonicShiftSecondDifference j t k)).symm
 
 /-- The sum of all nonnegative second differences is bounded by the first
 difference at the beginning of the active range. -/
@@ -117,16 +116,23 @@ theorem sum_harmonicShiftSecondDifference_le_first
       harmonicShiftSecondDifference j t k) ≤
       harmonicShiftFirstDifference j t 0 := by
   unfold harmonicShiftSecondDifference harmonicShiftFirstDifference
-  have htel := finite_weight_drop_telescope
-    (fun k => harmonicShiftReciprocal j t k -
-      harmonicShiftReciprocal j t (k + 1)) N
+  have htel : ∀ N : ℕ,
+      (∑ k ∈ Finset.range N,
+        ((harmonicShiftReciprocal j t k - harmonicShiftReciprocal j t (k+1)) -
+          (harmonicShiftReciprocal j t (k+1) - harmonicShiftReciprocal j t (k+1+1)))) =
+      (harmonicShiftReciprocal j t 0 - harmonicShiftReciprocal j t (0+1)) -
+        (harmonicShiftReciprocal j t N - harmonicShiftReciprocal j t (N+1)) := by
+    intro M
+    induction M with
+    | zero => simp
+    | succ M ih => rw [Finset.sum_range_succ, ih]; ring
   rw [htel]
   have hnonneg :
       0 ≤ harmonicShiftReciprocal j t N -
         harmonicShiftReciprocal j t (N + 1) := by
     unfold harmonicShiftReciprocal
     apply sub_nonneg.mpr
-    apply one_div_le_one_div_of_le
+    apply inv_anti₀
     · positivity
     · exact_mod_cast Nat.le_succ
         (t + 1 + (harmonicShiftLower j t + N))

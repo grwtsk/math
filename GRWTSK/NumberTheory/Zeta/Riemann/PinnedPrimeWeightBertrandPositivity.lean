@@ -104,7 +104,7 @@ theorem pinnedPrimeWeightedAmplitude_dyadic_pos
     (j : ℕ) :
     0 < pinnedPrimeWeightedAmplitude (dyadicScale j) :=
   pinnedPrimeWeightedAmplitude_pos_of_ne_zero
-    (dyadicScale j) (Nat.ne_of_gt (dyadicScale_pos j))
+    (dyadicScale j) (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j))
 
 /-- Hence the denominator used by the required-capacity ratio is nonzero at
 every dyadic stage. -/
@@ -196,7 +196,7 @@ theorem pinnedPrimeWeightBertrandRatioCriterion_iff_capacityRatioCriterion
     intro j hj v hv
     exact
       (pinnedPrimeWeightFiniteCapacityRequirement_iff_bertrandRatioRequirement
-        (Nat.ne_of_gt (dyadicScale_pos j))).2
+        (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j))).2
         (hstages j hj v hv)
   · intro hratio η hη
     obtain ⟨C, hC, R, hR, j₀, hstages⟩ :=
@@ -205,7 +205,7 @@ theorem pinnedPrimeWeightBertrandRatioCriterion_iff_capacityRatioCriterion
     intro j hj v hv
     exact
       (pinnedPrimeWeightFiniteCapacityRequirement_iff_bertrandRatioRequirement
-        (Nat.ne_of_gt (dyadicScale_pos j))).1
+        (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j))).1
         (hstages j hj v hv)
 
 /-- The same exact equivalence for one budget fixed before `eta`. -/
@@ -223,7 +223,7 @@ theorem pinnedPrimeWeightFixedBertrandRatioCriterion_iff_capacityRatioCriterion
     intro j hj v hv
     exact
       (pinnedPrimeWeightFiniteCapacityRequirement_iff_bertrandRatioRequirement
-        (Nat.ne_of_gt (dyadicScale_pos j))).2
+        (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j))).2
         (hstages j hj v hv)
   · intro hratio
     refine ⟨hratio.1, ?_⟩
@@ -234,7 +234,7 @@ theorem pinnedPrimeWeightFixedBertrandRatioCriterion_iff_capacityRatioCriterion
     intro j hj v hv
     exact
       (pinnedPrimeWeightFiniteCapacityRequirement_iff_bertrandRatioRequirement
-        (Nat.ne_of_gt (dyadicScale_pos j))).1
+        (Nat.ne_of_gt (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j))).1
         (hstages j hj v hv)
 
 /-- Every immutable bounded coefficient rule must satisfy the simplified

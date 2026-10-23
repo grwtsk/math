@@ -50,7 +50,7 @@ def signedAbelActiveTailPairSet (j : ℕ) : Finset (ℕ × ℕ) :=
 
 /-- Endpoint-fibre coordinates `(b,n)`. -/
 def signedAbelEndpointFibrePairSet (j : ℕ) : Finset (ℕ × ℕ) :=
-  ((Finset.Ico (2 ^ j) (2 ^ (j + 1))).product
+  ((Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1))).product
       (Finset.Ico 1 (2 ^ (j + 1)))).filter
     (fun p => p.2 < p.1)
 
@@ -67,10 +67,10 @@ theorem signedAbelActivePairToEndpoint_mem
     (hp : p ∈ signedAbelActiveTailPairSet j) :
     signedAbelActivePairToEndpoint p ∈
       signedAbelEndpointFibrePairSet j := by
-  unfold signedAbelActiveTailPairSet at hp
   unfold signedAbelEndpointFibrePairSet
     signedAbelActivePairToEndpoint
-  simp only [Finset.mem_filter, Finset.mem_product,
+  simp only [signedAbelActiveTailPairSet,
+    Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
     Finset.mem_range, Finset.mem_Ico] at hp ⊢
   rcases hp with ⟨⟨htY, hh1, hhY⟩, hX, hY⟩
   constructor
@@ -82,16 +82,16 @@ theorem signedAbelEndpointToActivePair_mem
     (hp : p ∈ signedAbelEndpointFibrePairSet j) :
     signedAbelEndpointToActivePair p ∈
       signedAbelActiveTailPairSet j := by
-  unfold signedAbelEndpointFibrePairSet at hp
   unfold signedAbelActiveTailPairSet
     signedAbelEndpointToActivePair
-  simp only [Finset.mem_filter, Finset.mem_product,
+  simp only [signedAbelEndpointFibrePairSet,
+    Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
     Finset.mem_range, Finset.mem_Ico] at hp ⊢
   rcases hp with ⟨⟨⟨hbX, hbY⟩, hn1, hnY⟩, hnb⟩
   constructor
   · constructor
-    · constructor <;> omega
     · omega
+    · constructor <;> omega
   · constructor <;> omega
 
 theorem signedAbelEndpointToActivePair_leftInverse
@@ -99,12 +99,12 @@ theorem signedAbelEndpointToActivePair_leftInverse
     (hp : p ∈ signedAbelActiveTailPairSet j) :
     signedAbelEndpointToActivePair
         (signedAbelActivePairToEndpoint p) = p := by
-  unfold signedAbelActiveTailPairSet at hp
-  simp only [Finset.mem_filter, Finset.mem_product,
+  simp only [signedAbelActiveTailPairSet,
+    Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
     Finset.mem_range, Finset.mem_Ico] at hp
   rcases hp with ⟨⟨_htY, hh1, _hhY⟩, _hX, _hY⟩
   apply Prod.ext <;>
-    simp [signedAbelActivePairToEndpoint,
+    simp only [signedAbelActivePairToEndpoint,
       signedAbelEndpointToActivePair] <;> omega
 
 theorem signedAbelActivePairToEndpoint_rightInverse
@@ -112,12 +112,12 @@ theorem signedAbelActivePairToEndpoint_rightInverse
     (hp : p ∈ signedAbelEndpointFibrePairSet j) :
     signedAbelActivePairToEndpoint
         (signedAbelEndpointToActivePair p) = p := by
-  unfold signedAbelEndpointFibrePairSet at hp
-  simp only [Finset.mem_filter, Finset.mem_product,
+  simp only [signedAbelEndpointFibrePairSet,
+    Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
     Finset.mem_Ico] at hp
   rcases hp with ⟨⟨⟨_hbX, _hbY⟩, hn1, _hnY⟩, hnb⟩
   apply Prod.ext <;>
-    simp [signedAbelActivePairToEndpoint,
+    simp only [signedAbelActivePairToEndpoint,
       signedAbelEndpointToActivePair] <;> omega
 
 /-- Exact finite reindexing of arbitrary source data from active `(t,h)`
@@ -143,7 +143,10 @@ theorem sum_signedAbelActivePairs_eq_endpointFibres
   · intro p hp
     have hleft :=
       signedAbelEndpointToActivePair_leftInverse hp
-    simp only [hleft]
+    change F p.1 p.2 = F (signedAbelEndpointToActivePair
+      (signedAbelActivePairToEndpoint p)).1 (signedAbelEndpointToActivePair
+      (signedAbelActivePairToEndpoint p)).2
+    rw [hleft]
 
 /-- On one active pair, the source amplitude-square times reciprocal weight is
 the endpoint-fibre summand after the exact change of variables. -/
@@ -159,8 +162,8 @@ theorem signedAbelActivePairTerm_eq_endpointTerm
           (signedAbelActivePairToEndpoint p).2 ^ 2 *
         (((signedAbelActivePairToEndpoint p).1 : ℝ)⁻¹ -
           ((((signedAbelActivePairToEndpoint p).1 + 1 : ℕ) : ℝ))⁻¹) := by
-  unfold signedAbelActiveTailPairSet at hp
-  simp only [Finset.mem_filter, Finset.mem_product,
+  simp only [signedAbelActiveTailPairSet,
+    Finset.mem_filter, Finset.product_eq_sprod, Finset.mem_product,
     Finset.mem_range, Finset.mem_Ico] at hp
   rcases hp with ⟨⟨_htY, hh1, _hhY⟩, hX, hY⟩
   have hweight :=
@@ -187,9 +190,12 @@ theorem weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_activePairSum
   unfold weightedMertensSignedAbelActiveTailQuadraticEnergy
     signedAbelActiveReciprocalWeight
     signedAbelActiveTailPairSet
-  rw [← Finset.sum_product]
-  simp_rw [mul_ite, mul_zero]
-  rw [← Finset.sum_filter]
+  rw [Finset.sum_filter, Finset.product_eq_sprod, Finset.sum_product]
+  apply Finset.sum_congr rfl
+  intro t ht
+  apply Finset.sum_congr rfl
+  intro h hh
+  simp only [mul_ite, mul_zero, Nat.add_comm, Nat.add_left_comm]
 
 /-- Quadratic correlation fibre ending at the common endpoint `b`. -/
 def mertensTwoPointEndpointFibreQuadraticEnergy
@@ -200,7 +206,7 @@ def mertensTwoPointEndpointFibreQuadraticEnergy
 /-- Reciprocal endpoint-weighted quadratic energy on the active dyadic tail. -/
 def weightedMertensSignedAbelEndpointFibreQuadraticEnergy
     (j : ℕ) : ℝ :=
-  4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+  4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
     ((((b : ℕ) : ℝ))⁻¹ -
       ((((b + 1 : ℕ) : ℝ))⁻¹)) *
       mertensTwoPointEndpointFibreQuadraticEnergy b
@@ -224,21 +230,21 @@ theorem sum_signedAbelEndpointPairs_eq_endpointFibreEnergy
     (j : ℕ) :
     (∑ q ∈ signedAbelEndpointFibrePairSet j,
       4 * mertensTwoPointPrefix (q.1 - q.2) q.2 ^ 2 *
-        (((q.1 : ℝ)⁻¹ - ((((q.1 + 1 : ℕ) : ℝ))⁻¹))) =
+        (((q.1 : ℝ)⁻¹ - ((((q.1 + 1 : ℕ) : ℝ))⁻¹)))) =
       weightedMertensSignedAbelEndpointFibreQuadraticEnergy j := by
   classical
   unfold signedAbelEndpointFibrePairSet
     weightedMertensSignedAbelEndpointFibreQuadraticEnergy
     mertensTwoPointEndpointFibreQuadraticEnergy
-  rw [Finset.sum_filter, Finset.sum_product]
+  rw [Finset.sum_filter, Finset.product_eq_sprod, Finset.sum_product]
   calc
-    (∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+    (∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
       ∑ n ∈ Finset.Ico 1 (2 ^ (j + 1)),
         if n < b then
           4 * mertensTwoPointPrefix (b - n) n ^ 2 *
             ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹)
         else 0) =
-      ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+      ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ∑ n ∈ Finset.Ico 1 b,
           4 * mertensTwoPointPrefix (b - n) n ^ 2 *
             ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) := by
@@ -249,11 +255,15 @@ theorem sum_signedAbelEndpointPairs_eq_endpointFibreEnergy
         (fun n =>
           4 * mertensTwoPointPrefix (b - n) n ^ 2 *
             ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹))
-    _ = 4 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+    _ = 4 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
           ∑ n ∈ Finset.Ico 1 b,
             mertensTwoPointPrefix (b - n) n ^ 2 := by
-      simp_rw [Finset.mul_sum, Finset.sum_mul]
+      simp_rw [Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro b hb
+      apply Finset.sum_congr rfl
+      intro n hn
       ring
 
 /-- Main exact endpoint-fibre identity. -/
@@ -270,7 +280,9 @@ theorem weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_endpointFibres
       ∑ q ∈ signedAbelEndpointFibrePairSet j,
         4 * mertensTwoPointPrefix (q.1 - q.2) q.2 ^ 2 *
           ((q.1 : ℝ)⁻¹ - (((q.1 + 1 : ℕ) : ℝ))⁻¹) := by
-      rw [sum_signedAbelActivePairs_eq_endpointFibres]
+      rw [sum_signedAbelActivePairs_eq_endpointFibres j
+        (fun t h => signedAbelDepthAmplitude j t h ^ 2 *
+          (((t + 1 + h : ℕ) : ℝ)⁻¹ - (((t + 1 + h + 1 : ℕ) : ℝ))⁻¹))]
       apply Finset.sum_congr rfl
       intro q hq
       have hp := signedAbelEndpointToActivePair_mem hq
@@ -279,7 +291,15 @@ theorem weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_endpointFibres
           (j := j) (p := signedAbelEndpointToActivePair q) hp
       have hright :=
         signedAbelActivePairToEndpoint_rightInverse hq
-      simpa [hright] using hterm
+      have hpBounds :
+          2 ^ j ≤ (signedAbelEndpointToActivePair q).1 + 1 +
+            (signedAbelEndpointToActivePair q).2 ∧
+          (signedAbelEndpointToActivePair q).1 + 1 +
+            (signedAbelEndpointToActivePair q).2 < 2 ^ (j + 1) :=
+        (Finset.mem_filter.mp hp).2
+      rw [signedAbelActiveReciprocalWeight_eq_reciprocalDiff hpBounds.1 hpBounds.2] at hterm
+      rw [hright] at hterm
+      simpa [signedAbelEndpointToActivePair, add_assoc, add_comm, add_left_comm] using hterm
     _ = weightedMertensSignedAbelEndpointFibreQuadraticEnergy j :=
       sum_signedAbelEndpointPairs_eq_endpointFibreEnergy j
 

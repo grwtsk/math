@@ -118,6 +118,7 @@ lemma fractionalMellin_eq_integral (s : ℂ) :
   · rw [integral_Ici_eq_integral_Ioi]
     apply setIntegral_congr_fun measurableSet_Ioi
     intro t ht
+    change (1 : ℝ) < t at ht
     simp only [fractionalKernel, realFractionalKernel, if_pos (le_of_lt ht),
       Complex.ofReal_sub, Complex.ofReal_natCast, smul_eq_mul]
     rw [show -s - 1 = -(s + 1) by ring]
@@ -134,19 +135,20 @@ lemma fractionalMellin_integrable {s : ℂ} (hs : 0 < s.re) :
     (fractionalMellin_convergent hs).mono_set (Ioi_subset_Ioi zero_le_one)
   refine hi.congr_fun ?_ measurableSet_Ioi
   intro t ht
+  change (1 : ℝ) < t at ht
   simp only [fractionalKernel, realFractionalKernel, if_pos (le_of_lt ht),
     Complex.ofReal_sub, Complex.ofReal_natCast, smul_eq_mul]
   rw [show -s - 1 = -(s + 1) by ring]
   exact mul_comm _ _
 
 lemma complex_one_sum_Icc (n : ℕ) :
-    (∑ k ∈ Finset.Icc 1 n, (1 : ℂ)) = (n : ℂ) := by simp
+    (∑ _k ∈ Finset.Icc 1 n, (1 : ℂ)) = (n : ℂ) := by simp
 
 /-- Abel summation on the domain of absolute convergence, with every integer counted. -/
 lemma zeta_eq_floor_integral {s : ℂ} (hs : 1 < s.re) :
     riemannZeta s = s * ∫ t : ℝ in Ioi 1,
       (⌊t⌋₊ : ℂ) * (t : ℂ) ^ (-(s + 1)) := by
-  have hO : (fun n : ℕ => ∑ k ∈ Finset.Icc 1 n, (1 : ℂ))
+  have hO : (fun n : ℕ => ∑ _k ∈ Finset.Icc 1 n, (1 : ℂ))
       =O[atTop] (fun n : ℕ => (n : ℝ) ^ (1 : ℝ)) := by
     refine isBigO_iff.mpr ⟨1, Eventually.of_forall ?_⟩
     intro n
@@ -177,6 +179,8 @@ lemma floor_integral_eq {s : ℂ} (hs : 1 < s.re) :
         ((t : ℂ) - (⌊t⌋₊ : ℂ)) * (t : ℂ) ^ (-(s + 1))) := by
     apply setIntegral_congr_fun measurableSet_Ioi
     intro t ht
+    change (⌊t⌋₊ : ℂ) * (t : ℂ) ^ (-(s + 1)) =
+      (t : ℂ) ^ (-s) - ((t : ℂ) - (⌊t⌋₊ : ℂ)) * (t : ℂ) ^ (-(s + 1))
     rw [sub_mul, real_mul_cpow_sub_one s (zero_lt_one.trans ht)]
     ring
   rw [hsplit, integral_sub hg hh, ← fractionalMellin_eq_integral]
@@ -195,10 +199,10 @@ lemma fractionalPoleModel_differentiableAt {s : ℂ} (hs : 0 < s.re) :
 
 lemma poleNormalized_eq_fractional_of_one_lt {s : ℂ} (hs : 1 < s.re) :
     poleNormalizedZeta s = fractionalPoleModel s := by
-  have hs1 : s ≠ 1 := by intro h; simpa only [h, Complex.one_re, lt_self_iff_false] using hs
+  have hs1 : s ≠ 1 := by intro h; simp only [h, Complex.one_re, lt_self_iff_false] at hs
   rw [poleNormalizedZeta_of_ne hs1, zeta_eq_floor_integral hs, floor_integral_eq hs]
   unfold fractionalPoleModel
-  field_simp [sub_ne_zero.mpr hs1] <;> ring
+  field_simp [sub_ne_zero.mpr hs1]
 
 /-- Source identity on the full right half-plane, proved by holomorphic uniqueness.
 This is the analytic continuation supplier, not an assumed numerical correspondence. -/
@@ -224,17 +228,22 @@ theorem poleNormalized_eq_fractional {s : ℂ} (hs : 0 < s.re) :
 lemma fractionalMellin_re_nonneg {s : ℝ} (hs : 0 < s) :
     0 ≤ (fractionalMellin (s : ℂ)).re := by
   have hi := fractionalMellin_integrable (s := (s : ℂ)) (by simpa using hs)
-  rw [fractionalMellin_eq_integral, ← integral_re hi]
-  apply setIntegral_nonneg measurableSet_Ioi
-  intro t ht
-  have ht0 : 0 ≤ t := (zero_lt_one.trans ht).le
-  have hpow : (t : ℂ) ^ (-((s : ℂ) + 1)) =
-      ((t ^ (-(s + 1)) : ℝ) : ℂ) := by
-    simpa only [Complex.ofReal_neg, Complex.ofReal_add, Complex.ofReal_one] using
-      (Complex.ofReal_cpow ht0 (-(s + 1))).symm
-  rw [hpow]
-  simpa [Complex.mul_re, Complex.sub_re, Complex.sub_im] using
-    mul_nonneg (sub_nonneg.mpr (Nat.floor_le ht0)) (Real.rpow_nonneg ht0 (-(s + 1)))
+  rw [fractionalMellin_eq_integral]
+  have hproj := Complex.reCLM.integral_comp_comm hi
+  convert! (show 0 ≤ ∫ t : ℝ in Ioi 1,
+    (((t : ℂ) - (⌊t⌋₊ : ℂ)) * (t : ℂ) ^ (-((s : ℂ) + 1))).re from ?_) using 1
+  · exact hproj.symm
+  ·
+    apply setIntegral_nonneg measurableSet_Ioi
+    intro t ht
+    have ht0 : 0 ≤ t := (zero_lt_one.trans ht).le
+    have hpow : (t : ℂ) ^ (-((s : ℂ) + 1)) =
+        ((t ^ (-(s + 1)) : ℝ) : ℂ) := by
+      simpa only [Complex.ofReal_neg, Complex.ofReal_add, Complex.ofReal_one] using
+        (Complex.ofReal_cpow ht0 (-(s + 1))).symm
+    rw [hpow]
+    simpa [Complex.mul_re, Complex.sub_re, Complex.sub_im] using
+      mul_nonneg (sub_nonneg.mpr (Nat.floor_le ht0)) (Real.rpow_nonneg ht0 (-(s + 1)))
 
 /-- A genuinely positive sourced lower bound on the real critical interval. -/
 theorem real_le_poleNormalized_re {s : ℝ} (hs : 0 < s) (hs1 : s ≤ 1) :
@@ -244,7 +253,7 @@ theorem real_le_poleNormalized_re {s : ℝ} (hs : 0 < s) (hs1 : s ≤ 1) :
     (by simpa using hs))
   simp only [fractionalPoleModel, Complex.sub_re, Complex.mul_re, Complex.ofReal_re,
     Complex.one_re, Complex.sub_im, Complex.mul_im, Complex.ofReal_im, Complex.one_im,
-    zero_mul, mul_zero, zero_add, add_zero, sub_zero, sub_self] at heq
+    zero_mul, mul_zero, add_zero, sub_zero, sub_self] at heq
   have hprod : 0 ≤ s * (1 - s) * (fractionalMellin (s : ℂ)).re :=
     mul_nonneg (mul_nonneg hs.le (sub_nonneg.mpr hs1)) hM
   nlinarith
@@ -278,13 +287,13 @@ theorem nontrivialZetaZero_im_ne_zero {z : ℂ} (hz : NontrivialZetaZero z) : z.
     · simpa using him
   have hneg := riemannZeta_re_neg_on_real_critical_interval hstrip.1 hstrip.2
   rw [← hreal, hz.1] at hneg
-  simpa using hneg
+  simp at hneg
 
 /-- The previously missing height-zero base, with no additional supplier premise. -/
 theorem windowRH_zero : WindowRH 0 := by
   intro z hz hzero
   have habs : |z.im| ≤ 0 := by
-    simpa only [heightWindow, Set.mem_setOf_eq, ZetaCommutatorRoot.heightAt_eq_im,
+    simpa only [heightWindow, Set.mem_ofPred_eq, ZetaCommutatorRoot.heightAt_eq_im,
       Nat.cast_zero] using hz
   have him : z.im = 0 := abs_eq_zero.mp (le_antisymm habs (abs_nonneg _))
   exact False.elim (nontrivialZetaZero_im_ne_zero hzero him)

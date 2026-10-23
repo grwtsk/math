@@ -4,6 +4,7 @@ Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Algebra.Order.Ring.Pow
 import Mathlib.Data.Nat.Prime.Basic
 import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum.Prime
 import Mathlib.Tactic.NormNum
 import Mathlib.Tactic.Ring
 
@@ -34,7 +35,7 @@ theorem successor_power_gap (p j : ℕ) :
       _ ≤ (p + 1) ^ (j + 2) * (p + 1) :=
         mul_le_mul_of_nonneg_right ih (Nat.zero_le _)
       _ = (p + 1) ^ (j.succ + 2) := by
-        rw [show j.succ + 2 = (j + 2) + 1 by omega, pow_succ]
+        exact (pow_succ (p + 1) (j + 2)).symm
 
 /-- The next integer base lies strictly beyond the current square interval. -/
 theorem successor_power_above_square (n p k : ℕ) (hp : 1 ≤ p) (hk : 2 ≤ k)

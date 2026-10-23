@@ -65,8 +65,8 @@ rank; rightmost numeric positions need not decrease.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixInventory.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixInventory.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json)
+native receipt (artifact:gitblob:b56342f4504dcf94d8cb0b6598ba16d6356d120c)
+and integration record (artifact:gitblob:00575432d4c81fafd0f5f3d683fd47a73640095e)
 bind the exact selected closure. Pinned Lean 4.33.0 checks fresh selected
 local objects at trust zero with fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,

@@ -26,16 +26,19 @@ theorem power_continuousOn {a b : ℝ} (ha : 0 < a) (s : ℂ) :
     ContinuousOn (fun u : ℝ => power u s) (Icc a b) := by
   intro u hu
   have hu0 : u ≠ 0 := ne_of_gt (ha.trans_le hu.1)
-  exact (Complex.continuous_exp.continuousAt.comp
-    (continuousAt_const.mul
-      (Complex.continuous_ofReal.continuousAt.comp (Real.continuousAt_log hu0))))
-      .continuousWithinAt
+  have hc : ContinuousAt (fun u : ℝ => power u s) u := by
+    unfold power
+    exact Complex.continuous_exp.continuousAt.comp
+      (continuousAt_const.mul
+        (Complex.continuous_ofReal.continuousAt.comp (Real.continuousAt_log hu0)))
+  exact hc.continuousWithinAt
 
 theorem parameter_derivative (u : ℝ) (s : ℂ) :
     HasDerivAt (fun z : ℂ => power u (-z))
       (-(Real.log u : ℂ)*power u (-s)) s := by
   have h := (((hasDerivAt_id s).neg).mul_const (Real.log u : ℂ)).cexp
-  convert h using 1 <;> simp [power] <;> ring
+  convert! h using 1
+  simp [power, mul_comm]
 
 /-- Actual derivative of the background integral at every complex parameter. -/
 theorem background_hasDerivAt {X : ℕ} (hX : 0 < X) (s₀ : ℂ) :
@@ -46,8 +49,8 @@ theorem background_hasDerivAt {X : ℕ} (hX : 0 < X) (s₀ : ℂ) :
   have hXX : (X:ℝ) ≤ 2*X := by linarith
   let L : ℝ := Real.log (2*(X:ℝ))
   let M : ℝ := ‖s₀‖+1
-  have hL : 0 ≤ L := Real.log_nonneg (by dsimp [L]; linarith)
-  have hM : 0 ≤ M := by dsimp [M]; positivity
+  have hL : 0 ≤ L := Real.log_nonneg (by linarith)
+  have hM : 0 ≤ M := by positivity
   have hc (s : ℂ) := power_continuousOn (b := (2*X:ℝ)) hXr (-s)
   have hd (s : ℂ) : ContinuousOn
       (fun u : ℝ => -(Real.log u : ℂ)*power u (-s)) (Icc (X:ℝ) (2*X:ℝ)) := by

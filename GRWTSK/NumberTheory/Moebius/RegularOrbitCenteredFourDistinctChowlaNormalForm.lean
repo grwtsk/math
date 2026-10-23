@@ -13,33 +13,43 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
-/-- Four affine offsets after choosing the leftmost first-pair argument as the
-common base. -/
+/-- Shift anchor placing the common base below both symmetric lower arguments. -/
+def centeredFourMobiusShiftAnchor (ell h g : ℕ) : ℕ :=
+  max h (g - ell)
+
+/-- Four nonnegative offsets from the common lower base. -/
 def centeredFourMobiusOffsets
     (ell h g : ℕ) : Fin 4 → ℕ
-  | ⟨0, _⟩ => 0
-  | ⟨1, _⟩ => 2 * h
-  | ⟨2, _⟩ => ell + h - g
-  | ⟨3, _⟩ => ell + h + g
+  | ⟨0, _⟩ => centeredFourMobiusShiftAnchor ell h g - h
+  | ⟨1, _⟩ => centeredFourMobiusShiftAnchor ell h g + h
+  | ⟨2, _⟩ => centeredFourMobiusShiftAnchor ell h g + ell - g
+  | ⟨3, _⟩ => centeredFourMobiusShiftAnchor ell h g + ell + g
 
-/-- Common base variable for the normalized four-shift form. -/
+/-- Common base variable below both endpoint-admissible symmetric pairs. -/
 def centeredFourMobiusBase
-    (c r h : ℕ) : ℕ :=
-  c - h + r
+    (c r ell h g : ℕ) : ℕ :=
+  c - centeredFourMobiusShiftAnchor ell h g + r
+
+/-- The old first-pair base and truncated third offset do not preserve the
+second lower argument, even for admissible positive nondegenerate shifts. -/
+theorem firstPairBase_truncatedOffset_counterexample :
+    ¬ ((5 - 1 + 0 : ℕ) + (1 + 1 - 4) = 5 + 1 - 4 + 0) := by
+  decide
 
 theorem centeredFourMobius_arguments_normalize
     {c ell r h g : ℕ}
     (hhc : h ≤ c)
     (hgc : g ≤ c + ell) :
-    centeredFourMobiusBase c r h +
+    centeredFourMobiusBase c r ell h g +
         centeredFourMobiusOffsets ell h g 0 = c - h + r ∧
-    centeredFourMobiusBase c r h +
+    centeredFourMobiusBase c r ell h g +
         centeredFourMobiusOffsets ell h g 1 = c + h + r ∧
-    centeredFourMobiusBase c r h +
+    centeredFourMobiusBase c r ell h g +
         centeredFourMobiusOffsets ell h g 2 = c + ell - g + r ∧
-    centeredFourMobiusBase c r h +
+    centeredFourMobiusBase c r ell h g +
         centeredFourMobiusOffsets ell h g 3 = c + ell + g + r := by
-  simp [centeredFourMobiusBase, centeredFourMobiusOffsets]
+  simp only [centeredFourMobiusBase, centeredFourMobiusOffsets,
+    centeredFourMobiusShiftAnchor]
   omega
 
 /-- Nondegeneracy plus positive shifts makes the four normalized offsets
@@ -53,7 +63,7 @@ theorem centeredFourMobiusOffsets_injective
     Function.Injective (centeredFourMobiusOffsets ell h g) := by
   intro i j hij
   fin_cases i <;> fin_cases j <;>
-    simp [centeredFourMobiusOffsets] at hij ⊢ <;>
+    simp [centeredFourMobiusOffsets, centeredFourMobiusShiftAnchor] at hij ⊢ <;>
     unfold centeredAffineFourMobiusDegenerate at hnd <;>
     omega
 
@@ -72,7 +82,7 @@ def centeredFourDistinctChowlaDatum
     (hg : 0 < g)
     (hnd : ¬ centeredAffineFourMobiusDegenerate ell h g) :
     FourDistinctChowlaDatum where
-  base := centeredFourMobiusBase c r h
+  base := centeredFourMobiusBase c r ell h g
   offsets := centeredFourMobiusOffsets ell h g
   offsetsInjective :=
     centeredFourMobiusOffsets_injective hell hh hg hnd

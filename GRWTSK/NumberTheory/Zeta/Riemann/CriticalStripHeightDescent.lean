@@ -87,7 +87,9 @@ theorem windowRH_iff_rhThrough (N : ℕ) :
 /-- Each window has an ambient point; no unproved zero-existence premise is used. -/
 theorem heightWindow_nonempty (N : ℕ) : (heightWindow N).Nonempty := by
   refine ⟨0, ?_⟩
-  simp [heightWindow, ZetaCommutatorRoot.heightAt_eq_im]
+  change |ZetaCommutatorRoot.root.heightAt (0 : ℂ)| ≤ (N : ℝ)
+  rw [ZetaCommutatorRoot.heightAt_eq_im]
+  simp
 
 /-- All complex source points, hence all canonical target zeros, are covered. -/
 theorem heightWindows_cover (z : ℂ) : ∃ N : ℕ, z ∈ heightWindow N := by
@@ -220,7 +222,8 @@ theorem root_height_not_injective :
   intro h
   have heq : ZetaCommutatorRoot.root.heightAt (0 : ℂ) =
       ZetaCommutatorRoot.root.heightAt (1 : ℂ) := by
-    simp [ZetaCommutatorRoot.heightAt_eq_im]
+    rw [ZetaCommutatorRoot.heightAt_eq_im, ZetaCommutatorRoot.heightAt_eq_im]
+    norm_num
   exact zero_ne_one (h heq)
 
 /-- The coordinate image consists of upper shifts whose pairwise products vanish.
@@ -239,7 +242,7 @@ theorem coordinateOperator_one_ne_zero :
   have hAt := congrArg
     (fun T : ZetaCommutatorRoot.Operator => (T ((0 : ℂ), (1 : ℂ))).1) h
   have hone : (1 : ℂ) = 0 := by
-    simpa [ZetaCommutatorRoot.coordinateOperator] using hAt
+    simp [ZetaCommutatorRoot.coordinateOperator] at hAt
   exact one_ne_zero hone
 
 /-- The chosen parameter coordinate cannot be promoted to a multiplicative map. -/

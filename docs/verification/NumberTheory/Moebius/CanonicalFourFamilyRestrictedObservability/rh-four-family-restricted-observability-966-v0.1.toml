@@ -1,0 +1,95 @@
+# Passive exact-source replay request; NOT a Lean/kernel execution or trust receipt.
+schema = "rh-four-family-restricted-observability-v0.1"
+repository = "grwtsk/math"
+issue = 966
+target_branch = "main"
+initial_audit_main = "984a04846d9cd8b1662a6448c754da5cfe084649"
+initial_audit_tree = "adb676724b8756cb2ddc2e0cfd912d35700567f6"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyRestrictedObservability.lean"
+source_blob = "c2d8db7b74a4b877e4153e392c357cd9fc31dda9"
+import = "GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyTerminalColumnObstruction.lean"
+import_blob = "45039e5cdc467f461f5702d7c735e15fc34cec07"
+note = "docs/mathematics/NumberTheory/Moebius/canonical-four-family-restricted-observability-966.md"
+note_blob = "b0027917a50d8df6b11e68c25f516d6a11371c65"
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[acceptance]
+require_actual_nonforce_main_parent = true
+require_current_main_source_blobs = true
+require_pinned_toolchain_and_mathlib = true
+require_full_transitive_import_closure = true
+require_warning_clean_elaboration = true
+require_exact_public_types_and_universes = true
+require_no_sorry_admit_axiom_or_unsafe = true
+require_axiom_census_and_fresh_kernel_replay = true
+require_independent_external_replay = true
+retain_open_RH_supplier = true
+do_not_claim_global_Weil_positivity = true
+do_not_claim_actual_arithmetic_difference_admissibility = true
+do_not_claim_quotient_by_full_kernel = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyTerminalErase_idempotent"
+classification = "exact_terminal_projection"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyGreenMatrixApply_eq_terminalErase"
+classification = "actual_zero_column_row_factorization"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyWindowReadout_eq_terminalErase"
+classification = "explicit_observation_quotient"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.terminalErase_injectiveOn_of_observable_injectiveOn"
+classification = "necessary_restricted_observability_condition"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalTerminalAnchor_center_has_authentic_support"
+classification = "actual_centered_shift_membership"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalFourFamilyTerminalDelta_supportAdmissible"
+classification = "support_legal_nonzero_kernel_witness"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_hasCanonicalFourFamilySupportOnlyLowerFrame"
+classification = "principal_support_only_coercivity_no_go"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalSingleArithmeticDifferenceSet_eq_zero"
+classification = "singleton_arithmetic_difference_vacuity"
+
+[hostile_controls]
+cases = [
+  "source center X+1 has all four columns zero, not the entire matrix kernel",
+  "terminal erasure is a factorization, not a complete kernel quotient",
+  "X>=2 required for the actual positive-shift terminal anchor",
+  "exact authentic shift support, parity r, center c, endpoint 2X are required",
+  "support-only admissibility includes terminal delta and does not imply a lower frame",
+  "terminal delta not proven to be a difference of realizable arithmetic configurations",
+  "single fixed canonical data vector yields singleton zero difference set",
+  "nonvacuous same-scale arithmetic configuration set remains undefined",
+  "other-shift and zero-shift Green corrections retain their signed structure",
+  "finite-dimensional singular values require full-kernel identification",
+  "PDE observability, Nyman-Beurling angle, Weil positivity, Chowla are analogies only",
+  "no all-scale Fourier-head bound or RH result follows"
+]
+
+[finite_diagnostic]
+X_min = 2
+X_max = 64
+actual_target_rows = 2079
+terminal_center_divisor_occurrences = 63
+mismatches = 0
+is_mathematical_proof = false

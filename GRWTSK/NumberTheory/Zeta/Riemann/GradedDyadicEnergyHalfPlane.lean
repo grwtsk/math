@@ -53,8 +53,7 @@ open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
 open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
 open GRWTSK.NumberTheory.VonMangoldt.MellinBlockHolomorphy
 open GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications
-open GRWTSK.NumberTheory.Zeta.DyadicGreenReturn
-open GRWTSK.NumberTheory.Zeta.DyadicEulerIdentification
+open GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification
 open GRWTSK.NumberTheory.Zeta.PoleRemovedSource
 open GRWTSK.Analysis.Complex.AnalyticLinearODE
 open GRWTSK.Analysis.MellinTransform.DyadicBounds
@@ -100,16 +99,12 @@ theorem allDyadicEnergyAtThreshold_half_iff :
     obtain ⟨C, hC, j₀, hbound⟩ := h η hη
     refine ⟨C, hC, j₀, ?_⟩
     intro j hj
-    have hexp :
-        -2 * (1 - (1 / 2 : ℝ)) + η = -1 + η := by ring
-    simpa [AllDyadicEnergyAtThreshold, hexp] using hbound j hj
+    simpa only [show -2 * (1 - (1 / 2 : ℝ)) + η = -1 + η by ring] using hbound j hj
   · intro h η hη
     obtain ⟨C, hC, j₀, hbound⟩ := h η hη
     refine ⟨C, hC, j₀, ?_⟩
     intro j hj
-    have hexp :
-        -2 * (1 - (1 / 2 : ℝ)) + η = -1 + η := by ring
-    simpa [hexp] using hbound j hj
+    simpa only [show -2 * (1 - (1 / 2 : ℝ)) + η = -1 + η by ring] using hbound j hj
 
 theorem uniform_energy_constant_atThreshold
     {ρ : ℝ} (hE : AllDyadicEnergyAtThreshold ρ)
@@ -132,8 +127,7 @@ theorem uniform_energy_constant_atThreshold
   intro j hj
   have hx : (0 : ℝ) < dyadicScale j := by
     exact_mod_cast dyadicScale_pos j
-  simpa only [Real.rpow_def_of_pos hx, mul_comm] using
-    hbound j hj
+  simpa only [Real.rpow_eq_pow, Real.rpow_def_of_pos hx, mul_comm] using hbound j hj
 
 /-- Exact exponent after Mellin dilation and square-root energy. -/
 theorem energyThreshold_to_geometric_bound

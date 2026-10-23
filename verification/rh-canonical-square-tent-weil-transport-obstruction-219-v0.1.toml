@@ -1,0 +1,137 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-canonical-square-tent-weil-transport-obstruction-v0.1"
+repository = "grwtsk/math"
+issue = 219
+parent_pr = 1081
+parent_merged = true
+historical_parent_commit = "26772e0f80dd28e9c1b15222eccb06a5073e3e0b"
+historical_parent_tree = "f40c72b2fd207a9e5070868cc929ac76f846904b"
+base_branch = "main"
+base_commit = "0f1b93e6c358d06d8f0fe7d7ba5841268fbc1c21"
+base_tree = "c85e0b28d82a6f6cfe357dc2fb6dbd41c39ef6fa"
+branch = "research/rh-square-tent-weil-transport-obstruction-219-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentWeilTransportObstruction.lean"
+source_blob = "2c25cac04fe5575ac0242349a2dcc5592d19f0bb"
+note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-weil-transport-obstruction-219.md"
+note_blob = "49a85085de2bd786b477b079ce312fcd9a95badc"
+
+parent_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentPolarization.lean"
+historical_parent_source_blob = "f75ae60e93023fb40d2b09959dbf427f4236c5c8"
+current_main_parent_source_blob = "f33d5f402160bc141115c450f1488c103e9cf131"
+criterion_interface_source = "GRWTSK/NumberTheory/Zeta/Riemann/WeilCriterion.lean"
+criterion_interface_blob = "29d8c4f1c741ab25f6abd136a3c3c2eb900da69a"
+
+source_binding = "Riemann-zeta canonical absolutely-summed square-tent explicit formula"
+selected_target_profile = "Guinand-Weil compact-support model interface"
+target_inhabited = false
+transport_constructed = false
+unconditional_nonexistence_proved = false
+orthogonality_obstruction_proved = true
+criterion_adapter_defined = false
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+require_exact_parent_head = true
+require_exact_source_blob = true
+require_exact_note_blob = true
+require_pinned_lean_mathlib = true
+require_isolated_source_elaboration = true
+require_warning_clean_build = true
+require_parent_and_current_main_import_compatibility = true
+require_transitive_import_inventory = true
+require_exact_declaration_types = true
+require_no_sorry_admit_or_new_axiom = true
+require_kernel_checker = true
+require_axiom_closure = true
+require_generated_declaration_reconciliation = true
+require_external_replay_receipt = true
+reject_metadata_as_target_inhabitant = true
+reject_diagonal_only_transport = true
+reject_unproved_classical_cross_zero = true
+reject_negative_or_complex_normalization_scale = true
+reject_noninjective_realization = true
+reject_global_positive_cone_claim = true
+reject_weil_criterion_adapter = true
+reject_rh_claim = true
+do_not_merge = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.basisCombination"
+classification = "finite_coordinate_basis"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.sourcePolarizedForm_basis_eq_arithmeticCrossCoefficient"
+classification = "exact_source_basis_cross_coefficient"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.GuinandWeilCompactSupportModel"
+classification = "uninhabited_named_classical_target_interface"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport"
+classification = "all_pairs_positive_scale_transport_contract"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport.basis_cross_eq"
+classification = "transported_basis_coefficient_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport.distinct_basis_cross_zero"
+classification = "forced_target_basis_orthogonality"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport.image_diagonal_eq"
+classification = "positive_scale_diagonal_transport"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.ExactSourceBoundTransport.image_diagonal_nonnegative"
+classification = "positive_cone_preservation_on_image"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.NonzeroClassicalCrossWitness"
+classification = "exact_target_cross_mismatch_certificate"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.no_exactSourceBoundTransport_of_nonzeroCross"
+classification = "transport_refutation_from_nonzero_cross"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction.transport_or_nonzeroCross_obstruction"
+classification = "exact_transport_cross_obstruction"
+
+[hostile_controls]
+cases = [
+  "all-pairs cross equality is required, not diagonal equality alone",
+  "arithmetic support orthogonality is not promoted to classical orthogonality without transport",
+  "the target realization is injective",
+  "the normalization scale is a real strictly positive number",
+  "the target source and normalization are bound by typed equalities",
+  "metadata strings do not inhabit the test space, form, or theorem fields",
+  "positive-cone preservation is only on the realized finite image",
+  "a nonzero target cross term refutes transport",
+  "absence of a concrete target is not reported as unconditional nonexistence",
+  "no classical criterion direction or WeilCriterionForZeta adapter is defined",
+  "no RH or global Weil positivity claim"
+]
+
+[finite_fixture]
+dimension_parameter = 1
+left_basis = 0
+right_basis = 1
+source_cross = 0
+target_cross = "must be computed in the concrete classical model"
+mathematical_authority = false
+
+[next_obstruction]
+statement = "Construct one concrete GuinandWeilCompactSupportModel with exact source/test/transform/involution/normalization data and compute the first distinct-basis classical cross term."

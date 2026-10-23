@@ -42,14 +42,14 @@ attempt to use only the old proof for the new history.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/BatchCertificate.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/BatchCertificate.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json)
+and native receipt (artifact:gitblob:ee5491d74763e928845609fc6784dd1273d1698b)
 bind exact bytes and the complete local import closure. Replay uses pinned
 Lean 4.33.0, trust zero, fatal warnings and a complete owned-declaration and
 transitive-axiom audit. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted. Pinned dependency objects are reused and fingerprinted.
 
-The [integration record](../../../../.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-integration-2026-10-15.json)
-and [source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json)
+The integration record (artifact:gitblob:db91ea69fd0db9d738f8174c1c947b55efd42703)
+and source review (artifact:gitblob:b16fd42e5f2fad01623eaba6020eaade216b555c)
 retain contribution roles, antecedents and correspondence limits. A refinement
 to Python, JSON, cryptographic hashes, byte serialization, compression or
 filesystem transactions remains open. No complexity bound, whole-library

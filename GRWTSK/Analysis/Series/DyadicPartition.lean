@@ -42,7 +42,7 @@ theorem index_lt_edge (j : ℕ) : j < edge j := by
   induction j with
   | zero => norm_num [edge]
   | succ j ih =>
-    rw [show j.succ = j+1 from rfl, edge_succ]
+    rw [edge_succ]
     have hp := edge_pos j
     omega
 
@@ -106,8 +106,10 @@ theorem prefix_union (j : ℕ) :
     Finset.Ioc 1 (edge (j+1)) = Finset.Ioc 1 (edge j) ∪ cell j := by
   ext n
   have h1 := one_le_edge j
-  have h2 := (edge_strictMono (Nat.lt_succ_self j)).le
-  simp only [Finset.mem_Ioc, Finset.mem_union, cell]
+  have h2 : edge j ≤ edge (j+1) := (edge_strictMono (Nat.lt_succ_self j)).le
+  simp only [cell, Finset.mem_Ioc, Finset.mem_union]
+  change 1 < n ∧ n ≤ edge (j + 1) ↔
+    (1 < n ∧ n ≤ edge j) ∨ (edge j < n ∧ n ≤ edge (j + 1))
   omega
 
 theorem prefix_disjoint (j : ℕ) :
@@ -131,14 +133,19 @@ are 0 and 1, where the input is explicitly required to vanish. -/
 theorem fiber_tsum (f : ℕ → ℂ) (h0 : f 0 = 0) (h1 : f 1 = 0) (j : ℕ) :
     (∑' n : owner ⁻¹' {j}, f n) = ∑ n ∈ cell j, f n := by
   classical
-  rw [tsum_subtype]
+  rw [_root_.tsum_subtype]
   have he : (owner ⁻¹' {j}).indicator f = ((cell j : Finset ℕ) : Set ℕ).indicator f := by
     funext n
     by_cases hn : 1 < n
-    · simp only [Set.indicator_apply, Set.mem_preimage, Set.mem_singleton_iff,
-        Finset.mem_coe, mem_cell_iff_owner hn]
+    · by_cases he : owner n = j
+      · have hc := (mem_cell_iff_owner hn).mpr he
+        simp [he, hc]
+      · have hc : n ∉ cell j := fun hc => he ((mem_cell_iff_owner hn).mp hc)
+        simp [he, hc]
     · have hsmall : n = 0 ∨ n = 1 := by omega
-      rcases hsmall with rfl | rfl <;> simp [h0, h1]
+      rcases hsmall with rfl | rfl
+      · simp only [Set.indicator_apply, h0, ite_self]
+      · simp only [Set.indicator_apply, h1, ite_self]
   rw [he]
   calc
     (∑' n, ((cell j : Finset ℕ) : Set ℕ).indicator f n) =
@@ -157,7 +164,7 @@ theorem hasSum_cells {f : ℕ → ℂ} {z : ℂ} (hf : HasSum f z)
     (h0 : f 0 = 0) (h1 : f 1 = 0) :
     HasSum (fun j => ∑ n ∈ cell j, f n) z := by
   have h := hf.tsum_fiberwise owner
-  exact h.congr (fun j => fiber_tsum f h0 h1 j)
+  exact h.congr_fun (fun j => (fiber_tsum f h0 h1 j).symm)
 
 theorem summable_cells {f : ℕ → ℂ} (hf : Summable f)
     (h0 : f 0 = 0) (h1 : f 1 = 0) :

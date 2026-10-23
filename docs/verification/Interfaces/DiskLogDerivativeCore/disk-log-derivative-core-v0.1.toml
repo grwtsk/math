@@ -1,0 +1,220 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "disk-log-derivative-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.DiskLogDerivativeCore"
+build_target = "GRWTSK.Interfaces.DiskLogDerivativeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "c0f1a43fda1cc81f8d5fc7056498b7a999ca8629"
+base_tree = "fdaf099324924236ee0a08caa6d9c4ea81fbfe9d"
+stacked_on_pr = 296
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CubicZetaIdentityCore/cubic-zeta-identity-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "5a609505c67ff81b1bdff1b87aa6dfe5c1dfd233".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "9088035ac4d69916523a1ccb27c63ab84d6a0cd7".
+# Pre-quadrature-repair inherited_target_blob = "694023c85407fcf4b59929605f43a699a4dbefa2".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "fabcce4da97f000fcb5a52ba111ce2f4c7bfc94d".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "bd2decbea3eef0cb1cf584c4621ca2339d939db0"
+receipt_policy = "Bind exact new commit/tree externally; no ancestor or root-only acceptance."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+factor_normalization_and_log_derivative = "SOURCE_DRAFT"
+normalized_log_derivative_estimate = "SOURCE_DRAFT"
+actual_disk_inventory_and_count = "SOURCE_DRAFT"
+actual_zeta_normalized_log_constructor = "WRITTEN_ONLY_NOT_FORMALIZED"
+actual_zeta_central_derivative_application = "CONDITIONAL_ON_NORMALIZED_LOG_SUPPLIERS"
+left_strip_extension = "NOT_SUPPLIED"
+full_fixed_strip_height_rate = "NOT_SUPPLIED"
+height_infinite_prime_explicit_formula = "NOT_SUPPLIED"
+canonical_prime_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.DiskBlaschkeFactors"
+path = "GRWTSK/Analysis/Complex/DiskBlaschkeFactors.lean"
+source_blob = "4234d97b9fe63973acd5ef1ad0d595a71ac34783"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound"
+path = "GRWTSK/Analysis/Complex/NormalizedLogDerivativeBound.lean"
+source_blob = "d1e0a314dd965e8de2997f96363321a11b9df925"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.DiskLogDerivativeCore"
+path = "GRWTSK/Interfaces/DiskLogDerivativeCore.lean"
+source_blob = "cff4ea17d004d48ea79daae440d24803eccbb3e5"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/DiskLogDerivativeControls.lean"
+source_blob = "74a7dfff48325900b973ed01d168b6ae03a73874"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JensenDiskLogDerivative.lean"
+source_blob = "32d2f0181d1469e7ccca5aa4f4393fab1458e6c6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CubicZetaIdentityCore"
+path = "GRWTSK/Interfaces/CubicZetaIdentityCore.lean"
+source_blob = "3a5511d3e2df441640b0c7542c0cd0a90411052b"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaCircleBound"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicZetaCircleBound.lean"
+# Original pre-repair source_blob = "53dec4e2b76717d091bd8fd01775a33123e4253f".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "2f0dd39c9bc41e89538d1dbb02e7f6f53050045b"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalJensenCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalJensenCount.lean"
+# Original pre-repair source_blob = "a06a01f4f3ca5ce145faac20c87e58346b191a0a".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "c4ea53e9e9e9d91659cb6d0aaab71cba9bb2046e"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SeparatedContourHeights.lean"
+# Original pre-repair source_blob = "78010070791d193bdaa31717f8afb3bdbed6efa8".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "d5746cb67d255e2ee125cbfec6542b075993fb8c"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.JensenFiniteMultiplicity"
+path = "GRWTSK/Analysis/Complex/JensenFiniteMultiplicity.lean"
+# Original pre-repair source_blob = "3a795ba7d8719dfccc8a54ab8fb5b28c9003fda4".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "6b650bbfa1b71079ffca8241bbba64f1a409641e"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[mathematical_notes]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/disk-logarithmic-derivative.md"
+source_blob = "607d7613317392c536179347593040666df7e597"
+status = "ACTUAL_LOG_CONSTRUCTOR_WRITTEN_ONLY_NOT_FORMALIZED"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/BorelCaratheodory.lean"
+source_blob = "36f54a4482ca6051c5f4dfb614fd3845ab4c6bd1"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/Liouville.lean"
+source_blob = "6dbaa4eb65d1a6a0858121d7dea60481a1055a7d"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/LogDeriv.lean"
+source_blob = "6ae0d79a0c326276a40b0c9d708728d932391c54"
+
+[[inspected_upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/DiffContOnCl.lean"
+source_blob = "0f2d4701ff5d3abbcfb91402f9ff0551f76b7540"
+
+[declarations]
+public_names = [
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.factor",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.denominator_norm_identity",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.denominator_ne_zero",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.differentiableAt_factor",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.factor_ne_zero",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.norm_factor_on_boundary",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.factor_at_zero",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.logDeriv_factor",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.denominator_three_lower",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.norm_regular_term_le_one",
+  "GRWTSK.Analysis.Complex.DiskBlaschkeFactors.norm_logDeriv_factor_le",
+  "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound.norm_log_le_twenty",
+  "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound.small_circle_norm_le",
+  "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound.norm_deriv_log_le_eighty",
+  "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound.logDeriv_exp",
+  "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound.logDeriv_of_factorization",
+  "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound.norm_logDeriv_of_factorization",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.normalized_boundary_value",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.normalized_center_value",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.removed_point_value",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.at_zero_logDeriv_is_totalized",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.regular_term_is_not_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.double_factor_counts_twice",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.zero_free_factor_changes_derivative",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.boundary_root_not_unit",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.disk_ratio_is_not_band_ratio",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.DiskLogDerivativeControls.left_strip_outside_core",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.diskHead",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.growthLog",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.diskCountBudget",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.growthLog_pos",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.log_twelve_elevenths_pos",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.diskCountBudget_nonneg",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.mem_diskHead",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.diskMass_le",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.central_point_norm",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.selected_upper_near",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.selected_lower_near",
+  "GRWTSK.RiemannHypothesis.JensenDiskLogDerivative.norm_zeta_logDeriv_of_factorization",
+]
+private_helpers = []
+
+[controls]
+obligations = [
+  "Unit boundary modulus requires the actual Blaschke normalization and a strictly interior zero.",
+  "Retain the reflected denominator term in every logarithmic derivative, with its positive sign.",
+  "At a removed point, totalized logDeriv is not the punctured identity; keep the noncollision guard.",
+  "Natural multiplicities remain in products and sums; do not replace them by distinct-point counts.",
+  "Borel-Caratheodory uses L(0)=0, complex differentiability and an all-point real-part ceiling.",
+  "Cauchy radius one quarter and nested radii nine quarters, five halves, eleven quarters must be retained.",
+  "The actual disk inventory is not heightBand. Its count uses log(12/11), not log(6/5).",
+  "Prove complete disk membership from the canonical height head; no observed zero list is a supplier.",
+  "Global separation applies to every actual zero, including disk points outside the original band.",
+  "The actual normalized-log constructor is not implemented. Preserve the final theorem hypotheses.",
+  "Neighborhood factorization of the same translated zeta is required; point agreement is insufficient.",
+  "The derived central estimate does not cover real coordinates [-3,0); do not claim full-strip decay.",
+  "No infinite explicit formula, numerical evaluator, certified zero list or all-interval margin is supplied.",
+  "Inherit exact-type, transitive import/axiom/native, hostile replay and external acceptance obligations.",
+]

@@ -111,7 +111,6 @@ theorem safeActionCumulativeValue_factor
     safeActionCumulativeTransverseCoefficient
   simp_rw [safeQuarticDyadicActionValue_factor]
   rw [Finset.sum_add_distrib, Finset.mul_sum, Finset.mul_sum]
-  ring
 
 /-- One finite growing-cell stage, with the cell count explicit. -/
 structure MellinNormalizedGrowingCellStage (z : ZeroPoint) where
@@ -188,6 +187,9 @@ theorem quarticFactor_mul_partial_le
   have hw :
       0 ≤ ∑ j ∈ Finset.range N, data.lowerWeight j :=
     Finset.sum_nonneg (fun j hj => data.lowerWeight_nonnegative j)
+  have h1 := mul_le_mul_of_nonneg_left hA (by positivity : 0 ≤ (zeroDefect z.1)^4)
+  have h2 := mul_le_mul_of_nonneg_left hT
+    (by positivity : 0 ≤ 3 * (zeroDefect z.1)^2 * z.1.im^2)
   nlinarith [
     safeActionCumulativeAxialCoefficient_nonnegative z N,
     safeActionCumulativeTransverseCoefficient_nonnegative z N,
@@ -214,7 +216,7 @@ theorem false_of_uniform_upper_bound
       B <
         data.quarticFactor *
           (∑ j ∈ Finset.range N, data.lowerWeight j) := by
-    exact (div_lt_iff₀ hfactor).mp hN
+    simpa only [mul_comm] using (div_lt_iff₀ hfactor).mp hN
   have hlower := data.quarticFactor_mul_partial_le N
   have hU := hupper N
   linarith

@@ -102,8 +102,7 @@ theorem dirichletTwoX_tendsto_zero :
 /-- The vertical damped coefficient is nonnegative. -/
 theorem dirichletTwoY_nonnegative (n : ℕ) :
     0 ≤ dirichletTwoY n := by
-  unfold dirichletTwoY
-  positivity
+  exact div_nonneg (canonicalPrimePowerEventSequence n).mangoldtScale_pos.le (sq_nonneg _)
 
 /-- The vertical coordinate is bounded by the horizontal damped log coordinate. -/
 theorem dirichletTwoY_le_X (n : ℕ) :
@@ -180,8 +179,8 @@ theorem dirichletTwoOrientedVolume_tendsto_zero :
         (fun n => dirichletTwoY (n + 2) - dirichletTwoY (n + 1))
         atTop (𝓝 0) := by
     simpa using hy2.sub hy1
-  simpa [dirichletTwoOrientedVolume] using
-    (hdx01.mul hdy12).sub (hdy01.mul hdx12)
+  convert! (hdx01.mul hdy12).sub (hdy01.mul hdx12) using 1
+  all_goals simp only [zero_mul, sub_zero]
 
 /-- The positive Gram-volume stages of the s=2 damped packing tend to zero. -/
 theorem dirichletTwoPacking_valueAt_tendsto_zero :

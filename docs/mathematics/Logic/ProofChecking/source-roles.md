@@ -23,8 +23,8 @@ The public umbrella imports only library modules. Validation modules are run by
 their cataloged entry points, and a missing import, missing file, syntax error,
 or unavailable dependency does not count as a mathematical rejection.
 
-See the [source-layout reference](../../../../.noeaaeue/documentation/reference/source-layout.md) and the
-[current consolidation report](../../../../.noeaaeue/documentation/reference/lean-consolidation-report.md).
+See the source-layout reference (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3) and the
+current consolidation report (artifact:gitblob:a0aee0a59e806de6638a059af9df7dd22359b507).
 
 
 **Current source scope.** Source links identify the existing mathematical modules. Earlier proposed bindings and verification receipts retain their recorded paths and hashes; this pointer repair records current bytes and does not claim fresh proof replay.

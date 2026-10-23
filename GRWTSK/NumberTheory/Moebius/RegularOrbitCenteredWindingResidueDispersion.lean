@@ -95,9 +95,18 @@ theorem centeredResidueFiberSquareExpansion
               else 0 := by
   classical
   unfold parityHalfIndexCenteredResidueFiber
-  simp_rw [pow_two, Finset.sum_mul, Finset.mul_sum]
+  simp only [pow_two, Finset.sum_mul_sum]
   rw [Finset.sum_comm]
-  simp_rw [Finset.sum_comm (s := H)]
+  conv_lhs =>
+    arg 2
+    ext h
+    rw [Finset.sum_comm]
+    arg 2
+    ext g
+    rw [Finset.sum_comm]
+    arg 2
+    ext m
+    rw [Finset.sum_comm]
   apply Finset.sum_congr rfl
   intro h hh
   apply Finset.sum_congr rfl
@@ -130,14 +139,9 @@ theorem centeredResidueFiberSquareExpansion
         (hnot
           (Finset.mem_range.mpr
             (Nat.mod_lt _ hqpos))).elim
-  · have hdisj :
-        ∀ a : ℕ,
-          ¬ (halfIndexZeroWindingCoordinate m h % (d * d) = a ∧
-            halfIndexZeroWindingCoordinate n g % (d * d) = a) := by
-      intro a ha
-      apply hmod
-      exact ha.1.trans ha.2.symm
-    simp [hmod, hdisj]
+  · have hne : halfIndexZeroWindingCoordinate m h % (d * d) ≠
+        halfIndexZeroWindingCoordinate n g % (d * d) := hmod
+    simp [hmod, hne]
 
 /-- The residue square mass is exactly the full congruence surface. -/
 theorem parityHalfIndexCenteredResidueSquareMass_eq_congruence
@@ -188,7 +192,7 @@ theorem parityHalfIndexCenteredSignedQuarticCongruence_eq_zero_add_wrap
   by_cases heq :
       halfIndexZeroWindingCoordinate m h =
         halfIndexZeroWindingCoordinate n g
-  · simp [heq]
+  · simp [heq, Nat.ModEq.refl]
   · by_cases hmod :
       halfIndexZeroWindingCoordinate m h ≡
         halfIndexZeroWindingCoordinate n g [MOD d * d]

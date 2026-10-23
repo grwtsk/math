@@ -181,7 +181,7 @@ theorem openAISevenEighthsReview_not_admissionReady :
   have htool :=
     hready .toolchainAligned
       (by simp [ExternalDeclarationReview.requiredChecks])
-  simpa [ExternalDeclarationReview.Has, openAISevenEighthsReview] using htool
+  simp [ExternalDeclarationReview.Has, openAISevenEighthsReview] at htool
 
 /-- A noncoercible accepted port for an external raw half-plane theorem.
 
@@ -190,23 +190,27 @@ fields. Source metadata alone cannot inhabit this structure. -/
 structure AcceptedExternalRawHalfPlanePort (σ : ℝ) where
   review : ExternalDeclarationReview
   admissionReady : review.AdmissionReady
-  theorem : RiemannZetaZeroFreeRightHalfPlane σ
+  «theorem» : RiemannZetaZeroFreeRightHalfPlane σ
 
 namespace AcceptedExternalRawHalfPlanePort
+
+/-- Readable projection alias retaining the original theorem field name. -/
+theorem rawTheorem {σ : ℝ} (port : AcceptedExternalRawHalfPlanePort σ) :
+    RiemannZetaZeroFreeRightHalfPlane σ := port.«theorem»
 
 /-- An accepted raw theorem supplies the local nontrivial-zero regional
 statement at the same threshold. -/
 theorem toNontrivial
     {σ : ℝ} (port : AcceptedExternalRawHalfPlanePort σ) :
     NontrivialZeroFreeRightHalfPlane σ :=
-  nontrivialZeroFreeRightHalfPlane_of_riemannZeta port.theorem
+  nontrivialZeroFreeRightHalfPlane_of_riemannZeta port.rawTheorem
 
 /-- A future accepted OpenAI-style seven-eighths port would supply the exact
 local comparator proposition. -/
 theorem toOpenAISevenEighthsClaim
     (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
     OpenAISevenEighthsClaim :=
-  openAISevenEighthsClaim_iff_local.mpr port.theorem
+  openAISevenEighthsClaim_iff_local.mpr port.rawTheorem
 
 /-- A future accepted seven-eighths port also supplies the weaker
 eleven-twelfths regional theorem. -/
@@ -214,7 +218,7 @@ theorem toElevenTwelfths
     (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
     RiemannZetaZeroFreeRightHalfPlane ((11 : ℝ) / 12) :=
   riemannZetaZeroFreeRightHalfPlane_sevenEighths_to_elevenTwelfths
-    port.theorem
+    port.rawTheorem
 
 end AcceptedExternalRawHalfPlanePort
 

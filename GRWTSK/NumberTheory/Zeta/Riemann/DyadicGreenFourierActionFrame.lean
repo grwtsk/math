@@ -30,7 +30,7 @@ COMPLETE_ADMISSIBLE_FOURIER_ACTION_FRAME_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open Filter Topology MeasureTheory Set
+open Filter Topology _root_.MeasureTheory Set
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
 open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
@@ -40,17 +40,23 @@ theorem greenSourceFrameValue_integral_zero
     {X : ℕ} (hX : 0 < X) :
     (∫ t, greenSourceFrameValue X t ∂unitVolume) = 0 := by
   simp_rw [greenSourceFrameValue_eq_centeredResidual]
-  rw [integral_sub (cumulative_integrable X) (integrable_const _),
-    integral_cumulative hX]
+  have hsub := integral_sub (cumulative_integrable X) (integrable_const (center X) (μ := unitVolume))
+  rw [hsub, integral_cumulative hX]
   simp
 
 /-- Complexification preserves the exact zero mean. -/
 theorem greenResidualComplex_integral_zero
     {X : ℕ} (hX : 0 < X) :
     (∫ t, greenResidualComplex X t ∂unitVolume) = 0 := by
-  unfold greenResidualComplex
-  rw [integral_ofReal, greenSourceFrameValue_integral_zero hX]
-  simp
+  have hi : Integrable (greenSourceFrameValue X) unitVolume := by
+    convert! (cumulative_integrable X).sub (integrable_const (center X) (μ := unitVolume)) using 1
+    funext t
+    exact greenSourceFrameValue_eq_centeredResidual X t
+  have h := Complex.ofRealCLM.integral_comp_comm hi
+  calc
+    _ = ((∫ t, greenSourceFrameValue X t ∂unitVolume : ℝ) : ℂ) := by
+      convert! h using 1
+    _ = 0 := by rw [greenSourceFrameValue_integral_zero hX]; rfl
 
 /-- The zero Fourier coefficient is exactly absent because the source residual
 was centered before Fourier analysis. -/
@@ -97,7 +103,7 @@ theorem greenAdmissibleFourierModeEnergy_hasSum
     HasSum (greenAdmissibleFourierModeEnergy X)
       (greenEnergy X) := by
   exact (greenResidualFourier_parseval_hasSum X).congr_fun
-    (fun k => (greenAdmissibleFourierModeEnergy_eq_coeff hX k).symm)
+    (fun k => greenAdmissibleFourierModeEnergy_eq_coeff hX k)
 
 /-- Natural shell grouping of the complete admissible integer frame. -/
 def greenAdmissibleFourierShellEnergy
@@ -117,8 +123,7 @@ theorem greenAdmissibleFourierShellEnergy_hasSum
     {X : ℕ} (hX : 0 < X) :
     HasSum (greenAdmissibleFourierShellEnergy X)
       (greenEnergy X) := by
-  simpa [greenAdmissibleFourierShellEnergy] using
-    (greenAdmissibleFourierModeEnergy_hasSum hX).nat_add_neg_add_one
+  convert! (greenAdmissibleFourierModeEnergy_hasSum hX).nat_add_neg_add_one using 1
 
 /-- Finite growing source-action head. -/
 def greenAdmissibleFourierActionHead
@@ -179,9 +184,7 @@ theorem fullGreenAdmissibleActionStage_mono
     Monotone (fullGreenAdmissibleActionStage X) := by
   intro M N hMN
   unfold fullGreenAdmissibleActionStage
-  exact add_le_add_left
-    (greenAdmissibleFourierActionHead_mono X hMN)
-    ((mass0 X)^2 + (mass1 X)^2)
+  exact add_le_add le_rfl (greenAdmissibleFourierActionHead_mono X hMN)
 
 /-- The growing admissible action frame captures the complete augmented source
 energy exactly in the limit. -/
@@ -197,16 +200,17 @@ theorem fullGreenAdmissibleActionStage_tendsto
         (𝓝 ((mass0 X)^2 + (mass1 X)^2)) :=
     tendsto_const_nhds
   have hadd := hconst.add h
-  simpa [fullGreenAdmissibleActionStage, augmentedEnergy,
-    add_assoc, add_left_comm, add_comm] using hadd
+  convert! hadd using 1
+  unfold augmentedEnergy
+  ring
 
 theorem fullGreenAdmissibleActionStage_le_augmentedEnergy
     {X : ℕ} (hX : 0 < X)
     (N : ℕ) :
     fullGreenAdmissibleActionStage X N ≤ augmentedEnergy X := by
-  unfold fullGreenAdmissibleActionStage augmentedEnergy
-  exact add_le_add_left
-    (greenAdmissibleFourierActionHead_le_greenEnergy hX N)
-    ((mass0 X)^2 + (mass1 X)^2)
+  calc
+    _ ≤ (mass0 X)^2 + (mass1 X)^2 + greenEnergy X :=
+      add_le_add le_rfl (greenAdmissibleFourierActionHead_le_greenEnergy hX N)
+    _ = _ := by unfold augmentedEnergy; ring
 
 end GRWTSK.RiemannHypothesis

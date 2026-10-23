@@ -1,0 +1,131 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "concrete-newton-second-endpoint-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.ConcreteNewtonSecondEndpointCore"
+build_target = "GRWTSK.Interfaces.ConcreteNewtonSecondEndpointCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "864a7e5226c667a422e5768ebc3de6e96779ce62"
+base_tree = "9f82f29aacd34b103891ae801116bdd7d786ba9b"
+stacked_on_pr = 326
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/IntegerDyadicTraceCore/integer-dyadic-trace-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "92b451e9103cf2b1005e62a14d17c3de6ea5cdb4".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "398fbb3fc2878008af5fb08b99e19d8a472bc7a4".
+# Pre-quadrature-repair inherited_target_blob = "93ba85699ae9d2e8a09ea0019d6dbc8c43229aff".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "2b22cbe16ffd6298f08778f321ba34d99ff71ecb".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "79bc485e6c856e9cc2c8de97cd6f69db0ce9d3c8"
+receipt_policy = "Exact commit/tree and execution evidence are external. This static target grants no execution authority."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+base_two_logarithm_data = "EXACT_FINITE_RATIONAL_IDENTITIES_NOT_EXACT_REAL_LOG"
+base_two_seed = "ORIGINAL_22_TERM_POLYNOMIAL_AND_COMPLETE_ERROR"
+seed_rounding_windows = "THREE_CLOSED_SOURCE_PROOF_SCRIPTS_NOT_RUN"
+seed_proof_resource_cost = "UNMEASURED_MAY_REQUIRE_FURTHER_DECOMPOSITION"
+integer_transition_checks = "EIGHT_CLOSED_SOURCE_PROOF_SCRIPTS_NOT_RUN"
+base_two_endpoint_equality = "CLOSED_SOURCE_SCRIPT_NOT_KERNEL_ACCEPTED"
+first_two_prefix_checks = "EXACT_RECORD_MATCH_REQUIRED"
+first_block_remainder = "62_ENDPOINT_CHECKS_STILL_PREMISES"
+whole_source_acceptance = "UNPROVED_UNCHANGED"
+terminal_and_final_checks = "NOT_DISCHARGED"
+analytic_or_algorithmic_estimates_changed = false
+code_generation = "NOT_RUN"
+accepted_independent_replay = "NOT_RUN"
+complete_zero_count = "NOT_SUPPLIED"
+all_interval_prime_margin = "NOT_SUPPLIED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.ConcreteNewtonSecondEndpointCore"
+path = "GRWTSK/Interfaces/ConcreteNewtonSecondEndpointCore.lean"
+source_blob = "ac9f5882a506decb6474e27f100d5ac2128b0839"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.SecondEndpointControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/SecondEndpointControls.lean"
+source_blob = "742b8811e91df896e84a96b7084b662fa46a5f1f"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondEndpoint"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonSecondEndpoint.lean"
+source_blob = "89a9b139707805a01e36236c6206d0e42e197b68"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondSeed"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonSecondSeed.lean"
+source_blob = "47bae97fc231b5a6eb26e482988817f03390e1a9"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[documents]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/base-two-endpoint-certificate.md"
+source_blob = "22530f5273f54b0ded7389f0bd815fe9a3093c53"
+
+[declarations]
+lexical_inventory_only = true
+requires_generated_structure_members = true
+requires_decidability_instances = true
+requires_computational_dependency_audit = true
+
+[[declaration_inventory]]
+module = "GRWTSK.Interfaces.ConcreteNewtonSecondEndpointCore"
+names = []
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Chebyshev.Checks.SecondEndpointControls"
+names = ["nonzero_log_data", "both_argument_components_negative", "initial_error_not_base_one", "initial_error_two_rejected", "intermediate_real_mutation_rejected", "intermediate_imag_mutation_rejected", "intermediate_error_mutation_rejected", "output_error_retained", "base_one_cannot_replace_base_two", "smaller_output_error_rejected", "third_endpoint_remains"]
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondEndpoint"
+names = ["secondTrace", "secondOutput", "second_steps_valid", "second_trace_valid", "second_output_identity", "second_endpoint_compute", "second_trace_check", "second_power_enclosure", "firstTwo", "second_prefix_check", "first_two_prefix_check", "first_block_of_remainder"]
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonSecondSeed"
+names = ["lambdaTwo", "etaTwo", "second_log_data", "secondArgument", "secondRadius", "secondDisplacement", "secondSeed", "secondSeedError", "second_argument", "second_radius", "second_displacement", "second_seed", "second_seed_error", "second_admissible", "secondStart", "second_seed_real_window", "second_seed_imag_window", "second_seed_error_window", "second_seed_valid"]
+
+[acceptance]
+inherited_obligations_preserved = true
+requirements = [
+  "Reconcile exact new and inherited declaration types, generated members, instances and transitive imports at the immutable head.",
+  "No Lean/Lake/native/build/worker execution is authorized by this static file.",
+  "Derive the lambda/eta constants from the original finite lower/width expressions; never identify the rational midpoint with exact Real.log 2.",
+  "Keep base 2, the exact common negative exponent, reduction exponent 1, 18 log terms, 22 Taylor terms, eight squarings and 64 grid bits.",
+  "Validate original polynomial, radius and displacement identities before the three rational seed windows; retain the Taylor and logarithm uncertainty terms.",
+  "Elaborate the three potentially expensive seed-window scripts; repair or decompose them without weakening the exact predicate.",
+  "Preserve floor strict upper and ceiling strict lower boundaries, including negative components and upward storage error.",
+  "Check all nine integer states and all eight transitions against the inherited StepValid definition, retaining E squared and the local allowance.",
+  "Reconstruct the original full State exactly: output error is 8565/2^64, not zero or an arbitrary larger budget.",
+  "Require literal first and second record identities for any external transcript; do not infer them from a hash, approximate equality or passing target.",
+  "Keep the remaining 62 entries explicit in first_block_of_remainder; no complete first-block or SourceAcceptance theorem follows from two leaves.",
+  "Keep terminal base 4097, final six-field aggregation, inherited analytic proofs and full trust audit outstanding.",
+  "Python exact finite checks do not establish Lean elaboration, source acceptance, zero completeness or a prime margin."
+]

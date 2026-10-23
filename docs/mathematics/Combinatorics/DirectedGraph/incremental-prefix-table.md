@@ -70,8 +70,8 @@ permission authority, or unconditional inherited predicate.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/IncrementalPrefixTable.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/IncrementalPrefixTable.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json)
+native receipt (artifact:gitblob:c5a3134a1eaa3dbbf3e864f9366dfc39b6362053)
+and integration record (artifact:gitblob:24ddd3fba6d29b5081f1c41b2c008f79de82d459)
 bind the exact selected closure. Pinned Lean 4.33.0 checks fresh local
 sources at trust zero with fatal warnings and a complete owned-declaration/
 transitive-axiom census allowing only `propext`, `Classical.choice` and

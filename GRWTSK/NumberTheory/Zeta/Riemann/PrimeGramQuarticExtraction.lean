@@ -39,7 +39,7 @@ namespace FinitePrimePowerGramStage
 theorem nonnegative (stage : FinitePrimePowerGramStage) :
     0 ≤ stage.value := by
   rw [stage.value_eq]
-  exact Finset.sum_nonneg fun k _ => Finset.sum_nonneg fun _ _ => sq_nonneg _
+  exact Finset.sum_nonneg fun k _ => sq_nonneg _
 
 end FinitePrimePowerGramStage
 
@@ -67,7 +67,7 @@ def PrimeGramExtractionAtZero.toQuarticExtraction
   nonnegative := fun n => (data.stage n).nonnegative
   weight_tendsto := data.weight_tendsto
 
-def PrimeGramQuarticClaim : Prop :=
+def PrimeGramQuarticClaim : Type :=
   ∀ s : ℂ, NontrivialZetaZero s → PrimeGramExtractionAtZero s
 
 structure SourceBoundPrimeGramExtraction where
@@ -75,7 +75,7 @@ structure SourceBoundPrimeGramExtraction where
   normalization : String
   pntIndependent : PNTIndependentDependencyAudit PrimeGramQuarticClaim
 
-theorem primeQuarticClaim_of_primeGramQuarticClaim
+def primeQuarticClaim_of_primeGramQuarticClaim
     (h : PrimeGramQuarticClaim) : PrimeQuarticClaim := by
   intro s hs
   exact (h s hs).toQuarticExtraction

@@ -107,7 +107,7 @@ theorem sum_reciprocalEndpointDrop_Ico
 the reciprocal of the left endpoint. -/
 theorem sum_reciprocalEndpointDrop_dyadic_le
     (j : ℕ) :
-    (∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+    (∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
       ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹)) ≤
       (((2 ^ j : ℕ) : ℝ))⁻¹ := by
   have hXY : 2 ^ j ≤ 2 ^ (j + 1) := by
@@ -125,7 +125,7 @@ scale is required to be subpolynomial. -/
 def DyadicNaturalScaleSquareModulusCongruenceL1 : Prop :=
   ∀ δ : ℝ, 0 < δ → ∃ C : ℝ, 0 ≤ C ∧
     ∀ j b : ℕ,
-      b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)) →
+      b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)) →
       mertensEndpointCrossCongruenceL1Mass b ≤
         C * (((2 ^ j : ℕ) : ℝ)) *
           (((2 ^ j : ℕ) : ℝ) ^ δ)
@@ -145,15 +145,15 @@ theorem subpolynomialWeightedMertensEndpointCrossCongruenceL1_of_naturalScale
     dsimp [X]
     positivity
   have hdrop :
-      (∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+      (∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹)) ≤ X⁻¹ := by
     simpa [X] using sum_reciprocalEndpointDrop_dyadic_le j
   unfold weightedMertensEndpointCrossCongruenceL1Majorant
   calc
-    8 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+    8 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
           mertensEndpointCrossCongruenceL1Mass b ≤
-      8 * ∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+      8 * ∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
         ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹) *
           (C * X * (X ^ δ)) := by
       apply mul_le_mul_of_nonneg_left ?_ (by norm_num)
@@ -168,7 +168,7 @@ theorem subpolynomialWeightedMertensEndpointCrossCongruenceL1_of_naturalScale
         (reciprocalEndpointDrop_nonneg hbpos)
     _ =
       8 *
-        ((∑ b ∈ Finset.Ico (2 ^ j) (2 ^ (j + 1)),
+        ((∑ b ∈ Finset.Ico (2 ^ j : ℕ) (2 ^ (j + 1)),
           ((b : ℝ)⁻¹ - (((b + 1 : ℕ) : ℝ))⁻¹)) *
           (C * X * (X ^ δ))) := by
       rw [Finset.sum_mul]
@@ -180,7 +180,6 @@ theorem subpolynomialWeightedMertensEndpointCrossCongruenceL1_of_naturalScale
           (by positivity))
     _ = (8 * C) * (X ^ δ) := by
       field_simp
-      ring
     _ = (8 * C) * (((2 ^ j : ℕ) : ℝ) ^ δ) := by
       rfl
 
@@ -226,7 +225,8 @@ theorem naturalScaleSquareModulusCongruenceL1_of_uniformPerFibre
   have hb2X : (b : ℝ) ≤ 2 * X := by
     dsimp [X]
     rw [pow_succ] at hbI
-    exact_mod_cast (Nat.le_of_lt hbI.2)
+    exact_mod_cast (by simpa [Nat.mul_comm] using Nat.le_of_lt hbI.2 :
+      b ≤ 2 * 2 ^ j)
   calc
     mertensEndpointCrossCongruenceL1Mass b ≤ (b : ℝ) * B := hL1
     _ ≤ (2 * X) * B :=

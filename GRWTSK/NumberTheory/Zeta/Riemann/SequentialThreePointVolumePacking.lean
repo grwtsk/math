@@ -112,7 +112,7 @@ def SequentialThreePointVolumeExtractionAtZero.toQuarticExtraction
   weight_tendsto := data.weight_tendsto
 
 /-- Exact all-zero claim for one coherent sliding source sequence. -/
-def SequentialThreePointVolumeQuarticClaim : Prop :=
+def SequentialThreePointVolumeQuarticClaim : Type :=
   ∀ s : ℂ, NontrivialZetaZero s →
     SequentialThreePointVolumeExtractionAtZero s
 

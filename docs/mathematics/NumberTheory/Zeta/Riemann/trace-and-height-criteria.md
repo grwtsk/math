@@ -70,7 +70,7 @@ or one fixed separation from the line does not supply this premise.
 [zero-orbit coordinates](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrbitQuartic.lean),
 [height and rectangle criteria](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/BoundedHeightCriterion.lean),
 [consumer contracts](../../../../../GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/TraceAndHeightCriteria.lean),
-and the [selected receipt](../../../../../.noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json)
+and the selected receipt (artifact:gitblob:7f988915e1b12d45aacd2b9aabcf2d14e8e473c0)
 record native replay of this project dependency closure at trust zero with
 fatal warnings and an owned-declaration/transitive-axiom audit. The allowed
 axioms are `propext`, `Classical.choice`, and `Quot.sound`. The target's pinned
@@ -78,7 +78,7 @@ Mathlib source is separately hash-bound. Dependency objects are reused;
 no whole-library rebuild or independent review is claimed. Deliberate
 statement controls reject deleting the extraction premise and substituting
 a single finite-height enclosure for all heights.
-The [integration record](../../../../../.noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-integration-2026-10-15.json)
+The integration record (artifact:gitblob:51ed88a59cf8a29ed80b971376e413523f285ae1)
 keeps the pre-existing repository-wide layout and documentation failures separate
 from this selected native replay.
 

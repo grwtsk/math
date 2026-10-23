@@ -1,0 +1,322 @@
+# Historical original target Git blob: 59465987df5db01f73ddb1117cd9e2f1b5fb0e6e.
+# Historical original parent: 87fed9abf63d100b863701fb1669d8bda6e11c90; tree 23fd7b0031050485f5005e4b58d11f66f1c7e063.
+# Historical original mathematical note Git blob: 0aa4ff49af17803b5e6018713f012b5d7f2a75f8.
+# Parent and containing-source identities below bind repaired sources; source signatures are not kernel types.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-chowla-shift-packet-388-v0.1"
+owner_repository = "grwtsk/math"
+issue = 388
+parent_issue = 373
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 375
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
+
+[source_binding]
+stacked_parent_revision = "a91e7e8b9ab58e6b94ae5090d9025858c82b01d6"
+stacked_parent_tree = "76254d0fa629fdac7e6dfbf50aa97d8db3358802"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicChowlaShiftPacket.lean"
+new_module_git_blob = "54d657770bb2285faf4c9599763018a21e86f5a8"
+new_module_sha256 = "e31f878ff82edfd7219b694a191143b8aaabff05efcccafa89aca761ffe4aaa0"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-chowla-shift-packet.md"
+mathematical_note_git_blob = "c45b5e0a4bab1d400cc271aff461f069429b9236"
+mathematical_note_sha256 = "b306c614a5e18d22872eb01d20ae3fe5e7938aaf7db3f24af647f3cff22cacac"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+publication_status = "PUBLISHED_SOURCE_DRAFT"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicChowlaShiftPacket"
+authored_declaration_count = 24
+definition_count = 5
+theorem_script_count = 19
+private_helper_count = 3
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/DyadicTriangularKernel/rh-dyadic-triangular-kernel-373-v0.1.toml"
+git_blob = "1ac306a1d776a79194d51a9e3f29d5aca163c8fb"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicTriangularKernel.lean"
+git_blob = "d0cb8164802068241a72038a29a30fced0699c13"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[diagnostics]
+engine = "python-fractions-exact"
+check_count = 131231
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 8
+exhaustive_stream_count = 6561
+checked_dyadic_scales = [1, 2, 4]
+actual_moebius_cutoff = 512
+actual_checked_dyadic_scales = 8
+normal_mode_status = "PASS"
+optimized_mode_status = "PASS"
+normal_and_optimized_reports_identical = true
+report_sha256 = "c975d8d793993acf583f51240cc2ab4172b8e662c589dd47d9c87ed315e18534"
+current_prefix_mutation_rejected_count = 17250
+missing_factor_two_mutation_rejected_count = 11352
+unsigned_packet_mutation_rejected_count = 8712
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+previous_prefix_index_required = true
+ordered_pair_factor_two_required = true
+signed_terms_retained = true
+absolute_value_replacement_rejected = true
+all_positive_shifts_below_right_endpoint_required = true
+cross_shift_cancellation_retained = true
+fixed_shift_nonuniformity_not_sufficient = true
+half_open_dyadic_endpoint_required = true
+finite_shift_tables_not_universal = true
+lower_packet_bound_not_substitute_for_upper_bound = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+shift_packet_estimate_proved = false
+uniform_chowla_supplier_formalized = false
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight"
+visibility = "public"
+kind = "def"
+source_signature = """def dyadicMertensShiftWeight (j b : ℕ) : ℝ"""
+source_signature_sha256 = "a19711e38f0fdccde8738361b7bbc41108e67579afdea3a6cc38025248b476da"
+
+[[declarations]]
+source_name = "weightedMertensDyadicStrictPairPacket"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensDyadicStrictPairPacket (j : ℕ) : ℝ"""
+source_signature_sha256 = "b20b1668972e2a5a78f36605d4830826f8b898a797f49165f071cbf908496108"
+
+[[declarations]]
+source_name = "weightedMertensDyadicShiftContribution"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensDyadicShiftContribution (j h : ℕ) : ℝ"""
+source_signature_sha256 = "a19a5285e4d10e7e0d146cf8e97d66e5986ae4af3e6730ea43fadc431fda0a42"
+
+[[declarations]]
+source_name = "weightedMertensDyadicShiftPacket"
+visibility = "public"
+kind = "def"
+source_signature = """def weightedMertensDyadicShiftPacket (j : ℕ) : ℝ"""
+source_signature_sha256 = "2b0617b472c84d02211ba61a9b46aa60d3e16406d608c960a64d0b21e908f558"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicMertensShiftPacket"
+visibility = "public"
+kind = "def"
+source_signature = """def SubpolynomialDyadicMertensShiftPacket : Prop"""
+source_signature_sha256 = "81e7b73bf8a012b221ce49802d6fc100d34893355cde7ff28eb85b5a509a7edb"
+
+[[declarations]]
+source_name = "Icc_one_pred_eq_Ico_one"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem Icc_one_pred_eq_Ico_one {X : ℕ} (hX : 1 ≤ X) :
+    Finset.Icc 1 (X - 1) = Finset.Ico 1 X"""
+source_signature_sha256 = "403a206053d0ba84e127310b59481318129514b85369569ddd05b14222367ee2"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_eq_max"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensShiftWeight_eq_max (j b : ℕ) :
+    dyadicMertensShiftWeight j b =
+      (((max (2 ^ j) b : ℕ) : ℝ))⁻¹ -
+        (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹"""
+source_signature_sha256 = "ab86883500761660314585f6fc32fcc6a9dd3804e11c189beb3d562b0c32c1d8"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_of_lt"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensShiftWeight_of_lt {j b : ℕ}
+    (hb : b < 2 ^ j) :
+    dyadicMertensShiftWeight j b =
+      (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹"""
+source_signature_sha256 = "8c4c724c6138a080b55fc8da10c44d333d90b1efd1b1051a5910e6ac7ae583b6"
+
+[[declarations]]
+source_name = "dyadicMertensShiftWeight_of_le"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensShiftWeight_of_le {j b : ℕ}
+    (hb : 2 ^ j ≤ b) :
+    dyadicMertensShiftWeight j b =
+      (b : ℝ)⁻¹ - (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹"""
+source_signature_sha256 = "98ef8cf73579fe66d753b9cda4aa992c9836416f3583d74f56b187183a399d5a"
+
+[[declarations]]
+source_name = "mertensTriangularAtom_eq_strictPrefix"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensTriangularAtom_eq_strictPrefix {b : ℕ} (hb : 1 ≤ b) :
+    mertensTriangularAtom b =
+      moebiusReal b * ∑ a ∈ Finset.Ico 1 b, moebiusReal a"""
+source_signature_sha256 = "6bda0047dc1d08b98716064dd50f2ca18ea8157456336f663ea601a6e1e316e7"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularBoundary_eq_earlyAtomSum"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicTriangularBoundary_eq_earlyAtomSum (j : ℕ) :
+    weightedMertensDyadicTriangularBoundary j =
+      2 * ∑ b ∈ Finset.Ico 1 (2 ^ j),
+        mertensTriangularAtom b *
+          (((2 ^ (j + 1) : ℕ) : ℝ))⁻¹"""
+source_signature_sha256 = "bdae3e52a9e7c19978473eed4872fcdebf455939a22d3b42b1661443cc70787a"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularKernel_eq_atomSum"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicTriangularKernel_eq_atomSum (j : ℕ) :
+    weightedMertensDyadicTriangularKernel j =
+      2 * ∑ b ∈ Finset.Ico 1 (2 ^ (j + 1)),
+        mertensTriangularAtom b * dyadicMertensShiftWeight j b"""
+source_signature_sha256 = "3b4b94db355277c70966155863a1f1a567afdaf24c3b552db2fd9e5558830e58"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularKernel_eq_strictPairPacket"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicTriangularKernel_eq_strictPairPacket (j : ℕ) :
+    weightedMertensDyadicTriangularKernel j =
+      weightedMertensDyadicStrictPairPacket j"""
+source_signature_sha256 = "a59ad66d07eb0923e1c9f48873c903507cbc6d30bda89bdc105c7b6fa7ddb2e3"
+
+[[declarations]]
+source_name = "sum_Ico_strict_eq_sum_lag"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem sum_Ico_strict_eq_sum_lag
+    (b : ℕ) (F : ℕ → ℝ) :
+    (∑ a ∈ Finset.Ico 1 b, F a) =
+      ∑ h ∈ Finset.Ico 1 b, F (b - h)"""
+source_signature_sha256 = "82fff2046ada76e5d1fdadc18b927027b28ade47dab0d7bba508a238dc2da76c"
+
+[[declarations]]
+source_name = "sum_Ico_strict_eq_sum_if"
+visibility = "private"
+kind = "theorem"
+source_signature = """private theorem sum_Ico_strict_eq_sum_if
+    {Y b : ℕ} (hb : b < Y) (F : ℕ → ℝ) :
+    (∑ h ∈ Finset.Ico 1 b, F h) =
+      ∑ h ∈ Finset.Ico 1 Y, if h < b then F h else 0"""
+source_signature_sha256 = "f1fa777b6da501ec6d5633391acf0390425c5f0aef88d853918b6719dfda4bbb"
+
+[[declarations]]
+source_name = "weightedMertensDyadicStrictPairPacket_eq_shiftPacket"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicStrictPairPacket_eq_shiftPacket (j : ℕ) :
+    weightedMertensDyadicStrictPairPacket j =
+      weightedMertensDyadicShiftPacket j"""
+source_signature_sha256 = "516146de2fdce831b1bd66ceab8d287caf34e82921efabd7911e1e0afddca1a2"
+
+[[declarations]]
+source_name = "weightedMertensDyadicTriangularKernel_eq_shiftPacket"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem weightedMertensDyadicTriangularKernel_eq_shiftPacket (j : ℕ) :
+    weightedMertensDyadicTriangularKernel j =
+      weightedMertensDyadicShiftPacket j"""
+source_signature_sha256 = "84afdb5d4155c23b9e36e3c3a3e6764941e7b10318214655b6f9b2dd8cc9134e"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_iff_kernel"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_iff_kernel :
+    SubpolynomialDyadicMertensShiftPacket ↔
+      SubpolynomialDyadicTriangularKernel"""
+source_signature_sha256 = "9c1030def163abd6442b7dff3e45b083112297fc1d6d18f88aafff2c1afab4c7"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_iff_triangular"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_iff_triangular :
+    SubpolynomialDyadicMertensShiftPacket ↔
+      SubpolynomialDyadicTriangularMertensCorrelation"""
+source_signature_sha256 = "d0ed087174dfd796ddc98d5dd1fa39c2f5a540efe3116243f51e3b7b74d71441"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_iff_orderedPair"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_iff_orderedPair :
+    SubpolynomialDyadicMertensShiftPacket ↔
+      SubpolynomialDyadicOrderedPairMertensCorrelation"""
+source_signature_sha256 = "ccb51daefdc0ea6353016c1359b56333e683f5fcd2287338bea9a7d8019f4457"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_iff_block"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_iff_block :
+    SubpolynomialDyadicMertensShiftPacket ↔
+      SubpolynomialDyadicBlockWeightedMertensSquare"""
+source_signature_sha256 = "ed5e252041a6b73e80d1d1e14c4851b21241163153f7ebadc7888860338fac58"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_iff_cumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_iff_cumulative :
+    SubpolynomialDyadicMertensShiftPacket ↔
+      SubpolynomialCumulativeWeightedMertensSquare"""
+source_signature_sha256 = "23e6f67d06664a595a78f4a25ef51d28b5693e64b59fcf18256ddbddf7522b75"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_iff_allPositiveWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_iff_allPositiveWeightedMertensSquare :
+    SubpolynomialDyadicMertensShiftPacket ↔
+      AllPositiveWeightedMertensSquare"""
+source_signature_sha256 = "7b9d350d1545621f27948dc2207fa5e567ed6bc506b39bf9f4c2933a52a796b1"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicMertensShiftPacket"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem riemannHypothesis_of_subpolynomialDyadicMertensShiftPacket
+    (hshift : SubpolynomialDyadicMertensShiftPacket) :
+    _root_.RiemannHypothesis"""
+source_signature_sha256 = "c7b4e1c76b02a5083865fa89cce5c4e8cb8d3e20481c81003f996d127e8baaa9"

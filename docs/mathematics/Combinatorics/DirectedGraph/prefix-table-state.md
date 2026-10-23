@@ -66,8 +66,8 @@ criterion; a criterion on all appended rows needs separate evidence.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableState.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableState.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json)
+native receipt (artifact:gitblob:6b37d38866bf46351ded481c955e49d04764439e)
+and integration record (artifact:gitblob:55a43dde3ab11ca03bb9ff45a05053f2748cc016)
 bind the actual selected local import closure and controls. Fresh sources
 are checked with pinned Lean 4.33.0, trust zero, fatal warnings and a full
 owned-declaration/transitive-axiom census permitting only `propext`,

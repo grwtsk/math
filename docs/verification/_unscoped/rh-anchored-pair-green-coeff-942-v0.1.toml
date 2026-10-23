@@ -1,0 +1,81 @@
+# Passive exact-source verification target. Not an execution/replay receipt.
+schema = "rh-anchored-pair-green-coeff-v0.1"
+repository = "grwtsk/math"
+issue = 942
+base_branch = "main"
+base_commit = "a3e9e38bb9b41a225d1bf510d092546b7df62a56"
+base_tree = "6879dfdfa9cba81dbe0e6156f19871d65292eef4"
+branch = "research/rh-anchored-pair-green-coeff-942-20261022"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Moebius/AnchoredPairGreenCoefficientBridge.lean"
+source_blob = "70e382e8c8548a915f15d080fae512580f45bf3c"
+note = "docs/mathematics/NumberTheory/Moebius/anchored-pair-green-coeff-942.md"
+note_blob = "76dd595f96809540e9bc4211091f62aa2a4d891d"
+
+import_pair = "GRWTSK/NumberTheory/Moebius/AdditiveMultiplicativeBridgeObstruction.lean"
+import_pair_blob = "6530da3ccea612394f604b708e354c8ec7440e03"
+import_green = "GRWTSK/NumberTheory/Zeta/Riemann/CenteredMobiusLogGreenFourierBridge.lean"
+import_green_blob = "6b11fea2492a8552f93919bc215f0e40a53deb7e"
+
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[checks]
+exact_source_blob_required = true
+pinned_toolchain_required = true
+all_transitive_imports_required = true
+kernel_acceptance_required = true
+axiom_inspection_required = true
+reject_sorry = true
+reject_unsafe = true
+check_exact_divisor_antidiagonal_support = true
+check_existing_green_coordinate_identity = true
+check_positive_shift_boundary = true
+independent_replay_required = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredMobiusPair_right"
+classification = "exact_nat_parity_support"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredPair_signedCoefficient_eq_moebius"
+classification = "exact_arithmetic_parity_identity"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredFactor_mem_source"
+classification = "finite_support_exact"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredFiniteGreenDivisorTransform_actual"
+classification = "finite_source_to_vonMangoldt_coefficient_equality"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredDyadicGreenPrimeCoordinate_eq"
+classification = "pointwise_exact_weighted_Green_coordinate"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredGreenFourierCoordinate_eq_thin"
+classification = "exact_named_Fourier_intermediate"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.anchoredMobiusPair_one_two_zero_shift"
+classification = "hostile_positive_shift_boundary"
+
+[hostile_controls]
+cases = [
+  "source a=0 forbidden by exact divisor antidiagonal factor positivity",
+  "source indices exactly 1<=a<=2*X, target X<n<=2*X",
+  "even source anchor 2 includes correcting sign minus 1",
+  "source pair right endpoint must literally equal a",
+  "h=0 at a=1 and a=2 prevents silent strictly-positive shift claim",
+  "keep Green 1/n weight and n/X-1 location unchanged",
+  "preserve separate continuum Fourier background",
+  "do not assert restricted lower frame, norm equivalence, all-scale bound or RH",
+  "do not revive refuted forall-P coefficient-kernel interface"
+]

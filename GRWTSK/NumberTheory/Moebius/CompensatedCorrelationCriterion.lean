@@ -190,7 +190,7 @@ theorem summable_cellMass_iff_compensatedCorrelationBound
           (σ / 4) *
             (∑ k ∈ Finset.range N, sampleCellMass σ k) := by
       rw [heq]
-      field_simp [hσ.ne'] <;> ring
+      field_simp [hσ.ne']
     calc
       sampleCompensatedCorrelation σ N ≤
           sampleCompensatedCorrelation σ N +
@@ -211,6 +211,8 @@ theorem summable_cellMass_iff_compensatedCorrelationBound
         (sampleWeightedDiagonal_le_budget hσ N))
       (by positivity)
 
+-- Retain the published named parameter without changing the interface.
+set_option linter.unusedVariables false in
 /-- The complete cell-mass sum inherits an explicit fixed-rate bound from a
 compensated-correlation witness and the deterministic diagonal budget. -/
 theorem sampleCellMass_tsum_le_of_compensatedCorrelation

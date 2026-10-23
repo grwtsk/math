@@ -36,7 +36,7 @@ theorem windowZeroLocations_finite (N : ℕ) : (windowZeroLocations N).Finite :=
   change NontrivialZetaZero z ∧ z ∈ heightWindow N at hz
   have hstrip := hz.1.mem_critical_strip
   have him : |z.im| ≤ (N : ℝ) := by
-    simpa only [heightWindow, Set.mem_setOf_eq, ZetaCommutatorRoot.heightAt_eq_im]
+    simpa only [heightWindow, Set.mem_ofPred_eq, ZetaCommutatorRoot.heightAt_eq_im]
       using hz.2
   refine ⟨?_, ?_⟩
   · rw [Metric.mem_closedBall, dist_zero_right]
@@ -75,12 +75,14 @@ theorem windowRH_iff_complete_list (N : ℕ) (S : Finset ℂ)
 @[simp] theorem root_height_zeroConjugate (z : ℂ) :
     ZetaCommutatorRoot.root.heightAt (zeroConjugate z) =
       -ZetaCommutatorRoot.root.heightAt z := by
-  simp [ZetaCommutatorRoot.heightAt_eq_im, zeroConjugate]
+  rw [ZetaCommutatorRoot.heightAt_eq_im, ZetaCommutatorRoot.heightAt_eq_im]
+  simp [zeroConjugate]
 
 @[simp] theorem root_height_criticalReflection (z : ℂ) :
     ZetaCommutatorRoot.root.heightAt (criticalReflection z) =
       ZetaCommutatorRoot.root.heightAt z := by
-  simp [ZetaCommutatorRoot.heightAt_eq_im, criticalReflection]
+  rw [ZetaCommutatorRoot.heightAt_eq_im, ZetaCommutatorRoot.heightAt_eq_im]
+  simp [criticalReflection]
 
 /-- The upper half of the Nth shell; the strict lower endpoint excludes height zero. -/
 def upperHeightShell (N : ℕ) : Set ℂ :=
@@ -98,16 +100,17 @@ theorem shellRH_iff_upperHeightShell (N : ℕ) :
     apply h z _ hzero
     change (N : ℝ) < |ZetaCommutatorRoot.root.heightAt z| ∧
       |ZetaCommutatorRoot.root.heightAt z| ≤ ((N + 1 : ℕ) : ℝ)
-    simpa only [abs_of_pos hpos] using hz
+    simpa only [abs_of_pos hpos] using (show (N : ℝ) < ZetaCommutatorRoot.root.heightAt z ∧
+      ZetaCommutatorRoot.root.heightAt z ≤ ((N + 1 : ℕ) : ℝ) from hz)
   · intro h z hz hzero
     change (N : ℝ) < |ZetaCommutatorRoot.root.heightAt z| ∧
       |ZetaCommutatorRoot.root.heightAt z| ≤ ((N + 1 : ℕ) : ℝ) at hz
     by_cases hnonneg : 0 ≤ ZetaCommutatorRoot.root.heightAt z
-    · exact h z (by simpa only [upperHeightShell, Set.mem_setOf_eq,
+    · exact h z (by simpa only [upperHeightShell, Set.mem_ofPred_eq,
         abs_of_nonneg hnonneg] using hz) hzero
     · have hneg := lt_of_not_ge hnonneg
       have hupper : zeroConjugate z ∈ upperHeightShell N := by
-        simpa only [upperHeightShell, Set.mem_setOf_eq, root_height_zeroConjugate,
+        simpa only [upperHeightShell, Set.mem_ofPred_eq, root_height_zeroConjugate,
           abs_of_neg hneg] using hz
       have hline := h (zeroConjugate z) hupper hzero.conjugate
       simpa [zeroConjugate] using hline
@@ -139,7 +142,7 @@ theorem upperHeightShellRH_iff_right_exclusion (N : ℕ) :
           · exact hlt
           · exact (hline heq).elim
         have hupper : criticalReflection z ∈ upperHeightShell N := by
-          simpa only [upperHeightShell, Set.mem_setOf_eq,
+          simpa only [upperHeightShell, Set.mem_ofPred_eq,
             root_height_criticalReflection] using hz
         have hre : (criticalReflection z).re = 1 - z.re := by
           simp [criticalReflection]

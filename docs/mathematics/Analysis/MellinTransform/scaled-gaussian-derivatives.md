@@ -58,8 +58,8 @@ and physical-row suppliers retain their own obligations.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/ScaledGaussianDerivatives.lean),
-[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-integration-2026-10-15.json)
+native receipt (artifact:gitblob:f5eab426fa965cc75caab50b6d165fef944b6c8b)
+and integration record (artifact:gitblob:d72d90e97c0d7e604f4365a2b8ba2c0836078c75)
 bind the exact selected closure. Lean 4.33.0 checks fresh local sources at
 trust zero with fatal warnings and a complete owned-declaration/transitive-
 axiom census permitting only `propext`, `Classical.choice` and `Quot.sound`.

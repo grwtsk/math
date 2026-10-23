@@ -53,8 +53,8 @@ are not stable across revisions without that translation.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/RoleRelationTable.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/RoleRelationTable.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json)
+native receipt (artifact:gitblob:c7da1cb26350505a4c3a90e2b262b0cf3fa54e7d)
+and integration record (artifact:gitblob:71cc12c86ac74d82561d697b5d5a5eb97f16640a)
 bind the exact fresh selected local source closure and controls. Pinned
 Lean 4.33.0 checks trust zero, fatal warnings and the full owned-declaration
 and transitive-axiom census, allowing only `propext`, `Classical.choice` and

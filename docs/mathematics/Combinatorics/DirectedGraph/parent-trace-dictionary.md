@@ -61,8 +61,8 @@ indices alone do not establish that agreement.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/ParentTraceDictionary.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/ParentTraceDictionary.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json)
+native receipt (artifact:gitblob:72185414743f064fac5f410d797c0cfda5baadca)
+and integration record (artifact:gitblob:5d27d9ef0197d6db0f81538466148f4b3b584dd0)
 bind the exact selected closure. Lean 4.33.0 checks fresh local sources at
 trust zero with fatal warnings and a complete owned-declaration/transitive-
 axiom census permitting only `propext`, `Classical.choice` and `Quot.sound`.

@@ -76,8 +76,10 @@ theorem primeOnly_negOne_sq_le_stage
     greenPrimeOnlyFourierHead
     greenPrimeOnlyFourierShellEnergy
     greenPrimeOnlyFourierModeEnergy
-  norm_num [greenPrimeOnlyArithmeticFourierCoordinate_zero]
-  positivity
+  norm_num [Finset.sum_range_succ, greenPrimeOnlyArithmeticFourierCoordinate_zero]
+  nlinarith [sq_nonneg (primeOnlyMass0 X), sq_nonneg (primeOnlyMass1 X),
+    sq_nonneg ‖greenPrimeOnlyArithmeticFourierCoordinate X (-1)‖,
+    sq_nonneg ‖greenPrimeOnlyArithmeticFourierCoordinate X (-2)‖]
 
 /-- First positive prime-only Fourier mode is present in the second shell. -/
 theorem primeOnly_one_sq_le_stage
@@ -88,8 +90,10 @@ theorem primeOnly_one_sq_le_stage
     greenPrimeOnlyFourierHead
     greenPrimeOnlyFourierShellEnergy
     greenPrimeOnlyFourierModeEnergy
-  norm_num [greenPrimeOnlyArithmeticFourierCoordinate_zero]
-  positivity
+  norm_num [Finset.sum_range_succ, greenPrimeOnlyArithmeticFourierCoordinate_zero]
+  nlinarith [sq_nonneg (primeOnlyMass0 X), sq_nonneg (primeOnlyMass1 X),
+    sq_nonneg ‖greenPrimeOnlyArithmeticFourierCoordinate X (-1)‖,
+    sq_nonneg ‖greenPrimeOnlyArithmeticFourierCoordinate X (-2)‖]
 
 theorem primeOnlyBound_forces_harmonicMass_decay
     (hP : AllDyadicPrimeOnlyFourierCoordinateBound)
@@ -120,7 +124,7 @@ theorem primeOnlyBound_forces_thetaOctave_decay
   intro j hj
   have htheta :=
     thetaOctaveDiscrepancy_sq_le_two_stage
-      (dyadicScale_pos j) 0
+      (show 0 < dyadicScale j by unfold dyadicScale; positivity) 0
   have hstage := hbound j hj 0
   have hpow :
       0 ≤ Real.rpow (dyadicScale j : ℝ) (-1 + η) :=

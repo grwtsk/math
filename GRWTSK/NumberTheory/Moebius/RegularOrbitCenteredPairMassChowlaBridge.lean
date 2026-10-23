@@ -86,8 +86,9 @@ theorem regularCenteredWindingAffineChowlaZeroFrequencySquareMass_eq_four_mul_pa
       b d 1 (by norm_num),
     parityOddAffineChowlaZeroFrequencyAggregate_eq_two_mul_pairMass
       b d 1 (by norm_num)]
-  simp [norm_mul, Complex.norm_real, Real.norm_eq_abs, sq_abs]
-  ring
+  simp [Complex.norm_real, Real.norm_eq_abs]
+  ring_nf
+  simp only [sq_abs]
 
 /-- The same square mass written directly in the existing signed-residue
 Fourier zero modes. -/
@@ -122,8 +123,8 @@ theorem regularCenteredWindingPairMassSquareEnvelope_of_affineChowlaZeroFrequenc
     (hE : RegularCenteredWindingAffineChowlaZeroFrequencySquareEnvelope E) :
     RegularCenteredWindingPairMassSquareEnvelope E := by
   intro b
-  letI : NeZero 1 := ⟨by norm_num⟩
-  have h := hE b 1
+  let : NeZero 1 := ⟨by norm_num⟩
+  have h := hE b 1 inferInstance
   rw [regularCenteredWindingAffineChowlaZeroFrequencySquareMass_eq_four_mul_pairMassSquare] at h
   nlinarith
 

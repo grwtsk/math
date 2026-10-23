@@ -45,8 +45,8 @@ missing cancellation proof.
 
 The [source](../../../../GRWTSK/NumberTheory/Ideal/CompactNormSupport.lean),
 [positive controls](../../../../GRWTSK/NumberTheory/Ideal/Checks/Positive/CompactNormSupport.lean),
-[native receipt](../../../../.noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-integration-2026-10-15.json)
+native receipt (artifact:gitblob:5f87bda6353391391b75f1f53a1c4798806584d3)
+and integration record (artifact:gitblob:3ff649ee09650501e3512599445b186b4a8a8d2a)
 bind fresh selected local sources and actual controls, including the positive
 consumer's [compact cutoff](../../Analysis/Calculus/compact-cutoff.md).
 Pinned Lean 4.33.0 checks trust zero, fatal warnings and every owned declaration
@@ -60,7 +60,7 @@ with every hypothesis retained and the ring generalized explicitly. OpenAI
 project authorship and Apache-2.0 terms are retained. Mathlib ideal-norm
 authors Anne Baanen and Alex J. Best retain their individual credit. Human
 direction: grwtsk contributors; adaptation, formalization and checking: OpenAI
-Codex. The [source review](../../../../.noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-source-review-2026-10-15.json)
+Codex. The source review (artifact:gitblob:c1634376bf90a6758b6c77ec478c3da529ad7a7d)
 records exact bytes and bounded external scopes. Correlated model/source
 review is not independent validation.
 

@@ -101,7 +101,7 @@ theorem twoKernelPairPlusAggregate_eq_two_mul_evenShiftProjector
     have hsign : (-1 : ℂ) ^ h = -1 := by
       rw [hform, pow_add, pow_mul]
       norm_num
-    simp [heven, hodd, hsign]
+    simp [hodd, hsign]
 
 /-- The pair-difference projector is exactly twice the odd-shift projected
 aggregate.  No norm or absolute value is introduced before the projection. -/
@@ -134,7 +134,7 @@ theorem twoKernelPairMinusAggregate_eq_two_mul_oddShiftProjector
     have hsign : (-1 : ℂ) ^ h = 1 := by
       rw [hform, pow_mul]
       norm_num
-    simp [hodd, heven, hsign]
+    simp [heven, hsign]
 
 /-- Canonical normalized majorant for one complete regular orbit.
 
@@ -176,7 +176,7 @@ def twoNonunitCanonicalRegularOrbitEndpointMajorant
     (b : ℕ) : ℝ :=
   ∑ d ∈ effectiveEndpointSquareModulusSet b,
     if hd : 0 < d then
-      letI : NeZero d := ⟨ne_of_gt hd⟩
+      let : NeZero d := ⟨ne_of_gt hd⟩
       if _hNonunit : TwoNonunitSquareModulusParameter d then
         (((d * d : ℕ) : ℝ))⁻¹ *
           ∑ k ∈ twoKernelRegularOrbitRepresentativeSet d,
@@ -198,11 +198,11 @@ theorem twoNonunitRegularOrbitEndpointMajorant_eq_canonicalParityProjectors
   have hdpos :
       0 < d := (Finset.mem_Ico.mp (Finset.mem_filter.mp hd).1).1
   simp only [dif_pos hdpos]
-  letI : NeZero d := ⟨ne_of_gt hdpos⟩
+  let : NeZero d := ⟨ne_of_gt hdpos⟩
   by_cases hTwo : TwoUnitSquareModulusParameter d
   · simp [hTwo, TwoNonunitSquareModulusParameter]
   · have hNonunit : TwoNonunitSquareModulusParameter d := hTwo
-    simp only [hTwo, dif_neg, hNonunit, dif_pos]
+    simp only [hNonunit, dif_pos]
     refine congrArg
       (fun x : ℝ => (((d * d : ℕ) : ℝ))⁻¹ * x) ?_
     apply Finset.sum_congr rfl

@@ -103,7 +103,7 @@ theorem cell_drift_bound {a b m : ℝ} (ha : 0 < a) (hb : 0 < b)
         (mul_le_mul_of_nonneg_left hm (by norm_num)) hd
     _ = (2 * b * (a - b)) / a := by
       field_simp [ne_of_gt ha, ne_of_gt hb]
-      <;> ring
+
     _ ≤ (a ^ 2 - b ^ 2) / a :=
       div_le_div_of_nonneg_right (by nlinarith [sq_nonneg (a - b)]) ha.le
     _ ≤ 1 / a := div_le_div_of_nonneg_right hwidth ha.le

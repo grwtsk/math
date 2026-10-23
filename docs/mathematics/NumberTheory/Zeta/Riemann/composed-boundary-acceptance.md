@@ -12,7 +12,7 @@ estimate. No Lean/Lake execution or authority change accompanies this text.
 The integration parent is #340 at
 `793fcde91f6c8f0035b5edc049dfe341581e1042`, tree
 `c1704e6d6de8c4cf9173f7d93694ad279f59c3c9`. Its first-block target is
-`verification/concrete-newton-first-block-core-v0.1.toml`, blob
+`docs/verification/Interfaces/ConcreteNewtonFirstBlockCore/concrete-newton-first-block-core-v0.1.toml`, blob
 `1412513e3832ab60089d9733b10514452616e195`.
 
 The seven terminal-patch files are preserved byte for byte from their local

@@ -46,8 +46,8 @@ supplier is inferred.
 
 The [source](../../../../GRWTSK/NumberTheory/LSeries/GaussianDyadic.lean),
 [positive controls](../../../../GRWTSK/NumberTheory/LSeries/Checks/Positive/GaussianDyadic.lean),
-[native receipt](../../../../.noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-integration-2026-10-15.json)
+native receipt (artifact:gitblob:21402dbedcffc9740dc9dd72e4a8ea14d145272f)
+and integration record (artifact:gitblob:fdadad8b9880e552bcc27e6151bc4cb4f75d73d0)
 bind the exact selected closure, including the generic annulus module.
 Pinned Lean 4.33.0 checks fresh selected local objects at trust zero with
 fatal warnings and a complete owned-declaration/transitive-axiom census

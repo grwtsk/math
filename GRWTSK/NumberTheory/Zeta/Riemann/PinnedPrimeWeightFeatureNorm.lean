@@ -144,7 +144,6 @@ theorem primeCoefficientL1_le_two_log_four
     _ = 2 * Real.log 4 := by
       push_cast
       field_simp [hXr.ne']
-      <;> ring
 
 /-- Canonical constant used for both one-dimensional feature budgets. -/
 def primeCoefficientL1Budget : ℝ :=
@@ -187,8 +186,7 @@ theorem pinnedPrimeWeightStage_leftFeature
     (X : ℕ) (targetCoefficient residual : ℝ → ℝ)
     (hresidual : ∀ v, 0 ≤ residual v)
     (r p : ℕ) :
-    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).
-        leftFeature r p = coefficient p := by
+    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).leftFeature r p = coefficient p := by
   rfl
 
 @[simp]
@@ -196,8 +194,7 @@ theorem pinnedPrimeWeightStage_rightFeature
     (X : ℕ) (targetCoefficient residual : ℝ → ℝ)
     (hresidual : ∀ v, 0 ≤ residual v)
     (r p : ℕ) :
-    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).
-        rightFeature r p = coefficient p := by
+    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).rightFeature r p = coefficient p := by
   rfl
 
 /-- Exact rank-one factorization of the induced response. -/
@@ -206,8 +203,7 @@ theorem pinnedPrimeWeightStage_response_eq
     (targetCoefficient residual : ℝ → ℝ)
     (hresidual : ∀ v, 0 ≤ residual v)
     (v : ℝ) :
-    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).
-        toKernelStage.response v =
+    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).toKernelStage.response v =
       targetCoefficient v * (pinnedPrimeWeightedAmplitude X)^2 := by
   unfold PrimeThetaQuadraticKernelStage.response
     PrimeThetaSeparableKernelStage.toKernelStage
@@ -242,7 +238,7 @@ theorem pinnedPrimeWeightStage_response_eq
             coefficient p * (|thetaError (p : ℝ)| + 1)) *
           (∑ q ∈ thetaPrimeWindow X,
             coefficient q * (|thetaError (q : ℝ)| + 1)) := by
-          rw [Finset.mul_sum]
+          rw [← Finset.mul_sum]
     _ = targetCoefficient v *
           (∑ p ∈ thetaPrimeWindow X,
             coefficient p * (|thetaError (p : ℝ)| + 1)) ^ 2 := by
@@ -264,12 +260,12 @@ def pinnedPrimeWeightNormCertificate
   leftL1_le := by
     intro r hr
     simpa [PrimeThetaSeparableKernelStage.leftFeatureL1,
-      pinnedPrimeWeightStage, primeCoefficientL1] using
+      pinnedPrimeWeightStage, primeCoefficientL1, primeCoefficientL1Budget] using
       (primeCoefficientL1_le_two_log_four hX)
   rightL1_le := by
     intro r hr
     simpa [PrimeThetaSeparableKernelStage.rightFeatureL1,
-      pinnedPrimeWeightStage, primeCoefficientL1] using
+      pinnedPrimeWeightStage, primeCoefficientL1, primeCoefficientL1Budget] using
       (primeCoefficientL1_le_two_log_four hX)
 
 /-- The certified feature budget has one exact scalar term. -/
@@ -278,14 +274,13 @@ theorem pinnedPrimeWeightStage_certifiedFeatureBudget_eq
     (targetCoefficient residual : ℝ → ℝ)
     (hresidual : ∀ v, 0 ≤ residual v)
     (v : ℝ) :
-    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).
-        certifiedFeatureBudget
+    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).certifiedFeatureBudget
           (pinnedPrimeWeightNormCertificate hX
             targetCoefficient residual hresidual) v =
       |targetCoefficient v| * primeCoefficientL1Budget^2 := by
   simp [PrimeThetaSeparableKernelStage.certifiedFeatureBudget,
     pinnedPrimeWeightStage, pinnedPrimeWeightNormCertificate,
-    pow_two]
+    pow_two, mul_assoc]
 
 /-- A uniform target-coefficient bound gives a uniform certified feature
 budget for the concrete pinned source family. -/
@@ -294,12 +289,11 @@ theorem pinnedPrimeWeightStage_certifiedFeatureBudget_le
     (targetCoefficient residual : ℝ → ℝ)
     (hresidual : ∀ v, 0 ≤ residual v)
     {C v : ℝ} (hC : |targetCoefficient v| ≤ C) :
-    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).
-        certifiedFeatureBudget
+    (pinnedPrimeWeightStage X targetCoefficient residual hresidual).certifiedFeatureBudget
           (pinnedPrimeWeightNormCertificate hX
             targetCoefficient residual hresidual) v ≤
       C * primeCoefficientL1Budget^2 := by
-  rw [pinnedPrimeWeightStage_certifiedFeatureBudget_eq]
+  rw [pinnedPrimeWeightStage_certifiedFeatureBudget_eq hX]
   exact mul_le_mul_of_nonneg_right hC (sq_nonneg _)
 
 /-- Narrow source criterion after fixing the prime features and their uniform
@@ -354,7 +348,7 @@ theorem pinnedPrimeWeightCriterion_to_featureNormCriterion
       targetCoefficient residual hresidual
   let certificate :=
     pinnedPrimeWeightNormCertificate
-      (dyadicScale_pos j) targetCoefficient residual hresidual
+      (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) targetCoefficient residual hresidual
   refine ⟨stage, certificate, ?_, ?_, ?_⟩
   · intro v hv
     have hcv := hcoefficient v hv
@@ -364,7 +358,7 @@ theorem pinnedPrimeWeightCriterion_to_featureNormCriterion
               primeCoefficientL1Budget^2 := by
             simpa [stage, certificate] using
               (pinnedPrimeWeightStage_certifiedFeatureBudget_eq
-                (dyadicScale_pos j) targetCoefficient residual
+                (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) targetCoefficient residual
                 hresidual v)
       _ ≤ C * primeCoefficientL1Budget^2 :=
         mul_le_mul_of_nonneg_right hcv (sq_nonneg _)
@@ -381,7 +375,12 @@ theorem pinnedPrimeWeightCriterion_to_featureNormCriterion
         (pinnedPrimeWeightStage_response_eq
           (dyadicScale j) targetCoefficient residual
           hresidual v)
-    simpa [stage, hresponse] using h
+    change |thetaError v| + 1 ≤ |stage.toKernelStage.response v| /
+      (dyadicScale j : ℝ) + residual v
+    rw [hresponse, abs_mul, abs_of_nonneg
+      (sq_nonneg (pinnedPrimeWeightedAmplitude (dyadicScale j)))]
+    simpa only [abs_mul, abs_of_nonneg
+      (sq_nonneg (pinnedPrimeWeightedAmplitude (dyadicScale j)))] using h
 
 /-- The pinned source criterion supplies the existing nonlinear recurrence. -/
 theorem pinnedPrimeWeightCriterion_to_recurrence

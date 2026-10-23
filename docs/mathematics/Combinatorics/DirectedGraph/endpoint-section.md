@@ -48,8 +48,8 @@ already contains such a diamond.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/EndpointSection.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/EndpointSection.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json)
+native receipt (artifact:gitblob:c4ad977acd61fa0cfd50d0b6b29b7f6f73917843)
+and integration record (artifact:gitblob:43f7c6a031dba34e6707b02823be68d04039e765)
 bind the selected exact closure. Pinned Lean 4.33.0 checks fresh selected
 local objects at trust zero with fatal warnings and the complete
 owned-declaration/transitive-axiom census permitting only `propext`,

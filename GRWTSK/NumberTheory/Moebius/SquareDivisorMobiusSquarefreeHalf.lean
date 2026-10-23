@@ -46,7 +46,7 @@ theorem squareDivisorMobiusSum_eq_one_of_squarefree
   have hm0 : m ≠ 0 := ne_of_gt hm
   have h1 : 1 ∈ m.divisors := Nat.one_mem_divisors.mpr hm0
   rw [Finset.sum_eq_single 1]
-  · simp [moebiusReal, ArithmeticFunction.moebius_apply_one]
+  · simp [moebiusReal]
   · intro d hd hne
     by_cases hdd : d * d ∣ m
     · exfalso
