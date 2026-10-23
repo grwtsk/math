@@ -109,6 +109,66 @@ Gram must be recomputed after changing coefficients. The first
 three-tent correction gives only a **one-dimensional** coefficient
 kernel, not a dense or injective three-dimensional classical test family.
 
+### Later main repair: source-bound three-tent proof identities (2026-10-23)
+
+**Primary cited method:** Enrico Bombieri, *Problems of the Millennium:
+the Riemann Hypothesis*, Clay Mathematics Institute, **2000** (collected
+edition 2006), **§V, pp. 8–9**.
+Stable source: https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf.
+The *only* paper conditions used by the following local source
+derivations are the two moments on the **same** complex test function
+`g`: `∫₀∞g(x)dx=0`, `∫₀∞g(x)dx/x=0`. The full test class
+`W`, piecewise regularity/decay, autocorrelation, complete signed
+explicit formula, and global Weil criterion **are not imported**.
+
+**Actual repository source history:** The two original main
+introductions remain historically pinned above. Later, one routine
+non-force [repair commit
+`e5de97a20b9c7d40c215fd72240aa3289629f76a`](https://github.com/grwtsk/math/commit/e5de97a20b9c7d40c215fd72240aa3289629f76a)
+modified only the following two **proof scripts**. These repaired
+blobs also appear at the inspected later main commit
+[`b1c3aa98de2d2bff50c821f9c24e6608ffbcb2f5`](https://github.com/grwtsk/math/commit/b1c3aa98de2d2bff50c821f9c24e6608ffbcb2f5),
+tree `0c6d7194ea3745d8c316d6c5be2ec0648020f96a`.
+
+| Exact local Lean object | Original introduction and Git blob | Repair commit and current Git blob | Exact change |
+| --- | --- | --- | --- |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCorrection.correctedThreeTent_ordinaryMoment_eq`, `correctedThreeTent_multiplicativeMoment_eq`, `correctedThreeTent_zeroMoments`, `exists_nonzero_threeTent_zeroMoments` | `7c1dfad87b9f4ea3ee4fd8502b48391c485224ad`; `47508e138cbabff332793205f0918fa9764e6554` | [repaired source](https://github.com/grwtsk/math/blob/e5de97a20b9c7d40c215fd72240aa3289629f76a/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentCorrection.lean#L98), blob `644be0606ac195f35c8409f8877a707edb2aa457` | In both actual Lebesgue moment proofs, name `integral_add` equalities, simplify `Pi.add_apply`, then rewrite; keep same canonical tents and both moment conditions |
+| `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram.correctedSourceDiagonal_eq_weighted_sum`, `correctedFiniteDiagonal_error_le`, `correctedTailBudget_vanishes` and `correctedFiniteDiagonal_comparison_vanishes` | `bb384f85ee1b5fcf7dc39adc8c67f93ea67d14ce`; `f9143686688af9187799d0560a3f8f7e51a9b58a` | [repaired source](https://github.com/grwtsk/math/blob/e5de97a20b9c7d40c215fd72240aa3289629f76a/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentCorrectedArithmeticGram.lean#L100), blob `4ce2dc2dc3bcf1c651d88a315a3b0cbb9d589` | State the exact `VanishesAtInfinity (fun N => pairError N …)` goal with `change`, then call `pairError_vanishes`; same recomputed arithmetic Gram and complete signed tail source |
+
+**Actual preflight evidence:** Direct reads of both old/new Git
+blobs and source-level comparisons found the nine selected theorem
+headers **textually unchanged** (five in the moment-correction
+module; four in the corrected-Gram module). The downstream
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentKernelLine.physicalTwoMoments_iff_cofactor_line`
+[source at `8dc0f86dbabf3a9598925306b3bf1f736db28a2d`](https://github.com/grwtsk/math/blob/8dc0f86dbabf3a9598925306b3bf1f736db28a2d/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean#L208),
+blob `2b9d613a7cef0428754fdceab226907407ad5467`,
+imports the repaired dependency transitively. Its own unchanged
+blob does **not** transfer old kernel evidence across that import.
+
+**Verification state: `SOURCE_PRESENT / NOT_RUN / NO_RECEIPT`
+for this repaired import closure.** No `lake build --wfail`,
+fresh `leanchecker --fresh -v`, or transitive axiom/generated/native
+audit has been run against these repaired blobs in this review.
+Locally `lean`, `lake`, and `elan` version checks exit **127**;
+GitHub shell DNS exits **2** and git remote lookup exits **128**.
+The existing [older immutable request](https://github.com/grwtsk/noeaaeue/blob/cc2d929ec6b31eb75bdea9f996591995256529b2/verification/math/20261023-main-bb384f85-corrected-arithmetic-gram-validation.json)
+is pinned to the **old** `f914368…` blob; it cannot
+certify `4ce2dc…`. A current acceptance receipt must pin both
+repaired source blobs, the unchanged downstream file, Lean
+`v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`,
+and actual command outputs/exits.
+
+**Relationship:** `DIRECT_HYPOTHESIS_ENCODING` for Bombieri's
+two displayed moments and `REPOSITORY_DERIVED_SOURCE_DRAFT`
+for the cofactor, exact integrals, one-dimensional kernel and
+recomputed **arithmetic** Gram. The formalized moments are
+**not** a `PROVED_BRIDGE` to classical Weil positivity. Missing:
+full classical test membership, polarized all-pairs form
+normalization/sign comparison, a genuinely injective corrected
+family, density/continuity, and the RH criterion direction.
+
+
 ## Primary paper supplying the Weil-form criterion context
 
 **Citation BOMB-LINCEI-2000:** Enrico Bombieri,
