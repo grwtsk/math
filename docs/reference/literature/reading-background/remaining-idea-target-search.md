@@ -1,5 +1,7 @@
 # Further Lean search: 21 unresolved research ideas
 
+Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
 Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
 
 **5 conditional-fragment**; **4 obstruction-only**; **2 repair-candidate**; **10 unresolved**. All 21 exact asset/idea identities remain separate. **No main manuscript claim is marked resolved.**
@@ -83,6 +85,8 @@ Missing bridges:
 
 `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer` — **unresolved**. Main claim unresolved.
 
+Current blocker: **automorphic-transfer-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#498a8b7e7583e8ec-exceptional-embedding-transfer); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
 
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
@@ -116,6 +120,8 @@ Missing bridges:
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `67b33f06a609`
 
 `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer` — **unresolved**. Main claim unresolved.
+
+Current blocker: **automorphic-transfer-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#67b33f06a6094d05-exceptional-embedding-transfer); unresolved, NOT_RUN.
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
@@ -151,6 +157,8 @@ Missing bridges:
 
 `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap` — **unresolved**. Main claim unresolved.
 
+Current blocker: **inconsistent-recurrence**. [Exact construction/proof obligations](seven-idea-construction-plan.md#159cb12b34d5a425-kl-positive-to-residue-gap); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
 KL polynomial positivity and nilpotent-stratum localization are asserted to imply analytic residue vanishing, with affine/quantum extensions and a G2 example.
@@ -185,6 +193,8 @@ Missing bridges:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap` — **unresolved**. Main claim unresolved.
+
+Current blocker: **inconsistent-recurrence**. [Exact construction/proof obligations](seven-idea-construction-plan.md#553f237f431fc299-kl-positive-to-residue-gap); unresolved, NOT_RUN.
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
@@ -381,6 +391,8 @@ Missing bridges:
 
 `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline` — **unresolved**. Main claim unresolved.
 
+Current blocker: **geometric-realization-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#796ba01d4a02a5ba-boundary-positivity-outline); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
 The two-page outline proposes boundary localization, Euler-form positivity and exceptional-group regularization, with a reported 10^−8 numerical error.
@@ -484,6 +496,8 @@ Missing bridges:
 
 `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence` — **unresolved**. Main claim unresolved.
 
+Current blocker: **unsupported-status-claim**. [Exact construction/proof obligations](seven-idea-construction-plan.md#d7819c0364c77a97-status-assertions-not-proof-evidence); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 The status note declares Axioms 1/5, mixed-source consistency and zero independence resolved while listing remaining cross-term and higher-dimensional bounds.
@@ -521,6 +535,8 @@ Missing bridges:
 ### A Holistic Strategy for Deriving Properties of Prime Numbers — `0b423568798d`
 
 `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap` — **unresolved**. Main claim unresolved.
+
+Current blocker: **source-specification-needed**. [Exact construction/proof obligations](seven-idea-construction-plan.md#0b423568798d1ce3-prime-research-roadmap); unresolved, NOT_RUN.
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#0b423568798d1ce3-prime-research-roadmap).
 

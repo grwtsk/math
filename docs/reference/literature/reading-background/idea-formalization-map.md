@@ -1,5 +1,7 @@
 # Ideas and Lean formalizations by taxonomy
 
+Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
 **Paper-derived formalizations:** see the maintained [paper-to-formalization references ledger](paper-to-formalization-references.md) for exact publication metadata, theorem/method hypotheses, corresponding Lean declarations and commits, actual kernel/axiom verification status, and explicit distinctions among formal bridges, finite checks, analogies and unresolved premises. This companion ledger does not replace the version-bound unpublished-manuscript records below.
 
 Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
@@ -99,6 +101,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer`
 
+Current blocker: **automorphic-transfer-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#498a8b7e7583e8ec-exceptional-embedding-transfer); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
@@ -131,6 +135,8 @@ Missing bridges and uncertainty:
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `67b33f06a609`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer`
+
+Current blocker: **automorphic-transfer-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#67b33f06a6094d05-exceptional-embedding-transfer); unresolved, NOT_RUN.
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
@@ -221,6 +227,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap`
 
+Current blocker: **inconsistent-recurrence**. [Exact construction/proof obligations](seven-idea-construction-plan.md#159cb12b34d5a425-kl-positive-to-residue-gap); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
@@ -254,6 +262,8 @@ Missing bridges and uncertainty:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap`
+
+Current blocker: **inconsistent-recurrence**. [Exact construction/proof obligations](seven-idea-construction-plan.md#553f237f431fc299-kl-positive-to-residue-gap); unresolved, NOT_RUN.
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
@@ -4584,6 +4594,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline`
 
+Current blocker: **geometric-realization-missing**. [Exact construction/proof obligations](seven-idea-construction-plan.md#796ba01d4a02a5ba-boundary-positivity-outline); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
@@ -5482,6 +5494,8 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence`
 
+Current blocker: **unsupported-status-claim**. [Exact construction/proof obligations](seven-idea-construction-plan.md#d7819c0364c77a97-status-assertions-not-proof-evidence); unresolved, NOT_RUN.
+
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](remaining-idea-target-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
@@ -5897,6 +5911,8 @@ Missing bridges and uncertainty:
 ### A Holistic Strategy for Deriving Properties of Prime Numbers — `0b423568798d`
 
 **unresolved** · unlabeled version · `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap`
+
+Current blocker: **source-specification-needed**. [Exact construction/proof obligations](seven-idea-construction-plan.md#0b423568798d1ce3-prime-research-roadmap); unresolved, NOT_RUN.
 
 Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and pinned Lean evidence](ten-idea-target-search.md#0b423568798d1ce3-prime-research-roadmap).
 
