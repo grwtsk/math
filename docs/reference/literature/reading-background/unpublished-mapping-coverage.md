@@ -1,5 +1,7 @@
 # Unpublished research: source-to-code coverage
 
+Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+
 All 274 byte-distinct unpublished PDF versions remain separate. The **233 formerly screened versions** now have substantive selected-page reviews; 41 earlier passage comparisons remain unchanged. Each new review records the full physical pages read, exact claim anchors and page-text hashes. Empty-body/abstract-only assets are explicitly unresolved. This completes the requested deeper reading pass, not the mathematical proofs or a full manuscript audit.
 
 New code baseline: `549d145e5ab7b9faaacab46fd9b6123d907ee1f3`. Existing paper bytes, original paths, custody/access observations, bibliography and historical mapping records are unchanged. [Detailed idea comparisons by taxonomy](idea-formalization-map.md) · [Exact machine-readable evidence](unpublished-mapping-coverage.json)

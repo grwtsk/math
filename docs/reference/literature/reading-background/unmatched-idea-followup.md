@@ -1,5 +1,7 @@
 # Follow-up: 70 ideas without established Lean targets
 
+Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+
 All 70 exact version-bound ideas were revisited. **5 conditional-fragment**; **13 analogy-only**; **7 repair-candidate**; **2 obstruction-only**; **40 unresolved**; **3 no-substantive-body**. **No main manuscript claim is marked resolved.** Five conditional fragments cover narrower subclaims; repair candidates, finite analogies and obstruction checks remain separate.
 
 Code baseline: `f66bd00c9ab5cfd83749db3e57889b68d08aa185`. [Machine-readable decisions](unmatched-idea-followup.json) · [Schema](unmatched-idea-followup.schema.json) · [Historical map](idea-formalization-map.md)
@@ -12,6 +14,8 @@ The original 279 ideas and 226 code links remain historical records. This follow
 ### Conjectures and Proofs for Galois-Theoretic Extensions of Automorphic L-Functions — `1574517a994e`
 
 Idea: `idea:unpublished-v3:1574517a994e89cc:motivic-period-orbits`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#1574517a994e89cc-motivic-period-orbits).
 
 The manuscript proposes a motivic-Galois action on noncritical values, independence of conjugates and a field containing infinitely many algebraically independent periods.
 
@@ -41,6 +45,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:1961da5dba9ca115:motivic-period-orbits`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#1961da5dba9ca115-motivic-period-orbits).
+
 The manuscript proposes a motivic-Galois action on noncritical values, independence of conjugates and a field containing infinitely many algebraically independent periods.
 
 The concluding proof sketches explicitly assume algebraic independence of motivic periods. They do not derive infinite transcendence degree from the orbit construction. No motivic-Galois orbit or period-independence theorem was established in the maintained Lean search.
@@ -69,6 +75,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
+
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
 
 The representation outline asserts preservation of spectral and residue properties without local-factor or automorphic-lift data. Rational Hodge transport requires two actual linear equivalences and an exact commuting square; it is a rejected replacement for an exceptional automorphic lift.
@@ -95,6 +103,8 @@ Missing bridges:
 ### Exceptional Groups: Embeddings and Compactifications Aligned with Classical Representations — `67b33f06a609`
 
 Idea: `idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
 The outline proposes G2,F4,E8 representations in GL(7),GL(26),GL(248) and claims that embeddings preserve critical-line residue properties.
 
@@ -123,6 +133,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#159cb12b34d5a425-kl-positive-to-residue-gap).
+
 KL polynomial positivity and nilpotent-stratum localization are asserted to imply analytic residue vanishing, with affine/quantum extensions and a G2 example.
 
 The affine/quantum section adds unspecified periodic terms and repeats positivity-to-vanishing. Its G2 example prints a diagonal KL polynomial q², which must be reconciled with the defining normalization. The matrix guard is not a KL theorem or a proof of residue suppression.
@@ -150,6 +162,8 @@ Missing bridges:
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis — `553f237f431f`
 
 Idea: `idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#553f237f431fc299-kl-positive-to-residue-gap).
 
 KL polynomial positivity and nilpotent-stratum localization are asserted to imply analytic residue vanishing, with affine/quantum extensions and a G2 example.
 
@@ -234,6 +248,8 @@ Missing bridges:
 ### Residue Suppression via Embeddings and Geometric Langlands Localization — `bd284739968e`
 
 Idea: `idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
 Exceptional-group linear embeddings are paired with nilpotent localization and finite prime residue tables to claim all-zero suppression.
 
@@ -321,6 +337,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:a748ea4b4592e7ab:purity-frobenius-versus-global-zeros`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
+
 The Ring identifies local Frobenius weight magnitudes with automorphic global zeros and uses Fourier–Mukai irreducibility/support preservation and intersection-cohomology spectrum to enforce purity.
 
 The later Frobenius chapter passes directly from finite-field weight magnitudes to zeros/poles of an Euler product. A commuting finite projector can preserve Frobenius-stable summands but proves neither purity nor the required comparison between local eigenvalues and complex global zero coordinates.
@@ -349,6 +367,8 @@ Missing bridges:
 ### The Ring—A Comprehensive Framework for Spectral Purity, Motivic Cohomology, and Fourier-Mukai Symmetries — `e686e3fe101e`
 
 Idea: `idea:unpublished-v3:e686e3fe101ea8bf:purity-frobenius-versus-global-zeros`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
 The Ring identifies local Frobenius weight magnitudes with automorphic global zeros and uses Fourier–Mukai irreducibility/support preservation and intersection-cohomology spectrum to enforce purity.
 
@@ -468,6 +488,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:465f76a208948832:absolute-error-integral-scale`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#465f76a208948832-absolute-error-integral-scale).
+
 The hybrid argument defines propagation P(x,ρ)=∫₁ˣ|t^ρ/ρ|dt and claims logarithmic growth on the critical line, alongside strengthened RMT assumptions.
 
 The later cross-domain meta-theorem still says critical-line propagation is logarithmic, although the earlier absolute integral has power growth at β=1/2. A polynomial bound is subexponential but need not be logarithmic or bounded. The comparison lemma is a scope check, not a repair of the arithmetic contradiction.
@@ -495,6 +517,8 @@ Missing bridges:
 ### A Hybrid Approach to Proving the Riemann Hypothesis: Cross-Domain Consistency and Error Propagation — `d8d87416bd19`
 
 Idea: `idea:unpublished-v3:d8d87416bd1943d6:absolute-error-integral-scale`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d8d87416bd1943d6-absolute-error-integral-scale).
 
 The hybrid argument defines propagation P(x,ρ)=∫₁ˣ|t^ρ/ρ|dt and claims logarithmic growth on the critical line, alongside strengthened RMT assumptions.
 
@@ -637,6 +661,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:0b655e075a1e7798:dimension-decay-versus-fixed-source`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **repair-candidate**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0b655e075a1e7798-dimension-decay-versus-fixed-source).
+
 Residue corrections have denominator (a+b‖g−σ‖^p)^dimG and are extrapolated to a GL∞ limit with vanishing entropy.
 
 The entropy page explicitly passes from rank-dependent pointwise corrections to a G∞ integral limit. No common measure, dominating bound or comparison to a fixed L-function is supplied. No maintained target proving that rank-limit-to-fixed-source implication was established.
@@ -697,6 +723,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:ec2b9a77a14f5ea8:distance-reduction`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ec2b9a77a14f5ea8-distance-reduction).
+
 Rational distances to the four square vertices give rational squared-distance differences and hence rational coordinates; the draft then claims a reduction to a quartic with no rational points.
 
 The conclusion page appeals to general elliptic-curve behavior and an unspecified computation. It supplies neither the actual curve parameters nor an exhaustive rational-point calculation. No maintained square-distance exclusion target was established.
@@ -723,6 +751,8 @@ Missing bridges:
 ### Absolute Proof of the Lonely Runner Conjecture — `4eae7c78f226`
 
 Idea: `idea:unpublished-v3:4eae7c78f226245e:joint-runner-orbit`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#4eae7c78f226245e-joint-runner-orbit).
 
 Moving to a runner’s frame reduces loneliness to joint avoidance by relative-speed torus coordinates; the paper invokes equidistribution and Minkowski to assert a time for every speed vector.
 
@@ -752,6 +782,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#796ba01d4a02a5ba-boundary-positivity-outline).
+
 The two-page outline proposes boundary localization, Euler-form positivity and exceptional-group regularization, with a reported 10^−8 numerical error.
 
 The boundary-strata outline names compactification and localization, but defines no pairing or signed analytic consumer. The inspected Hermitian counterexample is an obstruction to a possible positivity shortcut, not a boundary-vanishing target.
@@ -779,6 +811,8 @@ Missing bridges:
 ### Spectral Rigidity, Homotopy Constraints, and the Functorial Necessity of the Riemann Hypothesis — `8b0f8dbc97a4`
 
 Idea: `idea:unpublished-v3:8b0f8dbc97a4587f:homotopy-rigidity-unproved-comparisons`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#8b0f8dbc97a4587f-homotopy-rigidity-unproved-comparisons).
 
 Seven proposed principles identify categorical spectral constraints, missing arithmetic cohomology, reciprocity and noncommutative geometry as consequences of spectral RH.
 
@@ -836,6 +870,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:0db38ec749b78bd0:derived-vanishing-zero-comparison`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0db38ec749b78bd0-derived-vanishing-zero-comparison).
+
 Derived bundle-stack boundary positivity and high-degree cohomology vanishing are combined with reflected trace terms to assert zero exclusion.
 
 The boundary-vanishing discussion still assumes that an off-line zero produces a nonzero cohomology class above the vanishing threshold. Rational cycle-class transport only transports surjectivity through supplied equivalences; it constructs neither this class nor untwisted vanishing from positive twists.
@@ -863,6 +899,8 @@ Missing bridges:
 ### A Derived Geometric Framework for the Riemann Hypothesis — `a9d476a5336e`
 
 Idea: `idea:unpublished-v3:a9d476a5336e2064:derived-vanishing-zero-comparison`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a9d476a5336e2064-derived-vanishing-zero-comparison).
 
 Derived bundle-stack boundary positivity and high-degree cohomology vanishing are combined with reflected trace terms to assert zero exclusion.
 
@@ -892,6 +930,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:34ebca88596ffc41:twisted-vanishing-versus-untwisted-source`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#34ebca88596ffc41-twisted-vanishing-versus-untwisted-source).
+
 The draft passes from sufficiently positive twists to an untwisted boundary vanishing theorem and asserts off-line zeros produce high-degree boundary cohomology.
 
 The boundary-vanishing discussion still assumes that an off-line zero produces a nonzero cohomology class above the vanishing threshold. Rational cycle-class transport only transports surjectivity through supplied equivalences; it constructs neither this class nor untwisted vanishing from positive twists.
@@ -919,6 +959,8 @@ Missing bridges:
 ### A Derived Geometric Proof of the Riemann Hypothesis — `50a2340db4a9`
 
 Idea: `idea:unpublished-v3:50a2340db4a9dbfa:twisted-vanishing-versus-untwisted-source`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#50a2340db4a9dbfa-twisted-vanishing-versus-untwisted-source).
 
 The draft passes from sufficiently positive twists to an untwisted boundary vanishing theorem and asserts off-line zeros produce high-degree boundary cohomology.
 
@@ -948,6 +990,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:8a8dc8e29d327ad4:geometric-functorial-alignment-outline`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#8a8dc8e29d327ad4-geometric-functorial-alignment-outline).
+
 Functoriality, dual groups and derived compactifications are proposed to preserve residues and stabilize spectral operators.
 
 The Frobenius-trace page describes arithmetic coefficients and boundary alignment but gives no local-factor-preserving lift or zero comparison. The exact commuting-square requirements in rational Hodge transport identify missing input rather than establish this functorial claim.
@@ -975,6 +1019,8 @@ Missing bridges:
 ### A Geometric Framework for the Grand Riemann Hypothesis — `efe16f86d173`
 
 Idea: `idea:unpublished-v3:efe16f86d1739c61:geometric-functorial-alignment-outline`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **analogy-only**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#efe16f86d1739c61-geometric-functorial-alignment-outline).
 
 Functoriality, dual groups and derived compactifications are proposed to preserve residues and stabilize spectral operators.
 
@@ -1200,6 +1246,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:3f28be14404a64ea:recomposition-upper-bound-not-separation`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
+
 The unified proof asserts sieve-fixed-point zero alignment and an exponential recomposition barrier T=O(2^n) as a proof of P≠NP.
 
 The complexity page states T_recompose=O(2^n) without an all-algorithm lower bound. This is an upper-bound claim about a procedure, so neither finite recursion accounting nor an arithmetic sieve lemma is a concrete target for the asserted P≠NP separation.
@@ -1227,6 +1275,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:b799fd9cb24af2a3:recomposition-upper-bound-not-separation`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
+
 The unified proof asserts sieve-fixed-point zero alignment and an exponential recomposition barrier T=O(2^n) as a proof of P≠NP.
 
 The complexity page states T_recompose=O(2^n) without an all-algorithm lower bound. This is an upper-bound claim about a procedure, so neither finite recursion accounting nor an arithmetic sieve lemma is a concrete target for the asserted P≠NP separation.
@@ -1253,6 +1303,8 @@ Missing bridges:
 ### Updated Verification of Recursive Refinement Framework — `d7819c0364c7`
 
 Idea: `idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
 The status note declares Axioms 1/5, mixed-source consistency and zero independence resolved while listing remaining cross-term and higher-dimensional bounds.
 
@@ -1424,6 +1476,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0b423568798d1ce3-prime-research-roadmap).
+
 The document proposes a research program joining zeta derivatives, prime-generation algorithms, motives and geometric visualizations; it states objectives rather than proving a prime-distribution theorem.
 
 The additional page contains algebraic-number-theory and algorithmic objectives with Source 23/27 references. These are research objectives, not an algorithm specification or a quantitative prime theorem.
@@ -1509,6 +1563,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:d00d427aef3a27d8:rmt-langlands-survey-boundary`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
+
 The survey connects local/global Langlands representations, trace formulas and random-matrix zero-spacing analogies with speculative approaches to GRH.
 
 The additional survey, sheaf or statistical discussion still supplies no deterministic implication from local/limiting spacing data to the location of every zero. The inspected zeta reflection theorem is exact symmetry for a specific nontrivial-zero predicate, not local Euler-factor symmetry or universal automorphic GRH.
@@ -1536,6 +1592,8 @@ Missing bridges:
 ### A Proof of the Generalized Riemann Hypothesis via Residue Clustering Laws — `f8f7f4692f9a`
 
 Idea: `idea:unpublished-v3:f8f7f4692f9a8412:local-clustering-symmetry-gap`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#f8f7f4692f9a8412-local-clustering-symmetry-gap).
 
 The longer version defines a prime-local Hecke series as a clustering density and asserts reflection symmetry and universal GUE statistics across discrete, continuous and mixed sources.
 
@@ -1565,6 +1623,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:ba422dcbe9ffc6fb:compact-integral-residue-alignment-gap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ba422dcbe9ffc6fb-compact-integral-residue-alignment-gap).
+
 The axiomatic proof infers global analytic continuation from compact subgroup integrals, then asserts inversion residue symmetry aligns zeros.
 
 The axioms page repeats inversion antisymmetry and a higher-order correction bound. It does not supply analytic continuation of an infinite sum of compact integrals or a divisor-preserving Mellin identity. Zeta zero reflection is a rejected substitute for these analytic suppliers.
@@ -1592,6 +1652,8 @@ Missing bridges:
 ### Residue Clustering Laws and the Proof of the Generalized Riemann Hypothesis — `0523b6d44908`
 
 Idea: `idea:unpublished-v3:0523b6d449088321:modular-j-density-countercheck`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0523b6d449088321-modular-j-density-countercheck).
 
 The clustering law derives a prime-local density from positive f(J(τ)), then claims reflection, boundedness on H and automorphy enforcement.
 
@@ -1622,6 +1684,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:482cdae3e36c3e60:modular-density-and-bsd-residue-gap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#482cdae3e36c3e60-modular-density-and-bsd-residue-gap).
+
 The density model asserts modular integral positivity/reflection and then a positive residue of elliptic L(s,E) at1 as support for BSD.
 
 The later zero-localization discussion invokes functional symmetry and universality, but supplies no valid reflection identity for the printed prime-power density. The maintained zeta reflection theorem cannot repair an incorrect reciprocal-power calculation, a map leaving the upper half-plane, or a pole residue confused with a BSD leading coefficient.
@@ -1649,6 +1713,8 @@ Missing bridges:
 ### Residue Clustering, Modular Symmetries, and the Generalized Riemann Hypothesis: Proof and Workflow — `6900e23cd2e0`
 
 Idea: `idea:unpublished-v3:6900e23cd2e098fd:reciprocal-power-reflection-error`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **corrective-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#6900e23cd2e098fd-reciprocal-power-reflection-error).
 
 The workflow derives reflection by equating reciprocal prime powers and extends modular corrections to exceptional systems and Re(s)>1/2 nonvanishing.
 
@@ -1678,6 +1744,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:47f41bdea32cea56:local-dirichlet-clustering-reflection-gap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#47f41bdea32cea56-local-dirichlet-clustering-reflection-gap).
+
 The modular proof assigns ρ(p,χ,s)=Σχ(p^k)p^(−ks) and claims each prime-local series is reflection-symmetric, supported by numerical tolerances.
 
 The additional survey, sheaf or statistical discussion still supplies no deterministic implication from local/limiting spacing data to the location of every zero. The inspected zeta reflection theorem is exact symmetry for a specific nontrivial-zero predicate, not local Euler-factor symmetry or universal automorphic GRH.
@@ -1705,6 +1773,8 @@ Missing bridges:
 ### The Riemann Hypothesis and Its Automorphic Generalizations: Comprehensive Insights into Unified Analytic, Spectral, and Geometric Structures — `a26ad58b0022`
 
 Idea: `idea:unpublished-v3:a26ad58b00222955:arithmetic-residue-formula-scope`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#a26ad58b00222955-arithmetic-residue-formula-scope).
 
 The synthesis links compactified boundary traces to zero suppression and prints a universal scheme-zeta residue formula using regulator, Picard torsion, Sha and Tamagawa factors.
 
@@ -1734,6 +1804,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:e04e2d11c430078f:arithmetic-residue-formula-scope`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **conditional-fragment**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#e04e2d11c430078f-arithmetic-residue-formula-scope).
+
 The synthesis links compactified boundary traces to zero suppression and prints a universal scheme-zeta residue formula using regulator, Picard torsion, Sha and Tamagawa factors.
 
 The obstruction list acknowledges that vanishing and Tamagawa-type residue comparisons remain partial or conjectural. Generic cycle-class transport cannot supply the arithmetic leading term, finiteness premises or the boundary trace identity.
@@ -1762,6 +1834,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:2b7478353ae500b1:conditional-transcendence-and-chaotic-sums`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
+
 The universal transcendence theorem assumes logarithm independence, RMT predictions and motivic period independence, using dense phases to prevent algebraic cancellation.
 
 The logarithm section uses rational independence to infer transcendence of algebraic-coefficient sums and cites prime-gap smoothing as preserving chaos. These arguments do not supply an infinite-sum transcendence theorem, and no maintained Baker/motivic-independence target was established.
@@ -1789,6 +1863,8 @@ Missing bridges:
 ### Universal Transcendence of Non-Critical Values in Automorphic and Motivic L-Functions — `ac7a2ecdc5f9`
 
 Idea: `idea:unpublished-v3:ac7a2ecdc5f9c787:conditional-transcendence-and-chaotic-sums`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
 The universal transcendence theorem assumes logarithm independence, RMT predictions and motivic period independence, using dense phases to prevent algebraic cancellation.
 
@@ -1820,6 +1896,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
+
 Shannon entropy is corrected by weighted residue projections; empirical conductor/rank scaling and H<0.1 are used to predict zero-free modular classes.
 
 The methods page subtracts weighted projections directly from the entropy value and reports an empirical H<0.1 threshold. No probability-preserving update or exact implication from this threshold to zero exclusion appears there; no such maintained Lean target was established.
@@ -1848,6 +1926,8 @@ Missing bridges:
 
 Idea: `idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap`. Outcome: **unresolved**; main claim unresolved.
 
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#579328ace007be79-entropy-threshold-zero-free-gap).
+
 Shannon entropy is corrected by weighted residue projections; empirical conductor/rank scaling and H<0.1 are used to predict zero-free modular classes.
 
 The methods page subtracts weighted projections directly from the entropy value and reports an empirical H<0.1 threshold. No probability-preserving update or exact implication from this threshold to zero exclusion appears there; no such maintained Lean target was established.
@@ -1875,6 +1955,8 @@ Missing bridges:
 ### A Unified Theoretical Framework for the Proof of the Riemann Hypothesis and Its Generalizations — `7e3e7acb686d`
 
 Idea: `idea:unpublished-v3:7e3e7acb686d4196:short-rmt-proof-upgrade-gap`. Outcome: **unresolved**; main claim unresolved.
+
+Current broader-search assessment: **unresolved**, main claim unresolved. [Further paper and upstream Lean evidence](unresolved-idea-broader-search.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
 The five-page version relies on GUE pair-correlation agreement and absence of observed anomalies to infer all zeros align.
 
