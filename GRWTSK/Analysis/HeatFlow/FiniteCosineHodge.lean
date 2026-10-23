@@ -563,7 +563,7 @@ theorem thetaTailSupplier_combine
     (hsource : 0 ≤ sourceError) :
     sourceError + cert.thetaTail ≤
       sourceError + exponentialTailBudget C c U := by
-  exact add_le_add_left cert.tail_le_exponential sourceError
+  exact add_le_add_right cert.tail_le_exponential sourceError
 
 /-- The supplied analytic tail is nonnegative, so it cannot improve
 an absolute-error estimate by being silently subtracted. -/
@@ -661,8 +661,12 @@ theorem thetaKernelTerm_abs_le_parts (n : ℕ) (u : ℝ) :
   rw [thetaKernelTerm_split]
   have hp := thetaKernelPositivePart_nonneg n u
   have hn := thetaKernelNegativePart_nonneg n u
-  exact abs_sub_le _ _ |>.trans_eq (by
-    rw [abs_of_nonneg hp, abs_of_nonneg hn])
+  calc
+    |thetaKernelPositivePart n u - thetaKernelNegativePart n u| ≤
+        |thetaKernelPositivePart n u| + |thetaKernelNegativePart n u| := by
+          exact abs_sub _ _
+    _ = thetaKernelPositivePart n u + thetaKernelNegativePart n u := by
+          rw [abs_of_nonneg hp, abs_of_nonneg hn]
 
 
 /-- A finite theta-kernel truncation at the first N positive modes.
@@ -797,8 +801,12 @@ theorem thetaScaledPolynomial_abs_bound (q : ℝ) (hq : 0 ≤ q) :
   unfold thetaScaledPolynomial
   have hp : 0 ≤ 2 * Real.pi ^ 2 * q ^ 2 := by positivity
   have hn : 0 ≤ 3 * Real.pi * q := by positivity
-  exact (abs_sub_le _ _).trans_eq
-    (by rw [abs_of_nonneg hp, abs_of_nonneg hn])
+  calc
+    |2 * Real.pi ^ 2 * q ^ 2 - 3 * Real.pi * q| ≤
+        |2 * Real.pi ^ 2 * q ^ 2| + |3 * Real.pi * q| := by
+          exact abs_sub _ _
+    _ = 2 * Real.pi ^ 2 * q ^ 2 + 3 * Real.pi * q := by
+          rw [abs_of_nonneg hp, abs_of_nonneg hn]
 
 /-- The scaled polynomial times Gaussian is the exact source term
 apart from the positive outer exp(u) factor. -/
