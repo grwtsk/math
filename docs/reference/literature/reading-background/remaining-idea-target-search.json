@@ -1,0 +1,1552 @@
+{
+  "schema_version": 1,
+  "scope": "Further target search for exactly the 21 unresolved outcomes in the preceding 40-idea review; each version retains its own source identity.",
+  "previous_review_file": "unresolved-idea-broader-search.json",
+  "code_baseline": "ba191bd06dcd3b2be364f9b7267b4ea57df21bbc",
+  "upstream_baseline": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "dependency_evidence": "lake-manifest.json packages[name=mathlib].rev at the pinned maintained commit equals the cited upstream commit.",
+  "recorded_at": "2026-10-23T19:58:42.357885+00:00",
+  "limitations": [
+    "No main manuscript claim is marked resolved. A conditional fragment is limited to the exact stated subclaim and domain.",
+    "Obstruction-only records check unsupported asymptotic or finite-to-limit inferences, not the arithmetic conjecture itself. Paper-specific adapters were not newly compiled.",
+    "All code citations are immutable source comparisons. No new Lean compilation or independent kernel audit is claimed.",
+    "Selected complete pages were read, not whole manuscripts. Short exhausted assets were reread, and distinct versions never inherit unseen content from another asset.",
+    "Original paths, bibliography, source/owner statements, access observations and human understanding dates are preserved. New machine-access observations stay private in the external library.",
+    "Assistant interpretations remain proposals. Correspondence is not owner testimony, historical influence, priority or a proof of the larger conjecture."
+  ],
+  "code_references": [
+    {
+      "id": "binary-entropy-zero",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecialFunctions/BinaryEntropy.lean",
+      "blob": "5a54ece56f09925fa0228346b067031558fc4b88",
+      "code_sha256": "cc0a8ab88f30af34d55b2f3987663f6f341ad851bfd56c10c70e9c6c1aad0407",
+      "declaration": "Real.binEntropy_zero",
+      "line_start": 65,
+      "line_end": 65,
+      "scope": "The Bernoulli entropy at p=0 is exactly zero. This is an entropy formula for a specified degenerate probability model; it identifies no L-function zero-free set and does not refute a source-linked criterion whose missing construction has yet to be supplied."
+    },
+    {
+      "id": "independence-to-linear",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/RingTheory/AlgebraicIndependent/Basic.lean",
+      "blob": "f3f901a4a128fa8b9cdab443c56944215ca22dd6",
+      "code_sha256": "450f46eb94d5e32eb6d5cceeea6baf72f10835005e70212ab2bca6730a8ca7eb",
+      "declaration": "AlgebraicIndependent.linearIndependent",
+      "line_start": 71,
+      "line_end": 83,
+      "scope": "For commutative rings R,A with an R-algebra structure, an assumed algebraically independent family x:ι→A is linearly independent over R. This excludes finite R-linear relations in that same family. It constructs no motivic/logarithmic family, no independence premise, no map from conjugate L-values, no coefficient-field change and no infinite-series transcendence result."
+    },
+    {
+      "id": "nonzero-powers",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Algebra/GroupWithZero/Basic.lean",
+      "blob": "b645df61d0cab8996f9f949357ac218e7ddb0b1c",
+      "code_sha256": "6a07f5f5910a8378db7d5fd4ff71d846c6cc54cf97408b4c4961b3e4ebeca24c",
+      "declaration": "pow_ne_zero",
+      "line_start": 258,
+      "line_end": 260,
+      "scope": "For a nonzero element in the file’s monoid-with-zero/no-zero-divisors setting, every natural power is nonzero. Applied to x=1/2 in ℝ it describes each finite product, not its limit. The specialized combined counterexample has not been newly compiled."
+    },
+    {
+      "id": "pair-exclusion",
+      "repository": "https://github.com/grwtsk/math",
+      "commit": "ba191bd06dcd3b2be364f9b7267b4ea57df21bbc",
+      "path": "GRWTSK/Analysis/Complex/SymmetricPair.lean",
+      "blob": "3d05c813a5a408bb9c4172e52bcfdc6c2f5fac01",
+      "code_sha256": "1839dbbc3b587b7597272ee8082feec08c3a9c0bfcf4ad5a8e6def4909ebf043",
+      "declaration": "GRWTSK.Analysis.Complex.SymmetricPair.Enclosure.excludes_pair",
+      "line_start": 114,
+      "line_end": 129,
+      "scope": "SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED at this pin. On the same exact source/model pair c±d, a supplied even-value/normalized-odd-secant enclosure and strict budget<model-energy margin exclude simultaneous endpoint zeros. It constructs no arithmetic enclosure, margin, all-pair coverage, statistical upgrade or source nonvanishing. Zero displacement is allowed and is not a derivative jet."
+    },
+    {
+      "id": "powers-tend-zero",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/SpecificLimits/Normed.lean",
+      "blob": "deecc84a1b389905bfddde42a9aa08ebc8ed944a",
+      "code_sha256": "113aaf52a8970f3d5731b3bef38b5eb29be69585d68fdd5fc22f4868fa9f35e6",
+      "declaration": "tendsto_pow_atTop_nhds_zero_of_norm_lt_one",
+      "line_start": 221,
+      "line_end": 225,
+      "scope": "In a seminormed ring, ||x||<1 implies x^n→0 as n→∞. Together with nonzero-powers, x=1/2 gives nonzero finite products converging to zero. This obstructs an unsupported finite-to-limit nonvanishing inference; it is not an L-function Euler-product or analytic-continuation theorem."
+    },
+    {
+      "id": "square-distance-expansion",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/InnerProductSpace/Basic.lean",
+      "blob": "df294ad3a9269545374b410a9f806932b4417025",
+      "code_sha256": "344aa5e0b104223d327bb1f13db092b4d320017c8f82b7ba9846b5f517222468",
+      "declaration": "norm_sub_sq_real",
+      "line_start": 435,
+      "line_end": 438,
+      "scope": "In a real inner-product space, ||x−y||²=||x||²−2<x,y>+||y||². Specializing y to each Euclidean unit basis vector gives the squared-distance coordinate difference. Rational-field closure and coordinate adapters are separate; arbitrary rational coordinates are not half-integers, and rational squared distances do not imply rational distances."
+    },
+    {
+      "id": "zero-bigO",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Analysis/Asymptotics/Defs.lean",
+      "blob": "11d00735f6e01026b811d05b93c586c2c12e615d",
+      "code_sha256": "9d9f03b59c6a8ca243954c72b150d79eaba2c2ffb5ca2f8d9ed55bdaebe8eb1b",
+      "declaration": "Asymptotics.isBigO_zero",
+      "line_start": 1147,
+      "line_end": 1148,
+      "scope": "The identically zero function is O(g) along any filter. In particular an O(2^n) upper-bound predicate alone cannot imply an exponential lower bound. This is an asymptotic scope check, not a complexity-class theorem or a computation-model construction."
+    }
+  ],
+  "reviews": [
+    {
+      "idea_id": "idea:unpublished-v3:ec2b9a77a14f5ea8:distance-reduction",
+      "source_id": "sha256:ec2b9a77a14f5ea8eaaf560e4fb9dba0e32d3b904d66b5be458310e4abf642f8",
+      "asset_sha256": "ec2b9a77a14f5ea8eaaf560e4fb9dba0e32d3b904d66b5be458310e4abf642f8",
+      "taxonomy": "GeometryTopology",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Reduction to a Diophantine System",
+          "page_text_sha256": "97d68d6a1a2f1cc2b9eae109618bcdf8035e1edbfce1a5cab6f594e26c5483c3"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Higher-Genus Curve Argument",
+          "page_text_sha256": "85cb0c447a322aa85bbe6e2e33168cdfac4d6328b6f4d025974165799171ccac"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "3     Nonexistence of Rational Solutions via Elliptic Curves",
+          "page_text_sha256": "85cb0c447a322aa85bbe6e2e33168cdfac4d6328b6f4d025974165799171ccac"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Absolute Proof of the Nonexistence of a Rational Distance Point",
+          "page_text_sha256": "97d68d6a1a2f1cc2b9eae109618bcdf8035e1edbfce1a5cab6f594e26c5483c3"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The complete two-page reread isolates a valid initial subclaim from the failed exclusion: squared-distance differences determine the coordinates. Upstream norm_sub_sq_real is the exact real inner-product expansion underlying d2−d1=1−2x and d4−d1=1−2y after choosing the two unit basis vectors. It supports rational coordinates once rational squared distances are supplied, but does not restrict denominators to 2 or prove rationality of distances from rationality of their squares.",
+      "candidate_roles": [
+        {
+          "code_key": "square-distance-expansion",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "norm_sub_sq_real",
+        "rational distance",
+        "Euclidean coordinates",
+        "rational quartic exclusion"
+      ],
+      "missing_bridges": [
+        "Rational x and y do not imply x=m/2,y=n/2 for integers m,n; retain arbitrary denominators. Rational squared distances are weaker than rational distances.",
+        "Specify a genuine birational reduction with all degeneracies. Faltings finiteness does not imply emptiness, and no exhaustive rational-point certificate is supplied.",
+        "Retain arbitrary rational denominators and supply explicit maps and a complete rational-point certificate.",
+        "Specify the actual curve and all denominators and exceptional points, then prove exhaustive exclusion rather than finiteness.",
+        "Instantiate the Euclidean plane/basis, translate distances into norms and prove rational-field closure for x=(1+d1−d2)/2 and y=(1+d1−d4)/2. No new specialized Lean theorem was compiled.",
+        "The elliptic/quartic parameters, birational maps and exhaustive rational-point exclusion are still absent; Faltings finiteness does not supply emptiness."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:0b423568798d1ce3:prime-research-roadmap",
+      "source_id": "sha256:0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "taxonomy": "NumberTheory",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Analytic Number Theory",
+          "page_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Computational and Experimental Verification",
+          "page_text_sha256": "22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "3     Algebraic Number Theory and Primes in Fields",
+          "page_text_sha256": "506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "5     Geometric Representations and the Langlands",
+          "page_text_sha256": "22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "A Holistic Strategy for Deriving Properties of",
+          "page_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "All three pages remain a roadmap rather than a source theorem or an executable algorithm specification. Broader searches through prime enumeration, Chebyshev identities, zeta derivatives and computability provide ingredients for future work, but no declaration formalizes the document’s unspecified program as a single mathematical claim.",
+      "candidate_roles": [],
+      "search_terms": [
+        "prime generation correctness",
+        "higher zeta derivatives",
+        "Chebyshev prime counting",
+        "geometric Langlands"
+      ],
+      "missing_bridges": [
+        "Replace each objective by a precise source identity or estimate with domains, constants and quantifiers before selecting a Lean theorem.",
+        "The source-number citations are not an exact construction of a prime detector, algorithm correctness theorem or motive comparison.",
+        "Choose a particular algorithm or source identity with an exact correctness or error claim before assigning a target.",
+        "Select an exact algorithm, source identity or quantitative theorem and resolve its numbered resources.",
+        "Replace an objective by an exact source identity, algorithm/correctness specification or quantitative theorem; resolve the Source 23/26/27/28/29 citations."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:796ba01d4a02a5ba:boundary-positivity-outline",
+      "source_id": "sha256:796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "taxonomy": "GeometryTopology",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Suppression via Localization",
+          "page_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Positivity Constraints",
+          "page_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Boundary Regularization: A Framework for",
+          "page_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "5     Positivity Constraints",
+          "page_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "Both pages are exhausted as substantive outlines. Searching finite Hodge energy, positivity, boundary and localization code did not supply the proposed geometric realization. A positive finite graph energy or Hermitian guard does not instantiate an Euler pairing on these boundary strata or show that a zero gives a forbidden class.",
+      "candidate_roles": [],
+      "search_terms": [
+        "Euler pairing positivity",
+        "intersection cohomology vanishing",
+        "boundary regularization",
+        "finite Hodge energy"
+      ],
+      "missing_bridges": [
+        "Define the boundary complex, localization functor and actual signed residue/zero consumer, then prove the source comparison.",
+        "Euler pairings are not universally positive. State the precise sheaves, degrees and positivity theorem, and derive vanishing separately.",
+        "A reported tolerance is not a validated enclosure with full tails or an all-rank result.",
+        "Construct a geometric positive form on the exact class of objects; Hermitian symmetry alone does not imply positivity or vanishing.",
+        "Construct the exact pairing and localization/analytic realization and prove its sign and vanishing implications on the intended objects.",
+        "Define the geometric objects, admissible cone and actual signed analytic consumer; prove a source-specific vanishing/exclusion bridge with exact hypotheses."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:1574517a994e89cc:motivic-period-orbits",
+      "source_id": "sha256:1574517a994e89cc658f59f7f3bafff2eacaa601ef6398e411aa8f3d86c3ff09",
+      "asset_sha256": "1574517a994e89cc658f59f7f3bafff2eacaa601ef6398e411aa8f3d86c3ff09",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Conjecture 1:",
+          "page_text_sha256": "0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Proof of Conjecture 3:",
+          "page_text_sha256": "54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Conjecture 3: Galois Closure for Transcendental Values",
+          "page_text_sha256": "54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Conjectures and Proofs for Galois-Theoretic",
+          "page_text_sha256": "0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The printed independence assumption has an exact conditional consequence in upstream Lean: an algebraically independent family is linearly independent over the same coefficient ring. This is a fragment about the assumed period family, not a construction of motivic conjugates or their independence. The two-page draft supplies no injective map from the conjugate-value family to independent period coordinates, and a single transcendental value does not generate infinite transcendence degree.",
+      "candidate_roles": [
+        {
+          "code_key": "independence-to-linear",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "AlgebraicIndependent linearIndependent",
+        "motivic period orbit",
+        "transcendence degree",
+        "Baker"
+      ],
+      "missing_bridges": [
+        "Distinguish noncritical in the motivic critical-value sense from Re(s)≠1/2; define the exact values and realizations.",
+        "Specify the acting group and period torsor and prove orbit-generation claims. Baker’s theorem does not establish arbitrary motivic period independence.",
+        "A group orbit or transcendental generator does not by itself produce infinitely many algebraically independent periods; state and prove the required transcendence-degree assertion.",
+        "Specify the period torsor and coefficient field and prove the required independence instead of assuming it.",
+        "Construct the actual motivic action and period relations; neither the auxiliary approximation lemma nor transcendence of one value establishes infinitely many independent periods.",
+        "Construct the actual period family and prove the stated algebraic-independence premise, retaining the coefficient field.",
+        "Specify the orbit and a suitable injective coefficient/comparison map for the conjugate values; duplicate values or dependent combinations are not excluded by independence of a different family."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:1961da5dba9ca115:motivic-period-orbits",
+      "source_id": "sha256:1961da5dba9ca1152f38a2c7c093dcac813729876908194597fae5a3a1c1c8e1",
+      "asset_sha256": "1961da5dba9ca1152f38a2c7c093dcac813729876908194597fae5a3a1c1c8e1",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Conjecture 1:",
+          "page_text_sha256": "0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Proof of Conjecture 3:",
+          "page_text_sha256": "54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Conjecture 3: Galois Closure for Transcendental Values",
+          "page_text_sha256": "54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Conjectures and Proofs for Galois-Theoretic",
+          "page_text_sha256": "0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The printed independence assumption has an exact conditional consequence in upstream Lean: an algebraically independent family is linearly independent over the same coefficient ring. This is a fragment about the assumed period family, not a construction of motivic conjugates or their independence. The two-page draft supplies no injective map from the conjugate-value family to independent period coordinates, and a single transcendental value does not generate infinite transcendence degree.",
+      "candidate_roles": [
+        {
+          "code_key": "independence-to-linear",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "AlgebraicIndependent linearIndependent",
+        "motivic period orbit",
+        "transcendence degree",
+        "Baker"
+      ],
+      "missing_bridges": [
+        "Distinguish noncritical in the motivic critical-value sense from Re(s)≠1/2; define the exact values and realizations.",
+        "Specify the acting group and period torsor and prove orbit-generation claims. Baker’s theorem does not establish arbitrary motivic period independence.",
+        "A group orbit or transcendental generator does not by itself produce infinitely many algebraically independent periods; state and prove the required transcendence-degree assertion.",
+        "Specify the period torsor and coefficient field and prove the required independence instead of assuming it.",
+        "Construct the actual motivic action and period relations; neither the auxiliary approximation lemma nor transcendence of one value establishes infinitely many independent periods.",
+        "Construct the actual period family and prove the stated algebraic-independence premise, retaining the coefficient field.",
+        "Specify the orbit and a suitable injective coefficient/comparison map for the conjugate values; duplicate values or dependent combinations are not excluded by independence of a different family."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:498a8b7e7583e8ec:exceptional-embedding-transfer",
+      "source_id": "sha256:498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "asset_sha256": "498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Group Embeddings",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Residue Suppression and Functional Equation",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Groups: Embeddings and",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4     Residue Suppression and Functional Equation Sym-",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The complete short outline states dimensions and preservation claims without defining a representation or local parameters. The broadened Lie/root-system and representation searches did not establish the automorphic lift, compactification or exact zero/residue preservation law. A finite-dimensional group representation is not a global automorphic transfer.",
+      "candidate_roles": [],
+      "search_terms": [
+        "exceptional faithful representation",
+        "G2 F4 E8 GL embedding",
+        "Satake local factors",
+        "automorphic transfer"
+      ],
+      "missing_bridges": [
+        "Construct the actual representation homomorphisms with the required base fields and exact preservation laws.",
+        "A faithful linear representation does not identify automorphic L-functions or preserve their zeros by itself. Supply the local parameters, global analytic comparison and boundary regularization theorem.",
+        "Construct the group representations and the separate analytic/local-global L-function comparison.",
+        "Construct the representation homomorphisms, genuine twists and local-factor identities; prove the separate global analytic comparison.",
+        "Construct the homomorphism over its actual base field and separately prove local-factor and analytic global comparisons, including all dual/normalization data."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:67b33f06a6094d05:exceptional-embedding-transfer",
+      "source_id": "sha256:67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "asset_sha256": "67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Group Embeddings",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Residue Suppression and Functional Equation",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Exceptional Groups: Embeddings and",
+          "page_text_sha256": "e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4     Residue Suppression and Functional Equation Sym-",
+          "page_text_sha256": "d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The complete short outline states dimensions and preservation claims without defining a representation or local parameters. The broadened Lie/root-system and representation searches did not establish the automorphic lift, compactification or exact zero/residue preservation law. A finite-dimensional group representation is not a global automorphic transfer.",
+      "candidate_roles": [],
+      "search_terms": [
+        "exceptional faithful representation",
+        "G2 F4 E8 GL embedding",
+        "Satake local factors",
+        "automorphic transfer"
+      ],
+      "missing_bridges": [
+        "Construct the actual representation homomorphisms with the required base fields and exact preservation laws.",
+        "A faithful linear representation does not identify automorphic L-functions or preserve their zeros by itself. Supply the local parameters, global analytic comparison and boundary regularization theorem.",
+        "Construct the group representations and the separate analytic/local-global L-function comparison.",
+        "Construct the representation homomorphisms, genuine twists and local-factor identities; prove the separate global analytic comparison.",
+        "Construct the homomorphism over its actual base field and separately prove local-factor and analytic global comparisons, including all dual/normalization data."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:159cb12b34d5a425:kl-positive-to-residue-gap",
+      "source_id": "sha256:159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "asset_sha256": "159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 2,
+          "anchor": "The positivity of Pu,v",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "recursive computations yielding",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "4     Affine and Quantum Extensions",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        2,
+        3
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The reread of the recurrence, affine/quantum claims and G2 example still gives no compatible defining Hecke relations. Broader searching into Coxeter and Hecke modules did not locate a matching KL polynomial theorem plus the claimed analytic realization. Double-coset Hecke rings are not automatically the Coxeter Hecke algebra used for KL polynomials.",
+      "candidate_roles": [],
+      "search_terms": [
+        "Kazhdan Lusztig recurrence",
+        "Coxeter Hecke algebra",
+        "HeckeCosetModule",
+        "intersection positivity"
+      ],
+      "missing_bridges": [
+        "Verify the polynomial recurrence, diagonal normalization and G2 example against the defining Hecke relations; the printed recursion and q² diagonal example are not established by the text.",
+        "Construct the localization/realization and prove a source-specific identity linking its signed or graded pairing to analytic residues/zeros. Positivity does not imply vanishing without an additional proved implication.",
+        "Specify and justify the affine/quantum variants instead of adding unnamed correction terms.",
+        "Define the Hecke/KL recurrence and realization; prove an actual signed analytic comparison before any vanishing conclusion.",
+        "Supply a correct KL specification and its geometric realization, then prove a source-specific residue/zero comparison; positivity alone does not discharge it.",
+        "Repair and verify the recurrence and diagonal normalization, construct the actual intersection-cohomology realization, and prove positivity-to-vanishing for the specified analytic consumer."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:553f237f431fc299:kl-positive-to-residue-gap",
+      "source_id": "sha256:553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "asset_sha256": "553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 2,
+          "anchor": "The positivity of Pu,v",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "recursive computations yielding",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "4     Affine and Quantum Extensions",
+          "page_text_sha256": "886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.",
+          "page_text_sha256": "f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        2,
+        3
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The reread of the recurrence, affine/quantum claims and G2 example still gives no compatible defining Hecke relations. Broader searching into Coxeter and Hecke modules did not locate a matching KL polynomial theorem plus the claimed analytic realization. Double-coset Hecke rings are not automatically the Coxeter Hecke algebra used for KL polynomials.",
+      "candidate_roles": [],
+      "search_terms": [
+        "Kazhdan Lusztig recurrence",
+        "Coxeter Hecke algebra",
+        "HeckeCosetModule",
+        "intersection positivity"
+      ],
+      "missing_bridges": [
+        "Verify the polynomial recurrence, diagonal normalization and G2 example against the defining Hecke relations; the printed recursion and q² diagonal example are not established by the text.",
+        "Construct the localization/realization and prove a source-specific identity linking its signed or graded pairing to analytic residues/zeros. Positivity does not imply vanishing without an additional proved implication.",
+        "Specify and justify the affine/quantum variants instead of adding unnamed correction terms.",
+        "Define the Hecke/KL recurrence and realization; prove an actual signed analytic comparison before any vanishing conclusion.",
+        "Supply a correct KL specification and its geometric realization, then prove a source-specific residue/zero comparison; positivity alone does not discharge it.",
+        "Repair and verify the recurrence and diagonal normalization, construct the actual intersection-cohomology realization, and prove positivity-to-vanishing for the specified analytic consumer."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:0f3deff790c3e598:entropy-threshold-zero-free-gap",
+      "source_id": "sha256:0f3deff790c3e5981fc304f6fef684f2d93ee0830b20c3129244a40721875833",
+      "asset_sha256": "0f3deff790c3e5981fc304f6fef684f2d93ee0830b20c3129244a40721875833",
+      "taxonomy": "ProbabilityCombinatorics",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Entropy Refinement",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Zero-Free Regions",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Clustering, Modular Symmetry, and the Generalized",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4.2    Connecting to Random Matrix Theory",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The whole body leaves entropy-threshold⇒zero-exclusion as a future step. Upstream binEntropy_zero gives entropy zero for a degenerate Bernoulli law, illustrating that a small entropy number alone identifies no arithmetic zero-free domain. It is not a counterexample to a fully specified source-linked criterion, because the paper never supplies that link; it is a rejected substitute for it.",
+      "candidate_roles": [
+        {
+          "code_key": "binary-entropy-zero",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "finite Shannon entropy",
+        "binEntropy_zero",
+        "entropy threshold zero-free",
+        "probability correction"
+      ],
+      "missing_bridges": [
+        "Define the correction on probabilities and prove it preserves normalization/nonnegativity; subtracting projections from an entropy value need not yield a Shannon entropy.",
+        "State constants and parameter ranges for the two different scaling laws, and provide reproducible data/certified errors.",
+        "Prove threshold implies zero exclusion with exact source domain and all-height/rank coverage. Finite GL11–GL100 checks do not construct an infinite-dimensional limit.",
+        "Prove normalization, nonnegativity, convergence and an all-height source-specific exclusion implication.",
+        "Define the probability law and admissible correction and prove a uniform source-specific threshold implication.",
+        "Define the probability distribution derived from the actual L-function, prove the correction preserves it, and prove the uniform implication to zero exclusion with full domain/tail coverage."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:579328ace007be79:entropy-threshold-zero-free-gap",
+      "source_id": "sha256:579328ace007be79bca86146991d522c3a72ac325d62523ee0e3322dcf48d63c",
+      "asset_sha256": "579328ace007be79bca86146991d522c3a72ac325d62523ee0e3322dcf48d63c",
+      "taxonomy": "ProbabilityCombinatorics",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 1,
+          "anchor": "Entropy Refinement",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Zero-Free Regions",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Residue Clustering, Modular Symmetry, and the Generalized",
+          "page_text_sha256": "b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "4.2    Connecting to Random Matrix Theory",
+          "page_text_sha256": "379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        1,
+        2
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The whole body leaves entropy-threshold⇒zero-exclusion as a future step. Upstream binEntropy_zero gives entropy zero for a degenerate Bernoulli law, illustrating that a small entropy number alone identifies no arithmetic zero-free domain. It is not a counterexample to a fully specified source-linked criterion, because the paper never supplies that link; it is a rejected substitute for it.",
+      "candidate_roles": [
+        {
+          "code_key": "binary-entropy-zero",
+          "role": "rejected-candidate"
+        }
+      ],
+      "search_terms": [
+        "finite Shannon entropy",
+        "binEntropy_zero",
+        "entropy threshold zero-free",
+        "probability correction"
+      ],
+      "missing_bridges": [
+        "Define the correction on probabilities and prove it preserves normalization/nonnegativity; subtracting projections from an entropy value need not yield a Shannon entropy.",
+        "State constants and parameter ranges for the two different scaling laws, and provide reproducible data/certified errors.",
+        "Prove threshold implies zero exclusion with exact source domain and all-height/rank coverage. Finite GL11–GL100 checks do not construct an infinite-dimensional limit.",
+        "Prove normalization, nonnegativity, convergence and an all-height source-specific exclusion implication.",
+        "Define the probability law and admissible correction and prove a uniform source-specific threshold implication.",
+        "Define the probability distribution derived from the actual L-function, prove the correction preserves it, and prove the uniform implication to zero exclusion with full domain/tail coverage."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:3f28be14404a64ea:recomposition-upper-bound-not-separation",
+      "source_id": "sha256:3f28be14404a64ea356abbc35615d406d0d9ca9e535f36b0b602f69e16fe38ea",
+      "asset_sha256": "3f28be14404a64ea356abbc35615d406d0d9ca9e535f36b0b602f69e16fe38ea",
+      "taxonomy": "LogicAndComputation",
+      "previous_outcome": "unresolved",
+      "outcome": "obstruction-only",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 4,
+          "anchor": "Exponential Recomposition Barrier",
+          "page_text_sha256": "075ae668d72594331084056f406723b94b61d7c29c113560829a3fce112fa188"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "4   Computational Complexity",
+          "page_text_sha256": "075ae668d72594331084056f406723b94b61d7c29c113560829a3fce112fa188"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Figure 1:",
+          "page_text_sha256": "1044bb5c5e704fb5a1894ebf6307bb5309c24e51218238c95c57f84f19b3c7fe"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "This paper is organized as follows:",
+          "page_text_sha256": "4714728c13322917734622b50465b60bb781eaddfed7d766b6a0f1c9402fcfcb"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        2,
+        4
+      ],
+      "pages_beyond_recorded_citations": [
+        2
+      ],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The body still supplies only T_recompose=O(2^n). Upstream isBigO_zero shows that an identically zero function satisfies an O(g) upper bound for any comparison g. Thus the printed upper-bound predicate cannot itself encode an exponential lower bound. This is an exact asymptotic scope obstruction, not a complexity-class separation theorem or a model of an NP algorithm.",
+      "candidate_roles": [
+        {
+          "code_key": "zero-bigO",
+          "role": "obstruction-only"
+        }
+      ],
+      "search_terms": [
+        "NP complete lower bound",
+        "isBigO_zero",
+        "exponential recomposition",
+        "Turing machine complexity"
+      ],
+      "missing_bridges": [
+        "O(2^n) is an upper bound, not an exponential lower bound. A slow decomposition/recomposition algorithm cannot rule out all polynomial-time algorithms.",
+        "Prove the sieve iteration converges and preserves the original function/zeros; symmetric fixed data need not force each zero onto the symmetry axis.",
+        "Keep contragredient/conjugate characters, gamma factors and symmetric-power existence hypotheses.",
+        "Specify the computation model and prove the universal lower bound; keep upper bounds and algorithm-specific costs distinct.",
+        "Specify the computation model and universal lower-bound quantifiers; illustrative graphs and an exponential upper bound cannot establish P≠NP.",
+        "State a computation model and a lower-bound predicate with universal algorithm quantifiers; retain the distinction between an upper bound for one procedure and exclusion of all polynomial algorithms."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:b799fd9cb24af2a3:recomposition-upper-bound-not-separation",
+      "source_id": "sha256:b799fd9cb24af2a3415bfd20176c9232a371034809561e69eeb8dd4222c518d5",
+      "asset_sha256": "b799fd9cb24af2a3415bfd20176c9232a371034809561e69eeb8dd4222c518d5",
+      "taxonomy": "LogicAndComputation",
+      "previous_outcome": "unresolved",
+      "outcome": "obstruction-only",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 4,
+          "anchor": "Exponential Recomposition Barrier",
+          "page_text_sha256": "0d9f901bc0bc9c755e5c0747e0fa805feabfb8a83d5526ed3c65a72208c8bbc9"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "2     Computational Complexity",
+          "page_text_sha256": "0d9f901bc0bc9c755e5c0747e0fa805feabfb8a83d5526ed3c65a72208c8bbc9"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Figure 1:",
+          "page_text_sha256": "1044bb5c5e704fb5a1894ebf6307bb5309c24e51218238c95c57f84f19b3c7fe"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "L-functions lie on the critical line Re(s) = 12 . This conjecture governs the fine distribution of primes",
+          "page_text_sha256": "9eb4936820fa700069937f5e3da65ebf51f6e387b95948c3ca35160f8a81fbf4"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        2,
+        4
+      ],
+      "pages_beyond_recorded_citations": [
+        2
+      ],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The body still supplies only T_recompose=O(2^n). Upstream isBigO_zero shows that an identically zero function satisfies an O(g) upper bound for any comparison g. Thus the printed upper-bound predicate cannot itself encode an exponential lower bound. This is an exact asymptotic scope obstruction, not a complexity-class separation theorem or a model of an NP algorithm.",
+      "candidate_roles": [
+        {
+          "code_key": "zero-bigO",
+          "role": "obstruction-only"
+        }
+      ],
+      "search_terms": [
+        "NP complete lower bound",
+        "isBigO_zero",
+        "exponential recomposition",
+        "Turing machine complexity"
+      ],
+      "missing_bridges": [
+        "O(2^n) is an upper bound, not an exponential lower bound. A slow decomposition/recomposition algorithm cannot rule out all polynomial-time algorithms.",
+        "Prove the sieve iteration converges and preserves the original function/zeros; symmetric fixed data need not force each zero onto the symmetry axis.",
+        "Keep contragredient/conjugate characters, gamma factors and symmetric-power existence hypotheses.",
+        "Specify the computation model and prove the universal lower bound; keep upper bounds and algorithm-specific costs distinct.",
+        "Specify the computation model and universal lower-bound quantifiers; illustrative graphs and an exponential upper bound cannot establish P≠NP.",
+        "State a computation model and a lower-bound predicate with universal algorithm quantifiers; retain the distinction between an upper bound for one procedure and exclusion of all polynomial algorithms."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:d7819c0364c77a97:status-assertions-not-proof-evidence",
+      "source_id": "sha256:d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "taxonomy": "LogicAndComputation",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 2,
+          "anchor": "Statistical Independence of Zeros",
+          "page_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Error Bounds for Mixed Automorphic Forms",
+          "page_text_sha256": "c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4"
+        },
+        {
+          "pdf_page": 1,
+          "anchor": "Updated Verification of Recursive Refinement",
+          "page_text_sha256": "7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "Critical Review of Remaining Open Problems",
+          "page_text_sha256": "c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "Fourier analysis. By demonstrating that cumulative errors across distinct",
+          "page_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        2,
+        3
+      ],
+      "pages_beyond_recorded_citations": [],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The status note continues to call sublinear growth and decaying correlation resolutions while explicitly listing missing mixed-form cross-term estimates. Searches of covariance, asymptotic budgets and source-residual evolution supply generic conditional bounds, not the required arithmetic supplier or independence theorem.",
+      "candidate_roles": [],
+      "search_terms": [
+        "cross-domain covariance",
+        "mixed automorphic errors",
+        "sublinear error uniform bound",
+        "statistical independence"
+      ],
+      "missing_bridges": [
+        "Verify the cited Axiom 1 uniform bound versus its growing estimates and Axiom 5 rate versus normalized convergence.",
+        "Zero correlation is weaker than independence; retain RH/GRH premises in the cited independence argument.",
+        "The acknowledged mixed cross-term bounds remain missing. Status labels and future numerical validation do not discharge them.",
+        "Resolve the underlying references and preserve their exact rate, normalization and RH/GRH premises.",
+        "Resolve the actual referenced inequalities and retain constants, rates, normalization and all conditional premises.",
+        "Recover exact source inequalities and conditional hypotheses from the named January documents; sublinear growth does not mean boundedness, and decorrelation does not establish independence."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:d00d427aef3a27d8:rmt-langlands-survey-boundary",
+      "source_id": "sha256:d00d427aef3a27d8afea732fe2f694762bfdde1e24916eb8419f5be71a187a99",
+      "asset_sha256": "d00d427aef3a27d8afea732fe2f694762bfdde1e24916eb8419f5be71a187a99",
+      "taxonomy": "NumberTheory",
+      "previous_outcome": "unresolved",
+      "outcome": "repair-candidate",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 6,
+          "anchor": "Langlands Correspondences",
+          "page_text_sha256": "bdaa5afd57bb92160e4fb31216fc67ed433964e589caeb9ae2df85aed2ed4fe4"
+        },
+        {
+          "pdf_page": 8,
+          "anchor": "Universality and the GUE Conjecture",
+          "page_text_sha256": "4c6436f25c2386c8f0d93770808b15d25f422cdb640e630e84c137dc97594d9b"
+        },
+        {
+          "pdf_page": 11,
+          "anchor": "5.6    Future Directions in Computational Verification",
+          "page_text_sha256": "6408cfa885b825568438b5009f73ab1f4d998c33a34f9895585a1ae81ec0c43f"
+        },
+        {
+          "pdf_page": 12,
+          "anchor": "varieties provides a geometric realization of automorphic representations, allowing the",
+          "page_text_sha256": "a91203a092eb19a128edb952fcf13d7d087c38c56f04626a1dba2a28819a53e1"
+        },
+        {
+          "pdf_page": 13,
+          "anchor": "Sheaf theory, cohomology, and higher-dimensional geometry offer profound insights into",
+          "page_text_sha256": "bd17d0a0d9b583695ed7511448a1e78b81eb155f7a73dd6d4dea3bc0e9d171b8"
+        },
+        {
+          "pdf_page": 14,
+          "anchor": "Recent work by Tao and Rodgers has shown that Λ ≥ 0, providing additional support",
+          "page_text_sha256": "2c2696ae42c2f3b78c1bc1398db8f9188444e933d028adee9af7026e5e52cbcb"
+        },
+        {
+          "pdf_page": 17,
+          "anchor": "8.6    Concluding Remarks",
+          "page_text_sha256": "7cbe2a2894b39bfd4321a406d93caf552e97978570b3f9eadd265cba29c6e657"
+        },
+        {
+          "pdf_page": 18,
+          "anchor": "• Speculative Frameworks: New speculative approaches, such as probabilistic",
+          "page_text_sha256": "02ca38f3c694724fecf7dafd63894cb92f6f35b224445fb02fcda10ef1b83c92"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        14,
+        17,
+        18
+      ],
+      "pages_beyond_recorded_citations": [
+        14,
+        17,
+        18
+      ],
+      "read_extent": "Further selected complete physical pages read, including later limitations/open-question sections; not a full-manuscript audit. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "A maintained source theorem gives a concrete possible replacement for the missing statistical-to-deterministic bridge: certified even/odd channel errors on the same pair, plus a strict model-energy margin, exclude simultaneous endpoint zeros. The survey explicitly treats GRH as open in its later conclusion and supplies no such enclosures. The theorem is unelaborated source at the pin and does not derive its hypotheses from GUE statistics.",
+      "candidate_roles": [
+        {
+          "code_key": "pair-exclusion",
+          "role": "repair-candidate"
+        }
+      ],
+      "search_terms": [
+        "symmetric pair enclosure",
+        "Enclosure excludes_pair",
+        "deterministic zero exclusion",
+        "RMT statistical upgrade"
+      ],
+      "missing_bridges": [
+        "State the exact proven versus conjectural local/global correspondence for each group; do not assume a general global bijection.",
+        "Correct/define unfolded spacing and distinguish pair correlation from nearest-neighbor laws and finite samples. A symmetry-type analogy does not transfer GRH between families.",
+        "Retain the speculative and empirical scope of the machine-learning/quantum/statistical proposals and do not treat the survey bibliography as source verification.",
+        "Prove the source-specific local/global comparison and an independent deterministic exclusion theorem with all conductor, dual and tail data.",
+        "State an exact statistical proposition and prove a separate all-height deterministic/source comparison. The survey’s Newman-sign and perturbation claims also need their precise family and normalization.",
+        "Choose the actual completed arithmetic source, valid reflected pair and exact domain; prove the required symmetry/dual comparison.",
+        "Construct independently certified value and secant errors, prove the strict margin on every required pair and control all tails. Pointwise eventual acceptance cannot be silently made uniform."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:7e3e7acb686d4196:short-rmt-proof-upgrade-gap",
+      "source_id": "sha256:7e3e7acb686d41960092ebb2a17334d623db00ac2acc1a590a669c1f4698a712",
+      "asset_sha256": "7e3e7acb686d41960092ebb2a17334d623db00ac2acc1a590a669c1f4698a712",
+      "taxonomy": "ProbabilityCombinatorics",
+      "previous_outcome": "unresolved",
+      "outcome": "repair-candidate",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 4,
+          "anchor": "Critical Line as a Universal Symmetry.",
+          "page_text_sha256": "b31c602456977453fa7241a1c4c22ab4d30f19a65c9d059ed695d18cb8f5092e"
+        },
+        {
+          "pdf_page": 3,
+          "anchor": "A UNIFIED THEORETICAL FRAMEWORK FOR THE PROOF OF THE RIEMANN",
+          "page_text_sha256": "d72fd852ae2be9f5946bb161814e5346eeb9c4675e5ccbc5f265089e2f2d801a"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "4                            R.A. JACOB MARTONE",
+          "page_text_sha256": "b31c602456977453fa7241a1c4c22ab4d30f19a65c9d059ed695d18cb8f5092e"
+        },
+        {
+          "pdf_page": 2,
+          "anchor": "2                           R.A. JACOB MARTONE",
+          "page_text_sha256": "ddcfc4718843ca07fc0778e086015f37c36ff39c8155afd0819280d253ffba47"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        2,
+        3,
+        4
+      ],
+      "pages_beyond_recorded_citations": [
+        2
+      ],
+      "read_extent": "Short asset; no further unreviewed substantive section located. Complete listed pages reread. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "A maintained source theorem gives a concrete possible replacement for the missing statistical-to-deterministic bridge: certified even/odd channel errors on the same pair, plus a strict model-energy margin, exclude simultaneous endpoint zeros. This short RMT version asserts alignment from statistical agreement but supplies no such enclosures. The theorem is unelaborated source at the pin and does not derive its hypotheses from GUE statistics.",
+      "candidate_roles": [
+        {
+          "code_key": "pair-exclusion",
+          "role": "repair-candidate"
+        }
+      ],
+      "search_terms": [
+        "symmetric pair enclosure",
+        "Enclosure excludes_pair",
+        "deterministic zero exclusion",
+        "RMT statistical upgrade"
+      ],
+      "missing_bridges": [
+        "Prove the deterministic upgrade for the exact source rather than equating finite numerical agreement with universal alignment.",
+        "Preserve conjectural versus proved ranges of pair correlation and family symmetry type; nearest-neighbor/repulsion heuristics do not rule out individual off-line zeros.",
+        "Prove the source-specific local/global comparison and an independent deterministic exclusion theorem with all conductor, dual and tail data.",
+        "State an exact statistical proposition and prove a separate all-height deterministic/source comparison. The survey’s Newman-sign and perturbation claims also need their precise family and normalization.",
+        "Choose the actual completed arithmetic source, valid reflected pair and exact domain; prove the required symmetry/dual comparison.",
+        "Construct independently certified value and secant errors, prove the strict margin on every required pair and control all tails. Pointwise eventual acceptance cannot be silently made uniform."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:bd284739968eab78:exceptional-embedding-not-automorphic-transfer",
+      "source_id": "sha256:bd284739968eab786f84fc66f3c8e3312ea6037667a9f2ffdf16c3b5db7baca1",
+      "asset_sha256": "bd284739968eab786f84fc66f3c8e3312ea6037667a9f2ffdf16c3b5db7baca1",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "unresolved",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 3,
+          "anchor": "Theorem: Positivity Constraints for F4 and E8",
+          "page_text_sha256": "99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98"
+        },
+        {
+          "pdf_page": 5,
+          "anchor": "Extensions to Symmetric and Exterior Powers",
+          "page_text_sha256": "029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7"
+        },
+        {
+          "pdf_page": 10,
+          "anchor": "def residue_computation(prime_list, eigenvalues):",
+          "page_text_sha256": "3943ccf311e2f855e0a595f09cbb263bc494c3c4e52d6d41d33c09b948f549c1"
+        },
+        {
+          "pdf_page": 8,
+          "anchor": "Prime p     Res(p)G2   Res(p)GL(7) Difference",
+          "page_text_sha256": "eecf6273c7d8f380e42dbc525d90401a0d44133ed299aa89c5abdf5186ab877b"
+        },
+        {
+          "pdf_page": 4,
+          "anchor": "Proof. 1. **Compactification of Moduli Space:** Decompose the moduli space into boundary",
+          "page_text_sha256": "ed0167e5d58cc5eab63bbcd26b1a38e6f98679d01463917efa66d981d4f67943"
+        },
+        {
+          "pdf_page": 5,
+          "anchor": "Prime p      Res(p)F4  Res(p)GL(26)      Difference",
+          "page_text_sha256": "029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7"
+        },
+        {
+          "pdf_page": 9,
+          "anchor": "A     Numerical Validation Methodologies",
+          "page_text_sha256": "77a2f260c0736e8e8c98a159ecdbba5cd91659396819fc909c59b7dd45765a5d"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        4,
+        5,
+        9
+      ],
+      "pages_beyond_recorded_citations": [
+        4,
+        9
+      ],
+      "read_extent": "Further selected complete physical pages read, including later limitations/open-question sections; not a full-manuscript audit. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The further appendix defines its reported residues using chosen critical-line coordinates and finitely many supplied eigenvalues. This builds alignment into the numerical model without identifying it with the original automorphic source. Finite comparison tolerances and representation dimensions do not supply an exact exceptional-group lift or a global zero theorem.",
+      "candidate_roles": [],
+      "search_terms": [
+        "exceptional residue finite prime sum",
+        "symmetric exterior power transfer",
+        "twisted Dirichlet character",
+        "validated eigenvalue enclosure"
+      ],
+      "missing_bridges": [
+        "A faithful linear representation G→GL(n) alone does not construct a global automorphic lift or prove equality of L-functions.",
+        "Construct compactification/localization and prove the actual positivity-to-residue-zero and residue-to-zero-location comparisons.",
+        "Finite prime tables with 10⁻⁸/10⁻⁹ differences are approximate comparisons, not exact factor identities or all-zero coverage; symmetric/exterior/twisted claims need separate sources.",
+        "Construct exact local parameters and the automorphic transfer; certify numerical errors only after fixing the actual mathematical source.",
+        "Construct the representation homomorphisms, genuine twists and local-factor identities; prove the separate global analytic comparison.",
+        "Construct the actual source, representation/twist and local factors before comparing the data; certify the enclosures and omitted tail.",
+        "Explain why the test coordinates may be restricted to the critical line without assuming the desired conclusion."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:a748ea4b4592e7ab:purity-frobenius-versus-global-zeros",
+      "source_id": "sha256:a748ea4b4592e7ab0c0d2d088342035a07bef9e9c78efc69a2a19602aa3cf515",
+      "asset_sha256": "a748ea4b4592e7ab0c0d2d088342035a07bef9e9c78efc69a2a19602aa3cf515",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "obstruction-only",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 82,
+          "anchor": "Lemma 8.2",
+          "page_text_sha256": "d512130e9dc70e0587b35512a132b17e2f6eceb1a72fb4cd33fd1ccb7941fb48"
+        },
+        {
+          "pdf_page": 87,
+          "anchor": "Lemma 9.3",
+          "page_text_sha256": "8a986f83e54cab6305b70b8c7cabc97d92a2b6018b5c24cf7a65292c468c49b5"
+        },
+        {
+          "pdf_page": 91,
+          "anchor": "Lemma 10.4",
+          "page_text_sha256": "bad1bc584eba3673bbd0d6e1ee07de3e95bb7b659126a32a2027abf981995e0e"
+        },
+        {
+          "pdf_page": 108,
+          "anchor": "15     Frobenius Eigenvalues: Arithmetic and Spectral Connections",
+          "page_text_sha256": "f7a0544aa29e2632785b727f39ccb1c488a19bb30fc9e20af927f1ab721e669c"
+        },
+        {
+          "pdf_page": 138,
+          "anchor": "23     Fourier-Mukai Transform: Definition and Fundamental Prop-",
+          "page_text_sha256": "12c4d2c302efb686564d478a4519280a7a66847ae86566e760997cc36d27f144"
+        },
+        {
+          "pdf_page": 175,
+          "anchor": "33     Global-Local Motivic Extensions: Bridging Local and Global",
+          "page_text_sha256": "7e16429453e344c38aec3f1ef1d9b5f1ec10cd2bc795627ed99c802cd0c7a2f5"
+        },
+        {
+          "pdf_page": 176,
+          "anchor": "33.2.2    Global Spectral Purity",
+          "page_text_sha256": "9ea34b7a98c1f4a44d0fb75411f0902463d1e5c3a6605c3f2f9d0b3eca3f13fc"
+        },
+        {
+          "pdf_page": 330,
+          "anchor": "70     Open Questions: Challenges and Directions for Future Re-",
+          "page_text_sha256": "0edb2fb7c577a6d72a76d8bc899de2d3bae376d80e2fa55deaf2d3e05a6aba7d"
+        },
+        {
+          "pdf_page": 331,
+          "anchor": "70.3     Connections Between Domains",
+          "page_text_sha256": "21dc0b59ab9dc09c3682323f710f44f5aba6692528c3f9fe0683758af60a9885"
+        },
+        {
+          "pdf_page": 334,
+          "anchor": "71     Challenges in Motivic L-Functions: Open Problems and Fu-",
+          "page_text_sha256": "79b161c7236b03e8abfcf2dbc9065e896ef224ded9de995c0808d149832a8956"
+        },
+        {
+          "pdf_page": 335,
+          "anchor": "Challenge 71.5. Twisted settings and derived categories introduce additional complexity,",
+          "page_text_sha256": "a09e6d3c5ac4c5873775af95c08177d6f3053770e4126e9adf7422e3abed81fa"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        330,
+        331,
+        334,
+        335
+      ],
+      "pages_beyond_recorded_citations": [
+        330,
+        331,
+        334,
+        335
+      ],
+      "read_extent": "Further selected complete physical pages read, including later limitations/open-question sections; not a full-manuscript audit. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The later open-question chapters explicitly leave exceptional/higher-dimensional purity, local factors and motivic zero distributions unresolved. Upstream power convergence and nonzero-power lemmas give a precise finite-to-limit scope check: with x=1/2 every finite product x^n is nonzero, yet it tends to zero. This blocks a bare passage from finite nonvanishing to nonvanishing of a limit. It is not a counterexample to a correctly normalized convergent L-function product or a formal theorem about the undefined Spec(L).",
+      "candidate_roles": [
+        {
+          "code_key": "powers-tend-zero",
+          "role": "obstruction-only"
+        },
+        {
+          "code_key": "nonzero-powers",
+          "role": "obstruction-only"
+        }
+      ],
+      "search_terms": [
+        "Euler product local global spectrum",
+        "nonzero finite products zero limit",
+        "tendsto_pow_atTop_nhds_zero",
+        "Fourier Mukai purity"
+      ],
+      "missing_bridges": [
+        "Separate local Frobenius eigenvalue weights |α|=q^(w/2) from complex global L-function zero coordinates; construct an exact comparison with all normalizations.",
+        "A general Fourier–Mukai kernel need not preserve irreducibility or support; supports even live on different spaces. Specify equivalence/kernel hypotheses and prove the intended relation.",
+        "Define Spec(IC(M_G)) and prove its all-zero trace realization. Derived-category formation localizes quasi-isomorphisms, not merely homotopy equivalences; retain this categorical distinction.",
+        "Construct the variable/normalization change and exact determinant/global analytic realization, with all convergence and weight hypotheses.",
+        "Define the local/global spectral objects and prove their relation under analytic continuation; local factor roots and global complex zero coordinates are different objects.",
+        "Specify the Fourier–Mukai kernel and equivalence hypotheses; arbitrary kernels on dual abelian varieties need not induce equivalences.",
+        "Provide uniform analytic convergence and nonvanishing/unit bounds in the actual domain and a separate continuation theorem; a product identity is not a spectrum-union law.",
+        "Preserve the later acknowledged motivic/exceptional open cases and construct the exact local-weight/global-zero comparison and Fourier–Mukai kernel."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:e686e3fe101ea8bf:purity-frobenius-versus-global-zeros",
+      "source_id": "sha256:e686e3fe101ea8bf1152129f77e05b0a2b05dabe795f7226b4f2a9073760ef23",
+      "asset_sha256": "e686e3fe101ea8bf1152129f77e05b0a2b05dabe795f7226b4f2a9073760ef23",
+      "taxonomy": "Algebra",
+      "previous_outcome": "unresolved",
+      "outcome": "obstruction-only",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 82,
+          "anchor": "Lemma 8.2",
+          "page_text_sha256": "d512130e9dc70e0587b35512a132b17e2f6eceb1a72fb4cd33fd1ccb7941fb48"
+        },
+        {
+          "pdf_page": 87,
+          "anchor": "Lemma 9.3",
+          "page_text_sha256": "8a986f83e54cab6305b70b8c7cabc97d92a2b6018b5c24cf7a65292c468c49b5"
+        },
+        {
+          "pdf_page": 91,
+          "anchor": "Lemma 10.4",
+          "page_text_sha256": "bad1bc584eba3673bbd0d6e1ee07de3e95bb7b659126a32a2027abf981995e0e"
+        },
+        {
+          "pdf_page": 108,
+          "anchor": "15     Frobenius Eigenvalues: Arithmetic and Spectral Connections",
+          "page_text_sha256": "f7a0544aa29e2632785b727f39ccb1c488a19bb30fc9e20af927f1ab721e669c"
+        },
+        {
+          "pdf_page": 138,
+          "anchor": "23     Fourier-Mukai Transform: Definition and Fundamental Prop-",
+          "page_text_sha256": "12c4d2c302efb686564d478a4519280a7a66847ae86566e760997cc36d27f144"
+        },
+        {
+          "pdf_page": 175,
+          "anchor": "33     Global-Local Motivic Extensions: Bridging Local and Global",
+          "page_text_sha256": "7e16429453e344c38aec3f1ef1d9b5f1ec10cd2bc795627ed99c802cd0c7a2f5"
+        },
+        {
+          "pdf_page": 176,
+          "anchor": "33.2.2    Global Spectral Purity",
+          "page_text_sha256": "9ea34b7a98c1f4a44d0fb75411f0902463d1e5c3a6605c3f2f9d0b3eca3f13fc"
+        },
+        {
+          "pdf_page": 330,
+          "anchor": "70     Open Questions: Challenges and Directions for Future Re-",
+          "page_text_sha256": "0edb2fb7c577a6d72a76d8bc899de2d3bae376d80e2fa55deaf2d3e05a6aba7d"
+        },
+        {
+          "pdf_page": 331,
+          "anchor": "70.3     Connections Between Domains",
+          "page_text_sha256": "21dc0b59ab9dc09c3682323f710f44f5aba6692528c3f9fe0683758af60a9885"
+        },
+        {
+          "pdf_page": 334,
+          "anchor": "71     Challenges in Motivic L-Functions: Open Problems and Fu-",
+          "page_text_sha256": "79b161c7236b03e8abfcf2dbc9065e896ef224ded9de995c0808d149832a8956"
+        },
+        {
+          "pdf_page": 335,
+          "anchor": "Challenge 71.5. Twisted settings and derived categories introduce additional complexity,",
+          "page_text_sha256": "a09e6d3c5ac4c5873775af95c08177d6f3053770e4126e9adf7422e3abed81fa"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        330,
+        331,
+        334,
+        335
+      ],
+      "pages_beyond_recorded_citations": [
+        330,
+        331,
+        334,
+        335
+      ],
+      "read_extent": "Further selected complete physical pages read, including later limitations/open-question sections; not a full-manuscript audit. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The later open-question chapters explicitly leave exceptional/higher-dimensional purity, local factors and motivic zero distributions unresolved. Upstream power convergence and nonzero-power lemmas give a precise finite-to-limit scope check: with x=1/2 every finite product x^n is nonzero, yet it tends to zero. This blocks a bare passage from finite nonvanishing to nonvanishing of a limit. It is not a counterexample to a correctly normalized convergent L-function product or a formal theorem about the undefined Spec(L).",
+      "candidate_roles": [
+        {
+          "code_key": "powers-tend-zero",
+          "role": "obstruction-only"
+        },
+        {
+          "code_key": "nonzero-powers",
+          "role": "obstruction-only"
+        }
+      ],
+      "search_terms": [
+        "Euler product local global spectrum",
+        "nonzero finite products zero limit",
+        "tendsto_pow_atTop_nhds_zero",
+        "Fourier Mukai purity"
+      ],
+      "missing_bridges": [
+        "Separate local Frobenius eigenvalue weights |α|=q^(w/2) from complex global L-function zero coordinates; construct an exact comparison with all normalizations.",
+        "A general Fourier–Mukai kernel need not preserve irreducibility or support; supports even live on different spaces. Specify equivalence/kernel hypotheses and prove the intended relation.",
+        "Define Spec(IC(M_G)) and prove its all-zero trace realization. Derived-category formation localizes quasi-isomorphisms, not merely homotopy equivalences; retain this categorical distinction.",
+        "Construct the variable/normalization change and exact determinant/global analytic realization, with all convergence and weight hypotheses.",
+        "Define the local/global spectral objects and prove their relation under analytic continuation; local factor roots and global complex zero coordinates are different objects.",
+        "Specify the Fourier–Mukai kernel and equivalence hypotheses; arbitrary kernels on dual abelian varieties need not induce equivalences.",
+        "Provide uniform analytic convergence and nonvanishing/unit bounds in the actual domain and a separate continuation theorem; a product identity is not a spectrum-union law.",
+        "Preserve the later acknowledged motivic/exceptional open cases and construct the exact local-weight/global-zero comparison and Fourier–Mukai kernel."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:2b7478353ae500b1:conditional-transcendence-and-chaotic-sums",
+      "source_id": "sha256:2b7478353ae500b16accd001c530b316673bd54ca7239a6f4b31552a5212dcb0",
+      "asset_sha256": "2b7478353ae500b16accd001c530b316673bd54ca7239a6f4b31552a5212dcb0",
+      "taxonomy": "NumberTheory",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 15,
+          "anchor": "Theorem 5.3",
+          "page_text_sha256": "c6168009049cc379dc22dafdb833aca881faf8da4e6f37d924d4910aa9f53515"
+        },
+        {
+          "pdf_page": 24,
+          "anchor": "Theorem 8.5",
+          "page_text_sha256": "ed98e538993ace6b5031d5d6b9b92540bf31565c7c803802149b94029e8cf066"
+        },
+        {
+          "pdf_page": 12,
+          "anchor": "4.2    Logarithmic Independence",
+          "page_text_sha256": "d1b6aa4021c60daee81c785d23fbc9ed0fc1191e507c582c210cb6589c003613"
+        },
+        {
+          "pdf_page": 13,
+          "anchor": "Proof. Combining Lemma 3.2 and Lemma 3.3, we see that:",
+          "page_text_sha256": "555a8fdf607ec152dc5a34f6336de6a68f1ec856a534a36c5d8d1faf9b56687a"
+        },
+        {
+          "pdf_page": 18,
+          "anchor": "6.3    Propagation of Transcendence",
+          "page_text_sha256": "6af0ad3ef32d9539b52520e8fc1cb9dc6cfe89c269d6a1d2e8213ba58132723c"
+        },
+        {
+          "pdf_page": 25,
+          "anchor": "• Spectral term transcendence (Lemma 3.4),",
+          "page_text_sha256": "2f493af1ef539991c3bb422cc7062ce6fde05b1236f9161036588d71214d3892"
+        },
+        {
+          "pdf_page": 26,
+          "anchor": "While Zhang’s theorem provides bounds on prime gaps, the general distribution",
+          "page_text_sha256": "fc4814d6b2ee659bda9875d2692175f16a254c53cd23676c3f4e51a6708e9583"
+        },
+        {
+          "pdf_page": 28,
+          "anchor": "A.5    Sampling Sufficiency in Numerical Tests",
+          "page_text_sha256": "f25a2008e885a333e9094801f277cec8d108ee3aebf3f5c1ccfe756c1d92ccb0"
+        },
+        {
+          "pdf_page": 27,
+          "anchor": "A.3     Motivic Period Independence",
+          "page_text_sha256": "e491b69e31b68c20e21f0befeaae606dd1bf2a43c053119187aede282aeabe8f"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "pages_beyond_recorded_citations": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "read_extent": "Further selected complete physical pages read, including later limitations/open-question sections; not a full-manuscript audit. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The newly read gap appendix explicitly leaves motivic independence, spectral chaos and sampling sufficiency open. AlgebraicIndependent.linearIndependent supports the restricted conditional noncancellation of finite linear combinations over the same coefficient field, once algebraic independence is assumed. It proves neither that prime logarithms satisfy that premise nor that an infinite sum or an algebraic-coefficient expression over a different field is transcendental.",
+      "candidate_roles": [
+        {
+          "code_key": "independence-to-linear",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "prime logarithm independence",
+        "finite linear combination noncancellation",
+        "motivic period assumption",
+        "Baker infinite series"
+      ],
+      "missing_bridges": [
+        "Density/quasi-randomness does not imply a sum is transcendental or cannot cancel. Define the infinite sum and prove an actual transcendence theorem with algebraic coefficient hypotheses.",
+        "Logarithm independence must specify linear/algebraic and coefficient fields; modularly dense phases are a different assertion.",
+        "Functional equations relate specified paired values with gamma/conductor factors, not all critical and noncritical values. Preserve the conditional motivic period and analytic-continuation scope.",
+        "Separate finite nonzero algebraic-coefficient logarithmic forms from convergent infinite sums; prove coefficient hypotheses, nonvanishing and the required transcendence result.",
+        "Supply the appropriate finite logarithmic-form theorem with nonzero algebraic coefficients and a separate infinite-sum argument.",
+        "State the exact paired values and algebraicity/nonvanishing of multipliers; no universal propagation of transcendence follows from continuity or holomorphy.",
+        "Give the exact indexed logarithm/period family and coefficient field; prove algebraic independence rather than importing it from density or prime-gap irregularity.",
+        "Prove a finite-to-infinite convergence and transcendence theorem with the actual weights; preserve the source’s explicitly open motivic, spectral and sampling assumptions."
+      ]
+    },
+    {
+      "idea_id": "idea:unpublished-v3:ac7a2ecdc5f9c787:conditional-transcendence-and-chaotic-sums",
+      "source_id": "sha256:ac7a2ecdc5f9c78779e03fbf8d3f0432eab185b4d7673afbed9053821b739283",
+      "asset_sha256": "ac7a2ecdc5f9c78779e03fbf8d3f0432eab185b4d7673afbed9053821b739283",
+      "taxonomy": "NumberTheory",
+      "previous_outcome": "unresolved",
+      "outcome": "conditional-fragment",
+      "main_claim_resolved": false,
+      "interpretation_origin": "assistant-proposed",
+      "owner_understanding_date": null,
+      "paper_citations": [
+        {
+          "pdf_page": 15,
+          "anchor": "Theorem 5.3",
+          "page_text_sha256": "c6168009049cc379dc22dafdb833aca881faf8da4e6f37d924d4910aa9f53515"
+        },
+        {
+          "pdf_page": 24,
+          "anchor": "Theorem 8.5",
+          "page_text_sha256": "ed98e538993ace6b5031d5d6b9b92540bf31565c7c803802149b94029e8cf066"
+        },
+        {
+          "pdf_page": 12,
+          "anchor": "4.2    Logarithmic Independence",
+          "page_text_sha256": "d1b6aa4021c60daee81c785d23fbc9ed0fc1191e507c582c210cb6589c003613"
+        },
+        {
+          "pdf_page": 13,
+          "anchor": "Proof. Combining Lemma 3.2 and Lemma 3.3, we see that:",
+          "page_text_sha256": "555a8fdf607ec152dc5a34f6336de6a68f1ec856a534a36c5d8d1faf9b56687a"
+        },
+        {
+          "pdf_page": 18,
+          "anchor": "6.3    Propagation of Transcendence",
+          "page_text_sha256": "6af0ad3ef32d9539b52520e8fc1cb9dc6cfe89c269d6a1d2e8213ba58132723c"
+        },
+        {
+          "pdf_page": 25,
+          "anchor": "• Spectral term transcendence (Lemma 3.4),",
+          "page_text_sha256": "2f493af1ef539991c3bb422cc7062ce6fde05b1236f9161036588d71214d3892"
+        },
+        {
+          "pdf_page": 26,
+          "anchor": "While Zhang’s theorem provides bounds on prime gaps, the general distribution",
+          "page_text_sha256": "fc4814d6b2ee659bda9875d2692175f16a254c53cd23676c3f4e51a6708e9583"
+        },
+        {
+          "pdf_page": 28,
+          "anchor": "A.5    Sampling Sufficiency in Numerical Tests",
+          "page_text_sha256": "f25a2008e885a333e9094801f277cec8d108ee3aebf3f5c1ccfe756c1d92ccb0"
+        },
+        {
+          "pdf_page": 27,
+          "anchor": "A.3     Motivic Period Independence",
+          "page_text_sha256": "e491b69e31b68c20e21f0befeaae606dd1bf2a43c053119187aede282aeabe8f"
+        }
+      ],
+      "followup_read_pdf_pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "pages_beyond_recorded_citations": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "read_extent": "Further selected complete physical pages read, including later limitations/open-question sections; not a full-manuscript audit. Exact twin-page text may be read once across distinct assets; identities remain separate.",
+      "finding": "The newly read gap appendix explicitly leaves motivic independence, spectral chaos and sampling sufficiency open. AlgebraicIndependent.linearIndependent supports the restricted conditional noncancellation of finite linear combinations over the same coefficient field, once algebraic independence is assumed. It proves neither that prime logarithms satisfy that premise nor that an infinite sum or an algebraic-coefficient expression over a different field is transcendental.",
+      "candidate_roles": [
+        {
+          "code_key": "independence-to-linear",
+          "role": "conditional-fragment"
+        }
+      ],
+      "search_terms": [
+        "prime logarithm independence",
+        "finite linear combination noncancellation",
+        "motivic period assumption",
+        "Baker infinite series"
+      ],
+      "missing_bridges": [
+        "Density/quasi-randomness does not imply a sum is transcendental or cannot cancel. Define the infinite sum and prove an actual transcendence theorem with algebraic coefficient hypotheses.",
+        "Logarithm independence must specify linear/algebraic and coefficient fields; modularly dense phases are a different assertion.",
+        "Functional equations relate specified paired values with gamma/conductor factors, not all critical and noncritical values. Preserve the conditional motivic period and analytic-continuation scope.",
+        "Separate finite nonzero algebraic-coefficient logarithmic forms from convergent infinite sums; prove coefficient hypotheses, nonvanishing and the required transcendence result.",
+        "Supply the appropriate finite logarithmic-form theorem with nonzero algebraic coefficients and a separate infinite-sum argument.",
+        "State the exact paired values and algebraicity/nonvanishing of multipliers; no universal propagation of transcendence follows from continuity or holomorphy.",
+        "Give the exact indexed logarithm/period family and coefficient field; prove algebraic independence rather than importing it from density or prime-gap irregularity.",
+        "Prove a finite-to-infinite convergence and transcendence theorem with the actual weights; preserve the source’s explicitly open motivic, spectral and sampling assumptions."
+      ]
+    }
+  ]
+}
