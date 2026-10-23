@@ -87,7 +87,8 @@ theorem pAdicExponent_pPrimaryEmbedding (p : PrimeIndex) (n : ℤ) :
 /-- Bundled split identity for the local coordinate and primary embedding. -/
 theorem pAdicExponent_comp_pPrimaryEmbedding (p : PrimeIndex) :
     (pAdicExponent p).comp (pPrimaryEmbedding p) = AddMonoidHom.id ℤ := by
-  ext n
+  apply AddMonoidHom.ext
+  intro n
   exact pAdicExponent_pPrimaryEmbedding p n
 
 /-- The `p`-primary embedding is injective because its local coordinate is a
@@ -103,11 +104,10 @@ theorem pPrimaryEmbedding_injective (p : PrimeIndex) :
 theorem pAdicExponent_pPrimaryEmbedding_of_ne
     {p q : PrimeIndex} (hpq : p ≠ q) (n : ℤ) :
     pAdicExponent p (pPrimaryEmbedding q n) = 0 := by
-  have hqp : q ≠ p := Ne.symm hpq
   change
     (FreeAbelianGroup.toFinsupp
       (Finsupp.toFreeAbelianGroup (Finsupp.single q n))) p = 0
-  simp [hpq, hqp]
+  simp [hpq]
 
 /-- Every local coordinate of the all-prime equivalence is the corresponding
 `p`-adic exponent homomorphism. -/
