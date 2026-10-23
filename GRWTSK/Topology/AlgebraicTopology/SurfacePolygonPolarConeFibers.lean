@@ -38,15 +38,23 @@ theorem jointPolar_radius_eq
     (h : standardConePolarDisk (standardCircleConeProjection p) =
       standardConePolarDisk (standardCircleConeProjection q)) :
     p.2 = q.2 := by
-  rcases p with ⟨z, r⟩
-  rcases q with ⟨w, s⟩
-  refine Quotient.inductionOn₂ z w ?_
-  intro θ φ
+  have hp :
+      ‖(standardConePolarDisk (standardCircleConeProjection p)).val‖ =
+        (p.2 : ℝ) := by
+    simpa only [standardCircleConeRadius_projection] using
+      standardConePolarDisk_norm_eq_radius (standardCircleConeProjection p)
+  have hq :
+      ‖(standardConePolarDisk (standardCircleConeProjection q)).val‖ =
+        (q.2 : ℝ) := by
+    simpa only [standardCircleConeRadius_projection] using
+      standardConePolarDisk_norm_eq_radius (standardCircleConeProjection q)
   apply Subtype.ext
-  apply diskPolar_radius_eq θ φ r s
-  simpa [standardConePolarDisk_projection,
-    GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity.unitCircleJointPolar,
-    unitCirclePolarDisk_coe] using h
+  calc
+    (p.2 : ℝ) =
+        ‖(standardConePolarDisk (standardCircleConeProjection p)).val‖ := hp.symm
+    _ = ‖(standardConePolarDisk (standardCircleConeProjection q)).val‖ :=
+      congrArg (fun z : ClosedComplexUnitDisk => ‖z.val‖) h
+    _ = (q.2 : ℝ) := hq
 
 /-- At a nonzero radius, equality of disk values implies equality of
 the original angular circle coordinates. -/
