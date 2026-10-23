@@ -1,0 +1,65 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-endpoint-cross-collision-squarefree-midpoint-532-v0.1"
+owner_repository = "grwtsk/math"
+issue = 532
+parent_issue = 527
+parent_pr = 530
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_SQUAREFREE_MIDPOINT_CORRELATION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionSquarefreeMidpoint"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointCrossCollisionSquarefreeMidpoint"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_revision = "9b07fdb5f287dbc56839f806badf275c39e88f28"
+candidate_branch = "research/rh-squarefree-midpoint-532-20261021"
+theorem_source_commit = "f3a086cfc1a5afead8ca0ed78005c21e77a2baec"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionSquarefreeMidpoint.lean"
+theorem_source_git_blob = "49f0037ff8a531a68c0d91adcf15811bab361bcb"
+mathlib_theorem = "ArithmeticFunction.moebius_sq"
+
+[selected_increment]
+repository_wrapper = "moebiusReal"
+real_square_identity = "moebiusReal_sq_eq_squarefreeIndicator"
+endpoint_product = "mertensSquarefreeMidpointEndpointProduct"
+pointwise_rewrite = "mertensThreePointProgressionTerm_eq_squarefreeMidpoint"
+filtered_base_set = "mertensEndpointCrossCollisionSquarefreeMidpointBaseSet"
+endpoint_energy = "mertensEndpointCrossCollisionSquarefreeMidpointEnergy"
+weighted_energy = "weightedMertensEndpointCrossCollisionSquarefreeMidpointEnergy"
+adapter_surface = "SubpolynomialWeightedMertensEndpointSquarefreeMidpointCrossCollision"
+estimate_proved = false
+
+[scope]
+exact_identity_only = true
+squarefree_density_used = false
+divisor_square_expansion_used = false
+absolute_value_inserted = false
+midpoint_selector_preserved = true
+sign_preserved = true
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointCrossCollisionThreePointProgression.lean"
+git_blob = "081b77c12e49151668386e7364e9df745d6a5838"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_530"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+declaration = "ArithmeticFunction.moebius_sq"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+squarefree_midpoint_correlation_bound_proved = false
+divisor_square_identity_formalized = false
+chowla_proved = false
+elliott_proved = false
+riemann_hypothesis_proved = false
