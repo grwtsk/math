@@ -123,7 +123,10 @@ The `GRWTSK.NumberTheory.Farey.WeightedReturnBalance` module,
 file `GRWTSK/NumberTheory/Farey/WeightedReturnBalance.lean`,
 was introduced on existing `main` in
 [math commit `c50155b484dc5167ec8f67002a463cdc9ef4f8f4`](https://github.com/grwtsk/math/commit/c50155b484dc5167ec8f67002a463cdc9ef4f8f4)
-with Git blob `d3c68e18dc0e5be7b8a82464dc3feaede8ac56b0`.
+with Git blob `6fb6857656d34b7b2e22e8ef3229be339cb526fc`.
+A non-force proof-syntax revision to the inverse-eigenvalue cancellation
+was integrated at `9851f75531b628e574a59703a172a37c88fd68e4`,
+retaining the exact mathematical statements.
 Direct imports: `ReturnAngularChannel`, blob
 `df4c90661a7f0a6897d274604de22850b703d38b`,
 and Mathlib pinned at

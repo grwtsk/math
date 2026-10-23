@@ -1638,3 +1638,114 @@ non-residual finiteness theorem and no RH deduction.
 - `GRWTSK/NumberTheory/Zeta/Riemann/RationalZetaCenterEvaluation.lean`: Git blob `fe39d3884be54c62a10d9feaaae9830e3150e59f`; SHA-256 `c10c2b2eb94a1bc804db68f54c959495cbca89d774f6526ec67751289beb44b4`.
 - `GRWTSK/NumberTheory/Zeta/Riemann/RationalZetaCenterRefinement.lean`: Git blob `aef28825d449cdef620ea94fdb0b4a7dc2e08b77`; SHA-256 `127e80b7c87f9d8319544302cb6810487445e1c8f0e0d38b12db9cb0f32383bc`.
 - `GRWTSK/NumberTheory/Zeta/Riemann/VerifiedRationalNewtonCenter.lean`: Git blob `4e055f3f0f7c453145a37d27558f2d8cd1321ec9`; SHA-256 `decff5756a21975407c79f16012647da638a6f06c20c2f0738b1f31b08d0bfb6`.
+
+
+## Case FAREY-WEIGHTED-CLOCK-20261023 — balanced source clock and limit-positivity gate
+
+**Source identity (not an imported publication).** This bounded formalization is
+a **repository-derived 2026 algebraic and conditional real-limit construction**,
+credited in its source to mathematical direction by R.A. Jacob Martone and
+formalization assistance by OpenAI. No distinct peer-reviewed paper or
+preprint proves these exact Farey-specific constructions; therefore
+an external paper **title, printed authors, year, DOI/arXiv or theorem
+number are not established** and no historical influence is claimed.
+The stable source reference is
+[`grwtsk/math` commit `c50155b484dc5167ec8f67002a463cdc9ef4f8f4 (source introduction; compensation-proof revision `9851f75531b628e574a59703a172a37c88fd68e4`) (source introduction; compensation-proof revision `9851f75531b628e574a59703a172a37c88fd68e4`)`](https://github.com/grwtsk/math/commit/c50155b484dc5167ec8f67002a463cdc9ef4f8f4),
+Git blob `6fb6857656d34b7b2e22e8ef3229be339cb526fc`.
+The detailed [mathematical source note](../../../mathematics/NumberTheory/Farey/weighted-return-balance.md)
+was introduced at `d3339cb4d298b6b73d12928671fafca63f4d5d0d`,
+blob `9e75642cc3594c628fee3fc96516026ef7c78d2a`.
+
+**Exact theorem/method and hypotheses.** The imported **repository** supplier
+is the actual positive chronological Farey return `LR`, with real expanding
+eigenvalue `λ=(3+√5)/2>1` and the same mod-three four-state
+angular orbit `1,i,-1,-i`. The *definition* of the selected scalar
+source observation is `discreteSpiral n=(λ i)^n`.
+The raw four-term block is `1+λ i-λ²-λ³ i` and has real part
+`1-λ²<0`, so alternating sign/phase does **not** cancel the
+unequal expanding weights. The formal source's
+`weightedFourPhase_eq_pair_defects` identifies the exact
+two mismatches `w0-w2`, `w1-w3`; the norm is bounded by their
+absolute-value sum. Equal antipodal weights are a **sufficient stated
+premise**, not a consequence of fourfold phase.
+
+A chosen, explicit inverse-eigenvalue compensator
+`λ^{-n} discreteSpiral n` equals `i^n`, so its four
+**consecutive compensated terms** cancel at each integer stage.
+That is a theorem candidate only about this **selected** observation;
+no arbitrary gauge/scale choice is being justified. A finite paired
+signed sum also cancels term by term when the same weight and opposite
+errors are actually supplied at each cell.
+
+The **conditional limit-positivity theorem** requires all four suppliers:
+(1) stage-uniform `margin ≤ energy n`; (2) exact
+`cancel n=0` at every stage; (3) `residual → 0`
+in `ℝ` as `n→∞`; (4) an actual limit of
+`energy n + cancel n + residual n` to `limit`.
+Its conclusion is only `margin ≤ limit`.
+No source-specific arithmetic form, refining-partition construction,
+tail estimate, limiting Weil-space identification or strict spectral
+margin is synthesized by the conditional interface.
+
+**Exact corresponding Lean declarations and source identity.**
+Module `GRWTSK.NumberTheory.Farey.WeightedReturnBalance`
+in [`WeightedReturnBalance.lean`](../../../../GRWTSK/NumberTheory/Farey/WeightedReturnBalance.lean),
+introduced on existing `main` in
+`c50155b484dc5167ec8f67002a463cdc9ef4f8f4`,
+Git blob `6fb6857656d34b7b2e22e8ef3229be339cb526fc`.
+Fully qualified declaration suffixes:
+`weightedFourPhase`,
+`weightedFourPhase_eq_pair_defects`,
+`weightedFourPhase_zero_of_pair_balance`,
+`weightedFourPhase_norm_le`,
+`radialFourBlock`, `radialFourBlock_re`,
+`radialFourBlock_ne_zero_of_one_lt`,
+`discreteSpiral_first_four_eq_radialBlock`,
+`discreteSpiral_first_four_ne_zero`,
+`compensatedSample`, `compensatedSample_eq_phase`,
+`four_unit_phases_cancel`, `compensated_four_consecutive_zero`,
+`finite_paired_signed_sum_zero`,
+`finiteSquareEnergy`, `finiteSquareEnergy_nonneg`,
+`finite_balanced_energy_nonneg`,
+`limit_lower_bound_of_balanced_partitions`,
+`limit_nonneg_of_balanced_partitions`.
+Imported exact repository source:
+`GRWTSK.NumberTheory.Farey.ReturnAngularChannel`,
+Git blob `df4c90661a7f0a6897d274604de22850b703d38b`,
+itself depending on the Farey return and the real projector.
+Pinned toolchain is Lean `4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+**Relationship/status:** `source-proof-candidate` for the local
+matrix-clock/weighted phase identities; `conditional-interface`
+for the limit/positivity theorem; `finite-certificate` for independent
+exact arithmetic fixtures; `unresolved` for identifying the chosen
+compensator with a source-preserving admissible gauge and for an
+arithmetic-to-Weil/Hodge/NS bridge. Not `direct-import` of an outside
+paper or `local-proved-bridge` without a fresh kernel receipt.
+
+**Actual verification:** `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`. In the available runtime `lean`, `lake` and
+`leanchecker` are absent. The independent exact SymPy computation
+passed 625 small integer-weight defects, exact
+`1+λ i-λ²-λ³ i≠0`, the first eight compensated samples,
+and 299 finite rational examples of the uniform-margin accounting
+identity. The first floating-point trial triggered a strict-comparison
+roundoff failure and was replaced by exact rational arithmetic; neither
+test is Lean proof evidence. See the separately pinned
+verification issue for exact main commit, module/Mathlib closure,
+commands, exit statuses (presently unavailable), fresh kernel
+replay and transitive axiom audit. Do not transfer a previous eight-Farey-
+module receipt to this newly added leaf.
+
+**Method comparisons and nonclaims.** The [Sarnak 2011 lectures](https://publications.ias.edu/sarnak/paper/506)
+(printed p. 4, Definition 3 and Conjecture 4) are a previously
+identified `methodological-analogy` **only**: the local arithmetic
+clock proves neither an all-zero-entropy-flow Möbius theorem nor
+cancellation with actual Möbius weights. Navier–Stokes forcing/balance,
+finite Hodge centers, Schrödinger/Sturmian spectral limits,
+Ramanujan character reconstruction, and Weil/Riemann positivity
+require distinct **unresolved** source-preserving suppliers.
+Irrationality of zeros and alternating signs are not substitutes
+for those positive-operator and uniform-error premises.
+
