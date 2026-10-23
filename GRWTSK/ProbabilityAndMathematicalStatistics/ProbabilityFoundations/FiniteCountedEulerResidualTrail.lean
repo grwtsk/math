@@ -276,4 +276,27 @@ theorem ResidualFreshTrail.in_degree_partition
   rw [hunion, Finset.card_union_of_disjoint hdisj]
 
 
+
+/-- A terminal-maximal residual trail in a degree-balanced residual
+multigraph returns to its starting vertex. If its endpoints differed,
+the unused incoming degree at the finish would have to be negative. -/
+theorem ResidualFreshTrail.closed_of_balanced_maximal
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b)
+    (hbalance : ResidualDegreeBalanced m c U)
+    (hmax : R.Maximal) :
+    a = b := by
+  by_contra hne
+  have hall := hbalance b
+  have hout := R.out_degree_partition b
+  have hin := R.in_degree_partition b
+  have hzero := R.unused_out_card_zero_of_maximal hmax
+  have htrail := R.trail.used_degree_imbalance b
+  have hbb : b = b := rfl
+  simp [hne, hbb] at htrail
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
