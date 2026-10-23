@@ -759,6 +759,31 @@ theorem thetaKernelPositivePart_scaled (n : ℕ) (u : ℝ) :
   rw [← Real.exp_add]
   ring
 
+
+/-- The negative polynomial-weighted theta term admits the same scaled
+Gaussian variable as the positive term. -/
+theorem thetaKernelNegativePart_scaled (n : ℕ) (u : ℝ) :
+    thetaKernelNegativePart n u =
+      3 * Real.pi * thetaScaledGaussian n u *
+        Real.exp u * Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
+  rw [thetaKernelNegativePart, thetaGaussianSummand_scaled]
+  unfold thetaScaledGaussian
+  rw [← Real.exp_add]
+  ring
+
+/-- Both signed theta components share the same Gaussian variable.
+This exact finite identity exposes the polynomial envelope required
+before any uniform summability or tail-integral theorem. -/
+theorem thetaKernelTerm_scaled (n : ℕ) (u : ℝ) :
+    thetaKernelTerm n u =
+      Real.exp u *
+        (2 * Real.pi ^ 2 * (thetaScaledGaussian n u) ^ 2 -
+          3 * Real.pi * thetaScaledGaussian n u) *
+        Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
+  rw [thetaKernelTerm_split, thetaKernelPositivePart_scaled,
+    thetaKernelNegativePart_scaled]
+  ring
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
