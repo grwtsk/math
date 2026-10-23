@@ -1,0 +1,113 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "signed-orientation-bridge-01-v0.1"
+owner_issue = 545
+repository = "grwtsk/math"
+stack_parent_pr = 525
+base_revision = "f0d7682167efb31e4ad7458d1fdd496d4e908686"
+branch = "research/545-signed-orientation-bridge-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_obstruction = "Formalize the common theorem pattern: a nonnegative source does not orient a signed consumer without an explicit sign/fundamental-symmetry datum."
+
+[[module]]
+path = "GRWTSK/LinearAlgebra/SignedOrientationBridge.lean"
+blob = "be050cc316c13ebc93a075e8371c38e724ec3485"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SignedOrientationConnections.lean"
+blob = "c766f07b49a6193ec0218e7bcaf51affba55f189"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SignedOrientationConnectionsControls.lean"
+blob = "b11a3e2938ac287efb908d640e3e1670ef7ea7e6"
+
+[[module]]
+path = "GRWTSK/Interfaces/SignedOrientationConnectionsCore.lean"
+blob = "84b1f822293b98a45735e900ed2bf3d2ffdcf859"
+
+[[note]]
+path = "docs/mathematics/LinearAlgebra/signed-orientation-connections.md"
+blob = "330c08cc6ad018b283b44f16c99d19374939ba55"
+
+[[upstream]]
+path = "GRWTSK/LinearAlgebra/FinitePositiveHodgeHeat.lean"
+blob = "cd5fc34723c3dd9a8d09b3dce66f3bfa180998c0"
+
+[[upstream]]
+path = "GRWTSK/LinearAlgebra/CommonJ.lean"
+blob = "d1d66c07514fe20bd9ecee344f2a3dde1c046ba9"
+
+[[upstream]]
+path = "GRWTSK/Algebra/Polynomial/SignedRootTrace.lean"
+blob = "30015a7952e282bfb3f115166599d6b58c3e9922"
+
+[[upstream]]
+path = "GRWTSK/Analysis/InnerProductSpace/SignedWindowGramIdentity.lean"
+blob = "fc3500b187b5b7945e74d9729d563053fb22accd"
+
+[[upstream]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/WeilPositiveLimit.lean"
+blob = "b47dfd2fe92dd5be05326d1b90005bb2d0674fc8"
+
+[[upstream]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ScrewQuarticPathControl.lean"
+blob = "4af6e8fd430c992a198e35c8f10d91caddfdce66"
+
+[[upstream]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalQuarticProbe.lean"
+blob = "88bdbb8827e8b563d411bbece281b94bbed6f5f7"
+
+required_declarations = [
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.fundamentalSymmetry",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.fundamentalSymmetry_involutive",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.positiveEnergy_eq_plus_add_minus",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.signedEnergy_eq_plus_sub_minus",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.neg_signedEnergy_eq_positiveEnergy_of_minusSector",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.positive_energy_does_not_force_signed_positive",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.OrientationCertificate",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.negativeSectorCertificate",
+  "GRWTSK.LinearAlgebra.SignedOrientationBridge.commonJ_flip_reverses_generator",
+  "GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections.screwQuarticPenaltyCertificate",
+  "GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections.quarticProbeOrientationCertificate",
+  "GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections.signedRootTrace_orientation_connection",
+  "GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections.negativeWeilWitness_blocks_positiveGramLimit",
+  "GRWTSK.NumberTheory.Zeta.Riemann.SignedOrientationConnections.signedSettlement_keeps_cross_term"
+]
+
+metadata_only_profiles = [
+  "HODGE_PRIMITIVE_SIGN_TWIST",
+  "ARITHMETIC_HODGE_SIGNED_HEIGHT",
+  "Q_HODGE_CELL_SIGN_BOUNDARY",
+  "C3_SOS_SIGNED_SCREW_BOUNDARY",
+  "RECENT_HODGE_SIGN_CANCELLATION_FAILURE"
+]
+
+hostile_controls = [
+  "positive total metric energy does not imply signed-consumer positivity",
+  "negative sector requires explicit sign twist",
+  "positive scalar cannot reverse strict negative sign",
+  "CommonJ sign conjugation is not itself an RH bridge",
+  "signed-root nonnegativity rejects nonreal nodes under positive weights",
+  "negative Weil witness cannot be positive-Gram limit",
+  "current arithmetic quartic probe retains -witnessTrace orientation",
+  "external conjecture profiles confer no theorem authority"
+]
+
+nonclaims = [
+  "no standard conjecture of Hodge type",
+  "no arithmetic Hodge-index theorem",
+  "no rational Hodge replay",
+  "no global C3 signed-screw theorem",
+  "no Weil-form comparison",
+  "no prime number theorem",
+  "no zero-free threshold improvement",
+  "no Riemann Hypothesis result"
+]
+
+next_obstruction = "Construct a source-faithful signed-screw/fundamental-symmetry operator J that transports the current arithmetic negative orientation to the RH-facing positive orientation without using RH or target positivity."
