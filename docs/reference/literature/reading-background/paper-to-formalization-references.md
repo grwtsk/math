@@ -4754,3 +4754,13 @@ Runners, logs and receipts are outside canonical mathematics at
 `farey-shift-completion-result.json`. The failed initial build is diagnostic,
 not acceptance evidence. Concurrent new linear-observation, Riesz and other
 modules remain outside this validation claim.
+
+## Case FINRANK-LOWER-BOUND-20261023 — measurement capacity without sharpness
+
+**Reference boundary.** New 2026 repository-derived source candidate with OpenAI formalization assistance, no separately cited external paper theorem; external paper title, byline, year/version, DOI/arXiv, theorem locator **NOT APPLICABLE**. Standard Mathlib submodule rank monotonicity is existing library mathematics; this is not evidence of historical influence by any recent inverse-problem paper.
+
+**Exact mathematical hypotheses and declarations.** For any field K and additive commutative K-modules V,Y,W, given linear maps P:V→ₗ[K]Y and A:V→ₗ[K]W, and an explicit hypothesis that v↦(P v,A v) is injective, `GRWTSK.Logic.InformationLoss.old_kernel_finrank_le_extra_finrank` asserts `Module.finrank K P.ker ≤ Module.finrank K W`. It uses earlier `finrank_extra_range_eq_old_kernel` and Mathlib `Submodule.finrank_le`. This is an exact necessary dimension bound, NOT a sharp construction, quantitative stability result, minimal number of coordinate sensors absent W's representation, phase-retrieval theorem, physical spectral equivalence or RH.
+
+**Immutable source/receipts.** Integrated main [`dfcc986b04c7d5d838cb7a104558f22908103bfd`](https://github.com/grwtsk/math/commit/dfcc986b04c7d5d838cb7a104558f22908103bfd); `GRWTSK/Logic/InformationLoss/FiniteRankMeasurementLowerBound.lean` blob `88543962c8d0e9737cf662c339a3a8fec48ead64`. Direct supplier `FiniteRankMeasurementRange` blob `f2e5f43463b530723efc787268f9f97e3bd8696d`; recursively enumerate full Mathlib closure in actual pinned checkout. Verification [#1128](https://github.com/grwtsk/math/issues/1128) pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`, exact commands and transitive axiom/audit requests.
+
+**Separated classifications:** imported mathematics: existing Mathlib rank monotonicity (not paper-derived); kernel-verified bridge: **not established**; source proof candidate: new declaration; conditional interface: actually realizing P and A as source-bound observables; finite evidence: none newly claimed; analogies: inverse-problem capacity only, without an attribution claim; unresolved: actual compilation, fresh kernel/axioms, sharpness, minimal sensor models and stability. **ACTUAL: SOURCE_ONLY, exact blob confirmed, GitHub statuses empty, COMPILATION NOT_RUN, FRESH_KERNEL NOT_RUN, TRANSITIVE_AXIOMS NOT_RUN**. Operational receipts in grwtsk/noeaaeue, no public root import.
