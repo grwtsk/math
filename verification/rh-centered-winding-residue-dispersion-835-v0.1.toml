@@ -1,0 +1,34 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-residue-dispersion-835-v0.1"
+owner_repository = "grwtsk/math"
+issue = 835
+parent_issue = 827
+parent_pr = 828
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_RESIDUE_DISPERSION_SOURCE_DRAFT_CENTERED_WINDING_DISPERSION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingResidueDispersion"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingResidueDispersion"
+
+[source_binding]
+stacked_parent_revision = "489e15ad05c23800b447f4149c8f00da57eb5661"
+candidate_branch = "research/rh-centered-winding-residue-dispersion-835-20261022"
+theorem_source_commit = "bf11b4047b32c8427e4e76c39ff42c78bda18138"
+theorem_source_git_blob = "610c39cd8e75b264307b1a97c67a13bdeda5cc9b"
+mathematical_note_commit = "7260258f720e9d118bc46f65a7b89ff5619a0c9a"
+mathematical_note_git_blob = "1ba695d5c22999ccb5d729705a2e6559a32e2010"
+
+[evidence_states]
+source_draft = true
+signed_residue_fiber_defined = true
+residue_square_expansion_scripted = true
+full_congruence_surface_defined = true
+zero_nonzero_winding_split_scripted = true
+zero_winding_fiber_energy_identified = true
+residue_dispersion_identity_scripted = true
+centered_wrap_form_identified = true
+four_family_modulus_aggregate_defined = true
+effective_modulus_endpoint_aggregate_defined = true
+analytic_envelope_interface_defined = true
+centered_winding_dispersion_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
