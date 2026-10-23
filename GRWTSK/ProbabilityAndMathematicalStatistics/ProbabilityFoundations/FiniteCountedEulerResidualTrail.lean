@@ -86,4 +86,30 @@ theorem ResidualFreshTrail.exists_extension_of_not_maximal
   obtain ⟨e, heU, hs, fresh⟩ := h
   exact ⟨e, heU, fresh, hs⟩
 
+
+/-- A residual trail that cannot be extended is maximal; otherwise
+it has a strictly smaller residual-unused cardinality successor. -/
+theorem ResidualFreshTrail.maximal_or_strict_successor
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {U : Finset (CountedBinaryEdge m c)}
+    {a b : Fin m → Bool}
+    (R : ResidualFreshTrail m c U a b) :
+    R.Maximal ∨
+      ∃ (e : CountedBinaryEdge m c)
+        (heU : e ∈ U)
+        (fresh : e ∉ R.trail.used)
+        (incident : countedEdgeSource m c e = b),
+        (U \ (R.append e heU fresh incident).trail.used).card <
+          (U \ R.trail.used).card := by
+  classical
+  by_cases h : R.Maximal
+  · exact Or.inl h
+  · right
+    obtain ⟨e, heU, fresh, incident⟩ :=
+      R.exists_extension_of_not_maximal h
+    refine ⟨e, heU, fresh, incident, ?_⟩
+    have hcard := R.append_unused_card e heU fresh incident
+    omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
