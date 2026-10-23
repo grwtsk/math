@@ -48,8 +48,10 @@ open GRWTSK.LinearAlgebra.ModTwoIndependenceDescent
 inverse. This uses Mathlib's Dedekind-finite matrix theorem, not a numerical
 rank estimate. -/
 theorem characterMatrix_mul_dual :
-    characterMatrix * dualMatrix = 1 :=
-  (mul_eq_one_comm).mp dual_mul_character
+    characterMatrix * dualMatrix = 1 := by
+  exact (Matrix.mul_eq_one_comm_of_equiv
+    (A := dualMatrix) (B := characterMatrix) (Equiv.refl (Fin 32))).mp
+    dual_mul_character
 
 /-- The source-oriented character evaluation matrix is the transpose of
 the stored point-by-character table. The transpose has a left inverse. -/
