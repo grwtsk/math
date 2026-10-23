@@ -635,8 +635,9 @@ GitHub status in the lookup. The available local container has no
 build exit status **not obtained**, fresh kernel check **not obtained**,
 transitive axiom/unsafe audit **not obtained**, and no verified theorem
 receipt exists. The source is deliberately unimported from
-`GRWTSK.lean`. Full source/dependency replay is pending in a separate
-commit-bound verification issue, independently of earlier #1093.
+`GRWTSK.lean`. Full source/dependency replay is queued in [#1096](https://github.com/grwtsk/math/issues/1096),
+pinned to `ecfda6e1b7ea98925de3cbbf8e86bf258b8b8e9c`, separately from
+upstream #1093 and #1094. The queue is not a verification receipt.
 
 **Nonclaims.** No automatic nonunit property of all Farey words,
 spectral decomposition of the native Farey action, full Dirichlet
