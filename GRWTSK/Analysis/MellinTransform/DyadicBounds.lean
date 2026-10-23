@@ -50,17 +50,17 @@ theorem summable_norm_of_eventual_geometric_bound
     (hbound : ∀ n≥n₀, ‖B n‖≤C*Real.exp (-a*(n:ℝ))) :
     Summable (fun n ↦ ‖B n‖) := by
   apply (summable_nat_add_iff n₀).1
-  apply Summable.of_nonneg_of_le (fun n ↦ norm_nonneg _)
-    (g := fun n ↦ C*Real.exp (-a*(n:ℝ)))
-  · intro n
-    calc
-      ‖B (n+n₀)‖ ≤ C*Real.exp (-a*((n+n₀:ℕ):ℝ)) := hbound _ (by omega)
-      _ ≤ C*Real.exp (-a*(n:ℝ)) := by
-        apply mul_le_mul_of_nonneg_left _ hC
-        apply Real.exp_le_exp.mpr
-        push_cast
-        nlinarith [Nat.cast_nonneg (α := ℝ) n₀]
-  · exact summable_exponential_tail C a ha
+  refine Summable.of_nonneg_of_le
+    (fun n => norm_nonneg (B (n + n₀))) (fun n => ?_)
+    (summable_exponential_tail C a ha)
+  calc
+    ‖B (n + n₀)‖ ≤ C * Real.exp (-a * ((n + n₀ : ℕ) : ℝ)) :=
+      hbound _ (by omega)
+    _ ≤ C * Real.exp (-a * (n : ℝ)) := by
+      apply mul_le_mul_of_nonneg_left _ hC
+      apply Real.exp_le_exp.mpr
+      push_cast
+      nlinarith [Nat.cast_nonneg (α := ℝ) n₀]
 
 /-- Concrete dyadic power written in logarithmic coordinates; no branch choice. -/
 def dyadicWeight (a : ℝ) (n : ℕ) : ℝ :=
