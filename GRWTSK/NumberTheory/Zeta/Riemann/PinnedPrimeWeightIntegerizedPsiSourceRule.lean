@@ -352,4 +352,78 @@ theorem pinnedPrimeWeightIntegerPsiCapacity_to_twoRecurrences
     pinnedPrimeWeightIntegerPsiCapacityWithBudget_to_recurrence
       (C := C) (ρ := (3 : ℝ) / 4) (by norm_num) hC⟩
 
+/-!
+Additional source statements retained from issue #842, branch
+`research/842-pinned-prime-psi-grid-v01`, head
+`5b8c3527a68ee53eb748eb4622159afbb9c49d5b`, alongside the PR #851
+integerized source rule above. The historical branch cited parent PR #832
+head `b216617f655b33636bfc73a927c36e4f03642578` and mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED /
+PARENT_SAWTOOTH_FLOOR_OBSTRUCTION_DEFINED /
+INTEGER_PSI_CAPACITY_TO_RECURRENCE_DEFINED /
+INTEGER_PSI_QUADRATIC_CAPACITY_OPEN / NO_RH_CLAIM.
+-/
+
+theorem pinnedPrimeWeightPsiGridIndex_lt_add_one (v : ℝ) :
+    v < (pinnedPrimeWeightPsiGridIndex v : ℝ) + 1 := by
+  simpa [pinnedPrimeWeightPsiGridIndex] using Nat.lt_floor_add_one v
+
+theorem pinnedPrimeWeightPsiFloorCorrection_nonpositive
+    {v : ℝ} (hv : 0 ≤ v) :
+    (pinnedPrimeWeightPsiGridIndex v : ℝ) - v ≤ 0 :=
+  sub_nonpos.mpr (pinnedPrimeWeightPsiGridIndex_cast_le hv)
+
+theorem pinnedPrimeWeightPsiFloorCorrection_abs_lt_one
+    {v : ℝ} (hv : 0 ≤ v) :
+    |(pinnedPrimeWeightPsiGridIndex v : ℝ) - v| < 1 := by
+  rw [abs_of_nonpos (pinnedPrimeWeightPsiFloorCorrection_nonpositive hv)]
+  linarith [pinnedPrimeWeightPsiGridIndex_lt_add_one v]
+
+theorem pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_nonpositive
+    {j : ℕ} {v : ℝ} (hv : v ∈ pinnedPrimeWeightNextOctave j) :
+    pinnedPrimeWeightIntegerPsiSourceRule.signedResidual j v ≤ 0 := by
+  rw [pinnedPrimeWeightIntegerPsiSourceRule_signedResidual]
+  have hθ : θ v - ψ v ≤ 0 :=
+    sub_nonpos.mpr (Chebyshev.theta_le_psi v)
+  have hf : (pinnedPrimeWeightPsiGridIndex v : ℝ) - v ≤ 0 :=
+    pinnedPrimeWeightPsiFloorCorrection_nonpositive
+      (pinnedPrimeWeightNextOctave_nonnegative hv)
+  linarith
+
+theorem pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_abs
+    {j : ℕ} {v : ℝ} (hv : v ∈ pinnedPrimeWeightNextOctave j) :
+    |pinnedPrimeWeightIntegerPsiSourceRule.signedResidual j v| =
+      (ψ v - θ v) + (v - (pinnedPrimeWeightPsiGridIndex v : ℝ)) := by
+  rw [abs_of_nonpos
+    (pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_nonpositive hv)]
+  rw [pinnedPrimeWeightIntegerPsiSourceRule_signedResidual]
+  ring
+
+theorem pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_abs_le_parent_add_one
+    {j : ℕ} {v : ℝ} (hv : v ∈ pinnedPrimeWeightNextOctave j) :
+    |pinnedPrimeWeightIntegerPsiSourceRule.signedResidual j v| ≤
+      |pinnedPrimeWeightPsiSourceRule.signedResidual j v| + 1 := by
+  rw [pinnedPrimeWeightIntegerPsiSourceRule_signedResidual_abs hv,
+    pinnedPrimeWeightPsiSourceRule_signedResidual_abs]
+  have h := pinnedPrimeWeightPsiFloorCorrection_abs_le_one
+    (pinnedPrimeWeightNextOctave_nonnegative hv)
+  rw [abs_of_nonpos (pinnedPrimeWeightPsiFloorCorrection_nonpositive
+    (pinnedPrimeWeightNextOctave_nonnegative hv))] at h
+  linarith
+
+@[simp] theorem pinnedPrimeWeightPsiResponses_eq_at_nat (j m : ℕ) :
+    pinnedPrimeWeightPsiSourceRule.response j (m : ℝ) =
+      pinnedPrimeWeightIntegerPsiSourceRule.response j (m : ℝ) := by
+  rw [pinnedPrimeWeightPsiResponse_eq_integerResponse_add_floorCorrection]
+  simp
+
+theorem pinnedPrimeWeightIntegerPsiCapacity_to_descentProgram
+    (hcapacity : PinnedPrimeWeightIntegerPsiQuadraticResponseCapacity) :
+    QuadraticThetaDescentSevenEighthsToHalf := by
+  obtain ⟨C, hC⟩ := hcapacity
+  intro ρ hρ _
+  exact pinnedPrimeWeightIntegerPsiCapacityWithBudget_to_descent hρ hC
+
 end GRWTSK.RiemannHypothesis
