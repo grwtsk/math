@@ -1,0 +1,113 @@
+# Static mathematical specification; no execution authority or receipt.
+# Prepared against c7d99129acc9cc7a026681e52c39e4ce5549318d.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-mirror-pair-channels-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPairChannels"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import closure.
+modules = [
+  { name = "Mathlib.Analysis.Calculus.MeanValue" },
+  { name = "Mathlib.Analysis.Complex.Basic" },
+  { name = "Mathlib.Tactic" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripDerivativeIsolation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorIsolation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticPrimitive" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFifteenDerivativeWitness" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberCriterion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairChannels" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPairChannels" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "source_and_height"
+requirement = "The pair reconstructs the actual z and criticalReflection z at root.heightAt z. No projection of a zero onto the critical line."
+
+[[hostile_controls]]
+id = "diagonal"
+requirement = "The normalized odd quotient at zero displacement is a total-field convention of zero, NOT a theorem that it equals the derivative. The off-line consumer requires nonzero displacement."
+
+[[hostile_controls]]
+id = "endpoint_reconstruction"
+requirement = "Prove both endpoint reconstruction identities and both directions of the simultaneous-zero equivalence."
+
+[[hostile_controls]]
+id = "product_cross_terms"
+requirement = "The even product contains d^2*odd(F)*odd(G); the odd product contains BOTH mixed terms. Componentwise channel multiplication is false."
+
+[[hostile_controls]]
+id = "actual_arithmetic_residual"
+requirement = "Derive both channels from the exact H-finiteModel=-multiplier*tail identity at the SAME integer cutoff and both positive-real-part endpoints. Keep all signs and parameter factors."
+
+[[hostile_controls]]
+id = "derivative_independence"
+requirement = "A derivative residual is a separately supplied analytic theorem. Do not differentiate a value-error inequality."
+
+[[hostile_controls]]
+id = "continuum_region"
+requirement = "Mean-value transport uses ambient complex differentiability and convexity over R on the actual region containing BOTH endpoints. Endpoint samples cannot supply the derivative premise."
+
+[[hostile_controls]]
+id = "near_line_uniformity"
+requirement = "Normalized odd error is bounded by the derivative residual without a positive minimum separation. Cancellation uses d!=0. The derivative error bound itself is still required."
+
+[[hostile_controls]]
+id = "fixed_domain_convergence"
+requirement = "The uniform secant convergence theorem keeps one fixed convex domain and all model/source derivative premises. It constructs no such family or all-height margin."
+
+[[hostile_controls]]
+id = "coupled_budget"
+requirement = "Strict model energy must exceed valueError^2+norm(d)^2*secantError^2. Nonnegative energy alone is insufficient. Equality does not exclude a pair."
+
+[[hostile_controls]]
+id = "squares_not_source_lower"
+requirement = "The difference of model energy and squared error budget is NOT asserted as a lower bound for source energy. The theorem only excludes simultaneous source zeros."
+
+[[hostile_controls]]
+id = "quadratic_quartic"
+requirement = "Retain the cross coefficient 2Re(a0*conj(a2))+norm(a1)^2. A sum-of-squares quartic need not have positive coefficients or be strictly positive."
+
+[[hostile_controls]]
+id = "repeated_central_zero"
+requirement = "The synthetic square has zero derivative at its central zero but a strict coupled pair margin away from it. Do not infer simplicity or reject the centered zero."
+
+[[hostile_controls]]
+id = "actual_pair_rejected"
+requirement = "The synthetic z^2-1 pair has zero channels at +/-1 and cannot satisfy a strict zero-error margin. These examples are not zeta zeros."
+
+[[hostile_controls]]
+id = "bounded_source_instance"
+requirement = "The concrete normalized secant disk uses the maintained FifteenWitness source theorem on 0<Re(z)<1,14<=Im(z)<=15. No new height or reflected-value identity."
+
+[[hostile_controls]]
+id = "successor_boundary"
+requirement = "The next-window port consumes the exact previous WindowRH and the complete new pair-enclosure/margin family, including the lower seam. No unconditional WindowRH18."
+
+[[hostile_controls]]
+id = "classification_and_global_scope"
+requirement = "This is a sufficient analytic supplier for the existing exact fiber criterion. No reverse realization, common spectral gap, complete divisor, Weil, Hodge, or RH theorem is inferred."
+
+[[hostile_controls]]
+id = "execution_status"
+requirement = "External finite diagnostics and matching source hashes are not Lean elaboration, kernel acceptance, native dependency clearance or F06 release."
