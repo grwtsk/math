@@ -68,10 +68,10 @@ theorem returnMatrix_eq : returnMatrix = !![1, 1; 1, 2] := by
 /-- The two-step return has its exact quadratic annihilating identity. -/
 theorem returnMatrix_quadratic :
     returnMatrix * returnMatrix = (3 : ℝ) • returnMatrix - 1 := by
-  rw [returnMatrix_eq]
   ext i j
   fin_cases i <;> fin_cases j <;>
-    norm_num [Matrix.mul_apply, Fin.sum_univ_two, Matrix.smul_apply]
+    norm_num [returnMatrix_eq, Matrix.mul_apply, Fin.sum_univ_two,
+      Matrix.smul_apply]
 
 /-- The only radical used in the selected return's real splitting. -/
 theorem sqrtFive_sq : (Real.sqrt (5 : ℝ)) ^ 2 = 5 :=
