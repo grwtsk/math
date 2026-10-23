@@ -1,0 +1,285 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cone-filled-quotient-976-v0.1"
+owner_repository = "grwtsk/math"
+issue = 976
+related_issues = [970, 961, 955, 947, 941, 889, 868, 859, 845, 100]
+route_id = "SOURCE_EXACT_CONE_TO_FILLED_IS_QUOTIENT_MAP"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_pr = 972
+review_parent_branch = "research/surface-perimeter-cone-970-20261022"
+review_parent_revision = "525457c57b9d5b040bbe0c3be46f80c7e4eaaaa0"
+review_parent_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterCone.lean"
+review_parent_module_git_blob = "b75c6440380a0bd83e48028eb6521b23b115dcfe"
+review_product_quotient_module_git_blob = "8c86ab5dfa194ce6fce39d58ca8dde5c44bdcc54"
+review_joint_radial_module_git_blob = "ca2d5b755d5e9c49ed9f7c2d43e434b23ba98005"
+review_radial_filling_module_git_blob = "4455b74da256ec09efbe664f9fa95a0b48651d4a"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonConeFilledQuotient.lean"
+new_module_git_blob = "b282000a00e561eb12b1fb8522a657fe93c22c25"
+new_module_source_commit = "7dafeaebc4e927c515acc9b6f10976fbca660c87"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-cone-filled-quotient.md"
+mathematical_note_git_blob = "78aa37c08773a5ae82e5fb297e096392f95242a0"
+note_commit = "53ea9c6145de44f03579caf4bfdb9ce70fbf493e"
+candidate_final_head = "TO_BE_BOUND_IN_IMMUTABLE_GITHUB_REVIEW_PACKET"
+
+[imported_theorem_binding]
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_quotient_api_file = "Mathlib/Topology/Maps/Basic.lean"
+quotient_composition = "Topology.IsQuotientMap.comp"
+quotient_cancellation = "Topology.IsQuotientMap.of_comp_isQuotientMap"
+quotient_continuity_criterion = "Topology.IsQuotientMap.continuous_iff"
+original_radial_quotient = "SurfacePolygonRadialFilling.radialProjection_isQuotientMap"
+product_quotient = "SurfacePolygonRadialProductQuotient.perimeterProductProjection_isQuotientMap"
+cone_quotient = "SurfacePolygonPerimeterCone.coneProjection_isQuotientMap"
+cone_source_lift = "SurfacePolygonPerimeterCone.coneToFilled_projection"
+joint_source_square = "SurfacePolygonJointRadialDescent.perimeterJointRadialMap_source"
+source_api_lexically_inspected = true
+elaborated_source_imports_checked = false
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+preserve_original_radial_source = true
+preserve_unpaired_cone_and_paired_filling_distinction = true
+source_to_cone_composite_quotient_candidate = true
+whole_source_commuting_triangle_candidate = true
+cone_to_filled_isQuotientMap_candidate = true
+cone_to_filled_universal_continuity_candidate = true
+cone_to_filled_distinct_fiber_candidate = true
+genus_two_three_fixtures = true
+cone_to_filled_full_fiber_characterization_proved = false
+cone_to_standard_disk_homeomorphism_proved = false
+filled_quotient_pushout_universal_property_proved = false
+genuine_genus_g_CW_manifold_proved = false
+actual_surface_cellular_singular_H1_proved = false
+actual_surface_pi1_vanKampen_Hurewicz_proved = false
+hyperbolic_trace_GUE_sofic_Chowla_zeta_RH_proved = false
+mathematical_statement = "The inherited original radial quotient factors through the perimeter-product and cone quotient maps, and Mathlib quotient-map cancellation makes the original noninjective coneToFilled a quotient map with a universal continuity criterion."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"
+authored_declaration_count = 12
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCone", "Mathlib.Topology.Maps.Basic"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"
+source_construct = "topological quotient and EqvGen imports; inherited source quotient generated declarations"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient"
+source_construct = "function composition and inferred quotient-map and topology instances"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.radialSourceToCone"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.radialSourceToCone_apply"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.radialSourceToCone_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.radialSourceToCone_surjective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.coneToFilled_radialSourceToCone"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.coneToFilled_comp_radialSourceToCone"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.coneToFilled_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.continuous_iff_comp_coneToFilled"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.coneToFilled_quotient_but_not_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.coneToFilled_has_distinct_fiber"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.genusTwo_coneToFilled_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeFilledQuotient.genusThree_coneToFilled_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-immutable-parent"
+requirement = "Direct parent is PR #972 at head 525457c57b9d5b040bbe0c3be46f80c7e4eaaaa0; parent files are unchanged."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-directed-radial-source"
+requirement = "RadialSource k is the inherited finite original directed-side source times genuine real unitInterval."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-unpaired-perimeter"
+requirement = "The middle cylinder uses UnpairedPerimeter k, not the paired one-skeleton."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-coinduced-filled-target"
+requirement = "FilledPolygonQuotient k is the inherited actual radial quotient with coinduced topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-coinduced-cone"
+requirement = "PerimeterCone k is the inherited apex-only quotient, no renamed filling."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "product-quotient-not-automatic"
+requirement = "Consumption of #962 perimeterProductProjection_isQuotientMap is mandatory: no general product-quotient assumption."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cone-quotient-source"
+requirement = "Consumption of #972 coneProjection_isQuotientMap is mandatory."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "radial-quotient-source"
+requirement = "Consumption of #859 radialProjection_isQuotientMap is mandatory."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hausdorff-target-assumption"
+requirement = "Cancellation cannot require or silently claim T2Space FilledPolygonQuotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-pinned-mathlib-cancellation"
+requirement = "Reuse pinned Mathlib Topology.IsQuotientMap.of_comp_isQuotientMap at mathlib rev db584cd6d46c92f209a44c0f1c829460d327499d."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-pinned-mathlib-composition"
+requirement = "Reuse pinned Mathlib Topology.IsQuotientMap.comp rather than a new postulate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-original-square-commutation"
+requirement = "Source commuting equation holds on every original radial square point, not only at radius one."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reuse-joint-radial-map"
+requirement = "The proof must use #959 perimeterJointRadialMap_source and #972 coneToFilled_projection."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-function-equality"
+requirement = "Prove coneToFilled ∘ radialSourceToCone = radialProjection as functions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-quotient-structure"
+requirement = "The theorem proves IsQuotientMap coneToFilled and not just Continuous/Surjective."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "universal-continuity"
+requirement = "For all Y, Continuous f iff Continuous (f ∘ coneToFilled) using genuine Mathlib quotient-map theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noninjective-cone-target"
+requirement = "Retain #972 coneToFilled_not_injective: the new quotient map is not a homeomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nontrivial-fiber-existence"
+requirement = "Existence of distinct cone points with equal images follows from inherited noninjectivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-directed-side-period"
+requirement = "Genus two has exactly eight original directed intervals, not four unoriented generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-directed-side-period"
+requirement = "Genus three has exactly twelve original directed intervals, not six unoriented generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk-identification"
+requirement = "Do not claim PerimeterCone k is homeomorphic to a standard closed disk."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-pushout-identification"
+requirement = "Do not infer the full adjunction/CW universal property from quotient-map status."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homology-pi1"
+requirement = "No genuine surface homology, fundamental group, or Hurewicz theorem follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-rh"
+requirement = "No Selberg/GUE/sofic/Chowla/zeta divisor/RH promotion."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-lean-execution"
+requirement = "Source draft not Lean/Lake/CI/native/VM/F06 executed or kernel audited."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-parent-root-modification"
+requirement = "Only the new Lean source, mathematical note and passive TOML target may be added."
+status = "NOT_RUN"
