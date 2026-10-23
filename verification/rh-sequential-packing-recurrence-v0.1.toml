@@ -1,0 +1,71 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-sequential-packing-recurrence-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "b7f12a4714abb966d174648c2f4495e33a37b5ef"
+parent_tree = "36829c1ada0f39230fd5f602009872742f4450ed"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / ONE_NEW_POINT_SOURCE_RULE_OPEN"
+
+[mathematical_scope]
+state = "three source-valid points"
+advance = "(first,second,third) -> (second,third,newPoint)"
+new_geometric_data_per_stage = 1
+new_source_labels_per_stage = 1
+positive_witness = "squared oriented area / 2x2 Gram determinant"
+positivity_preserved_by_advance = true
+scalar_forcing = "V_n >= 0 and V_n=lambda_n*H+R_n with lambda_n->L>0 and R_n->0 implies H>=0"
+concrete_source_update_rule_constructed = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SequentialPackingRecurrence"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SequentialPackingRecurrence.lean"
+blob = "29b213cb321e8532b2e8099f186361a6688bca2e"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialPackingRecurrenceControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SequentialPackingRecurrenceControls.lean"
+blob = "feb1f012c494f763131bf7d4fe3e95f379846e56"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "1dfc101a6e3eaed6ffe6a86d7f9b4e544a707225"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/sequential-packing-recurrence.md"
+blob = "1854cf3e942452716583c1775e29f51399ed95a9"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+SOURCE_UPDATE_RULE_CONSTRUCTED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct the initial three points from the accepted mechanism trace/local witness",
+  "construct the one-new-point update rule and new source label from the same source",
+  "prove the signed-quartic comparison identity",
+  "prove positive limiting coefficient",
+  "prove every named residual channel tends to zero",
+  "construct the theorem-bound PNT/circularity dependency audit"
+]
+
+[nonclaims]
+items = [
+  "no concrete mechanism-to-recurrence source map",
+  "no accepted external detector mechanism",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]

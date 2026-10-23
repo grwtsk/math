@@ -1,0 +1,83 @@
+/- Copyright (c) 2026 R.A. Jacob Martone. MIT.
+Human mathematical direction: R.A. Jacob Martone. Formalization assistance: OpenAI ChatGPT. -/
+import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticScaleBijectiveWitness
+import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismQuarticBridge
+import GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismTrace
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridgeControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeGramQuarticExtractionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ThreePointVolumeQuarticExtractionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialThreePointVolumePackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SequentialPackingRecurrenceControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MechanismPackingRecurrenceRuleControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerArithmeticPackingCoordinateControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerCoefficientRecoveryControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtCoefficientSourceControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPrimePowerSelectorControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPrimePowerPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedZetaExplicitFormulaChannelsControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPackingAndResidueHeadControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DirichletDampedPrimePowerPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SourceSensitivePackingNoGoControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftedVonMangoldtPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftSymmetricPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticChannelPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftQuarticFactorizationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftCoefficientDecayControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEndpointControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEnclosureControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftPrimeTermFactorizationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.OffLineQuarticVolumePackingEndpointControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftEnvelopeControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftQuarticPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftQuarticFactorizationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicCumulativeQuarticPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicChebyshevCumulativeBudgetControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftPackingObstructionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MellinNormalizedDyadicPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.MellinNormalizedGrowingCellPackingControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenSourceFrameControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenGramFormControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierFrameControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierReadoutControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierActionFrameControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenPolarizedReadoutControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicFourierFrameEnergyEquivalenceControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenArithmeticFourierCoordinateControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenDFTCoordinateControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenCoordinateEnergyCriterionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenCoordinateNecessaryDecayControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerDFTRemainderControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerFourierEnergyControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicHigherPrimePowerFullResidualControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyWitnessComparisonControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyCoordinateCriterionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyLiteralFormulasControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPrimeOnlyNecessaryCancellationControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPsiAbelReconstructionControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPsiOctaveEnergySupplierControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThetaOctaveSupplierControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThetaVonKochAdapterControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedDyadicEnergyHalfPlaneControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedThetaThresholdTransportControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThresholdDescentProgramControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.GradedPsiThresholdTransportControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.ReverseExplicitFormulaPsiGateControls
+import GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuadraticThetaRecurrenceSupplierControls
+
+set_option autoImplicit false
+
+/-!
+# Isolated arithmetic-scale and proof-relevant seven-eighths bridge root
+
+This source-only root keeps four layers separate:
+
+* PNT-free arithmetic scale coordinates;
+* one-way theorem admission;
+* a source-bound complete detector/moment/probe trace and its local witness map;
+* three-point volume/Gram extraction, then prime quartic extraction and direct/cofinal threshold closure.
+
+It is intentionally not imported by `GRWTSK.lean` or the public zeta aggregate.
+
+No external theorem, accepted detector trace, concrete mechanism bridge, prime
+extraction, Weil positivity theorem, or RH conclusion is supplied.
+-/

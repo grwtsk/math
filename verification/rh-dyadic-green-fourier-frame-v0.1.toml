@@ -1,0 +1,64 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-green-fourier-frame-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_issue = 197
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "093d2d536032ff152c3a43a0ba2f040b73d6ec6f"
+parent_tree = "d353aabf81e9a35b13de2b08081a58c60a0a826d"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXACT_GREEN_FOURIER_PARSEVAL_FRAME_DEFINED"
+
+[parseval]
+residual = "complexification of exact centered Green source frame"
+coefficients = "fourierCoeffOn on (0,1]"
+identity = "sum over k in Z norm(coeff_k)^2 = greenEnergy X"
+natural_shell = "k=n plus k=-(n+1)"
+head_nonnegative = true
+head_monotone = true
+head_tendsto_greenEnergy = true
+
+[full_stage]
+value = "mass0^2 + mass1^2 + finite Fourier head"
+nonnegative = true
+monotone = true
+tendsto = "augmentedEnergy X"
+bounded_by = "augmentedEnergy X"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierFrame"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenFourierFrame.lean"
+blob = "bfcb1be51b040d2fc2d6359f78a149f5f07da130"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierFrameControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicGreenFourierFrameControls.lean"
+blob = "f07f5205bed9e20ea098e97b048ec02db0dd66c4"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "4808e5dbfc316d491cef5e889ef4887ab28137ec"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-green-fourier-frame.md"
+blob = "feb697824446ebbf4bcef24bb7083a1d064a972e"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXACT_GREEN_FOURIER_PARSEVAL_FRAME_DEFINED = true
+FOURIER_MODES_ADMISSIBLE_COMPLEX_TESTS = false
+WEIL_COMPARISON_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct zero-endpoint ComplexTest antiderivatives for nonzero Fourier modes",
+  "identify their action values with residual Fourier coefficients",
+  "use the growing admissible readout frame in the issue-197 source-to-global comparison"
+]

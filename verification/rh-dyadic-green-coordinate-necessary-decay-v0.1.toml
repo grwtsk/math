@@ -1,0 +1,46 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-green-coordinate-necessary-decay-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "0403a6ccbbd99fae788638642451f0081198b397"
+parent_tree = "3443f38ec31e24b77ba8af159f864eb86c4f7750"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / LOW_COORDINATE_DECAY_NECESSARY"
+
+[necessary_channels]
+mass0_sq = "eventually <= C*X^(-1+eta)"
+mass1_sq = "eventually <= C*X^(-1+eta)"
+mode_neg_one_sq = "eventually <= C*X^(-1+eta)"
+mode_one_sq = "eventually <= C*X^(-1+eta)"
+sufficient_for_full_bound = false
+necessary_for_full_bound = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateNecessaryDecay"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenCoordinateNecessaryDecay.lean"
+blob = "827620c30c5c16c19893d360fa70aa160067da42"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenCoordinateNecessaryDecayControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicGreenCoordinateNecessaryDecayControls.lean"
+blob = "959084125efb6ad93921182b0f9f5750591a3599"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "32be37f97ca4686707b2865524ba699c9fed1ab8"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-green-coordinate-necessary-decay.md"
+blob = "a2fe977ca7a2658f8ff4cbe8fe151d3bef3cb212"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+LOW_COORDINATE_DECAY_NECESSARY = true
+ARITHMETIC_DECAY_PROVED = false

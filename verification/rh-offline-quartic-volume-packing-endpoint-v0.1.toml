@@ -1,0 +1,52 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-offline-quartic-volume-packing-endpoint-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "3d5293145116c5a40b9fc04128a4750a27213547"
+parent_tree = "353369b31d1fb0c597f514cf5f311a198032e47f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / OFFLINE_CERTIFICATE_SCOPE_CORRECTED / SCALE_SUPPLIER_OPEN"
+
+[scope_correction]
+old_global_requirement = "scale data for every actual nontrivial zero"
+problem = "totalized normalized coefficient is zero when a=0, so positive scaled limit is impossible there"
+corrected_requirement = "scale data only when a=Re(s)-1/2 != 0"
+corrected_requirement_suffices_for_rh = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.OffLineQuarticVolumePackingEndpoint"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/OffLineQuarticVolumePackingEndpoint.lean"
+blob = "94ed5d5b560d5b7b9fa3ed85328e1dc962d118df"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.OffLineQuarticVolumePackingEndpointControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/OffLineQuarticVolumePackingEndpointControls.lean"
+blob = "c9d3ad874050a01fad1c55352361c6d9ff5fda6f"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "dc75647b7ba1e514f8e17f44563ad90e7b9993e1"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/offline-quartic-volume-packing-endpoint.md"
+blob = "a85ee351e9bbbdff7ec9275c177b173acfe388fc"
+
+[evidence_states]
+CLAIM_SORT_REPAIRED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+OFFLINE_CERTIFICATE_SCOPE_CORRECTED = true
+SCALE_SUPPLIER_CONSTRUCTED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct scale data only under the off-line hypothesis",
+  "prefer a source window/block normalization over pointwise inverse normalization",
+  "retain complete explicit-formula source accounting"
+]

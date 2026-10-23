@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-green-coordinate-energy-criterion-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "0fe96cf610c9c92dad920dcc05c89bec0b657bb8"
+parent_tree = "1de40a726233802518de56d11ab46ca533ee7c92"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXPLICIT_ARITHMETIC_COORDINATE_BOUND_IFF_ENERGY_BOUND_SOURCE_WRITTEN"
+
+[finite_stage]
+value = "mass0^2 + mass1^2 + finite symmetric sum of norm(weighted-DFT discrepancy)^2"
+tendsto = "augmentedEnergy X"
+bounded_by = "augmentedEnergy X"
+
+[criterion]
+coordinate_bound = "AllDyadicArithmeticFourierCoordinateBound"
+equivalent_to_action_frame_bound = true
+equivalent_to_AllDyadicEnergyBound = true
+conditional_rh_return = true
+arithmetic_bound_constructed = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenCoordinateEnergyCriterion"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenCoordinateEnergyCriterion.lean"
+blob = "f40915f82fa625ab74d0cfd9c6459db08e65b75b"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenCoordinateEnergyCriterionControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicGreenCoordinateEnergyCriterionControls.lean"
+blob = "fa03133e556eb8d3b8a5e15e9932de7769ecbf58"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "4a67d0c2ac28966c9c6f1340545f1a210bdb5a9a"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-green-coordinate-energy-criterion.md"
+blob = "212821fd0bfc43bd932a2d20fc34238013bcfc3a"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+EXPLICIT_ARITHMETIC_COORDINATE_BOUND_IFF_ENERGY_BOUND_SOURCE_WRITTEN = true
+ARITHMETIC_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
