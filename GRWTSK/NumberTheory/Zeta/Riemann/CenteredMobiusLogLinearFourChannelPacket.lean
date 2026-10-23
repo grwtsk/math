@@ -217,4 +217,57 @@ theorem linearFourChannel_twoN_reconstruct
     exact hAB
   exact hcol
 
+/-- For fixed second output coordinate m, the GG residual is exactly a
+one-variable divisor-log transform in n. Its coefficient at d is itself the
+m-row transform of the d-th GG row. -/
+def ggFirstStageCoefficient
+    (P : LinearFourChannelMobiusLogPacket) (m d : ℕ) : ℝ :=
+  mobiusLogDivisorRow (fun e => P.gg d e) m
+
+theorem linearFourChannelGGResidual_eq_firstStage
+    (P : LinearFourChannelMobiusLogPacket) (n m : ℕ) :
+    linearFourChannelGGResidual P n m =
+      mobiusLogDivisorRow (ggFirstStageCoefficient P m) n := by
+  rw [linearFourChannelGGResidual_eq]
+  unfold mobiusLogDivisorRow ggFirstStageCoefficient
+  simp_rw [Finset.mul_sum, Finset.sum_mul]
+  ring
+
+/-- Equality of full outputs on the rectangle implies equality of GG residuals
+once the already-reconstructed AA/AG/GA channels are subtracted. -/
+theorem ggResidual_eq_of_channels_eq
+    {P Q : LinearFourChannelMobiusLogPacket} {n m : ℕ}
+    (hout : linearFourChannelMobiusLogTransform P n m =
+      linearFourChannelMobiusLogTransform Q n m)
+    (haa : P.aa = Q.aa)
+    (hagrow : mobiusLogDivisorRow P.ag m = mobiusLogDivisorRow Q.ag m)
+    (hgarow : mobiusLogDivisorRow P.ga n = mobiusLogDivisorRow Q.ga n) :
+    linearFourChannelGGResidual P n m =
+      linearFourChannelGGResidual Q n m := by
+  unfold linearFourChannelGGResidual
+  rw [hout, haa, hagrow, hgarow]
+
+/-- Clean two-stage GG rectangle recovery, assuming equality of the already
+separated AA/AG/GA row transforms. -/
+theorem gg_twoN_reconstruct_of_residual_eq
+    {N : ℕ}
+    (P Q : LinearFourChannelMobiusLogPacket)
+    (hres : ∀ n m, 1 ≤ n → n ≤ 2 * N → 1 ≤ m → m ≤ 2 * N →
+      linearFourChannelGGResidual P n m =
+        linearFourChannelGGResidual Q n m) :
+    ∀ d e, 1 ≤ d → d ≤ N → 1 ≤ e → e ≤ N →
+      P.gg d e = Q.gg d e := by
+  intro d e hd hdN he heN
+  have hfirst : ∀ m, 1 ≤ m → m ≤ 2 * N →
+      ggFirstStageCoefficient P m d = ggFirstStageCoefficient Q m d := by
+    intro m hm hm2N
+    apply truncatedMobiusLogConvolution_twoN_reconstruct
+    intro n hn hn2N
+    rw [← linearFourChannelGGResidual_eq_firstStage,
+      ← linearFourChannelGGResidual_eq_firstStage]
+    exact hres n m hn hn2N hm hm2N
+  apply truncatedMobiusLogConvolution_twoN_reconstruct
+  intro m hm hm2N
+  exact hfirst m hm hm2N
+
 end GRWTSK.RiemannHypothesis
