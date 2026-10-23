@@ -49,11 +49,11 @@ theorem adjacencyField_eq_fixedField
 /-- The relative extension degree equals the cardinality of the
 actual stabilizer, without assuming that it has four elements. -/
 theorem finrank_adjacencyField_eq_card_stabilizer
-    [FiniteDimensional K L]
+    [FiniteDimensional K L] [IsGalois K L]
     (p : K[X]) (e : QuarticRootEnumeration (L := L) p) :
     Module.finrank (adjacencyField p e) L =
       Nat.card (adjacencyStabilizer p e) := by
-  rw [adjacencyStabilizer_eq_fixingSubgroup]
+  rw [← adjacencyField_eq_fixedField p e]
   exact IntermediateField.finrank_fixedField_eq_card
 
 end
