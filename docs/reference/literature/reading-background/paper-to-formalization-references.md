@@ -400,6 +400,102 @@ No real global quadratic-character homomorphism, finite
 `SourceBitsMatch`, unconditional rank bound, Sarnak
 disjointness, BSD or RH theorem is obtained here.
 
+## Case DYN-SQRT2-01 — Sarnak's deterministic-flow conjecture versus sparse √2 digests
+
+**Publication and version.** **Peter Sarnak**,
+*Three Lectures on the Mobius Function: Randomness and Dynamics*,
+**2011** (IAS lecture-note year, **not** a refereed journal
+publication date). Stable [IAS institutional record](https://publications.ias.edu/sarnak/paper/506),
+[IAS 12-page PDF](https://publications.ias.edu/sites/default/files/MobiusFunctionsLectures%282%29_0.pdf).
+No DOI or arXiv ID is established for this **cited version**.
+Further bibliographic evidence and the earlier source binding are
+maintained in [paper-to-lean-provenance.md](paper-to-lean-provenance.md#mobius-disjointness-lecture-notes-and-the-finite-2-sampling-interface).
+
+**Exact source method and hypotheses.** On the cited PDF,
+**equation (6), printed p. 2 (PDF page index 1)** asserts
+the intended ordinary-average orthogonality
+`∑_{1≤n≤N} μ(n) ξ(n) = o(N)` for a bounded sampling
+sequence `ξ`. **Definition 3, printed p. 4 (PDF index 3)**
+defines Möbius orthogonality to a flow as orthogonality to
+**every sequence realized by that flow**.
+**Conjecture 4, printed p. 4 (PDF index 3)** asks this for
+**every deterministic flow**. The paper defines a flow
+as a compact metric `X` with continuous `T:X→X`,
+a sampling sequence as `ξ(n)=f(Tⁿx)` for `f∈C(X)`,
+and a deterministic flow by **zero topological entropy**.
+This is a conjecture **at the stated generality**, not a
+proved source theorem imported by this repository.
+The existence of one arithmetic sequence with a special
+denominator recurrence does not establish an embedding as
+such a flow, let alone the required entropy and cancellation.
+
+**Exact local mathematical fragment.** The *repository* sets
+the square-root-of-two continued fraction's partial quotients to
+`aₙ=2`, with natural denominator continuants
+`q₀=1, q₁=2, qₙ₊₂=2qₙ₊₁+qₙ` and bounded-step ratio
+`qₙ₊₁≤3qₙ` (used to show its **arithmetic-exponent**
+limsup `limsup log(qₙ₊₁)/qₙ=0`). The local definition
+`finiteLogCorrelation N arithmeticWeight orbitObservable`
+is the finite sum
+`∑_{0≤n<N} (n+1)⁻¹ arithmeticWeight(n+1) orbitObservable(qₙ)`;
+`normalizedLogCorrelation N` divides the `N+1`
+such summands by the **finite harmonic normalizer**
+`∑_{0≤n≤N} (n+1)⁻¹`. Both weight and observable are
+**arbitrary real functions**; neither is identified with
+`μ` or with a dynamical orbit, and the sample times are
+`qₙ`, **not** consecutive `n`. Zero arithmetic
+exponent is **not** topological entropy zero or Sarnak
+disjointness. No infinite-limit cancellation theorem is
+proved in this local source candidate.
+
+**Corresponding exact Lean declarations and commits.**
+
+- `GRWTSK.NumberTheory.ContinuedFractions.SqrtTwoLogDigest.sqrtTwoPartialQuotient`,
+  `sqrtTwoDenominator`, `sqrtTwoDenominator_recurrence`,
+  `sqrtTwoDenominator_arithmeticExponent_zero`,
+  `finiteLogCorrelation`, `finiteLogCorrelation_add_right`,
+  `harmonicNormalizer`, `normalizedLogCorrelation` in
+  [`SqrtTwoLogDigest.lean`](../../../../GRWTSK/NumberTheory/ContinuedFractions/SqrtTwoLogDigest.lean):
+  introduction `ade50aa25ea1d68d51866b772c9adac968b1dab6`,
+  later source repair `1b2d9cce6299e2f0ddef4ae107e0b4d05829b5e0`,
+  reviewed Git blob `b290af8fb37a5d76ce532c3567f7621d9c4527a5`.
+- The imported repository supplier
+  `GRWTSK.RiemannHypothesis.BranchSequenceRealization.denominator`,
+  `denominator_pos`, `denominator_tendsto`,
+  `denominator_le_succ`,
+  `arithmeticExponent_zero_of_bounded_ratio` lives in
+  [`ScheduledDenominators.lean`](../../../../GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean),
+  reviewed Git blob `cde88cc3cd37a327f64b117fa0ccc058b2bb24a7`.
+  Its shared namespace is **not** the `SqrtTwoLogDigest`
+  namespace, and its recurrence/limsup theorem is
+  algebraic/asymptotic input, not a Möbius theorem.
+- The source-only formalization was inspected at math
+  `4ca07594f5c944ba36cd1b14e44f4482cc5d94e8`.
+  The repository is pinned to Lean `v4.33.0`,
+  Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+
+**Relationship:** `source-proof-candidate` for continuants,
+finite linear identities and the conditional bounded-ratio
+arithmetic exponent argument; **`methodological-analogy`**
+to Sarnak's **Conjecture 4**;
+`unresolved` for a zero-entropy dynamical realization,
+time-index identification, genuine Möbius weight,
+uniform estimates and the ordinary asymptotic sum.
+No `direct-import` or `local-proved-bridge`
+to Sarnak's conjecture is claimed.
+
+**Actual verification:** `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED` for the listed local modules.
+An independent finite integer preflight can check
+`[1,2,5,12,29]`; this does **not** establish
+the limsup theorem in Lean or any Möbius result.
+Existing component [#1087](https://github.com/grwtsk/math/issues/1087)
+and integration [#1089](https://github.com/grwtsk/math/issues/1089)
+request actual pinned compilation, fresh kernel checking,
+transitive axioms and source-bound receipts. The existing
+Record4239 19-module validation target predates this
+√2 module, so it **cannot** count as verification.
+
 ## Current verification boundary for these entries
 
 Source review snapshot: `grwtsk/math` commit
