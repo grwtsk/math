@@ -4,6 +4,7 @@ Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Not a public root import.
 -/
 import GRWTSK.Logic.InformationLoss.AlgebraicKernelComplement
+import GRWTSK.Logic.InformationLoss.FiniteRankMeasurementLowerBound
 
 /-!
 # Sharpness and lower bound for algebraic added measurements
