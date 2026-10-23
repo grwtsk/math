@@ -144,4 +144,42 @@ theorem FreshCountedTrail.exists_strict_extension
     T.append_unused_card e fresh incident⟩
 
 
+
+/-- The empty directed counted trail at a specified vertex.
+Its used-edge set is empty, so every edge instance is initially
+available. -/
+def FreshCountedTrail.empty
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (v : Fin m → Bool) :
+    FreshCountedTrail m c v v where
+  walk := CountedWalk.empty v
+  nodup := by simp [CountedWalk.edges]
+
+@[simp] theorem FreshCountedTrail.empty_used
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (v : Fin m → Bool) :
+    (FreshCountedTrail.empty m c v).used = ∅ := by
+  rfl
+
+/-- Any counted edge instance gives a genuine nonempty one-edge
+fresh trail from its source to its target. No balance or
+connectivity hypothesis is required. -/
+def FreshCountedTrail.single
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (e : CountedBinaryEdge m c) :
+    FreshCountedTrail m c
+      (countedEdgeSource m c e) (countedEdgeTarget m c e) :=
+  (FreshCountedTrail.empty m c (countedEdgeSource m c e)).append
+    e (by simp [FreshCountedTrail.empty_used]) rfl
+
+/-- The one-edge trail uses exactly the chosen counted edge
+instance, even if other instances have the same binary label. -/
+theorem FreshCountedTrail.single_used
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (e : CountedBinaryEdge m c) :
+    (FreshCountedTrail.single m c e).used = {e} := by
+  simp [FreshCountedTrail.single, FreshCountedTrail.append_used,
+    FreshCountedTrail.empty_used]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
