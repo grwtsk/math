@@ -2,7 +2,7 @@
 schema = "farey-group-superwalk-spectral-channel-v0.1"
 repository = "grwtsk/math"
 source_parent_commit = "763e5581487a6321be999d1e948a305a86a60f48"
-source_parent_farey_blob = "44fa0d6f518bd820eea3ac37d823c271fdb8803a"
+source_parent_farey_blob = "7caef4b022e35202eef471aae2730dff6b518f70"
 toolchain = "leanprover/lean4:v4.33.0"
 mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
 source_modules = [
@@ -52,6 +52,10 @@ purpose = "order-sensitive two-step witness"
 [[declarations]]
 name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.left_right_trace_three"
 purpose = "finite hyperbolic-type block without spectral promotion"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.quintic_eye_on_walk_iff_of_endpoint_pos"
+purpose = "actual Farey-walk endpoint-local polynomial sign transport"
 
 [[declarations]]
 name = "GRWTSK.NumberTheory.Farey.GroupSuperwalk.quintic_eye_on_walk_iff"
