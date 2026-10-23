@@ -153,4 +153,60 @@ theorem FreshCountedTrail.exists_splice_entry_of_outside_support
   exact ⟨v, hv, e, (Finset.mem_sdiff.mp he).2, hs⟩
 
 
+
+/-- An unused edge that already meets the circuit's vertex set
+supplies an unused outgoing edge there, using residual balance
+to reverse incoming incidence when necessary. -/
+theorem FreshCountedTrail.unused_outgoing_of_meeting_edge
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hclosed : a = b)
+    (hbalance : CountedDegreeBalanced m c)
+    (S : Finset (Fin m → Bool))
+    (e : CountedBinaryEdge m c)
+    (he : e ∈ Finset.univ \ T.used)
+    (hmeets : CountedEdgeMeets m c S e) :
+    ∃ v ∈ S, ∃ f : CountedBinaryEdge m c,
+      f ∈ Finset.univ \ T.used ∧ countedEdgeSource m c f = v := by
+  rcases hmeets with hs | ht
+  · exact ⟨countedEdgeSource m c e, hs, e, he, rfl⟩
+  · obtain ⟨f, hf, hsource⟩ :=
+      T.unused_out_edge_of_incident hclosed hbalance
+        (countedEdgeTarget m c e) e he (Or.inr rfl)
+    exact ⟨countedEdgeTarget m c e, ht, f, hf, hsource⟩
+
+/-- Under weak edge-support cut connectivity, a nonempty internal
+used circuit and ANY remaining unused edge yield an unused outgoing
+edge at a vertex of S. The two cases distinguish whether the
+remaining edge meets S or has an endpoint outside S. -/
+theorem FreshCountedTrail.unused_outgoing_of_nonempty_residual
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hclosed : a = b)
+    (hbalance : CountedDegreeBalanced m c)
+    (hconn : CountedEdgeSupportCutConnected m c)
+    (S : Finset (Fin m → Bool))
+    (hused : ∀ e ∈ T.used,
+      countedEdgeSource m c e ∈ S ∧ countedEdgeTarget m c e ∈ S)
+    (hinside : ∃ e : CountedBinaryEdge m c, CountedEdgeMeets m c S e)
+    (e : CountedBinaryEdge m c)
+    (he : e ∈ Finset.univ \ T.used) :
+    ∃ v ∈ S, ∃ f : CountedBinaryEdge m c,
+      f ∈ Finset.univ \ T.used ∧ countedEdgeSource m c f = v := by
+  classical
+  by_cases hmeet : CountedEdgeMeets m c S e
+  · exact T.unused_outgoing_of_meeting_edge
+      hclosed hbalance S e he hmeet
+  · have houtside : ∃ f : CountedBinaryEdge m c,
+        countedEdgeSource m c f ∉ S ∨ countedEdgeTarget m c f ∉ S := by
+      refine ⟨e, ?_⟩
+      unfold CountedEdgeMeets at hmeet
+      push_neg at hmeet
+      exact Or.inl hmeet.1
+    exact T.unused_outgoing_at_supported_cut
+      hclosed hbalance hconn S hused hinside houtside
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
