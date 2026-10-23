@@ -48,6 +48,38 @@ abbrev CMFiniteFourPairedTensor (E : CMGaloisIntermediateField) :=
       (E.carrier ⊗[ℚ] E.carrier)) ⊗[ℚ]
       (E.carrier ⊗[ℚ] E.carrier)
 
+/-- Exact original paired pure generator, preserving the archived
+CM declaration name and parenthesization. -/
+def CMFiniteFourPairedPure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourPairedTensor E :=
+  (((a₁ ⊗ₜ[ℚ] x₁) ⊗ₜ[ℚ] (a₂ ⊗ₜ[ℚ] x₂)) ⊗ₜ[ℚ]
+    (a₃ ⊗ₜ[ℚ] x₃)) ⊗ₜ[ℚ] (a₄ ⊗ₜ[ℚ] x₄)
+
+/-- Exact original separated pure generator. -/
+def CMFiniteFourSeparatedPure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourCoefficientTensor E ⊗[ℚ]
+      CMFiniteCanonicalVectorTarget E :=
+  (((a₁ ⊗ₜ[ℚ] a₂) ⊗ₜ[ℚ] a₃) ⊗ₜ[ℚ] a₄) ⊗ₜ[ℚ]
+    (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
+
+@[simp]
+theorem CMFiniteFourPairedPure_eq_checked
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      pairedPure ℚ E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := rfl
+
+@[simp]
+theorem CMFiniteFourSeparatedPure_eq_checked
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      separatedPure ℚ E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := rfl
+
 /-- Original coefficient multiplication owner, using the checked supplier. -/
 def CMFiniteCoefficientMultiplication (E : CMGaloisIntermediateField) :
     E.carrier ⊗[ℚ] E.carrier →ₗ[ℚ] E.carrier :=
@@ -105,6 +137,17 @@ assembly and the independently checked canonical specialization. -/
 theorem CMFiniteCanonicalPairedAssembly_eq_checked
     (E : CMGaloisIntermediateField) :
     CMFiniteCanonicalPairedAssembly E = pairedAssembly E.carrier := rfl
+
+/-- The authentic original names for both pure tensor models are
+transported by the canonical shuffle without a geometric hypothesis. -/
+@[simp]
+theorem CMFiniteFourTensorShuffle_pure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteFourTensorShuffle E
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+    CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  exact shuffleFour_pairedPure ℚ E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
 /-- The original named assembly has precisely the canonical pure tensor
 formula, without using geometric or Hodge data. -/
