@@ -42,7 +42,8 @@ theorem index_lt_edge (j : ℕ) : j < edge j := by
   induction j with
   | zero => norm_num [edge]
   | succ j ih =>
-    rw [show j.succ = j+1 from rfl, edge_succ]
+    change j + 1 < edge (j + 1)
+    rw [edge_succ]
     have hp := edge_pos j
     omega
 
@@ -107,8 +108,16 @@ theorem prefix_union (j : ℕ) :
   ext n
   have h1 := one_le_edge j
   have h2 := (edge_strictMono (Nat.lt_succ_self j)).le
-  simp only [Finset.mem_Ioc, Finset.mem_union, cell]
-  omega
+  simp only [cell, Finset.mem_Ioc, Finset.mem_union]
+  constructor
+  · rintro ⟨hn1, hnU⟩
+    by_cases hmid : n ≤ edge j
+    · exact Or.inl ⟨hn1, hmid⟩
+    · exact Or.inr ⟨lt_of_not_ge hmid, hnU⟩
+  · intro hn
+    rcases hn with h | h
+    · exact ⟨h.1, h.2.trans h2⟩
+    · exact ⟨lt_of_le_of_lt h1 h.1, h.2⟩
 
 theorem prefix_disjoint (j : ℕ) :
     Disjoint (Finset.Ioc 1 (edge j)) (cell j) := by
