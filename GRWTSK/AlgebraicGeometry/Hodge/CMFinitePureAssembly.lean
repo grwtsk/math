@@ -108,6 +108,13 @@ def CMFiniteCoefficientMultiplication (E : CMGaloisIntermediateField) :
     E.carrier ⊗[ℚ] E.carrier →ₗ[ℚ] E.carrier :=
   coefficientMul E.carrier
 
+/-- Original coefficient multiplication pure-tensor lemma, restored in its
+single algebraic owner after migration from the geometric consumer. -/
+@[simp] theorem CMFiniteCoefficientMultiplication_tmul
+    (E : CMGaloisIntermediateField) (a b : E.carrier) :
+    CMFiniteCoefficientMultiplication E (a ⊗ₜ[ℚ] b) = a * b :=
+  coefficientMul_tmul E.carrier a b
+
 /-- Original fourfold multiplication, corrected to rTensor for the
 left-associated fourfold coefficient carrier. -/
 def CMFiniteFourCoefficientMultiplication (E : CMGaloisIntermediateField) :
