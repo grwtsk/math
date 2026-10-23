@@ -1286,6 +1286,29 @@ structure CMFiniteFourfoldAssembly
           (σ.restrictNormal E.carrier) tensor =
         assemble ((factors.scalarTransport σ).vector)
 
+/-- Construct the actual finite fourfold assembly from the canonical
+paired tensor multiplication, retaining the original target exactly. -/
+def CMFiniteFourfoldAssembly.canonical
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E) :
+    CMFiniteFourfoldAssembly factors
+      (V := CMFiniteCanonicalVectorTarget E) where
+  assemble := fun f =>
+    CMFiniteCanonicalPairedAssembly E
+      (((f 0 ⊗ₜ[ℚ] f 1) ⊗ₜ[ℚ] f 2) ⊗ₜ[ℚ] f 3)
+  tensor :=
+    CMFiniteCanonicalPairedAssembly E
+      (((factors.vector 0 ⊗ₜ[ℚ] factors.vector 1) ⊗ₜ[ℚ]
+        factors.vector 2) ⊗ₜ[ℚ] factors.vector 3)
+  original_eq := rfl
+  scalar_transport_eq := by
+    intro σ
+    simpa [CMFiniteFourEmbeddingLineVectors.scalarTransport] using
+      (CMFiniteCanonicalPairedAssembly_transport_four E
+        (σ.restrictNormal E.carrier)
+        (factors.vector 0) (factors.vector 1)
+        (factors.vector 2) (factors.vector 3))
+
 /-- Explicit rational multilinearity of the finite four-slot assembly.
 This strengthens the function-valued interface without pretending that
 a geometric assembly with these properties has been constructed. -/
