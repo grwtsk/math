@@ -3,7 +3,9 @@ Human mathematical direction: R.A. Jacob Martone. Formalization assistance: Open
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.LinearAlgebra.LinearMap.CommutingInvolutionSectors
 import Mathlib.Algebra.Order.Floor.Ring
+import Mathlib.Algebra.Order.Archimedean.Real.Basic
 import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+import Mathlib.Data.Real.Basic
 import Mathlib.Tactic.NormNum
 
 set_option autoImplicit false
@@ -52,7 +54,7 @@ def decimalScale (digits : ℕ) : ℝ :=
   (10 : ℝ) ^ digits
 
 /-- The integer cell determined by the lower endpoint at a fixed decimal precision. -/
-def digitValue (interval : ClosedInterval) (digits : ℕ) : ℤ :=
+noncomputable def digitValue (interval : ClosedInterval) (digits : ℕ) : ℤ :=
   ⌊decimalScale digits * interval.lower⌋
 
 /-- The first `digits` decimal places are certified when both endpoints occupy the same
@@ -169,10 +171,10 @@ end ClosedInterval
 /-- An exact finite-producer consensus interval. -/
 structure ConsensusCertificate
     (Producer : Type*) [Fintype Producer] where
-  local : Producer → ClosedInterval
+  interval : Producer → ClosedInterval
   consensus : ClosedInterval
   exact_carrier :
-    consensus.carrier = ⋂ producer, (local producer).carrier
+    consensus.carrier = ⋂ producer, (interval producer).carrier
 
 namespace ConsensusCertificate
 
@@ -183,7 +185,7 @@ theorem mem_local
     (certificate : ConsensusCertificate Producer)
     {x : ℝ} (hx : x ∈ certificate.consensus.carrier)
     (producer : Producer) :
-    x ∈ (certificate.local producer).carrier := by
+    x ∈ (certificate.interval producer).carrier := by
   rw [certificate.exact_carrier] at hx
   exact Set.mem_iInter.mp hx producer
 
@@ -191,7 +193,7 @@ theorem mem_local
 theorem mem_consensus
     (certificate : ConsensusCertificate Producer)
     {x : ℝ}
-    (hx : ∀ producer, x ∈ (certificate.local producer).carrier) :
+    (hx : ∀ producer, x ∈ (certificate.interval producer).carrier) :
     x ∈ certificate.consensus.carrier := by
   rw [certificate.exact_carrier]
   exact Set.mem_iInter.mpr hx
@@ -202,7 +204,7 @@ theorem common_digit
     (digits : ℕ)
     (stable : certificate.consensus.DigitsCertified digits)
     {x : ℝ}
-    (hx : ∀ producer, x ∈ (certificate.local producer).carrier) :
+    (hx : ∀ producer, x ∈ (certificate.interval producer).carrier) :
     ⌊ClosedInterval.decimalScale digits * x⌋ =
       certificate.consensus.digitValue digits :=
   certificate.consensus.floor_eq_digitValue_of_mem digits stable
@@ -310,7 +312,9 @@ theorem gap_eq_zero_iff_complete
       Nat.sub_eq_zero_iff_le.mp hgap
     exact Nat.le_antisymm certificate.certified_le_total htotal_le
   · intro hcomplete
-    simp [gap, Complete, hcomplete]
+    unfold gap
+    rw [hcomplete]
+    exact Nat.sub_self _
 
 /-- The natural-number gap is nonnegative. -/
 theorem gap_nonnegative

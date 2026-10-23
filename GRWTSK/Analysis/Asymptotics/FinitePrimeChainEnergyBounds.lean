@@ -1,6 +1,6 @@
 import GRWTSK.Analysis.InnerProductSpace.MoebiusResponseGramExpansion
 import GRWTSK.NumberTheory.Moebius.FiniteProductResponseIdentification
-import GRWTSK.Analysis.Asymptotics.ExponentialRecurrence
+import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence
 
 /-! A conditional theorem with the literal P04 proposition as conclusion.
 Only a declared full-prime completion chain is required, so this also records

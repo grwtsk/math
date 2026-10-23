@@ -2,7 +2,7 @@
 Human mathematical direction: R.A. Jacob Martone; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.CriticalEndpointDefectRecurrence
-import GRWTSK.Analysis.Asymptotics.FinitePowerSum
+import GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
 /-!
 # Mean-square control of the critical Mertens transform

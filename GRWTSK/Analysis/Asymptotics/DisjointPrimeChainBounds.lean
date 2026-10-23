@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Asymptotics.PrimeMassPotentialBounds
+import GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds
 import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
 
 /-!
