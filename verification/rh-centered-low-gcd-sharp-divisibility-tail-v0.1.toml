@@ -1,0 +1,48 @@
+schema = "grwtsk.math.verification.v0.1"
+title = "Centered low-gcd sharp divisibility-tail closure"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+axiom_audited = false
+
+[scope]
+repository = "grwtsk/math"
+pull_request = 973
+parent = "d60d9101f966651d62558f34c8faebf621c302c3"
+branch = "research/centered-low-gcd-fejer-bridge-20261022"
+
+[claims]
+restricted_mobius_divisor_indicator_zero_one_source_authored = true
+restricted_mobius_log_pointwise_bound_source_authored = true
+exact_tail_quotient_reindexing_source_authored = true
+divisible_octave_cardinality_bound_source_authored = true
+sharp_divisibility_tail_source_authored = true
+actual_fejer_sharp_tail_source_authored = true
+cutoff_correction_target_bound_source_authored = true
+residual_mass_square_equivalence_source_authored = true
+
+[constants]
+diagonal = 300
+ordinary_large_mobius_tail = 1152
+cutoff_correction = 256
+positive_shift_from_centered_mass = 1708
+
+[dependencies]
+finite_divisor_summatory_replay_reasserted = false
+historical_fejer_bridge_replay_reasserted = false
+centered_low_gcd_base_replay_reasserted = false
+large_mobius_tail_replay_reasserted = false
+cutoff_mobius_obstruction_replay_reasserted = false
+
+[open]
+sharp_divisibility_tail = false
+cutoff_correction = false
+centered_fejer_mass_square = true
+signed_small_index_residual = true
+threshold_descent = true
+
+[nonclaims]
+riemann_hypothesis = false
+chowla = false
+goldbach = false
+zero_free_region = false
