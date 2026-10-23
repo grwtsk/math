@@ -1,0 +1,17 @@
+# Reading background and intellectual lineage
+
+This catalog supports [attribution issue #254](https://github.com/grwtsk/math/issues/254). It records bibliographic candidates and explicit source idea → owner understanding → pinned formalization links. Discovery is not evidence of reading, influence, originality, authorship, or proof acceptance. Attribution remains unresolved until source-specific review.
+
+`catalog.schema.json` is a JSON Schema 2020-12 contract; `catalog.json` contains the first Desktop intake. Extracted metadata is unverified. Empty idea, understanding and formalization-link arrays are intentional: these require actual paper review and the owner's account. A formalization link binds repository, commit, path, blob and declaration, retains hypotheses and gaps, and states the relationship and evidence. Kernel checking does not establish intellectual attribution.
+
+## Custody and deduplication
+
+PDF bytes live outside Git at `~/Desktop/MathematicsLibrary/<subject>/`. Only exact SHA-256 equality merges asset identity. Distinct versions remain separate until reviewed; a filename, DOI or arXiv family is not a byte-identity test. Duplicate physical occurrences remain in a separate local duplicate area, preserving their original path and date observations; no original is deleted. Taxonomy assignments are provisional opening-page keyword classifications, with an explicit review queue.
+
+Private local records in `MathematicsLibrary/.catalog/` retain original absolute paths, pre-read filesystem times (including raw nanoseconds), inode/device, extended attributes, extraction results, and move records. These machine records, scripts and PDFs are not repository literature references. The scanner lives in `grwtsk/noeaaeue/operations/literature/`. The initial scope is loose Desktop PDFs plus Desktop/Papers recursively, excluding repository trees elsewhere on the Desktop. Non-paper personal documents stay in place.
+
+## Dates and trust
+
+Filesystem access time is a single OS observation, not an access history and not proof of human reading. It may be stale, suppressed, restored or changed by indexing, copying and this scanner. Birth and modification dates are likewise not publication or reading dates. PDF metadata dates are publisher/tool claims, not validated chronology. Capture pre-read times and extended attributes before hashing or extraction; scanner access and move observations are separately labeled. Original date observations remain durable even if moving changes ctime. Existing history cannot be reconstructed from a lone atime. Owner-reported reading dates, annotations, download provenance and bibliographic dates must retain their evidence, precision and actor separately.
+
+The schema admits future video sources with timestamp locators and video-publication dates. No YouTube collection has been performed. Bibliographic identifiers/authors/titles are candidates until independently checked; PDF notices and bytes are retained, and no redistribution license is inferred.

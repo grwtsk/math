@@ -1,0 +1,430 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "paper",
+              "book",
+              "notes",
+              "video",
+              "unknown"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "title_status": {
+            "enum": [
+              "extracted-unverified",
+              "human-confirmed",
+              "filename-only"
+            ]
+          },
+          "bibliographic_claims": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "string"
+                },
+                "status": {
+                  "enum": [
+                    "extracted-unverified",
+                    "human-confirmed",
+                    "conflicting"
+                  ]
+                }
+              },
+              "required": [
+                "field",
+                "value",
+                "evidence",
+                "status"
+              ]
+            }
+          },
+          "identifiers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "string"
+                },
+                "status": {
+                  "enum": [
+                    "extracted-unverified",
+                    "human-confirmed",
+                    "conflicting"
+                  ]
+                }
+              },
+              "required": [
+                "field",
+                "value",
+                "evidence",
+                "status"
+              ]
+            }
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "asset_sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "version_label": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "taxonomy": {
+                  "type": "string"
+                },
+                "relative_library_path": {
+                  "type": "string"
+                },
+                "rights_status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "asset_sha256",
+                "version_label",
+                "taxonomy",
+                "relative_library_path",
+                "rights_status"
+              ]
+            }
+          },
+          "reading_status": {
+            "enum": [
+              "unknown",
+              "owner-reported",
+              "documented"
+            ]
+          },
+          "attribution_status": {
+            "enum": [
+              "ATTRIBUTION_CLARIFICATION_NEEDED",
+              "reviewed"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "title_status",
+          "bibliographic_claims",
+          "identifiers",
+          "versions",
+          "reading_status",
+          "attribution_status"
+        ]
+      }
+    },
+    "ideas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "hypotheses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "source_id",
+          "locator",
+          "statement",
+          "hypotheses",
+          "evidence"
+        ]
+      }
+    },
+    "understandings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "idea_id": {
+            "type": "string"
+          },
+          "owner_statement": {
+            "type": "string"
+          },
+          "recorded_at": {
+            "type": "string"
+          },
+          "asserted_understood_at": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "owner-reported",
+              "draft",
+              "reviewed"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "idea_id",
+          "owner_statement",
+          "recorded_at",
+          "asserted_understood_at",
+          "evidence",
+          "status"
+        ]
+      }
+    },
+    "formalization_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "understanding_id": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "blob": {
+            "type": "string"
+          },
+          "declaration": {
+            "type": "string"
+          },
+          "relation": {
+            "enum": [
+              "motivates",
+              "analogy",
+              "adapts",
+              "formalizes",
+              "cites"
+            ]
+          },
+          "hypotheses_and_gaps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "review_status": {
+            "enum": [
+              "proposed",
+              "owner-confirmed",
+              "source-reviewed",
+              "kernel-checked"
+            ]
+          },
+          "attribution_issue": {
+            "const": "https://github.com/grwtsk/math/issues/254"
+          }
+        },
+        "required": [
+          "understanding_id",
+          "repository",
+          "commit",
+          "path",
+          "blob",
+          "declaration",
+          "relation",
+          "hypotheses_and_gaps",
+          "evidence",
+          "review_status",
+          "attribution_issue"
+        ]
+      }
+    },
+    "dates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subject_id": {
+            "type": "string"
+          },
+          "date": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "value": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "meaning": {
+                "enum": [
+                  "publication",
+                  "revision",
+                  "pdf-creation",
+                  "pdf-modification",
+                  "filesystem-access",
+                  "filesystem-modification",
+                  "filesystem-birth",
+                  "download",
+                  "owner-reading",
+                  "annotation",
+                  "scanner-observation",
+                  "video-publication"
+                ]
+              },
+              "evidence": {
+                "type": "string"
+              },
+              "precision": {
+                "type": "string"
+              },
+              "actor": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "value",
+              "meaning",
+              "evidence",
+              "precision",
+              "actor"
+            ]
+          }
+        },
+        "required": [
+          "subject_id",
+          "date"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "sources",
+    "ideas",
+    "understandings",
+    "formalization_links",
+    "dates"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reading background and intellectual lineage",
+  "$defs": {
+    "localOccurrence": {
+      "type": "object",
+      "required": [
+        "original_path",
+        "sha256",
+        "atime_ns",
+        "mtime_ns",
+        "ctime_ns",
+        "birthtime",
+        "observed_at",
+        "xattrs_hex"
+      ],
+      "properties": {
+        "original_path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "atime_ns": {
+          "type": "integer"
+        },
+        "mtime_ns": {
+          "type": "integer"
+        },
+        "ctime_ns": {
+          "type": "integer"
+        },
+        "birthtime": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "observed_at": {
+          "type": "string"
+        },
+        "xattrs_hex": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}
