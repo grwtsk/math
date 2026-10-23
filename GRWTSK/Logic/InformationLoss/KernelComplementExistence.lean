@@ -35,10 +35,10 @@ theorem exists_kernel_retraction_of_isCompl
     (hc : IsCompl P.ker S) :
     ∃ Q : V →ₗ[K] P.ker,
       ∀ x : P.ker, Q x.1 = x := by
-  let Q : V →ₗ[K] P.ker := Submodule.linearProjOfIsCompl P.ker S hc
+  let Q : V →ₗ[K] P.ker := Submodule.projectionOnto P.ker S hc
   refine ⟨Q, ?_⟩
   intro x
-  exact Submodule.linearProjOfIsCompl_apply_left hc x
+  exact Submodule.projectionOnto_apply_left hc x
 
 /-- With the supplied complement, there exists a sharp linear
 additional measurement having the old kernel as its output. -/
