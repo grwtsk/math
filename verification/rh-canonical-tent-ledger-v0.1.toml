@@ -1,0 +1,110 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-canonical-tent-ledger-01-v0.1"
+owner_issue = 488
+repository = "grwtsk/math"
+stack_parent_pr = 487
+base_revision = "0d95349f081ecddd372775ba2269ebb676eeffa2"
+branch = "research/488-canonical-tent-ledger-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_consumer = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.canonical_square_source_eq_tsum"
+selected_obstruction = "Bind one concrete complete explicit-formula identity with correct signs, actual trivial-zero series, finite-height residual, and vanishing tail before attempting quadraticization."
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentLedger.lean"
+blob = "d5f4cdab9316269cc8ab1383f3810d057a95453b"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalTentLedgerControls.lean"
+blob = "da8cf4f74379c2aaafad6cf5e71172db8f9cbeec"
+
+[[module]]
+path = "GRWTSK/Interfaces/CanonicalTentLedgerCore.lean"
+blob = "6de3d66de4463bf09c6e5c33dd6e49924c9d0853"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-tent-ledger.md"
+blob = "0e068b20eff3f1cb6100469e43c18b91ec799cc1"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "main"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentExplicitFormula.lean"
+blob = "2172502e9be474731d409b31a2b2d288a770ba24"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "main"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentAbsolute.lean"
+blob = "1e6f48e3994823ef6f5480e0edbf3d4984dddf70"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "main"
+path = "GRWTSK/NumberTheory/Chebyshev/TrivialZeroTentSeries.lean"
+blob = "db3a39d14a3a3f69ec254c2c66d18517d5f62fcb"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "main"
+path = "GRWTSK/NumberTheory/Chebyshev/TentSource.lean"
+blob = "e2e79a6b798772252b7d856ca3052c83fa9284ff"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.ChannelAccounting",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.SignedExplicitFormulaLedger",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.fullZeroTerm",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.canonicalLedger",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.canonicalLedger_trivialZero_eq_actual_series",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.canonical_endpoint_weight_guard",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.finiteHeadBalance",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.norm_finiteHeadBalance_le",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.canonical_tail_budget_tendsto_zero",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.wrong_prime_sign_defect",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger.AtomStageAlignment"
+]
+
+channel_accounting = [
+  "primePower = negative canonical squareTentMangoldt term in zero-sum orientation",
+  "pole = positive squareRadius main term",
+  "nontrivialZero = negative complete absolutely summed canonical divisor",
+  "trivialZero = rationalTentCorrection identified with actual negative-even zero series",
+  "archimedean = absorbed into selected residue normalization; no separate integral is added",
+  "endpoint = no separate term; square-tent endpoint weights are proved zero",
+  "tail = zero only for complete divisor; finite-head replacement carries canonicalTailBudget"
+]
+
+hostile_controls = [
+  "wrong prime-power sign produces exact two-source defect",
+  "trivial-zero correction must equal the actual negative-even series",
+  "finite head must retain canonical tail budget",
+  "tail budget must tend to zero",
+  "endpoint guard uses the exact square-tent source",
+  "signed ledger is not the positive Gram"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive trust and axiom audit",
+  "construct AtomStageAlignment for squareTentMangoldt from source-faithful prime-power atoms",
+  "identify and control quadraticization residual after atom-stage alignment",
+  "connect the resulting comparison to the named quartic or Weil consumer without double counting",
+  "external replay"
+]
+
+nonclaims = [
+  "no atom-stage alignment",
+  "no quadraticization decay",
+  "no Weil-form identity",
+  "no prime number theorem",
+  "no zero-free threshold improvement",
+  "no Riemann Hypothesis result"
+]
+
+next_obstruction = "Construct AtomStageAlignment: a finite prime-power atom stage and test whose exact linear von-Mangoldt readout equals squareTentMangoldt at every selected square stage."
