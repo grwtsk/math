@@ -3871,3 +3871,319 @@ Receipts remain outside canonical math in
 `heat-turnwise-validated-snapshot.json`, `heat-turnwise-completion-result.json`.
 Failed earlier builds remain diagnostics, not acceptance receipts. Concurrent
 new Riesz/Möbius sources and later literature increments are outside this claim.
+
+
+## Case FAREY-SHIFT-DUAL-20261023 — genuine Farey dual shift cocycle and periodic-data obstruction
+
+**Original paper identities, versions and theorem locators.**
+
+1. **Boris Kalinin**, *Livšic Theorem for matrix cocycles*,
+   *Annals of Mathematics* **173**(2) (**2011**),
+   pp. 1025–1042, stable DOI
+   [10.4007/annals.2011.173.2.11](https://doi.org/10.4007/annals.2011.173.2.11),
+   [journal record](https://annals.math.princeton.edu/2011/173-2/p11);
+   distinct arXiv preprint revision
+   [0808.0350v2](https://arxiv.org/abs/0808.0350v2)
+   (**2010** revised preprint, not the cited publication version).
+   The **introductory periodic-product condition (1.1)**,
+   printed p. 1025, gives the elementary **necessary**
+   trivial monodromy for a pure coboundary.
+   **Theorem 1.1**, printed p. 1027, proves a much
+   stronger **sufficient** direction for an
+   `α`-Hölder `GL(m,ℝ)` cocycle over a
+   **topologically transitive compact metric
+   homeomorphism with the closing property**, with
+   identity ordered product for **every** periodic
+   point and period; conclusion is an actual
+   `α`-Hölder transfer.
+   The present finite-source theorem uses **only**
+   the algebraic necessary direction, already
+   isolated under KALININ-LIVSIC-PERIODIC-20261023.
+   The full Theorem 1.1's hypotheses are **not
+   instantiated**: a one-sided full shift is not
+   asserted to be an invertible hyperbolic
+   homeomorphism with closing property, and the
+   new source exhibits nontrivial periodic data
+   rather than trivial data on all periods.
+   **No sufficiency theorem is imported.**
+
+2. **Ram Band, Siegfried Beckus, Raphael Loewy**,
+   *The Dry Ten Martini Problem for Sturmian Hamiltonians*,
+   **2024** arXiv preprint
+   [arXiv:2402.16703](https://arxiv.org/abs/2402.16703)
+   (the previously source-identified model reference is
+   **v2**; [versioned source](https://arxiv.org/abs/2402.16703v2)).
+   Paper **equation (1.1)** specifies the
+   binary irrational-rotation Sturmian
+   Schrödinger potential; the existing
+   `GRWTSK.LinearAlgebra.Sturmian.bit`
+   codes a half-open rotation interval.
+   The reported **Theorem 1.1** solves all
+   predicted gaps open for **irrational
+   rotation frequency** and **nonzero
+   Schrödinger coupling**, through an
+   infinite spectral-tree/periodic
+   approximation argument.
+   The new code uses **only the finite binary
+   rotation coding** as a chosen turn schedule
+   on nonnegative sites; **no nonzero-coupling
+   operator, infinite tree, IDS, or gap claim
+   is formalized or imported**. The source
+   paper's analytical conclusions are
+   `methodological-analogy` only.
+   No historical intellectual influence
+   follows from reuse of the model.
+
+**Exact locally formalized method and hypotheses.**
+The earlier `GRWTSK.NumberTheory.Farey.GroupSuperwalk`
+proves the actual positive turn word's
+right-frame action `frame (walk I w)
+=frame I*wordUnit w`, preserving positive
+denominators and the determinant-one Farey
+orientation of `Cell I`. Its chronological
+shear matrices are `L=[[1,0],[1,1]]` and
+`R=[[1,1],[0,1]]`.
+The earlier `TurnwiseScalarObstruction.modThreeWord_append`
+records `M(u++v)=M(u)M(v)`
+for the same actual sourced matrices over
+`ZMod 3`. The earlier
+`GRWTSK.LinearAlgebra.CocycleProduct`
+uses a **different** newest-factor-left
+product convention for a base map `T`.
+The new module defines the literal
+one-sided full-shift source space
+`Schedule=ℕ→Turn`,
+`shift(ω)(k)=ω(k+1)` and
+`chronologicalPrefix(ω,n)=[ω(0),...,ω(n-1)]`.
+All (n∈ℕ) and all schedules are quantified:
+there is **no** periodicity assumption
+for the basic source matrix comparison.
+
+Using the actual source turn shear
+`turnShear t : Mat3`, its determinant
+is **one**, and its **transpose**
+is an actual group element in Mathlib's
+`Matrix.SpecialLinearGroup (Fin 2) (ZMod 3)`.
+With `dualStep(ω)=(turnShear (ω 0))ᵀ`,
+the exact full-group cocycle product is
+
+```text
+(cocycleProduct shift dualStep n omega : Mat3)
+  = (modThreeWord (chronologicalPrefix omega n))ᵀ.
+```
+
+**Transpose is necessary to reconcile the
+right-acting chronological Farey FRAME word
+with the newest-left cocycle convention**;
+the source does not assume shear
+commutativity or disguise a reversed
+column-vector action as the actual
+chronological Farey-cell refinement.
+
+The exact full-shift schedule
+`repeatLR(n)=left` at even n and
+`right` at odd n is a genuine
+period-two point: `shift^[2] repeatLR
+= repeatLR`.
+Its source prefix is `[left,right]`,
+and its periodic monodromy is
+`(LR)ᵀ=[[1,1],[1,2]] mod 3≠I`
+as an actual `SL₂(F₃)` group element.
+The new source consumes only the **already
+stated necessary** periodic-data
+obstruction to establish that the
+entire full-shift cocycle is not a
+global pure group coboundary, and that
+no globally defined gauge can trivialize
+this periodic monodromy.
+A parameterized version preserves
+**both** hypotheses `shift^[n] ω=ω`
+and `modThreeWord(prefix ω n)≠I`;
+it asserts neither premise for arbitrary
+infinite streams or an aperiodic subsystem.
+
+The source-defined rotation adapter
+`sturmianTurns α ξ n` is **exactly**
+`left` when the earlier
+`Sturmian.bit α ξ (n:ℤ)=1`,
+and `right` otherwise.
+Its all-n matrix comparison is a
+source-level specialization of the
+full-shift identity. **No** claim
+that this coding is nonperiodic,
+one-sided shift invertible,
+zero entropy, closing/hyperbolic,
+Hölder, spectral, or analytically
+equivalent to the real Schrödinger
+transfer is smuggled into its type.
+In particular **the periodic full-shift
+witness is not assumed in the orbit
+closure of an irrational Sturmian
+sequence**. No Sarnak disjointness,
+Siegel-zero, Hodge conjecture or RH
+implication follows.
+
+**Formal declarations and exact main source identity.**
+New module
+`GRWTSK.NumberTheory.Farey.FareyShiftCocycle`,
+path `GRWTSK/NumberTheory/Farey/FareyShiftCocycle.lean`,
+first integrated on existing `grwtsk/math`
+main by routine non-force commit
+[`a6f2d2bc30e6fb8f056f5c371147a6d0e21fbe3e`](https://github.com/grwtsk/math/commit/a6f2d2bc30e6fb8f056f5c371147a6d0e21fbe3e),
+source Git blob **`50b0a865a550341322e64615419461b998546e17`**.
+The mathematical scope document
+[`farey-shift-dual-cocycle.md`](../../../mathematics/NumberTheory/Farey/farey-shift-dual-cocycle.md)
+was integrated at
+`9faa4da15eed992fb0423cf2514be497f2ce7a94`,
+doc blob `cdc7c0a6f36f4dd68924c9f26a36ae88a8f0560f`.
+
+Full declaration names have prefix
+`GRWTSK.NumberTheory.Farey.FareyShiftCocycle.`:
+`Schedule`, `shift`,
+`shift_iterate_apply`,
+`chronologicalPrefix`,
+`chronologicalPrefix_matrix_succ`,
+`chronological_farey_frame`,
+`det_turnShear`, `SL3`,
+`dualTurn`, `dualTurn_coe`,
+`dualStep`,
+`dualCocycle_sourceMatrix`,
+`repeatLR`,
+`repeatLR_shift_period_two`,
+`repeatLR_prefix_two`,
+`repeatLR_periodic_matrix`,
+`repeatLR_monodromy_ne_one`,
+`fullShift_no_pure_coboundary`,
+`fullShift_no_gauge_trivializes_LR`,
+`nontrivial_word_dual_product`,
+`periodic_source_word_not_coboundary`,
+`periodic_source_word_resists_gauge`,
+`sturmianTurns`,
+`sturmianTurns_left_iff`,
+`sturmian_source_dual_product`.
+
+**Exact direct imports and source identities:**
+`GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction`,
+blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1`;
+`GRWTSK.LinearAlgebra.PeriodicCocycleData`,
+blob `11ca2a896e8844dcb483ce9c910c1bb07ae857e1`;
+`GRWTSK.LinearAlgebra.Sturmian`,
+blob `9bb5e76caaab1c4cd0a9df067e791f9996c42d48`;
+`Mathlib.LinearAlgebra.Matrix.SpecialLinearGroup`
+and `Mathlib.Tactic` from pinned Mathlib.
+Earlier `TurnwiseScalarObstruction`
+transitively imports the true
+`GroupSuperwalk`,
+`ReturnAngularChannel`,
+`ProjectiveQuadraticChannel`
+and the Farey polynomial sources.
+The operator-cocycle supplier
+`CocycleProduct.cocycleProduct_gauge`
+is not a constructed source-specific
+analytic normalizer.
+The full transitive imports,
+generated helpers and axiom closure
+must be inventoried at the checked
+revision, not inferred from names.
+
+**Separate logical classifications.**
+`imported-mathematics`: maintained
+GRWTSK Farey right-frame/word and
+newest-left cocycle theorems, plus
+the actual Mathlib group of
+determinant-one matrices.
+`source-proof-candidate`: all new
+Lean proofs, including the
+matrix transpose bridge and
+full-shift periodic no-coboundary
+result.
+`conditional-interface`: the
+general source-word obstruction
+requiring an exact closed schedule
+and nonidentity finite source word.
+`finite-certificate`: independent
+exhaustive `ZMod3` products
+for 511 words of lengths 0..8,
+and 11,760 concrete conjugations
+by the 24 elements of
+`SL₂(F₃)`, including all 490
+nonidentity words; exact Python
+arithmetic, **not Lean proof**.
+`methodological-analogy`: Kalinin's
+sufficient Livšic regularity and
+Band–Beckus–Loewy's
+nonzero-coupling infinite-volume
+spectral tree.
+`unresolved`: the actual minimal
+irrational Sturmian orbit closure,
+its aperiodicity/quantitative
+regularity, all-periodic-data
+compatibility on that restricted
+dynamical system, a correct
+operator-gauge comparison and
+all analytic limit/spectral
+estimates.
+No new `kernel-verified bridge`
+or `PAPER_TO_LEAN_BRIDGE_PROVED`
+is claimed without real execution.
+
+**Actual verification:** `SOURCE_ONLY /
+NOT_RUN / NOT_KERNEL_AUDITED` for the
+new `FareyShiftCocycle` source.
+Pinned toolchain
+`leanprover/lean4:v4.33.0`,
+Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The interactive runtime has no
+`lean`, `lake` or
+`leanchecker` executable.
+No `lake build --wfail`,
+direct Lean elaboration,
+fresh native kernel checking,
+`#print axioms`,
+private/generated/unsafe/native
+closure audit, or independent
+external verification has run
+**for this new leaf**.
+The earlier separately scoped
+accepted Farey parents and their
+receipts **cannot be transferred**
+to this new module or to the
+`TurnwiseScalarObstruction` and
+`ProjectiveQuadraticChannel`
+source-only obligations (their
+requests remain independent).
+An exact-commit passive issue
+with module/dependency blobs,
+commands and hostile controls
+is required before upgrading
+any verification state.
+Operational runners, receipts
+and mutable execution state
+belong in `grwtsk/noeaaeue`,
+not this mathematical source ledger.
+
+**Missing bridges and explicit nonclaims.**
+The source proves in its proposed
+Lean statements neither
+`Irrational α` nor
+`0<α<1` for any concrete
+`sturmianTurns`; it
+does not establish an actual
+restricted Sturmian dynamical
+system in the Lean type,
+identify the finite dual cocycle
+with the real Schrödinger
+transfer, import or prove
+the dry spectral-gap theorem,
+construct Kalinin's Hölder
+transfer or an admissible
+bounded/tempered gauge,
+supply actual zero-entropy
+flows/Möbius cancellation,
+or derive prime-density,
+Siegel-zero, zeta or
+Riemann-Hypothesis conclusions.
+This is a source-preserving
+finite algebraic bridge only.
+
