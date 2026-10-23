@@ -52,22 +52,20 @@ theorem thinHistoricalAtomicCumulative_eq_weightedPrefix
     centeredGreenArithmeticCoefficient
   let m := centeredGreenCutoff X t
   have hm := centeredGreenCutoff_bounds hX ht0 ht1
-  apply Finset.sum_bij (fun n hn => n)
+  rw [← Finset.sum_filter]
+  apply Finset.sum_congr
+  · ext n
+    simp only [Finset.mem_filter, Finset.mem_Ioc]
+    constructor
+    · intro hn
+      refine ⟨hn.1.1, ?_⟩
+      exact (location_le_iff_le_cutoff hX ht0 ht1).mp hn.2
+    · intro hn
+      refine ⟨⟨hn.1, le_trans hn.2 hm.2⟩, ?_⟩
+      exact (location_le_iff_le_cutoff hX ht0 ht1).mpr hn.2
   · intro n hn
-    have hi := Finset.mem_Ioc.mp hn
-    simp only
-    rw [if_pos ((location_le_iff_le_cutoff hX ht0 ht1).mpr hi.2)]
-    exact Finset.mem_Ioc.mpr ⟨hi.1, hi.2⟩
-  · intro a ha b hb hab
-    exact hab
-  · intro b hb
-    refine ⟨b, ?_, rfl⟩
-    have hi := Finset.mem_Ioc.mp hb
-    exact Finset.mem_Ioc.mpr ⟨hi.1, (by
-      rw [location_le_iff_le_cutoff hX ht0 ht1]
-      exact hi.2)⟩
-  · intro n hn
-    rfl
+    have hloc := (Finset.mem_filter.mp hn).2
+    rw [if_pos hloc]
 
 def centeredGreenBaselinePrefixResidual
     (X : ℕ) (t : ℝ) : ℝ :=
