@@ -35,7 +35,7 @@ namespace GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
 open Polynomial
 
 /-- Actual monic cubic for the integral short Weierstrass model. -/
-def shortCubic : ℤ[X] := X ^ 3 + C shortA * X + C shortB
+noncomputable def shortCubic : ℤ[X] := X ^ 3 + C shortA * X + C shortB
 
 theorem shortCubic_monic : shortCubic.Monic := by
   unfold shortCubic

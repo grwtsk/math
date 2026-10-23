@@ -61,7 +61,7 @@ theorem linearIndependent_of_characterValues
       rw [hc]
       exact map_zero _
     simp only [map_sum, map_zsmul, zsmul_eq_mul, characterValues] at hchar
-    simpa only [Matrix.mulVec_apply_eq_sum, coeff, mul_comm] using hchar
+    simpa only [Matrix.mulVec_apply_eq_sum, coeff, mul_comm, Pi.zero_apply] using hchar
   have hcoeff : coeff = 0 := by
     apply characterMatrix_mulVec_injective
     simpa using hzero

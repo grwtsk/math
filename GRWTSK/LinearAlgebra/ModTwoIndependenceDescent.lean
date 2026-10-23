@@ -76,7 +76,7 @@ theorem linearIndependent_of_even_relations
       · intro i
         have hle : (r i).natAbs ≤ coefficientMass r := by
           unfold coefficientMass
-          exact Finset.single_le_sum (fun j hj => Nat.zero_le _) (Finset.mem_univ i)
+          exact Finset.single_le_sum (fun j hj => Nat.zero_le (r j).natAbs) (Finset.mem_univ i)
         have hz : (r i).natAbs = 0 := by omega
         exact Int.natAbs_eq_zero.mp hz
       · have hhalf : ∀ i, ∃ d : ℤ, r i = (2 : ℤ) * d := by
