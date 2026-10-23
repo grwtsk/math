@@ -1162,6 +1162,11 @@ real execution receipts only after an authorized executor runs them.
 
 ## Case FAREY-ANGULAR-02 — oriented return phase, not a global spectral character
 
+Subsequent scoped verification: see **FAREY-REMAINING-VALIDATION-20261023**
+below for the actual checked source blobs and commands. Historical NOT_RUN
+observations in this section are superseded only for its explicitly listed
+eight targets; paper analogies and other modules retain their original status.
+
 **Bibliography and attribution.** These are **2026 repository-derived
 constructions**, credited in the source to mathematical direction by
 **grwtsk contributors** with formalization assistance from **OpenAI**.
@@ -1286,6 +1291,11 @@ zero-distribution result follows.
 
 ## Case FAREY-HODGE-01 — cyclic residue Hodge and nonunit equivariance failure
 
+Subsequent scoped verification: see **FAREY-REMAINING-VALIDATION-20261023**
+below for the actual checked source blobs and commands. Historical NOT_RUN
+observations in this section are superseded only for its explicitly listed
+eight targets; paper analogies and other modules retain their original status.
+
 **Bibliography/source type.** This is a **2026 repository-derived
 finite graph and residue construction** credited in the source to
 mathematical direction by **grwtsk contributors** and formalization
@@ -1401,6 +1411,11 @@ commit 74a1937e01d7dc220e2c78d35a448b830afc3e0f; none is an actual
 compiler, kernel, or axiom-audit acceptance receipt.
 
 ## Case FAREY-RECENT-OBSTRUCTIONS-20261023 — exact suppliers versus solved/open-paper analogies
+
+Subsequent scoped verification: see **FAREY-REMAINING-VALIDATION-20261023**
+below for the actual checked source blobs and commands. Historical NOT_RUN
+observations in this section are superseded only for its explicitly listed
+eight targets; paper analogies and other modules retain their original status.
 
 **Source/publication identities and classification.** The four new
 modules below are **2026 repository-original local mathematics**, under
@@ -2043,3 +2058,129 @@ are **NOT_RUN / NOT_KERNEL_AUDITED**. No Railway, no force push.
 A separate pinned issue is required before accepting or promoting
 any of these source scripts. This work does not claim that a linked
 private discussion was inspected or verified.
+
+## Case FAREY-REMAINING-VALIDATION-20261023 — reconciled literature and remaining finite bridges
+
+**Attribution, source and paper boundary.** These eight modules are 2026
+repository constructions under the source-credited mathematical direction of
+grwtsk contributors, with OpenAI formalization assistance; upstream Mathlib
+mathematics retains its own authorship. No separate paper title, byline, DOI,
+year/version or theorem locator is established for these new finite constructions.
+The stable sources are the commit and blobs below. Imported mathematics is the
+pinned Mathlib matrix, character, finite-field and real/complex infrastructure,
+plus the explicitly imported maintained GRWTSK declarations. Historical paper
+comparisons and metadata in FAREY-ANGULAR-02, FAREY-HODGE-01 and
+FAREY-RECENT-OBSTRUCTIONS-20261023 remain comparisons, not proof suppliers.
+
+In particular, Ram Band, Siegfried Beckus and Raphael Loewy's *The Dry Ten Martini
+Problem for Sturmian Hamiltonians* (2024), [arXiv:2402.16703](https://arxiv.org/abs/2402.16703),
+equation (1.1), supplies the already-recorded potential-model comparison only.
+Its Theorem 1.1 requires irrational frequency and nonzero coupling. The local
+fixed intertwiner uses **zero coupling** and energy three and does not instantiate
+that theorem. The Sarnak and algebraic Hodge comparisons remain analogies with
+unresolved premises, not analytic consequences of the finite graph identities.
+No historical influence is inferred from a mathematical match.
+
+**Exact checked methods and hypotheses.**
+
+- `GRWTSK.NumberTheory.Farey.exists_root_query_not_factorsThrough_endpointSignProfile`:
+  two exact endpoint-sign predicates on an authentic Farey cell do not determine
+  rational-root membership. It uses the actual positive-endpoint quadratic
+  counterexample, not a claim about the globally positive factor X²+1.
+- `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.native_projector_erases_all_or_retains_all`
+  and `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.no_native_projector_with_partial_information`:
+  a complex two-coordinate idempotent commuting with **both** native shears is
+  zero or identity; the partial-information contradiction additionally assumes
+  retained nonzero information and a changed input.
+- `GRWTSK.NumberTheory.Farey.ReturnAngularChannel.simultaneous_return_channels`,
+  `GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_formula`,
+  `GRWTSK.NumberTheory.Farey.ReturnAngularChannel.discreteSpiral_norm`:
+  the selected LR word has a mod-three four-vector orbit and the chosen phase
+  1,i,−1,−i. The declared product observable has exact multiplier λi and modulus
+  λⁿ. It is a discrete selected observation, not a global group character or
+  continuous geometric spiral theorem.
+- `GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction.no_projective_selected_phase_extension`:
+  no globally sign-invariant vector readout agrees with that oriented phase at
+  all four selected vectors. Sign invariance is only a necessary condition for
+  projective descent; other observations are not ruled out.
+- `GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue.farey_projective_eigenvalue_sq_one`
+  and `GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue.squared_orbitPhase_factorsThrough_parity`:
+  two-step antipodal return, sign invariance, eigen-relations and a **nonzero**
+  observed value force ω²=1. The squared phase factors through parity and has
+  the stated eigenlaw only on the selected orbit; no full-vector eigenlaw is
+  inferred here.
+- `GRWTSK.NumberTheory.Farey.CyclicResidueHodge.cyclic_laplacian_nonneg`,
+  `GRWTSK.NumberTheory.Farey.CyclicResidueHodge.cyclic_laplacian_kernel`,
+  `GRWTSK.NumberTheory.Farey.CyclicResidueHodge.farey_unit_projector_not_translation_equivariant`:
+  for q nonzero, finite graph D*D is positive semidefinite and has the same kernel
+  as D. Unit/nonunit coordinate projections are complementary and orthogonal,
+  but the explicit mod-four Farey point mass disproves translation equivariance.
+- `GRWTSK.NumberTheory.Farey.RamanujanFourierHodge.additiveMode_laplacian_eigen`
+  and `GRWTSK.NumberTheory.Farey.RamanujanFourierHodge.characterAverage_primitive_nonprimitive`:
+  exact finite cyclic eigenmodes and the **complete** primitive-plus-nonprimitive
+  frequency sum, retaining 1/q normalization. The character rule is addition
+  mapped to multiplication. No divisor-reindexing theorem or cancellation bound
+  is supplied.
+- `GRWTSK.Spectral.FareySturmianFreeConjugacy.farey_free_conjugate`,
+  `GRWTSK.Spectral.FareySturmianFreeConjugacy.sturmian_free_power_intertwines`,
+  `GRWTSK.Spectral.FareySturmianFreeConjugacy.free_energy_three_not_elliptic`:
+  one fixed two-sided invertible matrix intertwines LR with the actual free
+  Schrödinger transfer at energy three for all finite powers. Rotation/phase
+  parameters are arbitrary because coupling is exactly zero; energy three is
+  outside the free elliptic trace window. No nonzero-coupling spectral result.
+
+**Immutable source identity.** Repair commit
+[`9374e112a911a42b6e355127bbce529567006b70`](https://github.com/grwtsk/math/commit/9374e112a911a42b6e355127bbce529567006b70).
+Module names below denote their corresponding `.lean` paths; the checked local
+transitive closure contains 136 GRWTSK source files.
+
+| Fully qualified module | Git blob |
+|---|---|
+| `GRWTSK.NumberTheory.Farey.EndpointInformationLoss` | `044a6f0b8a797a2927ad8766326d8e5342017fb9` |
+| `GRWTSK.NumberTheory.Farey.InvariantProjectorInformationLoss` | `172a34e476149f3bdb0ec8abc7492d7be4ab9a80` |
+| `GRWTSK.NumberTheory.Farey.ReturnAngularChannel` | `96af81229ee06c47b3bbb81740319d097d51f0e1` |
+| `GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction` | `14419d94086337a48a1e99eb3ba1b0cf29ddcd62` |
+| `GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue` | `bc61c3213e0c6e39c79d47bac35eb9d57d2363f1` |
+| `GRWTSK.NumberTheory.Farey.CyclicResidueHodge` | `7ac7c83be9930c39c5956455ca706c05261bb763` |
+| `GRWTSK.NumberTheory.Farey.RamanujanFourierHodge` | `c43b7e940050bd5ba095f21d10d26eb3d1233f71` |
+| `GRWTSK.Spectral.FareySturmianFreeConjugacy` | `f854110d2c099b97094505063eee3e8399f35e2f` |
+
+**Actual verification evidence.** Pinned Lean `leanprover/lean4:v4.33.0`,
+Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
+All following commands exited zero against the recorded source bytes:
+
+```sh
+lake build GRWTSK.NumberTheory.Farey.EndpointInformationLoss GRWTSK.NumberTheory.Farey.InvariantProjectorInformationLoss GRWTSK.NumberTheory.Farey.ProjectiveKoopmanEigenvalue GRWTSK.NumberTheory.Farey.RamanujanFourierHodge GRWTSK.Spectral.FareySturmianFreeConjugacy --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/farey-remaining-audit.lean
+```
+
+Strict build: 8,841 jobs, covering all eight named targets transitively. Public
+root: 9,304 jobs. Fresh kernel replay checked 3,458 transitive GRWTSK
+declarations; only `propext`, `Classical.choice` and `Quot.sound` (or none) occur,
+with no `sorryAx` or additional axioms. All 129 target-owned declarations,
+including private/generated declarations, have reconciled type inventories and
+are safe. All 63 authored theorem/lemma headers are unchanged. Repairs are
+limited to proof elaboration, character-law application, exact finite reductions,
+conjugation notation and strict-build tactic/lint cleanup.
+
+**Classification and receipts.** The local finite statements above are now
+**kernel-verified bridges at their stated scope**; their explicit premises remain
+premises. The named paper comparisons remain **analogies**, conditional analytic
+interfaces remain **conditional**, and missing suppliers remain **unresolved**.
+This dated evidence supersedes earlier NOT_RUN observations **only for the eight
+listed source blobs and checked dependency closure**. Historical source-only
+comments are retained as provenance. Independent external/CI replay and analytic
+premise discharge are not claimed; standalone public imports are not added.
+Actual logs/runners and source-hash snapshots remain outside canonical math in
+`/Users/local/Documents/ChatGPT/math-branch-integration-20261022/`:
+`farey-remaining-final-build3.log`, `farey-remaining-public.log`,
+`farey-remaining-audit.lean`, `farey-remaining-audit.log`,
+`farey-remaining-validated-snapshot.json`, `farey-remaining-completion-result.json`.
+Earlier failed builds are diagnostics, not acceptance receipts.
+
+**Preserved unresolved bridges.** No algebraic Hodge conjecture, infinite-volume
+spectral gap, Dry Ten Martini theorem, globally descended quarter-turn character,
+nonperiodic Möbius cancellation, L-function estimate, elliptic rank or RH is
+proved. The distinct concurrently added `HeatCompensatedReturn` and unrelated
+new density, gauge and group modules are outside this validation claim.
