@@ -41,14 +41,16 @@ theorem no_finite_order_zero {f h : ℂ → ℂ} {z : ℂ}
   have he := analyticOrderAt_congr hode
   have hm : analyticOrderAt (fun w => h w * f w) z =
       analyticOrderAt h z + analyticOrderAt f z := by
-    simpa only [Pi.mul_apply] using analyticOrderAt_mul hh hf
+    change analyticOrderAt (h * f) z =
+      analyticOrderAt h z + analyticOrderAt f z
+    exact analyticOrderAt_mul hh hf
   have hbad : (k : ℕ∞) = analyticOrderAt h z + ((k : ℕ∞) + 1) := by
     simpa only [hd, hm, ho] using he
   have hle : (k : ℕ∞) + 1 ≤ (k : ℕ∞) := by
     calc
       (k : ℕ∞) + 1 = 0 + ((k : ℕ∞) + 1) := (zero_add _).symm
       _ ≤ analyticOrderAt h z + ((k : ℕ∞) + 1) :=
-        add_le_add_right (zero_le _) _
+        by gcongr
       _ = (k : ℕ∞) := hbad.symm
   have : k + 1 ≤ k := by exact_mod_cast hle
   omega
