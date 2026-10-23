@@ -231,4 +231,30 @@ theorem CountedWalk.append_last_two_vertices
   · rw [T.chronologicalVertices_last, he]
 
 
+
+/-- Every chronological edge list is paired with a vertex trace
+whose final vertex is the actual terminal vertex. For a closed
+walk the same vertex is its initial vertex, giving the cyclic
+seam without any assumption on the number of edges. -/
+theorem CountedWalk.closed_trace_endpoint
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (hclosed : a = b) :
+    T.chronologicalVertices.getLast? = some a := by
+  rw [T.chronologicalVertices_last, ← hclosed]
+
+/-- The chronological vertex trace is always nonempty, so its
+head and last are genuine vertices rather than absent options. -/
+theorem CountedWalk.chronologicalVertices_nonempty
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalVertices ≠ [] := by
+  intro h
+  have hlen := T.chronologicalVertices_length
+  rw [h] at hlen
+  simp at hlen
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
