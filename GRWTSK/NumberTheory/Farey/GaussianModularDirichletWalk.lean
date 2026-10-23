@@ -134,9 +134,8 @@ theorem nonunit_right_pure_dirichlet_indicator_impossible
   rcases h with ⟨S, coeff, hrepr⟩
   have heval := hrepr (I.rightNum : ZMod q)
   have hzero := nonunit_right_pure_dirichlet_sum_zero I q hNonunit S coeff
-  simp only [if_pos rfl] at heval
   rw [hzero] at heval
-  exact one_ne_zero heval
+  norm_num at heval
 
 /-- A reached polynomial-sign eye plus separately supplied nonunit status
 combines the Gaussian word identity, additive detection and the failure of

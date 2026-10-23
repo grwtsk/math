@@ -64,10 +64,7 @@ theorem gaussian_cross_im_eq_one (I : Cell) :
     (leftGaussian I * conjugateRightGaussian I).im =
         (I.leftNum : ℤ) * (-(I.rightDen : ℤ)) +
           (I.leftDen : ℤ) * (I.rightNum : ℤ) := by
-      simpa [leftGaussian, conjugateRightGaussian] using
-        (gaussian_product_im
-          (I.leftNum : ℤ) (I.leftDen : ℤ)
-          (I.rightNum : ℤ) (-(I.rightDen : ℤ)))
+      simp [leftGaussian, conjugateRightGaussian]
     _ = (I.leftDen : ℤ) * (I.rightNum : ℤ) -
           (I.leftNum : ℤ) * (I.rightDen : ℤ) := by ring
     _ = 1 := by rw [hdet]; ring
@@ -84,7 +81,8 @@ theorem modularDet_eq_one (I : Cell) (q : ℕ) :
   have hdet :
       (I.leftDen : ZMod q) * (I.rightNum : ZMod q) =
         (I.leftNum : ZMod q) * (I.rightDen : ZMod q) + 1 := by
-    exact_mod_cast I.unimodular
+    simpa only [Nat.cast_mul, Nat.cast_add, Nat.cast_one] using
+      congrArg (fun n : ℕ => (n : ZMod q)) I.unimodular
   unfold modularDet
   rw [hdet]
   ring
