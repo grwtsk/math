@@ -752,3 +752,95 @@ consequence follows. The finite return projector is not a simultaneous
 projector for both shears. This run does not validate concurrently added
 `EndpointInformationLoss`, `InvariantProjectorInformationLoss`, or
 `ReturnAngularChannel`; those retain their own pending evidence state.
+
+## Rational Riesz correction and full-family reconstruction obstruction (#189, #966)
+
+**Source identities and status (2026-10-23).** This increment is a
+`local-proved-bridge` from existing Lean sources, not a newly attributed paper
+or a claim of historical influence. The local source-code snapshots are
+“Source-bound first-Riesz second differences” and “Explicit reconstruction of
+the visible anchor-3 cell at every large scale,” copyright R.A. Jacob Martone,
+formalization assistance OpenAI, 2026, at
+[math b9c830170615ea5fc92ea988252891a1808ea074](https://github.com/grwtsk/math/commit/b9c830170615ea5fc92ea988252891a1808ea074).
+The `direct-import` is Mathlib's “Integral over an interval,” authors Yury
+Kudryashov, Patrick Massot, Sébastien Gouëzel, copyright 2020, source snapshot
+[db584cd6d46c92f209a44c0f1c829460d327499d](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean).
+The exact imported methods are interval-integral linearity, congruence,
+adjacent-interval addition with interval integrability, and the support
+restriction identity. No external publication or unverified source theorem
+is substituted for these imports.
+
+**Formal destinations and exact hypotheses.** All three new source files are
+pinned to [math 9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5](https://github.com/grwtsk/math/commit/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5):
+
+- [RationalRieszPrimitive.lean](https://github.com/grwtsk/math/blob/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5/GRWTSK/Analysis/Real/RationalRieszPrimitive.lean):
+  `GRWTSK.Analysis.Real.RationalRieszPrimitive.rationalRieszPrimitive`
+  is the independent integral `-∫ t in a..x, (x-t)*rationalDensity t`.
+  `GRWTSK.Analysis.Real.RationalRieszPrimitive.rationalRieszPrimitive_second_difference`
+  proves its second difference equals `h*rationalTentCorrection x h`, for
+  `1<a`, `0<h`, `a≤x-h`.
+  `GRWTSK.Analysis.Real.RationalRieszPrimitive.rationalRieszPrimitive_change_base`
+  proves the explicit affine base-change formula for `1<a≤b≤x`; its two
+  coefficients are actual integrals of the rational density and of `t`
+  times that density. The base value is proved zero. Integrability and
+  tent support are discharged on the stated domain; the primitive is not
+  defined as an arithmetic discrepancy.
+- [RieszCorrectionNormalization.lean](https://github.com/grwtsk/math/blob/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5/GRWTSK/NumberTheory/Chebyshev/RieszCorrectionNormalization.lean):
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_second_difference`
+  removes the actual source curvature for `1<a`, `0<h`, `a≤x-h`, `x+h≤N`.
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_midpoint`
+  proves the midpoint equation for `1<a≤u<v≤N`.
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.firstRieszPrefix_stable`
+  proves prefix stability when `N≤M` and `x≤N`.
+  The fully qualified declarations
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_two`
+  and
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_three`
+  give the exact normalization data for `N≥2` and `N≥3`, retaining the
+  actual full canonical zero values and correction integral.
+- [CanonicalFourFamilyFullRestrictionResidual.lean](https://github.com/grwtsk/math/blob/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5/GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyFullRestrictionResidual.lean):
+  `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.fullRestriction_residual_ge_one_of_anchorFive_zero`
+  proves `1≤q` for every `X≥3` if a reconstruction's anchor-5 coordinate is
+  zero on every input and its relative squared-energy residual estimate
+  holds on the full genuine coordinate-restriction difference family.
+  The witness is an actual retained anchor-5 cell with centered Möbius
+  amplitude `-1` and source energy one; its provenance and membership are
+  proved, not assumed from arbitrary finite support.
+  `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalVisibleReconstruction_full_residual_ge_one`
+  instantiates this obstruction for the earlier anchor-3 operator at all
+  `X≥3`, despite its proved uniform reconstruction-energy bound.
+
+**Verification evidence.** At source commit `9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5`,
+Lean 4.33.0 and clean Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`,
+`lake build --wfail` on the public root, twelve previously qualified
+standalone consumers, and the three new standalone modules (sixteen
+targets total) completed with exit 0, 9,415 jobs.
+The three new modules passed exact-module kernel replay, exit 0, three
+modules and zero failures. The unchanged source/object hashes match the
+qualified baseline `b9c830170615ea5fc92ea988252891a1808ea074`; this is
+incremental kernel qualification, not a fresh replay of every imported
+proof. The full 709-module project closure passed the axiom audit with
+22,620 logical declarations and zero disallowed axioms, the coverage
+census with 6,776 explained native-only entries and zero unexplained
+entries, and the runtime-helper audit with twelve helpers and zero
+failures. The audit source commands were `lake env lean --trust=0
+-DwarningAsError=true` on each of `FullAxiomAudit.lean`,
+`FullCoverageAudit.lean`, and `FullRuntimeAudit.lean`, and `lake env lean
+--run KernelAffectedClosure.lean`, all exit 0. These runners and the
+source/object bindings are outside math under
+`/Users/think/Desktop/noeaaeue/.codex-runtime/math-riesz-primitive-full-frame/`.
+All 709 committed source blobs were checked against the audited hashes.
+The issue updates in [#189](https://github.com/grwtsk/math/issues/189) and
+[#966](https://github.com/grwtsk/math/issues/966) carry the pinned scope;
+they are not substitutes for kernel qualification.
+
+**Precise missing bridges and nonclaims.** Global real-affineness of the
+corrected source defect still needs its regularity/interval argument;
+the two exact boundary values do not by themselves prove that argument.
+Identification of the resulting coefficients with classical zeta
+constants, all endpoint and unsmoothing limits, and the raw pointwise
+zero tail remain unresolved. On #966 the obstruction concerns the stated
+operator class and the full coordinate-restriction family. It does not
+exclude a different operator reconstructing the missing coordinates,
+prove a full RH application-family estimate, bound the signed omitted
+source terms, or imply RH or its negation.
