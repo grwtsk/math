@@ -57,4 +57,41 @@ theorem FreshCountedTrail.complete_or_strict_connected_progress
     exact T.exists_strict_progress_of_visited_unused_edge
       hclosed hbalance hvisit f hf hsource
 
+
+/-- Finite Hierholzer termination: a nonempty closed fresh trail
+extends to a complete counted closed trail in a balanced,
+weakly edge-support-connected multigraph. No edge labels or
+parallel-edge instances are identified. -/
+theorem FreshCountedTrail.exists_complete_connected_extension
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hclosed : a = b)
+    (hbalance : CountedDegreeBalanced m c)
+    (hconn : CountedEdgeSupportCutConnected m c)
+    (hnonempty : T.used.Nonempty) :
+    ∃ R : FreshCountedTrail m c a b,
+      R.used = Finset.univ ∧ T.used ⊆ R.used := by
+  classical
+  suffices hmain :
+      ∀ (n : ℕ) (T : FreshCountedTrail m c a b),
+        (Finset.univ \ T.used).card = n →
+        T.used.Nonempty →
+        ∃ R : FreshCountedTrail m c a b,
+          R.used = Finset.univ ∧ T.used ⊆ R.used by
+    exact hmain _ T rfl hnonempty
+  intro n
+  induction n using Nat.strong_induction_on with
+  | h n ih =>
+      intro T hn hne
+      rcases T.complete_or_strict_connected_progress
+          hclosed hbalance hconn hne with hdone | ⟨S, hTS, hlt⟩
+      · exact ⟨T, hdone, Finset.Subset.rfl⟩
+      · have hS : S.used.Nonempty := by
+          obtain ⟨e, he⟩ := hne
+          exact ⟨e, hTS he⟩
+        obtain ⟨R, hR, hSR⟩ := ih _ (by omega) S rfl hS
+        exact ⟨R, hR, hTS.trans hSR⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
