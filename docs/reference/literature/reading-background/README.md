@@ -19,3 +19,5 @@ The schema admits future video sources with timestamp locators and video-publica
 ## Historical unpublished research
 
 The [spectral research archive](graveyard-unpublished.md) adds 240 pinned PDF versions from `grwtsk/spectral-proof-of-RH/docs/graveyard`, designated unpublished research by the owner. Repository origins are distinct from local filesystem observations; Git dates do not supply historical reading dates. Exact bytes stay outside Git.
+
+The [three additional manuscript versions under docs](spectral-docs-unpublished.md) complete coverage of all 243 PDFs at the same pinned repository snapshot.

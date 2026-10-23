@@ -112235,6 +112235,721 @@
           "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
         }
       ]
+    },
+    {
+      "id": "sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+      "kind": "paper",
+      "title": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+      "title_status": "verified-in-paper",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Mathematics – Zeta Functions, Spectral Theory, Operator Algebras",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "Riemann Hypothesis, Spectral Determinant, Trace-Class Operator, Fredholm Theory, Zeta Regularization, Heat Kernel, Hilbert Space, Operator Theory, Entire Functions",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "grwtsk contributors",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.21",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sun May 18 18:40:11 2025 PDT",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sun May 18 18:40:11 2025 PDT",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "188",
+          "evidence": "Embedded PDF metadata; sha256:b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "printed-orcid",
+          "value": "0009-0007-3253-6845",
+          "evidence": "PDF page 1; not independently verified against ORCID registry",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+          "version_label": "filename v0.99.0",
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/b86baa113c56--spectral_determinant_RH_equivalence_v0.99.0.pdf",
+          "rights_status": "Original PDF bytes and notices retained; no additional redistribution license inferred."
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED",
+      "bibliography": {
+        "title": {
+          "value": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis"
+            }
+          ],
+          "notes": []
+        },
+        "printed_byline": {
+          "value": [
+            "grwtsk contributors"
+          ],
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "grwtsk contributors"
+            }
+          ],
+          "notes": []
+        },
+        "authors": {
+          "value": [
+            "grwtsk contributors"
+          ],
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "grwtsk contributors"
+            }
+          ],
+          "notes": [
+            "Capitalization normalized from printed byline."
+          ]
+        },
+        "doi": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "No own-document DOI established from reviewed title/contents pages."
+          ]
+        },
+        "arxiv_id": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "No own-document arXiv ID established from reviewed title/contents pages."
+          ]
+        },
+        "arxiv_version": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": []
+        },
+        "version_label": {
+          "value": "v0.99.0",
+          "status": "filename-candidate",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/spectral_determinant_RH_equivalence_v0.99.0.pdf",
+              "locator": "Pinned repository filename",
+              "excerpt": "v0.99.0"
+            }
+          ],
+          "notes": [
+            "Repository filename label; exact PDF identity is established by SHA-256 and Git blob. A printed edition label has not been established."
+          ]
+        },
+        "publication_date": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "Owner-designated unpublished research; printed manuscript date is recorded separately."
+          ]
+        },
+        "publication_status": "unpublished-research-owner-reported",
+        "dates": [
+          {
+            "value": "2025-05-18",
+            "kind": "manuscript-date",
+            "status": "verified-in-paper",
+            "scope": "local-document",
+            "evidence": [
+              {
+                "kind": "pdf",
+                "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+                "pdf_page": 1,
+                "url": null,
+                "locator": "PDF page 1",
+                "excerpt": "Date: May 18, 2025"
+              }
+            ]
+          },
+          {
+            "value": "2025-05-26T05:09:57Z",
+            "kind": "repository-snapshot-commit-date",
+            "status": "verified-primary-record",
+            "scope": "repository-snapshot",
+            "evidence": [
+              {
+                "kind": "github",
+                "asset_sha256": "b86baa113c56857c50076ca25c9587bda07fb24273e9dff5e72b71956e095e24",
+                "pdf_page": null,
+                "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+                "locator": "Snapshot commit, not per-file origin or publication",
+                "excerpt": "2025-05-26T05:09:57Z"
+              }
+            ]
+          }
+        ],
+        "related_publications": [],
+        "uncertainties": [
+          "Unpublished-research classification is owner-reported; a public repository does not imply journal publication.",
+          "Filename version labels are unconfirmed as printed editions; all byte-distinct versions remain separate.",
+          "Proof/formal-verification assertions are historical manuscript text, not accepted mathematics or a proved idea-to-formalization bridge.",
+          "DOI and arXiv identifiers remain unresolved."
+        ]
+      },
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/spectral_determinant_RH_equivalence_v0.99.0.pdf",
+          "blob": "eadcff3f7accc73581810457440f48e61c7f6011",
+          "mode": "100644",
+          "size": 1342380,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/spectral_determinant_RH_equivalence_v0.99.0.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: same unpublished-research treatment for docs PDFs."
+        }
+      ]
+    },
+    {
+      "id": "sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+      "kind": "paper",
+      "title": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+      "title_status": "verified-in-paper",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Mathematics – Zeta Functions, Spectral Theory, Operator Algebras",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "Riemann Hypothesis, Spectral Determinant, Trace-Class Operator, Fredholm Theory, Zeta Regularization, Heat Kernel, Hilbert Space, Operator Theory, Entire Functions",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "grwtsk contributors",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.21",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Thu May 22 14:18:07 2025 PDT",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Thu May 22 14:18:07 2025 PDT",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "203",
+          "evidence": "Embedded PDF metadata; sha256:8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "printed-orcid",
+          "value": "0009-0007-3253-6845",
+          "evidence": "PDF page 1; not independently verified against ORCID registry",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+          "version_label": "filename v0.99.87",
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/8c4694e05d77--spectral_determinant_RH_equivalence_v0.99.87.pdf",
+          "rights_status": "Original PDF bytes and notices retained; no additional redistribution license inferred."
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED",
+      "bibliography": {
+        "title": {
+          "value": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis"
+            }
+          ],
+          "notes": []
+        },
+        "printed_byline": {
+          "value": [
+            "grwtsk contributors"
+          ],
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "grwtsk contributors"
+            }
+          ],
+          "notes": []
+        },
+        "authors": {
+          "value": [
+            "grwtsk contributors"
+          ],
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "grwtsk contributors"
+            }
+          ],
+          "notes": [
+            "Capitalization normalized from printed byline."
+          ]
+        },
+        "doi": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "No own-document DOI established from reviewed title/contents pages."
+          ]
+        },
+        "arxiv_id": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "No own-document arXiv ID established from reviewed title/contents pages."
+          ]
+        },
+        "arxiv_version": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": []
+        },
+        "version_label": {
+          "value": "v0.99.87",
+          "status": "filename-candidate",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/spectral_determinant_RH_equivalence_v0.99.87.pdf",
+              "locator": "Pinned repository filename",
+              "excerpt": "v0.99.87"
+            }
+          ],
+          "notes": [
+            "Repository filename label; exact PDF identity is established by SHA-256 and Git blob. A printed edition label has not been established."
+          ]
+        },
+        "publication_date": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "Owner-designated unpublished research; printed manuscript date is recorded separately."
+          ]
+        },
+        "publication_status": "unpublished-research-owner-reported",
+        "dates": [
+          {
+            "value": "2025-05-22",
+            "kind": "manuscript-date",
+            "status": "verified-in-paper",
+            "scope": "local-document",
+            "evidence": [
+              {
+                "kind": "pdf",
+                "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+                "pdf_page": 1,
+                "url": null,
+                "locator": "PDF page 1",
+                "excerpt": "Date: May 22, 2025"
+              }
+            ]
+          },
+          {
+            "value": "2025-05-26T05:09:57Z",
+            "kind": "repository-snapshot-commit-date",
+            "status": "verified-primary-record",
+            "scope": "repository-snapshot",
+            "evidence": [
+              {
+                "kind": "github",
+                "asset_sha256": "8c4694e05d7749bdee26abffead83e60e06b66340ad6bdf9e05201761cae9de8",
+                "pdf_page": null,
+                "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+                "locator": "Snapshot commit, not per-file origin or publication",
+                "excerpt": "2025-05-26T05:09:57Z"
+              }
+            ]
+          }
+        ],
+        "related_publications": [],
+        "uncertainties": [
+          "Unpublished-research classification is owner-reported; a public repository does not imply journal publication.",
+          "Filename version labels are unconfirmed as printed editions; all byte-distinct versions remain separate.",
+          "Proof/formal-verification assertions are historical manuscript text, not accepted mathematics or a proved idea-to-formalization bridge.",
+          "DOI and arXiv identifiers remain unresolved."
+        ]
+      },
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/spectral_determinant_RH_equivalence_v0.99.87.pdf",
+          "blob": "cd76c19960ac7bb2b5f135095c37124c6e21d7b3",
+          "mode": "100644",
+          "size": 1426633,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/spectral_determinant_RH_equivalence_v0.99.87.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: same unpublished-research treatment for docs PDFs."
+        }
+      ]
+    },
+    {
+      "id": "sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+      "kind": "paper",
+      "title": "Bourbaki: A Canonical Spectral Determinant and Equivalence Formulation of the Riemann Hypothesis",
+      "title_status": "verified-in-paper",
+      "bibliographic_claims": [
+        {
+          "field": "Title",
+          "value": "A Canonical Spectral Determinant and Spectral Equivalence Formulation of the Riemann Hypothesis",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Subject",
+          "value": "Mathematics – Zeta Functions, Spectral Theory, Operator Algebras",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Keywords",
+          "value": "Riemann Hypothesis, Spectral Determinant, Trace-Class Operator, Fredholm Theory, Zeta Regularization, Heat Kernel, Hilbert Space, Operator Theory, Entire Functions",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Author",
+          "value": "grwtsk contributors",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Creator",
+          "value": "LaTeX with hyperref",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Producer",
+          "value": "pdfTeX-1.40.21",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "CreationDate",
+          "value": "Sat May 24 09:47:16 2025 PDT",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "ModDate",
+          "value": "Sat May 24 09:47:16 2025 PDT",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "Pages",
+          "value": "212",
+          "evidence": "Embedded PDF metadata; sha256:e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "status": "extracted-unverified"
+        },
+        {
+          "field": "printed-orcid",
+          "value": "0009-0007-3253-6845",
+          "evidence": "PDF page 1; not independently verified against ORCID registry",
+          "status": "extracted-unverified"
+        }
+      ],
+      "identifiers": [],
+      "versions": [
+        {
+          "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+          "version_label": "filename v0.99.98",
+          "taxonomy": "NumberTheory",
+          "relative_library_path": "NumberTheory/e600bc97e764--spectral_determinant_RH_equivalence_v0.99.98.pdf",
+          "rights_status": "Original PDF bytes and notices retained; no additional redistribution license inferred."
+        }
+      ],
+      "reading_status": "unknown",
+      "attribution_status": "ATTRIBUTION_CLARIFICATION_NEEDED",
+      "bibliography": {
+        "title": {
+          "value": "Bourbaki: A Canonical Spectral Determinant and Equivalence Formulation of the Riemann Hypothesis",
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "Bourbaki: A Canonical Spectral Determinant and Equivalence Formulation of the Riemann Hypothesis"
+            }
+          ],
+          "notes": []
+        },
+        "printed_byline": {
+          "value": [
+            "grwtsk contributors"
+          ],
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "grwtsk contributors"
+            }
+          ],
+          "notes": []
+        },
+        "authors": {
+          "value": [
+            "grwtsk contributors"
+          ],
+          "status": "verified-in-paper",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "PDF page 1",
+              "excerpt": "grwtsk contributors"
+            }
+          ],
+          "notes": [
+            "Capitalization normalized from printed byline."
+          ]
+        },
+        "doi": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "No own-document DOI established from reviewed title/contents pages."
+          ]
+        },
+        "arxiv_id": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "No own-document arXiv ID established from reviewed title/contents pages."
+          ]
+        },
+        "arxiv_version": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": []
+        },
+        "version_label": {
+          "value": "v0.99.98",
+          "status": "filename-candidate",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/spectral_determinant_RH_equivalence_v0.99.98.pdf",
+              "locator": "Pinned repository filename",
+              "excerpt": "v0.99.98"
+            }
+          ],
+          "notes": [
+            "Repository filename label; exact PDF identity is established by SHA-256 and Git blob. A printed edition label has not been established."
+          ]
+        },
+        "publication_date": {
+          "value": null,
+          "status": "not-established",
+          "evidence": [],
+          "notes": [
+            "Owner-designated unpublished research; printed manuscript date is recorded separately."
+          ]
+        },
+        "publication_status": "unpublished-research-owner-reported",
+        "dates": [
+          {
+            "value": "2025-05-24",
+            "kind": "manuscript-date",
+            "status": "verified-in-paper",
+            "scope": "local-document",
+            "evidence": [
+              {
+                "kind": "pdf",
+                "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+                "pdf_page": 1,
+                "url": null,
+                "locator": "PDF page 1",
+                "excerpt": "Date: May 24, 2025"
+              }
+            ]
+          },
+          {
+            "value": "2025-05-26T05:09:57Z",
+            "kind": "repository-snapshot-commit-date",
+            "status": "verified-primary-record",
+            "scope": "repository-snapshot",
+            "evidence": [
+              {
+                "kind": "github",
+                "asset_sha256": "e600bc97e764ff03a2ba2d47755a4e92dc7ea864a33fcb4fab79009a9453c3f3",
+                "pdf_page": null,
+                "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+                "locator": "Snapshot commit, not per-file origin or publication",
+                "excerpt": "2025-05-26T05:09:57Z"
+              }
+            ]
+          }
+        ],
+        "related_publications": [],
+        "uncertainties": [
+          "Unpublished-research classification is owner-reported; a public repository does not imply journal publication.",
+          "Filename version labels are unconfirmed as printed editions; all byte-distinct versions remain separate.",
+          "Proof/formal-verification assertions are historical manuscript text, not accepted mathematics or a proved idea-to-formalization bridge.",
+          "DOI and arXiv identifiers remain unresolved.",
+          "Visible Bourbaki title differs from embedded Title metadata; the visible title is canonical and raw metadata is retained."
+        ]
+      },
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/spectral_determinant_RH_equivalence_v0.99.98.pdf",
+          "blob": "034ca7d2887a26e616277dbd731ea763a1e24129",
+          "mode": "100644",
+          "size": 1501229,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/spectral_determinant_RH_equivalence_v0.99.98.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: same unpublished-research treatment for docs PDFs."
+        }
+      ]
     }
   ],
   "ideas": [],
@@ -116600,6 +117315,12 @@
       "reported_on": "2026-10-23",
       "statement": "You can also use these pdfs as unpublished research too: https://github.com/grwtsk/spectral-proof-of-RH/tree/main/docs/graveyard",
       "scope": "All 240 PDF paths under docs/graveyard at spectral-proof-of-RH commit aab35df4b766ce864e95b4505e3a2c7ddc43d158. Unpublished-research classification; printed credits and mathematical acceptance remain separate."
+    },
+    {
+      "reported_by": "grwtsk contributors",
+      "reported_on": "2026-10-23",
+      "statement": "Same with the pdfs here: https://github.com/grwtsk/spectral-proof-of-RH/tree/main/docs",
+      "scope": "Unpublished-research classification for PDFs under docs at commit aab35df4b766ce864e95b4505e3a2c7ddc43d158; prior graveyard intake retained without duplicate addition."
     }
   ]
 }
