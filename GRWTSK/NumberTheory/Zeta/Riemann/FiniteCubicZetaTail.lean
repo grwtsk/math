@@ -53,7 +53,7 @@ theorem norm_remainder_sub_prefix_le_square (N : ℕ) (s : ℂ) (hs : 0 ≤ s.re
     simp [pow_two, one_div]
   norm_num only [zero_add] at hb
   change ‖CubicRemainder.cubicRemainder s - cellPrefix N s‖ ≤
-    decayPower 2 (cutoff N) / (48 * 2) at hb
+    decayPower 2 (cutoff N) / 96 at hb
   rw [he] at hb
   convert hb using 1 <;> ring
 

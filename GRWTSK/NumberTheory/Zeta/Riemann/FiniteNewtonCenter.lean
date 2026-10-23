@@ -43,7 +43,9 @@ theorem centerEnclosures_of_power_packet (p : Data) (N : ℕ) (r : ℚ)
     (hslope : (diskBudgetQ N p.center r : ℝ) / (r : ℝ) + packet.finiteSlopeError + (ed : ℝ) ≤
       (p.slopeError : ℝ)) : CenterEnclosures p := by
   have hrR : (0 : ℝ) < r := by exact_mod_cast hr
-  have hcR : (r : ℝ) ≤ (QComplex.embed p.center).re := by exact_mod_cast hreal
+  have hcR : (r : ℝ) ≤ (QComplex.embed p.center).re := by
+    change (r : ℝ) ≤ (p.center.re : ℝ)
+    exact (Rat.cast_le (K := ℝ)).2 hreal
   have h := packet.actual_rounded (r : ℝ) hrR hcR hpole
     (QComplex.embed p.value) (QComplex.embed p.slope) (ev : ℝ) (ed : ℝ) hv hd
   simp only [cast_diskBudgetQ, Rat.cast_zero] at hvalue hslope
