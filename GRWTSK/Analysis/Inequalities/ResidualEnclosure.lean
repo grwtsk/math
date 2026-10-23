@@ -20,8 +20,9 @@ theorem coercive_error_bound {s t R q : ℝ} (hs : 0 < s)
   have hst : s*t ≤ R := by
     rcases eq_or_lt_of_le ht with hzero | hpos
     · simpa [← hzero] using hR
-    · apply (mul_le_mul_right hpos).mp
-      nlinarith [hcoerc, hcauchy]
+    · have hmul : (s * t) * t ≤ R * t := by
+        nlinarith [hcoerc, hcauchy]
+      exact (mul_le_mul_right hpos).mp hmul
   have htb : t ≤ R/s := by
     apply (le_div_iff₀ hs).2
     nlinarith [hst]
@@ -67,7 +68,7 @@ theorem two_height_solve_error {e rho u v : ℝ}
     (hv : 0 ≤ v ∧ v ≤ rho^2/(2*e)) :
     0 ≤ (u+v)/e ∧ (u+v)/e ≤ 3*rho^2/(2*e^2) := by
   constructor
-  · positivity
+  · exact div_nonneg (add_nonneg hu.1 hv.1) he.le
   · calc
       (u+v)/e ≤ (rho^2/e + rho^2/(2*e))/e :=
         div_le_div_of_nonneg_right (add_le_add hu.2 hv.2) he.le
