@@ -1,0 +1,225 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "pole-contour-polygon-index-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.PoleContourPolygonIndexCore"
+build_target = "GRWTSK.Interfaces.PoleContourPolygonIndexCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "8f74d7f42623d93a5fa5b6ceb288bd2f17e6e170"
+parent_tree = "65242adeca66068c3a17925f847f557b6deeeaea"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/PoleContourWindingCore/pole-contour-winding-v0.1.toml"
+inherited_target_blob = "e790eeca38b70de0151fd1a26eaa07f84345cf28"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Finite polygon-index refinement candidate only; no actual regional upper count or argument principle."
+receipt_policy = "No execution authority or receipt. Future acceptance is external and bound to the exact commit/tree/target."
+inventory_policy = "Retain EVERY predecessor declaration, control, exact type, large reduction and full transitive import/axiom/native-dependency obligation. The selected catalog is NOT the full closure. Reconcile all generated/inferred instances and actual source-enclosure hypotheses. Empty repeated catalogs waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonLogCharts"
+path = "GRWTSK/Analysis/Complex/PolygonLogCharts.lean"
+source_git_blob = "5324e67e706e6cdb9a461680311ca98ac0186726"
+required_declarations = ["GRWTSK.Analysis.Complex.PolygonLogCharts.below", "GRWTSK.Analysis.Complex.PolygonLogCharts.negativeLog", "GRWTSK.Analysis.Complex.PolygonLogCharts.exp_negativeLog", "GRWTSK.Analysis.Complex.PolygonLogCharts.negativeLog_eq", "GRWTSK.Analysis.Complex.PolygonLogCharts.positive_blend", "GRWTSK.Analysis.Complex.PolygonLogCharts.PrincipalEdge", "GRWTSK.Analysis.Complex.PolygonLogCharts.principal_edge_mem", "GRWTSK.Analysis.Complex.PolygonLogCharts.negative_edge_re", "GRWTSK.Analysis.Complex.PolygonLogCharts.negative_edge_mem", "GRWTSK.Analysis.Complex.PolygonLogCharts.continuous_principal_edge", "GRWTSK.Analysis.Complex.PolygonLogCharts.continuous_negative_edge"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalPolygonIndex"
+path = "GRWTSK/Analysis/Complex/RationalPolygonIndex.lean"
+source_git_blob = "aa629f8335b89cd9b4c79194f791fb3b64b68f55"
+required_declarations = ["GRWTSK.Analysis.Complex.RationalPolygonIndex.vertex", "GRWTSK.Analysis.Complex.RationalPolygonIndex.leftChart", "GRWTSK.Analysis.Complex.RationalPolygonIndex.below", "GRWTSK.Analysis.Complex.RationalPolygonIndex.increment", "GRWTSK.Analysis.Complex.RationalPolygonIndex.EdgeValid", "GRWTSK.Analysis.Complex.RationalPolygonIndex.edgeDecidable", "GRWTSK.Analysis.Complex.RationalPolygonIndex.prefix", "GRWTSK.Analysis.Complex.RationalPolygonIndex.Valid", "GRWTSK.Analysis.Complex.RationalPolygonIndex.validDecidable", "GRWTSK.Analysis.Complex.RationalPolygonIndex.check", "GRWTSK.Analysis.Complex.RationalPolygonIndex.evaluate", "GRWTSK.Analysis.Complex.RationalPolygonIndex.check_iff_valid", "GRWTSK.Analysis.Complex.RationalPolygonIndex.evaluate_eq_some_iff", "GRWTSK.Analysis.Complex.RationalPolygonIndex.prefix_zero", "GRWTSK.Analysis.Complex.RationalPolygonIndex.prefix_succ", "GRWTSK.Analysis.Complex.RationalPolygonIndex.increment_reverse", "GRWTSK.Analysis.Complex.RationalPolygonIndex.points", "GRWTSK.Analysis.Complex.RationalPolygonIndex.localLog", "GRWTSK.Analysis.Complex.RationalPolygonIndex.branch", "GRWTSK.Analysis.Complex.RationalPolygonIndex.leftChart_real", "GRWTSK.Analysis.Complex.RationalPolygonIndex.below_real", "GRWTSK.Analysis.Complex.RationalPolygonIndex.principal_of_not_left", "GRWTSK.Analysis.Complex.RationalPolygonIndex.localLog_continuous", "GRWTSK.Analysis.Complex.RationalPolygonIndex.localLog_exp", "GRWTSK.Analysis.Complex.RationalPolygonIndex.edge_nonzero", "GRWTSK.Analysis.Complex.RationalPolygonIndex.localLog_endpoint", "GRWTSK.Analysis.Complex.RationalPolygonIndex.increment_eq_branches", "GRWTSK.Analysis.Complex.RationalPolygonIndex.liftVertex", "GRWTSK.Analysis.Complex.RationalPolygonIndex.logCell", "GRWTSK.Analysis.Complex.RationalPolygonIndex.logCell_exp", "GRWTSK.Analysis.Complex.RationalPolygonIndex.finiteLog", "GRWTSK.Analysis.Complex.RationalPolygonIndex.finiteLog_exp", "GRWTSK.Analysis.Complex.RationalPolygonIndex.finiteLog_jump", "GRWTSK.Analysis.Complex.RationalPolygonIndex.checked_nonzero", "GRWTSK.Analysis.Complex.RationalPolygonIndex.checkedLoop", "GRWTSK.Analysis.Complex.RationalPolygonIndex.checkedLoop_closed", "GRWTSK.Analysis.Complex.RationalPolygonIndex.winding_eq_prefix", "GRWTSK.Analysis.Complex.RationalPolygonIndex.evaluate_sound", "GRWTSK.Analysis.Complex.RationalPolygonIndex.checkedLoop_winding"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.PoleContourPolygonIndexCore"
+path = "GRWTSK/Interfaces/PoleContourPolygonIndexCore.lean"
+source_git_blob = "046fe1a5d458d3387ac78192cc3c79ca8abe5ef0"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PolygonIndexControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PolygonIndexControls.lean"
+source_git_blob = "336e53261c4cfc6ffed38e2ce3c4923a31a54bae"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.square", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.doubleSquare", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.square_checked", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.signed_finite_controls", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.actual_square_winding", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.ray_vertex_control", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.tangency_and_ray_edge_controls", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.accepted_zero_is_not_failure", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.all_edges_and_exact_lengths_required", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.zero_vertex_or_zero_crossing_rejected", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.diamond", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.splitDiamond", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.conservative_chart_control", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.rejected_diagonal_is_nonzero", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.multiple_traversal_is_retained", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.opposite_ray_is_not_counted", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.small_square_evaluates", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.small_square_source_index_computed", "GRWTSK.RiemannHypothesis.Checks.PolygonIndexControls.fictitious_values_still_have_no_source"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourPolygonIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourPolygonIndex.lean"
+source_git_blob = "40c16f2151013422a143661a5dce2de3a3c4d24e"
+required_declarations = ["GRWTSK.RiemannHypothesis.PoleContourPolygonIndex.evaluate", "GRWTSK.RiemannHypothesis.PoleContourPolygonIndex.evaluate_eq_some_iff", "GRWTSK.RiemannHypothesis.PoleContourPolygonIndex.imageIndex_computed", "GRWTSK.RiemannHypothesis.PoleContourPolygonIndex.sourceIndex_computed", "GRWTSK.RiemannHypothesis.PoleContourPolygonIndex.evaluate_sound"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ExponentialLoopIndex"
+path = "GRWTSK/Analysis/Complex/ExponentialLoopIndex.lean"
+source_git_blob = "c5219539cc35d1c9bade0f39c05d651a0afdb886"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonTube"
+path = "GRWTSK/Analysis/Complex/PolygonTube.lean"
+source_git_blob = "20c7555e8b5498276a8287d73faf4f540e6cdc1b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonFreeHomotopy"
+path = "GRWTSK/Analysis/Complex/PolygonFreeHomotopy.lean"
+source_git_blob = "f6536494d4d8fa7a48ffa9139a8110b36fdaf9d6"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Topology.Homotopy.FiniteConcatenation"
+path = "GRWTSK/Topology/Homotopy/FiniteConcatenation.lean"
+source_git_blob = "2be15d0e8a7f43a3ac32b7e1729bbd15e6a3f6e8"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourWinding"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourWinding.lean"
+source_git_blob = "dc1cf654efe55448fc107ecb4f6bcdfce3428973"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PoleContourWinding"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PoleContourWinding.lean"
+source_git_blob = "0b13419beab11c662220a13674bd4270e442af30"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourHomotopy"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourHomotopy.lean"
+source_git_blob = "c9d5585a7cdd376add613bde86e8dd84fd3da17f"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContourTube"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleContourTube.lean"
+source_git_blob = "b5768453c2ffd0308610a0557c4b22f41d38f41f"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleContour"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleContour.lean"
+source_git_blob = "e0cb441f7ee87487c7eb76c2b59fbd7f9436e1b1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.PoleContourWindingCore"
+path = "GRWTSK/Interfaces/PoleContourWindingCore.lean"
+source_git_blob = "6c5d0d5703a26a0cb10be3d9549379932d8f7673"
+required_declarations = []
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/SpecialFunctions/Complex/Arg.lean"
+source_git_blob = "fa3a40b9565e673a2dcbf9f11f4d749d117c9f18"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/SpecialFunctions/Complex/Log.lean"
+source_git_blob = "ad59ce75e0c50855cebaf13acc75e9211ed18e35"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/Topology/Homotopy/Basic.lean"
+source_git_blob = "e3a774a7348ffa338b2b981c035262932e21c258"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[controls]]
+id = "POLY-01"
+requirement = "Failure returns none, not some zero; exact lengths and n>0 are mandatory."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-02"
+requirement = "The full final closing edge is included, with literal external closure."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-03"
+requirement = "Both endpoints share one STRICT coordinate half-plane; origin vertices/chords reject."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-04"
+requirement = "A rejected nonzero diagonal is not falsely declared to contain a zero."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-05"
+requirement = "Negative log chart includes pi*i and exponentiates to z, not -z."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-06"
+requirement = "The exact principal-argument convention at a negative-real vertex is retained."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-07"
+requirement = "Tangent arrival/departure and ray edges receive the half-open convention."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-08"
+requirement = "Positive-ray crossings do not contribute the negative-ray count."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-09"
+requirement = "Reversal changes sign; doubled traversal retains multiplicity."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-10"
+requirement = "Continuous log cells match accumulated lifted vertices, not principal-log resets."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-11"
+requirement = "The full lift uses precisely the inherited dyadic traversal, including its pause."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-12"
+requirement = "The returned integer equals the OLD exponential-lift winding, not a redefined one."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-13"
+requirement = "A punctured loop is constructed for accepted polygons; the refinement is not vacuous."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-14"
+requirement = "Source tube check and actual source Enclosures persist in the composite evaluator."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-15"
+requirement = "Small-square source winding zero is composed through computed Option success."
+status = "NOT_RUN"
+
+[[controls]]
+id = "POLY-16"
+requirement = "No argument principle, region orientation theorem, large trace or regional upper count is inferred."
+status = "NOT_RUN"

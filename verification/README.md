@@ -1,45 +1,14 @@
-# Source-bound verification specifications
+# Legacy verification boundary
 
-This directory contains **static mathematical verification targets**. It does not contain an execution engine or operational evidence store.
+Static verification targets moved to [`docs/verification/`](../docs/verification/)
+and are indexed by its migration manifest. This compatibility README remains
+so historical links resolve while legacy fixtures, provider adapters,
+relocation records, source variants, and attribution material are retired or
+re-homed separately.
 
-A target in this directory may identify:
-
-- the public root, modules, declarations, and certificate relations to inspect;
-- the committed Lean toolchain and dependency manifest;
-- the mathematical trust and axiom policy;
-- required positive and hostile controls;
-- the acceptance predicate and explicit nonclaims;
-- the source changes that invalidate a prior result.
-
-It must not claim that a replay occurred merely because the target exists.
-
-## Effect boundary
-
-`grwtsk/noeaaeue` is responsible for effectful realization of these targets:
-
-```text
-resolve a pinned math commit and tree
-→ materialize a clean checkout
-→ acquire the pinned toolchain and dependencies
-→ invoke the requested builds and inspectors
-→ meter resources and retain logs
-→ verify target coverage and hostile controls
-→ issue execution, verification, proof, and Git receipts
-→ bind those receipts back to the exact math target
-```
-
-Operational scripts, caches, attempt directories, controller state, schedules, actor authority, and receipt ledgers are not canonical content of this repository.
-
-## Current targets
-
-- [`ethics-mechanistic-reasoning-v0.1.toml`](ethics-mechanistic-reasoning-v0.1.toml) specifies three isolated `Init`-only modules for rooted authorization, observation support, and label-preserving simulation. It selects exact declarations, constructive trust requirements, and positive and negative theorem fixtures; application adequacy and runtime correspondence remain independent obligations.
-- [`spectral-descent-v1.toml`](spectral-descent-v1.toml) describes the source-bound target corresponding to the spectral-descent baseline tracked by GitHub issue #100.
-- [`graph-hodge-port-core-v1.5.toml`](graph-hodge-port-core-v1.5.toml) is the current isolated graph-port, finite Hodge/heat/resolvent, exact rational-Hodge and H⁰ transport, context-indexed PTS admission, formal KK, bounded compact-defect cycles, unbounded domain/commutator/compact-resolvent cycles, optional-adapter plans, and operator-port target tracked by issues #1, #36, #39, #40, #120, #159, #176, and #177. Earlier versions remain historical source snapshots and are not aliases for `v1.5`.
-- [`portfiber-holomorphy-core-v0.16.toml`](portfiber-holomorphy-core-v0.16.toml) is the current isolated dependent port-fiber target. It retains all 42 v0.15 modules and adds continuous positive Hermitian chart weights, intrinsic pairings and squared norms on the actual bundle, constructed inverse-square gauge metric transport, target-metric uniqueness, and rank-one pointwise adjoints with exact gauge covariance and a separate holomorphy criterion. Nine new claims form a disjoint portfolio extension. The target enumerates 46 modules and 98 hostile-control specifications; all 86 previous control records are preserved. `v0.1` through `v0.15` remain historical source snapshots. Source and control specifications are not execution results.
-- [`openai-pts-weak-to-strong-v1.toml`](openai-pts-weak-to-strong-v1.toml) specifies an external clean replay and exact local-alignment review for `OAI.PureTypeSystem.weak_implies_strong`, including the Lean 4.34.1 versus local Lean 4.33.0 boundary.
-- [`openai-cm-rational-hodge-v1.toml`](openai-cm-rational-hodge-v1.toml) specifies source, statement, dependency, citation, and local-interface review for the October 2026 CM rational-Hodge manuscript without treating manuscript status as a local formal proof.
-
-The target manifests are intentionally non-self-referential. A Noeaaeue or local-review binding supplies the pinned repository commit, tree, and blob identities when it executes a target.
+The move preserved target file contents, manifest IDs, versions, and exact
+SHA-256 digests. It did not assert elaboration, replay, trust audit, hostile
+control execution, mathematical admission, or proof status.
 
 ## v0.11 compatibility notes
 

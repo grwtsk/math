@@ -1,0 +1,202 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "quadratic-plus-one-prime-power-v0.1"
+owner_repository = "grwtsk/math"
+issue = 426
+parent_issue = 262
+program_issue = 257
+root_module = "GRWTSK.Interfaces.QuadraticPlusOnePrimePowerCore"
+build_target = "GRWTSK.Interfaces.QuadraticPlusOnePrimePowerCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+requires_hostile_control_replay = true
+operational_receipt_is_external = true
+public_root_imported = false
+
+[source_binding]
+base_revision = "f979725b01859450c1a345cd547c2eceedc80bf1"
+base_tree = "9f30966f3823731639fb4d07da94b3eda1f9a5a5"
+stacked_pr = 424
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED / ANALYTIC_SUPPLIERS_OPEN"
+inherited_target = "docs/verification/Interfaces/QuadraticPlusOneCore/quadratic-plus-one-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "d35feeeca6a3031dc05a0acb2026d577d6fdfa62".
+inherited_target_blob = "1fc2dbc93f13c332f11ca8b1a13bb9a7335a5e8c"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unsafe_selected_declarations = true
+
+[formalization_boundary]
+inherited_local_roots = "SOURCE_DRAFT / NOT_RUN"
+inherited_coprime_crt = "SOURCE_DRAFT / NOT_RUN"
+one_step_odd_prime_lift = "NEW_SOURCE_DRAFT"
+odd_prime_root_set_equivalence = "NEW_SOURCE_DRAFT"
+odd_prime_power_counts = "NEW_SOURCE_DRAFT"
+two_adic_classification = "NEW_SOURCE_DRAFT"
+prime_power_local_density = "NEW_SOURCE_DRAFT"
+type_i_estimate = "OPEN_SUPPLIER"
+thin_gaussian_type_ii_estimate = "OPEN_SUPPLIER"
+prime_detection_correction = "OPEN_SUPPLIER"
+quadratic_prime_infinitude = "NOT_CLAIMED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift"
+path = "GRWTSK/NumberTheory/Primes/QuadraticPlusOnePrimePowerLift.lean"
+# Original pre-repair blob = "b7be84ac067879f53edcd3a4a35798332d42f186".
+blob = "96f8f536824b122e6b999c45656b81a3463a2d6f"
+role = "direct odd-prime one-step lift and finite root-set equivalence"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts"
+path = "GRWTSK/NumberTheory/Primes/QuadraticPlusOnePrimePowerCounts.lean"
+# Original pre-repair blob = "1de91188913dbff4eadf125dcb0b1c4f9b2da4d1".
+blob = "3c076343bdcfb3e998b96b938c224100d1824040"
+role = "iterated odd-prime counts and exceptional two-adic branch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/QuadraticPlusOnePrimePowerControls.lean"
+# Original pre-repair blob = "17266503ec63681e34b96087b0674d4117867f99".
+blob = "bb9707182719346e07b2e5ebcfcd898159716013"
+role = "positive and hostile finite controls"
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticPlusOnePrimePowerCore"
+path = "GRWTSK/Interfaces/QuadraticPlusOnePrimePowerCore.lean"
+blob = "5867f071bba8977081f7821bab9b821e964ad8e3"
+role = "isolated integration root"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Prime/quadratic-plus-one-prime-power-lifting.md"
+blob = "86d9aa0e9cc168f97ff0d31931420feafabae9fe"
+status = "mathematical exposition; not replay evidence"
+
+[declaration_inventory]
+count = 48
+names = [
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.QuadraticPlusOnePowerRoot",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticPlusOnePowerRootFintype",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCandidate",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftQuotient",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.QuadraticLiftCoefficient",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCandidate_expand",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftQuotient_decomposition",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCandidate_factor",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCandidate_root_iff",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.prime_not_dvd_quadratic_power_root",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrime_two_mul_root_coprime",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCoefficient_exists",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCoefficient_unique",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCoefficient_existsUnique",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimeLiftCoefficient",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimeLiftCoefficient_spec",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticLiftCandidate_lt",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimeLift",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.reducePowerRoot",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimeLift_mod",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimeLift_injective",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.powerRoot_decomposition",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimeLift_surjective",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.oddPrimePowerRootEquiv",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.card_powerRoot",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerLift.quadraticPlusOneRootCount_primePower_succ",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.reducedResidue_mem",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_eq_zero_of_dvd",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_primePower_eq_prime",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_primePower_mod_four_one",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_primePower_mod_four_three",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_four",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_two_power",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOneRootCount_two_power_iff",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOnePrimePowerDensity",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOnePrimePowerDensity_mod_four_one",
+  "GRWTSK.NumberTheory.Primes.QuadraticPlusOnePrimePowerCounts.quadraticPlusOnePrimePowerDensity_mod_four_three",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.root_two_lifts_to_seven",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.root_three_lifts_to_eighteen",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.wrong_lift_digit_rejected",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.roots_mod_twenty_five",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.roots_mod_one_hundred_twenty_five_count",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.two_adic_branch_is_exceptional",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.noncoprime_multiplicativity_rejected",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.range_bound_is_not_optional",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.lifted_local_data_does_not_detect_primality",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.one_lift_is_not_unbounded",
+  "GRWTSK.NumberTheory.Primes.Checks.QuadraticPlusOnePrimePowerControls.local_roots_do_not_force_small_cutoff_prime"
+]
+
+[hostile_controls]
+required = [
+  "wrong lift digit is rejected",
+  "two canonical lift digits cannot solve the same odd-prime correction equation",
+  "root modulo two does not lift to a root modulo four",
+  "noncoprime multiplicativity at two times two is rejected",
+  "representative outside the canonical interval is not a second root record",
+  "composite n^2+1 value survives local data without becoming prime",
+  "one lifted residue is not an unbounded-index witness",
+  "local prime-power data does not imply a positive finite prime-value count"
+]
+
+[static_checks]
+toml_parse = "PASSED_BEFORE_COMMIT"
+source_inventory = "PASSED_BEFORE_COMMIT"
+internal_import_closure = "PASSED_BEFORE_COMMIT"
+comment_aware_forbidden_token_scan = "PASSED_BEFORE_COMMIT"
+forbidden_tokens = ["sorry", "admit", "axiom", "unsafe", "native_decide", "#eval"]
+lean_elaboration = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+hostile_lean_replay = "NOT_RUN"
+external_acceptance = "NOT_RUN"
+
+[finite_diagnostics]
+status = "PASSED"
+models = 584
+assertions = 752974
+coverage = [
+  "odd-prime lift correction equation",
+  "unique canonical lift digit",
+  "reduction and Euclidean reconstruction",
+  "root-count stability across odd prime powers",
+  "prime local-factor iteration",
+  "two-adic extinction from modulus four",
+  "modulo twenty-five and modulo one-hundred-twenty-five controls",
+  "canonical-range and composite-survivor hostile cases"
+]
+qualification = "Independent finite arithmetic diagnostics only; no Lean parsing, elaboration, kernel checking or execution receipt."
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and any source repairs",
+  "exact elaborated declaration types",
+  "complete transitive dependency and axiom audit",
+  "hostile Lean replay and immutable external acceptance",
+  "polynomial-sieve Type-I estimate",
+  "thin-family Type-II or Gaussian bilinear estimate preserving the fixed imaginary coordinate",
+  "complete prime-detection correction bound",
+  "strict every-large-cutoff positive margin",
+  "complete finite coverage below any asymptotic cutoff"
+]
+
+[nonclaims]
+items = [
+  "no prime-power lifting theorem is claimed accepted before replay",
+  "no sieve lower bound",
+  "no parity breakthrough",
+  "no prime-detection estimate",
+  "no infinitude of primes of the form n^2+1",
+  "no Landau conjecture proof",
+  "no build, merge, deployment or execution authority"
+]

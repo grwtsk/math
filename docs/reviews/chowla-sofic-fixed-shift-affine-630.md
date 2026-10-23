@@ -245,7 +245,7 @@ fixedShift_oddCutoff
 ```
 
 The independently scoped target is
-`verification/liouville-fixed-shift-affine-630-v0.1.toml`.
+`docs/verification/_unscoped/liouville-fixed-shift-affine-630-v0.1.toml`.
 It covers this module and the prior arithmetic parent,
 with exactly **32 theorem heads and 10 definitions**. The
 previous parent-only and generic eight-module passive targets
@@ -322,7 +322,7 @@ No external theorem was actually imported or kernel checked.
 The dedicated note
 `docs/reviews/chowla-sofic-direct-fixed-form-complex-630.md`
 and standalone three-module target
-`verification/liouville-direct-fixed-form-complex-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-direct-fixed-form-complex-630-v0.1.toml`
 now govern this more economical direct path. The earlier
 two-module arithmetic target remains unchanged and distinct.
 

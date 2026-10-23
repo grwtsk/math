@@ -1,0 +1,234 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "jet-rectangle-count-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.JetRectangleCountCore"
+build_target = "GRWTSK.Interfaces.JetRectangleCountCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "12a14f9f8788a9572d5899f624d4c484f5c9e8e1"
+parent_tree = "3f8a2925f1d4d7fe97e9f3f0f866d9dbfc9f6047"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/JetPolePatchCore/jet-pole-patch-v0.1.toml"
+inherited_target_blob = "3298bdecad106f4f8505dff97e819742d85f544b"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "Complete 2379-cell candidate returns one in an independent rational model. The literal Lean Success equation remains unproved; no accepted canonical count."
+receipt_policy = "No execution authority or receipt. Acceptance must bind to the actual commit/tree/target and entire inherited proof chain."
+inventory_policy = "Retain EVERY predecessor declaration, exact type, generated name, control, large finite decision and transitive import/axiom/native dependency. This selected catalog is NOT the full closure. Empty inherited declaration lists waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.JetRectangleCountCore"
+path = "GRWTSK/Interfaces/JetRectangleCountCore.lean"
+source_git_blob = "e9be5edcc92c28e76e9bc5e883458525f7e8d251"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenJetCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenJetCandidate.lean"
+source_git_blob = "e136351169c1e027d2b4846156355194758529de"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.blocks", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.marks", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.edges", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.parameters", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.domain", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.lengthAt", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.plan", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.plans", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.prior", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.imageAt", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.image", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.mesh_shape", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.plan_length", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.image_length", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.result", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.Success", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.count_one_of_success", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.complete_pair_of_success"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.JetContourControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/JetContourControls.lean"
+source_git_blob = "155411713e33d21ac15c040ae41b581ccf69fb91"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.JetContourControls.small_tube_checked", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.small_box_computed", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.small_boundary_nonzero", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.small_source_index_zero", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.missing_extra_and_last_image", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.empty_and_reversed_mesh", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.incompatible_image_and_geometry", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.coarse_source_not_a_tube", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.pilotPlan", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.wrongPilotImage", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.stale_radius_rejected", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.stale_image_edge_rejected", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.pilot_constant_edge", "GRWTSK.RiemannHypothesis.Checks.JetContourControls.small_homotopy_closed"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JetPoleContour"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JetPoleContour.lean"
+source_git_blob = "4defaf20be53aba7c33a52c60e56bc2d27734645"
+required_declarations = ["GRWTSK.RiemannHypothesis.JetPoleContour.value", "GRWTSK.RiemannHypothesis.JetPoleContour.radius", "GRWTSK.RiemannHypothesis.JetPoleContour.EdgeValid", "GRWTSK.RiemannHypothesis.JetPoleContour.edgeDecidable", "GRWTSK.RiemannHypothesis.JetPoleContour.Valid", "GRWTSK.RiemannHypothesis.JetPoleContour.validDecidable", "GRWTSK.RiemannHypothesis.JetPoleContour.check", "GRWTSK.RiemannHypothesis.JetPoleContour.check_iff", "GRWTSK.RiemannHypothesis.JetPoleContour.checked_edge", "GRWTSK.RiemannHypothesis.JetPoleContour.domain_covered", "GRWTSK.RiemannHypothesis.JetPoleContour.edge_nonzero", "GRWTSK.RiemannHypothesis.JetPoleContour.checked_cells", "GRWTSK.RiemannHypothesis.JetPoleContour.freeHomotopy", "GRWTSK.RiemannHypothesis.JetPoleContour.source_closed", "GRWTSK.RiemannHypothesis.JetPoleContour.source_nonzero", "GRWTSK.RiemannHypothesis.JetPoleContour.image_closed", "GRWTSK.RiemannHypothesis.JetPoleContour.image_nonzero", "GRWTSK.RiemannHypothesis.JetPoleContour.sourceIndex", "GRWTSK.RiemannHypothesis.JetPoleContour.sourceIndex_eq_imageIndex", "GRWTSK.RiemannHypothesis.JetPoleContour.evaluate", "GRWTSK.RiemannHypothesis.JetPoleContour.evaluate_eq_some_iff", "GRWTSK.RiemannHypothesis.JetPoleContour.evaluate_sound"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JetRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JetRectangleCount.lean"
+source_git_blob = "34fe8ce0c207662bede8bb32289aff924bc95257"
+required_declarations = ["GRWTSK.RiemannHypothesis.JetRectangleCount.evaluateBox", "GRWTSK.RiemannHypothesis.JetRectangleCount.evaluateBox_eq_some_iff", "GRWTSK.RiemannHypothesis.JetRectangleCount.evaluate", "GRWTSK.RiemannHypothesis.JetRectangleCount.boundary_of_tube", "GRWTSK.RiemannHypothesis.JetRectangleCount.sourceHomotopy", "GRWTSK.RiemannHypothesis.JetRectangleCount.sourceIndex_aligned", "GRWTSK.RiemannHypothesis.JetRectangleCount.count_eq_of_evaluate", "GRWTSK.RiemannHypothesis.JetRectangleCount.result_nonnegative", "GRWTSK.RiemannHypothesis.JetRectangleCount.complete_pair_of_evaluate_one"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalJetPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalJetPolePatch.lean"
+source_git_blob = "048cbe4826f316d2c424aa4f449890974483d7b9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleJet.lean"
+source_git_blob = "d713fab9e2c45d76d0f4c2ba603f82efae27b530"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleValue"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleValue.lean"
+source_git_blob = "52f1bb4b39a75d21e0d41d1ed662901a07187a12"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleNormalizedJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleNormalizedJet.lean"
+source_git_blob = "fa90642a45d78579a1202202b055fc3bc456f16d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConstructedRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConstructedRectangleCount.lean"
+source_git_blob = "2c314c1ae8f25931cd7c7d8593089509c235ede3"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalRectangleCount"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalRectangleCount.lean"
+source_git_blob = "0862021b13af8aafc64cdcdffa55cfb5bf8b260a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalRectangleIndex"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalRectangleIndex.lean"
+source_git_blob = "53eb5c3537f5a3e0031b14b300885550f97bb6b5"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PoleContourHomotopy"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PoleContourHomotopy.lean"
+source_git_blob = "c9d5585a7cdd376add613bde86e8dd84fd3da17f"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalRectangleMesh"
+path = "GRWTSK/Analysis/Complex/RationalRectangleMesh.lean"
+source_git_blob = "a2256c39adb654bb8274d8750e5326cd19cc213d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PolygonFreeHomotopy"
+path = "GRWTSK/Analysis/Complex/PolygonFreeHomotopy.lean"
+source_git_blob = "f6536494d4d8fa7a48ffa9139a8110b36fdaf9d6"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedCurveFactorIndex"
+path = "GRWTSK/Analysis/Complex/ClosedCurveFactorIndex.lean"
+source_git_blob = "4e44b28d38b84a9dc8e52899fc54d83933b7d2b9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalPolygonIndex"
+path = "GRWTSK/Analysis/Complex/RationalPolygonIndex.lean"
+source_git_blob = "aa629f8335b89cd9b4c79194f791fb3b64b68f55"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RectanglePerimeterMesh"
+path = "GRWTSK/Analysis/Complex/RectanglePerimeterMesh.lean"
+source_git_blob = "2b513405bdee90ba3a4af458242850dbcb2ef209"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.JetPolePatchCore"
+path = "GRWTSK/Interfaces/JetPolePatchCore.lean"
+source_git_blob = "a6014e184946d52ace7fab2648e946853ea99ed1"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.JetPolePatchControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/JetPolePatchControls.lean"
+source_git_blob = "189a86d38206807514cfb91c21452f7422a047e9"
+required_declarations = []
+
+[[controls]]
+id = "JC01-same_radius"
+requirement = "Use the derived jet image radius for the strict margin, actual whole-cell source bound and BOTH surrogate endpoint checks. Reject a stale larger endpoint radius."
+
+[[controls]]
+id = "JC02-same_source"
+requirement = "Values and derivatives come from the same literal plan, full pole-free model and source residual; no editable value or accuracy field."
+
+[[controls]]
+id = "JC03-complete_lengths"
+requirement = "Require positive n, n+1 domain/image vertices, n plans, every consecutive cell and both exact closures. Missing or extra records reject."
+
+[[controls]]
+id = "JC04-zero_width"
+requirement = "Repeated marks are permitted only with all per-position witnesses and endpoint tests; retain the old small-square regression."
+
+[[controls]]
+id = "JC05-domain_disk"
+requirement = "Both domain endpoints must lie in one common convex disk; do not replace this by unrelated endpoint patches."
+
+[[controls]]
+id = "JC06-all_point_deformation"
+requirement = "Construct the same full two-parameter nonzero homotopy from image containment, not only sample signs."
+
+[[controls]]
+id = "JC07-old_invariant"
+requirement = "Use the old exponential-lift signed index and old rational polygon refinement; no redefinition of the count or integer."
+
+[[controls]]
+id = "JC08-moving_basepoint"
+requirement = "Keep free closed-loop semantics, not an unjustified fixed-basepoint homotopy."
+
+[[controls]]
+id = "JC09-boundary_alignment"
+requirement = "Reuse full geometric range and real-perimeter boundary homotopy; do not interpolate complex points through interior zeros."
+
+[[controls]]
+id = "JC10-canonical_divisor"
+requirement = "Retain actual source analytic orders, complete regional head, removed F(1)=1, exact positive rectangle and mirror-completeness hypotheses."
+
+[[controls]]
+id = "JC11-signed_result"
+requirement = "Reject invalid data distinctly from zero; do not truncate negative winding or use its absolute value. Reverse and doubled synthetic traversals retain signs."
+
+[[controls]]
+id = "JC12-literal_mesh"
+requirement = "Reconstruct exactly the sixteen candidate blocks, all 2380 marks and 2379 cells with side totals 14,206,47,2112."
+
+[[controls]]
+id = "JC13-literal_plans"
+requirement = "Use midpoint centers, R=3*axis length/4, S=Re(center)/2, and the exact 16-base/eight-correction/80-bit schedule."
+
+[[controls]]
+id = "JC14-literal_image"
+requirement = "Shared images are opposite-length weighted adjacent generated midpoints, checked independently in BOTH incident disks; not exact source vertex values."
+
+[[controls]]
+id = "JC15-new_vs_old"
+requirement = "Old Cauchy-only guards and targets remain unchanged. Independent model success of the new evaluator does not imply success of the old one."
+
+[[controls]]
+id = "JC16-large_success_obligation"
+requirement = "Construct GRWTSK.RiemannHypothesis.Checks.HeightFifteenJetCandidate.Success in Lean at this exact source. It is currently a definition and explicit premise, NOT a theorem or axiom."
+
+[[controls]]
+id = "JC17-finite_controls"
+requirement = "Elaborate all new controls and all inherited large decisions; Python reports do not execute or refine Lean."
+
+[[controls]]
+id = "JC18-runtime_limits"
+requirement = "No implicit parser/compiler/caching/refinement or complexity claim. A qualified computation strategy must not import native truth as an axiom."
+
+[[controls]]
+id = "JC19-numeric_vs_analytic"
+requirement = "Ordinary zeta comparisons and finitely sampled homotopies do not prove uniform analytic bounds or source identities."
+
+[[controls]]
+id = "JC20-full_acceptance"
+requirement = "Audit every generated declaration, exact public type and transitive import/axiom/native dependency, preserving the entire predecessor target chain."

@@ -197,7 +197,7 @@ oddLiftedAllOrderEnergy_le_of_two_bounds
 ```
 
 The passive independent target
-`verification/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`
+`docs/verification/_unscoped/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`
 has **eleven selected modules, 90 theorem heads and
 41 definition heads**, preserving the previous 10-module
 actual Liouville/Walsh target and its exact source SHA.
@@ -276,7 +276,7 @@ TV consumer keeps its strict lifted-collar
 hypothesis `max(H')<2M`.
 
 Its own passive 12-module target,
-`verification/liouville-odd-lift-canonical-transport-630-v0.1.toml`,
+`docs/verification/_unscoped/liouville-odd-lift-canonical-transport-630-v0.1.toml`,
 inventories 101 theorem and 44 definition
 heads. Full review:
 `docs/reviews/chowla-sofic-canonical-odd-lift-transport-630.md`.

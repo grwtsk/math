@@ -143,7 +143,7 @@ estimate is established here. No asymptotic transfer theorem is newly supplied.
 
 The new owner is `GRWTSK.NumberTheory.Chebyshev.SquarePrimeBudget`; the isolated
 root is `GRWTSK.Interfaces.LegendreSquareBudget`. The static target is
-`verification/legendre-square-budget-v0.1.toml`. It binds the source snapshots
+`docs/verification/Interfaces/LegendreSquareBudget/legendre-square-budget-v0.1.toml`. It binds the source snapshots
 and every selected owner/root/control module, and requires all public elaborated
 types plus the full transitive dependency/trust closure. Source hashes and
 required names are not elaborated signatures or replay evidence.

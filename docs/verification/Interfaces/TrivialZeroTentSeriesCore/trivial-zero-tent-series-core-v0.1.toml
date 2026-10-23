@@ -1,0 +1,199 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "trivial-zero-tent-series-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+root_module = "GRWTSK.Interfaces.TrivialZeroTentSeriesCore"
+build_target = "GRWTSK.Interfaces.TrivialZeroTentSeriesCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "def1b22ca743b1bec016c76f9aae5a8d7712dfdf"
+base_tree = "62be93c297329b4c0fae67f66975b9f6a191d01d"
+stacked_on_pr = 281
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CanonicalZetaResidueCore/canonical-zeta-residue-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "2b2bff9daa3b975e66921307a5bd3d2a766320f4".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "2398304711caab10de68dbc39caf0e22bc3d4d48".
+# Pre-quadrature-repair inherited_target_blob = "46ca1521f8ee5ca3ffa0cabe9bd49bf495968e2f".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "ab03aa4fabfa5dd52055729a837111d0df16c4d8".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "31a0a2f03b1157aedaa673ab202c3b8815b5dc03"
+receipt_policy = "Bind the actual new commit, tree and this manifest externally. Parent acceptance does not accept this increment."
+inventory_policy = "Static source names are not elaborated types. Audit all public declarations and complete inherited import/trust closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Interfaces.TrivialZeroTentSeriesCore"
+path = "GRWTSK/Interfaces/TrivialZeroTentSeriesCore.lean"
+source_blob = "0e98fddccbea520c54b3f7f1cbb2c23c0211270f"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/TrivialZeroSeriesControls.lean"
+source_blob = "673bb55716464764b43658bd79cb3b70d890a100"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries"
+path = "GRWTSK/NumberTheory/Chebyshev/TrivialZeroTentSeries.lean"
+source_blob = "db3a39d14a3a3f69ec254c2c66d18517d5f62fcb"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.TrivialZeroResidues"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/TrivialZeroResidues.lean"
+source_blob = "2230c419f671ca0db25367444eb3db4fa2b2e6b1"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalZetaResidueCore"
+path = "GRWTSK/Interfaces/CanonicalZetaResidueCore.lean"
+source_blob = "407a14e23da39b278d8ea4e74e80229b0ab2d812"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.LogarithmicPrincipalPart"
+path = "GRWTSK/Analysis/Complex/LogarithmicPrincipalPart.lean"
+source_blob = "5654bc59f8ae023dd6c9f6b2a86bb5f44ab11873"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentResidueContributions"
+path = "GRWTSK/NumberTheory/Chebyshev/TentResidueContributions.lean"
+source_blob = "4e1844e51ae35447f9960cee848c997779f21573"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.TentRationalCorrection"
+path = "GRWTSK/Analysis/Real/TentRationalCorrection.lean"
+source_blob = "e1503cd9a505105c82e7bc4893769f5d68d010de"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentMellinKernel"
+path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+source_blob = "3768bab2649a6ae19e4973bf2ee2dfe41bfe3fe9"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[upstream_sources]]
+path = "Mathlib/NumberTheory/LSeries/RiemannZeta.lean"
+source_blob = "3c92195fce20df7fda41cfd823b3266f83cf3070"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/SpecialFunctions/Gamma/Basic.lean"
+source_blob = "8aea69baf716966861315823d437f041abc7b9a4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/SpecialFunctions/Gamma/Deriv.lean"
+source_blob = "e188f3792f45abe4534145190b842f217020580d"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Basic.lean"
+source_blob = "86ee5817a80feccb86eb9e6fae7b0730007c54c4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/Calculus/LogDeriv.lean"
+source_blob = "6ae0d79a0c326276a40b0c9d708728d932391c54"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[[upstream_sources]]
+path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean"
+source_blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[acceptance]
+requires_all_declared_modules = true
+requires_all_inherited_target_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+required_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.first_two_parameters",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.same_height_distinct_points",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.first_trivial_is_excluded",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.no_positive_height_guard",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.first_trivial_derivative_nonzero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.first_density_at_two",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.finite_density_still_has_remainder",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TrivialZeroSeriesControls.empty_prefix_is_not_complete",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.trivialMoment",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.density_trivialPoint",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.powerWeight_intervalIntegrable",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.trivialMoment_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.tentKernel_trivialPoint",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.sum_trivialMoment_eq_neg_prefix",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.hasSum_trivialMoment",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.finite_trivial_coefficients",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.trivial_tent_residue_limit",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.hasSum_trivial_tent_coefficients",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.summable_norm_trivial_tent_coefficients",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.tsum_trivial_tent_coefficients",
+  "GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries.trivial_tent_remainder_bound",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint_re_neg",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint_im",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint_injective",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.zeta_trivialPoint",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint_not_nontrivial",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.reflectedUnit",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.zeta_eq_reflectedUnit_mul_sin",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.reflectedUnit_differentiableAt",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.reflectedUnit_trivialPoint_ne_zero",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.sine_trivialPoint",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.cosine_trivialPoint_ne_zero",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.deriv_zeta_trivialPoint",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.deriv_zeta_trivialPoint_ne_zero",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint_scaled_limit",
+  "GRWTSK.RiemannHypothesis.TrivialZeroResidues.trivialPoint_weighted_limit",
+]
+
+[controls]
+required = [
+  "The negative-even index starts at -2; zero is not a trivial zero.",
+  "Same imaginary height cannot identify distinct negative-even points.",
+  "Actual negative-even zeros are excluded from the canonical nontrivial divisor.",
+  "Positive inverse-height-tail guards fail for the trivial zero family.",
+  "Derive actual simplicity from the neighborhood functional equation; no simple-zero premise.",
+  "Point agreement cannot replace eventual function agreement before differentiating.",
+  "Retain the t^(-2k-3) density and exact radius normalization.",
+  "Finite negative correction prefixes are upper approximations; charge the omitted negative part.",
+  "An empty prefix does not give the complete negative correction.",
+  "Derive HasSum and absolute summability before using tsum values.",
+  "Do not infer Perron inversion or contour boundary decay from the complete local coefficient sum.",
+  "Do not remove the canonical prime consumer actual-count, complete-source, evaluator or margin hypotheses.",
+]

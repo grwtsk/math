@@ -160,7 +160,7 @@ and `IntervalMellinRangeReduction` under Analysis/Complex. The former imports th
 existing elementary module because it owns the original grid center/radius;
 those prior declarations are reused unchanged rather than moved or duplicated.
 The new root is `GRWTSK.Interfaces.QuadraticIntervalRangeReductionCore` and the
-static target is `verification/quadratic-interval-range-reduction-v0.1.toml`.
+static target is `docs/verification/Interfaces/QuadraticIntervalRangeReductionCore/quadratic-interval-range-reduction-v0.1.toml`.
 All selected inherited and new modules require exact elaborated signatures,
 transitive import/axiom coverage and independent replay. A manifest is not a receipt.
 
