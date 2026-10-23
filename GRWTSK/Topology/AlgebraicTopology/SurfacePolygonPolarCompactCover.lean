@@ -8,6 +8,8 @@ Parent PR #1000 head 53befb09d0cf8c182f9b1f71a7b23d7df256652a.
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 import Mathlib.Topology.Instances.AddCircle.Defs
 import Mathlib.Topology.Compactness.Compact
+import Mathlib.Topology.Maps.Basic
+import Mathlib.Topology.Separation.Hausdorff
 import Mathlib.Tactic
 
 /-!
@@ -27,6 +29,8 @@ All proof scripts remain source candidates pending exact Lean replay.
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarCompactCover
+
+open _root_.Topology
 
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity
 
@@ -88,14 +92,24 @@ theorem polarProductProjection_isQuotientMap_of_cover
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z)
     [T2Space (UnitAddCircle × unitInterval)] :
     IsQuotientMap polarProductProjection := by
-  have hcompact :=
+  have hcompact : IsQuotientMap compactPolarProjection :=
     compactPolarProjection_isQuotientMap_of_cover hcover
-  have hcont := polarProductProjection_continuous
-  have hsurj := polarProductProjection_surjective
-  -- The remaining composition/quotient descent is a source proof
-  -- candidate; use the exact IsQuotientMap factorization API.
-  exact hcompact.of_comp_surjective
-    hcont hsurj compactPolarProjection_factor
+  have hsource :
+      Continuous (fun p : PolarCompactSource => ((p.1 : ℝ), p.2)) :=
+    (continuous_subtype_val.comp continuous_fst).prodMk continuous_snd
+  have hfactor :
+      polarProductProjection ∘
+        (fun p : PolarCompactSource => ((p.1 : ℝ), p.2)) =
+          compactPolarProjection := by
+    funext p
+    exact (compactPolarProjection_factor p).symm
+  have hcomposite :
+      IsQuotientMap (polarProductProjection ∘
+        (fun p : PolarCompactSource => ((p.1 : ℝ), p.2))) := by
+    rw [hfactor]
+    exact hcompact
+  exact IsQuotientMap.of_comp
+    hsource polarProductProjection_continuous hcomposite
 
 /-- Conditional source candidate for joint continuity with a precise
 compact fundamental-domain supplier rather than a generic quotient
