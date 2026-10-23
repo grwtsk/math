@@ -61,6 +61,58 @@ Missing authorship, publication year, identifier, theorem location, declaration,
 
 **Actual verification status:** **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED** for both identified files at this revision; they are not root-imported. Warning-clean isolated `lake build --wfail`, direct file elaboration, fresh kernel replay, transitive axioms/unsafe/generated-declaration review and complete acceptance receipts remain **PENDING** in [#1088](https://github.com/grwtsk/math/issues/1088), with Farey prerequisite [#1086](https://github.com/grwtsk/math/issues/1086) and integration gate [#1089](https://github.com/grwtsk/math/issues/1089). Ordinary source readback and this documentation commit supply no kernel acceptance.
 
+## Source-bound RH case study: Bombieri test moments and recent comparisons
+
+**Primary paper:** Enrico Bombieri, *Problems of the Millennium:
+the Riemann Hypothesis* (Clay Mathematics Institute, 2000; in
+*The Millennium Prize Problems*, 2006), section V, printed pp. 8–9.
+Stable document:
+https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf
+
+**Exact extracted clauses:** Bombieri's multiplicative Weil-criterion
+specialization uses `g` in the stated piecewise-`C¹`, decay-controlled
+positive-half-line test class and requires both
+`∫₀∞ g(x) dx/x = 0` and `∫₀∞ g(x) dx = 0`. The classical
+autocorrelation form, its explicit formula, sign convention and global
+criterion are **additional** source obligations, not consequences
+of merely imposing these two equations.
+
+**Exact local correspondence:** the typed
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction.BombieriZeroMomentConditions`
+and direct scalar-tent obstruction occur in
+[`CanonicalSquareTentBombieriMomentObstruction.lean` at
+`4a9285c99de5b08772e974cda933d350b52332dd`](https://github.com/grwtsk/math/blob/4a9285c99de5b08772e974cda933d350b52332dd/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentObstruction.lean#L131),
+blob `cc9ed5b34159242ac69eb569f80e1ea7b420fa53`.
+The subsequent three-tent correction
+`CanonicalSquareTentThreeTentMomentCorrection.correctedThreeTent_zeroMoments`
+is source-inspected at
+[`7c1dfad87b9f4ea3ee4fd8502b48391c485224ad`](https://github.com/grwtsk/math/blob/7c1dfad87b9f4ea3ee4fd8502b48391c485224ad/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentCorrection.lean#L142),
+blob `47508e138cbabff332793205f0918fa9764e6554`.
+These are local mathematical results about **actual** canonical tents
+and actual positive-half-line moments, not the paper's RH equivalence.
+
+**Relationship:** `DIRECT_HYPOTHESIS_ENCODING` for both displayed
+moment constraints; `LOCAL_IDENTITY_SOURCE_CANDIDATE` for derived
+canonical-tent lemmas; `UNRESOLVED_PREMISE` for the *whole* Bombieri
+test class, an all-pairs classical Weil-form comparison, density,
+exact normalization/sign and the terminal criterion.
+**Actual verification:** `SOURCE_PRESENT / NOT_RUN / NO_RECEIPT`
+for these exact commits in this provenance review; source files
+and Git blobs have been inspected, but no matching fresh
+warning-clean Lean build, kernel checking or full transitive
+axiom/native audit is established here.
+
+The companion [paper-to-Lean RH provenance ledger](paper-formalization-provenance-rh.md)
+contains the complete declaration/commit/blob matrix and separate,
+verified bibliographic records for Bombieri (2000), Alpöge–Furman
+(2026), Lamzouri (2026), Goldston–Lee–Schettler–Suriajaya
+(2025), Rodgers–Tao (2018/2020), Loeffler–Stoll (2025),
+OpenAI's 2026 quasi-RH and determinant counterexample, and
+the Nyman–Beurling and Li criteria. **Only the exact Bombieri
+moment constraints are source-derived inputs here**; the
+other results are expressly compared as `ANALOGY_ONLY` or
+conditional interfaces, not imported theorems.
+
 ## Updating the ledger
 
 When a later result is added, create a record alongside its source: refer to the original theorem label and *exact* special-case hypotheses, list every newly added declaration and its main commit/blob, preserve earlier records without retroactive verification upgrades, and attach the validation issue/receipt. Keep unproved analogies and mathematical obstacles readable even when some finite definitions or algebraic lemmas compile. Documentation edits themselves require no Lean acceptance claim; their Git commit establishes only document integration.
