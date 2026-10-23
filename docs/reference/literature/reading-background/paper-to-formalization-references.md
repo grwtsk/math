@@ -387,8 +387,10 @@ for the elementary polynomial/sign/point identities;
 `finite-certificate` for source-data point arithmetic;
 not `direct-import` of a paper theorem and **not a
 `local-proved-bridge`** to analytic number theory or
-elliptic rank. The files remain
-`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`.
+elliptic rank. Historical source comments retain
+`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. Subsequent verification of
+`ResolvableQuintic` is recorded in **FAREY-VALIDATION-20261023** below; this
+scoped update does not infer analytic or rank bridges from those checks.
 The earlier 19-module validation target
 `698b694747a0b62f4126caf5475601b073ebcd9e`
 predates these files and **cannot** verify them.
@@ -617,30 +619,19 @@ and Mathlib `MulChar.map_nonunit`.
 See [mathematical scope note](../../../mathematics/NumberTheory/Farey/gaussian-modular-dirichlet-walk.md)
 and the prior bridge issue [#1093](https://github.com/grwtsk/math/issues/1093).
 
-**Relationship classifications.** **`source-proof-candidate`** for the
-local exact algebra, matrix/word comparison, finite additive detection,
-nonunit obstruction and predicate transport; **`conditional-interface`**
-for the combined reached-cell theorem, whose endpoint-sign and nonunit
-premises remain explicit; **`obstruction-at-scope`** only to a pure
-finite Dirichlet-character representation; **not**
-`local-proved-bridge`, `direct-import` of an outside paper theorem,
-or an analytic/spectral theorem. The upstream Mathlib facts are
-**code dependencies**, not a claim to have audited their transitive axioms
-in this repository.
-
-**Verification and unresolved premises.** GitHub source readback at
-`4ca07594f5c944ba36cd1b14e44f4482cc5d94e8` confirmed two direct
-imports, one definition, eleven authored theorems, and no literal source
-declaration `sorry`, `admit` or `axiom`. The commit has no combined
-GitHub status in the lookup. The available local container has no
-`lean` or `lake`, and `git ls-remote` cannot resolve github.com.
-**SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**:
-build exit status **not obtained**, fresh kernel check **not obtained**,
-transitive axiom/unsafe audit **not obtained**, and no verified theorem
-receipt exists. The source is deliberately unimported from
-`GRWTSK.lean`. Full source/dependency replay is queued in [#1096](https://github.com/grwtsk/math/issues/1096),
-pinned to `ecfda6e1b7ea98925de3cbbf8e86bf258b8b8e9c`, separately from
-upstream #1093 and #1094. The queue is not a verification receipt.
+**Relationship classifications and actual verification.** The source-pinned
+run in **FAREY-VALIDATION-20261023** below supersedes the earlier local
+`NOT_RUN / NOT_KERNEL_AUDITED` observation for the eight named files only.
+The finite local identities are now **kernel-verified bridges at their stated
+scope**; reached-cell sign/nonunit assumptions remain **conditional interfaces**,
+and the pure finite Dirichlet representation is refuted only at nonunits.
+Upstream Mathlib supplies imported mathematics through named code dependencies,
+not through a newly attributed outside paper. Strict compilation and fresh
+trust-zero transitive axiom checking passed; independent external replay and
+analytic premises remain unestablished. The source stays outside `GRWTSK.lean`.
+Historical queue [#1096](https://github.com/grwtsk/math/issues/1096) is a request,
+not an execution receipt; actual commands, immutable blobs and local receipt
+paths are recorded in the dated entry below.
 
 **Nonclaims.** No automatic nonunit property of all Farey words,
 spectral decomposition of the native Farey action, full Dirichlet
@@ -648,6 +639,766 @@ L-function exclusion, analytic continuation, prime cancellation,
 Sarnak Möbius disjointness, RH/GRH, uniqueness/existence of rational roots,
 quintic solvability, or elliptic-curve rank is derived. A finite
 Gaussian/Dirichlet obstruction does not constitute those missing bridges.
+
+## Case FAREY-VALIDATION-20261023 — finite Farey algebra and selected return channel
+
+**Source identity and classification.** These eight modules are 2026 repository
+constructions under the source-credited mathematical direction of grwtsk contributors, with OpenAI formalization assistance. They are not imports of an
+identified external paper: a separate paper title, byline, version, DOI or theorem
+locator is **not established**. Their upstream mathematical suppliers are the
+pinned Mathlib code sources linked in FAREY-GMD-WALK-01 and its matrix notation,
+determinant, and real-square-root libraries. No historical influence is inferred.
+The local finite identities below are **kernel-verified bridges at their stated
+scope**; the reached-cell sign/nonunit premises remain **conditional interfaces**.
+The rational and mod-four witnesses are exact **finite evidence**, not analytic
+estimates or evidence of RH. The proposed pure Dirichlet representation is a
+refuted interface at nonunits, not a supplied theorem. Spiral/analytic analogies
+and unresolved extension premises are not promoted to proved bridges.
+
+**Exact declarations and hypotheses.** Fully qualified declarations:
+
+- `GRWTSK.NumberTheory.Farey.Cell.left_lt_right`, `GRWTSK.NumberTheory.Farey.resolvableEye_refine`,
+  `GRWTSK.NumberTheory.Farey.polynomialResolves_mul_iff_of_pos_at_endpoints`, and
+  `GRWTSK.NumberTheory.Farey.quadratic_mul_cubic_natDegree`: natural endpoints, positive denominators,
+  determinant one; strict positivity at the two endpoints for bidirectional
+  sign transport; nonzero factors and degrees two and three for degree five.
+- `GRWTSK.NumberTheory.Farey.polynomialResolves_mul_of_nonneg_at_endpoints` and
+  `GRWTSK.NumberTheory.Farey.exists_endpoint_positive_factor_with_extra_rational_root`: nonnegative
+  endpoint factors suffice for forward sign transport, but even strict endpoint
+  positivity does not imply equality of rational zero sets (extra root 1/4).
+- `GRWTSK.NumberTheory.Farey.gaussian_cross_im_eq_one`, `GRWTSK.NumberTheory.Farey.modularDet_eq_one`,
+  `GRWTSK.NumberTheory.Farey.gaussianModularEye_refine`, and
+  `GRWTSK.NumberTheory.Farey.nonunitEye_gaussian_modular_dirichlet_obstruction`: actual Gaussian product,
+  determinant modulo arbitrary q, and additive selectors for `[NeZero q]`;
+  the concrete right numerator two modulo four is a nonunit.
+- `GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_walk`, `GRWTSK.NumberTheory.Farey.GroupSuperwalk.wordUnit_append`, and
+  `GRWTSK.NumberTheory.Farey.GroupSuperwalk.quintic_eye_on_walk_iff_of_endpoint_pos`: finite chronological
+  positive shear words act on the right of the actual integral Farey frame;
+  no action of all inverse group elements on positive cells is asserted.
+- `GRWTSK.NumberTheory.Farey.gaussianModularEye_nonunit_obstruction_on_walk` and
+  `GRWTSK.NumberTheory.Farey.nonunit_right_pure_dirichlet_indicator_impossible`: endpoint signs and
+  nonunit status at the reached cell remain explicit, with nonzero modulus.
+- `GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.unitCharacterSum_eq_totient_mul_selector`,
+  `GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.scaled_selector_channels`, and
+  `GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.farey_nonunit_channel_certificate`: the character
+  orthogonality selector requires a unit target; the totient scale and additive
+  residual on nonunits are retained exactly.
+- `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.commutant_is_scalar` and
+  `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.native_invariant_projector_trivial`: the native complex
+  two-coordinate matrices commuting with both opposed shears are scalar;
+  an additional idempotence premise gives zero or identity.
+- `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_idempotent`,
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_eigen`,
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.expandingProjector_iterate`, and
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.exists_proper_return_channel`: the selected return is
+  LR=[[1,1],[1,2]]. The algebraic projector uses s²=5 and s≠0; s=√5 supplies
+  those premises and the expanding eigenvalue (3+√5)/2. This projector commutes
+  with the single return, not both generators; repeated returns act by λⁿ.
+
+**Immutable source pin.** All eight files below are under
+`GRWTSK/NumberTheory/Farey/` at repair commit
+[`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`](https://github.com/grwtsk/math/commit/55fe9dbc34a784cb15782c9dfb0d371a55c6f988).
+The transitive local source closure contains 120 files; SHA-256 snapshots and
+execution logs are outside canonical mathematics in the receipt directory below.
+
+| Module | Git blob |
+|---|---|
+| `FareyResidueChannelDecomposition` | `a44f3cf92d0d3c05ff09ac66b43b3d078918982b` |
+| `GaussianModularDirichletBridge` | `01c1b429ef064208469282ba0c7d8e537d26b120` |
+| `GaussianModularDirichletWalk` | `fcabf4db6518485b54ff92025d083d930bf53fa8` |
+| `GroupSpectralChannel` | `4c643e9c728d7a0052dab7c7a1353e0ef97233cd` |
+| `GroupSuperwalk` | `281df5e34fdc5ee557642993b95c10e544d62b99` |
+| `ResolvableQuintic` | `7caef4b022e35202eef471aae2730dff6b518f70` |
+| `ResolvableQuinticEndpointControls` | `28d8456db1dc7c6243b51275b8216e3f1ff89c71` |
+| `ReturnSpectralChannel` | `de3d52cd221bdf2334bcacccff43fafde4d52db9` |
+
+**Actual verification.** Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. The following commands returned
+exit status zero against the source bytes pinned above:
+
+```sh
+lake build GRWTSK.NumberTheory.Farey.GaussianModularDirichletWalk GRWTSK.NumberTheory.Farey.ReturnSpectralChannel GRWTSK.NumberTheory.Farey.FareyResidueChannelDecomposition GRWTSK.NumberTheory.Farey.ResolvableQuinticEndpointControls --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/farey-all-audit.lean
+```
+
+Strict module/dependency build: 8,825 jobs. Public-root build: 9,304 jobs.
+Fresh kernel replay: 3,077 transitive GRWTSK declarations; all use only
+`propext`, `Classical.choice`, and/or `Quot.sound` (or none), with no `sorryAx`
+or additional axioms. All 289 Farey-owned declarations, including
+private/generated declarations, have reconciled type inventories and are safe.
+All 99 authored theorem/lemma headers are unchanged from the pre-repair source.
+The import path, natural-number cast proof, scalar-entry proof, unused simp
+arguments, and accidental nested-comment text were repaired without changing
+mathematical hypotheses or conclusions.
+
+Receipts: external directory
+`/Users/local/Documents/ChatGPT/math-branch-integration-20261022/`, files
+`farey-final-build.log`, `farey-public-build.log`, `farey-all-audit.lean`,
+`farey-all-audit.log`, `farey-validated-snapshot.json`, and
+`farey-completion-result.json`. Earlier failed build logs remain diagnostic
+records, not acceptance receipts. This is local kernel/axiom verification;
+independent external replay and CI acceptance are **not claimed**. Historical
+`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED` comments remain unchanged as source
+provenance; this dated, source-pinned entry records the subsequent actual run.
+The eight standalone modules remain outside `GRWTSK.lean`.
+
+**Precise missing bridges and excluded scope.** No rational-root existence or
+search completeness, general quintic solution, infinite-volume spectral gap,
+canonical global angular character, analytic continuation, Dirichlet L-function
+zero-free region, Möbius cancellation, Sarnak disjointness, elliptic rank, or RH
+consequence follows. The finite return projector is not a simultaneous
+projector for both shears. This run does not validate concurrently added
+`EndpointInformationLoss`, `InvariantProjectorInformationLoss`, or
+`ReturnAngularChannel`; those retain their own pending evidence state.
+
+## Rational Riesz correction and full-family reconstruction obstruction (#189, #966)
+
+**Source identities and status (2026-10-23).** This increment is a
+`local-proved-bridge` from existing Lean sources, not a newly attributed paper
+or a claim of historical influence. The local source-code snapshots are
+“Source-bound first-Riesz second differences” and “Explicit reconstruction of
+the visible anchor-3 cell at every large scale,” copyright grwtsk contributors,
+formalization assistance OpenAI, 2026, at
+[math b9c830170615ea5fc92ea988252891a1808ea074](https://github.com/grwtsk/math/commit/b9c830170615ea5fc92ea988252891a1808ea074).
+The `direct-import` is Mathlib's “Integral over an interval,” authors Yury
+Kudryashov, Patrick Massot, Sébastien Gouëzel, copyright 2020, source snapshot
+[db584cd6d46c92f209a44c0f1c829460d327499d](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean).
+The exact imported methods are interval-integral linearity, congruence,
+adjacent-interval addition with interval integrability, and the support
+restriction identity. No external publication or unverified source theorem
+is substituted for these imports.
+
+**Formal destinations and exact hypotheses.** All three new source files are
+pinned to [math 9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5](https://github.com/grwtsk/math/commit/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5):
+
+- [RationalRieszPrimitive.lean](https://github.com/grwtsk/math/blob/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5/GRWTSK/Analysis/Real/RationalRieszPrimitive.lean):
+  `GRWTSK.Analysis.Real.RationalRieszPrimitive.rationalRieszPrimitive`
+  is the independent integral `-∫ t in a..x, (x-t)*rationalDensity t`.
+  `GRWTSK.Analysis.Real.RationalRieszPrimitive.rationalRieszPrimitive_second_difference`
+  proves its second difference equals `h*rationalTentCorrection x h`, for
+  `1<a`, `0<h`, `a≤x-h`.
+  `GRWTSK.Analysis.Real.RationalRieszPrimitive.rationalRieszPrimitive_change_base`
+  proves the explicit affine base-change formula for `1<a≤b≤x`; its two
+  coefficients are actual integrals of the rational density and of `t`
+  times that density. The base value is proved zero. Integrability and
+  tent support are discharged on the stated domain; the primitive is not
+  defined as an arithmetic discrepancy.
+- [RieszCorrectionNormalization.lean](https://github.com/grwtsk/math/blob/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5/GRWTSK/NumberTheory/Chebyshev/RieszCorrectionNormalization.lean):
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_second_difference`
+  removes the actual source curvature for `1<a`, `0<h`, `a≤x-h`, `x+h≤N`.
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_midpoint`
+  proves the midpoint equation for `1<a≤u<v≤N`.
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.firstRieszPrefix_stable`
+  proves prefix stability when `N≤M` and `x≤N`.
+  The fully qualified declarations
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_two`
+  and
+  `GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization.correctedRieszSourceDefect_three`
+  give the exact normalization data for `N≥2` and `N≥3`, retaining the
+  actual full canonical zero values and correction integral.
+- [CanonicalFourFamilyFullRestrictionResidual.lean](https://github.com/grwtsk/math/blob/9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5/GRWTSK/NumberTheory/Moebius/CanonicalFourFamilyFullRestrictionResidual.lean):
+  `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.fullRestriction_residual_ge_one_of_anchorFive_zero`
+  proves `1≤q` for every `X≥3` if a reconstruction's anchor-5 coordinate is
+  zero on every input and its relative squared-energy residual estimate
+  holds on the full genuine coordinate-restriction difference family.
+  The witness is an actual retained anchor-5 cell with centered Möbius
+  amplitude `-1` and source energy one; its provenance and membership are
+  proved, not assumed from arbitrary finite support.
+  `GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.canonicalVisibleReconstruction_full_residual_ge_one`
+  instantiates this obstruction for the earlier anchor-3 operator at all
+  `X≥3`, despite its proved uniform reconstruction-energy bound.
+
+**Verification evidence.** At source commit `9e15b32dd6b0ea23a3fc77ba1cfec5a9294d8de5`,
+Lean 4.33.0 and clean Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`,
+`lake build --wfail` on the public root, twelve previously qualified
+standalone consumers, and the three new standalone modules (sixteen
+targets total) completed with exit 0, 9,415 jobs.
+The three new modules passed exact-module kernel replay, exit 0, three
+modules and zero failures. The unchanged source/object hashes match the
+qualified baseline `b9c830170615ea5fc92ea988252891a1808ea074`; this is
+incremental kernel qualification, not a fresh replay of every imported
+proof. The full 709-module project closure passed the axiom audit with
+22,620 logical declarations and zero disallowed axioms, the coverage
+census with 6,776 explained native-only entries and zero unexplained
+entries, and the runtime-helper audit with twelve helpers and zero
+failures. The audit source commands were `lake env lean --trust=0
+-DwarningAsError=true` on each of `FullAxiomAudit.lean`,
+`FullCoverageAudit.lean`, and `FullRuntimeAudit.lean`, and `lake env lean
+--run KernelAffectedClosure.lean`, all exit 0. These runners and the
+source/object bindings are outside math under
+`/Users/local/Desktop/noeaaeue/.codex-runtime/math-riesz-primitive-full-frame/`.
+All 709 committed source blobs were checked against the audited hashes.
+The issue updates in [#189](https://github.com/grwtsk/math/issues/189) and
+[#966](https://github.com/grwtsk/math/issues/966) carry the pinned scope;
+they are not substitutes for kernel qualification.
+
+**Precise missing bridges and nonclaims.** Global real-affineness of the
+corrected source defect still needs its regularity/interval argument;
+the two exact boundary values do not by themselves prove that argument.
+Identification of the resulting coefficients with classical zeta
+constants, all endpoint and unsmoothing limits, and the raw pointwise
+zero tail remain unresolved. On #966 the obstruction concerns the stated
+operator class and the full coordinate-restriction family. It does not
+exclude a different operator reconstructing the missing coordinates,
+prove a full RH application-family estimate, bound the signed omitted
+source terms, or imply RH or its negation.
+
+
+## Case R4239-05 — normalized residue-squareclass supplier for the native rank criterion
+
+**Identity and scope.** The source point data are from **Noam D. Elkies,
+Zev Klagsbrun and Samuel Li**, *Elliptic Curve Rank Leaderboard: curve
+#4239* (ICARM online record, **2026-10-15**),
+https://elliptic-rank.icarm.cloud/curve/4239. The relevant *method* is
+**J. E. Cremona**, *On the Computation of Mordell–Weil and 2-Selmer
+Groups of Elliptic Curves* (2002), **§2.1–§2.2**, especially the
+finite good-prime characters and their point evaluations,
+https://doi.org/10.1216/rmjm/1034968425.
+**Michael Stoll**, *Elliptic Curves* (Lean source snapshot
+`bad38e242a187dea006fc302a0ef0fd53eedd4ba`, **2026**, not a journal
+publication), https://github.com/MichaelStollBayreuth/EllipticCurves/tree/bad38e242a187dea006fc302a0ef0fd53eedd4ba,
+gives a separate x−T/weak Mordell–Weil formalization in Lean **4.35**.
+That source is **not imported** or backported in this project. The
+`NormalizedResidueDescentEvidence` record and the following lemma names
+are **repository-derived adapters**, not named external paper theorems.
+
+**Mathematical content and exact hypotheses.** At each of the 32
+source-labelled prime/root pairs `(p_j, theta_j)` with `p_j>3`, good
+reduction and a simple root, the existing
+`sourceLocalReduction j : SourceLocalRing j →+* ZMod (primeLabel j)`
+takes the localized, branch-corrected source unit to its true residue.
+The new `sourceReducedSquareClass j i` is its **genuine unit-squareclass**
+image, and `sourceReducedQuadraticBit_eq_sourceQuadraticBit` is the
+structural character-transport comparison. It does **not** prove the
+quadratic character's equality to the finite Euler table.
+
+The new `NormalizedResidueDescentEvidence C` has **four explicit
+unproved suppliers**:
+
+1. `mu : Multiplicative nativeCurve.toAffine.Point →* C`, a point-group
+   homomorphism whose intended arithmetic identity with global x−T
+   descent is not established merely by its type;
+2. `normalize j : C →* UnitSquareClasses (ZMod (primeLabel j))`,
+   a homomorphic **valuation-normalized** specialization at each
+   good prime/root. It must justify denominators, local valuations,
+   infinity and simple-root derivative exceptional branches; it is
+   *not* induced by an impossible unital map `ℚ →+* ZMod p`;
+3. `sourceComparison j i`, all **1024 equalities** between the actual
+   specialized published-point classes and
+   `sourceReducedSquareClass j i` (not a chosen table of arbitrary signs);
+4. `quadraticEuler : QuadraticEulerAgreement`, separately identifying
+   the Mathlib quadratic character with the source Euler bit.
+
+For the numerical finrank conclusion,
+`Module.Finite ℤ nativeCurve.toAffine.Point` is an **additional
+external hypothesis**. The native no-two-torsion argument is imported
+as a local *source proof candidate*, not re-assumed; the 32×32
+matrix inversion and the point-first / character-second orientation
+are preserved. The name `localQuadraticCharacter` denotes an actual
+composition of `residueSquareClassBitHom` with the **assumed**
+`normalize`; construction of the character does not construct
+normalization or global descent.
+
+**Formal source identity.** All declarations belong to
+`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239`,
+new module
+[`Record4239NormalizedResidueCriterion.lean`](../../../../GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239NormalizedResidueCriterion.lean),
+math source commit **`d7e0991e5a136938d23ac44ad3717357605ebccb`**,
+source Git blob **`272ec3d79e816176fe68f37dad3f9ea2e83558c1`**.
+Fully qualified declarations are the namespace prefix above followed by:
+
+- `sourceReducedSquareClass`, `sourceReducedQuadraticBit`,
+  `sourceReducedQuadraticBit_eq_sourceQuadraticBit`;
+- `NormalizedResidueDescentEvidence`,
+  `NormalizedResidueDescentEvidence.localQuadraticCharacter`,
+  `NormalizedResidueDescentEvidence.localQuadraticCharacter_point`,
+  `NormalizedResidueDescentEvidence.toNativeDescentEvidence`;
+- `nativePoints_linearIndependent_of_normalizedResidue`,
+  `nativeCurve_finrank_ge_32_of_normalizedResidue`.
+
+**Import/proof status.** The pre-existing Mathlib
+`residueSquareClassBitHom` and source-local quotient maps are
+reused; the added lemmas are **source-proof-candidates** and the native
+linear-independence/finrank statements are
+**conditional interfaces**. The global arithmetic source maps and
+point-value identities remain **unresolved**. Only static source checks
+(no literal `sorry`, `admit` or new `axiom`; three import declarations,
+namespace/end present), remote Git-blob readback, and exact
+source-commit identity were completed. These are **not Lean checks**.
+
+**Verification:** math `lean-toolchain` at this source commit is
+`leanprover/lean4:v4.33.0`, `lake-manifest.json` locks Mathlib at
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
+The commands `lake build --wfail GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NormalizedResidueCriterion`,
+`lake env lean --trust=0 --wfail GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239NormalizedResidueCriterion.lean`,
+`lake env leanchecker --verbose GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239NormalizedResidueCriterion`
+and transitive `#print axioms` / declaration-environment review have **not**
+been executed. Actual process exit codes, independent kernel acceptance,
+private/generated/imported/transitive axiom closure and trusted theorem
+type checks are **NOT_RUN / NOT_KERNEL_AUDITED**. The external pinned
+execution queue in `grwtsk/noeaaeue` must be issued separately, not
+mistaken for a receipt.
+
+**Nonclaims.** No unconditional `rank E(ℚ) ≥ 32`, exact rank, BSD,
+global x−T descent, construction of the normalizations,
+`SourceBitsMatch`, regulator, RH or GRH is proved. A theorem statement
+with `NormalizedResidueDescentEvidence` is **not** evidence the record
+can be inhabited.
+
+
+## October 23 2026: Farey Hodge, Guth–Maynard density and CM/Goldfeld comparisons
+
+**Evidence:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED on all new
+Lean modules. Static GitHub readback is not a kernel proof. The detailed
+scope/nonclaim ledger is at
+[docs/mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md](../../../mathematics/NumberTheory/Farey/hodge-density-three-quarter-comparison.md).
+This reference entry is a mathematical provenance ledger, not a
+verification receipt or a source attribution for repository-authored identities.
+
+### Guth–Maynard 3/4 zero-density theorem
+
+**Paper:** Larry Guth and James Maynard, *New large value estimates for
+Dirichlet polynomials*, **2026 journal publication** (Annals of Mathematics
+203(2), pp. 623–675), DOI
+[10.4007/annals.2026.203.2.6](https://doi.org/10.4007/annals.2026.203.2.6).
+Manuscript [arXiv:2405.20552](https://arxiv.org/abs/2405.20552);
+the DOI is the stable cited published version. **Exact use: Theorem 1.2**:
+for the zeta zero count by multiplicity, with Re(rho)>=sigma and
+|Im(rho)|<=T, the pointwise exponent is
+15(1-sigma)/(3+5 sigma) (and the uniform exponent is 30(1-sigma)/13),
+with the paper's o(1) asymptotic quantifiers. At sigma=3/4 these are
+exactly 5/9 and 15/26, respectively. The source's actual Dirichlet
+polynomial large-value estimate is **not** ported.
+
+**Local candidate:** [grwtsk/math@d1d14de848aa84bcd3ed9cd8bb74a03627b9f362](https://github.com/grwtsk/math/commit/d1d14de848aa84bcd3ed9cd8bb74a03627b9f362),
+GRWTSK/NumberTheory/Zeta/Riemann/ThreeQuarterDensityHodgeComparison.lean,
+blob 319552d047092d7e13e96e950ea7e26263898482,
+namespace GRWTSK.RiemannHypothesis.ThreeQuarterDensityHodgeComparison.
+Declarations include guthMaynardPointwiseExponent,
+pointwiseExponent_threeQuarters, uniformExponent_threeQuarters,
+bothSignZeroCount, positiveHeightZeroCount,
+positiveHeightZeroCount_le_bothSignZeroCount,
+GuthMaynardBothSignThreeQuarter, PositiveThreeQuarterDensity,
+positiveDensity_of_guthMaynard,
+bothSignZeroCount_zero_right_of_sevenEighths,
+positiveHeightZeroCount_zero_at_low_seed, density_and_sevenEighths_band,
+naive_gradedFourier_strictly_misses_threeQuarters,
+distinct_threeQuarter_exponents. The full both-sign counter consumes
+the repository's exact CanonicalZeroDivisor.heightHead and analytic
+multiplicity, NOT a fabricated list; positiveHeight is a subset.
+**Relationship:** LOCAL_IDENTITY_SOURCE_CANDIDATE for exponent arithmetic
+and finite count comparison, CONDITIONAL_REDUCTION for the actual
+Guth--Maynard infinite-height estimate. There is **no** local constructor
+of GuthMaynardBothSignThreeQuarter, no analysis of large values,
+and no proved port of Theorem 1.2. The earlier
+CriticalStripThreeQuarterSeed.lean bound is on |Im(s)| <=3/4, not
+Re(s)>=3/4.
+
+**Verification:** GitHub source/blob readback only. Pinned Lean
+leanprover/lean4:v4.33.0, Mathlib
+db584cd6d46c92f209a44c0f1c829460d327499d.
+No lake build, direct elaboration, fresh kernel replay, transitive
+#print axioms or generated/unsafe audit; all are NOT_RUN.
+Acceptance depends on the exact target and transitive import closure.
+
+### OpenAI seven-eighths zero-free result: comparison, NOT port
+
+**Source:** OpenAI, *The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+Re(s)>7/8*, **September 30, 2026 preprint**, stable repository revision
+[openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026).
+The precise external Lean declaration identified in
+lean/docs/003.md is OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re:
+Re(s)>7/8 implies riemannZeta s != 0 (in its exact imported universe).
+The corresponding local proposition is
+GRWTSK.RiemannHypothesis.SevenEighthsZeroFree in
+GRWTSK/NumberTheory/Zeta/Riemann/ExternalSevenEighthsBand.lean.
+The present density comparison consumes it as an **explicit premise**,
+giving a reflected real-part band 1/8<=Re(s)<=7/8.
+**Relationship:** ANALOGY_ONLY to the external proof mechanism,
+CONDITIONAL_REDUCTION at the terminal zero-free proposition;
+LOCAL_ADMISSION_BLOCKED pending toolchain, dependency, trust and
+proof-transport alignment in OpenAISevenEighthsPort.lean.
+This cannot prove RH or the nonlinear 7/8 -> 3/4 arithmetic contraction.
+
+### OpenAI CM Hodge paper; two meanings of Hodge remain separated
+
+**Paper:** OpenAI, *The rational Hodge conjecture for CM abelian
+varieties*, **revised preprint October 6, 2026**,
+[immutable OpenAI repository revision](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026).
+Exact manuscript fragments inspected: build/sections/02-tensors.tex
+(odd CM sign rows, four-factor balance, rational trace descent) and
+05c-cm-types.tex (Hecke idempotents, good-reduction crystalline
+Frobenius and weak-admissibility slope/filtration comparison).
+Main theorem thm:cm asserts surjectivity of
+CH^p(A)_Q -> H^(2p)(A,Q) intersection H^(p,p)(A) for each complex
+CM abelian variety A and each p>=0; **not imported locally**.
+Existing GRWTSK declarations:
+GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_twoTwoSignProfile,
+GRWTSK.AlgebraicGeometry.Hodge.CMCoordinateHodge.hodgePieces_isCompl,
+GRWTSK.AlgebraicGeometry.Hodge.ComplementaryWeakAdmissibility.component_equalities,
+GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorAlgebraicity.realizeAlgebraicCycle_of_descentData
+(the last requires an explicit algebraicity supplier).
+No local constructor for a general rational cycle-class surjection is
+asserted. **Relationship:** finite Hodge TYPE identities and
+conditional scalar descent, not algebraic-cycle realization.
+
+**New distinct finite-graph source:**
+GRWTSK/NumberTheory/Farey/CyclicResidueHodge.lean,
+[grwtsk/math@7c966ff78bc79530d15c4410a1d7c8c5b726b35a](https://github.com/grwtsk/math/commit/7c966ff78bc79530d15c4410a1d7c8c5b726b35a),
+blob 449c566c6366b9732ba719d6485ad299b29473c2.
+Declarations: cyclicIncidence, cyclic_energy_nonneg,
+cyclic_laplacian_nonneg, cyclic_laplacian_kernel, unitPart,
+nonunitPart, unit_add_nonunit, unitPart_idempotent,
+nonunitPart_idempotent, unit_nonunit_counting_orthogonal,
+fareyNonunitPointMass_eq_indicator,
+farey_unit_projector_not_translation_equivariant.
+This uses real finite cellular Hodge (delta*delta) and demonstrates
+failure of translation-invariance for the arithmetic unit projector;
+it is **not** a rational-Hodge (p,p) theorem. A functorial geometric
+comparison to CM cohomology is UNRESOLVED_PREMISE.
+
+**Ramanujan/cyclic Fourier companion:**
+GRWTSK/NumberTheory/Farey/RamanujanFourierHodge.lean, **current repaired
+source** at
+[grwtsk/math@8460baa69c35110348dcb3498f7051cc49762aa4](https://github.com/grwtsk/math/commit/8460baa69c35110348dcb3498f7051cc49762aa4),
+blob 9d85c0b82c5643e14ee48df4b3becd7a873a680d.
+Declarations: additiveMode_shift, additiveMode_shift_back,
+cyclicDifferenceStar_difference_eq_laplacian,
+additiveMode_laplacian_eigen, primitiveRamanujanSum,
+nonprimitiveFrequencySum, fullFrequency_eq_primitive_add_nonprimitive,
+characterAverage_primitive_nonprimitive.
+This is a **repository-authored finite Fourier identity**, not a
+paper-exact formalization of a video. The divisor reconstruction
+sum_(d|q) c_d(n) = q*indicator(q|n) is NOT proved in this increment.
+Matching real Hodge matrix and complex Laplacian after scalar extension
+remains open. No classical Ramanujan historical attribution is claimed
+from a video whose exact argument was not checked.
+**Verification:** both modules SOURCE_ONLY / NOT_RUN for all kernel,
+compiler and transitive axiom/unsafe checks. Same pinned Lean/Mathlib.
+
+### Quadratic Gaussian CM prime density and ordinary reduction
+
+**Mathematical background:** Joseph H. Silverman,
+*Advanced Topics in the Arithmetic of Elliptic Curves*, **1994**,
+Chapter II (Complex Multiplication), Springer GTM 151,
+[DOI 10.1007/978-1-4612-0851-8](https://doi.org/10.1007/978-1-4612-0851-8).
+The exact location/theorem number for the Deuring ordinary/supersingular
+criterion on E:y^2=x^3-x is **UNRESOLVED** here; no passage is
+paper-ported. A separate classical Dirichlet/Chebotarev source is
+needed to prove natural relative densities 1/2 for primes p mod4=1,
+p mod4=3. Neither theorem has been supplied as a Lean proof.
+
+**Local candidate:** GRWTSK/NumberTheory/ArithmeticGeometry/
+QuadraticCMPrimeDensity.lean,
+[grwtsk/math@16336be883567229fff9ebc64be555d21ed6d403](https://github.com/grwtsk/math/commit/16336be883567229fff9ebc64be555d21ed6d403),
+blob 6178e018686b0e329479cfae8293b343fbd2b42e.
+Declarations: oddPrimeWindow/oddPrimeCount/splitPrimeCount/inertPrimeCount,
+HasRelativePrimeDensityHalf, QuadraticPrimeDensitySupplier,
+QuadraticCMReductionProfile, ordinaryPrimeCount,
+supersingularPrimeCount, ordinaryPrimeCount_eq_splitPrimeCount,
+supersingularPrimeCount_eq_inertPrimeCount,
+ordinaryPrimeDensity_half, supersingularPrimeDensity_half,
+ordinary_and_supersingular_density_half, ramified_two_excluded.
+The exact classification and BOTH density halves are independent
+unconstructed supplier fields. Local theorem types transport
+finite-count equalities to the two asymptotic density conclusions;
+they do NOT establish these density inputs.
+**Relationship:** conditional arithmetic/geometric transport,
+not imported Deuring/Chebotarev or CM Hodge algebraicity theorem.
+SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED; no receipt.
+
+### Goldfeld half densities do not imply mean rank without a tail
+
+**Paper:** OpenAI, *Goldfeld's analytic density conjecture and the
+2-converse for elliptic curves*, **October 7, 2026 preprint**,
+[openai/math at immutable source](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026).
+Exact cited theorem **thm:main-density** in
+build/sections/00-introduction.tex: for every elliptic curve E/Q and
+j in {0,1}, density 1/2 of analytic rank j quadratic twists among
+D(X)={d integer: 0<|d|<=X, d squarefree}. The 2-converse
+**thm:main-converse** assumes FULL 2-infinity Selmer corank 0 or 1
+and concludes analytic rank = Mordell--Weil rank = Selmer corank,
+plus finite Sha. Section 11 lemma **lem:squarefree-density** assumes
+a squareclass-invariant property and 2 delta X+o(X) signed integer
+count. The introduction explicitly states that a separate mean-rank
+paper/tail estimate is needed; the two half densities alone do not
+bound unbounded analytic ranks on an exceptional density-zero set.
+
+**Local source:** GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/
+GoldfeldTwistDensityComparison.lean,
+[grwtsk/math@cd4f6d91aca5be0c95baa55be1149b6b7014bb58](https://github.com/grwtsk/math/commit/cd4f6d91aca5be0c95baa55be1149b6b7014bb58),
+blob 9fd9e6663bda0adba4bfd887045604e05adcaded.
+Declarations: TwistRankFamily, eligibleTwists (symmetric signed window),
+rankZeroMass, rankOneMass, highRankMoment, fullRankMoment,
+rank_moment_pointwise, fullRankMoment_eq_one_add_high,
+meanRank_eq_one_fraction_add_high,
+GoldfeldZeroOneHalfDensities, HighRankMomentNegligible,
+GoldfeldMeanHalf, mean_half_of_density_and_high_tail.
+The family adapter is NOT instantiated with a curve, source-exact
+squarefree predicate or analytic L-function order. The finite moment
+identity and mean inference are **LOCAL_IDENTITY_SOURCE_CANDIDATE**
+and **CONDITIONAL_REDUCTION**. No Goldfeld density theorem, converse,
+BSD statement, rank-32 independence or mean-rank theorem is imported.
+No claimed kernel/axiom receipt.
+
+### Actual verification and trust status for this entire group
+
+All five source modules were added through routine non-force main
+commits and independently read back by exact Git blob. Static checks
+found no new declaration-level sorry, admit or axiom tokens. Environment
+toolchain: leanprover/lean4:v4.33.0; Mathlib locked at
+db584cd6d46c92f209a44c0f1c829460d327499d.
+The local container has no lean/lake executable, and an attempted
+git ls-remote failed host resolution (exit 128). No Railway or other
+declined remote executor was used. **Compiler builds, direct
+elaboration, independent fresh kernel replay, transitive #print axioms
+and unsafe/generated declaration audits are all NOT_RUN.**
+The external manuscripts' own proof or kernel claims are not local
+receipts. No proof accepted into GRWTSK.lean public root, no
+unconditional density or zero-free theorem and no asserted
+PAPER_TO_LEAN_BRIDGE_PROVED. Add exact commit-bound issue links and
+real execution receipts only after an authorized executor runs them.
+
+## Case FAREY-ANGULAR-02 — oriented return phase, not a global spectral character
+
+**Bibliography and attribution.** These are **2026 repository-derived
+constructions**, credited in the source to mathematical direction by
+**grwtsk contributors** with formalization assistance from **OpenAI**.
+There is **no identified external paper** whose exact theorem or method
+asserts this mod-three Farey angular construction. Consequently an
+additional external paper title, authors, publication year, DOI/arXiv
+identifier and theorem locator are **not established**, and none is
+invented. Its stable, citable **code-source identities** are
+[the angular implementation at `ffe99332d6129ddeddd57cbf2f8b2e97ce2e1e36`](https://github.com/grwtsk/math/commit/ffe99332d6129ddeddd57cbf2f8b2e97ce2e1e36)
+and [the projective obstruction at `94ea7f741c162ff60d93e47e54124845f29e2764`](https://github.com/grwtsk/math/commit/94ea7f741c162ff60d93e47e54124845f29e2764).
+The preceding exact matrix and return eigensector constructions were
+integrated at `367a4a4d7ca24eeb506e9bcaad118a66ee0cb0ad` and
+`5c9a0b1d418daef930367d3537a83f1b0ec66ff2`,
+with the later proof repair and qualified parent source at
+`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`.
+
+**Exact statements, method and hypotheses.**
+The source `GRWTSK.NumberTheory.Farey.GroupSuperwalk` restricts to
+a **positive chronological** two-letter Farey word
+`[Turn.left, Turn.right]`, acting by the genuine shears
+`L=[[1,0],[1,1]]`, `R=[[1,1],[0,1]]` on the right
+of the original determinant-one Farey frame with positive denominators;
+inverse shears are **not** claimed to preserve positive Farey cells.
+The selected return is `H=L*R=[[1,1],[1,2]]`.
+The parent real channel uses the explicitly constructed proper idempotent
+for `s=√5>0`, `s²=5`, and
+`λ₊=(3+√5)/2>1`, with `H^n P₊=λ₊^n P₊`.
+It commutes with the selected **return**, not necessarily each
+generator: the earlier simultaneous-commutant no-go therefore remains intact.
+
+The next local construction interprets the **same** source return
+over `ZMod 3`: `H₃²=-I`, `H₃⁴=I`, with
+`H₃²≠I`. Starting at the actual vector `v₀=(1,0)`,
+its four distinct states are `(1,0),(1,1),(2,0),(2,2)`.
+The **chosen** complex observable takes values `1,i,-1,-i`,
+so `φ(H₃ v)=i φ(v)` **on this finite selected orbit**.
+The independently chosen product readout is
+`z_n=(λ₊ i)^n`, `‖z_n‖=λ₊^n`, and
+`z_(n+4)=λ₊⁴ z_n`. This is a *discrete sampled observation*,
+not a continuous spiral embedding or a global
+`SL₂(ℤ)` one-dimensional character.
+
+The projective no-go has **two necessary, explicitly formalized
+premises** on any putative extension
+`f : (Fin 2 → ZMod 3) → ℂ`:
+`SignGaugeInvariant f := ∀ v, f(-v)=f(v)`;
+`AgreesWithOrbitPhase f := ∀ j : Fin 4,
+f(residueOrbit j)=orbitPhase j`. Because the *actual* pairs
+`v₂=-v₀` and `v₃=-v₁` carry opposite, distinct
+phases, no `f` satisfies both conditions. The statement does
+**not** forbid sign-invariant *different* observables or
+projective two-state characters (e.g. a separately constructed
+squared-phase channel). It also does not negate the oriented readout.
+
+**Exact Lean declarations, commits and blobs.**
+
+- `GRWTSK.NumberTheory.Farey.ReturnAngularChannel.modThreeWord_return`,
+  `modThreeReturn_square`, `modThreeReturn_fourth`,
+  `modThreeReturn_square_ne_one`, `modThreeReturn_orbit`,
+  `modThreeReturn_orbit_iterate`, `orbitPhase_next`,
+  `orbitPhase_iterate`, `simultaneous_return_channels`,
+  `discreteSpiral_formula`, `discreteSpiral_norm`,
+  `discreteSpiral_four_returns` in
+  [`ReturnAngularChannel.lean`](../../../../GRWTSK/NumberTheory/Farey/ReturnAngularChannel.lean);
+  first source commit `d8f689c45e3c51988a1699e0f42c4fb4f1c9d1a0`,
+  orbit-iterate revision `ffe99332d6129ddeddd57cbf2f8b2e97ce2e1e36`,
+  integrated scope pin `ab80341e288db86f8b79b19e959bc2694e4c5472`,
+  exact source Git blob `df4c90661a7f0a6897d274604de22850b703d38b`.
+- `GRWTSK.NumberTheory.Farey.ReturnAngularProjectiveObstruction.SignGaugeInvariant`,
+  `AgreesWithOrbitPhase`, `residueOrbit_two_eq_neg_zero`,
+  `residueOrbit_three_eq_neg_one`, `orbitPhase_two_ne_zero`,
+  `no_sign_invariant_orbit_phase`,
+  `no_projective_selected_phase_extension` in
+  [`ReturnAngularProjectiveObstruction.lean`](../../../../GRWTSK/NumberTheory/Farey/ReturnAngularProjectiveObstruction.lean),
+  introduced at `94ea7f741c162ff60d93e47e54124845f29e2764`,
+  documentation pin `8c48a9d8f2e3efca28d86b652dda4e9a23b6b374`,
+  Git blob `08c7754c5116d7885613caf56e6b2005ab9a7167`.
+- Exact imported repository suppliers:
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.expandingProjector_iterate`
+  and `expandingProjector_eigen`, blob
+  `de3d52cd221bdf2334bcacccff43fafde4d52db9`;
+  `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.native_invariant_projector_trivial`,
+  blob `4c643e9c728d7a0052dab7c7a1353e0ef97233cd`;
+  `GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_walk`,
+  blob `281df5e34fdc5ee557642993b95c10e544d62b99`.
+  The immutable qualified parent source identity for these three
+  dependencies is stated in FAREY-VALIDATION-20261023 above.
+
+**Relationship and actual verification.** The finite matrix/real
+return parent modules are **`local-proved-bridge` only at their
+finite algebraic scope** as recorded above at
+`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`:
+the ledger gives the executed local `lake build` and
+`lean --trust=0` exit-zero commands, transitive axiom
+results and external local receipt paths. This provenance update
+does **not** independently re-run those commands or assert external
+CI replay. **Both new angular and projective leaf modules remain
+`source-proof-candidate`, `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`**: zero valid new-leaf compiler,
+fresh kernel or transitive axiom receipts are established in the
+current review. Finite modular, radical and orbit calculations are
+`finite-certificate` only. Their distinct immutable verification
+requests are [#1100](https://github.com/grwtsk/math/issues/1100)
+and [#1102](https://github.com/grwtsk/math/issues/1102).
+They remain outside the public `GRWTSK.lean` import.
+
+**External-paper relationship and unresolved premises.** Sarnak's
+**Peter Sarnak (2011)** *Three Lectures on the Mobius Function:
+Randomness and Dynamics*,
+[IAS source](https://publications.ias.edu/sarnak/paper/506),
+**Definition 3** and **Conjecture 4** (printed p. 4), are already
+identified under DYN-SQRT2-01. The local finite angular return is
+**`methodological-analogy` only**, not an instance of that
+conjecture: no compact metric zero-entropy dynamical realization,
+all-continuous-observables quantifier, genuine Möbius weight or
+ordinary-average `o(N)` cancellation is supplied. A
+nonperiodic Farey/continued-fraction return, a source-preserving
+gauge/phase lift and an actual observation comparison remain
+**`unresolved`**. No continuous geometric spiral,
+Sturmian spectrum, zeta determinant, RH or arithmetic
+zero-distribution result follows.
+
+## Case FAREY-HODGE-01 — cyclic residue Hodge and nonunit equivariance failure
+
+**Bibliography/source type.** This is a **2026 repository-derived
+finite graph and residue construction** credited in the source to
+mathematical direction by **grwtsk contributors** and formalization
+assistance by **OpenAI**. An outside paper with exact title,
+authors, year/version and DOI/arXiv theorem locator that this file
+formally instantiates is **not established**. The stable
+mathematical/code sources, *not publication-theorem imports*, are
+[the new source commit `7c966ff78bc79530d15c4410a1d7c8c5b726b35a`](https://github.com/grwtsk/math/commit/7c966ff78bc79530d15c4410a1d7c8c5b726b35a),
+`GRWTSK.Geometry.Hodge.FiniteGraphCellular`
+(Git blob `8443dddddc00f3c8e5c79c110381c7fa2d58ad6e`),
+`GRWTSK.Geometry.Hodge.FiniteMatrixHodge`
+(blob `1299a222b0e8bd5f6ac25d8508fab8ac3d548b7b`),
+and the previously recorded finite Dirichlet/additive
+`FareyResidueChannelDecomposition`
+(blob `a44f3cf92d0d3c05ff09ac66b43b3d078918982b`).
+These are code dependencies in pinned Mathlib/GRWTSK, not a
+proof of the algebraic Hodge conjecture.
+
+**Exact source theorem/method, hypotheses and normalizations.**
+For a natural modulus `q` with **`[NeZero q]`**, the
+cyclic finite incidence object on `ZMod q` has source `x`
+and target `x+1`, so the degree-zero real coboundary is
+`δf(x)=f(x+1)-f(x)`. With finite vertex/edge sets and
+the original standard real counting pairing, its
+energy `∑ (δf)^2` and Laplacian quadratic form
+`⟨f,δ*δf⟩` are nonnegative, with
+`ker(δ*δ)=ker δ` under the source's finite-dimensional
+linear-algebra hypotheses. The separate complex
+`ZMod q → ℂ` unit/nonunit coordinate cutoffs
+`unitPart` and `nonunitPart` are **complementary
+idempotents**, with zero pointwise products and
+zero counting-pairing cross term; this does **not**
+imply invariance under translation or under the
+finite Hodge Laplacian.
+
+The exact `q=4` Farey witness is the right numerator
+**2** of the previously defined cell `1/2<2/3`.
+It is a **nonunit modulo four**. Its additive-residue
+selector `f(x)=1_{x=2}` remains meaningful despite the
+multiplicative Dirichlet-character obstruction.
+For `translateUp f(x)=f(x+1)`, the unit cutoff
+does **not** commute with translation: evaluation
+at `x=1` gives `unitPart(translateUp f)(1)=1`
+but `translateUp(unitPart f)(1)=0`.
+The target residue and nonunit status are not
+asserted for arbitrary Farey coordinates or all moduli.
+
+**Exact Lean declarations, source commit/blob and hypotheses.**
+In [`GRWTSK/NumberTheory/Farey/CyclicResidueHodge.lean`](../../../../GRWTSK/NumberTheory/Farey/CyclicResidueHodge.lean),
+first integrated on **main** by
+`7c966ff78bc79530d15c4410a1d7c8c5b726b35a`,
+source blob `449c566c6366b9732ba719d6485ad299b29473c2`,
+namespace `GRWTSK.NumberTheory.Farey.CyclicResidueHodge`:
+
+- `cyclicIncidence`, `cyclic_coboundary_apply`,
+  `cyclic_energy_nonneg`, `cyclic_laplacian_nonneg`,
+  `cyclic_laplacian_kernel`: finite oriented real
+  coboundary/Laplacian statements with `[NeZero q]`
+  and source finite-module requirements.
+- `unitPart`, `nonunitPart`, `unit_add_nonunit`,
+  `unitPart_idempotent`, `nonunitPart_idempotent`,
+  `unit_nonunit_pointwise_zero`,
+  `unit_nonunit_counting_orthogonal`: finite complex
+  residue-space decomposition, again with
+  `[NeZero q]`.
+- `translateUp`, `fareyNonunitPointMass`,
+  `fareyNonunitPointMass_eq_indicator`,
+  `farey_unit_projector_not_translation_equivariant`:
+  exact mod-four selected nonunit arithmetic witness,
+  not a statement of translation noncommutation for
+  every q or every input.
+
+**Relationship and evidence.** The import
+`GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.farey_nonunit_channel_certificate`
+is part of the eight-module scope locally
+`local-proved-bridge`-qualified in
+FAREY-VALIDATION-20261023, at the precise source
+blob stated there. The *new* cyclic Hodge application is
+**`source-proof-candidate`, `SOURCE_ONLY / NOT_RUN /
+NOT_KERNEL_AUDITED`**, not covered by that older
+eight-module execution or a separate complete compiler/axiom
+receipt in this review. Finite `q=4` sample arrays and energy
+calculations are `finite-certificate` only. The
+standalone verification request [#1103](https://github.com/grwtsk/math/issues/1103)
+pins math `c788f9c92a3681ebe2ffb68b96dbf745e6edcf1a`
+with Lean `v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`,
+target modules, exact dependencies, build,
+fresh kernel and transitive axiom commands. It is
+a **queue**, not an executed receipt.
+
+**Missing bridge, analogy/nonclaim.** A Hodge
+nonnegative energy or an orthogonal unit/nonunit
+coordinate decomposition does **not** imply
+dynamical invariance, Dirichlet L-function spectral
+claims, a Siegel-zero theorem, a density estimate,
+the Hodge conjecture, analytic continuation or RH.
+The missing map from the finite cyclic graph
+to a named analytic spectral/operator family and its
+frequency-dependent comparison remains
+**`unresolved`**. The phrase "Hodge" here denotes
+the exact finite graph coboundary/adjoint algebra,
+not imported algebraic-geometric Hodge theory.
+
+
+
+**Pinned verification requests for this source group (all OPEN/PENDING):**
+[finite Farey Hodge/Ramanujan #1104](https://github.com/grwtsk/math/issues/1104),
+[CM/Goldfeld density #1105](https://github.com/grwtsk/math/issues/1105),
+[canonical Guth–Maynard / 3/4 zeta comparison #1106](https://github.com/grwtsk/math/issues/1106).
+All target the unchanged mathematical source blobs at immutable main
+commit 74a1937e01d7dc220e2c78d35a448b830afc3e0f; none is an actual
+compiler, kernel, or axiom-audit acceptance receipt.
 
 ## Native replay repair: finite zeta enclosures and contraction (2026-10-23)
 
