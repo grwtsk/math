@@ -1,5 +1,4 @@
 import GRWTSK.Algebra.PolygonalQuarticSeparable
-import GRWTSK.Algebra.QuarticResolventReduction
 
 /-!
 # Exact collision obstruction for quartic matching weights
