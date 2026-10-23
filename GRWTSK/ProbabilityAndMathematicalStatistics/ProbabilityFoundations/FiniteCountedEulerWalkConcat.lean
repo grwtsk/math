@@ -148,4 +148,44 @@ theorem FreshCountedTrail.concat_unused_card
   omega
 
 
+
+/-- A nonempty closed residual trail based at the endpoint of an
+existing fresh trail can be spliced by constructive concatenation.
+The result retains the original endpoints and all counted edge IDs. -/
+def FreshCountedTrail.spliceClosedAtFinish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (P : FreshCountedTrail m c a b)
+    (C : FreshCountedTrail m c b b)
+    (hdisj : Disjoint P.used C.used) :
+    FreshCountedTrail m c a b :=
+  P.concat C hdisj
+
+/-- Splicing a closed residual trail has the exact edge-instance
+union, without any identification of parallel edges. -/
+theorem FreshCountedTrail.spliceClosedAtFinish_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (P : FreshCountedTrail m c a b)
+    (C : FreshCountedTrail m c b b)
+    (hdisj : Disjoint P.used C.used) :
+    (P.spliceClosedAtFinish C hdisj).used = P.used ∪ C.used := by
+  exact P.concat_used C hdisj
+
+/-- Any nonempty residual closed trail strictly decreases the unused
+edge count when spliced at the current terminal vertex. -/
+theorem FreshCountedTrail.spliceClosedAtFinish_strict
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (P : FreshCountedTrail m c a b)
+    (C : FreshCountedTrail m c b b)
+    (hdisj : Disjoint P.used C.used)
+    (hC : 0 < C.used.card) :
+    (Finset.univ \ (P.spliceClosedAtFinish C hdisj).used).card <
+      (Finset.univ \ P.used).card := by
+  have h := P.concat_unused_card C hdisj
+  unfold FreshCountedTrail.spliceClosedAtFinish
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
