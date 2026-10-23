@@ -29,7 +29,7 @@ These generic counting results do not depend on a group, prime modulus or Fourie
 
 ## Evidence and credit
 
-The [selected receipt](../../../../.noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json) records the fresh project closure replay, fatal warnings, exact owned-declaration audit, finite controls and source identities. Its scope is selected; global historical validation is not refreshed.
+The selected receipt (artifact:gitblob:09e0a22fec32830ed6c045b7e23a8183f6cb0f0a) records the fresh project closure replay, fatal warnings, exact owned-declaration audit, finite controls and source identities. Its scope is selected; global historical validation is not refreshed.
 
 Source application: Pham and Sauermann, [arXiv:2602.15797v1](https://arxiv.org/html/2602.15797v1), Section 3, Lemmas 3.1 and 3.3. Human direction: grwtsk contributors. Lean implementation: OpenAI Codex. Mathlib authorship and licensing retained.
 

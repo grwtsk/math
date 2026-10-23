@@ -54,7 +54,7 @@ empty appends, preserved old references and actual fresh-pack reconstruction.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/IncrementalDictionary.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/IncrementalDictionary.lean)
-and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json)
+and selected native receipt (artifact:gitblob:91eca08697a02c4e9d3f82d64992706334907228)
 bind the complete local dictionary closure and intended controls. Pinned Lean
 4.33.0 checks use trust zero, fatal warnings and the complete owned-declaration
 and transitive-axiom audit. Only `propext`, `Classical.choice` and `Quot.sound`
@@ -64,8 +64,8 @@ These are actual finite-list algorithms and theorems. A refinement to the
 repository Python cache, JSON equality, byte serialization, compression,
 cryptographic hashes or filesystem transactions remains open. No complexity
 bound, whole-repository acceptance or independent review is claimed. The
-[integration evidence](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-integration-2026-10-15.json)
-and [bounded source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-source-review-2026-10-15.json)
+integration evidence (artifact:gitblob:54c06e8dbb749a2f6aa47e7f556c97b4c5504a53)
+and bounded source review (artifact:gitblob:4e0b8306178992c47d7b3335630b34067d6fd373)
 retain contribution roles, antecedents and remaining premises.
 
 Human mathematical direction: grwtsk contributors. Formalization assistance:

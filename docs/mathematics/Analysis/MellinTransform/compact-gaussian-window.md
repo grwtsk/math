@@ -60,8 +60,8 @@ to bound the actual window's Schwartz seminorms remains a separate consumer.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/CompactGaussianWindow.lean),
-[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-integration-2026-10-15.json)
+native receipt (artifact:gitblob:63f56415a981b16b7b0eef7be3ebccc211f97fd7)
+and integration record (artifact:gitblob:fbb8d1371bc7aa2df49a212b7289a42c40496c98)
 bind exact definitions, hypotheses and the selected closure. Pinned Lean
 4.33.0 checks fresh local objects at trust zero with fatal warnings and a
 complete owned-declaration/transitive-axiom census permitting only

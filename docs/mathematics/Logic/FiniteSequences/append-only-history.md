@@ -46,7 +46,7 @@ contracts.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/AppendOnlyHistory.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/AppendOnlyHistory.lean)
-and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json)
+and selected native receipt (artifact:gitblob:a64bdd38160ab122f68109b7fc3151683061f6d0)
 bind the actual source, complete local dictionary closure, controls and owned
 axiom census. Replay uses pinned Lean 4.33.0, trust zero and fatal warnings,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Pinned dependency
@@ -59,10 +59,10 @@ reordering and insertion into old history. The Lean theorem concerns exact
 finite lists. A refinement from Python's schema-checked JSON rows and equality
 to Lean rows, and proofs of file persistence, hash commitments and transaction
 authenticity, remain open. The
-[integration record](../../../../.noeaaeue/evidence/Logic/FiniteSequences/ordered-history-integration-2026-10-15.json)
+integration record (artifact:gitblob:bdf2e109fd13fbcae4b769cf048b2ac723d5d42b)
 keeps those proof and operational scopes distinct. Authenticated-history
 literature is recorded in a
-[bounded primary-source review](../../../../.noeaaeue/evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json);
+bounded primary-source review (artifact:gitblob:59f2af2ec61e3550e377b4e14be96ab40197f62d);
 no cryptographic security or mathematical novelty is claimed.
 
 Human mathematical direction: grwtsk contributors. Formalization assistance:

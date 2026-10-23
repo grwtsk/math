@@ -46,14 +46,14 @@ refinement is inferred.
 
 The [source](../../../../GRWTSK/Order/Embeddings/PrefixObstruction.lean),
 [positive consumers](../../../../GRWTSK/Order/Embeddings/Checks/Positive/PrefixObstruction.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json)
+and native receipt (artifact:legacy-artifact-unavailable:3a9a8debec91eee22a4e9351b88c9b124dc2db7ed669a23fa7718a7c0dc5a1bc)
 bind exact bytes, controls and the complete local import closure. Replay uses
 pinned Lean 4.33.0, trust zero, fatal warnings and a complete owned-declaration
 and transitive-axiom audit, permitting only `propext`, `Classical.choice` and
 `Quot.sound`. Pinned dependency objects are reused and fingerprinted.
 
-The [integration evidence](../../../../.noeaaeue/evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json)
-and [bounded source review](../../../../.noeaaeue/evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json)
+The integration evidence (artifact:legacy-artifact-unavailable:02ec18b75c984833e3131062a9b17360d0f932bc8922dc8f4bba02b827aeb64e)
+and bounded source review (artifact:legacy-artifact-unavailable:cf5466f224237f95c6d8083296e8e5d5a538aa6d371c7a59838a797c4817dada)
 preserve exact hypotheses, source identities, individual credit and limits.
 Source syntax counts and taxonomy counts confer no proof acceptance. The
 user's 16 declared method families and 215 declared records still lack supplied

@@ -100,13 +100,13 @@ A separately retained source archive adds written arguments about endpoint groun
 | Analysis / Fourier | Separated samples, tail accounting and observation error | Formal port open |
 | NumberTheory / VonMangoldt | Source-specific conditional return and finite data | All-scale retained-packet bound open |
 
-The source identity is `sha256:0c4ed7f52e3b01707300e027a522983471751c7287c156b868f57044032a4134`. Exact document identities are in the [intake inventory](../../.noeaaeue/evidence/source-intake.json). Original prose, scripts and operational reports remain outside the mathematical library projection; no new license or publication permission is inferred.
+The source identity is `sha256:0c4ed7f52e3b01707300e027a522983471751c7287c156b868f57044032a4134`. Exact document identities are in the intake inventory (artifact:gitblob:5768dd6443326f9137958546065006ddbe451d7b). Original prose, scripts and operational reports remain outside the mathematical library projection; no new license or publication permission is inferred.
 
 The delivered production reports agree byte-for-byte and record finite scope through X=4096. The verification text also claims a fresh final archive replay through X=4096 with 33 tests, but its corresponding receipt is not included. The delivered replay receipts cover earlier sources through X=1024 with 32 tests. That missing receipt remains an explicit evidence obligation; none of these reports is a new local execution or Lean acceptance receipt.
 
 ## Evidence and limits
 
-[Exact source identities and intake statuses](../../.noeaaeue/evidence/source-intake.json) · [Attribution and licensing](../../LICENSES/ArchiveCandidates-NOTICE.txt) · [Mathematical source standard](../../.noeaaeue/documentation/reference/source-layout.md) · [Verification requirements](../../.noeaaeue/documentation/reference/verification-interfaces.md).
+Exact source identities and intake statuses (artifact:gitblob:5768dd6443326f9137958546065006ddbe451d7b) · [Attribution and licensing](../../LICENSES/ArchiveCandidates-NOTICE.txt) · Mathematical source standard (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3) · Verification requirements (artifact:gitblob:d7df3a864028a221ea3728082afc25ec28c72953).
 
 grwtsk contributors confirms ownership of the supplied proof sources. The existing repository MIT terms apply. Human direction, formal-source contribution, assistance, ownership and mathematical origin remain distinct; original source credit, upstream mathematics and Mathlib licenses are retained.
 

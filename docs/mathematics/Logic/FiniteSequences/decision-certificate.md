@@ -38,7 +38,7 @@ seven and reuses the proof under actual lookup agreement.
 
 The [source](../../../../GRWTSK/Logic/FiniteSequences/DecisionCertificate.lean),
 [positive consumers](../../../../GRWTSK/Logic/FiniteSequences/Checks/Positive/DecisionCertificate.lean)
-and [selected native receipt](../../../../.noeaaeue/evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json)
+and selected native receipt (artifact:gitblob:188505cee1abba936f29f140c02e4e4b20f1789f)
 bind the complete local three-module closure. The pinned Lean 4.33.0 replay
 uses trust zero, fatal warnings and the complete owned-declaration/transitive-axiom
 audit. Only `propext`, `Classical.choice` and `Quot.sound` are allowed. Pinned
@@ -51,7 +51,7 @@ proof field. The theorem establishes conditional finite-list reasoning; it
 does not verify the repository JSON decision schema, Python adapter, byte
 serialization, compression, filesystem persistence or arbitrary decision policy.
 Those operational records remain separate, source-bound evidence with explicit
-refinement obligations in the [cache reference](../../../../.noeaaeue/documentation/reference/content-cache.md).
+refinement obligations in the cache reference (artifact:gitblob:2304c61045278f7e7ef9b09be4a2ba4367c2b984).
 
 Human mathematical direction: grwtsk contributors. Formalization assistance:
 OpenAI Codex. Local source is MIT; Mathlib retains upstream credit and licensing.

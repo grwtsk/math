@@ -65,8 +65,8 @@ shared endpoint labels and numeric dictionary positions do not replace them.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/OccurrencePrefix.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/OccurrencePrefix.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json)
+native receipt (artifact:gitblob:007d6ab28b8e3f85128e75ed3748816c4b5eef1b)
+and integration record (artifact:gitblob:648b3cd630c4798eef842b96f9c96066b92e4a30)
 bind the exact selected closure and counterexamples. Pinned Lean 4.33.0 checks
 fresh selected local objects at trust zero with fatal warnings and a complete
 owned-declaration/transitive-axiom census permitting only `propext`,

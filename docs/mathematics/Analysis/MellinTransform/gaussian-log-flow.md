@@ -40,8 +40,8 @@ complete zero-scale Fourier-moment theorem fails.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogFlow.lean),
-[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-flow-integration-2026-10-15.json)
+joint native receipt (artifact:gitblob:993e30f85c17fcf6f0e982a7558026cb592a6c3b)
+and integration record (artifact:gitblob:ae534d8426b2d86e2a5e46d6ec894c3df370f523)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the complete owned-declaration and
 transitive-axiom census, allowing only `propext`, `Classical.choice` and

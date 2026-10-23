@@ -38,15 +38,15 @@ unused slots or revival after dropping is inferred.
 
 The [source](../../../../GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean),
 [positive controls](../../../../GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean),
-[native receipt](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json)
-and [historical integration record](../../../../.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-integration-2026-10-15.json)
+native receipt (artifact:gitblob:f9122c3f64f7e8449134ce5d5c4bf807e03bcb12)
+and historical integration record (artifact:gitblob:7462f6d40b697f197d312480eaf52360cb47483c)
 record the selected source and control checks; the integration record retains the earlier context. The relocated-context native receipt audits 925 owned declarations in its exact recorded source and verifier context. This is not a theorem count or a claim that later shared verifier edits were replayed. Pinned Lean 4.33.0 checks trust
 zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
 dependency objects are reused and fingerprinted; their sources and the whole
 umbrella are not rebuilt.
 
-The [durable decision](../../../../.noeaaeue/cache/decisions/compaction-schedule-state-v1.json)
+The durable decision (artifact:gitblob:fb505d31f051d8de07876ac8d1504a04e3b0dc0b)
 separates semantic history preservation, slot retention and payload lookup.
 This does not supply raw array stability, automatic criteria or an operational
 parser/JSON/hash/compression/filesystem/transaction refinement. Local source
