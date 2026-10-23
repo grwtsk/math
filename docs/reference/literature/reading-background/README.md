@@ -14,6 +14,25 @@ This catalog supports [attribution issue #254](https://github.com/grwtsk/math/is
 
 `catalog.schema.json` is a JSON Schema 2020-12 contract; `catalog.json` contains bibliographic candidates from the Desktop, Downloads and Documents intakes. Raw extracted metadata remains unverified. Reviewed bibliographic fields are in each source’s `bibliography` object under schema version 2; see [bibliographic qualifications](metadata-review.md). Titles, bylines, identifiers and dates carry per-field status and version-bound evidence. Owner-reported R.A. Jacob Martone attribution is separate from printed bylines. The [idea–formalization map](idea-formalization-map.md) contains 279 version-bound idea records and 226 pinned code links, organized by mathematical subject. The [unpublished-source coverage](unpublished-mapping-coverage.md) accounts separately for all 274 owner-designated unpublished versions: 41 retain their earlier passage-level comparisons, and all 233 formerly screened versions now have substantive reviews of selected complete pages beyond screening. This completes the deeper reading pass, not the missing mathematical bridges or a full manuscript audit. Ideas without a matching declaration remain explicitly unresolved. Draft interpretations have `origin: assistant-proposed`, a null `owner_statement`, and no asserted understanding date; they must not be read as the owner's testimony or historical influence. Links distinguish conditional correspondence from analogy, retain physical PDF pages, and pin code line spans and SHA-256 alongside Git commit/blob identity. `source-reviewed` means source inspection, not compilation or kernel audit. A formalization link binds repository, commit, path, blob and declaration, retains hypotheses and gaps, and states the relationship and evidence. Kernel checking does not establish intellectual attribution.
 
+## Paper-to-Lean reference ledger
+
+For every new paper-derived formalization, consult and update the
+[paper-to-formalization references ledger](paper-to-formalization-references.md)
+in the same mathematical source change. It records **title, credited authors,
+year/version, stable identifier, exact theorem/method and hypotheses, precise
+Lean declarations and introducing/revising commits, and actual verification
+status**. An analogy is not a formal dependency, and an unproved
+specialization or a source-level proof candidate is not a kernel-accepted
+bridge.
+
+The ledger currently contains specific entries for the 2026 ICARM
+rank-32 record, Cremona's 2002 good-prime 2-descent independence method,
+Stoll's pinned Lean 4.35 2-descent development (a **code source**, not a
+paper), and the 2026 finite Weil-form/inertia comparison
+(an **analogy**, not an imported zero-distribution theorem). The
+large version-bound unpublished-manuscript map remains separate; neither
+catalog proves reading history, influence, priority or theorem acceptance.
+
 ## Custody and deduplication
 
 PDF bytes live outside Git at `~/Desktop/MathematicsLibrary/<subject>/`. Only exact SHA-256 equality merges asset identity. Distinct versions remain separate until reviewed; a filename, DOI or arXiv family is not a byte-identity test. Duplicate physical occurrences remain in a separate local duplicate area, preserving their original path and date observations; no original is deleted. Taxonomy assignments are provisional opening-page keyword classifications, with an explicit review queue.
