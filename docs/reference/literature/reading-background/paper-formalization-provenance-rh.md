@@ -224,6 +224,77 @@ strict arithmetic source calculation does **not** construct
 the classical Weil target, signed all-pairs form comparison,
 or any unconditional RH result.
 
+### Physical three-tent moment linearity: source-repaired kernel declaration
+
+**Exact primary reference:** Enrico Bombieri, *Problems of the Millennium:
+the Riemann Hypothesis* (Clay Mathematics Institute, **2000**; in *The
+Millennium Prize Problems*, **2006**), **Section V, printed pp. 8–9**,
+[stable official PDF](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf).
+Only the two **actual positive-half-line integral conditions on the same
+complex function** are consumed:
+`∫₀∞ g(x) dx = 0` and `∫₀∞ g(x) dx/x = 0`.
+The physical integrands are finite linear combinations of the literal
+canonical stage-two, stage-three and stage-four tents, each integrable
+for `dx` and, because support is away from zero, for `dx/x`.
+The local coefficient-kernel classification and integral-linearity
+lemmas are **repository-derived mathematical statements**, not
+theorems quoted verbatim from Bombieri's paper.
+
+**Exact source binding:** The original
+`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentKernelLine`
+was authored at
+[`8dc0f86dbabf3a9598925306b3bf1f736db28a2d`](https://github.com/grwtsk/math/blob/8dc0f86dbabf3a9598925306b3bf1f736db28a2d/GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentThreeTentMomentKernelLine.lean),
+Git blob `2b9d613a7cef0428754fdceab226907407ad5467`.
+An additive routine non-force main repair at
+[`c70c70da17f1aca19da26947d34c3d3da3cc4263`](https://github.com/grwtsk/math/commit/c70c70da17f1aca19da26947d34c3d3da3cc4263),
+math tree `69f36cada818df3e405a48260aacfef2b1df2c56`,
+changed only that Lean module; the **current source blob** is
+`a534923a97e826d487b0fae02398556733c45b81`.
+The exact existing declarations
+`actualThreeTentFunction_ordinaryMoment_eq`,
+`actualThreeTentFunction_reciprocalMoment_eq`, and
+`physicalTwoMoments_iff_cofactor_line` retain their earlier
+Lean *source-level* statements. Direct comparison of **all ten**
+theorem headers between these blobs found them textually unchanged.
+
+**Precisely bounded source modification:** in the two actual
+Lebesgue-moment proofs, replace direct
+`rw [integral_add (h0.add h1) h2, integral_add h0 h1]` with
+named instances `have hadd := integral_add (h0.add h1) h2` and
+`have hadd01 := integral_add h0 h1`; simplify
+`Pi.add_apply` at both, then rewrite. The reciprocal proof's
+trailing `rfl` was deleted to match the already repaired
+`CanonicalSquareTentThreeTentMomentCorrection` proof
+(blob `644be0606ac195f35c8409f8877a707edb2aa457`).
+This addresses a **suspected** proof-script elaboration fragility;
+without an actual Lean process result it cannot be classified as
+either a confirmed previous compiler error or a successful repair.
+
+**Actual verification:** SHA/path/source diff and theorem-header
+comparisons **PASS source preflight**; after the first
+`namespace`, a direct source-line scan found no `sorry`,
+`admit`, `axiom`, or `unsafe` declaration (this scan does
+**not** establish a transitive trust audit). `lean`, `lake`,
+`elan`, `leanchecker` remain locally unavailable (exit **127**),
+GitHub shell DNS (exit **2**) and remote Git (exit **128**) remain
+blocked. Warning-clean isolated compilation, fresh
+`leanchecker --fresh -v`, exact elaborated theorem-type comparison,
+full imported closure and transitive axiom/generated/native/unsafe
+audit, and a Noeaaeue replay receipt: **NOT RUN / PENDING**.
+The old request pinned to blob `2b9d613…` does **not** qualify
+the repaired blob.
+
+**Relationship:** `DIRECT_HYPOTHESIS_ENCODING` for the source
+two-moment conditions; `REPOSITORY_DERIVED_SOURCE_DRAFT` for
+source-bound actual-integration linearity and one-dimensional
+coefficient-kernel reconstruction. No
+`PAPER_TO_LEAN_BRIDGE_PROVED` to the full Weil explicit formula
+or unconditional RH. Remaining premises include complete classical
+test-space membership, all-pairs signed polarized Weil-form
+normalization/identification, density/continuity and infinite zero-tail
+control. Source-level correctness must not be confused with
+kernel acceptance.
+
 ### Authored finite coefficient reconstruction from both Bombieri moments and one source coordinate (kernel pending)
 
 **Paper source and exact borrowed hypotheses:** Enrico Bombieri,
