@@ -155,7 +155,7 @@ and `sturmian_source_dual_product`.
 
 Direct repository imports:
 `GRWTSK.NumberTheory.Farey.TurnwiseScalarObstruction`
-(blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1`),
+(historical introduction blob `ba99ad673f032e44eb14a4564f5488cfd31af0f1`; **current replay-pin blob** `6eabd59265a723e325654907eaf853530dd2a0bb`),
 `GRWTSK.LinearAlgebra.PeriodicCocycleData`
 (blob `11ca2a896e8844dcb483ce9c910c1bb07ae857e1`),
 `GRWTSK.LinearAlgebra.Sturmian`
@@ -165,7 +165,13 @@ plus exact Mathlib imports
 `Mathlib.Tactic`. The source dependency closure also
 includes `GroupSuperwalk`, `ReturnAngularChannel`
 and `CocycleProduct`; all must be pinned and audited
-before any theorem-status upgrade.
+before any theorem-status upgrade. The concurrent parent
+`ProjectiveQuadraticChannel` repair is **current blob**
+`79943dff174eee6049a9e097ca89ae1f6ddf04d4`,
+not its historical introduction blob
+`b07cb18412f3e64f42d2916fea91b1e59b2228c2`.
+Its theorem scope remains unchanged; a new dependency hash
+requires the exact new closure to be checked.
 
 ## Papers and formalization classification
 
