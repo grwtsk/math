@@ -66,6 +66,37 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
 #print axioms perimeter_angle_eq_iff
 LEAN
 lake env lean --trust=0 --wfail "$tmp"
+# Hostile controls: a genuine endpoint seam must alias, while the
+# first two distinct directed corners must NOT alias on the perimeter.
+# The same corners DO alias after the paired attaching map.
+cat > "$tmp" <<'LEAN'
+import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAttachment
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel
+example (k : ℕ) (c : PolygonCorner k) :
+    perimeterProjection k (c, 1) =
+      perimeterProjection k (nextDirectedCorner k c, 0) :=
+  perimeterProjection_one_eq_nextDirectedCorner k c
+example (k : ℕ) :
+    perimeterAngle k
+        (perimeterProjection k ((firstHandle k, (0 : Fin 4)), 0)) ≠
+      perimeterAngle k
+        (perimeterProjection k ((firstHandle k, (1 : Fin 4)), 0)) :=
+  distinct_first_corner_angles k
+example (k : ℕ) :
+    (perimeterAngle k
+        (perimeterProjection k ((firstHandle k, (0 : Fin 4)), 0)) ≠
+      perimeterAngle k
+        (perimeterProjection k ((firstHandle k, (1 : Fin 4)), 0))) ∧
+    (perimeterAttach k
+        (perimeterProjection k ((firstHandle k, (0 : Fin 4)), 0)) =
+      perimeterAttach k
+        (perimeterProjection k ((firstHandle k, (1 : Fin 4)), 0))) :=
+  distinct_angles_same_attached_vertex k
+LEAN
+lake env lean --trust=0 --wfail "$tmp"
 # This script performs a trust=0 elaboration request and prints both inherited
 # homeomorphism dependency axioms and child theorem axioms, but
 # does not replace independent import/unsafe review or hostile seam fixtures.
