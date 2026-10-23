@@ -215,7 +215,9 @@ K_j^{mathrm{clip},0}(x,y),
 supported only when
 
 [
-1le x_{m val}<y_{m val}<Y.
+1le x_{
+m val}<y_{
+m val}<Y.
 ]
 
 Their signed combination is
