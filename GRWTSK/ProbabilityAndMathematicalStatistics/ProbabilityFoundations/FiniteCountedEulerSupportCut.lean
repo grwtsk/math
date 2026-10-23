@@ -127,4 +127,30 @@ theorem FreshCountedTrail.unused_outgoing_at_supported_cut
         (countedEdgeTarget m c e) e he (Or.inr rfl)
     exact ⟨countedEdgeTarget m c e, ht, f, hf, hsource⟩
 
+
+/-- A residual edge can be used as a splice entry exactly when its
+source vertex belongs to S. This specializes the cut crossing
+witness without losing the edge instance identifier. -/
+theorem FreshCountedTrail.exists_splice_entry_of_outside_support
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (hclosed : start = finish)
+    (hbalance : CountedDegreeBalanced m c)
+    (hconn : CountedEdgeSupportCutConnected m c)
+    (S : Finset (Fin m → Bool))
+    (hused : ∀ e ∈ T.used,
+      countedEdgeSource m c e ∈ S ∧ countedEdgeTarget m c e ∈ S)
+    (hinside : ∃ e : CountedBinaryEdge m c, CountedEdgeMeets m c S e)
+    (houtside : ∃ e : CountedBinaryEdge m c,
+      countedEdgeSource m c e ∉ S ∨ countedEdgeTarget m c e ∉ S) :
+    ∃ v : Fin m → Bool, v ∈ S ∧
+      ∃ e : CountedBinaryEdge m c,
+        e ∉ T.used ∧ countedEdgeSource m c e = v := by
+  obtain ⟨v, hv, e, he, hs⟩ :=
+    T.unused_outgoing_at_supported_cut
+      hclosed hbalance hconn S hused hinside houtside
+  exact ⟨v, hv, e, (Finset.mem_sdiff.mp he).2, hs⟩
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
