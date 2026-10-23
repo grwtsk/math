@@ -592,9 +592,10 @@ theorem thetaGaussianSummand_mode_antitone
   apply Real.exp_le_exp.mpr
   have hmnR : (m : ℝ) ≤ n := by exact_mod_cast hmn
   have hm : 0 ≤ (m : ℝ) := Nat.cast_nonneg _
-  have he : 0 < Real.exp (4 * u) := Real.exp_pos _
-  have hp : 0 < Real.pi := Real.pi_pos
-  nlinarith [sq_nonneg ((n : ℝ) - m)]
+  have hn : 0 ≤ (n : ℝ) := Nat.cast_nonneg _
+  have hsq : (m : ℝ) ^ 2 ≤ (n : ℝ) ^ 2 := by nlinarith
+  have hweight : 0 ≤ Real.pi * Real.exp (4 * u) := by positivity
+  nlinarith [mul_le_mul_of_nonneg_left hsq hweight]
 
 
 /-- The literal n-th summand of the theta kernel in the selected
