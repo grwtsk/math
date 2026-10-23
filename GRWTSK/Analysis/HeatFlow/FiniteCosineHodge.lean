@@ -777,7 +777,11 @@ theorem thetaKernelNegativePart_scaled (n : ℕ) (u : ℝ) :
         Real.exp u * Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
   rw [thetaKernelNegativePart, thetaGaussianSummand_scaled]
   unfold thetaScaledGaussian
-  rw [← Real.exp_add]
+  have hexp : Real.exp (5 * u) = Real.exp (4 * u) * Real.exp u := by
+    rw [← Real.exp_add]
+    congr 1
+    ring
+  rw [hexp]
   ring
 
 /-- Both signed theta components share the same Gaussian variable.
