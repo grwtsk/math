@@ -24,6 +24,7 @@ immutable-head elaboration.
 -/
 
 set_option autoImplicit false
+open Topology
 noncomputable section
 namespace GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarFundamentalCover
 
@@ -36,23 +37,18 @@ theorem unitAddCircle_unitInterval_surjective :
     ∀ z : UnitAddCircle,
       ∃ θ : unitInterval, ((θ : ℝ) : UnitAddCircle) = z := by
   intro z
-  have hcover :
-      Set.range (fun θ : Set.Icc (0 : ℝ) 1 =>
-        ((θ : ℝ) : UnitAddCircle)) = Set.univ := by
-    simpa only [Set.image_univ] using
-      (AddCircle.coe_image_Icc_eq (1 : ℝ) 0)
-  have hz : z ∈ Set.range (fun θ : Set.Icc (0 : ℝ) 1 =>
-      ((θ : ℝ) : UnitAddCircle)) := by
-    rw [hcover]
+  have hz : z ∈ ((↑) : ℝ → UnitAddCircle) '' Set.Icc (0 : ℝ) 1 := by
+    rw [show ((↑) : ℝ → UnitAddCircle) '' Set.Icc (0 : ℝ) 1 = Set.univ by
+      simpa only [zero_add] using (AddCircle.coe_image_Icc_eq (1 : ℝ) 0)]
     trivial
-  rcases hz with ⟨θ, hθ⟩
-  exact ⟨θ, hθ⟩
+  rcases hz with ⟨θ, hθ, heq⟩
+  exact ⟨⟨θ, hθ⟩, heq⟩
 
 /-- Unconditional source candidate for compact-cover quotient status,
 consuming the precise closed fundamental-domain theorem. -/
 theorem compactPolarProjection_isQuotientMap :
     IsQuotientMap compactPolarProjection := by
-  letI : T2Space (UnitAddCircle × unitInterval) := inferInstance
+  let : T2Space (UnitAddCircle × unitInterval) := inferInstance
   exact compactPolarProjection_isQuotientMap_of_cover
     unitAddCircle_unitInterval_surjective
 
