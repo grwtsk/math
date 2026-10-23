@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-square-divisor-nonsquarefree-899-v0.1"
+owner_repository = "grwtsk/math"
+issue = 899
+parent_issue = 896
+parent_pr = 897
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_SQUAREFREE_BRANCH_SCRIPTED_NONSQUAREFREE_CANCELLATION_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitSquareDivisorNonsquarefreeReduction"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitSquareDivisorNonsquarefreeReduction"
+
+[source_binding]
+stacked_parent_revision = "c39d2cc23e630b4b00c6ff9093e060ba76191883"
+candidate_branch = "research/rh-square-divisor-nonsquarefree-898-20261022"
+theorem_source_commit = "4d8ed4eec17b60c0f9ed0c18d34cdfe7ec709944"
+mathematical_note_commit = "bcf6c942cab42cd5f2a606070277d3c20705fa9f"
+
+[evidence_states]
+source_draft = true
+squarefree_square_divisor_root_one_scripted = true
+squarefree_square_divisor_set_singleton_scripted = true
+squarefree_mobius_sum_one_scripted = true
+nonsquarefree_cancellation_isolated = true
+indicator_equivalence_scripted = true
+nonsquarefree_cancellation_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false
