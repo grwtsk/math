@@ -1,0 +1,106 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-positive-edges-1034-v0.1"
+issue = 1034
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"
+
+[source_binding]
+parent_pr = 1033
+parent_revision = "51b0eba980a7c446d1283320937db62092aed838"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWPositiveEdges.lean"
+new_module_git_blob = "b3eb23627d632c1da9759c91d4aecf6aaf0ef325"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-positive-edges.md"
+note_blob = "7b30eb488c12683277489ae1b33626418326ebc1"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+open_cell_embeddings_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges"
+authored_declaration_count = 4
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWOrbitClosure"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positive_not_opposite_positive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positive_interior_projection_eq_source"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positiveOneCell_injective_interior"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPositiveEdges.positiveOneCell_disjoint_interior"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-Fin2-Fin4"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-vs-negative"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-two-point-orbit"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-equality"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-edge-injectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "different-edge-disjointness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-interior"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-open-embedding"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"
