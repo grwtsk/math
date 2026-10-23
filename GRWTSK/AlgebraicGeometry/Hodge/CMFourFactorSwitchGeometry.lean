@@ -1780,12 +1780,22 @@ theorem CMFiniteFourfoldAssembly.canonical_globalTensor_scalarConjugate
         σ (CMFiniteFourfoldAssembly.canonical factors).globalTensor =
       (CMFiniteFourfoldAssembly.canonical
         (factors.scalarTransport σ)).globalTensor := by
-  rw [CMFiniteFourfoldAssembly.globalTensor,
-    CMFiniteFourfoldAssembly.globalTensor]
-  rw [← GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
-    E.carrier σ (CMFiniteFourfoldAssembly.canonical factors).tensor]
-  exact congrArg coefficientInclusion
-    (CMFiniteFourfoldAssembly.canonical_tensor_transport factors σ)
+  change
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+      (coefficientInclusion
+        (CMFiniteFourfoldAssembly.canonical factors).tensor) =
+    coefficientInclusion
+      (CMFiniteFourfoldAssembly.canonical
+        (factors.scalarTransport σ)).tensor
+  calc
+    _ = coefficientInclusion
+          (GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+            (σ.restrictNormal E.carrier)
+            (CMFiniteFourfoldAssembly.canonical factors).tensor) :=
+      (GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
+        E.carrier σ (CMFiniteFourfoldAssembly.canonical factors).tensor).symm
+    _ = _ := congrArg coefficientInclusion
+      (CMFiniteFourfoldAssembly.canonical_tensor_transport factors σ)
 
 /-- Agreement of nested-linear presentations on all fourfold pure
 finite tensors gives equality of their fixed-field assembled generators.
