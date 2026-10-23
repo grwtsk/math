@@ -1749,6 +1749,37 @@ def CMFiniteFourfoldAssembly.globalTensor
     AlgebraicNumbers ⊗[ℚ] V :=
   coefficientInclusion D.tensor
 
+/-- Coefficient extension of the canonical finite generator is exactly
+the inclusion of the checked paired tensor assembly. -/
+theorem CMFiniteFourfoldAssembly.canonical_globalTensor_eq_checked
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E) :
+    (CMFiniteFourfoldAssembly.canonical factors).globalTensor =
+      coefficientInclusion
+        (GRWTSK.LinearAlgebra.TensorProduct.FiniteCMCanonicalAssembly.pairedAssembly
+          E.carrier
+          (((factors.vector 0 ⊗ₜ[ℚ] factors.vector 1) ⊗ₜ[ℚ]
+            factors.vector 2) ⊗ₜ[ℚ] factors.vector 3)) := by
+  exact congrArg coefficientInclusion
+    (CMFiniteFourfoldAssembly.canonical_tensor_eq_checked factors)
+
+/-- The canonical generator's actual algebraic coefficient extension
+commutes with absolute scalar conjugation via finite-field restriction. -/
+theorem CMFiniteFourfoldAssembly.canonical_globalTensor_scalarConjugate
+    {E : CMGaloisIntermediateField}
+    (factors : CMFiniteFourEmbeddingLineVectors E)
+    (σ : AlgebraicNumbers ≃ₐ[ℚ] AlgebraicNumbers) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+        σ (CMFiniteFourfoldAssembly.canonical factors).globalTensor =
+      (CMFiniteFourfoldAssembly.canonical
+        (factors.scalarTransport σ)).globalTensor := by
+  rw [CMFiniteFourfoldAssembly.globalTensor,
+    CMFiniteFourfoldAssembly.globalTensor]
+  rw [← GRWTSK.LinearAlgebra.TensorProduct.GaloisScalarDescent.scalarConjugate_restrict
+    E.carrier σ (CMFiniteFourfoldAssembly.canonical factors).tensor]
+  exact congrArg coefficientInclusion
+    (CMFiniteFourfoldAssembly.canonical_tensor_transport factors σ)
+
 /-- Agreement of nested-linear presentations on all fourfold pure
 finite tensors gives equality of their fixed-field assembled generators.
 This is the precise finite-level equality needed before scalar extension. -/
