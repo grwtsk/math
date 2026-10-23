@@ -238,7 +238,7 @@ structure CompatibleZeroDatum
 namespace CompatibleZeroDatum
 
 -- The shared coverage predicate retains its named edge witness for consumers.
-set_option linter.unusedVariables false in
+set_option linter.unusedVariables false
 variable {Vertex Z : Type*} {Stalk : Vertex → Type*}
   [Fintype Vertex] [DecidableEq Vertex]
   [∀ vertex, NormedAddCommGroup (Stalk vertex)]
