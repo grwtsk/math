@@ -68,4 +68,48 @@ def prohibitedPromotions : List String :=
    "source metadata -> proof of the signed identity",
    "conditional integer-psi descent -> unconditional Riemann Hypothesis"]
 
+/-! Additional controls and exact remaining obligations from issue #842,
+branch head `5b8c3527a68ee53eb748eb4622159afbb9c49d5b`.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / NO_RH_CLAIM. -/
+
+theorem concrete_integerized_psi_source_exact_identity
+    (j : ℕ) {v : ℝ} (hv : v ∈ pinnedPrimeWeightNextOctave j) :
+    thetaError v =
+      pinnedPrimeWeightIntegerPsiSourceRule.response j v /
+          (dyadicScale j : ℝ) +
+        pinnedPrimeWeightIntegerPsiSourceRule.signedResidual j v :=
+  pinnedPrimeWeightIntegerPsiSourceRule.exactIdentity j v hv
+
+theorem concrete_floor_correction_le_one
+    {j : ℕ} {v : ℝ} (hv : v ∈ pinnedPrimeWeightNextOctave j) :
+    |(pinnedPrimeWeightPsiGridIndex v : ℝ) - v| ≤ 1 :=
+  pinnedPrimeWeightPsiFloorCorrection_abs_le_one
+    (pinnedPrimeWeightNextOctave_nonnegative hv)
+
+theorem concrete_parent_pair_bounds_force_sawtooth_floor
+    {j m : ℕ} {C A : ℝ}
+    (hinteger :
+      |pinnedPrimeWeightPsiSourceRule.response j (m : ℝ)| ≤ C * A^2)
+    (hhalf :
+      |pinnedPrimeWeightPsiSourceRule.response j ((m : ℝ) + 1 / 2)| ≤
+        C * A^2) :
+    (dyadicScale j : ℝ) ≤ 4 * C * A^2 :=
+  pinnedPrimeWeightParentPsiPairBounds_force_sawtoothFloor hinteger hhalf
+
+def remainingIntegerPsiSourceObligations : List String :=
+  ["prove one fixed C and late stage with X_j*abs(psiError(m)) <= C*A_X_j^2 for every integer next-octave target",
+   "derive the integer-target coupling from an independent finite arithmetic identity",
+   "retain endpoint, normalization, smoothing, summation-order, and tail channels",
+   "replay both live recurrence instances under the same immutable integerized rule"]
+
+/-- Historical issue #842 nonimplications, retained alongside the main controls. -/
+def branch842ProhibitedPromotions : List String :=
+  ["moving the floor sawtooth into the residual -> integer psi capacity",
+   "bounded floor residual -> nonlinear contraction",
+   "Chebyshev upper bounds -> pinned-amplitude lower coupling",
+   "integer-target equivalence -> unconditional recurrence",
+   "target-fitted response -> independent arithmetic source",
+   "source metadata -> proof of identity",
+   "conditional descent -> unconditional Riemann Hypothesis"]
+
 end GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightIntegerizedPsiSourceRuleControls
