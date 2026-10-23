@@ -1,5 +1,8 @@
 # Mathematical page inventory
 
+[Deterministic formalization and incremental tracking contracts](deterministic-formalization.md)
+connect the source/result inventory to Noeaaeue's separate verification queue.
+
 The [mathematical area directory](../index.md) links to an index inside each area folder. Each area index groups its existing guides by mathematical object and links to the corresponding Lean source folder. Areas with sources but no object guides remain visible with explicit zero documentation coverage.
 
 The [generated count report](documentation-counts.json) is produced by the durable Noeaaeue generator from the current checkout. The [structured inventory](library-summary.json) retains the older curated observer census for compatibility and provenance; it must not be read as the repository-wide source count. It is an inventory snapshot, not a census of compiler-generated declarations or a mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
