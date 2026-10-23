@@ -175,8 +175,10 @@ theorem hasDerivAt_modeHeat (s frequency : ℝ) :
       ring
   have h := (Real.hasDerivAt_exp (-(s * modeLaplacian frequency))).comp s hlin
   convert h using 1
-  · rfl
-  · ring
+  · funext t
+    rfl
+  · simp only [modeHeat]
+    ring
 
 /-- The scalar heat coefficient satisfies the exact finite generator ODE. -/
 theorem hasDerivAt_coefficient (a s frequency : ℝ) :
