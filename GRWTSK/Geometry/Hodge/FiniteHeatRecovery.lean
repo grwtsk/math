@@ -178,6 +178,12 @@ structure HodgeSpectralChart
   coordinates : (Vertex → ℝ) ≃ₗ[ℝ] (Fin size → ℝ)
   eigenvalue : Fin size → ℝ
   nonnegative : ∀ i, 0 ≤ eigenvalue i
+  /-- A metric-compatible chart, not an arbitrary algebraic equivalence.
+  This is a separately required Hodge spectral input. -/
+  square_norm_coordinates :
+    ∀ signal : Vertex → ℝ,
+      (∑ v, (signal v)^2) =
+        ∑ i, (coordinates signal i)^2
   laplacian_diagonal :
     ∀ signal i,
       coordinates (laplacian G signal) i =
@@ -212,6 +218,30 @@ theorem HodgeSpectralChart.recover_heat
   simp [HodgeSpectralChart.recover, HodgeSpectralChart.heat,
     inverse_after_heat]
 
+/-- A genuinely metric-compatible Hodge chart transports the same finite
+energy contraction back to the ACTUAL graph-signal carrier. Without the
+square-norm compatibility field this statement would not follow from an
+arbitrary linear equivalence. -/
+theorem HodgeSpectralChart.heat_squareEnergy_le
+    {Vertex Edge : Type*}
+    [Fintype Vertex] [Fintype Edge] [DecidableEq Vertex]
+    {G : OrientedIncidence Vertex Edge}
+    (C : HodgeSpectralChart G) {t : ℝ} (ht : 0 ≤ t)
+    (signal : Vertex → ℝ) :
+    (∑ v, (C.heat t signal v)^2) ≤
+      ∑ v, (signal v)^2 := by
+  calc
+    (∑ v, (C.heat t signal v)^2) =
+        ∑ i, (C.coordinates (C.heat t signal) i)^2 :=
+      C.square_norm_coordinates (C.heat t signal)
+    _ = ∑ i, (diagonalHeat C.eigenvalue t (C.coordinates signal) i)^2 := by
+      simp [HodgeSpectralChart.heat]
+    _ ≤ ∑ i, (C.coordinates signal i)^2 :=
+      diagonalHeat_squareEnergy_le C.eigenvalue C.nonnegative ht
+        (C.coordinates signal)
+    _ = ∑ v, (signal v)^2 :=
+      (C.square_norm_coordinates signal).symm
+
 /-- A finite-bit-style coordinate omission is not lossless, even though
 the full exact heat map is bijective. The discarded second component
 cannot be recovered from the first component of the heated signal. -/
@@ -243,7 +273,7 @@ theorem implicitEuler_exact (n : ℕ) (signal : ℝ) :
     implicitEulerRecover n (implicitEulerEncode n signal) = signal := by
   unfold implicitEulerRecover implicitEulerEncode
   have hn : ((n : ℝ) + 1) ≠ 0 := by positivity
-  field_simp [hn]
+  field_simp [hn] <;> ring
 
 /-- Across growing spectral scales the inverse has no uniform finite
 Lipschitz constant. Stagewise exact recovery therefore does not imply
