@@ -115,6 +115,15 @@ single algebraic owner after migration from the geometric consumer. -/
     CMFiniteCoefficientMultiplication E (a ⊗ₜ[ℚ] b) = a * b :=
   coefficientMul_tmul E.carrier a b
 
+/-- The finite coefficient multiplication map sends the unit pure
+tensor to the unit of the CM field. -/
+@[simp]
+theorem CMFiniteCoefficientMultiplication_one
+    (E : CMGaloisIntermediateField) :
+    CMFiniteCoefficientMultiplication E
+        ((1 : E.carrier) ⊗ₜ[ℚ] (1 : E.carrier)) = 1 := by
+  simp
+
 /-- Original fourfold multiplication, corrected to rTensor for the
 left-associated fourfold coefficient carrier. -/
 def CMFiniteFourCoefficientMultiplication (E : CMGaloisIntermediateField) :
