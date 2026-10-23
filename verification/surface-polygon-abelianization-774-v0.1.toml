@@ -1,0 +1,349 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-abelianization-774-v0.1"
+owner_repository = "grwtsk/math"
+issue = 774
+related_issues = [758, 745, 734, 722, 704, 198, 205, 545, 653, 121, 168, 516, 159, 100, 15]
+route_id = "ORIENTED_POLYGON_FREEGROUP_CHARACTER_TO_CANONICAL_ABELIANIZATION"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-cell-boundary-758-20261022"
+review_parent_revision = "23b4fe218348f5831ac74a13c7bfeaa4e965fda2"
+review_parent_module_git_blob = "d21accee39c38ce4341527465021decc173ded8e"
+review_parent_polygon_module_git_blob = "c9f4cf201c3ac5c0608a14ed00768ed025060c9c"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAbelianizationComparison.lean"
+new_module_git_blob = "5c1259b1c94c3596b7b38f7ce3eef2b409e9e0bf"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-abelianization-comparison.md"
+mathematical_note_git_blob = "b286fb9341923ccd118677c89e6229b958878444"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+real_freegroup_lift_character_authored = true
+literal_signed_edge_source_preserved = true
+all_finite_signed_words_coordinate_equality_source_candidate = true
+real_Mathlib_abelianization_lift_used = true
+polygon_relator_canonical_abelianization_identity_source_candidate = true
+missing_inverse_edge_character_one_source_candidate = true
+missing_inverse_edge_nontrivial_abelianization_source_candidate = true
+complete_handle_abelianization_trivial_source_candidate = true
+complete_handle_freegroup_nontrivial_heisenberg_source_candidate = true
+full_abelianization_coordinate_equiv_proved = false
+categorical_candidate_chain_homology_instantiated = false
+actual_topological_surface_constructed = false
+actual_CW_cellular_chain_comparison_proved = false
+actual_surface_pi1_van_kampen_proved = false
+actual_surface_H1_hurewicz_proved = false
+hyperbolic_geometry_or_lengths_authenticated = false
+modular_aliasing_closed = false
+sofic_GUE_adapter_closed = false
+growing_shift_Chowla_supplier_closed = false
+zeta_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "Every source-signed polygon incidence coordinate is the value of a genuine FreeGroup.lift integer character factored through canonical Mathlib Abelianization; the full polygon relator is killed while a nontrivial Heisenberg-detected handle commutator also lies in the kernel."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison"
+authored_declaration_count = 21
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary", "Mathlib.GroupTheory.Abelianization.Defs", "Mathlib.Algebra.Group.Int.TypeTags"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.coordinateLetter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.exponentCharacter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.exponentCharacter_generator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.exponentCharacter_signedSide"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.exponentCharacter_polygonWord"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianCoordinate"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianCoordinate_polygonWord"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.polygonCharacter_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianPolygonCoordinate_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianization_wordCommutator_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianization_firstTwoRelator_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianization_extraHandleRelator_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.abelianization_extraRelatorList_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.canonicalAbelianization_higherGenusRelator_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.canonicalAbelianization_polygonBoundary_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.missingInverseEdge_character_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.missingInverseEdge_abelianization_ne_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.handleBlock_character_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.firstHandleBlock_not_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.firstHandleBlock_abelianization_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAbelianizationComparison.firstHandleBlock_in_kernel_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-freegroup-source"
+requirement = "The character domain is actual Mathlib FreeGroup(GenusLetter k), with exactly the source ID type from #734 and #745."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generator-same-coordinate"
+requirement = "A named generator x maps to integer +1 under its own character, not a group word-level Boolean without a homomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "other-generator-zero"
+requirement = "A source generator a different from x has character value zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "homomorphism-exists"
+requirement = "The integer coordinate map is actually constructed with FreeGroup.lift into Multiplicative ℤ, not posited as a raw arbitrary source map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inverse-edge-negative"
+requirement = "A reversed occurrence of the same source generator gives character value -1, not +1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "forward-edge-positive"
+requirement = "A forward occurrence has exactly the +1 coefficient at the matching source ID."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonmatching-edge-zero"
+requirement = "Unrelated source IDs yield a zero integer coordinate for both orientations."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-word-induction"
+requirement = "Character=coefficient theorem quantifies over ALL finite oriented edge lists and consumes actual List append/cons, not only the complete polygon fixture."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-parent-incidence-reuse"
+requirement = "Zero coordinate for polygonBoundaryWord uses #758 signedWordCoefficient_polygon_zero rather than a new free zero assumption."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-abelianization-factor"
+requirement = "The character is factored through Mathlib Abelianization.lift and Mathlib Abelianization.of, not a fabricated homology coordinate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "factor-source-pointwise"
+requirement = "The factorized map has exactly the same signed source coefficient on every oriented word."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "canonical-relator-group-proof"
+requirement = "The canonical abelianization of the polygon relator is proved from real group commutators, not inferred from joint injectivity of integer character coordinates."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "base-commutators"
+requirement = "Both first two handle commutators are preserved and killed under the genuine canonical abelianization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "extra-commutators"
+requirement = "Every extra handle's exact commutator maps to the identity in the real abelianization quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noncommutative-ordered-relator"
+requirement = "Extra handles are ordered as a List; no unjustified multiplication permutation is introduced."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-extra-handles"
+requirement = "k=0 preserves the two base handles and has an empty additional ordered relator list."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-extra-handles"
+requirement = "All k>0 extra handles remain in the source relator even though canonical abelianization kills their commutators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-polygon-relator-equality"
+requirement = "The full polygon boundary's evaluation is identified with the exact #734 higherGenusRelator using #745's source equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "missing-inverse-edge-character"
+requirement = "The hostile corrupted word missing the inverse b-edge has TRUE FreeGroup character value +1 at the original b source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "missing-inverse-abelian-nonidentity"
+requirement = "The corrupted word's canonical abelianization is nonidentity, derived from its nonzero true integer character."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-handle-complete-zero-character"
+requirement = "The complete a b a^-1 b^-1 handle has zero value for every generator coordinate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-handle-genuine-nontrivial"
+requirement = "That complete first handle is nonidentity in the ACTUAL free group; proof must use its image Z under the exact Heisenberg map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "heisenberg-sign-and-id"
+requirement = "The initial a/b source IDs and Z=(0,0,1) sign must match #734/#722 without inverse or relabeling."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "kernel-strict"
+requirement = "The SAME first handle is both nonidentity and canonical-abelianization-trivial, proving strict information loss for one source element."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-fake-coordinate-injectivity"
+requirement = "The file does not prove a joint injectivity or isomorphism from all integer characters to the canonical abelianization; do not infer one silently."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-freeabelian-pi-equivalence"
+requirement = "No FreeAbelianGroup A ≃+ (A→ℤ) theorem is proved or assumed from mere finite Fintype existence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-categorical-H1"
+requirement = "No categorical ChainComplex/H1 homology quotient is instantiated; only the earlier finite incidence/candidate chain profile exists."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-topological-surface"
+requirement = "No actual closed orientable CW surface, polygon attaching map, van Kampen equivalence, Hurewicz map or singular H1 is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-geometry"
+requirement = "No marked hyperbolic metric, primitive geodesic length, or complete trace source is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-modular-alias-inference"
+requirement = "Integer character detection does not eliminate mod-q aliases or identify q-torsion holonomy with continuous Haar."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-sofic-hodge-upgrade"
+requirement = "No Hodge signed form, Čech chain map, sofic operator model, microscopic GUE gap law or Weil–Petersson theorem follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh-upgrade"
+requirement = "No Liouville/Möbius growing-shift cancellation, zeta divisor, Riemann criterion or RH claim."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "static-decls-unqualified"
+requirement = "Authored theorem names/kinds, compiler-generated declarations, and imported transitive axioms still require exact-head Lean elaboration and audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-F06-execution"
+requirement = "Passive manifest does not authorize Lean/Lake, native/VM/F06, CI, workflow, cache, executor, toolchain or public root changes."
+status = "NOT_RUN"
+
