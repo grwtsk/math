@@ -1120,6 +1120,13 @@
           },
           "evidence": {
             "type": "string"
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
           }
         },
         "required": [
@@ -1145,7 +1152,10 @@
             "type": "string"
           },
           "owner_statement": {
-            "type": "string"
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "recorded_at": {
             "type": "string"
@@ -1164,6 +1174,15 @@
               "owner-reported",
               "draft",
               "reviewed"
+            ]
+          },
+          "interpretation": {
+            "type": "string"
+          },
+          "origin": {
+            "enum": [
+              "assistant-proposed",
+              "owner-reported"
             ]
           }
         },
@@ -1209,7 +1228,8 @@
               "analogy",
               "adapts",
               "formalizes",
-              "cites"
+              "cites",
+              "corresponds-to"
             ]
           },
           "hypotheses_and_gaps": {
@@ -1231,6 +1251,26 @@
           },
           "attribution_issue": {
             "const": "https://github.com/grwtsk/math/issues/254"
+          },
+          "connection_status": {
+            "enum": [
+              "conditional-correspondence",
+              "analogy-only",
+              "matched-subclaim",
+              "unresolved"
+            ]
+          },
+          "line_start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "code_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
           }
         },
         "required": [
