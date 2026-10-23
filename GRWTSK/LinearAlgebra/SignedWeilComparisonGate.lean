@@ -39,6 +39,7 @@ structure PositiveGramComparison (X ι : Type*) [Fintype ι] where
   error_nonneg : ∀ x, 0 ≤ error x
   bound : ∀ x, |source x - positiveEnergy (port x)| ≤ error x
 
+set_option linter.unusedVariables false in
 /-- A source negative witness of margin mu requires comparison error
 at least mu. Thus no small-error positive Gram model can silently
 eliminate negative witnesses of the independently defined signed form. -/
