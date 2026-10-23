@@ -1,0 +1,73 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-raw-safe-dyadic-packing-obstruction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "21a22431126b1a64814a9e88ec00464ac445bbb7"
+parent_tree = "82bdaafce1b934eebb406ddac8481791f4427afd"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / RAW_SAFE_DYADIC_CUMULATIVE_PACKING_REFUTED_AT_STATED_SCOPE"
+
+[upper_budget]
+occupied_volume_summable = true
+source = "unconditional Chebyshev octave mass bound"
+pnt_used = false
+all_dyadic_energy_bound_used = false
+
+[pointwise_obstruction]
+scope = "each supplied actual off-line zero"
+common_lower_weight = "lambda_j <= A_j^D and lambda_j <= T_j^D"
+consequence = "partial sums of lambda_j are uniformly bounded by totalBudget / (a^4+3*a^2*t^2)"
+divergent_lower_mass_possible = false
+
+[global_status]
+lower_density_claim = "for every actual zero, a!=0 implies a divergent common lower-mass packet"
+lower_density_claim_equivalent_to_rh = true
+independent_supplier = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftPackingObstruction"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftPackingObstruction.lean"
+blob = "85f3c39b46f3482d146c7788b4da17d95e5217c5"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftPackingObstructionControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicSafeShiftPackingObstructionControls.lean"
+blob = "71c339ccafe1797614f1ac0e4ba8c65c5e1623fa"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "763825bb351847310ec41c62f7278cae2e47bcf7"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/raw-safe-dyadic-packing-obstruction.md"
+blob = "6ad322e6227b099c6235e431056bf4573a27cdaf"
+
+[evidence_states]
+CLAIM_SORT_REPAIRED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+UNCONDITIONAL_CUMULATIVE_UPPER_BUDGET_SOURCE_WRITTEN = true
+POINTWISE_DIVERGENT_LOWER_MASS_REFUTED = true
+GLOBAL_LOWER_DENSITY_CLAIM_EQUIVALENT_TO_RH = true
+VIABLE_INDEPENDENT_PACKING_SUPPLIER = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "do not continue the raw safe local-three-window Gram as an RH supplier",
+  "select a noncircular successor geometry that modifies the source before the final Gram",
+  "preserve exact arithmetic and explicit-formula lineage in the successor"
+]
+
+[nonclaims]
+items = [
+  "this does not refute volume packing in general",
+  "this does not prove RH",
+  "the global lower-density claim is equivalent to RH, not unconditionally false"
+]

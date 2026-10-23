@@ -1,0 +1,80 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-zeta-explicit-formula-channels-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "7c6c691343571d61cff626a884336b76268513cf"
+parent_tree = "e45349d4daed7b9370f16fb5abe15d793908eb89"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / KNOWN_EXPLICIT_FORMULA_CHANNELS_BOUND / GLOBAL_SUMMATION_IDENTITY_OPEN"
+
+[pinned_mathlib]
+riemann_zeta_path = "Mathlib/NumberTheory/LSeries/RiemannZeta.lean"
+riemann_zeta_blob = "3c92195fce20df7fda41cfd823b3266f83cf3070"
+zeta_asymp_path = "Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean"
+zeta_asymp_blob = "6846dc699ecd29cc8a1754c1680176210969ffd1"
+von_mangoldt_blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+dirichlet_blob = "f718ca1edc35ffa92b318b2f74ddcef0e2e754a3"
+
+[closed_channels]
+prime_power_coefficient = "Lambda(p^k)=log p"
+prime_side_log_derivative = "L(Lambda,s)=-zeta'(s)/zeta(s) for Re(s)>1"
+pole = "residue(zeta,1)=1"
+trivial_zeros = "zeta(-2(n+1))=0"
+completed_functional_equation = "Lambda(1-s)=Lambda(s)"
+nontrivial_zero_multiplicity = "analyticOrderNatAt of actual zeta"
+nontrivial_zero_log_residue = "coefficient -multiplicity in -zeta'/zeta"
+
+[open_global_assembly]
+items = [
+  "choose and formalize one admissible contour/test-function class",
+  "derive the global contour/distribution identity",
+  "extract the exact gamma/Archimedean distribution term from the completed functional equation",
+  "prove the complete nontrivial-zero summation mode and convergence",
+  "bind endpoint and branch conventions",
+  "prove the omitted contour/zero tail or limiting theorem",
+  "derive the canonical packing-volume versus signed-quartic comparison"
+]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedZetaExplicitFormulaChannels"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedZetaExplicitFormulaChannels.lean"
+blob = "edb22e146bd2327ac71cdc95ff28145bd488057e"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedZetaExplicitFormulaChannelsControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedZetaExplicitFormulaChannelsControls.lean"
+blob = "1b7bea59c6321aa1f7b7a8062efdbfe13448c3b3"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "1b35377c4e1bb5380bb8328e793f4147799e268a"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-zeta-explicit-formula-channels.md"
+blob = "1bb8fbf3550b57b90bcad5c58f6d694e04fd442d"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+KNOWN_EXPLICIT_FORMULA_CHANNELS_BOUND = true
+GLOBAL_EXPLICIT_FORMULA_ASSEMBLY_PROVED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[nonclaims]
+items = [
+  "the channel bundle is not a global explicit formula",
+  "the completed functional equation alone is not a Weil/Guinand distribution identity",
+  "no summation-order or zero-tail theorem is supplied",
+  "no quartic comparison theorem",
+  "no unconditional RH proof"
+]

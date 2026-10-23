@@ -1,0 +1,87 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-von-mangoldt-coefficient-source-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+prime_coordinate_issue = 126
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "8584262fcd2450a2ae546d94d39baf4366172164"
+parent_tree = "7f4636337b09e717460b2d72be4d8cd727ef564e"
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PRIME_POWER_COEFFICIENT_CHANNEL_BOUND / EXPLICIT_FORMULA_COMPLETION_OPEN"
+
+[pinned_mathlib]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+von_mangoldt_path = "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean"
+von_mangoldt_blob = "4cc8c9d13c1e3b7ae4568f9399e0a68f8e3d5176"
+dirichlet_path = "Mathlib/NumberTheory/LSeries/Dirichlet.lean"
+dirichlet_blob = "f718ca1edc35ffa92b318b2f74ddcef0e2e754a3"
+coefficient_declaration = "ArithmeticFunction.vonMangoldt"
+prime_value_declaration = "ArithmeticFunction.vonMangoldt_apply_prime"
+prime_power_declaration = "ArithmeticFunction.vonMangoldt_apply_pow"
+lseries_declaration = "ArithmeticFunction.LSeries_vonMangoldt_eq_deriv_riemannZeta_div"
+
+[mathematical_scope]
+prime_power_coefficient = "Lambda(p^k) = log p for k>0"
+packing_coordinate = "(k log p, log p)"
+coefficient_recovery_weight = "1"
+zeta_anchor = "LSeries Lambda(s) = -zeta'(s)/zeta(s) on Re(s)>1"
+critical_strip_continuation_claimed = false
+full_explicit_formula_claimed = false
+pnt_used = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtCoefficientSource"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedVonMangoldtCoefficientSource.lean"
+blob = "bf4e418169836dd73b4dde3e365c12b7104301b8"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtCoefficientSourceControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedVonMangoldtCoefficientSourceControls.lean"
+blob = "73739f99a7f4b9cc3eafe3639880590b4bffb580"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "09b35dbca0bee048dde2b2081461e210da82d926"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-von-mangoldt-coefficient-source.md"
+blob = "1fa8ee13626235dca2c63613892f8d06ad0dc36d"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+PRIME_POWER_COEFFICIENT_CHANNEL_BOUND = true
+ISSUE_189_EXPLICIT_FORMULA_ACCEPTED = false
+MECHANISM_EVENT_SELECTOR_CONSTRUCTED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "formalize/import the full issue-189 explicit formula including gamma, pole, trivial-zero, nontrivial-zero, endpoint and tail channels",
+  "construct a source-faithful increasing prime-power event selector",
+  "connect the accepted mechanism source to that event selector without finite-moment inversion",
+  "prove the signed-quartic comparison and positive limiting coefficient",
+  "prove complete residual decay and theorem-bound PNT/circularity audit"
+]
+
+[nonclaims]
+items = [
+  "no full Weil/Guinand explicit formula",
+  "no continuation of the von Mangoldt L-series identity through the critical strip",
+  "no detector-to-prime-power selector",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]

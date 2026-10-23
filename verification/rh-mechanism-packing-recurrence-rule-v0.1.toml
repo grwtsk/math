@@ -1,0 +1,79 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mechanism-packing-recurrence-rule-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "64c6f0b68bed07d9f4c17eb5e011ba1004d9ebf5"
+parent_tree = "5c2db1f7383faf6888fc13588f7ea1250ea60c94"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / MECHANISM_TO_RECURRENCE_RULE_OPEN"
+
+[mathematical_scope]
+mechanism_input = "SourceBoundMechanismBridgeAccepted Source Local"
+initializer = "Local -> ThreePointPackingState IsPrimePowerSource"
+step_new_point = "Local -> Nat -> current state -> PackingPoint"
+step_new_source = "Local -> Nat -> current state -> Nat"
+step_source_validity = "new source satisfies IsPrimePowerSource"
+infinite_sequence_is_independent_input = false
+state_generation = "canonical recursion from initializer and step"
+stage_positivity = "automatic from squared volume / 2x2 Gram determinant"
+adjacent_memory = "exactly two reused points"
+comparison = "valueAt n = weight n * witnessTrace(re(s)-1/2,im(s)) + residual.total n"
+terminal_consumer = "riemannHypothesis_of_auditedPackingRecurrenceExtraction"
+concrete_initializer_constructed = false
+concrete_step_constructed = false
+quartic_comparison_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.MechanismPackingRecurrenceRule"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/MechanismPackingRecurrenceRule.lean"
+blob = "5865d2667a767cfc161684b043fe9fbfeda088a3"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.MechanismPackingRecurrenceRuleControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/MechanismPackingRecurrenceRuleControls.lean"
+blob = "b0a10a4d0eb526cce1ce4c56f248341e6cd883f4"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "f3db2e329a0f1ec6a8832293ecfb48cbcb0ed864"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/mechanism-packing-recurrence-rule.md"
+blob = "edff82a9dff3d123d85809a61fab8f4d1b52dcc2"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+MECHANISM_TO_RECURRENCE_RULE_CONSTRUCTED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+PNT_AUDIT_CONSTRUCTED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct the initializer from the accepted mechanism trace/local witness",
+  "construct the one-new-point and one-new-source transition from the same source",
+  "prove the exact signed-quartic comparison at every nontrivial zero",
+  "prove positive limiting coefficient",
+  "prove every named residual channel tends to zero",
+  "construct the theorem-bound PNT/circularity dependency audit"
+]
+
+[nonclaims]
+items = [
+  "no concrete initializer",
+  "no concrete one-step mechanism source rule",
+  "no accepted external detector mechanism",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]

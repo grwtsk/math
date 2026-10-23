@@ -1,0 +1,59 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-green-polarized-readout-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_issue = 207
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "703e051e7b289def95a61d3d27a8a4f306dcfdce"
+parent_tree = "cb75f26d60a2f5f39be6ce296085a6989ca2bb36"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / POLARIZED_FOURIER_ACTION_RECONSTRUCTION_DEFINED"
+
+[feature_map]
+source_features = "mass0,mass1,greenResidualFourierCoeff X k"
+test_features = "phi(0),phi(1),fourierCoeffOn(phi.slope,k)"
+paired_term = "conj(sourceCoeff_k)*testSlopeCoeff_k"
+finite_head = "symmetric frequency shells"
+head_tendsto_centered_pairing = true
+reconstructed_action_tendsto_exact_action = true
+target_sign_used = false
+rh_used = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenPolarizedReadout"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenPolarizedReadout.lean"
+blob = "521f860d0c0611b270d0b42716dfc5bddaac9a1f"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenPolarizedReadoutControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicGreenPolarizedReadoutControls.lean"
+blob = "a33ca3de498677536e8b7807bb650026ed180cc7"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "b0d87f91e4ebfd563b9bc59c5d8e1cf1c590bb2c"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-green-polarized-readout.md"
+blob = "9a544b74cf818635f7a784f2cbd0f5672aae4f4e"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+POLARIZED_FOURIER_ACTION_RECONSTRUCTION_DEFINED = true
+LOCAL_TEST_TO_FEATURE_MAP_DEFINED = true
+GLOBAL_EXPLICIT_FORMULA_TRANSPORT_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "assemble the exact octave feature maps across dyadic scales",
+  "bind the scale assembly to the zeta log-derivative / explicit-formula convention",
+  "add gamma, pole, trivial-zero, nontrivial-zero, endpoint and tail channels",
+  "do not infer a Weil criterion before the global summation theorem exists"
+]

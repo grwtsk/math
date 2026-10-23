@@ -1,0 +1,63 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-threshold-duality-v0.1"
+owner_repository = "grwtsk/math"
+issue = 705
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThresholdDualityControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThresholdDualityControls"
+
+[source_binding]
+parent_branch = "research/463-arithmetic-scale-bijective-witness-v01"
+parent_revision = "d860a5b1af1da8d8097b9556f65c24dfc606e1e9"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / DYADIC_THRESHOLD_DUALITY_ALGEBRA_ONLY / NO_COMPLEXITY_TO_ZETA_TRANSFER / QUADRATIC_SOURCE_CONTRACTION_OPEN / NO_RH_CLAIM"
+
+[dyadic_algebra]
+defect = "D(rho)=1-rho"
+lift = "S(rho)=(1+rho)/2"
+descent = "Q(rho)=2rho-1"
+threshold = "d_k=1-(1/2)^k"
+one = "d_1=1/2"
+two = "d_2=3/4"
+three = "d_3=7/8"
+lift_defect = "D(S(rho))=D(rho)/2"
+descent_defect = "D(Q(rho))=2*D(rho)"
+left_inverse = "Q(S(rho))=rho"
+right_inverse = "S(Q(rho))=rho"
+reverse_step = "Q(d_(k+1))=d_k"
+
+[interpretation_boundary]
+sat_random_clause_formula_formalized = false
+max3sat_hardness_formalized = false
+general_maxsat_three_quarters_optimality_claimed = false
+complexity_to_zeta_adapter_exists = false
+shared_algebra_only = true
+
+[rh_boundary]
+seven_eighths_to_theta_proved_here = false
+quadratic_theta_recurrence_proved_here = false
+quadratic_theta_recurrence_supplier_still_open = true
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicThresholdDuality"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicThresholdDuality.lean"
+blob = "00c6b643cf333d5272630eadd3386d1f83a62571"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThresholdDualityControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicThresholdDualityControls.lean"
+blob = "8ef4b811fa4bf02f93e52d13f44b38fb88f563e7"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-threshold-duality.md"
+blob = "f999f8431c3703376c4dd7baf27cf393957a6045"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+DYADIC_THRESHOLD_DUALITY_ALGEBRA_ONLY = true
+SAT_RANDOM_CLAUSE_THEOREM_FORMALIZED = false
+MAX3SAT_HARDNESS_FORMALIZED = false
+QUADRATIC_SOURCE_CONTRACTION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,83 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-prime-power-arithmetic-packing-coordinate-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+prime_coordinate_issue = 126
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "6cdc0fd91e3b7b9d1c0430d2bbc9e3d3bcbc46ad"
+parent_tree = "7c0cfc0b4a61f74a457f786aa076525a81d7a6fb"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXPLICIT_FORMULA_WEIGHT_TRANSPORT_OPEN"
+
+[mathematical_scope]
+prime_power_event = "p^k with p prime and k>0"
+raw_x = "k * log p"
+raw_y = "log p"
+raw_coordinate = "(k log p, log p)"
+raw_y_role = "von-Mangoldt amplitude on a prime power"
+weighted_coordinate = "(k log p, testWeight(p^k) * log p)"
+arithmetic_scale_binding = "raw_x equals archimedean realization of the p-primary exponent"
+source_label = "actual natural value p^k"
+event_order = "next natural prime-power value strictly exceeds current third source label"
+moment_inverse_required = false
+pnt_required = false
+explicit_formula_weight_instantiated = false
+mechanism_event_selector_constructed = false
+quartic_comparison_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerArithmeticPackingCoordinate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimePowerArithmeticPackingCoordinate.lean"
+blob = "1e377705d14bcd349dc355badaa84423d9396506"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerArithmeticPackingCoordinateControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimePowerArithmeticPackingCoordinateControls.lean"
+blob = "48a91f62696111be9f83673c4648ef9dc81d3170"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "83f37545825a902f55ff35318b7cf58c55561afc"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-power-arithmetic-packing-coordinate.md"
+blob = "820f598c775c1b6fb3ce4854e6e7b82ee5b34a1b"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+EXPLICIT_FORMULA_WEIGHT_INSTANTIATED = false
+MECHANISM_EVENT_SELECTOR_CONSTRUCTED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+PNT_AUDIT_CONSTRUCTED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "instantiate ExplicitFormulaPrimePowerWeight from the exact issue-189 explicit-formula normalization",
+  "derive the initial three prime-power events from the accepted mechanism/local source",
+  "derive the strictly advancing next prime-power event from the same source",
+  "prove the exact signed-quartic comparison for the resulting weighted coordinates",
+  "prove positive limiting coefficient",
+  "prove every named residual channel tends to zero",
+  "construct the theorem-bound PNT/circularity dependency audit"
+]
+
+[nonclaims]
+items = [
+  "no inverse reconstruction of prime powers from finite moments",
+  "no instantiated issue-189 explicit-formula weight",
+  "no concrete detector-to-prime-power event selector",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]
