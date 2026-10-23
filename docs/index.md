@@ -58,10 +58,12 @@ Evidence labels describe the exact page/source scope. A fresh selected check is 
 
 Pinned inputs: Lean `leanprover/lean4:v4.33.0`; Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Pins identify inputs, not a new dependency rebuild.
 
-[Count definitions](reference/library-pages.md#count-definitions) · [Structured inventory](reference/library-summary.json) · [Archive source candidates](reference/source-intake.md).
+[Count definitions](reference/library-pages.md#count-definitions) · [Structured inventory](reference/library-summary.json) · [Archive source candidates](reference/source-intake.md) · [Verification specifications](verification/README.md).
 
 ## Reading mathematics
 
 [Least-prime tutorial](start/least-prime.md) · [Selected result catalog](reference/results.md) · [Mathematical terminology](reference/mathematical-terminology.md).
+
+Historical artifact provenance is indexed separately in the [legacy artifact registry](reference/legacy-artifacts.md). Its identifiers and exact target digests are provenance records, not current replay receipts or proof claims.
 
 Structural consistency does not establish theorem admission or complete library coverage.

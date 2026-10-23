@@ -18,7 +18,7 @@ The [conditional part-exposure law](conditional-partition-exposure.md) separatel
 
 This closes the uniform-sampling assertion at the start of Section 3 of Pham and Sauermann, [arXiv:2602.15797v1](https://arxiv.org/html/2602.15797v1), February 17, 2026. The balanced sizes are specified by the proved quotient/remainder formula, with the larger parts first. No primality, group operation, Fourier estimate or random-search termination premise is needed.
 
-The [Fourier integration](../../Analysis/Fourier/partition-character-energy.md) transports this law to the existing fixed-size `ZMod` subset-sum distribution. The [selected receipt](../../../../.noeaaeue/receipts/balanced-partition-fourier/selected-replay.json) binds the source, pinned toolchain and exact owned-declaration audit. The [progress report](../../../../.noeaaeue/receipts/balanced-partition-fourier/final-verification.json) records the remaining analytical obligations and repository-wide check results.
+The [Fourier integration](../../Analysis/Fourier/partition-character-energy.md) transports this law to the existing fixed-size `ZMod` subset-sum distribution. The selected receipt (artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7) binds the source, pinned toolchain and exact owned-declaration audit. The progress report (artifact:gitblob:1d55a3fd3fe8a99104e48124b66e9a64d302b6ef) records the remaining analytical obligations and repository-wide check results.
 
 Original sampling argument: Huy Tuan Pham and Lisa Sauermann. Human mathematical direction: grwtsk contributors. Lean implementation: OpenAI Codex. Mathlib authorship and licenses retained; no originality claim.
 

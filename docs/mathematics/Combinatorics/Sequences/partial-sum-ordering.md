@@ -26,7 +26,7 @@ The deterministic construction follows Section 5 of Huy Tuan Pham and Lisa Sauer
 
 ## Evidence and credit
 
-The [selected replay receipt](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json) binds exact source bytes, toolchain, Mathlib revision, trust-zero compilation and the owned-declaration audit. The [declaration inventory](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/declarations.json) contains elaborated hypotheses and axiom dependencies. Repository-wide structural failures recorded during that run remain in the [layout observations](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/layout-final.json) and [documentation replay log](../../../../.noeaaeue/receipts/modular-partial-sum-ordering/documentation-render-final.log).
+The selected replay receipt (artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603) binds exact source bytes, toolchain, Mathlib revision, trust-zero compilation and the owned-declaration audit. The declaration inventory (artifact:gitblob:08c78be73d92de914ca31935d12afd64993d8626) contains elaborated hypotheses and axiom dependencies. Repository-wide structural failures recorded during that run remain in the layout observations (artifact:gitblob:6f9f50dbe9467ff1baeffe847fa44df14b6ad4e8) and documentation replay log (artifact:gitblob:5df6ec3bbb26ebdb5222df5d1172f846d87df41b).
 
 Mathematical source: Pham and Sauermann. Human direction: grwtsk contributors. Lean implementation: OpenAI Codex. Local MIT and upstream Mathlib licensing and authorship are retained.
 

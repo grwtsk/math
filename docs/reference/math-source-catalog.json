@@ -1,6 +1,6 @@
 {
-  "authoritative_source": ".noeaaeue/documentation/math-layout.json#active_sources",
-  "candidate_authoritative_source": ".noeaaeue/documentation/math-layout.json#candidate_sources",
+  "authoritative_source": "artifact:gitblob:e1b620fe314714d940931b9c54f0a330f887020c#active_sources",
+  "candidate_authoritative_source": "artifact:gitblob:e1b620fe314714d940931b9c54f0a330f887020c#candidate_sources",
   "candidate_counts_by_status": {
     "CANDIDATE_SOURCE_ONLY": 63
   },
@@ -6911,7 +6911,7 @@
     ],
     "identity": "042015b7bf0acc7360e4a2d455423fbb127a45801ddac6e93f2bbd5729189c9b",
     "mathematical_admission": false,
-    "path": ".noeaaeue/bindings/current-source-observations.json",
+    "path": "artifact:gitblob:60eb7a0380bb19b4e23b26af9807ab6629332f0a",
     "public_entrypoint_closure": [
       "GRWTSK",
       "GRWTSK.Algebra.BigOperators.OrderedSquare",
@@ -14218,7 +14218,7 @@
         "public_release_eligible": false,
         "qualified_role_alias": {
           "historical_profile": "checks/Logic/Counterexamples/PositivityIsNotVanishing.lean",
-          "oracle": ".noeaaeue/scripts/rh_target_oracle.py",
+          "oracle": "artifact:gitblob:1960504e5f090279878f86e35b73730318259a06",
           "oracle_sha256": "497829aace9ee64b170606535612c37c4537154b2e067111a40d601bf6b5ef9b",
           "sha256": "747a51d3c83e2ba94808f76c2b35b2130b4f23cb84f8f4722351c24003e0a219"
         },
@@ -18253,7 +18253,7 @@
         "public_release_eligible": false,
         "qualified_role_alias": {
           "historical_profile": "checks/NumberTheory/Zeta/Riemann/ExcludedTrivialZero.lean",
-          "oracle": ".noeaaeue/scripts/rh_target_oracle.py",
+          "oracle": "artifact:gitblob:1960504e5f090279878f86e35b73730318259a06",
           "oracle_sha256": "497829aace9ee64b170606535612c37c4537154b2e067111a40d601bf6b5ef9b",
           "sha256": "6e54ec9ddb515e9a2a428c0fb61ba050d64b53a895c74cd34c4fb1260f97b2ae"
         },
@@ -18895,7 +18895,7 @@
           "inventory": "observed-current-bytes",
           "lean": "public root not replayed; selected seven-module closure replayed separately",
           "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
-          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+          "selected_new_module_receipt": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
           "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
         },
         "historical_verification_before_additive_triple_imports": {
@@ -18921,7 +18921,7 @@
           "inventory": "observed-current-bytes",
           "lean": "public root not replayed; new module closure replayed separately",
           "owned_declaration_audit": "passed only for selected six-module scope; no public-root admission",
-          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+          "selected_new_module_receipt": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
           "source_sha256": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008"
         },
         "imports": [
@@ -19539,7 +19539,7 @@
           "inventory": "observed-current-bytes",
           "lean": "public root not replayed; selected 9-module closure replayed separately",
           "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
-          "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+          "selected_new_module_receipt": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
           "source_sha256": "781a2e57e7856dcad358955086c1acfdaefa865835f3f1c364ac4ce49ca6ff33"
         },
         "working_tree_state": "tracked-modified"
@@ -19549,7 +19549,7 @@
         "inventory": "observed-current-bytes",
         "lean": "public root not replayed; selected seven-module closure replayed separately",
         "owned_declaration_audit": "selected closure only; no whole-entrypoint admission",
-        "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "selected_new_module_receipt": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "d8bda509bc6f84a130b4747760134d1eabf3a565f3cbd3ac4c46ce16da35597e"
       },
       "historical_verification_before_additive_triple_imports": {
@@ -19575,7 +19575,7 @@
         "inventory": "observed-current-bytes",
         "lean": "public root not replayed; new module closure replayed separately",
         "owned_declaration_audit": "passed only for selected six-module scope; no public-root admission",
-        "selected_new_module_receipt": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "selected_new_module_receipt": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "26791e87fd5594d5e99db5f95837536160c257d75cde7f1cd7d0ddc779d9a008"
       },
       "imports": [
@@ -20198,12 +20198,12 @@
         "selected_module_receipts": [
           {
             "bytes": 3773336,
-            "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+            "path": "artifact:gitblob:8e51a42c9017a8a4e0d0516611efbdf01ea2c402",
             "sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271"
           },
           {
             "bytes": 4928030,
-            "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+            "path": "artifact:gitblob:3a56ad066807acd70306629d515d13af552d3879",
             "sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286"
           }
         ],
@@ -27447,7 +27447,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "d982996f99f905bcc3211d5d6bca3e9ec8083ab22fb859b777704c1246453f91",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -27457,7 +27457,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "d982996f99f905bcc3211d5d6bca3e9ec8083ab22fb859b777704c1246453f91"
       },
       "working_tree_state": "untracked-preserved"
@@ -27487,7 +27487,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "074866f76830bb617096cf46d00b73809dd69fd1830ff381cf807fd28ad080cc",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -27497,7 +27497,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "074866f76830bb617096cf46d00b73809dd69fd1830ff381cf807fd28ad080cc"
       },
       "working_tree_state": "untracked-preserved"
@@ -27576,7 +27576,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "783b03862d58e75e6138550039f8293536a606086fda232c1fd1375d985c9d0c",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -27586,7 +27586,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "783b03862d58e75e6138550039f8293536a606086fda232c1fd1375d985c9d0c"
       },
       "working_tree_state": "untracked-preserved"
@@ -28291,7 +28291,7 @@
         "GRWTSK.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -28301,7 +28301,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected library elaboration at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "24a8c41508bdf2a7558d20b19434362e2656ac45b4141e01604c0ec16ddd413f"
@@ -28375,7 +28375,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/FiniteExponentialLayers.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "c26805fc06086ceadbb09ef1a5d781a3de6d824ca30947f576bd16118d9f0943"
       },
       "working_tree_state": "untracked-new"
@@ -30375,7 +30375,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModBalancedPartition.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "713091676046943a65970acf4c7e2761aa8b10a7d79946599de70624238d3c32"
       },
       "working_tree_state": "untracked-new"
@@ -30538,7 +30538,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModCharacterEnergy.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "0738ce7f3f01722a9d22debd2927564f46fe2ce34918385b0b36af8ed133ed92"
       },
       "working_tree_state": "untracked-new"
@@ -30642,7 +30642,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModConcentratedFrequencies.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "2a9a4a4cad5930af51a2fc0274cfde271c01f964399041ee6437248f6f5c2b12"
       },
       "working_tree_state": "untracked-new"
@@ -30787,7 +30787,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModIndependentSelection.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "7a45f532becf96acf98301a64c2eab4439e3923ad1e6434229860a0909074fb1"
       },
       "working_tree_state": "untracked-new"
@@ -30891,7 +30891,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModPartitionEnergy.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "0d8202957deed1ce1b660a0ab409a4b8e01e570e78b8285f69a1c8a7ee9223f1"
       },
       "working_tree_state": "untracked-new"
@@ -31006,7 +31006,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModSmallEnergySets.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "98cf9ea68fa5811befdc5c8b10e30c7d1148f94c4f04f1727578cf5a35886908"
       },
       "working_tree_state": "untracked-new"
@@ -31056,7 +31056,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModSmallEnergySpectrum.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "2cabfc6208a5ecf03981d6fd304de160d35ce8deb7427392db219c32ea94bbf8"
       },
       "working_tree_state": "untracked-new"
@@ -31196,7 +31196,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "60a0800b62f570782227e57e7ccedba38c1db2a343724ff0951a113c9ac09044"
       },
       "working_tree_state": "untracked-new"
@@ -31269,7 +31269,7 @@
       "subject": "Analysis",
       "target_path": "GRWTSK/Analysis/Fourier/ZModSubsetSumCompletion.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "1da1313c434e574a577fa224bad75f188c5c073455cf658f6191a9295185e70d"
       },
       "working_tree_state": "untracked-new"
@@ -43891,7 +43891,7 @@
         "Lean and Mathlib: upstream APIs and named source credits"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "design_reference": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json; inactive candidate taxonomy sources are not imported.",
+      "design_reference": "artifact:gitblob:f65864d2daaec733063cd15488551f6f80323ef5; inactive candidate taxonomy sources are not imported.",
       "explicit_premises": [
         "Action is standard Sum(actual keyed rooted occurrence batch)Unit; ValidRootedState only adds actual structural WellFormed proof to existing RootedState fiber. No replacement State/path or desired decoding equation is introduced.",
         "Noncomputable applyAction invokes actual PrefixTableBatch.step or PrefixTableCheckpoint.compactAt with their proved invariant. executeAt is the actual chronological List.foldl; execute exposes the existing State. execute_root and execute_wellFormed derive actual retained root and invariant, and execute_nil is exact identity.",
@@ -43915,24 +43915,24 @@
       "placement_rationale": "Actual finite schedules of stored rooted paths, finite batches and compaction belong to Combinatorics/DirectedGraph.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_table_schedule.py",
+      "runner": "python3 -B artifact:gitblob:28f5c8fd46f51fd0a0672c9052fe2314c5f729c9",
       "sha256": "fcd49a2a74a27cb9bee4b441f17e5ddecc6e3a0b944e3b12fd11df5809764c5f",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Negative/PrefixScheduleRemapComposition.lean",
       "verification": {
-        "historical_original_replay": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+        "historical_original_replay": "artifact:gitblob:28a6a2bc25814f52845b73a89d92a08b525e2412",
         "inventory": "observed-current-bytes",
         "layout": "scoped registration; global structural checks recorded separately",
         "lean": "exact selected receipt-bound sources/protocol context; shared current verifier freshness not inferred",
         "prior_recorded_selected_replays": [
           {
-            "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+            "path": "artifact:gitblob:17e6effb308a552375067846f71c2174f88125a0",
             "sha256": "4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1"
           }
         ],
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:f9122c3f64f7e8449134ce5d5c4bf807e03bcb12",
         "replay_sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e",
         "source_sha256": "fcd49a2a74a27cb9bee4b441f17e5ddecc6e3a0b944e3b12fd11df5809764c5f"
       },
@@ -46345,7 +46345,7 @@
         "Lean and Mathlib: upstream APIs and named source credits"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "design_reference": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json; inactive candidate taxonomy sources are not imported.",
+      "design_reference": "artifact:gitblob:f65864d2daaec733063cd15488551f6f80323ef5; inactive candidate taxonomy sources are not imported.",
       "explicit_premises": [
         "Action is standard Sum(actual keyed rooted occurrence batch)Unit; ValidRootedState only adds actual structural WellFormed proof to existing RootedState fiber. No replacement State/path or desired decoding equation is introduced.",
         "Noncomputable applyAction invokes actual PrefixTableBatch.step or PrefixTableCheckpoint.compactAt with their proved invariant. executeAt is the actual chronological List.foldl; execute exposes the existing State. execute_root and execute_wellFormed derive actual retained root and invariant, and execute_nil is exact identity.",
@@ -46705,24 +46705,24 @@
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixScheduleRemapComposition",
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_table_schedule.py",
+      "runner": "python3 -B artifact:gitblob:28f5c8fd46f51fd0a0672c9052fe2314c5f729c9",
       "sha256": "0e66aa61abd4c3a911b3119555cb39c24354b319e2da3e3b7226f8907affab95",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/DirectedGraph/Checks/Positive/PrefixTableSchedule.lean",
       "verification": {
-        "historical_original_replay": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+        "historical_original_replay": "artifact:gitblob:28a6a2bc25814f52845b73a89d92a08b525e2412",
         "inventory": "observed-current-bytes",
         "layout": "scoped registration; global structural checks recorded separately",
         "lean": "exact selected receipt-bound sources/protocol context; shared current verifier freshness not inferred",
         "prior_recorded_selected_replays": [
           {
-            "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+            "path": "artifact:gitblob:17e6effb308a552375067846f71c2174f88125a0",
             "sha256": "4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1"
           }
         ],
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:f9122c3f64f7e8449134ce5d5c4bf807e03bcb12",
         "replay_sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e",
         "source_sha256": "0e66aa61abd4c3a911b3119555cb39c24354b319e2da3e3b7226f8907affab95"
       },
@@ -49929,7 +49929,7 @@
         "Lean and Mathlib: upstream APIs and named source credits"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "design_reference": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json; inactive candidate taxonomy sources are not imported.",
+      "design_reference": "artifact:gitblob:f65864d2daaec733063cd15488551f6f80323ef5; inactive candidate taxonomy sources are not imported.",
       "explicit_premises": [
         "Action is standard Sum(actual keyed rooted occurrence batch)Unit; ValidRootedState only adds actual structural WellFormed proof to existing RootedState fiber. No replacement State/path or desired decoding equation is introduced.",
         "Noncomputable applyAction invokes actual PrefixTableBatch.step or PrefixTableCheckpoint.compactAt with their proved invariant. executeAt is the actual chronological List.foldl; execute exposes the existing State. execute_root and execute_wellFormed derive actual retained root and invariant, and execute_nil is exact identity.",
@@ -50022,24 +50022,24 @@
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableSchedule",
         "GRWTSK.Combinatorics.DirectedGraph.PrefixTableReferenceTransport"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_table_schedule.py",
+      "runner": "python3 -B artifact:gitblob:28f5c8fd46f51fd0a0672c9052fe2314c5f729c9",
       "sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f",
       "source_role": "library",
       "source_root": "GRWTSK",
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/DirectedGraph/PrefixTableSchedule.lean",
       "verification": {
-        "historical_original_replay": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+        "historical_original_replay": "artifact:gitblob:28a6a2bc25814f52845b73a89d92a08b525e2412",
         "inventory": "observed-current-bytes",
         "layout": "scoped registration; global structural checks recorded separately",
         "lean": "exact selected receipt-bound sources/protocol context; shared current verifier freshness not inferred",
         "prior_recorded_selected_replays": [
           {
-            "path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+            "path": "artifact:gitblob:17e6effb308a552375067846f71c2174f88125a0",
             "sha256": "4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1"
           }
         ],
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:f9122c3f64f7e8449134ce5d5c4bf807e03bcb12",
         "replay_sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e",
         "source_sha256": "b1d8a0ea8bbdcc83f9453e35328bce854f8bddd857260527c601292f141c2c4f"
       },
@@ -51636,7 +51636,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/BalancedPartitionSampling.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "3339c1d1f47c02955f5401ec6eef45e993686e4a973d94b139d9d1cc66abcd93"
       },
       "working_tree_state": "untracked-new"
@@ -51701,7 +51701,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/CyclicSumsetGrowth.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+        "receipt": "artifact:gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
         "source_sha256": "86b8f712206e943ec593cd324180e20f68d12522dda47d28b5ebb5c0045b6d47"
       },
       "working_tree_state": "untracked-new"
@@ -51875,7 +51875,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/DisjointTranspositions.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "b5053ed826ac19979142b7c908b35cee2b7e97ba07d4a4bdaef26cf62a6f5409"
       },
       "working_tree_state": "untracked-new"
@@ -52035,7 +52035,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/PartialSumCertificate.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "dbeeb4bdc27d6e1d4bb1633f442343dcbc9c17dcc30969f9a076f3926f743d20"
       },
       "working_tree_state": "untracked-new"
@@ -52220,7 +52220,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/PartialSumOrdering.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "a9a4c484455c947e258e6e57f5a7654d7f22682cc27b7fed1476d7c19811f0fb"
       },
       "working_tree_state": "untracked-new"
@@ -52347,7 +52347,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/PrimeCyclicRearrangement.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "e6273e54a24c0ad7bd1da4fd9eb193f1d728479025099e22b70a5e3447d1dde5"
       },
       "working_tree_state": "untracked-new"
@@ -52702,7 +52702,7 @@
       "subject": "Combinatorics",
       "target_path": "GRWTSK/Combinatorics/Sequences/ZeroSumIntervalRepair.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "49512a5357198be0e0e9154cad5487284035315b3f5f82a72aa12ab891551bb2"
       },
       "working_tree_state": "untracked-new"
@@ -55226,7 +55226,7 @@
       "subject": "DynamicalSystems",
       "target_path": "GRWTSK/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean",
       "verification": {
-        "receipt": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+        "receipt": "artifact:gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
         "source_sha256": "7ef974d4d41d79dbc8ed0a121e2faf66e6a6cea610896b438d2db47e10d6cf99"
       },
       "working_tree_state": "untracked-new"
@@ -58334,7 +58334,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "a4fcd01e04307ced1e90d006f30f80d6e1e2f3dab75a57eb2dd4f96f03c570dc",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -58344,7 +58344,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "a4fcd01e04307ced1e90d006f30f80d6e1e2f3dab75a57eb2dd4f96f03c570dc"
       },
       "working_tree_state": "untracked-preserved"
@@ -58374,7 +58374,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "e9642dc4ab8404fd9a76281ea6ffe76a797fff6ef04e2fa981603637dce57e91",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -58384,7 +58384,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "e9642dc4ab8404fd9a76281ea6ffe76a797fff6ef04e2fa981603637dce57e91"
       },
       "working_tree_state": "untracked-preserved"
@@ -58416,7 +58416,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "1d8db45c31f650dee15e968c4370ec9763c662f1f49472de7a0e3a68ea41c1a0",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -58426,7 +58426,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "1d8db45c31f650dee15e968c4370ec9763c662f1f49472de7a0e3a68ea41c1a0"
       },
       "working_tree_state": "untracked-preserved"
@@ -58508,7 +58508,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "d07b9c01284cecb051530b8632c5091f5baa03fe2351ef22b6449f8988c6e11b",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -58518,7 +58518,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "d07b9c01284cecb051530b8632c5091f5baa03fe2351ef22b6449f8988c6e11b"
       },
       "working_tree_state": "untracked-preserved"
@@ -58566,7 +58566,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "dea9a49d0840a508e06617f12d9e53884c4943da3acd6f50a1df744a37926c38",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -58576,7 +58576,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "dea9a49d0840a508e06617f12d9e53884c4943da3acd6f50a1df744a37926c38"
       },
       "working_tree_state": "untracked-preserved"
@@ -58705,7 +58705,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "3ef4cca94344171e1fb2807e0c38dc75ca2415bd448401ca5c922d9575548a32",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -58715,7 +58715,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "3ef4cca94344171e1fb2807e0c38dc75ca2415bd448401ca5c922d9575548a32"
       },
       "working_tree_state": "untracked-preserved"
@@ -65907,7 +65907,7 @@
         "GRWTSK.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Moments.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "d65426ad2351d1d6a7cae959eea2ca2bdd3bfcdfd5e59c9ae2f913bb6969ac6d",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -65917,7 +65917,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "d65426ad2351d1d6a7cae959eea2ca2bdd3bfcdfd5e59c9ae2f913bb6969ac6d"
       },
       "working_tree_state": "untracked-preserved"
@@ -67471,7 +67471,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "4b7ceeefb823bd4447f6c17bc7d0e5ca19b5e6d1d5370f61f77e3780745cbd64",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -67481,7 +67481,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "4b7ceeefb823bd4447f6c17bc7d0e5ca19b5e6d1d5370f61f77e3780745cbd64"
       },
       "working_tree_state": "untracked-preserved"
@@ -68749,7 +68749,7 @@
         "OpenAI: exact omega/lambda/primitive-root reduction slice in FiniteFourier; Xavier Roblot and named imported Mathlib authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "design_reference": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json; inactive candidate taxonomy sources are not imported.",
+      "design_reference": "artifact:gitblob:f65864d2daaec733063cd15488551f6f80323ef5; inactive candidate taxonomy sources are not imported.",
       "explicit_premises": [
         "Use exact admitted K=CyclotomicField3\u211a and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3\u211aK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
         "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda\u2209P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
@@ -68777,24 +68777,24 @@
       "placement_rationale": "Actual cubic-root reduction, quotient fields and ramified ideals in the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+      "runner": "python3 -B artifact:gitblob:72282deceaee71cc027272ff31a921b24e0a57f2",
       "sha256": "14527265f71696aa97da8f12239422816bb8ada7f8add5343613dee8426cfb06",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Negative/ThirdCyclotomicMissingGoodPrime.lean",
       "verification": {
-        "historical_original_replay": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+        "historical_original_replay": "artifact:gitblob:3e5e457a5150173b15a96a2b9eb54b465bb7f1b7",
         "inventory": "observed-current-bytes",
         "layout": "scoped registration; global structural checks recorded separately",
         "lean": "exact selected receipt-bound sources/protocol context; shared current verifier freshness not inferred",
         "prior_recorded_selected_replays": [
           {
-            "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json",
+            "path": "artifact:gitblob:bbae823313fcdc07319e9be1c95e787a65e471fc",
             "sha256": "d4876f003349fe135bfb27ac7de6bd0e1c693aeaba84a17a6f122708d2ad26bd"
           }
         ],
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:812ed44271f3984ca38b7fc940163fc84fc6a536",
         "replay_sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc",
         "source_sha256": "14527265f71696aa97da8f12239422816bb8ada7f8add5343613dee8426cfb06"
       },
@@ -68927,7 +68927,7 @@
         "OpenAI: exact omega/lambda/primitive-root reduction slice in FiniteFourier; Xavier Roblot and named imported Mathlib authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "design_reference": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json; inactive candidate taxonomy sources are not imported.",
+      "design_reference": "artifact:gitblob:f65864d2daaec733063cd15488551f6f80323ef5; inactive candidate taxonomy sources are not imported.",
       "explicit_premises": [
         "Use exact admitted K=CyclotomicField3\u211a and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3\u211aK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
         "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda\u2209P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
@@ -69023,24 +69023,24 @@
       "reverse_consumers": [
         "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicMissingGoodPrime"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+      "runner": "python3 -B artifact:gitblob:72282deceaee71cc027272ff31a921b24e0a57f2",
       "sha256": "68f8f43dcc5c166774ae4abcf6d75e527ac9a79dccb8d574caef7c390ffcf95b",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicReduction.lean",
       "verification": {
-        "historical_original_replay": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+        "historical_original_replay": "artifact:gitblob:3e5e457a5150173b15a96a2b9eb54b465bb7f1b7",
         "inventory": "observed-current-bytes",
         "layout": "scoped registration; global structural checks recorded separately",
         "lean": "exact selected receipt-bound sources/protocol context; shared current verifier freshness not inferred",
         "prior_recorded_selected_replays": [
           {
-            "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json",
+            "path": "artifact:gitblob:bbae823313fcdc07319e9be1c95e787a65e471fc",
             "sha256": "d4876f003349fe135bfb27ac7de6bd0e1c693aeaba84a17a6f122708d2ad26bd"
           }
         ],
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:812ed44271f3984ca38b7fc940163fc84fc6a536",
         "replay_sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc",
         "source_sha256": "68f8f43dcc5c166774ae4abcf6d75e527ac9a79dccb8d574caef7c390ffcf95b"
       },
@@ -69170,7 +69170,7 @@
         "OpenAI: exact omega/lambda/primitive-root reduction slice in FiniteFourier; Xavier Roblot and named imported Mathlib authors retain individual credit"
       ],
       "declaration_inventory_method": "source syntax; native owned-declaration census is authoritative",
-      "design_reference": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json; inactive candidate taxonomy sources are not imported.",
+      "design_reference": "artifact:gitblob:f65864d2daaec733063cd15488551f6f80323ef5; inactive candidate taxonomy sources are not imported.",
       "explicit_premises": [
         "Use exact admitted K=CyclotomicField3\u211a and O=NumberField.RingOfIntegers K. Actual omega=(IsCyclotomicExtension.zeta_spec3\u211aK).toInteger and lambda=omega-1; actual omega is primitive order3 and lambda is nonzero.",
         "Exact good reduction: for every actual ideal P of O with P.IsMaximal and lambda\u2209P, Ideal.Quotient.mk P omega is primitive order3. Actual local quotient field, cube equation and nonidentity are proved; no desired quotient primitive-root supplier is assumed.",
@@ -69291,24 +69291,24 @@
         "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicReduction",
         "GRWTSK.NumberTheory.Cyclotomic.ThirdCyclotomicCharacters"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+      "runner": "python3 -B artifact:gitblob:72282deceaee71cc027272ff31a921b24e0a57f2",
       "sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6",
       "source_role": "library",
       "source_root": "GRWTSK",
       "subject": "NumberTheory",
       "target_path": "GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicReduction.lean",
       "verification": {
-        "historical_original_replay": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+        "historical_original_replay": "artifact:gitblob:3e5e457a5150173b15a96a2b9eb54b465bb7f1b7",
         "inventory": "observed-current-bytes",
         "layout": "scoped registration; global structural checks recorded separately",
         "lean": "exact selected receipt-bound sources/protocol context; shared current verifier freshness not inferred",
         "prior_recorded_selected_replays": [
           {
-            "path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json",
+            "path": "artifact:gitblob:bbae823313fcdc07319e9be1c95e787a65e471fc",
             "sha256": "d4876f003349fe135bfb27ac7de6bd0e1c693aeaba84a17a6f122708d2ad26bd"
           }
         ],
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:812ed44271f3984ca38b7fc940163fc84fc6a536",
         "replay_sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc",
         "source_sha256": "05a44d8f4c4b254cf27e9df2a3b8f83081d9cb6288808e0be1d2694a81a2f3b6"
       },
@@ -69353,7 +69353,7 @@
       "reverse_consumers": [
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorToABC.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -69363,7 +69363,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "f8ddc2bbe7ea1371418118ae26b1ed00200e1a3d19843fd0dfaf34fd29039ef2"
       },
       "working_tree_state": "untracked-preserved"
@@ -69438,7 +69438,7 @@
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/ProjectorWrongNormalization.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/AdditiveCharacterMoments.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -69448,7 +69448,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected library elaboration at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "c5064cd633443ae851924599b07d1aaeff56e7ab792783cd5e408e5a078e3113"
@@ -69480,7 +69480,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "5e4cd5adda311d5c35591dbce38d5cab4fbdeb241206ea8228b6850d133ccc84",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69490,7 +69490,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "5e4cd5adda311d5c35591dbce38d5cab4fbdeb241206ea8228b6850d133ccc84"
       },
       "working_tree_state": "untracked-preserved"
@@ -69520,7 +69520,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "2f98fb071c35091362cf608a5bc650668bc35d634a01c37a1857fcf3bbddb1ab",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69530,7 +69530,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "2f98fb071c35091362cf608a5bc650668bc35d634a01c37a1857fcf3bbddb1ab"
       },
       "working_tree_state": "untracked-preserved"
@@ -69560,7 +69560,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "afb991f27f806f62785e563a3ba68695306a59ff5f537959ccd9ebabf1e36c3f",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69570,7 +69570,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "afb991f27f806f62785e563a3ba68695306a59ff5f537959ccd9ebabf1e36c3f"
       },
       "working_tree_state": "untracked-preserved"
@@ -69600,7 +69600,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "1ef6246830c92f69ecad07e3fe7ceaf0aaaf8a087ffacf780b15b4f0f9596569",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69610,7 +69610,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "1ef6246830c92f69ecad07e3fe7ceaf0aaaf8a087ffacf780b15b4f0f9596569"
       },
       "working_tree_state": "untracked-preserved"
@@ -69638,7 +69638,7 @@
       "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "e178664ca7a201e57e86c85cc552ab46038df40b215f16c9e5dc7837094dd986",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69648,7 +69648,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "e178664ca7a201e57e86c85cc552ab46038df40b215f16c9e5dc7837094dd986"
       },
       "working_tree_state": "untracked-preserved"
@@ -69676,7 +69676,7 @@
       "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "110389735454973d0d52e6f315ce5f9be068c10148b31d1bc3779b7e60bab6a5",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69686,7 +69686,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "110389735454973d0d52e6f315ce5f9be068c10148b31d1bc3779b7e60bab6a5"
       },
       "working_tree_state": "untracked-preserved"
@@ -69715,7 +69715,7 @@
       "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "e2838d2951af97f67f416978ca6511d1de3cd3143ec8e007f83c5d623bace3e2",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69725,7 +69725,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "e2838d2951af97f67f416978ca6511d1de3cd3143ec8e007f83c5d623bace3e2"
       },
       "working_tree_state": "untracked-preserved"
@@ -69753,7 +69753,7 @@
       "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "717bfc5e4eff2790abc07ddda1d73bf3bac7abcd7fc433d10af3de526ab0da41",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69763,7 +69763,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "717bfc5e4eff2790abc07ddda1d73bf3bac7abcd7fc433d10af3de526ab0da41"
       },
       "working_tree_state": "untracked-preserved"
@@ -69793,7 +69793,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "56dcf14fc866aebc093ce23bef5cc61844a51106f90a3e997706bfaca1fe0c15",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69803,7 +69803,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "56dcf14fc866aebc093ce23bef5cc61844a51106f90a3e997706bfaca1fe0c15"
       },
       "working_tree_state": "untracked-preserved"
@@ -69831,7 +69831,7 @@
       "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69841,7 +69841,7 @@
         "inventory": "observed-current-bytes",
         "lean": "intended single type rejection matched at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "62e56cdb987638afc411ced5e11ad6d2433d1e7b4f8db1bb8de890e48e45ec42"
@@ -69871,7 +69871,7 @@
       "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69881,7 +69881,7 @@
         "inventory": "observed-current-bytes",
         "lean": "intended single type rejection matched at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "e53db71a114f0e6f8ea0126663f12e4f1eec6ddd96a06a5bcc2c2deb8848cf14"
@@ -69912,7 +69912,7 @@
       "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69922,7 +69922,7 @@
         "inventory": "observed-current-bytes",
         "lean": "intended single type rejection matched at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "bb05fba2b0d11b032a370e16cd575eca0d08267bd2acb466315c6fcb47f52522"
@@ -69952,7 +69952,7 @@
       "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -69962,7 +69962,7 @@
         "inventory": "observed-current-bytes",
         "lean": "intended single type rejection matched at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "753995797c6e3555cf76ab4ddbde96bc9a3a27d150fa09f3b8bc5e024d8f2dbc"
@@ -69992,7 +69992,7 @@
       "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -70002,7 +70002,7 @@
         "inventory": "observed-current-bytes",
         "lean": "intended single type rejection matched at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "06166379962c09fb4ea2e9f5eb59edd5dc35191e9122866f8529f51260862b14"
@@ -70032,7 +70032,7 @@
       "placement_rationale": "Exact common-divisor sectors of the established primitive additive moment object; no taxonomy migration.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "908ffe3d131b4c80ca0f6868b4dff09df4189fe2220ec211cecd0497c622e943",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -70042,7 +70042,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "908ffe3d131b4c80ca0f6868b4dff09df4189fe2220ec211cecd0497c622e943"
       },
       "working_tree_state": "untracked-preserved"
@@ -70070,7 +70070,7 @@
       "placement_rationale": "Exact common-divisor sectors of the established primitive additive moment object; no taxonomy migration.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "d217f3b62ea7c3c991451b089d7a22286f3efa9a5879c6f998958d610012a584",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -70080,7 +70080,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "d217f3b62ea7c3c991451b089d7a22286f3efa9a5879c6f998958d610012a584"
       },
       "working_tree_state": "untracked-preserved"
@@ -70109,7 +70109,7 @@
       "placement_rationale": "Exact common-divisor sectors of the established primitive additive moment object; no taxonomy migration.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "142b8b6badd0bcd4e0987972ec117ed4d473b0d20e6d6d8b427a7e77c158933e",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -70119,7 +70119,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "142b8b6badd0bcd4e0987972ec117ed4d473b0d20e6d6d8b427a7e77c158933e"
       },
       "working_tree_state": "untracked-preserved"
@@ -70147,7 +70147,7 @@
       "placement_rationale": "Exact common-divisor sectors of the established primitive additive moment object; no taxonomy migration.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "dedf2e1b614e08c6ed50969dc3bfd9fdf9e11e642b708223d4f21868f3800c0b",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -70157,7 +70157,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "dedf2e1b614e08c6ed50969dc3bfd9fdf9e11e642b708223d4f21868f3800c0b"
       },
       "working_tree_state": "untracked-preserved"
@@ -70185,7 +70185,7 @@
       "placement_rationale": "Exact common-divisor sectors of the established primitive additive moment object; no taxonomy migration.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "343290bc9b6b0eb15a260b9258d18ab1b40a9a23f6cc9abcfbfbc543f720dc95",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -70195,7 +70195,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "343290bc9b6b0eb15a260b9258d18ab1b40a9a23f6cc9abcfbfbc543f720dc95"
       },
       "working_tree_state": "untracked-preserved"
@@ -70223,7 +70223,7 @@
       "placement_rationale": "Complex character projection of primitive additive moments belongs with primitive additive triples; generic Ring prerequisites retain their original subjects.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_character_moments.py",
+      "runner": "python3 -B artifact:gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
       "sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -70233,7 +70233,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh positive consumer elaboration at trust zero with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
         "replay_binding_schema": "additive-character-moments-selected-replay-v1",
         "replay_binding_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00",
         "source_sha256": "af9ac1d1982587daba14b6f170bc78f35f47b519192b65d02e253610537750bf"
@@ -70263,7 +70263,7 @@
       "placement_rationale": "Exact common-divisor sectors of the established primitive additive moment object; no taxonomy migration.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "a29552e3e9d8153094d73a3fadf330ac2f19c39e257eb2969a074e084b3136ee",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -70273,7 +70273,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "a29552e3e9d8153094d73a3fadf330ac2f19c39e257eb2969a074e084b3136ee"
       },
       "working_tree_state": "untracked-preserved"
@@ -70301,7 +70301,7 @@
       "placement_rationale": "Generic arithmetic M\u00f6bius filter under ArithmeticFunctions; finite additive moments and typed triple reindexing under the established PrimitiveAdditiveTriples object.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "c4bac9881c4e98678862a7cb4cdec5af9f4b0530ce6bf69764282fb383d7f8f9",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -70311,7 +70311,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "c4bac9881c4e98678862a7cb4cdec5af9f4b0530ce6bf69764282fb383d7f8f9"
       },
       "working_tree_state": "untracked-preserved"
@@ -70344,7 +70344,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "8ff9ea3fe044f11fba65bc39fcd35327ba7f73c00eba1460c47cb07b4a20ff54",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -70354,7 +70354,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "8ff9ea3fe044f11fba65bc39fcd35327ba7f73c00eba1460c47cb07b4a20ff54"
       },
       "working_tree_state": "untracked-preserved"
@@ -70431,7 +70431,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "585be0c9c3bda1333ddd442d230ad5701e87ef5163c10ec3c1225a5584bfe892",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70441,7 +70441,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "585be0c9c3bda1333ddd442d230ad5701e87ef5163c10ec3c1225a5584bfe892"
       },
       "working_tree_state": "untracked-preserved"
@@ -70516,7 +70516,7 @@
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/SectorWrongFloorCutoff.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/DivisorSectorReindexing.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "runner": "python3 -B artifact:gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
       "sha256": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70526,7 +70526,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "complete selected local library closure; standard3 only; controls checked separately",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
         "source_sha256": "d74f5363926558dc39f0ff7ee0538830336059e21b4f078868e3576fd46968b1"
       },
       "working_tree_state": "untracked-preserved"
@@ -70620,7 +70620,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "c090c50d93261d32dca188a9f9d5e448e5143e8460ac4ca82e76f60d85d60293",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70630,7 +70630,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "c090c50d93261d32dca188a9f9d5e448e5143e8460ac4ca82e76f60d85d60293"
       },
       "working_tree_state": "untracked-preserved"
@@ -70692,7 +70692,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "0783e6ccf1cde3a695a191f41e62087e538105cf2d960950515b36ef38d66af5",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70702,7 +70702,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "0783e6ccf1cde3a695a191f41e62087e538105cf2d960950515b36ef38d66af5"
       },
       "working_tree_state": "untracked-preserved"
@@ -70779,7 +70779,7 @@
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Positive/Moments.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/DivisorSectorReindexing.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "5334909321d9a7642bb8d8f4d574fe948ff6e077f07638c7b4989acc2129e8b5",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70789,7 +70789,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "5334909321d9a7642bb8d8f4d574fe948ff6e077f07638c7b4989acc2129e8b5"
       },
       "working_tree_state": "untracked-preserved"
@@ -70868,7 +70868,7 @@
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Checks/Negative/MomentUnsignedMoebius.lean",
         "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_primitive_additive_moments.py",
+      "runner": "python3 -B artifact:gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
       "sha256": "0008651bfdefbd549997bee5157782b6f5ede84733bb93f7e06582cb35862bd5",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70878,7 +70878,7 @@
         "inventory": "observed-current-bytes",
         "lean": "fresh selected trust-zero replay with fatal warnings",
         "owned_declaration_audit": "passed at the source-bound selected scope; only standard3 axioms",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+        "replay_binding": "artifact:gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
         "source_sha256": "0008651bfdefbd549997bee5157782b6f5ede84733bb93f7e06582cb35862bd5"
       },
       "working_tree_state": "untracked-preserved"
@@ -70920,7 +70920,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "4c3b82cc2d5e10d54796281ee54ce09a3a99c50976bf90ada984431b994d2e69",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70930,7 +70930,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "4c3b82cc2d5e10d54796281ee54ce09a3a99c50976bf90ada984431b994d2e69"
       },
       "working_tree_state": "untracked-preserved"
@@ -70976,7 +70976,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "048450c9a188c29498524f514417571952a33c5dc4f31cf4c66588b463ae09d7",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -70986,7 +70986,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "048450c9a188c29498524f514417571952a33c5dc4f31cf4c66588b463ae09d7"
       },
       "working_tree_state": "untracked-preserved"
@@ -71045,7 +71045,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "f13e0f8fb20c37f3257a95d30c020a9dce2a364844d815fa86bd7dc9518898ea",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -71055,7 +71055,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "f13e0f8fb20c37f3257a95d30c020a9dce2a364844d815fa86bd7dc9518898ea"
       },
       "working_tree_state": "untracked-preserved"
@@ -71134,7 +71134,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "68c3594c3651ae42746c6188c698e737f63e3da241e3f4c0011dc7cfa3750bc4",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -71144,7 +71144,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "68c3594c3651ae42746c6188c698e737f63e3da241e3f4c0011dc7cfa3750bc4"
       },
       "working_tree_state": "untracked-preserved"
@@ -82487,7 +82487,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "50213fdfbf0ef92cb0aa7e4c4f920fe195fa77e7ce0a5c8424a91a8544038971",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -82497,7 +82497,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "50213fdfbf0ef92cb0aa7e4c4f920fe195fa77e7ce0a5c8424a91a8544038971"
       },
       "working_tree_state": "untracked-preserved"
@@ -82527,7 +82527,7 @@
       "placement_rationale": "Primitive additive triples under NumberTheory/Diophantine; reusable line and finite-sum results under LinearAlgebra and Analysis; polynomial control under NumberTheory/Polynomial.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "d6cd9261534e006b9937af416016d61716f262fa54834f8ad139c0a818fa8e87",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -82537,7 +82537,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "d6cd9261534e006b9937af416016d61716f262fa54834f8ad139c0a818fa8e87"
       },
       "working_tree_state": "untracked-preserved"
@@ -82574,7 +82574,7 @@
         }
       ],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_additive_triple_transport.py",
+      "runner": "python3 -B artifact:gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
       "sha256": "d64986ebd31dbde798daa311de4cb296f0d8f7186fe0113070804e8f00815ad1",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -82584,7 +82584,7 @@
         "inventory": "observed-current-bytes",
         "lean": "selected source replay at trust zero with fatal warnings",
         "owned_declaration_audit": "passed for all 452 selected owned declarations; standard axioms only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
         "source_sha256": "d64986ebd31dbde798daa311de4cb296f0d8f7186fe0113070804e8f00815ad1"
       },
       "working_tree_state": "untracked-preserved"
@@ -87554,7 +87554,7 @@
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableReferenceTransport",
         "GRWTSK"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "runner": "python3 -B artifact:gitblob:81ffe37fcd00e052241ef1332821f6dc67268a97",
       "sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -87564,7 +87564,7 @@
         "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:8e51a42c9017a8a4e0d0516611efbdf01ea2c402",
         "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
         "source_sha256": "a7600c33972405a31f6495b03789f9473cd914eb428d9a5f94c734f528e71d0c",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -87698,7 +87698,7 @@
       "reverse_consumers": [
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Negative.PrefixReferenceMissingSupport"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "runner": "python3 -B artifact:gitblob:81ffe37fcd00e052241ef1332821f6dc67268a97",
       "sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -87708,7 +87708,7 @@
         "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:8e51a42c9017a8a4e0d0516611efbdf01ea2c402",
         "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
         "source_sha256": "092678d16170cff8e60e5b1461c71aea404b4a8d93731f4e001367992bf96e26",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -87756,7 +87756,7 @@
       "placement_rationale": "Actual stored rooted path references and state-dependent compaction transport belong to Combinatorics/DirectedGraph.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_reference_transport.py",
+      "runner": "python3 -B artifact:gitblob:81ffe37fcd00e052241ef1332821f6dc67268a97",
       "sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -87766,7 +87766,7 @@
         "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+        "replay_binding": "artifact:gitblob:8e51a42c9017a8a4e0d0516611efbdf01ea2c402",
         "replay_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271",
         "source_sha256": "a81f4b50114fcd35951a8ed8ee1ccf0a706bc26b3a73d6935d83f8867b826f2c",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -87921,7 +87921,7 @@
         "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicCharacters",
         "GRWTSK"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "runner": "python3 -B artifact:gitblob:c4d500e49e5607d1c665a352251532e458373695",
       "sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -87931,7 +87931,7 @@
         "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_binding": "artifact:gitblob:3a56ad066807acd70306629d515d13af552d3879",
         "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
         "source_sha256": "c595e55f46838683758ea9c66379968ac75a6f86ddfb5dc099c302f9d497a051",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -88095,7 +88095,7 @@
       "reverse_consumers": [
         "GRWTSK.NumberTheory.Cyclotomic.Checks.Negative.ThirdCyclotomicCharacterZeroCube"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "runner": "python3 -B artifact:gitblob:c4d500e49e5607d1c665a352251532e458373695",
       "sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
       "source_role": "positive-check",
       "source_root": "GRWTSK",
@@ -88105,7 +88105,7 @@
         "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_binding": "artifact:gitblob:3a56ad066807acd70306629d515d13af552d3879",
         "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
         "source_sha256": "4832da80997b32be46ceb8ba498e86bb873a7e6111d9f2e70ee137211f0c4eb0",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -88201,7 +88201,7 @@
       "placement_rationale": "Actual cubic roots and multiplicative characters on maximal quotients of the third cyclotomic integer ring belong to NumberTheory/Cyclotomic.",
       "public_declarations": [],
       "reverse_consumers": [],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "runner": "python3 -B artifact:gitblob:c4d500e49e5607d1c665a352251532e458373695",
       "sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
       "source_role": "negative-control",
       "source_root": "GRWTSK",
@@ -88211,7 +88211,7 @@
         "canonical_public_integration": "INSTALLED_SELECTED_SCOPE",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+        "replay_binding": "artifact:gitblob:3a56ad066807acd70306629d515d13af552d3879",
         "replay_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286",
         "source_sha256": "7e423a5a2cb5a9f6c78740f357fc1a41b832c01545e4a6e87ada20f8ccfb8242",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -88279,7 +88279,7 @@
         "GRWTSK",
         "GRWTSK.Combinatorics.DirectedGraph.Checks.Positive.PrefixTableDirectLookup"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "runner": "python3 -B artifact:gitblob:302e403138c25e5af5a2a233923b36d19e324765",
       "sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -88289,7 +88289,7 @@
         "canonical_public_integration": "SELECTED_EXPORT_PREPARED_GLOBAL_CHECKPOINT_PENDING",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-2026-10-16-3d871160-r4.json",
+        "replay_binding": "artifact:gitblob:8e89268d846e7b7b0da54438b905c2b324f8fc8a",
         "replay_sha256": "73280a1c057172c7f20bca526e4d5ec6e6d490644301099bc4203e9375b9ac31",
         "source_sha256": "5f099e606e01fec069843167202c0d4ea2e82cd17f0fac3d14fc83b6772bd12c",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"
@@ -88322,7 +88322,7 @@
         "human_direction": "grwtsk contributors",
         "license": "Apache-2.0",
         "local_contribution": "OpenAI Codex adaptation/formalization/checking; no novelty or independent-validation claim",
-        "source_evidence": ".noeaaeue/cache/research/third-cyclotomic-jacobi-source-682f4eb84b5d4b3f8ff38aec9054e90a/record.json"
+        "source_evidence": "artifact:gitblob:676c53427e6c90c05faa60b61b92c4bd50396178"
       },
       "declaration_inventory_method": "source commands only; complete owned native census in selected receipt is authoritative",
       "explicit_premises": [
@@ -88383,7 +88383,7 @@
         "GRWTSK",
         "GRWTSK.NumberTheory.Cyclotomic.Checks.Positive.ThirdCyclotomicJacobi"
       ],
-      "runner": "python3 -B .noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "runner": "python3 -B artifact:gitblob:8ce0ece76e051bd3bfbbdd50c4c80cb34781e9f5",
       "sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
       "source_role": "library",
       "source_root": "GRWTSK",
@@ -88393,7 +88393,7 @@
         "canonical_public_integration": "SELECTED_EXPORT_PREPARED_GLOBAL_CHECKPOINT_PENDING",
         "inventory": "observed-current-bytes",
         "lean": "Exact selected receipt context only",
-        "replay_binding": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-development-2026-10-16-8dcc930e-a3.json",
+        "replay_binding": "artifact:gitblob:37c3c7ee350ad3e8a02b4bdab44e493de447fe43",
         "replay_sha256": "32ae3f58ceafb23f40d1ca0319a052b2ad1e2374a8af60deee001005aaf27d8b",
         "source_sha256": "2426a4fb0689cf6102e72cb174b9469641164450e656f3d9192357764f723623",
         "whole_umbrella": "NOT_REPLAYED_BY_SELECTED_RECEIPT"

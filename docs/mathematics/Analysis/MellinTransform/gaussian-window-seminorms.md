@@ -76,8 +76,8 @@ arithmetic summability and physical-row suppliers remain separate.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianWindowSeminorms.lean),
-[native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-integration-2026-10-15.json)
+native receipt (artifact:gitblob:b8478ec9682ed167d5286559aaf1f415ef52f20f)
+and integration record (artifact:gitblob:aaa9b9f3ad0f9eadbeb4cd5a5d538d79d781e923)
 bind the exact selected closure. Lean 4.33.0 checks fresh local sources at
 trust zero with fatal warnings and a complete owned-declaration/transitive-
 axiom census permitting only `propext`, `Classical.choice` and `Quot.sound`.

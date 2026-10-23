@@ -41,14 +41,14 @@ OpenAI. The adapted file retains Apache-2.0 terms. The subsequent
 and selected replay, retaining its exact topology and density premise.
 
 The [positive consumers](../../../../GRWTSK/Analysis/InnerProductSpace/Checks/Positive/ClosedComplexSolvability.lean)
-and [native receipt](../../../../.noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json)
+and native receipt (artifact:gitblob:0197b5dece18431170837019f7cf57b63583d173)
 bind exact bytes, native commands, controls and the complete owned-declaration
 and transitive-axiom census. Replay uses pinned Lean 4.33.0, trust zero and fatal
 warnings, permitting only `propext`, `Classical.choice` and `Quot.sound`.
 Pinned dependency objects are reused and fingerprinted. This is not a cold
 Mathlib rebuild, whole-repository acceptance or independent review.
 
-The [integration record](../../../../.noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-integration-2026-10-15.json)
+The integration record (artifact:gitblob:1168435e9ab647c3f014c75ff2b224e5796e5f05)
 retains source identity, credit and limits. Human project direction:
 grwtsk contributors. Local adaptation and checking assistance: OpenAI Codex.
 Lean and Mathlib retain upstream authorship and licensing. No mathematical

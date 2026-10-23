@@ -48,8 +48,8 @@ prior finite-seminorm sums.
 
 The [source](../../../../GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean),
 [positive controls](../../../../GRWTSK/Analysis/MellinTransform/Checks/Positive/GaussianLogWindow.lean),
-[joint native receipt](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-integration-2026-10-15-r2.json)
+joint native receipt (artifact:gitblob:993e30f85c17fcf6f0e982a7558026cb592a6c3b)
+and integration record (artifact:gitblob:27d08216144154c038d4e4d694e8994adafbb652)
 bind exact fresh selected local sources and controls. Pinned Lean 4.33.0
 checks trust zero, fatal warnings and the full owned-declaration and
 transitive-axiom census, allowing only `propext`, `Classical.choice` and

@@ -40,8 +40,8 @@ inequality proof.
 
 The [source](../../../../GRWTSK/NumberTheory/Cyclotomic/ThirdCyclotomicIdeals.lean),
 [positive controls](../../../../GRWTSK/NumberTheory/Cyclotomic/Checks/Positive/ThirdCyclotomicIdeals.lean),
-[native receipt](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json)
-and [integration record](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json)
+native receipt (artifact:gitblob:0d2552f484cd7e83e297c6c6af787f1a32d1fe2b)
+and integration record (artifact:gitblob:95f51d6ee3c59541f9e9b215e597718f31c90dc8)
 bind the fresh selected closure and actual controls. Pinned Lean 4.33.0 checks
 trust zero, fatal warnings and every owned declaration and transitive axiom,
 allowing only `propext`, `Classical.choice` and `Quot.sound`. Clean pinned
@@ -54,7 +54,7 @@ Apache-2.0 terms from
 [FiniteFourier](https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/lean/OAI/NumberTheory/DirichletL/GaussSum/FiniteFourier.lean).
 Mathlib number-field, cyclotomic and ideal-norm authors include Ashvni
 Narayanan, Anne Baanen, Riccardo Brasca and Alex J. Best; individual imported
-credits are retained. The [source review](../../../../.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json)
+credits are retained. The source review (artifact:gitblob:4eefb81884e58acb8db3321f94b8ee43da7d8ae6)
 records exact source identities and bounded comparison scopes. Human direction:
 grwtsk contributors; adaptation, formalization and checking: OpenAI Codex.
 Correlated model/source review is not independent validation.

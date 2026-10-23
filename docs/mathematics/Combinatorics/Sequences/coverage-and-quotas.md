@@ -9,7 +9,7 @@
 
 **Limits.** Dynamic eligibility, fair quantization of arbitrary fractional inputs, machine-integer overflow and successful task completion require separate arguments. Continuing admissible service is assumed. No authorization or acceptance is produced by fairness.
 
-**Evidence.** [The earlier waveform receipt](../../../../.noeaaeue/evidence/waveform-checks.json) records checks at former source paths. It is historical; current relocated-source replay is not claimed by this page. Proposed scheduling relevance is not an implemented runtime consumer.
+**Evidence.** The earlier waveform receipt (artifact:gitblob:65a87c069a4377b8007f7ec91de73833d500b216) records checks at former source paths. It is historical; current relocated-source replay is not claimed by this page. Proposed scheduling relevance is not an implemented runtime consumer.
 
 **Credit.** Human mathematical direction: grwtsk contributors; OpenAI Codex assistance. Classical scheduling reasoning and Mathlib origins retained; local MIT, Mathlib Apache-2.0; no originality claim.
 
