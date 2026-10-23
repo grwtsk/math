@@ -1,0 +1,109 @@
+# Passive pure-math verification specification only; no execution receipt.
+schema = "farey-return-spectral-channel-v0.1"
+repository = "grwtsk/math"
+base_branch = "main"
+source_baseline_commit = "f3fac5a7e8f373d8efdbfd5a961e7fcf971011a3"
+source_baseline_tree = "e678194110a6268ece125c7ca18dfbfa6c602161"
+
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_module = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel"
+source_path = "GRWTSK/NumberTheory/Farey/ReturnSpectralChannel.lean"
+source_blob = "92852e10cfd6ff6aa18134a12589453971789c1d"
+direct_dependency = "GRWTSK.NumberTheory.Farey.GroupSpectralChannel"
+direct_dependency_blob = "fc42376a6c12f7729076564cfd223bf8d1b2b75b"
+farey_word_dependency = "GRWTSK.NumberTheory.Farey.GroupSuperwalk"
+farey_word_dependency_blob = "62a17e49a7e6a061c71da5763d9083dac57c51b6"
+farey_cell_dependency = "GRWTSK.NumberTheory.Farey.ResolvableQuintic"
+farey_cell_dependency_blob = "7caef4b022e35202eef471aae2730dff6b518f70"
+math_note_path = "docs/mathematics/NumberTheory/Farey/group-superwalk-spectral-channel.md"
+math_note_blob = "d0e2bd514eeb240a7c3f558cd51c387058fd7795"
+parent_verification_issue = 1094
+parent_farey_verification_issue = 1086
+
+classification = "SOURCE_PROOF_CANDIDATE"
+evidence_state = "SOURCE_INTEGRATED_ONLY"
+source_elaborated = false
+transitive_compilation_completed = false
+fresh_kernel_checked = false
+transitive_axioms_audited = false
+external_execution_receipt = false
+root_imported = false
+analytic_or_geometric_spiral_supplier_proved = false
+
+[validation]
+require_exact_final_main_commit = true
+require_exact_source_and_dependency_blobs = true
+require_pinned_lean_mathlib = true
+require_parent_and_leaf_warning_clean_compilation = true
+require_fresh_native_kernel_replay = true
+require_exact_elaborated_types = true
+require_transitive_axiom_closure = true
+require_no_sorry_admit_project_axioms_native_decide_or_unsafe = true
+require_hostile_controls = true
+require_evidence_for_every_claimed_execution_status = true
+reject_root_build_as_leaf_evidence = true
+reject_source_scan_as_kernel_evidence = true
+reject_global_LR_channel_from_return_only_equivariance = true
+reject_zero_lyapunov_or_infinite_volume_spectral_claim = true
+reject_angular_spiral_without_phase_supplier = true
+reject_zeta_or_RH_promotion = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.farey_return_frame"
+kind = "exact_source_Farey_walk_to_group_unit_return"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnMatrix_quadratic"
+kind = "exact_finite_return_Cayley_Hamilton_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.sqrtFive_sq"
+kind = "real_radical_algebra_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.return_eigenvalue_product"
+kind = "exact_positive_reciprocal_return_eigenvalues"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.return_eigenvalues_distinct"
+kind = "nondegenerate_finite_return_spectrum"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_idempotent"
+kind = "explicit_algebraic_root_to_idempotent"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_proper"
+kind = "nonzero_and_nonidentity_channel"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_commutes"
+kind = "selected_return_only_intertwining"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_eigen"
+kind = "exact_expanding_eigenchannel"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.expandingProjector_iterate"
+kind = "all_finite_return_powers_scale_on_selected_channel"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.exists_proper_return_channel"
+kind = "concrete_nontrivial_projector_witness"
+
+[hostile_controls]
+cases = [
+  "replace true source Farey LR with reversed chronological RL",
+  "claim the return projector commutes with both L and R",
+  "substitute s=2 for s^2=5 and call the result idempotent",
+  "pretend s=0 gives a defined nondegenerate projector",
+  "confuse trace-three finite return with an infinite-volume spectral gap",
+  "conflate real expanding eigenchannel with complex rotating phase",
+  "identify finite Farey return with a zeta spectral determinant or RH criterion",
+  "promote SOURCE_ONLY to a kernel-checked theorem without receipts"
+]
+
+[next_supplier]
+statement = "Give an actual Farey-defined equivariant angular observation or enlarged representation, identify its return character with fixed gauge restrictions, and prove a genuinely nonzero winding rate independently of the real expanding return eigenline."
