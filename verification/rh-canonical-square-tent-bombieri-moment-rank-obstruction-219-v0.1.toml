@@ -11,9 +11,9 @@ historical_parent_commit = "f93948b7d62b68497fc3a348b07ba969f744d476"
 historical_parent_tree = "8373b1bc7524bca690238eff9a8a2ea1df447cb8"
 
 base_branch = "main"
-reconciled_main_commit = "4a9285c99de5b08772e974cda933d350b52332dd"
-reconciled_main_tree = "91a1724303fe72b0f8e71a1cc8472fbb66ff4749"
-reconciliation_commit = "b983fbc10326781694d5667da9ebb6ec7de3e7db"
+reconciled_main_commit = "d40d8b1d876f2bd8ae8e88515a6138c15365f676"
+reconciled_main_tree = "aab7b356bafa5c13ded27b0c2240151b02de3737"
+reconciliation_commit = "af04bde8cf3b95f8684bdf15a7dcbb7a2b594b70"
 branch = "research/rh-bombieri-two-tent-moment-rank-obstruction-219-20261023"
 
 toolchain = "leanprover/lean4:v4.33.0"
@@ -56,7 +56,7 @@ historical_stacked_authorship = true
 parent_now_merged = true
 current_pr_base = "main"
 parent_declaration_dependency = "BombieriZeroMomentConditions and canonical tent moment lemmas"
-reconciliation_method = "non-force merge commit with child history and repaired main as parents"
+reconciliation_method = "non-force merge commit with child history and current main as parents"
 on_parent_change = "merge updated main non-force, replay all checks, and refresh immutable blobs"
 
 [validation]
