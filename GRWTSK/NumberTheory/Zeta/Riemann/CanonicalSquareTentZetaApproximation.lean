@@ -181,7 +181,7 @@ theorem abs_target_sub_finiteApproximant_le
         |(finiteSpectralValue N f -
           (canonicalCorrection f.index : ℂ)).re| := by
             simp only [zetaTarget, finiteApproximant, if_pos rfl,
-              map_sub, ofReal_re]
+              Complex.sub_re, Complex.ofReal_re]
             rw [abs_sub_comm]
     _ ≤ ‖finiteSpectralValue N f -
           (canonicalCorrection f.index : ℂ)‖ :=
