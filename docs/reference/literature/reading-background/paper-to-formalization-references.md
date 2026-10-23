@@ -3273,15 +3273,46 @@ an **assumed** transfer `B`, periodic point
 and/or nonidentity monodromy; none establishes
 those witnesses for a source-defined irrational
 Farey cocycle.
-`finite-certificate`: exact independent exhaustive
-noncommutative `S₃` sanity checks on
-**46,656** three-step cocycle/gauge combinations,
-**38,880** nonidentity obstruction cases,
-and **216** explicit pure-coboundary cases,
-all passed; local preflight script SHA-256
+`finite-certificate` — **previously reported, execution provenance
+not independently substantiated**: prior source notes and
+[math #1119](https://github.com/grwtsk/math/issues/1119) /
+[noeaaeue #390](https://github.com/grwtsk/noeaaeue/issues/390)
+report an off-kernel exact enumeration of **46,656** three-step
+noncommutative `S₃` cocycle/gauge cases, **38,880**
+nonidentity-product cases and **216** pure-coboundary cases,
+described there as passing. The previously reported preflight
+script SHA-256 is
 `12da87112c3b9bde1ccd97fb750aa604ec92acef50cf8f2ce5a26040b0a65048`.
-This is **not Lean proof evidence** and the script
-and actual runtime logs remain **outside `math`**.
+These counts and that hash remain a **historical finite-evidence
+report**, not a verified reproducible execution receipt.
+
+**Finite-preflight execution provenance audit (2026-10-23):**
+- **Exact source-bound executable command:** `UNAVAILABLE / NOT_RECORDED`.
+  Neither the original invocation nor its arguments, interpreter,
+  working directory, and input revision were preserved in the
+  accessible record. No command is reconstructed or invented.
+- **Actual process exit status:** `UNAVAILABLE / NOT_RECORDED`.
+  The historical word "PASS" is not an observed numeric exit code.
+- **Executable script/source and SHA verification:** `UNAVAILABLE`
+  for independent readback. The previously referenced local
+  `/mnt/data/periodic_cocycle_preflight.py` is **not present**
+  in the current accessible runtime; the SHA above cannot be
+  checked against script bytes in this audit.
+- **External raw stdout/stderr, immutable run receipt, or receipt URL:**
+  `UNAVAILABLE / NOT_FOUND` in the accessible ledger, linked
+  [math #1119](https://github.com/grwtsk/math/issues/1119),
+  [noeaaeue #390](https://github.com/grwtsk/noeaaeue/issues/390),
+  and targeted repository-file search. Issue #390 is an
+  **authorization-gated queued execution request, not a receipt**.
+  Its link must not be used as evidence of execution.
+- **Preflight rerun during this audit:** `NOT_RUN`;
+  no computation or unauthorized remote work was dispatched.
+  `NOT_RUN` here describes this audit, **not** a categorical
+  assertion that the historical finite calculation never happened.
+- **Evidentiary classification:** `FINITE_EVIDENCE_REPORTED /
+  REPLAY_NOT_RUN / COMMAND_UNAVAILABLE / EXIT_UNAVAILABLE /
+  RECEIPT_UNAVAILABLE`, **not kernel-verified mathematics**.
+
 `methodological-analogy`: applying the necessity
 gate before a prospective Farey/continued-fraction
 global cocycle; it is not a checked Farey-to-Kalinin
