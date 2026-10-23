@@ -136,16 +136,23 @@ theorem boundaryProjection_preimage_positiveOpenEdge_image (k : ℕ)
     have horbit := interior_projection_eq_orbit k t.property heq'
     rcases horbit with hsame | hopp
     · rw [hsame]
-      exact Or.inl ⟨rfl, ⟨t, htU, rfl⟩⟩
+      unfold positiveOpenEdgeSaturation
+      apply Or.inl
+      exact ⟨by simp [positiveOpenEdgeSourcePoint], ⟨t, htU, rfl⟩⟩
     · rw [hopp]
-      exact Or.inr ⟨rfl, ⟨t.1, ⟨t, htU, rfl⟩, rfl⟩⟩
+      unfold positiveOpenEdgeSaturation
+      apply Or.inr
+      exact ⟨by simp [positiveOpenEdgeSourcePoint, oppositeBoundaryPoint],
+        ⟨t.1, ⟨t, htU, rfl⟩, rfl⟩⟩
   · intro hp
     rcases hp with hp | hp
     · rcases hp with ⟨hc, ⟨t, htU, hu⟩⟩
+      have hc' : c = (h, (i : Fin 4)) := by simpa using hc
       subst c
       subst u
       exact ⟨t, htU, positiveOpenEdge_eq_projection k h i t⟩
     · rcases hp with ⟨hc, ⟨v, ⟨t, htU, hv⟩, hu⟩⟩
+      have hc' : c = (h, (i : Fin 4) + 2) := by simpa using hc
       subst c
       subst v
       subst u
