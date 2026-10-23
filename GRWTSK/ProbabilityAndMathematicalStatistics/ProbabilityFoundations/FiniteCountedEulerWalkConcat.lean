@@ -347,4 +347,46 @@ theorem FreshCountedTrail.factorAtFinish_used
       FreshCountedTrail.used, CountedWalk.edges]
 
 
+
+/-- An arbitrary directed counted walk admits a factorization at
+each vertex explicitly visited along its inductive construction.
+The visited predicate is proof-relevant: it records the chosen
+occurrence, including repeated visits to the same vertex. -/
+inductive CountedWalk.Visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) : (Fin m → Bool) → Prop where
+  | finish : T.Visits b
+  | prior {u : Fin m → Bool}
+      {p : Fin m → Bool}
+      (P : CountedWalk m c a p)
+      (e : CountedBinaryEdge m c)
+      (h : countedEdgeSource m c e = p)
+      (ht : T = CountedWalk.append P e h)
+      (hv : P.Visits u) : T.Visits u
+
+/-- A finite directed walk can be split at a witnessed vertex
+occurrence, preserving both directed endpoint constraints. -/
+theorem CountedWalk.factor_of_visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (hv : T.Visits v) :
+    ∃ (P : CountedWalk m c a v)
+      (Q : CountedWalk m c v b),
+      T.edges.toFinset = P.edges.toFinset ∪ Q.edges.toFinset := by
+  induction hv with
+  | finish =>
+      refine ⟨T, CountedWalk.empty b, ?_⟩
+      simp [CountedWalk.edges]
+  | @prior u p P e h ht hv ih =>
+      obtain ⟨A, B, hused⟩ := ih
+      subst T
+      refine ⟨A, CountedWalk.append B e h, ?_⟩
+      simp only [CountedWalk.edges, List.toFinset_cons]
+      rw [hused]
+      ext z
+      simp [or_assoc, or_left_comm, or_comm]
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
