@@ -182,4 +182,34 @@ theorem FreshCountedTrail.single_used
     FreshCountedTrail.empty_used]
 
 
+
+/-- Every fresh counted trail admits a terminal-maximal extension.
+The construction is a finite well-founded descent on the exact
+number of unused counted edge instances. -/
+theorem FreshCountedTrail.exists_maximal_extension
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    ∃ (z : Fin m → Bool) (R : FreshCountedTrail m c a z),
+      R.MaximalAtFinish ∧ T.used ⊆ R.used := by
+  classical
+  induction h : (Finset.univ \ T.used).card using Nat.strong_induction_on
+    generalizing b T with
+  | h n ih =>
+      by_cases hmax : T.MaximalAtFinish
+      · exact ⟨b, T, hmax, Finset.Subset.rfl⟩
+      · obtain ⟨e, fresh, incident, hcard⟩ :=
+          T.exists_strict_extension hmax
+        let R := T.append e fresh incident
+        have hlt : (Finset.univ \ R.used).card < n := by
+          dsimp [R]
+          omega
+        obtain ⟨z, Q, hQmax, hRQ⟩ := ih _ hlt R rfl
+        refine ⟨z, Q, hQmax, ?_⟩
+        have hTR : T.used ⊆ R.used := by
+          rw [FreshCountedTrail.append_used]
+          exact Finset.subset_insert _ _
+        exact hTR.trans hRQ
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
