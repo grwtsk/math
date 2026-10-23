@@ -1,0 +1,228 @@
+# Passive source-bound finite mathematical replay target. No runner or CI.
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-cosine-hodge-v0.1"
+owner_repository = "grwtsk/math"
+issue = 170
+historical_runner_issue_reference = 193
+source_pr = 971
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "finite-scalar-heat-identities-and-conditional-theta-majorants"
+module = "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge"
+source = "GRWTSK/Analysis/HeatFlow/FiniteCosineHodge.lean"
+requires_selected_module_build = true
+requires_standalone_source_elaboration = true
+requires_kernel_check_of_imports = true
+requires_exact_type_inspection = true
+requires_axiom_audit = true
+operational_receipts_are_external = true
+source_file_existence_alone_is_insufficient = true
+direct_imports = [
+  "Mathlib.Data.Real.Basic",
+  "Mathlib.Analysis.SpecialFunctions.ExpDeriv",
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv",
+  "Mathlib.Tactic",
+]
+
+[source_binding]
+require_single_repository_revision = true
+require_matching_commit_tree_module_and_target_blobs = true
+require_toolchain_and_manifest_blob_ids = true
+require_exact_transitive_dependency_sources = true
+requires_actual_toolchain_identification = true
+historical_pr_head = "32f2e896f013056bb9b6242e41424ed1a7ab5ca4"
+historical_source_blob = "cbeadd6f7b5b3fbe4cc0a6af3c5c64ba9677f234"
+historical_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+historical_lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+historical_pins_are_not_acceptance_for_repaired_sources = true
+requires_fresh_binding_after_source_or_dependency_changes = true
+manifest_is_not_self_referential = true
+
+[definitions]
+expected = [
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeLaplacian",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeHeat",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.coefficient",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.FiniteHeatErrorBudget",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.FiniteHeatErrorBudget.total",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.exponentialTailBudget",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.ExponentialTailIntegralCertificate",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.ThetaTailSupplier",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaGaussianSummand",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPositivePart",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelNegativePart",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPartialSum",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPartialMajorant",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.ThetaUniformMajorant",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaScaledGaussian",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaScaledPolynomial",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.ScaledGaussianEnvelope",
+]
+
+[theorems]
+required = [
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeLaplacian_nonneg",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeHeat_zero",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeHeat_add",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeHeat_pos",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeHeat_le_one",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.coefficient_zero",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.coefficient_time_add",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_zero",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_even",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_separation",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_error",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_error_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_identity",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_two_stage_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_modeHeat",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_coefficient",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_cosineMode",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_sineMode",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_timeCosineMode",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_twoModeHeat_time",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_twoModeHeat_space",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.hasDerivAt_twoModeHeat_space_derivative",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_finite_heat_equation",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.finiteHeatErrorBudget_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.finiteCosineTailBound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.finiteCosineExponentialMajorant",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.exponentialTailBudget_nonneg",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.exponentialTailBudget_antitone",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.exponentialTailBudget_amplitude_mono",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.exponentialTailBudget_refine",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.certified_integrated_tail_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.certified_integrated_tail_refinement",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.modeHeat_abs_le_one",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.coefficient_error_contracts",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_error_contracts",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_lipschitz",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.twoModeHeat_source_and_readout_budget",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.exponentialTailBudget_at_zero",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.finiteHeatErrorBudget_source_le_total",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.finiteHeatErrorBudget_tail_le_total",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaTailSupplier_combine",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaTailSupplier_source_le_total",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaGaussianSummand_pos",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaGaussianSummand_mode_antitone",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm_zero",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm_expansion",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPositivePart_nonneg",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelNegativePart_nonneg",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm_split",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm_abs_le_parts",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPartialMajorant_nonneg",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPartialSum_abs_le",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPartialSum_uniform_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPartialMajorant_mono",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaGaussianSummand_scaled",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaScaledGaussian_nonneg",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelPositivePart_scaled",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelNegativePart_scaled",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm_scaled",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaScaledPolynomial_abs_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaKernelTerm_scaledPolynomial",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.thetaScaledPolynomial_gaussian_bound",
+  "GRWTSK.Analysis.HeatFlow.FiniteCosineHodge.polynomial_exponential_envelope",
+]
+exact_count = 63
+requires_exact_types = true
+requires_full_axiom_inspection = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_any_additional_axioms = true
+reject_sorry = true
+reject_native_decide = true
+reject_unsafe_and_untracked_native_code = true
+reject_unavailable_audit_as_success = true
+require_transitive_import_review = true
+source_scan_does_not_replace_transitive_axiom_audit = true
+
+[[hostile_controls]]
+id = "time-sign-and-generator"
+must_preserve = "Forward Hodge time s corresponds to de Bruijn time -s. Damping is exp(-s*u^2), and the time derivative has multiplier -u^2."
+
+[[hostile_controls]]
+id = "zero-time-and-zero-frequency"
+must_preserve = "Zero time has multiplier one. Frequency zero is allowed and has eigenvalue zero; no theorem may insert a strict positive eigenvalue hypothesis."
+
+[[hostile_controls]]
+id = "nonnegative-time-contractivity"
+must_preserve = "The scalar contraction and coefficient perturbation theorems require 0 <= s. Multiplier positivity alone holds for every real s and does not imply contraction at negative s."
+
+[[hostile_controls]]
+id = "exact-original-source-coefficients"
+must_preserve = "Retain both supplied coefficients a,b, frequencies u,v, and their same readout z. The finite source_identity is derived from definitions; source_separation consumes the supplied identity as written."
+
+[[hostile_controls]]
+id = "derivative-coordinates"
+must_preserve = "Time differentiation varies only s; spatial differentiation varies only z. The exact finite heat equation compares the actual two-mode time derivative and actual derivative of its first spatial derivative."
+
+[[hostile_controls]]
+id = "complete-error-budget"
+must_preserve = "Source, quadrature, omitted tail and rounding remain distinct named components. The full bound consumes all four absolute-error hypotheses; nonnegative components are required only where stated."
+
+[[hostile_controls]]
+id = "pointwise-versus-integrated-tail"
+must_preserve = "finiteCosineTailBound is a pointwise bound. ExponentialTailIntegralCertificate and ThetaTailSupplier retain actual integral_le_budget and tail_le_exponential as supplied proof fields; no integrability or integral estimate is manufactured."
+
+[[hostile_controls]]
+id = "positive-decay-denominator"
+must_preserve = "exponentialTailBudget is C*exp(-c*U)/c. Nonnegativity and antitone budget conclusions retain 0 <= C and 0 < c exactly as stated; denominator zero is not silently accepted."
+
+[[hostile_controls]]
+id = "theta-source-normalization"
+must_preserve = "The literal theta term retains both polynomial terms 2*pi^2*n^4*exp(9u) and -3*pi*n^2*exp(5u), multiplied by exp(-pi*n^2*exp(4u)). No source normalization or zeta identity is inferred."
+
+[[hostile_controls]]
+id = "finite-mode-range"
+must_preserve = "thetaKernelPartialSum and its majorant range over Finset.Icc 1 N. Zeroth term is zero. Finite bounds do not imply summability or convergence of an infinite theta series."
+
+[[hostile_controls]]
+id = "signed-theta-pieces"
+must_preserve = "Both polynomial-weighted positive/negative parts are nonnegative; their difference need not be. The absolute bound charges the sum of both parts and retains all pi coefficients."
+
+[[hostile_controls]]
+id = "uniform-majorant-is-supplied"
+must_preserve = "ThetaUniformMajorant.finite_bound and ScaledGaussianEnvelope.bound are explicit conditional fields, not proof that such an analytic supplier exists."
+
+[[hostile_controls]]
+id = "scaled-gaussian-factorization"
+must_preserve = "The variable q is n^2*exp(4u). Both signed terms retain the same exp(u) factor and exp(-pi*q), preserving exact source identities."
+
+[[hostile_controls]]
+id = "polynomial-exponential-envelope"
+must_preserve = "The final elementary envelope applies only for x >= 0 and keeps the declared constant 20 and exp(-x/2) rate."
+
+[[hostile_controls]]
+id = "no-complex-zero-or-RH-upgrade"
+must_preserve = "These real finite scalar identities do not establish xi/zeta kernel identification, contact-complex Laplacians, an infinite Connes spectral triple, complex entire zero control, or RH."
+
+[acceptance]
+requires_zero_errors_or_warnings = true
+requires_exact_declaration_inventory_reconciliation = true
+requires_mathematical_statement_comparison = true
+requires_external_execution_and_audit_receipt = true
+requires_transitive_axiom_report = true
+source_scan_or_build_exit_alone_is_insufficient = true
+
+[evidence]
+authored_status = "SOURCE_DRAFT"
+compiler_status = "NOT_RUN"
+kernel_status = "NOT_KERNEL_AUDITED"
+no_independent_replay_receipt_claimed = true
+historical_ci_failure_is_not_acceptance = true
+
+[nonclaims]
+claims = [
+  "a conditional proof field has been inhabited by an analytic source supplier",
+  "finite positivity or majorization controls complex zeros",
+  "an actual theta-kernel integral tail bound or infinite summability proved",
+  "a zeta/xi source identification, de Bruijn-Newman constant bound, or RH",
+  "a transitive axiom audit or independent replay already accepted",
+]
