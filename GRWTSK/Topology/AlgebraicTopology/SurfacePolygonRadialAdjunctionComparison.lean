@@ -55,10 +55,10 @@ theorem radialSourceToAdjunction_zero (k : ℕ)
     radialSourceToAdjunction k (p, 0) =
       radialSourceToAdjunction k (q, 0) := by
   unfold radialSourceToAdjunction
-  congr 1
-  apply (perimeterConeDiskHomeomorph k).injective.eq_iff.mpr
-  apply Quotient.sound
-  exact Or.inr ⟨rfl, rfl⟩
+  exact congrArg
+    (fun z : CircleCone.Cone (UnpairedPerimeter k) =>
+      originalDiskMap k (perimeterConeDiskHomeomorph k z))
+    (Quotient.sound (Or.inr ⟨rfl, rfl⟩))
 
 /-- Every authentic perimeter seam is respected at EVERY radius,
 before the outer opposite-side identifications are considered. -/
