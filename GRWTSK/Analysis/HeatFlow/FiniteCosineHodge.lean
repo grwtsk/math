@@ -373,6 +373,27 @@ theorem exponentialTailBudget_antitone
   apply Real.exp_le_exp.mpr
   nlinarith
 
+
+/-- The exponential tail budget is stable under increasing the declared
+amplitude bound. This is a source-parameter comparison, not an integral
+estimate or a proof of theta-kernel decay. -/
+theorem exponentialTailBudget_amplitude_mono
+    (C D c U : ℝ) (hCD : C ≤ D) (hc : 0 < c) :
+    exponentialTailBudget C c U ≤ exponentialTailBudget D c U := by
+  unfold exponentialTailBudget
+  apply div_le_div_of_nonneg_right _ hc.le
+  exact mul_le_mul_of_nonneg_right hCD (Real.exp_pos _).le
+
+/-- A finite cutoff enlargement and an improved amplitude bound can be
+composed without losing either hypothesis. -/
+theorem exponentialTailBudget_refine
+    (C D c U V : ℝ)
+    (hC : 0 ≤ C) (hCD : C ≤ D) (hc : 0 < c)
+    (hUV : U ≤ V) :
+    exponentialTailBudget C c V ≤ exponentialTailBudget D c U := by
+  exact (exponentialTailBudget_antitone C c U V hC hc hUV).trans
+    (exponentialTailBudget_amplitude_mono C D c U hCD hc)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
