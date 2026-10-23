@@ -1,0 +1,97 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Finite counted Euler progress proof drafting assistance: OpenAI. -/
+import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerResidualTrail
+import GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCountedEulerWalkConcat
+import Mathlib.Tactic
+
+set_option autoImplicit false
+
+/-!
+# A strict Hierholzer progress step at a witnessed vertex
+
+This theorem consumes an actual unused counted edge instance at
+a vertex visited by the existing closed fresh trail. Global degree
+balance constructs a nonempty residual cycle, and the visited
+factorization supplies a genuine splice preserving every edge ID.
+
+Weak support connectivity is needed to produce the splice entry
+when unused edges remain; it is not assumed here.
+SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+namespace GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
+
+/-- A visited vertex with a residual outgoing counted edge yields
+a new closed fresh trail using strictly more counted instances.
+The original used-edge set is preserved by inclusion. -/
+theorem FreshCountedTrail.exists_strict_progress_of_visited_unused_edge
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hclosed : a = b)
+    (hbalance : CountedDegreeBalanced m c)
+    (hvisit : T.walk.Visits v)
+    (e : CountedBinaryEdge m c)
+    (he : e ∈ Finset.univ \ T.used)
+    (hsource : countedEdgeSource m c e = v) :
+    ∃ R : FreshCountedTrail m c a b,
+      T.used ⊆ R.used ∧
+        (Finset.univ \ R.used).card <
+          (Finset.univ \ T.used).card := by
+  obtain ⟨C, hdisj, hpos⟩ :=
+    T.exists_disjoint_residual_cycle hclosed hbalance e he hsource
+  obtain ⟨R, hR⟩ := T.exists_splice_of_visit hvisit C hdisj
+  refine ⟨R, ?_, ?_⟩
+  · rw [hR]
+    exact Finset.subset_union_left
+  · rw [hR]
+    have hsubT : T.used ⊆
+        (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+      Finset.subset_univ _
+    have hsubR : T.used ∪ C.used ⊆
+        (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+      Finset.subset_univ _
+    have hcard := Finset.card_union_of_disjoint hdisj
+    have h1 := Finset.card_sdiff_add_card_eq_card hsubT
+    have h2 := Finset.card_sdiff_add_card_eq_card hsubR
+    omega
+
+
+/-- Exact global completion alternative for a closed counted trail:
+either every individual edge instance is already used, or there is
+a residual edge instance. This does not assume weak connectivity. -/
+theorem FreshCountedTrail.complete_or_unused_edge
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    T.used = Finset.univ ∨
+      ∃ e : CountedBinaryEdge m c,
+        e ∈ Finset.univ \ T.used := by
+  classical
+  by_cases h : T.used = Finset.univ
+  · exact Or.inl h
+  · right
+    have hne : (Finset.univ \ T.used :
+        Finset (CountedBinaryEdge m c)).Nonempty := by
+      by_contra hempty
+      have hz : (Finset.univ \ T.used :
+          Finset (CountedBinaryEdge m c)) = ∅ := by
+        simpa only [Finset.not_nonempty_iff_eq_empty] using hempty
+      have hsubset : (Finset.univ :
+          Finset (CountedBinaryEdge m c)) ⊆ T.used := by
+        intro e he
+        by_contra hn
+        have hmem : e ∈ (Finset.univ \ T.used :
+            Finset (CountedBinaryEdge m c)) :=
+          Finset.mem_sdiff.mpr ⟨he, hn⟩
+        simpa [hz] using hmem
+      have heq : T.used = (Finset.univ :
+          Finset (CountedBinaryEdge m c)) := by
+        apply Finset.eq_of_subset_of_subset
+        · exact Finset.subset_univ _
+        · exact hsubset
+      exact h heq
+    exact hne
+
+
+end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic

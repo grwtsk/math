@@ -188,4 +188,338 @@ theorem FreshCountedTrail.spliceClosedAtFinish_strict
   omega
 
 
+
+/-- General interior splicing, given an ACTUAL factorization of the
+original fresh trail into endpoint-compatible prefix and suffix
+trails at the chosen vertex. This avoids assuming a rotation
+exists without constructing the relevant vertex occurrence. -/
+def FreshCountedTrail.spliceAtFactorization
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    FreshCountedTrail m c a b := by
+  have hCQ : Disjoint C.used Q.used := hQC.symm
+  have hPQC : Disjoint P.used (C.used ∪ Q.used) :=
+    Finset.disjoint_union_right.mpr ⟨hPC, hPQ⟩
+  exact P.concat (C.concat Q hCQ) (by
+    simpa [FreshCountedTrail.concat_used] using hPQC)
+
+/-- The interior splice uses precisely the original two trail
+segments and the inserted residual closed cycle. -/
+theorem FreshCountedTrail.spliceAtFactorization_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    (FreshCountedTrail.spliceAtFactorization P Q C
+      hPQ hPC hQC).used = (P.used ∪ Q.used) ∪ C.used := by
+  simp [FreshCountedTrail.spliceAtFactorization,
+    FreshCountedTrail.concat_used, Finset.union_assoc,
+    Finset.union_comm, Finset.union_left_comm]
+
+
+
+/-- Splicing a nonempty residual cycle at an explicit interior
+factorization strictly decreases the number of unused counted
+edge instances, with no assumptions on simple-graph labels. -/
+theorem FreshCountedTrail.spliceAtFactorization_strict
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used)
+    (hC : 0 < C.used.card) :
+    (Finset.univ \
+      (FreshCountedTrail.spliceAtFactorization P Q C
+        hPQ hPC hQC).used).card <
+      (Finset.univ \ (P.used ∪ Q.used)).card := by
+  classical
+  rw [FreshCountedTrail.spliceAtFactorization_used]
+  have hdisj : Disjoint (P.used ∪ Q.used) C.used :=
+    Finset.disjoint_union_left.mpr ⟨hPC, hQC⟩
+  have hcard :
+      ((P.used ∪ Q.used) ∪ C.used).card =
+        (P.used ∪ Q.used).card + C.used.card :=
+    Finset.card_union_of_disjoint hdisj
+  have hsub1 : P.used ∪ Q.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hsub2 : (P.used ∪ Q.used) ∪ C.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have ha := Finset.card_sdiff_add_card_eq_card hsub1
+  have hb := Finset.card_sdiff_add_card_eq_card hsub2
+  omega
+
+
+
+/-- A splice performed at an explicit factorization preserves the
+start and finish vertices of the original concatenated trail. -/
+theorem FreshCountedTrail.spliceAtFactorization_endpoint
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v b : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v b)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    Nonempty (FreshCountedTrail m c a b) := by
+  exact ⟨FreshCountedTrail.spliceAtFactorization
+    P Q C hPQ hPC hQC⟩
+
+/-- A closed original trail remains closed after inserting a
+disjoint residual cycle at an explicitly factored vertex. -/
+theorem FreshCountedTrail.spliceAtFactorization_closed
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a v : Fin m → Bool}
+    (P : FreshCountedTrail m c a v)
+    (Q : FreshCountedTrail m c v a)
+    (C : FreshCountedTrail m c v v)
+    (hPQ : Disjoint P.used Q.used)
+    (hPC : Disjoint P.used C.used)
+    (hQC : Disjoint Q.used C.used) :
+    Nonempty (FreshCountedTrail m c a a) := by
+  exact ⟨FreshCountedTrail.spliceAtFactorization
+    P Q C hPQ hPC hQC⟩
+
+
+
+/-- A fresh trail is factorable at its initial vertex, using an
+empty prefix and the entire trail as suffix. This is the first
+constructive case of the general visited-vertex factorization. -/
+def FreshCountedTrail.factorAtStart
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    FreshCountedTrail m c a a × FreshCountedTrail m c a b :=
+  ({ walk := CountedWalk.empty a
+     nodup := by simp [CountedWalk.edges] }, T)
+
+/-- Factorization at the initial vertex preserves all counted
+edge instances, and the two factors are disjoint. -/
+theorem FreshCountedTrail.factorAtStart_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    (T.factorAtStart).1.used ∪ (T.factorAtStart).2.used = T.used ∧
+      Disjoint (T.factorAtStart).1.used (T.factorAtStart).2.used := by
+  constructor
+  · simp [FreshCountedTrail.factorAtStart,
+      FreshCountedTrail.used, CountedWalk.edges]
+  · simp [FreshCountedTrail.factorAtStart,
+      FreshCountedTrail.used, CountedWalk.edges]
+
+/-- A fresh trail is also factorable at its terminal vertex,
+using the entire trail as prefix and an empty suffix. -/
+def FreshCountedTrail.factorAtFinish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    FreshCountedTrail m c a b × FreshCountedTrail m c b b :=
+  (T, { walk := CountedWalk.empty b
+        nodup := by simp [CountedWalk.edges] })
+
+/-- Terminal factorization likewise preserves every counted
+edge instance and satisfies exact disjointness. -/
+theorem FreshCountedTrail.factorAtFinish_used
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    (T.factorAtFinish).1.used ∪ (T.factorAtFinish).2.used = T.used ∧
+      Disjoint (T.factorAtFinish).1.used (T.factorAtFinish).2.used := by
+  constructor
+  · simp [FreshCountedTrail.factorAtFinish,
+      FreshCountedTrail.used, CountedWalk.edges]
+  · simp [FreshCountedTrail.factorAtFinish,
+      FreshCountedTrail.used, CountedWalk.edges]
+
+
+
+/-- A vertex occurs in the directed walk if it is its endpoint
+or occurred before its last appended edge. This definition
+retains an actual occurrence, not just membership in edge support. -/
+def CountedWalk.Visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) (v : Fin m → Bool) : Prop :=
+  ∃ (P : CountedWalk m c a v)
+    (Q : CountedWalk m c v b),
+    T.edges = Q.edges ++ P.edges
+
+/-- A visited vertex has an actual directed prefix/suffix
+factorization, with exact edge-instance list decomposition. -/
+theorem CountedWalk.factor_of_visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (hv : T.Visits v) :
+    ∃ (P : CountedWalk m c a v)
+      (Q : CountedWalk m c v b),
+      T.edges.toFinset = P.edges.toFinset ∪ Q.edges.toFinset := by
+  obtain ⟨P, Q, hlist⟩ := hv
+  refine ⟨P, Q, ?_⟩
+  rw [hlist, List.toFinset_append]
+  exact Finset.union_comm _ _
+
+/-- Every directed walk visits its terminal vertex. -/
+theorem CountedWalk.visits_finish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.Visits b := by
+  exact ⟨T, CountedWalk.empty b, by
+    simp [CountedWalk.edges]⟩
+
+/-- Every directed walk visits its starting vertex. -/
+theorem CountedWalk.visits_start
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.Visits a := by
+  exact ⟨CountedWalk.empty a, T, by
+    simp [CountedWalk.edges]⟩
+
+
+/-- An explicitly visited vertex remains visited after appending a
+directed edge. This constructs the suffix by appending to the
+previous suffix, preserving exact edge-instance order. -/
+theorem CountedWalk.visits_append_of_visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b)
+    (hv : T.Visits v) :
+    (CountedWalk.append T e he).Visits v := by
+  obtain ⟨P, Q, hlist⟩ := hv
+  refine ⟨P, CountedWalk.append Q e (by simpa only using he), ?_⟩
+  simp only [CountedWalk.edges]
+  rw [hlist]
+
+/-- The predecessor terminal vertex is visited after one append.
+This provides a concrete interior-vertex occurrence rather than
+requiring the factorization as a new hypothesis. -/
+theorem CountedWalk.visits_previous_finish
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b) :
+    (CountedWalk.append T e he).Visits b :=
+  CountedWalk.visits_append_of_visits T e he T.visits_finish
+
+
+
+/-- A visited vertex of a FRESH counted trail admits a genuine
+factorization into two fresh trails with disjoint edge-instance
+sets. This uses the no-duplicate invariant of the ORIGINAL trail,
+rather than assuming disjointness as an additional hypothesis. -/
+theorem FreshCountedTrail.factor_of_visits
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hv : T.walk.Visits v) :
+    ∃ (P : FreshCountedTrail m c a v)
+      (Q : FreshCountedTrail m c v b),
+      Disjoint P.used Q.used ∧
+        T.used = P.used ∪ Q.used := by
+  classical
+  obtain ⟨PW, QW, hlist⟩ := hv
+  have hnodup : (QW.edges ++ PW.edges).Nodup := by
+    rw [← hlist]
+    exact T.nodup
+  have hparts := List.nodup_append.mp hnodup
+  have hP : PW.edges.Nodup := hparts.2.1
+  have hQ : QW.edges.Nodup := hparts.1
+  let P : FreshCountedTrail m c a v :=
+    ⟨PW, hP⟩
+  let Q : FreshCountedTrail m c v b :=
+    ⟨QW, hQ⟩
+  refine ⟨P, Q, ?_, ?_⟩
+  · apply Finset.disjoint_left.mpr
+    intro e heP heQ
+    have hePl : e ∈ PW.edges := by
+      simpa [P, FreshCountedTrail.used] using heP
+    have heQl : e ∈ QW.edges := by
+      simpa [Q, FreshCountedTrail.used] using heQ
+    exact hparts.2.2 e heQl hePl
+  · change T.walk.edges.toFinset =
+      PW.edges.toFinset ∪ QW.edges.toFinset
+    rw [hlist, List.toFinset_append]
+    exact Finset.union_comm _ _
+
+
+
+/-- A residual closed trail disjoint from an original fresh trail
+can be spliced at ANY vertex with a genuine visit witness.
+The disjointness of the prefix and suffix is derived from
+the original trail's Nodup invariant. -/
+theorem FreshCountedTrail.exists_splice_of_visit
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hv : T.walk.Visits v)
+    (C : FreshCountedTrail m c v v)
+    (hTC : Disjoint T.used C.used) :
+    ∃ R : FreshCountedTrail m c a b,
+      R.used = T.used ∪ C.used := by
+  obtain ⟨P, Q, hPQ, hT⟩ := T.factor_of_visits hv
+  have hPC : Disjoint P.used C.used := by
+    apply Finset.disjoint_left.mpr
+    intro e heP heC
+    apply (Finset.disjoint_left.mp hTC) (by
+      rw [hT]
+      exact Finset.mem_union_left _ heP) heC
+  have hQC : Disjoint Q.used C.used := by
+    apply Finset.disjoint_left.mpr
+    intro e heQ heC
+    apply (Finset.disjoint_left.mp hTC) (by
+      rw [hT]
+      exact Finset.mem_union_right _ heQ) heC
+  refine ⟨FreshCountedTrail.spliceAtFactorization P Q C
+    hPQ hPC hQC, ?_⟩
+  rw [FreshCountedTrail.spliceAtFactorization_used, hT]
+  simp only [Finset.union_assoc]
+
+/-- The same interior splice strictly decreases the unused-edge
+count when the residual cycle is nonempty. -/
+theorem FreshCountedTrail.exists_strict_splice_of_visit
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b v : Fin m → Bool}
+    (T : FreshCountedTrail m c a b)
+    (hv : T.walk.Visits v)
+    (C : FreshCountedTrail m c v v)
+    (hTC : Disjoint T.used C.used)
+    (hC : 0 < C.used.card) :
+    ∃ R : FreshCountedTrail m c a b,
+      (Finset.univ \ R.used).card <
+        (Finset.univ \ T.used).card := by
+  obtain ⟨R, hR⟩ := T.exists_splice_of_visit hv C hTC
+  refine ⟨R, ?_⟩
+  rw [hR]
+  have hsubT : T.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hsubR : T.used ∪ C.used ⊆
+      (Finset.univ : Finset (CountedBinaryEdge m c)) :=
+    Finset.subset_univ _
+  have hcard := Finset.card_union_of_disjoint hTC
+  have h1 := Finset.card_sdiff_add_card_eq_card hsubT
+  have h2 := Finset.card_sdiff_add_card_eq_card hsubR
+  omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
