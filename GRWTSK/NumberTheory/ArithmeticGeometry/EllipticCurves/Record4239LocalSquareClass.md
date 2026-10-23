@@ -41,3 +41,42 @@ draft PR #1068, native no-two-torsion draft PR #1071. No rank lower
 bound is established by these finite-field statements alone. Do not
 admit to `GRWTSK.lean` without replay, `--wfail`, `--trust=0`,
 axiom-closure review and adverse fixtures.
+
+
+## Follow-on supplier: unit square-class transport (same draft PR)
+
+`Record4239UnitSquareClassTransport.lean` constructs, for any true unital ring
+homomorphism `f : R →+* S`, a **genuine** group homomorphism
+
+```
+UnitSquareClasses R →* UnitSquareClasses S
+```
+
+and a representative formula using `Units.map f.toMonoidHom`. It composes
+this map with `residueSquareClassBitHom p` to obtain
+`localUnitClassCharacter p f`. The field residue bit on a source unit is
+literally the bit of that unit's reduction.
+
+The positive finite fixture is the ring reduction
+`reduction49to7 : ZMod 49 →+* ZMod 7` and the corresponding
+`reduction49to7SquareClassCharacter`. An independent executable
+standard-library check `record4239_unit_squareclass_transport_replay.py`
+exhausts all 42 units and 1,764 pairs, finding two square classes with
+21 representatives each and confirming that all maps respect the unit
+square-class relation.
+
+The **negative control** is theorem candidate
+`noRationalRingReductionToPrime`: there is no unital ring homomorphism
+`ℚ →+* ZMod p` when p is prime. The proof is the exact identity
+`p*(1/p)=1` in ℚ versus `p=0` in characteristic p. Thus the
+global rational x−T square classes cannot be inserted directly into this
+unit-only transport: they require a separately constructed local ring,
+even-valuation normalization, and a proof that normalized representatives
+are independent of square choices.
+
+This increment is a *mathematical supplier* rather than a global descent
+map. It does not yet close `SourceBitsMatch`, construct
+`WeierstrassCurve.Affine.μ` on record #4239, or establish a rank bound.
+
+**Trust**: SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. Do not promote the
+new Lean source until pinned version replay and kernel axiom audit.
