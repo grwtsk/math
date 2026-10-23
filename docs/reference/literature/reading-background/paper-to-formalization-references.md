@@ -387,8 +387,10 @@ for the elementary polynomial/sign/point identities;
 `finite-certificate` for source-data point arithmetic;
 not `direct-import` of a paper theorem and **not a
 `local-proved-bridge`** to analytic number theory or
-elliptic rank. The files remain
-`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`.
+elliptic rank. Historical source comments retain
+`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. Subsequent verification of
+`ResolvableQuintic` is recorded in **FAREY-VALIDATION-20261023** below; this
+scoped update does not infer analytic or rank bridges from those checks.
 The earlier 19-module validation target
 `698b694747a0b62f4126caf5475601b073ebcd9e`
 predates these files and **cannot** verify them.
@@ -617,30 +619,19 @@ and Mathlib `MulChar.map_nonunit`.
 See [mathematical scope note](../../../mathematics/NumberTheory/Farey/gaussian-modular-dirichlet-walk.md)
 and the prior bridge issue [#1093](https://github.com/grwtsk/math/issues/1093).
 
-**Relationship classifications.** **`source-proof-candidate`** for the
-local exact algebra, matrix/word comparison, finite additive detection,
-nonunit obstruction and predicate transport; **`conditional-interface`**
-for the combined reached-cell theorem, whose endpoint-sign and nonunit
-premises remain explicit; **`obstruction-at-scope`** only to a pure
-finite Dirichlet-character representation; **not**
-`local-proved-bridge`, `direct-import` of an outside paper theorem,
-or an analytic/spectral theorem. The upstream Mathlib facts are
-**code dependencies**, not a claim to have audited their transitive axioms
-in this repository.
-
-**Verification and unresolved premises.** GitHub source readback at
-`4ca07594f5c944ba36cd1b14e44f4482cc5d94e8` confirmed two direct
-imports, one definition, eleven authored theorems, and no literal source
-declaration `sorry`, `admit` or `axiom`. The commit has no combined
-GitHub status in the lookup. The available local container has no
-`lean` or `lake`, and `git ls-remote` cannot resolve github.com.
-**SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**:
-build exit status **not obtained**, fresh kernel check **not obtained**,
-transitive axiom/unsafe audit **not obtained**, and no verified theorem
-receipt exists. The source is deliberately unimported from
-`GRWTSK.lean`. Full source/dependency replay is queued in [#1096](https://github.com/grwtsk/math/issues/1096),
-pinned to `ecfda6e1b7ea98925de3cbbf8e86bf258b8b8e9c`, separately from
-upstream #1093 and #1094. The queue is not a verification receipt.
+**Relationship classifications and actual verification.** The source-pinned
+run in **FAREY-VALIDATION-20261023** below supersedes the earlier local
+`NOT_RUN / NOT_KERNEL_AUDITED` observation for the eight named files only.
+The finite local identities are now **kernel-verified bridges at their stated
+scope**; reached-cell sign/nonunit assumptions remain **conditional interfaces**,
+and the pure finite Dirichlet representation is refuted only at nonunits.
+Upstream Mathlib supplies imported mathematics through named code dependencies,
+not through a newly attributed outside paper. Strict compilation and fresh
+trust-zero transitive axiom checking passed; independent external replay and
+analytic premises remain unestablished. The source stays outside `GRWTSK.lean`.
+Historical queue [#1096](https://github.com/grwtsk/math/issues/1096) is a request,
+not an execution receipt; actual commands, immutable blobs and local receipt
+paths are recorded in the dated entry below.
 
 **Nonclaims.** No automatic nonunit property of all Farey words,
 spectral decomposition of the native Farey action, full Dirichlet
@@ -648,3 +639,115 @@ L-function exclusion, analytic continuation, prime cancellation,
 Sarnak Möbius disjointness, RH/GRH, uniqueness/existence of rational roots,
 quintic solvability, or elliptic-curve rank is derived. A finite
 Gaussian/Dirichlet obstruction does not constitute those missing bridges.
+
+## Case FAREY-VALIDATION-20261023 — finite Farey algebra and selected return channel
+
+**Source identity and classification.** These eight modules are 2026 repository
+constructions under the source-credited mathematical direction of grwtsk contributors, with OpenAI formalization assistance. They are not imports of an
+identified external paper: a separate paper title, byline, version, DOI or theorem
+locator is **not established**. Their upstream mathematical suppliers are the
+pinned Mathlib code sources linked in FAREY-GMD-WALK-01 and its matrix notation,
+determinant, and real-square-root libraries. No historical influence is inferred.
+The local finite identities below are **kernel-verified bridges at their stated
+scope**; the reached-cell sign/nonunit premises remain **conditional interfaces**.
+The rational and mod-four witnesses are exact **finite evidence**, not analytic
+estimates or evidence of RH. The proposed pure Dirichlet representation is a
+refuted interface at nonunits, not a supplied theorem. Spiral/analytic analogies
+and unresolved extension premises are not promoted to proved bridges.
+
+**Exact declarations and hypotheses.** Fully qualified declarations:
+
+- `GRWTSK.NumberTheory.Farey.Cell.left_lt_right`, `GRWTSK.NumberTheory.Farey.resolvableEye_refine`,
+  `GRWTSK.NumberTheory.Farey.polynomialResolves_mul_iff_of_pos_at_endpoints`, and
+  `GRWTSK.NumberTheory.Farey.quadratic_mul_cubic_natDegree`: natural endpoints, positive denominators,
+  determinant one; strict positivity at the two endpoints for bidirectional
+  sign transport; nonzero factors and degrees two and three for degree five.
+- `GRWTSK.NumberTheory.Farey.polynomialResolves_mul_of_nonneg_at_endpoints` and
+  `GRWTSK.NumberTheory.Farey.exists_endpoint_positive_factor_with_extra_rational_root`: nonnegative
+  endpoint factors suffice for forward sign transport, but even strict endpoint
+  positivity does not imply equality of rational zero sets (extra root 1/4).
+- `GRWTSK.NumberTheory.Farey.gaussian_cross_im_eq_one`, `GRWTSK.NumberTheory.Farey.modularDet_eq_one`,
+  `GRWTSK.NumberTheory.Farey.gaussianModularEye_refine`, and
+  `GRWTSK.NumberTheory.Farey.nonunitEye_gaussian_modular_dirichlet_obstruction`: actual Gaussian product,
+  determinant modulo arbitrary q, and additive selectors for `[NeZero q]`;
+  the concrete right numerator two modulo four is a nonunit.
+- `GRWTSK.NumberTheory.Farey.GroupSuperwalk.frame_walk`, `GRWTSK.NumberTheory.Farey.GroupSuperwalk.wordUnit_append`, and
+  `GRWTSK.NumberTheory.Farey.GroupSuperwalk.quintic_eye_on_walk_iff_of_endpoint_pos`: finite chronological
+  positive shear words act on the right of the actual integral Farey frame;
+  no action of all inverse group elements on positive cells is asserted.
+- `GRWTSK.NumberTheory.Farey.gaussianModularEye_nonunit_obstruction_on_walk` and
+  `GRWTSK.NumberTheory.Farey.nonunit_right_pure_dirichlet_indicator_impossible`: endpoint signs and
+  nonunit status at the reached cell remain explicit, with nonzero modulus.
+- `GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.unitCharacterSum_eq_totient_mul_selector`,
+  `GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.scaled_selector_channels`, and
+  `GRWTSK.NumberTheory.Farey.ResidueChannelDecomposition.farey_nonunit_channel_certificate`: the character
+  orthogonality selector requires a unit target; the totient scale and additive
+  residual on nonunits are retained exactly.
+- `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.commutant_is_scalar` and
+  `GRWTSK.NumberTheory.Farey.GroupSpectralChannel.native_invariant_projector_trivial`: the native complex
+  two-coordinate matrices commuting with both opposed shears are scalar;
+  an additional idempotence premise gives zero or identity.
+- `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_idempotent`,
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.returnProjector_eigen`,
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.expandingProjector_iterate`, and
+  `GRWTSK.NumberTheory.Farey.ReturnSpectralChannel.exists_proper_return_channel`: the selected return is
+  LR=[[1,1],[1,2]]. The algebraic projector uses s²=5 and s≠0; s=√5 supplies
+  those premises and the expanding eigenvalue (3+√5)/2. This projector commutes
+  with the single return, not both generators; repeated returns act by λⁿ.
+
+**Immutable source pin.** All eight files below are under
+`GRWTSK/NumberTheory/Farey/` at repair commit
+[`55fe9dbc34a784cb15782c9dfb0d371a55c6f988`](https://github.com/grwtsk/math/commit/55fe9dbc34a784cb15782c9dfb0d371a55c6f988).
+The transitive local source closure contains 120 files; SHA-256 snapshots and
+execution logs are outside canonical mathematics in the receipt directory below.
+
+| Module | Git blob |
+|---|---|
+| `FareyResidueChannelDecomposition` | `a44f3cf92d0d3c05ff09ac66b43b3d078918982b` |
+| `GaussianModularDirichletBridge` | `01c1b429ef064208469282ba0c7d8e537d26b120` |
+| `GaussianModularDirichletWalk` | `fcabf4db6518485b54ff92025d083d930bf53fa8` |
+| `GroupSpectralChannel` | `4c643e9c728d7a0052dab7c7a1353e0ef97233cd` |
+| `GroupSuperwalk` | `281df5e34fdc5ee557642993b95c10e544d62b99` |
+| `ResolvableQuintic` | `7caef4b022e35202eef471aae2730dff6b518f70` |
+| `ResolvableQuinticEndpointControls` | `28d8456db1dc7c6243b51275b8216e3f1ff89c71` |
+| `ReturnSpectralChannel` | `de3d52cd221bdf2334bcacccff43fafde4d52db9` |
+
+**Actual verification.** Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`. The following commands returned
+exit status zero against the source bytes pinned above:
+
+```sh
+lake build GRWTSK.NumberTheory.Farey.GaussianModularDirichletWalk GRWTSK.NumberTheory.Farey.ReturnSpectralChannel GRWTSK.NumberTheory.Farey.FareyResidueChannelDecomposition GRWTSK.NumberTheory.Farey.ResolvableQuinticEndpointControls --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/farey-all-audit.lean
+```
+
+Strict module/dependency build: 8,825 jobs. Public-root build: 9,304 jobs.
+Fresh kernel replay: 3,077 transitive GRWTSK declarations; all use only
+`propext`, `Classical.choice`, and/or `Quot.sound` (or none), with no `sorryAx`
+or additional axioms. All 289 Farey-owned declarations, including
+private/generated declarations, have reconciled type inventories and are safe.
+All 99 authored theorem/lemma headers are unchanged from the pre-repair source.
+The import path, natural-number cast proof, scalar-entry proof, unused simp
+arguments, and accidental nested-comment text were repaired without changing
+mathematical hypotheses or conclusions.
+
+Receipts: external directory
+`/Users/local/Documents/ChatGPT/math-branch-integration-20261022/`, files
+`farey-final-build.log`, `farey-public-build.log`, `farey-all-audit.lean`,
+`farey-all-audit.log`, `farey-validated-snapshot.json`, and
+`farey-completion-result.json`. Earlier failed build logs remain diagnostic
+records, not acceptance receipts. This is local kernel/axiom verification;
+independent external replay and CI acceptance are **not claimed**. Historical
+`SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED` comments remain unchanged as source
+provenance; this dated, source-pinned entry records the subsequent actual run.
+The eight standalone modules remain outside `GRWTSK.lean`.
+
+**Precise missing bridges and excluded scope.** No rational-root existence or
+search completeness, general quintic solution, infinite-volume spectral gap,
+canonical global angular character, analytic continuation, Dirichlet L-function
+zero-free region, Möbius cancellation, Sarnak disjointness, elliptic rank, or RH
+consequence follows. The finite return projector is not a simultaneous
+projector for both shears. This run does not validate concurrently added
+`EndpointInformationLoss`, `InvariantProjectorInformationLoss`, or
+`ReturnAngularChannel`; those retain their own pending evidence state.
