@@ -177,7 +177,7 @@ New owners:
 - `GRWTSK.Analysis.ErrorBounds.RationalExpTrace`.
 
 The isolated root is `GRWTSK.Interfaces.QuadraticIntervalRationalTraceCore`.
-The target is `verification/quadratic-interval-rational-trace-v0.1.toml` and
+The target is `docs/verification/Interfaces/QuadraticIntervalRationalTraceCore/quadratic-interval-rational-trace-v0.1.toml` and
 inherits the exact prior exponential-scaling target. It requires all public
 elaborated types, structure-generated declarations, finite decision instances,
 full transitive imports/axioms, exact source identity and prior controls.

@@ -1,0 +1,234 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "canonical-tent-record-evaluation-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.CanonicalTentRecordEvaluationCore"
+build_target = "GRWTSK.Interfaces.CanonicalTentRecordEvaluationCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "7db0dd6f9aac06e8ac36d6993f75cc0844b43ff8"
+base_tree = "e45a4218fc85d2c32898cc37419a4edaa44bee1e"
+stacked_on_pr = 304
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CanonicalTentPrimeCore/canonical-tent-prime-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "5a97835872bf0be81f364b9141144d1c31983641".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "ab6f3023144fa2cc5d463e8fc233f07bc6a91f38".
+# Pre-quadrature-repair inherited_target_blob = "cfa892888f51811f79c4120b321fc8f876b5526b".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "32e4ce3303e18ed866b2c852bd335f6aea660f24".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "556ae71d7bbd16f30482a1b0d17d32b402043d81"
+receipt_policy = "Bind the exact new commit/tree externally. No execution or acceptance is represented."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+complete_exp_tail = "PINNED_MATHLIB_BOUND_WITH_EXPLICIT_DEGREE_GUARD"
+logarithm_input_enclosure = "INDEPENDENT_SUPPLIER_REQUIRED"
+coordinate_sensitivity = "DERIVED_FROM_INTEGRAL_KERNELS"
+finite_endpoint_polynomial_evaluation = "SOURCE_DRAFT"
+center_quotient_domain = "POSITIVE_DENOMINATOR_REQUIRED"
+canonical_head_aggregation = "SOURCE_DRAFT_EXACT_HEAD_AND_ACTUAL_MULTIPLICITIES"
+accumulation_rounding = "SEPARATE_INPUT_ERROR"
+zero_identity_and_inventory = "NOT_ENUMERATED_OR_CERTIFIED_BY_THIS_INCREMENT"
+serialized_checker = "NOT_SUPPLIED"
+range_reduction = "NOT_SUPPLIED"
+strict_prime_margin = "NOT_SUPPLIED"
+historical_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure"
+path = "GRWTSK/Analysis/Complex/FiniteExponentialEnclosure.lean"
+source_blob = "f8de8e5a517cdc022fa48516ae744defabd599ff"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentKernelEnclosure"
+path = "GRWTSK/Analysis/Complex/TentKernelEnclosure.lean"
+source_blob = "a11c25d44bf3d4c8c38112a146f295e7df62caec"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentRecordEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentRecordEvaluationCore.lean"
+source_blob = "6148dab07641503edbc60e41b58dfafd7b716e6d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentRecordEvaluation.lean"
+source_blob = "f7d1cf6a69b6daccbe56013b9700e006dc9c1999"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/TentRecordEvaluationControls.lean"
+source_blob = "85591cc39f053ef656df8f83cc315dcdbce2ea43"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentMellinKernel"
+path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentPrimeCriterion.lean"
+source_blob = "6812843e5ef6eee7c30725cd0bc93a0e070f0eec"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentPrimeCore"
+path = "GRWTSK/Interfaces/CanonicalTentPrimeCore.lean"
+source_blob = "5165b5e5256d9cf5d503a8c61077fb053f594c12"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/Exponential.lean"
+blob = "b5c9a8950bdd3dd513d39b5aa01738cc7e472a80"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Chebyshev/canonical-tent-record-evaluation.md"
+source_blob = "b4c149cd106c902df2b02c434a96b1331dc11ff7"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_SOURCE_DECLARATIONS_NOT_LEAN_TYPES"
+generated_structure_members_require_full_audit = true
+source_declared_names = [
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.rectNorm",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.rectNorm_nonneg",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.norm_le_rectNorm",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.expPolynomial",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.expRemainder",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.expRemainder_nonneg",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.expPolynomial_error",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.exp_difference_near",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.expPolynomial_perturbed_error",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.PowerEvaluation",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.PowerEvaluation.value",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.PowerEvaluation.error",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.PowerEvaluation.error_nonneg",
+  "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure.PowerEvaluation.sound",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.tentSensitivity",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.norm_tentKernel_sub_le",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.tentSensitivity_one_le",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.norm_tentKernel_sub_le_one",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.endpoint_quotient_error",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.PointEvaluation",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.PointEvaluation.value",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.PointEvaluation.error",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.PointEvaluation.sound",
+  "GRWTSK.Analysis.Complex.TentKernelEnclosure.PointEvaluation.error_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.evaluatedHead",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.headError",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.norm_head_sub_evaluated_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.headError_nonneg",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.norm_head_sub_rounded_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.head_re_upper",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.prime_in_square_of_records",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation.prime_in_square_of_rounded_records",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.empty_polynomial_retains_error",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.quadratic_polynomial_at_half",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.degree_guard_rejects_large_argument",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.zero_center_rejects_denominator",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.minus_one_center_rejects_denominator",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.middle_endpoint_error_has_coefficient_two",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.multiplicity_scales_error",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.logarithm_error_is_separate",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.positive_radius_not_exact_coordinate",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.TentRecordEvaluationControls.same_height_not_same_point",
+]
+
+[[acceptance_obligations]]
+id = "R01"
+requirement = "Elaborate every new module at the exact committed head and preserve all inherited acceptance obligations."
+
+[[acceptance_obligations]]
+id = "R02"
+requirement = "Reconcile exact types and the complete transitive import/axiom/native closure, including generated structure projections and constructors."
+
+[[acceptance_obligations]]
+id = "R03"
+requirement = "Enforce the Taylor radius/degree guard; an empty polynomial keeps its complete error and a finite next term is not the whole tail."
+
+[[acceptance_obligations]]
+id = "R04"
+requirement = "Retain independently proved real logarithm enclosures and the small argument-displacement guard; floating-point outputs alone do not supply them."
+
+[[acceptance_obligations]]
+id = "R05"
+requirement = "Retain both truncation and logarithm-input uncertainty; derive polynomial values rather than accepting an arbitrary kernel or exponential value."
+
+[[acceptance_obligations]]
+id = "R06"
+requirement = "Derive coordinate sensitivity using the entire integral kernel and true horizontal coordinates, not critical-line projection."
+
+[[acceptance_obligations]]
+id = "R07"
+requirement = "Prove the actual and center real bounds; centers at 0 or -1 cannot use the guarded quotient evaluator."
+
+[[acceptance_obligations]]
+id = "R08"
+requirement = "Retain positive center-denominator bounds, radius normalization, middle coefficient two, and exact algebraic division."
+
+[[acceptance_obligations]]
+id = "R09"
+requirement = "Do not require a coordinate ball to avoid removable parameter singularities; the sensitivity argument is integral-defined."
+
+[[acceptance_obligations]]
+id = "R10"
+requirement = "Bind every record to the SAME full canonical closed head and actual analytic multiplicity; do not accept an observed list by cardinality."
+
+[[acceptance_obligations]]
+id = "R11"
+requirement = "Charge multiplicities on the entire per-record error and add a separate accumulation/serialization error exactly once."
+
+[[acceptance_obligations]]
+id = "R12"
+requirement = "Preserve the coefficient-kappa complete omitted-zero tail, signed trivial-zero floor, proper-prime-power correction and strict prime margin."
+
+[[acceptance_obligations]]
+id = "R13"
+requirement = "Record specifications do not supply zero identities, completeness enumeration, a byte checker, range reduction, numerical practicality or all-interval margins."
+
+[[acceptance_obligations]]
+id = "R14"
+requirement = "Exact rational synthetic diagnostics and limited text checks do not establish universal analytic correctness, Lean acceptance or a spectral prime certificate."

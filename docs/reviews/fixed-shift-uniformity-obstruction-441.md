@@ -162,7 +162,7 @@ fixed_power_saving_does_not_imply_sublinear_uniformity
 ```
 
 The passive, independent proof target is
-`verification/fixed-shift-uniformity-obstruction-441-v0.1.toml`.
+`docs/verification/_unscoped/fixed-shift-uniformity-obstruction-441-v0.1.toml`.
 The module imports only pinned Mathlib and has no transitive
 dependency on the earlier eight generic Walsh modules, the
 Liouville arithmetic leaf, or the external fixed-form theorem.

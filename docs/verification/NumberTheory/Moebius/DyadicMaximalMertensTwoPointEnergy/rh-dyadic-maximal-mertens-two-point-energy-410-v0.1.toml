@@ -1,0 +1,252 @@
+# Historical original target Git blob: f08d448933a12b3840ba4f10c25ec31f3f599998.
+# Historical original parent: b149ccd28da3fa6e9e43e1feebf0d56b410b84be; tree 22a77fe6d5e12f058a104ab78d1958942a4abfa7.
+# Historical original mathematical note Git blob: a8f25ff0d93550ce73861829a4d2f9bcf5dd6f56.
+# Exact maximal/quadratic equivalence is retained; the signed-packet direction is only a sufficient implication.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-maximal-mertens-two-point-energy-410-v0.1"
+owner_repository = "grwtsk/math"
+issue = 410
+parent_issue = 405
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 409
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "f445870c058bb13335ff83a2b589645968d70c23"
+stacked_parent_tree = "38acc89f8cb2c476d1fb00c4ce3b35a6b7951e6f"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicMaximalMertensTwoPointEnergy.lean"
+new_module_git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-maximal-mertens-two-point-energy.md"
+mathematical_note_git_blob = "4e63bdc4119f5985032f1cfdd775d471bab4fade"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+publication_status = "PUBLISHED_SOURCE_DRAFT"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+private_elaborated_names_status = "NOT_RUN"
+public_root_modified = false
+arithmetic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+authored_declaration_count = 15
+definition_count = 4
+theorem_script_count = 11
+private_helper_count = 0
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/DyadicQuadraticMertensTwoPointPrefix/rh-dyadic-quadratic-mertens-two-point-prefix-405-v0.1.toml"
+git_blob = "fa44de18ac4d9992b9e8454bb5b1c8ca56fec116"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicQuadraticMertensTwoPointPrefix.lean"
+git_blob = "3813cd9634d2f4986c042ab8b52d27ed78092825"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean"
+git_blob = "2a84e63d5ae76a2d2a37cc9bd45818f32af997f7"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[external_dependencies]]
+module = "Mathlib.Order.PartialSups"
+selected_declarations = ["partialSups", "le_partialSups_of_le", "partialSups_le_iff"]
+status = "PINNED_DEPENDENCY_ELABORATION_NOT_RUN"
+
+[diagnostics]
+engine = "python-integer-exact"
+check_count = 1051562
+coefficient_alphabet = [-1, 0, 1]
+exhaustive_stream_length = 8
+exhaustive_stream_count = 6561
+generic_scales = [1, 2, 4]
+actual_moebius_cutoff = 512
+actual_dyadic_scales = [1, 2, 4, 8, 16, 32, 64, 128, 256]
+normal_mode_status = "PASS"
+optimized_mode_status = "PASS"
+reports_byte_identical = true
+report_sha256 = "9b5211e7731bf558100105c51a8eb30c8dd2e143593ef99f7b4ed5afd4f26c98"
+diagnostics_are_not_infinite_proofs = true
+diagnostics_are_not_lean_elaboration = true
+
+[hostile_controls]
+zero_prefix_included = true
+all_admissible_prefix_lengths_required = true
+all_positive_shifts_required = true
+half_open_shift_endpoint_required = true
+terminal_only_replacement_rejected = true
+fixed_shift_range_rejected = true
+canonical_maximal_energy_exactly_equivalent_to_quadratic_envelope = true
+canonical_maximal_energy_only_sufficient_for_signed_packet = true
+previous_prefix_index_required = true
+ordered_pair_factor_two_required = true
+abel_terminal_term_inherited = true
+finite_tables_not_universal = true
+lower_bound_not_substitute_for_upper_bound = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_damping_paid = false
+riemann_hypothesis_proved_unconditionally = false
+maximal_energy_estimate_proved = false
+converse_from_packet = false
+converse_from_rh = false
+
+[[declarations]]
+source_name = "mertensTwoPointPrefixMax"
+visibility = "public"
+kind = "def"
+source_signature = """def mertensTwoPointPrefixMax (j h : ℕ) : ℝ"""
+source_signature_sha256 = "e5b550834d7e4a6b007445a9876f23a8d45bce9dad005e33665de54add1fe524"
+
+[[declarations]]
+source_name = "mertensTwoPointMaximalQuadraticEnergy"
+visibility = "public"
+kind = "def"
+source_signature = """def mertensTwoPointMaximalQuadraticEnergy (j : ℕ) : ℝ"""
+source_signature_sha256 = "9cd5186506eb03e6d558c0607602bc87c87bfdb2ce88ecff80e2ad232b904110"
+
+[[declarations]]
+source_name = "DyadicMertensTwoPointMaximalEnergy"
+visibility = "public"
+kind = "def"
+source_signature = """def DyadicMertensTwoPointMaximalEnergy (j : ℕ) (B : ℝ) : Prop"""
+source_signature_sha256 = "4b4e7ca67b41896264624f16b4a88517f145d0cf38c0c76a325985b416364bc2"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+visibility = "public"
+kind = "def"
+source_signature = """def SubpolynomialDyadicMaximalMertensTwoPointEnergy : Prop"""
+source_signature_sha256 = "0f9c430a83cd0ccc695fbc07699e5a829143f827061175a0e997c835fa90c667"
+
+[[declarations]]
+source_name = "abs_mertensTwoPointPrefix_le_max"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem abs_mertensTwoPointPrefix_le_max
+    {j h N : ℕ}
+    (hN : N ≤ 2 ^ (j + 1) - h - 1) :
+    |mertensTwoPointPrefix h N| ≤ mertensTwoPointPrefixMax j h"""
+source_signature_sha256 = "614ef4d33b520d7e57b85e2c7c5645630282572a5932a0c9f011266000e1f539"
+
+[[declarations]]
+source_name = "mertensTwoPointPrefixMax_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensTwoPointPrefixMax_nonneg (j h : ℕ) :
+    0 ≤ mertensTwoPointPrefixMax j h"""
+source_signature_sha256 = "baba9c72635575f9fd212355f0cdaf5c9034e80ebeefd615dda44d36e72e4dda"
+
+[[declarations]]
+source_name = "mertensTwoPointShiftEnvelope_iff_prefixMax_le"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem mertensTwoPointShiftEnvelope_iff_prefixMax_le
+    {j h : ℕ} {U : ℝ} :
+    MertensTwoPointShiftEnvelope j h U ↔
+      0 ≤ U ∧ mertensTwoPointPrefixMax j h ≤ U"""
+source_signature_sha256 = "9b01084aa82cb34ddbed7fe0352d08c8f0f4706002988480a27b46fd5427974c"
+
+[[declarations]]
+source_name = "dyadicMertensTwoPointQuadraticEnvelope_of_maximalEnergy"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensTwoPointQuadraticEnvelope_of_maximalEnergy
+    {j : ℕ} {B : ℝ}
+    (hmax : DyadicMertensTwoPointMaximalEnergy j B) :
+    DyadicMertensTwoPointQuadraticEnvelope j B"""
+source_signature_sha256 = "057cb621d7b4acafc5c5a07656fabb3f27e5d8b318dc1cbce169c921a880b0e8"
+
+[[declarations]]
+source_name = "dyadicMertensTwoPointMaximalEnergy_of_quadraticEnvelope"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensTwoPointMaximalEnergy_of_quadraticEnvelope
+    {j : ℕ} {B : ℝ}
+    (hquad : DyadicMertensTwoPointQuadraticEnvelope j B) :
+    DyadicMertensTwoPointMaximalEnergy j B"""
+source_signature_sha256 = "e912d3f298ed132c27dd813e62eeb97057ad7548757af3bae4bef4081d629279"
+
+[[declarations]]
+source_name = "dyadicMertensTwoPointMaximalEnergy_iff_quadraticEnvelope"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem dyadicMertensTwoPointMaximalEnergy_iff_quadraticEnvelope
+    {j : ℕ} {B : ℝ} :
+    DyadicMertensTwoPointMaximalEnergy j B ↔
+      DyadicMertensTwoPointQuadraticEnvelope j B"""
+source_signature_sha256 = "aea484a583ffb2fdf1e2aa304509a593616d0778d1c85e830de304a0c912a0eb"
+
+[[declarations]]
+source_name = "subpolynomialDyadicQuadraticMertensTwoPointPrefix_of_maximalEnergy"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicQuadraticMertensTwoPointPrefix_of_maximalEnergy
+    (hmax : SubpolynomialDyadicMaximalMertensTwoPointEnergy) :
+    SubpolynomialDyadicQuadraticMertensTwoPointPrefix"""
+source_signature_sha256 = "888c0c3fb76ae850b764e000869786421fe8c8fd50159875fdd495f6cd7d5482"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMaximalMertensTwoPointEnergy_of_quadratic"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMaximalMertensTwoPointEnergy_of_quadratic
+    (hquad : SubpolynomialDyadicQuadraticMertensTwoPointPrefix) :
+    SubpolynomialDyadicMaximalMertensTwoPointEnergy"""
+source_signature_sha256 = "70928388fa99f5954ba85380a51c8faeea1daa91b0b94fcc189b6272d7735a36"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMaximalMertensTwoPointEnergy_iff_quadratic"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMaximalMertensTwoPointEnergy_iff_quadratic :
+    SubpolynomialDyadicMaximalMertensTwoPointEnergy ↔
+      SubpolynomialDyadicQuadraticMertensTwoPointPrefix"""
+source_signature_sha256 = "ab37b15e89a90bbb889db33b9ddafc152653eebf8dbda3fe3be1c97410ce4653"
+
+[[declarations]]
+source_name = "subpolynomialDyadicMertensShiftPacket_of_maximalTwoPointEnergy"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem subpolynomialDyadicMertensShiftPacket_of_maximalTwoPointEnergy
+    (hmax : SubpolynomialDyadicMaximalMertensTwoPointEnergy) :
+    SubpolynomialDyadicMertensShiftPacket"""
+source_signature_sha256 = "b76e32a5815b8feb70858806280f5a8601e2ac3f89d999fd245c21fdf7da3d2e"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+visibility = "public"
+kind = "theorem"
+source_signature = """theorem riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy
+    (hmax : SubpolynomialDyadicMaximalMertensTwoPointEnergy) :
+    _root_.RiemannHypothesis"""
+source_signature_sha256 = "db6bbf47f8d28700fdaf88c25a22f18d076c30037e6a013591fb559059286b48"

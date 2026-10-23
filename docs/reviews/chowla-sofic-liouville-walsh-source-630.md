@@ -242,7 +242,7 @@ liouvilleCyclicTV_of_allOrderEnvelope
 ```
 
 Passive clean-replay target:
-`verification/liouville-walsh-arithmetic-source-630-v0.1.toml`.
+`docs/verification/_unscoped/liouville-walsh-arithmetic-source-630-v0.1.toml`.
 
 It selects **all 10 transitive local modules**, including
 the eight preceding generic finite components,
@@ -321,7 +321,7 @@ normalized moment one and never belongs to these energies.
 The new module defines eight functions/propositions and
 drafts ten theorem declarations. A new **eleven-module**
 passive target,
-`verification/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`,
+`docs/verification/_unscoped/liouville-odd-lift-dyadic-recurrence-630-v0.1.toml`,
 selects all 90 theorem and 41 definition heads, preserving
 the earlier standalone ten-module target. Full review at
 `docs/reviews/chowla-sofic-liouville-odd-lift-recurrence-630.md`.

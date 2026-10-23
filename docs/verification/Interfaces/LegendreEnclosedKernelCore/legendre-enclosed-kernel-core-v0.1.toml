@@ -1,0 +1,271 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "legendre-enclosed-kernel-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 261
+root_module = "GRWTSK.Interfaces.LegendreEnclosedKernelCore"
+build_target = "GRWTSK.Interfaces.LegendreEnclosedKernelCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+base_tree = "4143a47d509560ecd38da6d9190c75e596935c07"
+stacked_on_pr = 266
+producer_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+producer_pr = 256
+producer_incorporation = "Two exact kernel blobs at existing paths, with one Git parent; no whole-branch merge."
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_complex_norm_blob = "0898fb3ad035a87ee89ce2093780486e857cc5ff"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/LegendreLogBudgetCore/legendre-log-budget-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "c8d98d6eed627c565e6b26f8d1e03a5cbd1086f7".
+# Pre-quadrature-repair inherited_target_blob = "7ed46408358786a62108a0801bc0bb4b2a3fa927".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+inherited_target_blob = "8eaa72f68d61b17b6d60ddcf515ed074b2bbde3e"
+receipt_revision_policy = "Bind the actual new commit, tree and this manifest blob externally. Source manifests and parent evidence do not accept this head."
+inventory_policy = "These are source names and blobs, not elaborated types. Report every declaration in listed modules and the complete transitive import/type/trust closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PowerOccupancy"
+path = "GRWTSK/NumberTheory/Chebyshev/PowerOccupancy.lean"
+source_blob = "f09a0f725e69025a6e6f789c287da2d43497e0b8"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers"
+path = "GRWTSK/NumberTheory/Chebyshev/HigherPrimePowers.lean"
+source_blob = "51c9ca36d3c2e0392dae041547d497714dc3bdb8"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource"
+path = "GRWTSK/NumberTheory/Chebyshev/HigherPrimePowerSource.lean"
+source_blob = "d0eb381f2a0f4bb06cac0225e44162f2c4961827"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervals"
+path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervals.lean"
+# Original pre-quadrature-repair source_blob = "594ff41e29323206962ef22863c82e3890382282".
+# Current pin binds repaired source; all inherited acceptance obligations remain open.
+source_blob = "29ffefcbeef17d9118f16268a42d5d8e5fd35114"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.FiniteSquareBudget"
+path = "GRWTSK/Analysis/ErrorBounds/FiniteSquareBudget.lean"
+source_blob = "fbfd45fb3e82f019adc243338a9c3c4222e5a704"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Combinatorics.Enumerative.BoundedWitnesses"
+path = "GRWTSK/Combinatorics/Enumerative/BoundedWitnesses.lean"
+source_blob = "40b8288910460ae0cd59dec55d3dda3481e6d229"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.LandauStatements"
+path = "GRWTSK/NumberTheory/Primes/LandauStatements.lean"
+# Original pre-repair source_blob = "41aa479be730fc09defba57576f9af0f09415306".
+source_blob = "c6efd023b4ca69c68f0a3b8022c67f656a12d546"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.LandauCountControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/LandauCountControls.lean"
+source_blob = "c728856d299556c770c2c0c623342b0848406e40"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.LandauPrimeCounts"
+path = "GRWTSK/Interfaces/LandauPrimeCounts.lean"
+source_blob = "22bbbda7139c35f1c8d428e927c96ec0fe1a3de6"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.PrimeIntervalWitness"
+path = "GRWTSK/NumberTheory/Chebyshev/PrimeIntervalWitness.lean"
+source_blob = "6f3bd25bd5c23f869d7cb2661e53be96d60d4746"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection"
+path = "GRWTSK/NumberTheory/Chebyshev/ProperPrimePowerCorrection.lean"
+source_blob = "1fa940a64afe1195974e1126b1a15cc6d335b64e"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.PrimePowerMarginControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/PrimePowerMarginControls.lean"
+source_blob = "98b36c02a526c53c614d085c747a673564af689e"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.LegendrePrimePowerBridge"
+path = "GRWTSK/Interfaces/LegendrePrimePowerBridge.lean"
+source_blob = "f10c3abb6e670c4192d943e8d9c31ac643022d4a"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CorrelationPairing"
+path = "GRWTSK/NumberTheory/Chebyshev/CorrelationPairing.lean"
+source_blob = "85923009b211961763765b523234e9746555ca7f"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.LegendreLogBudgetCore"
+path = "GRWTSK/Interfaces/LegendreLogBudgetCore.lean"
+source_blob = "1608af9776c7856b6e153615147972b299f45b6f"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.LogBudgetIntegrationControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/LogBudgetIntegrationControls.lean"
+source_blob = "8ac8c105fc93ed1b112b8549265278cf8dea3383"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget"
+path = "GRWTSK/NumberTheory/Chebyshev/LegendreLogBudget.lean"
+source_blob = "beab88f92e0965b6f9b669eb6587e2c2c555736e"
+origin_revision = "3edaab01df2755903a989d27024c0c6e585d10b8"
+disposition = "INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Original pre-repair source_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+disposition = "RETAINED_PRODUCER_BLOB"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.QuadraticIntervalKernel"
+path = "GRWTSK/NumberTheory/Chebyshev/QuadraticIntervalKernel.lean"
+source_blob = "4551d9366ba7eec2b7dcaa069842d0013ad2cda4"
+origin_revision = "7a73b34707889205a8b9af7bdd01e12383bc1679"
+disposition = "RETAINED_PRODUCER_BLOB"
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget"
+path = "GRWTSK/Analysis/ErrorBounds/ComplexSourceBudget.lean"
+source_blob = "222ffb59479250b434c07eb37b4ed0d5ac6f6fd8"
+origin_revision = "NEW_COMMIT"
+disposition = "NEW_SOURCE_DRAFT"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget.source_lower_bound", "GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget.source_complex_error", "GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget.source_real_error", "GRWTSK.Analysis.ErrorBounds.ComplexSourceBudget.source_imaginary_error"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.LegendreEnclosedKernelCore"
+path = "GRWTSK/Interfaces/LegendreEnclosedKernelCore.lean"
+source_blob = "bfc12f98851e08a66be7aaa75af958f0a7f54ed9"
+origin_revision = "NEW_COMMIT"
+disposition = "NEW_SOURCE_DRAFT"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/EnclosedKernelControls.lean"
+source_blob = "fc71d95785e2b33706407842f48f5d5905f4b634"
+origin_revision = "NEW_COMMIT"
+disposition = "NEW_SOURCE_DRAFT"
+required_declarations = ["GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.signed_remainder_retained", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.omitted_remainder_control", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.same_real_part_is_not_identity", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.imaginary_defect_cannot_have_zero_error", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.charged_imaginary_remainder_control", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.one_sided_does_not_bound_imaginary", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.empty_included_family", "GRWTSK.NumberTheory.Chebyshev.Checks.EnclosedKernelControls.wrong_multiplicity_control"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel"
+path = "GRWTSK/NumberTheory/Chebyshev/LegendreEnclosedKernel.lean"
+source_blob = "5d7ba9b3d21337fe38013f499ea5314fe50a8c3a"
+origin_revision = "NEW_COMMIT"
+disposition = "NEW_SOURCE_DRAFT"
+required_declarations = ["GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareFiniteSum", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareEnclosureBudget", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareFiniteSum_enclosure_error", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareFiniteSum_evaluation_error", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareCount_pos_of_source_lower", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareIncrement_lower_of_enclosures", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.prime_in_square_of_enclosed_kernel", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.squareIncrement_error_of_enclosures", "GRWTSK.NumberTheory.Chebyshev.LegendreEnclosedKernel.legendre_of_prefix_and_source_lower"]
+
+[[hostile_controls]]
+id = "signed-remainder-retained"
+description = "One-sided remainderLower <= remainder.re is sufficient for existence and retains favorable sign."
+
+[[hostile_controls]]
+id = "no-implicit-two-sided-tail"
+description = "A real-part lower bound does not bound the complex norm or imaginary part of the remainder."
+
+[[hostile_controls]]
+id = "complete-source-identity-required"
+description = "hsource must be proved for the literal squareIncrement and selected finite sum. A definition by subtraction does not supply a useful bound."
+
+[[hostile_controls]]
+id = "included-is-not-complete"
+description = "Empty finite families or zero coordinate radii imply no theorem about the omitted divisor."
+
+[[hostile_controls]]
+id = "exact-multiplicity-and-index"
+description = "Use the identical index set and multiplicities for actual and center sums. Wrong, duplicate or missing records are not priced by coordinate radii."
+
+[[hostile_controls]]
+id = "evaluation-is-separate"
+description = "The finite center-sum evaluation bound is distinct from parameter enclosure and correction evaluation."
+
+[[hostile_controls]]
+id = "imaginary-defect"
+description = "The two-sided full budget must bound the computed imaginary defect; real projection alone is not complex equality."
+
+[[hostile_controls]]
+id = "strict-corrected-margin"
+description = "Retain the inherited proper-prime-power budget and strict positivity before extracting a prime."
+
+[[hostile_controls]]
+id = "global-quantifiers"
+description = "A complete finite prefix and every-input lower bounds and margins remain separate premises."
+
+[[hostile_controls]]
+id = "all-source-closure"
+description = "Require all inherited/producer/new declarations and transitive trust closure; no root-only PASS or parent receipt substitution."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = ["Riemann explicit formula", "zero identity or divisor completeness", "omitted-zero remainder bound", "numerical kernel evaluator", "spectral prime certificate", "all-interval positive margin", "Legendre or RH", "external replay acceptance or execution authority"]

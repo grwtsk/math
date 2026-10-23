@@ -176,7 +176,7 @@ rightDyadicAffineSum
 ```
 
 The **independent**, passive target is
-`verification/liouville-dyadic-affine-630-v0.1.toml`.
+`docs/verification/_unscoped/liouville-dyadic-affine-630-v0.1.toml`.
 It is intentionally not added as a dependency of the still-uncompiled
 eight-module generic Walsh packet. This arithmetic module should be
 built and checked as its own isolated theorem leaf.

@@ -1,0 +1,181 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-seven-eighths-mechanism-trace-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+parent_pr = 464
+terminal_port_issue = 448
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "source-bound-complete-detector-trace-and-local-witness-gate"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+requires_hostile_control_replay = true
+operational_receipt_is_external = true
+public_root_imported = false
+
+[source_binding]
+parent_revision = "72f3d792ac76fd90431f5257f87f701d7c405ca8"
+parent_tree = "0cc22d01b780062306dafa37237a153f1b46e623"
+parent_target = "docs/verification/Interfaces/SevenEighthsMechanismQuarticBridgeCore/rh-seven-eighths-mechanism-quartic-bridge-v0.2.toml"
+parent_target_blob = "041e1d4539877a280d1b0d10b89d2f3e6631e83c"
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+local_lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXTERNAL_MECHANISM_PORT_BLOCKED / LOCAL_TRACE_BRIDGE_OPEN"
+receipt_policy = "Bind the final commit, tree, this target blob and every selected declaration externally. A materialized local trace is not an external replay or an accepted source-specific witness bridge."
+
+[pinned_external_source]
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+mechanism_record = "GRWTSK.RiemannHypothesis.openAISevenEighthsMechanismSource"
+terminal_repository_must_match = true
+terminal_revision_must_match = true
+terminal_path_must_match = true
+terminal_blob_must_match = true
+terminal_declaration_must_match = true
+
+[mechanism_trace]
+record = "GRWTSK.RiemannHypothesis.SevenEighthsMechanismTrace"
+constructor = "GRWTSK.RiemannHypothesis.SevenEighthsMechanismChain.trace"
+fields = [
+  "detectorCertifiedBands",
+  "fineMomentInput",
+  "chosenMomentInput",
+  "uniformCommonProbe",
+  "betaAtMostSevenEighths",
+  "familyNonvanishing",
+  "RiemannZetaZeroFreeRightHalfPlane (7 / 8)"
+]
+trace_lives_in_type = true
+terminal_field_definitionally_uses_chain_toZeta = true
+terminal_proposition_recovers_trace = false
+
+[source_alignment]
+record = "GRWTSK.RiemannHypothesis.OpenAIMechanismSourceAlignment"
+accepted_wrapper = "GRWTSK.RiemannHypothesis.SourceBoundAcceptedSevenEighthsMechanismPort"
+requires_pinned_mechanism_record = true
+requires_terminal_mechanism_artifact_agreement = true
+trace_terminal_agreement = "GRWTSK.RiemannHypothesis.SourceBoundAcceptedSevenEighthsMechanismPort.trace_zeta_eq_terminal"
+
+[local_witness_bridge]
+record = "GRWTSK.RiemannHypothesis.MechanismTraceToLocalWitnessBridge"
+source_input = "complete SevenEighthsMechanismTrace"
+carrier_transport = "GRWTSK.RiemannHypothesis.RealBilinearMechanismBridge"
+strengthened_gate = "GRWTSK.RiemannHypothesis.SourceBoundMechanismBridgeAccepted"
+quadratic_extraction_adapter = "GRWTSK.RiemannHypothesis.SourceBoundMechanismBridgeAccepted.toQuadraticExtraction"
+concrete_source_witness_constructor = false
+concrete_carrier_bridge = false
+concrete_local_extractor = false
+
+[hostile_controls]
+required = [
+  "a valid terminal zero-free theorem cannot uniformly reconstruct an arbitrary internal proposition",
+  "a source-bound mechanism review equals the pinned OpenAI mechanism record",
+  "the complete mechanism trace terminates at the accepted terminal theorem term",
+  "the strengthened local witness bridge consumes every trace stage",
+  "the trace bridge still requires a separate LocalPrimeQuarticExtractor",
+  "no terminal theorem, source metadata or trace record constructs prime quartic extraction"
+]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SevenEighthsMechanismTrace"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SevenEighthsMechanismTrace.lean"
+blob = "cb3c1029122630e233df73574b9bc6bd75ce7721"
+role = "complete mechanism trace, pinned source alignment, trace-consuming local witness bridge and strengthened gate-two adapter"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SevenEighthsMechanismQuarticBridgeControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SevenEighthsMechanismQuarticBridgeControls.lean"
+blob = "1c72766d282b4f2b90e1fbfbe0ecbbae12609b35"
+role = "updated controls for terminal information loss, pinned mechanism source, trace-terminal agreement and complete-trace consumption"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "4c42b7835f235621d58a01da9eb50c89ff251180"
+role = "isolated integration root extended by the source-bound trace module"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/seven-eighths-mechanism-trace.md"
+blob = "e00f39bcef473a9363bf3a66d0e2ed206cb0b955"
+status = "mathematical trace and source-alignment exposition; not theorem, replay or trust evidence"
+
+[declaration_inventory]
+count = 16
+names = [
+  "GRWTSK.RiemannHypothesis.SevenEighthsMechanismTrace",
+  "GRWTSK.RiemannHypothesis.SevenEighthsMechanismChain.trace",
+  "GRWTSK.RiemannHypothesis.SevenEighthsMechanismTrace.toZeta",
+  "GRWTSK.RiemannHypothesis.SevenEighthsMechanismChain.trace_zeta",
+  "GRWTSK.RiemannHypothesis.OpenAIMechanismSourceAlignment",
+  "GRWTSK.RiemannHypothesis.SourceBoundAcceptedSevenEighthsMechanismPort",
+  "GRWTSK.RiemannHypothesis.SourceBoundAcceptedSevenEighthsMechanismPort.trace",
+  "GRWTSK.RiemannHypothesis.SourceBoundAcceptedSevenEighthsMechanismPort.trace_zeta_eq_terminal",
+  "GRWTSK.RiemannHypothesis.MechanismTraceToLocalWitnessBridge",
+  "GRWTSK.RiemannHypothesis.MechanismTraceToLocalWitnessBridge.localWitness",
+  "GRWTSK.RiemannHypothesis.SourceBoundMechanismBridgeAccepted",
+  "GRWTSK.RiemannHypothesis.SourceBoundMechanismBridgeAccepted.toQuadraticExtraction",
+  "GRWTSK.RiemannHypothesis.Checks.SevenEighthsMechanismQuarticBridgeControls.terminal_endpoint_does_not_recover_arbitrary_internal_evidence",
+  "GRWTSK.RiemannHypothesis.Checks.SevenEighthsMechanismQuarticBridgeControls.source_bound_mechanism_uses_pinned_record",
+  "GRWTSK.RiemannHypothesis.Checks.SevenEighthsMechanismQuarticBridgeControls.source_bound_trace_terminal_agreement",
+  "GRWTSK.RiemannHypothesis.Checks.SevenEighthsMechanismQuarticBridgeControls.source_bound_trace_bridge_consumes_complete_trace"
+]
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+EXTERNAL_MECHANISM_PORT_ACCEPTED = false
+SOURCE_BOUND_TRACE_ACCEPTED = false
+LOCAL_TRACE_BRIDGE_CONSTRUCTED = false
+PRIME_QUARTIC_EXTRACTION_CONSTRUCTED = false
+
+[static_checks]
+toml_parse = "REQUIRED_BEFORE_COMMIT"
+source_inventory = "REQUIRED_BEFORE_COMMIT"
+internal_import_boundary = "REQUIRED_BEFORE_COMMIT"
+comment_aware_forbidden_token_scan = "REQUIRED_BEFORE_COMMIT"
+forbidden_tokens = ["sorry", "admit", "axiom", "unsafe", "native_decide", "#eval"]
+lean_elaboration = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+hostile_lean_replay = "NOT_RUN"
+external_acceptance = "NOT_RUN"
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if required",
+  "exact declaration-type inventory and transitive axiom audit",
+  "clean pinned replay and trust review of every external mechanism stage",
+  "construction of an AcceptedSevenEighthsMechanismPort at the pinned source",
+  "proof of OpenAIMechanismSourceAlignment for that accepted port",
+  "construction of the source witness carrier from the complete trace",
+  "construction of the continuous linear, involution and form bridge",
+  "construction of the separately audited LocalPrimeQuarticExtractor",
+  "complete named residual decay and theorem-bound PNT-independence receipt"
+]
+
+[next_obstruction]
+statement = "Construct the actual pinned SevenEighthsMechanismTrace inhabitant through clean replay and map that complete trace into a declared local witness carrier without erasing the detector, moment, symmetry or form data."
+scope = "The new type boundary prevents terminal-only continuation but supplies no external replay, source carrier, local bridge, prime extraction or RH theorem."
+
+[nonclaims]
+items = [
+  "no accepted external terminal theorem or mechanism",
+  "no recovery of internal evidence from a terminal proposition",
+  "no concrete source or local witness carrier",
+  "no continuous linear equivalence, embedding or quotient instance",
+  "no involution or form-intertwining instance",
+  "no prime-derived nonnegative quartic extraction",
+  "no PNT-independent dependency receipt",
+  "no threshold closure or Riemann hypothesis proof",
+  "no public aggregate import, merge, deployment or execution authority"
+]

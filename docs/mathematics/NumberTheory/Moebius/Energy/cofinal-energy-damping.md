@@ -116,7 +116,7 @@ elaborated types, imports, full transitive trust/native dependencies and
 source-bound acceptance remain to be checked. Source signatures in the
 passive target are not already-extracted elaborated types.
 
-The target is `verification/rh-cofinal-energy-335-v0.1.toml`. Its sole root
+The target is `docs/verification/NumberTheory/Moebius/CofinalEnergyDamping/rh-cofinal-energy-335-v0.1.toml`. Its sole root
 is the new subject module, not the public `GRWTSK.lean` root. It is passive
 data, not an executable request or an execution receipt. No build, merge,
 existing-branch modification or execution-hold release is represented.

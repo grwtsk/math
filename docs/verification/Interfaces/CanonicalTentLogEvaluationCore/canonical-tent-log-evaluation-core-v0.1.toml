@@ -1,0 +1,240 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "canonical-tent-log-evaluation-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.CanonicalTentLogEvaluationCore"
+build_target = "GRWTSK.Interfaces.CanonicalTentLogEvaluationCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "bfae54cddc39c420e9b7cf87667af60127109992"
+base_tree = "14625545097d15c7adf90ab5058c5aedfe9e3964"
+stacked_on_pr = 305
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/CanonicalTentRecordEvaluationCore/canonical-tent-record-evaluation-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "93eaab641b0f45deb4c938bf19bba29655bc2230".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "7f47013e798b302577ef8bab2a43e04d8b4c467b".
+# Pre-quadrature-repair inherited_target_blob = "c270e6ef0e16a6f762a562de23be3fd13b3d0786".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "e94f553bd4e791502e891d616d7270148eb200c9".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "ee88fed32d13481fa17189bf49efa9ed53d9ca9b"
+receipt_policy = "Bind exact new commit/tree externally. This static target represents no execution."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+rational_odd_log_enclosure = "SOURCE_DRAFT_ACTUAL_REAL_LOG"
+dyadic_source_identity = "EXACT_ARITHMETIC_INPUT_NOT_APPROXIMATE_LOG"
+log_two_value_and_error = "BOTH_DERIVED_AND_EXPONENT_WEIGHTED"
+log_error_rate = "SOURCE_DRAFT_FIXED_REDUCED_MANTISSA"
+endpoint_log_supplier = "INTERNALLY_DERIVED_BY_NEW_ADAPTER"
+exponential_degree_and_displacement = "FINITE_GUARDS_RETAINED"
+automatic_dyadic_exponent_search = "NOT_IMPLEMENTED_IN_LEAN"
+coordinate_and_zero_completeness = "INDEPENDENT_NOT_SUPPLIED"
+byte_certificate_checker = "NOT_SUPPLIED"
+complex_exponential_range_reduction = "NOT_SUPPLIED"
+all_interval_positive_margin = "NOT_SUPPLIED"
+historical_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation"
+path = "GRWTSK/Analysis/Complex/LogDerivedPowerEvaluation.lean"
+source_blob = "b0ad02766470bfe6e13999dff0d374ba63bdc5b5"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.RationalLogEnclosure"
+path = "GRWTSK/Analysis/Real/RationalLogEnclosure.lean"
+source_blob = "75cb556b0e858edf1634baa2bd2865816c90b176"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentLogEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentLogEvaluationCore.lean"
+source_blob = "70e957f61740ffc65b269d3708df8e1125481e2a"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentLogEvaluation.lean"
+source_blob = "d8a20d4cfbdea07a044ce61843ac4a200be70609"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/RationalLogControls.lean"
+source_blob = "db062774d76846d8cfda79078ddf22c6348b87e6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentKernelEnclosure"
+path = "GRWTSK/Analysis/Complex/TentKernelEnclosure.lean"
+source_blob = "a11c25d44bf3d4c8c38112a146f295e7df62caec"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.FiniteExponentialEnclosure"
+path = "GRWTSK/Analysis/Complex/FiniteExponentialEnclosure.lean"
+source_blob = "f8de8e5a517cdc022fa48516ae744defabd599ff"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentRecordEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentRecordEvaluation.lean"
+source_blob = "f7d1cf6a69b6daccbe56013b9700e006dc9c1999"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentRecordEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentRecordEvaluationCore.lean"
+source_blob = "6148dab07641503edbc60e41b58dfafd7b716e6d"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Log/Deriv.lean"
+blob = "56c2032d5fbaf0982487b6eff864a4f04bea9fa3"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Chebyshev/rational-log-tent-evaluation.md"
+source_blob = "cc5688317b7fbfcec7d9ec7ce254ef56c8d45e52"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_LEAN_PARSED"
+generated_structure_members_require_audit = true
+public_names = [
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PowerInput",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PowerInput.toPowerEvaluation",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PowerInput.value_eq_polynomial",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PowerInput.sound",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.exists_log_terms",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.exists_exp_degree",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PointInput",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PointInput.toPointEvaluation",
+  "GRWTSK.Analysis.Complex.LogDerivedPowerEvaluation.PointInput.sound",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.ratio",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.lower",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.width",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.ratio_bounds",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.ratio_le_third",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.width_nonneg",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.source_of_ratio",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.log_bounds",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.width_le_geometric",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.lowerValue",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.totalWidth",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.center",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.error",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.totalWidth_nonneg",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.error_nonneg",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.source_pos",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.bounds",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.sound",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.direct",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.reduced",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.withTerms",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.reduced_error_le",
+  "GRWTSK.Analysis.Real.RationalLogEnclosure.DyadicInput.error_tendsto_zero",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation.norm_head_sub_log_evaluated_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation.prime_in_square_of_log_inputs",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentLogEvaluation.prime_in_square_of_rounded_log_inputs",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.ratio_two",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.one_has_zero_width",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.empty_prefix_has_remainder",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.first_term_and_full_width",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.midpoint_not_lower_endpoint",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.half_width_at_lower_is_unsound",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.exponent_scales_log_two_error",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.wrong_dyadic_source_rejected",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.invalid_mantissa_rejected",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.unreduced_ratio_can_exceed_third",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.log_accuracy_does_not_discharge_exp_degree",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls.coarse_log_displacement_rejected",
+]
+
+[[acceptance_obligations]]
+id = "R01"
+requirement = "Elaborate all five new modules at the exact head; retain all inherited acceptance obligations."
+
+[[acceptance_obligations]]
+id = "R02"
+requirement = "Reconcile exact types, generated structure members, and full transitive import/axiom/native closure; selected bindings are not complete."
+
+[[acceptance_obligations]]
+id = "R03"
+requirement = "Use pinned Real.sum_range_le_log_div and Real.log_div_le_sum_range_add on the actual reconstructed rational source."
+
+[[acceptance_obligations]]
+id = "R04"
+requirement = "Check mantissa >=1 before using totalized formulas; this supplier does not cover all positive rationals below one."
+
+[[acceptance_obligations]]
+id = "R05"
+requirement = "Keep the full odd-power remainder, exact term indexing, and the empty-prefix allowance."
+
+[[acceptance_obligations]]
+id = "R06"
+requirement = "Bind the dyadic source by exact equality; never derive an integer exponent by trusting a rounded logarithm."
+
+[[acceptance_obligations]]
+id = "R07"
+requirement = "Include the exponent multiplier on BOTH the log(2) value and its uncertainty."
+
+[[acceptance_obligations]]
+id = "R08"
+requirement = "Convert a one-sided interval to midpoint plus half width; do not halve the width at its lower endpoint."
+
+[[acceptance_obligations]]
+id = "R09"
+requirement = "Retain the mantissa <=2 condition for the geometric bound and the fixed-exponent scope of its limit."
+
+[[acceptance_obligations]]
+id = "R10"
+requirement = "Preserve the independent exponential degree and displacement guards; log precision is not exponential truncation precision."
+
+[[acceptance_obligations]]
+id = "R11"
+requirement = "Construct the original PowerEvaluation without editing its type or providing a free logarithm-enclosure field."
+
+[[acceptance_obligations]]
+id = "R12"
+requirement = "Keep actual zero coordinate enclosures, positive center denominator, canonical head and analytic multiplicities unchanged."
+
+[[acceptance_obligations]]
+id = "R13"
+requirement = "Keep accumulation rounding separate and retain the coefficient-kappa omitted tail, signed correction and proper-power subtraction."
+
+[[acceptance_obligations]]
+id = "R14"
+requirement = "No automatic Lean normalization algorithm, byte checker, external zero completeness or positive margin is inferred."
+
+[[acceptance_obligations]]
+id = "R15"
+requirement = "Finite rational diagnostics and static hashes do not establish analytic truth, Lean acceptance, transitive trust or a prime certificate."

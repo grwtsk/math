@@ -5,7 +5,7 @@
 ## 1. Pinned repository audit
 
 - Repository: `grwtsk/math`. Implementation base: **main** at `a3b0e1ee3890708162db7d4c7e228c1b22e66abf`, tree `5117abe32cdd8d90510950d11d320e9e479d3c3f`.
-- A previous audited main snapshot `2cad5952243c5d71aad679eaf49803d1860642b8` is exactly one commit behind the base; the intervening file is `verification/lean-subject-sort-v1.toml`. Both imported source blobs are unchanged.
+- A previous audited main snapshot `2cad5952243c5d71aad679eaf49803d1860642b8` is exactly one commit behind the base; the intervening file is `docs/verification/_unscoped/lean-subject-sort-v1.toml`. Both imported source blobs are unchanged.
 - Lean pin: `leanprover/lean4:v4.33.0`; Mathlib pin: `db584cd6d46c92f209a44c0f1c829460d327499d`. These are repository files, not replay evidence.
 - Existing open issue selected: [#966](https://github.com/grwtsk/math/issues/966). Related norm/coordinate issue: [#942](https://github.com/grwtsk/math/issues/942); centered supplier audit [#929](https://github.com/grwtsk/math/issues/929); canonical RH program [#15](https://github.com/grwtsk/math/issues/15).
 - PR [#958](https://github.com/grwtsk/math/pull/958), which introduced the structural additive/multiplicative obstruction, is merged into main. No non-main source dependency is used here; this is **not a stacked PR**.

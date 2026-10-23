@@ -1,0 +1,161 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "canonical-tent-evaluation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.CanonicalTentEvaluationCore"
+build_target = "GRWTSK.Interfaces.CanonicalTentEvaluationCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "61d62e59a82b5cfbe6fbb76079e0efb6ef0226ef"
+parent_tree = "b192ec8b82531da75af1dbfd3f7c590579c4a319"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/QuadraticIntervalRationalTentFamilyCore/quadratic-interval-rational-tent-family-v0.1.toml"
+inherited_target_blob = "7718ecb342317499b900d853f5aa8c479388b9e7"
+reused_canonical_revision = "b3b9aa54ff926c08b719711406c4347b54f7e4ec"
+reused_canonical_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind exact replayed commit, tree and manifest externally. This target is static data, not an execution receipt."
+inventory_policy = "The direct catalog is not the full transitive closure. Retain all exact predecessor declarations, types and controls; audit the reused canonical owner and its upstream analytic-order/finiteness dependencies in full. Empty repeated arrays waive nothing. Reconcile generated subtype/decidability instances and all public elaborated types."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.PositiveWeightExhaustion"
+path = "GRWTSK/Algebra/BigOperators/PositiveWeightExhaustion.lean"
+source_git_blob = "427da25ebac0848a1038066d976304dbe53cee56"
+required_declarations = ["GRWTSK.Algebra.BigOperators.PositiveWeightExhaustion.missing_weight_le", "GRWTSK.Algebra.BigOperators.PositiveWeightExhaustion.surjective_of_mass_le", "GRWTSK.Algebra.BigOperators.PositiveWeightExhaustion.weights_eq_of_mass_le", "GRWTSK.Algebra.BigOperators.PositiveWeightExhaustion.exists_equiv_of_mass_le"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDiskSeparation.lean"
+source_git_blob = "1180255ba8e3a140533bad7c1330701df7664d9a"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.separated", "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.belowHeight", "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.separated_iff", "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.belowHeight_iff", "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.separation_distance", "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.enclosed_points_ne", "GRWTSK.Analysis.ErrorBounds.RationalDiskSeparation.enclosed_height_le"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentEvaluationCore"
+path = "GRWTSK/Interfaces/CanonicalTentEvaluationCore.lean"
+source_git_blob = "20049a8ce22641db0acf135a8ef04b2514a9cbef"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentEvaluation.lean"
+source_git_blob = "203d11e60f70ad992c00150df470de60b3bd6a54"
+required_declarations = ["GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation.checkWithin", "GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation.checkWithin_sound", "GRWTSK.NumberTheory.Chebyshev.CanonicalTentEvaluation.checkWithin_sound_of_count_upper"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+source_git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+required_declarations = ["GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.ZeroPoint", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.analyticAt_point", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.order_ne_top", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity_cast", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity_pos", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity_factorization", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.height", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.point_mem_strip", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.bounded_zero_set_finite", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.height_set_finite", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightHead", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.mem_heightHead", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightHead_eq_of_exact_membership", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.height_gt_of_not_mem_head", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.point_mem_own_head", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightHead_mono", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightHead_eq_empty_of_neg", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightCount", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.head_card_le_heightCount", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightCount_mono", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightCount_eq_zero_iff", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightCount_cast"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EnclosedZeroInventoryControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EnclosedZeroInventoryControls.lean"
+source_git_blob = "f752696b2ea98710253c4a999a993830cb30e73f"
+required_declarations = ["GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.tangent_control", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.diagonal_and_imaginary_controls", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.negative_radius_control", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.height_boundary_controls", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.syntheticFamily", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.syntheticCoordinates", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.geometry_nonvacuous", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.exact_radius_shape_controls", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.cutoff_and_overlap_controls", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.empty_geometry_control", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.positive_weight_model", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.zero_hidden_weight_control", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.duplicate_assignment_control", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.wrong_count_direction_control", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.cluster_is_not_one_weighted_point", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Controls.counterfeit_order_control"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.EnclosedZeroInventory"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/EnclosedZeroInventory.lean"
+source_git_blob = "bb5e38bf04f840ad1d17bfee2a148a7a05055bdd"
+required_declarations = ["GRWTSK.RiemannHypothesis.EnclosedZeroInventory.RecordIndex", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Head", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.recordMass", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.Geometry", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.instDecidableGeometry", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.checkGeometry", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.LocalWitnesses", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.checkGeometry_iff", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.sum_head_weights", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.sum_record_weights", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.exists_canonical_equiv", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.count_eq_recordMass", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.source_card_eq_length", "GRWTSK.RiemannHypothesis.EnclosedZeroInventory.enclosed_zero_unique"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalTentFamilyCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalTentFamilyCore.lean"
+source_git_blob = "29a602a5685bcec54f932c12e72eec855737b67f"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalTentEnclosure"
+path = "GRWTSK/Analysis/Complex/RationalTentEnclosure.lean"
+source_git_blob = "6b38ccb0b9dbb153ad3f194faff3423f0881ab65"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean"
+source_git_blob = "5f465139ee895a99b79af84ee0866aa5f637bdfa"
+required_declarations = []
+
+[[controls]]
+id = "actual_local_witness"
+obligation = "Geometry alone supplies no zero, root order or count; require LocalWitnesses proofs."
+
+[[controls]]
+id = "mass_direction"
+obligation = "A lower bound on the complete count cannot replace its upper bound."
+
+[[controls]]
+id = "positive_source"
+obligation = "Zero source weights can hide omitted points; canonical multiplicity positivity is required."
+
+[[controls]]
+id = "distinctness"
+obligation = "Duplicate selections can mimic total mass; strict closed-disk separation must imply injection."
+
+[[controls]]
+id = "tangency"
+obligation = "Tangent closed disks are rejected; retain shared boundary points."
+
+[[controls]]
+id = "height"
+obligation = "Both signs and the exact closed height cutoff are retained; reject straddling disks."
+
+[[controls]]
+id = "multiplicity"
+obligation = "Derive exact source orders from local lower orders and exhaustion; do not trust labels."
+
+[[controls]]
+id = "clusters"
+obligation = "Total disk multiplicity does not imply one point of that multiplicity."
+
+[[controls]]
+id = "shape"
+obligation = "Every radius and every inherited tent-evaluator trace entry is present exactly as required."
+
+[[controls]]
+id = "source_target"
+obligation = "Final norm bound targets the actual canonical heightHead and actual zeta orders."
+
+[[controls]]
+id = "normalization"
+obligation = "A positive-height count cannot be substituted for the both-sign canonical count without proof."
+
+[[controls]]
+id = "empty"
+obligation = "Empty geometry needs an actual zero complete count before any empty-head conclusion."
+
+[[controls]]
+id = "line_status"
+obligation = "No critical-line projection or bounded critical-line statement follows from these disks."
+
+[[controls]]
+id = "inherited_errors"
+obligation = "Retain all tent, node, arithmetic and coordinate errors from the unchanged evaluator."
+
+[[controls]]
+id = "trust"
+obligation = "Run exact-head elaboration and full transitive type/axiom/native audit before acceptance; no static receipt."

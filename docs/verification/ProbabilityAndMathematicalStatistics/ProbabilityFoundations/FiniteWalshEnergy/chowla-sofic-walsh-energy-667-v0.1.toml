@@ -1,0 +1,257 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "chowla-sofic-walsh-energy-667-v0.1"
+owner_repository = "grwtsk/math"
+issue = 667
+parent_issue = 658
+related_issues = [630, 654, 628, 635, 121, 168, 441, 453, 516, 100, 15]
+route_id = "FINITE_WALSH_ORTHOGONALITY_AND_CORRELATION_ENERGY"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshEnergy"
+build_target = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshEnergy"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "33b08d937dba13d299ec776cb7a7dcca7448ee43"
+review_parent_tree = "4ec198024149b36e69793be5d845b060c179a2f0"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+pinned_lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+new_module_path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshEnergy.lean"
+new_module_git_blob = "a2124e2efafc96320404421bc9c875f83bf8d16b"
+new_module_namespace = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy"
+mathematical_note_path = "docs/reviews/chowla-sofic-walsh-correlation-energy-667.md"
+mathematical_note_git_blob = "2879860f12fc4039db25d19b25f24993f407f66a"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+parent_finite_walsh_elaboration_verified = false
+parent_cyclic_seam_elaboration_verified = false
+finite_orthogonality_kernel_accepted = false
+finite_correlation_energy_kernel_accepted = false
+all_event_TV_to_uniform_bernoulli_proved = false
+full_L1_L2_TV_transfer_proved = false
+liouville_correlation_cancellation_proved = false
+sofic_ergodicity_or_bernoulli_limit_proved = false
+growing_shift_all_depth_energy_supplier_proved = false
+microscopic_gue_or_rh_proved = false
+nonempty_sample_guard = "roots.card > 0 for normalizedSourceMoment"
+character_sign_values = "Bool True maps to +1; False maps to -1"
+all_order_correlations_included = true
+empty_subset_moment_before_centering = "1"
+empty_subset_coefficient_after_centering = "0"
+arithmetical_averaging_mode = "finite ordinary equal-root-weight Cesaro; not logarithmic"
+exact_energy_statement = "sum_patterns (2^k * empiricalPattern - 1)^2 = 2^k * sum_nonempty_subsets normalizedSignMoment^2"
+finite_diagnostic = "untrusted finite enumeration for dimensions 0-4; not Lean or theorem evidence"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshEnergy"
+authored_declaration_count = 18
+authored_definition_count = 6
+authored_theorem_count = 12
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicWindowSeam", "Mathlib"]
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/CyclicWindowSeam.lean"
+git_blob = "b94fc48280da575c9f0466cd64a3e1a1c38bb2f7"
+status = "STACKED_PARENT_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FinitePatternBoundaryTV.lean"
+git_blob = "8087556eaff5a988caba7a2ec89b5f4607daa8ca"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+git_blob = "afa3ef31687182ebccf1877aeddb1e3647c7b935"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_targets]]
+path = "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/CyclicWindowSeam/chowla-sofic-cyclic-window-seam-658-v0.1.toml"
+git_blob = "78c1cb6af8d0e507cf92c58a0402980968ca12c0"
+status = "PARENT_PASSIVE_TARGET_NOT_VERIFICATION_RECEIPT"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.walshCharacter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.walshCharacter_empty"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.characterPairFactor"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.walshCharacter_mul"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.characterPairFactor_sum_bool"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.characterPair_factorization"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.walshCharacter_orthogonality"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.walshPolynomial"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.walshPolynomial_square_energy"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.normalizedSourceMoment"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.normalizedSourceMoment_empty"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.empiricalMoment_factor"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.empiricalPattern_fullWalsh"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.centeredWalshPolynomial"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.nonemptyMomentEnergy"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.centeredWalshPolynomial_square_energy"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.centeredWalshPolynomial_eq_empirical_defect"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.WalshEnergy.empiricalPattern_scaled_defect_energy"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-coordinate-type"
+requirement = "If the coordinate type is empty, there is exactly one empty Boolean pattern and one empty subset. Orthogonality and energy identities give 1 and 0 respectively at correct scopes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-subset-orthogonality"
+requirement = "For distinct S,T the complete character inner product is 0; for equal S,T it is exactly 2^(card coordinates), not 1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sign-orientation"
+requirement = "The imported boolSign from PR #638 sends True to +1 and False to -1. No swapped labels or changed normalization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-patterns"
+requirement = "The orthogonality/energy sum includes ALL functions from the finite coordinate type to Bool, not one or an arbitrarily selected sample pattern."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-order-subsets"
+requirement = "The squared energy sums every nonempty subset of the coordinate type, including highest-order correlations. Pairwise moments alone are not enough."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-moment-preserved"
+requirement = "For normalized roots.card>0, the empty correlation equals exactly 1; remove it only after centering against uniform."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-sample-guard"
+requirement = "Normalized empirical pattern/moment interpretation requires roots.card>0; no empty denominator interpreted as a probability."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-root-source"
+requirement = "Normalized moments reuse the actual root IDs and original Boolean source labels. Do not postulate independently sampled Bernoulli coefficients."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "scaled-vs-unscaled"
+requirement = "The proved source-script equality is sum_patterns (2^k*P-1)^2 = 2^k*E; do not silently drop factors of 2^k."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-no-decay"
+requirement = "Finite Parseval is an equality for arbitrary labels and gives no bound/decay on nonempty moments."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "TV-still-open"
+requirement = "All-event total-variation-to-uniform inequality requires the separate L1/L2/Cauchy transfer; no declared proof here."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cyclic-seam-not-mixed"
+requirement = "PR #663's cyclic seam TV comparison has a separate identical-source and offset hypothesis; do not infer arithmetic Bernoulli comparison without exact joint transport."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fixed-to-growing-shifts"
+requirement = "Qualitative fixed-window cancellation is not the growing-shift/all-depth/maximal-energy supplier of RH-E02."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-gue-or-rh"
+requirement = "Bernoulli pattern algebra does not entail Liouville ergodicity, GUE/microscopic zeta gaps, zeta divisor identification, or RH."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-source-as-proof"
+requirement = "Source text, finite diagnostics, and manifest presence are not Lean kernel acceptance or Noeaaeue proof receipts."
+status = "NOT_RUN"
