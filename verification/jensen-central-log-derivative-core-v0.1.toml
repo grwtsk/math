@@ -35,7 +35,9 @@ inherited_target = "verification/normalized-disk-log-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "fef3d71a0d4ae423d9eee96ea539ea914e7d482c".
 # Pre-quadrature-repair inherited_target_blob = "a083710c2be937ec0c93f8f076f4c709edeb3941".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "32aa7b4fe8dc6a38f97233c59f72d68b12429736"
+# Pre-phase-2-repair inherited_target_blob = "32aa7b4fe8dc6a38f97233c59f72d68b12429736".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "7bca33549fa7003bc9ec401e45ee26cf7ea6a4ff"
 receipt_policy = "Exact new commit/tree must be bound externally. No execution is represented here."
 
 [trust]

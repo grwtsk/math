@@ -34,7 +34,9 @@ inherited_target = "verification/tent-pole-subtraction-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "0c21bb24d0331ca81a47fde4d99dff84f0d9e030".
 # Pre-quadrature-repair inherited_target_blob = "169ee0ca93758bcf86f1b65a47d7e9f05fb484e1".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "eaf9e079559ee35b215ac13cff2bedcd0e2529e2"
+# Pre-phase-2-repair inherited_target_blob = "eaf9e079559ee35b215ac13cff2bedcd0e2529e2".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "ee2b73eadfe009425480f0a69f31525922b97d13"
 receipt_policy = "Bind the new commit/tree externally; ancestor receipts do not accept this target."
 inventory_policy = "Lexical names only; reconcile all exact elaborated types and transitive imports."
 

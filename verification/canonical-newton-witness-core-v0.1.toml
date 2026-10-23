@@ -35,7 +35,9 @@ inherited_target = "verification/canonical-zero-head-binding-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "4e0d2a273b40a2d559b11451f6d8b99402b729cb".
 # Pre-quadrature-repair inherited_target_blob = "d39a11c7d18de75d9c68b71046feaccb2e65e5d8".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "3903823a038f789033c3c2d1a4fdb78c5840d065"
+# Pre-phase-2-repair inherited_target_blob = "3903823a038f789033c3c2d1a4fdb78c5840d065".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "628a7de1024a1e356a9036591460249726c32335"
 receipt_policy = "Bind exact new commit/tree externally; this target is not an execution receipt."
 
 [trust]

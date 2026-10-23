@@ -35,7 +35,9 @@ inherited_target = "verification/tent-left-decay-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "9661258ce76a45e89d69e972aa68732326518110".
 # Pre-quadrature-repair inherited_target_blob = "addc06c08f532ff58fd7739322fb3bc477401f03".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "2a48697521002b2ee3f2fea14992f548783c4a9b"
+# Pre-phase-2-repair inherited_target_blob = "2a48697521002b2ee3f2fea14992f548783c4a9b".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "4a5d24620156793d9dd93286ac9d3c9d92670550"
 receipt_policy = "Bind the exact new commit and tree externally. Ancestor receipts do not accept this increment."
 inventory_policy = "Lexical names only. Reconcile exact elaborated types, complete import closure and every inherited obligation."
 

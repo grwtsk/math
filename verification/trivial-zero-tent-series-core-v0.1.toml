@@ -33,7 +33,9 @@ inherited_target = "verification/canonical-zeta-residue-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "2398304711caab10de68dbc39caf0e22bc3d4d48".
 # Pre-quadrature-repair inherited_target_blob = "46ca1521f8ee5ca3ffa0cabe9bd49bf495968e2f".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "ab03aa4fabfa5dd52055729a837111d0df16c4d8"
+# Pre-phase-2-repair inherited_target_blob = "ab03aa4fabfa5dd52055729a837111d0df16c4d8".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "31a0a2f03b1157aedaa673ab202c3b8815b5dc03"
 receipt_policy = "Bind the actual new commit, tree and this manifest externally. Parent acceptance does not accept this increment."
 inventory_policy = "Static source names are not elaborated types. Audit all public declarations and complete inherited import/trust closure."
 
@@ -93,8 +95,11 @@ disposition = "UNCHANGED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.TentMellinKernel"
 path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
-source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions"

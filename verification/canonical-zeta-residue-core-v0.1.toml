@@ -34,7 +34,9 @@ inherited_target = "verification/canonical-zeta-tent-core-v0.1.toml"
 # Original pre-repair inherited_target_blob = "ae2d490cc7884e41f9d5ead10d4378035ba70ef2".
 # Pre-quadrature-repair inherited_target_blob = "3448ba6052c96cf484868cd68feb7499a0bc0e3d".
 # Current pin includes revised source bindings; no inherited acceptance is inferred.
-inherited_target_blob = "8872bad342bc20918e21ab1f57867a67f08a1aa9"
+# Pre-phase-2-repair inherited_target_blob = "8872bad342bc20918e21ab1f57867a67f08a1aa9".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "97e16355ceb20cabad38a873839261adb79fb865"
 receipt_policy = "Bind the actual replayed integration commit/tree/manifest externally; this file and parent receipts are not acceptance."
 inventory_policy = "The list is lexical source inventory. Report every public elaborated type and the complete inherited and transitive trust closure."
 residue_scope = "Punctured principal parts and scaled-limit coefficients only; no global contour, Cauchy residue theorem instance or infinite source identity."
@@ -86,8 +88,11 @@ disposition = "REPAIRED_INHERITED_SOURCE"
 [[modules]]
 name = "GRWTSK.Analysis.Complex.TentMellinKernel"
 path = "GRWTSK/Analysis/Complex/TentMellinKernel.lean"
-source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f"
-disposition = "UNCHANGED_INHERITED_SOURCE"
+# Pre-phase-2-repair source_blob = "2c99949153332d4f947b18431c60d8a599bfef5f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_blob = "50410f9474515d4a03812321188d71dd4b4ce0d5"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
 
 [[modules]]
 name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
