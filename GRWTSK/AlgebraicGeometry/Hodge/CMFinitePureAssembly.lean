@@ -610,5 +610,54 @@ theorem CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
   exact canonicalFinitePureAssembly_scalarConjugate E σ
     a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
+
+/-- Conjugate coefficients only, in each of the four paired tensor factors.
+The second entry of each pair is unchanged. -/
+def CMFiniteFourPairedCoefficientConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier) :
+    CMFiniteFourPairedTensor E →ₗ[ℚ] CMFiniteFourPairedTensor E :=
+  let f := GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate
+    σ
+  (f.rTensor (E.carrier ⊗[ℚ] E.carrier) |>.rTensor
+    (E.carrier ⊗[ℚ] E.carrier) |>.rTensor
+    (E.carrier ⊗[ℚ] E.carrier))
+
+/-- The full paired-assembly conjugation equality is exactly the
+coefficient-only action, not a diagonal action on coefficient and vector. -/
+theorem CMFiniteCanonicalPairedAssembly_scalarConjugate
+    (E : CMGaloisIntermediateField)
+    (σ : E.carrier ≃ₐ[ℚ] E.carrier)
+    (t : CMFiniteFourPairedTensor E) :
+    GRWTSK.LinearAlgebra.TensorProduct.RationalScalarDescent.scalarConjugate σ
+        (CMFiniteCanonicalPairedAssembly E t) =
+      CMFiniteCanonicalPairedAssembly E
+        (CMFiniteFourPairedCoefficientConjugate E σ t) := by
+  induction t with
+  | tmul t123 t4 =>
+      induction t123 with
+      | tmul t12 t3 =>
+          induction t12 with
+          | tmul t1 t2 =>
+              induction t1 with
+              | tmul a₁ x₁ =>
+                  induction t2 with
+                  | tmul a₂ x₂ =>
+                      induction t3 with
+                      | tmul a₃ x₃ =>
+                          induction t4 with
+                          | tmul a₄ x₄ =>
+                              simpa [CMFiniteFourPairedCoefficientConjugate,
+                                CMFiniteFourPairedPure] using
+                                CMFiniteCanonicalPairedAssembly_pure_scalarConjugate
+                                  E σ a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+                          | add x y hx hy => simp [map_add, hx, hy]
+                      | add x y hx hy => simp [map_add, hx, hy]
+                  | add x y hx hy => simp [map_add, hx, hy]
+              | add x y hx hy => simp [map_add, hx, hy]
+          | add x y hx hy => simp [map_add, hx, hy]
+      | add x y hx hy => simp [map_add, hx, hy]
+  | add x y hx hy => simp [map_add, hx, hy]
+
 end
 end GRWTSK.AlgebraicGeometry.Hodge.CMFourFactorSwitchGeometry
