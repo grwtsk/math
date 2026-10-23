@@ -213,7 +213,7 @@ no local import):** At the inspected Anthropic
 [`anthropics/formal-math@e1a4e6508154ea59f030480661590a9fe3018011`](https://github.com/anthropics/formal-math/tree/e1a4e6508154ea59f030480661590a9fe3018011/zeta23),
 `zeta23/Solution.lean` has Git blob
 `bd5dd641b10983884cafb0a4d7d964a10de32d11` and binds the
-following *headline* declarations to their source §Zeta23§ suppliers:
+following *headline* declarations to their source `Zeta23` suppliers:
 
 - [`two_thirds_simple_on_critical_line` (source line 60)](https://github.com/anthropics/formal-math/blob/e1a4e6508154ea59f030480661590a9fe3018011/zeta23/Solution.lean#L60):
   for **every** `ε>0` there exists a cutoff `T₀` such that for
