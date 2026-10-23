@@ -43,4 +43,25 @@ theorem expired_rejected {Token : Type} {current submitted : Token}
     {now expiry : Nat} (h : ¬ now ≤ expiry) :
     ¬ CompletionAllowed current submitted now expiry := fun allowed => h allowed.2
 
+/-- Completion binds both the immutable task and the live lease token. -/
+def BoundCompletionAllowed {Binding Token : Type}
+    (currentBinding submittedBinding : Binding) (current submitted : Token)
+    (now expiry : Nat) : Prop :=
+  currentBinding = submittedBinding ∧ CompletionAllowed current submitted now expiry
+
+/-- A valid lease cannot authorize completing a different task binding. -/
+theorem changed_binding_rejected {Binding Token : Type}
+    {currentBinding submittedBinding : Binding} {current submitted : Token}
+    {now expiry : Nat} (h : currentBinding ≠ submittedBinding) :
+    ¬ BoundCompletionAllowed currentBinding submittedBinding current submitted now expiry :=
+  fun allowed => h allowed.1
+
+/-- Every allowed completion retains the current binding and live-token condition. -/
+theorem bound_completion_conditions {Binding Token : Type}
+    {currentBinding submittedBinding : Binding} {current submitted : Token}
+    {now expiry : Nat}
+    (allowed : BoundCompletionAllowed currentBinding submittedBinding current submitted now expiry) :
+    currentBinding = submittedBinding ∧ current = submitted ∧ now ≤ expiry :=
+  ⟨allowed.1, allowed.2.1, allowed.2.2⟩
+
 end GRWTSK.MathematicalLogic.FiniteSequences.ContentBoundCache
