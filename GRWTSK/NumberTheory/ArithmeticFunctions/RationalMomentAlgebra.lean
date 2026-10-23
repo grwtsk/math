@@ -58,7 +58,7 @@ theorem mobiusMoment_mul_zetaMoment : mobiusMoment * zetaMoment = 1 := by
   have identity := congrArg
     (fun f : ArithmeticFunction ℤ => (f : ArithmeticFunction ℚ))
     ArithmeticFunction.moebius_mul_coe_zeta
-  simpa [mobiusMoment, zetaMoment] using identity
+  simp [mobiusMoment, zetaMoment]
 
 @[simp]
 theorem zetaMoment_mul_mobiusMoment : zetaMoment * mobiusMoment = 1 := by

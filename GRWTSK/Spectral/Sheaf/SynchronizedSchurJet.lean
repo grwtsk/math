@@ -243,6 +243,8 @@ theorem transport_tau_intertwines
 
 end JetSheaf
 
+-- Retain the named edge witness in the sector-compatibility interface.
+set_option linter.unusedVariables false in
 /-- One parameter value carrying a compatible sector label and a sector singularity at every
 vertex. The sheaf itself already certifies transport of the effective pencil and all jets. -/
 structure CompatibleSectorZero

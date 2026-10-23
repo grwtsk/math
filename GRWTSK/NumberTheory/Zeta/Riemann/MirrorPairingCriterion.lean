@@ -98,7 +98,7 @@ theorem criticalLineMirrorPairingPositivity_iff_rh :
     all_criticalLineMirror_fixed_iff_rh
 
 /-- Package the exact algebraic mirror criterion for the generic positive-limit endpoint. -/
-def criticalLineMirrorPairingCriterion :
+theorem criticalLineMirrorPairingCriterion :
     ExactPositivityCriterion (MirrorTest criticalLineMirror) mirrorPairingForm where
   positivity_iff_rh := criticalLineMirrorPairingPositivity_iff_rh
 

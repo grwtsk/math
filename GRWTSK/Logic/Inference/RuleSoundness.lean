@@ -445,7 +445,7 @@ theorem rejecting_checker_does_not_cover_singleton :
 theorem rejecting_checker_covers_empty :
     rejectingChecker.Covers () (∅ : Finset Unit) (fun _ : Unit => ()) := by
   intro idx member
-  have impossible : False := by simpa using member
+  have impossible : False := by simp at member
   exact impossible.elim
 
 /-- An empty finite domain cannot exhaust even a singleton ambient domain. -/
@@ -454,12 +454,12 @@ theorem empty_domain_does_not_exhaust_singleton :
       idx ∈ (∅ : Finset Unit) ∧ idx = ambient) := by
   intro exhausts
   obtain ⟨idx, member, aligned⟩ := exhausts ()
-  simpa using member
+  simp at member
 
 /-- An empty ambient type has no requested case, so its universal exhaustion
 statement is vacuous and supplies no nonempty real-world coverage evidence. -/
 theorem empty_ambient_exhaustion_is_vacuous :
-    ∀ ambient : Empty, ∃ idx : Unit,
+    ∀ _ambient : Empty, ∃ idx : Unit,
       idx ∈ (∅ : Finset Unit) ∧ (false : Bool) = false := by
   intro ambient
   cases ambient

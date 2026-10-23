@@ -76,7 +76,7 @@ def coordinateOperator (z : ℂ) : Operator where
   map_add' x y := by
     ext <;> simp [mul_add]
   map_smul' c x := by
-    ext <;> simp [mul_assoc, mul_comm, mul_left_comm]
+    ext <;> simp [mul_left_comm]
 
 /-- Unit upper shift. -/
 def upperShift : Operator :=
@@ -99,8 +99,7 @@ theorem upperShift_mul_lowerShift_ne_lowerShift_mul_upperShift :
     (fun operator : Operator => operator ((1 : ℂ), (0 : ℂ))) h
   have hFirst := congrArg Prod.fst hAt
   have hone : (1 : ℂ) = 0 := by
-    simpa [upperShift, lowerShift, coordinateOperator, Module.End.mul_apply]
-      using hFirst
+    simp [upperShift, lowerShift, coordinateOperator, Module.End.mul_apply] at hFirst
   exact one_ne_zero hone
 
 /-- Concrete root. The representation is the identity representation of the full

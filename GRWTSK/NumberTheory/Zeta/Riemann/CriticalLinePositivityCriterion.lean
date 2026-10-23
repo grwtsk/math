@@ -52,7 +52,7 @@ theorem criticalLineDefectPositivity_iff_rh :
     norm_num
 
 /-- The exact criterion packaged for the generic positive-limit endpoint. -/
-def criticalLineDefectCriterion :
+theorem criticalLineDefectCriterion :
     ExactPositivityCriterion CriticalLineTest criticalLineDefectForm where
   positivity_iff_rh := criticalLineDefectPositivity_iff_rh
 
