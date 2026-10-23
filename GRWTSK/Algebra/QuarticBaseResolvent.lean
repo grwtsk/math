@@ -27,6 +27,16 @@ variable {K L : Type*} [Field K] [Field L] [Algebra K L]
 def baseAdjacencyResolvent (A B C₀ D : K) : K[X] :=
   adjacencyResolventOfMonicCoefficients A B C₀ D
 
+/-- Coefficient-wise base change gives exactly the same cubic as first
+extending the coefficient tuple; no root enumeration is involved. -/
+theorem baseAdjacencyResolvent_ringHom_map
+    {M : Type*} [Field M] (f : K →+* M) (A B C₀ D : K) :
+    (baseAdjacencyResolvent A B C₀ D).map f =
+      baseAdjacencyResolvent (f A) (f B) (f C₀) (f D) := by
+  simp [baseAdjacencyResolvent, adjacencyResolventOfMonicCoefficients,
+    adjacencyResolventFromVieta, map_add, map_sub, map_mul, map_pow,
+    map_ofNat]
+
 /-- Explicit coefficient descent commutes with scalar extension in
 every characteristic, with no separability requirement. -/
 theorem baseAdjacencyResolvent_map (A B C₀ D : K) :
@@ -34,9 +44,7 @@ theorem baseAdjacencyResolvent_map (A B C₀ D : K) :
       adjacencyResolventOfMonicCoefficients
         (algebraMap K L A) (algebraMap K L B)
         (algebraMap K L C₀) (algebraMap K L D) := by
-  simp [baseAdjacencyResolvent, adjacencyResolventOfMonicCoefficients,
-    adjacencyResolventFromVieta, Polynomial.map_add, Polynomial.map_sub,
-    Polynomial.map_mul, Polynomial.map_pow]
+  exact baseAdjacencyResolvent_ringHom_map (f := algebraMap K L) A B C₀ D
 
 /-- A factored actual monic quartic has an adjacency cubic obtained by
 scalar extension from K; the chosen ordering is auxiliary, not part of
@@ -88,15 +96,6 @@ theorem baseAdjacencyResolvent_map_tower
       (baseAdjacencyResolvent A B C₀ D).map (g.comp f) := by
   exact Polynomial.map_map (baseAdjacencyResolvent A B C₀ D) f g
 
-/-- Coefficient-wise base change gives exactly the same cubic as first
-extending the coefficient tuple; no root enumeration is involved. -/
-theorem baseAdjacencyResolvent_ringHom_map
-    {M : Type*} [Field M] (f : K →+* M) (A B C₀ D : K) :
-    (baseAdjacencyResolvent A B C₀ D).map f =
-      baseAdjacencyResolvent (f A) (f B) (f C₀) (f D) := by
-  simp [baseAdjacencyResolvent, adjacencyResolventOfMonicCoefficients,
-    adjacencyResolventFromVieta, map_add, map_sub, map_mul, map_pow,
-    map_ofNat]
 
 end
 end GRWTSK.Algebra.QuarticBaseResolvent
