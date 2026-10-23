@@ -1,0 +1,132 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-canonical-square-tent-zeta-approximation-v0.1"
+repository = "grwtsk/math"
+issue = 157
+base_branch = "main"
+base_commit = "c59bffa1b34996d87cd1efb13ad1c90ae3861082"
+base_tree = "93371d63dee2ef63e5cb34af29ecc62779cfb6c6"
+branch = "research/rh-square-tent-zeta-approx-157-20261023"
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentZetaApproximation.lean"
+source_blob = "fa62d122cd7e20ed0b6d2611e9214a5c13acd1d5"
+note = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-square-tent-zeta-approximation-157.md"
+note_blob = "c3aabe1fa4aec8211629dd0cae191e7c131ecb64"
+
+consumer_source = "GRWTSK/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean"
+ledger_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentLedger.lean"
+ledger_blob = "d5f4cdab9316269cc8ab1383f3810d057a95453b"
+atom_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentAtomStage.lean"
+atom_blob = "88ac98a84b68999824b68e9015bee8ca5627359d"
+spectral_source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSpectralPort.lean"
+spectral_blob = "858fb52930dd89de451224aeaf81dcea37d362af"
+
+source_binding = "Riemann-zeta canonical absolutely-summed square-tent explicit formula"
+test_class = "discrete canonical square tents m |-> tent(squareCenter(m+2),squareRadius(m+2),x)"
+normalization = "arithmetic square-tent Mangoldt source = pole - complete zero divisor + rational trivial-zero correction"
+cutoff = "H_N=N+2"
+off_diagonal_policy = "zero; no polarization theorem claimed"
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+require_exact_base_commit = true
+require_exact_source_blob = true
+require_exact_note_blob = true
+require_pinned_lean_mathlib = true
+require_isolated_source_elaboration = true
+require_warning_clean_build = true
+require_current_main_import_compatibility = true
+require_transitive_import_inventory = true
+require_exact_declaration_types = true
+require_no_sorry_admit_or_new_axiom = true
+require_kernel_checker = true
+require_axiom_closure = true
+require_generated_declaration_reconciliation = true
+require_external_replay_receipt = true
+reject_public_root_pass_as_leaf_evidence = true
+reject_classical_weil_criterion_claim = true
+reject_global_weil_positivity_claim = true
+reject_rh_claim = true
+do_not_merge = true
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.CanonicalSquareTentTest"
+classification = "precise_discrete_zeta_test_family"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.sourceBinding"
+classification = "immutable_source_and_normalization_binding"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.finiteSpectralValue_sub_target_eq_residual"
+classification = "exact_complete_arithmetic_residual_identity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.norm_finiteSpectralValue_sub_target_le"
+classification = "complete_zero_tail_bound"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.zetaTarget_diagonal_eq_sourceGram"
+classification = "arithmetic_gram_reconstruction"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.finiteApproximant_diagonal_lower_bound"
+classification = "approximate_diagonal_nonnegativity"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.lowerDefect_vanishes"
+classification = "pointwise_tail_decay"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.comparison_vanishes"
+classification = "pointwise_pairwise_comparison_decay"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.approximatePositiveApproximation"
+classification = "concrete_approximate_positive_instance"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.sourceBoundZetaApproximation"
+classification = "source_bound_packet"
+
+[[declarations]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentZetaApproximation.offDiagonal_zero"
+classification = "no_invented_polarization_control"
+
+[hostile_controls]
+cases = [
+  "test m uses source stage m+2 and never stage below 2",
+  "finite zero cutoff is H_N=N+2 and is cofinal",
+  "prime-power source sign matches canonical ledger",
+  "nontrivial-zero multiplicities are retained",
+  "rational correction is the complete actual trivial-zero series",
+  "no duplicate Archimedean term is introduced",
+  "tent endpoint contribution remains zero",
+  "finite head cannot replace complete divisor without canonicalTailBudget",
+  "target positivity is derived from source prime-power Gram, not assumed",
+  "finite approximant is only lower bounded by the vanishing defect",
+  "tail decay is pointwise at each fixed square-tent label, not uniform in the label",
+  "distinct labels have zero target and approximant cross terms",
+  "no Hermitian, bilinear, PSD-kernel or classical Weil criterion claim",
+  "no numerical zero certificate, finite-height RH or global RH claim"
+]
+
+[finite_fixture]
+test_index = 0
+source_stage = 2
+approximation_index = 0
+height_cutoff = 2
+kind = "exact_symbolic_heightHead"
+mathematical_authority = false
+
+[next_obstruction]
+statement = "Construct a source-proved polarized form on finite complex linear combinations of canonical square tents, with exact cross-term arithmetic coefficients, complete cross residuals, and positivity-preserving comparison."
