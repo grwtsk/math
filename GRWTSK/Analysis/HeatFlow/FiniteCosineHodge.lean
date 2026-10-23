@@ -784,6 +784,31 @@ theorem thetaKernelTerm_scaled (n : ℕ) (u : ℝ) :
     thetaKernelNegativePart_scaled]
   ring
 
+
+/-- Exact polynomial factor in the scaled Gaussian theta summand. -/
+def thetaScaledPolynomial (q : ℝ) : ℝ :=
+  2 * Real.pi ^ 2 * q ^ 2 - 3 * Real.pi * q
+
+/-- The signed polynomial factor is bounded by its positive-term
+envelope for nonnegative scaled Gaussian variable. -/
+theorem thetaScaledPolynomial_abs_bound (q : ℝ) (hq : 0 ≤ q) :
+    |thetaScaledPolynomial q| ≤
+      2 * Real.pi ^ 2 * q ^ 2 + 3 * Real.pi * q := by
+  unfold thetaScaledPolynomial
+  have hp : 0 ≤ 2 * Real.pi ^ 2 * q ^ 2 := by positivity
+  have hn : 0 ≤ 3 * Real.pi * q := by positivity
+  exact (abs_sub_le _ _).trans_eq
+    (by rw [abs_of_nonneg hp, abs_of_nonneg hn])
+
+/-- The scaled polynomial times Gaussian is the exact source term
+apart from the positive outer exp(u) factor. -/
+theorem thetaKernelTerm_scaledPolynomial (n : ℕ) (u : ℝ) :
+    thetaKernelTerm n u =
+      Real.exp u * thetaScaledPolynomial (thetaScaledGaussian n u) *
+        Real.exp (-(Real.pi * thetaScaledGaussian n u)) := by
+  rw [thetaKernelTerm_scaled]
+  rfl
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
