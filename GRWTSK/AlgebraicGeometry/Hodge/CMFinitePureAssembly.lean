@@ -130,6 +130,30 @@ def CMFiniteSeparatedCanonicalAssembly (E : CMGaloisIntermediateField) :
   (CMFiniteFourCoefficientMultiplication E).rTensor
     (CMFiniteCanonicalVectorTarget E)
 
+/-- The authentic original fourfold coefficient multiplication has the
+same pure formula as the independently checked algebraic supplier. -/
+@[simp] theorem CMFiniteFourCoefficientMultiplication_pure
+    (E : CMGaloisIntermediateField) (a b c d : E.carrier) :
+    CMFiniteFourCoefficientMultiplication E
+      (((a ⊗ₜ[ℚ] b) ⊗ₜ[ℚ] c) ⊗ₜ[ℚ] d) =
+      a * b * c * d := by
+  rw [CMFiniteFourCoefficientMultiplication_eq_checked]
+  exact coefficientMulFour_pure E.carrier a b c d
+
+/-- The original separated assembly evaluated on the original separated
+pure tensor, without importing a geometric realization. -/
+@[simp] theorem CMFiniteSeparatedCanonicalAssembly_pure
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteSeparatedCanonicalAssembly E
+      (CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  change separatedAssembly E.carrier
+      (separatedPure ℚ E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
+  simp [separatedAssembly, separatedPure, coefficientMulFour_pure]
+
 abbrev CMFiniteFourTensorShuffle (E : CMGaloisIntermediateField) :
     CMFiniteFourPairedTensor E ≃ₗ[ℚ]
       (CMFiniteFourCoefficientTensor E ⊗[ℚ]
