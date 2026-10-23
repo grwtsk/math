@@ -14,12 +14,18 @@ open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskBoundary
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskAdjunction
 open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonReverseCone
 
+private theorem cornerProductTopology_eq_bot (k : ℕ) :
+    @instTopologicalSpaceProd (Handle k) (Fin 4) inferInstance inferInstance =
+      (⊥ : TopologicalSpace (PolygonCorner k)) := by
+  exact DiscreteTopology.eq_bot
+
 /-- Exact boundary square for the original one-skeleton and disk maps.
 It is proved by surjectivity of the actual perimeter boundary chart. -/
 theorem reverse_boundary_commutes (k : ℕ)
     (z : TopCat.diskBoundary.{0} 2) :
     boundaryInclusion k (diskBoundaryAttachingMap k z) =
       euclideanDiskToFilling k ((TopCat.diskBoundaryInclusion 2) z) := by
+  let : TopologicalSpace (PolygonCorner k) := ⊥
   obtain ⟨x, rfl⟩ := (perimeterDiskBoundaryHomeomorph k).surjective z
   rw [diskBoundaryAttachingMap_factorization]
   exact (euclideanDiskToFilling_boundary k x).symm
@@ -32,10 +38,21 @@ def adjunctionToFilling (k : ℕ) :
     (reverse_boundary_commutes k)
 
 theorem adjunctionToFilling_continuous (k : ℕ) :
-    Continuous (adjunctionToFilling k) :=
-  polygonDescend_continuous k _ _ (reverse_boundary_commutes k)
-    (boundaryInclusion_continuous k)
-    (euclideanDiskToFilling_continuous k)
+    Continuous (adjunctionToFilling k) := by
+  have hboundary : Continuous (boundaryInclusion k) := by
+    have h := boundaryInclusion_continuous k
+    convert h using 1
+    all_goals
+      congr 3
+      exact cornerProductTopology_eq_bot k
+  have hdisk : Continuous (euclideanDiskToFilling k) := by
+    have h := euclideanDiskToFilling_continuous k
+    convert h using 1
+    congr 3
+    exact cornerProductTopology_eq_bot k
+  exact polygonDescend_continuous k _ _ (reverse_boundary_commutes k)
+    hboundary
+    hdisk
 
 @[simp] theorem adjunctionToFilling_skeleton (k : ℕ)
     (b : PolygonBoundaryOneSkeleton k) :

@@ -48,17 +48,17 @@ theorem productProjection_surjective (k : ℕ) :
   intro p
   exact ⟨(p, r), rfl⟩
 
-private def perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) :=
+private theorem perimeterT2 (k : ℕ) : T2Space (UnpairedPerimeter k) :=
   (perimeterUnitCircleHomeomorph k).symm.t2Space
 
-private def radialSourceCompact (k : ℕ) :
+private theorem radialSourceCompact (k : ℕ) :
     CompactSpace (RadialSource k) := by
   infer_instance
 
 theorem productProjection_isQuotientMap (k : ℕ) :
-    IsQuotientMap (productProjection k) := by
-  letI : CompactSpace (RadialSource k) := radialSourceCompact k
-  letI : T2Space (UnpairedPerimeter k) := perimeterT2 k
+    Topology.IsQuotientMap (productProjection k) := by
+  let : CompactSpace (RadialSource k) := radialSourceCompact k
+  let : T2Space (UnpairedPerimeter k) := perimeterT2 k
   exact Topology.IsQuotientMap.of_surjective_continuous
     (productProjection_surjective k)
     (productProjection_continuous k)
