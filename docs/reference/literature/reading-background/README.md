@@ -6,6 +6,8 @@ For each newly formalized theorem, construction, algorithm, or method drawn from
 
 For **paper-derived mathematical formalizations**, record the published source's exact theorem/method and hypotheses, stable bibliography, pinned Lean declarations and commit, verification evidence, and proved-versus-analogy status. The [paper-to-Lean RH provenance ledger](paper-formalization-provenance-rh.md) gives the required template and applies it to the Bombieri/Weil test-class work and related literature. Its source inspection does not imply reading history, intellectual influence, or kernel acceptance.
 
+Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+
 Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
 
 Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
