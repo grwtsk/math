@@ -111,7 +111,7 @@ def recordDiscriminant : ℤ :=
   let b₂ : ℤ := 1
   let b₄ : ℤ := -2 * A
   let b₆ : ℤ := 4 * B
-  let b₈ : ℤ := B - A ^ 2
+  let b₈ : ℤ := B - A ^ 2;
   -(b₂ ^ 2 * b₈) - 8 * b₄ ^ 3 - 27 * b₆ ^ 2 + 9 * b₂ * b₄ * b₆
 
 theorem discriminant_ne_zero : recordDiscriminant ≠ 0 := by
