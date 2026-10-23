@@ -598,6 +598,32 @@ theorem thetaGaussianSummand_mode_antitone
   have hp : 0 < Real.pi := Real.pi_pos
   nlinarith [sq_nonneg ((n : ℝ) - m)]
 
+
+/-- The literal n-th summand of the theta kernel in the selected
+Rodgers–Tao normalization. The infinite sum and its analytic decay
+are not inferred from this finite definition. -/
+def thetaKernelTerm (n : ℕ) (u : ℝ) : ℝ :=
+  (2 * Real.pi ^ 2 * (n : ℝ) ^ 4 * Real.exp (9 * u) -
+    3 * Real.pi * (n : ℝ) ^ 2 * Real.exp (5 * u)) *
+    thetaGaussianSummand n u
+
+/-- The zeroth term vanishes; the actual theta kernel sums n≥1. -/
+@[simp] theorem thetaKernelTerm_zero (u : ℝ) :
+    thetaKernelTerm 0 u = 0 := by
+  simp [thetaKernelTerm]
+
+/-- A source-exact algebraic expansion retains both polynomial factors
+and the common Gaussian, rather than replacing the theta summand by
+the Gaussian alone. -/
+theorem thetaKernelTerm_expansion (n : ℕ) (u : ℝ) :
+    thetaKernelTerm n u =
+      2 * Real.pi ^ 2 * (n : ℝ) ^ 4 * Real.exp (9 * u) *
+        thetaGaussianSummand n u -
+      3 * Real.pi * (n : ℝ) ^ 2 * Real.exp (5 * u) *
+        thetaGaussianSummand n u := by
+  unfold thetaKernelTerm
+  ring
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
