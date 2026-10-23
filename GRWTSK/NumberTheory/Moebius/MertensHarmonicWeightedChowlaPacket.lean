@@ -135,7 +135,6 @@ theorem weightedMertensTwoPointChowlaAverage_eq_harmonic
   · by_cases hb : 2 ^ j ≤ t + 1 + h
     · rw [normalizedSignedAbelShiftKernel_eq_harmonic hh hhY ht hb]
       simp [ht, hb]
-      ring
     · have hb' : t + 1 + h < 2 ^ j := Nat.lt_of_not_ge hb
       rw [normalizedSignedAbelShiftKernel_eq_zero_of_endpoint_lt_left hb']
       simp [ht, hb]

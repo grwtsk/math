@@ -1,3 +1,6 @@
+# Historical original target Git blob: ec9e452a61171603fe43d01cb28eeadd8a8063a8.
+# Historical original parent: f26d7270e89e5ed348dad240ddedf494b4047895; tree 9834322dc060180ac418075a394fb9e625c05666.
+# Original source and note publication identities are historical; repaired containing revisions are required in external replay.
 schema = "grwtsk-math-replay-target-v1"
 id = "rh-mertens-harmonic-weighted-chowla-511-v0.1"
 owner_repository = "grwtsk/math"
@@ -8,12 +11,68 @@ status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
 root_module = "GRWTSK.NumberTheory.Moebius.MertensHarmonicWeightedChowlaPacket"
 build_target = "GRWTSK.NumberTheory.Moebius.MertensHarmonicWeightedChowlaPacket"
 
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_git_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_git_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+
 [source_binding]
-stacked_parent_revision = "f26d7270e89e5ed348dad240ddedf494b4047895"
-candidate_branch = "research/rh-harmonic-chowla-511-20261021"
-theorem_source_commit = "2635fcfd75d8e61470e27f0bf6481c1333e668f8"
+stacked_parent_revision = "53a20f6466635fb00b83f6a910db5c779d7bd4ca"
+stacked_parent_tree = "994796ede2122d6f8999731693ae75a09390c9a3"
+historical_candidate_branch = "research/rh-harmonic-chowla-511-20261021"
+historical_theorem_source_commit = "2635fcfd75d8e61470e27f0bf6481c1333e668f8"
 theorem_source_path = "GRWTSK/NumberTheory/Moebius/MertensHarmonicWeightedChowlaPacket.lean"
-theorem_source_git_blob = "2cab2f1833bf19cfe9e03bab209386338a251905"
+historical_theorem_source_git_blob = "2cab2f1833bf19cfe9e03bab209386338a251905"
+theorem_source_git_blob = "92b33c6f6b01948ce4807a2e722b3082b83fee28"
+repaired_source_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+historical_theorem_source_tree = "45e7f93937242b9e38d6c18247ed01e0eaf50055"
+historical_mathematical_note_commit = "2e78ffec9709bd38b621466568a44c785951c826"
+historical_mathematical_note_tree = "e2c6b0d7782d724c0897937415b7e097bcd0ea6d"
+historical_mathematical_note_git_blob = "9ecabb29fc59ebb17c096a6485b7c66fc0e6a926"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/mertens-harmonic-weighted-chowla.md"
+mathematical_note_git_blob = "eccd82164205004b20ac3b63059747d72509d1a9"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_unverified_external_certificate = true
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensWeightedChowlaPacket.lean"
+git_blob = "0582f605e0973ec87c9a7701ee190a3c5993e77b"
+status = "INHERITED_SOURCE_BINDING_NOT_FRESH_ACCEPTANCE"
+
+[declaration_inventory]
+names = [
+  "dyadicMertensShiftWeightDrop_eq_zero_of_endpoint_lt_left",
+  "dyadicMertensShiftWeightDrop_eq_reciprocalDrop_of_left_le",
+  "normalizedSignedAbelShiftKernel_eq_harmonic",
+  "normalizedSignedAbelShiftKernel_eq_zero_of_endpoint_lt_left",
+  "normalizedSignedAbelShiftKernel_eq_maxReciprocalDrop",
+  "normalizedSignedAbelShiftKernelMass_eq_harmonicTail",
+  "harmonicWeightedMertensTwoPointChowlaAverage",
+  "weightedMertensTwoPointChowlaAverage_eq_harmonic",
+  "weightedMertensDyadicSignedAbelDepthSlice_eq_harmonicChowla",
+  "harmonicWeightedMertensDyadicChowlaPacket",
+  "harmonicWeightedMertensDyadicChowlaPacket_eq_weightedPacket",
+  "SubpolynomialDyadicHarmonicWeightedMertensChowlaPacket",
+  "subpolynomialDyadicHarmonicWeightedMertensChowlaPacket_iff_weighted",
+  "riemannHypothesis_of_subpolynomialDyadicHarmonicWeightedMertensChowlaPacket"
+]
 
 [selected_increment]
 zero_drop = "dyadicMertensShiftWeightDrop_eq_zero_of_endpoint_lt_left"
