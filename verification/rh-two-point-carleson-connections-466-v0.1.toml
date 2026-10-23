@@ -1,0 +1,438 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-point-carleson-connections-466-v0.1"
+owner_repository = "grwtsk/math"
+issue = 466
+parent_issue = 461
+parent_pr = 465
+obstruction_issue = 460
+obstruction_pr = 462
+canonical_consumer_issue = 410
+canonical_consumer_pr = 411
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ALL_EXTERNAL_ADAPTERS_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonConjectureConnections"
+build_target = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonConjectureConnections"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+stacked_parent_branch = "research/rh-scale-max-carleson-461-20261021"
+stacked_parent_revision = "ef00d2505cf775470e570d7093a47438abda6ac5"
+stacked_parent_tree = "dfdd6bf613c9c12222f127aecbd66f0743706042"
+candidate_branch = "research/rh-carleson-conjecture-connections-466-20261021"
+theorem_source_commit = "3cc944f36992724aaa1d77f07b2dcc0bbefa765e"
+theorem_source_tree = "fc5d597164d441c9f738dc888236102110df52a5"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonConjectureConnections.lean"
+theorem_source_git_blob = "f8e4597c5e1716765345a317b01d728f6ed660a9"
+mathematical_note_commit = "f4303a4a7c418d2a4fc74d091d4a931a3c495c8e"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-carleson-conjecture-connections.md"
+mathematical_note_git_blob = "7f665b51acd4fa43f99b6a1d5a6a29bfed21e64c"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointCarlesonConnections"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonEnergy"
+module_git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+carleson_premise = "SubpolynomialDyadicMertensTwoPointCarlesonEnergyWithDepthCost"
+maximal_premise = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensTwoPointCarlesonEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[selected_increment]
+primary_observable = "mertensTwoPointTopScaleAutocorrelationEnergy"
+finite_theorem = "mertensTwoPointTopScaleEnergy_le_carlesonEnergySum"
+all_scale_theorem = "subpolynomialTopScaleAutocorrelationEnergy_of_carleson"
+necessary_condition = "SubpolynomialDyadicMertensTopScaleAutocorrelationEnergy"
+missing_converse = "TopScaleToCarlesonPositiveScaleBridge"
+relation_type = "ScopedConnection"
+local_positive_edges = [
+  "carlesonImpliesTopScale",
+  "carlesonImpliesRiemannHypothesis"
+]
+proof_classification = "EXACT_FINITE_TERMINAL_TO_MAXIMAL_COMPARISON_PLUS_TYPED_CONNECTION_GRAPH"
+rh_consequence = "REUSES_EXISTING_CONDITIONAL_CONSUMER"
+next_obstruction = "positive-scale full-dyadic max-per-scale two-point Moebius estimate"
+
+[top_scale_observable]
+dyadic_endpoint = "Y=2^(j+1)"
+formula = "sum_(1<=h<Y) mertensTwoPointPrefix(h,Y-h-1)^2"
+shift_range = "Finset.Ico 1 (2^(j+1))"
+terminal_length = "dyadicTwoPointCutoff j h = 2^(j+1)-h-1"
+codomain = "real"
+positivity = "FINITE_NONNEGATIVE_SUM_OF_REAL_SQUARES"
+finite_bound = "TopEnergy(j) <= (j+2)*CarlesonEnergySum(j)"
+converse_claimed = false
+positive_scales_retained_by_carleson = true
+
+[scope_axes]
+averaging_modes = [
+  "ORDINARY",
+  "LOGARITHMIC",
+  "DYNAMICAL",
+  "SPECTRAL_MEAN_SQUARE",
+  "FINITE_COMBINATORIAL"
+]
+shift_scopes = [
+  "FIXED",
+  "POLYLOGARITHMIC_GROWING",
+  "FULL_DYADIC_GROWING",
+  "NO_SHIFT_PARAMETER"
+]
+window_scopes = [
+  "ONE_TERMINAL_PREFIX",
+  "TRANSLATED_INTERVALS",
+  "ALIGNED_DYADIC_MAX_PER_SCALE",
+  "GLOBAL_MEAN_SQUARE",
+  "DYNAMICAL_ORBIT",
+  "POLYNOMIAL_UNIT_CIRCLE"
+]
+aggregation_scopes = [
+  "POINTWISE",
+  "AVERAGE_OVER_PARAMETERS",
+  "SQUARE_SUM_OVER_SHIFTS",
+  "MAX_PER_SCALE_SQUARE_SUM",
+  "EXISTENTIAL_SEQUENCE"
+]
+claim_dispositions = [
+  "REPOSITORY_CONDITIONAL",
+  "OPEN",
+  "EXTERNALLY_ANNOUNCED",
+  "PARTIAL_RESULT",
+  "REFUTED_AT_SCOPE",
+  "STRUCTURAL_ANALOGUE"
+]
+
+[relation_semantics]
+constructors = [
+  "IMPLIES",
+  "EQUIVALENT",
+  "REQUIRES",
+  "REFUTES_AT_SCOPE",
+  "RELEVANT_ONLY",
+  "STRUCTURAL_ANALOGY"
+]
+positive_projection = ["IMPLIES", "EQUIVALENT"]
+nontraversable = [
+  "REQUIRES",
+  "REFUTES_AT_SCOPE",
+  "RELEVANT_ONLY",
+  "STRUCTURAL_ANALOGY"
+]
+projection_function = "ScopedConnection.toImplication?"
+source_url_is_not_proof = true
+metadata_is_not_proof = true
+adapter_type_is_not_adapter_value = true
+
+[connection_graph]
+carleson_to_top_scale = "IMPLIES"
+top_scale_to_carleson = "REQUIRES_POSITIVE_SCALE_BRIDGE"
+carleson_to_rh = "IMPLIES_CONDITIONALLY_ON_CARLESON_PREMISE"
+fixed_two_point_to_carleson = "REQUIRES"
+corrected_elliott_to_carleson = "REQUIRES"
+logarithmic_growing_shift_to_carleson = "REQUIRES"
+short_interval_mobius_to_carleson = "REQUIRES"
+higher_order_chowla_to_carleson = "REQUIRES"
+higher_order_elliott_to_carleson = "REQUIRES"
+sarnak_to_carleson = "REQUIRES"
+weak_mertens_to_carleson = "REQUIRES"
+gonek_hejhal_to_carleson = "REQUIRES"
+ultraflat_littlewood_to_mobius_carleson = "STRUCTURAL_ANALOGY"
+complete_tree_to_complete_tree_supplier = "REFUTES_AT_SCOPE"
+complete_tree_witness_to_carleson = "RELEVANT_ONLY"
+
+[adapter_inventory]
+fixed_ordinary = "FixedOrdinaryBinaryToCarlesonAdapter"
+logarithmic_growing = "LogarithmicGrowingShiftToCarlesonAdapter"
+short_interval_one_point = "ShortIntervalOnePointToCarlesonAdapter"
+higher_order = "HigherOrderToCarlesonAdapter"
+sarnak = "SarnakToCarlesonAdapter"
+weak_mertens = "WeakMertensToCarlesonAdapter"
+gonek_hejhal = "GonekHejhalToCarlesonAdapter"
+all_adapter_values_constructed = false
+
+[[external_sources]]
+id = "openai-result-007-scope"
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+path = "lean/docs/007.md"
+git_blob = "dad638d19609ebbddc93a5594dfc2ecd2a26a7a6"
+date = "2026-09-24"
+scope = "ordinary fixed nonproportional affine two-point cancellation and corrected binary Elliott under uniform nonpretentiousness"
+constant_dependency = "implied constant may depend on fixed affine forms"
+local_theorem_admitted = false
+status = "EXTERNAL_ANNOUNCEMENT_RECORD"
+
+[[external_sources]]
+id = "openai-result-076-catalog"
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+path = "overview.tex"
+git_blob = "8f3b8cb6d5c4f5f7f0ac216b2c6db52b4b34b2fd"
+date = "2026-10-06"
+scope = "catalog claim of ultraflat real Littlewood polynomials and unbounded binary merit factors"
+local_theorem_admitted = false
+status = "STRUCTURAL_ANALOGY_RECORD"
+
+[[external_sources]]
+id = "openai-result-076-preprint-record"
+repository = "openai/math"
+revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+path = "preprints/Ultraflat-real-Littlewood-polynomials-October-5-2026/README.md"
+git_blob = "afb7b45728da1b622dec296db4bac25731de69af"
+date = "2026-10-05"
+scope = "preprint identity and citation record"
+local_theorem_admitted = false
+status = "EXTERNAL_SOURCE_IDENTITY"
+
+[[external_sources]]
+id = "guo-growing-logarithmic-chowla"
+source = "arXiv:2608.23500"
+title = "Quantitative Logarithmic Chowla Correlations Uniformly over Growing Shifts"
+authors = "Jizhou Guo"
+date = "2026-08-24"
+scope = "logarithmically weighted growing-shift cancellation; conservative profile uses fixed polylogarithmic ranges"
+local_theorem_admitted = false
+status = "EXTERNAL_PARTIAL_RESULT_RECORD"
+
+[[external_sources]]
+id = "hughes-every-logarithmic-window"
+source = "arXiv:2609.28526"
+title = "Effective logarithmic two-point Chowla bounds in every window"
+authors = "Scott D. Hughes"
+date = "2026-09-22"
+scope = "logarithmically weighted affine correlations in every logarithmic window with explicit thresholds"
+local_theorem_admitted = false
+status = "EXTERNAL_PARTIAL_RESULT_RECORD"
+
+[[external_sources]]
+id = "short-interval-mobius-19-35"
+source = "arXiv:2610.09567"
+title = "Higher order uniformity of the primes and cancellation of the Mobius function in shorter intervals"
+authors = "Kaisa Matomaki; Mayank Pandey; Javier Pliego; Joni Teravainen; Mengdi Wang"
+date = "2026-10-07"
+scope = "one-point Mobius cancellation in all intervals of length X^(19/35+epsilon)"
+local_theorem_admitted = false
+status = "EXTERNAL_PARTIAL_RESULT_RECORD"
+
+[[external_sources]]
+id = "tao-log-chowla-sarnak"
+source = "arXiv:1605.04628"
+title = "Equivalence of the logarithmically averaged Chowla and Sarnak conjectures"
+authors = "Terence Tao"
+date = "2016-05-16"
+scope = "logical equivalence at logarithmic averaging scope and local Gowers uniformity"
+local_theorem_admitted = false
+status = "EXTERNAL_THEOREM_RECORD"
+
+[[external_sources]]
+id = "tao-teravainen-almost-all-scales"
+source = "arXiv:1809.02518"
+title = "The structure of correlations of multiplicative functions at almost all scales, with applications to the Chowla and Elliott conjectures"
+authors = "Terence Tao; Joni Teravainen"
+date = "2018-09-07"
+scope = "higher-order structure and ordinary special cases outside a zero-log-density exceptional scale set"
+local_theorem_admitted = false
+status = "EXTERNAL_THEOREM_RECORD"
+
+[[external_sources]]
+id = "ng-weak-mertens"
+source = "arXiv:math/0310381"
+title = "The distribution of the summatory function of the Mobius function"
+authors = "Nathan Ng"
+date = "2003-10-23"
+scope = "conditional Weak Mertens and limiting-distribution consequences under RH and a Gonek--Hejhal hypothesis"
+local_theorem_admitted = false
+status = "EXTERNAL_CONDITIONAL_RESULT_RECORD"
+
+[[external_sources]]
+id = "heap-li-zhao-negative-moments"
+source = "arXiv:2003.09368"
+title = "Lower bounds for discrete negative moments of the Riemann zeta function"
+authors = "Winston Heap; Junxian Li; Jing Zhao"
+date = "2020-03-20"
+scope = "lower bounds consistent with Gonek--Hejhal; no proof of the full conjecture or Carleson adapter"
+local_theorem_admitted = false
+status = "EXTERNAL_PARTIAL_RESULT_RECORD"
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+external_adapter_constructed = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_private_declaration_reconciliation = false
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+literature_status_is_not_repository_evidence = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_external_source_metadata_as_proof = true
+reject_adapter_type_as_adapter_value = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonConjectureConnections"
+authored_declaration_count = 59
+definition_count = 34
+structure_count = 10
+inductive_count = 7
+theorem_script_count = 8
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonEnergy.lean"
+git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_465"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeSingletonMassObstruction.lean"
+git_blob = "935cff049d32632e3aed703e80a6f123e7923a25"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_462"
+
+[statement_controls]
+top_scale_uses_exact_shift_range = true
+top_scale_uses_exact_terminal_cutoff = true
+carleson_to_top_scale_is_proved = true
+top_scale_to_carleson_is_not_assumed = true
+fixed_to_growing_quantifier_exchange_rejected = true
+ordinary_logarithmic_exchange_rejected = true
+terminal_maximal_exchange_rejected = true
+almost_all_every_scale_exchange_rejected = true
+one_point_two_point_exchange_rejected = true
+higher_order_binary_exchange_rejected = true
+dynamical_arithmetic_exchange_rejected = true
+spectral_bilinear_exchange_rejected = true
+existential_sequence_mobius_exchange_rejected = true
+full_tree_refutation_scope_retained = true
+
+[hostile_controls]
+external_announcement_not_local_theorem = true
+source_url_not_proof = true
+source_revision_not_proof = true
+lean_source_presence_not_elaboration = true
+successful_elaboration_not_analytic_premise = true
+requires_edge_not_traversable = true
+refutation_edge_not_positive_implication = true
+relevance_edge_not_implication = true
+structural_analogy_not_implication = true
+top_scale_not_sufficient_for_positive_scales = true
+littlewood_existence_not_mobius_flatness = true
+full_tree_obstruction_not_carleson_refutation = true
+conditional_rh_return_not_rh_proof = true
+
+[open_obligations]
+exact_head_elaboration = true
+complete_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+positive_scale_carleson_arithmetic_estimate = true
+fixed_ordinary_adapter = true
+corrected_elliott_adapter = true
+logarithmic_growing_shift_adapter = true
+short_interval_two_point_adapter = true
+higher_order_adapter = true
+sarnak_adapter = true
+weak_mertens_adapter = true
+gonek_hejhal_adapter = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+external_result_admitted = false
+positive_scale_estimate_proved = false
+top_scale_estimate_proved_arithmetically = false
+fixed_shift_chowla_proved_locally = false
+corrected_elliott_proved_locally = false
+higher_order_chowla_proved = false
+sarnak_disjointness_proved = false
+weak_mertens_proved = false
+gonek_hejhal_proved = false
+littlewood_result_proved_locally = false
+new_pickup_damping_paid = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "mertensTwoPointTopScaleAutocorrelationEnergy",
+  "mertensTwoPointTopScaleAutocorrelationEnergy_nonneg",
+  "mertensTwoPointTerminal_sq_le_carleson",
+  "mertensTwoPointTopScaleEnergy_le_carlesonEnergySum",
+  "SubpolynomialDyadicMertensTopScaleAutocorrelationEnergy",
+  "subpolynomialTopScaleAutocorrelationEnergy_of_carleson",
+  "TopScaleToCarlesonPositiveScaleBridge",
+  "AveragingMode",
+  "ShiftScope",
+  "WindowScope",
+  "AggregationScope",
+  "ClaimDisposition",
+  "EvidenceBoundary",
+  "ClaimProfile",
+  "ScopedConnection",
+  "ScopedConnection.toImplication?",
+  "ScopedConnection.requires_has_no_implication",
+  "ScopedConnection.refutation_has_no_positive_implication",
+  "ScopedConnection.relevance_has_no_implication",
+  "ScopedConnection.structuralAnalogy_has_no_implication",
+  "carlesonSupplierProfile",
+  "topScaleAutocorrelationProfile",
+  "riemannHypothesisProfile",
+  "completeTreeSupplierProfile",
+  "ordinaryFixedTwoPointProfile",
+  "correctedBinaryElliottProfile",
+  "logarithmicGrowingShiftProfile",
+  "shortIntervalMobiusProfile",
+  "higherOrderChowlaProfile",
+  "higherOrderElliottProfile",
+  "sarnakDisjointnessProfile",
+  "weakMertensProfile",
+  "gonekHejhalProfile",
+  "ultraflatLittlewoodProfile",
+  "FixedOrdinaryBinaryToCarlesonAdapter",
+  "LogarithmicGrowingShiftToCarlesonAdapter",
+  "ShortIntervalOnePointToCarlesonAdapter",
+  "HigherOrderToCarlesonAdapter",
+  "SarnakToCarlesonAdapter",
+  "WeakMertensToCarlesonAdapter",
+  "GonekHejhalToCarlesonAdapter",
+  "carlesonImpliesTopScale",
+  "topScaleRequiresPositiveScaleBridge",
+  "carlesonImpliesRiemannHypothesis",
+  "fixedOrdinaryTwoPointRequiresAdapter",
+  "correctedBinaryElliottRequiresAdapter",
+  "logarithmicGrowingShiftRequiresAdapter",
+  "shortIntervalMobiusRequiresAdapter",
+  "higherOrderChowlaRequiresAdapter",
+  "higherOrderElliottRequiresAdapter",
+  "sarnakDisjointnessRequiresAdapter",
+  "weakMertensRequiresAdapter",
+  "gonekHejhalRequiresAdapter",
+  "ultraflatLittlewoodIsStructuralAnalogy",
+  "completeTreeRefutationAtExactScope",
+  "completeTreeWitnessRelevantToCarleson",
+  "ExternalConjectureClaims",
+  "CarlesonConjectureConnectionAtlas",
+  "conservativeConnectionAtlas"
+]
