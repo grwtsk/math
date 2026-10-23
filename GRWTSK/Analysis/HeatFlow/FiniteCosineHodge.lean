@@ -484,6 +484,36 @@ theorem twoModeHeat_source_error_contracts
             nlinarith [mul_le_mul_of_nonneg_left hh (abs_nonneg (b - b'))]
   exact (abs_add_le _ _).trans (add_le_add h₁ h₂)
 
+
+/-- The finite heat readout is Lipschitz in its two source coefficients
+uniformly in nonnegative Hodge time and the real observation coordinate. -/
+theorem twoModeHeat_source_lipschitz
+    (a b a' b' s u v z L : ℝ)
+    (hs : 0 ≤ s)
+    (hsource : |a - a'| + |b - b'| ≤ L) :
+    |twoModeHeat a b s u v z - twoModeHeat a' b' s u v z| ≤ L :=
+  (twoModeHeat_source_error_contracts a b a' b' s u v z hs).trans hsource
+
+/-- An independently certified source-to-coefficient error and a second
+finite readout error combine without dropping either error contribution. -/
+theorem twoModeHeat_source_and_readout_budget
+    (a b a' b' s u v z target eSource eReadout : ℝ)
+    (hs : 0 ≤ s)
+    (hSource : |a - a'| + |b - b'| ≤ eSource)
+    (hReadout : |twoModeHeat a' b' s u v z - target| ≤ eReadout) :
+    |twoModeHeat a b s u v z - target| ≤ eSource + eReadout := by
+  have h₁ := twoModeHeat_source_lipschitz
+    a b a' b' s u v z eSource hs hSource
+  have h₂ := abs_add_le
+    (twoModeHeat a b s u v z - twoModeHeat a' b' s u v z)
+    (twoModeHeat a' b' s u v z - target)
+  have heq :
+      (twoModeHeat a b s u v z - twoModeHeat a' b' s u v z) +
+        (twoModeHeat a' b' s u v z - target) =
+      twoModeHeat a b s u v z - target := by ring
+  rw [heq] at h₂
+  exact h₂.trans (add_le_add h₁ hReadout)
+
 end
 
 end GRWTSK.Analysis.HeatFlow.FiniteCosineHodge
