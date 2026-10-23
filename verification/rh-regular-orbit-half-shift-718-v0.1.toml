@@ -1,0 +1,164 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-regular-orbit-half-shift-718-v0.1"
+owner_repository = "grwtsk/math"
+issue = 718
+parent_issue = 706
+parent_pr = 710
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_ORBIT_HALF_SHIFT_REINDEX_SOURCE_DRAFT_HALF_CONDUCTOR_DESCENT_OPEN_EVEN_HALF_SHIFT_ESTIMATE_OPEN_ODD_HALF_SHIFT_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitHalfShiftReindex"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitHalfShiftReindex"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-regular-orbit-shift-parity-706-20261022"
+stacked_parent_revision = "52c627ee421c8be835c72ba1028d8d1f815cfbe1"
+stacked_parent_tree = "93ce7689d4df957c3f4a48a6bdb6838d7e363f81"
+candidate_branch = "research/rh-regular-orbit-half-shift-718-20261022"
+theorem_source_commit = "b5a1ca8e4c7e06c68b73941cb14c04317bb87a02"
+theorem_source_tree = "89bb95d25f3b34bafc363f1fea2eb651c7b4c42b"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitHalfShiftReindex.lean"
+theorem_source_git_blob = "1d364d10eec3026c64352f860bc63cb5e5d87bcf"
+mathematical_note_commit = "8b6df0496c27734f9b27d5c56c2fc1d25c918c8a"
+mathematical_note_tree = "0a56337b9620701246b4ae2096620cb777069f32"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-orbit-half-shift-reindex.md"
+mathematical_note_git_blob = "03eb94819ac7619c5a992b1e2449c63f15fcc6c4"
+
+[half_shift_sets]
+even_half_shift_set = "positiveEvenHalfShiftSet"
+odd_half_shift_set = "nonnegativeOddHalfShiftSet"
+even_reindex = "sum_evenPositiveEndpointShiftSet_eq_halfShift"
+odd_reindex = "sum_oddPositiveEndpointShiftSet_eq_halfShift"
+even_map = "t -> 2*t"
+odd_map = "t -> 2*t+1"
+complete_shift_support_preserved = true
+
+[phase_extraction]
+even_phase = "affineChowlaShiftPhase_two_mul"
+odd_phase = "affineChowlaShiftPhase_two_mul_add_one"
+extracted_odd_phase_norm = "norm_affineChowlaShiftPhase_one"
+common_frequency = "doubledSquareModulusFrequency d k"
+frequency_map_inverted = false
+half_conductor_descent_performed = false
+
+[exact_aggregates]
+even_half_shift_aggregate = "twoKernelEvenHalfShiftAggregate"
+odd_half_shift_aggregate = "twoKernelOddHalfShiftAggregate"
+even_identity = "twoKernelEvenShiftAggregate_eq_halfShift"
+odd_identity = "twoKernelOddShiftAggregate_eq_phase_mul_halfShift"
+absolute_values_before_complete_shift_sum = false
+
+[consumer_surfaces]
+even_orbit_majorant = "twoNonunitEvenHalfShiftOrbitMajorant"
+odd_orbit_majorant = "twoNonunitOddHalfShiftOrbitMajorant"
+even_orbit_equality = "twoNonunitEvenShiftOrbitMajorant_eq_halfShift"
+odd_orbit_equality = "twoNonunitOddShiftOrbitMajorant_eq_halfShift"
+even_endpoint_majorant = "twoNonunitEvenHalfShiftEndpointMajorant"
+odd_endpoint_majorant = "twoNonunitOddHalfShiftEndpointMajorant"
+even_endpoint_equality = "twoNonunitEvenHalfShiftEndpointMajorant_eq_existing"
+odd_endpoint_equality = "twoNonunitOddHalfShiftEndpointMajorant_eq_existing"
+canonical_regular_representatives_preserved = true
+exceptional_orbit_excluded = true
+square_modulus_preserved = true
+normalization = "1/d^2"
+
+[analytic_interfaces]
+even_budget = "DyadicNaturalScaleTwoNonunitEvenHalfShiftBudget"
+odd_budget = "DyadicNaturalScaleTwoNonunitOddHalfShiftBudget"
+even_budget_equivalence = "dyadicEvenHalfShiftBudget_iff_evenShift"
+odd_budget_equivalence = "dyadicOddHalfShiftBudget_iff_oddShift"
+regular_recombination = "regularOrbitBudget_of_evenHalf_and_oddHalf"
+natural_scale_transport = "naturalScaleCongruenceL1_of_pointwise_modFour_twoUnit_halfShift"
+even_budget_constructed = false
+odd_budget_constructed = false
+
+[half_conductor_boundary]
+generic_adapter = "ToTwoNonunitHalfShiftBudgetsAdapter"
+data = "HalfConductorDescentData"
+source = "HalfConductorDescentSource"
+adapter = "HalfConductorDescentAdapter"
+half_modulus_positivity_required = true
+doubling_image_characterization_required = true
+regular_orbit_image_bijection_required = true
+even_phase_descent_required = true
+odd_phase_descent_required = true
+half_index_core_transport_required = true
+exceptional_frequency_separate = true
+endpoint_frequency_normalization_required = true
+adapter_value_constructed = false
+
+[evidence_states]
+source_draft = true
+exact_even_half_shift_reindex_scripted = true
+exact_odd_half_shift_reindex_scripted = true
+exact_doubled_frequency_phase_extraction_scripted = true
+exact_half_shift_orbit_equalities_scripted = true
+exact_half_shift_endpoint_equalities_scripted = true
+exact_half_shift_budget_equivalences_scripted = true
+conditional_downstream_transport_scripted = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+half_conductor_descent_proved = false
+even_half_shift_estimate_proved = false
+odd_half_shift_estimate_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.RegularOrbitHalfShiftReindex"
+definition_count = 11
+theorem_script_count = 15
+structure_count = 2
+abbreviation_count = 1
+authored_declaration_count = 29
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/RegularOrbitShiftParityProjectors.lean"
+git_blob = "d303d310da4e22708e8581cf968ff498c1f374f4"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_710"
+
+[hostile_controls]
+complete_even_shift_sum_preserved = true
+complete_odd_shift_sum_preserved = true
+shiftwise_absolute_values_rejected = true
+both_mobius_parities_preserved = true
+doubled_core_frequency_preserved = true
+canonical_regular_representatives_preserved = true
+exceptional_orbit_not_reintroduced = true
+square_modulus_preserved = true
+endpoint_support_preserved = true
+normalization_preserved = true
+doubling_not_treated_as_invertible = true
+half_modulus_not_identified_without_theorem = true
+analytic_estimate_not_inferred_from_reindexing = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_half_conductor_descent = true
+construct_even_half_shift_analytic_supplier = true
+construct_odd_half_shift_analytic_supplier = true
+construct_two_unit_analytic_supplier = true
+construct_mod_four_ap_mertens_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+half_conductor_descent_proved = false
+even_half_shift_estimate_proved = false
+odd_half_shift_estimate_proved = false
+large_sieve_adapter_proved = false
+chowla_adapter_proved = false
+l_function_adapter_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false
