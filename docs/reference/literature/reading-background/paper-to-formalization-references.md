@@ -2192,3 +2192,103 @@ spectral gap, Dry Ten Martini theorem, globally descended quarter-turn character
 nonperiodic Möbius cancellation, L-function estimate, elliptic rank or RH is
 proved. The distinct concurrently added `HeatCompensatedReturn` and unrelated
 new density, gauge and group modules are outside this validation claim.
+
+## Case HEAT-COMPRESSION-VALIDATION-20261023 — exact recovery and conditional accounting
+
+**Paper provenance and limits.** Brad Rodgers and Terence Tao,
+*The De Bruijn–Newman constant is non-negative* (2018 preprint; 2020 publication),
+[arXiv:1801.05914](https://arxiv.org/abs/1801.05914), motivates a process/contradiction
+analogy only: its heat deformation, zero dynamics and Λ≥0 proof are not imported.
+David A. Huffman, *A Method for the Construction of Minimum-Redundancy Codes*
+(1952), [DOI:10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898),
+is compared through exact decoding and prefix freedom only, without probabilities,
+optimality or minimum expected length. These local definitions are repository
+interfaces, not formalizations of those paper theorems.
+
+The previously recorded OpenAI *The Quasi-Riemann Hypothesis: A Zero-Free
+Half-Plane Re(s)>7/8* (2026),
+[immutable release](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026),
+with `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re`, is an **unimported comparison**.
+The strict 7/8 stage and every later analytic stage are explicit local premises.
+Caroline Turnage-Butterbaugh's *Simple and critical zeros of the Riemann
+zeta-function* (22 October 2026),
+[Tao-hosted guest post](https://terrytao.wordpress.com/2026/10/22/simple-and-critical-zeros-of-the-riemann-zeta-function/),
+is expository context only, distinguishing zero-free regions from zero proportions.
+This verification does not independently verify those external publications or
+infer historical influence. Full source identities and hypothesis records are in
+[the source note](heat-flow-compression-sofic-zero-accounting.md) and
+[finite recovery bridge note](finite-heat-compression-bridge.md).
+
+**Exact formal scope.** In `GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic`,
+`LosslessPrefixCode.factorsThrough_encode`,
+`readout_bound_to_process_of_huffmanLikeCover`, and
+`no_huffmanLikeCover_of_process_collision` prove abstract exact-code factorization
+and its collision obstruction. `SoficThrough` is relative to one supplied finite
+state profile; `not_soficThrough_of_collision` refutes that presentation only.
+`grh_zero_height_transcendental_of_nonsofic` retains separately supplied arithmetic
+predicates, algebraic-height-to-soficity and non-soficity assumptions; its GRH
+predicate contributes critical-line placement only. No actual zero height is
+proved irrational or transcendental.
+
+`ThreeQuarterRefinement.limit_zeroFree` requires valid analytic estimates at
+**every** stage and cofinal boundaries above 3/4. It concludes only the strict
+half-plane to the right of 3/4, excluding no endpoint zero. Its asymptotically
+negligible overhead field does not supply any analytic estimate.
+
+In `GRWTSK.NumberTheory.Farey.FiniteHeatCompressionBridge`,
+`factorsThrough_of_exactProcessRecovery` uses an actual left inverse;
+`diagonalHeat_readout_bound` and `newmanFiniteCoefficients_readout_bound` instantiate
+that identity for the exact real-valued diagonal channels.
+`diagonalHeat_huffmanLikeCover_iff` and
+`newmanFiniteCoefficients_huffmanLikeCover_iff` require independent existence of
+a binary lossless prefix code on the signal space. They do not construct such a
+code for an uncountable real space, prove finite-bit stability, or identify the
+Rodgers–Tao integral. The two `*_not_soficThrough_of_state_collision` theorems
+refute only a supplied colliding state profile. The new finite bridge statements
+are repository constructions with source-credited direction by grwtsk contributors and OpenAI formalization assistance, not imported paper theorems.
+
+**Source pin and actual verification.** At repair commit
+[`5c8c45df9d092f9d5dc6de89d292e260348221f7`](https://github.com/grwtsk/math/commit/5c8c45df9d092f9d5dc6de89d292e260348221f7), Lean
+`leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+| Module | Git blob |
+|---|---|
+| `GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic` | `e08a6531e102dbf88fe7c157aed6915ac66be5ab` |
+| `GRWTSK.NumberTheory.Farey.FiniteHeatCompressionBridge` | `0c73a427fe3361802ffefa9bf7174cda087b2ebe` |
+| `GRWTSK.Geometry.Hodge.FiniteHeatRecovery` | `5ce4d15f94aa0e260336c5e8cf7af25a3fb03160` |
+| `GRWTSK.NumberTheory.Zeta.Riemann.FiniteHeatNewmanNormalization` | `bd6219af4e929ff6b54bb5aef00821ebeb484060` |
+
+Executed commands, all exit zero:
+
+```sh
+lake build GRWTSK.NumberTheory.Farey.FiniteHeatCompressionBridge --wfail
+lake build --wfail
+lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/pr1109-audit.lean
+```
+
+Strict leaf/dependency build: 8,716 jobs. Public root: 9,304 jobs. Fresh kernel
+replay: 409 transitive GRWTSK declarations, only `propext`, `Classical.choice`
+and `Quot.sound` (or none), no `sorryAx` or added axioms. All 97 target-owned
+private/generated declarations have reconciled type inventories and are safe.
+The eleven-file local dependency closure is source-hash pinned. The only source
+repair removes an already-unreachable `ring` tactic in
+`GRWTSK.Geometry.Hodge.FiniteHeatRecovery.implicitEuler_exact`; all 14 inherited
+theorem/lemma headers and both new modules' source bytes remain unchanged.
+
+**Evidence classification and missing bridges.** Exact local recovery and
+factorization identities are **kernel-verified bridges at their stated scope**.
+Prefix-code existence, arithmetic/sofic suppliers and analytic stage estimates
+remain **conditional interfaces/unresolved premises**. Paper relationships remain
+**analogies/expository context**, not imported analytic mathematics. Historical
+source-only comments and pinned authoring statuses are retained; this dated run
+supersedes NOT_RUN only for the listed checked sources. Independent external/CI
+replay is not claimed. No Huffman optimality, full heat-integral theorem, actual
+zero trace, genuine non-soficity, zero-height transcendence, improved zero-free
+region or RH/GRH is supplied; the modules remain outside `GRWTSK.lean`.
+
+Operational receipts stay outside canonical mathematics at
+`/Users/local/Documents/ChatGPT/math-branch-integration-20261022/`:
+`pr1109-rebuild.log`, `pr1109-public.log`, `pr1109-audit.lean`,
+`pr1109-audit.log`, `pr1109-validated-snapshot.json`, `pr1109-completion-result.json`.
+The earlier warning-failing build is a diagnostic, not an acceptance receipt.

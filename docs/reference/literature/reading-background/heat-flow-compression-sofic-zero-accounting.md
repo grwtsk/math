@@ -1,5 +1,13 @@
 # Heat-flow compression, sofic accounting, and zero-height obstructions
 
+Subsequent verification (2026-10-23): see **HEAT-COMPRESSION-VALIDATION-20261023**
+in [paper-to-formalization references](paper-to-formalization-references.md)
+for the exact checked source blobs, successful strict build, fresh trust-zero
+replay, transitive axiom audit and external receipt paths. Historical source-only
+statuses below describe the authoring run; analytic and code-existence premises
+remain unresolved.
+
+
 ## Status and scope
 
 This note records the sources and the exact formal boundary for
