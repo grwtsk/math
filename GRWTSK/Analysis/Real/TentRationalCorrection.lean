@@ -3,6 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.Real.TentWeight
 import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+import Mathlib.Analysis.Calculus.Deriv.Mul
 import Mathlib.Analysis.Calculus.Deriv.Pow
 import Mathlib.Tactic.FunProp
 import Mathlib.Tactic.Positivity
@@ -36,27 +37,26 @@ theorem continuous_tent (x h : ℝ) : Continuous (tent x h) := by
 /-- Integrate the two affine pieces; the area is the radius, not the diameter. -/
 theorem integral_tent (x h : ℝ) (hh : 0 < h) :
     (∫ t in (x - h)..(x + h), tent x h t) = h := by
-  have hl := (continuous_tent x h).intervalIntegrable (x - h) x
-  have hr := (continuous_tent x h).intervalIntegrable x (x + h)
+  have hl := (continuous_tent x h).intervalIntegrable (μ := MeasureTheory.volume) (x - h) x
+  have hr := (continuous_tent x h).intervalIntegrable (μ := MeasureTheory.volume) x (x + h)
   have dl : ∀ t ∈ uIcc (x - h) x,
       HasDerivAt (fun u : ℝ => (u - (x - h)) ^ 2 / (2 * h)) (tent x h t) t := by
     intro t ht
-    have ht' : t ∈ Icc (x - h) x := (uIcc_of_le (by linarith)) ▸ ht
+    have ht' : t ∈ Icc (x - h) x := (uIcc_of_le (show x - h ≤ x by linarith)) ▸ ht
     rw [tent_on_left x h t hh ht'.1 ht'.2]
     convert (((hasDerivAt_id t).sub_const (x - h)).pow 2).div_const (2 * h) using 1 <;>
-      simp only [pow_one, mul_one] <;> field_simp [ne_of_gt hh] <;> ring
+      first | rfl | (field_simp [ne_of_gt hh]; simp only [id_eq]; ring)
   have dr : ∀ t ∈ uIcc x (x + h),
       HasDerivAt (fun u : ℝ => -((x + h - u) ^ 2 / (2 * h))) (tent x h t) t := by
     intro t ht
-    have ht' : t ∈ Icc x (x + h) := (uIcc_of_le (by linarith)) ▸ ht
+    have ht' : t ∈ Icc x (x + h) := (uIcc_of_le (show x ≤ x + h by linarith)) ▸ ht
     rw [tent_on_right x h t hh ht'.1 ht'.2]
     convert ((((hasDerivAt_id t).const_sub (x + h)).pow 2).div_const (2 * h)).neg
-      using 1 <;> simp only [pow_one] <;> field_simp [ne_of_gt hh] <;> ring
+      using 1 <;> first | rfl | (field_simp [ne_of_gt hh]; simp only [id_eq]; ring)
   have il := intervalIntegral.integral_eq_sub_of_hasDerivAt dl hl
   have ir := intervalIntegral.integral_eq_sub_of_hasDerivAt dr hr
   rw [← intervalIntegral.integral_add_adjacent_intervals hl hr, il, ir]
-  field_simp [ne_of_gt hh]
-  <;> ring
+  field_simp [ne_of_gt hh]; ring
 
 /-- Bounds on a continuous density are averaged against the same normalized tent. -/
 theorem weighted_integral_bounds (x h : ℝ) (hh : 0 < h)
@@ -66,8 +66,8 @@ theorem weighted_integral_bounds (x h : ℝ) (hh : 0 < h)
     L * h ≤ (∫ t in (x - h)..(x + h), tent x h t * f t) ∧
       (∫ t in (x - h)..(x + h), tent x h t * f t) ≤ U * h := by
   have hab : x - h ≤ x + h := by linarith
-  have hw := (continuous_tent x h).intervalIntegrable (x - h) (x + h)
-  have hwf := ContinuousOn.intervalIntegrable_of_Icc hab
+  have hw := (continuous_tent x h).intervalIntegrable (μ := MeasureTheory.volume) (x - h) (x + h)
+  have hwf := ContinuousOn.intervalIntegrable_of_Icc (μ := MeasureTheory.volume) hab
     ((continuous_tent x h).continuousOn.mul hf)
   constructor
   · calc
@@ -125,7 +125,7 @@ theorem rationalTentCorrection_bounds (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) 
     (fun t ht => rationalDensity_antitone (ha.trans_le ht.1) ht.2)
     (fun t ht => rationalDensity_antitone ha ht.1)
   unfold rationalTentCorrection rationalDensity at *
-  constructor <;> simp only [one_div, div_eq_mul_inv] at * <;> nlinarith [hb.1, hb.2]
+  constructor <;> simp only [div_eq_mul_inv] at * <;> nlinarith [hb.1, hb.2]
 
 /-- Omitting this correction is never an exact zero-correction specialization. -/
 theorem rationalTentCorrection_neg (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
@@ -152,7 +152,6 @@ theorem densityPrefix_eq (N : ℕ) (t : ℝ) (ht : 1 < t) :
   have hstep : rationalDensity t * (1 - 1 / t ^ 2) = 1 / t ^ 3 := by
     unfold rationalDensity
     field_simp [ht0, hs0]
-    <;> ring
   induction N with
   | zero => simp [densityPrefix]
   | succ N ih =>
@@ -186,8 +185,17 @@ theorem densityPrefix_continuousOn (N : ℕ) {a b : ℝ} (ha : 1 < a) :
   intro t ht
   have ht0 : t ≠ 0 := ne_of_gt ((lt_trans zero_lt_one ha).trans_le ht.1)
   have hc : ContinuousAt (densityPrefix N) t := by
-    unfold densityPrefix
-    fun_prop (disch := assumption)
+    induction N with
+    | zero =>
+      have he : densityPrefix 0 = (fun _ : ℝ => 0) := by funext u; simp [densityPrefix]
+      rw [he]
+      exact continuousAt_const
+    | succ N ih =>
+      have he : densityPrefix (N + 1) = (fun u : ℝ => densityPrefix N u + (1 / u ^ 3) * (1 / u ^ 2) ^ N) := by
+        funext u; exact densityPrefix_succ N u
+      rw [he]
+      exact ih.add ((continuousAt_const.div (continuousAt_id.pow 3) (pow_ne_zero _ ht0)).mul
+        ((continuousAt_const.div (continuousAt_id.pow 2) (pow_ne_zero _ ht0)).pow N))
   exact hc.continuousWithinAt
 
 /-- A finite negative contribution; it is not the complete correction by definition. -/
@@ -202,13 +210,16 @@ theorem correctionPrefix_error (N : ℕ) (x h : ℝ) (hh : 0 < h) (ha : 1 < x - 
   have hab : x - h ≤ x + h := by linarith
   have hq := rationalDensity_continuousOn (b := x + h) ha
   have hp := densityPrefix_continuousOn N (b := x + h) ha
-  have hw := (continuous_tent x h).continuousOn
-  have iq := ContinuousOn.intervalIntegrable_of_Icc hab (hw.mul hq)
-  have ip := ContinuousOn.intervalIntegrable_of_Icc hab (hw.mul hp)
+  have hw : ContinuousOn (tent x h) (Icc (x - h) (x + h)) :=
+    (continuous_tent x h).continuousOn
+  have iq := ContinuousOn.intervalIntegrable_of_Icc (μ := MeasureTheory.volume) hab (hw.mul hq)
+  have ip := ContinuousOn.intervalIntegrable_of_Icc (μ := MeasureTheory.volume) hab (hw.mul hp)
   have heq : correctionPrefix N x h - rationalTentCorrection x h =
       ∫ t in (x - h)..(x + h), tent x h t * (rationalDensity t - densityPrefix N t) := by
     simp only [mul_sub]
-    rw [intervalIntegral.integral_sub iq ip]
+    have isub := intervalIntegral.integral_sub iq ip
+    simp only [Pi.mul_def] at isub
+    rw [isub]
     unfold correctionPrefix rationalTentCorrection
     ring
   rw [heq]
@@ -219,7 +230,7 @@ theorem correctionPrefix_error (N : ℕ) (x h : ℝ) (hh : 0 < h) (ha : 1 < x - 
     (fun t ht => (densityPrefix_remainder_bounds N ha ht).2)
   constructor
   · simpa only [zero_mul] using hb.1
-  · convert hb.2 using 1 <;> unfold rationalDensity <;> ring
+  · convert hb.2 using 1; unfold rationalDensity; ring
 
 /-- A finite prefix becomes a valid lower enclosure only after its geometric error is subtracted. -/
 theorem correctionPrefix_lower (N : ℕ) (x h : ℝ) (hh : 0 < h) (ha : 1 < x - h) :
