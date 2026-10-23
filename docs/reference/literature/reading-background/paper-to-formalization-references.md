@@ -2043,3 +2043,11 @@ are **NOT_RUN / NOT_KERNEL_AUDITED**. No Railway, no force push.
 A separate pinned issue is required before accepting or promoting
 any of these source scripts. This work does not claim that a linked
 private discussion was inspected or verified.
+
+**Pinned verification requests (OPEN / NOT_RUN):**
+[#1112 Hodge heat / Newman](https://github.com/grwtsk/math/issues/1112)
+and [#1113 Farey heat-return normalization](https://github.com/grwtsk/math/issues/1113).
+Both bind exact math-source blobs and the full dependency closure to
+main commit [78ac3d9fe09d2437dac24d931302571183767887](https://github.com/grwtsk/math/commit/78ac3d9fe09d2437dac24d931302571183767887);
+source-preserving proof identities remain SOURCE_ONLY until actual
+compiler, fresh kernel and transitive axiom audit receipts arrive.
