@@ -1,5 +1,7 @@
 # Literature index
 
+See the [idea–formalization map by subject](idea-formalization-map.md) for the first four proposed connections and their unresolved bridges.
+
 Bibliographic fields were checked against the individual PDF versions. Named bylines and owner-reported attribution are distinct. Publication, draft and arXiv dates retain their event types in `catalog.json`. See [qualifications and unresolved fields](metadata-review.md).
 
 Subjects follow the catalog’s provisional taxonomy. Each distinct asset appears once; version identities and uncertainty flags are preserved.
