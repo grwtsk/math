@@ -4,7 +4,7 @@ The [mathematical area directory](../index.md) links to an index inside each are
 
 The [generated count report](documentation-counts.json) is produced by the durable Noeaaeue generator from the current checkout. The [structured inventory](library-summary.json) retains the older curated observer census for compatibility and provenance; it must not be read as the repository-wide source count. It is an inventory snapshot, not a census of compiler-generated declarations or a mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
 
-The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) explain the disposition of the former flat documentation.
+The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. The [source-only namespace dependency map](namespace-dependency-map.md) provides the complete committed import projection without a Lean compilation or verification claim. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) explain the disposition of the former flat documentation.
 
 Migration and acceptance boundaries are recorded separately in the Lean consolidation report (artifact:gitblob:a0aee0a59e806de6638a059af9df7dd22359b507), repository reconstruction contract (artifact:gitblob:6434bef0cd7e148093f275fc82ea3013c6523630), and rigor and reconstruction status (artifact:gitblob:558248aa8fd44d10f9024a266f8a64dbab2f4b13).
 
