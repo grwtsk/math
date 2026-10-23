@@ -8,19 +8,21 @@ Issue grwtsk/math#955. Parent PR #951 exact head
 import GRWTSK.Topology.AlgebraicTopology.SurfacePolygonUnitCircleAttachment
 import Mathlib.Topology.Constructions
 import Mathlib.Topology.Maps.Basic
+import Mathlib.Topology.Separation.Hausdorff
 
 /-!
 # Joint radial map: exact product-quotient obligation
 
 Fixed-radius continuity does not establish joint continuity.
-The new map is defined on the product of the authentic unpaired
-perimeter and Mathlib's real unit interval. Its continuity is
-proved conditionally upon the exact product projection being
-a quotient map. No product quotient theorem is silently assumed.
+The map is defined on the product of the authentic unpaired perimeter
+and Mathlib's real unit interval. An explicit compact-to-Hausdorff
+argument supplies the genuine product quotient map; conditional
+continuity results are retained together with their unconditional
+consequences. This is a source candidate until pinned kernel replay.
 
-The remaining independent supplier is
-  IsQuotientMap (fun pr : BoundaryPoint k × unitInterval =>
-    (perimeterProjection k pr.1, pr.2)).
+The quotient supplier retains the original finite edge-ID topology
+and the real unit-interval topology; no topology is replaced by a
+discrete or indiscrete surrogate.
 -/
 
 set_option autoImplicit false
@@ -50,6 +52,31 @@ def perimeterProductProjection (k : ℕ) :
     BoundaryPoint k × unitInterval →
       UnpairedPerimeter k × unitInterval :=
   fun pr => (perimeterProjection k pr.1, pr.2)
+
+/-- The authentic finite-interval product source is compact. The
+unpaired perimeter is Hausdorff because the already constructed
+continuous angular map is injective into the genuine additive circle.
+Consequently the surjective continuous product projection is a quotient
+map. This discharges the explicit supplier of issue #961 without
+assuming the product of arbitrary quotient maps is quotient. -/
+theorem perimeterProductProjection_isQuotientMap (k : ℕ) :
+    IsQuotientMap (perimeterProductProjection k) := by
+  letI : Fact (0 < angularPeriod k) := ⟨angularPeriod_pos k⟩
+  letI : T2Space (UnpairedPerimeter k) :=
+    T2Space.of_injective_continuous
+      (perimeterAngle_injective k) (perimeterAngle_continuous k)
+  have hsurj : Function.Surjective (perimeterProductProjection k) := by
+    rintro ⟨x, r⟩
+    obtain ⟨p, hp⟩ := perimeterProjection_surjective k x
+    refine ⟨(p, r), ?_⟩
+    change (perimeterProjection k p, r) = (x, r)
+    exact congrArg (fun y => (y, r)) hp
+  have hcont : Continuous (perimeterProductProjection k) := by
+    change Continuous (fun pr : BoundaryPoint k × unitInterval =>
+      (perimeterProjection k pr.1, pr.2))
+    exact ((perimeterProjection_continuous k).comp continuous_fst).prodMk
+      continuous_snd
+  exact Topology.IsQuotientMap.of_surjective_continuous hsurj hcont
 
 /-- A function on the *whole* perimeter-radius product, not one
 independently chosen function per fixed radial slice. -/
@@ -82,6 +109,13 @@ theorem perimeterJointRadialMap_continuous_of_productQuotient (k : ℕ)
   exact hq.continuous_iff.mpr (by
     simpa only [perimeterJointRadialMap_comp_projection] using
       radialProjection_continuous k)
+
+/-- Joint continuity, obtained from the actual compact-to-Hausdorff
+quotient-map supplier rather than from separately continuous slices. -/
+theorem perimeterJointRadialMap_continuous (k : ℕ) :
+    Continuous (perimeterJointRadialMap k) :=
+  perimeterJointRadialMap_continuous_of_productQuotient k
+    (perimeterProductProjection_isQuotientMap k)
 
 /-- The zero radius collapses the whole genuine perimeter to the apex. -/
 theorem perimeterJointRadialMap_zero (k : ℕ)
@@ -118,6 +152,13 @@ theorem unitCircleJointRadialMap_continuous_of_productQuotient (k : ℕ)
   exact (perimeterJointRadialMap_continuous_of_productQuotient k hq).comp
     ((perimeterUnitCircleHomeomorph k).symm.continuous.comp continuous_fst
       |>.prodMk continuous_snd)
+
+/-- Continuity of the genuine circle-radius transport with its product
+quotient obligation explicitly discharged. -/
+theorem unitCircleJointRadialMap_continuous (k : ℕ) :
+    Continuous (unitCircleJointRadialMap k) :=
+  unitCircleJointRadialMap_continuous_of_productQuotient k
+    (perimeterProductProjection_isQuotientMap k)
 
 /-- The unit-circle outer slice factors through the authentic attaching
 map; this is not a continuous map from a disk. -/
