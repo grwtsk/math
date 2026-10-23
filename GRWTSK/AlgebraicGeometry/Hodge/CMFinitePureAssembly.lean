@@ -33,6 +33,12 @@ structure CMGaloisIntermediateField where
   carrier : FiniteGaloisIntermediateField ℚ AlgebraicNumbers
   [isCMField : IsCMField carrier]
 
+instance (E : CMGaloisIntermediateField) :
+    FiniteDimensional ℚ E.carrier := inferInstance
+
+instance (E : CMGaloisIntermediateField) :
+    IsGalois ℚ E.carrier := inferInstance
+
 instance (E : CMGaloisIntermediateField) : IsCMField E.carrier :=
   E.isCMField
 
@@ -79,6 +85,23 @@ theorem CMFiniteFourSeparatedPure_eq_checked
     (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
     CMFiniteFourSeparatedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
       separatedPure ℚ E.carrier a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := rfl
+
+/-- Archived pure-factor assembly formula, retained under its
+original declaration name and exact target. -/
+def canonicalFinitePureAssembly
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    E.carrier ⊗[ℚ] CMFiniteCanonicalVectorTarget E :=
+  (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+    (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄)
+
+/-- Exact original pure formula expressed using the archived name. -/
+theorem canonicalFinitePureAssembly_eq_checked
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ =
+      (a₁ * a₂ * a₃ * a₄) ⊗ₜ[ℚ]
+        (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := rfl
 
 /-- Original coefficient multiplication owner, using the checked supplier. -/
 def CMFiniteCoefficientMultiplication (E : CMGaloisIntermediateField) :
@@ -174,6 +197,16 @@ theorem CMFiniteCanonicalPairedAssembly_originalPure
         (((x₁ ⊗ₜ[ℚ] x₂) ⊗ₜ[ℚ] x₃) ⊗ₜ[ℚ] x₄) := by
   rw [CMFiniteFourPairedPure_eq_checked]
   exact CMFiniteCanonicalPairedAssembly_pure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
+
+/-- Original generator formula in the original source's exact notation. -/
+theorem CMFiniteCanonicalPairedAssembly_originalFormula
+    (E : CMGaloisIntermediateField)
+    (a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ : E.carrier) :
+    CMFiniteCanonicalPairedAssembly E
+      (CMFiniteFourPairedPure E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄) =
+      canonicalFinitePureAssembly E a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄ := by
+  exact CMFiniteCanonicalPairedAssembly_originalPure E
+    a₁ x₁ a₂ x₂ a₃ x₃ a₄ x₄
 
 /-- Any candidate map on the authentic original finite-CM carrier with
 the prescribed pure formula equals the original named assembly. -/
