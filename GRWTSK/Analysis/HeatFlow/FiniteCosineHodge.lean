@@ -307,9 +307,8 @@ theorem finiteCosineTailBound
         Real.exp (-(s * u ^ 2)) * |Φ u| * |Real.cos (z * u)| := by
           rw [abs_mul, abs_mul, abs_of_nonneg hpos]
     _ ≤ Real.exp (-(s * u ^ 2)) * |Φ u| := by
-          apply mul_le_mul_of_nonneg_left
-          · exact mul_le_of_le_one_right (abs_nonneg _) (Real.abs_cos_le_one _)
-          · exact hpos
+          exact mul_le_of_le_one_right
+            (mul_nonneg hpos (abs_nonneg (Φ u))) (Real.abs_cos_le_one _)
     _ ≤ B := by
           calc
             Real.exp (-(s * u ^ 2)) * |Φ u| ≤ 1 * |Φ u| := by
@@ -336,9 +335,8 @@ theorem finiteCosineExponentialMajorant
         Real.exp (-(s * u ^ 2)) * |Φ u| * |Real.cos (z * u)| := by
           rw [abs_mul, abs_mul, abs_of_nonneg hpos]
     _ ≤ Real.exp (-(s * u ^ 2)) * |Φ u| := by
-          apply mul_le_mul_of_nonneg_left
-          · exact mul_le_of_le_one_right (abs_nonneg _) (Real.abs_cos_le_one _)
-          · exact hpos
+          exact mul_le_of_le_one_right
+            (mul_nonneg hpos (abs_nonneg (Φ u))) (Real.abs_cos_le_one _)
     _ ≤ C * Real.exp (-(c * u)) := by
           calc
             Real.exp (-(s * u ^ 2)) * |Φ u| ≤ 1 * |Φ u| := by
