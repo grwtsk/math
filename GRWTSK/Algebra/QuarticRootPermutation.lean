@@ -28,7 +28,7 @@ def AllAutomorphismsPreserveRoots (p : K[X])
 
 /-- Given injectivity, there is at most one permutation realizing a
 specified algebra automorphism on the four root labels. -/
-theorem root_permutation_unique (e : QuarticRootEnumeration (L := L) (p := p))
+theorem root_permutation_unique (p : K[X]) (e : QuarticRootEnumeration (L := L) p)
     (he : Function.Injective e.r)
     (φ : L ≃ₐ[K] L) (σ τ : Equiv.Perm (Fin 4))
     (hσ : ∀ i, e.r (σ i) = φ (e.r i))
@@ -62,13 +62,13 @@ def rootPermutationHom (p : K[X])
     (L ≃ₐ[K] L) →* Equiv.Perm (Fin 4) where
   toFun := rootPerm p e he hp
   map_one' := by
-    apply root_permutation_unique e he 1
+    apply root_permutation_unique p e he 1
     · intro i
       exact rootPerm_spec p e he hp 1 i
     · intro i
       simp
   map_mul' φ ψ := by
-    apply root_permutation_unique e he (φ * ψ)
+    apply root_permutation_unique p e he (φ * ψ)
     · intro i
       exact rootPerm_spec p e he hp (φ * ψ) i
     · intro i
