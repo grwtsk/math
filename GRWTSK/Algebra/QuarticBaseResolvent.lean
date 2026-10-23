@@ -1,4 +1,5 @@
-import GRWTSK.Algebra.QuarticGaloisMatching
+import GRWTSK.Algebra.PolygonalQuarticSplitting
+import GRWTSK.Algebra.QuarticResolventRingNaturality
 
 /-!
 # Base-field quartic adjacency resolvent
@@ -27,6 +28,14 @@ variable {K L : Type*} [Field K] [Field L] [Algebra K L]
 def baseAdjacencyResolvent (A B C₀ D : K) : K[X] :=
   adjacencyResolventOfMonicCoefficients A B C₀ D
 
+/-- Coefficient-wise base change gives exactly the same cubic as first
+extending the coefficient tuple; no root enumeration is involved. -/
+theorem baseAdjacencyResolvent_ringHom_map
+    {M : Type*} [Field M] (f : K →+* M) (A B C₀ D : K) :
+    (baseAdjacencyResolvent A B C₀ D).map f =
+      baseAdjacencyResolvent (f A) (f B) (f C₀) (f D) := by
+  exact GRWTSK.Algebra.QuarticResolventRingNaturality.resolvent_map f A B C₀ D
+
 /-- Explicit coefficient descent commutes with scalar extension in
 every characteristic, with no separability requirement. -/
 theorem baseAdjacencyResolvent_map (A B C₀ D : K) :
@@ -34,9 +43,7 @@ theorem baseAdjacencyResolvent_map (A B C₀ D : K) :
       adjacencyResolventOfMonicCoefficients
         (algebraMap K L A) (algebraMap K L B)
         (algebraMap K L C₀) (algebraMap K L D) := by
-  simp [baseAdjacencyResolvent, adjacencyResolventOfMonicCoefficients,
-    adjacencyResolventFromVieta, Polynomial.map_add, Polynomial.map_sub,
-    Polynomial.map_mul, Polynomial.map_pow]
+  exact baseAdjacencyResolvent_ringHom_map (f := algebraMap K L) A B C₀ D
 
 /-- A factored actual monic quartic has an adjacency cubic obtained by
 scalar extension from K; the chosen ordering is auxiliary, not part of
@@ -54,6 +61,40 @@ theorem actual_quartic_base_resolvent
   apply resolvent_of_mapped_quartic p hs hm e
   rw [hp]
   simp [Polynomial.map_add, Polynomial.map_mul, Polynomial.map_pow]
+
+
+/-- The base-field comparison is independent of the chosen enumeration
+of the *actual root multiset*, even if the quartic has repeated roots.
+This does not select or require a canonical ordering. -/
+theorem actual_quartic_base_resolvent_order_independent
+    (p : K[X]) (e₁ e₂ : QuarticRootEnumeration (L := L) p) :
+    adjacencyResolventFromRoots (e₁.r 0) (e₁.r 1) (e₁.r 2) (e₁.r 3) =
+      adjacencyResolventFromRoots (e₂.r 0) (e₂.r 1) (e₂.r 2) (e₂.r 3) := by
+  exact (resolvent_independent_of_enumeration p e₁ e₂).symm
+
+/-- In a genuine splitting field, the splitting hypothesis required by
+the base-field comparison is supplied directly by Mathlib's instance. -/
+theorem actual_quartic_base_resolvent_in_splitting_field
+    (p : K[X]) [IsSplittingField K L p] (A B C₀ D : K)
+    (hp : p = X ^ 4 + Polynomial.C A * X ^ 3 +
+      Polynomial.C B * X ^ 2 + Polynomial.C C₀ * X + Polynomial.C D)
+    (hm : (p.map (algebraMap K L)).Monic)
+    (e : QuarticRootEnumeration (L := L) p) :
+    adjacencyResolventFromRoots (e.r 0) (e.r 1) (e.r 2) (e.r 3) =
+      (baseAdjacencyResolvent A B C₀ D).map (algebraMap K L) :=
+  actual_quartic_base_resolvent p A B C₀ D hp
+    (IsSplittingField.splits L p) hm e
+
+/-- The cubic coefficient formula is compatible with a tower of field
+homomorphisms. This is a pure polynomial identity: no splitting,
+separability, characteristic restriction, or chosen root ordering. -/
+theorem baseAdjacencyResolvent_map_tower
+    {M : Type*} [Field M]
+    (f : K →+* L) (g : L →+* M) (A B C₀ D : K) :
+    ((baseAdjacencyResolvent A B C₀ D).map f).map g =
+      (baseAdjacencyResolvent A B C₀ D).map (g.comp f) := by
+  exact Polynomial.map_map (baseAdjacencyResolvent A B C₀ D) f g
+
 
 end
 end GRWTSK.Algebra.QuarticBaseResolvent

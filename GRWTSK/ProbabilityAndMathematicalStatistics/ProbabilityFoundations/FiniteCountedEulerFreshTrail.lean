@@ -144,4 +144,74 @@ theorem FreshCountedTrail.exists_strict_extension
     T.append_unused_card e fresh incident⟩
 
 
+
+/-- The empty directed counted trail at a specified vertex.
+Its used-edge set is empty, so every edge instance is initially
+available. -/
+def FreshCountedTrail.empty
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (v : Fin m → Bool) :
+    FreshCountedTrail m c v v where
+  walk := CountedWalk.empty v
+  nodup := by simp [CountedWalk.edges]
+
+@[simp] theorem FreshCountedTrail.empty_used
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (v : Fin m → Bool) :
+    (FreshCountedTrail.empty m c v).used = ∅ := by
+  rfl
+
+/-- Any counted edge instance gives a genuine nonempty one-edge
+fresh trail from its source to its target. No balance or
+connectivity hypothesis is required. -/
+def FreshCountedTrail.single
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (e : CountedBinaryEdge m c) :
+    FreshCountedTrail m c
+      (countedEdgeSource m c e) (countedEdgeTarget m c e) :=
+  (FreshCountedTrail.empty m c (countedEdgeSource m c e)).append
+    e (by simp [FreshCountedTrail.empty_used]) rfl
+
+/-- The one-edge trail uses exactly the chosen counted edge
+instance, even if other instances have the same binary label. -/
+theorem FreshCountedTrail.single_used
+    (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (e : CountedBinaryEdge m c) :
+    (FreshCountedTrail.single m c e).used = {e} := by
+  simp [FreshCountedTrail.single, FreshCountedTrail.append_used,
+    FreshCountedTrail.empty_used]
+
+
+
+/-- Every fresh counted trail admits a terminal-maximal extension.
+The construction is a finite well-founded descent on the exact
+number of unused counted edge instances. -/
+theorem FreshCountedTrail.exists_maximal_extension
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : FreshCountedTrail m c a b) :
+    ∃ (z : Fin m → Bool) (R : FreshCountedTrail m c a z),
+      R.MaximalAtFinish ∧ T.used ⊆ R.used := by
+  classical
+  induction h : (Finset.univ \ T.used).card using Nat.strong_induction_on
+    generalizing b T with
+  | h n ih =>
+      by_cases hmax : T.MaximalAtFinish
+      · exact ⟨b, T, hmax, Finset.Subset.rfl⟩
+      · obtain ⟨e, fresh, incident, hcard⟩ :=
+          T.exists_strict_extension hmax
+        let R := T.append e fresh incident
+        have hlt : (Finset.univ \ R.used).card < n := by
+          dsimp [R]
+          omega
+        have hR : (Finset.univ \ R.used).card =
+            (Finset.univ \ R.used).card := rfl
+        obtain ⟨z, Q, hQmax, hRQ⟩ := ih _ hlt R hR
+        refine ⟨z, Q, hQmax, ?_⟩
+        have hTR : T.used ⊆ R.used := by
+          rw [FreshCountedTrail.append_used]
+          exact Finset.subset_insert _ _
+        exact hTR.trans hRQ
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
