@@ -1,0 +1,9 @@
+id = "typed-nat-and-list-rewrite-soundness"
+version = "1"
+source = "GRWTSK/Algebra/UniversalAlgebra/Equational/TypedRewriting.lean"
+declarations = ["GRWTSK.Algebra.UniversalAlgebra.Equational.TypedRewriting.sound", "GRWTSK.Algebra.UniversalAlgebra.Equational.TypedRewriting.append_does_not_commute"]
+acceptance = ["Pinned Lean trust=0 elaboration succeeds", "Actual axiom dependencies are contained in propext", "No admitted proof"]
+positive_controls = ["Natural-number distributivity with arbitrary variables", "Contextual equality transport", "List reverse of append swaps the operands", "Symmetric and transitive rewrite paths"]
+hostile_controls = ["List append commutativity stays open", "False natural-number equalities stay open", "Mixed-sort expressions reject", "Forged rewrite paths reject", "Arbitrary raw Lean rejects"]
+nonclaims = ["Unrestricted prose formalization", "Complete polynomial decision procedure", "Python implementation refinement", "Axiom-free list reverse"]
+receipt_owner = "grwtsk/noeaaeue"
