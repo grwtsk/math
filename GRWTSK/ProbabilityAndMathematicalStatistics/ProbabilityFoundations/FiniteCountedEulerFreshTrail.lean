@@ -17,30 +17,57 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
 
-/-- A directed walk with fresh counted-edge instances, indexed by
-its initial and terminal vertices. The edge instances remain distinct
-even if their underlying binary labels coincide. -/
-inductive FreshCountedTrail (m : ℕ) (c : BinaryEdgeWord m → ℕ) :
+/-- A directed walk with endpoint compatibility enforced by its
+constructor. Its list stores individual counted edge instances. -/
+inductive CountedWalk (m : ℕ) (c : BinaryEdgeWord m → ℕ) :
     (Fin m → Bool) → (Fin m → Bool) → Type where
-  | empty (v : Fin m → Bool) : FreshCountedTrail m c v v
+  | empty (v : Fin m → Bool) : CountedWalk m c v v
   | append {start finish : Fin m → Bool}
-      (T : FreshCountedTrail m c start finish)
+      (T : CountedWalk m c start finish)
       (e : CountedBinaryEdge m c)
-      (fresh : e ∉ T.used)
       (incident : countedEdgeSource m c e = finish) :
-      FreshCountedTrail m c start (countedEdgeTarget m c e)
-  deriving DecidableEq
+      CountedWalk m c start (countedEdgeTarget m c e)
 
-/-- The exact finite set of used edge instances. -/
+/-- The reversed list of edge instances in a directed walk. -/
+def CountedWalk.edges {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : CountedWalk m c start finish) :
+    List (CountedBinaryEdge m c) :=
+  match T with
+  | .empty _ => []
+  | .append T e _ => e :: T.edges
+
+/-- A proof-carrying directed trail: the counted instances in its
+underlying directed walk are pairwise distinct. -/
+structure FreshCountedTrail (m : ℕ) (c : BinaryEdgeWord m → ℕ)
+    (start finish : Fin m → Bool) where
+  walk : CountedWalk m c start finish
+  nodup : walk.edges.Nodup
+
+/-- The exact set of used counted edge instances. -/
 def FreshCountedTrail.used {m : ℕ} {c : BinaryEdgeWord m → ℕ}
     {start finish : Fin m → Bool}
     (T : FreshCountedTrail m c start finish) :
     Finset (CountedBinaryEdge m c) :=
-  match T with
-  | .empty _ => ∅
-  | .append T e _ _ => insert e T.used
+  T.walk.edges.toFinset
 
-/-- Every constructed trail uses exactly one new instance per append. -/
+/-- Construct an actual append, preserving endpoint compatibility and
+the no-repeated-instance invariant. -/
+def FreshCountedTrail.append
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {start finish : Fin m → Bool}
+    (T : FreshCountedTrail m c start finish)
+    (e : CountedBinaryEdge m c)
+    (fresh : e ∉ T.used)
+    (incident : countedEdgeSource m c e = finish) :
+    FreshCountedTrail m c start (countedEdgeTarget m c e) where
+  walk := CountedWalk.append T.walk e incident
+  nodup := by
+    change (e :: T.walk.edges).Nodup
+    exact List.nodup_cons.mpr
+      ⟨by simpa [FreshCountedTrail.used] using fresh, T.nodup⟩
+
+/-- Exact used-set identity for a fresh append. -/
 theorem FreshCountedTrail.append_used
     {m : ℕ} {c : BinaryEdgeWord m → ℕ}
     {start finish : Fin m → Bool}
@@ -48,8 +75,8 @@ theorem FreshCountedTrail.append_used
     (e : CountedBinaryEdge m c)
     (fresh : e ∉ T.used)
     (incident : countedEdgeSource m c e = finish) :
-    (FreshCountedTrail.append T e fresh incident).used =
-      insert e T.used := rfl
+    (T.append e fresh incident).used = insert e T.used := by
+  rfl
 
 /-- The unused-edge count decreases strictly under an actual append.
 No quotient by edge labels is taken. -/
