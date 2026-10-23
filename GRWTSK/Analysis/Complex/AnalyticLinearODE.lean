@@ -49,8 +49,8 @@ theorem no_finite_order_zero {f h : ℂ → ℂ} {z : ℂ}
   have hle : (k : ℕ∞) + 1 ≤ (k : ℕ∞) := by
     calc
       (k : ℕ∞) + 1 = 0 + ((k : ℕ∞) + 1) := (zero_add _).symm
-      _ ≤ analyticOrderAt h z + ((k : ℕ∞) + 1) :=
-        by gcongr
+      _ ≤ analyticOrderAt h z + ((k : ℕ∞) + 1) := by
+        gcongr <;> exact zero_le _
       _ = (k : ℕ∞) := hbad.symm
   have : k + 1 ≤ k := by exact_mod_cast hle
   omega
