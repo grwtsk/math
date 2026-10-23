@@ -299,7 +299,7 @@ theorem implicitEuler_exact (n : ℕ) (signal : ℝ) :
     implicitEulerRecover n (implicitEulerEncode n signal) = signal := by
   unfold implicitEulerRecover implicitEulerEncode
   have hn : ((n : ℝ) + 1) ≠ 0 := by positivity
-  field_simp [hn] <;> ring
+  field_simp [hn]
 
 /-- Across growing spectral scales the inverse has no uniform finite
 Lipschitz constant. Stagewise exact recovery therefore does not imply
