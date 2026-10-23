@@ -95,4 +95,45 @@ theorem CountedWalk.append_chronologicalEdges
   simp [CountedWalk.chronologicalEdges, CountedWalk.edges]
 
 
+
+/-- Every chronological edge of a counted directed walk starts at
+the current vertex and ends at the next one, witnessed by a
+matching vertex list of length edges.length+1. -/
+def CountedWalk.chronologicalVertices
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) : List (Fin m → Bool) :=
+  match T with
+  | .empty v => [v]
+  | .append T e _ =>
+      T.chronologicalVertices ++ [countedEdgeTarget m c e]
+
+/-- Appending an edge extends the chronological vertex list by its
+target, without changing the preceding vertex order. -/
+theorem CountedWalk.append_chronologicalVertices
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b)
+    (e : CountedBinaryEdge m c)
+    (he : countedEdgeSource m c e = b) :
+    (CountedWalk.append T e he).chronologicalVertices =
+      T.chronologicalVertices ++ [countedEdgeTarget m c e] := rfl
+
+/-- The chronological vertex list contains exactly one more
+vertex than the chronological edge list, including empty walks. -/
+theorem CountedWalk.chronologicalVertices_length
+    {m : ℕ} {c : BinaryEdgeWord m → ℕ}
+    {a b : Fin m → Bool}
+    (T : CountedWalk m c a b) :
+    T.chronologicalVertices.length =
+      T.chronologicalEdges.length + 1 := by
+  induction T with
+  | empty v => rfl
+  | append T e he ih =>
+      rw [CountedWalk.append_chronologicalVertices,
+        CountedWalk.append_chronologicalEdges]
+      simp only [List.length_append, List.length_singleton]
+      omega
+
+
 end GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic
