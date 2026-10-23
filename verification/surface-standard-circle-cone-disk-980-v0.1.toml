@@ -1,0 +1,17 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-standard-circle-cone-disk-980-v0.1"
+issue = 980
+owner_repository = "grwtsk/math"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+parent_revision = "d901f661103da93c9c4779e2eb3d595d0c5b7ca9"
+parent_pr = 978
+source_module = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonStandardConeDisk.lean"
+source_git_blob = "REQUIRE_EXACT_HEAD_RECONCILIATION"
+passive_specification_only = true
+lean_elaboration = "NOT_RUN"
+kernel_audit = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+authored_names = ["ClosedComplexUnitDisk", "realAnglePolar", "realAnglePolar_zero", "realAnglePolar_norm", "realAnglePolarDisk"]
+open_obligations = ["integer_angle_periodicity", "unit_add_circle_quotient_descent", "continuous_polar_map", "exact_cone_fibers", "positive_radius_angle_injectivity", "complex_polar_surjectivity", "compact_to_hausdorff_homeomorphism", "apex_radius_boundary_transport"]
+hostile_controls = ["zero_radius_angles_collapse", "positive_radius_angles_distinct", "unit_circle_integer_period", "radius_outside_interval_rejected", "opposite_polygon_edges_not_collapsed_in_cone", "no_real_period_equals_zero", "no_filled_surface_homeomorphism", "no_cw_or_rh_promotion"]
