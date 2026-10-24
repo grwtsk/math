@@ -4,6 +4,7 @@ import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm
 import Mathlib.Tactic
 import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.NumberTheory.DirichletCharacter.Bounds
+import Mathlib.Analysis.SpecialFunctions.Log.Monotone
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -290,5 +291,15 @@ theorem logarithmicPowerTailKernel_nonneg
   have hlog : 0 ≤ Real.log t := Real.log_nonneg (by linarith)
   unfold logarithmicPowerTailKernel
   positivity
+
+
+/-- Exact antitonicity threshold supplied by Mathlib for the
+logarithmic-power kernel. For σ>1 the threshold exp(1/σ)
+is below 3; that endpoint comparison is a separate supplier. -/
+theorem logarithmicPowerTailKernel_antitoneOn_exp
+    (σ : ℝ) (hσ : 1 < σ) :
+    AntitoneOn (logarithmicPowerTailKernel σ)
+      (Set.Ici (Real.exp σ⁻¹)) := by
+  exact Real.log_div_self_rpow_antitoneOn (lt_trans zero_lt_one hσ)
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
