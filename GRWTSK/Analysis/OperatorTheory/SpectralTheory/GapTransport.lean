@@ -253,4 +253,26 @@ theorem norm_energy_lower_bound_of_nonnegative_cross_term
     hdelta hnorm (energy_domination_of_nonnegative_cross_term hsplit hcross)
     hfirst hsecond
 
+/-- A negative cross term is admissible when its magnitude is bounded by a
+strictly smaller fraction of the sector coercivity. This makes explicit the
+quantitative loss of the gap, rather than assuming cross-term positivity. -/
+theorem norm_energy_lower_bound_of_controlled_cross_term
+    {H : Type*} [NormedAddCommGroup H]
+    (x x₁ x₂ : H) (delta epsilon energy energy₁ energy₂ cross : ℝ)
+    (hdelta : 0 ≤ delta) (hepsilon : 0 ≤ epsilon)
+    (hnorm : ‖x‖ ^ 2 = ‖x₁‖ ^ 2 + ‖x₂‖ ^ 2)
+    (hsplit : energy = energy₁ + energy₂ + cross)
+    (hcross : -(epsilon * ‖x‖ ^ 2) ≤ cross)
+    (hfirst : delta * ‖x₁‖ ^ 2 ≤ energy₁)
+    (hsecond : delta * ‖x₂‖ ^ 2 ≤ energy₂) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ energy := by
+  have hsectors : delta * ‖x‖ ^ 2 ≤ energy₁ + energy₂ := by
+    rw [hnorm, mul_add]
+    exact add_le_add hfirst hsecond
+  rw [hsplit]
+  have hrewrite : (delta - epsilon) * ‖x‖ ^ 2 =
+      delta * ‖x‖ ^ 2 - epsilon * ‖x‖ ^ 2 := sub_mul _ _ _
+  rw [hrewrite]
+  linarith
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
