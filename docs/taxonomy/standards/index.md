@@ -41,6 +41,15 @@ DDC is optional and not adopted in this pilot. Utility, authorized access, exact
 
 ## Mathematical literature
 
+Standard-definition supplement, inspected 2026-10-23; not an upstream-version
+equivalence or a completed disciplinary bibliography:
+
+| Key | Source identity and exact location | Inspected scope | Rights/disposition |
+| --- | --- | --- | --- |
+| L61 | Mathlib authors, [Order.Closure documentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Closure.html), introduction and ClosureOperator; linked [source revision](https://github.com/leanprover-community/mathlib4/blob/3d14fd9a313ac35ed4b5c653ed5d99157c9e29f6/Mathlib/Order/Closure.lean) | Monotone/extensive/idempotent definition and fixed elements, bounded HTML inspection. This linked revision is not asserted to be GRWTSK's dependency revision. | Reference only; no upstream prose/code payload imported, no MIT relicensing. HTML byte checksum UNAVAILABLE; implementation/proofs not audited or compiled. |
+| L62 | Mathlib authors, [Order.Hom.Basic documentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/Hom/Basic.html), introduction; linked [source revision](https://github.com/leanprover-community/mathlib4/blob/fbe77601aba49915466829996621694648a19266/Mathlib/Order/Hom/Basic.lean) | OrderHom/OrderEmbedding/OrderIso definitions and preservation/reflection distinction; bounded HTML inspection, not proof or library-version audit. | Reference only; source-specific notices retained. HTML byte checksum UNAVAILABLE; no payload redistribution, compilation or upstream-compatibility assertion. |
+| L63 | J. S. Milne, [Group Theory author page](https://www.jmilne.org/math/CourseNotes/gt.html), chapter-2 contents; Mathlib authors, [FreeGroup documentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FreeGroup/Basic.html#FreeGroup), definition/universal property | Author scope and free-group definition only. Page displays v4.01 (2021); no PDF publication-date reconciliation, chapter-proof or full-book audit. Mutable documentation is not a pinned GRWTSK provider. | Citation only; author page states CC BY-NC-SA 4.0 for v4.0, not blanket MIT permission. Raw checksums UNAVAILABLE. No book/library payload copied or rights clearance inferred. |
+
 | Key | Source identity and exact location | Inspected scope | Rights/disposition |
 | --- | --- | --- | --- |
 | L1 | Gerald Teschl, Mathematical Methods in Quantum Mechanics, AMS Graduate Studies in Mathematics 99, first-edition online version dated 12 February 2009; [author-hosted PDF](https://www.mat.univie.ac.at/~gerald/ftp/book-schroe/schroe.pdf) | Functional-analytic setting; self-adjoint operators, spectrum/resolvent and spectral theory, chapters 1-3. | PDF front matter states AMS copyright 2009 and specific copying/republication conditions. Reference-only; neither book pages nor proof text reproduced. This is not the later edition merely because another edition exists. |
