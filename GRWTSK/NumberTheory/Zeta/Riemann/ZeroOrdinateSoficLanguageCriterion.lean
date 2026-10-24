@@ -1,6 +1,5 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 No rational/algebraic-to-sofic theorem or non-sofic zeta trace is proved.
 -/
