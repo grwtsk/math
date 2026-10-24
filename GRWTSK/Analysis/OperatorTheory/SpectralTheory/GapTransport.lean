@@ -382,4 +382,16 @@ theorem projection_sector_energy_lower_bound_of_interaction
     (S.norm_sq_eq_add_norm_sq_starProjection x)
     hsplit hinteraction hfirst hsecond
 
+/-- An actual bounded linear operator decomposes along complementary orthogonal
+projections. This is an operator identity, not a postulated energy splitting.
+No invariance of either projected sector under the operator is asserted. -/
+theorem continuous_operator_projection_decomposition
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    T x = T (S.starProjection x) + T (Sᗮ.starProjection x) := by
+  conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
+  exact map_add T _ _
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
