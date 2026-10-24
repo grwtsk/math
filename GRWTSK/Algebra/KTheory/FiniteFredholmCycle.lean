@@ -345,7 +345,7 @@ namespace FiniteStarProjection
 /-- A finite rectangular partial-isometry correspondence between two
 actual star projections, possibly of different sizes. Because the two
 endpoint matrices are projections, no such property is smuggled in as an
-unproved theorem. This is a relation, not yet a quotient or group. -/
+unproved theorem. This relation underlies the later finite quotient, not an analytic K₀ group. -/
 def MvNRel {m n : ℕ} (P : FiniteStarProjection m)
     (Q : FiniteStarProjection n) : Prop :=
   ∃ V : Matrix (Fin m) (Fin n) ℂ,
@@ -353,8 +353,7 @@ def MvNRel {m n : ℕ} (P : FiniteStarProjection m)
       (Q : Matrix (Fin n) (Fin n) ℂ) = Vᴴ * V
 
 /-- Every finite complex star projection admits the identity rectangular
-correspondence with itself. This only proves reflexivity, not transitivity
-of the correspondence relation. -/
+correspondence with itself. The transitivity supplier is established separately below. -/
 theorem mvNRel_refl {n : ℕ} (P : FiniteStarProjection n) :
     MvNRel P P := by
   have hstar : P.valᴴ = P.val := by
@@ -365,7 +364,8 @@ theorem mvNRel_refl {n : ℕ} (P : FiniteStarProjection n) :
   · simpa only [hstar] using (P.property.isIdempotentElem.eq).symm
 
 /-- Transposing a rectangular witness reverses finite projection
-correspondence. No quotient or stable analytic K₀ is constructed. -/
+correspondence. The finite quotient and additive operation are constructed
+separately; no analytic K₀ is constructed. -/
 theorem mvNRel_symm {m n : ℕ}
     (P : FiniteStarProjection m) (Q : FiniteStarProjection n)
     (h : MvNRel P Q) : MvNRel Q P := by
@@ -1060,7 +1060,7 @@ abbrev PackedFiniteStarProjection :=
 
 /-- The concrete Murray–von Neumann relation on finite complex star
 projections of possibly different sizes is an equivalence relation.
-This is a finite-matrix quotient relation, not stable analytic K₀. -/
+This is a finite-matrix quotient relation, not analytic K₀. -/
 def finiteProjectionSetoid : Setoid PackedFiniteStarProjection where
   r P Q := MvNRel P.2 Q.2
   iseqv := ⟨
@@ -1069,8 +1069,8 @@ def finiteProjectionSetoid : Setoid PackedFiniteStarProjection where
     (fun _ _ _ h₁ h₂ => mvNRel_trans _ _ _ h₁ h₂)⟩
 
 /-- Murray–von Neumann equivalence classes of finite complex matrix
-projections, across all finite sizes. These have not yet been equipped
-with a block-sum commutative monoid structure. -/
+projections, across all finite sizes. A subsequent instance equips this
+quotient with a source-level additive commutative monoid structure. -/
 abbrev FiniteProjectionClass := Quotient finiteProjectionSetoid
 
 /-- The zero class is represented by the unique star projection in
@@ -1112,7 +1112,7 @@ theorem classTrace_classZero : classTrace classZero = 0 := by
 /-- Binary block sum descends from actual finite star projections to
 Murray–von Neumann classes because `finiteBlockSum_mvNRel` transports
 both representatives through an assembled rectangular witness.
-This operation is not yet given associativity, commutativity, or unit laws. -/
+The algebraic laws are established later from explicit matrix witnesses. -/
 def classBlockSum (x y : FiniteProjectionClass) : FiniteProjectionClass :=
   Quotient.liftOn₂ x y
     (fun P Q : PackedFiniteStarProjection =>
@@ -1228,8 +1228,8 @@ theorem finiteBlockSumMatrix_trace
     _ = P.trace + Q.trace := matrix_trace_fromBlocks P Q
 
 /-- The actual descended class trace respects the quotient block sum.
-This is a trace compatibility theorem, not yet a declaration of a
-commutative monoid or its analytic K₀ completion. -/
+This is the trace compatibility theorem used by the finite quotient's
+additive monoid homomorphism; no analytic K₀ completion is asserted. -/
 theorem classTrace_classBlockSum
     (x y : FiniteProjectionClass) :
     classTrace (classBlockSum x y) = classTrace x + classTrace y := by
