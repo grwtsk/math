@@ -7,6 +7,7 @@ import Mathlib.NumberTheory.DirichletCharacter.Bounds
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone
 import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -409,5 +410,17 @@ theorem logarithmicPowerTailPrimitive_hasDerivAt
     field_simp
     ring
   · rfl
+
+
+/-- The negative-power factor in the logarithmic-tail primitive vanishes
+at positive infinity. The logarithmic product remains a separate limit. -/
+theorem logarithmicPowerTailPrimitive_power_tendsto_zero
+    (σ : ℝ) (hσ : 1 < σ) :
+    Filter.Tendsto (fun t : ℝ => t ^ (1 - σ))
+      Filter.atTop (nhds (0 : ℝ)) := by
+  convert Real.tendsto_rpow_neg_atTop (show 0 < σ - 1 by linarith) using 1
+  · ext t
+    congr 1
+    ring
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
