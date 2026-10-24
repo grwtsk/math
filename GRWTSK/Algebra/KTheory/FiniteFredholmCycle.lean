@@ -213,4 +213,52 @@ theorem star_projection_normalized_trace_rational
   norm_cast
 
 
+
+/-! ## Unitary invariance and finite block stabilization -/
+
+/-- Ordinary complex matrix trace is unchanged by unitary conjugation.
+Only the left unitary identity is required for this trace calculation. -/
+theorem matrix_trace_unitary_conjugation
+    (n : ℕ) (P U : Matrix (Fin n) (Fin n) ℂ)
+    (hU : Uᴴ * U = 1) :
+    (U * P * Uᴴ).trace = P.trace := by
+  calc
+    (U * P * Uᴴ).trace = (Uᴴ * (U * P)).trace :=
+      Matrix.trace_mul_comm (U * P) Uᴴ
+    _ = ((Uᴴ * U) * P).trace := by rw [Matrix.mul_assoc]
+    _ = P.trace := by rw [hU, one_mul]
+
+/-- Block-diagonal stabilization by one zero matrix leaves the *ordinary*
+trace unchanged. Normalized traces may change because the matrix dimension
+changes; no normalized-trace invariance is asserted. -/
+theorem matrix_trace_zero_stabilization
+    (n : ℕ) (P : Matrix (Fin n) (Fin n) ℂ) :
+    (Matrix.blockDiagonal
+      (fun i : Fin 2 =>
+        if i = 0 then P else (0 : Matrix (Fin n) (Fin n) ℂ))).trace =
+      P.trace := by
+  classical
+  rw [Matrix.trace_blockDiagonal]
+  simp [Fin.sum_univ_two]
+
+/-- Any finite block-diagonal family of complex idempotent matrices has an
+integer ordinary trace, namely the sum of the image dimensions of its blocks.
+This says nothing about infinite crossed-product or group-von-Neumann traces. -/
+theorem matrix_trace_blockDiagonal_idempotent_integral
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (n : ℕ) (P : ι → Matrix (Fin n) (Fin n) ℂ)
+    (hP : ∀ i, P i * P i = P i) :
+    (Matrix.blockDiagonal P).trace =
+      ((∑ i, Module.finrank ℂ (LinearMap.range (P i).toLin')) : ℂ) := by
+  rw [Matrix.trace_blockDiagonal]
+  calc
+    (∑ i, (P i).trace) =
+        ∑ i, (Module.finrank ℂ (LinearMap.range (P i).toLin') : ℂ) := by
+          apply Finset.sum_congr rfl
+          intro i hi
+          exact idempotent_matrix_trace_eq_finrank n (P i) (hP i)
+    _ = ((∑ i, Module.finrank ℂ (LinearMap.range (P i).toLin')) : ℂ) := by
+      simp
+
+
 end GRWTSK.Algebra.KTheory.FiniteFredholmCycle
