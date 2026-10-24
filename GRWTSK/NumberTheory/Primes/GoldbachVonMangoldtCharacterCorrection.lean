@@ -378,4 +378,36 @@ theorem logarithmicPowerTailKernel_integrableOn_Ioi
   have hbound := logarithmicPowerTailKernel_le_comparison σ t hσ htthree
   simpa [Real.norm_eq_abs, abs_of_nonneg hnonneg] using hbound
 
+
+/-- The elementary primitive for the logarithmic-power tail, with
+an explicit positive-distance denominator. -/
+def logarithmicPowerTailPrimitive (σ t : ℝ) : ℝ :=
+  -(t ^ (1 - σ) *
+    (Real.log t / (σ - 1) + 1 / (σ - 1) ^ 2))
+
+/-- Source-level derivative candidate on the positive half-line.
+The real-power and logarithmic product rule are the only calculus inputs. -/
+theorem logarithmicPowerTailPrimitive_hasDerivAt
+    (σ t : ℝ) (hσ : 1 < σ) (ht : 0 < t) :
+    HasDerivAt (logarithmicPowerTailPrimitive σ)
+      (logarithmicPowerTailKernel σ t) t := by
+  have hden : σ - 1 ≠ 0 := ne_of_gt (by linarith)
+  have hpow : HasDerivAt (fun x : ℝ => x ^ (1 - σ))
+      ((1 - σ) * t ^ ((1 - σ) - 1)) t :=
+    (hasDerivAt_id t).rpow_const (Or.inl ht.ne')
+  have hlog : HasDerivAt (fun x : ℝ => Real.log x)
+      t⁻¹ t := Real.hasDerivAt_log ht.ne'
+  have hinner : HasDerivAt
+      (fun x : ℝ => Real.log x / (σ - 1) + 1 / (σ - 1) ^ 2)
+      (t⁻¹ / (σ - 1)) t := by
+    convert (hlog.div_const (σ - 1)).add_const (1 / (σ - 1) ^ 2) using 1
+    simp
+  unfold logarithmicPowerTailPrimitive logarithmicPowerTailKernel
+  convert (hpow.mul hinner).neg using 1
+  · field_simp
+    rw [← Real.rpow_sub ht]
+    field_simp
+    ring
+  · rfl
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
