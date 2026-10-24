@@ -51,5 +51,32 @@ theorem norm_unitPsi_reconstruction_error_le
     q χ (unitPsiWeight q N) a principal E
     hχ hprincipal hunit hE
 
+
+/-- Character cancellation controls the nonprincipal part; comparison
+with an analytic principal main term remains a separate error. -/
+theorem norm_unitPsi_sub_principal_main_le
+    (q N : ℕ) {κ : Type*} [Fintype κ]
+    (χ : κ → (ZMod q)ˣ → ℂ)
+    (a : (ZMod q)ˣ) (principal : κ) (E : κ → ℝ)
+    (main : ℂ) (P : ℝ)
+    (hχ : OrthogonalAt χ a)
+    (hprincipal : ∀ b : (ZMod q)ˣ, χ principal b = 1)
+    (hunit : ∀ k : κ, ‖χ k a‖ ≤ 1)
+    (hE : ∀ k ∈ Finset.univ.erase principal,
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ k b‖ ≤ E k)
+    (hmain : ‖(∑ b : (ZMod q)ˣ, unitPsiWeight q N b) - main‖ ≤ P) :
+    ‖(Fintype.card κ : ℂ) * unitPsiWeight q N a - main‖ ≤
+      (∑ k ∈ Finset.univ.erase principal, E k) + P := by
+  have hchar := norm_unitPsi_reconstruction_error_le
+    q N χ a principal E hχ hprincipal hunit hE
+  have hdecomp :
+      (Fintype.card κ : ℂ) * unitPsiWeight q N a - main =
+        ((Fintype.card κ : ℂ) * unitPsiWeight q N a -
+          (∑ b : (ZMod q)ˣ, unitPsiWeight q N b)) +
+        ((∑ b : (ZMod q)ˣ, unitPsiWeight q N b) - main) := by
+    ring
+  rw [hdecomp]
+  exact (norm_add_le _ _).trans (add_le_add hchar hmain)
+
 end
 end GRWTSK.NumberTheory.Primes.GoldbachUnitCharacterPsi
