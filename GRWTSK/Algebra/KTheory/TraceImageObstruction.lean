@@ -1,6 +1,7 @@
 import Mathlib.LinearAlgebra.Span.Defs
 import Mathlib.LinearAlgebra.TensorProduct.Tower
 import Mathlib.Algebra.Module.LinearMap.End
+import Mathlib.Algebra.Group.TypeTags.Hom
 import GRWTSK.Algebra.KTheory.GrothendieckPort
 
 namespace GRWTSK.Algebra.KTheory
@@ -224,5 +225,56 @@ theorem rationalizationOf_not_mem_rationalized_assembly_span_of_irrational
   · intro hx
     obtain ⟨q, hq⟩ := (mem_rationalTraceValues_iff _).1 hx
     exact irrational_trace q hq
+
+/-
+The existing GrothendieckPort defines its universal group completion in
+multiplicative notation. Additive re-expression is required before using
+tensor-product rationalization and additive real-valued traces.
+-/
+namespace StablePort
+
+variable {M N : Type*} [CommMonoid M] [CommMonoid N]
+
+/-- Interpret the existing multiplicative group-completion transport as
+an additive homomorphism. This is a notation-preserving transport, not
+a realization of analytic Kasparov KK or a Baum--Connes assembly map. -/
+noncomputable def additiveKZeroMap (f : StablePort M N) :
+    Additive (GrothendieckKZero M) →+
+      Additive (GrothendieckKZero N) :=
+  MonoidHom.toAdditive f.kZeroMap
+
+/-- Transport on the universal group-completion generator, without
+identifying the group completion with analytic K₀. -/
+@[simp]
+theorem additiveKZeroMap_of (f : StablePort M N) (m : M) :
+    f.additiveKZeroMap
+      (ofMul (Algebra.GrothendieckGroup.of (M := M) m)) =
+    ofMul (Algebra.GrothendieckGroup.of (M := N) (f.objectMap m)) := by
+  exact congrArg ofMul (GrothendieckKZero.map_of f.objectMap m)
+
+/-- Rationalization of the existing additive presentation of the
+stable-object group-completion map. -/
+noncomputable def rationalizedKZeroMap (f : StablePort M N) :
+    Rationalization (Additive (GrothendieckKZero M)) →ₗ[ℚ]
+      Rationalization (Additive (GrothendieckKZero N)) :=
+  rationalizedAssembly f.additiveKZeroMap
+
+/-- The rationalized group-completion map sends each original
+stable-object generator to the corresponding target generator.
+It does not assert that a genuine reduced-C*-algebra K₀ functor or
+analytic assembly map has been constructed. -/
+@[simp]
+theorem rationalizedKZeroMap_of (f : StablePort M N) (m : M) :
+    f.rationalizedKZeroMap
+      (rationalizationOf _ (ofMul (Algebra.GrothendieckGroup.of (M := M) m))) =
+    rationalizationOf _
+      (ofMul (Algebra.GrothendieckGroup.of (M := N) (f.objectMap m))) := by
+  change rationalizedAssembly f.additiveKZeroMap
+      (rationalizationOf _ (ofMul (Algebra.GrothendieckGroup.of (M := M) m))) =
+    rationalizationOf _
+      (ofMul (Algebra.GrothendieckGroup.of (M := N) (f.objectMap m)))
+  rw [rationalizedAssembly_of, additiveKZeroMap_of]
+
+end StablePort
 
 end GRWTSK.Algebra.KTheory
