@@ -11747,3 +11747,38 @@ actual canonical paired-decay estimate remain unresolved. For #966 the exact
 RH application-family correspondence and quantitative control of the full
 retained residual remain unresolved. Existing historical audits do not qualify
 these new candidate bytes or privacy-edited sources automatically.
+
+
+## Case BSZ-01 — finite prime-dilation bookkeeping (2026-10-23)
+
+**Primary methodological reference:** Jean Bourgain, Peter Sarnak, Tamar Ziegler,
+*Disjointness of Mobius from horocycle flows* (2011), arXiv:1110.0992v1,
+https://arxiv.org/abs/1110.0992. Method locator: Theorem 2 and §2.
+The theorem requires bounded observables and bounded multiplicative weights,
+uniform small correlations for distinct primes in a specified range, and
+sufficiently large summation length. Its quantitative bound has scale
+N sqrt(tau log(1/tau)); no RH-strength rate follows from qualitative decay.
+
+**Local source:** `GRWTSK/NumberTheory/ArithmeticFunctions/PrimeDilationFinite.lean`,
+introduced at math commit `da6b58a06719aa9af5d2df92f17a7b0ce1901765`.
+Declarations:
+`GRWTSK.NumberTheory.ArithmeticFunctions.PrimeDilation.dilationSum`,
+`GRWTSK.NumberTheory.ArithmeticFunctions.PrimeDilation.dilationSum_swap`,
+`GRWTSK.NumberTheory.ArithmeticFunctions.PrimeDilation.centered_sum_identity`.
+Direct import: `Mathlib`. Source blob: obtain from the pinned commit's tree;
+not established by an independent fetch at initial authoring.
+
+**Classification:** source-proof-candidate (finite sum exchange and centered
+identity), methodological-analogy (BSZ), unresolved (quantitative prime
+correlation inequality and multiplicative-weight transport). The local source
+does not claim to formalize BSZ Theorem 2.
+
+**Verification:** `NOT_RUN / NOT_KERNEL_AUDITED`. No Lean compilation,
+independent fresh kernel check, transitive axiom audit, or managed replay
+receipt is asserted. No runtime request is claimed queued.
+
+**Missing bridges:** exact prime-range restriction and diagonal terms;
+finite Cauchy–Schwarz bound; centered divisor-weight variance; coprimality
+and multiplicativity needed for BSZ transport; uniform correlation rates
+strong enough for square-root-scale Möbius estimates; and any valid
+arithmetic-to-RH implication. Finite identities are not RH evidence.
