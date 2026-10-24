@@ -1116,6 +1116,114 @@ LOCAL_ADMISSION_BLOCKED pending toolchain, dependency, trust and
 proof-transport alignment in OpenAISevenEighthsPort.lean.
 This cannot prove RH or the nonlinear 7/8 -> 3/4 arithmetic contraction.
 
+**Case QRH-7-8-RESIDUAL-01 — one new conditional Lean theorem family,
+source intake 2026-10-24.** Title/byline/year and stable paper URL are the
+September 30, 2026 OpenAI preprint immediately above; this is NOT the
+separate October 5, 2026 document entitled *The Quasi-Riemann Hypothesis*.
+The primary result is the displayed external theorem
+OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re, at
+openai/math commit 1581d4cbdd69a0faf34b2089614fe2a814316a6a,
+source lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean,
+blob 46c67f4000906b1391a471d6e6396ac0da3c16a5;
+its delegated body is in
+OAI.SevenEighths.ProbeFinalAssemblyUnconditional.zeta_nonzero,
+blob e7c20910424837fb954796e1216f5aa453bbd5da.
+The comparator challenge file has a distinct sorry placeholder,
+blob e7d1caf6c579dc9afbf0d2b01f79e5cd2511b028: it is
+NOT the solution and supplies no theorem authority.
+No DOI or arXiv ID is asserted beyond the exact release URL.
+
+**Exact mathematical source constraint and local scope.** External theorem:
+forall complex s with (7/8 : real) < Re(s), riemannZeta(s) != 0;
+the strict boundary allows Re(s)=7/8. An accepted local port has two
+independent proof fields: review.AdmissionReady and a local theorem
+RiemannZetaZeroFreeRightHalfPlane (7/8). The pinned review currently
+proves NOT AdmissionReady, so NO accepted port is constructed.
+Source accepted + the existing NontrivialZetaZero.reflect theorem yields
+1/8 <= Re(s) <= 7/8 for every nontrivial zeta zero, with precisely
+Mathlib's negative-even and s!=1 exclusions. The additional
+RemainingSevenEighthsRightGap proposition says **no nontrivial zero** has
+1/2 < Re(s) <= 7/8; the additional RemainingSevenEighthsDefectGap
+requires rhDefect(s)=0 for each zero with 1/8 <= Re(s) <= 7/8.
+Under an accepted port, each additional proposition is equivalent to
+Mathlib RiemannHypothesis. This is a conditional REDUCTION to the
+UNPROVED residual band, NOT an RH proof or a new zero-free theorem.
+
+**Exact owning Lean modules and declarations (source proof candidates).**
+GRWTSK/NumberTheory/Zeta/Riemann/OpenAISevenEighthsPort.lean extends
+GRWTSK.RiemannHypothesis.RemainingSevenEighthsRightGap and
+GRWTSK.RiemannHypothesis.RemainingSevenEighthsDefectGap (definitions),
+and, in namespace
+GRWTSK.RiemannHypothesis.AcceptedExternalRawHalfPlanePort:
+toSevenEighthsZeroFree,
+nontrivialZero_mem_closed_source_band,
+remainingRightGap_iff_rh,
+remainingDefectGap_iff_rh,
+remainingDefectGap_iff_remainingRightGap,
+remainingRightGap_iff_target,
+remainingRightGap_iff_rawHalfPlane.
+No external OAI theorem module is imported.
+GRWTSK/NumberTheory/Zeta/Riemann/Checks/OpenAISevenEighthsPortControls.lean
+extends toy_remaining_right_gap_fails and
+no_accepted_port_for_unready_review.
+The new code consumes the EXISTING mathematical source declarations:
+GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_closed_seven_eighths_band
+(ExternalSevenEighthsBand.lean),
+GRWTSK.RiemannHypothesis.riemannHypothesis_of_nontrivialZeroFreeRightHalfPlane
+(ZeroFreeHalfPlaneCriterion.lean),
+GRWTSK.RiemannHypothesis.riemann_hypothesis_iff_defect_zero
+(CriticalLineDefect.lean),
+GRWTSK.RiemannHypothesis.riemannZetaZeroFreeRightHalfPlane_half_iff_riemannHypothesis
+(ZetaZeroFreeHalfPlaneAdapter.lean) and
+GRWTSK.RiemannHypothesis.Target.statement_eq_mathlib
+(Hypothesis.lean). These are exact local source comparisons, not
+replayed kernel-certified bridges at this integration pin.
+
+**Connection classes / missing bridges.**
+(1) External OAI source solution = **external SOURCE PROOF CANDIDATE**,
+not imported mathematics and NOT KERNEL_AUDITED locally.
+(2) AcceptedExternalRawHalfPlanePort = **CONDITIONAL INTERFACE**,
+its witness/admission missing for the pinned review.
+(3) Existing ExternalSevenEighthsBand + ZeroSymmetry =
+**IMPORTED LOCAL SOURCE MATHEMATICS**; new port-to-band edge and
+residual-strip/defect equivalences = **NEW SOURCE PROOF CANDIDATES**.
+(4) MirrorPairingCriterion.criticalLineMirrorPairingPositivity_iff_rh
+and CriticalLinePositivityCriterion.criticalLineDefectPositivity_iff_rh =
+**RELATED PROVED-IN-SOURCE CRITERION EQUIVALENCES**, not an analytic supplier
+of missing positivity/vanishing in the residual region.
+(5) SevenEighthsMechanismQuarticBridge = **CONDITIONAL ANALYTIC
+MECHANISM INTERFACE**: missing detector witness, accepted mechanism
+adapter, PNT-independent dependency closure, comparison residuals.
+(6) Farey residue, modular/Dirichlet, Hodge and Gaussian observation stacks =
+**METHODOLOGICAL ANALOGIES/UNRESOLVED MAPS** only until a typed zeta/Dirichlet
+L function identification and quantitative inequalities are built.
+(7) The stronger Dirichlet-character and Hecke nonvanishing claims in
+lean/docs/003.md remain **SEPARATE FUTURE THEOREMS**: the
+principal-character pole exception (chi=1 AND s=1), modulus NeZero,
+character conductor, Hecke field and finite order may not be silently
+dropped or inferred from the zeta specialization. No new finite evidence.
+
+**Verification and source pins.** The source blob hashes and a separate
+immutable math MAIN source commit are recorded in the bounded verification
+issue after integration. The baseline main for this edit is
+0c3709449a58aef23d1092e3e9b90b99a7d32894; baseline OpenAISevenEighthsPort.lean blob 9cb84ea0b8e56d589d03e98ac193e832b04a1c60,
+controls blob c61a90bcdaf19070fc7c5e07e5752b9a0f971ebb; baseline ledger blob
+7a1765a4def4609247976f1796d16f9dd41fbcf1.
+Pinned GRWTSK Lean leanprover/lean4:v4.33.0,
+Mathlib db584cd6d46c92f209a44c0f1c829460d327499d;
+upstream Lean v4.34.1, Mathlib
+d13f23b723b8a846827a245b89c10fc7d3f11612.
+New local compilation **NOT_RUN**; fresh kernel checking **NOT_RUN**;
+transitive axiom audit **NOT_RUN**, receipts unavailable. A source-text
+diff, Git commit and a queued issue are not acceptance.
+Require exact-pin lake build --wfail on the two modified modules and all
+transitive dependencies, lean --trust=0, a fresh checker using actual
+supported flags, and #print axioms for each new theorem. The strongest
+verification target is AcceptedExternalRawHalfPlanePort.remainingRightGap_iff_rh,
+with explicit uninhabited/currently-unready port control and the hostile
+toy pair at Re=2/5, 3/5. Store executable receipts OUTSIDE math in
+grwtsk/noeaaeue; no Railway, remote dispatch, force-push or merge.
+
 ### OpenAI CM Hodge paper; two meanings of Hodge remain separated
 
 **Paper:** OpenAI, *The rational Hodge conjecture for CM abelian

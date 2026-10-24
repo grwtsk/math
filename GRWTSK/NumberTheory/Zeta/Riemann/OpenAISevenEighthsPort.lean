@@ -1,7 +1,10 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT.
+Local mathematical direction and proof code: grwtsk contributors.
+OpenAI source identities are retained as mathematical provenance.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.ZetaZeroFreeHalfPlaneAdapter
+import GRWTSK.NumberTheory.Zeta.Riemann.ExternalSevenEighthsBand
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect
 import Mathlib.Data.List.Basic
 
 set_option autoImplicit false
@@ -219,6 +222,101 @@ theorem toElevenTwelfths
     RiemannZetaZeroFreeRightHalfPlane ((11 : ℝ) / 12) :=
   riemannZetaZeroFreeRightHalfPlane_sevenEighths_to_elevenTwelfths
     port.rawTheorem
+
+end AcceptedExternalRawHalfPlanePort
+
+/-! ## Scope of the remaining half-plane obligation under an admitted source -/
+
+/-- The exact unproved right-side strip that remains after strict
+nonvanishing for real part greater than seven eighths. The upper
+boundary is INCLUDED because the upstream theorem is strict. -/
+def RemainingSevenEighthsRightGap : Prop :=
+  ∀ s : ℂ, (1 / 2 : ℝ) < s.re →
+    s.re ≤ (7 / 8 : ℝ) → ¬ NontrivialZetaZero s
+
+/-- The same remaining region, expressed with the canonical critical-line
+defect. This is an independent unproved analytic supplier, not a result of
+accepting a seven-eighths half-plane theorem. -/
+def RemainingSevenEighthsDefectGap : Prop :=
+  ∀ s : ℂ, NontrivialZetaZero s →
+    (1 / 8 : ℝ) ≤ s.re → s.re ≤ (7 / 8 : ℝ) →
+      rhDefect s = 0
+
+namespace AcceptedExternalRawHalfPlanePort
+
+/-- A future admitted OpenAI seven-eighths theorem is also a source for the
+existing typed external-band proposition, with no new source identification. -/
+theorem toSevenEighthsZeroFree
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
+    SevenEighthsZeroFree :=
+  port.rawTheorem
+
+/-- Reuse the existing reflection theorem, including the exact nontrivial-zero
+and pole exclusions. No independent second band theorem is postulated. -/
+theorem nontrivialZero_mem_closed_source_band
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8))
+    {s : ℂ} (hs : NontrivialZetaZero s) :
+    (1 / 8 : ℝ) ≤ s.re ∧ s.re ≤ (7 / 8 : ℝ) :=
+  hs.mem_closed_seven_eighths_band port.toSevenEighthsZeroFree
+
+/-- Exact strongest remaining RIGHT-side supplier, not the seven-eighths
+theorem by itself: with an accepted upstream port, excluding the
+half-open residual strip is equivalent to Mathlib's literal RH.
+Reflection of nontrivial zeros is used in the existing RH criterion. -/
+theorem remainingRightGap_iff_rh
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
+    RemainingSevenEighthsRightGap ↔ _root_.RiemannHypothesis := by
+  constructor
+  · intro hremaining
+    apply riemannHypothesis_of_nontrivialZeroFreeRightHalfPlane
+      (σ := (1 / 2 : ℝ)) le_rfl
+    intro s hsright hs
+    exact (hremaining s hsright
+      (port.nontrivialZero_mem_closed_source_band hs).2) hs
+  · intro hrh s hsright _hsupper hs
+    have hline : s.re = (1 / 2 : ℝ) :=
+      hrh s hs.1 hs.2.1 hs.2.2
+    exact (not_lt_of_ge (le_of_eq hline)) hsright
+
+/-- The source-accepted central closed band is sufficient as the only domain
+to check the original GRWTSK critical-line defect criterion.
+Defect vanishing in that band is NOT constructed here. -/
+theorem remainingDefectGap_iff_rh
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
+    RemainingSevenEighthsDefectGap ↔ _root_.RiemannHypothesis := by
+  constructor
+  · intro hremaining
+    apply riemann_hypothesis_iff_defect_zero.mpr
+    intro s hs
+    have hband := port.nontrivialZero_mem_closed_source_band hs
+    exact hremaining s hs hband.1 hband.2
+  · intro hrh s hs _hleft _hright
+    exact (riemann_hypothesis_iff_defect_zero.mp hrh) s hs
+
+/-- Two precise descriptions of the unproved residual supplier agree once
+the external port is actually accepted. -/
+theorem remainingDefectGap_iff_remainingRightGap
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
+    RemainingSevenEighthsDefectGap ↔ RemainingSevenEighthsRightGap :=
+  (port.remainingDefectGap_iff_rh).trans
+    (port.remainingRightGap_iff_rh).symm
+
+/-- The residual condition terminates in the independently fixed RH
+statement, not in a weaker or substitute proposition. -/
+theorem remainingRightGap_iff_target
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
+    RemainingSevenEighthsRightGap ↔ Target.Statement := by
+  rw [Target.statement_eq_mathlib]
+  exact port.remainingRightGap_iff_rh
+
+/-- The same missing supplier is exactly the previously formalized raw
+critical-half-plane criterion, conditional on an accepted seven-eighths port. -/
+theorem remainingRightGap_iff_rawHalfPlane
+    (port : AcceptedExternalRawHalfPlanePort ((7 : ℝ) / 8)) :
+    RemainingSevenEighthsRightGap ↔
+      RiemannZetaZeroFreeRightHalfPlane (1 / 2 : ℝ) :=
+  (port.remainingRightGap_iff_rh).trans
+    (riemannZetaZeroFreeRightHalfPlane_half_iff_riemannHypothesis.symm)
 
 end AcceptedExternalRawHalfPlanePort
 
