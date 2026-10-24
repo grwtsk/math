@@ -1,0 +1,222 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Trace.Variant67dc5763c9f18261c8f629d68cfa3f8c7323054e0970bdcf7e358870b04d092a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d2f9f6f26aafd9154f1b0a472a34f2a9a704b831` · SHA-256 `32b90cbf61406ef7b1e886e21124e5979b18b48d8399ab0b6a3295683021dcc1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.Trace.Variant297fa53558104cb1169e7a27de2f645d7fd7ac2dd0ceefb30b91cba2452a3a03","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"297fa53558104cb1169e7a27de2f645d7fd7ac2dd0ceefb30b91cba2452a3a03","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.Trace.Variant297fa53558104cb1169e7a27de2f645d7fd7ac2dd0ceefb30b91cba2452a3a03","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"297fa53558104cb1169e7a27de2f645d7fd7ac2dd0ceefb30b91cba2452a3a03","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/LinearAlgebra/Matrix/Trace.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2019 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Patrick Massot, Casper Putz, Anne Baanen
+-/
+import Mathlib.Data.Matrix.Basic
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.Trace.Variant297fa53558104cb1169e7a27de2f645d7fd7ac2dd0ceefb30b91cba2452a3a03
+
+#align_import linear_algebra.matrix.trace from "leanprover-community/mathlib"@"32b08ef840dd25ca2e47e035c5da03ce16d2dc3c"
+
+/-!
+# Trace of a matrix
+
+This file defines the trace of a matrix, the map sending a matrix to the sum of its diagonal
+entries.
+
+See also `LinearAlgebra.Trace` for the trace of an endomorphism.
+
+## Tags
+
+matrix, trace, diagonal
+
+-/
+
+
+open BigOperators Matrix
+
+namespace Matrix
+
+variable {ι m n p : Type*} {α R S : Type*}
+
+variable [Fintype m] [Fintype n] [Fintype p]
+
+section AddCommMonoid
+
+variable [AddCommMonoid R]
+
+/-- The trace of a square matrix. For more bundled versions, see:
+* `Matrix.traceAddMonoidHom`
+* `Matrix.traceLinearMap`
+-/
+def trace (A : Matrix n n R) : R :=
+  ∑ i, diag A i
+#align matrix.trace Matrix.trace
+
+variable (n R)
+
+@[simp]
+theorem trace_zero : trace (0 : Matrix n n R) = 0 :=
+  (Finset.sum_const (0 : R)).trans <| smul_zero _
+#align matrix.trace_zero Matrix.trace_zero
+
+variable {n R}
+
+@[simp]
+theorem trace_add (A B : Matrix n n R) : trace (A + B) = trace A + trace B :=
+  Finset.sum_add_distrib
+#align matrix.trace_add Matrix.trace_add
+
+@[simp]
+theorem trace_smul [Monoid α] [DistribMulAction α R] (r : α) (A : Matrix n n R) :
+    trace (r • A) = r • trace A :=
+  Finset.smul_sum.symm
+#align matrix.trace_smul Matrix.trace_smul
+
+@[simp]
+theorem trace_transpose (A : Matrix n n R) : trace Aᵀ = trace A :=
+  rfl
+#align matrix.trace_transpose Matrix.trace_transpose
+
+@[simp]
+theorem trace_conjTranspose [StarAddMonoid R] (A : Matrix n n R) : trace Aᴴ = star (trace A) :=
+  (star_sum _ _).symm
+#align matrix.trace_conj_transpose Matrix.trace_conjTranspose
+
+variable (n α R)
+
+/-- `Matrix.trace` as an `AddMonoidHom` -/
+@[simps]
+def traceAddMonoidHom : Matrix n n R →+ R where
+  toFun := trace
+  map_zero' := trace_zero n R
+  map_add' := trace_add
+#align matrix.trace_add_monoid_hom Matrix.traceAddMonoidHom
+
+/-- `Matrix.trace` as a `LinearMap` -/
+@[simps]
+def traceLinearMap [Semiring α] [Module α R] : Matrix n n R →ₗ[α] R where
+  toFun := trace
+  map_add' := trace_add
+  map_smul' := trace_smul
+#align matrix.trace_linear_map Matrix.traceLinearMap
+
+variable {n α R}
+
+@[simp]
+theorem trace_list_sum (l : List (Matrix n n R)) : trace l.sum = (l.map trace).sum :=
+  map_list_sum (traceAddMonoidHom n R) l
+#align matrix.trace_list_sum Matrix.trace_list_sum
+
+@[simp]
+theorem trace_multiset_sum (s : Multiset (Matrix n n R)) : trace s.sum = (s.map trace).sum :=
+  map_multiset_sum (traceAddMonoidHom n R) s
+#align matrix.trace_multiset_sum Matrix.trace_multiset_sum
+
+@[simp]
+theorem trace_sum (s : Finset ι) (f : ι → Matrix n n R) :
+    trace (∑ i in s, f i) = ∑ i in s, trace (f i) :=
+  map_sum (traceAddMonoidHom n R) f s
+#align matrix.trace_sum Matrix.trace_sum
+
+theorem _root_.GRWTSK.Algebra.LinearAlgebra.Trace.Variant297fa53558104cb1169e7a27de2f645d7fd7ac2dd0ceefb30b91cba2452a3a03.AddMonoidHom.map_trace [AddCommMonoid S] (f : R →+ S) (A : Matrix n n R) :
+    f (trace A)  = trace (f.mapMatrix A) :=
+  map_sum f (fun i => diag A i) Finset.univ
+
+end AddCommMonoid
+
+section AddCommGroup
+
+variable [AddCommGroup R]
+
+@[simp]
+theorem trace_sub (A B : Matrix n n R) : trace (A - B) = trace A - trace B :=
+  Finset.sum_sub_distrib
+#align matrix.trace_sub Matrix.trace_sub
+
+@[simp]
+theorem trace_neg (A : Matrix n n R) : trace (-A) = -trace A :=
+  Finset.sum_neg_distrib
+#align matrix.trace_neg Matrix.trace_neg
+
+end AddCommGroup
+
+section One
+
+variable [DecidableEq n] [AddCommMonoidWithOne R]
+
+@[simp]
+theorem trace_one : trace (1 : Matrix n n R) = Fintype.card n := by
+  simp_rw [trace, diag_one, Pi.one_def, Finset.sum_const, nsmul_one, Finset.card_univ]
+#align matrix.trace_one Matrix.trace_one
+
+end One
+
+section Mul
+
+@[simp]
+theorem trace_transpose_mul [AddCommMonoid R] [Mul R] (A : Matrix m n R) (B : Matrix n m R) :
+    trace (Aᵀ * Bᵀ) = trace (A * B) :=
+  Finset.sum_comm
+#align matrix.trace_transpose_mul Matrix.trace_transpose_mul
+
+theorem trace_mul_comm [AddCommMonoid R] [CommSemigroup R] (A : Matrix m n R) (B : Matrix n m R) :
+    trace (A * B) = trace (B * A) := by rw [← trace_transpose, ← trace_transpose_mul, transpose_mul]
+#align matrix.trace_mul_comm Matrix.trace_mul_comm
+
+theorem trace_mul_cycle [NonUnitalCommSemiring R] (A : Matrix m n R) (B : Matrix n p R)
+    (C : Matrix p m R) : trace (A * B * C) = trace (C * A * B) := by
+  rw [trace_mul_comm, Matrix.mul_assoc]
+#align matrix.trace_mul_cycle Matrix.trace_mul_cycle
+
+theorem trace_mul_cycle' [NonUnitalCommSemiring R] (A : Matrix m n R) (B : Matrix n p R)
+    (C : Matrix p m R) : trace (A * (B * C)) = trace (C * (A * B)) := by
+  rw [← Matrix.mul_assoc, trace_mul_comm]
+#align matrix.trace_mul_cycle' Matrix.trace_mul_cycle'
+
+@[simp]
+theorem trace_col_mul_row [NonUnitalNonAssocSemiring R] (a b : n → R) :
+    trace (col a * row b) = dotProduct a b := by
+  apply Finset.sum_congr rfl
+  simp [mul_apply]
+#align matrix.trace_col_mul_row Matrix.trace_col_mul_row
+
+end Mul
+
+section Fin
+
+variable [AddCommMonoid R]
+
+/-! ### Special cases for `Fin n`
+
+While `simp [Fin.sum_univ_succ]` can prove these, we include them for convenience and consistency
+with `Matrix.det_fin_two` etc.
+-/
+
+
+@[simp]
+theorem trace_fin_zero (A : Matrix (Fin 0) (Fin 0) R) : trace A = 0 :=
+  rfl
+#align matrix.trace_fin_zero Matrix.trace_fin_zero
+
+theorem trace_fin_one (A : Matrix (Fin 1) (Fin 1) R) : trace A = A 0 0 :=
+  add_zero _
+#align matrix.trace_fin_one Matrix.trace_fin_one
+
+theorem trace_fin_two (A : Matrix (Fin 2) (Fin 2) R) : trace A = A 0 0 + A 1 1 :=
+  congr_arg ((· + ·) _) (add_zero (A 1 1))
+#align matrix.trace_fin_two Matrix.trace_fin_two
+
+theorem trace_fin_three (A : Matrix (Fin 3) (Fin 3) R) : trace A = A 0 0 + A 1 1 + A 2 2 := by
+  rw [← add_zero (A 2 2), add_assoc]
+  rfl
+#align matrix.trace_fin_three Matrix.trace_fin_three
+
+end Fin
+
+end Matrix
+```

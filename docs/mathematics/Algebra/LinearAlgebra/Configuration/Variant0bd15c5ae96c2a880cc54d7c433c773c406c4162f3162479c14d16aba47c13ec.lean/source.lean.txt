@@ -1,0 +1,3 @@
+import BitMatrix.Configuration.Schema003
+import BitMatrix.Configuration.Schema003Generated
+import BitMatrix.Configuration.Schema003Validity

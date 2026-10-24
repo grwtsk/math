@@ -1,0 +1,98 @@
+# IsRegular.pow
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "cadd463f93896eead9a3990198d6d55d3a59ae0c",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 42,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/05/056f26845f58ce7db2e98ab8a8ff3d6a37bba559be1a657459e0c0842691c766.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:83ecfc1a-2758-7f0f-2a8a-24138cf1a469",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:1dec14f4-0280-8a8f-2956-8c86f32fd82a",
+  "kind": "theorem",
+  "lexical_name": "IsRegular.pow",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isregular-pow--b7d725d82640518df2e790f4",
+  "source": {
+    "blob": "cadd463f93896eead9a3990198d6d55d3a59ae0c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 46,
+    "line": 42,
+    "path": "GRWTSK/Algebra/UniversalAlgebra/Pow/Variant056f26845f58ce7db2e98ab8a8ff3d6a37bba559be1a657459e0c0842691c766.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b7d725d82640518df2e790f4ae4a348256b61bff7b3f6e8a45178f2a5679bcb4",
+  "verification": {
+    "reference": "docs/verification/Algebra/UniversalAlgebra/Pow/Variant056f26845f58ce7db2e98ab8a8ff3d6a37bba559be1a657459e0c0842691c766.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:1dec14f4-0280-8a8f-2956-8c86f32fd82a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 42–46.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem IsRegular.pow (n : ℕ) (ra : IsRegular a) : IsRegular (a ^ n) :=
+  ⟨IsLeftRegular.pow n ra.left, IsRightRegular.pow n ra.right⟩
+#align is_regular.pow IsRegular.pow
+
+/-- An element `a` is left-regular if and only if a positive power of `a` is left-regular. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/UniversalAlgebra/Pow/Variant056f26845f58ce7db2e98ab8a8ff3d6a37bba559be1a657459e0c0842691c766.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/UniversalAlgebra/Pow/Variant056f26845f58ce7db2e98ab8a8ff3d6a37bba559be1a657459e0c0842691c766.lean#L42).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cadd463f93896eead9a3990198d6d55d3a59ae0c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

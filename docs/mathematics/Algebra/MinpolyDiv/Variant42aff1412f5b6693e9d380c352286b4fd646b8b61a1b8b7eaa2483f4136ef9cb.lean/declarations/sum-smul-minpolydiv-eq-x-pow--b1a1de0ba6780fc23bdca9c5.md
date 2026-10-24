@@ -1,0 +1,111 @@
+# sum_smul_minpolyDiv_eq_X_pow
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:73775240-7930-80c7-11bb-a0e1994ca029",
+  "kind": "lemma",
+  "lexical_name": "sum_smul_minpolyDiv_eq_X_pow",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "sum-smul-minpolydiv-eq-x-pow--b1a1de0ba6780fc23bdca9c5",
+  "source": {
+    "blob": "ba816856ee1786f572e7d378c37d1b50fa42163b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 230,
+    "line": 201,
+    "path": "GRWTSK/Algebra/MinpolyDiv/Variant42aff1412f5b6693e9d380c352286b4fd646b8b61a1b8b7eaa2483f4136ef9cb.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b1a1de0ba6780fc23bdca9c54b7445ec98d0338e5e2e79c992da2679853cc2eb",
+  "verification": {
+    "reference": "docs/verification/Algebra/MinpolyDiv/Variant42aff1412f5b6693e9d380c352286b4fd646b8b61a1b8b7eaa2483f4136ef9cb.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:73775240-7930-80c7-11bb-a0e1994ca029`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 201–230.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma sum_smul_minpolyDiv_eq_X_pow (E) [Field E] [Algebra K E] [IsAlgClosed E]
+    [FiniteDimensional K L] [Algebra.IsSeparable K L]
+    {x : L} (hxL : Algebra.adjoin K {x} = ⊤) {r : ℕ} (hr : r < finrank K L) :
+    ∑ σ : L →ₐ[K] E, ((x ^ r / aeval x (derivative <| minpoly K x)) •
+      minpolyDiv K x).map σ = (X ^ r : E[X]) := by
+  classical
+  rw [← sub_eq_zero]
+  have : Function.Injective (fun σ : L →ₐ[K] E ↦ σ x) := fun _ _ h =>
+    AlgHom.ext_of_adjoin_eq_top hxL (fun _ hx ↦ hx ▸ h)
+  apply Polynomial.eq_zero_of_natDegree_lt_card_of_eval_eq_zero _ this
+  · intro σ
+    simp only [Polynomial.map_smul, map_div₀, map_pow, RingHom.coe_coe, eval_sub, eval_finset_sum,
+      eval_smul, eval_map, eval₂_minpolyDiv_self, this.eq_iff, smul_eq_mul, mul_ite, mul_zero,
+      Finset.sum_ite_eq', Finset.mem_univ, ite_true, eval_pow, eval_X]
+    rw [sub_eq_zero, div_mul_cancel₀]
+    rw [ne_eq, map_eq_zero_iff σ σ.toRingHom.injective]
+    exact (Algebra.IsSeparable.isSeparable _ _).aeval_derivative_ne_zero (minpoly.aeval _ _)
+  · refine (Polynomial.natDegree_sub_le _ _).trans_lt
+      (max_lt ((Polynomial.natDegree_sum_le _ _).trans_lt ?_) ?_)
+    · simp only [AlgEquiv.toAlgHom_eq_coe, Polynomial.map_smul,
+        map_div₀, map_pow, RingHom.coe_coe, AlgHom.coe_coe, Function.comp_apply,
+        Finset.mem_univ, forall_true_left, true_and, Finset.fold_max_lt, AlgHom.card]
+      refine ⟨finrank_pos, ?_⟩
+      intro σ
+      exact ((Polynomial.natDegree_smul_le _ _).trans natDegree_map_le).trans_lt
+        ((natDegree_minpolyDiv_lt (Algebra.IsIntegral.isIntegral x)).trans_le
+          (minpoly.natDegree_le _))
+    · rwa [natDegree_pow, natDegree_X, mul_one, AlgHom.card]
+
+end PowerBasis
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/MinpolyDiv/Variant42aff1412f5b6693e9d380c352286b4fd646b8b61a1b8b7eaa2483f4136ef9cb.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/MinpolyDiv/Variant42aff1412f5b6693e9d380c352286b4fd646b8b61a1b8b7eaa2483f4136ef9cb.lean#L201).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ba816856ee1786f572e7d378c37d1b50fa42163b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

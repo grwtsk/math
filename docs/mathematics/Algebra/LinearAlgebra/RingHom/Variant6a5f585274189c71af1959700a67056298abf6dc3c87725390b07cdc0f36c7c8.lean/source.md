@@ -1,0 +1,106 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.RingHom.Variant6a5f585274189c71af1959700a67056298abf6dc3c87725390b07cdc0f36c7c8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c4b098423224ceac329912e1a409c6bdbe7c42b2` · SHA-256 `26f0803f05492055d506f2aa3a5857ff3bae5c17075ed403dc1547f722540579`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.FunctionSurjectiveModuleLeft.Variant6d311b1e7a33f761f13824b7328a75f60e65fcf41dc3130dff86a374e680adf4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6d311b1e7a33f761f13824b7328a75f60e65fcf41dc3130dff86a374e680adf4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.FunctionSurjectiveModuleLeft.Variant6d311b1e7a33f761f13824b7328a75f60e65fcf41dc3130dff86a374e680adf4","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"6d311b1e7a33f761f13824b7328a75f60e65fcf41dc3130dff86a374e680adf4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Module/RingHom.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2015 Nathaniel Thomas. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Nathaniel Thomas, Jeremy Avigad, Johannes Hölzl, Mario Carneiro
+-/
+import Mathlib.Algebra.GroupWithZero.Action.End
+import Mathlib.Algebra.Module.Defs
+import Mathlib.Algebra.Ring.Hom.Defs
+
+/-!
+# Composing modules with a ring hom
+
+## Main definitions
+
+* `Module.compHom`: compose a `Module` with a `RingHom`, with action `f s • m`.
+* `RingHom.toModule`: a `RingHom` defines a module structure by `r • x = f r * x`.
+
+## Tags
+
+semimodule, module, vector space
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.FunctionSurjectiveModuleLeft.Variant6d311b1e7a33f761f13824b7328a75f60e65fcf41dc3130dff86a374e680adf4
+
+assert_not_exists Field Invertible Multiset Pi.single_smul₀ Set.indicator
+
+open Function Set
+
+universe u v
+
+variable {R S M M₂ : Type*}
+
+section AddCommMonoid
+
+variable [Semiring R] [AddCommMonoid M] [Module R M] (r s : R) (x : M)
+
+variable (R)
+
+/-- Push forward the action of `R` on `M` along a compatible surjective map `f : R →+* S`.
+
+See also `Function.Surjective.mulActionLeft` and `Function.Surjective.distribMulActionLeft`.
+-/
+abbrev Function.Surjective.moduleLeft {R S M : Type*} [Semiring R] [AddCommMonoid M] [Module R M]
+    [Semiring S] [SMul S M] (f : R →+* S) (hf : Function.Surjective f)
+    (hsmul : ∀ (c) (x : M), f c • x = c • x) : Module S M :=
+  { hf.distribMulActionLeft f.toMonoidHom hsmul with
+    zero_smul := fun x => by rw [← f.map_zero, hsmul, zero_smul]
+    add_smul := hf.forall₂.mpr fun a b x => by simp only [← f.map_add, hsmul, add_smul] }
+
+variable {R} (M)
+
+/-- Compose a `Module` with a `RingHom`, with action `f s • m`.
+
+See note [reducible non-instances]. -/
+abbrev Module.compHom [Semiring S] (f : S →+* R) : Module S M :=
+  { MulActionWithZero.compHom M f.toMonoidWithZeroHom, DistribMulAction.compHom M (f : S →* R) with
+    -- Porting note: the `show f (r + s) • x = f r • x + f s • x` wasn't needed in mathlib3.
+    -- Somehow, now that `SMul` is heterogeneous, it can't unfold earlier fields of a definition for
+    -- use in later fields.  See
+    -- https://leanprover.zulipchat.com/#narrow/stream/287929-mathlib4/topic/Heterogeneous.20scalar.20multiplication
+    -- TODO(jmc): there should be a rw-lemma `smul_comp` close to `SMulZeroClass.compFun`
+    add_smul := fun r s x => show f (r + s) • x = f r • x + f s • x by simp [add_smul] }
+
+variable {M}
+
+end AddCommMonoid
+
+/-- A ring homomorphism `f : R →+* M` defines a module structure by `r • x = f r * x`.
+See note [reducible non-instances]. -/
+abbrev RingHom.toModule [Semiring R] [Semiring S] (f : R →+* S) : Module R S :=
+  Module.compHom S f
+
+/-- If the module action of `R` on `S` is compatible with multiplication on `S`, then
+`fun x ↦ x • 1` is a ring homomorphism from `R` to `S`.
+
+This is the `RingHom` version of `MonoidHom.smulOneHom`.
+
+When `R` is commutative, usually `algebraMap` should be preferred. -/
+@[simps!] def RingHom.smulOneHom
+    [Semiring R] [NonAssocSemiring S] [Module R S] [IsScalarTower R S S] : R →+* S where
+  __ := MonoidHom.smulOneHom
+  map_zero' := zero_smul R 1
+  map_add' := (add_smul · · 1)
+
+/-- A homomorphism between semirings R and S can be equivalently specified by a R-module
+structure on S such that S/S/R is a scalar tower. -/
+def ringHomEquivModuleIsScalarTower [Semiring R] [Semiring S] :
+    (R →+* S) ≃ {_inst : Module R S // IsScalarTower R S S} where
+  toFun f := ⟨Module.compHom S f, SMul.comp.isScalarTower _⟩
+  invFun := fun ⟨_, _⟩ ↦ RingHom.smulOneHom
+  left_inv f := RingHom.ext fun r ↦ mul_one (f r)
+  right_inv := fun ⟨_, _⟩ ↦ Subtype.ext <| Module.ext <| funext₂ <| smul_one_smul S
+```

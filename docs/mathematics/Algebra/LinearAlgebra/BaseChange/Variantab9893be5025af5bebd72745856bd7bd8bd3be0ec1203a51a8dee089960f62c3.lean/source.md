@@ -1,0 +1,60 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.BaseChange.Variantab9893be5025af5bebd72745856bd7bd8bd3be0ec1203a51a8dee089960f62c3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2cf07ad4a208e796a4ae214c6e56d94f25fac9ed` · SHA-256 `a6ad89ab4b4e11930cf80f4aae5daac32e54fa17abbbc49762c32051134bd4d6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.LinearMapCharpolyBaseChange.Variantc7d70f9c4dd769f6178f7fbea68fd56c391275ea4f9a8426b7774f7673a6ac26","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c7d70f9c4dd769f6178f7fbea68fd56c391275ea4f9a8426b7774f7673a6ac26","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.LinearMapCharpolyBaseChange.Variantc7d70f9c4dd769f6178f7fbea68fd56c391275ea4f9a8426b7774f7673a6ac26","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"c7d70f9c4dd769f6178f7fbea68fd56c391275ea4f9a8426b7774f7673a6ac26","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/LinearAlgebra/Charpoly/BaseChange.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Andrew Yang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Andrew Yang
+-/
+import Mathlib.LinearAlgebra.Charpoly.ToMatrix
+import Mathlib.LinearAlgebra.Determinant
+import Mathlib.RingTheory.TensorProduct.Finite
+
+
+/-! # The characteristic polynomial of base change -/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.LinearMapCharpolyBaseChange.Variantc7d70f9c4dd769f6178f7fbea68fd56c391275ea4f9a8426b7774f7673a6ac26
+
+@[simp]
+lemma LinearMap.charpoly_baseChange {R M} [CommRing R] [AddCommGroup M] [Module R M]
+    [Module.Free R M] [Module.Finite R M] (f : M →ₗ[R] M)
+    (A) [CommRing A] [Algebra R A] :
+    (f.baseChange A).charpoly = f.charpoly.map (algebraMap R A) := by
+  nontriviality A
+  have := (algebraMap R A).domain_nontrivial
+  let I := Module.Free.ChooseBasisIndex R M
+  let b : Basis I R M := Module.Free.chooseBasis R M
+  rw [← f.charpoly_toMatrix b, ← (f.baseChange A).charpoly_toMatrix (b.baseChange A),
+    ← Matrix.charpoly_map]
+  congr 1
+  ext i j
+  simp [LinearMap.toMatrix_apply, ← Algebra.algebraMap_eq_smul_one]
+
+lemma LinearMap.det_eq_sign_charpoly_coeff {R M} [CommRing R] [AddCommGroup M] [Module R M]
+    [Module.Free R M] [Module.Finite R M] (f : M →ₗ[R] M) :
+    LinearMap.det f = (-1) ^ Module.finrank R M * f.charpoly.coeff 0 := by
+  nontriviality R
+  rw [← LinearMap.det_toMatrix (Module.Free.chooseBasis R M), Matrix.det_eq_sign_charpoly_coeff,
+    ← Module.finrank_eq_card_chooseBasisIndex, charpoly_def]
+
+lemma LinearMap.det_baseChange {R M} [CommRing R] [AddCommGroup M] [Module R M]
+    [Module.Free R M] [Module.Finite R M]
+    {A} [CommRing A] [Algebra R A] (f : M →ₗ[R] M) :
+    LinearMap.det (f.baseChange A) = algebraMap R A (LinearMap.det f) := by
+  nontriviality A
+  have := (algebraMap R A).domain_nontrivial
+  rw [LinearMap.det_eq_sign_charpoly_coeff, LinearMap.det_eq_sign_charpoly_coeff]
+  simp
+
+/-! Also see `LinearMap.trace_baseChange` in `Mathlib/LinearAlgebra/Trace` -/
+```

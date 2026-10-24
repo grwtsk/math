@@ -1,0 +1,160 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Finsupp.Variant81b317b781ea6b9d19775198a51a3030cb4fff00f2eee32e6b4c7d2c2ab33c78
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7faf232aec5aff97cf97cc7b28b4b977b90dcaf9` · SHA-256 `842ee854eafbf180296fde28bb08b304012d1752452f88595808fbe2116c72ab`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.FreeAbelianGroupToFinsupp.Variant5a9856613aec8663c14fc26e58048df914aee05c9afce6a8795febea0b9bf0e7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5a9856613aec8663c14fc26e58048df914aee05c9afce6a8795febea0b9bf0e7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.FreeAbelianGroupToFinsupp.Variant5a9856613aec8663c14fc26e58048df914aee05c9afce6a8795febea0b9bf0e7","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"5a9856613aec8663c14fc26e58048df914aee05c9afce6a8795febea0b9bf0e7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/FreeAbelianGroup/Finsupp.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Johan Commelin. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johan Commelin
+-/
+import Mathlib.Algebra.BigOperators.Finsupp.Basic
+import Mathlib.Algebra.Module.End
+import Mathlib.GroupTheory.FreeAbelianGroup
+
+/-!
+# Isomorphism between `FreeAbelianGroup X` and `X →₀ ℤ`
+
+In this file we construct the canonical isomorphism between `FreeAbelianGroup X` and `X →₀ ℤ`.
+We use this to transport the notion of `support` from `Finsupp` to `FreeAbelianGroup`.
+
+## Main declarations
+
+- `FreeAbelianGroup.equivFinsupp`: group isomorphism between `FreeAbelianGroup X` and `X →₀ ℤ`
+- `FreeAbelianGroup.coeff`: the multiplicity of `x : X` in `a : FreeAbelianGroup X`
+- `FreeAbelianGroup.support`: the finset of `x : X` that occur in `a : FreeAbelianGroup X`
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.FreeAbelianGroupToFinsupp.Variant5a9856613aec8663c14fc26e58048df914aee05c9afce6a8795febea0b9bf0e7
+
+assert_not_exists Basis
+
+noncomputable section
+
+variable {X : Type*}
+
+/-- The group homomorphism `FreeAbelianGroup X →+ (X →₀ ℤ)`. -/
+def FreeAbelianGroup.toFinsupp : FreeAbelianGroup X →+ X →₀ ℤ :=
+  FreeAbelianGroup.lift fun x => Finsupp.single x (1 : ℤ)
+
+/-- The group homomorphism `(X →₀ ℤ) →+ FreeAbelianGroup X`. -/
+def Finsupp.toFreeAbelianGroup : (X →₀ ℤ) →+ FreeAbelianGroup X :=
+  Finsupp.liftAddHom fun x => (smulAddHom ℤ (FreeAbelianGroup X)).flip (FreeAbelianGroup.of x)
+
+open Finsupp FreeAbelianGroup
+
+@[simp]
+theorem Finsupp.toFreeAbelianGroup_comp_singleAddHom (x : X) :
+    Finsupp.toFreeAbelianGroup.comp (Finsupp.singleAddHom x) =
+      (smulAddHom ℤ (FreeAbelianGroup X)).flip (of x) := by
+  ext
+  simp only [AddMonoidHom.coe_comp, Finsupp.singleAddHom_apply, Function.comp_apply, one_smul,
+    toFreeAbelianGroup, Finsupp.liftAddHom_apply_single]
+
+@[simp]
+theorem FreeAbelianGroup.toFinsupp_comp_toFreeAbelianGroup :
+    toFinsupp.comp toFreeAbelianGroup = AddMonoidHom.id (X →₀ ℤ) := by
+  ext x y; simp only [AddMonoidHom.id_comp]
+  rw [AddMonoidHom.comp_assoc, Finsupp.toFreeAbelianGroup_comp_singleAddHom]
+  simp only [toFinsupp, AddMonoidHom.coe_comp, Finsupp.singleAddHom_apply, Function.comp_apply,
+    one_smul, lift.of, AddMonoidHom.flip_apply, smulAddHom_apply, AddMonoidHom.id_apply]
+
+@[simp]
+theorem Finsupp.toFreeAbelianGroup_comp_toFinsupp :
+    toFreeAbelianGroup.comp toFinsupp = AddMonoidHom.id (FreeAbelianGroup X) := by
+  ext
+  rw [toFreeAbelianGroup, toFinsupp, AddMonoidHom.comp_apply, lift.of,
+    liftAddHom_apply_single, AddMonoidHom.flip_apply, smulAddHom_apply, one_smul,
+    AddMonoidHom.id_apply]
+
+@[simp]
+theorem Finsupp.toFreeAbelianGroup_toFinsupp {X} (x : FreeAbelianGroup X) :
+    Finsupp.toFreeAbelianGroup (FreeAbelianGroup.toFinsupp x) = x := by
+  rw [← AddMonoidHom.comp_apply, Finsupp.toFreeAbelianGroup_comp_toFinsupp, AddMonoidHom.id_apply]
+
+namespace FreeAbelianGroup
+
+open Finsupp
+
+@[simp]
+theorem toFinsupp_of (x : X) : toFinsupp (of x) = Finsupp.single x 1 := by
+  simp only [toFinsupp, lift.of]
+
+@[simp]
+theorem toFinsupp_toFreeAbelianGroup (f : X →₀ ℤ) :
+    FreeAbelianGroup.toFinsupp (Finsupp.toFreeAbelianGroup f) = f := by
+  rw [← AddMonoidHom.comp_apply, toFinsupp_comp_toFreeAbelianGroup, AddMonoidHom.id_apply]
+
+variable (X)
+
+/-- The additive equivalence between `FreeAbelianGroup X` and `(X →₀ ℤ)`. -/
+@[simps!]
+def equivFinsupp : FreeAbelianGroup X ≃+ (X →₀ ℤ) where
+  toFun := toFinsupp
+  invFun := toFreeAbelianGroup
+  left_inv := toFreeAbelianGroup_toFinsupp
+  right_inv := toFinsupp_toFreeAbelianGroup
+  map_add' := toFinsupp.map_add
+
+variable {X}
+
+/-- `coeff x` is the additive group homomorphism `FreeAbelianGroup X →+ ℤ`
+that sends `a` to the multiplicity of `x : X` in `a`. -/
+def coeff (x : X) : FreeAbelianGroup X →+ ℤ :=
+  (Finsupp.applyAddHom x).comp toFinsupp
+
+/-- `support a` for `a : FreeAbelianGroup X` is the finite set of `x : X`
+that occur in the formal sum `a`. -/
+def support (a : FreeAbelianGroup X) : Finset X :=
+  a.toFinsupp.support
+
+theorem mem_support_iff (x : X) (a : FreeAbelianGroup X) : x ∈ a.support ↔ coeff x a ≠ 0 := by
+  rw [support, Finsupp.mem_support_iff]
+  exact Iff.rfl
+
+theorem notMem_support_iff (x : X) (a : FreeAbelianGroup X) : x ∉ a.support ↔ coeff x a = 0 := by
+  rw [support, Finsupp.notMem_support_iff]
+  exact Iff.rfl
+
+@[deprecated (since := "2025-05-23")] alias not_mem_support_iff := notMem_support_iff
+
+@[simp]
+theorem support_zero : support (0 : FreeAbelianGroup X) = ∅ := by
+  simp only [support, Finsupp.support_zero, AddMonoidHom.map_zero]
+
+@[simp]
+theorem support_of (x : X) : support (of x) = {x} := by
+  rw [support, toFinsupp_of, Finsupp.support_single_ne_zero _ one_ne_zero]
+
+@[simp]
+theorem support_neg (a : FreeAbelianGroup X) : support (-a) = support a := by
+  simp only [support, AddMonoidHom.map_neg, Finsupp.support_neg]
+
+@[simp]
+theorem support_zsmul (k : ℤ) (h : k ≠ 0) (a : FreeAbelianGroup X) :
+    support (k • a) = support a := by
+  ext x
+  simp only [mem_support_iff, AddMonoidHom.map_zsmul]
+  simp only [h, zsmul_int_int, false_or, Ne, mul_eq_zero]
+
+@[simp]
+theorem support_nsmul (k : ℕ) (h : k ≠ 0) (a : FreeAbelianGroup X) :
+    support (k • a) = support a := by
+  apply support_zsmul k _ a
+  exact mod_cast h
+
+open scoped Classical in
+theorem support_add (a b : FreeAbelianGroup X) : support (a + b) ⊆ a.support ∪ b.support := by
+  simp only [support, AddMonoidHom.map_add]
+  apply Finsupp.support_add
+
+end FreeAbelianGroup
+```

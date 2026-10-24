@@ -1,0 +1,126 @@
+# commutes
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:2ea1a2c3-31db-e9fc-32f5-17ad05d8b4b8",
+  "kind": "lemma",
+  "lexical_name": "commutes",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "commutes--4eb4900bf23a30e46fa63bca",
+  "source": {
+    "blob": "ebc1d510fa301928dba1741732dcf70d9c8802a4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 379,
+    "line": 335,
+    "path": "GRWTSK/Algebra/Basic/Variant42ec2437eb5eb31306a744bb82ec861d9d6bdad5c868c057d8f45a3db73a84d7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:4eb4900bf23a30e46fa63bca7e8d30f8e9edd45d31d1ca46d6eb8f6da063f9c6",
+  "verification": {
+    "reference": "docs/verification/Algebra/Basic/Variant42ec2437eb5eb31306a744bb82ec861d9d6bdad5c868c057d8f45a3db73a84d7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2ea1a2c3-31db-e9fc-32f5-17ad05d8b4b8`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 335–379.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma commutes (S₁ S₂ T : Type*) [CommSemiring S₁]
+    [CommSemiring S₂] [CommSemiring T] [Algebra R S₁] [Algebra R S₂] [Algebra R T] [Algebra S₁ T]
+    [Algebra S₂ T] [IsScalarTower R S₁ T] [IsScalarTower R S₂ T] (M₁ M₂ : Submonoid R)
+    [IsLocalization M₁ S₁] [IsLocalization M₂ S₂]
+    [IsLocalization (Algebra.algebraMapSubmonoid S₂ M₁) T] :
+    IsLocalization (Algebra.algebraMapSubmonoid S₁ M₂) T where
+  map_units' := by
+    rintro ⟨m, ⟨a, ha, rfl⟩⟩
+    rw [← IsScalarTower.algebraMap_apply, IsScalarTower.algebraMap_apply R S₂ T]
+    exact IsUnit.map _ (IsLocalization.map_units' ⟨a, ha⟩)
+  surj' a := by
+    obtain ⟨⟨y, -, m, hm, rfl⟩, hy⟩ := surj (M := Algebra.algebraMapSubmonoid S₂ M₁) a
+    rw [← IsScalarTower.algebraMap_apply, IsScalarTower.algebraMap_apply R S₁ T] at hy
+    obtain ⟨⟨z, n, hn⟩, hz⟩ := IsLocalization.surj (M := M₂) y
+    have hunit : IsUnit (algebraMap R S₁ m) := map_units' ⟨m, hm⟩
+    use ⟨algebraMap R S₁ z * hunit.unit⁻¹, ⟨algebraMap R S₁ n, n, hn, rfl⟩⟩
+    rw [map_mul, ← IsScalarTower.algebraMap_apply, IsScalarTower.algebraMap_apply R S₂ T]
+    conv_rhs => rw [← IsScalarTower.algebraMap_apply]
+    rw [IsScalarTower.algebraMap_apply R S₂ T, ← hz, map_mul, ← hy]
+    convert_to _ = a * (algebraMap S₂ T) ((algebraMap R S₂) n) *
+        (algebraMap S₁ T) (((algebraMap R S₁) m) * hunit.unit⁻¹.val)
+    · rw [map_mul]
+      ring
+    simp
+  exists_of_eq {x y} hxy := by
+    obtain ⟨r, s, d, hr, hs⟩ := IsLocalization.surj₂ M₁ S₁ x y
+    apply_fun (· * algebraMap S₁ T (algebraMap R S₁ d)) at hxy
+    simp_rw [← map_mul, hr, hs, ← IsScalarTower.algebraMap_apply,
+      IsScalarTower.algebraMap_apply R S₂ T] at hxy
+    obtain ⟨⟨-, c, hmc, rfl⟩, hc⟩ := exists_of_eq (M := Algebra.algebraMapSubmonoid S₂ M₁) hxy
+    simp_rw [← map_mul] at hc
+    obtain ⟨a, ha⟩ := IsLocalization.exists_of_eq (M := M₂) hc
+    use ⟨algebraMap R S₁ a, a, a.property, rfl⟩
+    apply (map_units S₁ d).mul_right_cancel
+    rw [mul_assoc, hr, mul_assoc, hs]
+    apply (map_units S₁ ⟨c, hmc⟩).mul_right_cancel
+    rw [← map_mul, ← map_mul, mul_assoc, mul_comm _ c, ha, map_mul, map_mul]
+    ring
+
+end IsLocalization
+
+namespace Localization
+
+open IsLocalization
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Basic/Variant42ec2437eb5eb31306a744bb82ec861d9d6bdad5c868c057d8f45a3db73a84d7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Basic/Variant42ec2437eb5eb31306a744bb82ec861d9d6bdad5c868c057d8f45a3db73a84d7.lean#L335).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ebc1d510fa301928dba1741732dcf70d9c8802a4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

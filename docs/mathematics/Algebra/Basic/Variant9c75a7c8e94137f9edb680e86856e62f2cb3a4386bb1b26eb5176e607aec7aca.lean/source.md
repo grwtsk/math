@@ -1,0 +1,172 @@
+# Complete source: GRWTSK.Algebra.Basic.Variant9c75a7c8e94137f9edb680e86856e62f2cb3a4386bb1b26eb5176e607aec7aca
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4a91a6baca9a7f54db0a38a5ef4d438baf70e259` · SHA-256 `8bf509f6a8e9a99b2dc6d98c462ebf95560a81210ac46c9a74937acfcc7719fe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.InstAddMonoidWithOne.Variant8a106aa2dbe15a499fe579cdbc46d8f63eb06ad0689266902bc8d6a1bde7d01e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8a106aa2dbe15a499fe579cdbc46d8f63eb06ad0689266902bc8d6a1bde7d01e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.InstAddMonoidWithOne.Variant8a106aa2dbe15a499fe579cdbc46d8f63eb06ad0689266902bc8d6a1bde7d01e","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"8a106aa2dbe15a499fe579cdbc46d8f63eb06ad0689266902bc8d6a1bde7d01e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Group/Fin/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Yakov Pechersky. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yakov Pechersky
+-/
+module
+
+public import Mathlib.Algebra.Group.Basic
+public import Mathlib.Algebra.NeZero
+public import Mathlib.Data.Nat.Cast.Defs
+public import Mathlib.Data.Fin.Rev
+
+/-!
+# Fin is a group
+
+This file contains the additive and multiplicative monoid instances on `Fin n`.
+
+See note [foundational algebra order theory].
+-/
+
+
+namespace GRWTSK.Algebra.InstAddMonoidWithOne.Variant8a106aa2dbe15a499fe579cdbc46d8f63eb06ad0689266902bc8d6a1bde7d01e
+
+@[expose] public section
+
+assert_not_exists IsOrderedMonoid MonoidWithZero
+
+open Nat
+
+namespace Fin
+variable {n : ℕ}
+
+/-! ### Instances -/
+
+instance addCommSemigroup (n : ℕ) : AddCommSemigroup (Fin n) where
+  add_assoc := by simp [add_def, Nat.add_assoc]
+  add_comm := by simp [add_def, Nat.add_comm]
+
+instance addCommMonoid (n : ℕ) [NeZero n] : AddCommMonoid (Fin n) where
+  zero_add := Fin.zero_add
+  add_zero := Fin.add_zero
+  nsmul := nsmulRec
+  __ := Fin.addCommSemigroup n
+
+/--
+This is not a global instance, but can introduced locally using `open Fin.NatCast in ...`.
+
+This is not an instance because the `binop%` elaborator assumes that
+there are no non-trivial coercion loops,
+but this instance would introduce a coercion from `Nat` to `Fin n` and back.
+Non-trivial loops lead to undesirable and counterintuitive elaboration behavior.
+
+For example, for `x : Fin k` and `n : Nat`,
+it causes `x < n` to be elaborated as `x < ↑n` rather than `↑x < n`,
+silently introducing wraparound arithmetic.
+-/
+@[instance_reducible]
+def instAddMonoidWithOne (n) [NeZero n] : AddMonoidWithOne (Fin n) where
+  __ := (inferInstance : AddCommMonoid (Fin n))
+  natCast i := Fin.ofNat n i
+  natCast_zero := rfl
+  natCast_succ _ := Fin.ext (add_mod _ _ _)
+
+namespace NatCast
+
+attribute [scoped instance] Fin.instAddMonoidWithOne
+
+end NatCast
+
+instance addCommGroup (n : ℕ) [NeZero n] : AddCommGroup (Fin n) where
+  __ := addCommMonoid n
+  __ := neg n
+  neg_add_cancel := fun ⟨a, ha⟩ ↦
+    Fin.ext <| (Nat.mod_add_mod _ _ _).trans <| by
+      rw [Fin.val_zero, Nat.sub_add_cancel, Nat.mod_self]
+      exact Nat.le_of_lt ha
+  sub := Fin.sub
+  sub_eq_add_neg := fun ⟨a, ha⟩ ⟨b, hb⟩ ↦
+    Fin.ext <| by simp [Fin.sub_def, Fin.neg_def, Fin.add_def, Nat.add_comm]
+  zsmul := zsmulRec
+
+/-- Note this is more general than `Fin.addCommGroup` as it applies (vacuously) to `Fin 0` too. -/
+instance instInvolutiveNeg (n : ℕ) : InvolutiveNeg (Fin n) where
+  neg_neg := Nat.casesOn n finZeroElim fun _i ↦ neg_neg
+
+/-- Note this is more general than `Fin.addCommGroup` as it applies (vacuously) to `Fin 0` too. -/
+instance instIsCancelAdd (n : ℕ) : IsCancelAdd (Fin n) where
+  add_left_cancel := Nat.casesOn n finZeroElim fun _i _ _ _ ↦ add_left_cancel
+  add_right_cancel := Nat.casesOn n finZeroElim fun _i _ _ _ ↦ add_right_cancel
+
+/-- Note this is more general than `Fin.addCommGroup` as it applies (vacuously) to `Fin 0` too. -/
+instance instAddLeftCancelSemigroup (n : ℕ) : AddLeftCancelSemigroup (Fin n) :=
+  { Fin.addCommSemigroup n, Fin.instIsCancelAdd n with }
+
+/-- Note this is more general than `Fin.addCommGroup` as it applies (vacuously) to `Fin 0` too. -/
+instance instAddRightCancelSemigroup (n : ℕ) : AddRightCancelSemigroup (Fin n) :=
+  { Fin.addCommSemigroup n, Fin.instIsCancelAdd n with }
+
+/-! ### Miscellaneous lemmas -/
+
+open scoped Fin.NatCast Fin.IntCast in
+/-- Variant of `Fin.intCast_def` with `Nat.cast` on the RHS. -/
+theorem intCast_def' {n : Nat} [NeZero n] (x : Int) :
+    (x : Fin n) = if 0 ≤ x then ↑x.natAbs else -↑x.natAbs :=
+  Fin.intCast_def _
+
+lemma coe_sub_one (a : Fin (n + 1)) : ↑(a - 1) = if a = 0 then n else a - 1 := by
+  cases n
+  · simp
+  split_ifs with h
+  · simp [h]
+  exact val_sub_one_of_ne_zero h
+
+@[simp]
+lemma lt_sub_iff {n : ℕ} {a b : Fin n} : a < a - b ↔ a < b := by
+  fin_omega
+
+@[simp]
+lemma sub_le_iff {n : ℕ} {a b : Fin n} : a - b ≤ a ↔ b ≤ a := by
+  rw [← not_iff_not, Fin.not_le, Fin.not_le, lt_sub_iff]
+
+@[simp]
+lemma lt_one_iff {n : ℕ} (x : Fin (n + 2)) : x < 1 ↔ x = 0 := by
+  simp [lt_def]
+
+lemma lt_sub_one_iff {k : Fin (n + 2)} : k < k - 1 ↔ k = 0 := by
+  simp
+
+@[simp] lemma le_sub_one_iff {k : Fin (n + 1)} : k ≤ k - 1 ↔ k = 0 := by
+  cases n
+  · simp [fin_one_eq_zero k]
+  rw [le_def, Nat.le_iff_lt_or_eq, val_fin_lt, lt_sub_iff, val_inj, eq_comm, sub_eq_self]
+  simp
+
+lemma sub_one_lt_iff {k : Fin (n + 1)} : k - 1 < k ↔ 0 < k :=
+  not_iff_not.1 <| by simp only [lt_def, Nat.not_lt, val_fin_le, le_sub_one_iff, le_zero_iff]
+
+@[simp] lemma neg_last (n : ℕ) : -Fin.last n = 1 := by simp [neg_eq_iff_add_eq_zero]
+
+open Fin.NatCast in
+lemma neg_natCast_eq_one (n : ℕ) : -(n : Fin (n + 1)) = 1 := by
+  simp only [natCast_eq_last, neg_last]
+
+lemma rev_add (a b : Fin n) : rev (a + b) = rev a - b := by
+  cases n
+  · exact a.elim0
+  rw [← last_sub, ← last_sub, sub_add_eq_sub_sub]
+
+lemma rev_sub (a b : Fin n) : rev (a - b) = rev a + b := by
+  rw [rev_eq_iff, rev_add, rev_rev]
+
+lemma lt_add_one_of_succ_lt {n : ℕ} [NeZero n] {a : Fin n} (ha : a + 1 < n) : a < a + 1 := by
+  rw [lt_def, val_add, coe_ofNat_eq_mod, Nat.add_mod_mod, Nat.mod_eq_of_lt ha]
+  lia
+
+lemma add_lt_left_iff {n : ℕ} {a b : Fin n} : a + b < a ↔ rev b < a := by
+  rw [← rev_lt_rev, Iff.comm, ← rev_lt_rev, rev_add, lt_sub_iff, rev_rev]
+
+end Fin
+```

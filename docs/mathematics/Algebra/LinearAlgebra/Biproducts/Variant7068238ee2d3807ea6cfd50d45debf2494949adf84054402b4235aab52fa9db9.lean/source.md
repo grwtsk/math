@@ -1,0 +1,225 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Biproducts.Variant7068238ee2d3807ea6cfd50d45debf2494949adf84054402b4235aab52fa9db9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8c114a23ecb5ed7db409c8a0aff5ab95e7eff5ad` · SHA-256 `f62dfab031db2af29c59481f9896e49d05d83e134ff7d16cbacce0636139a8eb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.BinaryProductLimitCone.Variant9b6263d9cc552a959c0c60389aa6963df109962563e82815246e63efc2ada585","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9b6263d9cc552a959c0c60389aa6963df109962563e82815246e63efc2ada585","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.BinaryProductLimitCone.Variant9b6263d9cc552a959c0c60389aa6963df109962563e82815246e63efc2ada585","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"9b6263d9cc552a959c0c60389aa6963df109962563e82815246e63efc2ada585","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Category/ModuleCat/Biproducts.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Kim Morrison. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kim Morrison
+-/
+module
+
+public import Mathlib.Algebra.Group.Pi.Lemmas
+public import Mathlib.CategoryTheory.Limits.Shapes.BinaryBiproducts
+public import Mathlib.Algebra.Category.ModuleCat.Abelian
+public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
+
+/-!
+# The category of `R`-modules has finite biproducts
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.BinaryProductLimitCone.Variant9b6263d9cc552a959c0c60389aa6963df109962563e82815246e63efc2ada585
+
+@[expose] public section
+
+open CategoryTheory Limits
+
+universe w v u
+
+namespace ModuleCat
+
+variable {R : Type u} [Ring R]
+
+-- As `ModuleCat R` is preadditive, and has all limits, it automatically has biproducts.
+instance : HasBinaryBiproducts (ModuleCat.{v} R) :=
+  HasBinaryBiproducts.of_hasBinaryProducts
+
+instance : HasFiniteBiproducts (ModuleCat.{v} R) :=
+  HasFiniteBiproducts.of_hasFiniteProducts
+
+-- We now construct explicit limit data,
+-- so we can compare the biproducts to the usual unbundled constructions.
+/-- Construct limit data for a binary product in `ModuleCat R`, using `ModuleCat.of R (M × N)`.
+-/
+@[simps cone_pt isLimit_lift]
+def binaryProductLimitCone (M N : ModuleCat.{v} R) : Limits.LimitCone (pair M N) where
+  cone :=
+    { pt := ↧(M × N)
+      π :=
+        { app := fun j =>
+            Discrete.casesOn j fun j =>
+              WalkingPair.casesOn j (ofHom <| LinearMap.fst R M N) (ofHom <| LinearMap.snd R M N)
+          naturality := by rintro ⟨⟨⟩⟩ ⟨⟨⟩⟩ ⟨⟨⟨⟩⟩⟩ <;> rfl } }
+  isLimit :=
+    { lift := fun s => ofHom <| LinearMap.prod
+        (s.π.app ⟨WalkingPair.left⟩).hom
+        (s.π.app ⟨WalkingPair.right⟩).hom
+      fac := by rintro s (⟨⟩ | ⟨⟩) <;> rfl
+      uniq := fun s m w => by
+        simp_rw [← w ⟨WalkingPair.left⟩, ← w ⟨WalkingPair.right⟩]
+        rfl }
+
+@[simp]
+theorem binaryProductLimitCone_cone_π_app_left (M N : ModuleCat.{v} R) :
+    (binaryProductLimitCone M N).cone.π.app ⟨WalkingPair.left⟩ = ofHom (LinearMap.fst R M N) :=
+  rfl
+
+@[simp]
+theorem binaryProductLimitCone_cone_π_app_right (M N : ModuleCat.{v} R) :
+    (binaryProductLimitCone M N).cone.π.app ⟨WalkingPair.right⟩ = ofHom (LinearMap.snd R M N) :=
+  rfl
+
+/-- We verify that the biproduct in `ModuleCat R` is isomorphic to
+the Cartesian product of the underlying types:
+-/
+noncomputable def biprodIsoProd (M N : ModuleCat.{v} R) :
+    (M ⊞ N : ModuleCat.{v} R) ≅ ↧(M × N) :=
+  IsLimit.conePointUniqueUpToIso (BinaryBiproduct.isLimit M N) (binaryProductLimitCone M N).isLimit
+
+@[simp, elementwise]
+theorem biprodIsoProd_inv_comp_fst (M N : ModuleCat.{v} R) :
+    (biprodIsoProd M N).inv ≫ biprod.fst = ofHom (LinearMap.fst R M N) :=
+  IsLimit.conePointUniqueUpToIso_inv_comp _ _ (Discrete.mk WalkingPair.left)
+
+@[simp, elementwise]
+theorem biprodIsoProd_inv_comp_snd (M N : ModuleCat.{v} R) :
+    (biprodIsoProd M N).inv ≫ biprod.snd = ofHom (LinearMap.snd R M N) :=
+  IsLimit.conePointUniqueUpToIso_inv_comp _ _ (Discrete.mk WalkingPair.right)
+
+namespace HasLimit
+
+variable {J : Type w} (f : J → ModuleCat.{max w v} R)
+
+set_option backward.defeqAttrib.useBackward true in
+/-- The map from an arbitrary cone over an indexed family of abelian groups
+to the Cartesian product of those groups.
+-/
+@[simps!]
+def lift (s : Fan f) : s.pt ⟶ ↧(∀ j, f j) :=
+  ofHom
+  { toFun := fun x j => s.π.app ⟨j⟩ x
+    map_add' := fun x y => by
+      simp only [Functor.const_obj_obj, map_add]
+      rfl
+    map_smul' := fun r x => by
+      simp only [Functor.const_obj_obj, map_smul]
+      rfl }
+
+/-- Construct limit data for a product in `ModuleCat R`, using `ModuleCat.of R (∀ j, F.obj j)`.
+-/
+@[simps]
+def productLimitCone : Limits.LimitCone (Discrete.functor f) where
+  cone :=
+    { pt := ↧(∀ j, f j)
+      π := Discrete.natTrans fun j => ofHom (LinearMap.proj j.as : (∀ j, f j) →ₗ[R] f j.as) }
+  isLimit :=
+    { lift := lift.{_, v} f
+      fac := fun _ _ => rfl
+      uniq := fun s m w => by
+        ext x j
+        exact congr_arg (fun g : s.pt ⟶ f j => (g : s.pt → f j) x) (w ⟨j⟩) }
+
+end HasLimit
+
+open HasLimit
+
+variable {J : Type} (f : J → ModuleCat.{v} R)
+
+/-- We verify that the biproduct we've just defined is isomorphic to the `ModuleCat R` structure
+on the dependent function type.
+-/
+noncomputable def biproductIsoPi [Finite J] (f : J → ModuleCat.{v} R) :
+    ((⨁ f) : ModuleCat.{v} R) ≅ ↧(∀ j, f j) :=
+  IsLimit.conePointUniqueUpToIso (biproduct.isLimit f) (productLimitCone f).isLimit
+
+@[simp, elementwise]
+theorem biproductIsoPi_inv_comp_π [Finite J] (f : J → ModuleCat.{v} R) (j : J) :
+    (biproductIsoPi f).inv ≫ biproduct.π f j = ofHom (LinearMap.proj j : (∀ j, f j) →ₗ[R] f j) :=
+  IsLimit.conePointUniqueUpToIso_inv_comp _ _ (Discrete.mk j)
+
+end ModuleCat
+
+section SplitExact
+open ModuleCat
+section universe_monomorphic
+
+variable {R : Type u} {A M B : Type v} [Ring R] [AddCommGroup A] [Module R A] [AddCommGroup B]
+  [Module R B] [AddCommGroup M] [Module R M]
+
+variable {j : A →ₗ[R] M} {g : M →ₗ[R] B}
+
+
+set_option backward.privateInPublic true in
+private noncomputable def lequivProdOfRightSplitExact' {f : B →ₗ[R] M} (hj : Function.Injective j)
+    (exac : LinearMap.range j = LinearMap.ker g) (h : g.comp f = LinearMap.id) : (A × B) ≃ₗ[R] M :=
+  ((ShortComplex.Splitting.ofExactOfSection _
+    (ShortComplex.Exact.moduleCat_of_range_eq_ker (ModuleCat.ofHom j)
+    (ModuleCat.ofHom g) exac) (ofHom f) (hom_ext h)
+    (by simpa only [ModuleCat.mono_iff_injective])).isoBinaryBiproduct ≪≫
+    biprodIsoProd _ _).symm.toLinearEquiv
+
+set_option backward.privateInPublic true in
+private noncomputable def lequivProdOfLeftSplitExact' {f : M →ₗ[R] A} (hg : Function.Surjective g)
+    (exac : LinearMap.range j = LinearMap.ker g) (h : f.comp j = LinearMap.id) : (A × B) ≃ₗ[R] M :=
+  ((ShortComplex.Splitting.ofExactOfRetraction _
+    (ShortComplex.Exact.moduleCat_of_range_eq_ker (ModuleCat.ofHom j)
+    (ModuleCat.ofHom g) exac) (ModuleCat.ofHom f) (hom_ext h)
+    (by simpa only [ModuleCat.epi_iff_surjective] using! hg)).isoBinaryBiproduct ≪≫
+    biprodIsoProd _ _).symm.toLinearEquiv
+
+end universe_monomorphic
+
+section universe_polymorphic
+
+universe uA uM uB
+variable {R : Type u} {A : Type uA} {M : Type uM} {B : Type uB}
+variable [Ring R] [AddCommGroup A] [AddCommGroup B] [AddCommGroup M]
+variable [Module R A] [Module R B] [Module R M]
+
+variable {j : A →ₗ[R] M} {g : M →ₗ[R] B}
+
+set_option backward.privateInPublic true in
+set_option backward.privateInPublic.warn false in
+/-- The isomorphism `A × B ≃ₗ[R] M` coming from a right split exact sequence `0 ⟶ A ⟶ M ⟶ B ⟶ 0`
+of modules. -/
+noncomputable def lequivProdOfRightSplitExact {f : B →ₗ[R] M} (hj : Function.Injective j)
+    (exac : LinearMap.range j = LinearMap.ker g) (h : g.comp f = LinearMap.id) : (A × B) ≃ₗ[R] M :=
+  have := lequivProdOfRightSplitExact'
+    (A := ULift.{max uA uM uB} A) (M := ULift.{max uA uM uB} M) (B := ULift.{max uA uM uB} B)
+    (f := ULift.moduleEquiv.symm.toLinearMap ∘ₗ f ∘ₗ ULift.moduleEquiv.toLinearMap)
+    (j := ULift.moduleEquiv.symm.toLinearMap ∘ₗ j ∘ₗ ULift.moduleEquiv.toLinearMap)
+    (g := ULift.moduleEquiv.symm.toLinearMap ∘ₗ g ∘ₗ ULift.moduleEquiv.toLinearMap)
+    (by simpa using hj)
+    (by simp [LinearMap.range_comp, LinearMap.ker_comp, exac, Submodule.comap_equiv_eq_map_symm])
+    (by ext x; simpa using congr($h x.down))
+  ULift.moduleEquiv.symm.prodCongr ULift.moduleEquiv.symm ≪≫ₗ this ≪≫ₗ ULift.moduleEquiv
+
+set_option backward.privateInPublic true in
+set_option backward.privateInPublic.warn false in
+/-- The isomorphism `A × B ≃ₗ[R] M` coming from a left split exact sequence `0 ⟶ A ⟶ M ⟶ B ⟶ 0`
+of modules. -/
+noncomputable def lequivProdOfLeftSplitExact {f : M →ₗ[R] A} (hg : Function.Surjective g)
+    (exac : LinearMap.range j = LinearMap.ker g) (h : f.comp j = LinearMap.id) : (A × B) ≃ₗ[R] M :=
+  have := lequivProdOfLeftSplitExact'
+    (A := ULift.{max uA uM uB} A) (M := ULift.{max uA uM uB} M) (B := ULift.{max uA uM uB} B)
+    (f := ULift.moduleEquiv.symm.toLinearMap ∘ₗ f ∘ₗ ULift.moduleEquiv.toLinearMap)
+    (j := ULift.moduleEquiv.symm.toLinearMap ∘ₗ j ∘ₗ ULift.moduleEquiv.toLinearMap)
+    (g := ULift.moduleEquiv.symm.toLinearMap ∘ₗ g ∘ₗ ULift.moduleEquiv.toLinearMap)
+    (by simpa using hg)
+    (by simp [LinearMap.range_comp, LinearMap.ker_comp, exac, Submodule.comap_equiv_eq_map_symm])
+    (by ext x; simpa using congr($h x.down))
+  ULift.moduleEquiv.symm.prodCongr ULift.moduleEquiv.symm ≪≫ₗ this ≪≫ₗ ULift.moduleEquiv
+
+end universe_polymorphic
+
+end SplitExact
+```

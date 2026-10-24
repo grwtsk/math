@@ -1,0 +1,103 @@
+# IsIntegrallyClosed.of_localization_submonoid
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "5b4b95bf96ee7bcf22fada3f29624483a4e2ecf3",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 44,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/f9/f93f2c30b5b3b442c47c56b4ad33bcc4cc1fa870ea8c23c7401e6e23ede31b52.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:439d5827-c7e6-9c84-4939-2e474d079c2f",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:b20bb25e-34c1-1a16-d59a-8c17bce5ff6b",
+  "kind": "theorem",
+  "lexical_name": "IsIntegrallyClosed.of_localization_submonoid",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isintegrallyclosed-of-localization-submonoid--f16ea5e5e8ae3671a62a7870",
+  "source": {
+    "blob": "5b4b95bf96ee7bcf22fada3f29624483a4e2ecf3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 53,
+    "line": 44,
+    "path": "GRWTSK/Algebra/IntegrallyClosed/Variantf93f2c30b5b3b442c47c56b4ad33bcc4cc1fa870ea8c23c7401e6e23ede31b52.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f16ea5e5e8ae3671a62a787005c03c8efb97f10a64fb1ce3d9daa4180dc1b467",
+  "verification": {
+    "reference": "docs/verification/Algebra/IntegrallyClosed/Variantf93f2c30b5b3b442c47c56b4ad33bcc4cc1fa870ea8c23c7401e6e23ede31b52.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b20bb25e-34c1-1a16-d59a-8c17bce5ff6b`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 44–53.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem IsIntegrallyClosed.of_localization_submonoid [IsDomain R] {ι : Type*} (S : ι → Submonoid R)
+    (h : ∀ i : ι, S i ≤ R⁰) (hi : ∀ i : ι, IsIntegrallyClosed (Localization (S i)))
+    (hs : ⨅ i : ι, Localization.subalgebra (FractionRing R) (S i) (h i) = ⊥) :
+    IsIntegrallyClosed R :=
+  IsIntegrallyClosed.of_iInf_eq_bot (fun i ↦ Localization.subalgebra (FractionRing R) (S i) (h i))
+    (fun i ↦ (hi i).of_equiv (IsLocalization.algEquiv (S i) (Localization (S i)) _).toRingEquiv) hs
+
+/-- An integral domain $R$ is integrally closed if there exists a set of prime ideals $S$ such that
+  $\bigcap_{\mathfrak{p} \in S} R_{\mathfrak{p}} = R$ and for every $\mathfrak{p} \in S$,
+  $R_{\mathfrak{p}}$ is integrally closed. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/IntegrallyClosed/Variantf93f2c30b5b3b442c47c56b4ad33bcc4cc1fa870ea8c23c7401e6e23ede31b52.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/IntegrallyClosed/Variantf93f2c30b5b3b442c47c56b4ad33bcc4cc1fa870ea8c23c7401e6e23ede31b52.lean#L44).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5b4b95bf96ee7bcf22fada3f29624483a4e2ecf3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

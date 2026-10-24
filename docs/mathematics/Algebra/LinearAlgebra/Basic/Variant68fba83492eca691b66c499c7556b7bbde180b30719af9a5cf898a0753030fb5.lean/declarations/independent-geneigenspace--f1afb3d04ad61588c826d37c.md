@@ -1,0 +1,121 @@
+# independent_genEigenspace
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:52b5fc33-54c7-03eb-a6d0-c7e89acae78f",
+  "kind": "theorem",
+  "lexical_name": "independent_genEigenspace",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "independent-geneigenspace--f1afb3d04ad61588c826d37c",
+  "source": {
+    "blob": "618cc0f141aa2442be86674c4b73902ead7ebd0a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 740,
+    "line": 701,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Basic/Variant68fba83492eca691b66c499c7556b7bbde180b30719af9a5cf898a0753030fb5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f1afb3d04ad61588c826d37c18cb9bdc4553462f78b778acf9f17c85c3697fb9",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Basic/Variant68fba83492eca691b66c499c7556b7bbde180b30719af9a5cf898a0753030fb5.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:52b5fc33-54c7-03eb-a6d0-c7e89acae78f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 701–740.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem independent_genEigenspace [IsDomain R] [IsTorsionFree R M] (f : End R M) (k : ℕ∞) :
+    iSupIndep (f.genEigenspace · k) := by
+  classical
+  suffices ∀ μ₁ (s : Finset R), μ₁ ∉ s → Disjoint (f.genEigenspace μ₁ k)
+    (s.sup fun μ ↦ f.genEigenspace μ k) by
+    simp_rw [iSupIndep_iff_supIndep,
+      Finset.supIndep_iff_disjoint_erase]
+    exact fun s μ _ ↦ this _ _ (s.notMem_erase μ)
+  intro μ₁ s
+  induction s using Finset.induction_on with
+  | empty => simp
+  | insert μ₂ s _ ih =>
+  intro hμ₁₂
+  obtain ⟨hμ₁₂ : μ₁ ≠ μ₂, hμ₁ : μ₁ ∉ s⟩ := by rwa [Finset.mem_insert, not_or] at hμ₁₂
+  specialize ih hμ₁
+  rw [Finset.sup_insert, disjoint_iff, Submodule.eq_bot_iff]
+  rintro x ⟨hx, hx'⟩
+  simp only [SetLike.mem_coe] at hx hx'
+  suffices x ∈ genEigenspace f μ₂ k by
+    rw [← Submodule.mem_bot (R := R), ← (f.disjoint_genEigenspace hμ₁₂ k k).eq_bot]
+    exact ⟨hx, this⟩
+  obtain ⟨y, hy, z, hz, rfl⟩ := Submodule.mem_sup.mp hx'; clear hx'
+  let g := f - μ₂ • 1
+  simp_rw [mem_genEigenspace, ← exists_prop] at hy ⊢
+  gconvert hy with l hlk hl
+  simp only [LinearMap.mem_ker] at hl
+  have hyz : (g ^ l) (y + z) ∈
+      (f.genEigenspace μ₁ k) ⊓ s.sup fun μ ↦ f.genEigenspace μ k := by
+    refine ⟨f.mapsTo_genEigenspace_of_comm (g := g ^ l) ?_ μ₁ k hx, ?_⟩
+    · exact Algebra.mul_sub_algebraMap_pow_commutes f μ₂ l
+    · rw [SetLike.mem_coe, map_add, hl, zero_add]
+      suffices (s.sup fun μ ↦ f.genEigenspace μ k).map (g ^ l) ≤
+          s.sup fun μ ↦ f.genEigenspace μ k by exact this (Submodule.mem_map_of_mem hz)
+      simp_rw [Finset.sup_eq_iSup, Submodule.map_iSup (ι := R), Submodule.map_iSup (ι := _ ∈ s)]
+      refine iSup₂_mono fun μ _ ↦ ?_
+      rintro - ⟨u, hu, rfl⟩
+      refine f.mapsTo_genEigenspace_of_comm ?_ μ k hu
+      exact Algebra.mul_sub_algebraMap_pow_commutes f μ₂ l
+  rwa [ih.eq_bot, Submodule.mem_bot] at hyz
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Basic/Variant68fba83492eca691b66c499c7556b7bbde180b30719af9a5cf898a0753030fb5.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Basic/Variant68fba83492eca691b66c499c7556b7bbde180b30719af9a5cf898a0753030fb5.lean#L701).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `618cc0f141aa2442be86674c4b73902ead7ebd0a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

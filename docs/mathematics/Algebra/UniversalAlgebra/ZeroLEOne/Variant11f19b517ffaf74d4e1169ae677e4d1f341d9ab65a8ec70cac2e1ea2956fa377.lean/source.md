@@ -1,0 +1,81 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.ZeroLEOne.Variant11f19b517ffaf74d4e1169ae677e4d1f341d9ab65a8ec70cac2e1ea2956fa377
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d2a156a0295e36335fee74059ff7ffdf41e594ed` · SHA-256 `c794231e1d6409f377be8c0835c4ad12fdb98f2c3d332bb4532639ca3961b411`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.UniversalAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.UniversalAlgebra.ZeroLEOneClass.Variant15653df2fdf13d454ac2448fec47c319379b61b60624493962631de8f0c7fa3f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"15653df2fdf13d454ac2448fec47c319379b61b60624493962631de8f0c7fa3f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.GeneralAlgebra.SourceCorpus.ZeroLEOneClass.Variant15653df2fdf13d454ac2448fec47c319379b61b60624493962631de8f0c7fa3f","mathematical_subject":"Algebra.GeneralAlgebra","original_sha256":"15653df2fdf13d454ac2448fec47c319379b61b60624493962631de8f0c7fa3f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Order/ZeroLEOne.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2016 Jeremy Avigad. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jeremy Avigad, Leonardo de Moura, Mario Carneiro, Johannes Hölzl
+-/
+module
+
+public import Mathlib.Algebra.Notation.Pi.Defs
+public import Mathlib.Algebra.Notation.Prod
+public import Mathlib.Order.Basic
+
+/-!
+# Typeclass expressing `0 ≤ 1`.
+-/
+
+
+namespace GRWTSK.Algebra.UniversalAlgebra.ZeroLEOneClass.Variant15653df2fdf13d454ac2448fec47c319379b61b60624493962631de8f0c7fa3f
+
+public section
+
+variable {α : Type*}
+
+/-- Typeclass for expressing that the `0` of a type is less or equal to its `1`. -/
+class ZeroLEOneClass (α : Type*) [Zero α] [One α] [LE α] : Prop where
+  /-- Zero is less than or equal to one. -/
+  zero_le_one : (0 : α) ≤ 1
+
+/-- `zero_le_one` with the type argument implicit. -/
+@[simp] lemma zero_le_one [Zero α] [One α] [LE α] [ZeroLEOneClass α] : (0 : α) ≤ 1 :=
+  ZeroLEOneClass.zero_le_one
+
+instance ZeroLEOneClass.factZeroLeOne [Zero α] [One α] [LE α] [ZeroLEOneClass α] :
+    Fact ((0 : α) ≤ 1) where
+  out := zero_le_one
+
+/-- `zero_le_one` with the type argument explicit. -/
+lemma zero_le_one' (α) [Zero α] [One α] [LE α] [ZeroLEOneClass α] : (0 : α) ≤ 1 :=
+  zero_le_one
+
+instance Prod.instZeroLEOneClass {R S : Type*} [Zero R] [One R] [LE R] [ZeroLEOneClass R]
+    [Zero S] [One S] [LE S] [ZeroLEOneClass S] : ZeroLEOneClass (R × S) :=
+  ⟨⟨zero_le_one, zero_le_one⟩⟩
+
+instance Pi.instZeroLEOneClass {ι : Type*} {R : ι → Type*} [∀ i, Zero (R i)] [∀ i, One (R i)]
+    [∀ i, LE (R i)] [∀ i, ZeroLEOneClass (R i)] : ZeroLEOneClass (∀ i, R i) :=
+  ⟨fun _ ↦ zero_le_one⟩
+
+section
+variable [Zero α] [One α] [PartialOrder α] [ZeroLEOneClass α] [NeZero (1 : α)]
+
+/-- See `zero_lt_one'` for a version with the type explicit. -/
+@[simp] lemma zero_lt_one : (0 : α) < 1 := zero_le_one.lt_of_ne (NeZero.ne' 1)
+
+instance ZeroLEOneClass.factZeroLtOne : Fact ((0 : α) < 1) where
+  out := zero_lt_one
+
+variable (α)
+
+/-- See `zero_lt_one` for a version with the type implicit. -/
+lemma zero_lt_one' : (0 : α) < 1 := zero_lt_one
+
+end
+
+alias one_pos := zero_lt_one
+
+instance Nat.instZeroLEOneClass : ZeroLEOneClass Nat := ⟨Nat.le_of_lt Nat.zero_lt_one⟩
+instance Int.instZeroLEOneClass : ZeroLEOneClass Int := ⟨Int.le_of_lt Int.zero_lt_one⟩
+instance Rat.instZeroLEOneClass : ZeroLEOneClass Rat := ⟨by decide⟩
+```

@@ -1,0 +1,97 @@
+# Complete source: GRWTSK.Algebra.Defs.Variantb6fd85920f4218525af9fe52ad178fc3f3ae0ff22c074a4e72cb8a7485fe4f89
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4e3ff32a6e472464e717ec783f35379d6223d6f8` · SHA-256 `49ffdbf4f98bb48048e89db0daf258c4dbb2e5b78c54289e4b71760d5fc36aa2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.CastMul.Variantb98c80c529afee66ea538ee4064b73961b119e449c654e9701d52cd30a73be5b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b98c80c529afee66ea538ee4064b73961b119e449c654e9701d52cd30a73be5b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.CastMul.Variantb98c80c529afee66ea538ee4064b73961b119e449c654e9701d52cd30a73be5b","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"b98c80c529afee66ea538ee4064b73961b119e449c654e9701d52cd30a73be5b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Ring/Int/Defs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2016 Jeremy Avigad. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jeremy Avigad
+-/
+import Mathlib.Algebra.CharZero.Defs
+import Mathlib.Algebra.Ring.Defs
+import Mathlib.Algebra.Group.Int.Defs
+import Mathlib.Data.Int.Cast.Basic
+
+/-!
+# The integers are a ring
+
+This file contains the commutative ring instance on `ℤ`.
+
+See note [foundational algebra order theory].
+-/
+
+
+namespace GRWTSK.Algebra.CastMul.Variantb98c80c529afee66ea538ee4064b73961b119e449c654e9701d52cd30a73be5b
+
+assert_not_exists DenselyOrdered Set.Subsingleton
+
+namespace Int
+
+instance instCommRing : CommRing ℤ where
+  __ := instAddCommGroup
+  __ := instCommSemigroup
+  zero_mul := Int.zero_mul
+  mul_zero := Int.mul_zero
+  left_distrib := Int.mul_add
+  right_distrib := Int.add_mul
+  mul_one := Int.mul_one
+  one_mul := Int.one_mul
+  npow n x := x ^ n
+  npow_zero _ := rfl
+  npow_succ _ _ := rfl
+  natCast := (·)
+  natCast_zero := rfl
+  natCast_succ _ := rfl
+  intCast := (·)
+  intCast_ofNat _ := rfl
+  intCast_negSucc _ := rfl
+
+instance instCancelCommMonoidWithZero : CancelCommMonoidWithZero ℤ where
+  mul_left_cancel_of_ne_zero {_a _b _c} ha := (mul_eq_mul_left_iff ha).1
+
+instance instCharZero : CharZero ℤ where cast_injective _ _ := ofNat.inj
+
+instance instMulDivCancelClass : MulDivCancelClass ℤ where mul_div_cancel _ _ := mul_ediv_cancel _
+
+@[simp, norm_cast]
+lemma cast_mul {α : Type*} [NonAssocRing α] : ∀ m n, ((m * n : ℤ) : α) = m * n := fun m => by
+  obtain ⟨m, rfl | rfl⟩ := Int.eq_nat_or_neg m
+  · induction m with
+    | zero => simp
+    | succ m ih => simp_all [add_mul]
+  · induction m with
+    | zero => simp
+    | succ m ih => simp_all [add_mul]
+
+/-- Note this holds in marginally more generality than `Int.cast_mul` -/
+lemma cast_mul_eq_zsmul_cast {α : Type*} [AddGroupWithOne α] :
+    ∀ m n : ℤ, ↑(m * n) = m • (n : α) :=
+  fun m ↦ Int.induction_on m (by simp) (fun _ ih ↦ by simp [add_mul, add_zsmul, ih]) fun _ ih ↦ by
+    simp only [sub_mul, one_mul, cast_sub, ih, sub_zsmul, one_zsmul, ← sub_eq_add_neg, forall_const]
+
+@[simp, norm_cast] lemma cast_pow {R : Type*} [Ring R] (n : ℤ) (m : ℕ) :
+    ↑(n ^ m) = (n ^ m : R) := by
+  induction m <;> simp [_root_.pow_succ, *]
+
+/-!
+### Extra instances to short-circuit type class resolution
+
+These also prevent non-computable instances like `Int.normedCommRing` being used to construct
+these instances non-computably.
+-/
+
+instance instCommSemiring : CommSemiring ℤ := inferInstance
+instance instSemiring     : Semiring ℤ     := inferInstance
+instance instRing         : Ring ℤ         := inferInstance
+instance instDistrib      : Distrib ℤ      := inferInstance
+
+end Int
+```

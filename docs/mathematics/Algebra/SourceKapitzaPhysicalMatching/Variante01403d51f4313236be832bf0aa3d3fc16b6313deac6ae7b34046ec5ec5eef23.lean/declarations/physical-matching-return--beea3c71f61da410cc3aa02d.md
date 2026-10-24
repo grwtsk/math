@@ -1,0 +1,109 @@
+# physical_matching_return
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:301f2fb8-1c3c-5c82-e9ce-0acdd4c2e24e",
+  "kind": "theorem",
+  "lexical_name": "physical_matching_return",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "physical-matching-return--beea3c71f61da410cc3aa02d",
+  "source": {
+    "blob": "ccfaace64168f8150d62e5e9ea7a243bbb5a3a81",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 222,
+    "line": 195,
+    "path": "GRWTSK/Algebra/SourceKapitzaPhysicalMatching/Variante01403d51f4313236be832bf0aa3d3fc16b6313deac6ae7b34046ec5ec5eef23.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:beea3c71f61da410cc3aa02d34d5c62a6476713a03064a6af0cd4d0058aa0872",
+  "verification": {
+    "reference": "docs/verification/Algebra/SourceKapitzaPhysicalMatching/Variante01403d51f4313236be832bf0aa3d3fc16b6313deac6ae7b34046ec5ec5eef23.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:301f2fb8-1c3c-5c82-e9ce-0acdd4c2e24e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 195–222.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem physical_matching_return (A : ℝ) (D B : ℕ)
+    (hD : 2 ≤ D) (hDB : D ≤ B) (hBU : B ≤ ⌊Real.exp (2 * A)⌋₊ / 5)
+    (hhead : ∀ d ∈ Finset.Icc 2 D, weightedRow A d ≤ 0)
+    (htop : ∀ d ∈ Finset.Ioc B (⌊Real.exp (2 * A)⌋₊ / 5), 0 ≤ weightedRow A d)
+    (hpacket : 0 ≤ head A D + top A B (⌊Real.exp (2 * A)⌋₊ / 5)) :
+    physicalResidual A = middle A D B +
+      ∑ j ∈ Finset.range (⌊Real.exp (2 * A)⌋₊ / 5 - B),
+        unusedSupply (cumulative (demandAtom (weightedRow A) D))
+          (cumulative (supplyAtom (weightedRow A) B (⌊Real.exp (2 * A)⌋₊ / 5)))
+          (D - 1) j := by
+  let U := ⌊Real.exp (2 * A)⌋₊ / 5
+  let demand := cumulative (demandAtom (weightedRow A) D)
+  let supply := cumulative (supplyAtom (weightedRow A) B U)
+  have hd : Monotone demand := cumulative_monotone _ (demandAtom_nonneg _ D hD hhead)
+  have hs : Monotone supply := cumulative_monotone _ (supplyAtom_nonneg _ B U htop)
+  have hd0 : demand 0 = 0 := cumulative_zero _
+  have hs0 : supply 0 = 0 := cumulative_zero _
+  have hh : head A D = -demand (D - 1) := by
+    dsimp only [demand]
+    rw [demand_total _ D hD]
+    simp [head]
+  have ht : top A B U = supply (U - B) := (supply_total _ B U hBU).symm
+  have hp : demand (D - 1) ≤ supply (U - B) := by rw [hh, ht] at hpacket; linarith
+  rw [physicalResidual_three_strip A D B hD hDB hBU]
+  exact residual_eq_middle_add_unused _ _ _ demand supply (D - 1) (U - B)
+    hd hs hd0 hs0 hh ht hp
+
+/-- A supplied physical signed residual budget uses the direct price exactly once. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/SourceKapitzaPhysicalMatching/Variante01403d51f4313236be832bf0aa3d3fc16b6313deac6ae7b34046ec5ec5eef23.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/SourceKapitzaPhysicalMatching/Variante01403d51f4313236be832bf0aa3d3fc16b6313deac6ae7b34046ec5ec5eef23.lean#L195).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ccfaace64168f8150d62e5e9ea7a243bbb5a3a81` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

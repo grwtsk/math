@@ -1,0 +1,127 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Lemmas.Variant861abb178e8cc61599117ec0f0a6094567457211b815b8522c998157b921e8de
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fa8c0344ece7769e05a22f84a91c0d261c1f4037` · SHA-256 `b6a50fcede04dd2997a0bc67258d553b3011cbed5d6b937739db57eabce63d49`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.NotIrreduciblePow.Variant9a27340336d2801aaf8c5aa1864207d3f618d9db956e2bd0b4afd9a68fd592d5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9a27340336d2801aaf8c5aa1864207d3f618d9db956e2bd0b4afd9a68fd592d5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.NotIrreduciblePow.Variant9a27340336d2801aaf8c5aa1864207d3f618d9db956e2bd0b4afd9a68fd592d5","mathematical_subject":"Algebra.Groups","original_sha256":"9a27340336d2801aaf8c5aa1864207d3f618d9db956e2bd0b4afd9a68fd592d5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Group/Irreducible/Lemmas.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Jens Wagemaker, Yaël Dillies
+-/
+import Mathlib.Algebra.Group.Commute.Units
+import Mathlib.Algebra.Group.Even
+import Mathlib.Algebra.Group.Irreducible.Defs
+import Mathlib.Algebra.Group.Units.Equiv
+
+/-!
+# More lemmas about irreducible elements
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.NotIrreduciblePow.Variant9a27340336d2801aaf8c5aa1864207d3f618d9db956e2bd0b4afd9a68fd592d5
+
+assert_not_exists MonoidWithZero OrderedCommMonoid Multiset
+
+variable {F M N : Type*}
+
+section Monoid
+variable [Monoid M] [Monoid N] {f : F} {x y : M}
+
+@[to_additive]
+lemma not_irreducible_pow : ∀ {n : ℕ}, n ≠ 1 → ¬ Irreducible (x ^ n)
+  | 0, _ => by simp
+  | n + 2, _ => by
+    intro ⟨h₁, h₂⟩
+    have := h₂ (pow_succ _ _)
+    rw [isUnit_pow_iff n.succ_ne_zero, or_self] at this
+    exact h₁ (this.pow _)
+
+@[to_additive]
+lemma irreducible_units_mul (u : Mˣ) : Irreducible (u * y) ↔ Irreducible y := by
+  simp only [irreducible_iff, Units.isUnit_units_mul, and_congr_right_iff]
+  refine fun _ => ⟨fun h A B HAB => ?_, fun h A B HAB => ?_⟩
+  · rw [← u.isUnit_units_mul]
+    apply h
+    rw [mul_assoc, ← HAB]
+  · rw [← u⁻¹.isUnit_units_mul]
+    apply h
+    rw [mul_assoc, ← HAB, Units.inv_mul_cancel_left]
+
+@[to_additive]
+lemma irreducible_isUnit_mul (h : IsUnit x) : Irreducible (x * y) ↔ Irreducible y :=
+  let ⟨x, ha⟩ := h
+  ha ▸ irreducible_units_mul x
+
+@[to_additive]
+lemma irreducible_mul_units (u : Mˣ) : Irreducible (y * u) ↔ Irreducible y := by
+  simp only [irreducible_iff, Units.isUnit_mul_units, and_congr_right_iff]
+  refine fun _ => ⟨fun h A B HAB => ?_, fun h A B HAB => ?_⟩
+  · rw [← u.isUnit_mul_units B]
+    apply h
+    rw [← mul_assoc, ← HAB]
+  · rw [← u⁻¹.isUnit_mul_units B]
+    apply h
+    rw [← mul_assoc, ← HAB, Units.mul_inv_cancel_right]
+
+@[to_additive]
+lemma irreducible_mul_isUnit (h : IsUnit x) : Irreducible (y * x) ↔ Irreducible y :=
+  let ⟨x, hx⟩ := h
+  hx ▸ irreducible_mul_units x
+
+@[to_additive]
+lemma irreducible_mul_iff :
+    Irreducible (x * y) ↔ Irreducible x ∧ IsUnit y ∨ Irreducible y ∧ IsUnit x := by
+  constructor
+  · refine fun h => Or.imp (fun h' => ⟨?_, h'⟩) (fun h' => ⟨?_, h'⟩) (h.isUnit_or_isUnit rfl).symm
+    · rwa [irreducible_mul_isUnit h'] at h
+    · rwa [irreducible_isUnit_mul h'] at h
+  · rintro (⟨ha, hb⟩ | ⟨hb, ha⟩)
+    · rwa [irreducible_mul_isUnit hb]
+    · rwa [irreducible_isUnit_mul ha]
+
+section MulEquivClass
+variable [EquivLike F M N] [MulEquivClass F M N] (f : F)
+
+@[to_additive]
+lemma MulEquiv.irreducible_iff : Irreducible (f x) ↔ Irreducible x := by
+  simp [_root_.irreducible_iff, (EquivLike.surjective f).forall, ← map_mul, -isUnit_map_iff]
+
+/-- Irreducibility is preserved by multiplicative equivalences.
+
+Note that surjective + local hom is not enough. Consider the additive monoids `M = ℕ ⊕ ℕ`, `N = ℕ`,
+with x surjective local (additive) hom `f : M →+ N` sending `(m, n)` to `2m + n`.
+It is local because the only add unit in `N` is `0`, with preimage `{(0, 0)}` also an add unit.
+Then `x = (1, 0)` is irreducible in `M`, but `f x = 2 = 1 + 1` is not irreducible in `N`. -/
+@[to_additive "Irreducibility is preserved by additive equivalences."]
+alias ⟨_, Irreducible.map⟩ := MulEquiv.irreducible_iff
+
+end MulEquivClass
+
+lemma Irreducible.of_map [FunLike F M N] [MonoidHomClass F M N] [IsLocalHom f]
+    (hfx : Irreducible (f x)) : Irreducible x where
+  not_isUnit hu := hfx.not_isUnit <| hu.map f
+  isUnit_or_isUnit := by
+    rintro p q rfl; exact (hfx.isUnit_or_isUnit <| map_mul f p q).imp (.of_map f _) (.of_map f _)
+
+@[to_additive]
+lemma Irreducible.not_isSquare (ha : Irreducible x) : ¬IsSquare x := by
+  rw [isSquare_iff_exists_sq]
+  rintro ⟨y, rfl⟩
+  exact not_irreducible_pow (by decide) ha
+
+set_option linter.existingAttributeWarning false in
+@[deprecated (since := "2025-04-17"), to_additive existing]
+alias Irreducible.not_square := Irreducible.not_isSquare
+
+@[to_additive]
+lemma IsSquare.not_irreducible (ha : IsSquare x) : ¬Irreducible x := fun h => h.not_isSquare ha
+
+end Monoid
+```

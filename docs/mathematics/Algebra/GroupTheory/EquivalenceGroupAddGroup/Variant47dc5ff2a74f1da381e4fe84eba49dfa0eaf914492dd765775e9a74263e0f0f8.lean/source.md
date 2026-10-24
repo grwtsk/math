@@ -1,0 +1,112 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.EquivalenceGroupAddGroup.Variant47dc5ff2a74f1da381e4fe84eba49dfa0eaf914492dd765775e9a74263e0f0f8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `96beca30f11c52647ca79be4d401358ac36bb1e6` · SHA-256 `03e1399fb1d94f5abc047f68d8444c546c24fcfdaf0145d6167032e3a56eedf6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.ToAddGroupCat.Variant4bcefdb4e6ef2f590dd23fa58c68279fa48e43ace685584ecb035251c6c1a8ba","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4bcefdb4e6ef2f590dd23fa58c68279fa48e43ace685584ecb035251c6c1a8ba","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.ToAddGroupCat.Variant4bcefdb4e6ef2f590dd23fa58c68279fa48e43ace685584ecb035251c6c1a8ba","mathematical_subject":"Algebra.Groups","original_sha256":"4bcefdb4e6ef2f590dd23fa58c68279fa48e43ace685584ecb035251c6c1a8ba","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Algebra/Category/GroupCat/EquivalenceGroupAddGroup.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Jujian Zhang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jujian Zhang
+-/
+import Mathlib.Algebra.Category.GroupCat.Basic
+import Mathlib.Algebra.Hom.Equiv.TypeTags
+
+
+namespace GRWTSK.Algebra.GroupTheory.ToAddGroupCat.Variant4bcefdb4e6ef2f590dd23fa58c68279fa48e43ace685584ecb035251c6c1a8ba
+
+#align_import algebra.category.Group.equivalence_Group_AddGroup from "leanprover-community/mathlib"@"47b51515e69f59bca5cf34ef456e6000fe205a69"
+
+/-!
+# Equivalence between `Group` and `AddGroup`
+
+This file contains two equivalences:
+* `groupAddGroupEquivalence` : the equivalence between `GroupCat` and `AddGroupCat` by sending
+  `X : GroupCat` to `Additive X` and `Y : AddGroupCat` to `Multiplicative Y`.
+* `commGroupAddCommGroupEquivalence` : the equivalence between `CommGroupCat` and `AddCommGroupCat`
+  by sending `X : CommGroupCat` to `Additive X` and `Y : AddCommGroupCat` to `Multiplicative Y`.
+-/
+
+-- Porting note: everything is upper case
+set_option linter.uppercaseLean3 false
+
+open CategoryTheory
+
+namespace GroupCat
+
+-- Porting note: Lean cannot find these now
+private instance (X : GroupCat) : MulOneClass X.α := X.str.toMulOneClass
+private instance (X : CommGroupCat) : MulOneClass X.α := X.str.toMulOneClass
+private instance (X : AddGroupCat) : AddZeroClass X.α := X.str.toAddZeroClass
+private instance (X : AddCommGroupCat) : AddZeroClass X.α := X.str.toAddZeroClass
+
+/-- The functor `Group ⥤ AddGroup` by sending `X ↦ additive X` and `f ↦ f`.
+-/
+@[simps]
+def toAddGroupCat : GroupCat ⥤ AddGroupCat where
+  obj X := AddGroupCat.of (Additive X)
+  map {X} {Y} := MonoidHom.toAdditive
+#align Group.to_AddGroup GroupCat.toAddGroupCat
+
+end GroupCat
+
+namespace CommGroupCat
+
+/-- The functor `CommGroup ⥤ AddCommGroup` by sending `X ↦ additive X` and `f ↦ f`.
+-/
+@[simps]
+def toAddCommGroupCat : CommGroupCat ⥤ AddCommGroupCat where
+  obj X := AddCommGroupCat.of (Additive X)
+  map {X} {Y} := MonoidHom.toAdditive
+#align CommGroup.to_AddCommGroup CommGroupCat.toAddCommGroupCat
+
+end CommGroupCat
+
+namespace AddGroupCat
+
+/-- The functor `AddGroup ⥤ Group` by sending `X ↦ multiplicative Y` and `f ↦ f`.
+-/
+@[simps]
+def toGroupCat : AddGroupCat ⥤ GroupCat where
+  obj X := GroupCat.of (Multiplicative X)
+  map {X} {Y} := AddMonoidHom.toMultiplicative
+#align AddGroup.to_Group AddGroupCat.toGroupCat
+
+end AddGroupCat
+
+namespace AddCommGroupCat
+
+/-- The functor `AddCommGroup ⥤ CommGroup` by sending `X ↦ multiplicative Y` and `f ↦ f`.
+-/
+@[simps]
+def toCommGroupCat : AddCommGroupCat ⥤ CommGroupCat where
+  obj X := CommGroupCat.of (Multiplicative X)
+  map {X} {Y} := AddMonoidHom.toMultiplicative
+#align AddCommGroup.to_CommGroup AddCommGroupCat.toCommGroupCat
+
+end AddCommGroupCat
+
+/-- The equivalence of categories between `Group` and `AddGroup`
+-/
+@[simps!]
+def groupAddGroupEquivalence : GroupCat ≌ AddGroupCat :=
+  CategoryTheory.Equivalence.mk GroupCat.toAddGroupCat AddGroupCat.toGroupCat
+    (NatIso.ofComponents fun X => MulEquiv.toGroupCatIso (MulEquiv.multiplicativeAdditive X))
+    (NatIso.ofComponents fun X => AddEquiv.toAddGroupCatIso (AddEquiv.additiveMultiplicative X))
+#align Group_AddGroup_equivalence groupAddGroupEquivalence
+
+/-- The equivalence of categories between `CommGroup` and `AddCommGroup`.
+-/
+@[simps!]
+def commGroupAddCommGroupEquivalence : CommGroupCat ≌ AddCommGroupCat :=
+  CategoryTheory.Equivalence.mk CommGroupCat.toAddCommGroupCat AddCommGroupCat.toCommGroupCat
+    (NatIso.ofComponents fun X => MulEquiv.toCommGroupCatIso (MulEquiv.multiplicativeAdditive X))
+    (NatIso.ofComponents fun X => AddEquiv.toAddCommGroupCatIso (AddEquiv.additiveMultiplicative X))
+#align CommGroup_AddCommGroup_equivalence commGroupAddCommGroupEquivalence
+```

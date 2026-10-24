@@ -1,0 +1,78 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Invariant.Variant74dddae52bd719987832f3f06814d3567145bebaa7e7eee62bc1756e5512a4c9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `57eb895d17307f8d09fb790bdb29bdcc66087681` · SHA-256 `d31be81d18774a2098788965ae7e9b2180f243a4dfc38af77b7c5e451e59adc9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.IsInvariantSubring.Varianta965a3536d1759d5aeec0d73ba72793ddc8174cf87caef00e3a5344cd3cf4858","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a965a3536d1759d5aeec0d73ba72793ddc8174cf87caef00e3a5344cd3cf4858","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.IsInvariantSubring.Varianta965a3536d1759d5aeec0d73ba72793ddc8174cf87caef00e3a5344cd3cf4858","mathematical_subject":"Algebra.Groups","original_sha256":"a965a3536d1759d5aeec0d73ba72793ddc8174cf87caef00e3a5344cd3cf4858","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Ring/Action/Invariant.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+import Mathlib.GroupTheory.GroupAction.Hom
+import Mathlib.Algebra.Ring.Subring.Defs
+
+/-! # Subrings invariant under an action
+
+If a monoid acts on a ring via a `MulSemiringAction`, then `IsInvariantSubring` is
+a predicate on subrings asserting that the subring is fixed elementwise by the
+action.
+
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.IsInvariantSubring.Varianta965a3536d1759d5aeec0d73ba72793ddc8174cf87caef00e3a5344cd3cf4858
+
+assert_not_exists RelIso
+
+section Ring
+
+variable (M R : Type*) [Monoid M] [Ring R] [MulSemiringAction M R]
+variable (S : Subring R)
+
+open MulAction
+
+variable {R}
+
+/-- A typeclass for subrings invariant under a `MulSemiringAction`. -/
+class IsInvariantSubring : Prop where
+  smul_mem : ∀ (m : M) {x : R}, x ∈ S → m • x ∈ S
+
+instance IsInvariantSubring.toMulSemiringAction [IsInvariantSubring M S] :
+    MulSemiringAction M S where
+  smul m x := ⟨m • ↑x, IsInvariantSubring.smul_mem m x.2⟩
+  one_smul s := Subtype.eq <| one_smul M (s : R)
+  mul_smul m₁ m₂ s := Subtype.eq <| mul_smul m₁ m₂ (s : R)
+  smul_add m s₁ s₂ := Subtype.eq <| smul_add m (s₁ : R) (s₂ : R)
+  smul_zero m := Subtype.eq <| smul_zero m
+  smul_one m := Subtype.eq <| smul_one m
+  smul_mul m s₁ s₂ := Subtype.eq <| smul_mul' m (s₁ : R) (s₂ : R)
+
+end Ring
+
+section
+
+variable (M : Type*) [Monoid M]
+variable {R' : Type*} [Ring R'] [MulSemiringAction M R']
+variable (U : Subring R') [IsInvariantSubring M U]
+
+/-- The canonical inclusion from an invariant subring. -/
+def IsInvariantSubring.subtypeHom : U →+*[M] R' :=
+  { U.subtype with map_smul' := fun _ _ ↦ rfl }
+
+@[simp]
+theorem IsInvariantSubring.coe_subtypeHom :
+    (IsInvariantSubring.subtypeHom M U : U → R') = Subtype.val := rfl
+
+@[simp]
+theorem IsInvariantSubring.coe_subtypeHom' :
+    ((IsInvariantSubring.subtypeHom M U) : U →+* R') = U.subtype := rfl
+
+end
+```

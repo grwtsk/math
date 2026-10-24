@@ -1,0 +1,225 @@
+# GRWTSK.Algebra.Maps.Variant1112800989cbe59fabea5659871872cc44c5f5d1b56f8a21bf11b40afa30bb7a
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**204 observed declarations and anonymous commands**, 178 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Maps/Variant1112800989cbe59fabea5659871872cc44c5f5d1b56f8a21bf11b40afa30bb7a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e2e26f6b477f53838d974579ecfbd27a5d3e8e84`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../verification/Algebra/Maps/Variant1112800989cbe59fabea5659871872cc44c5f5d1b56f8a21bf11b40afa30bb7a.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [map](declarations/map--e558f96708d293966d86baf0.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [comap](declarations/comap--762f8d17cf2d49fe335538a6.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [coe_comap](declarations/coe-comap--16225c22941bab60bffad2e3.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [comap_coe](declarations/comap-coe--92c5916bc7633439d57f12cd.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [map_coe](declarations/map-coe--e66ad971650323aef1cea629.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [map_mono](declarations/map-mono--8d42f30435c1bc455cc59adc.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [mem_map_of_mem](declarations/mem-map-of-mem--a978086acd3e11215e55e951.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [apply_coe_mem_map](declarations/apply-coe-mem-map--53aa9dd466182fb0e11fcd0a.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [map_le_iff_le_comap](declarations/map-le-iff-le-comap--e5ced9d396612acd35f8b336.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [mem_comap](declarations/mem-comap--c1a272f9e7085bae5c438c69.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [comap_mono](declarations/comap-mono--5e12bbb3466ad6d59e6f31e0.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [comap_ne_top](declarations/comap-ne-top--0318a71126d48dcdc996d9b4.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [exists_ideal_comap_le_prime](declarations/exists-ideal-comap-le-prime--9ecddb9965854d34b7ba0968.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [map_le_comap_of_inv_on](declarations/map-le-comap-of-inv-on--e9404ac75f1d0a2aac80851d.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [comap_le_map_of_inv_on](declarations/comap-le-map-of-inv-on--926d6bf88ac76cd64896d0f9.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [map_le_comap_of_inverse](declarations/map-le-comap-of-inverse--c2748764a782324be9925aaf.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [eq_bot_of_comap_eq_bot'](declarations/eq-bot-of-comap-eq-bot--76670f700fa4bc0bfe81f5d0.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `instance` | [(anonymous)](declarations/instance--45d9d49b2ed55e7922dbb44c.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [comap_le_map_of_inverse](declarations/comap-le-map-of-inverse--9636cc669eb5434930b115ac.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [IsPrime.comap](declarations/isprime-comap--4cd3546a97fd8626562116c4.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [map_top](declarations/map-top--74128d9f189190ac2866d06e.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [gc_map_comap](declarations/gc-map-comap--003cb37a105aaf17abad855f.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [comap_id](declarations/comap-id--7b0c15f1487e21822219edee.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [comap_idₐ](declarations/comap-id--1fd2a6df39cb74969bff19f8.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [map_id](declarations/map-id--07b8c90e188d15c71962c79a.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [map_idₐ](declarations/map-id--42e934636c64fd9bb68029e0.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [comap_comap](declarations/comap-comap--db0109fd1cd6b21ad96f23e7.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `lemma` | [comap_comapₐ](declarations/comap-comap--74945aa9ea7f3e8b73babde7.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [map_map](declarations/map-map--ca964bd2b7a00d5b1718db1d.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [map_mapₐ](declarations/map-map--238a9a3f0a8913eb99bfe029.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [map_span](declarations/map-span--974a7e5f1ac145e4cb5796f5.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [map_le_of_le_comap](declarations/map-le-of-le-comap--d2f9b493fe5167fdfc0743b3.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [le_comap_of_map_le](declarations/le-comap-of-map-le--f07a912907207bfbd2b1a9d8.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [le_comap_map](declarations/le-comap-map--17058c0b2b72d01e5ca699fb.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [map_comap_le](declarations/map-comap-le--8ac3ec84392cbb994f3f34fe.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [comap_top](declarations/comap-top--4f697306992516eaed11f4e0.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [comap_eq_top_iff](declarations/comap-eq-top-iff--cb3accab1d3d27b09df11a49.md) | 218 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [map_bot](declarations/map-bot--3ddadee10ae65c68276c33c5.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [ne_bot_of_map_ne_bot](declarations/ne-bot-of-map-ne-bot--57d16887e69f43960b95c006.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [map_comap_map](declarations/map-comap-map--4a2d85b36de634aafd2d5ab8.md) | 232 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [comap_map_comap](declarations/comap-map-comap--d13598f4352260e8b56bd8c3.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [map_sup](declarations/map-sup--e67126a099c92cf773a0c328.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [comap_inf](declarations/comap-inf--a1cef1af7f28a66bfde8b4ed.md) | 242 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [map_iSup](declarations/map-isup--26643f62fbd1e008c840fd48.md) | 247 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [comap_iInf](declarations/comap-iinf--a1f80fa15dfdb875ee82ca2a.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [comap_finsetInf](declarations/comap-finsetinf--73132d05365fab4605d8a7b4.md) | 253 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [map_sSup](declarations/map-ssup--ba2fdb53972fc9b38b49b348.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [comap_sInf](declarations/comap-sinf--9e189fb9efacf47e7b80a3c7.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [comap_sInf'](declarations/comap-sinf--1aaab67a77032e165d5ddd9c.md) | 263 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [comap_isPrime](declarations/comap-isprime--7c3683824a32696984672384.md) | 267 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [map_inf_le](declarations/map-inf-le--de266a6d3d3d9410ecebb4bf.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [le_comap_sup](declarations/le-comap-sup--59b4baf08514ca78ba178cac.md) | 275 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [_root_.GRWTSK.Algebra.Map.Varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd80981349de49f28556c77b56d9c11.element_smul_restrictScalars](declarations/root-grwtsk-algebra-map-varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd809813--87d0a5d5c76c075970bbcc3e.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [smul_restrictScalars](declarations/smul-restrictscalars--eab2649e7454d581fee7f831.md) | 285 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [smul_top_eq_map](declarations/smul-top-eq-map--9ddfe05e0e83c6db55cf04ee.md) | 294 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [coe_restrictScalars](declarations/coe-restrictscalars--e905d8b9f8aed0a49dc2055f.md) | 300 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [restrictScalars_mul](declarations/restrictscalars-mul--513adf6ddd1d47ba6e9beaec.md) | 307 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [map_comap_of_surjective](declarations/map-comap-of-surjective--93afb01bd307e11310cce14d.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `def` | [giMapComap](declarations/gimapcomap--67432e02d1064136f1276159.md) | 328 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [map_surjective_of_surjective](declarations/map-surjective-of-surjective--c713c2d4d7a6cdcadf08f602.md) | 332 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [comap_injective_of_surjective](declarations/comap-injective-of-surjective--3740ec0b27816b0ba5bf2848.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [map_sup_comap_of_surjective](declarations/map-sup-comap-of-surjective--59582d76d2e4ad3f87c8268c.md) | 338 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [map_iSup_comap_of_surjective](declarations/map-isup-comap-of-surjective--96f2c637848bac56992c9732.md) | 341 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [map_inf_comap_of_surjective](declarations/map-inf-comap-of-surjective--229a102a704bb1fafb37d5a1.md) | 344 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [map_iInf_comap_of_surjective](declarations/map-iinf-comap-of-surjective--231c6a992668239392b40f62.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [mem_image_of_mem_map_of_surjective](declarations/mem-image-of-mem-map-of-surjective--70112cc310e4b93446a343c9.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [mem_map_iff_of_surjective](declarations/mem-map-iff-of-surjective--38cb04dd9edf6cd402dc9d70.md) | 358 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [le_map_of_comap_le_of_surjective](declarations/le-map-of-comap-le-of-surjective--d890143b7fdc6b8eb9b355b3.md) | 362 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [map_eq_image_of_surjective](declarations/map-eq-image-of-surjective--465b47bace4e03c5c971a8cf.md) | 365 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [map_comap_eq_self_of_equiv](declarations/map-comap-eq-self-of-equiv--16a2e5456798db5114ace800.md) | 370 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [map_eq_submodule_map](declarations/map-eq-submodule-map--106448b9e67fdbe47a3ce057.md) | 374 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `instance` | [(anonymous)](declarations/instance--1a9c69fde5e0cb8504fd3fa4.md) | 378 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [IsMaximal.comap_piEvalRingHom](declarations/ismaximal-comap-pievalringhom--0f71f975bcb6d7b92f289164.md) | 388 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [comap_le_comap_iff_of_surjective](declarations/comap-le-comap-iff-of-surjective--1182eb723253b02a531e55a8.md) | 401 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `def` | [orderEmbeddingOfSurjective](declarations/orderembeddingofsurjective--56cbd440e7acfb68d4333aa1.md) | 408 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [map_eq_top_or_isMaximal_of_surjective](declarations/map-eq-top-or-ismaximal-of-surjective--d7cf71965bc7d7b84fe7e07b.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [map_evalRingHom_pi](declarations/map-evalringhom-pi--0f426868ddc63aae742c7b58.md) | 424 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `def` | [piOrderIso](declarations/piorderiso--a00157b36fb2d0ffc6f7b7ee.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `instance` | [(anonymous)](declarations/instance--2da48dc8fc58fc41cc3fe790.md) | 456 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [comap_bot_le_of_injective](declarations/comap-bot-le-of-injective--803bedf09961a3e9122e1102.md) | 466 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [comap_bot_of_injective](declarations/comap-bot-of-injective--4a5a3e46c34be2e893316bc0.md) | 471 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [map_of_equiv](declarations/map-of-equiv--a7e67fea5610a5fb1111b20a.md) | 478 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [comap_of_equiv](declarations/comap-of-equiv--fb2b44c219714b6ca49f90e3.md) | 486 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [map_comap_of_equiv](declarations/map-comap-of-equiv--4f19f554296f6eac41412bb3.md) | 492 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [comap_symm](declarations/comap-symm--f4c222cb7d551646925dbecb.md) | 498 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [map_symm](declarations/map-symm--c10fb893eb1d8cc87a9ca1aa.md) | 503 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [symm_apply_mem_of_equiv_iff](declarations/symm-apply-mem-of-equiv-iff--a41e597645ff0e230cdfca83.md) | 507 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [apply_mem_of_equiv_iff](declarations/apply-mem-of-equiv-iff--d20b94aff99ef820fd87bac5.md) | 512 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [mem_map_of_equiv](declarations/mem-map-of-equiv--6679ee754cf6dbfd38a9d901.md) | 516 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `lemma` | [map_primeCompl_comap_of_surjective](declarations/map-primecompl-comap-of-surjective--cff8cfa6cbd75ee24c3c2a5f.md) | 525 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `lemma` | [_root_.GRWTSK.Algebra.Map.Varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd80981349de49f28556c77b56d9c11.RingEquiv.map_primeCompl_comap_eq](declarations/root-grwtsk-algebra-map-varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd809813--896a9ce588cf2168c5c4b594.md) | 530 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `def` | [relIsoOfBijective](declarations/relisoofbijective--4414cbcce8afaeb98eadb4b7.md) | 540 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [comap_le_iff_le_map](declarations/comap-le-iff-le-map--7617d88ad63bc54c2bdcb9a6.md) | 553 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [map_eq_top_of_bijective](declarations/map-eq-top-of-bijective--4d99a5e59d79afe11e4dcd2f.md) | 557 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [comap_map_of_bijective](declarations/comap-map-of-bijective--b0825418f61b3bac972ee4c2.md) | 560 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [isMaximal_map_iff_of_bijective](declarations/ismaximal-map-iff-of-bijective--9e2e2490bc9cffa0346044c7.md) | 563 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [isMaximal_comap_iff_of_bijective](declarations/ismaximal-comap-iff-of-bijective--49a0457d8661b5ed02cbbc53.md) | 566 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `instance` | [map_isMaximal_of_equiv](declarations/map-ismaximal-of-equiv--d108e1002c8c26b83b3524d9.md) | 573 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `instance` | [comap_isMaximal_of_equiv](declarations/comap-ismaximal-of-equiv--ccb7909f2782e5bb142aed1e.md) | 578 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [isMaximal_iff_of_bijective](declarations/ismaximal-iff-of-bijective--82308ecf725c07ecc45ba574.md) | 582 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [comap_map_of_surjective](declarations/comap-map-of-surjective--efa95db17b9f971c964f7f9a.md) | 597 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [coheight_comap_of_surjective](declarations/coheight-comap-of-surjective--ee01797e76d32912ab0f0783.md) | 607 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `def` | [relIsoOfSurjective](declarations/relisoofsurjective--f5c72c84f7c0033eafc920e4.md) | 617 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [comap_isMaximal_of_surjective](declarations/comap-ismaximal-of-surjective--36adbb730b07c24b10a14592.md) | 631 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [map_mul](declarations/map-mul--c049c597ae8ac221efda6d9e.md) | 658 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `def` | [mapHom](declarations/maphom--e92efcebd9fa1c5279c4e79b.md) | 672 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [map_pow](declarations/map-pow--20ae01112e56da7c58f69d98.md) | 679 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [comap_radical](declarations/comap-radical--0fa68c69489a52af3e69280d.md) | 682 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [IsRadical.comap](declarations/isradical-comap--8f9fe1d5041e0ab9ea7618a8.md) | 688 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [map_radical_le](declarations/map-radical-le--b1b1ec6406799d21b5b2986a.md) | 694 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [le_comap_mul](declarations/le-comap-mul--fd203e73cf339cee2a2fee05.md) | 697 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [le_comap_pow](declarations/le-comap-pow--47c10f665282201ff5a5bb8e.md) | 702 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `lemma` | [disjoint_map_primeCompl_iff_comap_le](declarations/disjoint-map-primecompl-iff-comap-le--ad3986ec510ea0ffed48fede.md) | 711 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `lemma` | [comap_map_eq_self_iff_of_isPrime](declarations/comap-map-eq-self-iff-of-isprime--4a67ef113c140def899e98a2.md) | 718 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [comap_map_eq_self_of_isMaximal](declarations/comap-map-eq-self-of-ismaximal--8eae7aff6a0e0a1ac6b3dc9f.md) | 733 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `def` | [ker](declarations/ker--449abe1d2208aa7197db5bf9.md) | 754 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `instance` | [(anonymous)](declarations/instance--2beace77d191dba8c72da925.md) | 757 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [mem_ker](declarations/mem-ker--e1cc29f9fcd32ff8b17d4512.md) | 761 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `theorem` | [ker_eq](declarations/ker-eq--b906b54f76851dd0ab588e48.md) | 763 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [ker_eq_comap_bot](declarations/ker-eq-comap-bot--b17e92e011eef426589673a2.md) | 766 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [comap_ker](declarations/comap-ker--70f21ce005bb9fba82233b1c.md) | 769 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `theorem` | [one_notMem_ker](declarations/one-notmem-ker--f06f43775b11a6b60121db1e.md) | 773 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [ker_ne_top](declarations/ker-ne-top--4c095369b83c39976a1b0fbb.md) | 777 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `lemma` | [ker_eq_top_of_subsingleton](declarations/ker-eq-top-of-subsingleton--1360c4246a288db6f2233d13.md) | 780 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `lemma` | [_root_.GRWTSK.Algebra.Map.Varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd80981349de49f28556c77b56d9c11.Pi.ker_ringHom](declarations/root-grwtsk-algebra-map-varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd809813--4d02e55056b93a88bd3f52ab.md) | 783 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [ker_rangeSRestrict](declarations/ker-rangesrestrict--45475911e7c98139d9c1a9c1.md) | 789 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [ker_coe_equiv](declarations/ker-coe-equiv--25cfc5abc14f7bd2048a8a54.md) | 793 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `theorem` | [ker_coe_toRingHom](declarations/ker-coe-toringhom--31a28101f553bcefb9c56009.md) | 796 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `theorem` | [ker_equiv](declarations/ker-equiv--43426a178ab7e2f109eeca43.md) | 799 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `lemma` | [ker_equiv_comp](declarations/ker-equiv-comp--cffec04be9ac0d7383b52c56.md) | 803 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [injective_iff_ker_eq_bot](declarations/injective-iff-ker-eq-bot--af53a33216095ba4ed0f8039.md) | 813 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [ker_eq_bot_iff_eq_zero](declarations/ker-eq-bot-iff-eq-zero--fbc02b824c28ed0f2f30b1d0.md) | 817 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `lemma` | [ker_comp_of_injective](declarations/ker-comp-of-injective--303685083a36f8bc342a9791.md) | 820 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `theorem` | [_root_.GRWTSK.Algebra.Map.Varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd80981349de49f28556c77b56d9c11.AlgHom.ker_coe_equiv](declarations/root-grwtsk-algebra-map-varianta6cde2f875c2c8b9ea1aa57cf3aa654d5fd809813--1fd323120168f3216c656632.md) | 825 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `theorem` | [sub_mem_ker_iff](declarations/sub-mem-ker-iff--a537a94e703fb7df8d5a7886.md) | 836 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [ker_rangeRestrict](declarations/ker-rangerestrict--46f0814cba13a5a7f061eece.md) | 839 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [ker_isPrime](declarations/ker-isprime--6ddb6e911dff979fdaded5b9.md) | 845 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [ker_isMaximal_of_surjective](declarations/ker-ismaximal-of-surjective--c7b154018cf0a21034222fe2.md) | 851 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `def` | [Module.annihilator](declarations/module-annihilator--166c6661879258c4b29b1934.md) | 868 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [Module.mem_annihilator](declarations/module-mem-annihilator--4e17a5fa50e385d93c45608a.md) | 870 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `lemma` | [Module.mem_annihilator_iff_lsmul_eq_zero](declarations/module-mem-annihilator-iff-lsmul-eq-zero--9a4c4acc3c55adf6e0456ccb.md) | 873 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `instance` | [(anonymous)](declarations/instance--d27c1930f84918172624aa3d.md) | 877 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [LinearMap.annihilator_le_of_injective](declarations/linearmap-annihilator-le-of-injective--598c2ff253eba460c0827c31.md) | 880 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [LinearMap.annihilator_le_of_surjective](declarations/linearmap-annihilator-le-of-surjective--3ddb41c13e991a8ffc842a6a.md) | 884 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [LinearEquiv.annihilator_eq](declarations/linearequiv-annihilator-eq--0477e167c8e298b6678b37da.md) | 890 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [Module.comap_annihilator](declarations/module-comap-annihilator--c3f297e9526839dea8aa19c9.md) | 894 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `lemma` | [Module.annihilator_eq_bot](declarations/module-annihilator-eq-bot--244cb0370714598c647f0535.md) | 900 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [Module.annihilator_eq_top_iff](declarations/module-annihilator-eq-top-iff--2bc9c7c76b62ca9ba8024bec.md) | 909 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [Module.annihilator_prod](declarations/module-annihilator-prod--cfc2b179de5b74bc8fc3bcbf.md) | 915 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [Module.annihilator_finsupp](declarations/module-annihilator-finsupp--6cb4025d787a0adb5dfdcdee.md) | 920 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [Module.annihilator_dfinsupp](declarations/module-annihilator-dfinsupp--92f879476702fd25595a9610.md) | 932 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [Module.annihilator_pi](declarations/module-annihilator-pi--74f73145498c3eca217e6bc3.md) | 939 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `abbrev` | [annihilator](declarations/annihilator--5afb3bab12a8724880057693.md) | 951 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `theorem` | [annihilator_top](declarations/annihilator-top--c97929aba97a8b1a8f030005.md) | 954 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `theorem` | [mem_annihilator](declarations/mem-annihilator--5a036e14ef84cb7968518ec5.md) | 959 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `theorem` | [annihilator_bot](declarations/annihilator-bot--ebd37c42d17ef3a123dc0401.md) | 962 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `theorem` | [annihilator_eq_top_iff](declarations/annihilator-eq-top-iff--a8f92f4abd024a5641d0bb6b.md) | 965 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [annihilator_mono](declarations/annihilator-mono--6153416d6b5f612e5beaa35d.md) | 968 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [annihilator_iSup](declarations/annihilator-isup--f3240493c99a624fbc2456dd.md) | 971 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [annihilator_sup](declarations/annihilator-sup--7c9189de5345bf2b2637afe2.md) | 978 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [le_annihilator_iff](declarations/le-annihilator-iff--cc7680b9c5d3189416c89f42.md) | 982 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [annihilator_smul](declarations/annihilator-smul--273823a8095e7fb48c7c3607.md) | 986 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [annihilator_mul](declarations/annihilator-mul--1764725ff6f396dd391091b0.md) | 990 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `theorem` | [mem_annihilator'](declarations/mem-annihilator--bc01e76bea24c29cf77508ba.md) | 1001 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `theorem` | [mem_annihilator_span](declarations/mem-annihilator-span--1804f9ba9133997e8191a859.md) | 1004 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `theorem` | [mem_annihilator_span_singleton](declarations/mem-annihilator-span-singleton--76e4649d5682d35ab50459cd.md) | 1020 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `theorem` | [annihilator_span](declarations/annihilator-span--68b3272886e2f41448a3ac80.md) | 1024 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [annihilator_span_singleton](declarations/annihilator-span-singleton--efa8c5a5b8979ee124441559.md) | 1029 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [mul_annihilator](declarations/mul-annihilator--11c8cd2e3561fd90b175674e.md) | 1034 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `theorem` | [restrictScalars_map_smul_eq](declarations/restrictscalars-map-smul-eq--e3764ed00c96c57ac3669c2d.md) | 1036 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [map_eq_bot_iff_le_ker](declarations/map-eq-bot-iff-le-ker--60e0612eba25565400efb504.md) | 1057 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [ker_le_comap](declarations/ker-le-comap--4ca353c1f083c71ad12ed036.md) | 1060 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `instance` | [map_isPrime_of_equiv](declarations/map-isprime-of-equiv--53f33da3414c602f91fc483e.md) | 1064 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [map_eq_bot_iff_of_injective](declarations/map-eq-bot-iff-of-injective--6465c1449f7bba56141a44d3.md) | 1070 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `lemma` | [map_pointwise_smul](declarations/map-pointwise-smul--3004b7b123c145651e8e3af3.md) | 1077 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `lemma` | [comap_map_of_surjective'](declarations/comap-map-of-surjective--7515da80acfc6d0d5f5e3ec4.md) | 1087 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [map_sInf](declarations/map-sinf--1eedfe085ed70d2a0e95ba6b.md) | 1091 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `theorem` | [map_isPrime_of_surjective](declarations/map-isprime-of-surjective--d78907b133a4b64581741080.md) | 1111 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `lemma` | [IsMaximal.map_of_surjective_of_ker_le](declarations/ismaximal-map-of-surjective-of-ker-le--f8eeb84f19211ac8d23b6480.md) | 1127 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [map_ne_bot_of_ne_bot](declarations/map-ne-bot-of-ne-bot--02e02d06b3c2dbd94884c94a.md) | 1140 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [map_eq_iff_sup_ker_eq_of_surjective](declarations/map-eq-iff-sup-ker-eq-of-surjective--a5116cb9900672fcdbe1fb83.md) | 1144 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [map_radical_of_surjective](declarations/map-radical-of-surjective--e60092e101cb64b292677332.md) | 1149 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `def` | [liftOfRightInverseAux](declarations/liftofrightinverseaux--aa056645cc376236f32b9e8f.md) | 1174 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `theorem` | [liftOfRightInverseAux_comp_apply](declarations/liftofrightinverseaux-comp-apply--55656efb12e2fb0419aa5300.md) | 1192 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `def` | [liftOfRightInverse](declarations/liftofrightinverse--3cfed780c198a1d8369ddb34.md) | 1215 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `abbrev` | [liftOfSurjective](declarations/liftofsurjective--35a41cbcc7052d753cc0eba8.md) | 1229 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [liftOfRightInverse_comp_apply](declarations/liftofrightinverse-comp-apply--194ffbaa13aadea608858830.md) | 1233 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [liftOfRightInverse_comp](declarations/liftofrightinverse-comp--d8739945a5551741690c57e0.md) | 1238 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [eq_liftOfRightInverse](declarations/eq-liftofrightinverse--759594e9e29dbbb831804e96.md) | 1243 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `theorem` | [liftOfSurjective_comp_apply](declarations/liftofsurjective-comp-apply--32f088b658cabb8b0883de0f.md) | 1249 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [liftOfSurjective_comp](declarations/liftofsurjective-comp--02cd64916f5b17104195e5c8.md) | 1254 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [eq_liftOfSurjective](declarations/eq-liftofsurjective--aca2de6c4af7d1121b4e82d8.md) | 1259 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `def` | [RingEquiv.idealComapOrderIso](declarations/ringequiv-idealcomaporderiso--91078287e4ef91e309145c8d.md) | 1268 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `lemma` | [RingEquiv.idealComapOrderIso_symm_apply](declarations/ringequiv-idealcomaporderiso-symm-apply--72eb5dadd6401d57e3af877c.md) | 1278 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `lemma` | [ker_coe](declarations/ker-coe--2e0c3f4647d6e5c6a13f33b8.md) | 1288 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `lemma` | [coe_ideal_map](declarations/coe-ideal-map--7d23cabb42a78b078ddfe44a.md) | 1290 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `lemma` | [comap_ker](declarations/comap-ker--2fdcd2962e1f40b1f32b1ee2.md) | 1293 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `def` | [idealMap](declarations/idealmap--b576b2eaac1b21e6e14090d6.md) | 1305 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `lemma` | [idealMap_mul](declarations/idealmap-mul--c24a76b1b74622e19a71602a.md) | 1310 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `theorem` | [FaithfulSMul.ker_algebraMap_eq_bot](declarations/faithfulsmul-ker-algebramap-eq-bot--e75c2e3a15ac176cd366d5e7.md) | 1318 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `instance` | [(anonymous)](declarations/instance--ea73f059d7bac3dbab1c9c95.md) | 1324 | `BLOCKED_NATIVE_ADMISSION` |
+| 202 | `lemma` | [RingHom.ker_evalRingHom](declarations/ringhom-ker-evalringhom--2ecdc15f001b7ff405d9ccbe.md) | 1333 | `BLOCKED_NATIVE_ADMISSION` |
+| 203 | `lemma` | [Ideal.exists_of_comap_eq_ker_sup](declarations/ideal-exists-of-comap-eq-ker-sup--1c8d4c08dcdbd9357f323d19.md) | 1342 | `BLOCKED_NATIVE_ADMISSION` |
+| 204 | `lemma` | [Ideal.eq_map_of_comap_eq_ker_sup](declarations/ideal-eq-map-of-comap-eq-ker-sup--9d9f5150805c3ebbee9c2183.md) | 1351 | `BLOCKED_NATIVE_ADMISSION` |

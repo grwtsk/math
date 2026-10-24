@@ -1,0 +1,90 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Prod.Variant0d3588c9897f95f23d16a3ba1e81446b1c7905a8ee0342908cbd78a06b2a2d00
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1fb1460848731b1914171ae4f38e01a344348586` · SHA-256 `db8c818c6eedb971cc401464cea8f53f5c3113167b13a39703dbf0690b38cf02`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.ProdRight.Variantab562ef5570c991251cb4ad095465ac98a0579bbf3c79341bf2dba5f230a7425","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ab562ef5570c991251cb4ad095465ac98a0579bbf3c79341bf2dba5f230a7425","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.ProdRight.Variantab562ef5570c991251cb4ad095465ac98a0579bbf3c79341bf2dba5f230a7425","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"ab562ef5570c991251cb4ad095465ac98a0579bbf3c79341bf2dba5f230a7425","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/LinearAlgebra/TensorProduct/Prod.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+import Mathlib.LinearAlgebra.Prod
+import Mathlib.LinearAlgebra.TensorProduct.Tower
+
+/-!
+# Tensor products of products
+
+This file shows that taking `TensorProduct`s commutes with taking `Prod`s in both arguments.
+
+## Main results
+
+* `TensorProduct.prodLeft`
+* `TensorProduct.prodRight`
+
+## Notes
+
+See `Mathlib/LinearAlgebra/TensorProduct/Pi.lean` for arbitrary products.
+
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.ProdRight.Variantab562ef5570c991251cb4ad095465ac98a0579bbf3c79341bf2dba5f230a7425
+
+variable (R S M₁ M₂ M₃ : Type*)
+
+suppress_compilation
+
+namespace TensorProduct
+
+variable [CommSemiring R] [Semiring S] [AddCommMonoid M₁] [AddCommMonoid M₂] [AddCommMonoid M₃]
+variable [Algebra R S]
+variable [Module R M₁] [Module S M₁] [IsScalarTower R S M₁] [Module R M₂] [Module R M₃]
+
+attribute [ext] TensorProduct.ext
+
+/-- Tensor products distribute over a product on the right. -/
+def prodRight : M₁ ⊗[R] (M₂ × M₃) ≃ₗ[S] (M₁ ⊗[R] M₂) × (M₁ ⊗[R] M₃) :=
+  LinearEquiv.ofLinear
+    (TensorProduct.AlgebraTensorModule.lift <|
+      LinearMap.prodMapLinear R M₂ M₃ (M₁ ⊗[R] M₂) (M₁ ⊗[R] M₃) S ∘ₗ
+        LinearMap.prod (AlgebraTensorModule.mk R S M₁ M₂) (AlgebraTensorModule.mk R S M₁ M₃))
+    (LinearMap.coprod
+      (AlgebraTensorModule.lTensor _ _ <| LinearMap.inl _ _ _)
+      (AlgebraTensorModule.lTensor _ _ <| LinearMap.inr _ _ _))
+    (by ext <;> simp)
+    (by ext <;> simp)
+
+@[simp] theorem prodRight_tmul (m₁ : M₁) (m : M₂ × M₃) :
+    prodRight R S M₁ M₂ M₃ (m₁ ⊗ₜ m) = (m₁ ⊗ₜ m.1, m₁ ⊗ₜ m.2) :=
+  rfl
+
+@[simp] theorem prodRight_symm_tmul (m₁ : M₁) (m₂ : M₂) (m₃ : M₃) :
+    (prodRight R S M₁ M₂ M₃).symm (m₁ ⊗ₜ m₂, m₁ ⊗ₜ m₃) = (m₁ ⊗ₜ (m₂, m₃)) :=
+  (LinearEquiv.symm_apply_eq _).mpr rfl
+
+variable [Module S M₂] [IsScalarTower R S M₂]
+
+/-- Tensor products distribute over a product on the left . -/
+def prodLeft : (M₁ × M₂) ⊗[R] M₃ ≃ₗ[S] (M₁ ⊗[R] M₃) × (M₂ ⊗[R] M₃) :=
+  AddEquiv.toLinearEquiv (TensorProduct.comm _ _ _ ≪≫ₗ
+      TensorProduct.prodRight R R _ _ _ ≪≫ₗ
+      (TensorProduct.comm R _ _).prodCongr (TensorProduct.comm R _ _)).toAddEquiv
+    fun c x ↦ x.induction_on (by simp) (by simp [TensorProduct.smul_tmul']) (by simp_all)
+
+@[simp] theorem prodLeft_tmul (m₁ : M₁) (m₂ : M₂) (m₃ : M₃) :
+    prodLeft R S M₁ M₂ M₃ ((m₁, m₂) ⊗ₜ m₃) = (m₁ ⊗ₜ m₃, m₂ ⊗ₜ m₃) :=
+  rfl
+
+@[simp] theorem prodLeft_symm_tmul (m₁ : M₁) (m₂ : M₂) (m₃ : M₃) :
+    (prodLeft R S M₁ M₂ M₃).symm (m₁ ⊗ₜ m₃, m₂ ⊗ₜ m₃) = ((m₁, m₂) ⊗ₜ m₃) :=
+  (LinearEquiv.symm_apply_eq _).mpr rfl
+
+end TensorProduct
+```

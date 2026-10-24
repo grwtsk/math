@@ -1,0 +1,109 @@
+# Complete source: GRWTSK.Algebra.CommutativeAlgebra.SMul.Variant594ade0cd47ca2b729eaae8bb131ad5d061498b76442cd0206408ab42930353b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0ea74088dcc1ea51df4a208c5f97cff1443df5b9` · SHA-256 `5e8c38ef35a82119c705c10a283eecd42d3a6826545fc9a90522f5ec9cfcb53f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.CommutativeAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.CommutativeAlgebra.EvalSmul.Variant74c6098e7b7a4e71db6e017c6a6bedc4b57c71d1d0636bb21276a516bcbd933e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"74c6098e7b7a4e71db6e017c6a6bedc4b57c71d1d0636bb21276a516bcbd933e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Polynomials.SourceCorpus.EvalSmul.Variant74c6098e7b7a4e71db6e017c6a6bedc4b57c71d1d0636bb21276a516bcbd933e","mathematical_subject":"Algebra.Polynomials","original_sha256":"74c6098e7b7a4e71db6e017c6a6bedc4b57c71d1d0636bb21276a516bcbd933e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Polynomial/Eval/SMul.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Chris Hughes. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Chris Hughes, Johannes Hölzl, Kim Morrison, Jens Wagemaker
+-/
+module
+
+public import Mathlib.Algebra.Polynomial.Degree.Support
+public import Mathlib.Algebra.Polynomial.Eval.Defs
+
+/-!
+# Evaluating polynomials and scalar multiplication
+
+## Main results
+* `eval₂_smul`, `eval_smul`, `map_smul`, `comp_smul`: the functions preserve scalar multiplication
+* `Polynomial.leval`: `Polynomial.eval` as linear map
+
+-/
+
+
+namespace GRWTSK.Algebra.CommutativeAlgebra.EvalSmul.Variant74c6098e7b7a4e71db6e017c6a6bedc4b57c71d1d0636bb21276a516bcbd933e
+
+@[expose] public section
+
+noncomputable section
+
+open Finset
+
+open Polynomial
+
+namespace Polynomial
+
+universe u v w y
+
+variable {R : Type u} {S : Type v}
+
+section Semiring
+
+variable [Semiring R] {p q r : R[X]}
+
+section
+
+variable [Semiring S]
+variable (x : S)
+
+@[simp]
+theorem eval₂_smul (g : R →+* S) (p : R[X]) (x : S) {s : R} :
+    eval₂ g x (s • p) = g s * eval₂ g x p := by
+  have A : p.natDegree < p.natDegree.succ := Nat.lt_succ_self _
+  have B : (s • p).natDegree < p.natDegree.succ := (natDegree_smul_le _ _).trans_lt A
+  rw [eval₂_eq_sum, eval₂_eq_sum, sum_over_range' _ _ _ A, sum_over_range' _ _ _ B] <;>
+    simp [mul_sum, mul_assoc]
+
+end
+
+section Eval
+
+variable {x : R}
+
+@[simp]
+theorem eval_smul [SMulZeroClass S R] [IsScalarTower S R R] (s : S) (p : R[X])
+    (x : R) : (s • p).eval x = s • p.eval x := by
+  rw [← smul_one_smul R s p, eval, eval₂_smul, RingHom.id_apply, smul_one_mul, eval₂_id]
+
+/-- `Polynomial.eval` as linear map -/
+@[simps]
+def leval {R : Type*} [Semiring R] (r : R) : R[X] →ₗ[R] R where
+  toFun f := f.eval r
+  map_add' _f _g := eval_add
+  map_smul' c f := eval_smul c f r
+
+end Eval
+
+section Comp
+
+@[simp]
+theorem smul_comp [SMulZeroClass S R] [IsScalarTower S R R] (s : S) (p q : R[X]) :
+    (s • p).comp q = s • p.comp q := by
+  rw [← smul_one_smul R s p, comp, comp, eval₂_smul, ← smul_eq_C_mul, smul_assoc, one_smul]
+
+end Comp
+
+section Map
+
+variable [Semiring S]
+variable (f : R →+* S)
+
+@[simp]
+protected theorem map_smul (r : R) : (r • p).map f = f r • p.map f := by
+  rw [map, eval₂_smul, RingHom.comp_apply, C_mul']
+
+end Map
+
+end Semiring
+
+end Polynomial
+```

@@ -1,0 +1,101 @@
+# actual_endpoint_full_polynomial
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:2250a81e-3027-7547-151d-a6c4a91d3029",
+  "kind": "theorem",
+  "lexical_name": "actual_endpoint_full_polynomial",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "actual-endpoint-full-polynomial--b3ee3794cd5178c6e132767c",
+  "source": {
+    "blob": "04e6c0d8536692f9d73d87c690092dab789a4b57",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 85,
+    "line": 66,
+    "path": "GRWTSK/Algebra/CommutativeAlgebra/EndpointExpansion/Variant15219c32c6c65fc3eab8483cc4d5b6ff2958b465e0886ddea5963219001be90f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b3ee3794cd5178c6e132767cb9e5183f52fecf33f3aa34222627b6192a1722cd",
+  "verification": {
+    "reference": "docs/verification/Algebra/CommutativeAlgebra/EndpointExpansion/Variant15219c32c6c65fc3eab8483cc4d5b6ff2958b465e0886ddea5963219001be90f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2250a81e-3027-7547-151d-a6c4a91d3029`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 66–85.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem actual_endpoint_full_polynomial {A y : ℝ} (hA : 1≤A)
+    (hy : y∈Icc (0:ℝ) (2*A)) :
+    FormalResearch.RiemannHypothesis.SourcePairing.sourceCorrelation
+      FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Realization.explicitSecondDerivative
+      A (2*A-y)*(A^9*FormalResearch.RiemannHypothesis.SourcePairing.sourceNormalization A)=
+      endpointFullPolynomial A⁻¹ y := by
+  rw [actual_endpoint_polynomial_correlation hA hy,endpointPolynomialCorrelation_eq_full]
+
+end ContinuousResearch.EndpointExpansion
+
+-- Full frozen public trusted-closure audits.
+#check ContinuousResearch.EndpointExpansion.endpointFullPolynomial
+#print axioms ContinuousResearch.EndpointExpansion.endpointFullPolynomial
+#print ContinuousResearch.EndpointExpansion.endpointFullPolynomial
+#check ContinuousResearch.EndpointExpansion.endpointPolynomialCorrelation_eq_full
+#print axioms ContinuousResearch.EndpointExpansion.endpointPolynomialCorrelation_eq_full
+#print ContinuousResearch.EndpointExpansion.endpointPolynomialCorrelation_eq_full
+#check ContinuousResearch.EndpointExpansion.actual_endpoint_full_polynomial
+#print axioms ContinuousResearch.EndpointExpansion.actual_endpoint_full_polynomial
+#print ContinuousResearch.EndpointExpansion.actual_endpoint_full_polynomial
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/CommutativeAlgebra/EndpointExpansion/Variant15219c32c6c65fc3eab8483cc4d5b6ff2958b465e0886ddea5963219001be90f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/CommutativeAlgebra/EndpointExpansion/Variant15219c32c6c65fc3eab8483cc4d5b6ff2958b465e0886ddea5963219001be90f.lean#L66).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `04e6c0d8536692f9d73d87c690092dab789a4b57` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

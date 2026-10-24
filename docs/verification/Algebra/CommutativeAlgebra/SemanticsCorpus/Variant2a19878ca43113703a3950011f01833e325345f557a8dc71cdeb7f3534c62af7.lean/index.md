@@ -1,0 +1,68 @@
+# Verification target: GRWTSK.Algebra.CommutativeAlgebra.SemanticsCorpus.Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1d6e352246946e0e5a14c422bf42246176db76a0",
+  "lexical_observation_count": 6,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/index.md) · [Full source](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1d6e352246946e0e5a14c422bf42246176db76a0`.
+
+Source path: `GRWTSK/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Discovery.IdeasCorpus` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathematics.Polynomial.Semantics` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [source](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/declarations/source--babcce79dd70a50204440015.md) | 27 | `declaration-track:babcce79dd70a50204440015e7c0a7094026175532a7e2ee848d8caa59d39bda` |
+| 2 | `def` | [witnessCarrier](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/declarations/witnesscarrier--981b7de5eb22f58874af2f9d.md) | 52 | `declaration-track:981b7de5eb22f58874af2f9d587c5fc4f2c71b9a6671b94b10f418de422f3de2` |
+| 3 | `def` | [endpointCorrectness](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/declarations/endpointcorrectness--e6ddc51fa3013dc36b416a08.md) | 71 | `declaration-track:e6ddc51fa3013dc36b416a081a7496c422e5a138f8449b2d46ba39d7b06bc396` |
+| 4 | `def` | [integralCorrectness](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/declarations/integralcorrectness--f328d97626068b0b2c65d4be.md) | 91 | `declaration-track:f328d97626068b0b2c65d4be090f6dbbb82cbbd8bfee8bf22e41f114fc4c297f` |
+| 5 | `def` | [links](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/declarations/links--25e515ebda969828ca744510.md) | 110 | `declaration-track:25e515ebda969828ca744510e156f8ea2ca372b08acb7d8ab68cedaafb4298c1` |
+| 6 | `theorem` | [links_length](../../../../../mathematics/Algebra/CommutativeAlgebra/SemanticsCorpus/Variant2a19878ca43113703a3950011f01833e325345f557a8dc71cdeb7f3534c62af7.lean/declarations/links-length--37d12dc5ff89995bdef31ef3.md) | 116 | `result-track:37d12dc5ff89995bdef31ef377e76f9fb873545226845c1bc4d02a0c26672b8f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

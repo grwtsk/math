@@ -1,0 +1,165 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Defs.Varianted7974ac736e2084b8cfc4df68aeaad70a746eb244d734e5ffd2a5a37b924b6b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b5c42f4f2932c2cabefd6f852be48ae569fd3c2a` · SHA-256 `e02eefd09a0f062b3ca7e9749a4a916889ece3407e1d8d0311c4ecbad208e05a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.Prime.Variant8a3e52336b4b9d919f2542a2ce09f003efa4d77d3ee9411a54f23c1a58ec1edc","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8a3e52336b4b9d919f2542a2ce09f003efa4d77d3ee9411a54f23c1a58ec1edc","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.Prime.Variant8a3e52336b4b9d919f2542a2ce09f003efa4d77d3ee9411a54f23c1a58ec1edc","mathematical_subject":"Algebra.Groups","original_sha256":"8a3e52336b4b9d919f2542a2ce09f003efa4d77d3ee9411a54f23c1a58ec1edc","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Prime/Defs.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Jens Wagemaker
+-/
+import Mathlib.Algebra.Group.Irreducible.Defs
+import Mathlib.Algebra.GroupWithZero.Divisibility
+
+/-!
+# Prime elements
+
+In this file we define the predicate `Prime p`
+saying that an element of a commutative monoid with zero is prime.
+Namely, `Prime p` means that `p` isn't zero, it isn't a unit,
+and `p ∣ a * b → p ∣ a ∨ p ∣ b` for all `a`, `b`;
+
+In decomposition monoids (e.g., `ℕ`, `ℤ`), this predicate is equivalent to `Irreducible`
+(see `irreducible_iff_prime`), however this is not true in general.
+
+## Main definitions
+
+* `Prime`: a prime element of a commutative monoid with zero
+
+## Main results
+
+* `irreducible_iff_prime`: the two definitions are equivalent in a decomposition monoid.
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.Prime.Variant8a3e52336b4b9d919f2542a2ce09f003efa4d77d3ee9411a54f23c1a58ec1edc
+
+assert_not_exists OrderedCommMonoid Multiset
+
+variable {M : Type*}
+
+section Prime
+
+variable [CommMonoidWithZero M]
+
+/-- An element `p` of a commutative monoid with zero (e.g., a ring) is called *prime*,
+if it's not zero, not a unit, and `p ∣ a * b → p ∣ a ∨ p ∣ b` for all `a`, `b`. -/
+def Prime (p : M) : Prop :=
+  p ≠ 0 ∧ ¬IsUnit p ∧ ∀ a b, p ∣ a * b → p ∣ a ∨ p ∣ b
+
+namespace Prime
+
+variable {p : M} (hp : Prime p)
+include hp
+
+theorem ne_zero : p ≠ 0 :=
+  hp.1
+
+theorem not_unit : ¬IsUnit p :=
+  hp.2.1
+
+theorem not_dvd_one : ¬p ∣ 1 :=
+  mt (isUnit_of_dvd_one ·) hp.not_unit
+
+theorem ne_one : p ≠ 1 := fun h => hp.2.1 (h.symm ▸ isUnit_one)
+
+theorem dvd_or_dvd {a b : M} (h : p ∣ a * b) : p ∣ a ∨ p ∣ b :=
+  hp.2.2 a b h
+
+theorem dvd_mul {a b : M} : p ∣ a * b ↔ p ∣ a ∨ p ∣ b :=
+  ⟨hp.dvd_or_dvd, (Or.elim · (dvd_mul_of_dvd_left · _) (dvd_mul_of_dvd_right · _))⟩
+
+theorem isPrimal : IsPrimal p := fun _a _b dvd ↦ (hp.dvd_or_dvd dvd).elim
+  (fun h ↦ ⟨p, 1, h, one_dvd _, (mul_one p).symm⟩) fun h ↦ ⟨1, p, one_dvd _, h, (one_mul p).symm⟩
+
+theorem not_dvd_mul {a b : M} (ha : ¬ p ∣ a) (hb : ¬ p ∣ b) : ¬ p ∣ a * b :=
+  hp.dvd_mul.not.mpr <| not_or.mpr ⟨ha, hb⟩
+
+theorem dvd_of_dvd_pow {a : M} {n : ℕ} (h : p ∣ a ^ n) : p ∣ a := by
+  induction n with
+  | zero =>
+    rw [pow_zero] at h
+    have := isUnit_of_dvd_one h
+    have := not_unit hp
+    contradiction
+  | succ n ih =>
+    rw [pow_succ'] at h
+    rcases dvd_or_dvd hp h with dvd_a | dvd_pow
+    · assumption
+    · exact ih dvd_pow
+
+theorem dvd_pow_iff_dvd {a : M} {n : ℕ} (hn : n ≠ 0) : p ∣ a ^ n ↔ p ∣ a :=
+  ⟨hp.dvd_of_dvd_pow, (dvd_pow · hn)⟩
+
+end Prime
+
+@[simp]
+theorem not_prime_zero : ¬Prime (0 : M) := fun h => h.ne_zero rfl
+
+@[simp]
+theorem not_prime_one : ¬Prime (1 : M) := fun h => h.not_unit isUnit_one
+
+end Prime
+
+theorem Irreducible.not_dvd_one [CommMonoid M] {p : M} (hp : Irreducible p) : ¬p ∣ 1 :=
+  mt (isUnit_of_dvd_one ·) hp.not_isUnit
+
+@[simp]
+theorem not_irreducible_zero [MonoidWithZero M] : ¬Irreducible (0 : M)
+  | ⟨hn0, h⟩ =>
+    have : IsUnit (0 : M) ∨ IsUnit (0 : M) := h (mul_zero 0).symm
+    this.elim hn0 hn0
+
+theorem Irreducible.ne_zero [MonoidWithZero M] : ∀ {p : M}, Irreducible p → p ≠ 0
+  | _, hp, rfl => not_irreducible_zero hp
+
+/-- If `p` and `q` are irreducible, then `p ∣ q` implies `q ∣ p`. -/
+theorem Irreducible.dvd_symm [Monoid M] {p q : M} (hp : Irreducible p) (hq : Irreducible q) :
+    p ∣ q → q ∣ p := by
+  rintro ⟨q', rfl⟩
+  rw [IsUnit.mul_right_dvd (Or.resolve_left (of_irreducible_mul hq) hp.not_isUnit)]
+
+theorem Irreducible.dvd_comm [Monoid M] {p q : M} (hp : Irreducible p) (hq : Irreducible q) :
+    p ∣ q ↔ q ∣ p :=
+  ⟨hp.dvd_symm hq, hq.dvd_symm hp⟩
+
+section CommMonoidWithZero
+
+variable [CommMonoidWithZero M]
+
+theorem Irreducible.prime_of_isPrimal {a : M}
+    (irr : Irreducible a) (primal : IsPrimal a) : Prime a :=
+  ⟨irr.ne_zero, irr.not_isUnit, fun a b dvd ↦ by
+    obtain ⟨d₁, d₂, h₁, h₂, rfl⟩ := primal dvd
+    exact (of_irreducible_mul irr).symm.imp (·.mul_right_dvd.mpr h₁) (·.mul_left_dvd.mpr h₂)⟩
+
+theorem Irreducible.prime [DecompositionMonoid M] {a : M} (irr : Irreducible a) : Prime a :=
+  irr.prime_of_isPrimal (DecompositionMonoid.primal a)
+
+end CommMonoidWithZero
+
+section CancelCommMonoidWithZero
+
+variable [CancelCommMonoidWithZero M] {p : M}
+
+protected theorem Prime.irreducible (hp : Prime p) : Irreducible p :=
+  ⟨hp.not_unit, fun a b ↦ by
+    rintro rfl
+    exact (hp.dvd_or_dvd dvd_rfl).symm.imp
+      (isUnit_of_dvd_one <| (mul_dvd_mul_iff_right <| right_ne_zero_of_mul hp.ne_zero).mp <|
+        dvd_mul_of_dvd_right · _)
+      (isUnit_of_dvd_one <| (mul_dvd_mul_iff_left <| left_ne_zero_of_mul hp.ne_zero).mp <|
+        dvd_mul_of_dvd_left · _)⟩
+
+theorem irreducible_iff_prime [DecompositionMonoid M] {a : M} : Irreducible a ↔ Prime a :=
+  ⟨Irreducible.prime, Prime.irreducible⟩
+
+end CancelCommMonoidWithZero
+```

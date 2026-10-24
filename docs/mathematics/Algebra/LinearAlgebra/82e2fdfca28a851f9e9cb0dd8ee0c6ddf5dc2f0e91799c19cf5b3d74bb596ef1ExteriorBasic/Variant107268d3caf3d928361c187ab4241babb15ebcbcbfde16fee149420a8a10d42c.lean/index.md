@@ -1,0 +1,21 @@
+# GRWTSK.Algebra.LinearAlgebra.82e2fdfca28a851f9e9cb0dd8ee0c6ddf5dc2f0e91799c19cf5b3d74bb596ef1ExteriorBasic.Variant107268d3caf3d928361c187ab4241babb15ebcbcbfde16fee149420a8a10d42c
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**0 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/82e2fdfca28a851f9e9cb0dd8ee0c6ddf5dc2f0e91799c19cf5b3d74bb596ef1ExteriorBasic/Variant107268d3caf3d928361c187ab4241babb15ebcbcbfde16fee149420a8a10d42c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2fc9420061c9e6bcf7d3c35ffa8d1c141f044e7b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/LinearAlgebra/82e2fdfca28a851f9e9cb0dd8ee0c6ddf5dc2f0e91799c19cf5b3d74bb596ef1ExteriorBasic/Variant107268d3caf3d928361c187ab4241babb15ebcbcbfde16fee149420a8a10d42c.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
