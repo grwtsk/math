@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Local mathematical attribution: grwtsk contributors.
 Source argument: Ram Band, Siegfried Beckus, Raphael Loewy, arXiv:2402.16703v2,
 Theorem 1.1 proof using Theorem 1.10. Mathlib authorship and licenses remain upstream. -/
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
