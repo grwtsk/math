@@ -1,0 +1,38 @@
+# Queued source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-unit-coprime-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "de96ae5a424c4f635cd18bf579eaa40aea3f603a"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean"
+source_blob = "6c6929d9699efad4c5fe2e894ffc386b5de0a677"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerUnitCoprime.isUnit_power_iff_coprime_base",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerCoprimePowerIff",
+ "Mathlib.Data.ZMod.Basic",
+]
+missing_suppliers = [
+ "Prime p not coprime q iff p divides q",
+ "Compose prime-power nonunit support equivalence for all k>=2",
+ "Remove hsupport from downstream divisor packet bridge",
+]
+source_api_evidence = "Mathlib default-branch source search found ZMod.isUnit_iff_coprime; pinned revision API remains unverified"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerUnitCoprime"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerUnitCoprime.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
