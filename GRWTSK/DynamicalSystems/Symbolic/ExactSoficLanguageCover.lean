@@ -307,7 +307,7 @@ theorem rightContexts_card_le_exactPresentation
         ¬ (language (words i ++ suffix) ↔
             language (words j ++ suffix))) :
     n ≤ P.stateCapacity := by
-  letI : Fintype P.State := P.finiteState
+  let : Fintype P.State := P.finiteState
   classical
   change n ≤ Fintype.card (Finset P.State)
   apply rightContexts_card_le_graphLanguage P.graph n words

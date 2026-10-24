@@ -1,7 +1,5 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical direction: grwtsk contributors.
-Formalization assistance: OpenAI.
 Huffman, Bombieri, Mathlib and all imported repository source identities
 retain their original authorship and licenses.
 

@@ -1,5 +1,4 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Formalization assistance: OpenAI.
 
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 Do not import this module from GRWTSK.lean until a pinned warning-clean build,
