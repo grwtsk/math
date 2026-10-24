@@ -118,4 +118,42 @@ theorem norm_finitePsiResidue_sub_reduced_main_le
   exact norm_unitPsi_sub_reduced_total_main_le
     q N χ a principal E main P hχ hprincipal hunit hE hmain
 
+
+/-- Under an explicit cardinality identification, character reconstruction
+controls the totient-scaled finite theta error. Prime-power correction
+is retained as a separate supplied bound, not silently discarded. -/
+theorem norm_totient_theta_sub_main_le
+    (q N r : ℕ) (hq : 0 < q) (hr : r < q)
+    {κ : Type*} [Fintype κ]
+    (χ : κ → (ZMod q)ˣ → ℂ)
+    (a : (ZMod q)ˣ) (ha : (a : ZMod q) = (r : ZMod q))
+    (principal : κ) (E : κ → ℝ)
+    (main : ℂ) (P C : ℝ)
+    (hcard : Fintype.card κ = Nat.totient q)
+    (hχ : OrthogonalAt χ a)
+    (hprincipal : ∀ b : (ZMod q)ˣ, χ principal b = 1)
+    (hunit : ∀ k : κ, ‖χ k a‖ ≤ 1)
+    (hE : ∀ k ∈ Finset.univ.erase principal,
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ k b‖ ≤ E k)
+    (hmain : ‖unitPsiTotal q N - main‖ ≤ P)
+    (hcorr :
+      ‖(Nat.totient q : ℂ) *
+          (finiteProperPrimePowerCorrection N q r : ℂ)‖ ≤ C) :
+    ‖(Nat.totient q : ℂ) * finiteThetaResidue N q r - main‖ ≤
+      (∑ k ∈ Finset.univ.erase principal, E k) + P + C := by
+  have hpsi := norm_finitePsiResidue_sub_reduced_main_le
+    q N r hq hr χ a ha principal E main P
+    hχ hprincipal hunit hE hmain
+  rw [hcard] at hpsi
+  have hsplit := finitePsiResidue_eq_theta_add_correction N q r
+  have hdecomp :
+      (Nat.totient q : ℂ) * finiteThetaResidue N q r - main =
+        ((Nat.totient q : ℂ) * (finitePsiResidue N q r : ℂ) - main) -
+          (Nat.totient q : ℂ) *
+            (finiteProperPrimePowerCorrection N q r : ℂ) := by
+    rw [hsplit]
+    ring
+  rw [hdecomp]
+  exact (norm_sub_le _ _).trans (add_le_add hpsi hcorr)
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
