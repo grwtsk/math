@@ -676,6 +676,70 @@ theorem certified_spectral_hodge_harmonic_trivial {n : ℕ}
   nlinarith
 
 
+
+/-!
+## A concrete global coercivity supplier from positive-semidefinite operators
+
+For a positive-semidefinite continuous real Hilbert-space operator B, choose
+C = id and R = the actual real inner-product pairing. Then
+R ((I+B)y) (Cy) = ‖y‖² + ⟪B y, y⟫, so the original global residual
+coercivity is obtained with ε=1, rather than being assumed.
+This supplies the coercivity *for this operator class*, not for arbitrary
+Navier--Stokes PDE solutions or unrelated spectral operators.
+-/
+
+section PositiveOperators
+
+variable {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+
+/-- Real Hilbert-space positivity constructs the full global coercivity
+certificate for the moment operator I+B, with C=id and residual pairing
+equal to the real inner product. -/
+theorem positive_operator_residual_coercivity
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    (1 : ℝ) * ‖(ContinuousLinearMap.id ℝ H) y‖ ^ 2 ≤
+      (innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)
+        (momentMatrix B (ContinuousLinearMap.id ℝ H) y)
+        ((ContinuousLinearMap.id ℝ H) y) := by
+  have hJ : momentMatrix B (ContinuousLinearMap.id ℝ H) y =
+      y + B y := by
+    simp [momentMatrix, add_comm]
+  simp only [one_mul, ContinuousLinearMap.id_apply, innerSL_apply_apply]
+  rw [hJ, inner_add_left, real_inner_self_eq_norm_sq]
+  exact le_add_of_nonneg_right (hBpos y)
+
+/-- The actual positivity certificate discharges the global coercivity
+hypothesis of the adapted OpenAI finite-rank gap, with explicit operator
+norm choices β=‖B‖ and δ=‖innerSL ℝ‖. -/
+theorem positive_operator_moment_gap
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    (1 / (1 + ‖B‖ *
+      ‖(innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)‖) * ‖y‖ ≤
+      ‖momentMatrix B (ContinuousLinearMap.id ℝ H) y‖ := by
+  exact finite_rank_gap B (ContinuousLinearMap.id ℝ H)
+    (innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)
+    (by norm_num) (le_refl _) (le_refl _)
+    (fun x => positive_operator_residual_coercivity B hBpos x) y
+
+/-- A positive-semidefinite continuous real Hilbert-space operator has an
+injective identity shift. Here the result is supplied by the global
+coercivity certificate, not merely by a finite numerical observation. -/
+theorem positive_operator_moment_injective
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y) :
+    Function.Injective (momentMatrix B (ContinuousLinearMap.id ℝ H)) := by
+  exact certified_moment_injective B (ContinuousLinearMap.id ℝ H)
+    (innerSL ℝ : H →L[ℝ] H →L[ℝ] ℝ)
+    (by norm_num) (le_refl _) (le_refl _)
+    (fun x => positive_operator_residual_coercivity B hBpos x)
+
+end PositiveOperators
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
