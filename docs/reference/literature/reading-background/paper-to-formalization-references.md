@@ -10252,9 +10252,10 @@ bylines**:
 - `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`: year **2026**,
   “Copyright (c) 2026 grwtsk contributors” and “Formalization assistance:
   OpenAI.” No individual mathematical-direction byline is stated in that file.
-- `GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`: year **2026**,
-  “Copyright (c) 2026 grwtsk contributors,” “Mathematical direction:
-  grwtsk contributors,” and “Formalization assistance: OpenAI.”
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`: current
+  local source metadata, year **2026**, **grwtsk contributors** only.
+  Earlier immutable blobs remain historical source identities and are not
+  transferred as current byline/credit metadata.
 
 ### Literal identifiers replacing abbreviated names in the affected provenance
 
@@ -10666,8 +10667,9 @@ fully qualified namespaces**:
   \`GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover.QuasiRiemannAccountingSystem.eventually_fits_gap\`;
   source \`GRWTSK/NumberTheory/Zeta/Riemann/HeatFlowLosslessCompressionCover.lean\`,
   blob **53fd473d9d0fa788065b3d6a83349353549ba8b3**.
-  Source header: **2026 grwtsk contributors**, formalization
-  assistance OpenAI, no independent full local byline listed.
+  Current local source metadata: **2026 grwtsk contributors**.
+  Earlier pre-normalization blobs remain immutable historical source identities,
+  but are not the current local byline/credit metadata.
   The process-cover commutation/left-inverse is **supplied data**;
   asymptotically-free accounting does **not** supply analytic
   stage nonvanishing.
@@ -10715,8 +10717,8 @@ optimality or minimum expected length theorem.
   \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary.no_total_lossless_decoder_from_moment_only_postprocessing\`;
   source \`GRWTSK/NumberTheory/Zeta/Riemann/BombieriHuffmanLosslessBoundary.lean\`,
   blob **901939ee5cce378631d0aad819fdf6fdb4a4775c**.
-  Source header 2026 grwtsk contributors, OpenAI formalization
-  assistance; the two moments are **already noninjective** on
+  Current local source metadata: **2026 grwtsk contributors**;
+  the two moments are **already noninjective** on
   actual corrected tent coordinates. Any postprocessing is forced
   to preserve that collision.
 - \`GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover.huffmanByteCodec\`;
@@ -10763,8 +10765,8 @@ the whole Guinand–Weil quadratic form or the full test class.
   \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.not_factorsThroughBombieriMoments_of_separates_corrected\`;
   \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean\`,
   Git blob **9a2435d9c74b89ce1434c45bade1aa9beaa6cead**.
-  Header: **2026 grwtsk contributors** (mathematical direction),
-  OpenAI formalization assistance. Exact local obstruction:
+  Current local source metadata: **2026 grwtsk contributors**.
+  Exact local obstruction:
   nonzero source-corrected vector in the *three*-tent span
   shares the same two moments with zero. Classical
   Weil-diagonal separation remains a **separate premise**.
@@ -10773,8 +10775,7 @@ the whole Guinand–Weil quadratic form or the full test class.
   \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_source_decoder_from_bombieri_huffman_packets\`;
   source \`GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean\`,
   blob **5e52e67b72a1f4d1ee214442114d7f452e2395e6**.
-  Header: 2026 grwtsk contributors, mathematical direction
-  grwtsk contributors, OpenAI assistance.
+  Current local source metadata: **2026 grwtsk contributors**.
 - \`GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction.no_exact_reconstruction_from_momentOnly_history\`,
   \`GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction.no_lossless_spectral_cover_after_moment_collapse\`;
   source \`GRWTSK/NumberTheory/Zeta/Riemann/DynamicBombieriSoficObstruction.lean\`,
@@ -10994,12 +10995,13 @@ non-eventual-soficity = UNRESOLVED_PREMISE.
 **Toolchain and source snapshot:** \`grwtsk/math@beaae68f34fc6980385aca48975246e440eb233f\`,
 Lean \`leanprover/lean4:v4.33.0\`,
 Mathlib \`db584cd6d46c92f209a44c0f1c829460d327499d\`.
-Mathematical local source headers on the newly authored 2026
-Hodge, symbolic, Farey and zeta files generally identify
-“grwtsk contributors / mathematical direction grwtsk contributors / formalization assistance OpenAI”; exceptions where
-the literal source header contains fewer fields are described
-above, and **no unrecorded external author or influence** is
-inferred. Mathlib declarations retain upstream authorship.
+Current local byline/copyright/metadata rule for the active 2026
+repository sources is **grwtsk contributors** only. Personal local-direction
+and local-assistance credits have been removed from current source metadata.
+Older immutable commits/blobs may preserve their historical bytes and remain
+valid source identities, but those historical bytes are not current attribution.
+Genuine external paper authors and upstream Mathlib authors/licenses remain
+unchanged, and **no unrecorded external author or influence** is inferred.
 
 **Actual executed verification:** exact Git source/blob readback
 of the named modules was performed. Local source scans and
@@ -11057,3 +11059,151 @@ External execution registry availability remains unconfirmed;
 neither issue authorizes execution or provides an accepted
 kernel/axiom receipt. **COMPILATION NOT_RUN / FRESH_KERNEL
 NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN** for the new source.
+
+
+## BaseSpecialization source-order repair and current attribution precedence — 2026-10-23
+
+**Precedence and scope.** This entry supersedes any current-attribution wording
+in the active heat/Bombieri/sofic/zeta source-family entries that names an
+individual local mathematical-direction credit or local formalization-assistance
+credit. Current local byline/copyright/metadata is **grwtsk contributors** only.
+Genuine external paper authors, upstream authors/licenses, and immutable
+historical commit/blob identities remain unchanged.
+
+### Source-order defect and separate repair identity
+
+Static review of
+`GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean` at
+`grwtsk/math@720b3c0ddedb0fbab0da9695365f176213f12da9`,
+blob `720d541d6f1d6942164327565174490c4b3ce971`, found a
+**source-order elaboration risk**:
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map`
+called
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization`
+before that latter theorem was declared in the same file.
+This was source inspection only, **not an executed compiler result**.
+
+The source-order repair is a distinct immutable mathematical source commit:
+
+- repair commit:
+  `3af464d97e3b0244ed4435f10c70d8e639662add`;
+- repaired pre-attribution source blob:
+  `2defe035bafe0c6c339bce4abef74da6874022fe`.
+
+The repaired
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map`
+now proves the implication directly. It retains exactly:
+
+- the supplied map `embed : BaseZero → Zero i0`;
+- zero preservation `mapsZero`;
+- criticality reflection `reflectsCritical`; and
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.GeneralizedHypothesis family`.
+
+Its proof introduces a base zero `z` with `hz`, obtains generalized
+criticality from `hGeneralized i0 (embed z) (mapsZero z hz)`, and returns base
+criticality via `reflectsCritical z hz`. No injectivity hypothesis is added,
+and no injectivity conclusion is proved.
+
+The original
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.embed`
+continues to be a supplied map only. The exact required structure fields remain
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.mapsZero`;
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.reflectsCritical`.
+
+### Attribution-only current blobs
+
+After the separate mathematical repair, local metadata was normalized under the
+current repository rule. These later edits do **not** transfer verification
+status from the repair blob; each new blob needs its own source-bound
+qualification.
+
+Current active-chain local source metadata is **2026 grwtsk contributors**.
+Relevant attribution-only/current source blobs include:
+
+- `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`:
+  `5881a2f2caf1aa0b1ec9267376cecb5895327afe`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean` after the
+  all-capacity composition:
+  `4626f58fe293d37943a4ec1900e64f84e29598b0`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean`:
+  `ef271172b8f792a189f3f7cd684448d05e0c7ddb`;
+- `GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean`:
+  `9ff399470e614d61212e992f743b975d408738d8`;
+- `GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean`:
+  `96cd39e158a9c3739a0f55fb08c56432db0adbcf`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/HeatFlowLosslessCompressionCover.lean`:
+  `07d01211798fe4e845067da3fced11bea45821c4`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/BombieriHuffmanLosslessBoundary.lean`:
+  `d20b7c1af47bfeb31b1b2dbb11ac96957e6d1f3d`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean`:
+  `acf20b926bdef2a2fa25a659872ed230b2f9343d`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean`:
+  `cdf02856aeeee15b55000182096f2cf2fe0a7f8a`;
+- `GRWTSK/NumberTheory/Zeta/Riemann/DynamicBombieriSoficObstruction.lean`:
+  `4490c3a65d8f1b44c2aa447c38c5b0445c6abbe3`;
+- `GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean`:
+  `290757773fe6f295c025287d0d673d9d82c773df`;
+- `GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean`:
+  `004fe24d0a710cc935263a2e71bd10287698f812`;
+- `GRWTSK/NumberTheory/Farey/DynamicSoficExactLanguageBoundary.lean`:
+  `cd0389d2e294ec6247c32d634fcd6c57670b25cd`.
+
+Genuine external names appearing in paper titles, bibliographic bylines, or
+upstream authorship/license notices are not local metadata and remain intact.
+
+### All-capacity spectral composition
+
+The pending mathematical followup also advanced independently at
+`a014a760130ca1f49abd099703b117340200bbe0`.
+The new fully qualified declaration is
+
+`GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_all_capacityCertificates`.
+
+It assumes, for the **same**
+`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover`
+trace, a family
+`∀ capacity, GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaTailContextCapacityCertificate process.labelTrace capacity`.
+It then uses
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_of_all_capacityCertificates`
+to obtain the previously required unbounded-tail-context supplier and invokes
+`GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate`.
+
+All other hypotheses remain explicit and independent:
+the generalized spectral-cover family, the dynamic spectral process,
+rational-ordinate-to-eventual-sofic classification,
+algebraic-critical-line-ordinate-to-eventual-sofic classification, and
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaCriticalPlacement`.
+No actual all-capacity certificate family is constructed for zeta zeros.
+
+### Validation separation
+
+The original passive request
+`grwtsk/noeaaeue#399` remains bound to the old
+`720b3c0ddedb0fbab0da9695365f176213f12da9` source and is historical.
+It has been explicitly marked superseded for current-source validation.
+No acceptance can transfer from that request to the repaired or
+attribution-normalized source.
+
+A fresh passive request,
+`grwtsk/noeaaeue#401`, was created for the repaired/current
+BaseSpecialization chain. It is a queue only, not an execution receipt.
+The local validation-query discovery repair at
+`grwtsk/noeaaeue@623825aaa2a205733e33ea4ff04264c30132139d`
+still reports `registry_required=true`, `registry_available=false`,
+`native_readiness=not_checked`, and `proof_acceptance=false`; therefore
+source-bound registry/profile qualification and existing native execution holds
+continue to govern any future dispatch.
+
+**Verification state for the repair and later current blobs remains explicit:**
+direct compilation **NOT_RUN**, target build **NOT_RUN**, fresh independent
+kernel checking **NOT_RUN**, transitive axiom/`sorryAx`/unsafe audit
+**NOT_RUN / NOT_KERNEL_AUDITED** unless a separate exact accepted receipt is
+recorded. Static source review, a validation query, or a passive issue is not
+Lean/kernel acceptance.
+
+All previously listed mathematical followups remain pending: construction of
+actual zeta/Dirichlet source traces, all-capacity continuation certificates,
+arithmetic-to-eventual-sofic bridges, genuine spectral-cover maps,
+criticality transport, the full Weil/Guinand source bridge, and independently
+valid analytic stages cofinal above the strict `3/4` boundary.
