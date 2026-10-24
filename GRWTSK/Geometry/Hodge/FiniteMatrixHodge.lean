@@ -359,4 +359,112 @@ theorem euclideanLaplacian_no_positive_gap [Nonempty Vertex]
       (by simpa only [sub_self, norm_zero] using hγ)
   exact euclideanLaplacian_not_injective G hinj
 
+
+/-!
+## Sharp unit gap for the actual shifted finite graph Hodge operator
+
+The existing incidence-graph quadratic identity proves positive
+semidefiniteness. The sharp positive-operator moment theorem therefore
+supplies a unit least-norm bound for I+Δ, even though Δ itself has
+constant zero modes. For nonempty vertices this unit bound is optimal.
+-/
+
+/-- The actual shifted graph Hodge Laplacian has the sharp unit norm
+lower bound, independent of degree, incidence, and graph connectivity. -/
+theorem graphHodge_shift_unit_gap
+    (G : OrientedIncidence Vertex Edge) (y : EuclideanSpace ℝ Vertex) :
+    ‖y‖ ≤
+      ‖momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex)) y‖ :=
+  positive_operator_moment_sharp_gap
+    (euclideanLaplacian G) (euclideanLaplacian_nonneg G) y
+
+/-- A perturbed graph Hodge shift retains a quantitative margin
+1-‖P-(I+Δ)‖, without assuming positivity of P. -/
+theorem graphHodge_shift_perturbed_unit_gap
+    (G : OrientedIncidence Vertex Edge)
+    (P : EuclideanSpace ℝ Vertex →L[ℝ] EuclideanSpace ℝ Vertex)
+    (y : EuclideanSpace ℝ Vertex) :
+    (1 - ‖P - momentMatrix (euclideanLaplacian G)
+      (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex))‖) * ‖y‖ ≤
+      ‖P y‖ :=
+  positive_operator_perturbed_sharp_gap
+    (euclideanLaplacian G) P (euclideanLaplacian_nonneg G) y
+
+/-- Finite graph Hodge positivity preserves the determinant orientation
+under every continuous-linear perturbation of its shift of norm < 1. -/
+theorem graphHodge_shift_perturbed_det_sign
+    (G : OrientedIncidence Vertex Edge)
+    (P : EuclideanSpace ℝ Vertex →L[ℝ] EuclideanSpace ℝ Vertex)
+    (hpert : ‖P - momentMatrix (euclideanLaplacian G)
+      (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex))‖ < 1) :
+    0 < (momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex))).det * P.det :=
+  positive_operator_perturbed_det_sign
+    (euclideanLaplacian G) P (euclideanLaplacian_nonneg G) hpert
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+
+/-- The concrete finite-coordinate adjoint reconstruction based on I+Δ
+contracts with relative factor 1-damping, not the weaker factor from
+the general norm-dependent moment bound. -/
+theorem graphHodge_shift_adjoint_unit_contraction
+    {n : ℕ} (G : OrientedIncidence (Fin n) Edge) (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix
+      (momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+      (1 - damping Finset.univ Finset.univ A) * energy Finset.univ v ∧
+    1 - damping Finset.univ Finset.univ A < 1 :=
+  positive_euclidean_moment_sharp_contraction
+    (euclideanLaplacian G) (euclideanLaplacian_nonneg G) v
+
+/-- The constant graph cochain is fixed by the shifted Laplacian I+Δ.
+This is the equality witness for the unit lower norm bound. -/
+theorem graphHodge_shift_constant_fixed
+    (G : OrientedIncidence Vertex Edge) :
+    momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex))
+        (WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ))) =
+      WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ)) := by
+  have hJ :
+      momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex))
+        (WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ))) =
+      WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ)) +
+        euclideanLaplacian G (WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ))) := by
+    simp [momentMatrix, add_comm]
+  rw [hJ, euclideanLaplacian_constant_zero G, add_zero]
+
+/-- On every nonempty finite graph, the unit constant is genuinely optimal:
+no global bound with a coefficient greater than one can hold for I+Δ. -/
+theorem graphHodge_shift_unit_gap_optimal [Nonempty Vertex]
+    (G : OrientedIncidence Vertex Edge) (γ : ℝ)
+    (hgap : ∀ y : EuclideanSpace ℝ Vertex,
+      γ * ‖y‖ ≤
+        ‖momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex)) y‖) :
+    γ ≤ 1 := by
+  let c : EuclideanSpace ℝ Vertex :=
+    WithLp.toLp 2 (fun _ : Vertex => (1 : ℝ))
+  have hc : c ≠ 0 := by
+    intro hzero
+    obtain ⟨v⟩ := ‹Nonempty Vertex›
+    have hv : (1 : ℝ) = 0 := by
+      simpa [c] using
+        congrArg (fun w : EuclideanSpace ℝ Vertex => w v) hzero
+    norm_num at hv
+  have hcpos : 0 < ‖c‖ := norm_pos_iff.mpr hc
+  have hfixed :
+      momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ Vertex)) c = c :=
+    graphHodge_shift_constant_fixed G
+  have h := hgap c
+  rw [hfixed] at h
+  have hbound : γ * ‖c‖ ≤ (1 : ℝ) * ‖c‖ := by
+    simpa only [one_mul] using h
+  exact (mul_le_mul_iff_of_pos_right hcpos).mp hbound
+
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
