@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.SourceActualNearMeanInteriorFrontierIndependentTypes.Variant58e891334ed04f2c7e86dc0635c826d879ceea6d827346b2ec59572e9bdc579a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `baa5e7fce8c5b7739f4fca3c9fbac739496ba3f1` · SHA-256 `58e891334ed04f2c7e86dc0635c826d879ceea6d827346b2ec59572e9bdc579a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualNearMeanInteriorFrontier
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier
+#check actualNearPeriodicWork
+#print axioms actualNearPeriodicWork
+#check actualIntegratedMeanResolvedBoundary
+#print axioms actualIntegratedMeanResolvedBoundary
+#check actualNearMeanInterior
+#print axioms actualNearMeanInterior
+#check actualNearMeanRetainedRemainder
+#print axioms actualNearMeanRetainedRemainder
+#check actualNearPeriodicWork_intervalIntegrable
+#print axioms actualNearPeriodicWork_intervalIntegrable
+#check actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#print axioms actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#check actualAdjustedInterior_eq_near_mean_sub_far
+#print axioms actualAdjustedInterior_eq_near_mean_sub_far
+#check actualAdjustedInterior_sub_near_mean_abs_le
+#print axioms actualAdjustedInterior_sub_near_mean_abs_le
+#check actualAdjustedInterior_sub_near_mean_tendsto_zero
+#print axioms actualAdjustedInterior_sub_near_mean_tendsto_zero
+#check actualRetainedRemainder_sub_near_mean_eq
+#print axioms actualRetainedRemainder_sub_near_mean_eq
+#check actualCompensatedWork_sub_near_mean_abs_le
+#print axioms actualCompensatedWork_sub_near_mean_abs_le
+#check actualCompensatedWork_sub_near_mean_tendsto_zero
+#print axioms actualCompensatedWork_sub_near_mean_tendsto_zero
+#check actualResidual_near_mean_pointwise_comparison
+#print axioms actualResidual_near_mean_pointwise_comparison
+```

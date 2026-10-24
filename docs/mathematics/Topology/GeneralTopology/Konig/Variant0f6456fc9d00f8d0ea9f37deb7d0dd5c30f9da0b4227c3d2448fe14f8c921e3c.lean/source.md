@@ -1,0 +1,159 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Konig.Variant0f6456fc9d00f8d0ea9f37deb7d0dd5c30f9da0b4227c3d2448fe14f8c921e3c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8c40e5e259acb028ad65887557e9363cec528205` · SHA-256 `def9cd92ca122ece76d7391ee36f2f9fb381df31f33e801c8c3b2e4ea915b62b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.FiniteDiagramArrow.Variantf163229e6104b564ceaac001bbec114a7c588d30a135bc13982cc79c617f1800","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f163229e6104b564ceaac001bbec114a7c588d30a135bc13982cc79c617f1800","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.FiniteDiagramArrow.Variantf163229e6104b564ceaac001bbec114a7c588d30a135bc13982cc79c617f1800","mathematical_subject":"Topology.GeneralTopology","original_sha256":"f163229e6104b564ceaac001bbec114a7c588d30a135bc13982cc79c617f1800","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/Category/TopCat/Limits/Konig.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Kyle Miller. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kyle Miller
+-/
+module
+
+public import Mathlib.CategoryTheory.Filtered.Basic
+public import Mathlib.Topology.Category.TopCat.Limits.Basic
+
+/-!
+# Topological Kőnig's lemma
+
+A topological version of Kőnig's lemma is that the inverse limit of nonempty compact Hausdorff
+spaces is nonempty.  (Note: this can be generalized further to inverse limits of nonempty compact
+T0 spaces, where all the maps are closed maps; see [Stone1979] --- however there is an erratum
+for Theorem 4 that the element in the inverse limit can have cofinally many components that are
+not closed points.)
+
+We give this in a more general form, which is that cofiltered limits
+of nonempty compact Hausdorff spaces are nonempty
+(`nonempty_limitCone_of_compact_t2_cofiltered_system`).
+
+This also applies to inverse limits, where `{J : Type u} [Preorder J] [IsDirectedOrder J]` and
+`F : Jᵒᵖ ⥤ TopCat`.
+
+The theorem is specialized to nonempty finite types (which are compact Hausdorff with the
+discrete topology) in lemmas `nonempty_sections_of_finite_cofiltered_system` and
+`nonempty_sections_of_finite_inverse_system` in `Mathlib/CategoryTheory/CofilteredSystem.lean`.
+
+(See <https://stacks.math.columbia.edu/tag/086J> for the Set version.)
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.FiniteDiagramArrow.Variantf163229e6104b564ceaac001bbec114a7c588d30a135bc13982cc79c617f1800
+
+@[expose] public section
+
+open CategoryTheory
+
+open CategoryTheory.Limits
+
+universe v u w
+
+noncomputable section
+
+namespace TopCat
+
+section TopologicalKonig
+
+variable {J : Type u} [SmallCategory J]
+
+variable (F : J ⥤ TopCat.{v})
+
+set_option backward.privateInPublic true in
+private abbrev FiniteDiagramArrow {J : Type u} [SmallCategory J] (G : Finset J) :=
+  Σ' (X Y : J) (_ : X ∈ G) (_ : Y ∈ G), X ⟶ Y
+
+set_option backward.privateInPublic true in
+private abbrev FiniteDiagram (J : Type u) [SmallCategory J] :=
+  Σ G : Finset J, Finset (FiniteDiagramArrow G)
+
+set_option backward.privateInPublic true in
+set_option backward.privateInPublic.warn false in
+/-- Partial sections of a cofiltered limit are sections when restricted to
+a finite subset of objects and morphisms of `J`.
+-/
+def partialSections {J : Type u} [SmallCategory J] (F : J ⥤ TopCat.{v}) {G : Finset J}
+    (H : Finset (FiniteDiagramArrow G)) : Set (∀ j, F.obj j) :=
+  {u | ∀ {f : FiniteDiagramArrow G} (_ : f ∈ H), F.map f.2.2.2.2 (u f.1) = u f.2.1}
+
+set_option backward.privateInPublic true in
+set_option backward.privateInPublic.warn false in
+theorem partialSections.nonempty [IsCofilteredOrEmpty J] [h : ∀ j : J, Nonempty (F.obj j)]
+    {G : Finset J} (H : Finset (FiniteDiagramArrow G)) : (partialSections F H).Nonempty := by
+  classical
+  cases isEmpty_or_nonempty J
+  · exact ⟨isEmptyElim, fun {j} => IsEmpty.elim' inferInstance j.1⟩
+  have : IsCofiltered J := ⟨⟩
+  use fun j : J =>
+    if hj : j ∈ G then F.map (IsCofiltered.infTo G H hj) (h (IsCofiltered.inf G H)).some
+    else (h _).some
+  rintro ⟨X, Y, hX, hY, f⟩ hf
+  dsimp only
+  rwa [dite_eq_left hX, dite_eq_left hY, ← comp_app, ← F.map_comp,
+    @IsCofiltered.infTo_commutes _ _ _ G H]
+
+set_option backward.privateInPublic true in
+set_option backward.privateInPublic.warn false in
+theorem partialSections.directed :
+    Directed GE.ge fun G : FiniteDiagram J => partialSections F G.2 := by
+  classical
+  intro A B
+  let ιA : FiniteDiagramArrow A.1 → FiniteDiagramArrow (A.1 ⊔ B.1) := fun f =>
+    ⟨f.1, f.2.1, Finset.mem_union_left _ f.2.2.1, Finset.mem_union_left _ f.2.2.2.1, f.2.2.2.2⟩
+  let ιB : FiniteDiagramArrow B.1 → FiniteDiagramArrow (A.1 ⊔ B.1) := fun f =>
+    ⟨f.1, f.2.1, Finset.mem_union_right _ f.2.2.1, Finset.mem_union_right _ f.2.2.2.1, f.2.2.2.2⟩
+  refine ⟨⟨A.1 ⊔ B.1, A.2.image ιA ⊔ B.2.image ιB⟩, ?_, ?_⟩
+  · rintro u hu f hf
+    have : ιA f ∈ A.2.image ιA ⊔ B.2.image ιB := by
+      apply Finset.mem_union_left
+      rw [Finset.mem_image]
+      exact ⟨f, hf, rfl⟩
+    exact hu this
+  · rintro u hu f hf
+    have : ιB f ∈ A.2.image ιA ⊔ B.2.image ιB := by
+      apply Finset.mem_union_right
+      rw [Finset.mem_image]
+      exact ⟨f, hf, rfl⟩
+    exact hu this
+
+set_option backward.privateInPublic true in
+set_option backward.privateInPublic.warn false in
+theorem partialSections.closed [∀ j : J, T2Space (F.obj j)] {G : Finset J}
+    (H : Finset (FiniteDiagramArrow G)) : IsClosed (partialSections F H) := by
+  have :
+    partialSections F H =
+      ⋂ (f : FiniteDiagramArrow G) (_ : f ∈ H), {u | F.map f.2.2.2.2 (u f.1) = u f.2.1} := by
+    ext1
+    simp only [Set.mem_iInter, Set.mem_ofPred_eq]
+    rfl
+  rw [this]
+  apply isClosed_biInter
+  intro f _
+  apply isClosed_eq <;> fun_prop
+
+/-- Cofiltered limits of nonempty compact Hausdorff spaces are nonempty topological spaces.
+-/
+theorem nonempty_limitCone_of_compact_t2_cofiltered_system (F : J ⥤ TopCat.{max v u})
+    [IsCofilteredOrEmpty J]
+    [∀ j : J, Nonempty (F.obj j)] [∀ j : J, CompactSpace (F.obj j)] [∀ j : J, T2Space (F.obj j)] :
+    Nonempty (TopCat.limitCone F).pt := by
+  classical
+  obtain ⟨u, hu⟩ :=
+    IsCompact.nonempty_iInter_of_directed_nonempty_isCompact_isClosed (fun G => partialSections F _)
+      (partialSections.directed F) (fun G => partialSections.nonempty F _)
+      (fun G => IsClosed.isCompact (partialSections.closed F _)) fun G =>
+      partialSections.closed F _
+  use u
+  intro X Y f
+  let G : FiniteDiagram J := ⟨{X, Y}, {⟨X, Y, by grind, by grind, f⟩}⟩
+  exact hu _ ⟨G, rfl⟩ (Finset.mem_singleton_self _)
+
+end TopologicalKonig
+
+end TopCat
+```

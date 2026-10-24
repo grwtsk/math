@@ -1,0 +1,119 @@
+# quasiSober_of_open_cover
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "7aae3bfd46942645ce342758c524f1ed6161db77",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 217,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/bf/bf6e72987a6d91d1ebe5b4cdbabe50b2193faeda8d91f2a1d3dd38b0b53c5f16.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:e6cdd454-e56a-b0e2-5623-f8e71a100887",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:bf893332-dfd4-acd5-81d3-b908f77c22bb",
+  "kind": "theorem",
+  "lexical_name": "quasiSober_of_open_cover",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "quasisober-of-open-cover--cba0e0cb603b72fa347bd838",
+  "source": {
+    "blob": "7aae3bfd46942645ce342758c524f1ed6161db77",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 242,
+    "line": 217,
+    "path": "GRWTSK/Topology/GeneralTopology/Sober/Variantbf6e72987a6d91d1ebe5b4cdbabe50b2193faeda8d91f2a1d3dd38b0b53c5f16.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:cba0e0cb603b72fa347bd83838c83c4310c94321c074f6c54fa9ffb6b21c94a1",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Sober/Variantbf6e72987a6d91d1ebe5b4cdbabe50b2193faeda8d91f2a1d3dd38b0b53c5f16.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:bf893332-dfd4-acd5-81d3-b908f77c22bb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 217–242.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem quasiSober_of_open_cover (S : Set (Set α)) (hS : ∀ s : S, IsOpen (s : Set α))
+    [hS' : ∀ s : S, QuasiSober s] (hS'' : ⋃₀ S = ⊤) : QuasiSober α := by
+  rw [quasiSober_iff]
+  intro t h h'
+  obtain ⟨x, hx⟩ := h.1
+  obtain ⟨U, hU, hU'⟩ : x ∈ ⋃₀ S := by
+    rw [hS'']
+    trivial
+  haveI : QuasiSober U := hS' ⟨U, hU⟩
+  have H : IsPreirreducible ((↑) ⁻¹' t : Set U) :=
+    h.2.preimage (hS ⟨U, hU⟩).openEmbedding_subtype_val
+  replace H : IsIrreducible ((↑) ⁻¹' t : Set U) := ⟨⟨⟨x, hU'⟩, by simpa using hx⟩, H⟩
+  use H.genericPoint
+  have := continuous_subtype_val.closure_preimage_subset _ H.genericPoint_spec.mem
+  rw [h'.closure_eq] at this
+  apply le_antisymm
+  · apply h'.closure_subset_iff.mpr
+    simpa using this
+  rw [← image_singleton, ← closure_image_closure continuous_subtype_val, H.genericPoint_spec.def]
+  refine' (subset_closure_inter_of_isPreirreducible_of_isOpen h.2 (hS ⟨U, hU⟩) ⟨x, hx, hU'⟩).trans
+    (closure_mono _)
+  rw [← Subtype.image_preimage_coe]
+  exact Set.image_subset _ subset_closure
+#align quasi_sober_of_open_cover quasiSober_of_open_cover
+
+/-- Any Hausdorff space is a quasi-sober space because any irreducible set is a singleton. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Sober/Variantbf6e72987a6d91d1ebe5b4cdbabe50b2193faeda8d91f2a1d3dd38b0b53c5f16.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Sober/Variantbf6e72987a6d91d1ebe5b4cdbabe50b2193faeda8d91f2a1d3dd38b0b53c5f16.lean#L217).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7aae3bfd46942645ce342758c524f1ed6161db77` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

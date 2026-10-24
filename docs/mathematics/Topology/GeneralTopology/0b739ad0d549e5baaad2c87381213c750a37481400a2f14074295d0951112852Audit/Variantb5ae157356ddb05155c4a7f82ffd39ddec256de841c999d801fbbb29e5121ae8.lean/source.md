@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852Audit.Variantb5ae157356ddb05155c4a7f82ffd39ddec256de841c999d801fbbb29e5121ae8
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9157493a845c7f12652df427f6a162b03f613ee6` · SHA-256 `ef0cb810587bca36a34005830a34bc5a9380ba3d50e3548c57d3b212397e2ead`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.ZeroFormConvergence.Variant0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.ZeroFormConvergence.Variant0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852","mathematical_subject":"Topology.GeneralTopology","original_sha256":"0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/0b/0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852--Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence
+
+namespace GRWTSK.Topology.GeneralTopology.ZeroFormConvergence.Variant0b739ad0d549e5baaad2c87381213c750a37481400a2f14074295d0951112852
+
+set_option pp.proofs false
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.smoothedTest_form_error_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.smoothedTest_form_error_le
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.smoothedTest_form_tendsto
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.smoothedTest_form_tendsto
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.source_form_tendsto
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.source_form_tendsto
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.source_logarithmic_form_convergence
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormConvergence.source_logarithmic_form_convergence
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormContinuity.formCoefficient
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormContinuity.poleCoefficient
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroFormContinuity.primeCoefficient
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedeanValue
+```

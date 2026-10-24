@@ -1,0 +1,85 @@
+# PerfectlyNormalSpace
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:21d9aa98bfaacd221413b69788d8afdb6fc2b78d565d1b4b22cd1e53fe958ee0",
+  "kind": "class",
+  "lexical_name": "PerfectlyNormalSpace",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "perfectlynormalspace--5da5ab941427a4923094e9e0",
+  "source": {
+    "blob": "7fe41b7380b60e57fc81c37e699c93d511cd4891",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 71,
+    "line": 68,
+    "path": "GRWTSK/Topology/GeneralTopology/GDelta/Variantc4b1cc0afb22dd2eeed505ea5c048754f8fabc55f45bc0d1acf5a617b1a5ae76.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:5da5ab941427a4923094e9e05a45f12a1459dd1489def2c8122f335d0853d7e9",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/GDelta/Variantc4b1cc0afb22dd2eeed505ea5c048754f8fabc55f45bc0d1acf5a617b1a5ae76.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `class` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:21d9aa98bfaacd221413b69788d8afdb6fc2b78d565d1b4b22cd1e53fe958ee0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 68–71.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+class PerfectlyNormalSpace (X : Type u) [TopologicalSpace X] : Prop extends NormalSpace X where
+    closed_gdelta : ∀ ⦃h : Set X⦄, IsClosed h → IsGδ h
+
+/-- Lemma that allows the easy conclusion that perfectly normal spaces are completely normal. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/GDelta/Variantc4b1cc0afb22dd2eeed505ea5c048754f8fabc55f45bc0d1acf5a617b1a5ae76.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/GDelta/Variantc4b1cc0afb22dd2eeed505ea5c048754f8fabc55f45bc0d1acf5a617b1a5ae76.lean#L68).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7fe41b7380b60e57fc81c37e699c93d511cd4891` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

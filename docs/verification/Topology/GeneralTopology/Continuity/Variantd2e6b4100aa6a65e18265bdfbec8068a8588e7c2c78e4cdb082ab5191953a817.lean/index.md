@@ -1,0 +1,118 @@
+# Verification target: GRWTSK.Topology.GeneralTopology.Continuity.Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c54a8b36b1b4f089573b6e94688f49ca23065f36",
+  "lexical_observation_count": 57,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/index.md) · [Full source](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c54a8b36b1b4f089573b6e94688f49ca23065f36`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [zero_cpow_eq_nhds](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/zero-cpow-eq-nhds--62ac38cf4cefdbb24a385942.md) | 39 | `result-track:62ac38cf4cefdbb24a3859424cab5851aaa07e7718a1e78977847c0cfa4f7b01` |
+| 2 | `theorem` | [cpow_eq_nhds](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/cpow-eq-nhds--23e61d96ffebd405ad675e52.md) | 46 | `result-track:23e61d96ffebd405ad675e5284825260c487130d47669d6304ea473db5df2ed0` |
+| 3 | `theorem` | [cpow_eq_nhds'](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/cpow-eq-nhds--d35b01cc9ff2bfa2c30ac9aa.md) | 54 | `result-track:d35b01cc9ff2bfa2c30ac9aa1b4989cb4dc8b2bedfef03faa26f3fce876d11d3` |
+| 4 | `theorem` | [continuousAt_const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-const-cpow--db9f142c2eb40ff743429fa8.md) | 66 | `result-track:db9f142c2eb40ff743429fa823883229b7c21c8e7c8e3d4de1b576e73ca4e24b` |
+| 5 | `theorem` | [continuousAt_const_cpow'](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-const-cpow--81b5520b067a9e15cc7878db.md) | 73 | `result-track:81b5520b067a9e15cc7878db3f22ce72064e0dcc3c3fca88af9557c60a58f09a` |
+| 6 | `theorem` | [continuousAt_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-cpow--021d37a4eac22d8c3bfc0c40.md) | 82 | `result-track:021d37a4eac22d8c3bfc0c405008d29002258fa2680a84a18000e3d932eae702` |
+| 7 | `theorem` | [continuousAt_cpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-cpow-const--87d326ec25ef20ca22b14946.md) | 91 | `result-track:87d326ec25ef20ca22b14946653742de2936f3b0e3770580186b7abc45d64deb` |
+| 8 | `theorem` | [Filter.Tendsto.cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/filter-tendsto-cpow--07b45a887b8f2fc72a9a58c9.md) | 95 | `result-track:07b45a887b8f2fc72a9a58c9085efe8748b526b05edba30e41e8a5dcf5d59f7d` |
+| 9 | `theorem` | [Filter.Tendsto.const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/filter-tendsto-const-cpow--513bd245fc3f769d28255ce3.md) | 100 | `result-track:513bd245fc3f769d28255ce32d268b696ab732dfb2f8c93743c5a5e2d25b6a45` |
+| 10 | `theorem` | [ContinuousWithinAt.cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouswithinat-cpow--158f3979b5a842297ae4d700.md) | 108 | `result-track:158f3979b5a842297ae4d700cfa9f7566ecd983e703200caa9e6fe317f6e833d` |
+| 11 | `theorem` | [ContinuousWithinAt.const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouswithinat-const-cpow--ecac560fa2d6ffa9cc5fde9e.md) | 113 | `result-track:ecac560fa2d6ffa9cc5fde9e1ebb8a37bbfba46d16b7e5d969dd03a36461fd70` |
+| 12 | `theorem` | [ContinuousAt.cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-cpow--a26f299e80ddb825c9240144.md) | 117 | `result-track:a26f299e80ddb825c9240144340a42c64481627fd978162bd1d0e3b4d1e46be2` |
+| 13 | `theorem` | [ContinuousAt.const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-const-cpow--ea3397be4ee7e3eefaa8649c.md) | 121 | `result-track:ea3397be4ee7e3eefaa8649c70fc89ef491253d308b9e90e21ef5cf5bd202602` |
+| 14 | `theorem` | [ContinuousOn.cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-cpow--c43de1e4276fc0a681af2afd.md) | 125 | `result-track:c43de1e4276fc0a681af2afdca2165e6e04023b533b5362d3147b651d04f42be` |
+| 15 | `theorem` | [ContinuousOn.const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-const-cpow--f025501323a5d725878f2ce8.md) | 129 | `result-track:f025501323a5d725878f2ce8c294c8d9567b34a968ef01aaea7870b5ed3fecaa` |
+| 16 | `theorem` | [Continuous.cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-cpow--e87887bb12e2ef245e1a7c9f.md) | 132 | `result-track:e87887bb12e2ef245e1a7c9fe40557df1f4d7e79361e878825bcdd534b54169a` |
+| 17 | `theorem` | [Continuous.const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-const-cpow--1d6ce391d369e3f973986c76.md) | 136 | `result-track:1d6ce391d369e3f973986c76cbf7b6a83a1114e37faba71f97f3790fc5f459f0` |
+| 18 | `theorem` | [ContinuousOn.cpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-cpow-const--61089d966488dd0a3cee6e4a.md) | 140 | `result-track:61089d966488dd0a3cee6e4a310b04bd451966cfa06f86500dcc8fcd328b96b5` |
+| 19 | `lemma` | [continuous_const_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-const-cpow--fc96a15d0104a943dc989b68.md) | 145 | `result-track:fc96a15d0104a943dc989b68da41c065d3e2014850a5bd2b3e3a6a059ac2e990` |
+| 20 | `theorem` | [continuousAt_const_rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-const-rpow--dc39a69760fd684378cae787.md) | 159 | `result-track:dc39a69760fd684378cae787958dd5afe7aad96612648f13db87f7274847a591` |
+| 21 | `theorem` | [continuousAt_const_rpow'](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-const-rpow--6c84f8135f3e21f6ee6274a4.md) | 165 | `result-track:6c84f8135f3e21f6ee6274a40b73ef56cfc1c176d5c398c9b6b345a6e75b0f56` |
+| 22 | `theorem` | [rpow_eq_nhds_of_neg](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/rpow-eq-nhds-of-neg--75a20dcd6fcb893e74be8f3d.md) | 171 | `result-track:75a20dcd6fcb893e74be8f3dab22d12c7ac523c392a50ec477e59192c4e3a3d6` |
+| 23 | `theorem` | [rpow_eq_nhds_of_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/rpow-eq-nhds-of-pos--c6a987179e116913ab0e6eb9.md) | 179 | `result-track:c6a987179e116913ab0e6eb960e6cac33f7d4711b377fcc0c5bbd760cd1a9db6` |
+| 24 | `theorem` | [continuousAt_rpow_of_ne](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow-of-ne--b88590c1c7ace0ea1359bf4d.md) | 187 | `result-track:b88590c1c7ace0ea1359bf4db2f1c2023c59dd8da917e456d82605879f7ff513` |
+| 25 | `theorem` | [continuousAt_rpow_of_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow-of-pos--f8295022f3063f9d3ec5e5a7.md) | 204 | `result-track:f8295022f3063f9d3ec5e5a7a81e15abd9f178b47aca7e8041c7bd2234c1b699` |
+| 26 | `theorem` | [continuousAt_rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow--50aec681408a44cf794559db.md) | 221 | `result-track:50aec681408a44cf794559dba601ff83e3d7971b1e4810e586d3b79cbe3fc2a5` |
+| 27 | `theorem` | [continuousAt_rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow-const--42ea31d21a8261ec6caa1cf8.md) | 226 | `result-track:42ea31d21a8261ec6caa1cf8da393d76f113d0b6e00dcb905576c4dafb896971` |
+| 28 | `theorem` | [continuous_rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-rpow-const--dd6d6576d62e02293c9a9dba.md) | 234 | `result-track:dd6d6576d62e02293c9a9dba81fb9754c5475086fcd73843025a238a5db60bb2` |
+| 29 | `lemma` | [continuous_const_rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-const-rpow--8e86dd0f76e706d87ae45286.md) | 238 | `result-track:8e86dd0f76e706d87ae452862576539fa03ecf6b7ccc3b455d0ff13ce902ab38` |
+| 30 | `theorem` | [Filter.Tendsto.rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/filter-tendsto-rpow--169493a091b0b177feb0bff3.md) | 247 | `result-track:169493a091b0b177feb0bff38b7253045bac6464bd99a6b98658a58d8a254d89` |
+| 31 | `theorem` | [Filter.Tendsto.rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/filter-tendsto-rpow-const--29c189d35ac4064f2b0b1086.md) | 251 | `result-track:29c189d35ac4064f2b0b108628a157ace78c3216e22a3d810b31c41f91753071` |
+| 32 | `theorem` | [ContinuousAt.rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow--15c8d4ce8717f5931cc71fed.md) | 258 | `result-track:15c8d4ce8717f5931cc71fed6864b39bde571c1714f1210d8d2b90810f6a735a` |
+| 33 | `theorem` | [ContinuousWithinAt.rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouswithinat-rpow--bd216b9a20a6b4b4dbccbb1a.md) | 262 | `result-track:bd216b9a20a6b4b4dbccbb1ab4c4d09432210e42505871824d4a2e524308d6ea` |
+| 34 | `theorem` | [ContinuousOn.rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-rpow--8779a3813709eaaa8b184aed.md) | 267 | `result-track:8779a3813709eaaa8b184aedb0dfb410d1552eaa50239d6ae1281ee45b2887e3` |
+| 35 | `theorem` | [Continuous.rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-rpow--87f810eb03d2d83a37c0684f.md) | 271 | `result-track:87f810eb03d2d83a37c0684f60ee884bbb68d97d6c5c6b58c385955793e8acec` |
+| 36 | `theorem` | [ContinuousWithinAt.rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouswithinat-rpow-const--03d23660f447d8434bcd725e.md) | 275 | `result-track:03d23660f447d8434bcd725eb64227e99ace6781b7ff940960d78b8a33c4f970` |
+| 37 | `theorem` | [ContinuousAt.rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow-const--750a015d4089f60f58c50d38.md) | 279 | `result-track:750a015d4089f60f58c50d38c88e698324c9620f6f13800bd9201559cc9a368f` |
+| 38 | `theorem` | [ContinuousOn.rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-rpow-const--1205cd078077c29b705696c1.md) | 283 | `result-track:1205cd078077c29b705696c16e33306ff329c9b02db64e99cd7a68e3fdc1888a` |
+| 39 | `theorem` | [Continuous.rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-rpow-const--69869a050dae98ce35789ba9.md) | 286 | `result-track:69869a050dae98ce35789ba9bd264d9888aae67d4bdb6727e75cf7e06cd7a014` |
+| 40 | `theorem` | [continuousAt_cpow_zero_of_re_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-cpow-zero-of-re-pos--9299fa2737423fe3d706711b.md) | 305 | `result-track:9299fa2737423fe3d706711b56a22b1dd31a5a72f5903dfba996f37455b44f51` |
+| 41 | `theorem` | [continuousAt_cpow_of_re_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-cpow-of-re-pos--22d743964ce035655bf136af.md) | 330 | `result-track:22d743964ce035655bf136af10f72d2002cb150c7588fe621285959fcba08c3e` |
+| 42 | `theorem` | [continuousAt_cpow_const_of_re_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-cpow-const-of-re-pos--5ca363deac9e1f2839180ead.md) | 340 | `result-track:5ca363deac9e1f2839180ead5e1b703745b33e9adafc6de639bd2b811cc8e6aa` |
+| 43 | `theorem` | [continuousAt_ofReal_cpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-ofreal-cpow--985f49dd8a4a80b8a8b23c9b.md) | 346 | `result-track:985f49dd8a4a80b8a8b23c9bb6aec4efc108686a82cca9f2399dca2dfb3abb01` |
+| 44 | `theorem` | [continuousAt_ofReal_cpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-ofreal-cpow-const--65eed18e763f0366e1bde89c.md) | 370 | `result-track:65eed18e763f0366e1bde89c8f11972b8b3ab7a0d35109ff0fc467bc366bc012` |
+| 45 | `theorem` | [continuous_ofReal_cpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-ofreal-cpow-const--9cdfbba3c3d0c26c9755ac6f.md) | 374 | `result-track:9cdfbba3c3d0c26c9755ac6f879d426561590f91487f2761d246b04100db551e` |
+| 46 | `theorem` | [continuousAt_rpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow--d73ccae32ca824ebcc907ba7.md) | 387 | `result-track:d73ccae32ca824ebcc907ba77cc079483d41e3b57571094f7c93edb8fa78970b` |
+| 47 | `theorem` | [eventually_pow_one_div_le](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/eventually-pow-one-div-le--9631080ff3551cb865337e56.md) | 401 | `result-track:9631080ff3551cb865337e5658a935f59fb2ca8f5c0608e810f6d07bf5cea8fa` |
+| 48 | `theorem` | [Filter.Tendsto.nnrpow](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/filter-tendsto-nnrpow--38af091060f0c9e5b9b8eb31.md) | 414 | `result-track:38af091060f0c9e5b9b8eb31efe0b589dfa3659c1f63a45a17c7db3f8fad79f8` |
+| 49 | `theorem` | [continuousAt_rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow-const--af726eb724c1045c972e6bcf.md) | 421 | `result-track:af726eb724c1045c972e6bcf9c0014725712b30236a51b75fda7b012a5b1f810` |
+| 50 | `theorem` | [continuous_rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-rpow-const--e2fd3f75b5193cac776d49e7.md) | 428 | `result-track:e2fd3f75b5193cac776d49e758009462f8d225de7847768f872ae416f9252b1f` |
+| 51 | `theorem` | [continuousOn_rpow_const_compl_zero](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-rpow-const-compl-zero--9847dde96a4ea9d10c5b3cda.md) | 432 | `result-track:9847dde96a4ea9d10c5b3cda7dc845f0c3e2dce21d77fb141111e7a8ca120c69` |
+| 52 | `theorem` | [continuousOn_rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuouson-rpow-const--847ed71f45838b2fd1300f0b.md) | 439 | `result-track:847ed71f45838b2fd1300f0b4c1e849959224ae735f60b4ba2923c0394179fb5` |
+| 53 | `theorem` | [eventually_pow_one_div_le](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/eventually-pow-one-div-le--b29f60dfac5c080d2a618a15.md) | 451 | `result-track:b29f60dfac5c080d2a618a156c624344e5f41bd3f530ae9c1aaddadd61898803` |
+| 54 | `theorem` | [continuousAt_rpow_const_of_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuousat-rpow-const-of-pos--106ddc19f30ce9e39f9c15dc.md) | 461 | `result-track:106ddc19f30ce9e39f9c15dca7fc17ff3498d1c725607cd523cbdc0dc55a0651` |
+| 55 | `theorem` | [continuous_rpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/continuous-rpow-const--7c12c0fe7dbce60d5b8ed54b.md) | 474 | `result-track:7c12c0fe7dbce60d5b8ed54b99befe10496fec1510134f4ccc2966a77a2edcd5` |
+| 56 | `theorem` | [tendsto_const_mul_rpow_nhds_zero_of_pos](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/tendsto-const-mul-rpow-nhds-zero-of-pos--41372af2b73f922c0319d5c7.md) | 485 | `result-track:41372af2b73f922c0319d5c775a901b14eaf4ec0481e27486e3242c9368c36eb` |
+| 57 | `theorem` | [Filter.Tendsto.ennrpow_const](../../../../../mathematics/Topology/GeneralTopology/Continuity/Variantd2e6b4100aa6a65e18265bdfbec8068a8588e7c2c78e4cdb082ab5191953a817.lean/declarations/filter-tendsto-ennrpow-const--fdefd7f9470eb5cfb293c979.md) | 493 | `result-track:fdefd7f9470eb5cfb293c979cc13d55608a13fae074269eab502baf8680eba81` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

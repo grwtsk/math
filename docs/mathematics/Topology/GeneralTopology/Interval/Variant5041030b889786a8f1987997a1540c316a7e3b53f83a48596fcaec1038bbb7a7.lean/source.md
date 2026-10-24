@@ -1,0 +1,167 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.Interval.Variant5041030b889786a8f1987997a1540c316a7e3b53f83a48596fcaec1038bbb7a7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bc6fad2f9650dc33b1a48ba0a84f457d5848e787` · SHA-256 `fb3971a81d4fb0bfd4e055257f911b53d6aee6fe2a887390d396e4c72197752a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.IccInclusionLeft.Variante197e9349818f077a96e1d2ce98dc62edaa90d83013eaf5ef01cf21b19add899","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e197e9349818f077a96e1d2ce98dc62edaa90d83013eaf5ef01cf21b19add899","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.IccInclusionLeft.Variante197e9349818f077a96e1d2ce98dc62edaa90d83013eaf5ef01cf21b19add899","mathematical_subject":"Topology.GeneralTopology","original_sha256":"e197e9349818f077a96e1d2ce98dc62edaa90d83013eaf5ef01cf21b19add899","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/ContinuousMap/Interval.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Vincent Beffara. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Vincent Beffara
+-/
+module
+
+public import Mathlib.Topology.CompactOpen
+public import Mathlib.Topology.Order.ProjIcc
+
+/-!
+# Continuous bundled maps on intervals
+
+In this file we prove a few results about `ContinuousMap` when the domain is an interval.
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.IccInclusionLeft.Variante197e9349818f077a96e1d2ce98dc62edaa90d83013eaf5ef01cf21b19add899
+
+@[expose] public section
+
+open Set ContinuousMap Filter
+
+open scoped Topology
+
+namespace ContinuousMap
+
+variable {α : Type*} [LinearOrder α] [TopologicalSpace α] [OrderTopology α]
+variable {a b c : α} [Fact (a ≤ b)] [Fact (b ≤ c)]
+variable {E : Type*} [TopologicalSpace E]
+
+/-- The embedding into an interval from a sub-interval lying on the left, as a `ContinuousMap`. -/
+def IccInclusionLeft : C(Icc a b, Icc a c) :=
+  .inclusion <| Icc_subset_Icc le_rfl Fact.out
+
+/-- The embedding into an interval from a sub-interval lying on the right, as a `ContinuousMap`. -/
+def IccInclusionRight : C(Icc b c, Icc a c) :=
+  .inclusion <| Icc_subset_Icc Fact.out le_rfl
+
+/-- The map `projIcc` from `α` onto an interval in `α`, as a `ContinuousMap`. -/
+def projIccCM : C(α, Icc a b) :=
+  ⟨projIcc a b Fact.out, continuous_projIcc⟩
+
+/-- The extension operation from continuous maps on an interval to continuous maps on the whole
+  type, as a `ContinuousMap`. -/
+def IccExtendCM : C(C(Icc a b, E), C(α, E)) where
+  toFun f := f.comp projIccCM
+  continuous_toFun := continuous_precomp projIccCM
+
+@[simp]
+theorem IccExtendCM_of_mem {f : C(Icc a b, E)} {x : α} (hx : x ∈ Icc a b) :
+    IccExtendCM f x = f ⟨x, hx⟩ := by
+  simp [IccExtendCM, projIccCM, projIcc, hx.1, hx.2]
+
+/-- The concatenation of two continuous maps defined on adjacent intervals. If the values of the
+functions on the common bound do not agree, this is defined as an arbitrarily chosen constant
+map. See `concatCM` for the corresponding map on the subtype of compatible function pairs. -/
+noncomputable def concat (f : C(Icc a b, E)) (g : C(Icc b c, E)) :
+    C(Icc a c, E) := by
+  by_cases hb : f ⊤ = g ⊥
+  · let h (t : α) : E := if t ≤ b then IccExtendCM f t else IccExtendCM g t
+    suffices Continuous h from ⟨fun t => h t, by fun_prop⟩
+    apply Continuous.if_le (by fun_prop) (by fun_prop) continuous_id continuous_const
+    rintro x rfl
+    simpa [IccExtendCM, projIccCM]
+  · exact .const _ (f ⊥) -- junk value
+
+variable {f : C(Icc a b, E)} {g : C(Icc b c, E)}
+
+theorem concat_comp_IccInclusionLeft (hb : f ⊤ = g ⊥) :
+    (concat f g).comp IccInclusionLeft = f := by
+  ext x
+  simp [concat, IccExtendCM, hb, IccInclusionLeft, projIccCM, inclusion, x.2.2]
+
+theorem concat_comp_IccInclusionRight (hb : f ⊤ = g ⊥) :
+    (concat f g).comp IccInclusionRight = g := by
+  ext ⟨x, hx⟩
+  obtain rfl | hxb := eq_or_ne x b
+  · simpa [concat, IccInclusionRight, IccExtendCM, projIccCM, inclusion, hb]
+  · have h : ¬ x ≤ b := lt_of_le_of_ne hx.1 (Ne.symm hxb) |>.not_ge
+    simp [concat, hb, IccInclusionRight, h, IccExtendCM, projIccCM, projIcc, inclusion, hx.2, hx.1]
+
+@[simp]
+theorem concat_left (hb : f ⊤ = g ⊥) {t : Icc a c} (ht : t ≤ b) :
+    concat f g t = f ⟨t, t.2.1, ht⟩ := by
+  nth_rewrite 2 [← concat_comp_IccInclusionLeft hb]
+  rfl
+
+@[simp]
+theorem concat_right (hb : f ⊤ = g ⊥) {t : Icc a c} (ht : b ≤ t) :
+    concat f g t = g ⟨t, ht, t.2.2⟩ := by
+  nth_rewrite 2 [← concat_comp_IccInclusionRight hb]
+  rfl
+
+theorem tendsto_concat {ι : Type*} {p : Filter ι} {F : ι → C(Icc a b, E)} {G : ι → C(Icc b c, E)}
+    (hfg : ∀ᶠ i in p, (F i) ⊤ = (G i) ⊥) (hfg' : f ⊤ = g ⊥)
+    (hf : Tendsto F p (𝓝 f)) (hg : Tendsto G p (𝓝 g)) :
+    Tendsto (fun i => concat (F i) (G i)) p (𝓝 (concat f g)) := by
+  rw [tendsto_nhds_compactOpen] at hf hg ⊢
+  rintro K hK U hU hfgU
+  have h : b ∈ Icc a c := ⟨Fact.out, Fact.out⟩
+  let K₁ : Set (Icc a b) := projIccCM '' Subtype.val '' (K ∩ Iic ⟨b, h⟩)
+  let K₂ : Set (Icc b c) := projIccCM '' Subtype.val '' (K ∩ Ici ⟨b, h⟩)
+  have hK₁ : IsCompact K₁ :=
+    hK.inter_right isClosed_Iic |>.image continuous_subtype_val |>.image projIccCM.continuous
+  have hK₂ : IsCompact K₂ :=
+    hK.inter_right isClosed_Ici |>.image continuous_subtype_val |>.image projIccCM.continuous
+  have hfU : MapsTo f K₁ U := by
+    rw [← concat_comp_IccInclusionLeft hfg']
+    apply hfgU.comp
+    rintro x ⟨y, ⟨⟨z, hz⟩, ⟨h1, (h2 : z ≤ b)⟩, rfl⟩, rfl⟩
+    simpa [projIccCM, projIcc, h2, hz.1] using! h1
+  have hgU : MapsTo g K₂ U := by
+    rw [← concat_comp_IccInclusionRight hfg']
+    apply hfgU.comp
+    rintro x ⟨y, ⟨⟨z, hz⟩, ⟨h1, (h2 : b ≤ z)⟩, rfl⟩, rfl⟩
+    simpa [projIccCM, projIcc, h2, hz.2] using! h1
+  filter_upwards [hf K₁ hK₁ U hU hfU, hg K₂ hK₂ U hU hgU, hfg] with i hf hg hfg x hx
+  by_cases! hxb : x ≤ b
+  · rw [concat_left hfg hxb]
+    refine hf ⟨x, ⟨x, ⟨hx, hxb⟩, rfl⟩, ?_⟩
+    simp [projIccCM, projIcc, hxb, x.2.1]
+  · replace hxb : b ≤ x := hxb.le
+    rw [concat_right hfg hxb]
+    refine hg ⟨x, ⟨x, ⟨hx, hxb⟩, rfl⟩, ?_⟩
+    simp [projIccCM, projIcc, hxb, x.2.2]
+
+/-- The concatenation of compatible pairs of continuous maps on adjacent intervals, defined as a
+`ContinuousMap` on a subtype of the product. -/
+noncomputable def concatCM :
+    C({fg : C(Icc a b, E) × C(Icc b c, E) // fg.1 ⊤ = fg.2 ⊥}, C(Icc a c, E)) where
+  toFun fg := concat fg.val.1 fg.val.2
+  continuous_toFun := by
+    let S : Set (C(Icc a b, E) × C(Icc b c, E)) := {fg | fg.1 ⊤ = fg.2 ⊥}
+    change Continuous (S.domRestrict concat.uncurry)
+    refine continuousOn_iff_continuous_domRestrict.mp (fun fg hfg => ?_)
+    refine tendsto_concat ?_ hfg ?_ ?_
+    · exact eventually_nhdsWithin_of_forall (fun _ => id)
+    · exact tendsto_nhdsWithin_of_tendsto_nhds continuousAt_fst
+    · exact tendsto_nhdsWithin_of_tendsto_nhds continuousAt_snd
+
+@[simp]
+theorem concatCM_left {x : Icc a c} (hx : x ≤ b)
+    {fg : {fg : C(Icc a b, E) × C(Icc b c, E) // fg.1 ⊤ = fg.2 ⊥}} :
+    concatCM fg x = fg.1.1 ⟨x.1, x.2.1, hx⟩ := by
+  exact concat_left fg.2 hx
+
+@[simp]
+theorem concatCM_right {x : Icc a c} (hx : b ≤ x)
+    {fg : {fg : C(Icc a b, E) × C(Icc b c, E) // fg.1 ⊤ = fg.2 ⊥}} :
+    concatCM fg x = fg.1.2 ⟨x.1, hx, x.2.2⟩ :=
+  concat_right fg.2 hx
+
+end ContinuousMap
+```

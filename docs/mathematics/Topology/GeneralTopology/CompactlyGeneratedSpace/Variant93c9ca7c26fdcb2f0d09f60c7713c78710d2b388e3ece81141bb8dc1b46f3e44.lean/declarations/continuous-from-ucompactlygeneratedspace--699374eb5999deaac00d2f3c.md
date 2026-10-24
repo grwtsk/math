@@ -1,0 +1,88 @@
+# continuous_from_uCompactlyGeneratedSpace
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:799bc83a-dcfa-599f-c458-524878369030",
+  "kind": "lemma",
+  "lexical_name": "continuous_from_uCompactlyGeneratedSpace",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "continuous-from-ucompactlygeneratedspace--699374eb5999deaac00d2f3c",
+  "source": {
+    "blob": "d3d32971837ad75ce581df1c767f199fede62fa3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 138,
+    "line": 132,
+    "path": "GRWTSK/Topology/GeneralTopology/CompactlyGeneratedSpace/Variant93c9ca7c26fdcb2f0d09f60c7713c78710d2b388e3ece81141bb8dc1b46f3e44.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:699374eb5999deaac00d2f3c3c9c011b2329f1d54289880bc2507fb689093c10",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/CompactlyGeneratedSpace/Variant93c9ca7c26fdcb2f0d09f60c7713c78710d2b388e3ece81141bb8dc1b46f3e44.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:799bc83a-dcfa-599f-c458-524878369030`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 132–138.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma continuous_from_uCompactlyGeneratedSpace [UCompactlyGeneratedSpace.{u} X] (f : X → Y)
+    (h : ∀ (S : CompHaus.{u}) (g : C(S, X)), Continuous (f ∘ g)) : Continuous f := by
+  apply continuous_le_dom UCompactlyGeneratedSpace.le_compactlyGenerated
+  exact continuous_from_compactlyGenerated f h
+
+/-- A topological space `X` is compactly generated if a set `s` is closed when `f ⁻¹' s` is
+closed for every continuous map `f : K → X`, where `K` is compact Hausdorff. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/CompactlyGeneratedSpace/Variant93c9ca7c26fdcb2f0d09f60c7713c78710d2b388e3ece81141bb8dc1b46f3e44.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/CompactlyGeneratedSpace/Variant93c9ca7c26fdcb2f0d09f60c7713c78710d2b388e3ece81141bb8dc1b46f3e44.lean#L132).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d3d32971837ad75ce581df1c767f199fede62fa3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,86 @@
+# disjUnion_product
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:8f2bfeca-2cad-a5fa-dc53-2c879a64d5ef",
+  "kind": "theorem",
+  "lexical_name": "disjUnion_product",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "disjunion-product--0481dd8ac9f3216c9148324f",
+  "source": {
+    "blob": "3058691e27fdce2d7e23197a5cf909b0db74dfe7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 262,
+    "line": 258,
+    "path": "GRWTSK/Topology/GeneralTopology/Prod/Variant857e716dc419be52e8dcfcc9aedd8492f60a9d36d52966c79428cea3e53de811.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:0481dd8ac9f3216c9148324fadf53c3c5b8e8383a4fc64399892ccf9c653a0e7",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Prod/Variant857e716dc419be52e8dcfcc9aedd8492f60a9d36d52966c79428cea3e53de811.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8f2bfeca-2cad-a5fa-dc53-2c879a64d5ef`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 258–262.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem disjUnion_product (hs : Disjoint s s') :
+    s.disjUnion s' hs ×ˢ t = (s ×ˢ t).disjUnion (s' ×ˢ t) (disjoint_product.mpr <| Or.inl hs) :=
+  eq_of_veq <| Multiset.add_product _ _ _
+
+@[simp]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Prod/Variant857e716dc419be52e8dcfcc9aedd8492f60a9d36d52966c79428cea3e53de811.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Prod/Variant857e716dc419be52e8dcfcc9aedd8492f60a9d36d52966c79428cea3e53de811.lean#L258).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3058691e27fdce2d7e23197a5cf909b0db74dfe7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

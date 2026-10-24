@@ -1,0 +1,41 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.CommonMeanTypes.Variant3c74abb729e051bd3c0752484ef64490cbccf26c46d29ee8790a4ae227bc1079
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e11c9c218b73c06f6454535cdfdc4f50de30d238` · SHA-256 `95d98554b9f447c92a49ba1236dc9f981f26de7407ed612f7ff427259b324726`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.ActualNumericMeanTransfer.Variantae30742744e57a086136a0b9453093b4e35df9f50e542f8b1e67cdbdec89dfa9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ae30742744e57a086136a0b9453093b4e35df9f50e542f8b1e67cdbdec89dfa9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.ActualNumericMeanTransfer.Variantae30742744e57a086136a0b9453093b4e35df9f50e542f8b1e67cdbdec89dfa9","mathematical_subject":"Topology.GeneralTopology","original_sha256":"ae30742744e57a086136a0b9453093b4e35df9f50e542f8b1e67cdbdec89dfa9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/continuous-research-01a109fc/pass12/common_mean_review/CommonMeanTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualNumericMeanTransfer
+
+namespace GRWTSK.Topology.GeneralTopology.ActualNumericMeanTransfer.Variantae30742744e57a086136a0b9453093b4e35df9f50e542f8b1e67cdbdec89dfa9
+
+#print ContinuousResearch.ActualCommonMeanNormalization.commonMeanCenter
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationBudget
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationError
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationBudget_nonneg
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationError_eq_deficits
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationError_eq_actual_integral
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationError_bounds
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMeanOffset_bounds
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationError_uniform_tail
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMeanOffset_calibration
+#print ContinuousResearch.ActualCommonMeanNormalization.normalizationError_tendsto_zero
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMeanOffset_relative_tendsto
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMean_normalization_error
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMean_relative_calibration
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMean_relative_tendsto
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMeanOffset_abs_le
+#print ContinuousResearch.ActualCommonMeanNormalization.sourceMeanOffset_uniformly_bounded
+#print ContinuousResearch.ActualNumericMeanTransfer.commonMeanCenter_gt
+#print ContinuousResearch.ActualNumericMeanTransfer.normalizationBudget_lt
+#print ContinuousResearch.ActualNumericMeanTransfer.normalizationError_lt
+#print ContinuousResearch.ActualNumericMeanTransfer.sourceMeanOffset_gt_paper_bound
+#print ContinuousResearch.ActualNumericMeanTransfer.sourceMean_gt_paper_bound
+#print ContinuousResearch.ActualNumericMeanTransfer.sourceMean_gt_of_zero_budget
+#print ContinuousResearch.ActualNumericMeanTransfer.sourceMean_gt_neg_eighteen
+```

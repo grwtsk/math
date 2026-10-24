@@ -1,0 +1,99 @@
+# p_apply_sub_two_le_p_apply
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:39a2e310-f3c2-85ba-9ded-d6ba0c5e58e3",
+  "kind": "lemma",
+  "lexical_name": "p_apply_sub_two_le_p_apply",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "p-apply-sub-two-le-p-apply--9b92e61de16200ab30631684",
+  "source": {
+    "blob": "3c11165dfa3919745c9b6bf989c565b8f58a342c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 916,
+    "line": 899,
+    "path": "GRWTSK/Topology/GeneralTopology/Imo2024Q3/Variant21c997c0234befb7a7783ceca76fa2712b32e59c0c60491ab06935b72fa3d89b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:9b92e61de16200ab306316840f6e254d24691de55a9bab76e5de7079060e555a",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Imo2024Q3/Variant21c997c0234befb7a7783ceca76fa2712b32e59c0c60491ab06935b72fa3d89b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:39a2e310-f3c2-85ba-9ded-d6ba0c5e58e3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 899–916.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma p_apply_sub_two_le_p_apply {n : ℕ} (hn : N' a N + 4 < n) (hs : Small a (a n)) :
+    p a (n - 2) ≤ p a n := by
+  obtain ⟨t, hti, _⟩ := hc.exists_apply_sub_two_eq_of_apply_eq (j := n + p a n) (by omega)
+    ((lt_add_iff_pos_right n).mpr (hc.p_pos n)) hs
+    (hc.apply_add_p_eq (by omega) hs).symm (fun _ ↦ hc.card_filter_apply_eq_Ico_add_p_le_one _)
+  by_contra
+  have hn2 := (hc.apply_sub_two_small_of_apply_small_of_N'_lt hs (by omega))
+  have : p a n ≤ p a (n - 2) - 2 := by
+    obtain ⟨_, _⟩ := hc.even_p (by omega) hs
+    obtain ⟨_, _⟩ := hc.even_p (by omega) hn2
+    omega
+  have h := hc.card_filter_apply_eq_Ico_add_p_le_one (n - 2) hn2
+  revert h
+  simp only [imp_false, not_le, Finset.one_lt_card_iff, Finset.mem_filter, Finset.mem_Ico,
+    ne_eq, exists_and_left]
+  simp only [Finset.mem_Ico] at hti
+  exact ⟨n - 2, ⟨⟨le_rfl, by omega⟩, rfl⟩, t, by omega⟩
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Imo2024Q3/Variant21c997c0234befb7a7783ceca76fa2712b32e59c0c60491ab06935b72fa3d89b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Imo2024Q3/Variant21c997c0234befb7a7783ceca76fa2712b32e59c0c60491ab06935b72fa3d89b.lean#L899).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3c11165dfa3919745c9b6bf989c565b8f58a342c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

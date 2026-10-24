@@ -1,0 +1,104 @@
+# Complete source: GRWTSK.Topology.AlgebraicTopology.FundamentalGroup.Variant1494094cea7d2ef799d7139168294947b50b66ac710f59af8c65205d0b47be85
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `89a796c9c183c5ffc8200822bca3218fac4aa92b` · SHA-256 `40a3d2c15f117b2f89f480e6b9aa4499280cd5091fed43042ee8174adbf2aba5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.AlgebraicTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.AlgebraicTopology.FundamentalGroup.Variant9834ce7734d05779ead03fc2444dcf310f2927604d4c883c7e4b01f1f9dc3544","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9834ce7734d05779ead03fc2444dcf310f2927604d4c883c7e4b01f1f9dc3544","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.AlgebraicTopology.SourceCorpus.FundamentalGroup.Variant9834ce7734d05779ead03fc2444dcf310f2927604d4c883c7e4b01f1f9dc3544","mathematical_subject":"Topology.AlgebraicTopology","original_sha256":"9834ce7734d05779ead03fc2444dcf310f2927604d4c883c7e4b01f1f9dc3544","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Mark Lavrentyev. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mark Lavrentyev
+-/
+import Mathlib.CategoryTheory.Groupoid
+import Mathlib.Topology.Category.TopCat.Basic
+import Mathlib.Topology.PathConnected
+import Mathlib.Topology.Homotopy.Path
+import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+
+
+namespace GRWTSK.Topology.AlgebraicTopology.FundamentalGroup.Variant9834ce7734d05779ead03fc2444dcf310f2927604d4c883c7e4b01f1f9dc3544
+
+#align_import algebraic_topology.fundamental_groupoid.fundamental_group from "leanprover-community/mathlib"@"70fd9563a21e7b963887c9360bd29b2393e6225a"
+
+/-!
+# Fundamental group of a space
+
+Given a topological space `X` and a basepoint `x`, the fundamental group is the automorphism group
+of `x` i.e. the group with elements being loops based at `x` (quotiented by homotopy equivalence).
+-/
+
+
+universe u v
+
+variable {X : Type u} {Y : Type v} [TopologicalSpace X] [TopologicalSpace Y]
+
+variable {x₀ x₁ : X}
+
+noncomputable section
+
+open CategoryTheory
+
+/-- The fundamental group is the automorphism group (vertex group) of the basepoint
+in the fundamental groupoid. -/
+def FundamentalGroup (X : Type u) [TopologicalSpace X] (x : X) :=
+  @Aut (FundamentalGroupoid X) _ x
+#align fundamental_group FundamentalGroup
+
+instance (X : Type u) [TopologicalSpace X] (x : X) : Group (FundamentalGroup X x) := by
+  dsimp only [FundamentalGroup]
+  infer_instance
+
+instance (X : Type u) [TopologicalSpace X] (x : X) : Inhabited (FundamentalGroup X x) := by
+  dsimp only [FundamentalGroup]
+  infer_instance
+
+namespace FundamentalGroup
+
+attribute [local instance] Path.Homotopic.setoid
+
+-- porting note: removed this attribute
+--attribute [local reducible] FundamentalGroupoid
+
+/-- Get an isomorphism between the fundamental groups at two points given a path -/
+def fundamentalGroupMulEquivOfPath (p : Path x₀ x₁) :
+    FundamentalGroup X x₀ ≃* FundamentalGroup X x₁ :=
+  Aut.autMulEquivOfIso (asIso ⟦p⟧)
+#align fundamental_group.fundamental_group_mul_equiv_of_path FundamentalGroup.fundamentalGroupMulEquivOfPath
+
+variable (x₀ x₁)
+
+/-- The fundamental group of a path connected space is independent of the choice of basepoint. -/
+def fundamentalGroupMulEquivOfPathConnected [PathConnectedSpace X] :
+    FundamentalGroup X x₀ ≃* FundamentalGroup X x₁ :=
+  fundamentalGroupMulEquivOfPath (PathConnectedSpace.somePath x₀ x₁)
+#align fundamental_group.fundamental_group_mul_equiv_of_path_connected FundamentalGroup.fundamentalGroupMulEquivOfPathConnected
+
+/-- An element of the fundamental group as an arrow in the fundamental groupoid. -/
+abbrev toArrow {X : TopCat} {x : X} (p : FundamentalGroup X x) : x ⟶ x :=
+  p.hom
+#align fundamental_group.to_arrow FundamentalGroup.toArrow
+
+/-- An element of the fundamental group as a quotient of homotopic paths. -/
+abbrev toPath {X : TopCat} {x : X} (p : FundamentalGroup X x) : Path.Homotopic.Quotient x x :=
+  toArrow p
+#align fundamental_group.to_path FundamentalGroup.toPath
+
+/-- An element of the fundamental group, constructed from an arrow in the fundamental groupoid. -/
+abbrev fromArrow {X : TopCat} {x : X} (p : x ⟶ x) : FundamentalGroup X x where
+  hom := p
+  inv := CategoryTheory.Groupoid.inv p
+#align fundamental_group.from_arrow FundamentalGroup.fromArrow
+
+/-- An element of the fundamental group, constructed from a quotient of homotopic paths. -/
+abbrev fromPath {X : TopCat} {x : X} (p : Path.Homotopic.Quotient x x) : FundamentalGroup X x :=
+  fromArrow p
+#align fundamental_group.from_path FundamentalGroup.fromPath
+
+end FundamentalGroup
+```

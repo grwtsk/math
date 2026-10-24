@@ -1,0 +1,117 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.CompactlyGenerated.Variant2c5d84867cad24abcc5179767c37ba7a710f690f67d5de7a6c84ec697019affd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `30295c1898cad0bd020f91aa8fc56f5f7d812260` · SHA-256 `8b014c6ad072f22ccb83ac13cc5a0d212f7c885b70b82c5544fc0cb1645a8ba6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.MulActionProperSMulIffIsCompactSetOfPredInterNonempty.Variantb33bdd3fcf90b22bd3f2f47bef48d5aff32967518386cb7fdbecb592df8f6ee6","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b33bdd3fcf90b22bd3f2f47bef48d5aff32967518386cb7fdbecb592df8f6ee6","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.MulActionProperSMulIffIsCompactSetOfPredInterNonempty.Variantb33bdd3fcf90b22bd3f2f47bef48d5aff32967518386cb7fdbecb592df8f6ee6","mathematical_subject":"Topology.GeneralTopology","original_sha256":"b33bdd3fcf90b22bd3f2f47bef48d5aff32967518386cb7fdbecb592df8f6ee6","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/Algebra/ProperAction/CompactlyGenerated.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Etienne Marion. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Etienne Marion
+-/
+module
+
+public import Mathlib.Topology.Algebra.ProperAction.Basic
+public import Mathlib.Topology.Maps.Proper.CompactlyGenerated
+
+/-!
+# When a proper action is properly discontinuous
+
+This file proves that if a discrete group acts on a T2 space `X` such that `X × X` is compactly
+coherent, and if the action is continuous in the second variable, then the action is properly
+discontinuous if and only if it is proper. This is in particular true if `X` is first-countable or
+weakly locally compact.
+
+## Main statements
+
+* `properlyDiscontinuousSMul_iff_properSMul`: If a discrete group acts on a T2 space `X` such that
+  `X × X` is compactly coherent, and if the action is continuous in the second variable,
+  then the action is properly discontinuous if and only if it is proper.
+* `MulAction.properSMul_iff_isCompact_setOfPred_inter_nonempty`: if `G` is a topological group
+  acting continuously on a T2 space `X` such that `X × X` is compactly coherent, then the action is
+  proper iff, for each pair of compacts `U, V ⊆ X`, the set of `g : G` such that `g • U` intersects
+  `V` is compact.
+
+## Tags
+
+group action, proper action, properly discontinuous, compactly generated
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.MulActionProperSMulIffIsCompactSetOfPredInterNonempty.Variantb33bdd3fcf90b22bd3f2f47bef48d5aff32967518386cb7fdbecb592df8f6ee6
+
+open scoped Pointwise
+
+open Prod Set
+
+public section
+
+variable {G X : Type*} [TopologicalSpace X] [Group G]
+  [TopologicalSpace G] [MulAction G X] [CompactlyCoherentSpace (X × X)] [T2Space X]
+
+/-- The `G`-action on `X` is proper iff, for each pair of compacts `U, V` in `X`,
+the set of `g` such that `U` intersects `g • V` is compact.
+
+See `ProperSMul.isCompact_setOfPred_inter_nonempty` for a one-way implication with fewer conditions.
+
+**Note**: We assume `CompactlyCoherentSpace (X × X)` as this is the minimal assumption needed to
+make the proof work; but this follows from various more familiar conditions, such as
+`FirstCountableTopology X`. Importing `Mathlib.Topology.Sequences` makes this implication available.
+-/
+@[to_additive /--
+The `G`-action on `X` is proper iff, for each pair of compacts `U, V` in `X`,
+the set of `g` such that `U` intersects `g +ᵥ V` is compact.
+
+See `ProperVAdd.isCompact_setOfPred_inter_nonempty` for a one-way implication with fewer conditions.
+
+**Note**: We assume `CompactlyCoherentSpace (X × X)` as this is the minimal assumption needed to
+make the proof work; but this follows from various more familiar conditions, such as
+`FirstCountableTopology X`. Importing `Mathlib.Topology.Sequences` makes this implication available.
+-/]
+lemma MulAction.properSMul_iff_isCompact_setOfPred_inter_nonempty [ContinuousSMul G X] :
+    ProperSMul G X ↔
+    (∀ {U V : Set X}, IsCompact U → IsCompact V → IsCompact {g : G | (g • U ∩ V).Nonempty}) := by
+  refine ⟨fun h ↦ ProperSMul.isCompact_setOfPred_inter_nonempty, fun h ↦ ⟨?_⟩⟩
+  refine isProperMap_iff_isCompact_preimage.mpr ⟨by fun_prop, fun {K} hK ↦ ?_⟩
+  -- First reduce to the case `K = U × V`.
+  let U := Prod.fst '' K
+  let V := Prod.snd '' K
+  have hU : IsCompact U := hK.image continuous_fst
+  have hV : IsCompact V := hK.image continuous_snd
+  suffices IsCompact ((fun (gx : G × X) ↦ (gx.1 • gx.2, gx.2)) ⁻¹' (U ×ˢ V)) by
+    apply this.of_isClosed_subset (hK.isClosed.preimage <| by fun_prop)
+    exact Set.preimage_mono Set.subset_fst_image_prod_snd_image
+  apply ((h hV hU).prod hV).of_isClosed_subset
+  · exact (hU.prod hV).isClosed.preimage (by fun_prop)
+  · exact fun ⟨g, x⟩ ⟨hgx, hgx'⟩ ↦ ⟨⟨g • x, smul_mem_smul_set hgx', hgx⟩, hgx'⟩
+
+@[deprecated (since := "2026-07-09")]
+alias MulAction.properSMul_iff_isCompact_setOf_inter_nonempty :=
+  MulAction.properSMul_iff_isCompact_setOfPred_inter_nonempty
+
+@[deprecated (since := "2026-07-09")]
+alias AddAction.properVAdd_iff_isCompact_setOf_inter_nonempty :=
+  AddAction.properVAdd_iff_isCompact_setOfPred_inter_nonempty
+
+/-- If a discrete group acts on a T2 space `X` such that `X × X` is compactly
+coherent, and if the action is continuous in the second variable, then the action is properly
+discontinuous if and only if it is proper. This is in particular true if `X` is first-countable or
+weakly locally compact. -/
+@[to_additive /-- If a discrete additive group acts on a T2 space `X` such that `X × X` is compactly
+generated, and if the action is continuous in the second variable, then the action is properly
+discontinuous if and only if it is proper. This is in particular true if `X` is first-countable or
+weakly locally compact. -/]
+theorem properlyDiscontinuousSMul_iff_properSMul [DiscreteTopology G] [ContinuousConstSMul G X] :
+    ProperlyDiscontinuousSMul G X ↔ ProperSMul G X := by
+  have : ContinuousSMul G X := ⟨continuous_prod_of_discrete_left.mpr continuous_const_smul⟩
+  simp only [MulAction.properSMul_iff_isCompact_setOfPred_inter_nonempty, isCompact_iff_finite]
+  rw [properlyDiscontinuousSMul_iff]
+
+end
+```

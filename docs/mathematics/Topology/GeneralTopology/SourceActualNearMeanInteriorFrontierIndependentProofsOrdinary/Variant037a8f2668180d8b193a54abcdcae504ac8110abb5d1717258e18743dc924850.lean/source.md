@@ -1,0 +1,24 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.SourceActualNearMeanInteriorFrontierIndependentProofsOrdinary.Variant037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `943e59da83f3a6604ffe3154d16d6e2bd2f05fe2` · SHA-256 `037a8f2668180d8b193a54abcdcae504ac8110abb5d1717258e18743dc924850`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualNearMeanInteriorFrontier
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier
+#print actualNearPeriodicWork
+#print actualIntegratedMeanResolvedBoundary
+#print actualNearMeanInterior
+#print actualNearMeanRetainedRemainder
+#print actualNearPeriodicWork_intervalIntegrable
+#print actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#print actualAdjustedInterior_eq_near_mean_sub_far
+#print actualAdjustedInterior_sub_near_mean_abs_le
+#print actualAdjustedInterior_sub_near_mean_tendsto_zero
+#print actualRetainedRemainder_sub_near_mean_eq
+#print actualCompensatedWork_sub_near_mean_abs_le
+#print actualCompensatedWork_sub_near_mean_tendsto_zero
+#print actualResidual_near_mean_pointwise_comparison
+```
