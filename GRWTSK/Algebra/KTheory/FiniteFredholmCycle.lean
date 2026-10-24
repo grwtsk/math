@@ -580,6 +580,79 @@ theorem finiteBlockSum_val {m n : ℕ}
     (P : FiniteStarProjection m) (Q : FiniteStarProjection n) :
     (finiteBlockSum P Q).val = finiteBlockSumMatrix P.val Q.val := rfl
 
+/-- A block diagonal of two rectangular partial-isometry witnesses has
+the required square products. The cross terms vanish by the zero blocks. -/
+theorem fromBlocks_mvNWitness
+    {a b c d : Type*}
+    [Fintype a] [Fintype b] [Fintype c] [Fintype d]
+    (V : Matrix a c ℂ) (W : Matrix b d ℂ) :
+    Matrix.fromBlocks (V * Vᴴ) 0 0 (W * Wᴴ) =
+        Matrix.fromBlocks V 0 0 W * (Matrix.fromBlocks V 0 0 W)ᴴ ∧
+    Matrix.fromBlocks (Vᴴ * V) 0 0 (Wᴴ * W) =
+        (Matrix.fromBlocks V 0 0 W)ᴴ * Matrix.fromBlocks V 0 0 W := by
+  constructor
+  · rw [Matrix.fromBlocks_conjTranspose, Matrix.fromBlocks_multiply]
+    simp
+  · rw [Matrix.fromBlocks_conjTranspose, Matrix.fromBlocks_multiply]
+    simp
+
+/-- Rectangular partial-isometry endpoint equations are preserved by
+independent bijections of the row and column index types. -/
+theorem mvNWitness_reindex
+    {a b c d : Type*}
+    [Fintype a] [Fintype b] [Fintype c] [Fintype d]
+    (ea : a ≃ c) (eb : b ≃ d) (V : Matrix a b ℂ) :
+    Matrix.reindex ea ea (V * Vᴴ) =
+        Matrix.reindex ea eb V * (Matrix.reindex ea eb V)ᴴ ∧
+    Matrix.reindex eb eb (Vᴴ * V) =
+        (Matrix.reindex ea eb V)ᴴ * Matrix.reindex ea eb V := by
+  constructor
+  · rw [Matrix.conjTranspose_reindex]
+    simpa only [Matrix.coe_reindexLinearEquiv] using
+      (Matrix.reindexLinearEquiv_mul (R := ℂ) (A := ℂ)
+        ea eb ea V Vᴴ).symm
+  · rw [Matrix.conjTranspose_reindex]
+    simpa only [Matrix.coe_reindexLinearEquiv] using
+      (Matrix.reindexLinearEquiv_mul (R := ℂ) (A := ℂ)
+        eb ea eb Vᴴ V).symm
+
+/-- The concrete two-block sum respects Murray–von Neumann
+correspondence for projections of arbitrary finite sizes. This
+establishes representative compatibility, before quotient descent. -/
+theorem finiteBlockSum_mvNRel
+    {m₁ m₂ n₁ n₂ : ℕ}
+    (P : FiniteStarProjection m₁) (P' : FiniteStarProjection m₂)
+    (Q : FiniteStarProjection n₁) (Q' : FiniteStarProjection n₂)
+    (hP : MvNRel P P') (hQ : MvNRel Q Q') :
+    MvNRel (finiteBlockSum P Q) (finiteBlockSum P' Q') := by
+  obtain ⟨V, hPV, hP'V⟩ := hP
+  obtain ⟨W, hQW, hQ'W⟩ := hQ
+  let er : (Fin m₁ ⊕ Fin n₁) ≃ Fin (m₁ + n₁) := finSumFinEquiv
+  let ec : (Fin m₂ ⊕ Fin n₂) ≃ Fin (m₂ + n₂) := finSumFinEquiv
+  let U : Matrix (Fin m₁ ⊕ Fin n₁) (Fin m₂ ⊕ Fin n₂) ℂ :=
+    Matrix.fromBlocks V 0 0 W
+  obtain ⟨hleft, hright⟩ := fromBlocks_mvNWitness V W
+  obtain ⟨hreleft, hreright⟩ := mvNWitness_reindex er ec U
+  refine ⟨Matrix.reindex er ec U, ?_, ?_⟩
+  · change Matrix.reindex er er (Matrix.fromBlocks P.val 0 0 Q.val) =
+        Matrix.reindex er ec U * (Matrix.reindex er ec U)ᴴ
+    calc
+      Matrix.reindex er er (Matrix.fromBlocks P.val 0 0 Q.val) =
+          Matrix.reindex er er
+            (Matrix.fromBlocks (V * Vᴴ) 0 0 (W * Wᴴ)) := by
+        rw [hPV, hQW]
+      _ = Matrix.reindex er er (U * Uᴴ) := congrArg _ hleft
+      _ = _ := hreleft
+  · change Matrix.reindex ec ec (Matrix.fromBlocks P'.val 0 0 Q'.val) =
+        (Matrix.reindex er ec U)ᴴ * Matrix.reindex er ec U
+    calc
+      Matrix.reindex ec ec (Matrix.fromBlocks P'.val 0 0 Q'.val) =
+          Matrix.reindex ec ec
+            (Matrix.fromBlocks (Vᴴ * V) 0 0 (Wᴴ * W)) := by
+        rw [hP'V, hQ'W]
+      _ = Matrix.reindex ec ec (Uᴴ * U) := congrArg _ hright
+      _ = _ := hreright
+
 /-! ## Finite projection classes and their trace -/
 
 /-- Every finite matrix size is retained in the object, rather than
