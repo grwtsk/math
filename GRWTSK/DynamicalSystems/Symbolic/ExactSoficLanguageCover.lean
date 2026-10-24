@@ -107,6 +107,26 @@ admits a finite labeled graph with exact language equality. -/
 def IsSoficTrace {Alphabet : Type v} (trace : ℕ → Alphabet) : Prop :=
   IsSoficFactorLanguage (HasFiniteBlock trace)
 
+/-- The tail after an explicitly chosen finite burn-in stage. -/
+def tailTrace {Alphabet : Type v}
+    (trace : ℕ → Alphabet) (start : ℕ) : ℕ → Alphabet :=
+  fun n => trace (start + n)
+
+/-- EVENTUAL soficity requires an exact finite labeled presentation of
+the entire factor language of some tail, NOT merely one finite-state path.
+The offset is part of the witness and may depend on the source. -/
+def EventuallySoficTrace {Alphabet : Type v}
+    (trace : ℕ → Alphabet) : Prop :=
+  ∃ start : ℕ, IsSoficTrace (tailTrace trace start)
+
+/-- Full soficity is enough for eventual soficity with burn-in zero. -/
+theorem eventuallySofic_of_sofic
+    {Alphabet : Type v} {trace : ℕ → Alphabet}
+    (h : IsSoficTrace trace) :
+    EventuallySoficTrace trace := by
+  refine ⟨0, ?_⟩
+  simpa only [tailTrace, zero_add] using h
+
 /-- A witnessed exact presentation supplies the genuine sofic predicate. -/
 theorem sofic_of_exact_language
     {Alphabet : Type v} {trace : ℕ → Alphabet}
