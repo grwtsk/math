@@ -33,7 +33,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 - [Hermitian trace-rank moment bounds](trace-rank.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $A$ be a complex matrix indexed by a finite type and assume $A^*=A$. The theorem `hermitian_trace_sq_le_rank_mul_trace_sq` states exactly \[ (\operatorname{Re}\operatorname{tr} A)^2 \le…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

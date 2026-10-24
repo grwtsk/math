@@ -33,7 +33,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Finite Walsh cylinder reconstruction: binary blocks, Chowla, and the sofic boundary](finite-walsh-cylinder-reconstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix any finite coordinate set \(I\), any \(N\geq0\), binary observations \(b_{n,i}\in\{-1,+1\}\) for \(0\leq n<N\), and a pattern \(\varepsilon:I\to\{-1,+1\}\). Define
 - [Weighted and unweighted finite degree expressions](weighted-degree-comparison.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `n` be a positive natural number, `l = 2n + 1`, and `D`, `Q`, `E` arbitrary real numbers. The exact identities are
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

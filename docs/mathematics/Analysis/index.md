@@ -12,7 +12,7 @@ The mathematical study of limiting processes and the behavior of functions and r
 
 | Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 53 | 0 | 0 | 0 |
+| 53 | 1 | 1 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -20,7 +20,16 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Polynomial return with a paid error](Asymptotics/polynomial-error.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For every `T≥0`, assume `X(T)=R(T)+e(T)`, `R(T)≤C_R(1+T)^r` and `\|e(T)\|≤C_e(1+T)^s`, with `C_R,C_e≥0`. Then
+- [Polynomial return with a paid error](Asymptotics/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Current source-description pins only at math commit 1b31ff873827ecf9acdf41b501b21a12b242a504. No fresh kernel replay, transitive axiom audit, or public compiler-observed verification graph has been produced for these bytes. Historical references retain their original paths, bytes and scope.
+
+  </details>
+
+  **Unresolved premises.** A P04 application requires its actual exact reconstruction identity and both uniform arithmetic bounds; this adapter does not supply them.
 - [A finite holonomy-alias correction for source-labeled integral homology](Fourier/finite-holonomy-alias-correction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-22).
 - [A finite primitive-source coverage boundary: three separate trace errors](Fourier/finite-trace-primitive-coverage.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-22). This note describes a finite mathematical theorem and an authored Lean proof script. It is **not** a kernel elaboration, a certified…
 - [A smooth annulus partition on natural dyadic scales](PartitionOfUnity/dyadic-annulus.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $\theta=\operatorname{Real.smoothTransition}$ and define the complex-valued annulus
@@ -33,7 +42,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Asymptotics](Asymptotics/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+1. **[Asymptotics](Asymptotics/index.md)** — 0 immediate children · 2 unique articles · 1 structured · 1 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Polynomial return with a paid error](Asymptotics/polynomial-error.md); [Dyadic logarithmic absorption](Asymptotics/dyadic-log-absorption.md).
 2. **[Calculus](Calculus/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Compact smooth Schwartz cutoffs on a real interval](Calculus/compact-cutoff.md).
@@ -63,13 +72,14 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
    Unranked previews: [Quadratic reconstruction and energy error](NormedSpace/reconstruction.md).
 16. **[Partition Of Unity](PartitionOfUnity/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A smooth annulus partition on natural dyadic scales](PartitionOfUnity/dyadic-annulus.md).
-17. **[Real analysis](real/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of limits, continuity, differentiation and integration for real-variable functions, together with the analytic structures needed to formulate these operations.
+17. **[Real analysis](real/index.md)** — 1 immediate children · 1 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. The study of limits, continuity, differentiation and integration for real-variable functions, together with the analytic structures needed to formulate these operations.
+   Unranked previews: [Polynomial return with a paid error](Asymptotics/polynomial-error.md).
 18. **[Series](Series/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A uniform bound for a dyadic kernel series](Series/dyadic-kernel.md).
 19. **[Test Functions](TestFunctions/index.md)** — 0 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Compact polynomial profiles and endpoint regularity](TestFunctions/polynomial-profile.md); [Exponential moments and second-derivative variation](TestFunctions/exponential-moments.md).
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

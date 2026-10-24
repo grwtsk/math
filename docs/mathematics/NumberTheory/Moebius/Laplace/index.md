@@ -16,9 +16,9 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Exact signed cutoff Laplace transform](cutoff.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction: grwtsk contributors. Derivation, Lean implementation and checking assistance: OpenAI Codex. Local sources are MIT; Lean and Mathlib retain their authorship and Apache-2.0…
+- [Exact signed cutoff Laplace transform](cutoff.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For the actual closed pickup $W$, let $T\ge0$, $N=\lfloor e^T\rfloor$, $s=z+1/2$, with $z\ne0$ and $s\ne0$. Define
 - [Finite Laplace recordings and signed tails](finite-window.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The maintained source links use the current PMD placement. Earlier verification receipts retain their recorded source paths, bytes and tool context. Fresh proof replay of the relocated context remains pending;…
-- [Finite signed prime-product debt](finite-product-debt.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction: grwtsk contributors. Research and candidate formalization assistance: OpenAI Codex. The finite product expansion and prime factorization arguments are established mathematics;…
+- [Finite signed prime-product debt](finite-product-debt.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Here $A$ is a subset of $P_N$ and $s$ is any complex number. Every $q(A)$ is positive and squarefree. The map $A\mapsto q(A)$ is injective, with inverse the set of prime factors. Since the real logarithm is…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -31,11 +31,11 @@ No narrower directory is currently registered. Continue to the articles below.
 
 ## Articles at this level
 
-- [Exact signed cutoff Laplace transform](cutoff.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction: grwtsk contributors. Derivation, Lean implementation and checking assistance: OpenAI Codex. Local sources are MIT; Lean and Mathlib retain their authorship and Apache-2.0…
+- [Exact signed cutoff Laplace transform](cutoff.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For the actual closed pickup $W$, let $T\ge0$, $N=\lfloor e^T\rfloor$, $s=z+1/2$, with $z\ne0$ and $s\ne0$. Define
 - [Finite Laplace recordings and signed tails](finite-window.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The maintained source links use the current PMD placement. Earlier verification receipts retain their recorded source paths, bytes and tool context. Fresh proof replay of the relocated context remains pending;…
-- [Finite signed prime-product debt](finite-product-debt.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Human mathematical direction: grwtsk contributors. Research and candidate formalization assistance: OpenAI Codex. The finite product expansion and prime factorization arguments are established mathematics;…
+- [Finite signed prime-product debt](finite-product-debt.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Here $A$ is a subset of $P_N$ and $s$ is any complex number. Every $q(A)$ is positive and squarefree. The map $A\mapsto q(A)$ is injective, with inverse the set of prime factors. Since the real logarithm is…
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

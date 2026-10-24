@@ -12,7 +12,7 @@ Relations expressing order and their associated structures, including partially 
 
 | Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 1 | 0 | 0 | 0 |
+| 2 | 1 | 1 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -20,7 +20,15 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Obstructions to prefix representations of orders](Embeddings/prefix-obstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $R$ be a relation on a type $A$. Suppose $a,b,c\in A$ satisfy $R(a,c)$ and $R(b,c)$, while neither $R(a,b)$ nor $R(b,a)$ holds. There is no map $f:A\to\operatorname{List}(B)$ that both preserves and…
+- [Least-prime uniqueness by antisymmetry](../NumberTheory/Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+- [Obstructions to prefix representations of orders](Embeddings/prefix-obstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The target alphabet is arbitrary. The obstruction uses the actual finite-list prefix relation; it assumes no numerical address or serialization convention.
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -34,7 +42,18 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
    Unranked previews: [Obstructions to prefix representations of orders](Embeddings/prefix-obstruction.md).
 3. **[Order embedding theory](order-embeddings/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of injective maps between ordered structures for which `a <= b` holds exactly when `f(a) <= f(b)` holds, including existence, obstructions, and order isomorphisms.
 
-Source baseline: math commit `1b31ff873827ecf9acdf41b501b21a12b242a504`; 900 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `9c00207c8c066060d9106b7d2475b518f0c5c9bd190ea17cc291924f5ac95037`.
+## Articles at this level
+
+- [Least-prime uniqueness by antisymmetry](../NumberTheory/Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+
+  <details>
+  <summary>Verification scope</summary>
+
+  **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
+
+  </details>
+
+Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
