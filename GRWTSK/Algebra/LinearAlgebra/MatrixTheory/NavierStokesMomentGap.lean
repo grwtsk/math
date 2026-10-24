@@ -345,6 +345,125 @@ theorem certified_perturbed_moment_adjoint_strict_contraction
     henergy hintertwines v
 
 
+
+/-!
+## Concrete one-coordinate moment realization
+
+When the moment operator acts on `ℝ`, its coordinate matrix has one entry,
+the image of `1`. The coordinate encoding is evaluation at `0 : Fin 1`.
+Both the energy identity and the intertwining identity are proved here, rather
+than supplied as premises. The intermediate space `E` need not be finite
+dimensional. This is a scalar specialization, not a representation of a
+general fluid PDE or an infinite-dimensional moment operator.
+-/
+
+/-- The unique coordinate of a real one-dimensional vector. -/
+def scalarEncode (v : Fin 1 → ℝ) : ℝ := v 0
+
+/-- The literal one-by-one matrix representing a continuous real-linear
+endomorphism of `ℝ`. -/
+def scalarOperatorMatrix (J : ℝ →L[ℝ] ℝ) : Fin 1 → Fin 1 → ℝ :=
+  fun _ _ => J 1
+
+/-- The full one-coordinate energy is exactly the squared real norm. -/
+theorem scalarEncode_energy (v : Fin 1 → ℝ) :
+    energy (Finset.univ : Finset (Fin 1)) v = ‖scalarEncode v‖ ^ 2 := by
+  simp [energy, scalarEncode, Real.norm_eq_abs, sq_abs, Fin.sum_univ_one]
+
+/-- A continuous real-linear map on `ℝ` is multiplication by its image of
+`1`; the scalar coordinate matrix therefore intertwines exactly. -/
+theorem scalarOperatorMatrix_intertwines (J : ℝ →L[ℝ] ℝ)
+    (v : Fin 1 → ℝ) :
+    scalarEncode (applyMatrix (Finset.univ : Finset (Fin 1))
+      (scalarOperatorMatrix J) v) = J (scalarEncode v) := by
+  have hmul (x : ℝ) : J x = J 1 * x := by
+    calc
+      J x = J (x • (1 : ℝ)) := by simp [smul_eq_mul]
+      _ = x • J 1 := by rw [map_smul]
+      _ = J 1 * x := by simp [smul_eq_mul, mul_comm]
+  calc
+    scalarEncode (applyMatrix (Finset.univ : Finset (Fin 1))
+        (scalarOperatorMatrix J) v) = J 1 * v 0 := by
+      simp [scalarEncode, applyMatrix, scalarOperatorMatrix, Fin.sum_univ_one]
+    _ = J (scalarEncode v) := by
+      simpa only [scalarEncode] using (hmul (v 0)).symm
+
+/-- The scalar moment matrix has a concrete one-coordinate energy
+observability estimate, without abstract coordinate-compatibility assumptions. -/
+theorem scalar_moment_adjoint_observability
+    (B : E →L[ℝ] ℝ) (C : ℝ →L[ℝ] E)
+    (R : ℝ →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : ℝ,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin 1 → ℝ) :
+    (ε / (ε + β * δ)) ^ 2 *
+        energy (Finset.univ : Finset (Fin 1)) v ≤
+      energy (Finset.univ : Finset (Fin 1))
+        (applyMatrix Finset.univ (scalarOperatorMatrix (momentMatrix B C)) v) := by
+  exact certified_moment_adjoint_observability
+    (Finset.univ : Finset (Fin 1))
+    (scalarOperatorMatrix (momentMatrix B C))
+    B C R scalarEncode hε hB hR hcoercive
+    scalarEncode_energy
+    (scalarOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- A genuine one-coordinate realization of the coercive scalar moment matrix
+has a strict relative finite-adjoint contraction factor. The only analytical
+supplier is the original global coercivity inequality. -/
+theorem scalar_moment_adjoint_strict_contraction
+    (B : E →L[ℝ] ℝ) (C : ℝ →L[ℝ] E)
+    (R : ℝ →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : ℝ,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin 1 → ℝ) :
+    let A := scalarOperatorMatrix (momentMatrix B C)
+    energy (Finset.univ : Finset (Fin 1))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ)) ^ 2) * energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ)) ^ 2 < 1 := by
+  dsimp only
+  exact certified_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin 1))
+    (scalarOperatorMatrix (momentMatrix B C))
+    B C R scalarEncode hε hB hR hcoercive
+    scalarEncode_energy
+    (scalarOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- The scalar coordinate realization also gives the quantitative contraction
+for an arbitrary scalar perturbation `P` lying strictly inside the certified
+moment gap. No separate coordinate intertwining hypotheses are needed. -/
+theorem scalar_perturbed_moment_adjoint_strict_contraction
+    (B : E →L[ℝ] ℝ) (C : ℝ →L[ℝ] E)
+    (R : ℝ →L[ℝ] E →L[ℝ] ℝ) (P : ℝ →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : ℝ,
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hpert : ‖P - momentMatrix B C‖ < ε / (ε + β * δ))
+    (v : Fin 1 → ℝ) :
+    let A := scalarOperatorMatrix P
+    energy (Finset.univ : Finset (Fin 1))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2) *
+          energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2 < 1 := by
+  dsimp only
+  exact certified_perturbed_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin 1)) (scalarOperatorMatrix P)
+    B C R P scalarEncode hε hB hR hcoercive hpert
+    scalarEncode_energy (scalarOperatorMatrix_intertwines P) v
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
