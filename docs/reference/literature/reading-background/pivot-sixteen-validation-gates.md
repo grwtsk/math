@@ -243,6 +243,30 @@ This read-only audit expands the prior eleven-module frontier with exact Git sou
 
 The earlier mathematical A–H phases remain explanatory, not executable order. Preserve exact historical source hashes and corrected `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` (superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`), unchanged `Set.Ioi (0:ℝ)` hypotheses, and pending strict-integral, mixed-weight, Weil and RH obligations. **No complete recursive closure, cycle-free DAG or executable topological order is certified.** Evidence remains **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Stop/no-merge/no-root-promotion/no-force-push/no-Railway/no-unauthorized-dispatch constraints remain in force.
 
+## Import frontier continuation: eleven additional audited sources
+
+Source-only inspection recorded exact Git file blobs and direct GRWTSK import edges for eleven previously unresolved sources.
+
+| Module under `GRWTSK.` | Blob | Direct project imports |
+|---|---|---|
+| `NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic` | `7bf8b41ba8b704fee0ee64a53b61d2842e9542da` | `NumberTheory.Zeta.Riemann.CubicRemainder` |
+| `NumberTheory.Zeta.Riemann.RightHalfPlaneModulus` | `6a6818872730e47da338cb1727de6c8848048142` | `Analysis.Real.ReciprocalSquareTail` |
+| `NumberTheory.Zeta.Riemann.AnchoredLocalJensen` | `c75ff632b011100da1dce61eb5df8526926f04e0` | `NumberTheory.Zeta.Riemann.LocalJensenCount`, `NumberTheory.Zeta.Riemann.RightHalfPlaneModulus` |
+| `Analysis.Complex.GammaVerticalBound` | `5c0a7ff1adb439387d5402125860952de849d472` | `Analysis.Complex.NormalizedDiskLogarithm`, `Analysis.Complex.TrigonometricHeightBounds` |
+| `NumberTheory.Zeta.Riemann.JensenCentralLogDerivative` | `54180e188c1f6986b0162b52a3c66ca5581eac7e` | `NumberTheory.Zeta.Riemann.JensenDiskQuotient` |
+| `NumberTheory.Zeta.Riemann.LeftLogDerivative` | `c15adaf6c97d88e7ba2c1e9dcd3c775dbd36889a` | `Analysis.Complex.DigammaShift`, `NumberTheory.Zeta.Riemann.AdmissibleRectangles`, `NumberTheory.Chebyshev.TentPerronLine` |
+| `Analysis.Complex.TentContourMajorants` | `649a824a52f4aac5b32f4ee5457f5f2db2b3a2b8` | `Analysis.Complex.TentMellinInversion`, `Analysis.Complex.OrientedRectangle` |
+| `NumberTheory.Chebyshev.TentEdgeBounds` | `204f8a0161e532c8aaff24a09de33e069a615336` | `Analysis.Complex.TentContourMajorants`, `NumberTheory.Chebyshev.HeightIndexedTentResidues` |
+| `NumberTheory.LSeries.TentPairing` | `7b50bbc2593501ab87420d1c44408a1041fdfb96` | `Analysis.Complex.TentMellinInversion` |
+| `NumberTheory.Chebyshev.TentSource` | `0af34334ffd769414bf0c95563676350c5db916d` | `Analysis.Real.TentWeight`, `NumberTheory.Chebyshev.LegendreLogBudget` |
+| `NumberTheory.Chebyshev.CountedTentTail` | `d4b6cd930855fd6f61d688ada798eb6681f1a76d` | `Analysis.Complex.TentKernelTail`, `NumberTheory.Chebyshev.TentSource` |
+
+**New unexpanded source frontier:** `NumberTheory.Zeta.Riemann.CubicRemainder`, `Analysis.Real.ReciprocalSquareTail`, `NumberTheory.Zeta.Riemann.LocalJensenCount`, `Analysis.Complex.NormalizedDiskLogarithm`, `Analysis.Complex.TrigonometricHeightBounds`, `NumberTheory.Zeta.Riemann.JensenDiskQuotient`, `Analysis.Complex.DigammaShift`, `Analysis.Complex.TentMellinInversion`, `NumberTheory.Chebyshev.HeightIndexedTentResidues`, `NumberTheory.Chebyshev.LegendreLogBudget`, and their descendants. Previously audited imports (including `AdmissibleRectangles`, `TentPerronLine`, `OrientedRectangle`, `TentKernelTail` and `TentWeight`) are reused as prior evidence, not new verification.
+
+The direct imports also include Mathlib modules for parametric integrals, Riemann zeta, digamma, improper integrals, dominated convergence, and tactics. Complete Mathlib/Lean transitive closure is still pending. This table is **not** an executable topological order and establishes neither closure completeness nor cycle-freedom.
+
+**Preserved constraints:** Explanatory-only A–H mathematical stages, all pending source-specific analytic and Weil/RH obligations, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` vs historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` theorem domains, no-root-import/no-merge/no-force-push/no-Railway/no-unauthorized-dispatch rules. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
