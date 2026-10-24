@@ -639,14 +639,14 @@ theorem certified_spectral_hodge_heat_decay {n : ℕ}
       (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.heat a t x) ≤
       Real.exp (-2 * t * (ε / (ε + β * δ)) ^ 2) *
         GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.dot x x := by
-  apply GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix_hodge_heat_gap
-    a (γ := ε / (ε + β * δ))
-  · intro v
-    simpa only [hdiag] using
-      (euclidean_moment_adjoint_observability
-        B C R hε hB hR hcoercive v)
-  · exact ht
-  · exact x
+  exact GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix_hodge_heat_gap
+    a (γ := ε / (ε + β * δ)) (t := t)
+    (by
+      intro v
+      simpa only [hdiag] using
+        (euclidean_moment_adjoint_observability
+          B C R hε hB hR hcoercive v))
+    ht x
 
 /-- Under the same typed diagonal identification and global coercivity,
 the degree-zero harmonic space of the positive diagonal Hodge model is
