@@ -6746,6 +6746,72 @@ conversion all explicit. Only after that theorem is source-bound can the present
 information-loss result constrain an actual criterion-facing reconstruction.
 
 
+## Case HUFFMAN-HEAP-CHECKED-REFINEMENT-20261023 — ordering and integer domains
+
+**Provenance.** Repository-derived formal refinement of the Rust/Python byte
+codec, 2026. This is not a newly imported theorem from a paper. External paper
+title, byline, publication version, DOI/arXiv and theorem locator are **NOT
+APPLICABLE** for these declarations. The separate Huffman 1952 entry remains
+background for the coding construction, not a source of the implementation
+refinement or a claim of historical influence. No optimality result is used.
+The exact changed Rust source is `grwtsk/noeaaeue@2c05fdeb9ab39cc6d80fbbad398fa00445f826ed`,
+`managers/custody/python-quine/rust/src/huffman.rs`; Python code remains the
+source-bound `_huffman_tree` and `_huffman_decode` implementation.
+
+**Maintained declarations and exact premises.** New subject leaves under
+`GRWTSK/InformationTheory/Huffman/` separate heap keys, heap traces, checked
+arithmetic, frequency updates, bit length, structural bounds, checked
+construction and discharged source bounds. `HeapOrder.python_payload_unreachable`
+and `HeapRefinement.initial_unique`/`merge_unique` prove that distinct live
+entries have distinct minimum symbols, so the Python third tuple payload is
+never compared. `HeapRefinement.fromWeights_heap_refines` proves any heap API
+trace gives exactly the sorted-list constructor's tree. Its `HeapBuild`
+premise explicitly requires multiset-preserving pops returning a least key
+and multiset-preserving insertion. This is a conditional standard-library
+interface, not a kernel proof of Rust `BinaryHeap`, Python `heapq` or their
+language semantics. Queue mass is proved invariant, and
+`CheckedBuild.all_merges_checked` derives every merge-addition guard from
+initial mass at most `2^64-1`.
+
+`FrequencyRefinement.checkedCountLoop_zero_iff` identifies successful checked
+histograms exactly with source counts and their individual u64 bounds.
+`BitLength.weightedLength_encodedBits` equates the histogram/code-length sum
+with the emitted stream length. `CheckedArithmetic` proves exact checked
+addition/multiplication/fold success and refusal, plus guarded fixed-width
+UInt64 no-wrap refinement. `CheckedCodes` includes the new checked code-length
+conversion before multiply/add; a zero weight does not bypass that conversion.
+`fromWeights_word_length_le` and `fromWeights_nodeCount_le` prove 255-bit
+codewords and at most 511 nodes from the 256-symbol construction without an
+optimality premise. `SourceBounds.inventory_histogram`,
+`inventory_bit_length`, `inventory_heap` and the conversion-aware bit-length
+law discharge numerical guards for sources of at most 32 MiB.
+
+`Bounds.compressedByteLen_eq_ceil` and `compressed_len_add_checked` prove
+Rust's quotient-plus-remainder expression equals the byte ceiling and stays
+safe even at u64 maximum; `(bits+7)` need not be representable. The conservative
+255-bits-per-symbol bound exceeds 32-bit bit-position capacity while its
+compressed byte allocation still fits. Rust therefore now explicitly checks
+`usize::try_from(bit_len)` before packing. `SourceBounds.emitted_bit_access`
+proves counter increment, byte index and shift safety on any platform given
+that actual conversion guard and the before-end loop invariant.
+`observed_prefix_increment` applies to an already established valid output
+prefix; it is not a proof of Rust/Python decoder state simulation by itself.
+
+**Classification and checks.** Concrete Lean algorithm/refinement laws are
+kernel candidates checked with Lean 4.33.0, trust level zero and fatal warnings;
+final immutable source pin, full fresh closure, axiom audit, negative controls,
+source-function spans/digests and finite language conformance are published
+by the downstream source binding. No custom axiom or supplied codec inverse is
+introduced; only standard propext, Classical.choice and Quot.sound are permitted
+by the audit. The heap API premise, correspondence of Rust node/code arrays
+and Python objects with the abstract tree, mutable-array prefix simulation,
+allocator, compiler and primitive-library contracts remain explicit. Allocation
+success is not implied by an integer capacity theorem. Cross-language sample
+agreement is finite evidence, not an operational-semantics theorem. Existing
+GF128/RS, topology, PTS, Hodge and optional model statuses are unchanged.
+All runners, receipts and operational artifacts remain outside canonical math.
+
+
 ## Case KERNEL-EXISTENCE-VALIDATION-20261023 — corrected dimension bound and algebraic complements
 
 **Provenance and scope.** Repository-derived linear algebra, 2026; no new
