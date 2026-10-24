@@ -497,4 +497,88 @@ theorem twoSite_unshifted_det_ne_zero_of_abs_energy_add_abs_coupling_lt_one
       α V ξ E origin hsmall)
 
 
+
+/-!
+## Quantitative radius bound and the actual two-site spectral exclusion
+
+The determinant estimate below upgrades a pointwise nonvanishing claim to a
+uniform open interval in energy. The final theorem uses the pinned Mathlib
+characteristic-polynomial/spectrum equivalence for the *actual* unshifted
+two-site matrix, not an assumed spectral identification.
+-/
+
+/-- Uniform signed determinant margin for every phase and two-site origin.
+There is no small-coupling hypothesis in this inequality. -/
+theorem twoSite_energy_det_le_radius_sq_sub_one
+    (α V ξ E : ℝ) (origin : ℤ) :
+    ((hamiltonian 2 α V ξ origin) - Matrix.diagonal (fun _ => E)).det ≤
+      (|E| + |V|) ^ 2 - 1 := by
+  have h0 : |potential α V ξ origin - E| ≤ |E| + |V| := by
+    calc
+      |potential α V ξ origin - E| ≤
+          |potential α V ξ origin| + |E| := abs_sub_le _ _
+      _ ≤ |V| + |E| :=
+          add_le_add_right (abs_potential_le_abs_coupling α V ξ origin) _
+      _ = |E| + |V| := add_comm _ _
+  have h1 : |potential α V ξ (origin + 1) - E| ≤ |E| + |V| := by
+    calc
+      |potential α V ξ (origin + 1) - E| ≤
+          |potential α V ξ (origin + 1)| + |E| := abs_sub_le _ _
+      _ ≤ |V| + |E| :=
+          add_le_add_right (abs_potential_le_abs_coupling α V ξ (origin + 1)) _
+      _ = |E| + |V| := add_comm _ _
+  have hrad : 0 ≤ |E| + |V| := add_nonneg (abs_nonneg _) (abs_nonneg _)
+  have hprod :
+      |(potential α V ξ origin - E) *
+          (potential α V ξ (origin + 1) - E)| ≤ (|E| + |V|) ^ 2 := by
+    rw [abs_mul, pow_two]
+    exact mul_le_mul h0 h1 (abs_nonneg _) hrad
+  rw [twoSite_energy_det]
+  have hupper :
+      (potential α V ξ origin - E) *
+          (potential α V ξ (origin + 1) - E) ≤ (|E| + |V|) ^ 2 :=
+    (le_abs_self _).trans hprod
+  linarith
+
+/-- Any coupling of size less than one defines an explicit phase-independent
+open interval of excluded determinant zeros in the unshifted two-site model. -/
+theorem twoSite_interval_det_negative
+    (α V ξ E : ℝ) (origin : ℤ)
+    (hV : |V| < 1) (hE : E ∈ Set.Ioo (-(1 - |V|)) (1 - |V|)) :
+    ((hamiltonian 2 α V ξ origin) - Matrix.diagonal (fun _ => E)).det < 0 := by
+  have habs : |E| < 1 - |V| :=
+    abs_lt.mpr ⟨by linarith [hE.1], hE.2⟩
+  exact twoSite_unshifted_det_negative_of_abs_energy_add_abs_coupling_lt_one
+    α V ξ E origin (by linarith)
+
+/-- Exact characteristic-polynomial evaluation for the same literal two-site
+Hamiltonian, retaining both actual Sturmian potential values. -/
+theorem twoSite_charpoly_eval
+    (α V ξ E : ℝ) (origin : ℤ) :
+    (hamiltonian 2 α V ξ origin).charpoly.eval E =
+      (potential α V ξ origin - E) *
+        (potential α V ξ (origin + 1) - E) - 1 := by
+  rw [Matrix.eval_charpoly, Matrix.det_fin_two]
+  norm_num [Matrix.scalar_apply, Matrix.sub_apply, Matrix.add_apply,
+    Matrix.diagonal_apply, hamiltonian, freeDirichlet]
+  ring
+
+/-- A genuine finite-volume spectral exclusion for the *unshifted* two-site
+Sturmian Hamiltonian. This is a phase-uniform finite matrix gap only:
+the infinite-volume spectrum and IDS require additional arguments. -/
+theorem twoSite_interval_spectrum_exclusion
+    (α V ξ E : ℝ) (origin : ℤ)
+    (hV : |V| < 1) (hE : E ∈ Set.Ioo (-(1 - |V|)) (1 - |V|)) :
+    E ∉ spectrum ℝ (hamiltonian 2 α V ξ origin) := by
+  intro hmem
+  have hroot : (hamiltonian 2 α V ξ origin).charpoly.IsRoot E :=
+    Matrix.mem_spectrum_iff_isRoot_charpoly.mp hmem
+  have heval : (hamiltonian 2 α V ξ origin).charpoly.eval E = 0 :=
+    hroot.eq_zero
+  rw [twoSite_charpoly_eval] at heval
+  have hneg := twoSite_interval_det_negative α V ξ E origin hV hE
+  rw [twoSite_energy_det] at hneg
+  linarith
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
