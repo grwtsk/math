@@ -653,6 +653,38 @@ theorem finiteBlockSum_mvNRel
       _ = Matrix.reindex ec ec (Uᴴ * U) := congrArg _ hright
       _ = _ := hreright
 
+/-! ## Permutation-compatible finite projection classes -/
+
+/-- Reindex one fixed finite projection by an actual equivalence of finite
+index types. The projection equations are transported by the established
+matrix reindexing map, not supplied as additional assumptions. -/
+def reindexedFiniteProjection
+    {m n : ℕ} (e : Fin m ≃ Fin n) (P : FiniteStarProjection m) :
+    FiniteStarProjection n :=
+  ⟨Matrix.reindex e e P.val,
+    starProjection_reindex_fin e P.val P.property⟩
+
+/-- Reindexing a finite star projection yields a concrete rectangular
+Murray–von Neumann correspondence. The witness is the original
+projection matrix reindexed in the column coordinate only. -/
+theorem mvNRel_reindexed
+    {m n : ℕ} (e : Fin m ≃ Fin n) (P : FiniteStarProjection m) :
+    MvNRel P (reindexedFiniteProjection e P) := by
+  let V : Matrix (Fin m) (Fin n) ℂ :=
+    Matrix.reindex (Equiv.refl (Fin m)) e P.val
+  have hstar : P.valᴴ = P.val := by
+    change star P.val = P.val
+    exact P.property.isSelfAdjoint.star_eq
+  have hidem : P.val * P.val = P.val :=
+    P.property.isIdempotentElem.eq
+  obtain ⟨hleft, hright⟩ :=
+    mvNWitness_reindex (Equiv.refl (Fin m)) e P.val
+  refine ⟨V, ?_, ?_⟩
+  · change P.val = V * Vᴴ
+    simpa only [Matrix.reindex_refl_refl, hstar, hidem] using hleft
+  · change Matrix.reindex e e P.val = Vᴴ * V
+    simpa only [hstar, hidem] using hright
+
 /-! ## Zero projection and explicit rectangular identity witnesses -/
 
 /-- The unique zero-dimensional complex matrix is a star projection.
