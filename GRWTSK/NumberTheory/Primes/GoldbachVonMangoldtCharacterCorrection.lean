@@ -61,4 +61,34 @@ theorem norm_character_reconstruction_fullPsi_le
             (Nat.log2 N : ℝ) * Real.log (q : ℝ)) :=
       add_le_add hchar (norm_nonunitPsiTotal_le_log_correction q N hq)
 
+
+/-- Concrete complex Dirichlet reconstruction relative to the full
+finite prime-power mass. The nonunit contribution is charged by the
+existing arithmetic bound; only nonprincipal cancellation is supplied. -/
+theorem norm_dirichlet_reconstruction_fullPsi_le
+    (q N : ℕ) (hq : q ≠ 0)
+    [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ)
+    (E : DirichletCharacter ℂ q → ℝ)
+    (hE : ∀ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q),
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)‖ ≤ E χ) :
+    ‖(Nat.totient q : ℂ) * unitPsiWeight q N a -
+      (∑ n ∈ Finset.range (N + 1),
+        (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ))‖ ≤
+      (∑ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q), E χ) +
+        ((GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.finitePrimeDivisorCount q N : ℝ) *
+          Real.log (N : ℝ) +
+          (Nat.log2 N : ℝ) * Real.log (q : ℝ)) := by
+  have h := norm_character_reconstruction_fullPsi_le q N hq
+    (fun χ : DirichletCharacter ℂ q =>
+      fun b : (ZMod q)ˣ => χ (b : ZMod q))
+    a (1 : DirichletCharacter ℂ q) E
+    (complexDirichlet_orthogonalAt q a)
+    (complexDirichlet_principal_on_units q)
+    (fun χ => (complexDirichlet_norm_on_units q χ a).le)
+    hE
+  rw [card_complexDirichlet_eq_totient q] at h
+  exact h
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
