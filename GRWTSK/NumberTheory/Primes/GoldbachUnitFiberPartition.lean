@@ -206,4 +206,20 @@ theorem card_complexDirichlet_eq_totient
   simpa only [Nat.card_eq_fintype_card] using
     (DirichletCharacter.card_eq_totient_of_hasEnoughRootsOfUnity ℂ q)
 
+
+/-- Concrete Dirichlet orthogonality on reduced residue units, in the
+inverse-evaluation orientation supplied by pinned Mathlib. Translating
+the inverse evaluation into the complex conjugation used by
+`OrthogonalAt` is a distinct, still-unverified bridge. -/
+theorem complexDirichlet_unit_orthogonality_inverse
+    (q : ℕ) [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a b : (ZMod q)ˣ) :
+    (∑ χ : DirichletCharacter ℂ q,
+      χ ((a : ZMod q)⁻¹) * χ (b : ZMod q)) =
+        if b = a then (Nat.totient q : ℂ) else 0 := by
+  have h := DirichletCharacter.sum_char_inv_mul_char_eq ℂ a.isUnit
+    (b : ZMod q)
+  simpa only [Units.val_inj] using h
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
