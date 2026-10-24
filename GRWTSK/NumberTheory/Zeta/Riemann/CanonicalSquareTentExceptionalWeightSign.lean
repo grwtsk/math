@@ -25,6 +25,8 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightS
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCofactorZeroSign
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps
+open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge
+open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot
 
 /-- The genuine real first cofactor, made from the actual tent moments. -/
 noncomputable def realFirstCofactor : ℝ :=
@@ -53,7 +55,8 @@ noncomputable def realExceptionalWeight : ℝ :=
 /-- The real exceptional weight is strictly negative. -/
 theorem realExceptionalWeight_neg : realExceptionalWeight < 0 := by
   unfold realExceptionalWeight
-  exact neg_neg_of_pos
-    (div_pos twoTentMomentDeterminant_pos realFirstCofactor_pos)
+  have hpositive : 0 < twoTentMomentDeterminant / realFirstCofactor :=
+    div_pos twoTentMomentDeterminant_pos realFirstCofactor_pos
+  linarith
 
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightSign
