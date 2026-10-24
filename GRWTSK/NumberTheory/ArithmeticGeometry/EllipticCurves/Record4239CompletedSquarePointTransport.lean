@@ -135,4 +135,32 @@ theorem completedSquare_addY_compat (x₁ x₂ Y₁ ℓ : ℚ) :
     nativeCompletedSquareCurve_eq]
   ring
 
+/-- The new point-carrier equivalence sends each actual published
+normalized rational point to its original native rational point.
+No group-law preservation or independent-point theorem is inferred. -/
+theorem completedSquarePointEquiv_sourcePoint (i : Fin 32) :
+    completedSquarePointEquiv (nativeCompletedSquarePoint i) =
+      nativePoint i := by
+  change (WeierstrassCurve.Affine.Point.some (pointX i)
+    ((pointY i + pointX i / 2) - pointX i / 2) _) =
+      WeierstrassCurve.Affine.Point.some (pointX i) (pointY i) _
+  simp only [add_sub_cancel_right]
+
+/-- The carrier map does preserve the elliptic negation involution,
+an independently verified algebraic prerequisite for an additive map.
+It does not yet show preservation of point addition. -/
+theorem completedSquareToNativePoint_neg
+    (P : nativeCompletedSquareCurve.toAffine.Point) :
+    completedSquareToNativePoint (-P) =
+      -completedSquareToNativePoint P := by
+  cases P with
+  | zero => rfl
+  | some x Y h =>
+    change (WeierstrassCurve.Affine.Point.some x
+      (nativeCompletedSquareCurve.toAffine.negY x Y - x / 2) _) =
+      WeierstrassCurve.Affine.Point.some x
+        (nativeCurve.toAffine.negY x (Y - x / 2)) _
+    rw [completedSquare_negY_compat]
+
+
 end GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
