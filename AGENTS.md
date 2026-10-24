@@ -2,6 +2,7 @@
 
 This repository is the canonical pure mathematical source for GRWTSK.
 
+- Use exactly `grwtsk contributors` for local attribution in bylines, copyright notices, and metadata; keep individual personal names out of local attribution. Preserve actual upstream author attribution and license obligations.
 - Keep maintained mathematical declarations under `GRWTSK.*` or explicit upstream dependencies.
 - Place definitions and theorems by mathematical subject, not by orchestration workflow.
 - Preserve exact hypotheses, source identities, certificate scopes, trust boundaries, and unresolved premises.
