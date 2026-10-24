@@ -114,3 +114,5 @@ Next implementation pass: [common-parameter G2 braid-six Hecke matrices by taxon
 Next implementation pass: [braid-six Hecke presentation and universal evaluation](obligation-implementation-progress-v12.md). Counts remain four completed, fifteen partial, seventeen unresolved.
 
 Next source follow-up: [pending braid-six character and noncollapse candidates](obligation-implementation-progress-v13.md). Native verification is blocked; counts remain four completed, fifteen partial, seventeen unresolved.
+
+Latest follow-up: [fresh source replay for pending Hecke character candidates](obligation-implementation-progress-v14.md). No new target acceptance; counts remain unchanged.
