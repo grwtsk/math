@@ -328,6 +328,12 @@ Read-only source inspection of nine outstanding GRWTSK modules recorded the foll
 
 All historical pins, explanatory-only A–H mathematical phases, follow-up analytic obligations, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, and unchanged `Set.Ioi (0:ℝ)` domains are retained. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** No merge, root import, Railway, force push, or unauthorized dispatch.
 
+## Attribution-only source revision (2026-10-23)
+
+The repository's local attribution for these twelve active canonical-square-tent leaves was normalized to exactly **`grwtsk contributors`**. This replaces the tool-specific formalization-assistance header without changing theorem declarations, definitions, proof bodies or hypotheses. The earlier pinned blobs throughout the audit are **historical file identities** and remain intact. The new `CanonicalSquareTentSixteenGapIntegrability` current blob is `c822176ce651c91abf23b2860e8120566681d346`, whose predecessor is the repaired `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` (and the historical pre-repair blob `7df554fa8fff56c912bd4a6b100f032ef8bc73da`). Exact current blobs for the other eleven changed headers are recorded in `paper-to-formalization-references.md`, case section **Active source-header attribution update (2026-10-23)**. An actual fresh single-commit closure scan must read these newer blob IDs, not substitute older validation-issue pins.
+
+Upstream authors and license duties remain unchanged. No kernel acceptance follows from an attribution-only edit. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Mathematical phases, non-root import, no-merge/no-force-push/no-Railway and no unauthorized execution restrictions remain in force.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
