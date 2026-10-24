@@ -275,4 +275,32 @@ theorem norm_energy_lower_bound_of_controlled_cross_term
   rw [hrewrite]
   linarith
 
+/-- Uniform sector and cross-term estimates yield a strictly positive common
+coercivity constant. The quantified parameter may represent a regulator; no
+continuum convergence or Yang--Mills identification is supplied. -/
+theorem uniform_gap_of_controlled_cross_terms
+    {H : Type*} [NormedAddCommGroup H]
+    {I : Type*} (x x₁ x₂ : I → H)
+    (energy energy₁ energy₂ cross : I → ℝ)
+    (delta epsilon : ℝ)
+    (hpositive : epsilon < delta)
+    (hnorm : ∀ i, ‖x i‖ ^ 2 = ‖x₁ i‖ ^ 2 + ‖x₂ i‖ ^ 2)
+    (hsplit : ∀ i, energy i = energy₁ i + energy₂ i + cross i)
+    (hcross : ∀ i, -(epsilon * ‖x i‖ ^ 2) ≤ cross i)
+    (hfirst : ∀ i, delta * ‖x₁ i‖ ^ 2 ≤ energy₁ i)
+    (hsecond : ∀ i, delta * ‖x₂ i‖ ^ 2 ≤ energy₂ i) :
+    0 < delta - epsilon ∧
+      ∀ i, (delta - epsilon) * ‖x i‖ ^ 2 ≤ energy i := by
+  constructor
+  · exact sub_pos.mpr hpositive
+  · intro i
+    have hsectors : delta * ‖x i‖ ^ 2 ≤ energy₁ i + energy₂ i := by
+      rw [hnorm i, mul_add]
+      exact add_le_add (hfirst i) (hsecond i)
+    rw [hsplit i]
+    have hrewrite : (delta - epsilon) * ‖x i‖ ^ 2 =
+        delta * ‖x i‖ ^ 2 - epsilon * ‖x i‖ ^ 2 := sub_mul _ _ _
+    rw [hrewrite]
+    linarith [hcross i]
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
