@@ -12,7 +12,7 @@ original Mangoldt inventory additionally uses uniqueness of the prime base.
 The binomial/Chebyshev estimates in the accompanying note are not postulated here.
 -/
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.PrimeCounting.OctaveBaseSeparation
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.OctaveBaseSeparation
 
 theorem one_le_power (p k : ℕ) (hp : 1≤p) : 1≤p^k := by
   induction k with
@@ -53,4 +53,4 @@ theorem lower_endpoint_excluded (X p k : ℕ) (h : p^k=X) : ¬ X<p^k := by omega
 
 theorem upper_endpoint_allowed (X : ℕ) (hX : 0<X) : X<2*X ∧ 2*X≤2*X := by omega
 
-end GRWTSK.NumberTheory.PrimeCounting.OctaveBaseSeparation
+end GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.OctaveBaseSeparation

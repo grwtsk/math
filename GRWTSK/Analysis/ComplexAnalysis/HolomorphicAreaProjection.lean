@@ -24,7 +24,7 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 universe u
 noncomputable section
@@ -271,21 +271,21 @@ theorem projection_not_zero (hOpen : D.IsOpenCover)
 /-- A concrete disk instance supplies the finite-area hypothesis and a real point. -/
 theorem disk_projection_not_zero :
     bergmanProjection
-      GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen ≠ 0 :=
+      GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen ≠ 0 :=
   projection_not_zero _
-    GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.disk_finite_area
-    GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
+    GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.disk_finite_area
+    GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
 
 /-- The null-point spike is projected to zero, not recovered at its exceptional point. -/
 theorem spike_not_recovered :
-    let h := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-    let x := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
+    let h := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+    let x := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
     (projectedFunction h GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2.Fixtures.spikeClass :
-      Section GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk) x ≠
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike x := by
+      Section GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk) x ≠
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike x := by
   dsimp only
   rw [GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2.Fixtures.spikeClass_zero,
-    projectedFunction_zero, GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike_center]
+    projectedFunction_zero, GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike_center]
   exact zero_ne_one
 
 end Fixtures

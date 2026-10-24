@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.DyadicFourierFrameEnergyEquivalenceControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem frame_bound_is_exactly_original_supplier :
     AllDyadicAdmissibleActionFrameBound ↔ AllDyadicEnergyBound :=

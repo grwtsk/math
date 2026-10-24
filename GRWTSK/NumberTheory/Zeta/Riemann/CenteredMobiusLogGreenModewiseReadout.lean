@@ -15,7 +15,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def thinFourierSlope (k : ℤ) (t : ℝ) : ℂ :=
   fourier (-k) (t : AddCircle (1 : ℝ))

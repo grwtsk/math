@@ -10,7 +10,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Threshold-parameterized prime-only coordinate premise.  At rho=1/2 this
 is exactly the existing critical prime-only Fourier criterion. -/

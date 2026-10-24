@@ -12,7 +12,7 @@ Every ordered Dirichlet factorization is retained, including squareful outputs.
 Finite coefficient signs give no all-real polynomial cancellation witness.
 -/
 
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 /-- Complete low-factor triple convolution coefficient. -/
@@ -61,4 +61,4 @@ theorem high_moebius_coefficients_have_both_signs :
   · exact ⟨3, 30, by rw [high_coefficient_three_thirty]; norm_num⟩
   · exact ⟨4, 49, by rw [high_coefficient_four_fortynine]; norm_num⟩
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

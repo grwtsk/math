@@ -19,7 +19,7 @@ scoped compiler and independent acceptance. Current verification of the kernel a
 No arithmetic budget or native Gram equality is supplied by this obstruction.
 -/
 
-namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity
 
 open MeasureTheory Set Filter
 open scoped Topology ContDiff
@@ -129,4 +129,4 @@ theorem polarity_kernel_not_contDiff_three {A : ℝ} (hA : 1 ≤ A) :
 
 end
 
-end GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity

@@ -35,7 +35,7 @@ noncomputable section
 open Filter
 open scoped BigOperators Topology
 
-namespace GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+namespace GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Sum of the squares of all singleton blocks in `[0,2^m)`. -/
 def singletonScaleSquareEnergy (m : ℕ) (a : ℕ → ℝ) : ℝ :=
@@ -76,12 +76,12 @@ theorem singletonScaleSquareEnergy_le_coordinate
       sq_nonneg (alignedDyadicBlockSum a r q)
   · simp
 
-end GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+end GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 namespace TwoPointConjectureJunction
 
-open GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+open GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Complete scale-zero mass of the zero-padded two-point family at one dyadic
 scale.  The inner range is the full dyadic interval; padding makes all cells
@@ -217,6 +217,6 @@ theorem completeTreeSupplierRefutedAtScope_of_certificate
 end TwoPointConjectureJunction
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
-#print axioms GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.singletonScaleSquareEnergy_le_coordinate
+#print axioms GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal.singletonScaleSquareEnergy_le_coordinate
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointSingletonSquareMass_le_coordinateBlockEnergySum
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.not_subpolynomialCoordinateEnergy_of_singletonMassCertificate

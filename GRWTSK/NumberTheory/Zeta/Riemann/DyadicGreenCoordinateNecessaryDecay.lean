@@ -29,7 +29,7 @@ LOW_COORDINATE_DECAY_NECESSARY.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem mass0_sq_le_arithmeticCoordinateStage
     (X N : ℕ) :

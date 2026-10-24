@@ -39,7 +39,7 @@ ARITHMETIC_FOURIER_COORDINATES_EXPOSED.
 namespace GRWTSK.RiemannHypothesis
 
 open _root_.MeasureTheory Real Filter Topology Set
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The zero-endpoint Fourier primitive written directly as a phase difference. -/
 theorem fourierModeValue_eq_phase_difference

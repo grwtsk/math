@@ -1,7 +1,7 @@
 # A Gaussian contour for the zeta Dirichlet series
 
 Let $\sigma>1$ and $Z>0$ be real. Put $s_v=\sigma+iv$ and let $P$ be the
-exact [normalized Gaussian Mellin profile](../../Analysis/MellinTransform/normalized-gaussian.md)
+exact [normalized Gaussian Mellin profile](../../Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/normalized-gaussian.md)
 with Mellin transform $\exp(s^2)$. Then
 
 \[

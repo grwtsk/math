@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.RationalClosedInterval
+import GRWTSK.Analysis.RealAnalysis.RationalClosedInterval
 import GRWTSK.NumberTheory.Zeta.Riemann.RationalRectangleSymmetricEdgeEnclosure
 import Mathlib.Tactic
 
@@ -39,7 +39,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.RationalRectangleRealEdgeEnclosure
 
-open GRWTSK.Analysis.Real.RationalClosedInterval
+open GRWTSK.Analysis.RealAnalysis.RationalClosedInterval
 open GRWTSK.Analysis.ComplexAnalysis.RationalComplexBall
 open CanonicalZeroDivisor
 open AdmissibleRectangles

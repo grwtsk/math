@@ -23,7 +23,7 @@ namespace GRWTSK.NumberTheory.Moebius.CriticalIntervalBlockGrowth
 
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
-open GRWTSK.NumberTheory.ArithmeticFunctions
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 /-- The elementary coefficient bound gives the sharp linear allowance for the
 closed Mertens prefix. -/
@@ -38,8 +38,8 @@ theorem pickupMertensPrefix_abs_le_natCast (n : ℕ) :
       apply Finset.sum_le_sum
       intro k _
       simpa [GRWTSK.RiemannHypothesis.CCC.moebiusReal,
-        GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal] using
-          GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one k
+        GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal] using
+          GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one k
     _ = (n : ℝ) := by simp [Nat.card_Icc]
 
 /-- Abel summation converts the elementary linear Mertens allowance into the

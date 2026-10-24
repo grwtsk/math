@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT.
 Mathlib results retain upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierFrame
-import GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
 import Mathlib.Analysis.Fourier.AddCircle
 import Mathlib.Tactic
 
@@ -36,8 +36,8 @@ namespace GRWTSK.RiemannHypothesis
 open _root_.MeasureTheory Set
 open Real
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
 
 def fourierModePrimitive (k : ℤ) (t : ℝ) : ℂ :=
   (1 : ℂ) / (-2 * π * Complex.I * k) *
@@ -110,7 +110,7 @@ theorem greenResidualFourierCoeff_eq_unit_pairing
         ∂unitVolume := by
   rw [greenResidualFourierCoeff, fourierCoeffOn_eq_integral]
   norm_num
-  rw [← GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.unit_integral_eq_interval]
+  rw [← GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout.unit_integral_eq_interval]
   apply integral_congr_ae
   filter_upwards with t
   simp [greenResidualComplex, fourierModeSlope, mul_comm]
@@ -120,7 +120,7 @@ theorem action_fourierModeComplexTest_eq_neg_fourierCoeff
     {k : ℤ} (hk : k ≠ 0) :
     action X (fourierModeComplexTest k hk).value =
       -greenResidualFourierCoeff X k := by
-  rw [GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.centered_ibp
+  rw [GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout.centered_ibp
     (fourierModeComplexTest k hk) hX]
   simp only [fourierModeComplexTest_value_zero,
     fourierModeComplexTest_value_one, zero_mul, sub_zero, zero_add, zero_sub]

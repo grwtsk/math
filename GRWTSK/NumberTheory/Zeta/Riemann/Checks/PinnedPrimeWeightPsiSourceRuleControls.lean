@@ -10,7 +10,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightPsiSourceRuleControls
 
 open Chebyshev
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Concrete replay of the exact psi/theta signed decomposition. -/
 theorem concrete_psi_source_exact_identity

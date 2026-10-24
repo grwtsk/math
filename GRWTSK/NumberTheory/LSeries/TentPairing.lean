@@ -22,7 +22,7 @@ namespace GRWTSK.NumberTheory.LSeries.TentPairing
 
 open MeasureTheory Filter
 open scoped Topology BigOperators
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 

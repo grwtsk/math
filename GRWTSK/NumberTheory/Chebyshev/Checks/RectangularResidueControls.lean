@@ -14,7 +14,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls
 open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 open GRWTSK.Analysis.ComplexAnalysis.RectangularCauchyKernel
-open GRWTSK.Analysis.Real.CauchyEdgePrimitives
+open GRWTSK.Analysis.RealAnalysis.CauchyEdgePrimitives
 
 noncomputable section
 

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.CauchyEdgePrimitives
+import GRWTSK.Analysis.RealAnalysis.CauchyEdgePrimitives
 import GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 
 set_option autoImplicit false
@@ -20,7 +20,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.RectangularCauchyKernel
 
 open MeasureTheory Filter Set
 open scoped Topology Interval BigOperators
-open GRWTSK.Analysis.Real.CauchyEdgePrimitives
+open GRWTSK.Analysis.RealAnalysis.CauchyEdgePrimitives
 open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 

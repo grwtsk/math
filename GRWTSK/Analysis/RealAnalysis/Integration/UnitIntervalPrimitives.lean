@@ -13,7 +13,7 @@ import GRWTSK.Analysis.GreenKernel.UnitInterval
 set_option autoImplicit false
 noncomputable section
 open MeasureTheory Set
-namespace GRWTSK.Analysis.Integral.UnitIntervalPrimitives
+namespace GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
 open GRWTSK.Analysis.GreenKernel.UnitInterval
 
 def logarithm (t : ℝ) : ℝ := Real.log (1+t)
@@ -93,4 +93,4 @@ theorem cellPrimitive_hasDerivAt (c : ℝ) {y : ℝ} (hy : 0 < y) :
 theorem greenBackground_endpoints : greenBackground 0=0 ∧ greenBackground 1=0 := by
   constructor <;> norm_num [greenBackground]
 
-end GRWTSK.Analysis.Integral.UnitIntervalPrimitives
+end GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives

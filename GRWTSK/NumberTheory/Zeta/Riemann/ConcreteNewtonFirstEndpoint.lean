@@ -23,7 +23,7 @@ namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFirstEndpoint
 open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open GRWTSK.Analysis.ComplexAnalysis.IntegerDyadicTrace
 open GRWTSK.Analysis.ComplexAnalysis.RationalPowerTrace
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 private theorem lower_one (K : ℕ) : lower 1 K = 0 := by

@@ -10,7 +10,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.DyadicGreenFourierActionFrameControls
 
 open Filter Topology
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem zero_mode_is_centered_out
     {X : ℕ} (hX : 0 < X) :

@@ -1,4 +1,4 @@
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
 import Mathlib.Analysis.Complex.LocallyUniformLimit
 import Mathlib.Topology.MetricSpace.Cauchy
 
@@ -28,9 +28,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle (CircleWindow identitySymbol)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete (coveredDomain_isOpen)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle (CircleWindow identitySymbol)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierComplete (coveredDomain_isOpen)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
 
 universe u
 noncomputable section

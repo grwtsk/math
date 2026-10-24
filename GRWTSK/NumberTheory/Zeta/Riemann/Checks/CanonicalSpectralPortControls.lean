@@ -11,7 +11,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.Checks
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 
 /-- The signed spectral correction is exactly the fixed positive source at
 square stage two. -/

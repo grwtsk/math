@@ -33,8 +33,8 @@ PRIME_ONLY_COORDINATE_BOUND_IFF_FULL_BOUND_SOURCE_WRITTEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 def AllDyadicPrimeOnlyFourierCoordinateBound : Prop :=
   ∀ η : ℝ, 0 < η →

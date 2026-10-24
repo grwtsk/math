@@ -37,10 +37,10 @@ namespace GRWTSK.RiemannHypothesis
 
 open Complex Set
 open CanonicalZeroDivisor
-open GRWTSK.Analysis.MellinTransform.DyadicBounds
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.DyadicBounds
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 def chebyshevOctaveMassConstant : ℝ :=
   2 * (Real.log 4 + 4)

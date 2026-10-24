@@ -10,8 +10,8 @@ namespace GRWTSK.RiemannHypothesis.Checks.DyadicGreenPolarizedReadoutControls
 
 open Filter Topology
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem every_test_action_has_growing_fourier_reconstruction
     {X : ℕ} (hX : 0 < X)

@@ -8,7 +8,7 @@ Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Issue: #453. Direct stacked parent: draft PR #449 at
 `1157501e4b52ec388bbcff8baed6563534c40c0b`.
 -/
-import GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+import GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 import GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy
 
 /-!
@@ -41,7 +41,7 @@ open scoped BigOperators Topology
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 namespace TwoPointConjectureJunction
 
-open GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+open GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- The ordinary signed two-point source at positive shift `h`. -/
 def twoPointSequence (f g : ℕ → ℝ) (h : ℕ) : ℕ → ℝ :=

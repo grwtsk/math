@@ -1,14 +1,14 @@
 /- Actual Fourier transfer controls and a proved source-evidence obstruction.
 OpenAI/Mathlib Apache-2.0 notices and credits are retained in the imported sources. -/
 import GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments
-import GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.CompactGaussianWindow
 namespace GRWTSK.Analysis.HarmonicAnalysis.FourierAnalysis.SchwartzMoments.Checks
 noncomputable section
 open scoped FourierTransform SchwartzMap
 open MeasureTheory
 open GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus
-open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
-open GRWTSK.Analysis.MellinTransform.CompactGaussianWindow
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.NormalizedGaussian
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.CompactGaussianWindow
 
 theorem actual_zero_integrable (J : ℕ) :
     Integrable (fun t : ℝ=>(1+‖t‖)^J*‖(𝓕 (0 : 𝓢(ℝ,ℂ))) t‖) :=

@@ -22,7 +22,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 
 def sixteenPivot : ℝ := 1 / 16

@@ -7,7 +7,7 @@ Kernel compilation is pending. This is a general integral inequality, not an
 arithmetic estimate or a theorem about Gaussian/holomorphic heat equivalence.
 -/
 noncomputable section
-namespace GRWTSK.Analysis.QuadraticRootTransport
+namespace GRWTSK.Analysis.RealAnalysis.Integration.QuadraticRootTransport
 open MeasureTheory
 
 variable {X : Type*} [MeasurableSpace X] (μ : Measure X)
@@ -99,5 +99,5 @@ theorem sqrt_energy_add_le {f g : X → ℝ}
   simpa only [Real.sqrt_sq (show 0 ≤ Real.sqrt (energy μ f)+Real.sqrt (energy μ g)
     by positivity)] using hsqrt
 
-end GRWTSK.Analysis.QuadraticRootTransport
-#print axioms GRWTSK.Analysis.QuadraticRootTransport.sqrt_energy_add_le
+end GRWTSK.Analysis.RealAnalysis.Integration.QuadraticRootTransport
+#print axioms GRWTSK.Analysis.RealAnalysis.Integration.QuadraticRootTransport.sqrt_energy_add_le

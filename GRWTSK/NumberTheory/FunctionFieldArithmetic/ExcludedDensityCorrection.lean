@@ -13,7 +13,7 @@ Every correction prime power remains present. No cancellation rate is assumed.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 def excludedDensityMoebius (d : ℕ) : ArithmeticFunction ℝ :=
@@ -127,4 +127,4 @@ theorem excluded_density_correction_pos (d : ℕ) {n : ℕ} (hn : n ≠ 0) :
     rw [excluded_density_correction_multiplicative d |>.map_mul_of_coprime hab]
     exact mul_pos (ha' (by omega)) (hb' (by omega))
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

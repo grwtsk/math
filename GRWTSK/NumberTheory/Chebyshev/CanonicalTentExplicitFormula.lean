@@ -24,7 +24,7 @@ open scoped Topology BigOperators
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.CanonicalHighCounting
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open CanonicalTentAbsolute TentSelectedResidueLimit TentSource CountedTentTail
 
 noncomputable section

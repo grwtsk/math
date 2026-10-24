@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierNorm
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierComplete
 
 /-!
 # Isolated bounded-holomorphic-symbol completeness leaf
@@ -14,16 +14,16 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierComplete
 open Filter Topology MeasureTheory
 open scoped ENNReal
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierComplete
 
 noncomputable section
 
@@ -82,18 +82,18 @@ def AddedClaim : AddedIndex → Prop
             (𝓝 (completedRepresentation M μ hOpen f))
   | .kernelBoundary =>
       (CompleteSpace (BoundedSymbol
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk) ∧
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol ≠ 0 ∧
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk) ∧
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol ≠ 0 ∧
         completedRepresentation
           (MetricWeights.identity
-            GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover)
-          (Measure.dirac GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center)
-          GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-          GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol = 0) ∧
+            GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover)
+          (Measure.dirac GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center)
+          GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+          GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol = 0) ∧
       (CompleteSpace (BoundedSymbol Fixtures.emptyDomain) ∧
         ∀ f : BoundedSymbol Fixtures.emptyDomain, f = 0 ∧ ‖f‖ = 0)
   | .filterBoundary =>
-      let X := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk
+      let X := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk
       Tendsto (fun _ : ℕ => (0 : BoundedSymbol X)) ⊥ (𝓝 0) ∧
       Tendsto (fun _ : ℕ => (0 : BoundedSymbol X)) ⊥ (𝓝 1) ∧
       (0 : BoundedSymbol X) ≠ 1

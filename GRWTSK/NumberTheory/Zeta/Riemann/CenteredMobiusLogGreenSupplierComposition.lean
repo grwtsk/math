@@ -11,7 +11,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Structural Parseval identity for the exact thin arithmetic coordinate. -/
 theorem thinGreenEnergy_eq_historicalGreenEnergy

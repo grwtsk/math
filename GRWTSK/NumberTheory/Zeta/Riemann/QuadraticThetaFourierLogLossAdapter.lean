@@ -45,7 +45,7 @@ LOGARITHMIC_MAXIMAL_LOSS_ABSORBED / POWER_EXPONENT_REMAINS_OPEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- A logarithmic-loss short-interval oscillation estimate at the exact
 quadratic power exponent, with no eta inserted into the premise. -/

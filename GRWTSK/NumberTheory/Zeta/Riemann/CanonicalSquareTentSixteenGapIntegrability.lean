@@ -21,7 +21,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrab
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 
 theorem stageThreeSixteenGap_nonnegative

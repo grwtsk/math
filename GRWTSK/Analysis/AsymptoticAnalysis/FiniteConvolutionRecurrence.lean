@@ -15,7 +15,7 @@ It supplies no witness for the actual scalar arithmetic growth assertion.
 set_option autoImplicit false
 noncomputable section
 
-namespace GRWTSK.Analysis.Asymptotics.FiniteConvolutionRecurrence
+namespace GRWTSK.Analysis.AsymptoticAnalysis.FiniteConvolutionRecurrence
 
 open Finset
 
@@ -136,4 +136,4 @@ theorem feedback_factorial_recurrence_bound_of_max {b : ℕ → ℝ} {a B ρ R L
   feedback_factorial_recurrence_bound hb ha hB hρ hR
     ((le_max_left _ _).trans hL) ((le_max_right _ _).trans hL) hb0 hrec
 
-end GRWTSK.Analysis.Asymptotics.FiniteConvolutionRecurrence
+end GRWTSK.Analysis.AsymptoticAnalysis.FiniteConvolutionRecurrence

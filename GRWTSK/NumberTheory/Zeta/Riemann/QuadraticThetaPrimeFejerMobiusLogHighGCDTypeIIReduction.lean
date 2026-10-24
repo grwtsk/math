@@ -21,7 +21,7 @@ HIGH_GCD_REDUCED_TUPLE_INJECTION_SOURCE_PROVED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 open GRWTSK.NumberTheory.FiniteDivisorCounting
 
 /-- Ambient reduced tuple type `(g,(a,d'),(b,e'))`. -/

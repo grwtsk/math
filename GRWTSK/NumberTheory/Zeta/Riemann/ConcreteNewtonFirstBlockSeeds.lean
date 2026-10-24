@@ -22,7 +22,7 @@ namespace GRWTSK.RiemannHypothesis.ConcreteNewtonFirstBlockSeeds
 open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
 open RationalTaylorSeedNormalization
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open ConcreteNewtonPacket RationalZetaCenterEvaluation ConcreteNewtonFirstBlockData
 
 theorem inputs_00 (j : Fin 8) : InputValid (slot 0 j) := by

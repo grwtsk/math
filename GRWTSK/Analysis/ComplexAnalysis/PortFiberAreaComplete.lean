@@ -23,7 +23,7 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaLocalUniform
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 

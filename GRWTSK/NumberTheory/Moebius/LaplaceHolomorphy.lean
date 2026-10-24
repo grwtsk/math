@@ -2,9 +2,9 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license.
 Source-specific CCC continuation; local conditional candidate, RH remains open. -/
-import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.PolynomialEnergy
 import GRWTSK.NumberTheory.Moebius.LaplaceTransform
-import GRWTSK.Analysis.LaplaceTransform.Analytic
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.Analytic
 import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
 
 /-!

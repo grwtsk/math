@@ -32,12 +32,12 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentFiniteHeadGram
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentLedger
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 
 /-- The canonical stage `n` means square stage `n+2`, so the lower
 square-tent parameter bound holds by arithmetic alone. This is the finite

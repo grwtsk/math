@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI.
 Mathlib retains its upstream authorship and Apache-2.0 license. -/
-import GRWTSK.NumberTheory.NumberField.TotallyRealSignApproximation
+import GRWTSK.NumberTheory.AlgebraicNumberTheory.NumberFields.TotallyRealSignApproximation
 import GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMArchimedeanPositivity
 
 /-!

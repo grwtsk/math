@@ -49,7 +49,7 @@ SOBOLEV_THRESHOLD_COLLISION_TYPED / WEIGHTED_ARITHMETIC_SUPPLIER_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Frequency weight for the prime-only arithmetic Fourier shell. -/
 def primeOnlySobolevShellWeight (s : ℝ) (n : ℕ) : ℝ :=

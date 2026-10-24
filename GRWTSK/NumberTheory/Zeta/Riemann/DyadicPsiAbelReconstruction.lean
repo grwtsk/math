@@ -40,8 +40,8 @@ namespace GRWTSK.RiemannHypothesis
 open _root_.MeasureTheory Set
 open Chebyshev
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def psiError (u : ℝ) : ℝ := ψ u - u
 

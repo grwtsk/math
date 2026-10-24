@@ -29,9 +29,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaLocalUniform
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete (coveredDomain_isOpen)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierComplete (coveredDomain_isOpen)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircleMixture
   (centeredWindow centeredWindow_center)
 
 universe u

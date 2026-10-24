@@ -39,7 +39,7 @@ SHELL_RECURRENCE_EQUIVALENCE_TYPED / PRIME_SHELL_CANCELLATION_OPEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Error contributed by the next dyadic Chebyshev-theta shell. -/
 def thetaShellError (u : ℝ) : ℝ :=

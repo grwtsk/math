@@ -9,9 +9,9 @@ set_option autoImplicit false
 
 namespace GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimeExponentScale
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerAtoms
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource
 
 /-- Linear and quadratic contributions cannot be conflated even for one

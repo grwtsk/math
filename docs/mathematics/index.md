@@ -17,28 +17,28 @@ The current vocabulary has **24 entry points** and **132 unique subject concepts
 | Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
 |---|---:|---:|---:|
 | [Algebra](Algebra/complete-source-index.md) | 10,065 | 326,152 | 236,887 |
-| [AlgebraicGeometry](Geometry/AlgebraicGeometry/complete-source-index.md) | 49 | 1,031 | 612 |
+| [AlgebraicGeometry](AlgebraicGeometry/complete-source-index.md) | 49 | 1,031 | 612 |
 | [Analysis](Analysis/complete-source-index.md) | 9,825 | 216,794 | 177,008 |
 | [CategoriesAndHomologicalAlgebra](CategoriesAndHomologicalAlgebra/complete-source-index.md) | 5,317 | 136,716 | 63,048 |
-| [Combinatorics](CombinatoricsAndDiscreteMathematics/complete-source-index.md) | 102 | 1,891 | 1,070 |
+| [Combinatorics](Combinatorics/complete-source-index.md) | 102 | 1,891 | 1,070 |
 | [CombinatoricsAndDiscreteMathematics](CombinatoricsAndDiscreteMathematics/complete-source-index.md) | 9,373 | 344,526 | 246,190 |
 | [Data](Data/complete-source-index.md) | 2 | 8 | 3 |
 | [DifferentialEquationsAndDynamicalSystems](DifferentialEquationsAndDynamicalSystems/complete-source-index.md) | 68 | 1,314 | 1,088 |
-| [DynamicalSystems](DifferentialEquationsAndDynamicalSystems/DynamicalSystems/complete-source-index.md) | 28 | 557 | 334 |
+| [DynamicalSystems](DynamicalSystems/complete-source-index.md) | 28 | 557 | 334 |
 | [FoundationsLogicAndTypeTheory](FoundationsLogicAndTypeTheory/complete-source-index.md) | 18,345 | 324,929 | 168,676 |
 | [Geometry](Geometry/complete-source-index.md) | 912 | 37,254 | 27,295 |
-| [GeometryOfNumbers](NumberTheory/AlgebraicNumberTheory/GeometryOfNumbers/complete-source-index.md) | 6 | 112 | 70 |
-| [GroupTheory](Algebra/GroupTheory/complete-source-index.md) | 12 | 190 | 117 |
+| [GeometryOfNumbers](GeometryOfNumbers/complete-source-index.md) | 6 | 112 | 70 |
+| [GroupTheory](GroupTheory/complete-source-index.md) | 12 | 190 | 117 |
 | [InformationTheory](InformationTheory/complete-source-index.md) | 39 | 466 | 286 |
 | [Interfaces](Interfaces/complete-source-index.md) | 238 | 395 | 187 |
-| [LinearAlgebra](Algebra/LinearAlgebra/complete-source-index.md) | 101 | 764 | 431 |
-| [Logic](FoundationsLogicAndTypeTheory/MathematicalLogic/complete-source-index.md) | 104 | 1,117 | 591 |
-| [MeasureTheory](Analysis/MeasureTheory/complete-source-index.md) | 6 | 78 | 67 |
+| [LinearAlgebra](LinearAlgebra/complete-source-index.md) | 101 | 764 | 431 |
+| [Logic](Logic/complete-source-index.md) | 104 | 1,117 | 591 |
+| [MeasureTheory](MeasureTheory/complete-source-index.md) | 6 | 78 | 67 |
 | [NumberTheory](NumberTheory/complete-source-index.md) | 12,280 | 126,707 | 74,961 |
-| [Order](CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/complete-source-index.md) | 9 | 107 | 62 |
-| [Probability](ProbabilityAndMathematicalStatistics/ProbabilityTheory/complete-source-index.md) | 5 | 10 | 10 |
+| [Order](Order/complete-source-index.md) | 9 | 107 | 62 |
+| [Probability](Probability/complete-source-index.md) | 5 | 10 | 10 |
 | [ProbabilityAndMathematicalStatistics](ProbabilityAndMathematicalStatistics/complete-source-index.md) | 549 | 11,783 | 9,173 |
-| [Spectral](Analysis/OperatorTheory/SpectralTheory/complete-source-index.md) | 29 | 249 | 133 |
+| [Spectral](Spectral/complete-source-index.md) | 29 | 249 | 133 |
 | [Topology](Topology/complete-source-index.md) | 5,108 | 189,403 | 147,833 |
 | [_support](_support/complete-source-index.md) | 6 | 8 | 6 |
 
@@ -56,7 +56,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Least natural prime](NumberTheory/Prime/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+- [Least natural prime](NumberTheory/Primes/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
 
   <details>
   <summary>Verification scope</summary>
@@ -72,7 +72,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
   **Verification scope.** Current source-description pins only at math commit 1b31ff873827ecf9acdf41b501b21a12b242a504. No fresh kernel replay, transitive axiom audit, or public compiler-observed verification graph has been produced for these bytes. Historical references retain their original paths, bytes and scope.
 
   </details>
-- [Polynomial return with a paid error](Analysis/Asymptotics/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
+- [Polynomial return with a paid error](Analysis/AsymptoticAnalysis/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
 
   <details>
   <summary>Verification scope</summary>
@@ -92,7 +92,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
   </details>
 
   **Unresolved premises.** The Lean derivation of positivity of det(I + τ L) from nonnegative incidence weights and τ > 0 remains to be supplied.; The compiler-extraction and numerical-refinement bridges remain separate obligations.
-- [Least-prime uniqueness by antisymmetry](NumberTheory/Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+- [Least-prime uniqueness by antisymmetry](NumberTheory/Primes/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
 
   <details>
   <summary>Verification scope</summary>
@@ -110,8 +110,8 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 1. **[Algebra](Algebra/index.md)** — 10 immediate children · 25 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of operations, equations and algebraic structures, together with maps that preserve the relevant operations and relations.
    Unranked previews: [A genus-uniform primitive commutator in the kernel of abelianization](Algebra/GroupTheory/Words/higher-genus-heisenberg-homology-obstruction.md); [A Hermitian matrix with a negative quadratic direction](Algebra/LinearAlgebra/MatrixTheory/HermitianCounterexamples/negative-identity.md).
-2. **[Analysis](Analysis/index.md)** — 18 immediate children · 60 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. The mathematical study of limiting processes and the behavior of functions and related structures under analytic operations.
-   Unranked previews: [Polynomial return with a paid error](Analysis/Asymptotics/polynomial-error.md); [A finite holonomy-alias correction for source-labeled integral homology](Analysis/HarmonicAnalysis/FourierAnalysis/finite-holonomy-alias-correction.md).
+2. **[Analysis](Analysis/index.md)** — 16 immediate children · 60 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. The mathematical study of limiting processes and the behavior of functions and related structures under analytic operations.
+   Unranked previews: [Polynomial return with a paid error](Analysis/AsymptoticAnalysis/polynomial-error.md); [A finite holonomy-alias correction for source-labeled integral homology](Analysis/HarmonicAnalysis/FourierAnalysis/finite-holonomy-alias-correction.md).
 3. **[Category theory](CategoriesAndHomologicalAlgebra/CategoryTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Objects, morphisms, identities and associative composition, together with structure-preserving functors and natural transformations.
 4. **[Combinatorics](CombinatoricsAndDiscreteMathematics/Combinatorics/index.md)** — 2 immediate children · 2 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of arrangements and discrete configurations, including their existence, enumeration, structure and extremal properties.
    Unranked previews: [Coverage and discrete quotas](CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md); [Finite dependency neighborhoods and spectral volume](CombinatoricsAndDiscreteMathematics/DirectedGraph/finite-dependency-volume.md).
@@ -128,11 +128,11 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 13. **[Mathematical optimization](Optimization/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of selecting feasible mathematical objects to minimize or maximize a specified objective, including existence, structure, characterization and computation of optima.
 14. **[Mathematics education](MathematicsEducation/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Study and development of the teaching and learning of mathematics, including the aims, practices, resources and institutions through which mathematical learning is organized.
 15. **[Mechanics (mathematical sciences)](Mechanics/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of motion, equilibrium, forces and mechanical constraints within explicitly stated modeling regimes for particles, bodies and continua.
-16. **[Number theory](NumberTheory/index.md)** — 17 immediate children · 577 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integers, rational numbers and related arithmetic structures, including divisibility, arithmetic equations, primes and arithmetic in field extensions.
-   Unranked previews: [Least natural prime](NumberTheory/Prime/least-prime.md); [Least-prime uniqueness by antisymmetry](NumberTheory/Prime/least-prime-uniqueness.md).
+16. **[Number theory](NumberTheory/index.md)** — 15 immediate children · 577 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integers, rational numbers and related arithmetic structures, including divisibility, arithmetic equations, primes and arithmetic in field extensions.
+   Unranked previews: [Least natural prime](NumberTheory/Primes/least-prime.md); [Least-prime uniqueness by antisymmetry](NumberTheory/Primes/least-prime-uniqueness.md).
 17. **[Numerical analysis](NumericalAnalysis/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of numerical procedures for solving mathematical problems, including approximation, error, convergence and the cost of computation.
 18. **[Order theory](CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/index.md)** — 2 immediate children · 2 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. Relations expressing order and their associated structures, including partially ordered sets, lattices and order-preserving maps.
-   Unranked previews: [Least-prime uniqueness by antisymmetry](NumberTheory/Prime/least-prime-uniqueness.md); [Obstructions to prefix representations of orders](CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings/prefix-obstruction.md).
+   Unranked previews: [Least-prime uniqueness by antisymmetry](NumberTheory/Primes/least-prime-uniqueness.md); [Obstructions to prefix representations of orders](CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/OrderEmbeddings/prefix-obstruction.md).
 19. **[Probability theory](ProbabilityAndMathematicalStatistics/ProbabilityTheory/index.md)** — 3 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The mathematical study of probabilistic models, random quantities and their distributions and dependence.
 20. **[Proof-assistant metaprogramming](FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofAssistantMetaprogramming/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Construction and analysis of programs that inspect or construct formal syntax, elaboration tasks and proof-assistant computations.
 21. **[Statistics](ProbabilityAndMathematicalStatistics/Statistics/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The discipline concerned with designing the collection of data, describing variation, and drawing and assessing conclusions from data in the presence of uncertainty.
@@ -144,30 +144,29 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 ## Additional source-guide areas
 
 1. **[_support](_support/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-2. **[Algebraic Geometry](Geometry/AlgebraicGeometry/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+2. **[Algebraic Geometry](AlgebraicGeometry/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 3. **[Categories And Homological Algebra](CategoriesAndHomologicalAlgebra/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-4. **[Combinatorics](CombinatoricsAndDiscreteMathematics/Combinatorics/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+4. **[Combinatorics](Combinatorics/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 5. **[Combinatorics And Discrete Mathematics](CombinatoricsAndDiscreteMathematics/index.md)** — 9 immediate children · 30 unique articles · 3 structured · 3 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Coverage and discrete quotas](CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md); [Finite dependency neighborhoods and spectral volume](CombinatoricsAndDiscreteMathematics/DirectedGraph/finite-dependency-volume.md).
-6. **[Data structures](../reference/legacy-source-layout/data.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+6. **[Data](Data/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 7. **[Differential Equations And Dynamical Systems](DifferentialEquationsAndDynamicalSystems/index.md)** — 4 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Approximation readouts and conditional error return](DifferentialEquationsAndDynamicalSystems/DynamicalSystems/Sequences/approximation-return.md); [Guarded transition systems and reachability](DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems/guarded-reachability.md).
-8. **[Dynamical Systems](DifferentialEquationsAndDynamicalSystems/DynamicalSystems/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-9. **[Foundations Logic And Type Theory](FoundationsLogicAndTypeTheory/index.md)** — 8 immediate children · 16 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+8. **[Dynamical Systems](DynamicalSystems/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+9. **[Foundations Logic And Type Theory](FoundationsLogicAndTypeTheory/index.md)** — 8 immediate children · 17 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Certificates for incrementally decoded batches](FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/batch-certificate.md); [Composition of incremental dictionary decoding](FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/incremental-composition.md).
-10. **[Geometry Of Numbers](NumberTheory/AlgebraicNumberTheory/GeometryOfNumbers/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-11. **[Group Theory](Algebra/GroupTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-12. **[Interfaces](../reference/legacy-source-layout/interfaces.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Typed normalization, rational CM descent, Hodge typing, and analytic restriction](FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofEvidence/openai-typed-hodge-bridge.md).
-13. **[Linear Algebra](Algebra/LinearAlgebra/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-14. **[Logic](FoundationsLogicAndTypeTheory/MathematicalLogic/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-15. **[Measure Theory](Analysis/MeasureTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-16. **[Order](CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/OrderTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-17. **[Probability](ProbabilityAndMathematicalStatistics/ProbabilityTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+10. **[Geometry Of Numbers](GeometryOfNumbers/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+11. **[Group Theory](GroupTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+12. **[Interfaces](Interfaces/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+13. **[Linear Algebra](LinearAlgebra/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+14. **[Logic](Logic/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+15. **[Measure Theory](MeasureTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+16. **[Order](Order/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+17. **[Probability](Probability/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 18. **[Probability And Mathematical Statistics](ProbabilityAndMathematicalStatistics/index.md)** — 6 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-19. **[Spectral](Analysis/OperatorTheory/SpectralTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+19. **[Spectral](Spectral/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

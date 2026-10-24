@@ -12,7 +12,7 @@ noncomputable section
 open MeasureTheory
 open scoped BigOperators
 
-namespace GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Exact historical boundary mass 0 body. -/
 def mass0 (X : ℕ) : ℝ :=
@@ -52,11 +52,11 @@ def AllDyadicEnergyBound : Prop :=
       ∀ j ≥ j₀, augmentedEnergy (dyadicScale j) ≤
         C * Real.rpow (dyadicScale j : ℝ) (-1 + η)
 
-end GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Exact algebraic identity between the thin supplier shape and historical
 AllDyadicEnergyBound once thinGreenEnergy is identified with greenEnergy. -/

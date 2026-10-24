@@ -5,7 +5,7 @@ source adapter are paper proofs in MATHEMATICS.md, not silently assumed axioms.
 -/
 import Mathlib
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.VonMangoldt.TypeIEnergyBudget
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.TypeIEnergyBudget
 
 /-- Exact rational slack used after the proved analytic coefficient estimate. -/
 theorem constant_slack : (2:ℝ)*((3:ℝ)/2+7/5)^2 < 17 := by norm_num
@@ -42,4 +42,4 @@ theorem canonical_reverse (R EIIB E L X : ℝ) (hX : 0<X)
   have hcomb : (2:ℝ)*(((7/10)*L+32)/X)+34/X=((7/5)*L+98)/X := by ring
   linarith
 
-end GRWTSK.NumberTheory.VonMangoldt.TypeIEnergyBudget
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.TypeIEnergyBudget

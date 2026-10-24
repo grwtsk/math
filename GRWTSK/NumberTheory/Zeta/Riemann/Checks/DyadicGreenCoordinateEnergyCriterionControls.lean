@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.DyadicGreenCoordinateEnergyCriterionControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem explicit_coordinate_bound_is_original_supplier :
     AllDyadicArithmeticFourierCoordinateBound ↔ AllDyadicEnergyBound :=

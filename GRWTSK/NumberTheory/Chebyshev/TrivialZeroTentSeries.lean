@@ -3,7 +3,7 @@ Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.TrivialZeroResidues
 import GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
-import GRWTSK.Analysis.Real.TentRationalCorrection
+import GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 import Mathlib.Topology.Algebra.InfiniteSum.Real
 import Mathlib.Analysis.Normed.Group.InfiniteSum
 
@@ -32,8 +32,8 @@ open scoped Topology Interval BigOperators
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
 
 noncomputable section

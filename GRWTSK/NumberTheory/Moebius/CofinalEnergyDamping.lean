@@ -5,7 +5,7 @@ Lean, Mathlib and imported project sources retain their original credits/license
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED. Owners: #335 / #334 RH-E02.
 -/
 import GRWTSK.NumberTheory.Moebius.EnergyAbscissa
-import GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.ExponentialThreshold
 
 /-!
 # Cofinal positive dampings for the actual signed pickup

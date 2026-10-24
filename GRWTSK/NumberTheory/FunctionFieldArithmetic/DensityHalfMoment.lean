@@ -16,7 +16,7 @@ All prime powers, squareful terms and infinite omitted tails are retained.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 def densityCorrectionHalf (n : ℕ) : ℝ :=
   densityMoebiusCorrection n / Real.sqrt (n : ℝ)
@@ -169,4 +169,4 @@ theorem density_positive_half_summable :
     Summable (fun n : ℕ => densityMoebiusCorrection (n+1) / Real.sqrt ((n+1 : ℕ) : ℝ)) := by
   exact (summable_nat_add_iff (f := densityCorrectionHalf) 1).mpr density_half_summable
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

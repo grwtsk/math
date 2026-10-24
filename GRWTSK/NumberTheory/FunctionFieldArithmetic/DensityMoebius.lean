@@ -12,7 +12,7 @@ The actual integer Möbius function is cast to the reals. Prime products and
 closed cutoffs are independently defined here; no growth budget is assumed. -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 def moebiusReal (n : ℕ) : ℝ := ((ArithmeticFunction.moebius n : ℤ) : ℝ)
 def densityPrimeWeight (n : ℕ) : ℝ := ∏ p ∈ n.primeFactors, (p:ℝ)/((p:ℝ)+1)
@@ -51,4 +51,4 @@ theorem density_coefficient_mul_restricted (m n : ℕ) :
   split_ifs with h
   · exact density_coefficient_mul_of_coprime h
   · exact density_coefficient_mul_zero_of_not_coprime h
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

@@ -1,6 +1,6 @@
 import GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
-open GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+open GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
 example (f : ℕ → ℝ) {C α q : ℝ}
     (hf0 : f 0 = 0)
@@ -9,4 +9,4 @@ example (f : ℕ → ℝ) {C α q : ℝ}
     Summable (fun n : ℕ => f n ^ 2 * (n : ℝ) ^ (-q)) :=
   summable_sq_mul_rpow_of_abs_le_rpow f hf0 hf hexp
 
-#print axioms GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability.summable_sq_mul_rpow_of_abs_le_rpow
+#print axioms GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability.summable_sq_mul_rpow_of_abs_le_rpow

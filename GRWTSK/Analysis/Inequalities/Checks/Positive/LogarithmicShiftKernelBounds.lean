@@ -141,10 +141,10 @@ namespace GRWTSK.Analysis.RealAnalysis.Integration.PositiveHalfLineCutoffBalance
 #print axioms positive_halfline_sample_price
 end GRWTSK.Analysis.RealAnalysis.Integration.PositiveHalfLineCutoffBalance
 
-namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
 #check @literal_kernel_polynomial_price
 #check @literal_kernel_original_window_price
 #print axioms literal_kernel_polynomial_price
 #print axioms literal_kernel_original_window_price
-end GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
 

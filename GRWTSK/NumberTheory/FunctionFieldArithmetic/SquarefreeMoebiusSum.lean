@@ -11,7 +11,7 @@ Formalization assistance: OpenAI Codex.
 This is a finite scalar equality; it supplies no source-vector projection or budget.
 -/
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius
 
 /-- Restricting the complete scalar return to squarefree outputs preserves it.
@@ -35,4 +35,4 @@ theorem weighted_moebius_squarefree_return (U : ℕ) (S : Finset ℕ) (c : ℕ �
     rw [ArithmeticFunction.moebius_eq_zero_of_not_squarefree hs]
     simp only [Int.cast_zero, mul_zero]
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

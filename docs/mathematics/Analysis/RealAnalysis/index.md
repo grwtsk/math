@@ -38,7 +38,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Polynomial return with a paid error](../Asymptotics/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
+- [Polynomial return with a paid error](../AsymptoticAnalysis/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
 
   <details>
   <summary>Verification scope</summary>
@@ -67,7 +67,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Articles at this level
 
-- [Polynomial return with a paid error](../Asymptotics/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
+- [Polynomial return with a paid error](../AsymptoticAnalysis/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
 
   <details>
   <summary>Verification scope</summary>
@@ -78,7 +78,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
   **Unresolved premises.** A P04 application requires its actual exact reconstruction identity and both uniform arithmetic bounds; this adapter does not supply them.
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

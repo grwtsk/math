@@ -30,7 +30,7 @@ Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 2 | 2 | 2 | 0 |
+| 9 | 2 | 2 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -38,7 +38,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Least natural prime](../Prime/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+- [Least natural prime](../Primes/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
 
   <details>
   <summary>Verification scope</summary>
@@ -46,7 +46,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
   **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
 
   </details>
-- [Least-prime uniqueness by antisymmetry](../Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+- [Least-prime uniqueness by antisymmetry](../Primes/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
 
   <details>
   <summary>Verification scope</summary>
@@ -54,6 +54,9 @@ Counts deduplicate shared article identities. Verification coverage reports supp
   **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
 
   </details>
+- [Arithmetic Liouville signs as exact finite Walsh observations](ArithmeticFunctions/liouville-walsh-source.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Evidence:** SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-21).
+- [Complete density Möbius correction](ArithmeticFunctions/density-correction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For every natural integer define \[ \rho(n)=\prod_{p\mid n}\frac p{p+1},\qquad \nu(n)=\mu(n)\rho(n),\qquad \gamma=\nu*\zeta. \] Here \(\mu\) is Mathlib's actual integer Möbius function cast to the reals, \(*\)…
+- [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. The maintained source links use the current PMD placement. Earlier verification receipts retain their recorded source paths, bytes and tool context. Fresh proof replay of the relocated context remains pending;…
 
 Missing metric evidence: `verification_dependency_graph_unavailable`.
 
@@ -62,11 +65,15 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Integer congruence theory](Congruences/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of residue classes of integers and equations between them modulo a specified positive integer.
+1. **[Arithmetic Functions](ArithmeticFunctions/index.md)** — 0 immediate children · 5 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Arithmetic Liouville signs as exact finite Walsh observations](ArithmeticFunctions/liouville-walsh-source.md); [Complete density Möbius correction](ArithmeticFunctions/density-correction.md).
+2. **[Continued Fractions](ContinuedFractions/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md); [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md).
+3. **[Integer congruence theory](Congruences/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of residue classes of integers and equations between them modulo a specified positive integer.
 
 ## Articles at this level
 
-- [Least natural prime](../Prime/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+- [Least natural prime](../Primes/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
 
   <details>
   <summary>Verification scope</summary>
@@ -74,7 +81,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
   **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
 
   </details>
-- [Least-prime uniqueness by antisymmetry](../Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+- [Least-prime uniqueness by antisymmetry](../Primes/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
 
   <details>
   <summary>Verification scope</summary>
@@ -83,7 +90,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
   </details>
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

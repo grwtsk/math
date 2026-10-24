@@ -111,9 +111,9 @@
     "Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces": [
       "GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/QuadraticError.lean"
     ],
-    "NumberTheory/ContinuedFractions": [
-      "GRWTSK/NumberTheory/ContinuedFractions/FrequencyRealization.lean",
-      "GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean"
+    "NumberTheory/ElementaryNumberTheory/ContinuedFractions": [
+      "GRWTSK/NumberTheory/ElementaryNumberTheory/ContinuedFractions/FrequencyRealization.lean",
+      "GRWTSK/NumberTheory/ElementaryNumberTheory/ContinuedFractions/ScheduledDenominators.lean"
     ],
     "DifferentialEquationsAndDynamicalSystems/DynamicalSystems/Sequences": [
       "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/Sequences/ApproximationReturn.lean"
@@ -127,27 +127,27 @@
       "GRWTSK/Analysis/Convolution/AutocorrelationDerivativeEnergy.lean",
       "GRWTSK/Analysis/Convolution/CompactProfileHigherDerivatives.lean"
     ],
-    "Analysis/Asymptotics": [
-      "GRWTSK/Analysis/Asymptotics/PolynomialErrorBound.lean"
+    "Analysis/AsymptoticAnalysis": [
+      "GRWTSK/Analysis/AsymptoticAnalysis/PolynomialErrorBound.lean"
     ],
     "NumberTheory/Moebius": [
       "GRWTSK/NumberTheory/Moebius/FiniteEulerProduct.lean",
       "GRWTSK/NumberTheory/Moebius/LogarithmicMertensBoundary.lean",
       "GRWTSK/NumberTheory/Moebius/PrimitiveIdentification.lean"
     ],
-    "NumberTheory/Prime": [
-      "GRWTSK/NumberTheory/Prime/LeastPrime.lean"
+    "NumberTheory/Primes": [
+      "GRWTSK/NumberTheory/Primes/LeastPrime.lean"
     ],
     "DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems": [
       "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems/GuardedFiniteBudget.lean",
       "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems/ModularCheckpoint.lean"
     ],
-    "NumberTheory/ArithmeticFunctions": [
-      "GRWTSK/NumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
-      "GRWTSK/NumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean"
+    "NumberTheory/ElementaryNumberTheory/ArithmeticFunctions": [
+      "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/DensityMomentTails.lean",
+      "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/SquarefreeMoebiusSum.lean"
     ],
     "NumberTheory/Moebius/LocalCancellation": [
-      "GRWTSK/NumberTheory/ArithmeticFunctions/MoebiusTruncation.lean"
+      "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/MoebiusTruncation.lean"
     ],
     "NumberTheory/LSeries": [
       "GRWTSK/NumberTheory/LSeries/ClosedMoebiusPolynomial.lean",
@@ -173,8 +173,8 @@
     "Analysis/ComplexAnalysis/CriticalReflection": [
       "GRWTSK/Analysis/ComplexAnalysis/CriticalReflection.lean"
     ],
-    "Analysis/LaplaceTransform": [
-      "GRWTSK/Analysis/LaplaceTransform/ExponentialEnergy.lean"
+    "Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform": [
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform/ExponentialEnergy.lean"
     ],
     "Algebra/LinearAlgebra/MatrixTheory/HermitianCounterexamples": [
       "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/HermitianCounterexamples.lean"
@@ -204,21 +204,21 @@
       "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/RoleRelationTable.lean",
       "GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/RootedTraceRevision.lean"
     ],
-    "Analysis/MellinTransform": [
-      "GRWTSK/Analysis/MellinTransform/CompactGaussianWindow.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianAnnularSeparation.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianCoupledSeparation.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianDensityMoments.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianDyadicSummation.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianFourierMoments.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianLogFlow.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianLogWindow.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianRemoteSeminorms.lean",
-      "GRWTSK/Analysis/MellinTransform/GaussianWindowSeminorms.lean",
-      "GRWTSK/Analysis/MellinTransform/LogarithmicGaussian.lean",
-      "GRWTSK/Analysis/MellinTransform/NormalizedGaussian.lean",
-      "GRWTSK/Analysis/MellinTransform/ReverseInversion.lean",
-      "GRWTSK/Analysis/MellinTransform/ScaledGaussianDerivatives.lean"
+    "Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform": [
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/CompactGaussianWindow.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianAnnularSeparation.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianCoupledSeparation.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianDensityMoments.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianDyadicSummation.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianFourierMoments.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianLogFlow.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianLogWindow.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianRemoteSeminorms.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/GaussianWindowSeminorms.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/LogarithmicGaussian.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/NormalizedGaussian.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/ReverseInversion.lean",
+      "GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/MellinTransform/ScaledGaussianDerivatives.lean"
     ],
     "Analysis/PartitionOfUnity": [
       "GRWTSK/Analysis/PartitionOfUnity/DyadicAnnulus.lean"

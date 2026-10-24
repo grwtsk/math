@@ -40,7 +40,7 @@ SHORT_INTERVAL_OSCILLATION_SUFFICES / MONOTONICITY_ONLY_LINEAR.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Exact oscillation supplier needed to upgrade dyadic-anchor cancellation to
 uniform shell cancellation. -/

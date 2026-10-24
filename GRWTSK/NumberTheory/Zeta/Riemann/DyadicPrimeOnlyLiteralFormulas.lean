@@ -37,7 +37,7 @@ PRIME_ONLY_WITNESS_LITERAL_FORMULAS_EXPOSED.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem coefficient_eq_log_div_of_prime
     {p : ℕ} (hp : p.Prime) :

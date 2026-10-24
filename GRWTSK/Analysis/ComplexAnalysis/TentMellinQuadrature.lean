@@ -21,7 +21,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.TentMellinQuadrature
 open MeasureTheory Set Filter
 open scoped Interval BigOperators
 open IntervalMellinKernel IntervalMellinQuadrature TentMellinKernel
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.Analysis.ErrorBounds.ComplexTaylorEnclosure
 noncomputable section
 

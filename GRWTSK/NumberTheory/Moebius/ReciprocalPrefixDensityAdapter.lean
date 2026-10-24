@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors; OpenAI Codex formalization assistance.
 Mathlib imports retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
-import GRWTSK.NumberTheory.ArithmeticFunctions.DensityReciprocalPrefix
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.DensityReciprocalPrefix
 
 /-!
 # Adapter between the pickup and density reciprocal Möbius prefixes
@@ -19,7 +19,7 @@ noncomputable section
 namespace GRWTSK.NumberTheory.Moebius.ReciprocalPrefixDensityAdapter
 
 open GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
-open GRWTSK.NumberTheory.ArithmeticFunctions
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 /-- The two unweighted reciprocal-prefix definitions have exactly the same
 source and the same closed cutoff at every natural endpoint. -/
@@ -27,7 +27,7 @@ theorem pickupReciprocalPrefix_eq_densityMobiusReciprocalPrefix (N : ℕ) :
     pickupReciprocalPrefix N = densityMobiusReciprocalPrefix (N : ℝ) := by
   simp [pickupReciprocalPrefix, densityMobiusReciprocalPrefix,
     GRWTSK.RiemannHypothesis.CCC.moebiusReal,
-    GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal]
+    GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal]
 
 /-- The elementary all-real density theorem therefore gives the actual pickup
 reciprocal prefix its unconditional sharp uniform bound.  This is boundedness,

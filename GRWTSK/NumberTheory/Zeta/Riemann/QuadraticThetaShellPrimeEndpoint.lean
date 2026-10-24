@@ -38,7 +38,7 @@ PRIME_ENDPOINT_SHELL_IDENTITY_EXACT / UNIFORM_SHELL_EXTENSION_OPEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The prime-only endpoint moments are exactly the normalized theta-shell
 error at the dyadic anchor. -/

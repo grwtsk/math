@@ -20,4 +20,4 @@ example (q : ℕ) (hq : Nat.Prime q)
 
 Both hypotheses matter: zero satisfies the stated lower-bound property without being prime, while three is prime without being least. Two also refutes the claim that every prime is at least three; one is not prime.
 
-The [object guide](../mathematics/NumberTheory/Prime/least-prime.md) retains the exact sources, selected verification scope and author credit. Its source-bound receipt records a check of those inputs; it does not strengthen the theorem's hypotheses or establish whole-library acceptance.
+The [object guide](../mathematics/NumberTheory/Primes/least-prime.md) retains the exact sources, selected verification scope and author credit. Its source-bound receipt records a check of those inputs; it does not strengthen the theorem's hypotheses or establish whole-library acceptance.

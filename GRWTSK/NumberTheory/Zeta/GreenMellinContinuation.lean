@@ -4,8 +4,8 @@ Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 Lean and Mathlib retain their original attribution and licenses.
 Status: candidate proof source; not elaborated in the pinned environment.
 -/
-import GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification
-import GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicEulerIdentification
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 /-! # A specified continuation, not a totalized quotient
 
@@ -20,9 +20,9 @@ local quotient identity across potential zeros is a separate analytic step.
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.NumberTheory.Zeta.GreenMellinContinuation
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicEulerIdentification
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 open GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications
 
 /-- The actual function and both parts of its analytic-continuation contract. -/

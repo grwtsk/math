@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.CubicEulerMaclaurin
+import GRWTSK.Analysis.RealAnalysis.CubicEulerMaclaurin
 import GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry
 
 set_option autoImplicit false
@@ -10,7 +10,7 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls
 
-open GRWTSK.Analysis.Real.CubicEulerMaclaurin
+open GRWTSK.Analysis.RealAnalysis.CubicEulerMaclaurin
 open GRWTSK.RiemannHypothesis.LocalJensenCount
 
 /-- Zero endpoint values do not make the cubic vanish in the cell. -/

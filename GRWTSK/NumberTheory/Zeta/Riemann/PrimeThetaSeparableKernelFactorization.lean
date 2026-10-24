@@ -35,7 +35,7 @@ SOURCE_FEATURE_FAMILY_OPEN / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- One finite source-bound separable factorization over the literal prime
 window at scale `X`. -/

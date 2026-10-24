@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierAtomic
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle
 
 /-!
 # Isolated nonatomic circle-evaluation leaf
@@ -14,8 +14,8 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierCircle
 open Filter Topology MeasureTheory
 open scoped ENNReal
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -24,10 +24,10 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierAtomic
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorming
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierAtomic
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle
 
 noncomputable section
 
@@ -80,13 +80,13 @@ def AddedClaim : AddedIndex → Prop
       ∀ (ι : Type) (D : IndexedDomainCover ι) (W : CircleWindow D.X) (x : D.X.carrier),
         ¬ Nonempty (PositiveAtom (D := D) W.measure x)
   | .holomorphicBoundary =>
-      (GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.spike =ᵐ[
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.halfCircle.measure] 0) ∧
-      GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.spike
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.halfCircle.centerPoint = 1 ∧
+      (GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.spike =ᵐ[
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.halfCircle.measure] 0) ∧
+      GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.spike
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.halfCircle.centerPoint = 1 ∧
       ¬ ExtendsHolomorphically
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.spike
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.spike
 
 theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
   cases i with
@@ -104,9 +104,9 @@ theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
       exact ⟨rfl, (W.pointPort hOpen).eigenfunctional f, W.center_norm_le_operator hOpen f⟩
   | noAtomicSubstitution => intro ι D W x; exact W.no_positiveAtom x
   | holomorphicBoundary =>
-      exact ⟨GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.spike_ae_zero,
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.spike_center,
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle.Fixtures.spike_not_holomorphic⟩
+      exact ⟨GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.spike_ae_zero,
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.spike_center,
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle.Fixtures.spike_not_holomorphic⟩
 
 def portfolio : Portfolio AddedIndex AddedClaim where
   disposition i := .proved (addedClaim_proof i)

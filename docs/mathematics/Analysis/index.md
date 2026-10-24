@@ -34,7 +34,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Polynomial return with a paid error](Asymptotics/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
+- [Polynomial return with a paid error](AsymptoticAnalysis/polynomial-error.md) — leaf; verification: `NOT_RUN`; S₃ unavailable. An exact decomposition X(T)=R(T)+e(T), together with uniform polynomial bounds on the readout and absolute error and nonnegative coefficients, gives X(T) ≤ (C_R+C_e)(1+T)^(max r s) for every T≥0. Exponents are…
 
   <details>
   <summary>Verification scope</summary>
@@ -56,42 +56,38 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Immediate specializations and directories
 
-1. **[Asymptotics](Asymptotics/index.md)** — 0 immediate children · 2 unique articles · 1 structured · 1 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Polynomial return with a paid error](Asymptotics/polynomial-error.md); [Dyadic logarithmic absorption](Asymptotics/dyadic-log-absorption.md).
+1. **[Asymptotics](AsymptoticAnalysis/index.md)** — 0 immediate children · 2 unique articles · 1 structured · 1 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Polynomial return with a paid error](AsymptoticAnalysis/polynomial-error.md); [Dyadic logarithmic absorption](AsymptoticAnalysis/dyadic-log-absorption.md).
 2. **[Complex analysis](ComplexAnalysis/index.md)** — 1 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of complex-variable functions, especially holomorphic functions, and the analytic, geometric and topological structures governing them.
    Unranked previews: [Critical line reflection and Gaussian rotation](ComplexAnalysis/CriticalReflection/reflection.md); [Exact-rational refinement of rounded endpoint powers](ComplexAnalysis/rational-rounded-power-refinement.md).
 3. **[Convolution](Convolution/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Autocorrelation derivatives and unsigned mass bounds](Convolution/derivative-energy.md); [Compact autocorrelation regularity](Convolution/compact-correlation.md).
-4. **[Finite Sum](FiniteSum/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Aligned dyadic-tree control of every finite prefix](FiniteSum/aligned-dyadic-tree-maximal.md).
-5. **[Finite Sums](FiniteSums/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Finite Walsh cylinder reconstruction: binary blocks, Chowla, and the sofic boundary](FiniteSums/finite-walsh-cylinder-reconstruction.md); [Weighted and unweighted finite degree expressions](FiniteSums/weighted-degree-comparison.md).
-6. **[Function Spaces](FunctionSpaces/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-7. **[Functional analysis](FunctionalAnalysis/index.md)** — 3 immediate children · 8 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Analysis of topological vector spaces, their linear functionals and operators, including infinite-dimensional phenomena.
+4. **[Finite Sum](FiniteSums/index.md)** — 0 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Aligned dyadic-tree control of every finite prefix](FiniteSums/aligned-dyadic-tree-maximal.md); [Finite Walsh cylinder reconstruction: binary blocks, Chowla, and the sofic boundary](FiniteSums/finite-walsh-cylinder-reconstruction.md).
+5. **[Function Spaces](FunctionSpaces/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+6. **[Functional analysis](FunctionalAnalysis/index.md)** — 3 immediate children · 8 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. Analysis of topological vector spaces, their linear functionals and operators, including infinite-dimensional phenomena.
    Unranked previews: [Dirichlet joining edge and boundary count error](OperatorTheory/SpectralTheory/FiniteVolume/dirichlet-cut.md); [Finite-volume eigenvalue-count comparison](OperatorTheory/SpectralTheory/FiniteVolume/count-comparison.md).
-8. **[Harmonic analysis](HarmonicAnalysis/index.md)** — 2 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of frequency decompositions, oscillation and averaging of functions and distributions, including Fourier methods and associated analytic operators.
+7. **[Harmonic analysis](HarmonicAnalysis/index.md)** — 2 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of frequency decompositions, oscillation and averaging of functions and distributions, including Fourier methods and associated analytic operators.
    Unranked previews: [A finite holonomy-alias correction for source-labeled integral homology](HarmonicAnalysis/FourierAnalysis/finite-holonomy-alias-correction.md); [A finite primitive-source coverage boundary: three separate trace errors](HarmonicAnalysis/FourierAnalysis/finite-trace-primitive-coverage.md).
-9. **[Inequalities](Inequalities/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+8. **[Inequalities](Inequalities/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Finite square sums with support size](Inequalities/finite-square-sum.md).
-10. **[Inner Product Space](InnerProductSpace/index.md)** — 0 immediate children · 5 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+9. **[Inner Product Space](InnerProductSpace/index.md)** — 0 immediate children · 5 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Closed operator solvability from adjoint bounds](InnerProductSpace/closed-operator-solvability.md); [Finite causal response Gram positivity](InnerProductSpace/causal-response-gram.md).
-11. **[Laplace Transform](LaplaceTransform/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Exponential energy bounds and square integrability](LaplaceTransform/exponential-energy.md).
-12. **[Linear operator theory](OperatorTheory/index.md)** — 1 immediate children · 7 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of linear operators on structured vector spaces, including continuity, domains, adjoints and composition.
+10. **[Integral Transforms](IntegralTransforms/index.md)** — 1 immediate children · 15 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Annular logarithmic quotient Gaussian separation](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-annular-separation.md); [Compact logarithmic Gaussian windows and Fourier density moments](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-log-window.md).
+11. **[Linear operator theory](OperatorTheory/index.md)** — 1 immediate children · 7 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of linear operators on structured vector spaces, including continuity, domains, adjoints and composition.
    Unranked previews: [Dirichlet joining edge and boundary count error](OperatorTheory/SpectralTheory/FiniteVolume/dirichlet-cut.md); [Finite-volume eigenvalue-count comparison](OperatorTheory/SpectralTheory/FiniteVolume/count-comparison.md).
-13. **[Measure theory](MeasureTheory/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of measurable spaces, measures, measurable maps and the structures and convergence questions associated with assigning size to sets.
-14. **[Mellin Transform](MellinTransform/index.md)** — 0 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Annular logarithmic quotient Gaussian separation](MellinTransform/gaussian-annular-separation.md); [Compact logarithmic Gaussian windows and Fourier density moments](MellinTransform/gaussian-log-window.md).
-15. **[Partition Of Unity](PartitionOfUnity/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+12. **[Measure theory](MeasureTheory/index.md)** — 1 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of measurable spaces, measures, measurable maps and the structures and convergence questions associated with assigning size to sets.
+13. **[Partition Of Unity](PartitionOfUnity/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A smooth annulus partition on natural dyadic scales](PartitionOfUnity/dyadic-annulus.md).
-16. **[Real analysis](RealAnalysis/index.md)** — 3 immediate children · 4 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. The study of limits, continuity, differentiation and integration for real-variable functions, together with the analytic structures needed to formulate these operations.
-   Unranked previews: [Polynomial return with a paid error](Asymptotics/polynomial-error.md); [Compact smooth Schwartz cutoffs on a real interval](RealAnalysis/DifferentialCalculus/compact-cutoff.md).
-17. **[Series](Series/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+14. **[Real analysis](RealAnalysis/index.md)** — 3 immediate children · 4 unique articles · 1 structured · 1 verification metadata · 0 scored · editorial: proposed. The study of limits, continuity, differentiation and integration for real-variable functions, together with the analytic structures needed to formulate these operations.
+   Unranked previews: [Polynomial return with a paid error](AsymptoticAnalysis/polynomial-error.md); [Compact smooth Schwartz cutoffs on a real interval](RealAnalysis/DifferentialCalculus/compact-cutoff.md).
+15. **[Series](Series/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A uniform bound for a dyadic kernel series](Series/dyadic-kernel.md).
-18. **[Test Functions](TestFunctions/index.md)** — 0 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+16. **[Test Functions](TestFunctions/index.md)** — 0 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Compact polynomial profiles and endpoint regularity](TestFunctions/polynomial-profile.md); [Exponential moments and second-derivative variation](TestFunctions/exponential-moments.md).
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
@@ -101,14 +97,18 @@ Generated navigation, scores and source syntax inventories do not strengthen the
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
 | Inventory | Count |
 |---|---:|
-| Lean source modules (current regular filesystem files) | 9825 |
-| Curated registered object guides | 43 |
-| Curated documented object groups | 18 |
+| Lean source modules (observed filesystem snapshot) | 9836 |
+| Curated registered object guides | 50 |
+| Curated documented object groups | 22 |
 | Curated primary sources linked | 43 |
-| Curated archive intake records | 39 |
+| Curated archive intake records | 40 |
 | Curated selected catalog families | 1 |
+| Pinned source modules represented by complete publication | 9825 |
+| Complete generated source Markdown pages in this source route | 239883 |
 
-No current whole-corpus source-command census is available.
+Complete lexical source publication is pinned to `706c62c1285a9857cb9d52e0620ec2cb514eb374`. Its counts are separate from observed filesystem files and semantic subject assignments; they do not establish Lean elaboration or proof acceptance.
+
+Observed report: `4b59a87791740dfee370ff21ba17ad81dbfbe06c97feabe622e3adb5da23503c`. The live tree may drift after this non-atomic observation.
 <!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
@@ -121,7 +121,7 @@ Historical curated observer census (not current totals): At least 1989 source de
 
 Historical curated observer census (not current totals): Linked primary-source scope: 1 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
-- [Polynomial return with a paid error](Asymptotics/polynomial-error.md).
+- [Polynomial return with a paid error](AsymptoticAnalysis/polynomial-error.md).
 
 ## Calculus
 
@@ -227,7 +227,7 @@ Historical curated observer census (not current totals): Linked primary-source s
 
 Historical curated observer census (not current totals): Linked primary-source scope: 1 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
-- [Exponential energy bounds and square integrability](LaplaceTransform/exponential-energy.md).
+- [Exponential energy bounds and square integrability](IntegralTransforms/ClassicalTransforms/LaplaceTransform/exponential-energy.md).
 
 ## MellinTransform
 
@@ -235,20 +235,20 @@ Historical curated observer census (not current totals): Linked primary-source s
 
 Historical curated observer census (not current totals): Linked primary-source scope: At least 115 source declaration commands, including 93 theorem/lemma commands, across 11 parsed Lean source modules; 3 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
-- [Annular logarithmic quotient Gaussian separation](MellinTransform/gaussian-annular-separation.md).
-- [Compact logarithmic Gaussian windows and Fourier density moments](MellinTransform/gaussian-log-window.md).
-- [Coupled Gaussian separation for finite window families](MellinTransform/gaussian-coupled-separation.md).
-- [Dyadic sums and remote moments of Gaussian Fourier densities](MellinTransform/gaussian-density-moments.md).
-- [Entire Gaussian flow in logarithmic coordinates](MellinTransform/gaussian-log-flow.md).
-- [Mellin transform of a logarithmic Gaussian](MellinTransform/logarithmic-gaussian.md).
-- [Reverse Mellin inversion](MellinTransform/reverse-inversion.md).
-- [Summing weighted Gaussian-window seminorms](MellinTransform/gaussian-dyadic-summation.md).
-- [The compact Gaussian window and its square-root factor](MellinTransform/compact-gaussian-window.md).
-- [The normalized Gaussian Mellin pair](MellinTransform/normalized-gaussian.md).
-- [Uniform Fourier moments of Gaussian windows](MellinTransform/gaussian-fourier-moments.md).
-- [Uniform Schwartz seminorms of Gaussian windows](MellinTransform/gaussian-window-seminorms.md).
-- [Uniform scale bounds for Gaussian derivatives](MellinTransform/scaled-gaussian-derivatives.md).
-- [Weighted and remote sums of Gaussian seminorms](MellinTransform/gaussian-remote-seminorms.md).
+- [Annular logarithmic quotient Gaussian separation](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-annular-separation.md).
+- [Compact logarithmic Gaussian windows and Fourier density moments](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-log-window.md).
+- [Coupled Gaussian separation for finite window families](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-coupled-separation.md).
+- [Dyadic sums and remote moments of Gaussian Fourier densities](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-density-moments.md).
+- [Entire Gaussian flow in logarithmic coordinates](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-log-flow.md).
+- [Mellin transform of a logarithmic Gaussian](IntegralTransforms/ClassicalTransforms/MellinTransform/logarithmic-gaussian.md).
+- [Reverse Mellin inversion](IntegralTransforms/ClassicalTransforms/MellinTransform/reverse-inversion.md).
+- [Summing weighted Gaussian-window seminorms](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-dyadic-summation.md).
+- [The compact Gaussian window and its square-root factor](IntegralTransforms/ClassicalTransforms/MellinTransform/compact-gaussian-window.md).
+- [The normalized Gaussian Mellin pair](IntegralTransforms/ClassicalTransforms/MellinTransform/normalized-gaussian.md).
+- [Uniform Fourier moments of Gaussian windows](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-fourier-moments.md).
+- [Uniform Schwartz seminorms of Gaussian windows](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-window-seminorms.md).
+- [Uniform scale bounds for Gaussian derivatives](IntegralTransforms/ClassicalTransforms/MellinTransform/scaled-gaussian-derivatives.md).
+- [Weighted and remote sums of Gaussian seminorms](IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-remote-seminorms.md).
 
 ## NormedSpace
 

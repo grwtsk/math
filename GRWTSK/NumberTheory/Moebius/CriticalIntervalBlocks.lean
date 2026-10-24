@@ -33,7 +33,7 @@ open GRWTSK.NumberTheory.Moebius.VerticalLineCriterion
 open GRWTSK.NumberTheory.Moebius.VerticalLineMonotonicity
 open GRWTSK.Analysis.RealAnalysis.Integration.ExponentialInterval
 open GRWTSK.Analysis.SpecialFunctions.PowerIntervalDrop
-open GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+open GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
 /-- Exact endpoint form of Abel summation: the weighted prefix is the scaled
 Mertens endpoint plus half of the accumulated pickup. -/

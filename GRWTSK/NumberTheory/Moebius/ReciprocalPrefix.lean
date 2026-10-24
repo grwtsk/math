@@ -22,7 +22,7 @@ namespace GRWTSK.NumberTheory.Moebius.ReciprocalPrefix
 
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
-open GRWTSK.Analysis.Asymptotics.FinitePowerSum
+open GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 
 /-- Closed reciprocal prefix of the actual real Möbius coefficients. -/
 def pickupReciprocalPrefix (N : ℕ) : ℝ :=

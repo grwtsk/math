@@ -23,9 +23,9 @@ set_option autoImplicit false
 noncomputable section
 open MeasureTheory Set
 open scoped BigOperators
-namespace GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
+open GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
 
 /-- Mathlib's actual von Mangoldt function, not a freely chosen coefficient family. -/
 def mangoldt (n : ℕ) : ℝ := ArithmeticFunction.vonMangoldt n
@@ -218,4 +218,4 @@ def dirichletBlock (X : ℕ) (s : ℂ) : ℂ :=
   (∑ n ∈ window X, (mangoldt n:ℂ)*Complex.exp (-s*(Real.log n:ℂ)))-
     ∫ u in (X:ℝ)..(2*X:ℝ), Complex.exp (-s*(Real.log u:ℂ))
 
-end GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy

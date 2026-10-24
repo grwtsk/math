@@ -1,4 +1,4 @@
-# Finite Sums
+# Finite Sum
 
 <!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
 
@@ -6,9 +6,25 @@
 
 This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+## Complete source publication
+
+[Every source module and declaration](../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+Namespace totals and the complete namespace route:
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [Analysis](../complete-source-index.md) | 9,825 | 216,794 | 177,008 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
-| 2 | 0 | 0 | 0 |
+| 3 | 0 | 0 | 0 |
 
 Counts deduplicate shared article identities. Verification coverage reports supplied article metadata; it does not establish fresh replay or whole-branch acceptance.
 
@@ -16,6 +32,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
+- [Aligned dyadic-tree control of every finite prefix](aligned-dyadic-tree-maximal.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Evidence state: **SOURCE_DRAFT**. No Lean or Lake execution, elaboration, kernel acceptance, trust audit, external replay, or arithmetic supplier is claimed.
 - [Finite Walsh cylinder reconstruction: binary blocks, Chowla, and the sofic boundary](finite-walsh-cylinder-reconstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix any finite coordinate set \(I\), any \(N\geq0\), binary observations \(b_{n,i}\in\{-1,+1\}\) for \(0\leq n<N\), and a pattern \(\varepsilon:I\to\{-1,+1\}\). Define
 - [Weighted and unweighted finite degree expressions](weighted-degree-comparison.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `n` be a positive natural number, `l = 2n + 1`, and `D`, `Q`, `E` arbitrary real numbers. The exact identities are
 
@@ -30,10 +47,13 @@ No narrower directory is currently registered. Continue to the articles below.
 
 ## Articles at this level
 
+- [Aligned dyadic-tree control of every finite prefix](aligned-dyadic-tree-maximal.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Evidence state: **SOURCE_DRAFT**. No Lean or Lake execution, elaboration, kernel acceptance, trust audit, external replay, or arithmetic supplier is claimed.
 - [Finite Walsh cylinder reconstruction: binary blocks, Chowla, and the sofic boundary](finite-walsh-cylinder-reconstruction.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Fix any finite coordinate set \(I\), any \(N\geq0\), binary observations \(b_{n,i}\in\{-1,+1\}\) for \(0\leq n<N\), and a pattern \(\varepsilon:I\to\{-1,+1\}\). Define
 - [Weighted and unweighted finite degree expressions](weighted-degree-comparison.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let `n` be a positive natural number, `l = 2n + 1`, and `D`, `Q`, `E` arbitrary real numbers. The exact identities are
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
+
+# Finite Sums

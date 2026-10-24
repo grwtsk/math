@@ -48,15 +48,15 @@ namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology Set
 open scoped Topology
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
-open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
-open GRWTSK.NumberTheory.VonMangoldt.MellinBlockHolomorphy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinBlockHolomorphy
 open GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications
-open GRWTSK.NumberTheory.VonMangoldt.DyadicEulerIdentification
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicEulerIdentification
 open GRWTSK.NumberTheory.Zeta.PoleRemovedSource
 open GRWTSK.Analysis.ComplexAnalysis.AnalyticLinearODE
-open GRWTSK.Analysis.MellinTransform.DyadicBounds
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.DyadicBounds
 
 def rightHalfPlane (ρ : ℝ) : Set ℂ :=
   {s : ℂ | ρ < s.re}

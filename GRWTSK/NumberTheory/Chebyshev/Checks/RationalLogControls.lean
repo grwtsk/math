@@ -10,7 +10,7 @@ These are rational identities and domain/error counterexamples, not zero data. -
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.RationalLogControls
 
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 
 theorem ratio_two : ratio 2 = (1 / 3 : ℚ) := by norm_num [ratio]
 

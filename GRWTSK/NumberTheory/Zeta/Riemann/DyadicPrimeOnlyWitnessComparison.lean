@@ -32,7 +32,7 @@ PRIME_ONLY_WITNESS_FINITE_COMPARISON_DEFINED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Prime-only first endpoint moment; the continuum target remains in the hard
 prime core. -/

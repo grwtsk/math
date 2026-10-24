@@ -1,7 +1,7 @@
 import GRWTSK.NumberTheory.Moebius.PrimeProductPrefixEnergy
 import GRWTSK.Analysis.AsymptoticAnalysis.ExponentialRecurrence
-import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeIntervalBounds
-import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
+import GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.ReciprocalPrimeIntervalBounds
+import GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.ReciprocalPrimeLogBound
 
 /-! Square-root block-cost accounting for an actual complete controller.
 The final theorem uses the proved logarithmic all-prime mass estimate.

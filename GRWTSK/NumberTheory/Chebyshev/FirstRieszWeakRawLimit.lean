@@ -14,7 +14,7 @@ open Filter MeasureTheory Set
 open scoped Topology Interval
 namespace GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit
 open ClassicalRieszNormalization TentSource
-open GRWTSK.Analysis.Real.ClassicalRieszCorrection
+open GRWTSK.Analysis.RealAnalysis.ClassicalRieszCorrection
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 open GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead
 

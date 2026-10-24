@@ -20,7 +20,7 @@ namespace GRWTSK.RiemannHypothesis.ConcreteNewtonTenthBlockSeeds
 open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
 open RationalTaylorSeedNormalization
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open ConcreteNewtonPacket RationalZetaCenterEvaluation ConcreteNewtonTenthBlockData
 
 theorem all_inputs (i : Fin 64) : InputValid i := by

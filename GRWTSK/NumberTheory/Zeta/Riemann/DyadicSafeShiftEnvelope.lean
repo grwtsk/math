@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI ChatGPT. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftPrimeTermFactorization
-import GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 import Mathlib.Tactic
 
 set_option autoImplicit false
@@ -34,9 +34,9 @@ namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology
 open CanonicalZeroDivisor
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 /-- Both safe shifts lie strictly to the right of 3/2. -/
 theorem safeShiftPlus_three_halves_lt_re (z : ZeroPoint) :

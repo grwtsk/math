@@ -32,8 +32,8 @@ EXPLICIT_ARITHMETIC_COORDINATE_BOUND_IFF_ENERGY_BOUND_SOURCE_WRITTEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 def fullGreenArithmeticCoordinateStage
     (X N : ℕ) : ℝ :=

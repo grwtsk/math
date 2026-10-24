@@ -55,7 +55,7 @@ SEVEN_EIGHTHS_MOBIUS_LOG_CONGRUENCE_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Real-valued Möbius coefficient. -/
 def mobiusReal (n : ℕ) : ℝ :=

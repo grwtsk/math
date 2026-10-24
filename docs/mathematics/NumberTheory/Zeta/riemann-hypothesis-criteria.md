@@ -53,7 +53,7 @@ nonnegative-horizon integral adapters.
 | [EnergyAbscissa](../../../../GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean) | Subexponential cross/energy/weighted-integrability equivalences; `riemannHypothesis_of_pickupEnergyAbscissa_zero` | Every positive exponential rate with a constant uniform in time; equivalently, the actual energy abscissa equals zero. |
 | [IntegerSampleGrowth](../../../../GRWTSK/NumberTheory/Moebius/IntegerSampleGrowth.lean) | Sampled polynomial and subexponential criteria | Bounds at every natural sample, with the stated uniform constants and interpolation costs. |
 | [DyadicEnergy](../../../../GRWTSK/NumberTheory/Moebius/DyadicEnergy.lean) | `exists_recordingScaleBound_iff_p04` | A recording-scale bound with one nonnegative constant and natural exponent valid at every required real scale. |
-| [FixedWidthEnergyBoundEquivalence](../../../../GRWTSK/Analysis/Asymptotics/FixedWidthEnergyBoundEquivalence.lean) | `HSS_iff_P04` and `HSS_implies_literal_RH` | A fixed width `b > 0` and its all-real local-energy polynomial bound. |
+| [FixedWidthEnergyBoundEquivalence](../../../../GRWTSK/Analysis/AsymptoticAnalysis/FixedWidthEnergyBoundEquivalence.lean) | `HSS_iff_P04` and `HSS_implies_literal_RH` | A fixed width `b > 0` and its all-real local-energy polynomial bound. |
 | [ComparisonEnergy](../../../../GRWTSK/NumberTheory/Moebius/ComparisonEnergy.lean) | `riemannHypothesis_of_pickup_comparison` | A continuous comparison waveform and every-rate energy bounds for both it and the complete signed difference from `wholePickup`. |
 | [QuadraticTransformBoundConversion](../../../../GRWTSK/NumberTheory/Moebius/QuadraticTransformBoundConversion.lean) | `signed_settlement_iff_literal_P04` | The joint signed head/residue budget at the declared quadratic height, retaining the physical diagonal and paid tail; right-line parameter `c > 1`. |
 
@@ -70,7 +70,7 @@ consumes the energy premise; and
 [LaplaceCriterion](../../../../GRWTSK/NumberTheory/Zeta/Riemann/LaplaceCriterion.lean)
 retains both signed holomorphy and the initial identity before concluding the
 literal target. The parallel `PPNCP04` consumer in
-[PolynomialEnergyHolomorphy](../../../../GRWTSK/Analysis/LaplaceTransform/PolynomialEnergyHolomorphy.lean)
+[PolynomialEnergyHolomorphy](../../../../GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform/PolynomialEnergyHolomorphy.lean)
 supplies its explicit analytic bridges while retaining `P04` as an input.
 
 ## Limits that matter for reuse

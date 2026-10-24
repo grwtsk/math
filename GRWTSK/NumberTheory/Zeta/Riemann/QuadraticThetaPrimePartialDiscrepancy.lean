@@ -45,7 +45,7 @@ PARTIAL_PRIME_DISCREPANCY_EXACT / THREE_QUARTER_POWER_SAVING_OPEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Logarithmic prime mass on the integer interval (A,B]. -/
 def primeIntervalLogMass (A B : ℕ) : ℝ :=

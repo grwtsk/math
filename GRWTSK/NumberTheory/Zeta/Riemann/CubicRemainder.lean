@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.PowerCellMajorant
+import GRWTSK.Analysis.RealAnalysis.PowerCellMajorant
 import GRWTSK.NumberTheory.Zeta.Riemann.CubicPowerSummation
 import Mathlib.Analysis.Complex.LocallyUniformLimit
 import Mathlib.Topology.Algebra.InfiniteSum.NatInt
@@ -22,8 +22,8 @@ namespace GRWTSK.RiemannHypothesis.CubicRemainder
 
 open MeasureTheory Set Filter
 open scoped Topology Interval BigOperators
-open GRWTSK.Analysis.Real.PowerCellMajorant
-open GRWTSK.Analysis.Real.CubicEulerMaclaurin
+open GRWTSK.Analysis.RealAnalysis.PowerCellMajorant
+open GRWTSK.Analysis.RealAnalysis.CubicEulerMaclaurin
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.RiemannHypothesis.CubicPowerSummation
 

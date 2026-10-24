@@ -10,7 +10,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def centeredGreenBaselineHarmonicResidual (X : ℕ) : ℝ :=
   (∑ n ∈ Finset.Ioc X (2 * X), 1 / (n : ℝ)) - Real.log 2

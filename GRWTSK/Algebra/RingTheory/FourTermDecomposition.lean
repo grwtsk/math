@@ -7,7 +7,7 @@ ArithmeticFunction / source-measure adapter.
 -/
 import Mathlib
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.VonMangoldt.TruncatedConvolutionIdentity
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.TruncatedConvolutionIdentity
 
 variable {R : Type*} [CommRing R]
 
@@ -47,4 +47,4 @@ theorem continuous_centering (a b z : R) :
 theorem main_profile_rewrite (a l x e v : R) :
     a*(l+x)-e-a*v = a*l+(a*x-e-a*v) := by ring
 
-end GRWTSK.NumberTheory.VonMangoldt.TruncatedConvolutionIdentity
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.TruncatedConvolutionIdentity

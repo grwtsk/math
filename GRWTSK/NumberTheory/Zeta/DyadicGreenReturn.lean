@@ -17,7 +17,7 @@ All sources still await actual pinned compilation and transitive-axiom review.
 set_option autoImplicit false
 noncomputable section
 namespace GRWTSK.NumberTheory.Zeta.DyadicGreenReturn
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 open GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications
 open GRWTSK.NumberTheory.Zeta.GreenMellinContinuation
 open GRWTSK.NumberTheory.Zeta.LogDerivativeZeroExclusion

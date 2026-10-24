@@ -34,7 +34,7 @@ PRIME_KERNEL_CONSTRUCTION_OPEN / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Prime labels in the repository's literal dyadic source window `(X,2X]`. -/
 def thetaPrimeWindow (X : ℕ) : Finset ℕ :=

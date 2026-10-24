@@ -13,7 +13,7 @@ open GRWTSK.RiemannHypothesis
 theorem shifted_and_unshifted_phase_agree
     (X : ℕ) (k : ℤ) (n : ℕ) :
     fourier (-k)
-      (GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.location X n :
+      (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.location X n :
         AddCircle (1 : ℝ)) =
       greenDFTPhase X k n :=
   fourier_at_location_eq_DFTPhase X k n

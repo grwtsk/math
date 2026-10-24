@@ -31,7 +31,7 @@ open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 open GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours
 open GRWTSK.NumberTheory.Chebyshev.HeightIndexedTentResidues
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 
 noncomputable section
 

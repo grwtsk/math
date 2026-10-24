@@ -1,5 +1,5 @@
 import GRWTSK.Geometry.AlgebraicGeometry.PortFiberIndexedCoverDescent
-import GRWTSK.Analysis.Operator.HolomorphicLinePort
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLinePort
 
 /-!
 # Disjoint portfolio extension for realized line bundles and chart-compatible operators
@@ -16,7 +16,7 @@ open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPor
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicSectionRing (HolomorphicSection)
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
-open GRWTSK.Analysis.Operator.HolomorphicLinePort
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLinePort
 
 noncomputable section
 

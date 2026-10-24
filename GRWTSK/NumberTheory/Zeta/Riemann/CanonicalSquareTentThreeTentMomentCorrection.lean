@@ -41,7 +41,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentThreeTentMomentCor
 
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentObstruction
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentRankObstruction
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 
 /-- The first cofactor of the actual 2-by-3 source moment matrix. -/

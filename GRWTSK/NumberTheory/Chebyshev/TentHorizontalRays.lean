@@ -34,7 +34,7 @@ open GRWTSK.RiemannHypothesis.HorizontalLogDerivative
 open GRWTSK.NumberTheory.Chebyshev.TentPerronLine
 open GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 open GRWTSK.NumberTheory.Chebyshev.TentLeftDecay
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 
 noncomputable section
 

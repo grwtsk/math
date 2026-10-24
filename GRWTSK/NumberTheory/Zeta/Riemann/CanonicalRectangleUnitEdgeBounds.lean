@@ -34,7 +34,7 @@ namespace GRWTSK.RiemannHypothesis.CanonicalRectangleUnitEdgeBounds
 
 open MeasureTheory Set
 open scoped Interval
-open GRWTSK.Analysis.Real.RationalClosedInterval
+open GRWTSK.Analysis.RealAnalysis.RationalClosedInterval
 open AdmissibleRectangles
 open PositiveHeightCountDeficit
 open CanonicalRectangleCountIsolation

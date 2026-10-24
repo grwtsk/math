@@ -23,7 +23,7 @@ open Filter Set
 open scoped Topology BigOperators
 open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.SeparatedContourHeights
 open TentAdmissibleContours TentHorizontalRays TentHorizontalDecay

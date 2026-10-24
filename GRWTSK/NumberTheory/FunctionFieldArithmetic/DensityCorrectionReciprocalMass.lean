@@ -15,7 +15,7 @@ global Euler summation is used only after that premise is proved.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 def densityCorrectionReciprocal (n : ℕ) : ℝ := densityMoebiusCorrection n / (n : ℝ)
 def reciprocalSquare (n : ℕ) : ℝ := 1 / (n : ℝ)^2
@@ -153,4 +153,4 @@ theorem density_positive_reciprocal_tsum :
   rw [hf, hg]
   exact density_reciprocal_tsum
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

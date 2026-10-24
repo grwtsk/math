@@ -1,5 +1,5 @@
 import GRWTSK.Algebra.LinearAlgebra.AlmostMathieu
-import GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.ExponentialThreshold
 import GRWTSK.Algebra.LinearAlgebra.Determinant.RankOneQuadraticForm
 import GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion
 import GRWTSK.NumberTheory.Moebius.ComparisonEnergy
@@ -76,12 +76,12 @@ elab "#audit_ccc_energy" : command => do
     throwError "module ownership table is incomplete"
   let declarations := (env.header.moduleData.toList.zip moduleNames.toList).flatMap
     fun (data, owner) =>
-      if #[`GRWTSK.Analysis.Asymptotics.PolynomialSubexponential,
+      if #[`GRWTSK.Analysis.AsymptoticAnalysis.PolynomialSubexponential,
           `GRWTSK.Analysis.Inequalities.ExponentialDiagonal,
-          `GRWTSK.Analysis.LaplaceTransform.Analytic,
-          `GRWTSK.Analysis.LaplaceTransform.ExponentialEnergy,
-          `GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold,
-          `GRWTSK.Analysis.LaplaceTransform.PolynomialEnergy,
+          `GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.Analytic,
+          `GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.ExponentialEnergy,
+          `GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.ExponentialThreshold,
+          `GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.PolynomialEnergy,
           `GRWTSK.Algebra.LinearAlgebra.AlmostMathieu,
           `GRWTSK.Algebra.LinearAlgebra.Determinant.RankOneQuadraticForm,
           `GRWTSK.NumberTheory.Moebius.ComparisonEnergy,
@@ -105,7 +105,7 @@ elab "#audit_ccc_energy" : command => do
           `GRWTSK.NumberTheory.Moebius.PrimitiveIdentification,
           `GRWTSK.NumberTheory.Moebius.PrimitiveRegularity,
           `GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound,
-          `GRWTSK.NumberTheory.Prime.ReciprocalMass,
+          `GRWTSK.NumberTheory.Primes.ReciprocalMass,
           `GRWTSK.NumberTheory.Zeta.Riemann.LaplaceCriterion,
           `GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion,
           `GRWTSK.NumberTheory.Zeta.Riemann.Regularized].contains owner then

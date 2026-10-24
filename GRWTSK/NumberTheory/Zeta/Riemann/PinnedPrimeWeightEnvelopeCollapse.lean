@@ -37,7 +37,7 @@ UNIFORM_RATIO_BOUND_OPEN / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The largest positive remaining target compatible with coefficient budget
 `C` and the existing current-octave feature-mass ceiling at envelope `B`. -/

@@ -39,7 +39,7 @@ QUADRATIC_DYADIC_RECURRENCE_SUFFICES / RECURRENCE_SUPPLIER_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def QuadraticThetaSourceRecurrenceAt (ρ : ℝ) : Prop :=
   ∀ η : ℝ, 0 < η →

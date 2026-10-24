@@ -44,7 +44,7 @@ NO_RH_CLAIM.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The literal integer source window used in the actual pinned feature. -/
 def canonicalThetaGridWindow (j : ℕ) : Finset ℕ :=

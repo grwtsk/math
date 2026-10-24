@@ -29,7 +29,7 @@ PRIME_ONLY_CLASSICAL_CANCELLATION_NECESSARY.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem primeOnlyMass0_sq_le_stage
     (X N : ℕ) :

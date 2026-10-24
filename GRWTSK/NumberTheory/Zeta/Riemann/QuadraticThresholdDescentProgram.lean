@@ -41,7 +41,7 @@ QUADRATIC_THRESHOLD_DESCENT_GATE_TYPED / SOURCE_CONTRACTION_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def quadraticThreshold (ρ : ℝ) : ℝ :=
   2 * ρ - 1

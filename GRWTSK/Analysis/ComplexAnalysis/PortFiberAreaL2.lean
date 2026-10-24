@@ -23,8 +23,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 noncomputable section
 
@@ -75,8 +75,8 @@ def AddedClaim : AddedIndex → Prop
           fun x => f.value x * (l2Embedding hOpen v : Section D.X) x
   | .nullPointBoundary =>
       GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2.Fixtures.spikeClass = 0 ∧
-      let X := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.disk
-      let x := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
+      let X := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.disk
+      let x := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
       ¬ ∃ E : Lp ℂ 2 (areaMeasure X) → ℂ,
         ∀ (f : Section X) (hf : MemLp f 2 (areaMeasure X)), E (hf.toLp f) = f x
 

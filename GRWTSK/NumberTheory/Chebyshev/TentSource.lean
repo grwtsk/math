@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.TentWeight
+import GRWTSK.Analysis.RealAnalysis.TentWeight
 import GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget
 import Mathlib.Tactic
 
@@ -20,7 +20,7 @@ power budget has been charged. Source draft; NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.NumberTheory.Chebyshev.TentSource
 
 open scoped BigOperators
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget
 open GRWTSK.NumberTheory.Chebyshev.ProperPrimePowerCorrection
 open GRWTSK.NumberTheory.Primes.ConfigurationCounts

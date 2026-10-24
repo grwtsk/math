@@ -10,7 +10,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def centeredGreenWeightedPrefix (X m : ℕ) : ℝ :=
   ∑ n ∈ Finset.Ioc X m,

@@ -5,7 +5,7 @@ import GRWTSK.NumberTheory.LSeries.GaussianContour
 namespace GRWTSK.NumberTheory.LSeries.GaussianContour.Checks
 noncomputable section
 open MeasureTheory
-open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.NormalizedGaussian
 
 theorem gaussianContour_generic (σ Z : ℝ) (hσ : 1 < σ) (hZ : 0 < Z) :
     gaussianZetaContour σ Z = ∑' n : ℕ, gaussianMellinProfile ((n+1 : ℝ)/Z) :=

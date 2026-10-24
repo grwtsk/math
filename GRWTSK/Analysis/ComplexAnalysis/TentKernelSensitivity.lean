@@ -19,7 +19,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.TentKernelSensitivity
 open MeasureTheory Set Filter
 open scoped Interval BigOperators
 open IntervalMellinKernel TentMellinKernel TentMellinQuadrature
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 noncomputable section
 
 /-- Parameter sensitivity at one positive real node, not spatial sensitivity. -/

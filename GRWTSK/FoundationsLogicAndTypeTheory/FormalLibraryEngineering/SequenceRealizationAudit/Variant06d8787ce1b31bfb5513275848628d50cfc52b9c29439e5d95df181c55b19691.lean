@@ -1,5 +1,5 @@
-import GRWTSK.NumberTheory.ContinuedFractions.FrequencyRealization
-import GRWTSK.NumberTheory.ContinuedFractions.ScheduledDenominators
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ContinuedFractions.FrequencyRealization
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ContinuedFractions.ScheduledDenominators
 import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.Sequences.ApproximationReturn
 import Lean
 

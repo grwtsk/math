@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI GPT-5.6 Sol.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 import GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort
 import GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimePowerQuadraticPortControls
 

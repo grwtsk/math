@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.AsymptoticAnalysis.PrimeMassPotentialBounds
-import GRWTSK.NumberTheory.PrimeCounting.ReciprocalPrimeLogBound
+import GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.ReciprocalPrimeLogBound
 
 /-!
 Generic closure with the actual all-horizon prime-harmonic estimate discharged.

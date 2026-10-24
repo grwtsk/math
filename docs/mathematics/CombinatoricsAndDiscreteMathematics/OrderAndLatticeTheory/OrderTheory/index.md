@@ -34,7 +34,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Least-prime uniqueness by antisymmetry](../../../NumberTheory/Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+- [Least-prime uniqueness by antisymmetry](../../../NumberTheory/Primes/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
 
   <details>
   <summary>Verification scope</summary>
@@ -57,7 +57,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
 ## Articles at this level
 
-- [Least-prime uniqueness by antisymmetry](../../../NumberTheory/Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+- [Least-prime uniqueness by antisymmetry](../../../NumberTheory/Primes/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
 
   <details>
   <summary>Verification scope</summary>
@@ -66,25 +66,14 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 
   </details>
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
 
 [All mathematical areas](../../../../index.md) · [Lean source folder](../../../../../GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory).
 
-<!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
-| Inventory | Count |
-|---|---:|
-| Lean source modules (current regular filesystem files) | 9 |
-| Curated registered object guides | 1 |
-| Curated documented object groups | 1 |
-| Curated primary sources linked | 1 |
-| Curated archive intake records | 2 |
-| Curated selected catalog families | 0 |
 
-No current whole-corpus source-command census is available.
-<!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../../../reference/library-pages.md#count-definitions).
 

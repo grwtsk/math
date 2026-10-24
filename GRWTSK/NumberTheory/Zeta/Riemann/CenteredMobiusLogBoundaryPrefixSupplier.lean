@@ -10,7 +10,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Pointwise uniform prefix control on one dyadic interval. -/
 def DyadicPrefixMangoldtBoundAt (X : ℕ) (A : ℝ) : Prop :=

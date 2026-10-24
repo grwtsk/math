@@ -1,10 +1,10 @@
 import Mathlib.Analysis.Normed.Operator.Compact.Basic
 import Mathlib.Analysis.InnerProductSpace.Basic
-import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
+import GRWTSK.Analysis.OperatorTheory.UnboundedPortAnalytic
 
 namespace GRWTSK.Algebra.KTheory.UnboundedKasparovCycle
 
-open GRWTSK.Analysis.Operator.UnboundedPort
+open GRWTSK.Analysis.OperatorTheory.UnboundedPort
 open scoped InnerProductSpace
 
 universe u v

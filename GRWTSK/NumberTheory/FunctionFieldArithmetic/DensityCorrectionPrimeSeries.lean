@@ -14,7 +14,7 @@ local series do not assert global summability or an arithmetic growth witness.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 /-- Literal complete coefficient of every shifted positive prime power. -/
 theorem density_correction_prime_weighted_term {p : ℕ} (hp : p.Prime)
@@ -101,4 +101,4 @@ theorem density_correction_prime_reciprocal_factor {p : ℕ} (hp : p.Prime) :
   field_simp
   ring
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

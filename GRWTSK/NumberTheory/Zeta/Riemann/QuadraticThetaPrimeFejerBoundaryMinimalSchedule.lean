@@ -37,7 +37,7 @@ SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Boundary-minimal integer cutoff at the seven-eighths threshold. -/
 def sevenEighthsBoundaryMinimalFejerCutoff (j : ℕ) : ℕ :=

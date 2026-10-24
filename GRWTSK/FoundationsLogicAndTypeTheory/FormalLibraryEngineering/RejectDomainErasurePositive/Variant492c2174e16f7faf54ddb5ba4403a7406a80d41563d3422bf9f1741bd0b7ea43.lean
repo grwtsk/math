@@ -1,6 +1,6 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
-open GRWTSK.Analysis.Operator.UnboundedPort
+open GRWTSK.Analysis.OperatorTheory.UnboundedPort
 universe u v w
 variable {R : Type u} [Ring R]
 variable {E : Type v} [AddCommGroup E] [Module R E]

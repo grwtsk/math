@@ -21,7 +21,7 @@ open scoped BigOperators
 namespace GRWTSK.NumberTheory.Moebius.MertensSquareEnergyPowerBound
 
 open GRWTSK.RiemannHypothesis.CCC
-open GRWTSK.Analysis.Asymptotics.FinitePowerSum
+open GRWTSK.Analysis.AsymptoticAnalysis.FinitePowerSum
 open GRWTSK.NumberTheory.Moebius.CriticalIntervalBlocks
 open GRWTSK.NumberTheory.Moebius.ReciprocalPrefixVariationMertensEnergy
 

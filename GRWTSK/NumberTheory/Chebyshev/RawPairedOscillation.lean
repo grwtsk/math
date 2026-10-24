@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Formalization assistance: OpenAI. -/
 import GRWTSK.NumberTheory.Chebyshev.RawSymmetricAverages
-import GRWTSK.Analysis.Real.ClassicalRawCorrection
+import GRWTSK.Analysis.RealAnalysis.ClassicalRawCorrection
 
 /-! # Jump-aware paired error for unaveraged raw reconstruction
 Symmetric pairing cancels the odd half-jump profile exactly. The remaining
@@ -13,7 +13,7 @@ open scoped Topology Interval
 namespace GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation
 open FirstRieszWeakRawLimit RawSymmetricAverages RieszDiagonalUnsmoothing EndpointConventions
 open GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead
-open GRWTSK.Analysis.Real.ClassicalRawCorrection
+open GRWTSK.Analysis.RealAnalysis.ClassicalRawCorrection
 
 theorem rawClassicalHead_eq_log_correction (x T : ℝ) (hx : 1 < x) :
     rawClassicalHead x T = (x:ℂ)+finiteHeightZeroHead x T-

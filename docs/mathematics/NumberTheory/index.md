@@ -34,7 +34,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
 
 **Unranked article previews.** Spectral scores are unavailable for these articles. The following selection preserves the [selected catalog's editorial order](../../reference/results.md), then uses structured metadata and title order; it is not a measured ranking.
 
-- [Least natural prime](Prime/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
+- [Least natural prime](Primes/least-prime.md) — leaf; verification: `SCOPED_EVIDENCE`; S₃ unavailable. The natural number two is prime and is a lower bound for every natural prime. This article records the foundational conjunction; a separate composite article derives uniqueness of a prime satisfying the stated…
 
   <details>
   <summary>Verification scope</summary>
@@ -42,7 +42,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
   **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
 
   </details>
-- [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
+- [Least-prime uniqueness by antisymmetry](Primes/least-prime-uniqueness.md) — composite; verification: `SCOPED_EVIDENCE`; S₃ unavailable. A natural prime q that is no greater than every natural prime equals two. The argument combines the foundational prime lower bound with leastness at the prime two, then applies natural-number order… **Composition bridge:** `SCOPED_EVIDENCE`.
 
   <details>
   <summary>Verification scope</summary>
@@ -50,7 +50,7 @@ Counts deduplicate shared article identities. Verification coverage reports supp
   **Verification scope.** Exact replay twice with Lean --trust=0 of GRWTSK.NumberTheory.two_is_first_prime and GRWTSK.NumberTheory.Prime.least_prime_eq_two at math commit c288573d1e3cad54979fd95ebf17244f30224d41, with native direct type/value references and observed axiom closures under 8,750 stable fingerprinted imported artifact parts. Cached upstream source was not replayed; global dependency completeness is false.
 
   </details>
-- [`n^2 + 1` local roots and the thin Gaussian line](Prime/quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. One positive finite count cannot be reused above every lower cutoff. The packet retains this quantifier boundary.
+- [`n^2 + 1` local roots and the thin Gaussian line](Primes/quadratic-plus-one-local-gaussian.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. One positive finite count cannot be reused above every lower cutoff. The packet retains this quantifier boundary.
 - [A complete rational uniform-interval check](Chebyshev/interval-rational-quadrature.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.** These are Lean proof candidates, not accepted proof terms, a qualified executable, or a spectral prime certificate. All earlier source, hypotheses and replay…
 - [A cubic ceiling on the local Jensen circles](Zeta/Riemann/cubic-circle-ceiling.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. This note advances the actual circle-modulus supplier for the local count in #189/#261. Its result is a classical, unconditional inequality for the actual Riemann zeta function. It is a written mathematical…
 
@@ -64,37 +64,33 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 1. **[Algebraic number theory](AlgebraicNumberTheory/index.md)** — 3 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of arithmetic through algebraic extensions of the rational numbers and related rings, ideals, valuations and field structures.
    Unranked previews: [Primitive kernel frame and anisotropic covolume normalization](AlgebraicNumberTheory/GeometryOfNumbers/heath-brown-primitive-kernel-frame.md); [Primitive linear-box foundation for the Heath–Brown estimate](AlgebraicNumberTheory/GeometryOfNumbers/heath-brown-primitive-linear-box-foundation.md).
 2. **[Analytic number theory](AnalyticNumberTheory/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of arithmetic questions using analytic estimates, limiting processes and real or complex functions associated with arithmetic data.
-3. **[Arithmetic Functions](ArithmeticFunctions/index.md)** — 0 immediate children · 5 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Arithmetic Liouville signs as exact finite Walsh observations](ArithmeticFunctions/liouville-walsh-source.md); [Complete density Möbius correction](ArithmeticFunctions/density-correction.md).
-4. **[Arithmetic Geometry](ArithmeticGeometry/index.md)** — 1 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+3. **[Arithmetic Geometry](ArithmeticGeometry/index.md)** — 1 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Pilot comparisons and source correspondence obligations](ArithmeticGeometry/LogThetaComparison/abc-iut-objections.md).
-5. **[Chebyshev](Chebyshev/index.md)** — 0 immediate children · 40 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+4. **[Chebyshev](Chebyshev/index.md)** — 0 immediate children · 40 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A complete rational uniform-interval check](Chebyshev/interval-rational-quadrature.md); [A finite rational polygon index with an explicit logarithmic refinement](Chebyshev/pole-contour-polygon-index.md).
-6. **[Computational number theory](ComputationalNumberTheory/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of algorithms for arithmetic problems, including their mathematical correctness, input representations, complexity and explicit outputs.
-7. **[Continued Fractions](ContinuedFractions/index.md)** — 0 immediate children · 2 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md); [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md).
-8. **[Cyclotomic](Cyclotomic/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+5. **[Computational number theory](ComputationalNumberTheory/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored · editorial: proposed. The study of algorithms for arithmetic problems, including their mathematical correctness, input representations, complexity and explicit outputs.
+6. **[Cyclotomic](Cyclotomic/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Cubic characters on good third-cyclotomic quotients](Cyclotomic/third-cyclotomic-characters.md); [Cubic Jacobi congruence in the third cyclotomic integer ring](Cyclotomic/third-cyclotomic-jacobi.md).
-9. **[Diophantine](Diophantine/index.md)** — 1 immediate children · 6 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+7. **[Diophantine](Diophantine/index.md)** — 1 immediate children · 6 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [ABC exceptional-set analytic interfaces](Diophantine/abc-exceptional-analytic-interfaces.md); [ABC exceptional-set geometry linearization](Diophantine/abc-exceptional-geometry-linearization.md).
-10. **[Elementary number theory](ElementaryNumberTheory/index.md)** — 1 immediate children · 2 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integer arithmetic through divisibility, congruences and related arguments that do not require the general machinery of analytic or algebraic number theory.
-   Unranked previews: [Least natural prime](Prime/least-prime.md); [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md).
-11. **[Farey](Farey/index.md)** — 0 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+8. **[Elementary number theory](ElementaryNumberTheory/index.md)** — 3 immediate children · 9 unique articles · 2 structured · 2 verification metadata · 0 scored · editorial: proposed. The study of integer arithmetic through divisibility, congruences and related arguments that do not require the general machinery of analytic or algebraic number theory.
+   Unranked previews: [Least natural prime](Primes/least-prime.md); [Least-prime uniqueness by antisymmetry](Primes/least-prime-uniqueness.md).
+9. **[Farey](Farey/index.md)** — 0 immediate children · 14 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Exact finite obstruction connections: Farey, Sturmian, projective channels, bounded gauges, Heisenberg](Farey/recent-obstructions-formalization-2026.md); [Exact real-measure mixing → open return transport for the Farey cat map](Farey/cat-map-measure-mixing-transport.md).
-12. **[Ideal](Ideal/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+10. **[Ideal](Ideal/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Compact-window finite support of ideal-norm triples](Ideal/compact-norm-support.md).
-13. **[LSeries](LSeries/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+11. **[LSeries](LSeries/index.md)** — 0 immediate children · 4 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A Gaussian contour for the zeta Dirichlet series](LSeries/gaussian-contour.md); [Closed Möbius Dirichlet polynomials](LSeries/closed-moebius.md).
-14. **[Moebius](Moebius/index.md)** — 5 immediate children · 227 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+12. **[Moebius](Moebius/index.md)** — 5 immediate children · 227 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A strict negative prime-prefix correlation](Moebius/PrimeFilters/negative-correlation.md); [Abel shift-mass telescope and global weighted quadratic energy](Moebius/Energy/signed-abel-mass-quadratic-energy.md).
-15. **[Polynomial](Polynomial/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+13. **[Polynomial](Polynomial/index.md)** — 0 immediate children · 1 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Polynomial derivative and radical degree bounds](Polynomial/derivative-radical-bound.md).
-16. **[Prime](Prime/index.md)** — 0 immediate children · 25 unique articles · 2 structured · 2 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-   Unranked previews: [Least natural prime](Prime/least-prime.md); [Least-prime uniqueness by antisymmetry](Prime/least-prime-uniqueness.md).
-17. **[Zeta](Zeta/index.md)** — 1 immediate children · 245 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+14. **[Prime](Primes/index.md)** — 0 immediate children · 25 unique articles · 2 structured · 2 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+   Unranked previews: [Least natural prime](Primes/least-prime.md); [Least-prime uniqueness by antisymmetry](Primes/least-prime-uniqueness.md).
+15. **[Zeta](Zeta/index.md)** — 1 immediate children · 245 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [A cubic ceiling on the local Jensen circles](Zeta/Riemann/cubic-circle-ceiling.md); [Absolute high-g Type II closure by finite divisor counting](Zeta/Riemann/quadratic-theta-prime-fejer-mobius-log-high-gcd-type-ii-counting.md).
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
@@ -104,14 +100,18 @@ Generated navigation, scores and source syntax inventories do not strengthen the
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
 | Inventory | Count |
 |---|---:|
-| Lean source modules (current regular filesystem files) | 12280 |
+| Lean source modules (observed filesystem snapshot) | 12478 |
 | Curated registered object guides | 41 |
 | Curated documented object groups | 17 |
 | Curated primary sources linked | 39 |
 | Curated archive intake records | 19 |
 | Curated selected catalog families | 1 |
+| Pinned source modules represented by complete publication | 12280 |
+| Complete generated source Markdown pages in this source route | 155115 |
 
-No current whole-corpus source-command census is available.
+Complete lexical source publication is pinned to `706c62c1285a9857cb9d52e0620ec2cb514eb374`. Its counts are separate from observed filesystem files and semantic subject assignments; they do not establish Lean elaboration or proof acceptance.
+
+Observed report: `4b59a87791740dfee370ff21ba17ad81dbfbe06c97feabe622e3adb5da23503c`. The live tree may drift after this non-atomic observation.
 <!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
@@ -124,8 +124,8 @@ Historical curated observer census (not current totals): At least 1946 source de
 
 Historical curated observer census (not current totals): Linked primary-source scope: 10 source declaration commands, including 8 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
-- [Complete density Möbius correction](ArithmeticFunctions/density-correction.md).
-- [Signed Möbius cutoff decomposition](ArithmeticFunctions/signed-cutoffs.md).
+- [Complete density Möbius correction](ElementaryNumberTheory/ArithmeticFunctions/density-correction.md).
+- [Signed Möbius cutoff decomposition](ElementaryNumberTheory/ArithmeticFunctions/signed-cutoffs.md).
 
 ## ArithmeticGeometry / LogThetaComparison
 
@@ -141,8 +141,8 @@ Historical curated observer census (not current totals): Linked primary-source s
 
 Historical curated observer census (not current totals): Linked primary-source scope: 100 source declaration commands, including 79 theorem/lemma commands, across 2 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
-- [Irrational frequency realization and native readback](ContinuedFractions/frequency-realization.md).
-- [Scheduled digits and continued-fraction denominators](ContinuedFractions/scheduled-denominators.md).
+- [Irrational frequency realization and native readback](ElementaryNumberTheory/ContinuedFractions/frequency-realization.md).
+- [Scheduled digits and continued-fraction denominators](ElementaryNumberTheory/ContinuedFractions/scheduled-denominators.md).
 
 ## Cyclotomic
 
@@ -258,7 +258,7 @@ Historical curated observer census (not current totals): Linked primary-source s
 
 Historical curated observer census (not current totals): Linked primary-source scope: 1 source declaration commands, including 1 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
-- [Least natural prime](Prime/least-prime.md).
+- [Least natural prime](Primes/least-prime.md).
 
 ## Zeta
 

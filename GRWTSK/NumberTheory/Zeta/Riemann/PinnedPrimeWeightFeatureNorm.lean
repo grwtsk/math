@@ -40,7 +40,7 @@ SOURCE_MAJORANT_OPEN / NO_RH_CLAIM.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The complete `l1` mass of the literal prime coefficients on `(X,2X]`. -/
 def primeCoefficientL1 (X : ℕ) : ℝ :=
@@ -175,9 +175,9 @@ def pinnedPrimeWeightStage
   factorIndex := {0}
   coefficient := fun v _ => targetCoefficient v
   leftFeature := fun _ p =>
-    GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.coefficient p
+    GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.coefficient p
   rightFeature := fun _ p =>
-    GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.coefficient p
+    GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.coefficient p
   residual := residual
   residual_nonnegative := hresidual
 
@@ -348,7 +348,7 @@ theorem pinnedPrimeWeightCriterion_to_featureNormCriterion
       targetCoefficient residual hresidual
   let certificate :=
     pinnedPrimeWeightNormCertificate
-      (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) targetCoefficient residual hresidual
+      (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) targetCoefficient residual hresidual
   refine ⟨stage, certificate, ?_, ?_, ?_⟩
   · intro v hv
     have hcv := hcoefficient v hv
@@ -358,7 +358,7 @@ theorem pinnedPrimeWeightCriterion_to_featureNormCriterion
               primeCoefficientL1Budget^2 := by
             simpa [stage, certificate] using
               (pinnedPrimeWeightStage_certifiedFeatureBudget_eq
-                (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) targetCoefficient residual
+                (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) targetCoefficient residual
                 hresidual v)
       _ ≤ C * primeCoefficientL1Budget^2 :=
         mul_le_mul_of_nonneg_right hcv (sq_nonneg _)

@@ -27,7 +27,7 @@ CLASSICAL_PSI_POWER_LOGSQ_ADAPTER_DEFINED / REVERSE_EXPLICIT_FORMULA_OPEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def ClassicalPsiPowerLogSqBound (ρ : ℝ) : Prop :=
   ∃ C : ℝ, 0 ≤ C ∧ ∃ x₀ : ℝ,

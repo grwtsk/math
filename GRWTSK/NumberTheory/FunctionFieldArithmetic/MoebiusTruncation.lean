@@ -13,7 +13,7 @@ Multiplication here is Dirichlet convolution, not pointwise multiplication.
 No polynomial Mobius budget or Riemann-hypothesis conclusion is claimed.
 -/
 
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
@@ -53,4 +53,4 @@ theorem moebius_above_cutoff_zero (U n : ℕ) (hn : n ≤ U) :
   change μ n - (if n ≤ U then μ n else 0) = 0
   rw [if_pos hn, sub_self]
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

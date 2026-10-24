@@ -38,7 +38,7 @@ noncomputable section
 
 open scoped BigOperators
 
-namespace GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+namespace GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Square energy of all aligned blocks at one scale `r` inside `[0,2^m)`.
 The intended use is under `r <= m`; the surrounding coordinate sum enforces
@@ -170,12 +170,12 @@ theorem alignedDyadicCoordinateSquareEnergy_nonneg
   exact Finset.sum_nonneg fun r _hr =>
     Finset.sum_nonneg fun q _hq => sq_nonneg _
 
-end GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+end GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 namespace TwoPointConjectureJunction
 
-open GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+open GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Explicit scale--block coordinate energy of one zero-padded two-point
 source. -/
@@ -277,7 +277,7 @@ theorem riemannHypothesis_of_mertensTwoPointCoordinateEnergy
 end TwoPointConjectureJunction
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
-#print axioms GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.dyadicTreeSquareEnergy_eq_doubleSum
+#print axioms GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal.dyadicTreeSquareEnergy_eq_doubleSum
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.twoPointTreeEnergy_eq_doubleSum
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.subpolynomialDyadicTwoPointCoordinateEnergyWithDepthCost_iff_tree
 #print axioms GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensTwoPointCoordinateEnergy

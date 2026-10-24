@@ -35,7 +35,7 @@ $$
 \forall T\ge0:\quad \mathcal X(T)\le C_\varepsilon e^{\varepsilon T}.
 $$
 
-The constant may depend on the rate, but must bound every time. One rate, finitely many rates, or a constant chosen separately at each time does not satisfy this proposition. Polynomial P04 implies this all-rate condition, with the explicit factorial cost in [PolynomialSubexponential](../../../../../GRWTSK/Analysis/Asymptotics/PolynomialSubexponential.lean); no converse to polynomial P04 is asserted.
+The constant may depend on the rate, but must bound every time. One rate, finitely many rates, or a constant chosen separately at each time does not satisfy this proposition. Polynomial P04 implies this all-rate condition, with the explicit factorial cost in [PolynomialSubexponential](../../../../../GRWTSK/Analysis/AsymptoticAnalysis/PolynomialSubexponential.lean); no converse to polynomial P04 is asserted.
 
 Define the actual pickup convergence boundary by
 
@@ -75,7 +75,7 @@ $$
 
 An all-rate energy bound for both $g$ and $W-g$ implies the actual pickup budget and RH. The comparison and residual suppliers remain unproved. The determinant reformulation likewise has exactly the same all-rate energy debt.
 
-[ExponentialThreshold](../../../../../GRWTSK/Analysis/LaplaceTransform/ExponentialThreshold.lean) checks a separate generic example $g(u)=e^{u/2}$: its squared energy is integrable at damping two and divergent at damping one. This waveform is not the Möbius pickup. It proves that continuity and initial positive-damping integrability alone cannot justify crossing a convergence boundary.
+[ExponentialThreshold](../../../../../GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform/ExponentialThreshold.lean) checks a separate generic example $g(u)=e^{u/2}$: its squared energy is integrable at damping two and divergent at damping one. This waveform is not the Möbius pickup. It proves that continuity and initial positive-damping integrability alone cannot justify crossing a convergence boundary.
 
 ## Distinct observables and current verification
 
@@ -115,7 +115,7 @@ The mathematical residual is an unconditional actual arithmetic supplier: polyno
 The recorded ExponentialThreshold replay preserves both owned declarations, including the generated simplifier lemma, with byte-identical raw types and proof values. It removes only the redundant direct Ring import; the transitive Mathlib closure stays at 2446 modules. Its frozen 25-source audit checks 278 safe mathematical declarations with standard transitive axioms, alongside the exact 243-record Energy consumer and five fresh intended control failures. The separate phase-scaling control reuses unchanged source-linked evidence. The later PolynomialEnergy changes and arithmetic specialization transfer leave that complete 25-source receipt historical, matching 23 of the newly qualified source inputs; the original evidence is retained. The arithmetic suppliers, full consumer replay and unconditional RH remain open.
 
 
-[PolynomialEnergy](../../../../../GRWTSK/Analysis/LaplaceTransform/PolynomialEnergy.lean) gives a reusable analysis result. For continuous $f:\mathbb R\to\mathbb R$ and real $C,q$ with $C\ge0$, assume
+[PolynomialEnergy](../../../../../GRWTSK/Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform/PolynomialEnergy.lean) gives a reusable analysis result. For continuous $f:\mathbb R\to\mathbb R$ and real $C,q$ with $C\ge0$, assume
 
 $$
 \forall T\ge0:\quad \int_0^T f(u)^2\,du\le C(1+T)^q.
@@ -131,7 +131,7 @@ The frozen specialization replay freshly elaborates both affected owners and che
 
 The subsequent frozen 25-source audit checks all 278 owned declarations with standard transitive axioms and no runtime exclusions. Its actual Energy consumer reports the same 243 unique declarations, with only the moved theorem's owner field changed; the new native row order is retained. Five intended controls fail freshly for their exact measured reason and source range. The phase-scaling control reuses its qualified unchanged two-source ancestry. Unchanged source exports and pinned imported Mathlib objects are reused, without a Mathlib source-rebuild claim. The arithmetic energy supplier, full project source and consumer acceptance, and unconditional RH remain open.
 
-The reusable cumulative exponential square-energy implication is described separately in [Exponential energy bounds and square integrability](../../../Analysis/LaplaceTransform/exponential-energy.md). It applies to arbitrary continuous functions with a supplied exponential energy bound and a strict gap between that rate and the tilt. Its exact 3357-byte declaration now belongs to Analysis. The separately qualified frozen transfer checks the complete 26-owner family of 278 declarations, the actual 243-declaration Energy consumer, and five freshly measured intended failures, with unchanged phase-scaling evidence reused. All twenty-eight raw types and twenty-seven other complete proof values are exact; the moved proof changes only two measured source-module lambda binder-name fields. Its strict raw-equality failures remain historical, and no equality of all twenty-eight raw values is claimed. The preceding 25-source paragraph records its original frozen generation: after this transfer, 24 of those 25 source hashes remain current. Earlier receipts retain their original inputs. Other project consumers, full replay, the open Möbius pickup growth supplier and unconditional RH are not established by this result.
+The reusable cumulative exponential square-energy implication is described separately in [Exponential energy bounds and square integrability](../../../Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform/exponential-energy.md). It applies to arbitrary continuous functions with a supplied exponential energy bound and a strict gap between that rate and the tilt. Its exact 3357-byte declaration now belongs to Analysis. The separately qualified frozen transfer checks the complete 26-owner family of 278 declarations, the actual 243-declaration Energy consumer, and five freshly measured intended failures, with unchanged phase-scaling evidence reused. All twenty-eight raw types and twenty-seven other complete proof values are exact; the moved proof changes only two measured source-module lambda binder-name fields. Its strict raw-equality failures remain historical, and no equality of all twenty-eight raw values is claimed. The preceding 25-source paragraph records its original frozen generation: after this transfer, 24 of those 25 source hashes remain current. Earlier receipts retain their original inputs. Other project consumers, full replay, the open Möbius pickup growth supplier and unconditional RH are not established by this result.
 
 <!-- BEGIN GENERATED MATHEMATICS TOTALS -->
 

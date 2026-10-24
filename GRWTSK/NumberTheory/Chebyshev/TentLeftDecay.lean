@@ -30,7 +30,7 @@ open GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 open GRWTSK.NumberTheory.Chebyshev.TentEdgeBounds
 open GRWTSK.NumberTheory.Chebyshev.HeightIndexedTentResidues
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 
 noncomputable section
 

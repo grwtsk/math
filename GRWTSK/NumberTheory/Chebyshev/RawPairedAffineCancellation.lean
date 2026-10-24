@@ -23,7 +23,7 @@ theorem pairedDifference_affine (f : ℝ → ℂ) (a b : ℂ) (x t : ℝ) :
 theorem raw_pair_eq_zero_head_and_correction (x t T : ℝ) :
     pairedDifference (fun u => rawClassicalHead u T) x t =
       pairedDifference (fun u => finiteHeightZeroHead u T +
-        (GRWTSK.Analysis.Real.ClassicalRieszCorrection.slope u : ℂ)) x t := by
+        (GRWTSK.Analysis.RealAnalysis.ClassicalRieszCorrection.slope u : ℂ)) x t := by
   unfold pairedDifference rawClassicalHead
   push_cast
   ring

@@ -14,7 +14,7 @@ sums retain prime powers. No cancellation rate or growth witness is asserted.
 -/
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 /-- The fixed density source as an arithmetic function, including zero. -/
@@ -55,4 +55,4 @@ theorem density_moebius_correction_prime {p : ℕ} (hp : p.Prime) :
   field_simp
   ring
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

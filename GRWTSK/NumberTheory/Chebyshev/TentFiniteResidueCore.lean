@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Chebyshev.TentPoleSubtractionCore
-import GRWTSK.Analysis.Real.CauchyEdgePrimitives
+import GRWTSK.Analysis.RealAnalysis.CauchyEdgePrimitives
 import GRWTSK.Analysis.ComplexAnalysis.RectangularCauchyKernel
 import GRWTSK.NumberTheory.Chebyshev.TentFiniteResidues
 import GRWTSK.NumberTheory.Chebyshev.Checks.RectangularResidueControls

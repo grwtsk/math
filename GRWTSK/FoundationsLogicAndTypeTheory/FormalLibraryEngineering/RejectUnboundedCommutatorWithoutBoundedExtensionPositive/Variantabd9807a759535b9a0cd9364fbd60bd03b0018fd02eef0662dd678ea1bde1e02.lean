@@ -1,6 +1,6 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.GraphHodgePortCore
 
-open GRWTSK.Analysis.Operator.UnboundedPort
+open GRWTSK.Analysis.OperatorTheory.UnboundedPort
 open GRWTSK.Algebra.KTheory.UnboundedKasparovCycle
 universe u v
 variable {A : Type u} [Semiring A]

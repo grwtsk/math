@@ -30,7 +30,7 @@ PINNED_AMPLITUDE_ESTIMATE_OPEN /
 COEFFICIENT_SOURCE_LAW_OPEN / NO_RH_CLAIM.
 -/
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 namespace GRWTSK.RiemannHypothesis
 
@@ -192,7 +192,7 @@ theorem pinnedPrimeWeightCapacityCriterion_iff_amplitudeCriterion
     exact
       (pinnedPrimeWeightBoundedDeficit_le_iff_amplitudeRequirement
         (X := dyadicScale j) (C := C) (v := v) (E := E)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hE).mp hdeficit
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hE).mp hdeficit
   · intro hamplitude η hη
     obtain ⟨C, hC, R, hR, j₀, hstages⟩ :=
       hamplitude η hη
@@ -210,7 +210,7 @@ theorem pinnedPrimeWeightCapacityCriterion_iff_amplitudeCriterion
             (dyadicScale j) C v ≤ E :=
       (pinnedPrimeWeightBoundedDeficit_le_iff_amplitudeRequirement
         (X := dyadicScale j) (C := C) (v := v) (E := E)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hE).mpr
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hE).mpr
         (hstages j hj v hv)
     simpa [E, pinnedPrimeWeightStageErrorEnvelope] using hdeficit
 
@@ -243,7 +243,7 @@ theorem pinnedPrimeWeightFixedCapacityCriterion_iff_amplitudeCriterion
     exact
       (pinnedPrimeWeightBoundedDeficit_le_iff_amplitudeRequirement
         (X := dyadicScale j) (C := C) (v := v) (E := E)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hE).mp hdeficit
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hE).mp hdeficit
   · intro hamplitude
     refine ⟨hamplitude.1, ?_⟩
     intro η hη
@@ -263,7 +263,7 @@ theorem pinnedPrimeWeightFixedCapacityCriterion_iff_amplitudeCriterion
             (dyadicScale j) C v ≤ E :=
       (pinnedPrimeWeightBoundedDeficit_le_iff_amplitudeRequirement
         (X := dyadicScale j) (C := C) (v := v) (E := E)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hE).mpr
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hE).mpr
         (hstages j hj v hv)
     simpa [E, pinnedPrimeWeightStageErrorEnvelope] using hdeficit
 

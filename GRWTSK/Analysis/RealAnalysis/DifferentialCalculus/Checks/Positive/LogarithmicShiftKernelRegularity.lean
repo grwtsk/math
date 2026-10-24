@@ -1,6 +1,6 @@
 import GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.LogarithmicShiftKernelRegularity
 set_option linter.hashCommand false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity
 #check @edgeReading
 #check @edge_reading_strict_inside
 #check @two_mem_inventory
@@ -17,4 +17,4 @@ namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegulari
 #print axioms kernel_second_deriv_eventually_eq_label_two
 #print axioms kernel_second_deriv_not_differentiable_at_edge
 #print axioms polarity_kernel_not_contDiff_three
-end GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelRegularity

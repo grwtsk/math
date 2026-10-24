@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberLineBundle
-import GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLineGaugePort
 
 /-!
 # Disjoint theorem-portfolio extension for holomorphic gauge transport
@@ -16,8 +16,8 @@ open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPor
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGauge
-open GRWTSK.Analysis.Operator.HolomorphicLinePort
-open GRWTSK.Analysis.Operator.HolomorphicLineGaugePort
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLinePort
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineGaugePort
 
 noncomputable section
 

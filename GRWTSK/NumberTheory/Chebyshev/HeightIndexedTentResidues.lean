@@ -28,7 +28,7 @@ open GRWTSK.Analysis.ComplexAnalysis.RectangularPoleReduction
 open GRWTSK.Analysis.ComplexAnalysis.RectangularCauchyKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues

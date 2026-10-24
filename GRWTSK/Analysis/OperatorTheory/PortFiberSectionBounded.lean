@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.ComplexAnalysis.PortFiberSectionCompletion
-import GRWTSK.Analysis.Operator.HolomorphicLineSectionBounded
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionBounded
 
 /-!
 # Isolated bounded-operator and completed-adjoint leaf
@@ -22,7 +22,7 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionBounded
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionBounded
 
 noncomputable section
 

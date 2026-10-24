@@ -14,7 +14,7 @@ not been elaborated or executed in Lean. SOURCE_ONLY / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.TentPerronLineControls
 
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 open GRWTSK.NumberTheory.LSeries.TentPairing

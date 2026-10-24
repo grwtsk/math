@@ -22,7 +22,7 @@ HIGH_GCD_TERM_LOG_BOUND_SOURCE_PROVED.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 open GRWTSK.NumberTheory.FiniteDivisorCounting
 
 /-- The actual shifted Fejer weight has no hidden scale loss: on its exact

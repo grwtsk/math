@@ -35,8 +35,8 @@ namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology MeasureTheory Set
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
 
 /-- One-dimensional polarized Parseval on the additive circle. -/
 theorem hasSum_prod_fourierCoeff_unitCircle
@@ -135,7 +135,7 @@ theorem greenPolarizedFourierTerm_hasSum
     hasSum_prod_fourierCoeffOn_unit
       (greenResidualComplex_memLp_Ioc X)
       (complexTestSlope_memLp_Ioc φ)
-  rw [← GRWTSK.NumberTheory.VonMangoldt.ComplexReadout.unit_integral_eq_interval]
+  rw [← GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout.unit_integral_eq_interval]
   convert h using 1
   · funext k
     rfl

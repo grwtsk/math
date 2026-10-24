@@ -14,7 +14,7 @@ namespace GRWTSK.NumberTheory.LSeries.GaussianDyadic
 noncomputable section
 open Set
 open GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus
-open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.NormalizedGaussian
 open GRWTSK.NumberTheory.LSeries.GaussianContour
 
 noncomputable def gaussianDyadicTerm (Z : ℝ) (n j : ℕ) : ℂ :=

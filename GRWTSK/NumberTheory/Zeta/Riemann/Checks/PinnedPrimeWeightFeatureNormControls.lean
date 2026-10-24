@@ -10,7 +10,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightFeatureNormControls
 
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Satisfiability
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Canonical polarity used only to expose the exact numerical arity labels. -/
 def positivePolarity (k : ℕ) : ClausePolarity k :=

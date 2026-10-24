@@ -8,7 +8,7 @@ Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Issue: #541. Direct stacked parent: draft PR #540 at
 `93b83a632296a9dc77d24a3873c7f267f85196be`.
 -/
-import GRWTSK.Analysis.Asymptotics.DyadicLogAbsorption
+import GRWTSK.Analysis.AsymptoticAnalysis.DyadicLogAbsorption
 
 set_option autoImplicit false
 noncomputable section

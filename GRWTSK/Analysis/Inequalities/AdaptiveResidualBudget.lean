@@ -13,7 +13,7 @@ adapters remain exactly as identified in the accompanying mathematical note.
 -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.NumberTheory.VonMangoldt.AdaptiveResidualBudget
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.AdaptiveResidualBudget
 
 /-- Consecutive quantile thresholds control the open-cell interior. -/
 theorem quantile_interior (L U V : ℝ) (j M : ℕ)
@@ -92,4 +92,4 @@ theorem canonical_rational_budget (X e R l L : ℝ)
   have hm := mul_le_mul_of_nonneg_right hlhi hL
   nlinarith
 
-end GRWTSK.NumberTheory.VonMangoldt.AdaptiveResidualBudget
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.AdaptiveResidualBudget
