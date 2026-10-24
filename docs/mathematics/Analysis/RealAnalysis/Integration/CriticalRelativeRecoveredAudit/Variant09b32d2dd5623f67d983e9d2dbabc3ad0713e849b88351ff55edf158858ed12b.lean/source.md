@@ -1,0 +1,53 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.CriticalRelativeRecoveredAudit.Variant09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `588e25baef34dd61e9bbb4c6151893f993f0ea27` · SHA-256 `09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import CriticalRelativePairing
+#check OmegaResearch.CriticalRelativePairing.relativePsiError
+#print axioms OmegaResearch.CriticalRelativePairing.relativePsiError
+#check OmegaResearch.CriticalRelativePairing.criticalWeight
+#print axioms OmegaResearch.CriticalRelativePairing.criticalWeight
+#check OmegaResearch.CriticalRelativePairing.criticalKernel
+#print axioms OmegaResearch.CriticalRelativePairing.criticalKernel
+#check OmegaResearch.CriticalRelativePairing.latticeKernel
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel
+#check OmegaResearch.CriticalRelativePairing.criticalRelativePairing
+#print axioms OmegaResearch.CriticalRelativePairing.criticalRelativePairing
+#check OmegaResearch.CriticalRelativePairing.latticePairing
+#print axioms OmegaResearch.CriticalRelativePairing.latticePairing
+#check OmegaResearch.CriticalRelativePairing.criticalWeight_continuous
+#print axioms OmegaResearch.CriticalRelativePairing.criticalWeight_continuous
+#check OmegaResearch.CriticalRelativePairing.criticalWeight_abs_le
+#print axioms OmegaResearch.CriticalRelativePairing.criticalWeight_abs_le
+#check OmegaResearch.CriticalRelativePairing.latticeKernel_measurable
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel_measurable
+#check OmegaResearch.CriticalRelativePairing.latticeKernel_abs_le
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel_abs_le
+#check OmegaResearch.CriticalRelativePairing.latticeKernel_integrable
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel_integrable
+#check OmegaResearch.CriticalRelativePairing.latticePairing_abs_le
+#print axioms OmegaResearch.CriticalRelativePairing.latticePairing_abs_le
+#check OmegaResearch.CriticalRelativePairing.kernel_exact_decomposition
+#print axioms OmegaResearch.CriticalRelativePairing.kernel_exact_decomposition
+#check OmegaResearch.CriticalRelativePairing.criticalKernel_integrable
+#print axioms OmegaResearch.CriticalRelativePairing.criticalKernel_integrable
+#check OmegaResearch.CriticalRelativePairing.integerJ_eq_critical_add_lattice
+#print axioms OmegaResearch.CriticalRelativePairing.integerJ_eq_critical_add_lattice
+#check OmegaResearch.CriticalRelativePairing.integerJ_le_critical
+#print axioms OmegaResearch.CriticalRelativePairing.integerJ_le_critical
+#check OmegaResearch.CriticalRelativePairing.critical_le_integerJ
+#print axioms OmegaResearch.CriticalRelativePairing.critical_le_integerJ
+#check OmegaResearch.CriticalRelativePairing.CriticalRelativeTailUpperBound
+#print axioms OmegaResearch.CriticalRelativePairing.CriticalRelativeTailUpperBound
+#check OmegaResearch.CriticalRelativePairing.critical_tail_iff_integer_tail
+#print axioms OmegaResearch.CriticalRelativePairing.critical_tail_iff_integer_tail
+#check ContinuousResearch.ActualSignedStieltjes.actual_log_stieltjes
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_log_stieltjes
+#check ContinuousResearch.ActualIntegerInventory.integerJ_eq_literal
+#print axioms ContinuousResearch.ActualIntegerInventory.integerJ_eq_literal
+#check ContinuousResearch.IntegerWitnessTransfer.estimate_of_integer_tail
+#print axioms ContinuousResearch.IntegerWitnessTransfer.estimate_of_integer_tail
+```

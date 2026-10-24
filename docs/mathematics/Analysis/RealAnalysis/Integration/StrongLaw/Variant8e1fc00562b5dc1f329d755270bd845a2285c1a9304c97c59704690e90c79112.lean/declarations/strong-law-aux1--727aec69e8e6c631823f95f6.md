@@ -1,0 +1,180 @@
+# strong_law_aux1
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:ade8079e-7cda-cfee-100f-f8c175818da7",
+  "kind": "theorem",
+  "lexical_name": "strong_law_aux1",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "strong-law-aux1--727aec69e8e6c631823f95f6",
+  "source": {
+    "blob": "b0ea320986432c55f30165eda9bd1413c532769e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 483,
+    "line": 385,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/StrongLaw/Variant8e1fc00562b5dc1f329d755270bd845a2285c1a9304c97c59704690e90c79112.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:727aec69e8e6c631823f95f6ab94e5e4af23c87d0cf51bbda6b623b15975cf91",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/StrongLaw/Variant8e1fc00562b5dc1f329d755270bd845a2285c1a9304c97c59704690e90c79112.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:ade8079e-7cda-cfee-100f-f8c175818da7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 385–483.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem strong_law_aux1 {c : ℝ} (c_one : 1 < c) {ε : ℝ} (εpos : 0 < ε) : ∀ᵐ ω, ∀ᶠ n : ℕ in atTop,
+    |∑ i ∈ range ⌊c ^ n⌋₊, truncation (X i) i ω - 𝔼[∑ i ∈ range ⌊c ^ n⌋₊, truncation (X i) i]| <
+    ε * ⌊c ^ n⌋₊ := by
+  /- Let `S n = ∑ i ∈ range n, Y i` where `Y i = truncation (X i) i`. We should show that
+    `|S k - 𝔼[S k]| / k ≤ ε` along the sequence of powers of `c`. For this, we apply Borel-Cantelli:
+    it suffices to show that the converse probabilities are summable. From Chebyshev inequality,
+    this will follow from a variance control `∑' Var[S (c^i)] / (c^i)^2 < ∞`. This is checked in
+    `I2` using pairwise independence to expand the variance of the sum as the sum of the variances,
+    and then a straightforward but tedious computation (essentially boiling down to the fact that
+    the sum of `1/(c ^ i)^2` beyond a threshold `j` is comparable to `1/j^2`).
+    Note that we have written `c^i` in the above proof sketch, but rigorously one should put integer
+    parts everywhere, making things more painful. We write `u i = ⌊c^i⌋₊` for brevity. -/
+  have c_pos : 0 < c := zero_lt_one.trans c_one
+  have hX : ∀ i, AEStronglyMeasurable (X i) ℙ := fun i =>
+    (hident i).symm.aestronglyMeasurable_snd hint.1
+  have A : ∀ i, StronglyMeasurable (indicator (Set.Ioc (-i : ℝ) i) id) := fun i =>
+    stronglyMeasurable_id.indicator measurableSet_Ioc
+  set Y := fun n : ℕ => truncation (X n) n
+  set S := fun n => ∑ i ∈ range n, Y i with hS
+  let u : ℕ → ℕ := fun n => ⌊c ^ n⌋₊
+  have u_mono : Monotone u := fun i j hij => Nat.floor_mono (pow_right_mono₀ c_one.le hij)
+  have I1 : ∀ K, ∑ j ∈ range K, ((j : ℝ) ^ 2)⁻¹ * Var[Y j] ≤ 2 * 𝔼[X 0] := by
+    intro K
+    calc
+      ∑ j ∈ range K, ((j : ℝ) ^ 2)⁻¹ * Var[Y j] ≤
+          ∑ j ∈ range K, ((j : ℝ) ^ 2)⁻¹ * 𝔼[truncation (X 0) j ^ 2] := by
+        gcongr with j
+        rw [(hident j).truncation.variance_eq]
+        exact variance_le_expectation_sq (hX 0).truncation
+      _ ≤ 2 * 𝔼[X 0] := sum_variance_truncation_le hint (hnonneg 0) K
+  let C := c ^ 5 * (c - 1)⁻¹ ^ 3 * (2 * 𝔼[X 0])
+  have I2 : ∀ N, ∑ i ∈ range N, ((u i : ℝ) ^ 2)⁻¹ * Var[S (u i)] ≤ C := by
+    intro N
+    calc
+      ∑ i ∈ range N, ((u i : ℝ) ^ 2)⁻¹ * Var[S (u i)] =
+          ∑ i ∈ range N, ((u i : ℝ) ^ 2)⁻¹ * ∑ j ∈ range (u i), Var[Y j] := by
+        congr 1 with i
+        congr 1
+        rw [hS, IndepFun.variance_sum]
+        · intro j _
+          exact (hident j).aestronglyMeasurable_fst.memLp_truncation
+        · intro k _ l _ hkl
+          exact (hindep hkl).comp (A k).measurable (A l).measurable
+      _ = ∑ j ∈ range (u (N - 1)), (∑ i ∈ range N with j < u i, ((u i : ℝ) ^ 2)⁻¹) * Var[Y j] := by
+        simp_rw [mul_sum, sum_mul, sum_sigma']
+        refine sum_nbij' (fun p ↦ ⟨p.2, p.1⟩) (fun p ↦ ⟨p.2, p.1⟩) ?_ ?_ ?_ ?_ ?_
+        · simp only [mem_sigma, mem_range, mem_filter, and_imp,
+            Sigma.forall]
+          exact fun a b haN hb ↦ ⟨hb.trans_le <| u_mono <| Nat.le_pred_of_lt haN, haN, hb⟩
+        all_goals simp
+      _ ≤ ∑ j ∈ range (u (N - 1)), c ^ 5 * (c - 1)⁻¹ ^ 3 / ↑j ^ 2 * Var[Y j] := by
+        gcongr ∑ _ ∈ _, ?_ with j
+        rcases eq_zero_or_pos j with (rfl | hj)
+        · simp only [Nat.cast_zero]
+          simp only [Y, Nat.cast_zero, truncation_zero, variance_zero, mul_zero, le_rfl]
+        apply mul_le_mul_of_nonneg_right _ (variance_nonneg _ _)
+        convert! sum_div_nat_floor_pow_sq_le_div_sq N (Nat.cast_pos.2 hj) c_one using 2
+        · simp only [u, Nat.cast_lt]
+        · simp only [u, one_div]
+      _ = c ^ 5 * (c - 1)⁻¹ ^ 3 * ∑ j ∈ range (u (N - 1)), ((j : ℝ) ^ 2)⁻¹ * Var[Y j] := by
+        simp_rw [mul_sum, div_eq_mul_inv, mul_assoc]
+      _ ≤ c ^ 5 * (c - 1)⁻¹ ^ 3 * (2 * 𝔼[X 0]) := by
+        apply mul_le_mul_of_nonneg_left (I1 _)
+        apply mul_nonneg (pow_nonneg c_pos.le _)
+        exact pow_nonneg (inv_nonneg.2 (sub_nonneg.2 c_one.le)) _
+  have I3 : ∀ N, ∑ i ∈ range N, ℙ {ω | (u i * ε : ℝ) ≤ |S (u i) ω - 𝔼[S (u i)]|} ≤
+      ENNReal.ofReal (ε⁻¹ ^ 2 * C) := by
+    intro N
+    calc
+      ∑ i ∈ range N, ℙ {ω | (u i * ε : ℝ) ≤ |S (u i) ω - 𝔼[S (u i)]|} ≤
+          ∑ i ∈ range N, ENNReal.ofReal (Var[S (u i)] / (u i * ε) ^ 2) := by
+        gcongr with i _
+        apply meas_ge_le_variance_div_sq
+        · exact memLp_finsetSum' _ fun j _ => (hident j).aestronglyMeasurable_fst.memLp_truncation
+        · apply mul_pos (Nat.cast_pos.2 _) εpos
+          refine zero_lt_one.trans_le ?_
+          apply Nat.le_floor
+          rw [Nat.cast_one]
+          apply one_le_pow₀ c_one.le
+      _ = ENNReal.ofReal (∑ i ∈ range N, Var[S (u i)] / (u i * ε) ^ 2) := by
+        rw [ENNReal.ofReal_sum_of_nonneg fun i _ => ?_]
+        exact div_nonneg (variance_nonneg _ _) (sq_nonneg _)
+      _ ≤ ENNReal.ofReal (ε⁻¹ ^ 2 * C) := by
+        apply ENNReal.ofReal_le_ofReal
+        simp_rw [div_eq_inv_mul, ← inv_pow, mul_inv, mul_comm _ (ε⁻¹), mul_pow, mul_assoc,
+          ← mul_sum]
+        gcongr
+        simpa only [inv_pow] using I2 N
+  have I4 : (∑' i, ℙ {ω | (u i * ε : ℝ) ≤ |S (u i) ω - 𝔼[S (u i)]|}) < ∞ :=
+    (le_of_tendsto_of_tendsto' (ENNReal.tendsto_nat_tsum _) tendsto_const_nhds I3).trans_lt
+      ENNReal.ofReal_lt_top
+  filter_upwards [ae_eventually_notMem I4.ne] with ω hω
+  simp_rw [S, not_le, mul_comm, Finset.sum_apply] at hω
+  convert! hω; simp only [Y, u, Finset.sum_apply]
+
+include hint hindep hident hnonneg in
+/-- The truncation of `Xᵢ` up to `i` satisfies the strong law of large numbers
+(with respect to the truncated expectation) along the sequence
+`c^n`, for any `c > 1`. This follows from `strong_law_aux1` by varying `ε`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/StrongLaw/Variant8e1fc00562b5dc1f329d755270bd845a2285c1a9304c97c59704690e90c79112.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/StrongLaw/Variant8e1fc00562b5dc1f329d755270bd845a2285c1a9304c97c59704690e90c79112.lean#L385).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b0ea320986432c55f30165eda9bd1413c532769e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

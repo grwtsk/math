@@ -1,0 +1,101 @@
+# fderiv_affineGauge_gradient_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "2d20e6b51feb1f0b93852e06cf341a006bf734e6",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 115,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/74/7413216080e939c6be7173fb5351b576a4adbd9fb653492c7457556ff1bb92d5.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:ef1b8394-ef69-bab0-d3fd-59b4298b4709",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:20981a03-4ac6-25c6-5c21-7b71caf12113",
+  "kind": "theorem",
+  "lexical_name": "fderiv_affineGauge_gradient_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "fderiv-affinegauge-gradient-eq--52a1fc93c200850f443cc762",
+  "source": {
+    "blob": "2d20e6b51feb1f0b93852e06cf341a006bf734e6",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 122,
+    "line": 115,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/AffineGauge/Variant7413216080e939c6be7173fb5351b576a4adbd9fb653492c7457556ff1bb92d5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:52a1fc93c200850f443cc76250911500349b7c74b700ac6569abb2d81712e505",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/AffineGauge/Variant7413216080e939c6be7173fb5351b576a4adbd9fb653492c7457556ff1bb92d5.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:20981a03-4ac6-25c6-5c21-7b71caf12113`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 115–122.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem fderiv_affineGauge_gradient_eq
+    (ell : E →L[ℝ] ℝ) (c : ℝ) (x : E) :
+    fderiv ℝ (D.affineGauge ell c).gradient x =
+      D.hessian x := by
+  rw [(D.affineGauge ell c).fderiv_gradient_eq]
+  rfl
+
+/-- The local positive Phase-I geometry is exactly affine-gauge invariant. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/AffineGauge/Variant7413216080e939c6be7173fb5351b576a4adbd9fb653492c7457556ff1bb92d5.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/AffineGauge/Variant7413216080e939c6be7173fb5351b576a4adbd9fb653492c7457556ff1bb92d5.lean#L115).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2d20e6b51feb1f0b93852e06cf341a006bf734e6` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,174 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.Audit.Variantf748aef4c8d3cb8d25e7bfcdccce461ee1f1bbc5aff67a568fcb4c4375425fca
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5455a75c8cc6ad33cf815419a3fb8dbd5f7e05d0` · SHA-256 `f748aef4c8d3cb8d25e7bfcdccce461ee1f1bbc5aff67a568fcb4c4375425fca`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import LocalTheorem
+import Outer
+import Regressions
+import ActualRegressions
+
+set_option autoImplicit false
+set_option pp.universes true
+set_option pp.fullNames true
+#check CenteredAbelCandidate.fracPlus
+#print axioms CenteredAbelCandidate.fracPlus
+#check CenteredAbelCandidate.fracPlus_bounds
+#print axioms CenteredAbelCandidate.fracPlus_bounds
+#check CenteredAbelCandidate.fracPlus_eq_fract
+#print axioms CenteredAbelCandidate.fracPlus_eq_fract
+#check CenteredAbelCandidate.fracPlus_centered_abs_le
+#print axioms CenteredAbelCandidate.fracPlus_centered_abs_le
+#check CenteredAbelCandidate.fracPlus_measurable
+#print axioms CenteredAbelCandidate.fracPlus_measurable
+#check CenteredAbelCandidate.fracPlus_deriv_intervalIntegrable
+#print axioms CenteredAbelCandidate.fracPlus_deriv_intervalIntegrable
+#check CenteredAbelCandidate.centered_deriv_intervalIntegrable
+#print axioms CenteredAbelCandidate.centered_deriv_intervalIntegrable
+#check CenteredAbelCandidate.sum_eq_integral_add_frac
+#print axioms CenteredAbelCandidate.sum_eq_integral_add_frac
+#check CenteredAbelCandidate.sum_eq_integral_add_centered
+#print axioms CenteredAbelCandidate.sum_eq_integral_add_centered
+#check CenteredAbelCandidate.centered_eq_uncentered_of_endpoints_zero
+#print axioms CenteredAbelCandidate.centered_eq_uncentered_of_endpoints_zero
+#check InnerAbel.Budgets.power_intervalIntegrable
+#print axioms InnerAbel.Budgets.power_intervalIntegrable
+#check InnerAbel.Budgets.log_power_intervalIntegrable
+#print axioms InnerAbel.Budgets.log_power_intervalIntegrable
+#check InnerAbel.Budgets.inverse_half_eq
+#print axioms InnerAbel.Budgets.inverse_half_eq
+#check InnerAbel.Budgets.power_integral
+#print axioms InnerAbel.Budgets.power_integral
+#check InnerAbel.Budgets.log_power_primitive
+#print axioms InnerAbel.Budgets.log_power_primitive
+#check InnerAbel.Budgets.log_power_integral
+#print axioms InnerAbel.Budgets.log_power_integral
+#check InnerAbel.Budgets.power_integral_le_two
+#print axioms InnerAbel.Budgets.power_integral_le_two
+#check InnerAbel.Budgets.log_power_integral_le_four
+#print axioms InnerAbel.Budgets.log_power_integral_le_four
+#check InnerAbel.Budgets.centered_fract_abs_le
+#print axioms InnerAbel.Budgets.centered_fract_abs_le
+#check InnerAbel.Budgets.centered_error_bound
+#print axioms InnerAbel.Budgets.centered_error_bound
+#check InnerAbel.Budgets.error_budget_le_twelve
+#print axioms InnerAbel.Budgets.error_budget_le_twelve
+#check InnerAbelSourceCandidate.logProfile_deriv_eq
+#print axioms InnerAbelSourceCandidate.logProfile_deriv_eq
+#check InnerAbelSourceCandidate.logProfile_deriv_abs_le_density
+#print axioms InnerAbelSourceCandidate.logProfile_deriv_abs_le_density
+#check InnerAbelSourceCandidate.logProfile_deriv_abs_le
+#print axioms InnerAbelSourceCandidate.logProfile_deriv_abs_le
+#check InnerAbelSourceCandidate.logProfile_eq_literal
+#print axioms InnerAbelSourceCandidate.logProfile_eq_literal
+#check InnerAbelSourceCandidate.logProfile_at_one
+#print axioms InnerAbelSourceCandidate.logProfile_at_one
+#check InnerAbelSourceCandidate.unit_plainProfile_hasDerivAt
+#print axioms InnerAbelSourceCandidate.unit_plainProfile_hasDerivAt
+#check InnerAbelSourceCandidate.unit_plainProfile_deriv_abs_le
+#print axioms InnerAbelSourceCandidate.unit_plainProfile_deriv_abs_le
+#check InnerAbelSourceCandidate.actual_derivative_energy_coarse
+#print axioms InnerAbelSourceCandidate.actual_derivative_energy_coarse
+#check InnerAbelSourceCandidate.plainProfile_scale_identity
+#print axioms InnerAbelSourceCandidate.plainProfile_scale_identity
+#check InnerAbelSourceCandidate.logProfile_hasDerivAt_chain
+#print axioms InnerAbelSourceCandidate.logProfile_hasDerivAt_chain
+#check InnerAbel.Actual.innerCutoff
+#print axioms InnerAbel.Actual.innerCutoff
+#check InnerAbel.Actual.innerRemainder
+#print axioms InnerAbel.Actual.innerRemainder
+#check InnerAbel.Actual.innerRemainder_integrand_intervalIntegrable
+#print axioms InnerAbel.Actual.innerRemainder_integrand_intervalIntegrable
+#check InnerAbel.Actual.innerCutoff_ge_one
+#print axioms InnerAbel.Actual.innerCutoff_ge_one
+#check InnerAbel.Actual.innerCutoff_mul
+#print axioms InnerAbel.Actual.innerCutoff_mul
+#check InnerAbel.Actual.innerCutoff_log
+#print axioms InnerAbel.Actual.innerCutoff_log
+#check InnerAbel.Actual.logProfile_at_cutoff
+#print axioms InnerAbel.Actual.logProfile_at_cutoff
+#check InnerAbel.Actual.innerRemainder_eq_uncentered
+#print axioms InnerAbel.Actual.innerRemainder_eq_uncentered
+#check InnerAbel.Actual.innerRemainder_abs_le
+#print axioms InnerAbel.Actual.innerRemainder_abs_le
+#check InnerAbel.Actual.innerRemainder_abs_le_twelve
+#print axioms InnerAbel.Actual.innerRemainder_abs_le_twelve
+#check InnerAbel.Actual.inner_sum_eq
+#print axioms InnerAbel.Actual.inner_sum_eq
+#check InnerAbel.Actual.inner_sum_abel_estimate
+#print axioms InnerAbel.Actual.inner_sum_abel_estimate
+#check InnerAbel.Actual.innerCutoff_log_ge_scale
+#print axioms InnerAbel.Actual.innerCutoff_log_ge_scale
+#check InnerAbel.Actual.innerRemainder_abs_le_logarithmic
+#print axioms InnerAbel.Actual.innerRemainder_abs_le_logarithmic
+#check InnerAbel.Actual.innerRemainder_at_support_equality
+#print axioms InnerAbel.Actual.innerRemainder_at_support_equality
+#check InnerAbel.Outer.innerIntegral
+#print axioms InnerAbel.Outer.innerIntegral
+#check InnerAbel.Outer.outerIntegral
+#print axioms InnerAbel.Outer.outerIntegral
+#check InnerAbel.Outer.outerRemainder
+#print axioms InnerAbel.Outer.outerRemainder
+#check InnerAbel.Outer.admissibleK_eq_innerInventory
+#print axioms InnerAbel.Outer.admissibleK_eq_innerInventory
+#check InnerAbel.Outer.sourceKernelTerm_eq_innerWeight
+#print axioms InnerAbel.Outer.sourceKernelTerm_eq_innerWeight
+#check InnerAbel.Outer.sourceMobiusKernel_eq_inner_sum
+#print axioms InnerAbel.Outer.sourceMobiusKernel_eq_inner_sum
+#check InnerAbel.Outer.divisor_le_sourceUpper
+#print axioms InnerAbel.Outer.divisor_le_sourceUpper
+#check InnerAbel.Outer.sourceMobiusKernel_eq_integral_add_error
+#print axioms InnerAbel.Outer.sourceMobiusKernel_eq_integral_add_error
+#check InnerAbel.Outer.mertensResidual_eq_outer_integral_add_error
+#print axioms InnerAbel.Outer.mertensResidual_eq_outer_integral_add_error
+#check InnerAbel.Outer.outerRemainder_abs_le_budget
+#print axioms InnerAbel.Outer.outerRemainder_abs_le_budget
+#check InnerAbel.Outer.outerRemainder_abs_le_twelve
+#print axioms InnerAbel.Outer.outerRemainder_abs_le_twelve
+#check InnerAbel.Outer.inverse_sqrt_sum_le
+#print axioms InnerAbel.Outer.inverse_sqrt_sum_le
+#check InnerAbel.Outer.outerRemainder_abs_le_sqrt
+#print axioms InnerAbel.Outer.outerRemainder_abs_le_sqrt
+#check InnerAbel.Outer.short_outerRemainder_abs_le
+#print axioms InnerAbel.Outer.short_outerRemainder_abs_le
+#check InnerAbel.Outer.full_outerRemainder_abs_le
+#print axioms InnerAbel.Outer.full_outerRemainder_abs_le
+#check CenteredAbelRegressions.negative_axis_counterexample
+#print axioms CenteredAbelRegressions.negative_axis_counterexample
+#check CenteredAbelRegressions.lower_endpoint_regression
+#print axioms CenteredAbelRegressions.lower_endpoint_regression
+#check CenteredAbelRegressions.constant_uncentered_regression
+#print axioms CenteredAbelRegressions.constant_uncentered_regression
+#check CenteredAbelRegressions.constant_centered_regression
+#print axioms CenteredAbelRegressions.constant_centered_regression
+#check CenteredAbelRegressions.integer_terminal_regression
+#print axioms CenteredAbelRegressions.integer_terminal_regression
+#check CenteredAbelRegressions.linear_noninteger_regression
+#print axioms CenteredAbelRegressions.linear_noninteger_regression
+#check CenteredAbelRegressions.positive_terminal_formula_false
+#print axioms CenteredAbelRegressions.positive_terminal_formula_false
+#check CenteredAbelRegressions.zero_endpoint_polynomial_regression
+#print axioms CenteredAbelRegressions.zero_endpoint_polynomial_regression
+#check CenteredAbelRegressions.sum_Icc_eq_range_zero_branch
+#print axioms CenteredAbelRegressions.sum_Icc_eq_range_zero_branch
+#check InnerAbel.ActualRegressions.source_minimal_scale
+#print axioms InnerAbel.ActualRegressions.source_minimal_scale
+#check InnerAbel.ActualRegressions.source_noninteger_cutoff
+#print axioms InnerAbel.ActualRegressions.source_noninteger_cutoff
+#check InnerAbel.ActualRegressions.source_noninteger_error
+#print axioms InnerAbel.ActualRegressions.source_noninteger_error
+#check InnerAbel.ActualRegressions.source_closed_touching_atom
+#print axioms InnerAbel.ActualRegressions.source_closed_touching_atom
+#check InnerAbel.ActualRegressions.source_integer_terminal_zero
+#print axioms InnerAbel.ActualRegressions.source_integer_terminal_zero
+#check InnerAbel.ActualRegressions.missing_chain_factor_counterexample
+#print axioms InnerAbel.ActualRegressions.missing_chain_factor_counterexample
+#check InnerAbel.ActualRegressions.spatial_parameter_derivatives_differ
+#print axioms InnerAbel.ActualRegressions.spatial_parameter_derivatives_differ
+#check InnerAbel.ActualRegressions.centering_requires_nonzero_endpoint
+#print axioms InnerAbel.ActualRegressions.centering_requires_nonzero_endpoint
+#check InnerAbel.ActualRegressions.integer_scales_do_not_cover_reals
+#print axioms InnerAbel.ActualRegressions.integer_scales_do_not_cover_reals
+```

@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceActualPhysicalPeriodicPrimitiveIndependentTypes.Variant11682653a3daf10073e6be2640c492dd0091029fca5d34000102321afb0ab58f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5e66f619038f5d676c3325f694a41ef66f77833b` · SHA-256 `a6daefb2dc13067e4297cd37c21ac042ef30d7e64f09b7c8bcb6ce368f157e5f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceActualPhysicalPeriodicPrimitive.Variant67201e16a10fb2d5032acaa85ba2cd2d4f3f6bd7f2d3bcecd1a8b1b38fa25c1f","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"67201e16a10fb2d5032acaa85ba2cd2d4f3f6bd7f2d3bcecd1a8b1b38fa25c1f","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceActualPhysicalPeriodicPrimitive.Variant67201e16a10fb2d5032acaa85ba2cd2d4f3f6bd7f2d3bcecd1a8b1b38fa25c1f","mathematical_subject":"Analysis.Calculus","original_sha256":"67201e16a10fb2d5032acaa85ba2cd2d4f3f6bd7f2d3bcecd1a8b1b38fa25c1f","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-critical-complement/independent-physical-periodic-20261006T230658Z/SourceActualPhysicalPeriodicPrimitive/SourceActualPhysicalPeriodicPrimitiveIndependentTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPhysicalPeriodicPrimitive
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceActualPhysicalPeriodicPrimitive.Variant67201e16a10fb2d5032acaa85ba2cd2d4f3f6bd7f2d3bcecd1a8b1b38fa25c1f
+
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive
+#check actualPhysicalPeriodicDensity
+#print axioms actualPhysicalPeriodicDensity
+#check actualPhysicalPeriodicPrimitive
+#print axioms actualPhysicalPeriodicPrimitive
+#check actualDivisorPeriodicResidual_abs_le_half
+#print axioms actualDivisorPeriodicResidual_abs_le_half
+#check actualPhysicalPeriodicDensity_measurable
+#print axioms actualPhysicalPeriodicDensity_measurable
+#check actualPhysicalPeriodicDensity_abs_le
+#print axioms actualPhysicalPeriodicDensity_abs_le
+#check actualPhysicalPeriodicDensity_intervalIntegrable
+#print axioms actualPhysicalPeriodicDensity_intervalIntegrable
+#check actualPhysicalPeriodicDensity_eq_original_prefix
+#print axioms actualPhysicalPeriodicDensity_eq_original_prefix
+#check actualPhysicalPeriodicDensity_at_integer
+#print axioms actualPhysicalPeriodicDensity_at_integer
+#check actualPhysicalPeriodicPrimitive_eq_affine
+#print axioms actualPhysicalPeriodicPrimitive_eq_affine
+#check actualPhysicalPeriodicPrimitive_abs_le
+#print axioms actualPhysicalPeriodicPrimitive_abs_le
+#check actualPhysicalPeriodicPrimitive_absolutelyContinuous
+#print axioms actualPhysicalPeriodicPrimitive_absolutelyContinuous
+#check actualPhysicalPeriodicPrimitive_ae_hasDerivAt
+#print axioms actualPhysicalPeriodicPrimitive_ae_hasDerivAt
+#check actual_physical_prefix_abel
+#print axioms actual_physical_prefix_abel
+#check actual_physical_prefix_abel_abs_le
+#print axioms actual_physical_prefix_abel_abs_le
+```

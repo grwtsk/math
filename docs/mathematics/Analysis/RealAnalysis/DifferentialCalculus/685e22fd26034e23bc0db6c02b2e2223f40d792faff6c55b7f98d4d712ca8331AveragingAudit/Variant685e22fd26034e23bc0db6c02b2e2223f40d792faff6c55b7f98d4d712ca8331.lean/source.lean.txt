@@ -1,0 +1,146 @@
+import FormalResearch.PositiveAtlas.FiniteConditionalExpectation
+import FormalResearch.PositiveAtlas.FiniteCovarianceProjection
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mass
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mass
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mass_pos
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mass_pos
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mass_ne_zero
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mass_ne_zero
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mean
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mean
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.FibreConstant
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.FibreConstant
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mass_mul_mean
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mass_mul_mean
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mean_constant
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mean_constant
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mean_add
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mean_add
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.mean_smul
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.mean_smul
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_apply
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_apply
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_fibreConstant
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_fibreConstant
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_eq_self
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_eq_self
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_eq_self_iff
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_eq_self_iff
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_idempotent
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_idempotent
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.weighted_residual_sum
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.weighted_residual_sum
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.positiveForm
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.positiveForm
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.fibreConstant_orthogonal_residual
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.fibreConstant_orthogonal_residual
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.projector
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.projector
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.form_eq_zero_iff
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.form_eq_zero_iff
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.quadratic_decomposition
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.quadratic_decomposition
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_contraction
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_contraction
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.residual_zero_iff
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.residual_zero_iff
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_self_adjoint
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_self_adjoint
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.approximation_decomposition
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.approximation_decomposition
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_minimizes
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_minimizes
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.minimal_error_iff
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.minimal_error_iff
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.fibreConstant_iff_factors
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.fibreConstant_iff_factors
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_coarser
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.averaging_coarser
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.coarser_averaging
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.coarser_averaging
+
+#print FormalResearch.PositiveAtlas.FiniteFibreWeights.coarser_error_monotone
+#print axioms FormalResearch.PositiveAtlas.FiniteFibreWeights.coarser_error_monotone
+
+#print FormalResearch.PositiveAtlas.FiniteAveragingExamples.unequalWeights
+#print axioms FormalResearch.PositiveAtlas.FiniteAveragingExamples.unequalWeights
+
+#print FormalResearch.PositiveAtlas.FiniteAveragingExamples.varying
+#print axioms FormalResearch.PositiveAtlas.FiniteAveragingExamples.varying
+
+#print FormalResearch.PositiveAtlas.FiniteAveragingExamples.unequal_average
+#print axioms FormalResearch.PositiveAtlas.FiniteAveragingExamples.unequal_average
+
+#print FormalResearch.PositiveAtlas.FiniteAveragingExamples.unequal_residual_energy
+#print axioms FormalResearch.PositiveAtlas.FiniteAveragingExamples.unequal_residual_energy
+
+#print FormalResearch.PositiveAtlas.FiniteAveragingExamples.varying_not_fixed
+#print axioms FormalResearch.PositiveAtlas.FiniteAveragingExamples.varying_not_fixed
+
+#print FormalResearch.PositiveAtlas.FiniteAveragingExamples.singleton_fibres_retain
+#print axioms FormalResearch.PositiveAtlas.FiniteAveragingExamples.singleton_fibres_retain
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.probabilityFibre
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.probabilityFibre
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.statisticObservable
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.statisticObservable
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.probabilityFibre_mass
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.probabilityFibre_mass
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.averaging_statisticObservable
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.averaging_statisticObservable
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.centeredObservable
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.centeredObservable
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.centeredObservable_apply
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.centeredObservable_apply
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.covariance_eq_residual_pairing
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.covariance_eq_residual_pairing
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.iterated_fderiv_logPartition_eq_residual_pairing
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.iterated_fderiv_logPartition_eq_residual_pairing
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.covariance_null_iff_constant_statistics
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.covariance_null_iff_constant_statistics
+
+#print FormalResearch.PositiveAtlas.FiniteLogAffineFamily.covariance_null_parameter_independent
+#print axioms FormalResearch.PositiveAtlas.FiniteLogAffineFamily.covariance_null_parameter_independent

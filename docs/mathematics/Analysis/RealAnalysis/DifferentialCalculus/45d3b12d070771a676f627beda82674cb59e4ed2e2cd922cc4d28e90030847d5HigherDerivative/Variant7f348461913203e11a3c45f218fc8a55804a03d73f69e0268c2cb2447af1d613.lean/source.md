@@ -1,0 +1,180 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5HigherDerivative.Variant7f348461913203e11a3c45f218fc8a55804a03d73f69e0268c2cb2447af1d613
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6952e30af9f85ba807b223f26b3fde71be8d6866` · SHA-256 `cfb653ba654ec452834358935d8f63450b34141a459f3387bf73320e5afa67ab`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.HasDerivAtThetaGaussianTerm.Variant45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.HasDerivAtThetaGaussianTerm.Variant45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5","mathematical_subject":"Analysis.Calculus","original_sha256":"45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/45/45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5--HigherDerivatives.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaPhiSourceDerivatives
+
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.HasDerivAtThetaGaussianTerm.Variant45d3b12d070771a676f627beda82674cb59e4ed2e2cd922cc4d28e90030847d5
+
+namespace FormalResearch.RiemannHypothesis.ThetaPositiveLift
+open Filter MeasureTheory Set
+open scoped Topology
+noncomputable section
+
+ theorem hasDerivAt_thetaGaussianTerm (k c m : ℕ) (t : ℝ) :
+    HasDerivAt (thetaGaussianTerm k c m)
+      ((c : ℝ) * thetaGaussianTerm k c m t -
+        4 * Real.pi * thetaGaussianTerm (k + 2) (c + 4) m t) t := by
+  have hc := ((hasDerivAt_id t).const_mul (c : ℝ)).exp
+  have h4 := ((hasDerivAt_id t).const_mul (4 : ℝ)).exp
+  have hg := (h4.const_mul (-Real.pi * ((m : ℝ) + 1) ^ 2)).exp
+  have h := hc.mul (hg.const_mul (((m : ℝ) + 1) ^ k))
+  convert! h using 1
+  simp only [thetaGaussianTerm, HurwitzKernelBounds.f_nat, Nat.cast_add, Nat.cast_ofNat,
+    mul_one, pow_add, id_eq]
+  rw [add_mul, Real.exp_add]
+  ring
+
+ theorem hasDerivAt_thetaGaussianSum (k c : ℕ) (t : ℝ) :
+    HasDerivAt (thetaGaussianSum k c)
+      ((c : ℝ) * thetaGaussianSum k c t -
+        4 * Real.pi * thetaGaussianSum (k + 2) (c + 4) t) t := by
+  have hbound := ((thetaGaussianCompactBound_summable k c (t - 1) (t + 1)).mul_left
+    ‖(c : ℝ)‖).add ((thetaGaussianCompactBound_summable (k + 2) (c + 4)
+      (t - 1) (t + 1)).mul_left ‖4 * Real.pi‖)
+  have h := hasDerivAt_tsum_of_isPreconnected hbound
+    isOpen_Ioo (convex_Ioo (t - 1) (t + 1)).isPreconnected
+    (fun m u _ => hasDerivAt_thetaGaussianTerm k c m u)
+    (fun m u hu => (norm_sub_le _ _).trans (by
+      simp only [norm_mul]
+      exact add_le_add
+        (mul_le_mul_of_nonneg_left
+          (thetaGaussianTerm_norm_le_compactBound k c m ⟨hu.1.le, hu.2.le⟩) (norm_nonneg _))
+        (mul_le_mul_of_nonneg_left
+          (thetaGaussianTerm_norm_le_compactBound (k+2) (c+4) m ⟨hu.1.le, hu.2.le⟩)
+          (by positivity))))
+    (show t ∈ Ioo (t-1) (t+1) by constructor <;> linarith)
+    (thetaGaussianTerm_summable k c t) (by constructor <;> linarith)
+  convert! h using 1
+  rw [((thetaGaussianTerm_summable k c t).mul_left (c : ℝ)).tsum_sub
+    ((thetaGaussianTerm_summable (k+2) (c+4) t).mul_left (4 * Real.pi)),
+    tsum_mul_left, tsum_mul_left]
+  rfl
+
+ theorem thetaPhiRawD2_eq_gaussians (t : ℝ) :
+    thetaPhiRawD2 t =
+      (330 * Real.pi ^ 2) * thetaGaussianSum 4 9 t -
+      (75 * Real.pi) * thetaGaussianSum 2 5 t -
+      (224 * Real.pi ^ 3) * thetaGaussianSum 6 13 t +
+      (32 * Real.pi ^ 4) * thetaGaussianSum 8 17 t := by
+  unfold thetaPhiRawD2
+  simp_rw [thetaPhiTermSecondDeriv_eq_gaussians]
+  rw [((((thetaGaussianTerm_summable 4 9 t).mul_left (330 * Real.pi ^ 2)).sub
+      ((thetaGaussianTerm_summable 2 5 t).mul_left (75 * Real.pi))).sub
+      ((thetaGaussianTerm_summable 6 13 t).mul_left (224 * Real.pi ^ 3))).tsum_add
+      ((thetaGaussianTerm_summable 8 17 t).mul_left (32 * Real.pi ^ 4)),
+    (((thetaGaussianTerm_summable 4 9 t).mul_left (330 * Real.pi ^ 2)).sub
+      ((thetaGaussianTerm_summable 2 5 t).mul_left (75 * Real.pi))).tsum_sub
+      ((thetaGaussianTerm_summable 6 13 t).mul_left (224 * Real.pi ^ 3)),
+    ((thetaGaussianTerm_summable 4 9 t).mul_left (330 * Real.pi ^ 2)).tsum_sub
+      ((thetaGaussianTerm_summable 2 5 t).mul_left (75 * Real.pi)),
+    tsum_mul_left, tsum_mul_left, tsum_mul_left, tsum_mul_left]
+  rfl
+
+
+/-- The third source derivative as a finite combination of Gaussian sums. -/
+def thetaPhiRawD3 (t : ℝ) : ℝ :=
+  (3270 * Real.pi ^ 2) * thetaGaussianSum 4 9 t -
+  (375 * Real.pi) * thetaGaussianSum 2 5 t -
+  (4232 * Real.pi ^ 3) * thetaGaussianSum 6 13 t +
+  (1440 * Real.pi ^ 4) * thetaGaussianSum 8 17 t -
+  (128 * Real.pi ^ 5) * thetaGaussianSum 10 21 t
+
+/-- The fourth source derivative as a finite combination of Gaussian sums. -/
+def thetaPhiRawD4 (t : ℝ) : ℝ :=
+  (30930 * Real.pi ^ 2) * thetaGaussianSum 4 9 t -
+  (1875 * Real.pi) * thetaGaussianSum 2 5 t -
+  (68096 * Real.pi ^ 3) * thetaGaussianSum 6 13 t +
+  (41408 * Real.pi ^ 4) * thetaGaussianSum 8 17 t -
+  (8448 * Real.pi ^ 5) * thetaGaussianSum 10 21 t +
+  (512 * Real.pi ^ 6) * thetaGaussianSum 12 25 t
+
+ theorem hasDerivAt_thetaPhiRawD2 (t : ℝ) :
+    HasDerivAt thetaPhiRawD2 (thetaPhiRawD3 t) t := by
+  rw [show thetaPhiRawD2 = fun t =>
+      (330 * Real.pi ^ 2) * thetaGaussianSum 4 9 t -
+      (75 * Real.pi) * thetaGaussianSum 2 5 t -
+      (224 * Real.pi ^ 3) * thetaGaussianSum 6 13 t +
+      (32 * Real.pi ^ 4) * thetaGaussianSum 8 17 t from
+    funext thetaPhiRawD2_eq_gaussians]
+  convert! ((((hasDerivAt_thetaGaussianSum 4 9 t).const_mul (330 * Real.pi ^ 2)).sub
+    ((hasDerivAt_thetaGaussianSum 2 5 t).const_mul (75 * Real.pi))).sub
+    ((hasDerivAt_thetaGaussianSum 6 13 t).const_mul (224 * Real.pi ^ 3))).add
+    ((hasDerivAt_thetaGaussianSum 8 17 t).const_mul (32 * Real.pi ^ 4)) using 1
+  norm_num [thetaPhiRawD3]
+  ring
+
+ theorem hasDerivAt_thetaPhiRawD3 (t : ℝ) :
+    HasDerivAt thetaPhiRawD3 (thetaPhiRawD4 t) t := by
+  unfold thetaPhiRawD3
+  convert! (((((hasDerivAt_thetaGaussianSum 4 9 t).const_mul (3270 * Real.pi ^ 2)).sub
+    ((hasDerivAt_thetaGaussianSum 2 5 t).const_mul (375 * Real.pi))).sub
+    ((hasDerivAt_thetaGaussianSum 6 13 t).const_mul (4232 * Real.pi ^ 3))).add
+    ((hasDerivAt_thetaGaussianSum 8 17 t).const_mul (1440 * Real.pi ^ 4))).sub
+    ((hasDerivAt_thetaGaussianSum 10 21 t).const_mul (128 * Real.pi ^ 5)) using 1
+  norm_num [thetaPhiRawD4]
+  ring
+
+ theorem deriv_deriv_thetaPhi_eq_raw (t : ℝ) :
+    deriv (deriv thetaPhi) t = thetaPhiRawD2 t := by
+  rw [show deriv thetaPhi = thetaPhiRawD1 from funext deriv_thetaPhi_eq_raw]
+  exact (hasDerivAt_thetaPhiRawD1 t).deriv
+
+ theorem hasDerivAt_deriv_deriv_thetaPhi (t : ℝ) :
+    HasDerivAt (deriv (deriv thetaPhi)) (thetaPhiRawD3 t) t := by
+  rw [show deriv (deriv thetaPhi) = thetaPhiRawD2 from funext deriv_deriv_thetaPhi_eq_raw]
+  exact hasDerivAt_thetaPhiRawD2 t
+
+ theorem hasDerivAt_deriv_deriv_deriv_thetaPhi (t : ℝ) :
+    HasDerivAt (deriv (deriv (deriv thetaPhi))) (thetaPhiRawD4 t) t := by
+  rw [show deriv (deriv (deriv thetaPhi)) = thetaPhiRawD3 from
+    funext (fun t => (hasDerivAt_deriv_deriv_thetaPhi t).deriv)]
+  exact hasDerivAt_thetaPhiRawD3 t
+
+
+ theorem thetaGaussianSum_poly_tendsto_atTop (k c p : ℕ) :
+    Tendsto (fun t => thetaGaussianSum k c t * t ^ p) atTop (𝓝 0) := by
+  rw [tendsto_zero_iff_norm_tendsto_zero]
+  apply squeeze_zero' (g := fun t =>
+    (HurwitzKernelBounds.F_nat k 1 (1/2) * (p.factorial : ℝ)) * Real.exp (-t))
+  · exact Filter.Eventually.of_forall (fun _ => norm_nonneg _)
+  · filter_upwards [eventually_ge_atTop ((c : ℝ) + 3)] with t ht
+    exact thetaGaussianSum_poly_norm_le_tail k c p ht
+  · simpa only [mul_zero] using Real.tendsto_exp_neg_atTop_nhds_zero.const_mul
+      (HurwitzKernelBounds.F_nat k 1 (1/2) * (p.factorial : ℝ))
+
+ theorem deriv_thetaPhi_poly_tendsto_atTop (p : ℕ) :
+    Tendsto (fun t => deriv thetaPhi t * t ^ p) atTop (𝓝 0) := by
+  have h := (((thetaGaussianSum_poly_tendsto_atTop 4 9 p).const_mul (30 * Real.pi ^ 2)).sub
+    ((thetaGaussianSum_poly_tendsto_atTop 2 5 p).const_mul (15 * Real.pi))).sub
+    ((thetaGaussianSum_poly_tendsto_atTop 6 13 p).const_mul (8 * Real.pi ^ 3))
+  simp only [mul_zero, sub_zero] at h
+  apply h.congr
+  intro t
+  rw [deriv_thetaPhi_eq_raw, thetaPhiRawD1_eq_gaussians]
+  ring
+
+ theorem deriv_deriv_thetaPhi_poly_integrableOn (p : ℕ) :
+    IntegrableOn (fun t => deriv (deriv thetaPhi) t * t ^ p) (Ici (0 : ℝ)) := by
+  have h := ((((thetaGaussianSum_poly_integrableOn 4 9 p).const_mul (330 * Real.pi ^ 2)).sub
+    ((thetaGaussianSum_poly_integrableOn 2 5 p).const_mul (75 * Real.pi))).sub
+    ((thetaGaussianSum_poly_integrableOn 6 13 p).const_mul (224 * Real.pi ^ 3))).add
+    ((thetaGaussianSum_poly_integrableOn 8 17 p).const_mul (32 * Real.pi ^ 4))
+  apply h.congr
+  filter_upwards [] with t
+  dsimp only [Pi.sub_apply, Pi.add_apply]
+  rw [deriv_deriv_thetaPhi_eq_raw, thetaPhiRawD2_eq_gaussians]
+  ring
+
+end
+end FormalResearch.RiemannHypothesis.ThetaPositiveLift
+```

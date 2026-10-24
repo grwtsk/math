@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.Analysis.FunctionalAnalysis.F99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059AbelAudit.Variantcde5e5f713fcf786eb60df8ab829c1ebba2d44377dda47fef8b1ddbc02af5369
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `16348e4fb35782b8bbb147acab1afd7c98c88678` · SHA-256 `5a72c1f2b4e8e1a672f58dcffa65dd68963a3a1c9abff7f80769a1f99af62113`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.FunctionalAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.FunctionalAnalysis.EstimateWeightedBetaAbel.Variantf99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.EstimateWeightedBetaAbel.Variantf99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059","mathematical_subject":"Foundations.Unclassified","original_sha256":"f99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/f9/f99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059--AbelAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel
+
+namespace GRWTSK.Analysis.FunctionalAnalysis.EstimateWeightedBetaAbel.Variantf99b7460fa67fecfeb49853f72e0aa88bb62f9e039f5538b39a57110047ec059
+
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.universes true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.discrepancyPrefix
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.discrepancyPrefix
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.anchoredCenteredBeta
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.anchoredCenteredBeta
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.anchored_prefix_eq_interval
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.anchored_prefix_eq_interval
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.anchored_prefix_eq_discrepancy
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.anchored_prefix_eq_discrepancy
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.weightedCenteredInterval
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.weightedCenteredInterval
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.abelDiscrepancyMoment
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.abelDiscrepancyMoment
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.weightedCenteredInterval_eq_abel
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaAbel.weightedCenteredInterval_eq_abel
+```

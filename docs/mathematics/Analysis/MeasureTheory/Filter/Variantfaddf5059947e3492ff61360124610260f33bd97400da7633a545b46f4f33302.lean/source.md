@@ -1,0 +1,142 @@
+# Complete source: GRWTSK.Analysis.MeasureTheory.Filter.Variantfaddf5059947e3492ff61360124610260f33bd97400da7633a545b46f4f33302
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `71400e3d798bb8ea53ad3166ceceb01adc7cbf9d` · SHA-256 `8ffd16d9e0f51b00106655ffd8a7c362d5fd4f2d9abaff4267f11ee054f0dcd9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.MeasureTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.MeasureTheory.AeEqBot.Variant70f1d2bd96949f6f7ef7a8df4b82cce965fdb52a9d96956f1020fe4c25b014eb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"70f1d2bd96949f6f7ef7a8df4b82cce965fdb52a9d96956f1020fe4c25b014eb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.MeasureTheory.SourceCorpus.AeEqBot.Variant70f1d2bd96949f6f7ef7a8df4b82cce965fdb52a9d96956f1020fe4c25b014eb","mathematical_subject":"Analysis.MeasureTheory","original_sha256":"70f1d2bd96949f6f7ef7a8df4b82cce965fdb52a9d96956f1020fe4c25b014eb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/MeasureTheory/Measure/Filter.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2017 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Mario Carneiro
+-/
+module
+
+public import Mathlib.MeasureTheory.MeasurableSpace.MeasurablyGenerated
+public import Mathlib.MeasureTheory.Measure.CompleteLattice
+
+/-!
+# Filters related to measures
+
+This file provides some properties of `ae` the filter of sets whose complement has measure `0`.
+Most of these properties are in this file because they either require the module structure
+or the lattice structure of the space of measures.
+
+We also define `cofinite` the filter of sets whose complement has finite measure.
+
+## Tags
+
+measure, almost everywhere, cofinite
+-/
+
+
+namespace GRWTSK.Analysis.MeasureTheory.AeEqBot.Variant70f1d2bd96949f6f7ef7a8df4b82cce965fdb52a9d96956f1020fe4c25b014eb
+
+public section
+
+open Set Filter
+open scoped ENNReal
+
+namespace MeasureTheory
+
+variable {α β : Type*} {mα : MeasurableSpace α} {mβ : MeasurableSpace β}
+  {μ ν : MeasureTheory.Measure α} {s t : Set α}
+
+section AE
+
+open Measure
+
+@[simp]
+theorem ae_eq_bot : ae μ = ⊥ ↔ μ = 0 := by
+  rw [← empty_mem_iff_bot, mem_ae_iff, compl_empty, measure_univ_eq_zero]
+
+@[simp]
+theorem ae_neBot : (ae μ).NeBot ↔ μ ≠ 0 :=
+  neBot_iff.trans (not_congr ae_eq_bot)
+
+instance [NeZero μ] : (ae μ).NeBot := ae_neBot.2 <| NeZero.ne μ
+
+@[simp]
+theorem ae_zero : ae (0 : Measure α) = ⊥ :=
+  ae_eq_bot.2 rfl
+
+@[gcongr, mono]
+theorem ae_mono (h : μ ≤ ν) : ae μ ≤ ae ν :=
+  fun s hs ↦ bot_unique <| (h sᶜ).trans_eq hs
+
+instance : IsMeasurablyGenerated (ae μ) :=
+  ⟨fun _s hs =>
+    let ⟨t, hst, htm, htμ⟩ := exists_measurable_superset_of_null hs
+    ⟨tᶜ, compl_mem_ae_iff.2 htμ, htm.compl, compl_subset_comm.1 hst⟩⟩
+
+protected theorem AEDisjoint.of_le (h : AEDisjoint μ s t) (h' : ν ≤ μ) :
+    AEDisjoint ν s t :=
+  bot_unique <| (h' (s ∩ t)).trans_eq h
+
+theorem NullMeasurableSet.mono (h : NullMeasurableSet s μ) (h' : ν ≤ μ) :
+    NullMeasurableSet s ν := by
+  obtain ⟨t, ht, hst⟩ := h
+  exact ⟨t, ht, hst.filter_mono (ae_mono h')⟩
+
+lemma NullMeasurableSet.smul_measure (h : NullMeasurableSet s μ) (c : ℝ≥0∞) :
+    NullMeasurableSet s (c • μ) := by
+  obtain ⟨t, ht, hst⟩ := h
+  exact ⟨t, ht, hst.filter_mono (ae_smul_measure_le c)⟩
+
+lemma nullMeasurableSet_smul_measure_iff {c : ℝ≥0∞} (hc : c ≠ 0) :
+    NullMeasurableSet s (c • μ) ↔ NullMeasurableSet s μ := by
+  simp only [nullMeasurableSet_iff_eventuallyMeasurableSet, μ.ae_ennreal_smul_measure_eq hc]
+
+theorem _root_.GRWTSK.Analysis.MeasureTheory.AeEqBot.Variant70f1d2bd96949f6f7ef7a8df4b82cce965fdb52a9d96956f1020fe4c25b014eb.AEMeasurable.mono_measure {f : α → β} (h : AEMeasurable f μ) (h' : ν ≤ μ) :
+    AEMeasurable f ν := by
+  obtain ⟨g, hg, hfg⟩ := h
+  exact ⟨g, hg, hfg.filter_mono (ae_mono h')⟩
+
+theorem Measure.measure_support_eq_zero_iff {E : Type*} [Zero E] (μ : Measure α := by volume_tac)
+    {f : α → E} : μ f.support = 0 ↔ f =ᵐ[μ] 0 := by
+  rfl
+
+end AE
+
+section Cofinite
+
+namespace Measure
+
+/-! ### The `cofinite` filter -/
+
+/-- The filter of sets `s` such that `sᶜ` has finite measure. -/
+@[expose]
+def cofinite (μ : Measure α) : Filter α :=
+  comk (μ · < ∞) (by simp) (fun _ ht _ hs ↦ (measure_mono hs).trans_lt ht) fun s hs t ht ↦
+    (measure_union_le s t).trans_lt <| ENNReal.add_lt_top.2 ⟨hs, ht⟩
+
+theorem mem_cofinite : s ∈ μ.cofinite ↔ μ sᶜ < ∞ :=
+  Iff.rfl
+
+theorem compl_mem_cofinite : sᶜ ∈ μ.cofinite ↔ μ s < ∞ := by rw [mem_cofinite, compl_compl]
+
+theorem eventually_cofinite {p : α → Prop} : (∀ᶠ x in μ.cofinite, p x) ↔ μ { x | ¬p x } < ∞ :=
+  Iff.rfl
+
+instance : IsMeasurablyGenerated μ.cofinite where
+  exists_measurable_subset s hs := by
+    refine ⟨(toMeasurable μ sᶜ)ᶜ, ?_, (measurableSet_toMeasurable _ _).compl, ?_⟩
+    · rwa [compl_mem_cofinite, measure_toMeasurable]
+    · rw [compl_subset_comm]
+      apply subset_toMeasurable
+
+theorem cofinite_le_ae : μ.cofinite ≤ ae μ := by
+  intro s hs
+  simp_all [mem_cofinite, mem_ae_iff]
+
+end Measure
+
+end Cofinite
+
+end MeasureTheory
+```

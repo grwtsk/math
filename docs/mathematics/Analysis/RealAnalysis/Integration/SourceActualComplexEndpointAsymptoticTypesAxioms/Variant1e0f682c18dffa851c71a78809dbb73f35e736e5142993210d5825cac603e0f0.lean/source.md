@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.SourceActualComplexEndpointAsymptoticTypesAxioms.Variant1e0f682c18dffa851c71a78809dbb73f35e736e5142993210d5825cac603e0f0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c5e7fe52022d66e4281105ea6ea54d02f01a7639` · SHA-256 `1e0f682c18dffa851c71a78809dbb73f35e736e5142993210d5825cac603e0f0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualComplexEndpointAsymptotic
+set_option linter.style.header false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+open FormalResearch.RiemannHypothesis.SourceActualComplexEndpointAsymptotic
+#check actualEndpointExtension
+#print axioms actualEndpointExtension
+#check actualComplexEndpointIntegrand
+#print axioms actualComplexEndpointIntegrand
+#check actualLeadingComplexCoefficient
+#print axioms actualLeadingComplexCoefficient
+#check actualEndpointMajorant_integrable
+#print axioms actualEndpointMajorant_integrable
+#check actualComplexEndpointIntegrand_norm_le
+#print axioms actualComplexEndpointIntegrand_norm_le
+#check actualComplexEndpointIntegrand_aestronglyMeasurable
+#print axioms actualComplexEndpointIntegrand_aestronglyMeasurable
+#check actualComplexEndpointIntegrand_integrable
+#print axioms actualComplexEndpointIntegrand_integrable
+#check actualComplexEndpointIntegrand_tendsto
+#print axioms actualComplexEndpointIntegrand_tendsto
+#check actualLeadingComplexCoefficient_integrable
+#print axioms actualLeadingComplexCoefficient_integrable
+#check actualComplexEndpoint_integral_tendsto
+#print axioms actualComplexEndpoint_integral_tendsto
+#check actualSourceComplexTransform
+#print axioms actualSourceComplexTransform
+#check actualSourceComplexTransform_intervalIntegrable
+#print axioms actualSourceComplexTransform_intervalIntegrable
+#check actualComplexEndpoint_integral_eq_interval
+#print axioms actualComplexEndpoint_integral_eq_interval
+#check actualSourceComplexTransform_normalized_eq_endpoint
+#print axioms actualSourceComplexTransform_normalized_eq_endpoint
+#check actualSourceComplexTransform_normalized_tendsto
+#print axioms actualSourceComplexTransform_normalized_tendsto
+```

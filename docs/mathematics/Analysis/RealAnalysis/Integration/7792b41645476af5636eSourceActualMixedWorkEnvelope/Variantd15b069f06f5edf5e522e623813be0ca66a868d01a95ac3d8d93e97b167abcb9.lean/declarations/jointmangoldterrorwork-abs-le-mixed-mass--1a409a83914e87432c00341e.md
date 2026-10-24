@@ -1,0 +1,155 @@
+# jointMangoldtErrorWork_abs_le_mixed_mass
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f749da7a-a879-d34e-f3b4-68bbce4b07bb",
+  "kind": "theorem",
+  "lexical_name": "jointMangoldtErrorWork_abs_le_mixed_mass",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "jointmangoldterrorwork-abs-le-mixed-mass--1a409a83914e87432c00341e",
+  "source": {
+    "blob": "e72383cf78b6b20ee76f0118d4f4940524979c65",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 292,
+    "line": 219,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/7792b41645476af5636eSourceActualMixedWorkEnvelope/Variantd15b069f06f5edf5e522e623813be0ca66a868d01a95ac3d8d93e97b167abcb9.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1a409a83914e87432c00341e03827d806d8ae03b801f8f335e8fa6fa527bfd39",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/7792b41645476af5636eSourceActualMixedWorkEnvelope/Variantd15b069f06f5edf5e522e623813be0ca66a868d01a95ac3d8d93e97b167abcb9.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f749da7a-a879-d34e-f3b4-68bbce4b07bb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 219–292.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem jointMangoldtErrorWork_abs_le_mixed_mass (A : ℝ) (hA : 1 ≤ A) :
+    |jointMangoldtErrorWork A| ≤ (162826 / (7623 * A ^ 2) + 1 / 4) *
+      actualErrorExpMass A *
+        (∑ k ∈ Finset.Ico (vaughanCutoff A + 1)
+          (sourceKernelCutoff A / (vaughanCutoff A + 1)),
+          |∑ n ∈ Finset.Ioc (vaughanCutoff A) k, centeredBeta (vaughanCutoff A) n| *
+            (∫ u in (k : ℝ)..((k : ℝ) + 1), 1 / (u * Real.sqrt u))) := by
+  have hp : 0 < A := by linarith
+  let U := vaughanCutoff A
+  let N := sourceKernelCutoff A
+  let s := Finset.Ico (U + 1) (N / (U + 1))
+  let B : ℕ → ℝ := fun k => ∑ n ∈ Finset.Ioc U k, centeredBeta U n
+  let l := Real.log (U : ℝ)
+  let b := Real.log (N : ℝ)
+  let c := 162826 / (7623 * A ^ 2) + (1 / 4 : ℝ)
+  have hpos : ∀ k ∈ s, 0 < (k : ℝ) := by
+    intro k hk
+    have hk0 : 0 < k := by have := (Finset.mem_Ico.mp hk).1; omega
+    exact_mod_cast hk0
+  have hUN := vaughanCutoff_le_sourceKernelCutoff A hA
+  have hU0 : 0 < (U : ℝ) := by
+    exact_mod_cast (by have := vaughanCutoff_pos A hA; dsimp only [U]; omega : 0 < U)
+  have hlb : l ≤ b := Real.log_le_log hU0 (by exact_mod_cast hUN)
+  have hd (t : ℝ) : deriv (jointMangoldtTestProfile A) t =
+      ∑ k ∈ s, B k * (sourceColumnTimeDeriv A t (k : ℝ) -
+        sourceColumnTimeDeriv A t ((k : ℝ) + 1)) := by
+    have h : HasDerivAt (fun t : ℝ => ∑ k ∈ s,
+        B k * (sourceColumn A (k : ℝ) t - sourceColumn A ((k : ℝ) + 1) t))
+        (∑ k ∈ s, B k * (sourceColumnTimeDeriv A t (k : ℝ) -
+          sourceColumnTimeDeriv A t ((k : ℝ) + 1))) t := by
+      apply HasDerivAt.fun_sum
+      intro k _
+      exact ((sourceColumn_hasDerivAt hp (k : ℝ) t).sub
+        (sourceColumn_hasDerivAt hp ((k : ℝ) + 1) t)).const_mul (B k)
+    convert h.deriv using 1
+    congr 2
+    funext z
+    simp only [jointMangoldtTestProfile, sourceColumn, U, N, s, B, Nat.cast_add, Nat.cast_one]
+  have hf : (fun t => mangoldtLogError t * deriv (jointMangoldtTestProfile A) t) =
+      (fun t : ℝ => ∑ k ∈ s, B k * (mangoldtLogError t *
+        (sourceColumnTimeDeriv A t (k : ℝ) - sourceColumnTimeDeriv A t ((k : ℝ) + 1)))) := by
+    funext t
+    rw [hd, Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro k _
+    ring
+  have he : jointMangoldtErrorWork A = ∑ k ∈ s, B k *
+      (∫ t in l..b, mangoldtLogError t *
+        (sourceColumnTimeDeriv A t (k : ℝ) - sourceColumnTimeDeriv A t ((k : ℝ) + 1))) := by
+    unfold jointMangoldtErrorWork
+    rw [hf, intervalIntegral.integral_finsetSum (fun (k : ℕ) _ =>
+      (errorColumn_integrable hp l b (k : ℝ) hlb).const_mul (B k))]
+    simp_rw [intervalIntegral.integral_const_mul]
+  rw [he]
+  calc
+    _ ≤ ∑ k ∈ s, |B k * (∫ t in l..b, mangoldtLogError t *
+        (sourceColumnTimeDeriv A t (k : ℝ) - sourceColumnTimeDeriv A t ((k : ℝ) + 1)))| :=
+      Finset.abs_sum_le_sum_abs _ _
+    _ ≤ ∑ k ∈ s, |B k| * (c * actualErrorExpMass A * cellMass (k : ℝ)) := by
+      apply Finset.sum_le_sum
+      intro k hk
+      rw [abs_mul]
+      exact mul_le_mul_of_nonneg_left
+        (errorColumn_work_abs_le hA (hpos k hk) l b hlb) (abs_nonneg _)
+    _ = _ := by
+      rw [Finset.mul_sum]
+      apply Finset.sum_congr rfl
+      intro k _
+      change |B k| * (c * actualErrorExpMass A * cellMass (k : ℝ)) =
+        c * actualErrorExpMass A * (|B k| * cellMass (k : ℝ))
+      ring
+
+end
+end FormalResearch.RiemannHypothesis.SourceActualMixedWorkEnvelope
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/7792b41645476af5636eSourceActualMixedWorkEnvelope/Variantd15b069f06f5edf5e522e623813be0ca66a868d01a95ac3d8d93e97b167abcb9.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/7792b41645476af5636eSourceActualMixedWorkEnvelope/Variantd15b069f06f5edf5e522e623813be0ca66a868d01a95ac3d8d93e97b167abcb9.lean#L219).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e72383cf78b6b20ee76f0118d4f4940524979c65` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

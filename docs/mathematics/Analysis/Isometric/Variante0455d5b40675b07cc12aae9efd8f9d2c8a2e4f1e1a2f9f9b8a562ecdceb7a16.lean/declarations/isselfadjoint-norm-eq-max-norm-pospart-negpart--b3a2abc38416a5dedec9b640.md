@@ -1,0 +1,94 @@
+# IsSelfAdjoint.norm_eq_max_norm_posPart_negPart
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:b32af638-16c6-a65e-c75b-bbc43e6d2870",
+  "kind": "lemma",
+  "lexical_name": "IsSelfAdjoint.norm_eq_max_norm_posPart_negPart",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isselfadjoint-norm-eq-max-norm-pospart-negpart--b3a2abc38416a5dedec9b640",
+  "source": {
+    "blob": "705398b780979d378b6db688503250ed4e714516",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 61,
+    "line": 49,
+    "path": "GRWTSK/Analysis/Isometric/Variante0455d5b40675b07cc12aae9efd8f9d2c8a2e4f1e1a2f9f9b8a562ecdceb7a16.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b3a2abc38416a5dedec9b6400de9606b80bf9e62c20e88efee5f20dafdc0923f",
+  "verification": {
+    "reference": "docs/verification/Analysis/Isometric/Variante0455d5b40675b07cc12aae9efd8f9d2c8a2e4f1e1a2f9f9b8a562ecdceb7a16.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b32af638-16c6-a65e-c75b-bbc43e6d2870`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 49–61.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma IsSelfAdjoint.norm_eq_max_norm_posPart_negPart (a : A) (ha : IsSelfAdjoint a := by cfc_tac) :
+    ‖a‖ = max ‖a⁺‖ ‖a⁻‖ := by
+  refine le_antisymm ?_ <| max_le (norm_posPart_le a) (norm_negPart_le a)
+  conv_lhs => rw [← cfcₙ_id' ℝ a]
+  rw [norm_cfcₙ_le_iff ..]
+  intro x hx
+  obtain (hx' | hx') := le_total 0 x
+  · apply le_max_of_le_left
+    refine le_of_eq_of_le ?_ <| norm_apply_le_norm_cfcₙ _ a hx
+    rw [posPart_eq_self.mpr hx']
+  · apply le_max_of_le_right
+    refine le_of_eq_of_le ?_ <| norm_apply_le_norm_cfcₙ _ a hx
+    rw [negPart_eq_neg.mpr hx', norm_neg]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Analysis/Isometric/Variante0455d5b40675b07cc12aae9efd8f9d2c8a2e4f1e1a2f9f9b8a562ecdceb7a16.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/Isometric/Variante0455d5b40675b07cc12aae9efd8f9d2c8a2e4f1e1a2f9f9b8a562ecdceb7a16.lean#L49).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `705398b780979d378b6db688503250ed4e714516` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

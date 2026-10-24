@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualMixedKernelFirstColumnChallengeAuditTypes.Variant6d319008b301e9ddc6529fee2360e47a25a84c5a03b69a856a9fcbd236b2cf97
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4b06c041600a4884b8aad432e2ba627552e8f67f` · SHA-256 `6d319008b301e9ddc6529fee2360e47a25a84c5a03b69a856a9fcbd236b2cf97`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualMixedKernelFirstColumnChallenge
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16IndependentChallengeNext.actualMixedColumnCoefficient
+#print axioms RH16IndependentChallengeNext.actualMixedColumnCoefficient
+#check RH16IndependentChallengeNext.actualMixedTimeColumn
+#print axioms RH16IndependentChallengeNext.actualMixedTimeColumn
+#check RH16IndependentChallengeNext.actualMixedColumnDensity
+#print axioms RH16IndependentChallengeNext.actualMixedColumnDensity
+#check RH16IndependentChallengeNext.actualMixedTimeColumn_hasDerivAt
+#print axioms RH16IndependentChallengeNext.actualMixedTimeColumn_hasDerivAt
+#check RH16IndependentChallengeNext.actualMixed_firstColumn_shift_bounds
+#print axioms RH16IndependentChallengeNext.actualMixed_firstColumn_shift_bounds
+#check RH16IndependentChallengeNext.actualMixed_firstColumn_coefficient_upper
+#print axioms RH16IndependentChallengeNext.actualMixed_firstColumn_coefficient_upper
+#check RH16IndependentChallengeNext.actualMixed_firstColumn_coefficient_abs_lower
+#print axioms RH16IndependentChallengeNext.actualMixed_firstColumn_coefficient_abs_lower
+#check RH16IndependentChallengeNext.actualMixed_firstColumn_density_upper
+#print axioms RH16IndependentChallengeNext.actualMixed_firstColumn_density_upper
+```

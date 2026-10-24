@@ -1,0 +1,25 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.SourceActualXiPositiveBlockAuditPackageTypes.Variantd9f2e3b26316da49c564daef84de45ac2634a77baa674335021ba8a2e0b49768
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `65b5a2e7c01bbdec5eef95450d12165626af6a38` · SHA-256 `d9f2e3b26316da49c564daef84de45ac2634a77baa674335021ba8a2e0b49768`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiPositiveBlock
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check RH16ActualXiPositiveBlock.actualTransformedXiBlockDensity
+#print axioms RH16ActualXiPositiveBlock.actualTransformedXiBlockDensity
+#check RH16ActualXiPositiveBlock.blockMargin
+#print axioms RH16ActualXiPositiveBlock.blockMargin
+#check RH16ActualXiPositiveBlock.actual_transformed_kernel_negative
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_kernel_negative
+#check RH16ActualXiPositiveBlock.actual_transformed_density_lower
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_density_lower
+#check RH16ActualXiPositiveBlock.actual_transformed_density_intervalIntegrable
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_density_intervalIntegrable
+#check RH16ActualXiPositiveBlock.blockMargin_pos
+#print axioms RH16ActualXiPositiveBlock.blockMargin_pos
+#check RH16ActualXiPositiveBlock.actual_transformed_block_integral_lower
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_block_integral_lower
+```

@@ -1,0 +1,141 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceActualF7TailAdapterAudit.Variantc40d13f6a1a0272e247ce200e7a5df25ce5723abef4d5159c340088ee55afd47
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `68dd1a434bb7a5075e062239fd768bfb4f6b9f19` · SHA-256 `3ab733912ea7d39a9d1151c55d71484b3689690be7551858c677b3fad784fad3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceActualF7TailAdapter.Varianta05502298f44ef4caeb8dfcc240d418f0809ed4fb82a2aefa8ffb6ed3399ba06","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a05502298f44ef4caeb8dfcc240d418f0809ed4fb82a2aefa8ffb6ed3399ba06","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceActualF7TailAdapter.Varianta05502298f44ef4caeb8dfcc240d418f0809ed4fb82a2aefa8ffb6ed3399ba06","mathematical_subject":"Analysis.Calculus","original_sha256":"a05502298f44ef4caeb8dfcc240d418f0809ed4fb82a2aefa8ffb6ed3399ba06","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-f7/adapter/SourceActualF7TailAdapterAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualF7TailAdapter
+
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceActualF7TailAdapter.Varianta05502298f44ef4caeb8dfcc240d418f0809ed4fb82a2aefa8ffb6ed3399ba06
+
+open FormalResearch.RiemannHypothesis.SourceDerivativeEnergy
+open FormalResearch.RiemannHypothesis.SourceCorrelationEnergy
+open FormalResearch.RiemannHypothesis.SourceCorrelationCurvature
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimateSourceMobiusDerivative
+open FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.all true
+
+#check RH16ActualF7.physicalXiDensity
+#print RH16ActualF7.physicalXiDensity
+#print axioms RH16ActualF7.physicalXiDensity
+
+#check RH16ActualF7.actualF7
+#print RH16ActualF7.actualF7
+#print axioms RH16ActualF7.actualF7
+
+#check RH16ActualF7.timeXiDensity
+#print RH16ActualF7.timeXiDensity
+#print axioms RH16ActualF7.timeXiDensity
+
+#check RH16ActualF7.minusCorrelationWeight
+#print RH16ActualF7.minusCorrelationWeight
+#print axioms RH16ActualF7.minusCorrelationWeight
+
+#check RH16ActualF7.physicalXiDensity_exp_mul
+#print RH16ActualF7.physicalXiDensity_exp_mul
+#print axioms RH16ActualF7.physicalXiDensity_exp_mul
+
+#check RH16ActualF7.actualF7_eq_time_primitive
+#print RH16ActualF7.actualF7_eq_time_primitive
+#print axioms RH16ActualF7.actualF7_eq_time_primitive
+
+#check RH16ActualF7.actualF7_at_log_seven
+#print RH16ActualF7.actualF7_at_log_seven
+#print axioms RH16ActualF7.actualF7_at_log_seven
+
+#check RH16ActualF7.physicalXiDensity_intervalIntegrable
+#print RH16ActualF7.physicalXiDensity_intervalIntegrable
+#print axioms RH16ActualF7.physicalXiDensity_intervalIntegrable
+
+#check RH16ActualF7.timeXiDensity_intervalIntegrable
+#print RH16ActualF7.timeXiDensity_intervalIntegrable
+#print axioms RH16ActualF7.timeXiDensity_intervalIntegrable
+
+#check RH16ActualF7.actualF7_absolutelyContinuous
+#print RH16ActualF7.actualF7_absolutelyContinuous
+#print axioms RH16ActualF7.actualF7_absolutelyContinuous
+
+#check RH16ActualF7.actualF7_ae_hasDerivAt
+#print RH16ActualF7.actualF7_ae_hasDerivAt
+#print axioms RH16ActualF7.actualF7_ae_hasDerivAt
+
+#check RH16ActualF7.minusCorrelationWeight_contDiff
+#print RH16ActualF7.minusCorrelationWeight_contDiff
+#print axioms RH16ActualF7.minusCorrelationWeight_contDiff
+
+#check RH16ActualF7.minusCorrelationWeight_hasDerivAt
+#print RH16ActualF7.minusCorrelationWeight_hasDerivAt
+#print axioms RH16ActualF7.minusCorrelationWeight_hasDerivAt
+
+#check RH16ActualF7.minusCorrelationWeight_at_upper
+#print RH16ActualF7.minusCorrelationWeight_at_upper
+#print axioms RH16ActualF7.minusCorrelationWeight_at_upper
+
+#check RH16ActualF7.actual_transformed_density_exp_mul
+#print RH16ActualF7.actual_transformed_density_exp_mul
+#print axioms RH16ActualF7.actual_transformed_density_exp_mul
+
+#check RH16ActualF7.completeXiTail_eq_time_integral
+#print RH16ActualF7.completeXiTail_eq_time_integral
+#print axioms RH16ActualF7.completeXiTail_eq_time_integral
+
+#check RH16ActualF7.completeXiTail_eq_neg_F7_integral
+#print RH16ActualF7.completeXiTail_eq_neg_F7_integral
+#print axioms RH16ActualF7.completeXiTail_eq_neg_F7_integral
+
+#check RH16ActualF7.completeXiTail_intervalIntegrable
+#print RH16ActualF7.completeXiTail_intervalIntegrable
+#print axioms RH16ActualF7.completeXiTail_intervalIntegrable
+
+#check RH16ActualF7.actualF7_curvature_intervalIntegrable
+#print RH16ActualF7.actualF7_curvature_intervalIntegrable
+#print axioms RH16ActualF7.actualF7_curvature_intervalIntegrable
+
+#check RH16ActualF7.actual_derivative_energy_normalization
+#print RH16ActualF7.actual_derivative_energy_normalization
+#print axioms RH16ActualF7.actual_derivative_energy_normalization
+
+#check RH16ActualF7.actual_physical_derivative_bounds
+#print RH16ActualF7.actual_physical_derivative_bounds
+#print axioms RH16ActualF7.actual_physical_derivative_bounds
+
+#check RH16ActualF7.actual_physical_upper_traces
+#print RH16ActualF7.actual_physical_upper_traces
+#print axioms RH16ActualF7.actual_physical_upper_traces
+
+#check actual_derivative_energy_eq
+#print actual_derivative_energy_eq
+#print axioms actual_derivative_energy_eq
+
+#check sourceCorrelation_deriv_abs_le_five_div
+#print sourceCorrelation_deriv_abs_le_five_div
+#print axioms sourceCorrelation_deriv_abs_le_five_div
+
+#check sourceCorrelation_second_deriv_abs_le_coefficient
+#print sourceCorrelation_second_deriv_abs_le_coefficient
+#print axioms sourceCorrelation_second_deriv_abs_le_coefficient
+
+#check sourceCorrelation_upper_endpoint
+#print sourceCorrelation_upper_endpoint
+#print axioms sourceCorrelation_upper_endpoint
+
+#check sourceCorrelation_deriv_zero_of_two_mul_le
+#print sourceCorrelation_deriv_zero_of_two_mul_le
+#print axioms sourceCorrelation_deriv_zero_of_two_mul_le
+
+#check shiftedActualChebyshev_mul_intervalIntegrable
+#print shiftedActualChebyshev_mul_intervalIntegrable
+#print axioms shiftedActualChebyshev_mul_intervalIntegrable
+```

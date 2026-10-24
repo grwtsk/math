@@ -1,0 +1,123 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.09cbb6c5eeefc7448f04SourceActualFactorialMellinTransport.Varianta5ce75b02f9a0775056856d089f35e8cb87e964d868bf0a5126c5f176749972d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a2537f2e17289328377ee6642115b7147c22ccea` · SHA-256 `a5ce75b02f9a0775056856d089f35e8cb87e964d868bf0a5126c5f176749972d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFactorialMellinCancellation
+
+/-!
+The actual signed finite Moebius half-moment is transported into the same
+factorial defect present in the genuine complementary source. Both-end L1
+precedes finite integral exchange. No Moebius or Psi upper witness is assumed.
+Research direction: grwtsk contributors. Formal development: OpenAI Codex.
+-/
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport
+open MeasureTheory Set
+open scoped BigOperators
+open SourceFactorialMellinCancellation SourceActualFactorialTailDecomposition
+open SourceFullPositiveKappa SourceStrictComplementaryAbel SourceStrictComplementaryLocalization
+open SourcePairing
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimateVaughanSource EstimateMobiusSplit EstimateMertensAbel
+noncomputable section
+
+private theorem scaled_factorial_density {d x : ℝ} (hd : 0 < d) (hx : 0 < x) :
+    factorialLogDefect (x / d) * x ^ (-(3 : ℝ) / 2) =
+      d ^ (-(3 : ℝ) / 2) * factorialMellinWeight (x * d⁻¹) := by
+  have hxdiv : 0 < x / d := div_pos hx hd
+  have hxde : x = d * (x / d) := by field_simp
+  have hp : x ^ (-(3 : ℝ) / 2) =
+      d ^ (-(3 : ℝ) / 2) * (x / d) ^ (-(3 : ℝ) / 2) := by
+    conv_lhs => rw [hxde]
+    exact Real.mul_rpow hd.le hxdiv.le
+  unfold factorialMellinWeight
+  rw [hp, ← div_eq_mul_inv]
+  ring
+
+theorem scaledFactorialMellin_integrable {d : ℝ} (hd : 0 < d) :
+    IntegrableOn (fun x => factorialLogDefect (x / d) * x ^ (-(3 : ℝ) / 2))
+      (Ioi (0 : ℝ)) := by
+  have hi : IntegrableOn (fun x => factorialMellinWeight (x * d⁻¹)) (Ioi (0 : ℝ)) := by
+    apply (integrableOn_Ioi_comp_mul_right_iff factorialMellinWeight 0 (inv_pos.mpr hd)).mpr
+    simpa using factorialMellinWeight_integrable
+  have hii : IntegrableOn
+      (fun x => d ^ (-(3 : ℝ) / 2) * factorialMellinWeight (x * d⁻¹)) (Ioi (0 : ℝ)) :=
+    hi.const_mul _
+  apply hii.congr_fun
+  · intro x hx
+    exact (scaled_factorial_density hd hx).symm
+  · exact measurableSet_Ioi
+
+theorem scaledFactorialMellin_integral {d : ℝ} (hd : 0 < d) :
+    (∫ x in Ioi (0 : ℝ), factorialLogDefect (x / d) * x ^ (-(3 : ℝ) / 2)) =
+      2 * fullPositiveKappa 1 / Real.sqrt d := by
+  rw [setIntegral_congr_fun measurableSet_Ioi
+    (fun x hx => scaled_factorial_density hd hx), integral_const_mul,
+    integral_comp_mul_right_Ioi factorialMellinWeight 0 (inv_pos.mpr hd)]
+  simp only [zero_mul, inv_inv, smul_eq_mul]
+  have hp : d ^ (-(3 : ℝ) / 2) * d = (Real.sqrt d)⁻¹ := by
+    rw [Real.sqrt_eq_rpow, ← Real.rpow_neg hd.le]
+    calc
+      d ^ (-(3 : ℝ) / 2) * d = d ^ (-(3 : ℝ) / 2) * d ^ (1 : ℝ) := by
+        rw [Real.rpow_one]
+      _ = d ^ (-(3 : ℝ) / 2 + 1) := (Real.rpow_add hd _ _).symm
+      _ = _ := by norm_num
+  have hm : (∫ x in Ioi (0 : ℝ), factorialMellinWeight x) = 2 * fullPositiveKappa 1 := by
+    linarith [fullPositiveKappa_one_eq_factorial_mellin]
+  rw [← mul_assoc, hp, hm]
+  ring
+
+/-- The genuine finite factorial inventory has full positive-axis Mellin L1. -/
+theorem shortFactorialMellin_integrable (U : ℕ) :
+    IntegrableOn (fun x => shortFactorialDefect U x * x ^ (-(3 : ℝ) / 2))
+      (Ioi (0 : ℝ)) := by
+  unfold shortFactorialDefect
+  simp_rw [Finset.sum_mul]
+  apply integrable_finsetSum
+  intro d hd
+  have hdpos : 0 < (d : ℝ) := by
+    exact_mod_cast (by have := (Finset.mem_Icc.mp hd).1; omega : 0 < d)
+  simpa only [mul_assoc] using (scaledFactorialMellin_integrable hdpos).const_mul
+    (realMoebius d)
+
+/-- All actual Moebius signs and the complete closed cutoff survive finite Mellin exchange. -/
+theorem shortFactorialMellin_integral (U : ℕ) :
+    (∫ x in Ioi (0 : ℝ), shortFactorialDefect U x * x ^ (-(3 : ℝ) / 2)) =
+      2 * fullPositiveKappa 1 *
+        (∑ d ∈ Finset.Icc 1 U, realMoebius d / Real.sqrt (d : ℝ)) := by
+  unfold shortFactorialDefect
+  simp_rw [Finset.sum_mul]
+  rw [integral_finsetSum]
+  · simp_rw [mul_assoc, integral_const_mul]
+    simp_rw [Finset.mul_sum]
+    apply Finset.sum_congr rfl
+    intro d hd
+    have hdpos : 0 < (d : ℝ) := by
+      exact_mod_cast (by have := (Finset.mem_Icc.mp hd).1; omega : 0 < d)
+    rw [scaledFactorialMellin_integral hdpos]
+    ring
+  · intro d hd
+    have hdpos : 0 < (d : ℝ) := by
+      exact_mod_cast (by have := (Finset.mem_Icc.mp hd).1; omega : 0 < d)
+    simpa only [mul_assoc] using (scaledFactorialMellin_integrable hdpos).const_mul
+      (realMoebius d)
+
+/-- The actual first-kappa signed half inventory is the exact factorial-defect moment. -/
+theorem fullKappa_signed_half_inventory_eq_factorial_integral (U : ℕ) :
+    fullPositiveKappa 1 *
+        (∑ d ∈ Finset.Icc 1 U, realMoebius d / Real.sqrt (d : ℝ)) =
+      ∫ x in Ioi (0 : ℝ), (1 / 2 : ℝ) * shortFactorialDefect U x *
+        x ^ (-(3 : ℝ) / 2) := by
+  rw [show (fun x => (1 / 2 : ℝ) * shortFactorialDefect U x * x ^ (-(3 : ℝ) / 2)) =
+    fun x => (1 / 2 : ℝ) * (shortFactorialDefect U x * x ^ (-(3 : ℝ) / 2)) by
+      funext x; ring]
+  rw [integral_const_mul, shortFactorialMellin_integral]
+  ring
+
+end
+end FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport
+```

@@ -1,0 +1,108 @@
+# traceNorm_smul_Ez_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:7c5ba65f-c2c4-92cc-c0d2-7d3944458951",
+  "kind": "theorem",
+  "lexical_name": "traceNorm_smul_Ez_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "tracenorm-smul-ez-le--654ff95dc3accca5d1c7ca47",
+  "source": {
+    "blob": "2b4f18d0facc79b76677a7ad506b0a698a7fc21b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 457,
+    "line": 431,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/Tail/Variant204950604152478e899858b7445220c21700e83b5ad3e38095e5aa7d40fa5485.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:654ff95dc3accca5d1c7ca47e9b16b9529d8f3dfde33799bcb95e4df2ab00572",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/Tail/Variant204950604152478e899858b7445220c21700e83b5ad3e38095e5aa7d40fa5485.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:7c5ba65f-c2c4-92cc-c0d2-7d3944458951`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 431–457.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem traceNorm_smul_Ez_le {κ : ℝ} (hκ : 0 ≤ κ)
+    (hM : (((κ : ℝ) : ℂ) • Z.Ez P T).IsHermitian) :
+    traceNorm hM ≤ κ * (P.L T * theta0 A₀ H.K T) := by
+  have hsum := H.hasSum_Ez
+  have hS := H.summable_tail.hasSum
+  refine le_trans ?_ (mul_le_mul_of_nonneg_left H.tsum_tail_le hκ)
+  apply traceNorm_le_of_hasSum_vecMulVec hM
+    (fun x : {ρ : Z.carrier // ρ ∉ H.sA} => κ * (Z.mult (x : Z.carrier) : ℝ))
+    (fun x => by positivity)
+    (fun x : {ρ : Z.carrier // ρ ∉ H.sA} => uvec P T (x : Z.carrier))
+  · have := hS.mul_left κ
+    simpa only [mul_assoc] using this
+  · have := hsum.const_smul ((κ : ℝ) : ℂ)
+    simpa only [smul_smul, Complex.ofReal_mul] using this
+
+end TailHyp
+
+/-! ### Proposition [prop:tail] -/
+
+/-- **Proposition [prop:tail]** for the concrete E := G − A of Zeta23/Defs.lean.
+With θ₀ := 4A₀C₁²X^{1/2}log(4T)/D₀² (= theta0 A₀ (e^{L/4}C₁) T):
+(T1) every eigenvalue of Ẽ = E/L has |λᵢ(Ẽ)| ≤ θ₀ ("‖Ẽ‖ ≤ θ₀", the hypothesis shape of
+RHLinalg.weyl_posIndexAbove_le); also ‖Ẽ‖₁ ≤ θ₀;
+(T2) ‖Ê‖₁ ≤ θ₀/(aL) for Ê = E/(aL²) ("Moreover the trace norm satisfies ‖Ê‖₁ ≤ θ₀/(aL)";
+the further "≤ 2θ₀/L" is a ≥ 1/2, Zeta23.Params.half_le_a).
+Hypotheses: T ≥ T₀ (:= 300, explicit), L ≥ 2, the local count (PaperInputs.RvM.local),
+[eq:hfbound] for φ (Taper), a > 0, and Hermitian-ness of Ẽ, Ê. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/Tail/Variant204950604152478e899858b7445220c21700e83b5ad3e38095e5aa7d40fa5485.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/Tail/Variant204950604152478e899858b7445220c21700e83b5ad3e38095e5aa7d40fa5485.lean#L431).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2b4f18d0facc79b76677a7ad506b0a698a7fc21b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

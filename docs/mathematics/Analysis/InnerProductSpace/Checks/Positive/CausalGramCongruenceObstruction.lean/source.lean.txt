@@ -1,0 +1,15 @@
+import GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction
+
+#print axioms finite_contact_square_congruence_ne_source
+#print axioms original_inventory_square_congruence_ne_source
+#print axioms prescribed_horizon_square_congruence_obstruction
+
+#check finite_contact_square_congruence_ne_source
+#check original_inventory_square_congruence_ne_source
+#check prescribed_horizon_square_congruence_obstruction
+
+end GRWTSK.Analysis.InnerProductSpace.CausalGramCongruenceObstruction

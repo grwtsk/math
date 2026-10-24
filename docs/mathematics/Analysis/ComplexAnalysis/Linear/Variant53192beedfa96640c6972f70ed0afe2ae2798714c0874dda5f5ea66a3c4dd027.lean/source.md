@@ -1,0 +1,167 @@
+# Complete source: GRWTSK.Analysis.ComplexAnalysis.Linear.Variant53192beedfa96640c6972f70ed0afe2ae2798714c0874dda5f5ea66a3c4dd027
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `30d7d02c4a329b7ecc66aa96e4f11b0c8659e383` · SHA-256 `10a7279501db06d39b80cec1445ad23e1afc510ebed620ec8d6f48e655e7c7d6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.ComplexAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.ComplexAnalysis.FpowerSeries.Variant2535d2af6031a1d3d4061318b22d2d7f0a0f65483dbc4c2fac154b5844d90f00","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2535d2af6031a1d3d4061318b22d2d7f0a0f65483dbc4c2fac154b5844d90f00","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.ComplexAnalysis.SourceCorpus.FpowerSeries.Variant2535d2af6031a1d3d4061318b22d2d7f0a0f65483dbc4c2fac154b5844d90f00","mathematical_subject":"Analysis.ComplexAnalysis","original_sha256":"2535d2af6031a1d3d4061318b22d2d7f0a0f65483dbc4c2fac154b5844d90f00","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Analysis/Analytic/Linear.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Yury G. Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury G. Kudryashov
+-/
+import Mathlib.Analysis.Analytic.Basic
+
+
+namespace GRWTSK.Analysis.ComplexAnalysis.FpowerSeries.Variant2535d2af6031a1d3d4061318b22d2d7f0a0f65483dbc4c2fac154b5844d90f00
+
+#align_import analysis.analytic.linear from "leanprover-community/mathlib"@"f2ce6086713c78a7f880485f7917ea547a215982"
+
+/-!
+# Linear functions are analytic
+
+In this file we prove that a `ContinuousLinearMap` defines an analytic function with
+the formal power series `f x = f a + f (x - a)`.
+-/
+
+
+variable {𝕜 : Type*} [NontriviallyNormedField 𝕜] {E : Type*} [NormedAddCommGroup E]
+  [NormedSpace 𝕜 E] {F : Type*} [NormedAddCommGroup F] [NormedSpace 𝕜 F] {G : Type*}
+  [NormedAddCommGroup G] [NormedSpace 𝕜 G]
+
+open scoped Topology Classical BigOperators NNReal ENNReal
+
+open Set Filter Asymptotics
+
+noncomputable section
+
+namespace ContinuousLinearMap
+
+/-- Formal power series of a continuous linear map `f : E →L[𝕜] F` at `x : E`:
+`f y = f x + f (y - x)`. -/
+def fpowerSeries (f : E →L[𝕜] F) (x : E) : FormalMultilinearSeries 𝕜 E F
+  | 0 => ContinuousMultilinearMap.curry0 𝕜 _ (f x)
+  | 1 => (continuousMultilinearCurryFin1 𝕜 E F).symm f
+  | _ => 0
+#align continuous_linear_map.fpower_series ContinuousLinearMap.fpowerSeries
+
+theorem fpower_series_apply_zero (f : E →L[𝕜] F) (x : E) :
+    f.fpowerSeries x 0 = ContinuousMultilinearMap.curry0 𝕜 _ (f x) :=
+  rfl
+
+theorem fpower_series_apply_one (f : E →L[𝕜] F) (x : E) :
+    f.fpowerSeries x 1 = (continuousMultilinearCurryFin1 𝕜 E F).symm f :=
+  rfl
+
+theorem fpowerSeries_apply_add_two (f : E →L[𝕜] F) (x : E) (n : ℕ) : f.fpowerSeries x (n + 2) = 0 :=
+  rfl
+#align continuous_linear_map.fpower_series_apply_add_two ContinuousLinearMap.fpowerSeries_apply_add_two
+
+attribute
+  [eqns fpower_series_apply_zero fpower_series_apply_one fpowerSeries_apply_add_two] fpowerSeries
+attribute [simp] fpowerSeries
+
+@[simp]
+theorem fpowerSeries_radius (f : E →L[𝕜] F) (x : E) : (f.fpowerSeries x).radius = ∞ :=
+  (f.fpowerSeries x).radius_eq_top_of_forall_image_add_eq_zero 2 fun _ => rfl
+#align continuous_linear_map.fpower_series_radius ContinuousLinearMap.fpowerSeries_radius
+
+protected theorem hasFPowerSeriesOnBall (f : E →L[𝕜] F) (x : E) :
+    HasFPowerSeriesOnBall f (f.fpowerSeries x) x ∞ :=
+  { r_le := by simp
+    r_pos := ENNReal.coe_lt_top
+    hasSum := fun _ => (hasSum_nat_add_iff' 2).1 <| by
+      simp [Finset.sum_range_succ, ← sub_sub, hasSum_zero, fpowerSeries] }
+#align continuous_linear_map.has_fpower_series_on_ball ContinuousLinearMap.hasFPowerSeriesOnBall
+
+protected theorem hasFPowerSeriesAt (f : E →L[𝕜] F) (x : E) :
+    HasFPowerSeriesAt f (f.fpowerSeries x) x :=
+  ⟨∞, f.hasFPowerSeriesOnBall x⟩
+#align continuous_linear_map.has_fpower_series_at ContinuousLinearMap.hasFPowerSeriesAt
+
+protected theorem analyticAt (f : E →L[𝕜] F) (x : E) : AnalyticAt 𝕜 f x :=
+  (f.hasFPowerSeriesAt x).analyticAt
+#align continuous_linear_map.analytic_at ContinuousLinearMap.analyticAt
+
+/-- Reinterpret a bilinear map `f : E →L[𝕜] F →L[𝕜] G` as a multilinear map
+`(E × F) [×2]→L[𝕜] G`. This multilinear map is the second term in the formal
+multilinear series expansion of `uncurry f`. It is given by
+`f.uncurryBilinear ![(x, y), (x', y')] = f x y'`. -/
+def uncurryBilinear (f : E →L[𝕜] F →L[𝕜] G) : E × F[×2]→L[𝕜] G :=
+  @ContinuousLinearMap.uncurryLeft 𝕜 1 (fun _ => E × F) G _ _ _ _ _ <|
+    (↑(continuousMultilinearCurryFin1 𝕜 (E × F) G).symm : (E × F →L[𝕜] G) →L[𝕜] _).comp <|
+      f.bilinearComp (fst _ _ _) (snd _ _ _)
+#align continuous_linear_map.uncurry_bilinear ContinuousLinearMap.uncurryBilinear
+
+@[simp]
+theorem uncurryBilinear_apply (f : E →L[𝕜] F →L[𝕜] G) (m : Fin 2 → E × F) :
+    f.uncurryBilinear m = f (m 0).1 (m 1).2 :=
+  rfl
+#align continuous_linear_map.uncurry_bilinear_apply ContinuousLinearMap.uncurryBilinear_apply
+
+/-- Formal multilinear series expansion of a bilinear function `f : E →L[𝕜] F →L[𝕜] G`. -/
+def fpowerSeriesBilinear (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) : FormalMultilinearSeries 𝕜 (E × F) G
+  | 0 => ContinuousMultilinearMap.curry0 𝕜 _ (f x.1 x.2)
+  | 1 => (continuousMultilinearCurryFin1 𝕜 (E × F) G).symm (f.deriv₂ x)
+  | 2 => f.uncurryBilinear
+  | _ => 0
+#align continuous_linear_map.fpower_series_bilinear ContinuousLinearMap.fpowerSeriesBilinear
+
+theorem fpowerSeriesBilinear_apply_zero (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    fpowerSeriesBilinear f x 0 = ContinuousMultilinearMap.curry0 𝕜 _ (f x.1 x.2) :=
+  rfl
+
+theorem fpowerSeriesBilinear_apply_one (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    fpowerSeriesBilinear f x 1 = (continuousMultilinearCurryFin1 𝕜 (E × F) G).symm (f.deriv₂ x) :=
+  rfl
+
+theorem fpowerSeriesBilinear_apply_two (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    fpowerSeriesBilinear f x 2 = f.uncurryBilinear :=
+  rfl
+
+theorem fpowerSeriesBilinear_apply_add_three (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) (n) :
+    fpowerSeriesBilinear f x (n + 3) = 0 :=
+  rfl
+
+attribute
+  [eqns
+    fpowerSeriesBilinear_apply_zero
+    fpowerSeriesBilinear_apply_one
+    fpowerSeriesBilinear_apply_two
+    fpowerSeriesBilinear_apply_add_three] fpowerSeriesBilinear
+attribute [simp] fpowerSeriesBilinear
+
+@[simp]
+theorem fpowerSeriesBilinear_radius (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    (f.fpowerSeriesBilinear x).radius = ∞ :=
+  (f.fpowerSeriesBilinear x).radius_eq_top_of_forall_image_add_eq_zero 3 fun _ => rfl
+#align continuous_linear_map.fpower_series_bilinear_radius ContinuousLinearMap.fpowerSeriesBilinear_radius
+
+protected theorem hasFPowerSeriesOnBall_bilinear (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    HasFPowerSeriesOnBall (fun x : E × F => f x.1 x.2) (f.fpowerSeriesBilinear x) x ∞ :=
+  { r_le := by simp
+    r_pos := ENNReal.coe_lt_top
+    hasSum := fun _ =>
+      (hasSum_nat_add_iff' 3).1 <| by
+        simp only [Finset.sum_range_succ, Finset.sum_range_one, Prod.fst_add, Prod.snd_add,
+          f.map_add_add]
+        simp [fpowerSeriesBilinear, hasSum_zero] }
+#align continuous_linear_map.has_fpower_series_on_ball_bilinear ContinuousLinearMap.hasFPowerSeriesOnBall_bilinear
+
+protected theorem hasFPowerSeriesAt_bilinear (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    HasFPowerSeriesAt (fun x : E × F => f x.1 x.2) (f.fpowerSeriesBilinear x) x :=
+  ⟨∞, f.hasFPowerSeriesOnBall_bilinear x⟩
+#align continuous_linear_map.has_fpower_series_at_bilinear ContinuousLinearMap.hasFPowerSeriesAt_bilinear
+
+protected theorem analyticAt_bilinear (f : E →L[𝕜] F →L[𝕜] G) (x : E × F) :
+    AnalyticAt 𝕜 (fun x : E × F => f x.1 x.2) x :=
+  (f.hasFPowerSeriesAt_bilinear x).analyticAt
+#align continuous_linear_map.analytic_at_bilinear ContinuousLinearMap.analyticAt_bilinear
+
+end ContinuousLinearMap
+```

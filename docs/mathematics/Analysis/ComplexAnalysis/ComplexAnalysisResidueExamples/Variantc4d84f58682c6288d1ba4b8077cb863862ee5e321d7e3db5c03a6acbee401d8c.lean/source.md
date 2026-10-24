@@ -1,0 +1,80 @@
+# Complete source: GRWTSK.Analysis.ComplexAnalysis.ComplexAnalysisResidueExamples.Variantc4d84f58682c6288d1ba4b8077cb863862ee5e321d7e3db5c03a6acbee401d8c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `20488969545424643d3e5f7240b8e74358ba5653` · SHA-256 `f75dd6bb0616687d5ad5cde18e064c92b30e65e088fd4a1302c28e3ceaf9735e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.ComplexAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.ComplexAnalysis.AnalyticOrderAtSubPow.Variante49c067d4c36a72ba401cc515de978e5441fbc53702abfdb50484a258394f1c5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e49c067d4c36a72ba401cc515de978e5441fbc53702abfdb50484a258394f1c5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.ComplexAnalysis.SourceCorpus.AnalyticOrderAtSubPow.Variante49c067d4c36a72ba401cc515de978e5441fbc53702abfdb50484a258394f1c5","mathematical_subject":"Analysis.ComplexAnalysis","original_sha256":"e49c067d4c36a72ba401cc515de978e5441fbc53702abfdb50484a258394f1c5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:2e628ee6531784ebd1c16c0e/workspace/Audit/ComplexAnalysisResidueExamples.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Surface.Core.ComplexAnalysis.ResidueAPI
+import Mathlib.Tactic
+
+/-!
+# Generic local-residue examples
+
+Two coefficient-free examples exercising the incubating Surface residue API.
+They are submission-gate tests for the prospective mathlib extraction and do
+not mention Dirichlet characters, L-functions, explicit formulas, RH, or GRH.
+-/
+
+
+namespace GRWTSK.Analysis.ComplexAnalysis.AnalyticOrderAtSubPow.Variante49c067d4c36a72ba401cc515de978e5441fbc53702abfdb50484a258394f1c5
+
+open Filter Set
+open scoped Topology
+
+namespace Surface.Audit.ComplexAnalysisResidueExamples
+
+private theorem analyticOrderAt_sub_pow
+    (z : ℂ) (n : ℕ) :
+    analyticOrderAt (fun w : ℂ ↦ (w - z) ^ n) z = n := by
+  have hbase : AnalyticAt ℂ (fun w : ℂ ↦ w - z) z := by
+    fun_prop
+  have hbaseOrder :
+      analyticOrderAt (fun w : ℂ ↦ w - z) z = 1 := by
+    apply hbase.analyticOrderAt_eq_natCast.mpr
+    refine ⟨fun _ ↦ 1, analyticAt_const, one_ne_zero, ?_⟩
+    filter_upwards
+    intro w
+    simp [smul_eq_mul]
+  change analyticOrderAt ((fun w : ℂ ↦ w - z) ^ n) z = n
+  rw [analyticOrderAt_pow hbase, hbaseOrder]
+  simp
+
+/-- The local coefficient of the logarithmic derivative of a pure monomial
+is its exponent. -/
+example (z : ℂ) (n : ℕ) :
+    Surface.Core.ComplexAnalysis.HasResidueCoefficientAt
+      (logDeriv (fun w : ℂ ↦ (w - z) ^ n)) z (n : ℂ) := by
+  apply Surface.Core.ComplexAnalysis.logDeriv_hasResidueCoefficientAt_order
+    (by fun_prop)
+  exact analyticOrderAt_sub_pow z n
+
+/-- Multiplication by the nonvanishing analytic unit `exp` preserves the
+small-circle logarithmic-derivative multiplicity integral. -/
+example (z : ℂ) (n : ℕ) :
+    ∃ R : ℝ, 0 < R ∧
+      ∀ r : ℝ, 0 < r → r < R →
+        Surface.Core.ComplexAnalysis.normalizedResidueCircleIntegral
+          (logDeriv
+            (fun w : ℂ ↦ (w - z) ^ n * Complex.exp w))
+          z r = (n : ℂ) := by
+  have hpow :
+      AnalyticAt ℂ (fun w : ℂ ↦ (w - z) ^ n) z := by
+    fun_prop
+  have hexp : AnalyticAt ℂ Complex.exp z := analyticAt_cexp
+  apply Surface.Core.ComplexAnalysis.logDeriv_smallCircle_normalizedIntegral_eq_order
+    (hf := hpow.mul hexp)
+  change analyticOrderAt
+      ((fun w : ℂ ↦ (w - z) ^ n) * Complex.exp) z = n
+  rw [analyticOrderAt_mul hpow hexp,
+    analyticOrderAt_sub_pow z n,
+    hexp.analyticOrderAt_eq_zero.mpr (Complex.exp_ne_zero z)]
+  simp
+
+end Surface.Audit.ComplexAnalysisResidueExamples
+```

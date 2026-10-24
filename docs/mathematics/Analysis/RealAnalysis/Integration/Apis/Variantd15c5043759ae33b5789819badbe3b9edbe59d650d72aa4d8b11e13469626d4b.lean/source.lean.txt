@@ -1,0 +1,20 @@
+import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
+import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+import Mathlib.MeasureTheory.Function.Floor
+open MeasureTheory Set Real
+#check integrableOn_image_iff_integrableOn_abs_deriv_smul
+#check integral_image_eq_integral_abs_deriv_smul
+#check Real.range_exp
+#check Real.image_exp_univ
+#check integral_add_compl
+#check integral_Iic_add_Ioi
+#check integrableOn_Iio_iff_integrableOn_Iic
+#check MeasureTheory.integrableOn_Ioi_comp_mul_left_iff
+#check Real.Gamma_nat_eq_factorial
+#check Real.rpow_natCast
+#check Real.rpow_exp
+#check integral_comp_neg_Ioi
+#check integral_comp_neg_Iio
+#check integrableOn_comp_neg_iff
+#check IntegrableOn.union
+#check integral_union

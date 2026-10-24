@@ -1,0 +1,101 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.CountKernel.Variant334373bd3e158d1bc18dd6c4a6ec99d763c8a143234946c21e4bedc711f37371
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `793660772c6c93ad115204162fda625cd4925825` · SHA-256 `334373bd3e158d1bc18dd6c4a6ec99d763c8a143234946c21e4bedc711f37371`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import scratch.common_mean_stieltjes_20261004.CountOccurrences
+import Mathlib.Topology.Algebra.InfiniteSum.Real
+
+/-!
+Actual cumulative positive-ordinate occurrence indicator. Its support is finite
+at every real cutoff and every analytic-multiplicity slot contributes exactly
+once. The upper count boundary is closed; the omitted-tail boundary is strict.
+Originating direction, theorem selection, corrections and evaluation:
+grwtsk contributors. Lean construction assistance: OpenAI Codex.
+-/
+set_option autoImplicit false
+noncomputable section
+namespace CommonMeanStieltjes
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroObject
+
+/-- All actual positive-ordinate occurrences, including multiplicity slots. -/
+def PositiveOccurrence := {o : ZeroOccurrence // 0 < (shiftedValue o).im}
+
+def positiveOrdinate (o : PositiveOccurrence) : ℝ := (shiftedValue o.val).im
+
+def positiveClosedCountSet (t : ℝ) : Set PositiveOccurrence :=
+  {o | positiveOrdinate o ≤ t}
+
+def positiveClosedCountKernel (t c : ℝ) (o : PositiveOccurrence) : ℝ :=
+  if positiveOrdinate o ≤ t then c else 0
+
+/-- The nested positive closed window is exactly the previously counted window. -/
+def positiveClosedWindowEquiv (t : ℝ) :
+    positiveClosedCountSet t ≃ PositiveOccurrenceWindow t where
+  toFun o := ⟨o.val.val, ⟨o.val.property, o.property⟩⟩
+  invFun o := ⟨⟨o.val, o.property.1⟩, o.property.2⟩
+  left_inv o := by rcases o with ⟨⟨p, hp⟩, ht⟩; rfl
+  right_inv o := by rcases o with ⟨p, hp⟩; rfl
+
+theorem positive_closed_count_set_finite (t : ℝ) : (positiveClosedCountSet t).Finite := by
+  have : Finite (PositiveOccurrenceWindow t) := positive_occurrence_window_finite t
+  have hf : Finite (positiveClosedCountSet t) :=
+    Finite.of_equiv (PositiveOccurrenceWindow t) (positiveClosedWindowEquiv t).symm
+  exact Set.finite_coe_iff.mp hf
+
+theorem positive_closed_count_kernel_hasFiniteSupport (t c : ℝ) :
+    Function.HasFiniteSupport (positiveClosedCountKernel t c) := by
+  apply (positive_closed_count_set_finite t).subset
+  intro o ho
+  change positiveOrdinate o ≤ t
+  by_contra h
+  change positiveClosedCountKernel t c o ≠ 0 at ho
+  exact ho (by simp only [positiveClosedCountKernel, if_neg h])
+
+theorem positive_closed_count_kernel_summable (t c : ℝ) :
+    Summable (positiveClosedCountKernel t c) :=
+  summable_of_hasFiniteSupport (positive_closed_count_kernel_hasFiniteSupport t c)
+
+/-- An actual cumulative indicator sums to the multiplicity count times c,
+for arbitrary real t and c, including a zero exactly at the upper endpoint. -/
+theorem positive_closed_count_kernel_tsum (t c : ℝ) :
+    (∑' o : PositiveOccurrence, positiveClosedCountKernel t c o) =
+      (Zeta23.Ncount 0 t : ℝ) * c := by
+  classical
+  have hf : Finite (positiveClosedCountSet t) :=
+    (positive_closed_count_set_finite t).to_subtype
+  let : Fintype (positiveClosedCountSet t) := Fintype.ofFinite _
+  have hcard : Nat.card (positiveClosedCountSet t) = Zeta23.Ncount 0 t :=
+    (Nat.card_congr (positiveClosedWindowEquiv t)).trans (positive_occurrence_window_card_eq_count t)
+  have hc : Fintype.card (positiveClosedCountSet t) = Zeta23.Ncount 0 t := by
+    simpa only [Nat.card_eq_fintype_card] using hcard
+  have hi : positiveClosedCountKernel t c = (positiveClosedCountSet t).indicator (fun _ => c) := rfl
+  rw [hi, ← tsum_subtype]
+  simp only [tsum_fintype, Finset.sum_const, Finset.card_univ, nsmul_eq_mul, hc]
+
+/-- The actual strict tail within positive ordinates is the full actual strict
+ordinate tail when T >= 0. Both types retain every analytic occurrence. -/
+def positiveStrictTailEquiv (T : ℝ) (hT : 0 ≤ T) :
+    {o : PositiveOccurrence // T < positiveOrdinate o} ≃
+      {o : ZeroOccurrence // T < (shiftedValue o).im} where
+  toFun o := ⟨o.val.val, o.property⟩
+  invFun o := ⟨⟨o.val, hT.trans_lt o.property⟩, o.property⟩
+  left_inv o := by rcases o with ⟨⟨p, hp⟩, ht⟩; rfl
+  right_inv o := by rcases o with ⟨p, hp⟩; rfl
+
+/-- Strict indicator transport requires no rearrangement or summability premise;
+it is the exact subtype/bijection transport of the same actual summands. -/
+theorem positive_strict_tail_tsum_transport (T : ℝ) (hT : 0 ≤ T) (f : ZeroOccurrence → ℝ) :
+    (∑' o : PositiveOccurrence, if T < positiveOrdinate o then f o.val else 0) =
+      ∑' o : {o : ZeroOccurrence // T < (shiftedValue o).im}, f o.val := by
+  classical
+  have hi : (fun o : PositiveOccurrence => if T < positiveOrdinate o then f o.val else 0) =
+      ({o : PositiveOccurrence | T < positiveOrdinate o} : Set PositiveOccurrence).indicator
+        (fun o => f o.val) := rfl
+  rw [hi, ← tsum_subtype]
+  exact (positiveStrictTailEquiv T hT).tsum_eq (fun o => f o.val)
+
+end CommonMeanStieltjes
+```

@@ -1,0 +1,11 @@
+import scratch.common_mean_20261004.FiveModeEndpointEnvelope
+#check CommonMeanScratch.endpointEnvelope_hasDerivAt
+#print axioms CommonMeanScratch.endpointEnvelope_hasDerivAt
+#check CommonMeanScratch.endpointEnvelopeFirst_hasDerivAt
+#print axioms CommonMeanScratch.endpointEnvelopeFirst_hasDerivAt
+#check CommonMeanScratch.endpointEnvelope_convex
+#print axioms CommonMeanScratch.endpointEnvelope_convex
+#check CommonMeanScratch.endpointEnvelope_le_endpoint_max
+#print axioms CommonMeanScratch.endpointEnvelope_le_endpoint_max
+#check CommonMeanScratch.endpointEnvelope_le_rational_max
+#print axioms CommonMeanScratch.endpointEnvelope_le_rational_max

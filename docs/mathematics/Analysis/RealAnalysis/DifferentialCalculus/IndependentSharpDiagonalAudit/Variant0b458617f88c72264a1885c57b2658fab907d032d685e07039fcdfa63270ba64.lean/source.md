@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.IndependentSharpDiagonalAudit.Variant0b458617f88c72264a1885c57b2658fab907d032d685e07039fcdfa63270ba64
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6129f17e6549a6a9a483ebcec7c676aaabc5e98d` · SHA-256 `0b458617f88c72264a1885c57b2658fab907d032d685e07039fcdfa63270ba64`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceSharpDiagonalTail
+#print RH16SharpDiagonalTail.actual_zero_taylor_tail
+#print axioms RH16SharpDiagonalTail.actual_zero_taylor_tail
+#print RH16SharpDiagonalTail.diagonal_deriv_abs_le_tail
+#print axioms RH16SharpDiagonalTail.diagonal_deriv_abs_le_tail
+#print RH16SharpDiagonalTail.diagonal_variation_le_tail
+#print axioms RH16SharpDiagonalTail.diagonal_variation_le_tail
+#print RH16SharpDiagonalTail.diagonal_short_integral_error_tail
+#print axioms RH16SharpDiagonalTail.diagonal_short_integral_error_tail
+#print RH16SharpDiagonalTail.log_cube_div_square_le
+#print axioms RH16SharpDiagonalTail.log_cube_div_square_le
+#print RH16SharpDiagonalTail.floor_square_short_error_tail
+#print axioms RH16SharpDiagonalTail.floor_square_short_error_tail
+#print RH16SharpDiagonalTail.retainedPrimeDiagonal_tail_error_of_primeLogError
+#print axioms RH16SharpDiagonalTail.retainedPrimeDiagonal_tail_error_of_primeLogError
+#print RH16SharpDiagonalTail.retainedPrimeDiagonal_sharp_tail_error
+#print axioms RH16SharpDiagonalTail.retainedPrimeDiagonal_sharp_tail_error
+#print RH16SharpDiagonalTail.typeTwoDiagonal_tail_error_of_proper_bound
+#print axioms RH16SharpDiagonalTail.typeTwoDiagonal_tail_error_of_proper_bound
+#print RH16SharpDiagonalTail.actual_typeTwoDiagonal_sharp_tail_error
+#print axioms RH16SharpDiagonalTail.actual_typeTwoDiagonal_sharp_tail_error
+```

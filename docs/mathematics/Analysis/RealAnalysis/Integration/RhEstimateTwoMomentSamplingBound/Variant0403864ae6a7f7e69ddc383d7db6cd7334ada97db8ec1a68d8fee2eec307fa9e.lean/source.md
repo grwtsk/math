@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.RhEstimateTwoMomentSamplingBound.Variant0403864ae6a7f7e69ddc383d7db6cd7334ada97db8ec1a68d8fee2eec307fa9e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3e93729147ad2014c184c7bd3c03b4e478839a73` · SHA-256 `11dfca3e89829966887ef31363e7d72cd67f830cbe646ca5e51bd62eb9a91da3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.EstimateTwoMomentSamplingBound.Variantba69552b7b9832f815a9a2736885c654ccc188647397f30bdc87cfbf397ed820","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ba69552b7b9832f815a9a2736885c654ccc188647397f30bdc87cfbf397ed820","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.EstimateTwoMomentSamplingBound.Variantba69552b7b9832f815a9a2736885c654ccc188647397f30bdc87cfbf397ed820","mathematical_subject":"Analysis.Integration","original_sha256":"ba69552b7b9832f815a9a2736885c654ccc188647397f30bdc87cfbf397ed820","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/pr151-repair-20260921T175258Z/candidate-snapshots/c2165bf58cfe7079ba78bd7f98623fb758d0d84525c0918f1eba27105e3dba85/tests/rh_estimate_two_moment_sampling_bound.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.EstimateTwoMomentSamplingBound.Variantba69552b7b9832f815a9a2736885c654ccc188647397f30bdc87cfbf397ed820
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.unit_log_sampling_error_identity
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.finite_log_sampling_error_global
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.logSampling_integral_Ioi_eq_reflected
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.abs_logSampling_integral_Ioi_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.two_moment_sampling_bound
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.two_moment_sampling_bound_sqrt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.two_moment_sampling_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.TwoMomentSamplingCheckpoint :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound.two_moment_sampling_checkpoint
+```

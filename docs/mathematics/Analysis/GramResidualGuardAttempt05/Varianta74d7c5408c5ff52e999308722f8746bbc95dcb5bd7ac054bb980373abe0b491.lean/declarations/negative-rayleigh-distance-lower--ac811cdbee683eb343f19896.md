@@ -1,0 +1,91 @@
+# negative_rayleigh_distance_lower
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:5d369de2-59b6-394a-2c54-9838bbe2a04e",
+  "kind": "theorem",
+  "lexical_name": "negative_rayleigh_distance_lower",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "negative-rayleigh-distance-lower--ac811cdbee683eb343f19896",
+  "source": {
+    "blob": "4f21b4b1e8522af767272ee9515d5195fb6a388d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 128,
+    "line": 119,
+    "path": "GRWTSK/Analysis/GramResidualGuardAttempt05/Varianta74d7c5408c5ff52e999308722f8746bbc95dcb5bd7ac054bb980373abe0b491.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ac811cdbee683eb343f198966598cad4ceb06d5a7a48c7a4d8e0d40e72192ec9",
+  "verification": {
+    "reference": "docs/verification/Analysis/GramResidualGuardAttempt05/Varianta74d7c5408c5ff52e999308722f8746bbc95dcb5bd7ac054bb980373abe0b491.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:5d369de2-59b6-394a-2c54-9838bbe2a04e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 119–128.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem negative_rayleigh_distance_lower (H : E →L[𝕜] E) (u : E) :
+    max 0 (-H.rayleighQuotient u) ≤ positiveDistance H := by
+  unfold positiveDistance
+  apply (Metric.le_infDist (s:={P : E →L[𝕜] E | P.IsPositive})
+    ⟨0,ContinuousLinearMap.isPositive_zero⟩).mpr
+  intro P hP
+  rw [dist_eq_norm]
+  exact max_le (norm_nonneg _) (negative_rayleigh_le_norm H P hP u)
+
+/-- Distance zero means positivity only for the fixed Hermitian/symmetric source. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Analysis/GramResidualGuardAttempt05/Varianta74d7c5408c5ff52e999308722f8746bbc95dcb5bd7ac054bb980373abe0b491.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/GramResidualGuardAttempt05/Varianta74d7c5408c5ff52e999308722f8746bbc95dcb5bd7ac054bb980373abe0b491.lean#L119).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4f21b4b1e8522af767272ee9515d5195fb6a388d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

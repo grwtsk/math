@@ -1,0 +1,163 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.Attempt01.Variant15a8b889af4abed39b29a673929644cd9d32ab28b2707f6800e57c6e199e0810
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6b0148792d7315b9943b2442a6608ea43186af4c` · SHA-256 `15a8b889af4abed39b29a673929644cd9d32ab28b2707f6800e57c6e199e0810`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiComplexMellin
+
+/-!
+The original shifted Chebyshev Mellin tail keeps its complete closed lower
+head at seven, actual gamma constant and continuous pole. Genuine L1 and
+closed Abel summation precede all operator splitting on Re(s)>1.
+Research direction: grwtsk contributors. Formal development: OpenAI Codex.
+-/
+
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven
+open MeasureTheory Set Filter Finset Complex
+open scoped Topology Interval
+open SourceActualPsiComplexMellin RH16ActualPsiNegativeBlock
+noncomputable section
+
+/-- The actual closed lower head includes prime seven and its zero unit coefficient. -/
+def actualClosedMangoldtMellinHeadSeven (s : ℂ) : ℂ :=
+  ∑ n ∈ Icc 0 7, ((ArithmeticFunction.vonMangoldt n : ℝ) : ℂ) * (n : ℂ) ^ (-s)
+
+/-- The literal actual Chebyshev Mellin tail after seven. -/
+def actualPsiComplexMellinTailSeven (s : ℂ) : ℂ :=
+  ∫ y in Ioi (7 : ℝ), (Chebyshev.psi y : ℂ) * (y : ℂ) ^ (-(s + 1))
+
+/-- The original shifted Chebyshev source is preserved in the Mellin tail. -/
+def actualXiComplexMellinTailSeven (s : ℂ) : ℂ :=
+  ∫ y in Ioi (7 : ℝ), (shiftedActualChebyshev y : ℂ) * (y : ℂ) ^ (-(s + 1))
+
+private theorem psi_complex_eq_sum (x : ℝ) :
+    (Chebyshev.psi x : ℂ) =
+      ∑ n ∈ Icc 0 (Nat.floor x), ((ArithmeticFunction.vonMangoldt n : ℝ) : ℂ) := by
+  rw [Chebyshev.psi_eq_sum_Icc, ofReal_sum]
+
+private theorem s_ne_zero {s : ℂ} (hs : 1 < s.re) : s ≠ 0 :=
+  ne_zero_of_re_pos (by linarith)
+
+private theorem positive_cpow_product {s : ℂ} {x : ℝ} (hx : 0 < x) :
+    (x : ℂ) * (x : ℂ) ^ (-(s + 1)) = (x : ℂ) ^ (-s) := by
+  calc
+    _ = (x : ℂ) ^ (1 : ℂ) * (x : ℂ) ^ (-(s + 1)) := by rw [cpow_one]
+    _ = (x : ℂ) ^ (1 + -(s + 1)) := (cpow_add (ofReal_ne_zero.mpr hx.ne') _ _).symm
+    _ = _ := by congr 1; ring
+
+/-- Closed finite Abel retains the lower prime-power inventory and true Psi(7) boundary. -/
+theorem actualPsiMellinLowerSeven_eq_closed_head {s : ℂ} (hs : 1 < s.re) :
+    actualClosedMangoldtMellinHeadSeven s = (Chebyshev.psi 7 : ℂ) * (7 : ℂ) ^ (-s) +
+      s * ∫ y in (1 : ℝ)..7, (Chebyshev.psi y : ℂ) * (y : ℂ) ^ (-(s + 1)) := by
+  let f : ℝ → ℂ := fun x => (x : ℂ) ^ (-s)
+  let c : ℕ → ℂ := fun n => ((ArithmeticFunction.vonMangoldt n : ℝ) : ℂ)
+  have hf (x : ℝ) (hx : x ∈ Set.Icc (1 : ℝ) 7) : DifferentiableAt ℝ f x := by
+    exact differentiableAt_id.ofReal_cpow_const
+      (ne_of_gt (lt_of_lt_of_le (by norm_num) hx.1)) (neg_ne_zero.mpr (s_ne_zero hs))
+  have hi : IntegrableOn (deriv f) (Set.Icc (1 : ℝ) 7) := by
+    exact (integrableOn_Ioi_deriv_ofReal_cpow (by norm_num : (0 : ℝ) < 1 / 2)
+      (by simpa using (show -s.re < 0 by linarith))).mono_set
+        (fun x hx => by linarith [hx.1])
+  have ha := sum_mul_eq_sub_integral_mul₀ c (by simp [c]) (7 : ℝ) hf hi
+  have he : (∫ y in Set.Ioc (1 : ℝ) 7, deriv f y * ∑ n ∈ Icc 0 (Nat.floor y), c n) =
+      -s * ∫ y in (1 : ℝ)..7, (Chebyshev.psi y : ℂ) * (y : ℂ) ^ (-(s + 1)) := by
+    rw [intervalIntegral.integral_of_le (by norm_num : (1 : ℝ) ≤ 7), ← integral_const_mul]
+    apply setIntegral_congr_fun measurableSet_Ioc
+    intro y hy
+    dsimp only [f, c]
+    rw [deriv_ofReal_cpow_const (ne_of_gt (by linarith [hy.1] : 0 < y))
+      (neg_ne_zero.mpr (s_ne_zero hs)), ← psi_complex_eq_sum]
+    rw [show -s - 1 = -(s + 1) by ring]
+    ring
+  rw [he] at ha
+  simp only [Nat.floor_ofNat, f, c] at ha
+  rw [← psi_complex_eq_sum (7 : ℝ)] at ha
+  unfold actualClosedMangoldtMellinHeadSeven
+  simpa only [mul_comm, sub_neg_eq_add] using ha
+
+/-- Genuine actual Psi-tail L1 follows before subtracting the closed finite lower head. -/
+theorem actualPsiComplexMellinTailSeven_integrableOn {s : ℂ} (hs : 1 < s.re) :
+    IntegrableOn (fun y : ℝ => (Chebyshev.psi y : ℂ) * (y : ℂ) ^ (-(s + 1)))
+      (Ioi (7 : ℝ)) :=
+  (actualPsiComplexMellin_integrableOn hs).mono_set (Ioi_subset_Ioi (by norm_num))
+
+/-- The actual prime-seven boundary and full lower head have their exact signed Mellin return. -/
+theorem actualPsiComplexMellinTailSeven_mul_eq {s : ℂ} (hs : 1 < s.re) :
+    s * actualPsiComplexMellinTailSeven s =
+      -deriv riemannZeta s / riemannZeta s - actualClosedMangoldtMellinHeadSeven s +
+        (Chebyshev.psi 7 : ℂ) * (7 : ℂ) ^ (-s) := by
+  have hi := actualPsiComplexMellin_integrableOn hs
+  have he := intervalIntegral.integral_interval_add_Ioi hi
+    (actualPsiComplexMellinTailSeven_integrableOn hs)
+  have hf := actualPsiComplexMellin_mul_eq_neg_zeta_deriv hs
+  unfold actualPsiComplexMellin at hf
+  rw [← he] at hf
+  have hh := actualPsiMellinLowerSeven_eq_closed_head hs
+  unfold actualPsiComplexMellinTailSeven
+  linear_combination hf - hh
+
+/-- Each continuous pole and original gamma sector is genuinely L1 before the shifted split. -/
+theorem actualXiComplexMellinTailSeven_integrableOn {s : ℂ} (hs : 1 < s.re) :
+    IntegrableOn (fun y : ℝ => (shiftedActualChebyshev y : ℂ) * (y : ℂ) ^ (-(s + 1)))
+      (Ioi (7 : ℝ)) := by
+  have hpsi := actualPsiComplexMellinTailSeven_integrableOn hs
+  have hp : IntegrableOn (fun y : ℝ => (y : ℂ) ^ (-s)) (Ioi (7 : ℝ)) :=
+    integrableOn_Ioi_cpow_of_lt (by simpa using (show -s.re < -1 by linarith)) (by norm_num)
+  have hc : IntegrableOn (fun y : ℝ =>
+      ((2 * (Real.eulerMascheroniConstant + 1 - Real.log 2) : ℝ) : ℂ) *
+        (y : ℂ) ^ (-(s + 1))) (Ioi (7 : ℝ)) :=
+    (integrableOn_Ioi_cpow_of_lt
+      (by simpa using (show -(s.re + 1) < -1 by linarith)) (by norm_num)).const_mul _
+  apply ((hpsi.sub hp).add hc).congr_fun _ measurableSet_Ioi
+  intro y hy
+  dsimp only
+  unfold shiftedActualChebyshev
+  push_cast
+  rw [← positive_cpow_product (by linarith [hy] : 0 < y)]
+  ring
+
+/-- The original source Mellin identity retains the gamma term and continuous pole exactly. -/
+theorem actualXiComplexMellinTailSeven_mul_eq {s : ℂ} (hs : 1 < s.re) :
+    s * actualXiComplexMellinTailSeven s =
+      -deriv riemannZeta s / riemannZeta s - actualClosedMangoldtMellinHeadSeven s +
+        ((Chebyshev.psi 7 + 2 * (Real.eulerMascheroniConstant + 1 - Real.log 2) : ℝ) : ℂ) *
+          (7 : ℂ) ^ (-s) - s * (7 : ℂ) ^ (1 - s) / (s - 1) := by
+  let c : ℂ := ((2 * (Real.eulerMascheroniConstant + 1 - Real.log 2) : ℝ) : ℂ)
+  have hpsi := actualPsiComplexMellinTailSeven_integrableOn hs
+  have hp : IntegrableOn (fun y : ℝ => (y : ℂ) ^ (-s)) (Ioi (7 : ℝ)) :=
+    integrableOn_Ioi_cpow_of_lt (by simpa using (show -s.re < -1 by linarith)) (by norm_num)
+  have hc : IntegrableOn (fun y : ℝ => c * (y : ℂ) ^ (-(s + 1))) (Ioi (7 : ℝ)) :=
+    (integrableOn_Ioi_cpow_of_lt
+      (by simpa using (show -(s.re + 1) < -1 by linarith)) (by norm_num)).const_mul c
+  have he : actualXiComplexMellinTailSeven s = actualPsiComplexMellinTailSeven s -
+      (∫ y in Ioi (7 : ℝ), (y : ℂ) ^ (-s)) +
+        c * ∫ y in Ioi (7 : ℝ), (y : ℂ) ^ (-(s + 1)) := by
+    rw [← integral_const_mul, ← integral_sub hpsi hp, ← integral_add (hpsi.sub hp) hc]
+    apply setIntegral_congr_fun measurableSet_Ioi
+    intro y hy
+    dsimp only [actualXiComplexMellinTailSeven, c]
+    unfold shiftedActualChebyshev
+    push_cast
+    rw [← positive_cpow_product (by linarith [hy] : 0 < y)]
+    ring
+  have hps := integral_Ioi_cpow_of_lt
+    (by simpa using (show -s.re < -1 by linarith)) (by norm_num : (0 : ℝ) < 7)
+  have hcs := integral_Ioi_cpow_of_lt
+    (by simpa using (show -(s.re + 1) < -1 by linarith)) (by norm_num : (0 : ℝ) < 7)
+  rw [he, hps, hcs]
+  rw [show -s + 1 = 1 - s by ring, show -(s + 1) + 1 = -s by ring]
+  rw [mul_add, mul_sub, actualPsiComplexMellinTailSeven_mul_eq hs]
+  have hn : s - 1 ≠ 0 := by
+    apply ne_zero_of_re_pos
+    simpa using (show 0 < s.re - 1 by linarith)
+  dsimp only [c]
+  push_cast
+  field_simp [s_ne_zero hs, hn]
+  ring
+
+end
+end FormalResearch.RiemannHypothesis.SourceActualXiMellinSeven
+```

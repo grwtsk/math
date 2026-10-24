@@ -1,0 +1,149 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.LogDeriv.Variante64e6cf46993e775bdda6e3804ff2309375b0a220950da451de4d803e8840ff9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5e7788f47a9d4d33df07a0b9a6b03a8bc9d0ae84` · SHA-256 `46fed3aa055a2fa91da423be4492e2d01bac34c9d441c0f75c1590e198e31438`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.IsOpenMapExp.Variant7a7c358ba10a903bf52fa81d83e08eb637e546f3886af13a2dc9190110892f28","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7a7c358ba10a903bf52fa81d83e08eb637e546f3886af13a2dc9190110892f28","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.IsOpenMapExp.Variant7a7c358ba10a903bf52fa81d83e08eb637e546f3886af13a2dc9190110892f28","mathematical_subject":"Analysis.Calculus","original_sha256":"7a7c358ba10a903bf52fa81d83e08eb637e546f3886af13a2dc9190110892f28","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Analysis/SpecialFunctions/Complex/LogDeriv.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Chris Hughes. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Chris Hughes, Abhimanyu Pallavi Sudhir, Jean Lo, Calle Sönne, Benjamin Davidson
+-/
+module
+
+public import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Deriv
+public import Mathlib.Analysis.Calculus.LogDeriv
+public import Mathlib.Analysis.SpecialFunctions.Complex.Log
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Tactic.Measurability
+
+/-!
+# Differentiability of the complex `log` function
+
+-/
+
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.IsOpenMapExp.Variant7a7c358ba10a903bf52fa81d83e08eb637e546f3886af13a2dc9190110892f28
+
+public section
+
+assert_not_exists IsConformalMap Conformal
+
+open Set
+
+open scoped Real Topology
+
+namespace Complex
+
+theorem isOpenMap_exp : IsOpenMap exp :=
+  isOpenMap_of_hasStrictDerivAt hasStrictDerivAt_exp exp_ne_zero
+
+theorem hasStrictDerivAt_log {x : ℂ} (h : x ∈ slitPlane) : HasStrictDerivAt log x⁻¹ x :=
+  have h0 : x ≠ 0 := slitPlane_ne_zero h
+  expOpenPartialHomeomorph.hasStrictDerivAt_symm h h0 <| by
+    simpa [exp_log h0] using! hasStrictDerivAt_exp (log x)
+
+lemma hasDerivAt_log {z : ℂ} (hz : z ∈ slitPlane) : HasDerivAt log z⁻¹ z :=
+  HasStrictDerivAt.hasDerivAt <| hasStrictDerivAt_log hz
+
+@[fun_prop]
+lemma differentiableAt_log {z : ℂ} (hz : z ∈ slitPlane) : DifferentiableAt ℂ log z :=
+  (hasDerivAt_log hz).differentiableAt
+
+@[fun_prop]
+theorem hasStrictFDerivAt_log_real {x : ℂ} (h : x ∈ slitPlane) :
+    HasStrictFDerivAt log (x⁻¹ • (1 : ℂ →L[ℝ] ℂ)) x :=
+  (hasStrictDerivAt_log h).complexToReal_fderiv
+
+theorem contDiffAt_log {x : ℂ} (h : x ∈ slitPlane) {n : WithTop ℕ∞} : ContDiffAt ℂ n log x :=
+  expOpenPartialHomeomorph.contDiffAt_symm_deriv (exp_ne_zero <| log x) h (hasDerivAt_exp _)
+    contDiff_exp.contDiffAt
+
+theorem deriv_log {x : ℂ} (h : x ∈ slitPlane) : deriv log x = x⁻¹ :=
+  (hasDerivAt_log h).deriv
+
+end Complex
+
+section LogDeriv
+
+open Complex
+
+open scoped Topology
+
+variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℂ E]
+
+theorem HasStrictFDerivAt.clog {f : E → ℂ} {f' : StrongDual ℂ E} {x : E}
+    (h₁ : HasStrictFDerivAt f f' x) (h₂ : f x ∈ slitPlane) :
+    HasStrictFDerivAt (fun t => log (f t)) ((f x)⁻¹ • f') x :=
+  (hasStrictDerivAt_log h₂).comp_hasStrictFDerivAt x h₁
+
+theorem HasStrictDerivAt.clog {f : ℂ → ℂ} {f' x : ℂ} (h₁ : HasStrictDerivAt f f' x)
+    (h₂ : f x ∈ slitPlane) : HasStrictDerivAt (fun t => log (f t)) (f' / f x) x := by
+  rw [div_eq_inv_mul]; exact (hasStrictDerivAt_log h₂).comp x h₁
+
+theorem HasStrictDerivAt.clog_real {f : ℝ → ℂ} {x : ℝ} {f' : ℂ} (h₁ : HasStrictDerivAt f f' x)
+    (h₂ : f x ∈ slitPlane) : HasStrictDerivAt (fun t => log (f t)) (f' / f x) x := by
+  simpa only [div_eq_inv_mul] using! (hasStrictFDerivAt_log_real h₂).comp_hasStrictDerivAt x h₁
+
+theorem HasFDerivAt.clog {f : E → ℂ} {f' : StrongDual ℂ E} {x : E} (h₁ : HasFDerivAt f f' x)
+    (h₂ : f x ∈ slitPlane) : HasFDerivAt (fun t => log (f t)) ((f x)⁻¹ • f') x :=
+  (hasStrictDerivAt_log h₂).hasDerivAt.comp_hasFDerivAt x h₁
+
+theorem HasDerivAt.clog {f : ℂ → ℂ} {f' x : ℂ} (h₁ : HasDerivAt f f' x)
+    (h₂ : f x ∈ slitPlane) : HasDerivAt (fun t => log (f t)) (f' / f x) x := by
+  rw [div_eq_inv_mul]; exact (hasStrictDerivAt_log h₂).hasDerivAt.comp x h₁
+
+theorem HasDerivAt.clog_real {f : ℝ → ℂ} {x : ℝ} {f' : ℂ} (h₁ : HasDerivAt f f' x)
+    (h₂ : f x ∈ slitPlane) : HasDerivAt (fun t => log (f t)) (f' / f x) x := by
+  simpa only [div_eq_inv_mul] using!
+    (hasStrictFDerivAt_log_real h₂).hasFDerivAt.comp_hasDerivAt x h₁
+
+theorem DifferentiableAt.clog {f : E → ℂ} {x : E} (h₁ : DifferentiableAt ℂ f x)
+    (h₂ : f x ∈ slitPlane) : DifferentiableAt ℂ (fun t => log (f t)) x :=
+  (h₁.hasFDerivAt.clog h₂).differentiableAt
+
+theorem HasFDerivWithinAt.clog {f : E → ℂ} {f' : StrongDual ℂ E} {s : Set E} {x : E}
+    (h₁ : HasFDerivWithinAt f f' s x) (h₂ : f x ∈ slitPlane) :
+    HasFDerivWithinAt (fun t => log (f t)) ((f x)⁻¹ • f') s x :=
+  (hasStrictDerivAt_log h₂).hasDerivAt.comp_hasFDerivWithinAt x h₁
+
+theorem HasDerivWithinAt.clog {f : ℂ → ℂ} {f' x : ℂ} {s : Set ℂ} (h₁ : HasDerivWithinAt f f' s x)
+    (h₂ : f x ∈ slitPlane) : HasDerivWithinAt (fun t => log (f t)) (f' / f x) s x := by
+  rw [div_eq_inv_mul]
+  exact (hasStrictDerivAt_log h₂).hasDerivAt.comp_hasDerivWithinAt x h₁
+
+theorem HasDerivWithinAt.clog_real {f : ℝ → ℂ} {s : Set ℝ} {x : ℝ} {f' : ℂ}
+    (h₁ : HasDerivWithinAt f f' s x) (h₂ : f x ∈ slitPlane) :
+    HasDerivWithinAt (fun t => log (f t)) (f' / f x) s x := by
+  simpa only [div_eq_inv_mul] using!
+    (hasStrictFDerivAt_log_real h₂).hasFDerivAt.comp_hasDerivWithinAt x h₁
+
+theorem DifferentiableWithinAt.clog {f : E → ℂ} {s : Set E} {x : E}
+    (h₁ : DifferentiableWithinAt ℂ f s x) (h₂ : f x ∈ slitPlane) :
+    DifferentiableWithinAt ℂ (fun t => log (f t)) s x :=
+  (h₁.hasFDerivWithinAt.clog h₂).differentiableWithinAt
+
+theorem DifferentiableOn.clog {f : E → ℂ} {s : Set E} (h₁ : DifferentiableOn ℂ f s)
+    (h₂ : ∀ x ∈ s, f x ∈ slitPlane) : DifferentiableOn ℂ (fun t => log (f t)) s :=
+  fun x hx => (h₁ x hx).clog (h₂ x hx)
+
+theorem Differentiable.clog {f : E → ℂ} (h₁ : Differentiable ℂ f)
+    (h₂ : ∀ x, f x ∈ slitPlane) : Differentiable ℂ fun t => log (f t) := fun x =>
+  (h₁ x).clog (h₂ x)
+
+/-- The derivative of `log ∘ f` is the logarithmic derivative provided `f` is differentiable and
+we are on the slitPlane. -/
+lemma Complex.deriv_log_comp_eq_logDeriv {f : ℂ → ℂ} {x : ℂ} (h₁ : DifferentiableAt ℂ f x)
+    (h₂ : f x ∈ Complex.slitPlane) : deriv (Complex.log ∘ f) x = logDeriv f x := by
+  have A := (HasDerivAt.clog h₁.hasDerivAt h₂).deriv
+  rw [← h₁.hasDerivAt.deriv] at A
+  simp only [logDeriv, Pi.div_apply, ← A, Function.comp_def]
+
+end LogDeriv
+```

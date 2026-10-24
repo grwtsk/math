@@ -1,0 +1,175 @@
+# nu_asymp_bound_30
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "2da8f7a1095fdd5b64ca8609b613f4c0960c9eed",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 1387,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/e6/e677b791cd8a3612859851d52d29bc8714a3844979df02a794d8fd4e87a9731a.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:2ea78042-fa2b-e451-a6fb-c7a4c14d150a",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:12f39e5e-a371-a30d-c1de-607810c55153",
+  "kind": "lemma",
+  "lexical_name": "nu_asymp_bound_30",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "nu-asymp-bound-30--007b1a3df7ebd247ee203be7",
+  "source": {
+    "blob": "2da8f7a1095fdd5b64ca8609b613f4c0960c9eed",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1468,
+    "line": 1387,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/FKS2/Variante677b791cd8a3612859851d52d29bc8714a3844979df02a794d8fd4e87a9731a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:007b1a3df7ebd247ee203be753c8c802905fd9bb202479b9359a43c57c61b3a8",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/FKS2/Variante677b791cd8a3612859851d52d29bc8714a3844979df02a794d8fd4e87a9731a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_SOURCE_DEPENDENCY"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:12f39e5e-a371-a30d-c1de-607810c55153`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1387–1468.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private lemma nu_asymp_bound_30 : ν_asymp 121.096 (3 / 2 : ℝ) 2 5.5666305 (Real.exp 30) ≤ 8.25e-7 := by
+  have hcoef :
+      (1 / (121.096 : ℝ)) * (5.5666305 / 30) ^ (3 / 2 : ℝ) * Real.exp (2 * Real.sqrt (30 / 5.5666305)) ≤ 0.06865 := coeff_bound_30
+  have ha1 : BKLNW.a₁ 30 ≤ 1 + 1.9339e-8 := bklnw_a1_30_le
+  have ha2 : BKLNW.a₂ 30 ≤ 42.42 := bklnw_a2_30_le
+  have h15 : Real.exp (-15 : ℝ) ≤ (1 / 3250000 : ℝ) := by
+    interval_decide
+  have h20 : Real.exp (-20 : ℝ) ≤ (1 / 460000000 : ℝ) := by
+    interval_decide
+  let coeff : ℝ := (1 / (121.096 : ℝ)) * (5.5666305 / 30) ^ (3 / 2 : ℝ) * Real.exp (2 * Real.sqrt (30 / 5.5666305))
+  let c1 : ℝ := 1 + 1.9339e-8
+  let c2 : ℝ := 42.42
+  let rhsBracket : ℝ := 30 * (c1 * (1 / 3250000 : ℝ)) + 30 * (c2 * (1 / 460000000 : ℝ))
+  have hpow1 : (Real.exp 30) ^ (- (1 : ℝ) / 2) = Real.exp (-15) := by
+    calc
+      (Real.exp 30) ^ (- (1 : ℝ) / 2) = Real.exp (30 * (- (1 : ℝ) / 2)) := (Real.exp_mul 30 (- (1 : ℝ) / 2)).symm
+      _ = Real.exp (-15) := by ring_nf
+  have hpow2 : (Real.exp 30) ^ (- (2 : ℝ) / 3) = Real.exp (-20) := by
+    calc
+      (Real.exp 30) ^ (- (2 : ℝ) / 3) = Real.exp (30 * (- (2 : ℝ) / 3)) := (Real.exp_mul 30 (- (2 : ℝ) / 3)).symm
+      _ = Real.exp (-20) := by ring_nf
+  have hνeq₀ : ν_asymp 121.096 (3 / 2) 2 5.5666305 (Real.exp 30)
+      = coeff * (BKLNW.a₁ 30 * 30 * Real.exp (-15) + BKLNW.a₂ 30 * 30 * Real.exp (-20)) := by
+    simp [ν_asymp, hpow1, hpow2, coeff]
+  have hνeq : ν_asymp 121.096 (3 / 2) 2 5.5666305 (Real.exp 30)
+      = coeff * (30 * (BKLNW.a₁ 30 * Real.exp (-15)) + 30 * (BKLNW.a₂ 30 * Real.exp (-20))) := by
+    calc
+      ν_asymp 121.096 (3 / 2) 2 5.5666305 (Real.exp 30)
+          = coeff * (BKLNW.a₁ 30 * 30 * Real.exp (-15) + BKLNW.a₂ 30 * 30 * Real.exp (-20)) := hνeq₀
+      _ = coeff * (30 * (BKLNW.a₁ 30 * Real.exp (-15)) + 30 * (BKLNW.a₂ 30 * Real.exp (-20))) := by
+        ring
+  rw [hνeq]
+  have hbracket :
+      30 * (BKLNW.a₁ 30 * Real.exp (-15)) + 30 * (BKLNW.a₂ 30 * Real.exp (-20))
+      ≤ rhsBracket := by
+    have hc1_nonneg : 0 ≤ c1 := by
+      dsimp [c1]
+      norm_num
+    have hc2_nonneg : 0 ≤ c2 := by
+      dsimp [c2]
+      norm_num
+    have he15_nonneg : 0 ≤ Real.exp (-15) := le_of_lt (Real.exp_pos _)
+    have he20_nonneg : 0 ≤ Real.exp (-20) := le_of_lt (Real.exp_pos _)
+    have h30_nonneg : (0 : ℝ) ≤ 30 := by norm_num
+    have h1 : 30 * (BKLNW.a₁ 30 * Real.exp (-15)) ≤ 30 * (c1 * (1 / 3250000 : ℝ)) :=
+      le_trans (mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right ha1 he15_nonneg) h30_nonneg)
+        (mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_left h15 hc1_nonneg) h30_nonneg)
+    have h2 : 30 * (BKLNW.a₂ 30 * Real.exp (-20)) ≤ 30 * (c2 * (1 / 460000000 : ℝ)) :=
+      le_trans (mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_right ha2 he20_nonneg) h30_nonneg)
+        (mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_left h20 hc2_nonneg) h30_nonneg)
+    exact add_le_add h1 h2
+  have hcoef' : coeff ≤ 0.06865 := by simpa [coeff] using hcoef
+  have hcoeff_nonneg : 0 ≤ coeff := by
+    dsimp [coeff]
+    have hinv : 0 ≤ (1 / (121.096 : ℝ)) := by norm_num
+    have hpow : 0 ≤ (5.5666305 / 30 : ℝ) ^ (3 / 2 : ℝ) :=
+      Real.rpow_nonneg (by norm_num : (0 : ℝ) ≤ 5.5666305 / 30) _
+    have hexp : 0 ≤ Real.exp (2 * Real.sqrt (30 / 5.5666305)) := le_of_lt (Real.exp_pos _)
+    exact mul_nonneg (mul_nonneg hinv hpow) hexp
+  have hrhs_nonneg : 0 ≤ rhsBracket := by
+    dsimp [rhsBracket]
+    have h1nn : 0 ≤ 30 * (c1 * (1 / 3250000 : ℝ)) := by
+      have hc1_nonneg : 0 ≤ c1 := by
+        dsimp [c1]
+        norm_num
+      exact mul_nonneg (by norm_num) (mul_nonneg hc1_nonneg (by norm_num))
+    have h2nn : 0 ≤ 30 * (c2 * (1 / 460000000 : ℝ)) := by
+      have hc2_nonneg : 0 ≤ c2 := by
+        dsimp [c2]
+        norm_num
+      exact mul_nonneg (by norm_num) (mul_nonneg hc2_nonneg (by norm_num))
+    exact add_nonneg h1nn h2nn
+  have hmul1 : coeff * (30 * (BKLNW.a₁ 30 * Real.exp (-15)) + 30 * (BKLNW.a₂ 30 * Real.exp (-20))) ≤ coeff * rhsBracket :=
+    mul_le_mul_of_nonneg_left hbracket hcoeff_nonneg
+  have hmul2 : coeff * rhsBracket ≤ 0.06865 * rhsBracket :=
+    mul_le_mul_of_nonneg_right hcoef' hrhs_nonneg
+  have hnum : 0.06865 * rhsBracket ≤ 8.25e-7 := by
+    dsimp [rhsBracket]
+    norm_num
+  exact le_trans hmul1 (le_trans hmul2 hnum)
+
+-- Helper establishing the classical bound for Eψ at exp 30.
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_SOURCE_DEPENDENCY`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/FKS2/Variante677b791cd8a3612859851d52d29bc8714a3844979df02a794d8fd4e87a9731a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/FKS2/Variante677b791cd8a3612859851d52d29bc8714a3844979df02a794d8fd4e87a9731a.lean#L1387).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2da8f7a1095fdd5b64ca8609b613f4c0960c9eed` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

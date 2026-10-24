@@ -1,0 +1,112 @@
+# Mstar_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "29d12a9fe1b528ebf619cae5991a5f852ed80f9e",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 386,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/c9/c9cae9320bec86a6a04012a2470c6853bb82a3ef276b3e647df3e44788e5bc93.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:2e2c0aa4-2dde-2c7f-975c-a868c76b141e",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:9f81c8bd-efc1-b674-26bb-65197ec432c3",
+  "kind": "lemma",
+  "lexical_name": "Mstar_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mstar-le--baa7d0e73736d04e3baf6c04",
+  "source": {
+    "blob": "29d12a9fe1b528ebf619cae5991a5f852ed80f9e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 404,
+    "line": 386,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/Traces/Variantc9cae9320bec86a6a04012a2470c6853bb82a3ef276b3e647df3e44788e5bc93.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:baa7d0e73736d04e3baf6c04d9419250ad63c68a7a1fc0ad86e4a55d20e1d08c",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/Traces/Variantc9cae9320bec86a6a04012a2470c6853bb82a3ef276b3e647df3e44788e5bc93.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:9f81c8bd-efc1-b674-26bb-65197ec432c3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 386–404.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private lemma Mstar_le : ∀ᶠ T in atTop,
+    0 < Mstar P T ∧ Mstar P T ≤ 4 * π * mainTr2Xi P D.bT D.JT T := by
+  filter_upwards [regime h, h.ab_range] with T ⟨hT, hl, _u0, hL, _u1, _u2, _u3, _u4⟩ ⟨hb2, _u5, _u6, hJ0⟩
+  have hπ := Real.pi_pos
+  have hℓ : l T ≤ ell1 T := l_le_ell1 T
+  refine ⟨by unfold Mstar; positivity, ?_⟩
+  unfold Mstar mainTr2Xi
+  have h1 : 4 * π * (T * P.L T / (2 * π) * (D.bT T * ell1 T ^ 2 + P.L T ^ 2 * D.JT T))
+      = 2 * T * P.L T * (D.bT T * ell1 T ^ 2 + P.L T ^ 2 * D.JT T) := by
+    field_simp <;> ring
+  rw [h1]
+  have h2 : l T ^ 2 ≤ 2 * (D.bT T * ell1 T ^ 2 + P.L T ^ 2 * D.JT T) := by
+    have : l T ^ 2 ≤ ell1 T ^ 2 := pow_le_pow_left₀ (by linarith) hℓ 2
+    nlinarith [mul_nonneg (sq_nonneg (P.L T)) hJ0, sq_nonneg (ell1 T)]
+  calc T * P.L T * l T ^ 2 ≤ T * P.L T * (2 * (D.bT T * ell1 T ^ 2 + P.L T ^ 2 * D.JT T)) := by
+        gcongr
+    _ = _ := by ring
+
+/-- **[eq:tr2]**: `tr G̃² ~ (TL/2π)(b ℓ₁² + L² J_T)`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/Traces/Variantc9cae9320bec86a6a04012a2470c6853bb82a3ef276b3e647df3e44788e5bc93.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/Traces/Variantc9cae9320bec86a6a04012a2470c6853bb82a3ef276b3e647df3e44788e5bc93.lean#L386).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `29d12a9fe1b528ebf619cae5991a5f852ed80f9e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

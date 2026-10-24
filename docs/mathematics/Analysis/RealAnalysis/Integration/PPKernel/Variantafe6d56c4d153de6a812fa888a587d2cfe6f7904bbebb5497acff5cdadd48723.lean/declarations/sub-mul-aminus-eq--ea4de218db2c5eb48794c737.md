@@ -1,0 +1,141 @@
+# sub_mul_Aminus_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "58f64603997f6b0032f476beef11592a3c6ffce1",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 443,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/af/afe6d56c4d153de6a812fa888a587d2cfe6f7904bbebb5497acff5cdadd48723.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:73eb9455-dee1-6792-bdac-e7340fc3aa16",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:61095904-ef14-4e47-236c-cbac25e7b736",
+  "kind": "lemma",
+  "lexical_name": "sub_mul_Aminus_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "sub-mul-aminus-eq--ea4de218db2c5eb48794c737",
+  "source": {
+    "blob": "58f64603997f6b0032f476beef11592a3c6ffce1",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 490,
+    "line": 443,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/PPKernel/Variantafe6d56c4d153de6a812fa888a587d2cfe6f7904bbebb5497acff5cdadd48723.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ea4de218db2c5eb48794c737161b37bdb342ce76a349f1616e612fe42a86f765",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/PPKernel/Variantafe6d56c4d153de6a812fa888a587d2cfe6f7904bbebb5497acff5cdadd48723.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:61095904-ef14-4e47-236c-cbac25e7b736`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 443–490.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma sub_mul_Aminus_eq (hT : 0 ≤ T) (hΦ : Continuous Φ) {y y' : ℝ} (hθ : y - y' ≠ 0) :
+    (y - y') * Aminus Φ T y y'
+      = (Real.sin ((y - y') * (2 * T)) * Cm Φ T y + Real.cos ((y - y') * (2 * T)) * Sm Φ T y
+          - (Real.sin ((y - y') * T) * Cm Φ T y' + Real.cos ((y - y') * T) * Sm Φ T y'))
+        + (Real.sin ((y - y') * (2 * T)) * Cp Φ T y' + Real.cos ((y - y') * (2 * T)) * Sp Φ T y'
+          - (Real.sin ((y - y') * T) * Cp Φ T y + Real.cos ((y - y') * T) * Sp Φ T y)) := by
+  unfold Aminus Cm Sm Cp Sp
+  have hcont : Continuous fun x => Φ x ^ 2 * ((y - y') * JmK T y y' x) := by
+    have := continuous_JmK T y y'; fun_prop
+  rw [← integral_const_mul]
+  have e1 : ∀ x, (y - y') * (Φ x ^ 2 * JmK T y y' x) = Φ x ^ 2 * ((y - y') * JmK T y y' x) := by
+    intro x; ring
+  simp_rw [e1]
+  rw [integral_Icc_eq_integral_Ioc, ← intervalIntegral.integral_of_le (by linarith : -T ≤ T),
+    ← intervalIntegral.integral_add_adjacent_intervals (b := 0)
+      (hcont.intervalIntegrable _ _) (hcont.intervalIntegrable _ _)]
+  -- left half: x ∈ [−T, 0], window [T−x, 2T]
+  have hL : ∫ x in (-T)..0, Φ x ^ 2 * ((y - y') * JmK T y y' x)
+      = ∫ x in (-T)..0, Φ x ^ 2 * (Real.sin ((y - y') * (2 * T) + x * y)
+          - Real.sin ((y - y') * T + x * y')) := by
+    apply intervalIntegral.integral_congr
+    intro x hx
+    rw [Set.uIcc_of_le (by linarith : -T ≤ 0)] at hx
+    simp only
+    congr 1
+    unfold JmK
+    rw [max_eq_left (by linarith [hx.2]), min_eq_right (by linarith [hx.2]), Jker_of_ne hθ,
+      mul_div_cancel₀ _ hθ]
+    congr 1
+    rw [show (y - y') * (T - x) + x * y = (y - y') * T + x * y' by ring]
+  -- right half: x ∈ [0, T], window [T, 2T−x]
+  have hR : ∫ x in (0:ℝ)..T, Φ x ^ 2 * ((y - y') * JmK T y y' x)
+      = ∫ x in (0:ℝ)..T, Φ x ^ 2 * (Real.sin ((y - y') * (2 * T) + x * y')
+          - Real.sin ((y - y') * T + x * y)) := by
+    apply intervalIntegral.integral_congr
+    intro x hx
+    rw [Set.uIcc_of_le hT] at hx
+    simp only
+    congr 1
+    unfold JmK
+    rw [max_eq_right (by linarith [hx.1]), min_eq_left (by linarith [hx.1]), Jker_of_ne hθ,
+      mul_div_cancel₀ _ hθ]
+    congr 1
+    rw [show (y - y') * (2 * T - x) + x * y = (y - y') * (2 * T) + x * y' by ring]
+  rw [hL, hR, integral_sq_mul_sin_sub_sin hΦ, integral_sq_mul_sin_sub_sin hΦ]
+
+/-- Each half-line moment is bounded by ∫_ℝ Φ² (the paper's |α_n^±| ≤ πbL, §5.4; we use the
+cruder ≤ ∫Φ² = 2πbL, constants being immaterial). -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/PPKernel/Variantafe6d56c4d153de6a812fa888a587d2cfe6f7904bbebb5497acff5cdadd48723.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/PPKernel/Variantafe6d56c4d153de6a812fa888a587d2cfe6f7904bbebb5497acff5cdadd48723.lean#L443).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `58f64603997f6b0032f476beef11592a3c6ffce1` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,27 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.RhEstimateMomentReflection.Variant003c979d85d6b38992942400b5367a02feeff6fafe87aecebdf7520bf41c8c5e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c697a892ba5441332924447e15e94e8d0adc5b25` · SHA-256 `2803d4662d67f5e4cff6a81ab4db1e95f994851c918e8696c79255e6bafdcdbb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.EstimateMomentReflection.Variant7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.EstimateMomentReflection.Variant7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680","mathematical_subject":"Analysis.Integration","original_sha256":"7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/pr151-repair-20260921T175258Z/candidate-snapshots/c2165bf58cfe7079ba78bd7f98623fb758d0d84525c0918f1eba27105e3dba85/tests/rh_estimate_moment_reflection.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.EstimateMomentReflection.Variant7fc0810971f721d1f56ac8e1996ac105e57eafd0ee2d61527b58fb63ca628680
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.shiftedMoment_integral_zero
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.two_moment_reflection
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.sourceCorrelation_reflection
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.derivativeProfile_reflection
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.moment_reflection_checkpoint
+
+example :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.MomentReflectionCheckpoint :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection.moment_reflection_checkpoint
+```

@@ -1,0 +1,14 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.3e6dca274224eefcca48c66fd87383c55f8ecb42a35b6d75912b7e902a48ffccLensAxioms.Variant3e6dca274224eefcca48c66fd87383c55f8ecb42a35b6d75912b7e902a48ffcc
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eed36270dd93cd5545a3ff9bbae2deffeace705f` · SHA-256 `3e6dca274224eefcca48c66fd87383c55f8ecb42a35b6d75912b7e902a48ffcc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens.spectralDensity_nonneg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens.spectralDensity_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens.spectralDensity_integral
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens.spectralDensity_cos_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationSpectralLens.sourceCorrelation_eq_integral_cos
+```

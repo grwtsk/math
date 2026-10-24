@@ -1,0 +1,30 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.ActualSecondEnergyProofsQualified.Varianta07b1b070a773607375e678c070bc46d5d0d257dbbb9e5e5c19b0c277cee9fc3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c7e33d0aa38a96852798e6680532be642fc3e8b4` · SHA-256 `a07b1b070a773607375e678c070bc46d5d0d257dbbb9e5e5c19b0c277cee9fc3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSecondEnergyCalibration
+#print RH16IndependentChallengeNext.unitFourth
+#print RH16IndependentChallengeNext.fourthInterior
+#print RH16IndependentChallengeNext.normalizedInteriorSecond
+#print RH16IndependentChallengeNext.unitSecondEnergyProfile
+#print RH16IndependentChallengeNext.actualSecondProfile
+#print RH16IndependentChallengeNext.thirdInterior_hasDerivAt_fourth
+#print RH16IndependentChallengeNext.normalizedInteriorDerivative_hasDerivAt_second
+#print RH16IndependentChallengeNext.actual_first_derivative_eq_indicator
+#print RH16IndependentChallengeNext.actual_second_derivative_eq_interior
+#print RH16IndependentChallengeNext.scaled_unit_interval_iff
+#print RH16IndependentChallengeNext.actualSecondProfile_eq_interior
+#print RH16IndependentChallengeNext.actual_second_derivative_ae_eq_profile
+#print RH16IndependentChallengeNext.unitFourth_square_integral
+#print RH16IndependentChallengeNext.unitFourth_mul_second_integral
+#print RH16IndependentChallengeNext.unitSecondEnergyProfile_square_integrable
+#print RH16IndependentChallengeNext.unitSecondEnergyProfile_square_integral
+#print RH16IndependentChallengeNext.actual_second_derivative_square_integrable
+#print RH16IndependentChallengeNext.actual_second_derivative_energy_eq
+#print RH16IndependentChallengeNext.actual_second_derivative_energy_le_global
+#print RH16IndependentChallengeNext.actual_second_derivative_energy_le_sixty_seven
+#print RH16IndependentChallengeNext.actual_second_derivative_square_integral_le_sixty_seven
+```

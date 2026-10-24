@@ -1,0 +1,29 @@
+# GRWTSK.Analysis.RealAnalysis.Integration.FractionalCovarianceElementary.Variantb5747ee172e951a8322be0f98305a88f91d663ccd6fc64e547e44dbc3bafc1d6
+
+[Complete source index](../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/FractionalCovarianceElementary/Variantb5747ee172e951a8322be0f98305a88f91d663ccd6fc64e547e44dbc3bafc1d6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c3295909a504822a8c1b567150cc72ecc1133ce2`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/RealAnalysis/Integration/FractionalCovarianceElementary/Variantb5747ee172e951a8322be0f98305a88f91d663ccd6fc64e547e44dbc3bafc1d6.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [fract_le_of_nonneg](declarations/fract-le-of-nonneg--8806214fbbe21edd6cb4edd6.md) | 12 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [fractional_product_integrable](declarations/fractional-product-integrable--b67e29ecf92951a31c058606.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [fractional_product_rescale](declarations/fractional-product-rescale--972fc7a9634cc4e3649c25c3.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [corrected_reciprocal_moment_zero](declarations/corrected-reciprocal-moment-zero--e8e7e22e36e3b602d788da1f.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [corrected_log_reciprocal_moment](declarations/corrected-log-reciprocal-moment--cbabcbe1e475e068b4a77014.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [corrected_total_mass](declarations/corrected-total-mass--8cff9c80dbb5c62a30fbeff4.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [low_rank_sum](declarations/low-rank-sum--4c3c7beb85f65a41754836df.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [corrected_elementary_covariance](declarations/corrected-elementary-covariance--3696fce9e10d81f2602a80d1.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |

@@ -1,0 +1,9 @@
+import Mathlib.Analysis.SpecialFunctions.Bernstein
+#check Nat.choose_succ_succ
+#check Nat.choose_succ_self
+#check Nat.choose_zero_succ
+#check Nat.choose_succ_succ'
+#check Nat.choose
+#check Fin.sum_univ_succ
+#check Fin.sum_univ_castSucc
+#check bernstein_apply

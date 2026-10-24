@@ -1,0 +1,138 @@
+# Complete source: GRWTSK.Analysis.AbsConvexOpen.Variant789ddb80aa050fd311a6670453bbbe8325343ccfdb39cc93796bc55a20a82c1f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e1ef2911a581d49024350691542d22cd365717a8` · SHA-256 `8e0d8d64aa06815d94951c7ee5b8f41cc06851b639cdff88b14549387d885a67`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.AbsConvexOpenSets.Variantedc78d1daec7a5bde6f4852bf80c368a7f3ab00907ead8a5b5a6b2b8067c5ce4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"edc78d1daec7a5bde6f4852bf80c368a7f3ab00907ead8a5b5a6b2b8067c5ce4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.AbsConvexOpenSets.Variantedc78d1daec7a5bde6f4852bf80c368a7f3ab00907ead8a5b5a6b2b8067c5ce4","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"edc78d1daec7a5bde6f4852bf80c368a7f3ab00907ead8a5b5a6b2b8067c5ce4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Analysis/LocallyConvex/AbsConvexOpen.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Moritz Doll. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Moritz Doll
+-/
+import Mathlib.Analysis.LocallyConvex.AbsConvex
+import Mathlib.Analysis.LocallyConvex.WithSeminorms
+import Mathlib.Analysis.Convex.Gauge
+
+/-!
+# Absolutely convex open sets
+
+A set `s` in a commutative monoid `E` equipped with a topology is said to be an absolutely convex
+open set if it is absolutely convex and open. When `E` is a topological additive group, the topology
+coincides with the topology induced by the family of seminorms arising as gauges of absolutely
+convex open neighborhoods of zero.
+
+## Main definitions
+
+* `AbsConvexOpenSets`: sets which are absolutely convex and open
+* `gaugeSeminormFamily`: the seminorm family induced by all open absolutely convex neighborhoods
+  of zero.
+
+## Main statements
+
+* `with_gaugeSeminormFamily`: the topology of a locally convex space is induced by the family
+  `gaugeSeminormFamily`.
+
+-/
+
+
+namespace GRWTSK.Analysis.AbsConvexOpenSets.Variantedc78d1daec7a5bde6f4852bf80c368a7f3ab00907ead8a5b5a6b2b8067c5ce4
+
+open NormedField Set
+
+open NNReal Pointwise Topology
+
+variable {𝕜 E : Type*}
+
+section AbsolutelyConvexSets
+
+variable [TopologicalSpace E] [AddCommMonoid E] [Zero E] [SeminormedRing 𝕜]
+variable [SMul 𝕜 E] [SMul ℝ E]
+variable (𝕜 E)
+
+/-- The type of absolutely convex open sets. -/
+def AbsConvexOpenSets :=
+  { s : Set E // (0 : E) ∈ s ∧ IsOpen s ∧ AbsConvex 𝕜 s }
+
+noncomputable instance AbsConvexOpenSets.instCoeOut : CoeOut (AbsConvexOpenSets 𝕜 E) (Set E) :=
+  ⟨Subtype.val⟩
+
+namespace AbsConvexOpenSets
+
+variable {𝕜 E}
+
+theorem coe_zero_mem (s : AbsConvexOpenSets 𝕜 E) : (0 : E) ∈ (s : Set E) :=
+  s.2.1
+
+theorem coe_isOpen (s : AbsConvexOpenSets 𝕜 E) : IsOpen (s : Set E) :=
+  s.2.2.1
+
+theorem coe_nhds (s : AbsConvexOpenSets 𝕜 E) : (s : Set E) ∈ 𝓝 (0 : E) :=
+  s.coe_isOpen.mem_nhds s.coe_zero_mem
+
+theorem coe_balanced (s : AbsConvexOpenSets 𝕜 E) : Balanced 𝕜 (s : Set E) :=
+  s.2.2.2.1
+
+theorem coe_convex (s : AbsConvexOpenSets 𝕜 E) : Convex ℝ (s : Set E) :=
+  s.2.2.2.2
+
+end AbsConvexOpenSets
+
+instance AbsConvexOpenSets.instNonempty : Nonempty (AbsConvexOpenSets 𝕜 E) := by
+  rw [← exists_true_iff_nonempty]
+  dsimp only [AbsConvexOpenSets]
+  rw [Subtype.exists]
+  exact ⟨Set.univ, ⟨mem_univ 0, isOpen_univ, balanced_univ, convex_univ⟩, trivial⟩
+
+end AbsolutelyConvexSets
+
+variable [RCLike 𝕜]
+variable [AddCommGroup E] [TopologicalSpace E]
+variable [Module 𝕜 E] [Module ℝ E] [IsScalarTower ℝ 𝕜 E]
+variable [ContinuousSMul ℝ E]
+variable (𝕜 E)
+
+/-- The family of seminorms defined by the gauges of absolute convex open sets. -/
+noncomputable def gaugeSeminormFamily : SeminormFamily 𝕜 E (AbsConvexOpenSets 𝕜 E) := fun s =>
+  gaugeSeminorm s.coe_balanced s.coe_convex (absorbent_nhds_zero s.coe_nhds)
+
+variable {𝕜 E}
+
+theorem gaugeSeminormFamily_ball (s : AbsConvexOpenSets 𝕜 E) :
+    (gaugeSeminormFamily 𝕜 E s).ball 0 1 = (s : Set E) := by
+  dsimp only [gaugeSeminormFamily]
+  rw [Seminorm.ball_zero_eq]
+  simp_rw [gaugeSeminorm_toFun]
+  exact gauge_lt_one_eq_self_of_isOpen s.coe_convex s.coe_zero_mem s.coe_isOpen
+
+variable [IsTopologicalAddGroup E] [ContinuousSMul 𝕜 E]
+variable [SMulCommClass ℝ 𝕜 E] [LocallyConvexSpace ℝ E]
+
+/-- The topology of a locally convex space is induced by the gauge seminorm family. -/
+theorem with_gaugeSeminormFamily : WithSeminorms (gaugeSeminormFamily 𝕜 E) := by
+  refine SeminormFamily.withSeminorms_of_hasBasis _ ?_
+  refine (nhds_hasBasis_absConvex_open 𝕜 E).to_hasBasis (fun s hs => ?_) fun s hs => ?_
+  · refine ⟨s, ⟨?_, rfl.subset⟩⟩
+    convert (gaugeSeminormFamily _ _).basisSets_singleton_mem ⟨s, hs⟩ one_pos
+    rw [gaugeSeminormFamily_ball, Subtype.coe_mk]
+  refine ⟨s, ⟨?_, rfl.subset⟩⟩
+  rw [SeminormFamily.basisSets_iff] at hs
+  rcases hs with ⟨t, r, hr, rfl⟩
+  rw [Seminorm.ball_finset_sup_eq_iInter _ _ _ hr]
+  -- We have to show that the intersection contains zero, is open, balanced, and convex
+  refine
+    ⟨mem_iInter₂.mpr fun _ _ => by simp [Seminorm.mem_ball_zero, hr],
+      isOpen_biInter_finset fun S _ => ?_,
+      balanced_iInter₂ fun _ _ => Seminorm.balanced_ball_zero _ _,
+      convex_iInter₂ fun _ _ => Seminorm.convex_ball ..⟩
+  -- The only nontrivial part is to show that the ball is open
+  have hr' : r = ‖(r : 𝕜)‖ * 1 := by simp [abs_of_pos hr]
+  have hr'' : (r : 𝕜) ≠ 0 := by simp [hr.ne']
+  rw [hr', ← Seminorm.smul_ball_zero hr'', gaugeSeminormFamily_ball]
+  exact S.coe_isOpen.smul₀ hr''
+```

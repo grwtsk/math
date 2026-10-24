@@ -1,0 +1,9 @@
+import SourceNativeDirichlet
+import Mathlib.Analysis.Calculus.FDeriv.Analytic
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+#check ContinuousAt.comp
+#check MeasurePreserving.integrableOn_comp_preimage
+#check setIntegral_union
+#check Continuous.integrableOn_Icc
+#check ContinuousAt.comp_of_eq
+#print ContinuousAt.comp

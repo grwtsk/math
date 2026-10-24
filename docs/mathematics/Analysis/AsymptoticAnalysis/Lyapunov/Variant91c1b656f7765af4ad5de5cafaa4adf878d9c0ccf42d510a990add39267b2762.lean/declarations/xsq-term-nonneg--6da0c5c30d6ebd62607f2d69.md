@@ -1,0 +1,113 @@
+# xsq_term_nonneg
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:fdabe220-9c91-e33f-155e-75344f95139a",
+  "kind": "theorem",
+  "lexical_name": "xsq_term_nonneg",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "xsq-term-nonneg--6da0c5c30d6ebd62607f2d69",
+  "source": {
+    "blob": "a0f8fb1906130fa6d1676c152247b89e724a5532",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 167,
+    "line": 136,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/Lyapunov/Variant91c1b656f7765af4ad5de5cafaa4adf878d9c0ccf42d510a990add39267b2762.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:6da0c5c30d6ebd62607f2d69a1802d4dd254caca220cb113d0f97ff770d922c9",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/Lyapunov/Variant91c1b656f7765af4ad5de5cafaa4adf878d9c0ccf42d510a990add39267b2762.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:fdabe220-9c91-e33f-155e-75344f95139a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 136–167.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem xsq_term_nonneg : ∀ x : ℝ, 0 ≤ 4 * x * x := by
+  intro x; nlinarith [sq_nonneg x]
+
+/-! ## Part C: Discovery - Energy on State Space -/
+
+-- Find bounds on the Lyapunov function components
+#bounds (fun x => x * x) on [-1, 1]
+#bounds (fun x => 4 * x * x) on [-1, 1]
+#bounds (fun v => -(2/5) * v * v) on [-1, 1]
+
+/-! ## Part D: Exponential Decay Rate
+
+Since V̇ ≤ -2ζωₙ·(v²) and V ≥ ½v²,
+we have V̇ ≤ -4ζωₙ·(½v²) ≤ -4ζωₙ·V/2.5 (worst case)
+
+This gives exponential decay: V(t) ≤ V(0)·e^(-0.16t)
+-/
+
+-- The decay rate coefficient: 4ζωₙ = 4 * 0.1 * 2 = 0.8 = 4/5
+#eval (4 * (1/10 : ℚ) * 2)  -- = 4/5 = 0.8
+
+/-! ## Summary: Lyapunov Stability ✓
+
+Successfully proved:
+1. Energy derivative V̇ = -(2/5)v² ≤ 0 (energy dissipation)
+2. V̇ < -1/250 when |v| ≥ 0.1 (asymptotic stability)
+3. Energy component bounds: v² ≤ 1, 4x² ≤ 4
+4. All components non-negative
+
+This demonstrates LeanCert's applicability to control theory!
+Note: Full 2D analysis would use multivariate_bound or Box-based optimization.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/Lyapunov/Variant91c1b656f7765af4ad5de5cafaa4adf878d9c0ccf42d510a990add39267b2762.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/Lyapunov/Variant91c1b656f7765af4ad5de5cafaa4adf878d9c0ccf42d510a990add39267b2762.lean#L136).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a0f8fb1906130fa6d1676c152247b89e724a5532` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

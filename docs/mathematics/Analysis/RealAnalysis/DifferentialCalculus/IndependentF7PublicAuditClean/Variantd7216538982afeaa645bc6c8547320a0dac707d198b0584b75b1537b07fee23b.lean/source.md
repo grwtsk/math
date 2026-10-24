@@ -1,0 +1,207 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.IndependentF7PublicAuditClean.Variantd7216538982afeaa645bc6c8547320a0dac707d198b0584b75b1537b07fee23b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fe6181671b21bdf40018db107fc9fea2db19e4a3` · SHA-256 `d7216538982afeaa645bc6c8547320a0dac707d198b0584b75b1537b07fee23b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualF7MeanConsumer
+
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option linter.hashCommand false
+
+#check RH16ActualF7.physicalXiDensity
+#print axioms RH16ActualF7.physicalXiDensity
+
+#check RH16ActualF7.actualF7
+#print axioms RH16ActualF7.actualF7
+
+#check RH16ActualF7.timeXiDensity
+#print axioms RH16ActualF7.timeXiDensity
+
+#check RH16ActualF7.minusCorrelationWeight
+#print axioms RH16ActualF7.minusCorrelationWeight
+
+#check RH16ActualF7.physicalXiDensity_exp_mul
+#print axioms RH16ActualF7.physicalXiDensity_exp_mul
+
+#check RH16ActualF7.actualF7_eq_time_primitive
+#print axioms RH16ActualF7.actualF7_eq_time_primitive
+
+#check RH16ActualF7.actualF7_at_log_seven
+#print axioms RH16ActualF7.actualF7_at_log_seven
+
+#check RH16ActualF7.physicalXiDensity_intervalIntegrable
+#print axioms RH16ActualF7.physicalXiDensity_intervalIntegrable
+
+#check RH16ActualF7.timeXiDensity_intervalIntegrable
+#print axioms RH16ActualF7.timeXiDensity_intervalIntegrable
+
+#check RH16ActualF7.actualF7_absolutelyContinuous
+#print axioms RH16ActualF7.actualF7_absolutelyContinuous
+
+#check RH16ActualF7.actualF7_ae_hasDerivAt
+#print axioms RH16ActualF7.actualF7_ae_hasDerivAt
+
+#check RH16ActualF7.minusCorrelationWeight_contDiff
+#print axioms RH16ActualF7.minusCorrelationWeight_contDiff
+
+#check RH16ActualF7.minusCorrelationWeight_hasDerivAt
+#print axioms RH16ActualF7.minusCorrelationWeight_hasDerivAt
+
+#check RH16ActualF7.minusCorrelationWeight_at_upper
+#print axioms RH16ActualF7.minusCorrelationWeight_at_upper
+
+#check RH16ActualF7.actual_transformed_density_exp_mul
+#print axioms RH16ActualF7.actual_transformed_density_exp_mul
+
+#check RH16ActualF7.completeXiTail_eq_time_integral
+#print axioms RH16ActualF7.completeXiTail_eq_time_integral
+
+#check RH16ActualF7.completeXiTail_eq_neg_F7_integral
+#print axioms RH16ActualF7.completeXiTail_eq_neg_F7_integral
+
+#check RH16ActualF7.completeXiTail_intervalIntegrable
+#print axioms RH16ActualF7.completeXiTail_intervalIntegrable
+
+#check RH16ActualF7.actualF7_curvature_intervalIntegrable
+#print axioms RH16ActualF7.actualF7_curvature_intervalIntegrable
+
+#check RH16ActualF7.actual_derivative_energy_normalization
+#print axioms RH16ActualF7.actual_derivative_energy_normalization
+
+#check RH16ActualF7.actual_physical_derivative_bounds
+#print axioms RH16ActualF7.actual_physical_derivative_bounds
+
+#check RH16ActualF7.actual_physical_upper_traces
+#print axioms RH16ActualF7.actual_physical_upper_traces
+
+#check RH16F7TailCalibration.physicalCurvatureCoefficient
+#print axioms RH16F7TailCalibration.physicalCurvatureCoefficient
+
+#check RH16F7TailCalibration.meanTailBudget
+#print axioms RH16F7TailCalibration.meanTailBudget
+
+#check RH16F7TailCalibration.meanAtomBudget
+#print axioms RH16F7TailCalibration.meanAtomBudget
+
+#check RH16F7TailCalibration.meanResidualBudget
+#print axioms RH16F7TailCalibration.meanResidualBudget
+
+#check RH16F7TailCalibration.calibratedRadius_pos
+#print axioms RH16F7TailCalibration.calibratedRadius_pos
+
+#check RH16F7TailCalibration.calibratedRadius_idempotent
+#print axioms RH16F7TailCalibration.calibratedRadius_idempotent
+
+#check RH16F7TailCalibration.meanTailBudget_nonneg
+#print axioms RH16F7TailCalibration.meanTailBudget_nonneg
+
+#check RH16F7TailCalibration.meanAtomBudget_eq
+#print axioms RH16F7TailCalibration.meanAtomBudget_eq
+
+#check RH16F7TailCalibration.meanAtomBudget_nonneg
+#print axioms RH16F7TailCalibration.meanAtomBudget_nonneg
+
+#check RH16F7TailCalibration.dynamic_mean_budget_le
+#print axioms RH16F7TailCalibration.dynamic_mean_budget_le
+
+#check RH16F7TailCalibration.complete_tail_lower_at_calibrated_radius
+#print axioms RH16F7TailCalibration.complete_tail_lower_at_calibrated_radius
+
+#check RH16F7TailCalibration.calibratedRadius_forty
+#print axioms RH16F7TailCalibration.calibratedRadius_forty
+
+#check RH16F7TailCalibration.meanTailBudget_forty
+#print axioms RH16F7TailCalibration.meanTailBudget_forty
+
+#check RH16F7TailCalibration.meanTailBudget_ninety_one
+#print axioms RH16F7TailCalibration.meanTailBudget_ninety_one
+
+#check RH16F7TailCalibration.remaining_lower_of_dynamic_mean
+#print axioms RH16F7TailCalibration.remaining_lower_of_dynamic_mean
+
+#check RH16F7TailCalibration.atom_witness_of_dynamic_mean
+#print axioms RH16F7TailCalibration.atom_witness_of_dynamic_mean
+
+#check RH16F7TailCalibration.all_real_lower_of_dynamic_mean
+#print axioms RH16F7TailCalibration.all_real_lower_of_dynamic_mean
+
+#check RH16F7TailCalibration.estimate_of_dynamic_mean
+#print axioms RH16F7TailCalibration.estimate_of_dynamic_mean
+
+#check RH16F7TailCalibration.residual_upper_of_dynamic_mean
+#print axioms RH16F7TailCalibration.residual_upper_of_dynamic_mean
+
+#check RH16F7TailCalibration.actual_leading_upper_of_dynamic_mean
+#print axioms RH16F7TailCalibration.actual_leading_upper_of_dynamic_mean
+
+#check RH16ActualF7Mean.physicalCurvatureWeight
+#print axioms RH16ActualF7Mean.physicalCurvatureWeight
+
+#check RH16ActualF7Mean.physicalWeightBudget
+#print axioms RH16ActualF7Mean.physicalWeightBudget
+
+#check RH16ActualF7Mean.actualF7MeanBound
+#print axioms RH16ActualF7Mean.actualF7MeanBound
+
+#check RH16ActualF7Mean.physicalWeightBudget_nonneg
+#print axioms RH16ActualF7Mean.physicalWeightBudget_nonneg
+
+#check RH16ActualF7Mean.physicalCurvatureWeight_abs_le
+#print axioms RH16ActualF7Mean.physicalCurvatureWeight_abs_le
+
+#check RH16ActualF7Mean.actualF7_abs_intervalIntegrable
+#print axioms RH16ActualF7Mean.actualF7_abs_intervalIntegrable
+
+#check RH16ActualF7Mean.complete_tail_abs_le_weighted_F7_mass
+#print axioms RH16ActualF7Mean.complete_tail_abs_le_weighted_F7_mass
+
+#check RH16ActualF7Mean.complete_tail_abs_le_of_mean
+#print axioms RH16ActualF7Mean.complete_tail_abs_le_of_mean
+
+#check RH16ActualF7Mean.complete_tail_lower_of_mean
+#print axioms RH16ActualF7Mean.complete_tail_lower_of_mean
+
+#check RH16ActualF7Mean.complete_tail_lower_of_mean_at_Rstar
+#print axioms RH16ActualF7Mean.complete_tail_lower_of_mean_at_Rstar
+
+#check RH16ActualF7Mean.remaining_lower_of_actual_mean
+#print axioms RH16ActualF7Mean.remaining_lower_of_actual_mean
+
+#check RH16ActualF7Mean.atom_witness_of_actual_mean
+#print axioms RH16ActualF7Mean.atom_witness_of_actual_mean
+
+#check RH16ActualF7Mean.all_real_lower_of_actual_mean
+#print axioms RH16ActualF7Mean.all_real_lower_of_actual_mean
+
+#check RH16ActualF7Mean.estimate_of_actual_mean
+#print axioms RH16ActualF7Mean.estimate_of_actual_mean
+
+#check RH16ActualF7Mean.residual_upper_of_actual_mean
+#print axioms RH16ActualF7Mean.residual_upper_of_actual_mean
+
+#check RH16ActualF7Mean.actual_leading_upper_of_actual_mean
+#print axioms RH16ActualF7Mean.actual_leading_upper_of_actual_mean
+
+#check FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceDerivativeEnergy.actual_derivative_energy_eq
+
+#check FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_abs_le_five_div
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationEnergy.sourceCorrelation_deriv_abs_le_five_div
+
+#check FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_coefficient
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity.sourceCorrelation_upper_endpoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity.sourceCorrelation_upper_endpoint
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusDerivative.sourceCorrelation_deriv_zero_of_two_mul_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusDerivative.sourceCorrelation_deriv_zero_of_two_mul_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare.shiftedActualChebyshev_mul_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiInverseSquare.shiftedActualChebyshev_mul_intervalIntegrable
+
+```

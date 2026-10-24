@@ -1,0 +1,101 @@
+# Complete source: GRWTSK.Analysis.FunctionalAnalysis.Audit.Variant017879687833839101ee1b49f50017e067d809c8f42f6b943a0bea725a09303b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fff7a21bce1f402479a564aab5bd4f0886d0bc08` · SHA-256 `3bb43e6f6bc516511eb36c374b3c08ecf25976a1ebd9b66f933e3c3b2854a6f8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.FunctionalAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.FunctionalAnalysis.FiniteCommonJTransport.Variante7ffa3eeab54b237f362fc4491adedbc7e6ff26997840675d7f8c8e639b0772d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e7ffa3eeab54b237f362fc4491adedbc7e6ff26997840675d7f8c8e639b0772d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.FiniteCommonJTransport.Variante7ffa3eeab54b237f362fc4491adedbc7e6ff26997840675d7f8c8e639b0772d","mathematical_subject":"Foundations.Unclassified","original_sha256":"e7ffa3eeab54b237f362fc4491adedbc7e6ff26997840675d7f8c8e639b0772d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-confluence/parent/regent-finite/audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport
+
+namespace GRWTSK.Analysis.FunctionalAnalysis.FiniteCommonJTransport.Variante7ffa3eeab54b237f362fc4491adedbc7e6ff26997840675d7f8c8e639b0772d
+
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_conjugation
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_conjugation
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commute_orderedProduct
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commute_orderedProduct
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_inverse_commuting
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_inverse_commuting
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_sign_inverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_sign_inverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.conjugation_preserves_order
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.conjugation_preserves_order
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.inversion_reverses_order
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.inversion_reverses_order
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.forwardGauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.forwardGauge
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_forwardGauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_forwardGauge
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.siteGauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.siteGauge
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.site_loop_gauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.site_loop_gauge
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_identity
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_identity
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.chartEdges
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.chartEdges
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_chartEdges
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.orderedProduct_chartEdges
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.chart_loop_identity
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.chart_loop_identity
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_comp
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_comp
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_commute
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_commute
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commonJ_square
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commonJ_square
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.circle_composition
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.circle_composition
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.circle_reverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.circle_reverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_reverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_reverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationUnit
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationUnit
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationUnit_commute
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationUnit_commute
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_eq_commonJ
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationMatrix_eq_commonJ
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationUnit_reverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rotationUnit_reverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flipMatrix
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flipMatrix
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flipUnit
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flipUnit
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flip_rotation_inverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flip_rotation_inverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commonJ_loop_inverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commonJ_loop_inverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rationalEdge
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rationalEdge
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rational_reverse_loop_identity
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rational_reverse_loop_identity
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rational_two_edge_loop_nonidentity
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.rational_two_edge_loop_nonidentity
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileUpper
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileUpper
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileLower
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileLower
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileSign
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileSign
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileUpper_sign_inverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileUpper_sign_inverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileLower_sign_inverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostileLower_sign_inverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.noncommuting_sign_loop_fails
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.noncommuting_sign_loop_fails
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostile_edges_noncommute
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.hostile_edges_noncommute
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flipUnit_inverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flipUnit_inverse
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commonJ_loop_sign_conjugation
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.commonJ_loop_sign_conjugation
+#check FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flip_commonJ_reverse
+#print axioms FormalResearch.PositiveAtlas.Spectral.FiniteCommonJTransport.flip_commonJ_reverse
+```

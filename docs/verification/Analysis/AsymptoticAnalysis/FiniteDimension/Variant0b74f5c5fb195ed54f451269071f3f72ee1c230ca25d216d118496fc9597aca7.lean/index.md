@@ -1,0 +1,124 @@
+# Verification target: GRWTSK.Analysis.AsymptoticAnalysis.FiniteDimension.Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a6217642fb765a3f0af997f15bae67ff2364b280",
+  "lexical_observation_count": 53,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/index.md) · [Full source](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a6217642fb765a3f0af997f15bae67ff2364b280`.
+
+Source path: `GRWTSK/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Asymptotics.AsymptoticEquivalent` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Group.Lemmas` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Affine.AddTorsor` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Affine.Isometry` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.NormedSpace.OperatorNorm.NormedSpace` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.NormedSpace.RieszLemma` — import line 16; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.NormedSpace.Pointwise` — import line 17; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Encodable.Pi` — import line 18; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.Module.FiniteDimension` — import line 19; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.InfiniteSum.Module` — import line 20; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Instances.Matrix` — import line 21; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [toLinearIsometryEquiv](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/tolinearisometryequiv--283df88d28f28b6c6c9fcd98.md) | 72 | `declaration-track:283df88d28f28b6c6c9fcd983c4631266fd7ec1f06dc68452d3fda2ed68da8b0` |
+| 2 | `theorem` | [coe_toLinearIsometryEquiv](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/coe-tolinearisometryequiv--c3859e11e565b85d9bc16686.md) | 78 | `result-track:c3859e11e565b85d9bc16686426d5d96c20ef81c51d301874e0ba22678857806` |
+| 3 | `theorem` | [toLinearIsometryEquiv_apply](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/tolinearisometryequiv-apply--593b3a545402674e0bd3d24c.md) | 83 | `result-track:593b3a545402674e0bd3d24cf641840d535ed20b17e103c1be628a9a90b2fc47` |
+| 4 | `def` | [toAffineIsometryEquiv](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/toaffineisometryequiv--ff2b5815f5b6b166a0d767ae.md) | 101 | `declaration-track:ff2b5815f5b6b166a0d767ae788f814dc250250fcafe07cb78d3adaa6b3ba4bd` |
+| 5 | `theorem` | [coe_toAffineIsometryEquiv](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/coe-toaffineisometryequiv--9c85515487101121d018ab62.md) | 107 | `result-track:9c85515487101121d018ab62398a75a4fdbe760e9b92863f01e25ed427579d84` |
+| 6 | `theorem` | [toAffineIsometryEquiv_apply](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/toaffineisometryequiv-apply--c8614e0044c3805a28663329.md) | 112 | `result-track:c8614e0044c3805a2866332971ea7242716a56f06dfe9d6da42c8ce7f262f556` |
+| 7 | `theorem` | [AffineMap.continuous_of_finiteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/affinemap-continuous-of-finitedimensional--a015fe0cc0769fc0d798f2dc.md) | 128 | `result-track:a015fe0cc0769fc0d798f2dc6686944c2a0497ffc45c26011d533bad4f2c06d8` |
+| 8 | `theorem` | [AffineEquiv.continuous_of_finiteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/affineequiv-continuous-of-finitedimensional--1e7a5016fb617bac3def3091.md) | 131 | `result-track:1e7a5016fb617bac3def3091bf5a43eb7824d90c4c5604bb463167053dd573f8` |
+| 9 | `def` | [AffineEquiv.toHomeomorphOfFiniteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/affineequiv-tohomeomorphoffinitedimensional--5d968c4930529cb78652b61e.md) | 135 | `declaration-track:5d968c4930529cb78652b61eeef2e69a3a41cf8245dc7b8dea136bd50db50feb` |
+| 10 | `theorem` | [AffineEquiv.coe_toHomeomorphOfFiniteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/affineequiv-coe-tohomeomorphoffinitedimensional--f75fda379ccb39f0fc84b894.md) | 143 | `result-track:f75fda379ccb39f0fc84b894ed86867a837e9e21672d6ae9a9295d6324668bb9` |
+| 11 | `theorem` | [AffineEquiv.coe_toHomeomorphOfFiniteDimensional_symm](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/affineequiv-coe-tohomeomorphoffinitedimensional-symm--78f51e8d67cadf3017c86c72.md) | 148 | `result-track:78f51e8d67cadf3017c86c725ed649e7f397909e16698bbeccb8353e51880e1e` |
+| 12 | `theorem` | [ContinuousLinearMap.continuous_det](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/continuouslinearmap-continuous-det--d5f30eb5ad077e8f07e33c3e.md) | 154 | `result-track:d5f30eb5ad077e8f07e33c3e34fba2d3d117320a05b6cfd5cfec57390212375c` |
+| 13 | `theorem` | [lipschitzExtensionConstant_pos](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/lipschitzextensionconstant-pos--4540ecb6cd056fe2794ca143.md) | 178 | `result-track:4540ecb6cd056fe2794ca1436230d0577ea20fbb24c5a8466ae90cbff22ae22a` |
+| 14 | `theorem` | [LipschitzOnWith.extend_finite_dimension](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/lipschitzonwith-extend-finite-dimension--b4786ab88f1e4ba4741f3974.md) | 186 | `result-track:b4786ab88f1e4ba4741f39743435e9cd669e44776e9b1b8bcc11033ca06a61a9` |
+| 15 | `theorem` | [LinearMap.exists_antilipschitzWith](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/linearmap-exists-antilipschitzwith--0d2755b05af57a6e50d88c9f.md) | 210 | `result-track:0d2755b05af57a6e50d88c9f852b75175c97657da2a4257c5a9ee1b29e5e0ce5` |
+| 16 | `theorem` | [LinearMap.injective_iff_antilipschitz](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/linearmap-injective-iff-antilipschitz--12e718ad7c8d5af60eabee87.md) | 221 | `result-track:12e718ad7c8d5af60eabee87975473593c725c05e0f411e9e1fc7bfc29eea5b7` |
+| 17 | `theorem` | [ContinuousLinearMap.isOpen_injective](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/continuouslinearmap-isopen-injective--e202d297556e0a35fe0fc1e0.md) | 232 | `result-track:e202d297556e0a35fe0fc1e0c37a025de9fee62549109f5f7cd20280ad20d975` |
+| 18 | `theorem` | [LinearIndependent.eventually](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/linearindependent-eventually--c3bc0b167126dee28ba98a50.md) | 243 | `result-track:c3bc0b167126dee28ba98a50953557281e5c8d45be2378b2bae575ee73c8219d` |
+| 19 | `theorem` | [isOpen_setOf_linearIndependent](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/isopen-setof-linearindependent--7645bb8e450d9a7bc7c1cdb1.md) | 268 | `result-track:7645bb8e450d9a7bc7c1cdb1b467d85f041b0f90592893571cc965cbe7b59807` |
+| 20 | `theorem` | [isOpen_setOf_nat_le_rank](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/isopen-setof-nat-le-rank--f0e57c4865b5397118679279.md) | 272 | `result-track:f0e57c4865b53971186792798c453ccf94655394d408ad628e99c6fb57e4c999` |
+| 21 | `theorem` | [Basis.opNNNorm_le](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/basis-opnnnorm-le--d96dbab24de814825bdd0f63.md) | 280 | `result-track:d96dbab24de814825bdd0f63081fd0a90427ee57c03f724dab9b956d0c5fc816` |
+| 22 | `theorem` | [Basis.opNorm_le](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/basis-opnorm-le--f8814a44328a9e8a862ed38f.md) | 298 | `result-track:f8814a44328a9e8a862ed38ff0f069526ad6f28426922b6d1c74c631febe99ec` |
+| 23 | `theorem` | [Basis.exists_opNNNorm_le](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/basis-exists-opnnnorm-le--ebf59a874bab7ef998d28ff1.md) | 304 | `result-track:ebf59a874bab7ef998d28ff13a43f28a697acaedbb03105a29b3646abced5522` |
+| 24 | `theorem` | [Basis.exists_opNorm_le](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/basis-exists-opnorm-le--377dc5f39ab50610841a57cc.md) | 313 | `result-track:377dc5f39ab50610841a57cc8932d3f1b61ff1639720d91fd54ba4a06fff7093` |
+| 25 | `instance` | [(anonymous)](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/instance--a3dc3087f461e67e6df9d98c.md) | 320 | `declaration-track:a3dc3087f461e67e6df9d98cbf988a7abec849f8b5155180cf11c82d12536653` |
+| 26 | `theorem` | [AffineSubspace.closed_of_finiteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/affinesubspace-closed-of-finitedimensional--b2c51b76969120e2c3cf25fc.md) | 365 | `result-track:b2c51b76969120e2c3cf25fce1cb8eedb24b582cae16a59a4df9977d542efd75` |
+| 27 | `theorem` | [exists_norm_le_le_norm_sub_of_finset](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/exists-norm-le-le-norm-sub-of-finset--9fc5d04c906247b89356c5bc.md) | 374 | `result-track:9fc5d04c906247b89356c5bc5d803d75b198ec1d52e66b7253806d0cae164733` |
+| 28 | `theorem` | [exists_seq_norm_le_one_le_norm_sub'](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/exists-seq-norm-le-one-le-norm-sub--c55f87f10a8e9b054241a350.md) | 399 | `result-track:c55f87f10a8e9b054241a35067cb38f14fc257c3306f27fe0f1f4d219c5fd399` |
+| 29 | `theorem` | [exists_seq_norm_le_one_le_norm_sub](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/exists-seq-norm-le-one-le-norm-sub--5bfcce79c3a06f974ff2e3bf.md) | 412 | `result-track:5bfcce79c3a06f974ff2e3bfc6421d489c77c68c2907fd1172f072614b3abad2` |
+| 30 | `theorem` | [FiniteDimensional.of_isCompact_closedBall₀](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/finitedimensional-of-iscompact-closedball--2859d18b452a7a3745ed4f0b.md) | 423 | `result-track:2859d18b452a7a3745ed4f0b69e39da3e276f0f6317cece38ec4bcd3d5275a43` |
+| 31 | `theorem` | [FiniteDimensional.of_isCompact_closedBall](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/finitedimensional-of-iscompact-closedball--5a31f8a652d75ff1d1c56e0a.md) | 458 | `result-track:5a31f8a652d75ff1d1c56e0af468a500110d4f7d225660f5d403a477a97c843e` |
+| 32 | `theorem` | [FiniteDimensional.of_locallyCompactSpace](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/finitedimensional-of-locallycompactspace--0a778ef7c43609486eb36913.md) | 463 | `result-track:0a778ef7c43609486eb369131d2d3cf1bc968248285acd1d76d570e64d79d7df` |
+| 33 | `theorem` | [HasCompactSupport.eq_zero_or_finiteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/hascompactsupport-eq-zero-or-finitedimensional--d0db7ef723500e8d4f8924de.md) | 470 | `result-track:d0db7ef723500e8d4f8924deecc7fc5041e51a8d686d2ce48728084c11ce4786` |
+| 34 | `theorem` | [HasCompactMulSupport.eq_one_or_finiteDimensional](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/hascompactmulsupport-eq-one-or-finitedimensional--096d864c087b4a5529c66dc4.md) | 480 | `result-track:096d864c087b4a5529c66dc488288da301465da975533942abb831b53b6e3495` |
+| 35 | `lemma` | [ProperSpace.of_locallyCompactSpace](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/properspace-of-locallycompactspace--62289da637ea7b4228d003ff.md) | 487 | `result-track:62289da637ea7b4228d003ff794494d69e0a7802175f362b3273bf32a8af1e67` |
+| 36 | `lemma` | [ProperSpace.of_locallyCompact_module](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/properspace-of-locallycompact-module--73cc467cb8205cf5949d233c.md) | 500 | `result-track:73cc467cb8205cf5949d233cbc7ba5b7b24b21e22fa4210b1d49e1f1b53276f3` |
+| 37 | `def` | [ContinuousLinearEquiv.piRing](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/continuouslinearequiv-piring--851866d4a5d87a9daa788607.md) | 516 | `declaration-track:851866d4a5d87a9daa78860786f78efed1cddfd29dbe7a3b7f395a43993bd22e` |
+| 38 | `theorem` | [continuousOn_clm_apply](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/continuouson-clm-apply--edb3cafbc26cfd0d4ed8633d.md) | 540 | `result-track:edb3cafbc26cfd0d4ed8633de3fc9ab3025e3d9f6fd0952d32d8ba66e6af8d4d` |
+| 39 | `theorem` | [continuous_clm_apply](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/continuous-clm-apply--7f50e420d0d8b46b2a0c76e0.md) | 551 | `result-track:7f50e420d0d8b46b2a0c76e008baf0aa65c60a3185bf1cd74a3e7867c879f101` |
+| 40 | `theorem` | [FiniteDimensional.proper](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/finitedimensional-proper--b3fec312de110b8704e7fd2d.md) | 566 | `result-track:b3fec312de110b8704e7fd2de67f3d615a99b7feec752e4effb319e188f2b787` |
+| 41 | `instance` | [(anonymous)](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/instance--54b6e29eaeabd8f1d6f804df.md) | 575 | `declaration-track:54b6e29eaeabd8f1d6f804df72b47276a004ec90af2e06845d5eecc4f504b413` |
+| 42 | `instance` | [(anonymous)](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/instance--77831d5d657df955bd1aa921.md) | 581 | `declaration-track:77831d5d657df955bd1aa921dbbc2a3561cabac76d5a571f7906b15dbb651a1b` |
+| 43 | `theorem` | [exists_mem_frontier_infDist_compl_eq_dist](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/exists-mem-frontier-infdist-compl-eq-dist--8f02bd750c898590f94aa683.md) | 593 | `result-track:8f02bd750c898590f94aa683198a530355e694fee94bd3b56b6ff012f8de01b9` |
+| 44 | `theorem` | [IsCompact.exists_mem_frontier_infDist_compl_eq_dist](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/iscompact-exists-mem-frontier-infdist-compl-eq-dist--0f1505b028079f669db77f31.md) | 605 | `result-track:0f1505b028079f669db77f31b53df5723a92c83b3e17ee8f81b551dab266ed14` |
+| 45 | `theorem` | [summable_norm_iff](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/summable-norm-iff--322e43e116c67e9cfa634b83.md) | 625 | `result-track:322e43e116c67e9cfa634b83e204ec2bdaf095fd2bc309aa157843132097d0df` |
+| 46 | `theorem` | [summable_of_sum_range_norm_le](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/summable-of-sum-range-norm-le--f6d904c9312e185b49b44df3.md) | 647 | `result-track:f6d904c9312e185b49b44df34789ba8c6874f7baf069499778c349285ae771b6` |
+| 47 | `theorem` | [summable_of_isBigO'](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/summable-of-isbigo--533d3acf3f31f24d5c8c2a4f.md) | 652 | `result-track:533d3acf3f31f24d5c8c2a4fec66b987ee0620f294f889d4cfb469b4c98edc11` |
+| 48 | `lemma` | [Asymptotics.IsBigO.comp_summable](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/asymptotics-isbigo-comp-summable--708041bc24b642336c0dea5b.md) | 657 | `result-track:708041bc24b642336c0dea5b027c7190519db27e7f97c84046354a94ada2c265` |
+| 49 | `theorem` | [summable_of_isBigO_nat'](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/summable-of-isbigo-nat--7d50aa44e9789609503ddf74.md) | 663 | `result-track:7d50aa44e9789609503ddf744cccb9bbf688b4a9ecaabe3bd64039111d99ab62` |
+| 50 | `theorem` | [summable_of_isEquivalent](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/summable-of-isequivalent--54e1a7007e9d13da4e1e8d55.md) | 668 | `result-track:54e1a7007e9d13da4e1e8d557f35582c404883f6219fd2767e2007693d125f97` |
+| 51 | `theorem` | [summable_of_isEquivalent_nat](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/summable-of-isequivalent-nat--3e9a517cd614baf23d98458d.md) | 673 | `result-track:3e9a517cd614baf23d98458da64031a261201ceeb4a446f1144cc10ec6d73cd3` |
+| 52 | `theorem` | [IsEquivalent.summable_iff](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/isequivalent-summable-iff--f8643a96c583c06a531adb3a.md) | 678 | `result-track:f8643a96c583c06a531adb3a89c2a064aca42e90ac373ceb72fab7b3048c6dfb` |
+| 53 | `theorem` | [IsEquivalent.summable_iff_nat](../../../../../mathematics/Analysis/AsymptoticAnalysis/FiniteDimension/Variant0b74f5c5fb195ed54f451269071f3f72ee1c230ca25d216d118496fc9597aca7.lean/declarations/isequivalent-summable-iff-nat--b5de2562e546bfcdb6d7c841.md) | 683 | `result-track:b5de2562e546bfcdb6d7c84188adb1a77f6c7bc4371ed11fbc0b33109accae6c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

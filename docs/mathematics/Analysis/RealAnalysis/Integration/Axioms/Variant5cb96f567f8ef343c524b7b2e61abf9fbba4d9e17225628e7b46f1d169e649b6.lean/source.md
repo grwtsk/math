@@ -1,0 +1,245 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.Axioms.Variant5cb96f567f8ef343c524b7b2e61abf9fbba4d9e17225628e7b46f1d169e649b6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1a532e7e4388039bc72cb212ed9b689c4b1efcff` · SHA-256 `cf474865bdd4479c36ec2fa481093f2494245fd7f26a80255224f04c82c3aa54`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.Architecture.Variantb7446dd6d3ad114249731aab7158acf9683e23fc0e87e56dcdfc7b0c5d4d6b59","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b7446dd6d3ad114249731aab7158acf9683e23fc0e87e56dcdfc7b0c5d4d6b59","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.Architecture.Variantb7446dd6d3ad114249731aab7158acf9683e23fc0e87e56dcdfc7b0c5d4d6b59","mathematical_subject":"Analysis.Integration","original_sha256":"b7446dd6d3ad114249731aab7158acf9683e23fc0e87e56dcdfc7b0c5d4d6b59","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:7efa13e69b700c346112dd54/workspace/lib/Surface/Audit/Axioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+module
+
+public import Surface.Audit.Architecture
+import Surface.Rotation
+import Surface.Refactor
+
+/-!
+The output of these commands is captured by the canonical build audit.  The
+soundness boundary must depend on no project-local axioms.
+-/
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.Architecture.Variantb7446dd6d3ad114249731aab7158acf9683e23fc0e87e56dcdfc7b0c5d4d6b59
+
+#print axioms Surface.Core.verifyStatementPreservation_sound
+#print axioms Surface.Core.KernelReceipt.matchesTask_sound
+#print axioms Surface.Core.CheckedTrial.statement_preserved
+#print axioms Surface.Core.CheckedTrial.kernel_proof
+#print axioms Surface.Audit.every_patch_preserves_theorem_task
+#print axioms Surface.Rotation.rodrigues_matrix_exp
+#print axioms Surface.Core.CyclicNeutral.phaseAngle_add_one
+#print axioms Surface.Core.CyclicNeutral.lightness_add_one
+#print axioms Surface.Core.CyclicNeutral.opacityBase_add_one
+#print axioms Surface.Core.CyclicNeutral.greenShift_add_one
+#print axioms Surface.Core.CyclicNeutral.opacity_add_one
+#print axioms Surface.Core.CyclicNeutral.sample_add_one
+#print axioms Surface.Core.CyclicNeutral.colorSample_add_one
+#print axioms Surface.Core.CyclicAngle.fromAngle_toAngle
+#print axioms Surface.Core.CyclicAngle.toAngle_fromAngle
+#print axioms Surface.Core.CyclicAngle.toAngle_toReal_eq_phaseAngle_of_le_half
+#print axioms Surface.Core.CyclicAngle.toAngle_toReal_eq_phaseAngle_sub_two_pi_of_half_lt
+#print axioms Surface.Core.CyclicHolonomy.card_coverPhase
+#print axioms Surface.Core.CyclicHolonomy.successor_iterate_eq_advance
+#print axioms Surface.Core.CyclicHolonomy.StepSystem.monodromy_successor_eq_conjugate
+#print axioms Surface.Core.CyclicHolonomy.StepSystem.monodromy_successor_mem_of_mem_normalizer
+#print axioms Surface.Core.CyclicHolonomy.StepSystem.monodromy_successor_mem_of_normal
+#print axioms Surface.Core.CyclicHolonomy.StepSystem.monodromy_eq_halfTransport_trans_self
+#print axioms Surface.Core.CyclicHolonomy.StepSystem.isParallelSection_closesAfterCircuit
+#print axioms Surface.Core.CyclicHolonomy.StepSystem.forwardProduct_decomposition
+#print axioms Surface.Core.CyclicStream.streamTransport_two_apply
+#print axioms Surface.Core.CyclicStream.reverseStreamTransport_two_apply
+#print axioms Surface.Core.CyclicStream.braidedStream_mod_cycle_apply
+#print axioms Surface.Core.CyclicStream.streamTransport_add
+#print axioms Surface.Core.CyclicStream.phaseStreamTransport_successor_eq_forwardProduct
+#print axioms Surface.Core.CyclicStream.phaseStreamTransport_successor_cycle_eq_monodromy
+#print axioms Surface.Core.CyclicStream.streamTransport_mem_subgroup
+#print axioms Surface.Core.CyclicPrimeWalk.standardPlane_coordinates
+#print axioms Surface.Core.CyclicPrimeWalk.mem_zeroSumSubspace_iff
+#print axioms Surface.Core.CyclicPrimeWalk.zeroSumSubspace_map_permutationRepresentation
+#print axioms Surface.Core.CyclicPrimeWalk.restrictedSwap01_toMatrix
+#print axioms Surface.Core.CyclicPrimeWalk.restrictedSwap12_toMatrix
+#print axioms Surface.Core.CyclicPrimeWalk.adjacentSwap12_standardBasisU
+#print axioms Surface.Core.CyclicPrimeWalk.reflectionAxes_inner_eq_cos_pi_div_three
+#print axioms Surface.Core.CyclicPrimeWalk.reflectionProduct_normSq
+#print axioms Surface.Core.CyclicPrimeWalk.reflectionProduct_det
+#print axioms Surface.Core.CyclicPrimeWalk.idealTransition_positive_eigenvector
+#print axioms Surface.Core.CyclicPrimeWalk.idealTransition_negative_eigenvector
+#print axioms Surface.Core.CyclicPrimeWalk.idealTransition_normSq
+#print axioms Surface.Core.CyclicPrimeWalk.idealStandardSpectralGap_eq_half
+#print axioms Surface.Core.CyclicPrimeWalk.empiricalTransition_sq
+#print axioms Surface.Core.CyclicPrimeWalk.centeredWeightFromCounts
+#print axioms Surface.Core.CyclicPrimeWalk.signedObservable_discrepancy
+#print axioms Surface.Core.CyclicPrimeWalk.discrepancy_trace
+#print axioms Surface.Core.CyclicPrimeWalk.discrepancy_det
+#print axioms Surface.Core.CyclicPrimeWalk.discrepancy_normSq
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.normalizedStandardBasis_orthonormal
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.normalizedStandardBasis_spans
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.standardPlaneIsometryEquiv_basis_zero
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.standardPlaneIsometryEquiv_basis_one
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.generatorDifferenceOperator_norm
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.discrepancyOperator_norm
+#print axioms Surface.Core.CyclicPrimeWalkEuclidean.idealTransitionOperator_norm
+#print axioms Surface.Core.AnalyticPrimeWalk.conductorThreeCharacter_ne_one
+#print axioms Surface.Core.AnalyticPrimeWalk.conductorThreeCharacter_isPrimitive
+#print axioms Surface.Core.AnalyticPrimeWalk.centeredWeight_empiricalWeightAt_eq_delta
+#print axioms Surface.Core.AnalyticPrimeWalk.frobeniusPairing_eq_trace_transpose_mul
+#print axioms Surface.Core.AnalyticPrimeWalk.restrictedGeneratorDifference_toMatrix
+#print axioms Surface.Core.AnalyticPrimeWalk.tracePairing_conj
+#print axioms Surface.Core.AnalyticPrimeWalk.orientedEndTrace_centeredWeight_generatorDifference
+#print axioms Surface.Core.AnalyticPrimeWalk.frobeniusPairing_orientedProbe_discrepancy
+#print axioms Surface.Core.AnalyticPrimeWalk.frobeniusPairing_oneThirdProbe_discrepancy
+#print axioms Surface.Core.AnalyticPrimeWalk.indexedSignedObservable_eq_delta
+#print axioms Surface.Core.AnalyticPrimeWalk.negativeIndexedObservableEvent_eq_deltaEvent
+#print axioms Surface.Core.AnalyticPrimeWalk.abstractNegativeBias_of_inputs
+#print axioms Surface.Core.AnalyticPrimeWalk.harmonicMeasure_singleton
+#print axioms Surface.Core.AnalyticPrimeWalk.harmonicMeasure_finset
+#print axioms Surface.Core.AnalyticPrimeWalk.harmonicMeasure_filter_Icc
+#print axioms Surface.Core.AnalyticPrimeWalk.harmonicMeasure_negativeObservableSample
+#print axioms Surface.Core.AnalyticPrimeWalk.negativeObservableBool_eq_true_iff
+#print axioms Surface.Core.AnalyticPrimeWalk.negativeObservableMass_eq_indicator_sum
+#print axioms Surface.Core.AnalyticPrimeWalk.nativeLogDensityFunctional_eq_some_iff
+#print axioms Surface.Core.AnalyticPrimeWalk.abstractNegativeObservableBias_native_iff
+#print axioms Surface.Core.ConductorThreeCritical.count_eligible_eq_residue_sum
+#print axioms Surface.Core.ConductorThreeCritical.infinite_eligibleResidueSixPrimes
+#print axioms Surface.Core.ConductorThreeCritical.actualEligiblePrimeCutoff_indexes
+#print axioms Surface.Core.ConductorThreeCritical.indexedDiscrepancyOperator_norm
+#print axioms Surface.Core.ConductorThreeCritical.actualIndexedArithmeticBias_eq
+#print axioms Surface.Core.ConductorThreeCritical.actualIndexedErrorOperator_norm_eq_countDifference
+#print axioms Surface.Core.ConductorThreeCritical.conductorThreeCriticalRate_pos
+#print axioms Surface.Core.ConductorThreeCritical.matrixCriticalDecay_iff_arithmeticBiasCriticalDecay
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeIntegerValue_mod_zero
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeIntegerValue_mod_one
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeIntegerValue_mod_two
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeIntegerValue_cases
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeIntegerValue_eq_zero_iff
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeIntegerValue_mul
+#print axioms Surface.Core.ConductorThreeCharacterArithmetic.conductorThreeCharacter_eq_intCast
+#print axioms Surface.Core.ConductorThreeVonMangoldt.twistedVonMangoldtThree_eq_residue_difference
+#print axioms Surface.Core.ConductorThreeVonMangoldt.conductorThreePsi_eq_residue_difference
+#print axioms Surface.Core.ConductorThreeVonMangoldt.conductorThreePsiComplex_eq_real
+#print axioms Surface.Core.ConductorThreePrimeReindex.eligibleResidueSixPrime_iff_prime_and_three_lt
+#print axioms Surface.Core.ConductorThreePrimeReindex.nth_eligibleResidueSixPrime_eq_nth_prime_add_two
+#print axioms Surface.Core.ConductorThreePrimeReindex.actualEligiblePrimeCutoff_eq_nthPrime
+#print axioms Surface.Core.ConductorThreePrimeReindex.actualEligiblePrimeCutoff_le_iff_count_succ
+#print axioms Surface.Core.ConductorThreePrimeReindex.actualResidueSixCounts_plateau
+#print axioms Surface.Core.ConductorThreePrimeReindex.countDifference_plateau
+#print axioms Surface.Core.ConductorThreePrimeReindex.conductorThreeIntegerValue_eq_one_iff_residueOne
+#print axioms Surface.Core.ConductorThreePrimeReindex.conductorThreeIntegerValue_eq_neg_one_iff_residueFive
+#print axioms Surface.Core.ConductorThreePrimePowerRemoval.conductorThreeIntegerValue_prime_decomposition
+#print axioms Surface.Core.ConductorThreePrimePowerRemoval.conductorThreePrimeCharacterSum_eq_residueDifference
+#print axioms Surface.Core.ConductorThreePrimePowerRemoval.conductorThreePrimeCharacterSum_real_eq_countDifference
+#print axioms Surface.Core.ConductorThreePrimePowerRemoval.conductorThreeTheta_eq_residueDifference
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.indexedMatrixAmplitude_norm
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.UnitSpatialProfile.decoder_encoder
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.unitBallIndicator_ne_zero
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.normalizedUnitBallMode_norm
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.CompleteConductorThreeSpatialRoute.sample_reconstructs_matrixAmplitude
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.matrixCriticalDecay_iff_spatialCriticalDecay
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.actualMatrixCriticalDecay_iff_spatialCriticalDecay
+#print axioms Surface.Core.PrimeWalkLosslessSpatial.actualMatrixCriticalDecay_iff_canonicalSpatialCriticalDecay
+#print axioms Surface.Core.AnalyticPrimeWalk.card_dyadicInterval
+#print axioms Surface.Core.AnalyticPrimeWalk.dyadicInterval_union_succ
+#print axioms Surface.Core.AnalyticPrimeWalk.harmonicMeasure_dyadicSample
+#print axioms Surface.Core.AnalyticPrimeWalk.harmonicMeasure_dyadicInterval
+#print axioms Surface.Core.AnalyticPrimeWalk.dyadicHarmonicMass_add_succ
+#print axioms Surface.Core.PrimeWalkMeasureBridge.trajectory_natCast_eq_discrete
+#print axioms Surface.Core.PrimeWalkMeasureBridge.discreteWindowMeasure_apply
+#print axioms Surface.Core.PrimeWalkMeasureBridge.continuousWalkMeasure_apply
+#print axioms Surface.Core.PrimeWalkMeasureBridge.continuousWalkMeasure_univ
+#print axioms Surface.Core.PrimeWalkMeasureBridge.discreteWindowMeasure_univ
+#print axioms Surface.Core.PrimeWalkMeasureBridge.continuousWalkMeasure_isFinite
+#print axioms Surface.Core.PrimeWalkMeasureBridge.discreteWindowMeasure_isFinite
+#print axioms Surface.Core.PrimeWalkMeasureBridge.discreteWindowMeasure_singleton
+#print axioms Surface.Core.PrimeWalkMeasureBridge.lintegral_continuousWalkMeasure
+#print axioms Surface.Core.PrimeWalkMeasureBridge.lintegral_discreteWindowMeasure
+#print axioms Surface.Core.PrimeWalkMeasureBridge.source_sample_atom_contrast
+#print axioms Surface.Core.PrimeWalkMeasureBridge.continuousWalkMeasure_normTail
+#print axioms Surface.Core.PrimeWalkMeasureBridge.hasWeakL2TailBound_continuous_iff
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.dyadicScale_pos
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.scaledKernel_integrable
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.scaledKernel_integral_eq_zero
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.frequencyMultiplier_zero
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.bochnerProjection_apply
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.bochnerProjection_add
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.finiteSquareFunction_sq
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.finiteSquareFunction_aestronglyMeasurable
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.bridgeProjection_apply
+#print axioms Surface.Core.PrimeWalkLittlewoodPaley.bridgeFiniteSquareFunction_apply
+#print axioms Surface.Core.PrimeWalkTwoScaleGrains.finsetShadingUnion_eq_coarseFibers
+#print axioms Surface.Core.PrimeWalkTwoScaleGrains.fineShadingUnion_eq_grainShadingUnion
+#print axioms Surface.Core.PrimeWalkTwoScaleGrains.grain_coarse_unique
+#print axioms Surface.Core.PrimeWalkTwoScaleGrains.spatialSuperlevelSet_eq_grainShadingUnion
+#print axioms Surface.Core.PrimeWalkTwoScaleGrains.measure_spatialSuperlevelSet_le_grain_sum
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.spatial_reconstruction_apply
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.temporal_reconstruction
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.temporal_residual_lpNorm_le
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.squareSuperlevel_eq_grainShadingUnion
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.squareSuperlevel_subset_grainShadingUnion
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.measure_squareSuperlevel_le_grain_sum
+#print axioms Surface.Core.PrimeWalkSpatialEncoding.multiplicity_powerLaw_of_assumption
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.threshold_sq_mul_measure_superlevel_le_squareEnergy
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.measure_superlevel_ne_top_of_squareEnergy_ne_top
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.threshold_sq_mul_measureReal_superlevel_le_energyReal
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.packetSquareFunction_enorm_sq
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.packetEnergy_ne_top
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.packetSquareEnergy_eq_sum
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.packetSquareEnergy_ne_top
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.threshold_sq_mul_measure_packetSuperlevel_le_energy
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.SpatialEncodedTrajectory.threshold_sq_mul_superlevel_le_packetEnergy
+#print axioms Surface.Core.PrimeWalkSpatialEnergy.matrixNorm_le_of_superlevelVolume
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmissionClock.controlFlowTick_ne_kernelAdmissionTick
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmissionClock.kernelAdmissionTick_ne_handshakeTick
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmissionClock.controlFlow_before_handshake
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.sealAdmissionClock_sound
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.validatePrecedence_sameTick
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.validatePrecedence_regression
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.projectiveTrajectory_apply
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmittedProjectiveTrajectory.observes_signal
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmittedProjectiveTrajectory.transport_identity
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmittedProjectiveTrajectory.transport_cocycle
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmittedProjectiveTrajectory.record_parameter_strict
+#print axioms Surface.Core.PrimeWalkTrajectoryAdmission.AdmittedProjectiveTrajectory.record_has_flatTransport
+#print axioms Surface.Core.SpheroidStereographic.polar_lt_radius
+#print axioms Surface.Core.SpheroidStereographic.inverseRaw_onSpheroid
+#print axioms Surface.Core.SpheroidStereographic.inverse_zero
+#print axioms Surface.Core.SpheroidStereographic.project_inverse
+#print axioms Surface.Core.SpheroidStereographic.inverse_project
+#print axioms Surface.Core.SpheroidStereographic.project_angularPoint
+#print axioms Surface.Core.SpheroidStereographic.norm_project_angularPoint
+#print axioms Surface.Core.SpheroidStereographic.tendsto_chartRadius_at_north
+#print axioms Surface.Core.StereographicBanach.FiniteOnePointChart.finiteOnePointChart_isComplete_univ
+#print axioms Surface.Core.StereographicBanach.riemannFiniteChart_isComplete_univ
+#print axioms Surface.Core.StereographicBanach.riemannChart_zero_maps_to_south
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.finiteSpheroidChart_isComplete_univ
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.zero_eq_ofCoordinates
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.zero_ambient_eq_south
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.add_eq_ofCoordinates
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.smul_eq_ofCoordinates
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.norm_eq_polar_formula
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.dist_eq_coordinates
+#print axioms Surface.Core.SpheroidBanach.FiniteSpheroidChart.northGap_eq_norm_formula
+#print axioms Surface.Core.CFCProjection.cfcSpectralProjection_isStarProjection
+#print axioms Surface.Core.CFCProjection.spectralSingleton_isClopen_of_gap
+#print axioms Surface.Core.ProjectiveFubiniStudy.fubiniStudyBase_triangle
+#print axioms Surface.Core.ProjectiveFubiniStudy.projectiveDistance_triangle
+#print axioms Surface.Core.ProjectiveFubiniStudy.eq_of_projectiveDistance_eq_zero
+#print axioms Surface.Core.ProjectivePerturbation.norm_rayProjection_sub_eq_sin_projectiveDistance
+#print axioms Surface.Core.ProjectivePerturbation.projectiveDistance_mk_le_arcsin_perturbation_div_reducedGap
+#print axioms Surface.Core.RieszCircle.resolvent_sub_resolvent
+#print axioms Surface.Core.RieszCircle.perturbation_resolvent_equation
+#print axioms Surface.Core.RieszCircle.circleRieszCandidate_eq_of_annulus
+#print axioms Surface.Core.RieszCircle.norm_circleRieszCandidate_sub_le
+#print axioms Surface.Core.RieszRankOne.circleRieszCandidate_idempotent_eq
+#print axioms Surface.Core.RieszRankOne.rankOneResolventCircle_isProjection
+#print axioms Surface.Refactor.model_proposal_not_kernel_authority
+#print axioms Surface.Refactor.classifier_does_not_promote_model_authority
+#print axioms Surface.Refactor.checked_trial_exposes_task_proposition
+#print axioms Surface.Refactor.field_only_does_not_authorize_exact_torsion_power
+#print axioms Surface.Refactor.mixed_radix_rank_in_bounds
+#print axioms Surface.Refactor.mixed_radix_decode_encode
+#print axioms Surface.Refactor.exhaustive_argmin_is_minimal_on_enumerated_set
+#print axioms Surface.Refactor.applied_requires_review_approval
+```

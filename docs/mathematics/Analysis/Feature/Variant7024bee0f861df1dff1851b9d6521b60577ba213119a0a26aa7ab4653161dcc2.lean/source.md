@@ -1,0 +1,112 @@
+# Complete source: GRWTSK.Analysis.Feature.Variant7024bee0f861df1dff1851b9d6521b60577ba213119a0a26aa7ab4653161dcc2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cc650eb0a37a2382fbe8a30860b34fc7d66f5d63` · SHA-256 `dae7a3ce02dc1a953daf9647ce53c30436f903437731c22f45efbf69ca816121`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.FiniteFeatureFamily.Variantc86cdee603defee5b56b5cf7932a853ed9b4da773a6c22d737dd5c5282a2e855","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c86cdee603defee5b56b5cf7932a853ed9b4da773a6c22d737dd5c5282a2e855","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.FiniteFeatureFamily.Variantc86cdee603defee5b56b5cf7932a853ed9b4da773a6c22d737dd5c5282a2e855","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"c86cdee603defee5b56b5cf7932a853ed9b4da773a6c22d737dd5c5282a2e855","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Surface/.surface/revoked-artifacts/source-structure/2487c9da77d9d8ececb8ffd882948a360b9125bba2b28ca69972182b0e8e2352/failed-candidates/post-application-e89443c73810dcdf/MathDiscovery/Kernel/Feature.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import MathDiscovery.Kernel.Core
+import Mathlib.Analysis.Complex.Basic
+
+/-!
+# Feature-generated kernels
+
+Semantic kernels are constructed from explicit feature maps.  They are not
+accepted as arbitrary pairwise-score tables.  This factorized boundary is what
+makes positive semidefiniteness project-independent and auditable.
+-/
+
+
+namespace GRWTSK.Analysis.FiniteFeatureFamily.Variantc86cdee603defee5b56b5cf7932a853ed9b4da773a6c22d737dd5c5282a2e855
+
+noncomputable section
+
+namespace MathDiscovery.Kernel
+
+open scoped ComplexOrder
+
+universe u
+
+variable {Index : Type u}
+
+/-- A scalar feature generates the rank-one Gram kernel
+`conj (F i) * F j`. -/
+def scalarFeatureKernel (feature : Index → ℂ) : PositiveKernel Index where
+  matrix i j := star (feature i) * feature j
+  positiveSemidefinite := by
+    constructor
+    · ext i j
+      simp [mul_comm]
+    · intro coefficients
+      let value := coefficients.sum fun i coefficient =>
+        coefficient * feature i
+      have factorization :
+          coefficients.sum (fun i coefficient =>
+            coefficients.sum (fun j other =>
+              star coefficient * (star (feature i) * feature j) * other)) =
+            star value * value := by
+        calc
+          _ = coefficients.sum (fun i coefficient =>
+                star (coefficient * feature i) * value) := by
+            apply Finsupp.sum_congr
+            intro i _
+            rw [Finsupp.mul_sum]
+            apply Finsupp.sum_congr
+            intro j _
+            rw [star_mul]
+            ring
+          _ = star value * value := by
+            unfold value
+            rw [star_finsuppSum, Finsupp.sum_mul]
+            apply Finsupp.sum_congr
+            intro _ _
+            rfl
+      rw [factorization]
+      simpa using star_left_conjugate_nonneg
+        (show (0 : ℂ) ≤ 1 by simp) value
+
+@[simp]
+theorem scalarFeatureKernel_apply
+    (feature : Index → ℂ) (i j : Index) :
+    scalarFeatureKernel feature i j = star (feature i) * feature j :=
+  rfl
+
+/-- A finite vector-valued feature map generates its exact Gram kernel. -/
+def finiteFeatureKernel
+    {Feature : Type} [Fintype Feature]
+    (feature : Index → Feature → ℂ) : PositiveKernel Index where
+  matrix := ∑ coordinate,
+    (scalarFeatureKernel (fun index => feature index coordinate)).matrix
+  positiveSemidefinite := Matrix.posSemidef_sum Finset.univ fun coordinate _ =>
+    (scalarFeatureKernel
+      (fun index => feature index coordinate)).positiveSemidefinite
+
+@[simp]
+theorem finiteFeatureKernel_apply
+    {Feature : Type} [Fintype Feature]
+    (feature : Index → Feature → ℂ) (i j : Index) :
+    finiteFeatureKernel feature i j =
+      ∑ coordinate, star (feature i coordinate) * feature j coordinate := by
+  change (∑ coordinate,
+    (scalarFeatureKernel (fun index => feature index coordinate)).matrix) i j = _
+  rw [Matrix.sum_apply]
+  rfl
+
+/-- Runtime-friendly finite feature family.  `Index` may remain arbitrary;
+only the feature dimension of one compiled project snapshot is finite. -/
+structure FiniteFeatureFamily (Index : Type u) where
+  dimension : Nat
+  value : Index → Fin dimension → ℂ
+
+/-- Kernel generated by a finite feature family. -/
+def FiniteFeatureFamily.kernel
+    (family : FiniteFeatureFamily Index) : PositiveKernel Index :=
+  finiteFeatureKernel family.value
+
+end MathDiscovery.Kernel
+```

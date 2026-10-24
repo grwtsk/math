@@ -1,0 +1,118 @@
+# Verification target: GRWTSK.Analysis.RealAnalysis.Integration.Basic.Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8642bb731c6c7d7982c045bce1fced92b98765f1",
+  "lexical_observation_count": 57,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/index.md) · [Full source](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8642bb731c6c7d7982c045bce1fced92b98765f1`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [innerProbChar](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/innerprobchar--8917b3c7f4f5401d68c9d208.md) | 67 | `declaration-track:8917b3c7f4f5401d68c9d20821f6c59b5070ef69a2ff95e220fad37f019b9af1` |
+| 2 | `lemma` | [innerProbChar_apply](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/innerprobchar-apply--d1ece695b9dd2dcc02c9169a.md) | 70 | `result-track:d1ece695b9dd2dcc02c9169a20d2f737bae10bfc4292f7eca3b7d1083eea2327` |
+| 3 | `lemma` | [innerProbChar_zero](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/innerprobchar-zero--b720135ee23ddf65330dac87.md) | 74 | `result-track:b720135ee23ddf65330dac87721c55802a9dc8c04546fdaa03628693a0425496` |
+| 4 | `def` | [probCharDual](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/probchardual--5a619619e40e37781ecf51e4.md) | 78 | `declaration-track:5a619619e40e37781ecf51e4e1a68038bb5a2d53a724107fba5b50b39319bf05` |
+| 5 | `lemma` | [probCharDual_apply](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/probchardual-apply--c29f7ee3a1e165462c2d3291.md) | 83 | `result-track:c29f7ee3a1e165462c2d3291f5a688bcf17a030f31371d8f400199d5ad267084` |
+| 6 | `lemma` | [probCharDual_zero](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/probchardual-zero--3e03c4607ae98a28ca6bd569.md) | 87 | `result-track:3e03c4607ae98a28ca6bd5695d89c4ae6b736d42df754bc70244e34bdf265228` |
+| 7 | `theorem` | [ext_of_integral_char_eq](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/ext-of-integral-char-eq--ee25566531523f4580f632cd.md) | 103 | `result-track:ee25566531523f4580f632cd8675b9053cea776d6343b159ba8ece710fdb4739` |
+| 8 | `def` | [charFun](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun--8480d732ef40bbeba6c37946.md) | 130 | `declaration-track:8480d732ef40bbeba6c3794668da3f3a37e25bcd0de886d689d4b90b9134a4a1` |
+| 9 | `lemma` | [charFun_apply](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-apply--caeafcdf16f9e62bf888a728.md) | 132 | `result-track:caeafcdf16f9e62bf888a7285e2ec83bf57f80a92c2fb349581df250df1d61e4` |
+| 10 | `lemma` | [charFun_apply_real](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-apply-real--65ee6a43de18b0aff4fc7747.md) | 134 | `result-track:65ee6a43de18b0aff4fc774723af74b5cfb4b8aa24d1fce8f742d50158dea0aa` |
+| 11 | `lemma` | [charFun_zero](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-zero--b782becd666c1643a6360cbe.md) | 140 | `result-track:b782becd666c1643a6360cbe89865118b0d0f815731cb12ff8a783abc0f75876` |
+| 12 | `lemma` | [charFun_zero_measure](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-zero-measure--790579c59bb9593a723d5267.md) | 144 | `result-track:790579c59bb9593a723d52678f877731356c66d4867506f5e2659a718ac76c12` |
+| 13 | `lemma` | [charFun_neg](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-neg--e59363e53029506b99677304.md) | 147 | `result-track:e59363e53029506b996773049850cc388ab656effa24ac91eb50f361ccee3a5c` |
+| 14 | `lemma` | [charFun_eq_integral_innerProbChar](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-integral-innerprobchar--396d2019ada3759b7f621466.md) | 151 | `result-track:396d2019ada3759b7f621466a30b04aea1f7d823187aa0967a81f33ed91f75b9` |
+| 15 | `lemma` | [charFun_eq_integral_probChar](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-integral-probchar--be7d0fdb5a23651be532f546.md) | 154 | `result-track:be7d0fdb5a23651be532f546d6b811c83f98dc760e003df7ed2fcab100e041bc` |
+| 16 | `lemma` | [charFun_eq_fourierIntegral](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-fourierintegral--31cb7eba0397854f3971cb41.md) | 158 | `result-track:31cb7eba0397854f3971cb41d444bf8d2051932667da9b77a4b4d4782fa47533` |
+| 17 | `lemma` | [charFun_eq_fourierIntegral'](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-fourierintegral--8e92aedffd63f597886ad719.md) | 163 | `result-track:8e92aedffd63f597886ad7198af5fc59d492eae6bc1210dec6962501f11cf986` |
+| 18 | `lemma` | [norm_charFun_le](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/norm-charfun-le--70f4779efa8f29ef8455a6ab.md) | 173 | `result-track:70f4779efa8f29ef8455a6ab26caa86725f9eeb1eb652c1ccc9c696bc11a88b7` |
+| 19 | `lemma` | [norm_charFun_le_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/norm-charfun-le-one--3e43bc8b14bcd90c673b16b6.md) | 177 | `result-track:3e43bc8b14bcd90c673b16b600634f1a7b511b431398afbf737e41b7e043e459` |
+| 20 | `lemma` | [norm_one_sub_charFun_le_two](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/norm-one-sub-charfun-le-two--7e50c745ca40edd468fbb699.md) | 180 | `result-track:7e50c745ca40edd468fbb6997e73eff584bdad77115663be50c746427ccbe2e1` |
+| 21 | `lemma` | [stronglyMeasurable_charFun](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/stronglymeasurable-charfun--d05338bc7329fcfc1df987af.md) | 187 | `result-track:d05338bc7329fcfc1df987afb68108bf280161dd977f651ae489515fdef4a410` |
+| 22 | `lemma` | [measurable_charFun](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/measurable-charfun--37a299bc75beb5c9d9277718.md) | 192 | `result-track:37a299bc75beb5c9d92777186651cc5f79a281b7d2f4f0bfa71cf6da326b6a88` |
+| 23 | `lemma` | [intervalIntegrable_charFun](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/intervalintegrable-charfun--d4f668dc8c148baa87ed4817.md) | 196 | `result-track:d4f668dc8c148baa87ed481763005cbbeffe4cae1f2d9cd581cc1421fe055b88` |
+| 24 | `lemma` | [charFun_map_eq_charFun_map_inner_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-eq-charfun-map-inner-one--21167f6d9ed92044e0d23abc.md) | 201 | `result-track:21167f6d9ed92044e0d23abc9fae0c2685a962e24c94d5b25f0066aaa65af971` |
+| 25 | `lemma` | [charFun_map_smul](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-smul--bc905c3d4dafdc9c1c374064.md) | 208 | `result-track:bc905c3d4dafdc9c1c374064e16a16376345655f9b3bb0fd7f465d2391d7a8e6` |
+| 26 | `lemma` | [charFun_map_smul_comp](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-smul-comp--dd63f327e81f423c426e3711.md) | 214 | `result-track:dd63f327e81f423c426e37118789d03f9de9033953fb142abf3e3b3341b8d39d` |
+| 27 | `lemma` | [charFun_map_mul](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-mul--4b0ea0f06173511a3ed55225.md) | 221 | `result-track:4b0ea0f06173511a3ed55225ee0a470bcd57a85494702690b2d8bd035d73b448` |
+| 28 | `lemma` | [charFun_map_mul_comp](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-mul-comp--3570a8a2018e5322da9defb1.md) | 224 | `result-track:3570a8a2018e5322da9defb18af46b40f2739e7b05b0aac70f2f4883a264384e` |
+| 29 | `lemma` | [charFun_dirac](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-dirac--01bebb0bd03bf05f0f452dfb.md) | 233 | `result-track:01bebb0bd03bf05f0f452dfb0f8dd1bf74092fb99281ca2249f367a4dee6bd72` |
+| 30 | `lemma` | [charFun_map_add_const](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-add-const--f6f990ecb27e5b7ed7143075.md) | 237 | `result-track:f6f990ecb27e5b7ed714307541630e93463eaf42e7c69d21f39c0fda86f3c1ad` |
+| 31 | `lemma` | [charFun_map_const_add](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-const-add--f67e35a5f757c648c04b5141.md) | 248 | `result-track:f67e35a5f757c648c04b5141ecea34168311f5779e3cd1865e54e53a1868a69c` |
+| 32 | `theorem` | [Measure.ext_of_charFun](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/measure-ext-of-charfun--e9e86b536eefe840b3fcaec4.md) | 257 | `result-track:e9e86b536eefe840b3fcaec497e070a167b977b80bd3ea1c66f0ac06f1223f08` |
+| 33 | `lemma` | [charFun_conv](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-conv--0f5d58ce1e1d39a50b993bb1.md) | 268 | `result-track:0f5d58ce1e1d39a50b993bb1186cd0f73685b34d91305c1de3679b7e88b6935f` |
+| 34 | `lemma` | [charFun_prod](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-prod--5f9268b0c07a2477baaad7d7.md) | 282 | `result-track:5f9268b0c07a2477baaad7d7a417714f0d8a335c7e6cd4e7bb3dd1473ee4cf03` |
+| 35 | `lemma` | [charFun_eq_prod_iff](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-prod-iff--64898dc149af1a92787a60b7.md) | 297 | `result-track:64898dc149af1a92787a60b7d28f5964b6ed1e8e9668ce0d9887cbdf13807ee6` |
+| 36 | `lemma` | [charFun_pi](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-pi--4bdc94a5b4736910a7f5ff5c.md) | 313 | `result-track:4bdc94a5b4736910a7f5ff5c835a788752284c48bdb612aa811ef045f8be9592` |
+| 37 | `lemma` | [charFun_eq_pi_iff](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-pi-iff--d359f2fa3ebd81091068ee60.md) | 325 | `result-track:d359f2fa3ebd81091068ee60f1f2bb8499624bbc0e29bbd81ea0042083af7874` |
+| 38 | `def` | [charFunDual](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual--49ca0eb3c9170f32cb1d1398.md) | 345 | `declaration-track:49ca0eb3c9170f32cb1d13980b4bc13d33d7cdd4feeb652bd1bf5960bae07130` |
+| 39 | `lemma` | [charFunDual_apply](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-apply--cc6b427a8b280b30557cab0c.md) | 347 | `result-track:cc6b427a8b280b30557cab0c4539240b25e5b639448a07a081e7876fedaf7001` |
+| 40 | `lemma` | [charFunDual_eq_charFun_map_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-eq-charfun-map-one--74466b7c22e5eddcf6e2f4fa.md) | 349 | `result-track:74466b7c22e5eddcf6e2f4fa6f8a861eb928d1c3920475394040b42dd4ad5bea` |
+| 41 | `lemma` | [charFun_map_eq_charFunDual_smul](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-map-eq-charfundual-smul--6713923e0316f6e5aed9c678.md) | 359 | `result-track:6713923e0316f6e5aed9c678e2d905fef074f296f39b33358b8839dbf42a6cb6` |
+| 42 | `lemma` | [charFun_eq_charFunDual_toDualMap](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-eq-charfundual-todualmap--ab596a4b4aaa8febf7c3101f.md) | 370 | `result-track:ab596a4b4aaa8febf7c3101f60298b25ab9dc565de1f7111dfa6ae9208a80d9b` |
+| 43 | `lemma` | [charFun_toDual_symm_eq_charFunDual](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfun-todual-symm-eq-charfundual--b077e3b21d242d28a50048c1.md) | 376 | `result-track:b077e3b21d242d28a50048c1a1cccd4d42f839c67be15cc478154eb3d5e09bce` |
+| 44 | `lemma` | [charFunDual_map](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-map--dfd9dbb88f33d2fff21ed38e.md) | 382 | `result-track:dfd9dbb88f33d2fff21ed38efc368dc227195e28858c48b41b873a311fcfc874` |
+| 45 | `lemma` | [charFunDual_dirac](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-dirac--79c0fb26ac16d6cfae820147.md) | 388 | `result-track:79c0fb26ac16d6cfae820147bb963164dd4c1688cf63339b32eeb30ba48a7424` |
+| 46 | `lemma` | [charFunDual_map_add_const](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-map-add-const--4ce7769292c09ebd63849e40.md) | 392 | `result-track:4ce7769292c09ebd63849e40c8d8f5eea29a3cb602000624293cc50bbc8c4ebf` |
+| 47 | `lemma` | [charFunDual_map_const_add](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-map-const-add--a0ce480ed34c84ab317fb433.md) | 402 | `result-track:a0ce480ed34c84ab317fb433293ec312f0cc77f759df233adb0160381b960822` |
+| 48 | `lemma` | [charFunDual_prod](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-prod--6a26efcf6764ff4434277dc3.md) | 410 | `result-track:6a26efcf6764ff4434277dc343bf56caaf95d831c2afe6de0613d7847e65758d` |
+| 49 | `lemma` | [charFunDual_prod'](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-prod--1141a42c1dc566d30e05472e.md) | 419 | `result-track:1141a42c1dc566d30e05472e1263a9e315d3e2fc2801e76411c482c297df7e6e` |
+| 50 | `lemma` | [charFunDual_pi](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-pi--8d70477358f7bf2d576659ca.md) | 436 | `result-track:8d70477358f7bf2d576659ca4f334f5a50e0ab8c6d739112a5d1071cb63367a8` |
+| 51 | `lemma` | [charFunDual_pi'](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-pi--7e77a00fbf33d2096dc666eb.md) | 447 | `result-track:7e77a00fbf33d2096dc666ebe3f1f445c08caa5e13c3d1edeb5abd41434db994` |
+| 52 | `theorem` | [Measure.ext_of_charFunDual](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/measure-ext-of-charfundual--09eb9821cf7824bf95b524df.md) | 462 | `result-track:09eb9821cf7824bf95b524df9399feb9019fe222fc1a66e9f8fba851d63aa71a` |
+| 53 | `lemma` | [charFunDual_eq_prod_iff](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-eq-prod-iff--5064be08e164859c25a80ab1.md) | 475 | `result-track:5064be08e164859c25a80ab18b7e53963f6bff8be55efe98acfc7c5780206413` |
+| 54 | `lemma` | [charFunDual_eq_prod_iff'](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-eq-prod-iff--933e87ba3ab2272a00477b83.md) | 490 | `result-track:933e87ba3ab2272a00477b83d384eadb38602349601dcadaa57a965bf9a0d46d` |
+| 55 | `lemma` | [charFunDual_eq_pi_iff](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-eq-pi-iff--3e1efa08d3b751e711ae8877.md) | 511 | `result-track:3e1efa08d3b751e711ae88770883e00499588bb1f685da75a155d1123feb9595` |
+| 56 | `lemma` | [charFunDual_eq_pi_iff'](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-eq-pi-iff--a24b7dcc24a790755fe3f4ee.md) | 527 | `result-track:a24b7dcc24a790755fe3f4eec8e6932d8a6ba2184ea2e2082cb59b75fc74fb16` |
+| 57 | `lemma` | [charFunDual_conv](../../../../../../mathematics/Analysis/RealAnalysis/Integration/Basic/Variant3f90bba2eb49b295a4dd7bb80f5434f66c31ebdd2801a0bc82e5c9476c9b54e4.lean/declarations/charfundual-conv--f688653f24b8593c7feecfbc.md) | 544 | `result-track:f688653f24b8593c7feecfbc1b24386016f4b65ac80423f67c84a339b1f8da65` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

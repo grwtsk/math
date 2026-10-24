@@ -1,0 +1,157 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.QuaternionExponential.Varianteed9fd925306a10c5a08aa621389d42e2d9e2fa88b085fa75422c56f31570610
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c3e942f60ac41f2f46e1330d0712b9b5274875a8` · SHA-256 `1ce6b9aa7ad6f15fa97d5c03c9b9e4660472f488eb21f489303360ef23b9e287`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.AsymptoticAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.AsymptoticAnalysis.ExpCoe.Variant6129ed8a92eaba563f4b9377375e02f01587b19a068cc6b004abeac5eb76417b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6129ed8a92eaba563f4b9377375e02f01587b19a068cc6b004abeac5eb76417b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.AsymptoticsAndSeries.SourceCorpus.ExpCoe.Variant6129ed8a92eaba563f4b9377375e02f01587b19a068cc6b004abeac5eb76417b","mathematical_subject":"Analysis.AsymptoticsAndSeries","original_sha256":"6129ed8a92eaba563f4b9377375e02f01587b19a068cc6b004abeac5eb76417b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Analysis/NormedSpace/QuaternionExponential.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["custom_or_effectful_command","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+import Mathlib.Analysis.Quaternion
+import Mathlib.Analysis.NormedSpace.Exponential
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
+
+
+namespace GRWTSK.Analysis.AsymptoticAnalysis.ExpCoe.Variant6129ed8a92eaba563f4b9377375e02f01587b19a068cc6b004abeac5eb76417b
+
+#align_import analysis.normed_space.quaternion_exponential from "leanprover-community/mathlib"@"f0c8bf9245297a541f468be517f1bde6195105e9"
+
+/-!
+# Lemmas about `exp` on `Quaternion`s
+
+This file contains results about `exp` on `Quaternion ℝ`.
+
+## Main results
+
+* `Quaternion.exp_eq`: the general expansion of the quaternion exponential in terms of `Real.cos`
+  and `Real.sin`.
+* `Quaternion.exp_of_re_eq_zero`: the special case when the quaternion has a zero real part.
+* `Quaternion.norm_exp`: the norm of the quaternion exponential is the norm of the exponential of
+  the real part.
+
+-/
+
+
+open scoped Quaternion Nat
+
+namespace Quaternion
+
+@[simp, norm_cast]
+theorem exp_coe (r : ℝ) : exp ℝ (r : ℍ[ℝ]) = ↑(exp ℝ r) :=
+  (map_exp ℝ (algebraMap ℝ ℍ[ℝ]) (continuous_algebraMap _ _) _).symm
+#align quaternion.exp_coe Quaternion.exp_coe
+
+local macro_rules | `($x ^ $y) => `(HPow.hPow $x $y) -- Porting note: See issue lean4#2220
+
+/-- Auxiliary result; if the power series corresponding to `Real.cos` and `Real.sin` evaluated
+at `‖q‖` tend to `c` and `s`, then the exponential series tends to `c + (s / ‖q‖)`. -/
+theorem hasSum_expSeries_of_imaginary {q : Quaternion ℝ} (hq : q.re = 0) {c s : ℝ}
+    (hc : HasSum (fun n => (-1 : ℝ) ^ n * ‖q‖ ^ (2 * n) / (2 * n)!) c)
+    (hs : HasSum (fun n => (-1 : ℝ) ^ n * ‖q‖ ^ (2 * n + 1) / (2 * n + 1)!) s) :
+    HasSum (fun n => expSeries ℝ (Quaternion ℝ) n fun _ => q) (↑c + (s / ‖q‖) • q) := by
+  replace hc := hasSum_coe.mpr hc
+  replace hs := (hs.div_const ‖q‖).smul_const q
+  obtain rfl | hq0 := eq_or_ne q 0
+  · simp_rw [expSeries_apply_zero, norm_zero, div_zero, zero_smul, add_zero]
+    simp_rw [norm_zero] at hc
+    convert hc using 1
+    ext (_ | n) : 1
+    · rw [pow_zero, Nat.zero_eq, mul_zero, pow_zero, Nat.factorial_zero, Nat.cast_one,
+        div_one, one_mul, Pi.single_eq_same, coe_one]
+    · rw [zero_pow (mul_pos two_pos (Nat.succ_pos _)), mul_zero, zero_div,
+        Pi.single_eq_of_ne n.succ_ne_zero, coe_zero]
+  simp_rw [expSeries_apply_eq]
+  have hq2 : q ^ 2 = -normSq q := sq_eq_neg_normSq.mpr hq
+  have hqn := norm_ne_zero_iff.mpr hq0
+  refine' HasSum.even_add_odd _ _
+  · convert hc using 1
+    ext n : 1
+    letI k : ℝ := ↑(2 * n)!
+    calc
+      k⁻¹ • q ^ (2 * n) = k⁻¹ • (-normSq q) ^ n := by rw [pow_mul, hq2]; norm_cast
+      _ = k⁻¹ • ↑((-1 : ℝ) ^ n * ‖q‖ ^ (2 * n)) := ?_
+      _ = ↑((-1 : ℝ) ^ n * ‖q‖ ^ (2 * n) / k) := ?_
+    · congr 1
+      rw [neg_pow, normSq_eq_norm_mul_self, pow_mul, sq]
+      push_cast
+      rfl
+    · rw [← coe_mul_eq_smul, div_eq_mul_inv]
+      norm_cast
+      ring_nf
+  · convert hs using 1
+    ext n : 1
+    let k : ℝ := ↑(2 * n + 1)!
+    calc
+      k⁻¹ • q ^ (2 * n + 1) = k⁻¹ • ((-normSq q) ^ n * q) := by
+        rw [pow_succ', pow_mul, hq2]
+        norm_cast
+      _ = k⁻¹ • ((-1 : ℝ) ^ n * ‖q‖ ^ (2 * n)) • q := ?_
+      _ = ((-1 : ℝ) ^ n * ‖q‖ ^ (2 * n + 1) / k / ‖q‖) • q := ?_
+    · congr 1
+      rw [neg_pow, normSq_eq_norm_mul_self, pow_mul, sq, ← coe_mul_eq_smul]
+    · rw [smul_smul]
+      congr 1
+      simp_rw [pow_succ', mul_div_assoc, div_div_cancel_left' hqn]
+      ring
+#align quaternion.has_sum_exp_series_of_imaginary Quaternion.hasSum_expSeries_of_imaginary
+
+/-- The closed form for the quaternion exponential on imaginary quaternions. -/
+theorem exp_of_re_eq_zero (q : Quaternion ℝ) (hq : q.re = 0) :
+    exp ℝ q = ↑(Real.cos ‖q‖) + (Real.sin ‖q‖ / ‖q‖) • q := by
+  rw [exp_eq_tsum]
+  refine' HasSum.tsum_eq _
+  simp_rw [← expSeries_apply_eq]
+  exact hasSum_expSeries_of_imaginary hq (Real.hasSum_cos _) (Real.hasSum_sin _)
+#align quaternion.exp_of_re_eq_zero Quaternion.exp_of_re_eq_zero
+
+/-- The closed form for the quaternion exponential on arbitrary quaternions. -/
+theorem exp_eq (q : Quaternion ℝ) :
+    exp ℝ q = exp ℝ q.re • (↑(Real.cos ‖q.im‖) + (Real.sin ‖q.im‖ / ‖q.im‖) • q.im) := by
+  rw [← exp_of_re_eq_zero q.im q.im_re, ← coe_mul_eq_smul, ← exp_coe, ← exp_add_of_commute,
+    re_add_im]
+  exact Algebra.commutes q.re (_ : ℍ[ℝ])
+#align quaternion.exp_eq Quaternion.exp_eq
+
+theorem re_exp (q : ℍ[ℝ]) : (exp ℝ q).re = exp ℝ q.re * Real.cos ‖q - q.re‖ := by simp [exp_eq]
+#align quaternion.re_exp Quaternion.re_exp
+
+theorem im_exp (q : ℍ[ℝ]) : (exp ℝ q).im = (exp ℝ q.re * (Real.sin ‖q.im‖ / ‖q.im‖)) • q.im := by
+  simp [exp_eq, smul_smul]
+#align quaternion.im_exp Quaternion.im_exp
+
+theorem normSq_exp (q : ℍ[ℝ]) : normSq (exp ℝ q) = exp ℝ q.re ^ 2 :=
+  calc
+    normSq (exp ℝ q) =
+        normSq (exp ℝ q.re • (↑(Real.cos ‖q.im‖) + (Real.sin ‖q.im‖ / ‖q.im‖) • q.im)) :=
+      by rw [exp_eq]
+    _ = exp ℝ q.re ^ 2 * normSq (↑(Real.cos ‖q.im‖) + (Real.sin ‖q.im‖ / ‖q.im‖) • q.im) := by
+      rw [normSq_smul]
+    _ = exp ℝ q.re ^ 2 * (Real.cos ‖q.im‖ ^ 2 + Real.sin ‖q.im‖ ^ 2) := by
+      congr 1
+      obtain hv | hv := eq_or_ne ‖q.im‖ 0
+      · simp [hv]
+      rw [normSq_add, normSq_smul, star_smul, coe_mul_eq_smul, smul_re, smul_re, star_re, im_re,
+        smul_zero, smul_zero, mul_zero, add_zero, div_pow, normSq_coe,
+        normSq_eq_norm_mul_self, ← sq, div_mul_cancel _ (pow_ne_zero _ hv)]
+    _ = exp ℝ q.re ^ 2 := by rw [Real.cos_sq_add_sin_sq, mul_one]
+
+#align quaternion.norm_sq_exp Quaternion.normSq_exp
+
+/-- Note that this implies that exponentials of pure imaginary quaternions are unit quaternions
+since in that case the RHS is `1` via `exp_zero` and `norm_one`. -/
+@[simp]
+theorem norm_exp (q : ℍ[ℝ]) : ‖exp ℝ q‖ = ‖exp ℝ q.re‖ := by
+  rw [norm_eq_sqrt_real_inner (exp ℝ q), inner_self, normSq_exp, Real.sqrt_sq_eq_abs,
+    Real.norm_eq_abs]
+#align quaternion.norm_exp Quaternion.norm_exp
+
+end Quaternion
+```

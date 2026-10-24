@@ -1,0 +1,117 @@
+# Complete source: GRWTSK.Analysis.MeasureTheory.ChebyshevMarkov.Varianta55a26daa1905591b82932487dec2ac6f2089993ddfdd6b1918ec6703faa00b6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c0c67e8b7e09e4bbfc7ae098b191b9dbfdc00eb1` · SHA-256 `1ca40630fe5003ff65265467d53e091cd45ccdb1bcccc2fda587516d5e6bb214`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.MeasureTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.MeasureTheory.PowMulMeasGeLeELpNorm.Variant4e1f700172c8ae2dd54cb04cd6610110b0d4ffc9678b010cab9e09e97ea52144","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4e1f700172c8ae2dd54cb04cd6610110b0d4ffc9678b010cab9e09e97ea52144","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.MeasureTheory.SourceCorpus.PowMulMeasGeLeELpNorm.Variant4e1f700172c8ae2dd54cb04cd6610110b0d4ffc9678b010cab9e09e97ea52144","mathematical_subject":"Analysis.MeasureTheory","original_sha256":"4e1f700172c8ae2dd54cb04cd6610110b0d4ffc9678b010cab9e09e97ea52144","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/MeasureTheory/Function/LpSeminorm/ChebyshevMarkov.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Kexing Ying. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kexing Ying
+-/
+import Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+
+/-!
+# Chebyshev-Markov inequality in terms of Lp seminorms
+
+In this file we formulate several versions of the Chebyshev-Markov inequality
+in terms of the `MeasureTheory.eLpNorm` seminorm.
+-/
+
+namespace GRWTSK.Analysis.MeasureTheory.PowMulMeasGeLeELpNorm.Variant4e1f700172c8ae2dd54cb04cd6610110b0d4ffc9678b010cab9e09e97ea52144
+
+open scoped NNReal ENNReal
+
+namespace MeasureTheory
+
+variable {α E ε' : Type*} {m0 : MeasurableSpace α} [NormedAddCommGroup E]
+  [TopologicalSpace ε'] [ContinuousENorm ε']
+  {p : ℝ≥0∞} (μ : Measure α)
+
+theorem pow_mul_meas_ge_le_eLpNorm (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞)
+    {f : α → ε'} (hf : AEStronglyMeasurable f μ) (ε : ℝ≥0∞) :
+    (ε * μ { x | ε ≤ ‖f x‖ₑ ^ p.toReal }) ^ (1 / p.toReal) ≤ eLpNorm f p μ := by
+  rw [eLpNorm_eq_lintegral_rpow_enorm hp_ne_zero hp_ne_top]
+  gcongr
+  exact mul_meas_ge_le_lintegral₀ (hf.enorm.pow_const _) ε
+
+theorem mul_meas_ge_le_pow_eLpNorm (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞)
+    {f : α → ε'} (hf : AEStronglyMeasurable f μ) (ε : ℝ≥0∞) :
+    ε * μ { x | ε ≤ ‖f x‖ₑ ^ p.toReal } ≤ eLpNorm f p μ ^ p.toReal := by
+  have : 1 / p.toReal * p.toReal = 1 := by
+    refine one_div_mul_cancel ?_
+    rw [Ne, ENNReal.toReal_eq_zero_iff]
+    exact not_or_intro hp_ne_zero hp_ne_top
+  rw [← ENNReal.rpow_one (ε * μ { x | ε ≤ ‖f x‖ₑ ^ p.toReal }), ← this, ENNReal.rpow_mul]
+  gcongr
+  exact pow_mul_meas_ge_le_eLpNorm μ hp_ne_zero hp_ne_top hf ε
+
+/-- A version of Chebyshev-Markov's inequality using Lp-norms. -/
+theorem mul_meas_ge_le_pow_eLpNorm' (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞)
+    {f : α → ε'} (hf : AEStronglyMeasurable f μ) (ε : ℝ≥0∞) :
+    ε ^ p.toReal * μ { x | ε ≤ ‖f x‖ₑ } ≤ eLpNorm f p μ ^ p.toReal := by
+  convert mul_meas_ge_le_pow_eLpNorm μ hp_ne_zero hp_ne_top hf (ε ^ p.toReal) using 4
+  ext x
+  rw [ENNReal.rpow_le_rpow_iff (ENNReal.toReal_pos hp_ne_zero hp_ne_top)]
+
+theorem meas_ge_le_mul_pow_eLpNorm_enorm (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞)
+    {f : α → ε'} (hf : AEStronglyMeasurable f μ)
+    {ε : ℝ≥0∞} (hε : ε ≠ 0) (hmeas_top : ε = ∞ → μ {x | ‖f x‖ₑ = ⊤} = 0) :
+    μ { x | ε ≤ ‖f x‖ₑ } ≤ ε⁻¹ ^ p.toReal * eLpNorm f p μ ^ p.toReal := by
+  by_cases h : ε = ∞
+  · have : (0 : ℝ≥0∞) ^ p.toReal = 0 := by
+      rw [ENNReal.zero_rpow_of_pos (ENNReal.toReal_pos hp_ne_zero hp_ne_top)]
+    simp [h, this, hmeas_top]
+  · have hεpow : ε ^ p.toReal ≠ 0 := (ENNReal.rpow_pos (pos_iff_ne_zero.2 hε) h).ne.symm
+    have hεpow' : ε ^ p.toReal ≠ ∞ := ENNReal.rpow_ne_top_of_nonneg ENNReal.toReal_nonneg h
+    rw [ENNReal.inv_rpow, ← ENNReal.mul_le_mul_left hεpow hεpow', ← mul_assoc,
+      ENNReal.mul_inv_cancel hεpow hεpow', one_mul]
+    exact mul_meas_ge_le_pow_eLpNorm' μ hp_ne_zero hp_ne_top hf ε
+
+@[deprecated meas_ge_le_mul_pow_eLpNorm_enorm (since := "2025-05-01")]
+theorem meas_ge_le_mul_pow_eLpNorm (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞)
+    {f : α → E} (hf : AEStronglyMeasurable f μ) {ε : ℝ≥0∞} (hε : ε ≠ 0) :
+    μ { x | ε ≤ ‖f x‖₊ } ≤ ε⁻¹ ^ p.toReal * eLpNorm f p μ ^ p.toReal :=
+  meas_ge_le_mul_pow_eLpNorm_enorm μ hp_ne_zero hp_ne_top hf hε (by simp)
+
+theorem MemLp.meas_ge_lt_top'_enorm {μ : Measure α} {f : α → ε'} (hℒp : MemLp f p μ)
+    (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞)
+    {ε : ℝ≥0∞} (hε : ε ≠ 0) (hε' : ε = ∞ → μ {x | ‖f x‖ₑ = ⊤} = 0) :
+    μ { x | ε ≤ ‖f x‖ₑ } < ∞ := by
+  apply meas_ge_le_mul_pow_eLpNorm_enorm μ hp_ne_zero hp_ne_top hℒp.aestronglyMeasurable hε hε'
+    |>.trans_lt (ENNReal.mul_lt_top ?_ ?_)
+  · simp [hε, lt_top_iff_ne_top]
+  · simp [hℒp.eLpNorm_lt_top.ne, lt_top_iff_ne_top]
+
+theorem MemLp.meas_ge_lt_top' {μ : Measure α} {f : α → E} (hℒp : MemLp f p μ) (hp_ne_zero : p ≠ 0)
+    (hp_ne_top : p ≠ ∞) {ε : ℝ≥0∞} (hε : ε ≠ 0) :
+    μ { x | ε ≤ ‖f x‖₊ } < ∞ := by
+  by_cases h : ε = ∞
+  · simp [h]
+  exact hℒp.meas_ge_lt_top'_enorm hp_ne_zero hp_ne_top hε (by simp)
+
+@[deprecated (since := "2025-02-21")]
+alias Memℒp.meas_ge_lt_top' := MemLp.meas_ge_lt_top'
+
+theorem MemLp.meas_ge_lt_top_enorm {μ : Measure α} {f : α → ε'} (hℒp : MemLp f p μ)
+    (hp_ne_zero : p ≠ 0) (hp_ne_top : p ≠ ∞) {ε : ℝ≥0} (hε : ε ≠ 0) :
+    μ { x | ε ≤ ‖f x‖ₑ } < ∞ :=
+  hℒp.meas_ge_lt_top'_enorm hp_ne_zero hp_ne_top (by simp [hε]) (by simp)
+
+theorem MemLp.meas_ge_lt_top {μ : Measure α} {f : α → E} (hℒp : MemLp f p μ) (hp_ne_zero : p ≠ 0)
+    (hp_ne_top : p ≠ ∞) {ε : ℝ≥0} (hε : ε ≠ 0) :
+    μ { x | ε ≤ ‖f x‖₊ } < ∞ := by
+  simp_rw [← ENNReal.coe_le_coe]
+  apply hℒp.meas_ge_lt_top' hp_ne_zero hp_ne_top (by simp [hε])
+
+@[deprecated (since := "2025-02-21")]
+alias Memℒp.meas_ge_lt_top := MemLp.meas_ge_lt_top
+
+end MeasureTheory
+```

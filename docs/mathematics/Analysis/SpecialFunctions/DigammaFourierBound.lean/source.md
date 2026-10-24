@@ -1,0 +1,98 @@
+# Complete source: GRWTSK.Analysis.SpecialFunctions.DigammaFourierBound
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `10d1f31abe6a01ac4862d81df1628455cc56ec20` · SHA-256 `a81e3420408eb22689fc36dc09d2fe8b4d7fd6c2959ee9e29de51bd6e83ca3e0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import GRWTSK.Analysis.DigammaSeries
+import GRWTSK.Analysis.ReciprocalKernel
+import GRWTSK.Analysis.Fourier.DigammaMultiplier
+
+/-!
+# Source-faithful admission from the actual digamma difference series
+
+The real reciprocal kernel and its sum–integral comparisons are independently
+proved. A genuine locally uniform Euler approximation proves the derivative
+limit for the actual digamma. This closes B3.1 without an analytic premise.
+-/
+
+namespace GRWTSK.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.AdmissionSource
+
+open MeasureTheory
+open GRWTSK.RiemannHypothesis.SourcePairing
+open GRWTSK.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeAdmissibility
+open GRWTSK.Analysis.ReciprocalKernel
+open GRWTSK.Analysis.DigammaSeries
+
+noncomputable section
+
+/-- The exact source series identity at the actual Fourier frequency and endpoint.
+This is a proof obligation, not a new special function or an axiom. -/
+def QuarterSeriesObligation : Prop :=
+  ∀ ξ : ℝ, HasSum (fun n : ℕ ↦ kernel (ξ / 2) (n + 1 / 4))
+    (archimedeanMultiplier ξ + archimedeanConstant)
+
+/-- Reordering complex scalar factors preserves the source's quarter-line argument. -/
+theorem actual_multiplier_difference (ξ : ℝ) :
+    archimedeanMultiplier ξ + archimedeanConstant =
+      (Complex.digamma ((1 / 4 : ℂ) + (ξ / 2 : ℝ) * Complex.I)).re -
+        (Complex.digamma (1 / 4)).re := by
+  have he : (1 / 4 : ℂ) + Complex.I * (ξ : ℂ) / 2 =
+      (1 / 4 : ℂ) + (ξ / 2 : ℝ) * Complex.I := by push_cast; ring
+  simp only [archimedeanMultiplier, archimedeanConstant, he]
+  ring
+
+/-- The actual Euler derivative limit supplies precisely the source series identity. -/
+theorem quarter_series_of_derivative_limit (h : EulerDerivativeLimit) :
+    QuarterSeriesObligation := by
+  intro ξ
+  rw [actual_multiplier_difference]
+  convert hasSum_difference_of_derivative_limit h (by norm_num : (0 : ℝ) < 1 / 4)
+    (ξ / 2) using 1 <;> simp [kernel, add_comm]
+
+/-- The independently proved kernel comparison yields source equation (10),
+provided the exact special-function identity is supplied. -/
+theorem multiplier_estimate_of_series (h : QuarterSeriesObligation) :
+    MultiplierEstimateObligation := by
+  intro ξ
+  have hs := (h ξ).tsum_eq
+  rw [← hs]
+  exact frequency_sum_bounds ξ
+
+/-- Analytic admission follows from the source identity, not from its citation. -/
+theorem archimedean_integrability_of_series (h : QuarterSeriesObligation) :
+    ArchimedeanIntegrabilityObligation :=
+  BridgeMultiplier.actual_archimedean_integrable_of_multiplier_estimate
+    (multiplier_estimate_of_series h)
+
+/-- Full B3.1 follows from the isolated Euler derivative limit. The premise is
+explicit, so this conditional theorem does not by itself close B3.1. -/
+theorem admission_of_derivative_limit (h : EulerDerivativeLimit) :
+    NormalizationAdmissibilityObligation :=
+  normalization_admissibility_iff_archimedean.mpr
+    (archimedean_integrability_of_series (quarter_series_of_derivative_limit h))
+
+/-- The actual quarter-line source identity is now proved from Euler convergence. -/
+theorem quarter_series : QuarterSeriesObligation :=
+  quarter_series_of_derivative_limit euler_derivative_limit
+
+/-- RH-0002 equation (10), with the actual digamma and exact frequency scaling. -/
+theorem multiplier_estimate : MultiplierEstimateObligation :=
+  multiplier_estimate_of_series quarter_series
+
+/-- Genuine integrability closes the exact analytic obstruction left by Run 3. -/
+theorem archimedean_integrability : ArchimedeanIntegrabilityObligation :=
+  archimedean_integrability_of_series quarter_series
+
+/-- Full B3.1 admission is unconditional on the actual normalized test family.
+This is analytic admission only, not the zero-side identity or an RH bridge. -/
+theorem normalization_admissibility : NormalizationAdmissibilityObligation :=
+  normalization_admissibility_iff_archimedean.mpr archimedean_integrability
+
+end
+end GRWTSK.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.AdmissionSource
+```

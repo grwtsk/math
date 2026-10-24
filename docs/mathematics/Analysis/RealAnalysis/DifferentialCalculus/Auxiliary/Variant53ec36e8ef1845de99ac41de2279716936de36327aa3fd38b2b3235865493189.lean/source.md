@@ -1,0 +1,104 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.Auxiliary.Variant53ec36e8ef1845de99ac41de2279716936de36327aa3fd38b2b3235865493189
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9f628c9f10ed8bb6e5ec85bacb2b4e55c048b003` · SHA-256 `262cb370e48af49abd94361b4358fbaf1805976340f9b2b427773c3ed4f55860`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.HasDerivAtOfReal.Variant8852b7ebc572ae4eda1f3c3e94f4cc072b1c744c2b71ae297bec3ebb74b00069","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8852b7ebc572ae4eda1f3c3e94f4cc072b1c744c2b71ae297bec3ebb74b00069","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.HasDerivAtOfReal.Variant8852b7ebc572ae4eda1f3c3e94f4cc072b1c744c2b71ae297bec3ebb74b00069","mathematical_subject":"Analysis.Calculus","original_sha256":"8852b7ebc572ae4eda1f3c3e94f4cc072b1c744c2b71ae297bec3ebb74b00069","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/gevrey-initial-20261002/Zeta23-preserved-before-pin-repair/zeta23/Zeta23/FromPNTPlus/Auxiliary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Ported from https://github.com/AlexKontorovich/PrimeNumberTheoremAnd
+at commit 6a380f0c4658c04a420a9eb00b1ed62a1e3fde01 (tag v4.32.2), file
+PrimeNumberTheoremAnd/Auxiliary.lean.
+Copyright the PrimeNumberTheoremAnd contributors; Apache License 2.0
+(http://www.apache.org/licenses/LICENSE-2.0).
+Local modifications: none besides this header (upstream has no blueprint annotations
+or intra-project imports in this file).
+Re-ported from the
+v4.29.0 port (commit 10e1218932db7e2432aa5881d750acb819e91f19) when the project
+moved to Lean v4.32.2 / Mathlib 905b95818eb32af7874a58b427f50c1711a5e96c.
+Modified 2026 by Anthropic PBC.
+-/
+/-
+Copyright (c) 2024 Michael Stoll. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Michael Stoll
+-/
+import Mathlib.Analysis.Complex.RealDeriv
+import Mathlib.Analysis.InnerProductSpace.Basic
+
+/-!
+### Auxiliary lemmas
+-/
+
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.HasDerivAtOfReal.Variant8852b7ebc572ae4eda1f3c3e94f4cc072b1c744c2b71ae297bec3ebb74b00069
+
+namespace Complex
+-- see https://leanprover.zulipchat.com/#narrow/stream/217875-Is-there-code-for-X.3F/topic/Differentiability.20of.20the.20natural.20map.20.E2.84.9D.20.E2.86.92.20.E2.84.82/near/418095234
+
+lemma hasDerivAt_ofReal (x : ℝ) : HasDerivAt ofReal 1 x :=
+  HasDerivAt.ofReal_comp <| hasDerivAt_id x
+
+lemma deriv_ofReal (x : ℝ) : deriv ofReal x = 1 :=
+  (hasDerivAt_ofReal x).deriv
+
+lemma differentiableAt_ofReal (x : ℝ) : DifferentiableAt ℝ ofReal x :=
+  (hasDerivAt_ofReal x).differentiableAt
+
+end Complex
+
+lemma DifferentiableAt.comp_ofReal {e : ℂ → ℂ} {z : ℝ} (hf : DifferentiableAt ℂ e z) :
+    DifferentiableAt ℝ (fun x : ℝ ↦ e x) z :=
+  hf.hasDerivAt.comp_ofReal.differentiableAt
+
+lemma deriv.comp_ofReal {e : ℂ → ℂ} {z : ℝ} (hf : DifferentiableAt ℂ e z) :
+    deriv (fun x : ℝ ↦ e x) z = deriv e z :=
+  hf.hasDerivAt.comp_ofReal.deriv
+
+lemma Differentiable.comp_ofReal {e : ℂ → ℂ} (h : Differentiable ℂ e) :
+    Differentiable ℝ (fun x : ℝ ↦ e x) :=
+  fun _ ↦ h.differentiableAt.comp_ofReal
+
+lemma DifferentiableAt.ofReal_comp {z : ℝ} {f : ℝ → ℝ} (hf : DifferentiableAt ℝ f z) :
+    DifferentiableAt ℝ (fun (y : ℝ) ↦ (f y : ℂ)) z :=
+  hf.hasDerivAt.ofReal_comp.differentiableAt
+
+lemma Differentiable.ofReal_comp {f : ℝ → ℝ} (hf : Differentiable ℝ f) :
+    Differentiable ℝ (fun (y : ℝ) ↦ (f y : ℂ)) :=
+  fun _ ↦ hf.differentiableAt.ofReal_comp
+
+open Complex ContinuousLinearMap in
+lemma HasDerivAt.of_hasDerivAt_ofReal_comp {z : ℝ} {f : ℝ → ℝ} {u : ℂ}
+    (hf : HasDerivAt (fun y ↦ (f y : ℂ)) u z) :
+    ∃ u' : ℝ, u = u' ∧ HasDerivAt f u' z := by
+  lift u to ℝ
+  · have H := (imCLM.hasFDerivAt.comp z hf.hasFDerivAt).hasDerivAt.deriv
+    simp only [Function.comp_def, imCLM_apply, ofReal_im, deriv_const] at H
+    rwa [eq_comm, comp_apply, imCLM_apply, toSpanSingleton_apply_one] at H
+  refine ⟨u, rfl, ?_⟩
+  convert! (reCLM.hasFDerivAt.comp z hf.hasFDerivAt).hasDerivAt
+  rw [comp_apply, toSpanSingleton_apply_one, reCLM_apply, ofReal_re]
+
+lemma DifferentiableAt.ofReal_comp_iff {z : ℝ} {f : ℝ → ℝ} :
+    DifferentiableAt ℝ (fun (y : ℝ) ↦ (f y : ℂ)) z ↔ DifferentiableAt ℝ f z := by
+  refine ⟨fun H ↦ ?_, ofReal_comp⟩
+  obtain ⟨u, _, hu₂⟩ := H.hasDerivAt.of_hasDerivAt_ofReal_comp
+  exact HasDerivAt.differentiableAt hu₂
+
+lemma Differentiable.ofReal_comp_iff {f : ℝ → ℝ} :
+    Differentiable ℝ (fun (y : ℝ) ↦ (f y : ℂ)) ↔ Differentiable ℝ f :=
+  forall_congr' fun _ ↦ DifferentiableAt.ofReal_comp_iff
+
+lemma deriv.ofReal_comp {z : ℝ} {f : ℝ → ℝ} :
+    deriv (fun (y : ℝ) ↦ (f y : ℂ)) z = deriv f z := by
+  by_cases hf : DifferentiableAt ℝ f z
+  · exact hf.hasDerivAt.ofReal_comp.deriv
+  · have hf' := mt DifferentiableAt.ofReal_comp_iff.mp hf
+    rw [deriv_zero_of_not_differentiableAt hf, deriv_zero_of_not_differentiableAt hf',
+      Complex.ofReal_zero]
+```

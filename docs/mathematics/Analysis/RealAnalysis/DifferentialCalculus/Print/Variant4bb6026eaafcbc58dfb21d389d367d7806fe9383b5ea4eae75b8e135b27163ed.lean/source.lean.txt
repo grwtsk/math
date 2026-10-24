@@ -1,0 +1,94 @@
+import FormalResearch.RiemannHypothesis.SourcePrimeMomentScale
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimeMomentScale
+
+#print sourceCorrelation_eq_inner
+
+#print correlationScaleDerivative
+
+#print sourceCorrelation_hasDerivAt_scale
+
+#print sourceCorrelation_contDiffAt_scale
+
+#print sourceCorrelation_contDiffOn_scale
+
+#print closedPrimeWeight_zero_above_cutoff
+
+#print correlationScaleDerivative_zero_of_lt
+
+#print correlationScaleDerivative_zero_above_cutoff
+
+#print closedPrimeMomentFixed
+
+#print firstPrimeMomentFixed
+
+#print closedPrimeMoment_eq_fixed
+
+#print firstPrimeMoment_eq_fixed
+
+#print localUpperCutoff
+
+#print closedPrimeMoment_eventually_eq_fixed
+
+#print firstPrimeMoment_eventually_eq_fixed
+
+#print closedPrimeWeightScaleDerivative
+
+#print closedPrimeWeight_hasDerivAt
+
+#print closedPrimeWeight_contDiffAt
+
+#print closedPrimeWeightScaleDerivative_zero_above_cutoff
+
+#print closedPrimeMomentScaleDerivative
+
+#print firstPrimeMomentScaleDerivative
+
+#print closedPrimeMomentScaleDerivative_eq_fixed
+
+#print firstPrimeMomentScaleDerivative_eq_fixed
+
+#print closedPrimeMomentFixed_hasDerivAt
+
+#print firstPrimeMomentFixed_hasDerivAt
+
+#print closedPrimeMomentFixed_contDiffAt
+
+#print firstPrimeMomentFixed_contDiffAt
+
+#print closedPrimeMoment_hasDerivAt
+
+#print firstPrimeMoment_hasDerivAt
+
+#print closedPrimeMoment_contDiffAt
+
+#print firstPrimeMoment_contDiffAt
+
+#print closedPrimeMoment_contDiffOn
+
+#print firstPrimeMoment_contDiffOn
+
+#print mertensResidual_eventually_eq_closedPrimeMoment
+
+#print mertensResidual_hasDerivAt
+
+#print mertensResidual_contDiffAt
+
+#print mertensResidual_contDiffOn
+
+#print correlationScaleDerivative_zero_of_le
+
+#print closedPrimeWeight_zero_at_birth
+
+#print closedPrimeWeightScaleDerivative_zero_at_birth
+
+#print closedPrimeMoment_deriv
+
+#print firstPrimeMoment_deriv
+
+#print closedPrimeMomentScaleDerivative_continuousOn
+
+#print firstPrimeMomentScaleDerivative_continuousOn
+
+#print mertensResidual_deriv

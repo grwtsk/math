@@ -1,0 +1,48 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ExpandedPublicAudit.Variant78dfa0cc48ad26f4200ec1ddccfa2d087c9bca33689fc52245569b313c1ce227
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `95050e767f7a47da2790c532b229fa47a10595b9` · SHA-256 `8dea7e2d83ab9062a75faabd3f8c141239d9597c00668f600c91d35d8395f519`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceBalancedFirstPrimeReturn.Variantc6bcb64a54e99432e0d639e05462071d4ea8a785cae3c74032b84904fbd00e2d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c6bcb64a54e99432e0d639e05462071d4ea8a785cae3c74032b84904fbd00e2d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceBalancedFirstPrimeReturn.Variantc6bcb64a54e99432e0d639e05462071d4ea8a785cae3c74032b84904fbd00e2d","mathematical_subject":"Analysis.Calculus","original_sha256":"c6bcb64a54e99432e0d639e05462071d4ea8a785cae3c74032b84904fbd00e2d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-balance-overnight-20261007/graph-review/balanced-first-prime-native/direct-source-return/author-final/ExpandedPublicAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceBalancedFirstPrimeReturn
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceBalancedFirstPrimeReturn.Variantc6bcb64a54e99432e0d639e05462071d4ea8a785cae3c74032b84904fbd00e2d
+
+set_option linter.hashCommand false
+#check RH16BalancedFirstPrimeReturn.balancedFirstPrimeFullWork
+#print axioms RH16BalancedFirstPrimeReturn.balancedFirstPrimeFullWork
+#check RH16BalancedFirstPrimeReturn.balancedFirstPrimeTailWork
+#print axioms RH16BalancedFirstPrimeReturn.balancedFirstPrimeTailWork
+#check RH16BalancedFirstPrimeReturn.firstPrimeZeroHead
+#print axioms RH16BalancedFirstPrimeReturn.firstPrimeZeroHead
+#check RH16BalancedFirstPrimeReturn.theta_closed_source_work
+#print axioms RH16BalancedFirstPrimeReturn.theta_closed_source_work
+#check RH16BalancedFirstPrimeReturn.positive_exponential_weight_work
+#print axioms RH16BalancedFirstPrimeReturn.positive_exponential_weight_work
+#check RH16BalancedFirstPrimeReturn.minusCorrelationWeight_full_integral
+#print axioms RH16BalancedFirstPrimeReturn.minusCorrelationWeight_full_integral
+#check RH16BalancedFirstPrimeReturn.balanced_density_full_source_work
+#print axioms RH16BalancedFirstPrimeReturn.balanced_density_full_source_work
+#check RH16BalancedFirstPrimeReturn.balancedFirstPrimePrimitive_absolutelyContinuous
+#print axioms RH16BalancedFirstPrimeReturn.balancedFirstPrimePrimitive_absolutelyContinuous
+#check RH16BalancedFirstPrimeReturn.balancedFirstPrimePrimitive_ae_hasDerivAt
+#print axioms RH16BalancedFirstPrimeReturn.balancedFirstPrimePrimitive_ae_hasDerivAt
+#check RH16BalancedFirstPrimeReturn.balanced_density_weight_intervalIntegrable
+#print axioms RH16BalancedFirstPrimeReturn.balanced_density_weight_intervalIntegrable
+#check RH16BalancedFirstPrimeReturn.balanced_physical_head_eq_trace_sub_curvature
+#print axioms RH16BalancedFirstPrimeReturn.balanced_physical_head_eq_trace_sub_curvature
+#check RH16BalancedFirstPrimeReturn.balanced_full_work_eq_physical
+#print axioms RH16BalancedFirstPrimeReturn.balanced_full_work_eq_physical
+#check RH16BalancedFirstPrimeReturn.firstPrime_main_eq_balanced_source
+#print axioms RH16BalancedFirstPrimeReturn.firstPrime_main_eq_balanced_source
+#check RH16BalancedFirstPrimeReturn.balanced_full_eq_head_add_tail
+#print axioms RH16BalancedFirstPrimeReturn.balanced_full_eq_head_add_tail
+#check RH16BalancedFirstPrimeReturn.balanced_tail_eq_physical_add_trace
+#print axioms RH16BalancedFirstPrimeReturn.balanced_tail_eq_physical_add_trace
+```

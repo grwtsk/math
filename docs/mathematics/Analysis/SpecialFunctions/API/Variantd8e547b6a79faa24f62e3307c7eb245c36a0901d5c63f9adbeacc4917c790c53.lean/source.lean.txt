@@ -1,0 +1,25 @@
+import Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup
+import Mathlib.NumberTheory.Harmonic.EulerMascheroni
+import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+import Mathlib.Analysis.SumIntegralComparisons
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+import Mathlib.Analysis.PSeries
+import Mathlib.Tactic
+
+#check harmonic
+#print harmonic
+#check Real.BohrMollerup.logGammaSeq
+#check Real.BohrMollerup.tendsto_log_gamma
+#check Real.tendsto_harmonic_sub_log
+#check Real.tendsto_harmonic_sub_log_add_one
+#check Real.tendsto_log_nat_add_one_sub_log
+#check Real.log_prod
+#check Nat.factorial_eq_prod_range_add_one
+#check Finset.prod_range_add_one_eq_factorial
+#check hasSum_iff_tendsto_nat_of_nonneg
+#check summable_nat_rpow
+#check AntitoneOn.tsum_comp_add_le_integral
+#check Real.integral_Ioi_rpow_of_lt
+#check integral_Ioi_rpow_of_lt
+#check Real.le_log_one_add_of_nonneg
+#check Real.one_sub_inv_le_log_of_pos

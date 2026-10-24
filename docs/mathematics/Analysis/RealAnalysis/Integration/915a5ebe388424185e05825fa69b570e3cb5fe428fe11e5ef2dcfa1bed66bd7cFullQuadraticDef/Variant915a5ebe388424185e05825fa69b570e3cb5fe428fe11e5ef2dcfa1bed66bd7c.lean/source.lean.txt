@@ -1,0 +1,42 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimePowerPhaseDefect
+import FormalResearch.RiemannHypothesis.PoleCorrelationRegularity
+
+open FormalResearch.RiemannHypothesis.SourcePairing
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization CorrelationAssembly CorrelationSpectralLens PrimePowerPhaseDefect
+open EstimateTailReduction
+open FormalResearch.RiemannHypothesis.PoleCorrelationRegularity
+
+#print EstimateObligation
+#print UniformLowerBound
+#print sourceQuadraticValue
+#print archimedeanValue
+#print archimedeanIntegrand
+#print archimedeanMultiplier
+#print sourceFourier
+#print primePowerContribution
+#print primeIndices
+#print primeWeight
+#print sourceCorrelation
+#print normalizedTest
+#print dilationTest
+#print sourceNormalization
+#print scaledBump
+#print sourceBump
+#print explicitSecondDerivative
+#print secondInterior
+#print spectralMultiplier
+#print cosineMultiplier
+#print spectralDensity
+#check actual_sourceQuadraticValue_eq_spectral_integral
+#check actual_spectralMultiplier_integrable
+#check spectralDensity_integral
+#check spectralDensity_integrable
+#check BridgeNormalization.normalized_square_integral
+#check BridgeAdmissibility.actual_memLp
+#check AdmissionSource.archimedean_integrability
+#check SourceCorrectionEstimate.actual_archimedean_lower
+#check EstimateTailReduction.bounded_radius_lower
+#check BridgeAdmissibility.actual_form_eq_source_scalar
+#check BridgeAdmissibility.actual_pole_contribution_zero
+#check spectral_density_fourth_moment_integrable

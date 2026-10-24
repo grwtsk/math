@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.Issue9TransformLiveAudit.Variant6450392f9343e3da60bb3e2f66def773f54f22623b73e2bb6e4f676f2c46e027
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b2ea927910f7c25dff70116a9ced3fed45121232` · SHA-256 `6f663b19fb9a17314b6e2e3cab1b7efc24371895ce8ad2371f134b6c1ecea73f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.ZeroTransform.Variant8f007479ed0fe8d68fe6df3a0b7dd5ed127373705dbc16cbc828c99b2f6384c0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8f007479ed0fe8d68fe6df3a0b7dd5ed127373705dbc16cbc828c99b2f6384c0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.ZeroTransform.Variant8f007479ed0fe8d68fe6df3a0b7dd5ed127373705dbc16cbc828c99b2f6384c0","mathematical_subject":"Analysis.Integration","original_sha256":"8f007479ed0fe8d68fe6df3a0b7dd5ed127373705dbc16cbc828c99b2f6384c0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/Issue9TransformLiveAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.ZeroTransform.Variant8f007479ed0fe8d68fe6df3a0b7dd5ed127373705dbc16cbc828c99b2f6384c0
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.bumpPolynomial
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.primitivePolynomial
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.primitive_derivative
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.primitive_endpoint_pos
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.primitive_endpoint_neg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.fullPrimitive
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.fullPrimitive_derivative
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.fullPrimitive_endpoint_pos
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.fullPrimitive_endpoint_neg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.interior
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.interior_eq
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.exponential_primitive
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.interior_continuous
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.actual_integrand_indicator
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.actual_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.actual_integral_interval
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.normalized_primitive
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.source_scale
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.actual_transform
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform.bilateral_transform
+```

@@ -1,0 +1,83 @@
+# properPowerMoment
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:be81a25ca15f5c02eb6e5781319a95a43605eb97cbf2c952ae5ad5c3bf0164d0",
+  "kind": "def",
+  "lexical_name": "properPowerMoment",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "properpowermoment--c4d824b44d0a9f13b105cb8b",
+  "source": {
+    "blob": "16c29c89d999755af69d549130d0f87813a9d896",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 28,
+    "line": 27,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/Attempt03/Variantf51337e9dfb8d305297a44e17cc86290d40893bd405f0b7e0c360dc6fb989fc1.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:c4d824b44d0a9f13b105cb8b70429edfb0d35488b097f51b7205254f508d718c",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/Attempt03/Variantf51337e9dfb8d305297a44e17cc86290d40893bd405f0b7e0c360dc6fb989fc1.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:be81a25ca15f5c02eb6e5781319a95a43605eb97cbf2c952ae5ad5c3bf0164d0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 27–28.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def properPowerMoment (r : ℕ) : ℝ := ∑' p : Nat.Primes, ∑' k : ℕ, primeMomentAtom r p k
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/Attempt03/Variantf51337e9dfb8d305297a44e17cc86290d40893bd405f0b7e0c360dc6fb989fc1.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/Attempt03/Variantf51337e9dfb8d305297a44e17cc86290d40893bd405f0b7e0c360dc6fb989fc1.lean#L27).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `16c29c89d999755af69d549130d0f87813a9d896` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

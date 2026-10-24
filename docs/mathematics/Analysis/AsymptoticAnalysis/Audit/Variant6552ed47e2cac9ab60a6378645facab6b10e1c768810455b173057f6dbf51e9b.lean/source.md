@@ -1,0 +1,154 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.Audit.Variant6552ed47e2cac9ab60a6378645facab6b10e1c768810455b173057f6dbf51e9b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `68009d995d942b93de6140526b392b760bef92b4` · SHA-256 `6552ed47e2cac9ab60a6378645facab6b10e1c768810455b173057f6dbf51e9b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.PositiveAtlas.QuantitativeGap
+import FormalResearch.PositiveAtlas.QuantitativeGapIteration
+import FormalResearch.PositiveAtlas.QuantitativeGapMetric
+import FormalResearch.PositiveAtlas.QuantitativeGapSchur
+import FormalResearch.PositiveAtlas.QuantitativeGapSourceMetric
+import FormalResearch.PositiveAtlas.QuantitativeGapSourceObstruction
+import FormalResearch.PositiveAtlas.QuantitativeGapSourceSchur
+
+set_option linter.hashCommand false
+set_option pp.universes true
+set_option pp.fullNames true
+
+#print FormalResearch.PositiveAtlas.QuantitativeGap.ProtectedProjector
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.ProtectedProjector
+#print FormalResearch.PositiveAtlas.QuantitativeGap.ProtectedProjector.complement
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.ProtectedProjector.complement
+#print FormalResearch.PositiveAtlas.QuantitativeGap.CoerciveOn
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.CoerciveOn
+#print FormalResearch.PositiveAtlas.QuantitativeGap.coerciveOn_mono
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.coerciveOn_mono
+#print FormalResearch.PositiveAtlas.QuantitativeGap.pullback_coerciveOn
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.pullback_coerciveOn
+#print FormalResearch.PositiveAtlas.QuantitativeGap.kernel_eq_protected_range
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.kernel_eq_protected_range
+#print FormalResearch.PositiveAtlas.QuantitativeGap.positive_eigenvalue_lower_bound
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.positive_eigenvalue_lower_bound
+#print FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct
+#print FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct_zero
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct_zero
+#print FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct_succ
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct_succ
+#print FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct_pos
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.lossProduct_pos
+#print FormalResearch.PositiveAtlas.QuantitativeGap.refinementBudget
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.refinementBudget
+#print FormalResearch.PositiveAtlas.QuantitativeGap.refinementBudget_eq
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.refinementBudget_eq
+#print FormalResearch.PositiveAtlas.QuantitativeGap.refinement_lower_bound
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.refinement_lower_bound
+#print FormalResearch.PositiveAtlas.QuantitativeGap.refinement_iteration
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.refinement_iteration
+#print FormalResearch.PositiveAtlas.QuantitativeGap.uniform_of_prefix_budget
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.uniform_of_prefix_budget
+#print FormalResearch.PositiveAtlas.QuantitativeGap.uniform_of_summable_budget
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.uniform_of_summable_budget
+#print FormalResearch.PositiveAtlas.QuantitativeGap.uniform_positive_certificate
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.uniform_positive_certificate
+#print FormalResearch.PositiveAtlas.QuantitativeGap.weightedAdjoint
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.weightedAdjoint
+#print FormalResearch.PositiveAtlas.QuantitativeGap.metric_pullback_identity
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.metric_pullback_identity
+#print FormalResearch.PositiveAtlas.QuantitativeGap.quadratic_congruence
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.quadratic_congruence
+#print FormalResearch.PositiveAtlas.QuantitativeGap.weighted_coercivity
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.weighted_coercivity
+#print FormalResearch.PositiveAtlas.QuantitativeGap.certificate_gap
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.certificate_gap
+#print FormalResearch.PositiveAtlas.QuantitativeGap.shear_inverse_square
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.shear_inverse_square
+#print FormalResearch.PositiveAtlas.QuantitativeGap.completion_coercive
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.completion_coercive
+#print FormalResearch.PositiveAtlas.QuantitativeGap.hermitianEnergy
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.hermitianEnergy
+#print FormalResearch.PositiveAtlas.QuantitativeGap.hermitianEnergy_congruence
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.hermitianEnergy_congruence
+#print FormalResearch.PositiveAtlas.QuantitativeGap.hermitianEnergy_one
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.hermitianEnergy_one
+#print FormalResearch.PositiveAtlas.QuantitativeGap.normalizedCoupling
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.normalizedCoupling
+#print FormalResearch.PositiveAtlas.QuantitativeGap.coupling_eq_normalized
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.coupling_eq_normalized
+#print FormalResearch.PositiveAtlas.QuantitativeGap.normalized_margin
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.normalized_margin
+#print FormalResearch.PositiveAtlas.QuantitativeGap.schur_margin
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.schur_margin
+#print FormalResearch.PositiveAtlas.QuantitativeGap.feshbach_coercive
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.feshbach_coercive
+#print FormalResearch.PositiveAtlas.QuantitativeGap.normalized_feshbach_coercive
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.normalized_feshbach_coercive
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_five_eight_source_difference_ne_zero
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_five_eight_source_difference_ne_zero
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_five_eight_source_difference_norm_pos
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_five_eight_source_difference_norm_pos
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelState
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelState
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelCoordinates
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelCoordinates
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelState_eq_synthesis
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelState_eq_synthesis
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelState_single
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.singleChannelState_single
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_source_no_coarse_gram_lower_factor
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_source_no_coarse_gram_lower_factor
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_source_packet_coarse_obstruction
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_source_packet_coarse_obstruction
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosureTotals
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosureTotals
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosureTotals_single
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosureTotals_single
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosureTotals_collision
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosureTotals_collision
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosure_has_no_positive_lower_factor
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.disclosure_has_no_positive_lower_factor
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.longInventory
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.longInventory
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.eight_le_sourceKernelCutoff_two
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.eight_le_sourceKernelCutoff_two
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.five_mem_actual_long
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.five_mem_actual_long
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.eight_mem_actual_long
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.eight_mem_actual_long
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_long_five_eight_distinguished
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_long_five_eight_distinguished
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_long_no_coarse_lower_factor
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_long_no_coarse_lower_factor
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.fixed_source_refinement_norm
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.fixed_source_refinement_norm
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.fixed_source_refinement_lower_on_image
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.fixed_source_refinement_lower_on_image
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling_pos
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling_pos
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling_lt_one
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling_lt_one
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling_inner
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCoupling_inner
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.twoSourceIndex
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.twoSourceIndex
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.twoSourceGram
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.twoSourceGram
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCross
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCross
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.twoSourceGram_eq_block
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.twoSourceGram_eq_block
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCross_margin
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCross_margin
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCross_norm
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceCross_norm
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceGap
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceGap
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceGap_pos
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actualSourceGap_pos
+#print FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_two_source_gram_coercive
+#print axioms FormalResearch.PositiveAtlas.QuantitativeGap.Source.actual_two_source_gram_coercive
+```

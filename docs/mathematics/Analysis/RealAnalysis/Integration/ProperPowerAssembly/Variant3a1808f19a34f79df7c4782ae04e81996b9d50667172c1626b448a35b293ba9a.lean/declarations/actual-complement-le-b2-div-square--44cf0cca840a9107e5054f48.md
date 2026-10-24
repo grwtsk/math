@@ -1,0 +1,154 @@
+# actual_complement_le_B2_div_square
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:e1ee5a70-cb6e-77c5-f023-0f16f21f3ca3",
+  "kind": "theorem",
+  "lexical_name": "actual_complement_le_B2_div_square",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "actual-complement-le-b2-div-square--44cf0cca840a9107e5054f48",
+  "source": {
+    "blob": "14f05acdd9f3b1f192f6c1ec380274da245a0ee9",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 205,
+    "line": 133,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/ProperPowerAssembly/Variant3a1808f19a34f79df7c4782ae04e81996b9d50667172c1626b448a35b293ba9a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:44cf0cca840a9107e5054f48d2f7942e0e5da4db67fa1540503b0634532dcfe1",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/ProperPowerAssembly/Variant3a1808f19a34f79df7c4782ae04e81996b9d50667172c1626b448a35b293ba9a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:e1ee5a70-cb6e-77c5-f023-0f16f21f3ca3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 133–205.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem actual_complement_le_B2_div_square (t : ℝ) (ht : 0 < t) :
+    properPowerMoment 0 - (weightedMangoldt ⌊Real.exp t⌋₊ - primeLogPrefix t) ≤
+      properPowerB2/t^2 := by
+  rw [actual_complement_eq_omitted_tail]
+  exact omittedOnsetTail_le_B2_div_square t ht
+
+end ContinuousResearch.ProperPowerAssembly
+
+/- Exact public type, proof and trusted dependency audits. -/
+
+#check ContinuousResearch.ProperPowerAssembly.shiftedInventory
+#print axioms ContinuousResearch.ProperPowerAssembly.shiftedInventory
+#print ContinuousResearch.ProperPowerAssembly.shiftedInventory
+
+#check ContinuousResearch.ProperPowerAssembly.mem_shiftedInventory_iff
+#print axioms ContinuousResearch.ProperPowerAssembly.mem_shiftedInventory_iff
+#print ContinuousResearch.ProperPowerAssembly.mem_shiftedInventory_iff
+
+#check ContinuousResearch.ProperPowerAssembly.shiftedInventory_onset_iff
+#print axioms ContinuousResearch.ProperPowerAssembly.shiftedInventory_onset_iff
+#print ContinuousResearch.ProperPowerAssembly.shiftedInventory_onset_iff
+
+#check ContinuousResearch.ProperPowerAssembly.closedOnsetAtom_zero_outside
+#print axioms ContinuousResearch.ProperPowerAssembly.closedOnsetAtom_zero_outside
+#print ContinuousResearch.ProperPowerAssembly.closedOnsetAtom_zero_outside
+
+#check ContinuousResearch.ProperPowerAssembly.closedOnsetPrefix_eq_finite_shifted
+#print axioms ContinuousResearch.ProperPowerAssembly.closedOnsetPrefix_eq_finite_shifted
+#print ContinuousResearch.ProperPowerAssembly.closedOnsetPrefix_eq_finite_shifted
+
+#check ContinuousResearch.ProperPowerAssembly.finite_shifted_sum_eq_actual
+#print axioms ContinuousResearch.ProperPowerAssembly.finite_shifted_sum_eq_actual
+#print ContinuousResearch.ProperPowerAssembly.finite_shifted_sum_eq_actual
+
+#check ContinuousResearch.ProperPowerAssembly.actual_closed_prefix_eq_countable
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_closed_prefix_eq_countable
+#print ContinuousResearch.ProperPowerAssembly.actual_closed_prefix_eq_countable
+
+#check ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_eq_countable
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_eq_countable
+#print ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_eq_countable
+
+#check ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_add_tail
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_add_tail
+#print ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_add_tail
+
+#check ContinuousResearch.ProperPowerAssembly.actual_complement_eq_omitted_tail
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_complement_eq_omitted_tail
+#print ContinuousResearch.ProperPowerAssembly.actual_complement_eq_omitted_tail
+
+#check ContinuousResearch.ProperPowerAssembly.actual_complement_nonneg
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_complement_nonneg
+#print ContinuousResearch.ProperPowerAssembly.actual_complement_nonneg
+
+#check ContinuousResearch.ProperPowerAssembly.actual_complement_integrable_positive
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_complement_integrable_positive
+#print ContinuousResearch.ProperPowerAssembly.actual_complement_integrable_positive
+
+#check ContinuousResearch.ProperPowerAssembly.actual_complement_integral_eq_B1
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_complement_integral_eq_B1
+#print ContinuousResearch.ProperPowerAssembly.actual_complement_integral_eq_B1
+
+#check ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_below_first
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_below_first
+#print ContinuousResearch.ProperPowerAssembly.actual_weighted_difference_below_first
+
+#check ContinuousResearch.ProperPowerAssembly.actual_complement_below_first
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_complement_below_first
+#print ContinuousResearch.ProperPowerAssembly.actual_complement_below_first
+
+#check ContinuousResearch.ProperPowerAssembly.actual_complement_le_B2_div_square
+#print axioms ContinuousResearch.ProperPowerAssembly.actual_complement_le_B2_div_square
+#print ContinuousResearch.ProperPowerAssembly.actual_complement_le_B2_div_square
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/ProperPowerAssembly/Variant3a1808f19a34f79df7c4782ae04e81996b9d50667172c1626b448a35b293ba9a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/ProperPowerAssembly/Variant3a1808f19a34f79df7c4782ae04e81996b9d50667172c1626b448a35b293ba9a.lean#L133).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `14f05acdd9f3b1f192f6c1ec380274da245a0ee9` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

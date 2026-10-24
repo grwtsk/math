@@ -1,0 +1,13 @@
+import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
+#check Finset.sum_erase_add
+#check add_eq_left
+#check add_eq_right
+#check add_left_cancel
+#check Basis.coord
+#check Submodule.mem_span
+#check Submodule.sum_mem
+#check Submodule.smul_mem
+#check Pi.one_apply
+#check Fintype.one_lt_card_iff_nontrivial
+#check Fintype.one_lt_card
+#check Fintype.card_addChar_le

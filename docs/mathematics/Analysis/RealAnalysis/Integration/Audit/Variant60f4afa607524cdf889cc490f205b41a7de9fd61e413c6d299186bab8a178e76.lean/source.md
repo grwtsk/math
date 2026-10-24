@@ -1,0 +1,90 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.Audit.Variant60f4afa607524cdf889cc490f205b41a7de9fd61e413c6d299186bab8a178e76
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b1e92068224904e595e069c31269c89029740edc` · SHA-256 `60f4afa607524cdf889cc490f205b41a7de9fd61e413c6d299186bab8a178e76`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceGreenKernel
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceGreenKernel
+
+#check @greenKernel
+#print axioms greenKernel
+#check @sourceGreenPairing
+#print axioms sourceGreenPairing
+#check @sourceGreenConvolution
+#print axioms sourceGreenConvolution
+#check @greenKernel_continuous
+#print axioms greenKernel_continuous
+#check @greenKernel_even
+#print axioms greenKernel_even
+#check @sourceGreenPairing_integrable
+#print axioms sourceGreenPairing_integrable
+#check @sourceGreenConvolution_integrable
+#print axioms sourceGreenConvolution_integrable
+#check @sourceGreenPairing_eq_twice_negativeSmoothMoment
+#print axioms sourceGreenPairing_eq_twice_negativeSmoothMoment
+#check @sourceGreenPairing_eq_causal_energy
+#print axioms sourceGreenPairing_eq_causal_energy
+#check @criticalContinuousMoment_eq_neg_half_green
+#print axioms criticalContinuousMoment_eq_neg_half_green
+#check @normalizedPrimitiveBump_even
+#print axioms normalizedPrimitiveBump_even
+#check @normalizedPrimitiveBump_deriv_odd
+#print axioms normalizedPrimitiveBump_deriv_odd
+#check @causalSourceTail_add_reflection
+#print axioms causalSourceTail_add_reflection
+#check @sourceGreenConvolution_upper_half
+#print axioms sourceGreenConvolution_upper_half
+#check @sourceGreenConvolution_lower_half
+#print axioms sourceGreenConvolution_lower_half
+#check @sourceGreenConvolution_eq_tails
+#print axioms sourceGreenConvolution_eq_tails
+#check @sourceGreenConvolution_eq_neg_bump
+#print axioms sourceGreenConvolution_eq_neg_bump
+#check @sourceGreenConvolution_continuous
+#print axioms sourceGreenConvolution_continuous
+#check @sourceGreenConvolution_hasCompactSupport
+#print axioms sourceGreenConvolution_hasCompactSupport
+#check @sourceGreenConvolution_zero_of_not_mem
+#print axioms sourceGreenConvolution_zero_of_not_mem
+#check @sourceGreenDoubleKernel
+#print axioms sourceGreenDoubleKernel
+#check @sourceGreenDoubleKernel_continuous
+#print axioms sourceGreenDoubleKernel_continuous
+#check @sourceGreenDoubleKernel_hasCompactSupport
+#print axioms sourceGreenDoubleKernel_hasCompactSupport
+#check @sourceGreenDoubleKernel_integrable
+#print axioms sourceGreenDoubleKernel_integrable
+#check @source_mul_sourceGreenConvolution_integrable
+#print axioms source_mul_sourceGreenConvolution_integrable
+#check @source_mul_reflected_tail_integral
+#print axioms source_mul_reflected_tail_integral
+#check @source_mul_sourceGreenConvolution_integral
+#print axioms source_mul_sourceGreenConvolution_integral
+#check @sourceGreenPairing_eq_convolution_pairing
+#print axioms sourceGreenPairing_eq_convolution_pairing
+#check @sourceGreenPairing_eq_double_integral
+#print axioms sourceGreenPairing_eq_double_integral
+#check @sourceGreenPairing_eq_neg_source_bump
+#print axioms sourceGreenPairing_eq_neg_source_bump
+#check @sourceGreenPairing_eq_normalized_energy
+#print axioms sourceGreenPairing_eq_normalized_energy
+#check @sourceGreenPairing_eq_rational
+#print axioms sourceGreenPairing_eq_rational
+#check @sourceGreenPairing_pos
+#print axioms sourceGreenPairing_pos
+#check @criticalContinuousMoment_eq_half_source_bump
+#print axioms criticalContinuousMoment_eq_half_source_bump
+#check @greenKernel_pos
+#print axioms greenKernel_pos
+#check @unit_source_convolution_zero_kernel_positive
+#print axioms unit_source_convolution_zero_kernel_positive
+#check @sourceGreenPairing_ne_half_causal_energy
+#print axioms sourceGreenPairing_ne_half_causal_energy
+#check @sourceGreenPairing_eq_bump_energy
+#print axioms sourceGreenPairing_eq_bump_energy
+```

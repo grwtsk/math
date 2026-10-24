@@ -1,0 +1,91 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceAttempt1.Variant973abc991c360ab7c200c40e00995eb2b92031aa1e0eabfff3c1d77e4cd1ee41
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `076acce73b6d026c50c96c0469153c42dc9d7770` · SHA-256 `973abc991c360ab7c200c40e00995eb2b92031aa1e0eabfff3c1d77e4cd1ee41`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+import Mathlib.Analysis.Calculus.ContDiff.Convolution
+
+/-!
+# Ordinary curvature of the actual compact primitive correlations
+
+Differentiating the two convolution factors separately gives the negative
+derivative autocorrelation. The actual primitive is globally C², so its first
+derivative is C¹; no C⁴ assertion about the zero-extended bump is required.
+These exact identities retain every real shift and supply no arithmetic bound.
+
+Research direction, source selection and evaluation: grwtsk contributors.
+Formal construction: OpenAI Codex; independent review is a separate gate.
+-/
+
+set_option autoImplicit false
+noncomputable section
+namespace FormalResearch.RiemannHypothesis.SourcePrimitiveCorrelationCurvature
+
+open MeasureTheory Function
+open scoped Convolution
+open SourceCausalEnergy SourcePrimitivePrimeInteraction
+
+private theorem compact_autocorrelation_curvature {f : ℝ → ℝ}
+    (hf : ContDiff ℝ 1 f) (hs : HasCompactSupport f) (t : ℝ) :
+    Integrable (fun x : ℝ => deriv f x * deriv f (x - t)) ∧
+      deriv (deriv (fun s : ℝ => ∫ x : ℝ, f x * f (x - s))) t =
+        -(∫ x : ℝ, deriv f x * deriv f (x - t)) := by
+  have hr : HasCompactSupport (fun x : ℝ => f (-x)) :=
+    hs.comp_homeomorph (Homeomorph.neg ℝ)
+  have hfr : ContDiff ℝ 1 (fun x : ℝ => f (-x)) := hf.comp contDiff_neg
+  have hir : Integrable (fun x : ℝ => f (-x)) :=
+    hfr.continuous.integrable_of_hasCompactSupport hr
+  have hif : Integrable (deriv f) :=
+    (hf.continuous_deriv (by norm_num)).integrable_of_hasCompactSupport hs.deriv
+  have hprod : Integrable (fun x : ℝ => deriv f x * deriv f (x - t)) :=
+    ((hf.continuous_deriv (by norm_num)).mul
+      ((hf.continuous_deriv (by norm_num)).comp
+        (continuous_id.sub continuous_const))).integrable_of_hasCompactSupport
+      hs.deriv.mul_right
+  have hc : (fun s : ℝ => ∫ x : ℝ, f x * f (x - s)) =
+      (f ⋆ fun x : ℝ => f (-x)) := by
+    funext s
+    simp only [convolution, ContinuousLinearMap.lsmul_apply, smul_eq_mul, neg_sub]
+  have hd : deriv (fun s : ℝ => ∫ x : ℝ, f x * f (x - s)) =
+      (deriv f ⋆ fun x : ℝ => f (-x)) := by
+    rw [hc]
+    funext s
+    exact (hs.hasDerivAt_convolution_left (ContinuousLinearMap.lsmul ℝ ℝ)
+      hf hir.locallyIntegrable s).deriv
+  have hrefl : deriv (fun x : ℝ => f (-x)) =
+      fun x : ℝ => -deriv f (-x) := by
+    funext x
+    have h := (hf.differentiable (by norm_num) (-x)).hasDerivAt
+    have hn : HasDerivAt (fun y : ℝ => f (-y)) (-deriv f (-x)) x := by
+      convert h.comp x (hasDerivAt_neg x) using 1 <;> first | rfl | simp
+    exact hn.deriv
+  refine ⟨hprod, ?_⟩
+  rw [hd]
+  have h := hr.hasDerivAt_convolution_right (ContinuousLinearMap.lsmul ℝ ℝ)
+    hif.locallyIntegrable hfr t
+  simpa only [hrefl, convolution, ContinuousLinearMap.lsmul_apply, smul_eq_mul,
+    neg_sub, mul_neg, integral_neg] using h.deriv
+
+/-- The actual normalized primitive's second correlation derivative retains the minus sign. -/
+theorem primitiveCorrelationZero_second_deriv_eq_neg_one {A : ℝ}
+    (hA : 0 < A) (t : ℝ) :
+    deriv (deriv (primitiveCorrelationZero A)) t = -primitiveCorrelationOne A t := by
+  have hf : ContDiff ℝ 1 (normalizedPrimitiveBump A) :=
+    (normalizedPrimitiveBump_contDiff hA).of_le (by norm_num)
+  exact (compact_autocorrelation_curvature hf
+    (normalizedPrimitiveBump_hasCompactSupport hA) t).2
+
+/-- C² of the primitive suffices for the next exact derivative-correlation identity. -/
+theorem primitiveCorrelationOne_second_deriv_eq_neg_two {A : ℝ}
+    (hA : 0 < A) (t : ℝ) :
+    deriv (deriv (primitiveCorrelationOne A)) t = -primitiveCorrelationTwo A t := by
+  have hf : ContDiff ℝ 1 (deriv (normalizedPrimitiveBump A)) :=
+    (normalizedPrimitiveBump_contDiff hA).deriv'
+  exact (compact_autocorrelation_curvature hf
+    (normalizedPrimitiveBump_deriv_hasCompactSupport hA) t).2
+
+end FormalResearch.RiemannHypothesis.SourcePrimitiveCorrelationCurvature
+```

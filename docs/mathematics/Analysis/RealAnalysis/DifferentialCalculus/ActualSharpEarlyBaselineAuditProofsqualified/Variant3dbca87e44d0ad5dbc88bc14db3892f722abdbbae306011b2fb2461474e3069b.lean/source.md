@@ -1,0 +1,20 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualSharpEarlyBaselineAuditProofsqualified.Variant3dbca87e44d0ad5dbc88bc14db3892f722abdbbae306011b2fb2461474e3069b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `454767a65b974897af2f051fc1711fb4eced2e1c` · SHA-256 `3dbca87e44d0ad5dbc88bc14db3892f722abdbbae306011b2fb2461474e3069b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSharpEarlyBaseline
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.actualCorrelation_deriv_zero
+#print RH16IndependentChallengeNext.actualCriticalWeight_lower_curvature
+#print RH16IndependentChallengeNext.actualEarlyDerivative_le_curvature_majorant
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_le_curvature_endpoint
+#print RH16IndependentChallengeNext.actualCutoff_log_sq_le_sqrt
+#print RH16IndependentChallengeNext.actualCutoff_sqrt_lower
+#print RH16IndependentChallengeNext.actualCutoff_curvature_error_le
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_le_neg_scale_add_seven
+#print RH16IndependentChallengeNext.literal_L_sub_plain_le_tail_sub_scale_add_seven
+```

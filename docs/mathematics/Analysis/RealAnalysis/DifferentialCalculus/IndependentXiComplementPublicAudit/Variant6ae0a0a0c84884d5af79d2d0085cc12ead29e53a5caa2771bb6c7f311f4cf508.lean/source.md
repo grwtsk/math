@@ -1,0 +1,63 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.IndependentXiComplementPublicAudit.Variant6ae0a0a0c84884d5af79d2d0085cc12ead29e53a5caa2771bb6c7f311f4cf508
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `644da6a1b53c8b4024b30a0563fca2d5b14b69f2` · SHA-256 `393ccf64f74d0353c8af06105e9e00b8ac245e2ff5c5e9babd477c9ea8d56f8c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceCompleteXiComplementConsumer.Variant7d37d85619d1f35b7e67eebabf3a06d005143baad629aa4cab0c3d88261da43c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7d37d85619d1f35b7e67eebabf3a06d005143baad629aa4cab0c3d88261da43c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.SourceCompleteXiComplementConsumer.Variant7d37d85619d1f35b7e67eebabf3a06d005143baad629aa4cab0c3d88261da43c","mathematical_subject":"Analysis.Calculus","original_sha256":"7d37d85619d1f35b7e67eebabf3a06d005143baad629aa4cab0c3d88261da43c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-root-01a11259-next/independent-xi-complement-20261006T223959Z/IndependentXiComplementPublicAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCompleteXiComplementConsumer
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceCompleteXiComplementConsumer.Variant7d37d85619d1f35b7e67eebabf3a06d005143baad629aa4cab0c3d88261da43c
+
+set_option autoImplicit false
+set_option pp.all true
+#check RH16ActualXiPositiveBlock.actualTransformedXiBlockDensity
+#print axioms RH16ActualXiPositiveBlock.actualTransformedXiBlockDensity
+#check RH16ActualXiPositiveBlock.blockMargin
+#print axioms RH16ActualXiPositiveBlock.blockMargin
+#check RH16ActualXiPositiveBlock.actual_transformed_kernel_negative
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_kernel_negative
+#check RH16ActualXiPositiveBlock.actual_transformed_density_lower
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_density_lower
+#check RH16ActualXiPositiveBlock.actual_transformed_density_intervalIntegrable
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_density_intervalIntegrable
+#check RH16ActualXiPositiveBlock.blockMargin_pos
+#print axioms RH16ActualXiPositiveBlock.blockMargin_pos
+#check RH16ActualXiPositiveBlock.actual_transformed_block_integral_lower
+#print axioms RH16ActualXiPositiveBlock.actual_transformed_block_integral_lower
+#check RH16ShiftedXiAdapter.plain_derivative_prefactor_eq
+#print axioms RH16ShiftedXiAdapter.plain_derivative_prefactor_eq
+#check RH16ShiftedXiAdapter.plainProfile_deriv_eq_actual_kernel
+#print axioms RH16ShiftedXiAdapter.plainProfile_deriv_eq_actual_kernel
+#check RH16ShiftedXiAdapter.signedCesaroPairing_eq_explicit_shiftedXi
+#print axioms RH16ShiftedXiAdapter.signedCesaroPairing_eq_explicit_shiftedXi
+#check RH16ShiftedXiAdapter.remainingAtomWork_eq_explicit_shiftedXi
+#print axioms RH16ShiftedXiAdapter.remainingAtomWork_eq_explicit_shiftedXi
+#check RH16CompleteXiComplement.completeXiComplement
+#print axioms RH16CompleteXiComplement.completeXiComplement
+#check RH16CompleteXiComplement.calibratedRadius
+#print axioms RH16CompleteXiComplement.calibratedRadius
+#check RH16CompleteXiComplement.complementAtomBudget
+#print axioms RH16CompleteXiComplement.complementAtomBudget
+#check RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#print axioms RH16CompleteXiComplement.actual_transformed_whole_intervalIntegrable
+#check RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#print axioms RH16CompleteXiComplement.signed_pairing_eq_block_add_complement
+#check RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.signed_pairing_lower_of_complete_complement
+#check RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.remaining_lower_of_complete_complement
+#check RH16CompleteXiComplement.complementAtomBudget_nonneg
+#print axioms RH16CompleteXiComplement.complementAtomBudget_nonneg
+#check RH16CompleteXiComplement.atom_witness_of_complete_complement
+#print axioms RH16CompleteXiComplement.atom_witness_of_complete_complement
+#check RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#print axioms RH16CompleteXiComplement.all_real_lower_of_complete_complement
+#check RH16CompleteXiComplement.estimate_of_complete_complement
+#print axioms RH16CompleteXiComplement.estimate_of_complete_complement
+```

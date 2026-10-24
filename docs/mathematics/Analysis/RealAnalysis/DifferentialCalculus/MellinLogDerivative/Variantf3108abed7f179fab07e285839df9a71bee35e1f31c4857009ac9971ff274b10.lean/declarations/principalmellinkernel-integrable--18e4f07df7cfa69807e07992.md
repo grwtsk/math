@@ -1,0 +1,122 @@
+# principalMellinKernel_integrable
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "d7b0fcf7d64749973a5fb5d946954d9abe24d966",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 426,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/f3/f3108abed7f179fab07e285839df9a71bee35e1f31c4857009ac9971ff274b10.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:0d3b20f8-99e5-c8a4-9905-b229a95a9bb1",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:0a975dce-86ed-82d7-a984-c42dfc88d074",
+  "kind": "theorem",
+  "lexical_name": "principalMellinKernel_integrable",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "principalmellinkernel-integrable--18e4f07df7cfa69807e07992",
+  "source": {
+    "blob": "d7b0fcf7d64749973a5fb5d946954d9abe24d966",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 454,
+    "line": 426,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/MellinLogDerivative/Variantf3108abed7f179fab07e285839df9a71bee35e1f31c4857009ac9971ff274b10.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:18e4f07df7cfa69807e07992d1a85da76ce61f3e65dcf0ed816407538d019d65",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/DifferentialCalculus/MellinLogDerivative/Variantf3108abed7f179fab07e285839df9a71bee35e1f31c4857009ac9971ff274b10.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0a975dce-86ed-82d7-a984-c42dfc88d074`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 426–454.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private theorem principalMellinKernel_integrable
+    {q : ℕ} (χ : DirichletCharacter ℂ q)
+    {s : ℂ} (hs : 1 < s.re) :
+    IntegrableOn
+      (fun t : ℝ ↦ (t : ℂ) ^ (-(s + 1)) *
+        (dirichletPrincipalIndicator χ * (t : ℂ)))
+      (Ioi 1) := by
+  have hpow : IntegrableOn (fun t : ℝ ↦ (t : ℂ) ^ (-s)) (Ioi 1) :=
+    integrableOn_Ioi_cpow_of_lt (by simp; linarith) zero_lt_one
+  have hcongr : ∀ t ∈ Ioi (1 : ℝ),
+      (t : ℂ) ^ (-(s + 1)) *
+          (dirichletPrincipalIndicator χ * (t : ℂ)) =
+        dirichletPrincipalIndicator χ * (t : ℂ) ^ (-s) := by
+    intro t ht
+    have ht0 : (t : ℂ) ≠ 0 :=
+      ofReal_ne_zero.mpr (ne_of_gt (zero_lt_one.trans ht))
+    rw [show -(s + 1) = -s - 1 by ring, cpow_sub _ _ ht0]
+    simp only [cpow_one]
+    calc
+      (t : ℂ) ^ (-s) / (t : ℂ) *
+          (dirichletPrincipalIndicator χ * (t : ℂ)) =
+          (t : ℂ) ^ (-s) * dirichletPrincipalIndicator χ := by
+            field_simp [ht0]
+      _ = _ := mul_comm _ _
+  have hconst : IntegrableOn
+      (fun t : ℝ ↦ dirichletPrincipalIndicator χ * (t : ℂ) ^ (-s))
+      (Ioi 1) := hpow.const_mul _
+  exact hconst.congr_fun (fun t ht ↦ (hcongr t ht).symm) measurableSet_Ioi
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/MellinLogDerivative/Variantf3108abed7f179fab07e285839df9a71bee35e1f31c4857009ac9971ff274b10.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/MellinLogDerivative/Variantf3108abed7f179fab07e285839df9a71bee35e1f31c4857009ac9971ff274b10.lean#L426).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d7b0fcf7d64749973a5fb5d946954d9abe24d966` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

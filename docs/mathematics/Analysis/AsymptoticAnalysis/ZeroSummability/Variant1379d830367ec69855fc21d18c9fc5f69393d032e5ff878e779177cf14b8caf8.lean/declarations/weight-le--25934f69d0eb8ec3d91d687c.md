@@ -1,0 +1,119 @@
+# weight_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "7b5e1595f7828376f08754258199dc4ab042d175",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 40,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/13/1379d830367ec69855fc21d18c9fc5f69393d032e5ff878e779177cf14b8caf8.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:d1d076c8-9215-1b44-ba58-629628fa44fe",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:3fbf6cc2-b1da-5282-8527-09ef9018fb42",
+  "kind": "lemma",
+  "lexical_name": "weight_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "weight-le--25934f69d0eb8ec3d91d687c",
+  "source": {
+    "blob": "7b5e1595f7828376f08754258199dc4ab042d175",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 65,
+    "line": 40,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/ZeroSummability/Variant1379d830367ec69855fc21d18c9fc5f69393d032e5ff878e779177cf14b8caf8.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:25934f69d0eb8ec3d91d687ced99d9376aaf7bf581cf638de626b7ebe65b3f99",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/ZeroSummability/Variant1379d830367ec69855fc21d18c9fc5f69393d032e5ff878e779177cf14b8caf8.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:3fbf6cc2-b1da-5282-8527-09ef9018fb42`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 40–65.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma weight_le (n : ℤ) (hn : n ≠ 0) :
+    Real.log (|(n : ℝ)| + 3) / (1 + (n : ℝ) ^ 2) ≤ 4 * |(n : ℝ)| ^ (-(3 / 2 : ℝ)) := by
+  have hn1 : (1 : ℝ) ≤ |(n : ℝ)| := by exact_mod_cast Int.one_le_abs hn
+  have hn0 : (0 : ℝ) < |(n : ℝ)| := by linarith
+  -- log y ≤ 2 √y and |n| + 3 ≤ 4|n|, so log(|n|+3) ≤ 2√(4|n|) = 4√|n|
+  have h1 := Real.log_le_rpow_div (show (0:ℝ) ≤ |(n:ℝ)| + 3 by positivity)
+    (show (0:ℝ) < 1/2 by norm_num)
+  have h2 : (|(n : ℝ)| + 3) ^ (1 / 2 : ℝ) ≤ (4 * |(n : ℝ)|) ^ (1 / 2 : ℝ) :=
+    Real.rpow_le_rpow (by positivity) (by linarith) (by norm_num)
+  have h3 : (4 * |(n : ℝ)|) ^ (1 / 2 : ℝ) = 2 * |(n : ℝ)| ^ (1 / 2 : ℝ) := by
+    rw [Real.mul_rpow (by norm_num) hn0.le, show (4:ℝ) ^ (1/2:ℝ) = 2 by
+      rw [show (4:ℝ) = 2 ^ (2:ℝ) by norm_num, ← Real.rpow_mul (by norm_num)]; norm_num]
+  have hA : Real.log (|(n : ℝ)| + 3) ≤ 4 * |(n : ℝ)| ^ (1 / 2 : ℝ) := by
+    have : (|(n : ℝ)| + 3) ^ (1 / 2 : ℝ) / (1 / 2) = 2 * (|(n : ℝ)| + 3) ^ (1 / 2 : ℝ) := by ring
+    rw [this] at h1; rw [h3] at h2; linarith
+  have hB : 1 / (1 + (n : ℝ) ^ 2) ≤ |(n : ℝ)| ^ (-2 : ℝ) := by
+    rw [Real.rpow_neg hn0.le, show (2:ℝ) = ((2:ℕ):ℝ) by norm_num, Real.rpow_natCast, sq_abs,
+      one_div]
+    exact inv_anti₀ (by positivity) (by linarith)
+  calc Real.log (|(n : ℝ)| + 3) / (1 + (n : ℝ) ^ 2)
+      = Real.log (|(n : ℝ)| + 3) * (1 / (1 + (n : ℝ) ^ 2)) := by ring
+    _ ≤ (4 * |(n : ℝ)| ^ (1 / 2 : ℝ)) * |(n : ℝ)| ^ (-2 : ℝ) :=
+        mul_le_mul hA hB (by positivity) (by positivity)
+    _ = 4 * |(n : ℝ)| ^ (-(3 / 2 : ℝ)) := by
+        rw [mul_assoc, ← Real.rpow_add hn0]; norm_num
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/ZeroSummability/Variant1379d830367ec69855fc21d18c9fc5f69393d032e5ff878e779177cf14b8caf8.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/ZeroSummability/Variant1379d830367ec69855fc21d18c9fc5f69393d032e5ff878e779177cf14b8caf8.lean#L40).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7b5e1595f7828376f08754258199dc4ab042d175` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

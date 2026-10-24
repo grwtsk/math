@@ -1,0 +1,68 @@
+# Verification target: GRWTSK.Analysis.Energy.Checks.Negative.MissingBudget
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "84a21b39b6f12fb3c23657d97eaabc9d655a6702",
+  "lexical_observation_count": 1,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/Energy/Checks/Negative/MissingBudget.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../mathematics/Analysis/Energy/Checks/Negative/MissingBudget.lean/index.md) · [Full source](../../../../../../mathematics/Analysis/Energy/Checks/Negative/MissingBudget.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `84a21b39b6f12fb3c23657d97eaabc9d655a6702`.
+
+Source path: `GRWTSK/Analysis/Energy/Checks/Negative/MissingBudget.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/Energy/Checks/Negative/MissingBudget.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.LinearAlgebra.AlmostMathieu`](../../../../../../mathematics/Algebra/LinearAlgebra/AlmostMathieu__SourceOccurrence949d7a3b1820b6d16fa59c41.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.Analysis.LaplaceTransform.ExponentialThreshold`](../../../../../../mathematics/Analysis/IntegralTransforms/ClassicalTransforms/LaplaceTransform/ExponentialThreshold.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm`](../../../../../../mathematics/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm__SourceOccurrence4ddf3c1526e7b64c3ef823c8.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.PolynomialEnergyCriterion`](../../../../../../mathematics/NumberTheory/Zeta/Riemann/PolynomialEnergyCriterion.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.ComparisonEnergy`](../../../../../../mathematics/NumberTheory/Moebius/ComparisonEnergy.lean/index.md) — import line 5; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.IntegerSampleGrowth`](../../../../../../mathematics/NumberTheory/Moebius/IntegerSampleGrowth.lean/index.md) — import line 6; pinned internal source present.
+- [`GRWTSK.NumberTheory.Moebius.UnsignedEnergyBound`](../../../../../../mathematics/NumberTheory/Moebius/UnsignedEnergyBound.lean/index.md) — import line 7; pinned internal source present.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `example` | [(anonymous)](../../../../../../mathematics/Analysis/Energy/Checks/Negative/MissingBudget.lean/declarations/example--1a3e1d080d3fad8273b16c88.md) | 11 | `declaration-track:1a3e1d080d3fad8273b16c88d28dea30912df73b8a96140302697cc53b43d953` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

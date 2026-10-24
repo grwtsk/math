@@ -1,0 +1,134 @@
+# integrable_re_paperFT_sq_and
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:3ca1d2ee-10d9-9271-e71b-a873df2a0edd",
+  "kind": "theorem",
+  "lexical_name": "integrable_re_paperFT_sq_and",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "integrable-re-paperft-sq-and--318595301a1295f6b12a41e7",
+  "source": {
+    "blob": "58cab2cabe3d30794ee6e204b4ff6fa1c45a683d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 171,
+    "line": 119,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/Fourier/Variantbd04de1e32aeec9e847f63d723aa52a7b71f933c5510088c755c2f567ae18980.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:318595301a1295f6b12a41e7dad821334661ee21fed760a6c251b04ec7879064",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/Fourier/Variantbd04de1e32aeec9e847f63d723aa52a7b71f933c5510088c755c2f567ae18980.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:3ca1d2ee-10d9-9271-e71b-a873df2a0edd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 119–171.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem integrable_re_paperFT_sq_and {f : ℝ → ℂ} {Λ : ℝ} (hf : ContDiff ℝ 2 f)
+    (hsupp : ∀ u, f u ≠ 0 → |u| ≤ Λ) :
+    Integrable (fun r : ℝ => (paperFT f r).re ^ 2) ∧
+      Integrable (fun r : ℝ => (paperFT f r).re ^ 2 * |r|) := by
+  have hcs : HasCompactSupport f := hasCompactSupport_of_support_subset_abs hsupp
+  have hfi : Integrable f := hf.continuous.integrable_of_hasCompactSupport hcs
+  set C₀ : ℝ := ∫ u, ‖f u‖
+  set C₂ : ℝ := ∫ u, ‖deriv (deriv f) u‖
+  set K : ℝ := C₀ + C₂
+  -- pointwise decay at real points
+  have hG : ∀ r : ℝ, ‖paperFT f r‖ ≤ C₀ := by
+    intro r
+    simpa using norm_paperFT_le hfi hsupp (r : ℂ)
+  have hG2 : ∀ r : ℝ, ‖paperFT f r‖ * r ^ 2 ≤ C₂ := by
+    intro r
+    have := norm_paperFT_mul_sq_le hf hsupp (r : ℂ)
+    simpa [sq_abs] using this
+  have hGK : ∀ r : ℝ, ‖paperFT f r‖ * (1 + r ^ 2) ≤ K := by
+    intro r
+    have := hG r; have := hG2 r
+    simp only [K]; nlinarith
+  have hGr : ∀ r : ℝ, ‖paperFT f r‖ * |r| ≤ K := by
+    intro r
+    refine le_trans ?_ (hGK r)
+    apply mul_le_mul_of_nonneg_left _ (norm_nonneg _)
+    nlinarith [abs_nonneg r, sq_abs r]
+  have hre : ∀ r : ℝ, (paperFT f r).re ^ 2 ≤ ‖paperFT f r‖ ^ 2 := fun r =>
+    sq_le_sq' (by linarith [abs_le.mp (Complex.abs_re_le_norm (paperFT f r))])
+      (le_trans (le_abs_self _) (Complex.abs_re_le_norm _))
+  have hC₀ : 0 ≤ C₀ := integral_nonneg fun _ => norm_nonneg _
+  have hcont : Continuous fun r : ℝ => (paperFT f r).re :=
+    (contDiff_re_paperFT_ofReal hf.continuous hcs 0).continuous
+  constructor
+  · apply integrable_of_abs_mul_one_add_sq_le (by fun_prop) (K := C₀ * K)
+    intro r
+    rw [abs_of_nonneg (sq_nonneg _)]
+    calc (paperFT f r).re ^ 2 * (1 + r ^ 2)
+        ≤ ‖paperFT f r‖ ^ 2 * (1 + r ^ 2) := mul_le_mul_of_nonneg_right (hre r) (by positivity)
+      _ = ‖paperFT f r‖ * (‖paperFT f r‖ * (1 + r ^ 2)) := by ring
+      _ ≤ C₀ * K := mul_le_mul (hG r) (hGK r) (by positivity) hC₀
+  · apply integrable_of_abs_mul_one_add_sq_le (by fun_prop) (K := K * K)
+    intro r
+    rw [abs_of_nonneg (by positivity)]
+    calc (paperFT f r).re ^ 2 * |r| * (1 + r ^ 2)
+        ≤ ‖paperFT f r‖ ^ 2 * |r| * (1 + r ^ 2) :=
+          mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_right (hre r) (abs_nonneg r))
+            (by positivity)
+      _ = (‖paperFT f r‖ * |r|) * (‖paperFT f r‖ * (1 + r ^ 2)) := by ring
+      _ ≤ K * K := mul_le_mul (hGr r) (hGK r) (by positivity) (le_trans (by positivity) (hGr r))
+
+/-! ### The paper's autocorrelation `(v ⋆ v)(y) := ∫ v(u) v(u+y) du` [eq:PhigA] versus Mathlib's convolution -/
+
+/-- `v ⋆ v` is even (no hypothesis on `v`: substitute `u ↦ u − y`). -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/Fourier/Variantbd04de1e32aeec9e847f63d723aa52a7b71f933c5510088c755c2f567ae18980.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/Fourier/Variantbd04de1e32aeec9e847f63d723aa52a7b71f933c5510088c755c2f567ae18980.lean#L119).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `58cab2cabe3d30794ee6e204b4ff6fa1c45a683d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

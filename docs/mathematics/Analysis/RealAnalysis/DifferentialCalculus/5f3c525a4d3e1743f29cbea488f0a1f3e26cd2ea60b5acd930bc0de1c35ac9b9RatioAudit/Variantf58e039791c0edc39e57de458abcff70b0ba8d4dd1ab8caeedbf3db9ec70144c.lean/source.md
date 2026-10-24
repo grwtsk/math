@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9RatioAudit.Variantf58e039791c0edc39e57de458abcff70b0ba8d4dd1ab8caeedbf3db9ec70144c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `958a1a75aed43ac0df20f5dff56792b532f18d66` · SHA-256 `538a900350bb8b51cdb5f459704568ceb9fefaf10b2eeeb6dc17fce48a1979cc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ThetaTailRatioTwo.Variant5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.ThetaTailRatioTwo.Variant5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9","mathematical_subject":"Analysis.Calculus","original_sha256":"5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/5f/5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9--RatioAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.ThetaTailRatioTwo
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ThetaTailRatioTwo.Variant5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9
+
+open FormalResearch.RiemannHypothesis.ThetaPositiveLift
+
+#check deriv_thetaPhi_poly_integrableOn
+#print deriv_thetaPhi_poly_integrableOn
+#print axioms deriv_thetaPhi_poly_integrableOn
+#check thetaPhi_deriv_mul_sub_integrableOn
+#print thetaPhi_deriv_mul_sub_integrableOn
+#print axioms thetaPhi_deriv_mul_sub_integrableOn
+#check thetaPhi_mul_sub_tendsto_atTop
+#print thetaPhi_mul_sub_tendsto_atTop
+#print axioms thetaPhi_mul_sub_tendsto_atTop
+#check thetaPhi_logSlope_cross_nonnegative
+#print thetaPhi_logSlope_cross_nonnegative
+#print axioms thetaPhi_logSlope_cross_nonnegative
+#check thetaPhi_deriv_mul_sub_integral
+#print thetaPhi_deriv_mul_sub_integral
+#print axioms thetaPhi_deriv_mul_sub_integral
+#check thetaTail_two_logSlope_identity
+#print thetaTail_two_logSlope_identity
+#print axioms thetaTail_two_logSlope_identity
+#check thetaTail_two_logSlope_nonnegative
+#print thetaTail_two_logSlope_nonnegative
+#print axioms thetaTail_two_logSlope_nonnegative
+#check hasDerivAt_thetaTail_two_div_thetaPhi
+#print hasDerivAt_thetaTail_two_div_thetaPhi
+#print axioms hasDerivAt_thetaTail_two_div_thetaPhi
+#check thetaTail_two_div_thetaPhi_deriv_nonpos
+#print thetaTail_two_div_thetaPhi_deriv_nonpos
+#print axioms thetaTail_two_div_thetaPhi_deriv_nonpos
+#check thetaTail_two_div_thetaPhi_antitone
+#print thetaTail_two_div_thetaPhi_antitone
+#print axioms thetaTail_two_div_thetaPhi_antitone
+#check thetaTailSignRegular_two_zero_one
+#print thetaTailSignRegular_two_zero_one
+#print axioms thetaTailSignRegular_two_zero_one
+```

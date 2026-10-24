@@ -1,0 +1,67 @@
+# Basic — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**54 source modules · 5,288 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant0695d1df4c022467a91050d21f8825bdf3ae5b288c12432bbcbe2d90c4393d13.lean](Variant0695d1df4c022467a91050d21f8825bdf3ae5b288c12432bbcbe2d90c4393d13.lean/index.md) | module |
+| [Variant07e77ffadb3d07d2295b01439048f03b6f85f0e32719bee5ee82c7ec3250d47d.lean](Variant07e77ffadb3d07d2295b01439048f03b6f85f0e32719bee5ee82c7ec3250d47d.lean/index.md) | module |
+| [Variant087b1d35c2c94f50c99eafea94c5ae22e41f28496bb8e521ac07f55b3546a779.lean](Variant087b1d35c2c94f50c99eafea94c5ae22e41f28496bb8e521ac07f55b3546a779.lean/index.md) | module |
+| [Variant098b077b08ddd5d4dc5bae8b5119b54afccf5375f4bd7ecbb3b399fe9f235742.lean](Variant098b077b08ddd5d4dc5bae8b5119b54afccf5375f4bd7ecbb3b399fe9f235742.lean/index.md) | module |
+| [Variant22800b2d9952fd074976413556aeadceaeca89fe47f34bd60081648aa74a50c8.lean](Variant22800b2d9952fd074976413556aeadceaeca89fe47f34bd60081648aa74a50c8.lean/index.md) | module |
+| [Variant23b9ecb4eac45165b2821c52c3eabe79fcc64b65ac9da8de246c23a57db2cc84.lean](Variant23b9ecb4eac45165b2821c52c3eabe79fcc64b65ac9da8de246c23a57db2cc84.lean/index.md) | module |
+| [Variant2590d9eb43139074daf7a0a83c98af28f6521026f9c88136f19db1e560801f91.lean](Variant2590d9eb43139074daf7a0a83c98af28f6521026f9c88136f19db1e560801f91.lean/index.md) | module |
+| [Variant28e9825b72ef3d72f615eb38bc387462e4cd89917b6c7447a4082a74bb466bb2.lean](Variant28e9825b72ef3d72f615eb38bc387462e4cd89917b6c7447a4082a74bb466bb2.lean/index.md) | module |
+| [Variant37228bc604e8f4eaeace0a119a9ff7830fbcaa1de6f2dc1f19996ccda2c8b5bb.lean](Variant37228bc604e8f4eaeace0a119a9ff7830fbcaa1de6f2dc1f19996ccda2c8b5bb.lean/index.md) | module |
+| [Variant3942d90f7c1fe09166cc5c76c931126763b765a03d795b9c495e5611e41a351f.lean](Variant3942d90f7c1fe09166cc5c76c931126763b765a03d795b9c495e5611e41a351f.lean/index.md) | module |
+| [Variant3e5ee32d083544830d1f2b3d9a9cdd6e82a5913f124b87db6add5c42330639c8.lean](Variant3e5ee32d083544830d1f2b3d9a9cdd6e82a5913f124b87db6add5c42330639c8.lean/index.md) | module |
+| [Variant4c7baae7d76943c79b125c15dfeba367bcdc0b4103f358540187a5cee159047d.lean](Variant4c7baae7d76943c79b125c15dfeba367bcdc0b4103f358540187a5cee159047d.lean/index.md) | module |
+| [Variant4d554019b4c6ccb89cb0286796bc3fcbbb9d01d43ac5cda5f7e230f743346c11.lean](Variant4d554019b4c6ccb89cb0286796bc3fcbbb9d01d43ac5cda5f7e230f743346c11.lean/index.md) | module |
+| [Variant4fc300cd5d1da688d32f3889e15f7227612635bf6d431dfe93631367a8f74e1e.lean](Variant4fc300cd5d1da688d32f3889e15f7227612635bf6d431dfe93631367a8f74e1e.lean/index.md) | module |
+| [Variant4fc6ebac08d43b0098dbbfdca2f88c8ca9afebfc1a459711e3b9d78520ba96cb.lean](Variant4fc6ebac08d43b0098dbbfdca2f88c8ca9afebfc1a459711e3b9d78520ba96cb.lean/index.md) | module |
+| [Variant50a1391e6d4352f783d591001369dcc21438600576c54a82b349086effaf3738.lean](Variant50a1391e6d4352f783d591001369dcc21438600576c54a82b349086effaf3738.lean/index.md) | module |
+| [Variant522ebdb67f8066edfcef31053b3d79b5d14339e6d001c46136c567cbfa27cfc0.lean](Variant522ebdb67f8066edfcef31053b3d79b5d14339e6d001c46136c567cbfa27cfc0.lean/index.md) | module |
+| [Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean](Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean/index.md) | module |
+| [Variant6578c38da5a7f0dd1217b5a5b2e9d747c14f17ca442bf4d3e0fbfde5b6d41502.lean](Variant6578c38da5a7f0dd1217b5a5b2e9d747c14f17ca442bf4d3e0fbfde5b6d41502.lean/index.md) | module |
+| [Variant69f4809f91cbaa551153efc0a1afc8dc5ac960e53ed4420b007536ff2b812ab8.lean](Variant69f4809f91cbaa551153efc0a1afc8dc5ac960e53ed4420b007536ff2b812ab8.lean/index.md) | module |
+| [Variant7c0e93e9ae70d81d9cc495fe1b92c80e51cc84f60949446e150c6e17d81dbdf1.lean](Variant7c0e93e9ae70d81d9cc495fe1b92c80e51cc84f60949446e150c6e17d81dbdf1.lean/index.md) | module |
+| [Variant97e7a2efda146d0d1280f23d660cc07655dd7c48b51631752e9aa94deaa18ab9.lean](Variant97e7a2efda146d0d1280f23d660cc07655dd7c48b51631752e9aa94deaa18ab9.lean/index.md) | module |
+| [Variant9b693bfa01701a37f1a29d839e62c8e0de285c80c2526573fa8a73dca3985706.lean](Variant9b693bfa01701a37f1a29d839e62c8e0de285c80c2526573fa8a73dca3985706.lean/index.md) | module |
+| [Variant9bb036aeeeb005874d4ebcac5af8a96e01b2b74ddc653ce582984204b20df735.lean](Variant9bb036aeeeb005874d4ebcac5af8a96e01b2b74ddc653ce582984204b20df735.lean/index.md) | module |
+| [Variant9c2211aef916f1f63ff63df97c459518d15a31ce11d5ce17d87445b9f53a6077.lean](Variant9c2211aef916f1f63ff63df97c459518d15a31ce11d5ce17d87445b9f53a6077.lean/index.md) | module |
+| [Variant9dac3052277147f99bac1610518a6705e299950aee198c3a5f7a8f48598e935f.lean](Variant9dac3052277147f99bac1610518a6705e299950aee198c3a5f7a8f48598e935f.lean/index.md) | module |
+| [Varianta0d3097223c0f4f192fb7a93b5e38bec40b64b5a0f48d148643a4865eb26acbb.lean](Varianta0d3097223c0f4f192fb7a93b5e38bec40b64b5a0f48d148643a4865eb26acbb.lean/index.md) | module |
+| [Varianta37773fcbbda181eb77fc05ec2182cd594bad3ac9adff522f2fe0c5862412eed.lean](Varianta37773fcbbda181eb77fc05ec2182cd594bad3ac9adff522f2fe0c5862412eed.lean/index.md) | module |
+| [Varianta404692e32407cc3efaf50eb4ef6041b56a24f6ecff276fc0ecc12f0b77425ec.lean](Varianta404692e32407cc3efaf50eb4ef6041b56a24f6ecff276fc0ecc12f0b77425ec.lean/index.md) | module |
+| [Variantae35fca2bb75518e2415155cfeffce8c9c503fe79df5858d90ee79edaaaa7ae5.lean](Variantae35fca2bb75518e2415155cfeffce8c9c503fe79df5858d90ee79edaaaa7ae5.lean/index.md) | module |
+| [Variantb14cca8c1c20b98feda4bb99e3e44e619b9dcd28f25cf658b7215cfbd0fcc511.lean](Variantb14cca8c1c20b98feda4bb99e3e44e619b9dcd28f25cf658b7215cfbd0fcc511.lean/index.md) | module |
+| [Variantb1521d01bdaa2c9559084bc24e93517d2f5d16542c9042bdc9afa787e288c211.lean](Variantb1521d01bdaa2c9559084bc24e93517d2f5d16542c9042bdc9afa787e288c211.lean/index.md) | module |
+| [Variantbc488ed7d7218febe4c2508baca8d84eef8905b5b5972731c4d412d700591b20.lean](Variantbc488ed7d7218febe4c2508baca8d84eef8905b5b5972731c4d412d700591b20.lean/index.md) | module |
+| [Variantbdaf2b97020cb993412960090f185004e180df253a501fb730b63b0e5ce1d132.lean](Variantbdaf2b97020cb993412960090f185004e180df253a501fb730b63b0e5ce1d132.lean/index.md) | module |
+| [Variantc06953c6174f852b870e3c3302ff4e2d4279782db88a0e187c65130fc3386377.lean](Variantc06953c6174f852b870e3c3302ff4e2d4279782db88a0e187c65130fc3386377.lean/index.md) | module |
+| [Variantc65e55c405d103403b276211fe7c4b49a2cfe84320c4969f55ea7ca6c4920de9.lean](Variantc65e55c405d103403b276211fe7c4b49a2cfe84320c4969f55ea7ca6c4920de9.lean/index.md) | module |
+| [Variantc67e9a159fb6b0f3808ff1ce0b3447a6d1783b211502d6662154b196dcc937cd.lean](Variantc67e9a159fb6b0f3808ff1ce0b3447a6d1783b211502d6662154b196dcc937cd.lean/index.md) | module |
+| [Variantcce9790b492f2e8a7d2f11a3fc145b178c08aa8ad0d089637dd245b308ad2849.lean](Variantcce9790b492f2e8a7d2f11a3fc145b178c08aa8ad0d089637dd245b308ad2849.lean/index.md) | module |
+| [Variantcf2b08f5a806629d1c5a40c7b7fee806083a24682772321b3bbced1863f6f9e9.lean](Variantcf2b08f5a806629d1c5a40c7b7fee806083a24682772321b3bbced1863f6f9e9.lean/index.md) | module |
+| [Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean](Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean/index.md) | module |
+| [Variantd940992e27d2bb30fff00ff4f58b47bcf3bf2714682bc712d49867af6a4c8c27.lean](Variantd940992e27d2bb30fff00ff4f58b47bcf3bf2714682bc712d49867af6a4c8c27.lean/index.md) | module |
+| [Variantdb8b8028348ac0d9503c7f657aa06393149ef7ffda1b62e49c67529cf6708b89.lean](Variantdb8b8028348ac0d9503c7f657aa06393149ef7ffda1b62e49c67529cf6708b89.lean/index.md) | module |
+| [Variantdbd51271f1a830020d65da7666b55dd01df793ad45cbbd1218724cfb566162fa.lean](Variantdbd51271f1a830020d65da7666b55dd01df793ad45cbbd1218724cfb566162fa.lean/index.md) | module |
+| [Variantdecb9671e851ec691f505a424069357e4a5f4fe7157be436b9be54f7dc2becf2.lean](Variantdecb9671e851ec691f505a424069357e4a5f4fe7157be436b9be54f7dc2becf2.lean/index.md) | module |
+| [Variante205ad6f9d3c0b43f838d7ebbea27490119d28d497f23cedaf1cf78ff7d018c5.lean](Variante205ad6f9d3c0b43f838d7ebbea27490119d28d497f23cedaf1cf78ff7d018c5.lean/index.md) | module |
+| [Variante2354c6c9abc08b81a2490c0c0cd0d17b5fc7d888655196689a0870df7899915.lean](Variante2354c6c9abc08b81a2490c0c0cd0d17b5fc7d888655196689a0870df7899915.lean/index.md) | module |
+| [Variante256d3ece623d6d7dd1117b02d2dc4172fd65571dfe112ccfc3eaa08811ceb49.lean](Variante256d3ece623d6d7dd1117b02d2dc4172fd65571dfe112ccfc3eaa08811ceb49.lean/index.md) | module |
+| [Variante50679355347a34d673b634646d9d8aaca61ae1d2f08f77b7f71b1d12f6ab1b3.lean](Variante50679355347a34d673b634646d9d8aaca61ae1d2f08f77b7f71b1d12f6ab1b3.lean/index.md) | module |
+| [Variante827e8e89d68f9f3a1a3283053c762d46dbff1afcb089d469b61d6ff38cf1de0.lean](Variante827e8e89d68f9f3a1a3283053c762d46dbff1afcb089d469b61d6ff38cf1de0.lean/index.md) | module |
+| [Varianteea9e2478bd975ec3d75cf2172bdaaf3202077a69298bea575b29183b7a23a1b.lean](Varianteea9e2478bd975ec3d75cf2172bdaaf3202077a69298bea575b29183b7a23a1b.lean/index.md) | module |
+| [Variantef683af46d2fbc9871f17c3e65f15d73da9219d97d63104e9ebaf32081f10276.lean](Variantef683af46d2fbc9871f17c3e65f15d73da9219d97d63104e9ebaf32081f10276.lean/index.md) | module |
+| [Variantf064495bd1ffd52cf4866379acb6730f9bf07ebe3797edac8adcf00df93099b6.lean](Variantf064495bd1ffd52cf4866379acb6730f9bf07ebe3797edac8adcf00df93099b6.lean/index.md) | module |
+| [Variantf4bc6e3f106be63339ed3cebf6ddf44707e5295b505c534ff9c4ca61eee29492.lean](Variantf4bc6e3f106be63339ed3cebf6ddf44707e5295b505c534ff9c4ca61eee29492.lean/index.md) | module |
+| [Variantf8e1ca2e1c04e0577252a7fdf48f20d8921221097c302781571558427daf4466.lean](Variantf8e1ca2e1c04e0577252a7fdf48f20d8921221097c302781571558427daf4466.lean/index.md) | module |

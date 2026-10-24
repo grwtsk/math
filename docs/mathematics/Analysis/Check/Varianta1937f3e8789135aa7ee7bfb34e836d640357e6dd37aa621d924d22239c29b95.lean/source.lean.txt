@@ -1,0 +1,12 @@
+import Mathlib.Analysis.Complex.Basic
+import Mathlib.Analysis.Normed.Group.Uniform
+import Mathlib.Tactic
+#check norm_add_le
+#check norm_sub_norm_le
+#check norm_sub_le
+#check norm_sum_le
+#check Complex.norm_real
+#check div_le_div_of_nonneg_left
+#check div_pos_iff_of_pos_right
+#check norm_div
+#check Finset.sum_div

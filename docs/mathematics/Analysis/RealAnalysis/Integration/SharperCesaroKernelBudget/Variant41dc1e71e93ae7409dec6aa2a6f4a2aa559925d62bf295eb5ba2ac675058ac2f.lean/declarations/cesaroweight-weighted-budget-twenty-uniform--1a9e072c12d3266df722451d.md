@@ -1,0 +1,90 @@
+# cesaroWeight_weighted_budget_twenty_uniform
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f6ba2250-91d1-00ee-6b4f-c4a135f69b1a",
+  "kind": "theorem",
+  "lexical_name": "cesaroWeight_weighted_budget_twenty_uniform",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "cesaroweight-weighted-budget-twenty-uniform--1a9e072c12d3266df722451d",
+  "source": {
+    "blob": "ccf1e18a34ee05ad818a5cbbbdf3aa1721c78f55",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 144,
+    "line": 136,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/SharperCesaroKernelBudget/Variant41dc1e71e93ae7409dec6aa2a6f4a2aa559925d62bf295eb5ba2ac675058ac2f.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1a9e072c12d3266df722451d021a846a8d7eddb6266b2fce91b111a40408c560",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/SharperCesaroKernelBudget/Variant41dc1e71e93ae7409dec6aa2a6f4a2aa559925d62bf295eb5ba2ac675058ac2f.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f6ba2250-91d1-00ee-6b4f-c4a135f69b1a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 136–144.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem cesaroWeight_weighted_budget_twenty_uniform (A : ℝ) (hA : 91 ≤ A) :
+    (∫ t in Real.log 2..2 * A,
+      (t - Real.log 2) * |deriv (deriv (cesaroWeight A)) t|) ≤ (5728 / 273 : ℝ) := by
+  have h := cesaroWeight_weighted_budget_twenty A hA
+  have he : 268 / (3 * A) ≤ (268 / 273 : ℝ) :=
+    (div_le_iff₀ (by positivity : 0 < 3 * A)).mpr (by linarith)
+  linarith
+
+/-- Splitting at A integrates the triangular envelope without losing either zero trace. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/SharperCesaroKernelBudget/Variant41dc1e71e93ae7409dec6aa2a6f4a2aa559925d62bf295eb5ba2ac675058ac2f.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/SharperCesaroKernelBudget/Variant41dc1e71e93ae7409dec6aa2a6f4a2aa559925d62bf295eb5ba2ac675058ac2f.lean#L136).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ccf1e18a34ee05ad818a5cbbbdf3aa1721c78f55` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

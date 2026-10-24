@@ -1,0 +1,25 @@
+# GRWTSK.Analysis.OperatorTheory.SpectralTheory.FiniteVolume.Checks.Negative.DroppedBlockBoundaryCost
+
+[Complete source index](../../../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/OperatorTheory/SpectralTheory/FiniteVolume/Checks/Negative/DroppedBlockBoundaryCost.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae079f63a18c36e41d349764eea41222dd4ce2e9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../verification/Analysis/OperatorTheory/SpectralTheory/FiniteVolume/Checks/Negative/DroppedBlockBoundaryCost__SourceOccurrence77e2d7f5f9a0d83788c2d7e1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [free_one](declarations/free-one--b25240428b332f66f4d096fc.md) | 5 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [free_two](declarations/free-two--c40938b9643afc47088ca11a.md) | 12 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [zero_count](declarations/zero-count--04372c3f64d771c74dfce32f.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `example` | [(anonymous)](declarations/example--9ee0215c251c19e238d0996b.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |

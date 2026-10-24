@@ -1,0 +1,146 @@
+# proposition_13
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f503d497-d622-f338-f4eb-564acbec5fec",
+  "kind": "theorem",
+  "lexical_name": "proposition_13",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "proposition-13--7beb706c09dd3144c5ff728b",
+  "source": {
+    "blob": "96412d1ff7921d8348f589fce58fc9abd41397e2",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1149,
+    "line": 1085,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/Lemma10Substep86c747f4a149/Variant13318ed7369122d67b7527abd125f40dcb9ad2078310279224ea1cd6af5ee91d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:7beb706c09dd3144c5ff728bb4be0b7be8f68e32919656d41c26f1e2481c39e7",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/Lemma10Substep86c747f4a149/Variant13318ed7369122d67b7527abd125f40dcb9ad2078310279224ea1cd6af5ee91d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f503d497-d622-f338-f4eb-564acbec5fec`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1085–1149.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem proposition_13
+  (Aψ B C R x₀ : ℝ) (hAψ : Aψ > 0) (hR : R > 0) (hx₀_pos : 0 < x₀) (hx₀ : 7 ≤ Real.log x₀)
+  (h_bound : Eψ.classicalBound Aψ B C R x₀)
+  (hB : B > C ^ 2 / (8 * R)) :
+  Eθ.classicalBound (Aψ * (1 + ν_asymp Aψ B C R x₀)) B C R x₀ := by
+  unfold Eθ.classicalBound Eθ
+  intro x hx
+  have hx_pos : 0 < x := lt_of_lt_of_le hx₀_pos hx
+  have h_abs_le : |θ x - x| ≤ |ψ x - x| + (ψ x - θ x) := by
+    have h1 : |θ x - x| ≤ |ψ x - x| + |θ x - ψ x| := by
+      rw [show θ x - x = (ψ x - x) + (θ x - ψ x) by ring]; exact abs_add_le _ _
+    have h2 : |θ x - ψ x| = ψ x - θ x := by
+      rw [abs_sub_comm, abs_of_nonneg (sub_nonneg.mpr (theta_le_psi x))]
+    linarith
+  have hg1_anti : StrictAntiOn (g_bound (1 / 2) (-B) (C / sqrt R)) (Set.Ioi 1) :=
+    g_bound_strictAntiOn (1 / 2) (by norm_num) B C R hR
+      (by rw [show 16 * (1 / 2 : ℝ) * R = 8 * R by ring]; exact hB)
+  have hg2_anti : StrictAntiOn (g_bound (2 / 3) (-B) (C / sqrt R)) (Set.Ioi 1) :=
+    g_bound_strictAntiOn (2 / 3) (by norm_num) B C R hR (by
+      have : 0 ≤ C ^ 2 / R := by positivity
+      rw [show C ^ 2 / (16 * (2 / 3 : ℝ) * R) = (3 / 32) * (C ^ 2 / R) by ring]
+      rw [show C ^ 2 / (8 * R) = (1 / 8) * (C ^ 2 / R) by ring] at hB
+      linarith)
+  have hlog_pos : 0 < log x := log_pos (by
+    have : 1 < x₀ := by rw [← log_pos_iff hx₀_pos.le]; linarith
+    linarith)
+  have ha₁_nonneg : 0 ≤ BKLNW.a₁ (log x₀) := by
+    unfold BKLNW.a₁ BKLNW.Inputs.a₁; split_ifs
+    · have hx₁_ge_one : 1 ≤ BKLNW.Inputs.default.x₁ := (one_le_exp (by positivity)).trans BKLNW.Inputs.default.hx₁
+      have hε := BKLNW.Pre_inputs.epsilon_nonneg BKLNW.Inputs.default.toPre_inputs (Real.log_nonneg hx₁_ge_one)
+      linarith
+    · have hε := BKLNW.Pre_inputs.epsilon_nonneg BKLNW.Inputs.default.toPre_inputs (by linarith : 0 ≤ log x₀ / 2)
+      linarith
+  have ha₂_nonneg : 0 ≤ BKLNW.a₂ (log x₀) := by
+    unfold BKLNW.a₂ BKLNW.Inputs.a₂
+    refine mul_nonneg (by norm_num [BKLNW.Inputs.default, BKLNW_app.table_8_margin]) (le_trans ?_ (le_max_left _ _))
+    unfold BKLNW.f; exact Finset.sum_nonneg (fun _ _ ↦ by positivity)
+  have h_term1_le : BKLNW.a₁ (log x₀) * x ^ (1 / 2 : ℝ) / x ≤
+      admissible_bound Aψ B C R x * ((1 / Aψ) * (R / log x₀) ^ B * exp (C * sqrt (log x₀ / R)) *
+        (BKLNW.a₁ (log x₀) * log x₀ * x₀ ^ (-(1 / 2 : ℝ)))) := by
+    have h := mul_rpow_sub_div_le_admissible_bound_mul (1 / 2) _ Aψ B C R x x₀ ha₁_nonneg hAψ hR hx_pos hx₀_pos
+      hlog_pos (by linarith) hx₀ (g_bound_le_of_anti hg1_anti hx₀_pos hx₀ hx)
+    rwa [show (1 : ℝ) - 1 / 2 = 1 / 2 by norm_num] at h
+  have h_term2_le : BKLNW.a₂ (log x₀) * x ^ (1 / 3 : ℝ) / x ≤
+      admissible_bound Aψ B C R x * ((1 / Aψ) * (R / log x₀) ^ B * exp (C * sqrt (log x₀ / R)) *
+        (BKLNW.a₂ (log x₀) * log x₀ * x₀ ^ (-(2 / 3 : ℝ)))) := by
+    have h := mul_rpow_sub_div_le_admissible_bound_mul (2 / 3) _ Aψ B C R x x₀ ha₂_nonneg hAψ hR hx_pos hx₀_pos
+      hlog_pos (by linarith) hx₀ (g_bound_le_of_anti hg2_anti hx₀_pos hx₀ hx)
+    rwa [show (1 : ℝ) - 2 / 3 = 1 / 3 by norm_num] at h
+  calc |θ x - x| / x
+    _ ≤ (|ψ x - x| + (ψ x - θ x)) / x := div_le_div_of_nonneg_right h_abs_le hx_pos.le
+    _ ≤ admissible_bound Aψ B C R x + (ψ x - θ x) / x := by rw [add_div]; exact add_le_add_left (h_bound x hx) _
+    _ ≤ admissible_bound Aψ B C R x +
+        (admissible_bound Aψ B C R x * ((1 / Aψ) * (R / log x₀) ^ B * exp (C * sqrt (log x₀ / R)) *
+          (BKLNW.a₁ (log x₀) * log x₀ * x₀ ^ (-(1 / 2 : ℝ)))) +
+         admissible_bound Aψ B C R x * ((1 / Aψ) * (R / log x₀) ^ B * exp (C * sqrt (log x₀ / R)) *
+          (BKLNW.a₂ (log x₀) * log x₀ * x₀ ^ (-(2 / 3 : ℝ))))) := by
+        have h_div_le : (ψ x - θ x) / x ≤ (BKLNW.a₁ (log x₀) * x ^ (1 / 2 : ℝ) + BKLNW.a₂ (log x₀) * x ^ (1 / 3 : ℝ)) / x :=
+          div_le_div_of_nonneg_right (BKLNW.cor_5_1 hx₀ (by rwa [exp_log hx₀_pos])) hx_pos.le
+        rw [add_div] at h_div_le
+        linarith [h_term1_le, h_term2_le]
+    _ = admissible_bound (Aψ * (1 + ν_asymp Aψ B C R x₀)) B C R x := by
+        unfold admissible_bound ν_asymp; simp only [neg_div]; ring
+
+-- Helper to bound the summation of a term B ^ (1 / k - 1 / 3) for B ≥ 1.
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/Lemma10Substep86c747f4a149/Variant13318ed7369122d67b7527abd125f40dcb9ad2078310279224ea1cd6af5ee91d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/Lemma10Substep86c747f4a149/Variant13318ed7369122d67b7527abd125f40dcb9ad2078310279224ea1cd6af5ee91d.lean#L1085).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `96412d1ff7921d8348f589fce58fc9abd41397e2` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

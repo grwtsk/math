@@ -1,0 +1,117 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.Audit.Variantd0d19cb77bce945fd6a0f52772d083a2eedc29494e24899acbc9fef7639367f5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ce0f067a6be976ff49fde65dd4197ece980cbc33` · SHA-256 `d79cb877303f41ff4d3c43a6cfaea58564d9d4fed8e9b14d503d80431e7355ef`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.AsymptoticAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.AsymptoticAnalysis.ActualStieltjes.Variant917db04b2d080b1eadadeb0f69df071ccfa1cdc839bb861c2541e3578e465f82","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"917db04b2d080b1eadadeb0f69df071ccfa1cdc839bb861c2541e3578e465f82","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.AsymptoticsAndSeries.SourceCorpus.ActualStieltjes.Variant917db04b2d080b1eadadeb0f69df071ccfa1cdc839bb861c2541e3578e465f82","mathematical_subject":"Analysis.AsymptoticsAndSeries","original_sha256":"917db04b2d080b1eadadeb0f69df071ccfa1cdc839bb861c2541e3578e465f82","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/common-mean-stieltjes-20261004/count-audit/actual-stieltjes-independent-review/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import scratch.common_mean_stieltjes_20261004.ActualStieltjes
+
+namespace GRWTSK.Analysis.AsymptoticAnalysis.ActualStieltjes.Variant917db04b2d080b1eadadeb0f69df071ccfa1cdc839bb861c2541e3578e465f82
+
+set_option pp.universes true
+set_option pp.explicit true
+#check CommonMeanStieltjes.PositiveOccurrenceWindow
+#print axioms CommonMeanStieltjes.PositiveOccurrenceWindow
+#check CommonMeanStieltjes.PositiveCountFibres
+#print axioms CommonMeanStieltjes.PositiveCountFibres
+#check CommonMeanStieltjes.positiveOccurrenceWindowEquiv
+#print axioms CommonMeanStieltjes.positiveOccurrenceWindowEquiv
+#check CommonMeanStieltjes.positive_occurrence_window_finite
+#print axioms CommonMeanStieltjes.positive_occurrence_window_finite
+#check CommonMeanStieltjes.positive_occurrence_window_card_eq_count
+#print axioms CommonMeanStieltjes.positive_occurrence_window_card_eq_count
+#check CommonMeanStieltjes.PositiveOccurrence
+#print axioms CommonMeanStieltjes.PositiveOccurrence
+#check CommonMeanStieltjes.positiveOrdinate
+#print axioms CommonMeanStieltjes.positiveOrdinate
+#check CommonMeanStieltjes.positiveClosedCountSet
+#print axioms CommonMeanStieltjes.positiveClosedCountSet
+#check CommonMeanStieltjes.positiveClosedCountKernel
+#print axioms CommonMeanStieltjes.positiveClosedCountKernel
+#check CommonMeanStieltjes.positiveClosedWindowEquiv
+#print axioms CommonMeanStieltjes.positiveClosedWindowEquiv
+#check CommonMeanStieltjes.positive_closed_count_set_finite
+#print axioms CommonMeanStieltjes.positive_closed_count_set_finite
+#check CommonMeanStieltjes.positive_closed_count_kernel_hasFiniteSupport
+#print axioms CommonMeanStieltjes.positive_closed_count_kernel_hasFiniteSupport
+#check CommonMeanStieltjes.positive_closed_count_kernel_summable
+#print axioms CommonMeanStieltjes.positive_closed_count_kernel_summable
+#check CommonMeanStieltjes.positive_closed_count_kernel_tsum
+#print axioms CommonMeanStieltjes.positive_closed_count_kernel_tsum
+#check CommonMeanStieltjes.positiveStrictTailEquiv
+#print axioms CommonMeanStieltjes.positiveStrictTailEquiv
+#check CommonMeanStieltjes.positive_strict_tail_tsum_transport
+#print axioms CommonMeanStieltjes.positive_strict_tail_tsum_transport
+#check CommonMeanStieltjes.ordinateKernel
+#print axioms CommonMeanStieltjes.ordinateKernel
+#check CommonMeanStieltjes.ordinate_kernel_nonnegative
+#print axioms CommonMeanStieltjes.ordinate_kernel_nonnegative
+#check CommonMeanStieltjes.ordinate_kernel_integrable
+#print axioms CommonMeanStieltjes.ordinate_kernel_integrable
+#check CommonMeanStieltjes.ordinate_kernel_integral
+#print axioms CommonMeanStieltjes.ordinate_kernel_integral
+#check CommonMeanStieltjes.ordinate_kernel_integral_max
+#print axioms CommonMeanStieltjes.ordinate_kernel_integral_max
+#check CommonMeanStieltjes.closed_ordinate_kernel_integrable
+#print axioms CommonMeanStieltjes.closed_ordinate_kernel_integrable
+#check CommonMeanStieltjes.closed_ordinate_kernel_integral
+#print axioms CommonMeanStieltjes.closed_ordinate_kernel_integral
+#check CommonMeanStieltjes.strict_ordinate_weight_eq_closed_integral_sub_endpoint
+#print axioms CommonMeanStieltjes.strict_ordinate_weight_eq_closed_integral_sub_endpoint
+#check CommonMeanStieltjes.touching_ordinate_endpoint_cancels
+#print axioms CommonMeanStieltjes.touching_ordinate_endpoint_cancels
+#check CommonMeanStieltjes.ordinate_weight_comparison
+#print axioms CommonMeanStieltjes.ordinate_weight_comparison
+#check CommonMeanStieltjes.actual_positive_max_sixth_summable
+#print axioms CommonMeanStieltjes.actual_positive_max_sixth_summable
+#check CommonMeanStieltjes.actual_positive_sixth_summable
+#print axioms CommonMeanStieltjes.actual_positive_sixth_summable
+#check CommonMeanStieltjes.nonnegative_kernel_series_integrable
+#print axioms CommonMeanStieltjes.nonnegative_kernel_series_integrable
+#check CommonMeanStieltjes.nonnegative_kernel_series_integral
+#print axioms CommonMeanStieltjes.nonnegative_kernel_series_integral
+#check CommonMeanStieltjes.positiveOccurrence_countable
+#print axioms CommonMeanStieltjes.positiveOccurrence_countable
+#check CommonMeanStieltjes.actualClosedOrdinateKernel
+#print axioms CommonMeanStieltjes.actualClosedOrdinateKernel
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_eq
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_eq
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_nonnegative
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_nonnegative
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_integrable
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_integrable
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_integral
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_integral
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_summable
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_summable
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_tsum
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_tsum
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_integrals_summable
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_integrals_summable
+#check CommonMeanStieltjes.actual_closed_ordinate_kernel_series_integrable
+#print axioms CommonMeanStieltjes.actual_closed_ordinate_kernel_series_integrable
+#check CommonMeanStieltjes.actual_positive_count_seventh_integrable
+#print axioms CommonMeanStieltjes.actual_positive_count_seventh_integrable
+#check CommonMeanStieltjes.actual_positive_count_kernel_integral
+#print axioms CommonMeanStieltjes.actual_positive_count_kernel_integral
+#check CommonMeanStieltjes.actual_positive_sixth_stieltjes
+#print axioms CommonMeanStieltjes.actual_positive_sixth_stieltjes
+#print CommonMeanScratch.PositiveSixthPowerStieltjes
+#print CommonMeanScratch.actualPositiveSixthPowerTail
+#print CommonMeanScratch.positiveSixthPowerWeight
+#print CommonMeanScratch.actualPositiveZeroCount
+#print CommonMeanStieltjes.PositiveOccurrence
+#print CommonMeanStieltjes.positiveOrdinate
+#print CommonMeanStieltjes.actualClosedOrdinateKernel
+open Lean in
+run_meta do
+  let env ← getEnv
+  for name in env.header.moduleNames do
+    logInfo m!"CLOSURE_MODULE {name}"
+```

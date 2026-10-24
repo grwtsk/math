@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.ActualSignedStieltjesAuditTypes.Variantf20212718e9db9a4cd82bd7746f262b418e3142ffc807b02df16e549a5846490
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f7c83bbdbfe0f6245681aeed1e7bf84ef3dfa867` · SHA-256 `f20212718e9db9a4cd82bd7746f262b418e3142ffc807b02df16e549a5846490`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualSignedStieltjes
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check ContinuousResearch.ActualSignedStieltjes.signedCoefficient
+#print axioms ContinuousResearch.ActualSignedStieltjes.signedCoefficient
+#check ContinuousResearch.ActualSignedStieltjes.signedCoefficient_zero
+#print axioms ContinuousResearch.ActualSignedStieltjes.signedCoefficient_zero
+#check ContinuousResearch.ActualSignedStieltjes.signedCoefficient_pos
+#print axioms ContinuousResearch.ActualSignedStieltjes.signedCoefficient_pos
+#check ContinuousResearch.ActualSignedStieltjes.signedCoefficient_one
+#print axioms ContinuousResearch.ActualSignedStieltjes.signedCoefficient_one
+#check ContinuousResearch.ActualSignedStieltjes.cumulative_eq
+#print axioms ContinuousResearch.ActualSignedStieltjes.cumulative_eq
+#check ContinuousResearch.ActualSignedStieltjes.cumulative_eq_intFloor
+#print axioms ContinuousResearch.ActualSignedStieltjes.cumulative_eq_intFloor
+#check ContinuousResearch.ActualSignedStieltjes.weighted_sum_eq
+#print axioms ContinuousResearch.ActualSignedStieltjes.weighted_sum_eq
+#check ContinuousResearch.ActualSignedStieltjes.actual_derivative_integrable_Icc
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_derivative_integrable_Icc
+#check ContinuousResearch.ActualSignedStieltjes.actual_finite_signed_integrable
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_finite_signed_integrable
+#check ContinuousResearch.ActualSignedStieltjes.actual_finite_stieltjes
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_finite_stieltjes
+#check ContinuousResearch.ActualSignedStieltjes.actual_derivative_zero_above
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_derivative_zero_above
+#check ContinuousResearch.ActualSignedStieltjes.actual_signed_integrable
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_signed_integrable
+#check ContinuousResearch.ActualSignedStieltjes.actual_full_stieltjes
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_full_stieltjes
+#check ContinuousResearch.ActualSignedStieltjes.signedLogKernel
+#print axioms ContinuousResearch.ActualSignedStieltjes.signedLogKernel
+#check ContinuousResearch.ActualSignedStieltjes.actual_log_kernel_eq
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_log_kernel_eq
+#check ContinuousResearch.ActualSignedStieltjes.actual_log_signed_integrable
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_log_signed_integrable
+#check ContinuousResearch.ActualSignedStieltjes.actual_log_stieltjes
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_log_stieltjes
+```
