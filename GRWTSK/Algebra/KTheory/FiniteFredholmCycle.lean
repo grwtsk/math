@@ -261,4 +261,33 @@ theorem matrix_trace_blockDiagonal_idempotent_integral
       simp
 
 
+
+/-! ## Trace invariance consumed by exact finite cycle equivalences -/
+
+namespace UnitaryEquivalence
+
+variable {A : Type u} [Semiring A] {n : ℕ}
+variable {X Y : ExactCycle A n}
+
+/-- Exact unitary equivalence of finite Fredholm cycles preserves the ordinary
+trace of their cycle operators. This uses the concrete intertwining identity,
+not an assumed analytic KK-theory trace. -/
+theorem operator_trace_eq_of_unitary_equivalence
+    (P : UnitaryEquivalence X Y) :
+    Y.operator.trace = X.operator.trace := by
+  have hconj :
+      Y.operator = P.unitary * X.operator * P.unitaryᴴ := by
+    calc
+      Y.operator = Y.operator * (P.unitary * P.unitaryᴴ) := by
+        rw [P.mul_star, mul_one]
+      _ = (Y.operator * P.unitary) * P.unitaryᴴ := by
+        rw [Matrix.mul_assoc]
+      _ = (P.unitary * X.operator) * P.unitaryᴴ := by
+        rw [← P.operator_intertwines]
+  rw [hconj]
+  exact matrix_trace_unitary_conjugation n X.operator P.unitary P.star_mul
+
+end UnitaryEquivalence
+
+
 end GRWTSK.Algebra.KTheory.FiniteFredholmCycle
