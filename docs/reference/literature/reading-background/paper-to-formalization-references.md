@@ -8189,3 +8189,88 @@ External evidence in that directory: `heat-cover-build.log` (initial failures),
 `heat-cover-audit.log`, and `heat-cover-validated-snapshot.json`. Historical
 SOURCE_ONLY/NOT_RUN labels describe introduction; this dated evidence supersedes
 only the build/kernel status for this exact closure, not its unresolved premises.
+
+
+## Case MEROMORPHIC-COMPLETED-POLES-VALIDATION-20261023
+
+**Source identities and scope.** This verifies the local B3/E5 fragments
+associated with the existing records for *Boundary Regularization: A Framework
+for High-Rank Elimination* (PDF page 1) and *Exceptional Groups: Embeddings and
+Compactifications Aligned with Classical Representations* (both recorded PDF
+versions, page 2). Owner-identified unpublished research by grwtsk contributors;
+printed byline `[]`, publication date/year, DOI and arXiv remain unestablished.
+Exact archived PDFs at source commit
+`aab35df4b766ce864e95b4505e3a2c7ddc43d158`:
+[boundary](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/g%20%282%29.pdf),
+blob `a6b1384d8b682feabc705eee0e058eb50c61df39`;
+[exceptional version i (3)](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%283%29.pdf),
+blob `9263622af06f0bdfd8d1f9dfe6a9add5eb19bad6`;
+[exceptional version i (2)](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%282%29.pdf),
+blob `71542562d4e167aaa8145eb43de20253dc111ae2`. This run checks the Lean
+fragments and the literal Mathlib Riemann completion, not the papers' broader
+geometric/high-rank claims or any historical-influence assertion.
+
+**Kernel-verified generic bridges.** Under namespace
+`GRWTSK.Analysis.Complex.LogarithmicPrincipalPart`,
+`meromorphic_order_of_local_factorization` requires an analytic unit nonzero
+at the center and an actual punctured-neighborhood factorization with signed
+integer exponent k; it constructs meromorphy and exact order k.
+`meromorphic_finite_order_factorization` retains meromorphy and order ≠ ⊤.
+`meromorphic_finite_order_scaled_coefficient` derives the scaled negative
+logarithmic coefficient as minus the finite signed order.
+`meromorphic_nonzero_order_no_continuous_extension` additionally retains
+nonzero finite signed order. No meromorphic source or nonzero germ is silently
+supplied by this interface.
+
+**Kernel-verified actual completion specialization.** In namespace
+`GRWTSK.NumberTheory.Zeta.Riemann.CompletedPoleLogDetector`, `zeroPoleUnit`
+and `onePoleUnit` are built from the literal Mathlib `completedRiemannZeta₀`.
+`zeroPoleUnit_analytic_value` and `onePoleUnit_analytic_value` prove analyticity
+and actual unit values −1 and +1. `completed_zero_pole_factorization` and
+`completed_one_pole_factorization` exclude the other pole locally and prove
+punctured order −1 for the literal `completedRiemannZeta`.
+`completed_zero_pole_meromorphic_order` and `completed_one_pole_meromorphic_order`
+then identify the exact signed orders. `completed_zero_pole_scaled_coefficient`
+and `completed_one_pole_scaled_coefficient` prove scaled −logDeriv coefficient
++1 at 0 and 1. `completed_zero_pole_no_continuous_extension` and
+`completed_one_pole_no_continuous_extension` rule out continuous extensions of
+the logarithmic derivative at those poles. These coefficients are not residues
+of the original completed function. Totalized center values do not replace the
+punctured identities.
+
+**Classification and unresolved bridges.** Imported mathematics: Mathlib
+meromorphic order, analytic factorization, zeta completion and derivatives.
+Checked local bridges: exactly the generic and actual Riemann specialization
+above. Conditional interfaces for arbitrary sources retain meromorphy, finite
+order, analytic units and source identity. Missing: a high-rank source identity,
+its analytic/arithmetic suppliers, exceptional/trivial-zero classification,
+geometric zero-to-class construction, global divisor/contour/residue-sum
+comparison, and any RH conclusion. Existing B1/B4/B5/B6 and separate E4/E5
+unresolved premises remain unchanged; no finite evidence or analogy is promoted.
+
+**Immutable sources and actual evidence.** Source commit `827e3d6431d7714c023da06f9815892fca288dfe`:
+
+| Source | Git blob |
+| --- | --- |
+| `GRWTSK/Analysis/Complex/MeromorphicLogOrderDetector.lean` | `6ed0ce7f5d50ba293adeb6239e098d63cc1b4ae4` |
+| `GRWTSK/Analysis/Complex/LogarithmicOrderDetection.lean` | `2a3d63d126b4c121db5dcf86485f9105674b0203` |
+| `GRWTSK/Analysis/Complex/LogarithmicPrincipalPart.lean` | `a9f568cb2242e69ff5e4b8d34e6505d24992184f` |
+| `GRWTSK/NumberTheory/Zeta/Riemann/CompletedZetaPoleLogDetector.lean` | `eac118be2215d95e026dbaa78eeb4559dfcde0f0` |
+
+Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.Analysis.Complex.MeromorphicLogOrderDetector GRWTSK.NumberTheory.Zeta.Riemann.CompletedZetaPoleLogDetector --wfail`
+  passed (3674 jobs).
+- `lake build --wfail` passed (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/mero-pair-audit.lean`
+  passed, auditing all 32 local declarations, including generated declarations,
+  and printing every type. Only `propext`, `Classical.choice`, and `Quot.sound`
+  were allowed; unsafe declarations, `sorryAx` and custom axioms were rejected.
+
+All four source hashes and 21 theorem headers were unchanged. No source repair
+was needed. Concurrent work was preserved. External evidence in that directory:
+`mero-pair-build.log`, `mero-pair-public.log`, `mero-pair-audit.log`, and
+`mero-pair-validated-snapshot.json`. This supplements the existing B3/E5 source
+records with actual verification of this exact closure and preserves all
+source-only statuses outside its scope.
