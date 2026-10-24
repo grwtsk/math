@@ -7398,3 +7398,65 @@ unrelated source-only statuses.
 **Immutable identity.** [`grwtsk/math@84b5e59ae204466f87419c384c5e38c3db9f2abf`](https://github.com/grwtsk/math/commit/84b5e59ae204466f87419c384c5e38c3db9f2abf), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentExceptionalWeightCast.lean`, blob `f7d2c0b5514f508f17687958f60de686d7c686dd`. Direct dependency `CanonicalSquareTentExceptionalWeightSign` blob `4136b544689de28ba6b44cef0d5ff81b7d5c8326`; full transitive closure pending.
 
 **Classification and actual evidence.** Imported mathematics: existing local source/cast lemmas, not a paper port; kernel-verified new bridge: **none**; new source-proof-candidates: three exact equalities; conditional interface: transitive integral sign supplier remains kernel-unverified; finite evidence: none claimed; analogy: coefficient reconstruction; unresolved: Lean compilation, independent fresh kernel, complete transitive axioms and any source-specific spectral/Weil analytic bridge. [Validation #1162](https://github.com/grwtsk/math/issues/1162) pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`, exact commands and expected receipts. **ACTUAL SOURCE_ONLY / GIT_BLOB_READBACK / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** Operational receipts remain outside math in grwtsk/noeaaeue; root import withheld.
+
+
+## Case TRIANGULAR-WEAK-LAW-VALIDATION-20261023 — covariance-budget decay
+
+**Source identity.** The S3/S5 fragments accompany *Updated Verification of
+Recursive Refinement Framework*, owner-identified unpublished research by
+grwtsk contributors; printed byline `grwtsk contributors`. Publication date/year,
+DOI and arXiv remain unestablished. Exact [PDF version, pages 1–2](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Updated_Verification_of_Recursive_Refinement_Framework%20%282%29.pdf),
+blob `e7e459f64d4d145ea39d56f08721c2ba5b39372b`, SHA-256
+`d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b`.
+This run validates the local Lean bridge; it does not validate the manuscript's
+arithmetic claims or infer historical influence.
+
+**Exact theorem and classification.**
+`GRWTSK.Probability.Moments.triangular_average_centered_tail_tendsto_zero`
+is a kernel-verified conditional weak-law bridge for real observables
+`X n i`, indexed by `Fin (n+1)`, on a supplied probability space. Every
+observable is in L², every diagonal variance is at most the same real C,
+and every distinct-pair covariance is bounded above by δ n, where δ tends
+to zero. For each fixed positive ε, the measure of the event that the average
+of row n differs from its own expectation by at least ε tends to zero.
+The proof derives variance budget
+`C/(n+1) + (1 - 1/(n+1))*δ n` and its decay, using the checked finite covariance
+sum/average bounds and Chebyshev tail estimate. The off-diagonal contribution
+is retained, not replaced by independence or zero covariance. No separate
+nonnegativity hypothesis on C or δ is added or needed by this argument.
+Imported Mathlib mathematics supplies variance/covariance identities, L² sums,
+Chebyshev and elementary limits. Actual arithmetic observables, a probability
+model, uniform variance bound and covariance decay must still be supplied.
+Bias relative to a named source model needs its own bound. No independence,
+Gaussian law, deterministic uniform bound, almost-sure law, Fourier identity,
+or RH conclusion is inferred. Existing S1/S2/S6 unresolved statuses remain.
+
+**Immutable sources.** Checked source commit
+`0ad620739907ce0168792c1f8c34e9601d2f01a5`; paths under
+`GRWTSK/Probability/Moments/`:
+
+| Source | Git blob |
+| --- | --- |
+| `TriangularCovarianceWeakLaw.lean` | `09b94bc3dd37ee394ad07dcf427859c6c4b3481f` |
+| `VarianceBudgetConvergence.lean` | `742824137da63aee8e62dbeae335baa34a6892ce` |
+| `FiniteCovarianceTail.lean` | `1c49ae90144e6520060bc1268c0d25e8df9a577c` |
+| `FiniteCovarianceBudget.lean` | `9e5db02428bed7ba58bf6e411df17d84fb627246` |
+| `FiniteUncorrelatedBudget.lean` | `c3ded54f4ef5b4d9508d0cd1163d6e195623caf0` |
+
+**Actual verification.** Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.Probability.Moments.TriangularCovarianceWeakLaw --wfail`
+  passed (3460 jobs).
+- `lake build --wfail` passed in the shared checkout (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/triangular-audit.lean`
+  passed, auditing all 24 local declarations (including generated declarations) and printing all 24 types.
+  Only `propext`, `Classical.choice`, and `Quot.sound` were allowed; unsafe
+  declarations, `sorryAx` and custom axioms were rejected.
+
+All five source hashes and ten theorem headers were unchanged. No source
+repair was needed. Concurrent unrelated edits were preserved and are outside
+this module's audit scope. External evidence in that same directory:
+`triangular-build.log`, `triangular-public.log`, `triangular-audit.log`,
+`triangular-validated-snapshot.json`. This supplements the existing S3/S5 source
+record with actual verification, without broadening its conditional premises.
