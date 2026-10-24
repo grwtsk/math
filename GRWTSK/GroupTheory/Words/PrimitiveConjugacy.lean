@@ -9,7 +9,8 @@ Owner: grwtsk/math#694. Parent PR #692 pinned at
 -/
 import Mathlib.Algebra.Group.Conj
 import Mathlib.Algebra.BigOperators.Group.List.Basic
-import Mathlib.Tactic
+import Mathlib.Algebra.Group.Int.TypeTags
+import Mathlib.Tactic.NormNum.Eq
 
 /-!
 # Primitive conjugacy and cyclically split finite words
