@@ -290,4 +290,80 @@ theorem operator_trace_eq_of_unitary_equivalence
 end UnitaryEquivalence
 
 
+
+/-! ## Heterogeneous finite-size block projection traces -/
+
+/-- The trace of a finite block diagonal family of idempotent complex
+matrices, even when the block sizes differ, is the sum of the integral
+ranks of the blocks. This only concerns a finite direct sum. -/
+theorem matrix_trace_heterogeneous_blockDiagonal_idempotent_integral
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (dims : ι → ℕ)
+    (P : ∀ i, Matrix (Fin (dims i)) (Fin (dims i)) ℂ)
+    (hP : ∀ i, P i * P i = P i) :
+    (Matrix.blockDiagonal' P).trace =
+      ((∑ i, Module.finrank ℂ (LinearMap.range (P i).toLin')) : ℂ) := by
+  rw [Matrix.trace_blockDiagonal']
+  calc
+    (∑ i, (P i).trace) =
+        ∑ i, (Module.finrank ℂ (LinearMap.range (P i).toLin') : ℂ) := by
+          apply Finset.sum_congr rfl
+          intro i hi
+          exact idempotent_matrix_trace_eq_finrank (dims i) (P i) (hP i)
+    _ = ((∑ i, Module.finrank ℂ (LinearMap.range (P i).toLin')) : ℂ) := by
+      simp
+
+/-- The dimension-weighted normalized ordinary trace of a finite family
+of star projections is rational, even when their finite sizes differ.
+When the total dimension is zero, this uses Lean's totalized division
+and must not be interpreted as a normalized state. -/
+theorem matrix_trace_heterogeneous_blockDiagonal_normalized_rational
+    {ι : Type*} [Fintype ι] [DecidableEq ι]
+    (dims : ι → ℕ)
+    (P : ∀ i, Matrix (Fin (dims i)) (Fin (dims i)) ℂ)
+    (hP : ∀ i, IsStarProjection (P i)) :
+    ∃ q : ℚ,
+      (Matrix.blockDiagonal' P).trace / ((∑ i, dims i : ℕ) : ℂ) =
+        (q : ℂ) := by
+  let k : ℕ := ∑ i, Module.finrank ℂ (LinearMap.range (P i).toLin')
+  refine ⟨(k : ℚ) / ((∑ i, dims i : ℕ) : ℚ), ?_⟩
+  have htrace : (Matrix.blockDiagonal' P).trace = (k : ℂ) := by
+    exact matrix_trace_heterogeneous_blockDiagonal_idempotent_integral
+      dims P (fun i => (hP i).isIdempotentElem.eq)
+  rw [htrace]
+  norm_cast
+
+/-! ## Concrete finite matrix projection correspondence -/
+
+/-- A fixed-size complex star projection, with its proof of self-adjoint
+idempotence. This is not yet a stabilized projection-equivalence class. -/
+abbrev FiniteStarProjection (n : ℕ) :=
+  { P : Matrix (Fin n) (Fin n) ℂ // IsStarProjection P }
+
+namespace FiniteStarProjection
+
+/-- A finite rectangular partial-isometry correspondence between two
+actual star projections, possibly of different sizes. Because the two
+endpoint matrices are projections, no such property is smuggled in as an
+unproved theorem. This is a relation, not yet a quotient or group. -/
+def MvNRel {m n : ℕ} (P : FiniteStarProjection m)
+    (Q : FiniteStarProjection n) : Prop :=
+  ∃ V : Matrix (Fin m) (Fin n) ℂ,
+    (P : Matrix (Fin m) (Fin m) ℂ) = V * Vᴴ ∧
+      (Q : Matrix (Fin n) (Fin n) ℂ) = Vᴴ * V
+
+/-- Finite Murray–von Neumann correspondence preserves ordinary trace
+across different matrix sizes, by rectangular trace cyclicity. -/
+theorem trace_eq_of_mvNRel {m n : ℕ}
+    (P : FiniteStarProjection m) (Q : FiniteStarProjection n)
+    (h : MvNRel P Q) : P.val.trace = Q.val.trace := by
+  obtain ⟨V, hP, hQ⟩ := h
+  calc
+    P.val.trace = (V * Vᴴ).trace := congrArg Matrix.trace hP
+    _ = (Vᴴ * V).trace := Matrix.trace_mul_comm V Vᴴ
+    _ = Q.val.trace := congrArg Matrix.trace hQ.symm
+
+end FiniteStarProjection
+
+
 end GRWTSK.Algebra.KTheory.FiniteFredholmCycle
