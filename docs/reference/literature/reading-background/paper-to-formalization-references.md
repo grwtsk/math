@@ -9629,3 +9629,71 @@ and may not be represented as proof or a kernel receipt.
 Effectful execution and immutable receipts belong outside
 the pure math repository (\`grwtsk/noeaaeue\`).
 No Railway or declined remote authorization was used.
+
+
+## Case CLASSICAL-RAW-PAIRED-VALIDATION-20261023
+
+**Reference boundary.** Repository-derived 2026 mathematical increment,
+grwtsk contributors with OpenAI formalization assistance. External paper title,
+authors, year/version and DOI/arXiv are NOT APPLICABLE to this increment;
+no historical influence is inferred. Existing Riesz source identities and the
+actual arithmetic source are retained. Imported Mathlib mathematics includes
+real logarithm identities/inequalities, reflected interval integrals, norm
+bounds and limits. This supplements the preceding corrected-anchor/jump-aware
+source record with a separate fresh audit of the correction and paired-error
+modules, without changing its other verification scopes.
+
+**Exact checked mathematics.**
+`GRWTSK.Analysis.Real.ClassicalRawCorrection.slope_eq_raw_log` requires x>1 and
+identifies the existing rational-correction slope as −log(1−x⁻²)/2.
+`GRWTSK.Analysis.Real.ClassicalRawCorrection.slope_pos_le` retains x>1 and proves
+0<slope(x)≤1/(2(x²−1)). These are kernel-verified local real-analysis bridges,
+not an identification of the independent sourceSlope coefficient.
+
+Under namespace `GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation`,
+`rawClassicalHead_eq_log_correction` retains x>1 and the literal finite zero
+head, full complex zeros, actual multiplicities and independent sourceSlope.
+`jumpProfile_pair` proves exact cancellation of the defined odd half-jump
+profile under t↦2x−t. It does not supply an unproved arithmetic jump identity.
+`norm_average_sub_point_le_paired` requires h>0 and 1<x−h and bounds the
+average-to-point error by `pairedOscillation`, the actual integral of the norm
+of the reflected second difference divided by 4h.
+`norm_source_sub_raw_le_paired` requires integer M≥2, 0<h≤1, 1<M−h and T≥2,
+and retains the full Riesz endpoint tail budget plus paired oscillation.
+`exists_raw_reconstruction_paired` constructs non-effective heights tending
+to infinity and convergent averages at radius 1/(n+2); convergence of raw heads
+along those heights requires the explicit paired-oscillation decay premise.
+
+**Classification and missing bridges.** Checked local bridges are the exact
+log correction, finite reflection identity and quantitative error bounds.
+The unsmoothing conclusion is a conditional interface. Paired-oscillation
+decay along the actual reconstruction heights, a computable rate, the classical
+affine coefficient identities and any full unsmoothed explicit formula/RH-facing
+bridge remain unresolved. No interchange of infinite limits, deterministic
+pointwise reconstruction without the gate, global residue/contour theorem,
+or RH conclusion is inferred. Ordinary mean-oscillation decay is not silently
+assumed at jumps. Finite identities do not supply the missing analytic decay.
+
+**Immutable sources and actual verification.** Source commit `bff5daa2b6e58661f3cdb2d5bac2e580a3768f5e`:
+
+| Source | Git blob |
+| --- | --- |
+| `GRWTSK/Analysis/Real/ClassicalRawCorrection.lean` | `f1cbe3222cc0956dd2e6463278827f754496464f` |
+| `GRWTSK/NumberTheory/Chebyshev/RawPairedOscillation.lean` | `c9f21043ce0393ac6dbb5de79e0a11f9c597b555` |
+
+All 106 local source hashes and 922 theorem headers were unchanged. No inherited
+repair was needed. Concurrent work was preserved. Lean
+`leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.Analysis.Real.ClassicalRawCorrection GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation --wfail`
+  passed (3905 jobs).
+- `lake build --wfail` passed (9307 jobs), including the synced-main check.
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/raw-paired-audit.lean`
+  passed, auditing all 1615 local declarations including generated declarations
+  and printing every type. Only `propext`, `Classical.choice`, and `Quot.sound`
+  were allowed; unsafe declarations, `sorryAx` and custom axioms were rejected.
+
+External evidence in that directory: `raw-paired-build.log`,
+`raw-paired-public.log`, `raw-paired-final-public.log`, `raw-paired-audit.log`,
+and `raw-paired-validated-snapshot.json`. Acceptance is confined to this pinned
+closure; unresolved premises and source-only statuses outside it remain intact.
