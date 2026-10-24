@@ -649,4 +649,37 @@ theorem even_sturmian_zero_energy_injective
     (even_free_zero_energy_norm_gap m hm) hsmall
 
 
+
+/-- Under the exact volume-dependent coupling threshold, zero is absent
+from the real matrix spectrum of the **actual** finite Sturmian
+Hamiltonian. The proof transports injectivity of the Euclidean energy
+residual back through the true matrix-to-Euclidean equivalence, then
+uses the pinned finite-square-matrix unit criterion. It does not
+identify an infinite-volume spectrum or its IDS. -/
+theorem even_sturmian_zero_not_mem_spectrum
+    (m : ℕ) (hm : 0 < m) (α V ξ : ℝ) (origin : ℤ)
+    (hsmall : |V| < 2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2))) :
+    (0 : ℝ) ∉ spectrum ℝ (hamiltonian (2 * m) α V ξ origin) := by
+  let H := hamiltonian (2 * m) α V ξ origin
+  have hi := even_sturmian_zero_energy_injective m hm α V ξ origin hsmall
+  have hmul : Function.Injective H.mulVec := by
+    intro x y hxy
+    have hcoord (z : Fin (2 * m) → ℝ) :
+        (sturmianEnergyCLM (2 * m) α V ξ origin 0)
+          (WithLp.toLp 2 z) = WithLp.toLp 2 (H *ᵥ z) := by
+      simp [H, sturmianEnergyCLM, sturmianCLM,
+        Matrix.toEuclideanCLM_toLp]
+    have heq :
+        (sturmianEnergyCLM (2 * m) α V ξ origin 0)
+          (WithLp.toLp 2 x) =
+        (sturmianEnergyCLM (2 * m) α V ξ origin 0)
+          (WithLp.toLp 2 y) := by
+      rw [hcoord x, hcoord y, hxy]
+    have hxyLp := hi heq
+    exact (congrArg WithLp.ofLp hxyLp)
+  have hunit : IsUnit H := Matrix.mulVec_injective_iff_isUnit.mp hmul
+  intro hmem
+  exact (spectrum.zero_mem_iff.mp hmem) hunit
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
