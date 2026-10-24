@@ -181,4 +181,29 @@ theorem collapsed_coding_not_injective :
   have hbad : true = false := h rfl
   cases hbad
 
+/-- A quantitative sector-completeness supplier: controlling both orthogonal
+sector energies controls their sum. The inputs are squared norms and energy
+contributions; identifying them with an actual physical Hamiltonian is a
+separate theorem. -/
+theorem full_energy_lower_bound_of_two_sectors
+    {delta a b energy₁ energy₂ : ℝ}
+    (hdelta : 0 ≤ delta) (ha : 0 ≤ a) (hb : 0 ≤ b)
+    (hfirst : delta * a ≤ energy₁)
+    (hsecond : delta * b ≤ energy₂) :
+    delta * (a + b) ≤ energy₁ + energy₂ := by
+  nlinarith
+
+/-- A gapped sector alone cannot impose a positive lower bound on an
+uncontrolled complementary sector. This is an algebraic obstruction, not a
+Yang--Mills counterexample. -/
+theorem one_sector_gap_insufficient :
+    ∀ delta : ℝ, 0 < delta →
+      ∃ a b energy₁ energy₂ : ℝ,
+        0 ≤ a ∧ 0 ≤ b ∧ delta * a ≤ energy₁ ∧
+        0 ≤ energy₂ ∧ energy₁ + energy₂ < delta * (a + b) := by
+  intro delta hdelta
+  refine ⟨0, 1, 0, 0, by norm_num, by norm_num, ?_, by norm_num, ?_⟩
+  · norm_num
+  · simpa using hdelta
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
