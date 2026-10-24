@@ -6864,7 +6864,7 @@ provenance remains historical; this entry records the exact checked scope.
 
 ## Case STRICT-WEIGHTED-RATIO-BRIDGE-20261023 — pivot separation with explicit integral premises
 
-**Paper/reference boundary.** This is a 2026 repository-derived algebraic reduction with formalization assistance by OpenAI, not a theorem imported from a particular external paper. External paper title, authors, publication year/version, DOI/arXiv, theorem number: **NOT APPLICABLE** for this new bridge. Phase retrieval, spectral reconstruction, 3D Kakeya and formal Sidon counterexamples are **methodological analogies only**; no historical influence, hypothesis transfer or paper-to-Lean theorem port is claimed.
+**Paper/reference boundary.** This is a 2026 repository-derived algebraic reduction with local attribution to grwtsk contributors, not a theorem imported from a particular external paper. External paper title, authors, publication year/version, DOI/arXiv, theorem number: **NOT APPLICABLE** for this new bridge. Phase retrieval, spectral reconstruction, 3D Kakeya and formal Sidon counterexamples are **methodological analogies only**; no historical influence, hypothesis transfer or paper-to-Lean theorem port is claimed.
 
 **Exact statements and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentStrictRatioBridge.strict_ratio_of_pivot_gaps` has arbitrary real `oLeft,oRight,rLeft,rRight,pivot`, positive `oLeft,oRight`, and the **two strict assumptions** `rRight < pivot*oRight`, `pivot*oLeft < rLeft`; it derives `rRight/oRight < rLeft/oLeft`. `cofactorZero_ne_zero_of_stage_pivot_gaps` instantiates this algebra with the actual canonical stage-three/four `realOrdinaryMoment` and `realMultiplicativeMoment` and imported ordinary-moment positivity, and concludes `cofactorZero ≠ 0` **conditional on those exact two strict pivot gaps**. Neither strict positive integral gap is proved from the support in this leaf. There is no analytic Weil diagonal, test-class admissibility, density or RH conclusion.
 
@@ -6875,7 +6875,7 @@ provenance remains historical; this entry records the exact checked scope.
 
 ## Case BOMBIERI-SIXTEEN-PIVOT-20261023 — pointwise source support separation
 
-**Paper-source boundary:** 2026 repository-derived formal source (formalization assistance OpenAI), not a theorem imported from a particular external paper. External title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Weighted-average and phase-retrieval parallels are methodological analogies, not historical influence.
+**Paper-source boundary:** 2026 repository-derived formal source (local attribution: grwtsk contributors), not a theorem imported from a particular external paper. External title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Weighted-average and phase-retrieval parallels are methodological analogies, not historical influence.
 
 **Exact construction and hypotheses:** The actual canonical `canonicalTentReal 1` has strict positive interior on `Set.Ioo 9 16`; `canonicalTentReal 2` has strict positive interior on `Set.Ioo 16 25`. In namespace `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenPivot`, `sixteenPivot = 1/16`; `stageThreeSixteenGap x = canonicalTentReal 1 x / x - sixteenPivot * canonicalTentReal 1 x`; `stageFourSixteenGap x = sixteenPivot * canonicalTentReal 2 x - canonicalTentReal 2 x / x`. `stageThreeSixteenGap_pos` and `stageFourSixteenGap_pos` claim **strict pointwise** positivity on the stated open interiors, using actual tent positivity and reciprocal monotonicity. **NOT PROVED in this leaf:** integrability/whole positive domain nonnegativity, strict positivity of the positive-half-line integrals, the exact pivot moment gaps, unconditional cofactorZero sign, analytic Weil transport or RH. The mass/integral step remains a mathematically independent obligation.
 
@@ -6886,7 +6886,7 @@ provenance remains historical; this entry records the exact checked scope.
 
 ## Case BOMBIERI-SIXTEEN-GAPS-INTEGRABLE-20261023 — nonnegative measurable support step
 
-**Bibliography/relationship:** Repository-derived 2026 formal source with OpenAI formalization assistance. No external paper theorem, printed authors/year/version, DOI/arXiv/theorem locator is imported (**NOT APPLICABLE**). Related weighted-integral/phase retrieval research remains analogy only; no historical influence inferred.
+**Bibliography/relationship:** Repository-derived 2026 formal source with local attribution to grwtsk contributors. No external paper theorem, printed authors/year/version, DOI/arXiv/theorem locator is imported (**NOT APPLICABLE**). Related weighted-integral/phase retrieval research remains analogy only; no historical influence inferred.
 
 **Exact source and mathematical hypotheses:** For actual canonical tents at indices 1 (stage three) and 2 (stage four), source-defined `stageThreeSixteenGap` and `stageFourSixteenGap` at reciprocal pivot `1/16`, `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability.stageThreeSixteenGap_nonnegative` and `stageFourSixteenGap_nonnegative` assert pointwise nonnegativity **on `Set.Ioi (0:ℝ)`**. `stageThreeSixteenGap_integrableOn` and `stageFourSixteenGap_integrableOn` use the existing actual canonical-tent and reciprocal integrability suppliers. These do **not** prove strict positive integrals, strict pivot inequalities or unconditional `cofactorZero ≠ 0`; those remain separate obligations.
 
@@ -7050,7 +7050,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 All seventeen unresolved specifications are retained verbatim in JSON and summarized by taxonomy below. Missing source bindings, prime estimates, boundary geometry/zero-to-class/vanishing, exceptional representations/automorphic transfers, KL geometry/signed realization, arithmetic centering and noncircular RH/GRH suppliers remain open.
 ## Case SIXTEEN-GAP-STRICT-INTEGRALS-20261023 — positive-mass analytic candidate
 
-**Provenance:** Repository-derived 2026 analysis with OpenAI formalization assistance, not a port of a separately identified external paper. External paper title/byline/year/version/DOI/arXiv/theorem locator NOT APPLICABLE. Analogies to weighted-mean order and phase retrieval convey no historical influence.
+**Provenance:** Repository-derived 2026 analysis with local attribution to grwtsk contributors, not a port of a separately identified external paper. External paper title/byline/year/version/DOI/arXiv/theorem locator NOT APPLICABLE. Analogies to weighted-mean order and phase retrieval convey no historical influence.
 
 **Exact theorem and hypotheses:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegralPositive.stageThreeSixteenGap_integral_pos` and `stageFourSixteenGap_integral_pos` assert strict positivity of actual positive-half-line Lebesgue integrals of `stageThreeSixteenGap` and `stageFourSixteenGap`. Source proof uses previously authored nonnegative/integrable gap lemmas, strict positivity on open intervals (9,16) and (16,25), and positive Lebesgue measure of those intervals via `setIntegral_pos_iff_support_of_nonneg_ae`. **No new hypotheses on arbitrary numerical approximations.** Downstream conversion to strict pivot inequalities, normalized moment-ratio order, unconditional `cofactorZero ≠ 0`, and exceptional weight classification remain separate source obligations. No Weil/RH claims.
 
@@ -7061,7 +7061,7 @@ All seventeen unresolved specifications are retained verbatim in JSON and summar
 
 ## Case WEAK-RAW-RIESZ-SCALE-20261023 — integrated limit and explicit matrix loss
 
-**Reference boundary.** Repository-derived 2026 increment, grwtsk contributors with OpenAI formalization assistance. No newly attributed external paper theorem or historical influence (external title/authors/year/version/DOI/arXiv NOT APPLICABLE). Upstream finite calculus, FTC, finite sums, logarithm monotonicity and inequalities are imported Mathlib mathematics at `db584cd6d46c92f209a44c0f1c829460d327499d`; the repository's canonical zero divisor, actual multiplicities, Riesz tail and arithmetic Green matrix are the exact local suppliers. Upstream source: [interval-integral FTC](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean).
+**Reference boundary.** Repository-derived 2026 increment, grwtsk contributors with local attribution to grwtsk contributors. No newly attributed external paper theorem or historical influence (external title/authors/year/version/DOI/arXiv NOT APPLICABLE). Upstream finite calculus, FTC, finite sums, logarithm monotonicity and inequalities are imported Mathlib mathematics at `db584cd6d46c92f209a44c0f1c829460d327499d`; the repository's canonical zero divisor, actual multiplicities, Riesz tail and arithmetic Green matrix are the exact local suppliers. Upstream source: [interval-integral FTC](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean).
 
 **Exact scopes and qualified declarations.**
 - `GRWTSK.NumberTheory.Chebyshev.ClassicalRieszCoefficientLimits.slope_error_eq` expresses the actual source slope minus its finite approximation as (Z(2)-H_T(2))-(Z(3)-H_T(3)). `.norm_slope_error_le` and `.norm_intercept_error_le` charge E_T(2)+E_T(3) and 3E_T(2)+2E_T(3) for T>=2. `.finiteSourceSlope_tendsto_source` and `.finiteSourceIntercept_tendsto_source` prove convergence to the existing boundary-derived coefficients. Neither limit is identified with the desired special value, and no numeric evaluation is admitted.
@@ -7075,7 +7075,7 @@ All seventeen unresolved specifications are retained verbatim in JSON and summar
 
 ## Case SIXTEEN-MOMENT-GAPS-20261023 — remove strict-ratio premise using actual integrals
 
-**Source/attribution boundary.** This is repository-derived 2026 mathematics with OpenAI formalization assistance, not a theorem ported from a separately identified publication. External paper title/byline/year/version/DOI/arXiv/theorem locator: NOT APPLICABLE. Weighted-average and Bombieri/Guinand–Weil comparisons remain methodological context; historical influence and analytic Weil transport are not inferred.
+**Source/attribution boundary.** This is repository-derived 2026 mathematics with local attribution to grwtsk contributors, not a theorem ported from a separately identified publication. External paper title/byline/year/version/DOI/arXiv/theorem locator: NOT APPLICABLE. Weighted-average and Bombieri/Guinand–Weil comparisons remain methodological context; historical influence and analytic Weil transport are not inferred.
 
 **Exact mathematical method and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenMomentGaps.stageThree_multiplicative_gt_sixteen_pivot` rewrites the previously authored strictly positive Lebesgue integral of the actual gap `canonicalTentReal 1 x / x - (1/16)*canonicalTentReal 1 x` on `Set.Ioi 0` to give `(1/16)*realOrdinaryMoment 1 < realMultiplicativeMoment 1`. `stageFour_multiplicative_lt_sixteen_pivot` similarly rewrites the strict integral of `(1/16)*canonicalTentReal 2 x - canonicalTentReal 2 x / x` to yield `realMultiplicativeMoment 2 < (1/16)*realOrdinaryMoment 2`. `cofactorZero_ne_zero_from_sixteen_support` applies the existing source ratio bridge to these strict inequalities to conclude `cofactorZero ≠ 0` with **no explicit ratio assumption in its statement**. All imported positive-integral and tent-support source candidates remain unverified, so this is not yet a kernel-accepted unconditional theorem. No Weil positivity, RH, source-density or admissible-test-class conclusion follows.
 
@@ -7086,7 +7086,7 @@ All seventeen unresolved specifications are retained verbatim in JSON and summar
 
 ## Case ACTUAL-BOMBIERI-EXCEPTIONAL-WEIGHT-20261023 — source-level removal of cofactor premise
 
-**Reference and authorship:** 2026 repository-derived finite coefficient mathematics with OpenAI formalization assistance. No external paper result was imported for this increment; external title, byline, publication year/version, DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri/Guinand–Weil comparisons remain analogy and analytic context, not proof of historical influence or classical transport.
+**Reference and authorship:** 2026 repository-derived finite coefficient mathematics with local attribution to grwtsk contributors. No external paper result was imported for this increment; external title, byline, publication year/version, DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri/Guinand–Weil comparisons remain analogy and analytic context, not proof of historical influence or classical transport.
 
 **Exact theorem and dependencies:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentActualExceptionalWeight.exceptionalWeight` defines the actual complex mixed weight `-cofactorTwo/cofactorZero`. `actual_mixed_weight_not_injective_iff` asserts for every weight:ℂ that the augmented profile built from the genuine two Bombieri moment rows and `mixedCoordinate weight` is noninjective exactly when `weight=exceptionalWeight`. This final statement has **no explicit cofactorZero≠0 premise** because it imports the prior `cofactorZero_ne_zero_from_sixteen_support` source candidate, itself depending on strict positive pivot-16 integral source lemmas, and the earlier conditional `exceptional_weight_iff`. None of these imported source leaves has yet received a kernel acceptance receipt. The scope is the three canonical-square-tent coefficients, not arbitrary test functions, classical Weil diagonal, admissibility, positivity, density or RH.
 
@@ -7148,7 +7148,7 @@ evidence to the existing B2 source record without broadening its premises.
 
 ## Case BOMBIERI-EXCEPTIONAL-WEIGHT-NONZERO-20261023 — genuine unmixed control
 
-**Source identity:** 2026 repository-derived formal mathematics with OpenAI formalization assistance; no particular external paper theorem imported. External paper title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri and Guinand–Weil are contextual analogies only, not historical influence or verified analytic transport.
+**Source identity:** 2026 repository-derived formal mathematics with local attribution to grwtsk contributors; no particular external paper theorem imported. External paper title/authors/year/version/DOI/arXiv/theorem locator **NOT APPLICABLE**. Classical Bombieri and Guinand–Weil are contextual analogies only, not historical influence or verified analytic transport.
 
 **Exact hypotheses and declarations:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightNonzero.exceptionalWeight_ne_zero` concludes that the source exceptional weight `-cofactorTwo/cofactorZero` is not zero, by importing `cofactorTwo_ne_zero` and the pivot-16 integral-chain **source candidate** `cofactorZero_ne_zero_from_sixteen_support`. `unmixed_third_coordinate_injective` then states injectivity of `augmentedProfile bombieriMomentProfile (mixedCoordinate 0)`, by invoking the already-authored exact exceptional-weight classification. Neither declaration introduces an external analytic observable, continuous decoder, classical Weil positivity or RH conclusion. Both depend on source-only transitive proof candidates.
 
@@ -7307,7 +7307,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 All seventeen unresolved specifications remain unchanged in the structured record. Source-specific geometric, arithmetic, representation-theoretic and KL suppliers retain their exact version and hypothesis gaps.
 ## Case BOMBIERI-REAL-EXCEPTIONAL-SIGN-20261023 — strict sign from two determinants
 
-**Bibliographic boundary.** This 2026 formal source is repository-derived with OpenAI formalization assistance, not an external paper theorem port. External paper title/byline/year/version/DOI/arXiv/theorem locator: **NOT APPLICABLE**. Bombieri, Guinand–Weil and phase-retrieval comparisons are mathematical context only, not historical influence.
+**Bibliographic boundary.** This 2026 formal source is repository-derived with local attribution to grwtsk contributors, not an external paper theorem port. External paper title/byline/year/version/DOI/arXiv/theorem locator: **NOT APPLICABLE**. Bombieri, Guinand–Weil and phase-retrieval comparisons are mathematical context only, not historical influence.
 
 **Exact mathematics.** For the actual canonical-tent real moment rows, define `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightSign.realFirstCofactor := realOrdinaryMoment 2 * realMultiplicativeMoment 1 - realOrdinaryMoment 1 * realMultiplicativeMoment 2`. `realFirstCofactor_pos` derives its positivity from the existing strict pivot-16 stage-three/four moment inequalities, positivity of the ordinary moments, and `cofactorZero_pos_of_ratio_order`. Define `realExceptionalWeight := -(twoTentMomentDeterminant / realFirstCofactor)`; `realExceptionalWeight_neg` derives strict negativity from `twoTentMomentDeterminant_pos` and `realFirstCofactor_pos`. These are SOURCE CANDIDATES dependent on the unaccepted pivot-integral chain. **Unresolved:** exact Complex-cast identification of realExceptionalWeight with the previously defined complex exceptionalWeight, all Lean/kernel/axiom checks, and independent analytic Weil/spectral connections. No RH conclusion.
 
@@ -7391,7 +7391,7 @@ unrelated source-only statuses.
 
 ## Case BOMBIERI-EXCEPTIONAL-CAST-20261023 — exact complex-real identification
 
-**Source/reference boundary.** Repository-derived 2026 formal source with OpenAI formalization assistance, not a newly imported external-paper theorem. External title, authors, year/version, DOI/arXiv and theorem location: **NOT APPLICABLE**. Bombieri/Guinand–Weil parallels are contextual, not proof of historical influence or analytic transport.
+**Source/reference boundary.** Repository-derived 2026 formal source with local attribution to grwtsk contributors, not a newly imported external-paper theorem. External title, authors, year/version, DOI/arXiv and theorem location: **NOT APPLICABLE**. Bombieri/Guinand–Weil parallels are contextual, not proof of historical influence or analytic transport.
 
 **Exact method and hypotheses.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightCast.cofactorZero_eq_realFirstCofactor` identifies complex `cofactorZero` with the cast of the exact real determinant `O₂R₁−O₁R₂`. `cofactorTwo_eq_realDeterminant` reuses the existing cofactor-two equality. `exceptionalWeight_eq_realExceptionalWeight` identifies the previously defined complex ratio `-cofactorTwo/cofactorZero` with the complex cast of `-(twoTentMomentDeterminant/realFirstCofactor)`. No additional numerical estimate, admissible Weil test class, density, positivity or RH is asserted. Real negativity is a separate earlier source candidate, not kernel evidence for this leaf.
 
@@ -7608,7 +7608,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 
 ## Case EXCEPTIONAL-WEIGHT-REAL-AXIS-20261023 — sign coordinates
 
-**Attribution boundary.** Repository-derived finite-dimensional 2026 mathematical source with OpenAI formalization assistance. No separate external paper theorem was ported, so external bibliographic title/authors/year/version/DOI/arXiv/theorem numbers are NOT APPLICABLE. Weil/phase-retrieval analogies are not imported results or claimed historical influence.
+**Attribution boundary.** Repository-derived finite-dimensional 2026 mathematical source with local attribution to grwtsk contributors. No separate external paper theorem was ported, so external bibliographic title/authors/year/version/DOI/arXiv/theorem numbers are NOT APPLICABLE. Weil/phase-retrieval analogies are not imported results or claimed historical influence.
 
 **Exact claims and support.** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentExceptionalWeightRealAxis.exceptionalWeight_im_eq_zero` states `exceptionalWeight.im = 0`, and `exceptionalWeight_re_neg` states `exceptionalWeight.re < 0`. Both are source candidates derived from the exact `exceptionalWeight_eq_realExceptionalWeight` cast result; the latter imports `realExceptionalWeight_neg` and all strict pivot-16 integral dependencies. No complex total ordering is introduced. Source supports only three-tent coefficient/moment rank, not an independent analytic observable, Weil positivity, density, or RH.
 
@@ -7619,7 +7619,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 
 ## Case WEIGHTED-FINITE-REFLECTION-20261023 — exact rational pairing laws and optional doubled lift
 
-**Attribution and reference boundary.** Repository-derived 2026 finite rational algebra, research direction grwtsk contributors with OpenAI formalization assistance. No theorem is newly ported from an external paper: external paper title, byline, year/version, DOI/arXiv and theorem locator are **NOT APPLICABLE**. The older four-coordinate `FiniteReflection` source retains its own Grover-algorithm reference; that does not establish historical attribution or implementation refinement for this generic weighted package. Reflection and bilinear-form similarity are mathematical context, not evidence of a new quantum, analytic or RH bridge.
+**Attribution and reference boundary.** Repository-derived 2026 finite rational algebra, research direction grwtsk contributors with local attribution to grwtsk contributors. No theorem is newly ported from an external paper: external paper title, byline, year/version, DOI/arXiv and theorem locator are **NOT APPLICABLE**. The older four-coordinate `FiniteReflection` source retains its own Grover-algorithm reference; that does not establish historical attribution or implementation refinement for this generic weighted package. Reflection and bilinear-form similarity are mathematical context, not evidence of a new quantum, analytic or RH bridge.
 
 **Exact carrier and hypotheses.** The namespace `GRWTSK.LinearAlgebra.WeightedFiniteReflection` has `Vec iota := iota -> Q`, `[Fintype iota]`, and a `Weights iota` structure containing `weight : iota -> Q`, strict positivity of every coordinate and the exact equation `sum_i weight_i=1`. This type has no inhabitants on an empty carrier. `pairing p x y=sum_i p_i*x_i*y_i` is symmetric Q-bilinear and positive definite; `energy p x=sum_i p_i*x_i^2` is rational quadratic energy, not a Q-valued square-root norm or `InnerProductSpace Q`. The fixed definitions are `projector p x=1*weightedMean p x`, `diffuse p x=2*weightedMean p x-x`, Boolean `phase b x=diag(sign b)*x`, `step p b=diffuse p composed with phase b`, and `inverseStep p b=phase b composed with diffuse p`. All identities quantify over the full ideal rational vector space with the same fixed weights, flags and coordinate order in both directions.
 
@@ -7635,7 +7635,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 ## Case RIESZ-REALITY-RAW-AVERAGES-VALIDATION-20261023
 
 **Reference boundary.** Repository-derived 2026 increment, grwtsk contributors
-with OpenAI formalization assistance. No newly attributed external paper theorem
+with local attribution to grwtsk contributors. No newly attributed external paper theorem
 or historical influence: external title, byline, year/version and DOI/arXiv are
 NOT APPLICABLE. Existing source-specific Riesz provenance remains intact.
 Imported mathematics is Mathlib finite sums, conjugation/derivatives, interval
@@ -7712,7 +7712,7 @@ closure, without promoting any unresolved premise or separate new module.
 
 ## Case BOMBIERI-RIGHT-HALF-PLANE-20261023 — nonnegative-weight recovery
 
-**Attribution:** Repository-derived 2026 finite-dimensional coefficient theorem candidate with OpenAI formalization assistance. No external paper theorem is imported (paper title/authors/year/version/DOI/arXiv/theorem number NOT APPLICABLE). Inverse-measurement and Weil analogies are contextual, not historical influence or verified transport.
+**Attribution:** Repository-derived 2026 finite-dimensional coefficient theorem candidate with local attribution to grwtsk contributors. No external paper theorem is imported (paper title/authors/year/version/DOI/arXiv/theorem number NOT APPLICABLE). Inverse-measurement and Weil analogies are contextual, not historical influence or verified transport.
 
 **Declarations/hypotheses:** `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentNonnegativeWeightRecovery.right_half_plane_injective` asserts injectivity of `augmentedProfile bombieriMomentProfile (mixedCoordinate weight)` whenever `weight:ℂ` has `0 ≤ weight.re`. `nonnegative_real_weight_injective` specializes to `weight:ℝ` with `0 ≤ weight`. The proof candidates use earlier local source claims that the *only* exceptional weight has negative real part. Actual canonical-square-tent three-coefficient source and original two moments only. No new analytic measurement, classical Weil criterion, admissibility/density/positivity or RH claim.
 
@@ -7769,7 +7769,7 @@ noncommutative geometry, nilflow, zeta-zero, or RH consequence is established.
 
 ## Case RAW-AVERAGES-UNMATCHED-KERNEL-20261023 — pointwise summation and exact obstruction
 
-**Reference boundary.** Repository-derived 2026 increment, grwtsk contributors with OpenAI formalization assistance. External paper title/authors/year/DOI/arXiv NOT APPLICABLE; no new historical influence is inferred. Imported mathematics is Mathlib complex conjugation, analytic order, finite sums, FTC and norm inequalities at `db584cd6d46c92f209a44c0f1c829460d327499d`. Exact zero symmetry and multiplicity use the existing canonical nontrivial zeta zero predicate, not RH or a simple-zero assumption. Upstream source: [derivative conjugation](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/Calculus/Deriv/Star.lean).
+**Reference boundary.** Repository-derived 2026 increment, grwtsk contributors with local attribution to grwtsk contributors. External paper title/authors/year/DOI/arXiv NOT APPLICABLE; no new historical influence is inferred. Imported mathematics is Mathlib complex conjugation, analytic order, finite sums, FTC and norm inequalities at `db584cd6d46c92f209a44c0f1c829460d327499d`. Exact zero symmetry and multiplicity use the existing canonical nontrivial zeta zero predicate, not RH or a simple-zero assumption. Upstream source: [derivative conjugation](https://github.com/leanprover-community/mathlib4/blob/db584cd6d46c92f209a44c0f1c829460d327499d/Mathlib/Analysis/Calculus/Deriv/Star.lean).
 
 **Exact mathematical scopes and fully qualified declarations.**
 - `GRWTSK.NumberTheory.Chebyshev.ClassicalRieszReality.conjugate_weighted_height_sum` proves invariance of the finite canonical height head with the actual analytic multiplicity. `.finiteHeightZeroHead_conj`, `.finiteRieszZeroHead_conj`, `.finiteSourceSlope_conj`, `.finiteSourceIntercept_conj`, `.sourceSlope_conj`, `.sourceIntercept_conj`, `.sourceSlope_im`, `.sourceIntercept_im`, `.rawClassicalHead_conj` and `.rawClassicalHead_im` prove reality of the finite heads and the existing boundary-derived coefficients. `.logDeriv_neg_one_eq` identifies the actual special-value candidate as -12*zeta'(-1), and `.logDeriv_neg_one_conj` proves it is real. Equality of the source coefficients to the classical special values remains unproved.
@@ -7979,7 +7979,7 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 **Manuscript scope:** actual Riemann poles complement the earlier canonical nontrivial-zero detector. They do not identify the boundary outline or exceptional-group versions with an actual high-rank completed source. Automorphic transfers, all extra-factor divisors, geometric zero-to-class and vanishing suppliers remain missing. All seventeen unresolved specifications stay unchanged and version-bound. No historical influence, understanding date or new reading event is inferred.
 ## Case SIXTEEN-GAP-BRANCH-REPAIR-20261023 — explicit complement in support argument
 
-**Source provenance:** Repository-derived 2026 Lean proof robustness change with OpenAI assistance, no externally imported paper theorem (bibliographic locator/title/authors/year/version/DOI/arXiv NOT APPLICABLE). Prior classical Weil and phase-retrieval comparisons are contextual analogies, not source provenance.
+**Source provenance:** Repository-derived 2026 Lean proof robustness change with local attribution to grwtsk contributors, no externally imported paper theorem (bibliographic locator/title/authors/year/version/DOI/arXiv NOT APPLICABLE). Prior classical Weil and phase-retrieval comparisons are contextual analogies, not source provenance.
 
 **Precise change and unchanged hypotheses:** Within `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability.stageThreeSixteenGap_nonnegative` and `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentSixteenGapIntegrability.stageFourSixteenGap_nonnegative`, the proof branches for points outside the canonical support now pass `le_of_not_gt h` explicitly to `linarith`, instead of assuming the by-cases complement is automatically propagated. Strict mathematical assumptions and theorem statements are unchanged: pointwise gap nonnegativity only on `Set.Ioi (0:ℝ)` for actual stage-three/four tents. The integrable and positive-integral suppliers remain separate. No added Weil admissibility or RH conclusions.
 
@@ -7987,6 +7987,26 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 
 **Evidence classes:** Imported math: previous local support lemmas/Mathlib tactics, not external paper; kernel verified: NONE; source candidate: proof repair, not a new theorem; conditional chain: existing strict integral dependency; finite evidence: none; analogy: none needed; unresolved: actual Lean compiler, fresh kernel, complete transitive axioms. [Verification #1165](https://github.com/grwtsk/math/issues/1165) pins Lean 4.33.0 and Mathlib db584cd6d46c92f209a44c0f1c829460d327499d with replay commands. **SOURCE_ONLY / BLOB_CONFIRMED / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**; receipts only in grwtsk/noeaaeue; no root import.
 
+
+
+**Active source-header attribution update (2026-10-23).** Current local header attribution is exactly `grwtsk contributors` for the following twelve canonical-square-tent leaves. The Git identities recorded above are HISTORICAL proof-source pins and are not rewritten or interpreted as the newly edited contents. These metadata-only changes preserve all theorem statements, support domains, analytical gaps, SOURCE_ONLY/NOT_RUN limits and no-merge/no-root-promotion gates. The corresponding current file blobs, read from GitHub after the header edit, are:
+
+| Module suffix | Current source Git blob |
+|---|---|
+| `CanonicalSquareTentSixteenPivot` | `a43ff15fae6628b6f57324576d7b4aed4c0b6a25` |
+| `CanonicalSquareTentSixteenGapIntegrability` | `c822176ce651c91abf23b2860e8120566681d346` |
+| `CanonicalSquareTentSixteenGapIntegralPositive` | `2307c891dbac3423ff70f1f1b53920948d254153` |
+| `CanonicalSquareTentSixteenMomentGaps` | `e606478e577366a8cd775fa6ef1ef4119a59f5a7` |
+| `CanonicalSquareTentStrictRatioBridge` | `eaf691ebf79f7b8ef6697b1d2a5ad30ebf48caf7` |
+| `CanonicalSquareTentCofactorZeroSign` | `d9ddb0482ab956012ff8c59659a0f67a283f862d` |
+| `CanonicalSquareTentActualExceptionalWeight` | `af680caf73f86e89c7ecbb9501423c6aa41972bb` |
+| `CanonicalSquareTentExceptionalWeightNonzero` | `2688c40afbac6b8dcac0f0e3675357190152ab18` |
+| `CanonicalSquareTentExceptionalWeightSign` | `bfa97b086ba665da983b2e379536ae0d597b0002` |
+| `CanonicalSquareTentExceptionalWeightCast` | `0abb0b5d4ca80f9ab51dfc48f026a85f1c72bde5` |
+| `CanonicalSquareTentExceptionalWeightRealAxis` | `d26a0518c87a9f5cc9d1b5c1fbfe87fc2168feff` |
+| `CanonicalSquareTentNonnegativeWeightRecovery` | `ebb16113ff341a473b49e6d5d12c77589a64bc90` |
+
+Actual build and independent kernel validation are **NOT_RUN** for these edited blobs, even where historical issues pin earlier candidates. Upstream authors, original paper attribution and licensing remain unmodified.
 
 ## Tenth implementation pass for the seven unpublished research ideas
 
