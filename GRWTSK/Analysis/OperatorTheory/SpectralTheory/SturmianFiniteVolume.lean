@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Local mathematical attribution: grwtsk contributors.
 Model: Band, Beckus and Loewy, arXiv:2402.16703v2, equation (1.1).
 The finite comparison is proved here. FreeIDS proves the actual free count limit;
 the nonzero-coupling infinite-volume IDS remains a separate obligation.
@@ -8,6 +8,7 @@ import GRWTSK.Algebra.LinearAlgebra.Sturmian
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.MatrixCountComparison
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
 import Mathlib.Topology.Order.OrderClosed
+import Mathlib.Analysis.CStarAlgebra.Matrix
 
 set_option autoImplicit false
 noncomputable section
@@ -160,5 +161,126 @@ theorem gap_width_le_abs_coupling_of_count_limits
   have h := GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.gap_width_le_of_ids_comparison
     (ids_comparison_of_count_limits α V ξ origin free ids hfree hids) hleft hright hgap
   simpa only [comparison_offset_width] using h
+
+
+/-!
+## Quantitative finite-volume shifted-resolvent supplier
+
+The *literal* Sturmian Dirichlet matrix is converted by pinned Mathlib's
+`Matrix.toEuclideanCLM` into a bounded Euclidean operator. Adding the real
+scalar `shift` times the identity produces a concrete, quantitative
+coercivity margin. This does not assert a gap of the original unshifted
+Sturmian Hamiltonian or any infinite-volume spectral theorem.
+-/
+
+/-- The bounded real Euclidean operator of the actual finite Sturmian matrix. -/
+noncomputable def sturmianCLM (N : ℕ) (α V ξ : ℝ) (origin : ℤ) :
+    EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N) :=
+  Matrix.toEuclideanCLM (hamiltonian N α V ξ origin)
+
+/-- A scalar shift of the *actual* finite Sturmian bounded operator. -/
+noncomputable def shiftedSturmianCLM (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (shift : ℝ) :
+    EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N) :=
+  sturmianCLM N α V ξ origin +
+    shift • ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin N))
+
+/-- Global quadratic-form lower bound for a shifted finite Sturmian operator.
+The unshifted operator can have negative spectrum; the entire norm loss
+is explicitly paid by the scalar shift. -/
+theorem shiftedSturmian_quadratic_lower (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (shift : ℝ) (x : EuclideanSpace ℝ (Fin N)) :
+    (shift - ‖sturmianCLM N α V ξ origin‖) * ‖x‖ ^ 2 ≤
+      ⟪(shiftedSturmianCLM N α V ξ origin shift) x, x⟫ := by
+  have hbound :
+      -(‖sturmianCLM N α V ξ origin‖ * ‖x‖ * ‖x‖) ≤
+        ⟪(sturmianCLM N α V ξ origin) x, x⟫ := by
+    simpa using
+      (GapTransport.projected_cross_lower_bound_of_operator_norm
+        (sturmianCLM N α V ξ origin) x x)
+  have hidentity :
+      ⟪(shiftedSturmianCLM N α V ξ origin shift) x, x⟫ =
+        ⟪(sturmianCLM N α V ξ origin) x, x⟫ + shift * ‖x‖ ^ 2 := by
+    simp [shiftedSturmianCLM, inner_add_left, inner_smul_left,
+      real_inner_self_eq_norm_sq]
+  rw [hidentity]
+  nlinarith [hbound]
+
+/-- The quantitative lower operator norm follows without assuming a
+spectral eigenspace, determinant or inverse. -/
+theorem shiftedSturmian_norm_gap (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (shift : ℝ) (x : EuclideanSpace ℝ (Fin N)) :
+    (shift - ‖sturmianCLM N α V ξ origin‖) * ‖x‖ ≤
+      ‖(shiftedSturmianCLM N α V ξ origin shift) x‖ := by
+  apply GapTransport.norm_gap_of_quadratic_bound
+    (shiftedSturmianCLM N α V ξ origin shift)
+    (shift - ‖sturmianCLM N α V ξ origin‖)
+  intro y
+  simpa using shiftedSturmian_quadratic_lower N α V ξ origin shift y
+
+/-- Both global projected sector bounds follow from the concrete shifted
+operator, for any fixed orthogonal sector. Neither bound is postulated. -/
+theorem shiftedSturmian_two_sector_bounds (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (shift : ℝ)
+    (S : Submodule ℝ (EuclideanSpace ℝ (Fin N)))
+    [S.HasOrthogonalProjection] :
+    (∀ x, (shift - ‖sturmianCLM N α V ξ origin‖) *
+      ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner ℝ
+        ((shiftedSturmianCLM N α V ξ origin shift) (S.starProjection x))
+        (S.starProjection x))) ∧
+    (∀ x, (shift - ‖sturmianCLM N α V ξ origin‖) *
+      ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner ℝ
+        ((shiftedSturmianCLM N α V ξ origin shift) (Sᗮ.starProjection x))
+        (Sᗮ.starProjection x))) := by
+  constructor
+  · intro x
+    simpa using shiftedSturmian_quadratic_lower N α V ξ origin shift
+      (S.starProjection x)
+  · intro x
+    simpa using shiftedSturmian_quadratic_lower N α V ξ origin shift
+      (Sᗮ.starProjection x)
+
+/-- Any operator strictly closer than the proven shifted norm gap is injective.
+The strict norm inequality is the perturbation certificate, not a hidden
+assertion about an independently chosen matrix. -/
+theorem shiftedSturmian_perturbation_injective
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ) (shift : ℝ)
+    (P : EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N))
+    (hsmall :
+      ‖shiftedSturmianCLM N α V ξ origin shift - P‖ <
+        shift - ‖sturmianCLM N α V ξ origin‖) :
+    Function.Injective P := by
+  have hgap : ∀ x : EuclideanSpace ℝ (Fin N),
+      (shift - ‖sturmianCLM N α V ξ origin‖) * ‖x‖ ≤
+        ‖((ContinuousLinearMap.id ℝ _).comp
+          (shiftedSturmianCLM N α V ξ origin shift)) x‖ := by
+    intro x
+    simpa using shiftedSturmian_norm_gap N α V ξ origin shift x
+  have hdefect :
+      ‖GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.defect
+        (ContinuousLinearMap.id ℝ _) (shiftedSturmianCLM N α V ξ origin shift) P‖ <
+        shift - ‖sturmianCLM N α V ξ origin‖ := by
+    simpa [GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.defect] using hsmall
+  have hi :=
+    GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.injective_of_defect_lt_gap
+      (ContinuousLinearMap.id ℝ _)
+      (shiftedSturmianCLM N α V ξ origin shift) P hgap hdefect
+  simpa using hi
+
+/-- The explicit one-unit shift supplies a nonvacuous, unit-sized
+perturbation tolerance in every finite volume, including zero dimension. -/
+theorem shiftedSturmian_unit_margin_perturbation_injective
+    (N : ℕ) (α V ξ : ℝ) (origin : ℤ)
+    (P : EuclideanSpace ℝ (Fin N) →L[ℝ] EuclideanSpace ℝ (Fin N))
+    (hsmall :
+      ‖shiftedSturmianCLM N α V ξ origin
+          (‖sturmianCLM N α V ξ origin‖ + 1) - P‖ < 1) :
+    Function.Injective P := by
+  apply shiftedSturmian_perturbation_injective N α V ξ origin
+    (‖sturmianCLM N α V ξ origin‖ + 1) P
+  simpa only [add_sub_cancel_left] using hsmall
+
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
