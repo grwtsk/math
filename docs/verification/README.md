@@ -14,15 +14,18 @@ binds the same exact relative subject paths and capitalization under `GRWTSK/`,
 It records retired folder and namespace aliases, source relocations, preserved
 proof variants, and passive verification tasks. Empty peer folders contain
 only a placeholder; they introduce no mathematical definition or acceptance.
-Noe checks this contract with:
+Noe checks this contract with Python 3.11 or newer, from its own checkout:
 
 ```sh
-python3 bindings/mathematics/organization/python/math_taxonomy_path_sync.py check --math-root /path/to/math
+python3.11 bindings/mathematics/organization/python/math_taxonomy_path_sync.py check --math-root /path/to/math
 ```
 
 Historical source and verification records keep their original pins and hashes.
 Resolve later placement through the shared contract's relocation rows; a new
 folder or declaration name does not inherit an earlier replay receipt.
+Relocation digests describe the recorded transformation stage. Later authored
+documentation or regenerated navigation has its own bytes; it does not rewrite
+the earlier source pins or turn those digests into current proof evidence.
 
 The [SourceCorpus subject migration](_unscoped/sourcecorpus-taxonomy-v1.toml)
 retires the provenance-based Lean root. Its subject-local TOML manifests bind
