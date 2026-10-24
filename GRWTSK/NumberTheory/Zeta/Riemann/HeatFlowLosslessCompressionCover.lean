@@ -156,9 +156,9 @@ theorem no_lossless_codec_with_bombieri_moment_encoding
 
 /-- The two numerical boundaries used by the accounting interface. This module
 does not reprove the external analytic zero-free theorem. -/
-def threeQuarterBoundary : ℝ := 3 / 4
+noncomputable def threeQuarterBoundary : ℝ := 3 / 4
 
-def sevenEighthBoundary : ℝ := 7 / 8
+noncomputable def sevenEighthBoundary : ℝ := 7 / 8
 
 /-- The available numerical refinement gap is exactly `1/8`. -/
 theorem boundary_gap :
@@ -186,7 +186,7 @@ theorem AsymptoticallyFreeRefinement.eventually_fits_boundary_gap
   calc
     threeQuarterBoundary + refinement.cost n <
         threeQuarterBoundary + (1 / 8 : ℝ) :=
-      add_lt_add_left (hcutoff n hn) _
+      by simpa only [add_comm] using add_lt_add_left (hcutoff n hn) threeQuarterBoundary
     _ = sevenEighthBoundary := by
       norm_num [threeQuarterBoundary, sevenEighthBoundary]
 
