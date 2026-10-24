@@ -4,7 +4,7 @@ Published elliptic curve and 32 points: Noam Elkies, Zev Klagsbrun,
 Samuel Li, ICARM rank record #4239 (15 October 2026).
 Cremona-Brumer 2-descent and Michael Stoll's formalization are
 external mathematical dependencies, NOT silently imported here.
-Formalization assistance: OpenAI.
+Local formalization: grwtsk contributors.
 
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 No unconditional Mordell-Weil rank theorem is asserted in this module.
@@ -92,6 +92,17 @@ theorem nativePoints_linearIndependent_of_descent
   exact linearIndependent_of_descentFactorization
     nativePoint ev.mu ev.epsilon
     nativeNoTwoTorsion_for_descent ev.characterValues
+
+/-- A cardinal-rank bound for the *actual* native rational-point group,
+conditioned only on its exact descent data, not on finite generation.
+Cardinal rank is defined for arbitrary modules.  This neither constructs
+`NativeDescentEvidence` nor proves a rank-32 theorem unconditionally. -/
+theorem nativeCurve_cardinal_rank_ge_32_of_descent
+    {C : Type u} [Monoid C]
+    (ev : NativeDescentEvidence C) :
+    (32 : Cardinal) ≤ Module.rank ℤ nativeCurve.toAffine.Point := by
+  simpa only [Cardinal.mk_fin] using
+    (nativePoints_linearIndependent_of_descent ev).cardinal_le_rank
 
 /-- Exact conditional arithmetic-rank endpoint for the actual record
 curve. In particular, the Mordell-Weil finite-generation theorem is
