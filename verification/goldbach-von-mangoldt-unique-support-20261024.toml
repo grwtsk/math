@@ -1,0 +1,39 @@
+# Source-pinned verification request; no execution.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-unique-support-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "fe465236aa132aec58959c9442b5ea452cb198d8"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtUniqueSupport.lean"
+source_blob = "b76fde4c142ab7f2c9fc83bb1dd4ef627c492d34"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtUniqueSupport.proper_power_support_eq_singleton",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPowerRange",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "p k : Nat; Nat.Prime p; 2<=k"
+missing_suppliers = [
+ "Convert nested properPrimePowerWeight to filtered product sum",
+ "Apply singleton support equality to evaluate weight as log p",
+ "Identify canonical von Mangoldt on proper prime powers",
+ "Handle non-prime-powers and n=0,1",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtUniqueSupport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtUniqueSupport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtUniqueSupport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
