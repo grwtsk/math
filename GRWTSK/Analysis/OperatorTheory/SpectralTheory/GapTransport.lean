@@ -508,4 +508,25 @@ theorem projected_cross_lower_bound_of_operator_norm
     hinner.trans hprod
   linarith
 
+/-- The bounded off-diagonal block between complementary orthogonal sectors. -/
+def offDiagonalBlock
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) : H →L[𝕜] H :=
+  (Sᗮ.starProjection).comp (T.comp S.starProjection)
+
+/-- The off-diagonal block has the same cross-sector pairing as the
+unprojected operator. -/
+theorem offDiagonalBlock_pairing
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    inner 𝕜 ((offDiagonalBlock S T) x) (Sᗮ.starProjection x) =
+      inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) := by
+  simp only [offDiagonalBlock, ContinuousLinearMap.comp_apply]
+  rw [Sᗮ.inner_starProjection_left_eq_right]
+  rw [Sᗮ.starProjection_eq_self_iff.mpr (Sᗮ.starProjection x).property]
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
