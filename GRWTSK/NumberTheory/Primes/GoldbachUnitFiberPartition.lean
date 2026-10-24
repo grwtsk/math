@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT. -/
 import GRWTSK.NumberTheory.Primes.GoldbachUnitFiberRepresentative
 import Mathlib.Tactic
+import Mathlib.NumberTheory.DirichletCharacter.Orthogonality
 
 /-!
 # Finite unit-fiber partition
@@ -194,5 +195,15 @@ theorem norm_theta_sub_divided_main_le
     field_simp
   rw [hrewrite, norm_div, hnorm]
   exact (div_le_div_of_nonneg_right hscaled (Nat.cast_nonneg _))
+
+
+/-- The actual complex Dirichlet-character index has totient cardinality.
+The required roots-of-unity instance is kept explicit in the interface. -/
+theorem card_complexDirichlet_eq_totient
+    (q : ℕ) [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)] :
+    Fintype.card (DirichletCharacter ℂ q) = Nat.totient q := by
+  simpa only [Nat.card_eq_fintype_card] using
+    (DirichletCharacter.card_eq_totient_of_hasEnoughRootsOfUnity ℂ q)
 
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
