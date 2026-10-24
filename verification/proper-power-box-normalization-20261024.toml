@@ -1,0 +1,37 @@
+# Queued validation manifest; NO compilation or execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-box-normalization-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "5ed23b0b7c8ac8361758057ae4837a85bb78826a"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerBoxNormalization.lean"
+source_blob = "a61f9447f708a19f0866089e4c64f03f7cba16ef"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxNormalization.supportedTriplePacketMass_eq_box_sum",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Original dependent n,p,k packet equals supportedTriplePacketMass",
+ "Rectangular proper-power packet equals rectangularSupportedMass",
+ "Compose exact original-to-rectangular proper-power mass reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerBoxNormalization.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxNormalization"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerBoxNormalization.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
