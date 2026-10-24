@@ -70,12 +70,13 @@ theorem derivative_ne_zero_of_simple {z : ZeroPoint} (hm : multiplicity z = 1) :
     deriv riemannZeta z.1 ≠ 0 := by
   obtain ⟨g, hg, hg0, hfg⟩ := multiplicity_factorization z
   have heq : riemannZeta =ᶠ[𝓝 z.1] (fun w => (w - z.1) * g w) := by
-    simpa only [hm, pow_one, smul_eq_mul] using hfg
+    filter_upwards [hfg] with w hw
+    simpa only [hm, pow_one, smul_eq_mul] using hw
   have hd := ((hasDerivAt_id z.1).sub_const z.1).mul hg.differentiableAt.hasDerivAt
   have he : deriv riemannZeta z.1 = g z.1 := by
     calc
       _ = deriv (fun w => (w - z.1) * g w) z.1 := heq.deriv_eq
-      _ = g z.1 := by simpa only [sub_self, one_mul, zero_mul, add_zero] using hd.deriv
+      _ = g z.1 := by simpa only [Pi.mul_def, id_eq, sub_self, one_mul, zero_mul, add_zero] using hd.deriv
   rw [he]
   exact hg0
 
@@ -88,7 +89,7 @@ theorem derivative_conjugate (z : ZeroPoint) :
     (analyticAt_point z).differentiableAt.hasDerivAt.conj_conj
   have hf : (fun w : ℂ => star (riemannZeta (star w))) = riemannZeta := by
     funext w
-    simpa using congrArg (fun v : ℂ => star v) (riemannZeta_conj w)
+    simp [riemannZeta_conj]
   rw [hf] at hd
   exact hd.deriv
 

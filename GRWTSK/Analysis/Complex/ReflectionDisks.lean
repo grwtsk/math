@@ -28,8 +28,7 @@ theorem fixed_iff (z : ℂ) : criticalReflection z = z ↔ z.re = (1 / 2 : ℝ) 
     apply Complex.ext
     · change 1 - z.re = z.re
       linarith
-    · change -(-z.im) = z.im
-      ring
+    · simp [criticalReflection]
 
 /-- Reflection is an isometry because its translation cancels in a difference. -/
 theorem sub_reflected (z c : ℂ) :

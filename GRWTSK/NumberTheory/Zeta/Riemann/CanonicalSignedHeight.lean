@@ -34,7 +34,7 @@ theorem conjugate_multiplicity (z : ZeroPoint) :
     multiplicity (conjugatePoint z) = multiplicity z := by
   have h := GRWTSK.Analysis.Complex.ConjugateAnalyticOrder.finite_order_conjugation
     (f := riemannZeta) (z := z.1) (n := multiplicity z)
-    (fun w => by simpa using riemannZeta_conj w)
+    (fun w => by simp [riemannZeta_conj])
     (analyticAt_point z) (analyticAt_point (conjugatePoint z))
     (multiplicity_cast z).symm
   have hh : (multiplicity (conjugatePoint z) : ℕ∞) = (multiplicity z : ℕ∞) :=

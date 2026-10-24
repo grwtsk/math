@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
+import Mathlib.Analysis.Complex.Basic
 import Mathlib.Analysis.Analytic.Order
 import Mathlib.Analysis.Calculus.Deriv.Star
 
@@ -28,7 +29,7 @@ theorem deriv_conjugation {f : ℂ → ℂ}
     rw [hf, star_star]
   have hd : deriv (fun w : ℂ => star (f (star w))) =
       fun w : ℂ => star (deriv f (star w)) := by
-    simpa only [Function.comp_def] using (deriv_conj_conj (f := f))
+    simpa only [Function.comp_def, Complex.star_def] using (deriv_conj_conj (f := f))
   rw [he] at hd
   simpa only [star_star] using congrFun hd (star z)
 
@@ -37,10 +38,9 @@ theorem iteratedDeriv_conjugation {f : ℂ → ℂ}
     (hf : ∀ z, f (star z) = star (f z)) (n : ℕ) (z : ℂ) :
     iteratedDeriv n f (star z) = star (iteratedDeriv n f z) := by
   induction n generalizing z with
-  | zero => simpa using hf z
+  | zero => simp only [iteratedDeriv_zero]; exact hf z
   | succ n ih =>
-    simp only [iteratedDeriv_succ]
-    exact deriv_conjugation ih z
+    simpa only [iteratedDeriv_succ] using deriv_conjugation ih z
 
 /-- Finite analytic order is transported through all vanishing derivatives.
 This applies to repeated zeros as well as simple zeros. -/
