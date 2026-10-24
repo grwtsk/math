@@ -749,6 +749,70 @@ theorem finiteBlockSum_comm_mvNRel
         finiteBlockSum Q P := Subtype.ext hmatrix
   exact heq ▸ mvNRel_reindexed e (finiteBlockSum P Q)
 
+/-! ## Reassociation of three finite projection blocks -/
+
+/-- Simultaneous reindexing of two block diagonal matrix factors is
+componentwise reindexing. This holds before applying any quotient. -/
+theorem fromBlocks_reindex
+    {a b c d : Type*} [Fintype a] [Fintype b]
+    [Fintype c] [Fintype d]
+    (ea : a ≃ c) (eb : b ≃ d)
+    (P : Matrix a a ℂ) (Q : Matrix b b ℂ) :
+    Matrix.reindex (Equiv.sumCongr ea eb) (Equiv.sumCongr ea eb)
+        (Matrix.fromBlocks P 0 0 Q) =
+      Matrix.fromBlocks (Matrix.reindex ea ea P) 0 0
+        (Matrix.reindex eb eb Q) := by
+  ext i j
+  rcases i with i | i <;> rcases j with j | j <;>
+    rfl
+
+/-- Reassociation of three finite diagonal blocks follows from the
+actual sum associator, not from an unproved associativity interface. -/
+theorem fromBlocks_assoc_reindex
+    {a b c : Type*} [Fintype a] [Fintype b] [Fintype c]
+    (P : Matrix a a ℂ) (Q : Matrix b b ℂ)
+    (R : Matrix c c ℂ) :
+    Matrix.reindex (Equiv.sumAssoc a b c) (Equiv.sumAssoc a b c)
+        (Matrix.fromBlocks (Matrix.fromBlocks P 0 0 Q) 0 0 R) =
+      Matrix.fromBlocks P 0 0 (Matrix.fromBlocks Q 0 0 R) := by
+  ext i j
+  rcases i with i | (i | i) <;> rcases j with j | (j | j) <;>
+    rfl
+
+/-- Functoriality of matrix reindexing for two successive bijections. -/
+theorem matrix_reindex_comp
+    {a b c : Type*} [Fintype a] [Fintype b] [Fintype c]
+    (e₁ : a ≃ b) (e₂ : b ≃ c) (P : Matrix a a ℂ) :
+    Matrix.reindex e₂ e₂ (Matrix.reindex e₁ e₁ P) =
+      Matrix.reindex (e₁.trans e₂) (e₁.trans e₂) P := by
+  change ((Matrix.reindex e₁ e₁).trans (Matrix.reindex e₂ e₂)) P =
+    Matrix.reindex (e₁.trans e₂) (e₁.trans e₂) P
+  rw [Matrix.reindex_trans]
+
+/-- Flatten the left-parenthesized sum of three finite index types. -/
+def finiteBlockLeftIndex (m n k : ℕ) :
+    (Fin m ⊕ Fin n) ⊕ Fin k ≃ Fin ((m + n) + k) :=
+  (Equiv.sumCongr
+    (finSumFinEquiv : Fin m ⊕ Fin n ≃ Fin (m + n))
+    (Equiv.refl (Fin k))).trans
+      (finSumFinEquiv : Fin (m + n) ⊕ Fin k ≃ Fin ((m + n) + k))
+
+/-- Flatten the right-parenthesized sum of three finite index types. -/
+def finiteBlockRightIndex (m n k : ℕ) :
+    Fin m ⊕ (Fin n ⊕ Fin k) ≃ Fin (m + (n + k)) :=
+  (Equiv.sumCongr
+    (Equiv.refl (Fin m))
+    (finSumFinEquiv : Fin n ⊕ Fin k ≃ Fin (n + k))).trans
+      (finSumFinEquiv : Fin m ⊕ Fin (n + k) ≃ Fin (m + (n + k)))
+
+/-- The explicit index bijection from `Fin ((m+n)+k)` to
+`Fin (m+(n+k))` induced by `Equiv.sumAssoc`. -/
+def finiteBlockAssocIndex (m n k : ℕ) :
+    Fin ((m + n) + k) ≃ Fin (m + (n + k)) :=
+  ((finiteBlockLeftIndex m n k).symm.trans
+    (Equiv.sumAssoc (Fin m) (Fin n) (Fin k))).trans
+      (finiteBlockRightIndex m n k)
+
 /-! ## Zero projection and explicit rectangular identity witnesses -/
 
 /-- The unique zero-dimensional complex matrix is a star projection.
