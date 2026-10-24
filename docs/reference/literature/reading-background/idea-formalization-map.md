@@ -8002,3 +8002,7 @@ Next implementation pass: [normalized rank-one basis, approximate covariance and
 Next implementation pass: [rank-one bar, probability tails, local-order comparison and retraction projector by taxonomy](obligation-implementation-progress-v5.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
 Next implementation pass: [concrete Laurent bar, retraction splitting and probability convergence by taxonomy](obligation-implementation-progress-v6.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+
+Next implementation pass: [analytic zero detector, product continuation and triangular weak law by taxonomy](obligation-implementation-progress-v7.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+
+Next implementation pass: [actual completed Riemann-zeta detector and Gamma-factor order comparison by taxonomy](obligation-implementation-progress-v8.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
