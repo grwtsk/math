@@ -743,6 +743,80 @@ theorem interval_constrained_target_schur_det_ne_zero :
     problem certificate certificate_check constantEmbedding
     constantEmbedding_admissible couplingU couplingV ()
 
+
+/-!
+## Explicit indefinite-target obstruction and restricted quadratic identity
+
+The Hodge equality is a genuine restriction: the target is indefinite
+on the original two-dimensional coordinate space but becomes a positive
+one-coordinate quadratic form on the nonzero constant embedding. This
+proves why certificate validity alone cannot remove admissibility.
+-/
+
+/-- The actual incidence Laplacian has diagonal entries 1 and
+off-diagonal entries -1 for this oriented one-edge graph. -/
+theorem intervalLaplacianMatrix_entries (i j : Fin 2) :
+    intervalLaplacianMatrix i j = if i = j then 1 else -1 := by
+  fin_cases i <;> fin_cases j <;>
+    norm_num [intervalLaplacianMatrix, incidenceMatrix, interval,
+      Matrix.mul_apply, Matrix.transpose_apply, Fin.sum_univ_one]
+
+/-- The certificate's target is the off-diagonal symmetric matrix
+with entries 2; in particular it is not an ambient PSD matrix. -/
+theorem target_entries (i j : Fin 2) :
+    problem.target i j = if i = j then 0 else 2 := by
+  fin_cases i <;> fin_cases j <;>
+    norm_num [problem, intervalLaplacianMatrix_entries,
+      Matrix.add_apply, Matrix.smul_apply, Matrix.one_apply]
+
+/-- The Hodge equality quadratic form is the squared edge jump. -/
+theorem intervalLaplacian_quadratic (x : Fin 2 → ℝ) :
+    quadratic intervalLaplacianMatrix x = (x 1 - x 0) ^ 2 := by
+  simp [quadratic, Matrix.mulVec, Matrix.dotProduct,
+    intervalLaplacianMatrix_entries, Fin.sum_univ_two]
+  ring
+
+/-- The full certificate target is the indefinite form 4*x₀*x₁. -/
+theorem target_quadratic (x : Fin 2 → ℝ) :
+    quadratic problem.target x = 4 * x 0 * x 1 := by
+  simp [quadratic, Matrix.mulVec, Matrix.dotProduct,
+    target_entries, Fin.sum_univ_two]
+  ring
+
+/-- The antisymmetric graph mode has negative target energy. -/
+theorem target_negative_antisymmetric :
+    quadratic problem.target (![1, -1] : Fin 2 → ℝ) < 0 := by
+  rw [target_quadratic]
+  norm_num
+
+/-- That negative mode violates the graph Hodge equality constraint. -/
+theorem antisymmetric_not_admissible :
+    ¬ problem.Admissible (![1, -1] : Fin 2 → ℝ) := by
+  intro h
+  have he : quadratic intervalLaplacianMatrix (![1, -1] : Fin 2 → ℝ) = 0 := by
+    simpa [problem] using h.1 (0 : Fin 1)
+  rw [intervalLaplacian_quadratic] at he
+  norm_num at he
+
+/-- The certificate check proposition coexists with a negative value of
+the ambient target. Global target positivity is therefore not implied
+by a valid constrained certificate. -/
+theorem checked_target_not_globally_nonnegative :
+    check problem certificate = true ∧
+      ¬ ∀ x : Fin 2 → ℝ, 0 ≤ quadratic problem.target x := by
+  refine ⟨certificate_check, ?_⟩
+  intro h
+  exact (not_le_of_gt target_negative_antisymmetric) (h ![1, -1])
+
+/-- Pulling the actual indefinite target back through the nonzero
+constant embedding gives precisely 4*t² on one coordinate. -/
+theorem constant_pullback_target_exact (v : Fin 1 → ℝ) :
+    quadratic (problem.pullback constantEmbedding).target v =
+      4 * (v 0) ^ 2 := by
+  change quadratic (congruence constantEmbedding problem.target) v = _
+  rw [quadratic_congruence, constantEmbedding_apply, target_quadratic]
+  simp [pow_two]
+
 end SingleEdgeCertificate
 
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
