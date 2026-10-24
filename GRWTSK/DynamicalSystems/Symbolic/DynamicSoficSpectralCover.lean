@@ -224,7 +224,7 @@ theorem ExactLanguageAt.rightContexts_card_le
       ∃ suffix : List Alphabet,
         ¬ (HasFiniteBlock (C.labelTrace x) (words i ++ suffix) ↔
             HasFiniteBlock (C.labelTrace x) (words j ++ suffix))) :
-    n ≤ Fintype.card (Finset E.presentation.State) :=
+    n ≤ E.presentation.stateCapacity :=
   rightContexts_card_le_exactPresentation
     E.presentation n words hdistinct
 
