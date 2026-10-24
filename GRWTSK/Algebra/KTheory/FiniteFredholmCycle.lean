@@ -374,6 +374,37 @@ theorem mvNRel_symm {m n : ℕ}
   · simpa only [Matrix.conjTranspose_conjTranspose] using hQ
   · simpa only [Matrix.conjTranspose_conjTranspose] using hP
 
+/-- Rectangular finite Murray–von Neumann correspondence is transitive.
+
+For witnesses `V : m × n` and `W : n × k`, the composite witness is
+`V * W : m × k`. The middle projection identities and idempotence of the
+end projections establish both required endpoint equalities. No analytic
+completion, quotient, or stable equivalence is assumed. -/
+theorem mvNRel_trans {m n k : ℕ}
+    (P : FiniteStarProjection m) (Q : FiniteStarProjection n)
+    (R : FiniteStarProjection k)
+    (hPQ : MvNRel P Q) (hQR : MvNRel Q R) :
+    MvNRel P R := by
+  obtain ⟨V, hP, hQ₁⟩ := hPQ
+  obtain ⟨W, hQ₂, hR⟩ := hQR
+  refine ⟨V * W, ?_, ?_⟩
+  · calc
+      P.val = P.val * P.val := (P.property.isIdempotentElem.eq).symm
+      _ = (V * Vᴴ) * (V * Vᴴ) := by rw [hP]
+      _ = V * (Vᴴ * V) * Vᴴ := by simp only [Matrix.mul_assoc]
+      _ = V * (W * Wᴴ) * Vᴴ := by rw [← hQ₁, hQ₂]
+      _ = (V * W) * (V * W)ᴴ := by
+        rw [Matrix.conjTranspose_mul]
+        simp only [Matrix.mul_assoc]
+  · calc
+      R.val = R.val * R.val := (R.property.isIdempotentElem.eq).symm
+      _ = (Wᴴ * W) * (Wᴴ * W) := by rw [hR]
+      _ = Wᴴ * (W * Wᴴ) * W := by simp only [Matrix.mul_assoc]
+      _ = Wᴴ * (Vᴴ * V) * W := by rw [← hQ₂, hQ₁]
+      _ = (V * W)ᴴ * (V * W) := by
+        rw [Matrix.conjTranspose_mul]
+        simp only [Matrix.mul_assoc]
+
 /-- Finite Murray–von Neumann correspondence preserves ordinary trace
 across different matrix sizes, by rectangular trace cyclicity. -/
 theorem trace_eq_of_mvNRel {m n : ℕ}
