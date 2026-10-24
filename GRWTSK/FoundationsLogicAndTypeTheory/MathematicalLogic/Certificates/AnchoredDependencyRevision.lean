@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.AnchoredBatchVerification
-import GRWTSK.DifferentialEquationsAndDynamicalSystems.TransitionSystems.RevisionReachability
+import GRWTSK.DynamicalSystems.TransitionSystems.RevisionReachability
 
 /-!
 # correction of anchored replay evidence
