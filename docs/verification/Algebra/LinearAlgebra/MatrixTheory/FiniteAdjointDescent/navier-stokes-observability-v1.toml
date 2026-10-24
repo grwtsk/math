@@ -50,6 +50,17 @@ commands = [
   "lake env lean --trust=0 --wfail GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean",
   "lake env leanchecker --help",
 ]
+audit_declarations = [
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_factor_lt_one",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.observability_of_normed_realization",
+  "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.residual_relative_contraction_of_normed_realization",
+]
+audit_import = "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent"
+audit_file_location = "executor-local temporary file outside math repository"
+audit_instructions = "Generate an audit Lean file with the audit_import and #check and #print axioms for each audit_declarations entry; run using lake env lean and preserve exit status and output."
+audit_status = "NOT_RUN"
+# End audit specification
 [acceptance]
 elaboration = "All four declarations elaborate with no sorry/admit or new project axioms"
 kernel = "Fresh independent kernel replay; use CLI supported by installed leanchecker"
