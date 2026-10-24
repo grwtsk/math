@@ -365,6 +365,7 @@ import GRWTSK.Logic.FiniteSequences.BatchCertificate
 import GRWTSK.Analysis.InnerProductSpace.JointGraphSolvability
 import GRWTSK.Order.Embeddings.PrefixObstruction
 import GRWTSK.Combinatorics.DirectedGraph.PathOccurrences
+import GRWTSK.Combinatorics.DirectedGraph.FiniteDependencyVolume
 import GRWTSK.Analysis.MellinTransform.ReverseInversion
 import GRWTSK.Combinatorics.DirectedGraph.EdgeTrace
 import GRWTSK.Analysis.MellinTransform.LogarithmicGaussian
