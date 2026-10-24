@@ -1,0 +1,111 @@
+# Q_not_mem_CB
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "f034e22976e9b98bf5355d1866ec621c2d15b1b8",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 247,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/09/09d7f07d2077b285a7a567d847e5967d88d2b02b7555eab6a0b15d8382a25905.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:e6546824-6ea0-2d2f-346d-25e2e8e8c8d6",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:be394014-82b2-6ab2-6cda-5d636a8fc40d",
+  "kind": "theorem",
+  "lexical_name": "Q_not_mem_CB",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "q-not-mem-cb--0ff3e68446e9365ec59a01d5",
+  "source": {
+    "blob": "f034e22976e9b98bf5355d1866ec621c2d15b1b8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 264,
+    "line": 247,
+    "path": "GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Imo2019Q2/Variant09d7f07d2077b285a7a567d847e5967d88d2b02b7555eab6a0b15d8382a25905.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:0ff3e68446e9365ec59a01d5b34835d0a1b9d6a160e6ceff18d01f943e0b54a4",
+  "verification": {
+    "reference": "docs/verification/Geometry/ClassicalGeometry/EuclideanGeometry/Imo2019Q2/Variant09d7f07d2077b285a7a567d847e5967d88d2b02b7555eab6a0b15d8382a25905.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:be394014-82b2-6ab2-6cda-5d636a8fc40d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 247–264.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem Q_not_mem_CB : cfg.Q ∉ line[ℝ, cfg.C, cfg.B] := by
+  intro hQ
+  have hQA₁ : line[ℝ, cfg.Q, cfg.A₁] ≤ line[ℝ, cfg.C, cfg.B] :=
+    affineSpan_pair_le_of_mem_of_mem hQ cfg.wbtw_B_A₁_C.symm.mem_affineSpan
+  have hQ₁ : cfg.Q₁ ∈ line[ℝ, cfg.C, cfg.B] := by
+    rw [AffineSubspace.le_def'] at hQA₁
+    exact hQA₁ _ cfg.sbtw_Q_A₁_Q₁.right_mem_affineSpan
+  have hc : Collinear ℝ ({cfg.C, cfg.Q₁, cfg.Q} : Set Pt) :=
+    haveI hc' : Collinear ℝ ({cfg.B, cfg.C, cfg.Q₁, cfg.Q} : Set Pt) := by
+      rw [Set.insert_comm cfg.B, Set.insert_comm cfg.B, Set.pair_comm, Set.insert_comm cfg.C,
+        Set.insert_comm cfg.C]
+      exact collinear_insert_insert_of_mem_affineSpan_pair hQ₁ hQ
+    hc'.subset (Set.subset_insert _ _)
+  rw [collinear_iff_eq_or_eq_or_angle_eq_zero_or_angle_eq_pi, cfg.angle_CQ₁Q_eq_angle_CBA,
+    or_iff_right cfg.C_ne_Q₁, or_iff_right cfg.sbtw_Q_A₁_Q₁.left_ne_right, angle_comm] at hc
+  exact cfg.not_collinear_ABC (hc.elim collinear_of_angle_eq_zero collinear_of_angle_eq_pi)
+#align imo2019_q2.imo2019q2_cfg.Q_not_mem_CB Imo2019Q2.Imo2019q2Cfg.Q_not_mem_CB
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Geometry/ClassicalGeometry/EuclideanGeometry/Imo2019Q2/Variant09d7f07d2077b285a7a567d847e5967d88d2b02b7555eab6a0b15d8382a25905.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Imo2019Q2/Variant09d7f07d2077b285a7a567d847e5967d88d2b02b7555eab6a0b15d8382a25905.lean#L247).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f034e22976e9b98bf5355d1866ec621c2d15b1b8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
