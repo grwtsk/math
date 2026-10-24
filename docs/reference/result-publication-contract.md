@@ -233,7 +233,7 @@ remain unavailable; the demonstration does not establish their missing closure.
 
 [`FiniteDependencyVolume.lean`](../../GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/FiniteDependencyVolume.lean)
 contains definitions and theorems under
-`GRWTSK.Combinatorics.DirectedGraph.FiniteDependencyVolume`:
+`GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.FiniteDependencyVolume`:
 
 - `boundedUpstream`, `mem_boundedUpstream_succ`,
   `boundedUpstream_subset_succ`, and `roots_subset_boundedUpstream` specify the
@@ -245,13 +245,16 @@ contains definitions and theorems under
 - `PositiveRegularizedDeterminant` is an explicit premise of
   `spectralLogVolume`.
 
-Targeted source check performed:
+The targeted source check was performed at commit
+`b5cc46c5748f1690cb6a0eda3ed9d48731290377`, before the current path and
+namespace migration:
 
 ```sh
 lake env lean GRWTSK/Combinatorics/DirectedGraph/FiniteDependencyVolume.lean
 ```
 
-The check passed for the added source. This does not cover the whole repository.
+The check passed for those source bytes. It does not establish a fresh check of
+the renamed source or cover the whole repository.
 The determinant-positivity derivation, a graph-extractor refinement theorem,
 relabeling/spectral invariance proof, and a Lean-to-Python numerical refinement
 remain missing bridges. Python fixture tests check concrete chains, shared
