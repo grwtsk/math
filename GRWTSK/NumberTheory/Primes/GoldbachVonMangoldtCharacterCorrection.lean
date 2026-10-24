@@ -3,6 +3,7 @@ import GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm
 import Mathlib.Tactic
 import Mathlib.NumberTheory.LSeries.Dirichlet
+import Mathlib.NumberTheory.DirichletCharacter.Bounds
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -251,5 +252,27 @@ theorem dirichlet_coefficient_LSeriesSummable
     LSeriesSummable (dirichletVonMangoldtCoefficient q χ) s := by
   simpa only [dirichletVonMangoldtCoefficient, mul_comm] using
     (DirichletCharacter.LSeriesSummable_twist_vonMangoldt χ hs)
+
+
+/-- Pointwise logarithmic envelope for the exact Dirichlet-twist
+coefficient. This is an elementary majorant, not cancellation. -/
+theorem norm_dirichletVonMangoldtCoefficient_le_log
+    (q n : ℕ) (χ : DirichletCharacter ℂ q) :
+    ‖dirichletVonMangoldtCoefficient q χ n‖ ≤ Real.log (n : ℝ) := by
+  unfold dirichletVonMangoldtCoefficient
+  rw [norm_mul]
+  have hχ := DirichletCharacter.norm_le_one χ (n : ZMod q)
+  have hΛ := ArithmeticFunction.vonMangoldt_nonneg (n := n)
+  have hΛlog := ArithmeticFunction.vonMangoldt_le_log (n := n)
+  have hnorm : ‖(ArithmeticFunction.vonMangoldt n : ℂ)‖ =
+      ArithmeticFunction.vonMangoldt n := by
+    simp [Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg hΛ]
+  rw [hnorm]
+  calc
+    ‖χ (n : ZMod q)‖ * ArithmeticFunction.vonMangoldt n ≤
+        1 * ArithmeticFunction.vonMangoldt n :=
+      mul_le_mul_of_nonneg_right hχ hΛ
+    _ = ArithmeticFunction.vonMangoldt n := one_mul _
+    _ ≤ Real.log (n : ℝ) := hΛlog
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
