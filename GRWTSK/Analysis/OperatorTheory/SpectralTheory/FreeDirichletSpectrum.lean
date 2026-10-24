@@ -4,6 +4,8 @@ Classical finite Dirichlet sine diagonalization. Mathlib authorship and licenses
 remain upstream. This file supplies no signed arithmetic pickup estimate. -/
 import GRWTSK.Analysis.OperatorTheory.SpectralTheory.SturmianFiniteVolume
 import Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+import Mathlib.Analysis.SpecificLimits.Basic
 import Mathlib.LinearAlgebra.Eigenspace.Charpoly
 import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
 
@@ -426,6 +428,74 @@ theorem even_minimum_abs_eigenvalue (m : ℕ) (hm : 0 < m) :
   · refine ⟨evenLeftIndex m hm, ?_⟩
     rw [evenLeft_eigenvalue m hm,
       abs_of_pos (even_central_margin_pos m hm)]
+
+
+
+/-!
+## Vanishing even-volume free spectral margin
+
+The exact positive margin from `even_minimum_abs_eigenvalue` has a
+quantitative elementary upper bound by `2π/(4*m+2)`. It tends to zero
+as the even volume grows, so it cannot furnish a positive uniform lower
+bound across nonempty even Dirichlet volumes.
+
+This is an exact statement about the free **finite-volume** sine list,
+not an assertion about an infinite-volume Sturmian spectral gap.
+-/
+
+/-- The attained finite even-volume margin is no greater than the
+first-order sine bound `2π/(4*m+2)`. This inequality holds even at
+`m=0`; the attained-minimum interpretation still requires `m>0`. -/
+theorem even_central_margin_le_inverse (m : ℕ) :
+    2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) ≤
+      2 * Real.pi / (4 * (m : ℝ) + 2) := by
+  have hangle : 0 ≤ Real.pi / (4 * (m : ℝ) + 2) := by positivity
+  calc
+    2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) ≤
+        2 * (Real.pi / (4 * (m : ℝ) + 2)) :=
+      mul_le_mul_of_nonneg_left (Real.sin_le hangle) (by norm_num)
+    _ = 2 * Real.pi / (4 * (m : ℝ) + 2) := by ring
+
+/-- The central half-angle converges to zero as finite volume increases. -/
+theorem even_central_angle_tendsto_zero :
+    Filter.Tendsto
+      (fun m : ℕ => Real.pi / (4 * (m : ℝ) + 2))
+      Filter.atTop (nhds (0 : ℝ)) := by
+  have hden :
+      Filter.Tendsto (fun m : ℕ => 4 * (m : ℝ) + 2)
+        Filter.atTop Filter.atTop :=
+    Filter.Tendsto.atTop_add
+      (Filter.Tendsto.const_mul_atTop (by norm_num : (0 : ℝ) < 4)
+        tendsto_natCast_atTop_atTop)
+      tendsto_const_nhds
+  exact tendsto_const_nhds.div_atTop hden
+
+/-- The exact even-volume finite eigenvalue margin tends to zero. -/
+theorem even_central_margin_tendsto_zero :
+    Filter.Tendsto
+      (fun m : ℕ => 2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)))
+      Filter.atTop (nhds (0 : ℝ)) := by
+  have hsin :
+      Filter.Tendsto
+        (fun m : ℕ => Real.sin (Real.pi / (4 * (m : ℝ) + 2)))
+        Filter.atTop (nhds (0 : ℝ)) := by
+    simpa using
+      (Real.continuous_sin.continuousAt.tendsto.comp
+        even_central_angle_tendsto_zero)
+  simpa using hsin.const_mul 2
+
+/-- No positive constant lower-bounds the *attained* minimum absolute
+free eigenvalue in every nonempty even Dirichlet volume. -/
+theorem even_central_margin_no_uniform_positive_floor
+    (ε : ℝ) (hε : 0 < ε) :
+    ∃ m : ℕ, 0 < m ∧
+      2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) < ε := by
+  have hev : ∀ᶠ m : ℕ in Filter.atTop,
+      2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) < ε :=
+    even_central_margin_tendsto_zero.eventually (gt_mem_nhds hε)
+  obtain ⟨N, hN⟩ := Filter.eventually_atTop.mp hev
+  refine ⟨max N 1, by omega, ?_⟩
+  exact hN (le_max_left _ _)
 
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
