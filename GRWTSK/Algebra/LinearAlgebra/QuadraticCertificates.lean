@@ -330,6 +330,78 @@ theorem checked_target_pullback_nonneg_of_range_admissible
   exact check_sound P S hCheck (T *ᵥ x) (hRange x)
 
 
+
+/-!
+## A genuinely positive target operator on an admissible coordinate range
+
+For a checked real certificate and an actual matrix T whose entire range
+satisfies the original constraints, the pre-existing target pullback
+Tᵀ(P.target)T is globally positive semidefinite on the *new* Euclidean
+coordinate space. This is not an assertion of global target positivity
+on the original space. The original validity and range-admissibility
+hypotheses remain separate and visible.
+
+The resulting shifted *target* operator inherits the sharp unit moment
+gap, now from the certificate's actual target rather than its Gram part.
+-/
+
+section AdmissibleRangeTargetHilbert
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+
+variable [DecidableEq κ]
+
+/-- The actual pulled-back target matrix, realized as a continuous
+linear operator on finite Euclidean coordinates. -/
+noncomputable def admissibleRangeTargetOperator
+    (P : Problem ℝ ι ε γ) (T : Matrix ι κ ℝ) :
+    EuclideanSpace ℝ κ →L[ℝ] EuclideanSpace ℝ κ :=
+  LinearMap.toContinuousLinearMap
+    (Matrix.toLpLin 2 2 ((P.pullback T).target))
+
+/-- The Euclidean operator is exactly the pulled-back target matrix,
+with no additional coordinate-isomorphism hypothesis. -/
+theorem admissibleRangeTargetOperator_apply
+    (P : Problem ℝ ι ε γ) (T : Matrix ι κ ℝ)
+    (x : κ → ℝ) :
+    admissibleRangeTargetOperator P T (WithLp.toLp 2 x) =
+      WithLp.toLp 2 ((P.pullback T).target *ᵥ x) := by
+  rfl
+
+/-- A *checked* certificate makes the target positive on the chosen
+coordinate space if, and only to the extent that, the concrete range
+of T is contained in the original admissible set. -/
+theorem admissibleRangeTargetOperator_nonneg
+    (P : Problem ℝ ι ε γ) (S : Certificate ℝ ι ε γ ν)
+    (hCheck : check P S = true) (T : Matrix ι κ ℝ)
+    (hRange : ∀ x : κ → ℝ, P.Admissible (T *ᵥ x))
+    (y : EuclideanSpace ℝ κ) :
+    0 ≤ inner ℝ (admissibleRangeTargetOperator P T y) y := by
+  let x : κ → ℝ := WithLp.ofLp y
+  have hy : y = WithLp.toLp 2 x := (WithLp.toLp_ofLp y).symm
+  rw [hy, admissibleRangeTargetOperator_apply]
+  simpa [EuclideanSpace.inner_toLp_toLp, quadratic] using
+    (checked_target_pullback_nonneg_of_range_admissible
+      P S hCheck T hRange x)
+
+/-- The shifted pulled-back **target** has a unit lower norm gap.
+The original target is not claimed globally positive: the conclusion
+depends on the original certificate check and admissible range of T. -/
+theorem admissibleRangeTarget_shift_unit_gap
+    (P : Problem ℝ ι ε γ) (S : Certificate ℝ ι ε γ ν)
+    (hCheck : check P S = true) (T : Matrix ι κ ℝ)
+    (hRange : ∀ x : κ → ℝ, P.Admissible (T *ᵥ x))
+    (y : EuclideanSpace ℝ κ) :
+    ‖y‖ ≤
+      ‖momentMatrix (admissibleRangeTargetOperator P T)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ κ)) y‖ := by
+  exact positive_operator_moment_sharp_gap
+    (admissibleRangeTargetOperator P T)
+    (admissibleRangeTargetOperator_nonneg P S hCheck T hRange) y
+
+end AdmissibleRangeTargetHilbert
+
+
 end Refinement
 
 
