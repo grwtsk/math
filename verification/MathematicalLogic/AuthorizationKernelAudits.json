@@ -1,0 +1,108 @@
+{
+  "schema": "grwtsk.authorization-kernel-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_parent_commit": "12e332aae5a173786f7d85a3f8c232faf06d14da",
+  "allowed_axioms": [],
+  "requirements": [
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Basic.lean",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Authorization.Basic",
+      "source_sha256": "1a9748c402a4ec907c16f83184ed24e89af6ed104fc83fdea27b7cc8508dbe7f",
+      "expected_declarations": [
+        "GRWTSK.Genesis.requires_authentication",
+        "GRWTSK.Genesis.revocation_blocks",
+        "GRWTSK.Genesis.no_authority_expansion",
+        "GRWTSK.Genesis.mathematical_judgments_do_not_force_operational_or_public",
+        "GRWTSK.Genesis.investigation_admission_is_not_truth",
+        "GRWTSK.Genesis.accepted_entailment"
+      ],
+      "audit_mode": "named",
+      "require_every_expected_declaration": true
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/KernelCorrespondence/Basic.lean",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.KernelCorrespondence.Basic",
+      "source_sha256": "ff7d13a7149b89f9dc2548240d3bc8d25236ff97d8d21bf8b62b17e347bd808b",
+      "expected_declarations": [
+        "Finite1Pipeline.assemble"
+      ],
+      "audit_mode": "complete_compiler_module_origin",
+      "require_every_expected_declaration": true
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/KernelCorrespondence/Coherence.lean",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.KernelCorrespondence.Coherence",
+      "source_sha256": "4ce3113226001651db9c1734938ecbce4f767f8608ac6560adaad20f8a6d64af",
+      "expected_declarations": [
+        "Coherence.lifts_agree",
+        "Coherence.observations_agree",
+        "Coherence.joint_impossible",
+        "Coherence.pairwise_bool_witnesses"
+      ],
+      "audit_mode": "complete_compiler_module_origin",
+      "require_every_expected_declaration": true
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/KernelCorrespondence/Composition.lean",
+      "module": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.KernelCorrespondence.Composition",
+      "source_sha256": "81f4a5d01f02b854e5ee874b1f7a4a96ccc9825a195e3d1e3d0dad278bee6a9e",
+      "expected_declarations": [
+        "Finite1Composition.compose"
+      ],
+      "audit_mode": "complete_compiler_module_origin",
+      "require_every_expected_declaration": true
+    }
+  ],
+  "negative_requirements": [
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Checks/Negative/OutsideScope.lean",
+      "sha256": "a8148012b75cbcf427f7841c7d1716360e0fbc5fff4349cbdeb0b445049f3bc9",
+      "required_result": "REJECT_FALSE_AUTHORIZATION_ASSERTION_AFTER_PROVIDER_COMPILES",
+      "import_or_unknown_name_failure_acceptable": false
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Checks/Negative/OutsideScopeV2.lean",
+      "sha256": "223b312822ffd865eb3e08641d084612183cc29791d761bb8632ef755bbdc5cf",
+      "required_result": "REJECT_FALSE_AUTHORIZATION_ASSERTION_AFTER_PROVIDER_COMPILES",
+      "import_or_unknown_name_failure_acceptable": false
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Checks/Negative/Revoked.lean",
+      "sha256": "29bc8d1406c65c708e282900700038d175171ecb3e15a7d0748faa82eb4782c2",
+      "required_result": "REJECT_FALSE_AUTHORIZATION_ASSERTION_AFTER_PROVIDER_COMPILES",
+      "import_or_unknown_name_failure_acceptable": false
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Checks/Negative/RevokedV2.lean",
+      "sha256": "8302afce0e8c0fd5279a1b4b099076bd0b088c8124f5f5d725e4855b7c32d0c0",
+      "required_result": "REJECT_FALSE_AUTHORIZATION_ASSERTION_AFTER_PROVIDER_COMPILES",
+      "import_or_unknown_name_failure_acceptable": false
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Checks/Negative/Unauthorized.lean",
+      "sha256": "8ed37a4d2377fd527ba4f603f292f5267befee38216af5465e7db6afedc85be6",
+      "required_result": "REJECT_FALSE_AUTHORIZATION_ASSERTION_AFTER_PROVIDER_COMPILES",
+      "import_or_unknown_name_failure_acceptable": false
+    },
+    {
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Authorization/Checks/Negative/UnauthorizedV2.lean",
+      "sha256": "2fc39cfa83b52c38d280cd5a8921b9189747c57a79e3d677cd6cdc9f988f35c9",
+      "required_result": "REJECT_FALSE_AUTHORIZATION_ASSERTION_AFTER_PROVIDER_COMPILES",
+      "import_or_unknown_name_failure_acceptable": false
+    }
+  ],
+  "required_gates": [
+    "pinned source/toolchain/dependency closure",
+    "fresh trust-zero compilation",
+    "one complete report for every named audit or complete compiler-origin module audit",
+    "transitive axiom acceptance under empty allowlist",
+    "exact authorization type consumer",
+    "six independent intended negative rejections"
+  ],
+  "native_compile": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "negative_rejections": "NOT_RUN",
+  "boundary": "These are audit obligations, not execution results. Embedded commands became audit-requirement comments; all other source bytes are unchanged. Duplicate or malformed reports remain forbidden."
+}
