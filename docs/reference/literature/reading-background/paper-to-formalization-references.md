@@ -11833,3 +11833,39 @@ The matrix dependency now imports the specific Ring/NormNum tactics instead of t
 ## Missing bridges by taxonomy
 
 Algebra K1 still needs the twelve-element standard basis, general Coxeter/Laurent construction, semilinear bar, KL basis and recurrence. These unverified coordinate candidates establish none of those acceptance conditions. K2/K4/K5 retain their degree, geometric positivity and analytic-realization gaps; E1 exceptional-group data and matrix faithfulness remain open. Number theory, boundary geometry and recursive-refinement obligations are unchanged. All exact missing specifications remain in the structured record. No reading event, understanding date or historical influence is inferred.
+
+
+### Proposition declaration regression check — 2026-10-23
+
+Local maintenance by `grwtsk contributors`, source repair
+[math@ec5080b7c797a12040ccd4e858fe35349df6e6ac](https://github.com/grwtsk/math/commit/ec5080b7c797a12040ccd4e858fe35349df6e6ac),
+`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean`
+blob `c04103e633e5af061511775f6c3940f1c30bbfb8`.
+`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventualSuppliers_of_zeta_rightContexts`
+had been changed back to `def` at `26cd516188b1a54b8b9efa939124ddf41f8afc04`.
+The pinned compiler reports its result as a proposition and the strict build
+rejects that declaration style. Restored `theorem` with the SAME type, proof,
+fields and hypotheses. No arithmetic presentation or all-tail-context premise
+was removed; classifications and missing bridges in the preceding validation
+cases remain unchanged.
+
+Actual commands, both exit 0 after repair:
+
+```text
+lake build GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion GRWTSK.NumberTheory.Zeta.Riemann.ZetaSpectralGRHBridge --wfail
+lake build --wfail
+```
+
+Strict targets: **8716 jobs**. Public main: **9307 jobs**. The initial strict
+attempt exited 1 on the proposition-definition linter, and is not acceptance.
+All **132 local source files** match byte-for-byte the SHA-256 snapshot qualified
+in `ZETA-SPECTRAL-BOMBIERI-DYNAMIC-VALIDATION-20261023` at `801a9d410`.
+This is an actual source comparison to the previously recorded kernel evidence,
+not a new kernel replay: fresh kernel replay this run = **NOT_RUN**. No privacy
+redaction, source-pin rewrite or new supplier proof is inferred from that match.
+Concurrent verification-document migration was preserved and is outside this
+source validation scope. External receipt names and original SHA-256 digests:
+
+- `heartbeat-20261024-0409-build.log`: `3a269b15674726ac9ea28c0848e04fc3b3e745dcb730d42b35f23ddfb300be34`.
+- `heartbeat-20261024-0409-repaired-build.log`: `de0f77a4c3f6304c9a1c6c51d84f9ca79e70064924d195e556287b30d868eaae`.
+- `heartbeat-20261024-0409-public-build.log`: `0f23bac459d468782a468a708e416e4b507619e93bd63842c2722e42b25be1c4`.
