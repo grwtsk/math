@@ -8008,3 +8008,5 @@ Next implementation pass: [analytic zero detector, product continuation and tria
 Next implementation pass: [actual completed Riemann-zeta detector and Gamma-factor order comparison by taxonomy](obligation-implementation-progress-v8.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
 Next implementation pass: [finite meromorphic detector and actual completed-zeta poles by taxonomy](obligation-implementation-progress-v9.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
+
+Next implementation pass: [rank-one triangular uniqueness and exact-defect tracking by taxonomy](obligation-implementation-progress-v10.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
