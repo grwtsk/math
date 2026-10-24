@@ -208,6 +208,26 @@ theorem no_exact_language_at_of_non_eventual_sofic
   exact hNonEventual (eventuallySofic_of_sofic E.implies_sofic)
 
 
+/-- A concrete finite family of right-context witnesses imposes a
+minimum reachable-subset capacity on ANY exact full-language
+presentation of this spectral trace. It does NOT bound the arbitrary
+finite graph in the cover merely from its accepted paths. -/
+theorem ExactLanguageAt.rightContexts_card_le
+    {X : Type u} {Observation : Type v}
+    {Vertex : Type w} {Alphabet : Type q} {Spectral : Type r}
+    [Fintype Vertex] [Fintype Alphabet]
+    [AddCommGroup Spectral] [Module ℂ Spectral]
+    {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
+    {x : X} (E : ExactLanguageAt C x)
+    (n : ℕ) (words : Fin n → List Alphabet)
+    (hdistinct : ∀ i j : Fin n, i ≠ j →
+      ∃ suffix : List Alphabet,
+        ¬ (HasFiniteBlock (C.labelTrace x) (words i ++ suffix) ↔
+            HasFiniteBlock (C.labelTrace x) (words j ++ suffix))) :
+    n ≤ Fintype.card (Finset E.presentation.State) :=
+  rightContexts_card_le_exactPresentation
+    E.presentation n words hdistinct
+
 /-- A right-context separation certificate, if eventually supplied for the
 actual spectral trace, refutes exact finite labeled-language identification.
 The finite graph PATH remains valid: the obstruction concerns equality of
