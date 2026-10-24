@@ -135,6 +135,97 @@ theorem completedSquare_addY_compat (x₁ x₂ Y₁ ℓ : ℚ) :
     nativeCompletedSquareCurve_eq]
   ring
 
+
+/-!
+## Actual secant, tangent, and vertical-line slope boundaries
+
+Mathlib's total slope convention returns zero on a vertical line.
+Consequently the formula nativeSlope = normalizedSlope - 1/2 is valid
+only for the two NONVERTICAL branches. The vertical branch is handled
+separately rather than smuggling an invalid global shift into map_add.
+-/
+
+/-- For distinct x-coordinates, secant slopes differ by one half.
+No elliptic equation is required for this algebraic coordinate identity. -/
+theorem completedSquare_secant_slope_compat
+    (x₁ x₂ Y₁ Y₂ : ℚ) (hx : x₁ ≠ x₂) :
+    nativeCurve.toAffine.slope x₁ x₂
+        (Y₁ - x₁ / 2) (Y₂ - x₂ / 2) =
+      nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂ -
+        1 / 2 := by
+  rw [(nativeCurve.toAffine).slope_of_X_ne hx,
+    (nativeCompletedSquareCurve.toAffine).slope_of_X_ne hx]
+  have hden : x₁ - x₂ ≠ 0 := sub_ne_zero.mpr hx
+  field_simp
+  ring
+
+/-- At a nonvertical tangent, genuine derivative slopes differ by half.
+The nonvertical hypothesis is indispensable for the total slope. -/
+theorem completedSquare_tangent_slope_compat
+    (x Y : ℚ)
+    (hy : Y ≠ nativeCompletedSquareCurve.toAffine.negY x Y) :
+    nativeCurve.toAffine.slope x x
+        (Y - x / 2) (Y - x / 2) =
+      nativeCompletedSquareCurve.toAffine.slope x x Y Y -
+        1 / 2 := by
+  have hnative :
+      Y - x / 2 ≠ nativeCurve.toAffine.negY x (Y - x / 2) := by
+    intro h
+    apply hy
+    rw [completedSquare_negY_compat] at h
+    linarith
+  have hY : Y ≠ 0 := by
+    intro hz
+    apply hy
+    simp [WeierstrassCurve.Affine.negY,
+      nativeCompletedSquareCurve_eq, hz]
+  rw [(nativeCurve.toAffine).slope_of_Y_ne rfl hnative,
+    (nativeCompletedSquareCurve.toAffine).slope_of_Y_ne rfl hy]
+  simp only [WeierstrassCurve.Affine.negY,
+    nativeCurve, nativeCompletedSquareCurve_eq]
+  field_simp
+  ring
+
+/-- Complete nonvertical comparison on actual equation points.
+The same-x case uses the curve equation to identify the two ordinates;
+no unrelated pair is silently treated as a tangent. -/
+theorem completedSquare_nonvertical_slope_compat
+    (x₁ x₂ Y₁ Y₂ : ℚ)
+    (h₁ : nativeCompletedSquareCurve.toAffine.Equation x₁ Y₁)
+    (h₂ : nativeCompletedSquareCurve.toAffine.Equation x₂ Y₂)
+    (hxy : ¬(x₁ = x₂ ∧
+      Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂)) :
+    nativeCurve.toAffine.slope x₁ x₂
+        (Y₁ - x₁ / 2) (Y₂ - x₂ / 2) =
+      nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂ -
+        1 / 2 := by
+  by_cases hx : x₁ = x₂
+  · have hy : Y₁ ≠ nativeCompletedSquareCurve.toAffine.negY x₂ Y₂ :=
+      fun h => hxy ⟨hx, h⟩
+    have hsame : Y₁ = Y₂ :=
+      (nativeCompletedSquareCurve.toAffine).Y_eq_of_Y_ne h₁ h₂ hx hy
+    subst x₂
+    subst Y₂
+    exact completedSquare_tangent_slope_compat x₁ Y₁ hy
+  · exact completedSquare_secant_slope_compat x₁ x₂ Y₁ Y₂ hx
+
+/-- For the exceptional vertical branch both total slopes are zero,
+so the minus-one-half shift MUST NOT be applied. Addition instead
+returns the identity and must be transported directly. -/
+theorem completedSquare_vertical_slopes_zero
+    (x₁ x₂ Y₁ Y₂ : ℚ)
+    (hx : x₁ = x₂)
+    (hy : Y₁ = nativeCompletedSquareCurve.toAffine.negY x₂ Y₂) :
+    nativeCurve.toAffine.slope x₁ x₂
+        (Y₁ - x₁ / 2) (Y₂ - x₂ / 2) = 0 ∧
+      nativeCompletedSquareCurve.toAffine.slope x₁ x₂ Y₁ Y₂ = 0 := by
+  have hnative :
+      Y₁ - x₁ / 2 =
+        nativeCurve.toAffine.negY x₂ (Y₂ - x₂ / 2) := by
+    rw [completedSquare_negY_compat, hx, hy]
+  exact ⟨(nativeCurve.toAffine).slope_of_Y_eq hx hnative,
+    (nativeCompletedSquareCurve.toAffine).slope_of_Y_eq hx hy⟩
+
 /-- The new point-carrier equivalence sends each actual published
 normalized rational point to its original native rational point.
 No group-law preservation or independent-point theorem is inferred. -/
