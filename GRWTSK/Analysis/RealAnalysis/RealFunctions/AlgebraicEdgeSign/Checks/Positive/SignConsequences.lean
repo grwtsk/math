@@ -27,7 +27,7 @@ Original dependency selection, elaboration and proof checking remain unreplayed.
 This candidate is outside the public umbrella. Lean and Lake have not been invoked.
 -/
 
-import SourceHighLagPolynomialSign
+import GRWTSK.Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Basic
 
 /-!
 UNCOMPILED hostile fixtures for the independent polynomial certificate.
@@ -38,7 +38,7 @@ claim a checked transport to the normalized source integral or actual state.
 set_option autoImplicit false
 namespace GRWTSK.Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Checks.Positive.SignConsequences
 
-open FormalResearch.RiemannHypothesis.SourceHighLagPolynomialSign
+open GRWTSK.Analysis.RealAnalysis.RealFunctions.AlgebraicEdgeSign.Basic
 
 theorem fixed_edge_is_negative : algebraicEdgeCoefficient 10 < 0 :=
   algebraicEdgeCoefficient_neg (by norm_num)
