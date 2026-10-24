@@ -1,6 +1,6 @@
 # Mathematical documentation
 
-Browse by mathematical area, then by object. Start with [the least-prime example](start/least-prime.md) or the [selected result catalog](reference/results.md).
+Start with the [results and subject index](mathematics/index.md), then follow increasingly specific subjects beside their mathematics. The [least-prime example](start/least-prime.md) is a short walkthrough; the [selected-family catalogue](reference/results.md) retains its original evidence records. The inventories below describe source and documentation populations.
 
 
 <!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->

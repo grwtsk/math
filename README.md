@@ -2,12 +2,12 @@
 
 Mathematical results, formal proofs, and explicit open problems by **grwtsk contributors**. This is the canonical source for GRWTSK mathematics.
 
-[**Browse the results index →**](docs/reference/results.md)
+[**Browse the results index →**](docs/mathematics/index.md)
 
 ## Navigating the collection
 
-- Use the [results index](docs/reference/results.md) to find result families and their supporting mathematics.
-- Browse [mathematical subjects](docs/mathematics/) for increasingly specific subjects, object guides, and result articles, co-located at each level of that directory.
+- Use the [results index](docs/mathematics/index.md) to browse every subject entry point and its result previews.
+- Follow increasingly specific subjects, object guides, and result articles within [`docs/mathematics/`](docs/mathematics/), with an index at each level. The [selected-family catalogue](docs/reference/results.md) retains its original evidence records.
 - Start with the [least-prime walkthrough](docs/start/least-prime.md) for a small example with an exact statement, proof, and Lean consumer.
 - Consult the [theorem/result occurrence catalogue](docs/reference/result-occurrences.md) for the broader source inventory. A lexical occurrence is not a verified theorem.
 - The [Lean library](GRWTSK/) contains the formal sources; [`GRWTSK.lean`](GRWTSK.lean) is the public library entry point. [Verification specifications](docs/verification/README.md) describe static replay targets.
