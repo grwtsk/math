@@ -6,7 +6,23 @@
 
 This directory groups existing source guides. Its storage name does not establish a reviewed semantic subject association.
 
-| Unique articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
+## Complete source publication
+
+[Every source module and declaration](../../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+
+[Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
+
+Namespace totals and the complete namespace route:
+
+| Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
+|---|---:|---:|---:|
+| [Algebra](../complete-source-index.md) | 10,184 | 327,298 | 237,570 |
+
+Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
+
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
+
+| Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
 | 2 | 0 | 0 | 0 |
 
@@ -33,7 +49,7 @@ No narrower directory is currently registered. Continue to the articles below.
 - [Finite weighted signed-root traces](signed-root-traces.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. Let $\Lambda\subset\mathbb C$ be a finite set closed under conjugation, and let $w:\mathbb C\to\mathbb R$ satisfy $w(z)>0$ for every $z\in\Lambda$. For a real polynomial $p$, define the signed square trace \[…
 - [Signed traces on a conjugate quartic](conjugate-quartic.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. For real parameters $a,t$, retain the four-entry list \[ R(a,t)=[t+ia,t-ia,-t+ia,-t-ia]. \] The real quartic is \[ Q(X)=((X-t)^2+a^2)((X+t)^2+a^2) =X^4+2(a^2-t^2)X^2+(a^2+t^2)^2. \] `quartic_expansion` proves…
 
-Source baseline: math commit `b2eb72c5f4c3d7187e8e603d02d242944f01a624`; 902 observed taxonomy/article/catalog inputs; 0 differ from that commit. Observation SHA-256: `20ecc8e08065250f4515ebd4c00cd27dca13a73c208415990f32c4540505f2bf`.
+Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

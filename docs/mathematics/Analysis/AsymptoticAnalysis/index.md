@@ -16,11 +16,11 @@ Namespace totals and the complete namespace route:
 
 | Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
 |---|---:|---:|---:|
-| [Analysis](../complete-source-index.md) | 9,825 | 216,794 | 177,008 |
+| [Analysis](../complete-source-index.md) | 9,896 | 217,242 | 177,213 |
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -67,7 +67,7 @@ No narrower directory is currently registered. Continue to the articles below.
 
   **Unresolved premises.** A P04 application requires its actual exact reconstruction identity and both uniform arithmetic bounds; this adapter does not supply them.
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
+Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

@@ -14,11 +14,11 @@ This directory groups existing source guides. Its storage name does not establis
 
 | Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
 |---|---:|---:|---:|
-| [CombinatoricsAndDiscreteMathematics](complete-source-index.md) | 9,373 | 344,526 | 246,190 |
+| [CombinatoricsAndDiscreteMathematics](complete-source-index.md) | 9,524 | 347,152 | 247,777 |
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -82,7 +82,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 9. **[Sequences](Sequences/index.md)** — 0 immediate children · 6 unique articles · 1 structured · 1 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Coverage and discrete quotas](Sequences/coverage-and-quotas.md); [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
+Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

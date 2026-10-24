@@ -12512,8 +12512,11 @@ research direction/analogy, not an assertion of historical influence.
 
 **Pure source candidate.** `GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/Serialization/ReconstructibleNeighborhood.lean`,
 Git blob `28538e66bf0e6da7241f405b0bddb95f7599449d`, SHA-256 `4cb63946646b4956845bf66e306158476808c5c95255a66194ac2afb75d3d5e5`.
-The source commit is the commit introducing this entry and source blob.
-Namespace `GRWTSK.TypeTheory.Serialization.ReconstructibleNeighborhood`: 
+The original source commit is `12e332aae5a173786f7d85a3f8c232faf06d14da`.
+The current namespace is `GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.Serialization.ReconstructibleNeighborhood`
+after qualified-name substitution only. The blob and SHA-256 above bind the
+original source before this layout change; they do not certify the renamed bytes.
+Within that namespace,
 `split_fill_original` proves list-span reconstruction; `decode_encoded_original`
 requires the explicitly supplied `LosslessCodec.roundTrip`;
 `interpretation_transport` requires literal, argument, addition, subtraction and

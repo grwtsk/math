@@ -26,7 +26,7 @@ twists, a continuous diffusion equation, convergence, or cryptographic entropy.
 
 set_option autoImplicit false
 
-namespace GRWTSK.TypeTheory.Serialization.ReconstructibleNeighborhood
+namespace GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.Serialization.ReconstructibleNeighborhood
 
 universe u v
 
@@ -310,4 +310,4 @@ theorem d1_d0 {Vertex : Type u} (potential : Vertex → Int) (a b c : Vertex) :
   rw [Int.add_left_comm (potential a) (potential b), Int.neg_add_cancel_left,
     Int.add_right_neg]
 
-end GRWTSK.TypeTheory.Serialization.ReconstructibleNeighborhood
+end GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.Serialization.ReconstructibleNeighborhood
