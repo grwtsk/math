@@ -41,4 +41,24 @@ theorem cofactorZero_pos_of_ratio_order
   have hh := (div_lt_div_iff₀ h2 h1).mp hratio
   nlinarith
 
+
+/-- The same strict moment-ratio premise makes the actual complex
+cofactorZero nonzero. The missing analytic input is precisely hratio. -/
+theorem cofactorZero_ne_zero_of_ratio_order
+    (hratio :
+      realMultiplicativeMoment 2 / realOrdinaryMoment 2 <
+      realMultiplicativeMoment 1 / realOrdinaryMoment 1) :
+    cofactorZero ≠ 0 := by
+  have hpositive :
+      0 < realOrdinaryMoment 1 ∧ 0 < realOrdinaryMoment 2 :=
+    ⟨realOrdinaryMoment_pos 1, realOrdinaryMoment_pos 2⟩
+  have hpos := cofactorZero_pos_of_ratio_order hpositive hratio
+  intro hz
+  unfold cofactorZero at hz
+  have hreal :
+      realOrdinaryMoment 2 * realMultiplicativeMoment 1 -
+      realOrdinaryMoment 1 * realMultiplicativeMoment 2 = 0 := by
+    exact_mod_cast hz
+  exact (ne_of_gt hpos) hreal
+
 end GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentCofactorZeroSign
