@@ -1,6 +1,5 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 No rational/algebraic-to-sofic theorem or non-sofic zeta trace is proved.
 -/
@@ -282,7 +281,7 @@ theorem no_eventual_sofic_of_zeta_rightContexts
 /-- Form the prior exact supplier packet from TWO independent arithmetic
 presentations and the NEW independently supplied symbolic context
 certificate. No arithmetic-to-finite-graph theorem is hidden here. -/
-def eventualSuppliers_of_zeta_rightContexts
+theorem eventualSuppliers_of_zeta_rightContexts
     (trace : ℂ → ℕ → Bool)
     (rationalEventually :
       ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
