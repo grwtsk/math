@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CertificateCorrespondence.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.OccurrenceCertificateProjection
 
 /-!
 Finite admission transport at the capture/Plan boundary. Expected inventories

@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.TransactionConstruction.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.CollisionCheckedMapConstruction
 
 /-!
 The post-journal application driver has a frozen action order, two separately
