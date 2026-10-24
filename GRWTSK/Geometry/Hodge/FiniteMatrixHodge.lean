@@ -1,5 +1,6 @@
 import Mathlib.LinearAlgebra.Matrix.ToLin
 import Mathlib.LinearAlgebra.Matrix.DotProduct
+import Mathlib.Analysis.InnerProductSpace.PiL2
 import GRWTSK.Geometry.Hodge.FiniteGraphCellular
 import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
@@ -146,5 +147,46 @@ theorem harmonic_of_coboundary_zero
   rw [hodgeData_laplacian0, laplacian_eq_zero_iff_delta_eq_zero,
     delta_eq_coboundary]
   exact hx
+
+
+/-!
+## Euclidean realization of the existing finite graph Laplacian
+
+The operator here is the already-defined incidence Hodge Laplacian
+\`deltaStar G\` composed with \`delta G\`. It is lifted to the actual
+Euclidean L² norm and the existing adjoint quadratic identity proves
+positive semidefiniteness. No spectral positivity is assumed.
+-/
+
+/-- The Euclidean continuous-linear representation of the existing graph
+Hodge Laplacian, with its literal incidence Gram matrix. -/
+noncomputable def euclideanLaplacian
+    (G : OrientedIncidence Vertex Edge) :
+    EuclideanSpace ℝ Vertex →L[ℝ] EuclideanSpace ℝ Vertex :=
+  LinearMap.toContinuousLinearMap
+    (Matrix.toLpLin 2 2 ((incidenceMatrix G)ᵀ * incidenceMatrix G))
+
+/-- The new Euclidean map is precisely the original cellular Laplacian
+after the standard finite L² coordinate identification. -/
+theorem euclideanLaplacian_apply
+    (G : OrientedIncidence Vertex Edge) (x : Vertex → ℝ) :
+    euclideanLaplacian G (WithLp.toLp 2 x) =
+      WithLp.toLp 2 (laplacian G x) := by
+  change WithLp.toLp 2 (((incidenceMatrix G)ᵀ * incidenceMatrix G) *ᵥ x) =
+    WithLp.toLp 2 ((incidenceMatrix G)ᵀ *ᵥ (incidenceMatrix G *ᵥ x))
+  rw [Matrix.mulVec_mulVec]
+
+/-- The original finite graph Hodge quadratic identity supplies a genuine
+nonnegative real-Hilbert-space operator, with no coercivity or spectral-gap
+assumption. -/
+theorem euclideanLaplacian_nonneg
+    (G : OrientedIncidence Vertex Edge)
+    (y : EuclideanSpace ℝ Vertex) :
+    0 ≤ inner ℝ (euclideanLaplacian G y) y := by
+  let x : Vertex → ℝ := WithLp.ofLp y
+  have hy : y = WithLp.toLp 2 x := (WithLp.toLp_ofLp y).symm
+  rw [hy, euclideanLaplacian_apply]
+  simpa [EuclideanSpace.inner_toLp_toLp, Matrix.dotProduct] using
+    (laplacian_nonneg G x)
 
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
