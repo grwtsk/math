@@ -16,6 +16,12 @@ revision information. Add explicit composition and verification sections so
 the scope of formal evidence remains inspectable. This is a project article
 form and makes no claim of journal publication or affiliation.
 
+The presentation takes its cue from the Annals of Mathematics
+[article pages](https://annals.math.princeton.edu/2025/201-1/p02) and
+[submission guidance](https://annals.math.princeton.edu/submission-guidelines):
+a self-contained abstract, precise mathematical exposition, classification,
+complete references, and separately recorded revision information.
+
 The maintained body contains these sections:
 
 1. Abstract.
@@ -32,10 +38,25 @@ generated scaffold or infer a stronger theorem from its title.
 
 ## Authoritative metadata
 
-Store a `result_article` record in JSON-form YAML front matter: a JSON object
-between `---` delimiters at the start of the Markdown file. This supports a
-single authoritative article rather than a separately editable catalogue.
-The schema identity is `grwtsk.result-article/1`.
+Store a `result_article` record in one hidden JSON metadata block after the
+visible article prose. The title, byline, and self-contained abstract come
+first; a large metadata table must not bury the result. The schema identity
+is `grwtsk.result-article/1`.
+
+```text
+<!-- BEGIN RESULT ARTICLE METADATA
+{"result_article": {"schema": "grwtsk.result-article/1", "...": "complete article record"}}
+END RESULT ARTICLE METADATA -->
+```
+
+This is the single authoritative record. A bounded visible Abstract block is
+rendered directly from its `abstract` field; it is not a second editable
+abstract. The authoring tool checks for derived-text drift and synchronizes
+only that block. Existing authored proof prose stays intact.
+
+Legacy JSON-form YAML front matter remains readable. Duplicate hidden records,
+unmatched markers, or simultaneous legacy and hidden article records are
+errors; new articles use the hidden form.
 
 | Field | Meaning |
 |---|---|
@@ -49,6 +70,9 @@ The schema identity is `grwtsk.result-article/1`.
 | `composition` | Composite roots, component article IDs, conclusion, bridge status/declarations, and unresolved premises; null for a leaf. |
 | `issue` | Positive revision, canonical date, and actual issuance timestamp, separately recorded. |
 | `metrics` | Optional observations with value, method, version, coverage, and provenance. |
+
+Aliases are validated metadata, not automatic redirects. Existing paths remain
+addressable until a separately checked link migration preserves their readers.
 
 Source pins retain repository, full commit, repository-relative source path,
 and full blob hash. Preserve upstream public bylines and licensing. Each
@@ -71,12 +95,16 @@ commands, source bytes, dependency/toolchain pins, permitted axioms, and
 excluded scope remain explicit. A successful metadata check establishes
 structural consistency only.
 
-A composite names the union of declaration roots and its component articles,
+A composite names the union of local declaration roots and its component articles,
 then states the explicit bridge to its conclusion. Verified components alone
 do not prove that bridge. Kernel-verified composite metadata requires
 source-pinned bridge declarations among the article's statements and evidence
 covering the claimed connection. Conditional premises and finite scope remain
 visible in ancestor previews.
+
+Imported prerequisites remain upstream dependency records and are reached
+through the observed proof edges. Promoting an imported prerequisite to a new
+root would change its three-step radius and therefore change the measurement.
 
 New drafts leave canonical and issuance dates null until those events are
 actually recorded. A canonical mathematical date does not imply an issuance
