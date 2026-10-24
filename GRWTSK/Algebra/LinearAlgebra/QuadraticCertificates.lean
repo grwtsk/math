@@ -257,6 +257,79 @@ theorem Certificate.gram_pullback_congruence
       congruence T (S.gram.transpose * S.gram) := by
   simp [Certificate.pullback, congruence, Matrix.transpose_mul, Matrix.mul_assoc]
 
+
+/-!
+## Exact constraint transport through a concrete coordinate range
+
+The existing Problem.pullback is an actual matrix congruence. Its
+quadratic value at x is the original quadratic value at T.mulVec x,
+with no faithfulness or isometry required of T. Thus the exact
+Admissible predicate transports in both directions.
+
+When every vector of the chosen range is admissible and a certificate
+checks, the *pulled-back target* is globally positive semidefinite
+on its new coordinate space. The original target outside this range
+is not asserted positive.
+-/
+
+/-- The quadratic form of an exact congruence TᵀMT is the original
+quadratic form evaluated on the concrete coordinate image T x. -/
+theorem quadratic_congruence
+    (M : Matrix ι ι R) (T : Matrix ι κ R) (x : κ → R) :
+    quadratic (congruence T M) x = quadratic M (T *ᵥ x) := by
+  change x ⬝ᵥ ((T.transpose * M * T) *ᵥ x) =
+    (T *ᵥ x) ⬝ᵥ (M *ᵥ (T *ᵥ x))
+  calc
+    x ⬝ᵥ ((T.transpose * M * T) *ᵥ x) =
+        x ⬝ᵥ (T.transpose *ᵥ (M *ᵥ (T *ᵥ x))) := by
+          simp only [← Matrix.mulVec_mulVec]
+    _ = (M *ᵥ (T *ᵥ x)) ⬝ᵥ (T *ᵥ x) :=
+      Matrix.dotProduct_transpose_mulVec T x _
+    _ = (T *ᵥ x) ⬝ᵥ (M *ᵥ (T *ᵥ x)) :=
+      Matrix.dotProduct_comm _ _
+
+/-- The original quadratic equality and inequality constraints hold
+for T x precisely when the pulled-back packet admits x. -/
+theorem pullback_admissible_iff
+    (P : Problem R ι ε γ) (T : Matrix ι κ R) (x : κ → R) :
+    (P.pullback T).Admissible x ↔ P.Admissible (T *ᵥ x) := by
+  constructor
+  · intro hx
+    constructor
+    · intro e
+      have he := hx.1 e
+      change quadratic (congruence T (P.equalities e)) x = 0 at he
+      simpa only [quadratic_congruence] using he
+    · intro g
+      have hg := hx.2 g
+      change 0 ≤ quadratic (congruence T (P.inequalities g)) x at hg
+      simpa only [quadratic_congruence] using hg
+  · intro hx
+    constructor
+    · intro e
+      change quadratic (congruence T (P.equalities e)) x = 0
+      rw [quadratic_congruence]
+      exact hx.1 e
+    · intro g
+      change 0 ≤ quadratic (congruence T (P.inequalities g)) x
+      rw [quadratic_congruence]
+      exact hx.2 g
+
+/-- A passing certificate gives global positive semidefiniteness of
+the *pulled-back* target whenever the actual linear range of T is
+contained in the original admissible vectors. The range hypothesis
+cannot be omitted for a general constrained certificate target. -/
+theorem checked_target_pullback_nonneg_of_range_admissible
+    (P : Problem ℝ ι ε γ) (S : Certificate ℝ ι ε γ ν)
+    (hCheck : check P S = true) (T : Matrix ι κ ℝ)
+    (hRange : ∀ x : κ → ℝ, P.Admissible (T *ᵥ x))
+    (x : κ → ℝ) :
+    0 ≤ quadratic (P.pullback T).target x := by
+  change 0 ≤ quadratic (congruence T P.target) x
+  rw [quadratic_congruence]
+  exact check_sound P S hCheck (T *ᵥ x) (hRange x)
+
+
 end Refinement
 
 
