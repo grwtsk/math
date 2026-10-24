@@ -7,6 +7,7 @@ import Mathlib.Tactic
 import Mathlib.Analysis.Normed.Group.Basic
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
 import Mathlib.Analysis.InnerProductSpace.Adjoint
+import Mathlib.Analysis.InnerProductSpace.LinearPMap
 
 set_option autoImplicit false
 
@@ -566,5 +567,24 @@ theorem self_adjoint_coercivity_of_offDiagonalBlock
   exact self_adjoint_projection_coercivity_of_interaction S T hT x
     delta ‖offDiagonalBlock S T‖ (norm_nonneg _) hfirst hsecond
     (offDiagonalBlock_cross_lower_bound S T x)
+
+/-- If one orthogonal projection preserves the domain of a partially defined
+operator, the complementary projection preserves it too. This is an actual
+operator-domain statement, not an assertion about its closed form domain. -/
+theorem linearPMap_complementary_projection_mem_domain
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (x : H)
+    (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    S.starProjection x ∈ A.domain ∧ Sᗮ.starProjection x ∈ A.domain := by
+  have hp := hstable x hx
+  refine ⟨hp, ?_⟩
+  have hq : Sᗮ.starProjection x = x - S.starProjection x := by
+    have hsum := S.starProjection_add_starProjection_orthogonal x
+    exact (eq_sub_iff_add_eq).2 hsum.symm
+  rw [hq]
+  exact A.domain.sub_mem hx hp
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
