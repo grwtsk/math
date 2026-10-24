@@ -464,6 +464,99 @@ theorem scalar_perturbed_moment_adjoint_strict_contraction
     scalarEncode_energy (scalarOperatorMatrix_intertwines P) v
 
 
+
+/-!
+## Concrete finite-dimensional Euclidean moment realization
+
+The Euclidean coordinate encoding and its operator matrix are constructed in
+FiniteAdjointDescent. For the Navier–Stokes-derived moment gap, these concrete
+objects discharge all finite-coordinate energy and intertwining hypotheses.
+This applies to any finite n, but still requires the original global residual
+coercivity premise. It does not identify arbitrary physical PDE operators.
+-/
+
+/-- A moment operator acting on EuclideanSpace ℝ (Fin n) has an explicit
+finite matrix whose observation energy inherits the coercivity gap. -/
+theorem euclidean_moment_adjoint_observability {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin n → ℝ) :
+    (ε / (ε + β * δ)) ^ 2 *
+        energy (Finset.univ : Finset (Fin n)) v ≤
+      energy (Finset.univ : Finset (Fin n))
+        (applyMatrix Finset.univ (euclideanOperatorMatrix (momentMatrix B C)) v) := by
+  exact certified_moment_adjoint_observability
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix (momentMatrix B C))
+    B C R euclideanEncode hε hB hR hcoercive
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- Every finite Euclidean coercive moment operator supplies a concrete
+strict-relative-contraction estimate for the adjoint residual iteration,
+without assumed coordinate-energy or intertwining lemmas. -/
+theorem euclidean_moment_adjoint_strict_contraction {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix (momentMatrix B C)
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ)) ^ 2) * energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ)) ^ 2 < 1 := by
+  dsimp only
+  exact certified_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix (momentMatrix B C))
+    B C R euclideanEncode hε hB hR hcoercive
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines (momentMatrix B C)) v
+
+/-- A perturbed finite Euclidean moment operator retains a concrete
+strict-relative-contraction bound with the exact remaining operator-norm
+margin; only the strict perturbation and original coercivity are assumed. -/
+theorem euclidean_perturbed_moment_adjoint_strict_contraction {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (P : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hpert : ‖P - momentMatrix B C‖ < ε / (ε + β * δ))
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix P
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2) *
+          energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ) - ‖P - momentMatrix B C‖) ^ 2 < 1 := by
+  dsimp only
+  exact certified_perturbed_moment_adjoint_strict_contraction
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix P)
+    B C R P euclideanEncode hε hB hR hcoercive hpert
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines P) v
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
