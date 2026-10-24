@@ -457,4 +457,35 @@ theorem self_adjoint_projection_real_energy_expansion
   simp only [map_add, RCLike.re_conj]
   ring
 
+/-- The real quadratic form of a bounded self-adjoint operator inherits a
+coercivity bound from both projected sectors and a controlled real interaction.
+The interaction bound is explicit and must be proved for any concrete model. -/
+theorem self_adjoint_projection_coercivity_of_interaction
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H)
+    (delta epsilon : ℝ) (hepsilon : 0 ≤ epsilon)
+    (hfirst : delta * ‖S.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (hsecond : delta * ‖Sᗮ.starProjection x‖ ^ 2 ≤
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)))
+    (hcross : -(epsilon * ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖) ≤
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x))) :
+    (delta - epsilon) * ‖x‖ ^ 2 ≤ RCLike.re (inner 𝕜 (T x) x) := by
+  apply projection_sector_energy_lower_bound_of_interaction
+    S x delta epsilon
+    (RCLike.re (inner 𝕜 (T x) x))
+    (RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)))
+    (RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)))
+    (2 * RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)))
+    hepsilon
+  · exact self_adjoint_projection_real_energy_expansion S T hT x
+  · have hnorm : 0 ≤ ‖S.starProjection x‖ * ‖Sᗮ.starProjection x‖ :=
+      mul_nonneg (norm_nonneg _) (norm_nonneg _)
+    rw [abs_of_nonneg hnorm]
+    nlinarith [hcross]
+  · exact hfirst
+  · exact hsecond
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
