@@ -241,4 +241,15 @@ theorem dirichlet_coefficient_LSeries_eq_log_derivative
   simpa only [dirichletVonMangoldtCoefficient, mul_comm] using
     (DirichletCharacter.LSeries_twist_vonMangoldt_eq χ hs)
 
+
+/-- Absolute convergence of the actual finite-twist coefficient
+sequence's L-series in the right half-plane. This gives only a
+qualitative tail limit, not a quantitative Perron remainder. -/
+theorem dirichlet_coefficient_LSeriesSummable
+    (q : ℕ) (χ : DirichletCharacter ℂ q)
+    (s : ℂ) (hs : 1 < s.re) :
+    LSeriesSummable (dirichletVonMangoldtCoefficient q χ) s := by
+  simpa only [dirichletVonMangoldtCoefficient, mul_comm] using
+    (DirichletCharacter.LSeriesSummable_twist_vonMangoldt χ hs)
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
