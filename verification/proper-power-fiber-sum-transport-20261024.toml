@@ -1,0 +1,38 @@
+# Queued verification only; do not execute.
+schema_version = "0.1"
+request_id = "proper-power-fiber-sum-transport-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "0dd01dd5b9bae20a0944b280f226476fe9679739"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberSumTransport.lean"
+source_blob = "76c72c3a303e82302716be0ab326b616efe41eec"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSumTransport.fiberSupportedMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSumTransport.fiberSupportedMass_eq_box_sum",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberWeight",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Normalize original nested n/pairSupportAt fiber sum into fiberSupportedMass",
+ "Normalize rectangularProperPowerMass into rectangularSupportedMass",
+ "Compose unconditional original-to-rectangular proper-power mass identity",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberSumTransport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSumTransport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberSumTransport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
