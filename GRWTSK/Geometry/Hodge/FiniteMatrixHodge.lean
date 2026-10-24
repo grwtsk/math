@@ -918,4 +918,117 @@ theorem admissible_iff_laplacian_zero (x : Fin 2 → ℝ) :
 
 end SingleEdgeCertificate
 
+
+/-!
+## Moser graph: exact harmonic constant range in seven coordinates
+
+The pre-existing FiniteGraphCellular.Moser.energy_eq_zero_iff_constant
+and explicit eleven-edge incidence establish that this connected
+seven-vertex graph has exactly the constant degree-zero cocycles.
+The same nonzero one-coordinate matrix construction now identifies
+their range with the kernels of the *actual* coboundary and Hodge
+Laplacian. No graph spectral eigenvalue computation is required.
+-/
+
+namespace MoserKernel
+
+/-- Literal nonzero one-coordinate embedding of constants on all seven
+vertices of the existing GRWTSK Moser graph. -/
+def constantEmbedding : Matrix (Fin 7) (Fin 1) ℝ :=
+  fun _ _ => 1
+
+/-- The coordinate embedding maps a scalar to the constant seven-cochain. -/
+theorem constantEmbedding_apply (v : Fin 1 → ℝ) :
+    constantEmbedding *ᵥ v = fun _ : Fin 7 => v 0 := by
+  funext i
+  simp [constantEmbedding, Matrix.mulVec, Matrix.dotProduct, Fin.sum_univ_one]
+
+/-- The Moser constant-cochain embedding is not the zero matrix. -/
+theorem constantEmbedding_ne_zero : constantEmbedding ≠ 0 := by
+  intro h
+  have he := congrArg
+    (fun M : Matrix (Fin 7) (Fin 1) ℝ => M 0 0) h
+  norm_num [constantEmbedding] at he
+
+/-- Actual one-dimensional coordinate image, represented using the
+pre-existing matrix-action linear map. -/
+def constantLine : Submodule ℝ (Fin 7 → ℝ) :=
+  LinearMap.range constantEmbedding.mulVecLin
+
+/-- Exact kernel identification for the original eleven-edge Moser
+cellular differential. The reverse implication uses the independently
+proved edge-connectivity theorem Moser.energy_eq_zero_iff_constant. -/
+theorem constantLine_eq_delta_ker :
+    constantLine = LinearMap.ker (delta Moser.incidence) := by
+  apply Submodule.ext
+  intro x
+  constructor
+  · intro hx
+    change x ∈ LinearMap.range constantEmbedding.mulVecLin at hx
+    obtain ⟨v, hv⟩ := hx
+    change delta Moser.incidence x = 0
+    rw [← hv, Matrix.mulVecLin_apply, constantEmbedding_apply,
+      delta_eq_coboundary]
+    funext e
+    simp [OrientedIncidence.coboundary_apply]
+  · intro hx
+    have hd : delta Moser.incidence x = 0 := by
+      simpa only [LinearMap.mem_ker] using hx
+    have hc : Moser.incidence.coboundary ℝ x = 0 := by
+      simpa only [delta_eq_coboundary] using hd
+    have henergy : Moser.energy x = 0 :=
+      (Moser.incidence.energy_eq_zero_iff_coboundary_eq_zero x).mpr hc
+    obtain ⟨c, hconst⟩ :=
+      (Moser.energy_eq_zero_iff_constant x).mp henergy
+    change x ∈ LinearMap.range constantEmbedding.mulVecLin
+    refine ⟨fun _ : Fin 1 => c, ?_⟩
+    change constantEmbedding *ᵥ (fun _ : Fin 1 => c) = x
+    rw [constantEmbedding_apply]
+    exact hconst.symm
+
+/-- The original seven-vertex Moser graph's Hodge Laplacian kernel
+is exactly the explicit range of constant cochains. -/
+theorem constantLine_eq_laplacian_ker :
+    constantLine = LinearMap.ker (laplacian Moser.incidence) := by
+  calc
+    constantLine = LinearMap.ker (delta Moser.incidence) :=
+      constantLine_eq_delta_ker
+    _ = LinearMap.ker (laplacian Moser.incidence) :=
+      (laplacian_ker_eq_delta_ker Moser.incidence).symm
+
+/-- The constant-coordinate range is exactly the previously defined
+degree-zero cellular cohomology representative submodule for Moser. -/
+theorem constantLine_eq_hZero :
+    constantLine = Moser.incidence.hZero ℝ := by
+  calc
+    constantLine = LinearMap.ker (delta Moser.incidence) :=
+      constantLine_eq_delta_ker
+    _ = Moser.incidence.hZero ℝ := by
+      rw [delta_eq_coboundary]
+      rfl
+
+/-- Vanishing of the pre-existing Moser graph cellular edge energy is
+equivalent to membership in the concrete constant-coordinate image. -/
+theorem energy_eq_zero_iff_constantLine (x : Fin 7 → ℝ) :
+    Moser.energy x = 0 ↔ x ∈ constantLine := by
+  constructor
+  · intro h
+    obtain ⟨c, hc⟩ := (Moser.energy_eq_zero_iff_constant x).mp h
+    change x ∈ LinearMap.range constantEmbedding.mulVecLin
+    refine ⟨fun _ : Fin 1 => c, ?_⟩
+    change constantEmbedding *ᵥ (fun _ : Fin 1 => c) = x
+    rw [constantEmbedding_apply]
+    exact hc.symm
+  · intro hx
+    have hd : delta Moser.incidence x = 0 := by
+      have hk : x ∈ LinearMap.ker (delta Moser.incidence) := by
+        rw [← constantLine_eq_delta_ker]
+        exact hx
+      exact (LinearMap.mem_ker).mp hk
+    have hc : Moser.incidence.coboundary ℝ x = 0 := by
+      simpa only [delta_eq_coboundary] using hd
+    exact (Moser.incidence.energy_eq_zero_iff_coboundary_eq_zero x).mpr hc
+
+end MoserKernel
+
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
