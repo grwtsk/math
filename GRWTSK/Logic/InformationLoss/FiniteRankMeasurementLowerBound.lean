@@ -5,6 +5,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED. No root import.
 -/
 import GRWTSK.Logic.InformationLoss.FiniteRankMeasurementRange
 import Mathlib.LinearAlgebra.Dimension.StrongRankCondition
+import Mathlib.LinearAlgebra.FiniteDimensional.Defs
 
 /-!
 # Finrank lower bound for added linear measurements
