@@ -10798,8 +10798,10 @@ FINITE_EVIDENCE only, no kernel verification.
 **External references** with exact source/version distinctions:
 
 - **Benjamin Weiss**, *Subshifts of finite type and sofic systems*,
-  **1973** (DOI [10.1007/BF01295322](https://doi.org/10.1007/BF01295322)).
-  Exact theorem/page used here: **NOT VERIFIED**. This remains
+  *Monatshefte für Mathematik* **77(5) (October 1973), 462–474**,
+  DOI [10.1007/BF01295322](https://doi.org/10.1007/BF01295322).
+  The title, edition and full page span are bibliographically
+  verified; a particular theorem/page used here is **NOT VERIFIED**. This remains
   named historical symbolic-dynamics context, not imported
   mathematical source.
 - **Nataša Jonoska**, *Sofic shifts with synchronizing
@@ -10882,9 +10884,16 @@ FINITE_EVIDENCE only, no kernel verification.
   \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_iff_all_capacityCertificates\`,
   \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_all_capacityCertificates_and_rational_sofic\`;
   file \`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean\`,
-  **latest source integration** main commit
+  **original new theorem integration** main commit
   [beaae68f34fc6980385aca48975246e440eb233f](https://github.com/grwtsk/math/commit/beaae68f34fc6980385aca48975246e440eb233f),
   Git blob **ae3e016150c6b6ab131a76019b1f3571e15d4463**.
+  **Concurrent later header-only normalization** commit
+  [d84485b6c2a5b98c0dcbb68afb016bb1f2f19a88](https://github.com/grwtsk/math/commit/d84485b6c2a5b98c0dcbb68afb016bb1f2f19a88)
+  gives new blob **ef271172b8f792a189f3f7cd684448d05e0c7ddb**;
+  source text from the first \`import\` onward is unchanged.
+  This newer literal source header identifies **2026 grwtsk
+  contributors**, without a separate mathematical-direction
+  attribution. No kernel receipt transfers between these blobs.
   The NEW equivalence proves that a **single, fixed actual trace**
   has unbounded distinguishable right contexts at *every
   finite offset* precisely when it has a matching certificate
@@ -11033,3 +11042,18 @@ they cannot be reinterpreted as verification of
 **No Railway, unauthorized external dispatch, force push,
 draft-only completion, public-root promotion or stopping-constraint
 bypass is permitted.**
+
+
+**Newest bounded mathematical advance — external validation link.**
+Passive issue [grwtsk/noeaaeue#402](https://github.com/grwtsk/noeaaeue/issues/402)
+contains the exact \`math@beaae68f34fc6980385aca48975246e440eb233f\`
+source blob, dependencies, command list and expected
+\`#check\`/\`#print axioms\` tests for the three new
+\`zeta_*all_capacityCertificates*\` declarations.
+Issue [grwtsk/noeaaeue#400](https://github.com/grwtsk/noeaaeue/issues/400)
+is pinned to the earlier \`math@b10d5736af4188a2a4ea46d148011683d164f214\`
+and does NOT certify the latest source.
+External execution registry availability remains unconfirmed;
+neither issue authorizes execution or provides an accepted
+kernel/axiom receipt. **COMPILATION NOT_RUN / FRESH_KERNEL
+NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN** for the new source.
