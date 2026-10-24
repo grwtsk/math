@@ -1,6 +1,4 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors.
-Formalization assistance: OpenAI.
 External manuscript pattern:
 openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a,
 The rational Hodge conjecture for CM abelian varieties,
@@ -121,5 +119,148 @@ theorem cmFourBalance_twoTwoSignProfile
     v₃.toOddSignRow
     v₄.toOddSignRow
     hbal
+
+ 
+/-! ## The distinguished-embedding normalization of the four-factor switch
+
+The October 6 CM-Hodge manuscript, Section 2, lemma
+"Choice of the distinguished embedding", has two cases: opposite pairs,
+or a coordinate on which all four signs are positive.  In the latter
+case right translation normalizes that coordinate to the identity.
+These are exact *sign-row and Hodge-count* results, not cycle classes.
+-/
+
+/-- Right translation of an odd sign row by a selected Galois label.
+Centrality of the conjugation element is used only through the fixed
+left-action convention in the oddness law; right multiplication
+associates with that left action. -/
+def CMOddSignRow.rightTranslate
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v : CMOddSignRow G C) (g : G) : CMOddSignRow G C where
+  value τ := v.value (τ * g)
+  isSign τ := v.isSign (τ * g)
+  odd τ := by
+    simpa only [CentralInvolution.conj, mul_assoc] using v.odd (τ * g)
+
+/-- The original label g becomes the normalized identity label. -/
+theorem CMOddSignRow.rightTranslate_one
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v : CMOddSignRow G C) (g : G) :
+    (v.rightTranslate g).value 1 = v.value g := by
+  simp [CMOddSignRow.rightTranslate]
+
+/-- Translation loses no sign data: right translation by the inverse
+recovers every original coordinate. -/
+theorem CMOddSignRow.rightTranslate_inv_value
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v : CMOddSignRow G C) (g τ : G) :
+    ((v.rightTranslate g).rightTranslate g⁻¹).value τ = v.value τ := by
+  change v.value ((τ * g⁻¹) * g) = v.value τ
+  simp [mul_assoc]
+
+/-- The full four-label balance survives right translation exactly. -/
+theorem cmFourBalance_rightTranslate
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v₁ v₂ v₃ v₄ : CMOddSignRow G C)
+    (hbal : CMFourBalance v₁ v₂ v₃ v₄) (g : G) :
+    CMFourBalance
+      (v₁.rightTranslate g) (v₂.rightTranslate g)
+      (v₃.rightTranslate g) (v₄.rightTranslate g) := by
+  intro τ
+  exact hbal (τ * g)
+
+/-- A balanced four-sign family either consists of two opposite pairs
+everywhere or has a coordinate at which *all four* signs are +1.
+
+The negative/negative first pair is excluded by oddness at the conjugate
+coordinate, not by discarding that possible sign pattern. -/
+theorem cmFourBalance_pair_or_positive_coordinate
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v₁ v₂ v₃ v₄ : CMOddSignRow G C)
+    (hbal : CMFourBalance v₁ v₂ v₃ v₄) :
+    ((∀ τ, v₂.value τ = -v₁.value τ) ∧
+      (∀ τ, v₄.value τ = -v₃.value τ)) ∨
+    ∃ g : G,
+      v₁.value g = 1 ∧ v₂.value g = 1 ∧
+      v₃.value g = 1 ∧ v₄.value g = 1 := by
+  classical
+  by_cases hcommon : ∃ g : G, v₁.value g = 1 ∧ v₂.value g = 1
+  · obtain ⟨g, h₁, h₂⟩ := hcommon
+    have hsum : v₃.value g + v₄.value g = 2 := by
+      have hb := hbal g
+      rw [h₁, h₂] at hb
+      omega
+    have h₃ : v₃.value g = 1 := by
+      rcases v₃.isSign g with h | h
+      · exact h
+      · rcases v₄.isSign g with h' | h' <;> omega
+    have h₄ : v₄.value g = 1 := by
+      rcases v₄.isSign g with h | h
+      · exact h
+      · omega
+    exact Or.inr ⟨g, h₁, h₂, h₃, h₄⟩
+  · have hno (g : G) :
+        ¬ (v₁.value g = 1 ∧ v₂.value g = 1) := by
+      intro hh
+      exact hcommon ⟨g, hh⟩
+    have hpair₁₂ : ∀ g, v₂.value g = -v₁.value g := by
+      intro g
+      rcases v₁.isSign g with h₁ | h₁
+      · rcases v₂.isSign g with h₂ | h₂
+        · exact False.elim (hno g ⟨h₁, h₂⟩)
+        · omega
+      · rcases v₂.isSign g with h₂ | h₂
+        · omega
+        · have hc₁ : v₁.value (C.conj g) = 1 := by
+            rw [v₁.odd g, h₁]
+            norm_num
+          have hc₂ : v₂.value (C.conj g) = 1 := by
+            rw [v₂.odd g, h₂]
+            norm_num
+          exact False.elim (hno (C.conj g) ⟨hc₁, hc₂⟩)
+    have hpair₃₄ : ∀ g, v₄.value g = -v₃.value g := by
+      intro g
+      have hb := hbal g
+      rw [hpair₁₂ g] at hb
+      omega
+    exact Or.inl ⟨hpair₁₂, hpair₃₄⟩
+
+/-- The normalized-or-paired conclusion of the manuscript's distinguished
+embedding reduction, retaining a *real* right-translation and the existing
+GRWTSK all-conjugates (2,2) sign-count certificate.
+
+This theorem does not establish any Hodge-line realization, scalar descent,
+four-factor algebraic cycle, or global rational Hodge conjecture. -/
+theorem cmFourBalance_normalization_or_pairs
+    {G : Type*} [Group G] {C : CentralInvolution G}
+    (v₁ v₂ v₃ v₄ : CMOddSignRow G C)
+    (hbal : CMFourBalance v₁ v₂ v₃ v₄) :
+    ((∀ τ, v₂.value τ = -v₁.value τ) ∧
+      (∀ τ, v₄.value τ = -v₃.value τ)) ∨
+    ∃ g : G,
+      CMFourBalance
+        (v₁.rightTranslate g) (v₂.rightTranslate g)
+        (v₃.rightTranslate g) (v₄.rightTranslate g) ∧
+      (v₁.rightTranslate g).value 1 = 1 ∧
+      (v₂.rightTranslate g).value 1 = 1 ∧
+      (v₃.rightTranslate g).value 1 = 1 ∧
+      (v₄.rightTranslate g).value 1 = 1 ∧
+      HasTwoTwoSignProfile
+        (v₁.rightTranslate g).toOddSignRow
+        (v₂.rightTranslate g).toOddSignRow
+        (v₃.rightTranslate g).toOddSignRow
+        (v₄.rightTranslate g).toOddSignRow := by
+  rcases cmFourBalance_pair_or_positive_coordinate
+      v₁ v₂ v₃ v₄ hbal with hpairs | ⟨g, h₁, h₂, h₃, h₄⟩
+  · exact Or.inl hpairs
+  · have ht := cmFourBalance_rightTranslate v₁ v₂ v₃ v₄ hbal g
+    refine Or.inr ⟨g, ht, ?_, ?_, ?_, ?_, ?_⟩
+    · simpa only [CMOddSignRow.rightTranslate_one] using h₁
+    · simpa only [CMOddSignRow.rightTranslate_one] using h₂
+    · simpa only [CMOddSignRow.rightTranslate_one] using h₃
+    · simpa only [CMOddSignRow.rightTranslate_one] using h₄
+    · exact cmFourBalance_twoTwoSignProfile
+        (v₁.rightTranslate g) (v₂.rightTranslate g)
+        (v₃.rightTranslate g) (v₄.rightTranslate g) ht
 
 end GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMGaloisIndex
