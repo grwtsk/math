@@ -105,4 +105,24 @@ theorem residual_descent (s : Finset κ) (t : Finset ι) (A : ι → κ → ℝ)
   have h2 := mul_le_mul_of_nonneg_right (damping_bounds s t A).2.2
     (energy_nonneg t (applyMatrix s A v))
   nlinarith only [h1, h2]
+
+/-- A uniform observability inequality upgrades residual descent to an explicit
+relative energy bound. The observation inequality is an independent premise. -/
+theorem residual_relative_contraction (s : Finset κ) (t : Finset ι)
+    (A : ι → κ → ℝ) (a : ℝ)
+    (hobs : ∀ v : κ → ℝ, a * energy s v ≤ energy t (applyMatrix s A v))
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s t A (applyMatrix s A v) c) ≤
+      (1 - damping s t A * a) * energy s v := by
+  have h := residual_descent s t A v
+  have hd : 0 ≤ damping s t A := (damping_bounds s t A).1.le
+  have ho := mul_le_mul_of_nonneg_left (hobs v) hd
+  nlinarith
+
+/-- Under positive observability, the relative factor is strictly below one. -/
+theorem residual_relative_factor_lt_one (s : Finset κ) (t : Finset ι)
+    (A : ι → κ → ℝ) (a : ℝ) (ha : 0 < a) :
+    1 - damping s t A * a < 1 := by
+  have hd : 0 < damping s t A := (damping_bounds s t A).1
+  nlinarith [mul_pos hd ha]
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
