@@ -19,10 +19,12 @@ The exact two-element telescoping identity is preserved without adding
 registration or distinctness hypotheses. It proves no unrestricted
 finite-universe combinatorial attribution theorem.
 Original source documentation describes the complete unsplit source context.
+The legacy capacity import is replaced by the exact pinned rational-diagonal
+provider; all declaration, hypothesis and proof-body bytes are unchanged.
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import Mathematics.SemiLocalDefect.PositiveCapacity
+import GRWTSK.CombinatoricsAndDiscreteMathematics.PositiveCapacity.FiniteDiagonal
 import GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley.AveragedIncrements
 
 /-!
@@ -37,7 +39,7 @@ an explicit open obligation in the theorem-status registry.
 
 namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley
 
-open Mathematics.SemiLocalDefect
+open GRWTSK.CombinatoricsAndDiscreteMathematics.PositiveCapacity.FiniteDiagonal
 
 theorem shapley_attribution_efficiency
     {Prime : Type u}

@@ -19,10 +19,12 @@ Only the two exact averaged-increment definitions are in this component.
 No distinctness of the two named elements is assumed or added; no general
 finite-universe Shapley theorem is asserted.
 Original source documentation describes the complete unsplit source context.
+The legacy capacity import is replaced by the exact pinned rational-diagonal
+provider; all declaration, hypothesis and proof-body bytes are unchanged.
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import Mathematics.SemiLocalDefect.PositiveCapacity
+import GRWTSK.CombinatoricsAndDiscreteMathematics.PositiveCapacity.FiniteDiagonal
 
 /-!
 # Exact two-prime Shapley attribution
@@ -36,7 +38,7 @@ an explicit open obligation in the theorem-status registry.
 
 namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TwoElementShapley
 
-open Mathematics.SemiLocalDefect
+open GRWTSK.CombinatoricsAndDiscreteMathematics.PositiveCapacity.FiniteDiagonal
 
 def twoPrimeAttributionFirst
     {Prime : Type u}
