@@ -7314,3 +7314,76 @@ All seventeen unresolved specifications remain unchanged in the structured recor
 **Immutable source and provenance.** [`grwtsk/math@d401c5f14ac4b90589896b3876ec269f9946997d`](https://github.com/grwtsk/math/commit/d401c5f14ac4b90589896b3876ec269f9946997d), `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentExceptionalWeightSign.lean`, blob `4136b544689de28ba6b44cef0d5ff81b7d5c8326`. Direct imports `CanonicalSquareTentExceptionalWeightNonzero` blob `b4ce00b06a66dfbb5e247edb9b6b842eeaf5f94f` and `CanonicalSquareTentSixteenMomentGaps` blob `388e2ee9a51815129cf5265fcce8ae074bdd30c3`; actual transitive closure pending.
 
 **Status classifications.** Imported mathematics: local source-only moment and integral candidates, not external paper theorem; kernel-verified bridge: **NONE for this leaf**; new source candidates: determinant positivity and real-weight negativity; conditional interfaces: full transitive pivot-integral source acceptance; finite evidence: none newly claimed; analogy: determinant/moment identifiability; unresolved premises: cast equality, genuine Lean compiler/kernel/axiom receipts and analytic source transport. [Verification #1161](https://github.com/grwtsk/math/issues/1161) pins Lean `leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`, commands and expected audits. **ACTUAL SOURCE_ONLY / BLOB_READBACK / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** Operational receipts in `grwtsk/noeaaeue` outside math; root promotion withheld.
+
+
+## Case ANALYTIC-PAIR-VALIDATION-20261023 — finite analytic order and local-product continuation
+
+**Source identities.** The B3 fragment is associated with *Boundary
+Regularization: A Framework for High-Rank Elimination*, owner-identified
+unpublished research by grwtsk contributors, printed byline `[]`; publication
+date/year, DOI and arXiv remain unestablished. Exact [PDF page 1](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/g%20%282%29.pdf),
+blob `a6b1384d8b682feabc705eee0e058eb50c61df39`, SHA-256
+`796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362`.
+The E4/E5 fragments accompany *Exceptional Groups: Embeddings and
+Compactifications Aligned with Classical Representations*, same owner-identified
+author and unestablished publication metadata/printed byline `[]`: exact
+[version i (3), page 2](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%283%29.pdf),
+blob `9263622af06f0bdfd8d1f9dfe6a9add5eb19bad6`, SHA-256
+`498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f`,
+and [version i (2), page 2](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/i%20%282%29.pdf),
+blob `71542562d4e167aaa8145eb43de20253dc111ae2`, SHA-256
+`67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a`.
+This run validates the Lean fragments, not the papers' geometric/arithmetic
+claims, and makes no historical-influence inference.
+
+**Exact checked scope.** In namespace
+`GRWTSK.Analysis.Complex.LogarithmicPrincipalPart`,
+`analytic_finite_order_factorization`, `analytic_finite_order_scaled_coefficient`,
+`analytic_zero_order_pos`, and `analytic_zero_no_continuous_logDeriv_extension`
+retain analyticity and finite analytic order; the last two additionally require
+an actual zero. The scaled negative logarithmic derivative tends to minus the
+natural multiplicity. This is not a residue assertion for the original function.
+`analytic_order_finite_of_nonzero_value` derives finite order from
+`AnalyticOnNhd`, a preconnected domain, membership of both points and an actual
+nonzero source value; `analytic_zero_detector_of_nonzero_value` composes that
+result with the zero obstruction. No identically-zero germ is silently excluded.
+
+`GRWTSK.Analysis.Complex.analytic_eqOn_of_local_products` retains a preconnected
+D, a nonempty open V contained in D, analyticity of both functions on a
+neighborhood of D, actual two-sided inverse intertwiners at every place and
+both `HasProd` identities on V. It proves equality on D.
+`GRWTSK.Analysis.Complex.germ_eq_of_eqOn_open` and
+`GRWTSK.Analysis.Complex.analytic_order_eq_of_eqOn_open` require openness for
+full-neighborhood germ and analytic-order equality, including infinite order.
+These are kernel-verified conditional analytic bridges using imported Mathlib
+analytic order, identity theorem, derivatives and product uniqueness. Source
+completed functions, their analytic domains/nonzero values, convergence and
+product identities, bad-place/Archimedean factors, exceptional/trivial-zero
+classification, meromorphic continuation and geometric realizations remain
+missing suppliers. No RH, global divisor, contour or residue-sum theorem follows
+from the local results alone.
+
+**Pins and actual verification.** Source commit
+`faf527ca46dd84d2b8ff97f269063184548325b5`:
+`GRWTSK/Analysis/Complex/AnalyticZeroOrderDetector.lean`, blob
+`cbfcd672b3ac88d8b40e404d15058f37529e2872`, and
+`GRWTSK/Analysis/Complex/LocalProductAnalyticContinuation.lean`, blob
+`faaf6132cf4dcc6c04529e8a68afc63989622bf0`. All seven local dependency hashes
+and all 21 theorem headers were preserved; concurrent author additions were
+included in the final check. No source repair was needed.
+Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.Analysis.Complex.AnalyticZeroOrderDetector GRWTSK.Analysis.Complex.LocalProductAnalyticContinuation --wfail`
+  passed (3115 jobs), including the final source snapshot.
+- `lake build --wfail` passed (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/analytic-pair-audit.lean`
+  passed; all 21 transitive local declarations had their types printed, were
+  rejected if unsafe, and used only allowed `propext`, `Classical.choice`,
+  `Quot.sound` axioms. No `sorryAx` or custom axiom was allowed.
+
+External evidence in that directory: `analytic-pair-build-final.log`,
+`analytic-pair-public.log`, `analytic-pair-audit.log`, and
+`analytic-pair-validated-snapshot.json`. This dated evidence supplements the
+existing B3/E4/E5 records without broadening their conditional scope or changing
+unrelated source-only statuses.
