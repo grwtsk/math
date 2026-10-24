@@ -178,4 +178,33 @@ theorem ExactLanguageAt.implies_sofic
     IsSoficTrace (C.labelTrace x) :=
   ⟨E.presentation⟩
 
+/-- A proved non-sofic source factor language obstructs EXACT
+finite-state language identification at this source, not the mere
+existence of a readable path through some finite graph. -/
+theorem no_exact_language_at_of_nonsofic
+    {X : Type u} {Observation : Type v}
+    {Vertex : Type w} {Alphabet : Type q} {Spectral : Type r}
+    [Fintype Vertex] [Fintype Alphabet]
+    [AddCommGroup Spectral] [Module ℂ Spectral]
+    {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
+    {x : X} (hNonsofic : ¬ IsSoficTrace (C.labelTrace x)) :
+    ¬ ExactLanguageAt C x := by
+  intro E
+  exact hNonsofic E.implies_sofic
+
+/-- Even stronger: if EVERY eventual tail has non-sofic factor language,
+an exact language identification is impossible at this source. This
+criterion requires an independent non-eventual-soficity supplier. -/
+theorem no_exact_language_at_of_non_eventual_sofic
+    {X : Type u} {Observation : Type v}
+    {Vertex : Type w} {Alphabet : Type q} {Spectral : Type r}
+    [Fintype Vertex] [Fintype Alphabet]
+    [AddCommGroup Spectral] [Module ℂ Spectral]
+    {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
+    {x : X}
+    (hNonEventual : ¬ EventuallySoficTrace (C.labelTrace x)) :
+    ¬ ExactLanguageAt C x := by
+  intro E
+  exact hNonEventual (eventuallySofic_of_sofic E.implies_sofic)
+
 end GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
