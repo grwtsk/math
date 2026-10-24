@@ -125,4 +125,42 @@ theorem residual_relative_factor_lt_one (s : Finset κ) (t : Finset ι)
     1 - damping s t A * a < 1 := by
   have hd : 0 < damping s t A := (damping_bounds s t A).1
   nlinarith [mul_pos hd ha]
+
+/-- A coordinate realization of a normed-space operator: the two energy identities
+are explicit, rather than inferred from a choice of basis. -/
+theorem observability_of_normed_realization
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
+    (s : Finset κ) (t : Finset ι) (A : ι → κ → ℝ)
+    (J : F →L[ℝ] F) (encode : (κ → ℝ) → F) (γ : ℝ)
+    (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
+    (hinput : ∀ v : κ → ℝ, energy s v = ‖encode v‖ ^ 2)
+    (houtput : ∀ v : κ → ℝ,
+      energy t (applyMatrix s A v) = ‖J (encode v)‖ ^ 2)
+    (v : κ → ℝ) :
+    γ ^ 2 * energy s v ≤ energy t (applyMatrix s A v) := by
+  rw [hinput v, houtput v]
+  have hg := hgap (encode v)
+  nlinarith [sq_nonneg (γ * ‖encode v‖),
+    sq_nonneg (‖J (encode v)‖ - γ * ‖encode v‖)]
+
+/-- A norm-preserving coordinate realization and a positive operator gap
+give strict relative contraction without suppressing either identity. -/
+theorem residual_relative_contraction_of_normed_realization
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
+    (s : Finset κ) (t : Finset ι) (A : ι → κ → ℝ)
+    (J : F →L[ℝ] F) (encode : (κ → ℝ) → F) (γ : ℝ)
+    (hγ : 0 < γ)
+    (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
+    (hinput : ∀ v : κ → ℝ, energy s v = ‖encode v‖ ^ 2)
+    (houtput : ∀ v : κ → ℝ,
+      energy t (applyMatrix s A v) = ‖J (encode v)‖ ^ 2)
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s t A (applyMatrix s A v) c) ≤
+      (1 - damping s t A * γ ^ 2) * energy s v ∧
+      1 - damping s t A * γ ^ 2 < 1 := by
+  constructor
+  · apply residual_relative_contraction s t A (γ ^ 2)
+    intro w
+    exact observability_of_normed_realization s t A J encode γ hgap hinput houtput w
+  · exact residual_relative_factor_lt_one s t A (γ ^ 2) (sq_pos_of_pos hγ)
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
