@@ -37,9 +37,9 @@ import GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing.NormalizedBumpKe
 
 The kernel is a real, even, nonnegative smooth bump of integral one and support
 inside `[-ε, ε]`. It is convolved with the unchanged unnormalized `actualTest A`
-from RH-0010, equation (16). This supplies concrete smooth compact tests and
-pointwise approximation, not the still-required H¹ or logarithmic-norm
-convergence, smooth explicit formula, or dominated zero-side descent.
+from RH-0010, equation (16). These definitions and source proof candidates prepare smooth compact tests.
+Pointwise approximation, H¹ or logarithmic-norm convergence, the smooth
+explicit formula and dominated zero-side descent remain open.
 -/
 
 namespace GRWTSK.Analysis.RealAnalysis.Integration.SourceSmoothing
