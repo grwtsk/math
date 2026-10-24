@@ -18,17 +18,20 @@ PMD: 510.5.160.010 fixed point theory; editorial navigation only.
 The equivalence assumes the explicit blendEqLeftIff law; no scalar division,
 nonzero parameter, contractivity, convergence, rollback or runtime authority is inferred.
 Workflow admission/rollback/owner records from the source remain archive-only.
+The unavailable legacy PeriodicOrbit import is replaced by the exact archived
+fixed-point predicate in the canonical sibling supplier. The damping law, its
+explicit blendEqLeftIff premise and the equivalence proof are unchanged.
 Original source documentation describes the complete unsplit source context.
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import Mathematics.Stability.PeriodicOrbit
+import GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate
 
 /-! # Semantics-preserving damping -/
 
 namespace GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence
 
-open Mathematics.Stability (IsFixedPoint)
+open GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate (IsFixedPoint)
 
 /-!
 `blend_eq_left_iff` is the abstract nonzero-weight law corresponding to
