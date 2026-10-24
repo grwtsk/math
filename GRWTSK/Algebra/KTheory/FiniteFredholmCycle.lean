@@ -890,6 +890,73 @@ theorem finiteBlockSumMatrix_right_flat
     _ = Matrix.reindex (finiteBlockRightIndex m n k)
           (finiteBlockRightIndex m n k) triple := rfl
 
+/-- The two parenthesizations of three binary finite block sums agree
+after an explicitly constructed permutation of `Fin` indices. The
+proof uses the flat three-block identities and the actual sum
+associator, not equality merely of traces or ranks. -/
+theorem finiteBlockSumMatrix_assoc_reindex
+    {m n k : ℕ}
+    (P : Matrix (Fin m) (Fin m) ℂ)
+    (Q : Matrix (Fin n) (Fin n) ℂ)
+    (R : Matrix (Fin k) (Fin k) ℂ) :
+    Matrix.reindex (finiteBlockAssocIndex m n k)
+        (finiteBlockAssocIndex m n k)
+        (finiteBlockSumMatrix (finiteBlockSumMatrix P Q) R) =
+      finiteBlockSumMatrix P (finiteBlockSumMatrix Q R) := by
+  let eL := finiteBlockLeftIndex m n k
+  let eR := finiteBlockRightIndex m n k
+  let ea := Equiv.sumAssoc (Fin m) (Fin n) (Fin k)
+  let e := finiteBlockAssocIndex m n k
+  let left : Matrix ((Fin m ⊕ Fin n) ⊕ Fin k)
+      ((Fin m ⊕ Fin n) ⊕ Fin k) ℂ :=
+    Matrix.fromBlocks (Matrix.fromBlocks P 0 0 Q) 0 0 R
+  let right : Matrix (Fin m ⊕ (Fin n ⊕ Fin k))
+      (Fin m ⊕ (Fin n ⊕ Fin k)) ℂ :=
+    Matrix.fromBlocks P 0 0 (Matrix.fromBlocks Q 0 0 R)
+  have he : eL.trans e = ea.trans eR := by
+    ext x
+    simp [e, eL, eR, ea, finiteBlockAssocIndex, Equiv.trans_apply]
+  calc
+    Matrix.reindex e e
+        (finiteBlockSumMatrix (finiteBlockSumMatrix P Q) R) =
+      Matrix.reindex e e (Matrix.reindex eL eL left) := by
+        rw [finiteBlockSumMatrix_left_flat]
+    _ = Matrix.reindex (eL.trans e) (eL.trans e) left :=
+      matrix_reindex_comp eL e left
+    _ = Matrix.reindex (ea.trans eR) (ea.trans eR) left := by
+      rw [he]
+    _ = Matrix.reindex eR eR (Matrix.reindex ea ea left) :=
+      (matrix_reindex_comp ea eR left).symm
+    _ = Matrix.reindex eR eR right := by
+      rw [fromBlocks_assoc_reindex]
+    _ = finiteBlockSumMatrix P (finiteBlockSumMatrix Q R) :=
+      (finiteBlockSumMatrix_right_flat P Q R).symm
+
+/-- The explicit finite index reassociation induces a rectangular
+Murray–von Neumann correspondence between the two triple block sums.
+The proof uses the previous permutation-equivalence witness. -/
+theorem finiteBlockSum_assoc_mvNRel
+    {m n k : ℕ}
+    (P : FiniteStarProjection m)
+    (Q : FiniteStarProjection n)
+    (R : FiniteStarProjection k) :
+    MvNRel (finiteBlockSum (finiteBlockSum P Q) R)
+      (finiteBlockSum P (finiteBlockSum Q R)) := by
+  let e := finiteBlockAssocIndex m n k
+  have hval :
+      (reindexedFiniteProjection e
+        (finiteBlockSum (finiteBlockSum P Q) R)).val =
+          (finiteBlockSum P (finiteBlockSum Q R)).val := by
+    change Matrix.reindex e e
+      (finiteBlockSumMatrix (finiteBlockSumMatrix P.val Q.val) R.val) =
+        finiteBlockSumMatrix P.val (finiteBlockSumMatrix Q.val R.val)
+    exact finiteBlockSumMatrix_assoc_reindex P.val Q.val R.val
+  have hsub :
+      reindexedFiniteProjection e (finiteBlockSum (finiteBlockSum P Q) R) =
+        finiteBlockSum P (finiteBlockSum Q R) :=
+    Subtype.ext hval
+  exact hsub ▸ mvNRel_reindexed e (finiteBlockSum (finiteBlockSum P Q) R)
+
 /-! ## Zero projection and explicit rectangular identity witnesses -/
 
 /-- The unique zero-dimensional complex matrix is a star projection.
