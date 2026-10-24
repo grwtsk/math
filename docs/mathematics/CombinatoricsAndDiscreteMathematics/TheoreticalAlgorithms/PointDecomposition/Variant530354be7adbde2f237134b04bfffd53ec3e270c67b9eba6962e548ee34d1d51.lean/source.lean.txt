@@ -1,0 +1,93 @@
+import Mathematics.Concept.MathematicalPoint
+
+/-!
+# Lossless statement, proof, and definition decomposition
+
+Atomization exposes typed point roles while retaining exact source bytes.
+Reconstruction is the concatenation of the retained fragments, not a semantic
+summary or a model-generated paraphrase.
+-/
+
+namespace Mathematics.Concept
+
+inductive StatementRole
+  | object
+  | structure
+  | relation
+  | operation
+  | quantifier
+  | hypothesis
+  | conclusion
+  | scope
+  | authority
+  deriving DecidableEq, Repr, Inhabited
+
+inductive ProofRole
+  | input
+  | lemma
+  | transformation
+  | case_
+  | normalization
+  | rewrite
+  | witness
+  | closure
+  deriving DecidableEq, Repr, Inhabited
+
+inductive DefinitionRole
+  | genus
+  | constraint
+  | constructor
+  | eliminator
+  | equivalence
+  | representation
+  | boundary
+  deriving DecidableEq, Repr, Inhabited
+
+structure SourceFragment where
+  pointId : ElementId
+  sourceAddressId : StableId
+  ordinal : Nat
+  bytes : List UInt8
+  fragmentDigest : Digest
+  deriving DecidableEq, Repr
+
+structure LosslessPointDecomposition where
+  sourceAddressId : StableId
+  sourceBytes : List UInt8
+  fragments : List SourceFragment
+  fragments_nonempty : fragments ≠ []
+  source_round_trip :
+    fragments.flatMap SourceFragment.bytes = sourceBytes
+  decompositionDigest : Digest
+
+/-- A statement records the semantic role of every retained fragment. -/
+structure StatementDecomposition where
+  lossless : LosslessPointDecomposition
+  roles : List (ElementId × StatementRole)
+  roleCoverage :
+    ∀ fragment ∈ lossless.fragments,
+      ∃ role, (fragment.pointId, role) ∈ roles
+
+/-- A proof records inputs, transformations, cases, witnesses, and closure. -/
+structure ProofDecomposition where
+  lossless : LosslessPointDecomposition
+  roles : List (ElementId × ProofRole)
+  roleCoverage :
+    ∀ fragment ∈ lossless.fragments,
+      ∃ role, (fragment.pointId, role) ∈ roles
+
+/-- A definition records genus, constraints, interfaces, and boundaries. -/
+structure DefinitionDecomposition where
+  lossless : LosslessPointDecomposition
+  roles : List (ElementId × DefinitionRole)
+  roleCoverage :
+    ∀ fragment ∈ lossless.fragments,
+      ∃ role, (fragment.pointId, role) ∈ roles
+
+theorem LosslessPointDecomposition.reconstructs_source
+    (decomposition : LosslessPointDecomposition) :
+    decomposition.fragments.flatMap SourceFragment.bytes =
+      decomposition.sourceBytes :=
+  decomposition.source_round_trip
+
+end Mathematics.Concept

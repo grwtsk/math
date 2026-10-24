@@ -1,0 +1,186 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.FinBoolAlgCat.Variant35659b9ab89f792ce9ff60358b3d8699a79b264ccbd70f31b83792b3bc41a837
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7d37861ab7d0282841174daddcea6b589eeed436` · SHA-256 `60735932871e69f8fe02f4a9d0ff390cc33a1f0b0f49df7e65dfda9c3be5ee5e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.FinBoolAlgCat.Variantbc6cbac01bf28a5a9f8b357bf90d7ebbb098365eaad655189c56bfc95d870452","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bc6cbac01bf28a5a9f8b357bf90d7ebbb098365eaad655189c56bfc95d870452","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.OrderTheory.SourceCorpus.FinBoolAlgCat.Variantbc6cbac01bf28a5a9f8b357bf90d7ebbb098365eaad655189c56bfc95d870452","mathematical_subject":"Algebra.OrderTheory","original_sha256":"bc6cbac01bf28a5a9f8b357bf90d7ebbb098365eaad655189c56bfc95d870452","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Order/Category/FinBoolAlgCat.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+import Mathlib.Data.Fintype.Powerset
+import Mathlib.Order.Category.BoolAlgCat
+import Mathlib.Order.Category.FinBddDistLatCat
+import Mathlib.Order.Hom.CompleteLattice
+import Mathlib.Tactic.ApplyFun
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.FinBoolAlgCat.Variantbc6cbac01bf28a5a9f8b357bf90d7ebbb098365eaad655189c56bfc95d870452
+
+#align_import order.category.FinBoolAlg from "leanprover-community/mathlib"@"937b1c59c58710ef8ed91f8727ef402d49d621a2"
+
+/-!
+# The category of finite boolean algebras
+
+This file defines `FinBoolAlgCat`, the category of finite boolean algebras.
+
+## TODO
+
+Birkhoff's representation for finite Boolean algebras.
+
+```
+FintypeCat_to_FinBoolAlgCat_op.left_op ⋙ FinBoolAlgCat.dual ≅
+FintypeCat_to_FinBoolAlgCat_op.left_op
+```
+
+`FinBoolAlgCat` is essentially small.
+-/
+
+set_option linter.uppercaseLean3 false
+
+universe u
+
+open CategoryTheory OrderDual Opposite
+
+/-- The category of finite boolean algebras with bounded lattice morphisms. -/
+structure FinBoolAlgCat where
+  toBoolAlgCat : BoolAlgCat
+  [isFintype : Fintype toBoolAlgCat]
+#align FinBoolAlg FinBoolAlgCat
+
+namespace FinBoolAlgCat
+
+instance : CoeSort FinBoolAlgCat (Type*) :=
+  ⟨fun X => X.toBoolAlgCat⟩
+
+instance (X : FinBoolAlgCat) : BooleanAlgebra X :=
+  X.toBoolAlgCat.str
+
+attribute [instance] FinBoolAlgCat.isFintype
+
+-- Porting note: linter says this is a syntactic tautology now
+-- @[simp]
+-- theorem coe_toBoolAlgCat (X : FinBoolAlgCat) : ↥X.toBoolAlgCat = ↥X :=
+--   rfl
+-- #align FinBoolAlg.coe_to_BoolAlg FinBoolAlgCat.coe_toBoolAlgCat
+#noalign FinBoolAlg.coe_to_BoolAlg
+
+/-- Construct a bundled `FinBoolAlgCat` from `BooleanAlgebra` + `Fintype`. -/
+def of (α : Type*) [BooleanAlgebra α] [Fintype α] : FinBoolAlgCat :=
+  ⟨{α := α}⟩
+#align FinBoolAlg.of FinBoolAlgCat.of
+
+@[simp]
+theorem coe_of (α : Type*) [BooleanAlgebra α] [Fintype α] : ↥(of α) = α :=
+  rfl
+#align FinBoolAlg.coe_of FinBoolAlgCat.coe_of
+
+instance : Inhabited FinBoolAlgCat :=
+  ⟨of PUnit⟩
+
+instance largeCategory : LargeCategory FinBoolAlgCat :=
+  InducedCategory.category FinBoolAlgCat.toBoolAlgCat
+#align FinBoolAlg.large_category FinBoolAlgCat.largeCategory
+
+instance concreteCategory : ConcreteCategory FinBoolAlgCat :=
+  InducedCategory.concreteCategory FinBoolAlgCat.toBoolAlgCat
+#align FinBoolAlg.concrete_category FinBoolAlgCat.concreteCategory
+
+-- Porting note: added
+-- TODO: in all of the earlier bundled order categories,
+-- we should be constructing instances analogous to this,
+-- rather than directly coercions to functions.
+instance instBoundedLatticeHomClass {X Y : FinBoolAlgCat} : BoundedLatticeHomClass (X ⟶ Y) X Y :=
+  BoundedLatticeHom.instBoundedLatticeHomClass
+
+instance hasForgetToBoolAlg : HasForget₂ FinBoolAlgCat BoolAlgCat :=
+  InducedCategory.hasForget₂ FinBoolAlgCat.toBoolAlgCat
+#align FinBoolAlg.has_forget_to_BoolAlg FinBoolAlgCat.hasForgetToBoolAlg
+
+instance hasForgetToFinBddDistLat : HasForget₂ FinBoolAlgCat FinBddDistLatCat where
+  forget₂ :=
+    { obj := fun X => FinBddDistLatCat.of X
+      map := fun {X Y} f => f }
+  forget_comp := rfl
+#align FinBoolAlg.has_forget_to_FinBddDistLat FinBoolAlgCat.hasForgetToFinBddDistLat
+
+instance forgetToBoolAlgFull : Full (forget₂ FinBoolAlgCat BoolAlgCat) :=
+  InducedCategory.full _
+#align FinBoolAlg.forget_to_BoolAlg_full FinBoolAlgCat.forgetToBoolAlgFull
+
+instance forgetToBoolAlgFaithful : Faithful (forget₂ FinBoolAlgCat BoolAlgCat) :=
+  InducedCategory.faithful _
+#align FinBoolAlg.forget_to_BoolAlg_faithful FinBoolAlgCat.forgetToBoolAlgFaithful
+
+@[simps]
+instance hasForgetToFinPartOrd : HasForget₂ FinBoolAlgCat FinPartOrd
+    where forget₂ :=
+    { obj := fun X => FinPartOrd.of X
+      map := fun {X Y} f => show OrderHom X Y from ↑(show BoundedLatticeHom X Y from f) }
+#align FinBoolAlg.has_forget_to_FinPartOrd FinBoolAlgCat.hasForgetToFinPartOrd
+
+instance forgetToFinPartOrdFaithful : Faithful (forget₂ FinBoolAlgCat FinPartOrd) :=
+  -- Porting note: original code
+  -- ⟨fun {X Y} f g h =>
+  --   haveI := congr_arg (coeFn : _ → X → Y) h
+  --   FunLike.coe_injective this⟩
+  -- Porting note: the coercions to functions for the various bundled order categories
+  -- are quite inconsistent. We need to go back through and make all these files uniform.
+  ⟨fun {X Y} f g h => by
+    dsimp at *
+    apply FunLike.coe_injective
+    dsimp
+    ext x
+    apply_fun (fun f => f x) at h
+    exact h ⟩
+#align FinBoolAlg.forget_to_FinPartOrd_faithful FinBoolAlgCat.forgetToFinPartOrdFaithful
+
+/-- Constructs an equivalence between finite Boolean algebras from an order isomorphism between
+them. -/
+@[simps]
+def Iso.mk {α β : FinBoolAlgCat.{u}} (e : α ≃o β) : α ≅ β where
+  hom := (e : BoundedLatticeHom α β)
+  inv := (e.symm : BoundedLatticeHom β α)
+  hom_inv_id := by ext; exact e.symm_apply_apply _
+  inv_hom_id := by ext; exact e.apply_symm_apply _
+#align FinBoolAlg.iso.mk FinBoolAlgCat.Iso.mk
+
+/-- `OrderDual` as a functor. -/
+@[simps]
+def dual : FinBoolAlgCat ⥤ FinBoolAlgCat where
+  obj X := of Xᵒᵈ
+  map {X Y} := BoundedLatticeHom.dual
+#align FinBoolAlg.dual FinBoolAlgCat.dual
+
+/-- The equivalence between `FinBoolAlgCat` and itself induced by `OrderDual` both ways. -/
+@[simps functor inverse]
+def dualEquiv : FinBoolAlgCat ≌ FinBoolAlgCat where
+  functor := dual
+  inverse := dual
+  unitIso := NatIso.ofComponents fun X => Iso.mk <| OrderIso.dualDual X
+  counitIso := NatIso.ofComponents fun X => Iso.mk <| OrderIso.dualDual X
+#align FinBoolAlg.dual_equiv FinBoolAlgCat.dualEquiv
+
+end FinBoolAlgCat
+
+theorem finBoolAlgCat_dual_comp_forget_to_finBddDistLatCat :
+    FinBoolAlgCat.dual ⋙ forget₂ FinBoolAlgCat FinBddDistLatCat =
+      forget₂ FinBoolAlgCat FinBddDistLatCat ⋙ FinBddDistLatCat.dual :=
+  rfl
+#align FinBoolAlg_dual_comp_forget_to_FinBddDistLat finBoolAlgCat_dual_comp_forget_to_finBddDistLatCat
+
+/-- The powerset functor. `Set` as a functor. -/
+@[simps]
+def fintypeToFinBoolAlgCatOp : FintypeCat ⥤ FinBoolAlgCatᵒᵖ where
+  obj X := op <| FinBoolAlgCat.of (Set X)
+  map {X Y} f :=
+    Quiver.Hom.op <| (CompleteLatticeHom.setPreimage f : BoundedLatticeHom (Set Y) (Set X))
+#align Fintype_to_FinBoolAlg_op fintypeToFinBoolAlgCatOp
+````

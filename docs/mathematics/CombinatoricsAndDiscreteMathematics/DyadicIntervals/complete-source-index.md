@@ -1,0 +1,15 @@
+# DyadicIntervals — complete source
+
+[Complete source index](../../complete-source-index.md)
+
+**2 source modules · 46 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variantb2efc11456cb33b118c80e84039547a9f963275bd2f6fce1dec7c2c6a5610993.lean](Variantb2efc11456cb33b118c80e84039547a9f963275bd2f6fce1dec7c2c6a5610993.lean/index.md) | module |
+| [Variantf1421f1d3583e62a84ec4aeb4ae287bd79b7297629f0bdfee1eb471a76883fbd.lean](Variantf1421f1d3583e62a84ec4aeb4ae287bd79b7297629f0bdfee1eb471a76883fbd.lean/index.md) | module |

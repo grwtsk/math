@@ -1,0 +1,116 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Multiset.Variant655fdcd1b2486c7574c46f620cfa16af51e3ecacb4eacebadef54ebce9a6f3f0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `00ef6f5522fde72efbe8160975c64b17ab6bfc0c` · SHA-256 `b12a52037dc0e5587cbf1af2d5cbc1b28b9ab53bd8fcc51dbbecbe30881f8be3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Enle.Variant331fc6fd941f936243b414ff4eef335e1a04de008933573d928d0e040668d4c2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"331fc6fd941f936243b414ff4eef335e1a04de008933573d928d0e040668d4c2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.Enle.Variant331fc6fd941f936243b414ff4eef335e1a04de008933573d928d0e040668d4c2","mathematical_subject":"Computation.DataStructures","original_sha256":"331fc6fd941f936243b414ff4eef335e1a04de008933573d928d0e040668d4c2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Logic/Equiv/Multiset.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Mario Carneiro. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mario Carneiro
+-/
+import Mathlib.Data.List.Chain
+import Mathlib.Data.Multiset.Sort
+import Mathlib.Logic.Equiv.List
+
+/-!
+# `Encodable` and `Denumerable` instances for `Multiset`
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Enle.Variant331fc6fd941f936243b414ff4eef335e1a04de008933573d928d0e040668d4c2
+
+variable {α : Type*}
+
+open Encodable
+
+section Finset
+
+variable [Encodable α]
+
+private def enle : α → α → Prop :=
+  encode ⁻¹'o (· ≤ ·)
+
+private theorem enle.isLinearOrder : IsLinearOrder α enle :=
+  (RelEmbedding.preimage ⟨encode, encode_injective⟩ (· ≤ ·)).isLinearOrder
+
+private def decidable_enle (a b : α) : Decidable (enle a b) := by
+  unfold enle Order.Preimage
+  infer_instance
+
+attribute [local instance] enle.isLinearOrder decidable_enle
+
+/-- Explicit encoding function for `Multiset α` -/
+def encodeMultiset (s : Multiset α) : ℕ :=
+  encode (s.sort enle)
+
+/-- Explicit decoding function for `Multiset α` -/
+def decodeMultiset (n : ℕ) : Option (Multiset α) :=
+  ((↑) : List α → Multiset α) <$> decode (α := List α) n
+
+/-- If `α` is encodable, then so is `Multiset α`. -/
+instance _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Enle.Variant331fc6fd941f936243b414ff4eef335e1a04de008933573d928d0e040668d4c2.Multiset.encodable : Encodable (Multiset α) :=
+  ⟨encodeMultiset, decodeMultiset, fun s => by simp [encodeMultiset, decodeMultiset, encodek]⟩
+
+end Finset
+
+namespace Denumerable
+variable [Denumerable α]
+
+section Multiset
+
+/-- Outputs the list of differences of the input list, that is
+`lower [a₁, a₂, ...] n = [a₁ - n, a₂ - a₁, ...]` -/
+def lower : List ℕ → ℕ → List ℕ
+  | [], _ => []
+  | m :: l, n => (m - n) :: lower l m
+
+/-- Outputs the list of partial sums of the input list, that is
+`raise [a₁, a₂, ...] n = [n + a₁, n + a₁ + a₂, ...]` -/
+def raise : List ℕ → ℕ → List ℕ
+  | [], _ => []
+  | m :: l, n => (m + n) :: raise l (m + n)
+
+theorem lower_raise : ∀ l n, lower (raise l n) n = l
+  | [], _ => rfl
+  | m :: l, n => by rw [raise, lower, Nat.add_sub_cancel_right, lower_raise l]
+
+theorem raise_lower : ∀ {l n}, List.Sorted (· ≤ ·) (n :: l) → raise (lower l n) n = l
+  | [], _, _ => rfl
+  | m :: l, n, h => by
+    have : n ≤ m := List.rel_of_sorted_cons h _ List.mem_cons_self
+    simp [raise, lower, Nat.sub_add_cancel this, raise_lower h.of_cons]
+
+theorem raise_chain : ∀ l n, List.Chain (· ≤ ·) n (raise l n)
+  | [], _ => List.Chain.nil
+  | _ :: _, _ => List.Chain.cons (Nat.le_add_left _ _) (raise_chain _ _)
+
+/-- `raise l n` is a non-decreasing sequence. -/
+theorem raise_sorted : ∀ l n, List.Sorted (· ≤ ·) (raise l n)
+  | [], _ => List.sorted_nil
+  | _ :: _, _ => List.chain_iff_pairwise.1 (raise_chain _ _)
+
+/-- If `α` is denumerable, then so is `Multiset α`. Warning: this is *not* the same encoding as used
+in `Multiset.encodable`. -/
+instance multiset : Denumerable (Multiset α) :=
+  mk'
+    ⟨fun s : Multiset α => encode <| lower ((s.map encode).sort (· ≤ ·)) 0,
+     fun n =>
+      Multiset.map (ofNat α) (raise (ofNat (List ℕ) n) 0),
+     fun s => by
+      have :=
+        raise_lower (List.sorted_cons.2 ⟨fun n _ => Nat.zero_le n, (s.map encode).sort_sorted _⟩)
+      simp [-Multiset.map_coe, this],
+     fun n => by
+      simp [-Multiset.map_coe, List.mergeSort_eq_self _ (raise_sorted _ _), lower_raise]⟩
+
+end Multiset
+
+end Denumerable
+```

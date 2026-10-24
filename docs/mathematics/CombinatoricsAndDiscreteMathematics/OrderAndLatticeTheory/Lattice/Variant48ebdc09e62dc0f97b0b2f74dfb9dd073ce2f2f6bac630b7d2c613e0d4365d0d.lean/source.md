@@ -1,0 +1,98 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.Lattice.Variant48ebdc09e62dc0f97b0b2f74dfb9dd073ce2f2f6bac630b7d2c613e0d4365d0d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `758e7423fc14818d9861d69fbbc5783ac200fba6` · SHA-256 `2853a623934c3a5d1af8e9b4a8eda13e825d12613eec7bc25558cda49fe93000`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.Tropical.Varianteeddb0ca99461126ce9ff7373878a3d3fbfba50217b2908a8b27d9a02475aea4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"eeddb0ca99461126ce9ff7373878a3d3fbfba50217b2908a8b27d9a02475aea4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.OrderTheory.SourceCorpus.Tropical.Varianteeddb0ca99461126ce9ff7373878a3d3fbfba50217b2908a8b27d9a02475aea4","mathematical_subject":"Algebra.OrderTheory","original_sha256":"eeddb0ca99461126ce9ff7373878a3d3fbfba50217b2908a8b27d9a02475aea4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Tropical/Lattice.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Yakov Pechersky. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yakov Pechersky
+-/
+import Mathlib.Algebra.Tropical.Basic
+import Mathlib.Order.ConditionallyCompleteLattice.Basic
+
+/-!
+
+# Order on tropical algebraic structure
+
+This file defines the orders induced on tropical algebraic structures by the underlying type.
+
+## Main declarations
+
+* `ConditionallyCompleteLattice (Tropical R)`
+* `ConditionallyCompleteLinearOrder (Tropical R)`
+
+## Implementation notes
+
+The order induced is the definitionally equal underlying order, which makes the proofs and
+constructions quicker to implement.
+
+-/
+
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.Tropical.Varianteeddb0ca99461126ce9ff7373878a3d3fbfba50217b2908a8b27d9a02475aea4
+
+variable {R S : Type*}
+
+open Tropical
+
+instance instSemilatticeInfTropical [SemilatticeInf R] : SemilatticeInf (Tropical R) :=
+  { Tropical.instPartialOrderTropical with
+    inf := fun x y ↦ trop (untrop x ⊓ untrop y)
+    le_inf := fun _ _ _ ↦ @SemilatticeInf.le_inf R _ _ _ _
+    inf_le_left := fun _ _ ↦ inf_le_left
+    inf_le_right := fun _ _ ↦ inf_le_right }
+
+instance instSemilatticeSupTropical [SemilatticeSup R] : SemilatticeSup (Tropical R) :=
+  { Tropical.instPartialOrderTropical with
+    sup := fun x y ↦ trop (untrop x ⊔ untrop y)
+    sup_le := fun _ _ _ ↦ @SemilatticeSup.sup_le R _ _ _ _
+    le_sup_left := fun _ _ ↦ le_sup_left
+    le_sup_right := fun _ _ ↦ le_sup_right }
+
+instance instLatticeTropical [Lattice R] : Lattice (Tropical R) :=
+  { instSemilatticeInfTropical, instSemilatticeSupTropical with }
+
+instance [SupSet R] : SupSet (Tropical R) where sSup s := trop (sSup (untrop '' s))
+
+instance [InfSet R] : InfSet (Tropical R) where sInf s := trop (sInf (untrop '' s))
+
+instance instConditionallyCompleteLatticeTropical [ConditionallyCompleteLattice R] :
+    ConditionallyCompleteLattice (Tropical R) :=
+  { instLatticeTropical with
+    le_csSup := fun _s _x hs hx ↦
+      le_csSup (untrop_monotone.map_bddAbove hs) (Set.mem_image_of_mem untrop hx)
+    csSup_le := fun _s _x hs hx ↦
+      csSup_le (hs.image untrop) (untrop_monotone.mem_upperBounds_image hx)
+    le_csInf := fun _s _x hs hx ↦
+      le_csInf (hs.image untrop) (untrop_monotone.mem_lowerBounds_image hx)
+    csInf_le := fun _s _x hs hx ↦
+      csInf_le (untrop_monotone.map_bddBelow hs) (Set.mem_image_of_mem untrop hx) }
+
+instance [ConditionallyCompleteLinearOrder R] : ConditionallyCompleteLinearOrder (Tropical R) :=
+  { instConditionallyCompleteLatticeTropical, Tropical.instLinearOrderTropical with
+    csSup_of_not_bddAbove := by
+      intro s hs
+      have : Set.range untrop = (Set.univ : Set R) := Equiv.range_eq_univ tropEquiv.symm
+      simp only [sSup, Set.image_empty, trop_inj_iff]
+      apply csSup_of_not_bddAbove
+      contrapose! hs
+      change BddAbove (tropOrderIso.symm '' s) at hs
+      exact tropOrderIso.symm.bddAbove_image.1 hs
+    csInf_of_not_bddBelow := by
+      intro s hs
+      have : Set.range untrop = (Set.univ : Set R) := Equiv.range_eq_univ tropEquiv.symm
+      simp only [sInf, Set.image_empty, trop_inj_iff]
+      apply csInf_of_not_bddBelow
+      contrapose! hs
+      change BddBelow (tropOrderIso.symm '' s) at hs
+      exact tropOrderIso.symm.bddBelow_image.1 hs }
+```

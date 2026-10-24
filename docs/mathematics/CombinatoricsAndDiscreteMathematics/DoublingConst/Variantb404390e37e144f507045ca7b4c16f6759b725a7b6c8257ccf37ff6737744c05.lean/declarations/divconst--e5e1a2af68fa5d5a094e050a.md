@@ -1,0 +1,110 @@
+# divConst
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f414d94948df13677430df4cc9a1ab3e45ab5bb84221b8792b0c2ca764abe02b",
+  "kind": "def",
+  "lexical_name": "divConst",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "divconst--e5e1a2af68fa5d5a094e050a",
+  "source": {
+    "blob": "08b34daa6b3d75843e0179be0dfe24644b81d0bd",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 78,
+    "line": 50,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/DoublingConst/Variantb404390e37e144f507045ca7b4c16f6759b725a7b6c8257ccf37ff6737744c05.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:e5e1a2af68fa5d5a094e050aed1b11e97b7d4cfa3c67117d81b384dac5f8cfb0",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/DoublingConst/Variantb404390e37e144f507045ca7b4c16f6759b725a7b6c8257ccf37ff6737744c05.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f414d94948df13677430df4cc9a1ab3e45ab5bb84221b8792b0c2ca764abe02b`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 50–78.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def divConst (A B : Finset G) : ℚ≥0 := #(A / B) / #A
+
+/-- The doubling constant `σₘ[A, B]` of two finsets `A` and `B` in a group is `|A * B| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "σₘ[" A ", " B "]" => Finset.mulConst A B
+
+/-- The doubling constant `σₘ[A]` of a finset `A` in a group is `|A * A| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "σₘ[" A "]" => Finset.mulConst A A
+
+/-- The doubling constant `σ[A, B]` of two finsets `A` and `B` in a group is `|A + B| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "σ[" A ", " B "]" => Finset.addConst A B
+
+/-- The doubling constant `σ[A]` of a finset `A` in a group is `|A + A| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "σ[" A "]" => Finset.addConst A A
+
+/-- The difference constant `σₘ[A, B]` of two finsets `A` and `B` in a group is `|A / B| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "δₘ[" A ", " B "]" => Finset.divConst A B
+
+/-- The difference constant `σₘ[A]` of a finset `A` in a group is `|A / A| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "δₘ[" A "]" => Finset.divConst A A
+
+/-- The difference constant `σ[A, B]` of two finsets `A` and `B` in a group is `|A - B| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "δ[" A ", " B "]" => Finset.subConst A B
+
+/-- The difference constant `σ[A]` of a finset `A` in a group is `|A - A| / |A|`. -/
+scoped[Combinatorics.Additive] notation3:max "δ[" A "]" => Finset.subConst A A
+
+open scoped Combinatorics.Additive
+
+@[to_additive (attr := simp) addConst_mul_card]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/DoublingConst/Variantb404390e37e144f507045ca7b4c16f6759b725a7b6c8257ccf37ff6737744c05.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/DoublingConst/Variantb404390e37e144f507045ca7b4c16f6759b725a7b6c8257ccf37ff6737744c05.lean#L50).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `08b34daa6b3d75843e0179be0dfe24644b81d0bd` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

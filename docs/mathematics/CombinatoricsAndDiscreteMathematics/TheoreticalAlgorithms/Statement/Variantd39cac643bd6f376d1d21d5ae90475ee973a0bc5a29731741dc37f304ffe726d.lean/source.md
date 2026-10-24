@@ -1,0 +1,123 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Statement.Variantd39cac643bd6f376d1d21d5ae90475ee973a0bc5a29731741dc37f304ffe726d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `17c87aa0abce92ab092e2f65a26197dcdf52e329` · SHA-256 `6c65362281395cf8405d7f4b07cc330ce4b419f10cc8f3da36e240c9c8d9f4ed`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IfExpr.Variant8523224d6aae1ffa35b46b5256c7ee7260a33f4896852bb8735314370d3c196a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8523224d6aae1ffa35b46b5256c7ee7260a33f4896852bb8735314370d3c196a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.IfExpr.Variant8523224d6aae1ffa35b46b5256c7ee7260a33f4896852bb8735314370d3c196a","mathematical_subject":"Computation.DataStructures","original_sha256":"8523224d6aae1ffa35b46b5256c7ee7260a33f4896852bb8735314370d3c196a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Archive/Examples/IfNormalization/Statement.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Lean FRO LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kim Morrison
+-/
+
+/-!
+# If normalization
+
+Rustan Leino, Stephan Merz, and Natarajan Shankar have recently been discussing challenge problems
+to compare proof assistants.
+(See https://leanprover.zulipchat.com/#narrow/stream/113488-general/topic/Rustan's.20challenge)
+
+Their first suggestion was "if-normalization".
+
+This file contains a Lean formulation of the problem. See `Result.lean` for a Lean solution.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IfExpr.Variant8523224d6aae1ffa35b46b5256c7ee7260a33f4896852bb8735314370d3c196a
+
+/-- An if-expression is either boolean literal, a numbered variable,
+or an if-then-else expression where each subexpression is an if-expression. -/
+inductive IfExpr
+  | lit : Bool → IfExpr
+  | var : Nat → IfExpr
+  | ite : IfExpr → IfExpr → IfExpr → IfExpr
+deriving DecidableEq, Repr
+
+namespace IfExpr
+
+/--
+An if-expression has a "nested if" if it contains
+an if-then-else where the "if" is itself an if-then-else.
+-/
+def hasNestedIf : IfExpr → Bool
+  | lit _ => false
+  | var _ => false
+  | ite (ite _ _ _) _ _ => true
+  | ite _ t e => t.hasNestedIf || e.hasNestedIf
+
+/--
+An if-expression has a "constant if" if it contains
+an if-then-else where the "if" is itself a literal.
+-/
+def hasConstantIf : IfExpr → Bool
+  | lit _ => false
+  | var _ => false
+  | ite (lit _) _ _ => true
+  | ite i t e => i.hasConstantIf || t.hasConstantIf || e.hasConstantIf
+
+/--
+An if-expression has a "redundant if" if it contains
+an if-then-else where the then and else clauses are identical.
+-/
+def hasRedundantIf : IfExpr → Bool
+  | lit _ => false
+  | var _ => false
+  | ite i t e => t == e || i.hasRedundantIf || t.hasRedundantIf || e.hasRedundantIf
+
+/--
+All the variables appearing in an if-expressions, read left to right, without removing duplicates.
+-/
+def vars : IfExpr → List Nat
+  | lit _ => []
+  | var i => [i]
+  | ite i t e => i.vars ++ t.vars ++ e.vars
+
+/--
+A helper function to specify that two lists are disjoint.
+-/
+def _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IfExpr.Variant8523224d6aae1ffa35b46b5256c7ee7260a33f4896852bb8735314370d3c196a.List.disjoint {α} [DecidableEq α] : List α → List α → Bool
+  | [], _ => true
+  | x::xs, ys => x ∉ ys && xs.disjoint ys
+
+/--
+An if expression evaluates each variable at most once if for each if-then-else
+the variables in the if clause are disjoint from the variables in the then clause, and
+the variables in the if clause are disjoint from the variables in the else clause.
+-/
+def disjoint : IfExpr → Bool
+  | lit _ => true
+  | var _ => true
+  | ite i t e =>
+      i.vars.disjoint t.vars && i.vars.disjoint e.vars && i.disjoint && t.disjoint && e.disjoint
+
+/--
+An if expression is "normalized" if it has not nested, constant, or redundant ifs,
+and it evaluates each variable at most once.
+-/
+def normalized (e : IfExpr) : Bool :=
+  !e.hasNestedIf && !e.hasConstantIf && !e.hasRedundantIf && e.disjoint
+
+/--
+The evaluation of an if expression at some assignment of variables.
+-/
+def eval (f : Nat → Bool) : IfExpr → Bool
+  | lit b => b
+  | var i => f i
+  | ite i t e => bif i.eval f then t.eval f else e.eval f
+
+end IfExpr
+
+/--
+This is the statement of the if normalization problem.
+
+We require a function from that transforms if expressions to normalized if expressions,
+preserving all evaluations.
+-/
+def IfNormalization : Type := { Z : IfExpr → IfExpr // ∀ e, (Z e).normalized ∧ (Z e).eval = e.eval }
+```

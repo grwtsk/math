@@ -1,0 +1,136 @@
+# matchRings
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:08240d1f78fc3ec2f503d739f0dd9aef5db2c652b74dd5d6ec3ccb9025cd96f0",
+  "kind": "def",
+  "lexical_name": "matchRings",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "matchrings--a0c151b58249d7421e35bcd6",
+  "source": {
+    "blob": "43836e28bca10b34099d788c97d2f1ae074d6a6d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 417,
+    "line": 363,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Module/Variantd8cff84370dd580cc8d282816735fb255f42a1f0ca8ec3ded2985bd979a152f7.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a0c151b58249d7421e35bcd60c875749355185506a8577a89444d7b326dc37ee",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Module/Variantd8cff84370dd580cc8d282816735fb255f42a1f0ca8ec3ded2985bd979a152f7.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:08240d1f78fc3ec2f503d739f0dd9aef5db2c652b74dd5d6ec3ccb9025cd96f0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 363–417.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def matchRings (l₁ : qNF R₁ M) (l₂ : qNF R₂ M) (r : Q($R₂)) (x : Q($M)) :
+    MetaM <| Σ u : Level, Σ R : Q(Type u), Σ iR : Q(Semiring $R), Σ _ : Q(@Module $R $M $iR $iM),
+      (Σ l₁' : qNF R M, Q(NF.eval $(l₁'.toNF) = NF.eval $(l₁.toNF)))
+      × (Σ l₂' : qNF R M, Q(NF.eval $(l₂'.toNF) = NF.eval $(l₂.toNF)))
+      × (Σ r' : Q($R), Q($r' • $x = $r • $x)) := do
+  if ← withReducible <| isDefEq R₁ R₂ then
+  -- the case when `R₁ = R₂` is handled separately, so as not to require commutativity of that ring
+    pure ⟨u₁, R₁, iR₁, iRM₁, ⟨l₁, q(rfl)⟩, ⟨l₂, (q(@rfl _ (NF.eval $(l₂.toNF))):)⟩,
+      r, (q(@rfl _ ($r • $x)):)⟩
+  -- otherwise the "smaller" of the two rings must be commutative
+  else try
+    -- first try to exhibit `R₂` as an `R₁`-algebra
+    let _i₁ ← synthInstanceQ q(CommSemiring $R₁)
+    let _i₃ ← synthInstanceQ q(Algebra $R₁ $R₂)
+    let _i₄ ← synthInstanceQ q(IsScalarTower $R₁ $R₂ $M)
+    assumeInstancesCommute
+    let l₁' : qNF R₂ M := l₁.onScalar q(algebraMap $R₁ $R₂)
+    pure ⟨u₂, R₂, iR₂, iRM₂, ⟨l₁', (q(NF.eval_algebraMap $R₂ $(l₁.toNF)):)⟩, ⟨l₂, q(rfl)⟩,
+      r, q(rfl)⟩
+  catch _ => try
+    -- then if that fails, try to exhibit `R₁` as an `R₂`-algebra
+    let _i₁ ← synthInstanceQ q(CommSemiring $R₂)
+    let _i₃ ← synthInstanceQ q(Algebra $R₂ $R₁)
+    let _i₄ ← synthInstanceQ q(IsScalarTower $R₂ $R₁ $M)
+    assumeInstancesCommute
+    let l₂' : qNF R₁ M := l₂.onScalar q(algebraMap $R₂ $R₁)
+    let r' : Q($R₁) := q(algebraMap $R₂ $R₁ $r)
+    pure ⟨u₁, R₁, iR₁, iRM₁, ⟨l₁, q(rfl)⟩, ⟨l₂', (q(NF.eval_algebraMap $R₁ $(l₂.toNF)):)⟩,
+      r', (q(IsScalarTower.algebraMap_smul $R₁ $r $x):)⟩
+  catch _ =>
+    throwError "match_scalars failed: {R₁} is not an {R₂}-algebra and {R₂} is not an {R₁}-algebra"
+
+end qNF
+
+/-! ### Core of the `module` tactic -/
+
+variable {M : Q(Type v)}
+
+/-- The main algorithm behind the `match_scalars` and `module` tactics: partially-normalizing an
+expression in an additive commutative monoid `M` into the form c1 • x1 + c2 • x2 + ... c_k • x_k,
+where x1, x2, ... are distinct atoms in `M`, and c1, c2, ... are scalars. The scalar type of the
+expression is not pre-determined: instead it starts as `ℕ` (when each atom is initially given a
+scalar `(1:ℕ)`) and gets bumped up into bigger semirings when such semirings are encountered.
+
+It is assumed that there is a "linear order" on all the semirings which appear in the expression:
+for any two semirings `R` and `S` which occur, we have either `Algebra R S` or `Algebra S R`).
+
+TODO: implement a variant in which a semiring `R` is provided by the user, and the assumption is
+instead that for any semiring `S` which occurs, we have `Algebra S R`. The PR https://github.com/leanprover-community/mathlib4/pull/16984 provides a
+proof-of-concept implementation of this variant, but it would need some polishing before joining
+Mathlib.
+
+Possible TODO, if poor performance on large problems is witnessed: switch the implementation from
+`AtomM` to `CanonM`, per the discussion
+https://github.com/leanprover-community/mathlib4/pull/16593/files#r1749623191 -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Module/Variantd8cff84370dd580cc8d282816735fb255f42a1f0ca8ec3ded2985bd979a152f7.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Module/Variantd8cff84370dd580cc8d282816735fb255f42a1f0ca8ec3ded2985bd979a152f7.lean#L363).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `43836e28bca10b34099d788c97d2f1ae074d6a6d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

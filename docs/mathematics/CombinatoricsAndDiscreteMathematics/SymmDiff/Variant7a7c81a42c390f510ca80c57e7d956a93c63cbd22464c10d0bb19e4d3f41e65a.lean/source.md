@@ -1,0 +1,73 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.SymmDiff.Variant7a7c81a42c390f510ca80c57e7d956a93c63cbd22464c10d0bb19e4d3f41e65a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7dd78c2d46187c895e5e1c00f9b967a4e457a1a2` · SHA-256 `1e1f0c34316881b29a2467c3b4b444d55b03bc821717eddf0a8979270a614a14`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.MemSymmDiff.Variant61183d39707f9812f338912e5df932f835d93e7744246c2e300a897ae15c6e63","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"61183d39707f9812f338912e5df932f835d93e7744246c2e300a897ae15c6e63","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.MemSymmDiff.Variant61183d39707f9812f338912e5df932f835d93e7744246c2e300a897ae15c6e63","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"61183d39707f9812f338912e5df932f835d93e7744246c2e300a897ae15c6e63","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/Finset/SymmDiff.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2015 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura, Jeremy Avigad, Minchao Wu, Mario Carneiro
+-/
+import Mathlib.Data.Finset.Image
+import Mathlib.Data.Set.SymmDiff
+
+/-!
+# Symmetric difference of finite sets
+
+This file concerns the symmetric difference operator `s Δ t` on finite sets.
+
+## Tags
+
+finite sets, finset
+
+-/
+
+-- Assert that we define `Finset` without the material on `List.sublists`.
+-- Note that we cannot use `List.sublists` itself as that is defined very early.
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.MemSymmDiff.Variant61183d39707f9812f338912e5df932f835d93e7744246c2e300a897ae15c6e63
+
+assert_not_exists List.sublistsLen Multiset.powerset CompleteLattice Monoid
+
+open Multiset Subtype Function
+
+universe u
+
+variable {α : Type*} {β : Type*} {γ : Type*}
+
+namespace Finset
+
+/-! ### Symmetric difference -/
+
+section SymmDiff
+
+open scoped symmDiff
+
+variable [DecidableEq α] {s t : Finset α} {a b : α}
+
+theorem mem_symmDiff : a ∈ s ∆ t ↔ a ∈ s ∧ a ∉ t ∨ a ∈ t ∧ a ∉ s := by
+  simp_rw [symmDiff, sup_eq_union, mem_union, mem_sdiff]
+
+@[simp, norm_cast]
+theorem coe_symmDiff : (↑(s ∆ t) : Set α) = (s : Set α) ∆ t :=
+  Set.ext fun x => by simp [mem_symmDiff, Set.mem_symmDiff]
+
+@[simp] lemma symmDiff_eq_empty : s ∆ t = ∅ ↔ s = t := symmDiff_eq_bot
+@[simp] lemma symmDiff_nonempty : (s ∆ t).Nonempty ↔ s ≠ t :=
+  nonempty_iff_ne_empty.trans symmDiff_eq_empty.not
+
+theorem image_symmDiff [DecidableEq β] {f : α → β} (s t : Finset α) (hf : Injective f) :
+    (s ∆ t).image f = s.image f ∆ t.image f :=
+  mod_cast Set.image_symmDiff hf s t
+
+end SymmDiff
+
+end Finset
+```

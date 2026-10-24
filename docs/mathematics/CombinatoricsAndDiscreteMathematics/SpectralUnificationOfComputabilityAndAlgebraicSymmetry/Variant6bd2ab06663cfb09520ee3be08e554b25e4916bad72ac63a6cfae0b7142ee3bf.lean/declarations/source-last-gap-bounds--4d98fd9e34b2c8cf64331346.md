@@ -1,0 +1,125 @@
+# source_last_gap_bounds
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:4ea723a6-ee8e-cf36-cc92-31b24b6f4bab",
+  "kind": "theorem",
+  "lexical_name": "source_last_gap_bounds",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "source-last-gap-bounds--4d98fd9e34b2c8cf64331346",
+  "source": {
+    "blob": "e31a77e0f41e9ecbb3ccce9654420547ab6b0e76",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 168,
+    "line": 125,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variant6bd2ab06663cfb09520ee3be08e554b25e4916bad72ac63a6cfae0b7142ee3bf.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:4d98fd9e34b2c8cf643313468313662675ed28ce3f46140363d749056a5343d1",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variant6bd2ab06663cfb09520ee3be08e554b25e4916bad72ac63a6cfae0b7142ee3bf.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:4ea723a6-ee8e-cf36-cc92-31b24b6f4bab`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 125–168.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem source_last_gap_bounds (A : ℝ) (hA : 1 ≤ A) :
+    Real.exp (-(2 * A)) ≤
+        Real.log (sourceKernelCutoff A : ℝ) -
+          Real.log ((sourceKernelCutoff A - 1 : ℕ) : ℝ) ∧
+      Real.log (sourceKernelCutoff A : ℝ) -
+          Real.log ((sourceKernelCutoff A - 1 : ℕ) : ℝ) ≤
+        2 * Real.exp (-(2 * A)) := by
+  have hexp : 4 ≤ Real.exp (2 * A) := by
+    have h := Real.add_one_le_exp A
+    have hid : Real.exp (2 * A) = Real.exp A * Real.exp A := by
+      rw [show 2 * A = A + A by ring, Real.exp_add]
+    rw [hid]
+    nlinarith
+  have hN : 2 ≤ sourceKernelCutoff A := by
+    apply (Nat.le_floor_iff (Real.exp_pos _).le).2
+    norm_num only [Nat.cast_ofNat]
+    linarith
+  have hp : 1 ≤ sourceKernelCutoff A - 1 := by omega
+  have hp0 : 0 < ((sourceKernelCutoff A - 1 : ℕ) : ℝ) := by exact_mod_cast hp
+  have hN0 : 0 < (sourceKernelCutoff A : ℝ) := by
+    exact_mod_cast (by omega : 0 < sourceKernelCutoff A)
+  have hNE : (sourceKernelCutoff A : ℝ) ≤ Real.exp (2 * A) :=
+    Nat.floor_le (Real.exp_pos _).le
+  have hEN : Real.exp (2 * A) < (sourceKernelCutoff A : ℝ) + 1 :=
+    Nat.lt_floor_add_one _
+  have hpcast : ((sourceKernelCutoff A - 1 : ℕ) : ℝ) + 1 =
+      (sourceKernelCutoff A : ℝ) := by
+    exact_mod_cast (Nat.sub_add_cancel (by omega : 1 ≤ sourceKernelCutoff A))
+  constructor
+  · have hinv : Real.exp (-(2 * A)) ≤ 1 / (sourceKernelCutoff A : ℝ) := by
+      rw [Real.exp_neg, ← one_div]
+      exact one_div_le_one_div_of_le hN0 hNE
+    exact hinv.trans (inventory_log_gap_lower (sourceKernelCutoff A)
+      (sourceKernelCutoff A - 1) (sourceKernelCutoff A) hp (by omega) le_rfl)
+  · have hhalf : Real.exp (2 * A) / 2 ≤
+        ((sourceKernelCutoff A - 1 : ℕ) : ℝ) := by linarith
+    have hinv := one_div_le_one_div_of_le (by positivity : 0 < Real.exp (2 * A) / 2) hhalf
+    have heq : 1 / (Real.exp (2 * A) / 2) = 2 * Real.exp (-(2 * A)) := by
+      rw [Real.exp_neg]
+      field_simp
+    rw [heq] at hinv
+    exact (inventory_last_gap_upper (sourceKernelCutoff A) hN).trans hinv
+
+/-- The adjacent gaps eventually fall below every prescribed positive constant. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variant6bd2ab06663cfb09520ee3be08e554b25e4916bad72ac63a6cfae0b7142ee3bf.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variant6bd2ab06663cfb09520ee3be08e554b25e4916bad72ac63a6cfae0b7142ee3bf.lean#L125).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e31a77e0f41e9ecbb3ccce9654420547ab6b0e76` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

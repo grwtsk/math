@@ -1,0 +1,225 @@
+# table_11
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:96bca298df82735ffa8c2fd200b73859361ac65beeb8f8e1db2b1af0df6e4135",
+  "kind": "def",
+  "lexical_name": "table_11",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "table-11--bbba7b3f7fe196c9da94a957",
+  "source": {
+    "blob": "be7f02109c11b29282a87bb98e199242d2cf0b03",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 985,
+    "line": 842,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BKLNWTables/Variant8662c21d04b46c4348077b23cee28d45d6ac2eb66cd9afb73a02b433ce5bb84d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:bbba7b3f7fe196c9da94a9575ca15195d6122bba03b78889885cf1685b62d280",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BKLNWTables/Variant8662c21d04b46c4348077b23cee28d45d6ac2eb66cd9afb73a02b433ce5bb84d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:96bca298df82735ffa8c2fd200b73859361ac65beeb8f8e1db2b1af0df6e4135`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 842–985.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def table_11 : List (ℝ × ℝ × ℝ × ℝ × ℝ × ℝ) := [
+  (20, 1.6844e-3, 3.3688e-2, 6.7375e-1, 5.7184e1, 1.3441e5),
+  (21, 1.0684e-3, 2.2435e-2, 4.7114e-1, 5.7184e1, 1.3441e5),
+  (22, 6.7654e-4, 1.4884e-2, 3.2746e-1, 5.7184e1, 1.3441e5),
+  (23, 4.2780e-4, 9.8392e-3, 2.2631e-1, 5.7184e1, 1.3441e5),
+  (24, 2.7011e-4, 6.4827e-3, 1.5559e-1, 5.7184e1, 1.3441e5),
+  (25, 1.7500e-4, 4.3750e-3, 1.0938e-1, 5.7184e1, 1.3441e5),
+  (26, 1.1022e-4, 2.8655e-3, 7.4503e-2, 5.7184e1, 1.3441e5),
+  (27, 6.9322e-5, 1.8717e-3, 5.0536e-2, 5.7184e1, 1.3441e5),
+  (28, 4.3555e-5, 1.2196e-3, 3.4148e-2, 5.7184e1, 1.3441e5),
+  (29, 2.7336e-5, 7.9272e-4, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (30, 1.7139e-5, 5.1415e-4, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (43, 8.6315e-7, 3.7979e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (44, 7.8163e-7, 3.5174e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (45, 5.0646e-7, 2.3298e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (46, 3.2935e-7, 1.5480e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (47, 2.1308e-7, 1.0376e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (54, 9.8778e-9, 1.0376e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (55, 6.3417e-9, 1.0376e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (56, 4.4627e-9, 1.0376e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (2275, 4.4627e-9, 1.0376e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (2300, 4.4627e-9, 1.0376e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (2325, 4.4063e-9, 1.0355e-5, 2.4334e-2, 5.7184e1, 1.3441e5),
+  (2350, 4.2245e-9, 1.0034e-5, 2.3829e-2, 5.6594e1, 1.3441e5),
+  (2375, 4.0499e-9, 9.7196e-6, 2.3328e-2, 5.5985e1, 1.3437e5),
+  (2400, 3.8821e-9, 9.4139e-6, 2.2829e-2, 5.5360e1, 1.3425e5),
+  (9800, 8.4841e-25, 8.3993e-21, 8.3153e-17, 8.2321e-13, 8.1498e-9),
+  (9900, 5.7396e-25, 5.7396e-21, 5.7396e-17, 5.7396e-13, 5.7396e-9),
+  (10000, 3.8228e-25, 3.8610e-21, 3.8997e-17, 3.9387e-13, 3.9780e-9),
+  (11100, 7.9284e-27, 8.8005e-23, 9.7685e-19, 1.0844e-14, 1.2036e-10),
+  (12000, 1.9331e-28, 2.3390e-24, 2.8302e-20, 3.4245e-16, 4.1437e-12),
+  (13000, 5.5830e-30, 7.5371e-26, 1.0175e-21, 1.3737e-17, 1.8544e-13),
+  (14000, 1.8399e-31, 2.7598e-27, 4.1396e-23, 6.2094e-19, 9.3141e-15),
+  (15000, 6.5712e-33, 1.0514e-28, 1.6823e-24, 2.6916e-20, 4.3065e-16),
+  (16000, 2.5739e-34, 4.3756e-30, 7.4384e-26, 1.2646e-21, 2.1497e-17),
+  (17000, 1.1168e-35, 2.0101e-31, 3.6182e-27, 6.5127e-23, 1.1723e-18),
+  (18000, 5.3739e-37, 1.0211e-32, 1.9400e-28, 3.6860e-24, 7.0033e-20),
+  (19000, 2.7357e-38, 5.4714e-34, 1.0943e-29, 2.1886e-25, 4.3772e-21),
+  (20000, 1.5041e-39, 3.1585e-35, 6.6329e-31, 1.3929e-26, 2.9251e-22),
+  (21000, 9.0606e-41, 1.9934e-36, 4.3853e-32, 9.6477e-28, 2.1225e-23),
+  (22000, 5.6101e-42, 1.2904e-37, 2.9678e-33, 6.8258e-29, 1.5700e-24),
+  (23000, 3.7554e-43, 9.0129e-39, 2.1631e-34, 5.1915e-30, 1.2460e-25),
+  (24000, 1.3804e-43, 3.4508e-39, 8.6269e-35, 2.1568e-30, 5.3919e-26),
+  (25000, 1.3804e-43, 3.4508e-39, 8.6269e-35, 2.1568e-30, 5.3919e-26)
+]
+
+/-
+This longtable reproduces Table 12 of \cite{BKLNW} verbatim.  Four of its
+boundary-row entries are erroneous; see the correction note on `table_12` above
+for the values actually used in Lean.
+
+\subsubsection{Lower bound for first values of $x \in [e^{J_0},10^{19}]$}
+\quad \\
+{\footnotesize
+\begin{longtable}{ccrrrrrr}
+\caption{$\theta(x) -x >  - \frac{\mathcal{C}_{b,k} x}{(\log x)^k}$ for all $x \in [e^b, 10^{19} )$, where $\mathcal{C}_{b,k}$ is defined in \eqref{defn:mathcalCbk}.}
+ \label{CkValues}
+\\
+\hline
+\multicolumn{1}{c}{\phantom{}} &
+\multicolumn{1}{c}{$b$  } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,1}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,2}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,3}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,4}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,5}$ } &
+\multicolumn{1}{c}{\phantom{}}
+\\ \hline
+\endfirsthead
+\multicolumn{8}{c}%
+{\tablename\ \thetable{} -- continued from previous page} \\
+\hline
+\multicolumn{1}{c}{\phantom{}} &
+\multicolumn{1}{c}{$b$  } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,1}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,2}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,3}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,4}$ } &
+\multicolumn{1}{c}{$\mathcal{C}_{b,5}$ } &
+\multicolumn{1}{c}{\phantom{}}
+\\ \hline
+\endhead
+\hline \multicolumn{8}{r}{Continued on next page} \\ \hline
+\endfoot
+\hline
+\endlastfoot
+&&&&&&& \\[-1em]
+\multicolumn{8}{c}{Calculated using $c=0.8$, $C=0.81$, each value valid up to $5\cdot10^{10}\simeq e^{24.635}$.}\\ \hline
+&&&&&&& \\[-1em]
+& $ 20 $ & $ 1.68440 \cdot 10^{-3} $ & $ 3.36880 \cdot 10^{-2} $ & $ 6.73750 \cdot 10^{-1} $ & $ 1.34750 \cdot 10^{1} $ & $ 2.69500 \cdot 10^{2 } $ & \\
+& $ 21 $ & $ 1.06840 \cdot 10^{-3} $ & $ 2.24350 \cdot 10^{-2} $ & $ 4.71140 \cdot 10^{-1} $ & $ 9.89390 \cdot 10^{0} $ & $ 2.07780 \cdot 10^{2 } $ & \\
+& $ 22 $ & $ 6.76540 \cdot 10^{-4} $ & $ 1.48840 \cdot 10^{-2} $ & $ 3.27450 \cdot 10^{-1} $ & $ 7.20380 \cdot 10^{0} $ & $ 1.58490 \cdot 10^{2 } $ & \\
+& $ 23 $ & $ 4.27800 \cdot 10^{-4} $ & $ 9.83920 \cdot 10^{-3} $ & $ 2.26310 \cdot 10^{-1} $ & $ 5.20500 \cdot 10^{0} $ & $ 1.19720 \cdot 10^{2 } $ & \\
+& $ 24 $ & $ 2.70120 \cdot 10^{-4} $ & $ 6.48290 \cdot 10^{-3} $ & $ 1.55590 \cdot 10^{-1} $ & $ 3.73410 \cdot 10^{0} $ & $ 8.96190 \cdot 10^{1 } $ & \\
+\hline
+&&&&&&& \\[-1em]
+\multicolumn{8}{c}{Calculated using $c=0.88$, $C=0.86$, each value valid up to $32\cdot10^{12}\simeq e^{31.097}$.}\\ \hline
+&&&&&&& \\[-1em]
+& $ \log(5\cdot 10^{10}) $ & $ 2.01560 \cdot 10^{-4} $ & $ 4.96540 \cdot 10^{-3} $ & $ 1.22330 \cdot 10^{-1} $ & $ 3.01350 \cdot 10^{0} $ & $ 7.42380 \cdot 10^{1 } $ & \\
+& $ 25 $ & $ 1.70330 \cdot 10^{-4}$ &$ 4.25830 \cdot 10^{-3} $ & $ 1.06460 \cdot 10^{-1} $ & $ 2.66140 \cdot 10^{0} $ & $ 6.65350 \cdot 10^{1 } $ & \\
+& $ 26 $ & $ 1.10220 \cdot 10^{-4} $ & $ 2.86560 \cdot 10^{-3} $ & $ 7.45050 \cdot 10^{-2} $ & $ 1.93720 \cdot 10^{0} $ & $ 5.03650 \cdot 10^{1 } $ & \\
+& $ 27 $ & $ 6.93270 \cdot 10^{-5} $ & $ 1.87190 \cdot 10^{-3} $ & $ 5.05400 \cdot 10^{-2} $ & $ 1.36460 \cdot 10^{0} $ & $ 3.68430 \cdot 10^{1 } $ & \\
+& $ 28 $ & $ 4.35580 \cdot 10^{-5} $ & $ 1.21970 \cdot 10^{-3} $ & $ 3.41500 \cdot 10^{-2} $ & $ 9.56180 \cdot 10^{-1} $ & $ 2.67730 \cdot 10^{1 } $ & \\
+& $ 29 $ & $ 2.73380 \cdot 10^{-5} $ & $ 7.92780 \cdot 10^{-4} $ & $ 2.29910 \cdot 10^{-2} $ & $ 6.66730 \cdot 10^{-1} $ & $ 1.93360 \cdot 10^{1 } $ & \\
+& $ 30 $ & $ 1.71400 \cdot 10^{-5} $ & $ 5.14180 \cdot 10^{-4} $ & $ 1.54260 \cdot 10^{-2} $ & $ 4.62760 \cdot 10^{-1} $ & $ 1.38830 \cdot 10^{1 } $ & \\
+& $ 31 $ & $ 1.07350 \cdot 10^{-5} $ & $ 3.32790 \cdot 10^{-4} $ & $ 1.03170 \cdot 10^{-2} $ & $ 3.19810 \cdot 10^{-1} $ & $ 9.91400 \cdot 10^{0 } $ & \\
+\hline
+&&&&&&& \\[-1em]
+\multicolumn{8}{c}{Calculated using $c=C=0.94$, each value valid up to $10^{19}\simeq e^{43.749}$.}\\ \hline
+&&&&&&& \\[-1em]
+& $ \log(3.2\cdot10^{13}) $ & $ 1.02600 \cdot 10^{-5} $ & $ 3.19040 \cdot 10^{-4} $ & $ 9.92090 \cdot 10^{-3} $ & $ 3.08510 \cdot 10^{-1} $ & $ 9.59360 \cdot 10^{0 } $ & \\
+& $ 32 $ & $ 6.71750 \cdot 10^{-6} $ & $ 2.14960 \cdot 10^{-4} $ & $ 6.87870 \cdot 10^{-3} $ & $ 2.20120 \cdot 10^{-1} $ & $ 7.04380 \cdot 10^{0 } $ & \\
+& $ 33 $ & $ 4.38000 \cdot 10^{-6} $ & $ 1.44540 \cdot 10^{-4} $ & $ 4.76990 \cdot 10^{-3} $ & $ 1.57410 \cdot 10^{-1} $ & $ 5.19440 \cdot 10^{0 } $ & \\
+& $ 34 $ & $ 2.73610 \cdot 10^{-6} $ & $ 9.30270 \cdot 10^{-5} $ & $ 3.16300 \cdot 10^{-3} $ & $ 1.07540 \cdot 10^{-1} $ & $ 3.65640 \cdot 10^{0 } $ & \\
+& $ 35 $ & $ 1.70780 \cdot 10^{-6} $ & $ 5.97730 \cdot 10^{-5} $ & $ 2.09210 \cdot 10^{-3} $ & $ 7.32220 \cdot 10^{-2} $ & $ 2.56280 \cdot 10^{0 } $ & \\
+& $ 36 $ & $ 1.06520 \cdot 10^{-6} $ & $ 3.83460 \cdot 10^{-5} $ & $ 1.38050 \cdot 10^{-3} $ & $ 4.96960 \cdot 10^{-2} $ & $ 1.78910 \cdot 10^{0 } $ & \\
+& $ 37 $ & $ 6.63850 \cdot 10^{-7} $ & $ 2.45630 \cdot 10^{-5} $ & $ 9.08810 \cdot 10^{-4} $ & $ 3.36260 \cdot 10^{-2} $ & $ 1.24420 \cdot 10^{0 } $ & \\
+& $ 38 $ & $ 4.13450 \cdot 10^{-7} $ & $ 1.57120 \cdot 10^{-5} $ & $ 5.97020 \cdot 10^{-4} $ & $ 2.26870 \cdot 10^{-2} $ & $ 8.62100 \cdot 10^{-1 } $ & \\
+& $ 39 $ & $ 2.57330 \cdot 10^{-7} $ & $ 1.00360 \cdot 10^{-5} $ & $ 3.91400 \cdot 10^{-4} $ & $ 1.52650 \cdot 10^{-2} $ & $ 5.95320 \cdot 10^{-1 } $ & \\
+& $ 40 $ & $ 1.60060 \cdot 10^{-7} $ & $ 6.40240 \cdot 10^{-6} $ & $ 2.56100 \cdot 10^{-4} $ & $ 1.02440 \cdot 10^{-2} $ & $ 4.09750 \cdot 10^{-1 } $ & \\
+& $ 41 $ & $ 9.94970 \cdot 10^{-8} $ & $ 4.07940 \cdot 10^{-6} $ & $ 1.67260 \cdot 10^{-4} $ & $ 6.85740 \cdot 10^{-3} $ & $ 2.81160 \cdot 10^{-1 } $ & \\
+& $ 42 $ & $ 6.18140 \cdot 10^{-8} $ & $ 2.59620 \cdot 10^{-6} $ & $ 1.09040 \cdot 10^{-4} $ & $ 4.57970 \cdot 10^{-3} $ & $ 1.92350 \cdot 10^{-1 } $ & \\
+& $ 43 $ & $ 3.83820 \cdot 10^{-8} $ & $ 1.65050 \cdot 10^{-6} $ & $ 7.09680 \cdot 10^{-5} $ & $ 3.05170 \cdot 10^{-3} $ & $ 1.31220 \cdot 10^{-1 } $ & \\
+\hline
+\end{longtable}
+}-/
+
+/-
+Correction note for `table_12`.  In \cite{BKLNW}, Table 12, the rows
+`b = log(5·10¹⁰)` and `b = 25` are listed under the block `c = 0.88, C = 0.86`,
+and `b = log(3.2·10¹³)` and `b = 32` under `c = 0.94, C = 0.94`.  However, the
+entries printed for these four boundary rows were computed with the *previous*
+block's Buthe constants, so they are smaller than `C_bk` (Corollary 9.1,
+eq. 3.25) evaluated with each row's own stated `(c, C)`.  Their entries below
+are therefore recomputed with the correct `(c, C)` and rounded up.  The paper's
+(too small) values were:
+  `log(5·10¹⁰)` : 2.01560e-4, 4.96540e-3, 1.22330e-1, 3.01350e0, 7.42380e1
+  `25`          : 1.70330e-4, 4.25830e-3, 1.06460e-1, 2.66140e0, 6.65350e1
+  `log(3.2·10¹³)`: 1.02600e-5, 3.19040e-4, 9.92090e-3, 3.08510e-1, 9.59360e0
+  `32`          : 6.71750e-6, 2.14960e-4, 6.87870e-3, 2.20120e-1, 7.04380e0
+The row `b = 31` is additionally raised in columns `k = 3, 4, 5` (paper values
+1.03170e-2, 3.19810e-1, 9.91400e0) so that the column stays pointwise above the
+recomputed `b = log(3.2·10¹³)` row, which `table_12_Cb_bounds` relies on.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BKLNWTables/Variant8662c21d04b46c4348077b23cee28d45d6ac2eb66cd9afb73a02b433ce5bb84d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BKLNWTables/Variant8662c21d04b46c4348077b23cee28d45d6ac2eb66cd9afb73a02b433ce5bb84d.lean#L842).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `be7f02109c11b29282a87bb98e199242d2cf0b03` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

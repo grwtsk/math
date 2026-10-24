@@ -1,0 +1,88 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Congr.Variant438daa6b1c6ca7ad069d4ba8dc817a04d775cac2a456b1e2d2e1adbc362a7152
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b2fd44e041ffea4d846a84e93edaabb0ae716104` · SHA-256 `25d172f9474fbf77c0484488455082730732f0fce0fe38dc1d8c8650573bc93d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Congr.Variantbdc3e06173727aaf966c4f4ed3098adb12bfcee0d1720fe1c0ab67eb9855ec60","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bdc3e06173727aaf966c4f4ed3098adb12bfcee0d1720fe1c0ab67eb9855ec60","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.Congr.Variantbdc3e06173727aaf966c4f4ed3098adb12bfcee0d1720fe1c0ab67eb9855ec60","mathematical_subject":"Computation.DataStructures","original_sha256":"bdc3e06173727aaf966c4f4ed3098adb12bfcee0d1720fe1c0ab67eb9855ec60","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/restored-inputs/packages/batteries/BatteriesTest/congr.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Batteries.Tactic.Congr
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Congr.Variantbdc3e06173727aaf966c4f4ed3098adb12bfcee0d1720fe1c0ab67eb9855ec60
+
+section congr
+
+example (c : Prop → Prop → Prop → Prop) (x x' y z z' : Prop)
+    (h₀ : x ↔ x') (h₁ : z ↔ z') : c x y z ↔ c x' y z' := by
+  apply Iff.of_eq -- FIXME: not needed in lean 3
+  congr
+  · guard_target =ₐ x = x'
+    apply_ext_theorem
+    assumption
+  · guard_target =ₐ z = z'
+    ext
+    assumption
+
+example {α β γ δ} {F : ∀ {α β}, (α → β) → γ → δ} {f g : α → β} {s : γ}
+    (h : ∀ x : α, f x = g x) : F f s = F g s := by
+  congr with x
+  -- apply_assumption -- FIXME
+  apply h
+
+example {α β : Type _} {f : _ → β} {x y : { x : { x : α // x = x } // x = x }}
+    (h : x.1 = y.1) : f x = f y := by
+  congr with : 1
+  exact h
+
+example {α β : Type _} {F : _ → β} {f g : { f : α → β // f = f }}
+    (h : ∀ x : α, (f : α → β) x = (g : α → β) x) : F f = F g := by
+  rcongr x
+  revert x
+  guard_target = type_of% h
+  exact h
+
+section
+
+-- Adaptation note: the next two examples have always failed if `List.ext` was in scope,
+-- but until nightly-2024-04-24 (when `List.ext` was upstreamed), it wasn't in scope.
+-- In order to preserve the test behaviour we locally remove the `ext` attribute.
+attribute [-ext] List.ext_getElem?
+
+example {ls : List Nat} :
+    (ls.map fun _ => (ls.map fun y => 1 + y).sum + 1) =
+    (ls.map fun _ => (ls.map fun y => Nat.succ y).sum + 1) := by
+  rcongr (_x y)
+  guard_target =ₐ 1 + y = y.succ
+  rw [Nat.add_comm]
+
+example {ls : List Nat} {f g : Nat → Nat} {h : ∀ x, f x = g x} :
+    (ls.map fun x => f x + 3) = ls.map fun x => g x + 3 := by
+  rcongr x
+  exact h x
+
+end
+
+-- succeed when either `ext` or `congr` can close the goal
+example : () = () := by rcongr
+
+example : 0 = 0 := by rcongr
+
+example {α} (a : α) : a = a := by congr
+
+example : { f : Nat → Nat // f = id } :=
+  ⟨_, by
+    congr (config := { closePre := false, closePost := false }) with x
+    exact Nat.zero_add x⟩
+
+-- FIXME(?): congr doesn't fail
+-- example {α} (a b : α) (h : False) : a = b := by
+--   fail_if_success congr
+--   cases h
+
+end congr
+```

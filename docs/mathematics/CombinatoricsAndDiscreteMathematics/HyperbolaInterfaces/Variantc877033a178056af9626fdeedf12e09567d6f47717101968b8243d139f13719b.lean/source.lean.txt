@@ -1,0 +1,10 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperBoundaryJoint
+#check Real.le_sqrt
+#check Real.le_sqrt_of_sq_le
+#check Real.sq_sqrt
+#check Finset.sum_filter
+#check Finset.sum_ite_irrel
+#check Finset.sum_mul_sum
+#check MeasureTheory.integrableOn_const
+#check MeasureTheory.Integrable.mono'
+#check Finset.sum_congr

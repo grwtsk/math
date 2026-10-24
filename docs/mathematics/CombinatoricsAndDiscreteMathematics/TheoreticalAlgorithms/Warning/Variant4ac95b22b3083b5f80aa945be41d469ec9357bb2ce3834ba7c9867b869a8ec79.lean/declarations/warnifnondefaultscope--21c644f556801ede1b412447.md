@@ -1,0 +1,115 @@
+# warnIfNonDefaultScope
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:cf457ca2667ab15fe1673941fb979e7103abc14d8fdfac5d3af66bdeafa44979",
+  "kind": "def",
+  "lexical_name": "warnIfNonDefaultScope",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "warnifnondefaultscope--21c644f556801ede1b412447",
+  "source": {
+    "blob": "8bea03c0f4b358a94e3d355059ad7e0814254c00",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 199,
+    "line": 166,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Warning/Variant4ac95b22b3083b5f80aa945be41d469ec9357bb2ce3834ba7c9867b869a8ec79.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:21c644f556801ede1b412447bd13e150a627d0bca369db409a6f48a6fb61ac3a",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Warning/Variant4ac95b22b3083b5f80aa945be41d469ec9357bb2ce3834ba7c9867b869a8ec79.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:cf457ca2667ab15fe1673941fb979e7103abc14d8fdfac5d3af66bdeafa44979`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 166–199.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def warnIfNonDefaultScope (repoExplicit? detectedRepo? : Option String)
+    (cliCacheFromOverride? : Option (List Container)) (resolvedRepo : String)
+    (unsafeWindow? : Option Nat := none) :
+    IO Unit := do
+  if (← shouldWarnNonDefaultScope repoExplicit? detectedRepo? cliCacheFromOverride? resolvedRepo
+        unsafeWindow?)
+    then
+    let reason ← getNonDefaultScopeReason repoExplicit? detectedRepo? cliCacheFromOverride?
+      resolvedRepo unsafeWindow?
+    printNonDefaultScopeWarning resolvedRepo reason
+
+/--
+If the user is on a commit that hasn't been cached for this fork (no marker
+present at `forks/m/{repo}/{HEAD-sha}`), print an informational note
+explaining the new SHA-scoped behavior and pointing at `cache query`.
+
+Fires only on naive `cache get` invocations:
+- no `--scope=` / `MATHLIB_CACHE_REPO_SCOPE` set (else the user has already
+  picked a scope and the non-default-scope warning is doing the talking)
+- no `--cache-from` override (else they've already taken explicit
+  responsibility for the lookup chain)
+- the repo is a fork, not a first-party repo: the canonical repos don't build
+  into the per-commit `forks` namespace this note checks
+- HEAD is not already an ancestor of `master`. From a personal-fork checkout
+  sitting on `master` (or an undiverged branch), the fork's SHA-scoped marker is
+  structurally absent, but `master` is first in the fork lookup chain and serves
+  every file by hash — there is nothing fork-specific to build, so the note would
+  be a pure false positive.
+
+One HEAD probe per invocation; the message is stderr-only so it doesn't
+mix with `cache get`'s stdout output.
+
+`repo` is the already-resolved repo (see `resolveRepo`).
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Warning/Variant4ac95b22b3083b5f80aa945be41d469ec9357bb2ce3834ba7c9867b869a8ec79.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Warning/Variant4ac95b22b3083b5f80aa945be41d469ec9357bb2ce3834ba7c9867b869a8ec79.lean#L166).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8bea03c0f4b358a94e3d355059ad7e0814254c00` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

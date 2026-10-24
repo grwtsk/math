@@ -1,0 +1,112 @@
+# toWithBotSyn_apply
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:17273eaf-c0fe-1ee5-117a-88659e6d3d9c",
+  "kind": "lemma",
+  "lexical_name": "toWithBotSyn_apply",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "towithbotsyn-apply--e38bd9e442c31c7d89086886",
+  "source": {
+    "blob": "2708d1ba5b05d8a3eee6a1b3e9db2541b20d19ce",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 192,
+    "line": 162,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MonomialOrder/Variantf6aa2065eb100913f7b0a14c369c947f2b76951eeb005cf7528dcb647de50cbd.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:e38bd9e442c31c7d8908688666834bd4490c6373354217619089d4cf7fa25c3f",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MonomialOrder/Variantf6aa2065eb100913f7b0a14c369c947f2b76951eeb005cf7528dcb647de50cbd.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:17273eaf-c0fe-1ee5-117a-88659e6d3d9c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 162–192.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma toWithBotSyn_apply (a : WithBot (σ →₀ ℕ)) : m.toWithBotSyn a = a.map m.toSyn := rfl
+
+/-- Given a monomial order, notation for the corresponding strict order relation on `σ →₀ ℕ` -/
+scoped
+notation:50 c " ≺[" m:25 "] " d:50 => (MonomialOrder.toSyn m c < MonomialOrder.toSyn m d)
+
+/-- Given a monomial order, notation for the corresponding order relation on `σ →₀ ℕ` -/
+scoped
+notation:50 c " ≼[" m:25 "] " d:50 => (MonomialOrder.toSyn m c ≤ MonomialOrder.toSyn m d)
+
+/-- Given a monomial order with bot, notation for the corresponding strict order relation on
+`WithBot (σ →₀ ℕ)` -/
+scoped
+notation:50 c " ≺'[" m:25 "] " d:50 =>
+  (MonomialOrder.toWithBotSyn m c < MonomialOrder.toWithBotSyn m d)
+
+/-- Given a monomial order with bot, notation for the corresponding order relation on
+`WithBot (σ →₀ ℕ)` -/
+scoped
+notation:50 c " ≼'[" m:25 "] " d:50 =>
+  (MonomialOrder.toWithBotSyn m c ≤ MonomialOrder.toWithBotSyn m d)
+
+end MonomialOrder
+
+section Lex
+
+open Finsupp
+
+open scoped MonomialOrder
+
+-- The linear order on `Finsupp`s obtained by the lexicographic ordering. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MonomialOrder/Variantf6aa2065eb100913f7b0a14c369c947f2b76951eeb005cf7528dcb647de50cbd.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MonomialOrder/Variantf6aa2065eb100913f7b0a14c369c947f2b76951eeb005cf7528dcb647de50cbd.lean#L162).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2708d1ba5b05d8a3eee6a1b3e9db2541b20d19ce` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

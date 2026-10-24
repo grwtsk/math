@@ -1,0 +1,165 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.BigOperators.Variantc4c544578dd350667b30dc4db6be274b55de71ca9edf76dc36039420caf84af0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9555ef27067958de48edb1afe414c588cd99004` · SHA-256 `5ba882fcf6e08053749b97fe4c7c8656bfc08dfcaefc6b674238f0626b68b916`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ListTropSum.Variantd9ef7910fe942bc298870da161675a58021f8780ba902c1f3a57085da0931ce4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d9ef7910fe942bc298870da161675a58021f8780ba902c1f3a57085da0931ce4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.ListTropSum.Variantd9ef7910fe942bc298870da161675a58021f8780ba902c1f3a57085da0931ce4","mathematical_subject":"Computation.DataStructures","original_sha256":"d9ef7910fe942bc298870da161675a58021f8780ba902c1f3a57085da0931ce4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Tropical/BigOperators.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Yakov Pechersky. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yakov Pechersky
+-/
+module
+
+public import Mathlib.Data.List.MinMax
+public import Mathlib.Algebra.Tropical.Basic
+public import Mathlib.Order.ConditionallyCompleteLattice.Finset
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+/-!
+
+# Tropicalization of finitary operations
+
+This file provides the "big-op" or notation-based finitary operations on tropicalized types.
+This allows easy conversion between sums to Infs and prods to sums. Results here are important
+for expressing that evaluation of tropical polynomials are the minimum over a finite piecewise
+collection of linear functions.
+
+## Main declarations
+
+* `MinTropical.untrop_sum`/`MaxTropical.untrop_sum`
+
+## Implementation notes
+
+No concrete (semi)ring is used here, only ones with inferable order/lattice structure, to support
+`Real`, `Rat`, `EReal`, and others (`ERat` is not yet defined).
+
+Minima over `List α` are defined as producing a value in `WithTop α` so proofs about lists do not
+directly transfer to minima over multisets or finsets.
+
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ListTropSum.Variantd9ef7910fe942bc298870da161675a58021f8780ba902c1f3a57085da0931ce4
+
+public section
+
+variable {R S : Type*}
+
+open MinTropical Finset
+
+namespace MinTropical
+
+@[to_dual]
+theorem List.trop_sum [AddMonoid R] (l : List R) : trop l.sum = List.prod (l.map trop) := by
+  induction l with
+  | nil => simp
+  | cons hd tl IH => simp [← IH]
+
+@[to_dual]
+theorem Multiset.trop_sum [AddCommMonoid R] (s : Multiset R) :
+    trop s.sum = Multiset.prod (s.map trop) :=
+  Quotient.inductionOn s (by simpa using List.trop_sum)
+
+@[to_dual]
+theorem trop_sum [AddCommMonoid R] (s : Finset S) (f : S → R) :
+    trop (∑ i ∈ s, f i) = ∏ i ∈ s, trop (f i) := by
+  convert! Multiset.trop_sum (s.val.map f)
+  simp only [Multiset.map_map, Function.comp_apply]
+  rfl
+
+@[to_dual]
+theorem List.untrop_prod [AddMonoid R] (l : List (MinTropical R)) :
+    untrop l.prod = List.sum (l.map untrop) := by
+  induction l with
+  | nil => simp
+  | cons hd tl IH => simp [← IH]
+
+@[to_dual]
+theorem Multiset.untrop_prod [AddCommMonoid R] (s : Multiset (MinTropical R)) :
+    untrop s.prod = Multiset.sum (s.map untrop) :=
+  Quotient.inductionOn s (by simpa using List.untrop_prod)
+
+@[to_dual]
+theorem untrop_prod [AddCommMonoid R] (s : Finset S) (f : S → MinTropical R) :
+    untrop (∏ i ∈ s, f i) = ∑ i ∈ s, untrop (f i) := by
+  convert! Multiset.untrop_prod (s.val.map f)
+  simp only [Multiset.map_map, Function.comp_apply]
+  rfl
+
+@[to_dual]
+theorem List.trop_minimum [LinearOrder R] (l : List R) :
+    trop l.minimum = List.sum (l.map (trop ∘ WithTop.some)) := by
+  induction l with
+  | nil => simp
+  | cons hd tl IH => simp [List.minimum_cons, ← IH]
+
+@[to_dual]
+theorem Multiset.trop_inf [LinearOrder R] [OrderTop R] (s : Multiset R) :
+    trop s.inf = Multiset.sum (s.map trop) := by
+  induction s using Multiset.induction with
+  | empty => simp
+  | cons s x IH => simp [← IH]
+
+@[to_dual]
+theorem Finset.trop_inf [LinearOrder R] [OrderTop R] (s : Finset S) (f : S → R) :
+    trop (s.inf f) = ∑ i ∈ s, trop (f i) := by
+  convert! Multiset.trop_inf (s.val.map f)
+  simp only [Multiset.map_map, Function.comp_apply]
+  rfl
+
+@[to_dual]
+theorem trop_sInf_image [ConditionallyCompleteLinearOrder R] (s : Finset S) (f : S → WithTop R) :
+    trop (sInf (f '' s)) = ∑ i ∈ s, trop (f i) := by
+  rcases s.eq_empty_or_nonempty with (rfl | h)
+  · simp only [Set.image_empty, coe_empty, sum_empty, WithTop.sInf_empty, trop_top]
+  rw [← inf'_eq_csInf_image _ h, inf'_eq_inf, s.trop_inf]
+
+@[to_dual]
+theorem trop_iInf [ConditionallyCompleteLinearOrder R] [Fintype S] (f : S → WithTop R) :
+    trop (⨅ i : S, f i) = ∑ i : S, trop (f i) := by
+  rw [iInf, ← Set.image_univ, ← coe_univ, trop_sInf_image]
+
+@[to_dual]
+theorem Multiset.untrop_sum [LinearOrder R] [OrderTop R] (s : Multiset (MinTropical R)) :
+    untrop s.sum = Multiset.inf (s.map untrop) := by
+  induction s using Multiset.induction with
+  | empty => simp
+  | cons s x IH =>
+    simp only [Multiset.sum_cons, untrop_add, Multiset.map_cons, Multiset.inf_cons, ← IH]
+
+@[to_dual]
+theorem Finset.untrop_sum' [LinearOrder R] [OrderTop R] (s : Finset S) (f : S → MinTropical R) :
+    untrop (∑ i ∈ s, f i) = s.inf (untrop ∘ f) := by
+  convert! Multiset.untrop_sum (s.val.map f)
+  simp only [Multiset.map_map, Function.comp_apply, inf_def]
+
+@[to_dual]
+theorem untrop_sum_eq_sInf_image [ConditionallyCompleteLinearOrder R] (s : Finset S)
+    (f : S → MinTropical (WithTop R)) : untrop (∑ i ∈ s, f i) = sInf (untrop ∘ f '' s) := by
+  rcases s.eq_empty_or_nonempty with (rfl | h)
+  · simp only [Set.image_empty, coe_empty, sum_empty, WithTop.sInf_empty, untrop_zero]
+  · rw [← inf'_eq_csInf_image _ h, inf'_eq_inf, Finset.untrop_sum']
+
+@[to_dual]
+theorem untrop_sum [ConditionallyCompleteLinearOrder R] [Fintype S]
+    (f : S → MinTropical (WithTop R)) : untrop (∑ i : S, f i) = ⨅ i : S, untrop (f i) := by
+  rw [iInf, ← Set.image_univ, ← coe_univ, untrop_sum_eq_sInf_image, Function.comp_def]
+
+/-- Note we cannot use `i ∈ s` instead of `i : s` here
+as it is simply not true on conditionally complete lattices! -/
+@[to_dual
+/-- Note we cannot use `i ∈ s` instead of `i : s` here
+as it is simply not true on conditionally complete lattices! -/]
+theorem Finset.untrop_sum [ConditionallyCompleteLinearOrder R] (s : Finset S)
+    (f : S → MinTropical (WithTop R)) : untrop (∑ i ∈ s, f i) = ⨅ i : s, untrop (f i) := by
+  simpa [← MinTropical.untrop_sum] using (sum_attach _ _).symm
+
+end MinTropical
+```

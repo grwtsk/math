@@ -1,0 +1,117 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.OfMap.Variantac444b18f76703e715fa8a060fbb883e2fa5019f056820c3374785e8a3102677
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3dbfde07707d59e630cef53dfd1e2a216fae1e2a` · SHA-256 `265b6fd4249eab8f4c621657a10deb3cd937286eccae5a4e2b8737ac4be49605`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.OfMultiset.Variant1fcb10b0b6b6789534a5bd2b3f93312cce927035fec0bc4eebe705ccf8662af6","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1fcb10b0b6b6789534a5bd2b3f93312cce927035fec0bc4eebe705ccf8662af6","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.OfMultiset.Variant1fcb10b0b6b6789534a5bd2b3f93312cce927035fec0bc4eebe705ccf8662af6","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"1fcb10b0b6b6789534a5bd2b3f93312cce927035fec0bc4eebe705ccf8662af6","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Data/Fintype/OfMap.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2017 Mario Carneiro. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mario Carneiro
+-/
+module
+
+public import Mathlib.Data.Fintype.Defs
+public import Mathlib.Data.Finset.Image
+
+/-!
+# Constructors for `Fintype`
+
+This file contains basic constructors for `Fintype` instances,
+given maps from/to finite types.
+
+## Main results
+
+* `Fintype.ofBijective`, `Fintype.ofInjective`, `Fintype.ofSurjective`:
+  a type is finite if there is a bi/in/surjection from/to a finite type.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.OfMultiset.Variant1fcb10b0b6b6789534a5bd2b3f93312cce927035fec0bc4eebe705ccf8662af6
+
+@[expose] public section
+
+assert_not_exists Monoid
+
+open Function
+
+universe u v
+
+variable {α β : Type*}
+
+open Finset
+
+namespace Fintype
+
+/-- Construct a proof of `Fintype α` from a universal multiset -/
+@[instance_reducible]
+def ofMultiset [DecidableEq α] (s : Multiset α) (H : ∀ x : α, x ∈ s) : Fintype α :=
+  ⟨s.toFinset, by simpa using H⟩
+
+/-- Construct a proof of `Fintype α` from a universal list -/
+@[instance_reducible]
+def ofList [DecidableEq α] (l : List α) (H : ∀ x : α, x ∈ l) : Fintype α :=
+  ⟨l.toFinset, by simpa using H⟩
+
+/-- If `f : α → β` is a bijection and `α` is a fintype, then `β` is also a fintype. -/
+@[instance_reducible]
+def ofBijective [Fintype α] (f : α → β) (H : Function.Bijective f) : Fintype β :=
+  ⟨univ.map ⟨f, H.1⟩, fun b =>
+    let ⟨_, e⟩ := H.2 b
+    e ▸ mem_map_of_mem _ (mem_univ _)⟩
+
+/-- If `f : α → β` is a surjection and `α` is a fintype, then `β` is also a fintype. -/
+@[instance_reducible]
+def ofSurjective [DecidableEq β] [Fintype α] (f : α → β) (H : Function.Surjective f) : Fintype β :=
+  ⟨univ.image f, fun b =>
+    let ⟨_, e⟩ := H b
+    e ▸ mem_image_of_mem _ (mem_univ _)⟩
+
+/-- Given an injective function to a fintype, the domain is also a
+fintype. This is noncomputable because injectivity alone cannot be
+used to construct preimages. -/
+@[instance_reducible]
+noncomputable def ofInjective [Fintype β] (f : α → β) (H : Function.Injective f) : Fintype α :=
+  letI := Classical.dec
+  if hα : Nonempty α then
+    letI := Classical.inhabited_of_nonempty hα
+    ofSurjective (invFun f) (invFun_surjective H)
+  else ⟨∅, fun x => (hα ⟨x⟩).elim⟩
+
+/-- If `f : α ≃ β` and `α` is a fintype, then `β` is also a fintype. -/
+@[instance_reducible]
+def ofEquiv (α : Type*) [Fintype α] (f : α ≃ β) : Fintype β :=
+  ofBijective _ f.bijective
+
+/-- Any subsingleton type with a witness is a fintype (with one term). -/
+@[instance_reducible]
+def ofSubsingleton (a : α) [Subsingleton α] : Fintype α :=
+  ⟨{a}, fun _ => Finset.mem_singleton.2 (Subsingleton.elim _ _)⟩
+
+-- In principle, this could be a `simp` theorem but it applies to any occurrence of `univ` and
+-- required unification of the (possibly very complex) `Fintype` instances.
+theorem univ_ofSubsingleton (a : α) [Subsingleton α] : @univ _ (ofSubsingleton a) = {a} :=
+  rfl
+
+/-- An empty type is a fintype. Not registered as an instance, to make sure that there aren't two
+conflicting `Fintype ι` instances around when casing over whether a fintype `ι` is empty or not. -/
+@[instance_reducible]
+def ofIsEmpty [IsEmpty α] : Fintype α :=
+  ⟨∅, isEmptyElim⟩
+
+/-- Note: this lemma is specifically about `Fintype.ofIsEmpty`. For a statement about
+arbitrary `Fintype` instances, use `Finset.univ_eq_empty`. -/
+theorem univ_ofIsEmpty [IsEmpty α] : @univ α Fintype.ofIsEmpty = ∅ :=
+  rfl
+
+instance : Fintype Empty := Fintype.ofIsEmpty
+instance : Fintype PEmpty := Fintype.ofIsEmpty
+
+end Fintype
+```

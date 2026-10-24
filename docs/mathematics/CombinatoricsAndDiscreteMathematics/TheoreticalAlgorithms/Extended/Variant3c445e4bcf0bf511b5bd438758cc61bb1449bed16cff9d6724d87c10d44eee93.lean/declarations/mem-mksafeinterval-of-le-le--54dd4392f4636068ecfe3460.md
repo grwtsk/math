@@ -1,0 +1,100 @@
+# mem_mkSafeInterval_of_le_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:47c5ae4e-365e-25a0-b3de-b2d87425aefd",
+  "kind": "theorem",
+  "lexical_name": "mem_mkSafeInterval_of_le_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mem-mksafeinterval-of-le-le--54dd4392f4636068ecfe3460",
+  "source": {
+    "blob": "3407862e03ef0fb006b96323c7e78f6fa603fa2e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 237,
+    "line": 219,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Extended/Variant3c445e4bcf0bf511b5bd438758cc61bb1449bed16cff9d6724d87c10d44eee93.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:54dd4392f4636068ecfe346035d481a1a02e38bee46ad427075eb36dccc0a4f9",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Extended/Variant3c445e4bcf0bf511b5bd438758cc61bb1449bed16cff9d6724d87c10d44eee93.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:47c5ae4e-365e-25a0-b3de-b2d87425aefd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 219–237.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private theorem mem_mkSafeInterval_of_le_le {x : ℝ} {a b : ℚ}
+    (ha : (a : ℝ) ≤ x) (hb : x ≤ (b : ℝ)) :
+    x ∈ mkSafeInterval a b := by
+  simp only [mkSafeInterval, IntervalRat.mem_def, Rat.cast_min, inf_le_iff, Rat.cast_max,
+    le_sup_iff]
+  exact ⟨Or.inl ha, Or.inr hb⟩
+
+/-- Extended inversion: handles 1/I when I may contain zero.
+
+    Cases:
+    1. I strictly positive → standard inversion [1/hi, 1/lo]
+    2. I strictly negative → standard inversion [1/hi, 1/lo]
+    3. I straddles zero → split into two parts: (-∞, 1/lo] ∪ [1/hi, ∞)
+    4. I = [0, b] with b > 0 → [1/b, ∞)
+    5. I = [a, 0] with a < 0 → (-∞, 1/a]
+    6. I = [0, 0] → empty (1/0 is undefined)
+
+    NOTE: Uses large_bound (default 10^30) to represent ±∞. For inputs with
+    |lo|, |hi| ≥ 10^-30, the bounds are guaranteed valid. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Extended/Variant3c445e4bcf0bf511b5bd438758cc61bb1449bed16cff9d6724d87c10d44eee93.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Extended/Variant3c445e4bcf0bf511b5bd438758cc61bb1449bed16cff9d6724d87c10d44eee93.lean#L219).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3407862e03ef0fb006b96323c7e78f6fa603fa2e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

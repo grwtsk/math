@@ -1,0 +1,111 @@
+# acceptedTrace_has_no_advisory_gamma
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "cfa34de4c2c0a4aa0867c8e91bfbccbd2439d839",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 317,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/87/87a285b99c2452903db3dae0e0d68664b9df242e94e9f92fcf605a645f5cc069.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:cf766585-91e7-223e-5591-a3badd4dd8e4",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:b2c5e65e-d942-de5d-0ee7-79aa37232265",
+  "kind": "theorem",
+  "lexical_name": "acceptedTrace_has_no_advisory_gamma",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "acceptedtrace-has-no-advisory-gamma--3e4d7f2b3d1bbe7b7efed40c",
+  "source": {
+    "blob": "cfa34de4c2c0a4aa0867c8e91bfbccbd2439d839",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 334,
+    "line": 317,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Soundness/Variant87a285b99c2452903db3dae0e0d68664b9df242e94e9f92fcf605a645f5cc069.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:3e4d7f2b3d1bbe7b7efed40cab809e2d73f45d8889d8afd824b51eab32d9d7c8",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Soundness/Variant87a285b99c2452903db3dae0e0d68664b9df242e94e9f92fcf605a645f5cc069.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b2c5e65e-d942-de5d-0ee7-79aa37232265`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 317–334.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem acceptedTrace_has_no_advisory_gamma {submission : RuntimeSubmission}
+    (accepted : AcceptedTrace submission) :
+    ∃ manifest request trace,
+      decodeManifest submission.manifestWire = some manifest ∧
+      decodeRequest submission.requestWire = some request ∧
+      decodeTrace submission.traceWire = some trace ∧
+      manifest.gammaEnclosures = [] ∧
+      trace.spectralGrid = [] ∧ trace.gammaEnclosures = [] := by
+  obtain ⟨manifest, request, trace, operator, formalOutput,
+    manifestDecoded, requestDecoded, traceDecoded, _, _, conditions⟩ :=
+    acceptedTrace_sound accepted
+  exact ⟨manifest, request, trace, manifestDecoded, requestDecoded, traceDecoded,
+    conditions.2.2.2.2.2.2.2.2.2.2.2.2.1,
+    conditions.2.2.2.2.2.2.2.2.2.2.2.2.2.1,
+    conditions.2.2.2.2.2.2.2.2.2.2.2.2.2.2.1⟩
+
+/-- A structurally decoded advisory Gamma record cannot be promoted by the
+finite-operation verifier. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Soundness/Variant87a285b99c2452903db3dae0e0d68664b9df242e94e9f92fcf605a645f5cc069.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Soundness/Variant87a285b99c2452903db3dae0e0d68664b9df242e94e9f92fcf605a645f5cc069.lean#L317).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cfa34de4c2c0a4aa0867c8e91bfbccbd2439d839` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

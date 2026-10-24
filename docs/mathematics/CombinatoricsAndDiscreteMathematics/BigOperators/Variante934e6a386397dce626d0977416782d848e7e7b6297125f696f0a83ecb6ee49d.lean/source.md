@@ -1,0 +1,78 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.BigOperators.Variante934e6a386397dce626d0977416782d848e7e7b6297125f696f0a83ecb6ee49d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `176d0bb1a8d111dac44e766bc71216feaa125c1b` · SHA-256 `ef9d544f3684f07ff232d9fb7de3d8c3cc0e5e3efac4a37a50171896762dacea`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.CastListSum.Variant1bc9ad3c9236387eb705c942054764e9cce0a47ea553d2e36af736ba2cb99175","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1bc9ad3c9236387eb705c942054764e9cce0a47ea553d2e36af736ba2cb99175","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.CastListSum.Variant1bc9ad3c9236387eb705c942054764e9cce0a47ea553d2e36af736ba2cb99175","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"1bc9ad3c9236387eb705c942054764e9cce0a47ea553d2e36af736ba2cb99175","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Data/Rat/BigOperators.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2019 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Mario Carneiro
+-/
+import Mathlib.Data.Rat.Cast
+import Mathlib.Algebra.BigOperators.Basic
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.CastListSum.Variant1bc9ad3c9236387eb705c942054764e9cce0a47ea553d2e36af736ba2cb99175
+
+#align_import data.rat.big_operators from "leanprover-community/mathlib"@"008205aa645b3f194c1da47025c5f110c8406eab"
+
+/-! # Casting lemmas for rational numbers involving sums and products
+-/
+
+open BigOperators
+
+variable {ι α : Type*}
+
+namespace Rat
+
+section WithDivRing
+
+variable [DivisionRing α] [CharZero α]
+
+@[simp, norm_cast]
+theorem cast_list_sum (s : List ℚ) : (↑s.sum : α) = (s.map (↑)).sum :=
+  map_list_sum (Rat.castHom α) _
+#align rat.cast_list_sum Rat.cast_list_sum
+
+@[simp, norm_cast]
+theorem cast_multiset_sum (s : Multiset ℚ) : (↑s.sum : α) = (s.map (↑)).sum :=
+  map_multiset_sum (Rat.castHom α) _
+#align rat.cast_multiset_sum Rat.cast_multiset_sum
+
+@[simp, norm_cast]
+theorem cast_sum (s : Finset ι) (f : ι → ℚ) : ∑ i in s, f i = ∑ i in s, (f i : α) :=
+  (map_sum (Rat.castHom α) _ s)
+#align rat.cast_sum Rat.cast_sum
+
+@[simp, norm_cast]
+theorem cast_list_prod (s : List ℚ) : (↑s.prod : α) = (s.map (↑)).prod :=
+  map_list_prod (Rat.castHom α) _
+#align rat.cast_list_prod Rat.cast_list_prod
+
+end WithDivRing
+
+section Field
+
+variable [Field α] [CharZero α]
+
+@[simp, norm_cast]
+theorem cast_multiset_prod (s : Multiset ℚ) : (↑s.prod : α) = (s.map (↑)).prod :=
+  map_multiset_prod (Rat.castHom α) _
+#align rat.cast_multiset_prod Rat.cast_multiset_prod
+
+@[simp, norm_cast]
+theorem cast_prod (s : Finset ι) (f : ι → ℚ) : ∏ i in s, f i = ∏ i in s, (f i : α) :=
+  map_prod (Rat.castHom α) _ _
+#align rat.cast_prod Rat.cast_prod
+
+end Field
+
+end Rat
+```

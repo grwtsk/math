@@ -1,0 +1,99 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.Interval.Variant0d965a3db1e57107bef999485d64fb0802b8098d6ef01f1d898f4c5f6a8fd062
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6d27c972752373fe3cb1ca4858f59fc9ae5f377b` · SHA-256 `7b6d8faa66c6f1e5cb4abb49ef0967c884da3064b4354cfc90e172c6f28f0464`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.IccEq.Varianta0ee87d888baaf17853e7eb4ff176ec67a6a4a8d3def6762a0c99e428728723c","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a0ee87d888baaf17853e7eb4ff176ec67a6a4a8d3def6762a0c99e428728723c","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.IccEq.Varianta0ee87d888baaf17853e7eb4ff176ec67a6a4a8d3def6762a0c99e428728723c","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"a0ee87d888baaf17853e7eb4ff176ec67a6a4a8d3def6762a0c99e428728723c","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Data/Multiset/Interval.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+module
+
+public import Mathlib.Data.DFinsupp.Interval
+public import Mathlib.Data.DFinsupp.Multiset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Order.Lattice.Nat
+public import Mathlib.Algebra.Order.Group.Nat
+
+/-!
+# Finite intervals of multisets
+
+This file provides the `LocallyFiniteOrder` instance for `Multiset α` and calculates the
+cardinality of its finite intervals.
+
+## Implementation notes
+
+We implement the intervals via the intervals on `DFinsupp`, rather than via filtering
+`Multiset.Powerset`; this is because `(Multiset.replicate n x).Powerset` has `2^n` entries not `n+1`
+entries as it contains duplicates. We do not go via `Finsupp` as this would be noncomputable, and
+multisets are typically used computationally.
+
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.IccEq.Varianta0ee87d888baaf17853e7eb4ff176ec67a6a4a8d3def6762a0c99e428728723c
+
+public section
+
+
+open Finset DFinsupp
+
+open scoped Pointwise
+
+variable {α : Type*}
+
+namespace Multiset
+
+variable [DecidableEq α] (s t : Multiset α)
+
+instance instLocallyFiniteOrder : LocallyFiniteOrder (Multiset α) :=
+  LocallyFiniteOrder.ofIcc (Multiset α)
+    (fun s t => (Finset.Icc (toDFinsupp s) (toDFinsupp t)).map
+      Multiset.equivDFinsupp.toEquiv.symm.toEmbedding)
+    fun s t x => by simp
+
+theorem Icc_eq :
+    Finset.Icc s t = (Finset.Icc (toDFinsupp s) (toDFinsupp t)).map
+      Multiset.equivDFinsupp.toEquiv.symm.toEmbedding :=
+  rfl
+
+theorem uIcc_eq :
+    uIcc s t =
+      (uIcc (toDFinsupp s) (toDFinsupp t)).map Multiset.equivDFinsupp.toEquiv.symm.toEmbedding :=
+  (Icc_eq _ _).trans <| by simp [uIcc]
+
+theorem card_Icc :
+    #(Finset.Icc s t) = ∏ i ∈ s.toFinset ∪ t.toFinset, (t.count i + 1 - s.count i) := by
+  simp_rw [Icc_eq, Finset.card_map, DFinsupp.card_Icc, Nat.card_Icc, Multiset.toDFinsupp_apply,
+    toDFinsupp_support]
+
+theorem card_Ico :
+    #(Finset.Ico s t) = ∏ i ∈ s.toFinset ∪ t.toFinset, (t.count i + 1 - s.count i) - 1 := by
+  rw [Finset.card_Ico_eq_card_Icc_sub_one, card_Icc]
+
+theorem card_Ioc :
+    #(Finset.Ioc s t) = ∏ i ∈ s.toFinset ∪ t.toFinset, (t.count i + 1 - s.count i) - 1 := by
+  rw [Finset.card_Ioc_eq_card_Icc_sub_one, card_Icc]
+
+theorem card_Ioo :
+    #(Finset.Ioo s t) = ∏ i ∈ s.toFinset ∪ t.toFinset, (t.count i + 1 - s.count i) - 2 := by
+  rw [Finset.card_Ioo_eq_card_Icc_sub_two, card_Icc]
+
+theorem card_uIcc :
+    (uIcc s t).card = ∏ i ∈ s.toFinset ∪ t.toFinset, ((t.count i - s.count i : ℤ).natAbs + 1) := by
+  simp_rw [uIcc_eq, Finset.card_map, DFinsupp.card_uIcc, Nat.card_uIcc, Multiset.toDFinsupp_apply,
+    toDFinsupp_support]
+
+theorem card_Iic : (Finset.Iic s).card = ∏ i ∈ s.toFinset, (s.count i + 1) := by
+  simp_rw [Iic_eq_Icc, card_Icc, bot_eq_zero, toFinset_zero, empty_union, count_zero, tsub_zero]
+
+end Multiset
+```

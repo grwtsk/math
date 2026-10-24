@@ -1,0 +1,139 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.AList.Variant919c6d15fa7868124aafc21e45f77543a27ba3cf4e26a855389864b677081fe5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8e8cbbbdb76c0d38130d97f687b8c5c9d91aca4b` · SHA-256 `623a990d0749d00d34ff643761bb8decab840163a9e11a1d20de7ed4d2bb7184`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ToAList.Variant38cff016f3a616fda7a15ddb857a374a8fd3b3220e236dae106ed0a49055cf17","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"38cff016f3a616fda7a15ddb857a374a8fd3b3220e236dae106ed0a49055cf17","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.ToAList.Variant38cff016f3a616fda7a15ddb857a374a8fd3b3220e236dae106ed0a49055cf17","mathematical_subject":"Computation.DataStructures","original_sha256":"38cff016f3a616fda7a15ddb857a374a8fd3b3220e236dae106ed0a49055cf17","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/Finsupp/AList.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Violeta Hernández Palacios. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Violeta Hernández Palacios
+-/
+import Mathlib.Data.Finsupp.Basic
+import Mathlib.Data.List.AList
+
+/-!
+# Connections between `Finsupp` and `AList`
+
+## Main definitions
+
+* `Finsupp.toAList`
+* `AList.lookupFinsupp`: converts an association list into a finitely supported function
+  via `AList.lookup`, sending absent keys to zero.
+
+-/
+
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ToAList.Variant38cff016f3a616fda7a15ddb857a374a8fd3b3220e236dae106ed0a49055cf17
+
+namespace Finsupp
+
+variable {α M : Type*} [Zero M]
+
+/-- Produce an association list for the finsupp over its support using choice. -/
+@[simps]
+noncomputable def toAList (f : α →₀ M) : AList fun _x : α => M :=
+  ⟨f.graph.toList.map Prod.toSigma,
+    by
+      rw [List.NodupKeys, List.keys, List.map_map, Prod.fst_comp_toSigma, List.nodup_map_iff_inj_on]
+      · rintro ⟨b, m⟩ hb ⟨c, n⟩ hc (rfl : b = c)
+        rw [Finset.mem_toList, Finsupp.mem_graph_iff] at hb hc
+        dsimp at hb hc
+        rw [← hc.1, hb.1]
+      · apply Finset.nodup_toList⟩
+
+@[simp]
+theorem toAList_keys_toFinset [DecidableEq α] (f : α →₀ M) :
+    f.toAList.keys.toFinset = f.support := by
+  ext
+  simp [toAList, AList.mem_keys, AList.keys, List.keys]
+
+@[simp]
+theorem mem_toAlist {f : α →₀ M} {x : α} : x ∈ f.toAList ↔ f x ≠ 0 := by
+  classical rw [AList.mem_keys, ← List.mem_toFinset, toAList_keys_toFinset, mem_support_iff]
+
+end Finsupp
+
+namespace AList
+
+variable {α M : Type*} [Zero M]
+
+open List
+
+/-- Converts an association list into a finitely supported function via `AList.lookup`, sending
+absent keys to zero. -/
+noncomputable def lookupFinsupp (l : AList fun _x : α => M) : α →₀ M where
+  support := by
+    haveI := Classical.decEq α; haveI := Classical.decEq M
+    exact (l.1.filter fun x => Sigma.snd x ≠ 0).keys.toFinset
+  toFun a :=
+    haveI := Classical.decEq α
+    (l.lookup a).getD 0
+  mem_support_toFun a := by
+    classical
+      simp_rw [mem_toFinset, List.mem_keys, List.mem_filter, ← mem_lookup_iff]
+      cases lookup a l <;> simp
+
+@[simp]
+theorem lookupFinsupp_apply [DecidableEq α] (l : AList fun _x : α => M) (a : α) :
+    l.lookupFinsupp a = (l.lookup a).getD 0 := by
+  simp only [lookupFinsupp, ne_eq, Finsupp.coe_mk]
+  congr
+
+@[simp]
+theorem lookupFinsupp_support [DecidableEq α] [DecidableEq M] (l : AList fun _x : α => M) :
+    l.lookupFinsupp.support = (l.1.filter fun x => Sigma.snd x ≠ 0).keys.toFinset := by
+  dsimp only [lookupFinsupp]
+  congr!
+
+theorem lookupFinsupp_eq_iff_of_ne_zero [DecidableEq α] {l : AList fun _x : α => M} {a : α} {x : M}
+    (hx : x ≠ 0) : l.lookupFinsupp a = x ↔ x ∈ l.lookup a := by
+  rw [lookupFinsupp_apply]
+  rcases lookup a l with - | m <;> simp [hx.symm]
+
+theorem lookupFinsupp_eq_zero_iff [DecidableEq α] {l : AList fun _x : α => M} {a : α} :
+    l.lookupFinsupp a = 0 ↔ a ∉ l ∨ (0 : M) ∈ l.lookup a := by
+  rw [lookupFinsupp_apply, ← lookup_eq_none]
+  rcases lookup a l with - | m <;> simp
+
+@[simp]
+theorem empty_lookupFinsupp : lookupFinsupp (∅ : AList fun _x : α => M) = 0 := by
+  classical
+    ext
+    simp
+
+@[simp]
+theorem insert_lookupFinsupp [DecidableEq α] (l : AList fun _x : α => M) (a : α) (m : M) :
+    (l.insert a m).lookupFinsupp = l.lookupFinsupp.update a m := by
+  ext b
+  by_cases h : b = a <;> simp [h]
+
+@[simp]
+theorem singleton_lookupFinsupp (a : α) (m : M) :
+    (singleton a m).lookupFinsupp = Finsupp.single a m := by
+  classical
+  simp [← AList.insert_empty]
+
+@[simp]
+theorem _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ToAList.Variant38cff016f3a616fda7a15ddb857a374a8fd3b3220e236dae106ed0a49055cf17.Finsupp.toAList_lookupFinsupp (f : α →₀ M) : f.toAList.lookupFinsupp = f := by
+  ext a
+  classical
+    by_cases h : f a = 0
+    · suffices f.toAList.lookup a = none by simp [h, this]
+      simp [lookup_eq_none, h]
+    · suffices f.toAList.lookup a = some (f a) by simp [h, this]
+      apply mem_lookup_iff.2
+      simpa using h
+
+theorem lookupFinsupp_surjective : Function.Surjective (@lookupFinsupp α M _) := fun f =>
+  ⟨_, Finsupp.toAList_lookupFinsupp f⟩
+
+end AList
+```

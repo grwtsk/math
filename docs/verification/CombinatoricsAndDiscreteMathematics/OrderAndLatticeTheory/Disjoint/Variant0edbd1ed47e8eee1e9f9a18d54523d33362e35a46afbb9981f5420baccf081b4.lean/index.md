@@ -1,0 +1,108 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.Disjoint.Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "511febc33dfd866fff092d3cbe16e4fcb5c0f5ab",
+  "lexical_observation_count": 47,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/index.md) · [Full source](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `511febc33dfd866fff092d3cbe16e4fcb5c0f5ab`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [Iic_disjoint_Ioi](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iic-disjoint-ioi--e6916394a7ce209a9d8f2870.md) | 41 | `result-track:e6916394a7ce209a9d8f28705a968471bf7369f455a658791cc90bcbf3cde3a1` |
+| 2 | `theorem` | [Iio_disjoint_Ici](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iio-disjoint-ici--0748cddc5cc54bab9bca175d.md) | 45 | `result-track:0748cddc5cc54bab9bca175d1f753aa0650c7baee0ebe10b1361b6a3d8be7afa` |
+| 3 | `theorem` | [Iic_disjoint_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iic-disjoint-ioc--76f33f4cb32c336e41490ab0.md) | 49 | `result-track:76f33f4cb32c336e41490ab0f6760921812fe2443513e47ea98938383b437a4f` |
+| 4 | `theorem` | [Ioc_disjoint_Ioc_of_le](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioc-disjoint-ioc-of-le--bda63b832af2cbd004549e40.md) | 53 | `result-track:bda63b832af2cbd004549e401f2ddf28c63ad508895f2e500f4202bab93fefca` |
+| 5 | `theorem` | [Ico_disjoint_Ico_same](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ico-disjoint-ico-same--cd0ace743273ab7ca84573d7.md) | 57 | `result-track:cd0ace743273ab7ca84573d7931435f03806535b7814887185aa2ea763b549b9` |
+| 6 | `theorem` | [Ici_disjoint_Iic](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ici-disjoint-iic--9dcf39fe0352512fb0e82a86.md) | 61 | `result-track:9dcf39fe0352512fb0e82a861b95d8a712c6542bcb55789a2a721ff78449cf99` |
+| 7 | `theorem` | [Ioc_disjoint_Ioi](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioc-disjoint-ioi--e9039748d4f453ad09fc8b62.md) | 65 | `result-track:e9039748d4f453ad09fc8b62c8111259f47ae9eade3ebdd2fa466746d3dc989f` |
+| 8 | `theorem` | [Ioc_disjoint_Ioi_same](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioc-disjoint-ioi-same--088ec0db510300c697aca545.md) | 68 | `result-track:088ec0db510300c697aca5451840baa3aeca8b0ebee3de3dd939229eb80e61ac` |
+| 9 | `theorem` | [Ioi_disjoint_Iio_of_not_lt](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioi-disjoint-iio-of-not-lt--6ff5fe7013db8415d782534f.md) | 72 | `result-track:6ff5fe7013db8415d782534f84937b4089e10f4a4041ac2457e68e592b1b2e14` |
+| 10 | `theorem` | [Ioi_disjoint_Iio_of_le](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioi-disjoint-iio-of-le--87581519d1325d27be0a477d.md) | 76 | `result-track:87581519d1325d27be0a477dc845e0fdec201069740b895423d122cfbc772932` |
+| 11 | `theorem` | [Ioi_disjoint_Iio_same](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioi-disjoint-iio-same--64631702bd9ac97adc659247.md) | 80 | `result-track:64631702bd9ac97adc659247f59931d972148514c2ba87dfa3e6a21d300fc4e0` |
+| 12 | `theorem` | [Ioi_disjoint_Iio_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioi-disjoint-iio-iff--4b9e400e18c845acfd45a034.md) | 84 | `result-track:4b9e400e18c845acfd45a034c96c8cb48196e3eecf876aa1cc4681325c80f0e6` |
+| 13 | `theorem` | [iUnion_Iic](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iic--9007b06a1fab4f092fd0c35d.md) | 90 | `result-track:9007b06a1fab4f092fd0c35d502629c8ddbd87e4957a632db6da836d0ac0528f` |
+| 14 | `theorem` | [iUnion_Icc_right](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-icc-right--ba674b1862f7ce5b618c9360.md) | 94 | `result-track:ba674b1862f7ce5b618c9360bca0edb3511773aabe4dbda386fa62961ca49ed3` |
+| 15 | `theorem` | [iUnion_Ioc_right](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ioc-right--bf83db16de15f852176b5233.md) | 98 | `result-track:bf83db16de15f852176b52334d365e197f08bc7105a6329097c46ab5b62224c8` |
+| 16 | `theorem` | [iUnion_Iio](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iio--936de10cfe9f28eba82dd2ad.md) | 102 | `result-track:936de10cfe9f28eba82dd2ad237d7106470905f4ad7b7e894845d92f99b4d4ec` |
+| 17 | `theorem` | [iUnion_Ico_right](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ico-right--1d245320cf0403c91e9e796d.md) | 106 | `result-track:1d245320cf0403c91e9e796d323aa962b23f304392fb74355512f809ab33747c` |
+| 18 | `theorem` | [iUnion_Ioo_right](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ioo-right--afe4e2fb65c947d784c06e0e.md) | 110 | `result-track:afe4e2fb65c947d784c06e0e60ba927faf20dbece083f8c8f9564bd98eaa2661` |
+| 19 | `theorem` | [Ico_disjoint_Ico](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ico-disjoint-ico--b28813b1b9f5bc2cf16e2ee7.md) | 120 | `result-track:b28813b1b9f5bc2cf16e2ee7a7ca696720012f6b82cfae2562d53f59d3c9a22e` |
+| 20 | `theorem` | [Ioc_disjoint_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioc-disjoint-ioc--332214b51d21b300faa0322c.md) | 124 | `result-track:332214b51d21b300faa0322cea26869100cff84cc8775df9d537f0de86f48960` |
+| 21 | `theorem` | [Ioo_disjoint_Ioo](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/ioo-disjoint-ioo--174374892f0b79b990618966.md) | 129 | `result-track:174374892f0b79b99061896693c69717be0bb9fd22fc82efffc31a32afbf4732` |
+| 22 | `theorem` | [eq_of_Ico_disjoint](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/eq-of-ico-disjoint--62f6c58117021eaa36cb4609.md) | 135 | `result-track:62f6c58117021eaa36cb46096d47a507d4c233f854b76bb722fe49fb6ebf38bd` |
+| 23 | `theorem` | [iUnion_Ico_eq_Iio_self_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ico-eq-iio-self-iff--08f39a56a3778fcb476b01ed.md) | 142 | `result-track:08f39a56a3778fcb476b01ed14b5b257cfb154b1d2aa25cee5307db90d61eb34` |
+| 24 | `theorem` | [iUnion_Ioc_eq_Ioi_self_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ioc-eq-ioi-self-iff--461be3542b583d7800c08989.md) | 147 | `result-track:461be3542b583d7800c089894c5c5252c842cac8db3460d836ba12a33d9caedb` |
+| 25 | `theorem` | [iUnion_Icc_eq_Ici_self_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-icc-eq-ici-self-iff--8ae35db9a60258ce380b2a2a.md) | 152 | `result-track:8ae35db9a60258ce380b2a2ad8d341f283dda20dd524948272b43322ce89cb24` |
+| 26 | `theorem` | [biUnion_Ico_eq_Iio_self_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/biunion-ico-eq-iio-self-iff--2132d8b800a05df9d633a05c.md) | 157 | `result-track:2132d8b800a05df9d633a05cbfbf09bbc7da9c19089b7d119bf7598091fe1555` |
+| 27 | `theorem` | [biUnion_Ioc_eq_Ioi_self_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/biunion-ioc-eq-ioi-self-iff--812cce84d6d152e98914fa9c.md) | 162 | `result-track:812cce84d6d152e98914fa9cf1fdac59cb2535c0598856032620a0f3373a0b63` |
+| 28 | `theorem` | [IsLeast.biUnion_Ici_eq_Ici](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/isleast-biunion-ici-eq-ici--7966f815969cebf7d1a606e0.md) | 177 | `result-track:7966f815969cebf7d1a606e0890722c5fd59a53edb5118f21a94b5392f1db2bf` |
+| 29 | `theorem` | [IsGLB.biUnion_Ici_eq_Ici](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/isglb-biunion-ici-eq-ici--9dfdc2b3f95f7192f5452ab2.md) | 182 | `result-track:9dfdc2b3f95f7192f5452ab2fc3720e2891f9d49b0e91d0b8d6dfcb593947eb0` |
+| 30 | `theorem` | [IsLeast.biUnion_Ioi_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/isleast-biunion-ioi-eq--b2564f742c1ed5e191d4b35c.md) | 186 | `result-track:b2564f742c1ed5e191d4b35cee688f11ed84c180cea4cebb9031cf0cc73f8515` |
+| 31 | `theorem` | [biUnion_Ici_eq_Ici_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/biunion-ici-eq-ici-iff--b836f97589673c1d3bea5d96.md) | 197 | `result-track:b836f97589673c1d3bea5d962634d657d695e0e1bad15e122b2da44edfc7fff5` |
+| 32 | `theorem` | [IsGLB.biUnion_Ioi_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/isglb-biunion-ioi-eq--44b7bd917201def62a20ef85.md) | 209 | `result-track:44b7bd917201def62a20ef85191380cc1854478abf1d2f43931b48dfdaf4c16d` |
+| 33 | `theorem` | [IsGLB.iUnion_Ioi_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/isglb-iunion-ioi-eq--e7841c4e2818199874882909.md) | 215 | `result-track:e7841c4e28181998748829095d488cb29e2c87061e1e8dafc72b479c2f95ff5a` |
+| 34 | `theorem` | [IsLUB.biUnion_Iio_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/islub-biunion-iio-eq--e3bc6f414bd344c9dc19d498.md) | 218 | `result-track:e3bc6f414bd344c9dc19d49891fdce4a16dba34377af02eed3b372c8bfd415b2` |
+| 35 | `theorem` | [IsLUB.iUnion_Iio_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/islub-iunion-iio-eq--2f2c41a7db5378db8af20a99.md) | 221 | `result-track:2f2c41a7db5378db8af20a99bfeb80f1a1317c8458caf2acd1bdc0afa8e24968` |
+| 36 | `theorem` | [iUnion_Ioi_eq_Ioi_iInf](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ioi-eq-ioi-iinf--1e66c259741e972ba2180192.md) | 224 | `result-track:1e66c259741e972ba2180192e2e4ae05969e2b5426ecd5659a50fd46781e2c6f` |
+| 37 | `theorem` | [iUnion_Iio_eq_Iio_iSup](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iio-eq-iio-isup--708e0173c2aa672478f2e1f5.md) | 228 | `result-track:708e0173c2aa672478f2e1f56baefae6de4de38163b2ca923ed91d31850e5f6a` |
+| 38 | `theorem` | [IsGLB.biUnion_Ici_eq_Ioi](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/isglb-biunion-ici-eq-ioi--1588a306a982158ebbb99e83.md) | 232 | `result-track:1588a306a982158ebbb99e836c109fc8502f8b07d42f9c36b81a100310df0d86` |
+| 39 | `theorem` | [IsLUB.biUnion_Iic_eq_Iio](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/islub-biunion-iic-eq-iio--5143bc7acc637687d77083ee.md) | 240 | `result-track:5143bc7acc637687d77083eec88542c566d0a483c3278d0487c6045465574c20` |
+| 40 | `theorem` | [iUnion_Ici_eq_Ioi_iInf](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ici-eq-ioi-iinf--95d8fdef078c2a95d196ae06.md) | 244 | `result-track:95d8fdef078c2a95d196ae069de8110708111daad67fa70973769f151d63bcfd` |
+| 41 | `theorem` | [iUnion_Iic_eq_Iio_iSup](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iic-eq-iio-isup--321cce90a8d25af222d1d82c.md) | 249 | `result-track:321cce90a8d25af222d1d82cc3b5f5287fa8278ae3e41fa29125989dc1ed469a` |
+| 42 | `theorem` | [iUnion_Ici_eq_Ici_iInf](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-ici-eq-ici-iinf--e23bb715a38aa442745e04b5.md) | 253 | `result-track:e23bb715a38aa442745e04b55a846558bc69ea3f112070d99416b6292a31530c` |
+| 43 | `theorem` | [iUnion_Iic_eq_Iic_iSup](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iic-eq-iic-isup--a6e1eb5c9e6b8a156737f8b4.md) | 257 | `result-track:a6e1eb5c9e6b8a156737f8b437b3592b81f1648ccd9607c4f6fba3cf7f4223ae` |
+| 44 | `theorem` | [iUnion_Iio_eq_univ_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iio-eq-univ-iff--af347def3dae7d0ee55a732b.md) | 261 | `result-track:af347def3dae7d0ee55a732b9b6df9ecb1e82ce4897e62fd699ad968a4d4e8e1` |
+| 45 | `theorem` | [iUnion_Iic_of_not_bddAbove_range](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iunion-iic-of-not-bddabove-range--e25cb1f6601ca86a99226200.md) | 264 | `result-track:e25cb1f6601ca86a9922620097d9233da0f9631c63e0850e5bb11edfbee7d13b` |
+| 46 | `theorem` | [iInter_Iic_eq_empty_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iinter-iic-eq-empty-iff--70023f8f98ff0ac9df19519d.md) | 269 | `result-track:70023f8f98ff0ac9df19519dc1f9eb5d7195302e9d54afff35d08bc8190d73ae` |
+| 47 | `theorem` | [iInter_Iio_of_not_bddBelow_range](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Disjoint/Variant0edbd1ed47e8eee1e9f9a18d54523d33362e35a46afbb9981f5420baccf081b4.lean/declarations/iinter-iio-of-not-bddbelow-range--4c175fb79511a60e180b5ae3.md) | 272 | `result-track:4c175fb79511a60e180b5ae3fa5c8a3e8381badaa1b5a902fcc769547e4f3695` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

@@ -1,0 +1,84 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ByteMatrix.Variantabdb2d233d4610986abc902a593c9f6292b27755fbd9d6ee3a7db78e4201f29e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `efa16cfdb76e80f907da2c4e9ca5645caca727b2` · SHA-256 `abdb2d233d4610986abc902a593c9f6292b27755fbd9d6ee3a7db78e4201f29e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Folder.Archive.Byte
+import Folder.Carrier.BinaryMatrix
+
+/-!
+# Folder.Archive.ByteMatrix
+
+Radiation role: archive-codec
+BinaryMatrix spine: This module represents byte payloads as 8-column BinaryMatrix values.
+Ontology: archive.byte_matrix
+Pivot role: none
+Zero typology: none
+Contract boundary: proved
+Composite stack role: carrier
+-/
+
+namespace Folder
+namespace Archive
+
+def bytesToMatrixWith
+    (C : Byte.ByteCodec)
+    (bs : List Byte) :
+    Carrier.BinaryMatrix :=
+  Carrier.BinaryMatrix.ofFunction bs.length 8
+    (fun i j => C.toBits (bs.get i) j)
+
+def matrixToBytesWith
+    (C : Byte.ByteCodec)
+    (M : Carrier.BinaryMatrix) :
+    Option (List Byte) :=
+  some (List.ofFn
+    (fun i : Fin M.m =>
+      C.ofBits (fun j : Fin 8 =>
+        if h : j.val < M.n then
+          M.get i ⟨j.val, h⟩
+        else
+          0)))
+
+theorem matrixToBytes?_bytesToMatrix_of_codec
+    (C : Byte.ByteCodec)
+    (bs : List Byte) :
+    matrixToBytesWith C (bytesToMatrixWith C bs) = some bs := by
+  change
+    some (List.ofFn
+      (fun i : Fin bs.length =>
+        C.ofBits (fun j : Fin 8 =>
+          if h : j.val < 8 then
+            C.toBits (bs.get i) ⟨j.val, h⟩
+          else
+            0))) = some bs
+  congr
+  have hfun :
+      (fun i : Fin bs.length =>
+        C.ofBits (fun j : Fin 8 =>
+          if h : j.val < 8 then
+            C.toBits (bs.get i) ⟨j.val, h⟩
+          else
+            0)) =
+        (fun i : Fin bs.length => bs.get i) := by
+    funext i
+    have hbits :
+        (fun j : Fin 8 =>
+          if h : j.val < 8 then
+            C.toBits (bs.get i) ⟨j.val, h⟩
+          else
+            0) = C.toBits (bs.get i) := by
+      funext j
+      by_cases h : j.val < 8
+      · have hj : (⟨j.val, h⟩ : Fin 8) = j := Fin.ext rfl
+        simp [h, hj]
+      · exact False.elim (h j.isLt)
+    rw [hbits, C.roundtrip]
+  rw [hfun]
+  exact List.ofFn_get bs
+
+end Archive
+end Folder
+```

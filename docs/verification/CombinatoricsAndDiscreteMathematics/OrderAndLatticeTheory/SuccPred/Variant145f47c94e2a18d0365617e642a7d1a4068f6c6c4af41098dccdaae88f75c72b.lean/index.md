@@ -1,0 +1,105 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.SuccPred.Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e63475d89e2c0fa3d4d12b77ddbc3556a5151325",
+  "lexical_observation_count": 43,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/index.md) · [Full source](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e63475d89e2c0fa3d4d12b77ddbc3556a5151325`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Order.SuccPred` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Interval.Set.SuccPred` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [Ico_add_one_left_eq_Ioo](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ico-add-one-left-eq-ioo--7b0df0be41333913f62d773a.md) | 45 | `result-track:7b0df0be41333913f62d773ade58adb9f07b2ed4f3927d4c9874e3e4671e793b` |
+| 2 | `lemma` | [Icc_add_one_left_eq_Ioc_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/icc-add-one-left-eq-ioc-of-not-ismax--ceeb41b885f284ccfe064e5f.md) | 48 | `result-track:ceeb41b885f284ccfe064e5f6cf64f1a9384d20bed98e3a98947768b0bd1f079` |
+| 3 | `lemma` | [Ico_add_one_right_eq_Icc_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ico-add-one-right-eq-icc-of-not-ismax--357d277b147925150ad1b624.md) | 51 | `result-track:357d277b147925150ad1b6245361b7fbba4f52f588a6e6ac7ef5a2d850cca540` |
+| 4 | `lemma` | [Ioo_add_one_right_eq_Ioc_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioo-add-one-right-eq-ioc-of-not-ismax--d3e50a7b574bc71c2f72ea79.md) | 54 | `result-track:d3e50a7b574bc71c2f72ea79ac6f17f78452ea16528c26c016590baf2b9879ba` |
+| 5 | `lemma` | [Ico_add_one_add_one_eq_Ioc_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ico-add-one-add-one-eq-ioc-of-not-ismax--215204d7b336e1d693676342.md) | 57 | `result-track:215204d7b336e1d6936763428b68f843d082f90065a1c50e230fd66362a131cd` |
+| 6 | `lemma` | [insert_Icc_add_one_left_eq_Icc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-icc-add-one-left-eq-icc--f6297197f7844151875f073f.md) | 63 | `result-track:f6297197f7844151875f073f603632347acc91db000f1102b021433727b4439c` |
+| 7 | `lemma` | [insert_Icc_right_eq_Icc_add_one](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-icc-right-eq-icc-add-one--1f6870842fc3b25827bcc5e1.md) | 66 | `result-track:1f6870842fc3b25827bcc5e10d48b1b0a53abf9b6e7c75daefcd750b53f00bcd` |
+| 8 | `lemma` | [insert_Ico_right_eq_Ico_add_one_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ico-right-eq-ico-add-one-of-not-ismax--a83d2aa7897b2adf135df7a4.md) | 73 | `result-track:a83d2aa7897b2adf135df7a40dbfefb27198b15b87f680d481f7d1007ac75115` |
+| 9 | `lemma` | [insert_Ico_add_one_left_eq_Ico](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ico-add-one-left-eq-ico--45312ecf0feb4a7616e7132d.md) | 81 | `result-track:45312ecf0feb4a7616e7132db268c3ce861087cc4cfd242f17172090452a4cc0` |
+| 10 | `lemma` | [insert_Ioc_right_eq_Ioc_add_one_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ioc-right-eq-ioc-add-one-of-not-ismax--d7438fa3ef4842282cb62661.md) | 84 | `result-track:d7438fa3ef4842282cb626611b34327bd15f68695272cdb161b9c3c0eb5c0662` |
+| 11 | `lemma` | [insert_Ioc_add_one_left_eq_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ioc-add-one-left-eq-ioc--790c85cb7061e871e204db40.md) | 88 | `result-track:790c85cb7061e871e204db40584585608f3984b65dceb4deeda20b278de6bb06` |
+| 12 | `lemma` | [Icc_add_one_left_eq_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/icc-add-one-left-eq-ioc--f47cec4722e2dc9d278ba515.md) | 99 | `result-track:f47cec4722e2dc9d278ba5152c30c353f16909e09da19c83f8c7ae172e7498d0` |
+| 13 | `lemma` | [Ico_add_one_right_eq_Icc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ico-add-one-right-eq-icc--a0c58c57acc48e31d3db1aae.md) | 102 | `result-track:a0c58c57acc48e31d3db1aaedb3911e9f4da811d2439a731c1faff9a4662e29d` |
+| 14 | `lemma` | [Ioo_add_one_right_eq_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioo-add-one-right-eq-ioc--80592497f770abc9a88f0539.md) | 105 | `result-track:80592497f770abc9a88f0539fca42b36d3b8ce8bcaadf4a747f4a74f9d0ebde2` |
+| 15 | `lemma` | [Ico_add_one_add_one_eq_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ico-add-one-add-one-eq-ioc--e5870e780bb9bd97b1d6764c.md) | 108 | `result-track:e5870e780bb9bd97b1d6764cb76b4900d4178faecd6a274f8e35a50784d45d62` |
+| 16 | `lemma` | [insert_Ico_right_eq_Ico_add_one](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ico-right-eq-ico-add-one--1a0beb9d48150d41e3e9aad7.md) | 113 | `result-track:1a0beb9d48150d41e3e9aad7f6bcbd0467e450bf5a5e0ae2ec2ef0adc0eb9e0e` |
+| 17 | `lemma` | [insert_Ioc_right_eq_Ioc_add_one](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ioc-right-eq-ioc-add-one--e48184d5d3e50eb45135ce04.md) | 119 | `result-track:e48184d5d3e50eb45135ce04545e1f4f9bcc4148562d499dd0f2298152e7ee49` |
+| 18 | `lemma` | [Ioc_sub_one_right_eq_Ioo](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioc-sub-one-right-eq-ioo--73b168e093d8cea95e8c6a15.md) | 133 | `result-track:73b168e093d8cea95e8c6a15f4cf1702484deb6a3ba46cb3d41d074149e53790` |
+| 19 | `lemma` | [Icc_sub_one_right_eq_Ico_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/icc-sub-one-right-eq-ico-of-not-ismin--58d55841b253d7b741e4994e.md) | 136 | `result-track:58d55841b253d7b741e4994ea36aed244303fdcb655237109cf7a06d1e80821a` |
+| 20 | `lemma` | [Ioc_sub_one_left_eq_Icc_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioc-sub-one-left-eq-icc-of-not-ismin--019929fbb1853cce48b32d7b.md) | 139 | `result-track:019929fbb1853cce48b32d7bf108d126e404513e5105a063c1cb136d6c07d910` |
+| 21 | `lemma` | [Ioo_sub_one_left_eq_Ioc_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioo-sub-one-left-eq-ioc-of-not-ismin--563cb3aaccce7143ddc2aea9.md) | 142 | `result-track:563cb3aaccce7143ddc2aea992218c372522dc6230c1cb3b8392b75df4e37e23` |
+| 22 | `lemma` | [Ioc_sub_one_sub_one_eq_Ico_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioc-sub-one-sub-one-eq-ico-of-not-ismin--dbcf7fbe3c2472389f84d258.md) | 145 | `result-track:dbcf7fbe3c2472389f84d258196f5f8112064c0fd2d7038bcf8f5ce70542322a` |
+| 23 | `lemma` | [insert_Icc_sub_one_right_eq_Icc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-icc-sub-one-right-eq-icc--e34b74fa55aaca8db6c9ec37.md) | 151 | `result-track:e34b74fa55aaca8db6c9ec37561b4b821341dc21172a5f05691094f4d5057a02` |
+| 24 | `lemma` | [insert_Icc_left_eq_Icc_sub_one](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-icc-left-eq-icc-sub-one--d4c0319ffc3fc033e117702c.md) | 154 | `result-track:d4c0319ffc3fc033e117702c5a76685dc0b28fd5d6e869fa44f5d49dcc466efa` |
+| 25 | `lemma` | [insert_Ioc_left_eq_Ioc_sub_one_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ioc-left-eq-ioc-sub-one-of-not-ismin--3dbfe815a7f8fc37f0e652d8.md) | 161 | `result-track:3dbfe815a7f8fc37f0e652d8ad6741a1b9f7f4e8ad05e39ffc890741044d8854` |
+| 26 | `lemma` | [insert_Ioc_sub_one_right_eq_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ioc-sub-one-right-eq-ioc--ee45df432934df4e8f1783fe.md) | 169 | `result-track:ee45df432934df4e8f1783fe2e5cc7bb8219ee30829a41813c1bc2cfb19f6582` |
+| 27 | `lemma` | [insert_Ico_left_eq_Ico_sub_one_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ico-left-eq-ico-sub-one-of-not-ismin--f784d5ca5aab0ecfaaea50b8.md) | 172 | `result-track:f784d5ca5aab0ecfaaea50b842df46572387afaf33a0621d73fed7cfd6c07e61` |
+| 28 | `lemma` | [insert_Ico_sub_one_right_eq_Ico](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ico-sub-one-right-eq-ico--5ab41ef79fc3d576b25846a8.md) | 176 | `result-track:5ab41ef79fc3d576b25846a89a6c648611f76c0e396d3058d45d5d72d5690977` |
+| 29 | `lemma` | [Icc_sub_one_right_eq_Ico](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/icc-sub-one-right-eq-ico--e2c575abe6a2ef787d2e5516.md) | 187 | `result-track:e2c575abe6a2ef787d2e5516f67b7f1d13bb619e9d767e1bbe999c094cd91f28` |
+| 30 | `lemma` | [Ioc_sub_one_left_eq_Icc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioc-sub-one-left-eq-icc--e488490799d624d8acee824d.md) | 190 | `result-track:e488490799d624d8acee824d5b01feefba1838d175397d4fd37102bea1754043` |
+| 31 | `lemma` | [Ioo_sub_one_left_eq_Ioc](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioo-sub-one-left-eq-ioc--c5821518f0454db45b08bc48.md) | 193 | `result-track:c5821518f0454db45b08bc48162e66a18de38ed81bc13cf76b27e9010558d786` |
+| 32 | `lemma` | [Ioc_sub_one_sub_one_eq_Ico](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioc-sub-one-sub-one-eq-ico--51bf307bb5e00130d7e12a81.md) | 196 | `result-track:51bf307bb5e00130d7e12a81bb229a8d8db004fac3caca73ca66cefcb8b7d552` |
+| 33 | `lemma` | [insert_Ioc_left_eq_Ioc_sub_one](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ioc-left-eq-ioc-sub-one--8af188d6359580e658bf555c.md) | 201 | `result-track:8af188d6359580e658bf555c3b11e4c9ff34ab42455d554ec274ca741ed09e70` |
+| 34 | `lemma` | [insert_Ico_left_eq_Ico_sub_one](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/insert-ico-left-eq-ico-sub-one--9d14cabf4c0bb46c29937a11.md) | 207 | `result-track:9d14cabf4c0bb46c29937a11faf822588230694926e2972c6c48de153cd8ab7b` |
+| 35 | `lemma` | [Icc_add_one_sub_one_eq_Ioo](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/icc-add-one-sub-one-eq-ioo--a29cff379662c9563dcaf66c.md) | 215 | `result-track:a29cff379662c9563dcaf66ce0b63250afd27ba22915a5f4c87e8a0d55d40f04` |
+| 36 | `lemma` | [Iio_add_one_eq_Iic_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/iio-add-one-eq-iic-of-not-ismax--62d18929c923a383ad224b8b.md) | 225 | `result-track:62d18929c923a383ad224b8bd7e67093347838420aec8645fc11c652825a8c76` |
+| 37 | `lemma` | [Iio_add_one_eq_Iic](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/iio-add-one-eq-iic--1e8830309f26c9a2c87aaf43.md) | 230 | `result-track:1e8830309f26c9a2c87aaf434b387b331bddf1888503e458420c73a28cc22f31` |
+| 38 | `lemma` | [Iic_sub_one_eq_Iio_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/iic-sub-one-eq-iio-of-not-ismin--20a1529fea13dd7975689987.md) | 238 | `result-track:20a1529fea13dd7975689987aea7423665a97c03e75a09bd95eb612aad7a0662` |
+| 39 | `lemma` | [Iic_sub_one_eq_Iio](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/iic-sub-one-eq-iio--f0be557bf56d908d367e5f41.md) | 243 | `result-track:f0be557bf56d908d367e5f418d99e28826bbfad4c7b4d166a475856db0f079cc` |
+| 40 | `lemma` | [Ici_add_one_eq_Ioi_of_not_isMax](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ici-add-one-eq-ioi-of-not-ismax--db8d65f2812b95fbbc57e588.md) | 253 | `result-track:db8d65f2812b95fbbc57e588df497c267b06f4d5bf374a863866cd30d46ea3d7` |
+| 41 | `lemma` | [Ici_add_one_eq_Ioi](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ici-add-one-eq-ioi--1ce31db7fffefa0c8e0c2e5a.md) | 258 | `result-track:1ce31db7fffefa0c8e0c2e5a3594e9071823267f1e146986956d93cd50a0563f` |
+| 42 | `lemma` | [Ioi_sub_one_eq_Ici_of_not_isMin](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioi-sub-one-eq-ici-of-not-ismin--58fd95d84cae1d54e4fe22aa.md) | 266 | `result-track:58fd95d84cae1d54e4fe22aad5bf7539c26d15a83f3cb87d9264f061633b936d` |
+| 43 | `lemma` | [Ioi_sub_one_eq_Ici](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SuccPred/Variant145f47c94e2a18d0365617e642a7d1a4068f6c6c4af41098dccdaae88f75c72b.lean/declarations/ioi-sub-one-eq-ici--8ec0fc449ec91b52e284b644.md) | 271 | `result-track:8ec0fc449ec91b52e284b6444148be69993b61e82f0ead9113acedb1754f2b1f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

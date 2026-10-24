@@ -1,0 +1,112 @@
+# Std.Iterators.Types.ArrayIterator.stepAsHetT_iterFromIdxM
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:0716a340-4681-a893-b88f-b0e01346cdc3",
+  "kind": "theorem",
+  "lexical_name": "Std.Iterators.Types.ArrayIterator.stepAsHetT_iterFromIdxM",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "std-iterators-types-arrayiterator-stepashett-iterfromidxm--98fc64e5c041c1d6728621e2",
+  "source": {
+    "blob": "96c1d5720e6bf4cf43df6e58ff24567c91457567",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 94,
+    "line": 64,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Array/Variant39dec4f1184f96a1253731b6b5a87f5514fa4751b926441df88decb0f72b8ee8.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:98fc64e5c041c1d6728621e2f50b1765214b3ec62456ebd96d62472d594eb757",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Array/Variant39dec4f1184f96a1253731b6b5a87f5514fa4751b926441df88decb0f72b8ee8.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:0716a340-4681-a893-b88f-b0e01346cdc3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 64–94.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem Std.Iterators.Types.ArrayIterator.stepAsHetT_iterFromIdxM [LawfulMonad m] {array : Array β}
+    {pos : Nat} :
+    (array.iterFromIdxM m pos).stepAsHetT = (if _ : pos < array.size then
+      pure (.yield (array.iterFromIdxM m (pos + 1)) array[pos])
+    else
+      pure .done) := by
+  simp only [Array.iterFromIdxM, pure, HetT.ext_iff, Equivalence.property_step,
+    IterM.IsPlausibleStep, instIterator, -- TODO
+    Iterator.IsPlausibleStep, Equivalence.prun_step, ge_iff_le]
+  refine ⟨?_, ?_⟩
+  · ext step
+    cases step
+    · dsimp only
+      split
+      · simp only [HetT.property_pure, IterStep.yield.injEq, IterM.ext_iff, ArrayIterator.ext_iff]
+        constructor
+        · rintro ⟨rfl, h, h', rfl⟩
+          exact ⟨⟨rfl, h.symm⟩, rfl⟩
+        · rintro ⟨⟨rfl, h⟩, rfl⟩
+          exact ⟨rfl, h.symm, ‹_›, rfl⟩
+      · simp only [HetT.property_pure, reduceCtorEq, iff_false, not_and, not_exists]
+        omega
+    · dsimp only
+      split <;> simp
+    · dsimp only
+      split <;> simp only [HetT.property_pure, reduceCtorEq, iff_false, Nat.not_le, iff_true] <;>
+        omega
+  · intro β f
+    simp [IterM.step, Iterator.step]
+    split <;> simp
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Array/Variant39dec4f1184f96a1253731b6b5a87f5514fa4751b926441df88decb0f72b8ee8.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Array/Variant39dec4f1184f96a1253731b6b5a87f5514fa4751b926441df88decb0f72b8ee8.lean#L64).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `96c1d5720e6bf4cf43df6e58ff24567c91457567` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

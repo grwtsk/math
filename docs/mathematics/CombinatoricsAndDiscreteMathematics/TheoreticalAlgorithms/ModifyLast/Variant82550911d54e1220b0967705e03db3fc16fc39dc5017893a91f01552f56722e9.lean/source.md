@@ -1,0 +1,77 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ModifyLast.Variant82550911d54e1220b0967705e03db3fc16fc39dc5017893a91f01552f56722e9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d7210619186889fe0da9b4ea2efde55abd09e65a` · SHA-256 `47219bc48ebf8e566c52e9891fedd1108601ead4f29cfa98fd2383dfd275965a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ModifyLastGoConcat.Variant5204ab1f9f0d2076f58434178f26546fd2283c17dbdd7c6595042d07c212c83d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5204ab1f9f0d2076f58434178f26546fd2283c17dbdd7c6595042d07c212c83d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.ModifyLastGoConcat.Variant5204ab1f9f0d2076f58434178f26546fd2283c17dbdd7c6595042d07c212c83d","mathematical_subject":"Computation.DataStructures","original_sha256":"5204ab1f9f0d2076f58434178f26546fd2283c17dbdd7c6595042d07c212c83d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/List/ModifyLast.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2014 Parikshit Khanna. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro
+-/
+import Batteries.Data.List.Basic
+import Mathlib.Tactic.TypeStar
+
+/-! ### List.modifyLast -/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ModifyLastGoConcat.Variant5204ab1f9f0d2076f58434178f26546fd2283c17dbdd7c6595042d07c212c83d
+
+variable {α : Type*}
+
+namespace List
+
+private theorem modifyLast.go_concat (f : α → α) (a : α) (tl : List α) (r : Array α) :
+    modifyLast.go f (tl ++ [a]) r = (r.toListAppend <| modifyLast.go f (tl ++ [a]) #[]) := by
+  cases tl with
+  | nil =>
+    simp only [nil_append, modifyLast.go]; rfl
+  | cons hd tl =>
+    simp only [cons_append]
+    rw [modifyLast.go, modifyLast.go]
+    case x_3 | x_3 => exact append_ne_nil_of_right_ne_nil tl (cons_ne_nil a [])
+    rw [modifyLast.go_concat _ _ tl _, modifyLast.go_concat _ _ tl (Array.push #[] hd)]
+    simp only [Array.toListAppend_eq, Array.push_toList, List.toList_toArray, nil_append,
+      append_assoc]
+
+theorem modifyLast_concat (f : α → α) (a : α) (l : List α) :
+    modifyLast f (l ++ [a]) = l ++ [f a] := by
+  cases l with
+  | nil =>
+    simp only [nil_append, modifyLast, modifyLast.go, Array.toListAppend_eq, List.toList_toArray]
+  | cons _ tl =>
+    simp only [cons_append, modifyLast]
+    rw [modifyLast.go]
+    case x_3 => exact append_ne_nil_of_right_ne_nil tl (cons_ne_nil a [])
+    rw [modifyLast.go_concat, Array.toListAppend_eq, Array.push_toList, List.toList_toArray,
+      nil_append, cons_append, nil_append, cons_inj_right]
+    exact modifyLast_concat _ _ tl
+
+@[deprecated (since := "2025-02-07")]
+alias modifyLast_append_one := modifyLast_concat
+
+theorem modifyLast_append_of_right_ne_nil (f : α → α) (l₁ l₂ : List α) (_ : l₂ ≠ []) :
+    modifyLast f (l₁ ++ l₂) = l₁ ++ modifyLast f l₂ := by
+  cases l₂ with
+  | nil => contradiction
+  | cons hd tl =>
+    cases tl with
+    | nil => exact modifyLast_concat _ hd _
+    | cons hd' tl' =>
+      rw [append_cons, ← nil_append (hd :: hd' :: tl'), append_cons [], nil_append,
+        modifyLast_append_of_right_ne_nil _ (l₁ ++ [hd]) (hd' :: tl') _,
+        modifyLast_append_of_right_ne_nil _ [hd] (hd' :: tl') _,
+        append_assoc]
+      all_goals { exact cons_ne_nil _ _ }
+
+@[deprecated (since := "2025-02-07")]
+alias modifyLast_append := modifyLast_append_of_right_ne_nil
+
+end List
+```

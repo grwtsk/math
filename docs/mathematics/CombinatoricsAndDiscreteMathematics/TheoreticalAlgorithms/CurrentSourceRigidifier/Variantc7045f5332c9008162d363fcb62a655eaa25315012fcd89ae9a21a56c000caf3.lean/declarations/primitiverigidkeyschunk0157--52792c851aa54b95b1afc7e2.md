@@ -1,0 +1,149 @@
+# primitiveRigidKeysChunk0157
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:e1f2d2d977651ecb5190319c526dbae8276e94e1f8417c010b4da124aa62173a",
+  "kind": "def",
+  "lexical_name": "primitiveRigidKeysChunk0157",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "primitiverigidkeyschunk0157--52792c851aa54b95b1afc7e2",
+  "source": {
+    "blob": "8b5384ec085b9cd11bcafc89104678d6fee611a0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 24277,
+    "line": 24210,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variantc7045f5332c9008162d363fcb62a655eaa25315012fcd89ae9a21a56c000caf3.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:52792c851aa54b95b1afc7e2b7a07601160c212dd56f4cd272c71cf30f810ce1",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variantc7045f5332c9008162d363fcb62a655eaa25315012fcd89ae9a21a56c000caf3.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:e1f2d2d977651ecb5190319c526dbae8276e94e1f8417c010b4da124aa62173a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 24210–24277.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private def primitiveRigidKeysChunk0157 : List String :=
+[
+  "rigid-primitive-element:10048",
+  "rigid-primitive-element:10049",
+  "rigid-primitive-element:10050",
+  "rigid-primitive-element:10051",
+  "rigid-primitive-element:10052",
+  "rigid-primitive-element:10053",
+  "rigid-primitive-element:10054",
+  "rigid-primitive-element:10055",
+  "rigid-primitive-element:10056",
+  "rigid-primitive-element:10057",
+  "rigid-primitive-element:10058",
+  "rigid-primitive-element:10059",
+  "rigid-primitive-element:10060",
+  "rigid-primitive-element:10061",
+  "rigid-primitive-element:10062",
+  "rigid-primitive-element:10063",
+  "rigid-primitive-element:10064",
+  "rigid-primitive-element:10065",
+  "rigid-primitive-element:10066",
+  "rigid-primitive-element:10067",
+  "rigid-primitive-element:10068",
+  "rigid-primitive-element:10069",
+  "rigid-primitive-element:10070",
+  "rigid-primitive-element:10071",
+  "rigid-primitive-element:10072",
+  "rigid-primitive-element:10073",
+  "rigid-primitive-element:10074",
+  "rigid-primitive-element:10075",
+  "rigid-primitive-element:10076",
+  "rigid-primitive-element:10077",
+  "rigid-primitive-element:10078",
+  "rigid-primitive-element:10079",
+  "rigid-primitive-element:10080",
+  "rigid-primitive-element:10081",
+  "rigid-primitive-element:10082",
+  "rigid-primitive-element:10083",
+  "rigid-primitive-element:10084",
+  "rigid-primitive-element:10085",
+  "rigid-primitive-element:10086",
+  "rigid-primitive-element:10087",
+  "rigid-primitive-element:10088",
+  "rigid-primitive-element:10089",
+  "rigid-primitive-element:10090",
+  "rigid-primitive-element:10091",
+  "rigid-primitive-element:10092",
+  "rigid-primitive-element:10093",
+  "rigid-primitive-element:10094",
+  "rigid-primitive-element:10095",
+  "rigid-primitive-element:10096",
+  "rigid-primitive-element:10097",
+  "rigid-primitive-element:10098",
+  "rigid-primitive-element:10099",
+  "rigid-primitive-element:10100",
+  "rigid-primitive-element:10101",
+  "rigid-primitive-element:10102",
+  "rigid-primitive-element:10103",
+  "rigid-primitive-element:10104",
+  "rigid-primitive-element:10105",
+  "rigid-primitive-element:10106",
+  "rigid-primitive-element:10107",
+  "rigid-primitive-element:10108",
+  "rigid-primitive-element:10109",
+  "rigid-primitive-element:10110",
+  "rigid-primitive-element:10111"
+]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variantc7045f5332c9008162d363fcb62a655eaa25315012fcd89ae9a21a56c000caf3.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variantc7045f5332c9008162d363fcb62a655eaa25315012fcd89ae9a21a56c000caf3.lean#L24210).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8b5384ec085b9cd11bcafc89104678d6fee611a0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

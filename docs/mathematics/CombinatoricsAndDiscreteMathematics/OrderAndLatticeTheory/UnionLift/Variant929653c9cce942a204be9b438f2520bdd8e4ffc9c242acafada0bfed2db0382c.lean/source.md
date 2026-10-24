@@ -1,0 +1,184 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.UnionLift.Variant929653c9cce942a204be9b438f2520bdd8e4ffc9c242acafada0bfed2db0382c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1a6eeebb681464cda0787260862286a56342d787` · SHA-256 `38581f7375772ba261d5bb19812e6d9d9fc02569c4337a770681267e3f841033`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.IUnionLift.Variantededc379485ecdea9906e0161b8384368b9b3cef6ea061156888a72b8e17d935","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ededc379485ecdea9906e0161b8384368b9b3cef6ea061156888a72b8e17d935","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.OrderTheory.SourceCorpus.IUnionLift.Variantededc379485ecdea9906e0161b8384368b9b3cef6ea061156888a72b8e17d935","mathematical_subject":"Algebra.OrderTheory","original_sha256":"ededc379485ecdea9906e0161b8384368b9b3cef6ea061156888a72b8e17d935","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/Set/UnionLift.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Chris Hughes. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Chris Hughes
+-/
+import Mathlib.Data.Set.Lattice
+import Mathlib.Order.Directed
+
+/-!
+# Union lift
+This file defines `Set.iUnionLift` to glue together functions defined on each of a collection of
+sets to make a function on the Union of those sets.
+
+## Main definitions
+
+* `Set.iUnionLift` -  Given a Union of sets `iUnion S`, define a function on any subset of the Union
+  by defining it on each component, and proving that it agrees on the intersections.
+* `Set.liftCover` - Version of `Set.iUnionLift` for the special case that the sets cover the
+  entire type.
+
+## Main statements
+
+There are proofs of the obvious properties of `iUnionLift`, i.e. what it does to elements of
+each of the sets in the `iUnion`, stated in different ways.
+
+There are also three lemmas about `iUnionLift` intended to aid with proving that `iUnionLift` is a
+homomorphism when defined on a Union of substructures. There is one lemma each to show that
+constants, unary functions, or binary functions are preserved. These lemmas are:
+
+*`Set.iUnionLift_const`
+*`Set.iUnionLift_unary`
+*`Set.iUnionLift_binary`
+
+## Tags
+
+directed union, directed supremum, glue, gluing
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.IUnionLift.Variantededc379485ecdea9906e0161b8384368b9b3cef6ea061156888a72b8e17d935
+
+variable {α : Type*} {ι β : Sort _}
+
+namespace Set
+
+section UnionLift
+
+/- The unused argument is left in the definition so that the `simp` lemmas
+`iUnionLift_inclusion` will work without the user having to provide it explicitly to
+simplify terms involving `iUnionLift`. -/
+/-- Given a union of sets `iUnion S`, define a function on the Union by defining
+it on each component, and proving that it agrees on the intersections. -/
+@[nolint unusedArguments]
+noncomputable def iUnionLift (S : ι → Set α) (f : ∀ i, S i → β)
+    (_ : ∀ (i j) (x : α) (hxi : x ∈ S i) (hxj : x ∈ S j), f i ⟨x, hxi⟩ = f j ⟨x, hxj⟩) (T : Set α)
+    (hT : T ⊆ iUnion S) (x : T) : β :=
+  let i := Classical.indefiniteDescription _ (mem_iUnion.1 (hT x.prop))
+  f i ⟨x, i.prop⟩
+
+variable {S : ι → Set α} {f : ∀ i, S i → β}
+  {hf : ∀ (i j) (x : α) (hxi : x ∈ S i) (hxj : x ∈ S j), f i ⟨x, hxi⟩ = f j ⟨x, hxj⟩} {T : Set α}
+  {hT : T ⊆ iUnion S} (hT' : T = iUnion S)
+
+@[simp]
+theorem iUnionLift_mk {i : ι} (x : S i) (hx : (x : α) ∈ T) :
+    iUnionLift S f hf T hT ⟨x, hx⟩ = f i x := hf _ i x _ _
+
+theorem iUnionLift_inclusion {i : ι} (x : S i) (h : S i ⊆ T) :
+    iUnionLift S f hf T hT (Set.inclusion h x) = f i x :=
+  iUnionLift_mk x _
+
+theorem iUnionLift_of_mem (x : T) {i : ι} (hx : (x : α) ∈ S i) :
+    iUnionLift S f hf T hT x = f i ⟨x, hx⟩ := by obtain ⟨x, hx⟩ := x; exact hf _ _ _ _ _
+
+theorem preimage_iUnionLift (t : Set β) :
+    iUnionLift S f hf T hT ⁻¹' t =
+      inclusion hT ⁻¹' (⋃ i, inclusion (subset_iUnion S i) '' (f i ⁻¹' t)) := by
+  ext x
+  simp only [mem_preimage, mem_iUnion, mem_image]
+  constructor
+  · rcases mem_iUnion.1 (hT x.prop) with ⟨i, hi⟩
+    refine fun h => ⟨i, ⟨x, hi⟩, ?_, rfl⟩
+    rwa [iUnionLift_of_mem x hi] at h
+  · rintro ⟨i, ⟨y, hi⟩, h, hxy⟩
+    obtain rfl : y = x := congr_arg Subtype.val hxy
+    rwa [iUnionLift_of_mem x hi]
+
+/-- `iUnionLift_const` is useful for proving that `iUnionLift` is a homomorphism
+  of algebraic structures when defined on the Union of algebraic subobjects.
+  For example, it could be used to prove that the lift of a collection
+  of group homomorphisms on a union of subgroups preserves `1`. -/
+theorem iUnionLift_const (c : T) (ci : ∀ i, S i) (hci : ∀ i, (ci i : α) = c) (cβ : β)
+    (h : ∀ i, f i (ci i) = cβ) : iUnionLift S f hf T hT c = cβ := by
+  let ⟨i, hi⟩ := Set.mem_iUnion.1 (hT c.prop)
+  have : ci i = ⟨c, hi⟩ := Subtype.ext (hci i)
+  rw [iUnionLift_of_mem _ hi, ← this, h]
+
+/-- `iUnionLift_unary` is useful for proving that `iUnionLift` is a homomorphism
+  of algebraic structures when defined on the Union of algebraic subobjects.
+  For example, it could be used to prove that the lift of a collection
+  of linear_maps on a union of submodules preserves scalar multiplication. -/
+theorem iUnionLift_unary (u : T → T) (ui : ∀ i, S i → S i)
+    (hui :
+      ∀ (i) (x : S i),
+        u (Set.inclusion (show S i ⊆ T from hT'.symm ▸ Set.subset_iUnion S i) x) =
+          Set.inclusion (show S i ⊆ T from hT'.symm ▸ Set.subset_iUnion S i) (ui i x))
+    (uβ : β → β) (h : ∀ (i) (x : S i), f i (ui i x) = uβ (f i x)) (x : T) :
+    iUnionLift S f hf T (le_of_eq hT') (u x) = uβ (iUnionLift S f hf T (le_of_eq hT') x) := by
+  subst hT'
+  obtain ⟨i, hi⟩ := Set.mem_iUnion.1 x.prop
+  rw [iUnionLift_of_mem x hi, ← h i]
+  have : x = Set.inclusion (Set.subset_iUnion S i) ⟨x, hi⟩ := by
+    cases x
+    rfl
+  conv_lhs => rw [this, hui, iUnionLift_inclusion]
+
+/-- `iUnionLift_binary` is useful for proving that `iUnionLift` is a homomorphism
+  of algebraic structures when defined on the Union of algebraic subobjects.
+  For example, it could be used to prove that the lift of a collection
+  of group homomorphisms on a union of subgroups preserves `*`. -/
+theorem iUnionLift_binary (dir : Directed (· ≤ ·) S) (op : T → T → T) (opi : ∀ i, S i → S i → S i)
+    (hopi :
+      ∀ i x y,
+        Set.inclusion (show S i ⊆ T from hT'.symm ▸ Set.subset_iUnion S i) (opi i x y) =
+          op (Set.inclusion (show S i ⊆ T from hT'.symm ▸ Set.subset_iUnion S i) x)
+            (Set.inclusion (show S i ⊆ T from hT'.symm ▸ Set.subset_iUnion S i) y))
+    (opβ : β → β → β) (h : ∀ (i) (x y : S i), f i (opi i x y) = opβ (f i x) (f i y)) (x y : T) :
+    iUnionLift S f hf T (le_of_eq hT') (op x y) =
+      opβ (iUnionLift S f hf T (le_of_eq hT') x) (iUnionLift S f hf T (le_of_eq hT') y) := by
+  subst hT'
+  obtain ⟨i, hi⟩ := Set.mem_iUnion.1 x.prop
+  obtain ⟨j, hj⟩ := Set.mem_iUnion.1 y.prop
+  rcases dir i j with ⟨k, hik, hjk⟩
+  rw [iUnionLift_of_mem x (hik hi), iUnionLift_of_mem y (hjk hj), ← h k]
+  have hx : x = Set.inclusion (Set.subset_iUnion S k) ⟨x, hik hi⟩ := by
+    cases x
+    rfl
+  have hy : y = Set.inclusion (Set.subset_iUnion S k) ⟨y, hjk hj⟩ := by
+    cases y
+    rfl
+  have hxy : (Set.inclusion (Set.subset_iUnion S k) (opi k ⟨x, hik hi⟩ ⟨y, hjk hj⟩) : α) ∈ S k :=
+    (opi k ⟨x, hik hi⟩ ⟨y, hjk hj⟩).prop
+  conv_lhs => rw [hx, hy, ← hopi, iUnionLift_of_mem _ hxy]
+
+end UnionLift
+
+variable {S : ι → Set α} {f : ∀ i, S i → β}
+  {hf : ∀ (i j) (x : α) (hxi : x ∈ S i) (hxj : x ∈ S j), f i ⟨x, hxi⟩ = f j ⟨x, hxj⟩}
+  {hS : iUnion S = univ}
+
+/-- Glue together functions defined on each of a collection `S` of sets that cover a type. See
+also `Set.iUnionLift`. -/
+noncomputable def liftCover (S : ι → Set α) (f : ∀ i, S i → β)
+    (hf : ∀ (i j) (x : α) (hxi : x ∈ S i) (hxj : x ∈ S j), f i ⟨x, hxi⟩ = f j ⟨x, hxj⟩)
+    (hS : iUnion S = univ) (a : α) : β :=
+  iUnionLift S f hf univ hS.symm.subset ⟨a, trivial⟩
+
+@[simp]
+theorem liftCover_coe {i : ι} (x : S i) : liftCover S f hf hS x = f i x :=
+  iUnionLift_mk x _
+
+theorem liftCover_of_mem {i : ι} {x : α} (hx : (x : α) ∈ S i) :
+    liftCover S f hf hS x = f i ⟨x, hx⟩ :=
+  iUnionLift_of_mem (⟨x, trivial⟩ : {_z // True}) hx
+
+theorem preimage_liftCover (t : Set β) : liftCover S f hf hS ⁻¹' t = ⋃ i, (↑) '' (f i ⁻¹' t) := by
+  change (iUnionLift S f hf univ hS.symm.subset ∘ fun a => ⟨a, mem_univ a⟩) ⁻¹' t = _
+  rw [preimage_comp, preimage_iUnionLift]
+  ext; simp
+
+end Set
+```

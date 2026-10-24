@@ -1,0 +1,121 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Mix.Variant50bda835b9aa366574c4fcb99249b66f806e8e7d48ef2621fd11537427b49ff9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4e53d9d85f776c03079f785833501a2754cab122` · SHA-256 `50bda835b9aa366574c4fcb99249b66f806e8e7d48ef2621fd11537427b49ff9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Color.Admissibility
+
+namespace Color
+
+namespace Mix
+
+def canonicalPair (a b : String) : List String := symmetricMixColorSet a b
+
+namespace RedGreen
+
+def colorSet : List String := canonicalPair "red" "green"
+
+def symmetric : Bool := true
+
+def band : Band :=
+  { name := "red-green",
+    namespaceName := "Color.Mix.RedGreen",
+    bitDepth := 8,
+    rangeMin := 0,
+    rangeMax := 255,
+    centroid := { bitDepth := 8,
+                  aperture := 255,
+                  rgb := { red := 255, green := 255, blue := 0 },
+                  hex := "#FFFF00" } }
+
+def accepts : ColorAtom → Prop
+  | ColorAtom.mix colors => colors = colorSet
+  | _ => False
+
+def rejects : ColorAtom → Prop := rejectsUnresolved
+
+def admissibility : Admissibility :=
+  { band, accepts, rejects, symmetric }
+
+theorem red_green_collapses : canonicalPair "red" "green" = colorSet := rfl
+
+theorem green_red_collapses : canonicalPair "green" "red" = colorSet := rfl
+
+theorem namespace_eq : band.namespaceName = "Color.Mix.RedGreen" := rfl
+
+end RedGreen
+
+namespace RedBlue
+
+def colorSet : List String := canonicalPair "red" "blue"
+
+def symmetric : Bool := true
+
+def band : Band :=
+  { name := "red-blue",
+    namespaceName := "Color.Mix.RedBlue",
+    bitDepth := 8,
+    rangeMin := 0,
+    rangeMax := 255,
+    centroid := { bitDepth := 8,
+                  aperture := 255,
+                  rgb := { red := 255, green := 0, blue := 255 },
+                  hex := "#FF00FF" } }
+
+def accepts : ColorAtom → Prop
+  | ColorAtom.mix colors => colors = colorSet
+  | _ => False
+
+def rejects : ColorAtom → Prop := rejectsUnresolved
+
+def admissibility : Admissibility :=
+  { band, accepts, rejects, symmetric }
+
+theorem red_blue_collapses : canonicalPair "red" "blue" = colorSet := rfl
+
+theorem blue_red_collapses : canonicalPair "blue" "red" = colorSet := rfl
+
+theorem namespace_eq : band.namespaceName = "Color.Mix.RedBlue" := rfl
+
+end RedBlue
+
+namespace GreenBlue
+
+def colorSet : List String := canonicalPair "green" "blue"
+
+def symmetric : Bool := true
+
+def band : Band :=
+  { name := "green-blue",
+    namespaceName := "Color.Mix.GreenBlue",
+    bitDepth := 8,
+    rangeMin := 0,
+    rangeMax := 255,
+    centroid := { bitDepth := 8,
+                  aperture := 255,
+                  rgb := { red := 0, green := 255, blue := 255 },
+                  hex := "#00FFFF" } }
+
+def accepts : ColorAtom → Prop
+  | ColorAtom.mix colors => colors = colorSet
+  | _ => False
+
+def rejects : ColorAtom → Prop := rejectsUnresolved
+
+def admissibility : Admissibility :=
+  { band, accepts, rejects, symmetric }
+
+theorem green_blue_collapses : canonicalPair "green" "blue" = colorSet := rfl
+
+theorem blue_green_collapses : canonicalPair "blue" "green" = colorSet := rfl
+
+theorem namespace_eq : band.namespaceName = "Color.Mix.GreenBlue" := rfl
+
+end GreenBlue
+
+end Mix
+
+end Color
+```

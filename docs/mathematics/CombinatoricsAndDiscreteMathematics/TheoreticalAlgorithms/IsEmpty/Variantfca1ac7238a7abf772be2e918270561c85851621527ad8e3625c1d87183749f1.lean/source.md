@@ -1,0 +1,224 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IsEmpty.Variantfca1ac7238a7abf772be2e918270561c85851621527ad8e3625c1d87183749f1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db007c00cd2b948d5f7a5ba967ba78c4cb3b03d4` · SHA-256 `91d3dbd75d8e3ede9ff843b895ce8ac9aa259bec8286a1da7537e76ea2a55276`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IsEmptyEq.Variant9dfd1d7ba593807f7943fc56bfc4661435c8ac5c99f2addb99b53187939513f2","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9dfd1d7ba593807f7943fc56bfc4661435c8ac5c99f2addb99b53187939513f2","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.IsEmptyEq.Variant9dfd1d7ba593807f7943fc56bfc4661435c8ac5c99f2addb99b53187939513f2","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"9dfd1d7ba593807f7943fc56bfc4661435c8ac5c99f2addb99b53187939513f2","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Data/String/Lemmas/IsEmpty.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Markus Himmel
+-/
+module
+
+prelude
+public import Init.Data.String.Basic
+import all Init.Data.String.Defs
+import Init.Data.String.Lemmas.Order
+import Init.Data.String.Lemmas.Basic
+import Init.Data.String.OrderInstances
+import Init.Grind
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IsEmptyEq.Variant9dfd1d7ba593807f7943fc56bfc4661435c8ac5c99f2addb99b53187939513f2
+
+public section
+
+namespace String
+
+namespace Slice
+
+theorem isEmpty_eq {s : Slice} : s.isEmpty = (s.utf8ByteSize == 0) :=
+  (rfl)
+
+theorem isEmpty_iff {s : Slice} :
+    s.isEmpty ↔ s.utf8ByteSize = 0 := by
+  simp [Slice.isEmpty_eq]
+
+theorem startPos_eq_endPos_iff {s : Slice} :
+    s.startPos = s.endPos ↔ s.isEmpty := by
+  rw [eq_comm]
+  simp [Slice.Pos.ext_iff, Pos.Raw.ext_iff, Slice.isEmpty_iff]
+
+theorem startPos_ne_endPos_iff {s : Slice} :
+    s.startPos ≠ s.endPos ↔ s.isEmpty = false := by
+  simp [Slice.startPos_eq_endPos_iff]
+
+theorem startPos_ne_endPos {s : Slice} : s.isEmpty = false → s.startPos ≠ s.endPos :=
+  Slice.startPos_ne_endPos_iff.2
+
+theorem isEmpty_iff_forall_eq {s : Slice} :
+    s.isEmpty ↔ ∀ (p q : s.Pos), p = q := by
+  rw [← Slice.startPos_eq_endPos_iff]
+  refine ⟨fun h p q => ?_, fun h => h _ _⟩
+  apply Std.le_antisymm
+  · apply Std.le_trans (Pos.le_endPos _) (h ▸ Pos.startPos_le _)
+  · apply Std.le_trans (Pos.le_endPos _) (h ▸ Pos.startPos_le _)
+
+theorem isEmpty_eq_false_of_lt {s : Slice} {p q : s.Pos} :
+    p < q → s.isEmpty = false := by
+  rw [← Decidable.not_imp_not]
+  simp
+  rw [Slice.isEmpty_iff_forall_eq]
+  intro h
+  cases h p q
+  apply Std.lt_irrefl
+
+@[simp]
+theorem isEmpty_sliceFrom {s : Slice} {p : s.Pos} :
+    (s.sliceFrom p).isEmpty ↔ p = s.endPos := by
+  simp [← startPos_eq_endPos_iff, ← Pos.ofSliceFrom_inj]
+
+@[simp]
+theorem isEmpty_sliceFrom_eq_false_iff {s : Slice} {p : s.Pos} :
+    (s.sliceFrom p).isEmpty = false ↔ p ≠ s.endPos :=
+  Decidable.not_iff_not.1 (by simp)
+
+@[simp]
+theorem isEmpty_sliceTo {s : Slice} {p : s.Pos} :
+    (s.sliceTo p).isEmpty ↔ p = s.startPos := by
+  simp [← startPos_eq_endPos_iff, eq_comm (a := p), ← Pos.ofSliceTo_inj]
+
+@[simp]
+theorem isEmpty_sliceTo_eq_false_iff {s : Slice} {p : s.Pos} :
+    (s.sliceTo p).isEmpty = false ↔ p ≠ s.startPos :=
+  Decidable.not_iff_not.1 (by simp)
+
+end Slice
+
+theorem isEmpty_eq_utf8ByteSize_beq_zero {s : String} : s.isEmpty = (s.utf8ByteSize == 0) :=
+  (rfl)
+
+theorem isEmpty_iff_utf8ByteSize_eq_zero {s : String} : s.isEmpty ↔ s.utf8ByteSize = 0 := by
+  simp [isEmpty_eq_utf8ByteSize_beq_zero]
+
+@[simp]
+theorem isEmpty_iff {s : String} : s.isEmpty ↔ s = "" := by
+  simp [isEmpty_iff_utf8ByteSize_eq_zero]
+
+@[simp]
+theorem isEmpty_eq_false_iff {s : String} : s.isEmpty = false ↔ s ≠ "" := by
+  simp [← isEmpty_iff]
+
+theorem startPos_ne_endPos_iff {s : String} : s.startPos ≠ s.endPos ↔ s ≠ "" := by
+  simp
+
+theorem startPos_ne_endPos {s : String} : s ≠ "" → s.startPos ≠ s.endPos :=
+  startPos_ne_endPos_iff.2
+
+@[simp]
+theorem isEmpty_toSlice {s : String} : s.toSlice.isEmpty = s.isEmpty := by
+  simp [isEmpty_eq_utf8ByteSize_beq_zero, Slice.isEmpty_eq]
+
+theorem isEmpty_toSlice_iff {s : String} : s.toSlice.isEmpty ↔ s = "" := by
+  simp
+
+theorem Slice.isEmpty_copy {s : Slice} : s.copy.isEmpty = s.isEmpty := by
+  rw [isEmpty_eq_utf8ByteSize_beq_zero, Slice.utf8ByteSize_copy, isEmpty_eq]
+
+@[simp]
+theorem Slice.copy_eq_empty_iff {s : Slice} : s.copy = "" ↔ s.isEmpty := by
+  simp [← Slice.isEmpty_copy]
+
+theorem Slice.copy_ne_empty_iff {s : Slice} : s.copy ≠ "" ↔ s.isEmpty = false := by
+  simp
+
+theorem eq_empty_iff_forall_eq {s : String} : s = "" ↔ ∀ (p q : s.Pos), p = q := by
+  rw [← isEmpty_toSlice_iff, Slice.isEmpty_iff_forall_eq]
+  exact ⟨fun h p q => by simpa [Pos.toSlice_inj] using h p.toSlice q.toSlice,
+    fun h p q => by simpa [Pos.ofToSlice_inj] using h (Pos.ofToSlice p) (Pos.ofToSlice q)⟩
+
+theorem ne_empty_of_lt {s : String} {p q : s.Pos} :
+    p < q → s ≠ "" := by
+  rw [← Pos.toSlice_lt_toSlice_iff, ne_eq, ← isEmpty_toSlice_iff, Bool.not_eq_true]
+  exact Slice.isEmpty_eq_false_of_lt
+
+@[simp]
+theorem isEmpty_sliceFrom {s : String} {p : s.Pos} :
+    (s.sliceFrom p).isEmpty ↔ p = s.endPos := by
+  simp [← Slice.startPos_eq_endPos_iff, ← Pos.ofSliceFrom_inj]
+
+@[simp]
+theorem isEmpty_sliceFrom_eq_false_iff {s : String} {p : s.Pos} :
+    (s.sliceFrom p).isEmpty = false ↔ p ≠ s.endPos :=
+  Decidable.not_iff_not.1 (by simp)
+
+@[simp]
+theorem isEmpty_sliceTo {s : String} {p : s.Pos} :
+    (s.sliceTo p).isEmpty ↔ p = s.startPos := by
+  simp [← Slice.startPos_eq_endPos_iff, eq_comm (a := p), ← Pos.ofSliceTo_inj]
+
+@[simp]
+theorem isEmpty_sliceTo_eq_false_iff {s : String} {p : s.Pos} :
+    (s.sliceTo p).isEmpty = false ↔ p ≠ s.startPos :=
+  Decidable.not_iff_not.1 (by simp)
+
+@[simp]
+theorem isEmpty_slice {s : String} {p₁ p₂ h} : (s.slice p₁ p₂ h).isEmpty ↔ p₁ = p₂ := by
+  simp [← Slice.startPos_eq_endPos_iff, ← Pos.ofSlice_inj]
+
+@[simp]
+theorem isEmpty_slice_eq_false_iff {s : String} {p₁ p₂ h} :
+    (s.slice p₁ p₂ h).isEmpty = false ↔ p₁ ≠ p₂ := by
+  rw [ne_eq, ← isEmpty_slice (h := h), Bool.not_eq_true]
+
+@[simp]
+theorem Slice.isEmpty_slice {s : Slice} {p₁ p₂ h} : (s.slice p₁ p₂ h).isEmpty ↔ p₁ = p₂ := by
+  simp [← startPos_eq_endPos_iff, ← Pos.ofSlice_inj]
+
+@[simp]
+theorem Slice.isEmpty_slice_eq_false_iff {s : Slice} {p₁ p₂ h} :
+    (s.slice p₁ p₂ h).isEmpty = false ↔ p₁ ≠ p₂ := by
+  rw [ne_eq, ← isEmpty_slice (h := h), Bool.not_eq_true]
+
+@[simp]
+theorem toByteArray_eq_empty_iff {s : String} :
+    s.toByteArray = ByteArray.empty ↔ s = "" := by
+  simp [← toByteArray_inj]
+
+theorem Slice.toByteArray_copy_eq_empty_iff {s : Slice} :
+    s.copy.toByteArray = ByteArray.empty ↔ s.isEmpty = true := by
+  simp
+
+theorem Slice.toByteArray_copy_ne_empty_iff {s : Slice} :
+    s.copy.toByteArray ≠ ByteArray.empty ↔ s.isEmpty = false := by
+  simp
+
+section CopyEqEmpty
+
+-- Yes, `simp` can prove these, but we still need to mark them as simp lemmas.
+
+@[simp]
+theorem copy_slice_self {s : String} {p : s.Pos} : (s.slice p p (Pos.le_refl _)).copy = "" := by
+  simp
+
+@[simp]
+theorem copy_sliceTo_startPos {s : String} : (s.sliceTo s.startPos).copy = "" := by
+  simp
+
+@[simp]
+theorem copy_sliceFrom_startPos {s : String} : (s.sliceFrom s.endPos).copy = "" := by
+  simp
+
+@[simp]
+theorem Slice.copy_slice_self {s : Slice} {p : s.Pos} : (s.slice p p (Pos.le_refl _)).copy = "" := by
+  simp
+
+@[simp]
+theorem Slice.copy_sliceTo_startPos {s : Slice} : (s.sliceTo s.startPos).copy = "" := by
+  simp
+
+@[simp]
+theorem Slice.copy_sliceFrom_endPos {s : Slice} : (s.sliceFrom s.endPos).copy = "" := by
+  simp
+
+end CopyEqEmpty
+
+end String
+```

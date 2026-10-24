@@ -1,0 +1,103 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.BirthdayProblem.Variant40f913e6dc263d9bbd9d9a6c3caaf507e81611ed06f5ef49f40653d1b11ef33f
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `44d37cacd8c74452f0737cd578e844c9f01031ae` · SHA-256 `83ea219e9220c16943b8abfec8148c1c087ffce65ee24c97701e2c225b06fdea`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.Birthday.Variantdae7fa10fb399c2a288df9a4a9e00c8e358ed68139fa8d51d6ca45ea797295a3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"dae7fa10fb399c2a288df9a4a9e00c8e358ed68139fa8d51d6ca45ea797295a3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.Birthday.Variantdae7fa10fb399c2a288df9a4a9e00c8e358ed68139fa8d51d6ca45ea797295a3","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"dae7fa10fb399c2a288df9a4a9e00c8e358ed68139fa8d51d6ca45ea797295a3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Archive/Wiedijk100Theorems/BirthdayProblem.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Eric Rodriguez. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Rodriguez
+-/
+import Mathlib.Data.Fintype.CardEmbedding
+import Mathlib.Probability.CondCount
+import Mathlib.Probability.Notation
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.Birthday.Variantdae7fa10fb399c2a288df9a4a9e00c8e358ed68139fa8d51d6ca45ea797295a3
+
+#align_import wiedijk_100_theorems.birthday_problem from "leanprover-community/mathlib"@"5563b1b49e86e135e8c7b556da5ad2f5ff881cad"
+
+/-!
+# Birthday Problem
+
+This file proves Theorem 93 from the [100 Theorems List](https://www.cs.ru.nl/~freek/100/).
+
+As opposed to the standard probabilistic statement, we instead state the birthday problem
+in terms of injective functions. The general result about `Fintype.card (α ↪ β)` which this proof
+uses is `Fintype.card_embedding_eq`.
+-/
+
+
+namespace Theorems100
+
+local notation "|" x "|" => Finset.card x
+
+local notation "‖" x "‖" => Fintype.card x
+
+/-- **Birthday Problem**: set cardinality interpretation. -/
+theorem birthday :
+    2 * ‖Fin 23 ↪ Fin 365‖ < ‖Fin 23 → Fin 365‖ ∧ 2 * ‖Fin 22 ↪ Fin 365‖ > ‖Fin 22 → Fin 365‖ := by
+  simp only [Nat.descFactorial, Fintype.card_fin, Fintype.card_embedding_eq, Fintype.card_fun]
+#align theorems_100.birthday Theorems100.birthday
+
+section MeasureTheory
+
+open MeasureTheory ProbabilityTheory
+
+open scoped ProbabilityTheory ENNReal
+
+variable {n m : ℕ}
+
+/- In order for Lean to understand that we can take probabilities in `Fin 23 → Fin 365`, we must
+tell Lean that there is a `MeasurableSpace` structure on the space. Note that this instance
+is only for `Fin m` - Lean automatically figures out that the function space `Fin n → Fin m`
+is _also_ measurable, by using `MeasurableSpace.pi`, and furthermore that all sets are measurable,
+from `MeasurableSingletonClass.pi`. -/
+instance : MeasurableSpace (Fin m) :=
+  ⊤
+
+instance : MeasurableSingletonClass (Fin m) :=
+  ⟨fun _ => trivial⟩
+
+/- We then endow the space with a canonical measure, which is called ℙ.
+We define this to be the conditional counting measure. -/
+noncomputable instance : MeasureSpace (Fin n → Fin m) :=
+  ⟨condCount Set.univ⟩
+
+-- The canonical measure on `Fin n → Fin m` is a probability measure (except on an empty space).
+instance : IsProbabilityMeasure (ℙ : Measure (Fin n → Fin (m + 1))) :=
+  condCount_isProbabilityMeasure Set.finite_univ Set.univ_nonempty
+
+theorem FinFin.measure_apply {s : Set <| Fin n → Fin m} :
+    ℙ s = |s.toFinite.toFinset| / ‖Fin n → Fin m‖ := by
+  erw [condCount_univ, Measure.count_apply_finite]
+#align theorems_100.fin_fin.measure_apply Theorems100.FinFin.measure_apply
+
+/-- **Birthday Problem**: first probabilistic interpretation. -/
+theorem birthday_measure :
+    ℙ ({f | (Function.Injective f)} : Set ((Fin 23) → (Fin 365))) < 1 / 2 := by
+  rw [FinFin.measure_apply]
+  generalize_proofs hfin
+  have : |hfin.toFinset| = 42200819302092359872395663074908957253749760700776448000000 := by
+    trans ‖Fin 23 ↪ Fin 365‖
+    · simp_rw [← Fintype.card_coe, Set.Finite.coeSort_toFinset, Set.coe_setOf]
+      exact Fintype.card_congr (Equiv.subtypeInjectiveEquivEmbedding _ _)
+    · simp only [Fintype.card_embedding_eq, Fintype.card_fin, Nat.descFactorial]
+  rw [this, ENNReal.lt_div_iff_mul_lt, mul_comm, mul_div, ENNReal.div_lt_iff]
+  rotate_left; (iterate 2 right; norm_num); (iterate 2 left; norm_num)
+  norm_cast
+  simp only [Fintype.card_pi]
+  norm_num
+#align theorems_100.birthday_measure Theorems100.birthday_measure
+
+end MeasureTheory
+
+end Theorems100
+```

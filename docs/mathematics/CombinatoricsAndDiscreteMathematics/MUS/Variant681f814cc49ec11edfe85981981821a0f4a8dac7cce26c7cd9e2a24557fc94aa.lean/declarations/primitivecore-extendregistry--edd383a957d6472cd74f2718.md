@@ -1,0 +1,108 @@
+# PrimitiveCore.extendRegistry
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:914c2a9113e79e9b1698d27ef8f796694c3de42c205651f69723c3b1372dbecd",
+  "kind": "def",
+  "lexical_name": "PrimitiveCore.extendRegistry",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "primitivecore-extendregistry--edd383a957d6472cd74f2718",
+  "source": {
+    "blob": "272247d96a244d6c88d53a898a0458c4b6675770",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 146,
+    "line": 120,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/MUS/Variant681f814cc49ec11edfe85981981821a0f4a8dac7cce26c7cd9e2a24557fc94aa.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:edd383a957d6472cd74f2718f9cfa4ed322ad93a61caf4d0dc41db94a3d12b84",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/MUS/Variant681f814cc49ec11edfe85981981821a0f4a8dac7cce26c7cd9e2a24557fc94aa.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:914c2a9113e79e9b1698d27ef8f796694c3de42c205651f69723c3b1372dbecd`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 120–146.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def PrimitiveCore.extendRegistry
+    {Partial : Type uPartial}
+    {Full : Type uFull}
+    {Constraint : Type uConstraint}
+    [DecidableEq Constraint]
+    {semantics :
+      Semantics Partial Full Constraint}
+    {registry largerRegistry :
+      Finset Constraint}
+    {partial : Partial}
+    (core :
+      PrimitiveCore
+        semantics registry partial)
+    (registrySubset :
+      registry ⊆ largerRegistry) :
+    PrimitiveCore
+      semantics largerRegistry partial where
+  constraints := core.constraints
+  subset_registry :=
+    fun _ member =>
+      registrySubset
+        (core.subset_registry member)
+  nonempty := core.nonempty
+  infeasible := core.infeasible
+  deletion_minimal :=
+    core.deletion_minimal
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/MUS/Variant681f814cc49ec11edfe85981981821a0f4a8dac7cce26c7cd9e2a24557fc94aa.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/MUS/Variant681f814cc49ec11edfe85981981821a0f4a8dac7cce26c7cd9e2a24557fc94aa.lean#L120).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `272247d96a244d6c88d53a898a0458c4b6675770` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

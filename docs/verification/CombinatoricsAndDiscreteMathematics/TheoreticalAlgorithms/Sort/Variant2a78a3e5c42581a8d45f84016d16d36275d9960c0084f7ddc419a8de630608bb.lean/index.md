@@ -1,0 +1,113 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Sort.Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "dbb515a7fbb90cc8b51aadb17e6ad77aef412b5c",
+  "lexical_observation_count": 51,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/index.md) · [Full source](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `dbb515a7fbb90cc8b51aadb17e6ad77aef412b5c`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.List.OfFn` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.List.Perm` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Sorted](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted--f450a5ff9b63eee58ed9e882.md) | 37 | `declaration-track:f450a5ff9b63eee58ed9e882261bf9726e1cd4db6d9a5b84bf666befc51eb397` |
+| 2 | `instance` | [decidableSorted](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/decidablesorted--7028280bfa80c76360934e48.md) | 41 | `declaration-track:7028280bfa80c76360934e48bfb066567e39532e9e3740871d124fe637faf498` |
+| 3 | `theorem` | [Sorted.le_of_lt](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-le-of-lt--983cb157ce761048156a8e26.md) | 45 | `result-track:983cb157ce761048156a8e26fa2ee126ee7942a29f39d32e4fc68e43db6da452` |
+| 4 | `theorem` | [Sorted.lt_of_le](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-lt-of-le--854e079ae6245e23a52e7011.md) | 49 | `result-track:854e079ae6245e23a52e701155e751488efd5b79c6fcf5e82c8d574f4e8547a2` |
+| 5 | `theorem` | [sorted_nil](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-nil--6a6d44441d260b55f4c7c041.md) | 54 | `result-track:6a6d44441d260b55f4c7c0411ee879f4a3b2157beef75358578fb706fbafa825` |
+| 6 | `theorem` | [Sorted.of_cons](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-of-cons--535ba4e4533290bbd81ad5dc.md) | 58 | `result-track:535ba4e4533290bbd81ad5dc37c33fae87c92250067994f15b11007515c6d373` |
+| 7 | `theorem` | [Sorted.tail](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-tail--d7cd453ff327ef69bb2e04b0.md) | 62 | `result-track:d7cd453ff327ef69bb2e04b0a8e52e272abd3e2201b0ecbfaf5b8f5633fffbce` |
+| 8 | `theorem` | [rel_of_sorted_cons](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/rel-of-sorted-cons--e1a1c12f7ab8aa776638a283.md) | 66 | `result-track:e1a1c12f7ab8aa776638a2837d5073abdadbbcfaf2e485e9dfaa9856775c6a6b` |
+| 9 | `theorem` | [sorted_cons](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-cons--cd3818e712b4401581a3211f.md) | 71 | `result-track:cd3818e712b4401581a3211f83fff129db823e5825099f6edbc030aad598bd52` |
+| 10 | `theorem` | [Sorted.nodup](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-nodup--fa3f4c0af829dcd17432abda.md) | 75 | `result-track:fa3f4c0af829dcd17432abda37376735ccc5fd6a477dc2742dd50b831fd94209` |
+| 11 | `theorem` | [eq_of_perm_of_sorted](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/eq-of-perm-of-sorted--c42956bab67edf122447a5f2.md) | 80 | `result-track:c42956bab67edf122447a5f2cb346a474d0305b5f50b8f58b1cff7137c2a0903` |
+| 12 | `theorem` | [sublist_of_subperm_of_sorted](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sublist-of-subperm-of-sorted--b6aa9fa8a9b8627cfed7c900.md) | 99 | `result-track:b6aa9fa8a9b8627cfed7c900e69bfaeb33f0fdfaabc5b2d07a8afeec4f624a89` |
+| 13 | `theorem` | [sorted_singleton](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-singleton--76e6f4e4cb61a1edfa345852.md) | 106 | `result-track:76e6f4e4cb61a1edfa3458522e531167079ec1f04603cba40a878d82ad2b0f9e` |
+| 14 | `theorem` | [Sorted.rel_get_of_lt](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-rel-get-of-lt--d8e7e2005c7409b88b3f8be1.md) | 110 | `result-track:d8e7e2005c7409b88b3f8be13d095ce630b35adf0f52eb5b2aa96219beb92d9a` |
+| 15 | `theorem` | [Sorted.rel_nthLe_of_lt](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-rel-nthle-of-lt--48a8fae3536a58b5241030f7.md) | 114 | `result-track:48a8fae3536a58b5241030f7e8fb69f00ac1399a38e8d4d2cf5cfc9f9552e3a8` |
+| 16 | `theorem` | [Sorted.rel_get_of_le](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-rel-get-of-le--27b420957745bd9fe2964af1.md) | 119 | `result-track:27b420957745bd9fe2964af1f845deff4273ffdcc85bce6137d4f1284cb03894` |
+| 17 | `theorem` | [Sorted.rel_nthLe_of_le](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-rel-nthle-of-le--aadbe85a99a54df887348f28.md) | 124 | `result-track:aadbe85a99a54df887348f28562afac819548eea9176fb48e2cad8b7f4093e6d` |
+| 18 | `theorem` | [Sorted.rel_of_mem_take_of_mem_drop](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-rel-of-mem-take-of-mem-drop--948c1eb9e7293e1d036ef3ef.md) | 129 | `result-track:948c1eb9e7293e1d036ef3ef71c6e1bbf0b7d7b82671162ccf15a29410b737fd` |
+| 19 | `theorem` | [sorted_ofFn_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-offn-iff--00b32b2809dbe1a262e2ddbd.md) | 144 | `result-track:00b32b2809dbe1a262e2ddbd8983ef2cab58e763c07714ba5b7a2ced1d8be709` |
+| 20 | `theorem` | [sorted_lt_ofFn_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-lt-offn-iff--1be27d92ac58fff9769330be.md) | 150 | `result-track:1be27d92ac58fff9769330bed4e59797bbb4e59c633e081627bc460517dde06e` |
+| 21 | `theorem` | [sorted_le_ofFn_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-le-offn-iff--ae68d9e43fdd7048767441e4.md) | 153 | `result-track:ae68d9e43fdd7048767441e47f67a7648921f4c17ee03df3931cbcf43dec3237` |
+| 22 | `theorem` | [monotone_iff_ofFn_sorted](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/monotone-iff-offn-sorted--65dbb804f8c8cb7dbc04788d.md) | 158 | `result-track:65dbb804f8c8cb7dbc04788de5fe1d023ce7c4f941ed262887bb918453869c9d` |
+| 23 | `def` | [orderedInsert](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/orderedinsert--f4e143bc97e44cb0f3656ee3.md) | 181 | `declaration-track:f4e143bc97e44cb0f3656ee3eb2ea7548681fe7e72f7a0f4323cff5d7cf66b1c` |
+| 24 | `def` | [insertionSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/insertionsort--44e5608c4c8db36e3c6da4fe.md) | 188 | `declaration-track:44e5608c4c8db36e3c6da4feef180c9be32b0b74b095d8fc93e56c6bad5a7aca` |
+| 25 | `theorem` | [orderedInsert_nil](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/orderedinsert-nil--31b7190d155a6a7314303312.md) | 194 | `result-track:31b7190d155a6a73143033127cac53f5dda62d3764af14085bfeae72e4d5b629` |
+| 26 | `theorem` | [orderedInsert_length](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/orderedinsert-length--a469c5f2b5d71b9a35aa152e.md) | 198 | `result-track:a469c5f2b5d71b9a35aa152e25b418b35b088ff708c358ae63490581e838a2f3` |
+| 27 | `theorem` | [orderedInsert_eq_take_drop](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/orderedinsert-eq-take-drop--8a11a011f5d96f5a854b3f8e.md) | 206 | `result-track:8a11a011f5d96f5a854b3f8e9132d291091ea44a7448d89234bf1b9f589446d7` |
+| 28 | `theorem` | [insertionSort_cons_eq_take_drop](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/insertionsort-cons-eq-take-drop--2648aa81ea0459a6d26db750.md) | 215 | `result-track:2648aa81ea0459a6d26db7501cd4193d6d016b4b6f69dce4b72c138e2c5de8e5` |
+| 29 | `theorem` | [perm_orderedInsert](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/perm-orderedinsert--c29bf54a96ca3ed028007571.md) | 226 | `result-track:c29bf54a96ca3ed02800757120f03c64f41f2272b9d685f4337d90070e5f4f7a` |
+| 30 | `theorem` | [orderedInsert_count](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/orderedinsert-count--75aee92dc490d2c5e28ef297.md) | 234 | `result-track:75aee92dc490d2c5e28ef297e4e44d12ce933c7d5b127568c5de4b1c7e2ed133` |
+| 31 | `theorem` | [perm_insertionSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/perm-insertionsort--439654e68c42832f65f144e4.md) | 239 | `result-track:439654e68c42832f65f144e4ef252e0fc362de51d4ade727cdcf758f4e68530c` |
+| 32 | `theorem` | [Sorted.insertionSort_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-insertionsort-eq--40e929a060c01b25874e48fd.md) | 249 | `result-track:40e929a060c01b25874e48fdaff7db801728d2b0b855cb3aed009693390d3d45` |
+| 33 | `theorem` | [Sorted.orderedInsert](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-orderedinsert--72699a5cd4367c0f67173c52.md) | 261 | `result-track:72699a5cd4367c0f67173c52ef4f7d01cdb6fdd39ad535c01d0f7dfbf475132e` |
+| 34 | `theorem` | [sorted_insertionSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-insertionsort--8e8f87b4e8e9708d5e1ef6ca.md) | 281 | `result-track:8e8f87b4e8e9708d5e1ef6caf9ab2c27ba6effcd8c9b387b2029ab3b5a808655` |
+| 35 | `def` | [split](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/split--36c8c338cf91cd70a0d09034.md) | 303 | `declaration-track:36c8c338cf91cd70a0d09034f80649b4a9bdcc384457afb85805e582931baea2` |
+| 36 | `theorem` | [split_cons_of_eq](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/split-cons-of-eq--7514d4daef865ed62cdda2d9.md) | 310 | `result-track:7514d4daef865ed62cdda2d965abebdcd8524bd5344222959ec29743eeab6ee4` |
+| 37 | `theorem` | [length_split_le](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/length-split-le--2fb0d771fd4fd61cfc579caa.md) | 314 | `result-track:2fb0d771fd4fd61cfc579caa9a553390d5423f779472cc035bfbac3e1cc4386d` |
+| 38 | `theorem` | [length_split_lt](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/length-split-lt--c4d1077f7c016624115e10ed.md) | 324 | `result-track:c4d1077f7c016624115e10edd6c40c92dc803fc714139aeed1b470cde6b3e9e5` |
+| 39 | `theorem` | [perm_split](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/perm-split--5ba11bcf78ce1225cd73d314.md) | 332 | `result-track:5ba11bcf78ce1225cd73d314cf3299270f19e5a4938e873ee56d00eba6fcfaae` |
+| 40 | `def` | [merge](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/merge--98d77e46345b14b59ade66a1.md) | 343 | `declaration-track:98d77e46345b14b59ade66a134a8d2e02a089e8a348ab3fb82ae0287e0d6c40b` |
+| 41 | `def` | [mergeSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/mergesort--309cdc8e7e647dab364c564a.md) | 351 | `declaration-track:309cdc8e7e647dab364c564a37870d81f71a4a8105fdadeaf729af6ed939d486` |
+| 42 | `theorem` | [mergeSort_cons_cons](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/mergesort-cons-cons--1506971758d72f7d75579b92.md) | 366 | `result-track:1506971758d72f7d75579b92561c5fade234579363ea56fade13848fef06b9f1` |
+| 43 | `theorem` | [perm_merge](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/perm-merge--337999ed8921dd61c536a215.md) | 373 | `result-track:337999ed8921dd61c536a2158df024499e4ae100b5fcee42513f7ad14689dac2` |
+| 44 | `theorem` | [perm_mergeSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/perm-mergesort--b4523bbc6e8de4d7ec07f0bd.md) | 385 | `result-track:b4523bbc6e8de4d7ec07f0bdc4e48b97d109c695a4747618df50c4f1597bc81f` |
+| 45 | `theorem` | [length_mergeSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/length-mergesort--eb1f2fd2f896cae3562e4ffd.md) | 399 | `result-track:eb1f2fd2f896cae3562e4ffdc1830019d155a4e0cb064be578647cc6e600bc97` |
+| 46 | `theorem` | [Sorted.merge](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-merge--599b7e34f4a83173d8f242cf.md) | 407 | `result-track:599b7e34f4a83173d8f242cf98934650ddeea02dc10a11d1fff5ebd3b49e0e5a` |
+| 47 | `theorem` | [sorted_mergeSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/sorted-mergesort--4567976357653c3bec09904a.md) | 438 | `result-track:4567976357653c3bec09904ab22dec30729d6064d62db959e7dd486167fe6808` |
+| 48 | `theorem` | [mergeSort_eq_self](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/mergesort-eq-self--8881c69c6adb903c7f6be6d2.md) | 449 | `result-track:8881c69c6adb903c7f6be6d272c2903d745154b1df7e76e1d2077c5667b653b8` |
+| 49 | `theorem` | [mergeSort_eq_insertionSort](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/mergesort-eq-insertionsort--baebd93438b6903f60b6ed6d.md) | 453 | `result-track:baebd93438b6903f60b6ed6d7d741468c2c37f7beec49d4239424a968da349fd` |
+| 50 | `theorem` | [mergeSort_nil](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/mergesort-nil--42d35f30512f10a99a154b08.md) | 464 | `result-track:42d35f30512f10a99a154b08fea9e0c9a3e5b01a7c1191a17f02cd263e03858d` |
+| 51 | `theorem` | [mergeSort_singleton](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sort/Variant2a78a3e5c42581a8d45f84016d16d36275d9960c0084f7ddc419a8de630608bb.lean/declarations/mergesort-singleton--78b9c7afa0808c1169d96c6a.md) | 468 | `result-track:78b9c7afa0808c1169d96c6aeca72e878dcd23e5ab813606a5fc8ecac47f6f3c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
