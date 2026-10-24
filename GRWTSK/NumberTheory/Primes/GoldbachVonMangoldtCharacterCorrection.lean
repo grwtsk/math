@@ -2,6 +2,7 @@
 import GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm
 import Mathlib.Tactic
+import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
 # Conditional finite character reconstruction with nonunit correction
@@ -108,5 +109,50 @@ theorem norm_dirichlet_twist_le_unit_mass_norms
       apply Finset.sum_congr rfl
       intro b hb
       rw [norm_mul, complexDirichlet_norm_on_units q χ b, mul_one]
+
+
+/-- Reindex the actual finite unit-fiber Dirichlet twist into one
+integer-indexed von Mangoldt-weighted sum. The inner unit filter
+is retained exactly: it vanishes on nonunit residues without
+pretending that a unit-group character is defined there. -/
+theorem dirichlet_unitPsi_twist_eq_vonMangoldt_integer_sum
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) :
+    (∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)) =
+      ∑ n ∈ Finset.range (N + 1),
+        ∑ b : (ZMod q)ˣ,
+          if (n : ZMod q) = (b : ZMod q) then
+            (ArithmeticFunction.vonMangoldt n : ℂ) * χ (b : ZMod q)
+          else 0 := by
+  classical
+  calc
+    (∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)) =
+      ∑ b : (ZMod q)ˣ,
+        ∑ n ∈ Finset.range (N + 1),
+          if (n : ZMod q) = (b : ZMod q) then
+            (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ) *
+              χ (b : ZMod q)
+          else 0 := by
+      apply Finset.sum_congr rfl
+      intro b hb
+      unfold unitPsiWeight
+      rw [Finset.sum_filter, Finset.sum_mul]
+      apply Finset.sum_congr rfl
+      intro n hn
+      split_ifs <;> simp
+    _ = ∑ n ∈ Finset.range (N + 1),
+          ∑ b : (ZMod q)ˣ,
+            if (n : ZMod q) = (b : ZMod q) then
+              (GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection.primePowerWeight n : ℂ) *
+                χ (b : ZMod q)
+            else 0 := by
+      rw [Finset.sum_comm]
+    _ = ∑ n ∈ Finset.range (N + 1),
+          ∑ b : (ZMod q)ˣ,
+            if (n : ZMod q) = (b : ZMod q) then
+              (ArithmeticFunction.vonMangoldt n : ℂ) * χ (b : ZMod q)
+            else 0 := by
+      apply Finset.sum_congr rfl
+      intro n hn
+      rw [GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise.primePowerWeight_eq_vonMangoldt n]
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
