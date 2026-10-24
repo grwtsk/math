@@ -1,4 +1,4 @@
-# Verification specifications and generated views
+# Verification specifications
 
 Static verification specifications are now colocated with the documentation
 namespace and mirror `GRWTSK` source paths. For example:
@@ -9,9 +9,9 @@ docs/verification/Analysis/Example/
 ```
 
 The migration index is [`migration-index.json`](migration-index.json). It
-records every moved top-level static target, its former path, preserved
-manifest identity/version, exact content digest, and whether its source scope
-was mirrored, library-wide, or unscoped. `_library-root/` and `_unscoped/`
+records every relocated target, support file and historical evidence occurrence,
+its former path, destination repository/path, preserved manifest identity/version,
+and separate original and observed transfer digests. `_library-root/` and `_unscoped/`
 are explicit metadata boundaries; they do not imply a source-module binding.
 
 Historical paths that appeared in older documentation are resolved through the
@@ -20,10 +20,20 @@ stable external artifact IDs; the registry records the historical Git blob,
 exact target digest, optional immutable readback URL, and explicit unresolved
 status when no blob was found.
 
-The former [`verification/`](../../verification/README.md) directory remains
-only as a compatibility boundary for legacy fixtures, provider adapters,
-relocation records, source variants, and attribution material. Those are not
-the canonical static target namespace.
+Static fixtures, validation-only provider adapters and audit specifications are
+colocated under [`_support/`](_support/). The complete former README and its
+versioned mathematical scope notes are preserved under
+[`_support/legacy-verification/`](_support/legacy-verification/README.md).
+Multi-module bundles preserve every listed source; a first-listed navigation
+root does not assert exclusive mathematical ownership or theorem dependency.
+
+Historical generated attribution, source-variant context/catalogues and relocation
+exports are retained byte-for-byte in `grwtsk/noeaaeue`, under
+`verification/math/retained-math-verification-v1/verification/`. Their embedded
+paths and historical hash claims remain unchanged. The migration catalogue gives
+current storage locators; fresh transfer digests are not new proof receipts.
+The former [`verification/`](../../verification/README.md) root now contains only
+a compatibility navigation README. New non-stub files fail Noe's layout check.
 
 Noeaaeue owns the generated files. The compact template currently emits:
 

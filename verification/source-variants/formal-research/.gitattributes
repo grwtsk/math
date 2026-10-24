@@ -1,3 +1,0 @@
-/objects/** -text -filter
-/catalogue/*.jsonl -text -filter
-/licenses/** -text -filter

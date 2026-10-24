@@ -17219,74 +17219,163 @@
     "unparsed_modules": 111
   },
   "count_report": "docs/reference/documentation-counts.json",
-  "count_report_identity": "c064a8e960146f2999f5e739ce50c3f245040e0bbb342ab950333f80c212f42a",
+  "count_report_identity": "4826a8b4809c8afcfc76ec811728007124247f0d6b7ed7d67803e7413ca0cf4e",
   "current_source_populations": {
-    "all_grwtsk_lean_modules": 72343,
-    "maintained_grwtsk_lean_modules": 72343,
-    "all_grwtsk_source_namespaces": 23,
-    "maintained_source_namespaces": 23,
+    "all_grwtsk_lean_modules": 72570,
+    "maintained_grwtsk_lean_modules": 72570,
+    "grwtsk_root_lean_modules": 0,
+    "all_grwtsk_source_namespaces": 24,
+    "maintained_source_namespaces": 24,
     "lean_modules_by_namespace": {
-      "Algebra": 267,
+      "Algebra": 305,
       "AlgebraicGeometry": 49,
-      "Analysis": 701,
+      "Analysis": 715,
       "CategoriesAndHomologicalAlgebra": 57,
-      "Combinatorics": 99,
-      "CombinatoricsAndDiscreteMathematics": 185,
+      "Combinatorics": 101,
+      "CombinatoricsAndDiscreteMathematics": 186,
       "Data": 2,
-      "DifferentialEquationsAndDynamicalSystems": 24,
-      "DynamicalSystems": 17,
-      "FoundationsLogicAndTypeTheory": 431,
-      "Geometry": 37,
+      "DynamicalSystems": 27,
+      "FoundationsLogicAndTypeTheory": 433,
+      "Geometry": 38,
       "GeometryOfNumbers": 6,
-      "GroupTheory": 9,
+      "GroupTheory": 12,
+      "InformationTheory": 39,
       "Interfaces": 238,
-      "LinearAlgebra": 92,
-      "Logic": 80,
+      "LinearAlgebra": 101,
+      "Logic": 104,
       "MeasureTheory": 6,
-      "NumberTheory": 1785,
+      "NumberTheory": 1897,
       "Order": 9,
-      "ProbabilityAndMathematicalStatistics": 57,
-      "SourceCorpus": 68047,
-      "Spectral": 28,
+      "Probability": 5,
+      "ProbabilityAndMathematicalStatistics": 58,
+      "SourceCorpus": 68036,
+      "Spectral": 29,
       "Topology": 117
     },
     "maintained_lean_modules_by_namespace": {
-      "Algebra": 267,
+      "Algebra": 305,
       "AlgebraicGeometry": 49,
-      "Analysis": 701,
+      "Analysis": 715,
       "CategoriesAndHomologicalAlgebra": 57,
-      "Combinatorics": 99,
-      "CombinatoricsAndDiscreteMathematics": 185,
+      "Combinatorics": 101,
+      "CombinatoricsAndDiscreteMathematics": 186,
       "Data": 2,
-      "DifferentialEquationsAndDynamicalSystems": 24,
-      "DynamicalSystems": 17,
-      "FoundationsLogicAndTypeTheory": 431,
-      "Geometry": 37,
+      "DynamicalSystems": 27,
+      "FoundationsLogicAndTypeTheory": 433,
+      "Geometry": 38,
       "GeometryOfNumbers": 6,
-      "GroupTheory": 9,
+      "GroupTheory": 12,
+      "InformationTheory": 39,
       "Interfaces": 238,
-      "LinearAlgebra": 92,
-      "Logic": 80,
+      "LinearAlgebra": 101,
+      "Logic": 104,
       "MeasureTheory": 6,
-      "NumberTheory": 1785,
+      "NumberTheory": 1897,
       "Order": 9,
-      "ProbabilityAndMathematicalStatistics": 57,
-      "SourceCorpus": 68047,
-      "Spectral": 28,
+      "Probability": 5,
+      "ProbabilityAndMathematicalStatistics": 58,
+      "SourceCorpus": 68036,
+      "Spectral": 29,
       "Topology": 117
     }
   },
   "current_documentation_populations": {
-    "all_docs_markdown_pages": 983,
-    "core_documentation_markdown_pages": 765,
-    "mathematics_markdown_pages": 751,
+    "all_docs_markdown_pages": 1062,
+    "core_documentation_markdown_pages": 827,
+    "mathematics_markdown_pages": 779,
     "mathematics_area_indexes": 12,
-    "mathematics_object_candidate_pages": 739,
+    "mathematics_object_candidate_pages": 767,
     "registered_object_guides": 149,
     "documented_object_groups": 59,
     "distinct_primary_sources": 145,
     "archive_intake_records": 68,
-    "selected_result_families": 3
+    "selected_result_families": 3,
+    "curated_documentation_by_area": {
+      "Algebra": {
+        "registered_object_guides": 4,
+        "documented_object_groups": 2,
+        "distinct_primary_sources": 4,
+        "archive_intake_records": 1,
+        "selected_result_families": 0
+      },
+      "Analysis": {
+        "registered_object_guides": 43,
+        "documented_object_groups": 18,
+        "distinct_primary_sources": 43,
+        "archive_intake_records": 39,
+        "selected_result_families": 1
+      },
+      "Combinatorics": {
+        "registered_object_guides": 26,
+        "documented_object_groups": 2,
+        "distinct_primary_sources": 25,
+        "archive_intake_records": 0,
+        "selected_result_families": 1
+      },
+      "Data": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "DynamicalSystems": {
+        "registered_object_guides": 3,
+        "documented_object_groups": 2,
+        "distinct_primary_sources": 3,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "GroupTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      },
+      "LinearAlgebra": {
+        "registered_object_guides": 14,
+        "documented_object_groups": 10,
+        "distinct_primary_sources": 14,
+        "archive_intake_records": 3,
+        "selected_result_families": 0
+      },
+      "Logic": {
+        "registered_object_guides": 10,
+        "documented_object_groups": 3,
+        "distinct_primary_sources": 10,
+        "archive_intake_records": 3,
+        "selected_result_families": 0
+      },
+      "MeasureTheory": {
+        "registered_object_guides": 0,
+        "documented_object_groups": 0,
+        "distinct_primary_sources": 0,
+        "archive_intake_records": 1,
+        "selected_result_families": 0
+      },
+      "NumberTheory": {
+        "registered_object_guides": 41,
+        "documented_object_groups": 17,
+        "distinct_primary_sources": 39,
+        "archive_intake_records": 19,
+        "selected_result_families": 1
+      },
+      "Order": {
+        "registered_object_guides": 1,
+        "documented_object_groups": 1,
+        "distinct_primary_sources": 1,
+        "archive_intake_records": 2,
+        "selected_result_families": 0
+      },
+      "Spectral": {
+        "registered_object_guides": 7,
+        "documented_object_groups": 4,
+        "distinct_primary_sources": 6,
+        "archive_intake_records": 0,
+        "selected_result_families": 0
+      }
+    }
   },
   "legacy_curated_observer_census": {
     "source_module_count": 886,
@@ -17298,5 +17387,24 @@
       "unparsed_modules": 111
     },
     "scope": "legacy curated source paths and pinned-parser observer census"
+  },
+  "current_repository_lean_population": {
+    "method": "git_index_regular_files",
+    "all_lean_files": 72576,
+    "maintained_grwtsk_lean_files": 72570,
+    "support_lean_files": 6,
+    "root_lean_files": 1,
+    "excluded_root_directories": [
+      ".git/",
+      ".lake/"
+    ],
+    "maintained_grwtsk_excluded_directory_names": [],
+    "non_git_fallback_support_excluded_directory_names": [
+      "__pycache__",
+      "outputs",
+      "runtime"
+    ],
+    "untracked_files": "excluded in Git mode; included only in non-Git fixture fallback",
+    "scope": "Existing regular .lean files, including root modules and fixtures; symlinks excluded. Git mode includes all indexed paths except repository-root .git/ and .lake/, using working-tree bytes, not HEAD bytes. Non-Git fallback directory-name exclusions apply only outside GRWTSK/."
   }
 }

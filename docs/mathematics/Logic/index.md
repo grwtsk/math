@@ -2,24 +2,28 @@
 
 [All mathematical areas](../../index.md) · [Lean source folder](../../../GRWTSK/Logic).
 
+<!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
 | Inventory | Count |
 |---|---:|
-| Object guides | 10 |
-| Documented object groups | 3 |
-| Distinct primary sources linked | 10 |
-| Lean source modules | 65 |
-| Archive intake records | 3 |
-| Selected catalog families | 0 |
+| Lean source modules (current regular filesystem files) | 104 |
+| Curated registered object guides | 10 |
+| Curated documented object groups | 3 |
+| Curated primary sources linked | 10 |
+| Curated archive intake records | 3 |
+| Curated selected catalog families | 0 |
+
+No current whole-corpus source-command census is available.
+<!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-At least 556 source declaration commands, including 296 theorem/lemma commands, across 60 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): At least 556 source declaration commands, including 296 theorem/lemma commands, across 60 parsed Lean source modules; 5 modules are unparsed, so these totals are lower bounds. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## FiniteCoverage
 
 1 object guide · 1 distinct linked primary source file.
 
-Linked primary-source scope: 4 source declaration commands, including 4 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): Linked primary-source scope: 4 source declaration commands, including 4 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Finite coverage and scope](FiniteCoverage/scope.md).
 
@@ -27,7 +31,7 @@ Linked primary-source scope: 4 source declaration commands, including 4 theorem/
 
 8 object guides · 8 distinct linked primary source files.
 
-Linked primary-source scope: 88 source declaration commands, including 68 theorem/lemma commands, across 8 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): Linked primary-source scope: 88 source declaration commands, including 68 theorem/lemma commands, across 8 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Certificates for incrementally decoded batches](FiniteSequences/batch-certificate.md).
 - [Composition of incremental dictionary decoding](FiniteSequences/incremental-composition.md).
@@ -42,7 +46,7 @@ Linked primary-source scope: 88 source declaration commands, including 68 theore
 
 1 object guide · 1 distinct linked primary source file.
 
-Linked primary-source scope: 19 source declaration commands, including 6 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): Linked primary-source scope: 19 source declaration commands, including 6 theorem/lemma commands, across 1 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Proof-checking source roles](ProofChecking/source-roles.md).
 

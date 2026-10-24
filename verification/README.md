@@ -1,69 +1,19 @@
-# Legacy verification boundary
+# Verification navigation compatibility
 
-Static verification targets moved to [`docs/verification/`](../docs/verification/)
-and are indexed by its migration manifest. This compatibility README remains
-so historical links resolve while legacy fixtures, provider adapters,
-relocation records, source variants, and attribution material are retired or
-re-homed separately.
+All static specifications and authored support now live under
+[`docs/verification/`](../docs/verification/README.md). The complete former
+README, including its versioned scope notes, is preserved at
+[`legacy-verification/README.md`](../docs/verification/_support/legacy-verification/README.md).
 
-The move preserved target file contents, manifest IDs, versions, and exact
-SHA-256 digests. It did not assert elaboration, replay, trust audit, hostile
-control execution, mathematical admission, or proof status.
+The [complete migration catalogue](../docs/verification/migration-index.json)
+records every former path, destination repository/path and transfer digest.
+Historical generated attribution, source-variant context and relocation exports
+are retained unchanged in `grwtsk/noeaaeue`, under
+`verification/math/retained-math-verification-v1/verification/`.
+No GRWTSK Lean source was removed; SourceCorpus remains maintained.
 
-## v0.11 compatibility notes
-
-`RingCertificate` and `TopologicalRingCertificate` now inhabit `Prop`, as required by the composable-law interface. The exact port function and ring laws are unchanged. `.hom` reconstructs the bundled homomorphism; `.map_eq` remains available. Producers using record fields `hom` and `map_eq` migrate to `RingCertificate.ofHom P f hf`; `hom_ofHom` proves recovery of the supplied homomorphism. Optional proof/refutation accessors now return `Option (PLift P)` / `Option (PLift (¬ P))`, with the evidence in `.down` when present.
-
-The old v0.10 nonclaim about evaluation-map continuity is discharged by new mathematical source, not by changing a status label. Continuity and point separation are not a homeomorphism, a scheme/analytic-space comparison, an arithmetic-to-elliptic supplier, global holomorphic gluing, or an RH proof. The generic bridge is not necessarily injective; the constant-bridge theorem is an explicit negative control. Source presence is not kernel-checking or external replay evidence.
-
-## v0.12 open-cover descent scope
-
-`HolomorphicOpenCoverGluing` proves locality of the existing holomorphic-extension predicate when both members of an exact `BinaryDomainCover` are open in the ambient complex plane. It constructs the historical `HolomorphicGlueCertificate` rather than requiring its global conclusion as an input. Forgetting the holomorphic glue yields exactly the historical ordinary function glue. Coverage, overlap matching, and openness remain separate requirements. The positive cover is `C minus {0}` together with `C minus {1}`; negative theorem fixtures reject mismatching constant sections and missing coverage.
-
-`AnalyticAffineGluing` constructs a unique global ring homomorphism from compatible local `Bridge` maps with the same source ring. Compatibility is equality of ring homomorphisms on the overlap, not just equality of spectrum point maps. Local ring laws and separatedness prove all global ring laws. The global spectrum map inherits continuity and agrees with each local point map. Descent of local polynomial coordinate maps recovers the previously constructed global polynomial model.
-
-`PortFiberOpenCoverDescent` adds four quantified claims through `Architecture.combineLocal`. Historical indices, local dispositions, arithmetic obligations, the terminal RH disposition, and residual plans are not rewritten. This increment does not establish arbitrary indexed-cover descent, nontrivial line-bundle cocycle descent, a source-specific elliptic/arithmetic map, or any Weil/RH/ABC conclusion. All source remains pending direct Lean checking and exact-head audits.
-
-## v0.13 indexed-cover descent scope
-
-`HolomorphicIndexedCoverGluing` introduces `IndexedDomainCover` without replacing the historical binary API. The index type need not be finite or inhabited. Coverage supplies a local member for each point of the selected domain; `Matching` requires exact equality on every pairwise intersection. `glueSection_apply` removes pointwise dependence on the member selected by classical choice. The pinned `DifferentiableOn.iUnion_of_isOpen` theorem derives global holomorphy from local witnesses. `existsUnique_glue` constructs the unique holomorphic section, `glue_restrictions` recovers a supplied global section, and `glue_reindex` proves invariance under surjective relabelling or duplication of covering members.
-
-`AnalyticAffineIndexedGluing` descends a compatible indexed family of actual coordinate-ring homomorphisms from one exact source ring. Its ring laws follow from local ring laws and indexed separatedness. The descended spectrum-point map is continuous and agrees with every local point map. `glue_precomp` proves exact source-ring naturality; `glue_polynomial_model` recovers the existing polynomial bridge. The all-punctures fixture uses the infinite cover `U_a = C minus {a}` indexed by `a : C`. Further fixtures reject mismatched constants and an empty index over a nonempty domain, while allowing a genuinely empty-domain cover.
-
-`PortFiberIndexedCoverDescent` adds six quantified claims using `Architecture.combineLocal`; earlier claims and the terminal RH disposition remain definitionally unchanged. Its small-index/small-source-ring portfolio is not a claim that the universe-polymorphic source theorems were replayed. No old source module or historical manifest is rewritten by this increment, except the isolated root's imports and version.
-
-The new result concerns scalar holomorphic sections and compatible maps into their section rings. It is not nontrivial line-bundle/cocycle descent, a general dependent-fiber sheaf theorem, an algebraic-to-analytic structure-sheaf comparison, a source-specific elliptic/arithmetic supplier, B_n, a Weil comparison, or RH/ABC. `SOURCE_COMMITTED / NOT_RUN / NOT_KERNEL_AUDITED` remains the verification boundary. No Lean/Lake invocation, native evaluation, trust audit, hostile-control execution, or external replay is asserted.
-
-## v0.14 realized line bundles and operator descent
-
-`HolomorphicLineCocycle` uses actual holomorphic sections on each indexed overlap, with diagonal and triple-overlap equations. Those equations derive pointwise inverses and nonvanishing. Holomorphy supplies the continuity needed to construct Mathlib's `VectorBundleCore` at the pinned dependency. The resulting total-space topology, continuous/open projection, continuous-linear local frames, and exact chart transition formula are not separately assumed global bundle data. Off-overlap zero extension has no geometric authority.
-
-`HolomorphicLineSections` constructs a section of that bundle from every twisted matching family and recovers all local coordinates. `sectionEquiv` identifies the two representations. `continuous_totalSection` derives continuity into the actual total-space topology from local holomorphy. Identity transitions recover the preceding indexed scalar glue exactly. No global nonzero section or frame is inferred for an arbitrary cocycle.
-
-`HolomorphicLinePort` constructs the unique pointwise fiber operator agreeing with each local continuous-linear map when the exact overlap intertwining law holds. Composition commutes with descent. `PreservesHolomorphy` is a separate analytic condition for lifting the operator to holomorphic bundle sections; multiplication by a supplied global holomorphic section discharges it using the existing section-ring product closure. Uniform operator bounds, metric/adjoint compatibility, differential/heat transport, and unbounded-domain properties are not supplied.
-
-Fixtures distinguish a nonidentity constant-frame coboundary from a nontrivial bundle class, prove that pairwise inverse signs can violate the triple law, and reject zero and identity operators in different charts as one compatible family. Mathlib's model-fiber definitional equality is not an endpoint/source or global-trivialization proof.
-
-`PortFiberLineBundle` adds six disjoint quantified claims without changing the older portfolios, residual plans, or RH disposition. Topological/Picard/K-theory classification, cocycle gauge equivalences, source-specific elliptic line bundles, and arithmetic application maps remain separate. The static target requires direct elaboration, exact-head trust/runtime audits, hostile controls, and external replay. No such execution or audit is asserted by these source files.
-
-## v0.15 gauge-equivalent cocycle transport
-
-`HolomorphicLineGauge` requires units in the actual local holomorphic-section rings and the oriented overlap law `h_j*g_ij = gprime_ij*h_i`. It implements identity, inverse, composition, and associativity. `Construction.changeFrames` constructs the cocycle `h_j*g_ij*h_i_inverse`, including its diagonal and triple-overlap laws; `changeFramesGauge` binds it to the original cocycle. `familyEquiv` and `bundleSectionEquiv` transport twisted data and the previously realized sections without identifying the source and target cocycles.
-
-`HolomorphicLineGaugeTopology` derives forward and inverse continuity in the actual two bundle topologies. `totalHomeomorph` is over the identity base map; `totalMap_coordinate` identifies every chart multiplier, and `bundleSectionEquiv_value` proves the section map uses the same underlying fiber map. Its fiber maps are continuous-linear equivalences. No metric or global trivialization is assumed. The constant factor-two gauge is a valid positive producer and `doubling_not_modelNormPreserving` rejects norm preservation even in the standard model fibers. `unitValue_ne_zero` rejects a zero local frame value.
-
-`HolomorphicLineGaugePort.transport` constructs conjugated local operators and proves target-chart compatibility. `descend_conjugacy`, `transport_comp_descend`, and `mapSection_naturality` retain the exact gauge, operator, composition order, and section action. `transport_preservesHolomorphy` uses inverse holomorphic multiplication, the original `PreservesHolomorphy` proof, and forward multiplication. Fiber linearity does not supply that analytic proof.
-
-`PortFiberGaugeTransport` adds seven small-index claims via a disjoint sum; old dispositions, application obligations, residual plans, and the terminal RH disposition remain unchanged. No earlier theorem module or historical manifest is edited. Gauge transport on the same cover is not a metric/adjoint/heat theorem, a theorem for arbitrary cover refinements, a Picard or K/KK classification, an elliptic translation/Poncelet identification, or an arithmetic supplier. Exact-head Lean elaboration, trust/runtime audits, hostile-control execution, and external replay remain pending; the source state remains `SOURCE_COMMITTED / NOT_RUN / NOT_KERNEL_AUDITED`.
-
-## v0.16 compatible Hermitian weights and pointwise adjoints
-
-`HolomorphicLineMetric.MetricWeights` supplies positive continuous chart weights with the exact law `w_j * normSq(g_ij) = w_i`. `pairing_in_chart` and `squaredNorm_in_chart` derive agreement in every realized chart; `ext_atPoint` recovers all local weights from the preferred-coordinate representative. The pairing is conjugate symmetric and linear in its second argument, with nonnegative squared norm vanishing only at zero. `squaredNorm_total_continuous` derives continuity in the actual bundle total-space topology from local data, openness, and the transition law. `fiberNorm` is a separately defined square root, not a replacement of Mathlib's model-fiber norm instance. No compatible metric is chosen for every arbitrary cocycle.
-
-`HolomorphicLineGaugeMetric.transportMetric` constructs target weights `w_i * normSq(h_i_inverse)`. Inverse holomorphic units supply continuity and positivity, and the inverse gauge equation supplies overlap compatibility. `transportMetric_symm` recovers the source weights; `pairing_transport`, `squaredNorm_transport`, and `fiberNorm_transport` preserve the intrinsic metric under the existing exact gauge fiber map. `transportMetric_unique` proves that any independently selected target metric preserving that pairing must equal the constructed one. A factor-two gauge changes unit weight to one quarter; it remains non-isometric for the unchanged model norm. Positive continuous weights one and two on coincident charts form a rejected overlap fixture.
-
-`HolomorphicLineAdjoint.localOp_eq_mul` classifies a complex-linear line endomorphism by its value at one. `coefficient_matching` derives chart independence from the original overlap intertwining law and nonzero transitions. `adjoint` constructs the conjugated-coefficient compatible family. `adjoint_pairing`, `adjoint_unique`, and `adjoint_involutive` bind it to the exact positive Hermitian fiber pairing. `adjoint_transport` and `adjoint_intertwines` use the same gauge as the previous operator conjugation. These are rank-one pointwise results; the scalar commutation argument does not extend to arbitrary higher-rank operators. `squaredNorm_descend` gives the exact pointwise coefficient norm-square distortion without asserting a base-uniform bound.
-
-`preservesHolomorphy_iff` identifies holomorphic-section preservation with holomorphic extension of the scalar coefficient functions. `adjoint_preservesHolomorphy_iff` requires that property for the conjugated coefficients separately. The source does not promote the original witnesses into conjugate witnesses. The constant imaginary multiplier is holomorphic but is not self-adjoint. No differential domain, integration measure, global-section Hilbert space, differential adjoint, Laplacian, heat-semigroup transport, connection, or Chern/Picard/K/KK/arithmetic identification is constructed.
-
-`PortFiberMetricAdjoint` adds nine small-index claims using a disjoint sum; old local dispositions, the terminal RH disposition, application obligations, and residual plans remain unchanged. The new manifest retains all previous module and control records and the scope, trust, and acceptance policies. Only its new nonclaim list is narrowed by the explicit weighted rank-one source constructions; all historical manifests remain unchanged. Direct Lean 4.33 elaboration, signature/module coverage, axiom/runtime audits, hostile-control execution, and source-bound external replay are required and remain pending. `SOURCE_COMMITTED / NOT_RUN / NOT_KERNEL_AUDITED` is not promoted by this increment.
+This file is a navigation stub, not an alternate specification namespace.
+Do not add targets, fixtures, custody records or generated outputs here.
+Noe's `math_verification_layout.py check` rejects remaining non-stub files.
+Moving files does not establish elaboration, replay, trust, attribution clearance
+or mathematical acceptance. Historical hashes do not authenticate redacted bytes.

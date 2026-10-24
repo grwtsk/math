@@ -1,7 +1,0 @@
-name = "ursm_contracts"
-version = "0.1.0"
-defaultTargets = ["URSMContracts"]
-
-[[lean_lib]]
-name = "URSMContracts"
-globs = ["URSMContracts", "ContractElements.+"]
