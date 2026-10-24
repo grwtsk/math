@@ -288,6 +288,26 @@ Read-only source inspection of the previous frontier found these exact Git blobs
 
 Mathlib and Lean transitive imports, including locally uniform limits, Mellin inversion, complex primitives and analytic geometry, have not been completely enumerated. **No complete recursive closure, cycle-freedom, or executable topological order is established.** Retain explanatory-only A–H mathematical phases, pending strict integral/cofactor and Weil/RH mathematical bridges, repaired `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` against historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` signatures and all stopping/no-merge/no-root/no-force-push/no-Railway/no-unauthorized-dispatch constraints. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**.
 
+## Import frontier continuation: nine source-verified modules
+
+Read-only audit of nine previously open project modules. Git blobs and direct GRWTSK imports are recorded; external Mathlib/Lean imports do **not** count as resolved recursive dependencies.
+
+| Module under `GRWTSK.` | Git blob | Direct project imports |
+|---|---|---|
+| `Analysis.Real.PowerCellMajorant` | `2b95abe2eeae712a78e522a58918f24819a5ccdc` | none |
+| `NumberTheory.Zeta.Riemann.CubicPowerSummation` | `fd25e7f5a1025387a239b418248f0b0344891dfa` | `Analysis.Real.CubicEulerMaclaurin`, `Analysis.Complex.IntervalMellinKernel` |
+| `Analysis.Complex.JensenFiniteMultiplicity` | `6b650bbfa1b71079ffca8241bbba64f1a409641e` | none |
+| `Analysis.Complex.NormalizedLogDerivativeBound` | `3ae623165f3b96582385ef690152e17403379525` | `Analysis.Complex.DiskBlaschkeFactors` |
+| `Analysis.Complex.FiniteBlaschkeRemoval` | `ee9c98333da16dc4bc9742c6545b387e4311384c` | `Analysis.Complex.DiskBlaschkeFactors` |
+| `NumberTheory.Zeta.Riemann.JensenDiskQuotientLog` | `364b622c593452a2c28a3a9a068a99bb59724100` | `NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`, `Analysis.Complex.BlaschkeQuotientLogarithm` |
+| `NumberTheory.Zeta.Riemann.HeightIndexedDivisor` | `ed74a8429c00713797a96309514010d8691d5d6a` | `NumberTheory.Zeta.Riemann.SeparatedContourHeights`, `NumberTheory.Zeta.Riemann.AdmissibleRectangles`, `Analysis.Complex.RectangularPoleReduction` |
+| `NumberTheory.Chebyshev.TentFiniteResidues` | `10451053d59556e4bbe608951e9ddbfb394f4720` | `Analysis.Complex.RectangularCauchyKernel`, `NumberTheory.Chebyshev.TentPoleSubtraction` |
+| `NumberTheory.Chebyshev.ProperPrimePowerCorrection` | `42df85115767d4aff286a4330778b81fe0f5f10d` | `NumberTheory.Chebyshev.PrimeIntervalWitness`, `NumberTheory.Chebyshev.CorrelationPairing`, `NumberTheory.Primes.LandauStatements` |
+
+**New unexpanded project frontier:** `Analysis.Real.CubicEulerMaclaurin`, `Analysis.Complex.DiskBlaschkeFactors`, `NumberTheory.Zeta.Riemann.JensenDiskLogDerivative`, `Analysis.Complex.BlaschkeQuotientLogarithm`, `Analysis.Complex.RectangularPoleReduction`, `Analysis.Complex.RectangularCauchyKernel`, `NumberTheory.Chebyshev.TentPoleSubtraction`, `NumberTheory.Chebyshev.PrimeIntervalWitness`, `NumberTheory.Primes.LandauStatements`, and descendants. Existing `IntervalMellinKernel`, `SeparatedContourHeights`, `AdmissibleRectangles`, `CorrelationPairing` pins are retained rather than recounted.
+
+Historical stage A–H descriptions remain mathematical-only, not executable order. Preserve all exact previous blobs, repaired `CanonicalSquareTentSixteenGapIntegrability` `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, unchanged `Set.Ioi (0:ℝ)` declarations, mathematical follow-up obligations and stopping conditions. Full transitive source/Mathlib closure and cycle-freedom remain **unverified**; no executable topological order. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** No theorem source edits, merge, root import, Railway, force push or unauthorized execution.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
