@@ -8578,3 +8578,105 @@ Actual status for source commit
 Source inspection and commit presence are not compiler, kernel, or axiom
 acceptance. The module remains source-only and outside the root pending the
 required verification.
+
+
+## Case DYNAMIC-SOFIC-SPECTRAL-COVER-20261023
+
+Source module:
+`GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`.
+
+Source commit:
+`6eadfe56e10e797f9f2dc5a0b28d04d650bd8582`.
+
+Source blob:
+`fa1707f7b796f432d52858edd2fb20cc045a9f38`.
+
+### Source relation
+
+No new paper theorem is imported by this module. It consumes the generic
+factorization interface already present in GRWTSK and the earlier
+`HeatFlowCompressionSofic` source. The previously recorded Rodgers--Tao
+(arXiv:1801.05914), Huffman (DOI 10.1109/JRPROC.1952.273898), and OpenAI
+quasi-Riemann 7/8 release
+(`openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a`) remain
+methodological context only for this increment. Aristotle/Newton/Leibniz/Riemann
+comparisons are interpretive analogies concerning proportion, dynamic change,
+and global analytic transport; no historical influence or theorem is inferred.
+
+### Formal declarations and hypotheses
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.DynamicPartition`:
+  finite stage observation with a refinement law.
+- `RecoverableAtStage`,
+  `not_recoverableAtStage_of_collision`,
+  `ProportionRecoverableAtStage`, and
+  `proportion_not_compressible_at_collision`: exact fiber-collision
+  obstruction to recovering a target/proportion from a retained partition
+  stage.
+- `SoficGraph` and `DynamicSoficPresentation`: finite labelled graph and
+  stagewise vertex trace presentation.
+- `trace_factorsThrough_partition` and
+  `no_partition_sofic_trace_cover_of_collision`: composition and collision
+  obstruction for partition-to-graph-to-trace factorization.
+- `ZeroProblem`, `ZeroProblem.Hypothesis`, and `SpectralZeroCover`:
+  abstract zero/critical-locus problem and a zero-preserving criticality
+  pullback map.
+- `SpectralZeroCover.transport_hypothesis`: a supplied spectral zero cover
+  transports the base RH-like hypothesis to one generalized problem.
+- `GeneralizedHypothesis`, `SpectralCoverFamily`, and
+  `rh_implies_generalized_of_spectralCoverFamily`: family-level conditional
+  RH-to-generalized transport.
+- `rh_iff_generalized_of_spectralCovers_and_specialization`: conditional
+  equivalence requiring both a spectral-cover family and an independent
+  generalized-to-base specialization.
+- `DynamicSoficSpectralSystem`,
+  `DynamicSoficSpectralSystem.trace_factorsThrough_stage`, and
+  `DynamicSoficSpectralSystem.no_trace_collision`: combined accounting
+  object; graph/partition compatibility and spectral transport remain separate
+  fields.
+
+### Classification
+
+- **Imported mathematics:** existing local factorization/fiber logic only.
+- **Kernel-verified bridges:** none claimed for this source commit.
+- **Source proof candidates:** all declarations listed above.
+- **Conditional interfaces:** actual Farey/Dirichlet/heat-flow partition;
+  actual finite graph trace presentation; partition-to-vertex factorization;
+  a spectral zero map for every generalized L-function problem; zero
+  preservation; critical-locus pullback; and reverse specialization.
+- **Finite evidence:** none beyond finite-type structure supplied as hypotheses.
+- **Analogies:** dynamic refinement as a proportion-preserving information
+  ledger; finite labelled graph as the sofic layer; spectral zero map as the
+  proposed generalized-to-Riemann covering.
+- **Unresolved premises:** every analytic/arithmetic instantiation of those
+  interfaces.
+
+### Precise missing bridges
+
+1. Construct the intended dynamic partition from arithmetic/analytic source
+   data.
+2. Construct the intended sofic graph and prove stagewise trace factorization.
+3. Prove the relevant proportion or zero readout is retained, or exhibit an
+   exact collision showing non-compressibility.
+4. Construct generalized-zero to Riemann-zero spectral maps.
+5. Prove zero preservation for those maps.
+6. Prove critical-line/canonical-critical-locus pullback.
+7. Prove generalized-family specialization back to the Riemann problem.
+8. Connect the finite-state non-compressibility obstruction to the spectral
+   cover by a mathematical theorem, not merely by bundling both structures.
+9. Supply any 7/8-to-3/4 analytic refinement stages independently.
+
+### Verification receipts
+
+For source commit
+`6eadfe56e10e797f9f2dc5a0b28d04d650bd8582`:
+
+- `lake env lean GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`:
+  **NOT_RUN**.
+- `lake build GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover`:
+  **NOT_RUN**.
+- fresh kernel replay: **NOT_RUN**.
+- transitive axiom audit: **NOT_RUN / NOT_KERNEL_AUDITED**.
+- external receipt: **unavailable**.
+
+Source inspection is not compiler, kernel, or axiom acceptance.
