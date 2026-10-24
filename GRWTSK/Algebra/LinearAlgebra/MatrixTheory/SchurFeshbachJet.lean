@@ -368,6 +368,73 @@ theorem full_determinant_sign_of_coercive_moment_perturbation
 end InvertibleRegion
 
 
+
+/-!
+## Explicit identity-block Schur lifts
+
+Any real square matrix J has a genuinely coupled block-pencil realization
+  [ J + U V   U ]
+  [ V         I ]
+with unrestricted finite off-diagonal couplings U and V. Its effective
+Schur matrix is exactly J, and the full determinant is exactly det J.
+Neither assertion requires a moment coercivity certificate.
+-/
+
+namespace BlockPencil
+
+/-- A finite real block pencil whose eliminated block is the identity,
+allowing arbitrary parameter-dependent off-diagonal couplings. -/
+def identitySchurLift
+    {Z P Q : Type*} [Fintype Q] [DecidableEq Q]
+    (J : Z → Matrix P P ℝ)
+    (U : Z → Matrix P Q ℝ) (V : Z → Matrix Q P ℝ) :
+    BlockPencil Z P Q ℝ where
+  pp z := J z + U z * V z
+  pq := U
+  qp := V
+  qq _ := 1
+
+/-- The Schur effective matrix of the explicit identity-block lift is
+exactly the supplied square matrix, without additional identification
+premises. -/
+theorem identitySchurLift_effective
+    {Z P Q : Type*}
+    [Fintype P] [DecidableEq P]
+    [Fintype Q] [DecidableEq Q]
+    (J : Z → Matrix P P ℝ)
+    (U : Z → Matrix P Q ℝ) (V : Z → Matrix Q P ℝ)
+    (z : Z) :
+    (identitySchurLift J U V).effective z = J z := by
+  simp [identitySchurLift, BlockPencil.effective, Matrix.mul_assoc]
+
+/-- The determinant of the full coupled block matrix is independent
+of the off-diagonal couplings because the Schur complement is J. -/
+theorem identitySchurLift_full_det
+    {Z P Q : Type*}
+    [Fintype P] [DecidableEq P]
+    [Fintype Q] [DecidableEq Q]
+    (J : Z → Matrix P P ℝ)
+    (U : Z → Matrix P Q ℝ) (V : Z → Matrix Q P ℝ)
+    (z : Z) :
+    ((identitySchurLift J U V).full z).det = (J z).det := by
+  simpa [identitySchurLift, BlockPencil.full] using
+    (Matrix.det_fromBlocks_one₂₂ (J z + U z * V z) (U z) (V z))
+
+/-- The full Schur determinant vanishes precisely when the original
+square-matrix determinant vanishes, for every parameter value. -/
+theorem identitySchurLift_full_zero_iff
+    {Z P Q : Type*}
+    [Fintype P] [DecidableEq P]
+    [Fintype Q] [DecidableEq Q]
+    (J : Z → Matrix P P ℝ)
+    (U : Z → Matrix P Q ℝ) (V : Z → Matrix Q P ℝ)
+    (z : Z) :
+    ((identitySchurLift J U V).full z).det = 0 ↔ (J z).det = 0 := by
+  rw [identitySchurLift_full_det]
+
+end BlockPencil
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
