@@ -950,6 +950,19 @@ theorem classBlockSum_zero_left (x : FiniteProjectionClass) :
       Quotient.mk finiteProjectionSetoid P
   exact Quotient.sound (finiteBlockSum_zero_left_mvNRel P.2)
 
+/-- Commutativity of binary block sum on finite Murray–von Neumann
+classes, obtained from the explicit matrix-block swap and its rectangular
+partial-isometry witness. No classification by rank is assumed. -/
+theorem classBlockSum_comm (x y : FiniteProjectionClass) :
+    classBlockSum x y = classBlockSum y x := by
+  refine Quotient.inductionOn₂ x y ?_
+  intro P Q
+  change Quotient.mk finiteProjectionSetoid
+      ⟨P.1 + Q.1, finiteBlockSum P.2 Q.2⟩ =
+    Quotient.mk finiteProjectionSetoid
+      ⟨Q.1 + P.1, finiteBlockSum Q.2 P.2⟩
+  exact Quotient.sound (finiteBlockSum_comm_mvNRel P.2 Q.2)
+
 /-- The ordinary trace of a two-block matrix is the sum of its two
 ordinary traces, without dimension-dependent normalization. -/
 theorem matrix_trace_fromBlocks
