@@ -1,4 +1,5 @@
 import Mathlib.LinearAlgebra.Matrix.ToLin
+import Mathlib.Tactic
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
 import Mathlib.Analysis.InnerProductSpace.PiL2
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
@@ -780,5 +781,185 @@ theorem certificateGramPerturbedSchurLift_full_det_sign
     (certificateGramOperator_nonneg (S z)) hpert
 
 end CertificateGramPerturbedSchur
+
+
+/-!
+## A nonzero admissible range for an indefinite checked target
+
+This two-coordinate fixture instantiates the existing Problem/Certificate
+and pullback interfaces. The target is indefinite on the ambient space.
+The equality constraint removes its negative coordinate, while a
+nontrivial inequality constraint is retained. A literal nonzero
+Fin 2 × Fin 1 matrix embeds the admissible one-dimensional axis.
+
+All polynomial identities are mathematical source proof candidates.
+The predicate check P S = true below is proved from Valid P S; this is
+not an executed external checker receipt or a Lean compilation result.
+-/
+
+namespace ConcreteAdmissibleAxis
+
+/-- The one-row Gram supplier, with squared norm x₀². -/
+def gramRow : Matrix (Fin 1) (Fin 2) ℝ :=
+  fun _ j => if j = 0 then 1 else 0
+
+/-- The equality constraint tests the excluded second coordinate. -/
+def equalityMatrix : Matrix (Fin 2) (Fin 2) ℝ :=
+  Matrix.diagonal ![0, 1]
+
+/-- A nontrivial nonnegative inequality on the retained first coordinate. -/
+def inequalityMatrix : Matrix (Fin 2) (Fin 2) ℝ :=
+  Matrix.diagonal ![1, 0]
+
+/-- The target is x ↦ 2 x₀² - x₁², represented through the exact
+certificate decomposition rather than assumed positive. -/
+def problem : Problem ℝ (Fin 2) (Fin 1) (Fin 1) where
+  target := gramRow.transpose * gramRow +
+    (1 : ℝ) • inequalityMatrix + (-1 : ℝ) • equalityMatrix
+  equalities _ := equalityMatrix
+  inequalities _ := inequalityMatrix
+
+/-- The actual Gram and signed multipliers of the two-coordinate packet. -/
+def certificate : Certificate ℝ (Fin 2) (Fin 1) (Fin 1) (Fin 1) where
+  gram := gramRow
+  equalityMultipliers _ := -1
+  inequalityMultipliers _ := 1
+
+/-- The finite certificate identity holds exactly and its inequality
+multiplier is nonnegative. -/
+theorem certificate_valid : Valid problem certificate := by
+  constructor
+  · intro g
+    simp [certificate]
+  · simp [problem, certificate, Fin.sum_univ_one]
+
+/-- The source checker proposition follows from exact validity.
+This proof is not a record of executing a standalone finite checker. -/
+theorem certificate_check : check problem certificate = true := by
+  change decide (Valid problem certificate) = true
+  exact decide_eq_true certificate_valid
+
+/-- The concrete nonzero map retaining the first coordinate. -/
+def axisEmbedding : Matrix (Fin 2) (Fin 1) ℝ :=
+  fun i _ => if i = 0 then 1 else 0
+
+theorem axisEmbedding_apply (v : Fin 1 → ℝ) :
+    axisEmbedding *ᵥ v = ![v 0, 0] := by
+  funext i
+  fin_cases i <;>
+    simp [axisEmbedding, Matrix.mulVec, Matrix.dotProduct, Fin.sum_univ_one]
+
+/-- The admissible coordinate map is genuinely nonzero. -/
+theorem axisEmbedding_ne_zero : axisEmbedding ≠ 0 := by
+  intro h
+  have he : (1 : ℝ) = 0 := by
+    simpa [axisEmbedding] using
+      congrArg (fun M : Matrix (Fin 2) (Fin 1) ℝ => M 0 0) h
+  norm_num at he
+
+/-- The equality constraint has quadratic value x₁². -/
+theorem equality_quadratic (x : Fin 2 → ℝ) :
+    quadratic equalityMatrix x = (x 1) ^ 2 := by
+  simp [quadratic, equalityMatrix, Matrix.mulVec_diagonal,
+    Matrix.dotProduct, Fin.sum_univ_two, pow_two]
+
+/-- The inequality constraint has quadratic value x₀². -/
+theorem inequality_quadratic (x : Fin 2 → ℝ) :
+    quadratic inequalityMatrix x = (x 0) ^ 2 := by
+  simp [quadratic, inequalityMatrix, Matrix.mulVec_diagonal,
+    Matrix.dotProduct, Fin.sum_univ_two, pow_two]
+
+/-- The squared Gram energy is also precisely x₀². -/
+theorem gram_quadratic (x : Fin 2 → ℝ) :
+    quadratic (gramRow.transpose * gramRow) x = (x 0) ^ 2 := by
+  rw [quadratic, ← Matrix.mulVec_mulVec,
+    Matrix.dotProduct_transpose_mulVec]
+  simp [gramRow, Matrix.mulVec, Matrix.dotProduct,
+    Fin.sum_univ_one, Fin.sum_univ_two, pow_two]
+
+/-- Every vector in the image of the explicit nonzero embedding satisfies
+both the signed equality and the nonnegative inequality constraint. -/
+theorem axisEmbedding_admissible (v : Fin 1 → ℝ) :
+    problem.Admissible (axisEmbedding *ᵥ v) := by
+  change (∀ e : Fin 1, quadratic equalityMatrix (axisEmbedding *ᵥ v) = 0) ∧
+    (∀ g : Fin 1, 0 ≤ quadratic inequalityMatrix (axisEmbedding *ᵥ v))
+  constructor
+  · intro _
+    rw [equality_quadratic, axisEmbedding_apply]
+    simp
+  · intro _
+    rw [inequality_quadratic, axisEmbedding_apply]
+    simpa using sq_nonneg (v 0)
+
+/-- The ambient target is actually negative on the excluded axis,
+so the range-admissibility hypothesis is not vacuous. -/
+theorem target_negative_outside :
+    quadratic problem.target (![0, 1] : Fin 2 → ℝ) < 0 := by
+  change quadratic
+      (gramRow.transpose * gramRow +
+        (1 : ℝ) • inequalityMatrix + (-1 : ℝ) • equalityMatrix)
+      (![0, 1] : Fin 2 → ℝ) < 0
+  rw [quadratic_add, quadratic_add, quadratic_smul, quadratic_smul]
+  simp [gram_quadratic, inequality_quadratic, equality_quadratic]
+
+/-- The excluded axis does not satisfy the certificate equality. -/
+theorem excluded_axis_not_admissible :
+    ¬ problem.Admissible (![0, 1] : Fin 2 → ℝ) := by
+  intro h
+  have he : quadratic equalityMatrix (![0, 1] : Fin 2 → ℝ) = 0 := by
+    simpa [problem] using h.1 (0 : Fin 1)
+  simp [equality_quadratic] at he
+
+/-- The actual admissible one-dimensional linear range in ambient
+two-coordinate space. -/
+def admissibleLine : Submodule ℝ (Fin 2 → ℝ) :=
+  LinearMap.range axisEmbedding.mulVecLin
+
+theorem admissibleLine_all_admissible :
+    ∀ x ∈ admissibleLine, problem.Admissible x := by
+  intro x hx
+  obtain ⟨v, hv⟩ := hx
+  rw [← hv]
+  simpa only [Matrix.mulVecLin_apply] using axisEmbedding_admissible v
+
+/-- The actual Gram matrix has a unit quadratic lower bound throughout
+the admissible line, not merely nonnegativity at selected points. -/
+theorem admissibleLine_gram_unit :
+    ∀ x ∈ admissibleLine,
+      (1 : ℝ) * (∑ i, (x i) ^ 2) ≤
+        quadratic (gramRow.transpose * gramRow) x := by
+  intro x hx
+  obtain ⟨v, hv⟩ := hx
+  rw [← hv]
+  simp [axisEmbedding_apply, gram_quadratic, Fin.sum_univ_two]
+
+/-- The original indefinite target becomes quantitatively coercive
+on the exact admissible linear range; nothing is claimed outside it. -/
+theorem target_unit_coercive_on_line
+    (x : Fin 2 → ℝ) (hx : x ∈ admissibleLine) :
+    (∑ i, (x i) ^ 2) ≤ quadratic problem.target x := by
+  have h := target_coercive_on_submodule
+    problem certificate certificate_valid admissibleLine (1 : ℝ)
+    admissibleLine_all_admissible admissibleLine_gram_unit x hx
+  simpa only [one_mul] using h
+
+/-- A concrete coupled Schur system with two nonzero off-diagonal blocks. -/
+def couplingU : Unit → Matrix (Fin 1) (Fin 1) ℝ :=
+  fun _ _ _ => 1
+
+def couplingV : Unit → Matrix (Fin 1) (Fin 1) ℝ :=
+  fun _ _ _ => 1
+
+/-- The previously conditional target-Schur theorem now has a genuinely
+nonzero admissible coordinate range and a proved checker proposition.
+The ambient target still takes negative values on excluded vectors. -/
+theorem concrete_admissible_target_schur_det_ne_zero :
+    ((admissibleTargetSchurLift problem axisEmbedding couplingU couplingV).full ())
+      .det ≠ 0 := by
+  exact admissibleTargetSchurLift_full_det_ne_zero
+    problem certificate certificate_check axisEmbedding
+    axisEmbedding_admissible couplingU couplingV ()
+
+end ConcreteAdmissibleAxis
 
 end GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
