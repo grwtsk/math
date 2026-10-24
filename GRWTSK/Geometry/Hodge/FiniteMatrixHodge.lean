@@ -1,6 +1,7 @@
 import Mathlib.LinearAlgebra.Matrix.ToLin
 import Mathlib.LinearAlgebra.Matrix.DotProduct
 import Mathlib.Analysis.InnerProductSpace.PiL2
+import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
 import GRWTSK.Geometry.Hodge.FiniteGraphCellular
 import GRWTSK.Algebra.LinearAlgebra.FramedFiberPort
 
@@ -188,5 +189,119 @@ theorem euclideanLaplacian_nonneg
   rw [hy, euclideanLaplacian_apply]
   simpa [EuclideanSpace.inner_toLp_toLp, Matrix.dotProduct] using
     (laplacian_nonneg G x)
+
+
+/-!
+## The genuine graph Hodge Laplacian as a coercive moment-Schur supplier
+
+For a finite oriented incidence object, the independently defined graph
+Laplacian deltaStar ∘ delta is positive semidefinite. Taking B to be its
+Euclidean continuous operator and C=id provides the global moment
+coercivity certificate with ε=1 and R=the real inner product. The earlier
+identity-block Schur construction now supplies an explicit full coupled
+block matrix, invertible at every parameter even if the unshifted graph
+Laplacian has harmonic zero modes.
+
+The graph is a finite Hodge model, not a Navier--Stokes fluid solution.
+-/
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
+
+/-- Coupled Schur pencil constructed directly from the previously defined
+finite graph Hodge Laplacian; parameter dependence is entirely in the
+unrestricted off-diagonal coupling matrices U and V. -/
+noncomputable def graphHodgeMomentSchurLift
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    BlockPencil Z (Fin n) (Fin m) ℝ :=
+  BlockPencil.momentSchurLift
+    (fun _ : Z => euclideanLaplacian G)
+    (fun _ : Z => ContinuousLinearMap.id ℝ
+      (EuclideanSpace ℝ (Fin n))) U V
+
+/-- In every parameter fiber the effective Schur matrix is the exact
+finite Euclidean coordinate matrix of the shifted graph Laplacian I+Δ. -/
+theorem graphHodgeMomentSchurLift_effective
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    (graphHodgeMomentSchurLift G U V).effective z =
+      GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent.euclideanOperatorMatrix
+        (momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))) := by
+  exact BlockPencil.momentSchurLift_effective
+    (fun _ : Z => euclideanLaplacian G)
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V z
+
+/-- The full coupled determinant equals the determinant of the actually
+shifted graph Hodge Laplacian, independently of all off-diagonal couplings. -/
+theorem graphHodgeMomentSchurLift_full_det
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((graphHodgeMomentSchurLift G U V).full z).det =
+      (momentMatrix (euclideanLaplacian G)
+        (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))).det := by
+  exact BlockPencil.momentSchurLift_full_det
+    (fun _ : Z => euclideanLaplacian G)
+    (fun _ : Z => ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))
+    U V z
+
+/-- The positive-semidefinite finite graph Hodge Laplacian supplies, rather
+than assumes, the global moment coercivity needed for nonvanishing of the
+entire coupled Schur determinant. No connectedness or Laplacian spectral
+gap is assumed, and U,V may be arbitrary. -/
+theorem graphHodgeMomentSchurLift_full_det_ne_zero
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((graphHodgeMomentSchurLift G U V).full z).det ≠ 0 := by
+  rw [graphHodgeMomentSchurLift_full_det]
+  have hinj :
+      Function.Injective
+        (momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))) :=
+    positive_operator_moment_injective
+      (euclideanLaplacian G) (euclideanLaplacian_nonneg G)
+  have hker :
+      LinearMap.ker
+        (momentMatrix (euclideanLaplacian G)
+          (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  intro hzero
+  exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+
+/-- At any two parameters the full coupled Schur determinants agree:
+only U and V change and the unperturbed shifted graph Laplacian is fixed. -/
+theorem graphHodgeMomentSchurLift_full_det_eq
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z w : Z) :
+    ((graphHodgeMomentSchurLift G U V).full z).det =
+      ((graphHodgeMomentSchurLift G U V).full w).det := by
+  rw [graphHodgeMomentSchurLift_full_det,
+    graphHodgeMomentSchurLift_full_det]
+
+/-- Hence the full Schur determinant orientation is the same at every two
+parameters, without a perturbation condition: the effective Hodge operator
+is fixed and the eliminated block is the identity. -/
+theorem graphHodgeMomentSchurLift_full_det_sign
+    {Z : Type*} {n m : ℕ}
+    (G : OrientedIncidence (Fin n) Edge)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z w : Z) :
+    0 < ((graphHodgeMomentSchurLift G U V).full z).det *
+      ((graphHodgeMomentSchurLift G U V).full w).det := by
+  rw [← graphHodgeMomentSchurLift_full_det_eq G U V z w]
+  have h := graphHodgeMomentSchurLift_full_det_ne_zero G U V z
+  nlinarith [sq_pos_of_ne_zero h]
 
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
