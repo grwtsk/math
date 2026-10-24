@@ -259,6 +259,7 @@ the presentation field; it is not silently inferred in a theorem type. -/
 def ExactLanguagePresentation.stateCapacity
     {Alphabet : Type v} {language : List Alphabet → Prop}
     (P : ExactLanguagePresentation.{0,v} Alphabet language) : ℕ := by
+  classical
   letI : Fintype P.State := P.finiteState
   exact Fintype.card (Finset P.State)
 
@@ -267,7 +268,8 @@ pairwise distinguishable continuations in a *given* finite graph require
 at least \`n\` distinct reachable-end-state subsets. This is a finite
 capacity bound, not evidence against graphs of unbounded state size. -/
 theorem rightContexts_card_le_graphLanguage
-    {State : Type u} {Alphabet : Type v} [Fintype State]
+    {State : Type u} {Alphabet : Type v}
+    [Fintype State] [DecidableEq State]
     (G : LabeledGraph State Alphabet) (n : ℕ)
     (words : Fin n → List Alphabet)
     (hdistinct : ∀ i j : Fin n, i ≠ j →
