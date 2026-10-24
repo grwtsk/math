@@ -1,0 +1,34 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37KernelAudit.Variant4eaa126bc667f80b2dfe785eac43efadd55a2332a2913ec11e628d46c8672bc7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a427a5c7486a902e304ecad2b2219f7857c02490` · SHA-256 `e95f8d763a0aab84304460d2ed1c950ff68d19014159b2f822d29cde2d70b734`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EstimateWeightedBetaKernel.Variant18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.EstimateWeightedBetaKernel.Variant18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37","mathematical_subject":"Analysis.Calculus","original_sha256":"18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/18/18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37--KernelAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EstimateWeightedBetaKernel.Variant18a4e6b1be46592ae2ea348ccd06d4db8d4934c9a26fe26c8817b02554525b37
+
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.universes true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.correlationSlope
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.correlationSlope
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_eq_exponential
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_eq_exponential
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_hasDerivAt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_deriv
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_deriv
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_contDiffOn
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_contDiffOn
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_deriv_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaKernel.rowWeight_deriv_integrable
+```

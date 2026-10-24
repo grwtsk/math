@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9RatioAudit.Variant5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `358ef3cbe4e959272c44628c6c71b70530422d87` · SHA-256 `5f3c525a4d3e1743f29cbea488f0a1f3e26cd2ea60b5acd930bc0de1c35ac9b9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.ThetaTailRatioTwo
+open FormalResearch.RiemannHypothesis.ThetaPositiveLift
+
+#check deriv_thetaPhi_poly_integrableOn
+#print deriv_thetaPhi_poly_integrableOn
+#print axioms deriv_thetaPhi_poly_integrableOn
+#check thetaPhi_deriv_mul_sub_integrableOn
+#print thetaPhi_deriv_mul_sub_integrableOn
+#print axioms thetaPhi_deriv_mul_sub_integrableOn
+#check thetaPhi_mul_sub_tendsto_atTop
+#print thetaPhi_mul_sub_tendsto_atTop
+#print axioms thetaPhi_mul_sub_tendsto_atTop
+#check thetaPhi_logSlope_cross_nonnegative
+#print thetaPhi_logSlope_cross_nonnegative
+#print axioms thetaPhi_logSlope_cross_nonnegative
+#check thetaPhi_deriv_mul_sub_integral
+#print thetaPhi_deriv_mul_sub_integral
+#print axioms thetaPhi_deriv_mul_sub_integral
+#check thetaTail_two_logSlope_identity
+#print thetaTail_two_logSlope_identity
+#print axioms thetaTail_two_logSlope_identity
+#check thetaTail_two_logSlope_nonnegative
+#print thetaTail_two_logSlope_nonnegative
+#print axioms thetaTail_two_logSlope_nonnegative
+#check hasDerivAt_thetaTail_two_div_thetaPhi
+#print hasDerivAt_thetaTail_two_div_thetaPhi
+#print axioms hasDerivAt_thetaTail_two_div_thetaPhi
+#check thetaTail_two_div_thetaPhi_deriv_nonpos
+#print thetaTail_two_div_thetaPhi_deriv_nonpos
+#print axioms thetaTail_two_div_thetaPhi_deriv_nonpos
+#check thetaTail_two_div_thetaPhi_antitone
+#print thetaTail_two_div_thetaPhi_antitone
+#print axioms thetaTail_two_div_thetaPhi_antitone
+#check thetaTailSignRegular_two_zero_one
+#print thetaTailSignRegular_two_zero_one
+#print axioms thetaTailSignRegular_two_zero_one
+```

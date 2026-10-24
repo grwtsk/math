@@ -1,0 +1,21 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.ActualPrimitiveKernelChallengeTypes.Variantd159ab5875df3cbe2410774bda49d56ad1b9b5a7d23bdb300419037fb04fecd0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5707e80cb831fc9435d22ea75baf1845a42074e8` · SHA-256 `d159ab5875df3cbe2410774bda49d56ad1b9b5a7d23bdb300419037fb04fecd0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualPrimitiveKernelChallenge
+#check RH16IndependentChallengeNext.actual_criticalKernel_at_zero
+#print axioms RH16IndependentChallengeNext.actual_criticalKernel_at_zero
+#check RH16IndependentChallengeNext.actual_criticalKernel_negative_at_interior
+#print axioms RH16IndependentChallengeNext.actual_criticalKernel_negative_at_interior
+#check RH16IndependentChallengeNext.actual_criticalKernel_deriv_both_signs
+#print axioms RH16IndependentChallengeNext.actual_criticalKernel_deriv_both_signs
+#check RH16IndependentChallengeNext.actual_criticalKernel_deriv_sharp_bound
+#print axioms RH16IndependentChallengeNext.actual_criticalKernel_deriv_sharp_bound
+#check RH16IndependentChallengeNext.actual_primitive_sharp_work_bound
+#print axioms RH16IndependentChallengeNext.actual_primitive_sharp_work_bound
+#check RH16IndependentChallengeNext.actual_residual_upper_sharp_primitive_budget
+#print axioms RH16IndependentChallengeNext.actual_residual_upper_sharp_primitive_budget
+```

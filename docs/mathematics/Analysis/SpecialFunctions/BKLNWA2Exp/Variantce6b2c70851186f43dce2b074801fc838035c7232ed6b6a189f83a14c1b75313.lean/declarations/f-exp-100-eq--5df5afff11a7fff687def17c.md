@@ -1,0 +1,126 @@
+# f_exp_100_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "2f01a7978e08eb8f6b13f0839f56ac074321a14c",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 186,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/ce/ce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:01e54170-0d98-5b1a-fc28-fc603be0b819",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:8b27c164-a722-db07-7696-031fda15e686",
+  "kind": "lemma",
+  "lexical_name": "f_exp_100_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "f-exp-100-eq--5df5afff11a7fff687def17c",
+  "source": {
+    "blob": "2f01a7978e08eb8f6b13f0839f56ac074321a14c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 218,
+    "line": 186,
+    "path": "GRWTSK/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:5df5afff11a7fff687def17cb62628f815404c7bacb46d1dd351df76c1a91841",
+  "verification": {
+    "reference": "docs/verification/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8b27c164-a722-db07-7696-031fda15e686`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 186–218.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private lemma f_exp_100_eq : f (exp (100:ℝ)) =
+    1 + exp (-25/3) + exp (-40/3) + exp (-50/3) + exp (-400/21) + exp (-125/6) +
+    exp (-200/9) + exp (-70/3) + exp (-800/33) + exp (-25) + exp (-1000/39) + exp (-550/21) +
+    exp (-80/3) + exp (-325/12) + exp (-1400/51) + exp (-250/9) + exp (-1600/57) + exp (-85/3) +
+    exp (-200/7) + exp (-950/33) + exp (-2000/69) + exp (-175/6) + exp (-88/3) + exp (-1150/39) +
+    exp (-800/27) + exp (-625/21) + exp (-2600/87) + exp (-30) + exp (-2800/93) + exp (-725/24) +
+    exp (-1000/33) + exp (-1550/51) + exp (-640/21) + exp (-275/9) + exp (-3400/111) + exp (-1750/57) +
+    exp (-400/13) + exp (-185/6) + exp (-3800/123) + exp (-650/21) + exp (-4000/129) + exp (-1025/33) +
+    exp (-280/9) + exp (-2150/69) + exp (-4400/141) + exp (-125/4) + exp (-4600/147) + exp (-94/3) +
+    exp (-1600/51) + exp (-1225/39) + exp (-5000/159) + exp (-850/27) + exp (-1040/33) + exp (-1325/42) +
+    exp (-600/19) + exp (-2750/87) + exp (-5600/177) + exp (-95/3) + exp (-5800/183) + exp (-2950/93) +
+    exp (-2000/63) + exp (-1525/48) + exp (-1240/39) + exp (-350/11) + exp (-6400/201) + exp (-1625/51) +
+    exp (-2200/69) + exp (-670/21) + exp (-6800/213) + exp (-575/18) + exp (-7000/219) + exp (-3550/111) +
+    exp (-32) + exp (-1825/57) + exp (-7400/231) + exp (-1250/39) + exp (-7600/237) + exp (-385/12) +
+    exp (-2600/81) + exp (-3950/123) + exp (-8000/249) + exp (-225/7) + exp (-1640/51) + exp (-4150/129) +
+    exp (-2800/87) + exp (-2125/66) + exp (-8600/267) + exp (-290/9) + exp (-8800/273) + exp (-2225/69) +
+    exp (-1000/31) + exp (-4550/141) + exp (-1840/57) + exp (-775/24) + exp (-9400/291) + exp (-4750/147) +
+    exp (-3200/99) + exp (-97/3) + exp (-9800/303) + exp (-550/17) + exp (-10000/309) + exp (-2525/78) +
+    exp (-680/21) + exp (-5150/159) + exp (-10400/321) + exp (-875/27) + exp (-10600/327) + exp (-1070/33) +
+    exp (-1200/37) + exp (-2725/84) + exp (-11000/339) + exp (-1850/57) + exp (-2240/69) + exp (-2825/87) +
+    exp (-3800/117) + exp (-5750/177) + exp (-11600/357) + exp (-65/2) + exp (-11800/363) + exp (-5950/183) +
+    exp (-4000/123) + exp (-3025/93) + exp (-488/15) + exp (-2050/63) + exp (-12400/381) + exp (-3125/96) +
+    exp (-1400/43) + exp (-1270/39) + exp (-12800/393) + exp (-1075/33) + exp (-13000/399) + exp (-6550/201) +
+    exp (-880/27) + exp (-3325/102) + exp (-13400/411) + exp (-750/23) + exp (-13600/417) + exp (-685/21) +
+    exp (-4600/141) + exp (-6950/213) + exp (-14000/429) + exp (-1175/36) := by
+  unfold f
+  rw [show ⌊log (exp (100:ℝ)) / log 2⌋₊ = 144 from by rw [log_exp]; exact floor_100]
+  finsum_expand
+  simp only [Nat.cast_ofNat, ← exp_mul]
+  norm_num
+
+set_option maxRecDepth 4096 in
+set_option maxHeartbeats 32000000 in
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/SpecialFunctions/BKLNWA2Exp/Variantce6b2c70851186f43dce2b074801fc838035c7232ed6b6a189f83a14c1b75313.lean#L186).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2f01a7978e08eb8f6b13f0839f56ac074321a14c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,32 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.SourceExactSamplingTailAudit.Variantf688c0ca03cb6da264556da9ef8e49b3880820f88f178e122bf099fe7fa97800
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `062409c0379f168115050b38a4daa9846d34af59` · SHA-256 `f688c0ca03cb6da264556da9ef8e49b3880820f88f178e122bf099fe7fa97800`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceExactSamplingTail
+
+#print RH16ExactSamplingTail.sourceCorrelation_deriv_increment_bound_tail
+#print axioms RH16ExactSamplingTail.sourceCorrelation_deriv_increment_bound_tail
+#print RH16ExactSamplingTail.sourceCorrelation_linear_taylor_bound_tail
+#print axioms RH16ExactSamplingTail.sourceCorrelation_linear_taylor_bound_tail
+#print RH16ExactSamplingTail.plain_derivative_difference_abs_le_tail
+#print axioms RH16ExactSamplingTail.plain_derivative_difference_abs_le_tail
+#print RH16ExactSamplingTail.log_derivative_difference_abs_le_tail
+#print axioms RH16ExactSamplingTail.log_derivative_difference_abs_le_tail
+#print RH16ExactSamplingTail.plainProfile_sum_sub_mainTerm_abs_le_tail
+#print axioms RH16ExactSamplingTail.plainProfile_sum_sub_mainTerm_abs_le_tail
+#print RH16ExactSamplingTail.logProfile_sum_sub_mainTerm_abs_le_tail
+#print axioms RH16ExactSamplingTail.logProfile_sum_sub_mainTerm_abs_le_tail
+#print RH16ExactSamplingTail.sourcePlainKernel_sub_mainTerm_abs_le_tail
+#print axioms RH16ExactSamplingTail.sourcePlainKernel_sub_mainTerm_abs_le_tail
+#print RH16ExactSamplingTail.sourceMobiusKernel_sub_mainTerm_abs_le_tail
+#print axioms RH16ExactSamplingTail.sourceMobiusKernel_sub_mainTerm_abs_le_tail
+#print RH16ExactSamplingTail.actual_shortLog_error_tail
+#print axioms RH16ExactSamplingTail.actual_shortLog_error_tail
+#print RH16ExactSamplingTail.actual_shortPlain_error_tail
+#print axioms RH16ExactSamplingTail.actual_shortPlain_error_tail
+#print RH16ExactSamplingTail.actual_ledger_tail_error
+#print axioms RH16ExactSamplingTail.actual_ledger_tail_error
+```

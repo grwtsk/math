@@ -1,0 +1,257 @@
+# sublemma_1_8
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:a7c1808e-a92b-50b9-1ef0-a2d4040cfc91",
+  "kind": "theorem",
+  "lexical_name": "sublemma_1_8",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "sublemma-1-8--f6eb1de7901e0ddd7a2c466a",
+  "source": {
+    "blob": "db0b0a618f107a58f1285f605631a4cf012a1ab6",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 669,
+    "line": 494,
+    "path": "GRWTSK/Analysis/CostaPereira/Variant6186215d9bafd7a3b274560bfa975562a8306fb5ad85bdb42ee4731596300e3c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f6eb1de7901e0ddd7a2c466ac39a3c15948b40121a26e86731a2207d43abbc27",
+  "verification": {
+    "reference": "docs/verification/Analysis/CostaPereira/Variant6186215d9bafd7a3b274560bfa975562a8306fb5ad85bdb42ee4731596300e3c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:a7c1808e-a92b-50b9-1ef0-a2d4040cfc91`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 494–669.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem sublemma_1_8 {x : ℝ} (hx : 0 < x) :
+    ψ x - θ x ≥ ψ (x ^ (1 / 2 : ℝ)) +
+      ψ (x ^ (1 / 3 : ℝ)) +
+      ∑' (k : ℕ),
+        θ (x ^ (1 / (7 * ((k.succ : ℕ) : ℝ)))) := by
+  have h_sublemma :
+      ψ x - θ x = ψ (x ^ (1 / 2 : ℝ)) +
+        ψ (x ^ (1 / 3 : ℝ)) +
+        ∑' (k : ℕ),
+          θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ) - 1))) -
+        ∑' (k : ℕ),
+          θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ)))) +
+        ∑' (k : ℕ),
+          θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ) + 1))) :=
+    sublemma_1_6 hx
+  have h_sum_bound1 :
+      ∑' (k : ℕ),
+          θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ) + 1))) ≥
+        ∑' (k : ℕ),
+          θ (x ^ (1 / (7 * ((k.succ : ℕ) : ℝ)))) := by
+    refine Summable.tsum_le_tsum ?_ ?_ ?_
+    · intro k
+      apply_rules [sum_le_sum_of_subset_of_nonneg]
+      · exact fun p hp ↦ mem_filter.mpr
+          ⟨mem_Ioc.mpr
+            ⟨mem_Ioc.mp (mem_filter.mp hp |>.1) |>.1,
+             (mem_Ioc.mp
+                (mem_filter.mp hp |>.1) |>.2).trans
+              (floor_mono <|
+                rpow_le_rpow_of_exponent_le
+                  (show 1 ≤ x from
+                    le_of_not_gt fun h ↦ by
+                      rw [floor_eq_zero.mpr <|
+                        rpow_lt_one hx.le h <|
+                          by positivity] at hp
+                      simp_all)
+                  (by rw [div_le_div_iff₀] <;>
+                    norm_num <;> linarith))⟩,
+           mem_filter.mp hp |>.2⟩
+      · exact fun _ _ _ ↦ log_nonneg <|
+          one_le_cast.2 <| Prime.pos <| by simp_all
+    · have h_finite :
+          ∃ N : ℕ, ∀ k ≥ N,
+            θ (x ^ (1 / (7 * (k.succ : ℝ)))) = 0 := by
+        use ceil (log x / Real.log 2) + 1
+        intro k hk
+        rw [theta_eq_zero_of_lt_two]
+        norm_num
+        rw [← log_lt_log_iff (by positivity)
+            (by positivity),
+          log_rpow hx, inv_mul_eq_div,
+          div_mul_eq_mul_div, div_lt_iff₀] <;>
+          nlinarith [le_ceil (log x / Real.log 2),
+            Real.log_pos one_lt_two,
+            mul_div_cancel₀ (log x)
+              (ne_of_gt (log_pos one_lt_two)),
+            show (k : ℝ) ≥
+              ⌈log x / Real.log 2⌉₊ + 1 by
+                exact_mod_cast hk]
+      exact summable_of_ne_finset_zero
+        (s := range h_finite.choose)
+        fun k hk ↦ h_finite.choose_spec k <|
+          le_of_not_gt fun hk' ↦ hk <|
+            mem_range.mpr hk'
+    · have h_finite :
+          ∃ N : ℕ, ∀ k ≥ N,
+            θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ) + 1)))
+              = 0 := by
+        use ceil (log x / Real.log 2) + 1
+        intro k hk
+        rw [theta_eq_zero_of_lt_two]
+        norm_num
+        rw [← log_lt_log_iff
+            (rpow_pos_of_pos hx ..) zero_lt_two,
+          log_rpow hx, inv_mul_lt_iff₀] <;>
+          nlinarith [le_ceil (log x / Real.log 2),
+            Real.log_pos one_lt_two,
+            mul_div_cancel₀ (log x)
+              (ne_of_gt (log_pos one_lt_two)),
+            show (k : ℝ) ≥
+              ⌈Real.log x / Real.log 2⌉₊ + 1 by
+                exact_mod_cast hk]
+      exact summable_of_ne_finset_zero
+        fun k hk ↦ h_finite.choose_spec k <|
+          le_of_not_gt fun hk' ↦ hk <|
+            mem_range.mpr hk'
+  have h_sum_bound2 :
+      ∑' (k : ℕ),
+          θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ) - 1))) ≥
+        ∑' (k : ℕ),
+          θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ)))) := by
+    refine Summable.tsum_le_tsum ?_ ?_ ?_
+    · intro k
+      apply_rules [sum_le_sum_of_subset_of_nonneg]
+        <;> norm_num
+      · field_simp
+        exact fun p hp ↦ mem_filter.mpr
+          ⟨mem_Ioc.mpr
+            ⟨mem_Ioc.mp
+              (mem_filter.mp hp |>.1) |>.1,
+             (mem_Ioc.mp
+                (mem_filter.mp hp |>.1) |>.2).trans
+              (floor_mono <|
+                rpow_le_rpow_of_exponent_le
+                  (show 1 ≤ x from
+                    le_of_not_gt fun h ↦ by
+                      rw [floor_eq_zero.mpr <|
+                        rpow_lt_one hx.le h <|
+                          by positivity] at hp
+                      simp_all)
+                  (by rw [div_le_div_iff₀] <;>
+                    nlinarith))⟩,
+           mem_filter.mp hp |>.2⟩
+      · exact fun _ _ _ _ _ ↦ log_nonneg <|
+          one_le_cast.2 <| Prime.pos ‹_›
+    · have h_finite :
+          ∃ N : ℕ, ∀ k ≥ N,
+            θ (x ^ (1 / (6 * ((k.succ : ℕ) : ℝ))))
+              = 0 := by
+        use ceil (log x / Real.log 2) + 1
+        intro k hk
+        rw [theta_eq_zero_of_lt_two]
+        norm_num
+        rw [← log_lt_log_iff (by positivity)
+            zero_lt_two,
+          log_rpow hx, inv_mul_eq_div,
+          div_mul_eq_mul_div, div_lt_iff₀] <;>
+          nlinarith [le_ceil (log x / Real.log 2),
+            Real.log_pos one_lt_two,
+            mul_div_cancel₀ (log x)
+              (ne_of_gt (Real.log_pos one_lt_two)),
+            show (k : ℝ) ≥
+              ⌈log x / Real.log 2⌉₊ + 1 by
+                exact_mod_cast hk]
+      exact summable_of_ne_finset_zero
+        (s := range h_finite.choose)
+        fun k hk ↦ h_finite.choose_spec k <|
+          le_of_not_gt fun hk' ↦ hk <|
+            mem_range.mpr hk'
+    · refine summable_of_ne_finset_zero
+        (s := range
+          (ceil (log x / Real.log 2) + 1)) ?_
+      simp only [mem_range, Order.lt_add_one_iff,
+        not_le, succ_eq_add_one, cast_add,
+        cast_one, one_div]
+      intro k hk
+      rw [theta_eq_zero_of_lt_two]
+      have := lt_of_ceil_lt hk
+      rw [div_lt_iff₀ (log_pos one_lt_two)] at this
+      have hx_pow : x < 2 ^ (k : ℕ) := by
+        rw [← log_lt_log_iff hx (by positivity),
+          Real.log_pow]
+        linarith
+      exact (rpow_lt_rpow (le_of_lt hx) hx_pow
+        (inv_pos.mpr (by linarith))).trans_le
+        (by rw [← rpow_natCast, ← rpow_mul zero_le_two]
+            exact (rpow_le_rpow_of_exponent_le
+              one_le_two
+              (show (k : ℝ) / (6 * (k + 1) - 1) ≤ 1 by
+                rw [div_le_iff₀] <;>
+                  linarith)).trans (by norm_num))
+  grind
+
+@[blueprint
+  "costa-pereira-theorem-1a"
+  (title := "Costa-Pereira Theorem 1a")
+  (statement :=
+    /-- For every $x > 0$ we have
+    $\psi(x) - \theta(x) \leqslant \psi(x^{1/2})
+      + \psi(x^{1/3}) + \psi(x^{1/5})$. -/)
+  (proof :=
+    /-- Follows from Sublemma
+    \ref{costa-pereira-sublemma-1-7} and
+    Sublemma \ref{costa-pereira-sublemma-1-2}. -/)
+  (latexEnv := "theorem")
+  (discussion := 684)]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Analysis/CostaPereira/Variant6186215d9bafd7a3b274560bfa975562a8306fb5ad85bdb42ee4731596300e3c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/CostaPereira/Variant6186215d9bafd7a3b274560bfa975562a8306fb5ad85bdb42ee4731596300e3c.lean#L494).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `db0b0a618f107a58f1285f605631a4cf012a1ab6` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

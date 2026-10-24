@@ -1,0 +1,214 @@
+import FormalResearch.RiemannHypothesis.SourceCriticalDensityQuadrature
+import Mathlib.MeasureTheory.Integral.DominatedConvergence
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.LebesgueDifferentiationThm
+import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
+
+/-!
+# Private draft of the literal cumulative prime-density discrepancy
+
+UNCOMPILED private candidate. This file is outside the maintained family root,
+source inventory and complete-verifier packet. The cumulative prefix retains
+closed prime atoms. Its integral primitive is continuous and has the literal
+step discrepancy as derivative almost everywhere; the discrepancy itself is
+not asserted continuous. Endpoint bridging subtracts its own affine endpoint
+value, without changing any source counterterm or assuming a signed budget.
+
+AI attribution: drafted with OpenAI Codex; no proof-checking status is inferred
+until the actual private focused command and declaration audits succeed.
+-/
+
+set_option autoImplicit false
+set_option backward.isDefEq.respectTransparency false
+noncomputable section
+namespace FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+
+open MeasureTheory Set
+open scoped Interval
+open SourceCriticalDensityQuadrature SourceCriticalDecayWork WeightedPrimeAbel
+
+/-- Literal closed-prime prefix minus the independent continuous density mass. -/
+def criticalCumulativeDiscrepancy (u : ℝ) : ℝ :=
+  primeLogPrefix u - ∫ v in 0..u, criticalDensity v
+
+/-- The integral primitive of the actual step discrepancy. -/
+def criticalDiscrepancyPrimitive (u : ℝ) : ℝ :=
+  ∫ v in 0..u, criticalCumulativeDiscrepancy v
+
+/-- Removing an affine endpoint value produces a bridge with zero endpoints. -/
+def criticalDiscrepancyBridge (A u : ℝ) : ℝ :=
+  criticalDiscrepancyPrimitive u -
+    (u / (2 * A)) * criticalDiscrepancyPrimitive (2 * A)
+
+private theorem decay_continuous : Continuous criticalDecay := by
+  unfold criticalDecay
+  fun_prop
+
+private theorem decay_hasDerivAt (u : ℝ) :
+    HasDerivAt criticalDecay (-criticalDecay u / 2) u := by
+  convert ((hasDerivAt_id u).const_mul (-1/2 : ℝ)).exp using 1
+  · funext x
+    simp only [criticalDecay, id_eq]
+    congr 1
+    ring
+  · simp only [criticalDecay, id_eq]
+    ring
+
+private theorem density_mass (u : ℝ) :
+    (∫ v in 0..u, criticalDensity v) = u - 1 + criticalDecay u := by
+  have h := criticalDensity_integral (u / 2)
+  have he : 2 * (u / 2) = u := by ring
+  simpa only [he] using h
+
+private theorem density_mass_continuous :
+    Continuous (fun u : ℝ => ∫ v in 0..u, criticalDensity v) := by
+  have he : (fun u : ℝ => ∫ v in 0..u, criticalDensity v) =
+      fun u => u - 1 + criticalDecay u := funext density_mass
+  rw [he]
+  exact (continuous_id.sub continuous_const).add decay_continuous
+
+private theorem prime_prefix_intervalIntegrable (a b : ℝ) :
+    IntervalIntegrable primeLogPrefix volume a b := by
+  rcases le_total a b with hab | hba
+  · have hi := primeLogPrefix_mul_deriv_intervalIntegrable a b hab
+      (fun t : ℝ => t) contDiff_id
+    simpa only [deriv_id'', mul_one] using hi
+  · have hi := primeLogPrefix_mul_deriv_intervalIntegrable b a hba
+      (fun t : ℝ => t) contDiff_id
+    have hir : IntervalIntegrable primeLogPrefix volume b a := by
+      simpa only [deriv_id'', mul_one] using hi
+    exact hir.symm
+
+/-- The endpoint correction is literal and valid on every real coordinate. -/
+theorem criticalCumulativeDiscrepancy_eq (u : ℝ) :
+    criticalCumulativeDiscrepancy u = primeLogError u + 1 - criticalDecay u := by
+  rw [criticalCumulativeDiscrepancy, density_mass]
+  unfold primeLogError
+  ring
+
+/-- The existing scale endpoint discrepancy is exactly this primitive's integrand at `2A`. -/
+theorem criticalCumulativeDiscrepancy_at_upper (A : ℝ) :
+    criticalCumulativeDiscrepancy (2 * A) = criticalDensityPrefixDiscrepancy A := rfl
+
+/-- The closed prefix is anchored below the first prime at coordinate zero. -/
+theorem criticalCumulativeDiscrepancy_at_zero : criticalCumulativeDiscrepancy 0 = 0 := by
+  simp [criticalCumulativeDiscrepancy, primeLogPrefix_zero]
+
+/-- Every finite oriented interval is integrable, without a continuity claim at prime atoms. -/
+theorem criticalCumulativeDiscrepancy_intervalIntegrable (a b : ℝ) :
+    IntervalIntegrable criticalCumulativeDiscrepancy volume a b := by
+  exact (prime_prefix_intervalIntegrable a b).sub
+    (density_mass_continuous.intervalIntegrable (μ := volume) a b)
+
+/-- The primitive is anchored at zero. -/
+theorem criticalDiscrepancyPrimitive_at_zero : criticalDiscrepancyPrimitive 0 = 0 := by
+  simp [criticalDiscrepancyPrimitive]
+
+/-- Integration gives global continuity despite the integrand's prime atoms. -/
+theorem criticalDiscrepancyPrimitive_continuous : Continuous criticalDiscrepancyPrimitive :=
+  intervalIntegral.continuous_primitive criticalCumulativeDiscrepancy_intervalIntegrable 0
+
+/-- On each finite interval the literal primitive is absolutely continuous. -/
+theorem criticalDiscrepancyPrimitive_absolutelyContinuous (L : ℝ) :
+    AbsolutelyContinuousOnInterval criticalDiscrepancyPrimitive 0 L := by
+  have hi := criticalCumulativeDiscrepancy_intervalIntegrable 0 L
+  exact hi.absolutelyContinuousOnInterval_intervalIntegral (by simp)
+
+/-- The actual closed-step discrepancy is the derivative almost everywhere, not at every atom. -/
+theorem criticalDiscrepancyPrimitive_ae_hasDerivAt (L : ℝ) :
+    ∀ᵐ u ∂volume, u ∈ uIcc (0 : ℝ) L →
+      HasDerivAt criticalDiscrepancyPrimitive (criticalCumulativeDiscrepancy u) u := by
+  have hi := criticalCumulativeDiscrepancy_intervalIntegrable 0 L
+  filter_upwards [hi.ae_hasDerivAt_integral] with u hu
+  intro huL
+  exact hu huL 0 (by simp)
+
+/-- The oriented primitive increment retains both endpoints. -/
+theorem criticalDiscrepancyPrimitive_sub (u v : ℝ) :
+    criticalDiscrepancyPrimitive v - criticalDiscrepancyPrimitive u =
+      ∫ t in u..v, criticalCumulativeDiscrepancy t :=
+  intervalIntegral.integral_interval_sub_left
+    (criticalCumulativeDiscrepancy_intervalIntegrable 0 v)
+    (criticalCumulativeDiscrepancy_intervalIntegrable 0 u)
+
+private theorem density_mass_integral (u : ℝ) :
+    (∫ v in 0..u, ∫ t in 0..v, criticalDensity t) =
+      u ^ 2 / 2 - u - 2 * criticalDecay u + 2 := by
+  have hd (v : ℝ) : HasDerivAt
+      (fun x : ℝ => x ^ 2 / 2 - x - 2 * criticalDecay x)
+      (v - 1 + criticalDecay v) v := by
+    have hp := (((hasDerivAt_id v).pow 2).div_const 2).sub (hasDerivAt_id v)
+    convert hp.sub ((decay_hasDerivAt v).const_mul 2) using 1 <;> first | rfl | ring
+  have hc : Continuous (fun v : ℝ => v - 1 + criticalDecay v) :=
+    (continuous_id.sub continuous_const).add decay_continuous
+  have hi := intervalIntegral.integral_eq_sub_of_hasDerivAt
+    (fun v _ => hd v) (hc.intervalIntegrable (μ := volume) 0 u)
+  have hz : criticalDecay 0 = 1 := by simp [criticalDecay]
+  rw [hz] at hi
+  simp only [zero_pow, zero_div, sub_zero, mul_one, zero_sub] at hi
+  simp_rw [density_mass]
+  linarith
+
+/-- Exact finite closed inventory formula at nonnegative coordinates.
+The touching endpoint prime is present with the zero factor `u - log p`. -/
+theorem criticalDiscrepancyPrimitive_eq_primeLogSum (u : ℝ) (hu : 0 ≤ u) :
+    criticalDiscrepancyPrimitive u =
+      primeLogSum u (fun t => u - t) - u ^ 2 / 2 + u + 2 * (criticalDecay u - 1) := by
+  have hF : ContDiff ℝ 1 (fun t : ℝ => u - t) := contDiff_const.sub contDiff_id
+  have hd (t : ℝ) : deriv (fun x : ℝ => u - x) t = -1 := by
+    simpa only [Pi.sub_apply, id_eq, zero_sub] using
+      ((hasDerivAt_const t u).sub (hasDerivAt_id t)).deriv
+  have ha := primeLogSum_abel u hu (fun t => u - t) hF
+  simp only [sub_self, zero_mul, zero_sub] at ha
+  simp_rw [hd, mul_neg_one] at ha
+  rw [intervalIntegral.integral_neg] at ha
+  have hb := density_mass_integral u
+  have he : criticalDiscrepancyPrimitive u =
+      (∫ v in 0..u, primeLogPrefix v) -
+        (∫ v in 0..u, ∫ t in 0..v, criticalDensity t) := by
+    unfold criticalDiscrepancyPrimitive criticalCumulativeDiscrepancy
+    exact intervalIntegral.integral_sub (prime_prefix_intervalIntegrable 0 u)
+      (density_mass_continuous.intervalIntegrable (μ := volume) 0 u)
+  rw [he, hb]
+  linarith
+
+/-- The left bridge endpoint is zero, including its total-division edge case. -/
+theorem criticalDiscrepancyBridge_at_zero (A : ℝ) :
+    criticalDiscrepancyBridge A 0 = 0 := by
+  simp [criticalDiscrepancyBridge, criticalDiscrepancyPrimitive_at_zero]
+
+/-- Positive source scale gives the exact zero upper endpoint. -/
+theorem criticalDiscrepancyBridge_at_upper {A : ℝ} (hA : 0 < A) :
+    criticalDiscrepancyBridge A (2 * A) = 0 := by
+  have hn : 2 * A ≠ 0 := ne_of_gt (by linarith : 0 < 2 * A)
+  simp [criticalDiscrepancyBridge, hn]
+
+/-- The bridge remains continuous, without a classical second derivative assertion. -/
+theorem criticalDiscrepancyBridge_continuous (A : ℝ) :
+    Continuous (criticalDiscrepancyBridge A) := by
+  exact criticalDiscrepancyPrimitive_continuous.sub
+    ((continuous_id.div_const (2 * A)).mul continuous_const)
+
+/-- The affine endpoint subtraction preserves absolute continuity on the source interval. -/
+theorem criticalDiscrepancyBridge_absolutelyContinuous (A : ℝ) :
+    AbsolutelyContinuousOnInterval (criticalDiscrepancyBridge A) 0 (2 * A) := by
+  have hl : ContDiff ℝ 1 (fun u : ℝ =>
+      (u / (2 * A)) * criticalDiscrepancyPrimitive (2 * A)) := by fun_prop
+  exact (criticalDiscrepancyPrimitive_absolutelyContinuous (2 * A)).sub
+    hl.contDiffOn.absolutelyContinuousOnInterval
+
+/-- Its derivative retains the independent endpoint average almost everywhere. -/
+theorem criticalDiscrepancyBridge_ae_hasDerivAt {A : ℝ} (hA : 0 < A) :
+    ∀ᵐ u ∂volume, u ∈ uIcc (0 : ℝ) (2 * A) →
+      HasDerivAt (criticalDiscrepancyBridge A)
+        (criticalCumulativeDiscrepancy u -
+          criticalDiscrepancyPrimitive (2 * A) / (2 * A)) u := by
+  filter_upwards [criticalDiscrepancyPrimitive_ae_hasDerivAt (2 * A)] with u hu
+  intro huA
+  have hid := (hasDerivAt_id u).div_const (2 * A)
+  have hl := hid.mul_const (criticalDiscrepancyPrimitive (2 * A))
+  convert (hu huA).sub hl using 1
+  · rfl
+  · field_simp [ne_of_gt hA]
+    <;> ring
+
+end FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy

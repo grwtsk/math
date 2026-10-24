@@ -1,0 +1,101 @@
+# extendLinear_embedding
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "3b22d151f6675760bc998da2c259830144f0b7ea",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 145,
+      "path": "GRWTSK/Analysis/Complex/HolomorphicLineSectionCompletion.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:f7a0ae2b-ea1e-9ae3-a113-55b5b817b677",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:df55e4ef-6d47-f721-77ed-797efa630ae7",
+  "kind": "theorem",
+  "lexical_name": "extendLinear_embedding",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "extendlinear-embedding--996a9452d8e77125d906e8ef",
+  "source": {
+    "blob": "3b22d151f6675760bc998da2c259830144f0b7ea",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 152,
+    "line": 145,
+    "path": "GRWTSK/Analysis/Complex/HolomorphicLineSectionCompletion.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:996a9452d8e77125d906e8ef8bf9ab544afad98116af43f3027f0f6c19b9a5bc",
+  "verification": {
+    "reference": "docs/verification/Analysis/ComplexAnalysis/HolomorphicLineSectionCompletion.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:df55e4ef-6d47-f721-77ed-797efa630ae7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 145–152.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem extendLinear_embedding (M : MetricWeights C) (μ : Measure D.X.carrier)
+    (hOpen : D.IsOpenCover) :
+    extendLinear M μ hOpen (toCompletion M μ hOpen).toContinuousLinearMap =
+      ContinuousLinearMap.id ℂ (SectionCompletion M μ hOpen) := by
+  symm
+  exact extendLinear_unique M μ hOpen _ _ (fun _ => rfl)
+
+/-- Norm matching is proved from the old gauge isometry, not assumed on an unrelated map. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Analysis/ComplexAnalysis/HolomorphicLineSectionCompletion.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/Complex/HolomorphicLineSectionCompletion.lean#L145).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3b22d151f6675760bc998da2c259830144f0b7ea` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

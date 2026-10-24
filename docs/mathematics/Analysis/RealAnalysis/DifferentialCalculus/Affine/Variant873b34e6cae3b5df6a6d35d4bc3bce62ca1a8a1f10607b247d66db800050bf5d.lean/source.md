@@ -1,0 +1,94 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.Affine.Variant873b34e6cae3b5df6a6d35d4bc3bce62ca1a8a1f10607b247d66db800050bf5d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `069d843d1404438aa0eeeb81946b4d6bac52327c` · SHA-256 `ba1d41d0dc739ad6114e7bbfac447806acff6fe70158ada08a76bfea9c45d6f9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.HasFDerivAtFilter.Variant0a78e17843e073a584901d4ae7cc29228cb9e6e670391124ed5b437cb5c837ee","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0a78e17843e073a584901d4ae7cc29228cb9e6e670391124ed5b437cb5c837ee","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.HasFDerivAtFilter.Variant0a78e17843e073a584901d4ae7cc29228cb9e6e670391124ed5b437cb5c837ee","mathematical_subject":"Analysis.Calculus","original_sha256":"0a78e17843e073a584901d4ae7cc29228cb9e6e670391124ed5b437cb5c837ee","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Analysis/Calculus/FDeriv/Affine.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Sébastien Gouëzel. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sébastien Gouëzel
+-/
+module
+
+public import Mathlib.Analysis.Normed.Group.AddTorsor
+public import Mathlib.Topology.Algebra.ContinuousAffineMap
+public import Mathlib.Algebra.Order.Field.Power
+public import Mathlib.Analysis.Calculus.FDeriv.Basic
+
+
+/-!
+# The derivative of continuous affine maps
+
+For detailed documentation of the Fréchet derivative,
+see the module docstring of `Mathlib/Analysis/Calculus/FDeriv/Basic.lean`.
+
+This file contains the usual formulas (and existence assertions) for the derivative of
+continuous affine maps.
+-/
+
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.HasFDerivAtFilter.Variant0a78e17843e073a584901d4ae7cc29228cb9e6e670391124ed5b437cb5c837ee
+
+public section
+
+variable {𝕜 : Type*} [NontriviallyNormedField 𝕜]
+  {E : Type*} [NormedAddCommGroup E] [NormedSpace 𝕜 E]
+  {F : Type*} [NormedAddCommGroup F] [NormedSpace 𝕜 F]
+  (f : E →ᴬ[𝕜] F) {x : E} {s : Set E} {L : Filter (E × E)}
+
+namespace ContinuousAffineMap
+
+/-!
+### Continuous affine maps
+-/
+
+protected theorem hasFDerivAtFilter : HasFDerivAtFilter f f.contLinear L := by
+  refine .of_isLittleOTVS <| .congr_left (.zero _ _) ?_
+  simp [(vsub_eq_sub _ _).symm.trans (f.contLinear_map_vsub _ _).symm]
+
+@[fun_prop]
+protected theorem hasStrictFDerivAt {x : E} : HasStrictFDerivAt f f.contLinear x :=
+  f.hasFDerivAtFilter
+
+@[fun_prop]
+protected theorem hasFDerivWithinAt : HasFDerivWithinAt f f.contLinear s x :=
+  f.hasFDerivAtFilter
+
+@[fun_prop]
+protected theorem hasFDerivAt : HasFDerivAt f f.contLinear x :=
+  f.hasFDerivAtFilter
+
+@[simp, fun_prop]
+protected theorem differentiableAt : DifferentiableAt 𝕜 f x :=
+  f.hasFDerivAt.differentiableAt
+
+@[fun_prop]
+protected theorem differentiableWithinAt : DifferentiableWithinAt 𝕜 f s x :=
+  f.differentiableAt.differentiableWithinAt
+
+@[simp]
+protected theorem fderiv : fderiv 𝕜 f x = f.contLinear :=
+  f.hasFDerivAt.fderiv
+
+protected theorem fderivWithin (hxs : UniqueDiffWithinAt 𝕜 s x) :
+    fderivWithin 𝕜 f s x = f.contLinear := by
+  rw [DifferentiableAt.fderivWithin f.differentiableAt hxs]
+  exact f.fderiv
+
+@[simp, fun_prop]
+protected theorem differentiable : Differentiable 𝕜 f := fun _ =>
+  f.differentiableAt
+
+@[fun_prop]
+protected theorem differentiableOn : DifferentiableOn 𝕜 f s :=
+  f.differentiable.differentiableOn
+
+end ContinuousAffineMap
+```

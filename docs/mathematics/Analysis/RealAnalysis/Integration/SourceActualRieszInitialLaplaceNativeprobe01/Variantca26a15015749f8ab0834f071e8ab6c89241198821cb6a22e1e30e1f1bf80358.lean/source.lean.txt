@@ -1,0 +1,26 @@
+import SourceActualRieszCenteredReconstruction
+import Mathlib.NumberTheory.LSeries.Dirichlet
+import Mathlib.MeasureTheory.Integral.DominatedConvergence
+import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+#check integrableOn_Ioi_deriv_of_nonneg
+#check integral_Ioi_of_hasDerivAt_of_tendsto'
+#check MeasureTheory.integral_Ioi_eq_integral_Ioc_add_integral_Ioi
+#check intervalIntegral.integral_interval_add_Ioi
+#check MeasureTheory.IntegrableOn.union
+#check MeasureTheory.IntegrableOn.congr_fun
+#check MeasureTheory.IntegrableOn.mono'
+#check MeasureTheory.integrableOn_Ioi_iff_integrableOn_Ici
+#check MeasureTheory.Integrable.mono'
+#check MeasureTheory.integral_tsum_of_summable_integral_norm
+#check MeasureTheory.lintegral_tsum
+#check MeasureTheory.lintegral_coe_eq_integral
+#check ArithmeticFunction.LSeriesSummable_vonMangoldt
+#check LSeries.term_def₀
+#check Complex.norm_cpow_eq_rpow_re_of_pos
+#check Finset.sum_eq_tsum
+#check tsum_eq_sum
+#check hasSum_fintype

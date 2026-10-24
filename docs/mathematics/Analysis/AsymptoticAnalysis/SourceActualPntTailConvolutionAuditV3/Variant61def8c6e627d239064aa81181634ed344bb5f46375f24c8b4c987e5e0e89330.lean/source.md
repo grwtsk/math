@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.SourceActualPntTailConvolutionAuditV3.Variant61def8c6e627d239064aa81181634ed344bb5f46375f24c8b4c987e5e0e89330
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `83b487709ed3d95f04622db1a679406a9cfcca42` · SHA-256 `61def8c6e627d239064aa81181634ed344bb5f46375f24c8b4c987e5e0e89330`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPntTailConvolution
+open FormalResearch.RiemannHypothesis
+#check RH16ActualPntTailConvolution.actualRelativePsiTimeError_total_eq_neg_gamma_sub_one
+#print axioms RH16ActualPntTailConvolution.actualRelativePsiTimeError_total_eq_neg_gamma_sub_one
+#check RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_eq_neg_tail
+#print axioms RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_eq_neg_tail
+#check RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_abs_le
+#print axioms RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_abs_le
+#check RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_pnt_majorant
+#print axioms RH16ActualPntTailConvolution.actualMangoldtErrorConvolution_one_pnt_majorant
+#check SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#print axioms SourceActualMertensPntRate.actualCenteredMangoldtLogError_eq_delta_sub_tail
+#check SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#print axioms SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_eq_one_convolution
+#check SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#print axioms SourceActualPsiPntTimeDecay.actualRelativePsiTimeError_isBigO
+#check SourceActualMertensGammaCalibration.actualPntMertensLimit_eq_neg_gamma
+#print axioms SourceActualMertensGammaCalibration.actualPntMertensLimit_eq_neg_gamma
+#print SourceActualXiErrorConvolution.actualCenteredMangoldtLogError
+#print SourceActualXiErrorConvolution.actualMangoldtErrorConvolution
+#print SourceActualPsiPntTimeDecay.actualRelativePsiTimeError
+#print SourceMangoldtAbel.mangoldtLogError
+#print SourceMangoldtAbel.mangoldtLogPrefix
+#print WeightedPrimeMertens.weightedMangoldt
+#print Chebyshev.psi
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for mod in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {mod}"
+```

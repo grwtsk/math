@@ -1,0 +1,122 @@
+# li_pv_two_bounds
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "a7e06a1a11ee0a584061711418722f38a074d158",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 173,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/3b/3b1244ffa252973abba16b4b370ba2fc5e8a113f5f295279a8bf857031dd68b4.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:8dd7d731-5073-d31c-cbda-c7a6c2f68375",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:2e2cfe57-7618-72b9-7bbd-d8b7837797c9",
+  "kind": "theorem",
+  "lexical_name": "li_pv_two_bounds",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "li-pv-two-bounds--7f7e673c537d7b6805d3ce2f",
+  "source": {
+    "blob": "a7e06a1a11ee0a584061711418722f38a074d158",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 201,
+    "line": 173,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/Li2Connection/Variant3b1244ffa252973abba16b4b370ba2fc5e8a113f5f295279a8bf857031dd68b4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:7f7e673c537d7b6805d3ce2f2491de04113b415c448a34ff0ca77109b31aee74",
+  "verification": {
+    "reference": "docs/verification/Analysis/RealAnalysis/Integration/Li2Connection/Variant3b1244ffa252973abba16b4b370ba2fc5e8a113f5f295279a8bf857031dd68b4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2e2cfe57-7618-72b9-7bbd-d8b7837797c9`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 173–201.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem li_pv_two_bounds : (1039:ℚ)/1000 ≤ li_pv 2 ∧ li_pv 2 ≤ (106:ℚ)/100 :=
+  ⟨li_pv_two_lower, li_pv_two_upper⟩
+
+end Li2Connection
+
+/-!
+## Summary
+
+This file establishes the connection between two definitions of li(2):
+
+1. **Principal Value (Tao's definition)**:
+   `li_pv(2) = lim_{ε→0⁺} [∫₀^{1-ε} dt/log(t) + ∫_{1+ε}^2 dt/log(t)]`
+
+2. **Symmetric Form (our definition)**:
+   `li2 = ∫₀¹ (1/log(1+t) + 1/log(1-t)) dt`
+
+The key theorem `li_pv_two_eq_li2` proves these are equal.
+
+### Remaining Sorries
+
+The sorries are for:
+- Integrability of 1/log(1±u) on [ε,1]
+- Integrability of g on [0,1]
+- Limit theorem (continuity of integral in lower bound)
+- The main connection theorem (using the above)
+
+These are all provable using standard Mathlib techniques, but require
+careful handling of the logarithm singularities.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../verification/Analysis/RealAnalysis/Integration/Li2Connection/Variant3b1244ffa252973abba16b4b370ba2fc5e8a113f5f295279a8bf857031dd68b4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/Li2Connection/Variant3b1244ffa252973abba16b4b370ba2fc5e8a113f5f295279a8bf857031dd68b4.lean#L173).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a7e06a1a11ee0a584061711418722f38a074d158` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

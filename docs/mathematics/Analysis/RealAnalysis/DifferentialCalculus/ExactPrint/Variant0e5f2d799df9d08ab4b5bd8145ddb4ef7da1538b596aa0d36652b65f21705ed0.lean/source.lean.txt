@@ -1,0 +1,55 @@
+import FormalResearch.RiemannHypothesis.SourceCausalEnergy
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCausalEnergy
+
+#print normalizedPrimitiveBump
+#print compactPolePrimitive
+#print causalSourceTail
+#print normalizedPrimitiveBump_contDiff
+#print normalizedPrimitiveBump_hasDerivAt
+#print normalizedPrimitiveBump_deriv
+#print normalizedPrimitiveBump_deriv_hasDerivAt
+#print normalizedPrimitiveBump_second_sub_quarter
+#print normalizedPrimitiveBump_eq_interior
+#print normalizedPrimitiveBump_deriv_eq_interior
+#print normalizedPrimitiveBump_endpoints
+#print normalizedPrimitiveBump_deriv_endpoints
+#print normalizedPrimitiveBump_zero_of_not_mem
+#print normalizedPrimitiveBump_deriv_zero_of_not_mem
+#print normalizedPrimitiveBump_hasCompactSupport
+#print normalizedPrimitiveBump_deriv_hasCompactSupport
+#print compactPolePrimitive_eq_polePrimitive
+#print compactPolePrimitive_hasDerivAt
+#print compactPolePrimitive_deriv
+#print compactPolePrimitive_contDiff
+#print compactPolePrimitive_zero_of_not_mem
+#print compactPolePrimitive_endpoints
+#print compactPolePrimitive_hasCompactSupport
+#print weightedSource_integrable
+#print causalSourceTail_integrable_section
+#print causalSourceTail_eq
+#print causalSourceTail_contDiff
+#print causalSourceTail_hasDerivAt
+#print causalSourceTail_deriv
+#print causalSourceTail_zero_of_not_mem
+#print causalSourceTail_endpoints
+#print causalSourceTail_hasCompactSupport
+#print causalSourceTail_integrable
+#print causalSourceTail_memLp_two
+#print causalSourceTail_square_integrable
+#print source_mul_causalSourceTail_integrable
+#print normalizedPrimitiveBump_integrable
+#print normalizedPrimitiveBump_deriv_integrable
+#print normalizedPrimitiveBump_memLp_two
+#print normalizedPrimitiveBump_deriv_memLp_two
+#print normalizedPrimitiveBump_square_integrable
+#print normalizedPrimitiveBump_mixed_integral_zero
+#print normalizedPrimitiveBump_square_integral
+#print normalizedPrimitiveBump_deriv_square_integral
+#print causalSourceTail_square_integral
+#print source_mul_causalSourceTail_integral
+#print rawPolePrimitive_positive_outside
+#print compactPolePrimitive_ne_normalized_raw_outside

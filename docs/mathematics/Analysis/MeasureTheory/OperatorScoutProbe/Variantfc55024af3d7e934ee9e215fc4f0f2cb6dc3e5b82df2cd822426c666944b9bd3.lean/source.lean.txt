@@ -1,0 +1,16 @@
+import FormalResearch.RiemannHypothesis.SourceComparison.HalfLineExponential
+import FormalResearch.RiemannHypothesis.SourceComparison.FixedKernelAdmission
+import Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
+import Mathlib.MeasureTheory.Measure.Typeclasses.Finite
+import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+#check MeasureTheory.measurePreserving_sub_right
+#check MeasureTheory.Lp.compMeasurePreservingₗᵢ
+#check Continuous.compMeasurePreservingLp
+#check ContinuousMap.continuous_of_continuous_uncurry
+#check MeasureTheory.LpToLpRestrictCLM
+#check MeasureTheory.memLp_indicator_iff_restrict
+#check MeasureTheory.eLpNorm_indicator_eq_eLpNorm_restrict
+#check MeasureTheory.Lp.memLp
+#check MeasureTheory.Integrable.smul_of_top_right
+#check MeasureTheory.norm_integral_le_integral_norm
+#check MeasureTheory.LpToLpRestrictCLM_norm_le

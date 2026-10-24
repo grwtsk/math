@@ -1,0 +1,207 @@
+# Complete source: GRWTSK.Analysis.FunctionalAnalysis.Tensor.Variant921f470d1028f531259d6b9fe2d04c18d09ce6d6954ed74f1985517cc6ae38fb
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `56328c76c83766175dc7afa19cb2d85d9e4d6f4a` · SHA-256 `2eed430cd738a528150f293e26aa7ad16692b22f2737eeb2eeee876ef104e28d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.FunctionalAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.FunctionalAnalysis.SpectralTensor.Variant5f4fddd752ee2ea8042f48d0ef34c60f3b4a29a81c1941534683f7bf9587c037","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"5f4fddd752ee2ea8042f48d0ef34c60f3b4a29a81c1941534683f7bf9587c037","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.SpectralTensor.Variant5f4fddd752ee2ea8042f48d0ef34c60f3b4a29a81c1941534683f7bf9587c037","mathematical_subject":"Foundations.Unclassified","original_sha256":"5f4fddd752ee2ea8042f48d0ef34c60f3b4a29a81c1941534683f7bf9587c037","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/Tensor.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Folder.Carrier.Grid
+
+/-!
+# Folder.Spectral.Tensor
+
+Radiation role: spectral-heat
+BinaryMatrix spine: This module supports spectral fields, heat contracts, residuals, energy, or quantization downstream of BinaryMatrix carriers.
+Ontology: spectral.spectral_tensor
+Pivot role: spectral
+Zero typology: spectral
+Contract boundary: definition
+Composite stack role: field
+-/
+
+
+
+namespace GRWTSK.Analysis.FunctionalAnalysis.SpectralTensor.Variant5f4fddd752ee2ea8042f48d0ef34c60f3b4a29a81c1941534683f7bf9587c037
+
+namespace Folder
+namespace Spectral
+
+open Carrier
+
+structure SpectralTensor (s : GridShape) (k : Nat) where
+  value : Cell s → Fin k → ℝ
+
+namespace SpectralTensor
+
+@[ext]
+theorem ext
+    {s : GridShape}
+    {k : Nat}
+    {X Y : SpectralTensor s k}
+    (h : ∀ c q, X.value c q = Y.value c q) :
+    X = Y := by
+  cases X
+  cases Y
+  congr
+  funext c q
+  exact h c q
+
+def zero (s : GridShape) (k : Nat) : SpectralTensor s k where
+  value := fun _ _ => 0
+
+def add {s : GridShape} {k : Nat}
+    (X Y : SpectralTensor s k) :
+    SpectralTensor s k where
+  value := fun c q => X.value c q + Y.value c q
+
+def sub {s : GridShape} {k : Nat}
+    (X Y : SpectralTensor s k) :
+    SpectralTensor s k where
+  value := fun c q => X.value c q - Y.value c q
+
+def smul {s : GridShape} {k : Nat}
+    (a : ℝ)
+    (X : SpectralTensor s k) :
+    SpectralTensor s k where
+  value := fun c q => a * X.value c q
+
+def constant (s : GridShape) {k : Nat}
+    (a : Fin k → ℝ) :
+    SpectralTensor s k where
+  value := fun _ q => a q
+
+noncomputable def mean {s : GridShape} {k : Nat}
+    (X : SpectralTensor s k) :
+    ℝ :=
+  (∑ c : Cell s, ∑ q : Fin k, X.value c q) /
+    ((s.rows * s.cols * k : Nat) : ℝ)
+
+def visibleRange01 {s : GridShape} {k : Nat}
+    (X : SpectralTensor s k) :
+    Prop :=
+  ∀ c q, 0 ≤ X.value c q ∧ X.value c q ≤ 1
+
+instance {s : GridShape} {k : Nat} : Zero (SpectralTensor s k) :=
+  ⟨zero s k⟩
+
+instance {s : GridShape} {k : Nat} : Add (SpectralTensor s k) :=
+  ⟨add⟩
+
+instance {s : GridShape} {k : Nat} : Sub (SpectralTensor s k) :=
+  ⟨sub⟩
+
+instance {s : GridShape} {k : Nat} : SMul ℝ (SpectralTensor s k) :=
+  ⟨smul⟩
+
+@[simp]
+theorem value_zero {s : GridShape} {k : Nat} (c : Cell s) (q : Fin k) :
+    (0 : SpectralTensor s k).value c q = 0 :=
+  rfl
+
+@[simp]
+theorem value_add {s : GridShape} {k : Nat}
+    (X Y : SpectralTensor s k)
+    (c : Cell s)
+    (q : Fin k) :
+    (X + Y).value c q = X.value c q + Y.value c q :=
+  rfl
+
+@[simp]
+theorem value_sub {s : GridShape} {k : Nat}
+    (X Y : SpectralTensor s k)
+    (c : Cell s)
+    (q : Fin k) :
+    (X - Y).value c q = X.value c q - Y.value c q :=
+  rfl
+
+@[simp]
+theorem value_smul {s : GridShape} {k : Nat}
+    (a : ℝ)
+    (X : SpectralTensor s k)
+    (c : Cell s)
+    (q : Fin k) :
+    (a • X).value c q = a * X.value c q :=
+  rfl
+
+@[simp]
+theorem value_constant {s : GridShape} {k : Nat}
+    (a : Fin k → ℝ)
+    (c : Cell s)
+    (q : Fin k) :
+    (constant s a).value c q = a q :=
+  rfl
+
+end SpectralTensor
+
+/--
+A single eigenvalue datum in a Dirac-type spectrum.
+
+This is contract-level spectrum data. It does not assert construction of an
+actual Dirac operator.
+-/
+structure DiracEigenDatum where
+  index : Nat
+  eigenvalue : ℝ
+  multiplicity : Nat
+  multiplicity_pos : 0 < multiplicity
+  label : String
+
+/--
+A contract-level Dirac spectrum.
+
+The fields `selfAdjointLike`, `discreteSpectrum`, and `compactResolventLike`
+are hypotheses/metadata, not internally proved analytic facts.
+-/
+structure DiracSpectrum where
+  Operator : Type _
+  eigen : Nat → Option DiracEigenDatum
+  selfAdjointLike : Prop
+  selfAdjointLike_certified : selfAdjointLike
+  discreteSpectrum : Prop
+  discreteSpectrum_certified : discreteSpectrum
+  compactResolventLike : Prop
+  compactResolventLike_certified : compactResolventLike
+  sourceLabel : String
+
+/--
+A spectral tensor object enhanced with optional Dirac spectrum data.
+
+This is the object that can later be mapped to K-theory.
+-/
+structure DiracSpectrumObject where
+  shape? : Option Carrier.GridShape
+  channels? : Option Nat
+  tensorCarrier? : Option (Type _)
+  spectrum : DiracSpectrum
+  categoricalObject : Prop
+  categoricalObject_certified : categoricalObject
+  sourceLabel : String
+
+theorem dirac_spectrum_self_adjoint_like
+    (S : DiracSpectrum) :
+    S.selfAdjointLike :=
+  S.selfAdjointLike_certified
+
+theorem dirac_spectrum_discrete
+    (S : DiracSpectrum) :
+    S.discreteSpectrum :=
+  S.discreteSpectrum_certified
+
+theorem dirac_spectrum_compact_resolvent_like
+    (S : DiracSpectrum) :
+    S.compactResolventLike :=
+  S.compactResolventLike_certified
+
+theorem dirac_spectrum_object_is_categorical
+    (X : DiracSpectrumObject) :
+    X.categoricalObject :=
+  X.categoricalObject_certified
+
+end Spectral
+end Folder
+```

@@ -1,0 +1,10 @@
+import SourceActualXiPositiveBlock
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16ActualXiPositiveBlock.actualTransformedXiBlockDensity
+#print RH16ActualXiPositiveBlock.blockMargin
+#print RH16ActualXiPositiveBlock.actual_transformed_kernel_negative
+#print RH16ActualXiPositiveBlock.actual_transformed_density_lower
+#print RH16ActualXiPositiveBlock.actual_transformed_density_intervalIntegrable
+#print RH16ActualXiPositiveBlock.blockMargin_pos
+#print RH16ActualXiPositiveBlock.actual_transformed_block_integral_lower

@@ -1,0 +1,37 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.ActualEdgeRecoveryOrdinary.Variant4f92efcb6239a56b7f64426f306be0eaa08f382b6a0585a463472ffb1638fc29
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `58f35ab97d549645c6777d9a5b9fa31a0a7a8bcd` · SHA-256 `d920b5f4c6cf5e60c90eec9bb05f24a5fbd61f538e5e05d9a7ae668795e7bc21`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.EstimateSourceEdgeCorrelation.Variant89df231c2d90ecd9d3719e9efca79a83a6cbcdbccaea3f8ea7a895c162b868b4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"89df231c2d90ecd9d3719e9efca79a83a6cbcdbccaea3f8ea7a895c162b868b4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.EstimateSourceEdgeCorrelation.Variant89df231c2d90ecd9d3719e9efca79a83a6cbcdbccaea3f8ea7a895c162b868b4","mathematical_subject":"Analysis.Integration","original_sha256":"89df231c2d90ecd9d3719e9efca79a83a6cbcdbccaea3f8ea7a895c162b868b4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-source-edge-recovery/ActualEdgeRecoveryOrdinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.EstimateSourceEdgeCorrelation.Variant89df231c2d90ecd9d3719e9efca79a83a6cbcdbccaea3f8ea7a895c162b868b4
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.unitSecond_factor
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.endpointPolynomial
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.sourceNormalization_ge_one_div_32
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.normalizedTest_endpoint
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.normalizedTest_even
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.endpointPolynomial_continuous
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeProfile.endpointPolynomial_abs_le
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation.edgePolynomial
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation.sourceCorrelation_edge_overlap
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation.endpointProduct_intervalIntegrable
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation.sourceCorrelation_upper_edge
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation.endpointPolynomial_full_overlap_integral
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceEdgeCorrelation.sourceCorrelation_upper_edge_abs_le
+```

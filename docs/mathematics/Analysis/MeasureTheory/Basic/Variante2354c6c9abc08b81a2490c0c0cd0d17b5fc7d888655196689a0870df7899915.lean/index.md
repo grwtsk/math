@@ -1,0 +1,220 @@
+# GRWTSK.Analysis.MeasureTheory.Basic.Variante2354c6c9abc08b81a2490c0c0cd0d17b5fc7d888655196689a0870df7899915
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**199 observed declarations and anonymous commands**, 188 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/MeasureTheory/Basic/Variante2354c6c9abc08b81a2490c0c0cd0d17b5fc7d888655196689a0870df7899915.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `75a9d1ea858d5904310c900dace99cf94dacc14d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Analysis/MeasureTheory/Basic/Variante2354c6c9abc08b81a2490c0c0cd0d17b5fc7d888655196689a0870df7899915.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [StronglyMeasurable](declarations/stronglymeasurable--d0dfba46bf86a1bf5c30c73b.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [FinStronglyMeasurable](declarations/finstronglymeasurable--ee335c61eefd4648dc2375c7.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [AEStronglyMeasurable](declarations/aestronglymeasurable--47bfc084106ca2d8c43ad3c1.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [AEFinStronglyMeasurable](declarations/aefinstronglymeasurable--27a388ca3f18f0e7b1737d1c.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [StronglyMeasurable.aestronglyMeasurable](declarations/stronglymeasurable-aestronglymeasurable--11ff23d9249ddce42af52d74.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [Subsingleton.stronglyMeasurable](declarations/subsingleton-stronglymeasurable--046623cfa20b70d5ce851108.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [SimpleFunc.stronglyMeasurable](declarations/simplefunc-stronglymeasurable--c4194efbe504675958c253c4.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [stronglyMeasurable_of_isEmpty](declarations/stronglymeasurable-of-isempty--1fe60197f53761c6e395e1cc.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [stronglyMeasurable_const](declarations/stronglymeasurable-const--e2c4158abb2fef824aef4759.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [stronglyMeasurable_one](declarations/stronglymeasurable-one--7aa51136a51cebc4d0a5564a.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [stronglyMeasurable_const'](declarations/stronglymeasurable-const--5a263026a7711a0b4cf74260.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [Subsingleton.stronglyMeasurable'](declarations/subsingleton-stronglymeasurable--9390bca4c3b1e4e73a0e955c.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [approx](declarations/approx--bc1e5ce798aa8ce3406845a3.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [tendsto_approx](declarations/tendsto-approx--59b85649f1df2100b75db798.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [approxBounded](declarations/approxbounded--6f11075989796c381850e581.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [tendsto_approxBounded_of_norm_le](declarations/tendsto-approxbounded-of-norm-le--71242e2043c85e9430db74e3.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [tendsto_approxBounded_ae](declarations/tendsto-approxbounded-ae--31c40ee813a5b321b227c182.md) | 228 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [norm_approxBounded_le](declarations/norm-approxbounded-le--e9a2bdd113908b792c45e7d7.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [_root_.stronglyMeasurable_bot_iff](declarations/root-stronglymeasurable-bot-iff--437e10480de6d6f7384b4e27.md) | 253 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [finStronglyMeasurable_of_set_sigmaFinite](declarations/finstronglymeasurable-of-set-sigmafinite--c9c9d39afc213adf74c90f89.md) | 275 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [finStronglyMeasurable](declarations/finstronglymeasurable--a7ac6d9e38c79eee5204b00c.md) | 328 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [measurable](declarations/measurable--29a5367f1c8fd996c93cdb25.md) | 336 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [aemeasurable](declarations/aemeasurable--584b4c6aa2cd4d949ea8bad5.md) | 344 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [_root_.Continuous.comp_stronglyMeasurable](declarations/root-continuous-comp-stronglymeasurable--85b67bc3483e9f4b3a5f2246.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [measurableSet_mulSupport](declarations/measurableset-mulsupport--5d0863eca57a32396b560c98.md) | 357 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [mono](declarations/mono--7f053436683706bda0b35297.md) | 364 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [prod_mk](declarations/prod-mk--f8be68958d9e73334980b69b.md) | 374 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [comp_measurable](declarations/comp-measurable--4c8d3513069f36b5ef118e46.md) | 382 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [of_uncurry_left](declarations/of-uncurry-left--e3f84cf4505dc9d627abec6d.md) | 388 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [of_uncurry_right](declarations/of-uncurry-right--632c399cc8e8c140e0f276e7.md) | 393 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [mul](declarations/mul--51c07113ef0e7b13f3f70ed8.md) | 404 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [mul_const](declarations/mul-const--7e79ee12ef5d4346d988ab8c.md) | 411 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [const_mul](declarations/const-mul--1192992b4e8de8a3cd661421.md) | 418 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [inv](declarations/inv--d58628e64714a6f131e8080a.md) | 425 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [div](declarations/div--b72b059ec84a6e5923b1aa44.md) | 432 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [smul](declarations/smul--36b95818907ff6a8d0efbadc.md) | 439 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [const_smul](declarations/const-smul--f42bf577abf7b2158cc34179.md) | 447 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [const_smul'](declarations/const-smul--b5b6afd5b6bd7598dc455d42.md) | 453 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [smul_const](declarations/smul-const--d2e59bacdb481fa1e808c9f8.md) | 459 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [_root_.stronglyMeasurable_const_smul_iff](declarations/root-stronglymeasurable-const-smul-iff--b4b04e0221beb31a9b04829d.md) | 475 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [_root_.IsUnit.stronglyMeasurable_const_smul_iff](declarations/root-isunit-stronglymeasurable-const-smul-iff--fe2d6689f2905284668fd065.md) | 480 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [_root_.stronglyMeasurable_const_smul_iff₀](declarations/root-stronglymeasurable-const-smul-iff--8b4d14db658ba68c576f3dc0.md) | 487 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [sup](declarations/sup--a74e2583a1670ad379983f1d.md) | 503 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [inf](declarations/inf--a1f5ecfecbe68a4db5076658.md) | 510 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [_root_.List.stronglyMeasurable_prod'](declarations/root-list-stronglymeasurable-prod--5058fcbc441f525c251feaa0.md) | 528 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [_root_.List.stronglyMeasurable_prod](declarations/root-list-stronglymeasurable-prod--b2f2a004bafc49409396fd62.md) | 538 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [_root_.Multiset.stronglyMeasurable_prod'](declarations/root-multiset-stronglymeasurable-prod--799858ac67782080ca9d4d62.md) | 552 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [_root_.Multiset.stronglyMeasurable_prod](declarations/root-multiset-stronglymeasurable-prod--c889ba9d9c24f4c7c7bc2f18.md) | 560 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [_root_.Finset.stronglyMeasurable_prod'](declarations/root-finset-stronglymeasurable-prod--48c9aea4531d92921a8272c0.md) | 568 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [_root_.Finset.stronglyMeasurable_prod](declarations/root-finset-stronglymeasurable-prod--b522306dcfbd24e148042ba1.md) | 575 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [isSeparable_range](declarations/isseparable-range--4d1ea1bb88355fdeee7b7821.md) | 584 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [separableSpace_range_union_singleton](declarations/separablespace-range-union-singleton--c620a1dbcb42d92bd1c658dc.md) | 596 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [_root_.Measurable.stronglyMeasurable](declarations/root-measurable-stronglymeasurable--628c7d09a56297ec17f2a3e4.md) | 609 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [_root_.stronglyMeasurable_iff_measurable](declarations/root-stronglymeasurable-iff-measurable--3ec2960a068419f73e05d099.md) | 622 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [_root_.stronglyMeasurable_id](declarations/root-stronglymeasurable-id--61e4f0541dd1e11177e6b767.md) | 628 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [_root_.stronglyMeasurable_iff_measurable_separable](declarations/root-stronglymeasurable-iff-measurable-separable--a305b12a58cbf99c16ae513a.md) | 637 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [_root_.Continuous.stronglyMeasurable](declarations/root-continuous-stronglymeasurable--2faffe0a36f27000b422ce78.md) | 664 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [_root_.Continuous.stronglyMeasurable_of_hasCompactSupport](declarations/root-continuous-stronglymeasurable-of-hascompactsupport--3ec239776a8250de9d3fec3b.md) | 678 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [_root_.Embedding.comp_stronglyMeasurable_iff](declarations/root-embedding-comp-stronglymeasurable-iff--d784d2b7a42c35ce12f45759.md) | 687 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [_root_.stronglyMeasurable_of_tendsto](declarations/root-stronglymeasurable-of-tendsto--2a83c4422fe298ca72fa7987.md) | 712 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [piecewise](declarations/piecewise--2bf1dd7c2ce778265e43c744.md) | 731 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [ite](declarations/ite--bb36359c45bfc5fa80caa017.md) | 747 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [_root_.stronglyMeasurable_of_stronglyMeasurable_union_cover](declarations/root-stronglymeasurable-of-stronglymeasurable-union-cover--17a527fed61f51b23bcbe028.md) | 753 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [_root_.stronglyMeasurable_of_restrict_of_restrict_compl](declarations/root-stronglymeasurable-of-restrict-of-restrict-compl--1a67de13a8d3ac431d834a86.md) | 798 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [indicator](declarations/indicator--ac02371d10c73bde4b507744.md) | 807 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [dist](declarations/dist--55a3b5a7ffca9b1beed9323e.md) | 814 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [norm](declarations/norm--88af1307798caa5e32283bf9.md) | 821 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [nnnorm](declarations/nnnorm--78a73809d77291b37a3af14f.md) | 827 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [ennnorm](declarations/ennnorm--8e4ec31d3a04bd29bee38e7a.md) | 833 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [real_toNNReal](declarations/real-tonnreal--14bf680eda424963dfa86a8b.md) | 839 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [_root_.MeasurableEmbedding.stronglyMeasurable_extend](declarations/root-measurableembedding-stronglymeasurable-extend--25513c5a97442364c3399d47.md) | 845 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [_root_.MeasurableEmbedding.exists_stronglyMeasurable_extend](declarations/root-measurableembedding-exists-stronglymeasurable-extend--54f237ba59fa8c1bbf11036b.md) | 859 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [measurableSet_eq_fun](declarations/measurableset-eq-fun--3f70935bc31ee60541438b4e.md) | 868 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [measurableSet_lt](declarations/measurableset-lt--dfb812380013c3c4bdf66359.md) | 875 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [measurableSet_le](declarations/measurableset-le--cf3737ab68ebb500553f4f09.md) | 882 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [stronglyMeasurable_in_set](declarations/stronglymeasurable-in-set--56f26d9b654c1d775b61919e.md) | 889 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [stronglyMeasurable_of_measurableSpace_le_on](declarations/stronglymeasurable-of-measurablespace-le-on--c0b59e9a00f9e36195329ad6.md) | 912 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [exists_spanning_measurableSet_norm_le](declarations/exists-spanning-measurableset-norm-le--d6993dc0aba0e555c233a66d.md) | 952 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [finStronglyMeasurable_zero](declarations/finstronglymeasurable-zero--380c1479343f8fc250b8b8e4.md) | 987 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [aefinStronglyMeasurable](declarations/aefinstronglymeasurable--7222e15ad1566086772d2153.md) | 999 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `def` | [approx](declarations/approx--fcc4c9dc42292f2c6d589b61.md) | 1011 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [fin_support_approx](declarations/fin-support-approx--94b867df7ce4c8ddb455d800.md) | 1015 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [tendsto_approx](declarations/tendsto-approx--ba7851206e09dd0424de83e6.md) | 1019 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [stronglyMeasurable](declarations/stronglymeasurable--6957b99e07319db991cf9676.md) | 1027 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [exists_set_sigmaFinite](declarations/exists-set-sigmafinite--e56536bd6376bd033e8d2f9c.md) | 1032 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [measurable](declarations/measurable--5ff096d2b592212e310e727c.md) | 1056 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [mul](declarations/mul--8732c78f5a0e1402fd701922.md) | 1066 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [add](declarations/add--ad4b2ac747a669d3e3ab0d93.md) | 1076 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [neg](declarations/neg--c2030d9dc97bb339172038e0.md) | 1086 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [sub](declarations/sub--9ac863a55c4e893f421d0069.md) | 1095 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [const_smul](declarations/const-smul--a801d2a08b6afbb7805dc9fd.md) | 1105 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `theorem` | [sup](declarations/sup--ef0fe736b4f2d0e367b5f024.md) | 1120 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [inf](declarations/inf--74fe24bf6cc7dbc9b8fe9e8d.md) | 1130 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [finStronglyMeasurable_iff_stronglyMeasurable_and_exists_set_sigmaFinite](declarations/finstronglymeasurable-iff-stronglymeasurable-and-exists-set-sigmafinite--f102c3ed0357805509139183.md) | 1143 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [aefinStronglyMeasurable_zero](declarations/aefinstronglymeasurable-zero--504aa94923d4d06bc4bb83c0.md) | 1153 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [aestronglyMeasurable_const](declarations/aestronglymeasurable-const--2cbe71e3f870930e74627d10.md) | 1161 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [aestronglyMeasurable_one](declarations/aestronglymeasurable-one--19d754bf19d9ad41b0b2643b.md) | 1167 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [Subsingleton.aestronglyMeasurable](declarations/subsingleton-aestronglymeasurable--748cb955ee47ac2d9db58be1.md) | 1174 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [Subsingleton.aestronglyMeasurable'](declarations/subsingleton-aestronglymeasurable--44cba5618b5d9ee1435fe955.md) | 1180 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [aestronglyMeasurable_zero_measure](declarations/aestronglymeasurable-zero-measure--4fb7b546e455e4260bc59d4a.md) | 1186 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [SimpleFunc.aestronglyMeasurable](declarations/simplefunc-aestronglymeasurable--b5b42ec2f6411824de0fa476.md) | 1194 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `def` | [mk](declarations/mk--832ab897c053f710d26a668d.md) | 1208 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [stronglyMeasurable_mk](declarations/stronglymeasurable-mk--50edfea7191e07c949c921d7.md) | 1212 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [measurable_mk](declarations/measurable-mk--744848e0355b5963fea59688.md) | 1216 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [ae_eq_mk](declarations/ae-eq-mk--7f441b939cc085890e037e84.md) | 1221 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [aemeasurable](declarations/aemeasurable--0a5dec25e8b1dd22f25a8e28.md) | 1226 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [congr](declarations/congr--b7cd59778c5655b0f541f800.md) | 1234 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [_root_.aestronglyMeasurable_congr](declarations/root-aestronglymeasurable-congr--435606c97f5bfde0d48a8b46.md) | 1238 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [mono_measure](declarations/mono-measure--dffcedeaff2be15a8935626b.md) | 1243 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [mono'](declarations/mono--3cfe20fc541397e1b0ac0a99.md) | 1248 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [mono_set](declarations/mono-set--bf9f775599e74c6a24793257.md) | 1253 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [restrict](declarations/restrict--8c5103a5a0fdf156b02d446d.md) | 1258 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [ae_mem_imp_eq_mk](declarations/ae-mem-imp-eq-mk--1dd44f9e0ea51728ed102bb1.md) | 1263 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [_root_.Continuous.comp_aestronglyMeasurable](declarations/root-continuous-comp-aestronglymeasurable--3b3a45affe3266febcc77b68.md) | 1270 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [_root_.Continuous.aestronglyMeasurable](declarations/root-continuous-aestronglymeasurable--064f72c91c5d6017a3acc67a.md) | 1277 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `theorem` | [prod_mk](declarations/prod-mk--19e982a1fa937b71d52474a6.md) | 1283 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [_root_.Measurable.aestronglyMeasurable](declarations/root-measurable-aestronglymeasurable--ba260c51cd43458f1b9083cc.md) | 1291 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [mul](declarations/mul--f1864666e13c23c6e55a4672.md) | 1300 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `theorem` | [mul_const](declarations/mul-const--fd800c3f3baf592a49220c8b.md) | 1308 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [const_mul](declarations/const-mul--2e28efd8459396072decee56.md) | 1315 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [inv](declarations/inv--5ce0a5329ced13076a455b0d.md) | 1322 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `theorem` | [div](declarations/div--bb6dced34daf2c42a7ee9305.md) | 1329 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [smul](declarations/smul--28fcf149436053755dc5dde7.md) | 1337 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `theorem` | [const_smul](declarations/const-smul--4567d807c339a565fb51528e.md) | 1345 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [const_smul'](declarations/const-smul--3892c71f6b5596866b5f22b5.md) | 1351 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [smul_const](declarations/smul-const--f03e08376671d615d255f553.md) | 1357 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [sup](declarations/sup--e9d06a454aa2deb354c5dc90.md) | 1368 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `theorem` | [inf](declarations/inf--87e446099bbaba89a66daebc.md) | 1375 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `theorem` | [_root_.List.aestronglyMeasurable_prod'](declarations/root-list-aestronglymeasurable-prod--f31666460eb31cfe5d90ee13.md) | 1393 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `theorem` | [_root_.List.aestronglyMeasurable_prod](declarations/root-list-aestronglymeasurable-prod--a72652f9da956982b8029748.md) | 1403 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [_root_.Multiset.aestronglyMeasurable_prod'](declarations/root-multiset-aestronglymeasurable-prod--674ba6ad7604884510cab69a.md) | 1417 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [_root_.Multiset.aestronglyMeasurable_prod](declarations/root-multiset-aestronglymeasurable-prod--de9aa953433e9461f2655cba.md) | 1425 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `theorem` | [_root_.Finset.aestronglyMeasurable_prod'](declarations/root-finset-aestronglymeasurable-prod--c79ead4efe38ac3f89ab5567.md) | 1433 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `theorem` | [_root_.Finset.aestronglyMeasurable_prod](declarations/root-finset-aestronglymeasurable-prod--7f498c429714b07d8dc23c62.md) | 1442 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `theorem` | [_root_.AEMeasurable.aestronglyMeasurable](declarations/root-aemeasurable-aestronglymeasurable--1bf1fe1974a818c5c11e2fce.md) | 1457 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [_root_.aestronglyMeasurable_id](declarations/root-aestronglymeasurable-id--faf473fa24d756dab537a8ed.md) | 1463 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [_root_.aestronglyMeasurable_iff_aemeasurable](declarations/root-aestronglymeasurable-iff-aemeasurable--7b8100e8712db9c4c0734285.md) | 1470 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [dist](declarations/dist--fbd5dbee7419249dd7f45e11.md) | 1478 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `theorem` | [norm](declarations/norm--87c2e4d275f76d2149b6037c.md) | 1485 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [nnnorm](declarations/nnnorm--872e834ed3a6197f342fe8a8.md) | 1491 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `theorem` | [ennnorm](declarations/ennnorm--fd90d7fa75d0e071235edc04.md) | 1497 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `theorem` | [edist](declarations/edist--49f36fd0b223b0c83f2da497.md) | 1503 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [real_toNNReal](declarations/real-tonnreal--885b951f6bcb9292ef6b6f63.md) | 1510 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [_root_.aestronglyMeasurable_indicator_iff](declarations/root-aestronglymeasurable-indicator-iff--0086f51e2e7621a38433bc9c.md) | 1515 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [indicator](declarations/indicator--85c47564e1eb324a522ed06a.md) | 1530 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [nullMeasurableSet_eq_fun](declarations/nullmeasurableset-eq-fun--4c09a1fef54bc6d2fb4c6afa.md) | 1535 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `theorem` | [nullMeasurableSet_lt](declarations/nullmeasurableset-lt--66e829c61782cb1e6c574522.md) | 1546 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [nullMeasurableSet_le](declarations/nullmeasurableset-le--c6c1a58fd9dc14813a9fe02a.md) | 1556 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [_root_.aestronglyMeasurable_of_aestronglyMeasurable_trim](declarations/root-aestronglymeasurable-of-aestronglymeasurable-trim--d9d50156992512c4294e0a8b.md) | 1566 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [comp_aemeasurable](declarations/comp-aemeasurable--94a7c23b240815fa6524aee4.md) | 1572 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [comp_measurable](declarations/comp-measurable--a04d3932dd4c7fd9b3bd3b8a.md) | 1579 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [comp_quasiMeasurePreserving](declarations/comp-quasimeasurepreserving--a01461e98e058067b1dcb06d.md) | 1585 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `theorem` | [comp_measurePreserving](declarations/comp-measurepreserving--02bc7a90b1034e1f332181bc.md) | 1591 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `theorem` | [isSeparable_ae_range](declarations/isseparable-ae-range--de39a6a31ed900489184373b.md) | 1596 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `theorem` | [_root_.aestronglyMeasurable_iff_aemeasurable_separable](declarations/root-aestronglymeasurable-iff-aemeasurable-separable--5927ba8df74dd8d2c93e401b.md) | 1605 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `theorem` | [_root_.MeasurableEmbedding.aestronglyMeasurable_map_iff](declarations/root-measurableembedding-aestronglymeasurable-map-iff--eee1f72baa4fc6c10dde76ea.md) | 1621 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `theorem` | [_root_.Embedding.aestronglyMeasurable_comp_iff](declarations/root-embedding-aestronglymeasurable-comp-iff--73e09787cb866d5b710d09d2.md) | 1631 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [_root_.MeasureTheory.MeasurePreserving.aestronglyMeasurable_comp_iff](declarations/root-measuretheory-measurepreserving-aestronglymeasurable-comp-iff--90044cd63572aca449596dfe.md) | 1653 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [_root_.aestronglyMeasurable_of_tendsto_ae](declarations/root-aestronglymeasurable-of-tendsto-ae--4e1ea3a358788695c7850213.md) | 1662 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [_root_.exists_stronglyMeasurable_limit_of_tendsto_ae](declarations/root-exists-stronglymeasurable-limit-of-tendsto-ae--3ac514c50490a5ad7026f1a1.md) | 1683 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [sum_measure](declarations/sum-measure--f911926bdfaf3790aad88a11.md) | 1698 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [_root_.aestronglyMeasurable_sum_measure_iff](declarations/root-aestronglymeasurable-sum-measure-iff--0766ee152e21a6b7f480cf43.md) | 1715 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [_root_.aestronglyMeasurable_add_measure_iff](declarations/root-aestronglymeasurable-add-measure-iff--7cb72288db2387df9282df4f.md) | 1722 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `theorem` | [add_measure](declarations/add-measure--dc7791ff3ae7e740871fcbf7.md) | 1729 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `theorem` | [iUnion](declarations/iunion--97a47f3593037ed62a3e2ad0.md) | 1736 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `theorem` | [_root_.aestronglyMeasurable_iUnion_iff](declarations/root-aestronglymeasurable-iunion-iff--2ad22176d6dfbeb69a26eff9.md) | 1743 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `theorem` | [_root_.aestronglyMeasurable_union_iff](declarations/root-aestronglymeasurable-union-iff--35415ca4a33c50d81fe8354a.md) | 1751 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [aestronglyMeasurable_uIoc_iff](declarations/aestronglymeasurable-uioc-iff--0dad77131076163c3b554925.md) | 1757 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [smul_measure](declarations/smul-measure--a0dd04f45ef35c613c2caa91.md) | 1767 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `theorem` | [_root_.aestronglyMeasurable_smul_const_iff](declarations/root-aestronglymeasurable-smul-const-iff--67353eaa898805d8034134a4.md) | 1778 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [_root_.aestronglyMeasurable_const_smul_iff](declarations/root-aestronglymeasurable-const-smul-iff--77b082dbe58709a574934556.md) | 1792 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [_root_.IsUnit.aestronglyMeasurable_const_smul_iff](declarations/root-isunit-aestronglymeasurable-const-smul-iff--6d72a01c4df7dab4f7bab784.md) | 1797 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `theorem` | [_root_.aestronglyMeasurable_const_smul_iff₀](declarations/root-aestronglymeasurable-const-smul-iff--491bc8c3cc511e9bd475b4a0.md) | 1803 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [_root_.StronglyMeasurable.apply_continuousLinearMap](declarations/root-stronglymeasurable-apply-continuouslinearmap--408cf4123e6f0d6d252b971f.md) | 1820 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `theorem` | [apply_continuousLinearMap](declarations/apply-continuouslinearmap--52838cb902ae3970a33b0476.md) | 1827 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [_root_.ContinuousLinearMap.aestronglyMeasurable_comp₂](declarations/root-continuouslinearmap-aestronglymeasurable-comp--56e3fc5a72b40cc816542adb.md) | 1832 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [_root_.aestronglyMeasurable_withDensity_iff](declarations/root-aestronglymeasurable-withdensity-iff--5e6e5bb4adcf70d550f0a55e.md) | 1841 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `def` | [mk](declarations/mk--d8f2f0868fe581543279af1e.md) | 1882 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `theorem` | [finStronglyMeasurable_mk](declarations/finstronglymeasurable-mk--32df341f4e4f1cc795b2d7f7.md) | 1886 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [ae_eq_mk](declarations/ae-eq-mk--d4649bac9d076e9b742ea236.md) | 1891 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [aemeasurable](declarations/aemeasurable--ccd0ce13c4ef6437e27f3da4.md) | 1897 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [mul](declarations/mul--0423bc6b530ad1cfb7f463fc.md) | 1909 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `theorem` | [add](declarations/add--23320cc0e5d748853a87991b.md) | 1916 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `theorem` | [neg](declarations/neg--6f7f277d665e0ba3219fd845.md) | 1923 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `theorem` | [sub](declarations/sub--fefd509e86d8a7a33f4d72b6.md) | 1929 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `theorem` | [const_smul](declarations/const-smul--c6e0c54cef1c1254bec5987e.md) | 1936 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [sup](declarations/sup--b758fe882b8e375baf8074bc.md) | 1949 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [inf](declarations/inf--53505afdf7ccc26c9b575db0.md) | 1956 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [exists_set_sigmaFinite](declarations/exists-set-sigmafinite--6761755e0755fb6a9b2be12d.md) | 1966 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `def` | [sigmaFiniteSet](declarations/sigmafiniteset--b514c108bf0b0d22990ddbb1.md) | 1977 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [measurableSet](declarations/measurableset--b23ce1d4b05051dd8d220352.md) | 1981 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [ae_eq_zero_compl](declarations/ae-eq-zero-compl--dfa9f2bfac74536c4fc1381c.md) | 1986 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `instance` | [sigmaFinite_restrict](declarations/sigmafinite-restrict--c47b5d4868909f32b2c21165.md) | 1991 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `theorem` | [finStronglyMeasurable_iff_measurable](declarations/finstronglymeasurable-iff-measurable--b96458ea7a4045434d4e320a.md) | 2006 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [finStronglyMeasurable_of_measurable](declarations/finstronglymeasurable-of-measurable--6656d7d7858ed1a1bbe71ece.md) | 2014 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `theorem` | [aefinStronglyMeasurable_iff_aemeasurable](declarations/aefinstronglymeasurable-iff-aemeasurable--1c649613bfc50d7d629580c1.md) | 2020 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `theorem` | [aefinStronglyMeasurable_of_aemeasurable](declarations/aefinstronglymeasurable-of-aemeasurable--d71223b2ff11b4fee84ca8a7.md) | 2028 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `theorem` | [measurable_uncurry_of_continuous_of_measurable](declarations/measurable-uncurry-of-continuous-of-measurable--edba02a1d4a426a9aaadf0a2.md) | 2034 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `theorem` | [stronglyMeasurable_uncurry_of_continuous_of_stronglyMeasurable](declarations/stronglymeasurable-uncurry-of-continuous-of-stronglymeasurable--2b4c81a5a40ae3eebb3d191c.md) | 2066 | `BLOCKED_NATIVE_ADMISSION` |

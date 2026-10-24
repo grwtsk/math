@@ -1,0 +1,130 @@
+# Phi_cancel
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "ff796b0e5ce50fb625a95391f29798f81bd649bf",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 1836,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/38/3861a18c353a028274e3a45d75582be6d4ddc577bafa3a8147f92e32f09635dc.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:3e9f49bb-87f0-fd68-7883-1402dde6b430",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:442a48a2-8d44-fae9-5c95-abf1d9fd9322",
+  "kind": "theorem",
+  "lexical_name": "Phi_cancel",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "phi-cancel--d16cc4e9d583d543c9a99944",
+  "source": {
+    "blob": "ff796b0e5ce50fb625a95391f29798f81bd649bf",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1872,
+    "line": 1836,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/CH2Part1/Variant3861a18c353a028274e3a45d75582be6d4ddc577bafa3a8147f92e32f09635dc.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:d16cc4e9d583d543c9a9994449d99b7d3ff8628976bf07322e96dc3139ac19a7",
+  "verification": {
+    "reference": "docs/verification/Analysis/AsymptoticAnalysis/CH2Part1/Variant3861a18c353a028274e3a45d75582be6d4ddc577bafa3a8147f92e32f09635dc.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:442a48a2-8d44-fae9-5c95-abf1d9fd9322`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1836–1872.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem Phi_cancel (ν ε σ : ℝ) (hν : ν > 0) (hσ : |σ| = 1) :
+    meromorphicOrderAt (fun z ↦ Phi_circ ν ε z + σ * Phi_star ν ε z) ((σ : ℂ) - I * ν / (2 * π)) ≥ 0 := by
+  have hσ : σ = 1 ∨ σ = -1 := by grind
+  obtain ⟨n, rfl, hn_cases⟩ : ∃ n : ℤ, σ = n ∧ n ≠ 0 := by
+    rcases hσ with h | h
+    · exact ⟨1, by exact_mod_cast h, one_ne_zero⟩
+    · exact ⟨-1, by exact_mod_cast h, by norm_num⟩
+  set z₀ : ℂ := n - I * ν / (2 * π)
+  set f := fun z ↦ Phi_circ ν ε z + n * Phi_star ν ε z
+  have h_mero_f : MeromorphicAt f z₀ := by fun_prop [CH2.Phi_circ]
+  have h_tendsto_zero : (nhdsWithin z₀ {z₀}ᶜ).Tendsto (fun z ↦ (z - z₀) * f z) (nhds 0) := by
+    convert Filter.Tendsto.add (Phi_circ.residue ν ε hν n)
+      (Filter.Tendsto.const_mul (n : ℂ) (Phi_star.residue ν ε hν n hn_cases)) using 1
+    · ext z; ring
+    · ring_nf
+      suffices h : (0 : ℂ) = I * (↑π)⁻¹ * (1 / 2) + I * (↑π)⁻¹ * (n : ℂ) ^ 2 * (-1 / 2) by exact congr_arg nhds h
+      have hn_sq : (n : ℂ) ^ 2 = 1 := by
+        exact_mod_cast sq_eq_one_iff.mpr hσ
+      simp only [hn_sq]
+      ring
+  rw [tendsto_zero_iff_meromorphicOrderAt_pos (by fun_prop)] at h_tendsto_zero
+  change 0 < meromorphicOrderAt ((· - z₀) * f) z₀ at h_tendsto_zero
+  rw [meromorphicOrderAt_mul (by fun_prop) h_mero_f] at h_tendsto_zero
+  rw [show meromorphicOrderAt (· - z₀) z₀ = (1 : ℤ) from
+    (meromorphicOrderAt_eq_int_iff (by fun_prop)).mpr ⟨1, analyticAt_const, one_ne_zero, by simp⟩] at h_tendsto_zero
+  change (0 : WithTop ℤ) ≤ meromorphicOrderAt f z₀
+  cases h_ord : meromorphicOrderAt f z₀ <;> simp_all
+  norm_cast at h_tendsto_zero
+  omega
+
+
+@[blueprint
+  "phi-pm-def"
+  (title := "Definition of $\\varphi^{\\pm}$")
+  (statement := /--
+  $$\varphi^{\pm}_\nu(t) := 1_{[-1,1]}(t) ( \Phi^{\pm,\circ}_\nu(t) + \mathrm{sgn}(t) \Phi^{\pm,\ast}_\nu(t) ).$$
+  -/)]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/AsymptoticAnalysis/CH2Part1/Variant3861a18c353a028274e3a45d75582be6d4ddc577bafa3a8147f92e32f09635dc.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/CH2Part1/Variant3861a18c353a028274e3a45d75582be6d4ddc577bafa3a8147f92e32f09635dc.lean#L1836).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ff796b0e5ce50fb625a95391f29798f81bd649bf` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

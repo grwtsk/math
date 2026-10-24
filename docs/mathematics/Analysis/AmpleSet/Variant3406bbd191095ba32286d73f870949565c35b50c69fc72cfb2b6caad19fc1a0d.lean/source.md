@@ -1,0 +1,153 @@
+# Complete source: GRWTSK.Analysis.AmpleSet.Variant3406bbd191095ba32286d73f870949565c35b50c69fc72cfb2b6caad19fc1a0d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8d22d4f940c0ad87f4a1233cda93cf0d62259cbd` · SHA-256 `7266cbded1859dfc9ab241cfe942d1b86286e5e5a0929548805fbfda53f04b57`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.AmpleSet.Variant972da8cca96f054f207e28b69f98be6cd786704eb2fd8f532d8cd94f782bf8c7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"972da8cca96f054f207e28b69f98be6cd786704eb2fd8f532d8cd94f782bf8c7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.AmpleSet.Variant972da8cca96f054f207e28b69f98be6cd786704eb2fd8f532d8cd94f782bf8c7","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"972da8cca96f054f207e28b69f98be6cd786704eb2fd8f532d8cd94f782bf8c7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Analysis/Convex/AmpleSet.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Anatole Dedecker. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Anatole Dedecker, Floris van Doorn
+-/
+import Mathlib.Algebra.CharP.Invertible
+import Mathlib.Analysis.Normed.Module.Convex
+import Mathlib.Analysis.NormedSpace.Connected
+import Mathlib.LinearAlgebra.AffineSpace.ContinuousAffineEquiv
+
+/-!
+# Ample subsets of real vector spaces
+
+In this file we study ample sets in real vector spaces. A set is ample if all its connected
+component have full convex hull. Ample sets are an important ingredient for defining ample
+differential relations.
+
+## Main results
+- `ampleSet_empty` and `ampleSet_univ`: the empty set and `univ` are ample
+- `AmpleSet.union`: the union of two ample sets is ample
+- `AmpleSet.{pre}image`: being ample is invariant under continuous affine equivalences;
+  `AmpleSet.{pre}image_iff` are "iff" versions of these
+- `AmpleSet.vadd`: in particular, ample-ness is invariant under affine translations
+- `AmpleSet.of_one_lt_codim`: a linear subspace of codimension at least two has an ample complement.
+  This is the crucial geometric ingredient which allows to apply convex integration
+  to the theory of immersions in positive codimension.
+
+## Implementation notes
+
+A priori, the definition of ample subset asks for a vector space structure and a topology on the
+ambient type without any link between those structures. In practice, we care most about using these
+for finite dimensional vector spaces with their natural topology.
+
+All vector spaces in the file are real vector spaces. While the definition generalises to other
+connected fields, that is not useful in practice.
+
+## Tags
+ample set
+-/
+
+/-! ## Definition and invariance -/
+
+
+namespace GRWTSK.Analysis.AmpleSet.Variant972da8cca96f054f207e28b69f98be6cd786704eb2fd8f532d8cd94f782bf8c7
+
+open Set
+
+variable {F : Type*} [AddCommGroup F] [Module ℝ F] [TopologicalSpace F]
+
+/-- A subset of a topological real vector space is ample
+if the convex hull of each of its connected components is the full space. -/
+def AmpleSet (s : Set F) : Prop :=
+  ∀ x ∈ s, convexHull ℝ (connectedComponentIn s x) = univ
+
+/-- A whole vector space is ample. -/
+@[simp]
+theorem ampleSet_univ {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F] :
+    AmpleSet (univ : Set F) := by
+  intro x _
+  rw [connectedComponentIn_univ, PreconnectedSpace.connectedComponent_eq_univ, convexHull_univ]
+
+/-- The empty set in a vector space is ample. -/
+@[simp]
+theorem ampleSet_empty : AmpleSet (∅ : Set F) := fun _ ↦ False.elim
+
+namespace AmpleSet
+
+/-- The union of two ample sets is ample. -/
+theorem union {s t : Set F} (hs : AmpleSet s) (ht : AmpleSet t) : AmpleSet (s ∪ t) := by
+  intro x hx
+  rcases hx with (h | h) <;>
+  -- The connected component of `x ∈ s` in `s ∪ t` contains the connected component of `x` in `s`,
+  -- hence is also full; similarly for `t`.
+  [have hx := hs x h; have hx := ht x h] <;>
+  rw [← Set.univ_subset_iff, ← hx] <;>
+  apply convexHull_mono <;>
+  apply connectedComponentIn_mono <;>
+  [apply subset_union_left; apply subset_union_right]
+
+variable {E : Type*} [AddCommGroup E] [Module ℝ E] [TopologicalSpace E]
+
+/-- Images of ample sets under continuous affine equivalences are ample. -/
+theorem image {s : Set E} (h : AmpleSet s) (L : E ≃ᴬ[ℝ] F) :
+    AmpleSet (L '' s) := forall_mem_image.mpr fun x hx ↦
+  calc (convexHull ℝ) (connectedComponentIn (L '' s) (L x))
+    _ = (convexHull ℝ) (L '' (connectedComponentIn s x)) :=
+          .symm <| congrArg _ <| L.toHomeomorph.image_connectedComponentIn hx
+    _ = L '' (convexHull ℝ (connectedComponentIn s x)) :=
+          .symm <| L.toAffineMap.image_convexHull _
+    _ = univ := by rw [h x hx, image_univ, L.surjective.range_eq]
+
+/-- A set is ample iff its image under a continuous affine equivalence is. -/
+theorem image_iff {s : Set E} (L : E ≃ᴬ[ℝ] F) :
+    AmpleSet (L '' s) ↔ AmpleSet s :=
+  ⟨fun h ↦ (L.symm_image_image s) ▸ h.image L.symm, fun h ↦ h.image L⟩
+
+/-- Pre-images of ample sets under continuous affine equivalences are ample. -/
+theorem preimage {s : Set F} (h : AmpleSet s) (L : E ≃ᴬ[ℝ] F) : AmpleSet (L ⁻¹' s) := by
+  rw [← L.image_symm_eq_preimage]
+  exact h.image L.symm
+
+/-- A set is ample iff its pre-image under a continuous affine equivalence is. -/
+theorem preimage_iff {s : Set F} (L : E ≃ᴬ[ℝ] F) :
+    AmpleSet (L ⁻¹' s) ↔ AmpleSet s :=
+  ⟨fun h ↦ L.image_preimage s ▸ h.image L, fun h ↦ h.preimage L⟩
+
+open scoped Pointwise
+
+/-- Affine translations of ample sets are ample. -/
+theorem vadd [ContinuousAdd E] {s : Set E} (h : AmpleSet s) {y : E} :
+    AmpleSet (y +ᵥ s) :=
+  h.image (ContinuousAffineEquiv.constVAdd ℝ E y)
+
+/-- A set is ample iff its affine translation is. -/
+theorem vadd_iff [ContinuousAdd E] {s : Set E} {y : E} :
+    AmpleSet (y +ᵥ s) ↔ AmpleSet s :=
+  AmpleSet.image_iff (ContinuousAffineEquiv.constVAdd ℝ E y)
+
+/-! ## Subspaces of codimension at least two have ample complement -/
+section Codimension
+
+/-- Let `E` be a linear subspace in a real vector space.
+If `E` has codimension at least two, its complement is ample. -/
+theorem of_one_lt_codim [IsTopologicalAddGroup F] [ContinuousSMul ℝ F] {E : Submodule ℝ F}
+    (hcodim : 1 < Module.rank ℝ (F ⧸ E)) :
+    AmpleSet (Eᶜ : Set F) := fun x hx ↦ by
+  rw [E.connectedComponentIn_eq_self_of_one_lt_codim hcodim hx, eq_univ_iff_forall]
+  intro y
+  by_cases h : y ∈ E
+  · obtain ⟨z, hz⟩ : ∃ z, z ∉ E := by
+      rw [← not_forall, ← Submodule.eq_top_iff']
+      rintro rfl
+      simp [rank_zero_iff.2 inferInstance] at hcodim
+    refine segment_subset_convexHull ?_ ?_ (mem_segment_sub_add y z) <;>
+      simpa [sub_eq_add_neg, Submodule.add_mem_iff_right _ h]
+  · exact subset_convexHull ℝ (Eᶜ : Set F) h
+
+end Codimension
+
+end AmpleSet
+```

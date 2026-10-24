@@ -1,0 +1,107 @@
+# Verification target: GRWTSK.Analysis.RealAnalysis.Integration.CDFToKernel.Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8cd17fdc6e66cd0bdf731dea45598795f980162b",
+  "lexical_observation_count": 46,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/index.md) · [Full source](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8cd17fdc6e66cd0bdf731dea45598795f980162b`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IsRatCondKernelCDF](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdf--c988cf9fc582fdb91ae4ef6c.md) | 78 | `declaration-track:c988cf9fc582fdb91ae4ef6c27619db3222f969298ff60cc898907e0801dad61` |
+| 2 | `lemma` | [IsRatCondKernelCDF.mono](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdf-mono--0d27ce40725770a23d9f74fb.md) | 86 | `result-track:0d27ce40725770a23d9f74fb5ed060ffbb130a8a713ddaf3375da1c1101c3a2a` |
+| 3 | `lemma` | [IsRatCondKernelCDF.tendsto_atTop_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdf-tendsto-attop-one--5d8a54a39b32829b48e347ff.md) | 90 | `result-track:5d8a54a39b32829b48e347ff31edc0dd280e1ccca5075c039acaf321e708e4fe` |
+| 4 | `lemma` | [IsRatCondKernelCDF.tendsto_atBot_zero](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdf-tendsto-atbot-zero--f640ff5520a825c7f7c41b72.md) | 94 | `result-track:f640ff5520a825c7f7c41b72ce5db6dc779511bcf11dfd3ef2561ad0742e61ba` |
+| 5 | `lemma` | [IsRatCondKernelCDF.iInf_rat_gt_eq](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdf-iinf-rat-gt-eq--453bcf9fe03bb0c463281900.md) | 98 | `result-track:453bcf9fe03bb0c463281900be7d17a6350a3c377233ff8e0a4d499bd0ba3f57` |
+| 6 | `lemma` | [stieltjesOfMeasurableRat_ae_eq](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/stieltjesofmeasurablerat-ae-eq--a20fa0d5b1d0a1a9c8c876bf.md) | 102 | `result-track:a20fa0d5b1d0a1a9c8c876bf36c3f9f5d9f483eb592548bf0aeead04d0ef7106` |
+| 7 | `lemma` | [setIntegral_stieltjesOfMeasurableRat_rat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setintegral-stieltjesofmeasurablerat-rat--a1f63297a7b2cf34e7ac7456.md) | 107 | `result-track:a1f63297a7b2cf34e7ac7456f97e049e0e2172ee5c0befb87cae318730032a81` |
+| 8 | `lemma` | [setLIntegral_stieltjesOfMeasurableRat_rat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setlintegral-stieltjesofmeasurablerat-rat--2a800f5402fd3e7c69b1611f.md) | 114 | `result-track:2a800f5402fd3e7c69b1611f0130b58a8b4d1a3621ce47a1cec7e6d4ebb72d84` |
+| 9 | `lemma` | [setLIntegral_stieltjesOfMeasurableRat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setlintegral-stieltjesofmeasurablerat--586d48cc296abe77a1282a69.md) | 125 | `result-track:586d48cc296abe77a1282a6950229ef947650772c1862d39b49d7fbb471f0f2d` |
+| 10 | `lemma` | [lintegral_stieltjesOfMeasurableRat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/lintegral-stieltjesofmeasurablerat--2a288a4226ecbfc09b38c8d7.md) | 181 | `result-track:2a288a4226ecbfc09b38c8d786d972168f5137f7a51e010a5a5f8a4055a06e28` |
+| 11 | `lemma` | [integrable_stieltjesOfMeasurableRat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/integrable-stieltjesofmeasurablerat--1bddcb9e0f3f6234360a5bd4.md) | 187 | `result-track:1bddcb9e0f3f6234360a5bd4cbc3c1a4e89835027efd2e88898463329bd9a6e6` |
+| 12 | `lemma` | [setIntegral_stieltjesOfMeasurableRat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setintegral-stieltjesofmeasurablerat--24f5ccbfa1ce7685eefc80bb.md) | 202 | `result-track:24f5ccbfa1ce7685eefc80bbeb3f830d96efca77b2f9defa08bcaa9708db78ec` |
+| 13 | `lemma` | [integral_stieltjesOfMeasurableRat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/integral-stieltjesofmeasurablerat--74a69ae11a12e574f0f7fdee.md) | 214 | `result-track:74a69ae11a12e574f0f7fdeeeac17fbb996547fa0ebfdf79ac1ce4f8f82835b7` |
+| 14 | `structure` | [IsRatCondKernelCDFAux](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux--5705bb8ebd349b07975cdf5e.md) | 229 | `declaration-track:5705bb8ebd349b07975cdf5ea971752a592283b9be6cc188a1109e725c0bea07` |
+| 15 | `lemma` | [IsRatCondKernelCDFAux.measurable_right](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-measurable-right--873a4f31726bc3e229ba8828.md) | 251 | `result-track:873a4f31726bc3e229ba8828e40599eac145c842fe84845f01e041efe52fe0d1` |
+| 16 | `lemma` | [IsRatCondKernelCDFAux.mono](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-mono--eaf55e99ce60b2699b7472f4.md) | 257 | `result-track:eaf55e99ce60b2699b7472f41cc93c834ec384b302be2d13d13a0f742557dd8b` |
+| 17 | `lemma` | [IsRatCondKernelCDFAux.nonneg](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-nonneg--527f0d0695ee170a29b231e7.md) | 263 | `result-track:527f0d0695ee170a29b231e745d6f56a74c0fbc5971a69e27aee06df5f55aba5` |
+| 18 | `lemma` | [IsRatCondKernelCDFAux.le_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-le-one--19513b52aa0bd7c67c5c3e04.md) | 266 | `result-track:19513b52aa0bd7c67c5c3e049fb397192f85c31d7930b249b201285b18d3be50` |
+| 19 | `lemma` | [IsRatCondKernelCDFAux.tendsto_zero_of_antitone](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-tendsto-zero-of-antitone--d817982071d30cb17256e5b8.md) | 269 | `result-track:d817982071d30cb17256e5b84861dd02873e33be5cfb892d76545b01c02b8ebb` |
+| 20 | `lemma` | [IsRatCondKernelCDFAux.tendsto_one_of_monotone](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-tendsto-one-of-monotone--cd4e19ce09c604455952cddc.md) | 280 | `result-track:cd4e19ce09c604455952cddc4b5b90168e61fa5c72bf157a7ae2b2ade008efd9` |
+| 21 | `lemma` | [IsRatCondKernelCDFAux.tendsto_atTop_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-tendsto-attop-one--7811ad7822422cae22aa6f22.md) | 291 | `result-track:7811ad7822422cae22aa6f2250101195b9a43294d35781103a78802b0a4b500f` |
+| 22 | `lemma` | [IsRatCondKernelCDFAux.tendsto_atBot_zero](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-tendsto-atbot-zero--f15a2f8fcb13f6e3ddd84926.md) | 301 | `result-track:f15a2f8fcb13f6e3ddd84926be62e120a030206c7a54614ae238cbc54eaf42c7` |
+| 23 | `lemma` | [IsRatCondKernelCDFAux.bddBelow_range](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-bddbelow-range--789461241c6b85a585f6f660.md) | 314 | `result-track:789461241c6b85a585f6f660bd6cdbd9c66f8d6e8a94d568fbc56244051358cd` |
+| 24 | `lemma` | [IsRatCondKernelCDFAux.integrable_iInf_rat_gt](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-integrable-iinf-rat-gt--7758184978890940308045ab.md) | 320 | `result-track:7758184978890940308045abd93853e461176867eeade20c416fec9ba1d03629` |
+| 25 | `lemma` | [_root_.GRWTSK.Analysis.RealAnalysis.Integration.IsRatCondKernelCDF.Variant849360d552757c37943a0f7b34e37fb172a4e82984327716da7b43eb6e5db4c0.MeasureTheory.Measure.iInf_rat_gt_prod_Iic](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/root-grwtsk-analysis-realanalysis-integration-isratcondkernelcdf-variant--5064e86083f237d6da6720db.md) | 337 | `result-track:5064e86083f237d6da6720db80424d062f755d70c0b4ed7aa5fbaf55e80e0237` |
+| 26 | `lemma` | [IsRatCondKernelCDFAux.setIntegral_iInf_rat_gt](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-setintegral-iinf-rat-gt--839f376466b85a9441f284bd.md) | 352 | `result-track:839f376466b85a9441f284bd3a8ebbceaaa20a4a230db085c8029a23d62498ff` |
+| 27 | `lemma` | [IsRatCondKernelCDFAux.iInf_rat_gt_eq](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-iinf-rat-gt-eq--fe89b66408c472d57e89aa6e.md) | 375 | `result-track:fe89b66408c472d57e89aa6e8436b2809e78e7eb9303f15a8ee7adbb1f4c8efc` |
+| 28 | `lemma` | [IsRatCondKernelCDFAux.isRatStieltjesPoint_ae](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-isratstieltjespoint-ae--b54e95b21d707682658af6b1.md) | 385 | `result-track:b54e95b21d707682658af6b19d20d98129b93601485af240c9134292dfbb549e` |
+| 29 | `lemma` | [IsRatCondKernelCDFAux.isRatCondKernelCDF](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/isratcondkernelcdfaux-isratcondkernelcdf--abeeeb708ee38590fbd712b2.md) | 392 | `result-track:abeeeb708ee38590fbd712b2fafa5a854a4a3bf1a7de964ef94544ae7ee0a532` |
+| 30 | `structure` | [IsCondKernelCDF](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf--d0c528dbc5336a72a4ae2ec1.md) | 410 | `declaration-track:d0c528dbc5336a72a4ae2ec1576c1da576d64d724ef943e2d7f34c704fe26783` |
+| 31 | `lemma` | [IsCondKernelCDF.nonneg](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-nonneg--b4df3d956bbc40dfe95f7a00.md) | 419 | `result-track:b4df3d956bbc40dfe95f7a001db9c4319ef7e3e2a1829a3d2cc308d746d99e42` |
+| 32 | `lemma` | [IsCondKernelCDF.le_one](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-le-one--492ff59c13c1f4cd9c14a66a.md) | 422 | `result-track:492ff59c13c1f4cd9c14a66af343ba0340e87458b9d7c7205841213547a1e33a` |
+| 33 | `lemma` | [IsCondKernelCDF.integral](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-integral--89c4110ddcbb36434a7962a4.md) | 425 | `result-track:89c4110ddcbb36434a7962a47dedbd95de0a8627398436b56bc4edc7cc973d7a` |
+| 34 | `lemma` | [IsCondKernelCDF.setLIntegral](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-setlintegral--b7bdbd965b68dc28e54cd77f.md) | 430 | `result-track:b7bdbd965b68dc28e54cd77f1333fed605f71ee92c7c7e571f3e2fc851eed05e` |
+| 35 | `lemma` | [IsCondKernelCDF.lintegral](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-lintegral--11e53689b1d7825f63dada76.md) | 437 | `result-track:11e53689b1d7825f63dada768853c88b9ea6a77b408eb0b004bbec9269333b09` |
+| 36 | `lemma` | [isCondKernelCDF_stieltjesOfMeasurableRat](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-stieltjesofmeasurablerat--da8ed39fc8c2079edf30986b.md) | 442 | `result-track:da8ed39fc8c2079edf30986b9f67301010706c79e2c3e4595b6897548ee7d3eb` |
+| 37 | `def` | [IsCondKernelCDF.toKernel](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-tokernel--b75af90f95b15fac1ae771ab.md) | 461 | `declaration-track:b75af90f95b15fac1ae771ab1ba9f9ae8c6965e2d6561324f55f50160cf0a776` |
+| 38 | `lemma` | [IsCondKernelCDF.toKernel_apply](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-tokernel-apply--bd62931a9c69eea7565a5656.md) | 467 | `result-track:bd62931a9c69eea7565a56560b8218aa6e58c9a3a632f54d29a157b77f126d96` |
+| 39 | `instance` | [instIsMarkovKernel_toKernel](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/instismarkovkernel-tokernel--1da7750440c4699208b9615d.md) | 470 | `declaration-track:1da7750440c4699208b9615d7ca104df46c6e962b1c862cc4f8082a78b44a4e5` |
+| 40 | `lemma` | [IsCondKernelCDF.toKernel_Iic](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/iscondkernelcdf-tokernel-iic--70d084aa4c156e2e8f124b54.md) | 474 | `result-track:70d084aa4c156e2e8f124b5432f096fb4478aefe8f3ac9ee51b8e7e1d46cba7c` |
+| 41 | `lemma` | [setLIntegral_toKernel_Iic](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setlintegral-tokernel-iic--1d86ddf21130bdda6035bc18.md) | 485 | `result-track:1d86ddf21130bdda6035bc1877ce2b4acab591523195d211b0923906ce5efca5` |
+| 42 | `lemma` | [setLIntegral_toKernel_univ](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setlintegral-tokernel-univ--b4cc54f77864bb77bab9b36c.md) | 491 | `result-track:b4cc54f77864bb77bab9b36c80cac46e49e2f9cd51f68062c093497628c3b8fe` |
+| 43 | `lemma` | [lintegral_toKernel_univ](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/lintegral-tokernel-univ--37f024a04b59466759647149.md) | 510 | `result-track:37f024a04b59466759647149e80027dc12a609856676f0d01381d8065fb43363` |
+| 44 | `lemma` | [setLIntegral_toKernel_prod](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/setlintegral-tokernel-prod--bfe8f3cf6083f33e410a9210.md) | 514 | `result-track:bfe8f3cf6083f33e410a9210d18241fac80bd0a2e3e00d6d07de8077de5ce66c` |
+| 45 | `lemma` | [lintegral_toKernel_mem](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/lintegral-tokernel-mem--9ebb57c36f8ca75f89050999.md) | 555 | `result-track:9ebb57c36f8ca75f89050999f8bda38a1c7874ff4f75d90b279e39795fe96b3d` |
+| 46 | `lemma` | [compProd_toKernel](../../../../../../mathematics/Analysis/RealAnalysis/Integration/CDFToKernel/Variant7f24b5a7a741f2bbefa5328e12cb8178b6ed7940f125796abfe8219ba1338017.lean/declarations/compprod-tokernel--661ec729e852867a2b65574e.md) | 620 | `result-track:661ec729e852867a2b65574e40356ba2f9c6f5e406729c475994217d4b6e1cc3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

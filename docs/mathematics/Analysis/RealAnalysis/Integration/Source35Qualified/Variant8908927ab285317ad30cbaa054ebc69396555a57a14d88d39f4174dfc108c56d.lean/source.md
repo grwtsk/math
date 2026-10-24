@@ -1,0 +1,29 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.Source35Qualified.Variant8908927ab285317ad30cbaa054ebc69396555a57a14d88d39f4174dfc108c56d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `482a1442d000fa746530d680c16f767280e44c85` · SHA-256 `8908927ab285317ad30cbaa054ebc69396555a57a14d88d39f4174dfc108c56d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceRestrictedLowTimeWork
+
+open FormalResearch.RiemannHypothesis.SourceRestrictedLowTimeWork
+
+#print actualLowTimeProfile
+#print actualLowMixedWorkDensity
+#print remainingOverlapBalance
+#print actual39_cell_kernel_restricted_integrable
+#print restricted_cell_fubini_factorization
+#print restricted_actual_low_sector_abs_le
+#print actual_source_low_sector_abs_le
+#print actual_derivative_low_sector_abs_le
+#print actualLowMixedWorkDensity_integrable
+#print actual_low_mixed_restricted_abs_le_margin
+#print actual_left_strip_high_time_source_atoms_zero
+#print actual_density_eq_low_density_on_left_strip
+#print actual_retained_spatial_strip_abs_le_margin
+#print actual_surplus_eq_remainingOverlap_sub_strip
+#print actual_surplus_le_remainingOverlap_add_margin
+#print remainingOverlap_le_actual_surplus_add_margin
+#print actual_eventual_surplus_bound_iff_remainingOverlap_bound
+```

@@ -1,0 +1,137 @@
+# Complete source: GRWTSK.Analysis.FunctionalAnalysis.CatalanJacobiTransferAudit.Variant2f63fc2502e341c3922d7bd8e93f3320c72f61467d66be73e362d857150572e0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1105d70160fecbf74b3e215da541ba52c904e6f9` · SHA-256 `2f63fc2502e341c3922d7bd8e93f3320c72f61467d66be73e362d857150572e0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.PositiveAtlas.Spectral.JacobiCocycle
+set_option pp.proofs false
+
+#print FormalResearch.PositiveAtlas.Spectral.schrodingerTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.schrodingerTransfer
+#print FormalResearch.PositiveAtlas.Spectral.rawState
+#print axioms FormalResearch.PositiveAtlas.Spectral.rawState
+#print FormalResearch.PositiveAtlas.Spectral.schrodinger_recurrence_iff_transfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.schrodinger_recurrence_iff_transfer
+#print FormalResearch.PositiveAtlas.Spectral.det_schrodingerTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.det_schrodingerTransfer
+#print FormalResearch.PositiveAtlas.Spectral.schrodingerSL
+#print axioms FormalResearch.PositiveAtlas.Spectral.schrodingerSL
+#print FormalResearch.PositiveAtlas.Spectral.rawJacobiTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.rawJacobiTransfer
+#print FormalResearch.PositiveAtlas.Spectral.jacobiRecurrence
+#print axioms FormalResearch.PositiveAtlas.Spectral.jacobiRecurrence
+#print FormalResearch.PositiveAtlas.Spectral.jacobi_recurrence_iff_solved
+#print axioms FormalResearch.PositiveAtlas.Spectral.jacobi_recurrence_iff_solved
+#print FormalResearch.PositiveAtlas.Spectral.jacobi_recurrence_iff_raw_transfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.jacobi_recurrence_iff_raw_transfer
+#print FormalResearch.PositiveAtlas.Spectral.det_rawJacobiTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.det_rawJacobiTransfer
+#print FormalResearch.PositiveAtlas.Spectral.weightedState
+#print axioms FormalResearch.PositiveAtlas.Spectral.weightedState
+#print FormalResearch.PositiveAtlas.Spectral.weightedJacobiTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.weightedJacobiTransfer
+#print FormalResearch.PositiveAtlas.Spectral.jacobi_recurrence_iff_weighted_transfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.jacobi_recurrence_iff_weighted_transfer
+#print FormalResearch.PositiveAtlas.Spectral.det_weightedJacobiTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.det_weightedJacobiTransfer
+#print FormalResearch.PositiveAtlas.Spectral.weightedJacobiSL
+#print axioms FormalResearch.PositiveAtlas.Spectral.weightedJacobiSL
+#print FormalResearch.PositiveAtlas.Spectral.weightedJacobiTransfer_schrodinger
+#print axioms FormalResearch.PositiveAtlas.Spectral.weightedJacobiTransfer_schrodinger
+#print FormalResearch.PositiveAtlas.Spectral.rawJacobiTransfer_schrodinger
+#print axioms FormalResearch.PositiveAtlas.Spectral.rawJacobiTransfer_schrodinger
+#print FormalResearch.PositiveAtlas.Spectral.stateWeightingMatrix
+#print axioms FormalResearch.PositiveAtlas.Spectral.stateWeightingMatrix
+#print FormalResearch.PositiveAtlas.Spectral.stateWeightingMatrix_mulVec
+#print axioms FormalResearch.PositiveAtlas.Spectral.stateWeightingMatrix_mulVec
+#print FormalResearch.PositiveAtlas.Spectral.weighted_raw_intertwining
+#print axioms FormalResearch.PositiveAtlas.Spectral.weighted_raw_intertwining
+#print FormalResearch.PositiveAtlas.Spectral.rawSequenceState
+#print axioms FormalResearch.PositiveAtlas.Spectral.rawSequenceState
+#print FormalResearch.PositiveAtlas.Spectral.weightedSequenceState
+#print axioms FormalResearch.PositiveAtlas.Spectral.weightedSequenceState
+#print FormalResearch.PositiveAtlas.Spectral.schrodinger_sequence_iff_transfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.schrodinger_sequence_iff_transfer
+#print FormalResearch.PositiveAtlas.Spectral.jacobi_sequence_iff_raw_transfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.jacobi_sequence_iff_raw_transfer
+#print FormalResearch.PositiveAtlas.Spectral.jacobi_sequence_iff_weighted_transfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.jacobi_sequence_iff_weighted_transfer
+#print FormalResearch.PositiveAtlas.Spectral.rawJacobiTransfer_not_det_one
+#print axioms FormalResearch.PositiveAtlas.Spectral.rawJacobiTransfer_not_det_one
+#print FormalResearch.PositiveAtlas.Spectral.schrodinger_same_SL_syntax_not_equal
+#print axioms FormalResearch.PositiveAtlas.Spectral.schrodinger_same_SL_syntax_not_equal
+#print FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi
+#print axioms FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi
+#print FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi_cyclic
+#print axioms FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi_cyclic
+#print FormalResearch.PositiveAtlas.Spectral.cyclic_coefficient_zero_without_zero_eigenvector
+#print axioms FormalResearch.PositiveAtlas.Spectral.cyclic_coefficient_zero_without_zero_eigenvector
+#print FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi_first_three_moments_match
+#print axioms FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi_first_three_moments_match
+#print FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi_not_conjugate
+#print axioms FormalResearch.PositiveAtlas.Spectral.twoSiteJacobi_not_conjugate
+#print FormalResearch.PositiveAtlas.Spectral.orderedProduct
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedProduct
+#print FormalResearch.PositiveAtlas.Spectral.orderedProduct_zero
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedProduct_zero
+#print FormalResearch.PositiveAtlas.Spectral.orderedProduct_succ
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedProduct_succ
+#print FormalResearch.PositiveAtlas.Spectral.orderedProduct_add
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedProduct_add
+#print FormalResearch.PositiveAtlas.Spectral.orderedTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedTransfer
+#print FormalResearch.PositiveAtlas.Spectral.state_eq_orderedProduct_mulVec
+#print axioms FormalResearch.PositiveAtlas.Spectral.state_eq_orderedProduct_mulVec
+#print FormalResearch.PositiveAtlas.Spectral.state_eq_orderedTransfer_mulVec
+#print axioms FormalResearch.PositiveAtlas.Spectral.state_eq_orderedTransfer_mulVec
+#print FormalResearch.PositiveAtlas.Spectral.det_orderedProduct_eq_one
+#print axioms FormalResearch.PositiveAtlas.Spectral.det_orderedProduct_eq_one
+#print FormalResearch.PositiveAtlas.Spectral.det_weightedJacobi_orderedProduct
+#print axioms FormalResearch.PositiveAtlas.Spectral.det_weightedJacobi_orderedProduct
+#print FormalResearch.PositiveAtlas.Spectral.cocycleProduct
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleProduct
+#print FormalResearch.PositiveAtlas.Spectral.cocycleProduct_zero
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleProduct_zero
+#print FormalResearch.PositiveAtlas.Spectral.cocycleProduct_succ
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleProduct_succ
+#print FormalResearch.PositiveAtlas.Spectral.cocycleProduct_eq_orderedProduct
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleProduct_eq_orderedProduct
+#print FormalResearch.PositiveAtlas.Spectral.cocycleProduct_add
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleProduct_add
+#print FormalResearch.PositiveAtlas.Spectral.cocycleGaugeTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleGaugeTransfer
+#print FormalResearch.PositiveAtlas.Spectral.cocycleProduct_gauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.cocycleProduct_gauge
+#print FormalResearch.PositiveAtlas.Spectral.gaugeTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.gaugeTransfer
+#print FormalResearch.PositiveAtlas.Spectral.gaugeState
+#print axioms FormalResearch.PositiveAtlas.Spectral.gaugeState
+#print FormalResearch.PositiveAtlas.Spectral.gaugeState_step_iff
+#print axioms FormalResearch.PositiveAtlas.Spectral.gaugeState_step_iff
+#print FormalResearch.PositiveAtlas.Spectral.orderedProduct_gaugeTransfer
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedProduct_gaugeTransfer
+#print FormalResearch.PositiveAtlas.Spectral.orderedProduct_eq_of_gaugeTransfer_eq
+#print axioms FormalResearch.PositiveAtlas.Spectral.orderedProduct_eq_of_gaugeTransfer_eq
+#print FormalResearch.PositiveAtlas.Spectral.recursiveGauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.recursiveGauge
+#print FormalResearch.PositiveAtlas.Spectral.recursiveGauge_zero
+#print axioms FormalResearch.PositiveAtlas.Spectral.recursiveGauge_zero
+#print FormalResearch.PositiveAtlas.Spectral.recursiveGauge_succ
+#print axioms FormalResearch.PositiveAtlas.Spectral.recursiveGauge_succ
+#print FormalResearch.PositiveAtlas.Spectral.gaugeTransfer_recursiveGauge
+#print axioms FormalResearch.PositiveAtlas.Spectral.gaugeTransfer_recursiveGauge
+#print FormalResearch.PositiveAtlas.Spectral.unrestricted_oneSided_gauge_exists
+#print axioms FormalResearch.PositiveAtlas.Spectral.unrestricted_oneSided_gauge_exists
+#print FormalResearch.PositiveAtlas.Spectral.recursiveGauge_const_identity
+#print axioms FormalResearch.PositiveAtlas.Spectral.recursiveGauge_const_identity
+#print FormalResearch.PositiveAtlas.Spectral.expandingSL
+#print axioms FormalResearch.PositiveAtlas.Spectral.expandingSL
+#print FormalResearch.PositiveAtlas.Spectral.recursiveGauge_expanding_entry
+#print axioms FormalResearch.PositiveAtlas.Spectral.recursiveGauge_expanding_entry
+#print FormalResearch.PositiveAtlas.Spectral.recursiveGauge_expanding_entry_unbounded
+#print axioms FormalResearch.PositiveAtlas.Spectral.recursiveGauge_expanding_entry_unbounded
+#print FormalResearch.PositiveAtlas.Spectral.schrodinger_transfer_order_matters
+#print axioms FormalResearch.PositiveAtlas.Spectral.schrodinger_transfer_order_matters
+```

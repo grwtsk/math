@@ -1,0 +1,114 @@
+# Complete source: GRWTSK.Analysis.AsymptoticAnalysis.SumPrimeReciprocals.Variant3016fcbcf10282c475b6b8ad1b6d010b0360078213ca30604617b2a74fe8a114
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f40f04889c9e0c1073bc67f2ec6176f582295b1` · SHA-256 `609e3999f2af96ac116736626f95fdba19753023f7a7bb8786310417dd2666de`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.AsymptoticAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.AsymptoticAnalysis.NatRoughNumbersUpToCardLePrime.Variant1d5d1c44e87a67cc03e114911c732474f84f09b22b2acdd498ee3731aa355f20","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1d5d1c44e87a67cc03e114911c732474f84f09b22b2acdd498ee3731aa355f20","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.AsymptoticsAndSeries.SourceCorpus.NatRoughNumbersUpToCardLePrime.Variant1d5d1c44e87a67cc03e114911c732474f84f09b22b2acdd498ee3731aa355f20","mathematical_subject":"Analysis.AsymptoticsAndSeries","original_sha256":"1d5d1c44e87a67cc03e114911c732474f84f09b22b2acdd498ee3731aa355f20","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/NumberTheory/SumPrimeReciprocals.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Michael Stoll. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Michael Stoll
+-/
+import Mathlib.Algebra.Order.Group.Indicator
+import Mathlib.Analysis.PSeries
+import Mathlib.NumberTheory.SmoothNumbers
+
+/-!
+# The sum of the reciprocals of the primes diverges
+
+We show that the sum of `1/p`, where `p` runs through the prime numbers, diverges.
+We follow the elementary proof by Erdős that is reproduced in "Proofs from THE BOOK".
+There are two versions of the main result: `not_summable_one_div_on_primes`, which
+expresses the sum as a sub-sum of the harmonic series, and `Nat.Primes.not_summable_one_div`,
+which writes it as a sum over `Nat.Primes`. We also show that the sum of `p^r` for `r : ℝ`
+converges if and only if `r < -1`; see `Nat.Primes.summable_rpow`.
+
+## References
+
+See the sixth proof for the infinity of primes in Chapter 1 of [aigner1999proofs].
+The proof is due to Erdős.
+-/
+
+
+namespace GRWTSK.Analysis.AsymptoticAnalysis.NatRoughNumbersUpToCardLePrime.Variant1d5d1c44e87a67cc03e114911c732474f84f09b22b2acdd498ee3731aa355f20
+
+open Set Nat
+open scoped Topology
+
+/-- The cardinality of the set of `k`-rough numbers `≤ N` is bounded by `N` times the sum
+of `1/p` over the primes `k ≤ p ≤ N`. -/
+-- This needs `Mathlib/Analysis/RCLike/Basic.lean`, so we put it here
+-- instead of in `Mathlib/NumberTheory/SmoothNumbers.lean`.
+lemma Nat.roughNumbersUpTo_card_le' (N k : ℕ) :
+    (roughNumbersUpTo N k).card ≤
+      N * (N.succ.primesBelow \ k.primesBelow).sum (fun p ↦ (1 : ℝ) / p) := by
+  simp_rw [Finset.mul_sum, mul_one_div]
+  exact (Nat.cast_le.mpr <| roughNumbersUpTo_card_le N k).trans <|
+    (cast_sum (β := ℝ) ..) ▸ Finset.sum_le_sum fun n _ ↦ cast_div_le
+
+/-- The sum over primes `k ≤ p ≤ 4^(π(k-1)+1)` over `1/p` (as a real number) is at least `1/2`. -/
+lemma one_half_le_sum_primes_ge_one_div (k : ℕ) :
+    1 / 2 ≤ ∑ p ∈ (4 ^ (k.primesBelow.card + 1)).succ.primesBelow \ k.primesBelow,
+      (1 / p : ℝ) := by
+  set m : ℕ := 2 ^ k.primesBelow.card
+  set N₀ : ℕ := 2 * m ^ 2 with hN₀
+  let S : ℝ := ((2 * N₀).succ.primesBelow \ k.primesBelow).sum (fun p ↦ (1 / p : ℝ))
+  suffices 1 / 2 ≤ S by
+    convert this using 5
+    rw [show 4 = 2 ^ 2 by norm_num, pow_right_comm]
+    ring
+  suffices 2 * N₀ ≤ m * (2 * N₀).sqrt + 2 * N₀ * S by
+    rwa [hN₀, ← mul_assoc, ← pow_two 2, ← mul_pow, sqrt_eq', ← sub_le_iff_le_add',
+      cast_mul, cast_mul, cast_pow, cast_two,
+      show (2 * (2 * m ^ 2) - m * (2 * m) : ℝ) = 2 * (2 * m ^ 2) * (1 / 2) by ring,
+      _root_.mul_le_mul_left <| by positivity] at this
+  calc (2 * N₀ : ℝ)
+    _ = ((2 * N₀).smoothNumbersUpTo k).card + ((2 * N₀).roughNumbersUpTo k).card := by
+        exact_mod_cast ((2 * N₀).smoothNumbersUpTo_card_add_roughNumbersUpTo_card k).symm
+    _ ≤ m * (2 * N₀).sqrt + ((2 * N₀).roughNumbersUpTo k).card := by
+        exact_mod_cast Nat.add_le_add_right ((2 * N₀).smoothNumbersUpTo_card_le k) _
+    _ ≤ m * (2 * N₀).sqrt + 2 * N₀ * S := add_le_add_left ?_ _
+  exact_mod_cast roughNumbersUpTo_card_le' (2 * N₀) k
+
+/-- The sum over the reciprocals of the primes diverges. -/
+theorem not_summable_one_div_on_primes :
+    ¬ Summable (indicator {p | p.Prime} (fun n : ℕ ↦ (1 : ℝ) / n)) := by
+  intro h
+  obtain ⟨k, hk⟩ := h.nat_tsum_vanishing (Iio_mem_nhds one_half_pos : Iio (1 / 2 : ℝ) ∈ 𝓝 0)
+  specialize hk ({p | Nat.Prime p} ∩ {p | k ≤ p}) inter_subset_right
+  rw [tsum_subtype, indicator_indicator, inter_eq_left.mpr fun n hn ↦ hn.1, mem_Iio] at hk
+  have h' : Summable (indicator ({p | Nat.Prime p} ∩ {p | k ≤ p}) fun n ↦ (1 : ℝ) / n) := by
+    convert h.indicator {n : ℕ | k ≤ n} using 1
+    simp only [indicator_indicator, inter_comm]
+  refine ((one_half_le_sum_primes_ge_one_div k).trans_lt <| LE.le.trans_lt ?_ hk).false
+  convert Summable.sum_le_tsum (primesBelow ((4 ^ (k.primesBelow.card + 1)).succ) \ primesBelow k)
+    (fun n _ ↦ indicator_nonneg (fun p _ ↦ by positivity) _) h' using 2 with p hp
+  obtain ⟨hp₁, hp₂⟩ := mem_setOf_eq ▸ Finset.mem_sdiff.mp hp
+  have hpp := prime_of_mem_primesBelow hp₁
+  refine (indicator_of_mem (mem_def.mpr ⟨hpp, ?_⟩) fun n : ℕ ↦ (1 / n : ℝ)).symm
+  exact not_lt.mp <| (not_and_or.mp <| (not_congr mem_primesBelow).mp hp₂).neg_resolve_right hpp
+
+/-- The sum over the reciprocals of the primes diverges. -/
+theorem Nat.Primes.not_summable_one_div : ¬ Summable (fun p : Nat.Primes ↦ (1 / p : ℝ)) := by
+  convert summable_subtype_iff_indicator.mp.mt not_summable_one_div_on_primes
+
+/-- The series over `p^r` for primes `p` converges if and only if `r < -1`. -/
+theorem Nat.Primes.summable_rpow {r : ℝ} :
+    Summable (fun p : Nat.Primes ↦ (p : ℝ) ^ r) ↔ r < -1 := by
+  by_cases h : r < -1
+  · -- case `r < -1`
+    simp only [h, iff_true]
+    exact (Real.summable_nat_rpow.mpr h).subtype _
+  · -- case `-1 ≤ r`
+    simp only [h, iff_false]
+    refine fun H ↦ Nat.Primes.not_summable_one_div <| H.of_nonneg_of_le (fun _ ↦ by positivity) ?_
+    intro p
+    rw [one_div, ← Real.rpow_neg_one]
+    exact Real.rpow_le_rpow_of_exponent_le (by exact_mod_cast p.prop.one_lt.le) <| not_lt.mp h
+```

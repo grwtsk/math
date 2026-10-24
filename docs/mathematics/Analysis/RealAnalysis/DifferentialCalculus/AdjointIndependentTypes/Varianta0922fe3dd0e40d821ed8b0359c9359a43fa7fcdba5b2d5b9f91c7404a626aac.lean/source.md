@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.AdjointIndependentTypes.Varianta0922fe3dd0e40d821ed8b0359c9359a43fa7fcdba5b2d5b9f91c7404a626aac
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4b251ce8296c345aefdd43642af71615ca3085b3` · SHA-256 `a0922fe3dd0e40d821ed8b0359c9359a43fa7fcdba5b2d5b9f91c7404a626aac`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdjointAbelPrimitives
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualAdjointAbelPrimitives
+#check actualTimeLower
+#print axioms actualTimeLower
+#check actualColumnUpper
+#print axioms actualColumnUpper
+#check actualLogColumnPrefix
+#print axioms actualLogColumnPrefix
+#check actualAdjointTimePrimitive
+#print axioms actualAdjointTimePrimitive
+#check actualAdjointColumnPrimitive
+#print axioms actualAdjointColumnPrimitive
+#check actualAdjointTimePrimitive_abs_le
+#print axioms actualAdjointTimePrimitive_abs_le
+#check actualLogColumnPrefix_measurable
+#print axioms actualLogColumnPrefix_measurable
+#check actualLogColumnPrefix_abs_le
+#print axioms actualLogColumnPrefix_abs_le
+#check actualAdjointColumnPrimitive_abs_le
+#print axioms actualAdjointColumnPrimitive_abs_le
+#check actualAdjointTimePrimitive_at_lower
+#print axioms actualAdjointTimePrimitive_at_lower
+#check actualAdjointColumnPrimitive_at_upper
+#print axioms actualAdjointColumnPrimitive_at_upper
+#check actualLogColumnPrefix_on_cell
+#print axioms actualLogColumnPrefix_on_cell
+#check actualAdjointTimePrimitive_absolutelyContinuous
+#print axioms actualAdjointTimePrimitive_absolutelyContinuous
+#check actualAdjointTimePrimitive_ae_hasDerivAt
+#print axioms actualAdjointTimePrimitive_ae_hasDerivAt
+#check actualAdjointColumnPrimitive_absolutelyContinuous
+#print axioms actualAdjointColumnPrimitive_absolutelyContinuous
+#check actualAdjointColumnPrimitive_ae_hasDerivAt
+#print axioms actualAdjointColumnPrimitive_ae_hasDerivAt
+#check actual_time_covariant_abel
+#print axioms actual_time_covariant_abel
+#check actual_column_covariant_abel
+#print axioms actual_column_covariant_abel
+```

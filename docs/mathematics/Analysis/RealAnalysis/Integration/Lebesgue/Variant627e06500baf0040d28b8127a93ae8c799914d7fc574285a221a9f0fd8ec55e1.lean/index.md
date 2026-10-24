@@ -1,0 +1,224 @@
+# GRWTSK.Analysis.RealAnalysis.Integration.Lebesgue.Variant627e06500baf0040d28b8127a93ae8c799914d7fc574285a221a9f0fd8ec55e1
+
+[Complete source index](../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**203 observed declarations and anonymous commands**, 201 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/Lebesgue/Variant627e06500baf0040d28b8127a93ae8c799914d7fc574285a221a9f0fd8ec55e1.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `36852aae1b786e2c3955ba9e963b7eae7ca6e3f3`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/RealAnalysis/Integration/Lebesgue/Variant627e06500baf0040d28b8127a93ae8c799914d7fc574285a221a9f0fd8ec55e1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [SimpleFunc.lintegral_eq_lintegral](declarations/simplefunc-lintegral-eq-lintegral--dbc6363901e0fecf94eeec15.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [lintegral_mono'](declarations/lintegral-mono--61a32ce9a1566c83fb39c71d.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [lintegral_mono](declarations/lintegral-mono--f2094f4aa4edb848ad753ea1.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [lintegral_mono_nnreal](declarations/lintegral-mono-nnreal--8840e4e3ba56a0b360edcc3f.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [iSup_lintegral_measurable_le_eq_lintegral](declarations/isup-lintegral-measurable-le-eq-lintegral--42354a9bd15575827ba2e43f.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [lintegral_mono_set](declarations/lintegral-mono-set--c29ab80bb170a8cec7e7bfc5.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [lintegral_mono_set'](declarations/lintegral-mono-set--aa5c961a2a32cba7e7c7d638.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [monotone_lintegral](declarations/monotone-lintegral--3e8a05375406f4824bd8c222.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [lintegral_const](declarations/lintegral-const--05f4536421d5cf64dc4fa413.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [lintegral_zero](declarations/lintegral-zero--bf2afa61dd4f617e670aa683.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [lintegral_zero_fun](declarations/lintegral-zero-fun--4364b8dd49ae2e9e4ee37e2d.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [lintegral_one](declarations/lintegral-one--d78eb31f02b033187ce7a2a1.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [set_lintegral_const](declarations/set-lintegral-const--6a50a707794a9d1c6e1fd799.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [set_lintegral_one](declarations/set-lintegral-one--f75a697fd1811f8d951cf4a7.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [set_lintegral_const_lt_top](declarations/set-lintegral-const-lt-top--c1a3ccd870db06e5f52c2fd4.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [lintegral_const_lt_top](declarations/lintegral-const-lt-top--817336b7d79c9fbcc4bac033.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [exists_measurable_le_lintegral_eq](declarations/exists-measurable-le-lintegral-eq--8557bb2e395522b49b408d78.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [lintegral_eq_nnreal](declarations/lintegral-eq-nnreal--5903de39e2485cbece213de9.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [exists_simpleFunc_forall_lintegral_sub_lt_of_pos](declarations/exists-simplefunc-forall-lintegral-sub-lt-of-pos--4ffc0182a823fe783c85bfa0.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [iSup_lintegral_le](declarations/isup-lintegral-le--e5e3e445bbf3976467e40ce4.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [iSup₂_lintegral_le](declarations/isup-lintegral-le--bf7406c1aa4e74a009d93051.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [le_iInf_lintegral](declarations/le-iinf-lintegral--61b95b42b71f2d74b17787ae.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [le_iInf₂_lintegral](declarations/le-iinf-lintegral--777b0328d753f6825cb8e51a.md) | 256 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [lintegral_mono_ae](declarations/lintegral-mono-ae--8f9983c601225771796d2429.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [set_lintegral_mono_ae](declarations/set-lintegral-mono-ae--d0ccbafd1ef30a570c2b6491.md) | 276 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [set_lintegral_mono](declarations/set-lintegral-mono--d36472755f7ee288b62b302c.md) | 281 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [set_lintegral_mono_ae'](declarations/set-lintegral-mono-ae--7c14cccbc62b6c53b95a0d83.md) | 286 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [set_lintegral_mono'](declarations/set-lintegral-mono--65bb5690d4646d65ed282fa3.md) | 290 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [lintegral_congr_ae](declarations/lintegral-congr-ae--ab9dbb55ea11be442c8a15ad.md) | 294 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [lintegral_congr](declarations/lintegral-congr--7e5bef22bba0e941da4cb492.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [set_lintegral_congr](declarations/set-lintegral-congr--4ba31e0905dd26bd747c32c4.md) | 302 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [set_lintegral_congr_fun](declarations/set-lintegral-congr-fun--a71fc185f81919e742b3d55c.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [lintegral_ofReal_le_lintegral_nnnorm](declarations/lintegral-ofreal-le-lintegral-nnnorm--2f0d224d21f67651fb66e519.md) | 313 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [lintegral_nnnorm_eq_of_ae_nonneg](declarations/lintegral-nnnorm-eq-of-ae-nonneg--fe19bc4b0dc4f1fac8f17879.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [lintegral_nnnorm_eq_of_nonneg](declarations/lintegral-nnnorm-eq-of-nonneg--6791ca3a4877dc6ecfc9246a.md) | 328 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [lintegral_iSup](declarations/lintegral-isup--2000781bf14f1f960233faa8.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [lintegral_iSup'](declarations/lintegral-isup--cbb2e68dda6cc75523efc4df.md) | 407 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [lintegral_tendsto_of_tendsto_of_monotone](declarations/lintegral-tendsto-of-tendsto-of-monotone--e189bc70a98452537c37895e.md) | 426 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [lintegral_eq_iSup_eapprox_lintegral](declarations/lintegral-eq-isup-eapprox-lintegral--19124ef0c0c992abc9867cf7.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [exists_pos_set_lintegral_lt_of_measure_lt](declarations/exists-pos-set-lintegral-lt-of-measure-lt--7675740ddadc2f3716654358.md) | 458 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [tendsto_set_lintegral_zero](declarations/tendsto-set-lintegral-zero--624c3babf7f4d773cb74d8c3.md) | 490 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [le_lintegral_add](declarations/le-lintegral-add--f5b340f04aca6e43cbc07962.md) | 502 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [lintegral_add_aux](declarations/lintegral-add-aux--2a9bbbeff279598a81072913.md) | 511 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [lintegral_add_left](declarations/lintegral-add-left--1075d657b68715fbbc61b9a9.md) | 545 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [lintegral_add_left'](declarations/lintegral-add-left--e47f23b58dd1ea24fbc89144.md) | 557 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [lintegral_add_right'](declarations/lintegral-add-right--c745bdf48ac77b207756cc0c.md) | 563 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [lintegral_add_right](declarations/lintegral-add-right--de1e64826b6b8b5eb27c1418.md) | 572 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [lintegral_smul_measure](declarations/lintegral-smul-measure--c9e4c95abcfb379eb8ef8ba5.md) | 578 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [lintegral_sum_measure](declarations/lintegral-sum-measure--057d53b4a4b99b90a5cf2904.md) | 583 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [hasSum_lintegral_measure](declarations/hassum-lintegral-measure--03eaa332dd5e16f233fce323.md) | 600 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [lintegral_add_measure](declarations/lintegral-add-measure--c850fe2ecf16660a83a4d00c.md) | 606 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [lintegral_finset_sum_measure](declarations/lintegral-finset-sum-measure--7a53e8edd2179b054dc567f7.md) | 612 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [lintegral_zero_measure](declarations/lintegral-zero-measure--ffe018b286f1d4d79a018b94.md) | 619 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [set_lintegral_empty](declarations/set-lintegral-empty--c8cee46e1cbffed16b75b987.md) | 624 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [set_lintegral_univ](declarations/set-lintegral-univ--717293b2742056713dd89338.md) | 628 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [set_lintegral_measure_zero](declarations/set-lintegral-measure-zero--329a6a865bcc44f4d8c515b6.md) | 632 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [lintegral_finset_sum'](declarations/lintegral-finset-sum--43a6dc953c313d06bb33983c.md) | 638 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [lintegral_finset_sum](declarations/lintegral-finset-sum--42aa3a8825610e1d2db722ea.md) | 648 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [lintegral_const_mul](declarations/lintegral-const-mul--70d7e1284e842a6b05dffaa8.md) | 654 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [lintegral_const_mul''](declarations/lintegral-const-mul--d14ee09936b1726949bfb6b2.md) | 674 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [lintegral_const_mul_le](declarations/lintegral-const-mul-le--4dc78518933257db68b0f03d.md) | 682 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [lintegral_const_mul'](declarations/lintegral-const-mul--082941ab8d93658d94d3a929.md) | 694 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [lintegral_mul_const](declarations/lintegral-mul-const--301aaafecbbb179f223a0001.md) | 708 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [lintegral_mul_const''](declarations/lintegral-mul-const--235edcdc8431d65c41f000df.md) | 712 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [lintegral_mul_const_le](declarations/lintegral-mul-const-le--21d2b10d07dd2bb65e642aca.md) | 716 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [lintegral_mul_const'](declarations/lintegral-mul-const--e74725e6423a85db42766203.md) | 720 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [lintegral_lintegral_mul](declarations/lintegral-lintegral-mul--f891c4ec96299b64f8152748.md) | 726 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [lintegral_rw₁](declarations/lintegral-rw--cad72e8cc579811c2473fa92.md) | 733 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [lintegral_rw₂](declarations/lintegral-rw--5244a38159ad750fa6ae42a2.md) | 739 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [lintegral_indicator](declarations/lintegral-indicator--8e4a40ced5716722d6656e32.md) | 745 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [lintegral_indicator₀](declarations/lintegral-indicator--dc431373a1bc7476d4216ae6.md) | 759 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [lintegral_indicator_const₀](declarations/lintegral-indicator-const--6760c9fa74946bc7d0b5c69b.md) | 766 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [lintegral_indicator_const](declarations/lintegral-indicator-const--e4c223fe13e48a67609a7808.md) | 770 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [set_lintegral_eq_const](declarations/set-lintegral-eq-const--850bf9a312f66bc7ecf5e1f1.md) | 775 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [lintegral_indicator_one](declarations/lintegral-indicator-one--a027ab3d1b03cf27441e299d.md) | 784 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [lintegral_add_mul_meas_add_le_le_lintegral](declarations/lintegral-add-mul-meas-add-le-le-lintegral--a15bc7b52d84c8b36fa5d788.md) | 790 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [mul_meas_ge_le_lintegral₀](declarations/mul-meas-ge-le-lintegral--2c218f50f6e80ee50244b505.md) | 809 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [mul_meas_ge_le_lintegral](declarations/mul-meas-ge-le-lintegral--f5fc9ed7112e4478c762ecca.md) | 817 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [lintegral_eq_top_of_measure_eq_top_ne_zero](declarations/lintegral-eq-top-of-measure-eq-top-ne-zero--e7ef1fc9b4d55be394a1c7ca.md) | 822 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [setLintegral_eq_top_of_measure_eq_top_ne_zero](declarations/setlintegral-eq-top-of-measure-eq-top-ne-zero--fce4c7d6113ba9cfb28d8298.md) | 830 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [measure_eq_top_of_lintegral_ne_top](declarations/measure-eq-top-of-lintegral-ne-top--deb5b65a94a11bbd597ff0eb.md) | 836 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [measure_eq_top_of_setLintegral_ne_top](declarations/measure-eq-top-of-setlintegral-ne-top--8b42be966ab12f31278f6112.md) | 841 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [meas_ge_le_lintegral_div](declarations/meas-ge-le-lintegral-div--3f45f0d9bde797bbd9fe3a6e.md) | 847 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [ae_eq_of_ae_le_of_lintegral_le](declarations/ae-eq-of-ae-le-of-lintegral-le--5de77b22afa3acf672b14ead.md) | 854 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [lintegral_eq_zero_iff'](declarations/lintegral-eq-zero-iff--4e00730ae841b8bab9bb8a22.md) | 871 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [lintegral_eq_zero_iff](declarations/lintegral-eq-zero-iff--4500971a962d8aabfadb9a07.md) | 881 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [lintegral_pos_iff_support](declarations/lintegral-pos-iff-support--e9d1cbc61f0271462549058a.md) | 885 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [lintegral_iSup_ae](declarations/lintegral-isup-ae--a129407cbf194606de37e847.md) | 891 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [lintegral_sub'](declarations/lintegral-sub--d95ecdc87d0b2e117debfa76.md) | 909 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [lintegral_sub](declarations/lintegral-sub--8738f5a70e75b8246bbb3375.md) | 916 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [lintegral_sub_le'](declarations/lintegral-sub-le--b03628c37f14b958de6b208d.md) | 921 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `theorem` | [lintegral_sub_le](declarations/lintegral-sub-le--76cd1dc9d7ba72baa5cee763.md) | 931 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [lintegral_strict_mono_of_ae_le_of_frequently_ae_lt](declarations/lintegral-strict-mono-of-ae-le-of-frequently-ae-lt--06bb1afd971c321ade40d82e.md) | 936 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [lintegral_strict_mono_of_ae_le_of_ae_lt_on](declarations/lintegral-strict-mono-of-ae-le-of-ae-lt-on--9050e8227db118d79ac0141e.md) | 944 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [lintegral_strict_mono](declarations/lintegral-strict-mono--0d92faa09f83a823007cc75a.md) | 951 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [set_lintegral_strict_mono](declarations/set-lintegral-strict-mono--f9200cf16843e4d6913fa0d5.md) | 958 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [lintegral_iInf_ae](declarations/lintegral-iinf-ae--9de0478e4a419a6cbee26835.md) | 965 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [lintegral_iInf](declarations/lintegral-iinf--96b4c092e8470a026cf3e692.md) | 996 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [lintegral_liminf_le'](declarations/lintegral-liminf-le--77527b20a95ff89896b02bc5.md) | 1002 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [lintegral_liminf_le](declarations/lintegral-liminf-le--cbb9d97302a5f488c0424aa3.md) | 1016 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [limsup_lintegral_le](declarations/limsup-lintegral-le--e6fd2557fcdf71e33de4767f.md) | 1021 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [tendsto_lintegral_of_dominated_convergence](declarations/tendsto-lintegral-of-dominated-convergence--b58ff60626672b403ef472bf.md) | 1041 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [tendsto_lintegral_of_dominated_convergence'](declarations/tendsto-lintegral-of-dominated-convergence--f21e692eb7290a45f40b5287.md) | 1060 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [tendsto_lintegral_filter_of_dominated_convergence](declarations/tendsto-lintegral-filter-of-dominated-convergence--719cbed7399799dfc70e5cc6.md) | 1080 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [lintegral_iSup_directed_of_measurable](declarations/lintegral-isup-directed-of-measurable--bc4dcbd3f20793ba933cc8f9.md) | 1115 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [lintegral_iSup_directed](declarations/lintegral-isup-directed--9d1a61d19da230be380acaef.md) | 1137 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [lintegral_tsum](declarations/lintegral-tsum--5a9896bb77d52c65e72c6920.md) | 1167 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [lintegral_iUnion₀](declarations/lintegral-iunion--df89ad65397c7d8120961296.md) | 1183 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [lintegral_iUnion](declarations/lintegral-iunion--d7070c5ac00a2c13a86de5b9.md) | 1189 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [lintegral_biUnion₀](declarations/lintegral-biunion--125a3feb2cacff577742f0f6.md) | 1195 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [lintegral_biUnion](declarations/lintegral-biunion--ccaf732efd4410d8fe740f3f.md) | 1202 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [lintegral_biUnion_finset₀](declarations/lintegral-biunion-finset--647d11f09d9bee62278af327.md) | 1208 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [lintegral_biUnion_finset](declarations/lintegral-biunion-finset--6da78f61259b125807a9a23e.md) | 1214 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [lintegral_iUnion_le](declarations/lintegral-iunion-le--25dcb9518b3ead8d4e922fa2.md) | 1220 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [lintegral_union](declarations/lintegral-union--fbc1c651ec612fc0d1ee3730.md) | 1226 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `theorem` | [lintegral_union_le](declarations/lintegral-union-le--a2cbb386a2f55f43063656df.md) | 1231 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [lintegral_inter_add_diff](declarations/lintegral-inter-add-diff--5a6a72905f2201278e4b0964.md) | 1236 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [lintegral_add_compl](declarations/lintegral-add-compl--865ff473768b41a260989a97.md) | 1241 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `theorem` | [lintegral_max](declarations/lintegral-max--044b8e232ad3610799872618.md) | 1246 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [set_lintegral_max](declarations/set-lintegral-max--1a01fa5ed74e0cb94ce32f3f.md) | 1257 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [lintegral_map](declarations/lintegral-map--ca3fc6bce31d846a9faff3bb.md) | 1264 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `theorem` | [lintegral_map'](declarations/lintegral-map--fb155c9e98cc1295201f85cd.md) | 1272 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [lintegral_map_le](declarations/lintegral-map-le--61426735ecc7aa263fd4e955.md) | 1286 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `theorem` | [lintegral_comp](declarations/lintegral-comp--302825556033f40fb8a22353.md) | 1294 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [set_lintegral_map](declarations/set-lintegral-map--2361738c6baff31ba463d6d4.md) | 1299 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [lintegral_indicator_const_comp](declarations/lintegral-indicator-const-comp--f2d95c15e37131c61b44d954.md) | 1305 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [_root_.GRWTSK.Analysis.RealAnalysis.Integration.SimpleFuncLintegralEqLintegral.Variantdf45c106135015b48657a4800a548d4c2af2ee9b2257ba0c5920968a65fd094b.MeasurableEmbedding.lintegral_map](declarations/root-grwtsk-analysis-realanalysis-integration-simplefunclintegraleqlinte--a75d47594397d3cd44db0951.md) | 1315 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `theorem` | [lintegral_map_equiv](declarations/lintegral-map-equiv--da969f59b10f789a5835af7d.md) | 1331 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `theorem` | [MeasurePreserving.lintegral_comp](declarations/measurepreserving-lintegral-comp--63e575e4d4044eed671d8e1a.md) | 1336 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `theorem` | [MeasurePreserving.lintegral_comp_emb](declarations/measurepreserving-lintegral-comp-emb--3b298691aee19d007289d84c.md) | 1341 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [MeasurePreserving.set_lintegral_comp_preimage](declarations/measurepreserving-set-lintegral-comp-preimage--1e21a5a8800cea99968db9fe.md) | 1346 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [MeasurePreserving.set_lintegral_comp_preimage_emb](declarations/measurepreserving-set-lintegral-comp-preimage-emb--84a0d8a1f17e5a4556c6a56a.md) | 1352 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `theorem` | [MeasurePreserving.set_lintegral_comp_emb](declarations/measurepreserving-set-lintegral-comp-emb--f6e842c95fddc789a1a53988.md) | 1358 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `instance` | [(anonymous)](declarations/instance--c9e908963b9cc8b5ad3c3bd6.md) | 1366 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `theorem` | [lintegral_dirac'](declarations/lintegral-dirac--0892deaef5f75e33b22181b5.md) | 1374 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [lintegral_dirac](declarations/lintegral-dirac--78f4bfd92d3f625a82a72f62.md) | 1378 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [set_lintegral_dirac'](declarations/set-lintegral-dirac--f6c0f64b02d945756b94201a.md) | 1382 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [set_lintegral_dirac](declarations/set-lintegral-dirac--26f9ace00edeb78234ca526e.md) | 1391 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `theorem` | [lintegral_count'](declarations/lintegral-count--36d19baba5602a11f222e0d7.md) | 1399 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [lintegral_count](declarations/lintegral-count--5934ea385935038638fff2b4.md) | 1405 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `theorem` | [_root_.GRWTSK.Analysis.RealAnalysis.Integration.SimpleFuncLintegralEqLintegral.Variantdf45c106135015b48657a4800a548d4c2af2ee9b2257ba0c5920968a65fd094b.ENNReal.tsum_const_eq](declarations/root-grwtsk-analysis-realanalysis-integration-simplefunclintegraleqlinte--7fb356fb81fee9d8cc034571.md) | 1412 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `theorem` | [_root_.GRWTSK.Analysis.RealAnalysis.Integration.SimpleFuncLintegralEqLintegral.Variantdf45c106135015b48657a4800a548d4c2af2ee9b2257ba0c5920968a65fd094b.ENNReal.count_const_le_le_of_tsum_le](declarations/root-grwtsk-analysis-realanalysis-integration-simplefunclintegraleqlinte--a2e4310aee766ceadbdd1acd.md) | 1417 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [_root_.GRWTSK.Analysis.RealAnalysis.Integration.SimpleFuncLintegralEqLintegral.Variantdf45c106135015b48657a4800a548d4c2af2ee9b2257ba0c5920968a65fd094b.NNReal.count_const_le_le_of_tsum_le](declarations/root-grwtsk-analysis-realanalysis-integration-simplefunclintegraleqlinte--364d59bd6abfceef3aca165f.md) | 1426 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [lintegral_countable'](declarations/lintegral-countable--4fcc6e295ac791e2ef4d3df3.md) | 1448 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [lintegral_singleton'](declarations/lintegral-singleton--21053db3fbf93fb678065c23.md) | 1455 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [lintegral_singleton](declarations/lintegral-singleton--fd3bb94a9f29709ad247d082.md) | 1460 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `theorem` | [lintegral_countable](declarations/lintegral-countable--80b381392c9bd5e870fd98dd.md) | 1465 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [lintegral_insert](declarations/lintegral-insert--02d6294c1a91a109c6c81bb6.md) | 1474 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [lintegral_finset](declarations/lintegral-finset--b42d811fea79e34d74b6d466.md) | 1481 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [lintegral_fintype](declarations/lintegral-fintype--7ba07fff88d52fb12c8f7294.md) | 1486 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [lintegral_unique](declarations/lintegral-unique--935a45a525bc3fe547f045a6.md) | 1491 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [ae_lt_top](declarations/ae-lt-top--38a302c90234fc8baafc9fef.md) | 1499 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `theorem` | [ae_lt_top'](declarations/ae-lt-top--569dc965182b3673272b2794.md) | 1512 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `theorem` | [set_lintegral_lt_top_of_bddAbove](declarations/set-lintegral-lt-top-of-bddabove--ab17dd99284b28ffbe41486e.md) | 1518 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `theorem` | [set_lintegral_lt_top_of_isCompact](declarations/set-lintegral-lt-top-of-iscompact--d9cada74a29b4e4ad7e8e693.md) | 1530 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `theorem` | [_root_.GRWTSK.Analysis.RealAnalysis.Integration.SimpleFuncLintegralEqLintegral.Variantdf45c106135015b48657a4800a548d4c2af2ee9b2257ba0c5920968a65fd094b.IsFiniteMeasure.lintegral_lt_top_of_bounded_to_eNNReal](declarations/root-grwtsk-analysis-realanalysis-integration-simplefunclintegraleqlinte--9a489a5fee1d7432baf04e97.md) | 1536 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `def` | [Measure.withDensity](declarations/measure-withdensity--48602330e19984ec091f2de5.md) | 1547 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [withDensity_apply](declarations/withdensity-apply--7d92c706c5a10816383824fe.md) | 1553 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [withDensity_congr_ae](declarations/withdensity-congr-ae--47a9acc6613815f70c69aadd.md) | 1558 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [withDensity_add_left](declarations/withdensity-add-left--d9b49764fb68d1f5d5e6130a.md) | 1565 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [withDensity_add_right](declarations/withdensity-add-right--f2ceb4762be9bb2aba8f4e31.md) | 1573 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [withDensity_add_measure](declarations/withdensity-add-measure--ff04ba630393465c321a23a4.md) | 1578 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [withDensity_sum](declarations/withdensity-sum--be48e6b9ce5a60fdf7f1b570.md) | 1584 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `theorem` | [withDensity_smul](declarations/withdensity-smul--2f921f3c5c9a0d9572faf9e0.md) | 1590 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `theorem` | [withDensity_smul'](declarations/withdensity-smul--69e9c8f7747ca43c2230d637.md) | 1598 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `theorem` | [isFiniteMeasure_withDensity](declarations/isfinitemeasure-withdensity--57e24b44614017b546b86eba.md) | 1606 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `theorem` | [withDensity_absolutelyContinuous](declarations/withdensity-absolutelycontinuous--4e4e1947d3fa7dc404baf92f.md) | 1612 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [withDensity_zero](declarations/withdensity-zero--025464b7819eaa9bab7f6737.md) | 1620 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [withDensity_one](declarations/withdensity-one--1ca48b77a6d4162e4ea06b7f.md) | 1626 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `theorem` | [withDensity_tsum](declarations/withdensity-tsum--62250b922f1cf47bfaf0319f.md) | 1631 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [withDensity_indicator](declarations/withdensity-indicator--22f163a6d9d98d34b44c992e.md) | 1640 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [withDensity_indicator_one](declarations/withdensity-indicator-one--e349c82cba3251c4b6c72a0e.md) | 1647 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `theorem` | [withDensity_ofReal_mutuallySingular](declarations/withdensity-ofreal-mutuallysingular--5051ed5998ae88d0f0bc8abe.md) | 1652 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [restrict_withDensity](declarations/restrict-withdensity--80970eee806a4b4d030bbad1.md) | 1666 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `theorem` | [withDensity_eq_zero](declarations/withdensity-eq-zero--e72a4e31d2825fde58047b90.md) | 1673 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [withDensity_apply_eq_zero](declarations/withdensity-apply-eq-zero--795f936542010c3e9f7db7a5.md) | 1679 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [ae_withDensity_iff](declarations/ae-withdensity-iff--cfc0864ef2bfe46966f41c33.md) | 1713 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `theorem` | [ae_withDensity_iff_ae_restrict](declarations/ae-withdensity-iff-ae-restrict--9ef9336824518cb8faa29fa8.md) | 1721 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `theorem` | [aemeasurable_withDensity_ennreal_iff](declarations/aemeasurable-withdensity-ennreal-iff--ab8c96e719a00b0d0f28968b.md) | 1728 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [lintegral_withDensity_eq_lintegral_mul](declarations/lintegral-withdensity-eq-lintegral-mul--912d06ca9b99cdb91163bcdf.md) | 1769 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [set_lintegral_withDensity_eq_set_lintegral_mul](declarations/set-lintegral-withdensity-eq-set-lintegral-mul--d86a27393305cde80a0ee3ec.md) | 1782 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [lintegral_withDensity_eq_lintegral_mul₀'](declarations/lintegral-withdensity-eq-lintegral-mul--ad20b3a233d1df8a1bd65c50.md) | 1792 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `theorem` | [lintegral_withDensity_eq_lintegral_mul₀](declarations/lintegral-withdensity-eq-lintegral-mul--c741e751ec654a2c875213bf.md) | 1824 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `theorem` | [lintegral_withDensity_le_lintegral_mul](declarations/lintegral-withdensity-le-lintegral-mul--c9b0645375671d2fd185bd17.md) | 1830 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `theorem` | [lintegral_withDensity_eq_lintegral_mul_non_measurable](declarations/lintegral-withdensity-eq-lintegral-mul-non-measurable--e42941ee4f7031ba71b131a0.md) | 1839 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `theorem` | [set_lintegral_withDensity_eq_set_lintegral_mul_non_measurable](declarations/set-lintegral-withdensity-eq-set-lintegral-mul-non-measurable--457cf65788e3fe2cdd37b1e8.md) | 1865 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [lintegral_withDensity_eq_lintegral_mul_non_measurable₀](declarations/lintegral-withdensity-eq-lintegral-mul-non-measurable--807920340159369eb67fb484.md) | 1872 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [set_lintegral_withDensity_eq_set_lintegral_mul_non_measurable₀](declarations/set-lintegral-withdensity-eq-set-lintegral-mul-non-measurable--3281c2e0c2e9611da52956ad.md) | 1891 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [withDensity_mul](declarations/withdensity-mul--9d28d032ba77f10ed8ef3a65.md) | 1898 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `theorem` | [exists_pos_lintegral_lt_of_sigmaFinite](declarations/exists-pos-lintegral-lt-of-sigmafinite--254a02a3ac8b2289feada7e6.md) | 1907 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [lintegral_trim](declarations/lintegral-trim--f714152cee6f50176a827ebb.md) | 1925 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [lintegral_trim_ae](declarations/lintegral-trim-ae--c03c9c64cc0cbb5a9aa6b431.md) | 1946 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `theorem` | [univ_le_of_forall_fin_meas_le](declarations/univ-le-of-forall-fin-meas-le--b70c08d4948f62d00dfc8658.md) | 1956 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `theorem` | [lintegral_le_of_forall_fin_meas_le_of_measurable](declarations/lintegral-le-of-forall-fin-meas-le-of-measurable--1da4920c748edcf9b9182b9b.md) | 1974 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [lintegral_le_of_forall_fin_meas_le'](declarations/lintegral-le-of-forall-fin-meas-le--a079f7ac448623d26d0d9f34.md) | 2014 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `theorem` | [lintegral_le_of_forall_fin_meas_le](declarations/lintegral-le-of-forall-fin-meas-le--cf9a6555a671beef8a920232.md) | 2030 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `theorem` | [SimpleFunc.exists_lt_lintegral_simpleFunc_of_lt_lintegral](declarations/simplefunc-exists-lt-lintegral-simplefunc-of-lt-lintegral--af31609a7510c0081ca39536.md) | 2036 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `theorem` | [exists_lt_lintegral_simpleFunc_of_lt_lintegral](declarations/exists-lt-lintegral-simplefunc-of-lt-lintegral--c670efbdab03e1005bb6d132.md) | 2091 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `theorem` | [exists_absolutelyContinuous_isFiniteMeasure](declarations/exists-absolutelycontinuous-isfinitemeasure--4b2e9ef159312cb6ba15ceb7.md) | 2105 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator](declarations/tendsto-measure-of-ae-tendsto-indicator--2d01352e538a8de442152e30.md) | 2131 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `lemma` | [tendsto_measure_of_ae_tendsto_indicator_of_isFiniteMeasure](declarations/tendsto-measure-of-ae-tendsto-indicator-of-isfinitemeasure--8b9a9ebcd8faf34c79551466.md) | 2149 | `BLOCKED_NATIVE_ADMISSION` |
+| 202 | `lemma` | [tendsto_measure_of_tendsto_indicator](declarations/tendsto-measure-of-tendsto-indicator--5ef9808a38e63bfd58b973a6.md) | 2161 | `BLOCKED_NATIVE_ADMISSION` |
+| 203 | `lemma` | [tendsto_measure_of_tendsto_indicator_of_isFiniteMeasure](declarations/tendsto-measure-of-tendsto-indicator-of-isfinitemeasure--1a828ed7fb3984fd7347c2e6.md) | 2172 | `BLOCKED_NATIVE_ADMISSION` |

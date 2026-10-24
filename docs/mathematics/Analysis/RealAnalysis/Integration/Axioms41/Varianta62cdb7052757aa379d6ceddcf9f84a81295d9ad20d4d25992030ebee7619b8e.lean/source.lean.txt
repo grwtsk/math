@@ -1,0 +1,10 @@
+import SourceActualHighLagMixedSign
+
+open FormalResearch.RiemannHypothesis.SourceActualHighLagMixedSign
+
+#print axioms actual_mixed_kernel_ten_nineteen
+#print axioms actual_mixed_kernel_ten_nineteen_neg
+#print axioms actual_correlation_ten_nineteen_pos
+#print axioms actual_shifted_pairings_integrable
+#print axioms actual_shifted_plus_quarter_pairing_neg
+#print axioms not_all_actual_mixed_atoms_nonneg

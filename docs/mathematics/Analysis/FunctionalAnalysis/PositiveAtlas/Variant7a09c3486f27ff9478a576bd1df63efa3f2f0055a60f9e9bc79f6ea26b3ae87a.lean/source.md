@@ -1,0 +1,78 @@
+# Complete source: GRWTSK.Analysis.FunctionalAnalysis.PositiveAtlas.Variant7a09c3486f27ff9478a576bd1df63efa3f2f0055a60f9e9bc79f6ea26b3ae87a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f45b18587e518902dc37a6d320bc830771899a8c` · SHA-256 `7a09c3486f27ff9478a576bd1df63efa3f2f0055a60f9e9bc79f6ea26b3ae87a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.PositiveAtlas.Certification
+import FormalResearch.PositiveAtlas.CertificationUniverseFixtures
+import FormalResearch.PositiveAtlas.PositiveGeometry
+import FormalResearch.PositiveAtlas.MaximalDefect
+import FormalResearch.PositiveAtlas.FiniteHeightMaximalDefect
+import FormalResearch.PositiveAtlas.ProvenanceProjection
+import FormalResearch.PositiveAtlas.ScalarSchur
+import FormalResearch.PositiveAtlas.BlockSchur
+import FormalResearch.PositiveAtlas.InvertibleBlockSchur
+import FormalResearch.PositiveAtlas.MatrixBlockSchur
+import FormalResearch.PositiveAtlas.ExplicitSchurMatrix
+import FormalResearch.PositiveAtlas.FeshbachReconstruction
+import FormalResearch.PositiveAtlas.FeshbachHermitian
+import FormalResearch.PositiveAtlas.FeshbachInertia
+import FormalResearch.PositiveAtlas.FeshbachEquationIdeal
+import FormalResearch.PositiveAtlas.FiniteQuadraticCertificate
+import FormalResearch.PositiveAtlas.GeneralizedInverseSchur
+import FormalResearch.PositiveAtlas.NullCrossAnnihilation
+import FormalResearch.PositiveAtlas.FiniteFeatureGeometry
+import FormalResearch.PositiveAtlas.FiniteConditionalExpectation
+import FormalResearch.PositiveAtlas.ProvenanceRange
+import FormalResearch.PositiveAtlas.SingularLinearSolver
+import FormalResearch.PositiveAtlas.SolverIndependence
+import FormalResearch.PositiveAtlas.PhaseIIResidualQuotient
+import FormalResearch.PositiveAtlas.QuadraticSwapInvolution
+import FormalResearch.PositiveAtlas.CommutingInvolutions
+import FormalResearch.PositiveAtlas.RationalPhase
+import FormalResearch.PositiveAtlas.PositiveFourSector
+import FormalResearch.PositiveAtlas.InterventionDefect
+import FormalResearch.PositiveAtlas.ComparatorSeparation
+import FormalResearch.PositiveAtlas.ComparatorMargin
+import FormalResearch.PositiveAtlas.FourPhaseConvolution
+import FormalResearch.PositiveAtlas.AnalyticDispersion
+import FormalResearch.PositiveAtlas.AffineGauge
+import FormalResearch.PositiveAtlas.AffineReconstruction
+import FormalResearch.PositiveAtlas.FiniteLogAffineCovariance
+import FormalResearch.PositiveAtlas.FiniteLogAffineFirstDerivative
+import FormalResearch.PositiveAtlas.FiniteLogAffineSecondDerivative
+import FormalResearch.PositiveAtlas.FiniteCovarianceProjection
+import FormalResearch.PositiveAtlas.FiniteThirdCumulant
+import FormalResearch.PositiveAtlas.FiniteFourthCumulant
+import FormalResearch.PositiveAtlas.MomentCumulantPartitions
+import FormalResearch.PositiveAtlas.BlockDirectionReindexing
+import FormalResearch.PositiveAtlas.FiniteCumulantPrefix
+import FormalResearch.PositiveAtlas.RecursiveCumulantHierarchy
+import FormalResearch.PositiveAtlas.FiniteRawMomentHierarchy
+import FormalResearch.PositiveAtlas.OrderTwoRecursiveCumulant
+import FormalResearch.PositiveAtlas.OrderThreeRecursiveCumulant
+import FormalResearch.PositiveAtlas.OrderFourRecursiveCumulant
+import FormalResearch.PositiveAtlas.AllOrdersRawMomentDerivative
+import FormalResearch.PositiveAtlas.OrderedPartitionBridge
+import FormalResearch.PositiveAtlas.Grassmannian
+import FormalResearch.PositiveAtlas.Spectral.JacobiTransfer
+import FormalResearch.PositiveAtlas.Spectral.JacobiCocycle
+
+/-!
+# Positive Atlas
+
+Formal infrastructure for the self-representing positive atlas program.
+
+The Grassmannian specialization supplies ordered-minor and normalized-chart
+source toward the explicit realization target. Its recognition and transport
+obligations are tracked separately from the generic certificate-relative core.
+
+The initial accepted layer is certificate-relative: it defines exact sufficient
+representations and structural Quines without assuming that a minimal sufficient
+representation exists for a particular mathematical object. Later modules may
+instantiate positive geometry, involutions, renormalization, and RH-specific
+charts on top of this core.
+-/
+```

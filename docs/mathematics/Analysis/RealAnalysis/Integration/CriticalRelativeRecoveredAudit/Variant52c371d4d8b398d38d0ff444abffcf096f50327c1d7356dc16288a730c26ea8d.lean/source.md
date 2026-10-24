@@ -1,0 +1,61 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.CriticalRelativeRecoveredAudit.Variant52c371d4d8b398d38d0ff444abffcf096f50327c1d7356dc16288a730c26ea8d
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d33a8dedb623a39eadb5aed63776acefa2903cd` · SHA-256 `54f0074d41cc60cd5e28d85274c140debd18e662679da5ea9b5a77e40245968d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.CriticalRelativePairing.Variant09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.CriticalRelativePairing.Variant09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b","mathematical_subject":"Analysis.Integration","original_sha256":"09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/CriticalRelativeRecoveredAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import CriticalRelativePairing
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.CriticalRelativePairing.Variant09b32d2dd5623f67d983e9d2dbabc3ad0713e849b88351ff55edf158858ed12b
+
+#check OmegaResearch.CriticalRelativePairing.relativePsiError
+#print axioms OmegaResearch.CriticalRelativePairing.relativePsiError
+#check OmegaResearch.CriticalRelativePairing.criticalWeight
+#print axioms OmegaResearch.CriticalRelativePairing.criticalWeight
+#check OmegaResearch.CriticalRelativePairing.criticalKernel
+#print axioms OmegaResearch.CriticalRelativePairing.criticalKernel
+#check OmegaResearch.CriticalRelativePairing.latticeKernel
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel
+#check OmegaResearch.CriticalRelativePairing.criticalRelativePairing
+#print axioms OmegaResearch.CriticalRelativePairing.criticalRelativePairing
+#check OmegaResearch.CriticalRelativePairing.latticePairing
+#print axioms OmegaResearch.CriticalRelativePairing.latticePairing
+#check OmegaResearch.CriticalRelativePairing.criticalWeight_continuous
+#print axioms OmegaResearch.CriticalRelativePairing.criticalWeight_continuous
+#check OmegaResearch.CriticalRelativePairing.criticalWeight_abs_le
+#print axioms OmegaResearch.CriticalRelativePairing.criticalWeight_abs_le
+#check OmegaResearch.CriticalRelativePairing.latticeKernel_measurable
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel_measurable
+#check OmegaResearch.CriticalRelativePairing.latticeKernel_abs_le
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel_abs_le
+#check OmegaResearch.CriticalRelativePairing.latticeKernel_integrable
+#print axioms OmegaResearch.CriticalRelativePairing.latticeKernel_integrable
+#check OmegaResearch.CriticalRelativePairing.latticePairing_abs_le
+#print axioms OmegaResearch.CriticalRelativePairing.latticePairing_abs_le
+#check OmegaResearch.CriticalRelativePairing.kernel_exact_decomposition
+#print axioms OmegaResearch.CriticalRelativePairing.kernel_exact_decomposition
+#check OmegaResearch.CriticalRelativePairing.criticalKernel_integrable
+#print axioms OmegaResearch.CriticalRelativePairing.criticalKernel_integrable
+#check OmegaResearch.CriticalRelativePairing.integerJ_eq_critical_add_lattice
+#print axioms OmegaResearch.CriticalRelativePairing.integerJ_eq_critical_add_lattice
+#check OmegaResearch.CriticalRelativePairing.integerJ_le_critical
+#print axioms OmegaResearch.CriticalRelativePairing.integerJ_le_critical
+#check OmegaResearch.CriticalRelativePairing.critical_le_integerJ
+#print axioms OmegaResearch.CriticalRelativePairing.critical_le_integerJ
+#check OmegaResearch.CriticalRelativePairing.CriticalRelativeTailUpperBound
+#print axioms OmegaResearch.CriticalRelativePairing.CriticalRelativeTailUpperBound
+#check OmegaResearch.CriticalRelativePairing.critical_tail_iff_integer_tail
+#print axioms OmegaResearch.CriticalRelativePairing.critical_tail_iff_integer_tail
+#check ContinuousResearch.ActualSignedStieltjes.actual_log_stieltjes
+#print axioms ContinuousResearch.ActualSignedStieltjes.actual_log_stieltjes
+#check ContinuousResearch.ActualIntegerInventory.integerJ_eq_literal
+#print axioms ContinuousResearch.ActualIntegerInventory.integerJ_eq_literal
+#check ContinuousResearch.IntegerWitnessTransfer.estimate_of_integer_tail
+#print axioms ContinuousResearch.IntegerWitnessTransfer.estimate_of_integer_tail
+```

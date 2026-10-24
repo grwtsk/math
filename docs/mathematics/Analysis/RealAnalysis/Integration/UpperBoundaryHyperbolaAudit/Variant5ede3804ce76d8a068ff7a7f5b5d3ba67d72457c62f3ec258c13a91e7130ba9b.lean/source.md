@@ -1,0 +1,55 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.UpperBoundaryHyperbolaAudit.Variant5ede3804ce76d8a068ff7a7f5b5d3ba67d72457c62f3ec258c13a91e7130ba9b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `53d9342855f888ac5872eb98895d619ee512b853` · SHA-256 `0c13eddfd9a490691960bc612f47492a64b2034ddc9a5764dc61429469367041`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.UpperBoundaryHyperbola.Variantb05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.UpperBoundaryHyperbola.Variantb05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269","mathematical_subject":"Analysis.Integration","original_sha256":"b05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/arithmetic-routes/UpperBoundaryHyperbolaAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import UpperBoundaryHyperbola
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.UpperBoundaryHyperbola.Variantb05eb526c5e24ca2aa6340413dc8444b82bf80b4be28c04dd5c40ecbd8541269
+
+#check UpperBoundaryHyperbolaScratch.upperSmallIndices
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallIndices
+#check UpperBoundaryHyperbolaScratch.upperSmallSum
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum
+#check UpperBoundaryHyperbolaScratch.upperHyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperHyperbola
+#check UpperBoundaryHyperbolaScratch.mem_upperSmallIndices_iff
+#print axioms UpperBoundaryHyperbolaScratch.mem_upperSmallIndices_iff
+#check UpperBoundaryHyperbolaScratch.upperSmallIndices_eq_sqrt_cutoff
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallIndices_eq_sqrt_cutoff
+#check UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_hyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_hyperbola
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_square_nonneg
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_square_nonneg
+#check UpperBoundaryHyperbolaScratch.upperRowIndices_eq_div_cutoff
+#print axioms UpperBoundaryHyperbolaScratch.upperRowIndices_eq_div_cutoff
+#check UpperBoundaryHyperbolaScratch.upperHyperbola_eq_floor_sum
+#print axioms UpperBoundaryHyperbolaScratch.upperHyperbola_eq_floor_sum
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_eq_floor_sum
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_eq_floor_sum
+#check UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_floor_hyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperProductSummatory_eq_floor_hyperbola
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_measurable
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_measurable
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_abs_le
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_abs_le
+#check UpperBoundaryHyperbolaScratch.upperSmallSum_square_mul_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.upperSmallSum_square_mul_integrableOn
+#check UpperBoundaryHyperbolaScratch.upperHyperbola_mul_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.upperHyperbola_mul_integrableOn
+#check UpperBoundaryHyperbolaScratch.upperProduct_integral_eq_hyperbola
+#print axioms UpperBoundaryHyperbolaScratch.upperProduct_integral_eq_hyperbola
+#check UpperBoundaryHyperbolaScratch.source_hyperbola_derivative_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.source_hyperbola_derivative_integrableOn
+#check UpperBoundaryHyperbolaScratch.source_square_derivative_integrableOn
+#print axioms UpperBoundaryHyperbolaScratch.source_square_derivative_integrableOn
+#check UpperBoundaryHyperbolaScratch.sourceQuadraticValue_eq_hyperbola_integrals
+#print axioms UpperBoundaryHyperbolaScratch.sourceQuadraticValue_eq_hyperbola_integrals
+```

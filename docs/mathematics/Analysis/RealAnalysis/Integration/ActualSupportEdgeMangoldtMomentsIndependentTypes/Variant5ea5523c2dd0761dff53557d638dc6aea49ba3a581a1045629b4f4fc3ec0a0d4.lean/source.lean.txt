@@ -1,0 +1,13 @@
+import ActualSupportEdgeMangoldtMoments
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtMoments
+#check actualHalfMangoldtPrefix
+#print axioms actualHalfMangoldtPrefix
+#check actualHalfMangoldtEdgeMoment
+#print axioms actualHalfMangoldtEdgeMoment
+#check actualHalfMangoldtPrefix_le
+#print axioms actualHalfMangoldtPrefix_le
+#check actualHalfMangoldtEdgeMoment_eq_prefix_integral
+#print axioms actualHalfMangoldtEdgeMoment_eq_prefix_integral
+#check actualHalfMangoldtEdgeMoment_le
+#print axioms actualHalfMangoldtEdgeMoment_le

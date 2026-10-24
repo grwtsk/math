@@ -1,0 +1,135 @@
+# Complete source: GRWTSK.Analysis.Completion.Variant9f44fc6b4b09b60015af32a3ae45e2b45df202b49e59c032128677c9611bded9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9ce31a26f419e0a5d64a72bbd6f13754da2b07ad` · SHA-256 `84d9023520448f72481b256aa2da1ba57ab38fe3cc46cd73fb63a944bf709874`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.ToCompl.Variant0ed30314ddce05dbece639d780d45f807aa6f598adda6568b8f11f7aa94c75fd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0ed30314ddce05dbece639d780d45f807aa6f598adda6568b8f11f7aa94c75fd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.ToCompl.Variant0ed30314ddce05dbece639d780d45f807aa6f598adda6568b8f11f7aa94c75fd","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"0ed30314ddce05dbece639d780d45f807aa6f598adda6568b8f11f7aa94c75fd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Analysis/NormedSpace/Completion.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["external_root_references_preserved","implicit_eof_scopes","root_references_require_identity_review","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Yury G. Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury G. Kudryashov
+-/
+import Mathlib.Analysis.Normed.Group.Completion
+import Mathlib.Analysis.NormedSpace.OperatorNorm
+import Mathlib.Topology.Algebra.UniformRing
+
+
+namespace GRWTSK.Analysis.ToCompl.Variant0ed30314ddce05dbece639d780d45f807aa6f598adda6568b8f11f7aa94c75fd
+
+#align_import analysis.normed_space.completion from "leanprover-community/mathlib"@"d3af0609f6db8691dffdc3e1fb7feb7da72698f2"
+
+/-!
+# Normed space structure on the completion of a normed space
+
+If `E` is a normed space over `𝕜`, then so is `UniformSpace.Completion E`. In this file we provide
+necessary instances and define `UniformSpace.Completion.toComplₗᵢ` - coercion
+`E → UniformSpace.Completion E` as a bundled linear isometry.
+
+We also show that if `A` is a normed algebra over `𝕜`, then so is `UniformSpace.Completion A`.
+
+TODO: Generalise the results here from the concrete `completion` to any `AbstractCompletion`.
+-/
+
+
+noncomputable section
+
+namespace UniformSpace
+
+namespace Completion
+
+variable (𝕜 E : Type*) [NormedField 𝕜] [NormedAddCommGroup E] [NormedSpace 𝕜 E]
+
+instance (priority := 100) NormedSpace.to_uniformContinuousConstSMul :
+    UniformContinuousConstSMul 𝕜 E :=
+  ⟨fun c => (lipschitzWith_smul c).uniformContinuous⟩
+#align uniform_space.completion.normed_space.to_has_uniform_continuous_const_smul UniformSpace.Completion.NormedSpace.to_uniformContinuousConstSMul
+
+instance : NormedSpace 𝕜 (Completion E) :=
+  { Completion.instModule with
+    smul := (· • ·)
+    norm_smul_le := fun c x =>
+      induction_on x
+        (isClosed_le (continuous_const_smul _).norm (continuous_const.mul continuous_norm)) fun y =>
+        by simp only [← coe_smul, norm_coe, norm_smul, le_rfl] }
+
+variable {𝕜 E}
+
+/-- Embedding of a normed space to its completion as a linear isometry. -/
+def toComplₗᵢ : E →ₗᵢ[𝕜] Completion E :=
+  { toCompl with
+    toFun := (↑)
+    map_smul' := coe_smul
+    norm_map' := norm_coe }
+#align uniform_space.completion.to_complₗᵢ UniformSpace.Completion.toComplₗᵢ
+
+@[simp]
+theorem coe_toComplₗᵢ : ⇑(toComplₗᵢ : E →ₗᵢ[𝕜] Completion E) = ((↑) : E → Completion E) :=
+  rfl
+#align uniform_space.completion.coe_to_complₗᵢ UniformSpace.Completion.coe_toComplₗᵢ
+
+/-- Embedding of a normed space to its completion as a continuous linear map. -/
+def toComplL : E →L[𝕜] Completion E :=
+  toComplₗᵢ.toContinuousLinearMap
+set_option linter.uppercaseLean3 false in
+#align uniform_space.completion.to_complL UniformSpace.Completion.toComplL
+
+@[simp]
+theorem coe_toComplL : ⇑(toComplL : E →L[𝕜] Completion E) = ((↑) : E → Completion E) :=
+  rfl
+set_option linter.uppercaseLean3 false in
+#align uniform_space.completion.coe_to_complL UniformSpace.Completion.coe_toComplL
+
+@[simp]
+theorem norm_toComplL {𝕜 E : Type*} [NontriviallyNormedField 𝕜] [NormedAddCommGroup E]
+    [NormedSpace 𝕜 E] [Nontrivial E] : ‖(toComplL : E →L[𝕜] Completion E)‖ = 1 :=
+  (toComplₗᵢ : E →ₗᵢ[𝕜] Completion E).norm_toContinuousLinearMap
+set_option linter.uppercaseLean3 false in
+#align uniform_space.completion.norm_to_complL UniformSpace.Completion.norm_toComplL
+
+section Algebra
+
+variable (𝕜) (A : Type*)
+
+instance [SeminormedRing A] : NormedRing (Completion A) :=
+  { Completion.ring,
+    Completion.instMetricSpace with
+    dist_eq := fun x y => by
+      refine Completion.induction_on₂ x y ?_ ?_ <;> clear x y
+      · refine' isClosed_eq (Completion.uniformContinuous_extension₂ _).continuous _
+        exact Continuous.comp Completion.continuous_extension continuous_sub
+      · intro x y
+        rw [← Completion.coe_sub, norm_coe, Completion.dist_eq, dist_eq_norm]
+    norm_mul := fun x y => by
+      refine Completion.induction_on₂ x y ?_ ?_ <;> clear x y
+      · exact
+          isClosed_le (Continuous.comp continuous_norm continuous_mul)
+            (Continuous.comp _root_.continuous_mul
+              (Continuous.prod_map continuous_norm continuous_norm))
+      · intro x y
+        simp only [← coe_mul, norm_coe]
+        exact norm_mul_le x y }
+
+instance [SeminormedCommRing A] [NormedAlgebra 𝕜 A] [UniformContinuousConstSMul 𝕜 A] :
+    NormedAlgebra 𝕜 (Completion A) :=
+  { Completion.algebra A 𝕜 with
+    norm_smul_le := fun r x => by
+      refine Completion.induction_on x ?_ ?_ <;> clear x
+      · exact
+          isClosed_le (Continuous.comp continuous_norm (continuous_const_smul r))
+            (Continuous.comp (continuous_mul_left _) continuous_norm)
+      · intro x
+        simp only [← coe_smul, norm_coe]
+        exact norm_smul_le r x }
+
+end Algebra
+
+end Completion
+
+end UniformSpace
+```

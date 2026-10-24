@@ -1,0 +1,10 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceRieszFilter
+#check intervalIntegral.integral_comp_mul_left
+#check intervalIntegral.integral_comp_sub_left
+#check intervalIntegral.integral_comp_const_sub
+#check intervalIntegral.integral_pow
+#check integral_pow
+#check intervalIntegral.integral_eq_sub_of_hasDerivAt
+#check tendsto_inv_atTop_zero
+#check tendsto_pow_atTop
+#check Filter.Tendsto.div

@@ -1,0 +1,35 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.StablePeanoExactAudit.Variantc9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bb8185ba5963ba5cce1987f76345047cf2b1e62a` · SHA-256 `c9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualStablePeanoCubic
+
+set_option pp.fullNames true
+set_option pp.explicit true
+
+#check RH16IndependentChallengeNext.actualPeano_zero_of_support_lower_le
+#print axioms RH16IndependentChallengeNext.actualPeano_zero_of_support_lower_le
+#check RH16IndependentChallengeNext.actualPeano_deriv_zero_of_support_lower_le
+#print axioms RH16IndependentChallengeNext.actualPeano_deriv_zero_of_support_lower_le
+#check RH16IndependentChallengeNext.actualPeano_both_touching_traces
+#print axioms RH16IndependentChallengeNext.actualPeano_both_touching_traces
+#check RH16IndependentChallengeNext.actualStablePeanoIntegrand_integrable
+#print axioms RH16IndependentChallengeNext.actualStablePeanoIntegrand_integrable
+#check RH16IndependentChallengeNext.actualLocalPeanoProfile_eq_stable_integral
+#print axioms RH16IndependentChallengeNext.actualLocalPeanoProfile_eq_stable_integral
+#check RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_integrable
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_integrable
+#check RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_eq_integral
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_eq_integral
+#check RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_abs_le
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_abs_le
+#print RH16IndependentChallengeNext.actualStablePeanoIntegrand
+#print axioms RH16IndependentChallengeNext.actualStablePeanoIntegrand
+#print RH16IndependentChallengeNext.actualStablePeanoCubicJet
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicJet
+#print RH16IndependentChallengeNext.actualStablePeanoCubicRemainder
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder
+```

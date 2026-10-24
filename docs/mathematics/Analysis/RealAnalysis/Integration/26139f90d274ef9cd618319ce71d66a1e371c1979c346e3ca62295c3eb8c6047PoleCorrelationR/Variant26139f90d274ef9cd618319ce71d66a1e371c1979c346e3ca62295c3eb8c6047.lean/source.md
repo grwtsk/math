@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.26139f90d274ef9cd618319ce71d66a1e371c1979c346e3ca62295c3eb8c6047PoleCorrelationR.Variant26139f90d274ef9cd618319ce71d66a1e371c1979c346e3ca62295c3eb8c6047
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `56af4a0858f3df3d95c2dec04e9185a317d4ea8e` · SHA-256 `26139f90d274ef9cd618319ce71d66a1e371c1979c346e3ca62295c3eb8c6047`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.PoleCorrelationRegularity
+open FormalResearch.RiemannHypothesis.PoleCorrelationRegularity
+#check source_fourier_indicator_deriv
+#print axioms source_fourier_indicator_deriv
+#check source_fourier_indicator_deriv_of_endpoints_zero
+#print axioms source_fourier_indicator_deriv_of_endpoints_zero
+#check source_fourier_indicator_frequency_bound
+#print axioms source_fourier_indicator_frequency_bound
+#check indicator_fourier_norm_sq_integrable
+#print axioms indicator_fourier_norm_sq_integrable
+#check fourthBumpInterior
+#print axioms fourthBumpInterior
+#check fifthBumpInterior
+#print axioms fifthBumpInterior
+#check third_bump_interior_has_deriv_at
+#print axioms third_bump_interior_has_deriv_at
+#check fourth_bump_interior_has_deriv_at
+#print axioms fourth_bump_interior_has_deriv_at
+#check fourth_bump_interior_fourier
+#print axioms fourth_bump_interior_fourier
+#check bump_eighth_moment_integrable
+#print axioms bump_eighth_moment_integrable
+#check integrable_lower_moment
+#print axioms integrable_lower_moment
+#check bump_moment_density_integrable_through_four
+#print axioms bump_moment_density_integrable_through_four
+#check rescaled_density_fourth_moment_integrable
+#print axioms rescaled_density_fourth_moment_integrable
+#check spectral_density_fourth_moment_integrable
+#print axioms spectral_density_fourth_moment_integrable
+#check source_fourier_re_eq_cos_integral
+#print axioms source_fourier_re_eq_cos_integral
+#check cosine_integral_cont_diff
+#print axioms cosine_integral_cont_diff
+#check source_correlation_cont_diff_four
+#print axioms source_correlation_cont_diff_four
+#check base_correlation_cont_diff_eight
+#print axioms base_correlation_cont_diff_eight
+```

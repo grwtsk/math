@@ -1,0 +1,84 @@
+# Complete source: GRWTSK.Analysis.MeasureTheory.FinalValueAttempt01.Variantfcafbe1541281c84d2df77ff2b8279d3f3d5777dba7cd00d4f64338b727db8c1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6621b21c0a6275d2b4dfe5c199ad125b1c6959fc` · SHA-256 `fcafbe1541281c84d2df77ff2b8279d3f3d5777dba7cd00d4f64338b727db8c1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathlib.MeasureTheory.Integral.DominatedConvergence
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+import Mathlib.Tactic
+
+/-! A genuine one-sided Abelian final-value lemma. No unweighted L1 premise
+is supplied for the bounded input. Direction grwtsk contributors;
+focused research proof OpenAI Codex. -/
+set_option autoImplicit false
+noncomputable section
+namespace ContinuousResearch.FinalValue
+open MeasureTheory Set Filter
+open scoped Topology
+
+theorem laplace_rescale (r : ℝ → ℝ) {s : ℝ} (hs : 0 < s) :
+    s * (∫ t in Ioi (0 : ℝ), Real.exp (-s*t) * r t) =
+      ∫ u in Ioi (0 : ℝ), Real.exp (-u) * r (u/s) := by
+  have h := integral_comp_mul_left_Ioi
+    (fun t : ℝ => Real.exp (-s*t) * r t) 0 (inv_pos.mpr hs)
+  simp only [mul_zero, inv_inv, smul_eq_mul] at h
+  rw [← h]
+  congr 1
+  funext u
+  congr 2
+  · congr 1
+    field_simp
+  · rw [div_eq_mul_inv, mul_comm]
+
+theorem bounded_final_value {r : ℝ → ℝ} {C L : ℝ}
+    (hr : Measurable r) (hC : 0 ≤ C)
+    (hb : ∀ t : ℝ, 0 ≤ t → |r t| ≤ C)
+    (ht : Tendsto r atTop (𝓝 L)) :
+    Tendsto (fun s : ℝ => s * (∫ t in Ioi (0 : ℝ), Real.exp (-s*t) * r t))
+      (𝓝[>] (0 : ℝ)) (𝓝 L) := by
+  have hlim : Tendsto (fun s : ℝ =>
+      ∫ u in Ioi (0 : ℝ), Real.exp (-u) * r (u/s))
+      (𝓝[>] (0 : ℝ))
+      (𝓝 (∫ u in Ioi (0 : ℝ), Real.exp (-u) * L)) := by
+    apply tendsto_integral_filter_of_dominated_convergence
+      (μ := volume.restrict (Ioi (0 : ℝ)))
+      (F := fun s u : ℝ => Real.exp (-u) * r (u/s))
+      (f := fun u : ℝ => Real.exp (-u) * L)
+      (fun u : ℝ => Real.exp (-u) * C)
+    · exact Filter.Eventually.of_forall fun s =>
+        ((Real.measurable_exp.comp measurable_neg).mul
+          (hr.comp (measurable_id.div_const s))).aestronglyMeasurable
+    · filter_upwards [self_mem_nhdsWithin] with s hs
+      exact ae_restrict_of_forall_mem measurableSet_Ioi fun u hu => by
+        rw [norm_mul, Real.norm_eq_abs, Real.norm_eq_abs,
+          abs_of_pos (Real.exp_pos _)]
+        exact mul_le_mul_of_nonneg_left (hb (u/s) (div_nonneg hu.le hs.le))
+          (Real.exp_pos _).le
+    · have hi := (integrableOn_exp_mul_Ioi (a := (-1 : ℝ)) (by norm_num) 0).mul_const C
+      simpa only [neg_one_mul] using hi
+    · exact ae_restrict_of_forall_mem measurableSet_Ioi fun u hu => by
+        have huTop : Tendsto (fun s : ℝ => u/s) (𝓝[>] (0 : ℝ)) atTop := by
+          simpa only [div_eq_mul_inv] using
+            (tendsto_const_mul_atTop_iff_pos tendsto_inv_nhdsGT_zero).mpr hu
+        exact tendsto_const_nhds.mul (ht.comp huTop)
+  have hunit : (∫ u in Ioi (0 : ℝ), Real.exp (-u) * L) = L := by
+    rw [integral_mul_const]
+    have he := integral_exp_mul_Ioi (a := (-1 : ℝ)) (by norm_num) 0
+    norm_num at he
+    simpa only [neg_one_mul, he, one_mul]
+  rw [hunit] at hlim
+  apply hlim.congr'
+  filter_upwards [self_mem_nhdsWithin] with s hs
+  exact (laplace_rescale r hs).symm
+
+end ContinuousResearch.FinalValue
+
+#check ContinuousResearch.FinalValue.laplace_rescale
+#print ContinuousResearch.FinalValue.laplace_rescale
+#print axioms ContinuousResearch.FinalValue.laplace_rescale
+#check ContinuousResearch.FinalValue.bounded_final_value
+#print ContinuousResearch.FinalValue.bounded_final_value
+#print axioms ContinuousResearch.FinalValue.bounded_final_value
+```

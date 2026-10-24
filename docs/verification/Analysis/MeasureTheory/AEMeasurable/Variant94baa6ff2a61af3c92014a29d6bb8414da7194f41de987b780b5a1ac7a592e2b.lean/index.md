@@ -1,0 +1,120 @@
+# Verification target: GRWTSK.Analysis.MeasureTheory.AEMeasurable.Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8c1a73eeeeee7c6e18848965fb9a2c9cf35d6972",
+  "lexical_observation_count": 57,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/index.md) · [Full source](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8c1a73eeeeee7c6e18848965fb9a2c9cf35d6972`.
+
+Source path: `GRWTSK/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.MeasureTheory.Function.LpSeminorm.Trim` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.StronglyMeasurable.Inner` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.StronglyMeasurable.Lp` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [AEStronglyMeasurable'](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/aestronglymeasurable--c1afe586b3668b2eed7a07fb.md) | 56 | `declaration-track:c1afe586b3668b2eed7a07fbd82b33b43a7c95039a92cc11e27d09d19dcd3983` |
+| 2 | `theorem` | [congr](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/congr--ba613c4a36769f8c84e42bee.md) | 65 | `result-track:ba613c4a36769f8c84e42bee4ef9f27bc087ae8b9c3f934eb44f7e9700dd3853` |
+| 3 | `theorem` | [mono](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mono--93e07842e5c6c0494e62cc26.md) | 69 | `result-track:93e07842e5c6c0494e62cc2626b5e88b25cdd1ee8e27f004327e00c2f8d69934` |
+| 4 | `theorem` | [add](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/add--40815f2b15c4a8746110e986.md) | 73 | `result-track:40815f2b15c4a8746110e986ab712cd2e0623633e06d655319a3e6d037168a11` |
+| 5 | `theorem` | [neg](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/neg--eaa82a3b49abb0609fc06da6.md) | 78 | `result-track:eaa82a3b49abb0609fc06da6cfa8eee2920ab7d304079a54df782c48594a9310` |
+| 6 | `theorem` | [sub](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/sub--20e7562bf059b22f8b280c27.md) | 83 | `result-track:20e7562bf059b22f8b280c27de8ec133edd4c4b20b5f51180c188000b6072e8c` |
+| 7 | `theorem` | [const_smul](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/const-smul--6b6f6f3bd88bd25b457fc4fe.md) | 88 | `result-track:6b6f6f3bd88bd25b457fc4fe44ca7cfb64ff07ae6639c6552c18dc1c5eab100e` |
+| 8 | `theorem` | [const_inner](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/const-inner--8fed0ee96bff5abaea3ba5e4.md) | 93 | `result-track:8fed0ee96bff5abaea3ba5e4de8df9215e43ddb85cce41a7aacf4346707cec0c` |
+| 9 | `theorem` | [of_subsingleton](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/of-subsingleton--57604c707c60649acd0dec46.md) | 99 | `result-track:57604c707c60649acd0dec46070cb7ead7270f77dca4954e95e10f74256c04b5` |
+| 10 | `theorem` | [of_subsingleton'](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/of-subsingleton--f9ea763d0ac9fae9815d473f.md) | 102 | `result-track:f9ea763d0ac9fae9815d473f3875fb434224d050eeac0f4690501d87841302e9` |
+| 11 | `def` | [mk](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mk--d4b0d66ff2dd191b7b835d71.md) | 106 | `declaration-track:d4b0d66ff2dd191b7b835d71932daa6e6f4cef472d6ea86a93355d8123980b09` |
+| 12 | `theorem` | [stronglyMeasurable_mk](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/stronglymeasurable-mk--a9e9d0a23f771f4ffc429b66.md) | 110 | `result-track:a9e9d0a23f771f4ffc429b66b3986a5d4632185342851be0c9bb55109052303e` |
+| 13 | `theorem` | [ae_eq_mk](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/ae-eq-mk--144892fe95ca06232c619278.md) | 115 | `result-track:144892fe95ca06232c6192783a26ffb3925efd74a00065ef61001d4eb9e01443` |
+| 14 | `theorem` | [continuous_comp](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/continuous-comp--1bbec8927aa26bde444fae73.md) | 119 | `result-track:1bbec8927aa26bde444fae73363b3a3ac49ece830cb560e36ff6efdf63f1fba7` |
+| 15 | `theorem` | [aeStronglyMeasurable'_of_aeStronglyMeasurable'_trim](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/aestronglymeasurable-of-aestronglymeasurable-trim--1bfe5b519f3fc61cc52b3aa3.md) | 126 | `result-track:1bfe5b519f3fc61cc52b3aa37f065df75768d61650a99f81e1d2ad270cf6d9d6` |
+| 16 | `theorem` | [StronglyMeasurable.aeStronglyMeasurable'](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/stronglymeasurable-aestronglymeasurable--43ac62ee6659cef4feec1232.md) | 131 | `result-track:43ac62ee6659cef4feec12322c2430eadd6e5d3cefa9b1afa876675de50f128a` |
+| 17 | `theorem` | [ae_eq_trim_iff_of_aestronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/ae-eq-trim-iff-of-aestronglymeasurable--014497325c5927f47ec6ca80.md) | 135 | `result-track:014497325c5927f47ec6ca80f926db7a08d4667950172ece8f342d68ac060213` |
+| 18 | `theorem` | [AEStronglyMeasurable.comp_ae_measurable'](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/aestronglymeasurable-comp-ae-measurable--3638ae1b04a44f65558815a2.md) | 146 | `result-track:3638ae1b04a44f65558815a23cefad927211ed48b5c1b20fbd060a809e7b4aa4` |
+| 19 | `theorem` | [AEStronglyMeasurable'.aeStronglyMeasurable'_of_measurableSpace_le_on](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/aestronglymeasurable-aestronglymeasurable-of-measurablespace-le-on--4afb028ce4ae73dfda05c764.md) | 158 | `result-track:4afb028ce4ae73dfda05c7648ae64b7a455cd80cf3b0e1829306c1fd0a69a789` |
+| 20 | `def` | [lpMeasSubgroup](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgroup--0e536f52d6f07e2b4410a2d1.md) | 181 | `declaration-track:0e536f52d6f07e2b4410a2d1bb4f1f8bc2e7e43e99bc7919559dbd76ae413953` |
+| 21 | `def` | [lpMeas](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeas--4dae11d2155f0502ac4de0f7.md) | 193 | `declaration-track:4dae11d2155f0502ac4de0f7d7985cc094e0a6da2fdd0567818f795ccd5f310d` |
+| 22 | `theorem` | [mem_lpMeasSubgroup_iff_aestronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mem-lpmeassubgroup-iff-aestronglymeasurable--ae1f90d36811d621e4ef1ff1.md) | 202 | `result-track:ae1f90d36811d621e4ef1ff1c6b312d7bbe748551e419fecb11af39c1d9b0ed7` |
+| 23 | `theorem` | [mem_lpMeas_iff_aestronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mem-lpmeas-iff-aestronglymeasurable--b298392726abed48e2a4fb27.md) | 211 | `result-track:b298392726abed48e2a4fb27b8ab1967184a0fdd4f5200f199a8b5795702b696` |
+| 24 | `theorem` | [lpMeas.aestronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeas-aestronglymeasurable--03dcbc269a86130c6d255e8c.md) | 220 | `result-track:03dcbc269a86130c6d255e8ccc52cdfd0b0f07d13fe477e5fc82c75f9caf157f` |
+| 25 | `theorem` | [mem_lpMeas_self](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mem-lpmeas-self--8b75eb3ae5dcc6363cb197c7.md) | 229 | `result-track:8b75eb3ae5dcc6363cb197c7d35c15e0a0f36ee7e3a18454dfe29759843b4e2f` |
+| 26 | `theorem` | [mem_lpMeas_indicatorConstLp](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mem-lpmeas-indicatorconstlp--f82d4d14242bf8412c395f69.md) | 233 | `result-track:f82d4d14242bf8412c395f6964b459d728ac5a7df05364f31687c666db5f64b2` |
+| 27 | `theorem` | [memLp_trim_of_mem_lpMeasSubgroup](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/memlp-trim-of-mem-lpmeassubgroup--6a619c4ef44b3bb26925792c.md) | 252 | `result-track:6a619c4ef44b3bb26925792c211d84d2ef38f553431df40eeb732ac8a46f8895` |
+| 28 | `theorem` | [mem_lpMeasSubgroup_toLp_of_trim](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/mem-lpmeassubgroup-tolp-of-trim--ffa30c7f91d3fe0c92a45e56.md) | 272 | `result-track:ffa30c7f91d3fe0c92a45e5690639576e57f0eee0844efce70e270510bd96baa` |
+| 29 | `def` | [lpMeasSubgroupToLpTrim](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim--06f796fff4f357729fc0cce3.md) | 282 | `declaration-track:06f796fff4f357729fc0cce3e5e251b3784673473ce4f440acff1359c3bd63b4` |
+| 30 | `def` | [lpMeasToLpTrim](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeastolptrim--ae29f639f437973ac45c5b32.md) | 289 | `declaration-track:ae29f639f437973ac45c5b32ac114c6e1b6d3c74d2354a1e385510bdb14c8ba7` |
+| 31 | `def` | [lpTrimToLpMeasSubgroup](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lptrimtolpmeassubgroup--966cbcd4113863cbc1c4f51f.md) | 295 | `declaration-track:966cbcd4113863cbc1c4f51f6f959cbcaddb6f07d0b46ac261e7e13c727301de` |
+| 32 | `def` | [lpTrimToLpMeas](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lptrimtolpmeas--e90c827bca46637887b0d4f2.md) | 301 | `declaration-track:e90c827bca46637887b0d4f259ade74ed2158529a5cce241924eddab31a8bd9b` |
+| 33 | `theorem` | [lpMeasSubgroupToLpTrim_ae_eq](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-ae-eq--3a744c0471bd6f313eccbabb.md) | 306 | `result-track:3a744c0471bd6f313eccbabb2e752896767840c36b57e1e816c91fd8fbc049fa` |
+| 34 | `theorem` | [lpTrimToLpMeasSubgroup_ae_eq](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lptrimtolpmeassubgroup-ae-eq--d51b64e8c187eaa3b85fd186.md) | 311 | `result-track:d51b64e8c187eaa3b85fd186c4a2a54a36d2354ea5be8c72cd06e0222663fcdd` |
+| 35 | `theorem` | [lpMeasToLpTrim_ae_eq](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeastolptrim-ae-eq--e82495f7c71b69dd6ee4edab.md) | 315 | `result-track:e82495f7c71b69dd6ee4edabc44c68b2ceaa50b5926264294c95732845b96ed1` |
+| 36 | `theorem` | [lpTrimToLpMeas_ae_eq](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lptrimtolpmeas-ae-eq--5260fef1383549109afae537.md) | 320 | `result-track:5260fef1383549109afae5373cbecf9d43bab42ae91f502b82f95e49e131b3f9` |
+| 37 | `theorem` | [lpMeasSubgroupToLpTrim_right_inv](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-right-inv--f1b4604a6cbfdbbfa47056e4.md) | 325 | `result-track:f1b4604a6cbfdbbfa47056e4e671419b461f2ef51277146ce7ccbd6689b3e483` |
+| 38 | `theorem` | [lpMeasSubgroupToLpTrim_left_inv](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-left-inv--4a435a9ce227cb9fb3ad4418.md) | 334 | `result-track:4a435a9ce227cb9fb3ad4418dafa368d0aa5486de6702b182d3cd9a321bc5992` |
+| 39 | `theorem` | [lpMeasSubgroupToLpTrim_add](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-add--5f8fa9a76fa2af7a9bd29a0f.md) | 341 | `result-track:5f8fa9a76fa2af7a9bd29a0f82ea70f90239c68266a804613f5dada2c0f11925` |
+| 40 | `theorem` | [lpMeasSubgroupToLpTrim_neg](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-neg--6f92a6ca93aebbbb866ccd5c.md) | 356 | `result-track:6f92a6ca93aebbbb866ccd5ca751bf325d8a26f3258bd3e27183439c7251f36a` |
+| 41 | `theorem` | [lpMeasSubgroupToLpTrim_sub](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-sub--c0d6de271d88784e8e4823ee.md) | 365 | `result-track:c0d6de271d88784e8e4823eed5e23c9d854c8cd5cf55075f227968c5e5fdd3e9` |
+| 42 | `theorem` | [lpMeasToLpTrim_smul](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeastolptrim-smul--002340865a2edc96c7ceabf2.md) | 371 | `result-track:002340865a2edc96c7ceabf21662562fdd4fbb2a861bf9082e71a776ef677fae` |
+| 43 | `theorem` | [lpMeasSubgroupToLpTrim_norm_map](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrim-norm-map--b6dfb090e78206a57ae41e1d.md) | 383 | `result-track:b6dfb090e78206a57ae41e1d5630d9d3bbbf9b9cc33c7df751a4e21712fcb4d8` |
+| 44 | `theorem` | [isometry_lpMeasSubgroupToLpTrim](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/isometry-lpmeassubgrouptolptrim--528ac4d4edcf14a06083d003.md) | 389 | `result-track:528ac4d4edcf14a06083d003fab7dcc418493d1134eb3976695b735aec40aa8a` |
+| 45 | `def` | [lpMeasSubgroupToLpTrimIso](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolptrimiso--9c18f7799def6e87ef3e5187.md) | 398 | `declaration-track:9c18f7799def6e87ef3e51878c89c98ca9f91c7ed3730452c6e2075fa40352d3` |
+| 46 | `def` | [lpMeasSubgroupToLpMeasIso](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeassubgrouptolpmeasiso--504063d8453887d0ef40fd53.md) | 409 | `declaration-track:504063d8453887d0ef40fd5338f4ba7fc1943ae485e97b847eef2ea135a97c10` |
+| 47 | `def` | [lpMeasToLpTrimLie](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeastolptrimlie--69e6c34b4472378ee21d2dfc.md) | 414 | `declaration-track:69e6c34b4472378ee21d2dfc1266a376f885e0726982a5b6b90cca4878aac30c` |
+| 48 | `instance` | [(anonymous)](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/instance--4bc8453f9967dc16d96dda6b.md) | 426 | `declaration-track:4bc8453f9967dc16d96dda6beb7e96ca203af21548b09605a1acff9ea1493614` |
+| 49 | `instance` | [(anonymous)](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/instance--1b3d8084470997369bd9e65b.md) | 434 | `declaration-track:1b3d8084470997369bd9e65b1eb32055e05bfe5133b54148b1bc03e0bcf0cc9e` |
+| 50 | `theorem` | [isComplete_aestronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/iscomplete-aestronglymeasurable--20e087096e7dff6631560276.md) | 438 | `result-track:20e087096e7dff6631560276e30d54f3b549d51e063af6b8c3a5dc2ba500a713` |
+| 51 | `theorem` | [isClosed_aestronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/isclosed-aestronglymeasurable--3c444dfc6bdc6e65437cc625.md) | 448 | `result-track:3c444dfc6bdc6e65437cc6253d179e7f8ce4816e43e07130496e660e9e2496e6` |
+| 52 | `theorem` | [lpMeas.ae_fin_strongly_measurable'](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeas-ae-fin-strongly-measurable--651a8883ae0a24e2c2bc3bf1.md) | 464 | `result-track:651a8883ae0a24e2c2bc3bf157083187b1bb29e865df5c582289bcc7d81c6fb7` |
+| 53 | `theorem` | [lpMeasToLpTrimLie_symm_indicator](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeastolptrimlie-symm-indicator--68d6aba68205397bc4d3bd0e.md) | 473 | `result-track:68d6aba68205397bc4d3bd0e5c13d4f6be060b31d1a758ad10ed0f3bce4a0477` |
+| 54 | `theorem` | [lpMeasToLpTrimLie_symm_toLp](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lpmeastolptrimlie-symm-tolp--d25c69a21cdc2e1a4c6612dd.md) | 484 | `result-track:d25c69a21cdc2e1a4c6612ddb4d5261191c5db43fd4e70ac6a4ba410bb765aab` |
+| 55 | `theorem` | [Lp.induction_stronglyMeasurable_aux](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lp-induction-stronglymeasurable-aux--594dad931759acf161acdaaf.md) | 502 | `result-track:594dad931759acf161acdaafceda884cd8b51057c445d53b24c1c01157243266` |
+| 56 | `theorem` | [Lp.induction_stronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/lp-induction-stronglymeasurable--fd40253ee46d04a80a60af80.md) | 548 | `result-track:fd40253ee46d04a80a60af80bc1f9b45856e872840b6ff1ddfcfc12e26452698` |
+| 57 | `theorem` | [MemLp.induction_stronglyMeasurable](../../../../../mathematics/Analysis/MeasureTheory/AEMeasurable/Variant94baa6ff2a61af3c92014a29d6bb8414da7194f41de987b780b5a1ac7a592e2b.lean/declarations/memlp-induction-stronglymeasurable--18dbb7b3b1320c8135a7b468.md) | 611 | `result-track:18dbb7b3b1320c8135a7b468f514b286ec9b36fd09797863af97a68f824795d6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

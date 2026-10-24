@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.UpperObservationAudit.Variant96eba0d901c281316e45726624403e292a1384963121b3fda5a6dcafbfddfff7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2dde42babd767cda97f67290b5590d07d0b44d12` · SHA-256 `96eba0d901c281316e45726624403e292a1384963121b3fda5a6dcafbfddfff7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import scratch.mertens.UpperObservation
+set_option pp.universes true
+set_option pp.explicit true
+#check @UpperObservationScratch.finiteObservation
+#print axioms UpperObservationScratch.finiteObservation
+#check @UpperObservationScratch.source_shift_zero_above_cutoff
+#print axioms UpperObservationScratch.source_shift_zero_above_cutoff
+#check @UpperObservationScratch.finite_observation_inversion
+#print axioms UpperObservationScratch.finite_observation_inversion
+#check @UpperObservationScratch.upper_observation_zero_of_log_two_le
+#print axioms UpperObservationScratch.upper_observation_zero_of_log_two_le
+#check @UpperObservationScratch.upper_observation_shift_zero
+#print axioms UpperObservationScratch.upper_observation_shift_zero
+#check @UpperObservationScratch.upper_observation_eq_source_sub_lower_shifts
+#print axioms UpperObservationScratch.upper_observation_eq_source_sub_lower_shifts
+#check @UpperObservationScratch.finiteObservation_continuous
+#print axioms UpperObservationScratch.finiteObservation_continuous
+#check @UpperObservationScratch.finiteObservation_hasCompactSupport
+#print axioms UpperObservationScratch.finiteObservation_hasCompactSupport
+#check @UpperObservationScratch.finiteObservation_square_integrable
+#print axioms UpperObservationScratch.finiteObservation_square_integrable
+#check @UpperObservationScratch.finiteObservation_reflection_integrable
+#print axioms UpperObservationScratch.finiteObservation_reflection_integrable
+#check @UpperObservationScratch.shifted_source_reflection
+#print axioms UpperObservationScratch.shifted_source_reflection
+#check @UpperObservationScratch.finiteObservation_reflection_eq
+#print axioms UpperObservationScratch.finiteObservation_reflection_eq
+#check @UpperObservationScratch.reflection_abs_le_local_square
+#print axioms UpperObservationScratch.reflection_abs_le_local_square
+#check @UpperObservationScratch.upper_reflection_abs_le_local_square
+#print axioms UpperObservationScratch.upper_reflection_abs_le_local_square
+#check @UpperObservationScratch.upper_local_square_eq_core_error
+#print axioms UpperObservationScratch.upper_local_square_eq_core_error
+#check @UpperObservationScratch.core_error_square_integrableOn
+#print axioms UpperObservationScratch.core_error_square_integrableOn
+#check @UpperObservationScratch.upperChannel_eq_reflection
+#print axioms UpperObservationScratch.upperChannel_eq_reflection
+#check @UpperObservationScratch.upperChannel_abs_le_local_square
+#print axioms UpperObservationScratch.upperChannel_abs_le_local_square
+#check @UpperObservationScratch.sourceQuadraticValue_ge_core_sub_local_square
+#print axioms UpperObservationScratch.sourceQuadraticValue_ge_core_sub_local_square
+```

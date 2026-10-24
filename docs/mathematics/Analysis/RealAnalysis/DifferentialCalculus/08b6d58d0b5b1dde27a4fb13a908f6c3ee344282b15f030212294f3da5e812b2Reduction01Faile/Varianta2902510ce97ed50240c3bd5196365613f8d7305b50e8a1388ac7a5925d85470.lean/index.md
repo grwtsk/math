@@ -1,0 +1,28 @@
+# GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.08b6d58d0b5b1dde27a4fb13a908f6c3ee344282b15f030212294f3da5e812b2Reduction01Faile.Varianta2902510ce97ed50240c3bd5196365613f8d7305b50e8a1388ac7a5925d85470
+
+[Complete source index](../../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/08b6d58d0b5b1dde27a4fb13a908f6c3ee344282b15f030212294f3da5e812b2Reduction01Faile/Varianta2902510ce97ed50240c3bd5196365613f8d7305b50e8a1388ac7a5925d85470.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `417665fc3af7b5009a9fd86a0d6751867872d726`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Analysis/RealAnalysis/DifferentialCalculus/08b6d58d0b5b1dde27a4fb13a908f6c3ee344282b15f030212294f3da5e812b2Reduction01Faile/Varianta2902510ce97ed50240c3bd5196365613f8d7305b50e8a1388ac7a5925d85470.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [det_fin_three_normalize_first_row](declarations/det-fin-three-normalize-first-row--5268fe99dbe00c4ec04055a3.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [det_fin_three_normalized_eq_differences](declarations/det-fin-three-normalized-eq-differences--23a5e1683807e23bde4a39db.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [det_fin_three_normalized_eq_secants](declarations/det-fin-three-normalized-eq-secants--4137d5a80dadd7f8d50ad511.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [oriented_plucker_three_scalar](declarations/oriented-plucker-three-scalar--4de436f11e7085ccfd7f1456.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [oriented_plucker_three](declarations/oriented-plucker-three--3f49d1be96cc50e42017aabd.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [image_sub_neg_of_hasDerivAt_neg](declarations/image-sub-neg-of-hasderivat-neg--7f3848c0d6ba07e3404f9ef4.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [normalized_det_nonpos_of_antitone_deriv_ratio](declarations/normalized-det-nonpos-of-antitone-deriv-ratio--74562a8c0ef1737e372e21d6.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
