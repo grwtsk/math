@@ -10,7 +10,7 @@ Owner: grwtsk/math#722. Parent PR #712 exact head
 import GRWTSK.GroupTheory.Words.IntegralHomologyPrimitive
 import Mathlib.GroupTheory.Abelianization.Defs
 import Mathlib.Tactic.Ext
-import Mathlib.Tactic.Ring.Basic
+import Mathlib.Tactic.Ring
 
 /-!
 # A primitive non-power invisible to abelianization
