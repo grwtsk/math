@@ -427,3 +427,13 @@ Such checks have **NOT_RUN** in the current environment: no installed
 \`lean\`, \`lake\` or \`elan\`. Source/blob readback and ordinary
 finite graph tests do not establish kernel acceptance. No public-root
 promotion, remote executor dispatch, or force push was performed.
+
+
+**New source-bound verification:** [issue #1182](https://github.com/grwtsk/math/issues/1182)
+pins the finite right-context theorem, dynamic spectral bridge and
+zeta-ordinate conditional interface to exact math main commit
+\`9172c906491d4f0e51c5afb7a5441d1c3a0e756b\`,
+with unchanged mathematical source blobs. It requests warning-clean
+transitive builds, direct elaboration, trust-zero checks, fresh kernel
+replay and complete axiom/unsafe auditing on an authorized non-Railway
+executor. The issue is **OPEN / NOT_RUN**, not an acceptance receipt.
