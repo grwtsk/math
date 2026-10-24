@@ -1,0 +1,68 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.EulerPrimeDivergenceIndex.Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "00a50451626698a023304cfa67173a4bf644cd1a",
+  "lexical_observation_count": 6,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/index.md) · [Full source](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `00a50451626698a023304cfa67173a4bf644cd1a`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Folder.Rebuild.AnalyticNumberTheory.EulerPrimeReciprocalDivergence` — import line 1; external provider; requires a separately pinned dependency.
+- `Folder.Rebuild.Exposition.RealEulerProductIndex` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [harmonicSeriesDivergenceAnchor](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/declarations/harmonicseriesdivergenceanchor--0f109a06c0f869beacbf9762.md) | 14 | `declaration-track:0f109a06c0f869beacbf976295d2d46ea98c94dcd02d439d55130c19c17cd217` |
+| 2 | `def` | [finiteEulerProductAtOneAnchor](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/declarations/finiteeulerproductatoneanchor--6ba05dc689d4d3f1ccd77067.md) | 24 | `declaration-track:6ba05dc689d4d3f1ccd77067bd6746ee7887f611446754e8b54b783054fd741b` |
+| 3 | `def` | [eulerPrimeReciprocalDivergenceAnchor](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/declarations/eulerprimereciprocaldivergenceanchor--db6c3a3f0c98dae7dd7de7ad.md) | 34 | `declaration-track:db6c3a3f0c98dae7dd7de7add7e20379d3acb1d6ffef0b04db43e730b33231db` |
+| 4 | `def` | [pntStrongerAsymptoticStillTargetAnchor](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/declarations/pntstrongerasymptoticstilltargetanchor--96148ef79b2913814f237acc.md) | 44 | `declaration-track:96148ef79b2913814f237acc48c0ef4cfc23c838019b854c9f2181f8a1385881` |
+| 5 | `def` | [zeroFreeLineStillTargetAnchor](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/declarations/zerofreelinestilltargetanchor--ee51a94d497fcefb603c432b.md) | 54 | `declaration-track:ee51a94d497fcefb603c432b26c54ce1a1e596fd5c3d64848215ab74389c2434` |
+| 6 | `def` | [eulerPrimeDivergenceAnchors](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerPrimeDivergenceIndex/Variant906effc6806579cc0e63fc12f2948098715ac39a0e3d0068268a1c9694e39128.lean/declarations/eulerprimedivergenceanchors--8ab1b495bce103b32b89e76b.md) | 64 | `declaration-track:8ab1b495bce103b32b89e76bed84e308696763802600911bc01e1efa0d82fadb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

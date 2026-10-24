@@ -1,0 +1,99 @@
+# no_starvation
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:01055f7b-8975-2a77-3843-38e00dd330e2",
+  "kind": "theorem",
+  "lexical_name": "no_starvation",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "no-starvation--7ae21290be5e8843a60e116f",
+  "source": {
+    "blob": "082f7a14cea422527f4ff132e2fb00cefd9e75cd",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 150,
+    "line": 133,
+    "path": "GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:7ae21290be5e8843a60e116f8d32809ea7830e9d527dc4530f5dd431fdab126c",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/Sequences/QuotaDiscrepancy__SourceOccurrence3d180443656bc0c5a13b8b2a.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:01055f7b-8975-2a77-3843-38e00dd330e2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 133–150.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem no_starvation {m : ℕ} (hm : 0 < m) (Q : ℕ) (hQ : 0 < Q)
+    (p : ℕ → Fin m → ℤ) (w : ℕ → Fin m) (i : Fin m)
+    (hp : ∀ n, ∑ j, p n j = (Q : ℤ)) (hn : ∀ n j, 0 ≤ p n j)
+    (hfloor : ∀ n, 1 ≤ p n i)
+    (hw : ∀ n j, debt (Q : ℤ) p w n j + p n j ≤ debt (Q : ℤ) p w n (w n) + p n (w n))
+    (K : ℕ) : ∃ n, K < count w i n := by
+  let n := Q*K + (m-1)*Q + 1
+  refine ⟨n, ?_⟩
+  have h := service_bound hm (Q : ℤ) (by exact_mod_cast hQ) p w i 1 (by omega) hp hn hfloor hw n
+  have hm' : 1 ≤ m := hm
+  have hn' : (n : ℤ) = (Q : ℤ)*(K : ℤ)+((m : ℤ)-1)*(Q : ℤ)+1 := by
+    simp [n,Int.natCast_sub hm']
+  have hpos : (0 : ℤ) < Q := by exact_mod_cast hQ
+  by_contra hc
+  have hc' : (count w i n : ℤ) ≤ K := by exact_mod_cast (show count w i n ≤ K by omega)
+  rw [hn'] at h
+  nlinarith
+end GRWTSK.Analysis.Waveform.Scheduling
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/Sequences/QuotaDiscrepancy__SourceOccurrence3d180443656bc0c5a13b8b2a.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Combinatorics/Sequences/QuotaDiscrepancy.lean#L133).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `082f7a14cea422527f4ff132e2fb00cefd9e75cd` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

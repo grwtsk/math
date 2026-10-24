@@ -1,0 +1,118 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Girth.Variant094f5a596770d3f5fa3297329657fd01ae57ce3cefa1b21994a0f5c37596ff52
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `17bf81f2fde48aaed622fb8091017ae976de9fbd` · SHA-256 `a6a66565b34c1dbbba426030d3b18b3d532fc09b00941b8f7b38baa8adeea97f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.GraphTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Egirth.Variant0aac6e2eea2ae43325aba43c8c8785e53d29125fb724944d982f742247882f73","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0aac6e2eea2ae43325aba43c8c8785e53d29125fb724944d982f742247882f73","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.GraphTheory.SourceCorpus.Egirth.Variant0aac6e2eea2ae43325aba43c8c8785e53d29125fb724944d982f742247882f73","mathematical_subject":"Combinatorics.GraphTheory","original_sha256":"0aac6e2eea2ae43325aba43c8c8785e53d29125fb724944d982f742247882f73","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Combinatorics/SimpleGraph/Girth.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+import Mathlib.Combinatorics.SimpleGraph.Acyclic
+import Mathlib.Data.ENat.Lattice
+
+/-!
+# Girth of a simple graph
+
+This file defines the girth and the extended girth of a simple graph as the length of its smallest
+cycle, they give `0` or `∞` respectively if the graph is acyclic.
+
+## TODO
+
+- Prove that `G.egirth ≤ 2 * G.ediam + 1` and `G.girth ≤ 2 * G.diam + 1` when the diameter is
+  non-zero.
+
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Egirth.Variant0aac6e2eea2ae43325aba43c8c8785e53d29125fb724944d982f742247882f73
+
+namespace SimpleGraph
+variable {α : Type*} {G : SimpleGraph α}
+
+section egirth
+
+
+/--
+The extended girth of a simple graph is the length of its smallest cycle, or `∞` if the graph is
+acyclic.
+-/
+noncomputable def egirth (G : SimpleGraph α) : ℕ∞ :=
+  ⨅ a, ⨅ w : G.Walk a a, ⨅ _ : w.IsCycle, w.length
+
+@[simp]
+lemma le_egirth {n : ℕ∞} : n ≤ G.egirth ↔ ∀ a (w : G.Walk a a), w.IsCycle → n ≤ w.length := by
+  simp [egirth]
+
+@[simp]
+lemma egirth_eq_top : G.egirth = ⊤ ↔ G.IsAcyclic := by simp [egirth, IsAcyclic]
+
+protected alias ⟨_, IsAcyclic.egirth_eq_top⟩ := egirth_eq_top
+
+lemma egirth_anti : Antitone (egirth : SimpleGraph α → ℕ∞) :=
+  fun G H h ↦ iInf_mono fun a ↦ iInf₂_mono' fun w hw ↦ ⟨w.mapLe h, hw.mapLe _, by simp⟩
+
+lemma exists_egirth_eq_length :
+    (∃ (a : α) (w : G.Walk a a), w.IsCycle ∧ G.egirth = w.length) ↔ ¬ G.IsAcyclic := by
+  refine ⟨?_, fun h ↦ ?_⟩
+  · rintro ⟨a, w, hw, _⟩ hG
+    exact hG _ hw
+  · simp_rw [← egirth_eq_top, ← Ne.eq_def, egirth, iInf_subtype', iInf_sigma', ENat.iInf_coe_ne_top,
+      ← exists_prop, Subtype.exists', Sigma.exists', eq_comm] at h ⊢
+    exact ciInf_mem _
+
+lemma three_le_egirth : 3 ≤ G.egirth := by
+  by_cases h : G.IsAcyclic
+  · rw [← egirth_eq_top] at h
+    rw [h]
+    apply le_top
+  · rw [← exists_egirth_eq_length] at h
+    have ⟨_, _, _⟩ := h
+    simp_all only [Nat.cast_inj, Nat.ofNat_le_cast, Walk.IsCycle.three_le_length]
+
+@[simp] lemma egirth_bot : egirth (⊥ : SimpleGraph α) = ⊤ := by simp
+
+end egirth
+
+section girth
+
+
+/--
+The girth of a simple graph is the length of its smallest cycle, or junk value `0` if the graph is
+acyclic.
+-/
+noncomputable def girth (G : SimpleGraph α) : ℕ :=
+  G.egirth.toNat
+
+lemma three_le_girth (hG : ¬ G.IsAcyclic) : 3 ≤ G.girth :=
+  ENat.toNat_le_toNat three_le_egirth <| egirth_eq_top.not.mpr hG
+
+lemma girth_eq_zero : G.girth = 0 ↔ G.IsAcyclic :=
+  ⟨fun h ↦ not_not.mp <| three_le_girth.mt <| by omega, fun h ↦ by simp [girth, h]⟩
+
+protected alias ⟨_, IsAcyclic.girth_eq_zero⟩ := girth_eq_zero
+
+lemma girth_anti {G' : SimpleGraph α} (hab : G ≤ G') (h : ¬ G.IsAcyclic) : G'.girth ≤ G.girth :=
+  ENat.toNat_le_toNat (egirth_anti hab) <| egirth_eq_top.not.mpr h
+
+lemma exists_girth_eq_length :
+    (∃ (a : α) (w : G.Walk a a), w.IsCycle ∧ G.girth = w.length) ↔ ¬ G.IsAcyclic := by
+  refine ⟨by tauto, fun h ↦ ?_⟩
+  obtain ⟨_, _, _⟩ := exists_egirth_eq_length.mpr h
+  simp_all only [girth, ENat.toNat_coe]
+  tauto
+
+@[simp] lemma girth_bot : girth (⊥ : SimpleGraph α) = 0 := by
+  simp [girth]
+
+end girth
+
+end SimpleGraph
+```

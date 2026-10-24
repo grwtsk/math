@@ -1,0 +1,105 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.ULift.Variant82ae1561add4be3aec94fafdd8ccb70b2d9f0b43e3a3b19e9aeb22c2213a2fe6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `337628c09bcfd9a626f9c0a32ea84112dc2f7a59` · SHA-256 `e26e1335c72d0ca1a587cc0e3dda2db21636401ffb0270f2307c9af99b7edda7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.ULift.Variantf0e3f46dcaecd477266adb22f3aca5927e3c72c31a7a922f1b2b1c9d5449d8a4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f0e3f46dcaecd477266adb22f3aca5927e3c72c31a7a922f1b2b1c9d5449d8a4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.OrderTheory.SourceCorpus.ULift.Variantf0e3f46dcaecd477266adb22f3aca5927e3c72c31a7a922f1b2b1c9d5449d8a4","mathematical_subject":"Algebra.OrderTheory","original_sha256":"f0e3f46dcaecd477266adb22f3aca5927e3c72c31a7a922f1b2b1c9d5449d8a4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Order/ULift.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+import Mathlib.Logic.Function.ULift
+import Mathlib.Order.Basic
+
+/-! # Ordered structures on `ULift.{v} α`
+
+Once these basic instances are setup, the instances of more complex typeclasses should live next to
+the corresponding `Prod` instances.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.ULift.Variantf0e3f46dcaecd477266adb22f3aca5927e3c72c31a7a922f1b2b1c9d5449d8a4
+
+namespace ULift
+
+open Batteries
+
+universe v u
+
+variable {α : Type u}
+
+instance [LE α] : LE (ULift.{v} α) where le x y := x.down ≤ y.down
+
+@[simp] theorem up_le [LE α] {a b : α} : up a ≤ up b ↔ a ≤ b := Iff.rfl
+@[simp] theorem down_le [LE α] {a b : ULift α} : down a ≤ down b ↔ a ≤ b := Iff.rfl
+
+instance [LT α] : LT (ULift.{v} α) where lt x y := x.down < y.down
+
+@[simp] theorem up_lt [LT α] {a b : α} : up a < up b ↔ a < b := Iff.rfl
+@[simp] theorem down_lt [LT α] {a b : ULift α} : down a < down b ↔ a < b := Iff.rfl
+
+instance [BEq α] : BEq (ULift.{v} α) where beq x y := x.down == y.down
+
+@[simp] theorem up_beq [BEq α] (a b : α) : (up a == up b) = (a == b) := rfl
+@[simp] theorem down_beq [BEq α] (a b : ULift α) : (down a == down b) = (a == b) := rfl
+
+instance [Ord α] : Ord (ULift.{v} α) where compare x y := compare x.down y.down
+
+@[simp] theorem up_compare [Ord α] (a b : α) : compare (up a) (up b) = compare a b := rfl
+@[simp] theorem down_compare [Ord α] (a b : ULift α) :
+  compare (down a) (down b) = compare a b := rfl
+
+instance [Max α] : Max (ULift.{v} α) where max x y := up <| x.down ⊔ y.down
+
+@[simp] theorem up_sup [Max α] (a b : α) : up (a ⊔ b) = up a ⊔ up b := rfl
+@[simp] theorem down_sup [Max α] (a b : ULift α) : down (a ⊔ b) = down a ⊔ down b := rfl
+
+instance [Min α] : Min (ULift.{v} α) where min x y := up <| x.down ⊓ y.down
+
+@[simp] theorem up_inf [Min α] (a b : α) : up (a ⊓ b) = up a ⊓ up b := rfl
+@[simp] theorem down_inf [Min α] (a b : ULift α) : down (a ⊓ b) = down a ⊓ down b := rfl
+
+instance [SDiff α] : SDiff (ULift.{v} α) where sdiff x y := up <| x.down \ y.down
+
+@[simp] theorem up_sdiff [SDiff α] (a b : α) : up (a \ b) = up a \ up b := rfl
+@[simp] theorem down_sdiff [SDiff α] (a b : ULift α) : down (a \ b) = down a \ down b := rfl
+
+instance [HasCompl α] : HasCompl (ULift.{v} α) where compl x := up <| x.downᶜ
+
+@[simp] theorem up_compl [HasCompl α] (a : α) : up (aᶜ) = (up a)ᶜ := rfl
+@[simp] theorem down_compl [HasCompl α] (a : ULift α) : down aᶜ = (down a)ᶜ := rfl
+
+instance [Ord α] [inst : OrientedOrd α] : OrientedOrd (ULift.{v} α) where
+  symm _ _ := inst.symm ..
+
+instance [Ord α] [inst : TransOrd α] : TransOrd (ULift.{v} α) where
+  le_trans := inst.le_trans
+
+instance [BEq α] [Ord α] [inst : BEqOrd α] : BEqOrd (ULift.{v} α) where
+  cmp_iff_beq := inst.cmp_iff_beq
+
+instance [LT α] [Ord α] [inst : LTOrd α] : LTOrd (ULift.{v} α) where
+  cmp_iff_lt := inst.cmp_iff_lt
+
+instance [LE α] [Ord α] [inst : LEOrd α] : LEOrd (ULift.{v} α) where
+  cmp_iff_le := inst.cmp_iff_le
+
+instance [LE α] [LT α] [BEq α] [Ord α] [inst : LawfulOrd α] : LawfulOrd (ULift.{v} α) where
+  cmp_iff_lt := inst.cmp_iff_lt
+  cmp_iff_le := inst.cmp_iff_le
+
+instance [Preorder α] : Preorder (ULift.{v} α) :=
+  Preorder.lift ULift.down
+
+instance [PartialOrder α] : PartialOrder (ULift.{v} α) :=
+  PartialOrder.lift ULift.down ULift.down_injective
+
+end ULift
+```

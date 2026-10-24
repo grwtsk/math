@@ -1,0 +1,149 @@
+# primitiveElementKeysChunk0022
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:97d46433ec8d44ffda302e6e2395a3771c4081c3e1dccc7c51d25581e56eeed2",
+  "kind": "def",
+  "lexical_name": "primitiveElementKeysChunk0022",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "primitiveelementkeyschunk0022--329ddf685e54f3b3fdc769e6",
+  "source": {
+    "blob": "b490c038c78433c4a86e2ade48f4c15c665c91c2",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1590,
+    "line": 1523,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:329ddf685e54f3b3fdc769e61df03c399457b583011a2835b75337d57f8f4e5d",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:97d46433ec8d44ffda302e6e2395a3771c4081c3e1dccc7c51d25581e56eeed2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1523–1590.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private def primitiveElementKeysChunk0022 : List String :=
+[
+  "python-point:82d74ec23a61b27fd31edcf169441cf6e972a18e016922f60febee86c23ff86a",
+  "python-point:831cf73a2d7a4749ac98debfac3df1b76330d234fc21c3af813382dc13e74570",
+  "python-point:832007e778848fab6286c347336fa14493ef27d3d99709c59214a83d1e4f16ca",
+  "python-point:83235bde41e1efb4b31f41834a13ed7b884135a40b6dee2bc2d1ead7ab70509e",
+  "python-point:83250b1eb3aea4767aa008f389ea29bfd007d2695894a516d9654ba000510855",
+  "python-point:8335e1a408164ba48a0e5a4b7eaa188ebf2be9e5d4de3b0816b614e2d4f1358c",
+  "python-point:833f6cdf3af9022171ab446bf5642f543b26c1352948a84ccd7ea8a057501afb",
+  "python-point:834e224526edf5bbfda85f826b36a168ed715f05b887a942f1d7f99514975574",
+  "python-point:8350e9cba700af8f7ab536588c485b0c78e01d95a9f11e8d99ce6c5b3d035e75",
+  "python-point:83721049a2e45a26da1147f575a0c232737c66cfd26dd5f9e0a7b8a91f515803",
+  "python-point:83a81ad78098530988f8c15b1eb7b8ab6f95b9ec60a0c82d892210f653ce872d",
+  "python-point:83c6e96ac0ba1e2776e677d738cbe419a41c4580b81a1c0384ab1da4eac473db",
+  "python-point:83c9f7d5df6bae8749f1b2cb3507ca151c6bfe8713c29cbf1e810c6de4a33720",
+  "python-point:83d0032e1fa0f0b97e7d998d922eb15b36eb3ce1a6e263b56196be84e9c7bea9",
+  "python-point:83edf5a6189a1f59554e5750ddbb450b57d8c537deab288d3c4b257cd40deddb",
+  "python-point:83f12e0aa7c6740b8eabe1b5ae288fe00fa23e552c53671c49d5204de186a123",
+  "python-point:83fa457f4869e8afb2defd5bd4341aa96d70c373afcdfd7d3921ae4e151d95fc",
+  "python-point:8400264760f1919a7ab1c359b460c0edde34011f714d5771bdbe62527f3ecb9e",
+  "python-point:84060e8b5ec6823327668c98142169ff8f20f9ce841bad8b78d070ed7c306d8b",
+  "python-point:840e9790e81bb9bd0b430bccc61da25c35f6b787be10174bbd66182077a590f5",
+  "python-point:8411c3b9f2083dbff3d2d57169af2443fbe4f713a29b8811fe9abd449e8eb154",
+  "python-point:841242123b4878038f11988b814ee9a0c1f526f2bc0f43ae3faf501a666078e1",
+  "python-point:841a0511e99d6a42422e9d639290b6163722d0cc4ddb74f24ad9cb25dc440dc4",
+  "python-point:843c4698b99509f383484533b47f7f9ef4cd0ad8066c57cfcd33ee51792319de",
+  "python-point:843e40c05a700fa0b2359388917ac8748d1003ea96439236adaa73321c68f698",
+  "python-point:844b05d7ef2d2ed918e340fe041a34ea6875621ac65a8565621f53f71e484f07",
+  "python-point:848fd93c0423036295560a7b2f01bc210d9a8ca371108dd98eae7b57c4edf904",
+  "python-point:84df2631edeab3a04c50757bccc0d41b591d5ededb0946ba4a928c0b353e62da",
+  "python-point:84e15c9e8cada155a6e334379f168949bc11ad01a5d6d9ec0fd73e627a1b969b",
+  "python-point:84f3d411eb6d8a08bd90c95e74e42cee23c2b8c922f32087e5d34ee653bc10bf",
+  "python-point:8501cb3a26f8665553ab6424777d105e6bffe30c05488a51c9cb56abf78073f9",
+  "python-point:853a7cb1c9bc2d58e8672027abcb7992f9365b503b49ccbadf0d81d4c5022dd8",
+  "python-point:853b20238e13354b630f5b0a212c09245ee82b2b32ac74f68b50ffb63faa8b6b",
+  "python-point:8541f58611aa56743a00f30080f6f09910a78d59a4c2b7bf3f731bac9a2a3f40",
+  "python-point:8554b62d14edd7e8880055d903aec6e4102e54762cb219d4f30ee6387539435e",
+  "python-point:8574de05d5143522ac4c85757a3a6726ac3f568f3759b06f617020ca38cf53c4",
+  "python-point:858a159853f0fb4b9f96df65302954a4c24de2f19cad5e95f4d9ba453249af32",
+  "python-point:8594b0bf7aa4bbeb4da2084b3d2f3492380c621bbfda448c518ed30d90da3361",
+  "python-point:85c0fd08c8bb3170553ade94320b6636bb5c1b3e6b0dbeaafceddb90eee8fd4a",
+  "python-point:85cc8d09b181b79fa0dc0b5f3a99d560917f3e1ca36d35899e80eecb81dbad93",
+  "python-point:85d9857c1dc40979cf42600762bc5969fcf3370d661b75f7e1dc1be357dd4cac",
+  "python-point:8615f128828c1f3cda83f32643fd9462cfbd5048fab8ce3c3b013f66d4d64ca1",
+  "python-point:865ecefd1a85cc921978b9f22e14ffc58dc33d2dc28b067e58b6ecbb47284aad",
+  "python-point:86864c5d15888a69b2e50c1c91a3dfaf7b535205cc5f62a5286978e72183f596",
+  "python-point:8698878a2813e9fbafb5f0cc7623cdce7a71fe5772a7148df13e70786157a016",
+  "python-point:86bee222e91d1a7f6b76b0625181d08fefccdcb615bc25953122311cb2f03621",
+  "python-point:86db885e3df0164ec0b67c68d0b7c6121d53df2c44f4f95b471e2df1e7a92259",
+  "python-point:86f618446d15dcbbc2324f0942c4b7695da1da11e2dadd26365f3f22d2f5829f",
+  "python-point:86fe4160ac7795253b87bcf90584f448a967e70809895a522487b597954f8c8d",
+  "python-point:8709ed896128243cb20731242ea3186b90517b9c0a82fe4cbea2af59e7aa09a2",
+  "python-point:87143b8e5831534d62a3a002436495237b0994c03a10a499e4c5d5cad373e553",
+  "python-point:8730d002a17016dc1f1efdfc8815e879eecca1afc046e6d6f3ec1a1419164663",
+  "python-point:8740931a62fd00d0c17afe77bc9bac6569d94cccabedfcc7c12018a018af9396",
+  "python-point:87555949afa8bd68f720e3e992206d1528b34d02382519ac4aba627af314cc43",
+  "python-point:8761a49b0fb8ce1cf36c655d1ee53f3918ea79ab06f351a2b43745571f4a78b8",
+  "python-point:87706b62d13dae2bd19839de4166fc61984f5a23d8e5a156c47dc8ae57020cde",
+  "python-point:87be558e378a8b5f4f65c125660e19365730261202fa57b875ad4879a14d43d6",
+  "python-point:8818c3b41419d18cde9f5a5f265f764bfa74d65e281cefe5fb038e770f1cba04",
+  "python-point:882c050bb52c251645b7d3e40b9bf4c18e2c2a85ef96342187d2d24e00cc6467",
+  "python-point:882ee62381172cb99df68929c231f8cd13c2364640304399542b62c62b703b27",
+  "python-point:882f834e0e1217599ffe364fd22ed464088a268d9b5a24e8eec20b276d32cd0c",
+  "python-point:8833af0492fb912230a58ed10468b1c9f0a2a996a581a3c40f4bee94f47bc4a2",
+  "python-point:8856ca6f53595ebe1ea7ad07fe70268b151e59b0d669ce6e3d8ebf04bb2a6d8f",
+  "python-point:8889b28efb52e13a261f4b82c9dae944828db7fd78c9f8813d3e92dd48a23f87"
+]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean#L1523).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b490c038c78433c4a86e2ade48f4c15c665c91c2` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

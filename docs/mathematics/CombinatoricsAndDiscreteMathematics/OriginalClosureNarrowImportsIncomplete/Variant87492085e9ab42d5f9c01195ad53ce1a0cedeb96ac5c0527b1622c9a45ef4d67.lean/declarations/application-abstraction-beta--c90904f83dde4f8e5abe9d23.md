@@ -1,0 +1,137 @@
+# application_abstraction_beta
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "c43dd61c35d3d36651c01f53530ca36ac91fcb76",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 11972,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/87/87492085e9ab42d5f9c01195ad53ce1a0cedeb96ac5c0527b1622c9a45ef4d67.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:69fd1eac-a16e-52c9-8bdf-7a1e8c53d8e6",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:29c4881b-2bab-100a-376f-5bae4f0a819c",
+  "kind": "theorem",
+  "lexical_name": "application_abstraction_beta",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "application-abstraction-beta--c90904f83dde4f8e5abe9d23",
+  "source": {
+    "blob": "c43dd61c35d3d36651c01f53530ca36ac91fcb76",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 12015,
+    "line": 11972,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OriginalClosureNarrowImportsIncomplete/Variant87492085e9ab42d5f9c01195ad53ce1a0cedeb96ac5c0527b1622c9a45ef4d67.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:c90904f83dde4f8e5abe9d2374e98fa7321ef815f913d211f1f94a9d8b4f485c",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/OriginalClosureNarrowImportsIncomplete/Variant87492085e9ab42d5f9c01195ad53ce1a0cedeb96ac5c0527b1622c9a45ef4d67.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:29c4881b-2bab-100a-376f-5bae4f0a819c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 11972–12015.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+ theorem application_abstraction_beta {Γ : List (Expr S)} {D m E A B n T : Expr S} {a s : S}
+    (ht : HasType P Γ (.app (.lam D m) n) T)
+    (hf : HasType P Γ (.lam D m) (.pi A B))
+    (d : TypingTree P Γ D (.sort a)) (b : TypingTree P (D :: Γ) m E)
+    (hp : HasType P Γ (.pi D E) (.sort s)) (hcF : Converts (.pi A B) (.pi D E))
+    (nt : TypingTree P Γ n A) (hc : Converts T (B.instantiate n))
+    (hC : IsComponent (PrimaryEdge P) C) (e : Environment (hw := hw) Ω C hno Γ)
+    (hF : ActiveLayer P C (Ω.profile ((Expr.pi A B).subst e.images).normalForm))
+    (ha : ActiveLayer P C (Ω.profile (T.subst e.images).normalForm)) :
+    ∃ (hnD : Ω.HasType (n.subst e.images) (D.subst e.images))
+      (hpp : PayloadFits Ω C hno (D.subst e.images).normalForm (preEvaluate Ω C hno nt e).parameter)
+      (hb : ActiveLayer P C (Ω.profile (E.subst (Expr.consSub (n.subst e.images) e.images)).normalForm)),
+      (Ω.profile (D.subst e.images) ∈ ObservationLayers P C → ActiveLayer P C (Ω.profile (D.subst e.images))) ∧
+      ((preEvaluate Ω C hno (.application ht (.abstraction hf d b hp hcF) nt hc) e).val ha).val =
+        ((preEvaluate Ω C hno b (e.cons hnD (preEvaluate Ω C hno nt e).parameter hpp)).val hb).val := by
+  obtain ⟨k,hpk,hkn,hkD,hval⟩ := PreResult.application_frame ht hf nt.typing hc
+    (preEvaluate Ω C hno (.abstraction hf d b hp hcF)) (preEvaluate Ω C hno nt) e hF ha
+  have hnD : HasType P Γ n D := .conversion nt.typing d.typing hcF.product_compatibility.1
+  have hAD := e.type_convert_eq nt.typing hnD hcF.product_compatibility.1
+  have hpp : PayloadFits Ω C hno (D.subst e.images).normalForm (preEvaluate Ω C hno nt e).parameter :=
+    hAD ▸ (preEvaluate Ω C hno nt e).parameter_fits
+  have hbT : Converts T (E.instantiate n) := .trans _ _ _ hc (hcF.product_compatibility.2.subst (Expr.single n))
+  have heT := e.type_convert_eq ht (b.typing.instantiate hnD) hbT
+  have heT' : (T.subst e.images).normalForm =
+      (E.subst (Expr.consSub (n.subst e.images) e.images)).normalForm := by
+    simpa only [Expr.instantiate,Expr.subst_compSub,Expr.comp_single] using heT
+  have hb : ActiveLayer P C (Ω.profile (E.subst (Expr.consSub (n.subst e.images) e.images)).normalForm) := heT' ▸ ha
+  refine ⟨ContextTower.HasType.subst hnD e.typed,hpp,hb,?_,?_⟩
+  · intro hH
+    have heD : Ω.profile k.domain = Ω.profile (D.subst e.images) := by rw [hkD,hAD,Ω.profile_normalForm]
+    rw [← heD]
+    exact k.domain_active hw (heD.symm ▸ hH)
+  · obtain ⟨F,hB⟩ := preEvaluate_uniform Ω C hno hC b
+    refine hval.trans ?_
+    rw [show ((preEvaluate Ω C hno (.abstraction hf d b hp hcF) e).val hF) =
+      (PreResult.abstraction hf hp hcF (preEvaluate Ω C hno b) e).val hF from rfl,
+      PreResult.abstraction_beta hf hp hcF _ hB e hF k _ hpk]
+    apply PreResult.abstractionAction_raw hf hp hcF b hC e hF k _ hpk
+      (n.subst e.images) (ContextTower.HasType.subst hnD e.typed) hpp _ hb
+    rw [hkn]
+    exact .symm _ _ (Expr.normalForm_spec ((ContextTower.HasType.subst nt.typing e.typed).weaklyNormalizing hw)).1.converts
+
+/-- Exact tree transport at a fixed root expectation. Only good observations
+are equated; raw environments and values are otherwise unrestricted. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/OriginalClosureNarrowImportsIncomplete/Variant87492085e9ab42d5f9c01195ad53ce1a0cedeb96ac5c0527b1622c9a45ef4d67.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/OriginalClosureNarrowImportsIncomplete/Variant87492085e9ab42d5f9c01195ad53ce1a0cedeb96ac5c0527b1622c9a45ef4d67.lean#L11972).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c43dd61c35d3d36651c01f53530ca36ac91fcb76` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,269 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.ArithmeticModularityObligation.Variant74631ba733e5d8824cf866cf923a0177350adaf3f5bc71ad83809a229f9edb33
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6c8ddfaaf77371e2bd43de110437c59673fe5a0f` · SHA-256 `44e1fb50c7d88a14b8aa870a3ddba398386b94520491a035ad93555c49856cf4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.ArithmeticModularityObligation.Variantc0b53009c4c899728b21e03efae8570ede350838638abaf3e751ae308ebaca9b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c0b53009c4c899728b21e03efae8570ede350838638abaf3e751ae308ebaca9b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.ArithmeticModularityObligation.Variantc0b53009c4c899728b21e03efae8570ede350838638abaf3e751ae308ebaca9b","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"c0b53009c4c899728b21e03efae8570ede350838638abaf3e751ae308ebaca9b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Surface/Mathematics/Resolution/ArithmeticModularityObligation.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathlib.Tactic.DeriveFintype
+import Mathematics.Resolution.Conservative
+
+/-!
+# Arithmetic--modularity unknown-obligation ledger
+
+Every unresolved premise named by the two supplied specifications has its own
+constructor.  Missing evidence remains `unknown`; it is never represented by
+`False`, rejection, zero, or an absent bit.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.ArithmeticModularityObligation.Variantc0b53009c4c899728b21e03efae8570ede350838638abaf3e751ae308ebaca9b
+
+namespace Mathematics.Resolution
+
+/-- Stable names for all currently exposed arithmetic--modularity obligations. -/
+inductive ArithmeticModularityObligation
+  | rhetoricalSemantics
+  | cubeBijection
+  | cubeDimension
+  | banachRealization
+  | permutationRepresentation
+  | semanticAutomorphisms
+  | ontologyConnectivity
+  | cycleOrbitReduction
+  | functionalDuality
+  | functionalFitMetric
+  | functionalFitOptimality
+  | functionalEquationDefect
+  | pseudospectralStability
+  | bitfieldFormat
+  | bitfieldRange
+  | bitfieldUpperBound
+  | quantizationStability
+  | structuralFunctionalError
+  | localErrorAggregation
+  | resolutionSchedule
+  | bitfieldSquareRootBudget
+  | equationDomain
+  | nullstellensatz
+  | schemeSemantics
+  | geometricFamily
+  | cohomologicalEligibility
+  | cubeCoding
+  | cubeCodingEquivariance
+  | automorphismAction
+  | automorphismPresentation
+  | transportFunctor
+  | holonomy
+  | holonomyGenerators
+  | cycleConsistency
+  | galoisAction
+  | galoisCocycle
+  | descentCocycle
+  | effectiveDescent
+  | descentCompatibility
+  | yonedaProfile
+  | yonedaCompleteness
+  | arithmeticEnhancement
+  | heckeAction
+  | heckeEigenstructure
+  | structuralCoupling
+  | projectorOrigin
+  | arithmeticEssentiality
+  | nonfactorization
+  | automorphy
+  | localGlobalCompatibility
+  | scaleAndNorm
+  | discrepancyIdentification
+  | invariantProjection
+  | invariantBias
+  | traceIdentity
+  | traceRegularization
+  | traceRemainder
+  | tracePurityBridge
+  | spectralHalfPlane
+  | weightScaleNormalization
+  | exceptionalSpectrum
+  | spectralMultiplicity
+  | spectralConditioning
+  | jordanOrder
+  | logarithmicMechanism
+  | uniformConstants
+  | smallScales
+  | squareRootConclusion
+  deriving DecidableEq, Repr, Fintype
+
+/-- Intrinsic proof stages; the stage is evidence organization, not authority. -/
+inductive ArithmeticModularityStage
+  | ontology
+  | bitfield
+  | polynomialGeometry
+  | symmetryHolonomy
+  | descent
+  | yoneda
+  | arithmetic
+  | discrepancyTrace
+  | spectral
+  | uniformClosure
+  deriving DecidableEq, Repr
+
+/-- The stable stage containing each named obligation. -/
+def ArithmeticModularityObligation.stage :
+    ArithmeticModularityObligation → ArithmeticModularityStage
+  | .rhetoricalSemantics
+  | .cubeBijection
+  | .cubeDimension
+  | .banachRealization
+  | .permutationRepresentation
+  | .semanticAutomorphisms
+  | .ontologyConnectivity
+  | .cycleOrbitReduction
+  | .functionalDuality
+  | .functionalFitMetric
+  | .functionalFitOptimality
+  | .functionalEquationDefect
+  | .pseudospectralStability => .ontology
+  | .bitfieldFormat
+  | .bitfieldRange
+  | .bitfieldUpperBound
+  | .quantizationStability
+  | .structuralFunctionalError
+  | .localErrorAggregation
+  | .resolutionSchedule
+  | .bitfieldSquareRootBudget => .bitfield
+  | .equationDomain
+  | .nullstellensatz
+  | .schemeSemantics
+  | .geometricFamily
+  | .cohomologicalEligibility
+  | .cubeCoding
+  | .cubeCodingEquivariance => .polynomialGeometry
+  | .automorphismAction
+  | .automorphismPresentation
+  | .transportFunctor
+  | .holonomy
+  | .holonomyGenerators
+  | .cycleConsistency => .symmetryHolonomy
+  | .galoisAction
+  | .galoisCocycle
+  | .descentCocycle
+  | .effectiveDescent
+  | .descentCompatibility => .descent
+  | .yonedaProfile
+  | .yonedaCompleteness => .yoneda
+  | .arithmeticEnhancement
+  | .heckeAction
+  | .heckeEigenstructure
+  | .structuralCoupling
+  | .projectorOrigin
+  | .arithmeticEssentiality
+  | .nonfactorization
+  | .automorphy
+  | .localGlobalCompatibility => .arithmetic
+  | .scaleAndNorm
+  | .discrepancyIdentification
+  | .invariantProjection
+  | .invariantBias
+  | .traceIdentity
+  | .traceRegularization
+  | .traceRemainder => .discrepancyTrace
+  | .tracePurityBridge
+  | .spectralHalfPlane
+  | .weightScaleNormalization
+  | .exceptionalSpectrum
+  | .spectralMultiplicity
+  | .spectralConditioning
+  | .jordanOrder
+  | .logarithmicMechanism => .spectral
+  | .uniformConstants
+  | .smallScales
+  | .squareRootConclusion => .uniformClosure
+
+/--
+The final outcome keeps proof, refutation, and named unknowns disjoint.  An
+unknown result must expose at least one concrete remaining obligation.
+-/
+inductive CertificateConservativeVerdict (Claim : Prop)
+  | certified (proof : Claim)
+  | refuted (proof : ¬ Claim)
+  | unknown
+      (obligations : Finset ArithmeticModularityObligation)
+      (nonempty : obligations.Nonempty)
+
+namespace CertificateConservativeVerdict
+
+variable {Claim : Prop}
+
+/-- One missing proof creates a named unknown, not a refutation. -/
+def ofMissing
+    (obligation : ArithmeticModularityObligation) :
+    CertificateConservativeVerdict Claim :=
+  .unknown {obligation} (by simp)
+
+/-- Predicate selecting only the certified constructor. -/
+def IsCertified : CertificateConservativeVerdict Claim → Prop
+  | .certified _ => True
+  | .refuted _ => False
+  | .unknown _ _ => False
+
+/-- Predicate selecting only the explicitly refuted constructor. -/
+def IsRefuted : CertificateConservativeVerdict Claim → Prop
+  | .certified _ => False
+  | .refuted _ => True
+  | .unknown _ _ => False
+
+/-- Certified status exposes an actual proof of the claim. -/
+theorem certified_sound
+    (verdict : CertificateConservativeVerdict Claim)
+    (certified : verdict.IsCertified) :
+    Claim := by
+  cases verdict with
+  | certified proof => exact proof
+  | refuted _ => exact False.elim certified
+  | unknown _ _ => exact False.elim certified
+
+/-- Refuted status exposes an actual proof of the negation. -/
+theorem refuted_sound
+    (verdict : CertificateConservativeVerdict Claim)
+    (refuted : verdict.IsRefuted) :
+    ¬ Claim := by
+  cases verdict with
+  | certified _ => exact False.elim refuted
+  | refuted proof => exact proof
+  | unknown _ _ => exact False.elim refuted
+
+/-- Extract the exact named frontier only from the unknown constructor. -/
+def unknowns :
+    CertificateConservativeVerdict Claim →
+      Finset ArithmeticModularityObligation
+  | .certified _ => ∅
+  | .refuted _ => ∅
+  | .unknown obligations _ => obligations
+
+@[simp]
+theorem not_certified_ofMissing
+    (obligation : ArithmeticModularityObligation) :
+    ¬ (ofMissing (Claim := Claim) obligation).IsCertified :=
+  id
+
+@[simp]
+theorem not_refuted_ofMissing
+    (obligation : ArithmeticModularityObligation) :
+    ¬ (ofMissing (Claim := Claim) obligation).IsRefuted :=
+  id
+
+@[simp]
+theorem unknowns_ofMissing
+    (obligation : ArithmeticModularityObligation) :
+    (ofMissing (Claim := Claim) obligation).unknowns = {obligation} :=
+  rfl
+
+end CertificateConservativeVerdict
+
+end Mathematics.Resolution
+```

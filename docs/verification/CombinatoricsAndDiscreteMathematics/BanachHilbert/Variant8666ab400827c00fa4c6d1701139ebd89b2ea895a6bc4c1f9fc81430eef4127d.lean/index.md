@@ -1,0 +1,122 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.BanachHilbert.Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5e1651b0f94ec3e7fbee24ee6134f00a1e4dfaf7",
+  "lexical_observation_count": 57,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/index.md) · [Full source](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5e1651b0f94ec3e7fbee24ee6134f00a1e4dfaf7`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Oracle.Naming.CyclicCubical` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.BigOperators.Field` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Real.Basic` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [StableBitfield](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/stablebitfield--2baaccafbf6b05c612735698.md) | 23 | `declaration-track:2baaccafbf6b05c61273569871bb6be3d617a64161935a556150052174b0c46e` |
+| 2 | `def` | [realize](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/realize--1383a91379e1f70f41608963.md) | 26 | `declaration-track:1383a91379e1f70f41608963a50c7130a9156c7af4ddd379c8609fe093a417d3` |
+| 3 | `def` | [hammingCount](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/hammingcount--1003d8114481be5e0e58718c.md) | 30 | `declaration-track:1003d8114481be5e0e58718cc8d48e5a5e082ce5c0ebdef001a75c971541abdd` |
+| 4 | `def` | [hammingReal](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/hammingreal--7fab63b01827ba8790dfe525.md) | 34 | `declaration-track:7fab63b01827ba8790dfe5258be2861ddd7d360ddd305f7f44d24c38a972ce01` |
+| 5 | `def` | [manhattanDistance](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/manhattandistance--fd9e7413339c80326122ab25.md) | 38 | `declaration-track:fd9e7413339c80326122ab253f37ec3136f47714eb9cc8622dce2535794d94e1` |
+| 6 | `def` | [hilbertDistanceSq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/hilbertdistancesq--5e322c43b06e43d4fee68ece.md) | 42 | `declaration-track:5e322c43b06e43d4fee68ece711e6a4e0d08979ed625147a06f04b6945757f06` |
+| 7 | `theorem` | [hammingReal_eq_natCast](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/hammingreal-eq-natcast--7b2b07e6f4067d5945321148.md) | 46 | `result-track:7b2b07e6f4067d5945321148439d13029ee29fb66305480634506c4bd2710dee` |
+| 8 | `theorem` | [abs_realize_sub](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/abs-realize-sub--0320b1062b930ea8fef0b369.md) | 51 | `result-track:0320b1062b930ea8fef0b3696e83db5870f9013d61ee1369b0e078cd38acae3a` |
+| 9 | `theorem` | [sq_realize_sub](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/sq-realize-sub--654bdc5927e821974c630202.md) | 56 | `result-track:654bdc5927e821974c63020222f1da27f55c59c2752d2f12ce856061495c6601` |
+| 10 | `theorem` | [manhattanDistance_eq_hamming](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/manhattandistance-eq-hamming--291b3a95482e90e8c5b6f68b.md) | 63 | `result-track:291b3a95482e90e8c5b6f68bf65aaf2dbc2f1599bab152181d83b44307ef3be2` |
+| 11 | `theorem` | [hilbertDistanceSq_eq_hamming](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/hilbertdistancesq-eq-hamming--d815680d552dbabcabe52ad1.md) | 71 | `result-track:d815680d552dbabcabe52ad1e582926727728f1e84232289555ee3e12ba6672a` |
+| 12 | `theorem` | [manhattanDistance_eq_hilbertDistanceSq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/manhattandistance-eq-hilbertdistancesq--988520cb3b17857a00fda355.md) | 79 | `result-track:988520cb3b17857a00fda355dff9afc403f38033af60949720a2bc239d452de4` |
+| 13 | `def` | [IsNearestBit](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/isnearestbit--642a23098d747c357a5631b6.md) | 85 | `declaration-track:642a23098d747c357a5631b665dc73eb0874eb5c20c284d599f4a4391cfc5fb1` |
+| 14 | `def` | [IsAnchor](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/isanchor--19b0e1d7b26e899029f5d071.md) | 89 | `declaration-track:19b0e1d7b26e899029f5d07111325d46d60f56d580800f0201c475477516d37e` |
+| 15 | `def` | [squaredPointCost](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/squaredpointcost--7c547d84a561e0ebdf177a34.md) | 93 | `declaration-track:7c547d84a561e0ebdf177a34d4c3899abf8e2d780ea197414716229a77def056` |
+| 16 | `def` | [IsSquaredNearest](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/issquarednearest--626be8c337c91e8f9cb8b57c.md) | 98 | `declaration-track:626be8c337c91e8f9cb8b57c8faeed6357ba415235ed834360a27f0ea9c11175` |
+| 17 | `theorem` | [nearestBit_cost_le](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/nearestbit-cost-le--00185420e199daea392ea7cb.md) | 102 | `result-track:00185420e199daea392ea7cb6d495ef6cb705d087a42d6502262842c2f2d8378` |
+| 18 | `theorem` | [isSquaredNearest_of_isAnchor](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/issquarednearest-of-isanchor--7c9e4e60df1f76187a5f5485.md) | 109 | `result-track:7c9e4e60df1f76187a5f54856e6636bf88fa9837cef7b3e0302a7dc2a0724cfa` |
+| 19 | `def` | [flipAt](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/flipat--1ba2b1b5039fa8141b25fdaf.md) | 119 | `declaration-track:1ba2b1b5039fa8141b25fdaf2daa2ad4a5f687570cab32f367e0c0b09bfbc19c` |
+| 20 | `theorem` | [isAnchor_of_isSquaredNearest](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/isanchor-of-issquarednearest--94ad0bf613dda80ff0479e5f.md) | 126 | `result-track:94ad0bf613dda80ff0479e5fe7050fca2dc8428f283ab1d623ef9e2b54c7df16` |
+| 21 | `theorem` | [isAnchor_iff_isSquaredNearest](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/isanchor-iff-issquarednearest--53eee860bcb6f89e248356bd.md) | 161 | `result-track:53eee860bcb6f89e248356bd354bf9a84ffdfd94e0a8e6dfc38a0968272d463f` |
+| 22 | `def` | [lpPowerPointCost](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/lppowerpointcost--ab2730f9f8e51a9f9794efea.md) | 168 | `declaration-track:ab2730f9f8e51a9f9794efeaf6bda9f56d009a0f60ba4c557317ce6c1a65b75f` |
+| 23 | `def` | [IsLpNearest](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/islpnearest--f859cc045fda21546c758510.md) | 173 | `declaration-track:f859cc045fda21546c7585105be24b3570c5f0248be10a192723bce84edb8aed` |
+| 24 | `theorem` | [nearestBit_abs_cost_le](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/nearestbit-abs-cost-le--5c90be9a33cb01bd419b218a.md) | 177 | `result-track:5c90be9a33cb01bd419b218aba52688287098c4bce972bfd9f4224316070ad2a` |
+| 25 | `theorem` | [isLpNearest_of_isAnchor](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/islpnearest-of-isanchor--2b858ef1b2559f140b4cc17e.md) | 193 | `result-track:2b858ef1b2559f140b4cc17e36ae97e491722c302ebc6e479c82c53789b8ac39` |
+| 26 | `theorem` | [isAnchor_of_isLpNearest](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/isanchor-of-islpnearest--ad9778a5355f0115aee06b3d.md) | 206 | `result-track:ad9778a5355f0115aee06b3df34579fcd1bc2bd0b8e45dcba5d7a7d4b2f2caf3` |
+| 27 | `theorem` | [isAnchor_iff_isLpNearest](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/isanchor-iff-islpnearest--f2add1b335ab17633be141ac.md) | 251 | `result-track:f2add1b335ab17633be141acd875deed7f2c517eba435e60c37c98ac0137985d` |
+| 28 | `def` | [chartNormSq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/chartnormsq--3000e65c3801f19d7a660c82.md) | 258 | `declaration-track:3000e65c3801f19d7a660c82b08df96144a1b4ec575ccdd2138c48689642d052` |
+| 29 | `theorem` | [chartNormSq_nonneg](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/chartnormsq-nonneg--903ed28227324375e7bdf5e4.md) | 261 | `result-track:903ed28227324375e7bdf5e4bee263b60fe147104e0ed62c7f1ff56aef6e9b5d` |
+| 30 | `def` | [inverseStereographic](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/inversestereographic--2e541ac7ff57c42f74047fd3.md) | 266 | `declaration-track:2e541ac7ff57c42f74047fd30b4d24b13007162098693bf52492c0c3a225ef11` |
+| 31 | `def` | [carrierNormSq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/carriernormsq--cca3740244a97dccf08b3c08.md) | 272 | `declaration-track:cca3740244a97dccf08b3c080f1f74fd228fad6b5ac088cdec32313f3ca402b0` |
+| 32 | `theorem` | [inverseStereographic_unit](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/inversestereographic-unit--1b8389e983a690c5d77ba2a8.md) | 276 | `result-track:1b8389e983a690c5d77ba2a8719755c484c4a7eaf67ac8e0eac7d6f497c93ed8` |
+| 33 | `def` | [southPole](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/southpole--02ecec7be4d058dd13163404.md) | 299 | `declaration-track:02ecec7be4d058dd13163404cdaa2ded1b0a5591704fcb7d89e205751fedb6f3` |
+| 34 | `def` | [northPole](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/northpole--7c4b2a7f910e3df468d804ba.md) | 300 | `declaration-track:7c4b2a7f910e3df468d804ba619822462d730472b0fbabf1ea963dd9012f6258` |
+| 35 | `theorem` | [inverseStereographic_zero](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/inversestereographic-zero--b6fcf49f602319bdf31fbeb8.md) | 303 | `result-track:b6fcf49f602319bdf31fbeb8a81e0b0b4ef5c025042f15fc98387fa088eba793` |
+| 36 | `inductive` | [CompactifiedChart](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/compactifiedchart--dbba78d38055a74ae3b54b8e.md) | 308 | `declaration-track:dbba78d38055a74ae3b54b8e60ac1f90f6f8aee50371f926711614013a9fcede` |
+| 37 | `def` | [compactifiedCarrier](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/compactifiedcarrier--6a211a3f41b97e9833f6ae3c.md) | 313 | `declaration-track:6a211a3f41b97e9833f6ae3c61bd21d9e8020613635202e4ea95b14f6a68a630` |
+| 38 | `theorem` | [compactifiedCarrier_finite](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/compactifiedcarrier-finite--4ed28e8794d4ddbb7ffee29b.md) | 319 | `result-track:4ed28e8794d4ddbb7ffee29b5869c50767b5ff8b72c38b8100608f804c4e7f57` |
+| 39 | `theorem` | [compactifiedCarrier_infinity](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/compactifiedcarrier-infinity--2214228e1f4b84cff459afca.md) | 323 | `result-track:2214228e1f4b84cff459afca1e13e2e5c0f84ca822d296bc24cd8fefcd43d9b1` |
+| 40 | `def` | [centeredInt](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/centeredint--6a0a6d10d020135d5ab6beb2.md) | 328 | `declaration-track:6a0a6d10d020135d5ab6beb245224f17e7bebd3edfdac90b6ea53785cfafebeb` |
+| 41 | `def` | [sphereNumerator](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/spherenumerator--83a6f5c08f22958ead90f5b3.md) | 332 | `declaration-track:83a6f5c08f22958ead90f5b36c195c2bac4b9ae47bffde301b4e940c617f71cb` |
+| 42 | `def` | [sphereDenominator](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/spheredenominator--57f857eb6d018f70b2bd501e.md) | 337 | `declaration-track:57f857eb6d018f70b2bd501e60484d471a3ff6f1ee4ce513f8d2d33e3790f596` |
+| 43 | `def` | [integerCarrierNormSq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/integercarriernormsq--cdd4db10319d2bad99aff353.md) | 340 | `declaration-track:cdd4db10319d2bad99aff353c588d2ee4a6b01ec995f5504b0aed5d1e95ea11d` |
+| 44 | `theorem` | [centeredInt_sq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/centeredint-sq--f8c1c63d19b5ac7c1d936830.md) | 343 | `result-track:f8c1c63d19b5ac7c1d93683017a0015003d66b037204bfc3a73e0381ce4ac9bc` |
+| 45 | `theorem` | [sphereNumerator_norm_certificate](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/spherenumerator-norm-certificate--ddd9e27fe5b66912b6007ae7.md) | 348 | `result-track:ddd9e27fe5b66912b6007ae7295f63c1f480464be9d4c418416d2d3d31365a63` |
+| 46 | `def` | [integerCarrierDistanceSq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/integercarrierdistancesq--8a6870373c5b5519e64815a9.md) | 366 | `declaration-track:8a6870373c5b5519e64815a9463d23853766998cfdd3ff83dfb819642b28ac94` |
+| 47 | `theorem` | [centered_difference_sq](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/centered-difference-sq--d27025b19bff902d3ddcd37e.md) | 370 | `result-track:d27025b19bff902d3ddcd37e8f365bb08456c94cf3e44608cfa4bb606977120c` |
+| 48 | `theorem` | [sphereNumerator_distance_certificate](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/spherenumerator-distance-certificate--73c16eec907c30a3da7b4ab5.md) | 378 | `result-track:73c16eec907c30a3da7b4ab5875c0a1eba0b136fcb3e7863f4eec54fd6e661f4` |
+| 49 | `def` | [zeroBeacon](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/zerobeacon--9e4f66f163d3235a85094b50.md) | 397 | `declaration-track:9e4f66f163d3235a85094b50fc0df2348e489097d806af4f0bb0c8360634d6de` |
+| 50 | `def` | [standardBeacon](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/standardbeacon--03f2277660f2f2e8cb507014.md) | 400 | `declaration-track:03f2277660f2f2e8cb507014ed2dfb441dc2c6a831cf004c9032fa167fd77b20` |
+| 51 | `def` | [squaredRange](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/squaredrange--6bfadde8795ad01b008a832b.md) | 404 | `declaration-track:6bfadde8795ad01b008a832b068d17e316e6c83c9c93c4eff35a5a3617e15c43` |
+| 52 | `theorem` | [squaredRange_zero](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/squaredrange-zero--cc5bd1b7938436f033e2bcd3.md) | 408 | `result-track:cc5bd1b7938436f033e2bcd316b4337bc78c7f1cac983b450ec4f702a54c0e37` |
+| 53 | `theorem` | [squaredRange_standard](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/squaredrange-standard--ccd5533e8e7d57a9d544168a.md) | 412 | `result-track:ccd5533e8e7d57a9d544168a542eaee4b652fb6b095711a28347faf74c77e0be` |
+| 54 | `theorem` | [reconstruct_coordinate_from_ranges](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/reconstruct-coordinate-from-ranges--4ea311e89223a726810da1df.md) | 432 | `result-track:4ea311e89223a726810da1df7c018f4c483bfa66c7d9113ecc6728e48687b4c2` |
+| 55 | `def` | [rangeRate](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/rangerate--9f4a9162181e6fdf1e33fde2.md) | 441 | `declaration-track:9f4a9162181e6fdf1e33fde2e25064f087ec812823910b804a0d623b3cc8c4fa` |
+| 56 | `theorem` | [rangeRate_zero_sub_standard](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/rangerate-zero-sub-standard--5ee29a8f17f678c63f261bf4.md) | 445 | `result-track:5ee29a8f17f678c63f261bf42798b46c7aff7a073ccfc011a467e3268069544b` |
+| 57 | `theorem` | [reconstruct_velocity_from_rangeRates](../../../../mathematics/CombinatoricsAndDiscreteMathematics/BanachHilbert/Variant8666ab400827c00fa4c6d1701139ebd89b2ea895a6bc4c1f9fc81430eef4127d.lean/declarations/reconstruct-velocity-from-rangerates--1217c0a86009a27fbbeb4071.md) | 462 | `result-track:1217c0a86009a27fbbeb4071312099b2d95157745f4a5a54382166d84447cc01` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

@@ -1,0 +1,101 @@
+# append
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:3b58ef7b15fdf22232560d2239b57d199e5518816b9dc22a20fcad0808866a3f",
+  "kind": "def",
+  "lexical_name": "append",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "append--b7f19aae2ccfd03ecc9b15d4",
+  "source": {
+    "blob": "53490f4923eca935dc8ef3861e81e800a0ee0e38",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 386,
+    "line": 367,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variantc67847097cbc91ebd25f64e3ba643fbc71a4dadf4da961bb63c5dc33a7103aee.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:b7f19aae2ccfd03ecc9b15d4ebb82a86cab5834b3b47174a56b41aa4d295368b",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variantc67847097cbc91ebd25f64e3ba643fbc71a4dadf4da961bb63c5dc33a7103aee.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:3b58ef7b15fdf22232560d2239b57d199e5518816b9dc22a20fcad0808866a3f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 367–386.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def append : RBNode α → RBNode α → RBNode α
+  | nil, x | x, nil => x
+  | node red a x b, node red c y d =>
+    match append b c with
+    | node red b' z c' => node red (node red a x b') z (node red c' y d)
+    | bc               => node red a x (node red bc y d)
+  | node black a x b, node black c y d =>
+    match append b c with
+    | node red b' z c' => node red (node black a x b') z (node black c' y d)
+    | bc               => balLeft a x (node black bc y d)
+  | a@(node black ..), node red b x c => node red (append a b) x c
+  | node red a x b, c@(node black ..) => node red a x (append b c)
+termination_by x y => x.size + y.size
+
+/-! ## erase -/
+
+/--
+The core of the `erase` function. The tree returned from this function has a broken invariant,
+which is restored in `erase`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variantc67847097cbc91ebd25f64e3ba643fbc71a4dadf4da961bb63c5dc33a7103aee.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variantc67847097cbc91ebd25f64e3ba643fbc71a4dadf4da961bb63c5dc33a7103aee.lean#L367).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `53490f4923eca935dc8ef3861e81e800a0ee0e38` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

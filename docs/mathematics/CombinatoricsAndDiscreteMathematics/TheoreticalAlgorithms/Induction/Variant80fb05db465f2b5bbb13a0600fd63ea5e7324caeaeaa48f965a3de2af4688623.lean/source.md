@@ -1,0 +1,135 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Induction.Variant80fb05db465f2b5bbb13a0600fd63ea5e7324caeaeaa48f965a3de2af4688623
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4a4c12f994ad8869c8bf4fcaa254374e357de266` · SHA-256 `bf86457ad96a0f4429a14b940d9283c14daf4f53700abcdc40c05f379e3b4d0f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ReverseRecOn.Variant4c4608a89c7729021e1e34664a4524abdcbc0620ab2105fac4114d75c18d5192","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4c4608a89c7729021e1e34664a4524abdcbc0620ab2105fac4114d75c18d5192","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.ReverseRecOn.Variant4c4608a89c7729021e1e34664a4524abdcbc0620ab2105fac4114d75c18d5192","mathematical_subject":"Computation.DataStructures","original_sha256":"4c4608a89c7729021e1e34664a4524abdcbc0620ab2105fac4114d75c18d5192","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/List/Induction.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2014 Parikshit Khanna. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Parikshit Khanna, Jeremy Avigad, Leonardo de Moura, Floris van Doorn, Mario Carneiro
+-/
+import Mathlib.Data.List.Basic
+
+/-! ### Induction principles for lists -/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.ReverseRecOn.Variant4c4608a89c7729021e1e34664a4524abdcbc0620ab2105fac4114d75c18d5192
+
+variable {α : Type*}
+
+namespace List
+
+/-- Induction principle from the right for lists: if a property holds for the empty list, and
+for `l ++ [a]` if it holds for `l`, then it holds for all lists. The principle is given for
+a `Sort`-valued predicate, i.e., it can also be used to construct data. -/
+@[elab_as_elim]
+def reverseRecOn {motive : List α → Sort*} (l : List α) (nil : motive [])
+    (append_singleton : ∀ (l : List α) (a : α), motive l → motive (l ++ [a])) : motive l :=
+  match h : reverse l with
+  | [] => cast (congr_arg motive <| by simpa using congr(reverse $h.symm)) <|
+      nil
+  | head :: tail =>
+    cast (congr_arg motive <| by simpa using congr(reverse $h.symm)) <|
+      append_singleton _ head <| reverseRecOn (reverse tail) nil append_singleton
+termination_by l.length
+decreasing_by
+  simp_wf
+  rw [← length_reverse (as := l), h, length_cons]
+  simp [Nat.lt_succ]
+
+@[simp]
+theorem reverseRecOn_nil {motive : List α → Sort*} (nil : motive [])
+    (append_singleton : ∀ (l : List α) (a : α), motive l → motive (l ++ [a])) :
+    reverseRecOn [] nil append_singleton = nil := reverseRecOn.eq_1 ..
+
+-- `unusedHavesSuffices` is getting confused by the unfolding of `reverseRecOn`
+@[simp, nolint unusedHavesSuffices]
+theorem reverseRecOn_concat {motive : List α → Sort*} (x : α) (xs : List α) (nil : motive [])
+    (append_singleton : ∀ (l : List α) (a : α), motive l → motive (l ++ [a])) :
+    reverseRecOn (motive := motive) (xs ++ [x]) nil append_singleton =
+      append_singleton _ _ (reverseRecOn (motive := motive) xs nil append_singleton) := by
+  suffices ∀ ys (h : reverse (reverse xs) = ys),
+      reverseRecOn (motive := motive) (xs ++ [x]) nil append_singleton =
+        cast (by simp [(reverse_reverse _).symm.trans h])
+          (append_singleton _ x (reverseRecOn (motive := motive) ys nil append_singleton)) by
+    exact this _ (reverse_reverse xs)
+  intros ys hy
+  conv_lhs => unfold reverseRecOn
+  split
+  next h => simp at h
+  next heq =>
+    revert heq
+    simp only [reverse_append, reverse_cons, reverse_nil, nil_append, singleton_append, cons.injEq]
+    rintro ⟨rfl, rfl⟩
+    subst ys
+    rfl
+
+/-- Bidirectional induction principle for lists: if a property holds for the empty list, the
+singleton list, and `a :: (l ++ [b])` from `l`, then it holds for all lists. This can be used to
+prove statements about palindromes. The principle is given for a `Sort`-valued predicate, i.e., it
+can also be used to construct data. -/
+@[elab_as_elim]
+def bidirectionalRec {motive : List α → Sort*} (nil : motive []) (singleton : ∀ a : α, motive [a])
+    (cons_append : ∀ (a : α) (l : List α) (b : α), motive l → motive (a :: (l ++ [b]))) :
+    ∀ l, motive l
+  | [] => nil
+  | [a] => singleton a
+  | a :: b :: l =>
+    let l' := dropLast (b :: l)
+    let b' := getLast (b :: l) (cons_ne_nil _ _)
+    cast (by rw [← dropLast_append_getLast (cons_ne_nil b l)]) <|
+      cons_append a l' b' (bidirectionalRec nil singleton cons_append l')
+termination_by l => l.length
+
+@[simp]
+theorem bidirectionalRec_nil {motive : List α → Sort*}
+    (nil : motive []) (singleton : ∀ a : α, motive [a])
+    (cons_append : ∀ (a : α) (l : List α) (b : α), motive l → motive (a :: (l ++ [b]))) :
+    bidirectionalRec nil singleton cons_append [] = nil := bidirectionalRec.eq_1 ..
+
+
+@[simp]
+theorem bidirectionalRec_singleton {motive : List α → Sort*}
+    (nil : motive []) (singleton : ∀ a : α, motive [a])
+    (cons_append : ∀ (a : α) (l : List α) (b : α), motive l → motive (a :: (l ++ [b]))) (a : α) :
+    bidirectionalRec nil singleton cons_append [a] = singleton a := by
+  simp [bidirectionalRec]
+
+@[simp]
+theorem bidirectionalRec_cons_append {motive : List α → Sort*}
+    (nil : motive []) (singleton : ∀ a : α, motive [a])
+    (cons_append : ∀ (a : α) (l : List α) (b : α), motive l → motive (a :: (l ++ [b])))
+    (a : α) (l : List α) (b : α) :
+    bidirectionalRec nil singleton cons_append (a :: (l ++ [b])) =
+      cons_append a l b (bidirectionalRec nil singleton cons_append l) := by
+  conv_lhs => unfold bidirectionalRec
+  cases l with
+  | nil => rfl
+  | cons x xs =>
+  simp only [List.cons_append]
+  dsimp only [← List.cons_append]
+  suffices ∀ (ys init : List α) (hinit : init = ys) (last : α) (hlast : last = b),
+      (cons_append a init last
+        (bidirectionalRec nil singleton cons_append init)) =
+      cast (congr_arg motive <| by simp [hinit, hlast])
+        (cons_append a ys b (bidirectionalRec nil singleton cons_append ys)) by
+    rw [this (x :: xs) _ (by rw [dropLast_append_cons, dropLast_singleton, append_nil]) _ (by simp)]
+    simp
+  rintro ys init rfl last rfl
+  rfl
+
+/-- Like `bidirectionalRec`, but with the list parameter placed first. -/
+@[elab_as_elim]
+abbrev bidirectionalRecOn {C : List α → Sort*} (l : List α) (H0 : C []) (H1 : ∀ a : α, C [a])
+    (Hn : ∀ (a : α) (l : List α) (b : α), C l → C (a :: (l ++ [b]))) : C l :=
+  bidirectionalRec H0 H1 Hn l
+
+end List
+```

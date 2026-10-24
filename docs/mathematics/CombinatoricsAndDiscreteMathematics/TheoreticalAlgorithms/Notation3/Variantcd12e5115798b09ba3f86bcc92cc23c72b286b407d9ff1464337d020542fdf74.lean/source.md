@@ -1,0 +1,44 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Notation3.Variantcd12e5115798b09ba3f86bcc92cc23c72b286b407d9ff1464337d020542fdf74
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b53d5aa542ba76523718a0bde1af37a24df26345` · SHA-256 `cd12e5115798b09ba3f86bcc92cc23c72b286b407d9ff1464337d020542fdf74`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+module
+
+import all Mathlib.Tactic.Linter.PrivateModule
+import Mathlib.Util.Notation3
+
+open Lean
+
+local notation3 "MyList[" (x", "* => foldr (a b => List.cons a b) List.nil) "]" => x
+
+/- Check that we have indeed created declarations, and aren't not linting just due to being an
+empty file: -/
+/--
+info: [_private.MathlibTest.Linter.PrivateModule.Notation3.0.«termMyList[_,]»,
+ _private.MathlibTest.Linter.PrivateModule.Notation3.0.«_aux_MathlibTest_Linter_PrivateModule_Notation3___macroRules__private_MathlibTest_Linter_PrivateModule_Notation3_0_termMyList[_,]_1»,
+ _private.MathlibTest.Linter.PrivateModule.Notation3.0.«_aux_MathlibTest_Linter_PrivateModule_Notation3___delab_app__private_MathlibTest_Linter_PrivateModule_Notation3_0_termMyList[_,]_2»,
+ _private.MathlibTest.Linter.PrivateModule.Notation3.0.«_aux_MathlibTest_Linter_PrivateModule_Notation3___delab_app__private_MathlibTest_Linter_PrivateModule_Notation3_0_termMyList[_,]_1»]
+-/
+#guard_msgs in
+run_cmd do
+  logInfo m!"{(← getEnv).constants.map₂.toArray.map (·.1)}"
+
+-- The linter should fire since the `notation3` is local
+-- Run the linter on artificial `eoi` syntax so that we can actually guard the message
+set_option linter.mathlibStandardSet true in
+open Mathlib.Linter Parser in
+/--
+warning: The current module only contains private declarations.
+
+Consider adding `public section` at the beginning of the module, or selectively marking declarations as `public`. Mark a `def` with `@[expose]` if downstream code needs it to be definitionally equal to its body (e.g. for `unfold`). Alternatively, add `@[expose] public section` to mark every definition as exposed.
+
+Note: This linter can be disabled with `set_option linter.privateModule false`
+-/
+#guard_msgs in
+run_cmd do
+  let eoi := mkNode ``Command.eoi #[mkAtom .none ""]
+  privateModule.run eoi
+```

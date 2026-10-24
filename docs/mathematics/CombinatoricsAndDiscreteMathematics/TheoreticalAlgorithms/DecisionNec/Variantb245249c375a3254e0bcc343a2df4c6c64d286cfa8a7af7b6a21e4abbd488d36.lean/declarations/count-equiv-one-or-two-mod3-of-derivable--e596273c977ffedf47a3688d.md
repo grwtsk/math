@@ -1,0 +1,106 @@
+# count_equiv_one_or_two_mod3_of_derivable
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:2d933d14-76c5-b4ca-0ce6-acbdb6b2d535",
+  "kind": "theorem",
+  "lexical_name": "count_equiv_one_or_two_mod3_of_derivable",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "count-equiv-one-or-two-mod3-of-derivable--e596273c977ffedf47a3688d",
+  "source": {
+    "blob": "af51d4c20203c558b8148432487276aad0a3980d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 100,
+    "line": 76,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/DecisionNec/Variantb245249c375a3254e0bcc343a2df4c6c64d286cfa8a7af7b6a21e4abbd488d36.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:e596273c977ffedf47a3688d69b0415c4aa6951c1e3f6a5bb8712fabac09c9c5",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/DecisionNec/Variantb245249c375a3254e0bcc343a2df4c6c64d286cfa8a7af7b6a21e4abbd488d36.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2d933d14-76c5-b4ca-0ce6-acbdb6b2d535`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 76–100.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem count_equiv_one_or_two_mod3_of_derivable (en : Miustr) :
+    Derivable en → count I en % 3 = 1 ∨ count I en % 3 = 2 := by
+  intro h
+  induction h with
+  | mk => left; rfl
+  | r1 _ h_ih =>
+    apply mod3_eq_1_or_mod3_eq_2 h_ih; left
+    rw [count_append, count_append]; rfl
+  | r2 _ h_ih =>
+    apply mod3_eq_1_or_mod3_eq_2 h_ih; right
+    simp_rw [count_append, count_cons, beq_iff_eq, reduceCtorEq, ite_false, add_zero, two_mul]
+  | r3 _ h_ih =>
+    apply mod3_eq_1_or_mod3_eq_2 h_ih; left
+    rw [count_append, count_append, count_append]
+    simp_rw [count_cons_self, count_nil, count_cons, beq_iff_eq, reduceCtorEq, ite_false,
+      add_right_comm, add_mod_right, add_zero]
+  | r4 _ h_ih =>
+    apply mod3_eq_1_or_mod3_eq_2 h_ih; left
+    rw [count_append, count_append, count_append]
+    simp only [ne_eq, not_false_eq_true, count_cons_of_ne, count_nil, add_zero, reduceCtorEq]
+
+/-- Using the above theorem, we solve the MU puzzle, showing that `"MU"` is not derivable.
+Once we have proved that `Derivable` is an instance of `DecidablePred`, this will follow
+immediately from `dec_trivial`.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/DecisionNec/Variantb245249c375a3254e0bcc343a2df4c6c64d286cfa8a7af7b6a21e4abbd488d36.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/DecisionNec/Variantb245249c375a3254e0bcc343a2df4c6c64d286cfa8a7af7b6a21e4abbd488d36.lean#L76).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `af51d4c20203c558b8148432487276aad0a3980d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

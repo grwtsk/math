@@ -1,0 +1,130 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.Card.Variant2f42ba8771cfe98e2af3e1701393a20527af7ad9947bd2d5ce1495b05d943ec9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `186a5ff736abb333de0ab1d07de990c5cdc64828` · SHA-256 `5d6cf15cdc2e542282ab3c16f3a31e374ee583bfc459fa725a648e4fbc3cf4f2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.SetCardinalMkIcc.Variantbde2ecd036d945510bcfd7686cfdf66ece2636d255a5cb56515c0cbf83b91ab9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"bde2ecd036d945510bcfd7686cfdf66ece2636d255a5cb56515c0cbf83b91ab9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.SetCardinalMkIcc.Variantbde2ecd036d945510bcfd7686cfdf66ece2636d255a5cb56515c0cbf83b91ab9","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"bde2ecd036d945510bcfd7686cfdf66ece2636d255a5cb56515c0cbf83b91ab9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Order/Interval/Set/Card.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2026 Snir Broshi. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Snir Broshi
+-/
+module
+
+public import Mathlib.Data.Set.Card
+public import Mathlib.Order.Interval.Finset.Defs
+
+/-!
+# Cardinalities of intervals
+
+Cardinalities of intervals can be computed using finsets in locally finite orders.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.SetCardinalMkIcc.Variantbde2ecd036d945510bcfd7686cfdf66ece2636d255a5cb56515c0cbf83b91ab9
+
+public section
+
+open Finset
+
+variable {α : Type*}
+
+section Preorder
+
+variable [Preorder α]
+
+section LocallyFiniteOrder
+
+variable [LocallyFiniteOrder α]
+
+@[to_dual self]
+theorem Set.cardinalMk_Icc (a b : α) : Cardinal.mk (Set.Icc a b) = #(Finset.Icc a b) := by
+  simp
+
+@[to_dual self]
+theorem Set.encard_Icc (a b : α) : (Set.Icc a b).encard = #(Finset.Icc a b) := by
+  simp [← Finset.coe_Icc]
+
+@[to_dual self]
+theorem Set.ncard_Icc (a b : α) : (Set.Icc a b).ncard = #(Finset.Icc a b) := by
+  simp [← Finset.coe_Icc]
+
+@[to_dual (reorder := a b)]
+theorem Set.cardinalMk_Ico (a b : α) : Cardinal.mk (Set.Ico a b) = #(Finset.Ico a b) := by
+  simp
+
+@[to_dual (reorder := a b)]
+theorem Set.encard_Ico (a b : α) : (Set.Ico a b).encard = #(Finset.Ico a b) := by
+  simp [← Finset.coe_Ico]
+
+@[to_dual (reorder := a b)]
+theorem Set.ncard_Ico (a b : α) : (Set.Ico a b).ncard = #(Finset.Ico a b) := by
+  simp [← Finset.coe_Ico]
+
+@[to_dual self]
+theorem Set.cardinalMk_Ioo (a b : α) : Cardinal.mk (Set.Ioo a b) = #(Finset.Ioo a b) := by
+  simp
+
+@[to_dual self]
+theorem Set.encard_Ioo (a b : α) : (Set.Ioo a b).encard = #(Finset.Ioo a b) := by
+  simp [← Finset.coe_Ioo]
+
+@[to_dual self]
+theorem Set.ncard_Ioo (a b : α) : (Set.Ioo a b).ncard = #(Finset.Ioo a b) := by
+  simp [← Finset.coe_Ioo]
+
+end LocallyFiniteOrder
+
+section LocallyFiniteOrderTop
+
+variable [LocallyFiniteOrderTop α]
+
+@[to_dual]
+theorem Set.cardinalMk_Ici (a : α) : Cardinal.mk (Set.Ici a) = #(Finset.Ici a) := by
+  simp
+
+@[to_dual]
+theorem Set.encard_Ici (a : α) : (Set.Ici a).encard = #(Finset.Ici a) := by
+  simp [← Finset.coe_Ici]
+
+@[to_dual]
+theorem Set.ncard_Ici (a : α) : (Set.Ici a).ncard = #(Finset.Ici a) := by
+  simp [← Finset.coe_Ici]
+
+@[to_dual]
+theorem Set.cardinalMk_Ioi (a : α) : Cardinal.mk (Set.Ioi a) = #(Finset.Ioi a) := by
+  simp
+
+@[to_dual]
+theorem Set.encard_Ioi (a : α) : (Set.Ioi a).encard = #(Finset.Ioi a) := by
+  simp [← Finset.coe_Ioi]
+
+@[to_dual]
+theorem Set.ncard_Ioi (a : α) : (Set.Ioi a).ncard = #(Finset.Ioi a) := by
+  simp [← Finset.coe_Ioi]
+
+end LocallyFiniteOrderTop
+
+end Preorder
+
+section Lattice
+
+variable [Lattice α] [LocallyFiniteOrder α]
+
+theorem Set.cardinalMk_uIcc (a b : α) : Cardinal.mk (Set.uIcc a b) = #(Finset.uIcc a b) := by
+  simp [Set.uIcc, Finset.uIcc]
+
+theorem Set.encard_uIcc (a b : α) : (Set.uIcc a b).encard = #(Finset.uIcc a b) := by
+  simp [← Finset.coe_uIcc]
+
+theorem Set.ncard_uIcc (a b : α) : (Set.uIcc a b).ncard = #(Finset.uIcc a b) := by
+  simp [← Finset.coe_uIcc]
+
+end Lattice
+```

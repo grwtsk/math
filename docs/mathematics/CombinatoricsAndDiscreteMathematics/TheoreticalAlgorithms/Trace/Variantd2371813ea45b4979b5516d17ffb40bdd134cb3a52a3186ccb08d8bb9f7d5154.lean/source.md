@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Trace.Variantd2371813ea45b4979b5516d17ffb40bdd134cb3a52a3186ccb08d8bb9f7d5154
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c2454e45790ce0a8e503ff1b2e068c78afd8ba97` · SHA-256 `d2371813ea45b4979b5516d17ffb40bdd134cb3a52a3186ccb08d8bb9f7d5154`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Think.SourceTree.PoleAssignment
+
+set_option autoImplicit false
+
+namespace Think.Poles.Trace
+
+def placements : List Think.SourceTree.PhasePlacement :=
+  Think.SourceTree.placementsForPole Think.SourceTree.Pole.trace
+
+theorem placements_count :
+    placements.length = 14 :=
+  Think.SourceTree.tracePole_count
+
+theorem placements_centerControlled :
+    ∀ q ∈ placements, q.phase ∈ Think.centerSpine := by
+  intro q _hq
+  exact Think.SourceTree.center_spine_controls_all_poles q
+
+structure SrcLibPoleStream where
+  streamId : Nat
+  frameCount : Nat
+  hasPoleAtOne : Prop
+deriving Repr
+
+def srcLibDefaultPoleStream : SrcLibPoleStream where
+  streamId := 1
+  frameCount := placements.length
+  hasPoleAtOne := True
+
+def SrcLibPoleStream.hasFiniteTrace (stream : SrcLibPoleStream) : Prop :=
+  stream.frameCount > 0
+
+theorem srcLibDefaultPoleStream_frameCount :
+    srcLibDefaultPoleStream.frameCount = 14 := by
+  rfl
+
+theorem srcLibDefaultPoleStream_hasFiniteTrace :
+    srcLibDefaultPoleStream.hasFiniteTrace := by
+  unfold SrcLibPoleStream.hasFiniteTrace
+  rw [srcLibDefaultPoleStream_frameCount]
+  decide
+
+end Think.Poles.Trace
+```

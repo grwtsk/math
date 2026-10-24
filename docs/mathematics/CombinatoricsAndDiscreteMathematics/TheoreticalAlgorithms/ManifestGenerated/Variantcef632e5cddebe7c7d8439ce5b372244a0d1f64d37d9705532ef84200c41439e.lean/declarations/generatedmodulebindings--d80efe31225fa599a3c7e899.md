@@ -1,0 +1,1660 @@
+# generatedModuleBindings
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:878eb99f1b76d1caad4d6c1af6d876ee28dc5410f5a96f8bd6bdf37aa39a6b7f",
+  "kind": "def",
+  "lexical_name": "generatedModuleBindings",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "generatedmodulebindings--d80efe31225fa599a3c7e899",
+  "source": {
+    "blob": "0688152063cce9e8672e2c7dc71a679cc45c52ce",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1633,
+    "line": 55,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ManifestGenerated/Variantcef632e5cddebe7c7d8439ce5b372244a0d1f64d37d9705532ef84200c41439e.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:d80efe31225fa599a3c7e8994b93f5a751a92453ab25f2a218e7557f388de933",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ManifestGenerated/Variantcef632e5cddebe7c7d8439ce5b372244a0d1f64d37d9705532ef84200c41439e.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:878eb99f1b76d1caad4d6c1af6d876ee28dc5410f5a96f8bd6bdf37aa39a6b7f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 55–1633.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def generatedModuleBindings : Array CompiledModuleBinding :=
+  #[
+    {
+      moduleName := "DAF.Arithmetic.CharacterProjector"
+      definingFile := "Surface/DAF/Arithmetic/CharacterProjector.lean"
+      sourceDigest := { algorithm := "sha256", value := "200984f72047f72f8dfa683a2d7b37ceaf5d3bdbb2343ef7cd2adeb147c9c461" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "33d8a21a0d29a96b2466db9d8bf7918c31b1b94cc14283d7be64fd3f119634f7" }
+      declarationCount := 38
+      declarationInventoryDigest := { algorithm := "sha256", value := "e87bcc1216fcf872617451751f0a9fb6999e1d6e9ea53cc0689796089237b1b6" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.CharacterTwist"
+      definingFile := "Surface/DAF/Arithmetic/CharacterTwist.lean"
+      sourceDigest := { algorithm := "sha256", value := "ebff71f9e9a609ab43cc034273757f8c3c63fdfdf2c868fa58426f96ad498382" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "499cea3914e5a6728707719a128fe4e82c70f4494b6565c4501cbfc2c0206725" }
+      declarationCount := 23
+      declarationInventoryDigest := { algorithm := "sha256", value := "d1e27b8cc0393dc8109284c033b8616793623dbe6304992455eb9ce812f0ce98" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.Comparison"
+      definingFile := "Surface/DAF/Arithmetic/Comparison.lean"
+      sourceDigest := { algorithm := "sha256", value := "7ebe7bf2537378473b3680ab88821d442e16bb2d95ce06494cc19fac6b10e070" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "cdd0123d6cd393e3b8abce9ec88c044dd65ea02bc74183db619ea5fc0d85a4ab" }
+      declarationCount := 30
+      declarationInventoryDigest := { algorithm := "sha256", value := "fa10a7e9bd79f1397574ecdc3c5f3e7b922e91f324682671e032eeb768a36183" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.ConnesBoundary"
+      definingFile := "Surface/DAF/Arithmetic/ConnesBoundary.lean"
+      sourceDigest := { algorithm := "sha256", value := "9334549f178584e02facc7484a2405d3d944609fd057c6f37b4bbb6f22da07f7" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "3183f48d328d4d3fb1541f2b39fb06aea18df623d55ad36ba1691b13dd9c1037" }
+      declarationCount := 74
+      declarationInventoryDigest := { algorithm := "sha256", value := "057719d79bf9bb99758852441ebc514ba0af7f565250e39d59429ea2f834891e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.DirichletCharacterProfile"
+      definingFile := "Surface/DAF/Arithmetic/DirichletCharacterProfile.lean"
+      sourceDigest := { algorithm := "sha256", value := "8be0faf660c524119bcab24098f36b0883e0fb55a970aceba4f374b1c9fe5267" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "ac471e95f92e950d223c84cd9f09428065c09f12a6f356c92e006b69ea82b90b" }
+      declarationCount := 44
+      declarationInventoryDigest := { algorithm := "sha256", value := "1e525fe477370a320207b24444c3f16c332e436cd64efeb939ea4fc8c9efbee2" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.FunctionalEquation"
+      definingFile := "Surface/DAF/Arithmetic/FunctionalEquation.lean"
+      sourceDigest := { algorithm := "sha256", value := "f12e27b9353d0d006415eb52e4db738d9ad1581209afa994bb63d615f3f49412" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f92868c18a91a11e09a2a048ab7b786ac66bce0ca5069efd89cb8c8356c42fa5" }
+      declarationCount := 48
+      declarationInventoryDigest := { algorithm := "sha256", value := "4e45a63a0b2d8a2a0fbd5d81dd33cd36641c13d64c96f2ea17749283945ac33e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.GammaSpindle"
+      definingFile := "Surface/DAF/Arithmetic/GammaSpindle.lean"
+      sourceDigest := { algorithm := "sha256", value := "e7f57c3fa71731eba57e0158b3ebbc62e2b42755738d0119a150bab57b8ff18a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "edc9ecb5be73ffb7ff52ebea0dcbb10548889f9710839074fe6f027e9ab8b58d" }
+      declarationCount := 72
+      declarationInventoryDigest := { algorithm := "sha256", value := "f415f03b9dd74cfa7aea576043fb6666b7a5066cf5e47015ed66e1ea2a975413" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.Interface"
+      definingFile := "Surface/DAF/Arithmetic/Interface.lean"
+      sourceDigest := { algorithm := "sha256", value := "ec5ecd69ad37f4cd299b56989fcfd0caa4b57a6296ba4fcaad6e4c396f706aa2" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "c04259a0d970bbab40ce940b25335be001a4812b1265dd6563e7f59ef9bc3936" }
+      declarationCount := 72
+      declarationInventoryDigest := { algorithm := "sha256", value := "53620dcb7253bb90a8c63fd716e13f38d06fa2da39151870455012348c283deb" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.PrimeSpokes"
+      definingFile := "Surface/DAF/Arithmetic/PrimeSpokes.lean"
+      sourceDigest := { algorithm := "sha256", value := "d4ac12273b41da1f65e111b6ad4acaf4e76c13325ea620c70e98324d22b58f47" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "76a257bee98ac91e9dec5fc5e91cda8de2ecdd474403740ef27641f56df472a8" }
+      declarationCount := 22
+      declarationInventoryDigest := { algorithm := "sha256", value := "9370603c20389ff2c15f0765cdc75396f4f20e64fd24fd2d5856bddd1f0eb3ab" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Arithmetic.SpecialValueClaim"
+      definingFile := "Surface/DAF/Arithmetic/SpecialValueClaim.lean"
+      sourceDigest := { algorithm := "sha256", value := "6e9280817edd0a2430aaa0c176595698dc1ffa90b7e3f91ab1c26d0cc44f7a49" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d7a807f1ae6266cfd490db7ea1c8528915fb10b3b9f95a513dbaeea321cc855b" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "0a26e8bec82563a4601d13f82d4893289ce72fc6b060b7b7f85f70786b37a4f5" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Assembly.Interface"
+      definingFile := "Surface/DAF/Assembly/Interface.lean"
+      sourceDigest := { algorithm := "sha256", value := "c862677e4cee79f053fcaad6621063cf51e5df4ee246d7414547d4e1f5f10b8a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "b2283c96ac7d22b7f61dbfc2497857a673b84d8ece4383ce3116b88bfe048b80" }
+      declarationCount := 32
+      declarationInventoryDigest := { algorithm := "sha256", value := "35ffa84506fd92dc7debf0f549df2588f6d67da218e0d17c8488061aa117c88e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.BuildModel"
+      definingFile := "Surface/DAF/BuildModel.lean"
+      sourceDigest := { algorithm := "sha256", value := "780d1b2bd382956b194bf855c3487de0023036ec6473b51c65ad17c818aebe30" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "56b443f6b88b57e79031baed60f4f72f794755e23563a81c1507953c85b8ae76" }
+      declarationCount := 49
+      declarationInventoryDigest := { algorithm := "sha256", value := "f87b6f98a9cf8fc341d746ff96c1ec1869b84fb360423899baf68a02f0429d5e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal"
+      definingFile := "Surface/DAF/Causal.lean"
+      sourceDigest := { algorithm := "sha256", value := "d017e5c17eee80654bc95d6d3316334b42d63c6f430edfdc5f0f7a211916e5c7" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "7f1b72fccb20d016f78cc51860336813830d2434a1384109c740e4a82dc5efca" }
+      declarationCount := 39
+      declarationInventoryDigest := { algorithm := "sha256", value := "f65c9ab39d003e2b8bfaa0e5648a228ce8c98398b854a365d02ec4c3644fafbb" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.CausalState"
+      definingFile := "Surface/DAF/Causal/CausalState.lean"
+      sourceDigest := { algorithm := "sha256", value := "8cc1ad83113e89b69409e4e528fe00277e4c04268e458a0342ca61a2bd66e9c7" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "a1d730649540bd2ab1597c7ceef0fb09f5ef2321e958b1808a6ea39b25ed2cf6" }
+      declarationCount := 24
+      declarationInventoryDigest := { algorithm := "sha256", value := "965d944768623e68833aecdd6218bdd7fd623f86231d6703a6089f12e82ee14c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.ObservableAdapter"
+      definingFile := "Surface/DAF/Causal/ObservableAdapter.lean"
+      sourceDigest := { algorithm := "sha256", value := "95737bbc5a230b365d23057af65ce8216701785e962adf9116d4fd714ad4915c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "3637116ba1da6126bcf2dc202011615d1a259e97316cefba917a12468f71ec17" }
+      declarationCount := 7
+      declarationInventoryDigest := { algorithm := "sha256", value := "722177af58cb6000d9cc39b959f4428bcd1c001e65c9515eb823548f6b0300ce" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.ObservableRecursion"
+      definingFile := "Surface/DAF/Causal/ObservableRecursion.lean"
+      sourceDigest := { algorithm := "sha256", value := "d5a8255ef12565e8a1f0fbe4293dd241fb32bfa367611a22433482bd5627e9dd" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6a809a5b4933ca713afc919d697dfcceb0a3e26de48db370dc87b75a560d4c98" }
+      declarationCount := 22
+      declarationInventoryDigest := { algorithm := "sha256", value := "89cd284f39cf77a8eb6c1657c3ad447960b3aa80e6caf75d03657eabda748df2" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.ObserverFactor"
+      definingFile := "Surface/DAF/Causal/ObserverFactor.lean"
+      sourceDigest := { algorithm := "sha256", value := "580cc666770ddb3d3c57fc05e2de8c6b58d6260ff4fce3267aebe3f1e11aa40d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "121c74d1ffd46c6867c37f2f5833e6c591b771b614bc170e12aceaa00875686e" }
+      declarationCount := 59
+      declarationInventoryDigest := { algorithm := "sha256", value := "94bf89963cd34f09c303a5fff222c98d44ce9677d2466480aa824a7f9aea1f90" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.PredictiveRepresentation"
+      definingFile := "Surface/DAF/Causal/PredictiveRepresentation.lean"
+      sourceDigest := { algorithm := "sha256", value := "260d671f2639f4125b6aa59aa46a1af5f3487a89bdf6ba0b9ab8c63aa6987962" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9de78244ed7786213363cc41d0c258e42b41a78f99d755d59f87d25486447f23" }
+      declarationCount := 47
+      declarationInventoryDigest := { algorithm := "sha256", value := "60af9146438e1542e673ec61e9afd6822a0df9e7bc46f92f6da220269964416f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.QuantizerTower"
+      definingFile := "Surface/DAF/Causal/QuantizerTower.lean"
+      sourceDigest := { algorithm := "sha256", value := "a553291cf0de463c1c92d6dd0ee720e42de38b4f9a1041b2ea6f5d17b3150779" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "e4cdd2772dba456904ab8d364ba4cd957d65a683129e406632fe2d8c4e9aac68" }
+      declarationCount := 43
+      declarationInventoryDigest := { algorithm := "sha256", value := "21246fce09f5897a2be413f2a15242e06cfe5e70e59ebc4790254d39a593a345" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Causal.ReversibleCausalState"
+      definingFile := "Surface/DAF/Causal/ReversibleCausalState.lean"
+      sourceDigest := { algorithm := "sha256", value := "94413fba6c557a4f85eba4ddd517e9cf96c574d3d846124f32c2a67ccc04f722" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8bd4a8448281fd9d8941b19baafbff52dca70a0056c3a38e08f2de63456f588d" }
+      declarationCount := 35
+      declarationInventoryDigest := { algorithm := "sha256", value := "9b639d34dd275a3cde6b88e5c14e285b0afab8f2e0945cbdf05396270505332c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Codec"
+      definingFile := "Surface/DAF/Codec.lean"
+      sourceDigest := { algorithm := "sha256", value := "8136e4b65fdd2b32c0a6c3485ceef6e5dc6876cec11df03ccdbeff9110e9fadd" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "48ae683670846c82e10c39c58b4b175c07ba6a65d326000085dff3eb672c476b" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "2d5d72e278d0191ad56ab438d5bce5761ab7445c716c05227656795301892b6f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Chain"
+      definingFile := "Surface/DAF/Comparison/Chain.lean"
+      sourceDigest := { algorithm := "sha256", value := "d7b0accab2c491eb84a6a03ded8659192fe5add73a8e1f08a5fe5da7155c4c45" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "bda3d47b98d0233c043541d16f1acd89fe6c2d2927d9da97239acc8a0b3b893c" }
+      declarationCount := 167
+      declarationInventoryDigest := { algorithm := "sha256", value := "5b8fb3da0765742eeb4cfd077a5b3ad32afea20102e9c60cf45dd4568c748a28" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Coefficients"
+      definingFile := "Surface/DAF/Comparison/Coefficients.lean"
+      sourceDigest := { algorithm := "sha256", value := "c45c0f7d2b0128d1ccab586bca92c6db0a850d1ad25fd9ddb9f4180e91636162" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "620577661ba32c5d749dab6f7ab05efb467d1d8622e3815e6d1e38c82a7a839c" }
+      declarationCount := 67
+      declarationInventoryDigest := { algorithm := "sha256", value := "be111383ee23a09188f8011e4ab3680a5bc07fb89b28334a7bec57077cf1a33e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Composition"
+      definingFile := "Surface/DAF/Comparison/Composition.lean"
+      sourceDigest := { algorithm := "sha256", value := "6240836468494abd198d5d53a6f45083186e856e65e58b2db93a08d80afc9890" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "ae1738e202967de5ece200da6b31c6d2650e05fb3a1bd2113a190bac18bae076" }
+      declarationCount := 37
+      declarationInventoryDigest := { algorithm := "sha256", value := "c6325fe49b15f0014170a8c89e0dcb76b6decce82aeabe3343a2c623993acae0" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Construction"
+      definingFile := "Surface/DAF/Comparison/Construction.lean"
+      sourceDigest := { algorithm := "sha256", value := "208ddf85e8d31445d17e4dd5beed5cd6d67286608eaa1733265aba3aaf42943a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9e0f5ce0e8733e28f99ca87e7ae9464921fb6ab004ec2f98a54afbc384e4b0f7" }
+      declarationCount := 69
+      declarationInventoryDigest := { algorithm := "sha256", value := "2ab933bff647e236a5f69e04bba7d43142a9831e046fc293b76e3954e6525734" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Core"
+      definingFile := "Surface/DAF/Comparison/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "2d9c55d175aad95c3ac015bc32e24bc6220e1c62be7890edd5aaa738f7d7310f" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4170f442cfdb6ac8e56a17d787145eef9695b4b4d1537dc65ab973d6984c6cc9" }
+      declarationCount := 22
+      declarationInventoryDigest := { algorithm := "sha256", value := "80de97d764a2c21fed096379a00ab08e1aa9be39b4b18acc48132b4dc1901260" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.LogicalStatus"
+      definingFile := "Surface/DAF/Comparison/LogicalStatus.lean"
+      sourceDigest := { algorithm := "sha256", value := "8ce379053dbec0d02a1c179f1d3d5f55cfe4c8be9d76ee51c7e855a2e071095d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "542c8979dc21cb3034939ff80208d78ae2175f312fa36c3bb9710204978f9a42" }
+      declarationCount := 76
+      declarationInventoryDigest := { algorithm := "sha256", value := "847448a09378449f8a072d8ff1c226b07fa4bad0b9be87f98d8bcca776714095" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Naturality"
+      definingFile := "Surface/DAF/Comparison/Naturality.lean"
+      sourceDigest := { algorithm := "sha256", value := "5c533682d1389f99edbf7be114d2068d6b2ae59e518300fe968b29339f21c0b9" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "e6b9caa7f5cdaf8460a13bfd5d97657db7be1b6735d5657d6f1ad68ea15f9801" }
+      declarationCount := 17
+      declarationInventoryDigest := { algorithm := "sha256", value := "e64a49272c9dd9638a9e4605831900a14b9010918640532bac8d3bdbfd3689a0" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Properties"
+      definingFile := "Surface/DAF/Comparison/Properties.lean"
+      sourceDigest := { algorithm := "sha256", value := "a4b8b3fa057b7df93077ff9d703350322fc6f6a1e92fee5546e550e290685aa8" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f705107e7febbd58e1650e1f5c33b86efe203689751ba8af8a4646291c5113ea" }
+      declarationCount := 11
+      declarationInventoryDigest := { algorithm := "sha256", value := "82c4b7e7cfef0eacf2dcdce2f4c6ca508da56d07e32481ba635f336e10253b24" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Comparison.Scope"
+      definingFile := "Surface/DAF/Comparison/Scope.lean"
+      sourceDigest := { algorithm := "sha256", value := "b9306070af9f26590b8eff8292b3ff9ecc31561235dc8b9a49b996a4bf3c5308" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "21ab73b0c303d4f96af24caaaa23740062681ce1e2876b638e4601bb9fae9431" }
+      declarationCount := 95
+      declarationInventoryDigest := { algorithm := "sha256", value := "cc177a1d8c985a6d8717b3bf41632883f2fe60b565a8563d10b9b21add02741a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Cyclotomic.Defect"
+      definingFile := "Surface/DAF/Cyclotomic/Defect.lean"
+      sourceDigest := { algorithm := "sha256", value := "b5a8ecddfde86fc1318639bb631a67ecd22af5407036818d7af1b1b35beb5260" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0704cfb9f49256c436eca825a0b19bf84f80b5c3789de6d0e2b70ec0cc2ee2c4" }
+      declarationCount := 163
+      declarationInventoryDigest := { algorithm := "sha256", value := "17bb702d40b3fa71073885bef3c176c36bac187cf20482b8fa95b1be68881e1b" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.DependencyGraph"
+      definingFile := "Surface/DAF/DependencyGraph.lean"
+      sourceDigest := { algorithm := "sha256", value := "c61c0758f4a8696ce7cb8b913c033a637da24c1fe0a8789b1582477bbf919e2e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8b1c6cc52cb1aec1e9478f74da5408c249b87656ee2cdb7818000865e39de9d3" }
+      declarationCount := 49
+      declarationInventoryDigest := { algorithm := "sha256", value := "bf47300b1d0acc546d6b9c6ea882183521adbc53c6e43d3604a1850b227de0e7" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Determinant.Core"
+      definingFile := "Surface/DAF/Determinant/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "16233d524f75fbe2533c207eb185e2d618b5ce2c8da1fb3c925f9dce96f477dd" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9ffab8ac2c07ea209804a23f4e7c6fe675cf68a7c2c6845cc54448d5ea7f5d1a" }
+      declarationCount := 25
+      declarationInventoryDigest := { algorithm := "sha256", value := "9da42c29bfe9f02b35c0fe88e3acdc70dcb207a538ce0debaa8c4c7c06bcf820" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Determinant.ScalarExtension"
+      definingFile := "Surface/DAF/Determinant/ScalarExtension.lean"
+      sourceDigest := { algorithm := "sha256", value := "af7a35d0a25ae8d3c6bde9e109c24c3e6e32fce5199032d17fa59499e553fdba" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "a24f76de39801aa76b4a87f966e9b7d330e92da0034195e82c3371dc24b9db1c" }
+      declarationCount := 45
+      declarationInventoryDigest := { algorithm := "sha256", value := "ae959cb0cb1409ac5585d74a5e42dde44362ba40185fa14ebe2075a699ec04eb" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Determinant.Transport"
+      definingFile := "Surface/DAF/Determinant/Transport.lean"
+      sourceDigest := { algorithm := "sha256", value := "b70c3e0a1fe0356991f0bf10336ad25174f98b9eb11bf4639a10ad6314eebb8b" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4fd0755817a893681ea96617bb73984bdf0ca832bfe50a3bce4501c5133368d4" }
+      declarationCount := 8
+      declarationInventoryDigest := { algorithm := "sha256", value := "2d82016812342c8d277806010e632ad2e6686b5b476760965a34a6aac18544b7" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Boundary"
+      definingFile := "Surface/DAF/Fabric/Boundary.lean"
+      sourceDigest := { algorithm := "sha256", value := "11a55426ea2b3c997cb721d02e00ba5a9fefea665e2dc423cafcdc844ed9b389" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9bbd09b357122c56f80d0a87cab95db07d4114894a04692b892784cc429862f4" }
+      declarationCount := 45
+      declarationInventoryDigest := { algorithm := "sha256", value := "7b047c198c099134639540a9c1df783187b348b754e50a2216bd1e5364fa7514" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Comparison"
+      definingFile := "Surface/DAF/Fabric/Comparison.lean"
+      sourceDigest := { algorithm := "sha256", value := "89347c7f1ec30728d3489f0cc1546ea206704a12aa28695cd0516f1d6118db0c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f606df5cf499b691c2f381b9a80f2286673698a49e782a27b75a12243d780f56" }
+      declarationCount := 52
+      declarationInventoryDigest := { algorithm := "sha256", value := "67c5fc8c8c3584893edbcf72c83c54c4a4d64b71da370a21804c2d5c53d43855" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Core"
+      definingFile := "Surface/DAF/Fabric/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "ae1143b32b55f35728e828b146d774cfc84dcf88ea47933e9654a503d4963581" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "dfefa7b6fe3185ec140294980fa72b94e1ec601e55fe19ad33664af588b6821e" }
+      declarationCount := 25
+      declarationInventoryDigest := { algorithm := "sha256", value := "56b5647e5100251e614e39da0f3c9cc7b66908bd05f05ef62b7bc4c6fd7a79e6" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.KanExtension"
+      definingFile := "Surface/DAF/Fabric/KanExtension.lean"
+      sourceDigest := { algorithm := "sha256", value := "72c0152ff74ce4c9ce67f0b7bb6734388c3a83a3db82bce2ade5f050e70122ea" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6c44621a1c421475b2b7d7bf2df3905f7d4e1e13682389f30f5a32b39e8e6477" }
+      declarationCount := 70
+      declarationInventoryDigest := { algorithm := "sha256", value := "cbb08948fdfa9c2e4f2833b8199def55f4952acab401b0285c75dba4aabd1452" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Manifest"
+      definingFile := "Surface/DAF/Fabric/Manifest.lean"
+      sourceDigest := { algorithm := "sha256", value := "b728b8e32fd12c945a35e4dda2d6f839a0024c46ef838d231d857e015973e8e7" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "98f433fdbb8f41a1de91ad08495938027a9deb6e91768fadd7c91b4265fa4a3a" }
+      declarationCount := 40
+      declarationInventoryDigest := { algorithm := "sha256", value := "02e7746c7c62bd41ec99ac56b96db9b4352b24a78ff39f975b6ff450aa77d232" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Patch"
+      definingFile := "Surface/DAF/Fabric/Patch.lean"
+      sourceDigest := { algorithm := "sha256", value := "24e7cd018287f1f5e546eb0297d6032dafe02e61e8ce7ed001e03ed8169f26d4" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0fe8814db6307912990c7b8a171a9420f0461c206ceba618f059bf866927040b" }
+      declarationCount := 87
+      declarationInventoryDigest := { algorithm := "sha256", value := "dfcf3bdde015198a2894a8046e6b194424b0cad4d0caa8739e30e79b94a45512" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Presentation"
+      definingFile := "Surface/DAF/Fabric/Presentation.lean"
+      sourceDigest := { algorithm := "sha256", value := "79e30378406c2a12b8b71995f54e241062a7264fea1eef935a3cf32b24621fe1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "ac298bfd0d8cecc5feb98040a37cdf90ce95b2985e54cc11251a93ccf9da5636" }
+      declarationCount := 39
+      declarationInventoryDigest := { algorithm := "sha256", value := "30eb7b151d3968ba6adbfd24c5262e135f926b82138d3667e14c3e73a1935404" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.PresentationCategory"
+      definingFile := "Surface/DAF/Fabric/PresentationCategory.lean"
+      sourceDigest := { algorithm := "sha256", value := "b4422f919b551b2dc4a9ba299d3493cad85e0af2ff73a1ecbf661b6e5cbba9eb" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "114189ac157600e610d9f705b7d3c161c4e867fa4506f284ae21646e50ec31e3" }
+      declarationCount := 6
+      declarationInventoryDigest := { algorithm := "sha256", value := "8e4443d0cbbd284dc8e0000298288906b4c7335436281a96c36c7d57b8fd6123" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Reaction"
+      definingFile := "Surface/DAF/Fabric/Reaction.lean"
+      sourceDigest := { algorithm := "sha256", value := "377b2813d439108c68c43feb466d27bf3856292e54e1a0d30c23057b65e96ed1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f023eba26dd22a989c4f4d19a0fbf48a7027d531df034bcb27fca099db02cf50" }
+      declarationCount := 48
+      declarationInventoryDigest := { algorithm := "sha256", value := "27eed0ca928dd42545949407afe65af6370ca9c930c6d7f6caa452108a97a729" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Realization"
+      definingFile := "Surface/DAF/Fabric/Realization.lean"
+      sourceDigest := { algorithm := "sha256", value := "ed620b89316eb994681589a654ba2d30b942179b8f63f8e2179cbda782735501" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "1e0a4f5bd0268be817e46edbf5feb013d793cda1a0312092c359649bda76bd65" }
+      declarationCount := 40
+      declarationInventoryDigest := { algorithm := "sha256", value := "8882cfd8c3a992de90b598fedff74634675cc31ff7e24675417c7f8811628d82" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Refinement"
+      definingFile := "Surface/DAF/Fabric/Refinement.lean"
+      sourceDigest := { algorithm := "sha256", value := "cbd2a094d079a242bab331bd457c81a571547ffa1dad8e645781d60d80e806df" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "722af65e2b3f08d98b1070b98b70269936e46a23ba73e5ab6b84d814fe25b624" }
+      declarationCount := 65
+      declarationInventoryDigest := { algorithm := "sha256", value := "0f6d75c0e4e3da08a5bb8c988a0cf2fc694d3af9b590c9e67d0dfca6e5e05640" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Runtime"
+      definingFile := "Surface/DAF/Fabric/Runtime.lean"
+      sourceDigest := { algorithm := "sha256", value := "04cda9b54a58804b308b196c33d1883a0123e7df6a89cfa0896d07fb664499a5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "71da0e9e45bc4175faa5031805f34b2f2818b3bd9c5c1d7efbbd14c50a981b42" }
+      declarationCount := 53
+      declarationInventoryDigest := { algorithm := "sha256", value := "00f6bba1018c2568a1f1d2689520a40e6b9f394d35a8cea5cba63544a64a979e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.Shape"
+      definingFile := "Surface/DAF/Fabric/Shape.lean"
+      sourceDigest := { algorithm := "sha256", value := "1f3102b45972d1aac6de2a99e4e07c2a7cf241d830188e30d3b1bc8dc1963e3c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "2eaf3b583312c4b190bf6405e57bdd8d5b28fc78cd75355843aa99941ec45d3b" }
+      declarationCount := 41
+      declarationInventoryDigest := { algorithm := "sha256", value := "84491b98e89f1c3eab86ec576cdfb5534555e75a6d2fe0c8648a91a352747e8b" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.SurgeryAdapter"
+      definingFile := "Surface/DAF/Fabric/SurgeryAdapter.lean"
+      sourceDigest := { algorithm := "sha256", value := "3e5431a564a96bc63977a669a1497d4789041a4ae7ec87951ea294e00e2d04c0" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "a17853ebc7a874a03f5c79df0b42a87215ce1e6ff17623b5452c3aeb8fdc005b" }
+      declarationCount := 22
+      declarationInventoryDigest := { algorithm := "sha256", value := "79fc4a2fce61d266b2418752ec988b97320be4392ebff2895c08fa5267243139" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fabric.System"
+      definingFile := "Surface/DAF/Fabric/System.lean"
+      sourceDigest := { algorithm := "sha256", value := "3760544749af3366aaf4033daacab61fa25837ed2045c950422bf5b4c4dda661" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0fafb877d9b81a5f1a6ec692b55ddddc7ae18d73b9d2fe0570f91130dd523013" }
+      declarationCount := 9
+      declarationInventoryDigest := { algorithm := "sha256", value := "777cc435a78875b4ece65316bdabbae016862cc6b159dc98b1d28775577b38a3" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.CycleConvolution"
+      definingFile := "Surface/DAF/FiniteDynamics/CycleConvolution.lean"
+      sourceDigest := { algorithm := "sha256", value := "3e89b82b45b0070d9809115f291c15d5376cc44fe2defa306ae23507e6684e87" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "c69245317bada5f28065e5215bdda1b3b2dcfa5ccdf35a600550f82f2cfa843a" }
+      declarationCount := 9
+      declarationInventoryDigest := { algorithm := "sha256", value := "76cf91ae19b53b1623553cc82c4b57942289d4524e3e401152340cb80db4cac2" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.CycleTransport"
+      definingFile := "Surface/DAF/FiniteDynamics/CycleTransport.lean"
+      sourceDigest := { algorithm := "sha256", value := "d9d1758f43acfbedab035512c87ddf3d46aa2da24458ddf509088942022e07fe" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "5838122b8fe28227467044496005367740e5cdfe97c5edbafeafaf11b61aaccd" }
+      declarationCount := 64
+      declarationInventoryDigest := { algorithm := "sha256", value := "0982205141ef3176bd99ee8afe073769a80205b525f57a1b887ff9171e3acbb4" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.FirstReturn"
+      definingFile := "Surface/DAF/FiniteDynamics/FirstReturn.lean"
+      sourceDigest := { algorithm := "sha256", value := "1957bfffc2c969e39772325346a527b8bfd8a5a94b854bbea360ff91abc28fb6" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "1b982f1d731ee91f38de5daa1f1fe147017d7423a2b4f6c8f571c87b98ef5a4a" }
+      declarationCount := 31
+      declarationInventoryDigest := { algorithm := "sha256", value := "9f908ee553d174c6d3e2dfad3f1fd73b00fdf88063e13c777c31beb1da98c88e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.GradedFirstReturn"
+      definingFile := "Surface/DAF/FiniteDynamics/GradedFirstReturn.lean"
+      sourceDigest := { algorithm := "sha256", value := "d996964d43041ab68360e5d748840975a3203668a148874798b7775c977a208c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f16f10b02c26efe2fe728cfc9d1a6b9c31304973a60bb9fb222d690fee49ed1f" }
+      declarationCount := 10
+      declarationInventoryDigest := { algorithm := "sha256", value := "d0f4e5234fa8f2ef4a482646397141aba80108b5e01725dad4569dc3a66cb4e3" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.Involution"
+      definingFile := "Surface/DAF/FiniteDynamics/Involution.lean"
+      sourceDigest := { algorithm := "sha256", value := "7a91549dc123ab43f7462071f82b05a90fc29f58b31991e6742f4e497c8b913d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4a84bf85523a0870cae923af096be2493afb5e9410daaf2b3a09446f105417b1" }
+      declarationCount := 40
+      declarationInventoryDigest := { algorithm := "sha256", value := "e7f436b801d9cf51765a18c8998128319d4f07f9d3e3e99687ec77b5193efff8" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.InvolutiveConvolution"
+      definingFile := "Surface/DAF/FiniteDynamics/InvolutiveConvolution.lean"
+      sourceDigest := { algorithm := "sha256", value := "62bb9f53ab44125d63dbe2c9accb1f564366ec6c1158ee4321ebbc6b1667d879" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "111aef6b80a78e9cff09e9008c7d196078bf17c176388bdf28e753fb9ede3ace" }
+      declarationCount := 62
+      declarationInventoryDigest := { algorithm := "sha256", value := "b98160fdfc05d52a0380a8828eb6cfa1ac905d5e1fd73d21f896fec95ccf53b9" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.InvolutiveCycle"
+      definingFile := "Surface/DAF/FiniteDynamics/InvolutiveCycle.lean"
+      sourceDigest := { algorithm := "sha256", value := "fcd3019cc6fbdd4de1989fc30b03bc90947b260d94ee2b7a4d904ae92f0879b8" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "e34b368033b5db760ede64b4ee07e338e4d3877b8abaef60a4b1ced1df0b7b78" }
+      declarationCount := 69
+      declarationInventoryDigest := { algorithm := "sha256", value := "b78e5a1d4dd8908ac01501f3be1b1699506eb34ddf9f2b2dbc3d6915f58298c0" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.FiniteDynamics.Permutation"
+      definingFile := "Surface/DAF/FiniteDynamics/Permutation.lean"
+      sourceDigest := { algorithm := "sha256", value := "ecd94cac9fbac11e9b3a5826b884a0b831e1deac593682f1415960b233c0b4c9" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6604b27c59e672f0b785f0cceb14ba9987465474231fb6324e8d60e8e0870c50" }
+      declarationCount := 49
+      declarationInventoryDigest := { algorithm := "sha256", value := "3bcf5ab9fa4c9baf94d97821f5400b7f1325b1ab721bc0fdaa8792766ddef8a3" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fold.ChainMap"
+      definingFile := "Surface/DAF/Fold/ChainMap.lean"
+      sourceDigest := { algorithm := "sha256", value := "b6190f3dcc6b2cc5d99fac44468578725e67e7520f3eb5f2c3d7c8ee2c3aa5aa" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "534ea95596fd027c03456700d47b1be86b92e010e404bae5e66df9759ece1a61" }
+      declarationCount := 22
+      declarationInventoryDigest := { algorithm := "sha256", value := "640577025fdc5679431d49ed9b3417b3854fc8ed60cc5a23e2356f0510e07637" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fold.Core"
+      definingFile := "Surface/DAF/Fold/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "d493063600be3b428c780f97419b3690e516c69fad618594203d0b83f4dc84b6" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "61ab24c9b3292f95b4a38db901bb5c22c30af30f7cf6a9bb0e23c64223faec87" }
+      declarationCount := 22
+      declarationInventoryDigest := { algorithm := "sha256", value := "e20f78de8a625b7103e6c870e5921fa7b627f520197033487266b4c044be1f8c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fold.HarmonicTransport"
+      definingFile := "Surface/DAF/Fold/HarmonicTransport.lean"
+      sourceDigest := { algorithm := "sha256", value := "524a5c3e8f1783d0d287b9321cffd4deae1f7885305b7a1319ff7155c5bce071" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4473161127f679d0b8cba515e5841c5f649a9198bd5ab6cafcefc68d2ef0ba5e" }
+      declarationCount := 3
+      declarationInventoryDigest := { algorithm := "sha256", value := "c0ffddffa17f2fdb7434ba6d25c4575fc7352facfe6c083d4346e5cdc65b6608" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Fold.TotalTransport"
+      definingFile := "Surface/DAF/Fold/TotalTransport.lean"
+      sourceDigest := { algorithm := "sha256", value := "2282ae5d3f3ef1b8a2456f0e09a3d1a86d71c3cd3e570c89458283fa471ef4fe" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8f6a446a3e5657e4645abd4d75800133def2d80382faaf18405253d37515d71b" }
+      declarationCount := 8
+      declarationInventoryDigest := { algorithm := "sha256", value := "f91156674a949cf1af43ea6a787abd6cc8c743df4063f06146834a1ea04c824e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.BoundedRicciFlow"
+      definingFile := "Surface/DAF/Geometry/BoundedRicciFlow.lean"
+      sourceDigest := { algorithm := "sha256", value := "619cb21b5801d634da9cb5e4ed7e106ce0ff76698531ea838838fa6a28d42dd3" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "45e474628707a15bb9639c3c27e09c64089b2c53b3f251c07e813a676dc56a05" }
+      declarationCount := 30
+      declarationInventoryDigest := { algorithm := "sha256", value := "a262ffe42c13cc053cb3a31c8bbb1c835dfc10715ba0aa02a7a0757a360fa69a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.ContinuousRaster"
+      definingFile := "Surface/DAF/Geometry/ContinuousRaster.lean"
+      sourceDigest := { algorithm := "sha256", value := "00473211dde962dda81a40d6c8df0af5d21795685f92f2aea9836dae1f733359" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "24e6036f8aea263387f1910fb6095eed2e9c31bbab7fbd9fe1cd5ec97323b4d0" }
+      declarationCount := 40
+      declarationInventoryDigest := { algorithm := "sha256", value := "ffc4f17d6e06ea473a8c6fa237ed4be828f8b7907309db643456bb7e1ee5902a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.CurvatureInterface"
+      definingFile := "Surface/DAF/Geometry/CurvatureInterface.lean"
+      sourceDigest := { algorithm := "sha256", value := "14bdaa849f0970f0972f65738382fa06825e6122bd6fe192b39ca082ccb7696c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "388a6de4b1498c2882b370d5d51a4e7ee8669e08e2b137ba83f04d38e0b95be2" }
+      declarationCount := 53
+      declarationInventoryDigest := { algorithm := "sha256", value := "5a53181e5b8d79c92f5a000f6cccbbd217799001864e733bcdc4aa2eb0af27b4" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.LegalDiffusion"
+      definingFile := "Surface/DAF/Geometry/LegalDiffusion.lean"
+      sourceDigest := { algorithm := "sha256", value := "65f059c3c065ce9272f2206d3f30d19a5483c8ae9dd684335fd1f417c2661caf" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "fe6354a2c2ced8956ba3b6142ddb371655a963d816205a4374d61f5f0970cb8f" }
+      declarationCount := 71
+      declarationInventoryDigest := { algorithm := "sha256", value := "02b77b30f325c6c543c8ae9616c8f2dfbb136b8a623f659c9f473fe39225cf9a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.LinearRelaxation"
+      definingFile := "Surface/DAF/Geometry/LinearRelaxation.lean"
+      sourceDigest := { algorithm := "sha256", value := "3c05e0ef886fdaae9d572cfcba9257c633bb6af97543f9ef4ea1ec7546ea11c1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f60324beae6367e204b9c178b32255bd01cb25b58249a11b03e406a9e5cb5f4c" }
+      declarationCount := 67
+      declarationInventoryDigest := { algorithm := "sha256", value := "d93557d5b308d111c243ad04d9608002b900a29739ca48183eae31bc11d23f51" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.MeshSurgery"
+      definingFile := "Surface/DAF/Geometry/MeshSurgery.lean"
+      sourceDigest := { algorithm := "sha256", value := "e0fde347b38090d2c8ba4db01cbfe869434cba78ccf2724f87a009fffc2b5869" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "708625239210b524c7a9b5b297f0555ff2eb44fe8d3321763a5461cf28d2f774" }
+      declarationCount := 52
+      declarationInventoryDigest := { algorithm := "sha256", value := "8b1e7105ab3403dc55df3970bc192c3e236fef5facb2338df099a8d7b75faa4c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.PrismCarrier"
+      definingFile := "Surface/DAF/Geometry/PrismCarrier.lean"
+      sourceDigest := { algorithm := "sha256", value := "ddca666186d759be20f5c685b4cb6f17e64a7e9cdffd6a3d3d3085167a334c1e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "c6b0fb38c01ffae62d3d312093d7c6b93a086cd2fa0521f50e606ba03f0b3486" }
+      declarationCount := 30
+      declarationInventoryDigest := { algorithm := "sha256", value := "9a78835c6801e35701f14a15fcfbfbcd4ef6a1a3b85a7ee7567c2a0bd34c2a8f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.PrismMesh"
+      definingFile := "Surface/DAF/Geometry/PrismMesh.lean"
+      sourceDigest := { algorithm := "sha256", value := "d3ab7612c451c789add66d6d8cf489e38167a5b8caab57202df742ce51c16c74" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "09d0b551d032f2d0a55eb16d82baab27a0d3d384367ddcf678e8b7c41dc67cde" }
+      declarationCount := 61
+      declarationInventoryDigest := { algorithm := "sha256", value := "97c0ed0d2fdeff2113ddb369ecff59825499bfa3cc99e30b06c01090e0782266" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.RasterRefinement"
+      definingFile := "Surface/DAF/Geometry/RasterRefinement.lean"
+      sourceDigest := { algorithm := "sha256", value := "6c22f88e90ce55ee8f32bccae13776fe338dcf4ff8cacaeadda1729b844b31d1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8bfcb0316915b9ea28e2420d83b265f1aee0a238aed8a1df030d7f96b5dead09" }
+      declarationCount := 37
+      declarationInventoryDigest := { algorithm := "sha256", value := "f7becf3809249c2e1af45583ce62b7a412c9f4955299df53060af16ec7c9fa63" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.RasterSurgery"
+      definingFile := "Surface/DAF/Geometry/RasterSurgery.lean"
+      sourceDigest := { algorithm := "sha256", value := "48492c28e9bc198d8884eb2ad82598413b4ec318db90d752026b4e5fcc2b8db8" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "91a2915166f8e87bb06890f137c140530ac983e5be2840e9c2383c996c1dc1c4" }
+      declarationCount := 39
+      declarationInventoryDigest := { algorithm := "sha256", value := "75acca3cb4eeaaa7fc446ad5df3805cb480ba9602fb7389711411c717b732fe5" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Geometry.TorsionResolution"
+      definingFile := "Surface/DAF/Geometry/TorsionResolution.lean"
+      sourceDigest := { algorithm := "sha256", value := "b5b77dff3b277d2a90abe5f3f820bd88700a1a948f64a61e2f66b649fdcd3b7d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9b42debcf5d176ce22dff1f2f69bcaee6e7fe6ffbbd9826525263e64c0d7388c" }
+      declarationCount := 80
+      declarationInventoryDigest := { algorithm := "sha256", value := "ebe49c803c5f45ceaac429834e74bb206e8b75f8772388f2ad8f9709298f6e5a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.Bicomplex"
+      definingFile := "Surface/DAF/Hilbert/Bicomplex.lean"
+      sourceDigest := { algorithm := "sha256", value := "007d715c4f86d6f59e9df858cef33ebb0e67049ddead1f602f6d9c0abb8b176d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "b6ce681eabc89707b51517309323bc58cb6ed76c09faa9a554ecda71544c47fc" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "17eba319fc80a9abdb0f1e697bf7f17899187a13bc45b0a02308db29f2befa9d" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.DifferentialComplex"
+      definingFile := "Surface/DAF/Hilbert/DifferentialComplex.lean"
+      sourceDigest := { algorithm := "sha256", value := "9740b89414f208a234805c445960402105f44996f6a586ac665ae810ca2020b5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6f66ad48e94af3b0a3b0ffbc5ece99088ad496527974ddadf075a309ef5d75cc" }
+      declarationCount := 27
+      declarationInventoryDigest := { algorithm := "sha256", value := "3f18897c9a1caf7fe643df52860893b93fbcc56cd83a0333b63d10aa8a3cade1" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.Finite"
+      definingFile := "Surface/DAF/Hilbert/Finite.lean"
+      sourceDigest := { algorithm := "sha256", value := "21e029baaf2201d79d1038fd411b040387834ee59cccc420398c93004b8ba80f" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4c9fd4b49aec966c93340d51395de8d6e277c60ddc7b9456939369bc83ad127b" }
+      declarationCount := 5
+      declarationInventoryDigest := { algorithm := "sha256", value := "77eee90bf0c60e20d2575d5b61884d2d50bdc0c19ab92a4293f4f866aa029bb4" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.FiniteTensor"
+      definingFile := "Surface/DAF/Hilbert/FiniteTensor.lean"
+      sourceDigest := { algorithm := "sha256", value := "fc9e5a132240b71c18db568c83add8e97c3a3b85d0f6f6f56f7cdea5d0403a1a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "53d15e59d8ad0bf941b8d8f8e22ec87fba1c15ce9daebdf52bb2b3188fe81028" }
+      declarationCount := 4
+      declarationInventoryDigest := { algorithm := "sha256", value := "fdfe9cdd5164779da9c0c2cfb75ea66cf6fc4e8457392ed817404948f089471c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.Harmonic"
+      definingFile := "Surface/DAF/Hilbert/Harmonic.lean"
+      sourceDigest := { algorithm := "sha256", value := "b9c2e21c256246a9e57e7159ef2e33a147eb0bdb8a0f8a2acee7fd6b978d5b82" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "461d484a00e10f87992a8443004d37b1f54088964d33d696bcdc1abea9a326b3" }
+      declarationCount := 3
+      declarationInventoryDigest := { algorithm := "sha256", value := "7f891bb8a94d3696e2771952651beabf2b392a4164882441fba7e820281184c2" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.Heat"
+      definingFile := "Surface/DAF/Hilbert/Heat.lean"
+      sourceDigest := { algorithm := "sha256", value := "857ad9e0337331c7b70334a6ecfcdc211d1ba15dfa18ae63859aee1cdb65c758" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "15b0a711a4986dcf7defe7dc7fdbd8c98a672d525d6e4d88338eebf4382f829a" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "08c7622729ba8130ff3ce4bc728c24f44fa07c63b82e21fdebda03672a02d811" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.HodgeDirac"
+      definingFile := "Surface/DAF/Hilbert/HodgeDirac.lean"
+      sourceDigest := { algorithm := "sha256", value := "0e39b4b262bb1507b69c68657f0e3ce5c4b0bd614ac2263ef4651338218f17ec" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "3ff84c9fdce985a8c51ade55d421ff39b99e2e822d285fd69b18b4f1f2d74e80" }
+      declarationCount := 24
+      declarationInventoryDigest := { algorithm := "sha256", value := "b56d4988c4216ca6686c321af02b5f6834c0f5cd54093c018be909cb913e6d03" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.PointCarrier"
+      definingFile := "Surface/DAF/Hilbert/PointCarrier.lean"
+      sourceDigest := { algorithm := "sha256", value := "b13b34d20e9e68b8a9a9b31cb94ae0756747eb2582e918f051681d0fcc0b7650" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "2fb5b362a8e526100cc3488a8e490e985f6c65bb02dae83e6643b122323a7396" }
+      declarationCount := 29
+      declarationInventoryDigest := { algorithm := "sha256", value := "81d07c8d4b378e02cdde0c524895f7c311a35dcae1df849e63e2d83cc716cb14" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.PointedSpindle"
+      definingFile := "Surface/DAF/Hilbert/PointedSpindle.lean"
+      sourceDigest := { algorithm := "sha256", value := "d996b751cacebd525b8dd4f70749e9edc5afbd9596c62831a24b0a375d6a6460" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "84f506b53b24f61aba134f45999c627ead0671b4aa2e5972a9ef5eca5751e207" }
+      declarationCount := 28
+      declarationInventoryDigest := { algorithm := "sha256", value := "2b665b2b2708e6aeb934087af5b8a094fb60b4fed67439c6194718085bc7850a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Hilbert.SpectralPacket"
+      definingFile := "Surface/DAF/Hilbert/SpectralPacket.lean"
+      sourceDigest := { algorithm := "sha256", value := "3c0ec4423f3cd7ff7a1640e41178a7c729bbd60518a840a9ae1d9cb2e9966b4a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "59823a5c342bc2a64b52b6227e70738ff30ae1a12bba491429a7adaea56588b7" }
+      declarationCount := 39
+      declarationInventoryDigest := { algorithm := "sha256", value := "2bb177a2415453e2d36e726c0cb62e5be5afeca9befccbffe9b879f377097199" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Homology.HomologicalLift"
+      definingFile := "Surface/DAF/Homology/HomologicalLift.lean"
+      sourceDigest := { algorithm := "sha256", value := "ae3743e0f52bdae5443e7d7c4a0d4abb567911d343552d7769b9fdfe6f721b5e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "7cafeb06e91ab127e7d60ec7be62c31dc004a79c8db2eacefbcfe8930073b92c" }
+      declarationCount := 25
+      declarationInventoryDigest := { algorithm := "sha256", value := "585ba338534f93bb4ddadc0d5ed57f44a4ca7b7168cdbcc096d1941e369bcb25" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.ArchitectureManifest"
+      definingFile := "Surface/DAF/Integration/ArchitectureManifest.lean"
+      sourceDigest := { algorithm := "sha256", value := "52c728e690cb5223433b8c07d4df70c3a11f499d8477e903a64909e4c753f120" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d414675a281ed5854988c2e41a88b8860e30a33f9daa72ed8eb4ab75d04a9431" }
+      declarationCount := 140
+      declarationInventoryDigest := { algorithm := "sha256", value := "9e523ff1fffff2a5397c600c0cb21f5bc1ad8b878eebda30f4ae5f536d402f65" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.ArchitectureTests"
+      definingFile := "Surface/DAF/Integration/ArchitectureTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "88657f10b38fb8bc7e55b4e1dd034bc1748cbc28a7cf4f1dd86fe8d57f4e5120" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "b5ac8378c75b3d081c4bc3906c83c1ab5891fd878e489f11c92342c9ea8bec21" }
+      declarationCount := 26
+      declarationInventoryDigest := { algorithm := "sha256", value := "8b49af8b9ae2ba55a91979567a1b657ca8e83814cdfe99d138d01abb48bd12b5" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.AvalanchePartitionTests"
+      definingFile := "Surface/DAF/Integration/AvalanchePartitionTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "606d8aa79e9f8cc3e6f7575d80359773976e2bb0aad48fe7dbf55d8868386a53" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f5067ba688bd225f4b6ae1da9b7ea4535d2c40ca1a6213a3107c9c52e21658ea" }
+      declarationCount := 11
+      declarationInventoryDigest := { algorithm := "sha256", value := "2e96850d608c78f10894dcf69891d5fb315ecf1a28e663f799ccb4e499ef7db0" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.AvalancheReconciliation"
+      definingFile := "Surface/DAF/Integration/AvalancheReconciliation.lean"
+      sourceDigest := { algorithm := "sha256", value := "dae4c8fc20724714690baf6fc0036bd9b1c2580988d3f2dc154ef7378f39831b" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "15b74d2c3212b8d32c9d34d15ad48343b50f7d9707c6d6e7ec6dd81aa85650bf" }
+      declarationCount := 211
+      declarationInventoryDigest := { algorithm := "sha256", value := "67ae6a7c9733c57bc3ac4217a47ee8ffc1a1a4898d78433453287440531e4611" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.BinaryChargedPrismaticTerrain"
+      definingFile := "Surface/DAF/Integration/BinaryChargedPrismaticTerrain.lean"
+      sourceDigest := { algorithm := "sha256", value := "372b24054908ab6ea25ff6c0a8884e27fbd5930abee014c7c3f7efb02df2c04a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0d836923f01bf110d2ddebeaf21a56309b02e621e515b0ce4f8de98a20525a85" }
+      declarationCount := 40
+      declarationInventoryDigest := { algorithm := "sha256", value := "97d4e50d39d223b52a79909c81eab55bc6be675bcfc91c6057369dd2de2c7308" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.BoundedPrismaticDiffusion"
+      definingFile := "Surface/DAF/Integration/BoundedPrismaticDiffusion.lean"
+      sourceDigest := { algorithm := "sha256", value := "174462969e0769e104d0e7ec14bfb31bdfe172352982b92b8ca3c9a2d164fb1f" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "56c6f799dc5daa3ec8bda9e36776c258896c2863b29b60cebc73435ce1fd11cc" }
+      declarationCount := 80
+      declarationInventoryDigest := { algorithm := "sha256", value := "bd29fb4ba5850ac938902a378f123cb56313063229b77b713fa4c8a91935ff1e" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.CausalObserverTests"
+      definingFile := "Surface/DAF/Integration/CausalObserverTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "d5c54aa91a71a641a9d4d8b447374c023ebf2c58cb5cc7d913054196bcf89c4c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "7cc72f90d8283241c1f440ad0579a09df9a98c7ea50a3f0755218e869413c46e" }
+      declarationCount := 49
+      declarationInventoryDigest := { algorithm := "sha256", value := "52f1a6f048a545962d08cbac3c8d08d0f9354364d7f2a7010f65099f7a33bb20" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.CertifiedUpgrade"
+      definingFile := "Surface/DAF/Integration/CertifiedUpgrade.lean"
+      sourceDigest := { algorithm := "sha256", value := "3d7bffea037492d7b8b62c9eee475089981cca97c2ad25f49f6b8b41263aaa36" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "709c6e61b6734f0feda2180abf748cfda47509867159066e6c8d77a98d73d8a6" }
+      declarationCount := 109
+      declarationInventoryDigest := { algorithm := "sha256", value := "dd4ed7cd55ea2cb913707404547ecc94e0d684c9fc412e7ae09179ef4372355b" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.ComparisonTests"
+      definingFile := "Surface/DAF/Integration/ComparisonTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "86e980c854a35f797ad5e59977899c73966401fc9bd86600ae78f8e2f40179ea" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0a42e7bd15513fb7860c645d654748991452f8484f7a0de5b48626dd3e299d53" }
+      declarationCount := 34
+      declarationInventoryDigest := { algorithm := "sha256", value := "8a8f1c5371719d2f10d4062a176d47d486f497120f6886490fa387eacd4a8d50" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.CurvatureDiffusionTests"
+      definingFile := "Surface/DAF/Integration/CurvatureDiffusionTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "10d7d472c3b3b738f2943efe097f582f51dc9437961a7409f85c2bdf73d09bfd" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "63a804d9cbc281a395de9df76488a1c33b0cb45d8d443cfd2fcc2677956a0e5b" }
+      declarationCount := 10
+      declarationInventoryDigest := { algorithm := "sha256", value := "93c61505446cdcecb92be2355f4a799ddf565a88a65d08749d768535edc80698" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.DeterminantTests"
+      definingFile := "Surface/DAF/Integration/DeterminantTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "997280044d4fb0bbb0c92c3619e37de528424890caf2a9c6967f297a34af0922" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f709dea3406350de6597cc07d249f98c246a9362a4dcc653f39ea30cb410c730" }
+      declarationCount := 13
+      declarationInventoryDigest := { algorithm := "sha256", value := "29566b18e6c4430307cde358129109d7e81a67043550150847927f51ba50a380" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.FabricReactionTests"
+      definingFile := "Surface/DAF/Integration/FabricReactionTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "33f41be46efb396593580d1ce325b0d00efefe2643be7f2f31bdadc34dc5bd1e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "b3e7055f2832e0b53d37868cd166080d52affd585cddbf9b1a5444085f037497" }
+      declarationCount := 13
+      declarationInventoryDigest := { algorithm := "sha256", value := "16d36502d8acb1359125dd5605d059cddfac5842a9ba28efcd56283f31bf92eb" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.FabricRuntimeTests"
+      definingFile := "Surface/DAF/Integration/FabricRuntimeTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "49f5f176cdcb7c19ee6d9a3d94762aed914b195360629cc57c0cf0a0c26923aa" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4f7297f14759106b234f8272ac81e1bdefd5e9995002328a057316efa373454b" }
+      declarationCount := 15
+      declarationInventoryDigest := { algorithm := "sha256", value := "e587f288d54bae0d13faefcd5d7686bc52a173094fc3afcdd8edb996da9f6f53" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.FabricTests"
+      definingFile := "Surface/DAF/Integration/FabricTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "f45a7e5f2399455490239ad28fbe7c3fb33e83b9641d2bc277a34111b7bc63c5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "aef8f40efd77c85171446c8bd5845a80db8905850128fe672fe9d3fff1f7030b" }
+      declarationCount := 11
+      declarationInventoryDigest := { algorithm := "sha256", value := "bb61d5b2c4ffbe5c0d8862e42262a1f766f0d56cb7c52c68f28f0c8404323ea7" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.GloballyAnchoredWindowDiffusion"
+      definingFile := "Surface/DAF/Integration/GloballyAnchoredWindowDiffusion.lean"
+      sourceDigest := { algorithm := "sha256", value := "28c2532dcb4dd3d27ffe46b4fbb4513e3d8f0a3be29afeace394013a8b377200" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8b327e2cbd2ad56abadd11a5c36a5aa591304bb533755aa4d97b5a5eec078b29" }
+      declarationCount := 63
+      declarationInventoryDigest := { algorithm := "sha256", value := "4882ec7e0abccaf21306a80b042355c2a25dd48c500624fed2f7f1e1da6a3370" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.GlobalReferenceTests"
+      definingFile := "Surface/DAF/Integration/GlobalReferenceTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "362c8f81028080a07eadc7f668ef366fb140ae76f9e754a2f78f55985cdf4ed2" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "297970d63f2f3d374ef27733f40813a0d53f49cc2d4068be54a02d912bd1bf28" }
+      declarationCount := 8
+      declarationInventoryDigest := { algorithm := "sha256", value := "e77842ff6e2367fd001725027a88d551da7b00d53ab3dba6319e4fa190c5e1c6" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.InvolutivePrismaticMove"
+      definingFile := "Surface/DAF/Integration/InvolutivePrismaticMove.lean"
+      sourceDigest := { algorithm := "sha256", value := "508c834045d39b008c184278d4fd824998477f1612a7be6f63986e63cf3d4802" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6283f05e12e54fcc035d0ffb32f97aad28f8af99bcbfd0173f10e7250bf45fe3" }
+      declarationCount := 71
+      declarationInventoryDigest := { algorithm := "sha256", value := "fb221ff5a65db995cecb055970834a6b8f7ef7102d4cdc1e257e59566f468c38" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.PrismaticFabricTests"
+      definingFile := "Surface/DAF/Integration/PrismaticFabricTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "15ead03788869fc9e11eeffd338af22b73660d2c39ecba9e0e798a4b2703e6b2" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "2326e6ca07ff6b3701c68efcac287278970382be37100289d363259b66f34bca" }
+      declarationCount := 23
+      declarationInventoryDigest := { algorithm := "sha256", value := "b6c1f68613cbfd418208cbc91277772b314fad92048bdca94fefd6673fdd33f2" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.RasterizationTests"
+      definingFile := "Surface/DAF/Integration/RasterizationTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "73829cc4ad05638d09b4ff1f5192406979af944468fccef4490106055053214f" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "7dd58f607de90aeb6a258ac7ccf09751051b585f116da28185fee02fbf81662c" }
+      declarationCount := 9
+      declarationInventoryDigest := { algorithm := "sha256", value := "58678e695e7ec09cca6f1f8ff8c1595b790c9b717fc07153cb4d0aeee1e85efa" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.SurgeryCoherenceTests"
+      definingFile := "Surface/DAF/Integration/SurgeryCoherenceTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "1607fea12e392f5010711cc87d3dbc38c90bd2f0872ec382ba1c75db30dfe8e4" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "00471978714b177378b938a3ad9b2e3598b8fb51cfe9833e2398a9726ee2a018" }
+      declarationCount := 10
+      declarationInventoryDigest := { algorithm := "sha256", value := "59e1f08c8c77fbb609e2d6accdf462dcd8b6a9115a5be706c55513f7c6754c38" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.SurgeryTransaction"
+      definingFile := "Surface/DAF/Integration/SurgeryTransaction.lean"
+      sourceDigest := { algorithm := "sha256", value := "ffd893b5af827ba2bdae09e519bde5f501e588ee3e59fad8d1b59b85faad5420" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "e313c77ad52e4717c093d8d810548731e4ba67dfabf1d4735d8d5ecc59913493" }
+      declarationCount := 149
+      declarationInventoryDigest := { algorithm := "sha256", value := "df685168f8da50bda258dbd2d7cbbfa98c0dd096412624f5187d30c2b792ffb4" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.TilingArithmeticComparison"
+      definingFile := "Surface/DAF/Integration/TilingArithmeticComparison.lean"
+      sourceDigest := { algorithm := "sha256", value := "8d80c516694591627066ced9fe9f5d2175c1b8e9c2cecd896c7486ee0e71e1f4" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "dae6829aa91b9a36d51455bc89d38fe9f88cf28669f4d44d185ba8e938e03838" }
+      declarationCount := 71
+      declarationInventoryDigest := { algorithm := "sha256", value := "7f6060e3663e4bc520f6f241a78dbef61fe2e9d7ca4a732a96445abb8a3c1656" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WindowFusionTests"
+      definingFile := "Surface/DAF/Integration/WindowFusionTests.lean"
+      sourceDigest := { algorithm := "sha256", value := "4161bfacc4e0dee0f22a06e7d17ae1ccbc059bfec9feef3e239c49c37e11a1b2" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "2ae99f5926f3b8153bb3fcbe02b82d8c20ddd4ecd6bfec5cf8f7e725b3db9e62" }
+      declarationCount := 11
+      declarationInventoryDigest := { algorithm := "sha256", value := "da7b5f5bb0c373714baf180afb5c3417aa7f1a9fa0f9ca83d0b9c44c9fc150bf" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.Carrier"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/Carrier.lean"
+      sourceDigest := { algorithm := "sha256", value := "9e023d2d7e951d19d6047f68ca68d8fa943176bccee912dfeefdc5b168b917d2" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "a6fe69a7859a4dc54b9f790366c57fa3613aaad90f86947dab7f086f626bbb2f" }
+      declarationCount := 171
+      declarationInventoryDigest := { algorithm := "sha256", value := "8704ab27302f013c9f834b686b241d60773ab5dceaf54c005a1753441cfb59ef" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.ExactPermutationMatrix"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/ExactPermutationMatrix.lean"
+      sourceDigest := { algorithm := "sha256", value := "fd06009e335660465ad097b0508d787f0f5964bfa94a0e0cbcb75e161668a338" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0edf0c22285056c81ae6514f6a883d2bcd5ef900793ba184df41495f37070a6b" }
+      declarationCount := 51
+      declarationInventoryDigest := { algorithm := "sha256", value := "668ac31c0479b3a3f9b0a415c7750a8113b07116da33749a1395dbdaeb0a549f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.ExecutableRefinement"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/ExecutableRefinement.lean"
+      sourceDigest := { algorithm := "sha256", value := "05797ef7ddf47a021854c3595f074a3369cc37c06da70ce7960080723a1f6fc5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "76f275bc70af9185ce5574b6f08a97e1b3f9dba8d2b8b6ce1f6775de9c507130" }
+      declarationCount := 5
+      declarationInventoryDigest := { algorithm := "sha256", value := "6c65408406510435aacd06b1541ab890764ac1349cc6a4621e3e05c2cca07a01" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.Models"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/Models.lean"
+      sourceDigest := { algorithm := "sha256", value := "7d6330e0b01f1aae4f843721c334300d74517dcfb1e39463b752f1d76ca04c14" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4c3f06676434265e9c3f7182d37239b803811642169e14cbd75b8f77e50eda6d" }
+      declarationCount := 69
+      declarationInventoryDigest := { algorithm := "sha256", value := "a1dfa81617a8c1f781b81506d87e51121b316a7257c0b2785ddd8fa6a11f1b33" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.NegativeExamples"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/NegativeExamples.lean"
+      sourceDigest := { algorithm := "sha256", value := "65ec7942b8b49c7cd91f7508c8e1bc71fd1d3168593f9c229ba7fbf8a79712e2" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9a6610f6868aa0280d9fb490ee088cafb79fe6cdd5b9e8719edc89b08fd0c13f" }
+      declarationCount := 11
+      declarationInventoryDigest := { algorithm := "sha256", value := "75b05d8c2f42ce6ad7cbb9c27056bcf7b0ca5405237251bd412e6f5b96757079" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.Obstruction"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/Obstruction.lean"
+      sourceDigest := { algorithm := "sha256", value := "2b3e513b24cf0c00f72f668e42d648c5ad09027eb3c2598e4199c80aaaf22075" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "691d26f76b1ac08bfc5f89f7b832b634e79f155260834a5d23c6116af2764270" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "f23389f35194eccc58f090c3bee363d55e516493fd4da2f327830b2244514105" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.Prototype"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/Prototype.lean"
+      sourceDigest := { algorithm := "sha256", value := "692a007df275b8c32aff573fca975f9e78af13e483064d2d006ebbb7bd604785" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0b9fbe2ea09d8bc3e3a4c26f804438284d978f04d5615bc93a0f6206b476851a" }
+      declarationCount := 9
+      declarationInventoryDigest := { algorithm := "sha256", value := "458483dd110eab230335fd4acc2f2a6635ca3780fd30fe48610a3b3b94080680" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.PrototypeAssurance"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/PrototypeAssurance.lean"
+      sourceDigest := { algorithm := "sha256", value := "5aa6daae04ddaadb7b4b45d9576f158b8a2835d64350ec95e1fefa1d450857fb" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "cc049af1a8406450f3a830b017f64a347a06cd1f873849b053d6eb3b95e79050" }
+      declarationCount := 71
+      declarationInventoryDigest := { algorithm := "sha256", value := "466cc0051491e6280730f33e8012789e9808f02eea0a2600d244ff5308688c5d" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.PrototypeNeural"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/PrototypeNeural.lean"
+      sourceDigest := { algorithm := "sha256", value := "fdb09f8760d1696566e07097a1839f2a898b5066c304af1c6f10f2b06d83e3e5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "5c4f99456ecfa2beef478d8d3c1d1612f05527ac061318cc5a0a2feacbe238a7" }
+      declarationCount := 61
+      declarationInventoryDigest := { algorithm := "sha256", value := "600b7ee7b90259f68b9fe6ec58b9b5d7df790309deab03faaa0bc4d03556c72f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.PrototypeSurgery"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/PrototypeSurgery.lean"
+      sourceDigest := { algorithm := "sha256", value := "71f29c8364ea37b290958a19098caee0391a9217e36ffdf9b4794d688b8fe95b" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "53ecadbadc2cd6b0a3bfa0411f6fb8df2df8992f347ec35cd3b8794f2554f1ac" }
+      declarationCount := 43
+      declarationInventoryDigest := { algorithm := "sha256", value := "bae7b9b332994e98500ba50b5e30122a0bfe7ad2d94f2c127d61e990e9fcec0f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.SupportGraphAbstraction"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/SupportGraphAbstraction.lean"
+      sourceDigest := { algorithm := "sha256", value := "a50f31488edcce13b1f676d2f2f5f31570bc3366bbf23957070c21d0bf89541a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "c417fbfdce29134975045fe3f27ed0e631420c65a5d4c1719dc3d8d9850b95c0" }
+      declarationCount := 32
+      declarationInventoryDigest := { algorithm := "sha256", value := "2ff4ee910549b953477b93a57fac4294c7a5cdb84879a66997de0537d60b71b3" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Integration.WorldModelPrototype.Translations"
+      definingFile := "Surface/DAF/Integration/WorldModelPrototype/Translations.lean"
+      sourceDigest := { algorithm := "sha256", value := "5b44ffa153d9b4905d7d403d382d66c7885d9505adf1ed528d56a5242e897546" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "343af1cae5f4a2ce23eed5acfe2158e3f114fc6dfbe6779cbd138c5392cff523" }
+      declarationCount := 74
+      declarationInventoryDigest := { algorithm := "sha256", value := "654d3f80d2e429767ef7e1dd8ba0263c1a66e65107114cbb3c29b5861299dc5f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Language.ClaimPayload"
+      definingFile := "Surface/DAF/Language/ClaimPayload.lean"
+      sourceDigest := { algorithm := "sha256", value := "2f00e4abd99637bcb1d47b90bcffff2706897bf7de10b3185352a4bfba34cc6d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "b4c92aa67583bdeb8150a0eedae0c0a9326b264479cf630c7b9068dd95cb3379" }
+      declarationCount := 285
+      declarationInventoryDigest := { algorithm := "sha256", value := "48686175e3385bc0050f06f174fee40ac528a32b9e026dde4d74b70065c55bba" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Language.GroundedClause"
+      definingFile := "Surface/DAF/Language/GroundedClause.lean"
+      sourceDigest := { algorithm := "sha256", value := "e8fae4686556df244a2a5bf8047b41476b9d50cc10be331d59a73a04910756ef" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6beb37f3204afbf7549a6880044d784789a31f0919df24d3615cd584733412fb" }
+      declarationCount := 252
+      declarationInventoryDigest := { algorithm := "sha256", value := "7a1fa6c2359a4dd77287c1b5ad764a628b18d9d3ab5e59ab43908bea22e39874" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Language.TerrainLocator"
+      definingFile := "Surface/DAF/Language/TerrainLocator.lean"
+      sourceDigest := { algorithm := "sha256", value := "76c5ec36d2bdb85ecb7c615223ad2f5be00ae46f844aecedac979b1a0f91c030" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f3bf4591bf337a73fbb6526b5297997d676303fa22d8bdd330c78f14eb7bbcfc" }
+      declarationCount := 149
+      declarationInventoryDigest := { algorithm := "sha256", value := "78430591892dde8e2554ee847c718f7a37e3fe5a83172b72029514202ece49bb" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Manifest"
+      definingFile := "Surface/DAF/Manifest.lean"
+      sourceDigest := { algorithm := "sha256", value := "3a4c65ecfb5be33b3db58cbf2edb8a8949760a57aa72759a102d4e73b75041ba" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "a8130d2ae91a6b97e012b95f105b841121c53535f821baf9fb66660d63c41685" }
+      declarationCount := 110
+      declarationInventoryDigest := { algorithm := "sha256", value := "71c6f63ee76be4af72891dd634e74788bb2428d352eeb26c778ca66cf92f2839" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.ObserverDynamics.Spectral"
+      definingFile := "Surface/DAF/ObserverDynamics/Spectral.lean"
+      sourceDigest := { algorithm := "sha256", value := "1d3b6bacf40ff514a18dd819b7ff2f4797d6a170a0e62bb79a38fa23836fbe60" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "c2582d0b1ea28b8067df3a948efe7b1f60deeb1eb44f835311e5ca812a6e3d36" }
+      declarationCount := 84
+      declarationInventoryDigest := { algorithm := "sha256", value := "f38a55d8626598552e1df3e31465ca90ffce6b8c15fd047f7d1982c9277680e6" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.PerfectComplex.Comparison"
+      definingFile := "Surface/DAF/PerfectComplex/Comparison.lean"
+      sourceDigest := { algorithm := "sha256", value := "aa7271c7a594fdcd2133bd4aacc8e92b8f5926b402120b3d706b21fe3d0c7305" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6d32753d29dc3543a0a8bae290c81bde13dbf1cadf32715ff87a5567d02c4a7c" }
+      declarationCount := 31
+      declarationInventoryDigest := { algorithm := "sha256", value := "543b68c47bafc7d866afddc8a1d3e3b6eaf3e14682ab36c480077e0255f5e4d7" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.PerfectComplex.Core"
+      definingFile := "Surface/DAF/PerfectComplex/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "ebae814d86ea8fc26b7f686776ea098189905dc237f5745321bbb9cf3c8f8992" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "3d5317634276aedb0a9a38462099e697ceca2e59114eb0fcf3b420bd1c8f866d" }
+      declarationCount := 54
+      declarationInventoryDigest := { algorithm := "sha256", value := "d06c3acdc780b8ca03c17a615cad8b2dc44c4dc36355db91570c65fac393d434" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.Comparison"
+      definingFile := "Surface/DAF/Prismatic/Comparison.lean"
+      sourceDigest := { algorithm := "sha256", value := "e1aa8db32a87c9754e936eb18367bfe420b11ca4c33efa36be712aa711654eb4" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d246f6a87f48cd6943caa21aca6012d5d9933d28ba4136128dedba33bb51f1e3" }
+      declarationCount := 18
+      declarationInventoryDigest := { algorithm := "sha256", value := "d791166a73c0986a569c137ebc16278423898083a93c65df1888d844b9f4a7e9" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.Determinant"
+      definingFile := "Surface/DAF/Prismatic/Determinant.lean"
+      sourceDigest := { algorithm := "sha256", value := "30c7ad335fd6abdcbf898f8ba2404c097f4049da8581ae0ea87d417962e5c8f1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "21b5af4f793f608731b43c376909a09bfb128c22c97d6c1deae842e191cd221d" }
+      declarationCount := 23
+      declarationInventoryDigest := { algorithm := "sha256", value := "0d7cd95bb9481d3fd40d179f562ef0c44e328ee1adbdc8e9b4faa08be6fd6497" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.Fabric"
+      definingFile := "Surface/DAF/Prismatic/Fabric.lean"
+      sourceDigest := { algorithm := "sha256", value := "ae5c9cf06fe9313eda751ce74883eb84789a94317a1b472fd7570517817524b9" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "be33594119649410f82b69e056354df74cff244208f46ebe26393d0307b50074" }
+      declarationCount := 4
+      declarationInventoryDigest := { algorithm := "sha256", value := "30f88723c3aebcc5ac5f2f97b8d47d3987d052e2b4aabc947858fa85c61b7ae9" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.FilteredFrobenius"
+      definingFile := "Surface/DAF/Prismatic/FilteredFrobenius.lean"
+      sourceDigest := { algorithm := "sha256", value := "32aae460ad6c53e5d02ac6485b016568a9803bed8552a7ab393c747a5ebb6988" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8d2b584f208efd0fba25fbbe902bdde097f30146f1eb24495a59ac3dbe0803a7" }
+      declarationCount := 54
+      declarationInventoryDigest := { algorithm := "sha256", value := "15f877754ba4d14255d3cbe1056863fe270cd5bb4ddef5c391a3982002fa01b9" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.Interface"
+      definingFile := "Surface/DAF/Prismatic/Interface.lean"
+      sourceDigest := { algorithm := "sha256", value := "9b468e263b1b4e32ceb12f54b6da86e0be64e2ca3742904c8a22bc8093f2be53" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "98e3ff41bf42d0f89e0af7b47991e7006cec57d48b2c6134692ded66b430d600" }
+      declarationCount := 72
+      declarationInventoryDigest := { algorithm := "sha256", value := "d741f0d1d2930d91677d35d9422b5295d5c26d7211aa0e2036394fe7f6bf97b6" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.RasterBridge"
+      definingFile := "Surface/DAF/Prismatic/RasterBridge.lean"
+      sourceDigest := { algorithm := "sha256", value := "a5a91cc728d206e7328607955ed229d0f837bede3c5662a0a1b14d5489c4bc5f" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0654a6308c4ed828ae756f39cc962f2ad195be50e560023de60e6a1e97ff105e" }
+      declarationCount := 17
+      declarationInventoryDigest := { algorithm := "sha256", value := "e08c6a408070a2883598f17cb84bb9813a83c85578c2c82fb7440c7c4b14e905" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.SourceRealizationFunctoriality"
+      definingFile := "Surface/DAF/Prismatic/SourceRealizationFunctoriality.lean"
+      sourceDigest := { algorithm := "sha256", value := "5ee8bcf0f3964cafec36c2e8ecab9f38d207ce6c74129e568fee2b847ba048ac" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "b60238e775369ecca7329b217f7811c4dbcff4fbc033e0448bd18a94a72b2045" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "5f291849e55da54955539d89b2c5635a8d758141b875ef921dcd535bb7385918" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.SurgeryBridge"
+      definingFile := "Surface/DAF/Prismatic/SurgeryBridge.lean"
+      sourceDigest := { algorithm := "sha256", value := "5b1617899758ec76eb94275d081a225f55e89fa9e0fb7fcd8b2cd9bf58a35f12" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9e0c8560af458ab5e508ee50061d7acda45e15a85d0b01a09b3c0d17d80266e9" }
+      declarationCount := 40
+      declarationInventoryDigest := { algorithm := "sha256", value := "e188a07a21f5d1c02059010ec2c15ac2f7d649b51057e0b6a983e9bb51d3aa2a" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.TerrainRealization"
+      definingFile := "Surface/DAF/Prismatic/TerrainRealization.lean"
+      sourceDigest := { algorithm := "sha256", value := "db5b247be7763127026cd57bedd5379aa71574c57840b2ab991d853e68639486" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "1c0290cc759d334a03ee66dfafe0e15138a385bfdf27c7df3ec5e564e6843214" }
+      declarationCount := 19
+      declarationInventoryDigest := { algorithm := "sha256", value := "ca6c51d49ef4b4a83a90be76e58411f2bdd2deba560fd9fa53325ec1ce5cc613" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Prismatic.Totalization"
+      definingFile := "Surface/DAF/Prismatic/Totalization.lean"
+      sourceDigest := { algorithm := "sha256", value := "614d1fd719871e3fc1a08ae877b71aded2f387aaa0f571baae8bbb8a74c8d67d" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "de9f4bc2be7b36f14c029b7922d43456aa30cc926d3786cf9305cd204eae026c" }
+      declarationCount := 32
+      declarationInventoryDigest := { algorithm := "sha256", value := "476246ce8d67d0cead425e81a93d3f242aaf32405ec6fca42bcc48cca95758b7" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Project"
+      definingFile := "Surface/DAF/Project.lean"
+      sourceDigest := { algorithm := "sha256", value := "24fa15869aecd9a2cc2d4f0bfeda2f2a222c5af4067b916baf2f2c25e0c2796e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "5cdd3bd02179d6b619578cb338e0f7a4fb5ef5d723c4c2ef031e252e8f316db1" }
+      declarationCount := 103
+      declarationInventoryDigest := { algorithm := "sha256", value := "bf1473945c4f47cd1cb757d9de8794f1810f8e84fdc9b35324559c450ab089e6" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Refinement"
+      definingFile := "Surface/DAF/Refinement.lean"
+      sourceDigest := { algorithm := "sha256", value := "8dbbea1412246e2b1a9069504a5f0176814ff4ebb57d7cdd3cf063dfbd45c012" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "e01fc7384269105783d2c9052ddf0425c3a82e83a3994b3eee766c40cfd353d8" }
+      declarationCount := 41
+      declarationInventoryDigest := { algorithm := "sha256", value := "fc3f6d6efcd300ec48a6377b0ab7dd9a574f9ad8bd1f471529b42da2a5e58a12" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Kernel.Core"
+      definingFile := "Surface/DAF/Rhetorical/Kernel/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "e7494dcc2517124c934f54466d438e7d85af6ae9fd540bc8881b0105e04bb367" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "30aace7feeb4a01ad8bc9518506eccf517ef0bbfa95fa94087b920824dac81ce" }
+      declarationCount := 19
+      declarationInventoryDigest := { algorithm := "sha256", value := "0168bcf4993dd5891f1e695e7039e2cd53527555edd07ff439d6772f4dbaeddf" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Kernel.Feature"
+      definingFile := "Surface/DAF/Rhetorical/Kernel/Feature.lean"
+      sourceDigest := { algorithm := "sha256", value := "40c68d600ce166893814af7766acedba23074a0c1d93866842ecde98085135e5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "8c8fa08cbc70645c5d1ab3ce9ede157fb9242c24e2b02b9255a9baa77eacabd0" }
+      declarationCount := 61
+      declarationInventoryDigest := { algorithm := "sha256", value := "c5b4b01402ceab6b6ef7340014f839465fbc2ab133e739187f23219744d7cdd8" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Kernel.FiniteGram"
+      definingFile := "Surface/DAF/Rhetorical/Kernel/FiniteGram.lean"
+      sourceDigest := { algorithm := "sha256", value := "c6a3454804097f3c037682f1f56dfbcec5c48a044c91da141cb03576df0a0299" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "47521fc82daef3806bf7b178b5abd052c084f57e0a2f43f694056cff120ea657" }
+      declarationCount := 20
+      declarationInventoryDigest := { algorithm := "sha256", value := "d3780b8a988de0056ace6719645ffab3704c9277b351bb94997b497f4a891ddc" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Kernel.Regularization"
+      definingFile := "Surface/DAF/Rhetorical/Kernel/Regularization.lean"
+      sourceDigest := { algorithm := "sha256", value := "0f66a081012c57a514cacc6c379ce2e30852fef85eb991066d383d763e2cd03e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "efb89b1645f50ce65391b5c2f5da120906f7da7b42e4fbcc1f85156dff4a7ac5" }
+      declarationCount := 38
+      declarationInventoryDigest := { algorithm := "sha256", value := "9cbb4646a0fc5db02ccf1e42c466b3d2cc0a0a57bc9e7bec3f1c89a20ae8eb99" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Relations.Affinity"
+      definingFile := "Surface/DAF/Rhetorical/Relations/Affinity.lean"
+      sourceDigest := { algorithm := "sha256", value := "f0ac770a98acdb62a5cc0625b794287b6ed148ba69bd38fc99ef84e4013cb74a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "ac4138f1d942efb28052067f8fdd2818bab332c0645d760cf29b528bd67a25af" }
+      declarationCount := 6
+      declarationInventoryDigest := { algorithm := "sha256", value := "618331fe9405ccc8fd67d8d916a4d13c3eac5d8148fb7526519ceab40c728eb4" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Relations.Implication"
+      definingFile := "Surface/DAF/Rhetorical/Relations/Implication.lean"
+      sourceDigest := { algorithm := "sha256", value := "e8696f408f9cb1ab302f87819e15815ab3006d90f0798b969349eee52759c73c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d827294e8b8d4929f1aefce7fc789d9d43852efea016799cdd7039d544a9a7c9" }
+      declarationCount := 19
+      declarationInventoryDigest := { algorithm := "sha256", value := "443ef7c16391a2c87a6e6013f9beb19338262e66cee126722a3211b9616027d2" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.RKHS"
+      definingFile := "Surface/DAF/Rhetorical/RKHS.lean"
+      sourceDigest := { algorithm := "sha256", value := "1b4ade0aaa87374cd6c0327bb60c638da84c96baf3e0c1df3f6e1ea721e8f2cd" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "f96ddf3de632cd368a5b4267e45a0c06c735347d2e9cc404dec8135300a4f05a" }
+      declarationCount := 12
+      declarationInventoryDigest := { algorithm := "sha256", value := "14f382c7e7ba131a5560f536c1eacce80d92a236f0fab4272328b5585da111a9" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Rhetorical.Role"
+      definingFile := "Surface/DAF/Rhetorical/Role.lean"
+      sourceDigest := { algorithm := "sha256", value := "661e2653830ddced38011484f1b1cfcf5d8c63b1e7086ea0b0a8f9b8fb5af8a0" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "399944886b140b8b620c91b07358db8f0264f1a2b556e7942936726bf28ced4b" }
+      declarationCount := 2
+      declarationInventoryDigest := { algorithm := "sha256", value := "21db480ace874335e0c27d9e818b86c6b818f45b11749760d71d193a26ade2bd" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Runtime.Manifest"
+      definingFile := "Surface/DAF/Runtime/Manifest.lean"
+      sourceDigest := { algorithm := "sha256", value := "1bdc25c01cee27dfc8ad418e7997060e16d8bb6b110ea4a7df04c97d6549df26" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "847e353b254045727e011307efab7aeeed92aa0258ec097051597ccac0627523" }
+      declarationCount := 430
+      declarationInventoryDigest := { algorithm := "sha256", value := "1695e5514124781864cb1f504cfbe124b5a53b05e37b25b600d7680bc71baa0f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Runtime.ReducerIR"
+      definingFile := "Surface/DAF/Runtime/ReducerIR.lean"
+      sourceDigest := { algorithm := "sha256", value := "be5d35c625fe7ec6d1d8e3486bffe6a4decee27b0c585737add163a9488f9fe8" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6bee0e406479917838a1198a27fb515036bfc6e26cd0950ed71953c7e9f691d7" }
+      declarationCount := 80
+      declarationInventoryDigest := { algorithm := "sha256", value := "3b222bca52e15623b88ec13082721d23e64a81f36f0736f2952424a6069f8191" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Runtime.RingState"
+      definingFile := "Surface/DAF/Runtime/RingState.lean"
+      sourceDigest := { algorithm := "sha256", value := "b47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "90a16a50e5eac2619343a4e8bc3ca37c7ed013111bf057f846126ed90cec234e" }
+      declarationCount := 28
+      declarationInventoryDigest := { algorithm := "sha256", value := "c934f20e39445d39febeaf5808fffa152d15502334d16d2598c8cf17c6900994" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Runtime.Soundness"
+      definingFile := "Surface/DAF/Runtime/Soundness.lean"
+      sourceDigest := { algorithm := "sha256", value := "87a285b99c2452903db3dae0e0d68664b9df242e94e9f92fcf605a645f5cc069" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "1059ff3940e674aac70686100e5b9dcc1a527112c4323380cb41eb7c20251283" }
+      declarationCount := 47
+      declarationInventoryDigest := { algorithm := "sha256", value := "0227813dbf65839aef0e8c89ea74617f33d79b0c7d653836085cd8ca72a3543f" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Runtime.Trace"
+      definingFile := "Surface/DAF/Runtime/Trace.lean"
+      sourceDigest := { algorithm := "sha256", value := "018252e4505bf2dafbe644f77fb76b79d49a5755989f0452b0bc4ddb4bf984ff" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "4f5c95446face24ad5b8116b9dedb1ac0ff1a39c8ad8f915036d81d504310a04" }
+      declarationCount := 74
+      declarationInventoryDigest := { algorithm := "sha256", value := "5e4a6232d24925fe5fb3e91dd1838ac8161ddd65c3338c3c4af9c7c2b9685147" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.RustCodegen.Manifest"
+      definingFile := "Surface/DAF/RustCodegen/Manifest.lean"
+      sourceDigest := { algorithm := "sha256", value := "dd7d69d7423e039698f799e3d2f9b8c443013e3f3d1d58c6a0ca4eedbd352127" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "0f75d597ebd5bcc57a497a68e37fffd772f9b2c3860333b3f18411239070e9ad" }
+      declarationCount := 82
+      declarationInventoryDigest := { algorithm := "sha256", value := "484c7288cec536df74436c32b17802728632eb9be684fda33394d6a3f31103ad" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.System"
+      definingFile := "Surface/DAF/System.lean"
+      sourceDigest := { algorithm := "sha256", value := "22c8aa19f730e9959902e993a0d89cfdb5095537c33404d76f3d3d3f9e1ba54c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "6d9377c8bc5d17fe0ea79b776be4fed4b1486f6b5322d3468ca6ebce0a5507ce" }
+      declarationCount := 115
+      declarationInventoryDigest := { algorithm := "sha256", value := "650e69f617f23b44dc16a77682962360ffef3e777844ed75a16aec1e6cbf8d3b" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.AbsoluteRegion"
+      definingFile := "Surface/DAF/Terrain/AbsoluteRegion.lean"
+      sourceDigest := { algorithm := "sha256", value := "ab752fd6da225254d4fc1a25f8e7adfd09c04bf7593243399b0aea8158af1d37" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "679cf12dab28f2e3d6a418f99568fb809a151c230f0939b0de82906656ccb4c8" }
+      declarationCount := 33
+      declarationInventoryDigest := { algorithm := "sha256", value := "2bd7ecba8523621b3571d7fabcbfe22f9eed2c3ea69a56349565d5d23cdf0201" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.AvalanchePartition"
+      definingFile := "Surface/DAF/Terrain/AvalanchePartition.lean"
+      sourceDigest := { algorithm := "sha256", value := "897786ef80b07c84e5c712e53bd1354bfe204ff778f300e076868810aee19b32" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "846e6de77a973af59074bcefe90ba0cd7edaed61686c0b5a3fdd4e886768fda8" }
+      declarationCount := 72
+      declarationInventoryDigest := { algorithm := "sha256", value := "3278a9cafc3522aa62880e176da40591f93f140431f6037537a166bd164e4f8d" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.BinaryCharge"
+      definingFile := "Surface/DAF/Terrain/BinaryCharge.lean"
+      sourceDigest := { algorithm := "sha256", value := "70b40bb1cbf791e134460a4416946a96b5838e6c0ef57d6425f767fe0d0609fc" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "85f9b2e8b2a5a7ae91a19851f688c2948abc010e2e71cef3c1d7915f3c6cd4f7" }
+      declarationCount := 33
+      declarationInventoryDigest := { algorithm := "sha256", value := "14fd444110ec5975a5a3a3fc118429f9503225a6ae0404d87e0f3fb107061ddc" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Boundary"
+      definingFile := "Surface/DAF/Terrain/Boundary.lean"
+      sourceDigest := { algorithm := "sha256", value := "3bd197f4ebd78095ad3b47e183bcab257640a5e5a4dfb00c3475ea6ef8e2304e" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "71084ee344c2024d30469c6d38a8cb7916132aca5f6d04d09322a3a08a4d142c" }
+      declarationCount := 51
+      declarationInventoryDigest := { algorithm := "sha256", value := "4fd5bbaebd63bac936eb0fde02ee44fa3d169e49b8ab9c4486d477cd082e24d0" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Core"
+      definingFile := "Surface/DAF/Terrain/Core.lean"
+      sourceDigest := { algorithm := "sha256", value := "6bbfd7ce4b5dab626effc2e9fd0ebd83d14e31fe35afdd562b6573b6ed16e9e5" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9ccfc436fb196b10110064af69a83b67fabdb12e3e7cf58e3a0f721ae814e45f" }
+      declarationCount := 49
+      declarationInventoryDigest := { algorithm := "sha256", value := "7ff57647ed4c36dfe8c4b5df7cd02d010c5ebee1a494614622701e869b1c8e61" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Generator"
+      definingFile := "Surface/DAF/Terrain/Generator.lean"
+      sourceDigest := { algorithm := "sha256", value := "17aae78aa9900067b0bae20239c5ef6a2adf9aa22fee961c93397f6b737648aa" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d4cf050cd176b7e3a8c183397370787f0aeddbeeeb7bb8df0ccb0eb84689b1c7" }
+      declarationCount := 44
+      declarationInventoryDigest := { algorithm := "sha256", value := "90dd8672a8f1813900b84ee480bc121981ff4966ad7c6f7875c4edd08e219569" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.GlobalReference"
+      definingFile := "Surface/DAF/Terrain/GlobalReference.lean"
+      sourceDigest := { algorithm := "sha256", value := "4dbbfa0873f7489a8c466f61a3e5203e944e1997f2b244b268c823ec88e59b8b" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d58c14e599f6eea86f518e431783f314d39ed648049042cd6b9046febdd048f2" }
+      declarationCount := 21
+      declarationInventoryDigest := { algorithm := "sha256", value := "28bc889dac43a076060484ec77a8c0e9e663bfc03a83400b20b171cef9c8427c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.HalfThreshold"
+      definingFile := "Surface/DAF/Terrain/HalfThreshold.lean"
+      sourceDigest := { algorithm := "sha256", value := "8618970f9ec28ce2c99c1f64308048e7b76642e99ee00d65731f7425f870da22" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "53cf5a71b257d3e41c127cc5d6867f13ea9cbab3403540411acc581704661b36" }
+      declarationCount := 17
+      declarationInventoryDigest := { algorithm := "sha256", value := "dc58acc5ac0a4430e814e4914c9016b6af83cb2ba1eb05e8933ac514bc271287" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Legality"
+      definingFile := "Surface/DAF/Terrain/Legality.lean"
+      sourceDigest := { algorithm := "sha256", value := "c36c2578f1a76bac923f466d7b191d4df7f19790201065e10bfd431446c52765" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9293379d8e6384d1d73844c143ed970176a8c283192ad58326d85f06b8cbaf96" }
+      declarationCount := 41
+      declarationInventoryDigest := { algorithm := "sha256", value := "431a2d1acf444adcac7833348ce502def2db2f7810f4b562e5f591e89f562876" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Move"
+      definingFile := "Surface/DAF/Terrain/Move.lean"
+      sourceDigest := { algorithm := "sha256", value := "01792d95df196ff0088667c5362b6a1dfdc87dfe7bd60bb07ea2287f9aad041a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "3638fb48aa1982610fb1d56d708636bdf8bc6c158f1ef3a3c5cf3e99ff54b4fe" }
+      declarationCount := 57
+      declarationInventoryDigest := { algorithm := "sha256", value := "2934e34d1a215dac68bffe398904e29787de501dbe3436b6a582056683dda413" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Refinement"
+      definingFile := "Surface/DAF/Terrain/Refinement.lean"
+      sourceDigest := { algorithm := "sha256", value := "bc217e1c1887d7dd4f87b1d645ab84e8aafd35328d2f7e0b2b92cd9e680bb18c" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "59da0c1280b3f9e6b587a16869ca7dba7e88537f8c61e720ec50081ae0cdc3e0" }
+      declarationCount := 103
+      declarationInventoryDigest := { algorithm := "sha256", value := "895d6c275005831942e389df6198df396af915a7953b9e8251f88277be7ee9ba" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.Surgery"
+      definingFile := "Surface/DAF/Terrain/Surgery.lean"
+      sourceDigest := { algorithm := "sha256", value := "8b281a6ab691d8be07bccc93eed1c063d4feac7665e8c16ef8724d3d513509b7" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "d030e76f8e3d3a5a1063ccda71c8d0b7d58c044d9940eb30f9804cbe2458fad1" }
+      declarationCount := 195
+      declarationInventoryDigest := { algorithm := "sha256", value := "964b65522febebee7d92e2ef5e5d2409f8c97cfe6e80fbabd4782dca637c3db8" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Terrain.WindowCover"
+      definingFile := "Surface/DAF/Terrain/WindowCover.lean"
+      sourceDigest := { algorithm := "sha256", value := "8ae9552fd9b88532ce9aceb03b47a01db4976b19b5fa4768dcac701c6c1b1582" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "ee8b34f910057e4cc036de283d1cc92a3411d0510645c7aa5f77f88f178dda04" }
+      declarationCount := 62
+      declarationInventoryDigest := { algorithm := "sha256", value := "fe816e2e7d66db1d9d85aafc51ab7171dab8b09a5514cb3163dae68d5f1bcbac" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Tests.RuntimeTrace"
+      definingFile := "Surface/DAF/Tests/RuntimeTrace.lean"
+      sourceDigest := { algorithm := "sha256", value := "f46c79805a4d73d6834184d0fbd77c9f24e195641ff01d2dc30c8bc9e7adfb9b" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "5812527e6a6b04f6cdf78e14041bf26a062ecf725d665940d9740f1565d44080" }
+      declarationCount := 58
+      declarationInventoryDigest := { algorithm := "sha256", value := "49e3eb0a33d92cae8545edfbbec8c7d8bac61131688b0143b1f35b4109b7f6db" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.Authority"
+      definingFile := "Surface/DAF/Universe/Authority.lean"
+      sourceDigest := { algorithm := "sha256", value := "e2c31e074887ebcec35140a77531d0cd2c71c2d4efb622bfcc461802bc8674fb" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "745a57d8d66e483c896ae6bc2ce7c7e3464e3165d8897698a772d8c008cf29c3" }
+      declarationCount := 70
+      declarationInventoryDigest := { algorithm := "sha256", value := "a1855350078bdea5bbced19ba1da21793d99dac7397d46054603f7dbac2caa61" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.Hypercube"
+      definingFile := "Surface/DAF/Universe/Hypercube.lean"
+      sourceDigest := { algorithm := "sha256", value := "2aaddf8f5e174558ac37c282ce932fb281b195317b52f7a36f6300398ee167d1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "58144882a2d830a97783a16c523e71a86324d453f40167eac90fcc8ce3e4734f" }
+      declarationCount := 62
+      declarationInventoryDigest := { algorithm := "sha256", value := "26dab2d38c5de8e1c52dd6a32e06e0939f7c9ea187bbec175ae0603b005475ea" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.Id"
+      definingFile := "Surface/DAF/Universe/Id.lean"
+      sourceDigest := { algorithm := "sha256", value := "e8ea8ad0a03a163405b12ddd79dd8bae7092dd76f6499912ded9d8d2aa8f371a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "88e58015a04d8fd3f0cd2e7b05a9ddc1ec8e671736ee674294bc99ffea2a50bb" }
+      declarationCount := 135
+      declarationInventoryDigest := { algorithm := "sha256", value := "305cc102905ec985f1ee794983943bdd539539981f510203d06c0c8ad1b03d4d" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.LocalSystem"
+      definingFile := "Surface/DAF/Universe/LocalSystem.lean"
+      sourceDigest := { algorithm := "sha256", value := "4a5b927d25d801c99db7929a096b4aca97f68e08e36afaa37a519f512bf5a96a" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "ebe3acd2e553d1a54fc3e2df774c9212c4ec1148e9591b139710bc0245c498b1" }
+      declarationCount := 83
+      declarationInventoryDigest := { algorithm := "sha256", value := "b20e6aef586c7e2b073c05372ea8fc3c5a37700e096c8660cf8e5faf1c59acf4" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.Manifest"
+      definingFile := "Surface/DAF/Universe/Manifest.lean"
+      sourceDigest := { algorithm := "sha256", value := "6a5276ff6e6f315c91ea6e69d584d722e9dd83b4ee8a74fadc3d70a884b374d1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "2f88c5102bedaed5caad1dac153cc630d824a2efc9a6b1c8d0107d7bd239cbbf" }
+      declarationCount := 100
+      declarationInventoryDigest := { algorithm := "sha256", value := "0ac29267acb6cb39f9e8d6a826faa6c173954fa39749c5a3f41fb26fe0cfbf0c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.Node"
+      definingFile := "Surface/DAF/Universe/Node.lean"
+      sourceDigest := { algorithm := "sha256", value := "533ebf5fd472689ef6dad7a93b4c6c7cb0c948bd558e2badc10136ae2698bbb7" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9c5910bc1ab10d4a19358f8edc88b7a9c74437b99e21b81c42e95e9f8f1efa5c" }
+      declarationCount := 226
+      declarationInventoryDigest := { algorithm := "sha256", value := "27afef239fc98db4ba91b73df97aad1cc0caf8210df0c7219ca7a56afb7d2a44" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Universe.Terrain"
+      definingFile := "Surface/DAF/Universe/Terrain.lean"
+      sourceDigest := { algorithm := "sha256", value := "6d20eaadd4a70efc8690352a5c091f999d5e44d85e405d3c3eeb84804deb7cf1" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "9e6dbdf5b36d9b4199450e15b10fa560e08153a2389515528e2ef1ac246db815" }
+      declarationCount := 98
+      declarationInventoryDigest := { algorithm := "sha256", value := "dee075af0549e8b6b631dfac1b8ee6e628bc84f2b1a5fffab7e0d17d4e51059c" }
+      authority := .certifiedSource
+    },
+    {
+      moduleName := "DAF.Upgrade"
+      definingFile := "Surface/DAF/Upgrade.lean"
+      sourceDigest := { algorithm := "sha256", value := "be11d32407961e61ee55b0af6ca2d4ee862a56dcd63cfd3e974fd67cc3d804f3" }
+      moduleContractFingerprint := { algorithm := "sha256", value := "aee340eae16968fbcf719a53058fc5a200e6eb8061ba7556c438e434e58c60bc" }
+      declarationCount := 187
+      declarationInventoryDigest := { algorithm := "sha256", value := "02941952e115476309b16b075a4054de645f8c68b08f3f15f81454c913338c71" }
+      authority := .certifiedSource
+    }
+  ]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ManifestGenerated/Variantcef632e5cddebe7c7d8439ce5b372244a0d1f64d37d9705532ef84200c41439e.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ManifestGenerated/Variantcef632e5cddebe7c7d8439ce5b372244a0d1f64d37d9705532ef84200c41439e.lean#L55).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0688152063cce9e8672e2c7dc71a679cc45c52ce` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,224 @@
+# mem_softmax
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:9d525f76-e29d-a0de-8e3c-e0ddaf6a80e3",
+  "kind": "theorem",
+  "lexical_name": "mem_softmax",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mem-softmax--cbb199a459ffa1820e5efcf7",
+  "source": {
+    "blob": "54dccc291f0be57076562be279f113b8e1fa7e9f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 353,
+    "line": 211,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Softmax/Variant1b2655f0d7b5b543370d7ef2e4857384ebdec010b4a89f64fb634a00bbb86f31.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:cbb199a459ffa1820e5efcf7dd2f610475d6c774f5219fb4fe1a99de0194b710",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Softmax/Variant1b2655f0d7b5b543370d7ef2e4857384ebdec010b4a89f64fb634a00bbb86f31.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:9d525f76-e29d-a0de-8e3c-e0ddaf6a80e3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 211–353.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem mem_softmax {v : List ℝ} {I : IntervalVector}
+    (hdim : v.length = I.length)
+    (hmem : ∀ i (hi : i < I.length), v[i]'(hdim ▸ hi) ∈ I[i]'hi)
+    (prec : Int) (_hprec : prec ≤ 0) :
+    ∀ k (hk : k < I.length),
+      Real.softmax v k ∈ (softmax I prec)[k]'(by simp [softmax]; exact hk) := by
+  intro k hk
+  simp only [softmax, List.getElem_map, List.getElem_range]
+
+  -- 1. Apply Algebraic Identity to Real.softmax
+  have hsum : (v.map Real.exp).sum ≠ 0 := by
+    apply ne_of_gt
+    apply List.sum_pos
+    · intro y hy
+      obtain ⟨_, _, rfl⟩ := List.mem_map.mp hy
+      exact Real.exp_pos _
+    · intro h
+      have hnil := List.map_eq_nil_iff.mp h
+      have hlen : v.length = 0 := List.length_eq_zero_iff.mpr hnil
+      rw [hlen] at hdim
+      exact Nat.not_lt_zero k (hdim ▸ hk)
+  rw [softmax_algebraic_identity v k (hdim ▸ hk) hsum]
+
+  -- 2. We now need to prove membership for 1 / Σ exp(v_j - v_k)
+  -- versus the computed softmaxComponent I k prec
+  unfold softmaxComponent
+  simp only [hk, ↓reduceDIte]
+
+  -- Set up the interval computations
+  let I_k := I[k]'hk
+  let diffs := I.map (fun I_j => IntervalDyadic.sub I_j I_k)
+  let exps := expVector diffs prec
+  let zeroInterval := IntervalDyadic.singleton (Core.Dyadic.ofInt 0)
+  let sum_exps := exps.foldl (fun acc I => IntervalDyadic.add acc I) zeroInterval
+
+  -- A. v_j - v_k ∈ I_j - I_k (subtraction soundness)
+  have h_diff : ∀ j (hj : j < I.length),
+      v[j]'(hdim ▸ hj) - v[k]'(hdim ▸ hk) ∈ diffs[j]'(by simp [diffs]; exact hj) := by
+    intro j hj
+    simp only [diffs, List.getElem_map]
+    exact IntervalDyadic.mem_sub (hmem j hj) (hmem k hk)
+
+  -- B. exp(v_j - v_k) ∈ exps[j] (exp soundness)
+  have h_exp : ∀ j (hj : j < I.length),
+      Real.exp (v[j]'(hdim ▸ hj) - v[k]'(hdim ▸ hk)) ∈
+        exps[j]'(by simp only [exps, expVector, diffs, List.length_map]; exact hj) := by
+    intro j hj
+    simp only [exps, expVector, diffs, List.getElem_map]
+    -- Get difference membership directly
+    have hdiff_mem : v[j]'(hdim ▸ hj) - v[k]'(hdim ▸ hk) ∈ IntervalDyadic.sub (I[j]'hj) I_k :=
+      IntervalDyadic.mem_sub (hmem j hj) (hmem k hk)
+    -- Convert to IntervalRat for expComputable
+    have hdiff_rat : v[j]'(hdim ▸ hj) - v[k]'(hdim ▸ hk) ∈ (IntervalDyadic.sub (I[j]'hj) I_k).toIntervalRat :=
+      IntervalDyadic.mem_toIntervalRat.mpr hdiff_mem
+    have hexp_rat := IntervalRat.mem_expComputable hdiff_rat 10
+    exact IntervalDyadic.mem_ofIntervalRat hexp_rat prec _hprec
+
+  -- C. Σ exp(v_j - v_k) ∈ sum_exps (sum soundness via foldl)
+  have h_sum : (v.map (fun xj => Real.exp (xj - v[k]!))).sum ∈ sum_exps := by
+    -- v[k]! = v[k] when k < v.length
+    have hk_bound : k < v.length := hdim ▸ hk
+    have hgetelem_eq : v[k]! = v[k]'hk_bound := getElem!_pos v k hk_bound
+    -- Rewrite the sum to use v[k] instead of v[k]!
+    simp only [hgetelem_eq]
+    -- Now prove: (v.map (fun xj => Real.exp (xj - v[k]))).sum ∈ sum_exps
+    -- The real sum equals foldl (+) 0 over the mapped list
+    have hlen_eq : (v.map (fun xj => Real.exp (xj - v[k]))).length = exps.length := by
+      simp [exps, expVector, diffs, hdim]
+    -- 0 ∈ zeroInterval
+    have h_zero : (0 : ℝ) ∈ zeroInterval := by
+      simp only [zeroInterval, IntervalDyadic.mem_def, Core.Dyadic.toRat_ofInt,
+                 IntervalDyadic.singleton]
+      constructor <;> norm_num
+    -- Apply the foldl lemma
+    -- List.sum is foldl (+) 0
+    rw [List.sum_eq_foldl]
+    apply mem_foldl_add hlen_eq h_zero
+    intro i hi
+    -- Need: exp(v[i] - v[k]) ∈ exps[i]
+    have hi' : i < I.length := by
+      simp only [List.length_map] at hi
+      omega
+    simp only [List.getElem_map]
+    exact h_exp i hi'
+
+  -- D. Handle the positivity check for inversion
+  -- The sum of exponentials is always positive
+  have h_sum_pos : (v.map (fun xj => Real.exp (xj - v[k]!))).sum > 0 := by
+    apply List.sum_pos
+    · intro y hy
+      obtain ⟨xj, _, rfl⟩ := List.mem_map.mp hy
+      exact Real.exp_pos _
+    · intro hempty
+      have hnil := List.map_eq_nil_iff.mp hempty
+      simp [List.length_eq_zero_iff.mpr hnil] at hdim
+      exact Nat.not_lt_zero k (hdim ▸ hk)
+
+  -- The sum_rat.lo > 0 condition should hold (intervals contain positive sums)
+  -- For now, we handle both cases using split on the dite
+  split
+  · -- Case: sum_rat.lo > 0 (normal case)
+    rename_i h_pos
+    -- 1 / sum_real ∈ inv(sum_interval)
+    have h_sum_rat : (v.map (fun xj => Real.exp (xj - v[k]!))).sum ∈ sum_exps.toIntervalRat :=
+      IntervalDyadic.mem_toIntervalRat.mpr h_sum
+    have h_sum_ne : (v.map (fun xj => Real.exp (xj - v[k]!))).sum ≠ 0 := ne_of_gt h_sum_pos
+    -- Construct the nonzero interval
+    let sum_nz : IntervalRat.IntervalRatNonzero :=
+      ⟨sum_exps.toIntervalRat, fun hcz => not_lt.mpr hcz.1 h_pos⟩
+    have h_inv := IntervalRat.mem_invNonzero (I := sum_nz) h_sum_rat h_sum_ne
+    -- Convert 1/x = x⁻¹
+    rw [one_div]
+    exact IntervalDyadic.mem_ofIntervalRat h_inv prec _hprec
+  · -- Case: sum_rat.lo ≤ 0 (fallback to conservative [0, 1] bound)
+    -- We need to show: 1 / sum ∈ [0, 1]
+    -- Since sum = Σ exp(v_j - v_k) includes exp(0) = 1 and all terms are positive,
+    -- we have sum ≥ 1, so 0 < 1/sum ≤ 1.
+    simp only [IntervalDyadic.mem_def, Dyadic.toRat_ofInt]
+    constructor
+    · -- 0 ≤ 1/sum (since sum > 0)
+      norm_cast
+      exact le_of_lt (one_div_pos.mpr h_sum_pos)
+    · -- 1/sum ≤ 1 (since sum ≥ 1)
+      norm_cast
+      rw [div_le_one h_sum_pos]
+      -- sum = Σ exp(v_j - v_k) ≥ exp(0) = 1 (the j=k term)
+      -- The sum includes exp(v_k - v_k) = exp(0) = 1
+      have hk_bound : k < v.length := hdim ▸ hk
+      have hgetelem_eq : v[k]! = v[k]'hk_bound := getElem!_pos v k hk_bound
+      -- The k-th term is exp(v[k] - v[k]) = exp(0) = 1
+      have h_one_in_sum : Real.exp (v[k]'hk_bound - v[k]'hk_bound) ≤
+          (v.map (fun xj => Real.exp (xj - v[k]!))).sum := by
+        simp only [sub_self, Real.exp_zero, hgetelem_eq]
+        apply List.single_le_sum
+        · intro y hy
+          obtain ⟨_, _, rfl⟩ := List.mem_map.mp hy
+          exact le_of_lt (Real.exp_pos _)
+        · apply List.mem_map.mpr
+          exact ⟨v[k]'hk_bound, List.getElem_mem hk_bound, by simp⟩
+      simp only [sub_self, Real.exp_zero] at h_one_in_sum
+      exact h_one_in_sum
+
+end LeanCert.ML.Softmax
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Softmax/Variant1b2655f0d7b5b543370d7ef2e4857384ebdec010b4a89f64fb634a00bbb86f31.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Softmax/Variant1b2655f0d7b5b543370d7ef2e4857384ebdec010b4a89f64fb634a00bbb86f31.lean#L211).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `54dccc291f0be57076562be279f113b8e1fa7e9f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

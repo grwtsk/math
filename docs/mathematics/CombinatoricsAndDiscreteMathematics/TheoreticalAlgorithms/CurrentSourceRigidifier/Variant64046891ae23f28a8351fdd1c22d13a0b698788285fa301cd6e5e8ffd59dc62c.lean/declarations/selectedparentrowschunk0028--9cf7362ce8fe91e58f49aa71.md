@@ -1,0 +1,284 @@
+# selectedParentRowsChunk0028
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f6d64785a99ce7e5a21933e1d9ad8be9886ea5bacec20af0b79deb3b1ea2e5f8",
+  "kind": "def",
+  "lexical_name": "selectedParentRowsChunk0028",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "selectedparentrowschunk0028--9cf7362ce8fe91e58f49aa71",
+  "source": {
+    "blob": "b490c038c78433c4a86e2ade48f4c15c665c91c2",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 138768,
+    "line": 138566,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:9cf7362ce8fe91e58f49aa711d2e79ec03adfe0ded954a7dfdb43041277b01cc",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f6d64785a99ce7e5a21933e1d9ad8be9886ea5bacec20af0b79deb3b1ea2e5f8`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 138566–138768.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private def selectedParentRowsChunk0028 : List (String × String × List String) :=
+[
+  ("formal-neighborhood:da40cf4500ad5a07503dfa87e3e7a17a99df33fdd64203069c4a86cce77a33ee", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:7e8ef5693077d551e4d7cbe5eefcc7c1dbfa69f9b316db7a7a821707deec1222",
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:da559acb86332e845bb94f3c87e1e41c3e73976c99022429a724f31d3334a098", "formal-neighborhood:ed3fd62d6daee40b5518605cc72a9f5df586b2f0da6a43cbfc66eb08fb8b3f60", [
+      "formal-neighborhood:ed3fd62d6daee40b5518605cc72a9f5df586b2f0da6a43cbfc66eb08fb8b3f60"
+  ]),
+  ("formal-neighborhood:da753d8cc43c6b61817d15eebf1c04a33d1238e2d0e701eb3953a6a4425469e1", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:da77f540a2ce50801de8f1fc343a5ab7db03d43a1b1e757736bbe322b3b485f6", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:da9add928a3cc59ee2bccff296c6e5b62cfb5596c3d67baea510cfd99ac7c4b5", "formal-neighborhood:125c36571e6c8e08671cc3a07899c40b1f2820c0c0768f4cc6bd9dd7a692717e", [
+      "formal-neighborhood:125c36571e6c8e08671cc3a07899c40b1f2820c0c0768f4cc6bd9dd7a692717e"
+  ]),
+  ("formal-neighborhood:daec9eb2ff07ecc8e0f15e5c4318d16de9a23b471c6d7c28078a0a084ab8e6b4", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:daefa513e69c79b16f7e3af39b7cfaae74915a2c65ac53b26700fb6f7ff3a05b", "formal-neighborhood:818454c7c9170958efb67015b551227968d981d38bd038603a8d5642adc89d37", [
+      "formal-neighborhood:818454c7c9170958efb67015b551227968d981d38bd038603a8d5642adc89d37"
+  ]),
+  ("formal-neighborhood:db124d42b7ac0f0f3894659f9fd3a623bc4a834d02cd499da0a8fa5ae3309337", "formal-neighborhood:55f01d6623b22e15aeaa4262f6c1abb28f3b0fec00d45399148f4b362b66b7a8", [
+      "formal-neighborhood:55f01d6623b22e15aeaa4262f6c1abb28f3b0fec00d45399148f4b362b66b7a8"
+  ]),
+  ("formal-neighborhood:db17e826389179c07c816d1a33b3957c476e1d0d90614bd5e7d806bfeeab2e44", "formal-neighborhood:10df30505a11183f493570089b0808147dbcb86933ce38d0629c47a4dba134f7", [
+      "formal-neighborhood:10df30505a11183f493570089b0808147dbcb86933ce38d0629c47a4dba134f7"
+  ]),
+  ("formal-neighborhood:db1dc17861d06fe0de7fcff2aa539a577ee872655ef4f9f031f01a8606f72c0a", "formal-neighborhood:5bf76d0a0613306eb29631c8bbdb74f1c4b07ceaf885555e8b676d76194ddd49", [
+      "formal-neighborhood:5bf76d0a0613306eb29631c8bbdb74f1c4b07ceaf885555e8b676d76194ddd49"
+  ]),
+  ("formal-neighborhood:db20518ac6a2f6b1ec94d652f0ac361d8ba2ee49350ec294a0c449150aaa9bb6", "formal-neighborhood:7eb4b049e752337f58ff0f813042eeaf10dd5bf74b83c155221f937c9fb53543", [
+      "formal-neighborhood:7eb4b049e752337f58ff0f813042eeaf10dd5bf74b83c155221f937c9fb53543"
+  ]),
+  ("formal-neighborhood:db279875212b05bd3823e722c83e5d1f79d382fcc7c9b5a36edd886797591b2c", "formal-neighborhood:55f01d6623b22e15aeaa4262f6c1abb28f3b0fec00d45399148f4b362b66b7a8", [
+      "formal-neighborhood:55f01d6623b22e15aeaa4262f6c1abb28f3b0fec00d45399148f4b362b66b7a8"
+  ]),
+  ("formal-neighborhood:db312b76d06132a7a03fac1ef23be311fa437e1a298d766a6514766010ce8ac5", "formal-neighborhood:9974e0eb7b3514c52de76d4342389baaacc3e7aa6afddeb9180684ed683fcd20", [
+      "formal-neighborhood:99dcd590e94d19f8c797ffd44302e5f147d5707fa5bca4bd5152bc9786f917d1",
+      "formal-neighborhood:9974e0eb7b3514c52de76d4342389baaacc3e7aa6afddeb9180684ed683fcd20"
+  ]),
+  ("formal-neighborhood:db3727d8dfebbc981ec838749dea23821a4cacaf125df9dd798e53803fbc54b5", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:db5198979b7f916a2710a95bbf60a85a00d4aabf7c7d801be84dfe7c0d896da5", "formal-neighborhood:55f01d6623b22e15aeaa4262f6c1abb28f3b0fec00d45399148f4b362b66b7a8", [
+      "formal-neighborhood:55f01d6623b22e15aeaa4262f6c1abb28f3b0fec00d45399148f4b362b66b7a8"
+  ]),
+  ("formal-neighborhood:db69689688f21adc17a12284c79cf12cfae970e6d6aa918c871ab4f566e979b6", "formal-neighborhood:8c9e6cde235ebdece0d952fc93ed2e5ec83a10a3eb2a42ee3bbfd207d83fe413", [
+      "formal-neighborhood:8c9e6cde235ebdece0d952fc93ed2e5ec83a10a3eb2a42ee3bbfd207d83fe413"
+  ]),
+  ("formal-neighborhood:db84b6aa7251cf277b67d38effb8c31d10c20a740ca9e8aa96af52c3a19a0b3c", "formal-neighborhood:5bf76d0a0613306eb29631c8bbdb74f1c4b07ceaf885555e8b676d76194ddd49", [
+      "formal-neighborhood:5bf76d0a0613306eb29631c8bbdb74f1c4b07ceaf885555e8b676d76194ddd49"
+  ]),
+  ("formal-neighborhood:dbb3ac5bba53f1f37daf540a8b57f7da7749168bd843e8dcdf8a25c355a1d8e2", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dbca450dd688a956331d8cd5f19212b9250425619baa284b65b700168b6b7169", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dbd819141f90bb4720a44b994d9afa2729c0dea552fffc5255d4d91836ff6469", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dbe3ccf98751768f5385f9ead47db3cfe648a3afcf941cc7ecf25cfe35c90ce0", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:dc058f05940053fbae328be3bee535dd87e20c5ddf74b65eda3977aafdf2e5a2", "formal-neighborhood:ebeae6962124eec6ce031b3c89768bc1c7cddf2b23d88d26da16e98c7622ef4e", [
+      "formal-neighborhood:ebeae6962124eec6ce031b3c89768bc1c7cddf2b23d88d26da16e98c7622ef4e"
+  ]),
+  ("formal-neighborhood:dc3cf71cf4730ad1e27b4693fc98589d6e242aa0352f109f1031053629728e37", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:e0830e42b19c02772163e72e7736e9a5251686e086041155551288fecf84a0df",
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dc5c35e938710e2d85c13651a27a08720c459b40824b0bf0f172e751402119a0", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:fcaf27c2b4e0a3bbaf4d403d0a2756d059ad6ff27d1245d696b4914578850859",
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dc8ce347fc69ca037927fc9c0338c49f9495acab73f2f0df5190f62d881ef53b", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:dcff13902c0c22b16c1a6a073096bea70b676c6572f19993e3fa49dffb4b1b09", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:dd0a3b7b3a0c33a33fcde87946e678c33132b83ec68f68b1987d81308a00ee21", "formal-neighborhood:19e1e8636e3bea5bc4889684ffda26b327369d8cc6704579ea1343c59ca4e3d3", [
+      "formal-neighborhood:19e1e8636e3bea5bc4889684ffda26b327369d8cc6704579ea1343c59ca4e3d3"
+  ]),
+  ("formal-neighborhood:dd1065bdabdf14f1baffc73a63c5b984f40ebcdc387a8662af80732d3ed10825", "formal-neighborhood:a544aea63cf3f0a81dbb727ed0d8561b64ab646854e5ce200c87a20a5e042420", [
+      "formal-neighborhood:a544aea63cf3f0a81dbb727ed0d8561b64ab646854e5ce200c87a20a5e042420"
+  ]),
+  ("formal-neighborhood:dd1da7e8938e3743dfad0b979b88babca55d1a08e3ee1cb89838866e787eb773", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:dd5cdf0bf52a16e2833d505c122c0cb0ea8eba486d0f6f7169c5dcf5d9c2ce7b", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dd808e32b6e53259306450498f1d40d49f31a031aa5c7fad76655def6dd03432", "formal-neighborhood:e7b28d477c8421bb29bad5a4eaaaa64a7995c55bc3299163e8462338e22f93a0", [
+      "formal-neighborhood:e7b28d477c8421bb29bad5a4eaaaa64a7995c55bc3299163e8462338e22f93a0",
+      "formal-neighborhood:648c87db79955f7c76c5a236ebb56be832448a0a0a40a828ba15090e1f1b9a35"
+  ]),
+  ("formal-neighborhood:dd84a4b30131bb92502db9792897d3f55d97f1f34bc67842c6cac151c92689bb", "formal-neighborhood:ebeae6962124eec6ce031b3c89768bc1c7cddf2b23d88d26da16e98c7622ef4e", [
+      "formal-neighborhood:ebeae6962124eec6ce031b3c89768bc1c7cddf2b23d88d26da16e98c7622ef4e"
+  ]),
+  ("formal-neighborhood:dda5169ab9c8104d0c6f5784a7c265f1f86a5a4b157f955f4d1741b7364a061b", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:de4eb40fbb7ee8c3a7e27198e983df682e81e340e7ab85986e3dc1efa2546541", "formal-neighborhood:ce0e3eda72d86f39e4e7e073b8d61830e2823fb8d066c3516303e3e6bf4b287e", [
+      "formal-neighborhood:ce0e3eda72d86f39e4e7e073b8d61830e2823fb8d066c3516303e3e6bf4b287e"
+  ]),
+  ("formal-neighborhood:deb12f2c571aad9d9fb2051b25a5d7b73eb7decbd1b980a058f6546b1c5d7e22", "formal-neighborhood:da40cf4500ad5a07503dfa87e3e7a17a99df33fdd64203069c4a86cce77a33ee", [
+      "formal-neighborhood:da40cf4500ad5a07503dfa87e3e7a17a99df33fdd64203069c4a86cce77a33ee"
+  ]),
+  ("formal-neighborhood:debe99b24173878883b3efcf27091032382f0b392db53e07cd386bac3fb94223", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:dec2398e2641a9df7aa498a9b8b6599341ab931bd9f7cf369fb4a72c8da77d8c", "formal-neighborhood:99ca63c61dd07d14f43c94768640688b9ad2f74d9c6ef794153c5d281619a4f5", [
+      "formal-neighborhood:99ca63c61dd07d14f43c94768640688b9ad2f74d9c6ef794153c5d281619a4f5"
+  ]),
+  ("formal-neighborhood:def97dd15b10fe8a0fc091efd631832cafd9d621c5e9883ddcab9e90427da1d0", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:df0d20ac4d2cf2945d59deef39d35af646635e7544427ee5d9b47f3e9e8f67ea", "formal-neighborhood:3aa0eb82b7cbdcf62e3a1967eed0a9f8520be98f1f7594698be3571c4d9a1dbf", [
+      "formal-neighborhood:3aa0eb82b7cbdcf62e3a1967eed0a9f8520be98f1f7594698be3571c4d9a1dbf"
+  ]),
+  ("formal-neighborhood:df1b97e646d1d66bfd63e11c8b191670cdff5c93b3d65122ed37be0f734f09a1", "formal-neighborhood:9974e0eb7b3514c52de76d4342389baaacc3e7aa6afddeb9180684ed683fcd20", [
+      "formal-neighborhood:7e40518b1954bca6f6bf4fab80de78e8eea4fd3c34f309d22cd94882509e6f75",
+      "formal-neighborhood:9974e0eb7b3514c52de76d4342389baaacc3e7aa6afddeb9180684ed683fcd20"
+  ]),
+  ("formal-neighborhood:df25f8ac68bd7e391670a349a68078a2e0a82e0664754e764b635196005e3c5c", "formal-neighborhood:619e5859944374f1abb94d76d6df852063e8d0d142f36dc7cb4f358e29a6c93b", [
+      "formal-neighborhood:619e5859944374f1abb94d76d6df852063e8d0d142f36dc7cb4f358e29a6c93b"
+  ]),
+  ("formal-neighborhood:df430e580025296f0d67da317840d8eaaf2a4c676316d2b035e60dfa8c3f6d42", "formal-neighborhood:0491d77ed98e0851bae05e8408af482e37402104734fa6628899de003b398081", [
+      "formal-neighborhood:0491d77ed98e0851bae05e8408af482e37402104734fa6628899de003b398081"
+  ]),
+  ("formal-neighborhood:df5be66d23f174b26c62e913240c1e47eb1e3db34036ef0f2d60275645eec335", "formal-neighborhood:ebeae6962124eec6ce031b3c89768bc1c7cddf2b23d88d26da16e98c7622ef4e", [
+      "formal-neighborhood:ebeae6962124eec6ce031b3c89768bc1c7cddf2b23d88d26da16e98c7622ef4e"
+  ]),
+  ("formal-neighborhood:df6f1962a56a9cdcff88cff0c23f145bb7a026e996ae161a662751763e929af5", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:df9af50b05f9e28b10951ac13f5f36868225602736da9694c6b401b3b519a978", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dfd4272397dc2ede1251a96d16ba87c58ceb22299e53c703d219721cbe833637", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:dfe5b50d526414527147291c7e7bad8c2111cf665f1776a1dabf254a3d2e18d3", "formal-neighborhood:c56879317db7f83cedcb63b04cb92d8f8d3d085cd2d66c0e6e88f040b85ab93c", [
+      "formal-neighborhood:c56879317db7f83cedcb63b04cb92d8f8d3d085cd2d66c0e6e88f040b85ab93c"
+  ]),
+  ("formal-neighborhood:dff2b0218339d9d581c8d2ccaaf1a168172d12a15796d3c3860ba7ada852144f", "formal-neighborhood:9bff8176ac511f8f94da929d6d899a4b99a98bfbc4e7e18c4d22cbecfce5f836", [
+      "formal-neighborhood:9bff8176ac511f8f94da929d6d899a4b99a98bfbc4e7e18c4d22cbecfce5f836"
+  ]),
+  ("formal-neighborhood:e01c41dc72bd5d81260ecad89ee7e9b7e09e21ec6a8466a5af788e37ffbe644f", "formal-neighborhood:a544aea63cf3f0a81dbb727ed0d8561b64ab646854e5ce200c87a20a5e042420", [
+      "formal-neighborhood:a544aea63cf3f0a81dbb727ed0d8561b64ab646854e5ce200c87a20a5e042420"
+  ]),
+  ("formal-neighborhood:e04619f9c5be80ca1532fd42027d8858ba8b8b2b79f534601e6fb89488cefb1a", "formal-neighborhood:232e7a59cdc3444bd036aade9d6ecddde49da84f934c0a9ba94495b6ef888727", [
+      "formal-neighborhood:232e7a59cdc3444bd036aade9d6ecddde49da84f934c0a9ba94495b6ef888727"
+  ]),
+  ("formal-neighborhood:e070761ee1e42f668ba6a0eee955ad7aa5ed203a210899a2aea3e71ef1d3a2f6", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:e0830e42b19c02772163e72e7736e9a5251686e086041155551288fecf84a0df", "formal-neighborhood:0fd2640dee63a2d23fe4c54629a3a77f1c76a970849c2ae05deccb32cce45bd6", [
+      "formal-neighborhood:0fd2640dee63a2d23fe4c54629a3a77f1c76a970849c2ae05deccb32cce45bd6"
+  ]),
+  ("formal-neighborhood:e089f3a2695088cd53965ecf3b625210cf8c893f2dafdcd387ce89b84e0cda31", "formal-neighborhood:255133780f3d3f3172676bcc229ac54c60c8c4bd5eb60bceb24c6671ec51b22c", [
+      "formal-neighborhood:255133780f3d3f3172676bcc229ac54c60c8c4bd5eb60bceb24c6671ec51b22c"
+  ]),
+  ("formal-neighborhood:e0a77c8c742fa7e8d5cf447aa6f0f6d0367c8ceed6db92407972adf6a933f6ce", "formal-neighborhood:4720bc422e48c3b41e8786fa4c29b7145575157deaa66c72c8aaacc9eb58e02a", [
+      "formal-neighborhood:4720bc422e48c3b41e8786fa4c29b7145575157deaa66c72c8aaacc9eb58e02a"
+  ]),
+  ("formal-neighborhood:e0c1425ff6f3cce8c76999c2dc8bc0af60466a781671d42df2875a208babb076", "formal-neighborhood:bbe03a46272c93b5aefa2b7216991f9a6fd0550ad2ad23a5f0e921711fa564e2", [
+      "formal-neighborhood:bbe03a46272c93b5aefa2b7216991f9a6fd0550ad2ad23a5f0e921711fa564e2"
+  ]),
+  ("formal-neighborhood:e0c78a5390d9b72f6c10a2d3c62e61c2237797cba8362f291b84a7293226ec10", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:e0c93871b7bcc911cdd628d5533d550992de7ea18fee4d22b70d9d5b21e6e5bc", "formal-neighborhood:c56879317db7f83cedcb63b04cb92d8f8d3d085cd2d66c0e6e88f040b85ab93c", [
+      "formal-neighborhood:c56879317db7f83cedcb63b04cb92d8f8d3d085cd2d66c0e6e88f040b85ab93c"
+  ]),
+  ("formal-neighborhood:e0e183cc6e6d33a3e06c523a45b396bdfcbca8bfb4eae33ba3a686b1c3bb20f1", "formal-neighborhood:7806e65b097986b5d12556f55ec7eda2dd5407530af279f9bc298b7b1a38556f", [
+      "formal-neighborhood:7806e65b097986b5d12556f55ec7eda2dd5407530af279f9bc298b7b1a38556f"
+  ]),
+  ("formal-neighborhood:e1249f2fa19350dbc529306a4c2d8c5009e0e8686ba72dc7dc60a80d0824a09f", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:e12e873c1a5a0b141ad7511019cad192b3f10becde728d8aade32fb09d12891b", "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9", [
+      "formal-neighborhood:9dae3ac991c383084a5d641dc8e72266c1de7bf03f572ce615a4b1cfb05b11f9"
+  ]),
+  ("formal-neighborhood:e1457e6766bf7220bb27d028ecea028306c889bdd568f2f3881cdbffdfc77c32", "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6", [
+      "formal-neighborhood:b57b86db432b6e60ce838c74fd0b53691c9b19cd9809bcc6ad9020fcc681fdd6"
+  ]),
+  ("formal-neighborhood:e177f955cc906eb649f65aa16a11d9ddca2ce74ac31c3b27f7ea8cbdd1d03a29", "formal-neighborhood:6c52d61eb59e42a2294fe4379bbd39c3e9c1e59b6dab02acfe66b08861d988e1", [
+      "formal-neighborhood:6c52d61eb59e42a2294fe4379bbd39c3e9c1e59b6dab02acfe66b08861d988e1"
+  ]),
+  ("formal-neighborhood:e195a744584ce6162cc51eaa5363be543e293bc41eb86a4e1682cc5ae67ca62e", "formal-neighborhood:565872b1a8f2e23858af42daa2b5daece49158839befdb57203d855e58b155b3", [
+      "formal-neighborhood:565872b1a8f2e23858af42daa2b5daece49158839befdb57203d855e58b155b3",
+      "formal-neighborhood:232e7a59cdc3444bd036aade9d6ecddde49da84f934c0a9ba94495b6ef888727"
+  ]),
+  ("formal-neighborhood:e1bf7fb6993b6a0c95a85785cef87142658695103aa2c35dfc2097e54321c248", "formal-neighborhood:6cda5aab5a336b82481ba4210de8551709e5dd07f824300a182e0b68ff428825", [
+      "formal-neighborhood:6cda5aab5a336b82481ba4210de8551709e5dd07f824300a182e0b68ff428825"
+  ])
+]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CurrentSourceRigidifier/Variant64046891ae23f28a8351fdd1c22d13a0b698788285fa301cd6e5e8ffd59dc62c.lean#L138566).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b490c038c78433c4a86e2ade48f4c15c665c91c2` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

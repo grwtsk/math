@@ -1,0 +1,133 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.BoolAlgCat.Varianta2e962e2c67478d0574b9d19d32ca63037b0aca5fa3e660d58b83f8bee5c9390
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f559a0b1101df3222a4a503ed4c5606b974802ff` · SHA-256 `3bbba45db003fe84c2762e00bcbb34d0aff7fb7e7fd991da05cf5cecdec7b815`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.BoolAlgCat.Variantc7079173ee97aaaa69b68bb1b408f58180f5b3e915c1dcaaac77a9f8f629d542","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c7079173ee97aaaa69b68bb1b408f58180f5b3e915c1dcaaac77a9f8f629d542","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.OrderTheory.SourceCorpus.BoolAlgCat.Variantc7079173ee97aaaa69b68bb1b408f58180f5b3e915c1dcaaac77a9f8f629d542","mathematical_subject":"Algebra.OrderTheory","original_sha256":"c7079173ee97aaaa69b68bb1b408f58180f5b3e915c1dcaaac77a9f8f629d542","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/FEATURES/.lake/packages/mathlib/Mathlib/Order/Category/BoolAlgCat.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+import Mathlib.Order.Category.HeytAlgCat
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.OrderAndLatticeTheory.BoolAlgCat.Variantc7079173ee97aaaa69b68bb1b408f58180f5b3e915c1dcaaac77a9f8f629d542
+
+#align_import order.category.BoolAlg from "leanprover-community/mathlib"@"e8ac6315bcfcbaf2d19a046719c3b553206dac75"
+
+/-!
+# The category of boolean algebras
+
+This defines `BoolAlgCat`, the category of boolean algebras.
+-/
+
+set_option linter.uppercaseLean3 false
+
+open OrderDual Opposite Set
+
+universe u
+
+open CategoryTheory
+
+/-- The category of boolean algebras. -/
+def BoolAlgCat :=
+  Bundled BooleanAlgebra
+#align BoolAlg BoolAlgCat
+
+namespace BoolAlgCat
+
+instance : CoeSort BoolAlgCat (Type*) :=
+  Bundled.coeSort
+
+instance instBooleanAlgebra (X : BoolAlgCat) : BooleanAlgebra X :=
+  X.str
+
+/-- Construct a bundled `BoolAlgCat` from a `BooleanAlgebra`. -/
+def of (α : Type*) [BooleanAlgebra α] : BoolAlgCat :=
+  Bundled.of α
+#align BoolAlg.of BoolAlgCat.of
+
+@[simp]
+theorem coe_of (α : Type*) [BooleanAlgebra α] : ↥(of α) = α :=
+  rfl
+#align BoolAlg.coe_of BoolAlgCat.coe_of
+
+instance : Inhabited BoolAlgCat :=
+  ⟨of PUnit⟩
+
+/-- Turn a `BoolAlg` into a `BddDistLat` by forgetting its complement operation. -/
+def toBddDistLatCat (X : BoolAlgCat) : BddDistLatCat :=
+  BddDistLatCat.of X
+#align BoolAlg.to_BddDistLat BoolAlgCat.toBddDistLatCat
+
+@[simp]
+theorem coe_toBddDistLatCat (X : BoolAlgCat) : ↥X.toBddDistLatCat = ↥X :=
+  rfl
+#align BoolAlg.coe_to_BddDistLat BoolAlgCat.coe_toBddDistLatCat
+
+instance : LargeCategory.{u} BoolAlgCat :=
+  InducedCategory.category toBddDistLatCat
+
+instance : ConcreteCategory BoolAlgCat :=
+  InducedCategory.concreteCategory toBddDistLatCat
+
+instance hasForgetToBddDistLatCat : HasForget₂ BoolAlgCat BddDistLatCat :=
+  InducedCategory.hasForget₂ toBddDistLatCat
+#align BoolAlg.has_forget_to_BddDistLat BoolAlgCat.hasForgetToBddDistLatCat
+
+section
+
+attribute [local instance] BoundedLatticeHomClass.toBiheytingHomClass
+
+@[simps]
+instance hasForgetToHeytAlgCat : HasForget₂ BoolAlgCat HeytAlgCat where
+  forget₂ :=
+    { obj := fun X => {α := X}
+      -- Porting note: was `fun {X Y} f => show BoundedLatticeHom X Y from f`
+      -- which already looks like a hack, but I don't understand why this hack works now and
+      -- the old one didn't
+      map := fun {X Y} (f : BoundedLatticeHom X Y) => show HeytingHom X Y from f }
+#align BoolAlg.has_forget_to_HeytAlg BoolAlgCat.hasForgetToHeytAlgCat
+
+end
+
+/-- Constructs an equivalence between Boolean algebras from an order isomorphism between them. -/
+@[simps]
+def Iso.mk {α β : BoolAlgCat.{u}} (e : α ≃o β) : α ≅ β where
+  hom := (e : BoundedLatticeHom α β)
+  inv := (e.symm : BoundedLatticeHom β α)
+  hom_inv_id := by ext; exact e.symm_apply_apply _
+  inv_hom_id := by ext; exact e.apply_symm_apply _
+#align BoolAlg.iso.mk BoolAlgCat.Iso.mk
+
+/-- `OrderDual` as a functor. -/
+@[simps]
+def dual : BoolAlgCat ⥤ BoolAlgCat where
+  obj X := of Xᵒᵈ
+  map {X Y} := BoundedLatticeHom.dual
+#align BoolAlg.dual BoolAlgCat.dual
+
+/-- The equivalence between `BoolAlgCat` and itself induced by `OrderDual` both ways. -/
+@[simps functor inverse]
+def dualEquiv : BoolAlgCat ≌ BoolAlgCat where
+  functor := dual
+  inverse := dual
+  unitIso := NatIso.ofComponents fun X => Iso.mk <| OrderIso.dualDual X
+  counitIso := NatIso.ofComponents fun X => Iso.mk <| OrderIso.dualDual X
+#align BoolAlg.dual_equiv BoolAlgCat.dualEquiv
+
+end BoolAlgCat
+
+theorem boolAlgCat_dual_comp_forget_to_bddDistLatCat :
+    BoolAlgCat.dual ⋙ forget₂ BoolAlgCat BddDistLatCat =
+    forget₂ BoolAlgCat BddDistLatCat ⋙ BddDistLatCat.dual :=
+  rfl
+#align BoolAlg_dual_comp_forget_to_BddDistLat boolAlgCat_dual_comp_forget_to_bddDistLatCat
+```

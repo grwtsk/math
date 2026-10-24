@@ -1,0 +1,123 @@
+# help
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:b1a01328c2674a599d52cca88e2f8ac826e5b5946b1707c47faabd4aa7791a44",
+  "kind": "def",
+  "lexical_name": "help",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "help--88d4ceb33a5edc7959c899ad",
+  "source": {
+    "blob": "8250137748045aac4ee934cdc46c8b0c8d1951c2",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 50,
+    "line": 9,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Main/Variantbdc6b9705de3502bb0a85195c7dd592af3c14709b006e10e2a9a195a7fa04632.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:88d4ceb33a5edc7959c899ad3d91c1de0f4338c62d5d895bad92798a617e9a1d",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Main/Variantbdc6b9705de3502bb0a85195c7dd592af3c14709b006e10e2a9a195a7fa04632.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:b1a01328c2674a599d52cca88e2f8ac826e5b5946b1707c47faabd4aa7791a44`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 9–50.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def help : String := "Mathlib4 caching CLI
+Usage: cache [COMMAND]
+
+Commands:
+  # No privilege required
+  get  [ARGS]  Download linked files missing on the local cache and decompress
+  get! [ARGS]  Download all linked files and decompress
+  get- [ARGS]  Download linked files missing to the local cache, but do no compress
+  pack         Compress non-compressed build files into the local cache
+  pack!        Compress build files into the local cache (no skipping)
+  unpack       Decompress linked already downloaded files
+  unpack!      Decompress linked already downloaded files (no skipping)
+  clean        Delete non-linked files
+  clean!       Delete everything on the local cache
+
+  # Privilege required
+  put          Run 'mk' then upload linked files missing on the server
+  put!         Run 'mk' then upload all linked files
+  commit       Write a commit on the server
+  commit!      Overwrite a commit on the server
+  collect      TODO
+
+* Linked files refer to local cache files with corresponding Lean sources
+* Commands ending with '!' should be used manually, when hot-fixes are needed
+
+# The arguments for 'get' and 'get!'
+
+'get' and 'get!' can process list of paths, allowing the user to be more
+specific about what should be downloaded. For example, with automatic glob
+expansion in shell, one can call:
+
+$ lake exe cache get Mathlib/Algebra/Field/*.lean Mathlib/Data/*.lean
+
+Which will download the cache for:
+* Every Lean file inside 'Mathlib/Algebra/Field/'
+* Every Lean file inside 'Mathlib/Data/'
+* Everything that's needed for the above"
+
+open Lean System in
+/-- Note that this normalizes the path strings, which is needed when running from a unix shell
+(which uses `/` in paths) on windows (which uses `\` in paths) as otherwise our filename keys won't
+match. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Main/Variantbdc6b9705de3502bb0a85195c7dd592af3c14709b006e10e2a9a195a7fa04632.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Main/Variantbdc6b9705de3502bb0a85195c7dd592af3c14709b006e10e2a9a195a7fa04632.lean#L9).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8250137748045aac4ee934cdc46c8b0c8d1951c2` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

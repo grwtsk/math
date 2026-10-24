@@ -1,0 +1,96 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.Channel.Variant55f472bf1a9407e6fae6048b4cabe779ab0023191714f04182611ffce1459ab4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7576227928708e8f03884d91535c961d8f542490` · SHA-256 `55f472bf1a9407e6fae6048b4cabe779ab0023191714f04182611ffce1459ab4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathematics.Kernel.Feature
+import Mathematics.Kernel.Id
+
+/-!
+# Authority-labelled kernel channels
+
+Each channel is already a positive kernel and carries a nonnegative weight.
+The authority tag is provenance metadata; numerical behavior never promotes
+that metadata to theorem authority.
+-/
+
+noncomputable section
+
+namespace Mathematics.Kernel
+
+open scoped ComplexOrder
+
+universe u
+
+variable {Index : Type u}
+
+/-- Closed provenance classes for the first intrinsic Lean feature policy. -/
+inductive FeatureChannelAuthority
+  | elaboratedType
+  | formalDependency
+  | typeclassRequirement
+  | declarationShape
+  | proofTermStructure
+  | documentation
+  | contextualMetadata
+  | externalSemanticEmbedding
+  deriving DecidableEq, Repr
+
+/-- One nonnegatively weighted, already-positive feature channel. -/
+structure FeatureKernelChannel (Index : Type u) where
+  id : ChannelId
+  authority : FeatureChannelAuthority
+  kernel : PositiveKernel Index
+  weight : ℝ
+  weight_nonnegative : 0 ≤ weight
+
+/-- The positive kernel contributed by one weighted channel. -/
+def FeatureKernelChannel.weighted
+    (channel : FeatureKernelChannel Index) : PositiveKernel Index where
+  matrix := channel.weight • channel.kernel.matrix
+  positiveSemidefinite :=
+    channel.kernel.positiveSemidefinite.smul channel.weight_nonnegative
+
+/-- A finite nonnegative sum of positive feature channels. -/
+def featureChannelKernel
+    {Channel : Type} [Fintype Channel]
+    (channels : Channel → FeatureKernelChannel Index) : PositiveKernel Index where
+  matrix := ∑ channel, (channels channel).weighted.matrix
+  positiveSemidefinite := Matrix.posSemidef_sum Finset.univ fun channel _ =>
+    (channels channel).weighted.positiveSemidefinite
+
+@[simp]
+theorem featureChannelKernel_apply
+    {Channel : Type} [Fintype Channel]
+    (channels : Channel → FeatureKernelChannel Index)
+    (i j : Index) :
+    featureChannelKernel channels i j =
+      ∑ channel, (channels channel).weight *
+        (channels channel).kernel i j := by
+  change (∑ channel, (channels channel).weighted.matrix) i j = _
+  rw [Matrix.sum_apply]
+  apply Finset.sum_congr rfl
+  intro channel _
+  simp [FeatureKernelChannel.weighted, Algebra.smul_def]
+
+/-- A channel specified directly by a finite feature table. -/
+structure FeatureChannelModel (Index : Type u) where
+  id : ChannelId
+  authority : FeatureChannelAuthority
+  features : FiniteFeatureFamily Index
+  weight : ℝ
+  weight_nonnegative : 0 ≤ weight
+
+/-- Compile a feature-table channel to its positive kernel channel. -/
+def FeatureChannelModel.toKernelChannel
+    (model : FeatureChannelModel Index) : FeatureKernelChannel Index where
+  id := model.id
+  authority := model.authority
+  kernel := model.features.kernel
+  weight := model.weight
+  weight_nonnegative := model.weight_nonnegative
+
+end Mathematics.Kernel
+```

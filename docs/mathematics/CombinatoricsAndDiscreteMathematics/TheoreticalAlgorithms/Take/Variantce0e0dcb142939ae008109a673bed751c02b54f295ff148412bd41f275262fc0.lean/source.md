@@ -1,0 +1,138 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Take.Variantce0e0dcb142939ae008109a673bed751c02b54f295ff148412bd41f275262fc0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `291fd68a3b77cf9bec429b6e6157babe46a27ff0` · SHA-256 `fcdcee4faed830a2a7b1b196dd6d38a1c19c94522beaa4a39e4262f735f6dba1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IterTakeEqToIterTakeToIterM.Variant895195f0d32c86a7eaa8550be0b1e28e10a73a4f31bad83fde8c20188a2b0915","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"895195f0d32c86a7eaa8550be0b1e28e10a73a4f31bad83fde8c20188a2b0915","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.NumbersAndBasicStructures.SourceCorpus.IterTakeEqToIterTakeToIterM.Variant895195f0d32c86a7eaa8550be0b1e28e10a73a4f31bad83fde8c20188a2b0915","mathematical_subject":"Foundations.NumbersAndBasicStructures","original_sha256":"895195f0d32c86a7eaa8550be0b1e28e10a73a4f31bad83fde8c20188a2b0915","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Init/Data/Iterators/Lemmas/Combinators/Take.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Paul Reichert
+-/
+module
+
+prelude
+public import Init.Data.Iterators.Combinators.Take
+public import Init.Data.Iterators.Lemmas.Combinators.Monadic.Take
+public import Init.Data.Iterators.Consumers.Access
+public import Init.Data.Iterators.Consumers.Collect
+import Init.Data.Array.Lemmas
+import Init.Data.Iterators.Lemmas.Basic
+import Init.Data.Iterators.Lemmas.Consumers.Access
+import Init.Data.Iterators.Lemmas.Consumers.Collect
+import Init.Data.List.Nat.TakeDrop
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.IterTakeEqToIterTakeToIterM.Variant895195f0d32c86a7eaa8550be0b1e28e10a73a4f31bad83fde8c20188a2b0915
+
+@[expose] public section
+
+namespace Std
+open Std.Iterators Std.Iterators.Types
+
+theorem Iter.take_eq_toIter_take_toIterM {α β} [Iterator α Id β] {n : Nat}
+    {it : Iter (α := α) β} :
+    it.take n = (it.toIterM.take n).toIter :=
+  rfl
+
+theorem Iter.toTake_eq_toIter_toTake_toIterM {α β} [Iterator α Id β] [Finite α Id]
+    {it : Iter (α := α) β} :
+    it.toTake = it.toIterM.toTake.toIter :=
+  rfl
+
+theorem Iter.step_take {α β} [Iterator α Id β] {n : Nat}
+    {it : Iter (α := α) β} :
+    (it.take n).step = (match n with
+      | 0 => .done (.depleted rfl)
+      | k + 1 =>
+        match it.step with
+        | .yield it' out h => .yield (it'.take k) out (Take.isPlausibleStep_take_yield h)
+        | .skip it' h => .skip (it'.take (k + 1)) (Take.isPlausibleStep_take_skip h)
+        | .done h => .done (.done h)) := by
+  simp only [Iter.step, Iter.step, Iter.take_eq_toIter_take_toIterM, IterM.step_take, toIterM_toIter]
+  cases n
+  case zero => simp [PlausibleIterStep.done]
+  case succ k =>
+    simp only [Id.run_bind]
+    generalize it.toIterM.step.run = step
+    cases step.inflate using PlausibleIterStep.casesOn <;>
+      simp [PlausibleIterStep.yield, PlausibleIterStep.skip, PlausibleIterStep.done]
+
+theorem Iter.atIdxSlow?_take {α β}
+    [Iterator α Id β] [Productive α Id] {k l : Nat}
+    {it : Iter (α := α) β} :
+    (it.take k).atIdxSlow? l = if l < k then it.atIdxSlow? l else none := by
+  induction l, it using Iter.atIdxSlow?.induct_unfolding generalizing k
+  case yield_zero it it' out h h' =>
+    simp only [atIdxSlow?_eq_match (it := it.take k), step_take, h']
+    cases k <;> simp
+  case yield_succ it it' out h h' l ih =>
+    simp only [Nat.succ_eq_add_one, atIdxSlow?_eq_match (it := it.take k), step_take, h']
+    cases k <;> cases l <;> simp [ih]
+  case skip_case l it it' h h' ih =>
+    simp only [atIdxSlow?_eq_match (it := it.take k), step_take, h']
+    cases k <;> cases l <;> simp [ih]
+  case done_case l it h h' =>
+    simp only [atIdxSlow?_eq_match (it := it.take k), step_take, h']
+    cases k <;> cases l <;> simp
+
+@[cbv_eval, simp]
+theorem Iter.toList_take_of_finite {α β} [Iterator α Id β] {n : Nat}
+    [Finite α Id] {it : Iter (α := α) β} :
+    (it.take n).toList = it.toList.take n := by
+  induction it using Iter.inductSteps generalizing n with | step it ihy ihs
+  rw [Iter.toList_eq_match_step, Iter.toList_eq_match_step, Iter.step_take]
+  cases n
+  case zero => simp
+  case succ k =>
+    simp
+    obtain ⟨step, h⟩ := it.step
+    cases step
+    · simp [ihy h]
+    · simp [ihs h]
+    · simp
+
+@[simp]
+theorem Iter.toListRev_take_of_finite {α β} [Iterator α Id β] {n : Nat}
+    [Finite α Id] {it : Iter (α := α) β} :
+    (it.take n).toListRev = it.toListRev.drop (it.toList.length - n) := by
+  rw [toListRev_eq, toList_take_of_finite, List.reverse_take, toListRev_eq]
+
+@[cbv_eval, simp]
+theorem Iter.toArray_take_of_finite {α β} [Iterator α Id β] {n : Nat}
+    [Finite α Id] {it : Iter (α := α) β} :
+    (it.take n).toArray = it.toArray.take n := by
+  rw [← toArray_toList, ← toArray_toList, List.take_toArray, toList_take_of_finite]
+
+@[simp]
+theorem Iter.toList_take_zero {α β} [Iterator α Id β]
+    [Finite (Take α Id) Id] {it : Iter (α := α) β} :
+    (it.take 0).toList = [] := by
+  rw [toList_eq_match_step]
+  simp [step_take]
+
+theorem Iter.step_toTake {α β} [Iterator α Id β] [Finite α Id]
+    {it : Iter (α := α) β} :
+    it.toTake.step = (
+        match it.step with
+        | .yield it' out h => .yield it'.toTake out (.yield h Nat.zero_ne_one)
+        | .skip it' h => .skip it'.toTake (.skip h Nat.zero_ne_one)
+        | .done h => .done (.done h)) := by
+  apply Subtype.ext
+  simp only [toTake_eq_toIter_toTake_toIterM, Iter.step, toIterM_toIter, IterM.step_toTake,
+    Id.run_bind]
+  cases it.toIterM.step.run.inflate using PlausibleIterStep.casesOn <;> simp
+
+@[simp]
+theorem Iter.toList_toTake {α β} [Iterator α Id β] [Finite α Id] {it : Iter (α := α) β} :
+    it.toTake.toList = it.toList := by
+  simp [toTake_eq_toIter_toTake_toIterM, toList_eq_toList_toIterM]
+
+end Std
+```

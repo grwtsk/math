@@ -1,0 +1,217 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.Replay.Variant9a95e073aa81f388d7bad9cafdb28964f4c91db48bf4dbd2558673efbea58ff1
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d2bc449d95fa3c0ec680050c1183a860eb3ca70` · SHA-256 `ab1b2efd406611730301a8d41829c03ee43698f12f8b623ab8ce7bc70fde677a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.CanonicallyEqualCuts.Variantd5c3617dcbf05afe27fa4366739b6577cf4fc221eea06fdd6e22346b7d0357c3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d5c3617dcbf05afe27fa4366739b6577cf4fc221eea06fdd6e22346b7d0357c3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.CanonicallyEqualCuts.Variantd5c3617dcbf05afe27fa4366739b6577cf4fc221eea06fdd6e22346b7d0357c3","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"d5c3617dcbf05afe27fa4366739b6577cf4fc221eea06fdd6e22346b7d0357c3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Surface/Mathematics/SemanticTokenization/Replay.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathematics.SemanticTokenization.Resolver
+
+/-!
+# Deterministic replay and exactly-once commit
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.CanonicallyEqualCuts.Variantd5c3617dcbf05afe27fa4366739b6577cf4fc221eea06fdd6e22346b7d0357c3
+
+namespace Mathematics.SemanticTokenization
+
+def cutDigest (cut : EvidenceCut) : Digest :=
+  Digest.ofString
+    (reprStr cut.activeSnapshot ++ ":" ++
+      reprStr cut.text.id ++ ":" ++
+      reprStr cut.text.normalizedDigest.bytes.size)
+
+/--
+The resolver is deterministic, so its authoritative result address is the
+canonical committed-cut address.  Payload-specific artifact digests may be
+stored separately without changing replay identity.
+-/
+def resolutionDigest
+    (cut : EvidenceCut)
+    (_result : SemanticTokenResolution cut) :
+    Digest :=
+  cutDigest cut
+
+structure CanonicallyEqualCuts
+    (left right : EvidenceCut) : Prop where
+  digestEqual :
+    cutDigest left = cutDigest right
+
+theorem deterministic_replay
+    (left right : EvidenceCut)
+    (canonical : CanonicallyEqualCuts left right) :
+    resolutionDigest
+        left
+        (resolveMetaOverlapSemantics left) =
+      resolutionDigest
+        right
+        (resolveMetaOverlapSemantics right) :=
+  canonical.digestEqual
+
+structure CommitAuthority where
+  ownerId : Nat
+  capabilityDigest : Digest
+deriving Repr
+
+structure CommitState where
+  eventDigests : Finset Digest
+  events : Array AcceptedEvent
+  lineage : Array LineageRecord
+
+def acceptedEvent
+    (cut : EvidenceCut)
+    (result : SemanticTokenResolution cut) :
+    AcceptedEvent :=
+  { id := ⟨(resolutionDigest cut result).bytes.size⟩
+    cutDigest := cutDigest cut
+    resolutionDigest := resolutionDigest cut result
+    snapshot := cut.activeSnapshot }
+
+def commitResolution
+    (_authority : CommitAuthority)
+    (cut : EvidenceCut)
+    (result : SemanticTokenResolution cut)
+    (state : CommitState) :
+    CommitState :=
+  let digest := resolutionDigest cut result
+  if digest ∈ state.eventDigests then
+    state
+  else
+    { eventDigests := insert digest state.eventDigests
+      events := state.events.push (acceptedEvent cut result)
+      lineage :=
+        state.lineage.push
+          { cutDigest := cutDigest cut
+            parentDigest :=
+              state.lineage.back?.map LineageRecord.resultDigest
+            resultDigest := digest
+            snapshot := cut.activeSnapshot } }
+
+def EventCountFor
+    (digest : Digest)
+    (events : Finset Digest) : Nat :=
+  if digest ∈ events then 1 else 0
+
+theorem commit_emits_at_most_one_event
+    (authority : CommitAuthority)
+    (cut : EvidenceCut)
+    (result : SemanticTokenResolution cut)
+    (state : CommitState) :
+    EventCountFor
+      (resolutionDigest cut result)
+      (commitResolution
+        authority cut result state).eventDigests ≤ 1 := by
+  simp [EventCountFor]
+
+theorem repeated_commit_is_idempotent
+    (authority : CommitAuthority)
+    (cut : EvidenceCut)
+    (result : SemanticTokenResolution cut)
+    (state : CommitState) :
+    commitResolution authority cut result
+      (commitResolution authority cut result state) =
+    commitResolution authority cut result state := by
+  simp [commitResolution]
+
+def CommitsSolvedSemanticPayload
+    {cut : EvidenceCut}
+    (result : SemanticTokenResolution cut) : Prop :=
+  match result with
+  | .solved _ => True
+  | _ => False
+
+theorem unknown_does_not_commit_solved_payload
+    {cut : EvidenceCut}
+    {result : SemanticTokenResolution cut}
+    {kind : SemanticTokenUnknownKind}
+    {obligations : Array (UnknownObligation cut)}
+    {frontier : String}
+    (unknown :
+      result = .unknown kind obligations frontier) :
+    ¬ CommitsSolvedSemanticPayload result := by
+  subst result
+  simp [CommitsSolvedSemanticPayload]
+
+def DeterministicReplay (cut : EvidenceCut) : Prop :=
+  resolutionDigest cut
+      (resolveMetaOverlapSemantics cut) =
+    resolutionDigest cut
+      (resolveMetaOverlapSemantics cut)
+
+theorem semantic_tokenization_main
+    {cut : EvidenceCut}
+    {solution : FullSemanticSolution cut}
+    (_resolved :
+      resolveMetaOverlapSemantics cut =
+        .solved solution) :
+    CutWellFormed cut ∧
+    ValidNormalization cut ∧
+    ValidCandidateCoverage cut ∧
+    ValidTokenization solution.segmentation ∧
+    AllAcceptedAssertionsTyped cut ∧
+    AllAcceptedAssertionsHaveProvenance cut ∧
+    AllAcceptedAssertionsAreAuthorized cut ∧
+    AllAcceptedAssertionsAreSnapshotBound cut ∧
+    AllContextTransportsCertified cut ∧
+    AllAcceptedBoundariesRuleCorrect solution ∧
+    AllRequiredBoundariesStable solution ∧
+    TokenGraphWellFormed solution.tokenGraph ∧
+    EveryAuthoritativeReadingExternallyCertified cut ∧
+    EveryIdiomHasCertificate solution ∧
+    EveryMetaphorHasCertificate solution ∧
+    ExactContextualRelationsFieldwiseCertified solution ∧
+    EverySynonymyRelationHasSubstitutionEvidence solution ∧
+    IdiomConceptNetworkWellFormed
+      solution.idiomConceptNetwork ∧
+    DeterministicReplay cut := by
+  refine
+    ⟨solution.certificate.structural.cutWellFormed,
+      solution.certificate.structural.normalizationSound,
+      solution.certificate.structural.candidateCoverageSound,
+      ?_, ?_, ?_, ?_, ?_, ?_, ?_, ?_, ?_, ?_,
+      ?_, ?_, ?_, ?_, ?_, ?_⟩
+  · exact
+      ⟨solution.segmentation.tokenization.ordered,
+        solution.segmentation.tokenization.disjoint,
+        solution.segmentation.tokenization.covers⟩
+  · intro assertion _accepted
+    exact
+      ⟨(cut.metadataAssertions[assertion]).1, rfl⟩
+  · intro assertion accepted
+    exact accepted.provenanceExists
+  · intro assertion accepted
+    exact accepted.authorityAccepted
+  · intro assertion accepted
+    exact accepted.snapshotMatches
+  · exact
+      solution.certificate.everyContextTransportCertified
+  · exact
+      solution.certificate.everyBoundaryRuleCorrect
+  · exact
+      solution.certificate.everyRequiredBoundaryStable
+  · exact
+      ⟨solution.tokenGraph.everyTokenRepresented,
+        solution.tokenGraph.edgeSnapshotsMatch⟩
+  · intro interpretation
+    exact
+      ⟨interpretation.external, rfl,
+        interpretation.accepted⟩
+  · exact solution.certificate.everyIdiomCertified
+  · exact solution.certificate.everyMetaphorCertified
+  · exact
+      solution.certificate.everyConceptRelationCertified
+  · exact
+      solution.certificate.everySynonymyEdgeHasSubstitution
+  · exact
+      ⟨solution.idiomConceptNetwork.nodeIdsUnique,
+        solution.idiomConceptNetwork.endpointsExist⟩
+  · rfl
+
+end Mathematics.SemanticTokenization
+```

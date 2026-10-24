@@ -1,0 +1,93 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Discovery.Variant5318ae4cfcdafa42dce4db87c58d5195ffc40e0c1b1ad7ebd306b316a67dbf4c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `670b66ab7474fb7e731dfb38ec0626015846158a` · SHA-256 `c2b5e0c2ff9231e434789f69d69a3158c2e322addacaef31cb3d38bd52af8cb8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Types.Variant205726d8b3f7e223157e1a9bc12b75a6fa0caeecd835c3c9b2a0cd79dd122186","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"205726d8b3f7e223157e1a9bc12b75a6fa0caeecd835c3c9b2a0cd79dd122186","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.Algorithms.SourceCorpus.Types.Variant205726d8b3f7e223157e1a9bc12b75a6fa0caeecd835c3c9b2a0cd79dd122186","mathematical_subject":"Computation.Algorithms","original_sha256":"205726d8b3f7e223157e1a9bc12b75a6fa0caeecd835c3c9b2a0cd79dd122186","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Head/Think_retired/target/think/external/PrimeNumberTheoremAnd/.lake/packages/leancert/LeanCert/Discovery.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 LeanCert Contributors. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: LeanCert Contributors
+-/
+import LeanCert.Discovery.Types
+import LeanCert.Discovery.Find
+import LeanCert.Discovery.Commands
+
+/-!
+# LeanCert Discovery Mode
+
+This module provides the "Discovery Mode" API for LeanCert - the ability to
+automatically find and certify mathematical facts rather than just verify them.
+
+## Components
+
+* `Types` - Proof-carrying result structures (`VerifiedGlobalMin`, `VerifiedRoot`, etc.)
+* `Find` - Finder functions that run algorithms and produce proofs
+* `Commands` - Elaboration commands (`#find_min`, `#find_max`, `#bounds`)
+
+## Usage
+
+### Interactive Exploration
+
+```lean
+-- Find the minimum of x² + sin(x) on [-2, 2]
+#find_min (fun x => x^2 + Real.sin x) on [-2, 2]
+
+-- Find the maximum of e^x - x² on [0, 1]
+#find_max (fun x => Real.exp x - x^2) on [0, 1]
+
+-- Find both bounds
+#bounds (fun x => x * Real.cos x) on [0, 3]
+```
+
+Note: `#minimize` and `#maximize` are aliases for backward compatibility.
+
+### Programmatic API
+
+```lean
+-- Get a verified minimum with proof
+def result := findGlobalMin myExpr mySupport domain config
+-- result.bound : ℚ  -- the minimum bound
+-- result.is_lower_bound : ∀ ρ ∈ domain, bound ≤ eval ρ expr  -- the proof
+
+-- Verify a specific bound
+match verifyUpperBound expr support interval bound config with
+| some proof => -- proof.is_upper_bound : ∀ x ∈ interval, eval x expr ≤ bound
+| none => -- verification failed
+```
+
+### Tactics
+
+```lean
+-- Prove existence of a minimum
+example : ∃ m : ℚ, ∀ x ∈ I01, x^2 + Real.sin x ≥ m := by
+  interval_minimize
+
+-- Prove existence of a root
+example : ∃ x ∈ Icc (-2 : ℝ) 2, x^3 - x = 0 := by
+  interval_roots
+```
+
+## Architecture
+
+Discovery Mode builds on LeanCert's verification infrastructure:
+
+1. **Algorithms** (from `Numerics/`): Branch-and-bound optimization, bisection root finding
+2. **Certificates** (from `Certificate.lean`): Boolean checkers that `native_decide` can evaluate
+3. **Golden Theorems**: Convert boolean certificates to semantic proofs
+4. **Proof-Carrying Types**: Bundle computed results with their correctness proofs
+
+The key insight is that the same interval arithmetic that verifies bounds can
+discover them - we just need to run the algorithm first, then apply the
+verification theorem to the computed result.
+-/
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Types.Variant205726d8b3f7e223157e1a9bc12b75a6fa0caeecd835c3c9b2a0cd79dd122186
+
+````

@@ -1,0 +1,103 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.CompleteMultipartite.Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8ac2e6b2046f7f70dca57c1bc121128ce170a91b",
+  "lexical_observation_count": 42,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/index.md) · [Full source](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8ac2e6b2046f7f70dca57c1bc121128ce170a91b`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsCompleteMultipartite](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite--f39c95134e31644a57effb8c.md) | 67 | `declaration-track:f39c95134e31644a57effb8c8bdb26ee39791651e8be1b60ea2203c7455787be` |
+| 2 | `theorem` | [IsCompleteMultipartite.top](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-top--4a791c69b273b75faa275d74.md) | 69 | `result-track:4a791c69b273b75faa275d745620f112c637ede799bd7d72240e80a94d1c1724` |
+| 3 | `theorem` | [IsCompleteMultipartite.bot](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-bot--76249d7daee9fe0571445896.md) | 72 | `result-track:76249d7daee9fe05714458966c02a1430612f7dd92a2ec07725de514d2d00b92` |
+| 4 | `theorem` | [IsCompleteMultipartite.completeBipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-completebipartitegraph--32b97a7cef67db4731fddac5.md) | 77 | `result-track:32b97a7cef67db4731fddac58868b8160c9af13b8bca8f0ca19cbbb1e898e64d` |
+| 5 | `lemma` | [IsCompleteMultipartite.induce](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-induce--324737bdb9f90f6b9c5954f9.md) | 81 | `result-track:324737bdb9f90f6b9c5954f929146be56cbbd71b033630475707ddd2ab083c7b` |
+| 6 | `def` | [IsCompleteMultipartite.setoid](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-setoid--905bcd0af63f47414c21a734.md) | 86 | `declaration-track:905bcd0af63f47414c21a734f6a0e03d3eecd2405715c0455fb93de677d93714` |
+| 7 | `lemma` | [completeMultipartiteGraph.isCompleteMultipartite](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completemultipartitegraph-iscompletemultipartite--5ad2744913502c4b48f04054.md) | 89 | `result-track:5ad2744913502c4b48f040542c6b50b4213f87bfb8461bff76de674c966cd542` |
+| 8 | `def` | [IsCompleteMultipartite.iso](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-iso--841ac294733accc8303e4ee0.md) | 95 | `declaration-track:841ac294733accc8303e4ee094aa543e0dbeb0d2d2f3efe71dbcfbd99667ee81` |
+| 9 | `lemma` | [isCompleteMultipartite_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-iff--62ef8681830b147bbe46b6c0.md) | 106 | `result-track:62ef8681830b147bbe46b6c0c5497e46668c255c7991e3b565af4c27bf216853` |
+| 10 | `lemma` | [IsCompleteMultipartite.colorable_of_cliqueFree](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-colorable-of-cliquefree--140a1054579837db7b477a57.md) | 115 | `result-track:140a1054579837db7b477a57142f0e0db586febd5c793876bff03775b076ed94` |
+| 11 | `structure` | [IsPathGraph3Compl](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/ispathgraph3compl--5b9ee5ec606a10a7f23c1bc6.md) | 127 | `declaration-track:5b9ee5ec606a10a7f23c1bc68c86da8f296429891b4bd9c48701fba859625fd9` |
+| 12 | `lemma` | [ne_fst](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/ne-fst--830305b610433b3b0e239147.md) | 137 | `result-track:830305b610433b3b0e2391476ecd3339656d1f54707e7432659924007184e99f` |
+| 13 | `lemma` | [ne_snd](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/ne-snd--c96adda0c7ecc5418ef6d77b.md) | 141 | `result-track:c96adda0c7ecc5418ef6d77b2ace75ce519c808049b0feca465977e5ed0324e8` |
+| 14 | `lemma` | [fst_ne_snd](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/fst-ne-snd--6dcb5cff9e6377bdc967d483.md) | 145 | `result-track:6dcb5cff9e6377bdc967d4834547dc7fb2aafb1dac332564760cf85e9330a3ca` |
+| 15 | `lemma` | [symm](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/symm--81c4dc72cf7fe268f9290684.md) | 147 | `result-track:81c4dc72cf7fe268f9290684f1df4ec5c5a602b6d8cbc21e91908c9a2bce9488` |
+| 16 | `lemma` | [exists_isPathGraph3Compl_of_not_isCompleteMultipartite](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/exists-ispathgraph3compl-of-not-iscompletemultipartite--9ce3a10da36496ab9191e78b.md) | 153 | `result-track:9ce3a10da36496ab9191e78bd36d01af5488ab576f1971be395b7e5787958f95` |
+| 17 | `lemma` | [not_isCompleteMultipartite_iff_exists_isPathGraph3Compl](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/not-iscompletemultipartite-iff-exists-ispathgraph3compl--6366d250b73a771db0cf890e.md) | 161 | `result-track:6366d250b73a771db0cf890e7af2faadfeca36184deae1d87da2fda7190f584c` |
+| 18 | `def` | [IsPathGraph3Compl.pathGraph3ComplEmbedding](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/ispathgraph3compl-pathgraph3complembedding--73a390a04de9533299cbb307.md) | 169 | `declaration-track:73a390a04de9533299cbb30701a2e398594be6939fc57e236f08ad46b491283a` |
+| 19 | `def` | [pathGraph3ComplEmbeddingOf](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/pathgraph3complembeddingof--0baba9ff9d416985a4658913.md) | 193 | `declaration-track:0baba9ff9d416985a4658913201f1651021777d834613bc859ff0a9dc268d1ea` |
+| 20 | `lemma` | [not_isCompleteMultipartite_of_pathGraph3ComplEmbedding](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/not-iscompletemultipartite-of-pathgraph3complembedding--d6fae8bebc8e25b5174b6c49.md) | 198 | `result-track:d6fae8bebc8e25b5174b6c49cc61dd8bd403b7f80cac619f8e301b76ac687364` |
+| 21 | `theorem` | [IsCompleteMultipartite.comap](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscompletemultipartite-comap--3cc3da70571ce2e49a8ee699.md) | 206 | `result-track:3cc3da70571ce2e49a8ee6996d0ad6fd462c9bd38e4e94d7f49d8a67540a80e6` |
+| 22 | `abbrev` | [completeEquipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph--ce2e1efbbb82ee0cb063c98a.md) | 223 | `declaration-track:ce2e1efbbb82ee0cb063c98acf026c96a5ee5dee425525842fbaef46bf3c5ce7` |
+| 23 | `lemma` | [completeEquipartiteGraph_adj](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-adj--dc5116b2588e3ff278e87537.md) | 226 | `result-track:dc5116b2588e3ff278e87537784655c56f1639d8efe13ef71d5010d855f6a085` |
+| 24 | `def` | [completeEquipartiteGraph.completeMultipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-completemultipartitegraph--30a2cb2dd45f396d90513699.md) | 234 | `declaration-track:30a2cb2dd45f396d905136991a3014173a19076fe1e550b7f71cdf5442e7669f` |
+| 25 | `def` | [completeEquipartiteGraph.turanGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-turangraph--59ecf0cffe6943a37510a8f4.md) | 242 | `declaration-track:59ecf0cffe6943a37510a8f486b857d31ae00b5a5acf5defc512681e261508fa` |
+| 26 | `lemma` | [completeEquipartiteGraph_eq_bot_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-eq-bot-iff--8215c5da24f68a878e212be7.md) | 272 | `result-track:8215c5da24f68a878e212be77720e57a36bd8b117159100108e4285f257826ab` |
+| 27 | `theorem` | [completeEquipartiteGraph.isCompleteMultipartite](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-iscompletemultipartite--77080f25cfd83db03072cfb4.md) | 285 | `result-track:77080f25cfd83db03072cfb4e3f6cb012ebd97dce17ff6cb6f4d2cd50abd4a40` |
+| 28 | `theorem` | [neighborSet_completeEquipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/neighborset-completeequipartitegraph--6143fcd5bec1733db76b204d.md) | 296 | `result-track:6143fcd5bec1733db76b204d1ef0b56f7618f22c1a0fec23645939aca825caf7` |
+| 29 | `theorem` | [neighborFinset_completeEquipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/neighborfinset-completeequipartitegraph--68dbdade27c112aa7b139c4c.md) | 300 | `result-track:68dbdade27c112aa7b139c4cfd8d2ce591513b3d2b143a925d47c052919bcb8b` |
+| 30 | `theorem` | [degree_completeEquipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/degree-completeequipartitegraph--2d5700b13270816d72455fe9.md) | 304 | `result-track:2d5700b13270816d72455fe9f09d65b20afa855a1ef1453bb875ec5029d57d13` |
+| 31 | `theorem` | [card_edgeFinset_completeEquipartiteGraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/card-edgefinset-completeequipartitegraph--c1c6ec62525cc318c5714382.md) | 309 | `result-track:c1c6ec62525cc318c57143820ccf4cf5e0157c954c853c41ba0d423879142cae` |
+| 32 | `theorem` | [isContained_completeEquipartiteGraph_of_colorable](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/iscontained-completeequipartitegraph-of-colorable--5087efbcb52c0ed8639b8aba.md) | 324 | `result-track:5087efbcb52c0ed8639b8aba7b541c5c1250acab48625cf371f21c4ee24ac9e5` |
+| 33 | `structure` | [CompleteEquipartiteSubgraph](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitesubgraph--a1ed3bafaf323730de2916ac.md) | 357 | `declaration-track:a1ed3bafaf323730de2916ac9db4a5b8b8b6088bc98155b3d1d2899c87b6f66c` |
+| 34 | `theorem` | [nonempty_of_eq_zero_or_eq_zero](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/nonempty-of-eq-zero-or-eq-zero--260dc9d0144fa09c573c3ce9.md) | 372 | `result-track:260dc9d0144fa09c573c3ce93bd882bb53651c8426aba77440409f707481c6c2` |
+| 35 | `theorem` | [disjoint](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/disjoint--48570a618474f0c6eb0554df.md) | 377 | `result-track:48570a618474f0c6eb0554df7daef0fa1fc092998acca4df050e710d861801ba` |
+| 36 | `def` | [verts](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/verts--d814943343eb9f2831827282.md) | 382 | `declaration-track:d814943343eb9f2831827282a94f1a186d5e67788df3866e7427fc229ce645be` |
+| 37 | `lemma` | [verts_eq_biUnion](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/verts-eq-biunion--074d08e1ee51eb32beb0385f.md) | 387 | `result-track:074d08e1ee51eb32beb0385f94acc2639d43e6ebb6eb77cbe87e357bd4e43c11` |
+| 38 | `theorem` | [card_verts](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/card-verts--8ec03c493adbfa63bb690c88.md) | 391 | `result-track:8ec03c493adbfa63bb690c88c0bc3fa4d16d1b70ea82fdbf252fdd7d20952395` |
+| 39 | `def` | [toCopy](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/tocopy--5ae21be613b407a8946070f3.md) | 397 | `declaration-track:5ae21be613b407a8946070f3a49b45d9b11d27765cf60c846b7684c2d4eb2236` |
+| 40 | `def` | [ofCopy](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/ofcopy--24e431dc2c7bb3a35de961a4.md) | 426 | `declaration-track:24e431dc2c7bb3a35de961a43a6221075cbb59a694e2a7ab439291a816db9459` |
+| 41 | `theorem` | [completeEquipartiteGraph_isContained_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-iscontained-iff--950ee70f0f3568bb7c947a46.md) | 460 | `result-track:950ee70f0f3568bb7c947a46847c5dd1b8ed283abec70083cee170beb762a6a6` |
+| 42 | `theorem` | [completeEquipartiteGraph_succ_isContained_iff](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/GraphTheory/CompleteMultipartite/Variant0ea37a05fac393f436b6e3fe8e1c0bd6ca2a8f4de674edf68923cef64ab9bedf.lean/declarations/completeequipartitegraph-succ-iscontained-iff--bc448161c4dd6413b285520b.md) | 467 | `result-track:bc448161c4dd6413b285520b74f85180df026264f8e26119a4319bbd2cef34af` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

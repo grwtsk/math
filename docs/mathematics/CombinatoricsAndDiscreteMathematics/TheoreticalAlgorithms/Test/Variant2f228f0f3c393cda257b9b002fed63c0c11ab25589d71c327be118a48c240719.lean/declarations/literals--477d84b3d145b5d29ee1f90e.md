@@ -1,0 +1,465 @@
+# literals
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:4cb278b424bc7cb5b659b4c17f5703a1f1b7a0a89ea6ab94fb87b567c44acbfc",
+  "kind": "def",
+  "lexical_name": "literals",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "literals--477d84b3d145b5d29ee1f90e",
+  "source": {
+    "blob": "c9fa4cbadfae845dc573aac9d5d99d7653f3528a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 753,
+    "line": 370,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Test/Variant2f228f0f3c393cda257b9b002fed63c0c11ab25589d71c327be118a48c240719.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:477d84b3d145b5d29ee1f90ec6a8e0bddd07e17482c8325f331bb2af724edf58",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Test/Variant2f228f0f3c393cda257b9b002fed63c0c11ab25589d71c327be118a48c240719.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:4cb278b424bc7cb5b659b4c17f5703a1f1b7a0a89ea6ab94fb87b567c44acbfc`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 370–753.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def literals : Nat × String := (42, "42")
+
+/--
+info: Prod
+Prod.mk
+Prod.rec
+Nat
+Nat.zero
+Nat.succ
+Nat.rec
+List
+List.nil
+List.cons
+List.rec
+Array
+Array.mk
+Array.rec
+LT
+LT.mk
+LT.rec
+LT.lt
+Nat.le
+Nat.le.refl
+Nat.le.step
+Nat.le.rec
+Nat.lt
+instLTNat
+Fin
+Fin.mk
+Fin.rec
+outParam
+HPow
+HPow.mk
+HPow.rec
+HPow.hPow
+Pow
+Pow.mk
+Pow.rec
+Pow.pow
+instHPow
+NatPow
+NatPow.mk
+NatPow.rec
+NatPow.pow
+instPowNat
+PUnit
+PUnit.unit
+PUnit.rec
+PProd
+PProd.mk
+PProd.rec
+Nat.below
+Nat.brecOn.go
+Nat.brecOn
+Unit
+OfNat
+OfNat.mk
+OfNat.rec
+OfNat.ofNat
+instOfNatNat
+Nat.casesOn
+Unit.unit
+Nat.pow.match_1
+Nat.mul.match_1
+Nat.add.match_1
+Nat.add._f
+Nat.add
+Nat.mul._f
+Nat.mul
+Nat.pow._f
+Nat.pow
+instNatPowNat
+BitVec
+BitVec.ofFin
+BitVec.rec
+UInt8
+UInt8.ofBitVec
+UInt8.rec
+ByteArray
+ByteArray.mk
+ByteArray.rec
+UInt32
+UInt32.ofBitVec
+UInt32.rec
+Or
+Or.inl
+Or.inr
+Or.rec
+And
+And.intro
+And.rec
+Nat.isValidChar
+Fin.val
+BitVec.toFin
+BitVec.toNat
+UInt32.toBitVec
+UInt32.toNat
+UInt32.isValidChar
+Char
+Char.mk
+Char.rec
+Eq
+Eq.refl
+Eq.rec
+List.below
+List.brecOn.go
+List.brecOn
+List.casesOn
+List.toByteArray.match_1
+ByteArray.casesOn
+ByteArray.push.match_1
+List.concat.match_1
+List.concat._f
+List.concat
+Array.toList
+Array.push
+ByteArray.push
+List.toByteArray.loop._f
+List.toByteArray.loop
+Array.emptyWithCapacity
+Array.empty
+ByteArray.emptyWithCapacity
+ByteArray.empty
+List.toByteArray
+List.flatten.match_1
+List.append.match_1
+List.append._f
+List.append
+List.flatten._f
+List.flatten
+instDecidableEqList.match_1
+List.map._f
+List.map
+List.flatMap
+Char.val
+False
+False.rec
+Not
+Decidable
+Decidable.isFalse
+Decidable.isTrue
+Decidable.rec
+Decidable.casesOn
+ite
+LE
+LE.mk
+LE.rec
+LE.le
+instLENat
+dite
+Bool
+Bool.false
+Bool.true
+Bool.rec
+Nat.ble.match_1
+Nat.ble._f
+Nat.ble
+DecidableEq
+Bool.casesOn
+Bool.decEq.match_1
+rfl
+Bool.noConfusionType
+Eq.ndrec
+Bool.noConfusion
+Bool.decEq
+instDecidableEqBool
+False.elim
+Eq.casesOn
+HEq
+HEq.refl
+HEq.rec
+True
+True.intro
+True.rec
+Nat.beq.match_1
+Nat.beq._f
+Nat.beq
+_private.Init.Prelude.0.noConfusion_of_Nat.aux.match_1_1
+_private.Init.Prelude.0.noConfusion_of_Nat.aux._f
+_private.Init.Prelude.0.noConfusion_of_Nat.aux
+congrArg
+noConfusion_of_Nat
+Bool.ctorIdx
+_private.Init.Prelude.0.Nat.le_of_ble_eq_true.match_1_1
+_private.Init.Prelude.0.Nat.zero_le.match_1_1
+Nat.zero_le._f
+Nat.zero_le
+Nat.le.below
+Nat.le.below.refl
+Nat.le.below.step
+Nat.le.below.rec
+Nat.le.brecOn
+Nat.le.below.casesOn
+Eq.symm
+cast
+eq_of_heq
+_private.Init.Prelude.0.Nat.succ_le_succ.match_1_7
+HAdd
+HAdd.mk
+HAdd.rec
+HAdd.hAdd
+Add
+Add.mk
+Add.rec
+Add.add
+instHAdd
+instAddNat
+Nat.succ_le_succ
+Nat.le_of_ble_eq_true._f
+Nat.le_of_ble_eq_true
+absurd
+_private.Init.Prelude.0.Nat.ble_eq_true_of_le.match_1_7
+_private.Init.Prelude.0.Nat.ble_self_eq_true.match_1_1
+Nat.ble_self_eq_true._f
+Nat.ble_self_eq_true
+_private.Init.Prelude.0.Nat.ble_succ_eq_true.match_1_1
+Nat.ble_succ_eq_true._f
+Nat.ble_succ_eq_true
+Nat.ble_eq_true_of_le
+Nat.not_le_of_not_ble_eq_true
+Nat.decLe
+HMod
+HMod.mk
+HMod.rec
+HMod.hMod
+Mod
+Mod.mk
+Mod.rec
+Mod.mod
+instHMod
+namedPattern
+Nat.mod.match_1
+Nat.decLt
+Nat.le.casesOn
+Nat.ctorIdx
+Nat.div.go.match_1
+HSub
+HSub.mk
+HSub.rec
+HSub.hSub
+Sub
+Sub.mk
+Sub.rec
+Sub.sub
+instHSub
+Nat.pred
+Nat.sub._f
+Nat.sub
+instSubNat
+_private.Init.Prelude.0.Nat.le_trans.match_1_10
+Nat.le_trans
+Nat.lt_of_lt_of_le
+And.casesOn
+_private.Init.Prelude.0.Nat.div_rec_lemma.match_1_1
+_private.Init.Prelude.0.Nat.sub_lt.match_1_1
+_private.Init.Prelude.0.Nat.not_succ_le_self.match_1_1
+Nat.noConfusionType
+Nat.noConfusion
+Nat.not_succ_le_zero
+_private.Init.Prelude.0.Nat.pred_le_pred.match_1_1
+Nat.le_succ
+Nat.pred_le_pred
+Nat.le_of_succ_le_succ
+Nat.not_succ_le_self._f
+Nat.not_succ_le_self
+Nat.lt_irrefl
+Nat.lt_succ_of_le
+Nat.le_refl
+_private.Init.Prelude.0.Nat.pred_le.match_1_1
+Nat.pred_le
+Nat.sub_le
+Nat.succ_sub_succ_eq_sub
+Nat.sub_lt
+Nat.div_rec_lemma
+Nat.le_of_lt_succ
+Nat.div_rec_fuel_lemma
+Nat.modCore.go._f
+Nat.modCore.go
+Nat.lt_add_one
+Nat.lt_succ_self
+Nat.modCore
+Nat.mod
+Nat.instMod
+_private.Init.Prelude.0.Nat.mod_lt.match_1_3
+Nat.zero_lt_succ
+_private.Init.Prelude.0.Nat.mod_lt.match_1_1
+_private.Init.Prelude.0.Nat.modCore_lt.match_1_1
+Nat.not_lt_zero
+_private.Init.Prelude.0.Nat.modCoreGo_lt.match_1_1
+Or.casesOn
+_private.Init.Prelude.0.Or.elim.match_1_1
+Or.elim
+id
+Or.resolve_right
+GE.ge
+_private.Init.Prelude.0.Nat.lt_or_ge.match_1_5
+_private.Init.Prelude.0.Nat.lt_or_ge.match_1_3
+Nat.le_succ_of_le
+_private.Init.Prelude.0.Nat.lt_or_ge.match_1_1
+_private.Init.Prelude.0.Nat.eq_or_lt_of_le.match_1_3
+_private.Init.Prelude.0.Nat.eq_or_lt_of_le.match_1_1
+Nat.eq_or_lt_of_le._f
+Nat.eq_or_lt_of_le
+Nat.lt_or_ge._f
+Nat.lt_or_ge
+Nat.lt_of_not_le
+Nat.modCoreGo_lt
+Nat.modCore_lt
+Nat.mod_lt
+Fin.Internal.ofNat
+_private.Init.Prelude.0.Nat.pow_pos.match_1_1
+HMul
+HMul.mk
+HMul.rec
+HMul.hMul
+Mul
+Mul.mk
+Mul.rec
+Mul.mul
+instHMul
+instMulNat
+_private.Init.Prelude.0.Nat.mul_pos.match_1_1
+_private.Init.Prelude.0.Nat.add_pos_right.match_1_1
+Nat.add_pos_right
+Nat.mul_pos
+Nat.pow_pos._f
+Nat.pow_pos
+BitVec.ofNat._proof_1
+BitVec.ofNat
+UInt8.ofNat
+HDiv
+HDiv.mk
+HDiv.rec
+HDiv.hDiv
+Div
+Div.mk
+Div.rec
+Div.div
+instHDiv
+Nat.div.go._f
+Nat.div.go
+Nat.div
+Nat.instDiv
+String.utf8EncodeChar
+List.utf8Encode
+ByteArray.IsValidUTF8
+ByteArray.IsValidUTF8.intro
+ByteArray.IsValidUTF8.rec
+String
+String.ofByteArray
+String.rec
+instDecidableAnd.match_1
+instDecidableOr.match_1
+instDecidableOr._proof_1
+instDecidableOr
+And.right
+instDecidableAnd._proof_1
+And.left
+instDecidableAnd._proof_2
+instDecidableAnd
+BitVec.ofNatLT
+UInt32.size
+_private.Init.Prelude.0.isValidChar_UInt32.match_1_1
+Nat.lt_trans
+Decidable.decide
+_private.Init.Prelude.0.of_decide_eq_true.match_1_1
+_private.Init.Prelude.0.Bool.ne_true_of_eq_false.match_1_1
+Bool.ne_true_of_eq_false
+_private.Init.Prelude.0.decide_eq_false.match_1_1
+decide_eq_false
+of_decide_eq_true
+_private.Init.Prelude.0.isValidChar_UInt32
+Char.ofNatAux._private_1
+Char.ofNatAux
+Char.ofNat._proof_1
+Char.ofNat._proof_2
+Char.ofNat
+String.ofList._proof_1
+String.ofList
+literals
+-/
+#guard_msgs in
+#eval runParserTest do
+  dumpConstant ``literals
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Test/Variant2f228f0f3c393cda257b9b002fed63c0c11ab25589d71c327be118a48c240719.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Test/Variant2f228f0f3c393cda257b9b002fed63c0c11ab25589d71c327be118a48c240719.lean#L370).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c9fa4cbadfae845dc573aac9d5d99d7653f3528a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

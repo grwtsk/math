@@ -1,0 +1,91 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.List.Variant1e7fd8ba7fc48822252a5c3333e765326be9e1437b4286b95325a55d7f6a3249
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8f1130304d233c454776dfb6050f3ae0acead9bd` · SHA-256 `924ba8889c86f6e520c54804b15a0b26c34fa3d34a8057eab44087eac261636f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.RangeListMap.Variant06e610296fa17c5f604d3a4292fa32adbbb74f636a102827b3c2f8c892c4300d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"06e610296fa17c5f604d3a4292fa32adbbb74f636a102827b3c2f8c892c4300d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.RangeListMap.Variant06e610296fa17c5f604d3a4292fa32adbbb74f636a102827b3c2f8c892c4300d","mathematical_subject":"Computation.DataStructures","original_sha256":"06e610296fa17c5f604d3a4292fa32adbbb74f636a102827b3c2f8c892c4300d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Data/Set/List.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2023 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+module
+
+public import Mathlib.Data.Set.Image
+public import Mathlib.Data.List.Defs
+
+/-!
+# Lemmas about `List`s and `Set.range`
+
+In this file we prove lemmas about range of some operations on lists.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.RangeListMap.Variant06e610296fa17c5f604d3a4292fa32adbbb74f636a102827b3c2f8c892c4300d
+
+public section
+
+
+open List
+
+variable {α β : Type*} (l : List α)
+
+namespace Set
+
+theorem range_list_map (f : α → β) : range (map f) = { l | ∀ x ∈ l, x ∈ range f } := by
+  refine antisymm (range_subset_iff.2 fun l => forall_mem_map.2 fun y _ => mem_range_self _)
+      fun l hl => ?_
+  induction l with
+  | nil => exact ⟨[], rfl⟩
+  | cons a l ihl =>
+    rcases ihl fun x hx => hl x <| subset_cons_self _ _ hx with ⟨l, rfl⟩
+    rcases hl a mem_cons_self with ⟨a, rfl⟩
+    exact ⟨a :: l, map_cons⟩
+
+theorem range_list_map_coe (s : Set α) : range (map ((↑) : s → α)) = { l | ∀ x ∈ l, x ∈ s } := by
+  rw [range_list_map, Subtype.range_coe]
+
+@[simp]
+theorem range_list_get : range l.get = { x | x ∈ l } := by
+  ext x
+  rw [mem_ofPred_eq, mem_iff_get, mem_range]
+
+theorem range_list_getElem? :
+    range (l[·]? : ℕ → Option α) = insert none (some '' { x | x ∈ l }) := by
+  rw [← range_list_get, ← range_comp]
+  refine (range_subset_iff.2 fun n => ?_).antisymm (insert_subset_iff.2 ⟨?_, ?_⟩)
+  · exact (le_or_gt l.length n).imp getElem?_eq_none_iff.mpr
+      (fun hlt => ⟨⟨_, hlt⟩, (getElem?_eq_getElem hlt).symm⟩)
+  · exact ⟨_, getElem?_eq_none_iff.mpr le_rfl⟩
+  · exact range_subset_iff.2 fun k => ⟨_, getElem?_eq_getElem _⟩
+
+@[simp]
+theorem range_list_getD (d : α) : (range fun n : Nat => l[n]?.getD d) = insert d { x | x ∈ l } :=
+  calc
+    (range fun n => l[n]?.getD d) = (fun o : Option α => o.getD d) '' range (l[·]?) := by
+      simp only [← range_comp, Function.comp_def]
+      rfl
+    _ = insert d { x | x ∈ l } := by simp [range_list_getElem?, image_image]
+
+@[simp]
+theorem range_list_getI [Inhabited α] (l : List α) :
+    range l.getI = insert default { x | x ∈ l } := by
+  unfold List.getI
+  simp
+
+end Set
+
+/-- If each element of a list can be lifted to some type, then the whole list can be
+lifted to this type. -/
+instance List.canLift (c) (p) [CanLift α β c p] :
+    CanLift (List α) (List β) (List.map c) fun l => ∀ x ∈ l, p x where
+  prf l H := by
+    rw [← Set.mem_range, Set.range_list_map]
+    exact fun a ha => CanLift.prf a (H a ha)
+```

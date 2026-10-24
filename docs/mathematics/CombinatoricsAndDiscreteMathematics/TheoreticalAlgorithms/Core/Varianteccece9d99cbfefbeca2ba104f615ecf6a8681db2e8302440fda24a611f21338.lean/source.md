@@ -1,0 +1,133 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Core.Varianteccece9d99cbfefbeca2ba104f615ecf6a8681db2e8302440fda24a611f21338
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `18fa218daed75d86522cf373ed1fea33ea8eb33e` · SHA-256 `f1f0b62679942771ad91365bd5835b901faa31c738d0103b83ca040a18f9db07`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.SomeBinaryLogicMatrix.Variant625c693e8587c4fc895f2b37eb180ea7fee2bd2d8d70a87a0ea344262edccbc9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"625c693e8587c4fc895f2b37eb180ea7fee2bd2d8d70a87a0ea344262edccbc9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.SomeBinaryLogicMatrix.Variant625c693e8587c4fc895f2b37eb180ea7fee2bd2d8d70a87a0ea344262edccbc9","mathematical_subject":"Computation.DataStructures","original_sha256":"625c693e8587c4fc895f2b37eb180ea7fee2bd2d8d70a87a0ea344262edccbc9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:2e628ee6531784ebd1c16c0e/workspace/Surface/Legacy/BinaryLogicMatrix/Tree/Core.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Surface.Legacy.BinaryLogicMatrix.Core
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.SomeBinaryLogicMatrix.Variant625c693e8587c4fc895f2b37eb180ea7fee2bd2d8d70a87a0ea344262edccbc9
+
+namespace Surface.Legacy
+namespace BinaryLogicMatrix
+namespace Tree
+
+/-- Dimension-erased matrix atom. -/
+structure SomeBinaryLogicMatrix where
+  rows : Nat
+  cols : Nat
+  matrix : BinaryLogicMatrix rows cols
+
+instance : Repr SomeBinaryLogicMatrix where
+  reprPrec M _ :=
+    s!"SomeBinaryLogicMatrix(rows := {M.rows}, cols := {M.cols})"
+
+/-- Pre-symbolic atom used before interpretation into words, streams, or sites. -/
+inductive BinaryLogicAtom where
+  | matrix : SomeBinaryLogicMatrix → BinaryLogicAtom
+  | token : String → BinaryLogicAtom
+  | modularity : String → BinaryLogicAtom
+deriving Repr
+
+/-- Raw finite binary factor tree. -/
+inductive BinaryLogicTree where
+  | leaf : BinaryLogicAtom → BinaryLogicTree
+  | node : BinaryLogicTree → BinaryLogicTree → BinaryLogicTree
+deriving Repr
+
+namespace BinaryLogicTree
+
+def size : BinaryLogicTree → Nat
+  | leaf _ => 1
+  | node l r => 1 + size l + size r
+
+def depth : BinaryLogicTree → Nat
+  | leaf _ => 1
+  | node l r => 1 + Nat.max (depth l) (depth r)
+
+def compose (a b : BinaryLogicTree) : BinaryLogicTree :=
+  node a b
+
+theorem size_pos (t : BinaryLogicTree) :
+    t.size > 0 := by
+  induction t with
+  | leaf _ =>
+      simp [size]
+  | node l r ihl ihr =>
+      simp [size]
+      omega
+
+theorem depth_le_size (t : BinaryLogicTree) :
+    t.depth ≤ t.size := by
+  induction t with
+  | leaf _ =>
+      simp [depth, size]
+  | node l r ihl ihr =>
+      have hmax : Nat.max l.depth r.depth ≤ l.size + r.size := by
+        exact Nat.max_le.mpr ⟨by omega, by omega⟩
+      simp [depth, size]
+      omega
+
+theorem raw_node_left_right_visible
+    {A B C D : BinaryLogicTree}
+    (h : BinaryLogicTree.node A B = BinaryLogicTree.node C D) :
+    A = C ∧ B = D := by
+  cases h
+  exact ⟨rfl, rfl⟩
+
+theorem raw_bracketing_visible
+    {A B C D E F : BinaryLogicTree}
+    (h :
+      BinaryLogicTree.node (BinaryLogicTree.node A B) C =
+        BinaryLogicTree.node (BinaryLogicTree.node D E) F) :
+    A = D ∧ B = E ∧ C = F := by
+  cases h
+  exact ⟨rfl, rfl, rfl⟩
+
+/-- Boundary descriptor: no commutativity quotient is installed for raw syntax. -/
+def raw_tree_order_not_quotiented : List String := [
+  "Raw BinaryLogicTree syntax preserves left and right children.",
+  "No commutativity quotient is installed by this layer."
+]
+
+/-- Boundary descriptor: no associativity quotient is installed for raw syntax. -/
+def raw_tree_bracketing_not_quotiented : List String := [
+  "Raw BinaryLogicTree syntax preserves binary bracketing.",
+  "No associativity quotient is installed by this layer."
+]
+
+end BinaryLogicTree
+
+theorem binaryLogicTree_size_pos (t : BinaryLogicTree) :
+    t.size > 0 :=
+  BinaryLogicTree.size_pos t
+
+theorem binaryLogicTree_depth_le_size (t : BinaryLogicTree) :
+    t.depth ≤ t.size :=
+  BinaryLogicTree.depth_le_size t
+
+theorem binaryLogicTree_raw_order_visible
+    {A B C D : BinaryLogicTree}
+    (h : BinaryLogicTree.node A B = BinaryLogicTree.node C D) :
+    A = C ∧ B = D :=
+  BinaryLogicTree.raw_node_left_right_visible h
+
+theorem binaryLogicTree_raw_bracketing_visible
+    {A B C D E F : BinaryLogicTree}
+    (h :
+      BinaryLogicTree.node (BinaryLogicTree.node A B) C =
+        BinaryLogicTree.node (BinaryLogicTree.node D E) F) :
+    A = D ∧ B = E ∧ C = F :=
+  BinaryLogicTree.raw_bracketing_visible h
+
+end Tree
+end BinaryLogicMatrix
+end Surface.Legacy
+```

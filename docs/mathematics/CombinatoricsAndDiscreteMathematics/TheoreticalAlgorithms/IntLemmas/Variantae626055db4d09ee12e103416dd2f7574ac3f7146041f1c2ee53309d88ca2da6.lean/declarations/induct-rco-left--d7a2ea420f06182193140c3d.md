@@ -1,0 +1,115 @@
+# induct_rco_left
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:678826d3-291f-13a4-90a9-bbe7a2736093",
+  "kind": "theorem",
+  "lexical_name": "induct_rco_left",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "induct-rco-left--d7a2ea420f06182193140c3d",
+  "source": {
+    "blob": "9104bea2058338fad7470d114810259cfa341fb8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 520,
+    "line": 487,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/IntLemmas/Variantae626055db4d09ee12e103416dd2f7574ac3f7146041f1c2ee53309d88ca2da6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:d7a2ea420f06182193140c3d6aaa649f27dd6e464ea4e883825a34b6e5a486fd",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/IntLemmas/Variantae626055db4d09ee12e103416dd2f7574ac3f7146041f1c2ee53309d88ca2da6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:678826d3-291f-13a4-90a9-bbe7a2736093`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 487–520.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+theorem induct_rco_left (motive : Int → Int → Prop)
+    (base : ∀ a b, b ≤ a → motive a b)
+    (step : ∀ a b, a < b → motive (a + 1) b → motive a b)
+    (a b : Int) : motive a b := by
+  induction h : (b - a).toNat generalizing a b
+  · apply base; omega
+  · rename_i d ih
+    apply step
+    · omega
+    · apply ih; omega
+
+/--
+Induction principle for proving properties of {name}`Int`-based ranges of the form {lean}`a...b` by
+varying the upper bound.
+
+In the {name}`base` case, one proves that for any {given}`a : Int` and {given}`b : Int` with
+{lean}`b ≤ a`, the statement holds for the empty range {lean}`a...b`.
+
+In the {name}`step` case, one proves that for any {given}`a : Int` and {given}`b : Int`, if the
+statement holds for {lean}`a...b`, it also holds for the larger range {lean}`a...(b + 1)`.
+
+The following is an example reproving {name}`length_toList_rco`.
+
+```lean
+example (a b : Int) : (a...b).toList.length = (b - a).toNat := by
+  induction a, b using Int.induct_rco_right
+  case base =>
+    simp only [Int.toList_rco_eq_nil, List.length_nil, Int.zero_eq_toNat_sub_iff, *]
+  case step a b hle ih =>
+    rw [Int.toList_rco_eq_append (by omega),
+      List.length_append, List.length_singleton, Int.add_sub_cancel, ih]
+    omega
+```
+-/
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/IntLemmas/Variantae626055db4d09ee12e103416dd2f7574ac3f7146041f1c2ee53309d88ca2da6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/IntLemmas/Variantae626055db4d09ee12e103416dd2f7574ac3f7146041f1c2ee53309d88ca2da6.lean#L487).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9104bea2058338fad7470d114810259cfa341fb8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

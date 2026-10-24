@@ -1,0 +1,129 @@
+# exp_bound'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "67d71e496ea143cafd81c9aa2893b68b5ab902d7",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 1644,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/15/152b23b8dbefda24bff8c9204bcf0789d3ff8d0002b0a1cfb12d8b1655595afd.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:77a94f30-63c0-185d-69e2-4f430193e501",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:d6c94c87-363c-5f93-8373-e672d2d3e47a",
+  "kind": "theorem",
+  "lexical_name": "exp_bound'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exp-bound--ca973961cf09f40ed25cc63e",
+  "source": {
+    "blob": "67d71e496ea143cafd81c9aa2893b68b5ab902d7",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 1679,
+    "line": 1644,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Exponential/Variant152b23b8dbefda24bff8c9204bcf0789d3ff8d0002b0a1cfb12d8b1655595afd.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ca973961cf09f40ed25cc63e0f9782f3de119fd82603fc1a74f05fbc409e0ba4",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/Exponential/Variant152b23b8dbefda24bff8c9204bcf0789d3ff8d0002b0a1cfb12d8b1655595afd.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d6c94c87-363c-5f93-8373-e672d2d3e47a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 1644–1679.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem exp_bound' {x : ℂ} {n : ℕ} (hx : abs x / n.succ ≤ 1 / 2) :
+    abs (exp x - ∑ m in range n, x ^ m / m.factorial) ≤ abs x ^ n / n.factorial * 2 := by
+  rw [← lim_const (abv := Complex.abs) (∑ m in range n, _),
+    exp, sub_eq_add_neg, ← lim_neg, lim_add, ← lim_abs]
+  refine' lim_le (CauSeq.le_of_exists ⟨n, fun j hj => _⟩)
+  simp_rw [← sub_eq_add_neg]
+  show abs ((∑ m in range j, x ^ m / m.factorial) - ∑ m in range n, x ^ m / m.factorial) ≤
+    abs x ^ n / n.factorial * 2
+  let k := j - n
+  have hj : j = n + k := (add_tsub_cancel_of_le hj).symm
+  rw [hj, sum_range_add_sub_sum_range]
+  calc
+    abs (∑ i : ℕ in range k, x ^ (n + i) / ((n + i).factorial : ℂ)) ≤
+        ∑ i : ℕ in range k, abs (x ^ (n + i) / ((n + i).factorial : ℂ)) :=
+      abv_sum_le_sum_abv _ _
+    _ ≤ ∑ i : ℕ in range k, abs x ^ (n + i) / (n + i).factorial := by
+      simp [Complex.abs_cast_nat, map_div₀, abv_pow abs]
+    _ ≤ ∑ i : ℕ in range k, abs x ^ (n + i) / ((n.factorial : ℝ) * (n.succ : ℝ) ^ i) := ?_
+    _ = ∑ i : ℕ in range k, abs x ^ n / n.factorial * (abs x ^ i / (n.succ : ℝ) ^ i) := ?_
+    _ ≤ abs x ^ n / ↑n.factorial * 2 := ?_
+  · gcongr
+    · exact_mod_cast Nat.factorial_mul_pow_le_factorial
+  · refine' Finset.sum_congr rfl fun _ _ => _
+    simp only [pow_add, div_eq_inv_mul, mul_inv, mul_left_comm, mul_assoc]
+  · rw [← mul_sum]
+    gcongr
+    · simp_rw [← div_pow]
+      rw [geom_sum_eq, div_le_iff_of_neg]
+      · trans (-1 : ℝ)
+        · linarith
+        · simp only [neg_le_sub_iff_le_add, div_pow, Nat.cast_succ, le_add_iff_nonneg_left]
+          positivity
+      · linarith
+      · linarith
+#align complex.exp_bound' Complex.exp_bound'
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/Exponential/Variant152b23b8dbefda24bff8c9204bcf0789d3ff8d0002b0a1cfb12d8b1655595afd.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/Exponential/Variant152b23b8dbefda24bff8c9204bcf0789d3ff8d0002b0a1cfb12d8b1655595afd.lean#L1644).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `67d71e496ea143cafd81c9aa2893b68b5ab902d7` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

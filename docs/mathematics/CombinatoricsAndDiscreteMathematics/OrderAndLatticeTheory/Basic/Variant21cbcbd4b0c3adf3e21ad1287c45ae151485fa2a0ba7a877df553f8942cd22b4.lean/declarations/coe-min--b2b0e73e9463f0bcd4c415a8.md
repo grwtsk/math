@@ -1,0 +1,110 @@
+# coe_min
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "d1d597f48e37f2f82ca06957b9e9469a435f59ec",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 62,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/21/21cbcbd4b0c3adf3e21ad1287c45ae151485fa2a0ba7a877df553f8942cd22b4.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:4e69abe5-d83c-1b06-0938-c06a1afa00ee",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:602f2583-2ea1-988e-ebbb-5a816c017168",
+  "kind": "theorem",
+  "lexical_name": "coe_min",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "coe-min--b2b0e73e9463f0bcd4c415a8",
+  "source": {
+    "blob": "d1d597f48e37f2f82ca06957b9e9469a435f59ec",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 78,
+    "line": 62,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variant21cbcbd4b0c3adf3e21ad1287c45ae151485fa2a0ba7a877df553f8942cd22b4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b2b0e73e9463f0bcd4c415a89c13de0532abee5174df59a68ef7b6de8a5cef1f",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variant21cbcbd4b0c3adf3e21ad1287c45ae151485fa2a0ba7a877df553f8942cd22b4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:602f2583-2ea1-988e-ebbb-5a816c017168`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 62–78.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem coe_min (a b : Fin n) : ↑(min a b) = (min a b : ℕ) := rfl
+
+@[deprecated (since := "2025-03-01")] alias coe_sup := coe_max
+@[deprecated (since := "2025-03-01")] alias coe_inf := coe_min
+
+/- There is a slight asymmetry here, in the sense that `0` is of type `Fin n` when we have
+`[NeZero n]` whereas `last n` is of type `Fin (n + 1)`. To address this properly would
+require a change to std4, defining `NeZero n` and thus re-defining `last n`
+(and possibly make its argument implicit) as `rev 0`, of type `Fin n`. As we can see from these
+lemmas, this would be equivalent to the existing definition. -/
+
+/-!
+### Extra instances to short-circuit type class resolution
+
+These also prevent non-computable instances being used to construct these instances non-computably.
+-/
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variant21cbcbd4b0c3adf3e21ad1287c45ae151485fa2a0ba7a877df553f8942cd22b4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variant21cbcbd4b0c3adf3e21ad1287c45ae151485fa2a0ba7a877df553f8942cd22b4.lean#L62).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d1d597f48e37f2f82ca06957b9e9469a435f59ec` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

@@ -1,0 +1,142 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Basic.Variant9a04f5facc9362fb53fc9422f8c96ec5953a0c8b806cad417bdaa417c603e794
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6ea86baa65ebc421038ffb7cde28b0f3d34891a8` · SHA-256 `0b58d9108df8bf955a7a0e254c9f94baf9c3b419a0e8f77e91ffcb02ddb3184d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Insert.Variantc8a4e0ad72788db73c9c2d4d576f58c595498b5e9b8a45f21ce8c749f89fecc0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c8a4e0ad72788db73c9c2d4d576f58c595498b5e9b8a45f21ce8c749f89fecc0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.Insert.Variantc8a4e0ad72788db73c9c2d4d576f58c595498b5e9b8a45f21ce8c749f89fecc0","mathematical_subject":"Computation.DataStructures","original_sha256":"c8a4e0ad72788db73c9c2d4d576f58c595498b5e9b8a45f21ce8c749f89fecc0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Data/NameMap/Basic.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Author: Leonardo de Moura
+-/
+module
+
+prelude
+public import Std.Data.HashSet.Basic
+public import Std.Data.TreeSet.Basic
+public import Lean.Data.SSet
+public import Lean.Data.Name
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Insert.Variantc8a4e0ad72788db73c9c2d4d576f58c595498b5e9b8a45f21ce8c749f89fecc0
+
+public section
+
+namespace Lean
+
+@[expose] def NameMap (α : Type) := Std.TreeMap Name α Name.quickCmp
+
+@[inline] def mkNameMap (α : Type) : NameMap α := Std.TreeMap.empty
+
+namespace NameMap
+variable {α : Type}
+
+instance [Repr α] : Repr (NameMap α) := inferInstanceAs (Repr (Std.TreeMap _ _ _))
+
+instance (α : Type) : EmptyCollection (NameMap α) := ⟨mkNameMap α⟩
+
+instance (α : Type) : Inhabited (NameMap α) where
+  default := {}
+
+def insert (m : NameMap α) (n : Name) (a : α) := Std.TreeMap.insert m n a
+
+def contains (m : NameMap α) (n : Name) : Bool := Std.TreeMap.contains m n
+
+def find? (m : NameMap α) (n : Name) : Option α := Std.TreeMap.get? m n
+
+instance : Insert (Name × α) (NameMap α) where
+  insert e s := s.insert e.1 e.2
+
+instance [Monad m] : ForIn m (NameMap α) (Name × α) :=
+  inferInstanceAs (ForIn _ (Std.TreeMap _ _ _) ..)
+
+/-- `filter f m` returns the `NameMap` consisting of all
+"`key`/`val`"-pairs in `m` where `f key val` returns `true`. -/
+def filter (f : Name → α → Bool) (m : NameMap α) : NameMap α := Std.TreeMap.filter f m
+
+end NameMap
+
+@[expose] def NameSet := Std.TreeSet Name Name.quickCmp
+
+namespace NameSet
+def empty : NameSet := Std.TreeSet.empty
+instance : EmptyCollection NameSet := ⟨empty⟩
+instance : Inhabited NameSet := ⟨empty⟩
+def insert (s : NameSet) (n : Name) : NameSet := Std.TreeSet.insert s n
+def contains (s : NameSet) (n : Name) : Bool := Std.TreeSet.contains s n
+instance : Insert Name NameSet where
+  insert n s := s.insert n
+instance [Monad m] : ForIn m NameSet Name :=
+  inferInstanceAs (ForIn _ (Std.TreeSet _ _) ..)
+
+/-- The union of two `NameSet`s. -/
+def append (s t : NameSet) : NameSet :=
+  s.merge t
+
+instance : Append NameSet where
+  append := NameSet.append
+
+instance : Singleton Name NameSet where
+  singleton := fun n => (∅ : NameSet).insert n
+
+instance : Union NameSet where
+  union := NameSet.append
+
+instance : Inter NameSet where
+  inter := fun s t => s.foldl (fun r n => if t.contains n then r.insert n else r) {}
+
+instance : SDiff NameSet where
+  sdiff := fun s t => t.foldl (fun s n => s.erase n) s
+
+/-- `filter f s` returns the `NameSet` consisting of all `x` in `s` where `f x` returns `true`. -/
+def filter (f : Name → Bool) (s : NameSet) : NameSet := Std.TreeSet.filter f s
+
+def ofList (l : List Name) : NameSet := Std.TreeSet.ofList l _
+
+def ofArray (l : Array Name) : NameSet := Std.TreeSet.ofArray l _
+
+end NameSet
+
+@[expose] def NameSSet := SSet Name
+
+namespace NameSSet
+abbrev empty : NameSSet := SSet.empty
+instance : EmptyCollection NameSSet := ⟨empty⟩
+instance : Inhabited NameSSet := ⟨empty⟩
+abbrev insert (s : NameSSet) (n : Name) : NameSSet := SSet.insert s n
+abbrev contains (s : NameSSet) (n : Name) : Bool := SSet.contains s n
+end NameSSet
+
+@[expose] def NameHashSet := Std.HashSet Name
+
+namespace NameHashSet
+@[inline] def empty : NameHashSet := (∅ : Std.HashSet Name)
+instance : EmptyCollection NameHashSet := ⟨empty⟩
+instance : Inhabited NameHashSet := ⟨{}⟩
+def insert (s : NameHashSet) (n : Name) := Std.HashSet.insert s n
+def contains (s : NameHashSet) (n : Name) : Bool := Std.HashSet.contains s n
+
+/-- `filter f s` returns the `NameHashSet` consisting of all `x` in `s` where `f x` returns `true`. -/
+def filter (f : Name → Bool) (s : NameHashSet) : NameHashSet := Std.HashSet.filter f s
+end NameHashSet
+
+def MacroScopesView.isPrefixOf (v₁ v₂ : MacroScopesView) : Bool :=
+  v₁.name.isPrefixOf v₂.name &&
+  v₁.scopes == v₂.scopes &&
+  v₁.ctx == v₂.ctx &&
+  v₁.imported == v₂.imported
+
+def MacroScopesView.isSuffixOf (v₁ v₂ : MacroScopesView) : Bool :=
+  v₁.name.isSuffixOf v₂.name &&
+  v₁.scopes == v₂.scopes &&
+  v₁.ctx == v₂.ctx &&
+  v₁.imported == v₂.imported
+
+end Lean
+```

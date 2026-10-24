@@ -1,0 +1,102 @@
+# admissible_of_one_lt_sumInv_aux'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:2980d52e-fa75-5f8c-125d-3cc357b8ebd7",
+  "kind": "theorem",
+  "lexical_name": "admissible_of_one_lt_sumInv_aux'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "admissible-of-one-lt-suminv-aux--b0ae1f78332c80f5076f677b",
+  "source": {
+    "blob": "acd215e4b519d6b8413020621e98d351e8dc91c3",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 229,
+    "line": 209,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/ADEInequality/Variant3c9bfabfa284e2552a5a8b14f8927328642b5af195efa97b52c3ff7128f2fdf5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b0ae1f78332c80f5076f677ba483f8a34f4dad5abf35a53be0f555c845430e6b",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/ADEInequality/Variant3c9bfabfa284e2552a5a8b14f8927328642b5af195efa97b52c3ff7128f2fdf5.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2980d52e-fa75-5f8c-125d-3cc357b8ebd7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 209–229.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem admissible_of_one_lt_sumInv_aux' {p q r : ℕ+} (hpq : p ≤ q) (hqr : q ≤ r)
+    (H : 1 < sumInv {p, q, r}) : Admissible {p, q, r} := by
+  have hp3 : p < 3 := lt_three hpq hqr H
+  -- Porting note: `interval_cases` doesn't support `ℕ+` yet.
+  replace hp3 := Finset.mem_Iio.mpr hp3
+  conv at hp3 => change p ∈ ({1, 2} : Multiset ℕ+)
+  fin_cases hp3
+  · exact admissible_A' q r
+  have hq4 : q < 4 := lt_four hqr H
+  replace hq4 := Finset.mem_Ico.mpr ⟨hpq, hq4⟩; clear hpq
+  conv at hq4 => change q ∈ ({2, 3} : Multiset ℕ+)
+  fin_cases hq4
+  · exact admissible_D' r
+  have hr6 : r < 6 := lt_six H
+  replace hr6 := Finset.mem_Ico.mpr ⟨hqr, hr6⟩; clear hqr
+  conv at hr6 => change r ∈ ({3, 4, 5} : Multiset ℕ+)
+  fin_cases hr6
+  · exact admissible_E6
+  · exact admissible_E7
+  · exact admissible_E8
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/ADEInequality/Variant3c9bfabfa284e2552a5a8b14f8927328642b5af195efa97b52c3ff7128f2fdf5.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/ADEInequality/Variant3c9bfabfa284e2552a5a8b14f8927328642b5af195efa97b52c3ff7128f2fdf5.lean#L209).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `acd215e4b519d6b8413020621e98d351e8dc91c3` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

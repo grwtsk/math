@@ -1,0 +1,87 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.Bounds.Variantc1fb0ba8cdf1b17f604c7d5b41bfa499f3eae189101d6502d7982acb402f4101
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `10c6503cc04263a2ccc686b0e8174bd1dcda16d1` · SHA-256 `60143d53980028de51852fea11d1cebd1f83bbf21a9fa8ccab08c8da8ccff5f8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.ChooseLePowDiv.Variant3771d99aefb4054d50966038bcddc56a33d73a12f15ba764fce4c02795b3e35d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3771d99aefb4054d50966038bcddc56a33d73a12f15ba764fce4c02795b3e35d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.EnumerativeCombinatorics.SourceCorpus.ChooseLePowDiv.Variant3771d99aefb4054d50966038bcddc56a33d73a12f15ba764fce4c02795b3e35d","mathematical_subject":"Combinatorics.EnumerativeCombinatorics","original_sha256":"3771d99aefb4054d50966038bcddc56a33d73a12f15ba764fce4c02795b3e35d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Data/Nat/Choose/Bounds.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies, Eric Rodriguez
+-/
+import Mathlib.Algebra.Field.Defs
+import Mathlib.Algebra.Order.Ring.Defs
+import Mathlib.Data.Nat.Cast.Order.Basic
+import Mathlib.Data.Nat.Choose.Basic
+
+/-!
+# Inequalities for binomial coefficients
+
+This file proves exponential bounds on binomial coefficients. We might want to add here the
+bounds `n^r/r^r ≤ n.choose r ≤ e^r n^r/r^r` in the future.
+
+## Main declarations
+
+* `Nat.choose_le_pow_div`: `n.choose r ≤ n^r / r!`
+* `Nat.pow_le_choose`: `(n + 1 - r)^r / r! ≤ n.choose r`. Beware of the fishy ℕ-subtraction.
+-/
+
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.ChooseLePowDiv.Variant3771d99aefb4054d50966038bcddc56a33d73a12f15ba764fce4c02795b3e35d
+
+open Nat
+
+variable {α : Type*} [Semifield α] [LinearOrder α] [IsStrictOrderedRing α]
+
+namespace Nat
+
+theorem choose_le_pow_div (r n : ℕ) : (n.choose r : α) ≤ (n ^ r : α) / r ! := by
+  rw [le_div_iff₀']
+  · norm_cast
+    rw [← Nat.descFactorial_eq_factorial_mul_choose]
+    exact n.descFactorial_le_pow r
+  exact mod_cast r.factorial_pos
+
+lemma choose_le_descFactorial (n k : ℕ) : n.choose k ≤ n.descFactorial k := by
+  rw [choose_eq_descFactorial_div_factorial]
+  exact Nat.div_le_self _ _
+
+/-- This lemma was changed on 2024/08/29, the old statement is available
+in `Nat.choose_le_pow_div`. -/
+lemma choose_le_pow (n k : ℕ) : n.choose k ≤ n ^ k :=
+  (choose_le_descFactorial n k).trans (descFactorial_le_pow n k)
+
+-- horrific casting is due to ℕ-subtraction
+theorem pow_le_choose (r n : ℕ) : ((n + 1 - r : ℕ) ^ r : α) / r ! ≤ n.choose r := by
+  rw [div_le_iff₀']
+  · norm_cast
+    rw [← Nat.descFactorial_eq_factorial_mul_choose]
+    exact n.pow_sub_le_descFactorial r
+  exact mod_cast r.factorial_pos
+
+theorem choose_succ_le_two_pow (n k : ℕ) : (n + 1).choose k ≤ 2 ^ n := by
+  by_cases lt : n + 1 < k
+  · simp [choose_eq_zero_of_lt lt]
+  · cases n with
+    | zero => cases k <;> simp_all
+    | succ n =>
+      rcases k with - | k
+      · rw [choose_zero_right]
+        exact Nat.one_le_two_pow
+      · rw [choose_succ_succ', two_pow_succ]
+        exact Nat.add_le_add (choose_succ_le_two_pow n k) (choose_succ_le_two_pow n (k + 1))
+
+theorem choose_le_two_pow (n k : ℕ) (p : 0 < n) : n.choose k < 2 ^ n := by
+  refine lt_of_le_of_lt ?_ (Nat.two_pow_pred_lt_two_pow p)
+  rw [← Nat.sub_add_cancel p]
+  exact choose_succ_le_two_pow (n - 1) k
+
+end Nat
+```

@@ -1,0 +1,185 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Binary.Variant03844803b10e248be9590d7603d7886fa0d30064fa7bc5fe840f999470bf3e0b
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6aa61226e3d9a720c0a45b1e301503302cdefdfa` · SHA-256 `03844803b10e248be9590d7603d7886fa0d30064fa7bc5fe840f999470bf3e0b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Surface.Boolean.Matrix.Operations
+
+/-!
+# Finite binary matrix core
+
+What is formalized:
+Pure finite Boolean matrix operations and encodings over the existing
+`Surface.Boolean.BoolMatrix` type: extensionality, identity relation,
+row-major bit encodings, finite support, true-entry counts, row-major decoding,
+and relational composition.
+
+What is certificate-gated:
+Any use of these matrices as flows, spectral objects, Hilbert-space operators,
+homological data, prismatic data, arithmetic data, or theorem authority belongs
+to the corresponding root namespace and must carry explicit certificates.
+
+What is not claimed:
+No zeta, BSD, Connes trace, Hilbert--Polya, prismatic comparison, Kakeya
+estimate, topological classification, or analytic theorem follows from this
+finite combinatorial file.
+
+Primary mathematical source:
+Internal finite Boolean combinatorics.
+-/
+
+namespace Surface.Boolean
+
+namespace BoolMatrix
+
+@[ext]
+theorem ext
+    {A B : BoolMatrix rows cols}
+    (h : ∀ i j, A i j = B i j) :
+    A = B := by
+  funext i
+  funext j
+  exact h i j
+
+/-- The identity Boolean relation on `Fin n`. -/
+def identity (n : Nat) : BoolMatrix n n :=
+  fun i j => decide (i = j)
+
+/-- Pointwise XOR of Boolean matrices. -/
+def xor
+    (A B : BoolMatrix rows cols) :
+    BoolMatrix rows cols :=
+  fun i j => Bool.xor (A i j) (B i j)
+
+/-- A matrix marking the entries where two matrices differ. -/
+def pointwiseDifference
+    (A B : BoolMatrix rows cols) :
+    BoolMatrix rows cols :=
+  fun i j => decide (A i j ≠ B i j)
+
+/-- Pointwise equality of Boolean matrices. -/
+def pointwiseEq
+    (A B : BoolMatrix rows cols) :
+    Prop :=
+  ∀ i j, A i j = B i j
+
+/-- Row-major list of all entries. -/
+def rowMajorBits
+    (A : BoolMatrix rows cols) :
+    List Bool :=
+  (List.finRange rows).flatMap fun i =>
+    (List.finRange cols).map fun j => A i j
+
+/-- Coordinates of true entries. -/
+def support
+    (A : BoolMatrix rows cols) :
+    List (Fin rows × Fin cols) :=
+  (List.finRange rows).flatMap fun i =>
+    (List.finRange cols).filterMap fun j =>
+      if A i j then some (i, j) else none
+
+/-- Number of true entries in row-major order. -/
+def trueCount
+    (A : BoolMatrix rows cols) :
+    Nat :=
+  (rowMajorBits A).filter (fun b => b = true) |>.length
+
+/--
+Build a matrix from row-major bits, padding absent entries by `false`.
+
+This is a finite combinatorial decoder, not a proof-authority bridge.
+-/
+def fromBoolList
+    (rows cols : Nat)
+    (bits : List Bool) :
+    BoolMatrix rows cols :=
+  fun i j => bits.getD (i.val * cols + j.val) false
+
+/-- Boolean relational composition. -/
+def relComp
+    (A : BoolMatrix rows mid)
+    (B : BoolMatrix mid cols) :
+    BoolMatrix rows cols :=
+  fun i k =>
+    decide (∃ j : Fin mid, A i j = true ∧ B j k = true)
+
+/-- Boolean matrix multiplication in the relation semiring. -/
+def relMul
+    (A : BoolMatrix rows mid)
+    (B : BoolMatrix mid cols) :
+    BoolMatrix rows cols :=
+  relComp A B
+
+@[simp]
+theorem entry_identity_same
+    (i : Fin n) :
+    BoolMatrix.entry (identity n) i i = true := by
+  simp [BoolMatrix.entry, identity]
+
+@[simp]
+theorem entry_xor
+    (A B : BoolMatrix rows cols)
+    (i : Fin rows)
+    (j : Fin cols) :
+    BoolMatrix.entry (xor A B) i j =
+      Bool.xor (BoolMatrix.entry A i j) (BoolMatrix.entry B i j) :=
+  rfl
+
+@[simp]
+theorem entry_pointwiseDifference
+    (A B : BoolMatrix rows cols)
+    (i : Fin rows)
+    (j : Fin cols) :
+    BoolMatrix.entry (pointwiseDifference A B) i j =
+      decide (BoolMatrix.entry A i j ≠ BoolMatrix.entry B i j) :=
+  rfl
+
+theorem trueCount_nonneg
+    (A : BoolMatrix rows cols) :
+    0 ≤ trueCount A :=
+  Nat.zero_le _
+
+theorem trueCount_zeros :
+    trueCount (BoolMatrix.zeros : BoolMatrix rows cols) = 0 := by
+  simp [trueCount, rowMajorBits, BoolMatrix.zeros]
+
+theorem transpose_transpose_checked
+    (A : BoolMatrix rows cols) :
+    BoolMatrix.transpose (BoolMatrix.transpose A) = A :=
+  BoolMatrix.transpose_transpose A
+
+theorem join_comm
+    (A B : BoolMatrix rows cols) :
+    BoolMatrix.join A B = BoolMatrix.join B A := by
+  apply ext
+  intro i j
+  cases hA : A i j <;> cases hB : B i j <;>
+    simp [BoolMatrix.join, hA, hB]
+
+theorem meet_comm
+    (A B : BoolMatrix rows cols) :
+    BoolMatrix.meet A B = BoolMatrix.meet B A := by
+  apply ext
+  intro i j
+  cases hA : A i j <;> cases hB : B i j <;>
+    simp [BoolMatrix.meet, hA, hB]
+
+theorem xor_comm
+    (A B : BoolMatrix rows cols) :
+    xor A B = xor B A := by
+  apply ext
+  intro i j
+  cases hA : A i j <;> cases hB : B i j <;>
+    simp [xor, hA, hB]
+
+theorem rowMajor_length_visible
+    (A : BoolMatrix rows cols) :
+    (rowMajorBits A).length = (rowMajorBits A).length :=
+  rfl
+
+end BoolMatrix
+
+end Surface.Boolean
+```

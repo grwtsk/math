@@ -1,0 +1,86 @@
+# _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.RootFinsetSumIccOneEqSumRange.Variant68b267b343cb78ece0a9c987283d2dcaa16dcf1c3ef55b849aa2ef6656a83ef7.Finset.sum_Icc_zero_eq_sum_range_succ
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:fdc6888d-7dde-66be-c481-a207383088d8",
+  "kind": "theorem",
+  "lexical_name": "_root_.GRWTSK.CombinatoricsAndDiscreteMathematics.RootFinsetSumIccOneEqSumRange.Variant68b267b343cb78ece0a9c987283d2dcaa16dcf1c3ef55b849aa2ef6656a83ef7.Finset.sum_Icc_zero_eq_sum_range_succ",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "root-grwtsk-combinatoricsanddiscretemathematics-rootfinsetsumicconeeqsum--ccc53a2b42b4c728d2825ef0",
+  "source": {
+    "blob": "cde0f4249f6ab51d830e5752e026540b2c065b1f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 75,
+    "line": 71,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/AbelSummation/Variant146ee6911535d3d115324281e8a637e772e67b1564ed62a8c5cec37054abcb7b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ccc53a2b42b4c728d2825ef004e353428225c6070f414f23a7910ab9f3ba5689",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/AbelSummation/Variant146ee6911535d3d115324281e8a637e772e67b1564ed62a8c5cec37054abcb7b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:fdc6888d-7dde-66be-c481-a207383088d8`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 71–75.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem _root_.GRWTSK.CombinatoricsAndDiscreteMathematics.RootFinsetSumIccOneEqSumRange.Variant68b267b343cb78ece0a9c987283d2dcaa16dcf1c3ef55b849aa2ef6656a83ef7.Finset.sum_Icc_zero_eq_sum_range_succ {m : ℕ} {f : ℕ → 𝕜} (h0 : f 0 = 0) :
+    ∑ k ∈ Icc 0 m, f k = ∑ n ∈ range m, f (n + 1) := by
+  rw [sum_Icc_zero_eq_sum_Icc_one h0, sum_Icc_one_eq_sum_range]
+
+/-- Floor-summation reindexing for sequences with `c 0 = 0`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/AbelSummation/Variant146ee6911535d3d115324281e8a637e772e67b1564ed62a8c5cec37054abcb7b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/AbelSummation/Variant146ee6911535d3d115324281e8a637e772e67b1564ed62a8c5cec37054abcb7b.lean#L71).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `cde0f4249f6ab51d830e5752e026540b2c065b1f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

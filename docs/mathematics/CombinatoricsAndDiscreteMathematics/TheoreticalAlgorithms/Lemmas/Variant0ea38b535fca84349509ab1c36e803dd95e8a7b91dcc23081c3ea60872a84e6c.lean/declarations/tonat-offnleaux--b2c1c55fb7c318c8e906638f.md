@@ -1,0 +1,92 @@
+# toNat_ofFnLEAux
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:8b330d7d-2c68-c34f-4263-417fb73ceddf",
+  "kind": "theorem",
+  "lexical_name": "toNat_ofFnLEAux",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "tonat-offnleaux--b2c1c55fb7c318c8e906638f",
+  "source": {
+    "blob": "2ffd2291dd3a2e0dc2dc2b746c86e8e0a43daeeb",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 24,
+    "line": 14,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant0ea38b535fca84349509ab1c36e803dd95e8a7b91dcc23081c3ea60872a84e6c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:b2c1c55fb7c318c8e906638f31a0cae7544301cc0bd02687678ddd50be016725",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant0ea38b535fca84349509ab1c36e803dd95e8a7b91dcc23081c3ea60872a84e6c.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8b330d7d-2c68-c34f-4263-417fb73ceddf`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 14–24.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+@[simp] theorem toNat_ofFnLEAux (m : Nat) (f : Fin n → Bool) :
+    (ofFnLEAux m f).toNat = Nat.ofBits f % 2 ^ m := by
+  simp only [ofFnLEAux]
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+    rw [Fin.foldr_succ, toNat_shiftConcat, Nat.shiftLeft_eq, Nat.pow_one, Nat.ofBits_succ, ih,
+      ← Nat.mod_add_div (Nat.ofBits (f ∘ Fin.succ)) (2 ^ m), Nat.mul_add 2, Nat.add_right_comm,
+      Nat.mul_left_comm, Nat.add_mul_mod_self_left, Nat.mul_comm 2]
+    rfl
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant0ea38b535fca84349509ab1c36e803dd95e8a7b91dcc23081c3ea60872a84e6c.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant0ea38b535fca84349509ab1c36e803dd95e8a7b91dcc23081c3ea60872a84e6c.lean#L14).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `2ffd2291dd3a2e0dc2dc2b746c86e8e0a43daeeb` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

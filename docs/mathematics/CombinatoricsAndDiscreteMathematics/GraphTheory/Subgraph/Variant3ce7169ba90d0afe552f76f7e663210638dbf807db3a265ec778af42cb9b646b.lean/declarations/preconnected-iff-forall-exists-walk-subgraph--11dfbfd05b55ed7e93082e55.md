@@ -1,0 +1,95 @@
+# preconnected_iff_forall_exists_walk_subgraph
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:f1f0de2f-77ef-863b-b627-eed47b33c226",
+  "kind": "lemma",
+  "lexical_name": "preconnected_iff_forall_exists_walk_subgraph",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "preconnected-iff-forall-exists-walk-subgraph--11dfbfd05b55ed7e93082e55",
+  "source": {
+    "blob": "3fe7a276929710cab52b4bb3a5ab19fa83621d62",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 157,
+    "line": 144,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Subgraph/Variant3ce7169ba90d0afe552f76f7e663210638dbf807db3a265ec778af42cb9b646b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:11dfbfd05b55ed7e93082e5588423ce8a5233dd3e5c4f3a415c8bc03c80dc0fe",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/GraphTheory/Subgraph/Variant3ce7169ba90d0afe552f76f7e663210638dbf807db3a265ec778af42cb9b646b.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f1f0de2f-77ef-863b-b627-eed47b33c226`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 144–157.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma preconnected_iff_forall_exists_walk_subgraph (H : G.Subgraph) :
+    H.Preconnected ↔ ∀ {u v}, u ∈ H.verts → v ∈ H.verts → ∃ p : G.Walk u v, p.toSubgraph ≤ H := by
+  constructor
+  · intro hc u v hu hv
+    refine (hc ⟨_, hu⟩ ⟨_, hv⟩).elim fun p => ?_
+    exists p.map (Subgraph.hom _)
+    simp [coeSubgraph_le]
+  · intro hw
+    rw [Subgraph.preconnected_iff]
+    rintro ⟨u, hu⟩ ⟨v, hv⟩
+    obtain ⟨p, h⟩ := hw hu hv
+    exact Reachable.map (Subgraph.inclusion h)
+      (p.toSubgraph_connected ⟨_, p.start_mem_verts_toSubgraph⟩ ⟨_, p.end_mem_verts_toSubgraph⟩)
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/GraphTheory/Subgraph/Variant3ce7169ba90d0afe552f76f7e663210638dbf807db3a265ec778af42cb9b646b.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Subgraph/Variant3ce7169ba90d0afe552f76f7e663210638dbf807db3a265ec778af42cb9b646b.lean#L144).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3fe7a276929710cab52b4bb3a5ab19fa83621d62` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

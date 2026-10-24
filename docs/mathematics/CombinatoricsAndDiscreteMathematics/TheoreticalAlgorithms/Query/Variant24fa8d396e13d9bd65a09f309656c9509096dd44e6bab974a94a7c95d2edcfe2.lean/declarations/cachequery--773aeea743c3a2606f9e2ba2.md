@@ -1,0 +1,124 @@
+# cacheQuery
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:ed3010ea91832710487440621375e11ce7dcdeb4b41a569b2f35cbefdb4211ef",
+  "kind": "def",
+  "lexical_name": "cacheQuery",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "cachequery--773aeea743c3a2606f9e2ba2",
+  "source": {
+    "blob": "23a6814ac3a815e93ff32ec960463019b36671e9",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 246,
+    "line": 204,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Query/Variant24fa8d396e13d9bd65a09f309656c9509096dd44e6bab974a94a7c95d2edcfe2.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:773aeea743c3a2606f9e2ba2c12c9c76124494db1836d35c8ec965f4fcb40644",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Query/Variant24fa8d396e13d9bd65a09f309656c9509096dd44e6bab974a94a7c95d2edcfe2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:ed3010ea91832710487440621375e11ce7dcdeb4b41a569b2f35cbefdb4211ef`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 204–246.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def cacheQuery (repo : String) (cap : Nat := 50) (cwd : FilePath := ".") : IO Unit := do
+  if isCanonicalRepo repo then
+    IO.println s!"`cache query` locates a fork PR's per-commit cache. {repo} reads \
+      its own cache container directly, so there is nothing to query for it."
+    return
+  -- Determine merge base with master. If not reachable, use cap-only walk.
+  let mergeBase? ← gitMergeBase "master" cwd
+  let stopRef := mergeBase?.getD ""
+
+  -- Walk git log backwards from HEAD.
+  let shas ← gitLogWalk "HEAD" stopRef cap cwd
+  if shas.isEmpty then
+    IO.println "No commits found to walk (repository history is empty)"
+    return
+
+  -- Probe each SHA in order (most recent first).
+  let found? ← findMostRecentSHAWithCache shas repo
+  match found? with
+  | some sha =>
+    IO.println s!"Most recent cached commit on this branch for fork {repo}: {sha}"
+    IO.println s!""
+    IO.println s!"To use this cache, run:"
+    IO.println s!"  lake exe cache get --scope={sha}"
+    IO.println s!""
+    IO.println s!"Note: this means trusting the artifacts built at that commit;"
+    IO.println s!"`cache get` will print a security notice when --scope is set."
+  | none =>
+    IO.println s!"No cached CI build found for fork {repo} within the last {cap} commits on this branch."
+    IO.println s!"This usually means CI hasn't built any of these commits yet."
+
+/--
+Discover the SHA scopes `cache get --unsafe` should try, most recent first.
+
+Walks git history from HEAD back to the merge base with `master` (or a hard
+`cap` if the merge base is not reachable) and returns up to `window` commit SHAs
+whose per-SHA marker exists in the `forks` container — i.e. the most recent
+`window` commits on this branch that CI has fully cached for this fork.
+
+Unlike `cacheQuery`, this is consumed automatically by `cache get` rather than
+printed for the user, and it returns several SHAs instead of one. An empty
+result means no cached commit was found in range; the caller falls back to a
+normal (unscoped) read.
+-/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Query/Variant24fa8d396e13d9bd65a09f309656c9509096dd44e6bab974a94a7c95d2edcfe2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Query/Variant24fa8d396e13d9bd65a09f309656c9509096dd44e6bab974a94a7c95d2edcfe2.lean#L204).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `23a6814ac3a815e93ff32ec960463019b36671e9` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

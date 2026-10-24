@@ -1,0 +1,162 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.UnorderedArraySet.Variantc34ad80e0af86f1a0ed24196125c51b19d7212d156ff8adc6b61090734303507
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8968c24e89227d7d13c744c40f23ff386bcdedd9` · SHA-256 `fd1a2c351a89fc507242d9b92b082d5f949660a001ea3fe30ea6ec63039a1c32`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.UnorderedArraySet.Variant8e829303d7583ebb284ee574c0b5779f03478b4998eeaadd732958f475a7a4d8","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"8e829303d7583ebb284ee574c0b5779f03478b4998eeaadd732958f475a7a4d8","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.UnorderedArraySet.Variant8e829303d7583ebb284ee574c0b5779f03478b4998eeaadd732958f475a7a4d8","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"8e829303d7583ebb284ee574c0b5779f03478b4998eeaadd732958f475a7a4d8","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/restored-inputs/packages/aesop/Aesop/Util/UnorderedArraySet.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","scope_end_name_mismatch","uncompiled_organization"],"structural_qualification":"structural_issues_retained_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Jannis Limperg. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jannis Limperg
+-/
+module
+
+public import Batteries.Data.Array.Merge
+public import Lean.Message
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.UnorderedArraySet.Variant8e829303d7583ebb284ee574c0b5779f03478b4998eeaadd732958f475a7a4d8
+
+public section
+
+open Lean Std
+
+namespace Aesop
+
+structure UnorderedArraySet (α) [BEq α] where
+  private mk ::
+  private rep : Array α
+  deriving Inhabited
+
+namespace UnorderedArraySet
+
+variable [BEq α]
+
+/-- O(1) -/
+protected def empty : UnorderedArraySet α :=
+  ⟨#[]⟩
+
+instance : EmptyCollection (UnorderedArraySet α) :=
+  ⟨UnorderedArraySet.empty⟩
+
+/-- O(1) -/
+protected def singleton (a : α) : UnorderedArraySet α :=
+  ⟨#[a]⟩
+
+/-- O(n) -/
+def insert (x : α) : UnorderedArraySet α → UnorderedArraySet α
+  | ⟨rep⟩ => if rep.contains x then ⟨rep⟩ else ⟨rep.push x⟩
+
+/-- Precondition: `xs` contains no duplicates. -/
+protected def ofDeduplicatedArray (xs : Array α) : UnorderedArraySet α :=
+  ⟨xs⟩
+
+/-- Precondition: `xs` is sorted. -/
+protected def ofSortedArray (xs : Array α) : UnorderedArraySet α :=
+  ⟨xs.dedupSorted⟩
+
+set_option linter.unusedVariables false in
+/-- O(n*log(n)) -/
+protected def ofArray [ord : Ord α] (xs : Array α) :
+    UnorderedArraySet α :=
+  ⟨xs.sortDedup⟩
+
+/-- O(n^2) -/
+protected def ofArraySlow (xs : Array α) : UnorderedArraySet α :=
+  xs.foldl (init := {}) λ s x => s.insert x
+
+protected def ofHashSet [Hashable α] (xs : Std.HashSet α) : UnorderedArraySet α :=
+  ⟨xs.toArray⟩
+
+protected def ofPersistentHashSet [Hashable α] (xs : PersistentHashSet α) : UnorderedArraySet α :=
+  ⟨xs.fold (init := #[]) λ as a => as.push a⟩
+
+protected def toArray (s : UnorderedArraySet α) : Array α :=
+  s.rep
+
+/-- O(n) -/
+def erase (x : α) (s : UnorderedArraySet α) : UnorderedArraySet α :=
+  ⟨s.rep.erase x⟩
+
+/-- O(n) -/
+def filterM [Monad m] (p : α → m Bool) (s : UnorderedArraySet α) :
+    m (UnorderedArraySet α) :=
+  return ⟨← s.rep.filterM p⟩
+
+/-- O(n) -/
+def filter (p : α → Bool) (s : UnorderedArraySet α) : UnorderedArraySet α :=
+  ⟨s.rep.filter p⟩
+
+/-- O(n*m) -/
+def merge (s t : UnorderedArraySet α) : UnorderedArraySet α :=
+  ⟨s.rep.mergeUnsortedDedup t.rep⟩
+
+instance : Append (UnorderedArraySet α) :=
+  ⟨merge⟩
+
+/-- O(n) -/
+def contains (x : α) (s : UnorderedArraySet α) : Bool :=
+  s.rep.contains x
+
+/-- O(n) -/
+def foldM [Monad m] (f : σ → α → m σ) (init : σ) (s : UnorderedArraySet α) :
+    m σ :=
+  s.rep.foldlM f init
+
+instance [Monad m] : ForIn m (UnorderedArraySet α) α where
+  forIn s := private forIn s.rep
+
+/-- O(n) -/
+def fold (f : σ → α → σ) (init : σ) (s : UnorderedArraySet α) : σ :=
+  s.rep.foldl f init
+
+def partition (f : α → Bool) (s : UnorderedArraySet α) :
+    (UnorderedArraySet α × UnorderedArraySet α) :=
+  let (xs, ys) := s.rep.partition f
+  (⟨xs⟩, ⟨ys⟩)
+
+/-- O(1) -/
+def size (s : UnorderedArraySet α) : Nat :=
+  s.rep.size
+
+/-- O(1) -/
+def isEmpty (s : UnorderedArraySet α) : Bool :=
+  s.rep.isEmpty
+
+/-- O(n) -/
+def anyM [Monad m] (p : α → m Bool) (s : UnorderedArraySet α) (start := 0)
+    (stop := s.size) : m Bool :=
+  s.rep.anyM p start stop
+
+/-- O(n) -/
+def any (p : α → Bool) (s : UnorderedArraySet α) (start := 0) (stop := s.size) :
+    Bool :=
+  s.rep.any p start stop
+
+/-- O(n) -/
+def allM [Monad m] (p : α → m Bool) (s : UnorderedArraySet α) (start := 0)
+    (stop := s.size) : m Bool :=
+  s.rep.allM p start stop
+
+/-- O(n) -/
+def all (p : α → Bool) (s : UnorderedArraySet α) (start := 0) (stop := s.size) :
+    Bool :=
+  s.rep.all p start stop
+
+instance [ToString α] : ToString (UnorderedArraySet α) where
+  toString s := private toString s.rep
+
+instance [ToFormat α] : ToFormat (UnorderedArraySet α) where
+  format s := private format s.rep
+
+instance [ToMessageData α] : ToMessageData (UnorderedArraySet α) where
+  toMessageData s := private toMessageData s.rep
+
+end Aesop.UnorderedArraySet
+```

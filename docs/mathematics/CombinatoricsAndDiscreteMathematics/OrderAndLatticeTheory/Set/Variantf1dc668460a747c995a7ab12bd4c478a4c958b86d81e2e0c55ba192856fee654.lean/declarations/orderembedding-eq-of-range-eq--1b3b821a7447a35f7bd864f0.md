@@ -1,0 +1,104 @@
+# OrderEmbedding.eq_of_range_eq
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "d71a3bf940ac7ba67dca407c62aed9981c90e6b0",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 173,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/f1/f1dc668460a747c995a7ab12bd4c478a4c958b86d81e2e0c55ba192856fee654.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:76b1991b-8771-80bc-5863-a918d8ec54cc",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:6e7f245f-d1eb-a449-d6df-901fb4215847",
+  "kind": "lemma",
+  "lexical_name": "OrderEmbedding.eq_of_range_eq",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "orderembedding-eq-of-range-eq--1b3b821a7447a35f7bd864f0",
+  "source": {
+    "blob": "d71a3bf940ac7ba67dca407c62aed9981c90e6b0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 183,
+    "line": 173,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Set/Variantf1dc668460a747c995a7ab12bd4c478a4c958b86d81e2e0c55ba192856fee654.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1b3b821a7447a35f7bd864f0ad561382bf6ed4eaed37a8a5bf36f6d071a687af",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Set/Variantf1dc668460a747c995a7ab12bd4c478a4c958b86d81e2e0c55ba192856fee654.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:6e7f245f-d1eb-a449-d6df-901fb4215847`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 173–183.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma OrderEmbedding.eq_of_range_eq [Preorder α] [Preorder β] [Subsingleton (α ≃o α)]
+    {f g : α ↪o β} (h : Set.range f = Set.range g) : f = g := by
+  let e : α ≃o α := f.orderIso.trans ((Set.orderIsoOfEq _ _ h).trans g.orderIso.symm)
+  have he : e = OrderIso.refl α := Subsingleton.elim _ _
+  ext x
+  have : g (e x) = f x := congrArg Subtype.val <|
+    g.orderIso.apply_symm_apply (Set.orderIsoOfEq _ _ h (f.orderIso x))
+  simp_all
+
+/-- Two strictly monotone functions are equal provided that their ranges are equal, assuming the
+type of order automorphisms of the domain is a subsingleton. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Set/Variantf1dc668460a747c995a7ab12bd4c478a4c958b86d81e2e0c55ba192856fee654.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Set/Variantf1dc668460a747c995a7ab12bd4c478a4c958b86d81e2e0c55ba192856fee654.lean#L173).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d71a3bf940ac7ba67dca407c62aed9981c90e6b0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

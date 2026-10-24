@@ -1,0 +1,101 @@
+# not_isCofinal_iff_bddAbove
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "9741266ea6afef1dda7aeeb69696efa95eb50303",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 107,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/b9/b9da318b800e9a0a2bf2825780c2cf8d34e68183e547510aed74c61200025fe3.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:aafed48c-0193-1a0d-01ba-d341b1a41cb7",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:227e908b-d895-b26a-cefc-17f71b951874",
+  "kind": "theorem",
+  "lexical_name": "not_isCofinal_iff_bddAbove",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "not-iscofinal-iff-bddabove--abb231ce289b201c9d1cd7f8",
+  "source": {
+    "blob": "9741266ea6afef1dda7aeeb69696efa95eb50303",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 114,
+    "line": 107,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Cofinal/Variantb9da318b800e9a0a2bf2825780c2cf8d34e68183e547510aed74c61200025fe3.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:abb231ce289b201c9d1cd7f8a1ccd5e5932e02d9fec191f198ba0d819f38883f",
+  "verification": {
+    "reference": "docs/verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Cofinal/Variantb9da318b800e9a0a2bf2825780c2cf8d34e68183e547510aed74c61200025fe3.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:227e908b-d895-b26a-cefc-17f71b951874`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 107–114.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem not_isCofinal_iff_bddAbove [NoMaxOrder α] {s : Set α} : ¬ IsCofinal s ↔ BddAbove s := by
+  use .of_not_isCofinal
+  rw [not_isCofinal_iff]
+  rintro ⟨x, h⟩
+  obtain ⟨z, hz⟩ := exists_gt x
+  exact ⟨z, fun y hy ↦ (h hy).trans_lt hz⟩
+
+/-- In a linear order with no maximum, cofinal sets are the same as unbounded sets. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Cofinal/Variantb9da318b800e9a0a2bf2825780c2cf8d34e68183e547510aed74c61200025fe3.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Cofinal/Variantb9da318b800e9a0a2bf2825780c2cf8d34e68183e547510aed74c61200025fe3.lean#L107).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9741266ea6afef1dda7aeeb69696efa95eb50303` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

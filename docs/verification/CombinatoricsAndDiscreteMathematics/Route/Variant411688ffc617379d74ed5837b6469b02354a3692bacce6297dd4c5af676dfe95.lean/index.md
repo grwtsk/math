@@ -1,0 +1,121 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.Route.Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2a00ef6e6ea4d82603879be637b99a6780ba295b",
+  "lexical_observation_count": 60,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/index.md) · [Full source](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2a00ef6e6ea4d82603879be637b99a6780ba295b`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Tactic` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [StableFiniteCode](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/stablefinitecode--9dfd83a3c18db0a35eb0b36b.md) | 33 | `declaration-track:9dfd83a3c18db0a35eb0b36ba9a6cdad52a5028badf279279a472fe560fd0426` |
+| 2 | `structure` | [DeclaredEdge](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/declarededge--5d20f80703c7b01dd78b7471.md) | 39 | `declaration-track:5d20f80703c7b01dd78b74718b4334f0282382b0c301fc3c17637fb0ff78cbd9` |
+| 3 | `structure` | [EdgeKey](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/edgekey--95d1eae4fcb871cecca61c33.md) | 48 | `declaration-track:95d1eae4fcb871cecca61c33903e71f3d98a8c37407e0b6984eaec1116eb2637` |
+| 4 | `def` | [EdgeKey.lexValue](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/edgekey-lexvalue--2d545e90c0ba17fd27c9d82d.md) | 55 | `declaration-track:2d545e90c0ba17fd27c9d82d02ec16d18e4308cc87634f6696d303d41aefa1a8` |
+| 5 | `def` | [EdgeKey.LE](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/edgekey-le--9c1701da2becb92c86616320.md) | 59 | `declaration-track:9c1701da2becb92c8661632079227a60b9f31ef08c794a918b64d2cb713ddd87` |
+| 6 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--ad22407d09d00dd3938aed9e.md) | 62 | `declaration-track:ad22407d09d00dd3938aed9e56d8352c6dd81c3d0a9237c5db88ef567e5bff46` |
+| 7 | `theorem` | [EdgeKey.le_total](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/edgekey-le-total--23824f06b5c098ae3ba36dbe.md) | 67 | `result-track:23824f06b5c098ae3ba36dbed5406499322094651fa7e1e6e91c7eba18990f5e` |
+| 8 | `theorem` | [EdgeKey.le_trans](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/edgekey-le-trans--8e65e4590675f54748c72f2c.md) | 72 | `result-track:8e65e4590675f54748c72f2cb4b60860181d89ea3308f52658111ff032091d96` |
+| 9 | `inductive` | [TraversalMode](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/traversalmode--ea8d54b8e30c1c5b227d84b3.md) | 78 | `declaration-track:ea8d54b8e30c1c5b227d84b3ebf839367aa354550e65f473b476130181c1e46c` |
+| 10 | `def` | [routingSchemaVersionV1](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routingschemaversionv1--4f1746e4c68a02eb15d21c6f.md) | 83 | `declaration-track:4f1746e4c68a02eb15d21c6f939936d31d44056f31d7c22399b9d07ea68617cb` |
+| 11 | `def` | [routingAlgorithmVersionV1](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routingalgorithmversionv1--8b1aa4f76a4526dc49e146d3.md) | 84 | `declaration-track:8b1aa4f76a4526dc49e146d37d9511bc0f6a4225d11fe1bd4f1420e1066c915b` |
+| 12 | `def` | [routingSerializationVersionV1](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routingserializationversionv1--ba5e09f31f9d1c1dfa4ed0e8.md) | 85 | `declaration-track:ba5e09f31f9d1c1dfa4ed0e89056a1e1084e0df5024600b9303805f6b34bd80c` |
+| 13 | `def` | [signedHalfRange](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/signedhalfrange--247f8b180ede23a7fc70d622.md) | 87 | `declaration-track:247f8b180ede23a7fc70d62266024f0f45f6e5920b86fc2ec09bb0f4dd8151cf` |
+| 14 | `def` | [FitsSignedBits](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/fitssignedbits--86dc265d4d0d075dd3c8fe2b.md) | 90 | `declaration-track:86dc265d4d0d075dd3c8fe2bd537782600b97c2746ce55248b89ddd5aa47a15b` |
+| 15 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--8c8fba5158d37b6fe45c22d6.md) | 93 | `declaration-track:8c8fba5158d37b6fe45c22d6957b155454be3127f9d4460ac98c077a650ff97e` |
+| 16 | `structure` | [RoutingContract](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routingcontract--cc514f4f6a3056ece14a7457.md) | 100 | `declaration-track:cc514f4f6a3056ece14a7457451f0176d8d5e20c26dc059ebedeadfc42168450` |
+| 17 | `def` | [edgeKey](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/edgekey--02bee0349b2dd85d5593d3c3.md) | 121 | `declaration-track:02bee0349b2dd85d5593d3c39ca7439c8f44b3b8c6692d056aba5bf5f55f72f0` |
+| 18 | `def` | [canonicalEdgeLexValue](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/canonicaledgelexvalue--3df1d15a7e5f451d32342fa7.md) | 130 | `declaration-track:3df1d15a7e5f451d32342fa7c115b172a0236825b4b1c668a69bf73d5fef7ac1` |
+| 19 | `def` | [canonicalEdgeLE](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/canonicaledgele--6ba0b1e8632c5acacb8d9b70.md) | 140 | `declaration-track:6ba0b1e8632c5acacb8d9b70f2a7dd77aee78e0e53060b59e3ea52f24780828d` |
+| 20 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--1d231f213e271e74f889ec20.md) | 144 | `declaration-track:1d231f213e271e74f889ec2094fd9efefdaa2cf822665be1d2421094a1418420` |
+| 21 | `theorem` | [canonicalEdgeLexValue_injective](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/canonicaledgelexvalue-injective--ce7587a1b0af62c5b9a7284d.md) | 150 | `result-track:ce7587a1b0af62c5b9a7284d7523cfe4f08f6964462b1ccfd6bb2db144cfd9aa` |
+| 22 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--b011e8aef3a728c1659c2370.md) | 170 | `declaration-track:b011e8aef3a728c1659c23707ccc1579031cadba600995c57f49b6c901180df7` |
+| 23 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--e1eea57d5915faa671a3d047.md) | 175 | `declaration-track:e1eea57d5915faa671a3d047939f5766d5411a7649642f3813644666ec4b1cdd` |
+| 24 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--762ae0285128dcbb995ab68a.md) | 181 | `declaration-track:762ae0285128dcbb995ab68aeb4522c3be117d446b4e791056dca0f0e61e2b9f` |
+| 25 | `def` | [sortedCanonicalEdges](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/sortedcanonicaledges--eb763717ff261fba709a895b.md) | 187 | `declaration-track:eb763717ff261fba709a895bae30db7c4ff9b924b17f5f5cb3adb530a2b5e01c` |
+| 26 | `def` | [hostCodeLE](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/hostcodele--9bba9e0f57ae38a08fb5618b.md) | 192 | `declaration-track:9bba9e0f57ae38a08fb5618b579c3121cd65881ab170ce6955572838fd1a9a0f` |
+| 27 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--b21aa772027c37f37d439a6b.md) | 196 | `declaration-track:b21aa772027c37f37d439a6b7a6d0da63465bb8f227c6a097b9482893204160b` |
+| 28 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--68974df608c10aca2f546937.md) | 202 | `declaration-track:68974df608c10aca2f546937c7e8868475ca490659e968089055c710b20e9a6a` |
+| 29 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--c38814bf2729a0aebffa6ba1.md) | 207 | `declaration-track:c38814bf2729a0aebffa6ba1b345e3b9180fa0631787b754c6781c088243f222` |
+| 30 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--b6a94b30fb58f72c1c1f4198.md) | 212 | `declaration-track:b6a94b30fb58f72c1c1f4198b4697286e9740da24598e4254fd0347808df751f` |
+| 31 | `def` | [sortedHosts](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/sortedhosts--9d02f736c49f4ed52f9908d1.md) | 217 | `declaration-track:9d02f736c49f4ed52f9908d1b991ab472826e6c4a47ebfd73818af06cfe222ad` |
+| 32 | `def` | [hashMatches](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/hashmatches--bf54a605ca9999987bb85803.md) | 220 | `declaration-track:bf54a605ca9999987bb8580347964a971942d174d17042ab6b9f40cc351e4452` |
+| 33 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--0fe3c1acf6cc07d5f15f7010.md) | 223 | `declaration-track:0fe3c1acf6cc07d5f15f7010cf6eb0db4d52c6e3784f671d2db19e2cf9436294` |
+| 34 | `def` | [Valid](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/valid--9ea76daf63944a806a19b7e4.md) | 231 | `declaration-track:9ea76daf63944a806a19b7e49ddcb9582b7f12f9952a3548f62c8c1e3cb15bed` |
+| 35 | `instance` | [(anonymous)](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/instance--ff5d8a74063704be7c7b4143.md) | 266 | `declaration-track:ff5d8a74063704be7c7b4143b25151faf1ed845db4608e5e04aaf9d99d664d3f` |
+| 36 | `def` | [verifyRoutingContract](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/verifyroutingcontract--62d3a702dfef748fa1283621.md) | 270 | `declaration-track:62d3a702dfef748fa1283621f1903f097f4a1f1a75212b72d6f18165f205d5db` |
+| 37 | `theorem` | [verifyRoutingContract_sound](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/verifyroutingcontract-sound--8def5f48913fd9381ce29cf0.md) | 275 | `result-track:8def5f48913fd9381ce29cf0306a020e8a937fbebef9bbd2ed5f1d4b141d0f9f` |
+| 38 | `def` | [outgoingEdges](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/outgoingedges--fa84413588c2825b3d7c08c1.md) | 279 | `declaration-track:fa84413588c2825b3d7c08c1d6f2b0a67ad248d6cc76fae7d3fb62a1a80a2c5d` |
+| 39 | `def` | [orderedOutgoingEdges](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedoutgoingedges--db9bbbbf951cf75e2c24a460.md) | 283 | `declaration-track:db9bbbbf951cf75e2c24a4600227ed0131f2af7732ee1993a736cfc6ee47768a` |
+| 40 | `theorem` | [orderedOutgoingEdges_declared](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedoutgoingedges-declared--a5d483411d72449babde0123.md) | 288 | `result-track:a5d483411d72449babde01236af80ab6d7b95b54ed8795d528bcf3f38185abd2` |
+| 41 | `theorem` | [orderedOutgoingEdges_source](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedoutgoingedges-source--6d3b5bf8151886201f4214d1.md) | 298 | `result-track:6d3b5bf8151886201f4214d1dc9cd144732be19ef3adfa64094afc41866e5a0d` |
+| 42 | `theorem` | [orderedOutgoingEdges_complete](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedoutgoingedges-complete--ee2ac6e4b7d04508df4d41cf.md) | 306 | `result-track:ee2ac6e4b7d04508df4d41cfd8b38c2bdccb46e231b4ac55258439633bbf5a14` |
+| 43 | `theorem` | [orderedOutgoingEdges_sorted](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedoutgoingedges-sorted--21bf831561ed00f06890ca7a.md) | 318 | `result-track:21bf831561ed00f06890ca7a355944dab7b8b658d01d2bcd4c24b09ab8ad5f1c` |
+| 44 | `theorem` | [orderedOutgoingEdges_nodup](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedoutgoingedges-nodup--a08f23b9fda633e259b7f391.md) | 339 | `result-track:a08f23b9fda633e259b7f39197df0f64c1e4652297777a63afe69b364dd37955` |
+| 45 | `structure` | [RouteState](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routestate--3f7932cd8b98a81399afb2d1.md) | 347 | `declaration-track:3f7932cd8b98a81399afb2d12d9229692e44359178ac5d23f25b165e40343c5f` |
+| 46 | `def` | [initialRouteState](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/initialroutestate--aed2964bfa583e97c1be3d47.md) | 354 | `declaration-track:aed2964bfa583e97c1be3d47d87aba716c046845ceb7a2b0a409a7cf33767b82` |
+| 47 | `def` | [discoverOne](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/discoverone--96893a3aeab0964c3947eebe.md) | 360 | `declaration-track:96893a3aeab0964c3947eebe0556cf9c46c04ed592547db4cc6b453eca9ce84b` |
+| 48 | `def` | [discoverOutgoing](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/discoveroutgoing--802120b4925c9eca218d02a5.md) | 370 | `declaration-track:802120b4925c9eca218d02a50420b5ad04b306920525e1f3db897680f57655cc` |
+| 49 | `def` | [processQueuedHost](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/processqueuedhost--e5dc675e41d12ec704d898d3.md) | 374 | `declaration-track:e5dc675e41d12ec704d898d3863242af9d21eb5323d7c73fbe2fa326f5d206b7` |
+| 50 | `def` | [routeLoop](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routeloop--2fae8b637e3cbf6623fa8859.md) | 383 | `declaration-track:2fae8b637e3cbf6623fa88598d0602cbe64ff05e535924bdb8bbfd421a33e5a5` |
+| 51 | `structure` | [OrderedRoute](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedroute--5581cfa1dfa6cd7193c94a4e.md) | 394 | `declaration-track:5581cfa1dfa6cd7193c94a4ee96863902f9bda4e5f6ecf2e41f052466878b0ab` |
+| 52 | `def` | [orderedRoute](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedroute--3c8d13c3a311dd522d358f53.md) | 399 | `declaration-track:3c8d13c3a311dd522d358f539653955d2046fdfade883c666a571e97ceaa32fa` |
+| 53 | `def` | [DeclaredStep](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/declaredstep--3d945a8b0ee33ebd4f801609.md) | 405 | `declaration-track:3d945a8b0ee33ebd4f80160954a4d218458f22d3f26fd3fb071d6efd0bb59d8b` |
+| 54 | `def` | [Reachable](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/reachable--5068418c14f782ddd2de8953.md) | 409 | `declaration-track:5068418c14f782ddd2de89533ed633b6593bbbf6d7c79fc7a36fd9347a315e49` |
+| 55 | `theorem` | [orderedRoute_deterministic](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedroute-deterministic--d694821991063924a6fa5e10.md) | 414 | `result-track:d694821991063924a6fa5e100041cc745294dbb35522ba811f9b372cc08eab20` |
+| 56 | `def` | [DiscoveryEdgesDeclared](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/discoveryedgesdeclared--69c039ac062a174bd8067444.md) | 424 | `declaration-track:69c039ac062a174bd80674440388b956011b135bc22f86f6b8b2088a34fdf3c6` |
+| 57 | `theorem` | [discoverOne_edges_declared](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/discoverone-edges-declared--c3b27b70603d507928155222.md) | 429 | `result-track:c3b27b70603d507928155222c26f2fe705216f32c4afe33f8fd7a96ac19c69fe` |
+| 58 | `theorem` | [discoverOutgoing_edges_declared](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/discoveroutgoing-edges-declared--3ba6a39bf44fcea4ee6e87f4.md) | 447 | `result-track:3ba6a39bf44fcea4ee6e87f49558d613c1cdf801f2b342764aef7fa29847b9ef` |
+| 59 | `theorem` | [routeLoop_edges_declared](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/routeloop-edges-declared--dff457d7b6b56b1e8d5cc002.md) | 464 | `result-track:dff457d7b6b56b1e8d5cc0020b3857491b812f0b997b869f1ad066e68857cb1c` |
+| 60 | `theorem` | [orderedRoute_edges_declared](../../../../mathematics/CombinatoricsAndDiscreteMathematics/Route/Variant411688ffc617379d74ed5837b6469b02354a3692bacce6297dd4c5af676dfe95.lean/declarations/orderedroute-edges-declared--1ea8e9bc0e345b235d217ad9.md) | 483 | `result-track:1ea8e9bc0e345b235d217ad9b39e6b30f898eb3f6c92d661572ed983e956956f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

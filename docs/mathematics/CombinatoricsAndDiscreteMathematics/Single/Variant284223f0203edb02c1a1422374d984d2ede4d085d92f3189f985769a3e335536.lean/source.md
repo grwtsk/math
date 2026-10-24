@@ -1,0 +1,143 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.Single.Variant284223f0203edb02c1a1422374d984d2ede4d085d92f3189f985769a3e335536
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `80bf8c5ad3894bc5a779ddff02c7e4bda101d009` · SHA-256 `0f937251758096257c6ed612811754447a8133346cf2a54b10b431114b2f87ee`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.SupportErase.Variant54bc6ed15cfd9eb979a87289089cbef95f419761d143b7cb94d11b74d81edf4b","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"54bc6ed15cfd9eb979a87289089cbef95f419761d143b7cb94d11b74d81edf4b","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.SupportErase.Variant54bc6ed15cfd9eb979a87289089cbef95f419761d143b7cb94d11b74d81edf4b","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"54bc6ed15cfd9eb979a87289089cbef95f419761d143b7cb94d11b74d81edf4b","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/SkewMonoidAlgebra/Single.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Xavier Généreux. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: María Inés de Frutos Fernández, Xavier Généreux
+-/
+module
+
+public import Mathlib.Algebra.SkewMonoidAlgebra.Basic
+/-!
+# Modifying skew monoid algebra at exactly one point
+
+This file contains basic results on updating/erasing an element of a skew monoid algebra using
+one point of the domain.
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.SupportErase.Variant54bc6ed15cfd9eb979a87289089cbef95f419761d143b7cb94d11b74d81edf4b
+
+@[expose] public section
+
+noncomputable section
+
+namespace SkewMonoidAlgebra
+
+variable {k G H : Type*}
+
+section erase
+
+variable {M α : Type*} [AddCommMonoid M] (a a' : α) (b : M) (f : SkewMonoidAlgebra M α)
+
+/--
+Given an element `f` of a skew monoid algebra, `erase a f` is an element with the same coefficients
+as `f` except at `a` where the coefficient is `0`.
+If `a` is not in the support of `f` then `erase a f = f`. -/
+@[simps] def erase : SkewMonoidAlgebra M α →+ SkewMonoidAlgebra M α where
+  toFun f := ⟨f.coeff.erase a⟩
+  map_zero' := by simp
+  map_add' := by simp
+
+@[deprecated (since := "2026-07-04")] alias erase_apply_toFinsupp := coeff_erase_apply
+
+@[simp]
+theorem support_erase [DecidableEq α] : (f.erase a).support = f.support.erase a := by
+  ext; simp [erase]
+
+@[deprecated Finsupp.erase_same (since := "2026-07-04")]
+theorem coeff_erase_same : (f.erase a).coeff a = 0 := by
+  simp [erase]
+
+variable {a a'} in
+@[deprecated Finsupp.erase_ne (since := "2026-07-04")]
+theorem coeff_erase_ne (h : a' ≠ a) : (f.erase a).coeff a' = f.coeff a' := by
+  simp [erase, h]
+
+@[simp]
+theorem erase_single : erase a (single a b) = 0 := by
+  simp [erase]
+
+theorem single_add_erase (a : α) (f : SkewMonoidAlgebra M α) :
+    single a (f.coeff a) + f.erase a = f := by
+  ext; simp [ coeff_add, Finsupp.single_add_erase]
+
+@[elab_as_elim]
+theorem induction {p : SkewMonoidAlgebra M α → Prop} (f : SkewMonoidAlgebra M α) (h0 : p 0)
+    (ha : ∀ (a b) (f : SkewMonoidAlgebra M α), a ∉ f.support → b ≠ 0 → p f → p (single a b + f)) :
+    p f :=
+  suffices ∀ (s) (f : SkewMonoidAlgebra M α), f.support = s → p f from this _ _ rfl
+  fun s ↦
+  Finset.cons_induction_on s (fun f hf ↦ by rwa [support_eq_empty.1 hf]) fun a s has ih f hf ↦ by
+    suffices p (single a (f.coeff a) + f.erase a) by rwa [single_add_erase] at this
+    classical
+    apply ha
+    · rw [support_erase, Finset.mem_erase]
+      exact fun H ↦ H.1 rfl
+    · simp only [← mem_support_iff, hf, Finset.mem_cons_self]
+    · apply ih
+      rw [support_erase, hf, Finset.erase_cons]
+
+end erase
+
+section update
+
+variable {M α : Type*} [AddCommMonoid M] (f : SkewMonoidAlgebra M α) (a a' : α) (b : M)
+
+/-- Replace the coefficient of an element `f` of a skew monoid algebra at a given point `a : α` by
+a given value `b : M`.
+If `b = 0`, this amounts to removing `a` from the support of `f`.
+Otherwise, if `a` was not in the `support` of `f`, it is added to it. -/
+@[simps coeff] def update : SkewMonoidAlgebra M α :=
+  ⟨f.coeff.update a b⟩
+
+@[deprecated (since := "2026-07-04")] alias update_toFinsupp := coeff_update
+
+@[simp]
+theorem update_self : f.update a (f.coeff a) = f := by ext; simp
+
+@[simp]
+theorem zero_update : update 0 a b = single a b := by
+  simp [update]
+
+theorem support_update [DecidableEq α] [DecidableEq M] :
+    support (f.update a b) = if b = 0 then f.support.erase a else insert a f.support := by
+  aesop (add norm [update, Finsupp.support_update_ne_zero])
+
+@[deprecated Finsupp.update_apply (since := "2026-07-04")]
+theorem coeff_update_apply [DecidableEq α] :
+    (f.update a b).coeff a' = if a' = a then b else f.coeff a' := by
+  simp [coeff_update, Function.update_apply]
+
+@[deprecated Finsupp.update_apply (since := "2026-07-04")]
+theorem coeff_update_same : (f.update a b).coeff a = b := by
+  classical
+  rw [f.coeff_update_apply, ite_eq_left rfl]
+
+variable {a a'} in
+@[deprecated Finsupp.update_apply (since := "2026-07-04")]
+theorem coeff_update_ne (h : a' ≠ a) : (f.update a b).coeff a' = f.coeff a' := by
+  classical
+  rw [f.coeff_update_apply, ite_eq_right h]
+
+theorem update_eq_erase_add_single : f.update a b = f.erase a + single a b := by
+  classical ext x; by_cases hx : x = a <;> aesop (add norm coeff_single_apply)
+
+@[simp]
+theorem update_zero_eq_erase : f.update a 0 = f.erase a := by
+  classical ext; simp [coeff_erase_apply, Finsupp.erase_apply, Function.update_apply]
+
+end update
+
+end SkewMonoidAlgebra
+```

@@ -1,0 +1,79 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.TruthTable.Variant76ab95c988281d1d38d8a4ca73d27255b024e9a054e190d9b7564f71a11f55fe
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `75c8e21d7be995597e54b7b973c2bf7a05512512` · SHA-256 `4045b03db0819fbf7c2af696841663229064e9ebea7a53437b7e3c569bad2428`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.TruthTable.Variant9eafbeec72d3b2e05948963ad3088967c2ac48fc715fb0be24d8240c514ccd59","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9eafbeec72d3b2e05948963ad3088967c2ac48fc715fb0be24d8240c514ccd59","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.DataStructures.SourceCorpus.TruthTable.Variant9eafbeec72d3b2e05948963ad3088967c2ac48fc715fb0be24d8240c514ccd59","mathematical_subject":"Computation.DataStructures","original_sha256":"9eafbeec72d3b2e05948963ad3088967c2ac48fc715fb0be24d8240c514ccd59","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:2e628ee6531784ebd1c16c0e/workspace/lib/Boolean/Cube/TruthTable.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Boolean.Cube.Hypercube
+import Boolean.Tree.SOP
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.TruthTable.Variant9eafbeec72d3b2e05948963ad3088967c2ac48fc715fb0be24d8240c514ccd59
+
+namespace Boolean.Cube
+
+/-- A Boolean truth table is a total Boolean function on `{0,1}^n`. -/
+abbrev TruthTable (n : Nat) :=
+  Hypercube.Function n
+
+/-- Exhaustive truth-table rows: each input vertex paired with its output. -/
+def TruthTable.rows {n : Nat} (T : TruthTable n) :
+    List (Hypercube.Point n × Bool) :=
+  (Hypercube.vertices n).map
+    (fun x => (x, T x))
+
+/--
+Truth table as a Boolean matrix with `2^n` rows and `n+1` columns.
+
+Columns `0 ... n-1` store input bits. The last column stores the output bit.
+-/
+def TruthTable.toMatrix {n : Nat} (T : TruthTable n) :
+    Matrix (2 ^ n) (n + 1) :=
+  fun r c =>
+    if h : c.val < n then
+      (Hypercube.pointOfIndex n r.val) ⟨c.val, h⟩
+    else
+      T (Hypercube.pointOfIndex n r.val)
+
+/-- Minterm for one input row. -/
+def TruthTable.minterm {n : Nat} (x : Hypercube.Point n) :
+    ProductTerm (Fin n) :=
+  (List.finRange n).map
+    (fun i =>
+      match x i with
+      | true => Literal.pos i
+      | false => Literal.neg i)
+
+/-- All inputs for which a truth table returns `true`. -/
+def TruthTable.trueInputs {n : Nat} (T : TruthTable n) :
+    List (Hypercube.Point n) :=
+  (Hypercube.vertices n).filter
+    (fun x => T x)
+
+/--
+Convert a truth table into canonical Sum-of-Products form.
+
+Every `true` row contributes one minterm.
+-/
+def TruthTable.toSOP {n : Nat} (T : TruthTable n) :
+    SumOfProducts (Fin n) :=
+  (TruthTable.trueInputs T).map TruthTable.minterm
+
+/-- Convert a truth table into a Boolean tree through SOP. -/
+def TruthTable.toTree {n : Nat} (T : TruthTable n) :
+    Tree (Fin n) :=
+  SumOfProducts.toTree (TruthTable.toSOP T)
+
+/-- Convert a truth table into a PLA-style SOP matrix. -/
+def TruthTable.toSOPMatrix {n : Nat} (T : TruthTable n) :
+    SOPMatrix (TruthTable.toSOP T).length n :=
+  SumOfProducts.toMatrix (fun i : Fin n => i) (TruthTable.toSOP T)
+
+end Boolean.Cube
+```

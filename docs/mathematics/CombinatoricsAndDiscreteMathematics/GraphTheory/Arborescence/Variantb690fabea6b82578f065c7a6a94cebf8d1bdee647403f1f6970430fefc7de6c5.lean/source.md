@@ -1,0 +1,148 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Arborescence.Variantb690fabea6b82578f065c7a6a94cebf8d1bdee647403f1f6970430fefc7de6c5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3f418d71396c1f7fa54a8c161f616d7f6e555467` · SHA-256 `830ed5ba3500fdab30c02d67f66f0a848928fdbaee3e61113debaa61fa7ad344`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics.GraphTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Arborescence.Variantfa091a05bffc65589aa1f5d187a52472fe0f07133adf908ac8510b00c0febfc9","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"fa091a05bffc65589aa1f5d187a52472fe0f07133adf908ac8510b00c0febfc9","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.GraphTheory.SourceCorpus.Arborescence.Variantfa091a05bffc65589aa1f5d187a52472fe0f07133adf908ac8510b00c0febfc9","mathematical_subject":"Combinatorics.GraphTheory","original_sha256":"fa091a05bffc65589aa1f5d187a52472fe0f07133adf908ac8510b00c0febfc9","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Combinatorics/Quiver/Arborescence.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 David Wärn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: David Wärn
+-/
+import Mathlib.Combinatorics.Quiver.Path
+import Mathlib.Combinatorics.Quiver.Subquiver
+import Mathlib.Order.WellFounded
+
+/-!
+# Arborescences
+
+A quiver `V` is an arborescence (or directed rooted tree) when we have a root vertex `root : V` such
+that for every `b : V` there is a unique path from `root` to `b`.
+
+## Main definitions
+
+- `Quiver.Arborescence V`: a typeclass asserting that `V` is an arborescence
+- `arborescenceMk`: a convenient way of proving that a quiver is an arborescence
+- `RootedConnected r`: a typeclass asserting that there is at least one path from `r` to `b` for
+every `b`.
+- `geodesicSubtree r`: given `[RootedConnected r]`, this is a subquiver of `V` which contains
+just enough edges to include a shortest path from `r` to `b` for every `b`.
+- `geodesicArborescence : Arborescence (geodesicSubtree r)`: an instance saying that the geodesic
+subtree is an arborescence. This proves the directed analogue of 'every connected graph has a
+spanning tree'. This proof avoids the use of Zorn's lemma.
+-/
+
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Arborescence.Variantfa091a05bffc65589aa1f5d187a52472fe0f07133adf908ac8510b00c0febfc9
+
+open Opposite
+
+universe v u
+
+namespace Quiver
+
+/-- A quiver is an arborescence when there is a unique path from the default vertex
+    to every other vertex. -/
+class Arborescence (V : Type u) [Quiver.{v} V] : Type max u v where
+  /-- The root of the arborescence. -/
+  root : V
+  /-- There is a unique path from the root to any other vertex. -/
+  uniquePath : ∀ b : V, Unique (Path root b)
+
+/-- The root of an arborescence. -/
+def root (V : Type u) [Quiver V] [Arborescence V] : V :=
+  Arborescence.root
+
+instance {V : Type u} [Quiver V] [Arborescence V] (b : V) : Unique (Path (root V) b) :=
+  Arborescence.uniquePath b
+
+/-- To show that `[Quiver V]` is an arborescence with root `r : V`, it suffices to
+  - provide a height function `V → ℕ` such that every arrow goes from a
+    lower vertex to a higher vertex,
+  - show that every vertex has at most one arrow to it, and
+  - show that every vertex other than `r` has an arrow to it. -/
+noncomputable def arborescenceMk {V : Type u} [Quiver V] (r : V) (height : V → ℕ)
+    (height_lt : ∀ ⦃a b⦄, (a ⟶ b) → height a < height b)
+    (unique_arrow : ∀ ⦃a b c : V⦄ (e : a ⟶ c) (f : b ⟶ c), a = b ∧ HEq e f)
+    (root_or_arrow : ∀ b, b = r ∨ ∃ a, Nonempty (a ⟶ b)) :
+    Arborescence V where
+  root := r
+  uniquePath b :=
+    ⟨Classical.inhabited_of_nonempty (by
+      rcases show ∃ n, height b < n from ⟨_, Nat.lt.base _⟩ with ⟨n, hn⟩
+      induction n generalizing b with
+      | zero => exact False.elim (Nat.not_lt_zero _ hn)
+      | succ n ih =>
+      rcases root_or_arrow b with (⟨⟨⟩⟩ | ⟨a, ⟨e⟩⟩)
+      · exact ⟨Path.nil⟩
+      · rcases ih a (lt_of_lt_of_le (height_lt e) (Nat.lt_succ_iff.mp hn)) with ⟨p⟩
+        exact ⟨p.cons e⟩), by
+      have height_le : ∀ {a b}, Path a b → height a ≤ height b := by
+        intro a b p
+        induction p with
+        | nil => rfl
+        | cons _ e ih => exact le_of_lt (lt_of_le_of_lt ih (height_lt e))
+      suffices ∀ p q : Path r b, p = q by
+        intro p
+        apply this
+      intro p q
+      induction p with
+      | nil =>
+        rcases q with _ | ⟨q, f⟩
+        · rfl
+        · exact False.elim (lt_irrefl _ (lt_of_le_of_lt (height_le q) (height_lt f)))
+      | cons p e ih =>
+        rcases q with _ | ⟨q, f⟩
+        · exact False.elim (lt_irrefl _ (lt_of_le_of_lt (height_le p) (height_lt e)))
+        · rcases unique_arrow e f with ⟨⟨⟩, ⟨⟩⟩
+          rw [ih]⟩
+
+/-- `RootedConnected r` means that there is a path from `r` to any other vertex. -/
+class RootedConnected {V : Type u} [Quiver V] (r : V) : Prop where
+  nonempty_path : ∀ b : V, Nonempty (Path r b)
+
+attribute [instance] RootedConnected.nonempty_path
+
+section GeodesicSubtree
+
+variable {V : Type u} [Quiver.{v + 1} V] (r : V) [RootedConnected r]
+
+/-- A path from `r` of minimal length. -/
+noncomputable def shortestPath (b : V) : Path r b :=
+  WellFounded.min (measure Path.length).wf Set.univ Set.univ_nonempty
+
+/-- The length of a path is at least the length of the shortest path -/
+theorem shortest_path_spec {a : V} (p : Path r a) : (shortestPath r a).length ≤ p.length :=
+  not_lt.mp (WellFounded.not_lt_min (measure _).wf Set.univ _ trivial)
+
+/-- A subquiver which by construction is an arborescence. -/
+def geodesicSubtree : WideSubquiver V := fun a b =>
+  { e | ∃ p : Path r a, shortestPath r b = p.cons e }
+
+noncomputable instance geodesicArborescence : Arborescence (geodesicSubtree r) :=
+  arborescenceMk r (fun a => (shortestPath r a).length)
+    (by
+      rintro a b ⟨e, p, h⟩
+      simp_rw [h, Path.length_cons, Nat.lt_succ_iff]
+      apply shortest_path_spec)
+    (by
+      rintro a b c ⟨e, p, h⟩ ⟨f, q, j⟩
+      cases h.symm.trans j
+      constructor <;> rfl)
+    (by
+      intro b
+      rcases hp : shortestPath r b with (_ | ⟨p, e⟩)
+      · exact Or.inl rfl
+      · exact Or.inr ⟨_, ⟨⟨e, p, hp⟩⟩⟩)
+
+end GeodesicSubtree
+
+end Quiver
+```

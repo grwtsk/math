@@ -1,0 +1,223 @@
+# GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Basic.Variant96f91109d2b432e4c7c3ad4b009dcb22b7baff3942e2670b1efbb8cd6f0ec9a3
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**202 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant96f91109d2b432e4c7c3ad4b009dcb22b7baff3942e2670b1efbb8cd6f0ec9a3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2921df75acbbb01ebd61ad5c318ef687c0161d74`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant96f91109d2b432e4c7c3ad4b009dcb22b7baff3942e2670b1efbb8cd6f0ec9a3.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [RBColor](declarations/rbcolor--334e8aea1b9c1c72eb23d318.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [RBNode](declarations/rbnode--4341d4c7676b264b2de83dcd.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance--d0fb5ad09ff571af1b65c3e5.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [min](declarations/min--c1bcae3d8216753dd7d39172.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [max](declarations/max--ee51b70e5e0002efcdd0d98e.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [fold](declarations/fold--1cb37a2bae18acf9a415730d.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [foldl](declarations/foldl--84d49ab00027dab920255250.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [foldr](declarations/foldr--1d250c9c175530859610fabb.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [toList](declarations/tolist--69e68afb2ac46120df075a37.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [forM](declarations/form--f3b5d4c2be1c0842a057282d.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [foldlM](declarations/foldlm--c27127a685105a6e664d7f6d.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [forIn](declarations/forin--8496ba677c8eb4770767a7fa.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `instance` | [(anonymous)](declarations/instance--9d0268d073e0c92e800e3122.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `inductive` | [Stream](declarations/stream--9168612ec84f27a696d16483.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [toStream](declarations/tostream--71b9c247a92f72cc5754ea49.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [next?](declarations/next--13cd0e53978b42975c78cf0c.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [foldl](declarations/foldl--2a1d988bd06b1a003e77be9f.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [foldr](declarations/foldr--2f693a4eb68ad3fc24c5bf57.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [toList](declarations/tolist--3d045a72a074afc30b1d51ec.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [(anonymous)](declarations/instance--104e617ff4a7586a866dc2f7.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `instance` | [(anonymous)](declarations/instance--d00a779f75f74fc0fe90479a.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [all](declarations/all--96be391f4109397fe37d98e9.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [any](declarations/any--8be89a6dba6c37c5a5912369.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `def` | [All](declarations/all--2d4893bba495afad81b8ec15.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [All.imp](declarations/all-imp--71e2fd7eb72bb21bdf7ddc8c.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [all_iff](declarations/all-iff--924380640e9a76b5ea302033.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `instance` | [(anonymous)](declarations/instance--0f405b0aeb7da698a15b919c.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [Any](declarations/any--910a84ceb2a789fef8decead.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [any_iff](declarations/any-iff--27d01338a34631d031e56dd7.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `instance` | [(anonymous)](declarations/instance--8c8d60467b924c2a0a8174ff.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `def` | [EMem](declarations/emem--b69a0d8caa6dd080696fe0f7.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `instance` | [(anonymous)](declarations/instance--b91329f73fbf046cfb4f568c.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `def` | [MemP](declarations/memp--42c3a0ba83f8f5cc95331830.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `def` | [Mem](declarations/mem--af44224a8f65f1a1d416002d.md) | 208 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `instance` | [Slow.instDecidableEMem](declarations/slow-instdecidableemem--ad95153062bf95cc2c47ce83.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `instance` | [Slow.instDecidableMemP](declarations/slow-instdecidablememp--632faf2fa8bb371ebe8d49b6.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `instance` | [Slow.instDecidableMem](declarations/slow-instdecidablemem--00f25bb3deda1efccfb71b5a.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `def` | [all₂](declarations/all--77f9e5b17121dc6183efdb80.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `instance` | [(anonymous)](declarations/instance--6ed95f5b777a4ca78a8a658f.md) | 232 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `def` | [cmpLT](declarations/cmplt--1c3eee341ab03d173d15da27.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [cmpLT_iff](declarations/cmplt-iff--13f522e4eeec4e8d84059b50.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `instance` | [(anonymous)](declarations/instance--6df8fce0987c3118c3047896.md) | 248 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `def` | [cmpEq](declarations/cmpeq--d50ad4549c4f274bcf9a90b9.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [cmpEq_iff](declarations/cmpeq-iff--18e36029c16abb0333154b48.md) | 253 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `instance` | [(anonymous)](declarations/instance--86acfa3a735965db80b46d48.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `def` | [isOrdered](declarations/isordered--985d3ec6a8be29c4fb1b6a05.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `def` | [balance1](declarations/balance1--2a0fb55f4dcfd35735118f88.md) | 268 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `def` | [balance2](declarations/balance2--18a38596405cdba3c8f39cd6.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `def` | [isRed](declarations/isred--a0621c6527e068ea01ce2adf.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `def` | [isBlack](declarations/isblack--56415d14a0b407d2f6abe93f.md) | 288 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `def` | [setBlack](declarations/setblack--bbc358d6fdbdbf93499e4739.md) | 293 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `def` | [ins](declarations/ins--cea1ddbc1071ffcd13e0c814.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `def` | [insert](declarations/insert--be570ef1c08ed1ef2fc036e3.md) | 323 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `def` | [setRed](declarations/setred--887fb31221ea062b928630e1.md) | 331 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `def` | [balLeft](declarations/balleft--b7046d6e84c8b6f148ada0aa.md) | 336 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `def` | [balRight](declarations/balright--80807deb35c5f9768ae6ece0.md) | 345 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `def` | [size](declarations/size--9ccf8adab9969620a99d3913.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `def` | [append](declarations/append--6ce3bc4bfcaec5ebb6dff983.md) | 359 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `def` | [del](declarations/del--cb70407ab0c2fdcc10d2d24d.md) | 379 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `def` | [erase](declarations/erase--c4bc0f014024ef2377147d7e.md) | 399 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `def` | [find?](declarations/find--a2923fb484b10599ea17db37.md) | 402 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `def` | [lowerBound?](declarations/lowerbound--b0aa99c61533e6dbb6cde1bc.md) | 411 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `def` | [root?](declarations/root--dd675c90ff9c85c6c452ec8a.md) | 420 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `def` | [map](declarations/map--2fccad52f706270af5e50f0b.md) | 428 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `def` | [toArray](declarations/toarray--c30ea372e10432e427c67059.md) | 433 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `inductive` | [Path](declarations/path--1d3db39ac2046e6eb2e7e7dd.md) | 441 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `def` | [Path.fill](declarations/path-fill--4828633f5867590d8d5e35be.md) | 450 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `def` | [zoom](declarations/zoom--d8434882ae57943d1aad3188.md) | 459 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `def` | [Path.ins](declarations/path-ins--4e8d06ae552fff5ab0a3fe0d.md) | 471 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `def` | [Path.insertNew](declarations/path-insertnew--ff18068258b32e59abe561cd.md) | 482 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `def` | [Path.insert](declarations/path-insert--f4f68ca7b0c08ba3e4ec3669.md) | 489 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `def` | [Path.del](declarations/path-del--56c1c5e6227bb44b734a06d4.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `def` | [Path.erase](declarations/path-erase--6f3f4c438eef0bf14a173ec2.md) | 511 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `def` | [modify](declarations/modify--b6dada61798c1942ccad58ef.md) | 525 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `def` | [alter](declarations/alter--5961ded3afe3f06ed400d996.md) | 538 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `def` | [Ordered](declarations/ordered--7031a2a0054a38420b45a4dd.md) | 559 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `instance` | [Slow.instDecidableOrdered](declarations/slow-instdecidableordered--de6ea8b3723b2a0d7f1f623e.md) | 565 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `inductive` | [Balanced](declarations/balanced--f9cacdb36080e33b871ee990.md) | 578 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `inductive` | [WF](declarations/wf--25689db3c2210a99414b94fb.md) | 593 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `def` | [RBSet](declarations/rbset--297feaaee9f345dcc119cb6c.md) | 613 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `def` | [mkRBSet](declarations/mkrbset--e0db121c4339e2e35c702a41.md) | 616 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `def` | [empty](declarations/empty--e10e5a90f0a25a7457d674fe.md) | 621 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `instance` | [(anonymous)](declarations/instance--e07242af40ada4c4a5acd6f3.md) | 623 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `instance` | [(anonymous)](declarations/instance--e30587869ee66486b063f363.md) | 625 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `def` | [single](declarations/single--9304c125ac4ac7585fdc365a.md) | 628 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `def` | [foldl](declarations/foldl--bf39aa0481f53e598bce6a60.md) | 632 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `def` | [foldr](declarations/foldr--fd8c79279f6781efbfdc0a4a.md) | 635 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `def` | [foldlM](declarations/foldlm--b6407f7e8b57d0e53630908c.md) | 638 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `def` | [forM](declarations/form--58a5ea9856c5f9df0780b0f3.md) | 642 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `instance` | [(anonymous)](declarations/instance--0174f3211dc61d29764ab34b.md) | 644 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `instance` | [(anonymous)](declarations/instance--21a9810413b38357b4256096.md) | 647 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `def` | [isEmpty](declarations/isempty--9f010728b5d0d9da7c363fc6.md) | 650 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `def` | [toList](declarations/tolist--2ad5c8b2f43fffb0de5def7d.md) | 655 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `def` | [min](declarations/min--3a50fabfa06282f70f2aa90a.md) | 658 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `def` | [max](declarations/max--c2939919ab6a68144a3aecb4.md) | 661 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `instance` | [(anonymous)](declarations/instance--45a3f039f5e92320e809b0e3.md) | 663 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `def` | [insert](declarations/insert--4ce79e829218457856ab8753.md) | 667 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `def` | [erase](declarations/erase--6028077aef045264343794c2.md) | 677 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `def` | [findP?](declarations/findp--5bba5afe371dd64fbe4197df.md) | 681 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `def` | [find?](declarations/find--d04670047a672091705a7689.md) | 684 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `def` | [findPD](declarations/findpd--50f2d3638305b9da45322c07.md) | 687 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `def` | [lowerBoundP?](declarations/lowerboundp--c0b4202f1e1a1e46dcc4bfb1.md) | 693 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `def` | [lowerBound?](declarations/lowerbound--5a2bf3cae9729ed4a9a48ca0.md) | 700 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `def` | [containsP](declarations/containsp--15afa0b787187d495efec888.md) | 703 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `def` | [contains](declarations/contains--ed20904fbf9c6df2ec63bf6e.md) | 706 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `def` | [ofList](declarations/oflist--8a9e7843a3fc31f4774f913e.md) | 709 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `def` | [ofArray](declarations/ofarray--eae0385d71abc6853080decd.md) | 713 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `def` | [all](declarations/all--071cec79925065b743c0c8cf.md) | 717 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `def` | [any](declarations/any--d5f2dfde9f7b59110c6b4b62.md) | 720 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `def` | [all₂](declarations/all--cf20cf965a4fda0a82d4cfe9.md) | 726 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `def` | [EMem](declarations/emem--0ccdb381f37c0d6e6917dc4e.md) | 730 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `def` | [MemP](declarations/memp--ecb9ae264db28b4668cd9d0d.md) | 733 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `def` | [Mem](declarations/mem--fbc8f45b2d22f1db19d9fad1.md) | 736 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `instance` | [(anonymous)](declarations/instance--4e47ad7f0adb7c71d290cc1e.md) | 738 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `instance` | [Slow.instDecidableEMem](declarations/slow-instdecidableemem--256794a9242391453218dcbd.md) | 743 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `instance` | [Slow.instDecidableMemP](declarations/slow-instdecidablememp--55e4d07db258478fb58f98af.md) | 746 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `instance` | [Slow.instDecidableMem](declarations/slow-instdecidablemem--b5c9021e8988ed0777d0ec4f.md) | 749 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `instance` | [(anonymous)](declarations/instance--403dab1b9fdbb610da52ccb2.md) | 756 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `def` | [size](declarations/size--b11d3ae2f580de7ceb4b9119.md) | 760 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `def` | [min!](declarations/min--5b5c103358e70e5aa2a5a969.md) | 763 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `def` | [max!](declarations/max--d2b531c27646ef217f66f02d.md) | 766 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `def` | [findP!](declarations/findp--38db774f1c9841eb2071ef91.md) | 771 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `def` | [find!](declarations/find--05c7d3caea05f882a7d9fbef.md) | 777 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `class` | [ModifyWF](declarations/modifywf--1ec8307b00ea08e219aecf63.md) | 781 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `def` | [modifyP](declarations/modifyp--38f4173f579d30d670de73bc.md) | 793 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `class` | [AlterWF](declarations/alterwf--1fb475e657be46c272bff67c.md) | 797 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `def` | [alterP](declarations/alterp--6d98bd4433df77e5c7b01bb6.md) | 812 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `def` | [union](declarations/union--d97e75fa706735447d17d2c0.md) | 819 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `def` | [mergeWith](declarations/mergewith--5a388835c76d48a9fcf5bd37.md) | 826 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `def` | [intersectWith](declarations/intersectwith--c5ade598201c0bc1514d724c.md) | 834 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `def` | [filter](declarations/filter--1e01847a06f00eabbaf6133d.md) | 842 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `def` | [sdiff](declarations/sdiff--64953c510a6776d05970f791.md) | 848 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `def` | [RBMap](declarations/rbmap--946ac84195082c3b3ceba930.md) | 859 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `def` | [mkRBMap](declarations/mkrbmap--c8f45cfacfeed7fb0e6a7cfb.md) | 863 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `def` | [RBMap.empty](declarations/rbmap-empty--c8d0c289475332d5108d0a3b.md) | 867 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `instance` | [(anonymous)](declarations/instance--29a715efcbf96d64ec211572.md) | 870 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `instance` | [(anonymous)](declarations/instance--3319a6f2998cd4b6b61d585e.md) | 873 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `def` | [RBMap.single](declarations/rbmap-single--d070b92ca60670bb43590ae2.md) | 876 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `def` | [foldl](declarations/foldl--85b1cf090da519196973ddad.md) | 882 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `def` | [foldr](declarations/foldr--d3d38f51a2fc9059a1dd4e9b.md) | 886 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `def` | [foldlM](declarations/foldlm--a96e6d976d4135f2fe32b7b5.md) | 890 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `def` | [forM](declarations/form--574a6e7fa42bd17f013c89f0.md) | 894 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `instance` | [(anonymous)](declarations/instance--e10abe493e7fb22bb7e15362.md) | 897 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `instance` | [(anonymous)](declarations/instance--191d4a8901990a9d3a3752cc.md) | 899 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `def` | [keysArray](declarations/keysarray--7cfff282bbb40d89b6a02a9b.md) | 903 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `def` | [keysList](declarations/keyslist--6e9e264689302f438efb50e4.md) | 907 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `def` | [Keys](declarations/keys--bfc92efcab1f1fd74b824fa4.md) | 914 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `def` | [keys](declarations/keys--1a05d6f90832eef9b055eca1.md) | 920 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `def` | [Keys.toArray](declarations/keys-toarray--d0dc528e708312f9d7bae8b3.md) | 922 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `def` | [Keys.toList](declarations/keys-tolist--0c47a54916290b0e4a6219d0.md) | 924 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `instance` | [(anonymous)](declarations/instance--90a3c7b3f867d1b21b524a8a.md) | 926 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `instance` | [(anonymous)](declarations/instance--a939fbcf21818e1beb7ef587.md) | 928 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `instance` | [(anonymous)](declarations/instance--d4a682fff3f5213cab50f842.md) | 930 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `instance` | [(anonymous)](declarations/instance--6fa840b34731ccd4c3fc9455.md) | 933 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `def` | [Keys.Stream](declarations/keys-stream--3faeb41d4a72fcbcd88f2439.md) | 937 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `def` | [Keys.toStream](declarations/keys-tostream--bd065515cb7f97ac53d40fb3.md) | 940 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `def` | [Keys.Stream.next?](declarations/keys-stream-next--d5cfe218d451738b84e41fcb.md) | 943 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `instance` | [(anonymous)](declarations/instance--d1e2aac51fdc2cbf16abff41.md) | 948 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `instance` | [(anonymous)](declarations/instance--898953f5df9dbceda1823090.md) | 949 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `def` | [valuesArray](declarations/valuesarray--775e35d74164854a959b89b2.md) | 952 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `def` | [valuesList](declarations/valueslist--ade73de0e1842fad9c98566c.md) | 956 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `def` | [Values](declarations/values--89c5d4dbfbe8bb7d581a8213.md) | 963 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `def` | [values](declarations/values--9a7de38715b96c6bbdbd60b9.md) | 969 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `def` | [Values.toArray](declarations/values-toarray--0a63ddede20a6b575e9abbec.md) | 971 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `def` | [Values.toList](declarations/values-tolist--9a09f46490425505bff1fe52.md) | 973 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `instance` | [(anonymous)](declarations/instance--691de521294b79d2f30017ec.md) | 975 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `instance` | [(anonymous)](declarations/instance--ae4da5a91d372954a01b1e5e.md) | 977 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `instance` | [(anonymous)](declarations/instance--2850e3c19cc7812282e4bf1d.md) | 979 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `instance` | [(anonymous)](declarations/instance--f4aaf8d3bb9e3f356da96948.md) | 982 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `def` | [Values.Stream](declarations/values-stream--ad8e893d3f3b4d86a85b859e.md) | 986 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `def` | [Values.toStream](declarations/values-tostream--1e10f0c4dfefff496fa318eb.md) | 989 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `def` | [Values.Stream.next?](declarations/values-stream-next--057eea7e9017c97142792295.md) | 992 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `instance` | [(anonymous)](declarations/instance--106695521a34ecfe3cb6a3ee.md) | 997 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `instance` | [(anonymous)](declarations/instance--7710c4d64c1e9996cbb723b9.md) | 998 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `def` | [isEmpty](declarations/isempty--fe6d87bcee40d5fd23162de2.md) | 1001 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `def` | [toList](declarations/tolist--703a3b74cee30741da97f893.md) | 1004 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `def` | [min](declarations/min--15a66528838afffd4c16bfa0.md) | 1007 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `def` | [max](declarations/max--b5e050e1af104adcd1d2a9ab.md) | 1010 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `instance` | [(anonymous)](declarations/instance--119ccb46e16c0128edffd11a.md) | 1012 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `def` | [insert](declarations/insert--a33cbf364b84a4cfb8d566c4.md) | 1016 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `def` | [erase](declarations/erase--90e24539f03a784ad4362ca1.md) | 1019 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `def` | [ofList](declarations/oflist--fb3d5281886b98d0019eb7fe.md) | 1022 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `def` | [ofArray](declarations/ofarray--08979f006a6eed4a133f5286.md) | 1026 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `def` | [findEntry?](declarations/findentry--8523fe157b19343012f7e798.md) | 1030 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `def` | [find?](declarations/find--8281a2186028b68a0cdc5956.md) | 1033 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `def` | [findD](declarations/findd--752c175d1a2a91b9f422caab.md) | 1036 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `def` | [lowerBound?](declarations/lowerbound--7f19130ebdb5ba96112fbc7e.md) | 1042 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `def` | [contains](declarations/contains--e391c437d665206819337f95.md) | 1046 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `def` | [all](declarations/all--b4b8a324eae34143dfcd1158.md) | 1049 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `def` | [any](declarations/any--90e90730b948bb8706e6259f.md) | 1052 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `def` | [all₂](declarations/all--59b07174024f0e5554ae8dab.md) | 1058 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `def` | [eqKeys](declarations/eqkeys--44ef5e5202bf0a87111fb081.md) | 1062 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `instance` | [(anonymous)](declarations/instance--8cf669e17e4b818a7a6c0c0a.md) | 1069 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `def` | [size](declarations/size--1ae24f971cdcf506c6bea836.md) | 1072 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `def` | [min!](declarations/min--c5f670f8c8d258fd748bd71b.md) | 1075 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `def` | [max!](declarations/max--f9165841f39490e2578f2ae1.md) | 1078 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `def` | [find!](declarations/find--a51acec8e7673f4c2559a347.md) | 1081 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `def` | [mergeWith](declarations/mergewith--7c434cc5bea384d9af4b471a.md) | 1088 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `def` | [intersectWith](declarations/intersectwith--84ca31cc5f07a9f67cc27607.md) | 1095 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `def` | [filter](declarations/filter--7f53c9b146716f606dddd80c.md) | 1100 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `def` | [sdiff](declarations/sdiff--befb4e57e5b545c6802fd829.md) | 1106 | `BLOCKED_NATIVE_ADMISSION` |
+| 202 | `abbrev` | [List.toRBMap](declarations/list-torbmap--057c1676685e83c78b1b9ee7.md) | 1113 | `BLOCKED_NATIVE_ADMISSION` |

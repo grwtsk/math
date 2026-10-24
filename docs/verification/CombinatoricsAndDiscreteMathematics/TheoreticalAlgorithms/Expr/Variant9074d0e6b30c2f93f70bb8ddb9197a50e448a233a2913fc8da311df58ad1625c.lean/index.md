@@ -1,0 +1,73 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Expr.Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c798aca7dea96f5bc7f5f5cf191f4bbd5620bc33",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/index.md) · [Full source](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c798aca7dea96f5bc7f5f5cf191f4bbd5620bc33`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Lean` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathematics.Core.Id` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathematics.Core.IdElements.Digest` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathematics.Extractor.ExprElements.ExprId` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathematics.Core.IdElements.A_35930981008a8bae` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathematics.Extractor.A_7252ae4692761cc7` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathematics.Extractor.A_a1b9989edc972bba` — import line 16; external provider; requires a separately pinned dependency.
+- `Mathematics.Extractor.A_f7a08ec7996449bd` — import line 17; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [CanonicalExpr](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/declarations/canonicalexpr--39a8f7ebc3fd4d2a8f31749a.md) | 37 | `declaration-track:39a8f7ebc3fd4d2a8f31749aa6d90b73ccd601025a10df4fd32c4f0c1b81060b` |
+| 2 | `def` | [CanonicalExpr.childIds](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/declarations/canonicalexpr-childids--e637e9d9c0084074f2646251.md) | 55 | `declaration-track:e637e9d9c0084074f264625177646c599bf65998da42df1c82525f3942f03cdb` |
+| 3 | `structure` | [PresentationVariant](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/declarations/presentationvariant--2ebda8959079894b0f225983.md) | 64 | `declaration-track:2ebda8959079894b0f225983f1fc8e79e0f7cffb3ae1388627b0409ffe14cd76` |
+| 4 | `structure` | [ExpressionRecord](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/declarations/expressionrecord--32f668afac376977de9ce565.md) | 69 | `declaration-track:32f668afac376977de9ce56504d8dc03f490b4657fcbe38dbf2e8fe75797d070` |
+| 5 | `structure` | [ExprPath](../../../../../mathematics/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Expr/Variant9074d0e6b30c2f93f70bb8ddb9197a50e448a233a2913fc8da311df58ad1625c.lean/declarations/exprpath--66cfbef31d3ee06e36de2579.md) | 79 | `declaration-track:66cfbef31d3ee06e36de257978136e7634bc15010df6f856ab928f55e8e4abf5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

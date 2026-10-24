@@ -1,0 +1,147 @@
+# Complete source: GRWTSK.CombinatoricsAndDiscreteMathematics.Compactness.Variant4dfcf16660c82b0f48ad4cc4cdeea7e8598edab2757725b6803e4fb57fbafd15
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c28181697adfb52335cfd4adc0b859c5b64d1ca0` · SHA-256 `2612b1cddc27cc8059219f1ece3948043737026350b545698bab316ccc5a9fdb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: CombinatoricsAndDiscreteMathematics
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.CombinatoricsAndDiscreteMathematics.FinsetRadoSelection.Variantb6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Combinatorics.FiniteCombinatorics.SourceCorpus.FinsetRadoSelection.Variantb6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec","mathematical_subject":"Combinatorics.FiniteCombinatorics","original_sha256":"b6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Combinatorics/Compactness.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Bhavik Mehta. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Bhavik Mehta
+-/
+module
+
+import Mathlib.Topology.Compactness.Compact
+public import Mathlib.Basic.Finite.Defs
+public import Mathlib.Data.Finset.Attr
+public import Mathlib.Data.Finset.Defs
+public import Mathlib.Tactic.ToAdditive
+
+/-!
+# Combinatorial compactness and the Rado selection lemma
+
+This file contains compactness arguments for constructing infinite objects from finite
+approximations. The main result is a formalization of Rado's selection principle, as an application
+of compactness to combinatorics.
+
+We give four versions, depending on whether the "partial" functions are defined locally or globally,
+and whether we use `Finset` or `Set.Finite`. The precise formulation of the lemma is therefore
+`Finset.rado_selection_subtype` or `Set.Finite.rado_selection_subtype`, but the versions avoiding
+subtypes are easier to prove and often easier to apply, so they are provided too.
+
+## Main results
+
+* `Finset.rado_selection`: Given functions `g : Finset α → α → β` where `β` is finite,
+  there exists a single function `χ : α → β` which is constructed out of `g`.
+  More precisely, for each finite set `s`, there exists a larger set `t ⊇ s` such that
+  `χ` and `g t` agree on `s`.
+  In fact, we can more generally allow each `g s` to be a dependent function, as `(a : α) → β a`, so
+  the type of `g` will be `Finset α → (a : α) → β a`.
+
+* `Finset.rado_selection_subtype`: A variant where `g` takes elements in the subtype.
+
+* `Set.Finite.rado_selection`: A variant using `Set.Finite`.
+
+* `Set.Finite.rado_selection`: A variant using `Set.Finite` and where `g` takes elements in the
+  subtype.
+
+## Implementation notes
+
+The proof uses the fact that the product of finite discrete spaces is compact
+(by Tychonoff's theorem). The closed sets corresponding to "agreeing with `g s` on `s`"
+have the finite intersection property, so their intersection is nonempty.
+
+## References
+
+* de Bruijn, N. G.; Erdős, P. (1951). "A colour problem for infinite graphs and a problem
+  in the theory of relations".
+* Rado, R. (1949). "Axiomatic treatment of rank in infinite sets".
+
+-/
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.FinsetRadoSelection.Variantb6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec
+
+public section
+
+variable {α : Type*} {β : α → Type*} [∀ a, Finite (β a)]
+
+/--
+Given a (dependent) function `g s : (a : α) → β a` for each finset `s` of `α`, provided that
+each `β a` is finite, we can find another function `χ : (a : α) → β a` such that on every `s`,
+there is some larger `t` such that `χ` agrees with `g t` on `s`.
+Informally, we are stitching together the local functions `g s` into a global `χ` such that on
+each `s`, `χ` can be expressed in terms of one of the `g`.
+-/
+theorem Finset.rado_selection (g : Finset α → (a : α) → β a) :
+    ∃ χ : (a : α) → β a, ∀ s : Finset α, ∃ t : Finset α, s ⊆ t ∧ ∀ x ∈ s, χ x = g t x := by
+  classical
+  let instTop (a : α) : TopologicalSpace (β a) := ⊥
+  have instDiscr (a : α) : DiscreteTopology (β a) := discreteTopology_bot _
+  let e (s : Finset α) : Set ((a : α) → β a) := {f | ∃ t, s ⊆ t ∧ ∀ x ∈ s, f x = g t x}
+  have (s : Finset α) : s.restrict ⁻¹' {f | ∃ t, s ⊆ t ∧ ∀ x, f x = g t x} = e s := by simp [e]
+  have he' (s : Finset α) : IsClosed (e s) := by
+    rw [← this]
+    exact (isClosed_discrete _).preimage (by fun_prop)
+  have he'' (B : Finset (Finset α)) : (⋂ i ∈ B, e i).Nonempty := by
+    refine ⟨g (B.biUnion id), ?_⟩
+    simp only [Set.mem_iInter, Set.mem_ofPred_eq, e]
+    intro i hi
+    exact ⟨_, subset_biUnion_of_mem id hi, by simp⟩
+  simpa using! CompactSpace.iInter_nonempty he' he''
+
+/--
+Given a (dependent) function `g s : (a : s) → β a` for each finset `s` of `α`, provided that
+each `β a` is finite, we can find another function `χ : (a : α) → β a` such that on every `s`,
+there is some larger `t` such that `χ` agrees with `g t` on `s`.
+Informally, we are stitching together the local functions `g s` into a global `χ` such that on
+each `s`, `χ` can be expressed in terms of one of the `g`.
+-/
+theorem Finset.rado_selection_subtype (g : (s : Finset α) → (a : s) → β a) :
+    ∃ χ : (a : α) → β a, ∀ s : Finset α,
+      ∃ (t : Finset α) (hst : s ⊆ t), ∀ x : s, χ x = g t (Set.inclusion hst x) := by
+  classical
+  have (a : α) : Nonempty (β a) := ⟨g {a} ⟨a, by simp⟩⟩
+  let g' (s) (a : α) : β a := if ha : a ∈ s then g s ⟨a, ha⟩ else Classical.arbitrary (β a)
+  have hg (s : Finset α) (x : s) : g s x = g' s x := by simp [g']
+  simpa [hg] using Finset.rado_selection g'
+
+/--
+Given a (dependent) function `g s : (a : α) → β a` for each finite set `s` of `α`, provided that
+each `β a` is finite, we can find another function `χ : (a : α) → β a` such that on every `s`,
+there is some larger `t` such that `χ` agrees with `g t` on `s`.
+Informally, we are stitching together the local functions `g s` into a global `χ` such that on
+each `s`, `χ` can be expressed in terms of one of the `g`.
+-/
+theorem Set.Finite.rado_selection (g : (s : Set α) → s.Finite → (a : α) → β a) :
+    ∃ χ : (a : α) → β a, ∀ s : Set α, s.Finite →
+      ∃ (t : Set α) (ht : t.Finite), s ⊆ t ∧ ∀ x ∈ s, χ x = g t ht x := by
+  obtain ⟨χ, hχ⟩ := Finset.rado_selection (fun s ↦ g s s.finite_toSet)
+  refine ⟨χ, fun s hs ↦ ?_⟩
+  obtain ⟨t, ht, ht'⟩ := hχ hs.toFinset
+  exact ⟨t, by simp_all⟩
+
+/--
+Given a (dependent) function `g s : (a : s) → β a` for each finite set `s` of `α`, provided that
+each `β a` is finite, we can find another function `χ : (a : α) → β a` such that on every `s`,
+there is some larger `t` such that `χ` agrees with `g t` on `s`.
+Informally, we are stitching together the local functions `g s` into a global `χ` such that on
+each `s`, `χ` can be expressed in terms of one of the `g`.
+-/
+theorem Set.Finite.rado_selection_subtype (g : (s : Set α) → s.Finite → (a : s) → β a) :
+    ∃ χ : (a : α) → β a, ∀ s : Set α, s.Finite →
+      ∃ (t : Set α) (ht : t.Finite) (hst : s ⊆ t), ∀ x : s, χ x = g t ht (Set.inclusion hst x) := by
+  obtain ⟨χ, hχ⟩ := Finset.rado_selection_subtype (β := β) (fun s ↦ g s s.finite_toSet)
+  refine ⟨χ, fun s hs ↦ ?_⟩
+  obtain ⟨t, ht, hst⟩ := hχ hs.toFinset
+  simp only [Set.Finite.toFinset_subset] at ht
+  exact ⟨t, by simp_all⟩
+
+end
+```
