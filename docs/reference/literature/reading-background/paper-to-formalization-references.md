@@ -8120,3 +8120,72 @@ Owner-identified unpublished research by grwtsk contributors; printed byline `['
 **Convergence:** nonnegative weights, real 0≤r<1 and all weighted absolute column sums bounded by r times the corresponding input weight. The constructed weighted residual mass vanishes without assuming forcing decay separately. Coordinate convergence still needs strictly positive relevant weights. No gain estimate, source-defect access, positive model, actual readout identity or growing-channel comparison is supplied.
 
 All seventeen unresolved specifications remain unchanged and version-bound. General KL theory and arithmetic source constructions remain missing; source access is not obtained by defining a defect. Earlier geometry, automorphic and zero-detector gaps are not promoted by these proofs. No historical influence, owner understanding date or new paper-reading event is inferred.
+
+
+## Case HEAT-FLOW-LOSSLESS-COVER-VALIDATION-20261023
+
+**Provenance and exact source boundary.** The companion
+[heat-flow lossless-compression provenance record](heat-flow-lossless-compression-cover.md)
+retains the source identities, titles, authors, versions, stable identifiers,
+exact contextual methods and hypotheses for Rodgers–Tao's de Bruijn–Newman
+paper (arXiv:1801.05914), Huffman's 1952 coding paper
+(DOI:10.1109/JRPROC.1952.273898), and the recorded 2026 quasi-Riemann preprint
+and exposition. This run verifies local Lean declarations, not those external
+analytic claims; the source-context relationships remain methodological
+analogies, with no historical-influence inference or analytic heat-flow theorem
+imported by this increment. Initial source commit
+`4c00de487fa04bceaf4ed2d3cf69fd44941be33a`; reviewed branch tip
+`98a83c27cb592b95334c76c8239662740c6624a0`.
+
+**Checked declarations and explicit premises.** All new declarations are under
+`GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover`.
+`LosslessCodec.encode_injective` and `.hasTotalLosslessDecoder` require the
+codec's supplied left inverse; `huffmanByteCodec` wraps the actual packet
+round-trip, including metadata. `LosslessProcessCover.recover_after_codedStep`
+requires actual process/code commutation. `ZeroBoundProcessCover.recover_bound_zero`
+additionally requires the explicit state-to-zero map.
+`bombieri_two_moment_profile_is_not_lossless` and
+`no_lossless_codec_with_bombieri_moment_encoding` retain the imported obstruction
+on the exact three-dimensional canonical square-tent source.
+`boundary_gap` is exact arithmetic, and
+`AsymptoticallyFreeRefinement.eventually_fits_boundary_gap` requires the supplied
+nonnegative cost and epsilon–cutoff decay; neither is an analytic zero-free bound.
+`no_conceded_coincidence` and `no_postflow_conceded_coincidence` concern only
+an actual finite-state observation and injective coding, not a sofic theorem.
+`zero_height_irrational` and `zero_height_transcendental_of_grh` merely project
+the explicit irrationality and conditional transcendence suppliers from
+`ZeroHeightArithmeticAssumptions`; they do not derive these arithmetic facts
+from GRH. `QuasiRiemannAccountingSystem.recovers_zero`, `.eventually_fits_gap`,
+and `.breaks_observed_postflow_coincidence` retain those same bundled premises.
+
+**Classification and missing bridges.** The codec, elementary algebra and
+finite numerical gap are kernel-verified local bridges. The analytic process,
+state encoding/decoding, zero binding, actual refinement cost, source zero-free
+theorem with its exact L-function scope, sofic realization, irrational-height
+supplier and GRH-to-transcendence supplier remain unresolved conditional
+interfaces. Huffman optimality, analytic reversibility, RH, QRH, and irrationality
+or transcendence of actual zero ordinates are not established here. All nine
+missing bridges in the companion record remain explicit. The import remains
+outside the public `GRWTSK.lean` root.
+
+**Repair pin and actual verification.** Source commit `82b569f0b276b34c27c745b90140b2f87d37108b`,
+`GRWTSK/NumberTheory/Zeta/Riemann/HeatFlowLosslessCompressionCover.lean`, blob
+`53fd473d9d0fa788065b3d6a83349353549ba8b3`.
+The two real constants are now marked noncomputable and the additive inequality
+proof uses the pinned argument ordering. All 15 theorem headers are unchanged;
+all 123 local source hashes match this pinned closure. Lean
+`leanprover/lean4:v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover --wfail`
+  passed (8828 jobs) after those proof/API repairs.
+- `lake build --wfail` passed (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/heat-cover-audit.lean`
+  passed, auditing all 3861 local declarations, including generated declarations,
+  and printing every type. Only `propext`, `Classical.choice`, and `Quot.sound`
+  were allowed; unsafe declarations, `sorryAx` and custom axioms were rejected.
+
+External evidence in that directory: `heat-cover-build.log` (initial failures),
+`heat-cover-rebuild.log` (success), `heat-cover-public.log`,
+`heat-cover-audit.log`, and `heat-cover-validated-snapshot.json`. Historical
+SOURCE_ONLY/NOT_RUN labels describe introduction; this dated evidence supersedes
+only the build/kernel status for this exact closure, not its unresolved premises.

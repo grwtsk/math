@@ -1,6 +1,12 @@
 # Heat-flow lossless-compression cover: provenance and proof boundary
 
-Status: **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**.
+Introduction status: **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**.
+
+Subsequent pinned validation: module build, public build and fresh trust-level-zero
+transitive axiom audit passed. See the dated `HEAT-FLOW-LOSSLESS-COVER-VALIDATION-20261023`
+entry in [the canonical reference ledger](paper-to-formalization-references.md)
+for the immutable repair pin, exact scope and actual commands. All analytic and
+arithmetic missing bridges below remain unresolved.
 
 This record accompanies
 `GRWTSK/NumberTheory/Zeta/Riemann/HeatFlowLosslessCompressionCover.lean`,
