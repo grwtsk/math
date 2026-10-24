@@ -49,4 +49,26 @@ theorem unitPsiWeight_sum_eq_unitPsiTotal (q N : ℕ) :
       exact hunit (unit_fiber_implies_isUnit q n u heq)
     simp [hnone, hunit]
 
+
+/-- Principal-mode comparison expressed using the actual reduced-residue
+total rather than an abstract sum of unit fibers. -/
+theorem norm_unitPsi_sub_reduced_total_main_le
+    (q N : ℕ) {κ : Type*} [Fintype κ]
+    (χ : κ → (ZMod q)ˣ → ℂ)
+    (a : (ZMod q)ˣ) (principal : κ) (E : κ → ℝ)
+    (main : ℂ) (P : ℝ)
+    (hχ : OrthogonalAt χ a)
+    (hprincipal : ∀ b : (ZMod q)ˣ, χ principal b = 1)
+    (hunit : ∀ k : κ, ‖χ k a‖ ≤ 1)
+    (hE : ∀ k ∈ Finset.univ.erase principal,
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ k b‖ ≤ E k)
+    (hmain : ‖unitPsiTotal q N - main‖ ≤ P) :
+    ‖(Fintype.card κ : ℂ) * unitPsiWeight q N a - main‖ ≤
+      (∑ k ∈ Finset.univ.erase principal, E k) + P := by
+  apply norm_unitPsi_sub_principal_main_le
+    q N χ a principal E main P hχ hprincipal hunit hE
+  rw [unitPsiWeight_sum_eq_unitPsiTotal]
+  exact hmain
+
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
