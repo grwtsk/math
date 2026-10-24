@@ -10586,3 +10586,450 @@ remain in `grwtsk/noeaaeue`.
 Actual status:
 **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
 TRANSITIVE_AXIOMS NOT_RUN**.
+
+
+## Case PRIMARY-SOURCE-LOCATOR-AND-ACTIVE-DECLARATION-RECONCILIATION-20261023
+
+**Scope and precedence.** This entry audits the active heat-flow,
+lossless-Huffman, Bombieri-moment, dynamic/sofic and zeta-ordinate
+paper-derived or paper-motivated source family, plus its immediately
+consumed Guth–Maynard/Goldfeld/CM comparisons. It supplements the
+existing detailed case entries and **supersedes abbreviated paper
+locators or obsolete “current blob” labels only for the specific
+declarations listed here**. Earlier original source commits, exact
+hypotheses, parallel work, pending mathematical suppliers and
+no-root-promotion/no-merge boundaries are retained. An idea match
+is **never** evidence of historical influence.
+
+**Immutable mathematical source snapshot for this reconciliation:**
+\`grwtsk/math@beaae68f34fc6980385aca48975246e440eb233f\`,
+integrated on existing \`main\` with a routine non-force commit.
+The snapshot, rather than any moving later main head, binds every
+source blob listed below. Lean \`leanprover/lean4:v4.33.0\`,
+Mathlib \`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+The local authoring runtime had no Lean/Lake/elan; absent an
+actual matching execution receipt the status of each new or cited
+source proof candidate is **COMPILATION NOT_RUN / FRESH_KERNEL
+NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN / NOT_KERNEL_AUDITED**.
+The independent finite Python graph preflight cited elsewhere
+has FINITE_EVIDENCE scope only; it must not be converted into an
+all-n theorem or compiler exit-zero receipt.
+
+### A. Rodgers–Tao heat deformation: primary-source locators now checked
+
+**Title, byline, edition and permanent links:** Brad Rodgers and
+Terence Tao, *The de Bruijn–Newman constant is non-negative*,
+arXiv preprint dated **18 January 2018**, arXiv:1801.05914;
+published *Forum of Mathematics, Pi* **8 (2020), e6**, DOI
+[10.1017/fmp.2020.6](https://doi.org/10.1017/fmp.2020.6).
+Reviewed primary published source:
+[Cambridge 2020 PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/D4B85BA067E2D5A71D87E4FFB0D21E46/S2050508620000062a.pdf/de_bruijnnewman_constant_is_nonnegative.pdf).
+
+**Verified exact locators and hypotheses:**
+printed **p. 2, §1, equation (1)** defines
+\`H₀(z)=(1/8) ξ(1/2+i z/2)\`; **p. 2, equation (4)**
+defines \`H_t(z)=∫₀^∞ exp(t u²) Φ(u) cos(zu) du\`
+for real \`t\` and the explicit super-exponentially decaying
+theta kernel \`Φ\` (equation (3)). The source identifies the
+**backward** heat equation \`∂_t H_t=-∂²_z H_t\`.
+**Printed p. 3, Theorem 1** concludes \`Λ≥0\`; its proof
+uses the contrary \`Λ<0\`, the zero dynamics and local-equilibrium
+contradiction (see §1 pp. 4–6; equation (5) on printed p. 5).
+These are *external published analytic statements*, **not imported
+Lean results**. No passage claims Huffman decoding, finite soficity,
+irrational or transcendental zero ordinates.
+
+**Exact local mathematical declarations under the following literal
+fully qualified namespaces**:
+
+- \`GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization.newman_negative_time_eq_forward_heat\`,
+  \`GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization.newman_positive_time_eq_inverse_heat\`,
+  \`GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization.recover_newman_negative_time\`,
+  \`GRWTSK.RiemannHypothesis.FiniteHeatNewmanNormalization.threeQuarter_height_newman_variable\`.
+  Source \`GRWTSK/NumberTheory/Zeta/Riemann/FiniteHeatNewmanNormalization.lean\`,
+  Git blob **bd6219af4e929ff6b54bb5aef00821ebeb484060**.
+  Hypotheses: *arbitrary finite coefficients and real frequencies*,
+  source-matching diagonal eigenvalues \`λ_i=u_i²\`, and
+  \`t=-s\` for dissipative heat; \`z=2γ\` is the
+  **normalization**, not a zeta-zero uniqueness theorem.
+- \`GRWTSK.Geometry.Hodge.FiniteHeatRecovery.inverse_after_heat\`,
+  \`GRWTSK.Geometry.Hodge.FiniteHeatRecovery.uniformInverseBound_iff_gain\`,
+  \`GRWTSK.Geometry.Hodge.FiniteHeatRecovery.HodgeSpectralChart.recover_heat\`,
+  \`GRWTSK.Geometry.Hodge.FiniteHeatRecovery.HodgeSpectralChart.heat_squareEnergy_le\`.
+  Source \`GRWTSK/Geometry/Hodge/FiniteHeatRecovery.lean\`, Git
+  blob **5ce4d15f94aa0e260336c5e8cf7af25a3fb03160**.
+  Hypotheses: finite-time real exponential scalars; nonnegative
+  eigenvalues and \`t≥0\` for energy contraction; an explicit,
+  **unconstructed**, isometric diagonalizing spectral chart for
+  the actual finite Hodge graph in the Hodge-specific statements.
+- \`GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover.LosslessProcessCover\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover.QuasiRiemannAccountingSystem.eventually_fits_gap\`;
+  source \`GRWTSK/NumberTheory/Zeta/Riemann/HeatFlowLosslessCompressionCover.lean\`,
+  blob **53fd473d9d0fa788065b3d6a83349353549ba8b3**.
+  Source header: **2026 grwtsk contributors**, formalization
+  assistance OpenAI, no independent full local byline listed.
+  The process-cover commutation/left-inverse is **supplied data**;
+  asymptotically-free accounting does **not** supply analytic
+  stage nonvanishing.
+
+**Precise missing bridges:** construct actual \`Φ\` and its
+regularity, quadrature/tail and analytic zero-transfer theorem;
+identify an authentic Hodge spectral operator with \`H_t\`
+by a source-preserving intertwiner; prove all-height zero
+dynamics and any recurrence/zero statistics required by Theorem 1.
+No heat-flow/Huffman literal equivalence is asserted.
+**Classification:** published mathematics = SOURCE-LOCATED EXTERNAL;
+new local finite heat/normalization = SOURCE_PROOF_CANDIDATE;
+graph chart and process cover = CONDITIONAL_INTERFACE;
+Huffman relation = ANALOGY_ONLY; accepted imported
+Rodgers–Tao theorem and local kernel-verified paper bridge = **NONE**.
+
+### B. Huffman coding: source method versus actual local byte theorem
+
+**Paper:** David A. Huffman, *A Method for the Construction of
+Minimum-Redundancy Codes*, *Proceedings of the IRE*
+**40(9) (September 1952), 1098–1101**,
+stable [DOI 10.1109/JRPROC.1952.273898](https://doi.org/10.1109/JRPROC.1952.273898).
+Author, publication volume and inclusive pages were confirmed in
+the [CiNii bibliographic record](https://cir.nii.ac.jp/crid/1360855568925260928).
+**Exact method used** is recursive least-frequency combination
+for finite-alphabet, prefix-decoding minimum-redundancy codes,
+with a frequency model. A particular method step's individual
+printed page or theorem number was **NOT VERIFIED**; the cited
+1098–1101 is the *whole paper*, not an invented theorem locator.
+Local code does **not** formalize the paper's probabilistic
+optimality or minimum expected length theorem.
+
+- \`GRWTSK.InformationTheory.Huffman.decode_encode\`,
+  \`GRWTSK.InformationTheory.Huffman.encode_injective\` and
+  \`GRWTSK.InformationTheory.Huffman.Packet\`;
+  source \`GRWTSK/InformationTheory/Huffman/RoundTrip.lean\`,
+  Git blob **07e1a9a291bd5002fc8e2dceed980242ba0752ec**.
+  The source header has **no explicit author/year byline**;
+  source attribution beyond the 2026 repository snapshot is
+  UNAVAILABLE and must not be invented. Actual local hypotheses
+  are the concrete byte/frequency/bit-count/wire-packet
+  definitions, not a supplied abstract Huffman-code law.
+- \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary.huffman_bytes_have_total_lossless_decoder\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary.two_bombieri_moments_have_no_total_lossless_decoder\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary.no_total_lossless_decoder_from_moment_only_postprocessing\`;
+  source \`GRWTSK/NumberTheory/Zeta/Riemann/BombieriHuffmanLosslessBoundary.lean\`,
+  blob **901939ee5cce378631d0aad819fdf6fdb4a4775c**.
+  Source header 2026 grwtsk contributors, OpenAI formalization
+  assistance; the two moments are **already noninjective** on
+  actual corrected tent coordinates. Any postprocessing is forced
+  to preserve that collision.
+- \`GRWTSK.NumberTheory.Zeta.Riemann.HeatFlowLosslessCompressionCover.huffmanByteCodec\`;
+  source blob **53fd473d9d0fa788065b3d6a83349353549ba8b3**.
+
+**Classification:** concrete repository Huffman round trip =
+LOCALLY IMPORTED SOURCE / SOURCE_PROOF_CANDIDATE pending kernel;
+published coding method = METHOD_MATCH (no imported paper proof);
+heat-flow comparison = ANALOGY_ONLY; finite bytes after a
+noninjective moment map = SOURCE-SPECIFIC OBSTRUCTION.
+**Missing:** accepted decoder/machine trust audit, byte-level
+serialization refinement and any finite-alphabet encoding of the
+full real heat flow. Losslessness of a *postprocessed moment
+packet* cannot imply losslessness from the original tent vector.
+
+### C. Bombieri's precise Weil-class two moments: printed page located
+
+**Author/title/version:** Enrico Bombieri, *Problems of the
+Millennium: the Riemann Hypothesis*, Clay Mathematics Institute
+official problem description, **2000**. Stable original PDF:
+[claymath.org/wp-content/uploads/2022/05/riemann.pdf](https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf).
+The **2022 URL upload is not the publication year**.
+
+**Verified exact method and assumptions:** printed **p. 8,
+§V, “Further evidence: the explicit formula”** defines the
+test-function class \`W\` of (piecewise) continuously
+differentiable complex functions on \`(0,∞)\` with specified
+one-sided/average-value conventions and
+\`f(x)=O(x^δ)\` at zero and \`O(x^(-1-δ))\` at infinity
+for some \`δ>0\`; the explicit formula uses
+\`f̃(s)=∫₀^∞ f(x)x^s dx/x\`.
+**Printed p. 9, §V, paragraph after the explicit formula**
+attributes to Weil the RH-equivalent **negativity** of the
+specified explicit-formula right-hand side for
+\`f(x)=∫₀^∞ g(xy) conj(g(y))dy\`, with \`g∈W\`
+satisfying **both distinct conditions**
+\`∫₀^∞g(x)dx/x=0\` and \`∫₀^∞g(x)dx=0\`.
+Those are the exact source **moment constraints**.
+The local moment pair is **not** an equivalent replacement for
+the whole Guinand–Weil quadratic form or the full test class.
+
+- \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.bombieriMomentProfile_not_injective\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss.not_factorsThroughBombieriMoments_of_separates_corrected\`;
+  \`GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentBombieriMomentInformationLoss.lean\`,
+  Git blob **9a2435d9c74b89ce1434c45bade1aa9beaa6cead**.
+  Header: **2026 grwtsk contributors** (mathematical direction),
+  OpenAI formalization assistance. Exact local obstruction:
+  nonzero source-corrected vector in the *three*-tent span
+  shares the same two moments with zero. Classical
+  Weil-diagonal separation remains a **separate premise**.
+- \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.moment_only_history_collision\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_left_inverse_of_moment_only_refinement_history\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_source_decoder_from_bombieri_huffman_packets\`;
+  source \`GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean\`,
+  blob **5e52e67b72a1f4d1ee214442114d7f452e2395e6**.
+  Header: 2026 grwtsk contributors, mathematical direction
+  grwtsk contributors, OpenAI assistance.
+- \`GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction.no_exact_reconstruction_from_momentOnly_history\`,
+  \`GRWTSK.NumberTheory.Zeta.Riemann.DynamicBombieriSoficObstruction.no_lossless_spectral_cover_after_moment_collapse\`;
+  source \`GRWTSK/NumberTheory/Zeta/Riemann/DynamicBombieriSoficObstruction.lean\`,
+  blob **a553edc13c8b85caf4db193fbca63779e286b468**.
+  **Every stage** must factor through the *same* noninjective
+  moment profile; stages which add independent invariants are
+  not excluded.
+
+**Missing:** construction of the actual admitted \`W\` test functions
+and endpoint behavior, true classical Hermitian Weil-form
+identification, strict separation/positivity of the corrected
+witness under that form, and an independent analytic zero
+theorem. **Classification:** Bombieri/Weil explicit-formula
+constraints = EXTERNAL_METHOD_LOCATED; corrected tent collision
+= LOCAL_SOURCE_PROOF_CANDIDATE; classical transfer and positivity
+= CONDITIONAL_INTERFACE / UNRESOLVED; finite fixtures =
+FINITE_EVIDENCE only, no kernel verification.
+
+### D. Labeled sofic graphs, right contexts, and the Myhill/Nerode distinction
+
+**External references** with exact source/version distinctions:
+
+- **Benjamin Weiss**, *Subshifts of finite type and sofic systems*,
+  **1973** (DOI [10.1007/BF01295322](https://doi.org/10.1007/BF01295322)).
+  Exact theorem/page used here: **NOT VERIFIED**. This remains
+  named historical symbolic-dynamics context, not imported
+  mathematical source.
+- **Nataša Jonoska**, *Sofic shifts with synchronizing
+  presentations*, *Theoretical Computer Science*
+  **158(1–2) (20 May 1996), 81–115**,
+  [DOI 10.1016/0304-3975(96)00058-8](https://doi.org/10.1016/0304-3975(96)00058-8).
+  The published **abstract (p. 81)** explicitly describes
+  sofic shifts as labels read along **all bi-infinite paths**
+  in a finite directed labeled graph, and separately discusses
+  synchronizing presentations. The local code formalizes a
+  **one-sided finite factor-language** presentation and
+  makes no unverified equivalence to the bi-infinite
+  synchronizing/deterministic theory.
+- **John Myhill**, *Finite Automata and the Representation of
+  Events*, **1957**, §5 of WADC Technical Report **57-624**
+  (*Fundamental Concepts in the Theory of Systems*),
+  printed **pp. 112–137**, stable [Google Books
+  catalog/contents](https://books.google.com/books?id=QjZwISLU4rAC).
+  The report's section/title/start-page identification is
+  verified in the 1957 volume's catalog/contents.
+  A *specific theorem number or proof of the continuation-class
+  bound* in that section is **UNAVAILABLE / NOT VERIFIED** here.
+- **Anil Nerode**, *Linear Automaton Transformations*,
+  *Proceedings of the American Mathematical Society*
+  **9(4) (1958), 541–544**,
+  [DOI 10.1090/S0002-9939-1958-0135681-9](https://doi.org/10.1090/S0002-9939-1958-0135681-9).
+  **Important correction:** the accessible paper's
+  **Theorem 1** classifies linear automaton transformations
+  over a *finite commutative ring with identity* by a
+  corresponding matrix/periodicity condition. It is **not**
+  the right-context-cardinality theorem proved below.
+  The familiar “Myhill–Nerode” terminology is therefore
+  METHOD_BACKGROUND only here; do **not** claim a formalized
+  import, theorem-to-theorem equivalence or historical
+  influence from a similar statement.
+
+**Local source / fully qualified declarations:**
+
+- \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.WordPath\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.GraphLanguage\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.HasFiniteBlock\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation.stateCapacity\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_graphLanguage\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_exactPresentation\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_eventuallySoficTrace_of_all_tail_rightContexts\`.
+  Path \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
+  blob **6b28280b98527301af190f5c50696b9edcf0e05f**.
+  Exact hypotheses: finite graph states, decidable equality,
+  *full* path-language equality, and pairwise
+  distinguishable right continuations; the bounded estimate is
+  \`n≤Fintype.card(Finset State)\` and the unbounded
+  conclusion requires the certificate for **every n**.
+- \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.trace_injective\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le\`,
+  \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_all_tail_rightContexts\`;
+  file \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
+  blob **1d6ef4738af19edebd1d85e07f944ee4937a9001**.
+  Its spectral operator and source labeling are **supplied**;
+  graph-path admission by itself does NOT imply whole-language
+  soficity or trace-source faithfulness.
+- \`GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary.ExactPrefixPresented\`,
+  \`GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary.EventuallyExactPrefixPresented\`,
+  \`GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary.OrdinateExactLanguageSuppliers.irrational_without_grh\`;
+  source \`GRWTSK/NumberTheory/Farey/DynamicSoficExactLanguageBoundary.lean\`,
+  blob **79d749e6d8ca99825df9e98305532454e0c446f1**.
+  **Warning:** its singleton rooted-prefix language predicate
+  is intentionally *stronger and different* from the
+  full factor-language notion; do not silently interchange.
+- \`GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference_constants_collide\`,
+  \`GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrate_anchoredDifference\`;
+  source \`GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean\`,
+  blob **e2f6170aabf05e3a6df8f6a67009d4a8ba913379**.
+  This is a repository-authored **discrete differentiation
+  counterexample and anchored reconstruction**, not a claimed
+  theorem by Aristotle, Newton, Leibniz, or Riemann.
+- \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaTailContextCapacityCertificate\`,
+  \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_bounded_tail_presentation_of_zeta_contextCertificate\`,
+  \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_of_all_capacityCertificates\`,
+  \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_iff_all_capacityCertificates\`,
+  \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_all_capacityCertificates_and_rational_sofic\`;
+  file \`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean\`,
+  **latest source integration** main commit
+  [beaae68f34fc6980385aca48975246e440eb233f](https://github.com/grwtsk/math/commit/beaae68f34fc6980385aca48975246e440eb233f),
+  Git blob **ae3e016150c6b6ab131a76019b1f3571e15d4463**.
+  The NEW equivalence proves that a **single, fixed actual trace**
+  has unbounded distinguishable right contexts at *every
+  finite offset* precisely when it has a matching certificate
+  for *every finite capacity* at those same offsets.
+  The empty-\`Fin 0\` case is handled explicitly. Neither side
+  is constructed for any actual zeta zero.
+  Conditional irrationality still needs an **independent**
+  rational-height-to-eventual-full-language-sofic bridge;
+  conditional transcendence additionally needs an
+  algebraic-critical-line bridge and critical-line placement.
+  GRH alone never proves either.
+
+**Classification:** source-authored finite graph and
+right-context identities = LOCAL_SOURCE_PROOF_CANDIDATE,
+conditional symbolic/spectral/zeta mappings =
+CONDITIONAL_INTERFACE, full-shift false-positive =
+FINITE_OBSTRUCTION_SCOPE, published symbolic dynamics =
+METHOD_BACKGROUND / ANALOGY_ONLY, proved imported
+paper-to-Lean equivalence = **NONE**, actual zeta-trace
+non-eventual-soficity = UNRESOLVED_PREMISE.
+
+### E. Quasi-Riemann, Guth–Maynard, Goldfeld and CM/Hodge: no inference across scopes
+
+- **OpenAI**, *The Quasi-Riemann Hypothesis: A Zero-Free
+  Half-Plane Re(s)>7/8*, **30 September 2026** manuscript,
+  stable [openai/math source
+  revision](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026).
+  External Lean claim \`OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re\`.
+  Exact manuscript theorem/page locator **NOT independently
+  verified** in this audit. Local
+  \`GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.limit_zeroFree\`
+  (file blob **71277213e4c6da281d53c56ef57b84eb68ac7730**)
+  requires independently true zero-free estimates at EVERY
+  boundary cofinal above 3/4; it cannot derive them from
+  a 7/8 seed or an \`AsymptoticallyFree\` overhead alone.
+  **UNRESOLVED:** external theorem port, stagewise arithmetic
+  improvement, any RH consequence.
+- **Larry Guth and James Maynard**, *New large value estimates
+  for Dirichlet polynomials*, *Annals of Mathematics*
+  **203(2) (2026), 623–675**, published **1 March 2026**,
+  DOI [10.4007/annals.2026.203.2.6](https://doi.org/10.4007/annals.2026.203.2.6);
+  original [arXiv:2405.20552](https://arxiv.org/abs/2405.20552).
+  **Theorem 1.2**, as presented in the accessible manuscript,
+  bounds the actual zeta-zero count \`N(σ,T)\`
+  (zeros \`Re ρ≥σ\`, both signs \`|Im ρ|≤T\`)
+  with exponent \`15(1−σ)/(3+5σ)+o(1)\`,
+  and the uniform consequence \`30(1−σ)/13+o(1)\`
+  (printed publisher numbering/page not independently checked
+  in this audit; do not guess a page). At \`σ=3/4\` these
+  exponents are respectively \`5/9\` and \`15/26\`.
+  Correspondence:
+  \`GRWTSK.RiemannHypothesis.ThreeQuarterDensityHodgeComparison.bothSignZeroCount\`,
+  \`GRWTSK.RiemannHypothesis.ThreeQuarterDensityHodgeComparison.GuthMaynardBothSignThreeQuarter\`,
+  \`GRWTSK.RiemannHypothesis.ThreeQuarterDensityHodgeComparison.positiveDensity_of_guthMaynard\`;
+  source \`GRWTSK/NumberTheory/Zeta/Riemann/ThreeQuarterDensityHodgeComparison.lean\`,
+  blob **319552d047092d7e13e96e950ea7e26263898482**.
+  The density estimate is an explicitly **unconstructed analytic
+  supplier**, not locally imported or kernel accepted;
+  the separate low-*imaginary-height* 3/4 zero exclusion and
+  arithmetic \`Q(7/8)=3/4\` are different statements.
+- **OpenAI**, *Goldfeld's analytic density conjecture and the
+  2-converse for elliptic curves*, **7 October 2026** manuscript,
+  [immutable source](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/Goldfelds-analytic-density-conjecture-and-the-2-converse-for-elliptic-curves-October-7-2026).
+  Manuscript \`build/sections/00-introduction.tex\` theorem
+  \`thm:main-density\` states density 1/2 for each analytic
+  rank 0 and 1 among **nonzero signed squarefree**
+  quadratic twist parameters, ordered by absolute value,
+  for every elliptic curve over ℚ.
+  \`thm:main-converse\` concerns an additional full
+  2-power Selmer corank 0/1 premise; neither is a
+  theorem imported here.
+  \`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.GoldfeldTwistDensityComparison.fullRankMoment_eq_one_add_high\`,
+  \`GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.GoldfeldTwistDensityComparison.mean_half_of_density_and_high_tail\`,
+  source \`GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/GoldfeldTwistDensityComparison.lean\`,
+  blob **9fd9e6663bda0adba4bfd887045604e05adcaded**.
+  The signed-squarefree family and actual analytic rank function
+  are **uninstantiated**, and mean-rank 1/2 needs an
+  independently negligible **rank-weighted high-rank tail**.
+- **OpenAI**, *The rational Hodge conjecture for CM abelian
+  varieties*, revised manuscript **6 October 2026**,
+  [immutable source](https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026).
+  Correspondence is specifically to
+  \`build/sections/02-tensors.tex\` (four-sign balance)
+  and \`05c-cm-types.tex\` (CM sign/type/slope identities).
+  Exact corresponding local declarations:
+  \`GRWTSK.AlgebraicGeometry.Hodge.CMFourBalance.fourBalance_twoTwoSignProfile\`
+  (blob **62c6bafc989b0e55a01f4bde5d42654600c15017**),
+  \`GRWTSK.AlgebraicGeometry.Hodge.CMTypeSlope.slope_eq_signSelector\`
+  (blob **437af65379b9ea73c4157bb1731ee293ff34ac17**).
+  These are **finite rational sign/slope source candidates only**.
+  No general algebraic-cycle realization, Riemann-existence,
+  crystalline realization, or global rational Hodge theorem is
+  locally imported or proved. Manuscript theorem-to-Lean
+  correspondence beyond those named fragments is **UNAVAILABLE**.
+
+### Verification and exact remaining obligations for this reconciliation
+
+**Toolchain and source snapshot:** \`grwtsk/math@beaae68f34fc6980385aca48975246e440eb233f\`,
+Lean \`leanprover/lean4:v4.33.0\`,
+Mathlib \`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+Mathematical local source headers on the newly authored 2026
+Hodge, symbolic, Farey and zeta files generally identify
+“grwtsk contributors / mathematical direction grwtsk contributors / formalization assistance OpenAI”; exceptions where
+the literal source header contains fewer fields are described
+above, and **no unrecorded external author or influence** is
+inferred. Mathlib declarations retain upstream authorship.
+
+**Actual executed verification:** exact Git source/blob readback
+of the named modules was performed. Local source scans and
+previously recorded finite graph enumeration are **not**
+compiler/kernel/trust acceptance. No proof that an actual
+zeta trace has the supplied \`ZetaTailContextCapacityCertificate\`,
+let alone all finite capacities, has been executed or shown.
+The latest three declarations in
+\`ZeroOrdinateSoficLanguageCriterion.lean\` are new
+SOURCE_PROOF_CANDIDATES, not accepted theorems.
+
+**Required, not executed (explicit NOT_RUN):**
+
+\`\`\`bash
+git checkout --detach beaae68f34fc6980385aca48975246e440eb233f
+test "$(git rev-parse HEAD)" = beaae68f34fc6980385aca48975246e440eb233f
+lake env lean --version
+lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion
+lake env lean GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean
+lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+\`\`\`
+
+An authorized non-Railway executor must additionally compile the
+complete exact transitive import closure, inspect every relevant
+declaration with \`#check\` and \`#print axioms\`
+(including all new \`zeta_unboundedTailContexts_*CapacityCertificates\`
+declarations), run a **fresh independent kernel replay**, and audit
+\`sorryAx\`, opaque/native/unsafe/generated dependencies.
+**All these execution phases: NOT_RUN; actual shell exit statuses
+and accepted receipts: UNAVAILABLE; transitive trust: NOT_AUDITED**.
+Any future successful receipt must be bound to an exact unchanged
+math commit, source blob closure and actual commands, and filed
+outside pure math in \`grwtsk/noeaaeue\`. Existing queued
+\`grwtsk/noeaaeue#400\` and math issues \`#1208\`
+are passive source-bound requests for **other** immutable targets;
+they cannot be reinterpreted as verification of
+\`beaae68f34fc6980385aca48975246e440eb233f\`.
+**No Railway, unauthorized external dispatch, force push,
+draft-only completion, public-root promotion or stopping-constraint
+bypass is permitted.**
