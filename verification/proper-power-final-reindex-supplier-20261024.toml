@@ -1,0 +1,45 @@
+# Bounded exact-supplier request; NO execution.
+schema_version = "0.1"
+request_id = "proper-power-final-reindex-supplier-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "dc8705fad485eb4f95eaef08d27d676e1fa34d03"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+kind = "missing_mathematical_supplier"
+target_declaration = "GRWTSK.NumberTheory.Primes.GoldbachProperPowerReindex.nonunitProperPowerMass_eq_rectangular"
+target_statement = "forall q N : Nat, nonunitProperPowerMass q N = rectangularProperPowerMass q N"
+target_module = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerReindex.lean"
+target_existing_blob = "a07fa1b1087b58547c94c0e0ea9ec31c3364d461"
+source_modules = [
+ "GRWTSK/NumberTheory/Primes/GoldbachPrimePowerCorrection.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitSplit.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerIndexEquiv.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerWeightTransport.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerSumTransport.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPacketFilter.lean",
+]
+required_lemmas = [
+ "Original nested n,p,k finite sum equals sum over OriginalIndex N, preserving each (n,p,k) representation",
+ "Rectangular p,k indicator sum equals sum over RectangularIndex N",
+ "Transport supported sums using indexEquiv and weight preservation",
+ "Compose into unconditional equality for all q,N, including q=0,N=0,N=1",
+]
+integrity = [
+ "No sorry, axioms, circular hypotheses, or assumed reindexing equality",
+ "Do not assume uniqueness of prime-power representations: preserve multiplicity",
+ "Do not promote to public root or claim kernel acceptance before actual validation",
+]
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerReindex.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerReindex"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATION"
