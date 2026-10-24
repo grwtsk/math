@@ -153,6 +153,17 @@ theorem check_pullback (P : Problem R ι ε γ) (S : Certificate R ι ε γ ν)
   apply decide_eq_true
   exact valid_pullback P S (of_decide_eq_true hS) T
 
+
+/-- The positive Gram portion of a refined certificate is precisely the
+congruence pullback of its original Gram matrix. This identity holds over
+any commutative ring; no target positivity or admissibility assumption is
+needed. It is independent of the equality and inequality multipliers. -/
+theorem Certificate.gram_pullback_congruence
+    (S : Certificate R ι ε γ ν) (T : Matrix ι κ R) :
+    (S.pullback T).gram.transpose * (S.pullback T).gram =
+      congruence T (S.gram.transpose * S.gram) := by
+  simp [Certificate.pullback, congruence, Matrix.transpose_mul, Matrix.mul_assoc]
+
 end Refinement
 
 
