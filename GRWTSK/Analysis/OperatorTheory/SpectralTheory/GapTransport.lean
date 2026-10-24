@@ -642,4 +642,31 @@ theorem linearPMap_projection_inner_expansion
   simp only [inner_add_left, inner_add_right]
   abel
 
+/-- Formal-adjoint symmetry gives conjugate off-diagonal pairings for
+domain-qualified projected states of a partially defined operator. -/
+theorem linearPMap_projection_cross_conjugate
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (hA : A.IsFormalAdjoint A)
+    (x : H) (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    inner 𝕜
+      (A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩)
+      (S.starProjection x) =
+    star (inner 𝕜
+      (A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩)
+      (Sᗮ.starProjection x)) := by
+  let xp : A.domain :=
+    ⟨S.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩
+  let xq : A.domain :=
+    ⟨Sᗮ.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩
+  have hs := hA xq xp
+  rw [hs]
+  exact inner_conj_symm _ _
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
