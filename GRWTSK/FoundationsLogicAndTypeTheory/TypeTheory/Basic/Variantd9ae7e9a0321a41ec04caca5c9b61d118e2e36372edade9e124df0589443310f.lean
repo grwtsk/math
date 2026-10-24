@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.ApplicationOrchestration.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.OrderedActionReceiptProtocols
 
 /-!
 The concrete application host lowers actions to a closed request language with

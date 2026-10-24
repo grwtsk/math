@@ -1,6 +1,6 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.PipelineContracts.Composition
+import GRWTSK.CombinatoricsAndDiscreteMathematics.EnumerativeCombinatorics.CombinatorialObjects.Words.IndexedOccurrenceEncoding
 import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.FiniteOccurrenceMaps
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.GovernedTransactions.Retirement
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.SnapshotPublicationTransitions
 
 /- Independent consumer signatures freeze the intended premises and conclusions. -/
 open GRWTSK

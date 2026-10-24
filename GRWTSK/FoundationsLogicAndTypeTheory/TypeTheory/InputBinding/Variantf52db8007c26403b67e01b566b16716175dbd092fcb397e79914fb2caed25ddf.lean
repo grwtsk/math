@@ -1,5 +1,5 @@
 import Checks.LiteralReplay
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FrontendBinding.Basic
+import GRWTSK.FoundationsLogicAndTypeTheory.TypeTheory.DependentTypeTheory.IdentityTypes.Transport.LiteralInputEqualityTransport
 import Lean.Data.Json.Basic
 import Lean.Data.Json.FromToJson.Basic
 

@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CaptureConstruction.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.LiteralObservationMapConstruction
 
 /-!
 The capture driver has five fallible phases: four host callbacks and the direct

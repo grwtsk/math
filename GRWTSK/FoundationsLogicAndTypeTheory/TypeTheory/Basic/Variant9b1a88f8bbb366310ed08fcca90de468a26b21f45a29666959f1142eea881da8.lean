@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CertificateMaintenance.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.LabelBucketAndMetadataRefinement
 
 /-!
 Composition of the certificate adapter's finite Outputs protocol. Capture,

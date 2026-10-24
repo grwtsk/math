@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.CaptureOrchestration.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.LiteralObservationPhaseProtocols
 import Mathlib.Data.Finset.Basic
 
 /-!
