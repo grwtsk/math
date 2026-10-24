@@ -1,5 +1,5 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
+Local mathematical attribution: grwtsk contributors.
 Model source: Artur Avila, Yoram Last, Mira Shamis, Qi Zhou, arXiv:2110.07974v2, (1.1).
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Algebra.LinearAlgebra.SchrodingerTransfer
