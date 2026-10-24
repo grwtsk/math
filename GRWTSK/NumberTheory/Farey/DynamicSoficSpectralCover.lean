@@ -7,6 +7,7 @@ This module is intentionally isolated from GRWTSK.lean. It proves no new
 zero-free region, RH, GRH, non-soficity, or historical claim.
 -/
 import GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
+import GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery
 import Mathlib.Data.Fintype.Basic
 
 set_option autoImplicit false
@@ -38,6 +39,46 @@ namespace GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover
 
 open GRWTSK.Logic.InformationLoss
 open GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
+
+/-- The generic difference supplier gives an exact model of why a local
+difference observable is not globally lossless: it forgets the additive
+anchor.  Any intermediate finite state that itself factors only through the
+difference stream therefore cannot recover the initial ordinate. -/
+theorem no_finite_state_initial_recovery_from_unanchored_difference
+    {State : Type uCell} [Fintype State]
+    (state : (ℕ → ℤ) → State)
+    (hstate :
+      FactorsThrough
+        GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference
+        state)
+    (hinitial : FactorsThrough state (fun f : ℕ → ℤ => f 0)) :
+    False := by
+  have hfactor :
+      FactorsThrough
+        GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference
+        (fun f : ℕ → ℤ => f 0) :=
+    factorsThrough_trans
+      GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference
+      state (fun f : ℕ → ℤ => f 0) hstate hinitial
+  exact
+    GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.initialValue_not_factorsThrough_difference
+      hfactor
+
+/-- Retaining the anchor repairs that exact information loss.  Because the
+anchored difference stream has an explicit left inverse, every source readout
+factors through it.  This is a reconstruction theorem, not a finite-code,
+compression-rate, heat-flow, or zeta theorem. -/
+theorem readout_factorsThrough_anchoredDifference
+    {Target : Type uRatio}
+    (readout : (ℕ → ℤ) → Target) :
+    FactorsThrough
+      GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.anchoredDifference
+      readout := by
+  refine ⟨readout ∘
+    GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrateDifference, ?_⟩
+  funext f
+  simp only [Function.comp_apply]
+  rw [GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrate_anchoredDifference]
 
 structure DynamicPartition
     (X : Type uX) (Cell : Type uCell) [Fintype Cell] where
