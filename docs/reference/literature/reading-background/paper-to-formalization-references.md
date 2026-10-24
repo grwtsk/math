@@ -6218,10 +6218,27 @@ complete declaration types or transitive
 has run on the new source. **Actual command,
 exit status, and external execution receipt
 for this new Lean leaf: `NOT_RUN / UNAVAILABLE`.**
-A separately pinned manual validation
-issue must capture such commands and receipts
-outside canonical mathematics before
-any verification-status change.
+The two **PASSIVE** validation requests now exist:
+[math #1152](https://github.com/grwtsk/math/issues/1152)
+and authorization-gated manual/receipt handoff
+[noeaaeue #394](https://github.com/grwtsk/noeaaeue/issues/394).
+Both pin exact math-main commit
+`c5ed3a83de29986cc60dbad098faa82f17e48014`
+and Git tree
+`c394b13e4735e1c47e5befe8625868855cf7f9ef`,
+with new-source blob
+`3dbe401843fd2609231dc20ab77a430d1692a433`,
+prior continuous-leaf blob
+`b76d4c8bf7544a1800917fd111cc017011d172c0`,
+and pinned Lean/Mathlib. The issues contain
+exact proposed dependency-build, direct elaboration,
+fresh checker and `#print axioms` commands,
+but **do not authorize or constitute execution**.
+Actual command exit statuses/receipts for this
+new Lean leaf remain `NOT_RUN / UNAVAILABLE`.
+If validation is later authorized, all effectful
+commands and receipts belong outside canonical
+mathematics and must be tied to the immutable pin.
 
 **Mathematical negative controls.** A
 Dirac probability measure supported at
