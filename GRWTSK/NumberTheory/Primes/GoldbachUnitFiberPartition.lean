@@ -72,4 +72,28 @@ theorem norm_unitPsi_sub_reduced_total_main_le
   exact hmain
 
 
+
+/-- Exact identification of a selected unit fiber with the ordinary
+inclusive residue-class psi sum. The representative is canonical
+only when q is positive and r is less than q. -/
+theorem unitPsiWeight_eq_finitePsiResidue
+    (q N r : ℕ) (hq : 0 < q) (hr : r < q)
+    (u : (ZMod q)ˣ) (hu : (u : ZMod q) = (r : ZMod q)) :
+    unitPsiWeight q N u = (finitePsiResidue N q r : ℂ) := by
+  have hf (n : ℕ) :
+      ((n : ZMod q) = (u : ZMod q)) ↔ n % q = r := by
+    rw [hu]
+    constructor
+    · intro h
+      have hv := congrArg ZMod.val h
+      simpa [ZMod.val_natCast, Nat.mod_eq_of_lt hr] using hv
+    · intro h
+      apply ZMod.val_injective
+      simpa [ZMod.val_natCast, Nat.mod_eq_of_lt hr] using h
+  unfold unitPsiWeight finitePsiResidue
+  simp_rw [hf]
+  push_cast
+  rfl
+
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
