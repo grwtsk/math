@@ -189,8 +189,8 @@
     "scope": "legacy curated source paths and pinned-parser observer census"
   },
   "input_digests": {
-    "grwtsk_lean_inventory": "072331baaa9199d008b9c1a9365be9c6d9ab60921b345f1fa2a5eb96d3afbb9e",
-    "repository_owned_lean_inventory": "5f7887f961f9a601a2346c490b5039b80dc9ed7a04b7955fb7a8b5270576be44",
+    "grwtsk_lean_inventory": "82a11aebdfdac524fbf95bf0c6510926b92338c21af9c5e35ae22d6016ec76f0",
+    "repository_owned_lean_inventory": "9c8ad95efe37718164ea9594b2c7df5e1b89b923ee1ad92fe162dd8c8babffa0",
     "docs_markdown_inventory_excluding_generated_count_surfaces": "6b1a20823c8ec4a216f9d8f9a55d18ce1d329fc5a11e0d6436414bb58c334301",
     "object_source_bindings": "dea449625f78dc8c9446efa60ea0d35af5f6bcd059f4df1f3db9d231caa7c0f7",
     "selected_results": "39d761d6bd1ed199bb41209618a44eeccdda17e59c44293c8fa85d75027e8c06",
@@ -203,5 +203,5 @@
     "Registered object guides and source bindings are curated documentation populations, not whole-library coverage.",
     "The legacy observer census remains historical and is not added to current filesystem populations."
   ],
-  "identity": "4826a8b4809c8afcfc76ec811728007124247f0d6b7ed7d67803e7413ca0cf4e"
+  "identity": "7c6cec4b7e40d18c12ad1b9e4b603cc8115a59243687d963238917925ac8cdf0"
 }
