@@ -1,3 +1,4 @@
+import Mathlib.LinearAlgebra.Span.Defs
 import GRWTSK.Algebra.KTheory.GrothendieckPort
 
 namespace GRWTSK.Algebra.KTheory
@@ -24,5 +25,34 @@ theorem not_mem_range_of_irrational_trace
   rintro ⟨a, rfl⟩
   obtain ⟨q, hq⟩ := rational_image a
   exact irrational_trace q hq
+
+
+/-- If an additive image has trace inside a rational-linear subspace, then
+every rational linear combination of image classes has trace inside that
+subspace as well. A class whose trace is outside it cannot belong to the
+rational span of the image.
+
+This theorem assumes that the target itself is a ℚ-module. Using it for a
+rationalized integral K₀-group requires a separately constructed
+rationalization map and trace extension. It neither constructs the
+Baum–Connes assembly map nor proves a trace-image restriction. -/
+theorem not_mem_rational_span_of_trace_not_mem
+    {A B C : Type*}
+    [AddCommGroup A] [AddCommGroup B] [Module ℚ B]
+    [AddCommGroup C] [Module ℚ C]
+    (assembly : A →+ B) (trace : B →ₗ[ℚ] C)
+    (allowed : Submodule ℚ C)
+    (image_allowed : ∀ a : A, trace (assembly a) ∈ allowed)
+    (x : B) (hx : trace x ∉ allowed) :
+    x ∉ Submodule.span ℚ (Set.range assembly) := by
+  intro hxSpan
+  apply hx
+  have hspan :
+      Submodule.span ℚ (Set.range assembly) ≤
+        Submodule.comap trace allowed := by
+    apply Submodule.span_le.mpr
+    rintro y ⟨a, rfl⟩
+    exact image_allowed a
+  exact hspan hxSpan
 
 end GRWTSK.Algebra.KTheory
