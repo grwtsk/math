@@ -1,0 +1,121 @@
+# sum_pow_of_commute
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:1513d0a0-f8e9-a842-208e-d91cf5b6c952",
+  "kind": "theorem",
+  "lexical_name": "sum_pow_of_commute",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "sum-pow-of-commute--6d69d9badeb45b51233c5cd0",
+  "source": {
+    "blob": "63cb72f79794165cbd9cad10925db44284df4ca0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 276,
+    "line": 237,
+    "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Distributions/Multinomial/Variantd8e6cfaa7f8ce4bcb9a90126c79104598c77d07ac26a5386f5856ef9df9ad660.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:6d69d9badeb45b51233c5cd00e104c69eb665154e38f58ad286b0390a9bb8b43",
+  "verification": {
+    "reference": "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Distributions/Multinomial/Variantd8e6cfaa7f8ce4bcb9a90126c79104598c77d07ac26a5386f5856ef9df9ad660.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:1513d0a0-f8e9-a842-208e-d91cf5b6c952`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 237–276.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem sum_pow_of_commute [Semiring R] (x : α → R)
+    (hc : (s : Set α).Pairwise fun i j => Commute (x i) (x j)) :
+    ∀ n,
+      s.sum x ^ n =
+        ∑ k : s.sym n,
+          k.1.1.multinomial *
+            (k.1.1.map <| x).noncommProd
+              (Multiset.map_set_pairwise <| hc.mono <| mem_sym_iff.1 k.2) := by
+  induction' s using Finset.induction with a s ha ih
+  · rw [sum_empty]
+    rintro (_ | n)
+      -- Porting note : Lean cannot infer this instance by itself
+    · haveI : Subsingleton (Sym α 0) := Unique.instSubsingleton
+      rw [_root_.pow_zero, Fintype.sum_subsingleton]
+      swap
+        -- Porting note : Lean cannot infer this instance by itself
+      · have : Zero (Sym α 0) := Sym.instZeroSym
+        exact ⟨0, by simp⟩
+      convert (@one_mul R _ _).symm
+      dsimp only
+      convert @Nat.cast_one R _
+    · rw [_root_.pow_succ, zero_mul]
+      -- Porting note : Lean cannot infer this instance by itself
+      haveI : IsEmpty (Finset.sym (∅ : Finset α) (succ n)) := Finset.instIsEmpty
+      apply (Fintype.sum_empty _).symm
+  intro n; specialize ih (hc.mono <| s.subset_insert a)
+  rw [sum_insert ha, (Commute.sum_right s _ _ _).add_pow, sum_range]; swap
+  · exact fun _ hb => hc (mem_insert_self a s) (mem_insert_of_mem hb)
+      (ne_of_mem_of_not_mem hb ha).symm
+  · simp_rw [ih, mul_sum, sum_mul, sum_sigma', univ_sigma_univ]
+    refine' (Fintype.sum_equiv (symInsertEquiv ha) _ _ fun m => _).symm
+    rw [m.1.1.multinomial_filter_ne a]
+    conv in m.1.1.map _ => rw [← m.1.1.filter_add_not ((· = ·) a), Multiset.map_add]
+    simp_rw [Multiset.noncommProd_add, m.1.1.filter_eq, Multiset.map_replicate, m.1.2]
+    rw [Multiset.noncommProd_eq_pow_card _ _ _ fun _ => Multiset.eq_of_mem_replicate]
+    rw [Multiset.card_replicate, Nat.cast_mul, mul_assoc, Nat.cast_comm]
+    congr 1; simp_rw [← mul_assoc, Nat.cast_comm]; rfl
+#align finset.sum_pow_of_commute Finset.sum_pow_of_commute
+
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Distributions/Multinomial/Variantd8e6cfaa7f8ce4bcb9a90126c79104598c77d07ac26a5386f5856ef9df9ad660.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Distributions/Multinomial/Variantd8e6cfaa7f8ce4bcb9a90126c79104598c77d07ac26a5386f5856ef9df9ad660.lean#L237).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `63cb72f79794165cbd9cad10925db44284df4ca0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

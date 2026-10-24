@@ -1,0 +1,98 @@
+# Complete source: GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.Irreducible.Variant1e719997435e2b8849a358f50d50b93dc4d2f28b85c5c1023e0aa4c6e41748e6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `abe490a695e31ba8f861e5cbc056ca2757388e43` · SHA-256 `02df61122fdd555b30330dc16aff6a7eb37e5192233b26a1e6d08cc19957e43f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.IsIrreducible.Varianta1945cce3c3097c11f8f6d80dc192b13e0bbad9ae33f70910c4c6f7473609305","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a1945cce3c3097c11f8f6d80dc192b13e0bbad9ae33f70910c4c6f7473609305","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Probability.ProbabilityMeasures.SourceCorpus.IsIrreducible.Varianta1945cce3c3097c11f8f6d80dc192b13e0bbad9ae33f70910c4c6f7473609305","mathematical_subject":"Probability.ProbabilityMeasures","original_sha256":"a1945cce3c3097c11f8f6d80dc192b13e0bbad9ae33f70910c4c6f7473609305","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Probability/Kernel/Irreducible.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Bryan Wang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Bryan Wang
+-/
+module
+
+public import Mathlib.Probability.Kernel.Composition.Comp
+
+/-!
+# Irreducibility of kernels
+
+A kernel `κ : Kernel α α` is `φ`-irreducible, for a given measure `φ` on `α`,
+if for every measurable set `A` with positive measure under `φ`, and for every `a : α`,
+there exists a positive integer `n` such that we have `(κ ^ n) a A > 0`.
+
+When the kernel `κ` is the transition kernel of a Markov chain,
+this precisely means that the Markov chain is `φ`-irreducible,
+that is, there is a positive probability of reaching any
+(`φ`-positive measure) set of states from any other state within a finite number of steps.
+
+## Main definitions
+
+* `ProbabilityTheory.Kernel.IsIrreducible`:
+  irreducibility of a given kernel with respect to a measure `φ`.
+
+## Main statements
+
+* `isIrreducible_of_le_measure`: If a kernel `κ` is irreducible with respect to a measure `φ₂`,
+  then it is also irreducible with respect to any measure `φ₁` with `φ₁ ≤ φ₂`.
+
+## References
+
+* [Meyn, S.P. and Tweedie, R.L., *Markov Chains and Stochastic Stability*][meyntweedie1993]
+* [C Robert, G Casella, *Monte Carlo Statistical Methods*][robertcasella2004]
+
+-/
+
+
+namespace GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.IsIrreducible.Varianta1945cce3c3097c11f8f6d80dc192b13e0bbad9ae33f70910c4c6f7473609305
+
+public section
+
+open MeasureTheory
+
+open scoped MeasureTheory ENNReal ProbabilityTheory
+
+namespace ProbabilityTheory
+
+variable {α : Type*} {mα : MeasurableSpace α}
+
+namespace Kernel
+
+/-- A kernel `κ : Kernel α α` is `φ`-irreducible (w.r.t. a given measure `φ` on `α`),
+if for every measurable set `A` with positive measure under `φ`,
+and for every `a : α`, there exists an integer `n` such that `(κ ^ n) a A > 0`.
+Ref. *Meyn-Tweedie* Proposition 4.2.1(ii), page 89 -/
+@[mk_iff]
+class IsIrreducible (φ : Measure α) (κ : Kernel α α) : Prop where
+  irreducible ⦃A⦄ (hA : MeasurableSet A) (hφA : φ A > 0) a :
+    ∃ (n : ℕ), (κ ^ n) a A > 0
+
+instance {φ : Measure α} [Subsingleton α] :
+    IsIrreducible φ Kernel.id where
+  irreducible s hs hsp a := by
+    use 1;
+    have ha : a ∈ s :=
+      Subsingleton.mem_iff_nonempty.mpr
+        <| MeasureTheory.nonempty_of_measure_ne_zero (μ := φ) (ne_of_lt hsp).symm
+    simp [id_apply, ha]
+
+instance {c : ℝ≥0∞} {φ : Measure α} {κ : Kernel α α} [hκ : IsIrreducible φ κ] :
+    IsIrreducible (c • φ) κ where
+  irreducible s hs hsp := by
+    simpa using hκ.irreducible hs <| by simp_all
+
+lemma isIrreducible_of_le_measure {φ₁ φ₂ : Measure α} (hφ : φ₁ ≤ φ₂)
+    {κ : Kernel α α} [hκ : IsIrreducible φ₂ κ] :
+    IsIrreducible φ₁ κ where
+  irreducible s hs hsp := by
+    simpa using hκ.irreducible hs <| Std.lt_of_lt_of_le hsp (hφ s)
+
+end Kernel
+
+end ProbabilityTheory
+```
