@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.LiteralLengthBounds.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.LiteralPayloadLengthRefinement
 
 /-!
 Capture construction is interpreted over a finite frozen stream of observed

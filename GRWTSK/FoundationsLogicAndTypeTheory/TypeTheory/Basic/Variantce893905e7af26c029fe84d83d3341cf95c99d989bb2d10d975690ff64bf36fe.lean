@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.PlanResources.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.BoundedCostAdmission
 
 /-!
 Final output-map admission counts destination paths, not action occurrences or

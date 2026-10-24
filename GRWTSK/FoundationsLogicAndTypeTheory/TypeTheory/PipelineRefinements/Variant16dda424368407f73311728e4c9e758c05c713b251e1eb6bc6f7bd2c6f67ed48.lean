@@ -1,8 +1,8 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.GreedyShards.Refinement
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.CombinatorialAlgorithms.WeightedGreedyPartitions
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SourceRefinement.Basic
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FilesystemRefinement.Basic
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.PipelineContracts.Composition
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.OccurrencePlans.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.FiniteOccurrenceMaps
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.GovernedTransactions.Retirement
 
 /- Independent consumer signatures freeze the intended premises and conclusions. -/

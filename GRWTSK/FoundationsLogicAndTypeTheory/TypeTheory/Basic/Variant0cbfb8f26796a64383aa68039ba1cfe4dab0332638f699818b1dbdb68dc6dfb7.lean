@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.PlanOutputBounds.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.FiniteMapOutputBounds
 
 /-!
 Checked metadata-to-literal correspondence. A byte cost is admitted only after

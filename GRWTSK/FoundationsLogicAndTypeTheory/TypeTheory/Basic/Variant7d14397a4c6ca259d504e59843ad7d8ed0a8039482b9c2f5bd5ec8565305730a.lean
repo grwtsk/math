@@ -1,4 +1,4 @@
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.LiteralLengthBounds.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.LiteralPayloadLengthRefinement
 
 /-!
 The finite operational construction loop preserves the complete record, rejects

@@ -1,5 +1,5 @@
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.PipelineContracts.Composition
-import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.OccurrencePlans.Basic
+import GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.FiniteOccurrenceMaps
 import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.GovernedTransactions.Retirement
 
 /- Independent consumer signatures freeze the intended premises and conclusions. -/
