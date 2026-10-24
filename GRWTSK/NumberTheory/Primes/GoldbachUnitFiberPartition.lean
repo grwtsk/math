@@ -96,4 +96,26 @@ theorem unitPsiWeight_eq_finitePsiResidue
   rfl
 
 
+
+/-- Exact finite residue-class psi discrepancy inherited from
+conditional character cancellation and a separate principal estimate. -/
+theorem norm_finitePsiResidue_sub_reduced_main_le
+    (q N r : ℕ) (hq : 0 < q) (hr : r < q)
+    {κ : Type*} [Fintype κ]
+    (χ : κ → (ZMod q)ˣ → ℂ)
+    (a : (ZMod q)ˣ) (ha : (a : ZMod q) = (r : ZMod q))
+    (principal : κ) (E : κ → ℝ)
+    (main : ℂ) (P : ℝ)
+    (hχ : OrthogonalAt χ a)
+    (hprincipal : ∀ b : (ZMod q)ˣ, χ principal b = 1)
+    (hunit : ∀ k : κ, ‖χ k a‖ ≤ 1)
+    (hE : ∀ k ∈ Finset.univ.erase principal,
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ k b‖ ≤ E k)
+    (hmain : ‖unitPsiTotal q N - main‖ ≤ P) :
+    ‖(Fintype.card κ : ℂ) * (finitePsiResidue N q r : ℂ) - main‖ ≤
+      (∑ k ∈ Finset.univ.erase principal, E k) + P := by
+  rw [← unitPsiWeight_eq_finitePsiResidue q N r hq hr a ha]
+  exact norm_unitPsi_sub_reduced_total_main_le
+    q N χ a principal E main P hχ hprincipal hunit hE hmain
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
