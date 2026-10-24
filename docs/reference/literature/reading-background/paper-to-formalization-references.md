@@ -9480,3 +9480,152 @@ conditional arithmetic split. Immutable source-and-provenance
 snapshot **28b8048fbb60a2405bbe6b4bdf6560f7cdabe2b7**.
 Both issues are OPEN and all compiler, fresh kernel and
 transitive axiom checks are **NOT_RUN**; no executed receipt exists.
+
+
+## Case SOFIC-RIGHT-CONTEXT-FINITE-CAPACITY-20261023
+
+**Status:** SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED, locally
+authored one-way proof candidate. This updates the existing subject
+modules and retains the existing zero-ordinate and Hodge/heat
+source identities. Full
+[mathematical ledger](../../../mathematics/NumberTheory/Zeta/Riemann/dynamic-sofic-ordinate-process.md)
+includes the new bounded theorem and all missing analytic suppliers.
+
+### Exact published context and provenance classification
+
+- **John Myhill** (1957), *Finite Automata and the Representation
+  of Events*, WADC Technical Report 57-624, pp. 112–137, stable
+  [CiNii bibliographic entry](https://cir.nii.ac.jp/crid/1570854176000165888?lang=en).
+- **Anil Nerode** (1958), *Linear Automaton Transformations*,
+  *Proceedings of the American Mathematical Society* 9(4),
+  pp. 541–544, stable
+  [DOI 10.1090/S0002-9939-1958-0135681-9](https://doi.org/10.1090/S0002-9939-1958-0135681-9).
+- **Exact method and hypothesis used:** finite-state recognizability
+  bounds the number of equivalence classes of right continuations.
+  The local development proves only a SOURCE-DERIVED, ONE-DIRECTION
+  finite-graph analogue: for any actual labeled graph on a
+  \`Fintype State\`, all continuations of a finite word are determined
+  by the \`Finset State\` of reachable endpoints. Its number of
+  distinct continuation behaviors is bounded above by
+  \`Fintype.card (Finset State)\` (mathematically 2^card(State)).
+  Arbitrarily many pairwise distinguishable right contexts contradict
+  every exact finite labeled-graph presentation of that WHOLE
+  language. There is no finite-alphabet cardinal bound supplied
+  beyond the type of finite lists; no minimization algorithm, converse
+  DFA construction, regular expression equivalence, or full
+  bi-infinite sofic theorem is imported. The source proof uses
+  Mathlib's generic finite-cardinality/pigeonhole lemmas, but no
+  published Myhill--Nerode theorem is imported or claimed
+  kernel-verified.
+- **Classification:** EXTERNAL_METHOD_BACKGROUND / LOCAL_IDENTITY_SOURCE_CANDIDATE,
+  not \`PAPER_TO_LEAN_BRIDGE_PROVED\` and not historical influence.
+  The treatment of right-context distinguishability is consistent
+  with Myhill/Nerode; mathematical source identities, definitions
+  and Lean theorem types are locally authored.
+
+### Exact source commits, files, Git blobs and declarations
+
+1. \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover\`:
+   [main commit 2cd309f2a2722ffc63508c71e4d9617670bab270](https://github.com/grwtsk/math/commit/2cd309f2a2722ffc63508c71e4d9617670bab270);
+   path GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean;
+   blob **b35036a76e2a9ddef93103e1b049b1598dfc8a6a**.
+   Added declarations (fully qualified with the prefix above):
+   \`reachableEndStates\`, \`mem_reachableEndStates\`,
+   \`wordPath_append\`, \`wordPath_split_append\`,
+   \`graphLanguage_append_iff_endStates\`,
+   \`graphLanguage_context_iff_of_same_endStates\`,
+   \`UnboundedRightContexts\`,
+   \`not_soficFactorLanguage_of_unboundedRightContexts\`,
+   \`not_soficTrace_of_unboundedRightContexts\`,
+   \`not_eventuallySoficTrace_of_all_tail_rightContexts\`.
+   Hypotheses: the existing \`LabeledGraph State Alphabet\`,
+   finite \`State\`, its literal inductive \`WordPath\`,
+   exact equality of graph and complete one-sided factor
+   languages, plus the explicit \`∀ n, ∃ Fin n\` family
+   of distinguishable right contexts. For eventual non-soficity,
+   the family must be supplied for **every** finite tail offset.
+   Source does not instantiate any zeta trace.
+
+2. \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover\`:
+   [main commit e75e40e23121b96e2dd7291ea5de86aaf7b05c66](https://github.com/grwtsk/math/commit/e75e40e23121b96e2dd7291ea5de86aaf7b05c66);
+   path GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean;
+   blob **e4321a4b6b04e701643d042d0ffe1e6791f163f7**.
+   Added exact declarations
+   \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_unbounded_rightContexts\`
+   and
+   \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_all_tail_rightContexts\`.
+   They specialize the finite graph bound to the existing
+   commuting dynamic/spectral cover. The cover may STILL admit
+   each trace as a path. Only the attempt to identify a trace's
+   complete factor language with a finite graph language is
+   contradicted under an actual right-context certificate.
+
+3. \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion\`:
+   [main commit 88f9f9328bdfd8b81bac20b727de8b72e3ef5b03](https://github.com/grwtsk/math/commit/88f9f9328bdfd8b81bac20b727de8b72e3ef5b03);
+   path GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean;
+   blob **f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7**.
+   Added \`ZetaUnboundedTailContexts\`,
+   \`no_eventual_sofic_of_zeta_rightContexts\`,
+   \`eventualSuppliers_of_zeta_rightContexts\`,
+   \`zeta_irrational_of_rational_sofic_and_rightContexts\`,
+   and
+   \`zeta_transcendental_of_critical_sofic_and_rightContexts\`.
+   The exact zeta predicate is \`ActualZetaZero\`, the
+   ordinate is \`z.im\`, and \`RationalReal\` and
+   \`AlgebraicReal\` retain their actual ℚ-real and
+   nonzero-polynomial formulations. All right-context witnesses
+   and the chosen Boolean trace are **UNCONSTRUCTED**.
+   Rational-height-to-eventual-sofic is an INDEPENDENT
+   assumption; algebraic-critical-line-height-to-eventual-sofic
+   is independently required for conditional transcendence.
+   The supplied \`ZetaCriticalPlacement\` is NOT proved by
+   this formalization. GRH is NOT a premise for conditional
+   irrationality, and GRH alone gives no transcendence.
+
+### Exact missing mathematical bridges
+
+No source theorem constructs:
+(1) a zeta-source-faithful spectral operator / Boolean trace,
+(2) right-context witness families for actual zero traces after
+every offset and for every cardinality n,
+(3) a rational-ordinate-to-exact-factor-language sofic proof,
+(4) an algebraic-on-critical-line-to-sofic proof,
+(5) critical-line placement from accepted external RH/GRH source,
+or (6) valid analytic stage estimates in a 7/8 -> 3/4
+zero-free refinement. The Bombieri moment-only collapse
+is an established SOURCE-LEVEL obstruction to one chosen
+reconstruction profile, not a proof of (2) or (3).
+The new source is a conditional supplier decomposition, not a
+theorem about actual irrational or transcendental ordinates.
+
+### Actual verification and checks
+
+The mathematical source files were integrated into the existing
+\`main\` with routine non-force commits. Blob/readback and
+direct no-\`sorry\`/\`admit\`/\`axiom\` source scanning:
+**SOURCE_INSPECTED**, not a kernel acceptance receipt.
+Local \`lean\`, \`lake\` and \`elan\` executables were
+unavailable. Toolchain is \`leanprover/lean4:v4.33.0\`,
+Mathlib revision
+\`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+
+The following *planned* commands are **NOT_RUN** and have
+no successful exit-code evidence:
+
+\`\`\`bash
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion
+lake env lean --trust=0 GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean
+lake env lean --trust=0 GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean
+lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean
+\`\`\`
+
+Fresh independent kernel rechecking and complete transitive
+\`#print axioms\`/\`sorryAx\`/unsafe/opaque/generated
+declaration auditing are likewise **NOT_RUN**. Static
+finite graph experiments, if any, are finite evidence only
+and may not be represented as proof or a kernel receipt.
+Effectful execution and immutable receipts belong outside
+the pure math repository (\`grwtsk/noeaaeue\`).
+No Railway or declined remote authorization was used.
