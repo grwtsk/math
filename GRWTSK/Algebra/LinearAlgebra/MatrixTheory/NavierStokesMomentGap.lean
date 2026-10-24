@@ -737,6 +737,130 @@ theorem positive_operator_moment_injective
     (by norm_num) (le_refl _) (le_refl _)
     (fun x => positive_operator_residual_coercivity B hBpos x)
 
+
+/-!
+## Sharp unit norm gap for shifted positive operators
+
+The upstream-derived quantitative moment gap has a norm-dependent factor.
+For the more specific case C=id and a positive-semidefinite real Hilbert
+operator B, expanding the squared norm gives the stronger unit lower
+bound. This estimate is sharp when B has a nonzero kernel.
+-/
+
+/-- Positivity supplies the norm-independent unit lower bound
+for I+B, stronger than the generic finite-rank constant. -/
+theorem positive_operator_moment_sharp_gap
+    (B : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    ‖y‖ ≤ ‖momentMatrix B (ContinuousLinearMap.id ℝ H) y‖ := by
+  have hJ : momentMatrix B (ContinuousLinearMap.id ℝ H) y = y + B y := by
+    simp [momentMatrix, add_comm]
+  rw [hJ]
+  have hsquare : ‖y‖ ^ 2 ≤ ‖y + B y‖ ^ 2 := by
+    rw [norm_add_sq_real, real_inner_comm (B y) y]
+    nlinarith [hBpos y, sq_nonneg (‖B y‖)]
+  exact (sq_le_sq₀ (norm_nonneg _) (norm_nonneg _)).mp hsquare
+
+/-- The norm margin of a perturbation of I+B is bounded below by
+one minus the perturbation operator norm, without a positivity
+assumption on the perturbing operator. -/
+theorem positive_operator_perturbed_sharp_gap
+    (B P : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (y : H) :
+    (1 - ‖P - momentMatrix B (ContinuousLinearMap.id ℝ H)‖) * ‖y‖ ≤
+      ‖P y‖ := by
+  exact perturbation_lower_bound
+    (momentMatrix B (ContinuousLinearMap.id ℝ H)) P
+    (fun x => by
+      simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos x)
+    y
+
+/-- Any perturbation inside the unit margin preserves injectivity. -/
+theorem positive_operator_perturbed_injective
+    (B P : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (hpert : ‖P - momentMatrix B (ContinuousLinearMap.id ℝ H)‖ < 1) :
+    Function.Injective P := by
+  exact injective_of_perturbation
+    (momentMatrix B (ContinuousLinearMap.id ℝ H)) P
+    (fun x => by
+      simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos x)
+    hpert
+
+/-- In finite dimensions a perturbation inside the unit norm
+margin has the same strict determinant sign as I+B. -/
+theorem positive_operator_perturbed_det_sign [FiniteDimensional ℝ H]
+    (B P : H →L[ℝ] H)
+    (hBpos : ∀ y : H, 0 ≤ inner ℝ (B y) y)
+    (hpert : ‖P - momentMatrix B (ContinuousLinearMap.id ℝ H)‖ < 1) :
+    0 < (momentMatrix B (ContinuousLinearMap.id ℝ H)).det * P.det := by
+  exact determinant_sign_of_perturbation
+    (momentMatrix B (ContinuousLinearMap.id ℝ H)) P
+    (fun x => by
+      simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos x)
+    hpert
+
+/-- The literal Euclidean representation of I+B has a squared
+observation constant of one, without the generic norm-dependent loss. -/
+theorem positive_euclidean_moment_sharp_observability {n : ℕ}
+    (B : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (hBpos : ∀ y : EuclideanSpace ℝ (Fin n), 0 ≤ inner ℝ (B y) y)
+    (v : Fin n → ℝ) :
+    energy (Finset.univ : Finset (Fin n)) v ≤
+      energy (Finset.univ : Finset (Fin n))
+        (applyMatrix Finset.univ
+          (euclideanOperatorMatrix
+            (momentMatrix B
+              (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))) v) := by
+  have hgap : ∀ y : EuclideanSpace ℝ (Fin n),
+      (1 : ℝ) * ‖y‖ ≤
+        ‖momentMatrix B (ContinuousLinearMap.id ℝ _) y‖ := by
+    intro y
+    simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos y
+  have h := observability_of_intertwining
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))))
+    (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    euclideanEncode (1 : ℝ) (by norm_num) hgap
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))) v
+  simpa only [one_pow, one_mul] using h
+
+/-- In any finite Euclidean dimension the strict finite-adjoint
+relative residual factor is 1-damping for the positive shifted
+operator, with the literal Frobenius damping unchanged. -/
+theorem positive_euclidean_moment_sharp_contraction {n : ℕ}
+    (B : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (hBpos : ∀ y : EuclideanSpace ℝ (Fin n), 0 ≤ inner ℝ (B y) y)
+    (v : Fin n → ℝ) :
+    let A := euclideanOperatorMatrix
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+      (1 - damping Finset.univ Finset.univ A) * energy Finset.univ v ∧
+    1 - damping Finset.univ Finset.univ A < 1 := by
+  dsimp only
+  have hgap : ∀ y : EuclideanSpace ℝ (Fin n),
+      (1 : ℝ) * ‖y‖ ≤
+        ‖momentMatrix B (ContinuousLinearMap.id ℝ _) y‖ := by
+    intro y
+    simpa only [one_mul] using positive_operator_moment_sharp_gap B hBpos y
+  have h := residual_relative_contraction_of_intertwining
+    (Finset.univ : Finset (Fin n))
+    (euclideanOperatorMatrix
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n)))))
+    (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))
+    euclideanEncode (1 : ℝ) (by norm_num) hgap
+    euclideanEncode_energy
+    (euclideanOperatorMatrix_intertwines
+      (momentMatrix B (ContinuousLinearMap.id ℝ (EuclideanSpace ℝ (Fin n))))) v
+  simpa only [one_pow, mul_one] using h
+
 end PositiveOperators
 
 
