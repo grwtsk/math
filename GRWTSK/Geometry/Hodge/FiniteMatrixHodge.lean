@@ -817,6 +817,105 @@ theorem constant_pullback_target_exact (v : Fin 1 → ℝ) :
   rw [quadratic_congruence, constantEmbedding_apply, target_quadratic]
   simp [pow_two]
 
+
+/-!
+## Exact constant-cochain range equals the interval Hodge kernel
+
+The previous nonzero admissible range is not only contained in the
+one-edge Hodge kernel: it is the **entire** kernel of both the existing
+cellular coboundary and its Laplacian. Both implications retain the
+actual incidence operator and the literal matrix embedding.
+-/
+
+/-- The explicit one-coordinate constant range equals the kernel of
+the original cellular differential on the oriented one-edge graph. -/
+theorem constantLine_eq_delta_ker :
+    constantLine = LinearMap.ker (delta interval) := by
+  apply Submodule.ext
+  intro x
+  constructor
+  · intro hx
+    change x ∈ LinearMap.range constantEmbedding.mulVecLin at hx
+    obtain ⟨v, hv⟩ := hx
+    change delta interval x = 0
+    rw [← hv, Matrix.mulVecLin_apply]
+    exact delta_constant v
+  · intro hx
+    have hd : delta interval x = 0 := by
+      simpa only [LinearMap.mem_ker] using hx
+    have hc : interval.coboundary ℝ x = 0 := by
+      simpa only [delta_eq_coboundary] using hd
+    have h01 : x 1 = x 0 := by
+      have he := (interval.coboundary_eq_zero_iff_edge_eq ℝ x).mp hc
+        (0 : Fin 1)
+      simpa [interval] using he
+    change x ∈ LinearMap.range constantEmbedding.mulVecLin
+    refine ⟨fun _ : Fin 1 => x 0, ?_⟩
+    change constantEmbedding *ᵥ (fun _ : Fin 1 => x 0) = x
+    rw [constantEmbedding_apply]
+    funext i
+    fin_cases i
+    · rfl
+    · exact h01.symm
+
+/-- The same constant range equals the degree-zero Hodge Laplacian
+kernel, using the independently proved graph kernel identity. -/
+theorem constantLine_eq_laplacian_ker :
+    constantLine = LinearMap.ker (laplacian interval) := by
+  calc
+    constantLine = LinearMap.ker (delta interval) :=
+      constantLine_eq_delta_ker
+    _ = LinearMap.ker (laplacian interval) :=
+      (laplacian_ker_eq_delta_ker interval).symm
+
+/-- The constant line is exactly degree-zero cellular cohomology
+representatives for the oriented interval, not just a subspace of them. -/
+theorem constantLine_eq_hZero :
+    constantLine = interval.hZero ℝ := by
+  calc
+    constantLine = LinearMap.ker (delta interval) :=
+      constantLine_eq_delta_ker
+    _ = interval.hZero ℝ := by
+      rw [delta_eq_coboundary]
+      rfl
+
+/-- In this concrete graph, the certificate's admissibility predicate
+is equivalent to vanishing of the actual cellular differential.
+The equality energy is the single squared edge difference and
+the inequality constraint is everywhere nonnegative. -/
+theorem admissible_iff_delta_zero (x : Fin 2 → ℝ) :
+    problem.Admissible x ↔ delta interval x = 0 := by
+  constructor
+  · intro hx
+    have hq : quadratic intervalLaplacianMatrix x = 0 := by
+      simpa [problem] using hx.1 (0 : Fin 1)
+    have heq : x 1 = x 0 := by
+      rw [intervalLaplacian_quadratic] at hq
+      exact sub_eq_zero.mp (sq_eq_zero_iff.mp hq)
+    rw [delta_eq_coboundary]
+    funext e
+    fin_cases e
+    simp [OrientedIncidence.coboundary_apply, interval, heq]
+  · intro hd
+    have hx : x ∈ constantLine := by
+      rw [constantLine_eq_delta_ker]
+      simpa only [LinearMap.mem_ker] using hd
+    exact constantLine_admissible x hx
+
+/-- The actual certificate-admissible vectors are **precisely**
+the constant-line submodule; no extra vectors are admitted. -/
+theorem admissible_iff_constantLine (x : Fin 2 → ℝ) :
+    problem.Admissible x ↔ x ∈ constantLine := by
+  simpa only [constantLine_eq_delta_ker, LinearMap.mem_ker] using
+    (admissible_iff_delta_zero x)
+
+/-- Equivalently, admissibility is exactly the vanishing of the
+pre-existing finite Hodge Laplacian. -/
+theorem admissible_iff_laplacian_zero (x : Fin 2 → ℝ) :
+    problem.Admissible x ↔ laplacian interval x = 0 :=
+  (admissible_iff_delta_zero x).trans
+    (laplacian_eq_zero_iff_delta_eq_zero interval x).symm
+
 end SingleEdgeCertificate
 
 end GRWTSK.Geometry.Hodge.FiniteMatrixHodge
