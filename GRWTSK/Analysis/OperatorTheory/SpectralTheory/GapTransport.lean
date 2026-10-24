@@ -527,6 +527,6 @@ theorem offDiagonalBlock_pairing
       inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) := by
   simp only [offDiagonalBlock, ContinuousLinearMap.comp_apply]
   rw [Sᗮ.inner_starProjection_left_eq_right]
-  rw [Sᗮ.starProjection_eq_self_iff.mpr (Sᗮ.starProjection x).property]
+  rw [Sᗮ.starProjection_eq_self_iff.mpr (Sᗮ.starProjection_apply_mem x)]
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
