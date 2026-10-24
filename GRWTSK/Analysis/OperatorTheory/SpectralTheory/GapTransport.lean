@@ -587,4 +587,32 @@ theorem linearPMap_complementary_projection_mem_domain
   rw [hq]
   exact A.domain.sub_mem hx hp
 
+/-- A partially defined linear operator splits along complementary projections
+when its domain is preserved. All three applications carry domain witnesses;
+this does not imply that either sector is invariant under the operator. -/
+theorem linearPMap_projection_decomposition
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (A : H →ₗ.[𝕜] H) (x : H)
+    (hx : x ∈ A.domain)
+    (hstable : ∀ y ∈ A.domain, S.starProjection y ∈ A.domain) :
+    A ⟨x, hx⟩ =
+      A ⟨S.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩ +
+      A ⟨Sᗮ.starProjection x,
+        (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩ := by
+  let xp : A.domain :=
+    ⟨S.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).1⟩
+  let xq : A.domain :=
+    ⟨Sᗮ.starProjection x,
+      (linearPMap_complementary_projection_mem_domain S A x hx hstable).2⟩
+  have hsum : (⟨x, hx⟩ : A.domain) = xp + xq := by
+    apply Subtype.ext
+    exact (S.starProjection_add_starProjection_orthogonal x).symm
+  change A.toFun ⟨x, hx⟩ = A.toFun xp + A.toFun xq
+  rw [hsum]
+  exact map_add A.toFun xp xq
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
