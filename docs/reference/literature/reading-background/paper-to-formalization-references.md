@@ -11543,3 +11543,12 @@ Operational dispatch and receipts remain outside canonical Math.
 The doubled construction remains optional and the deterministic core remains
 diffuser-free. Imported mathematics and all previously listed unresolved
 finite-to-runtime and spectral/arithmetic bridges are unchanged.
+
+
+### Weighted finite reflection: local Fin 4 comparison proof repair
+
+Attribution: grwtsk contributors. Status: SOURCE_REPAIR_NOT_RUN.
+
+The accepted rational finite weighted bilinear fourteen-law package keeps all hypotheses and selected proposition headers. The managed replay at Math commit 179c05da624839dda553788e3435bcbab690a7ac failed in the concrete signed control at source line 377: simp reached its recursion limit after the generic Fin.ext_iff rule was added. Retained failed batch receipt SHA256: 0ae7abe1ade04b1f868e5cef07cb513a25ae27dfff21d634156cb5ca84dcf5f5; both compile stdout SHA256: 5560f6c7fe6bdd5f838f69dfa2e23767cd6f0b7466c82e373d7dda128c8c577e. No expected-type consumer or theorem axiom audit completed in that attempt.
+
+This source-only repair replaces the generic Fin equality simplification rule in `GRWTSK.LinearAlgebra.WeightedFiniteReflection.step_not_selfAdjoint_control` with the two concrete Fin 4 disequalities 0 ≠ 3 and 3 ≠ 0, each proved by decide and used by the existing norm_num proof. It adds no hypothesis, axiom, warning suppression, recursion-limit increase, native_decide, import or root import. All thirteen main selected proposition headers and the optional doubled-lift proposition are unchanged; the optional module is unchanged. The finite exact +1/8 and -1/8 control remains the same statement. New proof candidate SHA256: 2992bd4d6ef05e17f48fad648f7bf7c80433ada4ad0dfeac615dd23bccb337bc. Native verification of this new candidate: NOT_RUN; separate managed replay with exact fourteen expected-type consumers and all 48 theorem type/transitive-axiom reports is still required. The doubled lift remains optional mathematical construction, the runtime core remains diffuser-free, and no RH or infinite-dimensional bridge is assumed or established. This entry records a proof-script repair rather than a new paper-derived theorem or a changed historical attribution.

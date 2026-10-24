@@ -374,8 +374,10 @@ def lastMarked : Fin 4 → Bool := fun i => decide (i = 3)
 theorem step_not_selfAdjoint_control :
     pairing uniformFour (step uniformFour lastMarked firstBasis) fourthBasis = 1 / 8 ∧
       pairing uniformFour firstBasis (step uniformFour lastMarked fourthBasis) = -1 / 8 := by
+  have h03 : (0 : Fin 4) ≠ 3 := by decide
+  have h30 : (3 : Fin 4) ≠ 0 := by decide
   norm_num [pairing, step, diffuse, phase, sign, weightedMean, uniformFour,
-    firstBasis, fourthBasis, lastMarked, Fin.sum_univ_succ, Fin.ext_iff]
+    firstBasis, fourthBasis, lastMarked, Fin.sum_univ_succ, h03, h30]
 
 theorem step_not_selfAdjoint :
     ¬ (∀ x y : Vec (Fin 4),
