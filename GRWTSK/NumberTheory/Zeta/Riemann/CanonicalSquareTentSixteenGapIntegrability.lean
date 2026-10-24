@@ -44,7 +44,7 @@ theorem stageThreeSixteenGap_nonnegative
       apply tent_eq_zero_of_outside _ _ _ (squareRadius_pos 3)
       intro hi
       norm_num [squareCenter, squareRadius] at hi
-      linarith
+      linarith [le_of_not_gt h]
     simp [stageThreeSixteenGap, hz]
 
 theorem stageFourSixteenGap_nonnegative
@@ -67,7 +67,7 @@ theorem stageFourSixteenGap_nonnegative
       apply tent_eq_zero_of_outside _ _ _ (squareRadius_pos 4)
       intro hi
       norm_num [squareCenter, squareRadius] at hi
-      linarith
+      linarith [le_of_not_gt h]
     simp [stageFourSixteenGap, hz]
 
 theorem stageThreeSixteenGap_integrableOn :
