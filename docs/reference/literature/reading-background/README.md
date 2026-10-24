@@ -92,3 +92,5 @@ Next implementation pass: [finite meromorphic detector and actual completed-zeta
 Next implementation pass: [rank-one triangular uniqueness and exact-defect tracking by taxonomy](obligation-implementation-progress-v10.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
 
 Next implementation pass: [common-parameter G2 braid-six Hecke matrices by taxonomy](obligation-implementation-progress-v11.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
+
+Next implementation pass: [braid-six Hecke presentation and universal evaluation](obligation-implementation-progress-v12.md). Counts remain four completed, fifteen partial, seventeen unresolved.
