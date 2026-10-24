@@ -43,6 +43,8 @@ unresolved = [
   "Validate all four declarations using pinned Lean and Mathlib",
 ]
 commands = [
+  "git diff --quiet",
+  "git diff --cached --quiet",
   "git checkout --detach d5240f8066ab731a4c3284da7b60538d6b7de48a",
   "test \"$(git rev-parse HEAD)\" = d5240f8066ab731a4c3284da7b60538d6b7de48a",
   "test \"$(git hash-object GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean)\" = ac4339e781f4236c8b374e5bf7bd981f066ff2be",
