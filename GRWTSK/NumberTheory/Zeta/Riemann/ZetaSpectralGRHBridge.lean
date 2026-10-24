@@ -159,4 +159,41 @@ theorem zetaCriticalPlacement_transports_with_rightContext_certificate
       rationalEventually algebraicOnLineEventually hcontexts
   · exact hZeta
 
+
+/-- A complete family of finite-capacity continuation certificates for the SAME
+zeta trace supplies the unbounded-tail-context premise, after which the existing
+right-context transport theorem applies unchanged.  Each arithmetic-to-sofic
+classification, the spectral-cover family, the dynamic spectral process, and
+critical-line placement remain independent supplied hypotheses. -/
+theorem zetaCriticalPlacement_transports_with_all_capacityCertificates
+    {Index : Type uIndex}
+    {Zero : Index → Type uGen}
+    {family : ∀ i, ZeroProblem (Zero i)}
+    (covers : SpectralCoverFamily zetaZeroProblem family)
+    {Obs : Type uObs} {State : Type uState} {Spectral : Type uSpectral}
+    [Fintype State] [AddCommGroup Spectral] [Module ℂ Spectral]
+    (process : DynamicSpectralCover ℂ Obs State Bool Spectral)
+    (rationalEventually :
+      ∀ z, ActualZetaZero z → RationalReal (zetaHeight z) →
+        GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+          (process.labelTrace z))
+    (algebraicOnLineEventually :
+      ∀ z, ActualZetaZero z → z.re = (1 : ℝ) / 2 →
+        AlgebraicReal (zetaHeight z) →
+          GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.EventuallySoficTrace
+            (process.labelTrace z))
+    (hall : ∀ capacity : ℕ,
+      ZetaTailContextCapacityCertificate process.labelTrace capacity)
+    (hZeta : ZetaCriticalPlacement) :
+    GeneralizedHypothesis family ∧
+      ∀ z, ActualZetaZero z →
+        (¬ RationalReal (zetaHeight z)) ∧
+        (z.re = (1 : ℝ) / 2) ∧
+        (¬ AlgebraicReal (zetaHeight z)) := by
+  exact zetaCriticalPlacement_transports_with_rightContext_certificate
+    covers process rationalEventually algebraicOnLineEventually
+    (zeta_unboundedTailContexts_of_all_capacityCertificates
+      process.labelTrace hall)
+    hZeta
+
 end GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge
