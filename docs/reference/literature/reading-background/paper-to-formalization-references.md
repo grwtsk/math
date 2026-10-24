@@ -10377,9 +10377,14 @@ A selected spectral process needs a separately supplied
    Module \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
    first source-integration commit
    [5e940df90629e9565268f80249e3ccc6d5390bd0](https://github.com/grwtsk/math/commit/5e940df90629e9565268f80249e3ccc6d5390bd0),
-   **revised typeclass-explicit source commit**
-   [ee3b050b81482bcc944ecc316995d2ec54df7bd2](https://github.com/grwtsk/math/commit/ee3b050b81482bcc944ecc316995d2ec54df7bd2),
-   exact current Git blob **82fc612cce62fb1eabf09b7c737bc8a54705d939**.
+   **latest source repair commit**
+   [84637e2b37fcd3ff018d01247337e223d7386855](https://github.com/grwtsk/math/commit/84637e2b37fcd3ff018d01247337e223d7386855),
+   exact current Git blob **6b28280b98527301af190f5c50696b9edcf0e05f**.
+   Intermediate `ee3b050b81482bcc944ecc316995d2ec54df7bd2`
+   had prior blob `82fc612cce62fb1eabf09b7c737bc8a54705d939`.
+   The graph-bound source now names `[Fintype State] [DecidableEq State]`
+   explicitly; presentation capacity internally uses classical
+   decidable equality plus `P.finiteState`.
 2. \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le\`,
    module \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
    initial integration
