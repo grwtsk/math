@@ -335,4 +335,27 @@ theorem integrableOn_comparison_rpow_Ioi
   · linarith
   · exact_mod_cast (show 0 < N by omega)
 
+
+/-- Quantitative pointwise domination by an integrable negative power.
+The comparison constant is explicit and positive for σ > 1. -/
+theorem logarithmicPowerTailKernel_le_comparison
+    (σ t : ℝ) (hσ : 1 < σ) (ht : 3 ≤ t) :
+    logarithmicPowerTailKernel σ t ≤
+      (2 / (σ - 1)) * t ^ (-(σ + 1) / 2) := by
+  have htpos : 0 < t := by linarith
+  have hδ : 0 < (σ - 1) / 2 := by linarith
+  have hlog : Real.log t ≤ t ^ ((σ - 1) / 2) / ((σ - 1) / 2) :=
+    Real.log_le_rpow_div htpos.le hδ
+  have hpow : 0 < t ^ σ := Real.rpow_pos_of_pos htpos _
+  unfold logarithmicPowerTailKernel
+  calc
+    Real.log t / t ^ σ ≤
+        (t ^ ((σ - 1) / 2) / ((σ - 1) / 2)) / t ^ σ :=
+      div_le_div_of_nonneg_right hlog hpow.le
+    _ = (2 / (σ - 1)) * t ^ (-(σ + 1) / 2) := by
+      rw [← div_div_eq_div_mul, ← Real.rpow_sub htpos]
+      congr 1
+      · ring
+      · ring
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
