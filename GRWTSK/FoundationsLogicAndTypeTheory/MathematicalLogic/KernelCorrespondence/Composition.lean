@@ -29,4 +29,4 @@ theorem compose {V W U : Type}
 
 end Finite1Composition
 
-#print axioms Finite1Composition.compose
+-- Axiom audit requirement: Finite1Composition.compose

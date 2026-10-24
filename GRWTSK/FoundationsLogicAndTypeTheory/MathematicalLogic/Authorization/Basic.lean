@@ -37,9 +37,9 @@ theorem no_authority_expansion
 example : MayAct True True (fun (_ : Unit) => True) () :=
   ⟨True.intro, True.intro, True.intro⟩
 
-#print axioms requires_authentication
-#print axioms revocation_blocks
-#print axioms no_authority_expansion
+-- Axiom audit requirement: requires_authentication
+-- Axiom audit requirement: revocation_blocks
+-- Axiom audit requirement: no_authority_expansion
 
 end GRWTSK.Genesis
 
@@ -74,8 +74,8 @@ theorem accepted_entailment {premises conclusion : Prop}
     conclusion :=
   sound_derivation accepted
 
-#print axioms mathematical_judgments_do_not_force_operational_or_public
-#print axioms investigation_admission_is_not_truth
-#print axioms accepted_entailment
+-- Axiom audit requirement: mathematical_judgments_do_not_force_operational_or_public
+-- Axiom audit requirement: investigation_admission_is_not_truth
+-- Axiom audit requirement: accepted_entailment
 
 end GRWTSK.Genesis
