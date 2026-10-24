@@ -441,4 +441,20 @@ theorem self_adjoint_projection_energy_expansion
   rw [continuous_operator_projection_inner_expansion S T x]
   rw [self_adjoint_projection_cross_conjugate S T hT x]
 
+/-- The real energy of a bounded self-adjoint operator decomposes into
+diagonal sector energies and twice the real off-diagonal pairing. -/
+theorem self_adjoint_projection_real_energy_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H) :
+    RCLike.re (inner 𝕜 (T x) x) =
+      RCLike.re (inner 𝕜 (T (S.starProjection x)) (S.starProjection x)) +
+      RCLike.re (inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x)) +
+      2 * RCLike.re (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) := by
+  have h := self_adjoint_projection_energy_expansion S T hT x
+  rw [h]
+  simp only [map_add, RCLike.re_conj]
+  ring
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
