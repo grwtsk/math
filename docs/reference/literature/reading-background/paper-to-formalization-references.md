@@ -10329,3 +10329,107 @@ inspection into execution evidence. The affected source remains subject to the
 previously recorded **NOT_RUN / pending compilation, fresh kernel checking, and
 transitive axiom audit** limits wherever no exact executed receipt has been
 recorded.
+
+
+## Case FINITE-SOFIC-STATE-CAPACITY-20261023
+
+**Paper/method context:** John Myhill, *Finite Automata and the
+Representation of Events*, WADC Technical Report 57-624 (1957);
+Anil Nerode, *Linear Automaton Transformations*, *Proceedings of
+the American Mathematical Society* 9 (1958), 541–544, stable DOI
+[10.1090/S0002-9939-1958-0135681-9](https://doi.org/10.1090/S0002-9939-1958-0135681-9).
+**Exact method compared:** finite-state languages admit at most
+finitely many distinct right-continuation behaviors.
+No published theorem is imported directly into the Lean source.
+The locally authored one-direction proof uses the reachable-endpoint
+subset signature of a finite nondeterministic labeled graph and
+Mathlib's finite-type pigeonhole inequality; it is not an
+automaton-minimization algorithm, the complete Myhill--Nerode
+equivalence, or a theorem that a selected zeta-zero trace is sofic
+or non-sofic. No historical influence is inferred.
+
+**Exact mathematical hypotheses and conclusions.** For an actual
+\`LabeledGraph State Alphabet\` with \`[Fintype State]\`, and
+\`words : Fin n → List Alphabet\`, require:
+for any indices \`i ≠ j\`, there exists a finite \`suffix\`
+such that **membership of the concatenated word in the full
+graph language differs**. Then the number of distinguished
+words satisfies
+\`n ≤ Fintype.card (Finset State)\`. The exact presentation
+variant requires a separate \`ExactLanguagePresentation\` equating
+the **entire source word language** with the graph language;
+its conclusion is \`n ≤ P.stateCapacity\`.
+\`stateCapacity\` explicitly obtains \`Fintype P.State\`
+from \`P.finiteState\`, avoiding a source-level typeclass lookup
+assumption in the theorem statement.
+The existing unbounded-right-context no-sofic proof now uses
+these bounded estimates at \`n = P.stateCapacity + 1\`.
+A selected spectral process needs a separately supplied
+\`ExactLanguageAt\`; mere finite graph path admission is inadequate.
+
+**Exact fully qualified local declarations and SHA identity.**
+
+1. \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.ExactLanguagePresentation.stateCapacity\`,
+   \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_graphLanguage\`,
+   \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_exactPresentation\`,
+   and the refactored
+   \`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficFactorLanguage_of_unboundedRightContexts\`.
+   Module \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\`,
+   first source-integration commit
+   [5e940df90629e9565268f80249e3ccc6d5390bd0](https://github.com/grwtsk/math/commit/5e940df90629e9565268f80249e3ccc6d5390bd0),
+   **revised typeclass-explicit source commit**
+   [ee3b050b81482bcc944ecc316995d2ec54df7bd2](https://github.com/grwtsk/math/commit/ee3b050b81482bcc944ecc316995d2ec54df7bd2),
+   exact current Git blob **82fc612cce62fb1eabf09b7c737bc8a54705d939**.
+2. \`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le\`,
+   module \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\`,
+   initial integration
+   [92277b5da59fd0e28c52ed4015362c8b39579d24](https://github.com/grwtsk/math/commit/92277b5da59fd0e28c52ed4015362c8b39579d24),
+   revised for the explicit capacity field in
+   [e82b61a318cee9245b7533c08d4f582180991b82](https://github.com/grwtsk/math/commit/e82b61a318cee9245b7533c08d4f582180991b82),
+   current Git blob **1d6ef4738af19edebd1d85e07f944ee4937a9001**.
+3. Zeta conditional consumer remains
+   \`GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion\`,
+   source blob **f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7**,
+   unchanged by this increment.
+
+**Classifications:** Imported exact external theorems: **none**;
+kernel-verified bridges: **none claimed**;
+source proof candidate: finite right-context bound and named
+finite presentation capacity; conditional interface: any
+exact spectral graph-language identification; finite evidence:
+independent Python checks on all 256 two-state binary edge-relations
+with 246,016 append/language comparisons and 228,563 signature
+context comparisons (**PASS**, not Lean); historical parallel:
+Myhill/Nerode one-direction continuation concept (**ANALOGY / METHOD
+COMPARISON**); unresolved premises: actual zeta source operator and
+trace, arithmetic-to-sofic classification, non-eventual-soficity
+certificates, critical-line placement, and all cofinal 7/8→3/4
+analytic stage estimates. Do not infer irrationality or
+transcendence of actual zero heights from the bounded theorem.
+
+**Verification, commands and actual results:**
+source readback and direct no-\`sorry\`/\`admit\`/\`axiom\` text scan
+are source-only; the independent finite graph enumeration is not
+kernel evidence. Lean \`leanprover/lean4:v4.33.0\`, Mathlib
+\`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+Required but **NOT_RUN** at this revised source snapshot:
+
+\`\`\`bash
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover
+lake build --wfail GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover
+lake build --wfail GRWTSK.NumberTheory.Zeta.Riemann.ZeroOrdinateSoficLanguageCriterion
+lake env lean --trust=0 GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean
+lake env lean --trust=0 GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean
+lake env lean --trust=0 GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean
+\`\`\`
+
+Fresh independent .olean kernel checking, declaration-level
+\`#check\` / \`#print axioms\` for the above qualified names,
+and complete transitive \`sorryAx\`/unsafe/opaque auditing remain
+**NOT_RUN / NOT_KERNEL_AUDITED**; actual process exit statuses and
+external receipts are UNAVAILABLE. Old verification issues
+#1182/#1195/#1197/#1200 target earlier immutable blobs and
+must not be presented as revised-source acceptance. Operational
+runners and receipts belong outside the math repository in
+\`grwtsk/noeaaeue\`. No Railway, force push or declined remote
+dispatch.
