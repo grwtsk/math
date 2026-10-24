@@ -8020,3 +8020,5 @@ Next source follow-up: [pending braid-six character and noncollapse candidates](
 Latest follow-up: [fresh source replay for pending Hecke character candidates](obligation-implementation-progress-v14.md). No new target acceptance; counts remain unchanged.
 
 Latest follow-up: [dependency replay failure and source-asset repair](obligation-implementation-progress-v15.md). Five targets remain unverified; all obligation counts unchanged.
+
+Latest follow-up: [Hecke character replay blocked by resource custody](obligation-implementation-progress-v16.md). No target acceptance; all obligation counts unchanged.
