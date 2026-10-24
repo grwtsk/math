@@ -6,6 +6,7 @@ import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.NumberTheory.DirichletCharacter.Bounds
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone
 import Mathlib.Analysis.Complex.ExponentialBounds
+import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -321,5 +322,17 @@ theorem logarithmicPowerTailKernel_antitoneOn_three
     AntitoneOn (logarithmicPowerTailKernel σ) (Set.Ici (3 : ℝ)) := by
   apply (logarithmicPowerTailKernel_antitoneOn_exp σ hσ).mono
   exact Set.Ici_subset_Ici.mpr (exp_inv_le_three_of_one_lt σ hσ)
+
+
+/-- The comparison power used for the logarithmic kernel is integrable
+on every positive tail when σ > 1. This is a genuine integrability
+supplier, but does not yet prove domination by the logarithmic kernel. -/
+theorem integrableOn_comparison_rpow_Ioi
+    (σ : ℝ) (N : ℕ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    IntegrableOn (fun t : ℝ => t ^ (-(σ + 1) / 2))
+      (Set.Ioi (N : ℝ)) := by
+  apply Real.integrableOn_Ioi_rpow_of_lt
+  · linarith
+  · exact_mod_cast (show 0 < N by omega)
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
