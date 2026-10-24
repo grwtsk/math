@@ -15,17 +15,18 @@ Source original SHA256: a52bfdf4ab5e5223a041cd170167f7c97d49ea2025b5f87f253a0ff4
 Review: attribution-254-review-000009.
 Both results remain scoped to Nat gain and Nat defects. The explicit source
 warning about general sub-unit geometric convergence is copied verbatim.
-The original FixedPoint import remains an explicit pending project dependency.
-No Lean compilation, proof acceptance or public umbrella admission is asserted.
+The required natural-number recurrence supplier is extracted into the sibling
+Basic module with its immutable archived source identity. Native compilation,
+proof acceptance and public umbrella admission remain separate obligations.
 -/
 
-import Mathematics.Stability.FixedPoint
+import GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Basic
 
 /-! # Certified contraction boundaries -/
 
 namespace GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
 
-open Mathematics.Stability (constantAffineBound iterated_affine_defect_bound)
+open GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds
 
 theorem certified_integral_traversal_obeys_affine_bound
     (actual : Nat → Nat)
@@ -50,8 +51,6 @@ theorem exact_zero_gain_converges_after_one_step
     (initialDefect : Nat)
     (n : Nat) :
     constantAffineBound 0 0 initialDefect (n + 1) = 0 := by
-  induction n with
-  | zero => simp
-  | succ n inductionHypothesis => simp
+  simp only [constantAffineBound_succ, Nat.zero_mul, Nat.zero_add]
 
 end GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
