@@ -303,4 +303,17 @@ theorem uniform_gap_of_controlled_cross_terms
     rw [hrewrite]
     linarith [hcross i]
 
+/-- A cross interaction bounded by the product of sector amplitudes can be
+absorbed into the sum of their squared amplitudes. This is the elementary
+estimate needed before applying a two-sector form comparison. -/
+theorem cross_amplitude_absorption
+    (epsilon a b : ℝ) (hepsilon : 0 ≤ epsilon) :
+    -(epsilon * (a ^ 2 + b ^ 2)) ≤ -(2 * epsilon * |a * b|) := by
+  have hsquare : 0 ≤ (|a| - |b|) ^ 2 := sq_nonneg (|a| - |b|)
+  have hproduct : |a * b| = |a| * |b| := abs_mul a b
+  have ha : |a| ^ 2 = a ^ 2 := sq_abs a
+  have hb : |b| ^ 2 = b ^ 2 := sq_abs b
+  rw [hproduct, ← ha, ← hb]
+  nlinarith [mul_nonneg hepsilon hsquare]
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
