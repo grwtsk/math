@@ -1,0 +1,693 @@
+{
+  "schema": "grwtsk.mathematics-navigation.v1",
+  "source_commit": "26730c25b382762dc0d146de30a3fbaca45bd3f0",
+  "ranking_profile": "docs/reference/ranking-profile.json",
+  "entry_points": [
+    "urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a",
+    "urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9",
+    "urn:uuid:4c0f6c9e-db23-5d18-85c8-67ff6c9c8f2b",
+    "urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b",
+    "urn:uuid:00fa1f4d-831c-5ebf-8c2e-18cc9738a352",
+    "urn:uuid:e61b0003-34bd-4c05-8efe-c8ba6c20aabb",
+    "urn:uuid:bea4592d-e519-4511-b6ad-3e51d43f04fb",
+    "urn:uuid:7b5f9559-1a20-46bc-8fbe-5579d0f7dd89",
+    "urn:uuid:1a9f25eb-b5b2-5a22-a811-ff514411b9b1",
+    "urn:uuid:f8eae694-aed8-4351-98c9-33f0cbb70448",
+    "urn:uuid:6b4621a7-5372-457e-acf9-393db3e09503",
+    "urn:uuid:b93b1a4c-0ad3-54bd-b035-50e8595fcc03",
+    "urn:uuid:72d4d327-ab11-4ac8-a09c-0db545aed427",
+    "urn:uuid:98d1630a-9a7d-4454-a62a-4ec39833aa96",
+    "urn:uuid:1e4b72c0-06c9-41dd-9f3b-d8901aa3f936",
+    "urn:uuid:2a6074be-7f1b-4757-854a-b61113cf910c",
+    "urn:uuid:5a00d561-cb33-491e-95b5-123f6be35e6c",
+    "urn:uuid:ac890272-7f5e-4090-96ee-5b31b92812b0",
+    "urn:uuid:c4f54bfa-058b-52ee-8611-9795fe7f7a0c",
+    "urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943",
+    "urn:uuid:e97fd9c5-7e86-567c-8671-dcab0ac89176",
+    "urn:uuid:12048078-5b03-49fb-8166-03585462a8dd",
+    "urn:uuid:03a6b10c-71cd-4062-8bef-bccc82c5b1de",
+    "urn:uuid:f049a177-9e72-55f3-bf00-fef13ee535f4"
+  ],
+  "subjects": [
+    {
+      "id": "urn:uuid:928a6590-e238-4c23-ba5d-2916d856807c",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/fields/finite-fields/index.md",
+      "navigation_path": "docs/mathematics/Algebra/fields/finite-fields/index.md"
+    },
+    {
+      "id": "urn:uuid:c67aebfc-2b99-44cd-b352-0d1da1eee8fe",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/fields/index.md",
+      "navigation_path": "docs/mathematics/Algebra/fields/index.md"
+    },
+    {
+      "id": "urn:uuid:3ca72e39-b958-46c1-a770-78880aaaf6b7",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/group-theory/finite-groups/index.md",
+      "navigation_path": "docs/mathematics/Algebra/group-theory/finite-groups/index.md"
+    },
+    {
+      "id": "urn:uuid:c0e28762-6b54-4feb-bff3-115f8c63d548",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/group-theory/free-groups/index.md",
+      "navigation_path": "docs/mathematics/Algebra/group-theory/free-groups/index.md"
+    },
+    {
+      "id": "urn:uuid:c20ca165-7737-4291-9a0b-f39e7a3f3744",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/group-theory/index.md",
+      "navigation_path": "docs/mathematics/Algebra/group-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:6df6424d-8992-4247-b777-72df69afe67d",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/homological-algebra/index.md",
+      "navigation_path": "docs/mathematics/Algebra/homological-algebra/index.md"
+    },
+    {
+      "id": "urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/index.md",
+      "navigation_path": "docs/mathematics/Algebra/index.md"
+    },
+    {
+      "id": "urn:uuid:509be9db-5515-4b74-8ce8-b357def3cc4c",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/linear-algebra/index.md",
+      "navigation_path": "docs/mathematics/Algebra/linear-algebra/index.md"
+    },
+    {
+      "id": "urn:uuid:89a513d7-fdd5-45fd-b670-021162b26a1c",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/linear-algebra/matrices/index.md",
+      "navigation_path": "docs/mathematics/Algebra/linear-algebra/matrices/index.md"
+    },
+    {
+      "id": "urn:uuid:de7ef891-c454-4034-95fa-cbbcc277dbd9",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/linear-algebra/vector-spaces/finite-dimensional/index.md",
+      "navigation_path": "docs/mathematics/Algebra/linear-algebra/vector-spaces/finite-dimensional/index.md"
+    },
+    {
+      "id": "urn:uuid:29dbd2d2-37a1-4cef-be3f-d8af8be15435",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/linear-algebra/vector-spaces/index.md",
+      "navigation_path": "docs/mathematics/Algebra/linear-algebra/vector-spaces/index.md"
+    },
+    {
+      "id": "urn:uuid:20fce9ae-f8ab-4b20-aa59-395531a17716",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/modules/commutative-rings/index.md",
+      "navigation_path": "docs/mathematics/Algebra/modules/commutative-rings/index.md"
+    },
+    {
+      "id": "urn:uuid:ff723b28-76df-464e-881a-aa717626f6c2",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/modules/index.md",
+      "navigation_path": "docs/mathematics/Algebra/modules/index.md"
+    },
+    {
+      "id": "urn:uuid:c8b0b274-fbca-4a2e-a73a-8585ebcab14a",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/rings/commutative/index.md",
+      "navigation_path": "docs/mathematics/Algebra/rings/commutative/index.md"
+    },
+    {
+      "id": "urn:uuid:6cc2d458-3117-48eb-ae4f-76ed9166720e",
+      "taxonomy_path": "docs/taxonomy/subjects/algebra/rings/index.md",
+      "navigation_path": "docs/mathematics/Algebra/rings/index.md"
+    },
+    {
+      "id": "urn:uuid:948ee492-5740-466a-8fca-bbf258941dfb",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/complex/index.md",
+      "navigation_path": "docs/mathematics/Analysis/Complex/index.md"
+    },
+    {
+      "id": "urn:uuid:866d44e7-8be3-4b23-b2ea-03cab0ce63b9",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/banach-spaces/hilbert-spaces/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/banach-spaces/hilbert-spaces/index.md"
+    },
+    {
+      "id": "urn:uuid:57ce1c47-e2c8-4b8d-8ed3-675cca62c991",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/banach-spaces/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/banach-spaces/index.md"
+    },
+    {
+      "id": "urn:uuid:b047b4e6-ba8c-4feb-bbb2-4241fca7b116",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/index.md"
+    },
+    {
+      "id": "urn:uuid:827f5db9-1422-479e-a716-d9993230180c",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/linear-operators/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/linear-operators/index.md"
+    },
+    {
+      "id": "urn:uuid:0aff8294-7302-4beb-80ae-72c2de9daf58",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/linear-operators/spectral-theory/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/linear-operators/spectral-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:6f8afa7d-458b-4dc9-8bff-230582f3a0c7",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/finite-reversible-chains/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/finite-reversible-chains/index.md"
+    },
+    {
+      "id": "urn:uuid:7ac44c10-be39-42fa-ac8e-c3b2a3bf1e64",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/index.md",
+      "navigation_path": "docs/mathematics/Analysis/functional-analysis/linear-operators/spectral-theory/self-adjoint/index.md"
+    },
+    {
+      "id": "urn:uuid:b4db3856-ce8f-470a-967f-727c9313831c",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/harmonic/fourier-series-circle/index.md",
+      "navigation_path": "docs/mathematics/Analysis/harmonic/fourier-series-circle/index.md"
+    },
+    {
+      "id": "urn:uuid:3e341d08-e48b-4e18-86b6-fb26d4ff8e28",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/harmonic/index.md",
+      "navigation_path": "docs/mathematics/Analysis/harmonic/index.md"
+    },
+    {
+      "id": "urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/index.md",
+      "navigation_path": "docs/mathematics/Analysis/index.md"
+    },
+    {
+      "id": "urn:uuid:08e5fed0-7528-4d4c-aa1f-01c11c97eb49",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/real/index.md",
+      "navigation_path": "docs/mathematics/Analysis/real/index.md"
+    },
+    {
+      "id": "urn:uuid:ba9c47a2-28b3-4974-81e0-73c0981dcc2d",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/real/measure/index.md",
+      "navigation_path": "docs/mathematics/Analysis/real/measure/index.md"
+    },
+    {
+      "id": "urn:uuid:bc652585-5fb0-4cb6-a91a-20769447862b",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/real/measure/lebesgue-integration/index.md",
+      "navigation_path": "docs/mathematics/Analysis/real/measure/lebesgue-integration/index.md"
+    },
+    {
+      "id": "urn:uuid:718b562b-0637-4e67-99b0-95fecae91bea",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/real/measure/lebesgue-integration/lp-spaces/index.md",
+      "navigation_path": "docs/mathematics/Analysis/real/measure/lebesgue-integration/lp-spaces/index.md"
+    },
+    {
+      "id": "urn:uuid:20fa8652-bedb-41d6-8b6e-5a4e676c19aa",
+      "taxonomy_path": "docs/taxonomy/subjects/analysis/real/measure/lebesgue-integration/lp-spaces/l2/index.md",
+      "navigation_path": "docs/mathematics/Analysis/real/measure/lebesgue-integration/lp-spaces/l2/index.md"
+    },
+    {
+      "id": "urn:uuid:4c0f6c9e-db23-5d18-85c8-67ff6c9c8f2b",
+      "taxonomy_path": "docs/taxonomy/subjects/category-theory/index.md",
+      "navigation_path": "docs/mathematics/CategoryTheory/index.md"
+    },
+    {
+      "id": "urn:uuid:fb73471d-d70b-4551-8879-248eb57489d6",
+      "taxonomy_path": "docs/taxonomy/subjects/combinatorics/enumerative-combinatorics/index.md",
+      "navigation_path": "docs/mathematics/Combinatorics/enumerative-combinatorics/index.md"
+    },
+    {
+      "id": "urn:uuid:1f0d03cb-9777-4213-ac8c-b5d04a6d46ee",
+      "taxonomy_path": "docs/taxonomy/subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/chromatic-polynomials/index.md",
+      "navigation_path": "docs/mathematics/Combinatorics/graph-theory/coloring/finite-vertex-coloring/chromatic-polynomials/index.md"
+    },
+    {
+      "id": "urn:uuid:eee0910c-24a7-431f-86f9-4bec6ef9a60f",
+      "taxonomy_path": "docs/taxonomy/subjects/combinatorics/graph-theory/coloring/finite-vertex-coloring/index.md",
+      "navigation_path": "docs/mathematics/Combinatorics/graph-theory/coloring/finite-vertex-coloring/index.md"
+    },
+    {
+      "id": "urn:uuid:4b44ded6-e5ca-43c6-b785-db103ed14cc9",
+      "taxonomy_path": "docs/taxonomy/subjects/combinatorics/graph-theory/coloring/index.md",
+      "navigation_path": "docs/mathematics/Combinatorics/graph-theory/coloring/index.md"
+    },
+    {
+      "id": "urn:uuid:7a3f0995-b0b9-4b1b-9a97-00e9b7bb3baa",
+      "taxonomy_path": "docs/taxonomy/subjects/combinatorics/graph-theory/index.md",
+      "navigation_path": "docs/mathematics/Combinatorics/graph-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b",
+      "taxonomy_path": "docs/taxonomy/subjects/combinatorics/index.md",
+      "navigation_path": "docs/mathematics/Combinatorics/index.md"
+    },
+    {
+      "id": "urn:uuid:00fa1f4d-831c-5ebf-8c2e-18cc9738a352",
+      "taxonomy_path": "docs/taxonomy/subjects/data-structure-theory/index.md",
+      "navigation_path": "docs/mathematics/TheoryOfDataStructures/index.md"
+    },
+    {
+      "id": "urn:uuid:e61b0003-34bd-4c05-8efe-c8ba6c20aabb",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/index.md"
+    },
+    {
+      "id": "urn:uuid:f2a6c7a1-0edb-4420-88c5-fd4cec4f3e13",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/ordinary/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/ordinary/index.md"
+    },
+    {
+      "id": "urn:uuid:ec3d509f-501c-4883-9c70-0c5ed187ccd7",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/ordinary/linear/autonomous-real/hamiltonian-oscillators/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/ordinary/linear/autonomous-real/hamiltonian-oscillators/index.md"
+    },
+    {
+      "id": "urn:uuid:202ac41c-3b35-45ea-9911-c7926248922a",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/ordinary/linear/autonomous-real/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/ordinary/linear/autonomous-real/index.md"
+    },
+    {
+      "id": "urn:uuid:7cb72c81-2279-4942-b54d-4086f4e51a0e",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/ordinary/linear/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/ordinary/linear/index.md"
+    },
+    {
+      "id": "urn:uuid:87a446ea-63ab-4fa1-adc4-bae725e93fcb",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/partial/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/partial/index.md"
+    },
+    {
+      "id": "urn:uuid:577ed201-3054-4425-989c-7ed64b397dd4",
+      "taxonomy_path": "docs/taxonomy/subjects/differential-equations/partial/parabolic/index.md",
+      "navigation_path": "docs/mathematics/DifferentialEquations/partial/parabolic/index.md"
+    },
+    {
+      "id": "urn:uuid:bea4592d-e519-4511-b6ad-3e51d43f04fb",
+      "taxonomy_path": "docs/taxonomy/subjects/discrete-mathematics/index.md",
+      "navigation_path": "docs/mathematics/DiscreteMathematics/index.md"
+    },
+    {
+      "id": "urn:uuid:7b5f9559-1a20-46bc-8fbe-5579d0f7dd89",
+      "taxonomy_path": "docs/taxonomy/subjects/dynamical-systems/index.md",
+      "navigation_path": "docs/mathematics/DynamicalSystems/index.md"
+    },
+    {
+      "id": "urn:uuid:649ecdb3-8801-4894-bddf-95ecce65af20",
+      "taxonomy_path": "docs/taxonomy/subjects/dynamical-systems/smooth/index.md",
+      "navigation_path": "docs/mathematics/DynamicalSystems/smooth/index.md"
+    },
+    {
+      "id": "urn:uuid:b20bdfe6-320f-5caf-a418-2b0b3453752d",
+      "taxonomy_path": "docs/taxonomy/subjects/error-correcting-codes/algebraic-finite-fields/index.md",
+      "navigation_path": "docs/mathematics/ErrorCorrectingCodingTheory/algebraic-finite-fields/index.md"
+    },
+    {
+      "id": "urn:uuid:02000e3a-afda-5966-8553-36ba8980644c",
+      "taxonomy_path": "docs/taxonomy/subjects/error-correcting-codes/block/index.md",
+      "navigation_path": "docs/mathematics/ErrorCorrectingCodingTheory/block/index.md"
+    },
+    {
+      "id": "urn:uuid:d70dea86-1940-58db-a79c-f0f58bdb2d5e",
+      "taxonomy_path": "docs/taxonomy/subjects/error-correcting-codes/block/linear-finite-fields/cyclic/index.md",
+      "navigation_path": "docs/mathematics/ErrorCorrectingCodingTheory/block/linear-finite-fields/cyclic/index.md"
+    },
+    {
+      "id": "urn:uuid:650a7b83-fe3b-55f4-bd52-bbab11d7ad2c",
+      "taxonomy_path": "docs/taxonomy/subjects/error-correcting-codes/block/linear-finite-fields/index.md",
+      "navigation_path": "docs/mathematics/ErrorCorrectingCodingTheory/block/linear-finite-fields/index.md"
+    },
+    {
+      "id": "urn:uuid:1a9f25eb-b5b2-5a22-a811-ff514411b9b1",
+      "taxonomy_path": "docs/taxonomy/subjects/error-correcting-codes/index.md",
+      "navigation_path": "docs/mathematics/ErrorCorrectingCodingTheory/index.md"
+    },
+    {
+      "id": "urn:uuid:19f1dd58-8c23-4cc2-9326-7ccee050a295",
+      "taxonomy_path": "docs/taxonomy/subjects/geometry/differential-geometry/index.md",
+      "navigation_path": "docs/mathematics/Geometry/differential-geometry/index.md"
+    },
+    {
+      "id": "urn:uuid:695e5594-f345-461f-a03c-9bf79bafc5f4",
+      "taxonomy_path": "docs/taxonomy/subjects/geometry/differential-geometry/riemannian-geometry/index.md",
+      "navigation_path": "docs/mathematics/Geometry/differential-geometry/riemannian-geometry/index.md"
+    },
+    {
+      "id": "urn:uuid:d2503a54-b471-49a9-b55c-86974719ea0e",
+      "taxonomy_path": "docs/taxonomy/subjects/geometry/euclidean/index.md",
+      "navigation_path": "docs/mathematics/Geometry/euclidean/index.md"
+    },
+    {
+      "id": "urn:uuid:f8eae694-aed8-4351-98c9-33f0cbb70448",
+      "taxonomy_path": "docs/taxonomy/subjects/geometry/index.md",
+      "navigation_path": "docs/mathematics/Geometry/index.md"
+    },
+    {
+      "id": "urn:uuid:6b4621a7-5372-457e-acf9-393db3e09503",
+      "taxonomy_path": "docs/taxonomy/subjects/history-of-mathematics/index.md",
+      "navigation_path": "docs/mathematics/HistoryOfMathematics/index.md"
+    },
+    {
+      "id": "urn:uuid:55fcdccc-6afb-4536-a076-f932dfa53dc2",
+      "taxonomy_path": "docs/taxonomy/subjects/history-of-mathematics/mathematics-education/index.md",
+      "navigation_path": "docs/mathematics/HistoryOfMathematics/mathematics-education/index.md"
+    },
+    {
+      "id": "urn:uuid:1b248077-71bf-5559-a777-786909549caa",
+      "taxonomy_path": "docs/taxonomy/subjects/information-theory/channel-coding/index.md",
+      "navigation_path": "docs/mathematics/InformationTheory/channel-coding/index.md"
+    },
+    {
+      "id": "urn:uuid:b93b1a4c-0ad3-54bd-b035-50e8595fcc03",
+      "taxonomy_path": "docs/taxonomy/subjects/information-theory/index.md",
+      "navigation_path": "docs/mathematics/InformationTheory/index.md"
+    },
+    {
+      "id": "urn:uuid:c59a8012-736c-5c7d-9e52-69fe2938217c",
+      "taxonomy_path": "docs/taxonomy/subjects/information-theory/source-coding/index.md",
+      "navigation_path": "docs/mathematics/InformationTheory/source-coding/index.md"
+    },
+    {
+      "id": "urn:uuid:c9d0ce6b-d5b5-5ec9-b653-733bc8541695",
+      "taxonomy_path": "docs/taxonomy/subjects/information-theory/source-coding/lossless/index.md",
+      "navigation_path": "docs/mathematics/InformationTheory/source-coding/lossless/index.md"
+    },
+    {
+      "id": "urn:uuid:5b8c89c9-c1fd-5558-a87a-c2a4d15074df",
+      "taxonomy_path": "docs/taxonomy/subjects/information-theory/source-coding/lossless/prefix/index.md",
+      "navigation_path": "docs/mathematics/InformationTheory/source-coding/lossless/prefix/index.md"
+    },
+    {
+      "id": "urn:uuid:f4629e80-b447-44d4-8543-92bd40b36cd7",
+      "taxonomy_path": "docs/taxonomy/subjects/mathematical-logic/computability-theory/index.md",
+      "navigation_path": "docs/mathematics/Logic/computability-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:72d4d327-ab11-4ac8-a09c-0db545aed427",
+      "taxonomy_path": "docs/taxonomy/subjects/mathematical-logic/index.md",
+      "navigation_path": "docs/mathematics/Logic/index.md"
+    },
+    {
+      "id": "urn:uuid:590416d5-1953-47c1-9310-3e40f1416604",
+      "taxonomy_path": "docs/taxonomy/subjects/mathematical-logic/model-theory/index.md",
+      "navigation_path": "docs/mathematics/Logic/model-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:839cf019-1089-4cf7-b2bb-e2ecd01c94cf",
+      "taxonomy_path": "docs/taxonomy/subjects/mathematical-logic/proof-theory/index.md",
+      "navigation_path": "docs/mathematics/Logic/proof-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:0f87856e-9241-4767-b09e-ea6c47c4f428",
+      "taxonomy_path": "docs/taxonomy/subjects/mathematical-logic/set-theory/index.md",
+      "navigation_path": "docs/mathematics/Logic/set-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:98d1630a-9a7d-4454-a62a-4ec39833aa96",
+      "taxonomy_path": "docs/taxonomy/subjects/mathematics-education/index.md",
+      "navigation_path": "docs/mathematics/MathematicsEducation/index.md"
+    },
+    {
+      "id": "urn:uuid:92c0dbfc-1893-4359-9d3e-9747dcc79016",
+      "taxonomy_path": "docs/taxonomy/subjects/mechanics/classical/hamiltonian/index.md",
+      "navigation_path": "docs/mathematics/Mechanics/classical/hamiltonian/index.md"
+    },
+    {
+      "id": "urn:uuid:6d9a63c0-2e89-4f7c-8d9f-5441e07817bf",
+      "taxonomy_path": "docs/taxonomy/subjects/mechanics/classical/index.md",
+      "navigation_path": "docs/mathematics/Mechanics/classical/index.md"
+    },
+    {
+      "id": "urn:uuid:1e4b72c0-06c9-41dd-9f3b-d8901aa3f936",
+      "taxonomy_path": "docs/taxonomy/subjects/mechanics/index.md",
+      "navigation_path": "docs/mathematics/Mechanics/index.md"
+    },
+    {
+      "id": "urn:uuid:93696268-3f9f-4855-9288-1e9286ad4177",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/algebraic/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/algebraic/index.md"
+    },
+    {
+      "id": "urn:uuid:7c60a6eb-7a03-4f69-b9db-9e13da340dbd",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/algebraic/number-fields/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/algebraic/number-fields/index.md"
+    },
+    {
+      "id": "urn:uuid:52d784f7-6582-45a8-9dd3-717f0789c4bc",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/analytic/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/analytic/index.md"
+    },
+    {
+      "id": "urn:uuid:0e1e4320-7491-4401-88e7-399f20a4f34a",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/analytic/multiplicative/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/analytic/multiplicative/index.md"
+    },
+    {
+      "id": "urn:uuid:f323e33c-8afa-4c25-8a58-fe8d10957b96",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/analytic/multiplicative/prime-distribution/arithmetic-progressions/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/analytic/multiplicative/prime-distribution/arithmetic-progressions/index.md"
+    },
+    {
+      "id": "urn:uuid:92c61d52-cfa1-4f69-9bf2-9c99145fc7d5",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/analytic/multiplicative/prime-distribution/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/analytic/multiplicative/prime-distribution/index.md"
+    },
+    {
+      "id": "urn:uuid:df193821-ba5e-444b-9613-610c85927e6b",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/computational/algebraic-number-theory/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/computational/algebraic-number-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:37973241-e8ba-4a2f-a597-529739204d6f",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/computational/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/computational/index.md"
+    },
+    {
+      "id": "urn:uuid:6f2cb4af-cae3-4956-91f9-d385910b72bf",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/computational/primality-testing/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/computational/primality-testing/index.md"
+    },
+    {
+      "id": "urn:uuid:a6401fad-de38-4043-b635-0aeb5fcf85c9",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/elementary/congruences/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/elementary/congruences/index.md"
+    },
+    {
+      "id": "urn:uuid:f0916dc0-8e7b-4a8f-9aa7-a0cdd6651fa0",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/elementary/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/elementary/index.md"
+    },
+    {
+      "id": "urn:uuid:2a6074be-7f1b-4757-854a-b61113cf910c",
+      "taxonomy_path": "docs/taxonomy/subjects/number-theory/index.md",
+      "navigation_path": "docs/mathematics/NumberTheory/index.md"
+    },
+    {
+      "id": "urn:uuid:5a00d561-cb33-491e-95b5-123f6be35e6c",
+      "taxonomy_path": "docs/taxonomy/subjects/numerical-analysis/index.md",
+      "navigation_path": "docs/mathematics/NumericalAnalysis/index.md"
+    },
+    {
+      "id": "urn:uuid:09a7cc2c-9c83-403b-8878-ec023725dedb",
+      "taxonomy_path": "docs/taxonomy/subjects/numerical-analysis/linear-algebra/index.md",
+      "navigation_path": "docs/mathematics/NumericalAnalysis/linear-algebra/index.md"
+    },
+    {
+      "id": "urn:uuid:1e436f29-6a2e-4fdd-90f7-60b6c85624d1",
+      "taxonomy_path": "docs/taxonomy/subjects/numerical-analysis/linear-algebra/linear-systems/index.md",
+      "navigation_path": "docs/mathematics/NumericalAnalysis/linear-algebra/linear-systems/index.md"
+    },
+    {
+      "id": "urn:uuid:a0c26630-bd74-42a2-939b-ff8d1fd0d29b",
+      "taxonomy_path": "docs/taxonomy/subjects/numerical-analysis/linear-algebra/linear-systems/iterative/index.md",
+      "navigation_path": "docs/mathematics/NumericalAnalysis/linear-algebra/linear-systems/iterative/index.md"
+    },
+    {
+      "id": "urn:uuid:9eb25631-96c6-4737-b244-17e10e5a8929",
+      "taxonomy_path": "docs/taxonomy/subjects/numerical-analysis/linear-algebra/linear-systems/iterative/krylov/conjugate-gradient-spd/index.md",
+      "navigation_path": "docs/mathematics/NumericalAnalysis/linear-algebra/linear-systems/iterative/krylov/conjugate-gradient-spd/index.md"
+    },
+    {
+      "id": "urn:uuid:46269753-be23-4ec7-adc4-e2a5c01d29d3",
+      "taxonomy_path": "docs/taxonomy/subjects/numerical-analysis/linear-algebra/linear-systems/iterative/krylov/index.md",
+      "navigation_path": "docs/mathematics/NumericalAnalysis/linear-algebra/linear-systems/iterative/krylov/index.md"
+    },
+    {
+      "id": "urn:uuid:5b6b329f-d4f2-4806-ac40-8ad34d655843",
+      "taxonomy_path": "docs/taxonomy/subjects/optimization/convex/index.md",
+      "navigation_path": "docs/mathematics/Optimization/convex/index.md"
+    },
+    {
+      "id": "urn:uuid:15c70f79-f6ea-43ba-b22e-7ac3c6fdcbd5",
+      "taxonomy_path": "docs/taxonomy/subjects/optimization/convex/unconstrained-positive-definite-quadratics/index.md",
+      "navigation_path": "docs/mathematics/Optimization/convex/unconstrained-positive-definite-quadratics/index.md"
+    },
+    {
+      "id": "urn:uuid:ac890272-7f5e-4090-96ee-5b31b92812b0",
+      "taxonomy_path": "docs/taxonomy/subjects/optimization/index.md",
+      "navigation_path": "docs/mathematics/Optimization/index.md"
+    },
+    {
+      "id": "urn:uuid:5e8fb445-435f-4c23-bd1a-59bb873fc838",
+      "taxonomy_path": "docs/taxonomy/subjects/order-theory/closure-operators/index.md",
+      "navigation_path": "docs/mathematics/Order/closure-operators/index.md"
+    },
+    {
+      "id": "urn:uuid:c4f54bfa-058b-52ee-8611-9795fe7f7a0c",
+      "taxonomy_path": "docs/taxonomy/subjects/order-theory/index.md",
+      "navigation_path": "docs/mathematics/Order/index.md"
+    },
+    {
+      "id": "urn:uuid:455d5220-1e27-41f9-821a-fae4fa41c4db",
+      "taxonomy_path": "docs/taxonomy/subjects/order-theory/order-embeddings/index.md",
+      "navigation_path": "docs/mathematics/Order/order-embeddings/index.md"
+    },
+    {
+      "id": "urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/index.md",
+      "navigation_path": "docs/mathematics/Probability/index.md"
+    },
+    {
+      "id": "urn:uuid:2dfac8e7-d85e-57ed-9420-389c8d2a185b",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/limit-theory/central-limit/iid-finite-variance/index.md",
+      "navigation_path": "docs/mathematics/Probability/limit-theory/central-limit/iid-finite-variance/index.md"
+    },
+    {
+      "id": "urn:uuid:080e0999-f895-5e12-9c4b-7f80bee187dd",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/limit-theory/central-limit/index.md",
+      "navigation_path": "docs/mathematics/Probability/limit-theory/central-limit/index.md"
+    },
+    {
+      "id": "urn:uuid:b9675d7e-af1f-5eeb-8787-07dec92fe575",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/limit-theory/index.md",
+      "navigation_path": "docs/mathematics/Probability/limit-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:412d3a6e-2fe9-53b5-b059-324a5dae1180",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/limit-theory/laws-large-numbers/index.md",
+      "navigation_path": "docs/mathematics/Probability/limit-theory/laws-large-numbers/index.md"
+    },
+    {
+      "id": "urn:uuid:9d8aa282-1cde-42d4-81d0-e80b543a9910",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/markov-chains/finite-reversible/index.md",
+      "navigation_path": "docs/mathematics/Probability/markov-chains/finite-reversible/index.md"
+    },
+    {
+      "id": "urn:uuid:770ecd4c-5dc6-4ebe-88da-5033eb4ced60",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/markov-chains/index.md",
+      "navigation_path": "docs/mathematics/Probability/markov-chains/index.md"
+    },
+    {
+      "id": "urn:uuid:f9b815ee-efe6-54a5-b004-ef07cab00158",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/markov-chains/lattice-random-walks/index.md",
+      "navigation_path": "docs/mathematics/Probability/markov-chains/lattice-random-walks/index.md"
+    },
+    {
+      "id": "urn:uuid:267a8bd8-914b-5b49-96e0-300b64649f2b",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/stochastic-processes/continuous-time-markov/index.md",
+      "navigation_path": "docs/mathematics/Probability/stochastic-processes/continuous-time-markov/index.md"
+    },
+    {
+      "id": "urn:uuid:15276792-5cfc-5e34-a5e3-78dc2aaa9907",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/stochastic-processes/discrete-time-martingales/index.md",
+      "navigation_path": "docs/mathematics/Probability/stochastic-processes/discrete-time-martingales/index.md"
+    },
+    {
+      "id": "urn:uuid:e2481db7-f168-5bed-a3d4-05edb2c826a3",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/stochastic-processes/gaussian/brownian-real/index.md",
+      "navigation_path": "docs/mathematics/Probability/stochastic-processes/gaussian/brownian-real/index.md"
+    },
+    {
+      "id": "urn:uuid:36799ca5-d52f-5e34-8cb8-415004b017f4",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/stochastic-processes/gaussian/index.md",
+      "navigation_path": "docs/mathematics/Probability/stochastic-processes/gaussian/index.md"
+    },
+    {
+      "id": "urn:uuid:51a46483-2271-5808-bde1-8327d5fb8eec",
+      "taxonomy_path": "docs/taxonomy/subjects/probability/stochastic-processes/index.md",
+      "navigation_path": "docs/mathematics/Probability/stochastic-processes/index.md"
+    },
+    {
+      "id": "urn:uuid:e97fd9c5-7e86-567c-8671-dcab0ac89176",
+      "taxonomy_path": "docs/taxonomy/subjects/proof-assistant-metaprogramming/index.md",
+      "navigation_path": "docs/mathematics/ProofAssistantMetaprogramming/index.md"
+    },
+    {
+      "id": "urn:uuid:12048078-5b03-49fb-8166-03585462a8dd",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/index.md",
+      "navigation_path": "docs/mathematics/Statistics/index.md"
+    },
+    {
+      "id": "urn:uuid:93e97cd9-3048-4e33-893a-6ed41356af91",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/decision-theory/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/decision-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:7d6d748a-f382-4862-bcd6-1eab3c4808c0",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/index.md"
+    },
+    {
+      "id": "urn:uuid:aa74905b-40b1-48a4-beaf-c67c506943c3",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/inference/estimation/confidence-intervals/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/inference/estimation/confidence-intervals/index.md"
+    },
+    {
+      "id": "urn:uuid:e6181efd-a05a-4131-b98e-e21751c60c34",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/inference/estimation/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/inference/estimation/index.md"
+    },
+    {
+      "id": "urn:uuid:d26248fa-96a1-45b7-8a99-4e77a5600f05",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/inference/estimation/point-estimation/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/inference/estimation/point-estimation/index.md"
+    },
+    {
+      "id": "urn:uuid:df2c6c73-bc6f-417b-ae79-2a7330455fb5",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/inference/estimation/point-estimation/linear-least-squares/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/inference/estimation/point-estimation/linear-least-squares/index.md"
+    },
+    {
+      "id": "urn:uuid:8388fbd0-9a19-4b54-99e7-9ebbe463a808",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/inference/hypothesis-testing/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/inference/hypothesis-testing/index.md"
+    },
+    {
+      "id": "urn:uuid:ed407ce1-0ca3-4929-9433-7a0967b3f3dc",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/inference/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/inference/index.md"
+    },
+    {
+      "id": "urn:uuid:6f508e89-44f2-4875-8635-8de1a6a1500e",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/regression/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/regression/index.md"
+    },
+    {
+      "id": "urn:uuid:806e39ed-f9b9-434e-83cd-6cd1152568fa",
+      "taxonomy_path": "docs/taxonomy/subjects/statistics/mathematical-statistics/regression/linear-models/index.md",
+      "navigation_path": "docs/mathematics/Statistics/mathematical-statistics/regression/linear-models/index.md"
+    },
+    {
+      "id": "urn:uuid:0273582d-e292-4d10-bc99-30189c735a38",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/algebraic-topology/homology-theory/index.md",
+      "navigation_path": "docs/mathematics/Topology/algebraic-topology/homology-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:4af35b29-a93b-4113-b480-84b9d963846d",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/algebraic-topology/homology-theory/simplicial-homology/finite-prime-field-computation/index.md",
+      "navigation_path": "docs/mathematics/Topology/algebraic-topology/homology-theory/simplicial-homology/finite-prime-field-computation/index.md"
+    },
+    {
+      "id": "urn:uuid:09ee87c8-34bb-4519-96ed-dbf8ea260c88",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/algebraic-topology/homology-theory/simplicial-homology/index.md",
+      "navigation_path": "docs/mathematics/Topology/algebraic-topology/homology-theory/simplicial-homology/index.md"
+    },
+    {
+      "id": "urn:uuid:3347007f-4ae3-4c1d-9b3a-f17102a0895f",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/algebraic-topology/homotopy-theory/index.md",
+      "navigation_path": "docs/mathematics/Topology/algebraic-topology/homotopy-theory/index.md"
+    },
+    {
+      "id": "urn:uuid:488ac86e-75aa-43d0-a98d-17f305f6cad9",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/algebraic-topology/index.md",
+      "navigation_path": "docs/mathematics/Topology/algebraic-topology/index.md"
+    },
+    {
+      "id": "urn:uuid:73ef9d25-86ae-4bde-88a8-da55dc2a2fa5",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/computational-topology/index.md",
+      "navigation_path": "docs/mathematics/Topology/computational-topology/index.md"
+    },
+    {
+      "id": "urn:uuid:5eef2939-f9f7-482e-bc71-db9926df1540",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/general-topology/index.md",
+      "navigation_path": "docs/mathematics/Topology/general-topology/index.md"
+    },
+    {
+      "id": "urn:uuid:03a6b10c-71cd-4062-8bef-bccc82c5b1de",
+      "taxonomy_path": "docs/taxonomy/subjects/topology/index.md",
+      "navigation_path": "docs/mathematics/Topology/index.md"
+    },
+    {
+      "id": "urn:uuid:f049a177-9e72-55f3-bf00-fef13ee535f4",
+      "taxonomy_path": "docs/taxonomy/subjects/type-theory/index.md",
+      "navigation_path": "docs/mathematics/TypeTheory/index.md"
+    }
+  ]
+}
