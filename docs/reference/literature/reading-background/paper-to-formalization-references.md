@@ -9311,3 +9311,82 @@ cofinal above 3/4, plus a separate full Weil/Hodge correspondence
 if positivity is the endpoint. Neither GRH nor full-shift graph
 admission discharges any of these suppliers.
 
+
+
+## Case ZETA-SPECTRAL-GRH-BRIDGE-20261023
+
+Source module:
+`GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`.
+
+Source integration commit:
+`13d3e49454c23f825ce730be569856daea2cb3e4`.
+
+Source blob:
+`0c69c768eca979698ece63c39ba0b9a50a33ba3a`.
+
+### Source relation
+
+No external paper theorem is newly imported in this increment. The module
+specializes already integrated local interfaces to the actual selected
+Riemann-zeta zero predicate from
+`ZeroOrdinateSoficLanguageCriterion.lean`. Previously recorded Rodgers--Tao,
+Huffman, OpenAI quasi-RH, and symbolic-dynamics references remain attached to
+their predecessor modules and are not promoted to stronger claims here.
+
+### Formal declarations
+
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization`
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates`
+
+### Exact hypotheses
+
+The forward family transport requires a
+`SpectralCoverFamily zetaZeroProblem family`: every generalized zero must map
+to an actual selected zeta zero and zeta criticality must pull back to the
+generalized critical locus.
+
+The reverse direction requires a typed
+`BaseSpecialization zetaZeroProblem (family i0)` for one generalized member,
+including an actual zero embedding, zero preservation, and reflection of
+criticality. The resulting equivalence is therefore conditional; it is not an
+unconditional `GRH = RH` theorem.
+
+The combined ordinate theorem additionally requires a supplied
+`DynamicSpectralCover`, rational/algebraic-to-eventual-sofic interfaces, and
+non-eventual-soficity of the actual selected zeta traces.
+
+### Classification
+
+- **Imported local mathematics:** actual zeta zero predicate, dynamic spectral
+  cover, exact-language/sofic interfaces, and typed spectral zero-cover
+  abstraction.
+- **Kernel-verified bridges:** none claimed for this source commit.
+- **Source proof candidates:** all declarations listed above.
+- **Conditional interfaces:** spectral-cover family, base specialization,
+  dynamic spectral process, arithmetic-to-sofic suppliers, and
+  non-eventual-soficity.
+- **Finite evidence:** none introduced.
+- **Analogies:** none promoted to theorem in this increment.
+- **Unresolved premises:** every concrete generalized spectral map,
+  criticality transport, specialization, and arithmetic/sofic supplier.
+
+### Verification
+
+For source commit
+`13d3e49454c23f825ce730be569856daea2cb3e4`:
+
+- source creation and exact blob readback: **performed**;
+- `lake env lean GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`:
+  **NOT_RUN**;
+- `lake build GRWTSK.NumberTheory.Zeta.Riemann.ZetaSpectralGRHBridge --wfail`:
+  **NOT_RUN**;
+- fresh kernel replay: **NOT_RUN**;
+- transitive axiom/`sorryAx`/unsafe audit:
+  **NOT_RUN / NOT_KERNEL_AUDITED**;
+- external verification receipt: **unavailable**.
+
+Source inspection is not compiler or kernel acceptance.
