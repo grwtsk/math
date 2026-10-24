@@ -1,0 +1,68 @@
+# Verification target: GRWTSK.Topology.GeneralTopology.Indicator.Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d69ff69d3ccbbb5267567315d2c0997cb846a423",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/index.md) · [Full source](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d69ff69d3ccbbb5267567315d2c0997cb846a423`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [prod_mulIndicator_subset_of_eq_one](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/prod-mulindicator-subset-of-eq-one--0f799178efcdad9e724cfdcc.md) | 42 | `result-track:0f799178efcdad9e724cfdcc0cb533a26a43afd22cc02c3ee3762010d50aebd6` |
+| 2 | `lemma` | [prod_mulIndicator_subset](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/prod-mulindicator-subset--f8ba29578088159726d912df.md) | 53 | `result-track:f8ba29578088159726d912dfec23e893ddf64b258636fc89a19b6f0ce6ea1a29` |
+| 3 | `lemma` | [prod_mulIndicator_eq_prod_filter](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/prod-mulindicator-eq-prod-filter--0f040851e98bfee2c8b66411.md) | 58 | `result-track:0f040851e98bfee2c8b66411bf7c63957ae54a31817d68548347b99a4f538020` |
+| 4 | `lemma` | [prod_mulIndicator_eq_prod_inter](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/prod-mulindicator-eq-prod-inter--58e90a15e153dadf8abd3541.md) | 67 | `result-track:58e90a15e153dadf8abd3541fd45fdfd1e742b539d732f5759d0327720e71383` |
+| 5 | `lemma` | [mulIndicator_prod](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/mulindicator-prod--8369a24d9b5fb761096c852d.md) | 72 | `result-track:8369a24d9b5fb761096c852dfe47322359fb95ed3f75599ba3c197563016de95` |
+| 6 | `lemma` | [mulIndicator_biUnion](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/mulindicator-biunion--651a99953ca47106c5285ab4.md) | 77 | `result-track:651a99953ca47106c5285ab4b1a89416d683205bbf1f727f9268a0a4168a37f4` |
+| 7 | `lemma` | [mulIndicator_biUnion_apply](../../../../../mathematics/Topology/GeneralTopology/Indicator/Variant9c8528cd2d92720492dbac3cf162effaba1aad7d4f475ae6c0549663defa8e70.lean/declarations/mulindicator-biunion-apply--56d82eaf66a310d4fb7dce11.md) | 90 | `result-track:56d82eaf66a310d4fb7dce11cd25634aff9516353cce11b5b2f2768a55cc8a7f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

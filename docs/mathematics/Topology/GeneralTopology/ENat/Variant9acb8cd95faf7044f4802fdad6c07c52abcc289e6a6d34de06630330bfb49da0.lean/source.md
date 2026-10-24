@@ -1,0 +1,155 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.ENat.Variant9acb8cd95faf7044f4802fdad6c07c52abcc289e6a6d34de06630330bfb49da0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c787f87c55aca890d6c5b7fca96134b126a7ecf3` · SHA-256 `45e1825dc981a8352d4620484c221cf7fdbb63bcfa387d55cf80fc17c7da4a0c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.IsEmbeddingNatCast.Variant510edc6783be6014c9e5d040534e0d8fa2ad8b231b3b4705028c32bd3b5999ce","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"510edc6783be6014c9e5d040534e0d8fa2ad8b231b3b4705028c32bd3b5999ce","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.IsEmbeddingNatCast.Variant510edc6783be6014c9e5d040534e0d8fa2ad8b231b3b4705028c32bd3b5999ce","mathematical_subject":"Topology.GeneralTopology","original_sha256":"510edc6783be6014c9e5d040534e0d8fa2ad8b231b3b4705028c32bd3b5999ce","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Topology/Instances/ENat.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Peter Nelson. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Peter Nelson
+-/
+module
+
+public import Mathlib.Data.ENat.Monoid
+public import Mathlib.Topology.Instances.Discrete
+public import Mathlib.Order.Interval.Set.WithBotTop
+public import Mathlib.Order.Filter.Pointwise
+public import Mathlib.Topology.Algebra.Monoid.Defs
+public import Mathlib.Topology.Algebra.Ring.Basic
+
+/-!
+# Topology on extended natural numbers
+-/
+
+
+namespace GRWTSK.Topology.GeneralTopology.IsEmbeddingNatCast.Variant510edc6783be6014c9e5d040534e0d8fa2ad8b231b3b4705028c32bd3b5999ce
+
+public section
+
+open Filter Set Topology
+
+namespace ENat
+
+/--
+Topology on `ℕ∞`.
+
+Note: this is different from the `EMetricSpace` topology. The `EMetricSpace` topology has
+`IsOpen {∞}`, but all neighborhoods of `∞` in `ℕ∞` contain infinite intervals.
+-/
+instance : TopologicalSpace ℕ∞ := Preorder.topology ℕ∞
+
+instance : OrderTopology ℕ∞ := ⟨rfl⟩
+
+@[simp] theorem range_natCast : range ((↑) : ℕ → ℕ∞) = Iio ⊤ :=
+  WithTop.range_coe
+
+theorem isEmbedding_natCast : IsEmbedding ((↑) : ℕ → ℕ∞) :=
+  Nat.strictMono_cast.isEmbedding_of_ordConnected <| range_natCast ▸ ordConnected_Iio
+
+theorem isOpenEmbedding_natCast : IsOpenEmbedding ((↑) : ℕ → ℕ∞) :=
+  ⟨isEmbedding_natCast, range_natCast ▸ isOpen_Iio⟩
+
+theorem nhds_natCast (n : ℕ) : 𝓝 (n : ℕ∞) = pure (n : ℕ∞) := by
+  simp [← isOpenEmbedding_natCast.map_nhds_eq]
+
+@[simp]
+protected theorem nhds_eq_pure {n : ℕ∞} (h : n ≠ ⊤) : 𝓝 n = pure n := by
+  lift n to ℕ using h
+  simp [nhds_natCast]
+
+theorem isOpen_singleton {x : ℕ∞} (hx : x ≠ ⊤) : IsOpen {x} := by
+  rw [isOpen_singleton_iff_nhds_eq_pure, ENat.nhds_eq_pure hx]
+
+theorem mem_nhds_iff {x : ℕ∞} {s : Set ℕ∞} (hx : x ≠ ⊤) : s ∈ 𝓝 x ↔ x ∈ s := by
+  simp [hx]
+
+theorem mem_nhds_natCast_iff (n : ℕ) {s : Set ℕ∞} : s ∈ 𝓝 (n : ℕ∞) ↔ (n : ℕ∞) ∈ s :=
+  mem_nhds_iff (natCast_ne_top _)
+
+theorem tendsto_nhds_top_iff_natCast_lt {α : Type*} {l : Filter α} {f : α → ℕ∞} :
+    Tendsto f l (𝓝 ⊤) ↔ ∀ n : ℕ, ∀ᶠ a in l, n < f a := by
+  simp_rw [nhds_top_order, lt_top_iff_ne_top, tendsto_iInf, tendsto_principal, ENat.forall_ne_top,
+    mem_Ioi]
+
+theorem tendsto_natCast_nhds_top : Tendsto Nat.cast atTop (𝓝 (⊤ : ℕ∞)) := by
+  rw [tendsto_nhds_top_iff_natCast_lt]
+  intro n
+  filter_upwards [eventually_ge_atTop (n + 1)] with a ha using by simpa
+
+instance : ContinuousAdd ℕ∞ := by
+  refine ⟨continuous_iff_continuousAt.mpr fun (a, b) ↦ ?_⟩
+  match a, b with
+  | ⊤, _ => exact tendsto_nhds_top_mono' continuousAt_fst fun p ↦ le_add_right le_rfl
+  | (a : ℕ), ⊤ => exact tendsto_nhds_top_mono' continuousAt_snd fun p ↦ le_add_left le_rfl
+  | (a : ℕ), (b : ℕ) => simp [ContinuousAt, nhds_prod_eq]
+
+instance : ContinuousMul ℕ∞ where
+  continuous_mul :=
+    have key (a : ℕ∞) : ContinuousAt (· * ·).uncurry (a, ⊤) := by
+      rcases eq_zero_or_pos a with rfl | ha
+      · simp [ContinuousAt, nhds_prod_eq]
+      · simp only [ContinuousAt, Function.uncurry, mul_top ha.ne']
+        refine tendsto_nhds_top_mono continuousAt_snd ?_
+        filter_upwards [continuousAt_fst (lt_mem_nhds ha)] with (x, y) (hx : 0 < x)
+        exact ENat.self_le_mul_left _ hx.ne'
+    continuous_iff_continuousAt.2 <| Prod.forall.2 fun
+      | (a : ℕ∞), ⊤ => key a
+      | ⊤, (b : ℕ∞) =>
+        ((key b).comp_of_eq (continuous_swap.tendsto (⊤, b)) rfl).congr <|
+          .of_forall fun _ ↦ mul_comm ..
+      | (a : ℕ), (b : ℕ) => by
+        simp [ContinuousAt, nhds_prod_eq, tendsto_pure_nhds]
+
+instance : IsTopologicalSemiring ℕ∞ where
+  toContinuousAdd := inferInstance
+  toContinuousMul := inferInstance
+
+protected theorem continuousAt_sub {a b : ℕ∞} (h : a ≠ ⊤ ∨ b ≠ ⊤) :
+    ContinuousAt (· - ·).uncurry (a, b) := by
+  match a, b, h with
+  | (a : ℕ), (b : ℕ), _ => simp [ContinuousAt, nhds_prod_eq]
+  | (a : ℕ), ⊤, _ =>
+    suffices ∀ᶠ b in 𝓝 ⊤, (a - b : ℕ∞) = 0 by
+      simpa [ContinuousAt, nhds_prod_eq, tsub_eq_zero_of_le]
+    filter_upwards [le_mem_nhds (WithTop.coe_lt_top a)] with b using tsub_eq_zero_of_le
+  | ⊤, (b : ℕ), _ =>
+    suffices ∀ n : ℕ, ∀ᶠ a : ℕ∞ in 𝓝 ⊤, b + n < a by
+      simpa [ContinuousAt, nhds_prod_eq, (· ∘ ·), lt_tsub_iff_left, tendsto_nhds_top_iff_natCast_lt]
+    exact fun n ↦ lt_mem_nhds <| WithTop.coe_lt_top (b + n)
+
+end ENat
+
+theorem Filter.Tendsto.enatSub {α : Type*} {l : Filter α} {f g : α → ℕ∞} {a b : ℕ∞}
+    (hf : Tendsto f l (𝓝 a)) (hg : Tendsto g l (𝓝 b)) (h : a ≠ ⊤ ∨ b ≠ ⊤) :
+    Tendsto (fun x ↦ f x - g x) l (𝓝 (a - b)) :=
+  (ENat.continuousAt_sub h).tendsto.comp (hf.prodMk_nhds hg)
+
+variable {X : Type*} [TopologicalSpace X] {f g : X → ℕ∞} {s : Set X} {x : X}
+
+nonrec theorem ContinuousWithinAt.enatSub
+    (hf : ContinuousWithinAt f s x) (hg : ContinuousWithinAt g s x) (h : f x ≠ ⊤ ∨ g x ≠ ⊤) :
+    ContinuousWithinAt (fun x ↦ f x - g x) s x :=
+  hf.enatSub hg h
+
+nonrec theorem ContinuousAt.enatSub
+    (hf : ContinuousAt f x) (hg : ContinuousAt g x) (h : f x ≠ ⊤ ∨ g x ≠ ⊤) :
+    ContinuousAt (fun x ↦ f x - g x) x :=
+  hf.enatSub hg h
+
+nonrec theorem ContinuousOn.enatSub
+    (hf : ContinuousOn f s) (hg : ContinuousOn g s) (h : ∀ x ∈ s, f x ≠ ⊤ ∨ g x ≠ ⊤) :
+    ContinuousOn (fun x ↦ f x - g x) s := fun x hx ↦
+  (hf x hx).enatSub (hg x hx) (h x hx)
+
+nonrec theorem Continuous.enatSub
+    (hf : Continuous f) (hg : Continuous g) (h : ∀ x, f x ≠ ⊤ ∨ g x ≠ ⊤) :
+    Continuous (fun x ↦ f x - g x) :=
+  continuous_iff_continuousAt.2 fun x ↦ hf.continuousAt.enatSub hg.continuousAt (h x)
+```

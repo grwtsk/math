@@ -1,0 +1,104 @@
+# instModule
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:b0534c32cc13a4f481b5a3e66ed7bdea6a213a27c3effbd54a68f3edfeeb897e",
+  "kind": "instance",
+  "lexical_name": "instModule",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instmodule--5897fd7d4d1ed0b6bd600f88",
+  "source": {
+    "blob": "50597ddf33280e444a2e313a0500438bc893460a",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 238,
+    "line": 216,
+    "path": "GRWTSK/Topology/GeneralTopology/GroupCompletion/Variant9e98deccce38fe2d950b2907ea82f25949134793c574c3dbb227ec3d06f7beea.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:5897fd7d4d1ed0b6bd600f881188f172132b79a31e31ba75e03bbccff4c24f38",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/GroupCompletion/Variant9e98deccce38fe2d950b2907ea82f25949134793c574c3dbb227ec3d06f7beea.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:b0534c32cc13a4f481b5a3e66ed7bdea6a213a27c3effbd54a68f3edfeeb897e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 216–238.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance instModule [Semiring R] [Module R α] [UniformContinuousConstSMul R α] :
+    Module R (Completion α) :=
+  { (inferInstance : DistribMulAction R $ Completion α),
+    (inferInstance : MulActionWithZero R $ Completion α) with
+    smul := (· • ·)
+    add_smul := fun a b ↦
+      ext' (continuous_const_smul _) ((continuous_const_smul _).add (continuous_const_smul _))
+        fun x ↦ by
+          rw [← coe_smul, add_smul, coe_add, coe_smul, coe_smul] }
+#align uniform_space.completion.module UniformSpace.Completion.instModule
+
+end UniformAddCommGroup
+
+end UniformSpace.Completion
+
+section AddMonoidHom
+
+variable [UniformSpace α] [AddGroup α] [UniformAddGroup α] [UniformSpace β] [AddGroup β]
+  [UniformAddGroup β]
+
+open UniformSpace UniformSpace.Completion
+
+/-- Extension to the completion of a continuous group hom. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/GroupCompletion/Variant9e98deccce38fe2d950b2907ea82f25949134793c574c3dbb227ec3d06f7beea.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/GroupCompletion/Variant9e98deccce38fe2d950b2907ea82f25949134793c574c3dbb227ec3d06f7beea.lean#L216).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `50597ddf33280e444a2e313a0500438bc893460a` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

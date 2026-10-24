@@ -1,0 +1,95 @@
+# exists_opensMeasurableSpace_of_countablySeparated
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:701a8e32-87f6-5120-e40a-92557d4de053",
+  "kind": "theorem",
+  "lexical_name": "exists_opensMeasurableSpace_of_countablySeparated",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exists-opensmeasurablespace-of-countablyseparated--ff3d2750c19547c057cc2aff",
+  "source": {
+    "blob": "5220b066847f88e107cbcdd3441b79877c00c5b2",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 227,
+    "line": 214,
+    "path": "GRWTSK/Topology/MetricTopology/Metric/Variant5315db0106e4b32a174b2ff49f9ce4614f73628822bac0523bea7a30b3960afa.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ff3d2750c19547c057cc2affec86a2dd7bede39dd6b9f664457b70b4b8abde62",
+  "verification": {
+    "reference": "docs/verification/Topology/MetricTopology/Metric/Variant5315db0106e4b32a174b2ff49f9ce4614f73628822bac0523bea7a30b3960afa.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:701a8e32-87f6-5120-e40a-92557d4de053`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 214–227.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem exists_opensMeasurableSpace_of_countablySeparated (α : Type*)
+    [m : MeasurableSpace α] [CountablySeparated α] :
+    ∃ _ : TopologicalSpace α, SecondCountableTopology α ∧ T4Space α ∧ OpensMeasurableSpace α := by
+  rcases exists_countablyGenerated_le_of_countablySeparated α with ⟨m', _, _, m'le⟩
+  rcases exists_borelSpace_of_countablyGenerated_of_separatesPoints (m := m') with ⟨τ, _, _, τm'⟩
+  exact ⟨τ, ‹_›, ‹_›, @OpensMeasurableSpace.mk _ _ m (τm'.measurable_eq.symm.le.trans m'le)⟩
+
+
+section ContinuousENorm
+
+variable {ε : Type*} [MeasurableSpace ε] [TopologicalSpace ε] [ContinuousENorm ε]
+  [OpensMeasurableSpace ε] [MeasurableSpace β]
+
+@[fun_prop]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/MetricTopology/Metric/Variant5315db0106e4b32a174b2ff49f9ce4614f73628822bac0523bea7a30b3960afa.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/MetricTopology/Metric/Variant5315db0106e4b32a174b2ff49f9ce4614f73628822bac0523bea7a30b3960afa.lean#L214).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5220b066847f88e107cbcdd3441b79877c00c5b2` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

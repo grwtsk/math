@@ -1,0 +1,105 @@
+# Verification target: GRWTSK.Topology.GeneralTopology.40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron.Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6f260b88a1f5cb637bfe04747fca27caa4ea083e",
+  "lexical_observation_count": 37,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/index.md) · [Full source](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6f260b88a1f5cb637bfe04747fca27caa4ea083e`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.BoundaryRieszLaplace` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Piecewise` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceBoundaryArithmetic` — import line 3; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.PoleSourceDetection` — import line 4; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.PoleCorrelationRegularity` — import line 5; external provider; requires a separately pinned dependency.
+- `Zeta23.WeilEF.FullLine` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.BoundaryRieszKernel` — import line 7; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceLaplaceEndpoint` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [sourcePerronIntegrand](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/sourceperronintegrand--3f6e2a6f362d50556c946ca3.md) | 43 | `declaration-track:3f6e2a6f362d50556c946ca32ce76e9d027f3b42d3ae32b27dedd2cfcdac461c` |
+| 2 | `theorem` | [prime_power_riesz_sum_exact](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/prime-power-riesz-sum-exact--6d7ed317baeb4e6eeb13178c.md) | 47 | `result-track:6d7ed317baeb4e6eeb13178c5b484aaa358d5a5f71bfeb24835dab8c5c0ec355` |
+| 3 | `theorem` | [riesz_cutoff_endpoint_atom_zero](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-cutoff-endpoint-atom-zero--dba565f0600d3c5252d2f702.md) | 64 | `result-track:dba565f0600d3c5252d2f702d9a8cdc4a2baa41e10f4b8a191f359a09156a396` |
+| 4 | `theorem` | [shifted_von_mangoldt_dirichlet](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/shifted-von-mangoldt-dirichlet--da88bdfc4ee42e747da5e53b.md) | 72 | `result-track:da88bdfc4ee42e747da5e53b306563030f518d229955c10ca31fe054a0f1de9d` |
+| 5 | `theorem` | [shifted_von_mangoldt_summable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/shifted-von-mangoldt-summable--ba550ddebd4e7149a66eabf3.md) | 80 | `result-track:ba550ddebd4e7149a66eabf3dda2fdbd155808b765d5246fd68eb36fbd807449` |
+| 6 | `theorem` | [source_hfn_eq_bilateral_laplace](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-hfn-eq-bilateral-laplace--43dd638e29386cf780645dbe.md) | 88 | `result-track:43dd638e29386cf780645dbe615811ec70c8aa2879e71101751ece556711065a` |
+| 7 | `theorem` | [source_laplace_on_line_eq_tilted_fourier](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-laplace-on-line-eq-tilted-fourier--09eb02d5f082f3189d2a4a26.md) | 99 | `result-track:09eb02d5f082f3189d2a4a26a2105f1cf20556fae301f64e342dc095fb09e75d` |
+| 8 | `theorem` | [source_complex_kernel_cont_diff_two](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-complex-kernel-cont-diff-two--10835d0897835cfd3987bcb3.md) | 111 | `result-track:10835d0897835cfd3987bcb36f1c484821541dca363cb51632fd2f1386257a81` |
+| 9 | `theorem` | [source_complex_kernel_has_compact_support](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-complex-kernel-has-compact-support--8b67e5b57c5961e74b2f1fcf.md) | 117 | `result-track:8b67e5b57c5961e74b2f1fcf8e759e771d9790483fc09ddf992290b2666f8072` |
+| 10 | `theorem` | [source_prime_sum_eq_strict](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-prime-sum-eq-strict--b87235407e9cb9ded52628f7.md) | 122 | `result-track:b87235407e9cb9ded52628f716612c4a8298e5a0c8e0a88ef03fda3ae72e30c3` |
+| 11 | `theorem` | [source_perron_integral_exact](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-perron-integral-exact--1e284b2359eef6b80bba0518.md) | 144 | `result-track:1e284b2359eef6b80bba0518f6f4a000bb80bfc4a9cef3c6863c4f68b68665c8` |
+| 12 | `theorem` | [source_perron_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-perron-integrable--497c6e3b4f4e18d16e0fe338.md) | 165 | `result-track:497c6e3b4f4e18d16e0fe33897ff1e8f54e4264005fe3df1cd5d7dac662d5795` |
+| 13 | `def` | [sourcePerronTruncation](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/sourceperrontruncation--d8f6b11808a3781b10b7e144.md) | 193 | `declaration-track:d8f6b11808a3781b10b7e144ca93308fec5ee6c37e1ae169b4f9733d4aa5bb89` |
+| 14 | `theorem` | [source_perron_truncation_tendsto](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-perron-truncation-tendsto--555c2e8920fa75896824c8c1.md) | 198 | `result-track:555c2e8920fa75896824c8c1b5bec0a863aaa598937c760d5ebc25ee20d77843` |
+| 15 | `def` | [rieszTilt](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesztilt--2131c0dd435805eb38f87e47.md) | 218 | `declaration-track:2131c0dd435805eb38f87e47c01270cc0060364d9d4432f9494ab370aa33db77` |
+| 16 | `theorem` | [riesz_tilt_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-tilt-integrable--889621dc8d258a2fa05fe3dd.md) | 222 | `result-track:889621dc8d258a2fa05fe3dd55b8e96bf4ea1cbe3e9afd4751508409c2e0214d` |
+| 17 | `theorem` | [riesz_tilt_continuous](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-tilt-continuous--6665f54b222d5089ff04b9cf.md) | 226 | `result-track:6665f54b222d5089ff04b9cf9332e993a735c99138360f8626d4d495222fc021` |
+| 18 | `theorem` | [riesz_tilt_paper_fourier](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-tilt-paper-fourier--4fc804c0a9d69a89b1ac007e.md) | 240 | `result-track:4fc804c0a9d69a89b1ac007e981944608c0533638c592c12fd17483f6e9a9203` |
+| 19 | `theorem` | [vertical_inverse_square_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/vertical-inverse-square-integrable--61cb8901663c753f8f8950d0.md) | 256 | `result-track:61cb8901663c753f8f8950d0575bb72796f6c8fd5deba7836e967f3b8503180f` |
+| 20 | `theorem` | [vertical_inverse_power_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/vertical-inverse-power-integrable--95f3be4bef2d91d82b11f25d.md) | 267 | `result-track:95f3be4bef2d91d82b11f25d7317afdffa4928ef98047c639c99cbac646c870e` |
+| 21 | `theorem` | [boundary_riesz_line_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/boundary-riesz-line-integrable--b1659591539340653f7df3ed.md) | 291 | `result-track:b1659591539340653f7df3ed17286a3eac7468c6af598af2fdf08e96bdeba5b3` |
+| 22 | `theorem` | [riesz_tilt_fourier_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-tilt-fourier-integrable--da7486b06eee1415f0296db0.md) | 319 | `result-track:da7486b06eee1415f0296db0a87a45486e54217af9b5c21ecc1b324673cc15c9` |
+| 23 | `theorem` | [riesz_half_line_inversion](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-half-line-inversion--c18b44378490ad29a569c629.md) | 336 | `result-track:c18b44378490ad29a569c629672c9cd1483be524c9977ee30c3963c7d30674e4` |
+| 24 | `def` | [rieszLineTransform](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/rieszlinetransform--8131a13c672f0fa028bbe8d3.md) | 364 | `declaration-track:8131a13c672f0fa028bbe8d321cad6333ccda33bbb92971408931e0da06e82dd` |
+| 25 | `def` | [rieszWindow](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/rieszwindow--e039161d0867245517c9c93b.md) | 369 | `declaration-track:e039161d0867245517c9c93b747edfebf2d6161ba3cc3003439d0141993318b5` |
+| 26 | `theorem` | [riesz_line_transform_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-line-transform-integrable--3f210905aea07dc9f0d31b76.md) | 372 | `result-track:3f210905aea07dc9f0d31b7603c88bfcb07ff33169afe4092467f3e530445d82` |
+| 27 | `theorem` | [riesz_line_transform_inversion](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-line-transform-inversion--f8991f19949e3f5bba7a00c4.md) | 380 | `result-track:f8991f19949e3f5bba7a00c4efe47e8c02d098a990d4e3c66fb7b76488bddef8` |
+| 28 | `theorem` | [perron_per_n_integral](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/perron-per-n-integral--2b61071066579bd8b304ae12.md) | 428 | `result-track:2b61071066579bd8b304ae1279e51728ff32adc3db6a38fbf46672613665788a` |
+| 29 | `theorem` | [perron_line_integral_swap](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/perron-line-integral-swap--495fe401f7eeb291e5767e40.md) | 493 | `result-track:495fe401f7eeb291e5767e402453c1129f2d8a48f9057ee8ca2e6c061bc2d62f` |
+| 30 | `theorem` | [perron_prime_side_line](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/perron-prime-side-line--ca8de85ba0bef7f42d9639c0.md) | 551 | `result-track:ca8de85ba0bef7f42d9639c0dd586946649873e6388f7e8bbc0c214550f84b47` |
+| 31 | `theorem` | [source_riesz_exact_comparison](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/source-riesz-exact-comparison--3d7e3bb71f978de7da097f81.md) | 584 | `result-track:3d7e3bb71f978de7da097f819c664625aa02294a1c0a5902aad997ecc8174fcd` |
+| 32 | `def` | [rieszPerronIntegrand](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/rieszperronintegrand--abf3b1c4d2f02b14adeb80a8.md) | 635 | `declaration-track:abf3b1c4d2f02b14adeb80a8f85c31e63ea7a59283896da433d9fd497ea360aa` |
+| 33 | `theorem` | [riesz_prime_sum_eq_strict](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-prime-sum-eq-strict--de05943ea8b682e8707ac053.md) | 640 | `result-track:de05943ea8b682e8707ac0537a03d334ab95d19d9fe0c317ed48307fcf41ae1f` |
+| 34 | `theorem` | [riesz_perron_integral_exact](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-perron-integral-exact--cc762b24bb66325d38f17b0a.md) | 671 | `result-track:cc762b24bb66325d38f17b0abdaba3fd0b11dd7f065396cb2d9187708969ccd4` |
+| 35 | `theorem` | [riesz_perron_integrable](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-perron-integrable--edfc2f7e2bdf9662fce0bac7.md) | 691 | `result-track:edfc2f7e2bdf9662fce0bac725b04b03400205ac9f51c93cddb821298490655f` |
+| 36 | `def` | [rieszPerronTruncation](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/rieszperrontruncation--a3c73ef7c810677857338e67.md) | 711 | `declaration-track:a3c73ef7c810677857338e67e81e99c5bf59d5124be0dfa4175999b8f94e1ac6` |
+| 37 | `theorem` | [riesz_perron_truncation_tendsto](../../../../../mathematics/Topology/GeneralTopology/40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285dPrimePowerPerron/Variant40f450946a68f4d1083774f2c91b5a29ae8b32ea5282850bccde68e9bef9285d.lean/declarations/riesz-perron-truncation-tendsto--73c4deb0790b3b10cb89efdd.md) | 716 | `result-track:73c4deb0790b3b10cb89efdd4b2acb6f917710abc853d5a45b2e4eb38e2de8e1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

@@ -1,0 +1,146 @@
+# accPt_subtype
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "c94df9812d0aa9472f246d518a938f3b94ebd2bf",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 288,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/50/50750cbac392f5b78cfbde05760069feb8f69d08d8a58c81201b5761e22f4214.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:efe86e46-c0e5-69c6-9368-bb21848632f1",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:a59f16ee-c728-484f-4c9d-73fffaa241ca",
+  "kind": "theorem",
+  "lexical_name": "accPt_subtype",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "accpt-subtype--c41505fbaa5c0b952222cbba",
+  "source": {
+    "blob": "c94df9812d0aa9472f246d518a938f3b94ebd2bf",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 340,
+    "line": 288,
+    "path": "GRWTSK/Topology/GeneralTopology/Topology/Variant50750cbac392f5b78cfbde05760069feb8f69d08d8a58c81201b5761e22f4214.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:c41505fbaa5c0b952222cbba49db00abb42e1348741c84be84d609c8731de896",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/Topology/Variant50750cbac392f5b78cfbde05760069feb8f69d08d8a58c81201b5761e22f4214.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:a59f16ee-c728-484f-4c9d-73fffaa241ca`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 288–340.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem accPt_subtype {p o : Ordinal} (S : Set Ordinal) (hpo : p < o) :
+    AccPt p (𝓟 S) ↔ AccPt ⟨p, hpo⟩ (𝓟 (Iio o ↓∩ S)) := by
+  constructor
+  · intro h
+    have plim : p.IsLimit := IsAcc.isLimit h
+    rw [accPt_iff_nhds] at *
+    intro u hu
+    obtain ⟨l, hl⟩ := exists_Ioc_subset_of_mem_nhds hu ⟨⟨0, plim.pos.trans hpo⟩, plim.pos⟩
+    obtain ⟨x, hx⟩ := h (Ioo l (p + 1)) (Ioo_mem_nhds hl.1 (lt_add_one _))
+    use ⟨x, lt_of_le_of_lt (lt_succ_iff.mp hx.1.1.2) hpo⟩
+    refine ⟨?_, Subtype.coe_ne_coe.mp hx.2⟩
+    exact ⟨hl.2 ⟨hx.1.1.1, by exact_mod_cast lt_succ_iff.mp hx.1.1.2⟩, hx.1.2⟩
+  · intro h
+    rw [accPt_iff_nhds] at *
+    intro u hu
+    by_cases ho : p + 1 < o
+    · have ppos : p ≠ 0 := by
+        rintro rfl
+        rw [zero_add] at ho
+        specialize h (Iio ⟨1, ho⟩) (Iio_mem_nhds (Subtype.mk_lt_mk.mpr zero_lt_one))
+        obtain ⟨_, h⟩ := h
+        exact h.2 <| Subtype.mk_eq_mk.mpr (lt_one_iff_zero.mp h.1.1)
+      have plim : p.IsLimit := by
+        contrapose! h
+        obtain ⟨q, hq⟩ := ((zero_or_succ_or_limit p).resolve_left ppos).resolve_right h
+        use (Ioo ⟨q, ((hq ▸ lt_succ q).trans hpo)⟩ ⟨p + 1, ho⟩)
+        constructor
+        · exact Ioo_mem_nhds (by simp only [hq, Subtype.mk_lt_mk, lt_succ]) (lt_succ p)
+        · intro _ mem
+          have aux1 := Subtype.mk_lt_mk.mp mem.1.1
+          have aux2 := Subtype.mk_lt_mk.mp mem.1.2
+          rw [Subtype.mk_eq_mk]
+          rw [hq] at aux2 ⊢
+          exact ((succ_le_iff.mpr aux1).antisymm (le_of_lt_succ aux2)).symm
+      obtain ⟨l, hl⟩ := exists_Ioc_subset_of_mem_nhds hu ⟨0, plim.pos⟩
+      obtain ⟨x, hx⟩ := h (Ioo ⟨l, hl.1.trans hpo⟩ ⟨p + 1, ho⟩) (Ioo_mem_nhds hl.1 (lt_add_one p))
+      use x
+      exact ⟨⟨hl.2 ⟨hx.1.1.1, lt_succ_iff.mp hx.1.1.2⟩, hx.1.2⟩, fun h ↦ hx.2 (SetCoe.ext h)⟩
+    have hp : o = p + 1 := (le_succ_iff_eq_or_le.mp (le_of_not_lt ho)).resolve_right
+      (not_le_of_lt hpo)
+    have ppos : p ≠ 0 := by
+      rintro rfl
+      obtain ⟨x, hx⟩ := h Set.univ univ_mem
+      have : ↑x < o := x.2
+      simp_rw [hp, zero_add, lt_one_iff_zero] at this
+      exact hx.2 (SetCoe.ext this)
+    obtain ⟨l, hl⟩ := exists_Ioc_subset_of_mem_nhds hu ⟨0, Ordinal.pos_iff_ne_zero.mpr ppos⟩
+    obtain ⟨x, hx⟩ := h (Ioi ⟨l, hl.1.trans hpo⟩) (Ioi_mem_nhds hl.1)
+    use x
+    refine ⟨⟨hl.2 ⟨hx.1.1, ?_⟩, hx.1.2⟩, fun h ↦ hx.2 (SetCoe.ext h)⟩
+    rw [← lt_add_one_iff, ← hp]
+    exact x.2
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/Topology/Variant50750cbac392f5b78cfbde05760069feb8f69d08d8a58c81201b5761e22f4214.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/Topology/Variant50750cbac392f5b78cfbde05760069feb8f69d08d8a58c81201b5761e22f4214.lean#L288).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `c94df9812d0aa9472f246d518a938f3b94ebd2bf` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

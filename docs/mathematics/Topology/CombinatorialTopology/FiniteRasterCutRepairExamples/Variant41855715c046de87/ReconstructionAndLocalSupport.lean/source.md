@@ -1,0 +1,55 @@
+# Complete source: GRWTSK.Topology.CombinatorialTopology.FiniteRasterCutRepairExamples.Variant41855715c046de87.ReconstructionAndLocalSupport
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0255a017691b376337649e7672531d3bd92b5bb3` · SHA-256 `826b3358037c94779894b0023193e18deba5d0befca76378e4b7815784fb0b71`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+ReconstructionAndLocalSupport
+Attribution: ATTRIBUTION_CLARIFICATION_NEEDED
+Issue: https://github.com/grwtsk/math/issues/254
+Provisional mathematical ideas and direction: grwtsk contributors.
+Provisional composite search, probabilistic symbolic recombination and linearized diffusive computation: OpenAI/Codex.
+Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”
+These are owner-supplied provisional roles; exact contributions and source lineage need clarification.
+Original SHA-256: 41855715c046de87630ec2205063b76970f035b02c72efa6ad22134e1199cfe6
+Organized SHA-256: ef19090b94d28bc5c62979986a4c14164c4dc8f8b27c8d29d0930170caedd533
+PMD: 510.4.070 combinatorial topology (editorial navigation only).
+Statements, hypotheses and proof bodies are exact source copies. Original whole-file documentation is retained below and may describe other components.
+Only containing namespaces and explicit component imports are changed. Distinct historical representations stay distinct.
+Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provider, or new theorem priority claim.
+-/
+
+
+/- RasterSurgeryEvent reconstruction.post=pre and added/deleted subset-selected properties retain the whole original cut/repair event and its supplied witnesses. These are local finite carrier identities, not an execution schedule, geometric isotopy or global convergence theorem. The original namespace BitMatrix.Tests.ProjectSpecifications is retained literally, so containing namespaces are not changed in this component despite the generic shared-header sentence. The physical GRWTSK subject path is its logical module. Original imported providers remain historical and unresolved; no GRWTSK alias or replacement provider is introduced. Distinct duplicate historical declarations cannot be assumed compatible coimports; there is no umbrella admission. Any decide/native_decide proof is retained source text and was NOT_RUN. -/
+
+import BitMatrix.Dynamics.EvolutionSurgeryRestart
+import BitMatrix.Rhetorical.Coverage
+
+/-! Compile-time conformance witnesses for concrete project specifications. -/
+
+namespace BitMatrix.Tests.ProjectSpecifications
+
+open BitMatrix.Dynamics.EvolutionSurgeryRestart
+
+example {rows columns : Nat}
+    (cut : BitMatrix.Surgery.Digital.CutDatum rows columns) :
+    (RasterSurgeryEvent.reconstruction cut).postEventState =
+      (RasterSurgeryEvent.reconstruction cut).preEventState := by
+  simp
+
+example {rows columns : Nat}
+    {cut : BitMatrix.Surgery.Digital.CutDatum rows columns}
+    (repair : BitMatrix.Surgery.Digital.Repair cut) :
+    repair.addedCells ⊆ cut.selected :=
+  repair.addedCells_subset_selected
+
+example {rows columns : Nat}
+    {cut : BitMatrix.Surgery.Digital.CutDatum rows columns}
+    (repair : BitMatrix.Surgery.Digital.Repair cut) :
+    repair.deletedCells ⊆ cut.selected :=
+  repair.deletedCells_subset_selected
+
+end BitMatrix.Tests.ProjectSpecifications
+```

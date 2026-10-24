@@ -1,0 +1,112 @@
+# Complete source: GRWTSK.Topology.GeneralTopology.SheafOfFunctions.Variantb924be322b9ca3f6c674fd8f64f1d14e3d418e51dccaeff4ae3bb461543feaa4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eb55321c87c56ad8f57daf4dcf565d0da0073dd5` · SHA-256 `6f9bb982cfe44eb8df935cecfa602d28fc4f39bba256abc5f6529ed395fd2895`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.ToTypesIsSheaf.Variantf1c03acf1d50a026d22d3b82d38947d5ef46bb8854427bf18c1e79360042093e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f1c03acf1d50a026d22d3b82d38947d5ef46bb8854427bf18c1e79360042093e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.ToTypesIsSheaf.Variantf1c03acf1d50a026d22d3b82d38947d5ef46bb8854427bf18c1e79360042093e","mathematical_subject":"Topology.GeneralTopology","original_sha256":"f1c03acf1d50a026d22d3b82d38947d5ef46bb8854427bf18c1e79360042093e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Topology/Sheaves/SheafOfFunctions.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Kim Morrison. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johan Commelin, Kim Morrison
+-/
+import Mathlib.Topology.Sheaves.PresheafOfFunctions
+import Mathlib.Topology.Sheaves.SheafCondition.UniqueGluing
+
+/-!
+# Sheaf conditions for presheaves of (continuous) functions.
+
+We show that
+* `Top.Presheaf.toType_isSheaf`: not-necessarily-continuous functions into a type form a sheaf
+* `Top.Presheaf.toTypes_isSheaf`: in fact, these may be dependent functions into a type family
+
+For
+* `Top.sheafToTop`: continuous functions into a topological space form a sheaf
+please see `Topology/Sheaves/LocalPredicate.lean`, where we set up a general framework
+for constructing sub(pre)sheaves of the sheaf of dependent functions.
+
+## Future work
+Obviously there's more to do:
+* sections of a fiber bundle
+* various classes of smooth and structure preserving functions
+* functions into spaces with algebraic structure, which the sections inherit
+-/
+
+
+
+namespace GRWTSK.Topology.GeneralTopology.ToTypesIsSheaf.Variantf1c03acf1d50a026d22d3b82d38947d5ef46bb8854427bf18c1e79360042093e
+
+open CategoryTheory Limits TopologicalSpace Opens
+
+noncomputable section
+
+variable (X : TopCat)
+
+open TopCat
+
+namespace TopCat.Presheaf
+
+/-- We show that the presheaf of functions to a type `T`
+(no continuity assumptions, just plain functions)
+form a sheaf.
+
+In fact, the proof is identical when we do this for dependent functions to a type family `T`,
+so we do the more general case.
+-/
+theorem toTypes_isSheaf (T : X → Type*) : (presheafToTypes X T).IsSheaf :=
+  isSheaf_of_isSheafUniqueGluing_types _ fun ι U sf hsf => by
+  -- We use the sheaf condition in terms of unique gluing
+  -- U is a family of open sets, indexed by `ι` and `sf` is a compatible family of sections.
+  -- In the informal comments below, I'll just write `U` to represent the union.
+    -- Our first goal is to define a function "lifted" to all of `U`.
+    -- We do this one point at a time. Using the axiom of choice, we can pick for each
+    -- `x : ↑(iSup U)` an index `i : ι` such that `x` lies in `U i`
+    choose index index_spec using fun x : ↑(iSup U) => Opens.mem_iSup.mp x.2
+    -- Using this data, we can glue our functions together to a single section
+    let s : ∀ x : ↑(iSup U), T x := fun x => sf (index x) ⟨x.1, index_spec x⟩
+    refine ⟨s, ?_, ?_⟩
+    · intro i
+      funext x
+      -- Now we need to verify that this lifted function restricts correctly to each set `U i`.
+      -- Of course, the difficulty is that at any given point `x ∈ U i`,
+      -- we may have used the axiom of choice to pick a different `j` with `x ∈ U j`
+      -- when defining the function.
+      -- Thus we'll need to use the fact that the restrictions are compatible.
+      exact congr_fun (hsf (index ⟨x, _⟩) i) ⟨x, ⟨index_spec ⟨x.1, _⟩, x.2⟩⟩
+    · -- Now we just need to check that the lift we picked was the only possible one.
+      -- So we suppose we had some other gluing `t` of our sections
+      intro t ht
+      -- and observe that we need to check that it agrees with our choice
+      -- for each `x ∈ ↑(iSup U)`.
+      funext x
+      exact congr_fun (ht (index x)) ⟨x.1, index_spec x⟩
+
+-- We verify that the non-dependent version is an immediate consequence:
+/-- The presheaf of not-necessarily-continuous functions to
+a target type `T` satisfies the sheaf condition.
+-/
+theorem toType_isSheaf (T : Type*) : (presheafToType X T).IsSheaf :=
+  toTypes_isSheaf X fun _ => T
+
+end TopCat.Presheaf
+
+namespace TopCat
+
+/-- The sheaf of not-necessarily-continuous functions on `X` with values in type family
+`T : X → Type u`.
+-/
+def sheafToTypes (T : X → Type*) : Sheaf (Type _) X :=
+  ⟨presheafToTypes X T, Presheaf.toTypes_isSheaf _ _⟩
+
+/-- The sheaf of not-necessarily-continuous functions on `X` with values in a type `T`.
+-/
+def sheafToType (T : Type*) : Sheaf (Type _) X :=
+  ⟨presheafToType X T, Presheaf.toType_isSheaf _ _⟩
+
+end TopCat
+```

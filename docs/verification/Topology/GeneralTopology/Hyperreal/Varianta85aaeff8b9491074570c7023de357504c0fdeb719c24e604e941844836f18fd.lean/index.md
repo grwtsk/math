@@ -1,0 +1,127 @@
+# Verification target: GRWTSK.Topology.GeneralTopology.Hyperreal.Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "116ccb992884f1ad81784391c0e7e31ed7666a74",
+  "lexical_observation_count": 66,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/index.md) · [Full source](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `116ccb992884f1ad81784391c0e7e31ed7666a74`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Hyperreal](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/hyperreal--4d3d7e7d812a45704f027334.md) | 52 | `declaration-track:4d3d7e7d812a45704f027334322968d90c42c50d1afdbd9a41a3b662c70c6004` |
+| 2 | `instance` | [(anonymous)](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/instance--d82037676614aba0d50ed8de.md) | 60 | `declaration-track:d82037676614aba0d50ed8de39cb91a0791df6423f11a3a7e7777cdcdba79d02` |
+| 3 | `instance` | [(anonymous)](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/instance--d7013b90db92e1116f4524a6.md) | 63 | `declaration-track:d7013b90db92e1116f4524a6e8724a8fcc86de38e2fac81386ec71a3a1c2bc85` |
+| 4 | `instance` | [(anonymous)](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/instance--65f2c5bfcfc99d7980901ba9.md) | 66 | `declaration-track:65f2c5bfcfc99d7980901ba9c9a9622bb156d9ee1d71e437753aa3123a7bba08` |
+| 5 | `def` | [ofReal](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/ofreal--f5a4afe4668850735307fae1.md) | 70 | `declaration-track:f5a4afe4668850735307fae1f58385d4f5d7a217828fd3c1fa62915b81cda1a5` |
+| 6 | `instance` | [(anonymous)](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/instance--88b39e22a34cd663a207bd83.md) | 72 | `declaration-track:88b39e22a34cd663a207bd834b9cc3d07b37c86d36c2972a7d96d05fcb410aee` |
+| 7 | `theorem` | [coe_eq_coe](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-eq-coe--577d4dfdadd735211c87b7f6.md) | 75 | `result-track:577d4dfdadd735211c87b7f6d9c2751360555d6defab0027001bcf40afcfe644` |
+| 8 | `theorem` | [coe_ne_coe](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-ne-coe--85c15f4ab74f2a2211615883.md) | 78 | `result-track:85c15f4ab74f2a221161588312cd80ba5794bba15b6486573a87b732ac403d43` |
+| 9 | `theorem` | [coe_eq_zero](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-eq-zero--924e16eccb88ed89efc987b4.md) | 82 | `result-track:924e16eccb88ed89efc987b4b70c410db90cdd91ca6a1401c8343262e5de11d8` |
+| 10 | `theorem` | [coe_eq_one](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-eq-one--d862561d3f12b1bb769c2009.md) | 86 | `result-track:d862561d3f12b1bb769c2009bc7722b366cb29c37147d60e9d7df793648c3e59` |
+| 11 | `theorem` | [coe_ne_zero](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-ne-zero--09949f0e183139168961c3dd.md) | 90 | `result-track:09949f0e183139168961c3dde779fe700ca72af83445c96a8f13e71fe623d994` |
+| 12 | `theorem` | [coe_ne_one](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-ne-one--151dbbc9c1635fbc8a9cc60c.md) | 94 | `result-track:151dbbc9c1635fbc8a9cc60c81dd412765ad4629d49621911dd7d6d768f70e57` |
+| 13 | `theorem` | [coe_one](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-one--04b0cd6112f798475d90b496.md) | 98 | `result-track:04b0cd6112f798475d90b49673fadd834413a52d5324f111f04a49ce5f0ccea3` |
+| 14 | `theorem` | [coe_zero](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-zero--9f6a11a7e32aece08aa12be3.md) | 102 | `result-track:9f6a11a7e32aece08aa12be30893e00cb51c5b67eeefda7a7e4f4514ea9fb046` |
+| 15 | `theorem` | [coe_inv](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-inv--a640418ff8387427eedafd02.md) | 106 | `result-track:a640418ff8387427eedafd0274948047d0dfff0c9d5839355a898a9212a234f0` |
+| 16 | `theorem` | [coe_neg](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-neg--1f605efd463d664b6f04eab9.md) | 110 | `result-track:1f605efd463d664b6f04eab90f49dce8dbaaf242c4f22173835eea88d05320c2` |
+| 17 | `theorem` | [coe_add](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-add--257c2a36076dca891c137cd1.md) | 114 | `result-track:257c2a36076dca891c137cd106476d6c5bea6027596c2959d8a68dcc06fed999` |
+| 18 | `theorem` | [coe_ofNat](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-ofnat--c8cd94a709aa943820d1e08d.md) | 118 | `result-track:c8cd94a709aa943820d1e08dbfb8a548e461bd77beb9a80a3e70513a5d8bc0c5` |
+| 19 | `theorem` | [coe_mul](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-mul--8b9ec53b74cd3780cd3c49b6.md) | 123 | `result-track:8b9ec53b74cd3780cd3c49b6458146951274e8eff3ffba3a87ffbcbd16e4e25d` |
+| 20 | `theorem` | [coe_div](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-div--c411396afaf947750d383fe7.md) | 127 | `result-track:c411396afaf947750d383fe7e24d8ba5031e831e32fe9ff35a30f74bc73d0eb4` |
+| 21 | `theorem` | [coe_sub](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-sub--4432c2498684802a70a1fcdc.md) | 131 | `result-track:4432c2498684802a70a1fcdc8a48fee1c27ee8ab4ba8f3f96a63642122a56b8e` |
+| 22 | `theorem` | [coe_le_coe](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-le-coe--8f89085b154ad4376073db6a.md) | 135 | `result-track:8f89085b154ad4376073db6a9ecf7d864c12bffa1d5d71a04b77f4e7a69bf523` |
+| 23 | `theorem` | [coe_lt_coe](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-lt-coe--d99c220fefb9612388762604.md) | 139 | `result-track:d99c220fefb9612388762604626f58f3f3fc5bd2d7e63d06c2964a036546f5d0` |
+| 24 | `theorem` | [coe_nonneg](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-nonneg--2d1592a45ea8d20a81384203.md) | 143 | `result-track:2d1592a45ea8d20a813842036f1a6b3189c8c97132a49b49376c3f0e9d8bd9ca` |
+| 25 | `theorem` | [coe_pos](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-pos--da6299f131452be38ef49175.md) | 147 | `result-track:da6299f131452be38ef491756295d7433a2ce2a06f1b6b4dfa26746d07abc407` |
+| 26 | `theorem` | [coe_abs](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-abs--0f98ba927862ab0922281f58.md) | 151 | `result-track:0f98ba927862ab0922281f58fc2fc0173bcb3a13dfe2fbab97c00221f02e6383` |
+| 27 | `theorem` | [coe_max](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-max--21c5196b936d29935a56e49b.md) | 155 | `result-track:21c5196b936d29935a56e49b201cc74f5901472a5ff4f1dce8dc47ee88b28a7b` |
+| 28 | `theorem` | [coe_min](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-min--4cdd6fa9ba29d0ec8eaaa644.md) | 159 | `result-track:4cdd6fa9ba29d0ec8eaaa644b7ea531f9d4afa755e33af7024368ab43b13bed8` |
+| 29 | `def` | [coeRingHom](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coeringhom--21ca8ba9a9e7275cbd1837c0.md) | 164 | `declaration-track:21ca8ba9a9e7275cbd1837c07730c7d0e6f722d7db9e0a73c076d24bc17a4d74` |
+| 30 | `theorem` | [archimedeanClassMk_coe_nonneg](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-coe-nonneg--5cb632493ac63a4e1a9788d5.md) | 173 | `result-track:5cb632493ac63a4e1a9788d57802a8dc25c5ff63c36823b5f6c57bb81db83912` |
+| 31 | `theorem` | [archimdeanClassMk_coe](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimdeanclassmk-coe--92b8b866e92fa4f79f112418.md) | 177 | `result-track:92b8b866e92fa4f79f1124188e4e93cb74217bf383e51a23d3ead2487f4aedc8` |
+| 32 | `theorem` | [stdPart_coe](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/stdpart-coe--1573a0c65112c771e84aaaf7.md) | 181 | `result-track:1573a0c65112c771e84aaaf7695310db7e88e4b3a03a46f2863c5e2ca8fdc46b` |
+| 33 | `def` | [ofSeq](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/ofseq--1c57f6df18b3c31b872ec718.md) | 187 | `declaration-track:1c57f6df18b3c31b872ec71823222e2aaad639676b8128d981ef51c8599ac890` |
+| 34 | `theorem` | [ofSeq_surjective](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/ofseq-surjective--4af5d7afdf7349a84d101367.md) | 189 | `result-track:4af5d7afdf7349a84d101367574198a41fd2def434627b397d0e9bd98a776824` |
+| 35 | `theorem` | [ofSeq_lt_ofSeq](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/ofseq-lt-ofseq--5ebbe94db660502f54cb86a0.md) | 191 | `result-track:5ebbe94db660502f54cb86a0db45a71c04bd53038e16776dba470a315d1b9ba3` |
+| 36 | `theorem` | [ofSeq_le_ofSeq](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/ofseq-le-ofseq--939de0a0ec8fe239fc6cfc1f.md) | 194 | `result-track:939de0a0ec8fe239fc6cfc1f1b34fcfcb638d3355dd8b29358fd716860deb3a9` |
+| 37 | `def` | [omega](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/omega--4777e7c0bda7a6db9493eb56.md) | 200 | `declaration-track:4777e7c0bda7a6db9493eb564ea1e6bee1c6076c153d25b44b9383d171079d53` |
+| 38 | `theorem` | [coe_lt_omega](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/coe-lt-omega--190fca3e9f58f57e33eaa35c.md) | 205 | `result-track:190fca3e9f58f57e33eaa35c037d1a39cf415559ed777346f056ef5d0ab97a03` |
+| 39 | `theorem` | [omega_pos](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/omega-pos--a43ec0d90dd7ac01e930acb6.md) | 211 | `result-track:a43ec0d90dd7ac01e930acb6e21240bd0041562e36b70419f68fa35a6e1de7d1` |
+| 40 | `theorem` | [omega_ne_zero](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/omega-ne-zero--dccb6df56ee756f58276a8ca.md) | 215 | `result-track:dccb6df56ee756f58276a8ca18fcf9bb81df3b19badeb56e507f614bb37b4a34` |
+| 41 | `theorem` | [abs_omega](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/abs-omega--a7449448ec6517294ae85a58.md) | 219 | `result-track:a7449448ec6517294ae85a58fe646aa1439f46a640ade916b9a40a4b46b885f6` |
+| 42 | `theorem` | [archimedeanClassMk_omega_neg](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-omega-neg--4a3fbee61440d45a7a0219a2.md) | 223 | `result-track:4a3fbee61440d45a7a0219a28d0dcd3f7755c616ab059e9eb900d523e747e786` |
+| 43 | `theorem` | [stdPart_omega](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/stdpart-omega--fb0d904f9dcbc376c2079a89.md) | 227 | `result-track:fb0d904f9dcbc376c2079a8998637f41b0adbd8606ef6fc85b6200b0cc3d3c13` |
+| 44 | `def` | [epsilon](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/epsilon--151b5d415cf8ceb86e49033e.md) | 234 | `declaration-track:151b5d415cf8ceb86e49033e396bf7d8e9014ac61e8c202a12fea9705247b4f4` |
+| 45 | `theorem` | [inv_omega](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/inv-omega--73d76658eb72c4ca55b8673d.md) | 241 | `result-track:73d76658eb72c4ca55b8673d8cb52cde95514bb8726a756822b70feca56940d1` |
+| 46 | `theorem` | [inv_epsilon](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/inv-epsilon--eb70984905c2e351be87ff63.md) | 245 | `result-track:eb70984905c2e351be87ff637e2badf3549c93d09fa3b0fe312df7c6fcc94da6` |
+| 47 | `theorem` | [epsilon_pos](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/epsilon-pos--4b40928094768b6d8b8d1e5b.md) | 249 | `result-track:4b40928094768b6d8b8d1e5b72ed8fdd09afc8161f8173d64af928ddcf391730` |
+| 48 | `theorem` | [epsilon_ne_zero](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/epsilon-ne-zero--59b808d6972d06414d416e48.md) | 253 | `result-track:59b808d6972d06414d416e48aa50bd1bb5c92db877dcc1305ed0afbf1313e018` |
+| 49 | `theorem` | [epsilon_mul_omega](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/epsilon-mul-omega--26a3ce85b94a48d2bb9f90c5.md) | 257 | `result-track:26a3ce85b94a48d2bb9f90c597eda459804a982ba7fc93e879a24ab2837be782` |
+| 50 | `theorem` | [archimedeanClassMk_epsilon_pos](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-epsilon-pos--b0dff42fbaf6fad9420e2da9.md) | 261 | `result-track:b0dff42fbaf6fad9420e2da9acb04e165cef3e9f6127413ef6dff410764f5044` |
+| 51 | `theorem` | [tendsto_ofSeq](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/tendsto-ofseq--7b29c0e270ab1b2ddd143e7d.md) | 269 | `result-track:7b29c0e270ab1b2ddd143e7dc0a25d7c284a87e91db4502dadf1d0995ce0cdb2` |
+| 52 | `theorem` | [stdPart_map](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/stdpart-map--1f3e1d0acbc738786eebfda4.md) | 273 | `result-track:1f3e1d0acbc738786eebfda443fb30d124298f4f35a2c13caa024fd73a09df89` |
+| 53 | `theorem` | [stdPart_map₂](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/stdpart-map--e6cb9da65f4f1d380ff93e63.md) | 278 | `result-track:e6cb9da65f4f1d380ff93e632a418669b4fab5fc0688264b59a93d6e7bb77ebc` |
+| 54 | `theorem` | [tendsto_iff_forall](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/tendsto-iff-forall--b42ec65fd8cb244eb7e161ac.md) | 285 | `result-track:b42ec65fd8cb244eb7e161accd3a5dc2834f0470810d49738ef42fa4c31aa3ca` |
+| 55 | `theorem` | [archimedeanClassMk_nonneg_of_tendsto](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-nonneg-of-tendsto--e17d687d300a833043cc7ade.md) | 300 | `result-track:e17d687d300a833043cc7ade79046770199c1058ce3a50d6c758b39251f0a69b` |
+| 56 | `theorem` | [stdPart_of_tendsto](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/stdpart-of-tendsto--f11fbabb25e442e96220cd67.md) | 307 | `result-track:f11fbabb25e442e96220cd6776fe154b394c84a46b48e3d31cd4b4ca78f0b840` |
+| 57 | `theorem` | [archimedeanClassMk_pos_of_tendsto](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-pos-of-tendsto--05d02d789b2ccfc36eb685d8.md) | 311 | `result-track:05d02d789b2ccfc36eb685d833ea4d83c6bab9202fe9a177712ba493e3d94df8` |
+| 58 | `theorem` | [stdPart_epsilon](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/stdpart-epsilon--10885ecffaf9bb5a5c93f341.md) | 316 | `result-track:10885ecffaf9bb5a5c93f34124bec28496dddd9a29771d2c9d6a6bed3f5ee3c4` |
+| 59 | `theorem` | [epsilon_lt_of_pos](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/epsilon-lt-of-pos--a635ab78f9db56275400d204.md) | 319 | `result-track:a635ab78f9db56275400d204c3801d1898459ba5e72fdff7c315fad8a754dccf` |
+| 60 | `theorem` | [epsilon_lt_of_neg](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/epsilon-lt-of-neg--7d0d1beb0e04c5589290b68a.md) | 322 | `result-track:7d0d1beb0e04c5589290b68aa51c3fe34f08b83026fc895e6fd372de9dd87a44` |
+| 61 | `theorem` | [lt_of_tendsto_atTop](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/lt-of-tendsto-attop--a6190ecbe93b6f9ab20c9c25.md) | 325 | `result-track:a6190ecbe93b6f9ab20c9c25ab2c1ab9adf818e0e214b7a346b6d2855214077c` |
+| 62 | `theorem` | [lt_of_tendsto_atBot](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/lt-of-tendsto-atbot--63eb3b2773fb45040ad3640c.md) | 330 | `result-track:63eb3b2773fb45040ad3640c991b932e2936b9e665acf59c73e8aae012aa9c28` |
+| 63 | `theorem` | [archimedeanClassMk_neg_of_tendsto_atTop](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-neg-of-tendsto-attop--479f5808027900841013d51b.md) | 335 | `result-track:479f5808027900841013d51bcecafa3876a2126a699a5f802780185339519d24` |
+| 64 | `theorem` | [archimedeanClassMk_neg_of_tendsto_atBot](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/archimedeanclassmk-neg-of-tendsto-atbot--9f07eb0587bcc69103190b9b.md) | 340 | `result-track:9f07eb0587bcc69103190b9b77512c9e46627528bdaee40573b82822122c0d0e` |
+| 65 | `theorem` | [tendsto_atTop_iff](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/tendsto-attop-iff--2d7953e1edbdd77bc43ff035.md) | 345 | `result-track:2d7953e1edbdd77bc43ff03556c71f8bb04eb9f022b64bbffda758e3ce336cd9` |
+| 66 | `theorem` | [tendsto_atBot_iff](../../../../../mathematics/Topology/GeneralTopology/Hyperreal/Varianta85aaeff8b9491074570c7023de357504c0fdeb719c24e604e941844836f18fd.lean/declarations/tendsto-atbot-iff--5aecd6be3f9c9cda6b844c14.md) | 353 | `result-track:5aecd6be3f9c9cda6b844c1475bd10f59c38919ecad903ee5486f9fdb82dbcc9` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

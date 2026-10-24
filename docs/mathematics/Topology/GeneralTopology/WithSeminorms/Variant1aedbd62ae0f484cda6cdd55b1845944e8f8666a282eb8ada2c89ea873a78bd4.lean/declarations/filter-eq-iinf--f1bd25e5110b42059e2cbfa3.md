@@ -1,0 +1,129 @@
+# filter_eq_iInf
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "bb3f5a35a1d5bd7947227eeedaefe143d574e674",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 189,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/1a/1aedbd62ae0f484cda6cdd55b1845944e8f8666a282eb8ada2c89ea873a78bd4.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:b67d29e5-857e-a47d-cfd5-03c324768c3f",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:5accdd2e-195d-e8fb-f234-b8585880a07f",
+  "kind": "theorem",
+  "lexical_name": "filter_eq_iInf",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "filter-eq-iinf--f1bd25e5110b42059e2cbfa3",
+  "source": {
+    "blob": "bb3f5a35a1d5bd7947227eeedaefe143d574e674",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 224,
+    "line": 189,
+    "path": "GRWTSK/Topology/GeneralTopology/WithSeminorms/Variant1aedbd62ae0f484cda6cdd55b1845944e8f8666a282eb8ada2c89ea873a78bd4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:f1bd25e5110b42059e2cbfa30fae97bf1c4603052bc8c4fe1a5847c150c8ba2d",
+  "verification": {
+    "reference": "docs/verification/Topology/GeneralTopology/WithSeminorms/Variant1aedbd62ae0f484cda6cdd55b1845944e8f8666a282eb8ada2c89ea873a78bd4.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:5accdd2e-195d-e8fb-f234-b8585880a07f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 189–224.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem filter_eq_iInf (p : SeminormFamily 𝕜 E ι) :
+    p.moduleFilterBasis.toFilterBasis.filter = ⨅ i, (𝓝 0).comap (p i) := by
+  refine' le_antisymm (le_iInf fun i => _) _
+  · rw [p.moduleFilterBasis.toFilterBasis.hasBasis.le_basis_iff
+        (Metric.nhds_basis_ball.comap _)]
+    intro ε hε
+    refine' ⟨(p i).ball 0 ε, _, _⟩
+    · rw [← (Finset.sup_singleton : _ = p i)]
+      exact p.basisSets_mem {i} hε
+    · rw [id, (p i).ball_zero_eq_preimage_ball]
+  · rw [p.moduleFilterBasis.toFilterBasis.hasBasis.ge_iff]
+    rintro U (hU : U ∈ p.basisSets)
+    rcases p.basisSets_iff.mp hU with ⟨s, r, hr, rfl⟩
+    rw [id, Seminorm.ball_finset_sup_eq_iInter _ _ _ hr, s.iInter_mem_sets]
+    exact fun i _ =>
+      Filter.mem_iInf_of_mem i
+        ⟨Metric.ball 0 r, Metric.ball_mem_nhds 0 hr,
+          Eq.subset (p i).ball_zero_eq_preimage_ball.symm⟩
+#align seminorm_family.filter_eq_infi SeminormFamily.filter_eq_iInf
+
+end SeminormFamily
+
+end FilterBasis
+
+section Bounded
+
+namespace Seminorm
+
+variable [NormedField 𝕜] [AddCommGroup E] [Module 𝕜 E]
+
+variable [NormedField 𝕜₂] [AddCommGroup F] [Module 𝕜₂ F]
+
+variable {σ₁₂ : 𝕜 →+* 𝕜₂} [RingHomIsometric σ₁₂]
+
+-- Todo: This should be phrased entirely in terms of the von Neumann bornology.
+/-- The proposition that a linear map is bounded between spaces with families of seminorms. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Topology/GeneralTopology/WithSeminorms/Variant1aedbd62ae0f484cda6cdd55b1845944e8f8666a282eb8ada2c89ea873a78bd4.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/WithSeminorms/Variant1aedbd62ae0f484cda6cdd55b1845944e8f8666a282eb8ada2c89ea873a78bd4.lean#L189).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bb3f5a35a1d5bd7947227eeedaefe143d574e674` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
