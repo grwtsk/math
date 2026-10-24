@@ -43,6 +43,7 @@ unresolved = [
   "Validate all four declarations using pinned Lean and Mathlib",
 ]
 commands = [
+  "test -z \"$(git status --porcelain --untracked-files=all)\"",
   "git diff --quiet",
   "git diff --cached --quiet",
   "git checkout --detach d5240f8066ab731a4c3284da7b60538d6b7de48a",
