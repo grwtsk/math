@@ -9,6 +9,7 @@ Original upstream author and license are retained here as provenance; the local
 GRWTSK bridge declarations are by grwtsk contributors.
 -/
 import GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteObservationGap
+import GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeatGap
 import Mathlib.Analysis.Normed.Module.FiniteDimension
 import Mathlib.Topology.Order.IntermediateValue
 import Mathlib.Tactic.Abel
@@ -555,6 +556,124 @@ theorem euclidean_perturbed_moment_adjoint_strict_contraction {n : ℕ}
     B C R P euclideanEncode hε hB hR hcoercive hpert
     euclideanEncode_energy
     (euclideanOperatorMatrix_intertwines P) v
+
+
+
+/-!
+## Coercive moment gaps transferred to existing finite spectral and Hodge models
+
+The spectralFiniteMatrix is an actual diagonal model from FiniteSpectralHeat.
+The operator-identification hypothesis below is an equality of its coordinate
+matrix with the matrix of the coercive moment operator, rather than a
+restatement of the desired spectral gap. Only after this exact equality and
+the original global coercivity certificate are supplied does the quantitative
+moment gap exclude each zero spectral coefficient and control Hodge heat.
+No physical Navier--Stokes or zeta operator identification is inferred.
+-/
+
+/-- A coercive Euclidean moment operator whose coordinate matrix is the
+specified diagonal spectral matrix has a squared gap in every eigenmode. -/
+theorem certified_spectral_coefficient_gap {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    (i : Fin n) :
+    (ε / (ε + β * δ)) ^ 2 ≤ (a i) ^ 2 := by
+  apply GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix_coefficient_gap
+    a (γ := ε / (ε + β * δ))
+  intro v
+  simpa only [hdiag] using
+    (euclidean_moment_adjoint_observability
+      B C R hε hB hR hcoercive v)
+
+/-- The exact diagonal spectral matrix of a coercive Euclidean moment
+operator has a strictly contracting finite-adjoint residual step. -/
+theorem certified_spectral_adjoint_strict_contraction {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    (v : Fin n → ℝ) :
+    let A := GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a
+    energy (Finset.univ : Finset (Fin n))
+        (fun c => v c - reconstruction Finset.univ Finset.univ A
+          (applyMatrix Finset.univ A v) c) ≤
+        (1 - damping Finset.univ Finset.univ A *
+          (ε / (ε + β * δ)) ^ 2) * energy Finset.univ v ∧
+      1 - damping Finset.univ Finset.univ A *
+        (ε / (ε + β * δ)) ^ 2 < 1 := by
+  simpa only [hdiag] using
+    (euclidean_moment_adjoint_strict_contraction
+      B C R hε hB hR hcoercive v)
+
+/-- The Navier--Stokes-derived finite-rank gap forces exponential decay
+of the named positive diagonal Hodge heat model, once its coefficients
+are identified with the actual moment operator's diagonal coordinates. -/
+theorem certified_spectral_hodge_heat_decay {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    {t : ℝ} (ht : 0 ≤ t) (x : Fin n → ℝ) :
+    GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.dot
+      (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.heat a t x)
+      (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.heat a t x) ≤
+      Real.exp (-2 * t * (ε / (ε + β * δ)) ^ 2) *
+        GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.dot x x := by
+  apply GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix_hodge_heat_gap
+    a (γ := ε / (ε + β * δ))
+  · intro v
+    simpa only [hdiag] using
+      (euclidean_moment_adjoint_observability
+        B C R hε hB hR hcoercive v)
+  · exact ht
+  · exact x
+
+/-- Under the same typed diagonal identification and global coercivity,
+the degree-zero harmonic space of the positive diagonal Hodge model is
+trivial. The hypothesis does not assert that an unrelated Hodge operator is
+this particular moment model. -/
+theorem certified_spectral_hodge_harmonic_trivial {n : ℕ}
+    (B : E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    (a : Fin n → ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε) (hB : ‖B‖ ≤ β)
+    (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C y‖ ^ 2 ≤ R (momentMatrix B C y) (C y))
+    (hdiag : euclideanOperatorMatrix (momentMatrix B C) =
+      GRWTSK.Algebra.LinearAlgebra.FiniteSpectralHeat.spectralFiniteMatrix a)
+    (x : Fin n → ℝ) :
+    (GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.positiveDiagonalHodge a).IsHarmonic0 x
+      ↔ x = 0 := by
+  apply GRWTSK.Algebra.LinearAlgebra.FinitePositiveHodgeHeat.harmonic0_iff_eq_zero
+  intro i hai
+  have hgap := certified_spectral_coefficient_gap
+    B C R a hε hB hR hcoercive hdiag i
+  have hpos : 0 < (ε / (ε + β * δ)) ^ 2 :=
+    sq_pos_of_pos (moment_gap_pos B R hε hB hR)
+  rw [hai] at hgap
+  nlinarith
 
 
 end
