@@ -5,6 +5,7 @@ import Mathlib.Tactic
 import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.NumberTheory.DirichletCharacter.Bounds
 import Mathlib.Analysis.SpecialFunctions.Log.Monotone
+import Mathlib.Analysis.Complex.ExponentialBounds
 import GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise
 
 /-!
@@ -301,5 +302,24 @@ theorem logarithmicPowerTailKernel_antitoneOn_exp
     AntitoneOn (logarithmicPowerTailKernel σ)
       (Set.Ici (Real.exp σ⁻¹)) := by
   exact Real.log_div_self_rpow_antitoneOn (lt_trans zero_lt_one hσ)
+
+
+/-- For exponents greater than one, the antitonicity threshold lies
+below three. -/
+theorem exp_inv_le_three_of_one_lt
+    (σ : ℝ) (hσ : 1 < σ) :
+    Real.exp σ⁻¹ ≤ (3 : ℝ) := by
+  have hσpos : 0 < σ := lt_trans zero_lt_one hσ
+  have hinv : σ⁻¹ ≤ (1 : ℝ) := (inv_le_one₀ hσpos).mpr (le_of_lt hσ)
+  exact (Real.exp_le_exp.mpr hinv).trans
+    (le_of_lt Real.exp_one_lt_three)
+
+/-- The logarithmic-power kernel is antitone on the integer-tail
+domain starting at three. -/
+theorem logarithmicPowerTailKernel_antitoneOn_three
+    (σ : ℝ) (hσ : 1 < σ) :
+    AntitoneOn (logarithmicPowerTailKernel σ) (Set.Ici (3 : ℝ)) := by
+  apply (logarithmicPowerTailKernel_antitoneOn_exp σ hσ).mono
+  exact Set.Ici_subset_Ici.mpr (exp_inv_le_three_of_one_lt σ hσ)
 
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
