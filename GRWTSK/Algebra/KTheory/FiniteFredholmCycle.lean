@@ -1187,6 +1187,20 @@ theorem classBlockSum_assoc
       ⟨P.1 + (Q.1 + R.1), finiteBlockSum P.2 (finiteBlockSum Q.2 R.2)⟩
   exact Quotient.sound (finiteBlockSum_assoc_mvNRel P.2 Q.2 R.2)
 
+/-- The quotient of finite complex star projections under rectangular
+Murray–von Neumann correspondence carries a commutative additive monoid
+structure by finite block sum. Every law reduces to an explicit matrix
+witness; no analytic C⋆-algebra K₀ theorem is assumed. -/
+instance instFiniteProjectionClassAddCommMonoid :
+    AddCommMonoid FiniteProjectionClass where
+  zero := classZero
+  add := classBlockSum
+  add_assoc := classBlockSum_assoc
+  zero_add := classBlockSum_zero_left
+  add_zero := classBlockSum_zero_right
+  add_comm := classBlockSum_comm
+  nsmul := nsmulRec
+
 /-- The ordinary trace of a two-block matrix is the sum of its two
 ordinary traces, without dimension-dependent normalization. -/
 theorem matrix_trace_fromBlocks
