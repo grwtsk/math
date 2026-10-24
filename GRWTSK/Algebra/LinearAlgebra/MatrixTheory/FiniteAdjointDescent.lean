@@ -1,5 +1,4 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Tactic
 
@@ -165,4 +164,59 @@ theorem residual_relative_contraction_of_normed_realization
     intro w
     exact observability_of_normed_realization s t A J encode γ hγ.le hgap hinput houtput w
   · exact residual_relative_factor_lt_one s t A (γ ^ 2) (sq_pos_of_pos hγ)
+
+/-!
+## Square-matrix intertwining bridge
+
+For a finite-coordinate matrix acting on the same input and output coordinates,
+one energy-preserving encoding and a commuting operator square supply both
+norm identities required by `observability_of_normed_realization`.
+This is conditional on an actual intertwining map; it does not infer one from
+the name or origin of the operator.
+-/
+
+/-- An energy-preserving encoding that intertwines a finite matrix and a
+continuous linear operator transports a quantitative operator gap to the
+finite observation energy. No finite-dimensionality of the target is needed. -/
+theorem observability_of_intertwining
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
+    (s : Finset κ) (A : κ → κ → ℝ)
+    (J : F →L[ℝ] F) (encode : (κ → ℝ) → F) (γ : ℝ)
+    (hγ : 0 ≤ γ)
+    (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
+    (henergy : ∀ v : κ → ℝ, energy s v = ‖encode v‖ ^ 2)
+    (hintertwines : ∀ v : κ → ℝ,
+      encode (applyMatrix s A v) = J (encode v))
+    (v : κ → ℝ) :
+    γ ^ 2 * energy s v ≤ energy s (applyMatrix s A v) := by
+  exact observability_of_normed_realization s s A J encode γ hγ hgap
+    henergy
+    (by
+      intro w
+      rw [henergy (applyMatrix s A w), hintertwines w])
+    v
+
+/-- Strict relative finite-adjoint contraction from an operator lower bound,
+a single coordinate-energy identity, and an exact commuting square. The
+conclusion is scoped to the given finite-coordinate reconstruction. -/
+theorem residual_relative_contraction_of_intertwining
+    {F : Type*} [NormedAddCommGroup F] [NormedSpace ℝ F]
+    (s : Finset κ) (A : κ → κ → ℝ)
+    (J : F →L[ℝ] F) (encode : (κ → ℝ) → F) (γ : ℝ)
+    (hγ : 0 < γ)
+    (hgap : ∀ x : F, γ * ‖x‖ ≤ ‖J x‖)
+    (henergy : ∀ v : κ → ℝ, energy s v = ‖encode v‖ ^ 2)
+    (hintertwines : ∀ v : κ → ℝ,
+      encode (applyMatrix s A v) = J (encode v))
+    (v : κ → ℝ) :
+    energy s (fun c => v c - reconstruction s s A (applyMatrix s A v) c) ≤
+      (1 - damping s s A * γ ^ 2) * energy s v ∧
+      1 - damping s s A * γ ^ 2 < 1 := by
+  exact residual_relative_contraction_of_normed_realization
+    s s A J encode γ hγ hgap henergy
+    (by
+      intro w
+      rw [henergy (applyMatrix s A w), hintertwines w])
+    v
+
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
