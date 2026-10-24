@@ -12125,3 +12125,50 @@ snapshots requested by the four verification issues. Those original exact
 pins remain separate pending native tasks. The source variants' historical
 content identifiers and old receipts do not certify these edited bytes.
 No RH-scale or other stronger mathematical conclusion follows from the repair.
+
+
+## RH compatibility-provider path repair after relocation — 2026-10-24
+
+Local attribution: grwtsk contributors. External paper title/byline/year/DOI:
+not applicable; no mathematical theorem or historical attribution is added.
+Source repair commit `7eaf4e6badb8254fdd25ce233ed9c4f3d3e33a7e`, parent
+`78ab030ab89d07fd8924c45feec777c7d9c1bf1a`.
+
+Five relocated compatibility modules under
+`GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/`
+retained nonexistent `GRWTSK.RiemannHypothesis.*` or `FormalResearch.*` module
+imports. Nine import references were repaired. The canonical providers are now
+`GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions`, `.ZeroSymmetry`,
+`.CriticalLineDefect`, `.Hypothesis` and `.DefectCriterion`; compatibility
+imports between the relocated leaves now use their exact existing GRWTSK
+subject paths. The five repaired consumers are the variants beginning
+`6a1cca848af241fa`, `a86dfe0f99a39a4c`, `edbb9e4dcbc4d262`,
+`1dc1d35e3fd0f387` and `27a1dd7f96c62f62`.
+
+**Preserved mathematical scope.** All export lists, namespaces, theorem
+statements, proof bodies and other non-import bytes are unchanged. The exact
+Mathlib RH statement remains a proposition, and equivalence with defect
+vanishing remains a reformulation rather than a proof of RH. No positivity,
+zero symmetry, completeness, source identity or analytic estimate is promoted
+by this import repair. Historical source identifiers do not certify edited
+successor bytes.
+
+**Actual checks.** Exact parent-source and working-tree collision checks,
+committed SHA-256 checks for all five repaired files, non-import byte equality,
+and direct project-provider path resolution passed. Every literal direct
+project import of these five consumers now resolves at the repaired commit;
+none still uses the removed project module roots. `git diff --check` passed.
+The complete corpus preflight separately found 202 missing literal GRWTSK
+import occurrences across 32 module names before this repair. This patch
+repairs five of those occurrences, plus four missing compatibility references;
+it does not claim that other providers have been repaired. In particular,
+ambiguous Basic-module providers were not guessed or aliased.
+
+Compilation, fresh kernel replay and transitive axiom audits: **NOT_RUN**.
+The existing managed `declaration107-reconciled` owner and activation lock were
+preserved; no competing controller, resource reset or standalone native bypass
+was used. Operational plans, collision/source hashes and scoped postflight
+remain outside math in Noe runtime
+`formalization/issue-burndown/20261024T090117.384628Z/`.
+The #1213 canonical-source checks still require actual native compilation and
+audit under managed admission; historical issue pins remain distinct tasks.
