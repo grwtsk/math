@@ -1,4 +1,4 @@
-import Finite1Pipeline
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.KernelCorrespondence.Basic
 
 /-!
 Compose two kernel correspondences with the same intermediate map and zero.
