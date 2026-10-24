@@ -127,7 +127,7 @@ theorem difference_telescoping (f : ℕ → ℤ) (n : ℕ) :
       calc
         f (n + 1) = f n + (f (n + 1) - f n) := by omega
         _ = (f 0 + ∑ i ∈ Finset.range n, discreteDifference f i) +
-              discreteDifference f n := by rw [ih]; rfl
+              discreteDifference f n := by rw [← ih]; rfl
         _ = f 0 + ∑ i ∈ Finset.range (n + 1),
               discreteDifference f i := by rw [Finset.sum_range_succ]; ring
 

@@ -188,8 +188,8 @@ theorem no_exact_language_at_of_nonsofic
     [AddCommGroup Spectral] [Module ℂ Spectral]
     {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
     {x : X} (hNonsofic : ¬ IsSoficTrace (C.labelTrace x)) :
-    ¬ ExactLanguageAt C x := by
-  intro E
+    ¬ Nonempty (ExactLanguageAt C x) := by
+  rintro ⟨E⟩
   exact hNonsofic E.implies_sofic
 
 /-- Even stronger: if EVERY eventual tail has non-sofic factor language,
@@ -203,8 +203,8 @@ theorem no_exact_language_at_of_non_eventual_sofic
     {C : DynamicSpectralCover X Observation Vertex Alphabet Spectral}
     {x : X}
     (hNonEventual : ¬ EventuallySoficTrace (C.labelTrace x)) :
-    ¬ ExactLanguageAt C x := by
-  intro E
+    ¬ Nonempty (ExactLanguageAt C x) := by
+  rintro ⟨E⟩
   exact hNonEventual (eventuallySofic_of_sofic E.implies_sofic)
 
 
@@ -221,7 +221,7 @@ theorem no_exact_language_at_of_unbounded_rightContexts
     {x : X}
     (hcontexts :
       UnboundedRightContexts (HasFiniteBlock (C.labelTrace x))) :
-    ¬ ExactLanguageAt C x :=
+    ¬ Nonempty (ExactLanguageAt C x) :=
   no_exact_language_at_of_nonsofic
     (not_soficTrace_of_unboundedRightContexts
       (C.labelTrace x) hcontexts)
@@ -239,7 +239,7 @@ theorem no_exact_language_at_of_all_tail_rightContexts
     (hall : ∀ offset : ℕ,
       UnboundedRightContexts
         (HasFiniteBlock (tailTrace (C.labelTrace x) offset))) :
-    ¬ ExactLanguageAt C x :=
+    ¬ Nonempty (ExactLanguageAt C x) :=
   no_exact_language_at_of_non_eventual_sofic
     (not_eventuallySoficTrace_of_all_tail_rightContexts
       (C.labelTrace x) hall)
