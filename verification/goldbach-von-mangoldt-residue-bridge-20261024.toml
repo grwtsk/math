@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-residue-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "4da4069511c64e59bef87c5d096acffeb8efd813"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtResidueBridge.lean"
+source_blob = "0d07ac3dbccdfcd49dbbd53f623c9e83d15d32b9"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtResidueBridge.finitePsiResidue_eq_vonMangoldt_sum"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise","GRWTSK.NumberTheory.Primes.GoldbachPrimePowerCorrection"]
+exact_hypotheses = "N q r : Nat; inclusive range(N+1); filter n%q=r"
+missing_suppliers = ["Nonunit-restricted canonical von Mangoldt sum","Exact comparison with existing residue and nonunit correction interfaces","Pinned transitive Lean/kernel/axiom verification"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtResidueBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtResidueBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
