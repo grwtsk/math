@@ -253,6 +253,15 @@ def UnboundedRightContexts
         ¬ (language (words i ++ suffix) ↔
             language (words j ++ suffix))
 
+/-- The exact number of reachable-state subsets available to a chosen
+finite presentation. The Fintype instance is explicitly sourced from
+the presentation field; it is not silently inferred in a theorem type. -/
+def ExactLanguagePresentation.stateCapacity
+    {Alphabet : Type v} {language : List Alphabet → Prop}
+    (P : ExactLanguagePresentation.{0,v} Alphabet language) : ℕ := by
+  letI : Fintype P.State := P.finiteState
+  exact Fintype.card (Finset P.State)
+
 /-- A bounded, independently inspectable certificate: \`n\` words with
 pairwise distinguishable continuations in a *given* finite graph require
 at least \`n\` distinct reachable-end-state subsets. This is a finite
@@ -292,9 +301,10 @@ theorem rightContexts_card_le_exactPresentation
       ∃ suffix : List Alphabet,
         ¬ (language (words i ++ suffix) ↔
             language (words j ++ suffix))) :
-    n ≤ Fintype.card (Finset P.State) := by
+    n ≤ P.stateCapacity := by
   letI : Fintype P.State := P.finiteState
   classical
+  change n ≤ Fintype.card (Finset P.State)
   apply rightContexts_card_le_graphLanguage P.graph n words
   intro i j hij
   obtain ⟨suffix, hdiff⟩ := hdistinct i j hij
@@ -318,10 +328,9 @@ theorem not_soficFactorLanguage_of_unboundedRightContexts
     (hunbounded : UnboundedRightContexts language) :
     ¬ IsSoficFactorLanguage language := by
   rintro ⟨P⟩
-  letI : Fintype P.State := P.finiteState
-  let N : ℕ := Fintype.card (Finset P.State) + 1
+  let N : ℕ := P.stateCapacity + 1
   obtain ⟨words, hdistinguishable⟩ := hunbounded N
-  have hbound : N ≤ Fintype.card (Finset P.State) :=
+  have hbound : N ≤ P.stateCapacity :=
     rightContexts_card_le_exactPresentation
       P N words hdistinguishable
   dsimp [N] at hbound
