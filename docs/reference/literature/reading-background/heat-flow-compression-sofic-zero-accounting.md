@@ -239,3 +239,54 @@ Expected checks:
 Actual result as of this note: no Lean executable was available in the current
 runtime. Compilation, fresh kernel checking, and transitive axiom auditing are
 therefore pending rather than claimed.
+
+
+## 2026-10-23 arithmetic split refinement
+
+Source refinement commit: `9db6cf032653fafc7c7c26eb22f7480bafa2d28b`.
+Source blob for
+`GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean`:
+`71277213e4c6da281d53c56ef57b84eb68ac7730`.
+
+This refinement separates the two arithmetic conclusions that were previously
+packaged together under the GRH-facing theorem.
+
+- `irrational_of_rational_implies_sofic_of_nonsofic` proves relative
+  irrationality from exactly two suppliers: rational height implies the
+  selected trace is sofic, and the selected trace is non-sofic. GRH is not a
+  hypothesis.
+- `zero_height_irrational_and_grh_transcendental_of_nonsofic` keeps that
+  irrationality proof independent of GRH, then uses GRH only to obtain
+  `onCriticalLine z`. A stronger algebraic-height-to-sofic bridge on the
+  critical line plus non-soficity yields relative transcendence.
+
+This is a logical bridge only. It does not prove rational-to-sofic,
+algebraic-to-sofic, non-soficity of actual zeta-zero traces, GRH, or any
+arithmetic property of an actual zero ordinate.
+
+The source identities remain the same: Rodgers--Tao
+(arXiv:1801.05914) is methodological context for the zero-dynamics process;
+Huffman (DOI 10.1109/JRPROC.1952.273898) supplies the lossless-prefix-code
+analogy; OpenAI's 30 September 2026 quasi-Riemann paper supplies the external
+`7/8` zero-free boundary; Tao's October 2026 discussions supply expository
+context for the significance of the `7/8` result and the need for a new idea
+near the `3/4` barrier. No historical influence is inferred from these idea
+matches.
+
+Verification status for the new declarations: **NOT_RUN / NOT_KERNEL_AUDITED**.
+Required fresh checks are:
+
+```bash
+lake env lean GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean
+lake build GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic
+```
+
+The axiom audit must include the two new fully qualified declarations:
+
+```text
+GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.irrational_of_rational_implies_sofic_of_nonsofic
+GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.zero_height_irrational_and_grh_transcendental_of_nonsofic
+```
+
+Fresh elaboration, kernel replay, transitive axiom audit, and external replay
+remain pending.
