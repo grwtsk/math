@@ -19,7 +19,7 @@ Scope: physical GRWTSK subject placement only. Exact original namespace blocks, 
 -/
 
 import BooleanMatrix.Application.Core
-import GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.NaturalIterationOnBooleanMatrices.Variant1f1f2efdeade9306.FiniteIteration
+import GRWTSK.DynamicalSystems.NaturalIterationOnBooleanMatrices.Variant1f1f2efdeade9306.FiniteIteration
 
 /-!
 # Iterated BooleanMatrix execution
