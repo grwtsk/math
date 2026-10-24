@@ -283,4 +283,32 @@ theorem complexDirichlet_norm_on_units
   have h := MulChar.apply_mem_rootsOfUnity (a := a) (χ := χ)
   exact norm_eq_one_of_mem_rootsOfUnity h
 
+
+/-- The finite psi discrepancy estimate for the actual complex
+Dirichlet-character family. Only analytic twisted-sum and principal
+budgets remain as hypotheses. -/
+theorem norm_finitePsiResidue_sub_main_dirichlet_le
+    (q N r : ℕ) (hq : 0 < q) (hr : r < q)
+    [NeZero q]
+    [HasEnoughRootsOfUnity ℂ (Monoid.exponent (ZMod q)ˣ)]
+    (a : (ZMod q)ˣ) (ha : (a : ZMod q) = (r : ZMod q))
+    (E : DirichletCharacter ℂ q → ℝ)
+    (main : ℂ) (P : ℝ)
+    (hE : ∀ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q),
+      ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)‖ ≤ E χ)
+    (hmain : ‖unitPsiTotal q N - main‖ ≤ P) :
+    ‖(Nat.totient q : ℂ) * (finitePsiResidue N q r : ℂ) - main‖ ≤
+      (∑ χ ∈ Finset.univ.erase (1 : DirichletCharacter ℂ q), E χ) + P := by
+  have h := norm_finitePsiResidue_sub_reduced_main_le
+    q N r hq hr
+    (fun χ : DirichletCharacter ℂ q =>
+      fun b : (ZMod q)ˣ => χ (b : ZMod q))
+    a ha (1 : DirichletCharacter ℂ q) E main P
+    (complexDirichlet_orthogonalAt q a)
+    (complexDirichlet_principal_on_units q)
+    (fun χ => (complexDirichlet_norm_on_units q χ a).le)
+    hE hmain
+  rw [card_complexDirichlet_eq_totient q] at h
+  exact h
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
