@@ -584,7 +584,10 @@ theorem linearPMap_complementary_projection_mem_domain
   refine ⟨hp, ?_⟩
   have hq : Sᗮ.starProjection x = x - S.starProjection x := by
     have hsum := S.starProjection_add_starProjection_orthogonal x
-    exact (eq_sub_iff_add_eq).2 hsum.symm
+    have hsum' : Sᗮ.starProjection x + S.starProjection x = x := by
+      rw [add_comm]
+      exact hsum
+    exact (eq_sub_iff_add_eq).2 hsum'
   rw [hq]
   exact A.domain.sub_mem hx hp
 
