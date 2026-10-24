@@ -9697,3 +9697,12 @@ External evidence in that directory: `raw-paired-build.log`,
 `raw-paired-public.log`, `raw-paired-final-public.log`, `raw-paired-audit.log`,
 and `raw-paired-validated-snapshot.json`. Acceptance is confined to this pinned
 closure; unresolved premises and source-only statuses outside it remain intact.
+
+
+**Case SOFIC-RIGHT-CONTEXT-FINITE-CAPACITY-20261023 verification
+request:** [grwtsk/math issue #1182](https://github.com/grwtsk/math/issues/1182),
+pinned to \`9172c906491d4f0e51c5afb7a5441d1c3a0e756b\`
+and the exact source blobs specified in this case.
+The issue is **OPEN / NOT_RUN / NOT_KERNEL_AUDITED**;
+source readback and finite fixture tests do not replace compiler,
+independent fresh kernel or transitive axiom audit results.
