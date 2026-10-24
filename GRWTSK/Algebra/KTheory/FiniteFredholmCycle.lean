@@ -1239,6 +1239,19 @@ theorem classTrace_classBlockSum
     P.2.val.trace + Q.2.val.trace
   exact finiteBlockSumMatrix_trace P.2.val Q.2.val
 
+/-- Ordinary unnormalized trace is an additive monoid homomorphism
+from the concrete finite Murray–von Neumann projection-class monoid.
+Its target is the additive group of complex numbers; this is not yet
+the canonical trace on an analytic reduced group C⋆-algebra. -/
+def classTraceAddHom : FiniteProjectionClass →+ ℂ where
+  toFun := classTrace
+  map_zero' := classTrace_classZero
+  map_add' := classTrace_classBlockSum
+
+@[simp]
+theorem classTraceAddHom_apply (x : FiniteProjectionClass) :
+    classTraceAddHom x = classTrace x := rfl
+
 /-- Every finite projection class has nonnegative integral ordinary
 trace. This uses the established finite idempotent trace/rank identity;
 it makes no statement about analytic traces on infinite algebras. -/
