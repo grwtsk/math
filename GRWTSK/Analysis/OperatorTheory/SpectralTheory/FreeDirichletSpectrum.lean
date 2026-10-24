@@ -574,4 +574,79 @@ theorem even_free_hermitian_eigenvalues_gap (m : ℕ) (hm : 0 < m)
   simpa only [hk] using hb
 
 
+
+/-!
+## Actual free Euclidean norm gap and coupled Sturmian finite-volume consumer
+
+At fixed nonempty even volume, the pinned finite-dimensional symmetric
+spectral theorem diagonalizes the **actual** free Dirichlet linear map
+orthonormally. Its eigenvalues belong to the full previously constructed
+sine characteristic-root list. Consequently the precise scalar minimum
+supplies the norm bound that the bounded-operator perturbation interface
+requires. The final two consequences concern the same **finite** volume
+at energy zero, and the coupling must be strictly below that margin.
+-/
+
+/-- The exact minimum absolute free eigenvalue is a genuine global
+Euclidean norm gap for the **actual** unshifted finite operator at zero
+energy. There is no abstract `hfree` hypothesis. -/
+theorem even_free_zero_energy_norm_gap (m : ℕ) (hm : 0 < m)
+    (x : EuclideanSpace ℝ (Fin (2 * m))) :
+    2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) * ‖x‖ ≤
+      ‖(freeEnergyCLM (2 * m) 0) x‖ := by
+  let A := freeDirichlet (2 * m)
+  let T : EuclideanSpace ℝ (Fin (2 * m)) →ₗ[ℝ]
+      EuclideanSpace ℝ (Fin (2 * m)) := A.toEuclideanLin
+  have hT : T.IsSymmetric := by
+    change A.toEuclideanLin.IsSymmetric
+    exact Matrix.isSymmetric_toEuclideanLin_iff.mpr
+      (freeDirichlet_isHermitian (2 * m))
+  have hn : Module.finrank ℝ (EuclideanSpace ℝ (Fin (2 * m))) = 2 * m := by
+    simp
+  let γ : ℝ := 2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2))
+  have hγ : 0 ≤ γ := (even_central_margin_pos m hm).le
+  have heig (i : Fin (2 * m)) : γ ≤ |hT.eigenvalues hn i| := by
+    have hrootT : hT.eigenvalues hn i ∈ spectrum ℝ T :=
+      (hT.hasEigenvalue_eigenvalues hn i).mem_spectrum
+    change hT.eigenvalues hn i ∈ spectrum ℝ A.toEuclideanLin at hrootT
+    rw [Matrix.spectrum_toEuclideanLin] at hrootT
+    have hroot : A.charpoly.IsRoot (hT.eigenvalues hn i) :=
+      Matrix.mem_spectrum_iff_isRoot_charpoly.mp hrootT
+    have hroots : hT.eigenvalues hn i ∈ A.charpoly.roots :=
+      (Polynomial.mem_roots').mpr ⟨A.charpoly_monic.ne_zero, hroot⟩
+    rw [free_roots_charpoly] at hroots
+    obtain ⟨k, _, hk⟩ := Multiset.mem_map.mp hroots
+    have hb := even_eigenvalue_abs_lower_bound m hm k
+    simpa only [hk] using hb
+  have hbound := symmetric_norm_lower_bound_of_eigenvalues
+    T hT (2 * m) hn γ hγ heig x
+  simpa [γ, T, A, freeEnergyCLM,
+    Matrix.coe_toEuclideanCLM_eq_toEuclideanLin] using hbound
+
+/-- The previously conditional finite Sturmian gap transport is now
+instantiated at energy zero with a **proved source-level free supplier**
+and the true finite Sturmian diagonal potential. -/
+theorem even_sturmian_zero_energy_gap
+    (m : ℕ) (hm : 0 < m) (α V ξ : ℝ) (origin : ℤ)
+    (x : EuclideanSpace ℝ (Fin (2 * m))) :
+    (2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) - |V|) * ‖x‖ ≤
+      ‖(sturmianEnergyCLM (2 * m) α V ξ origin 0) x‖ := by
+  exact sturmianEnergyCLM_gap_of_free_gap
+    (2 * m) α V ξ origin 0
+    (2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)))
+    (even_free_zero_energy_norm_gap m hm) x
+
+/-- Strict coupling below the *actual* finite free sine gap yields
+injectivity of the coupled finite Sturmian energy-zero residual.
+This conclusion is volume-dependent and is not an infinite-volume gap. -/
+theorem even_sturmian_zero_energy_injective
+    (m : ℕ) (hm : 0 < m) (α V ξ : ℝ) (origin : ℤ)
+    (hsmall : |V| < 2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2))) :
+    Function.Injective (sturmianEnergyCLM (2 * m) α V ξ origin 0) := by
+  exact sturmianEnergyCLM_injective_of_free_gap
+    (2 * m) α V ξ origin 0
+    (2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)))
+    (even_free_zero_energy_norm_gap m hm) hsmall
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
