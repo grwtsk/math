@@ -43,7 +43,7 @@ unresolved = [
 commands = [
   "git checkout --detach d5240f8066ab731a4c3284da7b60538d6b7de48a",
   "test \"$(git rev-parse HEAD)\" = d5240f8066ab731a4c3284da7b60538d6b7de48a",
-  "git hash-object GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean",
+  "test \"$(git hash-object GRWTSK/Algebra/LinearAlgebra/MatrixTheory/FiniteAdjointDescent.lean)\" = ac4339e781f4236c8b374e5bf7bd981f066ff2be",
   "cat lean-toolchain",
   "lake env lean --version",
   "lake build --wfail GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent",
