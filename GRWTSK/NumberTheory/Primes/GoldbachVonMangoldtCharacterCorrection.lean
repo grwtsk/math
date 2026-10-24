@@ -358,4 +358,24 @@ theorem logarithmicPowerTailKernel_le_comparison
       · ring
       · ring
 
+
+/-- Integrability of the original logarithmic-power kernel follows
+from the explicit negative-power majorant on the positive tail. -/
+theorem logarithmicPowerTailKernel_integrableOn_Ioi
+    (σ : ℝ) (N : ℕ) (hσ : 1 < σ) (hN : 3 ≤ N) :
+    IntegrableOn (logarithmicPowerTailKernel σ) (Set.Ioi (N : ℝ)) := by
+  have hconstant : 0 ≤ 2 / (σ - 1) := by positivity
+  have hdom : IntegrableOn
+      (fun t : ℝ => (2 / (σ - 1)) * t ^ (-(σ + 1) / 2))
+      (Set.Ioi (N : ℝ)) :=
+    (integrableOn_comparison_rpow_Ioi σ N hσ hN).const_mul _
+  apply Integrable.mono' hdom (by fun_prop)
+  filter_upwards [ae_restrict_mem measurableSet_Ioi] with t ht
+  have htthree : 3 ≤ t := by
+    have hNt : (N : ℝ) < t := Set.mem_Ioi.mp ht
+    exact le_trans (by exact_mod_cast hN) hNt.le
+  have hnonneg := logarithmicPowerTailKernel_nonneg σ t htthree
+  have hbound := logarithmicPowerTailKernel_le_comparison σ t hσ htthree
+  simpa [Real.norm_eq_abs, abs_of_nonneg hnonneg] using hbound
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
