@@ -394,4 +394,21 @@ theorem continuous_operator_projection_decomposition
   conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
   exact map_add T _ _
 
+/-- Exact four-term inner-product expansion along complementary projections.
+No self-adjointness or cross-term sign is inferred. -/
+theorem continuous_operator_projection_inner_expansion
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (x : H) :
+    inner 𝕜 (T x) x =
+      inner 𝕜 (T (S.starProjection x)) (S.starProjection x) +
+      inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x) +
+      inner 𝕜 (T (Sᗮ.starProjection x)) (S.starProjection x) +
+      inner 𝕜 (T (Sᗮ.starProjection x)) (Sᗮ.starProjection x) := by
+  rw [continuous_operator_projection_decomposition S T x]
+  conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
+  simp only [inner_add_left, inner_add_right]
+  abel
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
