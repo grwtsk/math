@@ -231,4 +231,20 @@ theorem complexDirichlet_star_apply_eq_inv_character
     star (χ a) = (χ⁻¹) a := by
   exact MulChar.star_apply' χ a
 
+
+/-- On reduced residues, inverse-character evaluation equals
+inverse-residue evaluation. This relies on the actual multiplicative
+character inverse law, not a formal identification on nonunits. -/
+theorem complexDirichlet_inv_character_eq_inv_residue
+    (q : ℕ) (χ : DirichletCharacter ℂ q) (a : (ZMod q)ˣ) :
+    (χ⁻¹) (a : ZMod q) = χ ((a : ZMod q)⁻¹) := by
+  exact MulChar.inv_apply' χ (a : ZMod q)
+
+/-- Conjugation equals inverse-residue evaluation on the unit group. -/
+theorem complexDirichlet_star_eq_inv_residue
+    (q : ℕ) (χ : DirichletCharacter ℂ q) (a : (ZMod q)ˣ) :
+    star (χ (a : ZMod q)) = χ ((a : ZMod q)⁻¹) := by
+  rw [complexDirichlet_star_apply_eq_inv_character]
+  exact complexDirichlet_inv_character_eq_inv_residue q χ a
+
 end GRWTSK.NumberTheory.Primes.GoldbachUnitFiberPartition
