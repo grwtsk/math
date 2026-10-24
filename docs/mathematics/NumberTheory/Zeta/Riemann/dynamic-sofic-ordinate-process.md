@@ -546,3 +546,19 @@ axiom/unsafe audit for the revised blobs remain
 **NOT_RUN / NOT_KERNEL_AUDITED**, to be executed only on a
 separately authorized non-Railway host with pinned Lean v4.33.0
 and Mathlib \`db584cd6d46c92f209a44c0f1c829460d327499d\`.
+
+
+**Latest source-bound validation request (revised source, no execution):**
+[issue #1208](https://github.com/grwtsk/math/issues/1208),
+pinned to exact \`grwtsk/math\` main snapshot
+\`501d9c1548dc96ea441cc8f1a2ebb89c39279d78\`
+and source blobs
+\`6b28280b98527301af190f5c50696b9edcf0e05f\`,
+\`1d6ef4738af19edebd1d85e07f944ee4937a9001\` and
+\`f63d738a34ca9b1b34ebfe91e7cfefabf6e5f8f7\`.
+The issue requires actual warning-clean compilation, fresh
+independent kernel replay, and full transitive axiom/unsafe audit
+with exact exit codes and immutable receipts; it does not
+constitute any executed verification. Current source status remains
+**COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXOM_AUDIT NOT_RUN**.
