@@ -17,6 +17,9 @@ alongside theorem and lemma occurrences. Unrecognized syntax remains available
 in the complete source snapshot; no verification status, namespace, subject
 assignment or ranking threshold filters this population.
 
+Module indexes follow `<subject-path>/<Module>.lean/index.md`, with per-level `complete-source-index.md` pages and matching verification hierarchies.
+Portable directory casing preserves authored paths and exact original source identities.
+
 An issuance contains its title, source observation, exact source window,
 commit/tree/blob binding, revision, verification link and unresolved bridges.
 UTF-8 source is displayed directly; non-UTF-8 source retains a base64 display.
