@@ -416,6 +416,57 @@ theorem trace_eq_of_mvNRel {m n : ℕ}
     _ = (Vᴴ * V).trace := Matrix.trace_mul_comm V Vᴴ
     _ = Q.val.trace := congrArg Matrix.trace hQ.symm
 
+/-! ## Finite projection classes and their trace -/
+
+/-- Every finite matrix size is retained in the object, rather than
+pretending that all projections lie in one fixed matrix algebra. -/
+abbrev PackedFiniteStarProjection :=
+  Σ n : ℕ, FiniteStarProjection n
+
+/-- The concrete Murray–von Neumann relation on finite complex star
+projections of possibly different sizes is an equivalence relation.
+This is a finite-matrix quotient relation, not stable analytic K₀. -/
+def finiteProjectionSetoid : Setoid PackedFiniteStarProjection where
+  r P Q := MvNRel P.2 Q.2
+  iseqv := ⟨
+    (fun P => mvNRel_refl P.2),
+    (fun _ _ h => mvNRel_symm _ _ h),
+    (fun _ _ _ h₁ h₂ => mvNRel_trans _ _ _ h₁ h₂)⟩
+
+/-- Murray–von Neumann equivalence classes of finite complex matrix
+projections, across all finite sizes. These have not yet been equipped
+with a block-sum commutative monoid structure. -/
+abbrev FiniteProjectionClass := Quotient finiteProjectionSetoid
+
+/-- Ordinary (unnormalized) matrix trace descends to finite projection
+equivalence classes using the rectangular cyclic-trace theorem. -/
+def classTrace : FiniteProjectionClass → ℂ :=
+  Quotient.lift
+    (fun P : PackedFiniteStarProjection => P.2.val.trace)
+    (by
+      intro P Q h
+      exact trace_eq_of_mvNRel P.2 Q.2 h)
+
+/-- The descended trace agrees exactly with ordinary trace on every
+representative, with its original finite size preserved. -/
+@[simp]
+theorem classTrace_mk (P : PackedFiniteStarProjection) :
+    classTrace (Quotient.mk finiteProjectionSetoid P) = P.2.val.trace := rfl
+
+/-- Every finite projection class has nonnegative integral ordinary
+trace. This uses the established finite idempotent trace/rank identity;
+it makes no statement about analytic traces on infinite algebras. -/
+theorem classTrace_eq_natCast (x : FiniteProjectionClass) :
+    ∃ k : ℕ, classTrace x = (k : ℂ) := by
+  refine Quotient.inductionOn x ?_
+  intro P
+  refine ⟨Module.finrank ℂ (LinearMap.range P.2.val.toLin'), ?_⟩
+  change P.2.val.trace =
+    (Module.finrank ℂ (LinearMap.range P.2.val.toLin') : ℂ)
+  exact idempotent_matrix_trace_eq_finrank P.1 P.2.val
+    P.2.property.isIdempotentElem.eq
+
+
 end FiniteStarProjection
 
 
