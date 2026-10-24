@@ -1171,6 +1171,22 @@ theorem classBlockSum_comm (x y : FiniteProjectionClass) :
       ⟨Q.1 + P.1, finiteBlockSum Q.2 P.2⟩
   exact Quotient.sound (finiteBlockSum_comm_mvNRel P.2 Q.2)
 
+/-- Associativity of finite projection block sum on Murray–von Neumann
+classes. The proof reduces all three quotient variables to representatives
+and uses the explicit sum-index associator witness, rather than
+postulating associativity or comparing traces alone. -/
+theorem classBlockSum_assoc
+    (x y z : FiniteProjectionClass) :
+    classBlockSum (classBlockSum x y) z =
+      classBlockSum x (classBlockSum y z) := by
+  refine Quotient.inductionOn₃ x y z ?_
+  intro P Q R
+  change Quotient.mk finiteProjectionSetoid
+      ⟨(P.1 + Q.1) + R.1, finiteBlockSum (finiteBlockSum P.2 Q.2) R.2⟩ =
+    Quotient.mk finiteProjectionSetoid
+      ⟨P.1 + (Q.1 + R.1), finiteBlockSum P.2 (finiteBlockSum Q.2 R.2)⟩
+  exact Quotient.sound (finiteBlockSum_assoc_mvNRel P.2 Q.2 R.2)
+
 /-- The ordinary trace of a two-block matrix is the sum of its two
 ordinary traces, without dimension-dependent normalization. -/
 theorem matrix_trace_fromBlocks
