@@ -11207,3 +11207,48 @@ actual zeta/Dirichlet source traces, all-capacity continuation certificates,
 arithmetic-to-eventual-sofic bridges, genuine spectral-cover maps,
 criticality transport, the full Weil/Guinand source bridge, and independently
 valid analytic stages cofinal above the strict `3/4` boundary.
+
+
+### Concurrent attribution-only successor snapshots (same proof text, different source blobs)
+
+**Snapshot distinction, no rewritten historical evidence.** The case
+PRIMARY-SOURCE-LOCATOR-AND-ACTIVE-DECLARATION-RECONCILIATION-20261023
+above is pinned to exact **math@beaae68f34fc6980385aca48975246e440eb233f**,
+where the affected Lean source headers still identified 2026
+grwtsk contributors, mathematical direction grwtsk contributors,
+and OpenAI formalization assistance. Subsequent concurrent,
+**header-only** changes on existing main altered the complete
+Git blob identities while leaving the text from each first
+\`import\` onward **byte-for-byte identical**. This fact was
+checked directly on both immutable source snapshots; it is
+STATIC SOURCE COMPARISON, NOT a Lean/kernel receipt.
+
+| Exact module/source path | First audited blob / commit | Later normalized blob / commit | New literal local byline/year |
+|---|---|---|---|
+| \`GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean\` | \`6b28280b98527301af190f5c50696b9edcf0e05f\` at math@beaae68 | \`9ff399470e614d61212e992f743b975d408738d8\` at [math@000003ea242adb9fb46fc203040d48fd498553ca](https://github.com/grwtsk/math/commit/000003ea242adb9fb46fc203040d48fd498553ca) | **2026 grwtsk contributors**, MIT; no separate mathematical-direction/assistance line |
+| \`GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean\` | \`1d6ef4738af19edebd1d85e07f944ee4937a9001\` at math@beaae68 | \`96cd39e158a9c3739a0f55fb08c56432db0adbcf\` at [math@31aa925b0601a9d69aee3cd385ce5ed3917a4b6d](https://github.com/grwtsk/math/commit/31aa925b0601a9d69aee3cd385ce5ed3917a4b6d) | **2026 grwtsk contributors**, MIT; no separate mathematical-direction/assistance line |
+| \`GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean\` | \`ae3e016150c6b6ab131a76019b1f3571e15d4463\` at math@beaae68 | \`ef271172b8f792a189f3f7cd684448d05e0c7ddb\` at [math@d84485b6c2a5b98c0dcbb68afb016bb1f2f19a88](https://github.com/grwtsk/math/commit/d84485b6c2a5b98c0dcbb68afb016bb1f2f19a88) | **2026 grwtsk contributors**, MIT; no separate mathematical-direction/assistance line |
+
+These three successor blobs were observed together at
+\`math@009c50858f00413a94b987cfbdb5363c05ede210\`
+after the primary-source bibliography was committed.
+They carry the **same local mathematical source text**, but
+not the same complete source identity. Do not rewrite either
+historical byline as a present source claim; do not transfer a
+hypothetical acceptance/runner receipt across a different SHA.
+
+**Verification / classification remains unchanged:**
+IMPORTED_PUBLISHED_MATH for these three modules = **none**;
+SOURCE_PROOF_CANDIDATE for exact-language, finite-state bound
+and conditional all-capacity equivalence;
+CONDITIONAL_INTERFACE for actual zeta trace and
+arithmetic-to-sofic mappings; finite model fixtures =
+FINITE_EVIDENCE; method links to Myhill/Nerode/Weiss/Jonoska =
+ANALOGY/METHOD_BACKGROUND; actual zeta irrationality,
+transcendence and analytic \`7/8→3/4\` stages =
+UNRESOLVED_PREMISES.
+**COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT NOT_RUN** for the newly normalized blobs.
+The passive \`grwtsk/noeaaeue#402\` remains explicitly pinned to
+the *earlier* math@beaae68 snapshot and is NOT a receipt for
+the normalized successors.
