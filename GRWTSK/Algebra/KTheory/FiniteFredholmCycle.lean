@@ -653,6 +653,100 @@ theorem finiteBlockSum_mvNRel
       _ = Matrix.reindex ec ec (Uᴴ * U) := congrArg _ hright
       _ = _ := hreright
 
+/-! ## Zero projection and explicit rectangular identity witnesses -/
+
+/-- The unique zero-dimensional complex matrix is a star projection.
+This is a genuine finite-dimensional object, not an analytic identity class. -/
+def finiteZeroProjection : FiniteStarProjection 0 :=
+  ⟨0, IsStarProjection.zero _⟩
+
+/-- The sum with a zero-dimensional zero projection is Murray–von Neumann
+equivalent to the original projection. The rectangular witness is the
+two-row-block matrix `fromRows P 0`, transported by `finSumFinEquiv`.
+No quotient identity is assumed in the proof. -/
+theorem finiteBlockSum_zero_right_mvNRel
+    {m : ℕ} (P : FiniteStarProjection m) :
+    MvNRel (finiteBlockSum P finiteZeroProjection) P := by
+  let e : Fin m ⊕ Fin 0 ≃ Fin (m + 0) := finSumFinEquiv
+  let V : Matrix (Fin m ⊕ Fin 0) (Fin m) ℂ :=
+    Matrix.fromRows P.val 0
+  have hstar : P.valᴴ = P.val := by
+    change star P.val = P.val
+    exact P.property.isSelfAdjoint.star_eq
+  have hidem : P.val * P.val = P.val :=
+    P.property.isIdempotentElem.eq
+  have hleft :
+      Matrix.fromBlocks P.val 0 0
+          (0 : Matrix (Fin 0) (Fin 0) ℂ) = V * Vᴴ := by
+    dsimp [V]
+    rw [Matrix.conjTranspose_fromRows_eq_fromCols_conjTranspose,
+      Matrix.fromRows_mul_fromCols]
+    simp [hstar, hidem]
+  have hright : P.val = Vᴴ * V := by
+    dsimp [V]
+    rw [Matrix.conjTranspose_fromRows_eq_fromCols_conjTranspose,
+      Matrix.fromCols_mul_fromRows]
+    simp [hstar, hidem]
+  obtain ⟨h₁, h₂⟩ := mvNWitness_reindex e (Equiv.refl (Fin m)) V
+  refine ⟨Matrix.reindex e (Equiv.refl _) V, ?_, ?_⟩
+  · change
+      Matrix.reindex e e
+          (Matrix.fromBlocks P.val 0 0
+            (0 : Matrix (Fin 0) (Fin 0) ℂ)) =
+        Matrix.reindex e (Equiv.refl _) V *
+          (Matrix.reindex e (Equiv.refl _) V)ᴴ
+    exact (congrArg (Matrix.reindex e e) hleft).trans h₁
+  · change P.val =
+        (Matrix.reindex e (Equiv.refl _) V)ᴴ *
+          Matrix.reindex e (Equiv.refl _) V
+    calc
+      P.val = Matrix.reindex (Equiv.refl _) (Equiv.refl _) (Vᴴ * V) := by
+        rw [← hright, Matrix.reindex_refl_refl]
+      _ = _ := h₂
+
+/-- The left zero-dimensional block also admits an explicit rectangular
+witness, now `fromRows 0 P`. Both zero identities can therefore be
+proved without assuming commutativity of the quotient operation. -/
+theorem finiteBlockSum_zero_left_mvNRel
+    {m : ℕ} (P : FiniteStarProjection m) :
+    MvNRel (finiteBlockSum finiteZeroProjection P) P := by
+  let e : Fin 0 ⊕ Fin m ≃ Fin (0 + m) := finSumFinEquiv
+  let V : Matrix (Fin 0 ⊕ Fin m) (Fin m) ℂ :=
+    Matrix.fromRows 0 P.val
+  have hstar : P.valᴴ = P.val := by
+    change star P.val = P.val
+    exact P.property.isSelfAdjoint.star_eq
+  have hidem : P.val * P.val = P.val :=
+    P.property.isIdempotentElem.eq
+  have hleft :
+      Matrix.fromBlocks (0 : Matrix (Fin 0) (Fin 0) ℂ)
+          0 0 P.val = V * Vᴴ := by
+    dsimp [V]
+    rw [Matrix.conjTranspose_fromRows_eq_fromCols_conjTranspose,
+      Matrix.fromRows_mul_fromCols]
+    simp [hstar, hidem]
+  have hright : P.val = Vᴴ * V := by
+    dsimp [V]
+    rw [Matrix.conjTranspose_fromRows_eq_fromCols_conjTranspose,
+      Matrix.fromCols_mul_fromRows]
+    simp [hstar, hidem]
+  obtain ⟨h₁, h₂⟩ := mvNWitness_reindex e (Equiv.refl (Fin m)) V
+  refine ⟨Matrix.reindex e (Equiv.refl _) V, ?_, ?_⟩
+  · change
+      Matrix.reindex e e
+          (Matrix.fromBlocks (0 : Matrix (Fin 0) (Fin 0) ℂ)
+            0 0 P.val) =
+        Matrix.reindex e (Equiv.refl _) V *
+          (Matrix.reindex e (Equiv.refl _) V)ᴴ
+    exact (congrArg (Matrix.reindex e e) hleft).trans h₁
+  · change P.val =
+        (Matrix.reindex e (Equiv.refl _) V)ᴴ *
+          Matrix.reindex e (Equiv.refl _) V
+    calc
+      P.val = Matrix.reindex (Equiv.refl _) (Equiv.refl _) (Vᴴ * V) := by
+        rw [← hright, Matrix.reindex_refl_refl]
+      _ = _ := h₂
+
 /-! ## Finite projection classes and their trace -/
 
 /-- Every finite matrix size is retained in the object, rather than
@@ -674,6 +768,17 @@ def finiteProjectionSetoid : Setoid PackedFiniteStarProjection where
 projections, across all finite sizes. These have not yet been equipped
 with a block-sum commutative monoid structure. -/
 abbrev FiniteProjectionClass := Quotient finiteProjectionSetoid
+
+/-- The zero class is represented by the unique star projection in
+the zero-dimensional complex matrix algebra. -/
+def classZero : FiniteProjectionClass :=
+  Quotient.mk finiteProjectionSetoid
+    ⟨0, finiteZeroProjection⟩
+
+@[simp]
+theorem classTrace_classZero : classTrace classZero = 0 := by
+  change (0 : Matrix (Fin 0) (Fin 0) ℂ).trace = 0
+  simp
 
 /-- Ordinary (unnormalized) matrix trace descends to finite projection
 equivalence classes using the rectangular cyclic-trace theorem. -/
@@ -714,6 +819,30 @@ theorem classBlockSum_mk
       (Quotient.mk finiteProjectionSetoid Q) =
         Quotient.mk finiteProjectionSetoid
           ⟨P.1 + Q.1, finiteBlockSum P.2 Q.2⟩ := rfl
+
+/-- The binary quotient block sum has a genuine right identity, proved
+by the explicit finite rectangular Murray–von Neumann witness. -/
+theorem classBlockSum_zero_right (x : FiniteProjectionClass) :
+    classBlockSum x classZero = x := by
+  refine Quotient.inductionOn x ?_
+  intro P
+  change
+    Quotient.mk finiteProjectionSetoid
+        ⟨P.1 + 0, finiteBlockSum P.2 finiteZeroProjection⟩ =
+      Quotient.mk finiteProjectionSetoid P
+  exact Quotient.sound (finiteBlockSum_zero_right_mvNRel P.2)
+
+/-- The binary quotient block sum has a genuine left identity,
+independently of any commutativity claim. -/
+theorem classBlockSum_zero_left (x : FiniteProjectionClass) :
+    classBlockSum classZero x = x := by
+  refine Quotient.inductionOn x ?_
+  intro P
+  change
+    Quotient.mk finiteProjectionSetoid
+        ⟨0 + P.1, finiteBlockSum finiteZeroProjection P.2⟩ =
+      Quotient.mk finiteProjectionSetoid P
+  exact Quotient.sound (finiteBlockSum_zero_left_mvNRel P.2)
 
 /-- The ordinary trace of a two-block matrix is the sum of its two
 ordinary traces, without dimension-dependent normalization. -/
