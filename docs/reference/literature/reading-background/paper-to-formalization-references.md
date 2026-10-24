@@ -11253,3 +11253,136 @@ TRANSITIVE_AXIOM_AUDIT NOT_RUN** for the newly normalized blobs.
 The passive \`grwtsk/noeaaeue#402\` remains explicitly pinned to
 the *earlier* math@beaae68 snapshot and is NOT a receipt for
 the normalized successors.
+
+
+## Case EXACT-DYNAMIC-SOFIC-COVER-VALIDATION-20261023
+
+**Source identities and classification.** Local 2026 formalization, local attribution
+`grwtsk contributors`. Published method background:
+John Myhill (1957), *Finite Automata and the Representation of Events*, WADC
+Technical Report 57-624, pp. 112–137 ([catalog entry](https://cir.nii.ac.jp/crid/1570854176000165888?lang=en));
+Anil Nerode (1958), *Linear Automaton Transformations*, Proceedings of the AMS
+9(4), pp. 541–544 ([DOI 10.1090/S0002-9939-1958-0135681-9](https://doi.org/10.1090/S0002-9939-1958-0135681-9)).
+Exact local method: a finite labeled graph's right continuation behavior is
+determined by its finite subset of reachable endpoints. Arbitrarily many
+pairwise distinguishable right contexts refute an exact finite-state language
+presentation. This is a locally proved one-way analogue, not a kernel import
+of the full published Myhill–Nerode theorem, its converse, minimization algorithm,
+or a bi-infinite sofic-shift theorem. Existing heat-flow/Huffman/QRH context
+remains methodological background under the companion
+[dynamic cover provenance record](dynamic-sofic-spectral-cover.md); no analytic
+heat flow, zero-free theorem or historical influence is inferred.
+
+**Exact-language bridges.** Namespace
+`GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover`:
+`WordPath`, `GraphLanguage`, `HasFiniteBlock`, `ExactLanguagePresentation`,
+`IsSoficTrace` and `EventuallySoficTrace` retain whole finite-factor-language
+equality and explicit tail offset. `every_trace_runs_on_full_shift`,
+`fullShiftGraph_language_all` and `fullShiftGraph_not_exact_for_constant_false`
+form a checked hostile witness: reading a trace on a finite graph does not
+prove exact language equality. `wordPath_append`, `wordPath_split_append`,
+`graphLanguage_append_iff_endStates` and
+`graphLanguage_context_iff_of_same_endStates` verify actual path splitting and
+the finite endpoint-signature bound.
+`not_soficFactorLanguage_of_unboundedRightContexts` and
+`not_soficTrace_of_unboundedRightContexts` require the explicit unbounded
+pairwise right-context distinctions; `not_eventuallySoficTrace_of_all_tail_rightContexts`
+requires them after EVERY finite burn-in. No actual arithmetic trace is silently
+supplied with these certificates. Generic graph-language definitions allow the
+stated alphabet type; finite-alphabet hypotheses remain explicit in the dynamic
+cover. No stronger alphabet or bidirectional/recurrent-language theorem is added.
+
+The concurrent `ExactLanguagePresentation.stateCapacity`,
+`rightContexts_card_le_graphLanguage`, and
+`rightContexts_card_le_exactPresentation` expose a bounded certificate:
+n pairwise distinguishable words force at least n reachable-state subsets
+for the chosen exact presentation. This bounds that presentation, not all
+possible finite graph capacities.
+
+**Dynamic and spectral interfaces.** Namespace
+`GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover`:
+`DynamicSpectralCover` retains refining observations, finite graph states and
+alphabet, graph-path soundness, an actual complex-linear operator orbit and its
+labeling, commuting stage readouts, and an explicit decoder left inverse.
+`DynamicSpectralCover.trace_injective`, `.refinement_commutes_on_trace`,
+`.readout_factors_through_trace`, `.stage_factors_through_trace`,
+`.spectral_orbit_readout` and `.runs_on_graph` prove precisely those consequences.
+`ExactLanguageAt.implies_sofic` requires additional full-language presentation
+data. The four `no_exact_language_at_of_nonsofic`,
+`no_exact_language_at_of_non_eventual_sofic`,
+`no_exact_language_at_of_unbounded_rightContexts`, and
+`no_exact_language_at_of_all_tail_rightContexts` conclusions are explicitly
+`¬ Nonempty (ExactLanguageAt C x)`, preserving all their nonsofic/context premises.
+They refute exact language identification, not existence of a graph-readable path.
+The concurrent `ExactLanguageAt.rightContexts_card_le` transfers the same
+bounded right-context certificate to its actual supplied presentation.
+
+The separate namespace `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover`
+retains finite-stage collision/factorization premises, the unanchored-difference
+obstruction and the anchored reconstruction bridge. Its
+`rh_implies_generalized_of_spectralCoverFamily`,
+`generalized_implies_base_of_member_specialization`,
+`rh_iff_generalized_of_spectralCovers_and_member_specialization`, and
+`rh_iff_generalized_of_spectralCovers_and_specialization` concern the explicitly
+typed abstract zero problems. Spectral covers with criticality pullback and
+an actual member specialization (or the separately supplied reverse implication)
+remain essential premises; no unconditional classical RH/GRH equivalence is proved.
+The concurrent `BaseSpecialization.ofMap` and
+`generalized_implies_base_of_map` use exactly a supplied map, zero preservation
+and criticality reflection; injectivity of that map is neither required nor
+concluded.
+
+**Repairs and invariant scope.** The inherited telescoping proof rewrote its
+increment as well as its accumulated sum; reversing that rewrite preserves the
+exact theorem. Reserved binder `prefix` is escaped without changing its name;
+a zero-offset tail equality is explicit; proof-only simplifications and the
+local Fintype binding are warning-clean. `ExactLanguageAt` remains a structure
+carrying a presentation. Four formerly ill-typed direct negations of that Type
+are corrected to negation of inhabitance via `Nonempty`, expressing the intended
+nonexistence without changing any hypothesis or dropping the presentation data.
+All 65 original theorem headers are preserved modulo reserved-name escaping
+and the four explicit sort corrections. Four concurrent theorem additions bring
+the checked total to 69; no original hypothesis was dropped. No mathematical premise
+is weakened. Source/operator realization, exact zeta observation identity,
+arithmetic-to-sofic classification, actual right-context separation on every tail,
+analytic estimates and generalized spectral covers remain unresolved suppliers.
+Sibling zeta/Bombieri modules outside this closure remain outside this acceptance.
+
+**Immutable sources and actual evidence.** Source commit `0fc265010e9cf7b37007444195030fb946dff776`:
+
+| Source | Git blob |
+| --- | --- |
+| `GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean` | `7233696059a408af98af15fec0e34c02f7afb657` |
+| `GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean` | `8f8db7fba341afd820518a85a7ebbb5fd5a7fe06` |
+| `GRWTSK/Logic/InformationLoss/FactorizationFiber.lean` | `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd` |
+| `GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean` | `1f1ddbbd9bff6cb99d794140f28497598923b005` |
+| `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean` | `5881a2f2caf1aa0b1ec9267376cecb5895327afe` |
+| `GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean` | `290757773fe6f295c025287d0d673d9d82c773df` |
+
+Lean `leanprover/lean4:v4.33.0`, Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`:
+
+- `lake build GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover --wfail`
+  passed after the repairs (8711 jobs).
+- `lake build --wfail` passed (9307 jobs).
+- `lake env lean --trust=0 -t 0 /Users/local/Documents/ChatGPT/math-branch-integration-20261022/sofic-cover-audit.lean`
+  passed, auditing all 420 local declarations including generated declarations
+  and printing every type. Only `propext`, `Classical.choice`, and `Quot.sound`
+  were allowed; unsafe declarations, `sorryAx` and custom axioms were rejected.
+
+All six final source hashes match the pin. A concurrent attribution update and
+then a concurrent merge advanced the original snapshot. The first preliminary
+kernel replay was stopped without claiming acceptance; the latest strict build
+and fresh replay include the four mathematical additions. Two dependency
+comment lines were subsequently removed for collective attribution; exact byte
+comparison confirms all remaining bytes match the latest mathematical snapshot.
+The public-root build
+passed before the repository-wide attribution update. That wider edit remains
+outside this module acceptance and is preserved.
+External evidence in that directory: `sofic-cover-build.log` and repair logs,
+`sofic-cover-wave2-build.log`, `sofic-cover-final-build.log`, `sofic-cover-public.log`,
+`sofic-cover-wave2-audit.log`, `sofic-cover-attribution-equivalence.json`, and
+`sofic-cover-validated-snapshot.json`.
+Historical SOURCE_ONLY/NOT_RUN labels describe earlier source states; this
+acceptance is limited to the exact repaired closure and leaves all unresolved
+premises, external background classifications and separate replay gates intact.
