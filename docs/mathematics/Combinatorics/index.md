@@ -2,24 +2,28 @@
 
 [All mathematical areas](../../index.md) · [Lean source folder](../../../GRWTSK/Combinatorics).
 
+<!-- BEGIN GENERATED DOCUMENTATION POPULATION COUNTS -->
 | Inventory | Count |
 |---|---:|
-| Object guides | 26 |
-| Documented object groups | 2 |
-| Distinct primary sources linked | 25 |
-| Lean source modules | 82 |
-| Archive intake records | 0 |
-| Selected catalog families | 1 |
+| Lean source modules (current regular filesystem files) | 101 |
+| Curated registered object guides | 26 |
+| Curated documented object groups | 2 |
+| Curated primary sources linked | 25 |
+| Curated archive intake records | 0 |
+| Curated selected catalog families | 1 |
+
+No current whole-corpus source-command census is available.
+<!-- END GENERATED DOCUMENTATION POPULATION COUNTS -->
 
 These counts measure documentation and source coverage. They do not count accepted theorems or establish that every source module is documented or checked. [Definitions and limits](../../reference/library-pages.md#count-definitions).
 
-1490 source declaration commands, including 922 theorem/lemma commands, across 82 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): 1490 source declaration commands, including 922 theorem/lemma commands, across 82 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 ## DirectedGraph
 
 20 object guides · 20 distinct linked primary source files.
 
-Linked primary-source scope: 439 source declaration commands, including 300 theorem/lemma commands, across 20 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): Linked primary-source scope: 439 source declaration commands, including 300 theorem/lemma commands, across 20 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [A finite inventory of complete history prefixes](DirectedGraph/prefix-inventory.md).
 - [Certified revision of rooted trace dictionaries](DirectedGraph/rooted-trace-revision.md).
@@ -46,7 +50,7 @@ Linked primary-source scope: 439 source declaration commands, including 300 theo
 
 6 object guides · 5 distinct linked primary source files.
 
-Linked primary-source scope: 141 source declaration commands, including 91 theorem/lemma commands, across 5 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
+Historical curated observer census (not current totals): Linked primary-source scope: 141 source declaration commands, including 91 theorem/lemma commands, across 5 parsed Lean source modules. These count source commands, not compiler-generated declarations or accepted theorems.
 
 - [Balanced partitions and uniform subset sampling](Sequences/balanced-partition-sampling.md).
 - [Conditional exposure of fixed-size subsets](Sequences/fixed-size-subset-exposure.md).
