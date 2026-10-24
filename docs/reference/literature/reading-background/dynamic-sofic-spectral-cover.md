@@ -1,6 +1,12 @@
 # Dynamic sofic spectral cover: formal boundary
 
-Status: **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**.
+Introduction status: **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**.
+
+Subsequent pinned validation passed strict module/public builds and a fresh
+trust-level-zero transitive axiom audit. See `EXACT-DYNAMIC-SOFIC-COVER-VALIDATION-20261023`
+in [the canonical ledger](paper-to-formalization-references.md) for precise
+source pins, the attribution-only changes and actual evidence. All conditional
+analytic, arithmetic and spectral suppliers remain explicit.
 
 Source module:
 `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`
@@ -10,7 +16,7 @@ Source commits:
 - typed base-specialization refinement at
   `4a80cc59e3fe0ca5b6097106b0d90e045c3f5729`.
 
-Current source blob:
+Earlier recorded source blob:
 `f9d009a30ac77b93f72bf38604888eb73544de16`.
 
 ## Purpose
@@ -185,7 +191,7 @@ NOT_KERNEL_AUDITED**.
 Follow-up source commit:
 `0c62dab0ecc8fe34ccc0e08a38a9248da5b51885`.
 
-Current source blob:
+Earlier recorded source blob:
 `8210e2055447ebbe482a7122d21ee09177c3b1c0`.
 
 This refinement consumes the concurrent generic supplier
