@@ -238,4 +238,76 @@ theorem odd_zeroCoupling_zero_in_spectrum (m : ℕ)
   simpa only [hamiltonian_zero] using odd_free_zero_in_spectrum m
 
 
+
+/-!
+## Complementary even-volume free zero-exclusion
+
+The exact free Dirichlet eigenvalue at index `k` is
+`2 * cos (pi * (k+1) / (N+1))`. In the even volume `N=2*m`,
+the central cosine cannot vanish: equality of its angle to `pi/2`
+would force the even natural number `2*(k+1)` to equal `2*m+1`.
+This uses the existing sine diagonalization and does not construct
+another spectral representation or any infinite-volume gap.
+-/
+
+/-- In an even free Dirichlet volume, no sine frequency reaches pi/2. -/
+theorem even_angle_ne_pi_div_two (m : ℕ) (k : Fin (2 * m)) :
+    angle (2 * m) k ≠ Real.pi / 2 := by
+  intro hangle
+  have hratio :
+      Real.pi * ((k.val : ℝ) + 1) / (2 * (m : ℝ) + 1) = Real.pi / 2 := by
+    simpa [angle, Nat.cast_add, Nat.cast_mul] using hangle
+  have hden : (0 : ℝ) < 2 * (m : ℝ) + 1 := by positivity
+  have hmul := (div_eq_iff₀ hden).mp hratio
+  have hcast : 2 * (k.val : ℝ) + 2 = 2 * (m : ℝ) + 1 := by
+    apply (mul_left_cancel₀ Real.pi_ne_zero)
+    nlinarith [hmul]
+  have hnat : 2 * k.val + 2 = 2 * m + 1 := by
+    exact_mod_cast hcast
+  omega
+
+/-- Every eigenvalue in an even free Dirichlet volume is nonzero. -/
+theorem even_eigenvalue_ne_zero (m : ℕ) (k : Fin (2 * m)) :
+    eigenvalue (2 * m) k ≠ 0 := by
+  intro hz
+  have hcos : Real.cos (angle (2 * m) k) = 0 := by
+    unfold eigenvalue at hz
+    linarith
+  have hangle : angle (2 * m) k = Real.pi / 2 :=
+    Real.injOn_cos
+      ⟨(angle_pos (2 * m) k).le, (angle_lt_pi (2 * m) k).le⟩
+      ⟨by positivity, by linarith [Real.pi_pos]⟩
+      (by simpa only [Real.cos_pi_div_two] using hcos)
+  exact even_angle_ne_pi_div_two m k hangle
+
+/-- The complete sine characteristic polynomial excludes zero from the
+actual finite *even-volume* free Dirichlet matrix spectrum. This
+does not give a uniform gap as the volume grows. -/
+theorem even_free_zero_not_mem_spectrum (m : ℕ) :
+    (0 : ℝ) ∉ spectrum ℝ (freeDirichlet (2 * m)) := by
+  intro hmem
+  have hroot : (freeDirichlet (2 * m)).charpoly.IsRoot (0 : ℝ) :=
+    Matrix.mem_spectrum_iff_isRoot_charpoly.mp hmem
+  rw [free_charpoly, Polynomial.isRoot_prod] at hroot
+  obtain ⟨k, _, hk⟩ := hroot
+  have hk0 : eigenvalue (2 * m) k = 0 := by
+    have heval : (X - C (eigenvalue (2 * m) k) : ℝ[X]).eval 0 = 0 := hk
+    simpa using heval
+  exact (even_eigenvalue_ne_zero m k) hk0
+
+/-- At zero coupling, every even-volume finite Sturmian Dirichlet
+restriction excludes zero, uniformly in phase and origin. -/
+theorem even_zeroCoupling_zero_not_mem_spectrum
+    (m : ℕ) (α ξ : ℝ) (origin : ℤ) :
+    (0 : ℝ) ∉ spectrum ℝ (hamiltonian (2 * m) α 0 ξ origin) := by
+  simpa only [hamiltonian_zero] using even_free_zero_not_mem_spectrum m
+
+/-- The complete finite parity dichotomy for the actual free Dirichlet
+matrices, including the empty matrix when m=0. -/
+theorem free_zero_spectrum_parity (m : ℕ) :
+    (0 : ℝ) ∈ spectrum ℝ (freeDirichlet (2 * m + 1)) ∧
+    (0 : ℝ) ∉ spectrum ℝ (freeDirichlet (2 * m)) :=
+  ⟨odd_free_zero_in_spectrum m, even_free_zero_not_mem_spectrum m⟩
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
