@@ -1,6 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import Mathlib.Tactic
+import Mathlib.Analysis.InnerProductSpace.PiL2
 
 /-! # Full-coordinate adjoint descent for a literal finite real matrix
 
@@ -218,5 +219,51 @@ theorem residual_relative_contraction_of_intertwining
       intro w
       rw [henergy (applyMatrix s A w), hintertwines w])
     v
+
+
+/-!
+## Concrete finite Euclidean coordinates
+
+The full-coordinate energy becomes a squared Euclidean norm. For any
+continuous linear endomorphism of EuclideanSpace, Mathlib's matrix/linear-map
+equivalence supplies a literal finite matrix and proves its intertwining
+identity. Neither identity is an assumption in this concrete case.
+-/
+
+/-- The standard Euclidean encoding of real finite-coordinate functions. -/
+def euclideanEncode {n : ℕ} (v : Fin n → ℝ) : EuclideanSpace ℝ (Fin n) :=
+  WithLp.toLp 2 v
+
+/-- The actual matrix associated with a continuous real-linear Euclidean
+endomorphism under Mathlib's matrix/linear-map equivalence. -/
+def euclideanOperatorMatrix {n : ℕ}
+    (J : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n)) :
+    Fin n → Fin n → ℝ :=
+  (Matrix.toLpLin (R := ℝ) (m := Fin n) (n := Fin n) 2 2).symm J.toLinearMap
+
+/-- The full-coordinate finite-adjoint energy agrees with the squared norm
+of the concrete Euclidean encoding, in any finite dimension (including zero). -/
+theorem euclideanEncode_energy {n : ℕ} (v : Fin n → ℝ) :
+    energy (Finset.univ : Finset (Fin n)) v = ‖euclideanEncode v‖ ^ 2 := by
+  simpa [energy, euclideanEncode] using
+    (EuclideanSpace.real_norm_sq_eq
+      (WithLp.toLp 2 v : EuclideanSpace ℝ (Fin n))).symm
+
+/-- The explicit coordinate matrix intertwines with its originating
+Euclidean operator. This removes the abstract commuting-square premise. -/
+theorem euclideanOperatorMatrix_intertwines {n : ℕ}
+    (J : EuclideanSpace ℝ (Fin n) →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (v : Fin n → ℝ) :
+    euclideanEncode (applyMatrix (Finset.univ : Finset (Fin n))
+      (euclideanOperatorMatrix J) v) = J (euclideanEncode v) := by
+  calc
+    euclideanEncode (applyMatrix (Finset.univ : Finset (Fin n))
+        (euclideanOperatorMatrix J) v) =
+        Matrix.toLpLin 2 2 (euclideanOperatorMatrix J) (euclideanEncode v) := by
+      change WithLp.toLp 2 ((euclideanOperatorMatrix J) *ᵥ v) =
+        Matrix.toLpLin 2 2 (euclideanOperatorMatrix J) (WithLp.toLp 2 v)
+      simp
+    _ = J (euclideanEncode v) := by
+      simp [euclideanOperatorMatrix]
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
