@@ -171,4 +171,58 @@ theorem rationalizationOf_not_mem_assembly_span
     (rationalizationOf B x)
     (by simpa using hx)
 
+
+/-- The values of rational numbers, regarded as a ℚ-linear subspace of ℝ.
+This uses the actual scalar-extension map rather than treating all reals
+as admissible rational traces. -/
+def RationalTraceValues : Submodule ℚ ℝ :=
+  LinearMap.range (Algebra.linearMap ℚ ℝ)
+
+theorem mem_rationalTraceValues_iff (r : ℝ) :
+    r ∈ RationalTraceValues ↔ ∃ q : ℚ, r = (q : ℝ) := by
+  constructor
+  · rintro ⟨q, hq⟩
+    refine ⟨q, ?_⟩
+    simpa [RationalTraceValues, Algebra.linearMap_apply] using hq.symm
+  · rintro ⟨q, rfl⟩
+    exact ⟨q, by simp [RationalTraceValues, Algebra.linearMap_apply]⟩
+
+/-- Rational trace on every integral assembly class excludes an integral
+class of irrational trace from the *actual tensor-product rationalized*
+assembly image. The rational-image premise is not constructed here. -/
+theorem rationalizationOf_not_mem_rationalized_assembly_of_irrational
+    {A B : Type*} [AddCommGroup A] [AddCommGroup B]
+    (assembly : A →+ B) (trace : B →+ ℝ)
+    (rational_image : ∀ a : A, ∃ q : ℚ, trace (assembly a) = (q : ℝ))
+    (x : B) (irrational_trace : ∀ q : ℚ, trace x ≠ (q : ℝ)) :
+    rationalizationOf B x ∉ Set.range (rationalizedAssembly assembly) := by
+  apply rationalizationOf_not_mem_assembly_range
+    assembly trace RationalTraceValues ?_ x ?_
+  · intro a
+    apply (mem_rationalTraceValues_iff _).2
+    obtain ⟨q, hq⟩ := rational_image a
+    exact ⟨q, hq⟩
+  · intro hx
+    obtain ⟨q, hq⟩ := (mem_rationalTraceValues_iff _).1 hx
+    exact irrational_trace q hq
+
+/-- The stronger rational-span form of the same irrational-trace
+obstruction, again using the actual tensor-product scalar extension. -/
+theorem rationalizationOf_not_mem_rationalized_assembly_span_of_irrational
+    {A B : Type*} [AddCommGroup A] [AddCommGroup B]
+    (assembly : A →+ B) (trace : B →+ ℝ)
+    (rational_image : ∀ a : A, ∃ q : ℚ, trace (assembly a) = (q : ℝ))
+    (x : B) (irrational_trace : ∀ q : ℚ, trace x ≠ (q : ℝ)) :
+    rationalizationOf B x ∉
+      Submodule.span ℚ (Set.range (rationalizedAssembly assembly)) := by
+  apply rationalizationOf_not_mem_assembly_span
+    assembly trace RationalTraceValues ?_ x ?_
+  · intro a
+    apply (mem_rationalTraceValues_iff _).2
+    obtain ⟨q, hq⟩ := rational_image a
+    exact ⟨q, hq⟩
+  · intro hx
+    obtain ⟨q, hq⟩ := (mem_rationalTraceValues_iff _).1 hx
+    exact irrational_trace q hq
+
 end GRWTSK.Algebra.KTheory
