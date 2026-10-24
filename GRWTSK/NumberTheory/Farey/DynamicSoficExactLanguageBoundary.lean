@@ -1,7 +1,5 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical direction: grwtsk contributors.
-Formalization assistance: OpenAI.
 Upstream Mathlib and repository authorship is retained.
 
 SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
