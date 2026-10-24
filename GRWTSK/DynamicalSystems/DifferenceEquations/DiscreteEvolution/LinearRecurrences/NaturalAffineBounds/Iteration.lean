@@ -23,7 +23,7 @@ import Mathematics.Stability.FixedPoint
 
 /-! # Certified contraction boundaries -/
 
-namespace GRWTSK.DifferentialEquationsAndDynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
+namespace GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
 
 open Mathematics.Stability (constantAffineBound iterated_affine_defect_bound)
 
@@ -54,4 +54,4 @@ theorem exact_zero_gain_converges_after_one_step
   | zero => simp
   | succ n inductionHypothesis => simp
 
-end GRWTSK.DifferentialEquationsAndDynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
+end GRWTSK.DynamicalSystems.DifferenceEquations.DiscreteEvolution.LinearRecurrences.NaturalAffineBounds.Iteration
