@@ -1,0 +1,40 @@
+# Queued verification only; do not execute.
+schema_version = "0.1"
+request_id = "proper-power-triple-weight-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "2d29b1f0d56c7cdbc095cf5eb482a425b7702380"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerTripleWeight.lean"
+source_blob = "3caba62862c90c7f7b122f32acd02fa7a15e5636"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleWeight.toOriginalIndex",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleWeight.triple_weight_eq_originalWeight",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleMembership",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Supported triple box finite sum equals originalSupportedMass",
+ "Original dependent packet equals supported triple box mass",
+ "Rectangular packet equals rectangularSupportedMass",
+ "Compose original-to-rectangular exact mass reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerTripleWeight.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleWeight"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerTripleWeight.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
