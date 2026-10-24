@@ -34,7 +34,7 @@ AMPLITUDE_NECESSITY_DEFINED /
 COEFFICIENT_SOURCE_LAW_OPEN / NO_RH_CLAIM.
 -/
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 namespace GRWTSK.RiemannHypothesis
 

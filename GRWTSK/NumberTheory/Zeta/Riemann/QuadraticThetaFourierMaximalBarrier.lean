@@ -55,7 +55,7 @@ FOURIER_MAXIMAL_EXPONENT_BARRIER_TYPED / MAXIMAL_READOUT_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Exponent produced by the naive Cauchy--Schwarz maximalization when the
 effective number of frequencies has polynomial exponent beta. -/

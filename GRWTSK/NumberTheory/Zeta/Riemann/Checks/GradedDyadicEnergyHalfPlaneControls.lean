@@ -12,7 +12,7 @@ open GRWTSK.RiemannHypothesis
 
 theorem half_threshold_recovers_original :
     AllDyadicEnergyAtThreshold (1 / 2 : ℝ) ↔
-      GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.AllDyadicEnergyBound :=
+      GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.AllDyadicEnergyBound :=
   allDyadicEnergyAtThreshold_half_iff
 
 theorem seven_eighths_energy_returns_seven_eighths_zero_free

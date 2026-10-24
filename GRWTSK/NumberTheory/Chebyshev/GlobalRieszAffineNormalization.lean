@@ -3,7 +3,7 @@ Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Chebyshev.RieszCorrectionNormalization
 import GRWTSK.NumberTheory.Zeta.Riemann.RieszZeroContinuity
-import GRWTSK.Analysis.Real.ContinuousMidpointAffine
+import GRWTSK.Analysis.RealAnalysis.ContinuousMidpointAffine
 
 /-! # Actual global affine normalization by two arithmetic values
 
@@ -18,9 +18,9 @@ noncomputable section
 open MeasureTheory Set
 open scoped Interval
 namespace GRWTSK.NumberTheory.Chebyshev.GlobalRieszAffineNormalization
-open GRWTSK.Analysis.Real.RationalRieszPrimitive
-open GRWTSK.Analysis.Real.TentRationalCorrection
-open GRWTSK.Analysis.Real.ContinuousMidpointAffine
+open GRWTSK.Analysis.RealAnalysis.RationalRieszPrimitive
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.ContinuousMidpointAffine
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 open GRWTSK.NumberTheory.Zeta.Riemann.RieszZeroContinuity
 open TentSource RieszSourceSecondDifference RieszCorrectionNormalization

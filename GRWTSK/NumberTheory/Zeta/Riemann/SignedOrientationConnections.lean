@@ -160,14 +160,14 @@ noncomputable def quarticProbeOrientationCertificate :
   sign := -1
   sign_sq := by norm_num
   positiveSource := fun x =>
-    GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy
+    GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy
       (GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStage x.stage)
       (quarticProbe x.α x.γ x.stage)
   signedConsumer := fun x =>
     GRWTSK.Polynomial.ConjugateQuartic.witnessTrace x.α x.γ *
       radiusNormalizedCorrection x.stage
   positive_nonneg := fun x =>
-    GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy_nonneg
+    GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy_nonneg
       (GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStage x.stage)
       (quarticProbe x.α x.γ x.stage)
   identity := by
@@ -209,7 +209,7 @@ theorem screwQuarticPenalty_is_negative_orientation
 orientation, now multiplied by the nonnegative radius-normalized source. -/
 theorem canonicalProbe_is_negative_orientation
     (α γ : ℝ) (n : ℕ) :
-    GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy
+    GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt.stageEnergy
       (GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralPort.canonicalStage n)
       (quarticProbe α γ n) =
       (-GRWTSK.Polynomial.ConjugateQuartic.witnessTrace α γ) *

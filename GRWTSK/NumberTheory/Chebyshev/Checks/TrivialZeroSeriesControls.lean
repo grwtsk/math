@@ -13,7 +13,7 @@ open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
 
 noncomputable section

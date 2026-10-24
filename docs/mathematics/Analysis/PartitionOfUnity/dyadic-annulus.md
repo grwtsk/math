@@ -47,7 +47,7 @@ At $x=1/4$, every $A(x/2^j)$ for natural $j$ vanishes. The actual sum is zero,
 and cannot equal one. The accepted positive control proves this before the
 negative consumer attempts to replace $1\le x$ by $0<x$.
 
-The [compact Gaussian window](../MellinTransform/compact-gaussian-window.md)
+The [compact Gaussian window](../IntegralTransforms/ClassicalTransforms/MellinTransform/compact-gaussian-window.md)
 uses this annulus in the exact expression
 $G(Z,j,y)=A(y)P(2^j y/Z)/(\sqrt y:\mathbb C)$. Its cutoff gives compact
 support for every real $Z$; proved smoothness for $Z>0$ supplies its actual

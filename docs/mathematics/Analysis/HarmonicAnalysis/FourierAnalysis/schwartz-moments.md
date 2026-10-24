@@ -38,7 +38,7 @@ The actual zeroth and $J$th norm moments then give the one-plus moment by
 polynomial domination. Integrability is proved from actual Schwartz
 Fourier moments, rather than inferred from a bound on a totalized integral.
 
-The [Gaussian-window consumer](../../MellinTransform/gaussian-fourier-moments.md)
+The [Gaussian-window consumer](../../IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-fourier-moments.md)
 supplies the finite source family and its actual bounds. Missing evidence
 for that family cannot be replaced by a nonnegative budget alone; the
 positive controls establish an actual nonzero-window obstruction before
@@ -49,7 +49,7 @@ actual Gaussian value at $Z=1,j=0,y=3/4$ supplies that witness. This refutes
 the zero source budget, without asserting a full moment counterexample or
 sharpness of the derivative range.
 
-The [compact logarithmic Gaussian-window consumer](../../MellinTransform/gaussian-log-window.md)
+The [compact logarithmic Gaussian-window consumer](../../IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-log-window.md)
 also supplies the full source-pair family. It constructs the actual compact
 window from the entire logarithmic flow, produces a support box, and defines
 the actual density as its Fourier transform. Its positive-scale power bound

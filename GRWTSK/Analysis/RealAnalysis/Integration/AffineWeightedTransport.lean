@@ -8,7 +8,7 @@ Inherited mathematics retains its attribution. No unproved arithmetic bound is a
 
 noncomputable section
 open MeasureTheory
-namespace GRWTSK.Analysis.AffineWeightedTransport
+namespace GRWTSK.Analysis.RealAnalysis.Integration.AffineWeightedTransport
 
 structure AffineChart where
   slope : ℝ
@@ -141,4 +141,4 @@ theorem endpoint_energy (w₀ w₁ : ℝ → ℝ) (f : ℝ → ℂ) (c : ℝ)
   have hm := mul_le_mul_of_nonneg_left (hpoint x) (sq_nonneg ‖f x‖)
   nlinarith
 
-end GRWTSK.Analysis.AffineWeightedTransport
+end GRWTSK.Analysis.RealAnalysis.Integration.AffineWeightedTransport

@@ -17,7 +17,7 @@ Möbius cancellation, pickup-response Gram identification, amplitude return,
 strict negative sector, supplier estimate, unconditional RH or converse.
 -/
 
-namespace GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
 
 open MeasureTheory Set
 open GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticSupplier
@@ -61,4 +61,4 @@ theorem literal_kernel_original_window_price {A t : ℝ} (hA : 1 ≤ A)
 
 end
 
-end GRWTSK.NumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.LogarithmicShiftKernelBounds

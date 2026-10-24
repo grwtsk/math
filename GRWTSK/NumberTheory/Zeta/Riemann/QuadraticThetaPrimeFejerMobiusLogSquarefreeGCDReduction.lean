@@ -47,7 +47,7 @@ SEVEN_EIGHTHS_SQUAREFREE_GCD_STRATIFIED_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The active centered divisor indices.  The anchor remains present, while a
 genuine divisor modulus is retained exactly when it is squarefree. -/

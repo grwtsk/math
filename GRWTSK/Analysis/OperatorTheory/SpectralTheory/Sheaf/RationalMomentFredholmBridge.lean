@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Algebra.LinearAlgebra.LinearMap.FrequencyScrew
-import GRWTSK.NumberTheory.ArithmeticFunctions.RationalMomentAlgebra
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.RationalMomentAlgebra
 import Mathlib.LinearAlgebra.Determinant
 
 set_option autoImplicit false
@@ -25,7 +25,7 @@ continuation, or identification with the Riemann zeta function is inferred.
 namespace GRWTSK.Analysis.OperatorTheory.SpectralTheory.Sheaf.RationalMomentFredholmBridge
 
 open GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich
-open GRWTSK.NumberTheory.ArithmeticFunctions.RationalMomentAlgebra
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.RationalMomentAlgebra
 
 noncomputable section
 

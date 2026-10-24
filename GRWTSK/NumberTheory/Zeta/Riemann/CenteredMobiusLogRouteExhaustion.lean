@@ -11,7 +11,7 @@ noncomputable section
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The classical global square-root-plus-epsilon Chebyshev envelope supplies
 the exact restored historical dyadic energy premise. -/

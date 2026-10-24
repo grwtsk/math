@@ -53,7 +53,7 @@ SEVEN_EIGHTHS_SHIFT_CORRELATION_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Arithmetic octave index set `(2X,4X]`. -/
 def fejerOctaveIndexSet (X : ℕ) : Finset ℕ :=

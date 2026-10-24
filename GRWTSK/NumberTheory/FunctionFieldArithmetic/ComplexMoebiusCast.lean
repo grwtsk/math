@@ -11,7 +11,7 @@ Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI Codex.
 Closed cutoffs, signed factors and squareful outputs stay exact.
 -/
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 /-- Casting preserves the closed cutoff pointwise. -/
@@ -57,4 +57,4 @@ theorem moebius_convolution_not_pointwise_at_two :
       (μ 2 : ℤ) * (μ 2 : ℤ) * (ζ : ArithmeticFunction ℤ) 2 = 1 := by
   decide +kernel
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

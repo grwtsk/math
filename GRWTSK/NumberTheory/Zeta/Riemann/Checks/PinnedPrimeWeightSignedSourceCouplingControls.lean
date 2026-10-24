@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightSignedSourceCouplingControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Concrete restatement of the pointwise signed-source transport on a dyadic
 stage. -/

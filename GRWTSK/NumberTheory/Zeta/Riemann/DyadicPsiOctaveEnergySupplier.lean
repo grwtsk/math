@@ -46,10 +46,10 @@ PSI_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY.
 namespace GRWTSK.RiemannHypothesis
 
 open _root_.MeasureTheory Set
-open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
+open GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 theorem cumulative_one_eq_mass0
     {X : ℕ} (hX : 0 < X) :
@@ -96,7 +96,7 @@ theorem augmentedEnergy_le_of_cumulative_uniform
   have hgreen :
       greenEnergy X ≤ B^2 := by
     have hid := raw_cumulative_energy hX
-    nlinarith [sq_nonneg (GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center X)]
+    nlinarith [sq_nonneg (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.center X)]
   have hm0abs :
       |mass0 X| ≤ B := by
     rw [← cumulative_one_eq_mass0 hX]
@@ -106,7 +106,7 @@ theorem augmentedEnergy_le_of_cumulative_uniform
     rw [sq_le_sq]
     simpa [abs_of_nonneg hB] using hm0abs
   have hcenterabs :
-      |GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center X| ≤ B := by
+      |GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.center X| ≤ B := by
     rw [← integral_cumulative hX]
     have hnorm0 :
         ‖∫ t, cumulative X t ∂unitVolume‖ ≤
@@ -122,8 +122,8 @@ theorem augmentedEnergy_le_of_cumulative_uniform
     simpa [Real.norm_eq_abs] using hnorm
   have hm1abs :
       |mass1 X| ≤ 2 * B := by
-    have hid : mass1 X = mass0 X - GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center X := by
-      unfold GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy.center
+    have hid : mass1 X = mass0 X - GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.center X := by
+      unfold GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy.center
       ring
     rw [hid]
     exact (abs_sub _ _).trans (by linarith)

@@ -5,7 +5,7 @@ Imported project and Mathlib results retain their original credits/licenses.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 Owners: #456 / #437 / #410 / #430 / #335 / #334 RH-E02.
 -/
-import GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+import GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 import GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy
 
 /-!
@@ -36,7 +36,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
 
 open scoped BigOperators
-open GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal
+open GRWTSK.Analysis.FiniteSums.DyadicBlockSquareMaximal
 
 /-- Exact admissible length of the two-point prefix at scale `j` and shift `h`. -/
 def mertensTwoPointPaddedLength (j h : ℕ) : ℕ :=

@@ -32,8 +32,8 @@ ACTION_FRAME_BOUND_IFF_ORIGINAL_ENERGY_BOUND_SOURCE_WRITTEN.
 namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
 
 /-- The original all-scale arithmetic supplier expressed entirely through
 finite source-faithful admissible action-frame stages. -/

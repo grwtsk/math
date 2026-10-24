@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierRepresentation
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 
 /-!
 # Isolated supremum-norm representation leaf
@@ -14,8 +14,8 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierNorm
 open MeasureTheory
 open scoped ENNReal Topology
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -25,9 +25,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionBounded
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionBounded
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 
 noncomputable section
 
@@ -88,11 +88,11 @@ def AddedClaim : AddedIndex → Prop
   | .failureBoundaries =>
       (∀ (X : Domain) [IsEmpty X.carrier] (f : BoundedSymbol X), f = 0 ∧ ‖f‖ = 0) ∧
       ‖completedRepresentation
-        (MetricWeights.identity GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover)
-        (Measure.dirac GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center)
-        GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol‖ <
-        ‖GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol‖
+        (MetricWeights.identity GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover)
+        (Measure.dirac GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center)
+        GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol‖ <
+        ‖GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol‖
 
 theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
   cases i with
@@ -125,7 +125,7 @@ theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
       exact completedRepresentationCLM_gauge G M μ hOpen f
   | failureBoundaries =>
       exact ⟨fun X _ f => ⟨empty_symbol_eq_zero X f, empty_symbol_norm X f⟩,
-        GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm.Fixtures.strict_operator_norm_loss⟩
+        GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm.Fixtures.strict_operator_norm_loss⟩
 
 def portfolio : Portfolio AddedIndex AddedClaim where
   disposition i := .proved (addedClaim_proof i)

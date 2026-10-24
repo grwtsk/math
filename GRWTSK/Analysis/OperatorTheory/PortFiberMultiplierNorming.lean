@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierComplete
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorming
 
 /-!
 # Isolated norming-evaluation leaf
@@ -14,8 +14,8 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierNorming
 open Filter Topology MeasureTheory
 open scoped ENNReal
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -24,8 +24,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorming
 
 noncomputable section
 
@@ -90,11 +90,11 @@ def AddedClaim : AddedIndex → Prop
         ‖completedRepresentation (MetricWeights.identity D) (Measure.dirac x) hOpen f‖ =
           ‖f.value x‖
   | .offSupportFailure =>
-      let D := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover
-      let h := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-      let x := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
-      let y := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.halfPoint
-      let f := GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol
+      let D := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover
+      let h := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+      let x := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
+      let y := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.halfPoint
+      let f := GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.Fixtures.diskSymbol
       (‖completedRepresentation (MetricWeights.identity D) (Measure.dirac x) h f‖ = 0 ∧
         ‖completedRepresentation (MetricWeights.identity D) (Measure.dirac y) h f‖ = (1 : ℝ) / 2) ∧
       ¬ Nonempty (PointEvaluationPort (MetricWeights.identity D) (Measure.dirac x) h y)

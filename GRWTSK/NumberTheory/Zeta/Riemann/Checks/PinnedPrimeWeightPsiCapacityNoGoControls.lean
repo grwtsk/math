@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightPsiCapacityNoGoControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- A classical-PNT source profile for one explicit finite octave envelope.
 A later source constructor must obtain this from theta(x)=x+o(x) while proving

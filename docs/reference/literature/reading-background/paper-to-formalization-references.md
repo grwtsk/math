@@ -580,7 +580,7 @@ proved in this local source candidate.
   `sqrtTwoDenominator_arithmeticExponent_zero`,
   `finiteLogCorrelation`, `finiteLogCorrelation_add_right`,
   `harmonicNormalizer`, `normalizedLogCorrelation` in
-  [`SqrtTwoLogDigest.lean`](../../../../GRWTSK/NumberTheory/ContinuedFractions/SqrtTwoLogDigest.lean):
+  [`SqrtTwoLogDigest.lean`](../../../../GRWTSK/NumberTheory/ElementaryNumberTheory/ContinuedFractions/SqrtTwoLogDigest.lean):
   introduction `ade50aa25ea1d68d51866b772c9adac968b1dab6`,
   later source repair `1b2d9cce6299e2f0ddef4ae107e0b4d05829b5e0`,
   reviewed Git blob `b290af8fb37a5d76ce532c3567f7621d9c4527a5`.
@@ -589,7 +589,7 @@ proved in this local source candidate.
   `denominator_pos`, `denominator_tendsto`,
   `denominator_le_succ`,
   `arithmeticExponent_zero_of_bounded_ratio` lives in
-  [`ScheduledDenominators.lean`](../../../../GRWTSK/NumberTheory/ContinuedFractions/ScheduledDenominators.lean),
+  [`ScheduledDenominators.lean`](../../../../GRWTSK/NumberTheory/ElementaryNumberTheory/ContinuedFractions/ScheduledDenominators.lean),
   reviewed Git blob `cde88cc3cd37a327f64b117fa0ccc058b2bb24a7`.
   Its shared namespace is **not** the `SqrtTwoLogDigest`
   namespace, and its recurrence/limsup theorem is

@@ -29,9 +29,9 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaProjection
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierComplete (coveredDomain_isOpen)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure areaMeasure_univ)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierComplete (coveredDomain_isOpen)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure areaMeasure_univ)
 
 universe u v
 noncomputable section
@@ -230,9 +230,9 @@ namespace Fixtures
 theorem empty_kernelSpan (hOpen : D.IsOpenCover) : kernelSpan hOpen ∅ = ⊥ := by
   simp [kernelSpan]
 
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures
   (disk diskCover diskCover_isOpen diskCoordinate center halfPoint)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures (disk_finite_area)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures (disk_finite_area)
 
 /-- A genuine old unit class; finite actual disk area supplies its membership proof. -/
 def diskUnitVector : AreaCompletion diskCover_isOpen :=

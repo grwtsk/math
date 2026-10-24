@@ -30,7 +30,7 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaProjection
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaGaugeTransport
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 universe u
 noncomputable section
@@ -409,9 +409,9 @@ theorem fieldProjection_targetEmbedding (G : Gauge (Cocycle.identity D) C)
 
 namespace Fixtures
 
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures
   (disk diskCover diskCover_isOpen center)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures
   (spike spike_center spike_ae_zero)
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2.Fixtures (spike_memLp)
 

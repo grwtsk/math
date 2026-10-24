@@ -25,7 +25,7 @@ namespace GRWTSK.RiemannHypothesis.ConcreteNewtonThirdSeed
 
 open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace IntegerTaylorPolynomial
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 
 /-- Common denominator for BOTH coordinates of the actual reduced argument. -/

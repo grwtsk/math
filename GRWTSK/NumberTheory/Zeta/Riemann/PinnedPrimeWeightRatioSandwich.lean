@@ -38,7 +38,7 @@ UNIFORM_RATIO_BOUND_OPEN / NO_RH_CLAIM.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Explicit amplitude floor supplied by one prime in `(X,2X]`. -/
 def pinnedPrimeWeightBertrandFloor (X : ℕ) : ℝ :=

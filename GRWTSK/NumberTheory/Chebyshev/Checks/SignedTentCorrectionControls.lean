@@ -8,7 +8,7 @@ set_option autoImplicit false
 /-! Source controls only; NOT_RUN / NOT_KERNEL_AUDITED. No zeta data are used. -/
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.SignedTentCorrectionControls
 
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.NumberTheory.Chebyshev.SignedTentCorrection
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 
@@ -33,7 +33,7 @@ theorem empty_prefix_control : correctionPrefix 0 3 1 = 0 ∧ rationalTentCorrec
 
 /-- Exact normalized area; doubling it would corrupt the pole contribution. -/
 theorem radius_not_diameter_control :
-    (∫ t in (2 : ℝ)..4, GRWTSK.Analysis.Real.TentWeight.tent 3 1 t) = 1 := by
+    (∫ t in (2 : ℝ)..4, GRWTSK.Analysis.RealAnalysis.TentWeight.tent 3 1 t) = 1 := by
   simpa using integral_tent 3 1 (by norm_num)
 
 /-- Stage two keeps a nonzero negative correction, with rational endpoint bounds. -/

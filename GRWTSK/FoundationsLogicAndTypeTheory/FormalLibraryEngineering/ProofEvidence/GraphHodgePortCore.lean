@@ -49,13 +49,13 @@ import GRWTSK.Geometry.Hodge.FiniteEdgeScalarExtension
 import GRWTSK.Geometry.Hodge.RationalKTheoryComparison
 import GRWTSK.Geometry.Hodge.MoserRationalCellularComparison
 import GRWTSK.Geometry.Ports.FramedSeam
-import GRWTSK.Analysis.Operator.BoundedPortDefect
-import GRWTSK.Analysis.Operator.FramedLiftModes
-import GRWTSK.Analysis.Operator.UnboundedPort
-import GRWTSK.Analysis.Operator.UnboundedGraph
-import GRWTSK.Analysis.Operator.UnboundedPortEquivalence
-import GRWTSK.Analysis.Operator.UnboundedPortAnalytic
-import GRWTSK.Analysis.Operator.UnboundedPortSymmetric
+import GRWTSK.Analysis.OperatorTheory.BoundedPortDefect
+import GRWTSK.Analysis.OperatorTheory.FramedLiftModes
+import GRWTSK.Analysis.OperatorTheory.UnboundedPort
+import GRWTSK.Analysis.OperatorTheory.UnboundedGraph
+import GRWTSK.Analysis.OperatorTheory.UnboundedPortEquivalence
+import GRWTSK.Analysis.OperatorTheory.UnboundedPortAnalytic
+import GRWTSK.Analysis.OperatorTheory.UnboundedPortSymmetric
 import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.OptionalAdapterGate
 import GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ProofEvidence.OptionalAdapterComposition
 

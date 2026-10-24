@@ -13,7 +13,7 @@ These row facts do not refute any completed pickup or energy budget.
 -/
 set_option autoImplicit false
 noncomputable section
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 
 /-- At the closed cutoff d, the complete divisible row is its touching atom. -/
 theorem divisible_density_row_at_cutoff (d : ℕ) (hd : 0 < d) :
@@ -59,4 +59,4 @@ theorem prime_divisible_row_exceeds_inverse_square (C : ℝ) (hC : 0 ≤ C) (B :
   apply (div_lt_div_iff₀ (sq_pos_of_pos hp0) hden).mpr
   simpa only [one_mul] using hprod.trans_lt hstrict
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

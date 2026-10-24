@@ -39,7 +39,7 @@ For $0<t<1$, an actual natural power near $1/t$ chooses the cutoff.
 The finite geometric head and shifted infinite tail are bounded separately
 and then reassembled. No kernel or infinite-sum bound is assumed.
 
-The [Gaussian seminorm summation](../MellinTransform/gaussian-dyadic-summation.md)
+The [Gaussian seminorm summation](../IntegralTransforms/ClassicalTransforms/MellinTransform/gaussian-dyadic-summation.md)
 uses this scalar supplier with $t=Z^{-1}>0$ and a natural $A>s$.
 It retains its separate window and nonnegative-domination inputs.
 

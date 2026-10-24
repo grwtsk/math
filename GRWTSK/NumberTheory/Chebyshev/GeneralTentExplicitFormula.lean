@@ -20,8 +20,8 @@ open scoped BigOperators Topology
 
 namespace GRWTSK.NumberTheory.Chebyshev.GeneralTentExplicitFormula
 
-open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 open GRWTSK.Analysis.ComplexAnalysis.OrientedRectangle

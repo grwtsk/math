@@ -6,7 +6,7 @@ import GRWTSK.NumberTheory.LSeries.GaussianDyadic
 namespace GRWTSK.NumberTheory.LSeries.GaussianDyadic.Checks
 noncomputable section
 open GRWTSK.Analysis.PartitionOfUnity.DyadicAnnulus
-open GRWTSK.Analysis.MellinTransform.NormalizedGaussian
+open GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.NormalizedGaussian
 open GRWTSK.NumberTheory.LSeries.GaussianContour
 
 theorem dyadic_partition_generic (x : ℝ) (hx : 1 ≤ x) :

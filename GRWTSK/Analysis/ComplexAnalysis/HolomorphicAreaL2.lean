@@ -31,8 +31,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaLocalUniform
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 universe u
 noncomputable section
@@ -269,8 +269,8 @@ theorem integral_reproduces_holomorphic (hOpen : D.IsOpenCover) (f : Holomorphic
 
 namespace Fixtures
 
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures (disk diskCover_isOpen center)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures (disk diskCover_isOpen center)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures
   (spike spike_center spike_ae_zero)
 
 /-- The nonholomorphic point spike is L2 because its a.e. class is zero. -/

@@ -1,10 +1,10 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI Codex.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.LaplaceTransform.PolynomialEnergyHolomorphy
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.PolynomialEnergyHolomorphy
 import GRWTSK.Analysis.MeasureTheory.Integral.MoebiusCumulativeEnergy
 import GRWTSK.NumberTheory.Zeta.ReciprocalHolomorphyZeroSymmetry
-import GRWTSK.Analysis.LaplaceTransform.MoebiusResponseFormula
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.LaplaceTransform.MoebiusResponseFormula
 
 noncomputable section
 open MeasureTheory Set Filter

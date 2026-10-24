@@ -3,7 +3,7 @@ Formalization assistance: OpenAI Codex. Mathlib's finite sums and canonical
 Möbius function retain their Apache-2.0 license and upstream attribution.
 This module proves finite identities only; it supplies no abc estimate. -/
 import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions
-import GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeDivisorFilter
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.CoprimeDivisorFilter
 import Mathlib.Algebra.BigOperators.Ring.Finset
 
 set_option autoImplicit false
@@ -65,7 +65,7 @@ theorem primitiveWeightedMoment_eq_moebius_sum {R : Type*} [Ring R] (N : ℕ)
       apply Finset.sum_congr rfl
       intro p hp
       obtain ⟨ha, haN, hb, _, _⟩ := mem_additivePairs.mp hp
-      rw [GRWTSK.NumberTheory.ArithmeticFunctions.CoprimeDivisorFilter.sum_moebius_common_divisors_Icc
+      rw [GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.CoprimeDivisorFilter.sum_moebius_common_divisors_Icc
         (show 0 < p.1 from ha) (show 0 < p.2 from hb)
         (le_trans (Nat.min_le_left _ _) haN)]
       by_cases h : Nat.Coprime p.1 p.2 <;> simp [h]

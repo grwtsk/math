@@ -53,7 +53,7 @@ SEVEN_EIGHTHS_VON_MANGOLDT_SHIFT_CORRELATION_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The centered von Mangoldt atom. -/
 def centeredVonMangoldtAtom (n : ℕ) : ℝ :=

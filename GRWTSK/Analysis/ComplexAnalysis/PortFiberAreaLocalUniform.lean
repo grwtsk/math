@@ -22,8 +22,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle (CircleWindow identitySymbol)
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle (CircleWindow identitySymbol)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaLocalUniform
 
 noncomputable section

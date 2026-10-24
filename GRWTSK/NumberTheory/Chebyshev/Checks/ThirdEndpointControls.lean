@@ -10,7 +10,7 @@ namespace GRWTSK.NumberTheory.Chebyshev.Checks.ThirdEndpointControls
 
 open GRWTSK.Analysis.ComplexAnalysis
 open RationalRoundedArithmetic IntegerDyadicTrace
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open GRWTSK.RiemannHypothesis
 open ConcreteNewtonPacket RationalZetaCenterEvaluation
 open ConcreteNewtonSecondEndpoint ConcreteNewtonThirdSeed ConcreteNewtonThirdEndpoint

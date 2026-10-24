@@ -15,7 +15,7 @@ estimate.
 set_option autoImplicit false
 noncomputable section
 
-namespace GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+namespace GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
 theorem summable_sq_mul_rpow_of_abs_le_rpow
     (f : ℕ → ℝ) {C α q : ℝ}
@@ -55,6 +55,6 @@ theorem summable_sq_mul_rpow_of_abs_le_rpow
         rw [mul_pow, hrpow, mul_assoc, ← Real.rpow_add hnpos]
         ring_nf
 
-end GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability
+end GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability
 
-#print axioms GRWTSK.Analysis.Asymptotics.PowerWeightedSquareSummability.summable_sq_mul_rpow_of_abs_le_rpow
+#print axioms GRWTSK.Analysis.AsymptoticAnalysis.PowerWeightedSquareSummability.summable_sq_mul_rpow_of_abs_le_rpow

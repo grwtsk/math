@@ -7,8 +7,8 @@ Status: authored proof source; not yet elaborated in the pinned environment.
 No claim of an all-scale arithmetic estimate is made by this module.
 -/
 import Mathlib
-import GRWTSK.NumberTheory.VonMangoldt.GreenEnergyFormula
-import GRWTSK.Analysis.MellinTransform.DyadicBounds
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.GreenEnergyFormula
+import GRWTSK.Analysis.IntegralTransforms.ClassicalTransforms.MellinTransform.DyadicBounds
 
 /-!
 # Explicit unproved continuum and zeta-return goals
@@ -24,8 +24,8 @@ open MeasureTheory Set
 open scoped BigOperators
 namespace GRWTSK.NumberTheory.Zeta.DyadicGreenSpecifications
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.Analysis.Integral.UnitIntervalPrimitives
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.Analysis.RealAnalysis.Integration.UnitIntervalPrimitives
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def sineReading (X n : ℕ) : ℝ :=
   (∑ m∈window X, coefficient m*Real.sin (Real.pi*n*location X m))-

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.RationalTentCorrectionPrefixExact
+import GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionPrefixExact
 import GRWTSK.NumberTheory.Chebyshev.CanonicalPositiveTuringCorrectionMargin
 
 set_option autoImplicit false
@@ -31,8 +31,8 @@ open GRWTSK.RiemannHypothesis.PositiveHeightCountDeficit
 open GRWTSK.RiemannHypothesis.CanonicalPositiveTuringBridge
 open GRWTSK.Analysis.ComplexAnalysis.RationalRoundedArithmetic
 open GRWTSK.Analysis.ComplexAnalysis.RationalTentAccumulation
-open GRWTSK.Analysis.Real.RationalTentCorrectionPrefixExact
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.RationalTentCorrectionPrefixExact
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRationalTentEvaluation
 open CanonicalPositiveTuringPairedTent

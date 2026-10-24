@@ -9,7 +9,7 @@ noncomputable section
 namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightIntegerizedPsiSourceRuleControls
 
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Replay the exact integerized signed identity. -/
 theorem concrete_integerized_identity

@@ -15,7 +15,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def thinHistoricalStep (r t : ℝ) : ℝ := if r ≤ t then 1 else 0
 

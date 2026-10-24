@@ -21,7 +21,7 @@ SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.Analysis.ComplexAnalysis.RationalPowerEvaluation
 
 open RationalRoundedArithmetic
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.FiniteExponentialEnclosure
 

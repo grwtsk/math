@@ -12,7 +12,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightCanonicalThetaGridRec
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightPsiCapacityNoGoControls
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- A classical PNT theorem, stated as its exact needed real-theta
 error proposition.  This is a named PROP, not a constructed theorem term

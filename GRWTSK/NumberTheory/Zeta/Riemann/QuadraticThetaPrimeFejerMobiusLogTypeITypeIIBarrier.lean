@@ -57,7 +57,7 @@ SEVEN_EIGHTHS_TYPE_I_TYPE_II_ESTIMATES_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Squarefree common divisors at or below the Type I cutoff. -/
 def centeredMobiusLogLowGCDSet

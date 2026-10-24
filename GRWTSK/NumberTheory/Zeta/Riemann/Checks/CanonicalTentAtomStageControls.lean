@@ -10,9 +10,9 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalTentAtomStage.Checks
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimeExponentScale
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerAtoms
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Chebyshev.TentSource
 open GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource
 

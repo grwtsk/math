@@ -37,7 +37,7 @@ RATIO_CRITERION_EQUIVALENCE_DEFINED /
 PINNED_AMPLITUDE_ESTIMATE_OPEN / NO_RH_CLAIM.
 -/
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 namespace GRWTSK.RiemannHypothesis
 
@@ -290,7 +290,7 @@ theorem pinnedPrimeWeightCapacityRatioCriterion_iff_amplitudeCriterion
       (pinnedPrimeWeightAmplitudeRequirement_iff_finiteCapacityRequirement
         (X := dyadicScale j) (C := C) (v := v)
         (E := pinnedPrimeWeightStageErrorEnvelope j R ρ η)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hC).2
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hC).2
         (hstages j hj v hv)
   · intro hamplitude η hη
     obtain ⟨C, hC, R, hR, j₀, hstages⟩ := hamplitude η hη
@@ -300,7 +300,7 @@ theorem pinnedPrimeWeightCapacityRatioCriterion_iff_amplitudeCriterion
       (pinnedPrimeWeightAmplitudeRequirement_iff_finiteCapacityRequirement
         (X := dyadicScale j) (C := C) (v := v)
         (E := pinnedPrimeWeightStageErrorEnvelope j R ρ η)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hC).1
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hC).1
         (hstages j hj v hv)
 
 /-- The fixed-budget ratio criterion and fixed amplitude criterion are exactly
@@ -320,7 +320,7 @@ theorem pinnedPrimeWeightFixedCapacityRatioCriterion_iff_amplitudeCriterion
       (pinnedPrimeWeightAmplitudeRequirement_iff_finiteCapacityRequirement
         (X := dyadicScale j) (C := C) (v := v)
         (E := pinnedPrimeWeightStageErrorEnvelope j R ρ η)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hratio.1).2
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hratio.1).2
         (hstages j hj v hv)
   · intro hamplitude
     refine ⟨hamplitude.1, ?_⟩
@@ -332,7 +332,7 @@ theorem pinnedPrimeWeightFixedCapacityRatioCriterion_iff_amplitudeCriterion
       (pinnedPrimeWeightAmplitudeRequirement_iff_finiteCapacityRequirement
         (X := dyadicScale j) (C := C) (v := v)
         (E := pinnedPrimeWeightStageErrorEnvelope j R ρ η)
-        (GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence.dyadicScale_pos j) hamplitude.1).1
+        (GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence.dyadicScale_pos j) hamplitude.1).1
         (hstages j hj v hv)
 
 /-- Every immutable coefficient-rule criterion must pass the exact ratio

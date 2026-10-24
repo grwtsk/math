@@ -32,8 +32,8 @@ namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology _root_.MeasureTheory Set
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.ComplexReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.ComplexReadout
 
 /-- Exact centering of the real Green source residual. -/
 theorem greenSourceFrameValue_integral_zero

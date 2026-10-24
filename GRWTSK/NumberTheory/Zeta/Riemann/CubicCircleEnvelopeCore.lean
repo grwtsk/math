@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT. -/
 import GRWTSK.NumberTheory.Zeta.Riemann.AnchoredLocalJensenCore
-import GRWTSK.Analysis.Real.CubicEulerMaclaurin
+import GRWTSK.Analysis.RealAnalysis.CubicEulerMaclaurin
 import GRWTSK.NumberTheory.Zeta.Riemann.CubicPowerSummation
 import GRWTSK.NumberTheory.Zeta.Riemann.CubicCircleGeometry
 import GRWTSK.NumberTheory.Chebyshev.Checks.CubicCircleControls

@@ -11,7 +11,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightUnboundedPrimeJumpCon
 
 open GRWTSK.RiemannHypothesis
 open GRWTSK.RiemannHypothesis.Checks.PinnedPrimeWeightPsiCapacityNoGoControls
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Replay the exact prime jump, not the jump of a smoothed observable. -/
 theorem concrete_chebyshev_prime_jump

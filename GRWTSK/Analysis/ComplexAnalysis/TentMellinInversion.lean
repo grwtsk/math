@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-import GRWTSK.Analysis.Real.TentRationalCorrection
+import GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 import Mathlib.Analysis.MellinInversion
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 import Mathlib.Tactic.Positivity
@@ -24,8 +24,8 @@ namespace GRWTSK.Analysis.ComplexAnalysis.TentMellinInversion
 
 open MeasureTheory Set Filter
 open scoped Topology Interval BigOperators
-open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 

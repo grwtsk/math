@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberMultiplierCircle
-import GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture
+import GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircleMixture
 
 /-!
 # Isolated measure-domination and fixed nonatomic norming leaf
@@ -14,8 +14,8 @@ namespace GRWTSK.Analysis.OperatorTheory.PortFiberMeasureTransfer
 open Filter Topology MeasureTheory
 open scoped ENNReal
 open scoped GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionInnerProduct
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation.BoundedSymbol
-open scoped GRWTSK.Analysis.Operator.HolomorphicMultiplierNorm
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation.BoundedSymbol
+open scoped GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorm
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofArchitecture
 open GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.SimultaneousProofPortfolio
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicRestriction
@@ -23,12 +23,12 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineCocycle
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierRepresentation
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierNorming
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierAtomic
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircle
-open GRWTSK.Analysis.Operator.HolomorphicSectionMeasureTransfer
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierCircleMixture
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierRepresentation
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierNorming
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierAtomic
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircle
+open GRWTSK.Analysis.OperatorTheory.HolomorphicSectionMeasureTransfer
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierCircleMixture
 
 noncomputable section
 

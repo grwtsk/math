@@ -43,7 +43,7 @@ namespace GRWTSK.RiemannHypothesis
 
 open Filter Topology Asymptotics
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def ClassicalThetaSqrtLogSqBound : Prop :=
   ∃ C : ℝ, 0 ≤ C ∧ ∃ x₀ : ℝ,

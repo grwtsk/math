@@ -16,7 +16,7 @@ noncomputable section
 open Filter
 open scoped Topology
 namespace GRWTSK.NumberTheory.Chebyshev.NormalizedRieszFiniteEvaluation
-open GRWTSK.Analysis.Real.RationalRieszPrimitive
+open GRWTSK.Analysis.RealAnalysis.RationalRieszPrimitive
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 open GlobalRieszAffineNormalization TentSource EndpointConventions RieszPointwiseReconstruction
 

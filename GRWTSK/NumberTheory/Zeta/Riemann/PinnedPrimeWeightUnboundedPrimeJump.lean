@@ -36,7 +36,7 @@ NO_RH_CLAIM.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- The literal Chebyshev-psi staircase gains exactly von Mangoldt's
 coefficient at the top of a one-integer interval. -/

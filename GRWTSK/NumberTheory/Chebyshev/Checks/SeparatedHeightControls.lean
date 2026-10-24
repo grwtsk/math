@@ -14,7 +14,7 @@ zeros. These source proofs are NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls
 
-open GRWTSK.Analysis.Real.FiniteIntervalSeparation
+open GRWTSK.Analysis.RealAnalysis.FiniteIntervalSeparation
 open GRWTSK.RiemannHypothesis.SeparatedContourHeights
 
 noncomputable section

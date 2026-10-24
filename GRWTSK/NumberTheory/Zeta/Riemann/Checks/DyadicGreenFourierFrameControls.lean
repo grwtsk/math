@@ -10,7 +10,7 @@ namespace GRWTSK.RiemannHypothesis.Checks.DyadicGreenFourierFrameControls
 
 open Filter Topology
 open GRWTSK.RiemannHypothesis
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem Fourier_heads_capture_green_energy
     (X : ℕ) :

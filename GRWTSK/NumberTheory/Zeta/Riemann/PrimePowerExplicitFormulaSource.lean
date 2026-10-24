@@ -2,7 +2,7 @@
 Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI GPT-5.6 Sol.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 import GRWTSK.NumberTheory.Zeta.Riemann.ArithmeticFeature
 import Mathlib.Tactic
 
@@ -26,8 +26,8 @@ SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerAtoms
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 
 /-- A complete source-channel proposal whose prime-power field is fixed to
 the exact finite von-Mangoldt readout. The other six channels remain

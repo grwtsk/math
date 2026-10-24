@@ -47,7 +47,7 @@ HIGHER_PRIME_POWER_DFT_REMAINDER_SQRT_SCALE.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 theorem coefficient_nonnegative (n : ℕ) :
     0 ≤ coefficient n := by

@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.TentWeight
+import GRWTSK.Analysis.RealAnalysis.TentWeight
 import GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
 import Mathlib.Tactic.FieldSimp
 
@@ -26,7 +26,7 @@ namespace GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open MeasureTheory Set
 open scoped Interval BigOperators
 open GRWTSK.Analysis.ComplexAnalysis.IntervalMellinKernel
-open GRWTSK.Analysis.Real.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentWeight
 
 noncomputable section
 

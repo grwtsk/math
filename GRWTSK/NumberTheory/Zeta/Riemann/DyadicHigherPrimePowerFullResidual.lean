@@ -34,7 +34,7 @@ HIGHER_PRIME_POWER_FULL_WITNESS_RESIDUAL_INV_BOUND.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Higher-prime-power contribution to the first endpoint moment. -/
 def higherPrimePowerMass0Contribution (X : ℕ) : ℝ :=

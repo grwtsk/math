@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.AsymptoticAnalysis.PrimeSubsetPotentialBounds
-import GRWTSK.NumberTheory.PrimeCounting.PrimeIntervalResponseEnergyGrowth
+import GRWTSK.NumberTheory.AnalyticNumberTheory.PrimeDistribution.PrimeCounting.PrimeIntervalResponseEnergyGrowth
 import GRWTSK.Analysis.AsymptoticAnalysis.SelectedPrimeChainBounds
 
 /-! Rigorous counterexample to the universal all-prime-subsets AS interface.

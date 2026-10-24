@@ -35,8 +35,8 @@ def weightedMertensDiagonalMajorant (ε : ℝ) (N : ℕ) : ℝ :=
 theorem moebiusReal_sq_le_one (n : ℕ) : moebiusReal n ^ 2 ≤ 1 := by
   have habs : |moebiusReal n| ≤ 1 := by
     simpa [GRWTSK.RiemannHypothesis.CCC.moebiusReal,
-      GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal] using
-        GRWTSK.NumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one n
+      GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal] using
+        GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.moebiusReal_abs_le_one n
   rw [← sq_abs]
   nlinarith [abs_nonneg (moebiusReal n)]
 

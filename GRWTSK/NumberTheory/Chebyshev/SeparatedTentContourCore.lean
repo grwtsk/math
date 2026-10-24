@@ -2,7 +2,7 @@
 Human research direction: grwtsk contributors. Proof drafting assistance: OpenAI ChatGPT.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
 import GRWTSK.NumberTheory.Chebyshev.TentFiniteResidueCore
-import GRWTSK.Analysis.Real.FiniteIntervalSeparation
+import GRWTSK.Analysis.RealAnalysis.FiniteIntervalSeparation
 import GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights
 import GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours
 import GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls

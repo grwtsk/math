@@ -4,7 +4,7 @@ Mathlib results retain upstream authorship and Apache-2.0 licensing. -/
 import GRWTSK.NumberTheory.FunctionFieldArithmetic.DensityMoebius
 noncomputable section
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius ArithmeticFunction.zeta
 
 theorem moebiusReal_abs_le_one (n : ℕ) : |moebiusReal n| ≤ 1 := by
@@ -114,4 +114,4 @@ theorem density_closed_convolution_regroup (F : ℕ → ℕ → ℝ) (u : ℝ) :
   exact (Nat.sum_divisorsAntidiagonal' (fun n k => F k n)).symm
 
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

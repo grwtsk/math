@@ -9,9 +9,9 @@ set_option autoImplicit false
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.Checks
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimeExponentScale
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimeExponentScale
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerAtoms
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 open GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort
 
 /-- The exact von Mangoldt coefficient of 2 and 4 is the same. -/

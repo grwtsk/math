@@ -23,7 +23,7 @@ analytic obligations.
 
 namespace GRWTSK.NumberTheory.Zeta.Riemann.LinearMomentComponents
 
-open GRWTSK.NumberTheory.ArithmeticFunctions.RationalMomentAlgebra
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.RationalMomentAlgebra
 
 /-- Extend a rational multiplication-moment coefficient system to complex coefficients. -/
 def complexify (moment : Moment) : ArithmeticFunction ℂ :=

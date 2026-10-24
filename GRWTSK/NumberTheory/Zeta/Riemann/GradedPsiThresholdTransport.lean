@@ -30,7 +30,7 @@ GRADED_PSI_THRESHOLD_DEFINED.
 namespace GRWTSK.RiemannHypothesis
 
 open Chebyshev
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def AllDyadicPsiAtThreshold (ρ : ℝ) : Prop :=
   ∀ η : ℝ, 0 < η →

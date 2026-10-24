@@ -18,8 +18,8 @@ noncomputable section
 open scoped BigOperators
 namespace GRWTSK.NumberTheory.Chebyshev.RieszSourceSecondDifference
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
-open GRWTSK.Analysis.Real.TentWeight
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentWeight
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
 open GRWTSK.NumberTheory.Zeta.Riemann.FirstRieszZeroTail
 open TentSource TentResidueContributions GeneralTentExplicitFormula

@@ -1,5 +1,5 @@
 import GRWTSK.Analysis.OperatorTheory.PortFiberSectionBounded
-import GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier
+import GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier
 
 /-!
 # Isolated bounded holomorphic-multiplier producer
@@ -23,8 +23,8 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineGaugeMetric
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionEnergy
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionQuotient
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicLineSectionCompletion
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionBounded
-open GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionBounded
+open GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier
 
 noncomputable section
 

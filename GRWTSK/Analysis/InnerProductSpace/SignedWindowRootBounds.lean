@@ -13,7 +13,7 @@ namespace GRWTSK.Analysis.SignedWindowRoot
 open MeasureTheory Set
 open scoped BigOperators
 open HSSCP04 HSSCP04.SignedCharts
-open GRWTSK.Analysis.QuadraticRootTransport
+open GRWTSK.Analysis.RealAnalysis.Integration.QuadraticRootTransport
 
 /-- Both residual components remain inside the square before any bound is used. -/
 theorem narrow_root_transport {b T : ℝ} {parent : Chart b T}

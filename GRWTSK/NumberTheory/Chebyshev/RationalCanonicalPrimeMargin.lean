@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import GRWTSK.Analysis.Real.RationalLogEnclosure
+import GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 import GRWTSK.NumberTheory.Chebyshev.CanonicalTentPrimeCriterion
 import GRWTSK.NumberTheory.Chebyshev.CanonicalRationalTentEvaluation
 import Mathlib.Tactic
@@ -36,7 +36,7 @@ RH result is constructed. SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.
 
 namespace GRWTSK.NumberTheory.Chebyshev.RationalCanonicalPrimeMargin
 
-open GRWTSK.Analysis.Real.RationalLogEnclosure
+open GRWTSK.Analysis.RealAnalysis.RationalLogEnclosure
 open GRWTSK.RiemannHypothesis.CanonicalHighCounting
 open GRWTSK.NumberTheory.Chebyshev.HigherPrimePowers
 open GRWTSK.NumberTheory.Chebyshev.LegendreLogBudget

@@ -41,9 +41,9 @@ namespace GRWTSK.RiemannHypothesis
 
 open Complex
 open CanonicalZeroDivisor
-open GRWTSK.NumberTheory.VonMangoldt.DyadicMellinConvergence
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
-open GRWTSK.NumberTheory.VonMangoldt.MellinReadout
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicMellinConvergence
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.MellinReadout
 
 def safePlusDyadicAction (z : ZeroPoint) (j : ℕ) : ℂ :=
   action (dyadicScale j) (mellinTest (safeShiftPlus z.1))

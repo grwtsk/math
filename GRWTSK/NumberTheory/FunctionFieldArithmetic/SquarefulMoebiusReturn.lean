@@ -12,7 +12,7 @@ Formalization assistance: OpenAI Codex.
 This scalar coefficient equality does not delete a source vector or Gram block.
 -/
 set_option autoImplicit false
-namespace GRWTSK.NumberTheory.ArithmeticFunctions
+namespace GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions
 open scoped ArithmeticFunction.Moebius
 
 /-- Above the closed cutoff, equality of complete low/high coefficients
@@ -44,4 +44,4 @@ theorem weighted_squareful_low_high_cancel (U : ℕ) (S : Finset ℕ) (c : ℕ �
     sub_eq_zero.mpr heq.symm
   simp only [hdiff, Int.cast_zero, mul_zero]
 
-end GRWTSK.NumberTheory.ArithmeticFunctions
+end GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions

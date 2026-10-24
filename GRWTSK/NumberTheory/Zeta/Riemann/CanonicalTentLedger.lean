@@ -37,9 +37,9 @@ open GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
 open GRWTSK.RiemannHypothesis.CanonicalZeroDivisor
 open GRWTSK.RiemannHypothesis.TrivialZeroResidues
 open GRWTSK.Analysis.ComplexAnalysis.TentMellinKernel
-open GRWTSK.Analysis.Real.TentRationalCorrection
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerAtoms
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerAtoms
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 
 /-- How a channel is represented in this exact normalization. This metadata
 does not itself assert a numerical identity. -/

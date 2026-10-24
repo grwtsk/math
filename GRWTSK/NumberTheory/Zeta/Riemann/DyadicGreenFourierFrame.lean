@@ -37,7 +37,7 @@ namespace GRWTSK.RiemannHypothesis
 open Filter Topology _root_.MeasureTheory Set
 open CanonicalZeroDivisor
 open GRWTSK.Analysis.GreenKernel.UnitInterval
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def greenResidualComplex (X : ℕ) (t : ℝ) : ℂ :=
   (greenSourceFrameValue X t : ℂ)
@@ -71,7 +71,7 @@ theorem greenResidualComplex_interval_norm_sq
     (X : ℕ) :
     (∫ t in (0 : ℝ)..1, ‖greenResidualComplex X t‖^2) =
       greenEnergy X := by
-  rw [← GRWTSK.NumberTheory.VonMangoldt.CenteredReadout.unit_integral_eq_interval]
+  rw [← GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.CenteredReadout.unit_integral_eq_interval]
   rw [greenEnergy_eq_sourceFrame]
   apply integral_congr_ae
   filter_upwards with t

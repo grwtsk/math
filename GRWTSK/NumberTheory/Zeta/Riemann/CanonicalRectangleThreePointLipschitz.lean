@@ -28,7 +28,7 @@ Evidence: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
 namespace GRWTSK.RiemannHypothesis.CanonicalRectangleThreePointLipschitz
 
 open Set MeasureTheory
-open GRWTSK.Analysis.Real.RationalClosedInterval
+open GRWTSK.Analysis.RealAnalysis.RationalClosedInterval
 open GRWTSK.NumberTheory.Zeta.Riemann
 open GRWTSK.NumberTheory.Zeta.Riemann.CertifiedZeroHeight
 open CanonicalRectangleCountIsolation

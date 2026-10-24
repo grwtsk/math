@@ -12,7 +12,7 @@ namespace GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.Checks
 open Filter Topology
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe
 open GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization
-open GRWTSK.NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt
 
 /-- The critical-line probe vanishes without imposing source decay. -/
 theorem critical_line_probe_zero (γ : ℝ) (n : ℕ) :

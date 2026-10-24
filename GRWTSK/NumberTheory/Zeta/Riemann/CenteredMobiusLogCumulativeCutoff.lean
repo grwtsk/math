@@ -11,7 +11,7 @@ open scoped BigOperators
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 def centeredGreenCutoff (X : ℕ) (t : ℝ) : ℕ :=
   ⌊(X : ℝ) * (1 + t)⌋₊

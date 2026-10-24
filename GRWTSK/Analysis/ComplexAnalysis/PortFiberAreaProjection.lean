@@ -21,7 +21,7 @@ open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaComplete
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaReproducing
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2
 open GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaProjection
-open GRWTSK.Analysis.Operator.HolomorphicMultiplierArea (areaMeasure)
+open GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea (areaMeasure)
 
 noncomputable section
 
@@ -68,12 +68,12 @@ def AddedClaim : AddedIndex → Prop
         (∫ z, kernel h x z * g z ∂areaMeasure D.X) =
           (projectedFunction h g : Section D.X) x
   | .failureBoundaries =>
-      let D := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover
-      let h := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
-      let x := GRWTSK.Analysis.Operator.HolomorphicLineSectionMultiplier.Fixtures.center
+      let D := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover
+      let h := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.diskCover_isOpen
+      let x := GRWTSK.Analysis.OperatorTheory.HolomorphicLineSectionMultiplier.Fixtures.center
       (bergmanProjection h ≠ 0) ∧
         (projectedFunction h GRWTSK.Analysis.ComplexAnalysis.HolomorphicAreaL2.Fixtures.spikeClass :
-          Section D.X) x ≠ GRWTSK.Analysis.Operator.HolomorphicMultiplierArea.Fixtures.spike x
+          Section D.X) x ≠ GRWTSK.Analysis.OperatorTheory.HolomorphicMultiplierArea.Fixtures.spike x
 
 theorem addedClaim_proof (i : AddedIndex) : AddedClaim i := by
   cases i with

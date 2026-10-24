@@ -58,7 +58,7 @@ SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_OPEN.
 
 namespace GRWTSK.RiemannHypothesis
 
-open GRWTSK.NumberTheory.VonMangoldt.DyadicDiscrepancy
+open GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctions.VonMangoldtFunction.DyadicDiscrepancy
 
 /-- Every dyadic scale in the packet is at least two. -/
 theorem two_le_dyadicScale_for_exactCorrelationReadout

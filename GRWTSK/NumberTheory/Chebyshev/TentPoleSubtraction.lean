@@ -34,7 +34,7 @@ open GRWTSK.RiemannHypothesis.AdmissibleRectangles
 open GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours
 open GRWTSK.NumberTheory.Chebyshev.TentResidueContributions
 open GRWTSK.NumberTheory.Chebyshev.TrivialZeroTentSeries
-open GRWTSK.Analysis.Real.TentRationalCorrection
+open GRWTSK.Analysis.RealAnalysis.TentRationalCorrection
 
 noncomputable section
 
