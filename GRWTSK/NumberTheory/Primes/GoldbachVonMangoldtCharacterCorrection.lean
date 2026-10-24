@@ -91,4 +91,22 @@ theorem norm_dirichlet_reconstruction_fullPsi_le
   rw [card_complexDirichlet_eq_totient q] at h
   exact h
 
+
+/-- Unconditional finite bound for an actual Dirichlet twist of the
+reduced-residue prime-power packet. This is the triangle-inequality
+baseline, NOT nonprincipal cancellation or a power saving. -/
+theorem norm_dirichlet_twist_le_unit_mass_norms
+    (q N : ℕ) (χ : DirichletCharacter ℂ q) :
+    ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)‖ ≤
+      ∑ b : (ZMod q)ˣ, ‖unitPsiWeight q N b‖ := by
+  calc
+    ‖∑ b : (ZMod q)ˣ, unitPsiWeight q N b * χ (b : ZMod q)‖ ≤
+        ∑ b : (ZMod q)ˣ,
+          ‖unitPsiWeight q N b * χ (b : ZMod q)‖ :=
+      norm_sum_le _ _
+    _ = ∑ b : (ZMod q)ˣ, ‖unitPsiWeight q N b‖ := by
+      apply Finset.sum_congr rfl
+      intro b hb
+      rw [norm_mul, complexDirichlet_norm_on_units q χ b, mul_one]
+
 end GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection
