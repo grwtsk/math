@@ -420,4 +420,22 @@ theorem completedSquarePointAddEquiv_sourcePoint (i : Fin 32) :
   completedSquarePointEquiv_sourcePoint i
 
 
+/-- Exact finite-generation transport under the source-defined additive
+group equivalence. This does NOT provide finite generation for either
+curve: it proves the two propositions equivalent. A genuine upstream
+Mordell-Weil supplier still has to be imported or proved compatibly. -/
+theorem nativeCompletedSquare_moduleFinite_iff :
+    Module.Finite ℤ nativeCompletedSquareCurve.toAffine.Point ↔
+      Module.Finite ℤ nativeCurve.toAffine.Point :=
+  Module.Finite.equiv_iff completedSquarePointAddEquiv.toIntLinearEquiv
+
+/-- Specialization into the exact finite-generation premise of the native
+Rank 32 finrank endpoint. The assumption is the *actual* normalized
+rational-point group, not a supplied abstract point group. -/
+theorem nativeCurve_moduleFinite_of_completedSquare
+    (hfinite : Module.Finite ℤ nativeCompletedSquareCurve.toAffine.Point) :
+    Module.Finite ℤ nativeCurve.toAffine.Point :=
+  nativeCompletedSquare_moduleFinite_iff.mp hfinite
+
+
 end GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.Record4239
