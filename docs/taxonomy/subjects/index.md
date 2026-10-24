@@ -11,6 +11,13 @@ adds distinct proposed records for [category theory](category-theory/index.md),
 [proof-assistant metaprogramming](proof-assistant-metaprogramming/index.md).
 Candidate queue routing is not editorial acceptance of a source association.
 
+The [source-reviewed standard addition](../proposals/new-concepts/source-reviewed-standard-subjects.md)
+adds [closure operators](order-theory/closure-operators/index.md),
+[order embeddings](order-theory/order-embeddings/index.md), and
+[free groups](algebra/group-theory/free-groups/index.md) under existing order/group
+subjects. Their identities are independent of source moves; their edges and
+source associations remain proposed.
+
 [Analysis](analysis/index.md) provides six nested specialization levels. [Probability theory](probability/index.md) supplies a second route to the same terminal concept. Every edge is proposed pending independent review; directory descent is not an exclusive semantic-parent claim.
 
 [History of mathematics](history-of-mathematics/index.md) and [mathematics education](mathematics-education/index.md) are additional subject entry points, not resource formats. Both reach the same [history of mathematics education](history-of-mathematics/mathematics-education/index.md) record. All new parentage remains proposed.
