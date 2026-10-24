@@ -1,7 +1,0 @@
-name = "bit_matrix"
-version = "0.1.0"
-defaultTargets = ["BitMatrix"]
-
-[[lean_lib]]
-name = "BitMatrix"
-globs = ["BitMatrix", "BitMatrixElements.+"]
