@@ -10117,3 +10117,52 @@ root-isolation constraints, and non-force-push requirements remain unchanged.
     separation/positivity supplier if the Bombieri information-loss route is to
     become an RH-facing contradiction.
 
+
+
+### Follow-up: right-context certificate composed into zeta spectral transport
+
+Source commit:
+`e84b026523fbac69b571c5ef24423a18a853cd7c`.
+
+Current source:
+`GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`,
+blob `3a0cc6634dad24cb2a7555d4ee4181d6c54ab1fd`.
+
+New fully qualified declaration:
+`GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate`.
+
+This theorem replaces the earlier opaque non-eventual-sofic field in the
+combined spectral transport with the explicit
+`ZetaUnboundedTailContexts process.labelTrace` supplier from the
+right-context formalization. It still requires, independently:
+
+- a supplied `SpectralCoverFamily zetaZeroProblem family`;
+- an actual `DynamicSpectralCover` for the chosen zeta source trace;
+- rational ordinate `->` eventual exact-sofic classification;
+- algebraic critical-line ordinate `->` eventual exact-sofic
+  classification; and
+- `ZetaCriticalPlacement`.
+
+The right-context condition itself remains an unresolved arithmetic/spectral
+supplier; the theorem does not prove it for an actual zeta trace.
+
+Classification:
+- imported mathematics: none newly imported;
+- kernel-verified bridges: none claimed;
+- source proof candidate: composition of existing typed suppliers;
+- conditional interfaces: spectral cover, both arithmetic-to-sofic maps,
+  unbounded tail contexts, and critical-line placement;
+- finite evidence: none;
+- analogies: none promoted;
+- unresolved premises: all concrete source/spectral/arithmetic constructions
+  above.
+
+Operational validation is queued outside math at
+`grwtsk/noeaaeue#397`, pinned to the exact source commit and blob.
+The queued commands include direct `lake env lean`, target
+`lake build --wfail`, and fresh `--trust=0` declaration-level
+`#print axioms` checks. This queue is **not** a receipt.
+
+Actual verification state:
+**COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
+TRANSITIVE_AXIOMS NOT_RUN / external receipt unavailable**.
