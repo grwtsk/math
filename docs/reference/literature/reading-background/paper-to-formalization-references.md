@@ -10166,3 +10166,166 @@ The queued commands include direct `lake env lean`, target
 Actual verification state:
 **COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN /
 TRANSITIVE_AXIOMS NOT_RUN / external receipt unavailable**.
+
+
+## Precision clarification — BaseSpecialization map, local bylines, and paper locators — 2026-10-23
+
+This clarification **supersedes any earlier shorthand wording in the affected
+spectral-cover paragraphs** without changing their exact historical
+commit/blob pins, conditional suppliers, verification limits, or unresolved
+mathematics. The external paper bibliography remains consolidated in
+[Case HEAT-SOFIC-SPECTRAL-PAPER-PROVENANCE-REFRESH-20261023](#case-heat-sofic-spectral-paper-provenance-refresh-20261023).
+
+### BaseSpecialization is a supplied map, not an injective embedding theorem
+
+Historical source refinement remains
+`4a80cc59e3fe0ca5b6097106b0d90e045c3f5729`, with the recorded source blob
+`f9d009a30ac77b93f72bf38604888eb73544de16`; the later source snapshot
+retaining these declarations has blob
+`8210e2055447ebbe482a7122d21ee09177c3b1c0`.
+No existing pin is replaced.
+
+The literal structure is
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`.
+Its field
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.embed`
+is a **supplied map**
+from the base zero-object type to one generalized zero-object type.
+**Injectivity of this map is neither assumed by the structure nor proved by the
+current source.** The required structure fields are instead:
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.mapsZero`:
+  a base zero is sent to a generalized zero;
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.reflectsCritical`:
+  generalized criticality at the supplied image point reflects back to base
+  criticality.
+
+The reverse implication is proved by the literal declaration
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization`.
+The conditional equivalence is
+`GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_member_specialization`.
+Neither declaration consumes or derives
+`Function.Injective
+  GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.embed`.
+
+For the actual-zeta wrapper, the corresponding literal declarations are:
+
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates`;
+- `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate`.
+
+The first source integration remains
+`13d3e49454c23f825ce730be569856daea2cb3e4`, blob
+`0c69c768eca979698ece63c39ba0b9a50a33ba3a`; the right-context composition
+remains `e84b026523fbac69b571c5ef24423a18a853cd7c`, blob
+`3a0cc6634dad24cb2a7555d4ee4181d6c54ab1fd`.
+
+### Actual local source-snapshot attribution/year
+
+These local source headers are repository attribution, **not external paper
+bylines**:
+
+- `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`: year **2026**,
+  “Copyright (c) 2026 grwtsk contributors” and “Formalization assistance:
+  OpenAI.” No individual mathematical-direction byline is stated in that file.
+- `GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean`: year **2026**,
+  “Copyright (c) 2026 grwtsk contributors,” “Mathematical direction:
+  grwtsk contributors,” and “Formalization assistance: OpenAI.”
+
+### Literal identifiers replacing abbreviated names in the affected provenance
+
+Where earlier paragraphs used ellipses or “prefix above” shorthand, the
+relevant literal identifiers are:
+
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.twoMoment_corrected_zero_collision`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.moment_only_history_collision`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_left_inverse_of_moment_only_refinement_history`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.separating_readout_not_from_moment_only_history`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_lossless_graph_cover_from_moment_only_history`;
+- `GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary.no_source_decoder_from_bombieri_huffman_packets`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.reachableEndStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.mem_reachableEndStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_append`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_split_append`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_append_iff_endStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_context_iff_of_same_endStates`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.UnboundedRightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficFactorLanguage_of_unboundedRightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficTrace_of_unboundedRightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_eventuallySoficTrace_of_all_tail_rightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_unbounded_rightContexts`;
+- `GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_all_tail_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ZetaUnboundedTailContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_eventual_sofic_of_zeta_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventualSuppliers_of_zeta_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_rational_sofic_and_rightContexts`;
+- `GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_transcendental_of_critical_sofic_and_rightContexts`.
+
+### Paper method/theorem locators: verified versus unavailable
+
+Only source-verified locators are asserted:
+
+- **Enrico Bombieri, _Problems of the Millennium: the Riemann Hypothesis_**:
+  the relevant Weil/moment discussion is verified in the existing source audit
+  at **§V, printed pp. 8--9**.
+- **David A. Huffman, _A Method for the Construction of Minimum-Redundancy
+  Codes_**: verified bibliographic article pages **1098--1101**; a finer
+  numbered theorem/section locator for the construction is **UNAVAILABLE in
+  the current source audit**.
+- **Brad Rodgers and Terence Tao, _The De Bruijn--Newman constant is
+  non-negative_**: exact theorem/section/page locator for the particular
+  methodological comparison used here is **UNAVAILABLE in the current source
+  audit**. The paper-level theorem/method attribution remains as previously
+  recorded.
+- **Enrico Bombieri, _Remarks on Weil's quadratic functional in the theory of
+  prime numbers, I_**: the exact section/page corresponding to the reduced
+  two-moment extraction is **UNAVAILABLE in the current source audit**; no
+  finer paper-to-Lean correspondence is asserted.
+- **OpenAI, _The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+  Re(s)>7/8_**: exact paper section/page locator is **UNAVAILABLE in the
+  current source audit**. The already recorded formal-source locator
+  `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` is retained as a formal
+  declaration identity, not converted into an invented paper page.
+- **Benjamin Weiss; Nataša Jonoska; Justin Cai and Rafael Frongillo**:
+  bibliographic article/page ranges remain as recorded, but exact
+  section/theorem locators for the specific finite-language/right-context
+  comparison are **UNAVAILABLE in the current source audit**.
+- **John Myhill and Anil Nerode**: the recorded whole-source page ranges remain
+  bibliographic context; an exact internal theorem/page correspondence to the
+  locally proved reachable-end-state bound is **UNAVAILABLE in the current
+  source audit**.
+
+For `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`
+and the repository-derived zeta spectral transport composition, an external
+paper theorem/section/page locator is **NOT APPLICABLE**: these are local typed
+interfaces, not direct translations of an external theorem.
+
+### Classification and verification limits retained
+
+- **Imported mathematics:** unchanged from the earlier entries.
+- **Kernel-verified bridges:** no new kernel-verified bridge is created by this
+  documentation clarification.
+- **Source proof candidates:** unchanged; the local map/transport/right-context
+  declarations remain source candidates unless covered by an exact existing
+  receipt.
+- **Conditional interfaces:** the generalized spectral-cover family,
+  `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization`,
+  actual zeta dynamic spectral process, arithmetic-to-eventual-sofic
+  classifications, unbounded tail contexts, and critical-line placement remain
+  explicit supplied hypotheses.
+- **Finite evidence:** unchanged and not promoted to analytic evidence.
+- **Analogies:** heat/codec, calculus-history, and automata comparisons remain
+  analogies/method background only; no historical influence is inferred.
+- **Unresolved premises:** all previously listed concrete spectral, arithmetic,
+  sofic, Weil, and 7/8-to-3/4 analytic bridges remain unresolved.
+
+Existing operational validation queues and receipts remain outside
+`grwtsk/math`. This clarification does not convert queued requests or source
+inspection into execution evidence. The affected source remains subject to the
+previously recorded **NOT_RUN / pending compilation, fresh kernel checking, and
+transitive axiom audit** limits wherever no exact executed receipt has been
+recorded.
