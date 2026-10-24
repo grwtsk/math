@@ -38,8 +38,11 @@ theorem discrepancy_eq_sum_coefficients
   unfold goldbachResidueProgressionDiscrepancy
     goldbachResidueClassPrimeSum goldbachCoprimeResidueMain
     goldbachIntegerExponentialKernel residueCoefficient
+  classical
+  -- Normalize the filtered prime sum to the same inclusive range as the model.
+  -- Only then distribute subtraction across the common finite sum.
+  simp only [Finset.sum_ite]
   rw [← Finset.sum_sub_distrib]
-  simp_rw [← Finset.sum_filter]
   apply Finset.sum_congr rfl
   intro n hn
   split_ifs <;> ring
