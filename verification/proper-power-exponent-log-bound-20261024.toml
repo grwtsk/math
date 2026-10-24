@@ -1,0 +1,38 @@
+# Queued source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-exponent-log-bound-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "286455e68487d7ea21d417e51f70b96ddb6da746"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentLogBound.lean"
+source_blob = "e98e391786b77b752437e7e685b9397844a6b595"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentLogBound.properExponentLogMass_le_N_log",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCountExplicitBound",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "Nat.Prime p; N:Nat; no modulus"
+missing_suppliers = [
+ "Aggregate bound over eligible prime divisors of q",
+ "Derive sharper power-growth bound for exponent count",
+ "Separate any asymptotic prime-density transfer from finite mass estimate",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentLogBound.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentLogBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentLogBound.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"
