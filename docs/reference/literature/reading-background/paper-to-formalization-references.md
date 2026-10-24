@@ -8454,3 +8454,127 @@ Owner-designated unpublished research by grwtsk contributors; printed byline `['
 ## Missing bridges by taxonomy
 
 All original missing bridges remain in the structured record by taxonomy. Algebra K1 still needs the general Coxeter/Laurent construction and basis, bar and KL theory. K2/K4/K5 retain their recurrence, geometry and analytic-realization gaps. This quotient is not an exceptional algebraic-group representation (E1). Number theory, boundary geometry and recursive-refinement obligations are unchanged. No reading event or historical influence is inferred.
+## Case HEAT-FLOW-SOFIC-ARITHMETIC-SPLIT-20261023
+
+### Source identities
+
+**Brad Rodgers and Terence Tao, _The De Bruijn--Newman constant is non-negative_.**
+2018 preprint; published 2020. arXiv:1801.05914,
+https://arxiv.org/abs/1801.05914.
+Exact method used here: zero dynamics under the de Bruijn--Newman heat
+deformation motivate a process/trace contradiction interface. No theorem from
+the paper is imported into the declarations below, and no claim is made that
+the analytic heat flow is literally a Huffman codec.
+
+**David A. Huffman, _A Method for the Construction of Minimum-Redundancy
+Codes_.** 1952. DOI 10.1109/JRPROC.1952.273898,
+https://doi.org/10.1109/JRPROC.1952.273898.
+Exact method used here: exact decoding and prefix-free lossless coding motivate
+the source-reconstruction abstraction. Minimum expected length and coding
+optimality are not used.
+
+**OpenAI, _The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane
+Re(s) > 7/8_.** 30 September 2026. Stable release snapshot
+`openai/math@1581d4cbdd69a0faf34b2089614fe2a814316a6a`,
+https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026.
+Exact external theorem shape used as context: for the Riemann zeta function,
+`Re(s) > 7/8` implies nonvanishing. The GRWTSK module does not import or
+reprove that theorem; `ThreeQuarterRefinement` takes valid stagewise
+zero-free bounds as explicit data.
+
+**Terence Tao, _A sketch of the proof of non-existence of Siegel zeroes_.**
+19 October 2026,
+https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/.
+**Terence Tao interviewed by Brady Haran, _No More Heroes - Terry Tao on AI in
+Mathematics_.** Numberphile, 15 October 2026,
+https://www.numberphile.com/podcast/terence-tao-ai.
+Exact use: expository context for the significance of the recent `7/8`
+quasi-Riemann result and Tao's stated `3/4` method barrier. No theorem is
+imported and no historical influence is inferred from an idea match.
+
+### Formal declarations and exact hypotheses
+
+Source commit:
+`9db6cf032653fafc7c7c26eb22f7480bafa2d28b`.
+Source:
+`GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean`,
+blob `71277213e4c6da281d53c56ef57b84eb68ac7730`.
+
+Fully qualified declarations added by this refinement:
+
+- `GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.irrational_of_rational_implies_sofic_of_nonsofic`.
+  Hypotheses: an explicit `HeightArithmetic`, one selected trace/height,
+  `rational(height x) -> sofic(trace x)`, and
+  `not sofic(trace x)`. Conclusion: relative irrationality of that height.
+  GRH is not assumed.
+- `GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.zero_height_irrational_and_grh_transcendental_of_nonsofic`.
+  Hypotheses: the same rational-to-sofic bridge for every selected zero; a
+  stronger algebraic-to-sofic bridge after critical-line placement; non-soficity
+  of each selected zero trace; and the predicate-level `GRHFor`. Conclusion:
+  relative irrationality, critical-line placement, and relative
+  transcendence. GRH supplies only the critical-line premise used by the
+  algebraic-to-sofic bridge.
+
+Existing declarations consumed by this architecture include
+`HuffmanLikeCover`,
+`readout_bound_to_process_of_huffmanLikeCover`,
+`no_huffmanLikeCover_of_process_collision`,
+`SoficThrough`,
+`not_soficThrough_of_collision`,
+`ThreeQuarterRefinement.seed_zeroFree`, and
+`ThreeQuarterRefinement.limit_zeroFree`.
+
+### Classification
+
+- **Imported mathematics:** none from Rodgers--Tao or Tao's expository
+  discussion in these two new declarations. The existing local module imports
+  only generic factorization/fiber logic and elementary finite/real support.
+- **Kernel-verified bridges:** none claimed for source commit
+  `9db6cf032653fafc7c7c26eb22f7480bafa2d28b`.
+- **Source proof candidates:** the two declarations above and the previously
+  recorded elementary factorization/sofic/refinement lemmas.
+- **Conditional interfaces:** actual heat-flow trace; heat-flow-to-code
+  factorization; zero-height readout; rational-height-to-sofic bridge;
+  algebraic-height-to-sofic-on-critical-line bridge; non-soficity of the
+  selected trace; valid stagewise zero-free refinement approaching `3/4`;
+  and GRH for the transcendence-facing branch.
+- **Finite evidence:** the exact rational constants `7/8` and `3/4` and
+  their order/gap only. These do not establish any analytic zero-free theorem.
+- **Analogies:** heat flow as an information-preserving process cover; Huffman
+  coding as the model of lossless reconstruction; finite-state factorization
+  as the sofic obstruction. These analogies are not theorem identifications.
+- **Unresolved premises:** every analytic/arithmetic bridge listed below.
+
+### Precise missing bridges
+
+1. Instantiate the process/trace with the actual Rodgers--Tao or intended
+   heat-flow state and prove the required source reconstruction/factorization.
+2. Bind the process state to the intended zeta zero/ordinate with exact
+   indexing, multiplicity and continuation conventions.
+3. Prove that rationality of the selected ordinate forces the corresponding
+   trace into the chosen sofic class.
+4. Prove that algebraicity of a critical-line ordinate forces that trace into
+   the chosen sofic class.
+5. Prove non-soficity against the required class/presentation, not merely
+   against one chosen finite-state profile.
+6. Supply valid stagewise zero-free estimates cofinal above `3/4`; an
+   asymptotically free accounting overhead does not generate these estimates.
+7. Supply the actual GRH premise if the conditional transcendence conclusion is
+   to be instantiated for zeta zeros.
+
+### Verification receipts
+
+Actual status for source commit
+`9db6cf032653fafc7c7c26eb22f7480bafa2d28b`:
+
+- `lake env lean GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean`:
+  **NOT_RUN**.
+- `lake build GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic`:
+  **NOT_RUN**.
+- fresh kernel replay: **NOT_RUN**.
+- transitive axiom audit: **NOT_RUN / NOT_KERNEL_AUDITED**.
+- external execution receipt: **unavailable**.
+
+Source inspection and commit presence are not compiler, kernel, or axiom
+acceptance. The module remains source-only and outside the root pending the
+required verification.

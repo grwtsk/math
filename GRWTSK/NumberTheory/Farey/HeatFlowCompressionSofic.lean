@@ -210,6 +210,22 @@ theorem transcendental_of_algebraic_implies_sofic_of_nonsofic
   intro hAlgebraic
   exact trace_nonsofic (algebraic_implies_sofic hAlgebraic)
 
+/-- Relative irrationality can be obtained without GRH when rational
+height already forces the selected trace into the prohibited sofic class.
+This isolates the user's desired unconditional irrationality route from the
+separate critical-line/transcendence route. -/
+theorem irrational_of_rational_implies_sofic_of_nonsofic
+    {X : Type u} {Trace : Type v} {Height : Type w}
+    (arithmetic : HeightArithmetic Height)
+    (trace : X → Trace) (height : X → Height)
+    (sofic : Trace → Prop) (x : X)
+    (rational_implies_sofic :
+      arithmetic.rational (height x) → sofic (trace x))
+    (trace_nonsofic : ¬ sofic (trace x)) :
+    IsIrrational arithmetic (height x) := by
+  intro hRational
+  exact trace_nonsofic (rational_implies_sofic hRational)
+
 /-- A predicate-only GRH interface. In an analytic instantiation, `isZero`
 must select the intended nontrivial zeros and `onCriticalLine` must express
 real part equal to `1 / 2`. -/
@@ -245,6 +261,42 @@ theorem grh_zero_height_transcendental_of_nonsofic
   have hIrrational : IsIrrational arithmetic (height z) :=
     irrational_of_transcendental arithmetic (height z) hTranscendental
   exact ⟨hLine, hIrrational, hTranscendental⟩
+
+/-- Exact split matching the proposed contradiction architecture:
+irrationality is obtained from a rational-to-sofic obstruction without using
+GRH; after GRH places the same zero on the critical line, a stronger
+algebraic-to-sofic obstruction yields transcendence. Neither arithmetic bridge
+nor non-soficity is constructed here. -/
+theorem zero_height_irrational_and_grh_transcendental_of_nonsofic
+    {X : Type u} {Trace : Type v} {Height : Type w}
+    (arithmetic : HeightArithmetic Height)
+    (isZero onCriticalLine : X → Prop)
+    (trace : X → Trace) (height : X → Height)
+    (sofic : Trace → Prop)
+    (rational_implies_sofic :
+      ∀ z, isZero z →
+        arithmetic.rational (height z) → sofic (trace z))
+    (algebraic_implies_sofic_on_line :
+      ∀ z, isZero z → onCriticalLine z →
+        arithmetic.algebraic (height z) → sofic (trace z))
+    (zero_trace_nonsofic :
+      ∀ z, isZero z → ¬ sofic (trace z))
+    (hGRH : GRHFor isZero onCriticalLine) :
+    ∀ z, isZero z →
+      IsIrrational arithmetic (height z) ∧
+        onCriticalLine z ∧
+        IsTranscendental arithmetic (height z) := by
+  intro z hz
+  have hIrrational : IsIrrational arithmetic (height z) :=
+    irrational_of_rational_implies_sofic_of_nonsofic
+      arithmetic trace height sofic z
+      (rational_implies_sofic z hz) (zero_trace_nonsofic z hz)
+  have hLine : onCriticalLine z := hGRH z hz
+  have hTranscendental : IsTranscendental arithmetic (height z) := by
+    intro hAlgebraic
+    exact zero_trace_nonsofic z hz
+      (algebraic_implies_sofic_on_line z hz hLine hAlgebraic)
+  exact ⟨hIrrational, hLine, hTranscendental⟩
 
 /-- No selected zero lies strictly to the right of `boundary`. -/
 def ZeroFreeRightOf
