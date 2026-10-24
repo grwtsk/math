@@ -52,7 +52,7 @@ WeilCriterion → CriticalStripGapReport
 CriticalStripGapReport → CriticalStripAtlas
 ```
 
-All short names above except the three `Logic.InformationLoss.*` modules have the common prefix `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTent` when they begin with a square-tent name, except `WeilCriterion`, `CriticalStripGapReport`, `CriticalStripAtlas`, and `WeilApproximatePositiveLimit`, which live in `GRWTSK.NumberTheory.Zeta.Riemann`. The last displayed tree is a **verified direct-edge frontier, not an exhaustive transitive closure**: deeper imports from `CanonicalSpectralPort`, `WeilApproximatePositiveLimit`, `CriticalStripAtlas`, `CanonicalSquareTentInformationLossBridge` and the information-loss modules, as well as Mathlib transitive dependencies, are not yet recursively enumerated. Consequently **no executable topological check order is certified**. Finish enumerating these remaining leaves at a single immutable Git commit, detect cycles/missing imports, then compute the topological order and only then authorize any local executor to run it.
+All short names above except the three `Logic.InformationLoss.*` modules have the common prefix `GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTent` when they begin with a square-tent name, except `CanonicalSpectralPort`, `WeilCriterion`, `CriticalStripGapReport`, `CriticalStripAtlas`, and `WeilApproximatePositiveLimit`, which live in `GRWTSK.NumberTheory.Zeta.Riemann`. The last displayed tree is a **verified direct-edge frontier, not an exhaustive transitive closure**: deeper imports from `CanonicalSpectralPort`, `WeilApproximatePositiveLimit`, `CriticalStripAtlas`, `CanonicalSquareTentInformationLossBridge` and the information-loss modules, as well as Mathlib transitive dependencies, are not yet recursively enumerated. Consequently **no executable topological check order is certified**. Finish enumerating these remaining leaves at a single immutable Git commit, detect cycles/missing imports, then compute the topological order and only then authorize any local executor to run it.
 
 | Exact file in the audited frontier (suffix `.lean`) | Git blob |
 |---|---|
@@ -88,6 +88,30 @@ All short names above except the three `Logic.InformationLoss.*` modules have th
 | `CriticalStripGapReport` | `aa606a5279e8bb135718df6e160e64e6bc30793b` |
 
 **Historical distinction:** `CanonicalSquareTentSixteenGapIntegrability` old blob `7df554fa8fff56c912bd4a6b100f032ef8bc73da` was superseded by repaired blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` at source commit `c0ff10b964b4e305925814c8cc5ff8250e11c8a5`. Both declarations still concern `Set.Ioi (0:ℝ)` with no changed statements. Earlier verification issues are historical source pins, not current build evidence.
+
+## Follow-up import audit: deeper project frontier (2026-10-23)
+
+The following **additional source edges were read from GitHub**; this extends, but does not close, the pinned import DAG. The `CanonicalSquareTentInformationLossBridge → CanonicalSquareTentBombieriMomentInformationLoss → CanonicalSquareTentWeilTransportObstruction` route also demonstrates why the information-loss and spectral branches must be included in the same dependency audit, rather than treating them as independent validation jobs.
+
+| Source module | Blob SHA | Direct project imports (all under `GRWTSK.`) |
+|---|---|---|
+| `NumberTheory.Zeta.Riemann.CanonicalSpectralPort` | `32e1bf3064601486ea3385fe9e5e76bf1de14962` | `NumberTheory.Zeta.Riemann.CanonicalTentAtomStage`, `NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort` |
+| `NumberTheory.Zeta.Riemann.WeilApproximatePositiveLimit` | `d0353549f353fbbad96cbf07f4b8274bd7542644` | `NumberTheory.Zeta.Riemann.WeilPositiveLimitCore` |
+| `NumberTheory.Zeta.Riemann.CriticalStripAtlas` | `4a471e2c9b167b7600147b85bfa052b18a8e5442` | `NumberTheory.Zeta.Riemann.Hypothesis` |
+| `NumberTheory.Zeta.Riemann.CanonicalSquareTentInformationLossBridge` | `6872d5305e9ce50387434fde6a92784866896783` | `Logic.InformationLoss.FactorizationFiber`, `NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss` |
+| `NumberTheory.Zeta.Riemann.CanonicalSquareTentBombieriMomentInformationLoss` | `9a2435d9c74b89ce1434c45bade1aa9beaa6cead` | `NumberTheory.Zeta.Riemann.CanonicalSquareTentCorrectedArithmeticGram`, `NumberTheory.Zeta.Riemann.CanonicalSquareTentWeilTransportObstruction` (also directly imports `Mathlib.Tactic`) |
+| `NumberTheory.Zeta.Riemann.CanonicalTentAtomStage` | `42791483907b8fa287fc2bcdac1f85030a934393` | `NumberTheory.Chebyshev.HigherPrimePowerSource`, `NumberTheory.Zeta.Riemann.CanonicalTentLedger` |
+| `NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort` | `ffc603c70c7ebebfa57a02e788e69a1669ddbaf8` | `NumberTheory.ArithmeticFunctions.PrimePowerVonMangoldt`, `NumberTheory.Zeta.Riemann.QuadraticTraceCriterion` |
+| `NumberTheory.Zeta.Riemann.WeilPositiveLimitCore` | `c7f56149ec8d1dd8abed6c7fe9dc6d0f9f0b6006` | `Analysis.ErrorBounds.FiniteResidualTelescope`, `NumberTheory.Zeta.Riemann.ArithmeticFeature`, `NumberTheory.Zeta.Riemann.Hypothesis` |
+| `NumberTheory.Zeta.Riemann.Hypothesis` | `6fe545d161e3166d4fd7b2a5dc5cb117c418e261` | none; direct Mathlib import `Mathlib.NumberTheory.LSeries.RiemannZeta` |
+| `Logic.InformationLoss.FactorizationFiber` | `3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd` | none; direct Mathlib import `Mathlib.Logic.Function.Basic` |
+| `Logic.InformationLoss.AugmentedRepairCriterion` | `fa60e69e2a170c8b588227aab97d359adf04586e` | `Logic.InformationLoss.FactorizationUniqueReconstruction` |
+| `Logic.InformationLoss.FactorizationUniqueReconstruction` | `53916cc045ae969b09d86729f294cfd96561e6e6` | `Logic.InformationLoss.FactorizationDecoderUniqueness` |
+| `Logic.InformationLoss.FactorizationFiberCompleteness` | `384f7ead3e902659ba1f592bb3fa2a8be9278f65` | `Logic.InformationLoss.FactorizationFiber` |
+
+Remaining unexpanded project imports now include `HigherPrimePowerSource`, `CanonicalTentLedger`, `PrimePowerVonMangoldt`, `QuadraticTraceCriterion`, `FiniteResidualTelescope`, `ArithmeticFeature`, `FactorizationDecoderUniqueness` and their descendants. Full Mathlib closure has not been enumerated. **No executable topological order is certified**, and this audit does not establish a cycle-free complete graph. All original mathematical phases remain pending as written. The repaired `CanonicalSquareTentSixteenGapIntegrability` blob is `67c0e627e31059f7af8eeae2f19fb74957e9e7e1`, superseding `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, with the exact same theorem signatures and `Set.Ioi (0:ℝ)` domains.
+
+**Evidence remains SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN.** Do not promote, merge, force push, dispatch an unapproved executor or use Railway. Retain the staged mathematical proof phases and all no-root-import requirements.
 
 ## Required exact run protocol
 
