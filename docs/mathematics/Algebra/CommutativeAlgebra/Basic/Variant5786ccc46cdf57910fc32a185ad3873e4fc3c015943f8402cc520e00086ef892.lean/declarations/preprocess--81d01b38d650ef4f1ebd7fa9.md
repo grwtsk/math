@@ -1,0 +1,118 @@
+# preprocess
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:99a163c59f42f37b7f49f471a6dc4228a3405570d498b509174dbd831c9d2914",
+  "kind": "def",
+  "lexical_name": "preprocess",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "preprocess--81d01b38d650ef4f1ebd7fa9",
+  "source": {
+    "blob": "331e9c201b5fbff1b5065d223d6d2e6a3251b3ed",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 114,
+    "line": 78,
+    "path": "GRWTSK/Algebra/CommutativeAlgebra/Basic/Variant5786ccc46cdf57910fc32a185ad3873e4fc3c015943f8402cc520e00086ef892.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:81d01b38d650ef4f1ebd7fa9bf55f7a1669300f8fdc2ceec725bbc077e923a0e",
+  "verification": {
+    "reference": "docs/verification/Algebra/CommutativeAlgebra/Basic/Variant5786ccc46cdf57910fc32a185ad3873e4fc3c015943f8402cc520e00086ef892.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:99a163c59f42f37b7f49f471a6dc4228a3405570d498b509174dbd831c9d2914`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 78–114.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+````lean
+def preprocess (e : Expr) : MetaM Simp.Result := do
+  let preThms ← polynomialPreExt.getTheorems
+  let ctx ← Simp.mkContext { failIfUnchanged := false } (simpTheorems := #[preThms])
+  pure (← Simp.main e ctx (methods := Lean.Meta.Simp.mkDefaultMethodsCore {})).1
+
+open Tactic
+
+/-- `polynomial` solves equalities of `Polynomial`s and similar types.
+
+Given a goal which is an equality in `Polynomial R` with a commutative ring `R`, `polynomial`
+turns both sides of the equation into a normal form by expanding out the brackets. It then closes
+the goal if both sides contain the same terms and fails otherwise. `polynomial_nf` normalizes all
+subexpressions at a given location.
+
+Variants of `polynomial` include:
+* `polynomial`: normalize both sides of an equation and close the goal if they are equal
+* `polynomial!`: run `polynomial` at default transparency
+* `polynomial_nf`: normalize all subexpression of the goal
+* `polynomial_nf at h₁ h₂ ⊢`: normalize all subexpressions at hypotheses `h₁` `h₁` and the goal
+* `polynomial_nf at *`: normalize all subexpressions of all local hypotheses and the goal
+* `polynomial_nf!`: run `polynomial_nf` at default transparency
+
+The `polynomial` tactic can be extended to work with algebras other than `Polynomial` using the
+attributes `polynomial_infer_base`, `polynomial_pre` and `polynomial_post`. This is only possible
+if the base ring can be inferred from the structure of the type.
+
+Examples:
+
+```
+example (a : ℚ) : (X + C a) * (X - C a) = X^2 + C (a^2) := by polynomial
+
+example {P : ℚ[X] → Prop} (h : P (X ^ 2 + X + C 4⁻¹)) : P ((X + C 2⁻¹) ^ 2) := by
+  polynomial_nf at h ⊢
+  exact h
+```
+
+-/
+````
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/CommutativeAlgebra/Basic/Variant5786ccc46cdf57910fc32a185ad3873e4fc3c015943f8402cc520e00086ef892.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/CommutativeAlgebra/Basic/Variant5786ccc46cdf57910fc32a185ad3873e4fc3c015943f8402cc520e00086ef892.lean#L78).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `331e9c201b5fbff1b5065d223d6d2e6a3251b3ed` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

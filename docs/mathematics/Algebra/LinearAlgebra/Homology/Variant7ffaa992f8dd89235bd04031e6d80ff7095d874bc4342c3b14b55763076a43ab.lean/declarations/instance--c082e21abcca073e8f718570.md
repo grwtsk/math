@@ -1,0 +1,114 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f936c1f07052a8f457d40e976cb9532b0097ed57e2e5837037f03453e7f2eea6",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--c082e21abcca073e8f718570",
+  "source": {
+    "blob": "1c3dd63516697f110ca432c411e4e42f4bbfc0f8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 129,
+    "line": 97,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Homology/Variant7ffaa992f8dd89235bd04031e6d80ff7095d874bc4342c3b14b55763076a43ab.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:c082e21abcca073e8f718570f339c0364dd932d6022e3ca7b13ffdb6d3962c33",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Homology/Variant7ffaa992f8dd89235bd04031e6d80ff7095d874bc4342c3b14b55763076a43ab.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f936c1f07052a8f457d40e976cb9532b0097ed57e2e5837037f03453e7f2eea6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 97–129.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance : CategoryWithHomology (TopModuleCat R) := by
+  constructor
+  intro S
+  let D₁ : S.LeftHomologyData := ⟨_, _, _, _, _, isLimitKer _, by simp, isColimitCoker _⟩
+  let D₂ : S.RightHomologyData := ⟨_, _, _, _, by simp, isColimitCoker _, _, isLimitKer _⟩
+  let F := ShortComplex.leftRightHomologyComparison' D₁ D₂
+  suffices IsIso F from ⟨⟨.ofIsIsoLeftRightHomologyComparison' D₁ D₂⟩⟩
+  have hF : Function.Bijective F := by
+    show Function.Bijective ((forget₂ _ (ModuleCat R)).map F)
+    rw [← ConcreteCategory.isIso_iff_bijective, ShortComplex.map_leftRightHomologyComparison']
+    infer_instance
+  have hF' : Topology.IsEmbedding F := by
+    refine .of_comp F.1.2 D₂.ι.1.2 ?_
+    -- `isEmbedding_of_isOpenQuotientMap_of_isInducing` is the key lemma that shows the two
+    -- definitions of homology give the same topology.
+    refine isEmbedding_of_isOpenQuotientMap_of_isInducing
+      D₁.i (F ≫ D₂.ι) D₁.π D₂.p ?_ .subtypeVal
+      (Submodule.isOpenQuotientMap_mkQ _).isQuotientMap
+      (Submodule.isOpenQuotientMap_mkQ _)
+      (Subtype.val_injective.comp hF.1) ?_
+    · rw [← ContinuousLinearMap.coe_comp', ← ContinuousLinearMap.coe_comp',
+        ← hom_comp, ← hom_comp, ShortComplex.π_leftRightHomologyComparison'_ι]
+    · suffices ∀ x y, S.g y = 0 → D₂.p y = D₂.p x → S.g x = 0 by
+        simpa [Set.subset_def, D₁, kerι_apply S.g] using this
+      intro x y hy e
+      obtain ⟨z, hz⟩ := (Submodule.Quotient.eq _).mp e
+      obtain rfl := eq_sub_iff_add_eq.mp hz
+      simpa [show S.g (S.f z) = 0 from ConcreteCategory.congr_hom S.zero z] using hy
+  rw [← isIso_iff_of_reflects_iso _ (forget₂ (TopModuleCat R) TopCat),
+    TopCat.isIso_iff_isHomeomorph, isHomeomorph_iff_isEmbedding_surjective]
+  exact ⟨hF', hF.2⟩
+
+end TopModuleCat
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Homology/Variant7ffaa992f8dd89235bd04031e6d80ff7095d874bc4342c3b14b55763076a43ab.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Homology/Variant7ffaa992f8dd89235bd04031e6d80ff7095d874bc4342c3b14b55763076a43ab.lean#L97).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1c3dd63516697f110ca432c411e4e42f4bbfc0f8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

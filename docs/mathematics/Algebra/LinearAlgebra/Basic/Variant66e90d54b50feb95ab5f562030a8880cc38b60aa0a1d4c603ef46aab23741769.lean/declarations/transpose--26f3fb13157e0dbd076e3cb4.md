@@ -1,0 +1,111 @@
+# transpose
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:36ff3796-8e4b-0280-dd44-d2e915f83531",
+  "kind": "lemma",
+  "lexical_name": "transpose",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "transpose--26f3fb13157e0dbd076e3cb4",
+  "source": {
+    "blob": "8f5baec033bd6085ce14502a05445fbedc803f54",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 525,
+    "line": 496,
+    "path": "GRWTSK/Algebra/LinearAlgebra/Basic/Variant66e90d54b50feb95ab5f562030a8880cc38b60aa0a1d4c603ef46aab23741769.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:26f3fb13157e0dbd076e3cb473635960e4bb4b42d9b4b6c25bada18ac1c95316",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/Basic/Variant66e90d54b50feb95ab5f562030a8880cc38b60aa0a1d4c603ef46aab23741769.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:36ff3796-8e4b-0280-dd44-d2e915f83531`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 496–525.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+protected lemma transpose :
+    Mᵀ.IsFiniteCartan := by
+  obtain ⟨d, hd_pos, hdM⟩ := hM.exists_posDef
+  set d' : ι → ℤ := fun i ↦ ∏ j ∈ Finset.univ.erase i, d j with hd'
+  have hd'_pos (i : ι) : 0 < d' i := Finset.prod_pos fun j _ ↦ hd_pos j
+  suffices (diagonal d' * Mᵀ).PosDef from
+    { diag i := by simpa using hM.diag i
+      offDiag_nonpos i j hij := by simpa using hM.offDiag_nonpos j i hij.symm
+      zero_comm i j := by simpa using hM.zero_comm j i
+      exists_posDef := ⟨d', hd'_pos, this⟩ }
+  set C : ℤ := ∏ j, d j with hC
+  have hCd (i : ι) : d i * d' i = C := Finset.mul_prod_erase _ _ (Finset.mem_univ i)
+  have hsymm (i j : ι) : d' i * M j i = d' j * M i j := by
+    apply mul_left_cancel₀ (a := d i * d j) (by simp [(hd_pos _).ne'])
+    have aux : d i * M i j = d j * M j i := by simpa using hdM.isHermitian.apply j i
+    linear_combination (d j * M j i) * hCd i - (d i * M i j) * hCd j - C * aux
+  suffices ∀ v : ι → ℤ, v ≠ 0 → 0 < star v ⬝ᵥ (diagonal d' * Mᵀ) *ᵥ v from
+    posDef_iff_dotProduct_mulVec.mpr ⟨by ext i j; simpa using (hsymm i j).symm, this⟩
+  intro v hv
+  have key : (d' * v) ⬝ᵥ (diagonal d * M) *ᵥ (d' * v) = C * (v ⬝ᵥ (diagonal d' * Mᵀ) *ᵥ v) := by
+    simp only [dotProduct, mulVec, diagonal_mul, transpose_apply, Finset.mul_sum, Pi.mul_apply]
+    refine Finset.sum_congr rfl fun i _ ↦ Finset.sum_congr rfl fun j _ ↦ ?_
+    linear_combination (M i j * d' j * v i * v j) * hCd i - (C * v i * v j) * hsymm i j
+  have hpos := hdM.dotProduct_mulVec_pos (x := d' * v) <|
+    fun h ↦ hv (funext fun i ↦ by simpa [(hd'_pos i).ne'] using congr_fun h i)
+  rw [star_trivial, key] at hpos
+  have hCpos : 0 < C := Finset.prod_pos fun j _ ↦ hd_pos j
+  rwa [star_trivial, ← mul_pos_iff_of_pos_left hCpos]
+
+omit hM in
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/Basic/Variant66e90d54b50feb95ab5f562030a8880cc38b60aa0a1d4c603ef46aab23741769.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/Basic/Variant66e90d54b50feb95ab5f562030a8880cc38b60aa0a1d4c603ef46aab23741769.lean#L496).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8f5baec033bd6085ce14502a05445fbedc803f54` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

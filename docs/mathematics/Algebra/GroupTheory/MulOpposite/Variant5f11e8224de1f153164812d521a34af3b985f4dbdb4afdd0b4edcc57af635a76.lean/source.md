@@ -1,0 +1,129 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.MulOpposite.Variant5f11e8224de1f153164812d521a34af3b985f4dbdb4afdd0b4edcc57af635a76
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c6435909124f63d14940891ba20b0a82f7975d74` · SHA-256 `d48a879b3c77c85773d8607098a64108da1ae849ceea0d6c722647b8875cf6ff`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.Op.Variant30c9317123187003f229753940974bed4960707ceb221d0ae77957c02eca5af0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"30c9317123187003f229753940974bed4960707ceb221d0ae77957c02eca5af0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.Op.Variant30c9317123187003f229753940974bed4960707ceb221d0ae77957c02eca5af0","mathematical_subject":"Algebra.Groups","original_sha256":"30c9317123187003f229753940974bed4960707ceb221d0ae77957c02eca5af0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Group/Subgroup/MulOpposite.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2022 Alex Kontorovich. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Alex Kontorovich, Eric Wieser
+-/
+import Mathlib.Algebra.Group.Subgroup.Defs
+import Mathlib.Algebra.Group.Submonoid.MulOpposite
+
+/-!
+# Mul-opposite subgroups
+
+## Tags
+subgroup, subgroups
+
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.Op.Variant30c9317123187003f229753940974bed4960707ceb221d0ae77957c02eca5af0
+
+variable {ι : Sort*} {G : Type*} [Group G]
+
+namespace Subgroup
+
+/-- Pull a subgroup back to an opposite subgroup along `MulOpposite.unop` -/
+@[to_additive (attr := simps)
+"Pull an additive subgroup back to an opposite additive subgroup along `AddOpposite.unop`"]
+protected def op (H : Subgroup G) : Subgroup Gᵐᵒᵖ where
+  carrier := MulOpposite.unop ⁻¹' (H : Set G)
+  one_mem' := H.one_mem
+  mul_mem' ha hb := H.mul_mem hb ha
+  inv_mem' := H.inv_mem
+
+@[to_additive (attr := simp)]
+theorem mem_op {x : Gᵐᵒᵖ} {S : Subgroup G} : x ∈ S.op ↔ x.unop ∈ S := Iff.rfl
+
+@[to_additive (attr := simp)] lemma op_toSubmonoid (H : Subgroup G) :
+    H.op.toSubmonoid = H.toSubmonoid.op :=
+  rfl
+
+/-- Pull an opposite subgroup back to a subgroup along `MulOpposite.op` -/
+@[to_additive (attr := simps)
+"Pull an opposite additive subgroup back to an additive subgroup along `AddOpposite.op`"]
+protected def unop (H : Subgroup Gᵐᵒᵖ) : Subgroup G where
+  carrier := MulOpposite.op ⁻¹' (H : Set Gᵐᵒᵖ)
+  one_mem' := H.one_mem
+  mul_mem' := fun ha hb => H.mul_mem hb ha
+  inv_mem' := H.inv_mem
+
+@[to_additive (attr := simp)]
+theorem mem_unop {x : G} {S : Subgroup Gᵐᵒᵖ} : x ∈ S.unop ↔ MulOpposite.op x ∈ S := Iff.rfl
+
+@[to_additive (attr := simp)] lemma unop_toSubmonoid (H : Subgroup Gᵐᵒᵖ) :
+    H.unop.toSubmonoid = H.toSubmonoid.unop :=
+  rfl
+
+@[to_additive (attr := simp)]
+theorem unop_op (S : Subgroup G) : S.op.unop = S := rfl
+
+@[to_additive (attr := simp)]
+theorem op_unop (S : Subgroup Gᵐᵒᵖ) : S.unop.op = S := rfl
+
+/-! ### Lattice results -/
+
+@[to_additive]
+theorem op_le_iff {S₁ : Subgroup G} {S₂ : Subgroup Gᵐᵒᵖ} : S₁.op ≤ S₂ ↔ S₁ ≤ S₂.unop :=
+  MulOpposite.op_surjective.forall
+
+@[to_additive]
+theorem le_op_iff {S₁ : Subgroup Gᵐᵒᵖ} {S₂ : Subgroup G} : S₁ ≤ S₂.op ↔ S₁.unop ≤ S₂ :=
+  MulOpposite.op_surjective.forall
+
+@[to_additive (attr := simp)]
+theorem op_le_op_iff {S₁ S₂ : Subgroup G} : S₁.op ≤ S₂.op ↔ S₁ ≤ S₂ :=
+  MulOpposite.op_surjective.forall
+
+@[to_additive (attr := simp)]
+theorem unop_le_unop_iff {S₁ S₂ : Subgroup Gᵐᵒᵖ} : S₁.unop ≤ S₂.unop ↔ S₁ ≤ S₂ :=
+  MulOpposite.unop_surjective.forall
+
+/-- A subgroup `H` of `G` determines a subgroup `H.op` of the opposite group `Gᵐᵒᵖ`. -/
+@[to_additive (attr := simps) "An additive subgroup `H` of `G` determines an additive subgroup
+`H.op` of the opposite additive group `Gᵃᵒᵖ`."]
+def opEquiv : Subgroup G ≃o Subgroup Gᵐᵒᵖ where
+  toFun := Subgroup.op
+  invFun := Subgroup.unop
+  left_inv := unop_op
+  right_inv := op_unop
+  map_rel_iff' := op_le_op_iff
+
+@[to_additive]
+theorem op_injective : (@Subgroup.op G _).Injective := opEquiv.injective
+
+@[to_additive]
+theorem unop_injective : (@Subgroup.unop G _).Injective := opEquiv.symm.injective
+
+@[to_additive (attr := simp)]
+theorem op_inj {S T : Subgroup G} : S.op = T.op ↔ S = T := opEquiv.eq_iff_eq
+
+@[to_additive (attr := simp)]
+theorem unop_inj {S T : Subgroup Gᵐᵒᵖ} : S.unop = T.unop ↔ S = T := opEquiv.symm.eq_iff_eq
+
+/-- Bijection between a subgroup `H` and its opposite. -/
+@[to_additive (attr := simps!) "Bijection between an additive subgroup `H` and its opposite."]
+def equivOp (H : Subgroup G) : H ≃ H.op :=
+  MulOpposite.opEquiv.subtypeEquiv fun _ => Iff.rfl
+
+@[to_additive]
+theorem op_normalizer (H : Subgroup G) : H.normalizer.op = H.op.normalizer := by
+  ext x
+  simp [mem_normalizer_iff', MulOpposite.op_surjective.forall, iff_comm]
+
+@[to_additive]
+theorem unop_normalizer (H : Subgroup Gᵐᵒᵖ) : H.normalizer.unop = H.unop.normalizer := by
+  rw [← op_inj, op_unop, op_normalizer, op_unop]
+
+end Subgroup
+```

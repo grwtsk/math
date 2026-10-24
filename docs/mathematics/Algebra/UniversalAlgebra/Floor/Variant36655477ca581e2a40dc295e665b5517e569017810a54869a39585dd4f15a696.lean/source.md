@@ -1,0 +1,68 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.Floor.Variant36655477ca581e2a40dc295e665b5517e569017810a54869a39585dd4f15a696
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `177828e20a255ad2bb73152266e19c75f0fdf518` · SHA-256 `cda94c9cb9ef2c35faca58938255825535ec7a4c8ac08b27bf2c48ced5c7e2ba`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.UniversalAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.UniversalAlgebra.NatFloorCoe.Variantadd5fa731ca91cf90ba2c90b117cfd2388d645f924aec487f69e4036d76a803e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"add5fa731ca91cf90ba2c90b117cfd2388d645f924aec487f69e4036d76a803e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.GeneralAlgebra.SourceCorpus.NatFloorCoe.Variantadd5fa731ca91cf90ba2c90b117cfd2388d645f924aec487f69e4036d76a803e","mathematical_subject":"Algebra.GeneralAlgebra","original_sha256":"add5fa731ca91cf90ba2c90b117cfd2388d645f924aec487f69e4036d76a803e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Order/Nonneg/Floor.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Floris van Doorn. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Floris van Doorn
+-/
+module
+
+public import Mathlib.Algebra.Order.Floor.Defs
+public import Mathlib.Algebra.Order.Nonneg.Basic
+
+/-!
+# Nonnegative elements are archimedean
+
+This file defines instances and prove some properties about the nonnegative elements
+`Nonneg α` of an arbitrary type `α`.
+
+This is used to derive algebraic structures on `ℝ≥0` and `ℚ≥0` automatically.
+
+## Main declarations
+
+* `Nonneg α` is a `FloorSemiring` if `α` is.
+-/
+
+
+namespace GRWTSK.Algebra.UniversalAlgebra.NatFloorCoe.Variantadd5fa731ca91cf90ba2c90b117cfd2388d645f924aec487f69e4036d76a803e
+
+public section
+
+assert_not_exists Finset Field
+
+namespace Nonneg
+
+variable {α : Type*}
+
+instance floorSemiring [Semiring α] [PartialOrder α] [IsOrderedRing α] [FloorSemiring α] :
+    FloorSemiring (Nonneg α) where
+  floor a := ⌊(a : α)⌋₊
+  ceil a := ⌈(a : α)⌉₊
+  floor_of_neg ha := FloorSemiring.floor_of_neg ha
+  gc_floor ha := FloorSemiring.gc_floor (Subtype.coe_le_coe.2 ha)
+  gc_ceil a n := FloorSemiring.gc_ceil (a : α) n
+
+@[norm_cast]
+theorem nat_floor_coe [Semiring α] [PartialOrder α] [IsOrderedRing α] [FloorSemiring α]
+    (a : Nonneg α) :
+    ⌊(a : α)⌋₊ = ⌊a⌋₊ :=
+  rfl
+
+@[norm_cast]
+theorem nat_ceil_coe [Semiring α] [PartialOrder α] [IsOrderedRing α] [FloorSemiring α]
+    (a : Nonneg α) :
+    ⌈(a : α)⌉₊ = ⌈a⌉₊ :=
+  rfl
+
+end Nonneg
+```

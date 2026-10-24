@@ -1,0 +1,67 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.BasicGroupTheory.GroupActions.ExactPeriod.Variant8e32ea61cc4bb98b.PeriodAndFaithfulness
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `68ffb70d14a3ae5c757367fc43f381c5fb4862cd` · SHA-256 `326623957fbd9c3b81a94d53e1bae168d5398c37256ad5bf7999cd7c64dfd5dc`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Exact positive minimal periods and faithful action predicates
+Attribution: ATTRIBUTION_CLARIFICATION_NEEDED
+Issue: https://github.com/grwtsk/math/issues/254
+Provisional mathematical ideas and direction: grwtsk contributors.
+Provisional composite search, probabilistic symbolic recombination and linearized diffusive computation: OpenAI/Codex.
+Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”
+These are owner-supplied provisional roles; exact contributions and source lineage need clarification.
+Original SHA-256: 8e32ea61cc4bb98b447a301c5ad35148d771ade195d0a1058dae52eb5611412b
+Organized SHA-256: 03a4a0619b358fad07698d233644f4e0c3257025e1f4068bab3f4e297994ad3b
+PMD: 510.1.030.010.050 group actions (editorial navigation only).
+Statements, hypotheses and proof bodies are exact source copies. Original whole-file documentation is retained below and may describe other components.
+Only containing namespaces and explicit component imports are changed. Distinct historical representations stay distinct.
+Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provider, or new theorem priority claim.
+-/
+
+/- Both complete predicates retain Field K, E/G/alpha/A/P/n. HasExactPeriod is positive global period plus absence of smaller positive periods; ActionFaithful is injectivity of the point-to-equivalence map. No faithfulness or point order is constructed. -/
+
+import Folder.Monodromy.TorsionPeriodicity
+
+/-!
+# Folder.Research.ExactPeriod
+
+Radiation role: research-contract
+BinaryMatrix spine: This module marks research-boundary contracts and theorem targets around the BinaryMatrix radiation program.
+Ontology: research.boundary.exact_period
+Pivot role: none
+Zero typology: none
+Contract boundary: contract
+Composite stack role: infrastructure
+-/
+
+
+open Folder
+
+namespace GRWTSK.Algebra.GroupTheory.BasicGroupTheory.GroupActions.ExactPeriod.Variant8e32ea61cc4bb98b
+
+def HasExactPeriod
+    {K : Type _} [Field K]
+    {E : Arithmetic.ShortWeierstrass K}
+    {G : Arithmetic.ECGroupLaw E}
+    {α : Type _}
+    (A : Monodromy.TorsionAction G α)
+    (P : Arithmetic.ECPoint E)
+    (n : Nat) : Prop :=
+  0 < n ∧
+  Monodromy.TorsionAction.HasPeriodDividing A P n ∧
+  ∀ m, 0 < m → m < n →
+    ¬ Monodromy.TorsionAction.HasPeriodDividing A P m
+
+def ActionFaithful
+    {K : Type _} [Field K]
+    {E : Arithmetic.ShortWeierstrass K}
+    {G : Arithmetic.ECGroupLaw E}
+    {α : Type _}
+    (A : Monodromy.TorsionAction G α) : Prop :=
+  ∀ P Q, A.act P = A.act Q → P = Q
+
+end GRWTSK.Algebra.GroupTheory.BasicGroupTheory.GroupActions.ExactPeriod.Variant8e32ea61cc4bb98b
+```

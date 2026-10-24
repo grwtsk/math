@@ -1,0 +1,113 @@
+# Complete source: GRWTSK.Algebra.WedderburnArtin.Variant69abc8fddfa88f32b1d8c4f02b8ac4ce65aaaa178e8f450a3e1b086ee22bfa1a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0243a75c05e43368fab2f075932bc76f4afb9942` · SHA-256 `3290d55b3b5d66eff7a519c8167d2c3195d1150d2cc0835a9c0f69aa45fb0975`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.IsSimpleRingTfae.Varianta12c181452414d561209b96d7bb718567da05bbfadc6164a3a6083bc75d51324","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a12c181452414d561209b96d7bb718567da05bbfadc6164a3a6083bc75d51324","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.IsSimpleRingTfae.Varianta12c181452414d561209b96d7bb718567da05bbfadc6164a3a6083bc75d51324","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"a12c181452414d561209b96d7bb718567da05bbfadc6164a3a6083bc75d51324","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/RingTheory/SimpleModule/WedderburnArtin.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Junyan Xu. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Junyan Xu
+-/
+import Mathlib.RingTheory.FiniteLength
+import Mathlib.RingTheory.SimpleModule.Isotypic
+import Mathlib.RingTheory.SimpleRing.Congr
+
+/-!
+# Wedderburn-Artin Theorem
+-/
+
+
+namespace GRWTSK.Algebra.IsSimpleRingTfae.Varianta12c181452414d561209b96d7bb718567da05bbfadc6164a3a6083bc75d51324
+
+universe u
+variable (R₀ : Type*) {R : Type u} [CommSemiring R₀] [Ring R] [Algebra R₀ R]
+
+/-- A simple ring is semisimple iff it is artinian, iff it has a minimal left ideal. -/
+theorem IsSimpleRing.tfae [IsSimpleRing R] : List.TFAE
+    [IsSemisimpleRing R, IsArtinianRing R, ∃ I : Ideal R, IsAtom I] := by
+  tfae_have 1 → 2 := fun _ ↦ inferInstance
+  tfae_have 2 → 3 := fun _ ↦ IsAtomic.exists_atom _
+  tfae_have 3 → 1 := fun ⟨I, hI⟩ ↦ by
+    have ⟨_, h⟩ := isSimpleRing_iff_isTwoSided_imp.mp ‹IsSimpleRing R›
+    simp_rw [← isFullyInvariant_iff_isTwoSided] at h
+    have := isSimpleModule_iff_isAtom.mpr hI
+    obtain eq | eq := h _ (isFullyInvariant_isotypicComponent R R I)
+    · exact (hI.bot_lt.not_le <| (le_sSup <| by exact ⟨.refl ..⟩).trans_eq eq).elim
+    exact .congr (.symm <| .trans (.ofEq _ _ eq) Submodule.topEquiv)
+  tfae_finish
+
+theorem IsSimpleRing.isSemisimpleRing_iff_isArtinianRing [IsSimpleRing R] :
+    IsSemisimpleRing R ↔ IsArtinianRing R := tfae.out 0 1
+
+theorem isSimpleRing_isArtinianRing_iff :
+    IsSimpleRing R ∧ IsArtinianRing R ↔ IsSemisimpleRing R ∧ IsIsotypic R R ∧ Nontrivial R := by
+  refine ⟨fun ⟨_, _⟩ ↦ ?_, fun ⟨_, _, _⟩ ↦ ?_⟩
+  on_goal 1 => have := IsSimpleRing.isSemisimpleRing_iff_isArtinianRing.mpr ‹_›
+  all_goals simp_rw [isIsotypic_iff_isFullyInvariant_imp_bot_or_top,
+      isFullyInvariant_iff_isTwoSided, isSimpleRing_iff_isTwoSided_imp] at *
+  · exact ⟨this, by rwa [and_comm]⟩
+  · exact ⟨⟨‹_›, ‹_›⟩, inferInstance⟩
+
+namespace IsSimpleRing
+
+variable (R) [IsSimpleRing R] [IsArtinianRing R]
+
+theorem isIsotypic : IsIsotypic R R :=
+  (isSimpleRing_isArtinianRing_iff.mp ⟨‹_›, ‹_›⟩).2.1
+
+instance (priority := low) : IsSemisimpleRing R :=
+  (isSimpleRing_isArtinianRing_iff.mp ⟨‹_›, ‹_›⟩).1
+
+/-- The Wedderburn–Artin Theorem: an Artinian simple ring is isomorphic to a matrix
+ring over the opposite of the endomorphism ring of its simple module. -/
+theorem exists_ringEquiv_matrix_end_mulOpposite :
+    ∃ (n : ℕ) (_ : NeZero n) (I : Ideal R) (_ : IsSimpleModule R I),
+      Nonempty (R ≃+* Matrix (Fin n) (Fin n) (Module.End R I)ᵐᵒᵖ) := by
+  have ⟨n, hn, S, hS, ⟨e⟩⟩ := (isIsotypic R).linearEquiv_fun
+  refine ⟨n, hn, S, hS, ⟨.trans (.opOp R) <| .trans (.op ?_) (.symm .mopMatrix)⟩⟩
+  exact .trans (.moduleEndSelf R) <| .trans e.conjRingEquiv (endVecRingEquivMatrixEnd ..)
+
+/-- The Wedderburn–Artin Theorem: an Artinian simple ring is isomorphic to a matrix
+ring over a division ring. -/
+theorem exists_ringEquiv_matrix_divisionRing :
+    ∃ (n : ℕ) (_ : NeZero n) (D : Type u) (_ : DivisionRing D),
+      Nonempty (R ≃+* Matrix (Fin n) (Fin n) D) := by
+  have ⟨n, hn, I, _, ⟨e⟩⟩ := exists_ringEquiv_matrix_end_mulOpposite R
+  classical exact ⟨n, hn, _, _, ⟨e⟩⟩
+
+/-- The Wedderburn–Artin Theorem, algebra form: an Artinian simple algebra is isomorphic
+to a matrix algebra over the opposite of the endomorphism algebra of its simple module. -/
+theorem exists_algEquiv_matrix_end_mulOpposite :
+    ∃ (n : ℕ) (_ : NeZero n) (I : Ideal R) (_ : IsSimpleModule R I),
+      Nonempty (R ≃ₐ[R₀] Matrix (Fin n) (Fin n) (Module.End R I)ᵐᵒᵖ) := by
+  have ⟨n, hn, S, hS, ⟨e⟩⟩ := (isIsotypic R).linearEquiv_fun
+  refine ⟨n, hn, S, hS, ⟨.trans (.opOp R₀ R) <| .trans (.op ?_) (.symm .mopMatrix)⟩⟩
+  exact .trans (.moduleEndSelf R₀) <| .trans (e.algConj R₀) (endVecAlgEquivMatrixEnd ..)
+
+/-- The Wedderburn–Artin Theorem, algebra form: an Artinian simple algebra is isomorphic
+to a matrix algebra over a division algebra. -/
+theorem exists_algEquiv_matrix_divisionRing :
+    ∃ (n : ℕ) (_ : NeZero n) (D : Type u) (_ : DivisionRing D) (_ : Algebra R₀ D),
+      Nonempty (R ≃ₐ[R₀] Matrix (Fin n) (Fin n) D) := by
+  have ⟨n, hn, I, _, ⟨e⟩⟩ := exists_algEquiv_matrix_end_mulOpposite R₀ R
+  classical exact ⟨n, hn, _, _, _, ⟨e⟩⟩
+
+/-- The Wedderburn–Artin Theorem, algebra form, finite case: a finite Artinian simple algebra is
+isomorphic to a matrix algebra over a finite division algebra. -/
+theorem exists_algEquiv_matrix_divisionRing_finite [Module.Finite R₀ R] :
+    ∃ (n : ℕ) (_ : NeZero n) (D : Type u) (_ : DivisionRing D) (_ : Algebra R₀ D)
+      (_ : Module.Finite R₀ D), Nonempty (R ≃ₐ[R₀] Matrix (Fin n) (Fin n) D) := by
+  have ⟨n, hn, I, _, ⟨e⟩⟩ := exists_algEquiv_matrix_end_mulOpposite R₀ R
+  have := Module.Finite.equiv e.toLinearEquiv
+  classical exact ⟨n, hn, _, _, _, .of_surjective (Matrix.entryLinearMap R₀
+    (Module.End R I)ᵐᵒᵖ (0 : Fin n) (0 : Fin n)) fun f ↦ ⟨fun _ _ ↦ f, rfl⟩, ⟨e⟩⟩
+
+end IsSimpleRing
+```

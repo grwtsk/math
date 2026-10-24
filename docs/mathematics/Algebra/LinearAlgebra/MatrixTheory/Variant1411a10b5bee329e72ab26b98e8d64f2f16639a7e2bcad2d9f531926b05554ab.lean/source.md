@@ -1,0 +1,111 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Matrix.Variant1411a10b5bee329e72ab26b98e8d64f2f16639a7e2bcad2d9f531926b05554ab
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b1549dac33cb29e2df7470a5171b6a8818499519` · SHA-256 `384b3327af01cfa5a210a2be29055345bf5aaf63e1b792a6b5fdf0886c3baebe`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.LieEquivMatrixPrime.Variant181997394e3da296978c0f5eb44359e69b8ef0c5aa72b08ad88d7e98100b5274","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"181997394e3da296978c0f5eb44359e69b8ef0c5aa72b08ad88d7e98100b5274","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.LieEquivMatrixPrime.Variant181997394e3da296978c0f5eb44359e69b8ef0c5aa72b08ad88d7e98100b5274","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"181997394e3da296978c0f5eb44359e69b8ef0c5aa72b08ad88d7e98100b5274","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Lie/Matrix.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Oliver Nash. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Oliver Nash
+-/
+import Mathlib.Algebra.Lie.OfAssociative
+import Mathlib.LinearAlgebra.Matrix.Reindex
+import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
+
+/-!
+# Lie algebras of matrices
+
+An important class of Lie algebras are those arising from the associative algebra structure on
+square matrices over a commutative ring. This file provides some very basic definitions whose
+primary value stems from their utility when constructing the classical Lie algebras using matrices.
+
+## Main definitions
+
+  * `lieEquivMatrix'`
+  * `Matrix.lieConj`
+  * `Matrix.reindexLieEquiv`
+
+## Tags
+
+lie algebra, matrix
+-/
+
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.LieEquivMatrixPrime.Variant181997394e3da296978c0f5eb44359e69b8ef0c5aa72b08ad88d7e98100b5274
+
+universe u v w w₁ w₂
+
+section Matrices
+
+open scoped Matrix
+
+variable {R : Type u} [CommRing R]
+variable {n : Type w} [DecidableEq n] [Fintype n]
+
+/-- The natural equivalence between linear endomorphisms of finite free modules and square matrices
+is compatible with the Lie algebra structures. -/
+def lieEquivMatrix' : Module.End R (n → R) ≃ₗ⁅R⁆ Matrix n n R :=
+  { LinearMap.toMatrix' with
+    map_lie' := fun {T S} => by
+      let f := @LinearMap.toMatrix' R _ n n _ _
+      change f (T.comp S - S.comp T) = f T * f S - f S * f T
+      have h : ∀ T S : Module.End R _, f (T.comp S) = f T * f S := LinearMap.toMatrix'_comp
+      rw [map_sub, h, h] }
+
+@[simp]
+theorem lieEquivMatrix'_apply (f : Module.End R (n → R)) :
+    lieEquivMatrix' f = LinearMap.toMatrix' f :=
+  rfl
+
+@[simp]
+theorem lieEquivMatrix'_symm_apply (A : Matrix n n R) :
+    (@lieEquivMatrix' R _ n _ _).symm A = Matrix.toLin' A :=
+  rfl
+
+/-- An invertible matrix induces a Lie algebra equivalence from the space of matrices to itself. -/
+def Matrix.lieConj (P : Matrix n n R) (h : Invertible P) : Matrix n n R ≃ₗ⁅R⁆ Matrix n n R :=
+  ((@lieEquivMatrix' R _ n _ _).symm.trans (P.toLinearEquiv' h).lieConj).trans lieEquivMatrix'
+
+@[simp]
+theorem Matrix.lieConj_apply (P A : Matrix n n R) (h : Invertible P) :
+    P.lieConj h A = P * A * P⁻¹ := by
+  simp [LinearEquiv.conj_apply, Matrix.lieConj, LinearMap.toMatrix'_comp,
+    LinearMap.toMatrix'_toLin']
+
+@[simp]
+theorem Matrix.lieConj_symm_apply (P A : Matrix n n R) (h : Invertible P) :
+    (P.lieConj h).symm A = P⁻¹ * A * P := by
+  simp [LinearEquiv.symm_conj_apply, Matrix.lieConj, LinearMap.toMatrix'_comp,
+    LinearMap.toMatrix'_toLin']
+
+variable {m : Type w₁} [DecidableEq m] [Fintype m] (e : n ≃ m)
+
+/-- For square matrices, the natural map that reindexes a matrix's rows and columns with equivalent
+types, `Matrix.reindex`, is an equivalence of Lie algebras. -/
+def Matrix.reindexLieEquiv : Matrix n n R ≃ₗ⁅R⁆ Matrix m m R :=
+  { Matrix.reindexLinearEquiv R R e e with
+    toFun := Matrix.reindex e e
+    map_lie' := fun {_ _} => by
+      simp only [LieRing.of_associative_ring_bracket, Matrix.reindex_apply,
+        Matrix.submatrix_mul_equiv, Matrix.submatrix_sub, Pi.sub_apply] }
+
+@[simp]
+theorem Matrix.reindexLieEquiv_apply (M : Matrix n n R) :
+    Matrix.reindexLieEquiv e M = Matrix.reindex e e M :=
+  rfl
+
+@[simp]
+theorem Matrix.reindexLieEquiv_symm :
+    (Matrix.reindexLieEquiv e : _ ≃ₗ⁅R⁆ _).symm = Matrix.reindexLieEquiv e.symm :=
+  rfl
+
+end Matrices
+```

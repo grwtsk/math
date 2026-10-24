@@ -1,0 +1,145 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.FiniteLength.Varianta99e4edafe29d671482d503474651db67edb6354d7ea98c6deb92f955ba652df
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `328ec798e02d575791b0b94e87c569fec3da9810` · SHA-256 `0f502c17205cdab733ccbf6ca27c27eadb15a05a674d462f35d767086e28ed20`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.IsFiniteLength.Variant34984779edb6dd5cbf59117e1e0f39542e8a47e415f0201b311d5a996161d6dd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"34984779edb6dd5cbf59117e1e0f39542e8a47e415f0201b311d5a996161d6dd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.IsFiniteLength.Variant34984779edb6dd5cbf59117e1e0f39542e8a47e415f0201b311d5a996161d6dd","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"34984779edb6dd5cbf59117e1e0f39542e8a47e415f0201b311d5a996161d6dd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/RingTheory/FiniteLength.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Junyan Xu. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Junyan Xu
+-/
+module
+
+public import Mathlib.RingTheory.Artinian.Module
+
+/-!
+# Modules of finite length
+
+We define modules of finite length (`IsFiniteLength`) to be finite iterated extensions of
+simple modules, and show that a module is of finite length iff it is both Noetherian and Artinian,
+iff it admits a composition series.
+
+We do not make `IsFiniteLength` a class, instead we use `[IsNoetherian R M] [IsArtinian R M]`.
+
+## Tags
+
+Finite length, Composition series
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.IsFiniteLength.Variant34984779edb6dd5cbf59117e1e0f39542e8a47e415f0201b311d5a996161d6dd
+
+public section
+
+variable (R : Type*) [Ring R]
+
+/-- A module of finite length is either trivial or a simple extension of a module known
+to be of finite length. -/
+inductive IsFiniteLength : ∀ (M : Type*) [AddCommGroup M] [Module R M], Prop
+  | of_subsingleton {M} [AddCommGroup M] [Module R M] [Subsingleton M] : IsFiniteLength M
+  | of_simple_quotient {M} [AddCommGroup M] [Module R M] {N : Submodule R M}
+      [IsSimpleModule R (M ⧸ N)] : IsFiniteLength N → IsFiniteLength M
+
+attribute [nontriviality] IsFiniteLength.of_subsingleton
+
+variable {R} {M N : Type*} [AddCommGroup M] [Module R M] [AddCommGroup N] [Module R N]
+
+theorem LinearEquiv.isFiniteLength (e : M ≃ₗ[R] N)
+    (h : IsFiniteLength R M) : IsFiniteLength R N := by
+  induction h generalizing N with
+  | of_subsingleton =>
+    have := e.symm.toEquiv.subsingleton; exact .of_subsingleton
+  | @of_simple_quotient M _ _ S _ _ ih =>
+    have : IsSimpleModule R (N ⧸ Submodule.map (e : M →ₗ[R] N) S) :=
+      IsSimpleModule.congr (Submodule.Quotient.equiv S _ e rfl).symm
+    exact .of_simple_quotient (ih <| e.submoduleMap S)
+
+variable (R M) in
+theorem exists_compositionSeries_of_isNoetherian_isArtinian [IsNoetherian R M] [IsArtinian R M] :
+    ∃ s : CompositionSeries (Submodule R M), s.head = ⊥ ∧ s.last = ⊤ := by
+  obtain ⟨f, f0, n, hn⟩ := exists_covBy_seq_of_wellFoundedLT_wellFoundedGT (Submodule R M)
+  exact ⟨⟨n, fun i ↦ f i, fun i ↦ hn.2 i i.2⟩, f0.eq_bot, hn.1.eq_top⟩
+
+theorem isFiniteLength_of_exists_compositionSeries
+    (h : ∃ s : CompositionSeries (Submodule R M), s.head = ⊥ ∧ s.last = ⊤) :
+    IsFiniteLength R M :=
+  Submodule.topEquiv.isFiniteLength <| by
+    obtain ⟨s, s_head, s_last⟩ := h
+    rw [← s_last]
+    suffices ∀ i, IsFiniteLength R (s i) from this (Fin.last _)
+    intro i
+    induction i using Fin.induction with
+    | zero => change IsFiniteLength R s.head; rw [s_head]; exact .of_subsingleton
+    | succ i ih =>
+      let cov := s.step i
+      have := (covBy_iff_quot_is_simple cov.le).mp cov
+      have := ((s i.castSucc).comap (s i.succ).subtype).equivMapOfInjective
+        _ (Submodule.injective_subtype _)
+      rw [Submodule.map_comap_subtype, inf_of_le_right cov.le] at this
+      exact .of_simple_quotient (this.symm.isFiniteLength ih)
+
+theorem isFiniteLength_iff_isNoetherian_isArtinian :
+    IsFiniteLength R M ↔ IsNoetherian R M ∧ IsArtinian R M :=
+  open scoped IsSimpleOrder in
+  ⟨fun h ↦ h.rec (fun {M} _ _ _ ↦ ⟨inferInstance, inferInstance⟩) fun M _ _ {N} _ _ ⟨_, _⟩ ↦
+    ⟨(isNoetherian_iff_submodule_quotient N).mpr ⟨‹_›, inferInstance⟩,
+      (isArtinian_iff_submodule_quotient N).mpr ⟨‹_›, inferInstance⟩⟩,
+    fun ⟨_, _⟩ ↦ isFiniteLength_of_exists_compositionSeries
+      (exists_compositionSeries_of_isNoetherian_isArtinian R M)⟩
+
+theorem isFiniteLength_iff_exists_compositionSeries :
+    IsFiniteLength R M ↔ ∃ s : CompositionSeries (Submodule R M), s.head = ⊥ ∧ s.last = ⊤ :=
+  ⟨fun h ↦ have ⟨_, _⟩ := isFiniteLength_iff_isNoetherian_isArtinian.mp h
+    exists_compositionSeries_of_isNoetherian_isArtinian R M,
+    isFiniteLength_of_exists_compositionSeries⟩
+
+open scoped IsSimpleOrder in
+theorem IsSemisimpleModule.finite_tfae [IsSemisimpleModule R M] :
+    List.TFAE [Module.Finite R M, IsNoetherian R M, IsArtinian R M, IsFiniteLength R M,
+      ∃ s : Set (Submodule R M), s.Finite ∧ sSupIndep s ∧
+        sSup s = ⊤ ∧ ∀ m ∈ s, IsSimpleModule R m] := by
+  rw [isFiniteLength_iff_isNoetherian_isArtinian]
+  obtain ⟨s, hs⟩ := IsSemisimpleModule.exists_sSupIndep_sSup_simples_eq_top R M
+  tfae_have 1 ↔ 2 := ⟨fun _ ↦ inferInstance, fun _ ↦ inferInstance⟩
+  tfae_have 2 → 5 := fun _ ↦ ⟨s, WellFoundedGT.finite_of_sSupIndep hs.1, hs⟩
+  tfae_have 3 → 5 := fun _ ↦ ⟨s, WellFoundedLT.finite_of_sSupIndep hs.1, hs⟩
+  tfae_have 5 → 4 := fun ⟨s, fin, _, sSup_eq_top, simple⟩ ↦ by
+    rw [← isNoetherian_top_iff, ← Submodule.topEquiv.isArtinian_iff,
+      ← sSup_eq_top, sSup_eq_iSup, ← iSup_subtype'']
+    rw [SetCoe.forall'] at simple
+    have := fin.to_subtype
+    exact ⟨isNoetherian_iSup, isArtinian_iSup⟩
+  tfae_have 4 → 2 := And.left
+  tfae_have 4 → 3 := And.right
+  tfae_finish
+
+instance [IsSemisimpleModule R M] [Module.Finite R M] : IsArtinian R M :=
+  (IsSemisimpleModule.finite_tfae.out 1 3).mp ‹_›
+
+variable {f : M →ₗ[R] N}
+
+lemma IsFiniteLength.of_injective (H : IsFiniteLength R N) (hf : Function.Injective f) :
+    IsFiniteLength R M := by
+  rw [isFiniteLength_iff_isNoetherian_isArtinian] at H ⊢
+  cases H
+  exact ⟨isNoetherian_of_injective f hf, isArtinian_of_injective f hf⟩
+
+lemma IsFiniteLength.of_surjective (H : IsFiniteLength R M) (hf : Function.Surjective f) :
+    IsFiniteLength R N := by
+  rw [isFiniteLength_iff_isNoetherian_isArtinian] at H ⊢
+  cases H
+  exact ⟨isNoetherian_of_surjective f (LinearMap.range_eq_top.mpr hf),
+    isArtinian_of_surjective _ f hf⟩
+
+/- The following instances are now automatic:
+example [IsSemisimpleRing R] : IsNoetherianRing R := inferInstance
+example [IsSemisimpleRing R] : IsArtinianRing R := inferInstance
+-/
+```

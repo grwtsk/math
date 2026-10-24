@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.OntologyBridge.Variant484190ae1fc41dba73f6e784b5961cf9ce862919c9298857a4470002e23cc8e9
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9b6259de0368cca8d74da44a31662a5c68b48b16` · SHA-256 `476b8326c773fd17ed1d4aebafc302c719441e61431c3209130c57c01efe47ff`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.OntologyBridge.Variant2694bc6a6fd5960b5e58388d6de734db59dcfe0289f04e5c6e4aaaeb13818251","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2694bc6a6fd5960b5e58388d6de734db59dcfe0289f04e5c6e4aaaeb13818251","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.OntologyBridge.Variant2694bc6a6fd5960b5e58388d6de734db59dcfe0289f04e5c6e4aaaeb13818251","mathematical_subject":"Foundations.Unclassified","original_sha256":"2694bc6a6fd5960b5e58388d6de734db59dcfe0289f04e5c6e4aaaeb13818251","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/CellularArithmetic/OntologyBridge.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Folder.CellularArithmetic.BinaryMatrixEncoding
+import Folder.CellularArithmetic.CubeEncoding
+
+/-!
+# Folder.CellularArithmetic.OntologyBridge
+
+Radiation role: cellular-arithmetic
+BinaryMatrix spine: This module organizes prime-factor cellular arithmetic before data is encoded into BinaryMatrix carriers.
+Ontology: ca.ontology_bridge
+Pivot role: arithmetic
+Zero typology: none
+Contract boundary: definition
+Composite stack role: arithmetic
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.OntologyBridge.Variant2694bc6a6fd5960b5e58388d6de734db59dcfe0289f04e5c6e4aaaeb13818251
+
+namespace Folder
+namespace CellularArithmetic
+
+structure OntologyBridge where
+  arithmeticId : String
+  cellularId : String
+  relation : String
+
+def positiveNatToCellularBridge : OntologyBridge where
+  arithmeticId := "nt.positive_nat"
+  cellularId := "ca.cellular_arithmetic_representation"
+  relation := "encodes"
+
+end CellularArithmetic
+end Folder
+```

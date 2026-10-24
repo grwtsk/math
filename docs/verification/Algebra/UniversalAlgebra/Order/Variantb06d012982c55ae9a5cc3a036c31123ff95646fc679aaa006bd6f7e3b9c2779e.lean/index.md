@@ -1,0 +1,66 @@
+# Verification target: GRWTSK.Algebra.UniversalAlgebra.Order.Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d1e6b1d2c4fba3dc5749738ce1cbdbf93f62dd04",
+  "lexical_observation_count": 3,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean/index.md) · [Full source](../../../../../mathematics/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d1e6b1d2c4fba3dc5749738ce1cbdbf93f62dd04`.
+
+Source path: `GRWTSK/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.NNRat.Defs` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Ring.Rat` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Nonneg.Ring` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../../mathematics/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean/declarations/instance--969cafdbefa3db7a79d0dea1.md) | 23 | `declaration-track:969cafdbefa3db7a79d0dea1a9d58025f07651c52db1dbc353dd82fe377b3c12` |
+| 2 | `instance` | [NNRat.instOrderedSub](../../../../../mathematics/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean/declarations/nnrat-instorderedsub--587cbf80835cabe9e3586a1b.md) | 26 | `declaration-track:587cbf80835cabe9e3586a1bb8088b7c060904bac02d3a903ab217afef54029b` |
+| 3 | `instance` | [NNRat.instCanonicallyOrderedAdd](../../../../../mathematics/Algebra/UniversalAlgebra/Order/Variantb06d012982c55ae9a5cc3a036c31123ff95646fc679aaa006bd6f7e3b9c2779e.lean/declarations/nnrat-instcanonicallyorderedadd--3a7fddcc3236b3c1a2c3f63e.md) | 27 | `declaration-track:3a7fddcc3236b3c1a2c3f63e7c8ebad9eef7c8787685f8b7a300f91fa7f66bcf` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

@@ -1,0 +1,45 @@
+# Complete source: GRWTSK.Algebra.UniversalAlgebra.PUnit.Variant0888074f97bfc5d2bc502968209acf3216ae9b2d5add0bf899fb0dd880536b55
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `241560d80dae9370332a8f8b535b0f5dcf5a5f42` · SHA-256 `414e1e3c12f96e6456b13b3987f8c97687cedb7683ad33572c257ef380ba64f0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.UniversalAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.UniversalAlgebra.PUnit.Variantaff76f7f2845856651738df87bd3d2ad12827a065bef89fd9689dd796d60c748","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"aff76f7f2845856651738df87bd3d2ad12827a065bef89fd9689dd796d60c748","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.GeneralAlgebra.SourceCorpus.PUnit.Variantaff76f7f2845856651738df87bd3d2ad12827a065bef89fd9689dd796d60c748","mathematical_subject":"Algebra.GeneralAlgebra","original_sha256":"aff76f7f2845856651738df87bd3d2ad12827a065bef89fd9689dd796d60c748","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Order/PUnit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2019 Kenny Lau. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kenny Lau
+-/
+import Mathlib.Algebra.Group.PUnit
+import Mathlib.Algebra.Order.AddGroupWithTop
+/-!
+# Instances on PUnit
+
+This file collects facts about ordered algebraic structures on the one-element type.
+-/
+
+
+namespace GRWTSK.Algebra.UniversalAlgebra.PUnit.Variantaff76f7f2845856651738df87bd3d2ad12827a065bef89fd9689dd796d60c748
+
+namespace PUnit
+
+instance canonicallyOrderedAdd : CanonicallyOrderedAdd PUnit where
+  exists_add_of_le {_ _} _ := ⟨unit, by subsingleton⟩
+  le_self_add _ _ := trivial
+
+instance isOrderedCancelAddMonoid : IsOrderedCancelAddMonoid PUnit where
+  le_of_add_le_add_left _ _ _ _ := trivial
+  add_le_add_left := by intros; rfl
+
+instance : LinearOrderedAddCommMonoidWithTop PUnit where
+  top := ()
+  le_top _ := le_rfl
+  top_add' _ := rfl
+
+end PUnit
+```

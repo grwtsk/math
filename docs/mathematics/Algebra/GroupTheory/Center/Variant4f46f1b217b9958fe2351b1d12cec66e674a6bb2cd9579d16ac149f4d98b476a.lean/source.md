@@ -1,0 +1,101 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Center.Variant4f46f1b217b9958fe2351b1d12cec66e674a6bb2cd9579d16ac149f4d98b476a
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8100cce42c3f0f0904e50257c97029a0d3d21550` · SHA-256 `b83032fc10fd1f8b812a998a41c2a7fabe2301a423e5e7aac4ccb9af222b32cb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.NatCastMemCenter.Variantc491661d80be6d708f13a07c064c555e98147b9ffe596e8d6dd5491a109dd130","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c491661d80be6d708f13a07c064c555e98147b9ffe596e8d6dd5491a109dd130","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.NatCastMemCenter.Variantc491661d80be6d708f13a07c064c555e98147b9ffe596e8d6dd5491a109dd130","mathematical_subject":"Algebra.Groups","original_sha256":"c491661d80be6d708f13a07c064c555e98147b9ffe596e8d6dd5491a109dd130","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Ring/Center.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser, Jireh Loreaux
+-/
+import Mathlib.Algebra.Group.Center
+import Mathlib.Data.Int.Cast.Lemmas
+
+/-!
+# Centers of rings
+
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.NatCastMemCenter.Variantc491661d80be6d708f13a07c064c555e98147b9ffe596e8d6dd5491a109dd130
+
+assert_not_exists RelIso Finset Subsemigroup Field
+
+variable {M : Type*}
+
+namespace Set
+
+variable (M)
+
+@[simp]
+theorem natCast_mem_center [NonAssocSemiring M] (n : ℕ) : (n : M) ∈ Set.center M where
+  comm _ := by rw [Nat.commute_cast]
+  left_assoc _ _ := by
+    induction n with
+    | zero => rw [Nat.cast_zero, zero_mul, zero_mul, zero_mul]
+    | succ n ihn => rw [Nat.cast_succ, add_mul, one_mul, ihn, add_mul, add_mul, one_mul]
+  mid_assoc _ _ := by
+    induction n with
+    | zero => rw [Nat.cast_zero, zero_mul, mul_zero, zero_mul]
+    | succ n ihn => rw [Nat.cast_succ, add_mul, mul_add, add_mul, ihn, mul_add, one_mul, mul_one]
+  right_assoc _ _ := by
+    induction n with
+    | zero => rw [Nat.cast_zero, mul_zero, mul_zero, mul_zero]
+    | succ n ihn => rw [Nat.cast_succ, mul_add, ihn, mul_add, mul_add, mul_one, mul_one]
+
+@[simp]
+theorem ofNat_mem_center [NonAssocSemiring M] (n : ℕ) [n.AtLeastTwo] :
+    ofNat(n) ∈ Set.center M :=
+  natCast_mem_center M n
+
+@[simp]
+theorem intCast_mem_center [NonAssocRing M] (n : ℤ) : (n : M) ∈ Set.center M where
+  comm _ := by rw [Int.commute_cast]
+  left_assoc _ _ := match n with
+    | (n : ℕ) => by rw [Int.cast_natCast, (natCast_mem_center _ n).left_assoc _ _]
+    | Int.negSucc n => by
+      rw [Int.cast_negSucc, Nat.cast_add, Nat.cast_one, neg_add_rev, add_mul, add_mul, add_mul,
+        neg_mul, one_mul, neg_mul 1, one_mul, ← neg_mul, add_right_inj, neg_mul,
+        (natCast_mem_center _ n).left_assoc _ _, neg_mul, neg_mul]
+  mid_assoc _ _ := match n with
+    | (n : ℕ) => by rw [Int.cast_natCast, (natCast_mem_center _ n).mid_assoc _ _]
+    | Int.negSucc n => by
+        simp only [Int.cast_negSucc, Nat.cast_add, Nat.cast_one, neg_add_rev]
+        rw [add_mul, mul_add, add_mul, mul_add, neg_mul, one_mul]
+        rw [neg_mul, mul_neg, mul_one, mul_neg, neg_mul, neg_mul]
+        rw [(natCast_mem_center _ n).mid_assoc _ _]
+        simp only [mul_neg]
+  right_assoc _ _ := match n with
+    | (n : ℕ) => by rw [Int.cast_natCast, (natCast_mem_center _ n).right_assoc _ _]
+    | Int.negSucc n => by
+        simp only [Int.cast_negSucc, Nat.cast_add, Nat.cast_one, neg_add_rev]
+        rw [mul_add, mul_add, mul_add, mul_neg, mul_one, mul_neg, mul_neg, mul_one, mul_neg,
+          add_right_inj, (natCast_mem_center _ n).right_assoc _ _, mul_neg, mul_neg]
+
+variable {M}
+
+@[simp]
+theorem add_mem_center [Distrib M] {a b : M} (ha : a ∈ Set.center M) (hb : b ∈ Set.center M) :
+    a + b ∈ Set.center M  where
+  comm _ := by rw [add_mul, mul_add, ha.comm, hb.comm]
+  left_assoc _ _ := by rw [add_mul, ha.left_assoc, hb.left_assoc, ← add_mul, ← add_mul]
+  mid_assoc _ _ := by rw [mul_add, add_mul, ha.mid_assoc, hb.mid_assoc, ← mul_add, ← add_mul]
+  right_assoc _ _ := by rw [mul_add, ha.right_assoc, hb.right_assoc, ← mul_add, ← mul_add]
+
+@[simp]
+theorem neg_mem_center [NonUnitalNonAssocRing M] {a : M} (ha : a ∈ Set.center M) :
+    -a ∈ Set.center M where
+  comm _ := by rw [← neg_mul_comm, ← ha.comm, neg_mul_comm]
+  left_assoc _ _ := by rw [neg_mul, ha.left_assoc, neg_mul, neg_mul]
+  mid_assoc _ _ := by rw [← neg_mul_comm, ha.mid_assoc, neg_mul_comm, neg_mul]
+  right_assoc _ _ := by rw [mul_neg, ha.right_assoc, mul_neg, mul_neg]
+
+end Set
+```

@@ -1,0 +1,84 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.Ext.Varianta6bf8c93f9e27982903c47db744d5732a448e403de50a65eeffe6b398c599936
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `86a440debee3391220114b0278973c566478f935` · SHA-256 `cb1a9836706bfa2e5951e88e1a59ac41d0fb4d53bc6f2ec56653a397370f0f10`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.AddClosureIUnionRangeSingle.Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"ce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.AddClosureIUnionRangeSingle.Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43","mathematical_subject":"Algebra.Groups","original_sha256":"ce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Data/DFinsupp/Ext.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2018 Kenny Lau. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Kenny Lau
+-/
+module
+
+public import Mathlib.Algebra.Group.Submonoid.Basic
+public import Mathlib.Data.DFinsupp.Defs
+
+/-!
+# Extensionality principles for `DFinsupp`
+
+## Main results
+
+* `DFinsupp.addHom_ext`, `DFinsupp.addHom_ext'`: if two additive homomorphisms from `Π₀ i, β i`
+  are equal on each `single a b`, then they are equal.
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.AddClosureIUnionRangeSingle.Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43
+
+public section
+
+
+universe u u₁ u₂ v v₁ v₂ v₃ w x y l
+
+variable {ι : Type u} {γ : Type w} {β : ι → Type v}
+
+namespace DFinsupp
+
+section DecidableEq
+variable [DecidableEq ι]
+
+section AddMonoid
+
+variable [∀ i, AddZeroClass (β i)]
+
+@[simp]
+theorem add_closure_iUnion_range_single :
+    AddSubmonoid.closure (⋃ i : ι, Set.range (single i : β i → Π₀ i, β i)) = ⊤ :=
+  top_unique fun x _ => by
+    apply DFinsupp.induction x
+    · exact AddSubmonoid.zero_mem _
+    exact fun a b f _ _ hf =>
+      AddSubmonoid.add_mem _
+        (AddSubmonoid.subset_closure <| Set.mem_iUnion.2 ⟨a, Set.mem_range_self _⟩) hf
+
+/-- If two additive homomorphisms from `Π₀ i, β i` are equal on each `single a b`, then
+they are equal. -/
+theorem addHom_ext {γ : Type w} [AddZeroClass γ] ⦃f g : (Π₀ i, β i) →+ γ⦄
+    (H : ∀ (i : ι) (y : β i), f (single i y) = g (single i y)) : f = g := by
+  refine AddMonoidHom.eq_of_eqOn_denseM add_closure_iUnion_range_single fun f hf => ?_
+  simp only [Set.mem_iUnion, Set.mem_range] at hf
+  rcases hf with ⟨x, y, rfl⟩
+  apply H
+
+/-- If two additive homomorphisms from `Π₀ i, β i` are equal on each `single a b`, then
+they are equal.
+
+See note [partially-applied ext lemmas]. -/
+@[ext]
+theorem addHom_ext' {γ : Type w} [AddZeroClass γ] ⦃f g : (Π₀ i, β i) →+ γ⦄
+    (H : ∀ x, f.comp (singleAddHom β x) = g.comp (singleAddHom β x)) : f = g :=
+  addHom_ext fun x => DFunLike.congr_fun (H x)
+
+end AddMonoid
+
+end DecidableEq
+
+end DFinsupp
+```

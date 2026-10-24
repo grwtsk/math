@@ -1,0 +1,99 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Localization.Variant2bb0dce0e0016426b5ead34d4272ca5532447183101b5ea0736c5c3aa1a447f4
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c4fc95b65fdca83d81f42c578c3704a6dad3825d` · SHA-256 `d8d70ebb4c903d08abecd89c516d86170375a86f1fb3dc013755374bda0d7a61`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.MemAssociatePrimesOfComapMemAssociatePrimesIsLocalizedModule.Variante5689e8606fbb155098e33efdd1252f1d3aadcc0653d1d59045335b4221124d7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"e5689e8606fbb155098e33efdd1252f1d3aadcc0653d1d59045335b4221124d7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.MemAssociatePrimesOfComapMemAssociatePrimesIsLocalizedModule.Variante5689e8606fbb155098e33efdd1252f1d3aadcc0653d1d59045335b4221124d7","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"e5689e8606fbb155098e33efdd1252f1d3aadcc0653d1d59045335b4221124d7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/RingTheory/Ideal/AssociatedPrime/Localization.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2025 Nailin Guan. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Nailin Guan
+-/
+import Mathlib.Algebra.Module.LocalizedModule.Basic
+import Mathlib.RingTheory.Ideal.AssociatedPrime.Basic
+import Mathlib.RingTheory.Localization.AtPrime
+
+/-!
+
+# Assocaited primes of localized module
+
+This file mainly proof the relation between `Ass(S⁻¹M)` and `Ass(M)`
+
+# Main Results
+
+* `associatedPrimes.mem_associatePrimes_of_comap_mem_associatePrimes_isLocalizedModule` :
+  for an `R` module `M`, if `p` is a prime ideal of `S⁻¹R` and `p ∩ R ∈ Ass(M)` then
+  `p ∈ Ass (S⁻¹M)`.
+
+TODO: prove the reverse when `p` is finitely generated and
+      get `Ass (S⁻¹M) = Ass(M) ∩ Spec(S⁻¹R)` when `R` noetherian.
+
+TODO: deduce from the above that every minimal element in support is in `Ass(M)`.
+
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.MemAssociatePrimesOfComapMemAssociatePrimesIsLocalizedModule.Variante5689e8606fbb155098e33efdd1252f1d3aadcc0653d1d59045335b4221124d7
+
+variable {R : Type*} [CommRing R] (S : Submonoid R) (R' : Type*)  [CommRing R'] [Algebra R R']
+  [IsLocalization S R']
+
+variable {M M' : Type*} [AddCommGroup M] [Module R M] [AddCommGroup M'] [Module R M']
+  (f : M →ₗ[R] M') [IsLocalizedModule S f] [Module R' M'] [IsScalarTower R R' M']
+
+open IsLocalRing LinearMap
+
+namespace Module.associatedPrimes
+
+include S f in
+lemma mem_associatePrimes_of_comap_mem_associatePrimes_isLocalizedModule
+    (p : Ideal R') [p.IsPrime]
+    (ass : p.comap (algebraMap R R') ∈ associatedPrimes R M) :
+    p ∈ associatedPrimes R' M' := by
+  rcases ass with ⟨hp, x, hx⟩
+  constructor
+  · /- use the following to  remove `p.IsPrime`
+      exact (IsLocalization.isPrime_iff_isPrime_disjoint S _ _).mpr
+      ⟨hp, (IsLocalization.disjoint_comap_iff S R' p).mpr (p ≠ ⊤)⟩ -/
+    assumption
+  · use f x
+    ext t
+    rcases IsLocalization.mk'_surjective S t with ⟨r, s, hrs⟩
+    rw [← IsLocalizedModule.mk'_one S, ← hrs, mem_ker, toSpanSingleton_apply,
+      IsLocalizedModule.mk'_smul_mk', mul_one, IsLocalizedModule.mk'_eq_zero']
+    refine ⟨fun h ↦ ?_, fun ⟨t, ht⟩ ↦ ?_⟩
+    · use 1
+      simp only [← toSpanSingleton_apply, one_smul, ← mem_ker, ← hx, Ideal.mem_comap]
+      have : (algebraMap R R') r =
+        IsLocalization.mk' R' r s * IsLocalization.mk' R' s.1 (1 : S) := by
+        rw [← IsLocalization.mk'_one (M := S) R', ← sub_eq_zero, ← IsLocalization.mk'_mul,
+          ← IsLocalization.mk'_sub]
+        simp
+      rw [this]
+      exact Ideal.IsTwoSided.mul_mem_of_left _ h
+    · have : t • r • x = (t.1 * r) • x := smul_smul t.1 r x
+      rw [this, ← LinearMap.toSpanSingleton_apply, ← LinearMap.mem_ker, ← hx, Ideal.mem_comap,
+        ← IsLocalization.mk'_one (M := S) R'] at ht
+      have : IsLocalization.mk' R' r s =
+        IsLocalization.mk' (M := S) R' (t.1 * r) 1 * IsLocalization.mk' R' 1 (t * s) := by
+        rw [← IsLocalization.mk'_mul, mul_one, one_mul, ← sub_eq_zero, ← IsLocalization.mk'_sub,
+          Submonoid.coe_mul]
+        simp [← mul_assoc, mul_comm r t.1, IsLocalization.mk'_zero]
+      simpa [this] using Ideal.IsTwoSided.mul_mem_of_left _ ht
+
+lemma mem_associatePrimes_localizedModule_atPrime_of_mem_associated_primes
+    {p : Ideal R} [p.IsPrime] (ass : p ∈ associatedPrimes R M) :
+    maximalIdeal (Localization.AtPrime p) ∈
+    associatedPrimes (Localization.AtPrime p) (LocalizedModule p.primeCompl M) := by
+  apply mem_associatePrimes_of_comap_mem_associatePrimes_isLocalizedModule
+    p.primeCompl (Localization.AtPrime p) (LocalizedModule.mkLinearMap p.primeCompl M)
+  simpa [Localization.AtPrime.comap_maximalIdeal] using ass
+
+end Module.associatedPrimes
+```

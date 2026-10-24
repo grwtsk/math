@@ -1,0 +1,124 @@
+# Verification target: GRWTSK.Algebra.GroupTheory.Basic.Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "437ea382d528ecad4c4bb7cda4165566638af029",
+  "lexical_observation_count": 63,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/index.md) · [Full source](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `437ea382d528ecad4c4bb7cda4165566638af029`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [mem_leftCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-leftcoset--c0771eb15e781b0706f3e6a6.md) | 56 | `result-track:c0771eb15e781b0706f3e6a676462d43f2b307f76f6780c23b5b49a7aaef3e50` |
+| 2 | `theorem` | [mem_rightCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-rightcoset--738b2b1ef1827e4b0eddfc1a.md) | 60 | `result-track:738b2b1ef1827e4b0eddfc1a82d6540cca4288d569b1bd9c689f882d90e6ca5a` |
+| 3 | `def` | [LeftCosetEquivalence](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcosetequivalence--9e4a4f174e4af826b68e03d5.md) | 65 | `declaration-track:9e4a4f174e4af826b68e03d56cd2cb67678761ce94d4e60bd5aded7ff3b01df7` |
+| 4 | `theorem` | [leftCosetEquivalence_rel](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcosetequivalence-rel--4d01cf13cfff125923baddcd.md) | 69 | `result-track:4d01cf13cfff125923baddcd29ba69beda7ad53275137a5df91fb81d3cfbe724` |
+| 5 | `def` | [RightCosetEquivalence](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcosetequivalence--a6d113c756ead7480fb33f60.md) | 74 | `declaration-track:a6d113c756ead7480fb33f6046c267cb2f0174be6422dc86c82ab54171e73bf2` |
+| 6 | `theorem` | [rightCosetEquivalence_rel](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcosetequivalence-rel--4da680d22d86fdf725827727.md) | 78 | `result-track:4da680d22d86fdf72582772709313ddca9d0cc5d8771b8eac798ac2a43ec39ed` |
+| 7 | `theorem` | [leftCoset_assoc](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcoset-assoc--24522c3d35aae3d0640775ba.md) | 88 | `result-track:24522c3d35aae3d0640775ba747299f5277fea611580bd1883af00add3eb836f` |
+| 8 | `theorem` | [rightCoset_assoc](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcoset-assoc--58c1628db3a056c2c0e7e83a.md) | 92 | `result-track:58c1628db3a056c2c0e7e83ad153fbb01665e59e3cfdc827b72b94232cab2a90` |
+| 9 | `theorem` | [leftCoset_rightCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcoset-rightcoset--ab832f0a8ca59dffe4756e50.md) | 96 | `result-track:ab832f0a8ca59dffe4756e5062250117903ce47b70b76711277bcc49eb2b6361` |
+| 10 | `theorem` | [one_leftCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/one-leftcoset--a8d49861aef81fdec4b5508a.md) | 106 | `result-track:a8d49861aef81fdec4b5508af501903b43a07de69e4dd33f8686d019ee19dc85` |
+| 11 | `theorem` | [rightCoset_one](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcoset-one--457e2361f20d4b0a1ecbf7fc.md) | 110 | `result-track:457e2361f20d4b0a1ecbf7fcb1843e7c4d21a0aaa9e1de2f0292b71438af4c63` |
+| 12 | `theorem` | [mem_own_leftCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-own-leftcoset--8bfdf735b966bc401fecf895.md) | 122 | `result-track:8bfdf735b966bc401fecf895671bec5feb01bfc777bdbbef56a98f5cbfe13887` |
+| 13 | `theorem` | [mem_own_rightCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-own-rightcoset--af25a149e0f42213cc5e97bc.md) | 127 | `result-track:af25a149e0f42213cc5e97bc8bdcd61caddc8c8136182bd8d71e3fa48a9acf1c` |
+| 14 | `theorem` | [mem_leftCoset_leftCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-leftcoset-leftcoset--d1f2d167069e4c45e6d1fc97.md) | 132 | `result-track:d1f2d167069e4c45e6d1fc972981bef2e964c6fb1f7fb2f9e03452089b0b1052` |
+| 15 | `theorem` | [mem_rightCoset_rightCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-rightcoset-rightcoset--b19902fca8bdcb0f4a9a5d8e.md) | 136 | `result-track:b19902fca8bdcb0f4a9a5d8ea8f41a05e8843b17097478eb9814bdaa889775b4` |
+| 16 | `theorem` | [mem_leftCoset_iff](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-leftcoset-iff--cf0b45ac7973a0daeb9d5f7e.md) | 146 | `result-track:cf0b45ac7973a0daeb9d5f7e4292670e89e143a9d8512ea337b847c6b75d15dd` |
+| 17 | `theorem` | [mem_rightCoset_iff](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/mem-rightcoset-iff--7a895707a23cb1563400070f.md) | 150 | `result-track:7a895707a23cb1563400070fe05f654c016fe98a8c5d3386eb7515629691cba8` |
+| 18 | `theorem` | [leftCoset_mem_leftCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcoset-mem-leftcoset--e6cc08254261f54174e9857f.md) | 162 | `result-track:e6cc08254261f54174e9857f61ac682731b6f4329d14577e0c31dcff52b8f1d1` |
+| 19 | `theorem` | [rightCoset_mem_rightCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcoset-mem-rightcoset--eed5658068d63f5b58337edd.md) | 166 | `result-track:eed5658068d63f5b58337edda8ea5c24fda955ecf622ee9a32544cf101e3115e` |
+| 20 | `theorem` | [orbit_subgroup_eq_rightCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/orbit-subgroup-eq-rightcoset--7b62d4da6fb4c509b34d4e83.md) | 170 | `result-track:7b62d4da6fb4c509b34d4e839803c011305aecf3f4d28d62c4927726a3edfc1c` |
+| 21 | `theorem` | [orbit_subgroup_eq_self_of_mem](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/orbit-subgroup-eq-self-of-mem--d7faabfd6cee1dadf00a7b87.md) | 174 | `result-track:d7faabfd6cee1dadf00a7b87485b79b097d9011b5384fa7e3f2ade52d3e2414c` |
+| 22 | `theorem` | [orbit_subgroup_one_eq_self](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/orbit-subgroup-one-eq-self--8b072f924bb4c389141a67db.md) | 178 | `result-track:8b072f924bb4c389141a67db341d6bc77a99d26b6ae614132fdfcabc5b36761d` |
+| 23 | `theorem` | [eq_cosets_of_normal](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/eq-cosets-of-normal--1b3e5cd0957c52d91988b40b.md) | 182 | `result-track:1b3e5cd0957c52d91988b40b07f06a0b75dd45d1f93b0ffb94e04ca48ed229c9` |
+| 24 | `theorem` | [normal_of_eq_cosets](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/normal-of-eq-cosets--0dba32e3581b18a6a608dfd9.md) | 186 | `result-track:0dba32e3581b18a6a608dfd98990585209fa51a58d7caf58c0134728510d32ff` |
+| 25 | `theorem` | [normal_iff_eq_cosets](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/normal-iff-eq-cosets--2d4ff031fb2e7cf085710638.md) | 191 | `result-track:2d4ff031fb2e7cf0857106380dfe3fb24f8fe4b2332c7fe15de295eb365e18e9` |
+| 26 | `theorem` | [leftCoset_eq_iff](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcoset-eq-iff--f87df35bbe5afbdf6596b9ef.md) | 195 | `result-track:f87df35bbe5afbdf6596b9ef1ce66e1ba5ac7dc70ac1a68877e4802f2bbcb0db` |
+| 27 | `theorem` | [rightCoset_eq_iff](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcoset-eq-iff--c8ffdc0b764b2f794173aeb3.md) | 209 | `result-track:c8ffdc0b764b2f794173aeb3106b928e1e455857f992b3eca21f8f88eb329691` |
+| 28 | `theorem` | [leftRel_r_eq_leftCosetEquivalence](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftrel-r-eq-leftcosetequivalence--d537de2fb6b939e650934ab0.md) | 228 | `result-track:d537de2fb6b939e650934ab09364f72b3125e6e750ee68710beb7cf1aefde9ab` |
+| 29 | `lemma` | [leftRel_prod](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftrel-prod--53a8db9134bd5707e42ad1e0.md) | 235 | `result-track:53a8db9134bd5707e42ad1e0b43df966b70a54aef742c5978ea03bc66e50195f` |
+| 30 | `lemma` | [leftRel_pi](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftrel-pi--ae8aad14fe6df6a5a4e5fac6.md) | 243 | `result-track:ae8aad14fe6df6a5a4e5fac6dc0887d081223462b2b0b79f5e49b1bd200120ff` |
+| 31 | `theorem` | [rightRel_r_eq_rightCosetEquivalence](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightrel-r-eq-rightcosetequivalence--5229e278ae8b9e683b45bac9.md) | 248 | `result-track:5229e278ae8b9e683b45bac94943fd3af76690fb2dd057d37eae263aac9ef2a7` |
+| 32 | `lemma` | [rightRel_prod](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightrel-prod--1c1a2710165d33877b68293d.md) | 255 | `result-track:1c1a2710165d33877b68293db1aea636bdf135e158fce86f322ddad14a9d53ee` |
+| 33 | `lemma` | [rightRel_pi](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightrel-pi--dc0220316171b2ce77d833b1.md) | 263 | `result-track:dc0220316171b2ce77d833b1cdfb2764b1cc3cdf0a2484d3c4916774e67042da` |
+| 34 | `theorem` | [strictMono_comap_prod_image](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/strictmono-comap-prod-image--3335faeb1b6b38d932c9bcdd.md) | 283 | `result-track:3335faeb1b6b38d932c9bcdd0a608422a168628a207d1785dbc9b421c5846a83` |
+| 35 | `theorem` | [eq_class_eq_leftCoset](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/eq-class-eq-leftcoset--32c2c7c762e284a412e531a2.md) | 294 | `result-track:32c2c7c762e284a412e531a23b21a24b27cd8caafc634de0eeefe56e4ac3c459` |
+| 36 | `lemma` | [orbit_mk_eq_smul](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/orbit-mk-eq-smul--3fd6148e047239cec42a63a7.md) | 301 | `result-track:3fd6148e047239cec42a63a7b628161902c1c004744179929d2b78d4c5e9de3d` |
+| 37 | `lemma` | [orbit_eq_out_smul](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/orbit-eq-out-smul--ca171b5c5e4ee0355615e83f.md) | 307 | `result-track:ca171b5c5e4ee0355615e83f1ffb411d0bf63ebcb75070c72fb1600d4f45a321` |
+| 38 | `def` | [leftCosetEquivSubgroup](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/leftcosetequivsubgroup--e2077a2c30b5c61a7a042465.md) | 321 | `declaration-track:e2077a2c30b5c61a7a042465c6c56624f2e886a6f69efa14c8b24c89fff50d12` |
+| 39 | `def` | [rightCosetEquivSubgroup](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/rightcosetequivsubgroup--5d61bad15809f2ad1b9dcfff.md) | 327 | `declaration-track:5d61bad15809f2ad1b9dcfff037a8058390e7191f4c83abab36661b9bb7d3a12` |
+| 40 | `def` | [groupEquivQuotientProdSubgroup](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/groupequivquotientprodsubgroup--a7890e162bb83577b4605b6c.md) | 334 | `declaration-track:a7890e162bb83577b4605b6c69516631850199069cdd241c33a1ba350a74829d` |
+| 41 | `def` | [quotientEquivProdOfLE'](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientequivprodofle--1e72814eec6dcb6d9900d7ad.md) | 355 | `declaration-track:1e72814eec6dcb6d9900d7ada0b1fa0ec73c29dfca979bca2aacc6d950d3559f` |
+| 42 | `def` | [quotientEquivProdOfLE](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientequivprodofle--6d1e49548f61326437f9898a.md) | 386 | `declaration-track:6d1e49548f61326437f9898ac85f54314814b1ee89cd36598b40e246e912acab` |
+| 43 | `def` | [quotientSubgroupOfEmbeddingOfLE](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientsubgroupofembeddingofle--8ac968ca9d3ef749a030db21.md) | 392 | `declaration-track:8ac968ca9d3ef749a030db21271268dfc67693e4a360a0e4bfd7d834bd5362e8` |
+| 44 | `theorem` | [quotientSubgroupOfEmbeddingOfLE_apply_mk](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientsubgroupofembeddingofle-apply-mk--fe3420d59b378dfce350de2b.md) | 404 | `result-track:fe3420d59b378dfce350de2b14df58d77db97e1cf7094a052e5d12616319c08d` |
+| 45 | `def` | [quotientSubgroupOfMapOfLE](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientsubgroupofmapofle--12bc3e592bd6940067928abe.md) | 411 | `declaration-track:12bc3e592bd6940067928abea1cb913032fe488665b85d8bb5fb1f14b7272250` |
+| 46 | `theorem` | [quotientSubgroupOfMapOfLE_apply_mk](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientsubgroupofmapofle-apply-mk--bf3c3af11b8e9ffd9b8757fe.md) | 418 | `result-track:bf3c3af11b8e9ffd9b8757fe2629fc043cf4f993d0476af8229fdbe11cf0720f` |
+| 47 | `def` | [quotientMapOfLE](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientmapofle--36b28cd741393987a795430e.md) | 424 | `declaration-track:36b28cd741393987a795430e495cfe324ee8f90217c82c67b9aa91a5089f82a7` |
+| 48 | `theorem` | [quotientMapOfLE_apply_mk](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientmapofle-apply-mk--b31ddf3e19329037a63b32e9.md) | 430 | `result-track:b31ddf3e19329037a63b32e9f8c4126be9c3b339200e0e1627a3849e98c32516` |
+| 49 | `def` | [quotientiInfSubgroupOfEmbedding](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientiinfsubgroupofembedding--436092f86fa54a58085f3790.md) | 437 | `declaration-track:436092f86fa54a58085f3790801ebe1209b1f9ce5ec776296125c8c4e043325b` |
+| 50 | `theorem` | [quotientiInfSubgroupOfEmbedding_apply_mk](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientiinfsubgroupofembedding-apply-mk--33f3d2f6aab06dd202cf4433.md) | 446 | `result-track:33f3d2f6aab06dd202cf4433b2b7278db53e4f7b6dc9d8f1f603d4c6ec54158d` |
+| 51 | `def` | [quotientiInfEmbedding](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientiinfembedding--123a2d1d29e68ff462c84aba.md) | 453 | `declaration-track:123a2d1d29e68ff462c84aba8d1ad287876080132c0cf9798fd178c84f029c54` |
+| 52 | `theorem` | [quotientiInfEmbedding_apply_mk](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientiinfembedding-apply-mk--b53dad1858dd9eacf40a9d80.md) | 461 | `result-track:b53dad1858dd9eacf40a9d80888599b2c8e757603c4baa0cb1deb7733a98868f` |
+| 53 | `def` | [fiberEquivKer](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequivker--d598877971acb3a6a0a6c901.md) | 474 | `declaration-track:d598877971acb3a6a0a6c901d7014ddc53b402baa3d21268ae9ee23455bec2d4` |
+| 54 | `lemma` | [fiberEquivKer_apply](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequivker-apply--110e0902d3f2538c339b5287.md) | 482 | `result-track:110e0902d3f2538c339b528776740b67b23c619654ae28992978d073fa2455e6` |
+| 55 | `lemma` | [fiberEquivKer_symm_apply](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequivker-symm-apply--fca273f7515f2d1e7ae0a967.md) | 486 | `result-track:fca273f7515f2d1e7ae0a967ec59b02fe38cd3fa7d23ebff73011dd6c9b26add` |
+| 56 | `def` | [fiberEquivKerOfSurjective](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequivkerofsurjective--ff082b9c9298be8ea9a7d348.md) | 493 | `declaration-track:ff082b9c9298be8ea9a7d348e0656ff7c11218030693bad6a11d9acb642583a1` |
+| 57 | `def` | [fiberEquiv](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequiv--e87de55125d90e3315d5130d.md) | 499 | `declaration-track:e87de55125d90e3315d5130d8b605070976b45c42a52216e3d7959b6f20343c0` |
+| 58 | `lemma` | [fiberEquiv_apply](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequiv-apply--fd69fb32793f4d3f2292d10f.md) | 503 | `result-track:fd69fb32793f4d3f2292d10f4c1bfd34ad1b929ae00604ae1a5cf476ba73098a` |
+| 59 | `lemma` | [fiberEquiv_symm_apply](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequiv-symm-apply--207544fbe973940b3cbf6b3a.md) | 508 | `result-track:207544fbe973940b3cbf6b3a3102b2d3acc43a2458b01ed2e95a2e72c16c8e0a` |
+| 60 | `def` | [fiberEquivOfSurjective](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/fiberequivofsurjective--27c42fb7bfd6c992fa809182.md) | 514 | `declaration-track:27c42fb7bfd6c992fa809182b07d04d96ea78d99dc0034c65811ca055ea609cc` |
+| 61 | `def` | [preimageMkEquivSubgroupProdSet](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/preimagemkequivsubgroupprodset--96ab687b1ffa73f672ee9532.md) | 530 | `declaration-track:96ab687b1ffa73f672ee9532a87b4eb25087a8b9c50e40b62bd18fd64be4581b` |
+| 62 | `lemma` | [univ_eq_iUnion_smul](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/univ-eq-iunion-smul--9faa2ca43d1efde930a16299.md) | 548 | `result-track:9faa2ca43d1efde930a1629934ab4ef42073c17e464f274690a5a534c2ec7d98` |
+| 63 | `def` | [quotientEquivSelf](../../../../../mathematics/Algebra/GroupTheory/Basic/Variant71b2dddeab103d6229e4628ca5b6450f06360d42f1481c355cb1f4cf0c94e443.lean/declarations/quotientequivself--c95431088aa0a505edc2d880.md) | 558 | `declaration-track:c95431088aa0a505edc2d8801be3dcda5b315f9573673fcc377ddc7de51b619c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

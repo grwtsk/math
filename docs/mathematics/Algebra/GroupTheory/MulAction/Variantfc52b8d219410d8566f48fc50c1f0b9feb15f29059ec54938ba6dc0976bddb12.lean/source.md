@@ -1,0 +1,139 @@
+# Complete source: GRWTSK.Algebra.GroupTheory.MulAction.Variantfc52b8d219410d8566f48fc50c1f0b9feb15f29059ec54938ba6dc0976bddb12
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `092950b3fbba5d940691d99f4be1d3f7c77bf418` · SHA-256 `d21f0b8b239ec470afae16139990fa8e6e789507f5bcbbc8ef4cbbb785015901`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.GroupTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.GroupTheory.MkSmul.Variant7f74018861adafa98b47c41706a932f09e5095b8ea6dce1ad4386746518978fe","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7f74018861adafa98b47c41706a932f09e5095b8ea6dce1ad4386746518978fe","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.Groups.SourceCorpus.MkSmul.Variant7f74018861adafa98b47c41706a932f09e5095b8ea6dce1ad4386746518978fe","mathematical_subject":"Algebra.Groups","original_sha256":"7f74018861adafa98b47c41706a932f09e5095b8ea6dce1ad4386746518978fe","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-games-packets/external/replay/.lake/packages/mathlib/Mathlib/Algebra/Group/Submonoid/MulAction.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Eric Wieser. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Eric Wieser
+-/
+module
+
+public import Mathlib.Algebra.Group.Submonoid.Defs
+public import Mathlib.Algebra.Group.Action.Defs
+
+/-!
+# Actions by `Submonoid`s
+
+These instances transfer the action by an element `m : M` of a monoid `M` written as `m • a` onto
+the action by an element `s : S` of a submonoid `S : Submonoid M` such that `s • a = (s : M) • a`.
+
+These instances work particularly well in conjunction with `Monoid.toMulAction`, enabling
+`s • m` as an alias for `↑s * m`.
+-/
+
+
+namespace GRWTSK.Algebra.GroupTheory.MkSmul.Variant7f74018861adafa98b47c41706a932f09e5095b8ea6dce1ad4386746518978fe
+
+public section
+
+assert_not_exists RelIso
+
+namespace Submonoid
+
+variable {M' : Type*} {α β : Type*}
+
+section SetLike
+
+variable {S' : Type*} [SetLike S' M'] (s : S')
+
+@[to_additive]
+instance (priority := low) [SMul M' α] : SMul s α where
+  smul m a := (m : M') • a
+
+@[to_additive]
+instance (priority := low) [SMul M' α] [IsLeftCancelSMul M' α] : IsLeftCancelSMul s α where
+  left_cancel' x _ _ := IsLeftCancelSMul.left_cancel x.1 _ _
+
+@[to_additive]
+instance (priority := low) [SMul M' α] [IsCancelSMul M' α] : IsCancelSMul s α where
+  right_cancel' _ _ _ eq := Subtype.ext <| IsCancelSMul.right_cancel _ _ _ eq
+
+section MulOneClass
+
+variable [MulOneClass M']
+
+@[to_additive]
+instance (priority := low) [SMul M' β] [SMul α β] [SMulCommClass M' α β] : SMulCommClass s α β :=
+  ⟨fun a _ _ => smul_comm (a : M') _ _⟩
+
+@[to_additive]
+instance (priority := low) [SMul α β] [SMul M' β] [SMulCommClass α M' β] : SMulCommClass α s β :=
+  ⟨fun a s => smul_comm a (s : M')⟩
+
+@[to_additive]
+instance (priority := low) [SMul α β] [SMul M' α] [SMul M' β] [IsScalarTower M' α β] :
+    IsScalarTower s α β :=
+  ⟨fun a => smul_assoc (a : M')⟩
+
+end MulOneClass
+
+variable [Monoid M'] [SubmonoidClass S' M']
+
+@[to_additive]
+instance (priority := low) [MulAction M' α] : MulAction s α where
+  one_smul := one_smul M'
+  mul_smul m₁ m₂ := mul_smul (m₁ : M') m₂
+
+end SetLike
+
+section MulOneClass
+
+variable [MulOneClass M']
+
+@[to_additive]
+instance smul [SMul M' α] (S : Submonoid M') : SMul S α :=
+  inferInstance
+
+@[to_additive]
+instance smulCommClass_left [SMul M' β] [SMul α β] [SMulCommClass M' α β]
+    (S : Submonoid M') : SMulCommClass S α β :=
+  inferInstance
+
+@[to_additive]
+instance smulCommClass_right [SMul α β] [SMul M' β] [SMulCommClass α M' β]
+    (S : Submonoid M') : SMulCommClass α S β :=
+  inferInstance
+
+/-- Note that this provides `IsScalarTower S M' M'` which is needed by `SMulMulAssoc`. -/
+@[to_additive]
+instance isScalarTower [SMul α β] [SMul M' α] [SMul M' β] [IsScalarTower M' α β]
+      (S : Submonoid M') :
+    IsScalarTower S α β :=
+  inferInstance
+
+section SMul
+variable [SMul M' α] {S : Submonoid M'}
+
+@[to_additive] lemma smul_def (g : S) (a : α) : g • a = (g : M') • a := rfl
+
+@[to_additive (attr := simp)]
+lemma mk_smul (g : M') (hg : g ∈ S) (a : α) : (⟨g, hg⟩ : S) • a = g • a := rfl
+
+end SMul
+end MulOneClass
+
+variable [Monoid M']
+
+/-- The action by a submonoid is the action by the underlying monoid. -/
+@[to_additive
+      /-- The additive action by an `AddSubmonoid` is the action by the underlying `AddMonoid`. -/]
+instance mulAction [MulAction M' α] (S : Submonoid M') : MulAction S α :=
+  inferInstance
+
+instance smulDistribClass {β S : Type*} [SMul M' α] [SMul M' β] [SMul α β] [SetLike S M']
+    [h : SMulDistribClass M' α β] (N' : S) :
+    SMulDistribClass N' α β := ⟨fun g _ _ ↦ h.smul_distrib_smul g _ _⟩
+
+example {S : Submonoid M'} : IsScalarTower S M' M' := by infer_instance
+
+end Submonoid
+```

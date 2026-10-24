@@ -1,0 +1,135 @@
+# symmetric_linearIdeal_eq_ker
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "869cc5e0f3009dbb4de80cedfc86065735b0901f",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 32,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/3f/3faa5a1d38f185303f5302ca25bf5adab50d94e87cf5109105ddfbe9aea11704.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:24885843-d119-5cb8-1a70-c3dcca8a2dad",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:c3038b83-4e12-0a89-3c1c-4f01b370e504",
+  "kind": "theorem",
+  "lexical_name": "symmetric_linearIdeal_eq_ker",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "symmetric-linearideal-eq-ker--dead638e5bbe4fc8f39436d8",
+  "source": {
+    "blob": "869cc5e0f3009dbb4de80cedfc86065735b0901f",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 73,
+    "line": 32,
+    "path": "GRWTSK/Algebra/LinearAlgebra/HomogeneousLinearIdeal/Variant3faa5a1d38f185303f5302ca25bf5adab50d94e87cf5109105ddfbe9aea11704.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:dead638e5bbe4fc8f39436d814da367d39634313b7afa27e52d21651dc8630b9",
+  "verification": {
+    "reference": "docs/verification/Algebra/LinearAlgebra/HomogeneousLinearIdeal/Variant3faa5a1d38f185303f5302ca25bf5adab50d94e87cf5109105ddfbe9aea11704.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:c3038b83-4e12-0a89-3c1c-4f01b370e504`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 32–73.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem symmetric_linearIdeal_eq_ker (f : V →ₗ[R] A) (hf : IsSymmetricAlgebra f)
+    (S : Submodule R V) :
+    Ideal.span (f '' (S : Set V)) =
+      RingHom.ker
+        (hf.lift ((SymmetricAlgebra.ι R (V ⧸ S)).comp S.mkQ)).toRingHom := by
+  let I : Ideal A := Ideal.span (f '' (S : Set V))
+  let forward : A →ₐ[R] SymmetricAlgebra R (V ⧸ S) :=
+    hf.lift ((SymmetricAlgebra.ι R (V ⧸ S)).comp S.mkQ)
+  let g : V →ₗ[R] (A ⧸ I) := (Ideal.Quotient.mkₐ R I).toLinearMap.comp f
+  have hg : S ≤ LinearMap.ker g := by
+    intro v hv
+    change Ideal.Quotient.mk I (f v) = 0
+    exact Ideal.Quotient.eq_zero_iff_mem.mpr (Ideal.subset_span ⟨v, hv, rfl⟩)
+  let inverse : SymmetricAlgebra R (V ⧸ S) →ₐ[R] (A ⧸ I) :=
+    SymmetricAlgebra.lift (S.liftQ g hg)
+  have hcomp : inverse.comp forward = Ideal.Quotient.mkₐ R I := by
+    apply hf.algHom_ext
+    ext v
+    change inverse (forward (f v)) = Ideal.Quotient.mk I (f v)
+    rw [show forward (f v) = SymmetricAlgebra.ι R (V ⧸ S) (S.mkQ v) by
+      exact hf.lift_eq _ v]
+    rw [SymmetricAlgebra.lift_ι_apply]
+    rfl
+  change I = RingHom.ker forward.toRingHom
+  apply le_antisymm
+  · apply Ideal.span_le.mpr
+    rintro _ ⟨v, hv, rfl⟩
+    change forward (f v) = 0
+    rw [show forward (f v) = SymmetricAlgebra.ι R (V ⧸ S) (S.mkQ v) by
+      exact hf.lift_eq _ v]
+    have hs : S.mkQ v = 0 := (Submodule.Quotient.mk_eq_zero S).mpr hv
+    rw [hs, map_zero]
+  · intro a ha
+    have hfa : forward a = 0 := RingHom.mem_ker.mp ha
+    apply Ideal.Quotient.eq_zero_iff_mem.mp
+    change (Ideal.Quotient.mkₐ R I) a = 0
+    rw [← hcomp]
+    change inverse (forward a) = 0
+    rw [hfa, map_zero]
+
+/-- Passing from a family of linear generators to its linear span does not
+change the ideal generated by its image in an algebra. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/LinearAlgebra/HomogeneousLinearIdeal/Variant3faa5a1d38f185303f5302ca25bf5adab50d94e87cf5109105ddfbe9aea11704.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LinearAlgebra/HomogeneousLinearIdeal/Variant3faa5a1d38f185303f5302ca25bf5adab50d94e87cf5109105ddfbe9aea11704.lean#L32).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `869cc5e0f3009dbb4de80cedfc86065735b0901f` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

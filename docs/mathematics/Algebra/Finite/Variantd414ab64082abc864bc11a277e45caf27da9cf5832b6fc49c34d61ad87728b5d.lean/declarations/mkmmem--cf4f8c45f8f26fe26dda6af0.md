@@ -1,0 +1,88 @@
+# mkMMem
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:6f4a91fd80e0b0484820bf87ca3070c62f476fbbc486a74c491f5ce7158f935f",
+  "kind": "def",
+  "lexical_name": "mkMMem",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mkmmem--cf4f8c45f8f26fe26dda6af0",
+  "source": {
+    "blob": "a851b1dbafcc8699550d42291e12e1e8030863de",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 354,
+    "line": 348,
+    "path": "GRWTSK/Algebra/Finite/Variantd414ab64082abc864bc11a277e45caf27da9cf5832b6fc49c34d61ad87728b5d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:cf4f8c45f8f26fe26dda6af0cbed580fa8e24ee48864b536a40abd77749f97e1",
+  "verification": {
+    "reference": "docs/verification/Algebra/Finite/Variantd414ab64082abc864bc11a277e45caf27da9cf5832b6fc49c34d61ad87728b5d.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:6f4a91fd80e0b0484820bf87ca3070c62f476fbbc486a74c491f5ce7158f935f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 348–354.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+noncomputable def mkMMem [IsDedekindDomain S]
+    (J : { J : Ideal S // algebraMap _ _ (∏ m in finsetApprox bS adm, m) ∈ J }) : ClassGroup S :=
+  ClassGroup.mk0
+    ⟨J.1, mem_nonZeroDivisors_iff_ne_zero.mpr (ne_bot_of_prod_finsetApprox_mem bS adm J.1 J.2)⟩
+set_option linter.uppercaseLean3 false in
+#align class_group.mk_M_mem ClassGroup.mkMMem
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Finite/Variantd414ab64082abc864bc11a277e45caf27da9cf5832b6fc49c34d61ad87728b5d.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Finite/Variantd414ab64082abc864bc11a277e45caf27da9cf5832b6fc49c34d61ad87728b5d.lean#L348).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a851b1dbafcc8699550d42291e12e1e8030863de` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

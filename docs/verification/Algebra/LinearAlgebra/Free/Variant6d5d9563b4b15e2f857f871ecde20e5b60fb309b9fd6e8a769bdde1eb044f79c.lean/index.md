@@ -1,0 +1,66 @@
+# Verification target: GRWTSK.Algebra.LinearAlgebra.Free.Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a7d5420e22ae6367376fdd5867b2f6683022d450",
+  "lexical_observation_count": 2,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean/index.md) · [Full source](../../../../../mathematics/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a7d5420e22ae6367376fdd5867b2f6683022d450`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Module.FinitePresentation` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Localization.Finiteness` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.FreeModule.StrongRankCondition` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Dimension.StrongRankCondition` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [Module.FinitePresentation.exists_basis_localizedModule_powers](../../../../../mathematics/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean/declarations/module-finitepresentation-exists-basis-localizedmodule-powers--7fd89763db1be7449767d8e2.md) | 46 | `result-track:7fd89763db1be7449767d8e26fa287c70a18e24cae0bc415fa2d6d1885526522` |
+| 2 | `lemma` | [Module.FinitePresentation.exists_free_localizedModule_powers](../../../../../mathematics/Algebra/LinearAlgebra/Free/Variant6d5d9563b4b15e2f857f871ecde20e5b60fb309b9fd6e8a769bdde1eb044f79c.lean/declarations/module-finitepresentation-exists-free-localizedmodule-powers--908a84344cede9f6323ef36c.md) | 83 | `result-track:908a84344cede9f6323ef36c210c6fd3815545580c61a50f5b934d6e27ca8095` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.

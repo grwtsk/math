@@ -1,0 +1,134 @@
+# Complete source: GRWTSK.Algebra.Quotient.Variant7b01a812cd3123e4197629d98261a120677c5e52b2e546aac06da1f6df49bc2c
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0111c8efaf0209443d153a879d6b21b18ee32955` · SHA-256 `044af9eaf8a2be40791933db9fdde8ab7f27e6a392fb499289414c893494f944`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.OnQuotVal.Variant92880c2628117671e6b638061baa353587c6d1d52f446b25724e20a7b0f58296","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"92880c2628117671e6b638061baa353587c6d1d52f446b25724e20a7b0f58296","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.RingsAndFields.SourceCorpus.OnQuotVal.Variant92880c2628117671e6b638061baa353587c6d1d52f446b25724e20a7b0f58296","mathematical_subject":"Algebra.RingsAndFields","original_sha256":"92880c2628117671e6b638061baa353587c6d1d52f446b25724e20a7b0f58296","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/RingTheory/Valuation/Quotient.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Johan Commelin. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kevin Buzzard, Johan Commelin, Patrick Massot
+-/
+import Mathlib.RingTheory.Ideal.Quotient.Operations
+import Mathlib.RingTheory.Valuation.Basic
+
+/-!
+# The valuation on a quotient ring
+
+The support of a valuation `v : Valuation R Γ₀` is `supp v`. If `J` is an ideal of `R`
+with `h : J ⊆ supp v` then the induced valuation
+on `R / J` = `Ideal.Quotient J` is `onQuot v h`.
+
+-/
+
+
+
+namespace GRWTSK.Algebra.OnQuotVal.Variant92880c2628117671e6b638061baa353587c6d1d52f446b25724e20a7b0f58296
+
+namespace Valuation
+
+variable {R Γ₀ : Type*} [CommRing R] [LinearOrderedCommMonoidWithZero Γ₀]
+variable (v : Valuation R Γ₀)
+
+/-- If `hJ : J ⊆ supp v` then `onQuotVal hJ` is the induced function on `R / J` as a function.
+Note: it's just the function; the valuation is `onQuot hJ`. -/
+def onQuotVal {J : Ideal R} (hJ : J ≤ supp v) : R ⧸ J → Γ₀ := fun q =>
+  Quotient.liftOn' q v fun a b h =>
+    calc
+      v a = v (b + -(-a + b)) := by simp
+      _ = v b :=
+        v.map_add_supp b <| (Ideal.neg_mem_iff _).2 <| hJ <| QuotientAddGroup.leftRel_apply.mp h
+
+/-- The extension of valuation `v` on `R` to valuation on `R / J` if `J ⊆ supp v`. -/
+def onQuot {J : Ideal R} (hJ : J ≤ supp v) : Valuation (R ⧸ J) Γ₀ where
+  toFun := v.onQuotVal hJ
+  map_zero' := v.map_zero
+  map_one' := v.map_one
+  map_mul' xbar ybar := Quotient.ind₂' v.map_mul xbar ybar
+  map_add_le_max' xbar ybar := Quotient.ind₂' v.map_add xbar ybar
+
+@[simp]
+theorem onQuot_comap_eq {J : Ideal R} (hJ : J ≤ supp v) :
+    (v.onQuot hJ).comap (Ideal.Quotient.mk J) = v :=
+  ext fun _ => rfl
+
+theorem self_le_supp_comap (J : Ideal R) (v : Valuation (R ⧸ J) Γ₀) :
+    J ≤ (v.comap (Ideal.Quotient.mk J)).supp := by
+  rw [comap_supp, ← Ideal.map_le_iff_le_comap]
+  simp
+
+@[simp]
+theorem comap_onQuot_eq (J : Ideal R) (v : Valuation (R ⧸ J) Γ₀) :
+    (v.comap (Ideal.Quotient.mk J)).onQuot (v.self_le_supp_comap J) = v :=
+  ext <| by
+    rintro ⟨x⟩
+    rfl
+
+/-- The quotient valuation on `R / J` has support `(supp v) / J` if `J ⊆ supp v`. -/
+theorem supp_quot {J : Ideal R} (hJ : J ≤ supp v) :
+    supp (v.onQuot hJ) = (supp v).map (Ideal.Quotient.mk J) := by
+  apply le_antisymm
+  · rintro ⟨x⟩ hx
+    apply Ideal.subset_span
+    exact ⟨x, hx, rfl⟩
+  · rw [Ideal.map_le_iff_le_comap]
+    intro x hx
+    exact hx
+
+theorem supp_quot_supp : supp (v.onQuot le_rfl) = 0 := by
+  rw [supp_quot]
+  exact Ideal.map_quotient_self _
+
+end Valuation
+
+namespace AddValuation
+
+variable {R Γ₀ : Type*}
+variable [CommRing R] [LinearOrderedAddCommMonoidWithTop Γ₀]
+variable (v : AddValuation R Γ₀)
+
+-- attribute [local reducible] AddValuation -- Porting note: reducible not supported
+
+/-- If `hJ : J ⊆ supp v` then `onQuotVal hJ` is the induced function on `R / J` as a function.
+Note: it's just the function; the valuation is `onQuot hJ`. -/
+def onQuotVal {J : Ideal R} (hJ : J ≤ supp v) : R ⧸ J → Γ₀ :=
+  Valuation.onQuotVal v hJ
+
+/-- The extension of valuation `v` on `R` to valuation on `R / J` if `J ⊆ supp v`. -/
+def onQuot {J : Ideal R} (hJ : J ≤ supp v) : AddValuation (R ⧸ J) Γ₀ :=
+  Valuation.onQuot v hJ
+
+@[simp]
+theorem onQuot_comap_eq {J : Ideal R} (hJ : J ≤ supp v) :
+    (v.onQuot hJ).comap (Ideal.Quotient.mk J) = v :=
+  Valuation.onQuot_comap_eq v hJ
+
+theorem comap_supp {S : Type*} [CommRing S] (f : S →+* R) :
+    supp (v.comap f) = Ideal.comap f v.supp :=
+  Valuation.comap_supp v f
+
+theorem self_le_supp_comap (J : Ideal R) (v : AddValuation (R ⧸ J) Γ₀) :
+    J ≤ (v.comap (Ideal.Quotient.mk J)).supp :=
+  Valuation.self_le_supp_comap J v
+
+@[simp]
+theorem comap_onQuot_eq (J : Ideal R) (v : AddValuation (R ⧸ J) Γ₀) :
+    (v.comap (Ideal.Quotient.mk J)).onQuot (v.self_le_supp_comap J) = v :=
+  Valuation.comap_onQuot_eq J v
+
+/-- The quotient valuation on `R / J` has support `(supp v) / J` if `J ⊆ supp v`. -/
+theorem supp_quot {J : Ideal R} (hJ : J ≤ supp v) :
+    supp (v.onQuot hJ) = (supp v).map (Ideal.Quotient.mk J) :=
+  Valuation.supp_quot v hJ
+
+theorem supp_quot_supp : supp ((Valuation.onQuot v) le_rfl) = 0 :=
+  Valuation.supp_quot_supp v
+
+end AddValuation
+```

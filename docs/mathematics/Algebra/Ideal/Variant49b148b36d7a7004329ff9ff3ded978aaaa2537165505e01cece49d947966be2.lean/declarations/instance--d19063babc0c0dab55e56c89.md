@@ -1,0 +1,122 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:a11a90bb1abf2686e681eefee4b9bcfa54c33e75e92643dbe6dcb5b27437c987",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance--d19063babc0c0dab55e56c89",
+  "source": {
+    "blob": "804c919e41f6f36a4864dcab95dfeba61fb19258",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 278,
+    "line": 238,
+    "path": "GRWTSK/Algebra/Ideal/Variant49b148b36d7a7004329ff9ff3ded978aaaa2537165505e01cece49d947966be2.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:d19063babc0c0dab55e56c89f93f6ce2780827234fdda021bcfcb3048e796ea6",
+  "verification": {
+    "reference": "docs/verification/Algebra/Ideal/Variant49b148b36d7a7004329ff9ff3ded978aaaa2537165505e01cece49d947966be2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:a11a90bb1abf2686e681eefee4b9bcfa54c33e75e92643dbe6dcb5b27437c987`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 238–278.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance {I : Ideal R} [I.IsTwoSided] : I.jacobson.IsTwoSided where
+  -- Proof generalized from
+  -- https://ysharifi.wordpress.com/2022/08/16/the-jacobson-radical-definition-and-basic-results/
+  mul_mem_of_left {x} r xJ := by
+    apply mem_sInf.mpr
+    intro 𝔪 𝔪_mem
+    by_cases r𝔪 : r ∈ 𝔪
+    · apply 𝔪.smul_mem _ r𝔪
+    -- 𝔪₀ := { a : R | a*r ∈ 𝔪 }
+    let 𝔪₀ : Ideal R := Submodule.comap (DistribMulAction.toLinearMap R (S := Rᵐᵒᵖ) R (.op r)) 𝔪
+    suffices x ∈ 𝔪₀ by simpa [𝔪₀] using this
+    have I𝔪₀ : I ≤ 𝔪₀ := fun i iI =>
+      𝔪_mem.left (I.mul_mem_right _ iI)
+    have 𝔪₀_maximal : IsMaximal 𝔪₀ := by
+      refine isMaximal_iff.mpr ⟨
+        fun h => r𝔪 (by simpa [𝔪₀] using h),
+        fun J b 𝔪₀J b𝔪₀ bJ => ?_⟩
+      let K : Ideal R := Ideal.span {b*r} ⊔ 𝔪
+      have ⟨s, y, y𝔪, sbyr⟩ :=
+        mem_span_singleton_sup.mp <|
+          mul_mem_left _ r <|
+            (isMaximal_iff.mp 𝔪_mem.right).right K (b*r)
+            le_sup_right b𝔪₀
+            (mem_sup_left <| mem_span_singleton_self _)
+      have : 1 - s*b ∈ 𝔪₀ := by
+        rw [mul_one, add_comm, ← eq_sub_iff_add_eq] at sbyr
+        rw [sbyr, ← mul_assoc] at y𝔪
+        simp [𝔪₀, sub_mul, y𝔪]
+      have : 1 - s*b + s*b ∈ J := by
+        apply add_mem (𝔪₀J this) (J.mul_mem_left _ bJ)
+      simpa using this
+    exact mem_sInf.mp xJ ⟨I𝔪₀, 𝔪₀_maximal⟩
+
+@[deprecated (since := "2025-04-13")] alias jacobson_mul_mem_right := Ideal.instIsTwoSidedJacobson
+
+end Ring
+
+section CommRing
+
+variable [CommRing R] [CommRing S] {I : Ideal R}
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Ideal/Variant49b148b36d7a7004329ff9ff3ded978aaaa2537165505e01cece49d947966be2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Ideal/Variant49b148b36d7a7004329ff9ff3ded978aaaa2537165505e01cece49d947966be2.lean#L238).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `804c919e41f6f36a4864dcab95dfeba61fb19258` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

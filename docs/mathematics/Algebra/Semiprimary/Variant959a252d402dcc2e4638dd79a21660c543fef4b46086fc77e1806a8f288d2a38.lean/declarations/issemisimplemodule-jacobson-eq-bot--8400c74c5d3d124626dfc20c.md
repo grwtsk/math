@@ -1,0 +1,100 @@
+# IsSemisimpleModule.jacobson_eq_bot
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "178a97f436f9e3063b60dcb56aaa507b8180d810",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 27,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/95/959a252d402dcc2e4638dd79a21660c543fef4b46086fc77e1806a8f288d2a38.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:29438052-495a-f78e-d914-860f98d9b321",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:d2260e61-fd30-465a-5b59-2684e2a82fd7",
+  "kind": "theorem",
+  "lexical_name": "IsSemisimpleModule.jacobson_eq_bot",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "issemisimplemodule-jacobson-eq-bot--8400c74c5d3d124626dfc20c",
+  "source": {
+    "blob": "178a97f436f9e3063b60dcb56aaa507b8180d810",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 33,
+    "line": 27,
+    "path": "GRWTSK/Algebra/Semiprimary/Variant959a252d402dcc2e4638dd79a21660c543fef4b46086fc77e1806a8f288d2a38.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:8400c74c5d3d124626dfc20ccc367a97bc5612bd6196dab27511b0eebb2103d0",
+  "verification": {
+    "reference": "docs/verification/Algebra/Semiprimary/Variant959a252d402dcc2e4638dd79a21660c543fef4b46086fc77e1806a8f288d2a38.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d2260e61-fd30-465a-5b59-2684e2a82fd7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 27–33.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem IsSemisimpleModule.jacobson_eq_bot [IsSemisimpleModule R M] :
+    Module.jacobson R M = ⊥ :=
+  have ⟨s, e, simple⟩ := isSemisimpleModule_iff_exists_linearEquiv_dfinsupp.mp ‹_›
+  let f : M →ₗ[R] ∀ m : s, m.1 := (LinearMap.pi DFinsupp.lapply).comp e.toLinearMap
+  Module.jacobson_eq_bot_of_injective f (DFinsupp.injective_pi_lapply (R := R).comp e.injective)
+    (Module.jacobson_pi_eq_bot _ _ fun i ↦ IsSimpleModule.jacobson_eq_bot R _)
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/Semiprimary/Variant959a252d402dcc2e4638dd79a21660c543fef4b46086fc77e1806a8f288d2a38.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Semiprimary/Variant959a252d402dcc2e4638dd79a21660c543fef4b46086fc77e1806a8f288d2a38.lean#L27).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `178a97f436f9e3063b60dcb56aaa507b8180d810` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

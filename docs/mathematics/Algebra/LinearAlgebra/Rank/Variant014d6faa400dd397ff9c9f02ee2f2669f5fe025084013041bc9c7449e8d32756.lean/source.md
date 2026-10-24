@@ -1,0 +1,85 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.Rank.Variant014d6faa400dd397ff9c9f02ee2f2669f5fe025084013041bc9c7449e8d32756
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d00ed12bbe6ad7b4ee6851c83a496f40afe295a` · SHA-256 `0bc3282d5862df37043c63cf72646cc317f341cf3289ccc0a2d739ad208c827c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.RankSupEqRankLeftMulRankOfFree.Varianta8da4c1f010cca73bbcea0167f71be60250c042cda4b7f3ec2999b9fd3417da7","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a8da4c1f010cca73bbcea0167f71be60250c042cda4b7f3ec2999b9fd3417da7","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.RankSupEqRankLeftMulRankOfFree.Varianta8da4c1f010cca73bbcea0167f71be60250c042cda4b7f3ec2999b9fd3417da7","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"a8da4c1f010cca73bbcea0167f71be60250c042cda4b7f3ec2999b9fd3417da7","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Algebra/Algebra/Subalgebra/Rank.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2024 Jz Pan. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Jz Pan
+-/
+import Mathlib.LinearAlgebra.Dimension.Free
+import Mathlib.LinearAlgebra.Dimension.Subsingleton
+import Mathlib.LinearAlgebra.FreeModule.StrongRankCondition
+
+/-!
+
+# Some results on the ranks of subalgebras
+
+This file contains some results on the ranks of subalgebras,
+which are corollaries of `rank_mul_rank`.
+Since their proof essentially depends on the fact that a non-trivial commutative ring
+satisfies strong rank condition, we put them into a separate file.
+
+-/
+
+
+namespace GRWTSK.Algebra.LinearAlgebra.RankSupEqRankLeftMulRankOfFree.Varianta8da4c1f010cca73bbcea0167f71be60250c042cda4b7f3ec2999b9fd3417da7
+
+open Module
+
+namespace Subalgebra
+
+variable {R S : Type*} [CommRing R] [CommRing S] [Algebra R S]
+  (A B : Subalgebra R S)
+
+section
+variable [Module.Free R A] [Module.Free A (Algebra.adjoin A (B : Set S))]
+
+theorem rank_sup_eq_rank_left_mul_rank_of_free :
+    Module.rank R ↥(A ⊔ B) = Module.rank R A * Module.rank A (Algebra.adjoin A (B : Set S)) := by
+  rcases subsingleton_or_nontrivial R with _ | _
+  · haveI := Module.subsingleton R S; simp
+  nontriviality S using rank_subsingleton'
+  letI : Algebra A (Algebra.adjoin A (B : Set S)) := Subalgebra.algebra _
+  letI : SMul A (Algebra.adjoin A (B : Set S)) := Algebra.toSMul
+  haveI : IsScalarTower R A (Algebra.adjoin A (B : Set S)) :=
+    IsScalarTower.of_algebraMap_eq (congrFun rfl)
+  rw [rank_mul_rank R A (Algebra.adjoin A (B : Set S))]
+  change _ = Module.rank R ((Algebra.adjoin A (B : Set S)).restrictScalars R)
+  rw [Algebra.restrictScalars_adjoin]; rfl
+
+theorem finrank_sup_eq_finrank_left_mul_finrank_of_free :
+    finrank R ↥(A ⊔ B) = finrank R A * finrank A (Algebra.adjoin A (B : Set S)) := by
+  simpa only [map_mul] using congr(Cardinal.toNat $(rank_sup_eq_rank_left_mul_rank_of_free A B))
+
+theorem finrank_left_dvd_finrank_sup_of_free :
+    finrank R A ∣ finrank R ↥(A ⊔ B) := ⟨_, finrank_sup_eq_finrank_left_mul_finrank_of_free A B⟩
+
+end
+
+section
+variable [Module.Free R B] [Module.Free B (Algebra.adjoin B (A : Set S))]
+
+theorem rank_sup_eq_rank_right_mul_rank_of_free :
+    Module.rank R ↥(A ⊔ B) = Module.rank R B * Module.rank B (Algebra.adjoin B (A : Set S)) := by
+  rw [sup_comm, rank_sup_eq_rank_left_mul_rank_of_free]
+
+theorem finrank_sup_eq_finrank_right_mul_finrank_of_free :
+    finrank R ↥(A ⊔ B) = finrank R B * finrank B (Algebra.adjoin B (A : Set S)) := by
+  rw [sup_comm, finrank_sup_eq_finrank_left_mul_finrank_of_free]
+
+theorem finrank_right_dvd_finrank_sup_of_free :
+    finrank R B ∣ finrank R ↥(A ⊔ B) := ⟨_, finrank_sup_eq_finrank_right_mul_finrank_of_free A B⟩
+
+end
+
+end Subalgebra
+```

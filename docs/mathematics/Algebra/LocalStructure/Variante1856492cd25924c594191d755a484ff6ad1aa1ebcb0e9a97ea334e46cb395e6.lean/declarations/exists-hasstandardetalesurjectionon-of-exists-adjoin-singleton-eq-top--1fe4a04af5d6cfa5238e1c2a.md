@@ -1,0 +1,170 @@
+# exists_hasStandardEtaleSurjectionOn_of_exists_adjoin_singleton_eq_top
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "23645208852af6a0e4e19a02e3362c0f4ce16053",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 132,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/e1/e1856492cd25924c594191d755a484ff6ad1aa1ebcb0e9a97ea334e46cb395e6.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:3ca8f67d-7fc8-d8da-24c3-a9cc0af7a158",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:2a4906ac-9eea-2c4a-c810-70ff45b858d7",
+  "kind": "lemma",
+  "lexical_name": "exists_hasStandardEtaleSurjectionOn_of_exists_adjoin_singleton_eq_top",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "exists-hasstandardetalesurjectionon-of-exists-adjoin-singleton-eq-top--1fe4a04af5d6cfa5238e1c2a",
+  "source": {
+    "blob": "23645208852af6a0e4e19a02e3362c0f4ce16053",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 208,
+    "line": 132,
+    "path": "GRWTSK/Algebra/LocalStructure/Variante1856492cd25924c594191d755a484ff6ad1aa1ebcb0e9a97ea334e46cb395e6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:1fe4a04af5d6cfa5238e1c2a08fd1b3c1121293b72477549bdb8f67726a6deb4",
+  "verification": {
+    "reference": "docs/verification/Algebra/LocalStructure/Variante1856492cd25924c594191d755a484ff6ad1aa1ebcb0e9a97ea334e46cb395e6.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2a4906ac-9eea-2c4a-c810-70ff45b858d7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 132–208.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+private lemma exists_hasStandardEtaleSurjectionOn_of_exists_adjoin_singleton_eq_top
+    [Module.Finite R S] (H : ∃ x : S, R[x] = ⊤)
+    (Q : Ideal S) [Q.IsPrime] [IsUnramifiedAt R Q] :
+    ∃ f ∉ Q, HasStandardEtaleSurjectionOn R f := by
+  cases subsingleton_or_nontrivial S
+  · cases Ideal.IsPrime.ne_top' (Subsingleton.elim Q ⊤)
+  have := (algebraMap R S).domain_nontrivial
+  -- Suppose `S = R[X]/I` is finite (as an `R`-module), and `R`-unramified at a prime `Q`,
+  -- which lies over the prime `P` of `R`.
+  -- We shall show that `S[1/f]` has a surjection from a standard etale algebra for some `f ∉ Q`.
+  let P := Q.under R
+  let := Localization.AtPrime.algebraOfLiesOver P Q
+  obtain ⟨x, hx⟩ := H
+  have hRx : IsIntegral R x := IsIntegral.isIntegral _
+  let I := RingHom.ker (aeval (R := R) x).toRingHom
+  have hx' : Function.Surjective (aeval (R := R) x) :=
+    (AlgHom.range_eq_top _).mp ((adjoin_singleton_eq_range_aeval R x).symm.trans hx)
+  -- It suffices to find some monic `q : R[X]` such that `q(x) = 0` and `q'(x) ∉ Q`.
+  suffices ∃ q : R[X], q.Monic ∧ aeval x q = 0 ∧ aeval x q.derivative ∉ Q by
+    -- Since if we have such a `q`, then `(R[X]/q)[1/q'] → S[1/q'(x)]` is the desired surjection.
+    obtain ⟨q, hq, hqx, hq'x⟩ := this
+    let P : StandardEtalePair R := ⟨q, hq, q.derivative, 1, 0, 1, by simp⟩
+    have hP : P.HasMap (algebraMap _ (Localization.Away (aeval x q.derivative)) x) :=
+      ⟨by simp_all [P], by simpa using IsLocalization.Away.algebraMap_isUnit _⟩
+    let f : AdjoinRoot P.f →ₐ[R] S := AdjoinRoot.liftAlgHom _ (Algebra.ofId _ _) x hqx
+    have : IsLocalization.Away (aeval x (derivative q)) (Localization.Away (f (.mk P.f P.g))) := by
+      simp only [AdjoinRoot.liftAlgHom_mk, toRingHom_ofId, f, ← aeval_def, P]; infer_instance
+    refine ⟨_, hq'x, .mk ((Localization.awayMapₐ f _).comp P.equivAwayAdjoinRoot.toAlgHom) ?_⟩
+    simpa using IsLocalization.Away.mapₐ_surjective_of_surjective _
+      (Ideal.Quotient.lift_surjective_of_surjective _ _ hx')
+  -- Using the fact that `κ(P)[X]` is a PID, the image of `I` in `κ(P)[X]`
+  -- (i.e. the kernel of `κ(P)[X] → κ(P) ⊗[R] S`) is generated by a single polynomial `p ∈ I`.
+  obtain ⟨p, hpI, hp⟩ := Ideal.exists_mem_span_singleton_map_residueField_eq P I
+  have hI' : I.map (mapRingHom (algebraMap R P.ResidueField)) =
+      RingHom.ker (aeval (1 ⊗ₜ x : P.Fiber S)).toRingHom :=
+    exists_hasStandardEtaleSurjectionOn_of_exists_adjoin_singleton_eq_top_aux₁ P x hx
+  -- Let `x` denote the image of `X` in `S`,
+  -- and let `m` be the minimal polynomial of `x` (viewed as an element of `κ(Q)`) over `κ(P)`.
+  -- By unramified-ness we know that `m` divides `p` only once.
+  -- (via `Algebra.IsUnramifiedAt.not_minpoly_sq_dvd`).
+  let m := minpoly P.ResidueField (algebraMap S Q.ResidueField x)
+  have hm : Prime m := minpoly.prime (IsIntegral.isIntegral _)
+  have hmp₁ : m ∣ p.map (algebraMap _ _) := by simp_all [m, I, minpoly.dvd_iff]
+  have hmp₂ : ¬ m ^ 2 ∣ p.map (algebraMap _ _) :=
+    exists_hasStandardEtaleSurjectionOn_of_exists_adjoin_singleton_eq_top_aux₂ x p (hp.trans hI') hx
+  -- But the issue is that `p` is not necessarily monic.
+  -- Let `q := M + p` for some monic `M ∈ I` with large enough degree (since `S` is `R`-finite).
+  -- I claim that `q` satisfies the desired properties.
+  let q := minpoly R x ^ (p.natDegree + 2) + p
+  refine ⟨q, ?_, by simpa [q], ?_⟩
+  · refine ((minpoly.monic hRx).pow _).add_of_left (degree_lt_degree ?_)
+    grw [natDegree_pow' (by simp [minpoly.monic hRx]),
+      ← Nat.le_mul_of_pos_right _ (minpoly.natDegree_pos hRx)]; lia
+  -- To show that `q'(x) ∉ Q`, we first show that `m` still divides `q` only once in `κ(P)[X]`.
+  have ⟨w, h₁, h₂⟩ : ∃ w, q.map (algebraMap R _) = p.map (algebraMap R _) * w ∧ ¬ m ∣ w := by
+    obtain ⟨w, hw⟩ := Ideal.mem_span_singleton.mp
+      (hp.ge (Ideal.mem_map_of_mem _ (x := minpoly R x) (by simp [I])))
+    refine ⟨1 + w * (minpoly R x).map (algebraMap R P.ResidueField) ^ (p.natDegree + 1), ?_, ?_⟩
+    · simp_all [q]
+      #adaptation_note /-- Before https://github.com/leanprover/lean4/pull/13166
+      (replacing grind's canonicalizer with a type-directed normalizer), `grind` closed this
+      goal. It is not yet clear whether this is due to defeq abuse in Mathlib or a problem in
+      the new canonicalizer; a minimization would help. The original proof was:
+      `simp_all [q]; grind` -/
+      ring
+    · rw [dvd_add_left (dvd_mul_of_dvd_right (dvd_pow (by simp [m, minpoly.dvd_iff]) (by simp)) _),
+        ← isUnit_iff_dvd_one]
+      exact hm.not_isUnit
+  have hm' : derivative m ≠ 0 :=
+    (separable_iff_derivative_ne_zero hm.irreducible).mp (IsSeparable.isSeparable ..)
+  suffices ¬m ∣ derivative (q.map (algebraMap R _)) by
+    rwa [← Ideal.ker_algebraMap_residueField Q, RingHom.mem_ker, ← aeval_algebraMap_apply,
+      ← aeval_map_algebraMap P.ResidueField, ← derivative_map, ← minpoly.dvd_iff]
+  obtain ⟨c, hc⟩ := hmp₁
+  simp_all [hm.dvd_mul, dvd_add_left, pow_two, mul_dvd_mul_iff_left, hm.ne_zero]
+
+set_option backward.isDefEq.respectTransparency.types false in
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../verification/Algebra/LocalStructure/Variante1856492cd25924c594191d755a484ff6ad1aa1ebcb0e9a97ea334e46cb395e6.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/LocalStructure/Variante1856492cd25924c594191d755a484ff6ad1aa1ebcb0e9a97ea334e46cb395e6.lean#L132).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `23645208852af6a0e4e19a02e3362c0f4ce16053` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

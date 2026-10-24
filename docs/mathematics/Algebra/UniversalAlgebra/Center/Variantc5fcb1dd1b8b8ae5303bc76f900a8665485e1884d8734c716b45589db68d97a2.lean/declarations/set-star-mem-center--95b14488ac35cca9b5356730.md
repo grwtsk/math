@@ -1,0 +1,103 @@
+# Set.star_mem_center
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:270cf7ea-8347-3ead-f8a2-6359dff22902",
+  "kind": "theorem",
+  "lexical_name": "Set.star_mem_center",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "set-star-mem-center--95b14488ac35cca9b5356730",
+  "source": {
+    "blob": "7866020a2b7a2467417a951214df266048c97b38",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 43,
+    "line": 22,
+    "path": "GRWTSK/Algebra/UniversalAlgebra/Center/Variantc5fcb1dd1b8b8ae5303bc76f900a8665485e1884d8734c716b45589db68d97a2.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:95b14488ac35cca9b53567305cd676f3f43f4d525d7e5fe5e7bbbdacd33053ad",
+  "verification": {
+    "reference": "docs/verification/Algebra/UniversalAlgebra/Center/Variantc5fcb1dd1b8b8ae5303bc76f900a8665485e1884d8734c716b45589db68d97a2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:270cf7ea-8347-3ead-f8a2-6359dff22902`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 22–43.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem Set.star_mem_center (ha : a ∈ Set.center R) : star a ∈ Set.center R where
+  comm := by simpa only [star_mul, star_star] using fun g =>
+    congr_arg star ((mem_center_iff.1 ha).comm <| star g).symm
+  left_assoc b c := calc
+    star a * (b * c) = star a * (star (star b) * star (star c)) := by rw [star_star, star_star]
+    _ = star a * star (star c * star b) := by rw [star_mul]
+    _ = star ((star c * star b) * a) := by rw [← star_mul]
+    _ = star (star c * (star b * a)) := by rw [ha.right_assoc]
+    _ = star (star b * a) * c := by rw [star_mul, star_star]
+    _ = (star a * b) * c := by rw [star_mul, star_star]
+  mid_assoc b c := calc
+    b * star a * c = star (star c * star (b * star a)) := by rw [← star_mul, star_star]
+    _ = star (star c * (a * star b)) := by rw [star_mul b, star_star]
+    _ = star ((star c * a) * star b) := by rw [ha.mid_assoc]
+    _ = b * (star a * c) := by rw [star_mul, star_star, star_mul (star c), star_star]
+  right_assoc b c := calc
+    b * c * star a = star (a * star (b * c)) := by rw [star_mul, star_star]
+    _ = star (a * (star c * star b)) := by rw [star_mul b]
+    _ = star ((a * star c) * star b) := by rw [ha.left_assoc]
+    _ = b * star (a * star c) := by rw [star_mul, star_star]
+    _ = b * (c * star a) := by rw [star_mul, star_star]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/UniversalAlgebra/Center/Variantc5fcb1dd1b8b8ae5303bc76f900a8665485e1884d8734c716b45589db68d97a2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/UniversalAlgebra/Center/Variantc5fcb1dd1b8b8ae5303bc76f900a8665485e1884d8734c716b45589db68d97a2.lean#L22).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7866020a2b7a2467417a951214df266048c97b38` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

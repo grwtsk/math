@@ -1,0 +1,116 @@
+# induction
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:d2bfc9c5-12fc-8265-3bcc-a88bede3cbf1",
+  "kind": "theorem",
+  "lexical_name": "induction",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "induction--d45f5f1c41bf7b34d0479b36",
+  "source": {
+    "blob": "75eafad64b1f5ea8a7ec279c95e2d0dd1aa2b179",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 294,
+    "line": 260,
+    "path": "GRWTSK/Algebra/FieldTheory/AbelRuffini/Variant0bd9fe45929d675764236b5d71f6458ab4b009c5fd337ed673582c6cac341bed.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:d45f5f1c41bf7b34d0479b365e4b4d6f03f473357f02b10da12ae76af555093d",
+  "verification": {
+    "reference": "docs/verification/Algebra/FieldTheory/AbelRuffini/Variant0bd9fe45929d675764236b5d71f6458ab4b009c5fd337ed673582c6cac341bed.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d2bfc9c5-12fc-8265-3bcc-a88bede3cbf1`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 260–294.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem induction (P : solvableByRad F E → Prop)
+    (base : ∀ α : F, P (algebraMap F (solvableByRad F E) α))
+    (add : ∀ α β : solvableByRad F E, P α → P β → P (α + β))
+    (neg : ∀ α : solvableByRad F E, P α → P (-α))
+    (mul : ∀ α β : solvableByRad F E, P α → P β → P (α * β))
+    (inv : ∀ α : solvableByRad F E, P α → P α⁻¹)
+    (rad : ∀ α : solvableByRad F E, ∀ n : ℕ, n ≠ 0 → P (α ^ n) → P α) (α : solvableByRad F E) :
+    P α := by
+  revert α
+  suffices ∀ α : E, IsSolvableByRad F α → ∃ β : solvableByRad F E, ↑β = α ∧ P β by
+    intro α
+    obtain ⟨α₀, hα₀, Pα⟩ := this α (Subtype.mem α)
+    convert Pα
+    exact Subtype.ext hα₀.symm
+  apply IsSolvableByRad.rec
+  · exact fun α => ⟨algebraMap F (solvableByRad F E) α, rfl, base α⟩
+  · intro α β _ _ Pα Pβ
+    obtain ⟨⟨α₀, hα₀, Pα⟩, β₀, hβ₀, Pβ⟩ := Pα, Pβ
+    exact ⟨α₀ + β₀, by rw [← hα₀, ← hβ₀]; rfl, add α₀ β₀ Pα Pβ⟩
+  · intro α _ Pα
+    obtain ⟨α₀, hα₀, Pα⟩ := Pα
+    exact ⟨-α₀, by rw [← hα₀]; rfl, neg α₀ Pα⟩
+  · intro α β _ _ Pα Pβ
+    obtain ⟨⟨α₀, hα₀, Pα⟩, β₀, hβ₀, Pβ⟩ := Pα, Pβ
+    exact ⟨α₀ * β₀, by rw [← hα₀, ← hβ₀]; rfl, mul α₀ β₀ Pα Pβ⟩
+  · intro α _ Pα
+    obtain ⟨α₀, hα₀, Pα⟩ := Pα
+    exact ⟨α₀⁻¹, by rw [← hα₀]; rfl, inv α₀ Pα⟩
+  · intro α n hn hα Pα
+    obtain ⟨α₀, hα₀, Pα⟩ := Pα
+    refine' ⟨⟨α, IsSolvableByRad.rad α n hn hα⟩, rfl, rad _ n hn _⟩
+    convert Pα
+    exact Subtype.ext (Eq.trans ((solvableByRad F E).coe_pow _ n) hα₀.symm)
+#align solvable_by_rad.induction solvableByRad.induction
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Algebra/FieldTheory/AbelRuffini/Variant0bd9fe45929d675764236b5d71f6458ab4b009c5fd337ed673582c6cac341bed.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/FieldTheory/AbelRuffini/Variant0bd9fe45929d675764236b5d71f6458ab4b009c5fd337ed673582c6cac341bed.lean#L260).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `75eafad64b1f5ea8a7ec279c95e2d0dd1aa2b179` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

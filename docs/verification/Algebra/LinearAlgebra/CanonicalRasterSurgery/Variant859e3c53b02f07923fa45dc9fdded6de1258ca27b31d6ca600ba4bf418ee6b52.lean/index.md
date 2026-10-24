@@ -1,0 +1,123 @@
+# Verification target: GRWTSK.Algebra.LinearAlgebra.CanonicalRasterSurgery.Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f1eb0ee631ef5b626307b6c68fc920d4ffb77710",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/index.md) · [Full source](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f1eb0ee631ef5b626307b6c68fc920d4ffb77710`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `BitMatrix.Surgery.CanonicalRaster` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [diagonalState](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/diagonalstate--91e470a698f6bd9bce84c243.md) | 20 | `declaration-track:91e470a698f6bd9bce84c2437531421342d8631b310ba7ed54e40f6cc952746c` |
+| 2 | `def` | [branchingCross](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/branchingcross--088ef9623799e0b075c4302f.md) | 24 | `declaration-track:088ef9623799e0b075c4302fcd9c6980ab0c334d5db866a71c9dc4e7a17ca319` |
+| 3 | `def` | [unitCell](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/unitcell--1c067604cb8a60f48394cfe4.md) | 28 | `declaration-track:1c067604cb8a60f48394cfe415526efe5f29708d9809dd668d0b76944b19c9aa` |
+| 4 | `def` | [northWest](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/northwest--ef1b87d2d4ad56f2dde00f96.md) | 31 | `declaration-track:ef1b87d2d4ad56f2dde00f96d11c29f9e2ce7e51261b2ff857c0f008a6d4b220` |
+| 5 | `def` | [center](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/center--799e5b7d760bb7e23ebec968.md) | 33 | `declaration-track:799e5b7d760bb7e23ebec9689b83f90d6ed384ac3b63835306ea53c40ebc1ef5` |
+| 6 | `def` | [southEast](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/southeast--a0f78762b388436e31991a92.md) | 35 | `declaration-track:a0f78762b388436e31991a928e6ed2547c36ce416b12b71e0048ffaa632272af` |
+| 7 | `def` | [northMiddle](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/northmiddle--3e410b08a0aadf6ad6a06a1b.md) | 37 | `declaration-track:3e410b08a0aadf6ad6a06a1b0e5203cb73259a62afaf81c72b41d36ecc128a94` |
+| 8 | `def` | [northEast](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/northeast--dca558a5809b9c551d1e1fef.md) | 39 | `declaration-track:dca558a5809b9c551d1e1fefd3c10862d16ea7bb5f6a19430619289124192ee3` |
+| 9 | `def` | [middleWest](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/middlewest--14b331c56762be1eef7b9770.md) | 41 | `declaration-track:14b331c56762be1eef7b977069b1225109f312e59e2faa7daba9732aabb80463` |
+| 10 | `def` | [southWest](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/southwest--2c22d8c553017964b80ad394.md) | 43 | `declaration-track:2c22d8c553017964b80ad394150789aff601f58252739167dd382e8bfe9d0378` |
+| 11 | `def` | [southMiddle](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/southmiddle--a8ece66950eae51f787e8fc9.md) | 45 | `declaration-track:a8ece66950eae51f787e8fc92b37385eaf1f881aa24d21d99ef54551e1fa20f8` |
+| 12 | `def` | [fullThreeByThree](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/fullthreebythree--0a923d4c3766cd0a3c713422.md) | 47 | `declaration-track:0a923d4c3766cd0a3c713422a8a4ca4b45fe16e3d6437ebada3ee3a90a50bd34` |
+| 13 | `def` | [farCut](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/farcut--5ee84ca41da99e2e6f135f28.md) | 51 | `declaration-track:5ee84ca41da99e2e6f135f28d0434a126c63a4f8f0e63f2a3bba73b1396118d0` |
+| 14 | `def` | [diagonalVoidState](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/diagonalvoidstate--7e41e9204d20da6c44bd13ef.md) | 56 | `declaration-track:7e41e9204d20da6c44bd13efe1089404ef49a17b8c07ce633fa78d66b4856419` |
+| 15 | `def` | [diagonalVoidCut](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/diagonalvoidcut--720fa874becc028775b628d6.md) | 59 | `declaration-track:720fa874becc028775b628d60c0bd467091dbedb5737b69339bf4ed536ebcfbf` |
+| 16 | `def` | [backgroundMergeBefore](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/backgroundmergebefore--7e03c7335dcc8262812bacd0.md) | 66 | `declaration-track:7e03c7335dcc8262812bacd0659e919c796c32e2fcd463c1098c617bdf7a2431` |
+| 17 | `def` | [backgroundMergeAfter](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/backgroundmergeafter--9675d13b83b92c58abd479d8.md) | 70 | `declaration-track:9675d13b83b92c58abd479d81bf214d7b588b19a2165807a69a8530821afa95d` |
+| 18 | `def` | [backgroundMergeCut](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/backgroundmergecut--abdc354703da412c08c8e79c.md) | 74 | `declaration-track:abdc354703da412c08c8e79cf2be821f4bb5e93e42ba6e66b45818d8d5fc3ca4` |
+| 19 | `def` | [backgroundMergeRepair](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/backgroundmergerepair--e91383316f02f8a2aae6f0af.md) | 78 | `declaration-track:e91383316f02f8a2aae6f0afde4d2652b1948643c3272771668c0271dd95a77a` |
+| 20 | `theorem` | [backgroundMergeRepair_apply](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/backgroundmergerepair-apply--469c52370d11298819e9e84b.md) | 81 | `result-track:469c52370d11298819e9e84bd98ee1b5ec33f706a8f72a4671f68659dc57671b` |
+| 21 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--701f5f7d4f99b8125ad4e658.md) | 88 | `declaration-track:701f5f7d4f99b8125ad4e658edb72c94b56f9153b6581bd61dd9cd1521120ab7` |
+| 22 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--194b1863cf9ec1f49f9cc009.md) | 93 | `declaration-track:194b1863cf9ec1f49f9cc0093c45f023ddcc9e0d7155b43c88f06904121d59fe` |
+| 23 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--bce8ae7e2381771bdff2a098.md) | 101 | `declaration-track:bce8ae7e2381771bdff2a09816206e889e573c20876e85abeaa3eaabfaa3a797` |
+| 24 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--9de10e63b4d088dd20835bb9.md) | 106 | `declaration-track:9de10e63b4d088dd20835bb9506de666281c5ee7432fd8ce04218c4c0a356d1a` |
+| 25 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--d1d68304415f2b636d85391e.md) | 111 | `declaration-track:d1d68304415f2b636d85391e6c9db9a392176847a8831edcc777b207d321c9f9` |
+| 26 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--bf040a5410545d465f146601.md) | 116 | `declaration-track:bf040a5410545d465f146601485190eba9ad6fdb66db893e06ec964ad91e68c6` |
+| 27 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--d9525cf6a0b7fe35ee35190e.md) | 121 | `declaration-track:d9525cf6a0b7fe35ee35190e815839d6d707d27edec7cc823764d97ec9e4bb5d` |
+| 28 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--41da07f25b946c0b2b5bd4ee.md) | 123 | `declaration-track:41da07f25b946c0b2b5bd4eea4a5d6babdc5af3a63374c8b01a2cd00307951f9` |
+| 29 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--57dc8ad034fe1bb75a979a20.md) | 125 | `declaration-track:57dc8ad034fe1bb75a979a202052ffcd99dd1ce6c23c6bdfa987c06b48123f4c` |
+| 30 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--92332a6a0f3aee39bd1563b6.md) | 127 | `declaration-track:92332a6a0f3aee39bd1563b66d10810c00179e8e9b57e6f53c7fd8782d2e2e66` |
+| 31 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--34b1742ae3a40a763ae4d23d.md) | 129 | `declaration-track:34b1742ae3a40a763ae4d23d962135d61440ede017fcd6ccb50e358c48570c04` |
+| 32 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--436b9c39a5364969881490b3.md) | 131 | `declaration-track:436b9c39a5364969881490b3d1e8ff2343faf2fa4fea08aecb523ff7dfce9fbb` |
+| 33 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--aeba5d52efa019bd85a61b40.md) | 133 | `declaration-track:aeba5d52efa019bd85a61b40a9190436a8a6c660a440fd59a857dd5d76393e9a` |
+| 34 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--cc7501db613fa5fd7c08f445.md) | 135 | `declaration-track:cc7501db613fa5fd7c08f4457932ac0ef8ff7961e5f63cf168f7fbb2f1113b08` |
+| 35 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--1a9330409b69052d5601a79b.md) | 139 | `declaration-track:1a9330409b69052d5601a79ba6328b75103f071fad75d70df60c0411ddbb1c0f` |
+| 36 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--cc79b3e8d915d868dc07a638.md) | 143 | `declaration-track:cc79b3e8d915d868dc07a63873db2d866d739b47274f050e4665c29aa03644e1` |
+| 37 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--15c82b3a080d6c8ff42d426a.md) | 146 | `declaration-track:15c82b3a080d6c8ff42d426a02595b6ea8a0b96ff0fe49b506378c89ef0160ff` |
+| 38 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--8f846f037bd4137d8b74e8fa.md) | 156 | `declaration-track:8f846f037bd4137d8b74e8faa18ce3df0de215624eb947d0f78ab006b5981592` |
+| 39 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--f2ffed436a0e124237ef8af4.md) | 164 | `declaration-track:f2ffed436a0e124237ef8af422264fe17a125545e5b8d481a5896060998b317e` |
+| 40 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--3c3d4fd29716c1bb95f649c4.md) | 173 | `declaration-track:3c3d4fd29716c1bb95f649c470116ce4a4b364de8b19fb4635518fab05dc746e` |
+| 41 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--834a79e4f9f0f0c309eeecc5.md) | 175 | `declaration-track:834a79e4f9f0f0c309eeecc50112b7be87cbde155ef9c5ef043f71bd613fa57d` |
+| 42 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--d6144748b142403531975cb7.md) | 178 | `declaration-track:d6144748b142403531975cb7cb5367ba871651054b0e55146a80d48ba64430e4` |
+| 43 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--2483759485012cbc6fe69cbd.md) | 181 | `declaration-track:2483759485012cbc6fe69cbd830cbcd89e0628ed2013b53b1d13c927b024bfa7` |
+| 44 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--2b7b892580ecfc1db0655551.md) | 184 | `declaration-track:2b7b892580ecfc1db0655551af15a4ab43f9fec40ff55e5746859570325b3f90` |
+| 45 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--3b87d170deb68e3dce44db86.md) | 187 | `declaration-track:3b87d170deb68e3dce44db86ab37fd3298df4a54969b87d722b4d5d8659e9a9f` |
+| 46 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--085c98bc605ab500a8d32241.md) | 192 | `declaration-track:085c98bc605ab500a8d32241f522f8129b8c75d00168532dd07125ba3e4c1e9d` |
+| 47 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--19ed77055a74d6e5854b9e48.md) | 198 | `declaration-track:19ed77055a74d6e5854b9e48ba6669b49d640d125686ef6d3f1b89abbadda72a` |
+| 48 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--2ba6e7a5c329b5df007e584a.md) | 201 | `declaration-track:2ba6e7a5c329b5df007e584a7425ea431ec838aa54fdea2bfe84e9b8670bcc1d` |
+| 49 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--98b12be9a17266557bab591f.md) | 207 | `declaration-track:98b12be9a17266557bab591fa5e9fb8ed2455ccdac6456a093a37fcecad6e029` |
+| 50 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--c8ee00ef1d4bbe17eb8db581.md) | 213 | `declaration-track:c8ee00ef1d4bbe17eb8db581b674bac615e81ed17b2cf42bcf51d6c8c7827ba9` |
+| 51 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--176f040c1ffbabc7e7cf42c9.md) | 223 | `declaration-track:176f040c1ffbabc7e7cf42c97402e32d61929e0ac675b037ce7d242b0a565db0` |
+| 52 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--b09067178e1770bade974140.md) | 232 | `declaration-track:b09067178e1770bade974140f60a7fc6f22808e5a0a25dbdff6716e016ff6358` |
+| 53 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--37be6db2ffb59ade8df64cfb.md) | 246 | `declaration-track:37be6db2ffb59ade8df64cfb69231aa09d95d43c5cf66f7f5728af752d745ecb` |
+| 54 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--39c85b470e59eb308d196163.md) | 248 | `declaration-track:39c85b470e59eb308d196163be3c3630a997ca5f125aa0a49e4b596892d75038` |
+| 55 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--4c39a2c910172a379165d253.md) | 251 | `declaration-track:4c39a2c910172a379165d2534ff4dfed376382f940d986cddf1e50567fc6a7c1` |
+| 56 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--5ac795d22308fb90f53894d2.md) | 262 | `declaration-track:5ac795d22308fb90f53894d2d2f5f01783c13f58d33edac7af39633226e0f3aa` |
+| 57 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--17dc7362dfed771b302ad75f.md) | 265 | `declaration-track:17dc7362dfed771b302ad75f6d5a5cbe84ec34e67a9993dfdc5624ce00613204` |
+| 58 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--9e163caf6bf0184cd6003942.md) | 269 | `declaration-track:9e163caf6bf0184cd6003942b1b223585b1b6cd68758eccfb35b1d8e27df209a` |
+| 59 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--3bc0b745bc7307f558a1a5eb.md) | 271 | `declaration-track:3bc0b745bc7307f558a1a5ebc83931fcb7a7fcd93e3c35ad429e0741995a4590` |
+| 60 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--a17c685888a429514162b9c5.md) | 279 | `declaration-track:a17c685888a429514162b9c55aaa579b643a81aa97088b2d841dadbd2c707762` |
+| 61 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--25028999266c5ab368b9e0f2.md) | 283 | `declaration-track:25028999266c5ab368b9e0f2aec424c9a18a9c8d1faf95d0d91403de64884eb9` |
+| 62 | `example` | [(anonymous)](../../../../../mathematics/Algebra/LinearAlgebra/CanonicalRasterSurgery/Variant859e3c53b02f07923fa45dc9fdded6de1258ca27b31d6ca600ba4bf418ee6b52.lean/declarations/example--a03a689c01b82720e0703149.md) | 287 | `declaration-track:a03a689c01b82720e0703149ffa41bafd64e2f348b07c9e2db0b83ac6e94a4cd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
