@@ -435,6 +435,168 @@ theorem identitySchurLift_full_zero_iff
 end BlockPencil
 
 
+
+/-!
+## Concrete Schur lifts of Euclidean moment operators
+
+The moment-Schur lift builds its effective matrix from the exact Euclidean
+coordinate representation of I + B.comp C. The eliminated block is literally
+the identity, so its invertibility and determinant orientation are supplied
+by construction. All off-diagonal couplings may vary independently with the
+parameter. Only the original global coercivity estimates remain hypotheses
+for determinant nonvanishing, and a strict moment-operator perturbation
+margin is required for a two-point sign conclusion.
+-/
+
+namespace BlockPencil
+
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
+open GRWTSK.Algebra.LinearAlgebra.MatrixTheory.FiniteAdjointDescent
+
+/-- Parameterized finite coupled block systems whose effective Schur
+operator is the actual Euclidean moment matrix I + B.comp C. -/
+def momentSchurLift
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    BlockPencil Z (Fin n) (Fin m) ℝ :=
+  identitySchurLift
+    (fun z => euclideanOperatorMatrix (momentMatrix (B z) (C z))) U V
+
+/-- The explicit moment block pencil has an invertible eliminated block
+at every parameter, with no additional region assumption. -/
+def momentSchurLiftRegion
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) :
+    InvertibleRegion (momentSchurLift B C U V) where
+  carrier := Set.univ
+  qqInvertible z _ := by
+    change Invertible (1 : Matrix (Fin m) (Fin m) ℝ)
+    exact invertibleOne
+
+/-- The effective matrix is exactly the original moment matrix in Euclidean
+coordinates. This is constructed, not supplied as a hypothesis. -/
+theorem momentSchurLift_effective
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    (momentSchurLift B C U V).effective z =
+      euclideanOperatorMatrix (momentMatrix (B z) (C z)) := by
+  exact identitySchurLift_effective
+    (fun t => euclideanOperatorMatrix (momentMatrix (B t) (C t))) U V z
+
+/-- The full coupled block determinant is exactly the determinant of the
+corresponding continuous moment operator, regardless of the off-diagonal
+coupling matrices. -/
+theorem momentSchurLift_full_det
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ) (z : Z) :
+    ((momentSchurLift B C U V).full z).det =
+      (momentMatrix (B z) (C z)).det := by
+  calc
+    ((momentSchurLift B C U V).full z).det =
+        (euclideanOperatorMatrix (momentMatrix (B z) (C z))).det := by
+      simpa [momentSchurLift] using
+        (identitySchurLift_full_det
+          (fun t => euclideanOperatorMatrix (momentMatrix (B t) (C t))) U V z)
+    _ = (momentMatrix (B z) (C z)).det :=
+      euclideanOperatorMatrix_det (momentMatrix (B z) (C z))
+
+/-- Original global moment coercivity forbids determinant zeros of this
+explicitly constructed full block system. No effective-operator equality or
+lower-right-block invertibility need be assumed: both are constructed. -/
+theorem momentSchurLift_full_det_ne_zero
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z : Z) (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε)
+    (hB : ‖B z‖ ≤ β) (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C z y‖ ^ 2 ≤ R (momentMatrix (B z) (C z) y) (C z y)) :
+    ((momentSchurLift B C U V).full z).det ≠ 0 := by
+  rw [momentSchurLift_full_det]
+  intro hzero
+  have hinj : Function.Injective (momentMatrix (B z) (C z)) :=
+    certified_moment_injective (B z) (C z) R hε hB hR hcoercive
+  have hker : LinearMap.ker (momentMatrix (B z) (C z)).toLinearMap = ⊥ :=
+    LinearMap.ker_eq_bot.mpr hinj
+  exact (LinearMap.det_eq_zero_iff_ker_ne_bot.mp hzero) hker
+
+/-- A zero of the full determinant obstructs the global coercivity
+hypothesis at that parameter. This contrapositive still retains all
+quantitative norm bounds as explicit inputs. -/
+theorem momentSchurLift_coercivity_fails_of_full_zero
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z : Z) (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε)
+    (hB : ‖B z‖ ≤ β) (hR : ‖R‖ ≤ δ)
+    (hzero : ((momentSchurLift B C U V).full z).det = 0) :
+    ¬ ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C z y‖ ^ 2 ≤ R (momentMatrix (B z) (C z) y) (C z y) := by
+  intro hcoercive
+  exact (momentSchurLift_full_det_ne_zero
+    B C U V z R hε hB hR hcoercive) hzero
+
+/-- At two parameters the full block determinants have the same strict
+sign if the effective moment operators differ by less than the certified
+gap. The eliminated-block sign condition is automatic: each block is I. -/
+theorem momentSchurLift_full_det_sign_of_perturbation
+    {Z E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
+    {n m : ℕ}
+    (B : Z → E →L[ℝ] EuclideanSpace ℝ (Fin n))
+    (C : Z → EuclideanSpace ℝ (Fin n) →L[ℝ] E)
+    (U : Z → Matrix (Fin n) (Fin m) ℝ)
+    (V : Z → Matrix (Fin m) (Fin n) ℝ)
+    (z w : Z)
+    (R : EuclideanSpace ℝ (Fin n) →L[ℝ] E →L[ℝ] ℝ)
+    {ε β δ : ℝ} (hε : 0 < ε)
+    (hB : ‖B z‖ ≤ β) (hR : ‖R‖ ≤ δ)
+    (hcoercive : ∀ y : EuclideanSpace ℝ (Fin n),
+      ε * ‖C z y‖ ^ 2 ≤ R (momentMatrix (B z) (C z) y) (C z y))
+    (hpert : ‖momentMatrix (B w) (C w) -
+      momentMatrix (B z) (C z)‖ < ε / (ε + β * δ)) :
+    0 < ((momentSchurLift B C U V).full z).det *
+        ((momentSchurLift B C U V).full w).det := by
+  have hSign :
+      0 < (momentMatrix (B z) (C z)).det *
+        (momentMatrix (B w) (C w)).det :=
+    certified_moment_determinant_sign
+      (B z) (C z) R (momentMatrix (B w) (C w))
+      hε hB hR hcoercive hpert
+  calc
+    0 < (momentMatrix (B z) (C z)).det *
+        (momentMatrix (B w) (C w)).det := hSign
+    _ = ((momentSchurLift B C U V).full z).det *
+        ((momentSchurLift B C U V).full w).det := by
+      rw [momentSchurLift_full_det B C U V z,
+        momentSchurLift_full_det B C U V w]
+
+end BlockPencil
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SchurFeshbachJet
