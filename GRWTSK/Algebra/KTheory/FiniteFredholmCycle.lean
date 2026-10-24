@@ -775,11 +775,6 @@ def classZero : FiniteProjectionClass :=
   Quotient.mk finiteProjectionSetoid
     ⟨0, finiteZeroProjection⟩
 
-@[simp]
-theorem classTrace_classZero : classTrace classZero = 0 := by
-  change (0 : Matrix (Fin 0) (Fin 0) ℂ).trace = 0
-  simp
-
 /-- Ordinary (unnormalized) matrix trace descends to finite projection
 equivalence classes using the rectangular cyclic-trace theorem. -/
 def classTrace : FiniteProjectionClass → ℂ :=
@@ -794,6 +789,11 @@ representative, with its original finite size preserved. -/
 @[simp]
 theorem classTrace_mk (P : PackedFiniteStarProjection) :
     classTrace (Quotient.mk finiteProjectionSetoid P) = P.2.val.trace := rfl
+
+@[simp]
+theorem classTrace_classZero : classTrace classZero = 0 := by
+  change (0 : Matrix (Fin 0) (Fin 0) ℂ).trace = 0
+  simp
 
 /-- Binary block sum descends from actual finite star projections to
 Murray–von Neumann classes because `finiteBlockSum_mvNRel` transports
