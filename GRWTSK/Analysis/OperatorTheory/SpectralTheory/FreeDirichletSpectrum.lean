@@ -8,6 +8,7 @@ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
 import Mathlib.Analysis.SpecificLimits.Basic
 import Mathlib.LinearAlgebra.Eigenspace.Charpoly
 import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
+import Mathlib.Analysis.InnerProductSpace.Spectrum
 
 set_option autoImplicit false
 noncomputable section
@@ -496,6 +497,81 @@ theorem even_central_margin_no_uniform_positive_floor
   obtain ⟨N, hN⟩ := Filter.eventually_atTop.mp hev
   refine ⟨max N 1, by omega, ?_⟩
   exact hN (le_max_left _ _)
+
+
+
+/-!
+## Orthogonal spectral coefficients supply a genuine operator norm gap
+
+The sine list is an *eigenvalue inventory*; a norm inequality requires
+an orthonormal spectral decomposition. The pinned Mathlib
+`LinearMap.IsSymmetric.eigenvectorBasis` supplies that decomposition.
+The following reusable lemma pays the norm exactly in that basis,
+rather than assuming a norm-isometry for the existing unnormalized
+sine basis. The second lemma identifies all actual Hermitian
+eigenvalues of the finite free Dirichlet matrix with its sine list.
+-/
+
+/-- A quantitative norm lower bound from the **orthonormal** eigenbasis
+of a finite-dimensional real symmetric endomorphism. Every eigenvalue
+must have magnitude at least `γ`, with `γ ≥ 0`. -/
+theorem symmetric_norm_lower_bound_of_eigenvalues
+    {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℝ H]
+    [FiniteDimensional ℝ H]
+    (T : H →ₗ[ℝ] H) (hT : T.IsSymmetric) (n : ℕ)
+    (hn : Module.finrank ℝ H = n) (γ : ℝ) (hγ : 0 ≤ γ)
+    (heig : ∀ i : Fin n, γ ≤ |hT.eigenvalues hn i|)
+    (x : H) : γ * ‖x‖ ≤ ‖T x‖ := by
+  let b := hT.eigenvectorBasis hn
+  have hcoord (i : Fin n) :
+      b.repr (T x) i = hT.eigenvalues hn i * b.repr x i :=
+    hT.eigenvectorBasis_apply_self_apply hn x i
+  have hsq :
+      γ ^ 2 * ‖b.repr x‖ ^ 2 ≤ ‖b.repr (T x)‖ ^ 2 := by
+    rw [EuclideanSpace.norm_sq_eq, EuclideanSpace.norm_sq_eq, Finset.mul_sum]
+    apply Finset.sum_le_sum
+    intro i _
+    have hλ : γ ^ 2 ≤ |hT.eigenvalues hn i| ^ 2 := by
+      have hnonneg : 0 ≤
+          (|hT.eigenvalues hn i| - γ) *
+            (|hT.eigenvalues hn i| + γ) :=
+        mul_nonneg (sub_nonneg.mpr (heig i))
+          (add_nonneg (abs_nonneg _) hγ)
+      nlinarith
+    calc
+      γ ^ 2 * ‖b.repr x i‖ ^ 2 ≤
+          |hT.eigenvalues hn i| ^ 2 * ‖b.repr x i‖ ^ 2 :=
+        mul_le_mul_of_nonneg_right hλ (sq_nonneg _)
+      _ = ‖b.repr (T x) i‖ ^ 2 := by
+        rw [hcoord i, norm_mul, Real.norm_eq_abs, mul_pow]
+  have hnorm : (γ * ‖x‖) ^ 2 ≤ ‖T x‖ ^ 2 := by
+    calc
+      (γ * ‖x‖) ^ 2 = γ ^ 2 * ‖b.repr x‖ ^ 2 := by
+        rw [b.repr.norm_map]
+        ring
+      _ ≤ ‖b.repr (T x)‖ ^ 2 := hsq
+      _ = ‖T x‖ ^ 2 := by rw [b.repr.norm_map]
+  exact (sq_le_sq₀ (mul_nonneg hγ (norm_nonneg _)) (norm_nonneg _)).mp hnorm
+
+/-- The eigenvalues of the **actual** Hermitian free Dirichlet matrix
+inherit the exact finite even-volume sine-list gap. Their index order
+need not agree with the unnormalized sine basis. -/
+theorem even_free_hermitian_eigenvalues_gap (m : ℕ) (hm : 0 < m)
+    (i : Fin (2 * m)) :
+    2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) ≤
+      |(freeDirichlet_isHermitian (2 * m)).eigenvalues i| := by
+  let A := freeDirichlet (2 * m)
+  let hA := freeDirichlet_isHermitian (2 * m)
+  have hr : hA.eigenvalues i ∈ spectrum ℝ A :=
+    hA.eigenvalues_mem_spectrum_real i
+  have hroot : A.charpoly.IsRoot (hA.eigenvalues i) :=
+    Matrix.mem_spectrum_iff_isRoot_charpoly.mp hr
+  have hroots : hA.eigenvalues i ∈ A.charpoly.roots :=
+    (Polynomial.mem_roots').mpr ⟨A.charpoly_monic.ne_zero, hroot⟩
+  rw [free_roots_charpoly] at hroots
+  obtain ⟨k, _, hk⟩ := Multiset.mem_map.mp hroots
+  have hb := even_eigenvalue_abs_lower_bound m hm k
+  simpa only [hk] using hb
 
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
