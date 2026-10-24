@@ -5,11 +5,13 @@ Status: **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED**.
 Source module:
 `GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`
 
-Source commit:
-`6eadfe56e10e797f9f2dc5a0b28d04d650bd8582`
+Source commits:
+- introduced at `6eadfe56e10e797f9f2dc5a0b28d04d650bd8582`;
+- typed base-specialization refinement at
+  `4a80cc59e3fe0ca5b6097106b0d90e045c3f5729`.
 
-Source blob:
-`fa1707f7b796f432d52858edd2fb20cc045a9f38`
+Current source blob:
+`f9d009a30ac77b93f72bf38604888eb73544de16`.
 
 ## Purpose
 
@@ -63,6 +65,9 @@ presentations.
 - `GeneralizedHypothesis`
 - `SpectralCoverFamily`
 - `rh_implies_generalized_of_spectralCoverFamily`
+- `BaseSpecialization`
+- `generalized_implies_base_of_member_specialization`
+- `rh_iff_generalized_of_spectralCovers_and_member_specialization`
 - `rh_iff_generalized_of_spectralCovers_and_specialization`
 
 The conditional RH-to-generalized theorem has an exact hypothesis: for every
@@ -143,3 +148,33 @@ Actual status:
 
 Source inspection and Git commit presence are not compiler or kernel
 acceptance.
+
+
+## Typed specialization refinement
+
+The follow-up commit
+`4a80cc59e3fe0ca5b6097106b0d90e045c3f5729` replaces the weakest form of the
+reverse direction with an explicit zero-problem specialization.
+
+`BaseSpecialization base generalized` contains:
+
+- an actual map from base zeros into one generalized zero type;
+- proof that base zeros map to generalized zeros;
+- proof that generalized criticality at the embedded point reflects back to
+  base criticality.
+
+Consequently,
+`generalized_implies_base_of_member_specialization` derives the base
+hypothesis from the generalized family hypothesis using one selected family
+member, and
+`rh_iff_generalized_of_spectralCovers_and_member_specialization` combines
+that with the spectral-cover family to obtain the conditional equivalence.
+
+This makes the proposed RH/GRH equivalence structural rather than an arbitrary
+proposition-level implication. The missing mathematical work is now sharper:
+construct the generalized-to-base spectral covers and identify one actual
+family member that contains the Riemann zero problem with the required
+zero/criticality compatibility.
+
+Verification status of the refinement remains **NOT_RUN /
+NOT_KERNEL_AUDITED**.
