@@ -26,7 +26,7 @@ Namespace totals and the complete namespace route:
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -115,7 +115,7 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 - [The unpaired polygon perimeter and the correct attaching-map direction](surface-polygon-perimeter-attachment.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-22).** This note documents authored Lean proof scripts. No Lean/Lake elaboration, kernel replay, generated declaration audit or completed…
 - [The unpaired polygon perimeter is the canonical additive circle](surface-polygon-perimeter-circle-equivalence.md) — source-guide; verification: `UNASSESSED`; S₃ unavailable. **Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED (2026-10-22).** The Lean module described here is an authored proof candidate. It has not been elaborated by Lean, accepted by the kernel, or audited for…
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 239 differ from that commit. Observation SHA-256: `c880d3c2185c8de7d15c3ef1afa8b61357f38d3e7c404d5baa6bff1a6fac065f`.
+Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->

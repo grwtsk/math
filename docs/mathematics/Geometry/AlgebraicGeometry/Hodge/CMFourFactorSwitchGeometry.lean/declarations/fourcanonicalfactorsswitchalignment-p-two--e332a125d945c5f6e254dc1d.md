@@ -1,0 +1,103 @@
+# FourCanonicalFactorsSwitchAlignment.p_two
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:02899b65-8432-25bb-38dd-008053b05484",
+  "kind": "theorem",
+  "lexical_name": "FourCanonicalFactorsSwitchAlignment.p_two",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "fourcanonicalfactorsswitchalignment-p-two--e332a125d945c5f6e254dc1d",
+  "source": {
+    "blob": "97ed0f5e967f8b6e1cbb8f20912683bf7a9817fe",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 757,
+    "line": 736,
+    "path": "GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:e332a125d945c5f6e254dc1d9ec4e7060bc7264728f86dc4ec51400714a72ada",
+  "verification": {
+    "reference": "docs/verification/Geometry/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_SOURCE_DEPENDENCY"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:02899b65-8432-25bb-38dd-008053b05484`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 736–757.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem FourCanonicalFactorsSwitchAlignment.p_two
+    {E : Type*} [Field E] [NumberField E] [IsCMField E] [IsGalois ℚ E]
+    {v₁ v₂ v₃ v₄ : CMNumberFieldIndex.OddSignRow E}
+    {D : FourCanonicalFactorsActualTyping E v₁ v₂ v₃ v₄}
+    (A : FourCanonicalFactorsSwitchAlignment D) :
+    CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₁.value D.first.character)) +
+      CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₂.value D.second.character)) +
+      CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₃.value D.third.character)) +
+      CMEmbeddingLines.pIndex
+          (CMEmbeddingLines.typeOfSign (v₄.value D.fourth.character)) = 2 := by
+  have h :=
+    CMFourBalance.fourBalance_holomorphicCount
+      v₁.toOddSignRow v₂.toOddSignRow v₃.toOddSignRow v₄.toOddSignRow
+      A.balance A.g
+  simpa [A.first_character, A.second_character,
+    A.third_character, A.fourth_character,
+    CMEmbeddingLines.pIndex_typeOfSign] using h
+
+/-- The same aligned labels have q-index sum two. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_SOURCE_DEPENDENCY`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../verification/Geometry/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/AlgebraicGeometry/Hodge/CMFourFactorSwitchGeometry.lean#L736).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `97ed0f5e967f8b6e1cbb8f20912683bf7a9817fe` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

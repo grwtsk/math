@@ -16,35 +16,22 @@ The current vocabulary has **24 entry points** and **132 unique subject concepts
 
 | Complete source branch | Modules | Declaration observations | Theorem/lemma occurrences |
 |---|---:|---:|---:|
-| [Algebra](Algebra/complete-source-index.md) | 10,065 | 326,152 | 236,887 |
-| [AlgebraicGeometry](AlgebraicGeometry/complete-source-index.md) | 49 | 1,031 | 612 |
-| [Analysis](Analysis/complete-source-index.md) | 9,825 | 216,794 | 177,008 |
+| [Algebra](Algebra/complete-source-index.md) | 10,184 | 327,298 | 237,570 |
+| [Analysis](Analysis/complete-source-index.md) | 9,896 | 217,242 | 177,213 |
 | [CategoriesAndHomologicalAlgebra](CategoriesAndHomologicalAlgebra/complete-source-index.md) | 5,317 | 136,716 | 63,048 |
-| [Combinatorics](Combinatorics/complete-source-index.md) | 102 | 1,891 | 1,070 |
-| [CombinatoricsAndDiscreteMathematics](CombinatoricsAndDiscreteMathematics/complete-source-index.md) | 9,373 | 344,526 | 246,190 |
-| [Data](Data/complete-source-index.md) | 2 | 8 | 3 |
-| [DifferentialEquationsAndDynamicalSystems](DifferentialEquationsAndDynamicalSystems/complete-source-index.md) | 68 | 1,314 | 1,088 |
-| [DynamicalSystems](DynamicalSystems/complete-source-index.md) | 28 | 557 | 334 |
-| [FoundationsLogicAndTypeTheory](FoundationsLogicAndTypeTheory/complete-source-index.md) | 18,345 | 324,929 | 168,676 |
-| [Geometry](Geometry/complete-source-index.md) | 912 | 37,254 | 27,295 |
-| [GeometryOfNumbers](GeometryOfNumbers/complete-source-index.md) | 6 | 112 | 70 |
-| [GroupTheory](GroupTheory/complete-source-index.md) | 12 | 190 | 117 |
-| [InformationTheory](InformationTheory/complete-source-index.md) | 39 | 466 | 286 |
-| [Interfaces](Interfaces/complete-source-index.md) | 238 | 395 | 187 |
-| [LinearAlgebra](LinearAlgebra/complete-source-index.md) | 101 | 764 | 431 |
-| [Logic](Logic/complete-source-index.md) | 104 | 1,117 | 591 |
-| [MeasureTheory](MeasureTheory/complete-source-index.md) | 6 | 78 | 67 |
-| [NumberTheory](NumberTheory/complete-source-index.md) | 12,280 | 126,707 | 74,961 |
-| [Order](Order/complete-source-index.md) | 9 | 107 | 62 |
-| [Probability](Probability/complete-source-index.md) | 5 | 10 | 10 |
-| [ProbabilityAndMathematicalStatistics](ProbabilityAndMathematicalStatistics/complete-source-index.md) | 549 | 11,783 | 9,173 |
-| [Spectral](Spectral/complete-source-index.md) | 29 | 249 | 133 |
+| [CombinatoricsAndDiscreteMathematics](CombinatoricsAndDiscreteMathematics/complete-source-index.md) | 9,524 | 347,152 | 247,777 |
+| [DifferentialEquationsAndDynamicalSystems](DifferentialEquationsAndDynamicalSystems/complete-source-index.md) | 96 | 1,871 | 1,422 |
+| [FoundationsLogicAndTypeTheory](FoundationsLogicAndTypeTheory/complete-source-index.md) | 18,436 | 325,667 | 168,933 |
+| [Geometry](Geometry/complete-source-index.md) | 964 | 38,312 | 27,922 |
+| [InformationTheory](InformationTheory/complete-source-index.md) | 17 | 278 | 199 |
+| [NumberTheory](NumberTheory/complete-source-index.md) | 12,476 | 126,821 | 75,032 |
+| [ProbabilityAndMathematicalStatistics](ProbabilityAndMathematicalStatistics/complete-source-index.md) | 554 | 11,793 | 9,183 |
 | [Topology](Topology/complete-source-index.md) | 5,108 | 189,403 | 147,833 |
 | [_support](_support/complete-source-index.md) | 6 | 8 | 6 |
 
 Each source article links to its static verification target and scoped public evidence. Source observations do not establish elaborated declaration identities or proof acceptance. Source-path branches retain their original placement; semantic associations require review.
 
-Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `053484e497b22e1ce22fb9aa850929516e57e599b4fb10ef2b482e671dff4763`.
+Complete source snapshot: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · manifest `09dd88fb708b49ebbec53351377ea6bfaebc504a8a3a782597d209b20e4485f5`.
 
 | Authored articles in this branch | Structured articles | Verification metadata supplied | Spectral scores available |
 |---:|---:|---:|---:|
@@ -144,29 +131,16 @@ Ranking profile: `spectral-volume-radius3-v1` · SHA-256 `72d348b5be89dd5aad88ae
 ## Additional source-guide areas
 
 1. **[_support](_support/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-2. **[Algebraic Geometry](AlgebraicGeometry/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-3. **[Categories And Homological Algebra](CategoriesAndHomologicalAlgebra/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-4. **[Combinatorics](Combinatorics/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-5. **[Combinatorics And Discrete Mathematics](CombinatoricsAndDiscreteMathematics/index.md)** — 9 immediate children · 30 unique articles · 3 structured · 3 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+2. **[Categories And Homological Algebra](CategoriesAndHomologicalAlgebra/index.md)** — 2 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+3. **[Combinatorics And Discrete Mathematics](CombinatoricsAndDiscreteMathematics/index.md)** — 9 immediate children · 30 unique articles · 3 structured · 3 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Coverage and discrete quotas](CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md); [Finite dependency neighborhoods and spectral volume](CombinatoricsAndDiscreteMathematics/DirectedGraph/finite-dependency-volume.md).
-6. **[Data](Data/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-7. **[Differential Equations And Dynamical Systems](DifferentialEquationsAndDynamicalSystems/index.md)** — 4 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+4. **[Differential Equations And Dynamical Systems](DifferentialEquationsAndDynamicalSystems/index.md)** — 4 immediate children · 3 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Approximation readouts and conditional error return](DifferentialEquationsAndDynamicalSystems/DynamicalSystems/Sequences/approximation-return.md); [Guarded transition systems and reachability](DifferentialEquationsAndDynamicalSystems/DynamicalSystems/TransitionSystems/guarded-reachability.md).
-8. **[Dynamical Systems](DynamicalSystems/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-9. **[Foundations Logic And Type Theory](FoundationsLogicAndTypeTheory/index.md)** — 8 immediate children · 17 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+5. **[Foundations Logic And Type Theory](FoundationsLogicAndTypeTheory/index.md)** — 8 immediate children · 17 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
    Unranked previews: [Certificates for incrementally decoded batches](FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/batch-certificate.md); [Composition of incremental dictionary decoding](FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/incremental-composition.md).
-10. **[Geometry Of Numbers](GeometryOfNumbers/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-11. **[Group Theory](GroupTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-12. **[Interfaces](Interfaces/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-13. **[Linear Algebra](LinearAlgebra/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-14. **[Logic](Logic/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-15. **[Measure Theory](MeasureTheory/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-16. **[Order](Order/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-17. **[Probability](Probability/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-18. **[Probability And Mathematical Statistics](ProbabilityAndMathematicalStatistics/index.md)** — 6 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
-19. **[Spectral](Spectral/index.md)** — 0 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
+6. **[Probability And Mathematical Statistics](ProbabilityAndMathematicalStatistics/index.md)** — 6 immediate children · 0 unique articles · 0 structured · 0 verification metadata · 0 scored. Source-guide directory; semantic association unassessed.
 
-Source baseline: math commit `706c62c1285a9857cb9d52e0620ec2cb514eb374`; 903 observed taxonomy/article/catalog inputs; 292 differ from that commit. Observation SHA-256: `381a730f1cb06413ea6388251ed121ed875b3b636ff48773ba3f3a681a9351d9`.
+Source baseline: math commit `dd24fff8d11292c4424e53917687edb7716ff513`; 903 observed taxonomy/article/catalog inputs; 1 differ from that commit. Observation SHA-256: `44b94a8e9b6141f9994077edf7da39328da090e53ee9b0d334b7ee2f5d0ff6f6`.
 Generated navigation, scores and source syntax inventories do not strengthen the proof scope recorded in an article.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
