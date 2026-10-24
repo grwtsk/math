@@ -221,6 +221,28 @@ Relevant nonproject imports include Mathlib's integral, analytic order, zeta-zer
 
 Preserve explanatory-only A–H mathematical phases, outstanding analytic and Weil/RH bridges, corrected `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` versus historical `7df554fa8fff56c912bd4a6b100f032ef8bc73da`, `Set.Ioi (0:ℝ)` domain, all source provenance and stop/no-merge/root/no-force-push/no-Railway constraints. **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. No execution authorized or dispatched.
 
+## Import frontier continuation: eleven inspected sources
+
+This read-only audit expands the prior eleven-module frontier with exact Git source blobs and directly declared GRWTSK imports. It is not an executable import-order proof.
+
+| Module under `GRWTSK.` | Git blob | Direct project imports |
+|---|---|---|
+| `NumberTheory.Zeta.Riemann.CubicZetaIdentity` | `42876d11d64a9fa16cb4d40e501493517250282f` | `NumberTheory.Zeta.Riemann.CubicRemainderHolomorphic`, `NumberTheory.Zeta.Riemann.RightHalfPlaneModulus` |
+| `NumberTheory.Zeta.Riemann.CubicCircleGeometry` | `08b38fca12bf8e6dff26d9f6aa49c32c2e62e419` | `NumberTheory.Zeta.Riemann.AnchoredLocalJensen` |
+| `NumberTheory.Zeta.Riemann.ReflectedStripBudget` | `cda72c1a2a30d83d5e16a1d8ec7a36c61053606c` | `Analysis.Complex.GammaVerticalBound`, `NumberTheory.Zeta.Riemann.JensenCentralLogDerivative`, `NumberTheory.Zeta.Riemann.HorizontalLogDerivative` |
+| `NumberTheory.Zeta.Riemann.HorizontalLogDerivative` | `a1dcea65d7e67e63b186dc59a48d9733d6178fb3` | `NumberTheory.Zeta.Riemann.LeftLogDerivative` |
+| `Analysis.Complex.TentHorizontalRayMajorant` | `aa752958ac25cb0ea36405d901dc5ad1b88a3a8c` | `Analysis.Complex.TentContourMajorants` |
+| `NumberTheory.Chebyshev.TentLeftDecay` | `e01ffecec17c7294625f28b749795e639ca661ae` | `NumberTheory.Zeta.Riemann.LeftLogDerivative`, `NumberTheory.Chebyshev.TentEdgeBounds` |
+| `Analysis.Real.FiniteIntervalSeparation` | `951c2e2b3c33445ece8c3af35580724fef6fe2c5` | none |
+| `Analysis.Complex.OrientedRectangle` | `9f201800ff5aff8d0552a4ab282aece744ce3939` | none |
+| `NumberTheory.Zeta.Riemann.AdmissibleRectangles` | `c464c6083f2b64024f9740f856441fe5f857f7e2` | `NumberTheory.Zeta.Riemann.CanonicalZeroDivisor`, `NumberTheory.Zeta.Riemann.TrivialZeroResidues` |
+| `NumberTheory.Chebyshev.TentPerronLine` | `8d010d4beec2f8e13260a383a7499a2741c9c43c` | `NumberTheory.LSeries.TentPairing`, `NumberTheory.Chebyshev.TentSource`, `NumberTheory.Chebyshev.CountedTentTail` |
+| `NumberTheory.Zeta.Riemann.ZeroSymmetry` | `5f465139ee895a99b79af84ee0866aa5f637bdfa` | `NumberTheory.Zeta.Riemann.ZeroDefinitions` |
+
+**Next genuinely unexpanded project frontier:** `CubicRemainderHolomorphic`, `RightHalfPlaneModulus`, `AnchoredLocalJensen`, `GammaVerticalBound`, `JensenCentralLogDerivative`, `LeftLogDerivative`, `TentContourMajorants`, `TentEdgeBounds`, `NumberTheory.LSeries.TentPairing`, `TentSource`, and `CountedTentTail`, plus descendants. The imports of `HorizontalLogDerivative`, `CanonicalZeroDivisor`, `TrivialZeroResidues` and `ZeroDefinitions` have been recorded in earlier passes; reusing them here does not mark new leaves as verified. Direct Mathlib and Lean imports and their full transitive closure remain unenumerated.
+
+The earlier mathematical A–H phases remain explanatory, not executable order. Preserve exact historical source hashes and corrected `CanonicalSquareTentSixteenGapIntegrability` blob `67c0e627e31059f7af8eeae2f19fb74957e9e7e1` (superseded `7df554fa8fff56c912bd4a6b100f032ef8bc73da`), unchanged `Set.Ioi (0:ℝ)` hypotheses, and pending strict-integral, mixed-weight, Weil and RH obligations. **No complete recursive closure, cycle-free DAG or executable topological order is certified.** Evidence remains **SOURCE_ONLY / COMPILATION NOT_RUN / FRESH_KERNEL NOT_RUN / TRANSITIVE_AXIOMS NOT_RUN**. Stop/no-merge/no-root-promotion/no-force-push/no-Railway/no-unauthorized-dispatch constraints remain in force.
+
 ## Required exact run protocol
 
 1. Freeze a **single** actual commit on `main` after all source repairs. Record `git rev-parse HEAD`, `git ls-files`, `git hash-object` for each leaf, `lean-toolchain`, `lake env lean --version`, and the Mathlib entry in `lake-manifest.json`. Intended toolchain: Lean `v4.33.0`, Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Do not assume the running toolchain matches those pins.
