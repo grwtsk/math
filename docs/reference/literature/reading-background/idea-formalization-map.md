@@ -8018,3 +8018,5 @@ Next implementation pass: [braid-six Hecke presentation and universal evaluation
 Next source follow-up: [pending braid-six character and noncollapse candidates](obligation-implementation-progress-v13.md). Native verification is blocked; counts remain four completed, fifteen partial, seventeen unresolved.
 
 Latest follow-up: [fresh source replay for pending Hecke character candidates](obligation-implementation-progress-v14.md). No new target acceptance; counts remain unchanged.
+
+Latest follow-up: [dependency replay failure and source-asset repair](obligation-implementation-progress-v15.md). Five targets remain unverified; all obligation counts unchanged.
