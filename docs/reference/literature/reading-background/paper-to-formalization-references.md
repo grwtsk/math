@@ -8714,3 +8714,38 @@ Verification:
 **NOT_RUN**; module build **NOT_RUN**; fresh kernel replay **NOT_RUN**;
 transitive axiom audit **NOT_RUN / NOT_KERNEL_AUDITED**; external receipt
 unavailable.
+
+
+### Follow-up: anchored differences and finite-state recovery
+
+Source refinement commit:
+`0c62dab0ecc8fe34ccc0e08a38a9248da5b51885`.
+
+Current source blob:
+`8210e2055447ebbe482a7122d21ee09177c3b1c0`.
+
+Consumed local supplier:
+`GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery`, introduced at
+`f1e8f255c30c4d3568e0d888e6328e8344dd56f2`.
+
+New fully qualified declarations:
+
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.no_finite_state_initial_recovery_from_unanchored_difference`
+- `GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.readout_factorsThrough_anchoredDifference`
+
+Exact content: unanchored discrete differences lose the additive anchor, so
+any finite-state presentation which itself factors only through the difference
+stream cannot recover the initial ordinate. Adjoining the initial value gives
+an explicit left-invertible anchored difference stream, through which every
+source readout factors.
+
+Classification: **local source-proof candidate / information-loss bridge**.
+No new external paper theorem is imported. The Aristotle/Newton/Leibniz/Riemann
+connection remains interpretive motivation only; no historical theorem or
+influence claim is inferred.
+
+Verification:
+`lake env lean GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean`:
+**NOT_RUN**; module build **NOT_RUN**; fresh kernel replay **NOT_RUN**;
+transitive axiom audit **NOT_RUN / NOT_KERNEL_AUDITED**; external receipt
+unavailable.
