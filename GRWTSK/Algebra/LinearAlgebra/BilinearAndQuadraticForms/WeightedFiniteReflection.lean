@@ -275,17 +275,20 @@ theorem diffuse_energy (p : Weights ι) (x : Vec ι) :
 theorem sign_mul_self (b : Bool) : sign b * sign b = 1 := by
   cases b <;> norm_num [sign]
 
+omit [Fintype ι] in
 theorem phase_involutive (b : ι → Bool) : Function.Involutive (phase b) := by
   intro x
   funext i
   change sign (b i) * (sign (b i) * x i) = x i
   rw [← mul_assoc, sign_mul_self, one_mul]
 
+omit [Fintype ι] in
 theorem phase_add (b : ι → Bool) (x y : Vec ι) :
     phase b (x + y) = phase b x + phase b y := by
   funext i
   exact mul_add _ _ _
 
+omit [Fintype ι] in
 theorem phase_scale (b : ι → Bool) (a : ℚ) (x : Vec ι) :
     phase b (fun i => a * x i) = fun i => a * phase b x i := by
   funext i
@@ -321,13 +324,15 @@ theorem step_scale (p : Weights ι) (b : ι → Bool) (a : ℚ) (x : Vec ι) :
 theorem step_leftInverse (p : Weights ι) (b : ι → Bool) :
     Function.LeftInverse (inverseStep p b) (step p b) := by
   intro x
-  simp only [inverseStep, step, diffuse_involutive, phase_involutive]
+  change phase b (diffuse p (diffuse p (phase b x))) = x
+  rw [diffuse_involutive p (phase b x), phase_involutive b x]
 
 /-- Law 10: the opposite inverse direction is also explicit. -/
 theorem step_rightInverse (p : Weights ι) (b : ι → Bool) :
     Function.RightInverse (inverseStep p b) (step p b) := by
   intro y
-  simp only [inverseStep, step, phase_involutive, diffuse_involutive]
+  change diffuse p (phase b (phase b (diffuse p y))) = y
+  rw [phase_involutive b (diffuse p y), diffuse_involutive p y]
 
 def stepEquiv (p : Weights ι) (b : ι → Bool) : Vec ι ≃ Vec ι where
   toFun := step p b
@@ -370,7 +375,7 @@ theorem step_not_selfAdjoint_control :
     pairing uniformFour (step uniformFour lastMarked firstBasis) fourthBasis = 1 / 8 ∧
       pairing uniformFour firstBasis (step uniformFour lastMarked fourthBasis) = -1 / 8 := by
   norm_num [pairing, step, diffuse, phase, sign, weightedMean, uniformFour,
-    firstBasis, fourthBasis, lastMarked, Fin.sum_univ_succ]
+    firstBasis, fourthBasis, lastMarked, Fin.sum_univ_succ, Fin.ext_iff]
 
 theorem step_not_selfAdjoint :
     ¬ (∀ x y : Vec (Fin 4),
