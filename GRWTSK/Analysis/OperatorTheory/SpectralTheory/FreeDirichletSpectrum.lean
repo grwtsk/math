@@ -310,4 +310,122 @@ theorem free_zero_spectrum_parity (m : ℕ) :
   ⟨odd_free_zero_in_spectrum m, even_free_zero_not_mem_spectrum m⟩
 
 
+
+/-!
+## Exact minimum absolute eigenvalue in a nonempty even free volume
+
+For `N = 2 * m` with `0 < m`, the two central sine frequencies
+are adjacent to `π / 2`. They give eigenvalues with opposite signs
+and equal magnitude `2 * sin (π / (4*m+2))`. Antitonicity of the
+existing complete sine eigenvalue list then proves that this value is
+the *attained minimum* of the absolute values over all eigenmodes.
+
+This is a finite-volume result, with a radius that depends on m.
+No uniform positive gap as m tends to infinity is asserted.
+-/
+
+/-- Left index adjacent to the central frequency of a nonempty even volume. -/
+def evenLeftIndex (m : ℕ) (hm : 0 < m) : Fin (2 * m) :=
+  ⟨m - 1, by omega⟩
+
+/-- Right index adjacent to the central frequency of a nonempty even volume. -/
+def evenRightIndex (m : ℕ) (hm : 0 < m) : Fin (2 * m) :=
+  ⟨m, by omega⟩
+
+/-- Exact lower-side angular separation from π/2. -/
+theorem evenLeft_angle (m : ℕ) (hm : 0 < m) :
+    angle (2 * m) (evenLeftIndex m hm) =
+      Real.pi / 2 - Real.pi / (4 * (m : ℝ) + 2) := by
+  simp only [angle, evenLeftIndex, Fin.val_mk, Nat.cast_add,
+    Nat.cast_mul, Nat.cast_one, Nat.cast_ofNat]
+  have hnum : ((m - 1 : ℕ) : ℝ) + 1 = (m : ℝ) := by
+    exact_mod_cast Nat.sub_add_cancel hm
+  rw [hnum]
+  have hd1 : (2 * (m : ℝ) + 1) ≠ 0 := by positivity
+  have hd2 : (4 * (m : ℝ) + 2) ≠ 0 := by positivity
+  field_simp [hd1, hd2]
+  <;> ring
+
+/-- Exact upper-side angular separation from π/2. -/
+theorem evenRight_angle (m : ℕ) (hm : 0 < m) :
+    angle (2 * m) (evenRightIndex m hm) =
+      Real.pi / 2 + Real.pi / (4 * (m : ℝ) + 2) := by
+  simp only [angle, evenRightIndex, Fin.val_mk, Nat.cast_add,
+    Nat.cast_mul, Nat.cast_one, Nat.cast_ofNat]
+  have hd1 : (2 * (m : ℝ) + 1) ≠ 0 := by positivity
+  have hd2 : (4 * (m : ℝ) + 2) ≠ 0 := by positivity
+  field_simp [hd1, hd2]
+  <;> ring
+
+/-- The left central eigenvalue equals the positive sine margin. -/
+theorem evenLeft_eigenvalue (m : ℕ) (hm : 0 < m) :
+    eigenvalue (2 * m) (evenLeftIndex m hm) =
+      2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) := by
+  simp only [eigenvalue, evenLeft_angle, Real.cos_pi_div_two_sub]
+
+/-- The right central eigenvalue is the negative sine margin. -/
+theorem evenRight_eigenvalue (m : ℕ) (hm : 0 < m) :
+    eigenvalue (2 * m) (evenRightIndex m hm) =
+      -(2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2))) := by
+  rw [eigenvalue, evenRight_angle, Real.cos_add]
+  simp only [Real.cos_pi_div_two, Real.sin_pi_div_two, zero_mul,
+    zero_sub, one_mul, zero_add]
+  ring
+
+/-- The attained minimum margin is positive at every nonempty even volume. -/
+theorem even_central_margin_pos (m : ℕ) (hm : 0 < m) :
+    0 < 2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) := by
+  have hden : (0 : ℝ) < 4 * (m : ℝ) + 2 := by positivity
+  have hdelta : 0 < Real.pi / (4 * (m : ℝ) + 2) :=
+    div_pos Real.pi_pos hden
+  have hπmul : 0 < Real.pi * (4 * (m : ℝ) + 1) :=
+    mul_pos Real.pi_pos (by positivity)
+  have hupper : Real.pi / (4 * (m : ℝ) + 2) < Real.pi := by
+    apply (div_lt_iff₀ hden).mpr
+    nlinarith [hπmul]
+  exact mul_pos (by norm_num) (Real.sin_pos_of_pos_of_lt_pi hdelta hupper)
+
+/-- Every free even-volume sine eigenvalue is separated from zero by
+the exact central sine margin. The bound depends on the volume. -/
+theorem even_eigenvalue_abs_lower_bound (m : ℕ) (hm : 0 < m)
+    (k : Fin (2 * m)) :
+    2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) ≤
+      |eigenvalue (2 * m) k| := by
+  by_cases hk : k.val < m
+  · have hle : k ≤ evenLeftIndex m hm := by
+      apply Fin.le_iff_val_le_val.mpr
+      change k.val ≤ m - 1
+      omega
+    have hanti := (eigenvalue_strictAnti (2 * m)).antitone hle
+    rw [evenLeft_eigenvalue m hm] at hanti
+    exact hanti.trans (le_abs_self _)
+  · have hle : evenRightIndex m hm ≤ k := by
+      apply Fin.le_iff_val_le_val.mpr
+      change m ≤ k.val
+      omega
+    have hanti := (eigenvalue_strictAnti (2 * m)).antitone hle
+    rw [evenRight_eigenvalue m hm] at hanti
+    have hneg :
+        2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) ≤
+          -eigenvalue (2 * m) k := by linarith
+    exact hneg.trans (neg_le_abs _)
+
+/-- The exact absolute-eigenvalue minimum is attained at a central
+frequency and bounds every other finite even-volume eigenvalue.
+This gives a minimum characterization without introducing a parallel
+eigenvalue list or an artificial scalar shift. -/
+theorem even_minimum_abs_eigenvalue (m : ℕ) (hm : 0 < m) :
+    (∀ k : Fin (2 * m),
+      2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2)) ≤
+        |eigenvalue (2 * m) k|) ∧
+    (∃ k : Fin (2 * m),
+      |eigenvalue (2 * m) k| =
+        2 * Real.sin (Real.pi / (4 * (m : ℝ) + 2))) := by
+  constructor
+  · exact even_eigenvalue_abs_lower_bound m hm
+  · refine ⟨evenLeftIndex m hm, ?_⟩
+    rw [evenLeft_eigenvalue m hm,
+      abs_of_pos (even_central_margin_pos m hm)]
+
+
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.FreeDirichletSpectrum
