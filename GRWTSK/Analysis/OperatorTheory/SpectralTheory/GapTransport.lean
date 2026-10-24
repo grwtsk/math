@@ -6,6 +6,7 @@ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 import Mathlib.Tactic
 import Mathlib.Analysis.Normed.Group.Basic
 import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+import Mathlib.Analysis.InnerProductSpace.Adjoint
 
 set_option autoImplicit false
 
@@ -410,5 +411,19 @@ theorem continuous_operator_projection_inner_expansion
   conv_lhs => rw [← S.starProjection_add_starProjection_orthogonal x]
   simp only [inner_add_left, inner_add_right]
   abel
+
+/-- For a bounded self-adjoint operator, the two off-diagonal pairings
+are conjugate. This identifies the real interaction term without asserting
+that it is small or positive. -/
+theorem self_adjoint_projection_cross_conjugate
+    {𝕜 H : Type*} [RCLike 𝕜]
+    [NormedAddCommGroup H] [InnerProductSpace 𝕜 H] [CompleteSpace H]
+    (S : Submodule 𝕜 H) [S.HasOrthogonalProjection]
+    (T : H →L[𝕜] H) (hT : IsSelfAdjoint T) (x : H) :
+    inner 𝕜 (T (Sᗮ.starProjection x)) (S.starProjection x) =
+      star (inner 𝕜 (T (S.starProjection x)) (Sᗮ.starProjection x)) := by
+  have hs := hT.isSymmetric (Sᗮ.starProjection x) (S.starProjection x)
+  rw [hs]
+  exact inner_conj_symm _ _
 
 end GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport
