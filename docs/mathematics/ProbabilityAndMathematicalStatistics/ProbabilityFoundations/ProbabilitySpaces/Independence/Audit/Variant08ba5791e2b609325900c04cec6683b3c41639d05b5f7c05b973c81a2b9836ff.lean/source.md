@@ -1,0 +1,277 @@
+# Complete source: GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.Independence.Audit.Variant08ba5791e2b609325900c04cec6683b3c41639d05b5f7c05b973c81a2b9836ff
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0203283b7471203030ce50e78450390632772cc1` · SHA-256 `d2ee87c9eb8b641a9fd6446151ed09fd04e99eb280cba1fe0fdf9052164be7a4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.Independence
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.Independence.Examples.Variant993aa4aab97c1f7b6ad27dbd4451e8699c3c80dae23080d7a0f3f3bb96c34ee0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"993aa4aab97c1f7b6ad27dbd4451e8699c3c80dae23080d7a0f3f3bb96c34ee0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Probability.Independence.SourceCorpus.Examples.Variant993aa4aab97c1f7b6ad27dbd4451e8699c3c80dae23080d7a0f3f3bb96c34ee0","mathematical_subject":"Probability.Independence","original_sha256":"993aa4aab97c1f7b6ad27dbd4451e8699c3c80dae23080d7a0f3f3bb96c34ee0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/N/cord/src/theory/CordTheory/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import CordTheory.Examples
+import CordTheory.Coordination
+import CordTheory.InterpreterExactness
+import CordTheory.ReificationExactness
+import CordTheory.ReflectiveAgents
+import CordTheory.HardwareCorrespondence
+import CordTheory.GlobalReflection
+import CordTheory.Coverage
+import CordTheory.Constitution
+
+/-!
+# Kernel audit surface
+
+The commands below expose the axiom dependencies of the central proved results
+when this module is built.  The development conjecture remains a proposition and
+is not assumed as an axiom.
+-/
+
+
+namespace GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.ProbabilitySpaces.Independence.Examples.Variant993aa4aab97c1f7b6ad27dbd4451e8699c3c80dae23080d7a0f3f3bb96c34ee0
+
+#print axioms Cord.OperationalRelation.closure_empty
+#print axioms Cord.OperationalRelation.closure_union
+#print axioms Cord.OperationalRelation.closure_idem
+#print axioms Cord.OperationalRelation.topological_closure_eq
+#print axioms Cord.OperationalRelation.continuous_iff_monotone
+#print axioms Cord.FunctionIdeal.finite_nullstellensatz
+#print axioms Cord.FunctionIdeal.satisfiable_iff_not_top
+#print axioms Cord.FunctionIdeal.radicalMember_iff
+#print axioms Cord.full_function_determining_sample_eq_univ
+#print axioms Cord.reflective_preservation_iff
+#print axioms Cord.SemanticChangeClass.classify_sound
+#print axioms Cord.TopologyChangeClass.classifyExact_sound
+#print axioms Cord.normativePrecision_le_extensional
+#print axioms Cord.normativePrecision_le_evidence
+#print axioms Cord.tension_positive_iff
+#print axioms Cord.KernelAtom.card_all
+#print axioms Cord.FinitePlan.normalize_eq_of_equivalent
+#print axioms Cord.MutationBasisClaim.established_minimality_has_certificate
+#print axioms Cord.ValidationEvidenceRecord.certified_complete_validation_establishes_proof
+#print axioms Cord.ReceiptScopeRecord.truthQualified_has_truth_status
+#print axioms Cord.RollbackRecord.algebraicallyCertified_has_certificate
+#print axioms Cord.missing_common_profile_is_indeterminate
+#print axioms Cord.ContinuationTerminationClaim.closed_has_wellFounded_rank
+#print axioms Cord.least_solutions_equivalent
+#print axioms Cord.generation_conjecture_of_certificate
+#print axioms Cord.rjns3Certificate
+#print axioms Cord.CoordinationIntent.mayCreate_iff
+#print axioms Cord.CoordinationStateRole.card_all
+#print axioms Cord.DiscrepancyDimension.card_all
+#print axioms Cord.DiscrepancyDimensionAccounting.exactly_once
+#print axioms Cord.FiveStateComparison.exact_has_no_unevaluated_dimensions
+#print axioms Cord.TypedDiscrepancy.evaluated_status_is_not_notEvaluated
+#print axioms Cord.RepresentationStep.no_step_from_maximum
+#print axioms Cord.AddressableCoordinationReification.representation_strict_shift
+#print axioms Cord.AddressableCoordinationReification.addressable_proxy_present
+#print axioms Cord.AddressableCoordinationReification.designated_maps_distinct
+#print axioms Cord.AddressableCoordinationReification.transition_scope_present
+#print axioms Cord.LegacyRepresentationAdapterReceipt.cannot_authorize
+#print axioms Cord.BoundedReflectiveMutation.strict_shift
+#print axioms Cord.CoordinationClaimBasis.canAuthorize_iff
+#print axioms Cord.CoordinationClaimBasis.inference_and_confidence_cannot_authorize
+#print axioms Cord.CoordinationMutationAuthorization.independent_basis
+#print axioms Cord.CorrectionAdmissionGate.admissible_authority_valid
+#print axioms Cord.CorrectionAdmissionGate.admissible_has_independent_authority
+#print axioms Cord.CorrectionAdmissionGate.score_cannot_replace_missing_authority
+#print axioms Cord.CorrectionAdmissionGate.score_cannot_replace_absent_authorization
+#print axioms Cord.CorrectionOutcomeTag.card_all
+#print axioms Cord.RefinementStage.immediate_rank
+#print axioms Cord.RefinementStage.candidate_cannot_jump_to_mutation
+#print axioms Cord.RefinementImplementationInput.candidate_ne_reviewed_live_revision
+#print axioms Cord.ReviewedLiveRevisionPayload.candidate_inputs_absent
+#print axioms Cord.ReviewedLiveRevisionPayload.external_stage_after_exact
+#print axioms Cord.ReviewedLiveRevisionPayload.external_stage_is_transaction_input
+#print axioms Cord.ReviewedLiveRevisionPayload.rollback_bound_exactly
+#print axioms Cord.ReviewedLiveRevisionPayload.publication_not_crash_atomic
+#print axioms Cord.ReviewedLiveRevisionPayload.rollback_authority_is_not_reusable
+#print axioms Cord.RefinementStage.reviewed_live_revision_refinement_chain
+#print axioms Cord.ExistingLiveOntologyAdmissionPayload.existing_live_admission_preserves_current_tree
+#print axioms Cord.ExistingLiveOntologyAdmissionPayload.existing_live_admission_performs_no_ontology_mutation
+#print axioms Cord.ExistingLiveOntologyAdmissionPayload.semantic_admission_not_retroactive_mutation_authority
+#print axioms Cord.ExistingLiveOntologyAdmissionPayload.procedural_violation_remains_evidence
+#print axioms Cord.ExistingLiveOntologyAdmissionPayload.existing_live_admission_has_no_candidate_or_stage
+#print axioms Cord.drift_admission_requires_exact_prior_anchor
+#print axioms Cord.ExistingLiveAdmissionStage.existing_live_admission_refinement_chain
+#print axioms Cord.ToolConcernCapacityDisposition.disposition_is_not_mutation_authority
+#print axioms Cord.ToolConcernCapacityDisposition.unknown_ownership_yields_no_decision
+#print axioms Cord.ToolConcernCapacityDisposition.new_concern_requires_complete_ownership_universe
+#print axioms Cord.OntologyConditionedDiffusion.constraint_vanishes
+#print axioms Cord.preferAccurate_error_le_left
+#print axioms Cord.preferAccurate_error_le_right
+#print axioms Cord.AccuracySelectionCertificate.selected_dominates
+#print axioms Cord.AccuracySelectionCertificate.declared_metric_eq_squared_error
+#print axioms Cord.AccuracySelectionCertificate.metric_and_target_supported
+#print axioms Cord.NeuralAccuracyCertificate.prefers_accuracy
+#print axioms Cord.NeuralSymbolicDiffusion.neural_checkpoint_models
+#print axioms Cord.NeuralSymbolicDiffusion.symbolic_constraint_vanishes
+#print axioms Cord.NeuralSymbolicDiffusion.neural_symbolic_constraint_vanishes
+#print axioms Cord.NeuralSymbolicDiffusion.executable_layers_not_authority
+#print axioms Cord.NeuralSymbolicDiffusion.exact_symbolic_geometry
+#print axioms Cord.quotient_interpreter_well_defined
+#print axioms Cord.canonical_behavioral_factorization
+#print axioms Cord.kernel_to_realized_image_bijective
+#print axioms Cord.level_exact_iff_defects_empty
+#print axioms Cord.level_exact_does_not_determine_designated_semantics
+#print axioms Cord.observational_defect_compose
+#print axioms Cord.observational_defect_zero
+#print axioms Cord.AssociativeFragmentExecution.sound_step_summaries_compose
+#print axioms Cord.level_exact_implies_capacity_parity
+#print axioms Cord.EffectiveExact.representative_readback_projects_to_inverse_class
+#print axioms Cord.finite_prefix_exactness_does_not_imply_all_levels
+#print axioms Cord.identity_interpreter_effectively_exact
+#print axioms Cord.capacity_parity_does_not_imply_level_exact
+#print axioms Cord.authorized_kernel_agreement_iff_injective
+#print axioms Cord.coverage_iff_omission_defect_empty
+#print axioms Cord.totality_iff_undefined_defect_empty
+#print axioms Cord.successor_injective_not_surjective
+#print axioms Cord.halving_surjective_not_injective
+#print axioms Cord.even_domain_bijective_but_partial
+#print axioms Cord.constant_map_neither
+#print axioms Cord.bottom_totalization_does_not_remove_undefinedness
+#print axioms Cord.Quotation.quotation_preserves_form
+#print axioms Cord.DataRefinement.refinement_preserves_operation
+#print axioms Cord.ReificationReference.rho_output_reifies
+#print axioms Cord.ReificationReference.dereference_after_reification
+#print axioms Cord.ReificationReference.reification_after_dereference
+#print axioms Cord.ReificationReference.reference_exact_iff_defects_empty
+#print axioms Cord.ReificationReference.reference_exactness_implies_capacity_parity
+#print axioms Cord.CausallyExactReification.causal_exactness_implies_reference_exactness
+#print axioms Cord.CausallyExactReification.causal_exactness_implies_capacity_parity
+#print axioms Cord.static_reference_exact_does_not_imply_causal_coherence
+#print axioms Cord.RelationshipOccurrenceReification.role_reconstruction
+#print axioms Cord.StatementReification.statement_reification_does_not_imply_assertion
+#print axioms Cord.ExactReflectiveReificationTower.exact_at
+#print axioms Cord.ExactReflectiveReificationTower.all_levels_exact
+#print axioms Cord.ExactReflectiveReificationTower.quotient_reify_bijective
+#print axioms Cord.ExactReflectiveReificationTower.quotient_reification_naturality
+#print axioms Cord.ExactReflectiveReificationTower.level_capacity_parity
+#print axioms Cord.ExactReflectiveReificationTower.all_levels_capacity_parity
+#print axioms Cord.ExactReflectiveReificationTower.all_levels_exact_of_induction
+#print axioms Cord.ReflectiveEvaluatorTower.eval_quote
+#print axioms Cord.ReflectiveEvaluatorTower.quote_injective
+#print axioms Cord.ExactReflectiveEvaluatorTower.levelwise_exact
+#print axioms Cord.ExactReflectiveEvaluatorTower.levelwise_effectively_exact
+#print axioms Cord.ExactReflectiveEvaluatorTower.quotation_identity_stable
+#print axioms Cord.ExactReflectiveEvaluatorTower.semantic_lift_identity_stable
+#print axioms Cord.ExactReflectiveEvaluatorTower.interpretation_square_commutes
+#print axioms Cord.ExactReflectiveEvaluatorTower.represented_interpreter_realizes_designated
+#print axioms Cord.ExactReflectiveEvaluatorTower.grade_policy_exact
+#print axioms Cord.ExactReflectiveEvaluatorTower.blocking_residual_frontier_empty
+#print axioms Cord.ExactReflectiveEvaluatorTower.bounded_prefix_coherent
+#print axioms Cord.ExactReflectiveEvaluatorTower.all_levels_coherent
+#print axioms Cord.FiniteMetaSupportCertificate.active_iff_not_default
+#print axioms Cord.NeuralRhetoricalEnvelope.evaluate_quoted
+#print axioms Cord.NeuralRhetoricalEnvelope.evaluate_quoted_step
+#print axioms Cord.NeuralRhetoricalEnvelope.evaluate_decode_quoted_step
+#print axioms Cord.AgentCoordinationCertificate.agreement_alone_does_not_entail_authority
+#print axioms Cord.CoordinatedReflectiveNeuralProposal.agreement_cannot_replace_missing_authority
+#print axioms Cord.CoordinatedReflectiveNeuralProposal.selected_output_minimizes_squared_error
+#print axioms Cord.ArchitectureCorrespondence.role_count_preserved
+#print axioms Cord.ArchitectureCorrespondence.balance_identical
+#print axioms Cord.CorpusNeuralReducer.reduces_declared_error
+#print axioms Cord.CorpusNeuralReducer.output_remains_symbolic
+#print axioms Cord.ResidualActivationSource.human_input_not_authority
+#print axioms Cord.RoutedCorpusCorrection.request_routes_to_symbolic_reducer
+#print axioms Cord.RoutedCorpusCorrection.activation_follows_reduction
+#print axioms Cord.RoutedCorpusCorrection.activation_cannot_replace_missing_authority
+#print axioms Cord.HardwareRealizedNeuralSymbolicSystem.architecture_balance
+#print axioms Cord.HardwareRealizedNeuralSymbolicSystem.reducer_corrects_realized_neural_checkpoint
+#print axioms Cord.HardwareRealizedNeuralSymbolicSystem.all_ontology_snapshots_aligned
+#print axioms Cord.HardwareRealizedNeuralSymbolicSystem.executable_components_not_authority
+#print axioms Cord.ArtifactStratum.card_all
+#print axioms Cord.DevelopmentSurface.card_all
+#print axioms Cord.DevelopmentSurface.specification_in_equilibrium
+#print axioms Cord.EquilibriumSurfaceRole.specification_is_development
+#print axioms Cord.EquilibriumSurfaceRole.formal_projection_is_not_development
+#print axioms Cord.EquilibriumSurfaceRole.support_is_not_development
+#print axioms Cord.no_direct_ontology_to_source_equilibrium
+#print axioms Cord.ontology_to_source_requires_specification
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_exactness
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_effective_exactness
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_grade_preservation
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_naturality
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_realization
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_raw_regeneration_sections
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.three_surface_no_blocking_residuals
+#print axioms Cord.CordThreeSurfaceEquilibriumTower.all_level_three_surface_obligations
+#print axioms Cord.EquilibriumMonitoringEpisode.confirmed_full_requires_two_identical_full_assessments
+#print axioms Cord.EquilibriumMonitoringEpisode.finite_current_only_process_local
+#print axioms Cord.EquilibriumMonitoringEpisode.monitoring_is_not_an_effect_or_authority
+#print axioms Cord.EquilibriumMonitoringEpisode.repair_handoff_is_candidate_only_ordinary_entry
+#print axioms Cord.InterRelianceEdge.change_at_b_reflects_at_a
+#print axioms Cord.InterRelianceEdge.change_at_a_reflects_at_b
+#print axioms Cord.ImmediateArtifactRefinement.advances_one
+#print axioms Cord.EvidenceBoundRefinement.improvement_requires_explicit_evidence
+#print axioms Cord.EvidenceBoundRefinement.comparison_context_is_supported
+#print axioms Cord.EvidenceBoundRefinement.comparison_target_is_evidence_bound
+#print axioms Cord.EvidenceBoundRefinement.measurements_are_artifact_bound
+#print axioms Cord.EvidenceBoundRefinement.comparison_records_resolve
+#print axioms Cord.EvidenceBoundRefinement.uncertainty_is_nonincreasing
+#print axioms Cord.OntologyRustLeanRefinement.ontology_accuracy_retained_in_lean
+#print axioms Cord.OntologyRustLeanRefinement.ontology_to_lean_precision_increases
+#print axioms Cord.OntologyRustLeanRefinement.ontology_to_lean_uncertainty_nonincreasing
+#print axioms Cord.OntologyRustLeanRefinement.one_comparison_context
+#print axioms Cord.MemoryComputeRefinement.memory_to_compute_precision_increases
+#print axioms Cord.HostSpecializedReflectionPlan.required_feature_is_host_available
+#print axioms Cord.FiniteInterRelianceGraph.every_edge_has_return
+#print axioms Cord.FiniteInterRelianceGraph.edge_kind_is_typed_relation
+#print axioms Cord.FiniteInterRelianceGraph.edge_has_typed_inter_reliance
+#print axioms Cord.TypedEdgeImpactDischarge.evidence_is_nonempty
+#print axioms Cord.SupervisedGlobalReflection.no_authority_escalation
+#print axioms Cord.SupervisedGlobalReflection.graph_nodes_fit_host
+#print axioms Cord.SupervisedGlobalReflection.rounds_fit_host
+#print axioms Cord.SupervisedGlobalReflection.finite_candidate_boundary
+#print axioms Cord.GlobalCorrectionCandidate.lawful_improvement_requires_evidence
+#print axioms Cord.GlobalCorrectionSelection.residual_when_no_lawful_correction
+#print axioms Cord.HostBalancedGlobalReflection.formal_lane_balances_accuracy_and_precision
+#print axioms Cord.HostBalancedGlobalReflection.execution_uses_pinned_host_capabilities
+#print axioms Cord.HostBalancedGlobalReflection.integrated_bundle_not_authority
+#print axioms Cord.HostBalancedGlobalReflection.graph_binds_refinement_lanes
+#print axioms Cord.RuntimeArtifactStratum.toFormal_ofFormal
+#print axioms Cord.HostReflectedNeuralSymbolicSystem.end_to_end_reflective_data_path
+#print axioms Cord.HostReflectedNeuralSymbolicSystem.integrated_balance_accuracy_bounds_and_authority
+#print axioms Cord.SymbolicArchitectureComponentRealization.every_diffuser_is_realized
+#print axioms Cord.SymbolicArchitectureComponentRealization.every_diffuser_is_routed
+#print axioms Cord.ReducerCorrectionReflection.accuracy_order_is_reducer_derived
+#print axioms Cord.HostReflectedNeuralSymbolicSystem.complete_proposed_reflection_certificate
+#print axioms Cord.GlobalReflectionLaws.agent_supervision_non_authority
+#print axioms Cord.GlobalReflectionLaws.bidirectional_balance
+#print axioms Cord.GlobalReflectionLaws.change_reflection_pair
+#print axioms Cord.GlobalReflectionLaws.finite_convergence
+#print axioms Cord.GlobalReflectionLaws.host_specialization_bound
+#print axioms Cord.GlobalReflectionLaws.rust_tooling_independence
+#print axioms Cord.GlobalReflectionLaws.stratified_accuracy_precision
+#print axioms Cord.SystemReflectionLevel.strict_tower
+#print axioms Cord.SystemCouplingCertificate.system_environment_boundary_law
+#print axioms Cord.SystemCouplingCertificate.typed_port_coupling_law
+#print axioms Cord.SystemCouplingCertificate.feedback_observation_closure_law
+#print axioms Cord.SystemCouplingCertificate.hidden_coupling_residual_preservation_law
+#print axioms Cord.SystemCouplingCertificate.nondischarging_observation_preserves_residual
+#print axioms Cord.SystemCouplingCertificate.full_coverage_requires_complete_finite_universe
+#print axioms Cord.SystemCouplingCertificate.finite_level_separation
+#print axioms Cord.SystemCouplingCertificate.authority_and_resources_remain_constrained
+#print axioms Cord.SystemCouplingSupervision.evaluator_cannot_rewrite_its_governing_rule
+#print axioms Cord.SystemsReflection.system_environment_boundary_law
+#print axioms Cord.SystemsReflection.typed_port_coupling_law
+#print axioms Cord.SystemsReflection.feedback_observation_closure_law
+#print axioms Cord.SystemsReflection.hidden_coupling_residual_preservation_law
+#print axioms Cord.CoverageLaws.repository_evidence_non_escalation
+#print axioms Cord.CoverageLaws.finite_sampling_scope
+#print axioms Cord.CoverageLaws.probe_separation
+#print axioms Cord.CoverageLaws.exact_resolution
+#print axioms Cord.CoverageLaws.coverage_closure
+#print axioms Cord.CapTestOutcome.fail_does_not_satisfy
+#print axioms Cord.CapTestOutcome.blocked_does_not_satisfy
+#print axioms Cord.CapRequirementStatus.closes_iff_satisfied
+#print axioms Cord.CapTestResult.mandatory_blocked_is_not_honest_pass
+#print axioms Cord.CapConformanceClaim.system_ready_frontier_empty
+#print axioms Cord.ConstitutionalOperationStage.immediate_advances_one
+#print axioms Cord.ConstitutionalOperationStage.validate_is_nonmutating
+#print axioms Cord.CapReflectiveAct.reflection_is_nonmutating
+#print axioms Cord.CapNonEvidentiaryTransformation.qualification_does_not_silently_strengthen
+#print axioms Cord.admitted_location_preserves_normative_candidate
+#print axioms Cord.CapHistoricalComparison.no_mutation_authority
+```

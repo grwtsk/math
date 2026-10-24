@@ -1,0 +1,116 @@
+# stoppedValue_ae_eq_condExp_of_le_of_countable_range
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "a7e835b53348336fdb5c7de5c9e46df49945f1dd",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 122,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/19/196e41d7ed0c0f53b3493ebb43ca9fa4bec82b9c2c02928ff4399024f4425735.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:1b45eb6c-499d-7315-f13e-98921da9abf6",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:e1c8115e-9d69-88ef-6960-b8db47716af2",
+  "kind": "theorem",
+  "lexical_name": "stoppedValue_ae_eq_condExp_of_le_of_countable_range",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "stoppedvalue-ae-eq-condexp-of-le-of-countable-range--a506a2772c8c59e4483b8d88",
+  "source": {
+    "blob": "a7e835b53348336fdb5c7de5c9e46df49945f1dd",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 144,
+    "line": 122,
+    "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/OptionalSampling/Variant196e41d7ed0c0f53b3493ebb43ca9fa4bec82b9c2c02928ff4399024f4425735.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:a506a2772c8c59e4483b8d88c1d2658ace83a917f9412e14317bee136dbccd9e",
+  "verification": {
+    "reference": "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/OptionalSampling/Variant196e41d7ed0c0f53b3493ebb43ca9fa4bec82b9c2c02928ff4399024f4425735.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:e1c8115e-9d69-88ef-6960-b8db47716af2`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 122–144.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem stoppedValue_ae_eq_condExp_of_le_of_countable_range (h : Martingale f ℱ μ)
+    (hτ : IsStoppingTime ℱ τ) (hσ : IsStoppingTime ℱ σ) (hσ_le_τ : σ ≤ τ) (hτ_le : ∀ x, τ x ≤ n)
+    (hτ_countable_range : (Set.range τ).Countable) (hσ_countable_range : (Set.range σ).Countable)
+    [SigmaFinite (μ.trim (hσ.measurableSpace_le_of_le fun x => (hσ_le_τ x).trans (hτ_le x)))] :
+    stoppedValue f σ =ᵐ[μ] μ[stoppedValue f τ|hσ.measurableSpace] := by
+  have : SigmaFinite (μ.trim (hτ.measurableSpace_le_of_le hτ_le)) :=
+    sigmaFiniteTrim_mono _ (IsStoppingTime.measurableSpace_mono hσ hτ hσ_le_τ)
+  have : μ[stoppedValue f τ|hσ.measurableSpace] =ᵐ[μ]
+      μ[μ[f n|hτ.measurableSpace]|hσ.measurableSpace] := condExp_congr_ae
+    (h.stoppedValue_ae_eq_condExp_of_le_const_of_countable_range hτ hτ_le hτ_countable_range)
+  refine (Filter.EventuallyEq.trans ?_
+    (condExp_condExp_of_le ?_ (hτ.measurableSpace_le_of_le hτ_le)).symm).trans this.symm
+  · exact h.stoppedValue_ae_eq_condExp_of_le_const_of_countable_range hσ
+      (fun x => (hσ_le_τ x).trans (hτ_le x)) hσ_countable_range
+  · exact hσ.measurableSpace_mono hτ hσ_le_τ
+
+@[deprecated (since := "2025-01-21")]
+alias stoppedValue_ae_eq_condexp_of_le_of_countable_range :=
+  stoppedValue_ae_eq_condExp_of_le_of_countable_range
+
+/-- If `τ` and `σ` are two stopping times with `σ ≤ τ` and `τ` is bounded, then the value of a
+martingale `f` at `σ` is the conditional expectation of its value at `τ` with respect to the
+σ-algebra generated by `σ`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/OptionalSampling/Variant196e41d7ed0c0f53b3493ebb43ca9fa4bec82b9c2c02928ff4399024f4425735.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/OptionalSampling/Variant196e41d7ed0c0f53b3493ebb43ca9fa4bec82b9c2c02928ff4399024f4425735.lean#L122).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a7e835b53348336fdb5c7de5c9e46df49945f1dd` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.

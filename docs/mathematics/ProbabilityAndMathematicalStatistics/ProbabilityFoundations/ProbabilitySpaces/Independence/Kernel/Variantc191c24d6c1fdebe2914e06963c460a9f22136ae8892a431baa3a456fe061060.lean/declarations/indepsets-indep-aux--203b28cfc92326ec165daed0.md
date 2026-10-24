@@ -1,0 +1,125 @@
+# IndepSets.indep_aux
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "bb720a5629710180fcd3c206acbe3275cdb76d94",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 321,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/c1/c191c24d6c1fdebe2914e06963c460a9f22136ae8892a431baa3a456fe061060.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:2d448291-d0d5-44b8-9547-c2072536af4e",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:f7238b57-507e-f981-d85c-7ee36ba8bcb0",
+  "kind": "theorem",
+  "lexical_name": "IndepSets.indep_aux",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "docs/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "indepsets-indep-aux--203b28cfc92326ec165daed0",
+  "source": {
+    "blob": "bb720a5629710180fcd3c206acbe3275cdb76d94",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 352,
+    "line": 321,
+    "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Independence/Kernel/Variantc191c24d6c1fdebe2914e06963c460a9f22136ae8892a431baa3a456fe061060.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:203b28cfc92326ec165daed0d8c03d2970e4e3d2bc8c7c33736fb1d3965d0ce8",
+  "verification": {
+    "reference": "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Independence/Kernel/Variantc191c24d6c1fdebe2914e06963c460a9f22136ae8892a431baa3a456fe061060.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:f7238b57-507e-f981-d85c-7ee36ba8bcb0`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 321–352.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem IndepSets.indep_aux {m₂ m : MeasurableSpace Ω}
+    {κ : kernel α Ω} {μ : Measure α} [IsMarkovKernel κ] {p1 p2 : Set (Set Ω)} (h2 : m₂ ≤ m)
+    (hp2 : IsPiSystem p2) (hpm2 : m₂ = generateFrom p2) (hyp : IndepSets p1 p2 κ μ) {t1 t2 : Set Ω}
+    (ht1 : t1 ∈ p1) (ht1m : MeasurableSet[m] t1) (ht2m : MeasurableSet[m₂] t2) :
+    ∀ᵐ a ∂μ, κ a (t1 ∩ t2) = κ a t1 * κ a t2 := by
+  refine @induction_on_inter _ (fun t ↦ ∀ᵐ a ∂μ, κ a (t1 ∩ t) = κ a t1 * κ a t) _
+    m₂ hpm2 hp2 ?_ ?_ ?_ ?_ t2 ht2m
+  · simp only [Set.inter_empty, measure_empty, mul_zero, eq_self_iff_true,
+      Filter.eventually_true]
+  · exact fun t ht_mem_p2 ↦ hyp t1 t ht1 ht_mem_p2
+  · intros t ht h
+    filter_upwards [h] with a ha
+    have : t1 ∩ tᶜ = t1 \ (t1 ∩ t) := by
+      rw [Set.diff_self_inter, Set.diff_eq_compl_inter, Set.inter_comm]
+    rw [this,
+      measure_diff (Set.inter_subset_left _ _) (ht1m.inter (h2 _ ht)) (measure_ne_top (κ a) _),
+      measure_compl (h2 _ ht) (measure_ne_top (κ a) t), measure_univ,
+      ENNReal.mul_sub (fun _ _ ↦ measure_ne_top (κ a) _), mul_one, ha]
+  · intros f hf_disj hf_meas h
+    rw [← ae_all_iff] at h
+    filter_upwards [h] with a ha
+    rw [Set.inter_iUnion, measure_iUnion]
+    · rw [measure_iUnion hf_disj (fun i ↦ h2 _ (hf_meas i))]
+      rw [← ENNReal.tsum_mul_left]
+      congr with i
+      rw [ha i]
+    · intros i j hij
+      rw [Function.onFun, Set.inter_comm t1, Set.inter_comm t1]
+      exact Disjoint.inter_left _ (Disjoint.inter_right _ (hf_disj hij))
+    · exact fun i ↦ ht1m.inter (h2 _ (hf_meas i))
+
+/-- The measurable space structures generated by independent pi-systems are independent. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../../../../verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Independence/Kernel/Variantc191c24d6c1fdebe2914e06963c460a9f22136ae8892a431baa3a456fe061060.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../../../../reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Independence/Kernel/Variantc191c24d6c1fdebe2914e06963c460a9f22136ae8892a431baa3a456fe061060.lean#L321).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bb720a5629710180fcd3c206acbe3275cdb76d94` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
