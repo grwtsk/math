@@ -1,4 +1,4 @@
-import GRWTSK.RiemannHypothesis.Definitions
+import GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions
 
 /-! Compatibility names for the canonical GRWTSK implementation. No theorem body is duplicated. -/
 

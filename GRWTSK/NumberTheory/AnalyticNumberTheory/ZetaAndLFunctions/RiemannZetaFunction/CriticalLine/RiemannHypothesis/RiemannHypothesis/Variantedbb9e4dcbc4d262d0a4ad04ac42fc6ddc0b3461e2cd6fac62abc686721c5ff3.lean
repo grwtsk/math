@@ -1,5 +1,5 @@
-import GRWTSK.RiemannHypothesis.Defect
-import FormalResearch.RiemannHypothesis.Definitions
+import GRWTSK.NumberTheory.Zeta.Riemann.CriticalLineDefect
+import GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RiemannHypothesis.Variant6a1cca848af241fafd6074e1f2c4e73776dc2cebbecb5f4833bd983f344213ec
 
 /-! Compatibility names for the canonical GRWTSK implementation. No theorem body is duplicated. -/
 

@@ -1,6 +1,6 @@
-import GRWTSK.RiemannHypothesis.TargetComparator
-import FormalResearch.RiemannHypothesis.TargetStatement
-import FormalResearch.RiemannHypothesis.Defect
+import GRWTSK.NumberTheory.Zeta.Riemann.DefectCriterion
+import GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Target.Variant1dc1d35e3fd0f3874280230073d15db324241cee06e02792f94d07919497a0b5
+import GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RiemannHypothesis.Variantedbb9e4dcbc4d262d0a4ad04ac42fc6ddc0b3461e2cd6fac62abc686721c5ff3
 
 /-! Compatibility names for the canonical GRWTSK implementation. No theorem body is duplicated. -/
 
